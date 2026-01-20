@@ -9,10 +9,16 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
     /**
      * Esegue la migrazione.
+=======
+return new class extends XotBaseMigration {
+    /**
+     * Run the migrations.
+>>>>>>> f548be94 (.)
      */
     public function up(): void
     {
@@ -39,6 +45,7 @@ return new class extends XotBaseMigration
                 $table->boolean('personal_team')->default(false)->change();
             }
 
+<<<<<<< HEAD
             if (! $this->hasColumn('code')) {
                 $table->string('code', 36)->nullable()->index();
             }
@@ -48,6 +55,14 @@ return new class extends XotBaseMigration
             }
 
             $this->updateTimestamps($table, true);
+=======
+            if (!$this->hasColumn('code')) {
+                $table->string('code', 36)->nullable()->index();
+            }
+            $this->updateTimestamps($table, true);
+
+            // $this->updateUser($table);
+>>>>>>> f548be94 (.)
         });
     }
 };

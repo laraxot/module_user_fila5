@@ -10,7 +10,10 @@ return [
     // All domains allowed by default
     // Only use lower case
     'domain_allowlist' => [],
+<<<<<<< HEAD
 
+=======
+>>>>>>> f548be94 (.)
     // Allow registration through socials
     'registration' => true,
     // Specify the providers that should be visible on the login.
@@ -32,12 +35,18 @@ return [
             'icon' => 'heroicon-o-star',
         ],
     ],
+<<<<<<< HEAD
 
     'user_model' => User::class,
 
     // Specify the default redirect route for successful logins
     'login_redirect_route' => 'filament.pages.dashboard',
 
+=======
+    'user_model' => User::class,
+    // Specify the default redirect route for successful logins
+    'login_redirect_route' => 'filament.pages.dashboard',
+>>>>>>> f548be94 (.)
     // Specify the route name for the socialite login page
     'login_page_route' => 'filament.auth.login',
     // Should the user stay logged in?

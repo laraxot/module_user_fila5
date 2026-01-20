@@ -126,6 +126,7 @@ return [
         'tooltip' => 'Kopioitu!',
     ],
     'fields' => [
+<<<<<<< HEAD
         'email' => [
             'label' => 'Sähköposti',
             'tooltip' => '',
@@ -218,4 +219,22 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        'email' => 'Sähköposti',
+        'login' => 'Kirjaudu',
+        'name' => 'Nimi',
+        'password' => 'Salasana',
+        'password_confirm' => 'Vahvista salasana',
+        'new_password' => 'Uusi salasana',
+        'new_password_confirmation' => 'Vahvista uusi salasana',
+        'token_name' => 'Valtuutuksen nimi',
+        'abilities' => 'Kyvyt',
+        '2fa_code' => 'Koodi',
+        '2fa_recovery_code' => 'Palautuskoodi',
+        'created' => 'Luotu',
+        'expires' => 'Vanhenee',
+    ],
+    'or' => 'Tai',
+    'cancel' => 'Peruuta',
+>>>>>>> f548be94 (.)
 ];

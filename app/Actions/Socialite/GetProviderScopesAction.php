@@ -8,6 +8,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite;
 
+<<<<<<< HEAD
+=======
+use ArrayAccess;
+>>>>>>> f548be94 (.)
 use Illuminate\Support\Arr;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -17,6 +21,7 @@ class GetProviderScopesAction
 
     /**
      * Execute the action.
+<<<<<<< HEAD
      *
      * @return array<int, string>
      */
@@ -36,5 +41,20 @@ class GetProviderScopesAction
             static fn (mixed $scope): ?string => \is_scalar($scope) || $scope instanceof \Stringable ? (string) $scope : null,
             $scopes
         ), static fn (?string $scope): bool => null !== $scope));
+=======
+     */
+    public function execute(string $provider): array
+    {
+        /**
+         * @var array|ArrayAccess
+         */
+        $services = config('services');
+        $scopes = Arr::get($services, $provider . '.scopes');
+        if (!\is_array($scopes)) {
+            return [];
+        }
+
+        return $scopes;
+>>>>>>> f548be94 (.)
     }
 }

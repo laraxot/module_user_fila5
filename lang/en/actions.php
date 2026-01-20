@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'attach_user' => 'Attach User',
     'associate_user' => 'Associate User',
@@ -18,6 +22,7 @@ return [
     'success_deleted' => 'Users successfully deleted',
     'delete' => 'Cancella',
     'replicate' => 'Duplica',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -31,4 +36,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

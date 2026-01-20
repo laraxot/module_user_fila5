@@ -5,8 +5,14 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
+=======
+use Modules\Xot\Contracts\ProfileContract;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Carbon;
+>>>>>>> f548be94 (.)
 
 /**
  * Modules\User\Models\TeamUser.
@@ -14,8 +20,13 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|TeamUser newModelQuery()
  * @method static Builder|TeamUser newQuery()
  * @method static Builder|TeamUser query()
+<<<<<<< HEAD
  * @property int         $id
  * @property string      $uuid
+=======
+ * @property int $id
+ * @property string $uuid
+>>>>>>> f548be94 (.)
  * @property string|null $team_id
  * @property string|null $user_id
  * @property string|null $role
@@ -38,6 +49,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $deleted_by
  * @method static Builder|TeamUser whereDeletedAt($value)
  * @method static Builder|TeamUser whereDeletedBy($value)
+<<<<<<< HEAD
  * @property ProfileContract|null         $creator
  * @property ProfileContract|null         $updater
  * @property ProfileContract|null         $deleter
@@ -50,10 +62,16 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static \Modules\User\Database\Factories\TeamUserFactory factory($count = null, $state = [])
  * @method static Builder<static>|TeamUser                         whereJoinedAt($value)
  * @method static Builder<static>|TeamUser                         wherePermissions($value)
+=======
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @mixin IdeHelperTeamUser
+>>>>>>> f548be94 (.)
  * @mixin \Eloquent
  */
 class TeamUser extends BaseTeamUser
 {
+<<<<<<< HEAD
     protected $connection = 'user';
 
     /**
@@ -68,4 +86,9 @@ class TeamUser extends BaseTeamUser
             'permissions' => 'array',
         ];
     }
+=======
+    use HasFactory;
+
+    protected $connection = 'user';
+>>>>>>> f548be94 (.)
 }

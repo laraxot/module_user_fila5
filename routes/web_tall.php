@@ -6,6 +6,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Route;
 use Modules\User\Http\Controllers\Auth\EmailVerificationController;
 use Modules\User\Http\Controllers\Auth\LogoutController;
@@ -15,6 +16,16 @@ use Modules\User\Http\Livewire\Auth\Passwords\Reset;
 use Modules\User\Http\Livewire\Auth\Register;
 use Modules\User\Http\Livewire\Auth\Verify;
 use Webmozart\Assert\Assert;
+=======
+use Modules\User\Http\Livewire\Auth\Passwords\Email;
+use Modules\User\Http\Livewire\Auth\Passwords\Reset;
+use Modules\User\Http\Livewire\Auth\Verify;
+use Modules\User\Http\Livewire\Auth\Passwords\Confirm;
+use Illuminate\Support\Facades\Route;
+use Modules\User\Http\Controllers\Auth\EmailVerificationController;
+use Modules\User\Http\Controllers\Auth\LogoutController;
+use Modules\User\Http\Livewire\Auth\Register;
+>>>>>>> f548be94 (.)
 
 /*
  * |--------------------------------------------------------------------------
@@ -28,7 +39,11 @@ use Webmozart\Assert\Assert;
  */
 
 // Route::view('/', 'welcome')->name('home');
+<<<<<<< HEAD
 Route::prefix('{lang}')->group(function (): void {
+=======
+Route::prefix('{lang}')->group(function () {
+>>>>>>> f548be94 (.)
     Route::middleware('guest')
         ->namespace('\Modules\User\Http\Livewire\Auth')
         ->group(static function (): void {
@@ -48,6 +63,7 @@ Route::prefix('{lang}')->group(function (): void {
     Route::middleware('auth')
         ->namespace('\Modules\User\Http\Livewire\Auth')
         ->group(static function (): void {
+<<<<<<< HEAD
             $route = Route::get('email/verify', Verify::class);
             Assert::isInstanceOf($route, Illuminate\Routing\Route::class);
             $route->middleware('throttle:6,1');
@@ -56,15 +72,30 @@ Route::prefix('{lang}')->group(function (): void {
             $route = Route::get('password/confirm', Confirm::class);
             Assert::isInstanceOf($route, Illuminate\Routing\Route::class);
             $route->name('password.confirm');
+=======
+            Route::get('email/verify', Verify::class)
+                ->middleware('throttle:6,1')
+                ->name('verification.notice');
+
+            Route::get('password/confirm', Confirm::class)->name(
+                'password.confirm',
+            );
+>>>>>>> f548be94 (.)
         });
 
     Route::middleware('auth')
         // ->namespace('\Modules\User\Http\Livewire\Auth')
         ->group(static function (): void {
+<<<<<<< HEAD
             $route = Route::get('email/verify/{id}/{hash}', EmailVerificationController::class);
             Assert::isInstanceOf($route, Illuminate\Routing\Route::class);
             $route->middleware('signed');
             $route->name('verification.verify');
+=======
+            Route::get('email/verify/{id}/{hash}', EmailVerificationController::class)
+                ->middleware('signed')
+                ->name('verification.verify');
+>>>>>>> f548be94 (.)
 
             Route::match(['get', 'post'], 'logout', LogoutController::class)->name('logout');
         });
@@ -76,7 +107,11 @@ Route::namespace('Socialite')
         Route::get(
             '/login/{provider}',
             'RedirectToProviderController',
+<<<<<<< HEAD
             // 'LoginController@redirectToProvider',
+=======
+        // 'LoginController@redirectToProvider',
+>>>>>>> f548be94 (.)
         );
         // ->name('oauth.redirect')
 

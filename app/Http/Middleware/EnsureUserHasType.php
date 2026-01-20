@@ -2,8 +2,16 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\User\Http\Middleware;
 
+=======
+
+namespace Modules\User\Http\Middleware;
+
+use BackedEnum;
+use Closure;
+>>>>>>> f548be94 (.)
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -13,13 +21,20 @@ use Symfony\Component\HttpFoundation\Response;
  * })->middleware(EnsureUserHasRole::class.':editor');
  * Route::put('/post/{id}', function (string $id) {
  *     // ...
+<<<<<<< HEAD
  *})->middleware(EnsureUserHasRole::class.':editor,publisher');.
  */
+=======
+ *})->middleware(EnsureUserHasRole::class.':editor,publisher');
+ */
+
+>>>>>>> f548be94 (.)
 class EnsureUserHasType
 {
     /**
      * Handle an incoming request.
      *
+<<<<<<< HEAD
      * @param \Closure(Request):Response $next
      */
     public function handle(Request $request, \Closure $next, string $type): Response
@@ -27,6 +42,15 @@ class EnsureUserHasType
         $userType = $request->user()?->type;
 
         if ($userType instanceof \BackedEnum && $userType->value === $type) {
+=======
+     * @param Closure(Request):Response $next
+     */
+    public function handle(Request $request, Closure $next, string $type): Response
+    {
+        $userType = $request->user()?->type;
+
+        if ($userType instanceof BackedEnum && $userType->value === $type) {
+>>>>>>> f548be94 (.)
             return $next($request);
         }
 

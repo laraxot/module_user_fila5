@@ -5,6 +5,15 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\DeviceResource\Pages;
 
 use Filament\Tables\Columns\Column;
+<<<<<<< HEAD
+=======
+use Override;
+use Filament\Actions\CreateAction;
+use Filament\Tables\Actions\DeleteAction;
+use Filament\Tables\Actions\DeleteBulkAction;
+use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Actions\ViewAction;
+>>>>>>> f548be94 (.)
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Modules\User\Filament\Resources\DeviceResource;
@@ -17,7 +26,11 @@ class ListDevices extends XotBaseListRecords
     /**
      * @return array<string, Column>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public function getTableColumns(): array
     {
         return [

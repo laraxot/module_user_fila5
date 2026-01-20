@@ -64,6 +64,7 @@ return [
             'description' => 'Der eingegebene Wert ist zu kurz.',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -77,4 +78,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

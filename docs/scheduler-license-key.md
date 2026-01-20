@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "FullCalendar Scheduler License Key"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> f548be94 (.)
 # FullCalendar Scheduler License Key
 
 ## Overview

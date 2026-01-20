@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 // // use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
@@ -18,11 +19,28 @@ use Modules\Xot\Contracts\UserContract;
 use Parental\HasChildren;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
+=======
+// use Illuminate\Database\Eloquent\Relations\HasOne;
+use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
+use Illuminate\Notifications\DatabaseNotificationCollection;
+use Illuminate\Notifications\DatabaseNotification;
+use Override;
+use Illuminate\Database\Eloquent\Collection;
+use Modules\Media\Models\Media;
+use Modules\Xot\Contracts\UserContract;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Notifications\Notifiable;
+use Modules\User\Models\Traits\IsProfileTrait;
+use Modules\Xot\Contracts\ProfileContract;
+use Parental\HasChildren;
+use Spatie\MediaLibrary\InteractsWithMedia;
+>>>>>>> f548be94 (.)
 use Spatie\Permission\Traits\HasRoles;
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
 
 /**
+<<<<<<< HEAD
  * @property int|string                                                $id
  * @property string                                                    $uuid
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes         $extra
@@ -63,12 +81,53 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @mixin \Eloquent
  */
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+=======
+ * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra
+ * @property string $avatar
+ * @property Collection<int, DeviceUser> $deviceUsers
+ * @property int|null $device_users_count
+ * @property Collection<int, Device> $devices
+ * @property int|null $devices_count
+ * @property string|null $first_name
+ * @property string|null $full_name
+ * @property string|null $last_name
+ * @property string|null $lang
+ * @property MediaCollection<int, Media> $media
+ * @property int|null $media_count
+ * @property Collection<int, DeviceUser> $mobileDeviceUsers
+ * @property int|null $mobile_device_users_count
+ * @property Collection<int, Device> $mobileDevices
+ * @property int|null $mobile_devices_count
+ * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
+ * @property int|null $notifications_count
+ * @property Collection<int, Permission> $permissions
+ * @property int|null $permissions_count
+ * @property Collection<int, Role> $roles
+ * @property int|null $roles_count
+ * @property UserContract|null $user
+ * @property string|null $user_name
+ *
+ * @method static Builder|ProfileContract newModelQuery()
+ * @method static Builder|ProfileContract newQuery()
+ * @method static Builder|ProfileContract permission($permissions, $without = false)
+ * @method static Builder|ProfileContract query()
+ * @method static Builder|ProfileContract role($roles, $guard = null, $without = false)
+ * @method static Builder|BaseProfile withExtraAttributes()
+ * @method static Builder|ProfileContract withoutPermission($permissions)
+ * @method static Builder|ProfileContract withoutRole($roles, $guard = null)
+ *
+ * @mixin \Eloquent
+ */
+>>>>>>> f548be94 (.)
 abstract class BaseProfile extends BaseModel implements ProfileContract
 {
     use HasChildren;
     use HasRoles;
+<<<<<<< HEAD
 
     // use HasUuids;
+=======
+>>>>>>> f548be94 (.)
     use InteractsWithMedia;
     use IsProfileTrait;
     use Notifiable;
@@ -82,12 +141,17 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 
     /** @var list<string> */
     protected $fillable = [
+<<<<<<< HEAD
+=======
+        'id',
+>>>>>>> f548be94 (.)
         'uuid',
         'user_id',
         'type',
         'first_name',
         'last_name',
         'phone',
+<<<<<<< HEAD
         'address',
         'birth_date',
         'gender',
@@ -98,6 +162,10 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         'locale',
         'preferences',
         'status',
+=======
+        'email',
+        'bio',
+>>>>>>> f548be94 (.)
         'is_active',
         'extra',
     ];
@@ -112,6 +180,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         'user',
     ];
 
+<<<<<<< HEAD
     /** @var list<string> */
     protected array $formlessAttributes = [
         'extra',
@@ -133,6 +202,18 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     // Il trait SchemalessAttributesTrait lo fornisce automaticamente!
     // NOTA: BaseProfile ha attributo 'extra' diretto, non relazione 'extra'
 
+=======
+    /** @var array */
+    protected $formlessAttributes = [
+        'extra',
+    ];
+
+    public function scopeWithExtraAttributes(): Builder
+    {
+        return $this->extra->modelScope();
+    }
+
+>>>>>>> f548be94 (.)
     /**
      * Ottiene l'URL dell'avatar dell'utente.
      *
@@ -141,7 +222,11 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     public function getAvatarUrl(): string
     {
         $avatar = $this->getFirstMediaUrl('avatar');
+<<<<<<< HEAD
         if ('' !== $avatar) {
+=======
+        if ($avatar !== '') {
+>>>>>>> f548be94 (.)
             return $avatar;
         }
 
@@ -151,8 +236,14 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         $email = mb_strtolower($email);
         // 'myemailaddress@example.com'
         $hash = hash('sha256', $email);
+<<<<<<< HEAD
 
         return 'https://gravatar.com/avatar/'.$hash.'?s=64';
+=======
+        $avatar = 'https://gravatar.com/avatar/' . $hash . '?s=64';
+
+        return $avatar;
+>>>>>>> f548be94 (.)
 
         // https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80
         // in caso eseguire php artisan module:publish
@@ -173,18 +264,27 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         $locale = config('app.locale');
         $defaultLocale = 'it';
 
+<<<<<<< HEAD
         if (null === $locale || ! is_string($locale)) {
+=======
+        if ($locale === null || !is_string($locale)) {
+>>>>>>> f548be94 (.)
             $locale = $defaultLocale;
         }
 
         $userLang = $this->lang;
 
+<<<<<<< HEAD
         if (null === $userLang || ! is_string($userLang)) {
+=======
+        if ($userLang === null || !is_string($userLang)) {
+>>>>>>> f548be94 (.)
             return $locale;
         }
 
         return $userLang;
     }
+<<<<<<< HEAD
     // use SoftDeletes;
 
     public $incrementing = false;
@@ -211,6 +311,15 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     protected function casts(): array
     {
         return [
+=======
+
+    /** @return array<string, string> */
+    #[Override]
+    protected function casts(): array
+    {
+        return [
+            'id' => 'string',
+>>>>>>> f548be94 (.)
             'uuid' => 'string',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
@@ -219,7 +328,10 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
             'created_by' => 'string',
             'deleted_by' => 'string',
             'is_active' => 'boolean',
+<<<<<<< HEAD
             'preferences' => 'json',
+=======
+>>>>>>> f548be94 (.)
             'extra' => SchemalessAttributes::class,
         ];
     }

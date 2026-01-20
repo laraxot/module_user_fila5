@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementazione Corretta del Logout con Volt e Folio"
 type: concept
@@ -28,6 +29,18 @@ related:
 
 ## Panoramica
 Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di <nome progetto>.
+=======
+# Implementazione Corretta del Logout con Volt e Folio
+
+## Collegamenti correlati
+- [README modulo User](./README.md)
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Analisi Logout Blade](./LOGOUT_BLADE_ANALYSIS.md)
+- [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
+
+## Panoramica
+Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di SaluteOra.
+>>>>>>> f548be94 (.)
 
 ## Percorso Corretto
 Il file di logout deve essere posizionato in:
@@ -37,7 +50,11 @@ Themes/One/resources/views/pages/auth/logout.blade.php
 
 ## Approcci Raccomandati
 
+<<<<<<< HEAD
 In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto <nome progetto>, si raccomandano i seguenti approcci per l'implementazione del logout.
+=======
+In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto SaluteOra, si raccomandano i seguenti approcci per l'implementazione del logout.
+>>>>>>> f548be94 (.)
 
 ### 1. Approccio Folio con PHP puro (Raccomandato)
 
@@ -128,7 +145,11 @@ mount(function() {
         session()->invalidate();
         session()->regenerateToken();
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> f548be94 (.)
     // Reindirizza alla home page localizzata
     $this->redirect('/' . app()->getLocale());
 });
@@ -183,6 +204,7 @@ mount(function() {
 
 ## Implementazione con Componenti Filament
 
+<<<<<<< HEAD
 Per seguire le best practices di <nome progetto>, utilizzare sempre i componenti Blade nativi di Filament:
 
 ```php
@@ -368,6 +390,9 @@ mount(function() {
 ## Implementazione con Componenti Filament
 
 Per seguire le best practices di <nome progetto>, utilizzare sempre i componenti Blade nativi di Filament:
+=======
+Per seguire le best practices di SaluteOra, utilizzare sempre i componenti Blade nativi di Filament:
+>>>>>>> f548be94 (.)
 
 ```php
 <x-filament::button tag="a" href="{{ url('/' . $locale) }}" color="primary" class="w-full">

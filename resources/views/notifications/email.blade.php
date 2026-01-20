@@ -27,6 +27,10 @@ declare(strict_types=1);
     @isset($actionText)
         <?php
 
+<<<<<<< HEAD
+=======
+        // @phpstan-ignore variable.undefined
+>>>>>>> f548be94 (.)
         $color = match ($level) {
             'success', 'error' => $level,
             default => 'primary',

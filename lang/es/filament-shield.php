@@ -3,27 +3,79 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
+=======
+    /*
+     * |--------------------------------------------------------------------------
+     * | Table Columns
+     * |--------------------------------------------------------------------------
+     */
+
+>>>>>>> f548be94 (.)
     'column.name' => 'Nombre',
     'column.guard_name' => 'Guard',
     'column.roles' => 'Roles',
     'column.permissions' => 'Permisos',
     'column.updated_at' => 'Actualizado el',
+<<<<<<< HEAD
+=======
+    /*
+     * |--------------------------------------------------------------------------
+     * | Form Fields
+     * |--------------------------------------------------------------------------
+     */
+
+>>>>>>> f548be94 (.)
     'field.name' => 'Nombre',
     'field.guard_name' => 'Guard',
     'field.permissions' => 'Permisos',
     'field.select_all.name' => 'Seleccionar todos',
     'field.select_all.message' => 'Habilitar todos los permisos actualmente <span class="text-primary font-medium">habilitados</span> para este rol',
+<<<<<<< HEAD
+=======
+    /*
+     * |--------------------------------------------------------------------------
+     * | Navigation & Resource
+     * |--------------------------------------------------------------------------
+     */
+
+>>>>>>> f548be94 (.)
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Roles',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Rol',
     'resource.label.roles' => 'Roles',
+<<<<<<< HEAD
+=======
+    /*
+     * |--------------------------------------------------------------------------
+     * | Section & Tabs
+     * |--------------------------------------------------------------------------
+     */
+
+>>>>>>> f548be94 (.)
     'section' => 'Entidades',
     'resources' => 'Recursos',
     'widgets' => 'Widgets',
     'pages' => 'Páginas',
     'custom' => 'Permisos personalizados',
+<<<<<<< HEAD
     'forbidden' => 'Usted no tiene permiso de acceso',
+=======
+    /*
+     * |--------------------------------------------------------------------------
+     * | Messages
+     * |--------------------------------------------------------------------------
+     */
+
+    'forbidden' => 'Usted no tiene permiso de acceso',
+    /*
+     * |--------------------------------------------------------------------------
+     * | Resource Permissions' Labels
+     * |--------------------------------------------------------------------------
+     */
+
+>>>>>>> f548be94 (.)
     'resource_permission_prefixes_labels' => [
         'view' => 'Ver un registro en particular',
         'view_any' => 'Ver el listado de registros',
@@ -38,6 +90,7 @@ return [
         'restore_any' => 'Restaurar varios registros',
         'replicate' => 'Replicar',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -51,4 +104,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

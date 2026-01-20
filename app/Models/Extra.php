@@ -4,11 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\BaseExtra;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
+=======
+use Spatie\SchemalessAttributes\SchemalessAttributes;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\User\Database\Factories\ExtraFactory;
+use Modules\Xot\Models\Extra as XotBaseExtra;
+>>>>>>> f548be94 (.)
 
 /**
  * @property SchemalessAttributes $extra_attributes
@@ -16,9 +25,15 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder|Extra newQuery()
  * @method static Builder|Extra query()
  * @method static Builder|Extra withExtraAttributes()
+<<<<<<< HEAD
  * @property int         $id
  * @property string      $model_type
  * @property string      $model_id
+=======
+ * @property int $id
+ * @property string $model_type
+ * @property string $model_id
+>>>>>>> f548be94 (.)
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -37,6 +52,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder|Extra whereUpdatedBy($value)
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
  * @property ProfileContract|null $deleter
  * @method static \Modules\User\Database\Factories\ExtraFactory factory($count = null, $state = [])
  * @mixin \Eloquent
@@ -47,4 +63,14 @@ final class Extra extends BaseExtra
     {
         return 'user';
     }
+=======
+ * @method static ExtraFactory factory($count = null, $state = [])
+ * @mixin IdeHelperExtra
+ * @mixin \Eloquent
+ */
+class Extra extends XotBaseExtra
+{
+    /** @var string */
+    protected $connection = 'user';
+>>>>>>> f548be94 (.)
 }

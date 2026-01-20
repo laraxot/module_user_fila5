@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'column.name' => 'Name',
     'column.guard_name' => 'Guard Name',
@@ -12,7 +16,11 @@ return [
     'field.guard_name' => 'Guard Name',
     'field.permissions' => 'Permissions',
     'field.select_all.name' => 'Select All',
+<<<<<<< HEAD
     'field.select_all.message' => 'Enable all Permissions currently <span class=\\"text-primary font-medium\\">Enabled</span> for this role',
+=======
+    'field.select_all.message' => 'Enable all Permissions currently <span class=\"text-primary font-medium\">Enabled</span> for this role',
+>>>>>>> f548be94 (.)
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Roles',
     'nav.role.icon' => 'heroicon-o-shield-check',
@@ -38,6 +46,7 @@ return [
         'restore_any' => 'Restore Any',
         'replicate' => 'Replicate',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -51,4 +60,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

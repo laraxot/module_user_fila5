@@ -7,7 +7,10 @@ namespace Modules\User\Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+<<<<<<< HEAD
 use Modules\User\Database\Factories\TeamFactory;
+=======
+>>>>>>> f548be94 (.)
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
@@ -31,7 +34,11 @@ class UserSeeder extends Seeder
         $this->command->info('👤 Inizializzazione seeding User...');
 
         // Disabilita i controlli di foreign key (solo per MySQL)
+<<<<<<< HEAD
         if ('sqlite' !== DB::getDriverName()) {
+=======
+        if (DB::getDriverName() !== 'sqlite') {
+>>>>>>> f548be94 (.)
             DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         }
 
@@ -42,7 +49,11 @@ class UserSeeder extends Seeder
             $this->command->info('✅ Seeding User completato con successo!');
         } finally {
             // Riabilita i controlli di foreign key (solo per MySQL)
+<<<<<<< HEAD
             if ('sqlite' !== DB::getDriverName()) {
+=======
+            if (DB::getDriverName() !== 'sqlite') {
+>>>>>>> f548be94 (.)
                 DB::statement('SET FOREIGN_KEY_CHECKS=1;');
             }
         }
@@ -158,7 +169,11 @@ class UserSeeder extends Seeder
             'leave teams',
         ]);
 
+<<<<<<< HEAD
         $this->command->info('   ✓ Creati '.count($systemPermissions));
+=======
+        $this->command->info('   ✓ Creati ' . count($systemPermissions) . ' permessi di sistema');
+>>>>>>> f548be94 (.)
         $this->command->info('   ✓ Creati 4 ruoli di sistema (super-admin, system-admin, moderator, user)');
     }
 
@@ -169,6 +184,7 @@ class UserSeeder extends Seeder
     {
         $this->command->info('👥 Creazione team di sistema...');
 
+<<<<<<< HEAD
         $adminTeam = $this->createTeam('Amministratori');
         $devTeam = $this->createTeam('Sviluppatori');
         $supportTeam = $this->createTeam('Supporto Clienti');
@@ -188,5 +204,38 @@ class UserSeeder extends Seeder
         ]);
 
         return $team;
+=======
+        // Team di amministrazione
+        $adminTeam = Team::factory()->create([
+            'name' => 'Amministratori',
+            'personal_team' => false,
+        ]);
+
+        // Team di sviluppo
+        $devTeam = Team::factory()->create([
+            'name' => 'Sviluppatori',
+            'personal_team' => false,
+        ]);
+
+        // Team di supporto
+        $supportTeam = Team::factory()->create([
+            'name' => 'Supporto Clienti',
+            'personal_team' => false,
+        ]);
+
+        // Team di marketing
+        $marketingTeam = Team::factory()->create([
+            'name' => 'Marketing',
+            'personal_team' => false,
+        ]);
+
+        // Team generale
+        $generalTeam = Team::factory()->create([
+            'name' => 'Team Generale',
+            'personal_team' => false,
+        ]);
+
+        $this->command->info('   ✓ Creati 5 team di sistema');
+>>>>>>> f548be94 (.)
     }
 }

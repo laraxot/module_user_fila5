@@ -10,8 +10,11 @@ namespace Modules\User\Actions\Socialite;
 
 // use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
 use Filament\Facades\Filament;
+<<<<<<< HEAD
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Events\Dispatcher;
+=======
+>>>>>>> f548be94 (.)
 use Illuminate\Http\RedirectResponse;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
@@ -27,6 +30,7 @@ class LoginUserAction
      */
     public function execute(SocialiteUser $socialiteUser): RedirectResponse
     {
+<<<<<<< HEAD
         Assert::notNull($user = $socialiteUser->user, '['.__FILE__.']['.__LINE__.']');
 
         if (! $user instanceof Authenticatable) {
@@ -41,5 +45,14 @@ class LoginUserAction
         app(Dispatcher::class)->dispatch(new SocialiteUserConnected($socialiteUser));
 
         return redirect()->intended('/'.app()->getLocale());
+=======
+        Assert::notNull($user = $socialiteUser->user, '[' . __FILE__ . '][' . __LINE__ . ']');
+        Filament::auth()->login($user);
+        SocialiteUserConnected::dispatch($socialiteUser);
+        // session()->regenerate();
+
+        // return redirect()->intended(Filament::getUrl());
+        return redirect()->intended('/');
+>>>>>>> f548be94 (.)
     }
 }

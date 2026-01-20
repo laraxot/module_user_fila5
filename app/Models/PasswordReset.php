@@ -5,20 +5,36 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
+=======
+use Modules\Xot\Contracts\ProfileContract;
+use Illuminate\Support\Carbon;
+use Modules\User\Database\Factories\PasswordResetFactory;
+>>>>>>> f548be94 (.)
 
 /**
  * Modules\User\Models\PasswordReset.
  *
+<<<<<<< HEAD
  * @property int         $id
  * @property string      $email
  * @property string      $token
+=======
+ * @property int $id
+ * @property string $email
+ * @property string $token
+>>>>>>> f548be94 (.)
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $user_id
  * @property string|null $updated_by
  * @property string|null $created_by
+<<<<<<< HEAD
+=======
+ * @method static PasswordResetFactory factory($count = null, $state = [])
+>>>>>>> f548be94 (.)
  * @method static Builder|PasswordReset newModelQuery()
  * @method static Builder|PasswordReset newQuery()
  * @method static Builder|PasswordReset query()
@@ -32,10 +48,16 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|PasswordReset whereUserId($value)
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
  * @property string|null          $uuid
  * @method static Builder<static>|PasswordReset whereUuid($value)
  * @property ProfileContract|null $deleter
  * @method static \Modules\User\Database\Factories\PasswordResetFactory factory($count = null, $state = [])
+=======
+ * @property string|null $uuid
+ * @method static Builder<static>|PasswordReset whereUuid($value)
+ * @mixin IdeHelperPasswordReset
+>>>>>>> f548be94 (.)
  * @mixin \Eloquent
  */
 class PasswordReset extends BaseModel
@@ -49,6 +71,11 @@ class PasswordReset extends BaseModel
 
     /**
      * The table associated with the model.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> f548be94 (.)
      */
     protected $table = 'password_resets';
 }

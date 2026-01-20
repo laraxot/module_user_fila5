@@ -17,12 +17,16 @@ class PermissionsSeeder extends Seeder
     {
         // Crea i permessi
         $permissions = [
+<<<<<<< HEAD
             // Doctor permissions
+=======
+>>>>>>> f548be94 (.)
             'moderate_doctors' => 'Può moderare le registrazioni dei medici',
             'view_doctors' => 'Può visualizzare i medici',
             'create_doctors' => 'Può creare medici',
             'edit_doctors' => 'Può modificare i medici',
             'delete_doctors' => 'Può eliminare i medici',
+<<<<<<< HEAD
 
             // Authentication Log permissions
             'authentication-log.view.any' => 'Può visualizzare tutti gli accessi di autenticazione',
@@ -59,12 +63,18 @@ class PermissionsSeeder extends Seeder
             'oauth-auth-code.delete' => 'Può eliminare codici di autorizzazione OAuth',
             'oauth-auth-code.restore' => 'Può ripristinare codici di autorizzazione OAuth eliminati',
             'oauth-auth-code.force-delete' => 'Può eliminare permanentemente codici di autorizzazione OAuth',
+=======
+>>>>>>> f548be94 (.)
         ];
 
         foreach ($permissions as $name => $description) {
             Permission::firstOrCreate([
                 'name' => $name,
                 'guard_name' => 'web',
+<<<<<<< HEAD
+=======
+                'description' => $description,
+>>>>>>> f548be94 (.)
             ]);
         }
 

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Facades\Filament;
@@ -575,5 +576,20 @@ abstract class TestCase extends XotBaseTestCase
         $invitation->save();
 
         return $invitation->fresh() ?? $invitation;
+=======
+use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Modules\Xot\Tests\CreatesApplication;
+
+abstract class TestCase extends BaseTestCase
+{
+    use CreatesApplication;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        // Set up any module-specific test configuration here
+        $this->artisan('module:migrate', ['module' => 'User']);
+>>>>>>> f548be94 (.)
     }
 }

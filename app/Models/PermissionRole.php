@@ -4,9 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
+=======
+use Override;
+use Modules\Xot\Contracts\ProfileContract;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
+>>>>>>> f548be94 (.)
 use Webmozart\Assert\Assert;
 
 /**
@@ -15,7 +22,11 @@ use Webmozart\Assert\Assert;
  * @method static Builder|PermissionRole newModelQuery()
  * @method static Builder|PermissionRole newQuery()
  * @method static Builder|PermissionRole query()
+<<<<<<< HEAD
  * @property string      $id
+=======
+ * @property string $id
+>>>>>>> f548be94 (.)
  * @property string|null $permission_id
  * @property string|null $role_id
  * @property Carbon|null $created_at
@@ -29,7 +40,11 @@ use Webmozart\Assert\Assert;
  * @method static Builder|PermissionRole whereRoleId($value)
  * @method static Builder|PermissionRole whereUpdatedAt($value)
  * @method static Builder|PermissionRole whereUpdatedBy($value)
+<<<<<<< HEAD
  * @property ProfileContract|null $deleter
+=======
+ * @mixin IdeHelperPermissionRole
+>>>>>>> f548be94 (.)
  * @mixin \Eloquent
  */
 class PermissionRole extends BasePivot
@@ -49,7 +64,11 @@ class PermissionRole extends BasePivot
     }
 
     /** @return array<string, string> */
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     protected function casts(): array
     {
         $parent = parent::casts();

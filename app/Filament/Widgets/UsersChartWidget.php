@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
@@ -17,11 +18,30 @@ use Modules\Xot\Filament\Widgets\XotBaseChartWidget;
 use Webmozart\Assert\Assert;
 
 class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForms
+=======
+use Filament\Actions\Contracts\HasActions;
+use Exception;
+use Filament\Actions\Action;
+use Filament\Actions\Concerns\InteractsWithActions;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+use Filament\Widgets\ChartWidget;
+// use Filament\Widgets\Concerns\InteractsWithPageFilters; // Temporaneamente commentato per evitare conflitti trait in Filament 4.x
+use Flowframe\Trend\Trend;
+use Flowframe\Trend\TrendValue;
+use Illuminate\Contracts\Support\Htmlable;
+use Illuminate\Support\Carbon;
+use Modules\User\Models\AuthenticationLog;
+use Webmozart\Assert\Assert;
+
+class UsersChartWidget extends ChartWidget implements HasForms, HasActions
+>>>>>>> f548be94 (.)
 {
     use InteractsWithActions;
     use InteractsWithForms;
     // use InteractsWithPageFilters; // Temporaneamente commentato per evitare conflitti trait in Filament 4.x
 
+<<<<<<< HEAD
     /**
      * @var array<string, mixed>|null
      */
@@ -36,6 +56,17 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
     public function getHeading(): ?string
     {
         return __('user::widgets.users_chart.heading');
+=======
+    public string $chart_id = '';
+
+    protected null|string $pollingInterval = null;
+
+    protected static null|int $sort = 2;
+
+    public function getHeading(): Htmlable|string|null
+    {
+        return 'Authentication Log';
+>>>>>>> f548be94 (.)
     }
 
     /**
@@ -45,8 +76,13 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
     {
         return Action::make('test')
             ->requiresConfirmation()
+<<<<<<< HEAD
             ->action(function (array $arguments): void {
                 // Test action - no logging
+=======
+            ->action(function (array $arguments) {
+                dd('Test action called', $arguments);
+>>>>>>> f548be94 (.)
             });
     }
 
@@ -65,6 +101,7 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
         // $this->testAction();
 
         try {
+<<<<<<< HEAD
             // Type narrowing for PHPStan Level 10
             $pageFilters = isset($this->pageFilters) && is_array($this->pageFilters) ? $this->pageFilters : null;
 
@@ -77,6 +114,14 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
                 $endDate = Carbon::now()->format('Y-m-d H:i:s');
             }
             if (null === $startDate) {
+=======
+            Assert::nullOrString($startDate = $this->pageFilters['startDate'] ?? null);
+            Assert::nullOrString($endDate = $this->pageFilters['endDate'] ?? null);
+            if ($endDate === null) {
+                $endDate = Carbon::now()->format('Y-m-d H:i:s');
+            }
+            if ($startDate === null) {
+>>>>>>> f548be94 (.)
                 $startDate = Carbon::now()->subMonth()->format('Y-m-d H:i:s');
             }
             Assert::notNull($startDate = Carbon::createFromFormat('Y-m-d H:i:s', $startDate));
@@ -86,7 +131,11 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
             if ($startDate->diffInDays($endDate, true) > 90) {
                 $startDate = $endDate->copy()->subDays(90);
             }
+<<<<<<< HEAD
         } catch (\Exception $e) {
+=======
+        } catch (Exception $e) {
+>>>>>>> f548be94 (.)
             return [];
         }
 
@@ -121,7 +170,11 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
         return [
             'datasets' => [
                 [
+<<<<<<< HEAD
                     'label' => __('user::widgets.users_chart.label'),
+=======
+                    'label' => 'Number of logins executed',
+>>>>>>> f548be94 (.)
                     'data' => $chartData,
                 ],
             ],

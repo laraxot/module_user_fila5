@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'resources' => 'Risorse',
     'pages' => 'Pagine',
@@ -18,6 +22,7 @@ return [
         'icon' => 'user-user-social',
     ],
     'fields' => [
+<<<<<<< HEAD
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -67,6 +72,20 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        'name' => 'Nome',
+        'guard_name' => 'Guard',
+        'permissions' => 'Permessi',
+        'updated_at' => 'Aggiornato il',
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+        'select_all' => [
+            'name' => 'Seleziona Tutti',
+            'message' => '',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+>>>>>>> f548be94 (.)
         ],
     ],
     'actions' => [
@@ -91,6 +110,9 @@ return [
             'label' => 'social provider.plural.model',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> f548be94 (.)
 ];

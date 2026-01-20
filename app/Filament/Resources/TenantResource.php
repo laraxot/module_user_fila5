@@ -10,6 +10,10 @@ namespace Modules\User\Filament\Resources;
 
 use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
+=======
+use Filament\Resources\Resource;
+>>>>>>> f548be94 (.)
 use Filament\Schemas\Components\Section;
 use Filament\Support\Components\Component;
 use Illuminate\Database\Eloquent\Model;
@@ -18,29 +22,56 @@ use Modules\User\Filament\Resources\TenantResource\Pages\CreateTenant;
 use Modules\User\Filament\Resources\TenantResource\Pages\EditTenant;
 use Modules\User\Filament\Resources\TenantResource\Pages\ListTenants;
 use Modules\User\Filament\Resources\TenantResource\Pages\ViewTenant;
+<<<<<<< HEAD
 use Modules\User\Filament\Resources\TenantResource\RelationManagers\UsersRelationManager;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class TenantResource extends XotBaseResource
 {
+=======
+use Modules\User\Filament\Resources\TenantResource\RelationManagers;
+use Modules\User\Filament\Resources\TenantResource\RelationManagers\UsersRelationManager;
+use Modules\Xot\Datas\XotData;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Override;
+
+class TenantResource extends XotBaseResource
+{
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-rectangle-stack';
+
+>>>>>>> f548be94 (.)
     /**
      * Get the model class name for this resource.
      *
      * @return class-string<Model>
      */
+<<<<<<< HEAD
     #[\Override]
     public static function getModel(): string
     {
         $xot = XotData::make();
 
         return $xot->getTenantClass();
+=======
+    #[Override]
+    public static function getModel(): string
+    {
+        $xot = XotData::make();
+        $model = $xot->getTenantClass();
+
+        return $model;
+>>>>>>> f548be94 (.)
     }
 
     /**
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public static function getFormSchema(): array
     {
         return [
@@ -53,11 +84,17 @@ class TenantResource extends XotBaseResource
                             ignoreRecord: true,
                         )
                         ->live(onBlur: true)
+<<<<<<< HEAD
                         ->afterStateUpdated(function (callable $set, $state): void {
                             if (is_string($state)) {
                                 $set('slug', Str::slug($state));
                                 $set('domain', Str::slug($state));
                             }
+=======
+                        ->afterStateUpdated(function (callable $set, $state) {
+                            $set('slug', Str::slug($state));
+                            $set('domain', Str::slug($state));
+>>>>>>> f548be94 (.)
                         })
                         ->columnSpanFull()
                         ->placeholder('Nome del tenant')
@@ -101,7 +138,11 @@ class TenantResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public static function getRelations(): array
     {
         return [
@@ -110,7 +151,11 @@ class TenantResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public static function getPages(): array
     {
         return [

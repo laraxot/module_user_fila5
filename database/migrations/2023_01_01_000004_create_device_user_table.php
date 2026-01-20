@@ -7,8 +7,12 @@ use Modules\User\Models\Device;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
+=======
+return new class extends XotBaseMigration {
+>>>>>>> f548be94 (.)
     /**
      * Run the migrations.
      */
@@ -25,18 +29,30 @@ return new class extends XotBaseMigration
         });
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+<<<<<<< HEAD
             if (! $this->hasColumn('push_notifications_token')) {
                 $table->string('push_notifications_token')->nullable();
             }
 
             if (! $this->hasColumn('push_notifications_enabled')) {
+=======
+            if (!$this->hasColumn('push_notifications_token')) {
+                $table->string('push_notifications_token')->nullable();
+            }
+
+            if (!$this->hasColumn('push_notifications_enabled')) {
+>>>>>>> f548be94 (.)
                 $table->boolean('push_notifications_enabled')->nullable();
             }
             // -- change
             if ($this->hasColumn('device_id')) {
                 $table->string('device_id', 36)->nullable()->change();
             }
+<<<<<<< HEAD
             // dddx($getColumnType('device_id');//varchar)
+=======
+            // dddx($this->getColumnType('device_id'));//varchar
+>>>>>>> f548be94 (.)
             if ($this->getColumnType('user_id') === 'uuid') {
                 $table->string('user_id', 36)->nullable()->change();
             }

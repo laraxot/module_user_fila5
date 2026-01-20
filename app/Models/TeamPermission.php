@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
@@ -50,6 +51,38 @@ class TeamPermission extends BaseModel
 {
     /**
      * The database connection that should be used by the model.
+=======
+use DateTime;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+
+/**
+ * Team Permission Model
+ *
+ * Represents a permission assigned to a user within a team context.
+ *
+ * @property string $id
+ * @property string $team_id
+ * @property string $user_id
+ * @property string $permission
+ * @property DateTime|null $created_at
+ * @property DateTime|null $updated_at
+ * @property Team $team
+ * @property User $user
+ * @method static Builder<static>|TeamPermission newModelQuery()
+ * @method static Builder<static>|TeamPermission newQuery()
+ * @method static Builder<static>|TeamPermission query()
+ * @mixin IdeHelperTeamPermission
+ * @mixin \Eloquent
+ */
+class TeamPermission extends Model
+{
+    /**
+     * The database connection that should be used by the model.
+     *
+     * @var string
+>>>>>>> f548be94 (.)
      */
     protected $connection = 'user';
 
@@ -65,7 +98,11 @@ class TeamPermission extends BaseModel
     ];
 
     /**
+<<<<<<< HEAD
      * @return BelongsTo<Team, $this>
+=======
+     * Get the team that owns the permission.
+>>>>>>> f548be94 (.)
      */
     public function team(): BelongsTo
     {
@@ -73,7 +110,11 @@ class TeamPermission extends BaseModel
     }
 
     /**
+<<<<<<< HEAD
      * @return BelongsTo<User, $this>
+=======
+     * Get the user that owns the permission.
+>>>>>>> f548be94 (.)
      */
     public function user(): BelongsTo
     {

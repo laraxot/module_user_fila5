@@ -10,6 +10,7 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -22,17 +23,33 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
+=======
+use Illuminate\Database\Eloquent\Collection as EloquentCollection;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Support\Carbon;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+use Modules\Xot\Models\Traits\RelationX;
+>>>>>>> f548be94 (.)
 use Spatie\Permission\Models\Role as SpatieRole;
 use Webmozart\Assert\Assert;
 
 /**
  * Modules\User\Models\Role.
  *
+<<<<<<< HEAD
  * @property int $id
+=======
+ * @property string $id
+>>>>>>> f548be94 (.)
  * @property string $uuid
  * @property string|null $team_id
  * @property string $name
  * @property string $guard_name
+<<<<<<< HEAD
  * @property string|null $display_name
  * @property string|null $description
  * @property Carbon|null $created_at
@@ -45,6 +62,15 @@ use Webmozart\Assert\Assert;
  * @property Collection<int, Model&UserContract> $users
  * @property int|null $users_count
  * @property PermissionRole|null $pivot
+=======
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Collection<int, Permission> $permissions
+ * @property int|null $permissions_count
+ * @property Team|null $team
+ * @property EloquentCollection<int, Model&UserContract> $users
+ * @property int|null $users_count
+>>>>>>> f548be94 (.)
  * @method static Builder|Role newModelQuery()
  * @method static Builder|Role newQuery()
  * @method static Builder|Role permission($permissions)
@@ -54,6 +80,7 @@ use Webmozart\Assert\Assert;
  * @method static Builder|Role whereName($value)
  * @method static Builder|Role whereTeamId($value)
  * @method static Builder|Role whereUpdatedAt($value)
+<<<<<<< HEAD
  * @method static Builder|Role whereId($value)
  * @method static Builder|Role whereCreatedBy($value)
  * @method static Builder|Role whereUpdatedBy($value)
@@ -67,10 +94,24 @@ use Webmozart\Assert\Assert;
  * @property ProfileContract|null $updater
  * @method static \Modules\User\Database\Factories\RoleFactory factory($count = null, $state = [])
  * @method static Builder<static>|Role whereUuid($value)
+=======
+ * @method static Builder|Role whereUuid($value)
+ * @property int $id
+ * @method static Builder|Role whereId($value)
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @method static Builder|Role whereCreatedBy($value)
+ * @method static Builder|Role whereUpdatedBy($value)
+ * @mixin Eloquent
+ * @method static Builder|Role withoutPermission($permissions)
+ * @property PermissionRole|null $pivot
+ * @mixin IdeHelperRole
+>>>>>>> f548be94 (.)
  * @mixin \Eloquent
  */
 class Role extends SpatieRole
 {
+<<<<<<< HEAD
     use HasXotFactory;
 
     use RelationX;
@@ -98,6 +139,26 @@ class Role extends SpatieRole
         'created_by',
         'updated_by',
     ];
+=======
+    use HasFactory;
+    use RelationX;
+
+    // use HasUuids;
+
+    final public const ROLE_ADMINISTRATOR = 1;
+
+    final public const ROLE_OWNER = 2;
+
+    final public const ROLE_USER = 3;
+
+    /** @var string */
+    protected $connection = 'user';
+
+    /** @var string */
+    protected $keyType = 'string';
+
+    // protected $fillable=['id','']
+>>>>>>> f548be94 (.)
 
     public function getTable(): string
     {
@@ -106,8 +167,26 @@ class Role extends SpatieRole
         return $table;
     }
 
+<<<<<<< HEAD
     /**
      * @return BelongsTo<Model, $this>
+=======
+    /** @return array<string, string> */
+    protected function casts(): array
+    {
+        return [
+            'id' => 'string',
+            'uuid' => 'string',
+            'name' => 'string',
+            'guard_name' => 'string',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+        ];
+    }
+
+    /**
+     * Get all of the teams the user belongs to.
+>>>>>>> f548be94 (.)
      */
     public function team(): BelongsTo
     {
@@ -119,12 +198,17 @@ class Role extends SpatieRole
     }
 
     /**
+<<<<<<< HEAD
      * @return BelongsToMany<Permission, $this, Pivot, 'pivot'>
+=======
+     * A role may be given various permissions.
+>>>>>>> f548be94 (.)
      */
     public function permissions(): BelongsToMany
     {
         return $this->belongsToManyX(Permission::class);
     }
+<<<<<<< HEAD
 
     /** @return array<string, string> */
     protected function casts(): array
@@ -137,4 +221,6 @@ class Role extends SpatieRole
             'updated_at' => 'datetime',
         ];
     }
+=======
+>>>>>>> f548be94 (.)
 }

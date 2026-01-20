@@ -126,6 +126,7 @@ return [
         'tooltip' => 'Скопировано!',
     ],
     'fields' => [
+<<<<<<< HEAD
         'email' => [
             'label' => 'E-mail',
             'tooltip' => '',
@@ -218,4 +219,22 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        'email' => 'E-mail',
+        'login' => 'Имя пользователя',
+        'name' => 'Имя',
+        'password' => 'Пароль',
+        'password_confirm' => 'Подтверждение пароля',
+        'new_password' => 'Новый пароль',
+        'new_password_confirmation' => 'Подтверждение пароля',
+        'token_name' => 'Имя токена',
+        'abilities' => 'Доступ',
+        '2fa_code' => 'Код',
+        '2fa_recovery_code' => 'Код восстановления',
+        'created' => 'Создано',
+        'expires' => 'Истекает',
+    ],
+    'or' => 'или',
+    'cancel' => 'Отмена',
+>>>>>>> f548be94 (.)
 ];

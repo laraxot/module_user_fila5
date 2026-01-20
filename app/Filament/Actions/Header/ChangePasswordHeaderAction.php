@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Actions\Header;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Auth;
@@ -18,12 +19,24 @@ use Modules\Xot\Filament\Actions\XotBaseAction;
 use Webmozart\Assert\Assert;
 
 final class ChangePasswordHeaderAction extends XotBaseAction
+=======
+use Filament\Actions\Action;
+use Filament\Forms\Components\TextInput;
+use Filament\Notifications\Notification;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\Rules\Password;
+use Modules\User\Datas\PasswordData;
+use Modules\Xot\Contracts\UserContract;
+
+class ChangePasswordHeaderAction extends Action
+>>>>>>> f548be94 (.)
 {
     protected function setUp(): void
     {
         parent::setUp();
         $this->translateLabel()
             ->icon('heroicon-o-key')
+<<<<<<< HEAD
             ->action(function (array $data): void {
                 $record = Auth::user();
                 Assert::isInstanceOf($record, UserContract::class);
@@ -32,11 +45,18 @@ final class ChangePasswordHeaderAction extends XotBaseAction
 
                 $record->update([
                     'password' => Hash::make($newPassword),
+=======
+            ->action(function (UserContract $record, array $data): void {
+                $old_password = $record->getAttribute('password');
+                $res = tap($record)->update([
+                    'password' => Hash::make($data['new_password']),
+>>>>>>> f548be94 (.)
                 ]);
 
                 Notification::make()
                     ->success()
                     ->title(__('user::notifications.password_changed_successfully.title'))
+<<<<<<< HEAD
                     ->body(__('user::notifications.password_changed_successfully.message'))
                     ->send();
             })
@@ -68,6 +88,29 @@ final class ChangePasswordHeaderAction extends XotBaseAction
     }
 
     public static function getDefaultName(): string
+=======
+                    ->body(__('user::notifications.password_changed_successfully.message'));
+            })
+            ->schema([
+                /*
+                 * TextInput::make('new_password')
+                 * ->password()
+                 *
+                 * ->placeholder(__('user::fields.new_password.placeholder'))
+                 * ->required()
+                 * ->rule(Password::default()),
+                 */
+                PasswordData::make()->getPasswordFormComponent('new_password'),
+                TextInput::make('new_password_confirmation')
+                    ->password()
+                    ->placeholder(__('user::fields.confirm_password.placeholder'))
+                    ->rule('required', static fn($get): bool => (bool) $get('new_password'))
+                    ->same('new_password'),
+            ]);
+    }
+
+    public static function getDefaultName(): null|string
+>>>>>>> f548be94 (.)
     {
         return 'changePassword';
     }

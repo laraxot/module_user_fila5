@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
@@ -13,12 +14,26 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Foundation\Auth\User as AuthUser;
 use Modules\User\Models\OauthClient;
+=======
+use Filament\Schemas\Components\Component;
+use Override;
+use Filament\Actions\CreateAction;
+use Filament\Actions\EditAction;
+use Filament\Actions\DeleteAction;
+use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Schema;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
+>>>>>>> f548be94 (.)
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class ClientsRelationManager extends XotBaseRelationManager
 {
     protected static string $relationship = 'clients';
 
+<<<<<<< HEAD
     protected static ?string $recordTitleAttribute = 'name';
 
     /**
@@ -131,5 +146,42 @@ class ClientsRelationManager extends XotBaseRelationManager
             });
 
         return $actions;
+=======
+    /**
+     * @return array<string, Component>
+     */
+    #[Override]
+    public function getFormSchema(): array
+    {
+        return [
+            'name' => TextInput::make('name')->required()->maxLength(255),
+        ];
+    }
+
+    #[Override]
+    public function table(Table $table): Table
+    {
+        return $table
+            ->recordTitleAttribute('name')
+            ->columns([
+                TextColumn::make('name'),
+            ])
+            ->filters([])
+            ->headerActions([
+                CreateAction::make(),
+            ])
+            ->recordActions([
+                EditAction::make(),
+                DeleteAction::make(),
+            ])
+            ->toolbarActions([
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
+                ]),
+            ])
+            ->emptyStateActions([
+                // {{ tableEmptyStateActions }}
+            ]);
+>>>>>>> f548be94 (.)
     }
 }

@@ -126,6 +126,7 @@ return [
         'tooltip' => 'Copiat!',
     ],
     'fields' => [
+<<<<<<< HEAD
         'email' => [
             'label' => 'Email',
             'tooltip' => '',
@@ -218,4 +219,22 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        'email' => 'Email',
+        'login' => 'Login',
+        'name' => 'Nume',
+        'password' => 'Parola',
+        'password_confirm' => 'Confirmare parola',
+        'new_password' => 'Parola nouă',
+        'new_password_confirmation' => 'Confirmare parola nouă',
+        'token_name' => 'Nume token',
+        'abilities' => 'Abilități',
+        '2fa_code' => 'Cod',
+        '2fa_recovery_code' => 'Cod de recuperare',
+        'created' => 'Creat',
+        'expires' => 'Expiră',
+    ],
+    'or' => 'Sau',
+    'cancel' => 'Anulare',
+>>>>>>> f548be94 (.)
 ];

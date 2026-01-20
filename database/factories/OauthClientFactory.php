@@ -9,7 +9,11 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Models\User;
 
 /**
+<<<<<<< HEAD
  * OauthClient Factory.
+=======
+ * OauthClient Factory
+>>>>>>> f548be94 (.)
  *
  * Factory for creating OauthClient model instances for testing and seeding.
  *
@@ -29,13 +33,17 @@ class OauthClientFactory extends Factory
      *
      * @return array<string, mixed>
      */
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
+=======
+>>>>>>> f548be94 (.)
     public function definition(): array
     {
         return [
             'id' => $this->faker->uuid(),
+<<<<<<< HEAD
             'user_id' => User::factory(),
             'name' => $this->faker->company(),
             'secret' => $this->faker->sha256(),
@@ -50,6 +58,32 @@ class OauthClientFactory extends Factory
             ),
             'scopes' => $this->faker->randomElements(
                 ['read', 'write', 'admin', 'user'],
+=======
+            'user_id' => $this->faker->optional()->randomElement([User::factory(), null]),
+            'name' => $this->faker->company() . ' App',
+            'secret' => $this->faker->sha256(),
+            'provider' => $this->faker->optional()->randomElement(['users', 'admins']),
+            'redirect' => $this->faker->url(),
+            'personal_access_client' => $this->faker->boolean(20), // 20% personal access clients
+            'password_client' => $this->faker->boolean(30), // 30% password clients
+            'revoked' => $this->faker->boolean(5), // 5% revoked
+            'grant_types' => $this->faker->optional()->randomElements(
+                [
+                    'authorization_code',
+                    'client_credentials',
+                    'password',
+                    'refresh_token',
+                ],
+                $this->faker->numberBetween(1, 3),
+            ),
+            'scopes' => $this->faker->optional()->randomElements(
+                [
+                    'read',
+                    'write',
+                    'admin',
+                    'user',
+                ],
+>>>>>>> f548be94 (.)
                 $this->faker->numberBetween(1, 3),
             ),
         ];
@@ -57,10 +91,19 @@ class OauthClientFactory extends Factory
 
     /**
      * Create a personal access client.
+<<<<<<< HEAD
      */
     public function personalAccess(): static
     {
         return $this->state(fn (): array => [
+=======
+     *
+     * @return static
+     */
+    public function personalAccess(): static
+    {
+        return $this->state(fn(array $_attributes): array => [
+>>>>>>> f548be94 (.)
             'personal_access_client' => true,
             'password_client' => false,
             'name' => 'Personal Access Client',
@@ -69,10 +112,19 @@ class OauthClientFactory extends Factory
 
     /**
      * Create a password client.
+<<<<<<< HEAD
      */
     public function password(): static
     {
         return $this->state(fn (): array => [
+=======
+     *
+     * @return static
+     */
+    public function password(): static
+    {
+        return $this->state(fn(array $_attributes): array => [
+>>>>>>> f548be94 (.)
             'password_client' => true,
             'personal_access_client' => false,
             'name' => 'Password Grant Client',
@@ -81,40 +133,78 @@ class OauthClientFactory extends Factory
 
     /**
      * Create a revoked client.
+<<<<<<< HEAD
      */
     public function revoked(): static
     {
         return $this->state(fn (): array => [
+=======
+     *
+     * @return static
+     */
+    public function revoked(): static
+    {
+        return $this->state(fn(array $_attributes): array => [
+>>>>>>> f548be94 (.)
             'revoked' => true,
         ]);
     }
 
     /**
      * Create an active client.
+<<<<<<< HEAD
      */
     public function active(): static
     {
         return $this->state(fn (): array => [
+=======
+     *
+     * @return static
+     */
+    public function active(): static
+    {
+        return $this->state(fn(array $_attributes): array => [
+>>>>>>> f548be94 (.)
             'revoked' => false,
         ]);
     }
 
     /**
      * Create client for a specific user.
+<<<<<<< HEAD
      */
     public function forUser(User $user): static
     {
         return $this->state(fn (): array => [
+=======
+     *
+     * @param User $user
+     * @return static
+     */
+    public function forUser(User $user): static
+    {
+        return $this->state(fn(array $_attributes): array => [
+>>>>>>> f548be94 (.)
             'user_id' => $user->id,
         ]);
     }
 
     /**
      * Create client with specific redirect URI.
+<<<<<<< HEAD
      */
     public function withRedirectUri(string $redirectUri): static
     {
         return $this->state(fn (): array => [
+=======
+     *
+     * @param string $redirectUri
+     * @return static
+     */
+    public function withRedirectUri(string $redirectUri): static
+    {
+        return $this->state(fn(array $_attributes): array => [
+>>>>>>> f548be94 (.)
             'redirect' => $redirectUri,
         ]);
     }
@@ -122,11 +212,20 @@ class OauthClientFactory extends Factory
     /**
      * Create client with specific scopes.
      *
+<<<<<<< HEAD
      * @param  array<string>  $scopes
      */
     public function withScopes(array $scopes): static
     {
         return $this->state(fn (): array => [
+=======
+     * @param array<string> $scopes
+     * @return static
+     */
+    public function withScopes(array $scopes): static
+    {
+        return $this->state(fn(array $_attributes): array => [
+>>>>>>> f548be94 (.)
             'scopes' => $scopes,
         ]);
     }

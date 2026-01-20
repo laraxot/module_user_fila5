@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
     'navigation' => ['label' => 'Feature', 'plural_label' => 'Features', 'group' => 'Gestione Utenti', 'icon' => 'heroicon-o-star', 'sort' => 75],
     'label' => 'Feature',
@@ -61,4 +62,69 @@ return [
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
     ],
     'messages' => ['created' => 'Feature creata con successo', 'updated' => 'Feature aggiornata con successo', 'deleted' => 'Feature eliminata con successo', 'imported' => 'Importazione completata', 'exported' => 'Esportazione completata'],
+=======
+
+return [
+    'resources' => 'Risorse',
+    'pages' => 'Pagine',
+    'widgets' => 'Widgets',
+    'navigation' => [
+        'name' => 'Feature',
+        'plural' => 'Features',
+        'group' => [
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione delle feature e delle funzionalità',
+        ],
+        'label' => 'feature',
+        'sort' => 75,
+        'icon' => 'user-user-feature',
+    ],
+    'fields' => [
+        'name' => 'Nome',
+        'guard_name' => 'Guard',
+        'permissions' => 'Permessi',
+        'updated_at' => 'Aggiornato il',
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+        'select_all' => [
+            'name' => 'Seleziona Tutti',
+            'message' => '',
+        ],
+        'value' => [
+            'label' => 'value',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+    ],
+    'actions' => [
+        'import' => [
+            'fields' => [
+                'import_file' => 'Seleziona un file XLS o CSV da caricare',
+            ],
+        ],
+        'export' => [
+            'filename_prefix' => 'Aree al',
+            'columns' => [
+                'name' => 'Nome area',
+                'parent_name' => 'Nome area livello superiore',
+            ],
+        ],
+    ],
+    'model' => [
+        'label' => 'feature.model',
+    ],
+>>>>>>> f548be94 (.)
 ];

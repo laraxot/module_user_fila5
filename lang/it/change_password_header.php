@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Header Password',
         'plural_label' => 'Header Password',
@@ -19,10 +20,20 @@ return [
             'placeholder' => 'Conferma la tua nuova password',
             'helper_text' => 'Devi inserire la stessa password per conferma',
             'description' => 'Inserisci nuovamente la nuova password per confermarla',
+=======
+    'fields' => [
+        'new_password_confirmation' => [
+            'label' => 'Conferma nuova password',
+            'placeholder' => 'Conferma la tua nuova password',
+            'helper_text' => '',
+            'description' => 'Inserisci nuovamente la nuova password per confermarla',
+            'tooltip' => 'Ripeti la nuova password per sicurezza',
+>>>>>>> f548be94 (.)
             'icon' => 'heroicon-o-lock-closed',
             'color' => 'warning',
         ],
     ],
+<<<<<<< HEAD
     'actions' => [
         'create' => [
             'label' => 'Crea Header',
@@ -48,4 +59,6 @@ return [
         'updated' => 'Header aggiornato con successo',
         'deleted' => 'Header eliminato con successo',
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

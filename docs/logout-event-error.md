@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Analisi dell'Errore negli Eventi di Logout"
 type: concept
@@ -28,6 +29,11 @@ related:
 - [Analisi Errore Logout](logout-blade-error-analysis-3.md)
 - [Widget Filament Corretto](logout-filament-widget-corrected-3.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
+=======
+# Analisi dell'Errore negli Eventi di Logout
+
+## Collegamenti correlati
+>>>>>>> f548be94 (.)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
@@ -38,7 +44,11 @@ related:
 
 ## Errore Identificato
 
+<<<<<<< HEAD
 L'implementazione attuale del file `Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
+=======
+L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
+>>>>>>> f548be94 (.)
 
 ```
 Call to a member function getAuthIdentifier() on null
@@ -90,18 +100,32 @@ name('logout');
 try {
     // Ottieni l'utente prima del logout
     $user = Auth::user();
+<<<<<<< HEAD
 
     // Dispatch dell'evento prima del logout
     Event::dispatch('auth.logout.attempting', [$user]);
 
+=======
+    
+    // Dispatch dell'evento prima del logout
+    Event::dispatch('auth.logout.attempting', [$user]);
+    
+>>>>>>> f548be94 (.)
     // Esegui il logout
     Auth::logout();
     request()->session()->invalidate();
     request()->session()->regenerateToken();
+<<<<<<< HEAD
 
     // Dispatch dell'evento dopo il logout, passando l'utente salvato
     Event::dispatch('auth.logout.successful', [$user]);
 
+=======
+    
+    // Dispatch dell'evento dopo il logout, passando l'utente salvato
+    Event::dispatch('auth.logout.successful', [$user]);
+    
+>>>>>>> f548be94 (.)
     // Reindirizzamento con localizzazione
     $locale = app()->getLocale();
     return redirect()->to('/' . $locale)
@@ -109,7 +133,11 @@ try {
 } catch (\Exception $e) {
     // Log dell'errore
     Log::error('Errore durante il logout: ' . $e->getMessage());
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> f548be94 (.)
     // Reindirizzamento con messaggio di errore
     $locale = app()->getLocale();
     return redirect()->to('/' . $locale)
@@ -151,7 +179,11 @@ public function handle(Logout $event): void
                 ]);
             }
         }
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> f548be94 (.)
         // Resto del codice...
     } catch (\Exception $e) {
         Log::error('Errore durante la gestione dell\'evento di logout', [
@@ -170,6 +202,7 @@ Si raccomanda di implementare l'**Opzione 1** perché:
 3. Garantisce che gli eventi di logout abbiano sempre accesso all'utente che si è disconnesso
 
 Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
+<<<<<<< HEAD
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati
@@ -322,3 +355,5 @@ Si raccomanda di implementare l'**Opzione 1** perché:
 3. Garantisce che gli eventi di logout abbiano sempre accesso all'utente che si è disconnesso
 
 Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
+=======
+>>>>>>> f548be94 (.)

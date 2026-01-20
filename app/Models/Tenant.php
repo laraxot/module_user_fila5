@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
@@ -12,14 +13,29 @@ use Modules\Media\Models\Media;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
+=======
+use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
+use Modules\User\Database\Factories\TenantFactory;
+use Illuminate\Database\Eloquent\Builder;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Media\Models\Media;
+use Illuminate\Database\Eloquent\Collection as EloquentCollection;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Contracts\UserContract;
+>>>>>>> f548be94 (.)
 
 /**
  * Modules\User\Models\Tenant.
  *
+<<<<<<< HEAD
+=======
+ * @method static TenantFactory factory($count = null, $state = [])
+>>>>>>> f548be94 (.)
  * @method static Builder|Tenant newModelQuery()
  * @method static Builder|Tenant newQuery()
  * @method static Builder|Tenant query()
  * @property EloquentCollection<int, Model&UserContract> $members
+<<<<<<< HEAD
  * @property int|null                                    $members_count
  * @property ProfileContract|null                        $creator
  * @property ProfileContract|null                        $updater
@@ -70,6 +86,17 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|Tenant                         whereUpdatedBy($value)
  * @property string|null $trial_ends_at
  * @method static Builder<static>|Tenant whereTrialEndsAt($value)
+=======
+ * @property int|null $members_count
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @property MediaCollection<int, Media> $media
+ * @property int|null $media_count
+ * @property TenantUser $pivot
+ * @property EloquentCollection<int, User> $users
+ * @property int|null $users_count
+ * @mixin IdeHelperTenant
+>>>>>>> f548be94 (.)
  * @mixin \Eloquent
  */
 class Tenant extends BaseTenant

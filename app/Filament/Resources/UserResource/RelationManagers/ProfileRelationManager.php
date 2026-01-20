@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\BulkAction;
 use Filament\Actions\CreateAction;
@@ -15,18 +16,39 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+=======
+use Filament\Schemas\Components\Component;
+use Override;
+use Filament\Actions\CreateAction;
+use Filament\Actions\ViewAction;
+use Filament\Actions\EditAction;
+use Filament\Actions\DeleteAction;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Schema;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
+>>>>>>> f548be94 (.)
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class ProfileRelationManager extends XotBaseRelationManager
 {
     protected static string $relationship = 'profile';
 
+<<<<<<< HEAD
     protected static ?string $recordTitleAttribute = 'first_name';
+=======
+    protected static null|string $recordTitleAttribute = 'first_name';
+>>>>>>> f548be94 (.)
 
     /**
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public function getFormSchema(): array
     {
         return [
@@ -37,6 +59,7 @@ class ProfileRelationManager extends XotBaseRelationManager
         ];
     }
 
+<<<<<<< HEAD
     /**
      * @return array<string, Column>
      */
@@ -85,5 +108,30 @@ class ProfileRelationManager extends XotBaseRelationManager
         return [
             'delete' => DeleteBulkAction::make(),
         ];
+=======
+    #[Override]
+    public function table(Table $table): Table
+    {
+        return $table
+            ->columns([
+                TextColumn::make('id'),
+                TextColumn::make('ente'),
+                TextColumn::make('matr'),
+                TextColumn::make('first_name'),
+                TextColumn::make('last_name'),
+            ])
+            ->filters([])
+            ->headerActions([
+                CreateAction::make(),
+            ])
+            ->recordActions([
+                ViewAction::make(),
+                EditAction::make(),
+                DeleteAction::make(),
+            ])
+            ->toolbarActions([
+                DeleteBulkAction::make(),
+            ]);
+>>>>>>> f548be94 (.)
     }
 }

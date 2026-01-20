@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\ProfileResource\Pages;
 
+<<<<<<< HEAD
+=======
+use Override;
+>>>>>>> f548be94 (.)
 use Filament\Tables\Columns\TextColumn;
 use Modules\User\Filament\Resources\ProfileResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -12,10 +16,14 @@ class ListProfiles extends XotBaseListRecords
 {
     protected static string $resource = ProfileResource::class;
 
+<<<<<<< HEAD
     #[\Override]
     /**
      * @return array<string, mixed>
      */
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public function getTableColumns(): array
     {
         return [

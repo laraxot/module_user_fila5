@@ -73,7 +73,11 @@ return [
                 'help' => 'Ripeti la nuova password per conferma',
             ],
             'is_otp' => [
+<<<<<<< HEAD
                 'label' => 'Autenticazione a Due Fattori (OTP]',
+=======
+                'label' => 'Autenticazione a Due Fattori (OTP)',
+>>>>>>> f548be94 (.)
                 'help' => 'Abilita l\'autenticazione a due fattori per maggiore sicurezza',
             ],
             'password_expires_at' => [
@@ -171,6 +175,7 @@ return [
             'confirm' => 'Sei sicuro di voler uscire?',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Widgets',
         'plural' => 'Widgets',
@@ -219,4 +224,6 @@ return [
         'heading' => 'Log Accessi',
         'label' => 'Numero di accessi eseguiti',
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

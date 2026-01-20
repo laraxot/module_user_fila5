@@ -11,7 +11,11 @@ $finder = PhpCsFixer\Finder::create()
     ->name('*.php')
     ->notName('*.blade.php')
     ->ignoreDotFiles(true)
+<<<<<<< HEAD
     ->ignoreVCS(true);
+=======
+    ->ignoreVCS(true)
+>>>>>>> f548be94 (.)
 
 $config = new PhpCsFixer\Config();
 
@@ -38,6 +42,10 @@ $config
         'class_definition' => true,
         'elseif' => true,
     ])
+<<<<<<< HEAD
     ->setFinder($finder);
+=======
+    ->setFinder($finder)
+>>>>>>> f548be94 (.)
 
 return $config;

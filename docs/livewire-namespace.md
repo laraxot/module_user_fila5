@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Regole per i componenti Livewire in Windsurf/Xot"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> f548be94 (.)
 # Regole per i componenti Livewire in Windsurf/Xot
 
 ## Namespace corretto

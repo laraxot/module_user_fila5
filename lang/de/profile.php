@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'navigation' => [
         'label' => 'Profilo',
@@ -18,54 +22,73 @@ return [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
             'help' => 'Nome dell\'utente',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'last_name' => [
             'label' => 'Cognome',
             'placeholder' => 'Inserisci il cognome',
             'help' => 'Cognome dell\'utente',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci l\'email',
             'help' => 'Indirizzo email dell\'utente',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'phone' => [
             'label' => 'Telefono',
             'placeholder' => 'Inserisci il numero di telefono',
             'help' => 'Numero di telefono dell\'utente',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'birth_date' => [
             'label' => 'Data di Nascita',
             'placeholder' => 'Seleziona la data di nascita',
             'help' => 'Data di nascita dell\'utente',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'gender' => [
             'label' => 'Genere',
             'male' => 'Maschio',
             'female' => 'Femmina',
             'other' => 'Altro',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'help' => 'Stato attivo del profilo',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -87,6 +110,17 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'id' => [
+            'label' => 'ID',
+        ],
+        'ente' => [
+            'label' => 'Ente',
+        ],
+        'matr' => [
+            'label' => 'Matricola',
+>>>>>>> f548be94 (.)
         ],
     ],
     'actions' => [
@@ -105,6 +139,9 @@ return [
         'update_success' => 'Profilo aggiornato con successo!',
         'no_permission' => 'Non hai i permessi per modificare questo profilo.',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> f548be94 (.)
 ];

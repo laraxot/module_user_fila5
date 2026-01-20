@@ -126,6 +126,7 @@ return [
         'tooltip' => 'הועתק!',
     ],
     'fields' => [
+<<<<<<< HEAD
         'email' => [
             'label' => 'אימייל',
             'tooltip' => '',
@@ -218,4 +219,22 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        'email' => 'אימייל',
+        'login' => 'כניסה',
+        'name' => 'שם',
+        'password' => 'סיסמה',
+        'password_confirm' => 'אישור סיסמה',
+        'new_password' => 'סיסמה חדשה',
+        'new_password_confirmation' => 'אישור סיסמה חדשה',
+        'token_name' => 'שם טוקן',
+        'abilities' => 'יכולות',
+        '2fa_code' => 'קוד 2FA',
+        '2fa_recovery_code' => 'קוד שחזור 2FA',
+        'created' => 'נוצר',
+        'expires' => 'פג תוקף',
+    ],
+    'or' => 'או',
+    'cancel' => 'ביטול',
+>>>>>>> f548be94 (.)
 ];

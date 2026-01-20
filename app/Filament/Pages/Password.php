@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Pages;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -14,27 +15,78 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Tenant\Actions\Config\SaveTenantConfigAction;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Filament\Pages\XotBasePage;
+=======
+use Filament\Schemas\Schema;
+use Filament\Actions\Action;
+use Filament\Forms;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Toggle;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+use Filament\Notifications\Notification;
+use Filament\Pages\Page;
+use Filament\Support\Exceptions\Halt;
+use Illuminate\Database\Eloquent\Model;
+use Modules\Tenant\Services\TenantService;
+use Modules\User\Datas\PasswordData;
+use Modules\Xot\Filament\Traits\TransTrait;
+use Filament\Forms\Components\Section;
+>>>>>>> f548be94 (.)
 
 /**
  * Pagina per la gestione delle impostazioni delle password.
  *
  * @property Schema $form
  */
+<<<<<<< HEAD
 class Password extends XotBasePage
 {
+=======
+class Password extends Page implements HasForms
+{
+    use InteractsWithForms;
+    use TransTrait;
+
+>>>>>>> f548be94 (.)
     /**
      * Dati del form per la gestione delle password.
      *
      * @var array<string, mixed>|null
      */
+<<<<<<< HEAD
     public ?array $formData = [];
 
     /**
      * Vista per la pagina.
+=======
+    public null|array $formData = [];
+
+    /**
+     * Icona per la navigazione.
+     *
+     * @var string|null
+     */
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
+
+    /**
+     * Vista per la pagina.
+     *
+     * @var string
+>>>>>>> f548be94 (.)
      */
     protected string $view = 'user::filament.pages.password';
 
     /**
+<<<<<<< HEAD
+=======
+     * Ordinamento nella navigazione.
+     *
+     * @var int|null
+     */
+    protected static null|int $navigationSort = 1;
+
+    /**
+>>>>>>> f548be94 (.)
      * Inizializza la pagina.
      */
     public function mount(): void
@@ -43,12 +95,21 @@ class Password extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * Definisce la struttura dello schema.
      *
      * @param  Schema  $schema  Lo schema da configurare
      * @return Schema Lo schema configurato
      */
     public function schema(Schema $schema): Schema
+=======
+     * Definisce la struttura del form.
+     *
+     * @param Schema $schema Il form da configurare
+     * @return Schema Il form configurato
+     */
+    public function form(Schema $schema): Schema
+>>>>>>> f548be94 (.)
     {
         return $schema
             ->components([
@@ -79,13 +140,22 @@ class Password extends XotBasePage
 
     /**
      * Aggiorna i dati delle impostazioni delle password.
+<<<<<<< HEAD
+=======
+     *
+     * @return void
+>>>>>>> f548be94 (.)
      */
     public function updateData(): void
     {
         try {
             /** @var array<string, mixed> $data */
             $data = $this->form->getState();
+<<<<<<< HEAD
             app(SaveTenantConfigAction::class)->execute('password', $data);
+=======
+            TenantService::saveConfig('password', $data);
+>>>>>>> f548be94 (.)
 
             // $this->handleRecordUpdate($this->getUser(), $data);
         } catch (Halt $exception) {
@@ -101,10 +171,18 @@ class Password extends XotBasePage
 
     /**
      * Riempie i form con i dati esistenti.
+<<<<<<< HEAD
      */
     protected function fillForms(): void
     {
         /** @var array<string, mixed> $data */
+=======
+     *
+     * @return void
+     */
+    protected function fillForms(): void
+    {
+>>>>>>> f548be94 (.)
         $data = PasswordData::make()->toArray();
 
         $this->form->fill($data);
@@ -125,8 +203,13 @@ class Password extends XotBasePage
     /**
      * Gestisce l'aggiornamento del record.
      *
+<<<<<<< HEAD
      * @param  Model  $record  Il record da aggiornare
      * @param  array<string, mixed>  $data  I dati per l'aggiornamento
+=======
+     * @param Model $record Il record da aggiornare
+     * @param array<string, mixed> $data I dati per l'aggiornamento
+>>>>>>> f548be94 (.)
      * @return Model Il record aggiornato
      */
     protected function handleRecordUpdate(Model $record, array $data): Model

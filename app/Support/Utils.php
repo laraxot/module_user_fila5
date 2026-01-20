@@ -37,7 +37,11 @@ class Utils
             '/',
         ));
 
+<<<<<<< HEAD
         $filesystem = new Filesystem;
+=======
+        $filesystem = new Filesystem();
+>>>>>>> f548be94 (.)
 
         return $filesystem->exists($roleResourcePath);
     }
@@ -89,11 +93,20 @@ class Utils
 
     public static function isAuthProviderConfigured(): bool
     {
+<<<<<<< HEAD
         return in_array(
             "BezhanSalleh\FilamentShield\Traits\HasFilamentShield",
             class_uses(static::getAuthProviderFQCN()),
             strict: true
         ) || in_array(HasRoles::class, class_uses(static::getAuthProviderFQCN()), strict: true);
+=======
+        return (
+            in_array(
+                "BezhanSalleh\FilamentShield\Traits\HasFilamentShield",
+                class_uses(static::getAuthProviderFQCN()),
+             strict: true) || in_array(HasRoles::class, class_uses(static::getAuthProviderFQCN()), strict: true)
+        );
+>>>>>>> f548be94 (.)
     }
 
     public static function isSuperAdminEnabled(): bool
@@ -132,17 +145,24 @@ class Utils
         return FilamentShieldData::make()->filament_user->name;
     }
 
+<<<<<<< HEAD
     /**
      * @return list<string>
      */
+=======
+>>>>>>> f548be94 (.)
     public static function getGeneralResourcePermissionPrefixes(): array
     {
         Assert::isArray($res = config('filament-shield.permission_prefixes.resource'), 'wip');
 
+<<<<<<< HEAD
         return array_values(array_map(
             static fn (mixed $item): string => Assert::string($item),
             $res
         ));
+=======
+        return $res;
+>>>>>>> f548be94 (.)
     }
 
     public static function getPagePermissionPrefix(): string
@@ -214,13 +234,17 @@ class Utils
         config(['filament-shield.exclude.enabled' => false]);
     }
 
+<<<<<<< HEAD
     /**
      * @return list<string>
      */
+=======
+>>>>>>> f548be94 (.)
     public static function getExcludedResouces(): array
     {
         Assert::isArray($res = config('filament-shield.exclude.resources'));
 
+<<<<<<< HEAD
         return array_values(array_map(
             static fn (mixed $item): string => Assert::string($item),
             $res
@@ -230,10 +254,16 @@ class Utils
     /**
      * @return list<string>
      */
+=======
+        return $res;
+    }
+
+>>>>>>> f548be94 (.)
     public static function getExcludedPages(): array
     {
         Assert::isArray($res = config('filament-shield.exclude.pages'));
 
+<<<<<<< HEAD
         return array_values(array_map(
             static fn (mixed $item): string => Assert::string($item),
             $res
@@ -243,14 +273,23 @@ class Utils
     /**
      * @return list<string>
      */
+=======
+        return $res;
+    }
+
+>>>>>>> f548be94 (.)
     public static function getExcludedWidgets(): array
     {
         Assert::isArray($res = config('filament-shield.exclude.widgets'));
 
+<<<<<<< HEAD
         return array_values(array_map(
             static fn (mixed $item): string => Assert::string($item),
             $res
         ));
+=======
+        return $res;
+>>>>>>> f548be94 (.)
     }
 
     public static function isRolePolicyRegistered(): bool
@@ -272,6 +311,7 @@ class Utils
      */
     public static function showModelPath(string $resourceFQCN): string
     {
+<<<<<<< HEAD
         $modelClass = $resourceFQCN::getModel();
         Assert::string($modelClass);
 
@@ -287,6 +327,13 @@ class Utils
     /**
      * @return list<string>
      */
+=======
+        return config('filament-shield.shield_resource.show_model_path', true)
+            ? (new ($resourceFQCN::getModel())())::class
+            : '';
+    }
+
+>>>>>>> f548be94 (.)
     public static function getResourcePermissionPrefixes(string $resourceFQCN): array
     {
         $res = static::doesResourceHaveCustomPermissions($resourceFQCN)
@@ -294,10 +341,14 @@ class Utils
             : static::getGeneralResourcePermissionPrefixes();
         Assert::isArray($res);
 
+<<<<<<< HEAD
         return array_values(array_map(
             static fn (mixed $item): string => Assert::string($item),
             $res
         ));
+=======
+        return $res;
+>>>>>>> f548be94 (.)
     }
 
     public static function getRoleModel(): string
@@ -320,7 +371,10 @@ class Utils
     public static function roleResourceExists(): bool
     {
         $roleResourcePath = base_path('Modules/User/app/Filament/Resources/RoleResource.php');
+<<<<<<< HEAD
 
+=======
+>>>>>>> f548be94 (.)
         return File::exists($roleResourcePath);
     }
 }

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\RoleResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
 use Illuminate\Support\Arr;
@@ -13,11 +14,27 @@ use Modules\User\Actions\Shield\GetPermissionModelAction;
 use Modules\User\Filament\Resources\RoleResource;
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
+=======
+use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
+use Filament\Actions\ViewAction;
+use Filament\Actions\DeleteAction;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Str;
+use Modules\User\Filament\Resources\RoleResource;
+use Modules\User\Models\Role;
+use Modules\User\Support\Utils;
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+>>>>>>> f548be94 (.)
 use Webmozart\Assert\Assert;
 
 class EditRole extends XotBaseEditRecord
 {
+<<<<<<< HEAD
     /** @var Collection<int, string> */
+=======
+    // //
+>>>>>>> f548be94 (.)
     public Collection $permissions;
 
     // public Role $record;
@@ -31,20 +48,33 @@ class EditRole extends XotBaseEditRecord
         $permissionModels = collect();
         Assert::isArray($data = $this->data);
         $this->permissions->each(static function ($permission) use ($permissionModels, $data): void {
+<<<<<<< HEAD
             $permissionModels->push(app(GetPermissionModelAction::class)->execute()::firstOrCreate([
+=======
+            $permissionModels->push(Utils::getPermissionModel()::firstOrCreate([
+>>>>>>> f548be94 (.)
                 'name' => $permission,
                 'guard_name' => $data['guard_name'] ?? 'web',
             ]));
         });
+<<<<<<< HEAD
         Assert::isInstanceOf($this->record, Role::class, '['.__LINE__.']['.class_basename($this).']');
+=======
+        Assert::isInstanceOf($this->record, Role::class, '[' . __LINE__ . '][' . class_basename($this) . ']');
+>>>>>>> f548be94 (.)
         $this->record->syncPermissions($permissionModels);
     }
 
     protected function getHeaderActions(): array
     {
         return [
+<<<<<<< HEAD
             'view' => ViewAction::make(),
             'delete' => DeleteAction::make(),
+=======
+            ViewAction::make(),
+            DeleteAction::make(),
+>>>>>>> f548be94 (.)
         ];
     }
 
@@ -52,6 +82,7 @@ class EditRole extends XotBaseEditRecord
     {
         $this->permissions = collect($data)
             ->filter(
+<<<<<<< HEAD
                 static fn ($_permission, $key): bool => ! \in_array($key, ['name', 'guard_name', 'select_all'], false) && Str::contains($key, '_'),
             )
             ->keys();
@@ -60,5 +91,14 @@ class EditRole extends XotBaseEditRecord
         $result = Arr::only($data, ['name', 'guard_name']);
 
         return $result;
+=======
+                static fn($_permission, $key): bool => (
+                    !\in_array($key, ['name', 'guard_name', 'select_all'], false) && Str::contains($key, '_')
+                ),
+            )
+            ->keys();
+
+        return Arr::only($data, ['name', 'guard_name']);
+>>>>>>> f548be94 (.)
     }
 }

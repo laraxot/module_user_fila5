@@ -56,7 +56,11 @@ return [
             'must_enable' => 'Duhet të aktivizoni autentifikimin me dy faktorë për të përdorur këtë faqe.',
             'not_enabled' => [
                 'title' => 'Nuk keni aktivizuar autentifikimin me dy faktorë.',
+<<<<<<< HEAD
                 'description' => 'Kur aktivizohet autentifikimi me dy faktorë, do t\'ju kërkohet një kod i sigurt dhe e rastësishme gjatë vërtetimit. Ju mund ta merrni këtë kod nga aplikacioni Google Authenticator në telefonin tuaj.',
+=======
+                'description' => "Kur aktivizohet autentifikimi me dy faktorë, do t'ju kërkohet një kod i sigurt dhe e rastësishme gjatë vërtetimit. Ju mund ta merrni këtë kod nga aplikacioni Google Authenticator në telefonin tuaj.",
+>>>>>>> f548be94 (.)
             ],
             'finish_enabling' => [
                 'title' => 'Përfundo aktivizimin e autentifikimit me dy faktorë.',
@@ -102,6 +106,7 @@ return [
         'tooltip' => 'Kopjuar!',
     ],
     'fields' => [
+<<<<<<< HEAD
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -206,4 +211,24 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        'avatar' => 'Avatar',
+        'email' => 'Email',
+        'login' => 'Identifikohu',
+        'name' => 'Emri',
+        'fjalëkalim' => 'Fjalëkalimi',
+        'password_confirm' => 'Konfirmo fjalëkalimin',
+        'new_password' => 'Fjalëkalim i ri',
+        'new_password_confirmation' => 'Konfirmo fjalëkalimin',
+        'token_name' => 'Emri i Kodit për API',
+        'token_expiry' => 'Data e skadimit te kodit API',
+        'abilities' => 'Aftësitë',
+        '2fa_code' => 'Kodi',
+        '2fa_recovery_code' => 'Kodi i rikuperimit',
+        'created' => 'Krijuar',
+        'expires' => 'Skadon',
+    ],
+    'or' => 'Ose',
+    'cancel' => 'Anullo',
+>>>>>>> f548be94 (.)
 ];

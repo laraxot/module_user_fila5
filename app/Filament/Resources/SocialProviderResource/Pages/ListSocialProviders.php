@@ -4,9 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\SocialProviderResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
+=======
+use Override;
+use Filament\Tables\Filters\SelectFilter;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+>>>>>>> f548be94 (.)
 use Modules\User\Filament\Resources\SocialProviderResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
@@ -17,10 +24,14 @@ class ListSocialProviders extends XotBaseListRecords
 {
     protected static string $resource = SocialProviderResource::class;
 
+<<<<<<< HEAD
     #[\Override]
     /**
      * @return array<string, mixed>
      */
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public function getTableColumns(): array
     {
         return [
@@ -38,7 +49,11 @@ class ListSocialProviders extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public function getTableFilters(): array
     {
         return [

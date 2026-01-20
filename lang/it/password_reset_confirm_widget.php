@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'navigation' => ['label' => 'Conferma Reset Password', 'plural_label' => 'Conferma Reset Password', 'group' => 'Autenticazione', 'icon' => 'heroicon-o-lock-closed', 'sort' => 8],
     'label' => 'Conferma Reset Password',
     'plural_label' => 'Conferma Reset Password',
@@ -16,4 +17,26 @@ return [
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'messages' => ['success' => 'Password reimpostata con successo', 'error' => 'Si è verificato un errore'],
+=======
+    'fields' => [
+        'email' => [
+            'label' => 'email',
+            'placeholder' => 'email',
+            'helper_text' => '',
+            'description' => 'email',
+        ],
+        'password' => [
+            'label' => 'password',
+            'placeholder' => 'password',
+            'helper_text' => '',
+            'description' => 'password',
+        ],
+        'password_confirmation' => [
+            'label' => 'password_confirmation',
+            'placeholder' => 'password_confirmation',
+            'helper_text' => '',
+            'description' => 'password_confirmation',
+        ],
+    ],
+>>>>>>> f548be94 (.)
 ];

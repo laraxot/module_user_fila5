@@ -4,6 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite\Utils;
 
+<<<<<<< HEAD
+=======
+use InvalidArgumentException;
+use ReflectionClass;
+use ReflectionException;
+>>>>>>> f548be94 (.)
 use Illuminate\Support\Str;
 use Illuminate\Support\Stringable;
 use Laravel\Socialite\Contracts\User;
@@ -13,6 +19,7 @@ use Laravel\Socialite\Contracts\User;
  */
 final readonly class UserNameFieldsResolver
 {
+<<<<<<< HEAD
     private const string NAME_SEARCH = 'before';
 
     private const string SURNAME_SEARCH = 'after';
@@ -22,12 +29,28 @@ final readonly class UserNameFieldsResolver
     public ?string $firstName;
 
     public ?string $lastName;
+=======
+    private const NAME_SEARCH = 'before';
+
+    private const SURNAME_SEARCH = 'after';
+
+    public  null|string $name;
+
+    public  null|string $first_name;
+
+    public  null|string $last_name;
+>>>>>>> f548be94 (.)
 
     public function __construct(User $user)
     {
         $this->name = $this->resolveName($user);
+<<<<<<< HEAD
         $this->firstName = $this->resolveName($user);
         $this->lastName = $this->resolveSurname($user);
+=======
+        $this->first_name = $this->resolveName($user);
+        $this->last_name = $this->resolveSurname($user);
+>>>>>>> f548be94 (.)
     }
 
     public static function make(User $user): self
@@ -46,6 +69,7 @@ final readonly class UserNameFieldsResolver
     }
 
     /**
+<<<<<<< HEAD
      * @param  string  $searchMethod  use self constants (NAME_SEARCH, SURNAME_SEARCH)
      */
     private function resolveNameFields(User $idpUser, string $searchMethod): string
@@ -120,20 +144,50 @@ final readonly class UserNameFieldsResolver
         $raw = [];
         try {
             $reflection = new \ReflectionClass($idpUser);
+=======
+     * @param  string $searchMethod  use self constants (NAME_SEARCH, SURNAME_SEARCH)
+     */
+    private function resolveNameFields(User $idpUser, string $searchMethod): string
+    {
+        if (!in_array($searchMethod, [self::NAME_SEARCH, self::SURNAME_SEARCH], strict: true)) {
+            throw new InvalidArgumentException('Metodo di ricerca non valido');
+        }
+
+        $name = $idpUser->getName();
+        if (!is_string($name) || empty($name)) {
+            return '';
+        }
+
+        $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($name, $searchMethod);
+
+        if ($nameSection->isNotEmpty()) {
+            return $nameSection->toString();
+        }
+
+        // Ottenere i dati raw in modo sicuro attraverso reflection
+        $raw = [];
+        try {
+            $reflection = new ReflectionClass($idpUser);
+>>>>>>> f548be94 (.)
             if ($reflection->hasMethod('getRaw')) {
                 $method = $reflection->getMethod('getRaw');
                 $method->setAccessible(true);
                 $rawValue = $method->invoke($idpUser);
                 if (is_array($rawValue)) {
+<<<<<<< HEAD
                     foreach ($rawValue as $key => $value) {
                         $raw[(string) $key] = $value;
                     }
+=======
+                    $raw = $rawValue;
+>>>>>>> f548be94 (.)
                 }
             } elseif ($reflection->hasProperty('user')) {
                 $property = $reflection->getProperty('user');
                 $property->setAccessible(true);
                 $userData = $property->getValue($idpUser);
                 if (is_array($userData)) {
+<<<<<<< HEAD
                     foreach ($userData as $key => $value) {
                         $raw[(string) $key] = $value;
                     }
@@ -144,6 +198,61 @@ final readonly class UserNameFieldsResolver
         }
 
         return $raw;
+=======
+                    $raw = $userData;
+                }
+            }
+        } catch (ReflectionException $e) {
+            // Fallback silenzioso
+        }
+
+        // Tenta di ottenere un nome dai dati raw
+        $nameField = '';
+        if (isset($raw['name']) && is_string($raw['name']) && !empty($raw['name'])) {
+            $nameField = $raw['name'];
+        }
+
+        if (empty($nameField)) {
+            return '';
+        }
+
+        $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($nameField, $searchMethod);
+        if (!$nameSection->isNotEmpty()) {
+            // If both sections were empty, try the "hardest way"
+            // by analyzing email address
+            $email = $idpUser->getEmail();
+            if (!is_string($email) || empty($email)) {
+                return '';
+            }
+
+            return Str::of($email)
+                ->trim()
+                ->before('@')
+                ->$searchMethod('.') // If no point is available, the whole string should be returned
+                ->trim()
+                ->title()
+                ->toString();
+        }
+
+        if (filter_var($nameSection->toString(), FILTER_VALIDATE_EMAIL)) {
+            // If both sections were empty, try the "hardest way"
+            // by analyzing email address
+            $email = $idpUser->getEmail();
+            if (!is_string($email) || empty($email)) {
+                return '';
+            }
+
+            return Str::of($email)
+                ->trim()
+                ->before('@')
+                ->$searchMethod('.') // If no point is available, the whole string should be returned
+                ->trim()
+                ->title()
+                ->toString();
+        }
+
+        return $nameSection->toString();
+>>>>>>> f548be94 (.)
     }
 
     private function resolveNameFieldByNameAttributeAnalysis(string $nameField, string $searchMethod): Stringable
@@ -152,8 +261,13 @@ final readonly class UserNameFieldsResolver
             return Str::of('');
         }
 
+<<<<<<< HEAD
         if (! in_array($searchMethod, [self::NAME_SEARCH, self::SURNAME_SEARCH], strict: true)) {
             throw new \InvalidArgumentException('Metodo di ricerca non valido');
+=======
+        if (!in_array($searchMethod, [self::NAME_SEARCH, self::SURNAME_SEARCH], strict: true)) {
+            throw new InvalidArgumentException('Metodo di ricerca non valido');
+>>>>>>> f548be94 (.)
         }
 
         return Str::of($nameField)

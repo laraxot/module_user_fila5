@@ -5,7 +5,11 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 use Filament\Forms\Components\Actions\Action;
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
+=======
+use Filament\Forms\Components\Component;
+>>>>>>> f548be94 (.)
 use Filament\Forms\Components\View;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Event;

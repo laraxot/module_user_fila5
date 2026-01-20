@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters;
 
+<<<<<<< HEAD
 use Modules\Xot\Filament\Clusters\XotBaseCluster;
 
 /**
@@ -16,4 +17,11 @@ use Modules\Xot\Filament\Clusters\XotBaseCluster;
  */
 class Appearance extends XotBaseCluster
 {
+=======
+use Filament\Clusters\Cluster;
+
+class Appearance extends Cluster
+{
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-squares-2x2';
+>>>>>>> f548be94 (.)
 }

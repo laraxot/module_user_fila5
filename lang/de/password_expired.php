@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'title' => 'Password Scaduta, Reimposta Password',
     'heading' => 'Crea una Nuova Password',
@@ -10,13 +14,17 @@ return [
         'current_password' => [
             'label' => 'Current Password',
             'validation_attribute' => 'current_password',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'password' => [
             'label' => 'Password',
             'validation_attribute' => 'password',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -26,6 +34,11 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'password_confirmation' => [
+            'label' => 'Confirm Password',
+>>>>>>> f548be94 (.)
         ],
     ],
     'form' => [
@@ -58,7 +71,11 @@ return [
         ],
         'column_not_found' => [
             'title' => 'Column Not Found',
+<<<<<<< HEAD
             'body' => 'Either the column \\":column_name\\" or the password column \\":password_column_name\\" was not found in the :table_name table.',
+=======
+            'body' => 'Either the column \":column_name\" or the password column \":password_column_name\" was not found in the :table_name table.',
+>>>>>>> f548be94 (.)
         ],
         'password_reset' => [
             'success' => 'Password Reset Successful',
@@ -69,6 +86,7 @@ return [
         ],
     ],
     'exceptions' => [
+<<<<<<< HEAD
         'column_not_found' => 'Either the column \\":column_name\\" or the password column \\":password_column_name\\" was not found in the \\":table_name\\" table. Please publish migrations and run them, if the error still persists, publish the config file and update the table_name, column_name, and password_column_name values.',
     ],
     'navigation' => [
@@ -80,4 +98,8 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+        'column_not_found' => 'Either the column \":column_name\" or the password column \":password_column_name\" was not found in the \":table_name\" table. Please publish migrations and run them, if the error still persists, publish the config file and update the table_name, column_name, and password_column_name values.',
+    ],
+>>>>>>> f548be94 (.)
 ];

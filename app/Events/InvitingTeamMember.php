@@ -29,6 +29,10 @@ class InvitingTeamMember
          * The role of the invitee.
          */
         public string $role,
+<<<<<<< HEAD
     ) {
     }
+=======
+    ) {}
+>>>>>>> f548be94 (.)
 }

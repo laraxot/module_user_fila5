@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'password_confirm' => [
         'heading' => 'Confirm password',
@@ -102,6 +106,7 @@ return [
         'tooltip' => 'Copied!',
     ],
     'fields' => [
+<<<<<<< HEAD
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -192,6 +197,23 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        'avatar' => 'Avatar',
+        'email' => 'Email',
+        'login' => 'Login',
+        'name' => 'Name',
+        'password' => 'Password',
+        'password_confirm' => 'Password confirm',
+        'new_password' => 'New password',
+        'new_password_confirmation' => 'Confirm password',
+        'token_name' => 'Token name',
+        'token_expiry' => 'Token expiry',
+        'abilities' => 'Abilities',
+        '2fa_code' => 'Code',
+        '2fa_recovery_code' => 'Recovery Code',
+        'created' => 'Created',
+        'expires' => 'Expires',
+>>>>>>> f548be94 (.)
     ],
     'or' => 'Or',
     'cancel' => 'Cancel',
@@ -230,6 +252,7 @@ return [
         'not_receive' => 'Se non hai ricevuto l\'email di verifica,',
         'request_another' => 'clicca qui per richiederla di nuovo',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -241,4 +264,6 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

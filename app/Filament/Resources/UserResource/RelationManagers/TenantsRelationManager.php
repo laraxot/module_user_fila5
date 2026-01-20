@@ -4,11 +4,24 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Modules\User\Filament\Resources\TenantResource\Pages\ListTenants;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+=======
+use Filament\Schemas\Components\Component;
+use Override;
+use Filament\Forms\Components\TextInput;
+use Filament\Tables\Columns\Column;
+use Filament\Forms;
+use Filament\Schemas\Schema;
+use Filament\Tables\Table;
+use Modules\User\Filament\Resources\TenantResource\Pages\ListTenants;
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+use Modules\Xot\Filament\Traits\HasXotTable;
+>>>>>>> f548be94 (.)
 
 /**
  * Manages the relationship between users and tenants.
@@ -20,14 +33,22 @@ class TenantsRelationManager extends XotBaseRelationManager
 {
     protected static string $relationship = 'tenants';
 
+<<<<<<< HEAD
     protected static ?string $recordTitleAttribute = 'name';
+=======
+    protected static null|string $recordTitleAttribute = 'name';
+>>>>>>> f548be94 (.)
 
     /**
      * Set up the form schema for tenant relations.
      *
      * @return array<Component>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public function getFormSchema(): array
     {
         return [
@@ -40,6 +61,7 @@ class TenantsRelationManager extends XotBaseRelationManager
      *
      * @return array<string, Column>
      */
+<<<<<<< HEAD
     #[\Override]
     public function getTableColumns(): array
     {
@@ -62,5 +84,14 @@ class TenantsRelationManager extends XotBaseRelationManager
         }
 
         return $columnMap;
+=======
+    #[Override]
+    public function getTableColumns(): array
+    {
+        $columns = app(ListTenants::class)->getTableColumns();
+
+        // Ensure we only return Column instances, filter out any Layout\Component instances
+        return array_filter($columns, fn($column): bool => $column instanceof Column);
+>>>>>>> f548be94 (.)
     }
 }

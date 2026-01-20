@@ -2,10 +2,15 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'fields' => [
         'login_at' => [
             'label' => 'login_at',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -28,4 +33,11 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+        'logout_at' => [
+            'label' => 'logout_at',
+        ],
+    ],
+>>>>>>> f548be94 (.)
 ];

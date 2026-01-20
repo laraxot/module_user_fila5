@@ -8,12 +8,22 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite;
 
+<<<<<<< HEAD
 use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Models\SocialiteUser;
 use ReflectionClass;
 use ReflectionException;
 use RuntimeException;
+=======
+// use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
+use InvalidArgumentException;
+use RuntimeException;
+use ReflectionClass;
+use ReflectionException;
+use Laravel\Socialite\Contracts\User as SocialiteUserContract;
+use Modules\User\Models\SocialiteUser;
+>>>>>>> f548be94 (.)
 use Spatie\QueueableAction\QueueableAction;
 
 class RetrieveSocialiteUserAction
@@ -23,14 +33,22 @@ class RetrieveSocialiteUserAction
     /**
      * Execute the action.
      */
+<<<<<<< HEAD
     public function execute(string $provider, SocialiteUserContract $user): ?SocialiteUser
+=======
+    public function execute(string $provider, SocialiteUserContract $user): null|SocialiteUser
+>>>>>>> f548be94 (.)
     {
         if (empty($provider)) {
             throw new InvalidArgumentException('Il provider non può essere vuoto');
         }
 
         $providerId = $user->getId();
+<<<<<<< HEAD
         if (! is_string($providerId) && ! is_int($providerId)) {
+=======
+        if (!is_string($providerId) && !is_int($providerId)) {
+>>>>>>> f548be94 (.)
             throw new RuntimeException('L\'ID del provider deve essere una stringa o un intero');
         }
 
@@ -40,6 +58,7 @@ class RetrieveSocialiteUserAction
             ->where('provider_id', $providerId)
             ->first();
 
+<<<<<<< HEAD
         if (null === $res) {
             return null;
         }
@@ -60,6 +79,16 @@ class RetrieveSocialiteUserAction
     {
         $token = '';
 
+=======
+        if ($res === null) {
+            return null;
+        }
+
+        // Accesso sicuro alla proprietà token in modo type-safe
+        $token = '';
+
+        // Utilizzo ReflectionClass per accedere in modo sicuro alle proprietà/metodi
+>>>>>>> f548be94 (.)
         try {
             $reflection = new ReflectionClass($user);
 
@@ -94,9 +123,20 @@ class RetrieveSocialiteUserAction
 
         if (empty($token)) {
             // Se non riusciamo a ottenere un token valido, utilizziamo un valore predefinito
+<<<<<<< HEAD
             $token = 'no_token_'.time();
         }
 
         return $token;
+=======
+            $token = 'no_token_' . time();
+        }
+
+        $res->update([
+            'token' => $token,
+        ]);
+
+        return $res;
+>>>>>>> f548be94 (.)
     }
 }

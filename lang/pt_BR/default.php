@@ -136,6 +136,7 @@ return [
         'tooltip' => 'Copiado!',
     ],
     'fields' => [
+<<<<<<< HEAD
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -240,4 +241,24 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        'avatar' => 'Avatar',
+        'email' => 'E-mail',
+        'login' => 'Usuário',
+        'name' => 'Nome',
+        'password' => 'Senha',
+        'password_confirm' => 'Confirme a senha',
+        'new_password' => 'Nova senha',
+        'new_password_confirmation' => 'Confirme a senha',
+        'token_name' => 'Nome do Token',
+        'token_expiry' => 'Expiração do token',
+        'abilities' => 'Permissões',
+        '2fa_code' => 'Código',
+        '2fa_recovery_code' => 'Código de recuperação',
+        'created' => 'Criado',
+        'expires' => 'Expira',
+    ],
+    'or' => 'Ou',
+    'cancel' => 'Cancelar',
+>>>>>>> f548be94 (.)
 ];

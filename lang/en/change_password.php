@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'fields' => [
         'new_password_confirmation' => [
@@ -9,6 +13,7 @@ return [
             'description' => 'Please type the new password again to confirm',
             'helper_text' => '',
             'placeholder' => 'Re-enter your new password',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'changePassword' => [
@@ -29,4 +34,11 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+        'changePassword' => [
+            'label' => 'Change password',
+        ],
+    ],
+>>>>>>> f548be94 (.)
 ];

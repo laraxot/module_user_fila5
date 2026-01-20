@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Database\Seeders;
 
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -14,6 +15,13 @@ use Modules\User\Database\Factories\DeviceFactory;
 use Modules\User\Database\Factories\ProfileFactory;
 use Modules\User\Database\Factories\SocialProviderFactory;
 use Modules\User\Database\Factories\UserFactory;
+=======
+use Exception;
+use Carbon\Carbon;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+>>>>>>> f548be94 (.)
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Device;
 use Modules\User\Models\Permission;
@@ -35,7 +43,11 @@ class UserMassSeeder extends Seeder
      */
     public function run(): void
     {
+<<<<<<< HEAD
         $this->info('Inizializzazione seeding di massa per modulo User...');
+=======
+        $this->command->info('🚀 Inizializzazione seeding di massa per modulo User...');
+>>>>>>> f548be94 (.)
 
         $startTime = microtime(true);
 
@@ -61,10 +73,17 @@ class UserMassSeeder extends Seeder
             $endTime = microtime(true);
             $executionTime = round($endTime - $startTime, 2);
 
+<<<<<<< HEAD
             $this->info("Seeding modulo User completato in {$executionTime} secondi.");
             $this->displaySummary();
         } catch (\Exception $e) {
             $this->error('Errore durante il seeding: '.$e->getMessage());
+=======
+            $this->command->info("🎉 Seeding modulo User completato in {$executionTime} secondi!");
+            $this->displaySummary();
+        } catch (Exception $e) {
+            $this->command->error('❌ Errore durante il seeding: ' . $e->getMessage());
+>>>>>>> f548be94 (.)
             throw $e;
         }
     }
@@ -74,7 +93,11 @@ class UserMassSeeder extends Seeder
      */
     private function createAdvancedRolesAndPermissions(): void
     {
+<<<<<<< HEAD
         $this->info('Creazione ruoli e permessi avanzati...');
+=======
+        $this->command->info('🔐 Creazione ruoli e permessi avanzati...');
+>>>>>>> f548be94 (.)
 
         // Permessi avanzati
         $advancedPermissions = [
@@ -135,12 +158,21 @@ class UserMassSeeder extends Seeder
             $role->syncPermissions($rolePermissions);
         }
 
+<<<<<<< HEAD
         $this->info(
             'Creati '.
             count($advancedPermissions).
                 ' permessi avanzati e '.
                 count($advancedRoles).
                 ' ruoli specializzati.',
+=======
+        $this->command->info(
+            '✅ Creati ' .
+            count($advancedPermissions) .
+                ' permessi avanzati e ' .
+                count($advancedRoles) .
+                ' ruoli specializzati',
+>>>>>>> f548be94 (.)
         );
     }
 
@@ -149,7 +181,11 @@ class UserMassSeeder extends Seeder
      */
     private function createSpecializedTeams(): void
     {
+<<<<<<< HEAD
         $this->info('Creazione team specializzati...');
+=======
+        $this->command->info('👥 Creazione team specializzati...');
+>>>>>>> f548be94 (.)
 
         $specializedTeams = [
             [
@@ -196,7 +232,11 @@ class UserMassSeeder extends Seeder
             Team::firstOrCreate(['name' => $teamData['name']], $teamData);
         }
 
+<<<<<<< HEAD
         $this->info('Creati '.count($specializedTeams).' team specializzati.');
+=======
+        $this->command->info('✅ Creati ' . count($specializedTeams) . ' team specializzati');
+>>>>>>> f548be94 (.)
     }
 
     /**
@@ -204,6 +244,7 @@ class UserMassSeeder extends Seeder
      */
     private function createUsersWithProfiles(): void
     {
+<<<<<<< HEAD
         $this->info('Creazione utenti con profili completi...');
 
         // Crea 200 utenti generici
@@ -218,6 +259,21 @@ class UserMassSeeder extends Seeder
         $profileFactory = ProfileFactory::new();
         foreach ($users as $user) {
             $profileFactory->create([
+=======
+        $this->command->info('👤 Creazione utenti con profili completi...');
+
+        // Crea 200 utenti generici
+        $users = User::factory()
+            ->count(200)
+            ->create([
+                'email_verified_at' => Carbon::now(),
+                'created_at' => Carbon::now()->subDays(rand(1, 365)),
+            ]);
+
+        // Crea profili per tutti gli utenti
+        foreach ($users as $user) {
+            Profile::factory()->create([
+>>>>>>> f548be94 (.)
                 'user_id' => $user->id,
                 'created_at' => $user->created_at,
                 'updated_at' => $user->updated_at,
@@ -225,14 +281,21 @@ class UserMassSeeder extends Seeder
         }
 
         // Assegna ruoli casuali
+<<<<<<< HEAD
         /** @var Collection<int, \Spatie\Permission\Models\Role> $roles */
+=======
+>>>>>>> f548be94 (.)
         $roles = Role::all();
         foreach ($users as $user) {
             $randomRole = $roles->random();
             $user->assignRole($randomRole);
         }
 
+<<<<<<< HEAD
         $this->info('Creati '.$users->count().' utenti con profilo.');
+=======
+        $this->command->info('✅ Creati ' . $users->count() . ' utenti con profili completi');
+>>>>>>> f548be94 (.)
     }
 
     /**
@@ -240,6 +303,7 @@ class UserMassSeeder extends Seeder
      */
     private function createAuthenticationLogs(): void
     {
+<<<<<<< HEAD
         $this->info('Creazione log di autenticazione...');
 
         // Crea 1000 log di autenticazione
@@ -250,6 +314,18 @@ class UserMassSeeder extends Seeder
         ]);
 
         $this->info('Creati '.$logs->count().' log di autenticazione.');
+=======
+        $this->command->info('📝 Creazione log di autenticazione...');
+
+        // Crea 1000 log di autenticazione
+        $logs = AuthenticationLog::factory()
+            ->count(1000)
+            ->create([
+                'created_at' => Carbon::now()->subDays(rand(1, 30)),
+            ]);
+
+        $this->command->info('✅ Creati ' . $logs->count() . ' log di autenticazione');
+>>>>>>> f548be94 (.)
     }
 
     /**
@@ -257,17 +333,29 @@ class UserMassSeeder extends Seeder
      */
     private function createUserDevices(): void
     {
+<<<<<<< HEAD
         $this->info('Creazione dispositivi utente...');
 
         // Crea 500 dispositivi
         $deviceFactory = DeviceFactory::new();
         /** @var Collection<int, Device> $devices */
         $devices = $deviceFactory->count(500)
+=======
+        $this->command->info('📱 Creazione dispositivi utente...');
+
+        // Crea 500 dispositivi
+        $devices = Device::factory()
+            ->count(500)
+>>>>>>> f548be94 (.)
             ->create([
                 'created_at' => Carbon::now()->subDays(rand(1, 90)),
             ]);
 
+<<<<<<< HEAD
         $this->info('Creati '.$devices->count().' dispositivi.');
+=======
+        $this->command->info('✅ Creati ' . $devices->count() . ' dispositivi utente');
+>>>>>>> f548be94 (.)
     }
 
     /**
@@ -275,6 +363,7 @@ class UserMassSeeder extends Seeder
      */
     private function createSocialProviders(): void
     {
+<<<<<<< HEAD
         $this->info('Creazione provider social...');
 
         // Crea 100 provider social
@@ -285,6 +374,18 @@ class UserMassSeeder extends Seeder
         ]);
 
         $this->info('Creati '.$providers->count().' provider social.');
+=======
+        $this->command->info('🔗 Creazione provider social...');
+
+        // Crea 100 provider social
+        $providers = SocialProvider::factory()
+            ->count(100)
+            ->create([
+                'created_at' => Carbon::now()->subDays(rand(1, 180)),
+            ]);
+
+        $this->command->info('✅ Creati ' . $providers->count() . ' provider social');
+>>>>>>> f548be94 (.)
     }
 
     /**
@@ -292,36 +393,69 @@ class UserMassSeeder extends Seeder
      */
     private function displaySummary(): void
     {
+<<<<<<< HEAD
         $this->info('RIASSUNTO DATI CREATI PER MODULO USER:');
         $this->info('-------------------------------------');
+=======
+        $this->command->info('📊 RIASSUNTO DATI CREATI PER MODULO USER:');
+        $this->command->info('┌─────────────────────────────────────┐');
+>>>>>>> f548be94 (.)
 
         try {
             // Conta utenti
             $totalUsers = User::count();
             $verifiedUsers = User::whereNotNull('email_verified_at')->count();
 
+<<<<<<< HEAD
             $this->info('Utenti totali: '.str_pad((string) $totalUsers, 6, ' ', STR_PAD_LEFT));
             $this->info('Utenti verificati: '.str_pad((string) $verifiedUsers, 6, ' ', STR_PAD_LEFT));
+=======
+            $this->command->info('│ 👥 Utenti totali:           ' .
+            str_pad((string) $totalUsers, 6, ' ', STR_PAD_LEFT) .
+                ' │');
+            $this->command->info('│    - Verificati:             ' .
+            str_pad((string) $verifiedUsers, 6, ' ', STR_PAD_LEFT) .
+                ' │');
+>>>>>>> f548be94 (.)
 
             // Conta profili
             $totalProfiles = Profile::count();
 
+<<<<<<< HEAD
             $this->info('Profili totali: '.str_pad((string) $totalProfiles, 6, ' ', STR_PAD_LEFT));
+=======
+            $this->command->info('│ 👤 Profili totali:          ' .
+            str_pad((string) $totalProfiles, 6, ' ', STR_PAD_LEFT) .
+                ' │');
+>>>>>>> f548be94 (.)
 
             // Conta ruoli e permessi
             $totalRoles = Role::count();
             $totalPermissions = Permission::count();
             $totalTeams = Team::count();
 
+<<<<<<< HEAD
             $this->info('Ruoli totali: '.str_pad((string) $totalRoles, 6, ' ', STR_PAD_LEFT));
             $this->info('Permessi totali: '.str_pad((string) $totalPermissions, 6, ' ', STR_PAD_LEFT));
             $this->info('Team totali: '.str_pad((string) $totalTeams, 6, ' ', STR_PAD_LEFT));
+=======
+            $this->command->info('│ 🔐 Ruoli:                  ' .
+            str_pad((string) $totalRoles, 6, ' ', STR_PAD_LEFT) .
+                ' │');
+            $this->command->info('│ 🔑 Permessi:               ' .
+            str_pad((string) $totalPermissions, 6, ' ', STR_PAD_LEFT) .
+                ' │');
+            $this->command->info('│ 👥 Team:                   ' .
+            str_pad((string) $totalTeams, 6, ' ', STR_PAD_LEFT) .
+                ' │');
+>>>>>>> f548be94 (.)
 
             // Conta log e dispositivi
             $totalLogs = AuthenticationLog::count();
             $totalDevices = Device::count();
             $totalProviders = SocialProvider::count();
 
+<<<<<<< HEAD
             $this->info('Log autenticazione: '.str_pad((string) $totalLogs, 6, ' ', STR_PAD_LEFT));
             $this->info('Dispositivi: '.str_pad((string) $totalDevices, 6, ' ', STR_PAD_LEFT));
             $this->info('Provider social: '.str_pad((string) $totalProviders, 6, ' ', STR_PAD_LEFT));
@@ -348,5 +482,22 @@ class UserMassSeeder extends Seeder
     private function getConsoleCommand(): Command
     {
         return $this->command;
+=======
+            $this->command->info('│ 📝 Log autenticazione:      ' .
+            str_pad((string) $totalLogs, 6, ' ', STR_PAD_LEFT) .
+                ' │');
+            $this->command->info('│ 📱 Dispositivi:             ' .
+            str_pad((string) $totalDevices, 6, ' ', STR_PAD_LEFT) .
+                ' │');
+            $this->command->info('│ 🔗 Provider social:         ' .
+            str_pad((string) $totalProviders, 6, ' ', STR_PAD_LEFT) .
+                ' │');
+        } catch (Exception $e) {
+            $this->command->info('│ ❌ Errore nel conteggio: ' . $e->getMessage());
+        }
+
+        $this->command->info('└─────────────────────────────────────┘');
+        $this->command->info('');
+>>>>>>> f548be94 (.)
     }
 }

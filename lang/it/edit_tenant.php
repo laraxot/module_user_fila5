@@ -11,6 +11,7 @@ return [
             'label' => 'delete',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Edit Tenant',
         'plural' => 'Edit Tenant',
@@ -44,4 +45,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

@@ -4,12 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Xot\Contracts\ProfileContract;
+=======
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\User\Database\Factories\PermissionUserFactory;
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> f548be94 (.)
 
 /**
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
  * @method static Builder<static>|PermissionUser newModelQuery()
  * @method static Builder<static>|PermissionUser newQuery()
  * @method static Builder<static>|PermissionUser query()
@@ -36,3 +43,15 @@ use Modules\Xot\Contracts\ProfileContract;
  * @mixin \Eloquent
  */
 class PermissionUser extends ModelHasPermission {}
+=======
+ * @method static PermissionUserFactory factory($count = null, $state = [])
+ * @method static Builder<static>|PermissionUser newModelQuery()
+ * @method static Builder<static>|PermissionUser newQuery()
+ * @method static Builder<static>|PermissionUser query()
+ * @mixin IdeHelperPermissionUser
+ * @mixin \Eloquent
+ */
+class PermissionUser extends ModelHasPermission
+{
+}
+>>>>>>> f548be94 (.)

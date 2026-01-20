@@ -23,6 +23,7 @@ return [
         'label' => 'Conferma Password',
         'placeholder' => 'Conferma la tua nuova password',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Fields',
         'plural' => 'Fields',
@@ -56,4 +57,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

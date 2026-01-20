@@ -8,11 +8,19 @@ use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
+<<<<<<< HEAD
     public string $name = 'User';
 
+=======
+>>>>>>> f548be94 (.)
     protected string $moduleNamespace = 'Modules\User\Http\Controllers';
 
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< HEAD
+=======
+
+    public string $name = 'User';
+>>>>>>> f548be94 (.)
 }

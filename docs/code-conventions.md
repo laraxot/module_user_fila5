@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Code Conventions"
 type: concept
@@ -18,4 +19,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> f548be94 (.)
  

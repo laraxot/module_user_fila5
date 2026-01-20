@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'navigation' => [
         'name' => 'Password',
@@ -11,6 +15,7 @@ return [
         ],
     ],
     'fields' => [
+<<<<<<< HEAD
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -71,33 +76,66 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+        'otp_expiration_minutes' => [
+            'help' => 'Durata in minuti della validità della password temporanea',
+        ],
+        'otp_length' => [
+            'help' => 'Lunghezza del codice OTP',
+        ],
+        'expires_in' => [
+            'help' => 'Il numero di giorni prima che la password scadrà',
+        ],
+        'min' => [
+            'help' => 'La dimensione minima della password',
+        ],
+        'mixedCase' => [
+            'help' => 'la password richiede almeno una lettera maiuscola e una minuscola',
+        ],
+        'letters' => [
+            'help' => 'la password richiede almeno una lettera',
+        ],
+        'numbers' => [
+            'help' => 'la password richiede almeno un numero',
+>>>>>>> f548be94 (.)
         ],
         'symbols' => [
             'help' => 'la password richiede almeno un simbolo',
             'label' => [
                 'help' => 'la password richiede almeno un simbolo',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'uncompromised' => [
             'help' => 'Se la password non deve essere stata compromessa in data leaks',
             'label' => [
                 'help' => 'Se la password non deve essere stata compromessa in data leaks',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'compromisedThreshold' => [
             'help' => 'Il numero di volte che una password può apparire in data leaks prima di essere considerata compromessa',
             'label' => [
                 'help' => 'Il numero di volte che una password può apparire in data leaks prima di essere considerata compromessa',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'new_password' => [
             'label' => 'new_password',
@@ -107,7 +145,10 @@ return [
             'description' => 'new_password',
             'helper_text' => 'new_password',
             'placeholder' => 'new_password',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
     ],
     'actions' => [
@@ -128,6 +169,9 @@ return [
             'label' => 'updateDataAction',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> f548be94 (.)
 ];

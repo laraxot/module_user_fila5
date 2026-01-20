@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Profile Management in Laravel Modules"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> f548be94 (.)
 # Profile Management in Laravel Modules
 
 ## Overview
@@ -84,6 +87,7 @@ This document outlines the best practices for managing user profiles within a La
 - Update this document if new profile management functionalities are introduced.
 
 ## Links to Related Documentation
+<<<<<<< HEAD
 - [User Module Index](./index.md)
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
@@ -94,3 +98,10 @@ This document outlines the best practices for managing user profiles within a La
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 - [Routing Best Practices](./routing-best-practices.md)
 - [Session Management](./session-management.md)
+=======
+- [User Module Index](./INDEX.md)
+- [BaseUser Model](./BaseUser.md)
+- [Authentication Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
+- [Routing Best Practices](./ROUTING_BEST_PRACTICES.md)
+- [Session Management](./SESSION_MANAGEMENT.md)
+>>>>>>> f548be94 (.)

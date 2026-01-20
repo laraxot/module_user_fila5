@@ -7,7 +7,10 @@ declare(strict_types=1);
  *
  * @return RedirectResponse
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> f548be94 (.)
 namespace Modules\User\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;

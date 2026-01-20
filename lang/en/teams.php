@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'name' => 'Teams',
     'fields' => [
@@ -10,31 +14,46 @@ return [
             'placeholder' => 'Enter team name',
             'helper_text' => 'Team identifying name',
             'description' => 'The name that identifies this team',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'personal_team' => [
             'label' => 'Personal Team',
             'helper_text' => 'Indicates if this is a personal team',
             'description' => 'A personal team is associated with a single user',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'owner' => [
             'label' => 'Owner',
             'helper_text' => 'Team owner user',
             'description' => 'The user who created and manages this team',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'created_at' => [
             'label' => 'Created At',
             'helper_text' => 'Team creation date',
             'description' => 'Date and time when the team was created',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'updated_at' => [
             'label' => 'Last Modified',
             'helper_text' => 'Last modification date',
             'description' => 'Date and time of the last team modification',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
     ],
     'actions' => [
@@ -80,6 +99,7 @@ return [
             'description' => 'User who created this team',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -89,4 +109,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> f548be94 (.)
 ];

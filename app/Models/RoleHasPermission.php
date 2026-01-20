@@ -5,9 +5,14 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Webmozart\Assert\Assert;
+=======
+use Modules\Xot\Contracts\ProfileContract;
+use Illuminate\Support\Carbon;
+>>>>>>> f548be94 (.)
 
 /**
  * Modules\User\Models\RoleHasPermission.
@@ -31,7 +36,11 @@ use Webmozart\Assert\Assert;
  * @method static Builder|RoleHasPermission whereUpdatedBy($value)
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
  * @property ProfileContract|null $deleter
+=======
+ * @mixin IdeHelperRoleHasPermission
+>>>>>>> f548be94 (.)
  * @mixin \Eloquent
  */
 class RoleHasPermission extends BasePivot
@@ -42,6 +51,7 @@ class RoleHasPermission extends BasePivot
      * @psalm-var list{'permission_id', 'role_id'}
      */
     protected $fillable = ['permission_id', 'role_id'];
+<<<<<<< HEAD
 
     /**
      * Laravel's non-morph Pivot base class singularizes the table name by
@@ -56,4 +66,6 @@ class RoleHasPermission extends BasePivot
 
         return $table;
     }
+=======
+>>>>>>> f548be94 (.)
 }

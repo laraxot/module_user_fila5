@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
     'navigation' => [
         'register' => 'Shop registrieren',
@@ -34,4 +35,22 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+
+return [
+    'navigation' => [
+        'register' => 'Registra negozio',
+        'edit' => 'Modifica dati negozio',
+    ],
+    'fields' => [
+        'name' => 'Nome',
+        'phone' => 'Telefono',
+        'email' => 'Email',
+    ],
+    'actions' => [
+        'register_tenant' => [
+            'label' => 'Aggiungi Studio',
+        ],
+    ],
+>>>>>>> f548be94 (.)
 ];

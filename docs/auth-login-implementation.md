@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementazione Corretta della Pagina di Login"
 type: concept
@@ -26,15 +27,33 @@ related:
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
 - [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
+=======
+# Implementazione Corretta della Pagina di Login 
+
+## Collegamenti correlati
+- [Documentazione centrale](/docs/README.md)
+- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+- [Regole Traduzioni](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_RULES.md)
+- [Implementazione Auth Pages](/laravel/Modules/User/docs/AUTH_PAGES_IMPLEMENTATION.md)
+- [Volt Folio Auth](/laravel/Modules/User/docs/VOLT_FOLIO_AUTH_IMPLEMENTATION.md)
+>>>>>>> f548be94 (.)
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login
 
+<<<<<<< HEAD
 La pagina di login è stata migliorata per conformarsi alle regole e alle best practices di <nome progetto>. Ecco i principali miglioramenti apportati:
 
 ### 1. Utilizzo dei Componenti Filament
 
 Secondo le regole di <nome progetto>, si devono utilizzare SEMPRE i componenti Blade nativi di Filament invece di componenti UI personalizzati. Questo garantisce coerenza, manutenibilità e accessibilità.
+=======
+La pagina di login è stata migliorata per conformarsi alle regole e alle best practices di SaluteOra. Ecco i principali miglioramenti apportati:
+
+### 1. Utilizzo dei Componenti Filament
+
+Secondo le regole di SaluteOra, si devono utilizzare SEMPRE i componenti Blade nativi di Filament invece di componenti UI personalizzati. Questo garantisce coerenza, manutenibilità e accessibilità.
+>>>>>>> f548be94 (.)
 
 ```blade
 <!-- ERRATO: Componenti UI personalizzati -->
@@ -52,6 +71,7 @@ Secondo le regole di <nome progetto>, si devono utilizzare SEMPRE i componenti B
     :label="__('auth.login.email')"
     required
 >
+<<<<<<< HEAD
     <x-filament::input
         type="email"
         id="email"
@@ -254,6 +274,9 @@ Secondo le regole di <nome progetto>, si devono utilizzare SEMPRE i componenti B
     required
 >
     <x-filament::input
+=======
+    <x-filament::input 
+>>>>>>> f548be94 (.)
         type="email"
         id="email"
         name="email"
@@ -415,4 +438,8 @@ rules([
 
 ## Conclusione
 
+<<<<<<< HEAD
 Seguendo queste linee guida, è possibile implementare pagine di autenticazione conformi alle regole e alle best practices di <nome progetto>, garantendo coerenza, manutenibilità e accessibilità in tutto il progetto.
+=======
+Seguendo queste linee guida, è possibile implementare pagine di autenticazione conformi alle regole e alle best practices di SaluteOra, garantendo coerenza, manutenibilità e accessibilità in tutto il progetto.
+>>>>>>> f548be94 (.)

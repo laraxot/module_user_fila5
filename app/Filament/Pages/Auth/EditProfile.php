@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Pages\Auth;
 
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Filament\Pages\Auth\XotBaseEditProfile;
@@ -16,6 +17,17 @@ class EditProfile extends XotBaseEditProfile
      * Costruisce il form schema per la pagina di modifica profilo.
      *
      * @return array<int|string, Component>
+=======
+use Filament\Schemas\Schema;
+use Modules\User\Datas\PasswordData;
+
+class EditProfile extends \Filament\Auth\Pages\EditProfile
+{
+    public static null|string $title = 'Profilo Utente';
+
+    /**
+     * Costruisce il form schema per la pagina di modifica profilo.
+>>>>>>> f548be94 (.)
      */
     public function getFormSchema(): array
     {

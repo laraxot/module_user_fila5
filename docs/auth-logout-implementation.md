@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementazione del Logout"
 type: concept
@@ -19,6 +20,9 @@ related:
 ---
 
 # Implementazione del Logout
+=======
+# Implementazione del Logout 
+>>>>>>> f548be94 (.)
 
 ## Indice
 - [Panoramica](#panoramica)
@@ -54,16 +58,28 @@ mount(function() {
     if (Auth::check()) {
         // Dispatch dell'evento prima del logout
         Event::dispatch('auth.logout.attempting', [Auth::user()]);
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> f548be94 (.)
         // Esegui il logout
         Auth::logout();
         session()->invalidate();
         session()->regenerateToken();
+<<<<<<< HEAD
 
         // Dispatch dell'evento dopo il logout
         Event::dispatch('auth.logout.successful');
     }
 
+=======
+        
+        // Dispatch dell'evento dopo il logout
+        Event::dispatch('auth.logout.successful');
+    }
+    
+>>>>>>> f548be94 (.)
     // Reindirizza l'utente alla home page localizzata
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
@@ -83,7 +99,11 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 ```
 
+<<<<<<< HEAD
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
+=======
+Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di SaluteOra per la gestione della localizzazione.
+>>>>>>> f548be94 (.)
 
 ## Componenti Filament
 
@@ -111,7 +131,11 @@ Il template Blade per il logout deve utilizzare i componenti Filament per garant
 
 ## Chiavi di Traduzione
 
+<<<<<<< HEAD
 Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di <nome progetto>:
+=======
+Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di SaluteOra:
+>>>>>>> f548be94 (.)
 
 ```php
 'logout' => [
@@ -168,7 +192,11 @@ mount(function() {
     Auth::logout();
     session()->invalidate();
     session()->regenerateToken();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> f548be94 (.)
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
 ?>
@@ -210,14 +238,22 @@ name('logout');
 mount(function() {
     if (Auth::check()) {
         $user = Auth::user();
+<<<<<<< HEAD
 
         // Evento pre-logout
         Event::dispatch('auth.logout.attempting', [$user]);
 
+=======
+        
+        // Evento pre-logout
+        Event::dispatch('auth.logout.attempting', [$user]);
+        
+>>>>>>> f548be94 (.)
         // Logout
         Auth::logout();
         session()->invalidate();
         session()->regenerateToken();
+<<<<<<< HEAD
 
         // Evento post-logout
         Event::dispatch('auth.logout.successful');
@@ -450,6 +486,13 @@ mount(function() {
         Event::dispatch('auth.logout.successful');
     }
 
+=======
+        
+        // Evento post-logout
+        Event::dispatch('auth.logout.successful');
+    }
+    
+>>>>>>> f548be94 (.)
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
 ?>

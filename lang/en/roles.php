@@ -2,10 +2,15 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'fields' => [
         'id' => [
             'label' => 'id',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -34,4 +39,14 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'team_id' => [
+            'label' => 'team_id',
+        ],
+    ],
+>>>>>>> f548be94 (.)
 ];

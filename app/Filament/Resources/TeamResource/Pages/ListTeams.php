@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TeamResource\Pages;
 
+<<<<<<< HEAD
+=======
+use Override;
+>>>>>>> f548be94 (.)
 use Filament\Tables\Columns\TextColumn;
 use Modules\User\Filament\Resources\TeamResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -13,10 +17,14 @@ class ListTeams extends XotBaseListRecords
     // //
     protected static string $resource = TeamResource::class;
 
+<<<<<<< HEAD
     #[\Override]
     /**
      * @return array<string, mixed>
      */
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public function getTableColumns(): array
     {
         return [

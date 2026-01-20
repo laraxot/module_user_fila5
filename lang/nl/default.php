@@ -127,6 +127,7 @@ return [
         'tooltip' => 'Gekopieerd!',
     ],
     'fields' => [
+<<<<<<< HEAD
         'name' => [
             'label' => 'Naam',
             'tooltip' => '',
@@ -213,4 +214,21 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        'name' => 'Naam',
+        'email' => 'E-mailadres',
+        'password' => 'Wachtwoord',
+        'password_confirm' => 'Wachtwoord bevestigen',
+        'new_password' => 'Nieuw wachtwoord',
+        'new_password_confirmation' => 'Nieuw wachtwoord bevestigen',
+        'token_name' => 'Token naam',
+        'abilities' => 'Mogelijkheden',
+        '2fa_code' => 'Code',
+        '2fa_recovery_code' => 'Herstelcode',
+        'created' => 'Aangemaakt',
+        'expires' => 'Verloopt',
+    ],
+    'or' => 'Of',
+    'cancel' => 'Annuleren',
+>>>>>>> f548be94 (.)
 ];

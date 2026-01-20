@@ -1,9 +1,13 @@
 includes:
     - ./phpstan-baseline.neon
+<<<<<<< HEAD
     - ../../vendor/larastan/larastan/extension.neon
     - ../../vendor/nesbot/carbon/extension.neon
     - ../../vendor/pestphp/pest/extension.neon
     #- ./../../vendor/larastan/larastan/extension.neon
+=======
+    - ./../../vendor/larastan/larastan/extension.neon
+>>>>>>> f548be94 (.)
     #- ./../../vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
     #- ./vendor/symplify/phpstan-rules/config/code-complexity-rules.neon
     #- ./vendor/symplify/phpstan-rules/config/collector-rules.neon
@@ -16,6 +20,7 @@ parameters:
     level: max
 
     paths:
+<<<<<<< HEAD
         - ./app
         - ./config
         - ./database
@@ -23,6 +28,9 @@ parameters:
         - ./resources
         - ./routes
         - ./tests
+=======
+        - .
+>>>>>>> f548be94 (.)
     
           
 
@@ -31,8 +39,11 @@ parameters:
         - '#PHPDoc tag @mixin contains unknown class #'
         - identifier: missingType.iterableValue
         - identifier: missingType.generics
+<<<<<<< HEAD
         - '#Cannot cast mixed to (string|float|double|int|bool|boolean).#'
         - identifier: theCodingMachineSafe.function
+=======
+>>>>>>> f548be94 (.)
 
     excludePaths:
         - ./vendor/*
@@ -41,6 +52,10 @@ parameters:
         - ./*/build/*
         - ./*/vendor/*
         - ./*/docs/*
+<<<<<<< HEAD
+=======
+        - ./*/Tests/*
+>>>>>>> f548be94 (.)
         - ./*/_ide_helper.php
 
     bootstrapFiles:
@@ -48,7 +63,11 @@ parameters:
         - ../../vendor/autoload.php
 
     scanFiles:
+<<<<<<< HEAD
     #    - ./helpers/Helper.php
+=======
+    #    - ./Helpers/Helper.php
+>>>>>>> f548be94 (.)
     #    - ./vendor/amenadiel/jpgraph/src/config.inc.php
     #    - ../../vendor/autoload.php
     
@@ -58,6 +77,16 @@ parameters:
     editorUrl: 'vscode://file/%%file%%:%%line%%'
 
     tmpDir: ./build/phpstan
+<<<<<<< HEAD
     treatPhpDocTypesAsCertain: false
     reportUnmatchedIgnoredErrors: false
+=======
+    checkUnusedViews: false
+    # checkMissingIterableValueType: false
+    # checkGenericClassInNonGenericObjectType: false
+    treatPhpDocTypesAsCertain: false
+    reportUnmatchedIgnoredErrors: false
+    checkOctaneCompatibility: false
+    checkModelProperties: false
+>>>>>>> f548be94 (.)
 

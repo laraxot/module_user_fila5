@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'navigation' => [
         'name' => 'Permessi',
@@ -17,50 +21,72 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome Permesso',
+<<<<<<< HEAD
             'tooltip' => 'Inserisci il nome del permesso, ad esempio \\"Accesso Admin\\".',
             'placeholder' => 'Nome del permesso',
             'helper_text' => '',
             'description' => '',
+=======
+            'tooltip' => 'Inserisci il nome del permesso, ad esempio \"Accesso Admin\".',
+            'placeholder' => 'Nome del permesso',
+>>>>>>> f548be94 (.)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Specifica la guardia associata al permesso.',
+<<<<<<< HEAD
             'placeholder' => 'Nome della guardia, es. \\"web\\"',
             'helper_text' => '',
             'description' => '',
+=======
+            'placeholder' => 'Nome della guardia, es. \"web\"',
+>>>>>>> f548be94 (.)
         ],
         'roles' => [
             'label' => 'Ruoli',
             'tooltip' => 'Seleziona i ruoli a cui assegnare il permesso.',
             'placeholder' => 'Seleziona uno o più ruoli',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'users' => [
             'label' => 'Utenti',
             'tooltip' => 'Seleziona gli utenti a cui assegnare il permesso.',
             'placeholder' => 'Seleziona uno o più utenti',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'tooltip' => 'La data in cui il permesso è stato creato.',
             'placeholder' => 'Data di creazione',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'tooltip' => 'La data dell\'ultima modifica al permesso.',
             'placeholder' => 'Ultima modifica',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Fornisci una breve descrizione del permesso.',
             'placeholder' => 'Descrizione del permesso',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -69,6 +95,11 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+>>>>>>> f548be94 (.)
         ],
     ],
     'actions' => [
@@ -151,6 +182,9 @@ return [
         'manage' => 'Gestisci',
         'full' => 'Accesso Completo',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> f548be94 (.)
 ];

@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'actions' => [
         'view' => [
@@ -17,6 +21,7 @@ return [
             'label' => 'save',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Edit Role',
         'plural' => 'Edit Role',
@@ -50,4 +55,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

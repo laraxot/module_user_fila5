@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'navigation' => ['label' => 'Reset Password', 'plural_label' => 'Reset Password', 'group' => 'Autenticazione', 'icon' => 'heroicon-o-lock-closed', 'sort' => 7],
     'label' => 'Reset Password',
     'plural_label' => 'Reset Password',
@@ -14,4 +15,14 @@ return [
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'messages' => ['success' => 'Link di reset inviato con successo', 'error' => 'Si è verificato un errore'],
+=======
+    'fields' => [
+        'email' => [
+            'label' => 'email',
+            'placeholder' => 'email',
+            'helper_text' => '',
+            'description' => 'email',
+        ],
+    ],
+>>>>>>> f548be94 (.)
 ];

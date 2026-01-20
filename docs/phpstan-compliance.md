@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Compliance - User Module"
 type: concept
@@ -18,10 +19,16 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> f548be94 (.)
 # PHPStan Compliance - User Module
 
 ## Status: ✅ FULLY COMPLIANT
 
+<<<<<<< HEAD
+=======
+**Analysis Date:** September 22, 2025
+>>>>>>> f548be94 (.)
 **PHPStan Level:** 9 (Maximum)
 **Files Analyzed:** 772
 **Errors Found:** 0

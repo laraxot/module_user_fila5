@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Forms\Components;
 
+<<<<<<< HEAD
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
 
@@ -26,8 +27,45 @@ class SingleRoleSelect extends XotBaseSelect
             ->placeholder('Select a role');
     }
 
+=======
+use Filament\Forms\Components\Select;
+use Modules\User\Models\Role;
+
+class SingleRoleSelect extends Select
+{
+    protected string $optionValueProperty = 'id';
+
+    // /*
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $options = Role::all()->pluck('name', 'id')->toArray();
+
+        $this->options(fn (): array => $options) // Ruoli dal DB
+            // ->searchable() // Permette la ricerca
+            // ->preload() // Precarica i risultati
+            ->placeholder('Select a role');
+    }
+
+    // */
+
+>>>>>>> f548be94 (.)
     public function getOptionValueProperty(): string
     {
         return $this->optionValueProperty;
     }
+<<<<<<< HEAD
+=======
+
+    /*
+     * public static function make(string $name): static
+     * {
+     * return parent::make($name)
+     * ->options(Role::all()->pluck('name', 'id')->toArray()) // Ruoli dal DB
+     * ->searchable() // Permette la ricerca
+     * ->preload() // Precarica i risultati
+     * ->placeholder('Select a role');
+     * }
+     */
+>>>>>>> f548be94 (.)
 }

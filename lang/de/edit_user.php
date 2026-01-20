@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'actions' => [
         'delete' => [
@@ -17,6 +21,7 @@ return [
     'fields' => [
         'password' => [
             'label' => 'password',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -43,4 +48,14 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+        ],
+        'email' => [
+            'label' => 'email',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+    ],
+>>>>>>> f548be94 (.)
 ];

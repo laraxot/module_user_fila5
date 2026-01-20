@@ -9,24 +9,45 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Actions\DeleteAction;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
+=======
+use InvalidArgumentException;
+use Filament\Actions\DeleteAction;
+use Filament\Resources\Pages\EditRecord;
+use Illuminate\Support\Facades\Hash;
+use Modules\User\Filament\Resources\UserResource;
+use Modules\User\Models\User;
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+>>>>>>> f548be94 (.)
 use Webmozart\Assert\Assert;
 
 /**
  * Pagina per la modifica degli utenti con particolare gestione della password.
  */
+<<<<<<< HEAD
 class EditUser extends XotBaseEditRecord
 {
+=======
+class EditUser extends EditRecord
+{
+    // //
+>>>>>>> f548be94 (.)
     protected static string $resource = UserResource::class;
 
     protected function mutateFormDataBeforeSave(array $data): array
     {
+<<<<<<< HEAD
         // PHPStan Level 10: $data is already typed as array, no need for assertion
         if (! array_key_exists('new_password', $data) || ! filled($data['new_password'])) {
+=======
+        Assert::isArray($data);
+        if (!array_key_exists('new_password', $data) || !filled($data['new_password'])) {
+>>>>>>> f548be94 (.)
             return $data;
         }
 
@@ -38,22 +59,35 @@ class EditUser extends XotBaseEditRecord
         $newPassword = $data['new_password'];
 
         // Verifichiamo il tipo e convertiamo in modo sicuro
+<<<<<<< HEAD
         if (! is_string($newPassword)) {
             if (! is_scalar($newPassword)) {
                 throw new \InvalidArgumentException('La password deve essere una stringa');
+=======
+        if (!is_string($newPassword)) {
+            if (!is_scalar($newPassword)) {
+                throw new InvalidArgumentException('La password deve essere una stringa');
+>>>>>>> f548be94 (.)
             }
             $newPassword = (string) $newPassword;
         }
 
         $this->record->update(['password' => Hash::make($newPassword)]);
+<<<<<<< HEAD
 
+=======
+>>>>>>> f548be94 (.)
         return $data;
     }
 
     protected function getHeaderActions(): array
     {
         return [
+<<<<<<< HEAD
             'delete' => DeleteAction::make(),
+=======
+            DeleteAction::make(),
+>>>>>>> f548be94 (.)
         ];
     }
 }

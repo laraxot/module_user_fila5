@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Architettura Modulo User"
 type: concept
@@ -10,6 +11,8 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 ---
 
+=======
+>>>>>>> f548be94 (.)
 # Architettura Modulo User
 
 ## 🏗️ Panoramica Architetturale
@@ -300,11 +303,21 @@ return [
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [Best Practices Sistema](../../../../docs/core/best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
+=======
+- [Best Practices Sistema](../../../docs/core/best-practices.md)
+- [Convenzioni Sistema](../../../docs/core/conventions.md)
+- [Template Modulo](../../../docs/templates/module-template.md)
+>>>>>>> f548be94 (.)
 - [PHPStan Guide](../development/phpstan-guide.md)
 
 ---
 
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento:** Gennaio 2025  
+>>>>>>> f548be94 (.)
 **Versione:** 2.0 - Consolidata DRY + KISS

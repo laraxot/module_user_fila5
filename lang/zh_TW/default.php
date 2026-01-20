@@ -102,6 +102,7 @@ return [
         'tooltip' => '已複製！',
     ],
     'fields' => [
+<<<<<<< HEAD
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -206,4 +207,24 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        'avatar' => 'Avatar',
+        'email' => 'Email',
+        'login' => '登入',
+        'name' => '名稱',
+        'password' => '確認',
+        'password_confirm' => '密碼確認',
+        'new_password' => '新的密碼',
+        'new_password_confirmation' => '確認密碼',
+        'token_name' => 'Token 名稱',
+        'token_expiry' => 'Token 到期',
+        'abilities' => 'Abilities',
+        '2fa_code' => 'Code',
+        '2fa_recovery_code' => '恢復代碼',
+        'created' => '創建',
+        'expires' => '到期',
+    ],
+    'or' => ' 或 ',
+    'cancel' => '取消',
+>>>>>>> f548be94 (.)
 ];

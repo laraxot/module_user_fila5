@@ -2,12 +2,17 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'actions' => [
         'delete' => [
             'label' => 'delete',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Base Edit User',
         'plural' => 'Base Edit User',
@@ -41,4 +46,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

@@ -8,6 +8,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions;
 
+<<<<<<< HEAD
+=======
+// use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
+use InvalidArgumentException;
+use RuntimeException;
+>>>>>>> f548be94 (.)
 use Jenssegers\Agent\Agent;
 use Modules\User\Models\Device;
 use Spatie\QueueableAction\QueueableAction;
@@ -16,6 +22,7 @@ class GetCurrentDeviceAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     public function __construct(
         private readonly Agent $agent,
         private readonly Device $deviceModel,
@@ -40,10 +47,50 @@ class GetCurrentDeviceAction
                 throw new \RuntimeException('Impossibile creare o trovare il dispositivo');
             }
             $device->update([...$deviceInfo, ...$browserInfo]);
+=======
+    /**
+     * Execute the action.
+     */
+    public function execute(null|string $mobile_id = null): Device
+    {
+        $agent = new Agent();
+
+        $device = $agent->device();
+        $platform = $agent->platform();
+        $browser = $agent->browser();
+
+        $data = [
+            'device' => is_string($device) ? $device : 'unknown',
+            'platform' => is_string($platform) ? $platform : 'unknown',
+            'browser' => is_string($browser) ? $browser : 'unknown',
+            'is_desktop' => $agent->isDesktop(),
+            'is_mobile' => $agent->isMobile(),
+            'is_tablet' => $agent->isTablet(),
+            'is_phone' => $agent->isPhone(),
+            'is_robot' => $agent->isRobot(),
+        ];
+
+        $up = [
+            'version' => is_string($browser) ? $agent->version($browser) : 'unknown',
+            'robot' => is_string($agent->robot()) ? $agent->robot() : 'unknown',
+        ];
+
+        if ($mobile_id !== null) {
+            if (empty($mobile_id)) {
+                throw new InvalidArgumentException('L\'ID mobile non può essere vuoto');
+            }
+
+            $device = Device::firstOrCreate(['mobile_id' => $mobile_id]);
+            if ($device === null) {
+                throw new RuntimeException('Impossibile creare o trovare il dispositivo');
+            }
+            $device->update([...$data, ...$up]);
+>>>>>>> f548be94 (.)
 
             return $device;
         }
 
+<<<<<<< HEAD
         $device = $this->deviceModel->firstOrCreate($deviceInfo);
         if (null === $device) {
             throw new \RuntimeException('Impossibile creare o trovare il dispositivo');
@@ -91,4 +138,14 @@ class GetCurrentDeviceAction
             'robot' => is_string($this->agent->robot()) ? $this->agent->robot() : 'unknown',
         ];
     }
+=======
+        $device = Device::firstOrCreate($data);
+        if ($device === null) {
+            throw new RuntimeException('Impossibile creare o trovare il dispositivo');
+        }
+        $device->update($up);
+
+        return $device;
+    }
+>>>>>>> f548be94 (.)
 }

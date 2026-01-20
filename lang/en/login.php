@@ -10,7 +10,10 @@ return [
             'help' => 'Enter your email address to log in',
             'description' => 'email',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'password' => [
             'label' => 'Password',
@@ -18,7 +21,10 @@ return [
             'help' => 'Enter your account password',
             'description' => 'password',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'remember' => [
             'label' => 'Remember me',
@@ -26,33 +32,50 @@ return [
             'help' => 'Keep me logged in on this device',
             'description' => 'remember',
             'helper_text' => '',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'name' => [
             'label' => 'Full name',
             'placeholder' => 'Enter your full name',
             'help' => 'Your complete name for registration',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'password_confirmation' => [
             'label' => 'Confirm password',
             'placeholder' => 'Repeat your password',
             'help' => 'Repeat the password for confirmation',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
     ],
     'actions' => [
         'login' => [
+<<<<<<< HEAD
             'label' => 'Login',
+=======
+            'label' => 'Sign in',
+>>>>>>> f548be94 (.)
             'success' => 'Successfully logged in',
             'error' => 'Invalid credentials',
         ],
         'register' => [
+<<<<<<< HEAD
             'label' => 'Register',
+=======
+            'label' => 'Sign up',
+>>>>>>> f548be94 (.)
             'success' => 'Registration completed successfully',
             'error' => 'Unable to complete registration',
         ],
@@ -66,6 +89,7 @@ return [
             'success' => 'Password reset successfully',
             'error' => 'Unable to reset password',
         ],
+<<<<<<< HEAD
         'showPassword' => [
             'label' => 'showPassword',
             'icon' => 'showPassword',
@@ -76,6 +100,8 @@ return [
             'icon' => 'hidePassword',
             'tooltip' => 'hidePassword',
         ],
+=======
+>>>>>>> f548be94 (.)
     ],
     'messages' => [
         'logout_success' => 'Successfully logged out',
@@ -86,6 +112,7 @@ return [
         'general_error' => 'An error occurred. Please try again later.',
         'unauthorized' => 'You do not have the necessary permissions for this operation.',
     ],
+<<<<<<< HEAD
     'title' => 'Sign in to your account',
     'subtitle_start' => 'Or',
     'subtitle_link' => 'create a new account',
@@ -117,4 +144,6 @@ return [
         'microsoft' => 'Sign in with Microsoft',
         'github' => 'Sign in with GitHub',
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

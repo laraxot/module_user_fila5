@@ -2,10 +2,15 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'fields' => [
         'deactivate' => [
             'label' => 'deactivate',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -63,6 +68,23 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Base List Users',
+=======
+        ],
+        'unverified' => [
+            'label' => 'unverified',
+        ],
+        'verified' => [
+            'label' => 'verified',
+        ],
+        'email' => [
+            'label' => 'email',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'changePassword' => [
+            'label' => 'changePassword',
+>>>>>>> f548be94 (.)
         ],
     ],
 ];

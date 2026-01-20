@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Database\Factories;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\Profile;
 
@@ -12,10 +13,21 @@ use Modules\User\Models\Profile;
  */
 class ProfileFactory extends Factory
 {
+=======
+use Modules\User\Models\Profile;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class ProfileFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     */
+>>>>>>> f548be94 (.)
     protected $model = Profile::class;
 
     /**
      * Define the model's default state.
+<<<<<<< HEAD
      *
      * @return array<string, mixed>
      */
@@ -35,5 +47,11 @@ class ProfileFactory extends Factory
             'birth_date' => $this->faker->date(),
             'status' => 'active',
         ];
+=======
+     */
+    public function definition(): array
+    {
+        return [];
+>>>>>>> f548be94 (.)
     }
 }

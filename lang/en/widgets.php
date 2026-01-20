@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'edit_user' => [
         'title' => 'Edit User Profile',
@@ -171,6 +175,7 @@ return [
             'confirm' => 'Are you sure you want to sign out?',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -188,4 +193,6 @@ return [
         'heading' => 'Authentication Log',
         'label' => 'Number of logins executed',
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

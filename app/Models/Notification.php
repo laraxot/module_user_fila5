@@ -4,12 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\DatabaseNotification as BaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Modules\Xot\Models\Traits\HasXotFactory;
+=======
+use Illuminate\Notifications\DatabaseNotificationCollection;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Notifications\DatabaseNotification as BaseNotification;
+>>>>>>> f548be94 (.)
 
 /**
  * @property Model|\Eloquent $notifiable
@@ -24,6 +32,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static DatabaseNotificationCollection<int, static> get($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static> all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static> get($columns = ['*'])
+<<<<<<< HEAD
  * @method static \Modules\User\Database\Factories\NotificationFactory factory($count = null, $state = [])
  * @property string $id
  * @property string $type
@@ -45,12 +54,21 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static Builder<static>|Notification whereType($value)
  * @method static Builder<static>|Notification whereUpdatedAt($value)
  * @method static Builder<static>|Notification whereUpdatedBy($value)
+=======
+ * @mixin IdeHelperNotification
+>>>>>>> f548be94 (.)
  * @mixin \Eloquent
  */
 class Notification extends BaseNotification
 {
+<<<<<<< HEAD
     use HasXotFactory;
 
+=======
+    use HasFactory;
+
+    /** @var string */
+>>>>>>> f548be94 (.)
     protected $connection = 'user';
 
     // protected $fillable = ['id', 'user_id', 'client_id', 'name', 'scopes', 'revoked', 'expires_at'];

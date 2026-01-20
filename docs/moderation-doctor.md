@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Moderazione Dentista dal Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> f548be94 (.)
 # Moderazione Dentista dal Modulo User
 
 ## Premessa

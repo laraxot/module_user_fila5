@@ -11,9 +11,14 @@ namespace Modules\User\Filament\Actions\Header;
 use Filament\Actions\AttachAction;
 use Filament\Forms\Components\Select;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Actions\XotBaseAttachAction;
 
 final class AttachRoleAction extends XotBaseAttachAction
+=======
+
+class AttachRoleAction extends AttachAction
+>>>>>>> f548be94 (.)
 {
     protected function setUp(): void
     {
@@ -29,7 +34,11 @@ final class AttachRoleAction extends XotBaseAttachAction
             });
     }
 
+<<<<<<< HEAD
     public static function getDefaultName(): string
+=======
+    public static function getDefaultName(): ?string
+>>>>>>> f548be94 (.)
     {
         return 'attachRole';
     }

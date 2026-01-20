@@ -2,54 +2,77 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'fields' => [
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Nome del tenant',
             'helper_text' => 'Inserisci il nome del tenant',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'slug' => [
             'label' => 'Slug',
             'placeholder' => 'Slug del tenant',
             'helper_text' => 'Lo slug verrà generato automaticamente dal nome',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'domain' => [
             'label' => 'Dominio',
             'placeholder' => 'dominio',
             'helper_text' => 'Il dominio del tenant',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'email@example.com',
             'helper_text' => 'Indirizzo email del tenant',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'phone' => [
             'label' => 'Telefono',
             'placeholder' => 'Telefono',
             'helper_text' => 'Numero di telefono del tenant',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'mobile' => [
             'label' => 'Cellulare',
             'placeholder' => 'Cellulare',
             'helper_text' => 'Numero di cellulare del tenant',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'address' => [
             'label' => 'Indirizzo',
             'placeholder' => 'Indirizzo',
             'helper_text' => 'Indirizzo del tenant',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
@@ -58,12 +81,21 @@ return [
             'helper_text' => 'Colore primario del tenant',
             'tooltip' => '',
             'description' => '',
+=======
+        ],
+        'primary_color' => [
+            'label' => 'Colore Primario',
+            'helper_text' => 'Colore primario del tenant',
+>>>>>>> f548be94 (.)
         ],
         'secondary_color' => [
             'label' => 'Colore Secondario',
             'helper_text' => 'Colore secondario del tenant',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
     ],
     'actions' => [
@@ -82,6 +114,7 @@ return [
             'icon' => 'heroicon-o-trash',
             'color' => 'danger',
         ],
+<<<<<<< HEAD
         'reorderRecords' => [
             'tooltip' => 'reorderRecords',
         ],
@@ -104,4 +137,7 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+    ],
+>>>>>>> f548be94 (.)
 ];

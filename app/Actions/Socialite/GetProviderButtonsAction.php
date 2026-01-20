@@ -16,8 +16,11 @@ class GetProviderButtonsAction
 
     /**
      * Execute the action.
+<<<<<<< HEAD
      *
      * @return array<int, never>
+=======
+>>>>>>> f548be94 (.)
      */
     public function execute(): array
     {

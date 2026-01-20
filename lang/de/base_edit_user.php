@@ -2,12 +2,17 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'actions' => [
         'delete' => [
             'label' => 'delete',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -19,4 +24,6 @@ return [
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

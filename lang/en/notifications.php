@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'password_changed_successfully' => [
         'title' => 'Password changed successfully!',
@@ -11,6 +15,7 @@ return [
         'title' => 'Tabella Mancante',
         'body' => 'Tabella Mancante',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -24,4 +29,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Carbon\CarbonInterface;
 use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
@@ -17,6 +18,16 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\HtmlString;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
+=======
+use Filament\Schemas\Components\Section;
+use Override;
+use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
+use Filament\Forms\Components\Placeholder;
+use Filament\Forms\Components\TextInput;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\HtmlString;
+use Modules\User\Filament\Resources\UserResource\Pages;
+>>>>>>> f548be94 (.)
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -24,6 +35,11 @@ abstract class BaseUserResource extends XotBaseResource
 {
     // protected static ?string $model = \Modules\Xot\Datas\XotData::make()->getUserClass();
 
+<<<<<<< HEAD
+=======
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-users';
+
+>>>>>>> f548be94 (.)
     // Static property Modules\User\Filament\Resources\UserResource::$enablePasswordUpdates is never read, only written.
     // private static bool|\Closure $enablePasswordUpdates = true;
 
@@ -39,7 +55,11 @@ abstract class BaseUserResource extends XotBaseResource
     //    static::$extendFormCallback = $callback;
     // }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public static function getFormSchema(): array
     {
         return [
@@ -48,6 +68,7 @@ abstract class BaseUserResource extends XotBaseResource
                 'email' => TextInput::make('email')->required()->unique(ignoreRecord: true),
                 'password' => TextInput::make('password')
                     ->password()
+<<<<<<< HEAD
                     ->dehydrateStateUsing(function ($state) {
                         if (empty($state)) {
                             return;
@@ -70,6 +91,18 @@ abstract class BaseUserResource extends XotBaseResource
                     $createdAt = $record->created_at;
 
                     return $createdAt instanceof CarbonInterface ? $createdAt->diffForHumans() : $createdAt->format('Y-m-d H:i:s');
+=======
+                    ->dehydrateStateUsing(fn($state) => !empty($state) ? Hash::make($state) : null)
+                    ->required(fn($livewire) => $livewire instanceof CreateUser),
+            ])->columnSpan(8),
+            'section02' => Section::make([
+                'created_at' => Placeholder::make('created_at')->content(static function ($record) {
+                    if ($record === null || $record->created_at === null) {
+                        return new HtmlString('&mdash;');
+                    }
+
+                    return $record->created_at->diffForHumans();
+>>>>>>> f548be94 (.)
                 }),
             ])->columnSpan(4),
         ];
@@ -87,7 +120,11 @@ abstract class BaseUserResource extends XotBaseResource
      * }
      */
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public function hasCombinedRelationManagerTabsWithContent(): bool
     {
         return true;

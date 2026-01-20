@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Analisi Conflitti - module.json"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> f548be94 (.)
 # Analisi Conflitti - module.json
 
 

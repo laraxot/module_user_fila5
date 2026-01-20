@@ -126,6 +126,7 @@ return [
         'tooltip' => 'Đã sao chép!',
     ],
     'fields' => [
+<<<<<<< HEAD
         'email' => [
             'label' => 'Email',
             'tooltip' => '',
@@ -218,4 +219,22 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        'email' => 'Email',
+        'login' => 'Đăng nhập',
+        'name' => 'Tên',
+        'password' => 'Mật khẩu',
+        'password_confirm' => 'Mật khẩu xác nhận',
+        'new_password' => 'Mật khẩu mới',
+        'new_password_confirmation' => 'Mật khẩu xác nhận',
+        'token_name' => 'Tên mã token',
+        'abilities' => 'Khả năng',
+        '2fa_code' => 'Mã',
+        '2fa_recovery_code' => 'Mã khôi phục',
+        'created' => 'Đã tạo',
+        'expires' => 'Hết hạn',
+    ],
+    'or' => 'Hoặc',
+    'cancel' => 'Hủy',
+>>>>>>> f548be94 (.)
 ];

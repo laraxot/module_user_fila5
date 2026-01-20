@@ -4,13 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
+=======
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\User\Database\Factories\FeatureFactory;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
+>>>>>>> f548be94 (.)
 
 /**
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
  * @method static Builder|Feature newModelQuery()
  * @method static Builder|Feature newQuery()
  * @method static Builder|Feature query()
@@ -18,6 +26,16 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string      $name
  * @property string      $scope
  * @property string      $value
+=======
+ * @method static FeatureFactory factory($count = null, $state = [])
+ * @method static Builder|Feature newModelQuery()
+ * @method static Builder|Feature newQuery()
+ * @method static Builder|Feature query()
+ * @property string $id
+ * @property string $name
+ * @property string $scope
+ * @property string $value
+>>>>>>> f548be94 (.)
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -34,8 +52,12 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|Feature whereUpdatedAt($value)
  * @method static Builder|Feature whereUpdatedBy($value)
  * @method static Builder|Feature whereValue($value)
+<<<<<<< HEAD
  * @property ProfileContract|null $deleter
  * @method static \Modules\User\Database\Factories\FeatureFactory factory($count = null, $state = [])
+=======
+ * @mixin IdeHelperFeature
+>>>>>>> f548be94 (.)
  * @mixin \Eloquent
  */
 class Feature extends BaseModel

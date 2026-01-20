@@ -11,6 +11,7 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\User\Contracts\TeamInvitationContract.
  *
+<<<<<<< HEAD
  * @property int          $id
  * @property int          $team_id
  * @property string       $email
@@ -28,6 +29,25 @@ use Illuminate\Support\Carbon;
  * @method static Builder<Model>|TeamInvitationContract whereRole($value)
  * @method static Builder<Model>|TeamInvitationContract whereTeamId($value)
  * @method static Builder<Model>|TeamInvitationContract whereUpdatedAt($value)
+=======
+ * @property int $id
+ * @property int $team_id
+ * @property string $email
+ * @property string|null $role
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property TeamContract $team
+ *
+ * @method static Builder|TeamInvitationContract newModelQuery()
+ * @method static Builder|TeamInvitationContract newQuery()
+ * @method static Builder|TeamInvitationContract query()
+ * @method static Builder|TeamInvitationContract whereCreatedAt($value)
+ * @method static Builder|TeamInvitationContract whereEmail($value)
+ * @method static Builder|TeamInvitationContract whereId($value)
+ * @method static Builder|TeamInvitationContract whereRole($value)
+ * @method static Builder|TeamInvitationContract whereTeamId($value)
+ * @method static Builder|TeamInvitationContract whereUpdatedAt($value)
+>>>>>>> f548be94 (.)
  *
  * @phpstan-require-extends Model
  *

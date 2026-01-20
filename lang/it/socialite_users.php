@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+<<<<<<< HEAD
         'provider' => ['label' => 'provider', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'provider_id' => ['label' => 'provider_id', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'name' => ['label' => 'name', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -31,5 +32,22 @@ return [
         'create' => ['label' => 'Crea Socialite Users', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Socialite Users'],
         'delete' => ['label' => 'Elimina Socialite Users'],
+=======
+        'provider' => [
+            'label' => 'provider',
+        ],
+        'provider_id' => [
+            'label' => 'provider_id',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'email' => [
+            'label' => 'email',
+        ],
+        'avatar' => [
+            'label' => 'avatar',
+        ],
+>>>>>>> f548be94 (.)
     ],
 ];

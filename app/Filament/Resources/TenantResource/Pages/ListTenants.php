@@ -3,16 +3,28 @@
 /**
  * Tenant List Management.
  */
+<<<<<<< HEAD
 
+=======
+>>>>>>> f548be94 (.)
 declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Str;
 use Modules\User\Filament\Resources\TenantResource;
 use Modules\User\Models\Tenant;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+=======
+use Override;
+use Filament\Tables\Columns\TextColumn;
+use Illuminate\Support\Str;
+use Modules\User\Filament\Resources\TenantResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+>>>>>>> f548be94 (.)
 
 class ListTenants extends XotBaseListRecords
 {
@@ -21,10 +33,14 @@ class ListTenants extends XotBaseListRecords
     /**
      * Definisce le colonne della tabella per la lista tenant.
      */
+<<<<<<< HEAD
     #[\Override]
     /**
      * @return array<string, mixed>
      */
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public function getTableColumns(): array
     {
         return [
@@ -32,6 +48,7 @@ class ListTenants extends XotBaseListRecords
             'name' => TextColumn::make('name')->searchable(),
             'slug' => TextColumn::make('slug')
                 ->default(function ($record) {
+<<<<<<< HEAD
                     if (null === $record || ! $record instanceof Tenant) {
                         return '';
                     }
@@ -42,6 +59,14 @@ class ListTenants extends XotBaseListRecords
                     }
                     $slug = Str::slug($name);
                     $record->setAttribute('slug', $slug);
+=======
+                    if ($record === null) {
+                        return '';
+                    }
+                    $record->generateSlug();
+                    $slug = Str::slug($record->name);
+                    $record->slug = $slug;
+>>>>>>> f548be94 (.)
                     $record->save();
 
                     return $slug;

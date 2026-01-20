@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
     'navigation' => [
         'label' => 'Filter',
@@ -232,4 +233,12 @@ return [
             'placeholder' => 'Search...',
         ],
     ],
+=======
+
+return [
+    'role' => 'Ruolo',
+    'active_users' => 'Utenti attivi',
+    'created_from' => 'creati dal',
+    'created_until' => 'creati al',
+>>>>>>> f548be94 (.)
 ];

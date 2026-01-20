@@ -10,7 +10,11 @@ use Modules\User\Models\PermissionRole;
 use Modules\User\Models\Role;
 
 /**
+<<<<<<< HEAD
  * PermissionRole Factory.
+=======
+ * PermissionRole Factory
+>>>>>>> f548be94 (.)
  *
  * Factory for creating PermissionRole model instances for testing and seeding.
  *
@@ -30,6 +34,7 @@ class PermissionRoleFactory extends Factory
      *
      * @return array<string, mixed>
      */
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
@@ -41,6 +46,16 @@ class PermissionRoleFactory extends Factory
                 'guard_name' => 'web',
             ])->id,
             'role_id' => fn () => Role::create([
+=======
+    public function definition(): array
+    {
+        return [
+            'permission_id' => fn() => Permission::create([
+                'name' => fake()->unique()->slug(),
+                'guard_name' => 'web',
+            ])->id,
+            'role_id' => fn() => Role::create([
+>>>>>>> f548be94 (.)
                 'name' => fake()->unique()->slug(),
                 'guard_name' => 'web',
             ])->id,
@@ -49,20 +64,40 @@ class PermissionRoleFactory extends Factory
 
     /**
      * Create permission-role relationship for a specific permission.
+<<<<<<< HEAD
      */
     public function forPermission(Permission $permission): static
     {
         return $this->state(fn (array $_attributes): array => [
+=======
+     *
+     * @param Permission $permission
+     * @return static
+     */
+    public function forPermission(Permission $permission): static
+    {
+        return $this->state(fn(array $_attributes): array => [
+>>>>>>> f548be94 (.)
             'permission_id' => $permission->id,
         ]);
     }
 
     /**
      * Create permission-role relationship for a specific role.
+<<<<<<< HEAD
      */
     public function forRole(Role $role): static
     {
         return $this->state(fn (array $_attributes): array => [
+=======
+     *
+     * @param Role $role
+     * @return static
+     */
+    public function forRole(Role $role): static
+    {
+        return $this->state(fn(array $_attributes): array => [
+>>>>>>> f548be94 (.)
             'role_id' => $role->id,
         ]);
     }

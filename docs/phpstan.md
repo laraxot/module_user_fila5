@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Analisi PHPStan del Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> f548be94 (.)
 # Analisi PHPStan del Modulo User
 
 ## Stato Attuale
@@ -26,22 +29,38 @@ Il modulo User è attualmente in fase di analisi con PHPStan. Questo documento t
 ## Problemi e Soluzioni
 
 ### Team e BaseTeam
+<<<<<<< HEAD
 - [Dettagli completi](../../Modules/User/docs/phpstan-fixes-8.md#team-php-e-baseteam-php)
+=======
+- [Dettagli completi](../../Modules/User/docs/phpstan_fixes.md#team-php-e-baseteam-php)
+>>>>>>> f548be94 (.)
 - Stato: ✅ Risolto
 - Commit: N/A
 
 ### TeamInvitation
+<<<<<<< HEAD
 - [Dettagli completi](../../Modules/User/docs/phpstan-fixes-8.md#teaminvitation-php)
+=======
+- [Dettagli completi](../../Modules/User/docs/phpstan_fixes.md#teaminvitation-php)
+>>>>>>> f548be94 (.)
 - Stato: ✅ Risolto
 - Commit: N/A
 
 ### TeamUser e BasePivot
+<<<<<<< HEAD
 - [Dettagli completi](../../Modules/User/docs/phpstan-fixes-8.md#teamuser-php-e-basepivot-php)
+=======
+- [Dettagli completi](../../Modules/User/docs/phpstan_fixes.md#teamuser-php-e-basepivot-php)
+>>>>>>> f548be94 (.)
 - Stato: ✅ Risolto
 - Commit: N/A
 
 ### BaseUser
+<<<<<<< HEAD
 - [Dettagli completi](../../Modules/User/docs/phpstan-fixes-8.md#baseuser-php)
+=======
+- [Dettagli completi](../../Modules/User/docs/phpstan_fixes.md#baseuser-php)
+>>>>>>> f548be94 (.)
 - Stato: 🔄 In Corso
 - Problemi rimanenti:
   - Proprietà non definite
@@ -50,7 +69,11 @@ Il modulo User è attualmente in fase di analisi con PHPStan. Questo documento t
 
 ## Collegamenti
 - [Documentazione Generale PHPStan](/docs/phpstan.md)
+<<<<<<< HEAD
 - [Linee Guida PHPStan Livello 10](/docs/phpstan/phpstan_level10_linee_guida.md)
+=======
+- [Linee Guida PHPStan Livello 10](/docs/phpstan/PHPSTAN_LEVEL10_LINEE_GUIDA.md)
+>>>>>>> f548be94 (.)
 - [Contratti del Modulo User](/docs/modules/user/contracts.md)
 - [Best Practices per i Modelli](/docs/modules/user/models.md)
 

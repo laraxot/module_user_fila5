@@ -20,6 +20,10 @@ class InvalidState
      */
     public function __construct(
         public InvalidStateException $exception,
+<<<<<<< HEAD
     ) {
     }
+=======
+    ) {}
+>>>>>>> f548be94 (.)
 }

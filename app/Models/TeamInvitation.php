@@ -5,17 +5,26 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Contracts\ProfileContract;
+>>>>>>> f548be94 (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Modules\User\Contracts\TeamContract;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
+=======
+use Modules\User\Database\Factories\TeamInvitationFactory;
+>>>>>>> f548be94 (.)
 use Modules\Xot\Datas\XotData;
 
 /**
  * Modules\User\Models\TeamInvitation.
  *
+<<<<<<< HEAD
  * @property int               $id
  * @property string|null       $team_id
  * @property string            $email
@@ -24,6 +33,17 @@ use Modules\Xot\Datas\XotData;
  * @property Carbon|null       $updated_at
  * @property Team|null         $team
  * @property TeamContract|null $team
+=======
+ * @property int $id
+ * @property string|null $team_id
+ * @property string $email
+ * @property string|null $role
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Team|null $team
+ * @property TeamContract|null $team
+ * @method static TeamInvitationFactory factory($count = null, $state = [])
+>>>>>>> f548be94 (.)
  * @method static Builder|TeamInvitation newModelQuery()
  * @method static Builder|TeamInvitation newQuery()
  * @method static Builder|TeamInvitation query()
@@ -33,7 +53,11 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|TeamInvitation whereRole($value)
  * @method static Builder|TeamInvitation whereTeamId($value)
  * @method static Builder|TeamInvitation whereUpdatedAt($value)
+<<<<<<< HEAD
  * @property string      $uuid
+=======
+ * @property string $uuid
+>>>>>>> f548be94 (.)
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
@@ -45,6 +69,7 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|TeamInvitation whereUuid($value)
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
  * @property ProfileContract|null $deleter
  * @property Carbon|null          $accepted_at
  * @property Carbon|null          $declined_at
@@ -53,16 +78,24 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder<static>|TeamInvitation                         whereAcceptedAt($value)
  * @method static Builder<static>|TeamInvitation                         whereDeclinedAt($value)
  * @method static Builder<static>|TeamInvitation                         whereUserId($value)
+=======
+ * @mixin IdeHelperTeamInvitation
+>>>>>>> f548be94 (.)
  * @mixin \Eloquent
  */
 class TeamInvitation extends BaseModel
 {
+<<<<<<< HEAD
+=======
+    /** @var string */
+>>>>>>> f548be94 (.)
     protected $connection = 'user';
 
     /** @var list<string> */
     protected $fillable = [
         'email',
         'role',
+<<<<<<< HEAD
         'accepted_at',
         'declined_at',
         'user_id',
@@ -70,6 +103,14 @@ class TeamInvitation extends BaseModel
 
     /**
      * @return BelongsTo<Model, $this>
+=======
+    ];
+
+    /**
+     * Get the team that the invitation belongs to.
+     *  BelongsTo<the related model, the current model>
+     * -return BelongsTo<TeamContract, TeamInvitation> No TeamContract ..
+>>>>>>> f548be94 (.)
      */
     public function team(): BelongsTo
     {
@@ -79,6 +120,7 @@ class TeamInvitation extends BaseModel
 
         return $this->belongsTo($team_class);
     }
+<<<<<<< HEAD
 
     /**
      * Accept the invitation.
@@ -112,4 +154,6 @@ class TeamInvitation extends BaseModel
             'declined_at' => 'datetime',
         ];
     }
+=======
+>>>>>>> f548be94 (.)
 }

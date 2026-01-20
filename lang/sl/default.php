@@ -102,6 +102,7 @@ return [
         'tooltip' => 'Kopirano!',
     ],
     'fields' => [
+<<<<<<< HEAD
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -206,4 +207,24 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        'avatar' => 'Avatar',
+        'email' => 'E-pošta',
+        'login' => 'Prijava',
+        'name' => 'Ime',
+        'password' => 'Geslo',
+        'password_confirm' => 'Potrditev gesla',
+        'new_password' => 'Novo geslo',
+        'new_password_confirmation' => 'Potrditev novega gesla',
+        'token_name' => 'Ime žetona',
+        'token_expiry' => 'Veljavnost žetona',
+        'abilities' => 'Sposobnosti',
+        '2fa_code' => 'Koda',
+        '2fa_recovery_code' => 'Koda za obnovitev',
+        'created' => 'Ustvarjeno',
+        'expires' => 'Poteče',
+    ],
+    'or' => 'Ali',
+    'cancel' => 'Prekliči',
+>>>>>>> f548be94 (.)
 ];

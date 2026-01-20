@@ -6,6 +6,7 @@ return [
     'fields' => [
         'name' => [
             'label' => 'name',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -21,6 +22,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'email' => [
+            'label' => 'email',
+        ],
+        'password' => [
+            'label' => 'password',
+>>>>>>> f548be94 (.)
         ],
     ],
     'actions' => [
@@ -32,6 +41,7 @@ return [
         ],
         'cancel' => [
             'label' => 'cancel',
+<<<<<<< HEAD
             'icon' => 'cancel',
         ],
         'logout' => [
@@ -51,4 +61,8 @@ return [
     ],
     'label' => 'Create User',
     'plural_label' => 'Create User (Plurale)',
+=======
+        ],
+    ],
+>>>>>>> f548be94 (.)
 ];

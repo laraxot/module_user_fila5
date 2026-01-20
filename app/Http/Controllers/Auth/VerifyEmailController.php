@@ -4,11 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Controllers\Auth;
 
+<<<<<<< HEAD
+=======
+use InvalidArgumentException;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+>>>>>>> f548be94 (.)
 use App\Http\Controllers\Controller;
 use Filament\Facades\Filament;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\Events\Verified;
+<<<<<<< HEAD
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+=======
+>>>>>>> f548be94 (.)
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
@@ -21,14 +29,23 @@ class VerifyEmailController extends Controller
     public function __invoke(EmailVerificationRequest $request): RedirectResponse
     {
         $user = Auth::user();
+<<<<<<< HEAD
         if (null === $user) {
+=======
+        if ($user === null) {
+>>>>>>> f548be94 (.)
             return redirect()->route('filament.user.auth.login');
         }
 
         // Ottieni il valore hash in modo sicuro
         $routeHash = $request->route('hash');
+<<<<<<< HEAD
         if (null === $routeHash) {
             throw new \InvalidArgumentException('Hash di verifica mancante');
+=======
+        if ($routeHash === null) {
+            throw new InvalidArgumentException('Hash di verifica mancante');
+>>>>>>> f548be94 (.)
         }
 
         $stringRouteHash = is_string($routeHash) ? $routeHash : '';
@@ -38,7 +55,11 @@ class VerifyEmailController extends Controller
             ? $user->getEmailForVerification()
             : ($user->email ?? '');
 
+<<<<<<< HEAD
         if (! hash_equals(sha1($userEmail), $stringRouteHash)) {
+=======
+        if (!hash_equals(sha1($userEmail), $stringRouteHash)) {
+>>>>>>> f548be94 (.)
             throw new AuthorizationException();
         }
 
@@ -53,12 +74,21 @@ class VerifyEmailController extends Controller
         }
 
         // Verificare che l'utente implementi l'interfaccia MustVerifyEmail
+<<<<<<< HEAD
         if (! $user instanceof MustVerifyEmail) {
             throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia MustVerifyEmail');
+=======
+        if (!($user instanceof MustVerifyEmail)) {
+            throw new InvalidArgumentException('L\'utente deve implementare l\'interfaccia MustVerifyEmail');
+>>>>>>> f548be94 (.)
         }
 
         event(new Verified($user));
 
+<<<<<<< HEAD
         return redirect()->intended(route('dashboard', absolute: false).'?verified=1');
+=======
+        return redirect()->intended(route('dashboard', absolute: false) . '?verified=1');
+>>>>>>> f548be94 (.)
     }
 }

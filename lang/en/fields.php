@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'new_password' => [
         'label' => 'New Password',
@@ -23,6 +27,7 @@ return [
     'actions' => [
         'attach_user' => 'Attacca utente',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -34,4 +39,6 @@ return [
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

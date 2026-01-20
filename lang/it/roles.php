@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+<<<<<<< HEAD
         'id' => ['label' => 'id', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'name' => ['label' => 'name', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'team_id' => ['label' => 'team_id', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -27,5 +28,16 @@ return [
         'create' => ['label' => 'Crea Roles', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Roles'],
         'delete' => ['label' => 'Elimina Roles'],
+=======
+        'id' => [
+            'label' => 'id',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'team_id' => [
+            'label' => 'team_id',
+        ],
+>>>>>>> f548be94 (.)
     ],
 ];

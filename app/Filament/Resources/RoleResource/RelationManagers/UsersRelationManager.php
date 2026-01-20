@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\RoleResource\RelationManagers;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables;
@@ -13,6 +14,23 @@ use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\Filter;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+=======
+use Filament\Tables\Columns\Layout\Component;
+use Filament\Tables\Filters\BaseFilter;
+use Override;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\DatePicker;
+use Filament\Forms;
+use Filament\Schemas\Schema;
+use Filament\Tables;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\Filter;
+use Illuminate\Database\Eloquent\Builder;
+use Modules\UI\Enums\TableLayoutEnum;
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+use Modules\Xot\Filament\Traits\HasXotTable;
+use Modules\Xot\Filament\Traits\TransTrait;
+>>>>>>> f548be94 (.)
 
 /**
  * UsersRelationManager.
@@ -24,14 +42,22 @@ final class UsersRelationManager extends XotBaseRelationManager
 {
     protected static string $relationship = 'users';
 
+<<<<<<< HEAD
     protected static ?string $inverseRelationship = 'roles';
+=======
+    protected static null|string $inverseRelationship = 'roles';
+>>>>>>> f548be94 (.)
 
     /**
      * Returns the form schema structure, defining the input fields for user data.
      *
      * @return array<\Filament\Schemas\Components\Component>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public function getFormSchema(): array
     {
         return [
@@ -45,6 +71,7 @@ final class UsersRelationManager extends XotBaseRelationManager
      *
      * @return array<Tables\Columns\Column|Component>
      */
+<<<<<<< HEAD
     #[\Override]
     public function getTableColumns(): array
     {
@@ -62,6 +89,25 @@ final class UsersRelationManager extends XotBaseRelationManager
                 ->sortable()
                 ->toggleable(),
             'updated_at' => TextColumn::make('updated_at')
+=======
+    #[Override]
+    public function getTableColumns(): array
+    {
+        return [
+            TextColumn::make('name')
+                ->searchable()
+                ->sortable()
+                ->copyable(),
+            TextColumn::make('email')
+                ->searchable()
+                ->sortable()
+                ->copyable(),
+            TextColumn::make('created_at')
+                ->dateTime()
+                ->sortable()
+                ->toggleable(),
+            TextColumn::make('updated_at')
+>>>>>>> f548be94 (.)
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
@@ -73,16 +119,25 @@ final class UsersRelationManager extends XotBaseRelationManager
      *
      * @return array<BaseFilter>
      */
+<<<<<<< HEAD
     #[\Override]
     public function getTableFilters(): array
     {
         return [
             Filter::make('active')->query(fn (Builder $query): Builder => $query->where('is_active', true))->toggle(),
+=======
+    #[Override]
+    public function getTableFilters(): array
+    {
+        return [
+            Filter::make('active')->query(fn(Builder $query): Builder => $query->where('is_active', true))->toggle(),
+>>>>>>> f548be94 (.)
             Filter::make('created_at')
                 ->schema([
                     DatePicker::make('created_from'),
                     DatePicker::make('created_until'),
                 ])
+<<<<<<< HEAD
                 ->query(function (Builder $query, array $data): Builder {
                     if (isset($data['created_from']) && is_string($data['created_from']) && '' !== $data['created_from']) {
                         $query->whereDate('created_at', '>=', $data['created_from']);
@@ -94,6 +149,15 @@ final class UsersRelationManager extends XotBaseRelationManager
 
                     return $query;
                 })
+=======
+                ->query(fn(Builder $query, array $data): Builder => $query->when($data['created_from'], fn(
+                    Builder $query,
+                    $date,
+                ) => $query->whereDate('created_at', '>=', $date))->when($data['created_until'], fn(
+                    Builder $query,
+                    $date,
+                ) => $query->whereDate('created_at', '<=', $date)))
+>>>>>>> f548be94 (.)
                 ->columns(2),
         ];
     }

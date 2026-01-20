@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Best Practices per i Componenti di Autenticazione"
 type: concept
@@ -24,6 +25,14 @@ related:
 - [README modulo User](./readme.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
+=======
+# Best Practices per i Componenti di Autenticazione 
+
+## Collegamenti correlati
+- [README modulo User](./README.md)
+- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
+>>>>>>> f548be94 (.)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -169,7 +178,11 @@ Prima di utilizzare una chiave di traduzione, assicurarsi che i file di traduzio
 - `/laravel/Modules/Lang/lang/it/auth.php`
 - `/laravel/Modules/Lang/lang/en/auth.php`
 
+<<<<<<< HEAD
 ## Componenti di Autenticazione
+=======
+## Componenti di Autenticazione 
+>>>>>>> f548be94 (.)
 
 ### 1. Pagine di Autenticazione
 
@@ -203,6 +216,7 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 
 1. Che tutte le chiavi di traduzione siano definite in tutti i file di lingua supportati
 2. Che i componenti funzionino correttamente con la localizzazione delle URL
+<<<<<<< HEAD
 3. Che i componenti rispettino le best practices di <nome progetto> per le chiavi di traduzione
 
 ## Riferimenti
@@ -397,6 +411,9 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 1. Che tutte le chiavi di traduzione siano definite in tutti i file di lingua supportati
 2. Che i componenti funzionino correttamente con la localizzazione delle URL
 3. Che i componenti rispettino le best practices di <nome progetto> per le chiavi di traduzione
+=======
+3. Che i componenti rispettino le best practices di SaluteOra per le chiavi di traduzione
+>>>>>>> f548be94 (.)
 
 ## Riferimenti
 

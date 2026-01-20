@@ -6,12 +6,20 @@ return [
     'navigation' => [
         'name' => 'Token',
         'plural' => 'Tokens',
+<<<<<<< HEAD
         'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione dei token di accesso'],
+=======
+        'group' => [
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione dei token di accesso',
+        ],
+>>>>>>> f548be94 (.)
         'label' => 'token',
         'sort' => 29,
         'icon' => 'user-user-token',
     ],
     'fields' => [
+<<<<<<< HEAD
         'name' => ['label' => 'name', 'tooltip' => '', 'helper_text' => '', 'description' => '', 'placeholder' => 'name'],
         'create' => ['label' => 'create', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'edit' => ['label' => 'edit', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -35,4 +43,25 @@ return [
     ],
     'label' => 'Token',
     'plural_label' => 'Token (Plurale)',
+=======
+        'name' => [
+            'label' => 'name',
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+    ],
+>>>>>>> f548be94 (.)
 ];

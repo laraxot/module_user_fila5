@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+<<<<<<< HEAD
         'provider' => ['label' => 'provider', 'tooltip' => '', 'helper_text' => '', 'description' => '', 'placeholder' => 'provider'],
         'provider_id' => ['label' => 'provider_id', 'tooltip' => '', 'helper_text' => '', 'description' => '', 'placeholder' => 'provider_id'],
         'name' => ['label' => 'name', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -42,5 +43,43 @@ return [
         'Contact Information' => ['label' => 'Contact Information', 'heading' => 'Contact Information'],
         'Tokens' => ['label' => 'Tokens', 'heading' => 'Tokens'],
         'Timestamps' => ['label' => 'Timestamps', 'heading' => 'Timestamps'],
+=======
+        'provider' => [
+            'label' => 'provider',
+        ],
+        'provider_id' => [
+            'label' => 'provider_id',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'email' => [
+            'label' => 'email',
+        ],
+        'avatar' => [
+            'label' => 'avatar',
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'attach' => [
+            'label' => 'attach',
+        ],
+        'layout' => [
+            'label' => 'layout',
+        ],
+        'view' => [
+            'label' => 'view',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'detach' => [
+            'label' => 'detach',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+>>>>>>> f548be94 (.)
     ],
 ];

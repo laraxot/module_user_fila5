@@ -64,6 +64,7 @@ return [
             'description' => 'Il valore inserito è troppo corto.',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Errors',
         'plural' => 'Errors',
@@ -108,4 +109,6 @@ return [
             'label' => 'Elimina Errors',
         ],
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

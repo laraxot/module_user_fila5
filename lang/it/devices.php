@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+<<<<<<< HEAD
         'login_at' => ['label' => 'login_at', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'logout_at' => ['label' => 'logout_at', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'id' => ['label' => 'id'],
@@ -37,5 +38,13 @@ return [
         'create' => ['label' => 'Crea Devices', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Devices'],
         'delete' => ['label' => 'Elimina Devices'],
+=======
+        'login_at' => [
+            'label' => 'login_at',
+        ],
+        'logout_at' => [
+            'label' => 'logout_at',
+        ],
+>>>>>>> f548be94 (.)
     ],
 ];

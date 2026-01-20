@@ -9,20 +9,27 @@ return [
             'placeholder' => 'email',
             'helper_text' => '',
             'description' => 'email',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'password' => [
             'label' => 'password',
             'placeholder' => 'password',
             'helper_text' => '',
             'description' => 'password',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'password_confirmation' => [
             'label' => 'password_confirmation',
             'placeholder' => 'password_confirmation',
             'helper_text' => '',
             'description' => 'password_confirmation',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -37,4 +44,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+    ],
+>>>>>>> f548be94 (.)
 ];

@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
     'fields' => [
         'authenticatable' => [
+<<<<<<< HEAD
             'name' => ['label' => 'authenticatable.name'],
             'label' => '',
             'tooltip' => '',
@@ -41,4 +42,59 @@ return [
     ],
     'label' => 'Recent Logins',
     'plural_label' => 'Recent Logins (Plurale)',
+=======
+            'name' => [
+                'label' => 'authenticatable.name',
+            ],
+        ],
+        'login_at' => [
+            'label' => 'login_at',
+        ],
+        'ip_address' => [
+            'label' => 'ip_address',
+        ],
+        'user_agent' => [
+            'label' => 'user_agent',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'user' => [
+            'label' => 'user',
+        ],
+    ],
+    'actions' => [
+        'reorderRecords' => [
+            'icon' => 'reorderRecords',
+            'label' => 'reorderRecords',
+        ],
+        'openColumnManager' => [
+            'icon' => 'openColumnManager',
+            'label' => 'openColumnManager',
+        ],
+        'applyTableColumnManager' => [
+            'icon' => 'applyTableColumnManager',
+            'label' => 'applyTableColumnManager',
+        ],
+        'resetFilters' => [
+            'icon' => 'resetFilters',
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'icon' => 'applyFilters',
+        ],
+    ],
+>>>>>>> f548be94 (.)
 ];

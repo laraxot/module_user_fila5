@@ -12,6 +12,7 @@ use Modules\Xot\Datas\XotData;
 
 require 'socialite.php';
 
+<<<<<<< HEAD
 try {
     if (class_exists(XotData::class)) {
         $xotData = XotData::make();
@@ -25,8 +26,18 @@ try {
     }
 } catch (Throwable $e) {
     Route::get('/login', static fn () => redirect('/admin/login'))->name('login');
+=======
+if (XotData::make()->register_pub_theme) {
+    // require 'web_tall.php';
+} else {
+    Route::get('/login', static fn() => redirect('/admin/login'))->name('login');
+>>>>>>> f548be94 (.)
 }
 
 Route::post('/logout', LogoutController::class)->name('logout');
 
+<<<<<<< HEAD
 // Route::get('/upgrade', 'UpgradeController');
+=======
+//Route::get('/upgrade', 'UpgradeController');
+>>>>>>> f548be94 (.)

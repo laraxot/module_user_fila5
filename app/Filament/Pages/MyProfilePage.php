@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Pages;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Filament\Forms\Components\TextInput;
@@ -17,10 +18,25 @@ use Filament\Schemas\Components\Section;
 use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
 use Filament\Schemas\Schema;
+=======
+use Filament\Schemas\Schema;
+use Filament\Schemas\Components\Section;
+use Filament\Forms\Components\TextInput;
+use Exception;
+use Filament\Actions\Action;
+use Filament\Facades\Filament;
+use Filament\Forms;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+use Filament\Notifications\Notification;
+use Filament\Pages\Auth\EditProfile;
+use Filament\Pages\Page;
+>>>>>>> f548be94 (.)
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
+<<<<<<< HEAD
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Filament\Pages\XotBasePage;
 
@@ -38,6 +54,26 @@ class MyProfilePage extends XotBasePage implements HasSchemas
 
     /** @var array<string, mixed>|null */
     public ?array $passwordData = [];
+=======
+use Illuminate\Validation\Rules\Password;
+use Modules\User\Datas\PasswordData;
+
+/**
+ * @property \Filament\Schemas\Schema $form
+ * @property \Filament\Schemas\Schema $editProfileForm
+ * @property \Filament\Schemas\Schema $editPasswordForm
+ */
+class MyProfilePage extends Page implements HasForms
+{
+    // class MyProfilePage extends EditProfile
+    use InteractsWithForms;
+
+    public null|array $profileData = [];
+
+    public null|array $passwordData = [];
+
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
+>>>>>>> f548be94 (.)
 
     protected string $view = 'user::filament.pages.my-profile';
 
@@ -48,6 +84,14 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     //     return filament('filament-breezy')->slug();
     // }
 
+<<<<<<< HEAD
+=======
+    public static function getNavigationLabel(): string
+    {
+        return __('user::profile.profile');
+    }
+
+>>>>>>> f548be94 (.)
     public function mount(): void
     {
         $this->fillForms();
@@ -80,6 +124,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
                     ->aside()
                     ->description('Ensure your account is using long, random password to stay secure.')
                     ->schema([
+<<<<<<< HEAD
                         TextInput::make('current_password')
                             ->password()
                             ->required()
@@ -92,6 +137,17 @@ class MyProfilePage extends XotBasePage implements HasSchemas
                             ->dehydrateStateUsing(fn (string $state): string => Hash::make($state))
                             ->live(debounce: 500),
                         // ->same('password_confirmation')
+=======
+                        TextInput::make('Current password')
+                            ->password()
+                            ->required()
+                            ->currentPassword(),
+                        PasswordData::make()
+                            ->getPasswordFormComponent('new_password')
+                            ->dehydrateStateUsing(fn (string $value): string => Hash::make($value))
+                            ->live(debounce: 500),
+                        // ->same('passwordConfirmation')
+>>>>>>> f548be94 (.)
                         /*
                          * Forms\Components\TextInput::make('password')
                          * ->password()
@@ -100,9 +156,15 @@ class MyProfilePage extends XotBasePage implements HasSchemas
                          * ->autocomplete('new-password')
                          * ->dehydrateStateUsing(fn ($state): string => Hash::make($state))
                          * ->live(debounce: 500)
+<<<<<<< HEAD
                          * ->same('password_confirmation'),
                          */
                         TextInput::make('password_confirmation')
+=======
+                         * ->same('passwordConfirmation'),
+                         */
+                        TextInput::make('passwordConfirmation')
+>>>>>>> f548be94 (.)
                             ->password()
                             ->required()
                             ->dehydrated(false)
@@ -117,8 +179,15 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     {
         $user = Filament::auth()->user();
 
+<<<<<<< HEAD
         if (! $user instanceof Model) {
             throw new \Exception('The authenticated user object must be an Eloquent model to allow the profile page to update it.');
+=======
+        if (!($user instanceof Model)) {
+            throw new Exception(
+                'The authenticated user object must be an Eloquent model to allow the profile page to update it.',
+            );
+>>>>>>> f548be94 (.)
         }
 
         return $user;
@@ -134,9 +203,15 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         return __('user::profile.my_profile');
     }
 
+<<<<<<< HEAD
     public function getSubheading(): ?string
     {
         return __('user::profile.subheading');
+=======
+    public function getSubheading(): null|string
+    {
+        return __('user::profile.subheading') ?? null;
+>>>>>>> f548be94 (.)
     }
 
     // public static function shouldRegisterNavigation(): bool
@@ -183,6 +258,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         try {
             $data = $this->editPasswordForm->getState();
 
+<<<<<<< HEAD
             if (isset($data['new_password'])) {
                 $data['password'] = $data['new_password'];
                 unset($data['new_password']);
@@ -192,6 +268,8 @@ class MyProfilePage extends XotBasePage implements HasSchemas
                 unset($data['password_confirmation']);
             }
 
+=======
+>>>>>>> f548be94 (.)
             $this->handleRecordUpdate($this->getUser(), $data);
         } catch (Halt $exception) {
             return;
@@ -201,7 +279,11 @@ class MyProfilePage extends XotBasePage implements HasSchemas
             request()
                 ->session()
                 ->put([
+<<<<<<< HEAD
                     'password_hash_'.Filament::getAuthGuard() => $data['password'],
+=======
+                    'password_hash_' . Filament::getAuthGuard() => $data['password'],
+>>>>>>> f548be94 (.)
                 ]);
         }
 
@@ -220,7 +302,10 @@ class MyProfilePage extends XotBasePage implements HasSchemas
 
     protected function fillForms(): void
     {
+<<<<<<< HEAD
         /** @var array<string, mixed> $data */
+=======
+>>>>>>> f548be94 (.)
         $data = $this->getUser()->attributesToArray();
 
         $this->editProfileForm->fill($data);
@@ -248,9 +333,12 @@ class MyProfilePage extends XotBasePage implements HasSchemas
      * }
      */
 
+<<<<<<< HEAD
     /**
      * @return array<Action>
      */
+=======
+>>>>>>> f548be94 (.)
     protected function getUpdateProfileFormActions(): array
     {
         return [
@@ -258,9 +346,12 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         ];
     }
 
+<<<<<<< HEAD
     /**
      * @return array<Action>
      */
+=======
+>>>>>>> f548be94 (.)
     protected function getUpdatePasswordFormActions(): array
     {
         return [
@@ -270,9 +361,12 @@ class MyProfilePage extends XotBasePage implements HasSchemas
 
     // ...
 
+<<<<<<< HEAD
     /**
      * @param array<string, mixed> $data
      */
+=======
+>>>>>>> f548be94 (.)
     protected function handleRecordUpdate(Model $record, array $data): Model
     {
         $record->update($data);

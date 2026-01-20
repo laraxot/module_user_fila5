@@ -4,22 +4,39 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
+=======
+use Override;
+use Illuminate\Support\Carbon;
+use Modules\User\Database\Factories\TeamFactory;
+use Illuminate\Database\Eloquent\Builder;
+use Modules\Xot\Contracts\ProfileContract;
+>>>>>>> f548be94 (.)
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+=======
+use Illuminate\Support\Collection;
+use Modules\User\Contracts\TeamContract;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+use Modules\Xot\Models\Traits\HasExtraTrait;
+>>>>>>> f548be94 (.)
 
 /**
  * Modules\User\Models\Team.
  *
+<<<<<<< HEAD
  * @property int                                         $id
  * @property int                                         $user_id
  * @property string                                      $name
@@ -34,6 +51,23 @@ use Modules\Xot\Datas\XotData;
  * @property EloquentCollection<int, Model&UserContract> $users
  * @property int|null                                    $users_count
  *
+=======
+ * @property int $id
+ * @property int $user_id
+ * @property string $name
+ * @property int $personal_team
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property EloquentCollection<int, Model&UserContract> $members
+ * @property int|null $members_count
+ * @property UserContract|null $owner
+ * @property EloquentCollection<int, TeamInvitation> $teamInvitations
+ * @property int|null $team_invitations_count
+ * @property EloquentCollection<int, Model&UserContract> $users
+ * @property int|null $users_count
+ *
+ * @method static TeamFactory factory($count = null, $state = [])
+>>>>>>> f548be94 (.)
  * @method static Builder|Team newModelQuery()
  * @method static Builder|Team newQuery()
  * @method static Builder|Team query()
@@ -54,10 +88,17 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|Team whereDeletedBy($value)
  * @method static Builder|Team whereUpdatedBy($value)
  *
+<<<<<<< HEAD
  * @property Membership           $membership
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @property string               $uuid
+=======
+ * @property Membership $membership
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @property string $uuid
+>>>>>>> f548be94 (.)
  *
  * @method static Builder|Team whereUuid($value)
  *
@@ -82,23 +123,34 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     ];
 
     /**
+<<<<<<< HEAD
      * @return BelongsTo<Model&UserContract, Model>
      */
     #[\Override]
+=======
+     * Get the owner of the team.
+     */
+    #[Override]
+>>>>>>> f548be94 (.)
     public function owner(): BelongsTo
     {
         $xotData = XotData::make();
         /** @var class-string<Model> */
         $user_class = $xotData->getUserClass();
 
+<<<<<<< HEAD
         /** @var BelongsTo<Model&UserContract, Model> $relation */
         $relation = $this->belongsTo($user_class, 'user_id');
 
         return $relation;
+=======
+        return $this->belongsTo($user_class, 'user_id');
+>>>>>>> f548be94 (.)
     }
 
     /**
      * Get all of the team's users including its owner.
+<<<<<<< HEAD
      *
      * @return Collection<int, Model&UserContract>
      */
@@ -106,6 +158,13 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     public function allUsers(): Collection
     {
         if (! $this->owner instanceof User) {
+=======
+     */
+    #[Override]
+    public function allUsers(): Collection
+    {
+        if (!($this->owner instanceof User)) {
+>>>>>>> f548be94 (.)
             return $this->users;
         }
 
@@ -113,15 +172,22 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     }
 
     /**
+<<<<<<< HEAD
      * @return BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'>
      */
     #[\Override]
+=======
+     * Get all of the users that belong to the team.
+     */
+    #[Override]
+>>>>>>> f548be94 (.)
     public function users(): BelongsToMany
     {
         $xotData = XotData::make();
         /** @var class-string<Model> */
         $userClass = $xotData->getUserClass();
 
+<<<<<<< HEAD
         /** @var BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'> $relation */
         $relation = $this->belongsToManyX($userClass)
             ->using(TeamUser::class)
@@ -144,6 +210,17 @@ abstract class BaseTeam extends BaseModel implements TeamContract
      * @return BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'>
      */
     #[\Override]
+=======
+        return $this->belongsToManyX($userClass);
+    }
+
+    /**
+     * Ottiene tutti i membri del team (alias di users).
+     *
+     * @return BelongsToMany<Model, \Modules\User\Models\BaseTeam>
+     */
+    #[Override]
+>>>>>>> f548be94 (.)
     public function members(): BelongsToMany
     {
         return $this->users();
@@ -153,10 +230,16 @@ abstract class BaseTeam extends BaseModel implements TeamContract
      * Determina se l'utente specificato appartiene al team.
      *
      * @param UserContract $user L'utente da verificare
+<<<<<<< HEAD
      *
      * @return bool True se l'utente appartiene al team, false altrimenti
      */
     #[\Override]
+=======
+     * @return bool True se l'utente appartiene al team, false altrimenti
+     */
+    #[Override]
+>>>>>>> f548be94 (.)
     public function hasUser(UserContract $user): bool
     {
         // Corretto l'errore di tipo per il metodo contains
@@ -172,6 +255,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
      * Determina se l'indirizzo email specificato appartiene a un utente del team.
      *
      * @param string $email Indirizzo email da verificare
+<<<<<<< HEAD
      *
      * @return bool True se un utente con quell'email appartiene al team, false altrimenti
      */
@@ -181,23 +265,39 @@ abstract class BaseTeam extends BaseModel implements TeamContract
         return $this->allUsers()->contains(static function (Model&UserContract $user) use ($email): bool {
             return ($user->email ?? null) === $email;
         });
+=======
+     * @return bool True se un utente con quell'email appartiene al team, false altrimenti
+     */
+    #[Override]
+    public function hasUserWithEmail(string $email): bool
+    {
+        return $this->allUsers()->contains(static fn($user): bool => $user->email === $email);
+>>>>>>> f548be94 (.)
     }
 
     /**
      * Determina se l'utente specificato ha il permesso indicato sul team.
      *
      * @param UserContract $userContract L'utente da verificare
+<<<<<<< HEAD
      * @param string       $permission   Il permesso da controllare
      *
      * @return bool True se l'utente ha il permesso, false altrimenti
      */
     #[\Override]
+=======
+     * @param string $permission Il permesso da controllare
+     * @return bool True se l'utente ha il permesso, false altrimenti
+     */
+    #[Override]
+>>>>>>> f548be94 (.)
     public function userHasPermission(UserContract $userContract, string $permission): bool
     {
         return $userContract->hasTeamPermission($this, $permission);
     }
 
     /**
+<<<<<<< HEAD
      * @return HasMany<TeamInvitation, Model>
      */
     #[\Override]
@@ -207,14 +307,31 @@ abstract class BaseTeam extends BaseModel implements TeamContract
         $relation = $this->hasMany(TeamInvitation::class);
 
         return $relation;
+=======
+     * Ottiene tutti gli inviti utente pendenti per il team.
+     *
+     * @return HasMany<TeamInvitation, \Modules\User\Models\BaseTeam>
+     * @phpstan-return HasMany<TeamInvitation, $this>
+     */
+    #[Override]
+    public function teamInvitations(): HasMany
+    {
+        return $this->hasMany(TeamInvitation::class);
+>>>>>>> f548be94 (.)
     }
 
     /**
      * Rimuove l'utente specificato dal team.
      *
      * @param UserContract $userContract L'utente da rimuovere dal team
+<<<<<<< HEAD
      */
     #[\Override]
+=======
+     * @return void
+     */
+    #[Override]
+>>>>>>> f548be94 (.)
     public function removeUser(UserContract $userContract): void
     {
         if ($userContract->current_team_id === $this->id) {
@@ -228,8 +345,15 @@ abstract class BaseTeam extends BaseModel implements TeamContract
 
     /**
      * Rimuove tutte le risorse del team.
+<<<<<<< HEAD
      */
     #[\Override]
+=======
+     *
+     * @return void
+     */
+    #[Override]
+>>>>>>> f548be94 (.)
     public function purge(): void
     {
         $this->owner()->where('current_team_id', $this->id)->update(['current_team_id' => null]);
@@ -240,6 +364,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
 
         $this->delete();
     }
+<<<<<<< HEAD
 
     /**
      * Get the attributes that should be cast.
@@ -257,4 +382,6 @@ abstract class BaseTeam extends BaseModel implements TeamContract
             'deleted_at' => 'datetime',
         ];
     }
+=======
+>>>>>>> f548be94 (.)
 }

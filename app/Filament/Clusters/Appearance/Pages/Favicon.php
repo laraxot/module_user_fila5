@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Appearance\Pages;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\FileUpload;
@@ -13,10 +14,25 @@ use Filament\Support\Exceptions\Halt;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Clusters\Appearance;
 use Modules\Xot\Filament\Pages\XotBasePage;
+=======
+use Filament\Schemas\Schema;
+use Filament\Actions\Action;
+use Filament\Forms;
+use Filament\Forms\Components\ColorPicker;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+use Filament\Pages\Page;
+use Filament\Support\Exceptions\Halt;
+use Illuminate\Database\Eloquent\Model;
+use Modules\User\Filament\Clusters\Appearance;
+>>>>>>> f548be94 (.)
 
 /**
  * @property Schema $form
  */
+<<<<<<< HEAD
 class Favicon extends XotBasePage
 {
     protected string $view = 'user::filament.clusters.appearance.pages.favicon';
@@ -24,6 +40,21 @@ class Favicon extends XotBasePage
     protected static ?string $cluster = Appearance::class;
 
     protected static ?int $navigationSort = 5;
+=======
+class Favicon extends Page implements HasForms
+{
+    use InteractsWithForms;
+
+    public null|array $data = [];
+
+    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-document-text';
+
+    protected string $view = 'user::filament.clusters.appearance.pages.favicon';
+
+    protected static null|string $cluster = Appearance::class;
+
+    protected static null|int $navigationSort = 5;
+>>>>>>> f548be94 (.)
 
     public function mount(): void
     {
@@ -37,7 +68,11 @@ class Favicon extends XotBasePage
     //    ];
     // }
 
+<<<<<<< HEAD
     public function schema(Schema $schema): Schema
+=======
+    public function form(Schema $schema): Schema
+>>>>>>> f548be94 (.)
     {
         return $schema
             ->components([
@@ -80,9 +115,12 @@ class Favicon extends XotBasePage
         $this->form->fill($data);
     }
 
+<<<<<<< HEAD
     /**
      * @return array<Action>
      */
+=======
+>>>>>>> f548be94 (.)
     protected function getUpdateFormActions(): array
     {
         return [

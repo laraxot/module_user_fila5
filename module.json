@@ -6,6 +6,7 @@
     "priority": 0,
     "providers": [
         "Modules\\User\\Providers\\UserServiceProvider",
+<<<<<<< HEAD
         "Modules\\User\\Providers\\Filament\\AdminPanelProvider",
         "Modules\\User\\Providers\\PassportServiceProvider",
         "Modules\\User\\Providers\\SocialiteServiceProvider"
@@ -13,6 +14,13 @@
     "migration": {
         "seeds": [
             "Modules\\User\\Database\\Seeders\\RoleSeeder"
+=======
+        "Modules\\User\\Providers\\Filament\\AdminPanelProvider"
+    ],
+    "migration": {
+        "seeds": [
+            "Modules\\User\\Database\\Seeders\\RolesSeeder"
+>>>>>>> f548be94 (.)
         ]
     },
     "files": []

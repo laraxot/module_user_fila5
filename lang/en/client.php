@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'navigation' => [
         'name' => 'Client',
@@ -16,6 +20,7 @@ return [
     ],
     'fields' => [
         'name' => [
+<<<<<<< HEAD
             'label' => 'Name',
             'tooltip' => '',
             'helper_text' => '',
@@ -77,6 +82,33 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+            'label' => 'name',
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+>>>>>>> f548be94 (.)
         ],
     ],
     'plural' => [
@@ -84,8 +116,11 @@ return [
             'label' => 'client.plural.model',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

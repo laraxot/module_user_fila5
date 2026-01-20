@@ -4,9 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
+=======
+use Override;
+use Illuminate\Database\Eloquent\Builder;
+use Modules\Xot\Contracts\ProfileContract;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Carbon;
+>>>>>>> f548be94 (.)
 
 /**
  * Modules\User\Models\TenantUser.
@@ -14,7 +22,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|TeamUser newModelQuery()
  * @method static Builder|TeamUser newQuery()
  * @method static Builder|TeamUser query()
+<<<<<<< HEAD
  * @property int         $id
+=======
+ * @property int $id
+>>>>>>> f548be94 (.)
  * @property string|null $tenant_id
  * @property string|null $user_id
  * @property Carbon|null $created_at
@@ -37,13 +49,23 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|TenantUser whereDeletedBy($value)
  * @method static Builder|TenantUser whereTenantId($value)
  * @property ProfileContract|null $creator
+<<<<<<< HEAD
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  * @method static \Modules\User\Database\Factories\TenantUserFactory factory($count = null, $state = [])
+=======
+ * @property ProfileContract|null $updater
+ * @mixin IdeHelperTenantUser
+>>>>>>> f548be94 (.)
  * @mixin \Eloquent
  */
 class TenantUser extends BasePivot
 {
+<<<<<<< HEAD
+=======
+    use HasFactory;
+
+>>>>>>> f548be94 (.)
     protected $connection = 'user';
 
     // public $incrementing = false;
@@ -59,7 +81,11 @@ class TenantUser extends BasePivot
     ];
 
     /** @return array<string, string> */
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     protected function casts(): array
     {
         return [

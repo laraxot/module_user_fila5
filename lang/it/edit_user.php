@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+>>>>>>> f548be94 (.)
 return [
     'actions' => [
         'delete' => [
@@ -28,6 +31,7 @@ return [
     'fields' => [
         'password' => [
             'label' => 'password',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -58,4 +62,14 @@ return [
     ],
     'label' => 'Edit User',
     'plural_label' => 'Edit User (Plurale)',
+=======
+        ],
+        'email' => [
+            'label' => 'email',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+    ],
+>>>>>>> f548be94 (.)
 ];

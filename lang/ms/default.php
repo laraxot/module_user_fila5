@@ -126,6 +126,7 @@ return [
         'tooltip' => 'Disalin!',
     ],
     'fields' => [
+<<<<<<< HEAD
         'email' => [
             'label' => 'E-mel',
             'tooltip' => '',
@@ -218,4 +219,22 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        'email' => 'E-mel',
+        'login' => 'Log masuk',
+        'name' => 'Nama',
+        'password' => 'Kata laluan',
+        'password_confirm' => 'Pengesahan kata laluan',
+        'new_password' => 'Kata laluan baharu',
+        'new_password_confirmation' => 'Sahkan kata laluan',
+        'token_name' => 'Nama token',
+        'abilities' => 'Kebolehan',
+        '2fa_code' => 'Kod',
+        '2fa_recovery_code' => 'Kod Pemulihan',
+        'created' => 'Dicipta',
+        'expires' => 'Tamat tempoh',
+    ],
+    'or' => 'Atau',
+    'cancel' => 'Batal',
+>>>>>>> f548be94 (.)
 ];

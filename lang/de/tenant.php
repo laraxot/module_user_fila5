@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'navigation' => [
         'name' => 'Tenant',
@@ -18,6 +22,7 @@ return [
         'heading' => 'Tenant',
     ],
     'fields' => [
+<<<<<<< HEAD
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -71,6 +76,30 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+        'secondary_color' => [
+            'label' => 'secondary_color',
+        ],
+        'slug' => [
+            'label' => 'slug',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'id' => [
+            'label' => 'id',
+        ],
+        'message' => [
+            'label' => 'message',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+>>>>>>> f548be94 (.)
         ],
     ],
     'actions' => [
@@ -88,6 +117,9 @@ return [
         ],
         'change_password' => 'Cambio password',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> f548be94 (.)
 ];

@@ -4,13 +4,26 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\BaseProfileResource\Pages;
 
+<<<<<<< HEAD
+=======
+use Filament\Tables\Filters\BaseFilter;
+use Override;
+use Exception;
+use Modules\Xot\Contracts\UserContract;
+>>>>>>> f548be94 (.)
 use Filament\Tables;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Illuminate\Database\Eloquent\Builder;
+=======
+use Filament\Tables\Filters\TernaryFilter;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Arr;
+>>>>>>> f548be94 (.)
 use Modules\User\Filament\Resources\BaseProfileResource;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -25,7 +38,11 @@ class ListProfiles extends XotBaseListRecords
     /**
      * @return array<string, Tables\Columns\Column>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public function getTableColumns(): array
     {
         return [
@@ -33,6 +50,7 @@ class ListProfiles extends XotBaseListRecords
                 ->sortable()
                 ->searchable()
                 ->default(function ($record) {
+<<<<<<< HEAD
                     if (! is_object($record)) {
                         return '--';
                     }
@@ -75,6 +93,30 @@ class ListProfiles extends XotBaseListRecords
                     $userName = $userValue->name ?? '--';
 
                     return is_string($userName) ? $userName : '--';
+=======
+                    $user = $record->user;
+                    $user_class = XotData::make()->getUserClass();
+                    if ($user === null) {
+                        if ($record->email === null) {
+                            $record->update(['email' => fake()->email()]);
+                        }
+                        try {
+                            /** @var UserContract */
+                            $user = XotData::make()->getUserByEmail($record->email);
+                        } catch (Exception $e) {
+                            return '--';
+                        }
+                    }
+                    if ($user === null) {
+                        $data = $record->toArray();
+                        $user_data = Arr::except($data, ['id']);
+                        /** @var UserContract */
+                        $user = $user_class::create($user_data);
+                    }
+                    $record->update(['user_id' => $user->id]);
+
+                    return $user->name;
+>>>>>>> f548be94 (.)
                 }),
             'first_name' => TextColumn::make('first_name')->sortable()->searchable(),
             'last_name' => TextColumn::make('last_name')->sortable()->searchable(),
@@ -87,7 +129,11 @@ class ListProfiles extends XotBaseListRecords
     /**
      * @return array<string, BaseFilter>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public function getTableFilters(): array
     {
         return [
@@ -96,8 +142,13 @@ class ListProfiles extends XotBaseListRecords
                 ->trueLabel(static::trans('filters.is_active.active'))
                 ->falseLabel(static::trans('filters.is_active.inactive'))
                 ->queries(
+<<<<<<< HEAD
                     true: static fn (Builder $query) => $query->where('is_active', '=', true),
                     false: static fn (Builder $query) => $query->where('is_active', '=', false),
+=======
+                    true: static fn(Builder $query) => $query->where('is_active', '=', true),
+                    false: static fn(Builder $query) => $query->where('is_active', '=', false),
+>>>>>>> f548be94 (.)
                 ),
         ];
     }

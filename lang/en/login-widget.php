@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'name' => 'Login',
     'fields' => [
@@ -9,21 +13,30 @@ return [
             'label' => 'Email',
             'placeholder' => 'Enter your email',
             'helper_text' => 'Email address to login',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Enter your password',
             'helper_text' => 'Login password',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'remember' => [
             'label' => 'Remember me',
             'helper_text' => 'Keep session active',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
     ],
     'actions' => [
@@ -50,6 +63,7 @@ return [
             'too_many_attempts' => 'Too many attempts, please try again later',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -59,4 +73,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> f548be94 (.)
 ];

@@ -7,6 +7,7 @@ namespace Modules\User\Filament\Widgets;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\AuthenticationLog;
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
@@ -14,19 +15,51 @@ use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 final class RecentLoginsWidget extends XotBaseTableWidget
 {
     protected static ?string $heading = 'Recent Logins'; // Rendi static la proprietà
+=======
+use Filament\Tables;
+use Filament\Widgets\TableWidget as BaseWidget;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\Relation;
+use Modules\User\Models\AuthenticationLog;
+
+class RecentLoginsWidget extends BaseWidget
+{
+    protected static null|string $heading = 'Recent Logins'; // Rendi static la proprietà
+>>>>>>> f548be94 (.)
 
     protected int|string|array $columnSpan = 'full';
 
     /**
+<<<<<<< HEAD
+=======
+     * Define the query to fetch recent logins.
+     */
+    protected function getTableQuery(): Builder|Relation|null
+    {
+        return AuthenticationLog::query()
+            ->where('login_successful', true)
+            ->orderBy('login_at', 'desc')
+            ->limit(10); // Mostra gli ultimi 10 logins
+    }
+
+    /**
+>>>>>>> f548be94 (.)
      * Define the columns to display in the table.
      */
     public function getTableColumns(): array
     {
         return [
+<<<<<<< HEAD
             'user' => TextColumn::make('user'),
             'login_at' => TextColumn::make('login_at'),
             'ip_address' => TextColumn::make('ip_address'),
             'user_agent' => TextColumn::make('user_agent'),
+=======
+            TextColumn::make('user'),
+            TextColumn::make('login_at'),
+            TextColumn::make('ip_address'),
+            TextColumn::make('user_agent'),
+>>>>>>> f548be94 (.)
         ];
     }
 
@@ -39,6 +72,7 @@ final class RecentLoginsWidget extends XotBaseTableWidget
     {
         return [];
     }
+<<<<<<< HEAD
 
     /**
      * Define the query to fetch recent logins.
@@ -52,4 +86,6 @@ final class RecentLoginsWidget extends XotBaseTableWidget
             ->orderBy('login_at', 'desc')
             ->limit(10);
     }
+=======
+>>>>>>> f548be94 (.)
 }

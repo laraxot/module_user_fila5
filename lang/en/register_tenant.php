@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'navigation' => [
         'label' => 'Registrazione Studio',
@@ -32,9 +36,12 @@ return [
                 'min' => 'Il nome deve contenere almeno 3 caratteri',
                 'max' => 'Il nome non può superare i 100 caratteri',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'phone' => [
             'label' => 'Numero di Telefono Studio',
@@ -45,9 +52,12 @@ return [
                 'regex' => 'Inserisci un numero di telefono italiano valido',
                 'min' => 'Il numero deve contenere almeno 10 cifre',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'email' => [
             'label' => 'Email Ufficiale Studio',
@@ -59,9 +69,12 @@ return [
                 'unique' => 'Questo indirizzo email è già registrato per un altro studio',
                 'max' => 'L\'indirizzo email non può superare i 255 caratteri',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'address' => [
             'label' => 'Complete Practice Address',
@@ -76,7 +89,10 @@ return [
                 'min' => 'Address must contain at least 15 characters',
                 'max' => 'Address cannot exceed 300 characters',
             ],
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'director_name' => [
             'label' => 'Nome Direttore Sanitario',
@@ -87,9 +103,12 @@ return [
                 'min' => 'Il nome deve contenere almeno 5 caratteri',
                 'max' => 'Il nome non può superare i 100 caratteri',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'director_registration' => [
             'label' => 'Numero Iscrizione Albo Medico',
@@ -100,9 +119,12 @@ return [
                 'numeric' => 'Il numero di iscrizione deve contenere solo cifre',
                 'min' => 'Il numero di iscrizione deve contenere almeno 3 cifre',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'vat_number' => [
             'label' => 'Partita IVA Studio',
@@ -113,9 +135,12 @@ return [
                 'regex' => 'La partita IVA deve essere composta da esattamente 11 cifre',
                 'unique' => 'Questa partita IVA è già registrata per un altro studio',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'specialization' => [
             'label' => 'Specializzazioni Mediche',
@@ -137,9 +162,12 @@ return [
                 'ortopedia' => 'Ortopedia',
                 'altro' => 'Altra Specializzazione',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'website' => [
             'label' => 'Sito Web Studio',
@@ -148,9 +176,12 @@ return [
             'validation' => [
                 'url' => 'Inserisci un URL valido che inizi con http:// o https://',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'staff_count' => [
             'label' => 'Numero Operatori',
@@ -162,9 +193,12 @@ return [
                 'min' => 'Lo studio deve avere almeno 1 operatore',
                 'max' => 'Il numero massimo consentito è 100 operatori',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'privacy_acceptance' => [
             'label' => 'Consenso Trattamento Dati',
@@ -173,9 +207,12 @@ return [
             'validation' => [
                 'accepted' => 'You must accept the privacy policy to continue',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'terms_acceptance' => [
             'label' => 'Accettazione Termini di Servizio',
@@ -184,9 +221,12 @@ return [
             'validation' => [
                 'accepted' => 'You must accept the terms and conditions to continue',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
     ],
     'actions' => [
@@ -274,6 +314,9 @@ return [
         'contact_info' => 'I dati di contatto inseriti verranno utilizzati per tutte le comunicazioni ufficiali',
         'data_protection' => 'Tutti i dati sono protetti secondo le normative europee GDPR',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> f548be94 (.)
 ];

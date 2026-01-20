@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'navigation' => [
         'name' => 'Team',
@@ -15,6 +19,7 @@ return [
         'icon' => 'user-team',
     ],
     'fields' => [
+<<<<<<< HEAD
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -110,12 +115,58 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+        'detach' => [
+            'label' => 'detach',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'attach' => [
+            'label' => 'attach',
+        ],
+        'view' => [
+            'label' => 'view',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'updated_at' => [
+            'label' => 'updated_at',
+        ],
+        'created_at' => [
+            'label' => 'created_at',
+        ],
+        'users_count' => [
+            'label' => 'users_count',
+        ],
+        'name' => [
+            'label' => 'name',
+>>>>>>> f548be94 (.)
         ],
         'recordId' => [
             'label' => 'recordId',
             'description' => 'recordId',
             'helper_text' => 'recordId',
             'placeholder' => 'recordId',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
         'personal_team' => [
@@ -123,20 +174,31 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'personal_team' => [
+            'label' => 'personal_team',
+>>>>>>> f548be94 (.)
         ],
         'role' => [
             'label' => 'role',
             'description' => 'role',
             'helper_text' => 'role',
             'placeholder' => 'role',
+<<<<<<< HEAD
             'tooltip' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'description' => [
             'description' => 'description',
             'helper_text' => 'description',
             'placeholder' => 'description',
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
     ],
     'actions' => [
@@ -164,6 +226,9 @@ return [
     'model' => [
         'label' => 'team.model',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> f548be94 (.)
 ];

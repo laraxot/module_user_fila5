@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+<<<<<<< HEAD
         'name' => ['label' => 'name', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'id' => ['label' => 'id'],
         'user_id' => ['label' => 'user_id'],
@@ -29,5 +30,10 @@ return [
         'create' => ['label' => 'Crea Clients', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Clients'],
         'delete' => ['label' => 'Elimina Clients'],
+=======
+        'name' => [
+            'label' => 'name',
+        ],
+>>>>>>> f548be94 (.)
     ],
 ];

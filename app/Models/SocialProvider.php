@@ -8,11 +8,17 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
+=======
+use Override;
+use Modules\User\Database\Factories\SocialProviderFactory;
+>>>>>>> f548be94 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Tenant\Models\Traits\SushiToPhpArray;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
+<<<<<<< HEAD
  * @property int|null                  $id
  * @property string|null               $name
  * @property array<int, string>|null   $scopes
@@ -25,6 +31,21 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null               $client_secret
  * @property ProfileContract|null      $creator
  * @property ProfileContract|null      $updater
+=======
+ * @property int|null $id
+ * @property string|null $name
+ * @property array|null $scopes
+ * @property array|null $parameters
+ * @property bool|null $stateless
+ * @property bool|null $active
+ * @property bool|null $socialite
+ * @property string|null $svg
+ * @property string|null $client_id
+ * @property string|null $client_secret
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @method static SocialProviderFactory factory($count = null, $state = [])
+>>>>>>> f548be94 (.)
  * @method static Builder|SocialProvider newModelQuery()
  * @method static Builder|SocialProvider newQuery()
  * @method static Builder|SocialProvider query()
@@ -46,14 +67,22 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|SocialProvider whereCreatedBy($value)
  * @method static Builder|SocialProvider whereUpdatedAt($value)
  * @method static Builder|SocialProvider whereUpdatedBy($value)
+<<<<<<< HEAD
  * @property ProfileContract|null $deleter
  * @method static \Modules\User\Database\Factories\SocialProviderFactory factory($count = null, $state = [])
+=======
+ * @mixin IdeHelperSocialProvider
+>>>>>>> f548be94 (.)
  * @mixin \Eloquent
  */
 class SocialProvider extends BaseModel
 {
     use SushiToPhpArray;
 
+<<<<<<< HEAD
+=======
+    /** @var bool */
+>>>>>>> f548be94 (.)
     public $incrementing = false;
 
     /** @var list<string> */
@@ -70,11 +99,14 @@ class SocialProvider extends BaseModel
         // 'client_secret',// => env('FACEBOOK_CLIENT_SECRET'),
     ];
 
+<<<<<<< HEAD
     /**
      * Logical form definition for this Sushi-backed model.
      *
      * @var array<string, string>
      */
+=======
+>>>>>>> f548be94 (.)
     protected array $form = [
         'id' => 'integer',
         'name' => 'string',
@@ -90,6 +122,7 @@ class SocialProvider extends BaseModel
         'updated_by' => 'string',
     ];
 
+<<<<<<< HEAD
     /** @var array<string, string> */
     protected array $schema = [
         'id' => 'integer',
@@ -119,6 +152,15 @@ class SocialProvider extends BaseModel
 
     /** @return array<string, string> */
     #[\Override]
+=======
+    public function getRows(): array
+    {
+        return $this->getSushiRows();
+    }
+
+    /** @return array<string, string> */
+    #[Override]
+>>>>>>> f548be94 (.)
     protected function casts(): array
     {
         return [

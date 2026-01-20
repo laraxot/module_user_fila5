@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Livewire\Auth;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
@@ -20,6 +21,23 @@ use Modules\Xot\Actions\File\ViewCopyAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
+=======
+use Livewire\Component;
+use Filament\Schemas\Schema;
+use Webmozart\Assert\Assert;
+use Modules\Xot\Datas\XotData;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Auth\Events\Registered;
+use Modules\Xot\Contracts\UserContract;
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Contracts\HasSchemas;
+use Modules\Xot\Actions\File\ViewCopyAction;
+use Livewire\Features\SupportRedirects\Redirector;
+use Filament\Schemas\Concerns\InteractsWithSchemas;
+use Illuminate\Validation\Rules\Password as PasswordRule;
+>>>>>>> f548be94 (.)
 
 /**
  * @property Schema $form
@@ -31,9 +49,15 @@ class Register extends Component implements HasSchemas
     /**
      * Data array for form state.
      *
+<<<<<<< HEAD
      * @var array<string, string>
      */
     public $data = [];
+=======
+     * @var array<string, mixed>
+     */
+    public array $data = [];
+>>>>>>> f548be94 (.)
 
     /**
      * Mount the component.
@@ -52,19 +76,39 @@ class Register extends Component implements HasSchemas
             ->components([
                 TextInput::make('name')
                     ->required()
+<<<<<<< HEAD
+=======
+                    ->label(__('Name'))
+                    ->placeholder(__('Enter your name'))
+>>>>>>> f548be94 (.)
                     ->autofocus(),
                 TextInput::make('email')
                     ->email()
                     ->required()
+<<<<<<< HEAD
+=======
+                    ->label(__('Email'))
+                    ->placeholder(__('Enter your email'))
+>>>>>>> f548be94 (.)
                     ->unique('users', 'email'),
                 TextInput::make('password')
                     ->password()
                     ->required()
+<<<<<<< HEAD
+=======
+                    ->label(__('Password'))
+                    ->placeholder(__('Enter your password'))
+>>>>>>> f548be94 (.)
                     ->rules([PasswordRule::defaults()])
                     ->revealable(),
                 TextInput::make('password_confirmation')
                     ->password()
                     ->required()
+<<<<<<< HEAD
+=======
+                    ->label(__('Confirm Password'))
+                    ->placeholder(__('Confirm your password'))
+>>>>>>> f548be94 (.)
                     ->same('password')
                     ->revealable(),
             ])
@@ -81,15 +125,24 @@ class Register extends Component implements HasSchemas
 
         Assert::string($data['password']);
 
+<<<<<<< HEAD
         /** @var UserContract $user */
+=======
+        /** @var UserContract */
+>>>>>>> f548be94 (.)
         $user = $user_class::create([
             'email' => $data['email'],
             'name' => $data['name'],
             'password' => Hash::make($data['password']),
         ]);
 
+<<<<<<< HEAD
         Assert::isInstanceOf($user, Authenticatable::class);
         event(new Registered($user));
+=======
+        event(new Registered($user));
+
+>>>>>>> f548be94 (.)
         Auth::login($user, true);
 
         return redirect()->intended(route('home'));
@@ -101,7 +154,11 @@ class Register extends Component implements HasSchemas
      * In Livewire components, the render method ultimately returns a view,
      * but it's processed through Livewire's component system.
      */
+<<<<<<< HEAD
     public function render(): \Illuminate\Contracts\View\View
+=======
+    public function render(): mixed
+>>>>>>> f548be94 (.)
     {
         // Copy the view templates to the pub_theme location
         app(ViewCopyAction::class)

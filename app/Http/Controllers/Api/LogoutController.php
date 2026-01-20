@@ -4,10 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Controllers\Api;
 
+<<<<<<< HEAD
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Modules\User\Actions\Socialite\LogoutUserAction;
 use Modules\Xot\Contracts\UserContract;
+=======
+use Modules\Xot\Contracts\UserContract;
+use InvalidArgumentException;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
+use Modules\User\Actions\Socialite\LogoutUserAction;
+>>>>>>> f548be94 (.)
 use Modules\Xot\Datas\JsonResponseData;
 use Modules\Xot\Http\Controllers\XotBaseController;
 use Webmozart\Assert\Assert;
@@ -25,17 +33,29 @@ class LogoutController extends XotBaseController
      * This method logs out the user by executing the LogoutUserAction and
      * handling any necessary cleanup tasks related to tokens and sessions.
      *
+<<<<<<< HEAD
      * @param Request $request the incoming request containing the authenticated user
      *
+=======
+     * @param  Request  $request  the incoming request containing the authenticated user
+>>>>>>> f548be94 (.)
      * @return JsonResponse a JSON response indicating the success of the logout operation
      */
     public function __invoke(Request $request): JsonResponse
     {
+<<<<<<< HEAD
         Assert::notNull($user = $request->user(), '['.__LINE__.']['.class_basename($this).']');
 
         // Verificare che l'utente implementi l'interfaccia UserContract
         if (! $user instanceof UserContract) {
             throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia UserContract');
+=======
+        Assert::notNull($user = $request->user(), '[' . __LINE__ . '][' . class_basename($this) . ']');
+
+        // Verificare che l'utente implementi l'interfaccia UserContract
+        if (!($user instanceof UserContract)) {
+            throw new InvalidArgumentException('L\'utente deve implementare l\'interfaccia UserContract');
+>>>>>>> f548be94 (.)
         }
 
         app(LogoutUserAction::class)->execute($user);

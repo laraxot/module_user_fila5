@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "UserFactory Integration - Modulo User e <nome progetto>"
 type: concept
@@ -23,6 +24,13 @@ related:
 ## Overview
 
 Questo documento descrive l'integrazione tra la `UserFactory` del modulo <nome progetto> e la base `BaseUser` del modulo User, evidenziando l'architettura Single Table Inheritance (STI) implementata con Parental.
+=======
+# UserFactory Integration - Modulo User e SaluteOra
+
+## Overview
+
+Questo documento descrive l'integrazione tra la `UserFactory` del modulo SaluteOra e la base `BaseUser` del modulo User, evidenziando l'architettura Single Table Inheritance (STI) implementata con Parental.
+>>>>>>> f548be94 (.)
 
 ## Architettura STI
 
@@ -30,10 +38,17 @@ Questo documento descrive l'integrazione tra la `UserFactory` del modulo <nome p
 
 ```php
 BaseUser (Modules\User\Models\BaseUser)
+<<<<<<< HEAD
 ├── User (Modules\<nome progetto>\Models\User) - Base for STI
     ├── Patient (Modules\<nome progetto>\Models\Patient) - uses HasParent
     ├── Doctor (Modules\<nome progetto>\Models\Doctor) - uses HasParent
     └── Admin (Modules\<nome progetto>\Models\Admin) - uses HasParent
+=======
+├── User (Modules\SaluteOra\Models\User) - Base for STI
+    ├── Patient (Modules\SaluteOra\Models\Patient) - uses HasParent
+    ├── Doctor (Modules\SaluteOra\Models\Doctor) - uses HasParent  
+    └── Admin (Modules\SaluteOra\Models\Admin) - uses HasParent
+>>>>>>> f548be94 (.)
 ```
 
 ### Database Connection Strategy
@@ -42,8 +57,13 @@ BaseUser (Modules\User\Models\BaseUser)
 // BaseUser (Modulo User)
 protected $connection = 'user'; // Default connection
 
+<<<<<<< HEAD
 // User (Modulo <nome progetto>)
 protected $connection = '<nome progetto>'; // Override for healthcare domain
+=======
+// User (Modulo SaluteOra) 
+protected $connection = 'salute_ora'; // Override for healthcare domain
+>>>>>>> f548be94 (.)
 ```
 
 ## Trait Distribution
@@ -61,11 +81,19 @@ use HasRoles;            // Permission management
 use HasAuthenticationLogTrait; // Authentication logging
 ```
 
+<<<<<<< HEAD
 ### Modulo <nome progetto> (User)
 Aggiunge trait specifici per il dominio sanitario:
 
 ```php
 // In <nome progetto>\Models\User
+=======
+### Modulo SaluteOra (User)
+Aggiunge trait specifici per il dominio sanitario:
+
+```php
+// In SaluteOra\Models\User
+>>>>>>> f548be94 (.)
 use LogsActivity;        // Spatie Activity Log
 use HasStates;           // Spatie Model States
 use HasGdpr;             // GDPR compliance
@@ -85,16 +113,26 @@ use HasParent;           // Parental STI support
 
 ### Factory Ownership
 
+<<<<<<< HEAD
 La `UserFactory` è implementata **nel modulo <nome progetto>** perché:
 
 1. **Domain Specificity**: I dati sono specifici del dominio sanitario
 2. **Enum Integration**: Usa `UserTypeEnum` e `UserState` del modulo <nome progetto>
 3. **Business Logic**: Gestisce logica sanitaria (ISEE, pregnancy, certifications)
 4. **Connection Override**: Usa database '<nome progetto>'
+=======
+La `UserFactory` è implementata **nel modulo SaluteOra** perché:
+
+1. **Domain Specificity**: I dati sono specifici del dominio sanitario
+2. **Enum Integration**: Usa `UserTypeEnum` e `UserState` del modulo SaluteOra
+3. **Business Logic**: Gestisce logica sanitaria (ISEE, pregnancy, certifications)
+4. **Connection Override**: Usa database 'salute_ora'
+>>>>>>> f548be94 (.)
 
 ### Integration Pattern
 
 ```php
+<<<<<<< HEAD
 // Factory nel modulo <nome progetto>
 namespace Modules\<nome progetto>\Database\Factories;
 
@@ -102,6 +140,15 @@ class UserFactory extends Factory
 {
     protected $model = \Modules\<nome progetto>\Models\User::class;
 
+=======
+// Factory nel modulo SaluteOra
+namespace Modules\SaluteOra\Database\Factories;
+
+class UserFactory extends Factory
+{
+    protected $model = \Modules\SaluteOra\Models\User::class;
+    
+>>>>>>> f548be94 (.)
     // Genera dati compatibili con tutti i modelli della gerarchia
     public function definition(): array
     {
@@ -110,12 +157,21 @@ class UserFactory extends Factory
             'name' => $this->faker->name(),
             'email' => $this->faker->unique()->safeEmail(),
             'password' => Hash::make('password'),
+<<<<<<< HEAD
 
             // Campi User <nome progetto> (specifici dominio)
             'type' => UserTypeEnum::PATIENT,
             'state' => Pending::class,
             'is_active' => true,
 
+=======
+            
+            // Campi User SaluteOra (specifici dominio)
+            'type' => UserTypeEnum::PATIENT,
+            'state' => Pending::class,
+            'is_active' => true,
+            
+>>>>>>> f548be94 (.)
             // Campi sanitari specifici
             'date_of_birth' => $this->faker->dateTimeBetween('-80 years', '-18 years'),
             'gender' => $this->faker->randomElement(['M', 'F', 'Other']),
@@ -134,6 +190,7 @@ public function patient(): static
 {
     return $this->state(fn () => [
         'type' => UserTypeEnum::PATIENT,
+<<<<<<< HEAD
 
         // Dati anagrafici
         'fiscal_code' => $this->generateItalianFiscalCode(),
@@ -143,6 +200,17 @@ public function patient(): static
         'dental_problems' => $this->faker->optional()->sentence(),
         'last_dental_visit' => $this->faker->optional()->dateTimeBetween('-2 years'),
 
+=======
+        
+        // Dati anagrafici
+        'fiscal_code' => $this->generateItalianFiscalCode(),
+        'nationality' => 'Italian',
+        
+        // Dati sanitari
+        'dental_problems' => $this->faker->optional()->sentence(),
+        'last_dental_visit' => $this->faker->optional()->dateTimeBetween('-2 years'),
+        
+>>>>>>> f548be94 (.)
         // Dati socio-economici
         'family_members' => $this->faker->numberBetween(1, 6),
         'children_count' => $this->faker->numberBetween(0, 4),
@@ -158,11 +226,19 @@ public function doctor(): static
 {
     return $this->state(fn () => [
         'type' => UserTypeEnum::DOCTOR,
+<<<<<<< HEAD
 
         // Dati professionali
         'registration_number' => 'OMD' . $this->faker->unique()->numberBetween(10000, 99999),
         'status' => 'active',
 
+=======
+        
+        // Dati professionali
+        'registration_number' => 'OMD' . $this->faker->unique()->numberBetween(10000, 99999),
+        'status' => 'active',
+        
+>>>>>>> f548be94 (.)
         // Specializzazioni odontoiatriche
         'certifications' => [
             'odontoiatria_generale' => true,
@@ -190,7 +266,11 @@ public function admin(): static
 
 ### Field Mapping
 
+<<<<<<< HEAD
 | BaseUser (User Module) | <nome progetto> User | Usage |
+=======
+| BaseUser (User Module) | SaluteOra User | Usage |
+>>>>>>> f548be94 (.)
 |------------------------|----------------|-------|
 | `name` | `name` | Full name compatibility |
 | `email` | `email` | Authentication |
@@ -214,7 +294,11 @@ protected function casts(): array
     ];
 }
 
+<<<<<<< HEAD
 // <nome progetto> User - Domain-specific casts
+=======
+// SaluteOra User - Domain-specific casts
+>>>>>>> f548be94 (.)
 protected function casts(): array
 {
     return array_merge(parent::casts(), [
@@ -277,12 +361,20 @@ expect($user->isActive())->toBeTrue();
 ### 1. Modular Design
 
 - **BaseUser**: Campi generici per autenticazione e autorizzazione
+<<<<<<< HEAD
 - **<nome progetto> User**: Campi specifici del dominio sanitario
+=======
+- **SaluteOra User**: Campi specifici del dominio sanitario
+>>>>>>> f548be94 (.)
 - **STI Children**: Campi altamente specializzati per tipo
 
 ### 2. Factory Responsibility
 
+<<<<<<< HEAD
 - **UserFactory in <nome progetto>**: Genera dati completi per testing del dominio
+=======
+- **UserFactory in SaluteOra**: Genera dati completi per testing del dominio
+>>>>>>> f548be94 (.)
 - **Compatibility**: Rispetta i vincoli del BaseUser del modulo User
 - **Extensibility**: Facilmente estendibile per nuovi tipi di utente
 
@@ -293,7 +385,11 @@ expect($user->isActive())->toBeTrue();
 public function test_base_user_compatibility()
 {
     $user = User::factory()->create();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> f548be94 (.)
     // Test authentication contracts
     expect($user->email)->toBeString();
     expect($user->password)->toBeString();
@@ -305,7 +401,11 @@ public function test_sti_functionality()
 {
     $patient = User::factory()->patient()->create();
     $doctor = User::factory()->doctor()->create();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> f548be94 (.)
     expect($patient)->toBeInstanceOf(Patient::class);
     expect($doctor)->toBeInstanceOf(Doctor::class);
     expect($patient->type)->toBe(UserTypeEnum::PATIENT);
@@ -325,9 +425,15 @@ public function test_bulk_sti_creation()
         ...User::factory()->doctor()->count(20)->make(),
         ...User::factory()->admin()->count(5)->make(),
     ]);
+<<<<<<< HEAD
 
     User::insert($users->toArray());
 
+=======
+    
+    User::insert($users->toArray());
+    
+>>>>>>> f548be94 (.)
     expect(User::count())->toBe(75);
     expect(Patient::count())->toBe(50);
     expect(Doctor::count())->toBe(20);
@@ -344,21 +450,34 @@ public function test_bulk_sti_creation()
 
 ### 2. Domain Separation
 - Modulo User: Generics per autenticazione/autorizzazione
+<<<<<<< HEAD
 - Modulo <nome progetto>: Specifics per dominio sanitario
+=======
+- Modulo SaluteOra: Specifics per dominio sanitario
+>>>>>>> f548be94 (.)
 - Clear boundaries e responsibilities
 
 ### 3. Testing Flexibility
 - Test generici nel modulo User
+<<<<<<< HEAD
 - Test specifici sanitari nel modulo <nome progetto>
+=======
+- Test specifici sanitari nel modulo SaluteOra
+>>>>>>> f548be94 (.)
 - Factory supporta entrambi i livelli
 
 ### 4. Maintenance
 - Changes al BaseUser automaticamente ereditati
+<<<<<<< HEAD
 - Healthcare-specific changes isolati nel modulo <nome progetto>
+=======
+- Healthcare-specific changes isolati nel modulo SaluteOra
+>>>>>>> f548be94 (.)
 - Factory evolution indipendente
 
 ## Links to Documentation
 
+<<<<<<< HEAD
 ### <nome progetto> Module
 - [UserFactory Improvements Analysis](../<nome progetto>/docs/factories/userfactory-improvements-analysis.md)
 - [Model Architecture](../<nome progetto>/docs/model-architecture.md)
@@ -732,3 +851,21 @@ public function test_bulk_sti_creation()
 **Purpose**: Document cross-module factory integration
 **Maintainer**: Development Team
 **Review Status**: Ready for implementation
+=======
+### SaluteOra Module
+- [UserFactory Improvements Analysis](../SaluteOra/docs/factories/UserFactory-improvements-analysis.md)
+- [Model Architecture](../SaluteOra/docs/model-architecture.md)
+- [STI Implementation](../SaluteOra/docs/model-inheritance.md)
+
+### User Module
+- [BaseUser Documentation](../User/docs/baseuser_conflicts.md)
+- [Traits Complete Guide](../User/docs/traits_complete_guide.md)
+- [Authentication Framework](../User/docs/authentication.md)
+
+---
+
+**Created**: January 2025  
+**Purpose**: Document cross-module factory integration  
+**Maintainer**: Development Team  
+**Review Status**: Ready for implementation 
+>>>>>>> f548be94 (.)

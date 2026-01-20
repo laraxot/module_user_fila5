@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Database\Seeders;
 
+<<<<<<< HEAD
 use Illuminate\Database\Seeder;
 
 /**
@@ -60,5 +61,20 @@ class UserDatabaseSeeder extends Seeder
         if (null !== $this->command) {
             $this->command->info('UserDatabaseSeeder: completato.');
         }
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Seeder;
+
+class UserDatabaseSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        Model::unguard();
+
+        // $this->call("OthersTableSeeder");
+>>>>>>> f548be94 (.)
     }
 }

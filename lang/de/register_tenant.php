@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'navigation' => [
         'label' => 'Registrazione Studio',
@@ -32,9 +36,12 @@ return [
                 'min' => 'Der Name muss mindestens 3 Zeichen enthalten',
                 'max' => 'Der Name darf 100 Zeichen nicht überschreiten',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'phone' => [
             'label' => 'Numero di Telefono Studio',
@@ -45,9 +52,12 @@ return [
                 'regex' => 'Bitte geben Sie eine gültige italienische Telefonnummer ein',
                 'min' => 'Die Nummer muss mindestens 10 Ziffern enthalten',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'email' => [
             'label' => 'Email Ufficiale Studio',
@@ -59,9 +69,12 @@ return [
                 'unique' => 'Diese E-Mail-Adresse ist bereits für eine andere Praxis registriert',
                 'max' => 'Die E-Mail-Adresse darf 255 Zeichen nicht überschreiten',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'address' => [
             'label' => 'Vollständige Praxisadresse',
@@ -86,9 +99,12 @@ return [
                 'min' => 'Der Name muss mindestens 5 Zeichen enthalten',
                 'max' => 'Der Name darf 100 Zeichen nicht überschreiten',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'director_registration' => [
             'label' => 'Numero Iscrizione Albo Medico',
@@ -99,9 +115,12 @@ return [
                 'numeric' => 'Die Registrierungsnummer darf nur Ziffern enthalten',
                 'min' => 'Die Registrierungsnummer muss mindestens 3 Ziffern enthalten',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'vat_number' => [
             'label' => 'Partita IVA Studio',
@@ -112,9 +131,12 @@ return [
                 'regex' => 'Die Umsatzsteuer-Identifikationsnummer muss genau aus 11 Ziffern bestehen',
                 'unique' => 'Diese Umsatzsteuer-Identifikationsnummer ist bereits für eine andere Praxis registriert',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'specialization' => [
             'label' => 'Specializzazioni Mediche',
@@ -136,9 +158,12 @@ return [
                 'ortopedia' => 'Ortopedia',
                 'altro' => 'Altra Specializzazione',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'website' => [
             'label' => 'Sito Web Studio',
@@ -147,9 +172,12 @@ return [
             'validation' => [
                 'url' => 'Inserisci un URL valido che inizi con http:// o https://',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'staff_count' => [
             'label' => 'Numero Operatori',
@@ -161,9 +189,12 @@ return [
                 'min' => 'Die Praxis muss mindestens 1 Mitarbeiter haben',
                 'max' => 'Die maximale Anzahl beträgt 100 Mitarbeiter',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'privacy_acceptance' => [
             'label' => 'Consenso Trattamento Dati',
@@ -172,9 +203,12 @@ return [
             'validation' => [
                 'accepted' => 'Sie müssen die Datenschutzerklärung akzeptieren, um fortzufahren',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
         'terms_acceptance' => [
             'label' => 'Accettazione Termini di Servizio',
@@ -183,9 +217,12 @@ return [
             'validation' => [
                 'accepted' => 'Sie müssen die Nutzungsbedingungen akzeptieren, um fortzufahren',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> f548be94 (.)
         ],
     ],
     'actions' => [
@@ -273,6 +310,9 @@ return [
         'contact_info' => 'I dati di contatto inseriti verranno utilizzati per tutte le comunicazioni ufficiali',
         'data_protection' => 'Tutti i dati sono protetti secondo le normative europee GDPR',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> f548be94 (.)
 ];

@@ -9,17 +9,23 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\TeamUser;
 use Modules\Xot\Contracts\ModelContract;
+=======
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Collection;
+>>>>>>> f548be94 (.)
 use Modules\Xot\Contracts\UserContract;
 
 /**
  * Modules\User\Contracts\TeamContract.
  *
+<<<<<<< HEAD
  * @property int               $id
  * @property int               $user_id
  * @property string            $name
@@ -40,6 +46,28 @@ use Modules\Xot\Contracts\UserContract;
  * @method static Builder<Model> wherePersonalTeam($value)
  * @method static Builder<Model> whereUpdatedAt($value)
  * @method static Builder<Model> whereUserId($value)
+=======
+ * @property int $id
+ * @property int $user_id
+ * @property string $name
+ * @property int $personal_team
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string $role
+ * @property UserContract|null $owner
+ * @property int|null $team_invitations_count
+ * @property int|null $users_count
+ *
+ * @method static Builder|TeamContract newModelQuery()
+ * @method static Builder|TeamContract newQuery()
+ * @method static Builder|TeamContract query()
+ * @method static Builder|TeamContract whereCreatedAt($value)
+ * @method static Builder|TeamContract whereId($value)
+ * @method static Builder|TeamContract whereName($value)
+ * @method static Builder|TeamContract wherePersonalTeam($value)
+ * @method static Builder|TeamContract whereUpdatedAt($value)
+ * @method static Builder|TeamContract whereUserId($value)
+>>>>>>> f548be94 (.)
  *
  * @phpstan-require-extends Model
  *
@@ -49,22 +77,31 @@ interface TeamContract extends ModelContract
 {
     /**
      * Get the owner of the team.
+<<<<<<< HEAD
      *
      * @return BelongsTo<Model&UserContract, Model>
+=======
+>>>>>>> f548be94 (.)
      */
     public function owner(): BelongsTo;
 
     /**
      * Get all of the team's users including its owner.
+<<<<<<< HEAD
      *
      * @return Collection<int, Model&UserContract>
+=======
+>>>>>>> f548be94 (.)
      */
     public function allUsers(): Collection;
 
     /**
      * Get all of the users that belong to the team.
+<<<<<<< HEAD
      *
      * @return BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'>
+=======
+>>>>>>> f548be94 (.)
      */
     public function users(): BelongsToMany;
 
@@ -85,8 +122,11 @@ interface TeamContract extends ModelContract
 
     /**
      * Get all of the pending user invitations for the team.
+<<<<<<< HEAD
      *
      * @return HasMany<TeamInvitation, Model>
+=======
+>>>>>>> f548be94 (.)
      */
     public function teamInvitations(): HasMany;
 
@@ -100,8 +140,25 @@ interface TeamContract extends ModelContract
      */
     public function purge(): void;
 
+<<<<<<< HEAD
     /**
      * @return BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'>
      */
+=======
+    /* --non qui
+     * Get the disk that profile photos should be stored on.
+     *
+     * public function profilePhotoDisk(): string;
+     */
+
+    /**
+     * Reload a fresh model instance from the database.
+     *
+     * @param  array|string $with
+     * @return static|null
+     */
+    public function fresh($with = []);
+
+>>>>>>> f548be94 (.)
     public function members(): BelongsToMany;
 }

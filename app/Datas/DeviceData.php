@@ -8,7 +8,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Datas;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
+=======
+>>>>>>> f548be94 (.)
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
 use Spatie\LaravelData\Data;
@@ -27,6 +30,7 @@ class DeviceData extends Data
      * case OperatingSystem = 'X-Operating-System';
      * case SynchronizationId = 'X-Synchronization-Identifier';
      */
+<<<<<<< HEAD
     public ?string $appVersion = null;
 
     // = 'X-App-Version';
@@ -61,6 +65,37 @@ class DeviceData extends Data
                 return [$key => $item];
             }
         )->all();
+=======
+    public null|string $appVersion = null;
+
+    // = 'X-App-Version';
+    public null|string $application = null;
+
+    // = 'X-Application';
+    public null|string $deviceId = null;
+
+    // = 'X-Device-Id';
+    public null|string $notificationCode = null;
+
+    // = 'X-Notification-Code';
+    public null|string $operatingSystem = null;
+
+    // = 'X-Operating-System';
+    public null|string $synchronizationId = null; // = 'X-Synchronization-Identifier';
+
+    public static function make(): self
+    {
+        $headers = collect(request()->header())->mapWithKeys(static function ($item, $key): array {
+            if (Str::startsWith($key, 'X-')) {
+                // $key = Str::afterFirst($key, 'X-');
+                $key = Str::after($key, 'X-');
+            }
+
+            $key = Str::camel($key);
+
+            return [$key => $item];
+        })->all();
+>>>>>>> f548be94 (.)
 
         return self::from($headers);
     }
@@ -72,20 +107,34 @@ class DeviceData extends Data
 
     public function getSynchronizationId(string $apiName): string
     {
+<<<<<<< HEAD
         if (null !== $this->synchronizationId) {
+=======
+        if ($this->synchronizationId !== null) {
+>>>>>>> f548be94 (.)
             return $this->synchronizationId;
         }
 
         $synchronizationClass = config('morph_map.synchronization');
+<<<<<<< HEAD
         if (null === $synchronizationClass) {
+=======
+        if ($synchronizationClass === null) {
+>>>>>>> f548be94 (.)
             $synchronizationClass = '\Modules\Egea\Models\Synchronization';
         }
 
         // fare contract
         // Assert::isInstanceOf($synchronizationClass,Model::class,'['.__LINE__.']['.class_basename($this).']');
         // $synchronization = Synchronization::create([
+<<<<<<< HEAD
         /** @var class-string<Model> $synchronizationClass */
         /** @var Model $synchronization */
+=======
+        /**
+         * @phpstan-ignore staticMethod.nonObject
+         */
+>>>>>>> f548be94 (.)
         $synchronization = $synchronizationClass::create([
             // $synchronization = Synchronization::create([
             'user_id' => auth()->id(),
@@ -96,11 +145,16 @@ class DeviceData extends Data
             'called_at' => Carbon::now(),
             // fulfilled_at
         ]);
+<<<<<<< HEAD
         Assert::object($synchronization);
 
         $syncId = $synchronization->getAttribute('id');
         Assert::string($syncId, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
         $this->synchronizationId = $syncId;
+=======
+        Assert::string($synchronizationId = $synchronization->id, __FILE__ . ':' . __LINE__ . ' - ' . class_basename(__CLASS__));
+        $this->synchronizationId = $synchronizationId;
+>>>>>>> f548be94 (.)
 
         return $this->synchronizationId;
     }

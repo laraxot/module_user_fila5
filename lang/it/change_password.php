@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 return [
     'navigation' => [
         'label' => 'Cambia Password',
@@ -54,5 +55,19 @@ return [
         'password_mismatch' => 'Le password non coincidono',
         'current_password_wrong' => 'La password attuale non è corretta',
         'error' => 'Si è verificato un errore',
+=======
+
+return [
+    'fields' => [
+        'new_password_confirmation' => [
+            'label' => 'Conferma nuova password',
+            'description' => 'Digita nuovamente la nuova password per conferma',
+            'helper_text' => '',
+            'placeholder' => 'Reinserisci la nuova password',
+        ],
+        'changePassword' => [
+            'label' => 'Cambia password',
+        ],
+>>>>>>> f548be94 (.)
     ],
 ];

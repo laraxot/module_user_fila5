@@ -8,22 +8,39 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\PermissionResource\RelationManager;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+=======
+use Filament\Schemas\Components\Component;
+use Override;
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Schema;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
+>>>>>>> f548be94 (.)
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class RoleRelationManager extends XotBaseRelationManager
 {
     protected static string $relationship = 'roles';
 
+<<<<<<< HEAD
     protected static ?string $recordTitleAttribute = 'name';
+=======
+    protected static null|string $recordTitleAttribute = 'name';
+>>>>>>> f548be94 (.)
 
     /**
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> f548be94 (.)
     public function getFormSchema(): array
     {
         return [
@@ -32,6 +49,7 @@ class RoleRelationManager extends XotBaseRelationManager
         ];
     }
 
+<<<<<<< HEAD
     /**
      * @return array<string, Column>
      */
@@ -45,6 +63,18 @@ class RoleRelationManager extends XotBaseRelationManager
     }
 
     protected static function getModelLabel(): ?string
+=======
+    #[Override]
+    public function table(Table $table): Table
+    {
+        return $table->columns([
+            TextColumn::make('name')->searchable(),
+            TextColumn::make('guard_name')->searchable(),
+        ])->filters([]);
+    }
+
+    protected static function getModelLabel(): null|string
+>>>>>>> f548be94 (.)
     {
         // return __('filament-spatie-roles-permissions::filament-spatie.section.role');
         return __('filament-spatie-roles-permissions::filament-spatie.section.role');

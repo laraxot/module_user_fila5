@@ -5,17 +5,31 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Webmozart\Assert\Assert;
+=======
+use Modules\Xot\Contracts\ProfileContract;
+use Illuminate\Support\Carbon;
+use Modules\User\Database\Factories\ModelHasPermissionFactory;
+>>>>>>> f548be94 (.)
 
 /**
  * Modules\User\Models\ModelHasPermission.
  *
+<<<<<<< HEAD
  * @property int    $id
  * @property int    $permission_id
  * @property string $model_type
  * @property string $model_id
+=======
+ * @property int $id
+ * @property int $permission_id
+ * @property string $model_type
+ * @property string $model_id
+ * @method static ModelHasPermissionFactory factory($count = null, $state = [])
+>>>>>>> f548be94 (.)
  * @method static Builder|ModelHasPermission newModelQuery()
  * @method static Builder|ModelHasPermission newQuery()
  * @method static Builder|ModelHasPermission query()
@@ -33,10 +47,16 @@ use Webmozart\Assert\Assert;
  * @method static Builder|ModelHasPermission whereUpdatedBy($value)
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
  * @property string|null          $team_id
  * @method static Builder|ModelHasPermission whereTeamId($value)
  * @property ProfileContract|null $deleter
  * @method static \Modules\User\Database\Factories\ModelHasPermissionFactory factory($count = null, $state = [])
+=======
+ * @property string|null $team_id
+ * @method static Builder|ModelHasPermission whereTeamId($value)
+ * @mixin IdeHelperModelHasPermission
+>>>>>>> f548be94 (.)
  * @mixin \Eloquent
  */
 class ModelHasPermission extends BaseMorphPivot
@@ -47,6 +67,7 @@ class ModelHasPermission extends BaseMorphPivot
      * @psalm-var list{'permission_id', 'model_type', 'model_id'}
      */
     protected $fillable = ['permission_id', 'model_type', 'model_id'];
+<<<<<<< HEAD
 
     /**
      * Read from config on every call — never hardcode, the value can change
@@ -59,4 +80,6 @@ class ModelHasPermission extends BaseMorphPivot
 
         return $table;
     }
+=======
+>>>>>>> f548be94 (.)
 }

@@ -20,6 +20,10 @@ class UserNotAllowed
      */
     public function __construct(
         public SocialiteUserContract $oauthUser,
+<<<<<<< HEAD
     ) {
     }
+=======
+    ) {}
+>>>>>>> f548be94 (.)
 }

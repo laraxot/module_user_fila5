@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'name' => 'Nome',
     'slug' => 'Slug',
@@ -23,6 +27,7 @@ return [
         'label' => 'Conferma Password',
         'placeholder' => 'Conferma la tua nuova password',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -34,4 +39,6 @@ return [
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

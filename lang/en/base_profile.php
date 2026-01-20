@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f548be94 (.)
 return [
     'model' => [
         'label' => 'Profilo Base',
@@ -17,10 +21,13 @@ return [
         'sort' => '31',
         'icon' => 'user-user-permission',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> f548be94 (.)
 ];

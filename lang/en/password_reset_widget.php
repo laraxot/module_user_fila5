@@ -9,6 +9,7 @@ return [
             'placeholder' => 'email',
             'helper_text' => '',
             'description' => 'email',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -23,4 +24,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+    ],
+>>>>>>> f548be94 (.)
 ];

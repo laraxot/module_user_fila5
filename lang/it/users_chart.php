@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'actions' => [
+<<<<<<< HEAD
         'test' => ['label' => 'test', 'icon' => 'test', 'tooltip' => 'test'],
     ],
     'navigation' => [
@@ -20,5 +21,10 @@ return [
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+=======
+        'test' => [
+            'label' => 'test',
+        ],
+>>>>>>> f548be94 (.)
     ],
 ];

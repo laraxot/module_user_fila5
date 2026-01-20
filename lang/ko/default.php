@@ -5,7 +5,11 @@ declare(strict_types=1);
 return [
     'password_confirm' => [
         'heading' => '비밀번호 확인',
+<<<<<<< HEAD
         'description' => '이 작업을 완료하려면 암호를 확인하십시오',
+=======
+        'description' => '이 작업을 완료하려면 암호를 확인하십시오', // Please confirm your password to complete this action.
+>>>>>>> f548be94 (.)
         'current_password' => '현재 비밀번호',
     ],
     'two_factor' => [
@@ -102,6 +106,7 @@ return [
         'tooltip' => '복사됨!',
     ],
     'fields' => [
+<<<<<<< HEAD
         'avatar' => [
             'label' => '아바타',
             'tooltip' => '',
@@ -194,4 +199,22 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        'avatar' => '아바타',
+        'email' => '이메일',
+        'login' => '로그인',
+        'name' => '이름',
+        'password' => '비밀번호',
+        'password_confirm' => '비밀번호 확인',
+        'new_password' => '신규 비밀번호',
+        'new_password_confirmation' => '신규 비밀번호 확인',
+        'token_name' => '토큰 이름',
+        'token_expiry' => '토큰 만료일',
+        'abilities' => '능력',
+        '2fa_code' => '코드',
+        '2fa_recovery_code' => '복구 코드',
+    ],
+    'or' => '또는',
+    'cancel' => '취소',
+>>>>>>> f548be94 (.)
 ];
