@@ -10,7 +10,6 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Resources\Pages\PageRegistration;
-use Filament\Tables\Table;
 use Modules\User\Filament\Resources\SsoProviderResource\Pages;
 use Modules\User\Filament\Resources\SsoProviderResource\RelationManagers\UsersRelationManager;
 use Modules\User\Models\SsoProvider;
@@ -19,8 +18,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class SsoProviderResource extends XotBaseResource
 {
     protected static ?string $model = SsoProvider::class;
-
-
 
     /**
      * @return array<string, \Filament\Support\Components\Component>

@@ -15,9 +15,9 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
-use Modules\User\Filament\Resources\OauthAuthCodeResource\Pages;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ListOauthAuthCodes;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ViewOauthAuthCode;
+use Modules\User\Filament\Resources\OauthAuthCodeResource\Pages;
 use Modules\User\Models\OauthAuthCode;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
