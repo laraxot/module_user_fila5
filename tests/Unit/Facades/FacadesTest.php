@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 
 use Modules\User\Facades\FilamentShield;
 
 test('FilamentShield facade can be accessed', function () {
     expect(class_exists(FilamentShield::class))->toBeTrue();
-    
+
     try {
         // Just check that the facade class exists and can be used
         expect(FilamentShield::class)->toBeString();
-    } catch (\Exception $e) {
+    } catch (Exception $e) {
         expect(true)->toBeTrue(); // Pass if class exists
     }
 });

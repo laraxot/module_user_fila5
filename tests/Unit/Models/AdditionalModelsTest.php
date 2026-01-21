@@ -2,29 +2,29 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 
-use Modules\User\Models\Notification;
-use Modules\User\Models\OauthAccessToken;
-use Modules\User\Models\OauthClient;
-use Modules\User\Models\OauthAuthCode;
-use Modules\User\Models\OauthRefreshToken;
-use Modules\User\Models\OauthPersonalAccessClient;
-use Modules\User\Models\OauthToken;
-use Modules\User\Models\OauthDeviceCode;
-use Modules\User\Models\TeamPermission;
-use Modules\User\Models\TeamInvitation;
-use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Authentication;
-use Modules\User\Models\SocialiteUser;
-use Modules\User\Models\SocialProvider;
-use Modules\User\Models\SsoProvider;
-use Modules\User\Models\Feature;
-use Modules\User\Models\Extra;
+use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Device;
 use Modules\User\Models\DeviceProfile;
 use Modules\User\Models\DeviceUser;
+use Modules\User\Models\Extra;
+use Modules\User\Models\Feature;
+use Modules\User\Models\Notification;
+use Modules\User\Models\OauthAccessToken;
+use Modules\User\Models\OauthAuthCode;
+use Modules\User\Models\OauthClient;
+use Modules\User\Models\OauthDeviceCode;
+use Modules\User\Models\OauthPersonalAccessClient;
+use Modules\User\Models\OauthRefreshToken;
+use Modules\User\Models\OauthToken;
 use Modules\User\Models\PasswordReset;
+use Modules\User\Models\SocialiteUser;
+use Modules\User\Models\SocialProvider;
+use Modules\User\Models\SsoProvider;
+use Modules\User\Models\TeamInvitation;
+use Modules\User\Models\TeamPermission;
 
 test('Notification model can be instantiated', function () {
     $model = new Notification();

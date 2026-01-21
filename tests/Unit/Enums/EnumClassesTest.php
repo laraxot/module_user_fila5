@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 
-use Modules\User\Enums\UserType;
-use Modules\User\Enums\SystemRole;
 use Modules\User\Enums\SocialProviderEnum;
+use Modules\User\Enums\SystemRole;
+use Modules\User\Enums\UserType;
 
 test('UserType enum has all cases', function () {
     $cases = UserType::cases();
-    
+
     expect($cases)->toHaveCount(5)
         ->and($cases)->each->toBeInstanceOf(UserType::class);
 });
@@ -54,12 +54,12 @@ test('UserType getIcon method works', function () {
 
 test('SystemRole enum can be instantiated', function () {
     $cases = SystemRole::cases();
-    
+
     expect($cases)->each->toBeInstanceOf(SystemRole::class);
 });
 
 test('SocialProviderEnum can be instantiated', function () {
     $cases = SocialProviderEnum::cases();
-    
+
     expect($cases)->each->toBeInstanceOf(SocialProviderEnum::class);
 });

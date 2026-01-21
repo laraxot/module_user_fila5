@@ -10,13 +10,13 @@ uses(TestCase::class);
 
 test('user model can be instantiated', function () {
     $user = new User();
-    
+
     expect($user)->toBeInstanceOf(User::class);
 });
 
 test('user model can access connection', function () {
     $user = new User();
-    
+
     // This should work if the connection resolver is properly set up
     expect($user->getConnectionName())->toBe('user');
 });
@@ -26,7 +26,7 @@ test('user model can create basic record', function () {
         'name' => 'Test User',
         'first_name' => 'Test',
         'last_name' => 'User',
-        'email' => 'test-' . uniqid() . '@example.com',
+        'email' => 'test-'.uniqid().'@example.com',
         'password' => bcrypt('password'),
         'lang' => 'it',
         'is_active' => true,
@@ -40,7 +40,7 @@ test('user model can create basic record', function () {
         ->email->toBe($userData['email'])
         ->lang->toBe('it')
         ->is_active->toBe(true);
-        
+
     // Clean up
     $user->delete();
 });

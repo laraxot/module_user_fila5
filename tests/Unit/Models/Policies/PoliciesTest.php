@@ -2,24 +2,24 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 
-use Modules\User\Models\Policies\OauthClientPolicy;
-use Modules\User\Models\Policies\OauthAccessTokenPolicy;
-use Modules\User\Models\Policies\OauthAuthCodePolicy;
-use Modules\User\Models\Policies\OauthRefreshTokenPolicy;
-use Modules\User\Models\Policies\OauthPersonalAccessClientPolicy;
-use Modules\User\Models\Policies\SocialiteUserPolicy;
-use Modules\User\Models\Policies\SocialProviderPolicy;
 use Modules\User\Models\Policies\AuthenticationLogPolicy;
 use Modules\User\Models\Policies\AuthenticationPolicy;
 use Modules\User\Models\Policies\DevicePolicy;
 use Modules\User\Models\Policies\DeviceProfilePolicy;
+use Modules\User\Models\Policies\ExtraPolicy;
+use Modules\User\Models\Policies\FeaturePolicy;
+use Modules\User\Models\Policies\NotificationPolicy;
+use Modules\User\Models\Policies\OauthAccessTokenPolicy;
+use Modules\User\Models\Policies\OauthAuthCodePolicy;
+use Modules\User\Models\Policies\OauthClientPolicy;
+use Modules\User\Models\Policies\OauthPersonalAccessClientPolicy;
+use Modules\User\Models\Policies\OauthRefreshTokenPolicy;
+use Modules\User\Models\Policies\SocialiteUserPolicy;
+use Modules\User\Models\Policies\SocialProviderPolicy;
 use Modules\User\Models\Policies\TeamInvitationPolicy;
 use Modules\User\Models\Policies\TeamPermissionPolicy;
-use Modules\User\Models\Policies\FeaturePolicy;
-use Modules\User\Models\Policies\ExtraPolicy;
-use Modules\User\Models\Policies\NotificationPolicy;
 
 test('OauthClientPolicy can be instantiated', function () {
     $policy = new OauthClientPolicy();
