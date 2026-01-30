@@ -18,7 +18,7 @@ class PasswordValidationRulesTestClass
 }
 
 test('PasswordValidationRules trait can be used', function () {
-    $testClass = new PasswordValidationRulesTestClass();
+    $testClass = new PasswordValidationRulesTestClass;
 
     expect($testClass)->toBeInstanceOf(PasswordValidationRulesTestClass::class);
 });
@@ -27,11 +27,11 @@ test('PasswordValidationRules trait provides passwordRules method', function () 
     // Since the trait uses the Password rule which might not exist,
     // we'll just test that the method exists and returns an array
     $mock = $this->getMockBuilder(PasswordValidationRulesTestClass::class)
-                 ->onlyMethods(['passwordRules'])
-                 ->getMock();
+        ->onlyMethods(['passwordRules'])
+        ->getMock();
 
     $mock->method('passwordRules')
-         ->willReturn(['required', 'string', 'confirmed']);
+        ->willReturn(['required', 'string', 'confirmed']);
 
     $rules = $mock->getPasswordRules();
 
