@@ -18,7 +18,7 @@ class PasswordValidationRulesTestClass
 }
 
 test('PasswordValidationRules trait can be used', function () {
-    $testClass = new PasswordValidationRulesTestClass;
+    $testClass = new PasswordValidationRulesTestClass();
 
     expect($testClass)->toBeInstanceOf(PasswordValidationRulesTestClass::class);
 });
