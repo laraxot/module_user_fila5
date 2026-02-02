@@ -64,7 +64,7 @@ class ViewSocialiteUser extends XotBaseViewRecord
                                 ->copyable()
                                 ->copyMessage('Email copied'),
                             'avatar' => TextEntry::make('avatar')
-                                ->url(fn ($state) => $state)
+                                ->url(fn (mixed $state): ?string => is_string($state) && $state !== '' ? $state : null)
                                 ->openUrlInNewTab(),
                         ]),
                 ])->columns(1),
