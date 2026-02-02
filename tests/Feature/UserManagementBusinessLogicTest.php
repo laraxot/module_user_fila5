@@ -5,9 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Database\QueryException;
-use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Hash as IlluminateHash;
 use Illuminate\Validation\ValidationException;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Profile;
@@ -17,7 +15,6 @@ use Modules\User\Tests\TestCase;
 
 class UserManagementBusinessLogicTest extends TestCase
 {
-
     /** @test */
     public function itCanCreateUserWithProfile(): void
     {
