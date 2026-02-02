@@ -6,7 +6,6 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
-
 use Laravel\Passport\DeviceCode as PassportDeviceCode;
 
 /**
