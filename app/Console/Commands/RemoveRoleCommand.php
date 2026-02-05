@@ -71,13 +71,13 @@ class RemoveRoleCommand extends Command
         $this->info(implode(', ', $rows).' dessigned to '.$email);
     }
 
-   /**
+    /*
      * Get the console command options.
      */
-    //protected function getOptions(): array
-    //{
+    // protected function getOptions(): array
+    // {
     //    return [
     //        ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
-    //}
+    // }
 }
