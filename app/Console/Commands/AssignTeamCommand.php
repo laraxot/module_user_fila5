@@ -91,10 +91,10 @@ class AssignTeamCommand extends Command
     /**
      * Get the console command options.
      */
-    protected function getOptions(): array
-    {
-        return [
-            ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
-        ];
-    }
+    //protected function getOptions(): array
+    //{
+    //    return [
+    //        ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
+    //    ];
+    //}
 }
