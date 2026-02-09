@@ -201,8 +201,8 @@ describe('User Model', function () {
             $u1 = stubUser(['is_active' => true]);
             $u2 = stubUser(['is_active' => false]);
 
-            $active = collect([$u1, $u2])->filter(fn (User $u) => true === $u->is_active);
-            $inactive = collect([$u1, $u2])->filter(fn (User $u) => false === $u->is_active);
+            $active = collect([$u1, $u2])->filter(fn (User $u) => $u->is_active === true);
+            $inactive = collect([$u1, $u2])->filter(fn (User $u) => $u->is_active === false);
 
             expect($active)->toHaveCount(1)->and($inactive)->toHaveCount(1);
         });
@@ -211,8 +211,8 @@ describe('User Model', function () {
             $u1 = stubUser(['email_verified_at' => Carbon::now()]);
             $u2 = stubUser(['email_verified_at' => null]);
 
-            $verified = collect([$u1, $u2])->filter(fn (User $u) => null !== $u->email_verified_at);
-            $unverified = collect([$u1, $u2])->filter(fn (User $u) => null === $u->email_verified_at);
+            $verified = collect([$u1, $u2])->filter(fn (User $u) => $u->email_verified_at !== null);
+            $unverified = collect([$u1, $u2])->filter(fn (User $u) => $u->email_verified_at === null);
 
             expect($verified)->toHaveCount(1)->and($unverified)->toHaveCount(1);
         });
