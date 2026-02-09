@@ -86,7 +86,7 @@ test('can find permission by guard name', function (): void {
     $webPermissions = Permission::where('guard_name', 'web')->get();
 
     expect($webPermissions->count())->toBeGreaterThanOrEqual(2);
-    expect($webPermissions->every(fn ($permission) => $permission->guard_name === 'web'))->toBeTrue();
+    expect($webPermissions->every(fn ($permission) => 'web' === $permission->guard_name))->toBeTrue();
 });
 
 test('can find permission by created by', function (): void {
@@ -156,7 +156,7 @@ test('can find permissions by multiple criteria', function (): void {
 
     expect($permissions->count())->toBeGreaterThanOrEqual(2);
     expect($permissions->every(
-        fn ($permission) => str_starts_with($permission->name, 'admin.user.') && $permission->created_by === 'admin',
+        fn ($permission) => str_starts_with($permission->name, 'admin.user.') && 'admin' === $permission->created_by,
     ))->toBeTrue();
 });
 

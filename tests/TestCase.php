@@ -14,8 +14,8 @@ use Modules\Xot\Tests\CreatesApplication;
  * Uses MySQL from .env.testing.
  *
  * @property \Modules\User\Models\Permission $permission
- * @property \Modules\User\Models\Role $role
- * @property \Modules\User\Models\Tenant $tenant
+ * @property \Modules\User\Models\Role       $role
+ * @property \Modules\User\Models\Tenant     $tenant
  */
 abstract class TestCase extends BaseTestCase
 {

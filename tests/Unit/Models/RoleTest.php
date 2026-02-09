@@ -73,7 +73,7 @@ test('can find role by guard name', function (): void {
     $webRoles = Role::where('guard_name', 'web')->get();
 
     expect($webRoles->count())->toBeGreaterThanOrEqual(2);
-    expect($webRoles->every(fn ($role) => $role->guard_name === 'web'))->toBeTrue();
+    expect($webRoles->every(fn ($role) => 'web' === $role->guard_name))->toBeTrue();
 });
 
 test('can find role by team id', function (): void {
