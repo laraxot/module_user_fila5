@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
 use Modules\Media\Models\Media;
 use Modules\User\Database\Factories\UserFactory;
@@ -159,9 +158,7 @@ class User extends BaseUser
     /**
      * Give consent for a specific consent type.
      *
-     * @param string $consentType
      * @param array<string, mixed> $metadata
-     * @return void
      */
     public function giveConsent(string $consentType, array $metadata = []): void
     {
@@ -176,6 +173,6 @@ class User extends BaseUser
         ];
 
         // Use DB to insert directly
-        \Illuminate\Support\Facades\DB::table('consents')->insert($consentData);
+        DB::table('consents')->insert($consentData);
     }
 }
