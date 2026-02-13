@@ -1,6 +1,5 @@
 # Passport Cluster - Status Attuale e Lavoro Necessario
 
-**Data**: 2025-01-22
 **Status**: ✅ COMPLETATO
 **Metodologia**: Super Mucca
 **Vedi**: [passport-cluster-implementation-completed.md](./passport-cluster-implementation-completed.md)

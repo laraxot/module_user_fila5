@@ -1,6 +1,5 @@
 # PHPStan Progress Report - Modulo User
 
-**Data**: 2025-01-22
 **Status**: In Progress
 **Errori Attuali**: 115 (ridotti da ~221)
 

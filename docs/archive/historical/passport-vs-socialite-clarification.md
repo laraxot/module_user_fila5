@@ -1,6 +1,5 @@
 # Passport vs Socialite - Distinzione Critica
 
-**Data**: 2025-01-22
 **Status**: ✅ Documentazione Critica
 **Scopo**: Chiarire la differenza fondamentale tra Laravel Passport e Laravel Socialite
 

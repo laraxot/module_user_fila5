@@ -1,6 +1,5 @@
 # Navigation Translations Completion Roadmap - User Module
 
-**Data**: 2026-01-09  
 **Modulo**: User  
 **Status**: 📝 **ROADMAP CREATA**
 

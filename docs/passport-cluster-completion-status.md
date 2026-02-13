@@ -1,6 +1,5 @@
 # Passport Cluster - Status Completamento
 
-**Data**: 2025-01-22
 **Status**: ✅ Completato e Verificato
 **Metodologia**: Super Mucca
 

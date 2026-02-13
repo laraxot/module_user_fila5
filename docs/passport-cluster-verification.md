@@ -1,6 +1,5 @@
 # Passport Cluster - Verifica Risorse
 
-**Data**: 2025-01-22
 **Status**: ✅ VERIFICATO
 **Metodologia**: Super Mucca
 

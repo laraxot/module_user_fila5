@@ -1,6 +1,5 @@
 # Passport Cluster Resources Pattern
 
-**Data**: 2025-01-22
 **Status**: ✅ Implementato
 
 ---

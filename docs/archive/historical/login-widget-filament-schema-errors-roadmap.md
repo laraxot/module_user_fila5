@@ -1,6 +1,5 @@
 # LoginWidget Filament Schema JavaScript Errors - Roadmap
 
-**Data**: 2025-01-22
 **Status**: 🔄 In Progress
 **Errore**: Multiple JavaScript errors
 **File**: `app/Filament/Widgets/Auth/LoginWidget.php`

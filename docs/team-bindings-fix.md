@@ -118,7 +118,6 @@ $this->assertTrue($user->belongsToTeam($team));
 - [Critical Errors Documentation](../../<nome progetto>/project_docs/critical-errors-resolved.md)
 ---
 **Autore**: AI Assistant
-**Data**: Gennaio 2025
 **Versione**: 1.0
 **Status**: ✅ Risolto e Testato
 # Fix Binding Team Models nel Modulo User
@@ -293,5 +292,4 @@ $this->assertTrue($user->belongsToTeam($team));
 ---
 
 **Autore**: AI Assistant
-**Data**: Gennaio 2025
 **Versione**: 1.0

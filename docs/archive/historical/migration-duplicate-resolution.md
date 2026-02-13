@@ -2,7 +2,6 @@
 
 ## 🚨 PROBLEMA IDENTIFICATO
 
-**Data**: 2025-11-17
 **Violazione**: MULTIPLI migration duplicate per tabella `roles` nel modulo User
 
 ```text

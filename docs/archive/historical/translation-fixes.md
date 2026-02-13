@@ -90,7 +90,6 @@ Il file ora segue la struttura espansa obbligatoria per le regole Laraxot:
 
 ## Data Correzioni
 
-**Data**: 2025-01-06
 **Autore**: AI Assistant
 **Versione**: 1.0
 **Status**: Completato

@@ -1,6 +1,5 @@
 # LoginWidget Livewire wire:model Binding Fix
 
-**Data**: 2025-12-18  
 **Errore**: `[wire:model="email"] property does not exist on component`
 
 ## Problema

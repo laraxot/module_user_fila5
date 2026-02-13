@@ -1,6 +1,5 @@
 # Passport Cluster - Completamento Lavoro
 
-**Data**: 2025-01-22
 **Status**: ✅ Completato
 **Metodologia**: Super Mucca
 

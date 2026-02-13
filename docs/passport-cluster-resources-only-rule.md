@@ -1,6 +1,5 @@
 # Regola Critica: Cluster Passport - Solo Risorse OAuth/Passport
 
-**Data**: 2025-01-22
 **Status**: ✅ Regola Critica OBBLIGATORIA
 **Integrazione**: Architettura Filament Clusters
 

@@ -1,6 +1,5 @@
 # Fix: UserCommandIntegrationTest - Application and Config Issues
 
-**Data**: 2025-01-22
 **Problema**: Test fallisce con "Too few arguments" e "Target class [config] does not exist"
 **Principio**: Il sito funziona, quindi il test deve riflettere il comportamento reale
 

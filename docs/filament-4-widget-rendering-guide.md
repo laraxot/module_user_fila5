@@ -1,6 +1,5 @@
 # Guida Rendering Widget Filament 4 - Modulo User
 
-**Data**: 14 Ottobre 2025  
 **Modulo**: User  
 **Framework**: Filament 4.x + Laraxot
 

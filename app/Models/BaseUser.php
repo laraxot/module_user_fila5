@@ -175,7 +175,9 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         'is_active',
         'is_otp', // is One Time Password
         'password_expires_at',
+        'email_verified_at',
         'type',
+        'state',
     ];
 
     /** @var list<string> */
@@ -221,7 +223,9 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         } catch (\Throwable $e) {
             // Fallback in case database connection is not available (e.g., during testing)
             $this->fillable = array_values($this->getFillable());
+            $this->fillable = array_values($this->getFillable());
             // Avoid calling parent constructor if database is not available
+            /** @var array<string, mixed> $attributes */
             $this->attributes = $attributes;
         }
     }

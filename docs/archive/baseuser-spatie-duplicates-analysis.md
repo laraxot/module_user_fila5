@@ -235,5 +235,4 @@ Dopo la rimozione, eseguire:
 ---
 
 **Revisore**: Claude Code
-**Data**: 2025-10-15
 **Status**: ✅ Pronto per implementazione

@@ -1,6 +1,5 @@
 # PHPStan Level 10 Errors Resolution Roadmap - User Module
 
-**Data**: 2025-01-27  
 **Modulo**: User  
 **Livello PHPStan**: 10  
 **Status**: ✅ **COMPLETATO**  

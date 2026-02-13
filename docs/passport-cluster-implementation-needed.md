@@ -1,6 +1,5 @@
 # Passport Cluster - Implementazione Necessaria
 
-**Data**: 2025-01-22
 **Status**: 🔴 DA IMPLEMENTARE
 **Metodologia**: Super Mucca
 

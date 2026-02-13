@@ -2,7 +2,6 @@
 
 ## L'Errore Gravissimo
 
-**Data**: 2025-01-06  
 **Problema**: 35+ factory mancanti su 13 moduli  
 **Gravità**: CRITICA - Sistema di testing compromesso
 

@@ -1,6 +1,5 @@
 # BaseUser - Analisi Violazione Principio DRY
 
-**Data**: 15 Ottobre 2025  
 **File**: `Modules/User/app/Models/BaseUser.php`  
 **Problema**: Metodi duplicati già presenti in `Spatie\Permission\Traits\HasRoles`
 
