@@ -225,7 +225,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
             $this->fillable = array_values($this->getFillable());
             $this->fillable = array_values($this->getFillable());
             // Avoid calling parent constructor if database is not available
-            /** @var array<string, mixed> $attributes */
+            /* @var array<string, mixed> $attributes */
             $this->attributes = $attributes;
         }
     }

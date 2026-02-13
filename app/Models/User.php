@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\DB;
 use Modules\Media\Models\Media;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\Xot\Contracts\ProfileContract;
@@ -154,5 +153,4 @@ class User extends BaseUser
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;
         return true;
     }
-
 }

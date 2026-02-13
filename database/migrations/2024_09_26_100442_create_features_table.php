@@ -15,7 +15,7 @@ return new class extends XotBaseMigration {
      */
     public function up(): void
     {
-        if (!$this->tableExists()) {
+        if (! $this->tableExists()) {
             $this->tableCreate(static function (Blueprint $table): void {
                 $table->id();
                 $table->string('name');
@@ -24,7 +24,6 @@ return new class extends XotBaseMigration {
                 $table->unique(['name', 'scope']);
                 $table->timestamps(); // Add timestamps here
                 $table->softDeletes(); // Add soft deletes here, as hasSoftDeletes was true
-
             });
         }
     }
