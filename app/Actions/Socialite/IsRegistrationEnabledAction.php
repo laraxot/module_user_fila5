@@ -15,6 +15,8 @@ class IsRegistrationEnabledAction
 {
     use QueueableAction;
 
+
+
     /**
      * Execute the action.
      */

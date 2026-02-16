@@ -6,7 +6,10 @@ namespace Modules\User\Actions\Socialite\Utils;
 
 use Illuminate\Support\Str;
 use Illuminate\Support\Stringable;
+use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User;
+use ReflectionClass;
+use ReflectionException;
 
 /**
  * Classe che risolve e normalizza i campi del nome utente da dati di provider Socialite.
@@ -19,15 +22,15 @@ final readonly class UserNameFieldsResolver
 
     public ?string $name;
 
-    public ?string $first_name;
+    public ?string $firstName;
 
-    public ?string $last_name;
+    public ?string $lastName;
 
     public function __construct(User $user)
     {
         $this->name = $this->resolveName($user);
-        $this->first_name = $this->resolveName($user);
-        $this->last_name = $this->resolveSurname($user);
+        $this->firstName = $this->resolveName($user);
+        $this->lastName = $this->resolveSurname($user);
     }
 
     public static function make(User $user): self
@@ -50,25 +53,72 @@ final readonly class UserNameFieldsResolver
      */
     private function resolveNameFields(User $idpUser, string $searchMethod): string
     {
+        $this->validateSearchMethod($searchMethod);
+
+        $nameSection = $this->determineNameField($idpUser, $searchMethod);
+
+        return $nameSection->toString();
+    }
+
+    private function validateSearchMethod(string $searchMethod): void
+    {
         if (! in_array($searchMethod, [self::NAME_SEARCH, self::SURNAME_SEARCH], strict: true)) {
-            throw new \InvalidArgumentException('Metodo di ricerca non valido');
+            throw new InvalidArgumentException('Metodo di ricerca non valido');
         }
+    }
 
+    private function determineNameField(User $idpUser, string $searchMethod): Stringable
+    {
         $name = $idpUser->getName();
-        if (! is_string($name) || empty($name)) {
-            return '';
+        if (is_string($name) && ! empty($name)) {
+            $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($name, $searchMethod);
+            if ($nameSection->isNotEmpty()) {
+                return $nameSection;
+            }
         }
 
-        $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($name, $searchMethod);
-
-        if ($nameSection->isNotEmpty()) {
-            return $nameSection->toString();
+        $raw = $this->getRawUserData($idpUser);
+        $nameField = '';
+        if (isset($raw['name']) && is_string($raw['name']) && ! empty($raw['name'])) {
+            $nameField = $raw['name'];
         }
 
-        // Ottenere i dati raw in modo sicuro attraverso reflection
+        if (! empty($nameField)) {
+            $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($nameField, $searchMethod);
+            if ($nameSection->isNotEmpty() && ! filter_var($nameSection->toString(), FILTER_VALIDATE_EMAIL)) {
+                return $nameSection;
+            }
+        }
+
+        // Fallback to email analysis if name is empty or looks like an email
+        return $this->analyzeEmailForNameSection($idpUser, $searchMethod);
+    }
+
+    private function analyzeEmailForNameSection(User $idpUser, string $searchMethod): Stringable
+    {
+        $email = $idpUser->getEmail();
+        if (! is_string($email) || empty($email)) {
+            return Str::of('');
+        }
+
+        $emailPart = Str::of($email)
+            ->trim()
+            ->before('@');
+
+        // Use conditional logic instead of dynamic method call for type safety
+        if ($searchMethod === self::NAME_SEARCH) {
+            return $emailPart->before('.')->trim()->title();
+        }
+
+        // self::SURNAME_SEARCH
+        return $emailPart->after('.')->trim()->title();
+    }
+
+    private function getRawUserData(User $idpUser): array
+    {
         $raw = [];
         try {
-            $reflection = new \ReflectionClass($idpUser);
+            $reflection = new ReflectionClass($idpUser);
             if ($reflection->hasMethod('getRaw')) {
                 $method = $reflection->getMethod('getRaw');
                 $method->setAccessible(true);
@@ -84,56 +134,11 @@ final readonly class UserNameFieldsResolver
                     $raw = $userData;
                 }
             }
-        } catch (\ReflectionException $e) {
+        } catch (ReflectionException $e) {
             // Fallback silenzioso
         }
 
-        // Tenta di ottenere un nome dai dati raw
-        $nameField = '';
-        if (isset($raw['name']) && is_string($raw['name']) && ! empty($raw['name'])) {
-            $nameField = $raw['name'];
-        }
-
-        if (empty($nameField)) {
-            return '';
-        }
-
-        $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($nameField, $searchMethod);
-        if (! $nameSection->isNotEmpty()) {
-            // If both sections were empty, try the "hardest way"
-            // by analyzing email address
-            $email = $idpUser->getEmail();
-            if (! is_string($email) || empty($email)) {
-                return '';
-            }
-
-            return Str::of($email)
-                ->trim()
-                ->before('@')
-                ->$searchMethod('.') // If no point is available, the whole string should be returned
-                ->trim()
-                ->title()
-                ->toString();
-        }
-
-        if (filter_var($nameSection->toString(), FILTER_VALIDATE_EMAIL)) {
-            // If both sections were empty, try the "hardest way"
-            // by analyzing email address
-            $email = $idpUser->getEmail();
-            if (! is_string($email) || empty($email)) {
-                return '';
-            }
-
-            return Str::of($email)
-                ->trim()
-                ->before('@')
-                ->$searchMethod('.') // If no point is available, the whole string should be returned
-                ->trim()
-                ->title()
-                ->toString();
-        }
-
-        return $nameSection->toString();
+        return $raw;
     }
 
     private function resolveNameFieldByNameAttributeAnalysis(string $nameField, string $searchMethod): Stringable
@@ -143,7 +148,7 @@ final readonly class UserNameFieldsResolver
         }
 
         if (! in_array($searchMethod, [self::NAME_SEARCH, self::SURNAME_SEARCH], strict: true)) {
-            throw new \InvalidArgumentException('Metodo di ricerca non valido');
+            throw new InvalidArgumentException('Metodo di ricerca non valido');
         }
 
         return Str::of($nameField)

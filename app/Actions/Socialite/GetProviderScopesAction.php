@@ -15,6 +15,8 @@ class GetProviderScopesAction
 {
     use QueueableAction;
 
+
+
     /**
      * Execute the action.
      */

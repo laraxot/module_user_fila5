@@ -6,6 +6,7 @@ namespace Modules\User\Actions\User;
 
 use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
+use Illuminate\Contracts\Hashing\Hasher;
 
 class CreateUserAction
 {
@@ -18,6 +19,7 @@ class CreateUserAction
      */
     public function execute(array $data): User
     {
-        return User::create($data);
+        // Use app() to resolve the User model instance
+        return app(User::class)->create($data);
     }
 }
