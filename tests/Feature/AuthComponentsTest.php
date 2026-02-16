@@ -3,8 +3,9 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\View;
-use Modules\User\Tests\TestCase;
 use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
+
 use function Pest\Laravel\actingAs;
 use function Pest\Laravel\get;
 
@@ -85,8 +86,8 @@ describe('User Profile Components Tests', function (): void {
     test('profile pages use reorganized components correctly', function (): void {
         $user = User::factory()->create();
 
-        if (class_exists(\Modules\User\Models\Profile::class)) {
-            \Modules\User\Models\Profile::create([
+        if (class_exists(Modules\User\Models\Profile::class)) {
+            Modules\User\Models\Profile::create([
                 'id' => $user->id,
                 'user_id' => $user->id,
                 'email' => $user->email,
@@ -94,20 +95,20 @@ describe('User Profile Components Tests', function (): void {
                 'last_name' => $user->last_name,
             ]);
         }
-        
-        \Illuminate\Support\Facades\Route::get('/test-auth', function () {
-             return 'Authenticated User: ' . auth()->id();
+
+        Illuminate\Support\Facades\Route::get('/test-auth', function () {
+            return 'Authenticated User: '.auth()->id();
         });
 
         $debugResponse = actingAs($user, 'web')->get('/test-auth');
         dump($debugResponse->content());
 
         $response = actingAs($user, 'web')->get('/it/profile/edit');
-        
-        if ($response->status() === 302) {
-             dump('Redirecting to: ' . $response->headers->get('Location'));
-             dump('User ID: ' . $user->id);
-             dump('Auth Check before request: ' . (auth()->check() ? 'Yes' : 'No'));
+
+        if (302 === $response->status()) {
+            dump('Redirecting to: '.$response->headers->get('Location'));
+            dump('User ID: '.$user->id);
+            dump('Auth Check before request: '.(auth()->check() ? 'Yes' : 'No'));
         }
 
         /* @phpstan-ignore-next-line method.nonObject */

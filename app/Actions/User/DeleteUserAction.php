@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\User;
 
+use Illuminate\Contracts\Auth\Guard;
+use Illuminate\Contracts\Hashing\Hasher;
 use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
-use Illuminate\Contracts\Hashing\Hasher;
-use Illuminate\Contracts\Auth\Guard;
 
 class DeleteUserAction
 {
@@ -16,7 +16,8 @@ class DeleteUserAction
     public function __construct(
         private readonly Hasher $hasher,
         private readonly Guard $authGuard,
-    ) {}
+    ) {
+    }
 
     /**
      * Elimina l'utente dopo aver verificato la password.

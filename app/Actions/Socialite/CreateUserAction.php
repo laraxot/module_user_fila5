@@ -22,8 +22,6 @@ class CreateUserAction
 {
     use QueueableAction;
 
-
-
     /**
      * Execute the action to create a new user from socialite authentication.
      *

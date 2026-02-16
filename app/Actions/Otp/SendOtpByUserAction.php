@@ -6,7 +6,6 @@ namespace Modules\User\Actions\Otp;
 
 use Filament\Notifications\Notification as FilamentNotification;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
 use Modules\User\Datas\PasswordData;
@@ -27,7 +26,8 @@ class SendOtpByUserAction
         private readonly PasswordData $passwordData,
         private readonly Str $stringHelper,
         private readonly Hasher $hasher,
-    ) {}
+    ) {
+    }
 
     /**
      * Execute the action: Generate and send an OTP to the specified user.

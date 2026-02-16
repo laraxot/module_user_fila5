@@ -6,7 +6,6 @@ namespace Modules\User\Actions\User;
 
 use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
-use Illuminate\Contracts\Hashing\Hasher;
 
 class CreateUserAction
 {

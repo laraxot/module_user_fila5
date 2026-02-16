@@ -7,7 +7,6 @@ namespace Modules\User\Actions\Socialite\Utils;
 use Illuminate\Support\Str;
 use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User;
-use RuntimeException;
 
 final class EmailDomainAnalyzer
 {
@@ -17,7 +16,7 @@ final class EmailDomainAnalyzer
         private readonly string $ssoProvider,
     ) {
         if (empty($ssoProvider)) {
-            throw new InvalidArgumentException('Il provider SSO non può essere vuoto');
+            throw new \InvalidArgumentException('Il provider SSO non può essere vuoto');
         }
     }
 
@@ -39,7 +38,7 @@ final class EmailDomainAnalyzer
     public function hasFirstPartyDomain(): bool
     {
         if (! isset($this->ssoUser)) {
-            throw new RuntimeException('L\'utente SSO non è stato impostato. Utilizzare setUser() prima di chiamare questo metodo.');
+            throw new \RuntimeException('L\'utente SSO non è stato impostato. Utilizzare setUser() prima di chiamare questo metodo.');
         }
 
         $email = $this->ssoUser->getEmail();
@@ -61,7 +60,7 @@ final class EmailDomainAnalyzer
     public function hasClientDomain(): bool
     {
         if (! isset($this->ssoUser)) {
-            throw new RuntimeException('L\'utente SSO non è stato impostato. Utilizzare setUser() prima di chiamare questo metodo.');
+            throw new \RuntimeException('L\'utente SSO non è stato impostato. Utilizzare setUser() prima di chiamare questo metodo.');
         }
 
         $email = $this->ssoUser->getEmail();
