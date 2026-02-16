@@ -16,7 +16,18 @@ return [
             'label' => 'reorderRecords',
         ],
     ],
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
+    'label' => 'Authentication Log',
+    'plural_label' => 'Authentication Log (Plurale)',
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+        ],
+    ],
 ];

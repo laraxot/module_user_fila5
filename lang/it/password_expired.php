@@ -62,7 +62,17 @@ return [
     'exceptions' => [
         'column_not_found' => 'Either the column ":column_name" or the password column ":password_column_name" was not found in the ":table_name" table. Please publish migrations and run them, if the error still persists, publish the config file and update the table_name, column_name, and password_column_name values.',
     ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
+    'navigation' => [
+        'name' => 'Password Expired',
+        'plural' => 'Password Expired',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Password Expired',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Password Expired',
+    'plural_label' => 'Password Expired (Plurale)',
 ];

@@ -75,7 +75,17 @@ return [
             'description' => 'Utente che ha creato questo team',
         ],
     ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
+    'navigation' => [
+        'name' => 'Teams',
+        'plural' => 'Teams',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Teams',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Teams',
+    'plural_label' => 'Teams (Plurale)',
 ];

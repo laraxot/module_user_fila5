@@ -38,8 +38,8 @@ return [
             'label' => 'Lingue',
             'placeholder' => 'Aggiungi una lingua',
             'tooltip' => 'Lingue supportate dal dispositivo',
-            'helper_text' => 'Elenco delle lingue configurate o supportate dal dispositivo (formato: it, en, es)',
-            'help' => 'Seleziona o digita i codici delle lingue (es. it, en, es)',
+            'helper_text' => 'Elenco delle lingue configurate o supportate dal dispositivo (formato: it, en, es]',
+            'help' => 'Seleziona o digita i codici delle lingue (es. it, en, es]',
         ],
         'device' => [
             'label' => 'Nome Dispositivo',
@@ -53,14 +53,14 @@ return [
             'placeholder' => 'Inserisci la piattaforma',
             'tooltip' => 'Sistema operativo del dispositivo',
             'helper_text' => 'Sistema operativo o piattaforma su cui funziona il dispositivo',
-            'help' => 'Piattaforma del dispositivo (iOS, Android, Windows, Linux, macOS)',
+            'help' => 'Piattaforma del dispositivo (iOS, Android, Windows, Linux, macOS]',
         ],
         'browser' => [
             'label' => 'Browser',
             'placeholder' => 'Inserisci il browser',
             'tooltip' => 'Browser web utilizzato',
             'helper_text' => 'Applicazione browser utilizzata per navigare su internet',
-            'help' => 'Browser utilizzato (Chrome, Firefox, Safari, Edge)',
+            'help' => 'Browser utilizzato (Chrome, Firefox, Safari, Edge]',
         ],
         'version' => [
             'label' => 'Versione',
@@ -81,7 +81,7 @@ return [
             'placeholder' => 'Inserisci il tipo di robot',
             'tooltip' => 'Tipo specifico di robot',
             'helper_text' => 'Nome o tipo del robot/crawler se il dispositivo è automatizzato',
-            'help' => 'Tipo di robot se applicabile (Googlebot, Bingbot, etc.)',
+            'help' => 'Tipo di robot se applicabile (Googlebot, Bingbot, etc.]',
         ],
         'is_desktop' => [
             'label' => 'È Desktop',
@@ -94,8 +94,8 @@ return [
             'label' => 'È Mobile',
             'placeholder' => 'Seleziona se è mobile',
             'tooltip' => 'Dispositivo mobile portatile',
-            'helper_text' => 'Specifica se il dispositivo è mobile (smartphone, tablet o dispositivo portatile)',
-            'help' => 'Indica se è un dispositivo mobile (smartphone o tablet)',
+            'helper_text' => 'Specifica se il dispositivo è mobile (smartphone, tablet o dispositivo portatile]',
+            'help' => 'Indica se è un dispositivo mobile (smartphone o tablet]',
         ],
         'is_tablet' => [
             'label' => 'È Tablet',
@@ -258,6 +258,6 @@ return [
         ],
         'total_devices' => 'Totale dispositivi: :count',
     ],
-    'label' => '',
-    'plural_label' => '',
+    'label' => 'Device',
+    'plural_label' => 'Device (Plurale)',
 ];

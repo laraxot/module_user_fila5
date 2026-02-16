@@ -25,7 +25,7 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome Studio Medico',
-            'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi)',
+            'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi]',
             'help' => 'Nome ufficiale dello studio medico come registrato in camera di commercio',
             'validation' => [
                 'required' => 'Il nome dello studio è obbligatorio',
@@ -35,7 +35,7 @@ return [
         ],
         'phone' => [
             'label' => 'Numero di Telefono Studio',
-            'placeholder' => 'Inserisci numero telefonico principale (es. +39 06 1234567)',
+            'placeholder' => 'Inserisci numero telefonico principale (es. +39 06 1234567]',
             'help' => 'Numero di telefono principale dello studio per contatti diretti e urgenze',
             'validation' => [
                 'required' => 'Il numero di telefono è obbligatorio',
@@ -45,7 +45,7 @@ return [
         ],
         'email' => [
             'label' => 'Email Ufficiale Studio',
-            'placeholder' => 'Inserisci email istituzionale (es. info@studiodentistico.it)',
+            'placeholder' => 'Inserisci email istituzionale (es. info@studiodentistico.it]',
             'help' => 'Indirizzo email ufficiale dello studio per comunicazioni istituzionali',
             'validation' => [
                 'required' => 'L\'indirizzo email è obbligatorio',
@@ -56,7 +56,7 @@ return [
         ],
         'address' => [
             'label' => 'Indirizzo Completo Studio',
-            'placeholder' => 'Via/Piazza Nome Strada, Numero Civico, CAP Città (Provincia)',
+            'placeholder' => 'Via/Piazza Nome Strada, Numero Civico, CAP Città (Provincia]',
             'help' => 'Indirizzo fisico completo dello studio medico comprensivo di CAP e provincia',
             'validation' => [
                 'required' => 'L\'indirizzo dello studio è obbligatorio',
@@ -86,7 +86,7 @@ return [
         ],
         'vat_number' => [
             'label' => 'Partita IVA Studio',
-            'placeholder' => 'Inserisci partita IVA (11 cifre)',
+            'placeholder' => 'Inserisci partita IVA (11 cifre]',
             'help' => 'Partita IVA dello studio medico registrata presso l\'Agenzia delle Entrate',
             'validation' => [
                 'required' => 'La partita IVA è obbligatoria',
@@ -117,8 +117,8 @@ return [
         ],
         'website' => [
             'label' => 'Sito Web Studio',
-            'placeholder' => 'https://www.tuostudio.it (opzionale)',
-            'help' => 'Sito web ufficiale dello studio medico (campo facoltativo)',
+            'placeholder' => 'https://www.tuostudio.it (opzionale]',
+            'help' => 'Sito web ufficiale dello studio medico (campo facoltativo]',
             'validation' => [
                 'url' => 'Inserisci un URL valido che inizi con http:// o https://',
             ],
@@ -251,6 +251,6 @@ return [
         'contact_info' => 'I dati di contatto inseriti verranno utilizzati per tutte le comunicazioni ufficiali',
         'data_protection' => 'Tutti i dati sono protetti secondo le normative europee GDPR',
     ],
-    'label' => '',
-    'plural_label' => '',
+    'label' => 'Register Tenant',
+    'plural_label' => 'Register Tenant (Plurale)',
 ];

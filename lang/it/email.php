@@ -14,9 +14,40 @@ return [
     'reset_password' => 'Clicca qui per reimpostare la tua password',
     'click_to_confirm' => 'Clicca qui per confermare il tuo account:',
     'password_reset_expiration' => 'Questo link per il reset della password scadrà tra :count minuti.',
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
-    'actions' => [],
+    'navigation' => [
+        'name' => 'Email',
+        'plural' => 'Email',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Email',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Email',
+    'plural_label' => 'Email (Plurale)',
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Email',
+        ],
+        'edit' => [
+            'label' => 'Modifica Email',
+        ],
+        'delete' => [
+            'label' => 'Elimina Email',
+        ],
+    ],
 ];

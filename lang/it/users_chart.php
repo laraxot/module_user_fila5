@@ -8,8 +8,29 @@ return [
             'label' => 'test',
         ],
     ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
+    'navigation' => [
+        'name' => 'Users Chart',
+        'plural' => 'Users Chart',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Users Chart',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Users Chart',
+    'plural_label' => 'Users Chart (Plurale)',
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+        ],
+    ],
 ];

@@ -79,7 +79,7 @@ return [
         ],
         '2fa' => [
             'title' => 'Autenticazione a due Fattori',
-            'description' => 'Gestisci l\'autenticazione a due fattori per il tuo account (raccomandato).',
+            'description' => 'Gestisci l\'autenticazione a due fattori per il tuo account (raccomandato].',
             'actions' => [
                 'enable' => 'Abilita',
                 'regenerate_codes' => 'Rigenera Codici',
@@ -155,8 +155,28 @@ return [
     ],
     'or' => 'O',
     'cancel' => 'Annulla',
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'actions' => [],
+    'navigation' => [
+        'name' => 'Default',
+        'plural' => 'Default',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Default',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Default',
+    'plural_label' => 'Default (Plurale)',
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Default',
+        ],
+        'edit' => [
+            'label' => 'Modifica Default',
+        ],
+        'delete' => [
+            'label' => 'Elimina Default',
+        ],
+    ],
 ];

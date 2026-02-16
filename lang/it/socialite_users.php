@@ -20,8 +20,28 @@ return [
             'label' => 'avatar',
         ],
     ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'actions' => [],
+    'navigation' => [
+        'name' => 'Socialite Users',
+        'plural' => 'Socialite Users',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Socialite Users',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Socialite Users',
+    'plural_label' => 'Socialite Users (Plurale)',
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Socialite Users',
+        ],
+        'edit' => [
+            'label' => 'Modifica Socialite Users',
+        ],
+        'delete' => [
+            'label' => 'Elimina Socialite Users',
+        ],
+    ],
 ];

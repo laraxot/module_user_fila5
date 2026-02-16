@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Modules\User\Database\Factories\DeviceProfileFactory;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -15,10 +14,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * Extends the base DeviceUser model to add specific functionality.
  *
  * @property ProfileContract|null $creator
- * @property Device|null          $device
+ * @property Device|null $device
  * @property ProfileContract|null $profile
  * @property ProfileContract|null $updater
- * @property User|null            $user
+ * @property User|null $user
  *
  * @method static Builder<static>|DeviceProfile newModelQuery()
  * @method static Builder<static>|DeviceProfile newQuery()
@@ -28,8 +27,6 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $deleter
  *
- * @method static DeviceProfileFactory factory($count = null, $state = [])
- *
  * @mixin \Eloquent
  */
 class DeviceProfile extends DeviceUser
@@ -37,7 +34,7 @@ class DeviceProfile extends DeviceUser
     /**
      * Create a new model instance.
      *
-     * @param array<string, mixed> $attributes
+     * @param  array<string, mixed>  $attributes
      */
     public function __construct(array $attributes = [])
     {

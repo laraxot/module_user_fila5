@@ -43,7 +43,7 @@ return [
             'placeholder' => 'Seleziona la guardia',
             'tooltip' => 'Nome della guardia per questo ruolo, es. "web"',
             'helper_text' => 'Sistema di autenticazione utilizzato per questo ruolo',
-            'help' => 'Specifica il sistema di autenticazione (web, api, ecc.)',
+            'help' => 'Specifica il sistema di autenticazione (web, api, ecc.]',
             'options' => [
                 'web' => 'Web',
                 'api' => 'API',
@@ -384,5 +384,5 @@ return [
         'user' => 'Utente',
     ],
     'label' => 'role',
-    'plural_label' => '',
+    'plural_label' => 'Role (Plurale)',
 ];

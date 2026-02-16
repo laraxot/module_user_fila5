@@ -69,7 +69,17 @@ return [
             'label' => 'openFilters',
         ],
     ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
+    'navigation' => [
+        'name' => 'Recent Logins',
+        'plural' => 'Recent Logins',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Recent Logins',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Recent Logins',
+    'plural_label' => 'Recent Logins (Plurale)',
 ];

@@ -28,7 +28,7 @@ return [
         'permission' => [
             'label' => 'Permesso',
             'placeholder' => 'Inserisci il nome del permesso',
-            'help' => 'Il nome del permesso (es. view-reports, edit-documents)',
+            'help' => 'Il nome del permesso (es. view-reports, edit-documents]',
         ],
         'id' => [
             'label' => 'ID',
@@ -61,6 +61,6 @@ return [
             'confirmation' => 'Sei sicuro di voler eliminare questo permesso team?',
         ],
     ],
-    'label' => '',
-    'plural_label' => '',
+    'label' => 'Team Permission',
+    'plural_label' => 'Team Permission (Plurale)',
 ];

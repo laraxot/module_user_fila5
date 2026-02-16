@@ -73,7 +73,7 @@ return [
                 'help' => 'Ripeti la nuova password per conferma',
             ],
             'is_otp' => [
-                'label' => 'Autenticazione a Due Fattori (OTP)',
+                'label' => 'Autenticazione a Due Fattori (OTP]',
                 'help' => 'Abilita l\'autenticazione a due fattori per maggiore sicurezza',
             ],
             'password_expires_at' => [
@@ -171,9 +171,40 @@ return [
             'confirm' => 'Sei sicuro di voler uscire?',
         ],
     ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
-    'actions' => [],
+    'navigation' => [
+        'name' => 'Widgets',
+        'plural' => 'Widgets',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Widgets',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Widgets',
+    'plural_label' => 'Widgets (Plurale)',
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Widgets',
+        ],
+        'edit' => [
+            'label' => 'Modifica Widgets',
+        ],
+        'delete' => [
+            'label' => 'Elimina Widgets',
+        ],
+    ],
 ];

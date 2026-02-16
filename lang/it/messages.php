@@ -37,9 +37,40 @@ return [
     'invalid_format' => 'Formato non valido.',
     'value_too_long' => 'Il valore è troppo lungo.',
     'value_too_short' => 'Il valore è troppo corto.',
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
-    'actions' => [],
+    'navigation' => [
+        'name' => 'Messages',
+        'plural' => 'Messages',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Messages',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Messages',
+    'plural_label' => 'Messages (Plurale)',
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Messages',
+        ],
+        'edit' => [
+            'label' => 'Modifica Messages',
+        ],
+        'delete' => [
+            'label' => 'Elimina Messages',
+        ],
+    ],
 ];

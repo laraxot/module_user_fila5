@@ -202,7 +202,7 @@ return [
         'provider' => [
             'label' => 'Provider',
             'placeholder' => 'Inserisci il nome del provider',
-            'help' => 'Provider di autenticazione (es. Google, Facebook)',
+            'help' => 'Provider di autenticazione (es. Google, Facebook]',
             'tooltip' => 'Provider OAuth',
             'helper_text' => '',
         ],
@@ -681,5 +681,5 @@ return [
             'label' => 'empty',
         ],
     ],
-    'plural_label' => '',
+    'plural_label' => 'User (Plurale)',
 ];

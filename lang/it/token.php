@@ -40,6 +40,6 @@ return [
             'icon' => 'reorderRecords',
         ],
     ],
-    'label' => '',
-    'plural_label' => '',
+    'label' => 'Token',
+    'plural_label' => 'Token (Plurale)',
 ];

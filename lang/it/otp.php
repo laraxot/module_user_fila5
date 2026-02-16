@@ -96,6 +96,6 @@ return [
         'sort' => 31,
         'icon' => 'user-user-otp',
     ],
-    'label' => '',
-    'plural_label' => '',
+    'label' => 'Otp',
+    'plural_label' => 'Otp (Plurale)',
 ];

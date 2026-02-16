@@ -182,5 +182,5 @@ return [
         'label' => 'team.model',
     ],
     'label' => 'team',
-    'plural_label' => '',
+    'plural_label' => 'Team (Plurale)',
 ];

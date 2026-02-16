@@ -131,9 +131,40 @@ return [
     'email_format' => 'L\'email deve avere un formato valido.',
     'phone_format' => 'Il numero di telefono deve avere un formato valido.',
     'birth_date_before' => 'La data di nascita deve essere precedente ad oggi.',
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
-    'actions' => [],
+    'navigation' => [
+        'name' => 'Validation',
+        'plural' => 'Validation',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Validation',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Validation',
+    'plural_label' => 'Validation (Plurale)',
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Validation',
+        ],
+        'edit' => [
+            'label' => 'Modifica Validation',
+        ],
+        'delete' => [
+            'label' => 'Elimina Validation',
+        ],
+    ],
 ];

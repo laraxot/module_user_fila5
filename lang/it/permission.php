@@ -38,7 +38,17 @@ return [
         'group' => 'Sicurezza',
         'icon' => 'heroicon-o-shield-check',
     ],
-    'label' => '',
-    'plural_label' => '',
-    'actions' => [],
+    'label' => 'Permission',
+    'plural_label' => 'Permission (Plurale)',
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Permission',
+        ],
+        'edit' => [
+            'label' => 'Modifica Permission',
+        ],
+        'delete' => [
+            'label' => 'Elimina Permission',
+        ],
+    ],
 ];

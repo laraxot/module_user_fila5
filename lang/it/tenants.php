@@ -29,8 +29,28 @@ return [
         'domain.placeholder' => 'Inserisci il dominio',
         'domain.helper_text' => 'Il dominio personalizzato per questo tenant',
     ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'actions' => [],
+    'navigation' => [
+        'name' => 'Tenants',
+        'plural' => 'Tenants',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Tenants',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Tenants',
+    'plural_label' => 'Tenants (Plurale)',
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Tenants',
+        ],
+        'edit' => [
+            'label' => 'Modifica Tenants',
+        ],
+        'delete' => [
+            'label' => 'Elimina Tenants',
+        ],
+    ],
 ];

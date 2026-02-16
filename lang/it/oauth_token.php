@@ -82,7 +82,17 @@ return [
             'label' => 'expires_at',
         ],
     ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
+    'navigation' => [
+        'name' => 'Oauth Token',
+        'plural' => 'Oauth Token',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Oauth Token',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Oauth Token',
+    'plural_label' => 'Oauth Token (Plurale)',
 ];

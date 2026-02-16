@@ -14,8 +14,29 @@ return [
         'sort' => 4,
         'icon' => 'heroicon-o-key',
     ],
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
-    'actions' => [],
+    'label' => 'Password Reset',
+    'plural_label' => 'Password Reset (Plurale)',
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Password Reset',
+        ],
+        'edit' => [
+            'label' => 'Modifica Password Reset',
+        ],
+        'delete' => [
+            'label' => 'Elimina Password Reset',
+        ],
+    ],
 ];

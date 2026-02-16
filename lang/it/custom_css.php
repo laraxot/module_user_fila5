@@ -45,6 +45,6 @@ return [
         'sort' => 15,
         'icon' => 'heroicon-o-code-bracket',
     ],
-    'label' => '',
-    'plural_label' => '',
+    'label' => 'Custom Css',
+    'plural_label' => 'Custom Css (Plurale)',
 ];

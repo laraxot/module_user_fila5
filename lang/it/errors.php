@@ -64,9 +64,40 @@ return [
             'description' => 'Il valore inserito è troppo corto.',
         ],
     ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
-    'actions' => [],
+    'navigation' => [
+        'name' => 'Errors',
+        'plural' => 'Errors',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Errors',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Errors',
+    'plural_label' => 'Errors (Plurale)',
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Errors',
+        ],
+        'edit' => [
+            'label' => 'Modifica Errors',
+        ],
+        'delete' => [
+            'label' => 'Elimina Errors',
+        ],
+    ],
 ];

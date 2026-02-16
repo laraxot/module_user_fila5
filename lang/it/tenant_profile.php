@@ -30,8 +30,29 @@ return [
             'tooltip' => 'logout',
         ],
     ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
+    'navigation' => [
+        'name' => 'Tenant Profile',
+        'plural' => 'Tenant Profile',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Tenant Profile',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Tenant Profile',
+    'plural_label' => 'Tenant Profile (Plurale)',
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+        ],
+    ],
 ];

@@ -142,7 +142,7 @@ return [
         'fiscal_code' => [
             'label' => 'Codice Fiscale',
             'placeholder' => 'Inserisci il codice fiscale',
-            'help' => 'Codice fiscale italiano (16 caratteri)',
+            'help' => 'Codice fiscale italiano (16 caratteri]',
         ],
         'birth_date' => [
             'label' => 'Data di Nascita',
@@ -281,6 +281,6 @@ return [
             'step' => 'Passaggio completato correttamente',
         ],
     ],
-    'label' => '',
-    'plural_label' => '',
+    'label' => 'Registration',
+    'plural_label' => 'Registration (Plurale)',
 ];

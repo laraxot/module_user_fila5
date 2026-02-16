@@ -47,7 +47,17 @@ return [
         'group' => 'Authentication',
         'label' => 'Social Authentications',
     ],
-    'label' => '',
-    'plural_label' => '',
-    'actions' => [],
+    'label' => 'Socialite User',
+    'plural_label' => 'Socialite User (Plurale)',
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Socialite User',
+        ],
+        'edit' => [
+            'label' => 'Modifica Socialite User',
+        ],
+        'delete' => [
+            'label' => 'Elimina Socialite User',
+        ],
+    ],
 ];

@@ -14,8 +14,29 @@ return [
         'sort' => 87,
         'icon' => 'heroicon-o-building-office',
     ],
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
-    'actions' => [],
+    'label' => 'Tenant User',
+    'plural_label' => 'Tenant User (Plurale)',
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Tenant User',
+        ],
+        'edit' => [
+            'label' => 'Modifica Tenant User',
+        ],
+        'delete' => [
+            'label' => 'Elimina Tenant User',
+        ],
+    ],
 ];

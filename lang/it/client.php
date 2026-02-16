@@ -165,6 +165,6 @@ return [
             'heading' => 'empty',
         ],
     ],
-    'label' => '',
-    'plural_label' => '',
+    'label' => 'Client',
+    'plural_label' => 'Client (Plurale)',
 ];

@@ -92,6 +92,6 @@ return [
             'label' => 'updateDataAction',
         ],
     ],
-    'label' => '',
-    'plural_label' => '',
+    'label' => 'Password',
+    'plural_label' => 'Password (Plurale)',
 ];
