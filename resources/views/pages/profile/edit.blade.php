@@ -21,7 +21,7 @@ use function Laravel\Folio\middleware;
 use function Laravel\Folio\name;
 
 name('profile.edit');
-// middleware(['auth', 'verified']);
+middleware(['auth', 'verified']);
 
 /**
  * Profile edit component for managing user profile, password updates, and account deletion.
@@ -105,11 +105,6 @@ $component = new class extends Component {
      */
     public function mount(): void
     {
-        dump('Mounting Profile Edit');
-        dump('Auth Check: ' . (Auth::check() ? 'Yes' : 'No'));
-        dump('Auth ID: ' . Auth::id());
-        dump('Guard: ' . config('auth.defaults.guard'));
-        
         try {
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated');
