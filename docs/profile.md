@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: profile
@@ -14,3 +15,10 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/profile.md
+=======
+# profile
+
+<!-- Contenuto migrato da _docs/profile.txt -->
+
+https://learn.userfrosting.com/recipes/extending-the-user-model
+>>>>>>> 60a2c9a9 (.)

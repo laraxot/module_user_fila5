@@ -2,6 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+uses(Modules\User\Tests\TestCase::class);
+
+>>>>>>> 60a2c9a9 (.)
 use Modules\User\Models\Policies\AuthenticationLogPolicy;
 use Modules\User\Models\Policies\AuthenticationPolicy;
 use Modules\User\Models\Policies\DevicePolicy;
@@ -18,6 +23,7 @@ use Modules\User\Models\Policies\SocialiteUserPolicy;
 use Modules\User\Models\Policies\SocialProviderPolicy;
 use Modules\User\Models\Policies\TeamInvitationPolicy;
 use Modules\User\Models\Policies\TeamPermissionPolicy;
+<<<<<<< HEAD
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -101,4 +107,85 @@ test('ExtraPolicy can be instantiated', function () {
 test('NotificationPolicy can be instantiated', function () {
     $policy = new NotificationPolicy;
     Assert::assertInstanceOf(NotificationPolicy::class, $policy);
+=======
+
+test('OauthClientPolicy can be instantiated', function () {
+    $policy = new OauthClientPolicy();
+    expect($policy)->toBeInstanceOf(OauthClientPolicy::class);
+});
+
+test('OauthAccessTokenPolicy can be instantiated', function () {
+    $policy = new OauthAccessTokenPolicy();
+    expect($policy)->toBeInstanceOf(OauthAccessTokenPolicy::class);
+});
+
+test('OauthAuthCodePolicy can be instantiated', function () {
+    $policy = new OauthAuthCodePolicy();
+    expect($policy)->toBeInstanceOf(OauthAuthCodePolicy::class);
+});
+
+test('OauthRefreshTokenPolicy can be instantiated', function () {
+    $policy = new OauthRefreshTokenPolicy();
+    expect($policy)->toBeInstanceOf(OauthRefreshTokenPolicy::class);
+});
+
+test('OauthPersonalAccessClientPolicy can be instantiated', function () {
+    $policy = new OauthPersonalAccessClientPolicy();
+    expect($policy)->toBeInstanceOf(OauthPersonalAccessClientPolicy::class);
+});
+
+test('SocialiteUserPolicy can be instantiated', function () {
+    $policy = new SocialiteUserPolicy();
+    expect($policy)->toBeInstanceOf(SocialiteUserPolicy::class);
+});
+
+test('SocialProviderPolicy can be instantiated', function () {
+    $policy = new SocialProviderPolicy();
+    expect($policy)->toBeInstanceOf(SocialProviderPolicy::class);
+});
+
+test('AuthenticationLogPolicy can be instantiated', function () {
+    $policy = new AuthenticationLogPolicy();
+    expect($policy)->toBeInstanceOf(AuthenticationLogPolicy::class);
+});
+
+test('AuthenticationPolicy can be instantiated', function () {
+    $policy = new AuthenticationPolicy();
+    expect($policy)->toBeInstanceOf(AuthenticationPolicy::class);
+});
+
+test('DevicePolicy can be instantiated', function () {
+    $policy = new DevicePolicy();
+    expect($policy)->toBeInstanceOf(DevicePolicy::class);
+});
+
+test('DeviceProfilePolicy can be instantiated', function () {
+    $policy = new DeviceProfilePolicy();
+    expect($policy)->toBeInstanceOf(DeviceProfilePolicy::class);
+});
+
+test('TeamInvitationPolicy can be instantiated', function () {
+    $policy = new TeamInvitationPolicy();
+    expect($policy)->toBeInstanceOf(TeamInvitationPolicy::class);
+});
+
+test('TeamPermissionPolicy can be instantiated', function () {
+    $policy = new TeamPermissionPolicy();
+    expect($policy)->toBeInstanceOf(TeamPermissionPolicy::class);
+});
+
+test('FeaturePolicy can be instantiated', function () {
+    $policy = new FeaturePolicy();
+    expect($policy)->toBeInstanceOf(FeaturePolicy::class);
+});
+
+test('ExtraPolicy can be instantiated', function () {
+    $policy = new ExtraPolicy();
+    expect($policy)->toBeInstanceOf(ExtraPolicy::class);
+});
+
+test('NotificationPolicy can be instantiated', function () {
+    $policy = new NotificationPolicy();
+    expect($policy)->toBeInstanceOf(NotificationPolicy::class);
+>>>>>>> 60a2c9a9 (.)
 });

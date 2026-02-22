@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Cross Database Relations Issue - belongsToManyX SQLite Problem"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Cross Database Relations Issue - belongsToManyX SQLite Problem
 
 ## Problema Identificato

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Risoluzione dei Conflitti nei File JavaScript del Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Risoluzione dei Conflitti nei File JavaScript del Modulo User
 
 ## Problema
@@ -118,5 +121,9 @@ Dopo la risoluzione, sono state eseguite le seguenti verifiche:
 ## Collegamenti
 
 - [Documentazione Modulo User](module_user.md)
+<<<<<<< HEAD
 - [Best Practices per la Gestione dei Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md)
+=======
+- [Best Practices per la Gestione dei Conflitti Git](../../../../docs/risoluzione_conflitti_git.md)
+>>>>>>> 60a2c9a9 (.)
 - [Alpine.js](https://alpinejs.dev/) 

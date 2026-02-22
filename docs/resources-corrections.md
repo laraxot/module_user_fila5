@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Resources Corrections Summary - [DATE]"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Resources Corrections Summary - [DATE]
 
 ## Obiettivo

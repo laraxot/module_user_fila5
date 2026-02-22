@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: placeholder
@@ -14,3 +15,6 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/placeholder.txt
+=======
+https://jsonplaceholder.typicode.com/users
+>>>>>>> 60a2c9a9 (.)

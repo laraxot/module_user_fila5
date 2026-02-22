@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Configurazione OAuth con GitHub"
 type: concept
@@ -11,6 +12,8 @@ related:
   - "./oauth-architecture.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 ### Versione HEAD
 
 # Configurazione OAuth con GitHub

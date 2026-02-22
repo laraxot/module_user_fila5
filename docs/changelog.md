@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Changelog"
 type: concept
@@ -60,3 +61,10 @@ e questo progetto aderisce al [Semantic Versioning](https://semver.org/spec/v2.0
 - Widget per il login e la registrazione
 - Gestione delle autenticazioni
 - Documentazione base del modulo
+=======
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [Unreleased]
+>>>>>>> 60a2c9a9 (.)

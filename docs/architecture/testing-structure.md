@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Struttura dei Tests del Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./user-gdpr-oupling.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Struttura dei Tests del Modulo User
 
 ## Panoramica
@@ -312,6 +315,10 @@ dump($variable);
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 60a2c9a9 (.)
 
 
 

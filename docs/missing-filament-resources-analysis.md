@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Missing Filament Resources Analysis - User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Missing Filament Resources Analysis - User Module
 
 ## 📋 Executive Summary

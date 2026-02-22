@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Audit Logging"
 type: concept
@@ -17,6 +18,8 @@ related:
   - "./user-traits.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Audit Logging
 
 ## Overview

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Debug: Perché logout.blade.php non funziona (Volt + Folio)"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Debug: Perché logout.blade.php non funziona (Volt + Folio)
 
 ## Analisi del problema

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Passport Cluster - Namespace Fix"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Passport Cluster - Namespace Fix
 
 **Status**: 🔧 IN PROGRESS - Critical Fix

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Two-Factor Authentication - 70% Completato"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./03-later.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Two-Factor Authentication - 70% Completato
 
 ## Descrizione

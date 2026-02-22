@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Comandi Console - Modulo User"
 type: concept
@@ -17,6 +18,8 @@ related:
   - "./console-commands.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Comandi Console - Modulo User
 
 ## Panoramica
@@ -224,7 +227,11 @@ Modules/User/
 ```
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Console Commands Philosophy](console-commands-philosophy.md)
+=======
+- [Console Commands Philosophy](console_commands_philosophy.md)
+>>>>>>> 60a2c9a9 (.)
 - [User Models](../models/readme.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
@@ -262,3 +269,7 @@ Modules/User/
 - [ ] Logging strutturato
 - [ ] Metriche di utilizzo
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-27*
+>>>>>>> 60a2c9a9 (.)

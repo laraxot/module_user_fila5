@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Integrazione di JpGraph nel Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Integrazione di JpGraph nel Modulo User
 
 ## Installazione Composer e namespace

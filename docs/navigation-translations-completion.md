@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Navigation Translations Completion Roadmap - User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Navigation Translations Completion Roadmap - User Module
 
 **Modulo**: User  

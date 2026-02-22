@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "👥 USER MODULE - ROADMAP 2025"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # 👥 USER MODULE - ROADMAP 2025
 
 **Modulo**: User (Authentication & Authorization)
@@ -492,6 +495,11 @@ User Module
 
 ---
 
+<<<<<<< HEAD
+=======
+**Last Updated**: 2025-10-01
+**Next Review**: 2025-11-01
+>>>>>>> 60a2c9a9 (.)
 **Status**: 🚧 ACTIVE DEVELOPMENT
 **Confidence Level**: 98%
 

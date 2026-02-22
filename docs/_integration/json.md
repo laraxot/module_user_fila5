@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "json"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./profile.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # json
 
 <!-- Contenuto migrato da _docs/json.txt -->

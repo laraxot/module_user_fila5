@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Filament 4: Namespace Actions - Filosofia Laraxot"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Filament 4: Namespace Actions - Filosofia Laraxot
 
 **Data Creazione**: 2025-01-22

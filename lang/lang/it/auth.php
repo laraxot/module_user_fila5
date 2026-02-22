@@ -49,8 +49,17 @@ return [
             ],
         ],
         'actions' => [
+<<<<<<< HEAD
             'reset_password' => ['label' => 'Reset Password'],
             'cancel' => ['label' => 'Cancel'],
+=======
+            'reset_password' => [
+                'label' => 'Reset Password',
+            ],
+            'cancel' => [
+                'label' => 'Cancel',
+            ],
+>>>>>>> 60a2c9a9 (.)
         ],
         'reset_password' => 'Reset Password',
         'password_reset' => 'Password Reset',
@@ -89,4 +98,20 @@ return [
     'Resend Verification Email' => 'Rinvia Email di Verifica',
     'Verify Your Email Address' => 'Verifica la tua email',
     'A fresh verification link has been sent to your email address.' => 'Un nuovo link di verifica è stato inviato al tuo indirizzo email.',
+<<<<<<< HEAD
+=======
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+    'actions' => [
+    ],
+>>>>>>> 60a2c9a9 (.)
 ];

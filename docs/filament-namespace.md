@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Regole per i Namespace Filament"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Regole per i Namespace Filament
 
 ## Regola 1: Namespace Modulare

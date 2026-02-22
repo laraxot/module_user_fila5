@@ -9,4 +9,20 @@ return [
     'registration-not-enabled' => 'Registration of a new user is not allowed.',
     'login-in' => 'Sign in',
     'sign-up' => 'Sign up',
+<<<<<<< HEAD
+=======
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+    'actions' => [
+    ],
+>>>>>>> 60a2c9a9 (.)
 ];

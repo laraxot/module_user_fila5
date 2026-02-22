@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "🗺️ ROADMAP COMPLETA - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # 🗺️ ROADMAP COMPLETA - Modulo User
 
 ## 📊 Business Logic
@@ -437,7 +440,11 @@ La cartella `docs/` contiene ~300+ file con molti duplicati:
 ---
 
 **Versione**: 1.0.0  
+<<<<<<< HEAD
 **
+=======
+**Ultimo Aggiornamento**: 2025-01-01  
+>>>>>>> 60a2c9a9 (.)
 **Maintainer**: User Module Team  
 **Status**: 🚧 In Development (70% completo)  
 **Prossima Revisione**: 2025-02-01

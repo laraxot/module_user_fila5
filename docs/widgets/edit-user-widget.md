@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "EditUserWidget Documentation"
 type: concept
@@ -14,6 +15,8 @@ related:
   - "./translationlines.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # EditUserWidget Documentation
 
 ## Overview
@@ -141,7 +144,11 @@ All widget text follows the expanded translation structure:
 * Translation system integration
 * File upload and image processing capabilities
 ## Related Documentation
+<<<<<<< HEAD
 * [User Module Widget Structure](../widgets-structure-2.md)
+=======
+* [User Module Widget Structure](../widgets_structure.md)
+>>>>>>> 60a2c9a9 (.)
 * [Widget Translation Guidelines](./translation-guidelines.md)
 * [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 * [Translation System Overview](../../xot/docs/translations.md)

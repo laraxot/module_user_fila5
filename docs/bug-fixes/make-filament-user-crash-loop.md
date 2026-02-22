@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Bug Fix: Crash durante creazione utenti con make:filament-user"
 type: concept
@@ -17,6 +18,8 @@ related:
   - "./parse-orphan-methods.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Bug Fix: Crash durante creazione utenti con make:filament-user
 
 ## 🐛 Problema Identificato
@@ -292,8 +295,13 @@ class CreateTenantUserCommand extends Command
 
 ### Documentazione Root Progetto
 
+<<<<<<< HEAD
 - [../../../../docs/modules/user/README.md](../../../../docs/modules/user/readme.md) - Panoramica modulo User
 - [../../../../docs/architecture/multi-tenancy.md](../../../../docs/architecture/multi-tenancy.md) - Architettura globale
+=======
+- [../../../docs/modules/user/README.md](../../../docs/modules/user/readme.md) - Panoramica modulo User
+- [../../../docs/architecture/multi-tenancy.md](../../../docs/architecture/multi-tenancy.md) - Architettura globale
+>>>>>>> 60a2c9a9 (.)
 
 ## 🎓 Lezioni Apprese
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "links"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./profile.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # links
 
 <!-- Contenuto migrato da _docs/links.txt -->

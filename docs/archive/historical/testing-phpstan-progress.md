@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - PHPStan Testing Progress"
 type: concept
@@ -21,6 +22,11 @@ related:
 # User Module - PHPStan Testing Progress
 
 **Date**: 2025-12-15
+=======
+# User Module - PHPStan Testing Progress
+
+**Date**: [DATE]
+>>>>>>> 60a2c9a9 (.)
 **Objective**: Fix PHPStan errors in test files
 **Priority**: Tier 1 Critical (Authentication & Authorization)
 

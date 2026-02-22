@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Legacy Code Cleanup"
 type: concept
@@ -17,6 +18,8 @@ related:
   - "./user-traits.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Legacy Code Cleanup
 
 ## Overview
@@ -75,7 +78,11 @@ Clean up and modernize the User module codebase by removing legacy code and upda
    - Run full test suite
    - Performance testing
 ## Links
+<<<<<<< HEAD
 - [Back to Roadmap](../../../docs/roadmap.md)
+=======
+- [Back to Roadmap](../../docs/roadmap.md)
+>>>>>>> 60a2c9a9 (.)
 - [Back to Roadmap](../../project_docs/roadmap.md)
 - Related: [Documentation Enhancement](./documentation-enhancement.md)
 - Related: [PHPStan Level 7 Compliance](./phpstan-level7-compliance.md)

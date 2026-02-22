@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Filosofia dei Comandi Console - Modulo User"
 type: concept
@@ -17,6 +18,8 @@ related:
   - "./readme.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -474,6 +477,10 @@ private function getPasswordLegacy(): string
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-27*
+>>>>>>> 60a2c9a9 (.)
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -931,3 +938,7 @@ private function getPasswordLegacy(): string
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-27*
+>>>>>>> 60a2c9a9 (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Corrections - OAuth Resources"
 type: concept
@@ -21,6 +22,10 @@ related:
 # PHPStan Corrections - OAuth Resources
 
 **Data**: 2025-01-22
+=======
+# PHPStan Corrections - OAuth Resources
+
+>>>>>>> 60a2c9a9 (.)
 **Status**: In Progress
 **Versione**: 1.0.0
 
@@ -128,3 +133,7 @@ TextColumn::make('name')
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: [DATE]*
+>>>>>>> 60a2c9a9 (.)

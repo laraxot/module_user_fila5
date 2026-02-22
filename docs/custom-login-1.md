@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementazione Login Personalizzato"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 https://ajaxray.com/blog/lets-beautify-filament-3-login-page/
 
 https://www.codef.site/blog/laravel/how-to-customize-laravel-filament-login-page

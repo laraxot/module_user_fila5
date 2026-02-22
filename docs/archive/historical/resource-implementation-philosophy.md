@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Internal Analysis: Approaches to Missing Filament Resources"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Internal Analysis: Approaches to Missing Filament Resources
 
 ## 🥊 Philosophical Battle: Two Approaches Clash

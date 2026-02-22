@@ -293,7 +293,11 @@ e
 ## Applicazione ad Altri Moduli
 
 Questo pattern di correzione può essere applicato a:
+<<<<<<< HEAD
 - **Modulo ExternalProject**: Verificare QuestionChart, SurveyPdf, Contact
+=======
+- **Modulo Quaeris**: Verificare QuestionChart, SurveyPdf, Contact
+>>>>>>> 60a2c9a9 (.)
 - **Modulo Blog**: Verificare Post, Category, Tag
 - **Modulo Dental**: Verificare Visit, Treatment, Patient
 - **Tutti gli altri moduli**: Audit sistematico

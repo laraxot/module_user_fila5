@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Filosofia Laraxot: Il Grande Dibattito Interno - PHPStan Level 10"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Filosofia Laraxot: Il Grande Dibattito Interno - PHPStan Level 10
 
 **Data Creazione**: [DATE]
@@ -180,7 +183,11 @@ Ogni modulo corretto è un traguardo.
 - [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
 - [PHPStan Corrections Summary](./phpstan-corrections-summary.md)
+<<<<<<< HEAD
 - [DRY/KISS Principles](../../../../docs/architecture/dry-kiss-principles.md)
+=======
+- [DRY/KISS Principles](../../../docs/architecture/dry-kiss-principles.md)
+>>>>>>> 60a2c9a9 (.)
 
 ---
 

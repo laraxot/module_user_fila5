@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Architettura Utente Avanzata basata sui Principi Filament"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Architettura Utente Avanzata basata sui Principi Filament
 
 ## Introduzione

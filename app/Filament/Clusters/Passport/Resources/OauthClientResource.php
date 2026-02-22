@@ -10,7 +10,10 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
+=======
+>>>>>>> 60a2c9a9 (.)
 use Illuminate\Support\Str;
 use Laravel\Passport\Passport as LaravelPassport;
 use Modules\User\Filament\Clusters\Passport;
@@ -18,7 +21,10 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Pages\
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Pages\EditOauthClient;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Pages\ListOauthClients;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Pages\ViewOauthClient;
+<<<<<<< HEAD
 use Modules\User\Models\OauthClient;
+=======
+>>>>>>> 60a2c9a9 (.)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Webmozart\Assert\Assert;
 
@@ -79,11 +85,16 @@ class OauthClientResource extends XotBaseResource
     /**
      * Get the model class for the resource from Passport.
      *
+<<<<<<< HEAD
      * @return class-string<Model>
+=======
+     * @return class-string<\Illuminate\Database\Eloquent\Model>
+>>>>>>> 60a2c9a9 (.)
      */
     public static function getModel(): string
     {
         $model = LaravelPassport::clientModel();
+<<<<<<< HEAD
         if (! class_exists($model)) {
             return OauthClient::class;
         }
@@ -91,6 +102,16 @@ class OauthClientResource extends XotBaseResource
         Assert::subclassOf($model, Model::class);
 
         /* @var class-string<Model> $model */
+=======
+        // @phpstan-ignore-next-line
+        if (! class_exists($model)) {
+            return \Modules\User\Models\OauthClient::class;
+        }
+
+        Assert::subclassOf($model, \Illuminate\Database\Eloquent\Model::class);
+
+        /* @var class-string<\Illuminate\Database\Eloquent\Model> $model */
+>>>>>>> 60a2c9a9 (.)
         return $model;
     }
 
@@ -114,8 +135,11 @@ class OauthClientResource extends XotBaseResource
 
     /**
      * Get resource form components.
+<<<<<<< HEAD
      *
      * @return array<int, never>
+=======
+>>>>>>> 60a2c9a9 (.)
      */
     protected static function getResourceFormComponents(): array
     {

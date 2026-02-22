@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "EditUserWidget: Widget generico per la modifica dati utente"
 type: concept
@@ -14,6 +15,8 @@ related:
   - "./registration-widget.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # EditUserWidget: Widget generico per la modifica dati utente
 
 ## Scopo e filosofia
@@ -127,3 +130,7 @@ namespace Modules\<nome progetto>\Actions\Patient;
 ---
 **Nota:**
 Se vuoi estendere la logica di aggiornamento per un nuovo tipo di utente, crea una nuova Action seguendo la convenzione e aggiorna la documentazione del modulo specifico. La documentazione generale delle regole e delle convenzioni si trova nel modulo Xot e va sempre collegata da qui.
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: dicembre 2024*
+>>>>>>> 60a2c9a9 (.)

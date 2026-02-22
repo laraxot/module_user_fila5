@@ -7,13 +7,21 @@ return [
         'name' => 'Utente Tenant',
         'plural' => 'Utenti Tenant',
         'label' => 'Utenti Tenant',
+<<<<<<< HEAD
         'group' => ['name' => 'Tenants', 'description' => 'Gestione degli utenti associati ai tenant'],
+=======
+        'group' => [
+            'name' => 'Tenants',
+            'description' => 'Gestione degli utenti associati ai tenant',
+        ],
+>>>>>>> 60a2c9a9 (.)
         'sort' => 87,
         'icon' => 'heroicon-o-building-office',
     ],
     'label' => 'Tenant User',
     'plural_label' => 'Tenant User (Plurale)',
     'fields' => [
+<<<<<<< HEAD
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -38,5 +46,36 @@ return [
     'sections' => [
         'Tenant User Information' => ['label' => 'Tenant User Information', 'heading' => 'Tenant User Information'],
         'empty' => ['label' => '', 'heading' => ''],
+=======
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Tenant User',
+        ],
+        'edit' => [
+            'label' => 'Modifica Tenant User',
+        ],
+        'delete' => [
+            'label' => 'Elimina Tenant User',
+        ],
+>>>>>>> 60a2c9a9 (.)
     ],
 ];

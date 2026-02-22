@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Correzioni Traduzioni Navigation - Gennaio 2026"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Correzioni Traduzioni Navigation - Gennaio 2026
 
 ## Data Intervento
@@ -203,9 +206,12 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Filosofia Traduzioni Laraxot](../../Xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../Xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./README.md)
+=======
+>>>>>>> 60a2c9a9 (.)
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./readme.md)
@@ -219,4 +225,8 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 - Sort order allineato con i Resource corrispondenti
 
 *Intervento completato il: 2026-01-22*
+<<<<<<< HEAD
 *Conforme alle regole DRY + KISS*
+=======
+*Conforme alle regole DRY + KISS*
+>>>>>>> 60a2c9a9 (.)

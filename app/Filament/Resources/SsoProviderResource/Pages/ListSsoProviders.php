@@ -15,9 +15,12 @@ class ListSsoProviders extends XotBaseListRecords
     protected static string $resource = SsoProviderResource::class;
 
     #[\Override]
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
+=======
+>>>>>>> 60a2c9a9 (.)
     public function getTableColumns(): array
     {
         return [

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Risorse e Link Utili - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Risorse e Link Utili - Modulo User
 
 Raccolta di link e risorse esterne per lo sviluppo del modulo User.

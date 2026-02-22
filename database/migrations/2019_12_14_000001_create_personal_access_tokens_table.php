@@ -8,8 +8,15 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 return new class extends XotBaseMigration {
     /**
      * Run the migrations.
+<<<<<<< HEAD
      */
     public function up(): void
+=======
+     *
+     * @return void
+     */
+    public function up()
+>>>>>>> 60a2c9a9 (.)
     {
         // -- CREATE --
         $this->tableCreate(
@@ -26,7 +33,11 @@ return new class extends XotBaseMigration {
         // -- UPDATE --
         $this->tableUpdate(
             function (Blueprint $table) {
+<<<<<<< HEAD
                 // if (! $this->hasColumn('email'
+=======
+                // if (! $this->hasColumn('email')) {
+>>>>>>> 60a2c9a9 (.)
                 //    $table->string('email')->nullable();
                 // }
             }

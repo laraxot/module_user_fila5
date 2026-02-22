@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # 🔍 Analisi Rendering LoginWidget - Docs.Italia.it Style
 
 ## 📋 Problema Analizzato

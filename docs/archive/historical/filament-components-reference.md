@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Riferimento Componenti Filament Verificati"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Riferimento Componenti Filament Verificati
 
 ## ⚠️ REGOLA CRITICA: Verificare SEMPRE l'esistenza dei componenti
@@ -125,5 +128,9 @@ Questo documento deve essere aggiornato ogni volta che:
 - Si identifica un componente che NON esiste
 - Cambia la versione di Filament nel progetto
 
+<<<<<<< HEAD
 **Data ultimo aggiornamento**: 2025-07-30
+=======
+**Data ultimo aggiornamento**: [DATE]
+>>>>>>> 60a2c9a9 (.)
 **Versione Filament**: Da verificare nel composer.json del progetto

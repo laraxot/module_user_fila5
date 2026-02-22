@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - SSO Providers Implementation"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # User Module - SSO Providers Implementation
 
 ## Overview
@@ -305,8 +308,13 @@ test('can login user via SSO', function () {
 
 | Data | Versione | Descrizione |
 |------|----------|-------------|
+<<<<<<< HEAD
 | 2025-10-15 | 1.0.0 | Creazione iniziale tabella `sso_providers` |
 | 2025-10-15 | 1.0.0 | Aggiunta foreign key in tabella `users` |
+=======
+| [DATE] | 1.0.0 | Creazione iniziale tabella `sso_providers` |
+| [DATE] | 1.0.0 | Aggiunta foreign key in tabella `users` |
+>>>>>>> 60a2c9a9 (.)
 
 ## Roadmap
 
@@ -320,6 +328,9 @@ test('can login user via SSO', function () {
 ---
 
 **Autore**: Claude Code
+<<<<<<< HEAD
 **Data**: 2025-10-15
+=======
+>>>>>>> 60a2c9a9 (.)
 **Versione**: 1.0.0
 **Laravel**: 12.34.0

@@ -43,6 +43,7 @@ class AuthenticationLogsRelationManager extends XotBaseRelationManager
                 ->dateTime()
                 ->sortable(),
             'location' => TextColumn::make('location')
+<<<<<<< HEAD
                 ->formatStateUsing(function (mixed $state) {
                     if (is_array($state)) {
                         return collect($state)
@@ -55,6 +56,16 @@ class AuthenticationLogsRelationManager extends XotBaseRelationManager
                     }
 
                     if ($state === null) {
+=======
+                ->formatStateUsing(function ($state) {
+                    if (is_array($state)) {
+                        return collect($state)
+                            ->map(fn ($value, $key): string => (string) $key.': '.(string) $value)
+                            ->join(', ');
+                    }
+
+                    if (null === $state) {
+>>>>>>> 60a2c9a9 (.)
                         return 'N/A';
                     }
 

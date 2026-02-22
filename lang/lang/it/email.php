@@ -14,4 +14,20 @@ return [
     'reset_password' => 'Clicca qui per reimpostare la tua password',
     'click_to_confirm' => 'Clicca qui per confermare il tuo account:',
     'password_reset_expiration' => 'Questo link per il reset della password scadrà tra :count minuti.',
+<<<<<<< HEAD
+=======
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+    'actions' => [
+    ],
+>>>>>>> 60a2c9a9 (.)
 ];

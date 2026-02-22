@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models\Passport;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Foundation\Auth\User;
 use Laravel\Passport\Client as PassportClient;
@@ -50,6 +51,12 @@ use Modules\User\Models\OauthToken;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client whereUserId($value)
  * @mixin \Eloquent
+=======
+use Laravel\Passport\Client as PassportClient;
+
+/**
+ * Custom Passport Client model to fix compatibility issues with Laravel 12.
+>>>>>>> 60a2c9a9 (.)
  */
 class Client extends PassportClient
 {
@@ -59,6 +66,13 @@ class Client extends PassportClient
      */
     public function initializeHasUniqueStringIds(): void
     {
+<<<<<<< HEAD
         parent::initializeHasUniqueStringIds();
+=======
+        // @phpstan-ignore-next-line method_exists check per compatibilità versioni Laravel
+        if (method_exists(parent::class, 'initializeHasUniqueStringIds')) {
+            parent::initializeHasUniqueStringIds();
+        }
+>>>>>>> 60a2c9a9 (.)
     }
 }

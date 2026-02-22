@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Task: User Docs Cleanup"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./spostamento-widget-violante.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Task: User Docs Cleanup
 
 ## 📋 Obiettivo

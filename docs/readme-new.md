@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - Authentication & Authorization"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # User Module - Authentication & Authorization
 
 **Last Update**: 2025-12-05
@@ -1019,7 +1022,11 @@ See [ROADMAP.md](./roadmap.md) for details.
 
 ### Project Documentation
 - [CLAUDE.md](../../../claude.md) - Project architecture
+<<<<<<< HEAD
 - [Security Guidelines](../../../../docs/security.md)
+=======
+- [Security Guidelines](../../../docs/security.md)
+>>>>>>> 60a2c9a9 (.)
 
 ### External Resources
 - [Laravel Authentication](https://laravel.com/docs/12.x/authentication)

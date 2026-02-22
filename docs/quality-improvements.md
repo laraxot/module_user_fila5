@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Quality Improvements Summary - PHPStan, PHPMD, PHP Insights"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Quality Improvements Summary - PHPStan, PHPMD, PHP Insights
 
 ## Data: [DATE]

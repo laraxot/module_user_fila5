@@ -188,12 +188,16 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 ## Collegamenti
 
 - [Analisi Completa](./model_inheritance_analysis.md)
+<<<<<<< HEAD
 
 - [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
+=======
+>>>>>>> 60a2c9a9 (.)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
+<<<<<<< HEAD
 
 
 ---
@@ -203,3 +207,5 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 # Documento unificato
 
 Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, in violazione della regola no-case-only-variations. Il contenuto canonico si trova in [model_inheritance_fixes.md](./model_inheritance_fixes.md).
+=======
+>>>>>>> 60a2c9a9 (.)

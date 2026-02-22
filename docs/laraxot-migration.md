@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Filosofia, Religione e Politica di Laraxot: Regole di Migrazione"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Filosofia, Religione e Politica di Laraxot: Regole di Migrazione
 
 ## Regola Fondamentale: Una Tabella = Una Migration per Modulo

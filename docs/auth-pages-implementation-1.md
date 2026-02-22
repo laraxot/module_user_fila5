@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementazione Corretta delle Pagine Auth"
 type: concept
@@ -28,6 +29,18 @@ related:
 - [Volt Errors](./volt-errors-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Volt Logout Action](./volt-logout-action-2.md)
+=======
+# Implementazione Corretta delle Pagine Auth
+
+## Collegamenti correlati
+- [Documentazione centrale](../../../docs/readme.md)
+- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
+- [README modulo User](./readme.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Volt Errors](./volt_errors.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
+- [Volt Logout Action](./volt_logout_action.md)
+>>>>>>> 60a2c9a9 (.)
 
 ## Introduzione
 

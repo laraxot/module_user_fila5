@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Passport Cluster Resources Pattern"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Passport Cluster Resources Pattern
 
 **Status**: ✅ Implementato

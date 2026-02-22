@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Compatibilità Filament 4.x - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Compatibilità Filament 4.x - Modulo User
 
 **Data**: 2025-01-27

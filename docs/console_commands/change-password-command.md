@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "ChangePasswordCommand"
 type: concept
@@ -17,6 +18,8 @@ related:
   - "./readme.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # ChangePasswordCommand
 
 ## Panoramica
@@ -383,4 +386,12 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - ✅ **Gestione Password**: Hash e scadenza
 - ✅ **Eventi**: Dispatched NewPasswordSet
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-27*
+
+
+
+
+>>>>>>> 60a2c9a9 (.)
 

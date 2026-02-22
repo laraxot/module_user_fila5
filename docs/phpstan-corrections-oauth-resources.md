@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Corrections - OAuth Resources"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # PHPStan Corrections - OAuth Resources
 
 **Data**: 2025-01-22
@@ -128,3 +131,7 @@ TextColumn::make('name')
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-22*
+>>>>>>> 60a2c9a9 (.)

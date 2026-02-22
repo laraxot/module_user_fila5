@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Filament Installation and Chart Widget Implementation Guide"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Filament Installation and Chart Widget Implementation Guide
 
 ## Overview

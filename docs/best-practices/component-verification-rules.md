@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Regole per la Verifica dei Componenti Blade"
 type: rule
@@ -18,6 +19,8 @@ related:
   - "./dependency.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Regole per la Verifica dei Componenti Blade
 
 ## ERRORE CRITICO DA NON RIPETERE MAI

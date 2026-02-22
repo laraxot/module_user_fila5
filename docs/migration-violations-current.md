@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Updated Migration Violations Analysis - User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Updated Migration Violations Analysis - User Module
 
 ## Current State vs. Initial Analysis

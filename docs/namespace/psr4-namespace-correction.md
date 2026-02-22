@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Correzione Namespace PSR-4"
 type: concept
@@ -10,6 +11,8 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Correzione Namespace PSR-4
 
 ## Problema

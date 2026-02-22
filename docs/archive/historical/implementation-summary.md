@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementation Summary - User Module Type Safety Improvements"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Implementation Summary - User Module Type Safety Improvements
 
 ## Overview
@@ -173,7 +176,11 @@ All type casting operations now use safe methods:
 ### Updated Documentation Files
 
 1. **`README.md`**: Updated with type safety information
+<<<<<<< HEAD
 2. **`widgets-structure-2.md`**: Enhanced with type safety guidelines
+=======
+2. **`widgets_structure.md`**: Enhanced with type safety guidelines
+>>>>>>> 60a2c9a9 (.)
 
 ## Best Practices Established
 
@@ -273,5 +280,8 @@ php artisan test --filter=User
 
 # Check for any new errors
 ./vendor/bin/phpstan analyse Modules
+<<<<<<< HEAD
 
 ```
+=======
+>>>>>>> 60a2c9a9 (.)

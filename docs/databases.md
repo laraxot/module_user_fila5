@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Database Errors in User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Database Errors in User Module
 
 ## Missing `doctor_team` Table
@@ -49,5 +52,9 @@ related:
 - [BaseUser Model](../app/Models/BaseUser.php)
 - [Teams Relationship](../app/Models/Team.php)
 - [Migration File](../database/migrations/2025_05_17_000001_create_doctor_team_table.php)
+<<<<<<< HEAD
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
+=======
+- [Root Documentation](../../../docs/collegamenti-documentazione.md)
+>>>>>>> 60a2c9a9 (.)
 - [Xot Module Database Guidelines](../../../modules/xot/docs/database_guidelines.md)

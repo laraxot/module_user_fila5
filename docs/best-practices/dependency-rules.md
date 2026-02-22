@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "dependency-rules"
 type: rule
@@ -18,6 +19,8 @@ related:
   - "./dependency.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # dependency-rules
 
 ## Principle (MANDATORY)

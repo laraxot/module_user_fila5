@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "🔍 Code Quality Tools - Modulo User"
 type: concept
@@ -21,6 +22,11 @@ related:
 # 🔍 Code Quality Tools - Modulo User
 
 **Data Creazione**: 2025-01-27  
+=======
+# 🔍 Code Quality Tools - Modulo User
+
+**Data Creazione**: [DATE]  
+>>>>>>> 60a2c9a9 (.)
 **Status**: 🚀 ATTIVO  
 **Scope**: Modulo User  
 **Priority**: HIGH  
@@ -205,8 +211,12 @@ npm install
 
 ---
 
+<<<<<<< HEAD
 **Last Updated**: 2025-01-27  
 **Next Review**: 2025-02-27  
+=======
+
+>>>>>>> 60a2c9a9 (.)
 **Status**: 🚀 ACTIVE IMPLEMENTATION  
 **Confidence Level**: 98%  
 

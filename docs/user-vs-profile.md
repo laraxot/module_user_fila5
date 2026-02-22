@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User vs Profile Models: Guida Completa"
 type: concept
@@ -18,11 +19,17 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # User vs Profile Models: Guida Completa
 
 ## Panoramica
 
+<<<<<<< HEAD
 Questo documento analizza quando usare il modello **User** rispetto al modello **Profile** nel progetto <nome progetto>, basandosi su best practice di settore e architettura specifica del progetto.
+=======
+Questo documento analizza quando usare il modello **User** rispetto al modello **Profile** nel progetto LaravelPizza, basandosi su best practice di settore e architettura specifica del progetto.
+>>>>>>> 60a2c9a9 (.)
 
 ---
 
@@ -154,13 +161,21 @@ class Profile extends BaseProfile
 
 ---
 
+<<<<<<< HEAD
 ## 3. Analisi nel Contesto <nome progetto>
+=======
+## 3. Analisi nel Contesto LaravelPizza
+>>>>>>> 60a2c9a9 (.)
 
 ### 3.1 Architettura Attuale
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
+<<<<<<< HEAD
 │                        <nome progetto>                              │
+=======
+│                        LARAVELPIZZA                              │
+>>>>>>> 60a2c9a9 (.)
 ├──────────────────────────────────────────────────────────────────┤
 │                                                                   │
 │  ┌─────────────────┐         ┌─────────────────┐              │
@@ -206,9 +221,15 @@ CURRENT STATE:
 
 ### 3.3 Soluzione Raccomandata
 
+<<<<<<< HEAD
 **Opzione A: Consolidare in User (Simple) - CONSIGLIATA PER <nome progetto>**
 
 Per un progetto community come <nome progetto> dove:
+=======
+**Opzione A: Consolidare in User (Simple) - CONSIGLIATA PER LARAVELPIZZA**
+
+Per un progetto community come LaravelPizza dove:
+>>>>>>> 60a2c9a9 (.)
 - Gli utenti sono principalmente "attendees" agli eventi
 - Non servono profili multipli
 - L'avatar è l'unico dato profilo essenziale
@@ -537,4 +558,9 @@ class User extends Authenticatable
 
 ---
 
+<<<<<<< HEAD
 *Documento generato per <nome progetto> - Progetto Community Laravel*
+=======
+*Documento generato per LaravelPizza - Progetto Community Laravel*
+*Ultimo aggiornamento: Febbraio 2026*
+>>>>>>> 60a2c9a9 (.)

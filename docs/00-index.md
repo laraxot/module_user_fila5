@@ -1,5 +1,9 @@
 # 📚 **Indice Documentazione Modulo User**
 
+<<<<<<< HEAD
+=======
+**Last Update**: 31 Gennaio 2026
+>>>>>>> 60a2c9a9 (.)
 **Status**: ✅ PHPStan Level 10 Compliant
 **Module Version**: 2.5.0
 
@@ -12,6 +16,7 @@
 - 🔐 **[Authentication Flow](./authentication.md)** - Dettagli sul ciclo di vita della sessione.
 - 📜 **[Permissions System](./permissions.md)** - Gestione ruoli e permessi con Spatie.
 - 🎫 **[Passport & SSO](./passport-integration.md)** - Integrazione OAuth2 e Single Sign-On.
+<<<<<<< HEAD
 - 🧷 **[Passport Model Wrappers](./passport-model-wrappers.md)** - Mappa obbligatoria tra model vendor Passport e wrapper `Oauth*` locali.
 - 🛡️ **[2FA Guide](./2fa-guide.md)** - Implementazione dell'autenticazione a due fattori.
 
@@ -19,6 +24,10 @@
 - 📋 **[Over-engineering audit](./ponytail-audit-over-engineering.md)** - Policy stub e contracts inutilizzati.
 - 🗄️ **[Archiviazione Contracts orfani e backup lang](./wiki/decisions/contracts-and-lang-backup-archival-2026-06-30.md)** - `ModelContract`, `PassportHasApiTokensContract` archiviati (`.bak`); 281 backup lang → `lang/{locale}/*.php.bak` in-place ([regola no-Legacy](../../../../docs/wiki/concepts/no-legacy-folders-code.md)).
 
+=======
+- 🛡️ **[2FA Guide](./2fa-guide.md)** - Implementazione dell'autenticazione a due fattori.
+
+>>>>>>> 60a2c9a9 (.)
 ## 👤 **Profilo & Moderazione**
 - 🧑‍🎨 **[Profile Management](./profile-management.md)** - Gestione estesa dei dati utente (EAV).
 - ⚖️ **[Moderation Strategy](./user-moderation-strategy.md)** - Workflow per approvazione e ban (dentisti, cliniche, utenti).
@@ -28,6 +37,7 @@
 - 🏗️ **[Filament Resources](./filament-resources-updated.md)** - Gestione utenti, ruoli e permessi in v5.
 - 🔑 **[Passport Cluster](./passport-cluster-summary.md)** - Gestione centralizzata delle chiavi API.
 - ⚡ **[Auth Widgets](./login-widget-fix.md)** - Componenti di login/registrazione riutilizzabili.
+<<<<<<< HEAD
 - 🔐 **[Socialite + Microsoft OAuth](./socialite-microsoft-integration.md)** - Integrazione autenticazione Microsoft (NEW)
 
 ## 🧪 **Qualità e Sviluppo**
@@ -37,10 +47,18 @@
 - 🔬 **[Testing Identity](./testing.md)** - Test di autenticazione e autorizzazione (Pest).
 - 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
 - 🧪 **PSR-4 Test Helpers** - Nei test trait/helper preferire anonymous classes o fixture dedicate sotto `tests/` con percorso coerente PSR-4.
+=======
+
+## 🧪 **Qualità e Sviluppo**
+- ✅ **[PHPStan Analysis](./phpstan-level10-user-fixes.md)** - Report di conformità Level 10.
+- 🔬 **[Testing Identity](./testing.md)** - Test di autenticazione e autorizzazione (Pest).
+- 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
+>>>>>>> 60a2c9a9 (.)
 
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./todo.md)** - Strategia per gestire i 550+ documenti accumulati.
 
+<<<<<<< HEAD
 ## 📦 **Pacchetti Composer**
 - [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
 - `laravel/passport` - OAuth2 API
@@ -49,13 +67,18 @@
 - `jenssegers/agent` - User-Agent
 - `spatie/laravel-personal-data-export` - Export GDPR
 
+=======
+>>>>>>> 60a2c9a9 (.)
 ## 🔗 **Moduli Correlati**
 - [Xot](../../xot/docs/readme.md) - Core per la gestione dei trait `HasTeams`.
 - [Tenant](../../tenant/docs/readme.md) - Risoluzione del Tenant corrente per l'utente.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+<<<<<<< HEAD
 
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
+=======
+>>>>>>> 60a2c9a9 (.)

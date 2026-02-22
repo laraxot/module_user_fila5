@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Pattern di Ereditarietà per Pacchetti Esterni"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Pattern di Ereditarietà per Pacchetti Esterni
 
 ## 📋 Panoramica

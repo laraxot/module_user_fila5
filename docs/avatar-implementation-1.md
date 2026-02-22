@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementazione degli Avatar"
 type: concept
@@ -18,11 +19,17 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Implementazione degli Avatar
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
+<<<<<<< HEAD
 - [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header-language-selector-with-flags.md)
+=======
+- [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header_language_selector_with_flags.md)
+>>>>>>> 60a2c9a9 (.)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

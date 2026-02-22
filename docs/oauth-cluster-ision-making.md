@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "OAuth Cluster - Processo Decisionale"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # OAuth Cluster - Processo Decisionale
 
 **Metodologia**: Super Mucca

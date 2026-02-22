@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Fullcalendar Scheduler License Key Invalid"
 type: concept
@@ -19,4 +20,6 @@ related:
 ---
 
  
+=======
+>>>>>>> 60a2c9a9 (.)
  

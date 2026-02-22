@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "payment"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./profile.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # payment
 
 <!-- Contenuto migrato da _docs/payment.txt -->

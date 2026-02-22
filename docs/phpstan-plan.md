@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Analysis - User Module (Jan 2026)"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # PHPStan Analysis - User Module (Jan 2026)
 
 ## Current Status

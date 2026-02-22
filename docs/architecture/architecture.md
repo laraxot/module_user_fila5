@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Architectural Rules & Guidelines"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./user-gdpr-oupling.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Architectural Rules & Guidelines
 
 This module adheres to the **Laraxot Architecture** and **Super Cow Methodology**.

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "RegistrationWidget FileUpload Fix"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto
@@ -139,11 +142,20 @@ Per evitare simili problemi in futuro:
 3. **Type Checking**: Usare type checking difensivo nei callback
 4. **Documentation**: Documentare i tipi di dati attesi per ogni campo
 ## Riferimenti
+<<<<<<< HEAD
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/project/fileupload-foreach-error-fix.md)
 - [Correzione XotBaseResource: Modules/Xot/project_docs/fileupload-components.md](../../xot/project_docs/fileupload-components.md)
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)
+=======
+- [Problema principale: docs/fileupload-foreach-error-fix.md](../../../project_docs/fileupload-foreach-error-fix.md)
+- [Correzione XotBaseResource: Modules/Xot/project_docs/fileupload-components.md](../../xot/project_docs/fileupload-components.md)
+- [Problema principale: docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
+- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
+- [Registration Widget base: registration-widget.md](./registration-widget.md)
+*Ultimo aggiornamento: 2025-01-03*
+>>>>>>> 60a2c9a9 (.)
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto
@@ -361,6 +373,10 @@ Per evitare simili problemi in futuro:
 
 ## Riferimenti
 
+<<<<<<< HEAD
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
+=======
+- [Problema principale: docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
+>>>>>>> 60a2c9a9 (.)
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)

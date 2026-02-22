@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Correzioni Traduzioni Navigation - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Correzioni Traduzioni Navigation - Modulo User
 
 ## Data Intervento
@@ -95,7 +98,11 @@ related:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
+=======
+- [Audit Generale Traduzioni Navigation](../../docs/navigation-translations-audit.md)
+>>>>>>> 60a2c9a9 (.)
 - [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../<nome progetto>/docs/translation-quality-standards.md)
 - [Documentazione Modulo User](readme.md)

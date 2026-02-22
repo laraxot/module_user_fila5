@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\User\Tests\Unit\Traits;
 
 use Modules\User\Tests\TestCase;
@@ -34,4 +35,43 @@ describe('Password Validation Rules', function (): void {
         Assert::assertSame('string', $rules[1]);
         Assert::assertSame('confirmed', $rules[3]);
     });
+=======
+uses(Modules\User\Tests\TestCase::class);
+
+use Modules\User\Traits\PasswordValidationRules;
+
+test('PasswordValidationRules trait can be used', function () {
+    $testClass = new class {
+        use PasswordValidationRules;
+
+test('PasswordValidationRules trait can be used', function () {
+    $testClass = new PasswordValidationRulesTestClass();
+
+    expect($testClass)->toBeInstanceOf(PasswordValidationRulesTestClass::class);
+});
+
+test('PasswordValidationRules trait provides passwordRules method', function () {
+    $testClass = new class {
+        use PasswordValidationRules;
+
+        public function getPasswordRules()
+        {
+            return $this->passwordRules();
+        }
+    };
+
+    $className = get_class($testClass);
+
+    $mock = $this->getMockBuilder($className)
+        ->onlyMethods(['passwordRules'])
+        ->getMock();
+
+    $mock->method('passwordRules')
+        ->willReturn(['required', 'string', 'confirmed']);
+
+    $rules = $mock->getPasswordRules();
+
+    expect($rules)->toBeArray()
+        ->and($rules)->toHaveCount(3);
+>>>>>>> 60a2c9a9 (.)
 });

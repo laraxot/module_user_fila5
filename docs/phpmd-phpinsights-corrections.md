@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPMD e PHP Insights Corrections - [DATE]"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # PHPMD e PHP Insights Corrections - [DATE]
 
 ## Obiettivo

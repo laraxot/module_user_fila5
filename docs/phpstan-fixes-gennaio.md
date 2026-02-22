@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "🔧 PHPStan Fixes - Modulo User - Gennaio 2025"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # 🔧 PHPStan Fixes - Modulo User - Gennaio 2025
 
 **Data**: 27 Gennaio 2025
@@ -133,7 +136,12 @@ PHPStan aveva difficoltà nel riconoscere la sintassi method chaining e object i
 - **Object instantiation**: Separazione creazione da utilizzo
 
 ### **Benefici**
+<<<<<<< HEAD
 - ✅ **PHPStan Level 9**: Compatibilità completa
+=======
+- ✅ **PHPStan level 10**: Compatibilità completa
+
+>>>>>>> 60a2c9a9 (.)
 - ✅ **Leggibilità**: Codice più esplicito e chiaro
 - ✅ **Type Safety**: Mantenuta con type hints espliciti
 - ✅ **Debugging**: Più facile identificare problemi
@@ -231,21 +239,35 @@ $subject = Lang::get('user::email.password_reset_subject');
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
+<<<<<<< HEAD
 - [README.md Modulo User](./README.md)
+=======
+>>>>>>> 60a2c9a9 (.)
 - [README.md Modulo User](./readme.md)
 - [Authentication Guide](./authentication.md)
 - [Best Practices](./best-practices.md)
 
 ### **Risorse Esterne**
 - [Laravel Authentication](https://laravel.com/docs/authentication)
+<<<<<<< HEAD
 - [PHPStan Method Chaining](https://phpstan.org/rules/phpstan/phpstan/rule/phpstan.rules.phpstan.method-chaining)
+=======
+- [PHPStan Method Chaining](https://phpstan.org/rules/phpstan/phpstan/rule/phpstan.method-chaining)
+>>>>>>> 60a2c9a9 (.)
 - [Laravel Notifications](https://laravel.com/docs/notifications)
 
 ---
 
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025
 **📦 Versione**: 1.0
+<<<<<<< HEAD
 **🐛 PHPStan Level**: 9 ✅
 **🌐 Translation Standards**: IT/EN complete ✅
 **🚀 Performance**: 95/100 score
 **✨ Test Coverage**: 85% ✅
+=======
+**🐛 PHPStan Level**: 10 ✅
+**🌐 Translation Standards**: IT/EN complete ✅
+**🚀 Performance**: 95/100 score
+**✨ Test Coverage**: 85% ✅
+>>>>>>> 60a2c9a9 (.)

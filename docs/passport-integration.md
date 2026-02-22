@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Laravel Passport Integration - Architettura Completa"
 type: concept
@@ -18,11 +19,17 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Laravel Passport Integration - Architettura Completa
 
 > **Generato**: [DATE]
 > **Filosofia**: L'Architetto Laraxot (Vincitore del Dibattito Interno)
+<<<<<<< HEAD
 > **PHPStan Status**: ✅ Modulo `User` verificato pulito il 2026-03-10
+=======
+> **PHPStan Status**: ✅ Level MAX Compliant (Zero Errori)
+>>>>>>> 60a2c9a9 (.)
 
 ---
 
@@ -58,6 +65,7 @@ Durante l'analisi dell'integrazione Passport, sono emerse tre posizioni:
 laravel/Modules/User/app/Models/
 ├── BaseUser.php              # Implements OAuthenticatable + HasApiTokens
 ├── OauthClient.php          # Extends Laravel\Passport\Client
+<<<<<<< HEAD
 ├── OauthToken.php           # Extends Laravel\Passport\Token
 ├── OauthAccessToken.php     # Local alias/model used by app consumers when needed
 ├── OauthRefreshToken.php    # Extends Laravel\Passport\RefreshToken
@@ -71,6 +79,14 @@ laravel/Modules/User/app/Models/
 - `Laravel\Passport\PersonalAccessClient` non e un model Eloquent vendor disponibile come wrapper 1:1 nel progetto
 - `OauthPersonalAccessClient` resta quindi un model locale del modulo `User`, non un mirror diretto del vendor
 
+=======
+├── OauthAccessToken.php     # Extends Laravel\Passport\Token
+├── OauthRefreshToken.php    # Extends Laravel\Passport\RefreshToken
+├── OauthAuthCode.php        # Extends Laravel\Passport\AuthCode
+└── OauthPersonalAccessClient.php  # Extends Laravel\Passport\PersonalAccessClient
+```
+
+>>>>>>> 60a2c9a9 (.)
 ### BaseUser + Passport
 
 ```php
@@ -519,9 +535,15 @@ $ ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 ## 📚 Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< HEAD
 - [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale
 - [README.md](./readme.md) - Overview modulo
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md) - Business logic completa
+=======
+- [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia generale
+- [README.md](./readme.md) - Overview modulo
+- [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md) - Business logic completa
+>>>>>>> 60a2c9a9 (.)
 
 ### Documentazione Esterna
 - [Laravel Passport Official](https://laravel.com/docs/passport)

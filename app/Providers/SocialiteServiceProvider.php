@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Providers;
 
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Event;
 use SocialiteProviders\Manager\ServiceProvider as BaseSocialiteServiceProvider;
@@ -62,4 +63,10 @@ class SocialiteServiceProvider extends BaseSocialiteServiceProvider
             Config::set("services.{$provider}", array_merge($existingConfig, $settings));
         }
     }
+=======
+use SocialiteProviders\Manager\ServiceProvider as BaseSocialiteServiceProvider;
+
+class SocialiteServiceProvider extends BaseSocialiteServiceProvider
+{
+>>>>>>> 60a2c9a9 (.)
 }

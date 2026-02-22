@@ -11,8 +11,23 @@ return [
         ],
     ],
     'fields' => [
+<<<<<<< HEAD
         'first_name' => 'Nome',
         'last_name' => 'Cognome',
+=======
+        'first_name' => [
+            'label' => 'Nome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'last_name' => [
+            'label' => 'Cognome',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+>>>>>>> 60a2c9a9 (.)
     ],
     'actions' => [
         'import' => [
@@ -31,4 +46,9 @@ return [
             'label' => 'create',
         ],
     ],
+<<<<<<< HEAD
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> 60a2c9a9 (.)
 ];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Level 10 Fixes Roadmap - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # PHPStan Level 10 Fixes Roadmap - Modulo User
 
 **Data Creazione**: 2025-01-27  
@@ -126,4 +129,9 @@ public static function getTableActions(): array
 
 - [Regole Filament Resources](../../../.cursor/rules/filament-relation-managers.mdc)
 - [Regole No Labels](../../../.cursor/rules/no-filament-labels.mdc)
+<<<<<<< HEAD
 - [PHPStan Fixes User Module - 2026-01-05](./phpstan-fix-plan.md)
+=======
+- [PHPStan Fixes User Module - 2026-01-05](./phpstan-fix-plan-2026-01-05.md)
+>>>>>>> fa4b6559 (.)
+>>>>>>> 60a2c9a9 (.)

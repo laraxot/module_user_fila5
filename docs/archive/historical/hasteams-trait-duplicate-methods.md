@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Analisi metodi duplicati in HasTeams (trait)"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Analisi metodi duplicati in HasTeams (trait)
 
 ## Introduzione

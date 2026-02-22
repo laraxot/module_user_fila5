@@ -25,6 +25,7 @@ return [
         'bulk_detach' => 'Detach Selected',
     ],
     'fields' => [
+<<<<<<< HEAD
         'name' => 'Name',
         'email' => 'Email',
         'created_at' => 'Created At',
@@ -35,6 +36,68 @@ return [
         'password' => 'Password',
         'password_confirmation' => 'Confirm Password',
         'email_verified_at' => 'Email Verified At',
+=======
+        'name' => [
+            'label' => 'Name',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'email' => [
+            'label' => 'Email',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'Created At',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Updated At',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'role' => [
+            'label' => 'Role',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'active' => [
+            'label' => 'Active',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'id' => [
+            'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'password' => [
+            'label' => 'Password',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'password_confirmation' => [
+            'label' => 'Confirm Password',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'email_verified_at' => [
+            'label' => 'Email Verified At',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+>>>>>>> 60a2c9a9 (.)
     ],
     'filters' => [
         'active_users' => 'Active Users',
@@ -107,4 +170,16 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
+=======
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> 60a2c9a9 (.)
 ];

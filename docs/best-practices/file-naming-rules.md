@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Regole di Naming per File"
 type: rule
@@ -18,6 +19,8 @@ related:
   - "./dependency-rules.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Regole di Naming per File
 
 ## 🎯 Regola Fondamentale: NO Duplicati Case-Insensitive

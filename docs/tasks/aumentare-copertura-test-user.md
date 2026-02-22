@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Task: Aumentare Copertura Test User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./tasks-index.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Task: Aumentare Copertura Test User
 
 **Modulo**: User  

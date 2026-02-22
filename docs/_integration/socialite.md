@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "socialite"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./phpstan.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # socialite
 
 <!-- Contenuto migrato da _docs/socialite.txt -->

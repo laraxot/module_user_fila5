@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Testing Rules Summary"
 type: rule
@@ -18,6 +19,8 @@ related:
   - "./dependency-rules.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test

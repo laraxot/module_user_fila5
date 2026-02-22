@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "filament"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./profile.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # filament
 
 <!-- Contenuto migrato da _docs/filament.txt -->

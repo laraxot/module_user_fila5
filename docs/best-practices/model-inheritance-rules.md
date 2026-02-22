@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Regole di Ereditarietà dei Modelli - Modulo User"
 type: rule
@@ -18,6 +19,8 @@ related:
   - "./dependency-rules.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Regole di Ereditarietà dei Modelli - Modulo User
 
 **Data**: 2025-10-15
@@ -298,6 +301,10 @@ Il comando dovrebbe restituire solo:
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 15 ottobre 2025*
+>>>>>>> 60a2c9a9 (.)
 *Autore: Refactoring automatico con Claude Code*
 
 ## Aggiornamento 2025-11

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - DRY + KISS Improvements"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # User Module - DRY + KISS Improvements
 
 ## Current State Analysis

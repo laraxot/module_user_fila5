@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Database Issues in User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Database Issues in User Module
 
 ## Missing `doctor_team` Table
@@ -41,4 +44,8 @@ related:
 - [Team Management](./team_management.md)
 - [BaseUser Model](./baseuser.md)
 - [Database Structure](../database_structure.md)
+<<<<<<< HEAD
 - [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
+=======
+- [Migration Guidelines](../../../../docs/collegamenti-documentazione.md)
+>>>>>>> 60a2c9a9 (.)

@@ -5,7 +5,11 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\OauthAccessTokenResource\Pages;
 
 use Filament\Actions\Action;
+<<<<<<< HEAD
 // Added
+=======
+use Filament\Actions\CreateAction; // Added
+>>>>>>> 60a2c9a9 (.)
 use Modules\User\Filament\Resources\OauthAccessTokenResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 

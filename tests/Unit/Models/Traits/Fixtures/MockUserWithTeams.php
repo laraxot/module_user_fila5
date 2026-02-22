@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models\Traits\Fixtures;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -73,5 +74,21 @@ class MockUserWithTeams extends Model
         $relation = $this->belongsToManyX(Team::class);
 
         return $relation;
+=======
+use Illuminate\Database\Eloquent\Model;
+use Modules\User\Models\Traits\HasTeams;
+
+class MockUserWithTeams extends Model
+{
+    use HasTeams;
+
+    protected $table = 'users';
+
+    protected $fillable = ['name', 'email'];
+
+    public function getKey(): int
+    {
+        return 1;
+>>>>>>> 60a2c9a9 (.)
     }
 }

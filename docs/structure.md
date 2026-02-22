@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Modulo User
 
 Data: 2025-04-23 19:09:56
@@ -25,7 +28,11 @@ Data: 2025-04-23 19:09:56
 - **Namespace principale**: Modules\\User
 Modules\\User\\Database\\Factories
 Modules\\User\\Database\\Seeders
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_user_fila5
+=======
+- **Pacchetto Composer**: laraxot/module_user_fila3
+>>>>>>> 60a2c9a9 (.)
 Marco Sottana
 - **Dipendenze**: flowframe/laravel-trend * jenssegers/agent * laravel/passport * socialiteproviders/auth0 * spatie/laravel-personal-data-export * repositories type path url ../Xot type path url ../Tenant type path url ../UI
 - **Totale file PHP**: 673

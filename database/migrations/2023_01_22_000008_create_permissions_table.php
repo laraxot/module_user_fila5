@@ -9,8 +9,12 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Class CreatePermissionsTable.
  */
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
+=======
+return new class extends XotBaseMigration {
+>>>>>>> 60a2c9a9 (.)
     /**
      * Run the migrations.
      */

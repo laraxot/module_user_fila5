@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module Analysis"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # User Module Analysis
 
 ## Overview
@@ -96,5 +99,8 @@ Modules/User/
 * [analysis.md](../../../../themes/one/project_docs/analysis.md)
 ### Versione Incoming
 ---
+<<<<<<< HEAD
 
 ```
+=======
+>>>>>>> 60a2c9a9 (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Task: Query Optimization User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./tasks-index.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Task: Query Optimization User
 
 **Modulo**: User  

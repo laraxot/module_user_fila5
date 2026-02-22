@@ -11,13 +11,17 @@ class GetUserTeamsOptionAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     /**
      * @return array<int|string, string>
      */
+=======
+>>>>>>> 60a2c9a9 (.)
     public function execute(): array
     {
         $teams = TeamUser::where('user_id', authId())->get();
 
+<<<<<<< HEAD
         /** @var array<int|string, string> $options */
         $options = ['' => '--- Select ---'];
 
@@ -36,5 +40,8 @@ class GetUserTeamsOptionAction
         }
 
         return $options;
+=======
+        return ['' => '--- Select ---'] + $teams->pluck('team.name', 'team.id')->toArray();
+>>>>>>> 60a2c9a9 (.)
     }
 }

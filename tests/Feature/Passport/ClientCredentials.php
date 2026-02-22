@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\User\Tests\Feature\Passport;
 
 use Laravel\Passport\Client;
@@ -11,6 +12,12 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
+=======
+use Laravel\Passport\Client;
+use Laravel\Passport\ClientRepository;
+use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
+>>>>>>> 60a2c9a9 (.)
 
 uses(TestCase::class);
 
@@ -23,6 +30,7 @@ function createPassportClient(): array
 
     $client = $repository->createClientCredentialsGrantClient('Flow Test Client');
 
+<<<<<<< HEAD
     $secret = $client->plainSecret ?? SafeStringCastAction::cast($client->getAttribute('secret'));
 
     return [
@@ -33,6 +41,12 @@ function createPassportClient(): array
 
 test('client credentials grant returns token', function (): void {
     /* @var TestCase $this */
+=======
+    return ['client' => $client, 'secret' => $client->plainSecret ?? $client->secret];
+}
+
+test('client credentials grant returns token', function (): void {
+>>>>>>> 60a2c9a9 (.)
     ['client' => $client, 'secret' => $secret] = createPassportClient();
 
     $response = $this->post('/oauth/token', [
@@ -48,20 +62,36 @@ test('client credentials grant returns token', function (): void {
 });
 
 test('client credentials can be associated to a specific user', function (): void {
+<<<<<<< HEAD
     /* @var TestCase $this */
     ['client' => $client] = createPassportClient();
     $user = UserFactory::new()->createOne();
+=======
+    ['client' => $client] = createPassportClient();
+    $user = User::factory()->create();
+>>>>>>> 60a2c9a9 (.)
 
     $client->owner()->associate($user);
     $client->forceFill([
         'user_id' => $user->getKey(),
+<<<<<<< HEAD
         'owner_id' => SafeStringCastAction::cast($user->getKey()),
         'owner_type' => User::class,
+=======
+        'owner_id' => (string) $user->getKey(),
+        'owner_type' => $user::class,
+>>>>>>> 60a2c9a9 (.)
     ]);
     $client->save();
     $client->refresh();
 
+<<<<<<< HEAD
     Assert::assertNotNull($client->owner);
     Assert::assertTrue($client->owner->is($user));
     Assert::assertSame($user->getKey(), $client->getAttribute('user_id'));
+=======
+    expect($client->owner)->not->toBeNull()
+        ->and($client->owner->is($user))->toBeTrue()
+        ->and($client->user_id)->toBe($user->getKey());
+>>>>>>> 60a2c9a9 (.)
 });

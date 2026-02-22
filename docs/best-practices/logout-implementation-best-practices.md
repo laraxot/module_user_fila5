@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Best Practices per l'Implementazione del Logout"
 type: concept
@@ -26,6 +27,13 @@ related:
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 - [README modulo User](./readme.md)
 - [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
+=======
+# Best Practices per l'Implementazione del Logout
+
+## Collegamenti correlati
+- [README modulo User](./readme.md)
+- [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
+>>>>>>> 60a2c9a9 (.)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
@@ -261,4 +269,8 @@ $this->redirect(LaravelLocalization::getLocalizedURL($locale, route('home')));
 - [Documentazione Laravel Authentication](https://laravel.com/docs/10.x/authentication)
 - [Documentazione Livewire Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
+<<<<<<< HEAD
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
+=======
+- [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
+>>>>>>> 60a2c9a9 (.)

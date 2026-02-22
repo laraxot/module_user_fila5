@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User vs Profile: Guida Completa alla Progettazione"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # User vs Profile: Guida Completa alla Progettazione
 
 ## Sommario
@@ -25,7 +28,11 @@ related:
 2. [Analisi del Codice Attuale](#analisi-del-codice-attuale)
 3. [Best Practice Raccolte](#best-practice-raccolte)
 4. [Casi d'Uso con Percentuali](#casi-duso-con-percentuali)
+<<<<<<< HEAD
 5. [Raccomandazioni per <nome progetto>](#raccomandazioni-per-<nome progetto>)
+=======
+5. [Raccomandazioni per LaravelPizza](#raccomandazioni-per-laravelpizza)
+>>>>>>> 60a2c9a9 (.)
 6. [Schema Decisionale](#schema-decisionale)
 
 ---
@@ -38,7 +45,11 @@ La separazione tra **User** (tabella per autenticazione) e **Profile** (tabella 
 
 ## Analisi del Codice Attuale
 
+<<<<<<< HEAD
 ### Struttura Attuale <nome progetto>
+=======
+### Struttura Attuale LaravelPizza
+>>>>>>> 60a2c9a9 (.)
 
 ```
 User (connection: user)
@@ -59,9 +70,14 @@ User (connection: user)
 ├── timestamps
 └── SoftDeletes
 
+<<<<<<< HEAD
 Profile (connection: user)
 ├── id (bigint autoincrement)
 ├── uuid (char 36 unique, per Android/Postgres/API)
+=======
+Profile (connection: meetup)
+├── id (UUID)
+>>>>>>> 60a2c9a9 (.)
 ├── user_id (UUID)
 ├── first_name
 ├── last_name
@@ -146,7 +162,11 @@ public function profile(): HasOne
 
 ## Casi d'Uso con Percentuali
 
+<<<<<<< HEAD
 ### Caso 1: Community Platform (es. <nome progetto>)
+=======
+### Caso 1: Community Platform (es. LaravelPizza)
+>>>>>>> 60a2c9a9 (.)
 ```
 User: 60% dei dati necessari
 - id, email, password, name, lang, type, state
@@ -251,7 +271,11 @@ START
 
 ---
 
+<<<<<<< HEAD
 ## Raccomandazioni per <nome progetto>
+=======
+## Raccomandazioni per LaravelPizza
+>>>>>>> 60a2c9a9 (.)
 
 ### Attuale (CORRETTO)
 
@@ -326,7 +350,11 @@ Profile: Tutti i dati applicativi
 
 | Scenario | Usa | Note |
 |----------|-----|------|
+<<<<<<< HEAD
 | <nome progetto> attuale | User + Profile | Profile in meetup DB |
+=======
+| LaravelPizza attuale | User + Profile | Profile in meetup DB |
+>>>>>>> 60a2c9a9 (.)
 | MVP semplice | Solo User | Tutto in una tabella |
 | SaaS multi-tenant | User + Profile | Profile per tenant |
 | Social network | User + Profile | Profile ricco |
@@ -336,7 +364,11 @@ Profile: Tutti i dati applicativi
 
 ## Conclusione
 
+<<<<<<< HEAD
 Per **<nome progetto>** la separazione attuale ha senso perché:
+=======
+Per **LaravelPizza** la separazione attuale ha senso perché:
+>>>>>>> 60a2c9a9 (.)
 - ✅ Profile è in connection separata (meetup)
 - ✅ Meetup module ha dati specifici
 - ✅ Possibile estensione futura (altri moduli)
@@ -347,5 +379,9 @@ Per **<nome progetto>** la separazione attuale ha senso perché:
 
 ---
 
+<<<<<<< HEAD
 *Documento generato per <nome progetto> - Analisi User vs Profile Pattern*
+=======
+*Documento generato per LaravelPizza - Analisi User vs Profile Pattern*
+>>>>>>> 60a2c9a9 (.)
 *Data: [DATE]*

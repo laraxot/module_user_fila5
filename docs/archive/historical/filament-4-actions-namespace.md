@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Filament 4: Namespace Actions - Filosofia Laraxot"
 type: concept
@@ -21,6 +22,11 @@ related:
 # Filament 4: Namespace Actions - Filosofia Laraxot
 
 **Data Creazione**: 2025-01-22
+=======
+# Filament 4: Namespace Actions - Filosofia Laraxot
+
+**Data Creazione**: [DATE]
+>>>>>>> 60a2c9a9 (.)
 **Status**: Documentazione Completa
 **Versione**: 1.0.0
 

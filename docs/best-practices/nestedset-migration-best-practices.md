@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "NestedSet Migration Best Practices - User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./dependency-rules.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # NestedSet Migration Best Practices - User Module
 
 ## Overview

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "AssignModuleCommand - Gestione Moduli Utente"
 type: concept
@@ -14,6 +15,8 @@ related:
   - "./readme.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # AssignModuleCommand - Gestione Moduli Utente
 
 ## Descrizione
@@ -170,7 +173,11 @@ Result: No changes made to user modules.
 ```
 
 ## Collegamenti
+<<<<<<< HEAD
 - [Console Commands Philosophy](console-commands-philosophy.md)
+=======
+- [Console Commands Philosophy](console_commands_philosophy.md)
+>>>>>>> 60a2c9a9 (.)
 - [User Models](models/readme.md)
 - [Role Management](models/role-management.md)
 - [README.md](../readme.md)
@@ -184,3 +191,7 @@ Result: No changes made to user modules.
 - ✅ **Gestione Errori**: Controlli preventivi per utenti non trovati
 - ✅ **Documentazione**: Documentazione completa con esempi
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-27* 
+>>>>>>> 60a2c9a9 (.)

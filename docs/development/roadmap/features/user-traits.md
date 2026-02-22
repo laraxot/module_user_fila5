@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Traits Implementation"
 type: concept
@@ -17,6 +18,8 @@ related:
   - "./user-analytics.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # User Traits Implementation
 
 ## Overview

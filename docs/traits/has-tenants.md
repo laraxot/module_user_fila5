@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Trait HasTenants"
 type: concept
@@ -12,6 +13,8 @@ related:
   - "./has-teams.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Trait HasTenants
 
 ## Descrizione

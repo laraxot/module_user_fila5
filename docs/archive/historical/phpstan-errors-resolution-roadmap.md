@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Level 10 Errors Resolution Roadmap - User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # PHPStan Level 10 Errors Resolution Roadmap - User Module
 
 **Data**: 2025-01-27  
@@ -209,6 +212,7 @@ Tutti gli errori sono stati corretti:
 3. ✅ **HasTeams.php linee 473 e 476**: Corretto PHPDoc return type da `Pivot` a `TeamUser` per riflettere `->using(TeamUser::class)`
 4. ✅ **PassportServiceProvider.php linea 158**: Aggiunto cast esplicito `@var array<string, string>` per `Passport::tokensCan()`
 
+<<<<<<< HEAD
 ### Correzioni Implementate (2026-02-02) - ✅ FINAL FIX
 1. **PassportServiceProvider.php**:
     - Risolti errori di type mismatch per `useTokenModel`, `useRefreshTokenModel`, ecc. usando `Assert::subclassOf`.
@@ -217,3 +221,6 @@ Tutti gli errori sono stati corretti:
 3. **PHPMD**:
     - Aggiunto `@SuppressWarnings` per `StaticAccess` e `CouplingBetweenObjects` in `PassportServiceProvider`.
 
+=======
+*Ultimo aggiornamento: 2025-01-27*
+>>>>>>> 60a2c9a9 (.)

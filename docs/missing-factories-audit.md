@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Factory Mancanti - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Factory Mancanti - Modulo User
 
 ## Situazione Critica Identificata
@@ -154,8 +157,16 @@ related:
 ## Collegamenti
 
 - [README Modulo User](./readme.md)
+<<<<<<< HEAD
 - [Factory Audit Root](../../../../docs/project/factory-audit-2025.md)
+=======
+- [Factory Audit Root](../../../project_docs/factory-audit-2025.md)
+>>>>>>> 60a2c9a9 (.)
 - [Models Documentation](./models/readme.md)
 
 ---
 **Errore gravissimo da non ripetere mai più**  
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> 60a2c9a9 (.)

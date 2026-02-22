@@ -71,7 +71,13 @@ class DeleteUserAction
 
 ## Documentazione Correlata
 
+<<<<<<< HEAD
 - [Path Conventions](./PATH_CONVENTIONS.md)
 - [Directory Structure Checklist](./DIRECTORY_STRUCTURE_CHECKLIST.md)
 - [Module Structure](./MODULE_STRUCTURE.md)
+=======
+- [Path Conventions](./path_conventions.md)
+- [Directory Structure Checklist](./directory_structure_checklist.md)
+- [Module Structure](./module_structure.md)
+>>>>>>> 60a2c9a9 (.)
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)

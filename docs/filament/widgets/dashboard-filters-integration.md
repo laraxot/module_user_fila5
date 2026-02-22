@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Dashboard Filters Integration per Widget Filament"
 type: concept
@@ -14,6 +15,8 @@ related:
   - "./registration-widget.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Dashboard Filters Integration per Widget Filament
 
 ## Problema Risolto
@@ -162,3 +165,7 @@ protected function getFooterWidgets(): array
 - **Problema**: Widget non riceveva filtri Dashboard
 - **Soluzione**: Accesso sicuro con fallback appropriati
 - **Impatto**: Risolto per tutti i widget che usano lo stesso pattern
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 60a2c9a9 (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User - Filosofia Completa: Logica, Religione, Politica, Zen"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # User - Filosofia Completa: Logica, Religione, Politica, Zen
 
 **Data Creazione**: [DATE]

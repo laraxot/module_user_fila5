@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Passport Cluster - Completamento Lavoro"
 type: concept
@@ -21,6 +22,10 @@ related:
 # Passport Cluster - Completamento Lavoro
 
 **Data**: 2025-01-22
+=======
+# Passport Cluster - Completamento Lavoro
+
+>>>>>>> 60a2c9a9 (.)
 **Status**: ✅ Completato
 **Metodologia**: Super Mucca
 
@@ -187,6 +192,10 @@ Alcune risorse non hanno tutte le pages standard:
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-01-22
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> 60a2c9a9 (.)
 **Versione**: 1.0.0
 **Status**: ✅ Lavoro completato e documentato

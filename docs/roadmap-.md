@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - Complete Roadmap 2026"
 type: concept
@@ -21,6 +22,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # User Module - Complete Roadmap 2026
 
 **Generated**: 2026-01-02
@@ -301,7 +304,11 @@ public function redirectToProvider(string $provider)
 *"BaseUser is the bedrock upon which all security stands"*
 - UUID-based identity across all systems
 - Immutable core properties (id, email)
+<<<<<<< HEAD
 - <nome progetto>able behavior in all contexts
+=======
+- Predictable behavior in all contexts
+>>>>>>> 60a2c9a9 (.)
 
 #### **2. Water (Adaptability)**
 *"Authentication flows like water, taking the shape of any system"*
@@ -512,7 +519,11 @@ User Module Dependencies:
 **Modulo**: User (Authentication & Authorization)
 **Status**: 90% COMPLETATO
 **Priority**: HIGH
+<<<<<<< HEAD
 **PHPStan**: ✅ Level 10 (0 errori)
+=======
+**PHPStan**: ✅ Level 9 (0 errori)
+>>>>>>> 60a2c9a9 (.)
 **Filament**: ✅ 4.x Compatibile
 
 ---
@@ -591,7 +602,11 @@ User Module
 - [x] **Notification System**: User notifications
 
 ### 🔧 Technical Excellence
+<<<<<<< HEAD
 - [x] **PHPStan Level 10**: 0 errori
+=======
+- [x] **PHPStan Level 9**: 0 errori
+>>>>>>> 60a2c9a9 (.)
 - [x] **Filament 4.x**: Compatibilità completa
 - [x] **Type Safety**: Type hints completi
 - [x] **Error Handling**: Gestione errori robusta
@@ -758,7 +773,11 @@ User Module
 **Status**: 95% COMPLETATO
 
 #### ✅ Completed
+<<<<<<< HEAD
 - [x] PHPStan Level 10 compliance
+=======
+- [x] PHPStan Level 9 compliance
+>>>>>>> 60a2c9a9 (.)
 - [x] Type safety implementation
 - [x] Error handling improvement
 - [x] Code documentation
@@ -817,7 +836,11 @@ User Module
 ## 🎯 SUCCESS METRICS
 
 ### 📊 Technical Metrics
+<<<<<<< HEAD
 - [x] **PHPStan Level 10**: 0 errori ✅
+=======
+- [x] **PHPStan Level 9**: 0 errori ✅
+>>>>>>> 60a2c9a9 (.)
 - [x] **Filament 4.x**: Compatibile ✅
 - [ ] **Test Coverage**: 80% (target)
 - [ ] **Response Time**: < 200ms
@@ -955,8 +978,11 @@ User Module
 
 ## 🔗 INTEGRATION POINTS
 
+<<<<<<< HEAD
 ### 🎫 <nome progetto> Module
 
+=======
+>>>>>>> 60a2c9a9 (.)
 ### 🎫 Fixcity Module
 - [ ] User-ticket relationships
 - [ ] Profile-ticket associations
@@ -983,6 +1009,11 @@ User Module
 
 ---
 
+<<<<<<< HEAD
+=======
+**Last Updated**: 2025-10-01
+**Next Review**: 2025-11-01
+>>>>>>> 60a2c9a9 (.)
 **Status**: 🚧 ACTIVE DEVELOPMENT
 **Confidence Level**: 98%
 

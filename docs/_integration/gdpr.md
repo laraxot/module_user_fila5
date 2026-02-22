@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "gdpr"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./profile.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # gdpr
 
 <!-- Contenuto migrato da _docs/gdpr.txt -->

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Problema di Binding nei Componenti Livewire con statePath('data')"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Problema di Binding nei Componenti Livewire con statePath('data')
 
 ## Descrizione del Problema

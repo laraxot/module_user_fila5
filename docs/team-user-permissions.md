@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Team User Permissions Column Fix - Laraxot Philosophy Compliant"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Team User Permissions Column Fix - Laraxot Philosophy Compliant
 
 **Date**: [DATE]  

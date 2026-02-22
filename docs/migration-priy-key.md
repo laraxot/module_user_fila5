@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Fix Primary Key Constraint - team_user Table"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Fix Primary Key Constraint - team_user Table
 
 ## Data
@@ -134,9 +137,15 @@ $this->tableCreate(static function (Blueprint $table): void {
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Teams owner_id fix](./migration-teams-owner-id-fix.md)
 - [Migration Best Practices](../../xot/docs/migration-standards.md)
 - [Primary Key Rules](../../../../docs/development/migration_fixes_summary.md)
+=======
+- [Teams Migration Compliance](./teams-migration-laraxot-compliance.md)
+- [Migration Best Practices](../../xot/docs/migration-standards.md)
+- [Primary Key Rules](../../../docs/development/migration_fixes_summary.md)
+>>>>>>> 60a2c9a9 (.)
 
 ## Status
 
@@ -144,3 +153,7 @@ $this->tableCreate(static function (Blueprint $table): void {
 ✅ **Migrazione funzionante**
 ✅ **Documentazione aggiornata**
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: [DATE]*
+>>>>>>> 60a2c9a9 (.)

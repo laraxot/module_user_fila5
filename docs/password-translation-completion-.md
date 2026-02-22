@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Completamento Traduzioni Password - 2025"
 type: concept
@@ -21,6 +22,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Completamento Traduzioni Password - 2025
 
 ## Problema Identificato
@@ -126,8 +129,11 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Documentazione Modulo User](../README.md)
 - [Best Practices Traduzioni](../../Lang/docs/translation_standards.md)
+=======
+>>>>>>> 60a2c9a9 (.)
 - [Documentazione Modulo User](../readme.md)
 - [Best Practices Traduzioni](../../lang/docs/translation_standards.md)
 - [Sicurezza Password](../security/password_policies.md)
@@ -247,8 +253,11 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Documentazione Modulo User](../README.md)
 - [Best Practices Traduzioni](../../Lang/docs/translation_standards.md)
+=======
+>>>>>>> 60a2c9a9 (.)
 - [Documentazione Modulo User](../readme.md)
 - [Best Practices Traduzioni](../../lang/docs/translation_standards.md)
 - [Sicurezza Password](../security/password_policies.md)

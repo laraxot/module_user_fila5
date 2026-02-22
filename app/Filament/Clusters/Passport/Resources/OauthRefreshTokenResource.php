@@ -4,14 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
+=======
+>>>>>>> 60a2c9a9 (.)
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
+<<<<<<< HEAD
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
@@ -19,6 +23,11 @@ use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+=======
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Grid;
+use Filament\Schemas\Components\Section;
+>>>>>>> 60a2c9a9 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Actions\Passport\RevokeRefreshTokenAction;
 use Modules\User\Filament\Clusters\Passport;
@@ -59,15 +68,24 @@ class OauthRefreshTokenResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
                 TextColumn::make('id')
+=======
+    public static function table(\Filament\Tables\Table $table): \Filament\Tables\Table
+    {
+        return $table
+            ->columns([
+                \Filament\Tables\Columns\TextColumn::make('id')
+>>>>>>> 60a2c9a9 (.)
                     ->searchable()
                     ->sortable()
                     ->copyable(),
 
+<<<<<<< HEAD
                 TextColumn::make('access_token_id')
                     ->searchable()
                     ->sortable(),
@@ -77,6 +95,17 @@ class OauthRefreshTokenResource extends XotBaseResource
                     ->color(fn (bool $state): string => $state ? 'danger' : 'success'),
 
                 TextColumn::make('expires_at')
+=======
+                \Filament\Tables\Columns\TextColumn::make('access_token_id')
+                    ->searchable()
+                    ->sortable(),
+
+                \Filament\Tables\Columns\IconColumn::make('revoked')
+                    ->boolean()
+                    ->color(fn (bool $state): string => $state ? 'danger' : 'success'),
+
+                \Filament\Tables\Columns\TextColumn::make('expires_at')
+>>>>>>> 60a2c9a9 (.)
                     ->dateTime()
                     ->sortable(),
             ])
@@ -84,11 +113,21 @@ class OauthRefreshTokenResource extends XotBaseResource
                 // Add filters for revoked status, expiration
             ])
             ->recordActions([
+<<<<<<< HEAD
                 Action::make('revoke')
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
                     ->requiresConfirmation()
                     ->action(function (mixed $record): void {
+=======
+                \Filament\Actions\Action::make('revoke')
+                    ->label(static::trans('actions.revoke.label'))
+                    ->icon('heroicon-o-x-circle')
+                    ->color('danger')
+                    ->requiresConfirmation()
+                    ->modalHeading(static::trans('actions.revoke.label'))
+                    ->action(function (mixed $record) {
+>>>>>>> 60a2c9a9 (.)
                         if ($record instanceof OauthRefreshToken && app(RevokeRefreshTokenAction::class)->execute($record)) {
                             Notification::make()
                                 ->title(static::trans('actions.revoke.success'))
@@ -96,19 +135,32 @@ class OauthRefreshTokenResource extends XotBaseResource
                                 ->send();
                         }
                     })
+<<<<<<< HEAD
                     ->visible(fn (mixed $record) => $record instanceof OauthRefreshToken && ! (bool) $record->getAttribute('revoked')),
                 DeleteAction::make(),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([
                     DeleteBulkAction::make(),
+=======
+                    ->visible(fn (mixed $record) => $record instanceof OauthRefreshToken && ! $record->revoked),
+                \Filament\Actions\DeleteAction::make(),
+            ])
+            ->bulkActions([
+                \Filament\Actions\BulkActionGroup::make([
+                    \Filament\Actions\DeleteBulkAction::make(),
+>>>>>>> 60a2c9a9 (.)
                 ]),
             ])
             ->defaultSort('expires_at', 'desc');
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, PageRegistration>
+=======
+     * @return array<string, \Filament\Resources\Pages\PageRegistration>
+>>>>>>> 60a2c9a9 (.)
      */
     #[\Override]
     public static function getPages(): array

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Translation Architecture - Filament Navigation Best Practices"
 type: concept
@@ -21,6 +22,11 @@ related:
 # Translation Architecture - Filament Navigation Best Practices
 
 > **Generated**: 2026-01-07
+=======
+# Translation Architecture - Filament Navigation Best Practices
+
+> **Generated**: [DATE]
+>>>>>>> 60a2c9a9 (.)
 > **Philosophy**: Direct Translation vs Translation Keys
 > **Scope**: All Modules Translations
 

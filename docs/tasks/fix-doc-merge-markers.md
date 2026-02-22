@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Task: Fix Documentation Merge Markers (User Module)"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./tasks-index.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Task: Fix Documentation Merge Markers (User Module)
 
 ## 📋 Obiettivo
@@ -38,4 +41,8 @@ Rimuovere residui di conflitti Git (`<<<<<<<`, `=======`, `>>>>>>>`) da tutti i 
 - [ ] Verificare che i link interni continuino a funzionare.
 
 ## 🔗 Riferimenti
+<<<<<<< HEAD
 - [Roadmap User](../roadmap.md)
+=======
+- [Roadmap User](../roadmap.md)
+>>>>>>> 60a2c9a9 (.)

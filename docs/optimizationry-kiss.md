@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Analisi Ottimizzazioni Modulo User - DRY + KISS"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Analisi Ottimizzazioni Modulo User - DRY + KISS
 
 ## 🎯 Obiettivo Analisi

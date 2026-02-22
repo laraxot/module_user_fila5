@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Passport Cluster - Implementazione Necessaria"
 type: concept
@@ -21,6 +22,10 @@ related:
 # Passport Cluster - Implementazione Necessaria
 
 **Data**: 2025-01-22
+=======
+# Passport Cluster - Implementazione Necessaria
+
+>>>>>>> 60a2c9a9 (.)
 **Status**: 🔴 DA IMPLEMENTARE
 **Metodologia**: Super Mucca
 
@@ -214,6 +219,10 @@ class ListOauthClients extends XotBaseListRecords
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-01-22
+=======
+**Ultimo aggiornamento**: [DATE]
+>>>>>>> 60a2c9a9 (.)
 **Versione**: 1.0.0
 **Status**: 🔴 DA IMPLEMENTARE

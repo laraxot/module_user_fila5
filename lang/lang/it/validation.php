@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
      * | Messaggi di validazione
@@ -15,6 +16,8 @@ return [
      * |
      */
 
+=======
+>>>>>>> 60a2c9a9 (.)
     'accepted' => 'Il campo :attribute deve essere accettato.',
     'active_url' => 'Il campo :attribute non è un URL valido.',
     'after' => 'Il campo :attribute deve essere una data successiva a :date.',
@@ -131,6 +134,7 @@ return [
     'uploaded' => 'Il campo :attribute non è riuscito a caricare.',
     'url' => 'Il formato del campo :attribute non è valido.',
     'uuid' => 'Il campo :attribute deve essere un UUID valido.',
+<<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
      * | Personalizzazione degli attributi
@@ -145,4 +149,22 @@ return [
     'attributes' => [
         'data.password' => 'zu',
     ],
+=======
+    'attributes' => [
+        'data.password' => 'zu',
+    ],
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+    'actions' => [
+    ],
+>>>>>>> 60a2c9a9 (.)
 ];

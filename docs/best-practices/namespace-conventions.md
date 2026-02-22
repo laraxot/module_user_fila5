@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Convenzioni di Namespace nel Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./dependency-rules.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Convenzioni di Namespace nel Modulo User
 
 ## Principi Fondamentali
@@ -214,4 +217,8 @@ Se l'override del tema non funziona:
 ---
 
 *Documento creato: Dicembre 2024*
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: Dicembre 2024*
+>>>>>>> 60a2c9a9 (.)
 

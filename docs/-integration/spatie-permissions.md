@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "spatie_permissions"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./phpstan.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # spatie_permissions
 
 <!-- Contenuto migrato da _docs/spatie_permissions.txt -->

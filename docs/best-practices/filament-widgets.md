@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Best Practices per Widget Filament"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./dependency-rules.md"
 ---
 
+=======
+>>>>>>> 60a2c9a9 (.)
 # Best Practices per Widget Filament
 
 ## Struttura Corretta dei File e Namespace

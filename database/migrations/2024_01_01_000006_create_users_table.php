@@ -9,8 +9,12 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Class CreateLiveuserUsersTable.
  */
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
+=======
+return new class extends XotBaseMigration {
+>>>>>>> 60a2c9a9 (.)
     /**
      * Run the migrations.
      */
@@ -72,7 +76,11 @@ return new class extends XotBaseMigration
                 $table->string('password')->nullable()->change();
             }
 
+<<<<<<< HEAD
             if ($this->getColumnType('id') === 'uuid') {
+=======
+            if ('uuid' === $this->getColumnType('id')) {
+>>>>>>> 60a2c9a9 (.)
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);
