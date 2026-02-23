@@ -39,6 +39,9 @@ return [
             'icon' => 'hidePassword',
             'label' => 'hidePassword',
         ],
+        'showPassword' => [
+            'tooltip' => 'showPassword',
+        ],
     ],
     'messages' => [
         'login_success' => 'Accesso effettuato con successo',
