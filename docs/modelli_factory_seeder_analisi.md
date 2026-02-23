@@ -186,5 +186,4 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Tenant Module](../../tenant/docs/modelli_factory_seeder_analisi.md)
 - [Notify Module](../../notify/docs/modelli_factory_seeder_analisi.md)
 
-*Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*
