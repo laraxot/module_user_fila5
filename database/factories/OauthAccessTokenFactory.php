@@ -10,7 +10,7 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Models\User;
 
 /**
- * OauthAccessToken Factory.
+ * OauthAccessToken Factory
  *
  * Factory for creating OauthAccessToken model instances for testing and seeding.
  *
@@ -95,7 +95,7 @@ class OauthAccessTokenFactory extends Factory
     /**
      * Create token with specific scopes.
      *
-     * @param array<string> $scopes
+     * @param  array<string>  $scopes
      */
     public function withScopes(array $scopes): static
     {

@@ -9,7 +9,7 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Models\User;
 
 /**
- * OauthClient Factory.
+ * OauthClient Factory
  *
  * Factory for creating OauthClient model instances for testing and seeding.
  *
@@ -129,7 +129,7 @@ class OauthClientFactory extends Factory
     /**
      * Create client with specific scopes.
      *
-     * @param array<string> $scopes
+     * @param  array<string>  $scopes
      */
     public function withScopes(array $scopes): static
     {
