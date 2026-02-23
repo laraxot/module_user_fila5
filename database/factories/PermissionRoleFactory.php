@@ -10,7 +10,7 @@ use Modules\User\Models\PermissionRole;
 use Modules\User\Models\Role;
 
 /**
- * PermissionRole Factory
+ * PermissionRole Factory.
  *
  * Factory for creating PermissionRole model instances for testing and seeding.
  *

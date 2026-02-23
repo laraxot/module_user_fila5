@@ -10,7 +10,7 @@ use Modules\User\Models\TenantUser;
 use Modules\User\Models\User;
 
 /**
- * TenantUser Factory
+ * TenantUser Factory.
  *
  * Factory for creating TenantUser model instances for testing and seeding.
  *

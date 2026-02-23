@@ -10,7 +10,7 @@ use Modules\User\Models\TeamUser;
 use Modules\User\Models\User;
 
 /**
- * TeamUser Factory
+ * TeamUser Factory.
  *
  * Factory for creating TeamUser model instances for testing and seeding.
  *

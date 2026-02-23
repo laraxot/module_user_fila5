@@ -10,7 +10,7 @@ use Modules\User\Models\Role;
 use Modules\User\Models\RoleHasPermission;
 
 /**
- * RoleHasPermission Factory
+ * RoleHasPermission Factory.
  *
  * @extends Factory<RoleHasPermission>
  */

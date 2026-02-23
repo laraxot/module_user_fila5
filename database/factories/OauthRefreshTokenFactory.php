@@ -9,7 +9,7 @@ use Modules\User\Models\OauthAccessToken;
 use Modules\User\Models\OauthRefreshToken;
 
 /**
- * OauthRefreshToken Factory
+ * OauthRefreshToken Factory.
  *
  * @extends Factory<OauthRefreshToken>
  */

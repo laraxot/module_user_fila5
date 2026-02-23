@@ -9,7 +9,7 @@ use Modules\User\Models\Authentication;
 use Modules\User\Models\User;
 
 /**
- * Authentication Factory
+ * Authentication Factory.
  *
  * Factory for creating Authentication model instances for testing and seeding.
  *

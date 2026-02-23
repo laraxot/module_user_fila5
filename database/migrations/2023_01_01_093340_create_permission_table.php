@@ -4,8 +4,7 @@ declare(strict_types=1);
 
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class() extends XotBaseMigration
-{
+return new class extends XotBaseMigration {
     /**
      * Run the migrations.
      */
@@ -25,15 +24,11 @@ return new class() extends XotBaseMigration
         $teams = config('permission.teams');
 
         if (empty($tableNames)) {
-            throw new Exception(
-                'Error: config/permission.php not loaded. Run [php artisan config:clear] and try again.',
-            );
+            throw new Exception('Error: config/permission.php not loaded. Run [php artisan config:clear] and try again.');
         }
 
         if ($teams && empty($columnNames['team_foreign_key'] ?? null)) {
-            throw new Exception(
-                'Error: team_foreign_key on config/permission.php not loaded. Run [php artisan config:clear] and try again.',
-            );
+            throw new Exception('Error: team_foreign_key on config/permission.php not loaded. Run [php artisan config:clear] and try again.');
         }
 
         /**
@@ -49,7 +44,7 @@ return new class() extends XotBaseMigration
         try {
             // Verifica se l'applicazione è completamente inizializzata
             if (app()->bound('cache')) {
-                app('cache')->store($cache_store !== 'default' ? $cache_store : null)->forget($cache_key);
+                app('cache')->store('default' !== $cache_store ? $cache_store : null)->forget($cache_key);
             }
         } catch (Exception $e) {
             // Silently ignore cache errors during package discovery

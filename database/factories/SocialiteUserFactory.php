@@ -9,7 +9,7 @@ use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
 
 /**
- * SocialiteUser Factory
+ * SocialiteUser Factory.
  *
  * @extends Factory<SocialiteUser>
  */

@@ -10,7 +10,7 @@ use Modules\User\Models\ProfileTeam;
 use Modules\User\Models\Team;
 
 /**
- * ProfileTeam Factory
+ * ProfileTeam Factory.
  *
  * @extends Factory<ProfileTeam>
  */

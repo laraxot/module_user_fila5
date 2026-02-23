@@ -10,7 +10,7 @@ use Modules\User\Models\Team;
 use Modules\User\Models\User;
 
 /**
- * Membership Factory
+ * Membership Factory.
  *
  * Factory for creating Membership model instances for testing and seeding.
  *

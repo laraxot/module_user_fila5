@@ -10,7 +10,7 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Models\User;
 
 /**
- * OauthAuthCode Factory
+ * OauthAuthCode Factory.
  *
  * @extends Factory<OauthAuthCode>
  */

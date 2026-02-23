@@ -10,7 +10,7 @@ use Modules\User\Models\DeviceUser;
 use Modules\User\Models\User;
 
 /**
- * DeviceUser Factory
+ * DeviceUser Factory.
  *
  * Factory for creating DeviceUser model instances for testing and seeding.
  *

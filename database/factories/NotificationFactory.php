@@ -9,7 +9,7 @@ use Modules\User\Models\Notification;
 use Modules\User\Models\User;
 
 /**
- * Notification Factory
+ * Notification Factory.
  *
  * Factory for creating Notification model instances for testing and seeding.
  *
