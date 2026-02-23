@@ -94,6 +94,10 @@ return [
         'welcome_message' => 'Inserisci le tue credenziali per accedere.',
         'with_google' => 'Continua con Google',
         'with_github' => 'Continua con GitHub',
+        'with_microsoft' => 'Continua con Microsoft',
+        'google' => 'Google',
+        'github' => 'GitHub',
+        'microsoft' => 'Microsoft',
         'or_continue_with' => 'oppure continua con email e password',
         'email' => 'Email',
         'email_placeholder' => 'esempio@email.com',
@@ -120,8 +124,6 @@ return [
         'register' => 'Registrati',
         'success' => 'Accesso effettuato con successo.',
         'failed' => 'Credenziali non valide.',
-        'logout_success' => 'Logout effettuato con successo.',
-        'logout_error' => 'Si è verificato un errore durante il logout.',
         'login-via' => 'Accedi con',
         'login-failed' => 'Login fallito, riprova.',
         'user-not-allowed' => 'La tua email non è autorizzata.',
@@ -232,6 +234,7 @@ return [
         'google' => 'Google',
         'facebook' => 'Facebook',
         'github' => 'GitHub',
+        'microsoft' => 'Microsoft',
         'error' => 'Si è verificato un errore con il login social.',
     ],
     'errors' => [
@@ -337,5 +340,12 @@ return [
         'delete' => [
             'label' => 'Elimina Auth',
         ],
+    ],
+    'auth_button' => [
+        'login' => 'Accedi',
+        'logout' => 'Esci',
+        'profile' => 'Il mio profilo',
+        'dashboard' => 'Dashboard',
+        'personal_area' => 'Accedi all\'area personale',
     ],
 ];

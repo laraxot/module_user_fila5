@@ -39,20 +39,36 @@ User → Filament Login Page → Socialite Provider → Microsoft OAuth
 
 ---
 
+## Implementazione Corrente (LoginWidget)
+
+L'implementazione attuale usa il LoginWidget del modulo User con pulsanti social nella view `user::filament.widgets.auth.login`:
+
+- **Route redirect**: `route('socialite.oauth.redirect', ['provider' => 'microsoft'])`
+- **Visibilità**: `@if(config('services.microsoft.client_id'))`
+- **Traduzione**: `__('user::auth.social.microsoft')`
+- **Provider**: `socialiteproviders/microsoft` registrato in `SocialiteServiceProvider`
+
+Test: `Modules/User/tests/Feature/Auth/MicrosoftLoginButtonTest.php`
+
+---
+
 ## 🔧 **Installation & Configuration**
 
 ### **Step 1: Install Dependencies**
 
-```bash
-# Install Laravel Socialite
-composer require laravel/socialite
+**Regola critica**: Le dipendenze OAuth/login vanno in `Modules/User/composer.json`, **mai** nel root `laravel/composer.json`.
 
-# Install Microsoft OAuth Provider
-composer require socialiteproviders/microsoft
+Aggiungi a `Modules/User/composer.json` nella sezione `require`:
 
-# Install Filament Socialite Plugin (Recommended: DutchCodingCompany)
-composer require dutchcodingcompany/filament-socialite
+```json
+"require": {
+    "socialiteproviders/microsoft": "^4.8"
+}
 ```
+
+Poi dalla root Laravel: `cd laravel && composer go`
+
+**Errato**: `composer require socialiteproviders/microsoft` (installa nel root)
 
 ### **Step 2: Configure Services**
 

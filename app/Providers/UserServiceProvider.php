@@ -24,6 +24,7 @@ use Modules\User\Filament\Widgets\Auth\PasswordResetConfirmWidget;
 use Modules\User\Filament\Widgets\Auth\PasswordResetWidget;
 use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Filament\Widgets\Auth\ResetPasswordWidget;
+use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Webmozart\Assert\Assert;
@@ -58,6 +59,7 @@ class UserServiceProvider extends XotBaseServiceProvider
     {
         $widgets = [
             LoginWidget::class,
+            SocialLoginWidget::class,
             RegisterWidget::class,
             ResetPasswordWidget::class,
             PasswordResetWidget::class,

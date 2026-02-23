@@ -8,7 +8,6 @@ use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Validation\ValidationException;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
@@ -43,6 +42,7 @@ class LoginWidget extends XotBaseWidget
                 ->autofocus(),
             'password' => TextInput::make('password')
                 ->password()
+                ->revealable()
                 ->required(),
             'remember' => Checkbox::make('remember'),
         ];
@@ -59,7 +59,7 @@ class LoginWidget extends XotBaseWidget
             'password' => is_string($data['password'] ?? null) ? $data['password'] : '',
         ];
 
-        $remember = isset($data['remember']) && true === $data['remember'];
+        $remember = isset($data['remember']) && $data['remember'] === true;
 
         if (Auth::attempt($credentials, $remember)) {
             session()->regenerate();
