@@ -29,7 +29,7 @@ class CreateGenericClientAction
         $client->provider = $provider ?? 'users';
         $client->revoked = false;
 
-        if ($user !== null) {
+        if (null !== $user) {
             $client->user_id = $user->id;
         }
 
