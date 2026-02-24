@@ -48,8 +48,30 @@ class UserDropdown extends XotBaseWidget
 
         return [
             'user' => $user,
-            'avatarUrl' => $profile?->getAvatarUrl() ?? 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y',
+            'avatarUrl' => $this->resolveAvatarUrl($profile),
             'name' => $user->name ?? 'User',
         ];
+    }
+
+    private function resolveAvatarUrl(object|null $profile): string
+    {
+        $fallback = 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y';
+
+        if (! \is_object($profile)) {
+            return $fallback;
+        }
+
+        if (method_exists($profile, 'getAvatarUrl')) {
+            /** @var mixed $url */
+            $url = $profile->getAvatarUrl();
+            if (\is_string($url) && $url !== '') {
+                return $url;
+            }
+        }
+
+        /** @var mixed $avatarUrl */
+        $avatarUrl = $profile->avatar_url ?? null;
+
+        return \is_string($avatarUrl) && $avatarUrl !== '' ? $avatarUrl : $fallback;
     }
 }
