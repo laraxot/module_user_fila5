@@ -53,7 +53,7 @@ class UserDropdown extends XotBaseWidget
         ];
     }
 
-    private function resolveAvatarUrl(object|null $profile): string
+    private function resolveAvatarUrl(?object $profile): string
     {
         $fallback = 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y';
 
@@ -62,16 +62,14 @@ class UserDropdown extends XotBaseWidget
         }
 
         if (method_exists($profile, 'getAvatarUrl')) {
-            /** @var mixed $url */
             $url = $profile->getAvatarUrl();
-            if (\is_string($url) && $url !== '') {
+            if (\is_string($url) && '' !== $url) {
                 return $url;
             }
         }
 
-        /** @var mixed $avatarUrl */
         $avatarUrl = $profile->avatar_url ?? null;
 
-        return \is_string($avatarUrl) && $avatarUrl !== '' ? $avatarUrl : $fallback;
+        return \is_string($avatarUrl) && '' !== $avatarUrl ? $avatarUrl : $fallback;
     }
 }
