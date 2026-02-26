@@ -30,7 +30,7 @@ class UserSeeder extends Seeder
         $this->command->info('👤 Inizializzazione seeding User...');
 
         // Disabilita i controlli di foreign key (solo per MySQL)
-        if ('sqlite' !== DB::getDriverName()) {
+        if (DB::getDriverName() !== 'sqlite') {
             DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         }
 
@@ -41,7 +41,7 @@ class UserSeeder extends Seeder
             $this->command->info('✅ Seeding User completato con successo!');
         } finally {
             // Riabilita i controlli di foreign key (solo per MySQL)
-            if ('sqlite' !== DB::getDriverName()) {
+            if (DB::getDriverName() !== 'sqlite') {
                 DB::statement('SET FOREIGN_KEY_CHECKS=1;');
             }
         }
@@ -168,36 +168,24 @@ class UserSeeder extends Seeder
     {
         $this->command->info('👥 Creazione team di sistema...');
 
-        // Team di amministrazione
-        $adminTeam = Team::factory()->create([
-            'name' => 'Amministratori',
-            'personal_team' => false,
-        ]);
-
-        // Team di sviluppo
-        $devTeam = Team::factory()->create([
-            'name' => 'Sviluppatori',
-            'personal_team' => false,
-        ]);
-
-        // Team di supporto
-        $supportTeam = Team::factory()->create([
-            'name' => 'Supporto Clienti',
-            'personal_team' => false,
-        ]);
-
-        // Team di marketing
-        $marketingTeam = Team::factory()->create([
-            'name' => 'Marketing',
-            'personal_team' => false,
-        ]);
-
-        // Team generale
-        $generalTeam = Team::factory()->create([
-            'name' => 'Team Generale',
-            'personal_team' => false,
-        ]);
+        $adminTeam = $this->createTeam('Amministratori');
+        $devTeam = $this->createTeam('Sviluppatori');
+        $supportTeam = $this->createTeam('Supporto Clienti');
+        $marketingTeam = $this->createTeam('Marketing');
+        $generalTeam = $this->createTeam('Team Generale');
 
         $this->command->info('   ✓ Creati 5 team di sistema');
+    }
+
+    private function createTeam(string $name): \Modules\User\Models\Team
+    {
+        $factory = \Modules\User\Database\Factories\TeamFactory::new();
+        /** @var \Modules\User\Models\Team $team */
+        $team = $factory->create([
+            'name' => $name,
+            'personal_team' => false,
+        ]);
+
+        return $team;
     }
 }

@@ -99,6 +99,8 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @method static Builder<static>|Profile whereUpdatedBy($value)
  * @method static Builder<static>|Profile whereUserId($value)
  *
+ * @method static \Modules\User\Database\Factories\ProfileFactory factory($count = null, $state = [])
+ *
  * @mixin \Eloquent
  */
 class Profile extends BaseProfile implements HasMedia
