@@ -201,7 +201,7 @@ class UserMassSeeder extends Seeder
 
         // Crea 200 utenti generici
         $userFactory = \Modules\User\Database\Factories\UserFactory::new();
-        /** @var \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\User> $users */
+        /** @var \Illuminate\Database\Eloquent\Collection<int, User> $users */
         $users = $userFactory->count(200)->create([
             'email_verified_at' => Carbon::now(),
             'created_at' => Carbon::now()->subDays(rand(1, 365)),
@@ -238,7 +238,7 @@ class UserMassSeeder extends Seeder
 
         // Crea 1000 log di autenticazione
         $logFactory = \Modules\User\Database\Factories\AuthenticationLogFactory::new();
-        /** @var \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\AuthenticationLog> $logs */
+        /** @var \Illuminate\Database\Eloquent\Collection<int, AuthenticationLog> $logs */
         $logs = $logFactory->count(1000)->create([
             'created_at' => Carbon::now()->subDays(rand(1, 30)),
         ]);
@@ -255,7 +255,7 @@ class UserMassSeeder extends Seeder
 
         // Crea 500 dispositivi
         $deviceFactory = \Modules\User\Database\Factories\DeviceFactory::new();
-        /** @var \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Device> $devices */
+        /** @var \Illuminate\Database\Eloquent\Collection<int, Device> $devices */
         $devices = $deviceFactory->count(500)
             ->create([
                 'created_at' => Carbon::now()->subDays(rand(1, 90)),
@@ -273,7 +273,7 @@ class UserMassSeeder extends Seeder
 
         // Crea 100 provider social
         $providerFactory = \Modules\User\Database\Factories\SocialProviderFactory::new();
-        /** @var \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\SocialProvider> $providers */
+        /** @var \Illuminate\Database\Eloquent\Collection<int, SocialProvider> $providers */
         $providers = $providerFactory->count(100)->create([
             'created_at' => Carbon::now()->subDays(rand(1, 180)),
         ]);

@@ -30,7 +30,7 @@ class UserSeeder extends Seeder
         $this->command->info('👤 Inizializzazione seeding User...');
 
         // Disabilita i controlli di foreign key (solo per MySQL)
-        if (DB::getDriverName() !== 'sqlite') {
+        if ('sqlite' !== DB::getDriverName()) {
             DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         }
 
@@ -41,7 +41,7 @@ class UserSeeder extends Seeder
             $this->command->info('✅ Seeding User completato con successo!');
         } finally {
             // Riabilita i controlli di foreign key (solo per MySQL)
-            if (DB::getDriverName() !== 'sqlite') {
+            if ('sqlite' !== DB::getDriverName()) {
                 DB::statement('SET FOREIGN_KEY_CHECKS=1;');
             }
         }
@@ -177,10 +177,10 @@ class UserSeeder extends Seeder
         $this->command->info('   ✓ Creati 5 team di sistema');
     }
 
-    private function createTeam(string $name): \Modules\User\Models\Team
+    private function createTeam(string $name): Team
     {
         $factory = \Modules\User\Database\Factories\TeamFactory::new();
-        /** @var \Modules\User\Models\Team $team */
+        /** @var Team $team */
         $team = $factory->create([
             'name' => $name,
             'personal_team' => false,

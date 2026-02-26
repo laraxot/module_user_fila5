@@ -10,7 +10,7 @@ use Modules\User\Traits\PasswordValidationRules;
 
 /**
  * Helper class per test del trait PasswordValidationRules.
- * Namespace richiesto per PSR-4: Modules\User\Tests\ => tests/
+ * Namespace richiesto per PSR-4: Modules\User\Tests\ => tests/.
  */
 class TestClassWithPasswordValidationRules
 {
