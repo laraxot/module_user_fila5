@@ -32,9 +32,12 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
+ *
  * @mixin IdeHelperSsoProvider
+ *
  * @property Collection<int, User> $users
  * @property int|null              $users_count
+ *
  * @method static Builder<static>|SsoProvider newModelQuery()
  * @method static Builder<static>|SsoProvider newQuery()
  * @method static Builder<static>|SsoProvider query()
@@ -56,18 +59,20 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static Builder<static>|SsoProvider whereType($value)
  * @method static Builder<static>|SsoProvider whereUpdatedAt($value)
  * @method static Builder<static>|SsoProvider whereUpdatedBy($value)
+ *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
-<<<<<<< HEAD
+ *                                         <<<<<<< HEAD
  *
  * @method static \Modules\User\Database\Factories\SsoProviderFactory factory($count = null, $state = [])
  *
-||||||| parent of da38c10 (.)
+ * ||||||| parent of da38c10 (.)
  *
-=======
+ * =======
  * @method static \Modules\User\Database\Factories\SsoProviderFactory factory($count = null, $state = [])
->>>>>>> da38c10 (.)
+ *                                                                                                        >>>>>>> da38c10 (.)
+ *
  * @mixin \Eloquent
  */
 class SsoProvider extends BaseModel

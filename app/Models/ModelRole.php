@@ -20,6 +20,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+ *
  * @method static Builder|ModelHasRole newModelQuery()
  * @method static Builder|ModelHasRole newQuery()
  * @method static Builder|ModelHasRole query()
@@ -32,21 +33,27 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|ModelHasRole whereTeamId($value)
  * @method static Builder|ModelHasRole whereUpdatedAt($value)
  * @method static Builder|ModelHasRole whereUpdatedBy($value)
+ *
  * @property string $uuid (DC2Type:guid)
+ *
  * @method static Builder|ModelHasRole whereUuid($value)
+ *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+ *
  * @mixin IdeHelperModelHasRole
+ *
  * @property ProfileContract|null $deleter
-<<<<<<< HEAD
+ *                                         <<<<<<< HEAD
  *
  * @method static \Modules\User\Database\Factories\ModelRoleFactory factory($count = null, $state = [])
  *
-||||||| parent of da38c10 (.)
+ * ||||||| parent of da38c10 (.)
  *
-=======
+ * =======
  * @method static \Modules\User\Database\Factories\ModelRoleFactory factory($count = null, $state = [])
->>>>>>> da38c10 (.)
+ *                                                                                                      >>>>>>> da38c10 (.)
+ *
  * @mixin \Eloquent
  */
 class ModelRole extends BaseMorphPivot
