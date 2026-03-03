@@ -12,7 +12,7 @@ uses(TestCase::class);
 
 describe('User Authentication', function () {
     it('can authenticate user with correct credentials', function () {
-        $email = 'auth-test-' . uniqid() . '@example.com';
+        $email = 'auth-test-'.uniqid().'@example.com';
         $user = User::factory()->create([
             'email' => $email,
             'password' => Hash::make('password123'),
@@ -28,7 +28,7 @@ describe('User Authentication', function () {
     });
 
     it('cannot authenticate inactive user', function () {
-        $email = 'inactive-' . uniqid() . '@example.com';
+        $email = 'inactive-'.uniqid().'@example.com';
         User::factory()->create([
             'email' => $email,
             'password' => Hash::make('password123'),
@@ -44,7 +44,7 @@ describe('User Authentication', function () {
     });
 
     it('logs authentication attempts', function () {
-        $email = 'log-test-' . uniqid() . '@example.com';
+        $email = 'log-test-'.uniqid().'@example.com';
         $user = User::factory()->create([
             'email' => $email,
             'password' => Hash::make('password123'),

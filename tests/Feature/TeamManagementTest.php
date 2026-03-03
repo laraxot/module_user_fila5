@@ -116,7 +116,7 @@ describe('Team Membership', function () {
 
         expect($user)->not->toBeNull();
         // Verify the user was attached with the correct role via the pivot table
-        $pivotRole = \Illuminate\Support\Facades\DB::connection('user')
+        $pivotRole = Illuminate\Support\Facades\DB::connection('user')
             ->table('team_user')
             ->where('team_id', $this->team->id)
             ->where('user_id', $this->member->id)
@@ -265,7 +265,7 @@ describe('Team Permissions', function () {
         $this->team->users()->attach($this->member, ['role' => 'admin']);
 
         // Verify the role via direct DB query since pivot accessor 'membership' is not configured
-        $pivotRole = \Illuminate\Support\Facades\DB::connection('user')
+        $pivotRole = Illuminate\Support\Facades\DB::connection('user')
             ->table('team_user')
             ->where('team_id', $this->team->id)
             ->where('user_id', $this->member->id)

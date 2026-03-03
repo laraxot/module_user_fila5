@@ -173,13 +173,13 @@ describe('User Relationships', function () {
     it('can have oauth clients', function () {
         // clients() may return HasMany or MorphMany depending on implementation
         $relation = $this->user->clients();
-        expect($relation)->toBeInstanceOf(\Illuminate\Database\Eloquent\Relations\Relation::class);
+        expect($relation)->toBeInstanceOf(Illuminate\Database\Eloquent\Relations\Relation::class);
     });
 
     it('can have oauth tokens', function () {
         // tokens() may return HasMany or MorphMany depending on implementation
         $relation = $this->user->tokens();
-        expect($relation)->toBeInstanceOf(\Illuminate\Database\Eloquent\Relations\Relation::class);
+        expect($relation)->toBeInstanceOf(Illuminate\Database\Eloquent\Relations\Relation::class);
     });
 
     it('can have notifications', function () {

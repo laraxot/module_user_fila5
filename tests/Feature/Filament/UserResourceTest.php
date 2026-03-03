@@ -23,7 +23,7 @@ beforeEach(function () {
     // Set admin panel for testing
     try {
         Filament::setCurrentPanel('user::admin');
-    } catch (\Throwable) {
+    } catch (Throwable) {
         $this->markTestSkipped('Filament admin panel user::admin not configured for testing');
     }
     $this->actingAs($this->admin);
