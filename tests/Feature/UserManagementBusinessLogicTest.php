@@ -9,7 +9,7 @@ use Modules\User\Tests\TestCase;
 class UserManagementBusinessLogicTest extends TestCase
 {
     /** @test */
-    public function user_management_placeholder(): void
+    public function userManagementPlaceholder(): void
     {
         // Placeholder - actual tests require database setup
         $this->assertTrue(true);
