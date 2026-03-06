@@ -18,8 +18,7 @@ return new class extends XotBaseMigration {
      */
     public function up(): void
     {
-
-         // -- CREATE --
+        // -- CREATE --
         $this->tableCreate(static function (Blueprint $table): void {
             // $table->uuid('id')->primary();
             $table->string('id', 36)->primary();
@@ -37,7 +36,6 @@ return new class extends XotBaseMigration {
 
         // Aggiunge lang solo se non esiste
         $this->tableUpdate(function (Blueprint $table): void {
-
             if (! $this->hasColumn('first_name')) {
                 $table->string('first_name')->after('name')->nullable();
             } else {
@@ -104,7 +102,6 @@ return new class extends XotBaseMigration {
             if (! $this->hasColumn('uuid')) {
                 $table->uuid('uuid')->nullable()->unique()->after('id');
             }
-
         });
     }
 };

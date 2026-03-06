@@ -29,22 +29,22 @@ use Modules\Xot\Contracts\UserContract;
  * @property UserContract|null      $user
  * @property OauthRefreshToken|null $refreshToken
  *
- * @method static Builder|OauthToken newModelQuery()
- * @method static Builder|OauthToken newQuery()
- * @method static Builder|OauthToken query()
- * @method static Builder|OauthToken whereClientId($value)
- * @method static Builder|OauthToken whereCreatedAt($value)
- * @method static Builder|OauthToken whereExpiresAt($value)
- * @method static Builder|OauthToken whereId($value)
- * @method static Builder|OauthToken whereName($value)
- * @method static Builder|OauthToken whereRevoked($value)
- * @method static Builder|OauthToken whereScopes($value)
- * @method static Builder|OauthToken whereUpdatedAt($value)
- * @method static Builder|OauthToken whereUserId($value)
- * @method static Builder|OauthToken whereCreatedBy($value)
- * @method static Builder|OauthToken whereDeletedAt($value)
- * @method static Builder|OauthToken whereDeletedBy($value)
- * @method static Builder|OauthToken whereUpdatedBy($value)
+ * @method static Builder|OauthToken                                       newModelQuery()
+ * @method static Builder|OauthToken                                       newQuery()
+ * @method static Builder|OauthToken                                       query()
+ * @method static Builder|OauthToken                                       whereClientId($value)
+ * @method static Builder|OauthToken                                       whereCreatedAt($value)
+ * @method static Builder|OauthToken                                       whereExpiresAt($value)
+ * @method static Builder|OauthToken                                       whereId($value)
+ * @method static Builder|OauthToken                                       whereName($value)
+ * @method static Builder|OauthToken                                       whereRevoked($value)
+ * @method static Builder|OauthToken                                       whereScopes($value)
+ * @method static Builder|OauthToken                                       whereUpdatedAt($value)
+ * @method static Builder|OauthToken                                       whereUserId($value)
+ * @method static Builder|OauthToken                                       whereCreatedBy($value)
+ * @method static Builder|OauthToken                                       whereDeletedAt($value)
+ * @method static Builder|OauthToken                                       whereDeletedBy($value)
+ * @method static Builder|OauthToken                                       whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken existsIn(array $haystack)
  *
  * @mixin \Eloquent
@@ -62,23 +62,21 @@ class OauthToken extends PassportToken
     {
         $provider = $this->getTokenGuardProvider();
 
-        if ($provider === null) {
+        if (null === $provider) {
             return $this->belongsTo(
-                config('auth.guards.api.provider') ?? \Modules\User\Models\User::class,
+                config('auth.guards.api.provider') ?? User::class,
                 'user_id'
             );
         }
 
         return $this->belongsTo(
-            config("auth.providers.{$provider}.model", \Modules\User\Models\User::class),
+            config("auth.providers.{$provider}.model", User::class),
             'user_id'
         );
     }
 
     /**
      * Get the token guard provider.
-     *
-     * @return string|null
      */
     protected function getTokenGuardProvider(): ?string
     {
