@@ -12,7 +12,7 @@ use PHPUnit\Framework\Attributes\Test;
 class GetCurrentDeviceActionTest extends TestCase
 {
     #[Test]
-    public function it_creates_device_from_agent_info(): void
+    public function itCreatesDeviceFromAgentInfo(): void
     {
         $agent = \Mockery::mock(\Jenssegers\Agent\Agent::class);
         $agent->shouldReceive('device')->andReturn('Macintosh');
@@ -26,7 +26,7 @@ class GetCurrentDeviceActionTest extends TestCase
         $agent->shouldReceive('version')->with('Chrome')->andReturn('120.0');
         $agent->shouldReceive('robot')->andReturn(null);
 
-        $deviceModel = new Device;
+        $deviceModel = new Device();
 
         $action = new GetCurrentDeviceAction($agent, $deviceModel);
         $result = $action->execute();
@@ -38,7 +38,7 @@ class GetCurrentDeviceActionTest extends TestCase
     }
 
     #[Test]
-    public function it_handles_null_device_info(): void
+    public function itHandlesNullDeviceInfo(): void
     {
         $agent = \Mockery::mock(\Jenssegers\Agent\Agent::class);
         $agent->shouldReceive('device')->andReturn(null);
@@ -52,7 +52,7 @@ class GetCurrentDeviceActionTest extends TestCase
         $agent->shouldReceive('version')->andReturn(null);
         $agent->shouldReceive('robot')->andReturn('Bot');
 
-        $deviceModel = new Device;
+        $deviceModel = new Device();
 
         $action = new GetCurrentDeviceAction($agent, $deviceModel);
         $result = $action->execute();
@@ -63,7 +63,7 @@ class GetCurrentDeviceActionTest extends TestCase
     }
 
     #[Test]
-    public function it_detects_mobile_device(): void
+    public function itDetectsMobileDevice(): void
     {
         $agent = \Mockery::mock(\Jenssegers\Agent\Agent::class);
         $agent->shouldReceive('device')->andReturn('iPhone');
@@ -77,7 +77,7 @@ class GetCurrentDeviceActionTest extends TestCase
         $agent->shouldReceive('version')->with('Safari')->andReturn('17.0');
         $agent->shouldReceive('robot')->andReturn(null);
 
-        $deviceModel = new Device;
+        $deviceModel = new Device();
 
         $action = new GetCurrentDeviceAction($agent, $deviceModel);
         $result = $action->execute();
@@ -88,7 +88,7 @@ class GetCurrentDeviceActionTest extends TestCase
     }
 
     #[Test]
-    public function it_detects_tablet_device(): void
+    public function itDetectsTabletDevice(): void
     {
         $agent = \Mockery::mock(\Jenssegers\Agent\Agent::class);
         $agent->shouldReceive('device')->andReturn('iPad');
@@ -102,7 +102,7 @@ class GetCurrentDeviceActionTest extends TestCase
         $agent->shouldReceive('version')->with('Safari')->andReturn('17.0');
         $agent->shouldReceive('robot')->andReturn(null);
 
-        $deviceModel = new Device;
+        $deviceModel = new Device();
 
         $action = new GetCurrentDeviceAction($agent, $deviceModel);
         $result = $action->execute();

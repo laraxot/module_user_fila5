@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -21,7 +23,7 @@ class ProfileFactory extends Factory
     {
         return [
             'bio' => $this->faker->text(200),
-            'avatar' => '/avatars/' . $this->faker->word() . '.jpg',
+            'avatar' => '/avatars/'.$this->faker->word().'.jpg',
             'phone' => $this->faker->phoneNumber(),
             'date_of_birth' => $this->faker->date(),
             'location' => $this->faker->city(),

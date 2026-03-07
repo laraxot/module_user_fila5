@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -78,7 +80,7 @@ class UserFactory extends Factory
         return $this->afterCreating(function (User $user) {
             $user->profile()->create([
                 'bio' => $this->faker->text(),
-                'avatar' => '/avatars/' . $this->faker->word() . '.jpg',
+                'avatar' => '/avatars/'.$this->faker->word().'.jpg',
                 'phone' => $this->faker->phoneNumber(),
             ]);
         });
