@@ -64,7 +64,7 @@ describe('Socialite core actions coverage', function (): void {
     });
 
     it('returns null and dispatches invalid state event when socialite state is invalid', function (): void {
-        $exception = new InvalidStateException();
+        $exception = new InvalidStateException;
 
         $driver = Mockery::mock();
         $driver->shouldReceive('user')->once()->andThrow($exception);
@@ -91,7 +91,7 @@ describe('Socialite core actions coverage', function (): void {
         $user = Mockery::mock(UserContract::class);
         $user->shouldReceive('getKey')->once()->andReturn('user-1');
 
-        $created = new SocialiteUser();
+        $created = new SocialiteUser;
 
         $socialiteUserModel = Mockery::mock(SocialiteUser::class);
         $socialiteUserModel->shouldReceive('create')

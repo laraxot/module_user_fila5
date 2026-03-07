@@ -11,13 +11,13 @@ uses(TestCase::class);
 
 describe('LoginWidget', function (): void {
     test('login widget can be instantiated', function (): void {
-        $widget = new LoginWidget();
+        $widget = new LoginWidget;
 
         expect($widget)->toBeInstanceOf(LoginWidget::class);
     });
 
     test('login widget has correct form schema', function (): void {
-        $widget = new LoginWidget();
+        $widget = new LoginWidget;
         $schema = $widget->getFormSchema();
 
         expect($schema)->toHaveCount(3);
@@ -37,7 +37,7 @@ describe('LoginWidget', function (): void {
     });
 
     test('login widget form fill has correct defaults', function (): void {
-        $widget = new LoginWidget();
+        $widget = new LoginWidget;
         $fillData = $widget->getFormFill();
 
         expect($fillData)->toHaveKey('email');
@@ -46,7 +46,7 @@ describe('LoginWidget', function (): void {
     });
 
     test('login widget has correct view property', function (): void {
-        $widget = new LoginWidget();
+        $widget = new LoginWidget;
         $reflection = new ReflectionClass($widget);
         $property = $reflection->getProperty('view');
         $property->setAccessible(true);
@@ -56,7 +56,7 @@ describe('LoginWidget', function (): void {
     });
 
     test('login widget extends xot base widget', function (): void {
-        $widget = new LoginWidget();
+        $widget = new LoginWidget;
 
         expect($widget)->toBeInstanceOf(Modules\Xot\Filament\Widgets\XotBaseWidget::class);
     });

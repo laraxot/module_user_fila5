@@ -37,19 +37,19 @@ test('can create permission with all fields', function (): void {
 });
 
 test('permission has connection attribute', function (): void {
-    $permission = new Permission();
+    $permission = new Permission;
 
     expect($permission->getConnectionName())->toBe('user');
 });
 
 test('permission has key type attribute', function (): void {
-    $permission = new Permission();
+    $permission = new Permission;
 
     expect($permission->getKeyType())->toBeIn(['int', 'string']);
 });
 
 test('permission has fillable attributes', function (): void {
-    $permission = new Permission();
+    $permission = new Permission;
 
     $fillable = $permission->getFillable();
 
@@ -58,7 +58,7 @@ test('permission has fillable attributes', function (): void {
 });
 
 test('permission has casts', function (): void {
-    $permission = new Permission();
+    $permission = new Permission;
 
     $casts = $permission->getCasts();
 
@@ -85,7 +85,7 @@ test('can find permission by guard name', function (): void {
     $webPermissions = Permission::where('name', 'like', 'guard.perm%.'.$suffix)->where('guard_name', 'web')->get();
 
     expect($webPermissions->count())->toBeGreaterThanOrEqual(2);
-    expect($webPermissions->every(fn ($permission) => 'web' === $permission->guard_name))->toBeTrue();
+    expect($webPermissions->every(fn ($permission) => $permission->guard_name === 'web'))->toBeTrue();
 });
 
 test('can find permission by created by', function (): void {
@@ -193,13 +193,13 @@ test('permission can use without role scopes', function (): void {
 });
 
 test('permission has factory method', function (): void {
-    $permission = new Permission();
+    $permission = new Permission;
 
     expect(method_exists($permission, 'newFactory'))->toBeTrue();
 });
 
 test('permission has get table method', function (): void {
-    $permission = new Permission();
+    $permission = new Permission;
 
     expect(method_exists($permission, 'getTable'))->toBeTrue();
 });
