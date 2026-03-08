@@ -19,8 +19,8 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         // Aggiunge lang solo se non esiste.
-        $this->tableUpdate(function (Blueprint $table): void {
-            if (! $this->hasColumn('lang')) {
+        // @var mixed tableUpdate(function (Blueprint $table
+            if (! // @var mixed hasColumn('lang'
                 $table->string('lang', 5)->default('it')->after('state');
             }
         });

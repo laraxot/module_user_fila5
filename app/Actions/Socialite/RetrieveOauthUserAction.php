@@ -35,7 +35,7 @@ class RetrieveOauthUserAction
 
             // SocialiteProviders\Manager\OAuth2\User
         } catch (InvalidStateException $e) {
-            $this->handleInvalidStateException($e);
+            // @var mixed handleInvalidStateException($e;
         }
 
         return null;
@@ -43,7 +43,7 @@ class RetrieveOauthUserAction
 
     private function handleInvalidStateException(InvalidStateException $exception): void
     {
-        $this->eventDispatcher->dispatch(new InvalidState($exception));
+        // @var mixed eventDispatcher->dispatch(new InvalidState($exception;
     }
 }
 

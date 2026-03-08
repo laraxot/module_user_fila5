@@ -38,7 +38,7 @@ it('can authenticate a user', function () {
         'password' => bcrypt('secret123'),
     ]);
 
-    $this->assertTrue(auth()->attempt([
+    // @var mixed assertTrue(auth(
         'email' => 'auth@example.com',
         'password' => 'secret123',
     ]));

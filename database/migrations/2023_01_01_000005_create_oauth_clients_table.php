@@ -9,7 +9,7 @@ use Modules\Xot\Datas\XotData;
 return new class extends XotBaseMigration {
     public function up(): void
     {
-        $this->tableCreate(static function (Blueprint $table): void {
+        // @var mixed tableCreate(static function (Blueprint $table
             // $table->bigIncrements('id');
             $table->uuid('id')->primary();
             // $table->unsignedBigInteger('user_id')->nullable()->index();
@@ -24,33 +24,33 @@ return new class extends XotBaseMigration {
         });
 
         // -- UPDATE --
-        $this->tableUpdate(function (Blueprint $table): void {
-            if ('string' !== $this->getColumnType('id')) {
+        // @var mixed tableUpdate(function (Blueprint $table
+            if ('string' !== // @var mixed getColumnType('id'
                 $table->uuid('id')->change(); // is  just primary
             }
-            if (! $this->hasColumn('owner_id') && ! $this->hasColumn('owner_type')) {
+            if (! // @var mixed hasColumn('owner_id'
                 $table->nullableMorphs('owner');
             }
-            if (! $this->hasColumn('name')) {
+            if (! // @var mixed hasColumn('name'
                 $table->string('name');
             }
-            if (! $this->hasColumn('secret')) {
+            if (! // @var mixed hasColumn('secret'
                 $table->string('secret')->nullable();
             }
-            if (! $this->hasColumn('provider')) {
+            if (! // @var mixed hasColumn('provider'
                 $table->string('provider')->nullable();
             }
-            if (! $this->hasColumn('redirect_uris')) {
+            if (! // @var mixed hasColumn('redirect_uris'
                 $table->text('redirect_uris');
             }
-            if (! $this->hasColumn('grant_types')) {
+            if (! // @var mixed hasColumn('grant_types'
                 $table->text('grant_types');
             }
-            if (! $this->hasColumn('revoked')) {
+            if (! // @var mixed hasColumn('revoked'
                 $table->boolean('revoked');
             }
-            $this->updateTimestamps($table, false);
-            // $this->updateUser($table);
+            // @var mixed updateTimestamps($table, false;
+            // // @var mixed updateUser($table;
         });
     }
 };

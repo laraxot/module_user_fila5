@@ -55,7 +55,7 @@ describe('User events coverage', function (): void {
     });
 
     it('instantiates socialite and auth events', function (): void {
-        $socialiteUser = $this->createMock(SocialiteUser::class);
+        $socialiteUser = // @var mixed createMock(SocialiteUser::class;
         $oauthUser = Mockery::mock(SocialiteUserContract::class);
 
         expect(new Login($socialiteUser))->toBeInstanceOf(Login::class)

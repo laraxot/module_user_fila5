@@ -16,7 +16,7 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         // -- CREATE --
-        $this->tableCreate(static function (Blueprint $table): void {
+        // @var mixed tableCreate(static function (Blueprint $table
             $table->bigIncrements('id');
             // permission id
             $table->string('name');
@@ -26,9 +26,9 @@ return new class extends XotBaseMigration {
             $table->unique(['name', 'guard_name']);
         });
         // -- UPDATE --
-        $this->tableUpdate(function (Blueprint $table): void {
-            // $this->updateUser($table);
-            $this->updateTimestamps($table);
+        // @var mixed tableUpdate(function (Blueprint $table
+            // // @var mixed updateUser($table;
+            // @var mixed updateTimestamps($table;
         });
     }
 };

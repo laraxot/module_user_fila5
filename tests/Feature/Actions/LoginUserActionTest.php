@@ -28,7 +28,7 @@ describe('LoginUserAction', function (): void {
         $response = app(LoginUserAction::class)->execute($socialiteUser);
 
         expect($response)->toBeInstanceOf(RedirectResponse::class);
-        $this->assertAuthenticatedAs($user);
+        // @var mixed assertAuthenticatedAs($user;
 
         Event::assertDispatched(SocialiteUserConnected::class);
     });

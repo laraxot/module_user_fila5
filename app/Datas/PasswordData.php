@@ -56,22 +56,22 @@ class PasswordData extends Data
      */
     public function getPasswordRule(): Password
     {
-        $pwd = Password::min($this->min);
+        $pwd = Password::min(// @var mixed min;
 
-        if ($this->mixedCase) {
+        if (// @var mixed mixedCase
             $pwd = $pwd->mixedCase();
         }
-        if ($this->letters) {
+        if (// @var mixed letters
             $pwd = $pwd->letters();
         }
-        if ($this->numbers) {
+        if (// @var mixed numbers
             $pwd = $pwd->numbers();
         }
-        if ($this->symbols) {
+        if (// @var mixed symbols
             $pwd = $pwd->symbols();
         }
-        if ($this->uncompromised) {
-            $pwd = $pwd->uncompromised($this->compromisedThreshold);
+        if (// @var mixed uncompromised
+            $pwd = $pwd->uncompromised(// @var mixed compromisedThreshold;
         }
 
         return $pwd;
@@ -95,25 +95,25 @@ class PasswordData extends Data
      */
     public function getHelperText(): string
     {
-        $msg = 'La password deve essere composta da minimo '.$this->min.' caratteri';
+        $msg = 'La password deve essere composta da minimo '.// @var mixed min.' caratteri';
 
-        if ($this->mixedCase) {
+        if (// @var mixed mixedCase
             $msg .= ', contenere almeno una lettera maiuscola e una minuscola';
         }
 
-        if ($this->letters) {
+        if (// @var mixed letters
             $msg .= ', contenere almeno una lettera';
         }
 
-        if ($this->numbers) {
+        if (// @var mixed numbers
             $msg .= ', contenere almeno un numero';
         }
 
-        if ($this->symbols) {
+        if (// @var mixed symbols
             $msg .= ', contenere almeno un carattere speciale';
         }
 
-        if ($this->uncompromised) {
+        if (// @var mixed uncompromised
             $msg .= ', non essere stata compromessa in precedenti violazioni di dati';
         }
 
@@ -125,7 +125,7 @@ class PasswordData extends Data
      */
     public function setFieldName(string $field_name): self
     {
-        $this->field_name = $field_name;
+        // @var mixed field_name = $field_name;
 
         return $this;
     }
@@ -138,8 +138,8 @@ class PasswordData extends Data
         return FormsTextInput::make($field_name)
             ->password()
             ->required()
-            ->validationMessages($this->getValidationMessages())
-            ->helperText($this->getHelperText());
+            ->validationMessages(// @var mixed getValidationMessages(
+            ->helperText(// @var mixed getHelperText(;
     }
 
     /**
@@ -147,15 +147,15 @@ class PasswordData extends Data
      */
     public function getPasswordConfirmationFormComponent(): FormsTextInput
     {
-        if (null === $this->field_name) {
+        if (null === // @var mixed field_name
             throw new \RuntimeException('Il nome del campo password non è stato impostato. Utilizzare setFieldName() prima di chiamare questo metodo.');
         }
 
         return FormsTextInput::make('password_confirmation')
             ->password()
             ->required()
-            ->same($this->field_name)
-            ->validationMessages($this->getValidationMessages());
+            ->same(// @var mixed field_name
+            ->validationMessages(// @var mixed getValidationMessages(;
     }
 
     /**
@@ -169,11 +169,11 @@ class PasswordData extends Data
             throw new \InvalidArgumentException('Il nome del campo password non può essere vuoto');
         }
 
-        $this->setFieldName($field_name);
+        // @var mixed setFieldName($field_name;
 
         return [
-            $this->getPasswordFormComponent($field_name),
-            $this->getPasswordConfirmationFormComponent(),
+            // @var mixed getPasswordFormComponent($field_name
+            // @var mixed getPasswordConfirmationFormComponent(
         ];
     }
 

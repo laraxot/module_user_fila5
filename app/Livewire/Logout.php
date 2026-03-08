@@ -24,7 +24,7 @@ class Logout extends Component
      */
     public function logout(): ?RedirectResponse
     {
-        $this->processing = true;
+        // @var mixed processing = true;
 
         try {
             Auth::logout();
@@ -33,7 +33,7 @@ class Logout extends Component
 
             return redirect()->route('home');
         } catch (\Exception $e) {
-            $this->processing = false;
+            // @var mixed processing = false;
             session()->flash('error', __('Errore durante il logout. Riprova.'));
 
             return null;

@@ -20,7 +20,7 @@ final class ChangePasswordAction extends Action
     protected function setUp(): void
     {
         parent::setUp();
-        $this->translateLabel()
+        // @var mixed translateLabel(
             ->icon('heroicon-o-key')
             ->action(function (UserContract $record, array $data): void {
                 $newPassword = is_string($data['new_password'] ?? null) ? $data['new_password'] : '';

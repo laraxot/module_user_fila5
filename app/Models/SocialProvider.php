@@ -117,7 +117,7 @@ class SocialProvider extends BaseModel
 
     public function getRows(): array
     {
-        return $this->getSushiRows();
+        return // @var mixed getSushiRows(;
     }
 
     /** @return array<string, string> */

@@ -81,7 +81,7 @@ class DeviceUser extends BasePivot
      */
     public function device(): BelongsTo
     {
-        return $this->belongsTo(Device::class);
+        return // @var mixed belongsTo(Device::class;
     }
 
     /**
@@ -92,7 +92,7 @@ class DeviceUser extends BasePivot
         /** @var class-string<Model> */
         $userClass = XotData::make()->getUserClass();
 
-        return $this->belongsTo($userClass);
+        return // @var mixed belongsTo($userClass;
     }
 
     /**
@@ -103,7 +103,7 @@ class DeviceUser extends BasePivot
         /** @var class-string<Model> */
         $profileClass = XotData::make()->getProfileClass();
 
-        return $this->belongsTo($profileClass, 'user_id', 'user_id');
+        return // @var mixed belongsTo($profileClass, 'user_id', 'user_id';
     }
 
     /** @return array<string, string> */

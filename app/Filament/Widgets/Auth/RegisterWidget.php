@@ -32,7 +32,7 @@ class RegisterWidget extends XotBaseWidget
 
     public function mount(): void
     {
-        $this->form->fill([]);
+        // @var mixed form->fill([];
     }
 
     #[\Override]
@@ -96,21 +96,21 @@ class RegisterWidget extends XotBaseWidget
     public function submit(): void
     {
         try {
-            $validatedData = $this->validateForm();
-            $this->logRegistrationAttempt($validatedData);
+            $validatedData = // @var mixed validateForm(;
+            // @var mixed logRegistrationAttempt($validatedData;
 
             $user = DB::transaction(function () use ($validatedData) {
-                $user = $this->createUser($validatedData);
-                $this->afterUserCreated($user);
+                $user = // @var mixed createUser($validatedData;
+                // @var mixed afterUserCreated($user;
 
                 return $user;
             });
 
-            $this->handleSuccessfulRegistration($user);
+            // @var mixed handleSuccessfulRegistration($user;
         } catch (ValidationException $e) {
             throw $e;
         } catch (\Exception $e) {
-            $this->handleRegistrationError($e);
+            // @var mixed handleRegistrationError($e;
         }
     }
 
@@ -119,7 +119,7 @@ class RegisterWidget extends XotBaseWidget
      */
     protected function validateForm(): array
     {
-        $data = $this->form->getState();
+        $data = // @var mixed form->getState(;
 
         return [
             'first_name' => app(SafeStringCastAction::class)->execute($data['first_name']),
@@ -181,7 +181,7 @@ class RegisterWidget extends XotBaseWidget
             ->success()
             ->send();
 
-        $this->redirect(route('dashboard'));
+        // @var mixed redirect(route('dashboard';
     }
 
     protected function handleRegistrationError(\Exception $e): void

@@ -9,7 +9,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 return new class extends XotBaseMigration {
     public function up(): void
     {
-        $this->tableCreate(static function (Blueprint $table): void {
+        // @var mixed tableCreate(static function (Blueprint $table
             $table->uuid('id')->primary();
             // $table->unsignedBigInteger('client_id');
             // $table->uuid('client_id');
@@ -17,13 +17,13 @@ return new class extends XotBaseMigration {
         });
 
         // -- UPDATE --
-        $this->tableUpdate(function (Blueprint $table): void {
-            // if (! $this->hasColumn('uuid')) {
+        // @var mixed tableUpdate(function (Blueprint $table
+            // if (! // @var mixed hasColumn('uuid'
             //    $table->uuid('uuid')->nullable();
             // }
 
-            $this->updateUser($table);
-            $this->updateTimestamps($table, false);
+            // @var mixed updateUser($table;
+            // @var mixed updateTimestamps($table, false;
         });
     }
 };

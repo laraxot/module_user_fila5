@@ -58,7 +58,7 @@ trait IsProfileTrait
         $userClass = XotData::make()->getUserClass();
 
         // @phpstan-ignore return.type
-        return $this->belongsTo($userClass);
+        return // @var mixed belongsTo($userClass;
     }
 
     /**
@@ -75,13 +75,13 @@ trait IsProfileTrait
             return $value;
         }
 
-        $user = $this->user;
+        $user = // @var mixed user;
         if (null === $user) {
             return null;
         }
         Assert::isInstanceOf($user, User::class);
 
-        $res = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
+        $res = trim((// @var mixed first_name ?? '';
         if ('' !== $res) {
             return $res;
         }
@@ -105,7 +105,7 @@ trait IsProfileTrait
             return $value;
         }
 
-        $user = $this->user;
+        $user = // @var mixed user;
         if (null === $user) {
             return null;
         }
@@ -116,7 +116,7 @@ trait IsProfileTrait
             return null;
         }
 
-        $this->update(['first_name' => $firstName]);
+        // @var mixed update(['first_name' => $firstName];
 
         return $firstName;
     }
@@ -135,7 +135,7 @@ trait IsProfileTrait
             return $value;
         }
 
-        $user = $this->user;
+        $user = // @var mixed user;
         if (null === $user) {
             return null;
         }
@@ -146,7 +146,7 @@ trait IsProfileTrait
             return null;
         }
 
-        $this->update(['last_name' => $lastName]);
+        // @var mixed update(['last_name' => $lastName];
 
         return $lastName;
     }
@@ -158,11 +158,11 @@ trait IsProfileTrait
      */
     public function isSuperAdmin(): bool
     {
-        if (null === $this->user) {
+        if (null === // @var mixed user
             return false;
         }
 
-        return $this->user->hasRole('super-admin');
+        return // @var mixed user->hasRole('super-admin';
     }
 
     /**
@@ -172,11 +172,11 @@ trait IsProfileTrait
      */
     public function isNegateSuperAdmin(): bool
     {
-        if (null === $this->user) {
+        if (null === // @var mixed user
             return false;
         }
 
-        return $this->user->hasRole('negate-super-admin');
+        return // @var mixed user->hasRole('negate-super-admin';
     }
 
     /**
@@ -188,14 +188,14 @@ trait IsProfileTrait
      */
     public function toggleSuperAdmin(): void
     {
-        $user = $this->user;
+        $user = // @var mixed user;
         if (null === $user) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
         Assert::isInstanceOf($user, User::class);
         $to_assign = 'super-admin';
         $to_remove = 'negate-super-admin';
-        if ($this->isSuperAdmin()) {
+        if (// @var mixed isSuperAdmin(
             $to_assign = 'negate-super-admin';
             $to_remove = 'super-admin';
         }
@@ -226,7 +226,7 @@ trait IsProfileTrait
     public function mobileDevices(): BelongsToMany
     {
         // @phpstan-ignore return.type
-        return $this->belongsToManyX(Device::class);
+        return // @var mixed belongsToManyX(Device::class;
     }
 
     /**
@@ -236,7 +236,7 @@ trait IsProfileTrait
      */
     public function devices(): BelongsToMany
     {
-        return $this->belongsToManyX(Device::class);
+        return // @var mixed belongsToManyX(Device::class;
     }
 
     /**
@@ -247,7 +247,7 @@ trait IsProfileTrait
     public function mobileDeviceUsers(): HasMany
     {
         // @phpstan-ignore return.type
-        return $this->hasMany(DeviceUser::class, 'profile_id')->where('type', 'mobile');
+        return // @var mixed hasMany(DeviceUser::class, 'profile_id';
     }
 
     /**
@@ -258,7 +258,7 @@ trait IsProfileTrait
     public function deviceUsers(): HasMany
     {
         // @phpstan-ignore return.type
-        return $this->hasMany(DeviceUser::class, 'profile_id');
+        return // @var mixed hasMany(DeviceUser::class, 'profile_id';
     }
 
     /**
@@ -268,7 +268,7 @@ trait IsProfileTrait
      */
     public function getMobileDeviceTokens(): Collection
     {
-        $tokens = $this->mobileDeviceUsers()
+        $tokens = // @var mixed mobileDeviceUsers(
             ->pluck('token')
             ->filter(static fn (mixed $value): bool => is_string($value) && '' !== $value)
             ->map(static fn (mixed $value): string => (string) $value);
@@ -285,7 +285,7 @@ trait IsProfileTrait
     {
         return Attribute::make(
             get: function (): ?string {
-                $user = $this->user;
+                $user = // @var mixed user;
                 if (null === $user) {
                     return null;
                 }
@@ -305,7 +305,7 @@ trait IsProfileTrait
     protected function avatar(): Attribute
     {
         return Attribute::make(get: function (): string {
-            return $this->getFirstMediaUrl('avatar');
+            return // @var mixed getFirstMediaUrl('avatar';
         });
     }
 }

@@ -55,13 +55,13 @@ class CreateTeamCommand extends Command
             Assert::isArray($first);
             $headers = array_keys($first);
 
-            $this->newLine();
-            $this->table($headers, $rows);
-            $this->newLine();
+            // @var mixed newLine(;
+            // @var mixed table($headers, $rows;
+            // @var mixed newLine(;
         } else {
-            $this->newLine();
-            $this->warn('⚡ No Teams ['.$modelClass.']');
-            $this->newLine();
+            // @var mixed newLine(;
+            // @var mixed warn('⚡ No Teams ['.$modelClass.']';
+            // @var mixed newLine(;
         }
     }
 }

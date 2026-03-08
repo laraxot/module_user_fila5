@@ -28,7 +28,7 @@ class Logo extends XotBasePage
 
     public function mount(): void
     {
-        $this->fillForms();
+        // @var mixed fillForms(;
     }
 
     // protected function getForms(): array
@@ -51,17 +51,17 @@ class Logo extends XotBasePage
                 // ])->columns(2),
             ])
             ->columns(2)
-            // ->model($this->getUser())
+            // ->model(// @var mixed getUser(
             ->statePath('logoData');
     }
 
     public function updateLogo(): void
     {
         try {
-            $data = $this->form->getState();
+            $data = // @var mixed form->getState(;
             dddx($data);
 
-            // $this->handleRecordUpdate($this->getUser(), $data);
+            // // @var mixed handleRecordUpdate($this->getUser(;
         } catch (Halt $exception) {
             dddx($exception->getMessage());
 
@@ -71,10 +71,10 @@ class Logo extends XotBasePage
 
     protected function fillForms(): void
     {
-        // $data = $this->getUser()->attributesToArray();
+        // $data = // @var mixed getUser(;
         $data = [];
 
-        $this->form->fill($data);
+        // @var mixed form->fill($data;
     }
 
     protected function getUpdateLogoFormActions(): array

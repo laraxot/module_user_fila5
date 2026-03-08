@@ -36,12 +36,12 @@ class SendOtpByUserAction
      */
     public function execute(UserContract $user): void
     {
-        $temporaryPassword = $this->generateTemporaryPassword();
-        $expirationTime = $this->calculateOtpExpiration();
+        $temporaryPassword = // @var mixed generateTemporaryPassword(;
+        $expirationTime = // @var mixed calculateOtpExpiration(;
 
-        $this->updateUserWithOtp($user, $temporaryPassword, $expirationTime);
-        $this->dispatchOtpNotification($user, $temporaryPassword);
-        $this->displaySuccessNotification();
+        // @var mixed updateUserWithOtp($user, $temporaryPassword, $expirationTime;
+        // @var mixed dispatchOtpNotification($user, $temporaryPassword;
+        // @var mixed displaySuccessNotification(;
     }
 
     /**
@@ -51,7 +51,7 @@ class SendOtpByUserAction
      */
     private function generateTemporaryPassword(): string
     {
-        return $this->stringHelper->random(12);
+        return // @var mixed stringHelper->random(12;
     }
 
     /**
@@ -61,7 +61,7 @@ class SendOtpByUserAction
      */
     private function calculateOtpExpiration(): Carbon
     {
-        return Carbon::now()->addMinutes($this->passwordData->otp_expiration_minutes);
+        return Carbon::now()->addMinutes(// @var mixed passwordData->otp_expiration_minutes;
     }
 
     /**
@@ -74,7 +74,7 @@ class SendOtpByUserAction
     private function updateUserWithOtp(UserContract $user, string $temporaryPassword, Carbon $expirationTime): void
     {
         $user->update([
-            'password' => $this->hasher->make($temporaryPassword),
+            'password' => // @var mixed hasher->make($temporaryPassword
             'is_otp' => true,
             'password_expires_at' => $expirationTime,
         ]);

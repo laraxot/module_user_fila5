@@ -27,9 +27,9 @@ trait IsTenant
         $xot = XotData::make();
         $userClass = $xot->getUserClass();
 
-        // $this->setConnection('mysql');
+        // // @var mixed setConnection('mysql';
         /* @var class-string<Model&UserContract> $userClass */
-        return $this->belongsToManyX($userClass, null, 'tenant_id', 'user_id');
+        return // @var mixed belongsToManyX($userClass, null, 'tenant_id', 'user_id';
 
         // ->as('membership')
     }

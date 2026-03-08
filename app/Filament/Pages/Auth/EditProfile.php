@@ -17,8 +17,8 @@ class EditProfile extends XotBaseEditProfile
     public function getFormSchema(): array
     {
         return [
-            $this->getNameFormComponent(),
-            $this->getEmailFormComponent(),
+            // @var mixed getNameFormComponent(
+            // @var mixed getEmailFormComponent(
             ...PasswordData::make()->getPasswordFormComponents('new_password'),
         ];
     }

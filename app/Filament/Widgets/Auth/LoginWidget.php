@@ -52,7 +52,7 @@ class LoginWidget extends XotBaseWidget
     {
         // try {
         /** @var array<string, mixed> $data */
-        $data = $this->form->getState();
+        $data = // @var mixed form->getState(;
 
         $credentials = [
             'email' => is_string($data['email'] ?? null) ? $data['email'] : '',
@@ -71,7 +71,7 @@ class LoginWidget extends XotBaseWidget
         $userClass = XotData::make()->getUserClass();
         $user = $userClass::where('email', $credentials['email'])->first();
 
-        $this->addError('data.email', __('auth.failed'));
+        // @var mixed addError('data.email', __('auth.failed';
         // } catch (ValidationException $e) {
         // dddx([
         //    'credentials' => $credentials,
@@ -88,6 +88,6 @@ class LoginWidget extends XotBaseWidget
      */
     public function save(): void
     {
-        $this->login();
+        // @var mixed login(;
     }
 }

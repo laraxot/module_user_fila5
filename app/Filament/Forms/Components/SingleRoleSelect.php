@@ -17,17 +17,17 @@ class SingleRoleSelect extends Select
 
         /** @var view-string $viewString */
         $viewString = 'user::filament.forms.components.single-role-select';
-        $this->view($viewString);
+        // @var mixed view($viewString;
 
         /** @var array<int|string, string> $options */
         $options = Role::query()->pluck('name', 'id')->toArray();
 
-        $this->options(fn (): array => $options)
+        // @var mixed options(fn (
             ->placeholder('Select a role');
     }
 
     public function getOptionValueProperty(): string
     {
-        return $this->optionValueProperty;
+        return // @var mixed optionValueProperty;
     }
 }

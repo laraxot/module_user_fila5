@@ -22,14 +22,14 @@ class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
     #[\Override]
     public function getHeading(): ?string
     {
-        return static::transClass($this->model, 'widgets.user_type_registrations_chart.heading');
+        return static::transClass(// @var mixed model, 'widgets.user_type_registrations_chart.heading';
     }
 
     #[\Override]
     protected function getData(): array
     {
         // Debug: Verifica se i filtri sono disponibili
-        $filters = $this->getFilters();
+        $filters = // @var mixed getFilters(;
 
         // Accesso sicuro ai filtri della pagina con fallback appropriati
         $startDate = null;
@@ -52,7 +52,7 @@ class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
         }
 
         try {
-            $data = Trend::model($this->model)
+            $data = Trend::model(// @var mixed model
                 ->between(
                     start: $startDate,
                     end: $endDate,
@@ -63,7 +63,7 @@ class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
             return [
                 'datasets' => [
                     [
-                        'label' => static::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
+                        'label' => static::transClass(// @var mixed model, 'widgets.user_type_registrations_chart.label'
                         'data' => $data->map(fn (mixed $value) => $value instanceof TrendValue
                             ? $value->aggregate
                             : 0),
@@ -82,7 +82,7 @@ class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
             return [
                 'datasets' => [
                     [
-                        'label' => static::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
+                        'label' => static::transClass(// @var mixed model, 'widgets.user_type_registrations_chart.label'
                         'data' => [],
                         'backgroundColor' => 'rgba(59, 130, 246, 0.5)',
                         'borderColor' => 'rgb(59, 130, 246)',

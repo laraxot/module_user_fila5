@@ -18,23 +18,23 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         // -- CREATE --
-        $this->tableCreate(static function (Blueprint $table): void {
+        // @var mixed tableCreate(static function (Blueprint $table
             $table->increments('id');
             $table->uuidMorphs('model');
             $table->schemalessAttributes('extra_attributes');
         });
 
         // -- UPDATE --
-        $this->tableUpdate(function (Blueprint $table): void {
-            // if (! $this->hasColumn('name')) {
+        // @var mixed tableUpdate(function (Blueprint $table
+            // if (! // @var mixed hasColumn('name'
             //    $table->string('name')->nullable();
             // }
-            $this->updateTimestamps(
+            // @var mixed updateTimestamps(
                 table: $table,
                 hasSoftDeletes: true,
             );
 
-            if ($this->hasColumn('model_id') && 'bigint' === $this->getColumnType('model_id')) {
+            if (// @var mixed hasColumn('model_id'
                 $table->string('model_id', 36)->index()->change();
             }
         });

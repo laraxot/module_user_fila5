@@ -25,9 +25,9 @@ final readonly class UserNameFieldsResolver
 
     public function __construct(User $user)
     {
-        $this->name = $this->resolveName($user);
-        $this->firstName = $this->resolveName($user);
-        $this->lastName = $this->resolveSurname($user);
+        // @var mixed name = $this->resolveName($user;
+        // @var mixed firstName = $this->resolveName($user;
+        // @var mixed lastName = $this->resolveSurname($user;
     }
 
     public static function make(User $user): self
@@ -37,12 +37,12 @@ final readonly class UserNameFieldsResolver
 
     private function resolveName(User $idpUser): string
     {
-        return $this->resolveNameFields($idpUser, self::NAME_SEARCH);
+        return // @var mixed resolveNameFields($idpUser, self::NAME_SEARCH;
     }
 
     private function resolveSurname(User $idpUser): string
     {
-        return $this->resolveNameFields($idpUser, self::SURNAME_SEARCH);
+        return // @var mixed resolveNameFields($idpUser, self::SURNAME_SEARCH;
     }
 
     /**
@@ -50,9 +50,9 @@ final readonly class UserNameFieldsResolver
      */
     private function resolveNameFields(User $idpUser, string $searchMethod): string
     {
-        $this->validateSearchMethod($searchMethod);
+        // @var mixed validateSearchMethod($searchMethod;
 
-        $nameSection = $this->determineNameField($idpUser, $searchMethod);
+        $nameSection = // @var mixed determineNameField($idpUser, $searchMethod;
 
         return $nameSection->toString();
     }
@@ -68,27 +68,27 @@ final readonly class UserNameFieldsResolver
     {
         $name = $idpUser->getName();
         if (is_string($name) && ! empty($name)) {
-            $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($name, $searchMethod);
+            $nameSection = // @var mixed resolveNameFieldByNameAttributeAnalysis($name, $searchMethod;
             if ($nameSection->isNotEmpty()) {
                 return $nameSection;
             }
         }
 
-        $raw = $this->getRawUserData($idpUser);
+        $raw = // @var mixed getRawUserData($idpUser;
         $nameField = '';
         if (isset($raw['name']) && is_string($raw['name']) && ! empty($raw['name'])) {
             $nameField = $raw['name'];
         }
 
         if (! empty($nameField)) {
-            $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($nameField, $searchMethod);
+            $nameSection = // @var mixed resolveNameFieldByNameAttributeAnalysis($nameField, $searchMethod;
             if ($nameSection->isNotEmpty() && ! filter_var($nameSection->toString(), FILTER_VALIDATE_EMAIL)) {
                 return $nameSection;
             }
         }
 
         // Fallback to email analysis if name is empty or looks like an email
-        return $this->analyzeEmailForNameSection($idpUser, $searchMethod);
+        return // @var mixed analyzeEmailForNameSection($idpUser, $searchMethod;
     }
 
     private function analyzeEmailForNameSection(User $idpUser, string $searchMethod): Stringable

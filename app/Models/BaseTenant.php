@@ -74,7 +74,7 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
         /** @var class-string<Model> $user_class */
         $user_class = XotData::make()->getUserClass();
 
-        return $this->belongsToManyX($user_class);
+        return // @var mixed belongsToManyX($user_class;
     }
 
     /**
@@ -88,9 +88,9 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
         /** @var class-string<Model> $userClass */
         $userClass = $xot->getUserClass();
 
-        // $this->setConnection('mysql');
-        // return $this->belongsToManyX($userClass, null, 'tenant_id', 'user_id');
-        return $this->belongsToManyX($userClass);
+        // // @var mixed setConnection('mysql';
+        // return // @var mixed belongsToManyX($userClass, null, 'tenant_id', 'user_id';
+        return // @var mixed belongsToManyX($userClass;
 
         // ->as('membership')
     }
@@ -102,18 +102,18 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
      */
     public function getFilamentAvatarUrl(): ?string
     {
-        // return $this->avatar_url;
-        return $this->getFirstMediaUrl('avatar');
+        // return // @var mixed avatar_url;
+        return // @var mixed getFirstMediaUrl('avatar';
     }
 
     // public function getSlugAttribute(?string $value): ?string
     // {
-    //     if(is_string($value) || $this->getKey() == null) {
+    //     if(is_string($value) || // @var mixed getKey(
     //         return $value;
     //     }
-    //     $slug = Str::slug($this->name);
-    //     $this->slug = $slug;
-    //     $this->save();
+    //     $slug = Str::slug(// @var mixed name;
+    //     // @var mixed slug = $slug;
+    //     // @var mixed save(;
     //     return $slug;
     // }
 }

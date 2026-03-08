@@ -15,7 +15,7 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         // -- CREATE --
-        $this->tableCreate(static function (Blueprint $table): void {
+        // @var mixed tableCreate(static function (Blueprint $table
             $table->string('id')->primary();
             $table->string('name');
             $table->string('slug')->unique()->nullable();
@@ -25,28 +25,28 @@ return new class extends XotBaseMigration {
         });
 
         // -- UPDATE --
-        $this->tableUpdate(function (Blueprint $table): void {
+        // @var mixed tableUpdate(function (Blueprint $table
             // Aggiungi colonne mancanti se non esistono
-            if (! $this->hasColumn('email_address')) {
+            if (! // @var mixed hasColumn('email_address'
                 $table->string('email_address')->nullable();
             }
-            if (! $this->hasColumn('phone')) {
+            if (! // @var mixed hasColumn('phone'
                 $table->string('phone')->nullable();
             }
-            if (! $this->hasColumn('mobile')) {
+            if (! // @var mixed hasColumn('mobile'
                 $table->string('mobile')->nullable();
             }
-            if (! $this->hasColumn('address')) {
+            if (! // @var mixed hasColumn('address'
                 $table->text('address')->nullable();
             }
-            if (! $this->hasColumn('primary_color')) {
+            if (! // @var mixed hasColumn('primary_color'
                 $table->string('primary_color')->nullable();
             }
-            if (! $this->hasColumn('secondary_color')) {
+            if (! // @var mixed hasColumn('secondary_color'
                 $table->string('secondary_color')->nullable();
             }
 
-            $this->updateTimestamps($table, true);
+            // @var mixed updateTimestamps($table, true;
         });
     }
 };

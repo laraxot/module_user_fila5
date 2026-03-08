@@ -19,7 +19,7 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         // -- CREATE --
-        $this->tableCreate(static function (Blueprint $table): void {
+        // @var mixed tableCreate(static function (Blueprint $table
             // $table->uuid('id')->primary();
             $table->string('id', 36)->primary();
             $table->string('name')->nullable();
@@ -35,55 +35,55 @@ return new class extends XotBaseMigration {
         });
 
         // Aggiunge lang solo se non esiste
-        $this->tableUpdate(function (Blueprint $table): void {
-            if (! $this->hasColumn('first_name')) {
+        // @var mixed tableUpdate(function (Blueprint $table
+            if (! // @var mixed hasColumn('first_name'
                 $table->string('first_name')->after('name')->nullable();
             } else {
                 $table->string('first_name')->nullable()->change();
             }
 
-            if (! $this->hasColumn('last_name')) {
+            if (! // @var mixed hasColumn('last_name'
                 $table->string('last_name')->after('name')->nullable();
             } else {
                 $table->string('last_name')->nullable()->change();
             }
 
-            if (! $this->hasColumn('current_team_id')) {
+            if (! // @var mixed hasColumn('current_team_id'
                 $table->foreignId('current_team_id')->nullable();
             }
 
-            if (! $this->hasColumn('profile_photo_path')) {
+            if (! // @var mixed hasColumn('profile_photo_path'
                 $table->string('profile_photo_path', 2048)->nullable();
             }
 
-            if (! $this->hasColumn('lang')) {
+            if (! // @var mixed hasColumn('lang'
                 $table->string('lang', 3)->nullable();
             }
 
-            if (! $this->hasColumn('is_active')) {
+            if (! // @var mixed hasColumn('is_active'
                 $table->boolean('is_active')->default(true);
             }
 
-            if (! $this->hasColumn('type')) {
+            if (! // @var mixed hasColumn('type'
                 $table->string('type')->default('customer_user')->after('is_active');
             }
 
-            if (! $this->hasColumn('state')) {
+            if (! // @var mixed hasColumn('state'
                 $table->string('state')->default('active')->after('type');
             }
 
-            if (! $this->hasColumn('is_otp')) {
+            if (! // @var mixed hasColumn('is_otp'
                 $table->boolean('is_otp')->default(false);
             }
 
-            if (! $this->hasColumn('password_expires_at')) {
+            if (! // @var mixed hasColumn('password_expires_at'
                 $table->timestamp('password_expires_at')->nullable();
             }
-            if ($this->hasColumn('password')) {
+            if (// @var mixed hasColumn('password'
                 $table->string('password')->nullable()->change();
             }
 
-            if ('uuid' === $this->getColumnType('id')) {
+            if ('uuid' === // @var mixed getColumnType('id'
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);
@@ -92,14 +92,14 @@ return new class extends XotBaseMigration {
 
                 Schema::enableForeignKeyConstraints();
             }
-            // $this->updateUser($table);
-            $this->updateTimestamps($table, true);
+            // // @var mixed updateUser($table;
+            // @var mixed updateTimestamps($table, true;
 
-            if (! $this->hasColumn('lang')) {
+            if (! // @var mixed hasColumn('lang'
                 $table->string('lang', 5)->default('it')->after('state');
             }
 
-            if (! $this->hasColumn('uuid')) {
+            if (! // @var mixed hasColumn('uuid'
                 $table->uuid('uuid')->nullable()->unique()->after('id');
             }
         });

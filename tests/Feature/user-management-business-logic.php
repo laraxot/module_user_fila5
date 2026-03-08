@@ -33,12 +33,12 @@ describe('User Management Business Logic', function () {
         ]);
         $profile->save();
 
-        $this->assertDatabaseHas($user->getTable(), [
+        // @var mixed assertDatabaseHas($user->getTable(
             'id' => $user->id,
             'email' => $email,
         ], $user->getConnectionName());
 
-        $this->assertDatabaseHas($table, [
+        // @var mixed assertDatabaseHas($table, [
             'user_id' => $user->id,
             'phone' => '+39 123 456 7890',
         ], $connection);
@@ -60,7 +60,7 @@ describe('User Management Business Logic', function () {
         $newPhone = '+39 987 654 3210';
         $user->profile->update(['phone' => $newPhone]);
 
-        $this->assertDatabaseHas($profile->getTable(), [
+        // @var mixed assertDatabaseHas($profile->getTable(
             'user_id' => $user->id,
             'phone' => $newPhone,
         ], $profile->getConnectionName());
@@ -81,7 +81,7 @@ describe('User Management Business Logic', function () {
         $email = 'unique-'.uniqid().'@example.com';
         User::factory()->create(['email' => $email]);
 
-        $this->expectException(\Illuminate\Database\UniqueConstraintViolationException::class);
+        // @var mixed expectException(\Illuminate\Database\UniqueConstraintViolationException::class;
 
         User::factory()->create(['email' => $email]);
     });

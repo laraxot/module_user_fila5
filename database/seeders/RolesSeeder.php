@@ -28,7 +28,7 @@ class RolesSeeder extends Seeder
         $roles = [];
 
         // Display results in a table format
-        $this->displayResults($roles);
+        // @var mixed displayResults($roles;
     }
 
     /**
@@ -38,8 +38,8 @@ class RolesSeeder extends Seeder
      */
     private function displayResults(array $roles): void
     {
-        $this->command->info('Roles seeded successfully:');
-        $this->command->table(
+        // @var mixed command->info('Roles seeded successfully:';
+        // @var mixed command->table(
             self::$OUTPUT_TABLE_HEADERS,
             collect($roles)
                 ->map(fn (Role $role, int $index) => [

@@ -35,7 +35,7 @@ abstract class TestCase extends XotBaseTestCase
         parent::setUp();
 
         if (! self::$userSchemaBootstrapped) {
-            $this->bootstrapUserTestingSchema();
+            // @var mixed bootstrapUserTestingSchema(;
             self::$userSchemaBootstrapped = true;
         }
     }

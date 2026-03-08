@@ -23,7 +23,7 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         // -- CREATE --
-        $this->tableCreate(static function (Blueprint $table): void {
+        // @var mixed tableCreate(static function (Blueprint $table
             $table->id();
             $table->foreignId('team_id');
             $table->uuid('user_id')->nullable()->index();
@@ -34,35 +34,35 @@ return new class extends XotBaseMigration {
         });
 
         // -- UPDATE --
-        $this->tableUpdate(function (Blueprint $table): void {
+        // @var mixed tableUpdate(function (Blueprint $table
             // Se la tabella esiste già con id UUID, convertiamo a autoincrement
-            if ($this->hasColumn('id') && in_array($this->getColumnType('id'), ['string', 'guid'], true)) {
+            if (// @var mixed hasColumn('id'
                 // Rimuoviamo la PRIMARY KEY esistente
-                $this->dropPrimaryKey();
+                // @var mixed dropPrimaryKey(;
 
                 // Se non esiste già, rinominiamo id a uuid per preservare i dati
-                if (! $this->hasColumn('uuid')) {
-                    $this->renameColumn('id', 'uuid');
+                if (! // @var mixed hasColumn('uuid'
+                    // @var mixed renameColumn('id', 'uuid';
                 }
 
                 // Aggiungiamo la nuova colonna id come bigint autoincrement
-                if (! $this->hasColumn('id')) {
+                if (! // @var mixed hasColumn('id'
                     $table->id()->first();
                 }
 
                 // Impostiamo la nuova PRIMARY KEY su id
-                $this->query('ALTER TABLE `'.$this->table_name.'` ADD PRIMARY KEY (`id`)');
+                // @var mixed query('ALTER TABLE `'.$this->table_name.'` ADD PRIMARY KEY (`id`;
             }
 
             // Aggiorniamo i timestamp e soft deletes
-            $this->updateTimestamps(
+            // @var mixed updateTimestamps(
                 table: $table,
                 hasSoftDeletes: true,
             );
             /*
             // Aggiungiamo l'indice univoco se non esiste già
             // Verifichiamo tramite query SQL se l'indice esiste
-            $connection = $this->getConn()->getConnection();
+            $connection = // @var mixed getConn(;
             $database = $connection->getDatabaseName();
             //@var array{count: int}|object{count: int}|null $indexExists
             $indexExists = $connection->selectOne(
@@ -71,7 +71,7 @@ return new class extends XotBaseMigration {
                  WHERE table_schema = ?
                  AND table_name = ?
                  AND index_name = 'team_user_team_id_user_id_unique'",
-                [$database, $this->table_name]
+                [$database, // @var mixed table_name]
             );
 
             $count = 0;

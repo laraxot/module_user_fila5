@@ -42,7 +42,7 @@ class LoginWidget extends XotBaseWidget
      */
     public function mount(): void
     {
-        $this->form->fill();
+        // @var mixed form->fill(;
     }
 
     /**
@@ -87,7 +87,7 @@ class LoginWidget extends XotBaseWidget
     public function save(): void
     {
         try {
-            $data = $this->form->getState();
+            $data = // @var mixed form->getState(;
 
             // Cast esplicito per type safety PHPStan
             $remember = (bool) ($data['remember'] ?? false);
@@ -104,7 +104,7 @@ class LoginWidget extends XotBaseWidget
                 ->success()
                 ->send();
 
-            $this->redirect(route('home'));
+            // @var mixed redirect(route('home';
         } catch (ValidationException $e) {
             Notification::make()
                 ->title(__('user::messages.validation_error'))
@@ -112,9 +112,9 @@ class LoginWidget extends XotBaseWidget
                 ->danger()
                 ->send();
 
-            $this->form->fill();
-            $this->form->saveRelationships();
-            // $this->form->callAfter();
+            // @var mixed form->fill(;
+            // @var mixed form->saveRelationships(;
+            // // @var mixed form->callAfter(;
 
             foreach ($e->errors() as $field => $messages) {
                 // PHPStan Level 10: Ensure messages is array
@@ -123,7 +123,7 @@ class LoginWidget extends XotBaseWidget
                 }
 
                 /* @var array<int|string, mixed> $messages */
-                $this->addError($field, implode(' ', $messages));
+                // @var mixed addError($field, implode(' ', $messages;
             }
         } catch (\Exception $e) {
             report($e);
@@ -134,11 +134,11 @@ class LoginWidget extends XotBaseWidget
                 ->danger()
                 ->send();
 
-            $this->form->fill();
-            $this->form->saveRelationships();
-            // $this->form->callAfter();
+            // @var mixed form->fill(;
+            // @var mixed form->saveRelationships(;
+            // // @var mixed form->callAfter(;
 
-            $this->addError('email', __('user::messages.login_error'));
+            // @var mixed addError('email', __('user::messages.login_error';
         }
     }
 

@@ -25,15 +25,15 @@ new class extends Component {
 
     public function authenticate()
     {
-        $this->validate();
+        // @var mixed validate(;
 
-        if (!Auth::attempt(['email' => $this->email, 'password' => $this->password], $this->remember)) {
-            $this->addError('email', trans('auth.failed'));
+        if (!Auth::attempt(['email' => // @var mixed email, 'password' => $this->password], $this->remember
+            // @var mixed addError('email', trans('auth.failed';
 
             return;
         }
 
-        event(new Login(auth()->guard('web'), User::where('email', $this->email)->first(), $this->remember));
+        event(new Login(auth()->guard('web'), User::where('email', // @var mixed email;
 
         return redirect()->intended('/');
     }

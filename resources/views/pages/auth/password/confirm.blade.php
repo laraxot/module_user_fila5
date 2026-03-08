@@ -16,7 +16,7 @@ new class extends Component {
 
     public function confirm()
     {
-        $this->validate();
+        // @var mixed validate(;
 
         session()->put('auth.password_confirmed_at', time());
 

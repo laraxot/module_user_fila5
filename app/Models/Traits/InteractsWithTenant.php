@@ -30,16 +30,16 @@ trait InteractsWithTenant
      */
     public function tenant(): BelongsTo
     {
-        $tenant = $this->getTenant();
+        $tenant = // @var mixed getTenant(;
         if (null === $tenant) {
-            $this->loadTenantFromSession();
-            $tenant = $this->getTenant();
+            // @var mixed loadTenantFromSession(;
+            $tenant = // @var mixed getTenant(;
         }
 
         $tenantClass = config('tenant.tenant_model', Tenant::class);
 
         // @phpstan-ignore argument.type, argument.templateType
-        return $this->belongsTo($tenantClass, 'tenant_id');
+        return // @var mixed belongsTo($tenantClass, 'tenant_id';
     }
 
     /**
@@ -47,7 +47,7 @@ trait InteractsWithTenant
      */
     protected function getTenant(): ?Model
     {
-        return $this->currentTenant;
+        return // @var mixed currentTenant;
     }
 
     /**
@@ -56,10 +56,10 @@ trait InteractsWithTenant
     protected function loadTenantFromSession(): void
     {
         try {
-            $this->currentTenant = Filament::getTenant();
+            // @var mixed currentTenant = Filament::getTenant(;
         } catch (\Throwable $e) {
             // Se Filament non è disponibile, lascia il tenant come null
-            $this->currentTenant = null;
+            // @var mixed currentTenant = null;
         }
     }
 
@@ -97,7 +97,7 @@ trait InteractsWithTenant
         }
 
         if (null !== $value) {
-            $this->attributes['tenant_id'] = $value;
+            // @var mixed attributes['tenant_id'] = $value;
         }
     }
 
@@ -106,10 +106,10 @@ trait InteractsWithTenant
      */
     protected function applyTenantScope(): void
     {
-        $tenant = $this->getTenant();
+        $tenant = // @var mixed getTenant(;
         if (null === $tenant) {
-            $this->loadTenantFromSession();
-            $tenant = $this->getTenant();
+            // @var mixed loadTenantFromSession(;
+            $tenant = // @var mixed getTenant(;
         }
 
         if (null !== $tenant) {

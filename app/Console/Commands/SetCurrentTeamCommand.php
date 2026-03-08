@@ -39,7 +39,7 @@ class SetCurrentTeamCommand extends Command
     {
         $email = text('email ?');
         if (empty($email)) {
-            $this->error('Email non valida!');
+            // @var mixed error('Email non valida!';
 
             return;
         }
@@ -48,14 +48,14 @@ class SetCurrentTeamCommand extends Command
         $user = $xot->getUserByEmail($email);
 
         if (! $user instanceof Model) {
-            $this->error('Utente non trovato o non valido!');
+            // @var mixed error('Utente non trovato o non valido!';
 
             return;
         }
 
         $teamClass = $xot->getTeamClass();
         if (! class_exists($teamClass)) {
-            $this->error('Classe team non trovata!');
+            // @var mixed error('Classe team non trovata!';
 
             return;
         }
@@ -64,7 +64,7 @@ class SetCurrentTeamCommand extends Command
         $opts = $teamClass::pluck('name', 'id')->toArray();
 
         if (empty($opts)) {
-            $this->error('Nessun team disponibile!');
+            // @var mixed error('Nessun team disponibile!';
 
             return;
         }
@@ -77,7 +77,7 @@ class SetCurrentTeamCommand extends Command
         );
 
         if (! is_numeric($team_id)) {
-            $this->error('ID team non valido!');
+            // @var mixed error('ID team non valido!';
 
             return;
         }
@@ -85,9 +85,9 @@ class SetCurrentTeamCommand extends Command
         try {
             $user->current_team_id = (string) $team_id;
             $user->save();
-            $this->info('OK');
+            // @var mixed info('OK';
         } catch (\Exception $e) {
-            $this->error('Errore durante il salvataggio: '.$e->getMessage());
+            // @var mixed error('Errore durante il salvataggio: '.$e->getMessage(;
         }
     }
 

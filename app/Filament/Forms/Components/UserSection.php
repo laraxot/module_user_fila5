@@ -23,7 +23,7 @@ class UserSection extends Section
     {
         parent::setUp();
 
-        $this->schema([
+        // @var mixed schema([
             Grid::make(4)->schema([
                 // TextInput::make('ente'),
                 // TextInput::make('matr'),

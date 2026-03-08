@@ -27,7 +27,7 @@ class EditOauthClient extends XotBaseEditRecord
         $actions = parent::getHeaderActions();
 
         /** @var OauthClient|null $record */
-        $record = $this->record;
+        $record = // @var mixed record;
 
         if (null !== $record && ! $record->revoked) {
             $actions['revoke'] = Action::make('revoke')
@@ -40,9 +40,9 @@ class EditOauthClient extends XotBaseEditRecord
                 ->modalSubmitActionLabel(__('user::actions.oauth.revoke_client.modal.confirm'))
                 ->action(function (): void {
                     /** @var OauthClient $record */
-                    $record = $this->record;
+                    $record = // @var mixed record;
                     app(RevokeClientAction::class)->execute($record, true);
-                    $this->redirect(OauthClientResource::getUrl('index'));
+                    // @var mixed redirect(OauthClientResource::getUrl('index';
                 })
                 ->successNotificationTitle(__('user::actions.oauth.revoke_client.success'));
         }

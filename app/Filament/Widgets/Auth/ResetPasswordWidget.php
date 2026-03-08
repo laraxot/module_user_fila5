@@ -65,7 +65,7 @@ class ResetPasswordWidget extends XotBaseWidget
      */
     public function mount(): void
     {
-        $this->form->fill();
+        // @var mixed form->fill(;
     }
 
     /**
@@ -82,7 +82,7 @@ class ResetPasswordWidget extends XotBaseWidget
      */
     public function resetPassword()
     {
-        $data = $this->form->getState();
+        $data = // @var mixed form->getState(;
 
         $reset_data = Arr::only($data, ['email', 'password', 'password_confirmation', 'token']);
         $status = Password::reset($reset_data, function (Authenticatable $user, string $password): void {
@@ -99,6 +99,6 @@ class ResetPasswordWidget extends XotBaseWidget
             return redirect()->route('login');
         }
         /* @phpstan-ignore-next-line */
-        $this->addError('email', __($status));
+        // @var mixed addError('email', __($status;
     }
 }

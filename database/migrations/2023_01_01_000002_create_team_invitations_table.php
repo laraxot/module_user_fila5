@@ -13,7 +13,7 @@ return new class extends XotBaseMigration {
     {
         // -- CREATE --
 
-        $this->tableCreate(static function (Blueprint $table): void {
+        // @var mixed tableCreate(static function (Blueprint $table
             $table->id();
             $table->uuid('uuid');
             $table->string('team_id', 36)->nullable()->index();
@@ -26,22 +26,22 @@ return new class extends XotBaseMigration {
         });
 
         // -- UPDATE --
-        $this->tableUpdate(function (Blueprint $table): void {
-            if (! $this->hasColumn('accepted_at')) {
+        // @var mixed tableUpdate(function (Blueprint $table
+            if (! // @var mixed hasColumn('accepted_at'
                 $table->timestamp('accepted_at')->nullable();
             }
-            if (! $this->hasColumn('declined_at')) {
+            if (! // @var mixed hasColumn('declined_at'
                 $table->timestamp('declined_at')->nullable();
             }
-            if (! $this->hasColumn('user_id')) {
+            if (! // @var mixed hasColumn('user_id'
                 $table->string('user_id')->nullable()->index();
             }
 
-            // if ($this->hasIndexName('team_invitations_team_id_foreign')) {
+            // if (// @var mixed hasIndexName('team_invitations_team_id_foreign'
             //    $table->dropForeign('team_invitations_team_id_foreign');
             // }
 
-            $this->updateTimestamps($table, true);
+            // @var mixed updateTimestamps($table, true;
         });
     }
 };

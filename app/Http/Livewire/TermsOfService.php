@@ -16,7 +16,7 @@ class TermsOfService extends Component
      */
     public function render(): View
     {
-        // $this->accepted = true;
+        // // @var mixed accepted = true;
         $text = null;
         if (config('terms-of-service')) {
             $text = config('terms-of-service.text');

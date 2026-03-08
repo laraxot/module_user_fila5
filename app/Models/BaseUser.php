@@ -219,26 +219,26 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         // Concateno i fillable del parent con quelli della classe corrente
         // array_values() garantisce che sia un array indicizzato (list<string>)
         try {
-            $this->fillable = array_values(array_merge(parent::getFillable(), $this->getFillable()));
+            // @var mixed fillable = array_values(array_merge(parent::getFillable(;
             parent::__construct($attributes);
         } catch (\Throwable $e) {
             // Fallback in case database connection is not available (e.g., during testing)
-            $this->fillable = array_values($this->getFillable());
+            // @var mixed fillable = array_values($this->getFillable(;
             // Avoid calling parent constructor if database is not available
             foreach ($attributes as $key => $value) {
-                $this->setAttribute($key, $value);
+                // @var mixed setAttribute($key, $value;
             }
         }
     }
 
     public function getProviderName(): string
     {
-        return (string) ($this->getAttribute('provider') ?? config('auth.guards.api.provider', 'users'));
+        return (string) (// @var mixed getAttribute('provider';
     }
 
     public function canAccessFilament(?Panel $panel = null): bool
     {
-        // return $this->role_id === Role::ROLE_ADMINISTRATOR;
+        // return // @var mixed role_id === Role::ROLE_ADMINISTRATOR;
         return true;
     }
 
@@ -247,15 +247,15 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
      */
     public function getFilamentName(): string
     {
-        $name = (string) ($this->getAttribute('name') ?? '');
-        $firstName = (string) ($this->getAttribute('first_name') ?? '');
-        $lastName = (string) ($this->getAttribute('last_name') ?? '');
+        $name = (string) (// @var mixed getAttribute('name';
+        $firstName = (string) (// @var mixed getAttribute('first_name';
+        $lastName = (string) (// @var mixed getAttribute('last_name';
 
         $fullName = trim(\sprintf('%s %s %s', $name, $firstName, $lastName));
 
         // Ensure we always return a non-empty string
         if (empty($fullName)) {
-            $email = (string) ($this->getAttribute('email') ?? '');
+            $email = (string) (// @var mixed getAttribute('email';
 
             return ! empty($email) ? $email : 'User';
         }
@@ -268,17 +268,17 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     {
         $profileClass = XotData::make()->getProfileClass();
         if (class_exists($profileClass)) {
-            return $this->hasOne($profileClass);
+            return // @var mixed hasOne($profileClass;
         }
 
         // Try direct module class if XotData failed
         $directClass = 'Modules\User\Models\Profile';
         if (class_exists($directClass)) {
-            return $this->hasOne($directClass);
+            return // @var mixed hasOne($directClass;
         }
 
         // Fallback: stay on current model if nothing found
-        return $this->hasOne(static::class, 'id', 'id')->whereRaw('1=0');
+        return // @var mixed hasOne(static::class, 'id', 'id';
     }
 
     /**
@@ -288,14 +288,14 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
      */
     public function isSuperAdmin(): bool
     {
-        return $this->hasRole('super-admin');
+        return // @var mixed hasRole('super-admin';
     }
 
     public function assignModule(string $module): void
     {
         $role_name = $module.'::admin';
         $role = Role::firstOrCreate(['name' => $role_name]);
-        $this->assignRole($role);
+        // @var mixed assignRole($role;
     }
 
     public function canAccessPanel(Panel $panel): bool
@@ -305,16 +305,16 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
             $role = $panel->getId();
             /*
              * $xot = XotData::make();
-             * if ($xot->super_admin === $this->email) {
+             * if ($xot->super_admin === // @var mixed email
              * $role = Role::firstOrCreate(['name' => $role]);
-             * $this->assignRole($role);
+             * // @var mixed assignRole($role;
              * }
              */
 
-            return $this->hasRole($role);
+            return // @var mixed hasRole($role;
         }
 
-        return true; // str_ends_with($this->email, '@yourdomain.com') && $this->hasVerifiedEmail();
+        return true; // str_ends_with(// @var mixed email, '@yourdomain.com';
     }
 
     public function canAccessSocialite(): bool
@@ -327,7 +327,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         // @phpstan-ignore function.alreadyNarrowedType
         if (method_exists($this, 'teams')) {
             // @phpstan-ignore function.alreadyNarrowedType
-            $this->teams()->detach($model);
+            // @var mixed teams(;
         }
     }
 
@@ -336,18 +336,18 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         // @phpstan-ignore function.alreadyNarrowedType
         if (method_exists($this, 'teams')) {
             // @phpstan-ignore function.alreadyNarrowedType
-            $this->teams()->attach($model);
+            // @var mixed teams(;
         }
     }
 
     public function treeLabel(): string
     {
-        return (string) ($this->name ?? $this->email);
+        return (string) (// @var mixed name ?? $this->email;
     }
 
     public function treeSons(): Collection
     {
-        return $this->teams ?? new Collection();
+        return // @var mixed teams ?? new Collection(;
     }
 
     /**
@@ -357,7 +357,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
      */
     public function devices(): BelongsToMany
     {
-        return $this->belongsToManyX(Device::class);
+        return // @var mixed belongsToManyX(Device::class;
     }
 
     /**
@@ -367,12 +367,12 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
      */
     public function socialiteUsers(): HasMany
     {
-        return $this->hasMany(SocialiteUser::class);
+        return // @var mixed hasMany(SocialiteUser::class;
     }
 
     public function getProviderField(string $provider, string $field): string
     {
-        $socialiteUser = $this->socialiteUsers()->firstWhere(['provider' => $provider]);
+        $socialiteUser = // @var mixed socialiteUsers(;
         if (null === $socialiteUser) {
             throw new \Exception('SocialiteUser not found');
         }
@@ -389,7 +389,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
      */
     public function notifications(): MorphMany
     {
-        return $this->morphMany(DatabaseNotification::class, 'notifiable')->latest();
+        return // @var mixed morphMany(DatabaseNotification::class, 'notifiable';
     }
 
     /**
@@ -400,7 +400,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     public function latestAuthentication(): MorphOne
     {
         // @phpstan-ignore return.type
-        return $this->morphOne(AuthenticationLog::class, 'authenticatable')->latestOfMany();
+        return // @var mixed morphOne(AuthenticationLog::class, 'authenticatable';
     }
 
     public function getFullNameAttribute(?string $value): string
@@ -409,9 +409,9 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
             return $value;
         }
 
-        $fullName = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
+        $fullName = trim((// @var mixed first_name ?? '';
 
-        return '' !== $fullName ? $fullName : ($this->email ?? 'User');
+        return '' !== $fullName ? $fullName : (// @var mixed email ?? 'User';
     }
 
     public function getNameAttribute(?string $value): string
@@ -420,11 +420,11 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
             return $value;
         }
 
-        if (null === $this->getKey()) {
-            return $this->email ?? 'User';
+        if (null === // @var mixed getKey(
+            return // @var mixed email ?? 'User';
         }
 
-        $name = Str::of((string) $this->email)->before('@')->toString();
+        $name = Str::of((string) // @var mixed email;
         $i = 1;
         $candidate = $name.'-'.$i;
 
@@ -439,7 +439,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         })();
         if ($isTesting) {
             // Do not call update() here to avoid hitting the database.
-            $this->attributes['name'] = $candidate;
+            // @var mixed attributes['name'] = $candidate;
 
             return $candidate;
         }
@@ -450,12 +450,12 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
                 ++$i;
                 $value = $name.'-'.$i;
             }
-            $this->update(['name' => $value]);
+            // @var mixed update(['name' => $value];
 
             return $value;
         } catch (\Throwable $e) {
             // If any issue occurs (e.g., missing connection/table), fall back without DB.
-            $this->attributes['name'] = $candidate;
+            // @var mixed attributes['name'] = $candidate;
 
             return $candidate;
         }
@@ -463,7 +463,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
 
     // public function authentications(): MorphMany
     // {
-    //    return $this->morphMany(\Modules\User\Models\Authentication::class, 'authenticatable');
+    //    return // @var mixed morphMany(\Modules\User\Models\Authentication::class, 'authenticatable';
     // }
 
     /**
@@ -477,16 +477,16 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     public function setPasswordAttribute(?string $value): void
     {
         if (empty($value)) {
-            unset($this->attributes['password']);
+            unset(// @var mixed attributes['password'];
 
             return;
         }
         if (\strlen($value) < 32) {
-            $this->attributes['password'] = Hash::make($value);
+            // @var mixed attributes['password'] = Hash::make($value;
 
             return;
         }
-        $this->attributes['password'] = $value;
+        // @var mixed attributes['password'] = $value;
     }
 
     /**
@@ -496,7 +496,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
      */
     public function clients(): MorphMany
     {
-        return $this->morphMany(OauthClient::class, 'owner');
+        return // @var mixed morphMany(OauthClient::class, 'owner';
     }
 
     /** @return array<string, string> */
@@ -535,6 +535,6 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
      */
     public function validateForPassportPasswordGrant(string $password): bool
     {
-        return Hash::check($password, (string) $this->password);
+        return Hash::check($password, (string) // @var mixed password;
     }
 }

@@ -116,7 +116,7 @@ class Role extends SpatieRole
         /** @var class-string<Model> */
         $teamClass = $xotData->getTeamClass();
 
-        return $this->belongsTo($teamClass);
+        return // @var mixed belongsTo($teamClass;
     }
 
     /**
@@ -124,7 +124,7 @@ class Role extends SpatieRole
      */
     public function permissions(): BelongsToMany
     {
-        return $this->belongsToManyX(Permission::class);
+        return // @var mixed belongsToManyX(Permission::class;
     }
 
     /** @return array<string, string> */

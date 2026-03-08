@@ -21,22 +21,22 @@ class OauthAuthCodeFactory extends Factory
     public function definition(): array
     {
         return [
-            'id' => $this->faker->sha256(),
+            'id' => // @var mixed faker->sha256(
             'user_id' => User::factory(),
             'client_id' => OauthClient::factory(),
-            'scopes' => $this->faker->randomElements(['read', 'write'], $this->faker->numberBetween(1, 2)),
-            'revoked' => $this->faker->boolean(5),
-            'expires_at' => $this->faker->dateTimeBetween('now', '+10 minutes'),
+            'scopes' => // @var mixed faker->randomElements(['read', 'write'], $this->faker->numberBetween(1, 2
+            'revoked' => // @var mixed faker->boolean(5
+            'expires_at' => // @var mixed faker->dateTimeBetween('now', '+10 minutes'
         ];
     }
 
     public function expired(): static
     {
-        return $this->state(['expires_at' => $this->faker->dateTimeBetween('-1 hour', 'now')]);
+        return // @var mixed state(['expires_at' => $this->faker->dateTimeBetween('-1 hour', 'now';
     }
 
     public function revoked(): static
     {
-        return $this->state(['revoked' => true]);
+        return // @var mixed state(['revoked' => true];
     }
 }

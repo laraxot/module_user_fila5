@@ -6,11 +6,11 @@ declare(strict_types=1);
 <x-filament-panels::page>
     
     <x-filament-schemas::form wire:submit="resetPassword">
-        {{ $this->form }}
+        {{ // @var mixed form }}
 
         <x-filament::actions
-            :actions="$this->getCachedFormActions()"
-            :full-width="$this->hasFullWidthFormActions()"
+            :actions="// @var mixed getCachedFormActions(
+            :full-width="// @var mixed hasFullWidthFormActions(
         />
     </x-filament-schemas::form>
     

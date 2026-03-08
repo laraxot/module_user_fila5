@@ -12,25 +12,25 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         // -- CREATE --
-        $this->tableCreate(function (Blueprint $table): void {
+        // @var mixed tableCreate(function (Blueprint $table
             $table->id();
             $table->string('uuid', 36)->nullable()->index();
             $table->string('email')->index();
             $table->string('token');
             // $table->timestamp('created_at')->nullable();
-            $this->timestamps($table);
+            // @var mixed timestamps($table;
         });
 
         // -- UPDATE --
-        $this->tableUpdate(function (Blueprint $table): void {
-            // if (! $this->hasColumn('email')) {
+        // @var mixed tableUpdate(function (Blueprint $table
+            // if (! // @var mixed hasColumn('email'
             //    $table->string('email')->nullable();
             // }
-            // $this->updateUser($table);
-            if ('uuid' === $this->getColumnType('id')) {
+            // // @var mixed updateUser($table;
+            if ('uuid' === // @var mixed getColumnType('id'
                 $table->dropColumn('id');
             }
-            if (! $this->hasColumn('id')) {
+            if (! // @var mixed hasColumn('id'
                 $table->id();
             }
         });

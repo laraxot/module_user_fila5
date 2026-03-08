@@ -122,13 +122,13 @@ class OauthClient extends PassportClient implements AuthorizableContract
     public function can($ability, mixed $arguments = []): bool
     {
         if (is_string($ability)) {
-            return $this->checkPermission($ability);
+            return // @var mixed checkPermission($ability;
         }
 
         /** @var iterable<string> $ability */
         $permissions = $ability;
 
-        return $this->hasAnyPermission($permissions);
+        return // @var mixed hasAnyPermission($permissions;
     }
 
     /**
@@ -139,7 +139,7 @@ class OauthClient extends PassportClient implements AuthorizableContract
      */
     public function cant($ability, $arguments = []): bool
     {
-        return ! $this->can($ability);
+        return ! // @var mixed can($ability;
     }
 
     /**
@@ -150,7 +150,7 @@ class OauthClient extends PassportClient implements AuthorizableContract
      */
     public function cannot($ability, $arguments = []): bool
     {
-        return $this->cant($ability);
+        return // @var mixed cant($ability;
     }
 
     /**
@@ -162,7 +162,7 @@ class OauthClient extends PassportClient implements AuthorizableContract
     public function canAny($abilities, $arguments = []): bool
     {
         foreach ((array) $abilities as $ability) {
-            if ($this->can($ability)) {
+            if (// @var mixed can($ability
                 return true;
             }
         }
@@ -179,7 +179,7 @@ class OauthClient extends PassportClient implements AuthorizableContract
     {
         /** @var iterable<string> $permissions */
         foreach ($permissions as $perm) {
-            if ($this->checkPermission($perm)) {
+            if (// @var mixed checkPermission($perm
                 return true;
             }
         }
@@ -193,7 +193,7 @@ class OauthClient extends PassportClient implements AuthorizableContract
     private function checkPermission(string $permission): bool
     {
         try {
-            return $this->hasPermissionTo($permission);
+            return // @var mixed hasPermissionTo($permission;
         } catch (PermissionDoesNotExist) {
             return false;
         }

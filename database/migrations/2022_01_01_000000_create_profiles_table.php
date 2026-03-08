@@ -15,7 +15,7 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         // -- CREATE --
-        $this->tableCreate(static function (Blueprint $table): void {
+        // @var mixed tableCreate(static function (Blueprint $table
             $table->uuid('id')->primary();
             $table->string('user_id', 36)->index()->nullable();
             $table->string('type')->index()->nullable();
@@ -44,29 +44,29 @@ return new class extends XotBaseMigration {
         });
 
         // -- UPDATE --
-        $this->tableUpdate(function (Blueprint $table): void {
-            if (! $this->hasColumn('user_id')) {
+        // @var mixed tableUpdate(function (Blueprint $table
+            if (! // @var mixed hasColumn('user_id'
                 $table->string('user_id', 36)->index()->nullable()->after('id');
             }
-            if (! $this->hasColumn('email')) {
+            if (! // @var mixed hasColumn('email'
                 $table->string('email')->nullable()->after('last_name');
             }
-            if (! $this->hasColumn('phone')) {
+            if (! // @var mixed hasColumn('phone'
                 $table->string('phone')->nullable()->after('email');
             }
-            if (! $this->hasColumn('avatar')) {
+            if (! // @var mixed hasColumn('avatar'
                 $table->string('avatar')->nullable()->after('bio');
             }
-            if (! $this->hasColumn('timezone')) {
+            if (! // @var mixed hasColumn('timezone'
                 $table->string('timezone')->nullable()->after('avatar');
             }
-            if (! $this->hasColumn('locale')) {
+            if (! // @var mixed hasColumn('locale'
                 $table->string('locale')->nullable()->after('timezone');
             }
-            if (! $this->hasColumn('preferences')) {
+            if (! // @var mixed hasColumn('preferences'
                 $table->json('preferences')->nullable()->after('locale');
             }
-            if (! $this->hasColumn('status')) {
+            if (! // @var mixed hasColumn('status'
                 $table->string('status')->nullable()->after('preferences');
             }
         });

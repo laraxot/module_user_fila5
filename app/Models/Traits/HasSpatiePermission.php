@@ -14,12 +14,12 @@ trait HasSpatiePermission
     /*
         public function roles(): BelongsToMany
         {
-            return $this->belongsToManyX(Role::class)->using(ModelHasRole::class);
+            return // @var mixed belongsToManyX(Role::class;
         }
 
         public function permissions(): BelongsToMany
         {
-            return $this->belongsToManyX(Permission::class);
+            return // @var mixed belongsToManyX(Permission::class;
         }
         */
 }

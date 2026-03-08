@@ -62,12 +62,12 @@ class UsersChartWidget extends ChartWidget implements HasActions, HasForms
     protected function getData(): array
     {
         // Rimuovere chiamate di test non necessarie per ridurre overhead
-        // $this->mountAction('test', ['id' => 5]);
-        // $this->testAction();
+        // // @var mixed mountAction('test', ['id' => 5];
+        // // @var mixed testAction(;
 
         try {
             // Type narrowing for PHPStan Level 10
-            $pageFilters = isset($this->pageFilters) && is_array($this->pageFilters) ? $this->pageFilters : null;
+            $pageFilters = isset(// @var mixed pageFilters;
 
             $startDateValue = is_array($pageFilters) && isset($pageFilters['startDate']) ? $pageFilters['startDate'] : null;
             $endDateValue = is_array($pageFilters) && isset($pageFilters['endDate']) ? $pageFilters['endDate'] : null;

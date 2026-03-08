@@ -15,7 +15,7 @@ declare(strict_types=1);
     </div>
 
     <form wire:submit="submit" class="space-y-6">
-        {{ $this->form }}
+        {{ // @var mixed form }}
 
         <div class="flex items-center justify-between">
             <div class="text-sm">

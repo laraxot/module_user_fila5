@@ -38,17 +38,17 @@ class UpdateUserAction
             $dbManager->beginTransaction();
 
             // Prepara i dati per l'aggiornamento
-            $updateData = $this->prepareUpdateData($data, $hasher, $safeStringCast);
+            $updateData = // @var mixed prepareUpdateData($data, $hasher, $safeStringCast;
 
             // Valida i dati specifici per l'aggiornamento
-            $this->validateUpdateData($user, $updateData, $validationException);
+            // @var mixed validateUpdateData($user, $updateData, $validationException;
 
             // Aggiorna l'utente
             $user->fill($updateData);
             $user->save();
 
             // Esegue operazioni post-aggiornamento se necessarie
-            $this->afterUpdate($user, $updateData);
+            // @var mixed afterUpdate($user, $updateData;
 
             $dbManager->commit();
 

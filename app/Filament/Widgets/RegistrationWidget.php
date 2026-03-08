@@ -45,39 +45,39 @@ class RegistrationWidget extends XotBaseWidget
 
     public function mount(string $type, Request $_request): void
     {
-        $this->type = $type;
-        $this->resource = XotData::make()->getUserResourceClassByType($type);
+        // @var mixed type = $type;
+        // @var mixed resource = XotData::make(;
 
-        $modelClass = $this->resource::getModel();
-        $this->model = \is_string($modelClass) ? $modelClass : '';
+        $modelClass = // @var mixed resource::getModel(;
+        // @var mixed model = \is_string($modelClass;
 
-        $this->action = Str::of($this->model)
+        // @var mixed action = Str::of($this->model
             ->replace('\\Models\\', '\\Actions\\')
             ->append('\\RegisterAction')
             ->toString();
-        $record = $this->getFormModel();
-        $data = $this->getFormFill();
+        $record = // @var mixed getFormModel(;
+        $data = // @var mixed getFormFill(;
 
-        $this->data = $data;
-        $this->form->fill($this->data);
-        $this->form->model($record);
-        $this->record = $record;
+        // @var mixed data = $data;
+        // @var mixed form->fill($this->data;
+        // @var mixed form->model($record;
+        // @var mixed record = $record;
     }
 
     public function getFormModel(): Model
     {
         /** @var class-string<Model> $modelClass */
-        $modelClass = $this->model;
+        $modelClass = // @var mixed model;
 
         $data = request()->all();
         $email = Arr::get($data, 'email');
         $token = Arr::get($data, 'token');
 
         /** @var Model|null $user */
-        $user = $this->model::firstWhere('email', $email);
+        $user = // @var mixed model::firstWhere('email', $email;
         if (null === $user) {
             /** @var Model $model */
-            $model = app($this->model);
+            $model = app(// @var mixed model;
 
             return $model;
         }
@@ -90,7 +90,7 @@ class RegistrationWidget extends XotBaseWidget
         }
 
         if ($remember_token === $token) {
-            $this->record = $user;
+            // @var mixed record = $user;
 
             return $user;
         }
@@ -109,7 +109,7 @@ class RegistrationWidget extends XotBaseWidget
     {
         /** @var array<string, mixed> $data */
         $data = SafeArrayCastAction::cast(parent::getFormFill());
-        $data['type'] = $this->type;
+        $data['type'] = // @var mixed type;
 
         return $data;
     }
@@ -121,7 +121,7 @@ class RegistrationWidget extends XotBaseWidget
     public function getFormSchema(): array
     {
         /** @var array<int|string, Component> $schema */
-        $schema = $this->resource::getFormSchemaWidget();
+        $schema = // @var mixed resource::getFormSchemaWidget(;
         Assert::isArray($schema);
 
         return $schema;
@@ -134,23 +134,23 @@ class RegistrationWidget extends XotBaseWidget
     {
         $lang = app()->getLocale();
 
-        $data = $this->form->getState();
+        $data = // @var mixed form->getState(;
         /** @var array<string, mixed> $initialData */
-        $initialData = $this->data ?? [];
+        $initialData = // @var mixed data ?? [];
         $data = array_merge($initialData, $data);
-        $record = $this->record;
+        $record = // @var mixed record;
 
         /** @var object{execute: callable} $actionInstance */
-        $actionInstance = app($this->action);
+        $actionInstance = app(// @var mixed action;
 
         /** @phpstan-ignore method.notFound */
         $user = $actionInstance->execute($record, $data);
 
         $lang = app()->getLocale();
-        $route = route('pages.view', ['slug' => $this->type.'_register_complete']);
+        $route = route('pages.view', ['slug' => // @var mixed type.'_register_complete'];
         $route = LaravelLocalization::localizeUrl($route, $lang);
 
-        // return redirect()->route('pages.view', ['slug' => $this->type . '_register_complete','lang'=>$lang]);
+        // return redirect()->route('pages.view', ['slug' => // @var mixed type . '_register_complete','lang'=>$lang];
         return redirect($route);
     }
 }

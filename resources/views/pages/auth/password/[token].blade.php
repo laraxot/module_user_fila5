@@ -28,19 +28,19 @@ new class extends Component {
 
     public function mount($token)
     {
-        $this->email = request()->query('email', '');
-        $this->token = $token;
+        // @var mixed email = request(;
+        // @var mixed token = $token;
     }
 
     public function resetPassword()
     {
-        $this->validate();
+        // @var mixed validate(;
 
         $response = Password::broker()->reset(
             [
-                'token' => $this->token,
-                'email' => $this->email,
-                'password' => $this->password,
+                'token' => // @var mixed token,
+                'email' => // @var mixed email,
+                'password' => // @var mixed password,
             ],
             function ($user, $password) {
                 $user->password = Hash::make($password);
@@ -61,7 +61,7 @@ new class extends Component {
             return redirect('/');
         }
 
-        $this->addError('email', trans($response));
+        // @var mixed addError('email', trans($response;
     }
 };
 

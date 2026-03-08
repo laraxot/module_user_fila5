@@ -34,11 +34,11 @@ class RoleHasPermissionFactory extends Factory
 
     public function forPermission(Permission $permission): static
     {
-        return $this->state(['permission_id' => $permission->id]);
+        return // @var mixed state(['permission_id' => $permission->id];
     }
 
     public function forRole(Role $role): static
     {
-        return $this->state(['role_id' => $role->id]);
+        return // @var mixed state(['role_id' => $role->id];
     }
 }

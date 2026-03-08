@@ -57,7 +57,7 @@ class SuperAdminCommand extends Command
             $user->assignRole($role);
         }
 
-        $this->info('super-admin assigned to '.$email);
+        // @var mixed info('super-admin assigned to '.$email;
     }
 
     /*

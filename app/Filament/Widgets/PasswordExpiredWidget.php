@@ -60,7 +60,7 @@ class PasswordExpiredWidget extends XotBaseWidget
     public function getFormSchema(): array
     {
         $schema = [
-            $this->getCurrentPasswordFormComponent(),
+            // @var mixed getCurrentPasswordFormComponent(
             ...PasswordData::make()->getPasswordFormComponents('password'),
         ];
 
@@ -90,22 +90,22 @@ class PasswordExpiredWidget extends XotBaseWidget
      */
     public function resetPassword(): ?PasswordResetResponse
     {
-        $this->validate();
+        // @var mixed validate(;
 
         $user = Auth::user();
         if (! $user || ! ($user instanceof Model)) {
-            $this->addError('current_password', __('user::auth.user_not_found'));
+            // @var mixed addError('current_password', __('user::auth.user_not_found';
 
             return null;
         }
 
         // Cast e verifica esistenza dei dati del form
-        $data = $this->data ?? [];
+        $data = // @var mixed data ?? [];
         $currentPassword = SafeStringCastAction::cast($data['current_password'] ?? '');
         $newPassword = SafeStringCastAction::cast($data['password'] ?? '');
 
         if (empty($currentPassword) || empty($newPassword)) {
-            $this->addError('current_password', __('user::auth.password_fields_required'));
+            // @var mixed addError('current_password', __('user::auth.password_fields_required';
 
             return null;
         }
@@ -115,7 +115,7 @@ class PasswordExpiredWidget extends XotBaseWidget
         $userPasswordString = $userPassword;
 
         if (! Hash::check($currentPassword, $userPasswordString)) {
-            $this->addError('current_password', __('user::auth.password_current_incorrect'));
+            // @var mixed addError('current_password', __('user::auth.password_current_incorrect';
 
             return null;
         }
@@ -186,7 +186,7 @@ class PasswordExpiredWidget extends XotBaseWidget
     protected function getFormActions(): array
     {
         return [
-            $this->getResetPasswordFormAction(),
+            // @var mixed getResetPasswordFormAction(
         ];
     }
 }

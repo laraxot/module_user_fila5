@@ -17,7 +17,7 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         // -- CREATE --
-        $this->tableCreate(static function (Blueprint $table): void {
+        // @var mixed tableCreate(static function (Blueprint $table
             $team_class = XotData::make()->getTeamClass();
             $table->id();
             $table->integer('role_id')->index()->nullable();
@@ -25,18 +25,18 @@ return new class extends XotBaseMigration {
             $table->foreignIdFor($team_class, 'team_id')->nullable();
         });
         // -- UPDATE --
-        $this->tableUpdate(function (Blueprint $table): void {
+        // @var mixed tableUpdate(function (Blueprint $table
             $team_class = XotData::make()->getTeamClass();
-            if (! $this->hasColumn('team_id')) {
+            if (! // @var mixed hasColumn('team_id'
                 $table->foreignIdFor($team_class, 'team_id')->nullable();
             }
-            if ('uuid' === $this->getColumnType('model_id')) {
+            if ('uuid' === // @var mixed getColumnType('model_id'
                 $table->string('model_id', 36)->index()->change();
             }
-            if ('uuid' === $this->getColumnType('role_id')) {
+            if ('uuid' === // @var mixed getColumnType('role_id'
                 $table->integer('role_id')->index()->change();
             }
-            $this->updateTimestamps($table);
+            // @var mixed updateTimestamps($table;
         });
     }
 };

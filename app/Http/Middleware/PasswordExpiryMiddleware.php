@@ -20,12 +20,12 @@ class PasswordExpiryMiddleware
             return $next($request);
         }
 
-        if ($request->routeIs($this->getPasswordExpiryRoute()) || $request->routeIs('*.auth.*')) {
+        if ($request->routeIs(// @var mixed getPasswordExpiryRoute(
             return $next($request);
         }
 
-        if ($this->passwordHasExpired()) {
-            return redirect(route($this->getPasswordExpiryRoute()));
+        if (// @var mixed passwordHasExpired(
+            return redirect(route(// @var mixed getPasswordExpiryRoute(;
         }
 
         return $next($request);

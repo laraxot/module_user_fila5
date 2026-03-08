@@ -114,6 +114,6 @@ class Team extends BaseTeam
 
     public function permissions(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(TeamPermission::class);
+        return // @var mixed hasMany(TeamPermission::class;
     }
 }

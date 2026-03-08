@@ -199,7 +199,7 @@ class Profile extends BaseProfile implements HasMedia
      */
     public function teams(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
-        return $this->belongsToManyX(Team::class);
+        return // @var mixed belongsToManyX(Team::class;
     }
 
     /**

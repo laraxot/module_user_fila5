@@ -28,7 +28,7 @@ class DeleteAccount extends Component
         /** @var User|null $user */
         $user = Auth::user();
         if (! $user) {
-            $this->dispatch('toast', [
+            // @var mixed dispatch('toast', [
                 'message' => 'Utente non trovato',
                 'type' => 'error',
             ]);
@@ -38,7 +38,7 @@ class DeleteAccount extends Component
 
         // Assicuriamoci che sia del tipo corretto per l'action
         if (! $user instanceof UserContract) {
-            $this->dispatch('toast', [
+            // @var mixed dispatch('toast', [
                 'message' => 'Tipo di utente non supportato',
                 'type' => 'error',
             ]);
@@ -46,18 +46,18 @@ class DeleteAccount extends Component
             return;
         }
 
-        $result = app(DeleteUserAction::class)->execute($user, $this->delete_confirm_password);
+        $result = app(DeleteUserAction::class)->execute($user, // @var mixed delete_confirm_password;
 
         if (! $result['success']) {
-            $this->dispatch('toast', [
+            // @var mixed dispatch('toast', [
                 'message' => $result['message'],
                 'type' => 'error',
             ]);
-            $this->reset(['delete_confirm_password']);
+            // @var mixed reset(['delete_confirm_password'];
 
             return;
         }
 
-        $this->redirect('/');
+        // @var mixed redirect('/';
     }
 }

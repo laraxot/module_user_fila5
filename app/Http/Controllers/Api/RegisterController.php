@@ -49,7 +49,7 @@ class RegisterController extends XotBaseController
             $messages,
         );
         if ($validator->fails()) {
-            return $this->sendError('Validation Error.', $validator->errors()->all());
+            return // @var mixed sendError('Validation Error.', $validator->errors(;
         }
 
         /** @var array<string, mixed> $input */
@@ -61,6 +61,6 @@ class RegisterController extends XotBaseController
         $success['token'] = $user->createToken('MyApp')->accessToken;
         $success['name'] = $user->name ?? '';
 
-        return $this->sendResponse('User register successfully.', $success);
+        return // @var mixed sendResponse('User register successfully.', $success;
     }
 }
