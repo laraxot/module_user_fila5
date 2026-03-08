@@ -82,8 +82,16 @@ class RegisterTenant extends BaseRegisterTenant
      */
     private function resolveResourceClass(): string
     {
+<<<<<<< HEAD
+        if (null !== $this->resourceClass) {
+            return $this->resourceClass;
+||||||| 6161e129d
+        if ($this->resourceClass !== null) {
+            return $this->resourceClass;
+=======
         if (null !== $resourceClass
             return $resourceClass;
+>>>>>>> feature/ralph-loop-implementation
         }
 
         $tenantClass = XotData::make()->getTenantClass();

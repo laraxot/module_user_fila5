@@ -75,13 +75,27 @@ trait IsProfileTrait
             return $value;
         }
 
+<<<<<<< HEAD
+        $user = $this->user;
+||||||| 6161e129d
+        $user = $this->user;
+        if ($user === null) {
+=======
         $user = $user;
+>>>>>>> feature/ralph-loop-implementation
         if (null === $user) {
             return null;
         }
         Assert::isInstanceOf($user, User::class);
 
+<<<<<<< HEAD
+        $res = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
+||||||| 6161e129d
+        $res = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
+        if ($res !== '') {
+=======
         $res = trim(($first_name ?? ''));
+>>>>>>> feature/ralph-loop-implementation
         if ('' !== $res) {
             return $res;
         }
@@ -105,13 +119,27 @@ trait IsProfileTrait
             return $value;
         }
 
+<<<<<<< HEAD
+        $user = $this->user;
+||||||| 6161e129d
+        $user = $this->user;
+        if ($user === null) {
+=======
         $user = $user;
+>>>>>>> feature/ralph-loop-implementation
         if (null === $user) {
             return null;
         }
         Assert::isInstanceOf($user, User::class);
 
+<<<<<<< HEAD
+        $firstName = $user->getAttribute('first_name');
+||||||| 6161e129d
+        $firstName = $user->getAttribute('first_name');
+        if (! \is_string($firstName) || $firstName === '') {
+=======
         $firstName = $user->$this->getAttribute('first_name');
+>>>>>>> feature/ralph-loop-implementation
         if (! \is_string($firstName) || '' === $firstName) {
             return null;
         }
@@ -135,13 +163,27 @@ trait IsProfileTrait
             return $value;
         }
 
+<<<<<<< HEAD
+        $user = $this->user;
+||||||| 6161e129d
+        $user = $this->user;
+        if ($user === null) {
+=======
         $user = $user;
+>>>>>>> feature/ralph-loop-implementation
         if (null === $user) {
             return null;
         }
         Assert::isInstanceOf($user, User::class);
 
+<<<<<<< HEAD
+        $lastName = $user->getAttribute('last_name');
+||||||| 6161e129d
+        $lastName = $user->getAttribute('last_name');
+        if (! \is_string($lastName) || $lastName === '') {
+=======
         $lastName = $user->$this->getAttribute('last_name');
+>>>>>>> feature/ralph-loop-implementation
         if (! \is_string($lastName) || '' === $lastName) {
             return null;
         }
@@ -158,7 +200,13 @@ trait IsProfileTrait
      */
     public function isSuperAdmin(): bool
     {
+<<<<<<< HEAD
+        if (null === $this->user) {
+||||||| 6161e129d
+        if ($this->user === null) {
+=======
         if (null === $user
+>>>>>>> feature/ralph-loop-implementation
             return false;
         }
 
@@ -172,7 +220,13 @@ trait IsProfileTrait
      */
     public function isNegateSuperAdmin(): bool
     {
+<<<<<<< HEAD
+        if (null === $this->user) {
+||||||| 6161e129d
+        if ($this->user === null) {
+=======
         if (null === $user
+>>>>>>> feature/ralph-loop-implementation
             return false;
         }
 
@@ -188,7 +242,15 @@ trait IsProfileTrait
      */
     public function toggleSuperAdmin(): void
     {
+<<<<<<< HEAD
+        $user = $this->user;
+||||||| 6161e129d
+        $user = $this->user;
+        if ($user === null) {
+            throw new Exception('['.__LINE__.']['.class_basename($this).']');
+=======
         $user = $user;
+>>>>>>> feature/ralph-loop-implementation
         if (null === $user) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
@@ -285,7 +347,14 @@ trait IsProfileTrait
     {
         return Attribute::make(
             get: function (): ?string {
+<<<<<<< HEAD
+                $user = $this->user;
+||||||| 6161e129d
+                $user = $this->user;
+                if ($user === null) {
+=======
                 $user = $user;
+>>>>>>> feature/ralph-loop-implementation
                 if (null === $user) {
                     return null;
                 }
