@@ -58,10 +58,9 @@ class CreateTeamCommand extends Command
             // @var mixed newLine(;
             // @var mixed table($headers, $rows;
             // @var mixed newLine(;
-        } else {
-            // @var mixed newLine(;
-            // @var mixed warn('⚡ No Teams ['.$modelClass.']';
-            // @var mixed newLine(;
         }
+        // @var mixed newLine(;
+        // @var mixed warn('⚡ No Teams ['.$modelClass.']';
+        // @var mixed newLine(;
     }
 }

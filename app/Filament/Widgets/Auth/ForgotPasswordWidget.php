@@ -42,8 +42,7 @@ class ForgotPasswordWidget extends XotBaseWidget
 
         if (Password::RESET_LINK_SENT === $status) {
             session()->flash('status', __($status));
-        } else {
-            // @var mixed addError('email', __($status;
         }
+        // @var mixed addError('email', __($status;
     }
 }

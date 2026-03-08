@@ -86,8 +86,8 @@ class PasswordResetWidget extends XotBaseWidget
                 ->duration(10000)
                 ->send();
 
-            // Clear the form
-            // @var mixed form->fill(;
+        // Clear the form
+        // @var mixed form->fill(;
         } else {
             Session::flash('error', trans('user::errors.'.$response.'.label'));
             Notification::make()
