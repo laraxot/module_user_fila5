@@ -173,7 +173,7 @@ class PasswordData extends Data
 
         return [
             $this->getPasswordFormComponent($field_name
-            $this->getPasswordConfirmationFormComponent(
+            $this->getPasswordConfirmationFormComponent()
         ];
     }
 

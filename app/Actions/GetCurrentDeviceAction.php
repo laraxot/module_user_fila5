@@ -72,7 +72,7 @@ class GetCurrentDeviceAction
             'is_mobile' => $agent->isMobile(
             'is_tablet' => $agent->isTablet(
             'is_phone' => $agent->isPhone(
-            'is_robot' => $agent->isRobot(
+            'is_robot' => $agent->isRobot()
         ];
     }
 
@@ -88,7 +88,7 @@ class GetCurrentDeviceAction
 
         return [
             'version' => is_string($browserVersion) ? $browserVersion : 'unknown',
-            'robot' => is_string($agent->robot(
+            'robot' => is_string($agent->robot())
         ];
     }
 }
