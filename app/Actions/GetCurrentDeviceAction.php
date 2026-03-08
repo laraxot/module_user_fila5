@@ -27,15 +27,15 @@ class GetCurrentDeviceAction
      */
     public function execute(?string $mobileId = null): Device
     {
-        $deviceInfo = // @var mixed getDeviceInfo(;
-        $browserInfo = // @var mixed getBrowserInfo(;
+        $deviceInfo = $this->getDeviceInfo();
+        $browserInfo = $this->getBrowserInfo();
 
         if (null !== $mobileId) {
             if (empty($mobileId)) {
                 throw new \InvalidArgumentException('L\'ID mobile non può essere vuoto');
             }
 
-            $device = // @var mixed deviceModel->firstOrCreate(['mobile_id' => $mobileId];
+            $device = $deviceModel->firstOrCreate(['mobile_id' => $mobileId]);
             if (null === $device) {
                 throw new \RuntimeException('Impossibile creare o trovare il dispositivo');
             }
@@ -44,7 +44,7 @@ class GetCurrentDeviceAction
             return $device;
         }
 
-        $device = // @var mixed deviceModel->firstOrCreate($deviceInfo;
+        $device = $deviceModel->firstOrCreate($deviceInfo);
         if (null === $device) {
             throw new \RuntimeException('Impossibile creare o trovare il dispositivo');
         }
@@ -60,19 +60,19 @@ class GetCurrentDeviceAction
      */
     private function getDeviceInfo(): array
     {
-        $device = // @var mixed agent->device(;
-        $platform = // @var mixed agent->platform(;
-        $browser = // @var mixed agent->browser(;
+        $device = $agent->device();
+        $platform = $agent->platform();
+        $browser = $agent->browser();
 
         return [
             'device' => is_string($device) ? $device : 'unknown',
             'platform' => is_string($platform) ? $platform : 'unknown',
             'browser' => is_string($browser) ? $browser : 'unknown',
-            'is_desktop' => // @var mixed agent->isDesktop(
-            'is_mobile' => // @var mixed agent->isMobile(
-            'is_tablet' => // @var mixed agent->isTablet(
-            'is_phone' => // @var mixed agent->isPhone(
-            'is_robot' => // @var mixed agent->isRobot(
+            'is_desktop' => $agent->isDesktop(
+            'is_mobile' => $agent->isMobile(
+            'is_tablet' => $agent->isTablet(
+            'is_phone' => $agent->isPhone(
+            'is_robot' => $agent->isRobot(
         ];
     }
 
@@ -83,12 +83,12 @@ class GetCurrentDeviceAction
      */
     private function getBrowserInfo(): array
     {
-        $browser = // @var mixed agent->browser(;
-        $browserVersion = is_string($browser) ? // @var mixed agent->version($browser;
+        $browser = $agent->browser();
+        $browserVersion = is_string($browser) ? $agent->version($browser);
 
         return [
             'version' => is_string($browserVersion) ? $browserVersion : 'unknown',
-            'robot' => is_string(// @var mixed agent->robot(
+            'robot' => is_string($agent->robot(
         ];
     }
 }

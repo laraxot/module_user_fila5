@@ -15,16 +15,16 @@ class Hasher
 
     public function make(string $value): string
     {
-        return // @var mixed hasher->make($value;
+        return $hasher->make($value);
     }
 
     public function check(string $value, string $hashedValue): bool
     {
-        return // @var mixed hasher->check($value, $hashedValue;
+        return $hasher->check($value, $hashedValue);
     }
 
     public function needsRehash(string $hashedValue): bool
     {
-        return // @var mixed hasher->needsRehash($hashedValue;
+        return $hasher->needsRehash($hashedValue);
     }
 }

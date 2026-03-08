@@ -34,7 +34,7 @@ trait HasAuthenticationLogTrait
      */
     public function authentications(): MorphMany
     {
-        return // @var mixed morphMany(AuthenticationLog::class, 'authenticatable';
+        return $this->morphMany(AuthenticationLog::class, 'authenticatable');
     }
 
     /**
@@ -44,7 +44,7 @@ trait HasAuthenticationLogTrait
      */
     public function latestAuthentication(): MorphOne
     {
-        return // @var mixed morphOne(AuthenticationLog::class, 'authenticatable';
+        return $this->morphOne(AuthenticationLog::class, 'authenticatable');
     }
 
     /**
@@ -65,7 +65,7 @@ trait HasAuthenticationLogTrait
     public function lastLoginAt(): ?Carbon
     {
         /** @var AuthenticationLog|null $auth */
-        $auth = // @var mixed authentications(;
+        $auth = $this->authentications();
 
         return null !== $auth ? $auth->login_at : null;
     }
@@ -78,7 +78,7 @@ trait HasAuthenticationLogTrait
     public function lastSuccessfulLoginAt(): ?Carbon
     {
         /** @var AuthenticationLog|null $auth */
-        $auth = // @var mixed authentications(;
+        $auth = $this->authentications();
 
         return null !== $auth ? $auth->login_at : null;
     }
@@ -91,7 +91,7 @@ trait HasAuthenticationLogTrait
     public function lastLoginIp(): ?string
     {
         /** @var AuthenticationLog|null $auth */
-        $auth = // @var mixed authentications(;
+        $auth = $this->authentications();
 
         return null !== $auth ? $auth->ip_address : null;
     }
@@ -104,7 +104,7 @@ trait HasAuthenticationLogTrait
     public function lastSuccessfulLoginIp(): ?string
     {
         /** @var AuthenticationLog|null $auth */
-        $auth = // @var mixed authentications(;
+        $auth = $this->authentications();
 
         return null !== $auth ? $auth->ip_address : null;
     }
@@ -117,7 +117,7 @@ trait HasAuthenticationLogTrait
     public function previousLoginAt(): ?Carbon
     {
         /** @var AuthenticationLog|null $auth */
-        $auth = // @var mixed authentications(;
+        $auth = $this->authentications();
 
         return null !== $auth ? $auth->login_at : null;
     }
@@ -130,7 +130,7 @@ trait HasAuthenticationLogTrait
     public function previousLoginIp(): ?string
     {
         /** @var AuthenticationLog|null $auth */
-        $auth = // @var mixed authentications(;
+        $auth = $this->authentications();
 
         return null !== $auth ? $auth->ip_address : null;
     }
@@ -147,11 +147,11 @@ trait HasAuthenticationLogTrait
             $days = 0;
 
             // Count the logins for the current day.
-            $count = // @var mixed authentications(;
+            $count = $this->authentications();
 
             while ($count > 0) {
                 $date = $date->subDay();
-                $count = // @var mixed authentications(;
+                $count = $this->authentications();
                 ++$days;
             }
 

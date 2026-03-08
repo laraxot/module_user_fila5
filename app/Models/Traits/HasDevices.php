@@ -11,6 +11,6 @@ trait HasDevices
 {
     public function devices(): BelongsToMany
     {
-        return // @var mixed belongsToManyX(Device::class;
+        return $this->belongsToManyX(Device::class);
     }
 }

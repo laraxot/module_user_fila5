@@ -61,7 +61,7 @@ class LogoutWidget extends XotBaseWidget
      */
     public function mount(): void
     {
-        // @var mixed form->fill(;
+        $form->fill();
     }
 
     /**
@@ -103,23 +103,23 @@ class LogoutWidget extends XotBaseWidget
     public function logout(): void
     {
         try {
-            // @var mixed isLoggingOut = true;
+            $isLoggingOut = true;
 
             // Get the authenticated user before logging out
-            $user = // @var mixed getAuthenticatedUser(;
+            $user = $this->getAuthenticatedUser();
             if (null === $user) {
-                // @var mixed handleNoUserScenario(;
+                $this->handleNoUserScenario();
 
                 return;
             }
 
-            // @var mixed dispatchPreLogoutEvent($user;
-            // @var mixed performLogout(;
-            // @var mixed dispatchPostLogoutEvent(;
-            // @var mixed logLogoutSuccess($user;
-            // @var mixed redirectAfterLogout(;
+            $this->dispatchPreLogoutEvent($user);
+            $this->performLogout();
+            $this->dispatchPostLogoutEvent();
+            $this->logLogoutSuccess($user);
+            $this->redirectAfterLogout();
         } catch (\Throwable $e) {
-            // @var mixed handleLogoutError($e;
+            $this->handleLogoutError($e);
         }
     }
 
@@ -132,8 +132,8 @@ class LogoutWidget extends XotBaseWidget
     public function getFormActions(): array
     {
         return [
-            'logout' => // @var mixed getLogoutAction(
-            'cancel' => // @var mixed getCancelAction(
+            'logout' => $this->getLogoutAction(
+            'cancel' => $this->getCancelAction(
         ];
     }
 
@@ -147,7 +147,7 @@ class LogoutWidget extends XotBaseWidget
             ->color('danger')
             ->size('lg')
             ->extraAttributes(['class' => 'w-full justify-center'])
-            ->action(// @var mixed logout(...;
+            ->action($logout(...));
     }
 
     /**
@@ -160,7 +160,7 @@ class LogoutWidget extends XotBaseWidget
             ->color('gray')
             ->size('lg')
             ->extraAttributes(['class' => 'w-full justify-center mt-2'])
-            ->url(// @var mixed getLocalizedHomeUrl(;
+            ->url($getLocalizedHomeUrl());
     }
 
     /**
@@ -186,7 +186,7 @@ class LogoutWidget extends XotBaseWidget
      */
     protected function handleNoUserScenario(): void
     {
-        // @var mixed isLoggingOut = false;
+        $isLoggingOut = false;
         Log::warning('Logout attempted with no authenticated user');
     }
 
@@ -232,7 +232,7 @@ class LogoutWidget extends XotBaseWidget
      */
     protected function redirectAfterLogout(): void
     {
-        $redirect = redirect(// @var mixed getLocalizedHomeUrl(;
+        $redirect = redirect($getLocalizedHomeUrl());
 
         $redirect->send();
         exit;
@@ -250,7 +250,7 @@ class LogoutWidget extends XotBaseWidget
             'trace' => $e->getTraceAsString(),
         ]);
 
-        // @var mixed isLoggingOut = false;
+        $isLoggingOut = false;
         Session::flash('error', __('user::auth.logout_error'));
     }
 

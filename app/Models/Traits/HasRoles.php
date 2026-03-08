@@ -18,7 +18,7 @@ trait HasRoles
      */
     public function roles(): BelongsToMany
     {
-        return // @var mixed belongsToMany(Role::class, 'model_has_roles', 'model_id', 'role_id'
+        return $this->belongsToMany(Role::class, 'model_has_roles', 'model_id', 'role_id'
             'model_type',
             self::class,
         );
@@ -34,12 +34,12 @@ trait HasRoles
         }
 
         if (is_string($roles)) {
-            return // @var mixed roles->contains('name', $roles;
+            return $roles->contains('name', $roles);
         }
 
         if (is_array($roles)) {
             foreach ($roles as $role) {
-                if (// @var mixed hasRole($role
+                if ($hasRole($role
                     return true;
                 }
             }
@@ -47,6 +47,6 @@ trait HasRoles
             return false;
         }
 
-        return ! is_null($roles) && // @var mixed roles->contains('id', $roles->id;
+        return ! is_null($roles) && $roles->contains('id', $roles->id);
     }
 }

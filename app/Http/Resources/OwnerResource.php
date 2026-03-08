@@ -22,9 +22,9 @@ final class OwnerResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'id' => // @var mixed id,
-            'name' => // @var mixed name,
-            'email' => // @var mixed email,
+            'id' => $id,
+            'name' => $name,
+            'email' => $email,
         ];
     }
 }

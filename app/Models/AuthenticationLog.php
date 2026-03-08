@@ -77,8 +77,8 @@ class AuthenticationLog extends BaseModel
 
     // public function __construct(array $attributes = [])
     // {
-    // if (! isset(// @var mixed connection
-    //    // @var mixed setConnection(config('authentication-log.db_connection';
+    // if (! isset($connection
+    //    $this->setConnection(config('authentication-log.db_connection'));
     // }
 
     //    parent::__construct($attributes);
@@ -91,7 +91,7 @@ class AuthenticationLog extends BaseModel
 
     public function authenticatable(): MorphTo
     {
-        return // @var mixed morphTo(;
+        return $this->morphTo();
     }
 
     /** @return array<string, string> */

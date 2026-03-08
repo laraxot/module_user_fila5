@@ -67,8 +67,8 @@ class DeviceData extends Data
 
     public function getSynchronizationId(string $apiName): string
     {
-        if (null !== // @var mixed synchronizationId
-            return // @var mixed synchronizationId;
+        if (null !== $synchronizationId
+            return $synchronizationId;
         }
 
         $synchronizationClass = config('morph_map.synchronization');
@@ -84,20 +84,20 @@ class DeviceData extends Data
         $synchronization = $synchronizationClass::create([
             // $synchronization = Synchronization::create([
             'user_id' => auth()->id(),
-            'mobile_device_id' => // @var mixed deviceId,
-            'application' => // @var mixed application ?? 'No-Set',
-            'application_version' => // @var mixed appVersion ?? 'No-Set',
+            'mobile_device_id' => $deviceId,
+            'application' => $application ?? 'No-Set',
+            'application_version' => $appVersion ?? 'No-Set',
             'api_name' => $apiName,
             'called_at' => Carbon::now(),
             // fulfilled_at
         ]);
         Assert::object($synchronization);
 
-        $syncId = $synchronization->getAttribute('id');
+        $syncId = $synchronization->$this->getAttribute('id');
         Assert::string($syncId, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
-        // @var mixed synchronizationId = $syncId;
+        $synchronizationId = $syncId;
 
-        return // @var mixed synchronizationId;
+        return $synchronizationId;
     }
 
     /*

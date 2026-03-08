@@ -20,7 +20,7 @@ class LogRegistrationActionTest extends TestCase
         $action = new LogRegistrationAction();
         $action->execute($user);
 
-        // @var mixed assertTrue(true;
+        $this->assertTrue(true);
     }
 
     #[Test]
@@ -32,7 +32,7 @@ class LogRegistrationActionTest extends TestCase
         $action = new LogRegistrationAction();
         $action->execute($user, ['referral' => 'newsletter', 'source' => 'landing']);
 
-        // @var mixed assertTrue(true;
+        $this->assertTrue(true);
     }
 
     #[Test]
@@ -49,6 +49,6 @@ class LogRegistrationActionTest extends TestCase
         $action->execute($standardUser);
         $action->execute($adminUser);
 
-        // @var mixed assertTrue(true;
+        $this->assertTrue(true);
     }
 }

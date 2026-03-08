@@ -68,10 +68,10 @@ $component = new class extends Component {
             Assert::notNull($user, 'User must be authenticated');
             Assert::isInstanceOf($user, User::class);
 
-            // @var mixed first_name = (string;
-            // @var mixed last_name = (string;
-            // @var mixed email = (string;
-            // @var mixed user_id = (string;
+            $first_name = (string);
+            $last_name = (string);
+            $email = (string);
+            $user_id = (string);
 
         } catch (\Exception $e) {
             Log::error('Profile mount failed', ['error' => $e->getMessage()]);
@@ -81,10 +81,10 @@ $component = new class extends Component {
 
     public function updateProfile(): void
     {
-        $validated = // @var mixed validate([
+        $validated = $this->validate([
             'first_name' => ['required', 'string', 'max:100'],
             'last_name' => ['required', 'string', 'max:100'],
-            'email' => ['required', 'email', 'max:255', Rule::unique('users')->ignore(// @var mixed user_id
+            'email' => ['required', 'email', 'max:255', Rule::unique('users')->ignore($user_id
         ]);
 
         /** @var User $user */
@@ -96,22 +96,22 @@ $component = new class extends Component {
 
     public function updatePassword(): void
     {
-        // @var mixed validate([
+        $this->validate([
             'current_password' => ['required', 'current_password'],
             'password' => ['required', 'min:8', 'confirmed'],
         ]);
 
         /** @var User $user */
         $user = Auth::user();
-        $user->update(['password' => Hash::make(// @var mixed password;
+        $user->update(['password' => Hash::make($password));
 
-        // @var mixed reset(['current_password', 'password', 'password_confirmation'];
+        $this->reset(['current_password', 'password', 'password_confirmation']);
         session()->flash('status', 'Password updated successfully.');
     }
 
     public function deleteAccount(): \Illuminate\Http\RedirectResponse
     {
-        // @var mixed validate(['delete_password' => ['required', 'current_password']];
+        $this->validate(['delete_password' => ['required', 'current_password']]);
 
         /** @var User $user */
         $user = Auth::user();

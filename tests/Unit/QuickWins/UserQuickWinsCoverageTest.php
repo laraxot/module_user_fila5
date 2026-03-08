@@ -39,7 +39,7 @@ describe('User quick wins coverage', function (): void {
 
     it('returns default option plus team options', function (): void {
         $user = User::factory()->create();
-        // @var mixed actingAs($user;
+        $this->actingAs($user);
 
         $team1 = Team::factory()->create(['user_id' => $user->id, 'name' => 'Team One']);
         $team2 = Team::factory()->create(['user_id' => $user->id, 'name' => 'Team Two']);

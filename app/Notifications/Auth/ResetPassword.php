@@ -15,7 +15,7 @@ class ResetPassword extends BaseNotification
 
     protected function resetUrl($notifiable): string
     {
-        return // @var mixed url;
+        return $url;
     }
 
     /**

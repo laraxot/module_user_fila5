@@ -54,12 +54,12 @@ class ChangeTypeCommand extends Command
         $user = XotData::make()->getUserByEmail($email);
 
         if (! $user) {
-            // @var mixed error("User with email '{$email}' not found.";
+            $this->error("User with email '{$email}' not found.");
 
             return;
         }
         if (! method_exists($user, 'getChildTypes')) {
-            // @var mixed error('User model does not have childTypes method.';
+            $this->error('User model does not have childTypes method.');
 
             return;
         }
@@ -82,7 +82,7 @@ class ChangeTypeCommand extends Command
         }
 
         Assert::string($typeLabel);
-        // @var mixed info('Current user type: '.$typeLabel;
+        $this->info('Current user type: '.$typeLabel);
 
         $typeClass = $xot->getUserChildTypeClass();
         /** @var array<string, string> */
@@ -121,6 +121,6 @@ class ChangeTypeCommand extends Command
         } else {
             $labelString = (string) $label;
         }
-        // @var mixed info("User type changed to '{$labelString}' for {$email}";
+        $this->info("User type changed to '{$labelString}' for {$email}");
     }
 }

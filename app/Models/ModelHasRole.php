@@ -76,7 +76,7 @@ class ModelHasRole extends BaseMorphPivot
         parent::__construct($attributes);
         $table = config('permission.table_names.model_has_roles', 'model_has_role');
         if (\is_string($table)) {
-            // @var mixed setTable($table;
+            $this->setTable($table);
         }
     }
 

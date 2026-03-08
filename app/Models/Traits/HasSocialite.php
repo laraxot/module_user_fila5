@@ -16,12 +16,12 @@ trait HasSocialite
      */
     public function socialiteUsers(): HasMany
     {
-        return // @var mixed hasMany(SocialiteUser::class;
+        return $this->hasMany(SocialiteUser::class);
     }
 
     public function getProviderField(string $provider, string $field): string
     {
-        $socialiteUser = // @var mixed socialiteUsers(;
+        $socialiteUser = $this->socialiteUsers();
         if (null === $socialiteUser) {
             throw new \Exception('SocialiteUser not found');
         }

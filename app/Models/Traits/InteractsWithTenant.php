@@ -30,16 +30,16 @@ trait InteractsWithTenant
      */
     public function tenant(): BelongsTo
     {
-        $tenant = // @var mixed getTenant(;
+        $tenant = $this->getTenant();
         if (null === $tenant) {
-            // @var mixed loadTenantFromSession(;
-            $tenant = // @var mixed getTenant(;
+            $this->loadTenantFromSession();
+            $tenant = $this->getTenant();
         }
 
         $tenantClass = config('tenant.tenant_model', Tenant::class);
 
         // @phpstan-ignore argument.type, argument.templateType
-        return // @var mixed belongsTo($tenantClass, 'tenant_id';
+        return $this->belongsTo($tenantClass, 'tenant_id');
     }
 
     /**
@@ -47,7 +47,7 @@ trait InteractsWithTenant
      */
     protected function getTenant(): ?Model
     {
-        return // @var mixed currentTenant;
+        return $currentTenant;
     }
 
     /**
@@ -56,10 +56,10 @@ trait InteractsWithTenant
     protected function loadTenantFromSession(): void
     {
         try {
-            // @var mixed currentTenant = Filament::getTenant(;
+            $currentTenant = Filament::getTenant();
         } catch (\Throwable $e) {
             // Se Filament non è disponibile, lascia il tenant come null
-            // @var mixed currentTenant = null;
+            $currentTenant = null;
         }
     }
 
@@ -97,7 +97,7 @@ trait InteractsWithTenant
         }
 
         if (null !== $value) {
-            // @var mixed attributes['tenant_id'] = $value;
+            $attributes['tenant_id'] = $value;
         }
     }
 
@@ -106,10 +106,10 @@ trait InteractsWithTenant
      */
     protected function applyTenantScope(): void
     {
-        $tenant = // @var mixed getTenant(;
+        $tenant = $this->getTenant();
         if (null === $tenant) {
-            // @var mixed loadTenantFromSession(;
-            $tenant = // @var mixed getTenant(;
+            $this->loadTenantFromSession();
+            $tenant = $this->getTenant();
         }
 
         if (null !== $tenant) {

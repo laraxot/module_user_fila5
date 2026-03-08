@@ -25,7 +25,7 @@ new class extends Component {
 
         event(new Verified($user));
 
-        // @var mixed dispatch('resent';
+        $this->dispatch('resent');
         session()->flash('resent');
     }
 };

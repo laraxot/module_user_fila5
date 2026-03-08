@@ -1,5 +1,5 @@
 <x-filament-panels::page>
     <x-filament::section>
-        {{ // @var mixed getFiltersForm(
+        {{ $this->getFiltersForm(
     </x-filament::section>
 </x-filament-panels::page>

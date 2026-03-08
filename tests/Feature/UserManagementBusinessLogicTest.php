@@ -12,6 +12,6 @@ class UserManagementBusinessLogicTest extends TestCase
     public function userManagementPlaceholder(): void
     {
         // Placeholder - actual tests require database setup
-        // @var mixed assertTrue(true;
+        $this->assertTrue(true);
     }
 }

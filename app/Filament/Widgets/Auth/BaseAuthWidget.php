@@ -35,7 +35,7 @@ abstract class BaseAuthWidget extends XotBaseWidget
     protected function getViewData(): array
     {
         return [
-            'form' => // @var mixed getFormSchema(
+            'form' => $this->getFormSchema(
         ];
     }
 }

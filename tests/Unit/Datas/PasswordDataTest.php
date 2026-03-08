@@ -9,7 +9,7 @@ use Spatie\LaravelData\Data;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    // @var mixed passwordData = new PasswordData(
+    $passwordData = new PasswordData(
         otp_expiration_minutes: 10,
         otp_length: 8,
         expires_in: 120,
@@ -25,18 +25,18 @@ beforeEach(function (): void {
 });
 
 test('password data can be created with custom parameters', function (): void {
-    expect(// @var mixed passwordData;
-    expect(// @var mixed passwordData->otp_expiration_minutes;
-    expect(// @var mixed passwordData->otp_length;
-    expect(// @var mixed passwordData->expires_in;
-    expect(// @var mixed passwordData->min;
-    expect(// @var mixed passwordData->mixedCase;
-    expect(// @var mixed passwordData->letters;
-    expect(// @var mixed passwordData->numbers;
-    expect(// @var mixed passwordData->symbols;
-    expect(// @var mixed passwordData->uncompromised;
-    expect(// @var mixed passwordData->compromisedThreshold;
-    expect(// @var mixed passwordData->failMessage;
+    expect($passwordData);
+    expect($passwordData->otp_expiration_minutes);
+    expect($passwordData->otp_length);
+    expect($passwordData->expires_in);
+    expect($passwordData->min);
+    expect($passwordData->mixedCase);
+    expect($passwordData->letters);
+    expect($passwordData->numbers);
+    expect($passwordData->symbols);
+    expect($passwordData->uncompromised);
+    expect($passwordData->compromisedThreshold);
+    expect($passwordData->failMessage);
 });
 
 test('password data has default values', function (): void {
@@ -56,7 +56,7 @@ test('password data has default values', function (): void {
 });
 
 test('password data extends spatie data class', function (): void {
-    expect(// @var mixed passwordData;
+    expect($passwordData);
 });
 
 test('password data has correct properties', function (): void {

@@ -15,7 +15,7 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         // -- CREATE --
-        // @var mixed tableCreate(static function (Blueprint $table
+        $this->tableCreate(static function (Blueprint $table
             $table->uuid('id')->primary();
             $table->string('user_id', 36)->index()->nullable();
             $table->string('type')->index()->nullable();
@@ -44,29 +44,29 @@ return new class extends XotBaseMigration {
         });
 
         // -- UPDATE --
-        // @var mixed tableUpdate(function (Blueprint $table
-            if (! // @var mixed hasColumn('user_id'
+        $this->tableUpdate(function (Blueprint $table
+            if (! $this->hasColumn('user_id'
                 $table->string('user_id', 36)->index()->nullable()->after('id');
             }
-            if (! // @var mixed hasColumn('email'
+            if (! $this->hasColumn('email'
                 $table->string('email')->nullable()->after('last_name');
             }
-            if (! // @var mixed hasColumn('phone'
+            if (! $this->hasColumn('phone'
                 $table->string('phone')->nullable()->after('email');
             }
-            if (! // @var mixed hasColumn('avatar'
+            if (! $this->hasColumn('avatar'
                 $table->string('avatar')->nullable();
             }
-            if (! // @var mixed hasColumn('timezone'
+            if (! $this->hasColumn('timezone'
                 $table->string('timezone')->nullable();
             }
-            if (! // @var mixed hasColumn('locale'
+            if (! $this->hasColumn('locale'
                 $table->string('locale')->nullable();
             }
-            if (! // @var mixed hasColumn('preferences'
+            if (! $this->hasColumn('preferences'
                 $table->json('preferences')->nullable();
             }
-            if (! // @var mixed hasColumn('status'
+            if (! $this->hasColumn('status'
                 $table->string('status')->nullable();
             }
         });

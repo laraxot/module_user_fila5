@@ -43,7 +43,7 @@ class Login extends Component implements HasActions, HasForms
      */
     public function mount(): void
     {
-        // @var mixed form->fill(;
+        $form->fill();
     }
 
     /**
@@ -52,7 +52,7 @@ class Login extends Component implements HasActions, HasForms
     public function form(Schema $schema): Schema
     {
         return $schema
-            ->components(// @var mixed getFormSchema(
+            ->components($getFormSchema(
             ->statePath('data');
     }
 
@@ -65,7 +65,7 @@ class Login extends Component implements HasActions, HasForms
     {
         try {
             /** @var array{email: string, password: string, remember?: bool} $data */
-            $data = // @var mixed form->getState(;
+            $data = $form->getState();
 
             // Estrai remember dal data array e assicurati che sia un booleano
             $remember = $data['remember'] ?? false;
@@ -77,12 +77,12 @@ class Login extends Component implements HasActions, HasForms
                 session()->regenerate();
 
                 // Redirect intelligente basato sui ruoli dell'utente
-                return // @var mixed getRedirectUrl(;
+                return $this->getRedirectUrl();
             }
 
-            // @var mixed addError('data.email', __('Le credenziali fornite non sono corrette..';
+            $this->addError('data.email', __('Le credenziali fornite non sono corrette..'));
         } catch (\Exception $e) {
-            // @var mixed addError('data.email', __('Si è verificato un errore durante il login. Riprova più tardi.';
+            $this->addError('data.email', __('Si è verificato un errore durante il login. Riprova più tardi.'));
             report($e);
         }
     }
@@ -113,7 +113,7 @@ class Login extends Component implements HasActions, HasForms
                 ->suffixIcon('heroicon-m-envelope')
                 ->autofocus()
                 ->live()
-                ->afterStateUpdated(fn ($_state) => // @var mixed validateOnly('email'
+                ->afterStateUpdated(fn ($_state) => $this->validateOnly('email'
                 ->dehydrated(),
 
             TextInput::make('password')

@@ -16,7 +16,7 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         // -- CREATE --
-        // @var mixed tableCreate(static function (Blueprint $table
+        $this->tableCreate(static function (Blueprint $table
             $table->id();
             $table->uuid('uuid')->nullable()->index();
             $table->string('user_id', 36)->nullable()->index();
@@ -25,25 +25,25 @@ return new class extends XotBaseMigration {
             $table->boolean('personal_team')->default(false);
         });
         // -- UPDATE --
-        // @var mixed tableUpdate(function (Blueprint $table
+        $this->tableUpdate(function (Blueprint $table
             // MySqlConnection::getDoctrineSchemaManager does not exist.
             // MySqlConnection::getSchemaGrammar() ?
-            // if (// @var mixed hasIndexName('team_invitations_team_id_foreign'
+            // if ($hasIndexName('team_invitations_team_id_foreign'
             //    $table->dropForeign('team_invitations_team_id_foreign');
             // }
-            if (// @var mixed hasColumn('uuid'
+            if ($hasColumn('uuid'
                 $table->uuid('uuid')->nullable()->change();
             }
-            if (// @var mixed hasColumn('personal_team'
+            if ($hasColumn('personal_team'
                 $table->boolean('personal_team')->default(false)->change();
             }
 
-            if (! // @var mixed hasColumn('code'
+            if (! $this->hasColumn('code'
                 $table->string('code', 36)->nullable()->index();
             }
-            // @var mixed updateTimestamps($table, true;
+            $this->updateTimestamps($table, true);
 
-            // // @var mixed updateUser($table;
+            // $this->updateUser($table);
         });
     }
 };

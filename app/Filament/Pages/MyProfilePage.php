@@ -48,7 +48,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
 
     public function mount(): void
     {
-        // @var mixed fillForms(;
+        $this->fillForms();
     }
 
     public function editProfileForm(Schema $schema): Schema
@@ -66,7 +66,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
                             ->unique(ignoreRecord: true),
                     ]),
             ])
-            ->model(// @var mixed getUser(
+            ->model($getUser(
             ->statePath('profileData');
     }
 
@@ -107,7 +107,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
                             ->same('new_password'),
                     ]),
             ])
-            ->model(// @var mixed getUser(
+            ->model($getUser(
             ->statePath('passwordData');
     }
 
@@ -166,20 +166,20 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     public function updateProfile(): void
     {
         try {
-            $data = // @var mixed editProfileForm->getState(;
+            $data = $editProfileForm->getState();
 
-            // @var mixed handleRecordUpdate($this->getUser(;
+            $this->handleRecordUpdate($this->getUser());
         } catch (Halt $exception) {
             return;
         }
 
-        // @var mixed sendSuccessNotification(;
+        $this->sendSuccessNotification();
     }
 
     public function updatePassword(): void
     {
         try {
-            $data = // @var mixed editPasswordForm->getState(;
+            $data = $editPasswordForm->getState();
 
             if (isset($data['new_password'])) {
                 $data['password'] = $data['new_password'];
@@ -190,7 +190,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
                 unset($data['password_confirmation']);
             }
 
-            // @var mixed handleRecordUpdate($this->getUser(;
+            $this->handleRecordUpdate($this->getUser());
         } catch (Halt $exception) {
             return;
         }
@@ -203,9 +203,9 @@ class MyProfilePage extends XotBasePage implements HasSchemas
                 ]);
         }
 
-        // @var mixed editPasswordForm->fill(;
+        $editPasswordForm->fill();
 
-        // @var mixed sendSuccessNotification(;
+        $this->sendSuccessNotification();
     }
 
     protected function getForms(): array
@@ -219,10 +219,10 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     protected function fillForms(): void
     {
         /** @var array<string, mixed> $data */
-        $data = // @var mixed getUser(;
+        $data = $this->getUser();
 
-        // @var mixed editProfileForm->fill($data;
-        // @var mixed editPasswordForm->fill(;
+        $editProfileForm->fill($data);
+        $editPasswordForm->fill();
     }
 
     protected function getFormActions(): array
@@ -236,7 +236,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
      * public function update()
      * {
      * auth()->user()->update(
-     * // @var mixed form->getState(
+     * $form->getState(
      * );
      *
      * Notification::make()

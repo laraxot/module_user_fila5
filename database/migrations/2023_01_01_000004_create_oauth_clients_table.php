@@ -9,7 +9,7 @@ use Modules\Xot\Datas\XotData;
 return new class extends XotBaseMigration {
     public function up(): void
     {
-        // @var mixed tableCreate(static function (Blueprint $table
+        $this->tableCreate(static function (Blueprint $table
             // $table->bigIncrements('id');
             $table->uuid('id')->primary();
             // $table->unsignedBigInteger('user_id')->nullable()->index();
@@ -24,12 +24,12 @@ return new class extends XotBaseMigration {
         });
 
         // -- UPDATE --
-        // @var mixed tableUpdate(function (Blueprint $table
-            if ('string' !== // @var mixed getColumnType('id'
+        $this->tableUpdate(function (Blueprint $table
+            if ('string' !== $this->getColumnType('id'
                 $table->uuid('id')->change(); // is  just primary
             }
-            // @var mixed updateTimestamps($table, false;
-            // @var mixed updateUser($table;
+            $this->updateTimestamps($table, false);
+            $this->updateUser($table);
         });
     }
 };

@@ -15,7 +15,7 @@ beforeEach(function (): void {
     $factoryRequiredCols = ['name', 'type', 'token', 'is_active'];
     $missingCols = array_diff($factoryRequiredCols, $tableColumns);
     if (! empty($missingCols)) {
-        // @var mixed markTestSkipped('Device factory uses columns not in devices table: '.implode(', ', $missingCols;
+        $this->markTestSkipped('Device factory uses columns not in devices table: '.implode(', ', $missingCols));
     }
 });
 
@@ -25,7 +25,7 @@ test('can create device with minimal data', function (): void {
         'platform' => 'iOS',
     ]);
 
-    // @var mixed assertDatabaseHas('devices', [
+    $this->assertDatabaseHas('devices', [
         'id' => $device->id,
         'device' => 'iPhone',
         'platform' => 'iOS',
@@ -51,7 +51,7 @@ test('can create device with all fields', function (): void {
 
     $device = Device::factory()->create($deviceData);
 
-    // @var mixed assertDatabaseHas('devices', [
+    $this->assertDatabaseHas('devices', [
         'id' => $device->id,
         'uuid' => '550e8400-e29b-41d4-a716-446655440000',
         'mobile_id' => 'mobile123',
@@ -76,13 +76,13 @@ test('device has soft deletes', function (): void {
 
     $device->delete();
 
-    // @var mixed assertSoftDeleted('devices', ['id' => $deviceId];
-    // @var mixed assertDatabaseMissing('devices', ['id' => $deviceId];
+    $this->assertSoftDeleted('devices', ['id' => $deviceId]);
+    $this->assertDatabaseMissing('devices', ['id' => $deviceId]);
 });
 
 test('can restore soft deleted device', function (): void {
     if (! method_exists(Device::class, 'withTrashed')) {
-        // @var mixed markTestSkipped('SoftDeletes trait not present on Device model';
+        $this->markTestSkipped('SoftDeletes trait not present on Device model');
 
         return;
     }
@@ -91,13 +91,13 @@ test('can restore soft deleted device', function (): void {
     $deviceId = $device->id;
 
     $device->delete();
-    // @var mixed assertSoftDeleted('devices', ['id' => $deviceId];
+    $this->assertSoftDeleted('devices', ['id' => $deviceId]);
 
     /** @var Device $restoredDevice */
     $restoredDevice = Device::withTrashed()->find($deviceId);
     $restoredDevice->restore();
 
-    // @var mixed assertDatabaseHas('devices', ['id' => $deviceId];
+    $this->assertDatabaseHas('devices', ['id' => $deviceId]);
     expect($restoredDevice->deleted_at)->toBeNull();
 });
 
@@ -238,7 +238,7 @@ test('can update device', function (): void {
     $device = Device::factory()->create(['device' => 'Old Device']);
     $device->update(['device' => 'New Device']);
 
-    // @var mixed assertDatabaseHas('devices', [
+    $this->assertDatabaseHas('devices', [
         'id' => $device->id,
         'device' => 'New Device',
     ]);
@@ -255,7 +255,7 @@ test('can handle null values', function (): void {
         'robot' => null,
     ]);
 
-    // @var mixed assertDatabaseHas('devices', [
+    $this->assertDatabaseHas('devices', [
         'id' => $device->id,
         'mobile_id' => null,
         'browser' => null,

@@ -17,7 +17,7 @@ class TenantTest extends TestCase
             'name' => 'Test Tenant '.uniqid(),
         ]);
 
-        // @var mixed assertDatabaseHas('tenants', [
+        $this->assertDatabaseHas('tenants', [
             'id' => $tenant->id,
         ], 'user');
 
@@ -38,7 +38,7 @@ class TenantTest extends TestCase
 
         $tenant = Tenant::factory()->create($tenantData);
 
-        // @var mixed assertDatabaseHas('tenants', [
+        $this->assertDatabaseHas('tenants', [
             'id' => $tenant->id,
             'name' => 'Full Tenant '.$uid,
             'slug' => 'full-tenant-'.$uid,
@@ -49,7 +49,7 @@ class TenantTest extends TestCase
     public function testTenantHasSoftDeletes(): void
     {
         if (! method_exists(Tenant::class, 'withTrashed')) {
-            // @var mixed markTestSkipped('SoftDeletes trait not present on Tenant model';
+            $this->markTestSkipped('SoftDeletes trait not present on Tenant model');
         }
 
         $tenant = Tenant::factory()->create();
@@ -57,13 +57,13 @@ class TenantTest extends TestCase
 
         $tenant->delete();
 
-        // @var mixed assertSoftDeleted('tenants', ['id' => $tenantId];
+        $this->assertSoftDeleted('tenants', ['id' => $tenantId]);
     }
 
     public function testCanRestoreSoftDeletedTenant(): void
     {
         if (! method_exists(Tenant::class, 'withTrashed')) {
-            // @var mixed markTestSkipped('SoftDeletes trait not present on Tenant model';
+            $this->markTestSkipped('SoftDeletes trait not present on Tenant model');
 
             return;
         }
@@ -72,13 +72,13 @@ class TenantTest extends TestCase
         $tenantId = $tenant->id;
 
         $tenant->delete();
-        // @var mixed assertSoftDeleted('tenants', ['id' => $tenantId];
+        $this->assertSoftDeleted('tenants', ['id' => $tenantId]);
 
         /** @var Tenant $restoredTenant */
         $restoredTenant = Tenant::withTrashed()->find($tenantId);
         $restoredTenant->restore();
 
-        // @var mixed assertDatabaseHas('tenants', ['id' => $tenantId], 'user';
+        $this->assertDatabaseHas('tenants', ['id' => $tenantId], 'user');
         static::assertNull($restoredTenant->deleted_at);
     }
 
@@ -174,7 +174,7 @@ class TenantTest extends TestCase
 
         $tenant->update(['name' => 'New Name '.$uid]);
 
-        // @var mixed assertDatabaseHas('tenants', [
+        $this->assertDatabaseHas('tenants', [
             'id' => $tenant->id,
             'name' => 'New Name '.$uid,
         ], 'user');
@@ -189,7 +189,7 @@ class TenantTest extends TestCase
             'database' => null,
         ]);
 
-        // @var mixed assertDatabaseHas('tenants', [
+        $this->assertDatabaseHas('tenants', [
             'id' => $tenant->id,
         ], 'user');
 
@@ -252,7 +252,7 @@ class TenantTest extends TestCase
     public function testCanFindTenantsByTrialStatus(): void
     {
         if (! \Illuminate\Support\Facades\Schema::connection('user')->hasColumn('tenants', 'trial_ends_at')) {
-            // @var mixed markTestSkipped('trial_ends_at column does not exist in tenants table';
+            $this->markTestSkipped('trial_ends_at column does not exist in tenants table');
         }
 
         $uid = uniqid();
@@ -277,7 +277,7 @@ class TenantTest extends TestCase
     public function testCanFindTenantsBySettingsValue(): void
     {
         if (! \Illuminate\Support\Facades\Schema::connection('user')->hasColumn('tenants', 'settings')) {
-            // @var mixed markTestSkipped('settings column does not exist in tenants table';
+            $this->markTestSkipped('settings column does not exist in tenants table');
         }
 
         $uid = uniqid();
@@ -297,7 +297,7 @@ class TenantTest extends TestCase
 
             static::assertCount(1, $darkThemeTenants);
         } catch (\Throwable $e) {
-            // @var mixed markTestSkipped('Settings column query failed: '.$e->getMessage(;
+            $this->markTestSkipped('Settings column query failed: '.$e->getMessage());
         }
     }
 }

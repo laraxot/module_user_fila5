@@ -25,28 +25,28 @@ final class EmailDomainAnalyzer
         // if ($ssoUser === null) {
         //    throw new InvalidArgumentException('L\'utente SSO non può essere null');
         // }
-        // @var mixed ssoUser = $ssoUser;
+        $ssoUser = $ssoUser;
 
         return $this;
     }
 
     public function hasUnrecognizedDomain(): bool
     {
-        return ! // @var mixed hasFirstPartyDomain(;
+        return ! $this->hasFirstPartyDomain();
     }
 
     public function hasFirstPartyDomain(): bool
     {
-        if (! isset(// @var mixed ssoUser
+        if (! isset($ssoUser
             throw new \RuntimeException('L\'utente SSO non è stato impostato. Utilizzare setUser() prima di chiamare questo metodo.');
         }
 
-        $email = // @var mixed ssoUser->getEmail(;
+        $email = $ssoUser->getEmail();
         if (! is_string($email) || empty($email)) {
             return false;
         }
 
-        $domain = // @var mixed firstPartyDomain(;
+        $domain = $this->firstPartyDomain();
         if (null === $domain || empty($domain)) {
             return false;
         }
@@ -59,16 +59,16 @@ final class EmailDomainAnalyzer
 
     public function hasClientDomain(): bool
     {
-        if (! isset(// @var mixed ssoUser
+        if (! isset($ssoUser
             throw new \RuntimeException('L\'utente SSO non è stato impostato. Utilizzare setUser() prima di chiamare questo metodo.');
         }
 
-        $email = // @var mixed ssoUser->getEmail(;
+        $email = $ssoUser->getEmail();
         if (! is_string($email) || empty($email)) {
             return false;
         }
 
-        $clientEmailDomain = // @var mixed clientDomain(;
+        $clientEmailDomain = $this->clientDomain();
         if (null === $clientEmailDomain || empty($clientEmailDomain)) {
             return false;
         }
@@ -81,7 +81,7 @@ final class EmailDomainAnalyzer
 
     private function firstPartyDomain(): ?string
     {
-        $res = config(sprintf('services.%s.email_domains.first_party.tld', // @var mixed ssoProvider;
+        $res = config(sprintf('services.%s.email_domains.first_party.tld', $ssoProvider));
         if (! is_string($res) && null !== $res) {
             return null;
         }
@@ -91,7 +91,7 @@ final class EmailDomainAnalyzer
 
     private function clientDomain(): ?string
     {
-        $domain = config(sprintf('services.%s.email_domains.client.tld', // @var mixed ssoProvider;
+        $domain = config(sprintf('services.%s.email_domains.client.tld', $ssoProvider));
         if (! is_string($domain) && null !== $domain) {
             return null;
         }

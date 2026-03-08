@@ -74,7 +74,7 @@ abstract class BaseTeamUser extends BasePivot
         $userClass = XotData::make()->getUserClass();
 
         /* @var BelongsTo<\Illuminate\Database\Eloquent\Model&UserContract, $this> */
-        return // @var mixed belongsTo($userClass;
+        return $this->belongsTo($userClass);
     }
 
     /**
@@ -87,6 +87,6 @@ abstract class BaseTeamUser extends BasePivot
         $teamClass = XotData::make()->getTeamClass();
 
         /* @var BelongsTo<\Illuminate\Database\Eloquent\Model&TeamContract, $this> */
-        return // @var mixed belongsTo($teamClass;
+        return $this->belongsTo($teamClass);
     }
 }

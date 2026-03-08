@@ -87,7 +87,7 @@ test('can find role by team id', function (): void {
 test('can find role by uuid', function (): void {
     // Skip if uuid column doesn't exist in roles table
     if (! Schema::connection('user')->hasColumn('roles', 'uuid')) {
-        // @var mixed markTestSkipped('The roles table does not have a uuid column.';
+        $this->markTestSkipped('The roles table does not have a uuid column.');
 
         return;
     }

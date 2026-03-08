@@ -13,10 +13,10 @@ use Modules\User\Tests\TestCase;
 uses(TestCase::class);
 
 beforeEach(function () {
-    // @var mixed owner = User::factory(;
-    // @var mixed member = User::factory(;
-    // @var mixed team = Team::factory(
-        'user_id' => // @var mixed owner->id,
+    $owner = User::factory();
+    $member = User::factory();
+    $team = Team::factory(
+        'user_id' => $owner->id,
         'name' => 'Test Team',
     ]);
 });
@@ -25,7 +25,7 @@ describe('Team Creation and Management', function () {
     it('can create a team', function () {
         $slug = 'new-team-'.uniqid();
         $team = Team::factory()->create([
-            'user_id' => // @var mixed owner->id,
+            'user_id' => $owner->id,
             'name' => 'New Team',
             'slug' => $slug,
         ]);
@@ -34,37 +34,37 @@ describe('Team Creation and Management', function () {
             ->toBeInstanceOf(Team::class)
             ->name->toBe('New Team')
             ->slug->toBe($slug)
-            ->user_id->toBe(// @var mixed owner->id;
+            ->user_id->toBe($owner->id);
     });
 
     it('belongs to an owner', function () {
-        expect(// @var mixed team->owner;
+        expect($team->owner);
     });
 
     it('can have multiple teams per user', function () {
-        $team1 = Team::factory()->create(['user_id' => // @var mixed owner->id];
-        $team2 = Team::factory()->create(['user_id' => // @var mixed owner->id];
+        $team1 = Team::factory()->create(['user_id' => $owner->id]);
+        $team2 = Team::factory()->create(['user_id' => $owner->id]);
 
-        expect(// @var mixed owner->ownedTeams; // Including the one from beforeEach
+        expect($owner->ownedTeams); // Including the one from beforeEach
     });
 
     it('can update team information', function () {
-        // @var mixed team->update([
+        $team->update([
             'name' => 'Updated Team Name',
             'description' => 'Updated description',
         ]);
 
-        $fresh = // @var mixed team->fresh(;
+        $fresh = $team->fresh();
         expect($fresh)->name->toBe('Updated Team Name');
 
-        if (null !== $fresh->getAttribute('description')) {
+        if (null !== $fresh->$this->getAttribute('description')) {
             expect($fresh)->description->toBe('Updated description');
         }
     });
 
     it('can delete a team', function () {
-        $teamId = // @var mixed team->id;
-        // @var mixed team->delete(;
+        $teamId = $team->id;
+        $team->delete();
 
         expect(Team::find($teamId))->toBeNull();
     });
@@ -72,18 +72,18 @@ describe('Team Creation and Management', function () {
 
 describe('Team Membership', function () {
     it('can add members to team', function () {
-        // @var mixed team->users(;
+        $team->users();
 
-        expect(// @var mixed team->users->contains($this->member;
-        expect(// @var mixed member->teams->contains($this->team;
+        expect($team->users->contains($this->member));
+        expect($member->teams->contains($this->team));
     });
 
     it('can remove members from team', function () {
-        // @var mixed team->users(;
-        expect(// @var mixed team->users->contains($this->member;
+        $team->users();
+        expect($team->users->contains($this->member));
 
-        // @var mixed team->users(;
-        expect(// @var mixed team->fresh(;
+        $team->users();
+        expect($team->fresh());
     });
 
     it('can have multiple members', function () {
@@ -91,35 +91,35 @@ describe('Team Membership', function () {
         $member2 = User::factory()->create();
         $member3 = User::factory()->create();
 
-        // @var mixed team->users(;
+        $team->users();
 
-        expect(// @var mixed team->users;
+        expect($team->users);
     });
 
     it('can check if user is team member', function () {
-        // @var mixed team->users(;
+        $team->users();
 
-        expect(// @var mixed team->hasUser($this->member;
+        expect($team->hasUser($this->member));
         // Owner is usually considered a user/member in hasUser logic
-        expect(// @var mixed team->hasUser($this->owner;
+        expect($team->hasUser($this->owner));
     });
 
     it('can get team membership with pivot data', function () {
-        // @var mixed team->users(
+        $team->users(
             'role' => 'editor',
         ]);
 
-        $user = // @var mixed team
+        $user = $team
             ->users()
-            ->where('users.id', // @var mixed member->id
+            ->where('users.id', $member->id
             ->first();
 
         expect($user)->not->toBeNull();
         // Verify the user was attached with the correct role via the pivot table
         $pivotRole = Illuminate\Support\Facades\DB::connection('user')
             ->table('team_user')
-            ->where('team_id', // @var mixed team->id
-            ->where('user_id', // @var mixed member->id
+            ->where('team_id', $team->id
+            ->where('user_id', $member->id
             ->value('role');
         expect($pivotRole)->toBe('editor');
     });
@@ -127,42 +127,42 @@ describe('Team Membership', function () {
 
 describe('User Team Relationship', function () {
     it('user can belong to multiple teams', function () {
-        $team1 = Team::factory()->create(['user_id' => // @var mixed owner->id];
-        $team2 = Team::factory()->create(['user_id' => // @var mixed owner->id];
+        $team1 = Team::factory()->create(['user_id' => $owner->id]);
+        $team2 = Team::factory()->create(['user_id' => $owner->id]);
 
-        // @var mixed member->teams(;
+        $member->teams();
 
-        expect(// @var mixed member->teams;
+        expect($member->teams);
     });
 
     it('user can switch current team', function () {
-        // @var mixed member->teams(;
-        // @var mixed member->update(['current_team_id' => $this->team->id];
+        $member->teams();
+        $member->update(['current_team_id' => $this->team->id]);
 
-        expect(// @var mixed member->fresh(;
-        expect(// @var mixed member->currentTeam->id;
+        expect($member->fresh());
+        expect($member->currentTeam->id);
     });
 
     it('user can leave a team', function () {
-        // @var mixed member->teams(;
-        expect(// @var mixed member->teams->contains($this->team;
+        $member->teams();
+        expect($member->teams->contains($this->team));
 
-        // @var mixed member->teams(;
-        expect(// @var mixed member->fresh(;
+        $member->teams();
+        expect($member->fresh());
     });
 
     it('can get all team users for a user', function () {
         $teammate1 = User::factory()->create();
         $teammate2 = User::factory()->create();
 
-        // @var mixed team->users(;
+        $team->users();
 
         // Verify the team has all the expected users via direct query
-        $teamUserIds = // @var mixed team->users(;
+        $teamUserIds = $team->users();
 
         expect(in_array($teammate1->id, $teamUserIds, true))->toBeTrue();
         expect(in_array($teammate2->id, $teamUserIds, true))->toBeTrue();
-        expect(in_array(// @var mixed member->id, $teamUserIds, true;
+        expect(in_array($member->id, $teamUserIds, true));
     });
 });
 
@@ -173,7 +173,7 @@ describe('Team Invitations', function () {
         Team::factory()->create(['slug' => $slug]);
 
         // Act & Assert
-        // @var mixed expectException(QueryException::class;
+        $this->expectException(QueryException::class);
 
         Team::create([
             'name' => 'Another Team',
@@ -185,36 +185,36 @@ describe('Team Invitations', function () {
     it('can create team invitations', function () {
         $email = 'invite-'.uniqid().'@example.com';
         $invitation = TeamInvitation::factory()->create([
-            'team_id' => // @var mixed team->id,
+            'team_id' => $team->id,
             'email' => $email,
             'role' => 'member',
         ]);
 
         expect($invitation)
             ->toBeInstanceOf(TeamInvitation::class)
-            ->team_id->toBe(// @var mixed team->id
+            ->team_id->toBe($team->id
             ->email->toBe($email)
             ->role->toBe('member');
     });
 
     it('can accept team invitations', function () {
         $invitation = TeamInvitation::factory()->create([
-            'team_id' => // @var mixed team->id,
-            'email' => // @var mixed member->email,
+            'team_id' => $team->id,
+            'email' => $member->email,
             'role' => 'editor',
         ]);
 
         // Simulate accepting invitation
-        // @var mixed team->users(;
+        $team->users();
         $invitation->delete();
 
-        expect(// @var mixed team->users->contains($this->member;
+        expect($team->users->contains($this->member));
         expect(TeamInvitation::find($invitation->id))->toBeNull();
     });
 
     it('can cancel team invitations', function () {
         $invitation = TeamInvitation::factory()->create([
-            'team_id' => // @var mixed team->id,
+            'team_id' => $team->id,
             'email' => 'cancel@example.com',
         ]);
 
@@ -227,12 +227,12 @@ describe('Team Invitations', function () {
     it('prevents duplicate invitations', function () {
         $email = 'existing-'.uniqid().'@example.com';
         TeamInvitation::factory()->create([
-            'team_id' => // @var mixed team->id,
+            'team_id' => $team->id,
             'email' => $email,
         ]);
 
         // Attempting to create duplicate should fail or be handled
-        $duplicateCount = TeamInvitation::where('team_id', // @var mixed team->id
+        $duplicateCount = TeamInvitation::where('team_id', $team->id
             ->where('email', $email)
             ->count();
 
@@ -242,33 +242,33 @@ describe('Team Invitations', function () {
 
 describe('Team Permissions', function () {
     it('can have team-specific permissions', function () {
-        expect(// @var mixed team->permissions(
+        expect($team->permissions(
             ->toBeInstanceOf(Illuminate\Database\Eloquent\Relations\HasMany::class);
     });
 
     it('can assign permissions to team members', function () {
         $permission = TeamPermission::factory()->create([
             'name' => 'manage team',
-            'team_id' => // @var mixed team->id,
+            'team_id' => $team->id,
         ]);
 
         // Attaching permissions to pivot
-        // @var mixed team->users(;
+        $team->users();
         // Or if casted, just array? Assuming array cast on pivot or accessor
         // But attach expects scalar or json for simple columns.
 
         // Test permission assignment logic
-        expect($permission->team_id)->toBe(// @var mixed team->id;
+        expect($permission->team_id)->toBe($team->id);
     });
 
     it('can check team member permissions', function () {
-        // @var mixed team->users(;
+        $team->users();
 
         // Verify the role via direct DB query since pivot accessor 'membership' is not configured
         $pivotRole = Illuminate\Support\Facades\DB::connection('user')
             ->table('team_user')
-            ->where('team_id', // @var mixed team->id
-            ->where('user_id', // @var mixed member->id
+            ->where('team_id', $team->id
+            ->where('user_id', $member->id
             ->value('role');
 
         expect($pivotRole)->toBe('admin');
@@ -280,9 +280,9 @@ describe('Team Scopes and Queries', function () {
         $otherUser = User::factory()->create();
         Team::factory()->create(['user_id' => $otherUser->id]);
 
-        $ownerTeams = Team::where('user_id', // @var mixed owner->id;
+        $ownerTeams = Team::where('user_id', $owner->id);
 
-        expect($ownerTeams->every(fn ($team) => $team->user_id === // @var mixed owner->id;
+        expect($ownerTeams->every(fn ($team) => $team->user_id === $owner->id));
     });
 
     it('can find teams by slug', function () {
@@ -297,9 +297,9 @@ describe('Team Scopes and Queries', function () {
     it('can get teams with member count', function () {
         $member1 = User::factory()->create();
         $member2 = User::factory()->create();
-        // @var mixed team->users(;
+        $team->users();
 
-        $teamWithCount = Team::withCount('users')->find(// @var mixed team->id;
+        $teamWithCount = Team::withCount('users')->find($team->id);
 
         expect($teamWithCount->users_count)->toBe(2);
     });
@@ -307,7 +307,7 @@ describe('Team Scopes and Queries', function () {
 
 describe('Team Features', function () {
     it('can have team settings', function () {
-        // @var mixed team->update([
+        $team->update([
             'settings' => [
                 'allow_invitations' => true,
                 'max_members' => 50,
@@ -315,7 +315,7 @@ describe('Team Features', function () {
             ],
         ]);
 
-        $settings = // @var mixed team->fresh(;
+        $settings = $team->fresh();
 
         expect($settings['allow_invitations'])->toBe(true);
         expect($settings['max_members'])->toBe(50);
@@ -323,25 +323,25 @@ describe('Team Features', function () {
     });
 
     it('can have team avatar', function () {
-        // @var mixed team->update([
+        $team->update([
             'avatar_path' => 'teams/avatars/team-avatar.jpg',
         ]);
 
-        expect(// @var mixed team->fresh(;
+        expect($team->fresh());
     });
 
     it('can check if team is full', function () {
         // Assuming team has max_members setting
-        // @var mixed team->update([
+        $team->update([
             'settings' => ['max_members' => 2],
         ]);
 
         $member1 = User::factory()->create();
         $member2 = User::factory()->create();
-        // @var mixed team->users(;
+        $team->users();
 
-        $memberCount = // @var mixed team->users(;
-        $maxMembers = // @var mixed team->settings['max_members'] ?? null;
+        $memberCount = $team->users();
+        $maxMembers = $team->settings['max_members'] ?? null;
 
         if ($maxMembers) {
             expect($memberCount >= $maxMembers)->toBe(true);
@@ -351,21 +351,21 @@ describe('Team Features', function () {
 
 describe('Team Events and Notifications', function () {
     it('can notify team members of changes', function () {
-        // @var mixed team->users(;
+        $team->users();
 
         Notification::fake();
 
         // Simulate team update notification
-        // @var mixed team->update(['name' => 'New Team Name'];
+        $team->update(['name' => 'New Team Name']);
 
         // Would test notification dispatch if implemented
-        expect(// @var mixed team->fresh(;
+        expect($team->fresh());
     });
 
     it('can log team activities', function () {
-        // @var mixed team->users(;
+        $team->users();
 
         // Test activity logging when members join/leave
-        expect(// @var mixed team->users->contains($this->member;
+        expect($team->users->contains($this->member));
     });
 });

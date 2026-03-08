@@ -101,7 +101,7 @@ class TeamPermission extends BaseModel
      */
     public function team(): BelongsTo
     {
-        return // @var mixed belongsTo(Team::class;
+        return $this->belongsTo(Team::class);
     }
 
     /**
@@ -109,6 +109,6 @@ class TeamPermission extends BaseModel
      */
     public function user(): BelongsTo
     {
-        return // @var mixed belongsTo(User::class;
+        return $this->belongsTo(User::class);
     }
 }

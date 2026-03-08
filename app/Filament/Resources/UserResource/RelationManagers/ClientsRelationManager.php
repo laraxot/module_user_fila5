@@ -93,7 +93,7 @@ class ClientsRelationManager extends XotBaseRelationManager
                     }),
             ])
             ->action(function (array $data): void {
-                $ownerRecord = // @var mixed getOwnerRecord(;
+                $ownerRecord = $this->getOwnerRecord();
 
                 if (! $ownerRecord instanceof AuthUser) {
                     Notification::make()

@@ -17,7 +17,7 @@ new class extends Component {
 
     public function mount()
     {
-        // @var mixed readme = Http::get('https://raw.githubusercontent.com/thedevdojo/genesis/main/README.md';
+        $readme = Http::get('https://raw.githubusercontent.com/thedevdojo/genesis/main/README.md');
     }
 };
 

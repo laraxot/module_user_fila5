@@ -17,7 +17,7 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         // -- CREATE --
-        // @var mixed tableCreate(static function (Blueprint $table
+        $this->tableCreate(static function (Blueprint $table
             $table->id();
             $table->foreignId('team_id')->constrained('teams')->cascadeOnDelete();
             $table->string('permission'); // The permission key/slug
@@ -28,15 +28,15 @@ return new class extends XotBaseMigration {
         });
 
         // -- UPDATE --
-        // @var mixed tableUpdate(function (Blueprint $table
-            if (! // @var mixed hasColumn('permission'
+        $this->tableUpdate(function (Blueprint $table
+            if (! $this->hasColumn('permission'
                 $table->string('permission');
             }
-            if (! // @var mixed hasColumn('name'
+            if (! $this->hasColumn('name'
                 $table->string('name')->nullable();
             }
 
-            // @var mixed updateTimestamps(
+            $this->updateTimestamps(
                 table: $table,
                 hasSoftDeletes: true,
             );

@@ -17,17 +17,17 @@ uses(TestCase::class);
 it('password data can be instantiated', function (): void {
     $passwordData = new PasswordData();
 
-    // @var mixed assertInstanceOf(PasswordData::class, $passwordData;
-    // @var mixed assertSame(5, $passwordData->otp_expiration_minutes;
-    // @var mixed assertSame(6, $passwordData->otp_length;
-    // @var mixed assertSame(60, $passwordData->expires_in;
-    // @var mixed assertSame(8, $passwordData->min;
-    // @var mixed assertTrue($passwordData->mixedCase;
-    // @var mixed assertTrue($passwordData->letters;
-    // @var mixed assertTrue($passwordData->numbers;
-    // @var mixed assertTrue($passwordData->symbols;
-    // @var mixed assertTrue($passwordData->uncompromised;
-    // @var mixed assertSame(0, $passwordData->compromisedThreshold;
+    $this->assertInstanceOf(PasswordData::class, $passwordData);
+    $this->assertSame(5, $passwordData->otp_expiration_minutes);
+    $this->assertSame(6, $passwordData->otp_length);
+    $this->assertSame(60, $passwordData->expires_in);
+    $this->assertSame(8, $passwordData->min);
+    $this->assertTrue($passwordData->mixedCase);
+    $this->assertTrue($passwordData->letters);
+    $this->assertTrue($passwordData->numbers);
+    $this->assertTrue($passwordData->symbols);
+    $this->assertTrue($passwordData->uncompromised);
+    $this->assertSame(0, $passwordData->compromisedThreshold);
 });
 
 it('password data can be configured', function (): void {
@@ -44,16 +44,16 @@ it('password data can be configured', function (): void {
         compromisedThreshold: 5
     );
 
-    // @var mixed assertSame(30, $passwordData->otp_expiration_minutes;
-    // @var mixed assertSame(8, $passwordData->otp_length;
-    // @var mixed assertSame(60, $passwordData->expires_in;
-    // @var mixed assertSame(8, $passwordData->min;
-    // @var mixed assertTrue($passwordData->mixedCase;
-    // @var mixed assertTrue($passwordData->letters;
-    // @var mixed assertTrue($passwordData->numbers;
-    // @var mixed assertTrue($passwordData->symbols;
-    // @var mixed assertTrue($passwordData->uncompromised;
-    // @var mixed assertSame(5, $passwordData->compromisedThreshold;
+    $this->assertSame(30, $passwordData->otp_expiration_minutes);
+    $this->assertSame(8, $passwordData->otp_length);
+    $this->assertSame(60, $passwordData->expires_in);
+    $this->assertSame(8, $passwordData->min);
+    $this->assertTrue($passwordData->mixedCase);
+    $this->assertTrue($passwordData->letters);
+    $this->assertTrue($passwordData->numbers);
+    $this->assertTrue($passwordData->symbols);
+    $this->assertTrue($passwordData->uncompromised);
+    $this->assertSame(5, $passwordData->compromisedThreshold);
 });
 
 it('password data get password rule works', function (): void {
@@ -69,7 +69,7 @@ it('password data get password rule works', function (): void {
 
     $rule = $passwordData->getPasswordRule();
 
-    // @var mixed assertInstanceOf(Password::class, $rule;
+    $this->assertInstanceOf(Password::class, $rule);
 });
 
 it('password data get helper text works', function (): void {
@@ -84,13 +84,13 @@ it('password data get helper text works', function (): void {
 
     $helperText = $passwordData->getHelperText();
 
-    // @var mixed assertIsString($helperText;
-    // @var mixed assertStringContainsString('8 caratteri', $helperText;
-    // @var mixed assertStringContainsString('maiuscola e una minuscola', $helperText;
-    // @var mixed assertStringContainsString('lettera', $helperText;
-    // @var mixed assertStringContainsString('numero', $helperText;
-    // @var mixed assertStringContainsString('carattere speciale', $helperText;
-    // @var mixed assertStringContainsString('compromessa', $helperText;
+    $this->assertIsString($helperText);
+    $this->assertStringContainsString('8 caratteri', $helperText);
+    $this->assertStringContainsString('maiuscola e una minuscola', $helperText);
+    $this->assertStringContainsString('lettera', $helperText);
+    $this->assertStringContainsString('numero', $helperText);
+    $this->assertStringContainsString('carattere speciale', $helperText);
+    $this->assertStringContainsString('compromessa', $helperText);
 });
 
 it('password data get form components returns array', function (): void {
@@ -118,10 +118,10 @@ it('events can be instantiated', function (): void {
     $registered = new Registered($socialiteUser);
     $socialiteUserConnected = new SocialiteUserConnected($socialiteUser);
 
-    // @var mixed assertInstanceOf(AddingTeam::class, $addingTeam;
-    // @var mixed assertInstanceOf(Login::class, $login;
-    // @var mixed assertInstanceOf(Registered::class, $registered;
-    // @var mixed assertInstanceOf(SocialiteUserConnected::class, $socialiteUserConnected;
+    $this->assertInstanceOf(AddingTeam::class, $addingTeam);
+    $this->assertInstanceOf(Login::class, $login);
+    $this->assertInstanceOf(Registered::class, $registered);
+    $this->assertInstanceOf(SocialiteUserConnected::class, $socialiteUserConnected);
 });
 
 it('events have dispatchable trait', function (): void {
@@ -142,17 +142,17 @@ it('events have dispatchable trait', function (): void {
 
 it('password data static make method exists', function (): void {
     $passwordData = PasswordData::make();
-    // @var mixed assertInstanceOf(PasswordData::class, $passwordData;
+    $this->assertInstanceOf(PasswordData::class, $passwordData);
 });
 
 it('password data get validation messages method exists', function (): void {
     $passwordData = new PasswordData();
 
     $messages = $passwordData->getValidationMessages();
-    // @var mixed assertIsArray($messages;
+    $this->assertIsArray($messages);
 });
 
 it('password data get form schema method exists', function (): void {
     $schema = PasswordData::getFormSchema();
-    // @var mixed assertIsArray($schema;
+    $this->assertIsArray($schema);
 });

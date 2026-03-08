@@ -32,32 +32,32 @@ class OauthClientFactory extends Factory
     public function definition(): array
     {
         return [
-            'id' => // @var mixed faker->uuid(
-            'user_id' => // @var mixed faker->optional(
-            'name' => // @var mixed faker->company(
-            'secret' => // @var mixed faker->sha256(
-            'provider' => // @var mixed faker->optional(
-            'redirect' => // @var mixed faker->url(
-            'personal_access_client' => // @var mixed faker->boolean(20
-            'password_client' => // @var mixed faker->boolean(30
-            'revoked' => // @var mixed faker->boolean(5
-            'grant_types' => // @var mixed faker->optional(
+            'id' => $faker->uuid(
+            'user_id' => $faker->optional(
+            'name' => $faker->company(
+            'secret' => $faker->sha256(
+            'provider' => $faker->optional(
+            'redirect' => $faker->url(
+            'personal_access_client' => $faker->boolean(20
+            'password_client' => $faker->boolean(30
+            'revoked' => $faker->boolean(5
+            'grant_types' => $faker->optional(
                 [
                     'authorization_code',
                     'client_credentials',
                     'password',
                     'refresh_token',
                 ],
-                // @var mixed faker->numberBetween(1, 3
+                $faker->numberBetween(1, 3
             ),
-            'scopes' => // @var mixed faker->optional(
+            'scopes' => $faker->optional(
                 [
                     'read',
                     'write',
                     'admin',
                     'user',
                 ],
-                // @var mixed faker->numberBetween(1, 3
+                $faker->numberBetween(1, 3
             ),
         ];
     }
@@ -67,7 +67,7 @@ class OauthClientFactory extends Factory
      */
     public function personalAccess(): static
     {
-        return // @var mixed state(fn (array $_attributes
+        return $this->state(fn (array $_attributes
             'personal_access_client' => true,
             'password_client' => false,
             'name' => 'Personal Access Client',
@@ -79,7 +79,7 @@ class OauthClientFactory extends Factory
      */
     public function password(): static
     {
-        return // @var mixed state(fn (array $_attributes
+        return $this->state(fn (array $_attributes
             'password_client' => true,
             'personal_access_client' => false,
             'name' => 'Password Grant Client',
@@ -91,7 +91,7 @@ class OauthClientFactory extends Factory
      */
     public function revoked(): static
     {
-        return // @var mixed state(fn (array $_attributes
+        return $this->state(fn (array $_attributes
             'revoked' => true,
         ]);
     }
@@ -101,7 +101,7 @@ class OauthClientFactory extends Factory
      */
     public function active(): static
     {
-        return // @var mixed state(fn (array $_attributes
+        return $this->state(fn (array $_attributes
             'revoked' => false,
         ]);
     }
@@ -111,7 +111,7 @@ class OauthClientFactory extends Factory
      */
     public function forUser(User $user): static
     {
-        return // @var mixed state(fn (array $_attributes
+        return $this->state(fn (array $_attributes
             'user_id' => $user->id,
         ]);
     }
@@ -121,7 +121,7 @@ class OauthClientFactory extends Factory
      */
     public function withRedirectUri(string $redirectUri): static
     {
-        return // @var mixed state(fn (array $_attributes
+        return $this->state(fn (array $_attributes
             'redirect' => $redirectUri,
         ]);
     }
@@ -133,7 +133,7 @@ class OauthClientFactory extends Factory
      */
     public function withScopes(array $scopes): static
     {
-        return // @var mixed state(fn (array $_attributes
+        return $this->state(fn (array $_attributes
             'scopes' => $scopes,
         ]);
     }

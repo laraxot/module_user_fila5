@@ -49,12 +49,12 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function mount(?string $token = null, ?string $email = null): void
     {
-        // @var mixed token = $token;
-        // @var mixed email = $email;
+        $token = $token;
+        $email = $email;
 
         // Pre-fill the form if email is provided
-        if (// @var mixed email
-            // @var mixed form->fill(['email' => $this->email];
+        if ($email
+            $form->fill(['email' => $this->email]);
         }
     }
 
@@ -72,7 +72,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 ->required()
                 ->autocomplete('email')
                 ->maxLength(255)
-                ->disabled('form' !== // @var mixed currentState
+                ->disabled('form' !== $currentState
                 ->extraInputAttributes(['class' => 'text-center'])
                 ->suffixIcon('heroicon-o-envelope'),
             'password' => TextInput::make('password')
@@ -80,14 +80,14 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 ->required()
                 ->revealable()
                 ->minLength(8)
-                ->disabled('form' !== // @var mixed currentState
+                ->disabled('form' !== $currentState
                 ->extraInputAttributes(['class' => 'text-center'])
                 ->suffixIcon('heroicon-o-key'),
             'password_confirmation' => TextInput::make('password_confirmation')
                 ->password()
                 ->required()
                 ->same('password')
-                ->disabled('form' !== // @var mixed currentState
+                ->disabled('form' !== $currentState
                 ->extraInputAttributes(['class' => 'text-center'])
                 ->suffixIcon('heroicon-o-key'),
         ];
@@ -98,18 +98,18 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function confirmPasswordReset(): void
     {
-        if ('form' !== // @var mixed currentState
+        if ('form' !== $currentState
             return;
         }
 
-        // @var mixed currentState = 'loading';
+        $currentState = 'loading';
 
         try {
-            $data = // @var mixed form->getState(;
+            $data = $form->getState();
 
             $response = Password::broker()->reset(
                 [
-                    'token' => // @var mixed token,
+                    'token' => $token,
                     'email' => $data['email'],
                     'password' => $data['password'],
                 ],
@@ -126,7 +126,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
             );
 
             if (Password::PASSWORD_RESET === $response) {
-                // @var mixed currentState = 'success';
+                $currentState = 'success';
 
                 Notification::make()
                     ->title(__('user::auth.password_reset.success.title'))
@@ -144,13 +144,13 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 Auth::guard()->login($user);
 
                 // Redirect after a short delay to show success message
-                // @var mixed js('setTimeout((; }, 3000);');
+                $this->js('setTimeout(())); }, 3000);');
             } else {
                 /* @phpstan-ignore argument.type */
-                // @var mixed handleResetError($response;
+                $this->handleResetError($response);
             }
         } catch (\Exception $e) {
-            // @var mixed handleResetError('passwords.generic_error';
+            $this->handleResetError('passwords.generic_error');
         }
     }
 
@@ -159,9 +159,9 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function resetForm(): void
     {
-        // @var mixed currentState = 'form';
-        // @var mixed errorMessage = null;
-        // @var mixed form->fill(['email' => $this->email ?? ''];
+        $currentState = 'form';
+        $errorMessage = null;
+        $form->fill(['email' => $this->email ?? '']);
     }
 
     /**
@@ -169,7 +169,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function getCurrentState(): string
     {
-        return // @var mixed currentState;
+        return $currentState;
     }
 
     /**
@@ -177,7 +177,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function getErrorMessage(): ?string
     {
-        return // @var mixed errorMessage;
+        return $errorMessage;
     }
 
     /**
@@ -185,7 +185,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function shouldShowForm(): bool
     {
-        return \in_array(// @var mixed currentState, ['form', 'loading'], strict: true;
+        return \in_array($currentState, ['form', 'loading'], strict: true);
     }
 
     /**
@@ -193,7 +193,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function isLoading(): bool
     {
-        return 'loading' === // @var mixed currentState;
+        return 'loading' === $currentState;
     }
 
     /**
@@ -201,7 +201,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function isSuccess(): bool
     {
-        return 'success' === // @var mixed currentState;
+        return 'success' === $currentState;
     }
 
     /**
@@ -209,7 +209,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function hasError(): bool
     {
-        return 'error' === // @var mixed currentState;
+        return 'error' === $currentState;
     }
 
     /**
@@ -217,7 +217,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     protected function handleResetError(string $response): void
     {
-        // @var mixed currentState = 'error';
+        $currentState = 'error';
 
         // Map Laravel password reset responses to user-friendly messages
         $errorMessages = [
@@ -226,11 +226,11 @@ class PasswordResetConfirmWidget extends XotBaseWidget
             'passwords.generic_error' => __('user::auth.password_reset.errors.generic'),
         ];
 
-        // @var mixed errorMessage = $errorMessages[$response] ?? trans($response;
+        $errorMessage = $errorMessages[$response] ?? trans($response);
 
         Notification::make()
             ->title(__('user::auth.password_reset.errors.title'))
-            ->body(// @var mixed errorMessage
+            ->body($errorMessage
             ->danger()
             ->duration(10000)
             ->send();

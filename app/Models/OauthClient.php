@@ -122,13 +122,13 @@ class OauthClient extends PassportClient implements AuthorizableContract
     public function can($ability, mixed $arguments = []): bool
     {
         if (is_string($ability)) {
-            return // @var mixed checkPermission($ability;
+            return $this->checkPermission($ability);
         }
 
         /** @var iterable<string> $ability */
         $permissions = $ability;
 
-        return // @var mixed hasAnyPermission($permissions;
+        return $this->hasAnyPermission($permissions);
     }
 
     /**
@@ -139,7 +139,7 @@ class OauthClient extends PassportClient implements AuthorizableContract
      */
     public function cant($ability, $arguments = []): bool
     {
-        return ! // @var mixed can($ability;
+        return ! $this->can($ability);
     }
 
     /**
@@ -150,7 +150,7 @@ class OauthClient extends PassportClient implements AuthorizableContract
      */
     public function cannot($ability, $arguments = []): bool
     {
-        return // @var mixed cant($ability;
+        return $this->cant($ability);
     }
 
     /**
@@ -162,7 +162,7 @@ class OauthClient extends PassportClient implements AuthorizableContract
     public function canAny($abilities, $arguments = []): bool
     {
         foreach ((array) $abilities as $ability) {
-            if (// @var mixed can($ability
+            if ($can($ability
                 return true;
             }
         }
@@ -179,7 +179,7 @@ class OauthClient extends PassportClient implements AuthorizableContract
     {
         /** @var iterable<string> $permissions */
         foreach ($permissions as $perm) {
-            if (// @var mixed checkPermission($perm
+            if ($checkPermission($perm
                 return true;
             }
         }
@@ -193,7 +193,7 @@ class OauthClient extends PassportClient implements AuthorizableContract
     private function checkPermission(string $permission): bool
     {
         try {
-            return // @var mixed hasPermissionTo($permission;
+            return $this->hasPermissionTo($permission);
         } catch (PermissionDoesNotExist) {
             return false;
         }

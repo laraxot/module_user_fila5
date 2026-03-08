@@ -12,7 +12,7 @@ return new class extends XotBaseMigration {
     {
         $xot = XotData::make();
         $userClass = $xot->getUserClass();
-        // @var mixed tableCreate(static function (Blueprint $table
+        $this->tableCreate(static function (Blueprint $table
             $table->string('id', 100)->primary();
             // $table->unsignedBigInteger('user_id')->index();
             // $table->unsignedBigInteger('client_id');
@@ -25,10 +25,10 @@ return new class extends XotBaseMigration {
         });
 
         // -- UPDATE --
-        // @var mixed tableUpdate(function (Blueprint $table
-            // @var mixed updateUser($table;
+        $this->tableUpdate(function (Blueprint $table
+            $this->updateUser($table);
 
-            // // @var mixed updateTimestamps($table,true;
+            // $this->updateTimestamps($table,true);
         });
     }
 };

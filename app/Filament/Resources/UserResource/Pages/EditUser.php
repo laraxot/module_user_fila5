@@ -31,8 +31,8 @@ class EditUser extends XotBaseEditRecord
         }
 
         // Verifichiamo che record sia un'istanza valida di User
-        Assert::notNull(// @var mixed record;
-        Assert::isInstanceOf(// @var mixed record, User::class;
+        Assert::notNull($record);
+        Assert::isInstanceOf($record, User::class);
 
         // Gestione sicura del tipo di password per evitare errori di cast
         $newPassword = $data['new_password'];
@@ -45,7 +45,7 @@ class EditUser extends XotBaseEditRecord
             $newPassword = (string) $newPassword;
         }
 
-        // @var mixed record->update(['password' => Hash::make($newPassword;
+        $record->update(['password' => Hash::make($newPassword));
 
         return $data;
     }

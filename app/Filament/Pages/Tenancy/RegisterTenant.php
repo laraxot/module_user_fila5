@@ -43,7 +43,7 @@ class RegisterTenant extends BaseRegisterTenant
     public function schema(Schema $schema): Schema
     {
         /** @var array<Component> $components */
-        $components = // @var mixed getFormSchema(;
+        $components = $this->getFormSchema();
 
         return $schema->components($components);
     }
@@ -53,7 +53,7 @@ class RegisterTenant extends BaseRegisterTenant
      */
     public function getFormSchema(): array
     {
-        $resourceClass = // @var mixed resolveResourceClass(;
+        $resourceClass = $this->resolveResourceClass();
 
         $schemaRaw = $resourceClass::getFormSchema();
 
@@ -82,8 +82,8 @@ class RegisterTenant extends BaseRegisterTenant
      */
     private function resolveResourceClass(): string
     {
-        if (null !== // @var mixed resourceClass
-            return // @var mixed resourceClass;
+        if (null !== $resourceClass
+            return $resourceClass;
         }
 
         $tenantClass = XotData::make()->getTenantClass();
@@ -96,7 +96,7 @@ class RegisterTenant extends BaseRegisterTenant
 
         /** @var class-string $resolved */
         $resolved = $resourceClass;
-        // @var mixed resourceClass = $resolved;
+        $resourceClass = $resolved;
 
         return $resolved;
     }

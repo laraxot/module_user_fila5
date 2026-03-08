@@ -107,7 +107,7 @@ class Device extends BaseModel
     {
         $userClass = XotData::make()->getUserClass();
 
-        return // @var mixed belongsToManyX($userClass;
+        return $this->belongsToManyX($userClass);
     }
 
     /**

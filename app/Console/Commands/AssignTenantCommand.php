@@ -68,7 +68,7 @@ class AssignTenantCommand extends Command
          * $user->assignRole($role);
          * }
          */
-        // @var mixed info(implode(', ', $rows;
+        $this->info(implode(', ', $rows));
     }
 
     /*

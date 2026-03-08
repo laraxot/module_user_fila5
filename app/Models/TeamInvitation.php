@@ -99,7 +99,7 @@ class TeamInvitation extends BaseModel
         /** @var class-string<Model> */
         $team_class = $xotData->getTeamClass();
 
-        return // @var mixed belongsTo($team_class;
+        return $this->belongsTo($team_class);
     }
 
     /**
@@ -107,10 +107,10 @@ class TeamInvitation extends BaseModel
      */
     public function accept(UserContract $user): void
     {
-        if (// @var mixed team
-            // @var mixed team->users(;
+        if ($team
+            $team->users();
         }
-        // @var mixed delete(;
+        $this->delete();
     }
 
     /**
@@ -118,7 +118,7 @@ class TeamInvitation extends BaseModel
      */
     public function decline(): void
     {
-        // @var mixed delete(;
+        $this->delete();
     }
 
     /**

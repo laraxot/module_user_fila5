@@ -22,20 +22,20 @@ class Email extends Component
      */
     public function sendResetPasswordLink(): void
     {
-        // @var mixed validate([
+        $this->validate([
             'email' => ['required', 'email'],
         ]);
 
-        $broker = // @var mixed broker(;
-        $response = $broker->sendResetLink(['email' => // @var mixed email];
+        $broker = $this->broker();
+        $response = $broker->sendResetLink(['email' => $email]);
 
         if (Password::RESET_LINK_SENT === $response) {
-            // @var mixed emailSentMessage = trans('user::'.$response;
+            $emailSentMessage = trans('user::'.$response);
 
             return;
         }
 
-        // @var mixed addError('email', trans('user::'.$response;
+        $this->addError('email', trans('user::'.$response));
     }
 
     /**

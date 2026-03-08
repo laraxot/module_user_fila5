@@ -54,6 +54,6 @@ class OauthPersonalAccessClient extends BaseModel
      */
     public function client(): BelongsTo
     {
-        return // @var mixed belongsTo(OauthClient::class, 'client_id';
+        return $this->belongsTo(OauthClient::class, 'client_id');
     }
 }

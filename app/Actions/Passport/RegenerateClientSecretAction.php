@@ -31,10 +31,10 @@ class RegenerateClientSecretAction
     public function execute(OauthClient|string $client): string
     {
         if (is_string($client)) {
-            $client = // @var mixed oauthClientModel->findOrFail($client;
+            $client = $oauthClientModel->findOrFail($client);
         }
 
-        $newSecret = // @var mixed stringHelper->random(40;
+        $newSecret = $stringHelper->random(40);
         $client->secret = $newSecret;
         $client->save();
 

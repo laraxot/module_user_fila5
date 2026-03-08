@@ -17,7 +17,7 @@ class ClientHeader extends XotBaseWidget
 
     public function mount(Client $record): void
     {
-        // @var mixed client = $record;
+        $client = $record;
     }
 
     public function getFormSchema(): array

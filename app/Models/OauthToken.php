@@ -60,16 +60,16 @@ class OauthToken extends PassportToken
      */
     public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        $provider = // @var mixed getTokenGuardProvider(;
+        $provider = $this->getTokenGuardProvider();
 
         if (null === $provider) {
-            return // @var mixed belongsTo(
+            return $this->belongsTo(
                 config('auth.guards.api.provider') ?? User::class,
                 'user_id'
             );
         }
 
-        return // @var mixed belongsTo(
+        return $this->belongsTo(
             config("auth.providers.{$provider}.model", User::class),
             'user_id'
         );

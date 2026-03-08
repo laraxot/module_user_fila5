@@ -28,7 +28,7 @@ describe('LoginUserAction', function (): void {
         $response = app(LoginUserAction::class)->execute($socialiteUser);
 
         expect($response)->toBeInstanceOf(RedirectResponse::class);
-        // @var mixed assertAuthenticatedAs($user;
+        $this->assertAuthenticatedAs($user);
 
         Event::assertDispatched(SocialiteUserConnected::class);
     });
@@ -58,7 +58,7 @@ describe('LoginUserAction', function (): void {
         $response = app(LoginUserAction::class)->execute($socialiteUser);
 
         expect($response)->toBeInstanceOf(RedirectResponse::class);
-        // @var mixed assertAuthenticatedAs($user;
+        $this->assertAuthenticatedAs($user);
     });
 
     test('dispatches event with correct socialite user instance', function (): void {
@@ -100,10 +100,10 @@ describe('LoginUserAction', function (): void {
         $socialiteUser2->setRelation('user', $user2);
 
         app(LoginUserAction::class)->execute($socialiteUser1);
-        // @var mixed assertAuthenticatedAs($user1;
+        $this->assertAuthenticatedAs($user1);
 
         app(LoginUserAction::class)->execute($socialiteUser2);
-        // @var mixed assertAuthenticatedAs($user2;
+        $this->assertAuthenticatedAs($user2);
     });
 
     test('returns redirect response instance', function (): void {

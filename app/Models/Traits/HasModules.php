@@ -24,7 +24,7 @@ trait HasModules
             $name = is_string($key) ? $key : (string) $key;
             $role_name = Str::of($name)->lower()->append('::admin')->toString();
 
-            return // @var mixed hasRole($role_name;
+            return $this->hasRole($role_name);
         });
 
         // Convert to array<string, Module> preserving string keys

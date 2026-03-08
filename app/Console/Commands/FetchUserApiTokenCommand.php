@@ -24,14 +24,14 @@ class FetchUserApiTokenCommand extends Command
     public function handle(): int
     {
         if (app()->isProduction()) {
-            // @var mixed error('The command cannot be used in PRODUCTION environments';
+            $this->error('The command cannot be used in PRODUCTION environments');
 
             return self::INVALID_ENV;
         }
-        Assert::string($email = // @var mixed argument('email';
+        Assert::string($email = $this->argument('email'));
         $userEmail = trim($email);
         if (empty($userEmail)) {
-            Assert::string($userEmail = // @var mixed ask('Please enter the email of the user to impersonate';
+            Assert::string($userEmail = $this->ask('Please enter the email of the user to impersonate'));
             $userEmail = trim($userEmail);
         }
 
@@ -40,7 +40,7 @@ class FetchUserApiTokenCommand extends Command
         $user = XotData::make()->getUserByEmail($userEmail);
 
         if (null === $user) {
-            // @var mixed error('User not found!';
+            $this->error('User not found!');
 
             return self::USER_NOT_FOUND;
         }
@@ -52,9 +52,9 @@ class FetchUserApiTokenCommand extends Command
             scopes: $oauthScopes,
         );
 
-        // @var mixed info("Access token for `{$userEmail}`:";
-        // @var mixed comment($token->accessToken;
-        // @var mixed info('Scopes included: '.implode(', ', $oauthScopes;
+        $this->info("Access token for `{$userEmail}`:");
+        $this->comment($token->accessToken);
+        $this->info('Scopes included: '.implode(', ', $oauthScopes));
 
         return self::SUCCESS;
     }

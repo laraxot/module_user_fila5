@@ -50,18 +50,18 @@ class AssignModuleCommand extends Command
         $user = XotData::make()->getUserByEmail($email);
 
         if (! $user) {
-            // @var mixed error("User with email '{$email}' not found.";
+            $this->error("User with email '{$email}' not found.");
 
             return;
         }
 
         // Get all available modules
         /** @var array<string, mixed> $allModules */
-        $allModules = // @var mixed moduleRepository->all(;
+        $allModules = $moduleRepository->all();
 
         // Ensure $allModules is an array for PHPStan
         if (! is_array($allModules)) {
-            // @var mixed error('Unable to retrieve modules.';
+            $this->error('Unable to retrieve modules.');
 
             return;
         }
@@ -71,12 +71,12 @@ class AssignModuleCommand extends Command
         $moduleOptions = array_combine($moduleKeys, $moduleKeys);
 
         // Get user's current module roles
-        // $userModuleRoles = // @var mixed getUserModuleRoles($user;
+        // $userModuleRoles = $this->getUserModuleRoles($user);
         $userModuleRoles = $user->getModules();
         $currentModules = is_array($userModuleRoles) ? array_keys($userModuleRoles) : [];
 
         // Show current modules as default selected
-        // @var mixed info('Current modules for '.$email.': '.implode(', ', $currentModules;
+        $this->info('Current modules for '.$email.': '.implode(', ', $currentModules));
 
         $selectedModules = multiselect(
             label: 'Select modules (checked = assigned, unchecked = will be revoked)',
@@ -96,12 +96,12 @@ class AssignModuleCommand extends Command
             $roleName = $moduleLower.'::admin';
 
             // Create or get the role with the web guard
-            $role = // @var mixed roleModel->firstOrCreate(['name' => $roleName], [];
+            $role = $roleModel->firstOrCreate(['name' => $roleName], []);
 
             // Assign the role to the user
             $user->assignRole($role);
 
-            // @var mixed info("✓ Assigned module: {$module}";
+            $this->info("✓ Assigned module: {$module}");
         }
 
         // Revoke unchecked modules
@@ -112,15 +112,15 @@ class AssignModuleCommand extends Command
             // Revoke the role from the user
             $user->removeRole($roleName);
 
-            // @var mixed warn("✗ Revoked module: {$module}";
+            $this->warn("✗ Revoked module: {$module}");
         }
 
         // Summary
         if (empty($modulesToAssign) && empty($modulesToRevoke)) {
-            // @var mixed info('No changes made to user modules.';
+            $this->info('No changes made to user modules.');
 
             return;
         }
-        // @var mixed info("Module assignment updated for {$email}";
+        $this->info("Module assignment updated for {$email}");
     }
 }

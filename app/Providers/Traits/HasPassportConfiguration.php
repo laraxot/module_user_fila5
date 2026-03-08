@@ -23,10 +23,10 @@ trait HasPassportConfiguration
     protected function configurePassport(): void
     {
         try {
-            // @var mixed configureModels(;
-            // @var mixed configureTokens(;
-            // @var mixed configureScopes(;
-            // @var mixed configureRoutes(;
+            $this->configureModels();
+            $this->configureTokens();
+            $this->configureScopes();
+            $this->configureRoutes();
         } catch (\Exception $e) {
             throw new \RuntimeException("Failed to configure Passport: {$e->getMessage()}", 0, $e);
         }
@@ -88,7 +88,7 @@ trait HasPassportConfiguration
      */
     protected function configureRoutes(): void
     {
-        if (// @var mixed app->routesAreCached(
+        if ($app->routesAreCached(
             return;
         }
 

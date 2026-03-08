@@ -36,7 +36,7 @@ class LogoutWidget extends XotBaseWidget
      */
     public function mount(): void
     {
-        // @var mixed form->fill(;
+        $form->fill();
     }
 
     /**
@@ -67,8 +67,7 @@ class LogoutWidget extends XotBaseWidget
     public function getFormActions(): array
     {
         return [
-            // @var mixed getLogoutAction(
-            // @var mixed getCancelAction(
+            $this->getLogoutAction($getCancelAction(
         ];
     }
 
@@ -88,11 +87,11 @@ class LogoutWidget extends XotBaseWidget
             return;
         }
 
-        // @var mixed dispatchPreLogoutEvent($user;
-        // @var mixed performLogout(;
-        // @var mixed dispatchPostLogoutEvent(;
-        // @var mixed logLogoutSuccess($user;
-        // @var mixed redirectAfterLogout(;
+        $this->dispatchPreLogoutEvent($user);
+        $this->performLogout();
+        $this->dispatchPostLogoutEvent();
+        $this->logLogoutSuccess($user);
+        $this->redirectAfterLogout();
     }
 
     /**
@@ -105,7 +104,7 @@ class LogoutWidget extends XotBaseWidget
             ->color('danger')
             ->size('lg')
             ->extraAttributes(['class' => 'w-full justify-center'])
-            ->action(// @var mixed logout(...;
+            ->action($logout(...));
     }
 
     /**
@@ -118,7 +117,7 @@ class LogoutWidget extends XotBaseWidget
             ->color('gray')
             ->size('lg')
             ->extraAttributes(['class' => 'w-full justify-center mt-2'])
-            ->url(// @var mixed getLocalizedHomeUrl(;
+            ->url($getLocalizedHomeUrl());
     }
 
     /**
@@ -171,7 +170,7 @@ class LogoutWidget extends XotBaseWidget
      */
     protected function redirectAfterLogout(): void
     {
-        redirect(// @var mixed getLocalizedHomeUrl(;
+        redirect($getLocalizedHomeUrl());
         exit;
     }
 

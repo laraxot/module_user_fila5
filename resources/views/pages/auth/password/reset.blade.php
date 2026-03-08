@@ -19,17 +19,17 @@ new class extends Component {
 
     public function sendResetPasswordLink()
     {
-        // @var mixed validate(;
+        $this->validate();
 
-        $response = Password::broker()->sendResetLink(['email' => // @var mixed email];
+        $response = Password::broker()->sendResetLink(['email' => $email]);
 
         if ($response === Password::RESET_LINK_SENT) {
-            // @var mixed emailSentMessage = trans($response;
+            $emailSentMessage = trans($response);
 
             return;
         }
 
-        // @var mixed addError('email', trans($response;
+        $this->addError('email', trans($response));
     }
 };
 

@@ -29,19 +29,19 @@ class PassportInstallCommand extends Command
      */
     public function handle(): int
     {
-        // @var mixed info('Installing Laravel Passport...';
+        $this->info('Installing Laravel Passport...');
 
         // Esegui il comando standard di Passport per installare le chiavi
-        // @var mixed call('passport:install', [
-            '--force' => // @var mixed option('force'
+        $this->call('passport:install', [
+            '--force' => $this->option('force'
         ]);
 
-        // @var mixed info('Passport installed successfully!';
-        // @var mixed newLine(;
-        // @var mixed info('Next steps:';
-        // @var mixed line('1. Configure your OAuth scopes in config/user/passport.php';
-        // @var mixed line('2. Create OAuth clients using the Filament admin panel';
-        // @var mixed line('3. Use the Passport actions to manage tokens programmatically';
+        $this->info('Passport installed successfully!');
+        $this->newLine();
+        $this->info('Next steps:');
+        $this->line('1. Configure your OAuth scopes in config/user/passport.php');
+        $this->line('2. Create OAuth clients using the Filament admin panel');
+        $this->line('3. Use the Passport actions to manage tokens programmatically');
 
         return Command::SUCCESS;
     }

@@ -23,12 +23,12 @@ class UserFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => // @var mixed faker->name(
-            'email' => // @var mixed faker->unique(
+            'name' => $faker->name(
+            'email' => $faker->unique(
             'email_verified_at' => now(),
             'password' => Hash::make('password123'),
             'remember_token' => \Illuminate\Support\Str::random(10),
-            'is_active' => // @var mixed faker->boolean(
+            'is_active' => $faker->boolean(
         ];
     }
 
@@ -37,7 +37,7 @@ class UserFactory extends Factory
      */
     public function active(): static
     {
-        return // @var mixed state(fn (array $attributes
+        return $this->state(fn (array $attributes
             'is_active' => true,
         ]);
     }
@@ -47,7 +47,7 @@ class UserFactory extends Factory
      */
     public function inactive(): static
     {
-        return // @var mixed state(fn (array $attributes
+        return $this->state(fn (array $attributes
             'is_active' => false,
         ]);
     }
@@ -57,7 +57,7 @@ class UserFactory extends Factory
      */
     public function verified(): static
     {
-        return // @var mixed state(fn (array $attributes
+        return $this->state(fn (array $attributes
             'email_verified_at' => now(),
         ]);
     }
@@ -67,7 +67,7 @@ class UserFactory extends Factory
      */
     public function unverified(): static
     {
-        return // @var mixed state(fn (array $attributes
+        return $this->state(fn (array $attributes
             'email_verified_at' => null,
         ]);
     }
@@ -77,11 +77,11 @@ class UserFactory extends Factory
      */
     public function withProfile(): static
     {
-        return // @var mixed afterCreating(function (User $user
+        return $this->afterCreating(function (User $user
             $user->profile()->create([
-                'bio' => // @var mixed faker->text(
-                'avatar' => '/avatars/'.// @var mixed faker->word(
-                'phone' => // @var mixed faker->phoneNumber(
+                'bio' => $faker->text(
+                'avatar' => '/avatars/'.$faker->word(
+                'phone' => $faker->phoneNumber(
             ]);
         });
     }
@@ -91,7 +91,7 @@ class UserFactory extends Factory
      */
     public function forTenant($tenant): static
     {
-        return // @var mixed afterCreating(function (User $user
+        return $this->afterCreating(function (User $user
             $user->tenant_id = $tenant->id;
             $user->save();
         });

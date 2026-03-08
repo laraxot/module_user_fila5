@@ -91,7 +91,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
         /** @var class-string<Model> */
         $user_class = $xotData->getUserClass();
 
-        return // @var mixed belongsTo($user_class, 'user_id';
+        return $this->belongsTo($user_class, 'user_id');
     }
 
     /**
@@ -100,11 +100,11 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     #[\Override]
     public function allUsers(): Collection
     {
-        if (! // @var mixed owner instanceof User
-            return // @var mixed users;
+        if (! $owner instanceof User
+            return $users;
         }
 
-        return // @var mixed users->merge([$this->owner];
+        return $users->merge([$this->owner]);
     }
 
     /**
@@ -117,7 +117,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
         /** @var class-string<Model> */
         $userClass = $xotData->getUserClass();
 
-        return // @var mixed belongsToManyX($userClass
+        return $this->belongsToManyX($userClass
             ->using(TeamUser::class)
             ->withPivot(['role', 'permissions']);
     }
@@ -127,7 +127,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
      */
     public function teamUsers(): HasMany
     {
-        return // @var mixed hasMany(TeamUser::class;
+        return $this->hasMany(TeamUser::class);
     }
 
     /**
@@ -138,7 +138,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     #[\Override]
     public function members(): BelongsToMany
     {
-        return // @var mixed users(;
+        return $this->users();
     }
 
     /**
@@ -153,7 +153,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     {
         // Corretto l'errore di tipo per il metodo contains
         // Verifico se l'ID dell'utente è presente nella collection degli utenti del team
-        if (// @var mixed users->contains('id', $user->getKey(
+        if ($users->contains('id', $user->getKey(
             return true;
         }
 
@@ -170,7 +170,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     #[\Override]
     public function hasUserWithEmail(string $email): bool
     {
-        return // @var mixed allUsers(
+        return $this->allUsers(
             // PHPStan Level 10: $user è sempre Model Eloquent da allUsers()
             // Uso isset() invece di property_exists() per magic properties
             if (! is_object($user) || ! isset($user->email)) {
@@ -205,7 +205,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     #[\Override]
     public function teamInvitations(): HasMany
     {
-        return // @var mixed hasMany(TeamInvitation::class;
+        return $this->hasMany(TeamInvitation::class);
     }
 
     /**
@@ -216,13 +216,13 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     #[\Override]
     public function removeUser(UserContract $userContract): void
     {
-        if ($userContract->current_team_id === // @var mixed id
+        if ($userContract->current_team_id === $id
             $userContract->forceFill([
                 'current_team_id' => null,
             ])->save();
         }
 
-        // @var mixed users(;
+        $this->users();
     }
 
     /**
@@ -231,13 +231,13 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     #[\Override]
     public function purge(): void
     {
-        // @var mixed owner(;
+        $this->owner();
 
-        // @var mixed users(;
+        $this->users();
 
-        // @var mixed users(;
+        $this->users();
 
-        // @var mixed delete(;
+        $this->delete();
     }
 
     /**

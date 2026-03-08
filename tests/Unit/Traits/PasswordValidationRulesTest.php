@@ -26,7 +26,7 @@ test('PasswordValidationRules trait provides passwordRules method', function () 
     // Modules\User\Rules\Password. If that class is not present in the
     // current installation, skip the test with a clear explanation.
     if (! class_exists(\Modules\User\Rules\Password::class)) {
-        // @var mixed markTestSkipped(
+        $this->markTestSkipped(
             'Modules\\User\\Rules\\Password class is not available in this environment.'
         );
     }
@@ -36,7 +36,7 @@ test('PasswordValidationRules trait provides passwordRules method', function () 
 
         public function getPasswordRules(): array
         {
-            return // @var mixed passwordRules(;
+            return $this->passwordRules();
         }
     };
 

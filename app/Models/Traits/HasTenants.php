@@ -26,7 +26,7 @@ trait HasTenants
      */
     public function canAccessTenant(Model $tenant): bool
     {
-        return // @var mixed tenants(;
+        return $this->tenants();
     }
 
     /**
@@ -37,7 +37,7 @@ trait HasTenants
     public function getTenants(Panel $_panel): array|Collection
     {
         /** @var Collection<int, Model> $result */
-        $result = // @var mixed tenants->map(
+        $result = $tenants->map(
             static fn (Model $tenant): Model => $tenant,
         );
 
@@ -55,6 +55,6 @@ trait HasTenants
         /** @var class-string<Model> */
         $tenant_class = $xot->getTenantClass();
 
-        return // @var mixed belongsToManyX($tenant_class;
+        return $this->belongsToManyX($tenant_class);
     }
 }

@@ -15,7 +15,7 @@ beforeEach(function (): void {
     $factoryRequiredCols = ['uuid'];
     $missingCols = array_diff($factoryRequiredCols, $tableColumns);
     if (! empty($missingCols)) {
-        // @var mixed markTestSkipped('Profile factory uses columns not in profiles table: '.implode(', ', $missingCols;
+        $this->markTestSkipped('Profile factory uses columns not in profiles table: '.implode(', ', $missingCols));
     }
 });
 
@@ -27,7 +27,7 @@ test('can create profile with minimal data', function (): void {
         'email' => 'john@example.com',
     ]);
 
-    // @var mixed assertDatabaseHas('profiles', [
+    $this->assertDatabaseHas('profiles', [
         'id' => $profile->id,
         'first_name' => 'John',
         'last_name' => 'Doe',
@@ -54,7 +54,7 @@ test('can create profile with all fields', function (): void {
 
     $profile = Profile::factory()->create($profileData);
 
-    // @var mixed assertDatabaseHas('profiles', [
+    $this->assertDatabaseHas('profiles', [
         'id' => $profile->id,
         'first_name' => 'Jane',
         'last_name' => 'Smith',
@@ -173,7 +173,7 @@ test('can update profile', function (): void {
     $profile = Profile::factory()->create(['first_name' => 'Old Name']);
     $profile->update(['first_name' => 'New Name']);
 
-    // @var mixed assertDatabaseHas('profiles', [
+    $this->assertDatabaseHas('profiles', [
         'id' => $profile->id,
         'first_name' => 'New Name',
     ]);
@@ -192,7 +192,7 @@ test('can handle null values', function (): void {
         'locale' => null,
     ]);
 
-    // @var mixed assertDatabaseHas('profiles', [
+    $this->assertDatabaseHas('profiles', [
         'id' => $profile->id,
         'phone' => null,
         'bio' => null,

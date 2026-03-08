@@ -54,7 +54,7 @@ function createTenant(array $overrides = []): Tenant
 beforeEach(function (): void {
     // Manually create the tenant to ensure incrementing = false is handled
     // since the factory definition() is empty.
-    // @var mixed tenant = createTenant([
+    $tenant = createTenant([
         'email_address' => 'test@tenant.com',
         'phone' => '+39 123 456 789',
         'mobile' => '+39 987 654 321',
@@ -65,22 +65,22 @@ beforeEach(function (): void {
 });
 
 test('tenant can be created', function (): void {
-    expect(// @var mixed tenant;
-    expect(// @var mixed tenant->name;
-    expect(// @var mixed tenant->email_address;
-    expect(// @var mixed tenant->phone;
-    expect(// @var mixed tenant->mobile;
-    expect(// @var mixed tenant->address;
-    expect(// @var mixed tenant->primary_color;
-    expect(// @var mixed tenant->secondary_color;
+    expect($tenant);
+    expect($tenant->name);
+    expect($tenant->email_address);
+    expect($tenant->phone);
+    expect($tenant->mobile);
+    expect($tenant->address);
+    expect($tenant->primary_color);
+    expect($tenant->secondary_color);
 });
 
 test('tenant extends correct base class', function (): void {
-    expect(// @var mixed tenant;
+    expect($tenant);
 });
 
 test('tenant has correct fillable attributes', function (): void {
-    $fillable = // @var mixed tenant->getFillable(;
+    $fillable = $tenant->getFillable();
 
     expect($fillable)->toContain('id');
     expect($fillable)->toContain('name');
@@ -94,8 +94,8 @@ test('tenant has correct fillable attributes', function (): void {
 });
 
 test('tenant has slug generated from name', function (): void {
-    $expectedSlug = Str::slug(// @var mixed tenant->name;
-    expect(// @var mixed tenant->slug;
+    $expectedSlug = Str::slug($tenant->name);
+    expect($tenant->slug);
 });
 
 test('tenant slug is automatically generated', function (): void {
@@ -106,16 +106,16 @@ test('tenant slug is automatically generated', function (): void {
 });
 
 test('tenant has users relationship', function (): void {
-    expect(method_exists(// @var mixed tenant, 'users';
+    expect(method_exists($tenant, 'users'));
 
-    $users = // @var mixed tenant->users(;
+    $users = $tenant->users();
     expect($users)->toBeInstanceOf(BelongsToMany::class);
 });
 
 test('tenant has members relationship', function (): void {
-    expect(method_exists(// @var mixed tenant, 'members';
+    expect(method_exists($tenant, 'members'));
 
-    $members = // @var mixed tenant->members(;
+    $members = $tenant->members();
     expect($members)->toBeInstanceOf(BelongsToMany::class);
 });
 
@@ -128,74 +128,74 @@ test('tenant implements required interfaces', function (): void {
 });
 
 test('tenant has slug options configuration', function (): void {
-    expect(method_exists(// @var mixed tenant, 'getSlugOptions';
+    expect(method_exists($tenant, 'getSlugOptions'));
 
-    $slugOptions = // @var mixed tenant->getSlugOptions(;
+    $slugOptions = $tenant->getSlugOptions();
     expect($slugOptions)->toBeInstanceOf(SlugOptions::class);
 });
 
 test('tenant has filament avatar url method', function (): void {
     // getFilamentAvatarUrl() calls getFirstMediaUrl() which requires the
     // media table (Spatie MediaLibrary). Skip if the table is not available.
-    expect(method_exists(// @var mixed tenant, 'getFilamentAvatarUrl';
+    expect(method_exists($tenant, 'getFilamentAvatarUrl'));
 
     try {
-        $avatarUrl = // @var mixed tenant->getFilamentAvatarUrl(;
+        $avatarUrl = $tenant->getFilamentAvatarUrl();
         expect($avatarUrl)->toBeString();
     } catch (Throwable) {
-        // @var mixed markTestSkipped('Spatie MediaLibrary media table is not available in this test environment.';
+        $this->markTestSkipped('Spatie MediaLibrary media table is not available in this test environment.');
     }
 });
 
 test('tenant can be found by slug', function (): void {
-    $foundTenant = Tenant::where('slug', // @var mixed tenant->slug;
+    $foundTenant = Tenant::where('slug', $tenant->slug);
 
     expect($foundTenant)->not->toBeNull();
-    expect((string) $foundTenant->id)->toBe((string) // @var mixed tenant->id;
-    expect($foundTenant->name)->toBe(// @var mixed tenant->name;
+    expect((string) $foundTenant->id)->toBe((string) $tenant->id);
+    expect($foundTenant->name)->toBe($tenant->name);
 });
 
 test('tenant has correct table name', function (): void {
-    expect(// @var mixed tenant->getTable(;
+    expect($tenant->getTable());
 });
 
 test('tenant has correct primary key', function (): void {
-    expect(// @var mixed tenant->getKeyName(;
+    expect($tenant->getKeyName());
 });
 
 test('tenant has correct connection', function (): void {
-    expect(// @var mixed tenant->getConnectionName(;
+    expect($tenant->getConnectionName());
 });
 
 test('tenant can be updated', function (): void {
-    $originalId = (string) // @var mixed tenant->id;
+    $originalId = (string) $tenant->id;
     $newName = 'Updated Tenant Name '.uniqid('', true);
 
-    // @var mixed tenant->update([
+    $tenant->update([
         'name' => $newName,
         'email_address' => 'updated@tenant.com',
     ]);
 
-    // @var mixed tenant->refresh(;
+    $tenant->refresh();
 
-    expect(// @var mixed tenant->name;
-    expect(// @var mixed tenant->email_address;
-    expect(// @var mixed tenant->slug;
-    expect((string) // @var mixed tenant->id;
+    expect($tenant->name);
+    expect($tenant->email_address);
+    expect($tenant->slug);
+    expect((string) $tenant->id);
 });
 
 test('tenant can be deleted', function (): void {
-    $tenantId = (string) // @var mixed tenant->id;
+    $tenantId = (string) $tenant->id;
 
     // Spatie MediaLibrary hooks into delete to clean up media records.
     // If the media table does not exist in the test DB, the delete will fail.
     // We skip gracefully in that case rather than letting the test error out.
     try {
-        // @var mixed tenant->delete(;
+        $tenant->delete();
         expect(Tenant::find($tenantId))->toBeNull();
     } catch (Throwable $e) {
         if (str_contains($e->getMessage(), 'Table') && str_contains($e->getMessage(), 'media')) {
-            // @var mixed markTestSkipped('Spatie MediaLibrary media table is not available in this test environment.';
+            $this->markTestSkipped('Spatie MediaLibrary media table is not available in this test environment.');
         }
         throw $e;
     }

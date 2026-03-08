@@ -60,7 +60,7 @@ class PasswordExpiredWidget extends XotBaseWidget
     public function getFormSchema(): array
     {
         $schema = [
-            // @var mixed getCurrentPasswordFormComponent(
+            $this->getCurrentPasswordFormComponent(
             ...PasswordData::make()->getPasswordFormComponents('password'),
         ];
 
@@ -90,32 +90,32 @@ class PasswordExpiredWidget extends XotBaseWidget
      */
     public function resetPassword(): ?PasswordResetResponse
     {
-        // @var mixed validate(;
+        $this->validate();
 
         $user = Auth::user();
         if (! $user || ! ($user instanceof Model)) {
-            // @var mixed addError('current_password', __('user::auth.user_not_found';
+            $this->addError('current_password', __('user::auth.user_not_found'));
 
             return null;
         }
 
         // Cast e verifica esistenza dei dati del form
-        $data = // @var mixed data ?? [];
+        $data = $data ?? [];
         $currentPassword = SafeStringCastAction::cast($data['current_password'] ?? '');
         $newPassword = SafeStringCastAction::cast($data['password'] ?? '');
 
         if (empty($currentPassword) || empty($newPassword)) {
-            // @var mixed addError('current_password', __('user::auth.password_fields_required';
+            $this->addError('current_password', __('user::auth.password_fields_required'));
 
             return null;
         }
 
-        $userPassword = SafeStringCastAction::cast($user->getAttribute('password'));
+        $userPassword = SafeStringCastAction::cast($user->$this->getAttribute('password'));
         // Cast esplicito di mixed a string per PHPStan
         $userPasswordString = $userPassword;
 
         if (! Hash::check($currentPassword, $userPasswordString)) {
-            // @var mixed addError('current_password', __('user::auth.password_current_incorrect';
+            $this->addError('current_password', __('user::auth.password_current_incorrect'));
 
             return null;
         }
@@ -186,7 +186,7 @@ class PasswordExpiredWidget extends XotBaseWidget
     protected function getFormActions(): array
     {
         return [
-            // @var mixed getResetPasswordFormAction(
+            $this->getResetPasswordFormAction(
         ];
     }
 }

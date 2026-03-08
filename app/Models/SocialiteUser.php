@@ -85,6 +85,6 @@ class SocialiteUser extends BaseModel
         /** @var class-string<Model> */
         $user_class = XotData::make()->getUserClass();
 
-        return // @var mixed belongsTo($user_class;
+        return $this->belongsTo($user_class);
     }
 }

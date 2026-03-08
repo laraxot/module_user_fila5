@@ -24,7 +24,7 @@ function createPassportClient(): array
 test('client credentials grant returns token', function (): void {
     ['client' => $client, 'secret' => $secret] = createPassportClient();
 
-    $response = // @var mixed post('/oauth/token', [
+    $response = $this->post('/oauth/token', [
         'grant_type' => 'client_credentials',
         'client_id' => $client->id,
         'client_secret' => $secret,

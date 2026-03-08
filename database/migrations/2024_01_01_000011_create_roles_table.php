@@ -16,7 +16,7 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         // -- CREATE --
-        // @var mixed tableCreate(static function (Blueprint $table
+        $this->tableCreate(static function (Blueprint $table
             $table->id();
             $table->foreignId('team_id')->nullable()->index();
             $table->string('name');
@@ -25,20 +25,20 @@ return new class extends XotBaseMigration {
             $table->text('description')->nullable();
         });
         // -- UPDATE --
-        // @var mixed tableUpdate(function (Blueprint $table
-            if (! // @var mixed hasColumn('id'
+        $this->tableUpdate(function (Blueprint $table
+            if (! $this->hasColumn('id'
                 $table->id();
             }
-            if (! // @var mixed hasColumn('team_id'
+            if (! $this->hasColumn('team_id'
                 $table->foreignId('team_id')->nullable()->index();
             }
-            if (! // @var mixed hasColumn('display_name'
+            if (! $this->hasColumn('display_name'
                 $table->string('display_name')->nullable();
             }
-            if (! // @var mixed hasColumn('description'
+            if (! $this->hasColumn('description'
                 $table->text('description')->nullable();
             }
-            // @var mixed updateTimestamps($table;
+            $this->updateTimestamps($table);
         });
     }
 };

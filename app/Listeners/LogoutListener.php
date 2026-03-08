@@ -26,7 +26,7 @@ class LogoutListener
      */
     public function __construct(Request $request)
     {
-        // @var mixed request = $request;
+        $request = $request;
     }
 
     /**

@@ -27,7 +27,7 @@ class Favicon extends XotBasePage
 
     public function mount(): void
     {
-        // @var mixed fillForms(;
+        $this->fillForms();
     }
 
     // protected function getForms(): array
@@ -54,17 +54,17 @@ class Favicon extends XotBasePage
                 // ])->columns(2),
             ])
             ->columns(2)
-            // ->model(// @var mixed getUser(
+            // ->model($getUser(
             ->statePath('data');
     }
 
     public function updateData(): void
     {
         try {
-            $data = // @var mixed form->getState(;
+            $data = $form->getState();
             dddx($data);
 
-            // // @var mixed handleRecordUpdate($this->getUser(;
+            // $this->handleRecordUpdate($this->getUser());
         } catch (Halt $exception) {
             dddx($exception->getMessage());
 
@@ -74,10 +74,10 @@ class Favicon extends XotBasePage
 
     protected function fillForms(): void
     {
-        // $data = // @var mixed getUser(;
+        // $data = $this->getUser();
         $data = [];
 
-        // @var mixed form->fill($data;
+        $form->fill($data);
     }
 
     protected function getUpdateFormActions(): array

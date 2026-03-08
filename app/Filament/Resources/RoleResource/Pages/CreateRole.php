@@ -19,7 +19,7 @@ class CreateRole extends XotBaseCreateRecord
 
     protected function mutateFormDataBeforeCreate(array $data): array
     {
-        // @var mixed permissions = collect($data
+        $permissions = collect($data
             ->filter(
                 static fn ($_permission, $key): bool => ! in_array($key, ['name', 'guard_name', 'select_all'], false) && Str::contains($key, '_'),
             )
@@ -39,15 +39,15 @@ class CreateRole extends XotBaseCreateRecord
      *
      * private function afterCreate(): void {
      * $permissionModels = collect();
-     * // @var mixed permissions->each(function ($permission
+     * $permissions->each(function ($permission
      * $permissionModels->push(Utils::getPermissionModel()::firstOrCreate([
      *
      * 'name' => $permission,
-     * 'guard_name' => // @var mixed data['guard_name'],
+     * 'guard_name' => $data['guard_name'],
      * ]));
      * });
      *
-     * // @var mixed record->syncPermissions($permissionModels;
+     * $record->syncPermissions($permissionModels);
      * }
      */
 }

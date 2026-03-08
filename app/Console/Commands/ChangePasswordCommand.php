@@ -19,11 +19,11 @@ class ChangePasswordCommand extends Command
 
     public function handle(): void
     {
-        Assert::string($email = // @var mixed ask('Enter the user email:';
+        Assert::string($email = $this->ask('Enter the user email:'));
         try {
             $user = XotData::make()->getUserByEmail($email);
         } catch (\Exception $e) {
-            // @var mixed error($e->getMessage(;
+            $this->error($e->getMessage());
 
             return;
         }
@@ -34,16 +34,16 @@ class ChangePasswordCommand extends Command
                 $user->exists(),
                 __FILE__.':'.__LINE__.' - '.class_basename(self::class).' - User model should exist in database before password change'
             );
-            // @var mixed error('User not found or not persisted. Please create the user first (name, email, type, etc.;
+            $this->error('User not found or not persisted. Please create the user first (name, email, type, etc.));
 
             return;
         }
 
-        Assert::string($password = // @var mixed secret('Enter the new password:';
-        $confirmPassword = // @var mixed secret('Confirm the new password:';
+        Assert::string($password = $this->secret('Enter the new password:'));
+        $confirmPassword = $this->secret('Confirm the new password:');
 
         if ($password !== $confirmPassword) {
-            // @var mixed error('Passwords do not match!';
+            $this->error('Passwords do not match!');
 
             return;
         }
@@ -62,6 +62,6 @@ class ChangePasswordCommand extends Command
 
         event(new NewPasswordSet($user));
 
-        // @var mixed info('Password changed successfully!';
+        $this->info('Password changed successfully!');
     }
 }

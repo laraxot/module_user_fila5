@@ -15,7 +15,7 @@ class AuthenticationLogPolicy extends UserBasePolicy
      */
     public function viewAny(UserContract $user): bool
     {
-        return // @var mixed hasPermission($user, 'authentication-log.view.any';
+        return $this->hasPermission($user, 'authentication-log.view.any');
     }
 
     /**
@@ -23,7 +23,7 @@ class AuthenticationLogPolicy extends UserBasePolicy
      */
     public function view(UserContract $user, AuthenticationLog $authenticationLog): bool
     {
-        return // @var mixed hasPermission($user, 'authentication-log.view'
+        return $this->hasPermission($user, 'authentication-log.view'
             || $user->id === $authenticationLog->authenticatable_id
             || $user->hasRole('super-admin');
     }
@@ -33,7 +33,7 @@ class AuthenticationLogPolicy extends UserBasePolicy
      */
     public function create(UserContract $user): bool
     {
-        return // @var mixed hasPermission($user, 'authentication-log.create';
+        return $this->hasPermission($user, 'authentication-log.create');
     }
 
     /**
@@ -41,7 +41,7 @@ class AuthenticationLogPolicy extends UserBasePolicy
      */
     public function update(UserContract $user, AuthenticationLog $_authenticationLog): bool
     {
-        return // @var mixed hasPermission($user, 'authentication-log.update';
+        return $this->hasPermission($user, 'authentication-log.update');
     }
 
     /**
@@ -49,7 +49,7 @@ class AuthenticationLogPolicy extends UserBasePolicy
      */
     public function delete(UserContract $user, AuthenticationLog $_authenticationLog): bool
     {
-        return // @var mixed hasPermission($user, 'authentication-log.delete';
+        return $this->hasPermission($user, 'authentication-log.delete');
     }
 
     /**
@@ -57,7 +57,7 @@ class AuthenticationLogPolicy extends UserBasePolicy
      */
     public function restore(UserContract $user, AuthenticationLog $_authenticationLog): bool
     {
-        return // @var mixed hasPermission($user, 'authentication-log.restore';
+        return $this->hasPermission($user, 'authentication-log.restore');
     }
 
     /**
@@ -65,7 +65,7 @@ class AuthenticationLogPolicy extends UserBasePolicy
      */
     public function forceDelete(UserContract $user, AuthenticationLog $authenticationLog): bool
     {
-        return // @var mixed hasPermission($user, 'authentication-log.force-delete';
+        return $this->hasPermission($user, 'authentication-log.force-delete');
     }
 
     protected function hasPermission(UserContract $user, string $permission): bool

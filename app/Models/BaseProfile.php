@@ -154,13 +154,13 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
      */
     public function getAvatarUrl(): string
     {
-        $avatar = // @var mixed getFirstMediaUrl('avatar';
+        $avatar = $this->getFirstMediaUrl('avatar');
         if ('' !== $avatar) {
             return $avatar;
         }
 
         // Corretto il controllo errato su $this
-        $email = trim((string) // @var mixed email;
+        $email = trim((string) $email);
         // 'MyEmailAddress@example.com'
         $email = mb_strtolower($email);
         // 'myemailaddress@example.com'
@@ -174,7 +174,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         // dddx(asset('blog/img/no_user.webp'));
         //    return asset('modules/blog/img/no_user.webp');
         // }
-        // return // @var mixed getFirstMediaUrl(;
+        // return $this->getFirstMediaUrl();
     }
 
     /**
@@ -191,7 +191,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
             $locale = $defaultLocale;
         }
 
-        $userLang = // @var mixed lang;
+        $userLang = $lang;
 
         if (null === $userLang || ! is_string($userLang)) {
             return $locale;

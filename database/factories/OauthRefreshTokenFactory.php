@@ -20,28 +20,28 @@ class OauthRefreshTokenFactory extends Factory
     public function definition(): array
     {
         return [
-            'id' => // @var mixed faker->sha256(
+            'id' => $faker->sha256(
             'access_token_id' => fn () => OauthAccessToken::create([
-                'id' => // @var mixed faker->sha256(
+                'id' => $faker->sha256(
                 'user_id' => null,
-                'client_id' => // @var mixed faker->sha256(
+                'client_id' => $faker->sha256(
                 'name' => 'Test Token',
                 'scopes' => [],
                 'revoked' => false,
-                'expires_at' => // @var mixed faker->dateTimeBetween('+1 month', '+6 months'
+                'expires_at' => $faker->dateTimeBetween('+1 month', '+6 months'
             ])->id,
-            'revoked' => // @var mixed faker->boolean(5
-            'expires_at' => // @var mixed faker->dateTimeBetween('+1 month', '+6 months'
+            'revoked' => $faker->boolean(5
+            'expires_at' => $faker->dateTimeBetween('+1 month', '+6 months'
         ];
     }
 
     public function revoked(): static
     {
-        return // @var mixed state(['revoked' => true];
+        return $this->state(['revoked' => true]);
     }
 
     public function expired(): static
     {
-        return // @var mixed state(['expires_at' => $this->faker->dateTimeBetween('-1 month', 'now';
+        return $this->state(['expires_at' => $this->faker->dateTimeBetween('-1 month', 'now'));
     }
 }

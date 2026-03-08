@@ -22,7 +22,7 @@ class LoginListener
      */
     public function __construct(Request $request)
     {
-        // @var mixed request = $request;
+        $request = $request;
     }
 
     /**
@@ -51,8 +51,8 @@ class LoginListener
 
         // -----
         if ($user && $user instanceof HasAuthentications) {
-            $ip = // @var mixed request->ip(;
-            $userAgent = // @var mixed request->userAgent(;
+            $ip = $request->ip();
+            $userAgent = $request->userAgent();
             // $location = optional(geoip()->getLocation($ip))->toArray();
             $location = [];
 

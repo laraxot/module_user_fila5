@@ -99,7 +99,7 @@ class Authentication extends BaseModel
 
     public function authenticatable(): MorphTo
     {
-        return // @var mixed morphTo(;
+        return $this->morphTo();
     }
 
     /**

@@ -41,12 +41,12 @@ class UserServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
-        // @var mixed registerLivewireAuthWidgets(;
-        // // @var mixed registerEventListener(;
-        // @var mixed registerPasswordRules(;
-        // @var mixed registerPulse(;
-        // @var mixed registerMailsNotification(;
-        // @var mixed registerPolicies(;
+        $this->registerLivewireAuthWidgets();
+        // $this->registerEventListener();
+        $this->registerPasswordRules();
+        $this->registerPulse();
+        $this->registerMailsNotification();
+        $this->registerPolicies();
     }
 
     /**
@@ -76,7 +76,7 @@ class UserServiceProvider extends XotBaseServiceProvider
     public function register(): void
     {
         parent::register();
-        // // @var mixed registerTeamModelBindings(;
+        // $this->registerTeamModelBindings();
     }
 
     public function registerMailsNotification(): void

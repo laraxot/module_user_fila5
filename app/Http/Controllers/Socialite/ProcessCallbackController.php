@@ -75,7 +75,7 @@ class ProcessCallbackController extends Controller
 
         $user_class = XotData::make()->getUserClass();
         // See if a user already exists, but not for this socialite provider
-        // $user = app()->call(// @var mixed socialite->getUserResolver(;
+        // $user = app()->call($socialite->getUserResolver());
         /** @var UserContract|null */
         $user = $user_class::query()->firstWhere(['email' => $oauthUser->getEmail()]);
 

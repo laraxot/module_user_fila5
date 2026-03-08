@@ -22,16 +22,16 @@ class ProfileFactory extends Factory
     public function definition(): array
     {
         return [
-            'bio' => // @var mixed faker->text(200
-            'avatar' => '/avatars/'.// @var mixed faker->word(
-            'phone' => // @var mixed faker->phoneNumber(
-            'date_of_birth' => // @var mixed faker->date(
-            'location' => // @var mixed faker->city(
-            'website' => // @var mixed faker->url(
-            'twitter' => // @var mixed faker->userName(
-            'facebook' => // @var mixed faker->userName(
-            'linkedin' => // @var mixed faker->userName(
-            'github' => // @var mixed faker->userName(
+            'bio' => $faker->text(200
+            'avatar' => '/avatars/'.$faker->word(
+            'phone' => $faker->phoneNumber(
+            'date_of_birth' => $faker->date(
+            'location' => $faker->city(
+            'website' => $faker->url(
+            'twitter' => $faker->userName(
+            'facebook' => $faker->userName(
+            'linkedin' => $faker->userName(
+            'github' => $faker->userName(
         ];
     }
 }

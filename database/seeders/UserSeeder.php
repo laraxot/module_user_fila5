@@ -27,22 +27,22 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        // @var mixed command->info('👤 Inizializzazione seeding User...';
+        $command->info('👤 Inizializzazione seeding User...');
 
         // Disabilita i controlli di foreign key (solo per MySQL)
         if ('sqlite' !== DB::getDriverName()) {
-            DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+            DB::statement('SET FOREIGN_KEY_CHECKS=0);');
         }
 
         try {
-            // @var mixed seedSystemRolesAndPermissions(;
-            // @var mixed seedSystemTeams(;
+            $this->seedSystemRolesAndPermissions();
+            $this->seedSystemTeams();
 
-            // @var mixed command->info('✅ Seeding User completato con successo!';
+            $command->info('✅ Seeding User completato con successo!');
         } finally {
             // Riabilita i controlli di foreign key (solo per MySQL)
             if ('sqlite' !== DB::getDriverName()) {
-                DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+                DB::statement('SET FOREIGN_KEY_CHECKS=1);');
             }
         }
     }
@@ -52,7 +52,7 @@ class UserSeeder extends Seeder
      */
     private function seedSystemRolesAndPermissions(): void
     {
-        // @var mixed command->info('🔐 Creazione ruoli e permessi di sistema...';
+        $command->info('🔐 Creazione ruoli e permessi di sistema...');
 
         // Permessi di sistema
         $systemPermissions = [
@@ -157,8 +157,8 @@ class UserSeeder extends Seeder
             'leave teams',
         ]);
 
-        // @var mixed command->info('   ✓ Creati '.count($systemPermissions;
-        // @var mixed command->info('   ✓ Creati 4 ruoli di sistema (super-admin, system-admin, moderator, user;
+        $command->info('   ✓ Creati '.count($systemPermissions));
+        $command->info('   ✓ Creati 4 ruoli di sistema (super-admin, system-admin, moderator, user));
     }
 
     /**
@@ -166,15 +166,15 @@ class UserSeeder extends Seeder
      */
     private function seedSystemTeams(): void
     {
-        // @var mixed command->info('👥 Creazione team di sistema...';
+        $command->info('👥 Creazione team di sistema...');
 
-        $adminTeam = // @var mixed createTeam('Amministratori';
-        $devTeam = // @var mixed createTeam('Sviluppatori';
-        $supportTeam = // @var mixed createTeam('Supporto Clienti';
-        $marketingTeam = // @var mixed createTeam('Marketing';
-        $generalTeam = // @var mixed createTeam('Team Generale';
+        $adminTeam = $this->createTeam('Amministratori');
+        $devTeam = $this->createTeam('Sviluppatori');
+        $supportTeam = $this->createTeam('Supporto Clienti');
+        $marketingTeam = $this->createTeam('Marketing');
+        $generalTeam = $this->createTeam('Team Generale');
 
-        // @var mixed command->info('   ✓ Creati 5 team di sistema';
+        $command->info('   ✓ Creati 5 team di sistema');
     }
 
     private function createTeam(string $name): Team

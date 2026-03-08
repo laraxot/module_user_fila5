@@ -31,7 +31,7 @@ class PassportServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        // @var mixed mergeConfigFrom(
+        $this->mergeConfigFrom(
             __DIR__.'/../../config/passport.php',
             'user.passport'
         );
@@ -42,12 +42,12 @@ class PassportServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // @var mixed configureRoutes(;
-        // @var mixed configureTokenExpiration(;
-        // @var mixed configureModels(;
-        // @var mixed configurePasswordGrant(;
-        // @var mixed configureScopes(;
-        // @var mixed registerPolicies(;
+        $this->configureRoutes();
+        $this->configureTokenExpiration();
+        $this->configureModels();
+        $this->configurePasswordGrant();
+        $this->configureScopes();
+        $this->registerPolicies();
     }
 
     /**

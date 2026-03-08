@@ -16,7 +16,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    // @var mixed user = User::factory(
+    $user = User::factory(
         'type' => UserType::MasterAdmin,
         'email' => 'admin-'.uniqid().'@example.com',
         'password' => Hash::make('password123'),
@@ -95,7 +95,7 @@ test('user resource name field is required', function (): void {
     $nameField = collect($section01Schema)->first(fn ($c) => 'name' === $c->getName());
 
     if (null === $nameField) {
-        // @var mixed markTestSkipped('name field not found in section01 schema';
+        $this->markTestSkipped('name field not found in section01 schema');
     }
 
     expect($nameField)->toBeInstanceOf(TextInput::class);
@@ -109,7 +109,7 @@ test('user resource email field is required', function (): void {
     $emailField = collect($section01Schema)->first(fn ($c) => 'email' === $c->getName());
 
     if (null === $emailField) {
-        // @var mixed markTestSkipped('email field not found in section01 schema';
+        $this->markTestSkipped('email field not found in section01 schema');
     }
 
     expect($emailField)->toBeInstanceOf(TextInput::class);
@@ -123,7 +123,7 @@ test('user resource password field is required only on create', function (): voi
     $passwordField = collect($section01Schema)->first(fn ($c) => 'password' === $c->getName());
 
     if (null === $passwordField) {
-        // @var mixed markTestSkipped('password field not found in section01 schema';
+        $this->markTestSkipped('password field not found in section01 schema');
     }
 
     expect($passwordField)->toBeInstanceOf(TextInput::class);
@@ -147,7 +147,7 @@ test('user resource email field has unique validation', function (): void {
     $emailField = collect($section01Schema)->first(fn ($c) => 'email' === $c->getName());
 
     if (null === $emailField) {
-        // @var mixed markTestSkipped('email field not found in section01 schema';
+        $this->markTestSkipped('email field not found in section01 schema');
     }
 
     expect($emailField)->toBeInstanceOf(TextInput::class);
@@ -161,7 +161,7 @@ test('user resource created_at field shows diff for humans', function (): void {
     $createdAtField = collect($section02Schema)->first(fn ($c) => 'created_at' === $c->getName());
 
     if (null === $createdAtField) {
-        // @var mixed markTestSkipped('created_at field not found in section02 schema';
+        $this->markTestSkipped('created_at field not found in section02 schema');
     }
 
     expect($createdAtField)->toBeInstanceOf(Placeholder::class);

@@ -9,7 +9,7 @@ use Modules\Xot\Datas\XotData;
 return new class extends XotBaseMigration {
     public function up(): void
     {
-        // @var mixed tableCreate(static function (Blueprint $table
+        $this->tableCreate(static function (Blueprint $table
             // $table->bigIncrements('id');
             $table->uuid('id')->primary();
             // $table->unsignedBigInteger('user_id')->nullable()->index();
@@ -24,45 +24,45 @@ return new class extends XotBaseMigration {
         });
 
         // -- UPDATE --
-        // @var mixed tableUpdate(function (Blueprint $table
-            if ('string' !== // @var mixed getColumnType('id'
+        $this->tableUpdate(function (Blueprint $table
+            if ('string' !== $this->getColumnType('id'
                 $table->uuid('id')->change(); // is  just primary
             }
-            if (! // @var mixed hasColumn('owner_id'
+            if (! $this->hasColumn('owner_id'
                 $table->nullableMorphs('owner');
             }
-            if (// @var mixed hasColumn('owner_id'
+            if ($hasColumn('owner_id'
                 $table->string('owner_id', 36)->nullable()->change();
             }
-            if (! // @var mixed hasColumn('name'
+            if (! $this->hasColumn('name'
                 $table->string('name');
             }
-            if (! // @var mixed hasColumn('secret'
+            if (! $this->hasColumn('secret'
                 $table->string('secret')->nullable();
             }
-            if (! // @var mixed hasColumn('provider'
+            if (! $this->hasColumn('provider'
                 $table->string('provider')->nullable();
             }
-            if (// @var mixed hasColumn('redirect'
+            if ($hasColumn('redirect'
                 $table->text('redirect')->nullable()->change();
             }
-            if (! // @var mixed hasColumn('redirect_uris'
+            if (! $this->hasColumn('redirect_uris'
                 $table->text('redirect_uris');
             }
-            if (! // @var mixed hasColumn('grant_types'
+            if (! $this->hasColumn('grant_types'
                 $table->text('grant_types');
             }
-            if (// @var mixed hasColumn('personal_access_client'
+            if ($hasColumn('personal_access_client'
                 $table->boolean('personal_access_client')->nullable()->change();
             }
-            if (// @var mixed hasColumn('password_client'
+            if ($hasColumn('password_client'
                 $table->boolean('password_client')->nullable()->change();
             }
-            if (! // @var mixed hasColumn('revoked'
+            if (! $this->hasColumn('revoked'
                 $table->boolean('revoked');
             }
-            // @var mixed updateTimestamps($table, false;
-            // // @var mixed updateUser($table;
+            $this->updateTimestamps($table, false);
+            // $this->updateUser($table);
         });
     }
 };

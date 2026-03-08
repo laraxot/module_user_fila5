@@ -16,21 +16,21 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         // -- CREATE --
-        // @var mixed tableCreate(static function (Blueprint $table
+        $this->tableCreate(static function (Blueprint $table
             $table->id();
             $table->foreignId('team_id')->nullable()->index();
             $table->string('name');
             $table->string('guard_name')->default('web');
         });
         // -- UPDATE --
-        // @var mixed tableUpdate(function (Blueprint $table
-            if (! // @var mixed hasColumn('id'
+        $this->tableUpdate(function (Blueprint $table
+            if (! $this->hasColumn('id'
                 $table->id();
             }
-            if (! // @var mixed hasColumn('team_id'
+            if (! $this->hasColumn('team_id'
                 $table->foreignId('team_id')->nullable()->index();
             }
-            // @var mixed updateTimestamps($table;
+            $this->updateTimestamps($table);
         });
     }
 };

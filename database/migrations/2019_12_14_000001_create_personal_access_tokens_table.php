@@ -14,7 +14,7 @@ return new class extends XotBaseMigration {
     public function up()
     {
         // -- CREATE --
-        // @var mixed tableCreate(
+        $this->tableCreate(
             function (Blueprint $table) {
                 $table->uuid('id')->primary();
                 $table->morphs('tokenable');
@@ -26,9 +26,9 @@ return new class extends XotBaseMigration {
             });
 
         // -- UPDATE --
-        // @var mixed tableUpdate(
+        $this->tableUpdate(
             function (Blueprint $table) {
-                // if (! // @var mixed hasColumn('email'
+                // if (! $this->hasColumn('email'
                 //    $table->string('email')->nullable();
                 // }
             }
