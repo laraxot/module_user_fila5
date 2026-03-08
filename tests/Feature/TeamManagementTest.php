@@ -57,7 +57,13 @@ describe('Team Creation and Management', function () {
         $fresh = $team->fresh();
         expect($fresh)->name->toBe('Updated Team Name');
 
+<<<<<<< HEAD
+        if (null !== $fresh->getAttribute('description')) {
+||||||| 6161e129d
+        if ($fresh->getAttribute('description') !== null) {
+=======
         if (null !== $fresh->$this->getAttribute('description')) {
+>>>>>>> feature/ralph-loop-implementation
             expect($fresh)->description->toBe('Updated description');
         }
     });
