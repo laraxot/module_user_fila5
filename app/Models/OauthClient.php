@@ -11,18 +11,18 @@ use Laravel\Passport\Client as PassportClient;
 /**
  * Modules\User\Models\OauthClient.
  *
- * @property int                                $id
- * @property string|null                        $user_id
- * @property string                             $name
- * @property string|null                        $secret
- * @property string|null                        $provider
- * @property string                             $redirect
- * @property bool                               $personal_access_client
- * @property bool                               $password_client
- * @property bool                               $revoked
- * @property \Illuminate\Support\Carbon|null    $created_at
- * @property \Illuminate\Support\Carbon|null    $updated_at
- * @property-read \Modules\User\Models\User|null $user
+ * @property int                             $id
+ * @property string|null                     $user_id
+ * @property string                          $name
+ * @property string|null                     $secret
+ * @property string|null                     $provider
+ * @property string                          $redirect
+ * @property bool                            $personal_access_client
+ * @property bool                            $password_client
+ * @property bool                            $revoked
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property User|null                       $user
  *
  * @method static Builder|OauthClient newModelQuery()
  * @method static Builder|OauthClient newQuery()

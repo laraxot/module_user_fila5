@@ -16,7 +16,7 @@ use Modules\User\Models\User;
  * @property string|null $first_name
  * @property string|null $last_name
  * @property string|null $email
- * @property-read User|null $user
+ * @property User|null   $user
  */
 trait IsProfileTrait
 {
