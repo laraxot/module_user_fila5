@@ -6,10 +6,8 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Hash;
-use Modules\User\Datas\PasswordData;
 use Modules\User\Events\NewPasswordSet;
 use Modules\Xot\Datas\XotData;
-use Webmozart\Assert\Assert;
 
 class ChangePasswordCommand extends Command
 {
@@ -23,6 +21,7 @@ class ChangePasswordCommand extends Command
             $user = XotData::make()->getUserByEmail($email);
         } catch (\Exception $e) {
             $this->error($e->getMessage());
+
             return;
         }
 
@@ -31,6 +30,7 @@ class ChangePasswordCommand extends Command
 
         if ($password !== $confirmPassword) {
             $this->error('Passwords do not match!');
+
             return;
         }
 

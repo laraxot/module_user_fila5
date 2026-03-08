@@ -7,8 +7,6 @@ namespace Modules\User\Filament\Widgets;
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Modules\User\Datas\PasswordData;
-use Modules\User\Http\Response\PasswordResetResponse;
-use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 class PasswordExpiredWidget extends XotBaseWidget

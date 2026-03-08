@@ -4,18 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Pages;
 
-use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Filament\Forms\Components\TextInput;
-use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
 use Filament\Schemas\Schema;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Hash;
-use Modules\User\Datas\PasswordData;
 use Modules\Xot\Filament\Pages\XotBasePage;
 
 class MyProfilePage extends XotBasePage implements HasSchemas
@@ -70,6 +66,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         if (! $user instanceof Model) {
             throw new \Exception('User must be Eloquent model');
         }
+
         return $user;
     }
 

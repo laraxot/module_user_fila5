@@ -6,7 +6,6 @@ namespace Modules\User\Filament\Clusters\Passport\Pages;
 
 use Filament\Actions\Action;
 use Filament\Notifications\Notification;
-use Livewire\Attributes\On;
 use Modules\User\Filament\Clusters\Passport;
 use Modules\Xot\Actions\ExecuteArtisanCommandAction;
 use Modules\Xot\Filament\Pages\XotBasePage;

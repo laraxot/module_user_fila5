@@ -27,6 +27,7 @@ class UserDropdown extends XotBaseWidget
     protected function getViewData(): array
     {
         $user = Auth::user();
+
         return [
             'user' => $user,
             'avatarUrl' => 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y',

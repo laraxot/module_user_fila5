@@ -5,15 +5,12 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Pages\Auth;
 
 use Filament\Actions\Action;
-use Filament\Actions\ActionGroup;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Pages\Concerns\InteractsWithFormActions;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Schema as DatabaseSchema;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Events\NewPasswordSet;
 use Modules\User\Http\Response\PasswordResetResponse;
@@ -56,6 +53,7 @@ class PasswordExpired extends XotBasePage
 
         if (! Hash::check($currentPassword, $user->password)) {
             Notification::make()->title(__('user::otp.notifications.wrong_password.title'))->danger()->send();
+
             return null;
         }
 

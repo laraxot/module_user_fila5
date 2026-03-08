@@ -4,12 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets;
 
-use Filament\Support\Components\Component;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Str;
 use Livewire\Features\SupportRedirects\Redirector;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -31,7 +28,7 @@ class EditUserWidget extends XotBaseWidget
         $this->type = $type;
         $xot = XotData::make();
         $this->model = $xot->getUserClass();
-        
+
         $this->record = $this->getFormModel($userId);
         $this->form->fill($this->record->toArray());
     }
@@ -58,6 +55,7 @@ class EditUserWidget extends XotBaseWidget
 
         $user = Auth::user();
         Assert::isInstanceOf($user, Model::class);
+
         return $user;
     }
 }

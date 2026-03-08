@@ -7,13 +7,8 @@ namespace Modules\User\Filament\Resources\RoleResource\Pages;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Str;
 use Modules\User\Filament\Resources\RoleResource;
-use Modules\User\Models\Role;
-use Modules\User\Support\Utils;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
-use Webmozart\Assert\Assert;
 
 class EditRole extends XotBaseEditRecord
 {
