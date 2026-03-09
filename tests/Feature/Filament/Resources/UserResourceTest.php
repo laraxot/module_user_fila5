@@ -21,7 +21,7 @@ beforeEach(function (): void {
                 'type' => UserType::MasterAdmin,
                 'email' => 'admin-'.uniqid().'@example.com',
                 'password' => Hash::make('password123'),
-    ]);
+            ]);
 });
 
 test('user resource has correct navigation icon', function (): void {

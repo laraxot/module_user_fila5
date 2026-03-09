@@ -2,10 +2,8 @@
 
 declare(strict_types=1);
 
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Support\Str;
 use Modules\User\Models\Permission;
@@ -13,7 +11,6 @@ use Modules\User\Models\Role;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
-use Spatie\MediaLibrary\HasMedia;
 
 uses(TestCase::class);
 
