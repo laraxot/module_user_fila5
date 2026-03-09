@@ -25,13 +25,13 @@ class GetCurrentDeviceAction
 
 <<<<<<< HEAD
 ||||||| 6161e129d
-    public function __construct(
+    public function __construct()
         private readonly Agent $agent,
         private readonly Device $deviceModel,
     ) {}
 
 =======
-    public function __construct(
+    public function __construct()
         private readonly Agent $agent,
         private readonly Device $deviceModel,
     ) {
@@ -171,10 +171,10 @@ class GetCurrentDeviceAction
             'device' => is_string($device) ? $device : 'unknown',
             'platform' => is_string($platform) ? $platform : 'unknown',
             'browser' => is_string($browser) ? $browser : 'unknown',
-            'is_desktop' => $agent->isDesktop(
-            'is_mobile' => $agent->isMobile(
-            'is_tablet' => $agent->isTablet(
-            'is_phone' => $agent->isPhone(
+            'is_desktop' => $agent->isDesktop()
+            'is_mobile' => $agent->isMobile()
+            'is_tablet' => $agent->isTablet()
+            'is_phone' => $agent->isPhone()
             'is_robot' => $agent->isRobot()
         ];
     }

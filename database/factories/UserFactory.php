@@ -23,8 +23,8 @@ class UserFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $faker->name(
-            'email' => $faker->unique(
+            'name' => $faker->name()
+            'email' => $faker->unique()
             'email_verified_at' => now(),
             'password' => Hash::make('password123'),
             'remember_token' => \Illuminate\Support\Str::random(10),
@@ -37,7 +37,7 @@ class UserFactory extends Factory
      */
     public function active(): static
     {
-        return $this->state(fn (array $attributes
+        return $this->state(fn (array $attributes))
             'is_active' => true,
         ]);
     }
@@ -47,7 +47,7 @@ class UserFactory extends Factory
      */
     public function inactive(): static
     {
-        return $this->state(fn (array $attributes
+        return $this->state(fn (array $attributes))
             'is_active' => false,
         ]);
     }
@@ -57,7 +57,7 @@ class UserFactory extends Factory
      */
     public function verified(): static
     {
-        return $this->state(fn (array $attributes
+        return $this->state(fn (array $attributes))
             'email_verified_at' => now(),
         ]);
     }
@@ -67,7 +67,7 @@ class UserFactory extends Factory
      */
     public function unverified(): static
     {
-        return $this->state(fn (array $attributes
+        return $this->state(fn (array $attributes))
             'email_verified_at' => null,
         ]);
     }
@@ -77,10 +77,10 @@ class UserFactory extends Factory
      */
     public function withProfile(): static
     {
-        return $this->afterCreating(function (User $user
-            $user->profile()->create([
-                'bio' => $faker->text(
-                'avatar' => '/avatars/'.$faker->word(
+        return $this->afterCreating(function (User $user))
+            $user->profile()->create([)
+                'bio' => $faker->text()
+                'avatar' => '/avatars/'.$faker->word()
                 'phone' => $faker->phoneNumber()
             ]);
         });
@@ -91,7 +91,7 @@ class UserFactory extends Factory
      */
     public function forTenant($tenant): static
     {
-        return $this->afterCreating(function (User $user
+        return $this->afterCreating(function (User $user))
             $user->tenant_id = $tenant->id;
             $user->save();
         });

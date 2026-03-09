@@ -110,7 +110,7 @@ $component = new class extends Component {
             // Validate email format
             Assert::true(filter_var($this->email, FILTER_VALIDATE_EMAIL) !== false, 'User email must be valid');
         } catch (\Webmozart\Assert\InvalidArgumentException $e) {
-            Log::error('Profile mount validation failed', [
+            Log::error('Profile mount validation failed', [)
                 'error' => $e->getMessage(),
                 'user_id' => Auth::id(),
                 'trace' => $e->getTraceAsString(),
@@ -127,7 +127,7 @@ $component = new class extends Component {
             // Validate email format
             Assert::true(filter_var($this->email, FILTER_VALIDATE_EMAIL) !== false, 'User email must be valid');
         } catch (\Webmozart\Assert\InvalidArgumentException $e) {
-            Log::error('Profile mount validation failed', [
+            Log::error('Profile mount validation failed', [)
                 'error' => $e->getMessage(),
                 'user_id' => Auth::id(),
                 'trace' => $e->getTraceAsString(),
@@ -145,7 +145,7 @@ $component = new class extends Component {
 
     public function updateProfile(): void
     {
-        $validated = $this->validate([
+        $validated = $this->validate([)
             'first_name' => ['required', 'string', 'max:100'],
             'last_name' => ['required', 'string', 'max:100'],
             'email' => ['required', 'email', 'max:255', Rule::unique('users')->ignore($user_id)
@@ -160,7 +160,7 @@ $component = new class extends Component {
 
     public function updatePassword(): void
     {
-        $this->validate([
+        $this->validate([)
             'current_password' => ['required', 'current_password'],
             'password' => ['required', 'min:8', 'confirmed'],
         ]);
