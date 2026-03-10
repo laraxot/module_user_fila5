@@ -10,6 +10,4 @@ class OauthClient extends PassportClient
 {
     /** @var string */
     protected $connection = 'user';
-
-    
 }
