@@ -6,6 +6,7 @@ namespace Modules\User\Actions;
 
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -40,11 +41,16 @@ class CreateUserAction
 
     public function handle(): User
     {
-        $user = User::create([
+        /** @var array<string, mixed> $attributes */
+        $attributes = [
             'name' => $this->name,
             'email' => $this->email,
             'password' => Hash::make($this->password),
             ...($this->data ?? []),
+        ];
+
+        $user = User::create([
+            ...$attributes,
         ]);
 
         // Logica di business aggiuntiva

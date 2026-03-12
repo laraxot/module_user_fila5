@@ -35,8 +35,8 @@ return new class extends XotBaseMigration {
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-            // Se la tabella esiste già con id UUID, convertiamo a autoincrement
-            if ($this->hasColumn('id')) {
+            // Converte solo i vecchi schemi con `id` non bigint (es. UUID/string).
+            if ($this->hasColumn('id') && $this->getColumnType('id') !== 'bigint') {
                 // Rimuoviamo la PRIMARY KEY esistente
                 $this->dropPrimaryKey();
 
