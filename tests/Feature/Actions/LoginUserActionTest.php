@@ -42,7 +42,7 @@ describe('LoginUserAction', function (): void {
             'email' => 'not-authenticatable@example.com',
         ]);
 
-        $socialiteUser->setRelation('user', new stdClass);
+        $socialiteUser->setRelation('user', new stdClass());
 
         app(LoginUserAction::class)->execute($socialiteUser);
     })->throws(LogicException::class, 'User instance must implement Authenticatable.');

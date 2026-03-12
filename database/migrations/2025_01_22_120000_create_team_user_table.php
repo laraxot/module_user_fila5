@@ -36,7 +36,7 @@ return new class extends XotBaseMigration {
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
             // Converte solo i vecchi schemi con `id` non bigint (es. UUID/string).
-            if ($this->hasColumn('id') && $this->getColumnType('id') !== 'bigint') {
+            if ($this->hasColumn('id') && 'bigint' !== $this->getColumnType('id')) {
                 // Rimuoviamo la PRIMARY KEY esistente
                 $this->dropPrimaryKey();
 
