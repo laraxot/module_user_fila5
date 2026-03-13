@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
+namespace Modules\User\Tests\Unit\Datas;
+
+uses(\Modules\User\Tests\TestCase::class);
 
 use Modules\User\Datas\DeviceData;
 use Modules\User\Datas\FilamentShieldData;

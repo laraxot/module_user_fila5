@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
+namespace Modules\User\Tests\Unit\Events;
+
+uses(\Modules\User\Tests\TestCase::class);
 
 use Modules\User\Events\AddingTeam;
 use Modules\User\Events\AddingTeamMember;

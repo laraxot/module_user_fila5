@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
+namespace Modules\User\Tests\Unit\Mail;
+
+uses(\Modules\User\Tests\TestCase::class);
 
 use Modules\User\Mail\TeamInvitation;
 

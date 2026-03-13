@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
+namespace Modules\User\Tests\Unit\Rules;
+
+uses(\Modules\User\Tests\TestCase::class);
 
 use Modules\User\Models\User;
 use Modules\User\Rules\CheckOtpExpiredRule;

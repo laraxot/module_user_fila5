@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
+namespace Modules\User\Tests\Unit\Actions;
+
+uses(\Modules\User\Tests\TestCase::class);
 
 use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;
