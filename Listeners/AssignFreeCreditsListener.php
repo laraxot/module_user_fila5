@@ -23,15 +23,15 @@ class AssignFreeCreditsListener
     public function handle(Registered $event): void
     {
         $user = $event->user;
-        
+
         // Crea il profilo se non esiste
         $profile = Profile::firstOrCreate(
             ['user_id' => $user->id],
             ['credits' => self::FREE_STARTING_CREDITS]
         );
-        
+
         // Se il profilo esisteva già ma aveva 0 crediti, assegna i crediti iniziali
-        if ($profile->credits === 0) {
+        if (0 === $profile->credits) {
             $profile->update(['credits' => self::FREE_STARTING_CREDITS]);
         }
     }
