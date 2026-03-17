@@ -7,7 +7,7 @@ namespace Modules\User\Providers\Traits;
 use Carbon\CarbonInterval;
 use Illuminate\Support\Facades\Config;
 use Laravel\Passport\Passport;
-use Modules\User\Models\OauthAccessToken;
+use Modules\User\Models\OauthToken;
 use Modules\User\Models\OauthAuthCode;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthRefreshToken;
@@ -37,7 +37,7 @@ trait HasPassportConfiguration
      */
     protected function configureModels(): void
     {
-        Passport::useTokenModel(OauthAccessToken::class);
+        Passport::useTokenModel(OauthToken::class);
         Passport::useClientModel(OauthClient::class);
         Passport::useAuthCodeModel(OauthAuthCode::class);
         Passport::useRefreshTokenModel(OauthRefreshToken::class);
