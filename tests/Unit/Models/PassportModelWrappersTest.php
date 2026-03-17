@@ -54,7 +54,7 @@ test('oauth client has guard name property', function (): void {
 
 test('oauth client has required properties', function (): void {
     $client = new OauthClient();
-    
+
     // These properties are defined in the PHPDoc
     expect(property_exists($client, 'id'))->toBeTrue();
     expect(property_exists($client, 'name'))->toBeTrue();

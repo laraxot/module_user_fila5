@@ -7,10 +7,10 @@ namespace Modules\User\Providers\Traits;
 use Carbon\CarbonInterval;
 use Illuminate\Support\Facades\Config;
 use Laravel\Passport\Passport;
-use Modules\User\Models\OauthToken;
 use Modules\User\Models\OauthAuthCode;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthRefreshToken;
+use Modules\User\Models\OauthToken;
 use Webmozart\Assert\Assert;
 
 trait HasPassportConfiguration
