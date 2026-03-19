@@ -12,6 +12,7 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
+use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\Column;
@@ -195,8 +196,9 @@ class OauthAccessTokenResource extends XotBaseResource
     }
 
     /**
-     * @return array<string, Section>
+     * @return array<string, Component>
      */
+    #[\Override]
     public static function getFormSchema(): array
     {
         return [
