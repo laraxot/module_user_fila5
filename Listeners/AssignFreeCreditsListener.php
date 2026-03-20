@@ -29,6 +29,7 @@ class AssignFreeCreditsListener
         }
 
         $user = $event->user;
+<<<<<<< Updated upstream
         if (! $user instanceof Authenticatable) {
             return;
         }
@@ -41,6 +42,17 @@ class AssignFreeCreditsListener
         /** @var \Modules\Predict\Models\Profile $profile */
         $profile = \Modules\Predict\Models\Profile::firstOrCreate(
             ['user_id' => $userId],
+||||||| Stash base
+        
+        // Crea il profilo se non esiste
+        $profile = Profile::firstOrCreate(
+            ['user_id' => $user->id],
+=======
+        
+        // Crea il profilo se non esiste
+        $profile = Profile::firstOrCreate(
+            ['user_id' => (string) $user->getAuthIdentifier()],
+>>>>>>> Stashed changes
             ['credits' => self::FREE_STARTING_CREDITS]
         );
 
