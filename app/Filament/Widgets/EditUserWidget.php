@@ -106,7 +106,7 @@ class EditUserWidget extends XotBaseWidget
         $appends = $model->getAppends();
         $fields = [];
         foreach (array_merge($fillable, $appends) as $field) {
-            if (is_string($field) && $field !== '') {
+            if (is_string($field) && '' !== $field) {
                 $fields[] = $field;
             }
         }
