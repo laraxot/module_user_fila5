@@ -130,6 +130,10 @@ class LoginWidget extends XotBaseWidget
                 }
 
                 $this->addError($field, implode(' ', $parts));
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
             }
         } catch (\Exception $e) {
             report($e);

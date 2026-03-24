@@ -9,6 +9,10 @@ use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
@@ -23,6 +27,10 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\User\Actions\Passport\RevokeAllUserTokensAction;
@@ -30,6 +38,10 @@ use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\OauthToken;
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use function Safe\json_encode;
@@ -48,6 +60,10 @@ class OauthAccessTokenResource extends XotBaseResource
             ->filters(static::getTableFilters())
             ->actions(static::getTableActions())
             ->bulkActions(static::getTableBulkActions())
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
             ->defaultSort('created_at', 'desc');
     }
 
@@ -192,6 +208,10 @@ class OauthAccessTokenResource extends XotBaseResource
                         ->send();
                 }),
             'delete' => DeleteBulkAction::make(),
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         ];
     }
 

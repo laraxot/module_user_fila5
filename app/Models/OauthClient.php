@@ -151,4 +151,8 @@ final class OauthClient extends PassportClient implements AuthorizableContract
             return false;
         }
     }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 }
