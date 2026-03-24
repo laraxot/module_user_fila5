@@ -20,11 +20,15 @@ use Modules\User\Models\User;
  */
 class OauthAccessTokenFactory extends Factory
 {
+<<<<<<< Updated upstream
     /** @phpstan-ignore-next-line Passport access token is an Eloquent model at runtime, but PHPStan loses that type here. */
     protected $model = OauthToken::class;
 <<<<<<< Updated upstream
 =======
 
+>>>>>>> Stashed changes
+=======
+    protected $model = OauthToken::class; // @phpstan-ignore property.defaultValue
 >>>>>>> Stashed changes
 
     /**

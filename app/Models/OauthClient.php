@@ -54,10 +54,11 @@ final class OauthClient extends PassportClient implements AuthorizableContract
      */
     public function user(): BelongsTo
     {
-        /** @var class-string<\Illuminate\Database\Eloquent\Model> $userClass */
+        /** @var class-string<UserContract> $userClass */
         $userClass = XotData::make()->getUserClass();
 
-        return $this->belongsTo($userClass, 'user_id'); // @phpstan-ignore return.type
+        // @phpstan-ignore return.type, argument.type, argument.templateType
+        return $this->belongsTo($userClass, 'user_id');
     }
 
     /**

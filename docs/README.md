@@ -4,6 +4,11 @@
 
 Il modulo **User** gestisce l'autenticazione, l'autorizzazione e la gestione utenti completa nel sistema Laraxot Quaeris.
 
+## Stato qualità (sintesi)
+
+- **PHPStan**: Level 10 (raggiunto; dettagli nel vecchio `readme.md`)
+- **Focus**: sicurezza (authn/authz), multi-tenancy, integrazione Filament
+
 ## Funzionalità Principali
 
 ### Autenticazione
@@ -42,6 +47,8 @@ Modules\User\Models\Tenant
 - [Documentazione Root](../../../docs/USER_MODULE.md)
 - [Regole Trait](./traits.md)
 - [Filament Resources](./filament/)
+- [Metodologia GSD](../../../../docs/project/gsd-methodology.md)
+- [GSD templates locali](../../../../.gsd/README.md)
 
 ## Backlinks
 
