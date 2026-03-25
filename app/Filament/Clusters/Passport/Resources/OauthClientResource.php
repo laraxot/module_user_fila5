@@ -7,10 +7,6 @@ namespace Modules\User\Filament\Clusters\Passport\Resources;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
@@ -30,10 +26,6 @@ class OauthClientResource extends XotBaseResource
 {
     protected static ?string $cluster = Passport::class;
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
     /**
      * Get the form schema for the resource (XotBaseResource pattern).
      *
@@ -82,10 +74,6 @@ class OauthClientResource extends XotBaseResource
                 TextColumn::make('revoked')
                     ->boolean()
                     ->label('Active'),
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
                 TextColumn::make('created_at')
                     ->dateTime(),
                 TextColumn::make('updated_at')
@@ -95,10 +83,6 @@ class OauthClientResource extends XotBaseResource
                 EditAction::make(),
                 DeleteAction::make(),
             ])
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
             ->toolbarActions([
                 DeleteBulkAction::make(),
             ]);
@@ -112,7 +96,6 @@ class OauthClientResource extends XotBaseResource
     public static function getModel(): string
     {
         $model = LaravelPassport::clientModel();
-        // @phpstan-ignore-next-line
         if (! class_exists($model)) {
             return \Modules\User\Models\OauthClient::class;
         }

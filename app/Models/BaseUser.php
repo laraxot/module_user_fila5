@@ -126,10 +126,6 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @mixin \Eloquent
  */
 abstract class BaseUser extends Authenticatable implements HasMedia, HasName, HasTenants, MustVerifyEmail, UserContract, OAuthenticatable
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 {
     use HasApiTokens;
     use HasAuthenticationLogTrait;
@@ -329,7 +325,6 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     {
         // @phpstan-ignore function.alreadyNarrowedType
         if (method_exists($this, 'teams')) {
-            // @phpstan-ignore function.alreadyNarrowedType
             $this->teams()->detach($model);
         }
     }
@@ -338,7 +333,6 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     {
         // @phpstan-ignore function.alreadyNarrowedType
         if (method_exists($this, 'teams')) {
-            // @phpstan-ignore function.alreadyNarrowedType
             $this->teams()->attach($model);
         }
     }
@@ -392,19 +386,12 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
      */
     public function notifications(): MorphMany
     {
-        // @phpstan-ignore return.type
-        return $this->morphMany(Notification::class, 'notifiable');
+        return $this->morphMany(Notification::class, 'notifiable'); // @phpstan-ignore return.type
     }
 
-    /**
-     * Get the user's latest authentication log.
-     *
-     * @return MorphOne<AuthenticationLog, static>
-     */
     public function latestAuthentication(): MorphOne
     {
-        // @phpstan-ignore return.type
-        return $this->morphOne(AuthenticationLog::class, 'authenticatable')->latestOfMany();
+        return $this->morphOne(AuthenticationLog::class, 'authenticatable')->latestOfMany(); // @phpstan-ignore return.type
     }
 
     public function getFullNameAttribute(?string $value): string
