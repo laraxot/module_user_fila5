@@ -5,7 +5,11 @@
 - **Strategy**: Keep HEAD/local (ours) side
 - **Root cause**: Nested stash-on-merge conflicts
 
+<<<<<<< .merge_file_Ut4vHf
+## PHP Files
+=======
 ## PHP Files Resolved
+>>>>>>> .merge_file_Jbdn3m
 - Listeners/AssignFreeCreditsListener.php
 - app/Actions/CreateUserAction.php
 - app/Filament/Clusters/Passport/Pages/PassportDashboard.php
@@ -48,7 +52,11 @@
 - tests/Unit/Models/PassportModelWrappersTest.php
 - tests/Unit/Models/Policies/PoliciesTest.php
 
+<<<<<<< .merge_file_Ut4vHf
+## Documentation Files
+=======
 ## Documentation Files Resolved
+>>>>>>> .merge_file_Jbdn3m
 - docs/best-practices/nestedset-migration-best-practices.md
 - docs/fixes/base-classes-corrections.md
 - docs/nestedset-migration-best-practices.md
@@ -56,6 +64,10 @@
 - docs/translation-city-field-refactor.md
 - pest-test-report.md
 
+<<<<<<< .merge_file_Ut4vHf
+## Config Files
+- composer.json
+=======
 ## Config Files Resolved
 - composer.json
 
@@ -70,6 +82,7 @@
 - lang/it/passport_dashboard.php
 - lang/it/password.php
 - lang/it/recent_logins.php
+>>>>>>> .merge_file_Jbdn3m
 
 ## Backlinks
 - [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)

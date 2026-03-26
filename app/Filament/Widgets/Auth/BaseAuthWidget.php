@@ -24,7 +24,10 @@ abstract class BaseAuthWidget extends XotBaseWidget
      *
      * @return array<mixed>
      */
-    abstract public function getFormSchema(): array;
+    public function getFormSchema(): array
+    {
+        return [];
+    }
 
     /**
      * Restituisce i dati per la view.
