@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Authentication;
 
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\DB;
 use Laravel\Passport\ClientRepository;
 use Laravel\Passport\Passport;
 use Modules\User\Models\Device;
@@ -33,7 +33,8 @@ beforeEach(function (): void {
     ]);
 });
 
-function ensurePersonalAccessClient(): void {
+function ensurePersonalAccessClient(): void
+{
     $clientModel = Passport::client();
 
     if ($clientModel->newQuery()->where('revoked', false)->exists()) {

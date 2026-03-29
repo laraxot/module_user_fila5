@@ -9,8 +9,8 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite;
 
 // use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
-use Modules\User\Models\DeviceUser;
 use Modules\User\Actions\Passport\RevokeTokenAction;
+use Modules\User\Models\DeviceUser;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
