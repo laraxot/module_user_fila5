@@ -7,7 +7,7 @@
 - Laravel 12.30.1
 - PHP 8.3.25
 - Filament 3.x
-- Livewire 3.x
+- Livewire 4.x
 
 ## Causa Radice
 Il componente Livewire della pagina di login di Filament non veniva trovato perché:

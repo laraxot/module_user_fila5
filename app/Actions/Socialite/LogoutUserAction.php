@@ -10,7 +10,7 @@ namespace Modules\User\Actions\Socialite;
 
 // use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
 use Modules\User\Models\DeviceUser;
-use Modules\User\Models\OauthRefreshToken;
+use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
@@ -33,13 +33,7 @@ class LogoutUserAction
 
         // Assert::methodExists($accessToken, 'delete');
         if (method_exists($accessToken, 'getKey')) {
-            OauthRefreshToken::where('access_token_id', $accessToken->getKey())->delete();
-        }
-
-        if (method_exists($accessToken, 'delete')) {
-            $accessToken->delete();
-
-            // $user->token()->delete();
+            app(RevokeTokenAction::class)->execute((string) $accessToken->getKey());
         }
 
         /*

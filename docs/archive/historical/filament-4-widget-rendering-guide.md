@@ -378,7 +378,7 @@ class LoginWidget extends XotBaseWidget
 
 - [Filament 4 Widgets](https://filamentphp.com/docs/4.x/widgets)
 - [Filament 4 Forms](https://filamentphp.com/docs/4.x/forms)
-- [Livewire 3](https://livewire.laravel.com/docs/3.x)
+- [Livewire 4](https://livewire.laravel.com/docs/3.x)
 - [Laraxot Widget Rules](./auth_widget_rules.md)
 
 ## 🎯 Conclusione

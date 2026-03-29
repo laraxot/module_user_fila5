@@ -169,4 +169,14 @@ class User extends BaseUser
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;
         return true;
     }
+
+    #[\Override]
+    public function canAccessPanel(\Filament\Panel $panel): bool
+    {
+        if ('quaeris::admin' === $panel->getId()) {
+            return $this->hasAnyRole(['admin', 'survey_manager', 'respondent']);
+        }
+
+        return parent::canAccessPanel($panel);
+    }
 }

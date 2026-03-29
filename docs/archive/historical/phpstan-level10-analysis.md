@@ -242,9 +242,9 @@ These fixes are **local to User module** and won't affect other modules.
 
 ## 🔗 Related Files
 
-- [BaseUser.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/app/Models/BaseUser.php) - Already fixed
-- [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php) - Fixed in Xot
-- [Passport Documentation](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/docs/passport.md)
+- [BaseUser.php](file://./laravel/Modules/User/app/Models/BaseUser.php) - Already fixed
+- [PassportHasApiTokensContract.php](file://./laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php) - Fixed in Xot
+- [Passport Documentation](file://./laravel/Modules/User/docs/passport.md)
 
 ---
 
