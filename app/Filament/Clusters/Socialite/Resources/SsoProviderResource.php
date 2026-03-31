@@ -4,22 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Socialite\Resources;
 
-use Filament\Actions\BulkActionGroup;
-use Filament\Actions\DeleteAction;
-use Filament\Actions\DeleteBulkAction;
-use Filament\Actions\EditAction;
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Modules\User\Filament\Clusters\Socialite;
-use Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource\Pages;
-use Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource\RelationManagers\UsersRelationManager;
 use Modules\User\Models\SsoProvider;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -94,6 +87,4 @@ class SsoProviderResource extends XotBaseResource
                 ->sortable(),
         ];
     }
-
-   
 }
