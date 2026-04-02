@@ -67,3 +67,6 @@ Rule: never commit files with conflict markers. Fix immediately when found.
 - Laravel 11/12
 - Spatie Laravel Permission
 - Filament v5
+
+## AI Workflows
+- [AI Methodologies](./ai-methodologies.md)
