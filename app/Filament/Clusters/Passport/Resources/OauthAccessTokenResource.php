@@ -295,7 +295,6 @@ class OauthAccessTokenResource extends XotBaseResource
         ];
     }
 
-    
     /**
      * @return array<string, Component>
      */
