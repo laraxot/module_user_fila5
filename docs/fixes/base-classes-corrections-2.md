@@ -293,7 +293,11 @@ e
 ## Applicazione ad Altri Moduli
 
 Questo pattern di correzione può essere applicato a:
+<<<<<<< HEAD
 - **Modulo <nome progetto>**: Verificare QuestionChart, SurveyPdf, Contact
+=======
+- **Modulo Quaeris**: Verificare QuestionChart, SurveyPdf, Contact
+>>>>>>> laraxot/develop
 - **Modulo Blog**: Verificare Post, Category, Tag
 - **Modulo Dental**: Verificare Visit, Treatment, Patient
 - **Tutti gli altri moduli**: Audit sistematico
