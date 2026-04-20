@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * Service Providers Configuration
  * This file defines Socialite OAuth2 credentials for authentication
  * All credentials must be managed through Filament admin (SocialProviderResource)
- * No environment variables are required for production security
+ * No environment variables are required for production security.
  */
 
 return [
