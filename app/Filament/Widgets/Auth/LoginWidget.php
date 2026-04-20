@@ -12,7 +12,7 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 /**
- * LoginWidget: Widget di login conforme alle regole Windsurf/Xot.
+ * LoginWidget: widget login con form Filament e "vestito" demandato al template tema.
  * - Estende XotBaseWidget
  * - Usa solo componenti Filament importati
  * - Validazione e sicurezza integrate

@@ -51,6 +51,12 @@ Modules\User\Models\Tenant
 
 ## Architectural Rules — Violations Fixed
 
+### Profiles migration governance
+- La tabella `profiles` deve avere sia `id` sia `uuid`.
+- Il modulo User usa **una sola migrazione autorevole** per `profiles`: `*_create_profiles_table.php`.
+- Se manca una colonna come `uuid`, si corregge quella migrazione e si aggiorna il timestamp del file; non si crea una migrazione `add_uuid_to_profiles`.
+- Riferimento canonico: [wiki/concepts/profile-migration-uuid-contract.md](./wiki/concepts/profile-migration-uuid-contract.md)
+
 ### No Log calls in production code
 `Log::info()`, `Log::debug()`, `Log::error()` are forbidden in Actions, Models, Services, and Widgets.
 Found and removed from `RegisterWidget`. Laravel logs unhandled exceptions automatically.

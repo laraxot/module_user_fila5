@@ -8,9 +8,9 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
  * PHILOSOPHY - ONE MIGRATION PER TABLE:
- * Laraxot uses a single authoritative migration file per table/model.
- * To evolve the schema, we modify THIS file and update its timestamp so it
- * re-runs. We never create separate alter/add/repair migrations.
+ * Laraxot keeps a single authoritative create migration for each table/model.
+ * Schema evolution happens by editing this file and bumping its timestamp so
+ * the idempotent tableUpdate() block re-runs on already-migrated databases.
  *
  * LARAXOT ID+UUID CONTRACT:
  * Every table must have:
@@ -27,7 +27,7 @@ return new class extends XotBaseMigration {
         // -- CREATE (new installations) --
         $this->tableCreate(static function (Blueprint $table): void {
             $table->id();
-            $table->string('uuid', 36)->index()->nullable();
+            $table->string('uuid', 36)->index()->nullable()->after('id');
             $table->string('user_id', 36)->index()->nullable();
             $table->string('type')->index()->nullable();
             $table->string('first_name')->nullable();
