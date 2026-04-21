@@ -1,11 +1,13 @@
 <?php
 
-/**
- * Login widget translations in English following 5-element structure
- * Automatically resolved by LangServiceProvider
- */
+declare(strict_types=1);
 
 /**
+ * Login widget translations in English following 5-element structure
+ * Automatically resolved by LangServiceProvider.
+ */
+
+/*
  * Login widget translations in English following 5-element structure
  * Automatically resolved by LangServiceProvider.
  */
@@ -45,14 +47,14 @@ return [
         'login_success' => [
             'key' => 'auth.login_success',
             'text' => 'Login successful',
-            'description' => 'Message displayed after successful authentication'
+            'description' => 'Message displayed after successful authentication',
         ],
 
         'login_error' => [
             'key' => 'auth.login_error',
             'text' => 'Login error',
-            'description' => 'Error message in case of invalid authentication'
-        ]
+            'description' => 'Error message in case of invalid authentication',
+        ],
     ],
 
     'ui' => [
