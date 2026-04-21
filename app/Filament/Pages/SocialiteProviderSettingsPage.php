@@ -267,7 +267,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
         }
 
         // Generate PHP file content
-        $content = "<?php\n\ndeclare(strict_types=1);\n\nreturn " . var_export($config, true) . ";\n";
+        $content = "<?php\n\ndeclare(strict_types=1);\n\nreturn ".var_export($config, true).";\n";
 
         // Write file
         File::put($path, $content);
@@ -309,7 +309,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
             return str_repeat('•', $length);
         }
 
-        return str_repeat('•', $length - 4) . substr($secret, -4);
+        return str_repeat('•', $length - 4).substr($secret, -4);
     }
 
     /**
@@ -331,5 +331,4 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
         return $newValue;
     }
-
 }

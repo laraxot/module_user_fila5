@@ -1,40 +1,35 @@
-# Wiki Locale - Module User
+# Wiki Locale Index
 
-## Schema di Riferimento
+## Karpathy LLM Wiki Standard
 
-Vedi [[../../../../docs/.schema/WIKI_SCHEMA.md|Schema Wiki Globale]]
+- [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Strict structural constraints.
+- [llm-wiki-standard](../../../../docs/wiki/concepts/karpathy-wiki.md): Repository mapping and knowledge lifecycle.
 
-## Struttura Locale
+## Sacred Hierarchy
 
-```
-wiki/
-├── concepts/       # Pattern e metodologie
-├── entities/       # Classi e componenti
-├── summaries/      # Sommari documenti
-├── comparisons/    # Confronti
-└── overviews/     # Panoramiche
-```
+- [concepts/](./concepts/): Architectural patterns and methodologies.
+- [entities/](./entities/): Key models and components.
+- [sources/](./sources/): Research data and external links.
+- [comparisons/](./comparisons/): Alternative implementations.
+- [decisions/](./decisions/): ADL (Architectural Decision Log).
+- [troubleshooting/](./troubleshooting/): Known issues and solutions.
+- [_archive/](./_archive/): Legacy documentation.
+- [_templates/](./_templates/): Standard templates.
 
-## Pagine Compilate
+## Compiled Pages
 
-| Pagina | Tipo | Argomento |
-|--------|------|-----------|
-| [user-module](./overviews/user-module.md) | overview | User, Profile, Team, Spatie RBAC, OAuth, multi-tenancy |
-| [socialite-architecture](./concepts/socialite-architecture.md) | concept | Architettura Socialite: SocialiteUser, SocialProvider, no google_id column |
-| [socialite-admin-tutorial](./concepts/socialite-admin-tutorial.md) | tutorial | Configurare GOOGLE_CLIENT_ID/SECRET via backoffice Filament |
-| [socialite-user](./entities/socialite-user.md) | entity | Modello SocialiteUser — tabella socialite_users |
-| [login-page-design-comuni](./concepts/login-page-design-comuni.md) | concept | Login page Bootstrap Italia / Design Comuni |
-| [filament-langserviceprovider-governance](./concepts/filament-langserviceprovider-governance.md) | concept | Regola anti-regressione: no `->label()`/`->tooltip()` nei componenti Filament |
-| [profile-migration-uuid-contract](./concepts/profile-migration-uuid-contract.md) | concept | `profiles.uuid` obbligatorio e una sola `create_profiles_table` canonica |
-
-## Raw Sources
-
-Vedi [[../raw/index|Lista Sorgenti Grezzi]]
-
-## Index Globale
-
-Vedi [[../../../../docs/wiki/index|Index Globale Wiki]]
-
----
-
-*Ultimo aggiornamento: 2026-04-20*
+| Page | Type | Source | Updated |
+|------|------|--------|---------|
+| [.gitkeep](./concepts/.gitkeep) | Concept | - | 2026-04-21 |
+| [filament-langserviceprovider-governance](./concepts/filament-langserviceprovider-governance.md) | Concept | - | 2026-04-21 |
+| [login-page-design-comuni](./concepts/login-page-design-comuni.md) | Concept | - | 2026-04-21 |
+| [profile-migration-uuid-contract](./concepts/profile-migration-uuid-contract.md) | Concept | - | 2026-04-21 |
+| [socialite-admin-configuration](./concepts/socialite-admin-configuration.md) | Concept | - | 2026-04-21 |
+| [socialite-admin-tutorial](./concepts/socialite-admin-tutorial.md) | Concept | - | 2026-04-21 |
+| [socialite-architecture-analysis](./concepts/socialite-architecture-analysis.md) | Concept | - | 2026-04-21 |
+| [socialite-architecture](./concepts/socialite-architecture.md) | Concept | - | 2026-04-21 |
+| [socialite-backoffice-google-setup](./concepts/socialite-backoffice-google-setup.md) | Concept | - | 2026-04-21 |
+| [socialite-provider-governance](./concepts/socialite-provider-governance.md) | Concept | - | 2026-04-21 |
+| [translation-5-level-structure](./concepts/translation-5-level-structure.md) | Concept | - | 2026-04-21 |
+| [xotbasepage-inheritance-rules](./concepts/xotbasepage-inheritance-rules.md) | Concept | - | 2026-04-21 |
+| [xotbasepage-inheritance](./concepts/xotbasepage-inheritance.md) | Concept | - | 2026-04-21 |
