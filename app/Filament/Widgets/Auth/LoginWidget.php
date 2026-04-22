@@ -26,9 +26,6 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  */
 class LoginWidget extends XotBaseWidget
 {
-    /** Vista del widget (evita lookup da GetViewByClassAction che cerca login-widget). */
-    protected string $view = 'user::filament.widgets.auth.login';
-
     /**
      * @return array<string, Field>
      */
@@ -59,7 +56,7 @@ class LoginWidget extends XotBaseWidget
             'password' => is_string($data['password'] ?? null) ? $data['password'] : '',
         ];
 
-        $remember = isset($data['remember']) && true === $data['remember'];
+        $remember = isset($data['remember']) && $data['remember'] === true;
 
         if (Auth::attempt($credentials, $remember)) {
             session()->regenerate();
