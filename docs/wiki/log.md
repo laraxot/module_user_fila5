@@ -1,5 +1,20 @@
 # User Wiki Log
 
+## [2026-04-27] governance | policy matrix adoption from Xot
+- allineata la documentazione User alla matrice cross-modulo (`policy-module-matrix`).
+- esplicitata raccomandazione: moduli business non identity-first -> default `XotBasePolicy`.
+- mantenuto `UserBasePolicy` per dominio identity/access.
+
+## [2026-04-27] governance | policy inheritance boundary User vs Xot
+- documentata la regola decisionale su quando usare `UserBasePolicy` e quando preferire `XotBasePolicy`.
+- chiarito che `UserBasePolicy` e' specializzazione dominio identity, non base universale per tutti i moduli.
+- nuova pagina: `concepts/policy-inheritance-boundary.md`.
+
+## [2026-04-27] governance | remove invalid additive migration on profiles
+- rimosso `database/migrations/2026_04_27_000000_add_credits_to_profiles_table.php` per violazione regola "1 modello = 1 migrazione owner".
+- chiarito boundary: il contratto `profiles` e' owner Fixcity; User non deve patchare schema `profiles`.
+- nuova pagina: `concepts/profiles-ownership-boundary-rule.md`.
+
 ## [2026-04-20] bugfix | socialite provider page property type compatibility
 - risolto fatal php su `SocialiteProviderSettingsPage` per incompatibilita tipi proprieta con classi base Filament/Xot.
 - fix applicati:
@@ -44,3 +59,12 @@
   - confermata una sola migrazione autorevole `create_profiles_table`
   - migrazione rinominata a `2026_04_20_173500_create_profiles_table.php` per riesecuzione idempotente
   - regola documentata in `concepts/profile-migration-uuid-contract.md`
+
+## [2026-04-27] discussion | Policy Inheritance Boundary
+- Created: concepts/policy-inheritance-boundary.md (decisione architetturale)
+- Updated: index.md (aggiunto cross-reference)
+- Decision: Mantenere separazione UserBasePolicy vs XotBasePolicy
+- Rationale: Dependency isolation, contract clarity, module boundaries, testing flexibility
+- Best practices documentate: type-hint UserContract, permission dot notation, test con permessi reali
+- Enhancements proposti: canAny(), canAll(), scope(), after() hooks
+- Commit: docs: document policy inheritance boundary decision

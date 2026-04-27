@@ -1,7 +1,4 @@
 <?php
-
-declare(strict_types=1);
-
 return [
     'fields' => [
         'email' => [
@@ -34,7 +31,13 @@ return [
         ],
     ],
     'messages' => [
-        'failed' => 'These credentials do not match our records.',
+        'failed' => [
+            'key'         => 'user::auth.messages.failed',
+            'text'        => 'Invalid credentials.',
+            'description' => 'Error message shown when login credentials are invalid',
+            'context'     => 'login_form',
+            'placeholder' => '',
+        ],
         'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
         'unauthorized' => 'You are not authorized to access this resource.',
     ],
@@ -141,7 +144,7 @@ return [
                 'label' => 'Use the email address you used when creating your account.',
                 'tooltip' => 'Hint about correct email',
                 'placeholder' => '',
-                'helper_text' => 'Guidance for email-based login',
+                'helper_text' => 'Guidance for email usage',
                 'description' => 'Support message for email usage',
             ],
             'support_item_password' => [
@@ -173,12 +176,12 @@ return [
                 'description' => 'Registration link text',
             ],
         ],
-    ],
-    'auth_button' => [
-        'login' => 'Sign in',
-        'logout' => 'Sign out',
-        'profile' => 'My profile',
-        'dashboard' => 'Dashboard',
-        'personal_area' => 'Access personal area',
+        'auth_button' => [
+            'login' => 'Sign in',
+            'logout' => 'Sign out',
+            'profile' => 'My profile',
+            'dashboard' => 'Dashboard',
+            'personal_area' => 'Access personal area',
+        ],
     ],
 ];

@@ -33,3 +33,5 @@
 | [translation-5-level-structure](./concepts/translation-5-level-structure.md) | Concept | - | 2026-04-21 |
 | [xotbasepage-inheritance-rules](./concepts/xotbasepage-inheritance-rules.md) | Concept | - | 2026-04-21 |
 | [xotbasepage-inheritance](./concepts/xotbasepage-inheritance.md) | Concept | - | 2026-04-21 |
+| [profiles-ownership-boundary-rule](./concepts/profiles-ownership-boundary-rule.md) | Concept | - | 2026-04-27 |
+| [policy-inheritance-boundary](./concepts/policy-inheritance-boundary.md) | Concept | - | 2026-04-27 |

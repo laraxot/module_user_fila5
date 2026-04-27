@@ -47,6 +47,31 @@ return [
             'description' => 'remember',
             'helper_text' => 'remember',
             'placeholder' => 'remember',
+            'label' => 'remember',
+        ],
+        'password' => [
+            'description' => 'password',
+            'helper_text' => 'password',
+            'placeholder' => 'password',
+            'label' => 'password',
+        ],
+        'email' => [
+            'description' => 'email',
+            'helper_text' => 'email',
+            'placeholder' => 'email',
+            'label' => 'email',
+        ],
+    ],
+    'actions' => [
+        'hidePassword' => [
+            'tooltip' => 'hidePassword',
+            'icon' => 'hidePassword',
+            'label' => 'hidePassword',
+        ],
+        'showPassword' => [
+            'tooltip' => 'showPassword',
+            'icon' => 'showPassword',
+            'label' => 'showPassword',
         ],
     ],
 ];
