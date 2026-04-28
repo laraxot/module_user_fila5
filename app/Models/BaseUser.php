@@ -131,12 +131,8 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     use HasAuthenticationLogTrait;
     use HasChildren;
     use HasModules;
-    use HasSpatiePermission {
-        teams as spatieTeams; // alias to avoid collision
-    }
-    use HasTeams {
-        teams as userTeams; // trait method alias
-    }
+    use HasTeams;
+    use HasSpatiePermission;
     use HasUuids;
     use HasXotFactory;
     use InteractsWithMedia;

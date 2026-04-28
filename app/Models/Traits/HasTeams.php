@@ -454,11 +454,11 @@ trait HasTeams
         return $this->id === $team->user_id;
     }
 
-    /**
+    /*
      * Get all of the teams the user belongs to.
      *
      * @return BelongsToMany<Model&TeamContract, $this, TeamUser, 'pivot'>
-     */
+     
     public function teams(): BelongsToMany
     {
         $xot = XotData::make();
@@ -466,7 +466,7 @@ trait HasTeams
 
         return $this->belongsToManyX($teamClass);
     }
-
+    */
     /**
      * Get all of the teams that the user owns.
      */
