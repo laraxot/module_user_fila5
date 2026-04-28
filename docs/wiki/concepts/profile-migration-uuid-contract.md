@@ -14,7 +14,8 @@ La tabella `profiles` deve rispettare il contratto Laraxot:
 - `id`: chiave primaria interna database
 - `uuid`: identificatore esterno/pubblico
 
-Se il modello `Profile` salva o cerca `uuid`, la migrazione canonica della tabella deve dichiarare e backfillare la colonna tramite `tableUpdate()`.
+Se il modello `Profile` salva o cerca `uuid`, la migrazione canonica della tabella
+deve dichiarare e backfillare la colonna tramite `tableUpdate()`.
 
 ## One Table = One Migration
 
@@ -35,6 +36,16 @@ Si modifica la migrazione canonica, poi si aggiorna il timestamp del file per fa
   - confermata aggiunta idempotente in `tableUpdate()` con `if (! $this->hasColumn('uuid'))`
   - aggiornato timestamp del file migrazione per riesecuzione controllata
 
+## Fix 2026-04-28 (MariaDB syntax)
+
+- errore osservato: `SQLSTATE[42000] ... near 'after id'` durante `CREATE TABLE profiles`
+- causa: uso di `->after('id')` nel blocco `tableCreate()`
+- dettaglio tecnico: `after()` e' un posizionamento colonna valido per `ALTER TABLE`,
+  non per la definizione colonna nel `CREATE TABLE` generato da Laravel su MariaDB
+- correzione:
+  - rimosso `->after('id')` da `tableCreate()` per `uuid`
+  - mantenuto `->after(...)` solo nel blocco `tableUpdate()` (additive alter, idempotente)
+
 ## Implicazione pratica
 
 Quando compare un bug schema su `profiles`, la prima domanda non e':
@@ -46,5 +57,5 @@ La prima domanda corretta e':
 ## Riferimenti
 
 - `laravel/Modules/User/app/Models/BaseProfile.php`
-- `laravel/Modules/User/database/migrations/2026_04_20_173500_create_profiles_table.php`
+- `laravel/Modules/User/database/migrations/2026_04_28_120000_create_profiles_table.php`
 - `laravel/Modules/Xot/docs/database/migration-base-rules.md`

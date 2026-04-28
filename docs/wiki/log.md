@@ -1,5 +1,23 @@
 # User Wiki Log
 
+## [2026-04-28] docs | hardening migrazioni MariaDB create/alter boundary
+- aggiunta pagina `concepts/mariadb-create-table-after-rule.md`.
+- formalizzata regola DRY+KISS: `after()` vietato in `tableCreate()`, ammesso solo in `tableUpdate()`.
+- aggiunte sezioni operative: best practices, bad practices, false friends, checklist e link ufficiali verificati.
+- aggiornato `index.md` con il nuovo concetto.
+- ingest eseguito in QMD index `fixcity` (collection `wiki` aggiornata).
+
+## [2026-04-28] bugfix | profiles create migration MariaDB `after()` syntax error
+- errore osservato in migration `2026_04_28_120000_create_profiles_table`:
+  SQL syntax error vicino a `after id` in `CREATE TABLE`.
+- root cause: `->after('id')` usato nel blocco `tableCreate()` su colonna `uuid`.
+- fix applicato: rimosso `after()` dal create; `after()` resta nel `tableUpdate()`
+  idempotente (ALTER path).
+- verifica:
+  `php artisan migrate --path=Modules/User/database/migrations/2026_04_28_120000_create_profiles_table.php --realpath --force`
+  eseguito con esito `DONE`.
+- docs aggiornati: `concepts/profile-migration-uuid-contract.md`.
+
 ## [2026-04-27] governance | policy matrix adoption from Xot
 - allineata la documentazione User alla matrice cross-modulo (`policy-module-matrix`).
 - esplicitata raccomandazione: moduli business non identity-first -> default `XotBasePolicy`.
@@ -11,7 +29,8 @@
 - nuova pagina: `concepts/policy-inheritance-boundary.md`.
 
 ## [2026-04-27] governance | remove invalid additive migration on profiles
-- rimosso `database/migrations/2026_04_27_000000_add_credits_to_profiles_table.php` per violazione regola "1 modello = 1 migrazione owner".
+- rimosso `database/migrations/2026_04_27_000000_add_credits_to_profiles_table.php`
+  per violazione regola "1 modello = 1 migrazione owner".
 - chiarito boundary: il contratto `profiles` e' owner Fixcity; User non deve patchare schema `profiles`.
 - nuova pagina: `concepts/profiles-ownership-boundary-rule.md`.
 

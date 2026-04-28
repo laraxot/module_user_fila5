@@ -19,7 +19,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * The `id` is NEVER exposed in APIs or URLs; `uuid` is used for all external
  * references. XotBaseModel::casts() already handles both.
  */
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     protected ?string $model_class = Profile::class;
 
     public function up(): void
@@ -27,7 +28,7 @@ return new class extends XotBaseMigration {
         // -- CREATE (new installations) --
         $this->tableCreate(static function (Blueprint $table): void {
             $table->id();
-            $table->string('uuid', 36)->index()->nullable()->after('id');
+            $table->string('uuid', 36)->index()->nullable();
             $table->string('user_id', 36)->index()->nullable();
             $table->string('type')->index()->nullable();
             $table->string('first_name')->nullable();
@@ -62,13 +63,13 @@ return new class extends XotBaseMigration {
         // -- UPDATE (existing installations: additive, idempotent) --
         $this->tableUpdate(function (Blueprint $table): void {
             if (! $this->hasColumn('uuid')) {
-                $table->string('uuid', 36)->nullable()->index()->after('id');
+                $table->string('uuid', 36)->nullable()->index();
             }
             if (! $this->hasColumn('user_id')) {
-                $table->string('user_id', 36)->index()->nullable()->after('uuid');
+                $table->string('user_id', 36)->index()->nullable();
             }
             if (! $this->hasColumn('type')) {
-                $table->string('type')->index()->nullable()->after('user_id');
+                $table->string('type')->index()->nullable();
             }
             if (! $this->hasColumn('email')) {
                 $table->string('email')->nullable();
