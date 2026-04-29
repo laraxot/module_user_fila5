@@ -9,21 +9,17 @@ declare(strict_types=1);
 
 namespace Modules\User\Models\Policies;
 
-use Illuminate\Auth\Access\HandlesAuthorization;
-use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
-use Modules\Xot\Models\Policies\XotBasePolicy;
 use Illuminate\Auth\Access\Response;
 use Modules\Fixcity\Models\Ticket;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Models\Policies\XotBasePolicy;
 
 abstract class UserBasePolicy extends XotBasePolicy
 {
     // Only user-specific authorization rules here
     // Universal rules come from parent XotBasePolicy
-      /**
+    /**
      * Determine whether the user can view any models.
-     *
-     * @return Response|bool
      */
     public function viewAny(UserContract $user): Response|bool
     {
@@ -33,8 +29,6 @@ abstract class UserBasePolicy extends XotBasePolicy
 
     /**
      * Determine whether the user can view the model.
-     *
-     * @return Response|bool
      */
     public function view(UserContract $user, Ticket $ticket): Response|bool
     {
@@ -85,4 +79,3 @@ abstract class UserBasePolicy extends XotBasePolicy
         return $user->hasPermissionTo('Delete ticket');
     }
 }
-
