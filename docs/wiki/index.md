@@ -73,5 +73,6 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 | Pagina | Tipo | Argomento |
 |--------|------|-----------|
 | [socialite-development](./concepts/socialite-development.md) | Concept | Socialite troubleshooting |
+| [spatie-permission-team-model-not-configured](./troubleshooting/spatie-permission-team-model-not-configured.md) | Troubleshooting | Team model mancante in config permission |
 
 Aggiornato: 2026-04-28

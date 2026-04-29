@@ -1,5 +1,13 @@
 # User Wiki Log
 
+## [2026-04-28] fix | spatie permission team model config missing su route admin
+- errore runtime gestito: `Spatie\Permission\Exceptions\TeamModelNotConfigured` su `/admin`.
+- root cause: `teams => true` senza `models.team` in `permission.php`.
+- fix applicato in tutti i profili config (`config/permission.php` + varianti `config/*/permission.php`) con:
+  `models.team => Modules\User\Models\Team::class`.
+- verifica runtime eseguita con `php artisan tinker --execute="dump(config('permission.models.team'));"`.
+- nuova pagina troubleshooting: `troubleshooting/spatie-permission-team-model-not-configured.md`.
+
 ## [2026-04-28] docs | hardening migrazioni MariaDB create/alter boundary
 - aggiunta pagina `concepts/mariadb-create-table-after-rule.md`.
 - formalizzata regola DRY+KISS: `after()` vietato in `tableCreate()`, ammesso solo in `tableUpdate()`.
