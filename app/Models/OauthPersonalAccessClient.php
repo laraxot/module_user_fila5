@@ -7,8 +7,8 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
- * @property string $id
- * @property string $client_id
+ * @property string           $id
+ * @property string           $client_id
  * @property OauthClient|null $client
  */
 class OauthPersonalAccessClient extends BaseModel

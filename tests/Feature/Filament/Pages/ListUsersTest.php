@@ -29,7 +29,7 @@ beforeEach(function (): void {
     }
     Filament::setCurrentPanel($panel);
 
-    $this->listUsersPage = new ListUsers;
+    $this->listUsersPage = new ListUsers();
 
     // Create some test users
     $this->users = User::factory()
