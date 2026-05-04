@@ -1,4 +1,5 @@
 <?php
+
 return [
     'fields' => [
         'email' => [
@@ -32,10 +33,10 @@ return [
     ],
     'messages' => [
         'failed' => [
-            'key'         => 'user::auth.messages.failed',
-            'text'        => 'Invalid credentials.',
+            'key' => 'user::auth.messages.failed',
+            'text' => 'Invalid credentials.',
             'description' => 'Error message shown when login credentials are invalid',
-            'context'     => 'login_form',
+            'context' => 'login_form',
             'placeholder' => '',
         ],
         'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',

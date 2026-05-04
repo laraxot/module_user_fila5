@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\OauthClientResource\Pages;
 
 use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
@@ -24,7 +25,7 @@ class ViewOauthClient extends XotBaseViewRecord
     /**
      * Get the header actions.
      *
-     * @return array<string, Action|\Filament\Actions\ActionGroup>
+     * @return array<string, Action|ActionGroup>
      */
     protected function getHeaderActions(): array
     {
@@ -33,7 +34,7 @@ class ViewOauthClient extends XotBaseViewRecord
         /** @var OauthClient|null $record */
         $record = $this->record;
 
-        if (null !== $record && ! $record->revoked) {
+        if ($record !== null && ! $record->revoked) {
             $actions['revoke'] = Action::make('revoke')
                 ->label(__('user::actions.oauth.revoke_client.label'))
                 ->icon('heroicon-o-x-circle')

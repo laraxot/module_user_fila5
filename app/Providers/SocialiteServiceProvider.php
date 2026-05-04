@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Event;
 use SocialiteProviders\Manager\ServiceProvider as BaseSocialiteServiceProvider;
 use SocialiteProviders\Manager\SocialiteWasCalled;
+use SocialiteProviders\Microsoft\Provider;
 
 class SocialiteServiceProvider extends BaseSocialiteServiceProvider
 {
@@ -30,7 +31,7 @@ class SocialiteServiceProvider extends BaseSocialiteServiceProvider
         parent::boot();
 
         Event::listen(function (SocialiteWasCalled $event): void {
-            $event->extendSocialite('microsoft', \SocialiteProviders\Microsoft\Provider::class);
+            $event->extendSocialite('microsoft', Provider::class);
         });
     }
 
