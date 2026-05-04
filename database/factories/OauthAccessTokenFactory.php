@@ -84,7 +84,7 @@ class OauthAccessTokenFactory extends Factory
     /**
      * Create token with specific scopes.
      *
-     * @param  array<string>  $scopes
+     * @param array<string> $scopes
      */
     public function withScopes(array $scopes): static
     {

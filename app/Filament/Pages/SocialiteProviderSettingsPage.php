@@ -254,7 +254,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Write configuration to secure PHP file.
      *
-     * @param  array<string, array<string, mixed>>  $config
+     * @param array<string, array<string, mixed>> $config
      */
     private function writeSocialiteConfig(array $config): void
     {
@@ -279,7 +279,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Update SocialProvider model active states.
      *
-     * @param  array<string, array<string, mixed>>  $config
+     * @param array<string, array<string, mixed>> $config
      */
     private function updateSocialProviderActiveStates(array $config): void
     {

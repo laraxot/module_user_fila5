@@ -8,7 +8,7 @@ use Modules\User\Models\OauthPersonalAccessClient;
 use Modules\User\Models\OauthRefreshToken;
 use Modules\User\Models\OauthToken;
 
-/**
+/*
  * Configurazione Laravel Passport per il modulo User.
  *
  * Questa configurazione centralizza tutte le impostazioni di Passport,
