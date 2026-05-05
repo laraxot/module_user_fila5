@@ -19,7 +19,7 @@ test('every eloquent passport model has a local oauth wrapper', function (): voi
     /** @var array<int, string>|false $files */
     $files = glob(base_path('vendor/laravel/passport/src').'/*.php');
 
-    if (false === $files) {
+    if ($files === false) {
         $files = [];
     }
 

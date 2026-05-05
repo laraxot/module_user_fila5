@@ -14,4 +14,3 @@ use Modules\Xot\Models\Policies\XotBasePolicy;
 abstract class UserBasePolicy extends XotBasePolicy
 {
 }
-

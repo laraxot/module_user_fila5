@@ -38,7 +38,7 @@ class RetrieveSocialiteUserAction
             ->where('provider_id', $providerId)
             ->first();
 
-        if (null === $res) {
+        if ($res === null) {
             return null;
         }
 
@@ -47,7 +47,7 @@ class RetrieveSocialiteUserAction
 
         // Utilizzo ReflectionClass per accedere in modo sicuro alle proprietà/metodi
         try {
-            $reflection = new \ReflectionClass($user);
+            $reflection = new ReflectionClass($user);
 
             // Prova prima i metodi standard
             if ($reflection->hasMethod('getToken')) {

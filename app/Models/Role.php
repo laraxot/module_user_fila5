@@ -59,15 +59,15 @@ use Webmozart\Assert\Assert;
  * @method static Builder|Role withoutPermission($permissions)
  * @method static Builder|Role whereDescription($value)
  * @method static Builder|Role whereDisplayName($value)
- * @method static static       firstOrCreate(array $attributes, array $values = [])
- * @method static static       updateOrCreate(array $attributes, array $values = [])
+ * @method static static firstOrCreate(array $attributes, array $values = [])
+ * @method static static updateOrCreate(array $attributes, array $values = [])
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  *
  * @method static \Modules\User\Database\Factories\RoleFactory factory($count = null, $state = [])
- * @method static Builder<static>|Role                         whereUuid($value)
+ * @method static Builder<static>|Role whereUuid($value)
  *
  * @mixin \Eloquent
  */
