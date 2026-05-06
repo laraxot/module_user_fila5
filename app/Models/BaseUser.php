@@ -142,25 +142,18 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     use Traits\HasTenants;
     use XotTraits\RelationX;
 
-    /** @var bool */
     public $incrementing = false;
 
-    /** @var Pivot|null */
-    public $pivot;
+    public ?Pivot $pivot = null;
 
-    /** @var string */
     protected $connection = 'user';
 
-    /** @var string */
     protected $primaryKey = 'id';
 
-    /** @var string */
     protected $keyType = 'string';
 
-    /** @var string */
     protected $childColumn = 'type';
 
-    /** @var list<string> */
     protected $fillable = [
         'id',
         // 'ente',
@@ -201,15 +194,12 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     /** @var array<string, class-string> */
     protected $childTypes = [];
 
-    /** @var array<string, mixed> */
     protected $attributes = [
         'is_active' => true,
     ];
 
     /**
      * Guard coerente con Spatie/Permission: deve essere 'web'.
-     *
-     * @var string
      */
     protected $guard_name = 'web';
 
@@ -323,18 +313,14 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
 
     public function detach(Model $model): void
     {
-        // @phpstan-ignore function.alreadyNarrowedType
         if (method_exists($this, 'teams')) {
-            // @phpstan-ignore function.alreadyNarrowedType
             $this->teams()->detach($model);
         }
     }
 
     public function attach(Model $model): void
     {
-        // @phpstan-ignore function.alreadyNarrowedType
         if (method_exists($this, 'teams')) {
-            // @phpstan-ignore function.alreadyNarrowedType
             $this->teams()->attach($model);
         }
     }
@@ -388,7 +374,6 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
      */
     public function notifications(): MorphMany
     {
-        // @phpstan-ignore return.type
         return $this->morphMany(Notification::class, 'notifiable');
     }
 
@@ -399,7 +384,6 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
      */
     public function latestAuthentication(): MorphOne
     {
-        // @phpstan-ignore return.type
         return $this->morphOne(AuthenticationLog::class, 'authenticatable')->latestOfMany();
     }
 
@@ -499,6 +483,22 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return $this->morphMany(OauthClient::class, 'owner');
     }
 
+    /**
+     * Find the user instance for the given username.
+     */
+    public static function findForPassport(string $username): ?self
+    {
+        return static::where('email', $username)->first();
+    }
+
+    /**
+     * Validate the password of the user for the given password.
+     */
+    public function validateForPassportPasswordGrant(string $password): bool
+    {
+        return Hash::check($password, (string) $this->password);
+    }
+
     /** @return array<string, string> */
     protected function casts(): array
     {
@@ -520,21 +520,5 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
             'created_by' => 'string',
             'deleted_by' => 'string',
         ];
-    }
-
-    /**
-     * Find the user instance for the given username.
-     */
-    public static function findForPassport(string $username): ?self
-    {
-        return static::where('email', $username)->first();
-    }
-
-    /**
-     * Validate the password of the user for the given password.
-     */
-    public function validateForPassportPasswordGrant(string $password): bool
-    {
-        return Hash::check($password, (string) $this->password);
     }
 }

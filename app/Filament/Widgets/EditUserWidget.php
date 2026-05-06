@@ -32,22 +32,19 @@ use Webmozart\Assert\Assert;
  */
 class EditUserWidget extends XotBaseWidget
 {
-    public string $type;
+    public $type;
 
-    public string $resource;
+    public $resource;
 
-    public string $model;
+    public $model;
 
-    public string $action;
+    public $action;
 
     public Model $record;
 
     /** @var array<string, mixed>|null */
     public ?array $data = null;
 
-    /**
-     * @phpstan-ignore-next-line
-     */
     protected string $view = 'pub_theme::filament.widgets.edit-user';
 
     /**
@@ -107,6 +104,7 @@ class EditUserWidget extends XotBaseWidget
         // Se è un nuovo modello, restituisci solo i campi fillable con valori null
         $fillable = $model->getFillable();
         $appends = $model->getAppends();
+        /** @var array<int, string> $fields */
         $fields = array_merge($fillable, $appends);
 
         /** @var array<string, mixed> $result */
@@ -126,9 +124,7 @@ class EditUserWidget extends XotBaseWidget
         Assert::isArray($schema, 'Schema must be array');
 
         /** @var array<int|string, Component> $result */
-        $result = $schema;
-
-        return $result;
+        return $schema;
     }
 
     /**

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Pages;
 
 use Filament\Actions\Action;
+use Filament\Clusters\Cluster;
 use Filament\Notifications\Notification;
 use Livewire\Attributes\On;
 use Modules\User\Filament\Clusters\Passport;
@@ -13,31 +14,25 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 
 class PassportDashboard extends XotBasePage
 {
+    public $hasPublicKey = false;
+
+    public $hasPrivateKey = false;
+
+    /** @var list<string> */
+    public $output = [];
+
+    public $currentCommand = '';
+
+    public $status = '';
+
+    public $isRunning = false;
+
+    /**
+     * @var class-string<Cluster>
+     */
     protected static ?string $cluster = Passport::class;
 
     protected string $view = 'user::filament.pages.passport-dashboard';
-
-    public bool $hasPublicKey = false;
-
-    public bool $hasPrivateKey = false;
-
-    public array $output = [];
-
-    public string $currentCommand = '';
-
-    public string $status = '';
-
-    public bool $isRunning = false;
-
-    /** @var array<string, string> */
-    protected $listeners = [
-        'refresh-component' => '$refresh',
-        'artisan-command.started' => 'handleCommandStarted',
-        'artisan-command.output' => 'handleCommandOutput',
-        'artisan-command.completed' => 'handleCommandCompleted',
-        'artisan-command.failed' => 'handleCommandFailed',
-        'artisan-command.error' => 'handleCommandError',
-    ];
 
     public function executeCommand(string $command): void
     {

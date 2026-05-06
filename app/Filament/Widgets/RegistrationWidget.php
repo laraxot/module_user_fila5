@@ -24,13 +24,13 @@ class RegistrationWidget extends XotBaseWidget
      */
     public ?array $data = null;
 
-    public string $type;
+    public $type;
 
-    public string $resource;
+    public $resource;
 
-    public string $model;
+    public $model;
 
-    public string $action;
+    public $action;
 
     public Model $record;
 
@@ -38,8 +38,6 @@ class RegistrationWidget extends XotBaseWidget
 
     /**
      * @phpstan-var class-string
-     *
-     * @phpstan-ignore-next-line
      */
     protected string $view = 'pub_theme::filament.widgets.registration';
 
@@ -77,9 +75,7 @@ class RegistrationWidget extends XotBaseWidget
         $user = $this->model::firstWhere('email', $email);
         if (null === $user) {
             /** @var Model $model */
-            $model = app($this->model);
-
-            return $model;
+            return app($this->model);
         }
 
         $remember_token = $user->getAttribute('remember_token');
@@ -143,7 +139,6 @@ class RegistrationWidget extends XotBaseWidget
         /** @var object{execute: callable} $actionInstance */
         $actionInstance = app($this->action);
 
-        /** @phpstan-ignore method.notFound */
         $user = $actionInstance->execute($record, $data);
 
         $lang = app()->getLocale();

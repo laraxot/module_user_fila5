@@ -116,7 +116,7 @@ class UserResource extends XotBaseResource
     {
         $xot = XotData::make();
 
-        /* @var class-string<Model> */
+        /** @var class-string<Model> */
         return $xot->getUserClass();
     }
 }

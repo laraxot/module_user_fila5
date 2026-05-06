@@ -49,18 +49,13 @@ class RegisterTenant extends BaseRegisterTenant
     }
 
     /**
-     * @return array<Component>
+     * @return array<int, Component>
      */
     public function getFormSchema(): array
     {
         $resourceClass = $this->resolveResourceClass();
 
-        $schemaRaw = $resourceClass::getFormSchema();
-
-        /** @var array<Component> $schema */
-        $schema = $schemaRaw;
-
-        return $schema;
+        return $resourceClass::getFormSchema();
     }
 
     /**

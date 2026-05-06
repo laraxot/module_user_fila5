@@ -45,7 +45,7 @@ class LogoutWidget extends XotBaseWidget
     /**
      * Indicates if the logout process is in progress.
      */
-    public bool $isLoggingOut = false;
+    public $isLoggingOut = false;
 
     /**
      * The view to render the widget.
@@ -53,7 +53,6 @@ class LogoutWidget extends XotBaseWidget
      * IMPORTANT: When using @livewire() directly in Blade templates,
      * the path should be without the module namespace.
      */
-    /** @phpstan-ignore-next-line property.defaultValue */
     protected string $view = 'user::widgets.logout';
 
     /**
@@ -76,7 +75,6 @@ class LogoutWidget extends XotBaseWidget
     public function getFormSchema(): array
     {
         $view = 'filament.widgets.auth.logout-message';
-        // @phpstan-ignore-next-line
         if (! view()->exists($view)) {
             throw new \Exception('View '.$view.' not found');
         }

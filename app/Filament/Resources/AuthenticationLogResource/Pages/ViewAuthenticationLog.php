@@ -14,7 +14,6 @@ use Modules\User\Filament\Resources\AuthenticationLogResource;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\AuthenticationLog;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
-
 use function Safe\json_encode;
 
 class ViewAuthenticationLog extends XotBaseViewRecord
@@ -99,7 +98,7 @@ class ViewAuthenticationLog extends XotBaseViewRecord
                                 return 'No location data';
                             }
 
-                            /* @var array<string, mixed> $state */
+                            /** @var array<string, mixed> $state */
                             return json_encode($state, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
                         }),
                 ])->collapsible(),

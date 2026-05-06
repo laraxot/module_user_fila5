@@ -28,7 +28,7 @@ class UsersChartWidget extends ChartWidget implements HasActions, HasForms
      */
     public ?array $pageFilters = null;
 
-    public string $chart_id = '';
+    public $chart_id = '';
 
     protected ?string $pollingInterval = null;
 

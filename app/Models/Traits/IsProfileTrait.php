@@ -57,7 +57,6 @@ trait IsProfileTrait
         /** @var class-string<Model&UserContract> $userClass */
         $userClass = XotData::make()->getUserClass();
 
-        // @phpstan-ignore return.type
         return $this->belongsTo($userClass);
     }
 
@@ -225,7 +224,6 @@ trait IsProfileTrait
      */
     public function mobileDevices(): BelongsToMany
     {
-        // @phpstan-ignore return.type
         return $this->belongsToManyX(Device::class);
     }
 
@@ -246,7 +244,6 @@ trait IsProfileTrait
      */
     public function mobileDeviceUsers(): HasMany
     {
-        // @phpstan-ignore return.type
         return $this->hasMany(DeviceUser::class, 'profile_id')->where('type', 'mobile');
     }
 
@@ -257,7 +254,6 @@ trait IsProfileTrait
      */
     public function deviceUsers(): HasMany
     {
-        // @phpstan-ignore return.type
         return $this->hasMany(DeviceUser::class, 'profile_id');
     }
 
@@ -273,7 +269,7 @@ trait IsProfileTrait
             ->filter(static fn (mixed $value): bool => is_string($value) && '' !== $value)
             ->map(static fn (mixed $value): string => (string) $value);
 
-        /* @var Collection<int|string, non-empty-string> $tokens */
+        /** @var Collection<int|string, non-empty-string> $tokens */
         return $tokens;
     }
 

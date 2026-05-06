@@ -11,7 +11,7 @@ use Modules\Xot\Filament\Widgets\XotBaseChartWidget;
 
 class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
 {
-    public string $model;
+    public $model;
 
     protected ?string $heading = null;
 
@@ -37,9 +37,7 @@ class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
 
         // Verifica se i filtri sono disponibili e validi
         if (is_array($filters) && ! empty($filters)) {
-            /** @phpstan-ignore-next-line */
             $startDate = ! empty($filters['startDate']) ? Carbon::parse($filters['startDate']) : null;
-            /** @phpstan-ignore-next-line */
             $endDate = ! empty($filters['endDate']) ? Carbon::parse($filters['endDate']) : null;
         }
 

@@ -17,7 +17,6 @@ use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource;
 use Modules\User\Models\OauthToken;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
-
 use function Safe\json_encode;
 
 /**
@@ -119,7 +118,7 @@ class TokensRelationManager extends XotBaseRelationManager
                 ->icon('heroicon-o-x-circle')
                 ->color('danger')
                 ->requiresConfirmation()
-                ->action(function (OauthToken $record) {
+                ->action(function (OauthToken $record): void {
                     if (app(RevokeTokenAction::class)->execute($record)) {
                         Notification::make()
                             ->title('Token revocato')

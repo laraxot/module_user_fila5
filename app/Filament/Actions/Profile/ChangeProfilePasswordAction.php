@@ -42,7 +42,6 @@ final class ChangeProfilePasswordAction extends Action
                     /** @var array<string, mixed> $profile_data */
                     $user = $record->user()->create($profile_data);
                 }
-                // @phpstan-ignore argument.type, method.notFound
                 $user->profile()->save($record);
                 $newPassword = is_string($data['new_password'] ?? null) ? $data['new_password'] : '';
                 /*

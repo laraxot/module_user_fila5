@@ -15,7 +15,7 @@ return new class extends XotBaseMigration {
     /**
      * Nome della tabella gestita dalla migrazione.
      */
-    protected string $table_name = 'team_user';
+    protected $table_name = 'team_user';
 
     /**
      * Esegue la migrazione.

@@ -49,29 +49,6 @@ class UserServiceProvider extends XotBaseServiceProvider
         $this->registerPolicies();
     }
 
-    /**
-     * Registra i widget Livewire auth per le viste Blade/Folio.
-     * In Livewire v4, resolveClassComponentClassName con namespace '::' cerca SOLO in classNamespaces
-     * (non in classComponents), quindi Livewire::component('user::...', class) non funziona.
-     * Usare addComponent($class) che usa hash-based naming, compatibile con @livewire(Class::class).
-     */
-    protected function registerLivewireAuthWidgets(): void
-    {
-        $widgets = [
-            LoginWidget::class,
-            SocialLoginWidget::class,
-            RegisterWidget::class,
-            ResetPasswordWidget::class,
-            PasswordResetWidget::class,
-            ForgotPasswordWidget::class,
-            PasswordResetConfirmWidget::class,
-        ];
-
-        foreach ($widgets as $class) {
-            Livewire::addComponent($class);
-        }
-    }
-
     #[\Override]
     public function register(): void
     {
@@ -182,6 +159,29 @@ class UserServiceProvider extends XotBaseServiceProvider
 
             return $pwd->getPasswordRule();
         });
+    }
+
+    /**
+     * Registra i widget Livewire auth per le viste Blade/Folio.
+     * In Livewire v4, resolveClassComponentClassName con namespace '::' cerca SOLO in classNamespaces
+     * (non in classComponents), quindi Livewire::component('user::...', class) non funziona.
+     * Usare addComponent($class) che usa hash-based naming, compatibile con @livewire(Class::class).
+     */
+    protected function registerLivewireAuthWidgets(): void
+    {
+        $widgets = [
+            LoginWidget::class,
+            SocialLoginWidget::class,
+            RegisterWidget::class,
+            ResetPasswordWidget::class,
+            PasswordResetWidget::class,
+            ForgotPasswordWidget::class,
+            PasswordResetConfirmWidget::class,
+        ];
+
+        foreach ($widgets as $class) {
+            Livewire::addComponent($class);
+        }
     }
 
     /**

@@ -9,7 +9,7 @@ return new class extends XotBaseMigration {
     /**
      * Nome della tabella.
      */
-    protected string $table_name = 'tenants';
+    protected $table_name = 'tenants';
 
     /**
      * Run the migrations.
