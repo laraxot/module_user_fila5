@@ -58,7 +58,7 @@ class Reset extends Component
                 'password' => $this->password,
             ],
             function (Authenticatable $user, string $password): void {
-                /** @var Model&Authenticatable $user */
+                /* @var Model&Authenticatable $user */
                 $user->setAttribute('password', Hash::make($password));
                 $user->setRememberToken(Str::random(60));
                 $user->save();

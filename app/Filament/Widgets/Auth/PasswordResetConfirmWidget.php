@@ -112,7 +112,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 ],
                 static function (Authenticatable $user, string $password): void {
                     // Use setAttribute to set password safely
-                    /** @var Model&Authenticatable $user */
+                    /* @var Model&Authenticatable $user */
                     // PHPStan: instanceof always true since UserContract extends Authenticatable
                     $user->setAttribute('password', Hash::make($password));
                     $user->setRememberToken(Str::random(60));

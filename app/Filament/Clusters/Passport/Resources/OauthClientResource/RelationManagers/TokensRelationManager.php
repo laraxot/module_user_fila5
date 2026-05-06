@@ -17,6 +17,7 @@ use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource;
 use Modules\User\Models\OauthToken;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+
 use function Safe\json_encode;
 
 /**

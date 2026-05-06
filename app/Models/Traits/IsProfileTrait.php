@@ -269,7 +269,7 @@ trait IsProfileTrait
             ->filter(static fn (mixed $value): bool => is_string($value) && '' !== $value)
             ->map(static fn (mixed $value): string => (string) $value);
 
-        /** @var Collection<int|string, non-empty-string> $tokens */
+        /* @var Collection<int|string, non-empty-string> $tokens */
         return $tokens;
     }
 

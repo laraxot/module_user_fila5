@@ -90,7 +90,7 @@ class OauthClientResource extends XotBaseResource
 
         Assert::subclassOf($model, Model::class);
 
-        /** @var class-string<Model> $model */
+        /* @var class-string<Model> $model */
         return $model;
     }
 

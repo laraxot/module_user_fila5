@@ -18,6 +18,7 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Page
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ViewOauthAuthCode;
 use Modules\User\Models\OauthAuthCode;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+
 use function Safe\json_encode;
 
 /**
@@ -87,7 +88,7 @@ class OauthAuthCodeResource extends XotBaseResource
                             return null;
                         }
                         if (is_array($state)) {
-                            /** @var array<string, mixed> $state */
+                            /* @var array<string, mixed> $state */
                             return json_encode($state);
                         }
 
