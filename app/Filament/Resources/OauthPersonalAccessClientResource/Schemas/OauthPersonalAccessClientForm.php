@@ -28,6 +28,5 @@ class OauthPersonalAccessClientForm extends XotBaseResourceForm
                 ])
                 ->columns(2),
         ];
-
     }
 }

@@ -21,6 +21,5 @@ class FeatureForm extends XotBaseResourceForm
             'type' => TextInput::make('type')->required()->maxLength(255),
             'active' => Toggle::make('active')->required(),
         ];
-
     }
 }

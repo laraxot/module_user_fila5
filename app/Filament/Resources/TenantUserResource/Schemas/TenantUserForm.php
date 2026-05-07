@@ -43,6 +43,5 @@ class TenantUserForm extends XotBaseResourceForm
                 ])
                 ->columns(2),
         ];
-
     }
 }

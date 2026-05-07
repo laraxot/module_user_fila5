@@ -55,7 +55,7 @@ class UserForm extends XotBaseResourceForm
                     /** @var Carbon|null $createdAt */
                     $createdAt = $record->getAttribute('created_at');
 
-                    if ($createdAt === null) {
+                    if (null === $createdAt) {
                         return new HtmlString('&mdash;');
                     }
                     if ($createdAt instanceof CarbonInterface) {
@@ -69,6 +69,5 @@ class UserForm extends XotBaseResourceForm
                 }),
             ])->columnSpan(4),
         ];
-
     }
 }

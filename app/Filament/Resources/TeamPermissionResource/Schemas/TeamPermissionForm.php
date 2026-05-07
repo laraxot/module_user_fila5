@@ -36,6 +36,5 @@ class TeamPermissionForm extends XotBaseResourceForm
                     ->maxLength(255),
             ]),
         ];
-
     }
 }

@@ -26,6 +26,5 @@ class OauthRefreshTokenForm extends XotBaseResourceForm
                 ->required(),
             'expires_at' => TextInput::make('expires_at'),
         ];
-
     }
 }

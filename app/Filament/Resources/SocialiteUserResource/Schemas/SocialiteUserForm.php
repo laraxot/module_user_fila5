@@ -45,6 +45,5 @@ class SocialiteUserForm extends XotBaseResourceForm
             'provider_avatar' => TextInput::make('provider_avatar')
                 ->maxLength(255),
         ];
-
     }
 }

@@ -35,6 +35,5 @@ class TeamInvitationForm extends XotBaseResourceForm
                 ->searchable()
                 ->required(),
         ];
-
     }
 }

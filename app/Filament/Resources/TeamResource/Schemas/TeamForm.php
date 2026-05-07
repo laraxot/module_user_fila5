@@ -20,6 +20,5 @@ class TeamForm extends XotBaseResourceForm
             'display_name' => TextInput::make('display_name')->maxLength(255),
             'description' => TextInput::make('description')->maxLength(255),
         ];
-
     }
 }

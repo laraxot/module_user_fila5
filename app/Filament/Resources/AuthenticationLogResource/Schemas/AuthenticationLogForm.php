@@ -61,6 +61,5 @@ class AuthenticationLogForm extends XotBaseResourceForm
                         ->inline(false),
                 ]),
         ];
-
     }
 }

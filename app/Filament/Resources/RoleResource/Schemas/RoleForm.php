@@ -21,6 +21,5 @@ class RoleForm extends XotBaseResourceForm
             'guard_name' => TextInput::make('guard_name')->required()->maxLength(255),
             'enabled' => Toggle::make('enabled')->required(),
         ];
-
     }
 }

@@ -20,6 +20,5 @@ class PersonalAccessTokenForm extends XotBaseResourceForm
                 ->required()
                 ->maxLength(255),
         ];
-
     }
 }

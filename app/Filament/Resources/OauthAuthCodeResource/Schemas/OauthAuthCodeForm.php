@@ -29,6 +29,5 @@ class OauthAuthCodeForm extends XotBaseResourceForm
                 ->numeric()
                 ->required(),
         ];
-
     }
 }

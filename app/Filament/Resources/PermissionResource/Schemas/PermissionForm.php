@@ -21,6 +21,5 @@ class PermissionForm extends XotBaseResourceForm
             'guard_name' => TextInput::make('guard_name')->required()->maxLength(255),
             'active' => Toggle::make('active')->required(),
         ];
-
     }
 }

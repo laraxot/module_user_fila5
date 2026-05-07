@@ -50,6 +50,5 @@ class SsoProviderForm extends XotBaseResourceForm
             'role_mapping' => KeyValue::make('role_mapping'),
             'is_active' => Toggle::make('is_active'),
         ];
-
     }
 }

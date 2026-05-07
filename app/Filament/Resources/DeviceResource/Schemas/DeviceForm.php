@@ -44,6 +44,5 @@ class DeviceForm extends XotBaseResourceForm
             'is_tablet' => Toggle::make('is_tablet'),
             'is_phone' => Toggle::make('is_phone'),
         ];
-
     }
 }

@@ -57,6 +57,5 @@ class SocialProviderForm extends XotBaseResourceForm
                 ->placeholder(__('fields.svg.placeholder'))
                 ->helperText(__('fields.svg.helper_text')),
         ];
-
     }
 }

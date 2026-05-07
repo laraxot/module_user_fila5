@@ -42,6 +42,5 @@ class TeamUserForm extends XotBaseResourceForm
                 ])
                 ->columns(2),
         ];
-
     }
 }

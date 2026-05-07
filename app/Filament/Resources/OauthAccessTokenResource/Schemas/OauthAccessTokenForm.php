@@ -40,6 +40,5 @@ class OauthAccessTokenForm extends XotBaseResourceForm
                         ]),
                 ]),
         ];
-
     }
 }

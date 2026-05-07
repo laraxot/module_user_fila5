@@ -29,6 +29,5 @@ class PasswordResetForm extends XotBaseResourceForm
                         ->maxLength(255),
                 ]),
         ];
-
     }
 }

@@ -37,6 +37,5 @@ class OauthClientForm extends XotBaseResourceForm
             'password_client' => TextInput::make('password_client')
                 ->numeric(),
         ];
-
     }
 }

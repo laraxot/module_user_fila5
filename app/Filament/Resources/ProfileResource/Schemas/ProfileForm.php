@@ -37,6 +37,5 @@ class ProfileForm extends XotBaseResourceForm
                 ->directory('photos')
                 ->collection('photo_profile'),
         ];
-
     }
 }

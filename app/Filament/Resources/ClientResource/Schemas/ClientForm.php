@@ -48,20 +48,17 @@ class ClientForm extends XotBaseResourceForm
             $components = array_merge($components, $additionalComponents);
         }
 
-        /** @var array<string, Field> $components */
+        /* @var array<string, Field> $components */
         return $components;
-
     }
 
     protected static function isResourceFormComponentsEnabled(): bool
     {
         return false;
-
     }
 
     protected static function getResourceFormComponents(): array
     {
         return [];
-
     }
 }
