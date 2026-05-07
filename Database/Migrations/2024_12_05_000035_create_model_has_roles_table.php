@@ -10,7 +10,11 @@ use Modules\Xot\Datas\XotData;
 /*
  * Class CreateModelHasRolesTable.
  */
+<<<<<<< Updated upstream
 return new class extends XotBaseMigration {
+=======
+return new class() extends XotBaseMigration {
+>>>>>>> Stashed changes
     /**
      * Run the migrations.
      */

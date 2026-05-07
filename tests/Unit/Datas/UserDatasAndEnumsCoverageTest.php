@@ -13,8 +13,8 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-describe('User datas and enums coverage', function (): void {
-    it('creates SocialiteUserAttributesData with expected values', function (): void {
+describe('User datas and enums coverage', function(): void {
+    it('creates SocialiteUserAttributesData with expected values', function(): void {
         $data = new SocialiteUserAttributesData(
             name: 'Mario',
             firstName: 'Mario',
@@ -28,7 +28,7 @@ describe('User datas and enums coverage', function (): void {
             ->and($data->provider)->toBe('github');
     });
 
-    it('builds PermissionData from permission config', function (): void {
+    it('builds PermissionData from permission config', function(): void {
         config([
             'permission' => [
                 'models' => [
@@ -69,7 +69,7 @@ describe('User datas and enums coverage', function (): void {
             ->and($data->cache->key)->toBe('spatie.permission.cache');
     });
 
-    it('builds FilamentShieldData from filament-shield config', function (): void {
+    it('builds FilamentShieldData from filament-shield config', function(): void {
         config([
             'filament-shield' => [
                 'shield_resource' => [
@@ -99,7 +99,7 @@ describe('User datas and enums coverage', function (): void {
             ->and($data->filament_user->enabled)->toBeTrue();
     });
 
-    it('returns labels for both language enums', function (): void {
+    it('returns labels for both language enums', function(): void {
         expect(LanguageEnum::ITALIAN->getLabel())->toBe('Italiano')
             ->and(LanguageEnum::ENGLISH->getLabel())->toBe('English')
             ->and(NestedLanguageEnum::GERMAN->getLabel())->toBe('Deutsch')

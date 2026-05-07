@@ -10,7 +10,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-it('oauth factories expose the expected definition keys', function (): void {
+it('oauth factories expose the expected definition keys', function(): void {
     $clientDefinition = (new OauthClientFactory)->definition();
     $accessTokenDefinition = (new OauthAccessTokenFactory)->definition();
     $authCodeDefinition = (new OauthAuthCodeFactory)->definition();

@@ -23,7 +23,7 @@ function createPassportClient(): array
     return ['client' => $client, 'secret' => $client->plainSecret ?? $client->secret];
 }
 
-test('client credentials grant returns token', function (): void {
+test('client credentials grant returns token', function(): void {
     ['client' => $client, 'secret' => $secret] = createPassportClient();
 
     $response = $this->post('/oauth/token', [
@@ -38,7 +38,7 @@ test('client credentials grant returns token', function (): void {
         ->assertJsonPath('token_type', 'Bearer');
 });
 
-test('client credentials can be associated to a specific user', function (): void {
+test('client credentials can be associated to a specific user', function(): void {
     ['client' => $client] = createPassportClient();
     $user = User::factory()->create();
 

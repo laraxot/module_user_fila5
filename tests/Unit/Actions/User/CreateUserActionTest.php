@@ -9,17 +9,17 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-describe('CreateUserAction', function (): void {
-    test('action is accessible via app', function (): void {
+describe('CreateUserAction', function(): void {
+    test('action is accessible via app', function(): void {
         expect(app(CreateUserAction::class))->toBeInstanceOf(CreateUserAction::class);
     });
 
-    test('action has execute method', function (): void {
+    test('action has execute method', function(): void {
         $action = app(CreateUserAction::class);
         expect(method_exists($action, 'execute'))->toBeTrue();
     });
 
-    test('execute method accepts array parameter', function (): void {
+    test('execute method accepts array parameter', function(): void {
         $action = app(CreateUserAction::class);
 
         $reflection = new \ReflectionMethod($action, 'execute');

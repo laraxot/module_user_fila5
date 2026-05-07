@@ -12,8 +12,8 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-describe('RevokeAllUserTokensAction', function (): void {
-    test('revokes all user tokens', function (): void {
+describe('RevokeAllUserTokensAction', function(): void {
+    test('revokes all user tokens', function(): void {
         $user = User::factory()->create();
 
         $clientId = (string) Str::uuid();
@@ -64,7 +64,7 @@ describe('RevokeAllUserTokensAction', function (): void {
         expect(DB::connection('user')->table('oauth_access_tokens')->where('user_id', (string) $user->id)->where('revoked', 0)->count())->toBe(0);
     });
 
-    test('handles user with no tokens', function (): void {
+    test('handles user with no tokens', function(): void {
         $user = User::factory()->create();
 
         $revoked = app(RevokeAllUserTokensAction::class)->execute($user);

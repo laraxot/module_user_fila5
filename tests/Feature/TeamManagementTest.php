@@ -171,7 +171,7 @@ describe('User Team Relationship', function () {
 });
 
 describe('Team Invitations', function () {
-    it('can validate team slug uniqueness', function (): void {
+    it('can validate team slug uniqueness', function(): void {
         // Arrange
         $slug = 'unique-team-'.uniqid();
         Team::factory()->create(['slug' => $slug]);

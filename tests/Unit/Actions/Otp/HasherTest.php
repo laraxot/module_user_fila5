@@ -9,7 +9,7 @@ use Tests\TestCase;
 
 uses(TestCase::class);
 
-it('makes hashed value', function (): void {
+it('makes hashed value', function(): void {
     $hasher = app(Hasher::class);
     $hash = $hasher->make('test-otp-code');
 
@@ -17,7 +17,7 @@ it('makes hashed value', function (): void {
     expect($hash)->not->toBe('test-otp-code');
 });
 
-it('verifies correct value', function (): void {
+it('verifies correct value', function(): void {
     $hasher = app(Hasher::class);
     $value = 'test-otp-code';
     $hash = $hasher->make($value);
@@ -27,7 +27,7 @@ it('verifies correct value', function (): void {
     expect($result)->toBeTrue();
 });
 
-it('rejects incorrect value', function (): void {
+it('rejects incorrect value', function(): void {
     $hasher = app(Hasher::class);
     $hash = $hasher->make('correct-code');
 
@@ -36,7 +36,7 @@ it('rejects incorrect value', function (): void {
     expect($result)->toBeFalse();
 });
 
-it('checks if rehash is needed', function (): void {
+it('checks if rehash is needed', function(): void {
     $hasher = app(Hasher::class);
     $hash = $hasher->make('test-code');
 

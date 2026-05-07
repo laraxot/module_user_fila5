@@ -10,7 +10,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class, DatabaseTransactions::class);
 
-test('can create device with minimal data', function (): void {
+test('can create device with minimal data', function(): void {
     $device = Device::factory()->create([
         'device' => 'iPhone',
         'platform' => 'iOS',
@@ -23,7 +23,7 @@ test('can create device with minimal data', function (): void {
     ]);
 });
 
-test('can create device with all fields', function (): void {
+test('can create device with all fields', function(): void {
     $deviceData = [
         'uuid' => '550e8400-e29b-41d4-a716-446655440000',
         'mobile_id' => 'mobile123',
@@ -61,7 +61,7 @@ test('can create device with all fields', function (): void {
     expect($device->languages)->toBe(['en', 'it', 'de']);
 });
 
-test('device has soft deletes', function (): void {
+test('device has soft deletes', function(): void {
     $device = Device::factory()->create();
     $deviceId = $device->id;
 
@@ -71,7 +71,7 @@ test('device has soft deletes', function (): void {
     $this->assertDatabaseMissing('devices', ['id' => $deviceId]);
 });
 
-test('can restore soft deleted device', function (): void {
+test('can restore soft deleted device', function(): void {
     if (! method_exists(Device::class, 'withTrashed')) {
         $this->markTestSkipped('SoftDeletes trait not present on Device model');
 
@@ -92,7 +92,7 @@ test('can restore soft deleted device', function (): void {
     expect($restoredDevice->deleted_at)->toBeNull();
 });
 
-test('can find device by uuid', function (): void {
+test('can find device by uuid', function(): void {
     $uuid = '550e8400-e29b-41d4-a716-446655440000';
     $device = Device::factory()->create(['uuid' => $uuid]);
 
@@ -102,7 +102,7 @@ test('can find device by uuid', function (): void {
     expect($foundDevice->id)->toBe($device->id);
 });
 
-test('can find device by mobile id', function (): void {
+test('can find device by mobile id', function(): void {
     $device = Device::factory()->create(['mobile_id' => 'unique_mobile_123']);
     $foundDevice = Device::where('mobile_id', 'unique_mobile_123')->first();
 
@@ -110,7 +110,7 @@ test('can find device by mobile id', function (): void {
     expect($foundDevice->id)->toBe($device->id);
 });
 
-test('can find device by device type', function (): void {
+test('can find device by device type', function(): void {
     $device = Device::factory()->create(['device' => 'iPhone 13 Pro']);
     $foundDevice = Device::where('device', 'iPhone 13 Pro')->first();
 
@@ -118,7 +118,7 @@ test('can find device by device type', function (): void {
     expect($foundDevice->id)->toBe($device->id);
 });
 
-test('can find device by platform', function (): void {
+test('can find device by platform', function(): void {
     Device::factory()->create(['platform' => 'iOS']);
     Device::factory()->create(['platform' => 'Android']);
     Device::factory()->create(['platform' => 'Windows']);
@@ -129,7 +129,7 @@ test('can find device by platform', function (): void {
     expect($iosDevices->first()->platform)->toBe('iOS');
 });
 
-test('can find device by browser', function (): void {
+test('can find device by browser', function(): void {
     Device::factory()->create(['browser' => 'Safari']);
     Device::factory()->create(['browser' => 'Chrome']);
     Device::factory()->create(['browser' => 'Firefox']);
@@ -140,7 +140,7 @@ test('can find device by browser', function (): void {
     expect($safariDevices->first()->browser)->toBe('Safari');
 });
 
-test('can find device by version', function (): void {
+test('can find device by version', function(): void {
     $device = Device::factory()->create(['version' => '15.0.1']);
     $foundDevice = Device::where('version', '15.0.1')->first();
 
@@ -148,7 +148,7 @@ test('can find device by version', function (): void {
     expect($foundDevice->id)->toBe($device->id);
 });
 
-test('can find desktop devices', function (): void {
+test('can find desktop devices', function(): void {
     Device::factory()->create(['is_desktop' => true]);
     Device::factory()->create(['is_desktop' => false]);
     Device::factory()->create(['is_desktop' => true]);
@@ -159,7 +159,7 @@ test('can find desktop devices', function (): void {
     expect($desktopDevices->every(fn ($device) => $device->is_desktop))->toBeTrue();
 });
 
-test('can find mobile devices', function (): void {
+test('can find mobile devices', function(): void {
     Device::factory()->create(['is_mobile' => true]);
     Device::factory()->create(['is_mobile' => false]);
     Device::factory()->create(['is_mobile' => true]);
@@ -170,7 +170,7 @@ test('can find mobile devices', function (): void {
     expect($mobileDevices->every(fn ($device) => $device->is_mobile))->toBeTrue();
 });
 
-test('can find tablet devices', function (): void {
+test('can find tablet devices', function(): void {
     Device::factory()->create(['is_tablet' => true]);
     Device::factory()->create(['is_tablet' => false]);
     Device::factory()->create(['is_tablet' => true]);
@@ -181,7 +181,7 @@ test('can find tablet devices', function (): void {
     expect($tabletDevices->every(fn ($device) => $device->is_tablet))->toBeTrue();
 });
 
-test('can find phone devices', function (): void {
+test('can find phone devices', function(): void {
     Device::factory()->create(['is_phone' => true]);
     Device::factory()->create(['is_phone' => false]);
     Device::factory()->create(['is_phone' => true]);
@@ -192,7 +192,7 @@ test('can find phone devices', function (): void {
     expect($phoneDevices->every(fn ($device) => $device->is_phone))->toBeTrue();
 });
 
-test('can find robot devices', function (): void {
+test('can find robot devices', function(): void {
     Device::factory()->create(['is_robot' => true, 'robot' => 'Googlebot']);
     Device::factory()->create(['is_robot' => false, 'robot' => null]);
     Device::factory()->create(['is_robot' => true, 'robot' => 'Bingbot']);
@@ -203,7 +203,7 @@ test('can find robot devices', function (): void {
     expect($robotDevices->every(fn ($device) => $device->is_robot))->toBeTrue();
 });
 
-test('can find devices by language', function (): void {
+test('can find devices by language', function(): void {
     Device::factory()->create(['languages' => ['en', 'it']]);
     Device::factory()->create(['languages' => ['en', 'de']]);
     Device::factory()->create(['languages' => ['fr', 'es']]);
@@ -214,7 +214,7 @@ test('can find devices by language', function (): void {
     expect($englishDevices->every(fn ($device) => in_array('en', $device->languages, strict: true)))->toBeTrue();
 });
 
-test('can find devices by device pattern', function (): void {
+test('can find devices by device pattern', function(): void {
     Device::factory()->create(['device' => 'iPhone 13']);
     Device::factory()->create(['device' => 'iPhone 14']);
     Device::factory()->create(['device' => 'Samsung Galaxy']);
@@ -225,7 +225,7 @@ test('can find devices by device pattern', function (): void {
     expect($iphoneDevices->every(fn ($device) => str_contains($device->device, 'iPhone')))->toBeTrue();
 });
 
-test('can update device', function (): void {
+test('can update device', function(): void {
     $device = Device::factory()->create(['device' => 'Old Device']);
     $device->update(['device' => 'New Device']);
 
@@ -235,7 +235,7 @@ test('can update device', function (): void {
     ]);
 });
 
-test('can handle null values', function (): void {
+test('can handle null values', function(): void {
     $device = Device::factory()->create([
         'device' => 'Test Device',
         'platform' => 'Test Platform',
@@ -255,7 +255,7 @@ test('can handle null values', function (): void {
     ]);
 });
 
-test('can find devices by multiple criteria', function (): void {
+test('can find devices by multiple criteria', function(): void {
     Device::factory()->create([
         'platform' => 'iOS',
         'is_mobile' => true,
@@ -282,18 +282,18 @@ test('can find devices by multiple criteria', function (): void {
     expect($devices->first()->browser)->toBe('Safari');
 });
 
-test('device has users relationship', function (): void {
+test('device has users relationship', function(): void {
     $device = Device::factory()->create();
     expect(method_exists($device, 'users'))->toBeTrue();
 });
 
-test('device has factory', function (): void {
+test('device has factory', function(): void {
     $device = Device::factory()->create();
     expect($device->id)->not->toBeNull();
     expect($device)->toBeInstanceOf(Device::class);
 });
 
-test('device has fillable attributes', function (): void {
+test('device has fillable attributes', function(): void {
     $device = new Device;
     $expectedFillable = [
         'id',
@@ -314,7 +314,7 @@ test('device has fillable attributes', function (): void {
     expect($device->getFillable())->toBe($expectedFillable);
 });
 
-test('device has casts', function (): void {
+test('device has casts', function(): void {
     $device = new Device;
     $expectedCasts = [
         'id' => 'string',

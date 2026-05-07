@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('/user')
     ->namespace('Api')
-    ->group(static function (): void {
+    ->group(static function(): void {
         // authenticate user
         /*
          * Route::post('/login', [UserController::class, 'login'])

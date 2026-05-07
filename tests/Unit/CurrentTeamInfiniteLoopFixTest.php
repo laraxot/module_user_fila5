@@ -21,7 +21,7 @@ uses(TestCase::class, DatabaseTransactions::class);
  * Bug Fix: 2025-01-14
  * Issue: make:filament-user crashava con loop infinito
  */
-test('currentTeam getter does not crash when user has no teams', function (): void {
+test('currentTeam getter does not crash when user has no teams', function(): void {
     // Arrange: Crea un utente senza team
     $user = User::factory()->create([
         'name' => 'Test User',
@@ -37,7 +37,7 @@ test('currentTeam getter does not crash when user has no teams', function (): vo
     expect($user->currentTeam()->first())->toBeNull();
 });
 
-test('currentTeam getter is side-effect-free', function (): void {
+test('currentTeam getter is side-effect-free', function(): void {
     // Arrange: Crea un utente senza current_team_id
     $user = User::factory()->create([
         'name' => 'Test User',
@@ -58,7 +58,7 @@ test('currentTeam getter is side-effect-free', function (): void {
     expect($user->current_team_id)->toBeNull();
 });
 
-test('currentTeam getter does not trigger save operations', function (): void {
+test('currentTeam getter does not trigger save operations', function(): void {
     // Arrange: Crea un utente
     $user = User::factory()->create([
         'name' => 'Test User',
@@ -75,7 +75,7 @@ test('currentTeam getter does not trigger save operations', function (): void {
     expect($user->updated_at->equalTo($updatedAtBefore))->toBeTrue();
 });
 
-test('initializeCurrentTeam sets personal team correctly', function (): void {
+test('initializeCurrentTeam sets personal team correctly', function(): void {
     // Arrange: Crea un utente con un personal team
     $user = User::factory()->create([
         'name' => 'Test User',
@@ -97,7 +97,7 @@ test('initializeCurrentTeam sets personal team correctly', function (): void {
     expect($user->current_team_id)->toBe($personalTeam->id);
 });
 
-test('initializeCurrentTeam does not override existing current_team_id', function (): void {
+test('initializeCurrentTeam does not override existing current_team_id', function(): void {
     // Arrange: Crea un utente con un team già impostato
     $user = User::factory()->create([
         'name' => 'Test User',
@@ -127,7 +127,7 @@ test('initializeCurrentTeam does not override existing current_team_id', functio
     expect($user->current_team_id)->toBe($team1->id);
 });
 
-test('initializeCurrentTeam sets first available team if no personal team', function (): void {
+test('initializeCurrentTeam sets first available team if no personal team', function(): void {
     // Arrange: Crea un utente con un team non-personal
     $user = User::factory()->create([
         'name' => 'Test User',
@@ -149,7 +149,7 @@ test('initializeCurrentTeam sets first available team if no personal team', func
     expect($user->current_team_id)->toBe($team->id);
 });
 
-test('initializeCurrentTeam handles user without teams gracefully', function (): void {
+test('initializeCurrentTeam handles user without teams gracefully', function(): void {
     // Arrange: Crea un utente senza team
     $user = User::factory()->create([
         'name' => 'Test User',
@@ -165,7 +165,7 @@ test('initializeCurrentTeam handles user without teams gracefully', function ():
     expect($user->current_team_id)->toBeNull();
 });
 
-test('currentTeam getter does not cause N+1 queries', function (): void {
+test('currentTeam getter does not cause N+1 queries', function(): void {
     // Arrange: Crea un utente con un team
     $user = User::factory()->create([
         'name' => 'Test User',
@@ -193,7 +193,7 @@ test('currentTeam getter does not cause N+1 queries', function (): void {
     expect($relation3)->toBeInstanceOf(BelongsTo::class);
 });
 
-test('currentTeam getter works correctly with existing team', function (): void {
+test('currentTeam getter works correctly with existing team', function(): void {
     // Arrange: Crea un utente con un team
     $user = User::factory()->create([
         'name' => 'Test User',
@@ -218,7 +218,7 @@ test('currentTeam getter works correctly with existing team', function (): void 
     expect($currentTeam->name)->toBe('Test Team');
 });
 
-test('user creation does not trigger infinite loop', function (): void {
+test('user creation does not trigger infinite loop', function(): void {
     // Arrange & Act: Crea un nuovo utente (simula make:filament-user)
     $user = User::create([
         'name' => 'New User',
@@ -236,7 +236,7 @@ test('user creation does not trigger infinite loop', function (): void {
     expect($relation)->toBeInstanceOf(BelongsTo::class);
 });
 
-test('multiple users can be created without issues', function (): void {
+test('multiple users can be created without issues', function(): void {
     // Arrange & Act: Crea più utenti in sequenza
     $users = [];
     for ($i = 1; $i <= 5; $i++) {

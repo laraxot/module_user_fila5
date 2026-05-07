@@ -9,9 +9,14 @@ use Flowframe\Trend\TrendValue;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Filament\Widgets\XotBaseChartWidget;
 
-class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
+final class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
 {
+<<<<<<< Updated upstream
     public $model;
+=======
+    /** @var class-string */
+    public string $model;
+>>>>>>> Stashed changes
 
     protected ?string $heading = null;
 
@@ -20,7 +25,7 @@ class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
     protected static bool $isLazy = true;
 
     #[\Override]
-    public function getHeading(): ?string
+    public function getHeading(): string
     {
         return static::transClass($this->model, 'widgets.user_type_registrations_chart.heading');
     }
@@ -37,8 +42,13 @@ class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
 
         // Verifica se i filtri sono disponibili e validi
         if (is_array($filters) && ! empty($filters)) {
+<<<<<<< Updated upstream
             $startDate = ! empty($filters['startDate']) ? Carbon::parse($filters['startDate']) : null;
             $endDate = ! empty($filters['endDate']) ? Carbon::parse($filters['endDate']) : null;
+=======
+            $startDate = self::parseFilterDate($filters['startDate'] ?? null);
+            $endDate = self::parseFilterDate($filters['endDate'] ?? null);
+>>>>>>> Stashed changes
         }
 
         // Fallback ai valori di default se i filtri non sono disponibili
@@ -97,5 +107,14 @@ class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
     protected function getType(): string
     {
         return 'line';
+    }
+
+    private static function parseFilterDate(mixed $value): ?Carbon
+    {
+        if (! is_string($value) && ! is_int($value) && ! is_float($value)) {
+            return null;
+        }
+
+        return Carbon::parse($value);
     }
 }

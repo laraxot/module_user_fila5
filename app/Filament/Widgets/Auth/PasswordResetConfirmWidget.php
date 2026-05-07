@@ -39,7 +39,11 @@ class PasswordResetConfirmWidget extends XotBaseWidget
 
     public ?string $errorMessage = null;
 
+<<<<<<< Updated upstream
     protected string $view = 'pub_theme::filament.widgets.auth.password.reset-confirm';
+=======
+    protected string $view = 'user::filament.widgets.auth.password.reset';
+>>>>>>> Stashed changes
 
     /**
      * Mount the widget with token and optional email.
@@ -112,7 +116,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 ],
                 static function (Authenticatable $user, string $password): void {
                     // Use setAttribute to set password safely
-                    /* @var Model&Authenticatable $user */
+                    /** @var Model&Authenticatable $user */
                     // PHPStan: instanceof always true since UserContract extends Authenticatable
                     $user->setAttribute('password', Hash::make($password));
                     $user->setRememberToken(Str::random(60));
@@ -143,7 +147,11 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 // Redirect after a short delay to show success message
                 $this->js('setTimeout(() => { window.location.href = "'.route('login').'"; }, 3000);');
             } else {
+<<<<<<< Updated upstream
                 $this->handleResetError($response);
+=======
+                $this->handleResetError(is_string($response) ? $response : 'passwords.generic_error');
+>>>>>>> Stashed changes
             }
         } catch (\Exception $e) {
             $this->handleResetError('passwords.generic_error');

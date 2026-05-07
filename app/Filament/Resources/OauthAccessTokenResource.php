@@ -88,7 +88,7 @@ class OauthAccessTokenResource extends XotBaseResource
                             return null;
                         }
                         if (is_array($state)) {
-                            /* @var array<string, mixed> $state */
+                            /** @var array<string, mixed> $state */
                             return json_encode($state);
                         }
 

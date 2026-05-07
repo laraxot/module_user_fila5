@@ -14,7 +14,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-describe('RegisterOauthUserAction', function (): void {
+describe('RegisterOauthUserAction', function(): void {
     $getMockUser = function (array $attributes = []): SocialiteUserContract {
         $unique = uniqid();
         $data = array_merge([

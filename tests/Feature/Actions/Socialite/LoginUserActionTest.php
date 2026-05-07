@@ -14,8 +14,8 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-describe('LoginUserAction', function (): void {
-    test('authenticates connected socialite user and dispatches event', function (): void {
+describe('LoginUserAction', function(): void {
+    test('authenticates connected socialite user and dispatches event', function(): void {
         Event::fake([SocialiteUserConnected::class]);
 
         $user = User::factory()->create();
@@ -35,7 +35,7 @@ describe('LoginUserAction', function (): void {
         Event::assertDispatched(SocialiteUserConnected::class);
     });
 
-    test('throws when related user is not authenticatable', function (): void {
+    test('throws when related user is not authenticatable', function(): void {
         $socialiteUser = new SocialiteUser([
             'provider' => 'test-provider',
             'provider_id' => 'provider-id-2',
@@ -47,7 +47,7 @@ describe('LoginUserAction', function (): void {
         app(LoginUserAction::class)->execute($socialiteUser);
     })->throws(LogicException::class, 'User instance must implement Authenticatable.');
 
-    test('redirects to intended page when available', function (): void {
+    test('redirects to intended page when available', function(): void {
         $user = User::factory()->create();
 
         $socialiteUser = new SocialiteUser([
@@ -63,7 +63,7 @@ describe('LoginUserAction', function (): void {
         $this->assertAuthenticatedAs($user);
     });
 
-    test('dispatches event with correct socialite user instance', function (): void {
+    test('dispatches event with correct socialite user instance', function(): void {
         Event::fake();
 
         $user = User::factory()->create();
@@ -83,7 +83,7 @@ describe('LoginUserAction', function (): void {
         });
     });
 
-    test('authenticates different users independently', function (): void {
+    test('authenticates different users independently', function(): void {
         $user1 = User::factory()->create(['email' => 'user1@example.com']);
         $user2 = User::factory()->create(['email' => 'user2@example.com']);
 
@@ -108,7 +108,7 @@ describe('LoginUserAction', function (): void {
         $this->assertAuthenticatedAs($user2);
     });
 
-    test('returns redirect response instance', function (): void {
+    test('returns redirect response instance', function(): void {
         $user = User::factory()->create();
 
         $socialiteUser = new SocialiteUser([
@@ -123,7 +123,7 @@ describe('LoginUserAction', function (): void {
         expect($response)->toBeInstanceOf(RedirectResponse::class);
     });
 
-    test('handles null user assertion gracefully', function (): void {
+    test('handles null user assertion gracefully', function(): void {
         $socialiteUser = new SocialiteUser([
             'provider' => 'test',
             'provider_id' => 'test-null',
@@ -134,7 +134,7 @@ describe('LoginUserAction', function (): void {
         app(LoginUserAction::class)->execute($socialiteUser);
     })->throws(InvalidArgumentException::class);
 
-    test('preserves user attributes after login', function (): void {
+    test('preserves user attributes after login', function(): void {
         $user = User::factory()->create([
             'email' => 'preserve-'.uniqid().'@example.com',
             'name' => 'John Doe',

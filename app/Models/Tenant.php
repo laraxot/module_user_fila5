@@ -82,4 +82,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  *
  * @mixin \Eloquent
  */
-class Tenant extends BaseTenant {}
+class Tenant extends BaseTenant
+{
+}

@@ -14,7 +14,7 @@ use Modules\User\Tests\TestCase;
  */
 uses(TestCase::class);
 
-test('user can be created', function (): void {
+test('user can be created', function(): void {
     try {
         $factory = User::factory();
         \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
@@ -35,7 +35,7 @@ test('user can be created', function (): void {
     }
 });
 
-test('user has correct type casting', function (): void {
+test('user has correct type casting', function(): void {
     try {
         $factory = User::factory();
         \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
@@ -53,7 +53,7 @@ test('user has correct type casting', function (): void {
     }
 });
 
-test('user password is hashed', function (): void {
+test('user password is hashed', function(): void {
     $factory = User::factory();
     \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
     $user = $factory->create(['password' => Hash::make('password123')]);
@@ -63,7 +63,7 @@ test('user password is hashed', function (): void {
     $this->assertFalse(Hash::check('wrongpassword', $user->password));
 });
 
-test('user can change password', function (): void {
+test('user can change password', function(): void {
     $factory = User::factory();
     \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
     $user = $factory->create(['password' => Hash::make('password123')]);
@@ -77,7 +77,7 @@ test('user can change password', function (): void {
     $this->assertFalse(Hash::check('password123', $freshUser->password));
 });
 
-test('user can be updated', function (): void {
+test('user can be updated', function(): void {
     try {
         $factory = User::factory();
         \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
@@ -100,7 +100,7 @@ test('user can be updated', function (): void {
     }
 });
 
-test('user can be deleted', function (): void {
+test('user can be deleted', function(): void {
     $factory = User::factory();
     \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
     $user = $factory->create();
@@ -113,7 +113,7 @@ test('user can be deleted', function (): void {
     $this->assertNull(User::find($userId));
 });
 
-test('user has fillable attributes', function (): void {
+test('user has fillable attributes', function(): void {
     $factory = User::factory();
     \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
     $user = $factory->make();
@@ -126,7 +126,7 @@ test('user has fillable attributes', function (): void {
     $this->assertContains('type', $fillable);
 });
 
-test('user has hidden attributes', function (): void {
+test('user has hidden attributes', function(): void {
     $factory = User::factory();
     \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
     $user = $factory->make();
@@ -138,7 +138,7 @@ test('user has hidden attributes', function (): void {
     $this->assertContains('remember_token', $hidden);
 });
 
-test('user can be found by email', function (): void {
+test('user can be found by email', function(): void {
     $factory = User::factory();
     \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
     $user = $factory->create();
@@ -151,7 +151,7 @@ test('user can be found by email', function (): void {
     $this->assertSame($user->id, $foundUser->id);
 });
 
-test('user can be found by type', function (): void {
+test('user can be found by type', function(): void {
     try {
         $factory = User::factory();
         \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
@@ -170,7 +170,7 @@ test('user can be found by type', function (): void {
     }
 });
 
-test('user can be created with different types', function (): void {
+test('user can be created with different types', function(): void {
     try {
         $factory = User::factory();
         \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
@@ -187,7 +187,7 @@ test('user can be created with different types', function (): void {
     }
 });
 
-test('user has timestamps', function (): void {
+test('user has timestamps', function(): void {
     $factory = User::factory();
     \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
     $user = $factory->create();
@@ -197,7 +197,7 @@ test('user has timestamps', function (): void {
     $this->assertNotNull($user->updated_at);
 });
 
-test('user soft delete functionality', function (): void {
+test('user soft delete functionality', function(): void {
     // Skip this test as User model does not implement SoftDeletes trait
     $this->markTestSkipped('User model does not implement SoftDeletes trait');
 });

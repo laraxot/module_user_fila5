@@ -11,8 +11,8 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-describe('GetNewPasswordAction', function (): void {
-    it('generates and stores a new hashed password for the user', function (): void {
+describe('GetNewPasswordAction', function(): void {
+    it('generates and stores a new hashed password for the user', function(): void {
         $user = User::factory()->create([
             'password' => Hash::make('old-password'),
         ]);
@@ -29,7 +29,7 @@ describe('GetNewPasswordAction', function (): void {
             ->and(Hash::check($plainPassword, (string) $user->password))->toBeTrue();
     });
 
-    it('can regenerate password multiple times', function (): void {
+    it('can regenerate password multiple times', function(): void {
         $user = User::factory()->create();
 
         $firstPlain = app(GetNewPasswordAction::class)->execute($user);

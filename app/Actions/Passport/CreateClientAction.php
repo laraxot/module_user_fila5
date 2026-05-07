@@ -27,6 +27,7 @@ class CreateClientAction
      * @param  bool  $personalAccess  Indica se è un personal access client
      * @param  bool  $password  Indica se è un password client
      * @param  string|null  $provider  Provider di autenticazione (default: 'users')
+     *
      * @return OauthClient Il client creato
      */
     public function execute(
@@ -37,7 +38,7 @@ class CreateClientAction
         bool $password = false,
         ?string $provider = null,
     ): OauthClient {
-        $client = new OauthClient;
+        $client = new OauthClient();
         $client->name = $name;
         $client->redirect = $redirect;
         $client->personal_access_client = $personalAccess;

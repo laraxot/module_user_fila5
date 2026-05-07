@@ -24,8 +24,8 @@ use Modules\Xot\Contracts\UserContract;
 
 uses(TestCase::class);
 
-describe('Socialite utility actions', function (): void {
-    it('returns allow list when configured as string', function (): void {
+describe('Socialite utility actions', function(): void {
+    it('returns allow list when configured as string', function(): void {
         config(['filament-socialite.domain_allowlist' => 'example.com']);
 
         $result = app(GetDomainAllowListAction::class)->execute();
@@ -33,7 +33,7 @@ describe('Socialite utility actions', function (): void {
         expect($result)->toBe(['example.com']);
     });
 
-    it('returns allow list when configured as array', function (): void {
+    it('returns allow list when configured as array', function(): void {
         config(['filament-socialite.domain_allowlist' => ['a.com', 'b.com']]);
 
         $result = app(GetDomainAllowListAction::class)->execute();
@@ -41,7 +41,7 @@ describe('Socialite utility actions', function (): void {
         expect($result)->toBe(['a.com', 'b.com']);
     });
 
-    it('returns registration flag from config', function (): void {
+    it('returns registration flag from config', function(): void {
         config(['filament-socialite.registration' => true]);
 
         $result = app(IsRegistrationEnabledAction::class)->execute();
@@ -49,7 +49,7 @@ describe('Socialite utility actions', function (): void {
         expect($result)->toBeTrue();
     });
 
-    it('returns provider scopes when configured', function (): void {
+    it('returns provider scopes when configured', function(): void {
         config(['services.github.scopes' => ['user:email', 'read:org']]);
 
         $result = app(GetProviderScopesAction::class)->execute('github');
@@ -57,7 +57,7 @@ describe('Socialite utility actions', function (): void {
         expect($result)->toBe(['user:email', 'read:org']);
     });
 
-    it('returns empty scopes when provider scopes are missing', function (): void {
+    it('returns empty scopes when provider scopes are missing', function(): void {
         config(['services.github.scopes' => null]);
 
         $result = app(GetProviderScopesAction::class)->execute('github');
@@ -65,7 +65,7 @@ describe('Socialite utility actions', function (): void {
         expect($result)->toBe([]);
     });
 
-    it('validates configured provider without throwing', function (): void {
+    it('validates configured provider without throwing', function(): void {
         config(['services.github' => ['client_id' => 'id']]);
 
         app(ValidateProviderAction::class)->execute('github');
@@ -73,13 +73,13 @@ describe('Socialite utility actions', function (): void {
         expect(true)->toBeTrue();
     });
 
-    it('throws for non configured provider', function (): void {
+    it('throws for non configured provider', function(): void {
         config(['services.github' => ['client_id' => 'id']]);
 
         app(ValidateProviderAction::class)->execute('gitlab');
     })->throws(ProviderNotConfigured::class);
 
-    it('returns configured auth guard', function (): void {
+    it('returns configured auth guard', function(): void {
         config(['filament.auth.guard' => 'web']);
 
         $guard = app(GetGuardAction::class)->execute();
@@ -87,26 +87,26 @@ describe('Socialite utility actions', function (): void {
         expect($guard)->toBeInstanceOf(Guard::class);
     });
 
-    it('returns static login redirect route', function (): void {
+    it('returns static login redirect route', function(): void {
         $route = app(GetLoginRedirectRouteAction::class)->execute();
 
         expect($route)->toBe('filament.admin.pages.dashboard');
     });
 
-    it('returns empty provider buttons array', function (): void {
+    it('returns empty provider buttons array', function(): void {
         $result = app(GetProviderButtonsAction::class)->execute();
 
         expect($result)->toBe([]);
     });
 
-    it('checks if provider is configured', function (): void {
+    it('checks if provider is configured', function(): void {
         config(['services.github' => ['client_id' => 'id']]);
 
         expect(app(IsProviderConfiguredAction::class)->execute('github'))->toBeTrue()
             ->and(app(IsProviderConfiguredAction::class)->execute('gitlab'))->toBeFalse();
     });
 
-    it('logs out user token and device sessions', function (): void {
+    it('logs out user token and device sessions', function(): void {
         $accessToken = new class
         {
             public bool $deleted = false;
@@ -148,7 +148,7 @@ describe('Socialite utility actions', function (): void {
             ->and(DB::connection('user')->table('device_user')->where('user_id', 'user-1')->whereNotNull('logout_at')->count())->toBe(1);
     });
 
-    it('redirects to login route with error', function (): void {
+    it('redirects to login route with error', function(): void {
         if (! Route::has('login')) {
             Route::get('/login', static fn () => 'login')->name('login');
         }

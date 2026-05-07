@@ -152,7 +152,11 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
 
     protected $keyType = 'string';
 
+<<<<<<< Updated upstream
     protected $childColumn = 'type';
+=======
+    protected string $childColumn = 'type';
+>>>>>>> Stashed changes
 
     protected $fillable = [
         'id',
@@ -201,7 +205,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     /**
      * Guard coerente con Spatie/Permission: deve essere 'web'.
      */
-    protected $guard_name = 'web';
+    protected string $guard_name = 'web';
 
     public function __construct(array $attributes = [])
     {
@@ -313,16 +317,24 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
 
     public function detach(Model $model): void
     {
+<<<<<<< Updated upstream
         if (method_exists($this, 'teams')) {
             $this->teams()->detach($model);
         }
+=======
+        $this->teams()->detach($model);
+>>>>>>> Stashed changes
     }
 
     public function attach(Model $model): void
     {
+<<<<<<< Updated upstream
         if (method_exists($this, 'teams')) {
             $this->teams()->attach($model);
         }
+=======
+        $this->teams()->attach($model);
+>>>>>>> Stashed changes
     }
 
     public function treeLabel(): string
@@ -370,7 +382,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     /**
      * Get the entity's notifications.
      *
-     * @return MorphMany<Notification, static|$this>
+     * @return MorphMany<Notification, $this>
      */
     public function notifications(): MorphMany
     {
@@ -380,7 +392,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     /**
      * Get the user's latest authentication log.
      *
-     * @return MorphOne<AuthenticationLog, static>
+     * @return MorphOne<AuthenticationLog, $this>
      */
     public function latestAuthentication(): MorphOne
     {

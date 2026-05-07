@@ -42,7 +42,7 @@ function stubUser(array $attributes = []): User
 }
 
 // Provide Eloquent connection resolver and event dispatcher once for this file
-beforeAll(function (): void {
+beforeAll(function(): void {
     try {
         Model::setConnectionResolver(app('db'));
         Model::setEventDispatcher(app('events'));

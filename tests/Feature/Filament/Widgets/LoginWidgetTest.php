@@ -14,11 +14,11 @@ use function Pest\Laravel\assertAuthenticatedAs;
 
 uses(TestCase::class);
 
-beforeEach(function (): void {
+beforeEach(function(): void {
     $this->widget = new LoginWidget;
 });
 
-test('it can render widget', function (): void {
+test('it can render widget', function(): void {
     $widget = new LoginWidget;
 
     // Use reflection to access the protected view property
@@ -30,7 +30,7 @@ test('it can render widget', function (): void {
     expect($view)->toContain('pub_theme::filament.widgets.auth.login');
 });
 
-test('it has correct form schema', function (): void {
+test('it has correct form schema', function(): void {
     $form = $this->widget->getFormSchema();
 
     expect($form)->toHaveCount(3);
@@ -42,7 +42,7 @@ test('it has correct form schema', function (): void {
     expect($componentNames)->toContain('remember');
 });
 
-test('it can authenticate user', function (): void {
+test('it can authenticate user', function(): void {
     // Skip if we can't use the database
     if (! class_exists('CreateUsersTable')) {
         $this->markTestSkipped('Database not available for testing');
@@ -67,7 +67,7 @@ test('it can authenticate user', function (): void {
     assertAuthenticatedAs($user);
 });
 
-test('it validates credentials', function (): void {
+test('it validates credentials', function(): void {
     $this->widget->form->fill([
         'email' => 'nonexistent@example.com',
         'password' => 'wrongpassword',
@@ -82,7 +82,7 @@ test('it validates credentials', function (): void {
     expect(implode(' ', $errorBag->all()))->toContain('credenziali');
 });
 
-test('it requires email and password', function (): void {
+test('it requires email and password', function(): void {
     $this->widget->form->fill([
         'email' => '',
         'password' => '',

@@ -50,7 +50,7 @@ trait IsProfileTrait
     /**
      * Relazione con l'utente a cui appartiene il profilo.
      *
-     * @return BelongsTo<Model&UserContract, static>
+     * @return BelongsTo<Model&UserContract, $this>
      */
     public function user(): BelongsTo
     {
@@ -217,7 +217,7 @@ trait IsProfileTrait
     /**
      * Relazione con i dispositivi mobili associati al profilo.
      *
-     * @return BelongsToMany<Device, static>
+     * @return BelongsToMany<Device, $this>
      */
     public function mobileDevices(): BelongsToMany
     {
@@ -227,7 +227,7 @@ trait IsProfileTrait
     /**
      * Relazione con tutti i dispositivi associati al profilo.
      *
-     * @return BelongsToMany<Device, static>
+     * @return BelongsToMany<Device, $this>
      */
     public function devices(): BelongsToMany
     {
@@ -237,7 +237,7 @@ trait IsProfileTrait
     /**
      * Relazione con gli utenti di dispositivi mobili.
      *
-     * @return HasMany<DeviceUser, static>
+     * @return HasMany<DeviceUser, $this>
      */
     public function mobileDeviceUsers(): HasMany
     {
@@ -247,7 +247,7 @@ trait IsProfileTrait
     /**
      * Relazione con gli utenti di dispositivi generici.
      *
-     * @return HasMany<DeviceUser, static>
+     * @return HasMany<DeviceUser, $this>
      */
     public function deviceUsers(): HasMany
     {
@@ -266,7 +266,7 @@ trait IsProfileTrait
             ->filter(static fn (mixed $value): bool => is_string($value) && $value !== '')
             ->map(static fn (mixed $value): string => (string) $value);
 
-        /* @var Collection<int|string, non-empty-string> $tokens */
+        /** @var Collection<int|string, non-empty-string> $tokens */
         return $tokens;
     }
 

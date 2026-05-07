@@ -17,6 +17,7 @@ class AuthLogout extends Component
 
     public function render(): View
     {
+<<<<<<< Updated upstream
         $view = 'livewire.auth.logout';
         if (! view()->exists($view)) {
             throw new \Exception("View {$view} not found");
@@ -24,5 +25,8 @@ class AuthLogout extends Component
         $view_params = [];
 
         return view($view, $view_params);
+=======
+        return view('livewire.auth.logout');
+>>>>>>> Stashed changes
     }
 }

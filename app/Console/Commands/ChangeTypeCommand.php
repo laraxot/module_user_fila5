@@ -7,13 +7,12 @@ namespace Modules\User\Console\Commands;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Support\Htmlable;
+use function Laravel\Prompts\select;
+use function Laravel\Prompts\text;
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
-
-use function Laravel\Prompts\select;
-use function Laravel\Prompts\text;
 
 /**
  * Command to change user type based on project configuration.
@@ -25,15 +24,11 @@ class ChangeTypeCommand extends Command
 {
     /**
      * The name and signature of the console command.
-     *
-     * @var string
      */
     protected $name = 'user:change-type';
 
     /**
      * The console command description.
-     *
-     * @var string
      */
     protected $description = 'Change user type based on project configuration';
 
@@ -107,7 +102,7 @@ class ChangeTypeCommand extends Command
         Assert::isInstanceOf($newTypeEnum, HasLabel::class);
         Assert::isInstanceOf($newTypeEnum, \BackedEnum::class);
 
-        /* @var \BackedEnum&HasLabel $newTypeEnum */
+        /** @var \BackedEnum&HasLabel $newTypeEnum */
         $user->type = (string) $newTypeEnum->value;
         $user->save();
 

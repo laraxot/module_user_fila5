@@ -121,7 +121,11 @@ class LoginWidget extends XotBaseWidget
                     $messages = [$messages];
                 }
 
+<<<<<<< Updated upstream
                 /* @var array<int, string> $messages */
+=======
+                /** @var array<int, string> $messages */
+>>>>>>> Stashed changes
                 $this->addError($field, implode(' ', array_map('strval', $messages)));
             }
         } catch (\Exception $e) {

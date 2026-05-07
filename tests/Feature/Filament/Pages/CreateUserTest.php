@@ -15,7 +15,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
 uses(TestCase::class);
 
-beforeEach(function (): void {
+beforeEach(function(): void {
     // Ensure the panel is registered
     try {
         $panel = Filament::getPanel('user::admin');
@@ -29,33 +29,33 @@ beforeEach(function (): void {
     $this->createUserPage = new CreateUser;
 });
 
-test('create user page has correct resource', function (): void {
+test('create user page has correct resource', function(): void {
     expect($this->createUserPage->getResource())->toBe(UserResource::class);
 });
 
-test('create user page extends correct base class', function (): void {
+test('create user page extends correct base class', function(): void {
     expect($this->createUserPage)->toBeInstanceOf(XotBaseCreateRecord::class);
 });
 
-test('create user page can be instantiated', function (): void {
+test('create user page can be instantiated', function(): void {
     expect($this->createUserPage)->toBeInstanceOf(CreateUser::class);
 });
 
-test('create user page has correct navigation label', function (): void {
+test('create user page has correct navigation label', function(): void {
     $label = $this->createUserPage->getNavigationLabel();
 
     // The label should be defined or fall back to default
     expect($label)->not->toBeNull();
 });
 
-test('create user page has correct title', function (): void {
+test('create user page has correct title', function(): void {
     $title = $this->createUserPage->getTitle();
 
     // The title should be defined or fall back to default
     expect($title)->not->toBeNull();
 });
 
-test('create user page has correct breadcrumbs structure', function (): void {
+test('create user page has correct breadcrumbs structure', function(): void {
     // Breadcrumbs generation might fail due to route parameters in multi-tenant setup
     // Instead, test that the method exists and returns the expected type
     expect(method_exists($this->createUserPage, 'getBreadcrumbs'))->toBeTrue();
@@ -70,13 +70,13 @@ test('create user page has correct breadcrumbs structure', function (): void {
     }
 });
 
-test('create user page can be accessed', function (): void {
+test('create user page can be accessed', function(): void {
     // This test would require authentication and proper setup
     // For now, we'll test that the class can be instantiated
     expect($this->createUserPage)->toBeInstanceOf(CreateUser::class);
 });
 
-test('create user page can create user with valid data', function (): void {
+test('create user page can create user with valid data', function(): void {
     // Test that the page can handle user creation with valid data structure
     $userData = [
         'name' => 'Test User',
@@ -92,7 +92,7 @@ test('create user page can create user with valid data', function (): void {
     expect($userData['type'])->toBe(UserType::MasterAdmin);
 });
 
-test('create user page handles form submission structure', function (): void {
+test('create user page handles form submission structure', function(): void {
     // Test form data structure that would be submitted
     $formData = [
         'name' => 'New User',
@@ -113,7 +113,7 @@ test('create user page handles form submission structure', function (): void {
     expect($formData['type'])->toBe(UserType::BoUser);
 });
 
-test('create user page follows filament conventions', function (): void {
+test('create user page follows filament conventions', function(): void {
     // Test that the page follows standard Filament conventions
     expect($this->createUserPage->getResource())->toBe(UserResource::class);
     expect($this->createUserPage->getModel())->toBe(User::class);

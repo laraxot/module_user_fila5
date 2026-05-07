@@ -6,6 +6,7 @@ namespace Modules\User\Http\Livewire\Auth\Passwords;
 
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Auth\PasswordBroker;
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Contracts\View\Factory;
@@ -58,7 +59,7 @@ class Reset extends Component
                 'password' => $this->password,
             ],
             function (Authenticatable $user, string $password): void {
-                /* @var Model&Authenticatable $user */
+                /** @var Model&Authenticatable $user */
                 $user->setAttribute('password', Hash::make($password));
                 $user->setRememberToken(Str::random(60));
                 $user->save();

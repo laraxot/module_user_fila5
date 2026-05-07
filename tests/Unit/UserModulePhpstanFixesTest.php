@@ -16,7 +16,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-it('password data can be instantiated', function (): void {
+it('password data can be instantiated', function(): void {
     $passwordData = new PasswordData;
 
     $this->assertInstanceOf(PasswordData::class, $passwordData);
@@ -32,7 +32,7 @@ it('password data can be instantiated', function (): void {
     $this->assertSame(0, $passwordData->compromisedThreshold);
 });
 
-it('password data can be configured', function (): void {
+it('password data can be configured', function(): void {
     $passwordData = new PasswordData(
         otp_expiration_minutes: 30,
         otp_length: 8,
@@ -58,7 +58,7 @@ it('password data can be configured', function (): void {
     $this->assertSame(5, $passwordData->compromisedThreshold);
 });
 
-it('password data get password rule works', function (): void {
+it('password data get password rule works', function(): void {
     $passwordData = new PasswordData(
         min: 8,
         mixedCase: true,
@@ -74,7 +74,7 @@ it('password data get password rule works', function (): void {
     $this->assertInstanceOf(Password::class, $rule);
 });
 
-it('password data get helper text works', function (): void {
+it('password data get helper text works', function(): void {
     $passwordData = new PasswordData(
         min: 8,
         mixedCase: true,
@@ -95,7 +95,7 @@ it('password data get helper text works', function (): void {
     $this->assertStringContainsString('compromessa', $helperText);
 });
 
-it('password data get form components returns array', function (): void {
+it('password data get form components returns array', function(): void {
     $passwordData = new PasswordData;
 
     // Smoke tests: methods should be callable without throwing.
@@ -104,7 +104,7 @@ it('password data get form components returns array', function (): void {
     $passwordData->getPasswordConfirmationFormComponent();
 });
 
-it('events can be instantiated', function (): void {
+it('events can be instantiated', function(): void {
     $userFactory = User::factory();
     \assert($userFactory instanceof Illuminate\Database\Eloquent\Factories\Factory);
     $owner = $userFactory->create();
@@ -126,7 +126,7 @@ it('events can be instantiated', function (): void {
     $this->assertInstanceOf(SocialiteUserConnected::class, $socialiteUserConnected);
 });
 
-it('events have dispatchable trait', function (): void {
+it('events have dispatchable trait', function(): void {
     $userFactory = User::factory();
     \assert($userFactory instanceof Illuminate\Database\Eloquent\Factories\Factory);
     $owner = $userFactory->create();
@@ -142,19 +142,19 @@ it('events have dispatchable trait', function (): void {
     Login::dispatch($socialiteUser);
 });
 
-it('password data static make method exists', function (): void {
+it('password data static make method exists', function(): void {
     $passwordData = PasswordData::make();
     $this->assertInstanceOf(PasswordData::class, $passwordData);
 });
 
-it('password data get validation messages method exists', function (): void {
+it('password data get validation messages method exists', function(): void {
     $passwordData = new PasswordData;
 
     $messages = $passwordData->getValidationMessages();
     $this->assertIsArray($messages);
 });
 
-it('password data get form schema method exists', function (): void {
+it('password data get form schema method exists', function(): void {
     $schema = PasswordData::getFormSchema();
     $this->assertIsArray($schema);
 });

@@ -12,7 +12,6 @@ use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
-
 use function Safe\json_encode;
 
 /**

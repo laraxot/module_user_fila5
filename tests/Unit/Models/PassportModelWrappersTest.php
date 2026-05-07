@@ -18,7 +18,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-test('passport eloquent models have oauth wrappers in user module', function (): void {
+test('passport eloquent models have oauth wrappers in user module', function(): void {
     $expectedWrappers = [
         AuthCode::class => OauthAuthCode::class,
         Client::class => OauthClient::class,

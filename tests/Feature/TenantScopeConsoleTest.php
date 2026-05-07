@@ -14,15 +14,15 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-describe('TenantScope Console Context Behavior', function (): void {
-    beforeEach(function (): void {
+describe('TenantScope Console Context Behavior', function(): void {
+    beforeEach(function(): void {
         // Crea tenant per i test
         $this->tenant1 = Tenant::factory()->create(['name' => 'Tenant 1']);
         $this->tenant2 = Tenant::factory()->create(['name' => 'Tenant 2']);
     });
 
-    describe('User Creation in Console Context', function (): void {
-        it('allows user creation without tenant in console context', function (): void {
+    describe('User Creation in Console Context', function(): void {
+        it('allows user creation without tenant in console context', function(): void {
             // Simula contesto console
             $this->app->bind('Illuminate\Contracts\Console\Kernel', function ($app) {
                 return $app->make(Kernel::class);
@@ -40,7 +40,7 @@ describe('TenantScope Console Context Behavior', function (): void {
                 ->and($user->email)->toBe('console-test@example.com');
         });
 
-        it('executes make:filament-user command successfully', function (): void {
+        it('executes make:filament-user command successfully', function(): void {
             $email = 'artisan-test-'.time().'@example.com';
 
             // Esegui comando make:filament-user
@@ -60,7 +60,7 @@ describe('TenantScope Console Context Behavior', function (): void {
                 ->and($user->email)->toBe($email);
         });
 
-        it('allows querying all users in console context without tenant filter', function (): void {
+        it('allows querying all users in console context without tenant filter', function(): void {
             // Crea utenti per diversi tenant
             $user1 = User::factory()->create([
                 'name' => 'Tenant 1 User',
@@ -81,8 +81,8 @@ describe('TenantScope Console Context Behavior', function (): void {
         });
     });
 
-    describe('User Creation in HTTP Context with Tenant', function (): void {
-        it('automatically sets tenant_id when creating user in HTTP context', function (): void {
+    describe('User Creation in HTTP Context with Tenant', function(): void {
+        it('automatically sets tenant_id when creating user in HTTP context', function(): void {
             // Simula contesto HTTP con tenant attivo
             $this->actingAs(User::factory()->create());
 
@@ -103,7 +103,7 @@ describe('TenantScope Console Context Behavior', function (): void {
             expect($user)->toBeInstanceOf(User::class);
         });
 
-        it('filters users by tenant in HTTP context', function (): void {
+        it('filters users by tenant in HTTP context', function(): void {
             // Crea utenti per diversi tenant
             $user1 = User::factory()->create([
                 'name' => 'Tenant 1 User Only',
@@ -135,8 +135,8 @@ describe('TenantScope Console Context Behavior', function (): void {
         });
     });
 
-    describe('TenantScope Exception Handling', function (): void {
-        it('handles gracefully when Filament::getTenant() throws exception', function (): void {
+    describe('TenantScope Exception Handling', function(): void {
+        it('handles gracefully when Filament::getTenant() throws exception', function(): void {
             // Mock Filament per lanciare eccezione
             Filament::shouldReceive('getTenant')
                 ->andThrow(new RuntimeException('Session not available'));
@@ -147,7 +147,7 @@ describe('TenantScope Console Context Behavior', function (): void {
             expect($users)->toBeInstanceOf(Collection::class);
         });
 
-        it('allows user creation when Filament context is not available', function (): void {
+        it('allows user creation when Filament context is not available', function(): void {
             // Simula assenza di contesto Filament
             Filament::shouldReceive('getTenant')
                 ->andReturn(null);
@@ -163,8 +163,8 @@ describe('TenantScope Console Context Behavior', function (): void {
         });
     });
 
-    describe('Manual Tenant Assignment in Console', function (): void {
-        it('allows manual tenant_id assignment in console context', function (): void {
+    describe('Manual Tenant Assignment in Console', function(): void {
+        it('allows manual tenant_id assignment in console context', function(): void {
             // In console, possiamo impostare manualmente tenant_id
             $user = User::create([
                 'name' => 'Manual Tenant User',
@@ -180,7 +180,7 @@ describe('TenantScope Console Context Behavior', function (): void {
             expect($user->tenant_id)->toBe($this->tenant1->id);
         });
 
-        it('allows querying users by specific tenant in console', function (): void {
+        it('allows querying users by specific tenant in console', function(): void {
             // Crea utenti per diversi tenant
             User::factory()->count(3)->create(['tenant_id' => $this->tenant1->id]);
             User::factory()->count(2)->create(['tenant_id' => $this->tenant2->id]);
@@ -200,8 +200,8 @@ describe('TenantScope Console Context Behavior', function (): void {
     });
 });
 
-describe('InteractsWithTenant Trait Behavior', function (): void {
-    it('does not crash when booting in console context', function (): void {
+describe('InteractsWithTenant Trait Behavior', function(): void {
+    it('does not crash when booting in console context', function(): void {
         // Verifica che il trait non causi eccezioni durante boot
         $user = new User([
             'name' => 'Boot Test User',
@@ -217,7 +217,7 @@ describe('InteractsWithTenant Trait Behavior', function (): void {
         expect($user->exists)->toBeTrue();
     });
 
-    it('skips tenant assignment in console context during creating event', function (): void {
+    it('skips tenant assignment in console context during creating event', function(): void {
         // In console, il creating event non dovrebbe tentare di chiamare Filament::getTenant()
         $user = User::create([
             'name' => 'Creating Event Test',

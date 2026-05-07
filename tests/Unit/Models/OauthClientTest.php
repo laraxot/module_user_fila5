@@ -10,7 +10,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-test('oauth client can be instantiated', function (): void {
+test('oauth client can be instantiated', function(): void {
     $client = new OauthClient;
 
     expect($client)->toBeInstanceOf(OauthClient::class)
@@ -18,19 +18,19 @@ test('oauth client can be instantiated', function (): void {
         ->and($client)->toBeInstanceOf(Authorizable::class);
 });
 
-test('oauth client has connection user', function (): void {
+test('oauth client has connection user', function(): void {
     $client = new OauthClient;
 
     expect($client->getConnectionName())->toBe('user');
 });
 
-test('oauth client has guard_name api', function (): void {
+test('oauth client has guard_name api', function(): void {
     $client = new OauthClient;
 
     expect($client->guard_name)->toBe('api');
 });
 
-test('oauth client user relation uses xot data', function (): void {
+test('oauth client user relation uses xot data', function(): void {
     $user = User::factory()->create();
     $client = OauthClient::factory()->create(['user_id' => $user->getKey()]);
 
@@ -38,25 +38,25 @@ test('oauth client user relation uses xot data', function (): void {
         ->and($client->user->getKey())->toBe($user->getKey());
 });
 
-test('oauth client can returns false when permission does not exist', function (): void {
+test('oauth client can returns false when permission does not exist', function(): void {
     $client = OauthClient::factory()->create();
 
     expect($client->can('non-existent-permission'))->toBeFalse();
 });
 
-test('oauth client cant returns true when permission does not exist', function (): void {
+test('oauth client cant returns true when permission does not exist', function(): void {
     $client = OauthClient::factory()->create();
 
     expect($client->cant('non-existent-permission'))->toBeTrue();
 });
 
-test('oauth client cannot is alias of cant', function (): void {
+test('oauth client cannot is alias of cant', function(): void {
     $client = OauthClient::factory()->create();
 
     expect($client->cannot('non-existent-permission'))->toBeTrue();
 });
 
-test('oauth client canAny returns false for empty abilities', function (): void {
+test('oauth client canAny returns false for empty abilities', function(): void {
     $client = OauthClient::factory()->create();
 
     expect($client->canAny([]))->toBeFalse();

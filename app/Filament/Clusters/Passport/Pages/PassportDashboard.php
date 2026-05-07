@@ -14,14 +14,23 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 
 class PassportDashboard extends XotBasePage
 {
+<<<<<<< Updated upstream
     public $hasPublicKey = false;
 
     public $hasPrivateKey = false;
+=======
+    public bool $hasPublicKey = false;
+>>>>>>> Stashed changes
 
     /** @var list<string> */
     public $output = [];
 
+<<<<<<< Updated upstream
     public $currentCommand = '';
+=======
+    /** @var string[] */
+    public array $output = [];
+>>>>>>> Stashed changes
 
     public $status = '';
 
@@ -32,6 +41,14 @@ class PassportDashboard extends XotBasePage
      */
     protected static ?string $cluster = Passport::class;
 
+<<<<<<< Updated upstream
+=======
+    /**
+     * @var class-string<Cluster>
+     */
+    protected static ?string $cluster = Passport::class;
+
+>>>>>>> Stashed changes
     protected string $view = 'user::filament.pages.passport-dashboard';
 
     public function executeCommand(string $command): void

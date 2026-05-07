@@ -10,7 +10,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class, DatabaseTransactions::class);
 
-test('can create profile with minimal data', function (): void {
+test('can create profile with minimal data', function(): void {
     $profile = Profile::factory()->create([
         'first_name' => 'John',
         'last_name' => 'Doe',
@@ -27,7 +27,7 @@ test('can create profile with minimal data', function (): void {
     ]);
 });
 
-test('can create profile with all fields', function (): void {
+test('can create profile with all fields', function(): void {
     $profileData = [
         'first_name' => 'Jane',
         'last_name' => 'Smith',
@@ -64,53 +64,53 @@ test('can create profile with all fields', function (): void {
     expect($profile->extra->toArray())->toBe(['skills' => ['PHP', 'Laravel'], 'experience' => 5]);
 });
 
-test('profile has schemaless attributes', function (): void {
+test('profile has schemaless attributes', function(): void {
     $profile = new Profile;
     $expectedAttributes = ['extra'];
     expect($profile->getSchemalessAttributes())->toBe($expectedAttributes);
 });
 
-test('profile has table name', function (): void {
+test('profile has table name', function(): void {
     $profile = new Profile;
     expect($profile->getTable())->toBe('profiles');
 });
 
-test('can find profile by email', function (): void {
+test('can find profile by email', function(): void {
     $profile = Profile::factory()->create(['email' => 'unique@example.com']);
     $foundProfile = Profile::where('email', 'unique@example.com')->first();
     expect($foundProfile)->not->toBeNull();
     expect($foundProfile->id)->toBe($profile->id);
 });
 
-test('can find profile by user name', function (): void {
+test('can find profile by user name', function(): void {
     $profile = Profile::factory()->create(['user_name' => 'uniqueuser']);
     $foundProfile = Profile::where('user_name', 'uniqueuser')->first();
     expect($foundProfile)->not->toBeNull();
     expect($foundProfile->id)->toBe($profile->id);
 });
 
-test('can find profile by first name', function (): void {
+test('can find profile by first name', function(): void {
     $profile = Profile::factory()->create(['first_name' => 'Unique']);
     $foundProfile = Profile::where('first_name', 'Unique')->first();
     expect($foundProfile)->not->toBeNull();
     expect($foundProfile->id)->toBe($profile->id);
 });
 
-test('can find profile by last name', function (): void {
+test('can find profile by last name', function(): void {
     $profile = Profile::factory()->create(['last_name' => 'Unique']);
     $foundProfile = Profile::where('last_name', 'Unique')->first();
     expect($foundProfile)->not->toBeNull();
     expect($foundProfile->id)->toBe($profile->id);
 });
 
-test('can find profile by phone', function (): void {
+test('can find profile by phone', function(): void {
     $profile = Profile::factory()->create(['phone' => '+1234567890']);
     $foundProfile = Profile::where('phone', '+1234567890')->first();
     expect($foundProfile)->not->toBeNull();
     expect($foundProfile->id)->toBe($profile->id);
 });
 
-test('can find profile by status', function (): void {
+test('can find profile by status', function(): void {
     Profile::factory()->create(['status' => 'active']);
     Profile::factory()->create(['status' => 'inactive']);
     Profile::factory()->create(['status' => 'pending']);
@@ -120,7 +120,7 @@ test('can find profile by status', function (): void {
     expect($activeProfiles->first()->status)->toBe('active');
 });
 
-test('can find profile by timezone', function (): void {
+test('can find profile by timezone', function(): void {
     Profile::factory()->create(['timezone' => 'UTC']);
     Profile::factory()->create(['timezone' => 'Europe/Rome']);
     Profile::factory()->create(['timezone' => 'America/New_York']);
@@ -130,7 +130,7 @@ test('can find profile by timezone', function (): void {
     expect($utcProfiles->first()->timezone)->toBe('UTC');
 });
 
-test('can find profile by locale', function (): void {
+test('can find profile by locale', function(): void {
     Profile::factory()->create(['locale' => 'en']);
     Profile::factory()->create(['locale' => 'it']);
     Profile::factory()->create(['locale' => 'de']);
@@ -140,7 +140,7 @@ test('can find profile by locale', function (): void {
     expect($englishProfiles->first()->locale)->toBe('en');
 });
 
-test('can find profiles by name pattern', function (): void {
+test('can find profiles by name pattern', function(): void {
     Profile::factory()->create(['first_name' => 'John', 'last_name' => 'Doe']);
     Profile::factory()->create(['first_name' => 'Jane', 'last_name' => 'Doe']);
     Profile::factory()->create(['first_name' => 'Bob', 'last_name' => 'Smith']);
@@ -150,7 +150,7 @@ test('can find profiles by name pattern', function (): void {
     expect($doeProfiles->every(fn ($profile) => str_contains($profile->last_name, 'Doe')))->toBeTrue();
 });
 
-test('can find profiles by bio pattern', function (): void {
+test('can find profiles by bio pattern', function(): void {
     Profile::factory()->create(['bio' => 'Software Developer']);
     Profile::factory()->create(['bio' => 'Designer']);
     Profile::factory()->create(['bio' => 'Product Manager']);
@@ -160,7 +160,7 @@ test('can find profiles by bio pattern', function (): void {
     expect($devProfiles->every(fn ($profile) => str_contains($profile->bio, 'Developer')))->toBeTrue();
 });
 
-test('can update profile', function (): void {
+test('can update profile', function(): void {
     $profile = Profile::factory()->create(['first_name' => 'Old Name']);
     $profile->update(['first_name' => 'New Name']);
 
@@ -170,7 +170,7 @@ test('can update profile', function (): void {
     ]);
 });
 
-test('can handle null values', function (): void {
+test('can handle null values', function(): void {
     $profile = Profile::factory()->create([
         'first_name' => 'Test',
         'last_name' => 'User',
@@ -193,7 +193,7 @@ test('can handle null values', function (): void {
     ]);
 });
 
-test('can find profiles by multiple criteria', function (): void {
+test('can find profiles by multiple criteria', function(): void {
     Profile::factory()->create([
         'status' => 'active',
         'timezone' => 'UTC',
@@ -218,49 +218,49 @@ test('can find profiles by multiple criteria', function (): void {
     expect($profiles->first()->timezone)->toBe('UTC');
 });
 
-test('profile has roles relationship', function (): void {
+test('profile has roles relationship', function(): void {
     $profile = Profile::factory()->create();
     expect(method_exists($profile, 'roles'))->toBeTrue();
 });
 
-test('profile has permissions relationship', function (): void {
+test('profile has permissions relationship', function(): void {
     $profile = Profile::factory()->create();
     expect(method_exists($profile, 'permissions'))->toBeTrue();
 });
 
-test('profile has teams relationship', function (): void {
+test('profile has teams relationship', function(): void {
     $profile = Profile::factory()->create();
     expect(method_exists($profile, 'teams'))->toBeTrue();
 });
 
-test('profile has devices relationship', function (): void {
+test('profile has devices relationship', function(): void {
     $profile = Profile::factory()->create();
     expect(method_exists($profile, 'devices'))->toBeTrue();
 });
 
-test('profile has media relationship', function (): void {
+test('profile has media relationship', function(): void {
     $profile = Profile::factory()->create();
     expect(method_exists($profile, 'media'))->toBeTrue();
 });
 
-test('profile can use permission scopes', function (): void {
+test('profile can use permission scopes', function(): void {
     $profile = Profile::factory()->create();
     expect(method_exists($profile, 'scopePermission'))->toBeTrue();
     expect(method_exists($profile, 'scopeWithoutPermission'))->toBeTrue();
 });
 
-test('profile can use role scopes', function (): void {
+test('profile can use role scopes', function(): void {
     $profile = Profile::factory()->create();
     expect(method_exists($profile, 'scopeRole'))->toBeTrue();
     expect(method_exists($profile, 'scopeWithoutRole'))->toBeTrue();
 });
 
-test('profile can use extra attributes scopes', function (): void {
+test('profile can use extra attributes scopes', function(): void {
     $profile = Profile::factory()->create();
     expect(method_exists($profile, 'scopeWithExtraAttributes'))->toBeTrue();
 });
 
-test('profile has factory', function (): void {
+test('profile has factory', function(): void {
     $profile = Profile::factory()->create();
     expect($profile->id)->not->toBeNull();
     expect($profile)->toBeInstanceOf(Profile::class);

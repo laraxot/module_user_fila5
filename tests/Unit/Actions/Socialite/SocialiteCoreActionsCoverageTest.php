@@ -19,8 +19,8 @@ use Modules\Xot\Contracts\UserContract;
 
 uses(TestCase::class);
 
-describe('Socialite core actions coverage', function (): void {
-    it('builds user attributes from oauth user', function (): void {
+describe('Socialite core actions coverage', function(): void {
+    it('builds user attributes from oauth user', function(): void {
         $oauthUser = Mockery::mock(SocialiteUserContract::class);
         $oauthUser->shouldReceive('getName')->andReturn('Mario Rossi');
         $oauthUser->shouldReceive('getEmail')->andReturn('mario.rossi@example.com');
@@ -34,7 +34,7 @@ describe('Socialite core actions coverage', function (): void {
             ->and($data->lastName)->toBe('Rossi');
     });
 
-    it('throws when provider is empty while building attributes', function (): void {
+    it('throws when provider is empty while building attributes', function(): void {
         $oauthUser = Mockery::mock(SocialiteUserContract::class);
         $oauthUser->shouldReceive('getName')->andReturn('Mario Rossi');
         $oauthUser->shouldReceive('getEmail')->andReturn('mario.rossi@example.com');
@@ -42,7 +42,7 @@ describe('Socialite core actions coverage', function (): void {
         app(GetUserModelAttributesFromSocialiteAction::class)->execute('', $oauthUser);
     })->throws(InvalidArgumentException::class, 'provider non può essere vuoto');
 
-    it('throws when oauth email is invalid while building attributes', function (): void {
+    it('throws when oauth email is invalid while building attributes', function(): void {
         $oauthUser = Mockery::mock(SocialiteUserContract::class);
         $oauthUser->shouldReceive('getName')->andReturn('Mario Rossi');
         $oauthUser->shouldReceive('getEmail')->andReturn(null);
@@ -50,7 +50,7 @@ describe('Socialite core actions coverage', function (): void {
         app(GetUserModelAttributesFromSocialiteAction::class)->execute('github', $oauthUser);
     })->throws(RuntimeException::class, 'email deve essere una stringa non vuota');
 
-    it('retrieves oauth user from socialite driver', function (): void {
+    it('retrieves oauth user from socialite driver', function(): void {
         $oauthUser = Mockery::mock(SocialiteUserContract::class);
         $driver = Mockery::mock();
         $driver->shouldReceive('user')->once()->andReturn($oauthUser);
@@ -65,7 +65,7 @@ describe('Socialite core actions coverage', function (): void {
         expect($result)->toBe($oauthUser);
     });
 
-    it('returns null and dispatches invalid state event when socialite state is invalid', function (): void {
+    it('returns null and dispatches invalid state event when socialite state is invalid', function(): void {
         $exception = new InvalidStateException;
 
         $driver = Mockery::mock();
@@ -83,7 +83,7 @@ describe('Socialite core actions coverage', function (): void {
         expect($result)->toBeNull();
     });
 
-    it('creates socialite user model with normalized attributes', function (): void {
+    it('creates socialite user model with normalized attributes', function(): void {
         $oauthUser = Mockery::mock(SocialiteUserContract::class);
         $oauthUser->shouldReceive('getId')->once()->andReturn('provider-user-1');
         $oauthUser->shouldReceive('getName')->once()->andReturn('Mario Rossi');

@@ -19,7 +19,8 @@ class GetCurrentDeviceAction
     public function __construct(
         private readonly Agent $agent,
         private readonly Device $deviceModel,
-    ) {}
+    ) {
+    }
 
     /**
      * Execute the action.

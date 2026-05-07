@@ -12,7 +12,6 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
-use Filament\Resources\Pages\PageRegistration;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
@@ -81,7 +80,7 @@ class OauthAccessTokenResource extends XotBaseResource
                             return null;
                         }
                         if (is_array($state)) {
-                            /* @var array<string, mixed> $state */
+                            /** @var array<string, mixed> $state */
                             return json_encode($state);
                         }
 
@@ -205,7 +204,7 @@ class OauthAccessTokenResource extends XotBaseResource
                         return null;
                     }
                     if (is_array($state)) {
-                        /* @var array<string, mixed> $state */
+                        /** @var array<string, mixed> $state */
                         return json_encode($state);
                     }
 

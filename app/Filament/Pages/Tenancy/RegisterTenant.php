@@ -54,8 +54,15 @@ class RegisterTenant extends BaseRegisterTenant
     public function getFormSchema(): array
     {
         $resourceClass = $this->resolveResourceClass();
+        $schema = $resourceClass::getFormSchema();
+        Assert::isArray($schema);
 
+<<<<<<< Updated upstream
         return $resourceClass::getFormSchema();
+=======
+        /** @var array<int, Component> $schema */
+        return $schema;
+>>>>>>> Stashed changes
     }
 
     /**

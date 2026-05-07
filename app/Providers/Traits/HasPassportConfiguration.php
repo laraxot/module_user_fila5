@@ -79,7 +79,7 @@ trait HasPassportConfiguration
             Assert::stringNotEmpty($value);
         }
 
-        /* @var array<string, string> $scopes */
+        /** @var array<string, string> $scopes */
         Passport::tokensCan($scopes);
     }
 

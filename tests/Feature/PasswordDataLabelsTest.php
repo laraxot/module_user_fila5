@@ -11,7 +11,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-test('password data labels are translated', function (): void {
+test('password data labels are translated', function(): void {
     // Arrange
     app()->setLocale('it');
 
@@ -27,7 +27,7 @@ test('password data labels are translated', function (): void {
     expect($confirmationComponent->getLabel())->toBe('Conferma Password');
 });
 
-test('login form labels are translated', function (): void {
+test('login form labels are translated', function(): void {
     // Assemble
     app()->setLocale('it');
 

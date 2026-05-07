@@ -10,7 +10,7 @@ use Spatie\LaravelData\Data;
 
 uses(TestCase::class);
 
-beforeEach(function (): void {
+beforeEach(function(): void {
     $this->passwordData = new PasswordData(
         otp_expiration_minutes: 10,
         otp_length: 8,
@@ -26,7 +26,7 @@ beforeEach(function (): void {
     );
 });
 
-test('password data can be created with custom parameters', function (): void {
+test('password data can be created with custom parameters', function(): void {
     expect($this->passwordData)->toBeInstanceOf(PasswordData::class);
     expect($this->passwordData->otp_expiration_minutes)->toBe(10);
     expect($this->passwordData->otp_length)->toBe(8);
@@ -41,7 +41,7 @@ test('password data can be created with custom parameters', function (): void {
     expect($this->passwordData->failMessage)->toBe('Password non valida');
 });
 
-test('password data has default values', function (): void {
+test('password data has default values', function(): void {
     $defaultPasswordData = new PasswordData;
 
     expect($defaultPasswordData->otp_expiration_minutes)->toBe(5);
@@ -57,11 +57,11 @@ test('password data has default values', function (): void {
     expect($defaultPasswordData->failMessage)->toBeNull();
 });
 
-test('password data extends spatie data class', function (): void {
+test('password data extends spatie data class', function(): void {
     expect($this->passwordData)->toBeInstanceOf(Data::class);
 });
 
-test('password data has correct properties', function (): void {
+test('password data has correct properties', function(): void {
     $reflection = new ReflectionClass(PasswordData::class);
     $properties = $reflection->getProperties();
 
@@ -80,7 +80,7 @@ test('password data has correct properties', function (): void {
     expect($propertyNames)->toContain('failMessage');
 });
 
-test('password data has correct types', function (): void {
+test('password data has correct types', function(): void {
     $reflection = new ReflectionClass(PasswordData::class);
 
     $otpExpirationProperty = $reflection->getProperty('otp_expiration_minutes');
@@ -109,7 +109,7 @@ test('password data has correct types', function (): void {
     expect($failMessageProperty->getType()->allowsNull())->toBeTrue();
 });
 
-test('password data has correct constructor parameters', function (): void {
+test('password data has correct constructor parameters', function(): void {
     $reflection = new ReflectionClass(PasswordData::class);
     $constructor = $reflection->getConstructor();
 
@@ -130,11 +130,11 @@ test('password data has correct constructor parameters', function (): void {
     expect($parameters[1]->getDefaultValue())->toBe(6);
 });
 
-test('password data has correct namespace', function (): void {
+test('password data has correct namespace', function(): void {
     expect(PasswordData::class)->toContain('Modules\User\Datas');
 });
 
-test('password data has correct strict types declaration', function (): void {
+test('password data has correct strict types declaration', function(): void {
     $reflection = new ReflectionClass(PasswordData::class);
     $filename = $reflection->getFileName();
 

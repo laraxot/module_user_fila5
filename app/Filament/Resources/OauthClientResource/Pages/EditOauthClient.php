@@ -39,7 +39,7 @@ class EditOauthClient extends XotBaseEditRecord
                 ->modalHeading(__('user::actions.oauth.revoke_client.modal.heading'))
                 ->modalDescription(__('user::actions.oauth.revoke_client.modal.description'))
                 ->modalSubmitActionLabel(__('user::actions.oauth.revoke_client.modal.confirm'))
-                ->action(function (): void {
+                ->action(function(): void {
                     /** @var OauthClient $record */
                     $record = $this->record;
                     app(RevokeClientAction::class)->execute($record, true);

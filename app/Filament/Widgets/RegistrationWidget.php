@@ -24,6 +24,7 @@ class RegistrationWidget extends XotBaseWidget
      */
     public ?array $data = null;
 
+<<<<<<< Updated upstream
     public $type;
 
     public $resource;
@@ -31,23 +32,42 @@ class RegistrationWidget extends XotBaseWidget
     public $model;
 
     public $action;
+=======
+    public string $type = '';
+
+    /** @var class-string */
+    public string $resource;
+
+    /** @var class-string<Model> */
+    public string $model = Model::class;
+
+    public string $action = '';
+>>>>>>> Stashed changes
 
     public Model $record;
 
     protected int|string|array $columnSpan = 'full';
 
+<<<<<<< Updated upstream
     /**
      * @phpstan-var class-string
      */
     protected string $view = 'pub_theme::filament.widgets.registration';
 
+=======
+>>>>>>> Stashed changes
     public function mount(string $type, Request $_request): void
     {
         $this->type = $type;
-        $this->resource = XotData::make()->getUserResourceClassByType($type);
+        $resourceClass = XotData::make()->getUserResourceClassByType($type);
+        if (class_exists($resourceClass)) {
+            $this->resource = $resourceClass;
+        }
 
         $modelClass = $this->resource::getModel();
-        $this->model = \is_string($modelClass) ? $modelClass : '';
+        if (\is_string($modelClass) && is_a($modelClass, Model::class, true)) {
+            $this->model = $modelClass;
+        }
 
         $this->action = Str::of($this->model)
             ->replace('\\Models\\', '\\Actions\\')
@@ -64,18 +84,23 @@ class RegistrationWidget extends XotBaseWidget
 
     public function getFormModel(): Model
     {
-        /** @var class-string<Model> $modelClass */
-        $modelClass = $this->model;
-
         $data = request()->all();
         $email = Arr::get($data, 'email');
         $token = Arr::get($data, 'token');
 
         /** @var Model|null $user */
         $user = $this->model::firstWhere('email', $email);
+<<<<<<< Updated upstream
         if (null === $user) {
             /* @var Model $model */
             return app($this->model);
+=======
+        if ($user === null) {
+            $model = app($this->model);
+            Assert::isInstanceOf($model, Model::class);
+
+            return $model;
+>>>>>>> Stashed changes
         }
 
         $remember_token = $user->getAttribute('remember_token');
@@ -91,7 +116,7 @@ class RegistrationWidget extends XotBaseWidget
             return $user;
         }
 
-        $model = app($modelClass);
+        $model = app($this->model);
         Assert::isInstanceOf($model, Model::class);
 
         return $model;
@@ -116,11 +141,7 @@ class RegistrationWidget extends XotBaseWidget
     #[\Override]
     public function getFormSchema(): array
     {
-        /** @var array<int|string, Component> $schema */
-        $schema = $this->resource::getFormSchemaWidget();
-        Assert::isArray($schema);
-
-        return $schema;
+        return self::normalizeFormSchema($this->resource::getFormSchemaWidget());
     }
 
     /**
@@ -136,10 +157,15 @@ class RegistrationWidget extends XotBaseWidget
         $data = array_merge($initialData, $data);
         $record = $this->record;
 
-        /** @var object{execute: callable} $actionInstance */
         $actionInstance = app($this->action);
+<<<<<<< Updated upstream
 
         $user = $actionInstance->execute($record, $data);
+=======
+        if (\is_object($actionInstance) && method_exists($actionInstance, 'execute')) {
+            \call_user_func([$actionInstance, 'execute'], $record, $data);
+        }
+>>>>>>> Stashed changes
 
         $lang = app()->getLocale();
         $route = route('pages.view', ['slug' => $this->type.'_register_complete']);
@@ -147,5 +173,26 @@ class RegistrationWidget extends XotBaseWidget
 
         // return redirect()->route('pages.view', ['slug' => $this->type . '_register_complete','lang'=>$lang]);
         return redirect($route);
+    }
+
+    /**
+     * @return array<int|string, Component>
+     */
+    private static function normalizeFormSchema(mixed $schema): array
+    {
+        if (! \is_array($schema)) {
+            return [];
+        }
+
+        $normalized = [];
+        foreach ($schema as $key => $component) {
+            if (! $component instanceof Component) {
+                return [];
+            }
+
+            $normalized[$key] = $component;
+        }
+
+        return $normalized;
     }
 }

@@ -32,6 +32,7 @@ use Webmozart\Assert\Assert;
  */
 class EditUserWidget extends XotBaseWidget
 {
+<<<<<<< Updated upstream
     public $type;
 
     public $resource;
@@ -39,14 +40,28 @@ class EditUserWidget extends XotBaseWidget
     public $model;
 
     public $action;
+=======
+    public string $type = '';
+
+    /** @var class-string */
+    public string $resource;
+
+    /** @var class-string<Model> */
+    public string $model = Model::class;
+
+    public string $action = '';
+>>>>>>> Stashed changes
 
     public Model $record;
 
     /** @var array<string, mixed>|null */
     public ?array $data = null;
 
+<<<<<<< Updated upstream
     protected string $view = 'pub_theme::filament.widgets.edit-user';
 
+=======
+>>>>>>> Stashed changes
     /**
      * Initialize the widget with user type and optional user ID.
      */
@@ -120,11 +135,15 @@ class EditUserWidget extends XotBaseWidget
      */
     public function getFormSchema(): array
     {
+<<<<<<< Updated upstream
         $schema = $this->resource::getFormSchemaWidget();
         Assert::isArray($schema, 'Schema must be array');
 
         /* @var array<int|string, Component> $result */
         return $schema;
+=======
+        return self::normalizeFormSchema($this->resource::getFormSchemaWidget());
+>>>>>>> Stashed changes
     }
 
     /**
@@ -160,8 +179,6 @@ class EditUserWidget extends XotBaseWidget
      */
     protected function getFormModel(?string $userId = null): Model
     {
-        /** @var class-string<Model> $modelClass */
-        $modelClass = $this->model;
         if ($userId) {
             $user = $this->model::findOrFail($userId);
             Assert::isInstanceOf($user, Model::class);
@@ -195,5 +212,26 @@ class EditUserWidget extends XotBaseWidget
         Assert::isInstanceOf($user, Model::class);
 
         return $user;
+    }
+
+    /**
+     * @return array<int|string, Component>
+     */
+    private static function normalizeFormSchema(mixed $schema): array
+    {
+        if (! \is_array($schema)) {
+            return [];
+        }
+
+        $normalized = [];
+        foreach ($schema as $key => $component) {
+            if (! $component instanceof Component) {
+                return [];
+            }
+
+            $normalized[$key] = $component;
+        }
+
+        return $normalized;
     }
 }

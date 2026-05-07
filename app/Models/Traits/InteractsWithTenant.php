@@ -37,7 +37,11 @@ trait InteractsWithTenant
         }
 
         $tenantClass = config('tenant.tenant_model', Tenant::class);
+<<<<<<< Updated upstream
 
+=======
+        // @phpstan-ignore-next-line
+>>>>>>> Stashed changes
         return $this->belongsTo($tenantClass, 'tenant_id');
     }
 

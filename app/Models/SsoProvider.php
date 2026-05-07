@@ -124,6 +124,7 @@ class SsoProvider extends BaseModel
      * Map SAML/OIDC roles to application roles.
      *
      * @param  array<string>  $samlRoles
+     *
      * @return list<string>
      */
     public function mapRoles(array $samlRoles): array
