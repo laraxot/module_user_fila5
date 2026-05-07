@@ -7,11 +7,16 @@ use Modules\User\Models\Device;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 return new class extends XotBaseMigration {
 =======
 return new class() extends XotBaseMigration {
 >>>>>>> Stashed changes
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
     /**
      * Run the migrations.
      */
@@ -40,7 +45,7 @@ return new class() extends XotBaseMigration {
                 $table->string('device_id', 36)->nullable()->change();
             }
             // dddx($this->getColumnType('device_id'));//varchar
-            if ('uuid' === $this->getColumnType('user_id')) {
+            if ($this->getColumnType('user_id') === 'uuid') {
                 $table->string('user_id', 36)->nullable()->change();
             }
 

@@ -57,19 +57,6 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     }
 
     /**
-     * Define the table for the resource.
-     */
-    public static function table(Table $table): Table
-    {
-        return $table
-            ->columns(self::getTableColumns())
-            ->filters(self::getTableFilters())
-            ->actions(self::getTableActions())
-            ->bulkActions(self::getTableBulkActions())
-            ->defaultSort('created_at', 'desc');
-    }
-
-    /**
      * Get the table columns for the resource.
      *
      * @return array<string, Tables\Columns\Column>

@@ -11,12 +11,17 @@ use Modules\Xot\Filament\Widgets\XotBaseChartWidget;
 
 final class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
 {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     public $model;
 =======
     /** @var class-string */
     public string $model;
 >>>>>>> Stashed changes
+=======
+    /** @var class-string */
+    public string $model;
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
     protected ?string $heading = null;
 
@@ -27,7 +32,7 @@ final class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
     #[\Override]
     public function getHeading(): string
     {
-        return static::transClass($this->model, 'widgets.user_type_registrations_chart.heading');
+        return self::transClass($this->model, 'widgets.user_type_registrations_chart.heading');
     }
 
     #[\Override]
@@ -42,6 +47,7 @@ final class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
 
         // Verifica se i filtri sono disponibili e validi
         if (is_array($filters) && ! empty($filters)) {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
             $startDate = ! empty($filters['startDate']) ? Carbon::parse($filters['startDate']) : null;
             $endDate = ! empty($filters['endDate']) ? Carbon::parse($filters['endDate']) : null;
@@ -49,6 +55,10 @@ final class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
             $startDate = self::parseFilterDate($filters['startDate'] ?? null);
             $endDate = self::parseFilterDate($filters['endDate'] ?? null);
 >>>>>>> Stashed changes
+=======
+            $startDate = self::parseFilterDate($filters['startDate'] ?? null);
+            $endDate = self::parseFilterDate($filters['endDate'] ?? null);
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
         }
 
         // Fallback ai valori di default se i filtri non sono disponibili
@@ -71,7 +81,7 @@ final class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
             return [
                 'datasets' => [
                     [
-                        'label' => static::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
+                        'label' => self::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
                         'data' => $data->map(fn (mixed $value) => $value instanceof TrendValue
                             ? $value->aggregate
                             : 0),
@@ -90,7 +100,7 @@ final class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
             return [
                 'datasets' => [
                     [
-                        'label' => static::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
+                        'label' => self::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
                         'data' => [],
                         'backgroundColor' => 'rgba(59, 130, 246, 0.5)',
                         'borderColor' => 'rgb(59, 130, 246)',

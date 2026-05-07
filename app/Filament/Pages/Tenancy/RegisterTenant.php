@@ -57,12 +57,17 @@ class RegisterTenant extends BaseRegisterTenant
         $schema = $resourceClass::getFormSchema();
         Assert::isArray($schema);
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         return $resourceClass::getFormSchema();
 =======
         /** @var array<int, Component> $schema */
         return $schema;
 >>>>>>> Stashed changes
+=======
+        /** @var array<int, Component> $schema */
+        return $schema;
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
     }
 
     /**

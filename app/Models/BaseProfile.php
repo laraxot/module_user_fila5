@@ -112,12 +112,17 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         'user',
     ];
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     protected $formlessAttributes = [
 =======
     /** @var list<string> */
     protected array $formlessAttributes = [
 >>>>>>> Stashed changes
+=======
+    /** @var list<string> */
+    protected array $formlessAttributes = [
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
         'extra',
     ];
 

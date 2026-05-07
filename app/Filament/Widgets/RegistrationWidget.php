@@ -24,13 +24,20 @@ class RegistrationWidget extends XotBaseWidget
      */
     public ?array $data = null;
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     public $type;
+=======
+    public string $type = '';
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
-    public $resource;
+    /** @var class-string */
+    public string $resource;
 
-    public $model;
+    /** @var class-string<Model> */
+    public string $model = Model::class;
 
+<<<<<<< HEAD
     public $action;
 =======
     public string $type = '';
@@ -43,11 +50,15 @@ class RegistrationWidget extends XotBaseWidget
 
     public string $action = '';
 >>>>>>> Stashed changes
+=======
+    public string $action = '';
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
     public Model $record;
 
     protected int|string|array $columnSpan = 'full';
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     /**
      * @phpstan-var class-string
@@ -56,6 +67,8 @@ class RegistrationWidget extends XotBaseWidget
 
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
     public function mount(string $type, Request $_request): void
     {
         $this->type = $type;
@@ -90,17 +103,23 @@ class RegistrationWidget extends XotBaseWidget
 
         /** @var Model|null $user */
         $user = $this->model::firstWhere('email', $email);
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         if (null === $user) {
             /* @var Model $model */
             return app($this->model);
 =======
+=======
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
         if ($user === null) {
             $model = app($this->model);
             Assert::isInstanceOf($model, Model::class);
 
             return $model;
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
         }
 
         $remember_token = $user->getAttribute('remember_token');
@@ -158,6 +177,7 @@ class RegistrationWidget extends XotBaseWidget
         $record = $this->record;
 
         $actionInstance = app($this->action);
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 
         $user = $actionInstance->execute($record, $data);
@@ -166,6 +186,11 @@ class RegistrationWidget extends XotBaseWidget
             \call_user_func([$actionInstance, 'execute'], $record, $data);
         }
 >>>>>>> Stashed changes
+=======
+        if (\is_object($actionInstance) && method_exists($actionInstance, 'execute')) {
+            \call_user_func([$actionInstance, 'execute'], $record, $data);
+        }
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
         $lang = app()->getLocale();
         $route = route('pages.view', ['slug' => $this->type.'_register_complete']);

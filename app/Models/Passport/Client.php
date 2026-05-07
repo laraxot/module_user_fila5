@@ -14,18 +14,18 @@ use Modules\User\Models\OauthToken;
  * Custom Passport Client model to fix compatibility issues with Laravel 12.
  *
  * @property Collection<int, OauthAuthCode> $authCodes
- * @property int|null                       $auth_codes_count
- * @property array                          $grant_types
- * @property User                           $owner
- * @property string|null                    $plain_secret
- * @property array                          $redirect_uris
- * @property string|null                    $secret
- * @property Collection<int, OauthToken>    $tokens
- * @property int|null                       $tokens_count
+ * @property int|null $auth_codes_count
+ * @property array $grant_types
+ * @property User $owner
+ * @property string|null $plain_secret
+ * @property array $redirect_uris
+ * @property string|null $secret
+ * @property Collection<int, OauthToken> $tokens
+ * @property int|null $tokens_count
  * @property \Modules\User\Models\User|null $user
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client existsIn(array $haystack)
- * @method static \Laravel\Passport\Database\Factories\ClientFactory   factory($count = null, $state = [])
+ * @method static \Laravel\Passport\Database\Factories\ClientFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client query()
@@ -40,10 +40,14 @@ class Client extends PassportClient
      */
     public function initializeHasUniqueStringIds(): void
     {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
         // @phpstan-ignore-next-line
 >>>>>>> Stashed changes
+=======
+        // @phpstan-ignore-next-line
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
         if (method_exists(parent::class, 'initializeHasUniqueStringIds')) {
             parent::initializeHasUniqueStringIds();
         }

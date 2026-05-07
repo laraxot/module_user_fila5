@@ -39,11 +39,15 @@ class PasswordResetConfirmWidget extends XotBaseWidget
 
     public ?string $errorMessage = null;
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     protected string $view = 'pub_theme::filament.widgets.auth.password.reset-confirm';
 =======
     protected string $view = 'user::filament.widgets.auth.password.reset';
 >>>>>>> Stashed changes
+=======
+    protected string $view = 'user::filament.widgets.auth.password.reset';
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
     /**
      * Mount the widget with token and optional email.
@@ -147,11 +151,15 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 // Redirect after a short delay to show success message
                 $this->js('setTimeout(() => { window.location.href = "'.route('login').'"; }, 3000);');
             } else {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                 $this->handleResetError($response);
 =======
                 $this->handleResetError(is_string($response) ? $response : 'passwords.generic_error');
 >>>>>>> Stashed changes
+=======
+                $this->handleResetError(is_string($response) ? $response : 'passwords.generic_error');
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
             }
         } catch (\Exception $e) {
             $this->handleResetError('passwords.generic_error');

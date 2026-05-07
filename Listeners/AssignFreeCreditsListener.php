@@ -36,7 +36,7 @@ class AssignFreeCreditsListener
         }
 
         $userId = $user->getAuthIdentifier();
-        if (null === $userId) {
+        if ($userId === null) {
             return;
         }
 
@@ -46,7 +46,7 @@ class AssignFreeCreditsListener
             ['credits' => self::FREE_STARTING_CREDITS]
         );
 
-        if (0 === $profile->credits) {
+        if ($profile->credits === 0) {
             $profile->update(['credits' => self::FREE_STARTING_CREDITS]);
         }
     }

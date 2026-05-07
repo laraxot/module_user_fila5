@@ -39,9 +39,13 @@ trait InteractsWithTenant
         $tenantClass = config('tenant.tenant_model', Tenant::class);
 <<<<<<< Updated upstream
 
+<<<<<<< HEAD
 =======
         // @phpstan-ignore-next-line
 >>>>>>> Stashed changes
+=======
+        // @phpstan-ignore-next-line
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
         return $this->belongsTo($tenantClass, 'tenant_id');
     }
 

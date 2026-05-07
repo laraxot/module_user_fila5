@@ -45,6 +45,7 @@ class LogoutWidget extends XotBaseWidget
     #[\Override]
     public function getFormSchema(): array
     {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         $view = 'filament.widgets.auth.logout-message';
         if (! view()->exists($view)) {
@@ -57,6 +58,10 @@ class LogoutWidget extends XotBaseWidget
         return [
             'logout_message' => View::make('user::filament.widgets.auth.logout-message')->columnSpanFull(),
 >>>>>>> Stashed changes
+=======
+        return [
+            'logout_message' => View::make('user::filament.widgets.auth.logout-message')->columnSpanFull(),
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
         ];
     }
 

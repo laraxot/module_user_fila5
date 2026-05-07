@@ -8,11 +8,16 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Class CreateLiveuserUsersTable.
  */
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 return new class extends XotBaseMigration {
 =======
 return new class() extends XotBaseMigration {
 >>>>>>> Stashed changes
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
     /**
      * Run the migrations.
      */
@@ -78,7 +83,7 @@ return new class() extends XotBaseMigration {
                 $table->string('password')->nullable()->change();
             }
 
-            if ('uuid' === $this->getColumnType('id')) {
+            if ($this->getColumnType('id') === 'uuid') {
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);

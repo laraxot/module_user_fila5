@@ -66,7 +66,11 @@ describe('Authentication Flow with Reorganized Components', function (): void {
         // Accept either 200 (page loads) or 500 (misconfigured route in test env)
         // The important thing is the route exists and responds
         expect($response->status())->toBeLessThanOrEqual(500);
+<<<<<<< HEAD
         if (200 === $response->status()) {
+=======
+        if ($response->status() === 200) {
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
             $response->assertSee('Login');
         } else {
             expect($response->status())->toBeGreaterThanOrEqual(400);
@@ -74,7 +78,11 @@ describe('Authentication Flow with Reorganized Components', function (): void {
     });
 
     test('password confirmation uses reorganized components', function (): void {
+<<<<<<< HEAD
         /* @var User */
+=======
+        /** @var User */
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
         try {
             actingAs($user)
                 ->get('/it/auth/password/confirm')

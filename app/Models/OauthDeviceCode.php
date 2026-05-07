@@ -13,6 +13,4 @@ use Laravel\Passport\DeviceCode as PassportDeviceCode;
  *
  * @property bool $revoked
  */
-class OauthDeviceCode extends PassportDeviceCode
-{
-}
+class OauthDeviceCode extends PassportDeviceCode {}

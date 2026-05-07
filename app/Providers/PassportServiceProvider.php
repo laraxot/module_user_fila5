@@ -120,6 +120,7 @@ class PassportServiceProvider extends ServiceProvider
         Passport::useRefreshTokenModel($refreshTokenModel);
         Passport::useAuthCodeModel($authCodeModel);
         Passport::useClientModel($clientModel);
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 
         if (method_exists(Passport::class, 'useDeviceCodeModel')) {
@@ -129,11 +130,16 @@ class PassportServiceProvider extends ServiceProvider
             Passport::useDeviceCodeModel($deviceCodeModel);
         }
 =======
+=======
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
         $deviceCodeModel = $models['device_code'] ?? OauthDeviceCode::class;
         Assert::stringNotEmpty($deviceCodeModel);
         Assert::subclassOf($deviceCodeModel, DeviceCode::class);
         Passport::useDeviceCodeModel($deviceCodeModel);
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
     }
 
     /**

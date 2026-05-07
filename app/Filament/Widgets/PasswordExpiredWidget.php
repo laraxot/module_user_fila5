@@ -24,10 +24,10 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 /**
  * Widget for handling expired password reset.
  *
- * @property Schema                    $form
- * @property string|null               $current_password
- * @property string|null               $password
- * @property string|null               $passwordConfirmation
+ * @property Schema $form
+ * @property string|null $current_password
+ * @property string|null $password
+ * @property string|null $passwordConfirmation
  * @property array<string, mixed>|null $data
  */
 class PasswordExpiredWidget extends XotBaseWidget
@@ -65,7 +65,11 @@ class PasswordExpiredWidget extends XotBaseWidget
         ];
 
         // Ensure list type for PHPStan Level 10
+<<<<<<< HEAD
         /* @var array<int, Component> $schema */
+=======
+        /** @var array<int, Component> $schema */
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
         return array_values($schema);
     }
 
@@ -123,7 +127,7 @@ class PasswordExpiredWidget extends XotBaseWidget
         $user->setAttribute('password', Hash::make($newPassword));
         $user->save();
 
-        return new PasswordResetResponse();
+        return new PasswordResetResponse;
     }
 
     /**

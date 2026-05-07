@@ -80,7 +80,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
                         TextInput::make('google.client_id')
                             ->placeholder('xxx.apps.googleusercontent.com')
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('google.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('google.enabled') === true),
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
                         TextInput::make('google.client_secret')
                             ->password()
@@ -89,17 +93,29 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
                                  ? $this->configString('services.google.client_secret')
                                  : $this->stringValue($state))
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('google.enabled')),
 
                         TagsInput::make('google.scopes')
                             ->placeholder('openid, email, profile')
                             ->visible(fn (Get $get): bool => true === $get('google.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('google.enabled') === true),
+
+                        TagsInput::make('google.scopes')
+                            ->placeholder('openid, email, profile')
+                            ->visible(fn (Get $get): bool => $get('google.enabled') === true),
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
                         TextInput::make('google.redirect')
                             ->default(fn () => route('socialite.oauth.callback', 'google'))
                             ->disabled()
                             ->copyable()
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('google.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('google.enabled') === true),
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
                     ]),
 
                 Section::make('GitHub OAuth')
@@ -111,7 +127,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
                         TextInput::make('github.client_id')
                             ->placeholder('Iv23lixxx')
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('github.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('github.enabled') === true),
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
                         TextInput::make('github.client_secret')
                             ->password()
@@ -119,17 +139,29 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
                                  ? $this->configString('services.github.client_secret')
                                  : $this->stringValue($state))
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('github.enabled')),
 
                         TagsInput::make('github.scopes')
                             ->placeholder('read:user, user:email')
                             ->visible(fn (Get $get): bool => true === $get('github.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('github.enabled') === true),
+
+                        TagsInput::make('github.scopes')
+                            ->placeholder('read:user, user:email')
+                            ->visible(fn (Get $get): bool => $get('github.enabled') === true),
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
                         TextInput::make('github.redirect')
                             ->default(fn () => route('socialite.oauth.callback', 'github'))
                             ->disabled()
                             ->copyable()
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('github.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('github.enabled') === true),
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
                     ]),
 
                 Section::make('Microsoft OAuth')
@@ -141,7 +173,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
                         TextInput::make('microsoft.client_id')
                             ->placeholder('xxx-xxx-xxx-xxx')
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
                         TextInput::make('microsoft.client_secret')
                             ->password()
@@ -149,17 +185,29 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
                                  ? $this->configString('services.microsoft.client_secret')
                                  : $this->stringValue($state))
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
 
                         TagsInput::make('microsoft.scopes')
                             ->placeholder('User.Read, openid, email')
                             ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
+
+                        TagsInput::make('microsoft.scopes')
+                            ->placeholder('User.Read, openid, email')
+                            ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
                         TextInput::make('microsoft.redirect')
                             ->default(fn () => route('socialite.oauth.callback', 'microsoft'))
                             ->disabled()
                             ->copyable()
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
                     ]),
             ])
             ->statePath('data');
@@ -263,7 +311,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Write configuration to secure PHP file.
      *
+<<<<<<< HEAD
      * @param array<string, mixed> $config
+=======
+     * @param  array<string, mixed>  $config
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
      */
     private function writeSocialiteConfig(array $config): void
     {
@@ -288,7 +340,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Update SocialProvider model active states.
      *
-     * @param array<string, array<string, mixed>> $config
+     * @param  array<string, array<string, mixed>>  $config
      */
     private function updateSocialProviderActiveStates(array $config): void
     {
@@ -345,7 +397,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
         $newSecret = $this->stringValue($newValue);
         $existingSecret = $this->stringValue($existingValue);
 
+<<<<<<< HEAD
         if ($this->isMasked($newSecret) && '' !== $existingSecret) {
+=======
+        if ($this->isMasked($newSecret) && $existingSecret !== '') {
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
             return $existingSecret;
         }
 
@@ -354,7 +410,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
     private function configBool(string $key): bool
     {
+<<<<<<< HEAD
         return true === config($key, false);
+=======
+        return config($key, false) === true;
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
     }
 
     private function configString(string $key): string
@@ -363,15 +423,23 @@ class SocialiteProviderSettingsPage extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @param array<int, string> $default
      *
+=======
+     * @param  array<int, string>  $default
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
      * @return array<int, string>
      */
     private function configStringList(string $key, array $default): array
     {
         $value = config($key, $default);
 
+<<<<<<< HEAD
         return $this->stringList([] === $value ? $default : $value);
+=======
+        return $this->stringList($value === [] ? $default : $value);
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
     }
 
     private function stringValue(mixed $value): string
@@ -417,7 +485,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
         return array_values(array_filter(
             $value,
+<<<<<<< HEAD
             static fn (mixed $item): bool => is_string($item) && '' !== $item,
+=======
+            static fn (mixed $item): bool => is_string($item) && $item !== '',
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
         ));
     }
 }

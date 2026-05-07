@@ -14,6 +14,7 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 
 class PassportDashboard extends XotBasePage
 {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     public $hasPublicKey = false;
 
@@ -21,20 +22,29 @@ class PassportDashboard extends XotBasePage
 =======
     public bool $hasPublicKey = false;
 >>>>>>> Stashed changes
+=======
+    public bool $hasPublicKey = false;
+
+    public bool $hasPrivateKey = false;
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
     /** @var list<string> */
-    public $output = [];
+    public array $output = [];
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     public $currentCommand = '';
 =======
     /** @var string[] */
     public array $output = [];
 >>>>>>> Stashed changes
+=======
+    public string $status = '';
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
-    public $status = '';
+    public bool $isRunning = false;
 
-    public $isRunning = false;
+    public string $currentCommand = '';
 
     /**
      * @var class-string<Cluster>

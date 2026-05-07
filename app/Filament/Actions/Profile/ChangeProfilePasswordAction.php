@@ -41,6 +41,7 @@ final class ChangeProfilePasswordAction extends Action
                 if ($user === null) {
                     /** @var array<string, mixed> $profileData */
                     $user = $record->user()->create($profileData);
+<<<<<<< HEAD
                 }
                 if ($user instanceof UserContract && $record instanceof Model) {
                     $user->profile()->save($record);
@@ -49,6 +50,12 @@ final class ChangeProfilePasswordAction extends Action
                 $user->profile()->save($record);
 =======
 >>>>>>> Stashed changes
+=======
+                }
+                if ($user instanceof UserContract && $record instanceof Model) {
+                    $user->profile()->save($record);
+                }
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
                 $newPassword = is_string($data['new_password'] ?? null) ? $data['new_password'] : '';
                 /*
                  * @var ProfileContract $record

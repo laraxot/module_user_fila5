@@ -32,13 +32,20 @@ use Webmozart\Assert\Assert;
  */
 class EditUserWidget extends XotBaseWidget
 {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     public $type;
+=======
+    public string $type = '';
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
-    public $resource;
+    /** @var class-string */
+    public string $resource;
 
-    public $model;
+    /** @var class-string<Model> */
+    public string $model = Model::class;
 
+<<<<<<< HEAD
     public $action;
 =======
     public string $type = '';
@@ -51,17 +58,23 @@ class EditUserWidget extends XotBaseWidget
 
     public string $action = '';
 >>>>>>> Stashed changes
+=======
+    public string $action = '';
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
     public Model $record;
 
     /** @var array<string, mixed>|null */
     public ?array $data = null;
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     protected string $view = 'pub_theme::filament.widgets.edit-user';
 
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
     /**
      * Initialize the widget with user type and optional user ID.
      */
@@ -135,6 +148,7 @@ class EditUserWidget extends XotBaseWidget
      */
     public function getFormSchema(): array
     {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         $schema = $this->resource::getFormSchemaWidget();
         Assert::isArray($schema, 'Schema must be array');
@@ -144,6 +158,9 @@ class EditUserWidget extends XotBaseWidget
 =======
         return self::normalizeFormSchema($this->resource::getFormSchemaWidget());
 >>>>>>> Stashed changes
+=======
+        return self::normalizeFormSchema($this->resource::getFormSchemaWidget());
+>>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
     }
 
     /**
