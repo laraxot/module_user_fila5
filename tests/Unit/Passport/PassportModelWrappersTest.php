@@ -15,11 +15,11 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-test('every eloquent passport model has a local oauth wrapper', function(): void {
+test('every eloquent passport model has a local oauth wrapper', function (): void {
     /** @var array<int, string>|false $files */
     $files = glob(base_path('vendor/laravel/passport/src').'/*.php');
 
-    if ($files === false) {
+    if (false === $files) {
         $files = [];
     }
 
@@ -58,7 +58,7 @@ test('every eloquent passport model has a local oauth wrapper', function(): void
     }
 });
 
-test('passport uses user module oauth wrappers for eloquent models', function(): void {
+test('passport uses user module oauth wrappers for eloquent models', function (): void {
     expect(Passport::authCodeModel())->toBe(OauthAuthCode::class);
     expect(Passport::clientModel())->toBe(OauthClient::class);
     expect(Passport::tokenModel())->toBe(OauthToken::class);

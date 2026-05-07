@@ -11,7 +11,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-test('password data labels are translated', function(): void {
+test('password data labels are translated', function (): void {
     // Arrange
     app()->setLocale('it');
 
@@ -27,7 +27,7 @@ test('password data labels are translated', function(): void {
     expect($confirmationComponent->getLabel())->toBe('Conferma Password');
 });
 
-test('login form labels are translated', function(): void {
+test('login form labels are translated', function (): void {
     // Assemble
     app()->setLocale('it');
 
@@ -42,9 +42,9 @@ test('login form labels are translated', function(): void {
     $components = $form->getComponents();
 
     // Find components
-    $email = collect($components)->first(fn ($c) => $c->getName() === 'email');
-    $password = collect($components)->first(fn ($c) => $c->getName() === 'password');
-    $remember = collect($components)->first(fn ($c) => $c->getName() === 'remember');
+    $email = collect($components)->first(fn ($c) => 'email' === $c->getName());
+    $password = collect($components)->first(fn ($c) => 'password' === $c->getName());
+    $remember = collect($components)->first(fn ($c) => 'remember' === $c->getName());
 
     // Assert
     expect($email)->not->toBeNull();

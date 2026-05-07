@@ -16,10 +16,10 @@ use Spatie\Sluggable\SlugOptions;
 
 uses(TestCase::class);
 
-beforeEach(function(): void {
+beforeEach(function (): void {
     // Manually create the tenant to ensure incrementing = false is handled
     // since we can't easily change the model code.
-    $this->tenant = new Tenant;
+    $this->tenant = new Tenant();
     $this->tenant->incrementing = false;
     $this->tenant->setKeyType('string');
 
@@ -38,7 +38,7 @@ beforeEach(function(): void {
     $this->tenant->save();
 });
 
-test('tenant can be created', function(): void {
+test('tenant can be created', function (): void {
     expect($this->tenant)->toBeInstanceOf(Tenant::class);
     // Use the actual name from the created tenant since it has uniqid
     expect($this->tenant->name)->toBe($this->tenant->name);
@@ -50,11 +50,11 @@ test('tenant can be created', function(): void {
     expect($this->tenant->secondary_color)->toBe('#00FF00');
 });
 
-test('tenant extends correct base class', function(): void {
+test('tenant extends correct base class', function (): void {
     expect($this->tenant)->toBeInstanceOf(BaseTenant::class);
 });
 
-test('tenant has correct fillable attributes', function(): void {
+test('tenant has correct fillable attributes', function (): void {
     $fillable = $this->tenant->getFillable();
 
     expect($fillable)->toContain('id');
@@ -68,14 +68,14 @@ test('tenant has correct fillable attributes', function(): void {
     expect($fillable)->toContain('secondary_color');
 });
 
-test('tenant has slug generated from name', function(): void {
+test('tenant has slug generated from name', function (): void {
     // Slug should be generated from the name we specified in beforeEach
     // Extract the base name without the unique ID
     $expectedSlug = Str::slug($this->tenant->name);
     expect($this->tenant->slug)->toBe($expectedSlug);
 });
 
-test('tenant slug is automatically generated', function(): void {
+test('tenant slug is automatically generated', function (): void {
     $newTenant = Tenant::factory()->create([
         'name' => 'Another Test Tenant',
     ]);
@@ -84,7 +84,7 @@ test('tenant slug is automatically generated', function(): void {
     expect($newTenant->slug)->toBe(Str::slug('Another Test Tenant'));
 });
 
-test('tenant has users relationship', function(): void {
+test('tenant has users relationship', function (): void {
     // Check method exists
     expect(method_exists($this->tenant, 'users'))->toBeTrue();
 
@@ -92,7 +92,7 @@ test('tenant has users relationship', function(): void {
     expect($users)->toBeInstanceOf(BelongsToMany::class);
 });
 
-test('tenant has members relationship', function(): void {
+test('tenant has members relationship', function (): void {
     // Check method exists
     expect(method_exists($this->tenant, 'members'))->toBeTrue();
 
@@ -100,7 +100,7 @@ test('tenant has members relationship', function(): void {
     expect($members)->toBeInstanceOf(BelongsToMany::class);
 });
 
-test('tenant implements required interfaces', function(): void {
+test('tenant implements required interfaces', function (): void {
     $reflection = new ReflectionClass(Tenant::class);
 
     expect($reflection->implementsInterface(HasAvatar::class))->toBeTrue();
@@ -108,7 +108,7 @@ test('tenant implements required interfaces', function(): void {
     expect($reflection->implementsInterface(TenantContract::class))->toBeTrue();
 });
 
-test('tenant has slug options configuration', function(): void {
+test('tenant has slug options configuration', function (): void {
     // Check method exists
     expect(method_exists($this->tenant, 'getSlugOptions'))->toBeTrue();
 
@@ -116,7 +116,7 @@ test('tenant has slug options configuration', function(): void {
     expect($slugOptions)->toBeInstanceOf(SlugOptions::class);
 });
 
-test('tenant has filament avatar url method', function(): void {
+test('tenant has filament avatar url method', function (): void {
     // Check method exists
     expect(method_exists($this->tenant, 'getFilamentAvatarUrl'))->toBeTrue();
 
@@ -125,7 +125,7 @@ test('tenant has filament avatar url method', function(): void {
     expect($avatarUrl)->toBe('');
 });
 
-test('tenant can be found by slug', function(): void {
+test('tenant can be found by slug', function (): void {
     // Use the actual slug from the created tenant
     $foundTenant = Tenant::where('slug', $this->tenant->slug)->first();
 
@@ -135,20 +135,20 @@ test('tenant can be found by slug', function(): void {
     expect($foundTenant->name)->toBe($this->tenant->name);
 });
 
-test('tenant has correct table name', function(): void {
+test('tenant has correct table name', function (): void {
     expect($this->tenant->getTable())->toBe('tenants');
 });
 
-test('tenant has correct primary key', function(): void {
+test('tenant has correct primary key', function (): void {
     expect($this->tenant->getKeyName())->toBe('id');
 });
 
-test('tenant has correct connection', function(): void {
+test('tenant has correct connection', function (): void {
     // Tenant model uses 'user' connection in Laraxot architecture
     expect($this->tenant->getConnectionName())->toBe('user');
 });
 
-test('tenant can be updated', function(): void {
+test('tenant can be updated', function (): void {
     $originalId = (string) $this->tenant->id;
     $newName = 'Updated Tenant Name '.uniqid();
 
@@ -168,7 +168,7 @@ test('tenant can be updated', function(): void {
     expect((string) $this->tenant->id)->toBe($originalId);
 });
 
-test('tenant can be deleted', function(): void {
+test('tenant can be deleted', function (): void {
     $tenantId = (string) $this->tenant->id;
 
     $this->tenant->delete();
@@ -176,7 +176,7 @@ test('tenant can be deleted', function(): void {
     expect(Tenant::find($tenantId))->toBeNull();
 });
 
-test('can find tenant by name', function(): void {
+test('can find tenant by name', function (): void {
     $name = 'Searchable Name '.uniqid();
     $tenant = Tenant::factory()->create(['name' => $name]);
 
@@ -186,7 +186,7 @@ test('can find tenant by name', function(): void {
     expect((string) $foundTenant->id)->toBe((string) $tenant->id);
 });
 
-test('can find active tenants', function(): void {
+test('can find active tenants', function (): void {
     Tenant::factory()->create(['is_active' => true]);
     Tenant::factory()->create(['is_active' => false]);
 
@@ -196,7 +196,7 @@ test('can find active tenants', function(): void {
     expect($activeTenants->every(fn ($tenant) => $tenant->is_active))->toBeTruthy();
 });
 
-test('can find tenants by name pattern', function(): void {
+test('can find tenants by name pattern', function (): void {
     $baseName = 'PatternCompany '.uniqid();
     Tenant::factory()->create(['name' => $baseName.' One']);
     Tenant::factory()->create(['name' => $baseName.' Two']);

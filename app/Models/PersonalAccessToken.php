@@ -22,7 +22,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  *
- * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory factory($count = null, $state = [])
+ * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory       factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken query()

@@ -11,15 +11,15 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-describe('LoginWidget', function(): void {
-    test('login widget can be instantiated', function(): void {
-        $widget = new LoginWidget;
+describe('LoginWidget', function (): void {
+    test('login widget can be instantiated', function (): void {
+        $widget = new LoginWidget();
 
         expect($widget)->toBeInstanceOf(LoginWidget::class);
     });
 
-    test('login widget has correct form schema', function(): void {
-        $widget = new LoginWidget;
+    test('login widget has correct form schema', function (): void {
+        $widget = new LoginWidget();
         $schema = $widget->getFormSchema();
 
         expect($schema)->toHaveCount(3);
@@ -38,8 +38,8 @@ describe('LoginWidget', function(): void {
         expect($rememberField->getName())->toBe('remember');
     });
 
-    test('login widget form fill has correct defaults', function(): void {
-        $widget = new LoginWidget;
+    test('login widget form fill has correct defaults', function (): void {
+        $widget = new LoginWidget();
         $fillData = $widget->getFormFill();
 
         expect($fillData)->toHaveKey('email');
@@ -47,8 +47,8 @@ describe('LoginWidget', function(): void {
         expect($fillData['remember'])->toBeTrue();
     });
 
-    test('login widget has correct view property', function(): void {
-        $widget = new LoginWidget;
+    test('login widget has correct view property', function (): void {
+        $widget = new LoginWidget();
         $reflection = new ReflectionClass($widget);
         $property = $reflection->getProperty('view');
         $property->setAccessible(true);
@@ -57,8 +57,8 @@ describe('LoginWidget', function(): void {
         expect($view)->toBe('pub_theme::filament.widgets.auth.login');
     });
 
-    test('login widget extends xot base widget', function(): void {
-        $widget = new LoginWidget;
+    test('login widget extends xot base widget', function (): void {
+        $widget = new LoginWidget();
 
         expect($widget)->toBeInstanceOf(Modules\Xot\Filament\Widgets\XotBaseWidget::class);
     });

@@ -15,17 +15,16 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-describe('User quick wins coverage', function(): void {
-    it('builds provider not configured exception message', function(): void {
+describe('User quick wins coverage', function (): void {
+    it('builds provider not configured exception message', function (): void {
         $exception = ProviderNotConfigured::make('github');
 
         expect($exception)->toBeInstanceOf(ProviderNotConfigured::class)
             ->and($exception->getMessage())->toContain('Provider "github" is not configured');
     });
 
-    it('resolves filament shield facade accessor', function(): void {
-        $service = new class
-        {
+    it('resolves filament shield facade accessor', function (): void {
+        $service = new class {
             public function getWidgets(): array
             {
                 return ['w1', 'w2'];
@@ -38,7 +37,7 @@ describe('User quick wins coverage', function(): void {
             ->and(FilamentShield::getWidgets())->toBe(['w1', 'w2']);
     });
 
-    it('returns default option plus team options', function(): void {
+    it('returns default option plus team options', function (): void {
         $user = User::factory()->create();
         $this->actingAs($user);
 
@@ -56,13 +55,13 @@ describe('User quick wins coverage', function(): void {
             ->and($options[''])->toBe('--- Select ---');
     });
 
-    it('creates user using resolved model instance', function(): void {
+    it('creates user using resolved model instance', function (): void {
         $payload = [
             'email' => 'quick-win@example.test',
             'name' => 'Quick Win',
         ];
 
-        $createdUser = new User;
+        $createdUser = new User();
         $createdUser->email = $payload['email'];
         $createdUser->name = $payload['name'];
 

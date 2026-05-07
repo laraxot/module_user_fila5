@@ -12,8 +12,8 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-describe('RevokeAllUserTokensAction', function(): void {
-    test('revokes all user tokens', function(): void {
+describe('RevokeAllUserTokensAction', function (): void {
+    test('revokes all user tokens', function (): void {
         $user = User::factory()->create();
 
         $clientId = (string) Str::uuid();
@@ -64,7 +64,7 @@ describe('RevokeAllUserTokensAction', function(): void {
         expect(DB::connection('user')->table('oauth_access_tokens')->where('user_id', (string) $user->id)->where('revoked', 0)->count())->toBe(0);
     });
 
-    test('handles user with no tokens', function(): void {
+    test('handles user with no tokens', function (): void {
         $user = User::factory()->create();
 
         $revoked = app(RevokeAllUserTokensAction::class)->execute($user);
@@ -72,7 +72,7 @@ describe('RevokeAllUserTokensAction', function(): void {
         expect($revoked)->toBe(0);
     });
 
-    test('revokes tokens by user id string', function(): void {
+    test('revokes tokens by user id string', function (): void {
         $user = User::factory()->create();
 
         $clientId = (string) Str::uuid();
@@ -110,7 +110,7 @@ describe('RevokeAllUserTokensAction', function(): void {
         expect($revoked)->toBe(1);
     });
 
-    test('does not revoke already revoked tokens', function(): void {
+    test('does not revoke already revoked tokens', function (): void {
         $user = User::factory()->create();
 
         $clientId = (string) Str::uuid();
@@ -159,7 +159,7 @@ describe('RevokeAllUserTokensAction', function(): void {
         expect(DB::connection('user')->table('oauth_access_tokens')->where('user_id', (string) $user->id)->where('revoked', 1)->count())->toBe(2);
     });
 
-    test('returns count of revoked tokens', function(): void {
+    test('returns count of revoked tokens', function (): void {
         $user = User::factory()->create();
 
         $clientId = (string) Str::uuid();
@@ -181,7 +181,7 @@ describe('RevokeAllUserTokensAction', function(): void {
 
         $tokenCount = 5;
         $tokens = [];
-        for ($i = 0; $i < $tokenCount; $i++) {
+        for ($i = 0; $i < $tokenCount; ++$i) {
             $tokens[] = [
                 'id' => (string) Str::uuid(),
                 'user_id' => (string) $user->id,
@@ -201,7 +201,7 @@ describe('RevokeAllUserTokensAction', function(): void {
         expect($revoked)->toBe($tokenCount);
     });
 
-    test('revokes tokens for specific user only', function(): void {
+    test('revokes tokens for specific user only', function (): void {
         $user1 = User::factory()->create();
         $user2 = User::factory()->create();
 
@@ -251,7 +251,7 @@ describe('RevokeAllUserTokensAction', function(): void {
         expect(DB::connection('user')->table('oauth_access_tokens')->where('user_id', (string) $user2->id)->where('revoked', 0)->count())->toBe(1);
     });
 
-    test('handles multiple consecutive revocations', function(): void {
+    test('handles multiple consecutive revocations', function (): void {
         $user = User::factory()->create();
 
         $clientId = (string) Str::uuid();

@@ -28,16 +28,16 @@ use Webmozart\Assert\Assert;
  */
 
 // Route::view('/', 'welcome')->name('home');
-Route::prefix('{lang}')->group(function(): void {
+Route::prefix('{lang}')->group(function (): void {
     Route::middleware('guest')
         ->namespace('\Modules\User\Http\Livewire\Auth')
-        ->group(static function(): void {
+        ->group(static function (): void {
             Route::get('login', 'Login')->name('login');
 
             Route::get('register', Register::class)->name('register');
         });
 
-    Route::middleware([])->namespace('\Modules\User\Http\Livewire\Auth')->group(static function(): void {
+    Route::middleware([])->namespace('\Modules\User\Http\Livewire\Auth')->group(static function (): void {
         Route::get('password/reset', Email::class)->name('password.request');
 
         Route::get('password/reset/{token}', Reset::class)->name(
@@ -47,7 +47,7 @@ Route::prefix('{lang}')->group(function(): void {
 
     Route::middleware('auth')
         ->namespace('\Modules\User\Http\Livewire\Auth')
-        ->group(static function(): void {
+        ->group(static function (): void {
             $route = Route::get('email/verify', Verify::class);
             Assert::isInstanceOf($route, Illuminate\Routing\Route::class);
             $route->middleware('throttle:6,1');
@@ -60,7 +60,7 @@ Route::prefix('{lang}')->group(function(): void {
 
     Route::middleware('auth')
         // ->namespace('\Modules\User\Http\Livewire\Auth')
-        ->group(static function(): void {
+        ->group(static function (): void {
             $route = Route::get('email/verify/{id}/{hash}', EmailVerificationController::class);
             Assert::isInstanceOf($route, Illuminate\Routing\Route::class);
             $route->middleware('signed');
@@ -72,7 +72,7 @@ Route::prefix('{lang}')->group(function(): void {
 
 Route::namespace('Socialite')
     ->name('socialite.')
-    ->group(static function(): void {
+    ->group(static function (): void {
         Route::get(
             '/login/{provider}',
             'RedirectToProviderController',

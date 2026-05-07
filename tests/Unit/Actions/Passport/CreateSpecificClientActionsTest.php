@@ -12,9 +12,9 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-describe('Create specific passport client actions', function(): void {
-    it('delegates password client creation to generic action', function(): void {
-        $expectedClient = new OauthClient;
+describe('Create specific passport client actions', function (): void {
+    it('delegates password client creation to generic action', function (): void {
+        $expectedClient = new OauthClient();
 
         $genericAction = Mockery::mock(CreateGenericClientAction::class);
         $genericAction->shouldReceive('execute')->once()->andReturn($expectedClient);
@@ -29,8 +29,8 @@ describe('Create specific passport client actions', function(): void {
         expect($result)->toBe($expectedClient);
     });
 
-    it('delegates personal access client creation to generic action', function(): void {
-        $expectedClient = new OauthClient;
+    it('delegates personal access client creation to generic action', function (): void {
+        $expectedClient = new OauthClient();
 
         $genericAction = Mockery::mock(CreateGenericClientAction::class);
         $genericAction->shouldReceive('execute')->once()->andReturn($expectedClient);

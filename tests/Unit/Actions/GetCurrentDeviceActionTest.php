@@ -16,7 +16,7 @@ use Modules\User\Tests\TestCase;
 uses(TestCase::class);
 
 beforeEach(function () {
-    $this->action = new GetCurrentDeviceAction;
+    $this->action = new GetCurrentDeviceAction();
 
     // Mock the Agent class
     $this->mockAgent = Mockery::mock(Agent::class);
@@ -27,7 +27,7 @@ afterEach(function () {
     Mockery::close();
 });
 
-it('creates device with valid agent data', function(): void {
+it('creates device with valid agent data', function (): void {
     // Arrange
     $deviceData = [
         'device' => 'iPhone',
@@ -88,7 +88,7 @@ it('creates device with valid agent data', function(): void {
         ->toBe('unknown');
 });
 
-it('creates device with mobile id', function(): void {
+it('creates device with mobile id', function (): void {
     // Arrange
     $mobileId = 'unique-mobile-identifier-123';
 
@@ -139,7 +139,7 @@ it('creates device with mobile id', function(): void {
         ->toBe('Chrome');
 });
 
-it('handles empty mobile id', function(): void {
+it('handles empty mobile id', function (): void {
     // Arrange
     $emptyMobileId = '';
 
@@ -160,7 +160,7 @@ it('handles empty mobile id', function(): void {
         ->toThrow(InvalidArgumentException::class, 'L\'ID mobile non può essere vuoto');
 });
 
-it('handles null mobile id', function(): void {
+it('handles null mobile id', function (): void {
     // Arrange
     $nullMobileId = null;
 
@@ -195,7 +195,7 @@ it('handles null mobile id', function(): void {
         ->toBe('Chrome');
 });
 
-it('handles unknown device types', function(): void {
+it('handles unknown device types', function (): void {
     // Arrange
     // Mock Agent methods returning null/unknown values
     $this->mockAgent->shouldReceive('device')->andReturn(null);
@@ -230,7 +230,7 @@ it('handles unknown device types', function(): void {
         ->toBe('unknown');
 });
 
-it('handles robot detection', function(): void {
+it('handles robot detection', function (): void {
     // Arrange
     // Mock Agent methods for robot
     $this->mockAgent->shouldReceive('device')->andReturn('Robot');
@@ -259,7 +259,7 @@ it('handles robot detection', function(): void {
         ->toBe('Googlebot');
 });
 
-it('handles tablet detection', function(): void {
+it('handles tablet detection', function (): void {
     // Arrange
     // Mock Agent methods for tablet
     $this->mockAgent->shouldReceive('device')->andReturn('iPad');
@@ -292,7 +292,7 @@ it('handles tablet detection', function(): void {
         ->toBe('iPad');
 });
 
-it('handles desktop detection', function(): void {
+it('handles desktop detection', function (): void {
     // Arrange
     // Mock Agent methods for desktop
     $this->mockAgent->shouldReceive('device')->andReturn('Desktop');
@@ -329,7 +329,7 @@ it('handles desktop detection', function(): void {
         ->toBe('Firefox');
 });
 
-it('handles mobile phone detection', function(): void {
+it('handles mobile phone detection', function (): void {
     // Arrange
     // Mock Agent methods for mobile phone
     $this->mockAgent->shouldReceive('device')->andReturn('Samsung Galaxy');
@@ -364,7 +364,7 @@ it('handles mobile phone detection', function(): void {
         ->toBe('Samsung Galaxy');
 });
 
-it('handles edge case platforms', function(): void {
+it('handles edge case platforms', function (): void {
     // Arrange
     // Mock Agent methods for edge case platform
     $this->mockAgent->shouldReceive('device')->andReturn('Smart TV');
@@ -397,7 +397,7 @@ it('handles edge case platforms', function(): void {
         ->toBe('18.0');
 });
 
-it('handles legacy browsers', function(): void {
+it('handles legacy browsers', function (): void {
     // Arrange
     // Mock Agent methods for legacy browser
     $this->mockAgent->shouldReceive('device')->andReturn('Desktop');
@@ -426,7 +426,7 @@ it('handles legacy browsers', function(): void {
         ->toBe('11.0');
 });
 
-it('handles unknown browser versions', function(): void {
+it('handles unknown browser versions', function (): void {
     // Arrange
     // Mock Agent methods with unknown browser version
     $this->mockAgent->shouldReceive('device')->andReturn('Desktop');

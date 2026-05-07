@@ -59,7 +59,7 @@ describe('Team Creation and Management', function () {
         $fresh = $this->team->fresh();
         expect($fresh)->name->toBe('Updated Team Name');
 
-        if ($fresh->getAttribute('description') !== null) {
+        if (null !== $fresh->getAttribute('description')) {
             expect($fresh)->description->toBe('Updated description');
         }
     });
@@ -171,7 +171,7 @@ describe('User Team Relationship', function () {
 });
 
 describe('Team Invitations', function () {
-    it('can validate team slug uniqueness', function(): void {
+    it('can validate team slug uniqueness', function (): void {
         // Arrange
         $slug = 'unique-team-'.uniqid();
         Team::factory()->create(['slug' => $slug]);

@@ -12,7 +12,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-describe('SetDefaultRolesBySocialiteUserAction', function(): void {
+describe('SetDefaultRolesBySocialiteUserAction', function (): void {
     $getMockUser = static function (string $email = 'user@example.com'): SocialiteUserContract {
         $mock = \Mockery::mock(SocialiteUserContract::class);
         $mock->shouldReceive('getEmail')->andReturn($email);

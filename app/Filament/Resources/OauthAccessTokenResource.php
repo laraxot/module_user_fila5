@@ -65,7 +65,7 @@ class OauthAccessTokenResource extends XotBaseResource
                             return null;
                         }
                         $user = $record->user;
-                        if ($user !== null && method_exists($user, 'exists') && $user->exists) {
+                        if (null !== $user && method_exists($user, 'exists') && $user->exists) {
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -84,11 +84,11 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('scopes')
                     ->limit(30)
                     ->tooltip(function (mixed $state): ?string {
-                        if ($state === null) {
+                        if (null === $state) {
                             return null;
                         }
                         if (is_array($state)) {
-                            /** @var array<string, mixed> $state */
+                            /* @var array<string, mixed> $state */
                             return json_encode($state);
                         }
 

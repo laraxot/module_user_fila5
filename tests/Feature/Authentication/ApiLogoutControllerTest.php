@@ -15,7 +15,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-beforeEach(function(): void {
+beforeEach(function (): void {
     Config::set('app.key', config('app.key') ?: 'base64:'.base64_encode(random_bytes(32)));
 
     $this->user = User::factory()->create([
@@ -45,7 +45,7 @@ function ensurePersonalAccessClient(): void
     $repository->createPersonalAccessGrantClient('Test Personal Access Client');
 }
 
-test('api logout revokes current personal access token and marks device logout time', function(): void {
+test('api logout revokes current personal access token and marks device logout time', function (): void {
     ensurePersonalAccessClient();
 
     $personalAccessToken = $this->user->createToken('Api Logout Test');

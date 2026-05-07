@@ -17,13 +17,13 @@ use function Pest\Laravel\actingAs;
 
 uses(TestCase::class);
 
-beforeEach(function(): void {
+beforeEach(function (): void {
     $this->app->register(AdminPanelProvider::class);
     $this->app->register(SchemasServiceProvider::class);
     Filament::setCurrentPanel(Filament::getPanel('user::admin'));
 });
 
-test('can change profile password', function(): void {
+test('can change profile password', function (): void {
     /** @var User $user */
     $user = User::factory()->create([
         'password' => Hash::make('old_password'),
@@ -43,7 +43,7 @@ test('can change profile password', function(): void {
     expect(Hash::check('new_password', $user->fresh()?->password))->toBeTrue();
 });
 
-test('cannot change password with wrong current password', function(): void {
+test('cannot change password with wrong current password', function (): void {
     /** @var User $user */
     $user = User::factory()->create([
         'password' => Hash::make('old_password'),

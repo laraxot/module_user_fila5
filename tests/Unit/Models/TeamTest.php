@@ -10,7 +10,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-test('can create team with minimal data', function(): void {
+test('can create team with minimal data', function (): void {
     $user = User::factory()->create();
 
     $team = Team::factory()->create([
@@ -23,7 +23,7 @@ test('can create team with minimal data', function(): void {
     expect($team->name)->toBe('Test Team');
 });
 
-test('can create team with all fields', function(): void {
+test('can create team with all fields', function (): void {
     $user = User::factory()->create();
 
     $teamData = [
@@ -46,7 +46,7 @@ test('can create team with all fields', function(): void {
     expect($team->owner_id)->toBe($user->id);
 });
 
-test('can find team by name', function(): void {
+test('can find team by name', function (): void {
     $user = User::factory()->create();
     $team = Team::factory()->create([
         'user_id' => $user->id,
@@ -59,7 +59,7 @@ test('can find team by name', function(): void {
     expect($foundTeam->id)->toBe($team->id);
 });
 
-test('can find team by code', function(): void {
+test('can find team by code', function (): void {
     $user = User::factory()->create();
     $team = Team::factory()->create([
         'user_id' => $user->id,
@@ -72,7 +72,7 @@ test('can find team by code', function(): void {
     expect($foundTeam->id)->toBe($team->id);
 });
 
-test('can find team by uuid', function(): void {
+test('can find team by uuid', function (): void {
     $user = User::factory()->create();
     $uuid = '550e8400-e29b-41d4-a716-446655440000';
     $team = Team::factory()->create([
@@ -86,7 +86,7 @@ test('can find team by uuid', function(): void {
     expect($foundTeam->id)->toBe($team->id);
 });
 
-test('can find team by owner id', function(): void {
+test('can find team by owner id', function (): void {
     $user = User::factory()->create();
     $team = Team::factory()->create([
         'user_id' => $user->id,
@@ -99,7 +99,7 @@ test('can find team by owner id', function(): void {
     expect($foundTeam->id)->toBe($team->id);
 });
 
-test('can find personal teams', function(): void {
+test('can find personal teams', function (): void {
     $user = User::factory()->create();
     Team::factory()->create([
         'user_id' => $user->id,
@@ -116,7 +116,7 @@ test('can find personal teams', function(): void {
     expect($personalTeams->first()->personal_team)->toBe(1);
 });
 
-test('can find teams by user id', function(): void {
+test('can find teams by user id', function (): void {
     $user1 = User::factory()->create();
     $user2 = User::factory()->create();
 
@@ -130,7 +130,7 @@ test('can find teams by user id', function(): void {
     expect($user1Teams->every(fn ($team) => $team->user_id === $user1->id))->toBeTrue();
 });
 
-test('can find teams by name pattern', function(): void {
+test('can find teams by name pattern', function (): void {
     $user = User::factory()->create();
     Team::factory()->create(['user_id' => $user->id, 'name' => 'Development Team']);
     Team::factory()->create(['user_id' => $user->id, 'name' => 'Marketing Team']);
@@ -142,7 +142,7 @@ test('can find teams by name pattern', function(): void {
     expect($devTeams->every(fn ($team) => str_contains($team->name, 'Team')))->toBeTrue();
 });
 
-test('can update team', function(): void {
+test('can update team', function (): void {
     $user = User::factory()->create();
     $team = Team::factory()->create([
         'user_id' => $user->id,
@@ -154,7 +154,7 @@ test('can update team', function(): void {
     expect($team->fresh()->name)->toBe('New Name');
 });
 
-test('can handle null values', function(): void {
+test('can handle null values', function (): void {
     $user = User::factory()->create();
     $team = Team::factory()->create([
         'user_id' => $user->id,
@@ -169,7 +169,7 @@ test('can handle null values', function(): void {
     expect($team->owner_id)->toBeNull();
 });
 
-test('can find teams by multiple criteria', function(): void {
+test('can find teams by multiple criteria', function (): void {
     $user = User::factory()->create();
     Team::factory()->create([
         'user_id' => $user->id,

@@ -10,7 +10,7 @@ use Tests\TestCase;
 
 uses(TestCase::class);
 
-it('returns failure when password is incorrect', function(): void {
+it('returns failure when password is incorrect', function (): void {
     // Create a mock user with a hashed password
     $user = new User(['password' => bcrypt('correct-password')]);
 

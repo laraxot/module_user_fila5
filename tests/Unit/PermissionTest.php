@@ -10,20 +10,20 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-beforeEach(function(): void {
+beforeEach(function (): void {
     $this->permission = Permission::factory()->create([
         'name' => 'test-permission',
         'guard_name' => 'web',
     ]);
 });
 
-test('permission can be created', function(): void {
+test('permission can be created', function (): void {
     expect($this->permission)->toBeInstanceOf(Permission::class);
     expect($this->permission->name)->toBe('test-permission');
     expect($this->permission->guard_name)->toBe('web');
 });
 
-test('permission has correct fillable attributes', function(): void {
+test('permission has correct fillable attributes', function (): void {
     $fillable = $this->permission->getFillable();
 
     expect($fillable)->toContain('name');
@@ -32,14 +32,14 @@ test('permission has correct fillable attributes', function(): void {
     expect($fillable)->toContain('description');
 });
 
-test('permission has correct table configuration', function(): void {
+test('permission has correct table configuration', function (): void {
     $table = $this->permission->getTable();
 
     expect($table)->toBeString();
     expect($table)->not->toBeEmpty();
 });
 
-test('permission has correct casts', function(): void {
+test('permission has correct casts', function (): void {
     $casts = $this->permission->getCasts();
 
     expect($casts)->toHaveKey('id');
@@ -47,7 +47,7 @@ test('permission has correct casts', function(): void {
     expect($casts['id'])->toBe('int'); // Spatie Permission uses int ID by default
 });
 
-test('permission can be updated', function(): void {
+test('permission can be updated', function (): void {
     $this->permission->update([
         'name' => 'updated-permission',
         'guard_name' => 'api',
@@ -59,7 +59,7 @@ test('permission can be updated', function(): void {
     expect($this->permission->guard_name)->toBe('api');
 });
 
-test('permission can be deleted', function(): void {
+test('permission can be deleted', function (): void {
     $permissionId = $this->permission->id;
 
     $this->permission->delete();
@@ -67,7 +67,7 @@ test('permission can be deleted', function(): void {
     expect(Permission::find($permissionId))->toBeNull();
 });
 
-test('permission can be assigned to roles', function(): void {
+test('permission can be assigned to roles', function (): void {
     $role = Role::factory()->create([
         'name' => 'test-role',
         'guard_name' => 'web',
@@ -79,7 +79,7 @@ test('permission can be assigned to roles', function(): void {
     expect($this->permission->roles)->toHaveCount(1);
 });
 
-test('permission can be assigned to multiple roles', function(): void {
+test('permission can be assigned to multiple roles', function (): void {
     $role1 = Role::factory()->create(['name' => 'role-1']);
     $role2 = Role::factory()->create(['name' => 'role-2']);
 
@@ -91,26 +91,26 @@ test('permission can be assigned to multiple roles', function(): void {
     expect($this->permission->hasRole($role2))->toBeTrue();
 });
 
-test('permission can be found by name', function(): void {
+test('permission can be found by name', function (): void {
     $foundPermission = Permission::where('name', 'test-permission')->first();
 
     expect($foundPermission)->toBeInstanceOf(Permission::class);
     expect($foundPermission->id)->toBe($this->permission->id);
 });
 
-test('permission can be found by guard', function(): void {
+test('permission can be found by guard', function (): void {
     $webPermissions = Permission::where('guard_name', 'web')->get();
 
     expect($webPermissions)->toHaveCount(1);
     expect($webPermissions->first()->id)->toBe($this->permission->id);
 });
 
-test('permission has timestamps', function(): void {
+test('permission has timestamps', function (): void {
     expect($this->permission->created_at)->not->toBeNull();
     expect($this->permission->updated_at)->not->toBeNull();
 });
 
-test('permission can be created with factory', function(): void {
+test('permission can be created with factory', function (): void {
     $permission = Permission::factory()->create();
 
     expect($permission)->toBeInstanceOf(Permission::class);
@@ -118,7 +118,7 @@ test('permission can be created with factory', function(): void {
     expect($permission->guard_name)->not->toBeEmpty();
 });
 
-test('permission can be created with specific attributes', function(): void {
+test('permission can be created with specific attributes', function (): void {
     $permission = Permission::factory()->create([
         'name' => 'custom-permission',
         'guard_name' => 'custom-guard',
@@ -128,7 +128,7 @@ test('permission can be created with specific attributes', function(): void {
     expect($permission->guard_name)->toBe('custom-guard');
 });
 
-test('permission can check if it has role', function(): void {
+test('permission can check if it has role', function (): void {
     $role = Role::factory()->create(['name' => 'test-role']);
 
     expect($this->permission->hasRole($role))->toBeFalse();
@@ -138,7 +138,7 @@ test('permission can check if it has role', function(): void {
     expect($this->permission->hasRole($role))->toBeTrue();
 });
 
-test('permission can check if it has any roles', function(): void {
+test('permission can check if it has any roles', function (): void {
     expect($this->permission->hasAnyRole([]))->toBeFalse();
 
     $role = Role::factory()->create(['name' => 'test-role']);
@@ -147,7 +147,7 @@ test('permission can check if it has any roles', function(): void {
     expect($this->permission->hasAnyRole([$role]))->toBeTrue();
 });
 
-test('permission can check if it has all roles', function(): void {
+test('permission can check if it has all roles', function (): void {
     $role1 = Role::factory()->create(['name' => 'role-1']);
     $role2 = Role::factory()->create(['name' => 'role-2']);
 
@@ -158,7 +158,7 @@ test('permission can check if it has all roles', function(): void {
     expect($this->permission->hasAllRoles([$role1, $role2, 'non-existent']))->toBeFalse();
 });
 
-test('permission can be revoked from role', function(): void {
+test('permission can be revoked from role', function (): void {
     $role = Role::factory()->create(['name' => 'test-role']);
 
     $this->permission->assignRole($role);
@@ -168,7 +168,7 @@ test('permission can be revoked from role', function(): void {
     expect($this->permission->hasRole($role))->toBeFalse();
 });
 
-test('permission can be synced with roles', function(): void {
+test('permission can be synced with roles', function (): void {
     $role1 = Role::factory()->create(['name' => 'role-1']);
     $role2 = Role::factory()->create(['name' => 'role-2']);
     $role3 = Role::factory()->create(['name' => 'role-3']);
@@ -185,8 +185,8 @@ test('permission can be synced with roles', function(): void {
     expect($this->permission->hasRole($role3))->toBeTrue();
 });
 
-test('permission can be filtered by created_by', function(): void {
-    Permission::withoutEvents(function(): void {
+test('permission can be filtered by created_by', function (): void {
+    Permission::withoutEvents(function (): void {
         $this->permission->forceFill(['created_by' => 'user-123'])->save();
     });
 
@@ -195,8 +195,8 @@ test('permission can be filtered by created_by', function(): void {
     expect((int) $found->id)->toBe((int) $this->permission->id);
 });
 
-test('permission can be filtered by updated_by', function(): void {
-    Permission::withoutEvents(function(): void {
+test('permission can be filtered by updated_by', function (): void {
+    Permission::withoutEvents(function (): void {
         $this->permission->forceFill(['updated_by' => 'user-456'])->save();
     });
 
@@ -205,8 +205,8 @@ test('permission can be filtered by updated_by', function(): void {
     expect((int) $found->id)->toBe((int) $this->permission->id);
 });
 
-test('permission handles null metadata values', function(): void {
-    Permission::withoutEvents(function(): void {
+test('permission handles null metadata values', function (): void {
+    Permission::withoutEvents(function (): void {
         $this->permission->forceFill([
             'created_by' => null,
             'updated_by' => null,

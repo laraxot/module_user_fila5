@@ -30,13 +30,13 @@ class GetCurrentDeviceAction
         $deviceInfo = $this->getDeviceInfo();
         $browserInfo = $this->getBrowserInfo();
 
-        if ($mobileId !== null) {
+        if (null !== $mobileId) {
             if (empty($mobileId)) {
                 throw new \InvalidArgumentException('L\'ID mobile non può essere vuoto');
             }
 
             $device = $this->deviceModel->firstOrCreate(['mobile_id' => $mobileId]);
-            if ($device === null) {
+            if (null === $device) {
                 throw new \RuntimeException('Impossibile creare o trovare il dispositivo');
             }
             $device->update([...$deviceInfo, ...$browserInfo]);
@@ -45,7 +45,7 @@ class GetCurrentDeviceAction
         }
 
         $device = $this->deviceModel->firstOrCreate($deviceInfo);
-        if ($device === null) {
+        if (null === $device) {
             throw new \RuntimeException('Impossibile creare o trovare il dispositivo');
         }
         $device->update($browserInfo);

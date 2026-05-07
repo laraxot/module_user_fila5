@@ -9,7 +9,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-test('every vendor passport eloquent model has a local oauth wrapper', function(): void {
+test('every vendor passport eloquent model has a local oauth wrapper', function (): void {
     $passportSrc = base_path('vendor/laravel/passport/src');
 
     $vendorModelClasses = collect((array) glob($passportSrc.'/*.php'))

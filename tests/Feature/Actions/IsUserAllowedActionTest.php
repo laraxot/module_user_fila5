@@ -18,8 +18,8 @@ function fakeSocialiteUser(string $email): SocialiteUserContract
     return $user;
 }
 
-describe('IsUserAllowedAction', function(): void {
-    test('allows user with whitelisted email domain', function(): void {
+describe('IsUserAllowedAction', function (): void {
+    test('allows user with whitelisted email domain', function (): void {
         $user = fakeSocialiteUser('user@allowed-company.com');
         config(['filament-socialite.domain_allowlist' => ['allowed-company.com']]);
 
@@ -28,7 +28,7 @@ describe('IsUserAllowedAction', function(): void {
         expect($result)->toBeTrue();
     });
 
-    test('denies user with non-whitelisted email domain', function(): void {
+    test('denies user with non-whitelisted email domain', function (): void {
         $user = fakeSocialiteUser('user@unknown-domain.com');
         config(['filament-socialite.domain_allowlist' => ['allowed-company.com']]);
 
@@ -37,7 +37,7 @@ describe('IsUserAllowedAction', function(): void {
         expect($result)->toBeFalse();
     });
 
-    test('allows user when whitelist is empty', function(): void {
+    test('allows user when whitelist is empty', function (): void {
         $user = fakeSocialiteUser('user@any-domain.com');
         config(['filament-socialite.domain_allowlist' => []]);
 

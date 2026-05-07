@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::namespace('Socialite')
     ->name('socialite.')
-    ->group(static function(): void {
+    ->group(static function (): void {
         Route::get(
             '/admin/login/{provider}',
             // 'LoginController@redirectToProvider',

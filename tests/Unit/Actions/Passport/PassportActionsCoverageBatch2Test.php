@@ -19,8 +19,8 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-describe('Passport actions coverage batch 2', function(): void {
-    it('creates oauth client with defaults and user association', function(): void {
+describe('Passport actions coverage batch 2', function (): void {
+    it('creates oauth client with defaults and user association', function (): void {
         $user = User::factory()->create();
 
         $client = app(CreateClientAction::class)->execute(
@@ -45,7 +45,7 @@ describe('Passport actions coverage batch 2', function(): void {
         )->toBeTrue();
     });
 
-    it('creates generic oauth client with explicit flags and provider', function(): void {
+    it('creates generic oauth client with explicit flags and provider', function (): void {
         $client = app(CreateGenericClientAction::class)->execute(
             name: 'Generic Coverage Client',
             redirect: 'https://example.test/generic-callback',
@@ -61,7 +61,7 @@ describe('Passport actions coverage batch 2', function(): void {
             ->and((bool) $client->revoked)->toBeFalse();
     });
 
-    it('regenerates client secret from model instance and client id', function(): void {
+    it('regenerates client secret from model instance and client id', function (): void {
         $clientId = (string) Str::uuid();
 
         DB::connection('user')->table('oauth_clients')->insert([
@@ -97,7 +97,7 @@ describe('Passport actions coverage batch 2', function(): void {
             ->and(Hash::check($secretFromId, (string) $storedSecret))->toBeTrue();
     });
 
-    it('revokes refresh token and returns false for missing token', function(): void {
+    it('revokes refresh token and returns false for missing token', function (): void {
         $clientId = (string) Str::uuid();
         $tokenId = (string) Str::uuid();
         $refreshId = hash('sha256', (string) Str::uuid());
@@ -145,7 +145,7 @@ describe('Passport actions coverage batch 2', function(): void {
         expect($action->execute('missing-refresh-token-id'))->toBeFalse();
     });
 
-    it('revokes access token and associated refresh token', function(): void {
+    it('revokes access token and associated refresh token', function (): void {
         $clientId = (string) Str::uuid();
         $tokenId = (string) Str::uuid();
         $refreshId = hash('sha256', (string) Str::uuid());
@@ -194,7 +194,7 @@ describe('Passport actions coverage batch 2', function(): void {
         expect($action->execute('missing-access-token-id'))->toBeFalse();
     });
 
-    it('revokes client with and without associated tokens', function(): void {
+    it('revokes client with and without associated tokens', function (): void {
         $clientWithTokenId = (string) Str::uuid();
         $tokenId = (string) Str::uuid();
         $clientWithoutTokenRevokeId = (string) Str::uuid();

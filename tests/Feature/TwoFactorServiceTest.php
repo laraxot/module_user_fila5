@@ -12,13 +12,13 @@ use PragmaRX\Google2FA\Google2FA;
 
 uses(TestCase::class);
 
-beforeEach(function(): void {
-    $this->service = new TwoFactorService;
+beforeEach(function (): void {
+    $this->service = new TwoFactorService();
     $this->user = User::factory()->create();
-    $this->google2fa = new Google2FA;
+    $this->google2fa = new Google2FA();
 });
 
-test('enable generates secret and qr code', function(): void {
+test('enable generates secret and qr code', function (): void {
     $result = $this->service->enable($this->user);
 
     expect($result)->toHaveKeys(['secret', 'qr_code', 'recovery_codes']);
@@ -27,14 +27,14 @@ test('enable generates secret and qr code', function(): void {
     expect($result['recovery_codes'])->toHaveCount(10);
 });
 
-test('enable stores encrypted secret', function(): void {
+test('enable stores encrypted secret', function (): void {
     $this->service->enable($this->user);
 
     expect($this->user->fresh()->two_factor_secret)->not->toBeNull();
     expect($this->user->fresh()->two_factor_enabled)->toBeFalse();
 });
 
-test('enable generates 10 recovery codes', function(): void {
+test('enable generates 10 recovery codes', function (): void {
     $result = $this->service->enable($this->user);
 
     expect($result['recovery_codes'])->toHaveCount(10);
@@ -44,7 +44,7 @@ test('enable generates 10 recovery codes', function(): void {
     }
 });
 
-test('confirm enables 2fa with valid code', function(): void {
+test('confirm enables 2fa with valid code', function (): void {
     $result = $this->service->enable($this->user);
     $validCode = $this->google2fa->getCurrentOtp($result['secret']);
 
@@ -55,7 +55,7 @@ test('confirm enables 2fa with valid code', function(): void {
     expect($this->user->fresh()->two_factor_confirmed_at)->not->toBeNull();
 });
 
-test('confirm fails with invalid code', function(): void {
+test('confirm fails with invalid code', function (): void {
     $this->service->enable($this->user);
 
     $confirmed = $this->service->confirm($this->user, '000000');
@@ -64,7 +64,7 @@ test('confirm fails with invalid code', function(): void {
     expect($this->user->fresh()->two_factor_enabled)->toBeFalse();
 });
 
-test('disable removes all 2fa data', function(): void {
+test('disable removes all 2fa data', function (): void {
     $this->service->enable($this->user);
     $this->user->update(['two_factor_enabled' => true]);
 
@@ -77,7 +77,7 @@ test('disable removes all 2fa data', function(): void {
     expect($fresh->two_factor_enabled)->toBeFalse();
 });
 
-test('verify validates correct code', function(): void {
+test('verify validates correct code', function (): void {
     $result = $this->service->enable($this->user);
     $validCode = $this->google2fa->getCurrentOtp($result['secret']);
 
@@ -86,7 +86,7 @@ test('verify validates correct code', function(): void {
     expect($verified)->toBeTrue();
 });
 
-test('verify rejects incorrect code', function(): void {
+test('verify rejects incorrect code', function (): void {
     $this->service->enable($this->user);
 
     $verified = $this->service->verify($this->user, '000000');
@@ -94,13 +94,13 @@ test('verify rejects incorrect code', function(): void {
     expect($verified)->toBeFalse();
 });
 
-test('verify returns false if no secret', function(): void {
+test('verify returns false if no secret', function (): void {
     $verified = $this->service->verify($this->user, '123456');
 
     expect($verified)->toBeFalse();
 });
 
-test('verify recovery code works once', function(): void {
+test('verify recovery code works once', function (): void {
     $result = $this->service->enable($this->user);
     $recoveryCode = $result['recovery_codes'][0];
 
@@ -110,7 +110,7 @@ test('verify recovery code works once', function(): void {
     expect($this->user->fresh()->getRecoveryCodes())->toHaveCount(9);
 });
 
-test('verify recovery code fails if already used', function(): void {
+test('verify recovery code fails if already used', function (): void {
     $result = $this->service->enable($this->user);
     $recoveryCode = $result['recovery_codes'][0];
 
@@ -123,7 +123,7 @@ test('verify recovery code fails if already used', function(): void {
     expect($verified)->toBeFalse();
 });
 
-test('verify recovery code fails with invalid code', function(): void {
+test('verify recovery code fails with invalid code', function (): void {
     $this->service->enable($this->user);
 
     $verified = $this->service->verifyRecoveryCode($this->user, 'invalid-code');
@@ -131,7 +131,7 @@ test('verify recovery code fails with invalid code', function(): void {
     expect($verified)->toBeFalse();
 });
 
-test('regenerate recovery codes creates new set', function(): void {
+test('regenerate recovery codes creates new set', function (): void {
     $result = $this->service->enable($this->user);
     $oldCodes = $result['recovery_codes'];
 
@@ -141,7 +141,7 @@ test('regenerate recovery codes creates new set', function(): void {
     expect($newCodes)->not->toBe($oldCodes);
 });
 
-test('regenerate recovery codes invalidates old ones', function(): void {
+test('regenerate recovery codes invalidates old ones', function (): void {
     $result = $this->service->enable($this->user);
     $oldCode = $result['recovery_codes'][0];
 
@@ -152,20 +152,20 @@ test('regenerate recovery codes invalidates old ones', function(): void {
     expect($verified)->toBeFalse();
 });
 
-test('qr code contains user email', function(): void {
+test('qr code contains user email', function (): void {
     $result = $this->service->enable($this->user);
 
     expect($result['qr_code'])->toContain($this->user->email);
 });
 
-test('qr code is valid svg', function(): void {
+test('qr code is valid svg', function (): void {
     $result = $this->service->enable($this->user);
 
     expect($result['qr_code'])->toContain('<svg');
     expect($result['qr_code'])->toContain('</svg>');
 });
 
-test('secret is properly encrypted in database', function(): void {
+test('secret is properly encrypted in database', function (): void {
     $result = $this->service->enable($this->user);
 
     $encrypted = $this->user->fresh()->two_factor_secret;
@@ -174,7 +174,7 @@ test('secret is properly encrypted in database', function(): void {
     expect(decrypt($encrypted))->toBe($result['secret']);
 });
 
-test('recovery codes are properly encrypted in database', function(): void {
+test('recovery codes are properly encrypted in database', function (): void {
     $result = $this->service->enable($this->user);
 
     $encrypted = $this->user->fresh()->two_factor_recovery_codes;
@@ -183,14 +183,14 @@ test('recovery codes are properly encrypted in database', function(): void {
     expect(json_decode(decrypt($encrypted), true))->toBe($result['recovery_codes']);
 });
 
-test('enable can be called multiple times', function(): void {
+test('enable can be called multiple times', function (): void {
     $result1 = $this->service->enable($this->user);
     $result2 = $this->service->enable($this->user);
 
     expect($result1['secret'])->not->toBe($result2['secret']);
 });
 
-test('confirm sets confirmed_at timestamp', function(): void {
+test('confirm sets confirmed_at timestamp', function (): void {
     $result = $this->service->enable($this->user);
     $validCode = $this->google2fa->getCurrentOtp($result['secret']);
 

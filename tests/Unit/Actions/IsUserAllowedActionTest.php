@@ -10,7 +10,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-describe('IsUserAllowedAction', function(): void {
+describe('IsUserAllowedAction', function (): void {
     $getMockUser = function (string $email = 'user@example.com'): SocialiteUserContract {
         $mock = \Mockery::mock(SocialiteUserContract::class);
         $mock->shouldReceive('getEmail')->andReturn($email);

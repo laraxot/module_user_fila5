@@ -41,7 +41,7 @@ class Verify extends Component
         $result = view($view)->extends('pub_theme::layouts.auth');
         Assert::isInstanceOf($result, View::class);
 
-        /** @var View $result */
+        /* @var View $result */
         return $result;
     }
 }
