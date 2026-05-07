@@ -54,7 +54,7 @@ class ClientResource extends XotBaseResource
             $components = array_merge($components, $additionalComponents);
         }
 
-        /** @var array<string, Field> $components */
+        /* @var array<string, Field> $components */
         return $components;
     }
 
@@ -75,7 +75,7 @@ class ClientResource extends XotBaseResource
 
         Assert::subclassOf($model, Model::class);
 
-        /** @var class-string<Model> $model */
+        /* @var class-string<Model> $model */
         return $model;
     }
 

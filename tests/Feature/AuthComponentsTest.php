@@ -74,7 +74,7 @@ describe('Authentication Flow with Reorganized Components', function (): void {
     });
 
     test('password confirmation uses reorganized components', function (): void {
-        /** @var User */
+        /* @var User */
         try {
             actingAs($user)
                 ->get('/it/auth/password/confirm')

@@ -69,7 +69,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 ->required()
                 ->autocomplete('email')
                 ->maxLength(255)
-                ->disabled($this->currentState !== 'form')
+                ->disabled('form' !== $this->currentState)
                 ->extraInputAttributes(['class' => 'text-center'])
                 ->suffixIcon('heroicon-o-envelope'),
             'password' => TextInput::make('password')
@@ -77,14 +77,14 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 ->required()
                 ->revealable()
                 ->minLength(8)
-                ->disabled($this->currentState !== 'form')
+                ->disabled('form' !== $this->currentState)
                 ->extraInputAttributes(['class' => 'text-center'])
                 ->suffixIcon('heroicon-o-key'),
             'password_confirmation' => TextInput::make('password_confirmation')
                 ->password()
                 ->required()
                 ->same('password')
-                ->disabled($this->currentState !== 'form')
+                ->disabled('form' !== $this->currentState)
                 ->extraInputAttributes(['class' => 'text-center'])
                 ->suffixIcon('heroicon-o-key'),
         ];
@@ -95,7 +95,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function confirmPasswordReset(): void
     {
-        if ($this->currentState !== 'form') {
+        if ('form' !== $this->currentState) {
             return;
         }
 
@@ -112,7 +112,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 ],
                 static function (Authenticatable $user, string $password): void {
                     // Use setAttribute to set password safely
-                    /** @var Model&Authenticatable $user */
+                    /* @var Model&Authenticatable $user */
                     // PHPStan: instanceof always true since UserContract extends Authenticatable
                     $user->setAttribute('password', Hash::make($password));
                     $user->setRememberToken(Str::random(60));
@@ -122,7 +122,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 },
             );
 
-            if ($response === Password::PASSWORD_RESET) {
+            if (Password::PASSWORD_RESET === $response) {
                 $this->currentState = 'success';
 
                 Notification::make()
@@ -189,7 +189,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function isLoading(): bool
     {
-        return $this->currentState === 'loading';
+        return 'loading' === $this->currentState;
     }
 
     /**
@@ -197,7 +197,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function isSuccess(): bool
     {
-        return $this->currentState === 'success';
+        return 'success' === $this->currentState;
     }
 
     /**
@@ -205,7 +205,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function hasError(): bool
     {
-        return $this->currentState === 'error';
+        return 'error' === $this->currentState;
     }
 
     /**

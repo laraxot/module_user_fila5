@@ -23,11 +23,11 @@ use Webmozart\Assert\Assert;
  * - Determina dinamicamente la risorsa, il modello e l'action da eseguire
  * - Delega la logica di salvataggio a una UpdateAction specifica del modulo
  *
- * @property string $type
- * @property string $resource
- * @property string $model
- * @property string $action
- * @property Model $record
+ * @property string     $type
+ * @property string     $resource
+ * @property string     $model
+ * @property string     $action
+ * @property Model      $record
  * @property array|null $data
  */
 class EditUserWidget extends XotBaseWidget
@@ -125,7 +125,7 @@ class EditUserWidget extends XotBaseWidget
         $schema = $this->resource::getFormSchemaWidget();
         Assert::isArray($schema, 'Schema must be array');
 
-        /** @var array<int|string, Component> $result */
+        /* @var array<int|string, Component> $result */
         return self::normalizeFormSchema($schema);
     }
 
