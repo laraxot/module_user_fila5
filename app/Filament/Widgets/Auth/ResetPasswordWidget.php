@@ -100,14 +100,6 @@ class ResetPasswordWidget extends XotBaseWidget
 
             return redirect()->route('login');
         }
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-        $this->addError('email', __($status));
-=======
         $this->addError('email', __(is_string($status) ? $status : 'passwords.generic_error'));
->>>>>>> Stashed changes
-=======
-        $this->addError('email', __(is_string($status) ? $status : 'passwords.generic_error'));
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
     }
 }

@@ -47,21 +47,6 @@ class LogoutWidget extends XotBaseWidget
      */
     public $isLoggingOut = false;
 
-    /**
-     * The view to render the widget.
-     *
-     * IMPORTANT: When using @livewire() directly in Blade templates,
-     * the path should be without the module namespace.
-     */
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    protected string $view = 'user::widgets.logout';
-=======
-    protected string $view = 'user::filament.widgets.auth.logout';
->>>>>>> Stashed changes
-=======
-    protected string $view = 'user::filament.widgets.auth.logout';
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
     /**
      * Mount the widget and initialize the form.
@@ -82,17 +67,11 @@ class LogoutWidget extends XotBaseWidget
     #[\Override]
     public function getFormSchema(): array
     {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
         $view = 'filament.widgets.auth.logout-message';
         if (! view()->exists($view)) {
             throw new \Exception('View '.$view.' not found');
         }
 
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
         return [
             'message' => View::make('user::filament.widgets.auth.logout-message')->columnSpanFull(),
         ];

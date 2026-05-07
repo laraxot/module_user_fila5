@@ -40,14 +40,7 @@ class Client extends PassportClient
      */
     public function initializeHasUniqueStringIds(): void
     {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
         // @phpstan-ignore-next-line
->>>>>>> Stashed changes
-=======
-        // @phpstan-ignore-next-line
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
         if (method_exists(parent::class, 'initializeHasUniqueStringIds')) {
             parent::initializeHasUniqueStringIds();
         }

@@ -58,11 +58,7 @@ class SocialiteServiceProvider extends BaseSocialiteServiceProvider
             // Merge with existing services config
             /** @var array<string, mixed> $existingConfig */
             $existingConfig = Config::get("services.{$provider}", []);
-<<<<<<< Updated upstream
             /* @var array<string, mixed> $settings */
-=======
-            /** @var array<string, mixed> $settings */
->>>>>>> Stashed changes
             Config::set("services.{$provider}", array_merge($existingConfig, $settings));
         }
     }

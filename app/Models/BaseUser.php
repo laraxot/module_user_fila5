@@ -152,15 +152,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
 
     protected $keyType = 'string';
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    protected $childColumn = 'type';
-=======
     protected string $childColumn = 'type';
->>>>>>> Stashed changes
-=======
-    protected string $childColumn = 'type';
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
     protected $fillable = [
         'id',
@@ -321,32 +313,12 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
 
     public function detach(Model $model): void
     {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-        if (method_exists($this, 'teams')) {
-            $this->teams()->detach($model);
-        }
-=======
         $this->teams()->detach($model);
->>>>>>> Stashed changes
-=======
-        $this->teams()->detach($model);
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
     }
 
     public function attach(Model $model): void
     {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-        if (method_exists($this, 'teams')) {
-            $this->teams()->attach($model);
-        }
-=======
         $this->teams()->attach($model);
->>>>>>> Stashed changes
-=======
-        $this->teams()->attach($model);
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
     }
 
     public function treeLabel(): string

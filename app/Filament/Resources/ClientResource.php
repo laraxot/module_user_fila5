@@ -54,11 +54,7 @@ class ClientResource extends XotBaseResource
             $components = array_merge($components, $additionalComponents);
         }
 
-<<<<<<< HEAD
-        /* @var array<string, \Filament\Forms\Components\Field> $components */
-=======
         /** @var array<string, Field> $components */
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
         return $components;
     }
 
@@ -79,11 +75,7 @@ class ClientResource extends XotBaseResource
 
         Assert::subclassOf($model, Model::class);
 
-<<<<<<< HEAD
-        /* @var class-string<\Illuminate\Database\Eloquent\Model> $model */
-=======
         /** @var class-string<Model> $model */
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
         return $model;
     }
 

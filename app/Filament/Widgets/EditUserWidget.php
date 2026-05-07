@@ -32,22 +32,6 @@ use Webmozart\Assert\Assert;
  */
 class EditUserWidget extends XotBaseWidget
 {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    public $type;
-=======
-    public string $type = '';
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
-
-    /** @var class-string */
-    public string $resource;
-
-    /** @var class-string<Model> */
-    public string $model = Model::class;
-
-<<<<<<< HEAD
-    public $action;
-=======
     public string $type = '';
 
     /** @var class-string */
@@ -57,24 +41,14 @@ class EditUserWidget extends XotBaseWidget
     public string $model = Model::class;
 
     public string $action = '';
->>>>>>> Stashed changes
-=======
-    public string $action = '';
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
     public Model $record;
 
     /** @var array<string, mixed>|null */
     public ?array $data = null;
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
     protected string $view = 'pub_theme::filament.widgets.edit-user';
 
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
     /**
      * Initialize the widget with user type and optional user ID.
      */
@@ -148,19 +122,11 @@ class EditUserWidget extends XotBaseWidget
      */
     public function getFormSchema(): array
     {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
         $schema = $this->resource::getFormSchemaWidget();
         Assert::isArray($schema, 'Schema must be array');
 
-        /* @var array<int|string, Component> $result */
-        return $schema;
-=======
-        return self::normalizeFormSchema($this->resource::getFormSchemaWidget());
->>>>>>> Stashed changes
-=======
-        return self::normalizeFormSchema($this->resource::getFormSchemaWidget());
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
+        /** @var array<int|string, Component> $result */
+        return self::normalizeFormSchema($schema);
     }
 
     /**

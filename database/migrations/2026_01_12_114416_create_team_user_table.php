@@ -11,22 +11,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Questa migrazione gestisce sia la creazione che l'aggiornamento della tabella team_user.
  * Se la tabella esiste già con id UUID, viene convertita a id autoincrement.
  */
-<<<<<<< HEAD
-<<<<<<< Updated upstream
 return new class extends XotBaseMigration
 {
-    /**
-     * Nome della tabella gestita dalla migrazione.
-     */
-    protected $table_name = 'team_user';
-
-=======
-return new class extends XotBaseMigration {
->>>>>>> Stashed changes
-=======
-return new class extends XotBaseMigration
-{
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
     /**
      * Esegue la migrazione.
      */

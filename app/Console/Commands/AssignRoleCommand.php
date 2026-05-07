@@ -8,12 +8,9 @@ use Illuminate\Console\Command;
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
-<<<<<<< HEAD
-=======
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
 class AssignRoleCommand extends Command
 {

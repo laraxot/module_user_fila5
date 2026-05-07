@@ -18,11 +18,7 @@ class GetNewPasswordAction
         $user = $record;
 
         return once(function () use ($user) {
-<<<<<<< HEAD
             $generator = new GetPronounceablePasswordAction();
-=======
-            $generator = new GetPronounceablePasswordAction;
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
             $plainPassword = $generator->execute();
             $hasher = app(Hasher::class);
             $hashedPassword = $hasher->make($plainPassword);

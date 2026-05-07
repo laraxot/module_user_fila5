@@ -27,15 +27,7 @@ class PasswordResetWidget extends XotBaseWidget
 
     public $emailSent = false;
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
     protected string $view = 'pub_theme::filament.widgets.auth.password.reset';
-=======
-    protected string $view = 'user::filament.widgets.auth.password.reset';
->>>>>>> Stashed changes
-=======
-    protected string $view = 'user::filament.widgets.auth.password.reset';
->>>>>>> a6d956d (Refactor code style for consistency and clarity across multiple files, including parameter annotations and conditional checks. Adjusted formatting in various actions, migrations, and console commands to enhance readability and maintainability.)
 
     /**
      * Get the form schema for password reset.
