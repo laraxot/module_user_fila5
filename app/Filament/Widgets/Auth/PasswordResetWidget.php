@@ -25,9 +25,7 @@ class PasswordResetWidget extends XotBaseWidget
 {
     public ?array $data = [];
 
-    public $emailSent = false;
-
-    protected string $view = 'pub_theme::filament.widgets.auth.password.reset';
+    public bool $emailSent = false;
 
     /**
      * Get the form schema for password reset.
@@ -73,7 +71,7 @@ class PasswordResetWidget extends XotBaseWidget
             'email' => $data['email'],
         ]);
 
-        if (Password::RESET_LINK_SENT === $response) {
+        if ($response === Password::RESET_LINK_SENT) {
             $this->emailSent = true;
 
             Notification::make()

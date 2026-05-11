@@ -13,6 +13,8 @@ class PersonalAccessTokenInfolist extends XotBaseResourceInfolist
 {
     /**
      * @return array<string, Component|Htmlable|string>
+     *
+     * Campi basati sul Model PersonalAccessToken.php -> id, tokenable_type, tokenable_id, name, token, abilities, last_used_at, expires_at
      */
     public static function getInfolistSchema(): array
     {
@@ -21,9 +23,7 @@ class PersonalAccessTokenInfolist extends XotBaseResourceInfolist
             'tokenable_type' => TextEntry::make('tokenable_type'),
             'tokenable_id' => TextEntry::make('tokenable_id'),
             'name' => TextEntry::make('name'),
-            'token' => TextEntry::make('token'),
-            'abilities' => TextEntry::make('abilities')
-                ->badge(),
+            'abilities' => TextEntry::make('abilities'),
             'last_used_at' => TextEntry::make('last_used_at')
                 ->dateTime(),
             'expires_at' => TextEntry::make('expires_at')

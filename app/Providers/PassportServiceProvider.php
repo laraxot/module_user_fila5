@@ -121,12 +121,10 @@ class PassportServiceProvider extends ServiceProvider
         Passport::useAuthCodeModel($authCodeModel);
         Passport::useClientModel($clientModel);
 
-        if (method_exists(Passport::class, 'useDeviceCodeModel')) {
-            $deviceCodeModel = $models['device_code'] ?? OauthDeviceCode::class;
-            Assert::stringNotEmpty($deviceCodeModel);
-            Assert::subclassOf($deviceCodeModel, DeviceCode::class);
-            Passport::useDeviceCodeModel($deviceCodeModel);
-        }
+        $deviceCodeModel = $models['device_code'] ?? OauthDeviceCode::class;
+        Assert::stringNotEmpty($deviceCodeModel);
+        Assert::subclassOf($deviceCodeModel, DeviceCode::class);
+        Passport::useDeviceCodeModel($deviceCodeModel);
     }
 
     /**

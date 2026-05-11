@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\DeviceResource\Schemas;
 
-use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Illuminate\Contracts\Support\Htmlable;
@@ -14,29 +13,33 @@ class DeviceInfolist extends XotBaseResourceInfolist
 {
     /**
      * @return array<string, Component|Htmlable|string>
+     *
+     * Campi basati sul Model Device.php -> id, uuid, mobile_id, name, type, device, platform, browser, version, is_robot, robot, is_desktop, is_mobile, is_tablet, is_phone, languages
      */
     public static function getInfolistSchema(): array
     {
         return [
             'id' => TextEntry::make('id'),
+            'uuid' => TextEntry::make('uuid'),
             'mobile_id' => TextEntry::make('mobile_id'),
-            'languages' => TextEntry::make('languages')
-                ->badge(),
+            'name' => TextEntry::make('name'),
+            'type' => TextEntry::make('type'),
             'device' => TextEntry::make('device'),
             'platform' => TextEntry::make('platform'),
             'browser' => TextEntry::make('browser'),
             'version' => TextEntry::make('version'),
-            'is_robot' => IconEntry::make('is_robot')
-                ->boolean(),
+            'is_robot' => TextEntry::make('is_robot')
+                ->badge(),
             'robot' => TextEntry::make('robot'),
-            'is_desktop' => IconEntry::make('is_desktop')
-                ->boolean(),
-            'is_mobile' => IconEntry::make('is_mobile')
-                ->boolean(),
-            'is_tablet' => IconEntry::make('is_tablet')
-                ->boolean(),
-            'is_phone' => IconEntry::make('is_phone')
-                ->boolean(),
+            'is_desktop' => TextEntry::make('is_desktop')
+                ->badge(),
+            'is_mobile' => TextEntry::make('is_mobile')
+                ->badge(),
+            'is_tablet' => TextEntry::make('is_tablet')
+                ->badge(),
+            'is_phone' => TextEntry::make('is_phone')
+                ->badge(),
+            'languages' => TextEntry::make('languages'),
             'created_at' => TextEntry::make('created_at')
                 ->dateTime(),
             'updated_at' => TextEntry::make('updated_at')

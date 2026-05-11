@@ -14,7 +14,7 @@ uses(TestCase::class);
 
 describe('Create specific passport client actions', function (): void {
     it('delegates password client creation to generic action', function (): void {
-        $expectedClient = new OauthClient();
+        $expectedClient = new OauthClient;
 
         $genericAction = Mockery::mock(CreateGenericClientAction::class);
         $genericAction->shouldReceive('execute')->once()->andReturn($expectedClient);
@@ -30,7 +30,7 @@ describe('Create specific passport client actions', function (): void {
     });
 
     it('delegates personal access client creation to generic action', function (): void {
-        $expectedClient = new OauthClient();
+        $expectedClient = new OauthClient;
 
         $genericAction = Mockery::mock(CreateGenericClientAction::class);
         $genericAction->shouldReceive('execute')->once()->andReturn($expectedClient);

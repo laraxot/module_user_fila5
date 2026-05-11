@@ -49,7 +49,7 @@ class RegisterTenant extends BaseRegisterTenant
     }
 
     /**
-     * @return array<int, Component>
+     * @return array<int|string, Component>
      */
     public function getFormSchema(): array
     {
@@ -57,12 +57,12 @@ class RegisterTenant extends BaseRegisterTenant
         $schema = $resourceClass::getFormSchema();
         Assert::isArray($schema);
 
-        /* @var array<int, Component> $schema */
+        /** @var array<int|string, Component> $schema */
         return $schema;
     }
 
     /**
-     * @param array<string, string|int|bool|null> $data
+     * @param  array<string, string|int|bool|null>  $data
      */
     protected function handleRegistration(array $data): Model
     {
@@ -80,7 +80,7 @@ class RegisterTenant extends BaseRegisterTenant
      */
     private function resolveResourceClass(): string
     {
-        if (null !== $this->resourceClass) {
+        if ($this->resourceClass !== null) {
             return $this->resourceClass;
         }
 

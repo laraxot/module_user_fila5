@@ -7,7 +7,6 @@ namespace Modules\User\Filament\Widgets;
 use Filament\Schemas\Components\Component;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Livewire\Features\SupportRedirects\Redirector;
@@ -19,11 +18,6 @@ use Webmozart\Assert\Assert;
 
 class RegistrationWidget extends XotBaseWidget
 {
-    /**
-     * @var array<string, mixed>|null
-     */
-    public ?array $data = null;
-
     public string $type = '';
 
     /** @var class-string */
@@ -38,23 +32,17 @@ class RegistrationWidget extends XotBaseWidget
 
     protected int|string|array $columnSpan = 'full';
 
-    /**
-     * @phpstan-var class-string
-     */
-    protected string $view = 'pub_theme::filament.widgets.registration';
-
-    public function mount(string $type, Request $_request): void
+    public function mount(string $type): void
     {
         $this->type = $type;
         $resourceClass = XotData::make()->getUserResourceClassByType($type);
-        if (class_exists($resourceClass)) {
-            $this->resource = $resourceClass;
-        }
+        Assert::classExists($resourceClass);
+        $this->resource = $resourceClass;
 
-        $modelClass = $this->resource::getModel();
-        if (\is_string($modelClass) && is_a($modelClass, Model::class, true)) {
-            $this->model = $modelClass;
-        }
+        /** @var class-string<Model> $modelClass */
+        $modelClass = $resourceClass::getModel();
+        Assert::subclassOf($modelClass, Model::class);
+        $this->model = $modelClass;
 
         $this->action = Str::of($this->model)
             ->replace('\\Models\\', '\\Actions\\')
@@ -75,26 +63,26 @@ class RegistrationWidget extends XotBaseWidget
         $email = Arr::get($data, 'email');
         $token = Arr::get($data, 'token');
 
-        /** @var Model|null $user */
-        $user = $this->model::firstWhere('email', $email);
-        if (null === $user) {
-            /* @var Model $model */
-            return app($this->model);
-        if ($user === null) {
+        $user = is_string($email)
+            ? $this->model::firstWhere('email', $email)
+            : null;
+        if (! $user instanceof Model) {
             $model = app($this->model);
             Assert::isInstanceOf($model, Model::class);
 
             return $model;
         }
 
-        $remember_token = $user->getAttribute('remember_token');
-        if ($token) {
+        $rememberToken = $user->getAttribute('remember_token');
+        if (is_string($token) && $token !== '') {
             $user->setAttribute('remember_token', $token);
             $user->save();
-            $remember_token = $user->getAttribute('remember_token');
+            $this->record = $user;
+
+            return $user;
         }
 
-        if ($remember_token === $token) {
+        if (is_string($rememberToken) && $rememberToken === $token) {
             $this->record = $user;
 
             return $user;
@@ -109,7 +97,7 @@ class RegistrationWidget extends XotBaseWidget
     /**
      * @return array<string, mixed>
      */
-    #[\Override]
+    // @override
     public function getFormFill(): array
     {
         /** @var array<string, mixed> $data */
@@ -131,10 +119,9 @@ class RegistrationWidget extends XotBaseWidget
     /**
      * @see https://filamentphp.com/docs/3.x/forms/adding-a-form-to-a-livewire-component
      */
+    // @override
     public function register(): RedirectResponse|Redirector
     {
-        $lang = app()->getLocale();
-
         $data = $this->form->getState();
         /** @var array<string, mixed> $initialData */
         $initialData = $this->data ?? [];
@@ -142,14 +129,10 @@ class RegistrationWidget extends XotBaseWidget
         $record = $this->record;
 
         $actionInstance = app($this->action);
-
-        $user = $actionInstance->execute($record, $data);
-        if (\is_object($actionInstance) && method_exists($actionInstance, 'execute')) {
-            \call_user_func([$actionInstance, 'execute'], $record, $data);
+        if (! \is_object($actionInstance) || ! method_exists($actionInstance, 'execute')) {
+            throw new \RuntimeException(\sprintf('Registration action [%s] must expose an execute method.', $this->action));
         }
-        if (\is_object($actionInstance) && method_exists($actionInstance, 'execute')) {
-            \call_user_func([$actionInstance, 'execute'], $record, $data);
-        }
+        \call_user_func([$actionInstance, 'execute'], $record, $data);
 
         $lang = app()->getLocale();
         $route = route('pages.view', ['slug' => $this->type.'_register_complete']);

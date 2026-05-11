@@ -39,8 +39,6 @@ class PasswordResetConfirmWidget extends XotBaseWidget
 
     public ?string $errorMessage = null;
 
-    protected string $view = 'pub_theme::filament.widgets.auth.password.reset-confirm';
-
     /**
      * Mount the widget with token and optional email.
      */
@@ -69,7 +67,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 ->required()
                 ->autocomplete('email')
                 ->maxLength(255)
-                ->disabled('form' !== $this->currentState)
+                ->disabled($this->currentState !== 'form')
                 ->extraInputAttributes(['class' => 'text-center'])
                 ->suffixIcon('heroicon-o-envelope'),
             'password' => TextInput::make('password')
@@ -77,14 +75,14 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 ->required()
                 ->revealable()
                 ->minLength(8)
-                ->disabled('form' !== $this->currentState)
+                ->disabled($this->currentState !== 'form')
                 ->extraInputAttributes(['class' => 'text-center'])
                 ->suffixIcon('heroicon-o-key'),
             'password_confirmation' => TextInput::make('password_confirmation')
                 ->password()
                 ->required()
                 ->same('password')
-                ->disabled('form' !== $this->currentState)
+                ->disabled($this->currentState !== 'form')
                 ->extraInputAttributes(['class' => 'text-center'])
                 ->suffixIcon('heroicon-o-key'),
         ];
@@ -95,7 +93,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function confirmPasswordReset(): void
     {
-        if ('form' !== $this->currentState) {
+        if ($this->currentState !== 'form') {
             return;
         }
 
@@ -122,7 +120,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 },
             );
 
-            if (Password::PASSWORD_RESET === $response) {
+            if ($response === Password::PASSWORD_RESET) {
                 $this->currentState = 'success';
 
                 Notification::make()
@@ -189,7 +187,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function isLoading(): bool
     {
-        return 'loading' === $this->currentState;
+        return $this->currentState === 'loading';
     }
 
     /**
@@ -197,7 +195,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function isSuccess(): bool
     {
-        return 'success' === $this->currentState;
+        return $this->currentState === 'success';
     }
 
     /**
@@ -205,7 +203,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
      */
     public function hasError(): bool
     {
-        return 'error' === $this->currentState;
+        return $this->currentState === 'error';
     }
 
     /**

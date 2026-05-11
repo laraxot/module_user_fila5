@@ -13,6 +13,8 @@ class OauthPersonalAccessClientInfolist extends XotBaseResourceInfolist
 {
     /**
      * @return array<string, Component|Htmlable|string>
+     *
+     * Campi basati sul Model OauthPersonalAccessClient.php -> id, client_id
      */
     public static function getInfolistSchema(): array
     {

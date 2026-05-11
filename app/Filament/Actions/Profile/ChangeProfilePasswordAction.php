@@ -29,16 +29,16 @@ final class ChangeProfilePasswordAction extends Action
         parent::setUp();
         $this->translateLabel()
             ->tooltip(__('user::user.actions.change_password'))
-                ->icon('heroicon-o-key')
+            ->icon('heroicon-o-key')
             ->action(static function (ProfileContract $record, array $data): void {
                 $user = $record->user;
                 $profileData = Arr::except($record->toArray(), ['id']);
-                if (null === $user) {
+                if ($user === null) {
                     /** @var UserContract */
                     $user = XotData::make()->getUserByEmail($record->email);
                 }
 
-                if (null === $user) {
+                if ($user === null) {
                     /** @var array<string, mixed> $profileData */
                     $user = $record->user()->create($profileData);
                 }
@@ -70,7 +70,7 @@ final class ChangeProfilePasswordAction extends Action
                         ->rule(
                             'required',
                             /**
-                             * @param callable(string): mixed $get
+                             * @param  callable(string): mixed  $get
                              */
                             static fn (callable $get): bool => (bool) $get('new_password')
                         )

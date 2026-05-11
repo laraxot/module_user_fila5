@@ -13,13 +13,16 @@ class PasswordResetInfolist extends XotBaseResourceInfolist
 {
     /**
      * @return array<string, Component|Htmlable|string>
+     *
+     * Campi basati sul Model PasswordReset.php -> id, uuid, email, token, user_id
      */
     public static function getInfolistSchema(): array
     {
         return [
             'id' => TextEntry::make('id'),
+            'uuid' => TextEntry::make('uuid'),
             'email' => TextEntry::make('email'),
-            'token' => TextEntry::make('token'),
+            'user_id' => TextEntry::make('user_id'),
             'created_at' => TextEntry::make('created_at')
                 ->dateTime(),
             'updated_at' => TextEntry::make('updated_at')

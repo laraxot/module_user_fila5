@@ -43,10 +43,10 @@ final class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
         }
 
         // Fallback ai valori di default se i filtri non sono disponibili
-        if (null === $startDate) {
+        if ($startDate === null) {
             $startDate = now()->subDays(30);
         }
-        if (null === $endDate) {
+        if ($endDate === null) {
             $endDate = now();
         }
 

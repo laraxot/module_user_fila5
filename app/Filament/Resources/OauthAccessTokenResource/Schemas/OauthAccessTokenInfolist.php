@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\OauthAccessTokenResource\Schemas;
 
-use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Illuminate\Contracts\Support\Htmlable;
@@ -14,6 +13,8 @@ class OauthAccessTokenInfolist extends XotBaseResourceInfolist
 {
     /**
      * @return array<string, Component|Htmlable|string>
+     *
+     * Campi basati sul Model OauthAccessToken.php -> id, user_id, client_id, name, scopes, revoked, expires_at
      */
     public static function getInfolistSchema(): array
     {
@@ -22,10 +23,9 @@ class OauthAccessTokenInfolist extends XotBaseResourceInfolist
             'user_id' => TextEntry::make('user_id'),
             'client_id' => TextEntry::make('client_id'),
             'name' => TextEntry::make('name'),
-            'scopes' => TextEntry::make('scopes')
+            'scopes' => TextEntry::make('scopes'),
+            'revoked' => TextEntry::make('revoked')
                 ->badge(),
-            'revoked' => IconEntry::make('revoked')
-                ->boolean(),
             'expires_at' => TextEntry::make('expires_at')
                 ->dateTime(),
             'created_at' => TextEntry::make('created_at')

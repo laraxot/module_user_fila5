@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\HtmlString;
 use Modules\User\Filament\Forms\Components\UserSection;
+use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class UserForm extends XotBaseResourceForm
@@ -55,7 +56,7 @@ class UserForm extends XotBaseResourceForm
                     /** @var Carbon|null $createdAt */
                     $createdAt = $record->getAttribute('created_at');
 
-                    if (null === $createdAt) {
+                    if ($createdAt === null) {
                         return new HtmlString('&mdash;');
                     }
                     if ($createdAt instanceof CarbonInterface) {

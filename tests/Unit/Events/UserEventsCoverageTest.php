@@ -96,7 +96,7 @@ describe('User events coverage', function (): void {
 
     it('instantiates recovery-generated and user-registered events', function (): void {
         $userContract = Mockery::mock(UserContract::class);
-        $user = new User();
+        $user = new User;
 
         $generated = new RecoveryCodesGenerated($userContract);
         $registered = new UserRegistered($user, ['source' => 'test'], '127.0.0.1', 'Pest');
