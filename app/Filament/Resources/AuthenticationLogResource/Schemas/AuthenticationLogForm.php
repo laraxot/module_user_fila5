@@ -7,7 +7,7 @@ namespace Modules\User\Filament\Resources\AuthenticationLogResource\Schemas;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use Filament\Schemas\Components\Component as SchemaComponent;
+use Filament\Forms\Components\Component as \\Filament\\Forms\\Components\\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Modules\User\Models\User;
@@ -16,7 +16,7 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 class AuthenticationLogForm extends XotBaseResourceForm
 {
     /**
-     * @return array<int|string, SchemaComponent>
+     * @return array<int|string, \\Filament\\Forms\\Components\\Component>
      */
     public static function getFormSchema(): array
     {

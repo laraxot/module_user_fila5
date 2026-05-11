@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Filament\Resources\PersonalAccessTokenResource\Schemas;
+namespace Modules\base_quaeris_fila5\var\www\_bases\base_quaeris_fila5\laravel\Modules\User\app\Filament\Resources\PersonalAccessTokenResource\Schemas;
 
 use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component as SchemaComponent;
+use Filament\Schemas\Components\Section;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class PersonalAccessTokenForm extends XotBaseResourceForm
 {
     /**
-     * @return array<int|string, SchemaComponent>
+     * @return array<int|string, \Filament\Forms\Components\Component>
      */
     public static function getFormSchema(): array
     {
         return [
-            'name' => TextInput::make('name')
-                ->required()
-                ->maxLength(255),
+            Section::make([
+                'name' => TextInput::make('name'),
+            ]),
         ];
     }
 }

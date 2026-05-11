@@ -2,24 +2,23 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Filament\Resources\PermissionResource\Schemas;
+namespace Modules\base_quaeris_fila5\var\www\_bases\base_quaeris_fila5\laravel\Modules\User\app\Filament\Resources\PermissionResource\Schemas;
 
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Toggle;
-use Filament\Schemas\Components\Component as SchemaComponent;
+use Filament\Schemas\Components\Section;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class PermissionForm extends XotBaseResourceForm
 {
     /**
-     * @return array<int|string, SchemaComponent>
+     * @return array<int|string, \Filament\Forms\Components\Component>
      */
     public static function getFormSchema(): array
     {
         return [
-            'name' => TextInput::make('name')->required()->maxLength(255),
-            'guard_name' => TextInput::make('guard_name')->required()->maxLength(255),
-            'active' => Toggle::make('active')->required(),
+            Section::make([
+                'name' => TextInput::make('name'),
+            ]),
         ];
     }
 }

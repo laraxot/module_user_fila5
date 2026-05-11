@@ -6,14 +6,13 @@ namespace Modules\User\Filament\Resources\TeamPermissionResource\Schemas;
 
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component as SchemaComponent;
 use Filament\Schemas\Components\Section;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class TeamPermissionForm extends XotBaseResourceForm
 {
     /**
-     * @return array<int|string, SchemaComponent>
+     * @return array<int|string, \Filament\Forms\Components\Component>
      */
     public static function getFormSchema(): array
     {
