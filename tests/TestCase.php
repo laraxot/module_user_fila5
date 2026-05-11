@@ -1,0 +1,23 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\User\Tests;
+
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Modules\Xot\Tests\CreatesApplication;
+
+/**
+ * Base test case for User module.
+ *
+ * Uses MySQL from .env.testing.
+ * All module connections are mapped by TenantServiceProvider.
+ * Migrations must be run ONCE externally: php artisan migrate --env=testing
+ * DatabaseTransactions handles rollback between tests.
+ */
+abstract class TestCase extends BaseTestCase
+{
+    use CreatesApplication;
+    use DatabaseTransactions;
+}
