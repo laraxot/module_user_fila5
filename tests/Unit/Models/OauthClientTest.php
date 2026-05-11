@@ -11,7 +11,7 @@ use Modules\User\Tests\TestCase;
 uses(TestCase::class);
 
 test('oauth client can be instantiated', function (): void {
-    $client = new OauthClient;
+    $client = new OauthClient();
 
     expect($client)->toBeInstanceOf(OauthClient::class)
         ->and($client)->toBeInstanceOf(Client::class)
@@ -19,13 +19,13 @@ test('oauth client can be instantiated', function (): void {
 });
 
 test('oauth client has connection user', function (): void {
-    $client = new OauthClient;
+    $client = new OauthClient();
 
     expect($client->getConnectionName())->toBe('user');
 });
 
 test('oauth client has guard_name api', function (): void {
-    $client = new OauthClient;
+    $client = new OauthClient();
 
     expect($client->guard_name)->toBe('api');
 });
