@@ -6,13 +6,12 @@ namespace Modules\User\Filament\Resources\ProfileResource\Schemas;
 
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Component as \\Filament\\Forms\\Components\\Component;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class ProfileForm extends XotBaseResourceForm
 {
     /**
-     * @return array<int|string, \\Filament\\Forms\\Components\\Component>
+     * @return array<int|string, \Filament\Forms\Components\Component>
      */
     public static function getFormSchema(): array
     {

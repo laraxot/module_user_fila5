@@ -6,13 +6,12 @@ namespace Modules\User\Filament\Resources\TeamInvitationResource\Schemas;
 
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Component as \\Filament\\Forms\\Components\\Component;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class TeamInvitationForm extends XotBaseResourceForm
 {
     /**
-     * @return array<int|string, \\Filament\\Forms\\Components\\Component>
+     * @return array<int|string, \Filament\Forms\Components\Component>
      */
     public static function getFormSchema(): array
     {

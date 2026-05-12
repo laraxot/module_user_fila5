@@ -14,6 +14,9 @@ class UsersTable extends XotBaseResourceTable
      */
     public static function getTableColumns(): array
     {
+    /**
+     * @return array<int\|string, \Filament\Tables\Columns\Column>
+     */
         return [
             'name' => TextColumn::make('name')->searchable()->sortable(),
             'email' => TextColumn::make('email')->searchable()->sortable(),

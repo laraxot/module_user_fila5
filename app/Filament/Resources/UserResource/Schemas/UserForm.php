@@ -8,7 +8,6 @@ use Carbon\Carbon;
 use Carbon\CarbonInterface;
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Component as \\Filament\\Forms\\Components\\Component;
 use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
@@ -20,7 +19,7 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 class UserForm extends XotBaseResourceForm
 {
     /**
-     * @return array<int|string, \\Filament\\Forms\\Components\\Component>
+     * @return array<int|string, \Filament\Forms\Components\Component>
      */
     public static function getFormSchema(): array
     {
