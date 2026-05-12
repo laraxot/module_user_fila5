@@ -39,6 +39,7 @@ Modules\User\Models\Tenant
 
 ## Collegamenti
 
+- [Spatie Permission Teams Laravel 13](./spatie-permission-teams-laravel-13.md)
 - [Documentazione Root](../../../docs/USER_MODULE.md)
 - [Regole Trait](./traits.md)
 - [Filament Resources](./filament/)
@@ -70,7 +71,7 @@ Rule: never commit files with conflict markers. Fix immediately when found.
 ## Requisiti
 
 - PHP 8.3+
-- Laravel 11/12
+- Laravel 12/13
 - Spatie Laravel Permission
 - Filament v5
 

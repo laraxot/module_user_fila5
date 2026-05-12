@@ -428,7 +428,15 @@ trait HasTeams
             'current_team_id' => $team->id,
         ]);
 
-        return $this->save();
+        if (! $this->save()) {
+            return false;
+        }
+
+        \setPermissionsTeamId($team);
+        $this->unsetRelation('roles');
+        $this->unsetRelation('permissions');
+
+        return true;
     }
 
     /**
