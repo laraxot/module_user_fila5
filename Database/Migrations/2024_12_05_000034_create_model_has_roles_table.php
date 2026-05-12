@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use Illuminate\Database\Schema\Blueprint;
 // ---- models ---
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -8,8 +10,7 @@ use Modules\Xot\Datas\XotData;
 /*
  * Class CreateModelHasRolesTable.
  */
-return new class extends XotBaseMigration
-{
+return new class extends XotBaseMigration {
     public function up()
     {
         // -- CREATE --
@@ -27,10 +28,10 @@ return new class extends XotBaseMigration
             if (! $this->hasColumn('team_id')) {
                 $table->foreignIdFor($team_class, 'team_id')->nullable();
             }
-            if ($this->getColumnType('model_id') === 'uuid') {
+            if ('uuid' === $this->getColumnType('model_id')) {
                 $table->string('model_id', 36)->index()->change();
             }
-            if ($this->getColumnType('role_id') === 'uuid') {
+            if ('uuid' === $this->getColumnType('role_id')) {
                 $table->integer('role_id')->index()->change();
             }
             $this->updateTimestamps($table);

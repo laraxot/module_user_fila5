@@ -24,8 +24,7 @@ describe('User quick wins coverage', function (): void {
     });
 
     it('resolves filament shield facade accessor', function (): void {
-        $service = new class
-        {
+        $service = new class {
             public function getWidgets(): array
             {
                 return ['w1', 'w2'];
@@ -62,7 +61,7 @@ describe('User quick wins coverage', function (): void {
             'name' => 'Quick Win',
         ];
 
-        $createdUser = new User;
+        $createdUser = new User();
         $createdUser->email = $payload['email'];
         $createdUser->name = $payload['name'];
 
