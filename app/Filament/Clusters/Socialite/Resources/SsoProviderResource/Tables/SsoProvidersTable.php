@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\base_quaeris_fila5\var\www\_bases\base_quaeris_fila5\laravel\Modules\User\app\Filament\Clusters\Socialite\Resources\SsoProviderResource\Tables;
+namespace Modules\User\app\Filament\Clusters\Socialite\Resources\SsoProviderResource\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
