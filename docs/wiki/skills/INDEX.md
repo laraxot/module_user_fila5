@@ -1,17 +1,26 @@
-# User Module - skills Index
+---
+title: "Skills Index"
+type: "index"
+tags: [skills, user, translations, filament]
+module: "User"
+updated: 2026-05-12
+---
 
-## Purpose
-Index for User module skills.
+# Skills — User Module Wiki
 
-## On-Demand Loading
+> Skill operative del modulo User. Load on-demand.
+
+## Available Skills
+
+- [filament-translation-audit](./filament-translation-audit.md) — audit rapido di form/page/widget Filament per `->label()`, chiavi traduzione e ownership delle stringhe
+- [filament-page-creation](../../../../Xot/docs/wiki/skills/filament-page-creation.md) — skill condivisa Xot per creare page Filament coerenti con XotBase
+
+## Usage
 
 ```bash
-qmd search "User skills" --limit 5
+qmd search "User module skill filament translation" --limit 5
 ```
 
-## See Also
-- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
-- [Root Wiki](../../../docs/wiki/)
-
 ---
-*Updated: 2026-05-11*
+
+**Upstream:** [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
