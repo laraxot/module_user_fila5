@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Modules\User\Models\Policies;
 
 use Illuminate\Auth\Access\Response;
+use Modules\User\Models\Permission;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Models\Policies\XotBasePolicy;
-use Modules\User\Models\Permission;
 
 abstract class UserBasePolicy extends XotBasePolicy
 {
