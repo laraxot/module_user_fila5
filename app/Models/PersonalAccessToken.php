@@ -11,11 +11,11 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 /**
  * Modules\User\Models\PersonalAccessToken.
  *
- * @property int         $id
- * @property string      $tokenable_type
- * @property int         $tokenable_id
- * @property string      $name
- * @property string      $token
+ * @property int $id
+ * @property string $tokenable_type
+ * @property int $tokenable_id
+ * @property string $name
+ * @property string $token
  * @property string|null $abilities
  * @property Carbon|null $last_used_at
  * @property Carbon|null $expires_at

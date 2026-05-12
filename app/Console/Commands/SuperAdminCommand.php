@@ -14,6 +14,8 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
 
+use function Laravel\Prompts\text;
+
 class SuperAdminCommand extends Command
 {
     /**

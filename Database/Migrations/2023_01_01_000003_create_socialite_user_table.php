@@ -39,7 +39,7 @@ return new class extends XotBaseMigration {
             // if (! $this->hasColumn('email')) {
             //    $table->string('email')->nullable();
             // }
-            if ('varchar' === $this->getColumnType('token')) {
+            if ($this->getColumnType('token') === 'varchar') {
                 $table->text('token')->nullable()->change();
             }
             $this->updateTimestamps($table);

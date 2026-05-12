@@ -31,6 +31,5 @@ class UserRegistered
         public array $formData,
         public ?string $ipAddress = null,
         public ?string $userAgent = null,
-    ) {
-    }
+    ) {}
 }

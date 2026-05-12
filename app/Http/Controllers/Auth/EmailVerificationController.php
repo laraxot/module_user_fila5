@@ -38,11 +38,11 @@ class EmailVerificationController extends Controller
         }
 
         if (! hash_equals($id, (string) Auth::id())) {
-            throw new AuthorizationException();
+            throw new AuthorizationException;
         }
 
         if (! hash_equals($hash, sha1($user->getEmailForVerification()))) {
-            throw new AuthorizationException();
+            throw new AuthorizationException;
         }
 
         if ($user->hasVerifiedEmail()) {

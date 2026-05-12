@@ -14,6 +14,9 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Contracts\RepositoryInterface;
 
+use function Laravel\Prompts\multiselect;
+use function Laravel\Prompts\text;
+
 class AssignModuleCommand extends Command
 {
     /**

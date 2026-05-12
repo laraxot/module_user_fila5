@@ -27,7 +27,7 @@ return new class extends XotBaseMigration {
             //    $table->string('email')->nullable();
             // }
             // $this->updateUser($table);
-            if ('uuid' === $this->getColumnType('id')) {
+            if ($this->getColumnType('id') === 'uuid') {
                 $table->dropColumn('id');
             }
             if (! $this->hasColumn('id')) {

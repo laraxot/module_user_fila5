@@ -18,8 +18,7 @@ class CheckOtpExpiredRule implements ValidationRule
 
     public function __construct(
         private User $user,
-    ) {
-    }
+    ) {}
 
     /**
      * Run the validation rule.

@@ -19,8 +19,7 @@ class RevokeTokenAction
 
     public function __construct(
         private readonly OauthToken $oauthTokenModel,
-    ) {
-    }
+    ) {}
 
     /**
      * Revoca un token OAuth2.

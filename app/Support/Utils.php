@@ -18,6 +18,9 @@ use Spatie\Permission\Models\Role;
 use Spatie\Permission\Traits\HasRoles;
 use Webmozart\Assert\Assert;
 
+use function Safe\class_implements;
+use function Safe\class_uses;
+
 /**
  * ---.
  */
@@ -38,7 +41,7 @@ class Utils
             '/',
         ));
 
-        $filesystem = new Filesystem();
+        $filesystem = new Filesystem;
 
         return $filesystem->exists($roleResourcePath);
     }

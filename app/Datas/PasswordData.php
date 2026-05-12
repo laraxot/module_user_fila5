@@ -34,8 +34,7 @@ class PasswordData extends Data
         public int $compromisedThreshold = 0,
         public ?string $failMessage = null,
         private ?string $field_name = null,
-    ) {
-    }
+    ) {}
 
     /**
      * Crea un'istanza della classe PasswordData.

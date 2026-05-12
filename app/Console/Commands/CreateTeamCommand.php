@@ -12,6 +12,8 @@ use function Laravel\Prompts\text;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
+use function Laravel\Prompts\text;
+
 class CreateTeamCommand extends Command
 {
     /**

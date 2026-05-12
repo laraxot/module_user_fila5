@@ -13,6 +13,9 @@ use function Laravel\Prompts\text;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 
+use function Laravel\Prompts\multiselect;
+use function Laravel\Prompts\text;
+
 class AssignTenantCommand extends Command
 {
     /**

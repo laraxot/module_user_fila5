@@ -26,8 +26,7 @@ class SendOtpByUserAction
         private readonly PasswordData $passwordData,
         private readonly Str $stringHelper,
         private readonly Hasher $hasher,
-    ) {
-    }
+    ) {}
 
     /**
      * Execute the action: Generate and send an OTP to the specified user.
