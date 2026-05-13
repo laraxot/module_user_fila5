@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\BaseUserResource\Schemas;
 
-use Filament\Infolists\Components\Component;
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;

@@ -57,12 +57,12 @@ class RegisterTenant extends BaseRegisterTenant
         $schema = $resourceClass::getFormSchema();
         Assert::isArray($schema);
 
-        /** @var array<int|string, Component> */
+        /* @var array<int|string, Component> */
         return $schema;
     }
 
     /**
-     * @param  array<string, string|int|bool|null>  $data
+     * @param array<string, string|int|bool|null> $data
      */
     protected function handleRegistration(array $data): Model
     {
@@ -80,7 +80,7 @@ class RegisterTenant extends BaseRegisterTenant
      */
     private function resolveResourceClass(): string
     {
-        if ($this->resourceClass !== null) {
+        if (null !== $this->resourceClass) {
             return $this->resourceClass;
         }
 

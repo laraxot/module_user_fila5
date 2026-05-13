@@ -26,7 +26,7 @@ beforeEach(function (): void {
     }
     Filament::setCurrentPanel($panel);
 
-    $this->createUserPage = new CreateUser;
+    $this->createUserPage = new CreateUser();
 });
 
 test('create user page has correct resource', function (): void {
