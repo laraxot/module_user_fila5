@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use Illuminate\Database\Schema\Blueprint;
 // ---- models ---
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -10,7 +12,7 @@ use Modules\Xot\Datas\XotData;
  */
 return new class extends XotBaseMigration
 {
-    public function up()
+    public function up(): void
     {
         // -- CREATE --
         $this->tableCreate(static function (Blueprint $table) {
