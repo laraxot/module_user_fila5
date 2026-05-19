@@ -6,7 +6,6 @@ namespace Modules\User\Filament\Resources\BaseUserResource\Schemas;
 
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
-use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class BaseUserInfolist extends XotBaseResourceInfolist
