@@ -38,7 +38,7 @@ class CreateClientAction
         bool $password = false,
         ?string $provider = null,
     ): OauthClient {
-        $client = new OauthClient;
+        $client = new OauthClient();
         $client->name = $name;
         $client->redirect = $redirect;
         $client->personal_access_client = $personalAccess;

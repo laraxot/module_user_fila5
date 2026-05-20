@@ -337,7 +337,7 @@ trait HasTeams
 
         // Permissions from Role
         $role = $this->teamRole($team);
-        if ($role !== null && $role->permissions) {
+        if (null !== $role && $role->permissions) {
             /** @var \Illuminate\Database\Eloquent\Collection<int, Permission> $permissionsCollection */
             $permissionsCollection = $role->permissions;
             /** @var array<string> $rolePermissionNames */

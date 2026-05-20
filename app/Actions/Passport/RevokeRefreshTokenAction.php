@@ -16,7 +16,8 @@ class RevokeRefreshTokenAction
 
     public function __construct(
         private readonly OauthRefreshToken $refreshTokenModel,
-    ) {}
+    ) {
+    }
 
     /**
      * Revoca un refresh token OAuth2.

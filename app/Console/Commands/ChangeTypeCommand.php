@@ -16,9 +16,6 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
-use function Laravel\Prompts\select;
-use function Laravel\Prompts\text;
-
 /**
  * Command to change user type based on project configuration.
  *

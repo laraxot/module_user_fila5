@@ -18,7 +18,8 @@ class RegenerateClientSecretAction
     public function __construct(
         private readonly OauthClient $oauthClientModel,
         private readonly Str $stringHelper,
-    ) {}
+    ) {
+    }
 
     /**
      * Rigenera il secret di un client OAuth2.
