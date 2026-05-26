@@ -1,167 +1,168 @@
-<?php
-
-declare(strict_types=1);
-
-return [
-    'navigation' => [
-        'name' => 'Utente',
-        'plural' => 'Utenti',
-        'group' => [
-            'name' => 'Admin',
-        ],
-    ],
-    'fields' => [
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'name' => [
-            'label' => 'Nome',
-        ],
-        'email' => [
-            'label' => 'Email',
-        ],
-        'created_at' => [
-            'label' => 'Data di Creazione',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-        ],
-        'role' => [
-            'name' => [
-                'label' => 'Ruolo',
-            ],
-        ],
-        'active' => 'Attivo',
-        'id' => [
-            'label' => 'ID',
-        ],
-        'password' => 'Password',
-        'password_confirmation' => 'Conferma Password',
-        'email_verified_at' => [
-            'label' => 'Email Verificata',
-        ],
-        'teams' => [
-            'name' => [
-                'label' => 'Nome Team',
-            ],
-        ],
-        'roles' => [
-            'name' => [
-                'label' => 'Nome Ruolo',
-            ],
-        ],
-        'password_expires_at' => [
-            'label' => 'Scadenza Password',
-        ],
-        'verified' => [
-            'label' => 'Verificato',
-        ],
-        'unverified' => [
-            'label' => 'Non Verificato',
-        ],
-        'deactivate' => [
-            'label' => 'deactivate',
-        ],
-        'changePassword' => [
-            'label' => 'changePassword',
-        ],
-    ],
-    'filters' => [
-        'active_users' => 'Utenti Attivi',
-        'creation_date' => 'Data di Creazione',
-        'date_from' => 'Dal',
-        'date_to' => 'Al',
-        'verified' => 'Utenti Verificati',
-        'unverified' => 'Utenti Non Verificati',
-    ],
-    'messages' => [
-        'no_records' => 'Nessun utente trovato',
-        'loading' => 'Caricamento utenti...',
-        'search' => 'Cerca utenti...',
-    ],
-    'actions' => [
-        'toggle_layout' => 'Cambia Layout',
-        'create' => [
-            'label' => 'Crea Utente',
-        ],
-        'delete' => 'Elimina Utente',
-        'associate' => 'Associa Utente',
-        'bulk_delete' => 'Elimina Selezionati',
-        'bulk_detach' => 'Scollega Selezionati',
-        'attach_user' => 'Collega Utente',
-        'associate_user' => 'Associa Utente',
-        'user_actions' => 'Azioni Utente',
-        'view' => 'Visualizza',
-        'edit' => 'Modifica',
-        'detach' => 'Scollega',
-        'row_actions' => 'Azioni',
-        'delete_selected' => 'Elimina Selezionati',
-        'confirm_detach' => 'Sei sicuro di voler scollegare questo utente?',
-        'confirm_delete' => 'Sei sicuro di voler eliminare gli utenti selezionati?',
-        'success_attached' => 'Utente collegato con successo',
-        'success_detached' => 'Utente scollegato con successo',
-        'success_deleted' => 'Utenti eliminati con successo',
-        'import' => [
-            'fields' => [
-                'import_file' => 'Seleziona un file XLS o CSV da caricare',
-            ],
-        ],
-        'export' => [
-            'filename_prefix' => 'Aree al',
-            'columns' => [
-                'name' => 'Nome Area',
-                'parent_name' => 'Nome Area Superiore',
-            ],
-        ],
-        'change_password' => 'Cambia Password',
-    ],
-    'modals' => [
-        'create' => [
-            'heading' => 'Crea Utente',
-            'description' => 'Crea un nuovo utente',
-            'actions' => [
-                'submit' => 'Crea',
-                'cancel' => 'Annulla',
-            ],
-        ],
-        'edit' => [
-            'heading' => 'Modifica Utente',
-            'description' => 'Modifica le informazioni dellâ€™utente',
-            'actions' => [
-                'submit' => 'Salva Modifiche',
-                'cancel' => 'Annulla',
-            ],
-        ],
-        'delete' => [
-            'heading' => 'Elimina Utente',
-            'description' => 'Sei sicuro di voler eliminare questo utente?',
-            'actions' => [
-                'submit' => 'Elimina',
-                'cancel' => 'Annulla',
-            ],
-        ],
-        'associate' => [
-            'heading' => 'Associa Utente',
-            'description' => 'Seleziona un utente da associare',
-            'actions' => [
-                'submit' => 'Associa',
-                'cancel' => 'Annulla',
-            ],
-        ],
-        'detach' => [
-            'heading' => 'Scollega Utente',
-            'description' => 'Sei sicuro di voler scollegare questo utente?',
-            'actions' => [
-                'submit' => 'Scollega',
-                'cancel' => 'Annulla',
-            ],
-        ],
-        'bulk_delete' => [
-            'heading' => 'Elimina Utenti Selezionati',
-            'description' => 'Sei sicuro di voler eliminare gli utenti selezionati?',
-            'actions' => [
-                'submit' => 'Elimina Selezionati',
-                'cancel' => 'Annulla',
-            ],
-        ],
-    ],
-];
+|<|?|p|h|p|
+|
+|d|e|c|l|a|r|e|(|s|t|r|i|c|t|_|t|y|p|e|s|=|1|)|;|
+|
+|r|e|t|u|r|n| |[|
+| | | | |'|n|a|v|i|g|a|t|i|o|n|'| |=|>| |[|
+| | | | | | | | |'|n|a|m|e|'| |=|>| |'|U|t|e|n|t|e|'|,|
+| | | | | | | | |'|p|l|u|r|a|l|'| |=|>| |'|U|t|e|n|t|i|'|,|
+| | | | | | | | |'|g|r|o|u|p|'| |=|>| |[|
+| | | | | | | | | | | | |'|n|a|m|e|'| |=|>| |'|A|d|m|i|n|'|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |'|f|i|e|l|d|s|'| |=|>| |[|
+| | | | | | | | |'|f|i|r|s|t|_|n|a|m|e|'| |=|>| |'|N|o|m|e|'|,|
+| | | | | | | | |'|l|a|s|t|_|n|a|m|e|'| |=|>| |'|C|o|g|n|o|m|e|'|,|
+| | | | | | | | |'|n|a|m|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|N|o|m|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|e|m|a|i|l|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|E|m|a|i|l|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|c|r|e|a|t|e|d|_|a|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|D|a|t|a| |d|i| |C|r|e|a|z|i|o|n|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|u|p|d|a|t|e|d|_|a|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|U|l|t|i|m|a| |M|o|d|i|f|i|c|a|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|r|o|l|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|n|a|m|e|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|R|u|o|l|o|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|a|c|t|i|v|e|'| |=|>| |'|A|t|t|i|v|o|'|,|
+| | | | | | | | |'|i|d|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|I|D|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|p|a|s|s|w|o|r|d|'| |=|>| |'|P|a|s|s|w|o|r|d|'|,|
+| | | | | | | | |'|p|a|s|s|w|o|r|d|_|c|o|n|f|i|r|m|a|t|i|o|n|'| |=|>| |'|C|o|n|f|e|r|m|a| |P|a|s|s|w|o|r|d|'|,|
+| | | | | | | | |'|e|m|a|i|l|_|v|e|r|i|f|i|e|d|_|a|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|E|m|a|i|l| |V|e|r|i|f|i|c|a|t|a|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|t|e|a|m|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|n|a|m|e|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|N|o|m|e| |T|e|a|m|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|r|o|l|e|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|n|a|m|e|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|N|o|m|e| |R|u|o|l|o|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|p|a|s|s|w|o|r|d|_|e|x|p|i|r|e|s|_|a|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|S|c|a|d|e|n|z|a| |P|a|s|s|w|o|r|d|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|v|e|r|i|f|i|e|d|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|V|e|r|i|f|i|c|a|t|o|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|u|n|v|e|r|i|f|i|e|d|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|N|o|n| |V|e|r|i|f|i|c|a|t|o|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|d|e|a|c|t|i|v|a|t|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|d|e|a|c|t|i|v|a|t|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|c|h|a|n|g|e|P|a|s|s|w|o|r|d|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|c|h|a|n|g|e|P|a|s|s|w|o|r|d|'|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |'|f|i|l|t|e|r|s|'| |=|>| |[|
+| | | | | | | | |'|a|c|t|i|v|e|_|u|s|e|r|s|'| |=|>| |'|U|t|e|n|t|i| |A|t|t|i|v|i|'|,|
+| | | | | | | | |'|c|r|e|a|t|i|o|n|_|d|a|t|e|'| |=|>| |'|D|a|t|a| |d|i| |C|r|e|a|z|i|o|n|e|'|,|
+| | | | | | | | |'|d|a|t|e|_|f|r|o|m|'| |=|>| |'|D|a|l|'|,|
+| | | | | | | | |'|d|a|t|e|_|t|o|'| |=|>| |'|A|l|'|,|
+| | | | | | | | |'|v|e|r|i|f|i|e|d|'| |=|>| |'|U|t|e|n|t|i| |V|e|r|i|f|i|c|a|t|i|'|,|
+| | | | | | | | |'|u|n|v|e|r|i|f|i|e|d|'| |=|>| |'|U|t|e|n|t|i| |N|o|n| |V|e|r|i|f|i|c|a|t|i|'|,|
+| | | | |]|,|
+| | | | |'|m|e|s|s|a|g|e|s|'| |=|>| |[|
+| | | | | | | | |'|n|o|_|r|e|c|o|r|d|s|'| |=|>| |'|N|e|s|s|u|n| |u|t|e|n|t|e| |t|r|o|v|a|t|o|'|,|
+| | | | | | | | |'|l|o|a|d|i|n|g|'| |=|>| |'|C|a|r|i|c|a|m|e|n|t|o| |u|t|e|n|t|i|.|.|.|'|,|
+| | | | | | | | |'|s|e|a|r|c|h|'| |=|>| |'|C|e|r|c|a| |u|t|e|n|t|i|.|.|.|'|,|
+| | | | |]|,|
+| | | | |'|a|c|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | |'|t|o|g|g|l|e|_|l|a|y|o|u|t|'| |=|>| |'|C|a|m|b|i|a| |L|a|y|o|u|t|'|,|
+| | | | | | | | |'|c|r|e|a|t|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|C|r|e|a| |U|t|e|n|t|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|d|e|l|e|t|e|'| |=|>| |'|E|l|i|m|i|n|a| |U|t|e|n|t|e|'|,|
+| | | | | | | | |'|a|s|s|o|c|i|a|t|e|'| |=|>| |'|A|s|s|o|c|i|a| |U|t|e|n|t|e|'|,|
+| | | | | | | | |'|b|u|l|k|_|d|e|l|e|t|e|'| |=|>| |'|E|l|i|m|i|n|a| |S|e|l|e|z|i|o|n|a|t|i|'|,|
+| | | | | | | | |'|b|u|l|k|_|d|e|t|a|c|h|'| |=|>| |'|S|c|o|l|l|e|g|a| |S|e|l|e|z|i|o|n|a|t|i|'|,|
+| | | | | | | | |'|a|t|t|a|c|h|_|u|s|e|r|'| |=|>| |'|C|o|l|l|e|g|a| |U|t|e|n|t|e|'|,|
+| | | | | | | | |'|a|s|s|o|c|i|a|t|e|_|u|s|e|r|'| |=|>| |'|A|s|s|o|c|i|a| |U|t|e|n|t|e|'|,|
+| | | | | | | | |'|u|s|e|r|_|a|c|t|i|o|n|s|'| |=|>| |'|A|z|i|o|n|i| |U|t|e|n|t|e|'|,|
+| | | | | | | | |'|v|i|e|w|'| |=|>| |'|V|i|s|u|a|l|i|z|z|a|'|,|
+| | | | | | | | |'|e|d|i|t|'| |=|>| |'|M|o|d|i|f|i|c|a|'|,|
+| | | | | | | | |'|d|e|t|a|c|h|'| |=|>| |'|S|c|o|l|l|e|g|a|'|,|
+| | | | | | | | |'|r|o|w|_|a|c|t|i|o|n|s|'| |=|>| |'|A|z|i|o|n|i|'|,|
+| | | | | | | | |'|d|e|l|e|t|e|_|s|e|l|e|c|t|e|d|'| |=|>| |'|E|l|i|m|i|n|a| |S|e|l|e|z|i|o|n|a|t|i|'|,|
+| | | | | | | | |'|c|o|n|f|i|r|m|_|d|e|t|a|c|h|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |s|c|o|l|l|e|g|a|r|e| |q|u|e|s|t|o| |u|t|e|n|t|e|?|'|,|
+| | | | | | | | |'|c|o|n|f|i|r|m|_|d|e|l|e|t|e|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |e|l|i|m|i|n|a|r|e| |g|l|i| |u|t|e|n|t|i| |s|e|l|e|z|i|o|n|a|t|i|?|'|,|
+| | | | | | | | |'|s|u|c|c|e|s|s|_|a|t|t|a|c|h|e|d|'| |=|>| |'|U|t|e|n|t|e| |c|o|l|l|e|g|a|t|o| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | |'|s|u|c|c|e|s|s|_|d|e|t|a|c|h|e|d|'| |=|>| |'|U|t|e|n|t|e| |s|c|o|l|l|e|g|a|t|o| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | |'|s|u|c|c|e|s|s|_|d|e|l|e|t|e|d|'| |=|>| |'|U|t|e|n|t|i| |e|l|i|m|i|n|a|t|i| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | |'|i|m|p|o|r|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|f|i|e|l|d|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|i|m|p|o|r|t|_|f|i|l|e|'| |=|>| |'|S|e|l|e|z|i|o|n|a| |u|n| |f|i|l|e| |X|L|S| |o| |C|S|V| |d|a| |c|a|r|i|c|a|r|e|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|e|x|p|o|r|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|f|i|l|e|n|a|m|e|_|p|r|e|f|i|x|'| |=|>| |'|A|r|e|e| |a|l|'|,|
+| | | | | | | | | | | | |'|c|o|l|u|m|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|n|a|m|e|'| |=|>| |'|N|o|m|e| |A|r|e|a|'|,|
+| | | | | | | | | | | | | | | | |'|p|a|r|e|n|t|_|n|a|m|e|'| |=|>| |'|N|o|m|e| |A|r|e|a| |S|u|p|e|r|i|o|r|e|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|c|h|a|n|g|e|_|p|a|s|s|w|o|r|d|'| |=|>| |'|C|a|m|b|i|a| |P|a|s|s|w|o|r|d|'|,|
+| | | | |]|,|
+| | | | |'|m|o|d|a|l|s|'| |=|>| |[|
+| | | | | | | | |'|c|r|e|a|t|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|C|r|e|a| |U|t|e|n|t|e|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|C|r|e|a| |u|n| |n|u|o|v|o| |u|t|e|n|t|e|'|,|
+| | | | | | | | | | | | |'|a|c|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|s|u|b|m|i|t|'| |=|>| |'|C|r|e|a|'|,|
+| | | | | | | | | | | | | | | | |'|c|a|n|c|e|l|'| |=|>| |'|A|n|n|u|l|l|a|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|e|d|i|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|M|o|d|i|f|i|c|a| |U|t|e|n|t|e|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|M|o|d|i|f|i|c|a| |l|e| |i|n|f|o|r|m|a|z|i|o|n|i| |d|e|l|l|â|€|™|u|t|e|n|t|e|'|,|
+| | | | | | | | | | | | |'|a|c|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|s|u|b|m|i|t|'| |=|>| |'|S|a|l|v|a| |M|o|d|i|f|i|c|h|e|'|,|
+| | | | | | | | | | | | | | | | |'|c|a|n|c|e|l|'| |=|>| |'|A|n|n|u|l|l|a|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|d|e|l|e|t|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|E|l|i|m|i|n|a| |U|t|e|n|t|e|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |e|l|i|m|i|n|a|r|e| |q|u|e|s|t|o| |u|t|e|n|t|e|?|'|,|
+| | | | | | | | | | | | |'|a|c|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|s|u|b|m|i|t|'| |=|>| |'|E|l|i|m|i|n|a|'|,|
+| | | | | | | | | | | | | | | | |'|c|a|n|c|e|l|'| |=|>| |'|A|n|n|u|l|l|a|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|a|s|s|o|c|i|a|t|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|A|s|s|o|c|i|a| |U|t|e|n|t|e|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|S|e|l|e|z|i|o|n|a| |u|n| |u|t|e|n|t|e| |d|a| |a|s|s|o|c|i|a|r|e|'|,|
+| | | | | | | | | | | | |'|a|c|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|s|u|b|m|i|t|'| |=|>| |'|A|s|s|o|c|i|a|'|,|
+| | | | | | | | | | | | | | | | |'|c|a|n|c|e|l|'| |=|>| |'|A|n|n|u|l|l|a|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|d|e|t|a|c|h|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|S|c|o|l|l|e|g|a| |U|t|e|n|t|e|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |s|c|o|l|l|e|g|a|r|e| |q|u|e|s|t|o| |u|t|e|n|t|e|?|'|,|
+| | | | | | | | | | | | |'|a|c|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|s|u|b|m|i|t|'| |=|>| |'|S|c|o|l|l|e|g|a|'|,|
+| | | | | | | | | | | | | | | | |'|c|a|n|c|e|l|'| |=|>| |'|A|n|n|u|l|l|a|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|b|u|l|k|_|d|e|l|e|t|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|E|l|i|m|i|n|a| |U|t|e|n|t|i| |S|e|l|e|z|i|o|n|a|t|i|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |e|l|i|m|i|n|a|r|e| |g|l|i| |u|t|e|n|t|i| |s|e|l|e|z|i|o|n|a|t|i|?|'|,|
+| | | | | | | | | | | | |'|a|c|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|s|u|b|m|i|t|'| |=|>| |'|E|l|i|m|i|n|a| |S|e|l|e|z|i|o|n|a|t|i|'|,|
+| | | | | | | | | | | | | | | | |'|c|a|n|c|e|l|'| |=|>| |'|A|n|n|u|l|l|a|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+|]|;|
+|

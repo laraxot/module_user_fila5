@@ -1,80 +1,81 @@
-<?php
-
-declare(strict_types=1);
-
-return [
-    'navigation' => [
-        'name' => 'Password',
-        'plural' => 'Passwords',
-        'group' => [
-            'name' => 'Admin',
-        ],
-    ],
-    'fields' => [
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'otp_expiration_minutes' => [
-            'help' => 'Durata in minuti della validitÃ  della password temporanea',
-        ],
-        'otp_length' => [
-            'help' => 'Lunghezza del codice OTP',
-        ],
-        'expires_in' => [
-            'help' => 'Il numero di giorni prima che la password scadrÃ ',
-        ],
-        'min' => [
-            'help' => 'La dimensione minima della password',
-        ],
-        'mixedCase' => [
-            'help' => 'la password richiede almeno una lettera maiuscola e una minuscola',
-        ],
-        'letters' => [
-            'help' => 'la password richiede almeno una lettera',
-        ],
-        'numbers' => [
-            'help' => 'la password richiede almeno un numero',
-        ],
-        'symbols' => [
-            'help' => 'la password richiede almeno un simbolo',
-            'label' => [
-                'help' => 'la password richiede almeno un simbolo',
-            ],
-        ],
-        'uncompromised' => [
-            'help' => 'Se la password non deve essere stata compromessa in data leaks',
-            'label' => [
-                'help' => 'Se la password non deve essere stata compromessa in data leaks',
-            ],
-        ],
-        'compromisedThreshold' => [
-            'help' => 'Il numero di volte che una password puÃ² apparire in data leaks prima di essere considerata compromessa',
-            'label' => [
-                'help' => 'Il numero di volte che una password puÃ² apparire in data leaks prima di essere considerata compromessa',
-            ],
-        ],
-        'new_password' => [
-            'label' => 'new_password',
-            'fields' => [
-                'label' => 'new_password',
-            ],
-        ],
-    ],
-    'actions' => [
-        'import' => [
-            'fields' => [
-                'import_file' => 'Seleziona un file XLS o CSV da caricare',
-            ],
-        ],
-        'export' => [
-            'filename_prefix' => 'Aree al',
-            'columns' => [
-                'name' => 'Nome area',
-                'parent_name' => 'Nome area livello superiore',
-            ],
-        ],
-        'change_password' => 'Cambio password',
-        'updateDataAction' => [
-            'label' => 'updateDataAction',
-        ],
-    ],
-];
+|<|?|p|h|p|
+|
+|d|e|c|l|a|r|e|(|s|t|r|i|c|t|_|t|y|p|e|s|=|1|)|;|
+|
+|r|e|t|u|r|n| |[|
+| | | | |'|n|a|v|i|g|a|t|i|o|n|'| |=|>| |[|
+| | | | | | | | |'|n|a|m|e|'| |=|>| |'|P|a|s|s|w|o|r|d|'|,|
+| | | | | | | | |'|p|l|u|r|a|l|'| |=|>| |'|P|a|s|s|w|o|r|d|s|'|,|
+| | | | | | | | |'|g|r|o|u|p|'| |=|>| |[|
+| | | | | | | | | | | | |'|n|a|m|e|'| |=|>| |'|A|d|m|i|n|'|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |'|f|i|e|l|d|s|'| |=|>| |[|
+| | | | | | | | |'|f|i|r|s|t|_|n|a|m|e|'| |=|>| |'|N|o|m|e|'|,|
+| | | | | | | | |'|l|a|s|t|_|n|a|m|e|'| |=|>| |'|C|o|g|n|o|m|e|'|,|
+| | | | | | | | |'|o|t|p|_|e|x|p|i|r|a|t|i|o|n|_|m|i|n|u|t|e|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|D|u|r|a|t|a| |i|n| |m|i|n|u|t|i| |d|e|l|l|a| |v|a|l|i|d|i|t|Ã| | |d|e|l|l|a| |p|a|s|s|w|o|r|d| |t|e|m|p|o|r|a|n|e|a|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|o|t|p|_|l|e|n|g|t|h|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|L|u|n|g|h|e|z|z|a| |d|e|l| |c|o|d|i|c|e| |O|T|P|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|e|x|p|i|r|e|s|_|i|n|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|I|l| |n|u|m|e|r|o| |d|i| |g|i|o|r|n|i| |p|r|i|m|a| |c|h|e| |l|a| |p|a|s|s|w|o|r|d| |s|c|a|d|r|Ã| |'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|m|i|n|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|L|a| |d|i|m|e|n|s|i|o|n|e| |m|i|n|i|m|a| |d|e|l|l|a| |p|a|s|s|w|o|r|d|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|m|i|x|e|d|C|a|s|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|l|a| |p|a|s|s|w|o|r|d| |r|i|c|h|i|e|d|e| |a|l|m|e|n|o| |u|n|a| |l|e|t|t|e|r|a| |m|a|i|u|s|c|o|l|a| |e| |u|n|a| |m|i|n|u|s|c|o|l|a|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|l|e|t|t|e|r|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|l|a| |p|a|s|s|w|o|r|d| |r|i|c|h|i|e|d|e| |a|l|m|e|n|o| |u|n|a| |l|e|t|t|e|r|a|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|n|u|m|b|e|r|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|l|a| |p|a|s|s|w|o|r|d| |r|i|c|h|i|e|d|e| |a|l|m|e|n|o| |u|n| |n|u|m|e|r|o|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|s|y|m|b|o|l|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|l|a| |p|a|s|s|w|o|r|d| |r|i|c|h|i|e|d|e| |a|l|m|e|n|o| |u|n| |s|i|m|b|o|l|o|'|,|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|l|a| |p|a|s|s|w|o|r|d| |r|i|c|h|i|e|d|e| |a|l|m|e|n|o| |u|n| |s|i|m|b|o|l|o|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|u|n|c|o|m|p|r|o|m|i|s|e|d|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|S|e| |l|a| |p|a|s|s|w|o|r|d| |n|o|n| |d|e|v|e| |e|s|s|e|r|e| |s|t|a|t|a| |c|o|m|p|r|o|m|e|s|s|a| |i|n| |d|a|t|a| |l|e|a|k|s|'|,|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|S|e| |l|a| |p|a|s|s|w|o|r|d| |n|o|n| |d|e|v|e| |e|s|s|e|r|e| |s|t|a|t|a| |c|o|m|p|r|o|m|e|s|s|a| |i|n| |d|a|t|a| |l|e|a|k|s|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|c|o|m|p|r|o|m|i|s|e|d|T|h|r|e|s|h|o|l|d|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|I|l| |n|u|m|e|r|o| |d|i| |v|o|l|t|e| |c|h|e| |u|n|a| |p|a|s|s|w|o|r|d| |p|u|Ã|²| |a|p|p|a|r|i|r|e| |i|n| |d|a|t|a| |l|e|a|k|s| |p|r|i|m|a| |d|i| |e|s|s|e|r|e| |c|o|n|s|i|d|e|r|a|t|a| |c|o|m|p|r|o|m|e|s|s|a|'|,|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|I|l| |n|u|m|e|r|o| |d|i| |v|o|l|t|e| |c|h|e| |u|n|a| |p|a|s|s|w|o|r|d| |p|u|Ã|²| |a|p|p|a|r|i|r|e| |i|n| |d|a|t|a| |l|e|a|k|s| |p|r|i|m|a| |d|i| |e|s|s|e|r|e| |c|o|n|s|i|d|e|r|a|t|a| |c|o|m|p|r|o|m|e|s|s|a|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|n|e|w|_|p|a|s|s|w|o|r|d|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|n|e|w|_|p|a|s|s|w|o|r|d|'|,|
+| | | | | | | | | | | | |'|f|i|e|l|d|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|n|e|w|_|p|a|s|s|w|o|r|d|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |'|a|c|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | |'|i|m|p|o|r|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|f|i|e|l|d|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|i|m|p|o|r|t|_|f|i|l|e|'| |=|>| |'|S|e|l|e|z|i|o|n|a| |u|n| |f|i|l|e| |X|L|S| |o| |C|S|V| |d|a| |c|a|r|i|c|a|r|e|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|e|x|p|o|r|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|f|i|l|e|n|a|m|e|_|p|r|e|f|i|x|'| |=|>| |'|A|r|e|e| |a|l|'|,|
+| | | | | | | | | | | | |'|c|o|l|u|m|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|n|a|m|e|'| |=|>| |'|N|o|m|e| |a|r|e|a|'|,|
+| | | | | | | | | | | | | | | | |'|p|a|r|e|n|t|_|n|a|m|e|'| |=|>| |'|N|o|m|e| |a|r|e|a| |l|i|v|e|l|l|o| |s|u|p|e|r|i|o|r|e|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|c|h|a|n|g|e|_|p|a|s|s|w|o|r|d|'| |=|>| |'|C|a|m|b|i|o| |p|a|s|s|w|o|r|d|'|,|
+| | | | | | | | |'|u|p|d|a|t|e|D|a|t|a|A|c|t|i|o|n|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|u|p|d|a|t|e|D|a|t|a|A|c|t|i|o|n|'|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+|]|;|
+|

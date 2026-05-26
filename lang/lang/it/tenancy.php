@@ -1,15 +1,16 @@
-<?php
-
-declare(strict_types=1);
-
-return [
-    'navigation' => [
-        'register' => 'Registra negozio',
-        'edit' => 'Modifica dati negozio',
-    ],
-    'fields' => [
-        'name' => 'Nome',
-        'phone' => 'Telefono',
-        'email' => 'Email',
-    ],
-];
+|<|?|p|h|p|
+|
+|d|e|c|l|a|r|e|(|s|t|r|i|c|t|_|t|y|p|e|s|=|1|)|;|
+|
+|r|e|t|u|r|n| |[|
+| | | | |'|n|a|v|i|g|a|t|i|o|n|'| |=|>| |[|
+| | | | | | | | |'|r|e|g|i|s|t|e|r|'| |=|>| |'|R|e|g|i|s|t|r|a| |n|e|g|o|z|i|o|'|,|
+| | | | | | | | |'|e|d|i|t|'| |=|>| |'|M|o|d|i|f|i|c|a| |d|a|t|i| |n|e|g|o|z|i|o|'|,|
+| | | | |]|,|
+| | | | |'|f|i|e|l|d|s|'| |=|>| |[|
+| | | | | | | | |'|n|a|m|e|'| |=|>| |'|N|o|m|e|'|,|
+| | | | | | | | |'|p|h|o|n|e|'| |=|>| |'|T|e|l|e|f|o|n|o|'|,|
+| | | | | | | | |'|e|m|a|i|l|'| |=|>| |'|E|m|a|i|l|'|,|
+| | | | |]|,|
+|]|;|
+|

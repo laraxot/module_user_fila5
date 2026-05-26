@@ -1,44 +1,45 @@
-<?php
-
-declare(strict_types=1);
-
-return [
-    'navigation' => [
-        'name' => 'Tenant',
-        'plural' => 'Tenant',
-        'group' => [
-            'name' => 'Admin',
-        ],
-    ],
-    'fields' => [
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'secondary_color' => [
-            'label' => 'secondary_color',
-        ],
-        'slug' => [
-            'label' => 'slug',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'id' => [
-            'label' => 'id',
-        ],
-    ],
-    'actions' => [
-        'import' => [
-            'fields' => [
-                'import_file' => 'Seleziona un file XLS o CSV da caricare',
-            ],
-        ],
-        'export' => [
-            'filename_prefix' => 'Aree al',
-            'columns' => [
-                'name' => 'Nome area',
-                'parent_name' => 'Nome area livello superiore',
-            ],
-        ],
-        'change_password' => 'Cambio password',
-    ],
-];
+|<|?|p|h|p|
+|
+|d|e|c|l|a|r|e|(|s|t|r|i|c|t|_|t|y|p|e|s|=|1|)|;|
+|
+|r|e|t|u|r|n| |[|
+| | | | |'|n|a|v|i|g|a|t|i|o|n|'| |=|>| |[|
+| | | | | | | | |'|n|a|m|e|'| |=|>| |'|T|e|n|a|n|t|'|,|
+| | | | | | | | |'|p|l|u|r|a|l|'| |=|>| |'|T|e|n|a|n|t|'|,|
+| | | | | | | | |'|g|r|o|u|p|'| |=|>| |[|
+| | | | | | | | | | | | |'|n|a|m|e|'| |=|>| |'|A|d|m|i|n|'|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |'|f|i|e|l|d|s|'| |=|>| |[|
+| | | | | | | | |'|f|i|r|s|t|_|n|a|m|e|'| |=|>| |'|N|o|m|e|'|,|
+| | | | | | | | |'|l|a|s|t|_|n|a|m|e|'| |=|>| |'|C|o|g|n|o|m|e|'|,|
+| | | | | | | | |'|s|e|c|o|n|d|a|r|y|_|c|o|l|o|r|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|s|e|c|o|n|d|a|r|y|_|c|o|l|o|r|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|s|l|u|g|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|s|l|u|g|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|n|a|m|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|n|a|m|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|i|d|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|i|d|'|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |'|a|c|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | |'|i|m|p|o|r|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|f|i|e|l|d|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|i|m|p|o|r|t|_|f|i|l|e|'| |=|>| |'|S|e|l|e|z|i|o|n|a| |u|n| |f|i|l|e| |X|L|S| |o| |C|S|V| |d|a| |c|a|r|i|c|a|r|e|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|e|x|p|o|r|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|f|i|l|e|n|a|m|e|_|p|r|e|f|i|x|'| |=|>| |'|A|r|e|e| |a|l|'|,|
+| | | | | | | | | | | | |'|c|o|l|u|m|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|n|a|m|e|'| |=|>| |'|N|o|m|e| |a|r|e|a|'|,|
+| | | | | | | | | | | | | | | | |'|p|a|r|e|n|t|_|n|a|m|e|'| |=|>| |'|N|o|m|e| |a|r|e|a| |l|i|v|e|l|l|o| |s|u|p|e|r|i|o|r|e|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|c|h|a|n|g|e|_|p|a|s|s|w|o|r|d|'| |=|>| |'|C|a|m|b|i|o| |p|a|s|s|w|o|r|d|'|,|
+| | | | |]|,|
+|]|;|
+|

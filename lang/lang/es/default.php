@@ -1,157 +1,158 @@
-<?php
-
-declare(strict_types=1);
-
-return [
-    'login' => [
-        'username_or_email' => 'Nombre de usuario o correo electr贸nico',
-        'forgot_password_link' => '驴Olvid贸 su contrase帽a?',
-        'create_an_account' => 'Crear una cuenta',
-    ],
-    'password_confirm' => [
-        'heading' => 'Confirmaci贸n de contrase帽a',
-        'description' => 'Confirme su contrase帽a para completar esta acci贸n.',
-        'current_password' => 'Contrase帽a actual',
-    ],
-    'two_factor' => [
-        'heading' => 'Autenticaci贸n de dos factores',
-        'description' => 'Teclee el c贸digo de autentificaci贸n proporcionado por su aplicaci贸n de autentificaci贸n para confirmar el acceso a su cuenta.',
-        'code_placeholder' => 'XXX-XXX',
-        'recovery' => [
-            'heading' => 'Autentificaci贸n de dos factores',
-            'description' => 'Teclee uno de sus c贸digos de recuperaci贸n de emergencia para confirmar el acceso a su cuenta.',
-        ],
-        'recovery_code_placeholder' => 'abcdef-98765',
-        'recovery_code_text' => '驴Perdi贸 su dispositivo?',
-        'recovery_code_link' => 'Utilice un c贸digo de recuperaci贸n',
-        'back_to_login_link' => 'Regresar a la p谩gina de acceso',
-    ],
-    'registration' => [
-        'title' => 'Registro',
-        'heading' => 'Creaci贸n de cuenta',
-        'submit' => [
-            'label' => 'Registrarse',
-        ],
-        'notification_unique' => 'Ya existe una cuenta asociada a este correo electr贸nico. Favor de acceder.',
-    ],
-    'reset_password' => [
-        'title' => 'Recuperaci贸n de contrase帽a',
-        'heading' => 'Creaci贸n de una nueva contrase帽a',
-        'submit' => [
-            'label' => 'Enviar',
-        ],
-        'notification_error' => 'Error: intente de nuevo m谩s tarde.',
-        'notification_error_link_text' => 'Try Again',
-        'notification_success' => 'Se ha enviado un correo, abra el mensaje para seguir las instrucciones.',
-    ],
-    'verification' => [
-        'title' => 'Verificaci贸n de correo electr贸nico',
-        'heading' => 'Debe verificar su cuenta de correo electr贸nico',
-        'submit' => [
-            'label' => 'Cerrar sesi贸n',
-        ],
-        'notification_success' => 'Se ha enviado un correo, abra el mensaje para seguir las instrucciones.',
-        'notification_resend' => 'Se ha reenviado el correo con las instrucciones.',
-        'before_proceeding' => 'Antes de continuar, verifique el correo que se le ha enviado y haga clic sobre el enlace de activaci贸n.',
-        'not_receive' => 'Si no ha recibido el mensaje de correo electr贸nico,',
-        'request_another' => 'Haga clic aqu铆 para solicitar otro',
-    ],
-    'profile' => [
-        'account' => 'Cuenta',
-        'profile' => 'Perfil',
-        'subheading' => 'Desde aqu铆 puede gestionar su perfil de usuario.',
-        'my_profile' => 'Mi perfil',
-        'personal_info' => [
-            'heading' => 'Informaci贸n personal',
-            'subheading' => 'Administrar su informaci贸n personal.',
-            'submit' => [
-                'label' => 'Actualizar',
-            ],
-            'notify' => '隆Perfil actualizado exitosamente!',
-        ],
-        'password' => [
-            'heading' => 'Contrase帽a',
-            'subheading' => 'Debe contener al menos 8 caracteres.',
-            'submit' => [
-                'label' => 'Modificar',
-            ],
-            'notify' => '隆Contrase帽a actualizada exitosamente!',
-        ],
-        '2fa' => [
-            'title' => 'Autentificaci贸n de dos factores',
-            'description' => 'Administre el acceso a su cuenta por autentificaci贸n de dos factores (recomendado).',
-            'actions' => [
-                'enable' => 'Habilitar',
-                'regenerate_codes' => 'Regenerar los c贸digos de recuperaci贸n',
-                'disable' => 'Deshabilitar',
-                'confirm_finish' => 'Confirmar y terminar',
-                'cancel_setup' => 'Cancelar la configuraci贸n',
-            ],
-            'setup_key' => 'Llave de configuraci贸n',
-            'must_enable' => 'Debe habilitar la autenticaci贸n de dos factores para usar esta aplicaci贸n.',
-            'not_enabled' => [
-                'title' => 'Usted no ha habilitado la autentificaci贸n de dos factores.',
-                'description' => 'Cuando la autentificaci贸n de dos factores se encuentra habilitada, se le pedir谩 un c贸digo aleatorio durante la autentificaci贸n. Usted puede obtener dicho c贸digo desde la aplicaci贸n Autenticador de Google en su celular.',
-            ],
-            'finish_enabling' => [
-                'title' => 'Terminar la habilitaci贸n de la autentificaci贸n de dos factores.',
-                'description' => 'Para terminar de habilitar la autentificaci贸n de dos factores, escanee el siguiente c贸digo QR utilizando la aplicaci贸n autenticadora de su tel茅fono (por ejemplo, el Autenticador de Google) o teclee la llave de configuraci贸n e indique el c贸digo OTP generado.',
-            ],
-            'enabled' => [
-                'notify' => 'Autenticaci贸n de dos factores habilitada.',
-                'title' => '隆Usted ha habilitado la autentificaci贸n de dos factores!',
-                'description' => 'Se ha habilitado la autentificaci贸n de dos factores. Escanee el siguiente c贸digo QR mediante la aplicaci贸n autenticadora de su celular (por ejemplo, el Autenticador de Google) o teclee la llave de configuraci贸n.',
-                'store_codes' => 'Guarde estos c贸digos de recuperaci贸n en un administrador de contrase帽as seguro. Pueden ser utilizadas para la recuperaci贸n del acceso a su cuenta en caso de que el dispositivo asociado a su autentificaci贸n de dos factores se pierda.',
-                'show_codes' => 'Mostrar los c贸digos de recuperaci贸n',
-                'hide_codes' => 'Esconder los c贸digos de recuperaci贸n',
-            ],
-            'disabling' => [
-                'notify' => 'La autenticaci贸n de dos factores ha sido deshabilitada.',
-            ],
-            'confirmation' => [
-                'success_notification' => 'El c贸digo ha sido verificado. La autentificaci贸n de dos factores se ha habilitado.',
-                'invalid_code' => 'El c贸digo tecleado no es v谩lido.',
-            ],
-        ],
-        'sanctum' => [
-            'title' => 'Tokens de API',
-            'description' => 'Administre los API tokens que permiten el acceso a esta aplicaci贸n a terceros en su nombre. NOTA: su token es mostrado por 煤nica vez despu茅s de su creaci贸n. Si usted pierde su token, deber谩 borrarlo y crear uno nuevo.',
-            'create' => [
-                'notify' => '隆Token creado exitosamente!',
-                'message' => 'Su token solo se muestra una vez despu茅s de la creaci贸n. Si pierde su token, deber谩 eliminarlo y crear uno nuevo.',
-                'submit' => [
-                    'label' => 'Nuevo',
-                ],
-            ],
-            'update' => [
-                'notify' => '隆Token actualizado exitosamente!',
-            ],
-            'copied' => [
-                'label' => 'Copi茅 mi ficha',
-            ],
-        ],
-    ],
-    'clipboard' => [
-        'link' => 'Copiar al portapapeles',
-        'tooltip' => '隆Copiado!',
-    ],
-    'fields' => [
-        'avatar' => 'Avatar',
-        'email' => 'Correo electr贸nico',
-        'login' => 'Usuario',
-        'name' => 'Nombre',
-        'password' => 'Contrase帽a',
-        'password_confirm' => 'Confirmar la contrase帽a',
-        'new_password' => 'Nueva contrase帽a',
-        'new_password_confirmation' => 'Confirme la nueva contrase帽a',
-        'token_name' => 'Nombre del token',
-        'token_expiry' => 'Caducidad del token',
-        'abilities' => 'Capacidades',
-        '2fa_code' => 'C贸digo',
-        '2fa_recovery_code' => 'C贸digo de recuperaci贸n',
-        'created' => 'Creado',
-        'expires' => 'Expira',
-    ],
-    'or' => 'o',
-    'cancel' => 'Cancelar',
-];
+|<|?|p|h|p|
+|
+|d|e|c|l|a|r|e|(|s|t|r|i|c|t|_|t|y|p|e|s|=|1|)|;|
+|
+|r|e|t|u|r|n| |[|
+| | | | |'|l|o|g|i|n|'| |=|>| |[|
+| | | | | | | | |'|u|s|e|r|n|a|m|e|_|o|r|_|e|m|a|i|l|'| |=|>| |'|N|o|m|b|r|e| |d|e| |u|s|u|a|r|i|o| |o| |c|o|r|r|e|o| |e|l|e|c|t|r|脇硘n|i|c|o|'|,|
+| | | | | | | | |'|f|o|r|g|o|t|_|p|a|s|s|w|o|r|d|_|l|i|n|k|'| |=|>| |'|聕縷O|l|v|i|d|脇硘 |s|u| |c|o|n|t|r|a|s|e|脇眧a|?|'|,|
+| | | | | | | | |'|c|r|e|a|t|e|_|a|n|_|a|c|c|o|u|n|t|'| |=|>| |'|C|r|e|a|r| |u|n|a| |c|u|e|n|t|a|'|,|
+| | | | |]|,|
+| | | | |'|p|a|s|s|w|o|r|d|_|c|o|n|f|i|r|m|'| |=|>| |[|
+| | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|C|o|n|f|i|r|m|a|c|i|脇硘n| |d|e| |c|o|n|t|r|a|s|e|脇眧a|'|,|
+| | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|C|o|n|f|i|r|m|e| |s|u| |c|o|n|t|r|a|s|e|脇眧a| |p|a|r|a| |c|o|m|p|l|e|t|a|r| |e|s|t|a| |a|c|c|i|脇硘n|.|'|,|
+| | | | | | | | |'|c|u|r|r|e|n|t|_|p|a|s|s|w|o|r|d|'| |=|>| |'|C|o|n|t|r|a|s|e|脇眧a| |a|c|t|u|a|l|'|,|
+| | | | |]|,|
+| | | | |'|t|w|o|_|f|a|c|t|o|r|'| |=|>| |[|
+| | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|A|u|t|e|n|t|i|c|a|c|i|脇硘n| |d|e| |d|o|s| |f|a|c|t|o|r|e|s|'|,|
+| | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|T|e|c|l|e|e| |e|l| |c|脇硘d|i|g|o| |d|e| |a|u|t|e|n|t|i|f|i|c|a|c|i|脇硘n| |p|r|o|p|o|r|c|i|o|n|a|d|o| |p|o|r| |s|u| |a|p|l|i|c|a|c|i|脇硘n| |d|e| |a|u|t|e|n|t|i|f|i|c|a|c|i|脇硘n| |p|a|r|a| |c|o|n|f|i|r|m|a|r| |e|l| |a|c|c|e|s|o| |a| |s|u| |c|u|e|n|t|a|.|'|,|
+| | | | | | | | |'|c|o|d|e|_|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|X|X|X|-|X|X|X|'|,|
+| | | | | | | | |'|r|e|c|o|v|e|r|y|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|A|u|t|e|n|t|i|f|i|c|a|c|i|脇硘n| |d|e| |d|o|s| |f|a|c|t|o|r|e|s|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|T|e|c|l|e|e| |u|n|o| |d|e| |s|u|s| |c|脇硘d|i|g|o|s| |d|e| |r|e|c|u|p|e|r|a|c|i|脇硘n| |d|e| |e|m|e|r|g|e|n|c|i|a| |p|a|r|a| |c|o|n|f|i|r|m|a|r| |e|l| |a|c|c|e|s|o| |a| |s|u| |c|u|e|n|t|a|.|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|r|e|c|o|v|e|r|y|_|c|o|d|e|_|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|a|b|c|d|e|f|-|9|8|7|6|5|'|,|
+| | | | | | | | |'|r|e|c|o|v|e|r|y|_|c|o|d|e|_|t|e|x|t|'| |=|>| |'|聕縷P|e|r|d|i|脇硘 |s|u| |d|i|s|p|o|s|i|t|i|v|o|?|'|,|
+| | | | | | | | |'|r|e|c|o|v|e|r|y|_|c|o|d|e|_|l|i|n|k|'| |=|>| |'|U|t|i|l|i|c|e| |u|n| |c|脇硘d|i|g|o| |d|e| |r|e|c|u|p|e|r|a|c|i|脇硘n|'|,|
+| | | | | | | | |'|b|a|c|k|_|t|o|_|l|o|g|i|n|_|l|i|n|k|'| |=|>| |'|R|e|g|r|e|s|a|r| |a| |l|a| |p|脇g|i|n|a| |d|e| |a|c|c|e|s|o|'|,|
+| | | | |]|,|
+| | | | |'|r|e|g|i|s|t|r|a|t|i|o|n|'| |=|>| |[|
+| | | | | | | | |'|t|i|t|l|e|'| |=|>| |'|R|e|g|i|s|t|r|o|'|,|
+| | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|C|r|e|a|c|i|脇硘n| |d|e| |c|u|e|n|t|a|'|,|
+| | | | | | | | |'|s|u|b|m|i|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|R|e|g|i|s|t|r|a|r|s|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|n|o|t|i|f|i|c|a|t|i|o|n|_|u|n|i|q|u|e|'| |=|>| |'|Y|a| |e|x|i|s|t|e| |u|n|a| |c|u|e|n|t|a| |a|s|o|c|i|a|d|a| |a| |e|s|t|e| |c|o|r|r|e|o| |e|l|e|c|t|r|脇硘n|i|c|o|.| |F|a|v|o|r| |d|e| |a|c|c|e|d|e|r|.|'|,|
+| | | | |]|,|
+| | | | |'|r|e|s|e|t|_|p|a|s|s|w|o|r|d|'| |=|>| |[|
+| | | | | | | | |'|t|i|t|l|e|'| |=|>| |'|R|e|c|u|p|e|r|a|c|i|脇硘n| |d|e| |c|o|n|t|r|a|s|e|脇眧a|'|,|
+| | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|C|r|e|a|c|i|脇硘n| |d|e| |u|n|a| |n|u|e|v|a| |c|o|n|t|r|a|s|e|脇眧a|'|,|
+| | | | | | | | |'|s|u|b|m|i|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|E|n|v|i|a|r|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|n|o|t|i|f|i|c|a|t|i|o|n|_|e|r|r|o|r|'| |=|>| |'|E|r|r|o|r|:| |i|n|t|e|n|t|e| |d|e| |n|u|e|v|o| |m|脇s| |t|a|r|d|e|.|'|,|
+| | | | | | | | |'|n|o|t|i|f|i|c|a|t|i|o|n|_|e|r|r|o|r|_|l|i|n|k|_|t|e|x|t|'| |=|>| |'|T|r|y| |A|g|a|i|n|'|,|
+| | | | | | | | |'|n|o|t|i|f|i|c|a|t|i|o|n|_|s|u|c|c|e|s|s|'| |=|>| |'|S|e| |h|a| |e|n|v|i|a|d|o| |u|n| |c|o|r|r|e|o|,| |a|b|r|a| |e|l| |m|e|n|s|a|j|e| |p|a|r|a| |s|e|g|u|i|r| |l|a|s| |i|n|s|t|r|u|c|c|i|o|n|e|s|.|'|,|
+| | | | |]|,|
+| | | | |'|v|e|r|i|f|i|c|a|t|i|o|n|'| |=|>| |[|
+| | | | | | | | |'|t|i|t|l|e|'| |=|>| |'|V|e|r|i|f|i|c|a|c|i|脇硘n| |d|e| |c|o|r|r|e|o| |e|l|e|c|t|r|脇硘n|i|c|o|'|,|
+| | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|D|e|b|e| |v|e|r|i|f|i|c|a|r| |s|u| |c|u|e|n|t|a| |d|e| |c|o|r|r|e|o| |e|l|e|c|t|r|脇硘n|i|c|o|'|,|
+| | | | | | | | |'|s|u|b|m|i|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|C|e|r|r|a|r| |s|e|s|i|脇硘n|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|n|o|t|i|f|i|c|a|t|i|o|n|_|s|u|c|c|e|s|s|'| |=|>| |'|S|e| |h|a| |e|n|v|i|a|d|o| |u|n| |c|o|r|r|e|o|,| |a|b|r|a| |e|l| |m|e|n|s|a|j|e| |p|a|r|a| |s|e|g|u|i|r| |l|a|s| |i|n|s|t|r|u|c|c|i|o|n|e|s|.|'|,|
+| | | | | | | | |'|n|o|t|i|f|i|c|a|t|i|o|n|_|r|e|s|e|n|d|'| |=|>| |'|S|e| |h|a| |r|e|e|n|v|i|a|d|o| |e|l| |c|o|r|r|e|o| |c|o|n| |l|a|s| |i|n|s|t|r|u|c|c|i|o|n|e|s|.|'|,|
+| | | | | | | | |'|b|e|f|o|r|e|_|p|r|o|c|e|e|d|i|n|g|'| |=|>| |'|A|n|t|e|s| |d|e| |c|o|n|t|i|n|u|a|r|,| |v|e|r|i|f|i|q|u|e| |e|l| |c|o|r|r|e|o| |q|u|e| |s|e| |l|e| |h|a| |e|n|v|i|a|d|o| |y| |h|a|g|a| |c|l|i|c| |s|o|b|r|e| |e|l| |e|n|l|a|c|e| |d|e| |a|c|t|i|v|a|c|i|脇硘n|.|'|,|
+| | | | | | | | |'|n|o|t|_|r|e|c|e|i|v|e|'| |=|>| |'|S|i| |n|o| |h|a| |r|e|c|i|b|i|d|o| |e|l| |m|e|n|s|a|j|e| |d|e| |c|o|r|r|e|o| |e|l|e|c|t|r|脇硘n|i|c|o|,|'|,|
+| | | | | | | | |'|r|e|q|u|e|s|t|_|a|n|o|t|h|e|r|'| |=|>| |'|H|a|g|a| |c|l|i|c| |a|q|u|脇瓅 |p|a|r|a| |s|o|l|i|c|i|t|a|r| |o|t|r|o|'|,|
+| | | | |]|,|
+| | | | |'|p|r|o|f|i|l|e|'| |=|>| |[|
+| | | | | | | | |'|a|c|c|o|u|n|t|'| |=|>| |'|C|u|e|n|t|a|'|,|
+| | | | | | | | |'|p|r|o|f|i|l|e|'| |=|>| |'|P|e|r|f|i|l|'|,|
+| | | | | | | | |'|s|u|b|h|e|a|d|i|n|g|'| |=|>| |'|D|e|s|d|e| |a|q|u|脇瓅 |p|u|e|d|e| |g|e|s|t|i|o|n|a|r| |s|u| |p|e|r|f|i|l| |d|e| |u|s|u|a|r|i|o|.|'|,|
+| | | | | | | | |'|m|y|_|p|r|o|f|i|l|e|'| |=|>| |'|M|i| |p|e|r|f|i|l|'|,|
+| | | | | | | | |'|p|e|r|s|o|n|a|l|_|i|n|f|o|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|I|n|f|o|r|m|a|c|i|脇硘n| |p|e|r|s|o|n|a|l|'|,|
+| | | | | | | | | | | | |'|s|u|b|h|e|a|d|i|n|g|'| |=|>| |'|A|d|m|i|n|i|s|t|r|a|r| |s|u| |i|n|f|o|r|m|a|c|i|脇硘n| |p|e|r|s|o|n|a|l|.|'|,|
+| | | | | | | | | | | | |'|s|u|b|m|i|t|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|A|c|t|u|a|l|i|z|a|r|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|n|o|t|i|f|y|'| |=|>| |'|聕P|e|r|f|i|l| |a|c|t|u|a|l|i|z|a|d|o| |e|x|i|t|o|s|a|m|e|n|t|e|!|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|p|a|s|s|w|o|r|d|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|C|o|n|t|r|a|s|e|脇眧a|'|,|
+| | | | | | | | | | | | |'|s|u|b|h|e|a|d|i|n|g|'| |=|>| |'|D|e|b|e| |c|o|n|t|e|n|e|r| |a|l| |m|e|n|o|s| |8| |c|a|r|a|c|t|e|r|e|s|.|'|,|
+| | | | | | | | | | | | |'|s|u|b|m|i|t|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|M|o|d|i|f|i|c|a|r|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|n|o|t|i|f|y|'| |=|>| |'|聕C|o|n|t|r|a|s|e|脇眧a| |a|c|t|u|a|l|i|z|a|d|a| |e|x|i|t|o|s|a|m|e|n|t|e|!|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|2|f|a|'| |=|>| |[|
+| | | | | | | | | | | | |'|t|i|t|l|e|'| |=|>| |'|A|u|t|e|n|t|i|f|i|c|a|c|i|脇硘n| |d|e| |d|o|s| |f|a|c|t|o|r|e|s|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|A|d|m|i|n|i|s|t|r|e| |e|l| |a|c|c|e|s|o| |a| |s|u| |c|u|e|n|t|a| |p|o|r| |a|u|t|e|n|t|i|f|i|c|a|c|i|脇硘n| |d|e| |d|o|s| |f|a|c|t|o|r|e|s| |(|r|e|c|o|m|e|n|d|a|d|o|)|.|'|,|
+| | | | | | | | | | | | |'|a|c|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|e|n|a|b|l|e|'| |=|>| |'|H|a|b|i|l|i|t|a|r|'|,|
+| | | | | | | | | | | | | | | | |'|r|e|g|e|n|e|r|a|t|e|_|c|o|d|e|s|'| |=|>| |'|R|e|g|e|n|e|r|a|r| |l|o|s| |c|脇硘d|i|g|o|s| |d|e| |r|e|c|u|p|e|r|a|c|i|脇硘n|'|,|
+| | | | | | | | | | | | | | | | |'|d|i|s|a|b|l|e|'| |=|>| |'|D|e|s|h|a|b|i|l|i|t|a|r|'|,|
+| | | | | | | | | | | | | | | | |'|c|o|n|f|i|r|m|_|f|i|n|i|s|h|'| |=|>| |'|C|o|n|f|i|r|m|a|r| |y| |t|e|r|m|i|n|a|r|'|,|
+| | | | | | | | | | | | | | | | |'|c|a|n|c|e|l|_|s|e|t|u|p|'| |=|>| |'|C|a|n|c|e|l|a|r| |l|a| |c|o|n|f|i|g|u|r|a|c|i|脇硘n|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|s|e|t|u|p|_|k|e|y|'| |=|>| |'|L|l|a|v|e| |d|e| |c|o|n|f|i|g|u|r|a|c|i|脇硘n|'|,|
+| | | | | | | | | | | | |'|m|u|s|t|_|e|n|a|b|l|e|'| |=|>| |'|D|e|b|e| |h|a|b|i|l|i|t|a|r| |l|a| |a|u|t|e|n|t|i|c|a|c|i|脇硘n| |d|e| |d|o|s| |f|a|c|t|o|r|e|s| |p|a|r|a| |u|s|a|r| |e|s|t|a| |a|p|l|i|c|a|c|i|脇硘n|.|'|,|
+| | | | | | | | | | | | |'|n|o|t|_|e|n|a|b|l|e|d|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|t|i|t|l|e|'| |=|>| |'|U|s|t|e|d| |n|o| |h|a| |h|a|b|i|l|i|t|a|d|o| |l|a| |a|u|t|e|n|t|i|f|i|c|a|c|i|脇硘n| |d|e| |d|o|s| |f|a|c|t|o|r|e|s|.|'|,|
+| | | | | | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|C|u|a|n|d|o| |l|a| |a|u|t|e|n|t|i|f|i|c|a|c|i|脇硘n| |d|e| |d|o|s| |f|a|c|t|o|r|e|s| |s|e| |e|n|c|u|e|n|t|r|a| |h|a|b|i|l|i|t|a|d|a|,| |s|e| |l|e| |p|e|d|i|r|脇 |u|n| |c|脇硘d|i|g|o| |a|l|e|a|t|o|r|i|o| |d|u|r|a|n|t|e| |l|a| |a|u|t|e|n|t|i|f|i|c|a|c|i|脇硘n|.| |U|s|t|e|d| |p|u|e|d|e| |o|b|t|e|n|e|r| |d|i|c|h|o| |c|脇硘d|i|g|o| |d|e|s|d|e| |l|a| |a|p|l|i|c|a|c|i|脇硘n| |A|u|t|e|n|t|i|c|a|d|o|r| |d|e| |G|o|o|g|l|e| |e|n| |s|u| |c|e|l|u|l|a|r|.|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|f|i|n|i|s|h|_|e|n|a|b|l|i|n|g|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|t|i|t|l|e|'| |=|>| |'|T|e|r|m|i|n|a|r| |l|a| |h|a|b|i|l|i|t|a|c|i|脇硘n| |d|e| |l|a| |a|u|t|e|n|t|i|f|i|c|a|c|i|脇硘n| |d|e| |d|o|s| |f|a|c|t|o|r|e|s|.|'|,|
+| | | | | | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|P|a|r|a| |t|e|r|m|i|n|a|r| |d|e| |h|a|b|i|l|i|t|a|r| |l|a| |a|u|t|e|n|t|i|f|i|c|a|c|i|脇硘n| |d|e| |d|o|s| |f|a|c|t|o|r|e|s|,| |e|s|c|a|n|e|e| |e|l| |s|i|g|u|i|e|n|t|e| |c|脇硘d|i|g|o| |Q|R| |u|t|i|l|i|z|a|n|d|o| |l|a| |a|p|l|i|c|a|c|i|脇硘n| |a|u|t|e|n|t|i|c|a|d|o|r|a| |d|e| |s|u| |t|e|l|脇﹟f|o|n|o| |(|p|o|r| |e|j|e|m|p|l|o|,| |e|l| |A|u|t|e|n|t|i|c|a|d|o|r| |d|e| |G|o|o|g|l|e|)| |o| |t|e|c|l|e|e| |l|a| |l|l|a|v|e| |d|e| |c|o|n|f|i|g|u|r|a|c|i|脇硘n| |e| |i|n|d|i|q|u|e| |e|l| |c|脇硘d|i|g|o| |O|T|P| |g|e|n|e|r|a|d|o|.|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|e|n|a|b|l|e|d|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|n|o|t|i|f|y|'| |=|>| |'|A|u|t|e|n|t|i|c|a|c|i|脇硘n| |d|e| |d|o|s| |f|a|c|t|o|r|e|s| |h|a|b|i|l|i|t|a|d|a|.|'|,|
+| | | | | | | | | | | | | | | | |'|t|i|t|l|e|'| |=|>| |'|聕U|s|t|e|d| |h|a| |h|a|b|i|l|i|t|a|d|o| |l|a| |a|u|t|e|n|t|i|f|i|c|a|c|i|脇硘n| |d|e| |d|o|s| |f|a|c|t|o|r|e|s|!|'|,|
+| | | | | | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|S|e| |h|a| |h|a|b|i|l|i|t|a|d|o| |l|a| |a|u|t|e|n|t|i|f|i|c|a|c|i|脇硘n| |d|e| |d|o|s| |f|a|c|t|o|r|e|s|.| |E|s|c|a|n|e|e| |e|l| |s|i|g|u|i|e|n|t|e| |c|脇硘d|i|g|o| |Q|R| |m|e|d|i|a|n|t|e| |l|a| |a|p|l|i|c|a|c|i|脇硘n| |a|u|t|e|n|t|i|c|a|d|o|r|a| |d|e| |s|u| |c|e|l|u|l|a|r| |(|p|o|r| |e|j|e|m|p|l|o|,| |e|l| |A|u|t|e|n|t|i|c|a|d|o|r| |d|e| |G|o|o|g|l|e|)| |o| |t|e|c|l|e|e| |l|a| |l|l|a|v|e| |d|e| |c|o|n|f|i|g|u|r|a|c|i|脇硘n|.|'|,|
+| | | | | | | | | | | | | | | | |'|s|t|o|r|e|_|c|o|d|e|s|'| |=|>| |'|G|u|a|r|d|e| |e|s|t|o|s| |c|脇硘d|i|g|o|s| |d|e| |r|e|c|u|p|e|r|a|c|i|脇硘n| |e|n| |u|n| |a|d|m|i|n|i|s|t|r|a|d|o|r| |d|e| |c|o|n|t|r|a|s|e|脇眧a|s| |s|e|g|u|r|o|.| |P|u|e|d|e|n| |s|e|r| |u|t|i|l|i|z|a|d|a|s| |p|a|r|a| |l|a| |r|e|c|u|p|e|r|a|c|i|脇硘n| |d|e|l| |a|c|c|e|s|o| |a| |s|u| |c|u|e|n|t|a| |e|n| |c|a|s|o| |d|e| |q|u|e| |e|l| |d|i|s|p|o|s|i|t|i|v|o| |a|s|o|c|i|a|d|o| |a| |s|u| |a|u|t|e|n|t|i|f|i|c|a|c|i|脇硘n| |d|e| |d|o|s| |f|a|c|t|o|r|e|s| |s|e| |p|i|e|r|d|a|.|'|,|
+| | | | | | | | | | | | | | | | |'|s|h|o|w|_|c|o|d|e|s|'| |=|>| |'|M|o|s|t|r|a|r| |l|o|s| |c|脇硘d|i|g|o|s| |d|e| |r|e|c|u|p|e|r|a|c|i|脇硘n|'|,|
+| | | | | | | | | | | | | | | | |'|h|i|d|e|_|c|o|d|e|s|'| |=|>| |'|E|s|c|o|n|d|e|r| |l|o|s| |c|脇硘d|i|g|o|s| |d|e| |r|e|c|u|p|e|r|a|c|i|脇硘n|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|d|i|s|a|b|l|i|n|g|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|n|o|t|i|f|y|'| |=|>| |'|L|a| |a|u|t|e|n|t|i|c|a|c|i|脇硘n| |d|e| |d|o|s| |f|a|c|t|o|r|e|s| |h|a| |s|i|d|o| |d|e|s|h|a|b|i|l|i|t|a|d|a|.|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|c|o|n|f|i|r|m|a|t|i|o|n|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|s|u|c|c|e|s|s|_|n|o|t|i|f|i|c|a|t|i|o|n|'| |=|>| |'|E|l| |c|脇硘d|i|g|o| |h|a| |s|i|d|o| |v|e|r|i|f|i|c|a|d|o|.| |L|a| |a|u|t|e|n|t|i|f|i|c|a|c|i|脇硘n| |d|e| |d|o|s| |f|a|c|t|o|r|e|s| |s|e| |h|a| |h|a|b|i|l|i|t|a|d|o|.|'|,|
+| | | | | | | | | | | | | | | | |'|i|n|v|a|l|i|d|_|c|o|d|e|'| |=|>| |'|E|l| |c|脇硘d|i|g|o| |t|e|c|l|e|a|d|o| |n|o| |e|s| |v|脇l|i|d|o|.|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|s|a|n|c|t|u|m|'| |=|>| |[|
+| | | | | | | | | | | | |'|t|i|t|l|e|'| |=|>| |'|T|o|k|e|n|s| |d|e| |A|P|I|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|A|d|m|i|n|i|s|t|r|e| |l|o|s| |A|P|I| |t|o|k|e|n|s| |q|u|e| |p|e|r|m|i|t|e|n| |e|l| |a|c|c|e|s|o| |a| |e|s|t|a| |a|p|l|i|c|a|c|i|脇硘n| |a| |t|e|r|c|e|r|o|s| |e|n| |s|u| |n|o|m|b|r|e|.| |N|O|T|A|:| |s|u| |t|o|k|e|n| |e|s| |m|o|s|t|r|a|d|o| |p|o|r| |脇簗n|i|c|a| |v|e|z| |d|e|s|p|u|脇﹟s| |d|e| |s|u| |c|r|e|a|c|i|脇硘n|.| |S|i| |u|s|t|e|d| |p|i|e|r|d|e| |s|u| |t|o|k|e|n|,| |d|e|b|e|r|脇 |b|o|r|r|a|r|l|o| |y| |c|r|e|a|r| |u|n|o| |n|u|e|v|o|.|'|,|
+| | | | | | | | | | | | |'|c|r|e|a|t|e|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|n|o|t|i|f|y|'| |=|>| |'|聕T|o|k|e|n| |c|r|e|a|d|o| |e|x|i|t|o|s|a|m|e|n|t|e|!|'|,|
+| | | | | | | | | | | | | | | | |'|m|e|s|s|a|g|e|'| |=|>| |'|S|u| |t|o|k|e|n| |s|o|l|o| |s|e| |m|u|e|s|t|r|a| |u|n|a| |v|e|z| |d|e|s|p|u|脇﹟s| |d|e| |l|a| |c|r|e|a|c|i|脇硘n|.| |S|i| |p|i|e|r|d|e| |s|u| |t|o|k|e|n|,| |d|e|b|e|r|脇 |e|l|i|m|i|n|a|r|l|o| |y| |c|r|e|a|r| |u|n|o| |n|u|e|v|o|.|'|,|
+| | | | | | | | | | | | | | | | |'|s|u|b|m|i|t|'| |=|>| |[|
+| | | | | | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|N|u|e|v|o|'|,|
+| | | | | | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|u|p|d|a|t|e|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|n|o|t|i|f|y|'| |=|>| |'|聕T|o|k|e|n| |a|c|t|u|a|l|i|z|a|d|o| |e|x|i|t|o|s|a|m|e|n|t|e|!|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|c|o|p|i|e|d|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|C|o|p|i|脇﹟ |m|i| |f|i|c|h|a|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |'|c|l|i|p|b|o|a|r|d|'| |=|>| |[|
+| | | | | | | | |'|l|i|n|k|'| |=|>| |'|C|o|p|i|a|r| |a|l| |p|o|r|t|a|p|a|p|e|l|e|s|'|,|
+| | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|聕C|o|p|i|a|d|o|!|'|,|
+| | | | |]|,|
+| | | | |'|f|i|e|l|d|s|'| |=|>| |[|
+| | | | | | | | |'|a|v|a|t|a|r|'| |=|>| |'|A|v|a|t|a|r|'|,|
+| | | | | | | | |'|e|m|a|i|l|'| |=|>| |'|C|o|r|r|e|o| |e|l|e|c|t|r|脇硘n|i|c|o|'|,|
+| | | | | | | | |'|l|o|g|i|n|'| |=|>| |'|U|s|u|a|r|i|o|'|,|
+| | | | | | | | |'|n|a|m|e|'| |=|>| |'|N|o|m|b|r|e|'|,|
+| | | | | | | | |'|p|a|s|s|w|o|r|d|'| |=|>| |'|C|o|n|t|r|a|s|e|脇眧a|'|,|
+| | | | | | | | |'|p|a|s|s|w|o|r|d|_|c|o|n|f|i|r|m|'| |=|>| |'|C|o|n|f|i|r|m|a|r| |l|a| |c|o|n|t|r|a|s|e|脇眧a|'|,|
+| | | | | | | | |'|n|e|w|_|p|a|s|s|w|o|r|d|'| |=|>| |'|N|u|e|v|a| |c|o|n|t|r|a|s|e|脇眧a|'|,|
+| | | | | | | | |'|n|e|w|_|p|a|s|s|w|o|r|d|_|c|o|n|f|i|r|m|a|t|i|o|n|'| |=|>| |'|C|o|n|f|i|r|m|e| |l|a| |n|u|e|v|a| |c|o|n|t|r|a|s|e|脇眧a|'|,|
+| | | | | | | | |'|t|o|k|e|n|_|n|a|m|e|'| |=|>| |'|N|o|m|b|r|e| |d|e|l| |t|o|k|e|n|'|,|
+| | | | | | | | |'|t|o|k|e|n|_|e|x|p|i|r|y|'| |=|>| |'|C|a|d|u|c|i|d|a|d| |d|e|l| |t|o|k|e|n|'|,|
+| | | | | | | | |'|a|b|i|l|i|t|i|e|s|'| |=|>| |'|C|a|p|a|c|i|d|a|d|e|s|'|,|
+| | | | | | | | |'|2|f|a|_|c|o|d|e|'| |=|>| |'|C|脇硘d|i|g|o|'|,|
+| | | | | | | | |'|2|f|a|_|r|e|c|o|v|e|r|y|_|c|o|d|e|'| |=|>| |'|C|脇硘d|i|g|o| |d|e| |r|e|c|u|p|e|r|a|c|i|脇硘n|'|,|
+| | | | | | | | |'|c|r|e|a|t|e|d|'| |=|>| |'|C|r|e|a|d|o|'|,|
+| | | | | | | | |'|e|x|p|i|r|e|s|'| |=|>| |'|E|x|p|i|r|a|'|,|
+| | | | |]|,|
+| | | | |'|o|r|'| |=|>| |'|o|'|,|
+| | | | |'|c|a|n|c|e|l|'| |=|>| |'|C|a|n|c|e|l|a|r|'|,|
+|]|;|
+|

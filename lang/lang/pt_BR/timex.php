@@ -1,40 +1,41 @@
-<?php
-
-declare(strict_types=1);
-
-return [
-    'model' => [
-        'label' => 'Agendamento',
-        'pluralLabel' => 'Agendamentos',
-    ],
-    'modal' => [
-        'submit' => 'Criar',
-        'cancel' => 'Cancelar',
-        'delete' => 'Deletar',
-        'edit' => 'Editar',
-    ],
-    'events' => [
-        'empty' => 'Nenhum evento futuro',
-    ],
-    'event' => [
-        'subject' => 'TÃ­tulo',
-        'body' => 'Mensagem',
-        'category' => 'Categoria',
-        'allDay' => 'Dia todo',
-        'start' => 'ComeÃ§o',
-        'end' => 'TÃ©rmino',
-        'participants' => 'Participantes',
-        'attachments' => 'Anexos',
-    ],
-    'event-list' => [
-        'author' => 'Author: :name',
-        'start' => 'Start: :start',
-        'end' => 'End: :end',
-    ],
-    'labels' => [
-        'navigation' => 'TiMEX',
-        'breadcrumbs' => 'TiMEX',
-        'title' => 'TiMEX',
-        'today' => 'Hoje',
-    ],
-];
+|<|?|p|h|p|
+|
+|d|e|c|l|a|r|e|(|s|t|r|i|c|t|_|t|y|p|e|s|=|1|)|;|
+|
+|r|e|t|u|r|n| |[|
+| | | | |'|m|o|d|e|l|'| |=|>| |[|
+| | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|A|g|e|n|d|a|m|e|n|t|o|'|,|
+| | | | | | | | |'|p|l|u|r|a|l|L|a|b|e|l|'| |=|>| |'|A|g|e|n|d|a|m|e|n|t|o|s|'|,|
+| | | | |]|,|
+| | | | |'|m|o|d|a|l|'| |=|>| |[|
+| | | | | | | | |'|s|u|b|m|i|t|'| |=|>| |'|C|r|i|a|r|'|,|
+| | | | | | | | |'|c|a|n|c|e|l|'| |=|>| |'|C|a|n|c|e|l|a|r|'|,|
+| | | | | | | | |'|d|e|l|e|t|e|'| |=|>| |'|D|e|l|e|t|a|r|'|,|
+| | | | | | | | |'|e|d|i|t|'| |=|>| |'|E|d|i|t|a|r|'|,|
+| | | | |]|,|
+| | | | |'|e|v|e|n|t|s|'| |=|>| |[|
+| | | | | | | | |'|e|m|p|t|y|'| |=|>| |'|N|e|n|h|u|m| |e|v|e|n|t|o| |f|u|t|u|r|o|'|,|
+| | | | |]|,|
+| | | | |'|e|v|e|n|t|'| |=|>| |[|
+| | | | | | | | |'|s|u|b|j|e|c|t|'| |=|>| |'|T|Ã|­|t|u|l|o|'|,|
+| | | | | | | | |'|b|o|d|y|'| |=|>| |'|M|e|n|s|a|g|e|m|'|,|
+| | | | | | | | |'|c|a|t|e|g|o|r|y|'| |=|>| |'|C|a|t|e|g|o|r|i|a|'|,|
+| | | | | | | | |'|a|l|l|D|a|y|'| |=|>| |'|D|i|a| |t|o|d|o|'|,|
+| | | | | | | | |'|s|t|a|r|t|'| |=|>| |'|C|o|m|e|Ã|§|o|'|,|
+| | | | | | | | |'|e|n|d|'| |=|>| |'|T|Ã|©|r|m|i|n|o|'|,|
+| | | | | | | | |'|p|a|r|t|i|c|i|p|a|n|t|s|'| |=|>| |'|P|a|r|t|i|c|i|p|a|n|t|e|s|'|,|
+| | | | | | | | |'|a|t|t|a|c|h|m|e|n|t|s|'| |=|>| |'|A|n|e|x|o|s|'|,|
+| | | | |]|,|
+| | | | |'|e|v|e|n|t|-|l|i|s|t|'| |=|>| |[|
+| | | | | | | | |'|a|u|t|h|o|r|'| |=|>| |'|A|u|t|h|o|r|:| |:|n|a|m|e|'|,|
+| | | | | | | | |'|s|t|a|r|t|'| |=|>| |'|S|t|a|r|t|:| |:|s|t|a|r|t|'|,|
+| | | | | | | | |'|e|n|d|'| |=|>| |'|E|n|d|:| |:|e|n|d|'|,|
+| | | | |]|,|
+| | | | |'|l|a|b|e|l|s|'| |=|>| |[|
+| | | | | | | | |'|n|a|v|i|g|a|t|i|o|n|'| |=|>| |'|T|i|M|E|X|'|,|
+| | | | | | | | |'|b|r|e|a|d|c|r|u|m|b|s|'| |=|>| |'|T|i|M|E|X|'|,|
+| | | | | | | | |'|t|i|t|l|e|'| |=|>| |'|T|i|M|E|X|'|,|
+| | | | | | | | |'|t|o|d|a|y|'| |=|>| |'|H|o|j|e|'|,|
+| | | | |]|,|
+|]|;|
+|

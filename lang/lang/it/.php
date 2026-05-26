@@ -1,14 +1,15 @@
-<?php 
-return array (
-  'fields' => 
-  array (
-    'startDate' => 
-    array (
-      'label' => 'startDate',
-    ),
-    'endDate' => 
-    array (
-      'label' => 'endDate',
-    ),
-  ),
-);
+|<|?|p|h|p| |
+|r|e|t|u|r|n| |a|r|r|a|y| |(|
+| | |'|f|i|e|l|d|s|'| |=|>| |
+| | |a|r|r|a|y| |(|
+| | | | |'|s|t|a|r|t|D|a|t|e|'| |=|>| |
+| | | | |a|r|r|a|y| |(|
+| | | | | | |'|l|a|b|e|l|'| |=|>| |'|s|t|a|r|t|D|a|t|e|'|,|
+| | | | |)|,|
+| | | | |'|e|n|d|D|a|t|e|'| |=|>| |
+| | | | |a|r|r|a|y| |(|
+| | | | | | |'|l|a|b|e|l|'| |=|>| |'|e|n|d|D|a|t|e|'|,|
+| | | | |)|,|
+| | |)|,|
+|)|;|
+|

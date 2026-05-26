@@ -1,336 +1,337 @@
-<?php
-
-declare(strict_types=1);
-
-return [
-    'account' => [
-        'label' => 'Account',
-        'description' => 'Gestione delle impostazioni dell\'account utente',
-        'help' => 'Configura le informazioni del tuo account personale',
-    ],
-    'profile' => [
-        'label' => 'Profilo',
-        'description' => 'Informazioni del profilo utente',
-        'help' => 'Visualizza e modifica le informazioni del tuo profilo',
-    ],
-    'my_profile' => [
-        'label' => 'Il mio profilo',
-        'description' => 'Gestione del profilo personale',
-        'help' => 'Accedi alle impostazioni del tuo profilo personale',
-    ],
-    'subheading' => [
-        'label' => 'Gestisci il tuo profilo.',
-        'description' => 'Aggiorna le tue informazioni personali e le impostazioni dell\'account',
-        'help' => 'Mantieni aggiornate le tue informazioni per un\'esperienza ottimale',
-    ],
-    'fields' => [
-        'id' => [
-            'label' => 'ID',
-            'placeholder' => 'Identificativo univoco',
-            'help' => 'Identificativo univoco dell\'utente nel sistema',
-        ],
-        'type' => [
-            'label' => 'Tipo',
-            'placeholder' => 'Seleziona il tipo',
-            'help' => 'Tipologia di utente nel sistema',
-            'options' => [
-                'admin' => 'Amministratore',
-                'user' => 'Utente',
-                'moderator' => 'Moderatore',
-                'guest' => 'Ospite',
-            ],
-        ],
-        'user' => [
-            'name' => [
-                'label' => 'Nome Utente',
-                'placeholder' => 'Inserisci il nome utente',
-                'help' => 'Nome utilizzato per identificarsi nel sistema',
-            ],
-            'email' => [
-                'label' => 'Email',
-                'placeholder' => 'utente@email.com',
-                'help' => 'Indirizzo email per l\'accesso e le comunicazioni',
-            ],
-            'phone' => [
-                'label' => 'Telefono',
-                'placeholder' => '+39 123 456 7890',
-                'help' => 'Numero di telefono per contatti',
-            ],
-        ],
-        'photo' => [
-            'label' => 'Foto',
-            'placeholder' => 'Carica una foto profilo',
-            'help' => 'Immagine del profilo utente (formato JPG, PNG)',
-        ],
-        'ente' => [
-            'label' => 'Ente',
-            'placeholder' => 'Seleziona l\'ente',
-            'help' => 'Ente di appartenenza dell\'utente',
-        ],
-        'matr' => [
-            'label' => 'Matricola',
-            'placeholder' => 'Inserisci la matricola',
-            'help' => 'Numero di matricola dell\'utente',
-        ],
-        'first_name' => [
-            'label' => 'Nome',
-            'placeholder' => 'Inserisci il nome',
-            'help' => 'Nome di battesimo dell\'utente',
-        ],
-        'last_name' => [
-            'label' => 'Cognome',
-            'placeholder' => 'Inserisci il cognome',
-            'help' => 'Cognome dell\'utente',
-        ],
-        'email' => [
-            'label' => 'Email',
-            'placeholder' => 'utente@email.com',
-            'help' => 'Indirizzo email principale',
-        ],
-        'is_active' => [
-            'label' => 'Attivo',
-            'placeholder' => 'Stato di attivazione',
-            'help' => 'Indica se l\'utente Ã¨ attivo nel sistema',
-        ],
-        'birth_date' => [
-            'label' => 'Data di Nascita',
-            'placeholder' => 'Seleziona la data di nascita',
-            'help' => 'Data di nascita dell\'utente',
-        ],
-        'gender' => [
-            'label' => 'Genere',
-            'placeholder' => 'Seleziona il genere',
-            'help' => 'Genere dell\'utente',
-            'options' => [
-                'male' => 'Maschile',
-                'female' => 'Femminile',
-                'other' => 'Altro',
-                'prefer_not_to_say' => 'Preferisco non dirlo',
-            ],
-        ],
-        'address' => [
-            'label' => 'Indirizzo',
-            'placeholder' => 'Via Roma, 123',
-            'help' => 'Indirizzo di residenza',
-        ],
-        'city' => [
-            'label' => 'CittÃ ',
-            'placeholder' => 'Inserisci la cittÃ ',
-            'help' => 'CittÃ  di residenza',
-        ],
-        'postal_code' => [
-            'label' => 'Codice Postale',
-            'placeholder' => '00100',
-            'help' => 'Codice postale della cittÃ ',
-        ],
-        'country' => [
-            'label' => 'Paese',
-            'placeholder' => 'Seleziona il paese',
-            'help' => 'Paese di residenza',
-        ],
-        'bio' => [
-            'label' => 'Biografia',
-            'placeholder' => 'Scrivi una breve biografia',
-            'help' => 'Descrizione personale o professionale',
-        ],
-        'website' => [
-            'label' => 'Sito Web',
-            'placeholder' => 'https://tuosito.com',
-            'help' => 'Sito web personale o professionale',
-        ],
-        'social_links' => [
-            'label' => 'Link Social',
-            'placeholder' => 'Collegamenti ai social media',
-            'help' => 'Link ai tuoi profili social media',
-        ],
-        'language' => [
-            'label' => 'Lingua',
-            'placeholder' => 'Seleziona la lingua',
-            'help' => 'Lingua preferita per l\'interfaccia',
-            'options' => [
-                'it' => 'Italiano',
-                'en' => 'Inglese',
-                'fr' => 'Francese',
-                'de' => 'Tedesco',
-                'es' => 'Spagnolo',
-            ],
-        ],
-        'timezone' => [
-            'label' => 'Fuso Orario',
-            'placeholder' => 'Seleziona il fuso orario',
-            'help' => 'Fuso orario di riferimento',
-        ],
-        'created_at' => [
-            'label' => 'Data Creazione',
-            'placeholder' => 'Data di registrazione',
-            'help' => 'Data di registrazione dell\'account',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-            'placeholder' => 'Data ultima modifica',
-            'help' => 'Data dell\'ultimo aggiornamento del profilo',
-        ],
-    ],
-    'personal_info' => [
-        'heading' => 'Informazioni personali',
-        'subheading' => 'Gestisci le tue informazioni personali.',
-        'description' => 'Aggiorna i tuoi dati anagrafici e di contatto',
-        'submit' => [
-            'label' => 'Aggiorna',
-            'tooltip' => 'Salva le modifiche alle informazioni personali',
-            'success' => 'Informazioni personali aggiornate con successo',
-            'error' => 'Errore durante l\'aggiornamento delle informazioni',
-        ],
-        'notify' => 'Profilo aggiornato correttamente!',
-    ],
-    'security' => [
-        'heading' => 'Sicurezza',
-        'subheading' => 'Gestisci le impostazioni di sicurezza del tuo account.',
-        'description' => 'Configura password, autenticazione a due fattori e altre impostazioni di sicurezza',
-        'change_password' => [
-            'label' => 'Cambia Password',
-            'description' => 'Aggiorna la password del tuo account',
-            'current_password' => [
-                'label' => 'Password Attuale',
-                'placeholder' => 'Inserisci la password attuale',
-                'help' => 'Conferma la tua password attuale',
-            ],
-            'new_password' => [
-                'label' => 'Nuova Password',
-                'placeholder' => 'Inserisci la nuova password',
-                'help' => 'La password deve contenere almeno 8 caratteri',
-            ],
-            'confirm_password' => [
-                'label' => 'Conferma Password',
-                'placeholder' => 'Conferma la nuova password',
-                'help' => 'Ripeti la nuova password per confermarla',
-            ],
-        ],
-        'two_factor' => [
-            'heading' => 'Autenticazione a Due Fattori',
-            'description' => 'Aggiungi un livello extra di sicurezza al tuo account',
-            'enable' => [
-                'label' => 'Abilita 2FA',
-                'description' => 'Proteggi il tuo account con l\'autenticazione a due fattori',
-            ],
-            'disable' => [
-                'label' => 'Disabilita 2FA',
-                'description' => 'Rimuovi l\'autenticazione a due fattori',
-            ],
-        ],
-    ],
-    'preferences' => [
-        'heading' => 'Preferenze',
-        'subheading' => 'Personalizza la tua esperienza utente.',
-        'description' => 'Configura le tue preferenze per l\'interfaccia e le notifiche',
-        'notifications' => [
-            'label' => 'Notifiche',
-            'email_notifications' => [
-                'label' => 'Notifiche Email',
-                'help' => 'Ricevi notifiche via email',
-            ],
-            'push_notifications' => [
-                'label' => 'Notifiche Push',
-                'help' => 'Ricevi notifiche push nel browser',
-            ],
-            'sms_notifications' => [
-                'label' => 'Notifiche SMS',
-                'help' => 'Ricevi notifiche via SMS',
-            ],
-        ],
-        'privacy' => [
-            'label' => 'Privacy',
-            'profile_visibility' => [
-                'label' => 'VisibilitÃ  Profilo',
-                'help' => 'Chi puÃ² vedere il tuo profilo',
-                'options' => [
-                    'public' => 'Pubblico',
-                    'private' => 'Privato',
-                    'friends' => 'Solo amici',
-                ],
-            ],
-            'show_email' => [
-                'label' => 'Mostra Email',
-                'help' => 'Rendi visibile la tua email nel profilo pubblico',
-            ],
-            'show_phone' => [
-                'label' => 'Mostra Telefono',
-                'help' => 'Rendi visibile il tuo telefono nel profilo pubblico',
-            ],
-        ],
-    ],
-    'actions' => [
-        'edit_profile' => [
-            'label' => 'Modifica Profilo',
-            'tooltip' => 'Modifica le informazioni del profilo',
-        ],
-        'upload_photo' => [
-            'label' => 'Carica Foto',
-            'tooltip' => 'Carica una nuova foto profilo',
-            'success' => 'Foto profilo caricata con successo',
-            'error' => 'Errore durante il caricamento della foto',
-        ],
-        'remove_photo' => [
-            'label' => 'Rimuovi Foto',
-            'tooltip' => 'Rimuovi la foto profilo',
-            'confirmation' => 'Sei sicuro di voler rimuovere la foto profilo?',
-            'success' => 'Foto profilo rimossa con successo',
-            'error' => 'Errore durante la rimozione della foto',
-        ],
-        'delete_account' => [
-            'label' => 'Elimina Account',
-            'tooltip' => 'Elimina definitivamente il tuo account',
-            'confirmation' => 'Sei sicuro di voler eliminare definitivamente il tuo account? Questa azione non puÃ² essere annullata.',
-            'modal_heading' => 'Conferma Eliminazione Account',
-            'modal_description' => 'Tutti i tuoi dati verranno eliminati permanentemente. Questa azione Ã¨ irreversibile.',
-            'success' => 'Account eliminato con successo',
-            'error' => 'Errore durante l\'eliminazione dell\'account',
-        ],
-    ],
-    'sections' => [
-        'basic_info' => [
-            'label' => 'Informazioni Base',
-            'description' => 'Dati anagrafici principali',
-        ],
-        'contact_info' => [
-            'label' => 'Informazioni di Contatto',
-            'description' => 'Email, telefono e indirizzi',
-        ],
-        'professional_info' => [
-            'label' => 'Informazioni Professionali',
-            'description' => 'Ente, matricola e ruolo',
-        ],
-        'personal_preferences' => [
-            'label' => 'Preferenze Personali',
-            'description' => 'Lingua, fuso orario e impostazioni',
-        ],
-    ],
-    'validation' => [
-        'required' => 'Il campo :attribute Ã¨ obbligatorio',
-        'email' => 'Il campo :attribute deve essere un indirizzo email valido',
-        'unique' => 'Il valore del campo :attribute Ã¨ giÃ  in uso',
-        'min' => [
-            'string' => 'Il campo :attribute deve contenere almeno :min caratteri',
-        ],
-        'max' => [
-            'string' => 'Il campo :attribute non puÃ² superare :max caratteri',
-        ],
-        'confirmed' => 'La conferma del campo :attribute non corrisponde',
-        'image' => 'Il file deve essere un\'immagine',
-        'max_file_size' => 'Il file non puÃ² superare :size MB',
-        'url' => 'Il campo :attribute deve essere un URL valido',
-        'phone' => 'Il numero di telefono deve essere valido',
-        'postal_code' => 'Il codice postale deve essere valido',
-    ],
-    'messages' => [
-        'profile_updated' => 'Profilo aggiornato con successo',
-        'password_changed' => 'Password cambiata con successo',
-        'photo_uploaded' => 'Foto profilo caricata con successo',
-        'photo_removed' => 'Foto profilo rimossa',
-        'preferences_saved' => 'Preferenze salvate con successo',
-        'account_deleted' => 'Account eliminato con successo',
-        'error_occurred' => 'Si Ã¨ verificato un errore',
-        'changes_saved' => 'Modifiche salvate',
-        'no_changes' => 'Nessuna modifica da salvare',
-    ],
-];
+|<|?|p|h|p|
+|
+|d|e|c|l|a|r|e|(|s|t|r|i|c|t|_|t|y|p|e|s|=|1|)|;|
+|
+|r|e|t|u|r|n| |[|
+| | | | |'|a|c|c|o|u|n|t|'| |=|>| |[|
+| | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|A|c|c|o|u|n|t|'|,|
+| | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|G|e|s|t|i|o|n|e| |d|e|l|l|e| |i|m|p|o|s|t|a|z|i|o|n|i| |d|e|l|l||'|a|c|c|o|u|n|t| |u|t|e|n|t|e|'|,|
+| | | | | | | | |'|h|e|l|p|'| |=|>| |'|C|o|n|f|i|g|u|r|a| |l|e| |i|n|f|o|r|m|a|z|i|o|n|i| |d|e|l| |t|u|o| |a|c|c|o|u|n|t| |p|e|r|s|o|n|a|l|e|'|,|
+| | | | |]|,|
+| | | | |'|p|r|o|f|i|l|e|'| |=|>| |[|
+| | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|P|r|o|f|i|l|o|'|,|
+| | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|I|n|f|o|r|m|a|z|i|o|n|i| |d|e|l| |p|r|o|f|i|l|o| |u|t|e|n|t|e|'|,|
+| | | | | | | | |'|h|e|l|p|'| |=|>| |'|V|i|s|u|a|l|i|z|z|a| |e| |m|o|d|i|f|i|c|a| |l|e| |i|n|f|o|r|m|a|z|i|o|n|i| |d|e|l| |t|u|o| |p|r|o|f|i|l|o|'|,|
+| | | | |]|,|
+| | | | |'|m|y|_|p|r|o|f|i|l|e|'| |=|>| |[|
+| | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|I|l| |m|i|o| |p|r|o|f|i|l|o|'|,|
+| | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|G|e|s|t|i|o|n|e| |d|e|l| |p|r|o|f|i|l|o| |p|e|r|s|o|n|a|l|e|'|,|
+| | | | | | | | |'|h|e|l|p|'| |=|>| |'|A|c|c|e|d|i| |a|l|l|e| |i|m|p|o|s|t|a|z|i|o|n|i| |d|e|l| |t|u|o| |p|r|o|f|i|l|o| |p|e|r|s|o|n|a|l|e|'|,|
+| | | | |]|,|
+| | | | |'|s|u|b|h|e|a|d|i|n|g|'| |=|>| |[|
+| | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|G|e|s|t|i|s|c|i| |i|l| |t|u|o| |p|r|o|f|i|l|o|.|'|,|
+| | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|A|g|g|i|o|r|n|a| |l|e| |t|u|e| |i|n|f|o|r|m|a|z|i|o|n|i| |p|e|r|s|o|n|a|l|i| |e| |l|e| |i|m|p|o|s|t|a|z|i|o|n|i| |d|e|l|l||'|a|c|c|o|u|n|t|'|,|
+| | | | | | | | |'|h|e|l|p|'| |=|>| |'|M|a|n|t|i|e|n|i| |a|g|g|i|o|r|n|a|t|e| |l|e| |t|u|e| |i|n|f|o|r|m|a|z|i|o|n|i| |p|e|r| |u|n||'|e|s|p|e|r|i|e|n|z|a| |o|t|t|i|m|a|l|e|'|,|
+| | | | |]|,|
+| | | | |'|f|i|e|l|d|s|'| |=|>| |[|
+| | | | | | | | |'|i|d|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|I|D|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|I|d|e|n|t|i|f|i|c|a|t|i|v|o| |u|n|i|v|o|c|o|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|I|d|e|n|t|i|f|i|c|a|t|i|v|o| |u|n|i|v|o|c|o| |d|e|l|l||'|u|t|e|n|t|e| |n|e|l| |s|i|s|t|e|m|a|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|t|y|p|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|T|i|p|o|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|S|e|l|e|z|i|o|n|a| |i|l| |t|i|p|o|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|T|i|p|o|l|o|g|i|a| |d|i| |u|t|e|n|t|e| |n|e|l| |s|i|s|t|e|m|a|'|,|
+| | | | | | | | | | | | |'|o|p|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|a|d|m|i|n|'| |=|>| |'|A|m|m|i|n|i|s|t|r|a|t|o|r|e|'|,|
+| | | | | | | | | | | | | | | | |'|u|s|e|r|'| |=|>| |'|U|t|e|n|t|e|'|,|
+| | | | | | | | | | | | | | | | |'|m|o|d|e|r|a|t|o|r|'| |=|>| |'|M|o|d|e|r|a|t|o|r|e|'|,|
+| | | | | | | | | | | | | | | | |'|g|u|e|s|t|'| |=|>| |'|O|s|p|i|t|e|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|u|s|e|r|'| |=|>| |[|
+| | | | | | | | | | | | |'|n|a|m|e|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|N|o|m|e| |U|t|e|n|t|e|'|,|
+| | | | | | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|I|n|s|e|r|i|s|c|i| |i|l| |n|o|m|e| |u|t|e|n|t|e|'|,|
+| | | | | | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|N|o|m|e| |u|t|i|l|i|z|z|a|t|o| |p|e|r| |i|d|e|n|t|i|f|i|c|a|r|s|i| |n|e|l| |s|i|s|t|e|m|a|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|e|m|a|i|l|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|E|m|a|i|l|'|,|
+| | | | | | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|u|t|e|n|t|e|@|e|m|a|i|l|.|c|o|m|'|,|
+| | | | | | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|I|n|d|i|r|i|z|z|o| |e|m|a|i|l| |p|e|r| |l||'|a|c|c|e|s|s|o| |e| |l|e| |c|o|m|u|n|i|c|a|z|i|o|n|i|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|p|h|o|n|e|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|T|e|l|e|f|o|n|o|'|,|
+| | | | | | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|+|3|9| |1|2|3| |4|5|6| |7|8|9|0|'|,|
+| | | | | | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|N|u|m|e|r|o| |d|i| |t|e|l|e|f|o|n|o| |p|e|r| |c|o|n|t|a|t|t|i|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|p|h|o|t|o|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|F|o|t|o|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|C|a|r|i|c|a| |u|n|a| |f|o|t|o| |p|r|o|f|i|l|o|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|I|m|m|a|g|i|n|e| |d|e|l| |p|r|o|f|i|l|o| |u|t|e|n|t|e| |(|f|o|r|m|a|t|o| |J|P|G|,| |P|N|G|)|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|e|n|t|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|E|n|t|e|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|S|e|l|e|z|i|o|n|a| |l||'|e|n|t|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|E|n|t|e| |d|i| |a|p|p|a|r|t|e|n|e|n|z|a| |d|e|l|l||'|u|t|e|n|t|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|m|a|t|r|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|M|a|t|r|i|c|o|l|a|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|I|n|s|e|r|i|s|c|i| |l|a| |m|a|t|r|i|c|o|l|a|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|N|u|m|e|r|o| |d|i| |m|a|t|r|i|c|o|l|a| |d|e|l|l||'|u|t|e|n|t|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|f|i|r|s|t|_|n|a|m|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|N|o|m|e|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|I|n|s|e|r|i|s|c|i| |i|l| |n|o|m|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|N|o|m|e| |d|i| |b|a|t|t|e|s|i|m|o| |d|e|l|l||'|u|t|e|n|t|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|l|a|s|t|_|n|a|m|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|C|o|g|n|o|m|e|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|I|n|s|e|r|i|s|c|i| |i|l| |c|o|g|n|o|m|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|C|o|g|n|o|m|e| |d|e|l|l||'|u|t|e|n|t|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|e|m|a|i|l|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|E|m|a|i|l|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|u|t|e|n|t|e|@|e|m|a|i|l|.|c|o|m|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|I|n|d|i|r|i|z|z|o| |e|m|a|i|l| |p|r|i|n|c|i|p|a|l|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|i|s|_|a|c|t|i|v|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|A|t|t|i|v|o|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|S|t|a|t|o| |d|i| |a|t|t|i|v|a|z|i|o|n|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|I|n|d|i|c|a| |s|e| |l||'|u|t|e|n|t|e| |Ã|¨| |a|t|t|i|v|o| |n|e|l| |s|i|s|t|e|m|a|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|b|i|r|t|h|_|d|a|t|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|D|a|t|a| |d|i| |N|a|s|c|i|t|a|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|S|e|l|e|z|i|o|n|a| |l|a| |d|a|t|a| |d|i| |n|a|s|c|i|t|a|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|D|a|t|a| |d|i| |n|a|s|c|i|t|a| |d|e|l|l||'|u|t|e|n|t|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|g|e|n|d|e|r|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|G|e|n|e|r|e|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|S|e|l|e|z|i|o|n|a| |i|l| |g|e|n|e|r|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|G|e|n|e|r|e| |d|e|l|l||'|u|t|e|n|t|e|'|,|
+| | | | | | | | | | | | |'|o|p|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|m|a|l|e|'| |=|>| |'|M|a|s|c|h|i|l|e|'|,|
+| | | | | | | | | | | | | | | | |'|f|e|m|a|l|e|'| |=|>| |'|F|e|m|m|i|n|i|l|e|'|,|
+| | | | | | | | | | | | | | | | |'|o|t|h|e|r|'| |=|>| |'|A|l|t|r|o|'|,|
+| | | | | | | | | | | | | | | | |'|p|r|e|f|e|r|_|n|o|t|_|t|o|_|s|a|y|'| |=|>| |'|P|r|e|f|e|r|i|s|c|o| |n|o|n| |d|i|r|l|o|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|a|d|d|r|e|s|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|I|n|d|i|r|i|z|z|o|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|V|i|a| |R|o|m|a|,| |1|2|3|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|I|n|d|i|r|i|z|z|o| |d|i| |r|e|s|i|d|e|n|z|a|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|c|i|t|y|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|C|i|t|t|Ã| |'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|I|n|s|e|r|i|s|c|i| |l|a| |c|i|t|t|Ã| |'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|C|i|t|t|Ã| | |d|i| |r|e|s|i|d|e|n|z|a|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|p|o|s|t|a|l|_|c|o|d|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|C|o|d|i|c|e| |P|o|s|t|a|l|e|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|0|0|1|0|0|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|C|o|d|i|c|e| |p|o|s|t|a|l|e| |d|e|l|l|a| |c|i|t|t|Ã| |'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|c|o|u|n|t|r|y|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|P|a|e|s|e|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|S|e|l|e|z|i|o|n|a| |i|l| |p|a|e|s|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|P|a|e|s|e| |d|i| |r|e|s|i|d|e|n|z|a|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|b|i|o|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|B|i|o|g|r|a|f|i|a|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|S|c|r|i|v|i| |u|n|a| |b|r|e|v|e| |b|i|o|g|r|a|f|i|a|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|D|e|s|c|r|i|z|i|o|n|e| |p|e|r|s|o|n|a|l|e| |o| |p|r|o|f|e|s|s|i|o|n|a|l|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|w|e|b|s|i|t|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|S|i|t|o| |W|e|b|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|h|t|t|p|s|:|/|/|t|u|o|s|i|t|o|.|c|o|m|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|S|i|t|o| |w|e|b| |p|e|r|s|o|n|a|l|e| |o| |p|r|o|f|e|s|s|i|o|n|a|l|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|s|o|c|i|a|l|_|l|i|n|k|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|L|i|n|k| |S|o|c|i|a|l|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|C|o|l|l|e|g|a|m|e|n|t|i| |a|i| |s|o|c|i|a|l| |m|e|d|i|a|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|L|i|n|k| |a|i| |t|u|o|i| |p|r|o|f|i|l|i| |s|o|c|i|a|l| |m|e|d|i|a|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|l|a|n|g|u|a|g|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|L|i|n|g|u|a|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|S|e|l|e|z|i|o|n|a| |l|a| |l|i|n|g|u|a|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|L|i|n|g|u|a| |p|r|e|f|e|r|i|t|a| |p|e|r| |l||'|i|n|t|e|r|f|a|c|c|i|a|'|,|
+| | | | | | | | | | | | |'|o|p|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|i|t|'| |=|>| |'|I|t|a|l|i|a|n|o|'|,|
+| | | | | | | | | | | | | | | | |'|e|n|'| |=|>| |'|I|n|g|l|e|s|e|'|,|
+| | | | | | | | | | | | | | | | |'|f|r|'| |=|>| |'|F|r|a|n|c|e|s|e|'|,|
+| | | | | | | | | | | | | | | | |'|d|e|'| |=|>| |'|T|e|d|e|s|c|o|'|,|
+| | | | | | | | | | | | | | | | |'|e|s|'| |=|>| |'|S|p|a|g|n|o|l|o|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|t|i|m|e|z|o|n|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|F|u|s|o| |O|r|a|r|i|o|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|S|e|l|e|z|i|o|n|a| |i|l| |f|u|s|o| |o|r|a|r|i|o|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|F|u|s|o| |o|r|a|r|i|o| |d|i| |r|i|f|e|r|i|m|e|n|t|o|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|c|r|e|a|t|e|d|_|a|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|D|a|t|a| |C|r|e|a|z|i|o|n|e|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|D|a|t|a| |d|i| |r|e|g|i|s|t|r|a|z|i|o|n|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|D|a|t|a| |d|i| |r|e|g|i|s|t|r|a|z|i|o|n|e| |d|e|l|l||'|a|c|c|o|u|n|t|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|u|p|d|a|t|e|d|_|a|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|U|l|t|i|m|a| |M|o|d|i|f|i|c|a|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|D|a|t|a| |u|l|t|i|m|a| |m|o|d|i|f|i|c|a|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|D|a|t|a| |d|e|l|l||'|u|l|t|i|m|o| |a|g|g|i|o|r|n|a|m|e|n|t|o| |d|e|l| |p|r|o|f|i|l|o|'|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |'|p|e|r|s|o|n|a|l|_|i|n|f|o|'| |=|>| |[|
+| | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|I|n|f|o|r|m|a|z|i|o|n|i| |p|e|r|s|o|n|a|l|i|'|,|
+| | | | | | | | |'|s|u|b|h|e|a|d|i|n|g|'| |=|>| |'|G|e|s|t|i|s|c|i| |l|e| |t|u|e| |i|n|f|o|r|m|a|z|i|o|n|i| |p|e|r|s|o|n|a|l|i|.|'|,|
+| | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|A|g|g|i|o|r|n|a| |i| |t|u|o|i| |d|a|t|i| |a|n|a|g|r|a|f|i|c|i| |e| |d|i| |c|o|n|t|a|t|t|o|'|,|
+| | | | | | | | |'|s|u|b|m|i|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|A|g|g|i|o|r|n|a|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|S|a|l|v|a| |l|e| |m|o|d|i|f|i|c|h|e| |a|l|l|e| |i|n|f|o|r|m|a|z|i|o|n|i| |p|e|r|s|o|n|a|l|i|'|,|
+| | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|I|n|f|o|r|m|a|z|i|o|n|i| |p|e|r|s|o|n|a|l|i| |a|g|g|i|o|r|n|a|t|e| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|E|r|r|o|r|e| |d|u|r|a|n|t|e| |l||'|a|g|g|i|o|r|n|a|m|e|n|t|o| |d|e|l|l|e| |i|n|f|o|r|m|a|z|i|o|n|i|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|n|o|t|i|f|y|'| |=|>| |'|P|r|o|f|i|l|o| |a|g|g|i|o|r|n|a|t|o| |c|o|r|r|e|t|t|a|m|e|n|t|e|!|'|,|
+| | | | |]|,|
+| | | | |'|s|e|c|u|r|i|t|y|'| |=|>| |[|
+| | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|S|i|c|u|r|e|z|z|a|'|,|
+| | | | | | | | |'|s|u|b|h|e|a|d|i|n|g|'| |=|>| |'|G|e|s|t|i|s|c|i| |l|e| |i|m|p|o|s|t|a|z|i|o|n|i| |d|i| |s|i|c|u|r|e|z|z|a| |d|e|l| |t|u|o| |a|c|c|o|u|n|t|.|'|,|
+| | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|C|o|n|f|i|g|u|r|a| |p|a|s|s|w|o|r|d|,| |a|u|t|e|n|t|i|c|a|z|i|o|n|e| |a| |d|u|e| |f|a|t|t|o|r|i| |e| |a|l|t|r|e| |i|m|p|o|s|t|a|z|i|o|n|i| |d|i| |s|i|c|u|r|e|z|z|a|'|,|
+| | | | | | | | |'|c|h|a|n|g|e|_|p|a|s|s|w|o|r|d|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|C|a|m|b|i|a| |P|a|s|s|w|o|r|d|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|A|g|g|i|o|r|n|a| |l|a| |p|a|s|s|w|o|r|d| |d|e|l| |t|u|o| |a|c|c|o|u|n|t|'|,|
+| | | | | | | | | | | | |'|c|u|r|r|e|n|t|_|p|a|s|s|w|o|r|d|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|P|a|s|s|w|o|r|d| |A|t|t|u|a|l|e|'|,|
+| | | | | | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|I|n|s|e|r|i|s|c|i| |l|a| |p|a|s|s|w|o|r|d| |a|t|t|u|a|l|e|'|,|
+| | | | | | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|C|o|n|f|e|r|m|a| |l|a| |t|u|a| |p|a|s|s|w|o|r|d| |a|t|t|u|a|l|e|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|n|e|w|_|p|a|s|s|w|o|r|d|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|N|u|o|v|a| |P|a|s|s|w|o|r|d|'|,|
+| | | | | | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|I|n|s|e|r|i|s|c|i| |l|a| |n|u|o|v|a| |p|a|s|s|w|o|r|d|'|,|
+| | | | | | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|L|a| |p|a|s|s|w|o|r|d| |d|e|v|e| |c|o|n|t|e|n|e|r|e| |a|l|m|e|n|o| |8| |c|a|r|a|t|t|e|r|i|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|c|o|n|f|i|r|m|_|p|a|s|s|w|o|r|d|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|C|o|n|f|e|r|m|a| |P|a|s|s|w|o|r|d|'|,|
+| | | | | | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|C|o|n|f|e|r|m|a| |l|a| |n|u|o|v|a| |p|a|s|s|w|o|r|d|'|,|
+| | | | | | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|R|i|p|e|t|i| |l|a| |n|u|o|v|a| |p|a|s|s|w|o|r|d| |p|e|r| |c|o|n|f|e|r|m|a|r|l|a|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|t|w|o|_|f|a|c|t|o|r|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|A|u|t|e|n|t|i|c|a|z|i|o|n|e| |a| |D|u|e| |F|a|t|t|o|r|i|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|A|g|g|i|u|n|g|i| |u|n| |l|i|v|e|l|l|o| |e|x|t|r|a| |d|i| |s|i|c|u|r|e|z|z|a| |a|l| |t|u|o| |a|c|c|o|u|n|t|'|,|
+| | | | | | | | | | | | |'|e|n|a|b|l|e|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|A|b|i|l|i|t|a| |2|F|A|'|,|
+| | | | | | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|P|r|o|t|e|g|g|i| |i|l| |t|u|o| |a|c|c|o|u|n|t| |c|o|n| |l||'|a|u|t|e|n|t|i|c|a|z|i|o|n|e| |a| |d|u|e| |f|a|t|t|o|r|i|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|d|i|s|a|b|l|e|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|D|i|s|a|b|i|l|i|t|a| |2|F|A|'|,|
+| | | | | | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|R|i|m|u|o|v|i| |l||'|a|u|t|e|n|t|i|c|a|z|i|o|n|e| |a| |d|u|e| |f|a|t|t|o|r|i|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |'|p|r|e|f|e|r|e|n|c|e|s|'| |=|>| |[|
+| | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|P|r|e|f|e|r|e|n|z|e|'|,|
+| | | | | | | | |'|s|u|b|h|e|a|d|i|n|g|'| |=|>| |'|P|e|r|s|o|n|a|l|i|z|z|a| |l|a| |t|u|a| |e|s|p|e|r|i|e|n|z|a| |u|t|e|n|t|e|.|'|,|
+| | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|C|o|n|f|i|g|u|r|a| |l|e| |t|u|e| |p|r|e|f|e|r|e|n|z|e| |p|e|r| |l||'|i|n|t|e|r|f|a|c|c|i|a| |e| |l|e| |n|o|t|i|f|i|c|h|e|'|,|
+| | | | | | | | |'|n|o|t|i|f|i|c|a|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|N|o|t|i|f|i|c|h|e|'|,|
+| | | | | | | | | | | | |'|e|m|a|i|l|_|n|o|t|i|f|i|c|a|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|N|o|t|i|f|i|c|h|e| |E|m|a|i|l|'|,|
+| | | | | | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|R|i|c|e|v|i| |n|o|t|i|f|i|c|h|e| |v|i|a| |e|m|a|i|l|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|p|u|s|h|_|n|o|t|i|f|i|c|a|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|N|o|t|i|f|i|c|h|e| |P|u|s|h|'|,|
+| | | | | | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|R|i|c|e|v|i| |n|o|t|i|f|i|c|h|e| |p|u|s|h| |n|e|l| |b|r|o|w|s|e|r|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|s|m|s|_|n|o|t|i|f|i|c|a|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|N|o|t|i|f|i|c|h|e| |S|M|S|'|,|
+| | | | | | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|R|i|c|e|v|i| |n|o|t|i|f|i|c|h|e| |v|i|a| |S|M|S|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|p|r|i|v|a|c|y|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|P|r|i|v|a|c|y|'|,|
+| | | | | | | | | | | | |'|p|r|o|f|i|l|e|_|v|i|s|i|b|i|l|i|t|y|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|V|i|s|i|b|i|l|i|t|Ã| | |P|r|o|f|i|l|o|'|,|
+| | | | | | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|C|h|i| |p|u|Ã|²| |v|e|d|e|r|e| |i|l| |t|u|o| |p|r|o|f|i|l|o|'|,|
+| | | | | | | | | | | | | | | | |'|o|p|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | | | | | |'|p|u|b|l|i|c|'| |=|>| |'|P|u|b|b|l|i|c|o|'|,|
+| | | | | | | | | | | | | | | | | | | | |'|p|r|i|v|a|t|e|'| |=|>| |'|P|r|i|v|a|t|o|'|,|
+| | | | | | | | | | | | | | | | | | | | |'|f|r|i|e|n|d|s|'| |=|>| |'|S|o|l|o| |a|m|i|c|i|'|,|
+| | | | | | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|s|h|o|w|_|e|m|a|i|l|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|M|o|s|t|r|a| |E|m|a|i|l|'|,|
+| | | | | | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|R|e|n|d|i| |v|i|s|i|b|i|l|e| |l|a| |t|u|a| |e|m|a|i|l| |n|e|l| |p|r|o|f|i|l|o| |p|u|b|b|l|i|c|o|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|s|h|o|w|_|p|h|o|n|e|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|M|o|s|t|r|a| |T|e|l|e|f|o|n|o|'|,|
+| | | | | | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|R|e|n|d|i| |v|i|s|i|b|i|l|e| |i|l| |t|u|o| |t|e|l|e|f|o|n|o| |n|e|l| |p|r|o|f|i|l|o| |p|u|b|b|l|i|c|o|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |'|a|c|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | |'|e|d|i|t|_|p|r|o|f|i|l|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|M|o|d|i|f|i|c|a| |P|r|o|f|i|l|o|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|M|o|d|i|f|i|c|a| |l|e| |i|n|f|o|r|m|a|z|i|o|n|i| |d|e|l| |p|r|o|f|i|l|o|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|u|p|l|o|a|d|_|p|h|o|t|o|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|C|a|r|i|c|a| |F|o|t|o|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|C|a|r|i|c|a| |u|n|a| |n|u|o|v|a| |f|o|t|o| |p|r|o|f|i|l|o|'|,|
+| | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|F|o|t|o| |p|r|o|f|i|l|o| |c|a|r|i|c|a|t|a| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|E|r|r|o|r|e| |d|u|r|a|n|t|e| |i|l| |c|a|r|i|c|a|m|e|n|t|o| |d|e|l|l|a| |f|o|t|o|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|r|e|m|o|v|e|_|p|h|o|t|o|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|R|i|m|u|o|v|i| |F|o|t|o|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|R|i|m|u|o|v|i| |l|a| |f|o|t|o| |p|r|o|f|i|l|o|'|,|
+| | | | | | | | | | | | |'|c|o|n|f|i|r|m|a|t|i|o|n|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |r|i|m|u|o|v|e|r|e| |l|a| |f|o|t|o| |p|r|o|f|i|l|o|?|'|,|
+| | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|F|o|t|o| |p|r|o|f|i|l|o| |r|i|m|o|s|s|a| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|E|r|r|o|r|e| |d|u|r|a|n|t|e| |l|a| |r|i|m|o|z|i|o|n|e| |d|e|l|l|a| |f|o|t|o|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|d|e|l|e|t|e|_|a|c|c|o|u|n|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|E|l|i|m|i|n|a| |A|c|c|o|u|n|t|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|E|l|i|m|i|n|a| |d|e|f|i|n|i|t|i|v|a|m|e|n|t|e| |i|l| |t|u|o| |a|c|c|o|u|n|t|'|,|
+| | | | | | | | | | | | |'|c|o|n|f|i|r|m|a|t|i|o|n|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |e|l|i|m|i|n|a|r|e| |d|e|f|i|n|i|t|i|v|a|m|e|n|t|e| |i|l| |t|u|o| |a|c|c|o|u|n|t|?| |Q|u|e|s|t|a| |a|z|i|o|n|e| |n|o|n| |p|u|Ã|²| |e|s|s|e|r|e| |a|n|n|u|l|l|a|t|a|.|'|,|
+| | | | | | | | | | | | |'|m|o|d|a|l|_|h|e|a|d|i|n|g|'| |=|>| |'|C|o|n|f|e|r|m|a| |E|l|i|m|i|n|a|z|i|o|n|e| |A|c|c|o|u|n|t|'|,|
+| | | | | | | | | | | | |'|m|o|d|a|l|_|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|T|u|t|t|i| |i| |t|u|o|i| |d|a|t|i| |v|e|r|r|a|n|n|o| |e|l|i|m|i|n|a|t|i| |p|e|r|m|a|n|e|n|t|e|m|e|n|t|e|.| |Q|u|e|s|t|a| |a|z|i|o|n|e| |Ã|¨| |i|r|r|e|v|e|r|s|i|b|i|l|e|.|'|,|
+| | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|A|c|c|o|u|n|t| |e|l|i|m|i|n|a|t|o| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|E|r|r|o|r|e| |d|u|r|a|n|t|e| |l||'|e|l|i|m|i|n|a|z|i|o|n|e| |d|e|l|l||'|a|c|c|o|u|n|t|'|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |'|s|e|c|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | |'|b|a|s|i|c|_|i|n|f|o|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|I|n|f|o|r|m|a|z|i|o|n|i| |B|a|s|e|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|D|a|t|i| |a|n|a|g|r|a|f|i|c|i| |p|r|i|n|c|i|p|a|l|i|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|c|o|n|t|a|c|t|_|i|n|f|o|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|I|n|f|o|r|m|a|z|i|o|n|i| |d|i| |C|o|n|t|a|t|t|o|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|E|m|a|i|l|,| |t|e|l|e|f|o|n|o| |e| |i|n|d|i|r|i|z|z|i|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|p|r|o|f|e|s|s|i|o|n|a|l|_|i|n|f|o|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|I|n|f|o|r|m|a|z|i|o|n|i| |P|r|o|f|e|s|s|i|o|n|a|l|i|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|E|n|t|e|,| |m|a|t|r|i|c|o|l|a| |e| |r|u|o|l|o|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|p|e|r|s|o|n|a|l|_|p|r|e|f|e|r|e|n|c|e|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|P|r|e|f|e|r|e|n|z|e| |P|e|r|s|o|n|a|l|i|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|L|i|n|g|u|a|,| |f|u|s|o| |o|r|a|r|i|o| |e| |i|m|p|o|s|t|a|z|i|o|n|i|'|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |'|v|a|l|i|d|a|t|i|o|n|'| |=|>| |[|
+| | | | | | | | |'|r|e|q|u|i|r|e|d|'| |=|>| |'|I|l| |c|a|m|p|o| |:|a|t|t|r|i|b|u|t|e| |Ã|¨| |o|b|b|l|i|g|a|t|o|r|i|o|'|,|
+| | | | | | | | |'|e|m|a|i|l|'| |=|>| |'|I|l| |c|a|m|p|o| |:|a|t|t|r|i|b|u|t|e| |d|e|v|e| |e|s|s|e|r|e| |u|n| |i|n|d|i|r|i|z|z|o| |e|m|a|i|l| |v|a|l|i|d|o|'|,|
+| | | | | | | | |'|u|n|i|q|u|e|'| |=|>| |'|I|l| |v|a|l|o|r|e| |d|e|l| |c|a|m|p|o| |:|a|t|t|r|i|b|u|t|e| |Ã|¨| |g|i|Ã| | |i|n| |u|s|o|'|,|
+| | | | | | | | |'|m|i|n|'| |=|>| |[|
+| | | | | | | | | | | | |'|a|r|r|a|y|<|i|n|t|||s|t|r|i|n|g|'| |=|>| |'|I|l| |c|a|m|p|o| |:|a|t|t|r|i|b|u|t|e| |d|e|v|e| |c|o|n|t|e|n|e|r|e| |a|l|m|e|n|o| |:|m|i|n| |c|a|r|a|t|t|e|r|i|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|m|a|x|'| |=|>| |[|
+| | | | | | | | | | | | |'|a|r|r|a|y|<|i|n|t|||s|t|r|i|n|g|'| |=|>| |'|I|l| |c|a|m|p|o| |:|a|t|t|r|i|b|u|t|e| |n|o|n| |p|u|Ã|²| |s|u|p|e|r|a|r|e| |:|m|a|x| |c|a|r|a|t|t|e|r|i|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|c|o|n|f|i|r|m|e|d|'| |=|>| |'|L|a| |c|o|n|f|e|r|m|a| |d|e|l| |c|a|m|p|o| |:|a|t|t|r|i|b|u|t|e| |n|o|n| |c|o|r|r|i|s|p|o|n|d|e|'|,|
+| | | | | | | | |'|i|m|a|g|e|'| |=|>| |'|I|l| |f|i|l|e| |d|e|v|e| |e|s|s|e|r|e| |u|n||'|i|m|m|a|g|i|n|e|'|,|
+| | | | | | | | |'|m|a|x|_|f|i|l|e|_|s|i|z|e|'| |=|>| |'|I|l| |f|i|l|e| |n|o|n| |p|u|Ã|²| |s|u|p|e|r|a|r|e| |:|s|i|z|e| |M|B|'|,|
+| | | | | | | | |'|u|r|l|'| |=|>| |'|I|l| |c|a|m|p|o| |:|a|t|t|r|i|b|u|t|e| |d|e|v|e| |e|s|s|e|r|e| |u|n| |U|R|L| |v|a|l|i|d|o|'|,|
+| | | | | | | | |'|p|h|o|n|e|'| |=|>| |'|I|l| |n|u|m|e|r|o| |d|i| |t|e|l|e|f|o|n|o| |d|e|v|e| |e|s|s|e|r|e| |v|a|l|i|d|o|'|,|
+| | | | | | | | |'|p|o|s|t|a|l|_|c|o|d|e|'| |=|>| |'|I|l| |c|o|d|i|c|e| |p|o|s|t|a|l|e| |d|e|v|e| |e|s|s|e|r|e| |v|a|l|i|d|o|'|,|
+| | | | |]|,|
+| | | | |'|m|e|s|s|a|g|e|s|'| |=|>| |[|
+| | | | | | | | |'|p|r|o|f|i|l|e|_|u|p|d|a|t|e|d|'| |=|>| |'|P|r|o|f|i|l|o| |a|g|g|i|o|r|n|a|t|o| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | |'|p|a|s|s|w|o|r|d|_|c|h|a|n|g|e|d|'| |=|>| |'|P|a|s|s|w|o|r|d| |c|a|m|b|i|a|t|a| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | |'|p|h|o|t|o|_|u|p|l|o|a|d|e|d|'| |=|>| |'|F|o|t|o| |p|r|o|f|i|l|o| |c|a|r|i|c|a|t|a| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | |'|p|h|o|t|o|_|r|e|m|o|v|e|d|'| |=|>| |'|F|o|t|o| |p|r|o|f|i|l|o| |r|i|m|o|s|s|a|'|,|
+| | | | | | | | |'|p|r|e|f|e|r|e|n|c|e|s|_|s|a|v|e|d|'| |=|>| |'|P|r|e|f|e|r|e|n|z|e| |s|a|l|v|a|t|e| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | |'|a|c|c|o|u|n|t|_|d|e|l|e|t|e|d|'| |=|>| |'|A|c|c|o|u|n|t| |e|l|i|m|i|n|a|t|o| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | |'|e|r|r|o|r|_|o|c|c|u|r|r|e|d|'| |=|>| |'|S|i| |Ã|¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e|'|,|
+| | | | | | | | |'|c|h|a|n|g|e|s|_|s|a|v|e|d|'| |=|>| |'|M|o|d|i|f|i|c|h|e| |s|a|l|v|a|t|e|'|,|
+| | | | | | | | |'|n|o|_|c|h|a|n|g|e|s|'| |=|>| |'|N|e|s|s|u|n|a| |m|o|d|i|f|i|c|a| |d|a| |s|a|l|v|a|r|e|'|,|
+| | | | |]|,|
+|]|;|
+|

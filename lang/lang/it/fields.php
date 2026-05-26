@@ -1,26 +1,27 @@
-<?php
-
-declare(strict_types=1);
-
-return [
-    'name' => 'Nome',
-    'slug' => 'Slug',
-    'email' => 'Email',
-    'created_at' => 'Creato il',
-    'updated_at' => 'Aggiornato il',
-    'role' => 'Ruolo',
-    'id.label' => 'ID',
-    'name.label' => 'Nome',
-    'slug.label' => 'Slug',
-    'actions' => [
-        'attach_user' => 'Attacca utente',
-    ],
-    'new_password' => [
-        'label' => 'Nuova Password',
-        'placeholder' => 'Inserisci la tua nuova password',
-    ],
-    'confirm_password' => [
-        'label' => 'Conferma Password',
-        'placeholder' => 'Conferma la tua nuova password',
-    ],
-];
+|<|?|p|h|p|
+|
+|d|e|c|l|a|r|e|(|s|t|r|i|c|t|_|t|y|p|e|s|=|1|)|;|
+|
+|r|e|t|u|r|n| |[|
+| | | | |'|n|a|m|e|'| |=|>| |'|N|o|m|e|'|,|
+| | | | |'|s|l|u|g|'| |=|>| |'|S|l|u|g|'|,|
+| | | | |'|e|m|a|i|l|'| |=|>| |'|E|m|a|i|l|'|,|
+| | | | |'|c|r|e|a|t|e|d|_|a|t|'| |=|>| |'|C|r|e|a|t|o| |i|l|'|,|
+| | | | |'|u|p|d|a|t|e|d|_|a|t|'| |=|>| |'|A|g|g|i|o|r|n|a|t|o| |i|l|'|,|
+| | | | |'|r|o|l|e|'| |=|>| |'|R|u|o|l|o|'|,|
+| | | | |'|i|d|.|l|a|b|e|l|'| |=|>| |'|I|D|'|,|
+| | | | |'|n|a|m|e|.|l|a|b|e|l|'| |=|>| |'|N|o|m|e|'|,|
+| | | | |'|s|l|u|g|.|l|a|b|e|l|'| |=|>| |'|S|l|u|g|'|,|
+| | | | |'|a|c|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | |'|a|t|t|a|c|h|_|u|s|e|r|'| |=|>| |'|A|t|t|a|c|c|a| |u|t|e|n|t|e|'|,|
+| | | | |]|,|
+| | | | |'|n|e|w|_|p|a|s|s|w|o|r|d|'| |=|>| |[|
+| | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|N|u|o|v|a| |P|a|s|s|w|o|r|d|'|,|
+| | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|I|n|s|e|r|i|s|c|i| |l|a| |t|u|a| |n|u|o|v|a| |p|a|s|s|w|o|r|d|'|,|
+| | | | |]|,|
+| | | | |'|c|o|n|f|i|r|m|_|p|a|s|s|w|o|r|d|'| |=|>| |[|
+| | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|C|o|n|f|e|r|m|a| |P|a|s|s|w|o|r|d|'|,|
+| | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|C|o|n|f|e|r|m|a| |l|a| |t|u|a| |n|u|o|v|a| |p|a|s|s|w|o|r|d|'|,|
+| | | | |]|,|
+|]|;|
+|
