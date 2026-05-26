@@ -57,13 +57,8 @@ class RegisterTenant extends BaseRegisterTenant
         $schema = $resourceClass::getFormSchema();
         Assert::isArray($schema);
 
-        $components = [];
-        foreach ($schema as $key => $component) {
-            Assert::isInstanceOf($component, Component::class);
-            $components[$key] = $component;
-        }
-
-        return $components;
+        /* @var array<int|string, Component> */
+        return $schema;
     }
 
     /**
