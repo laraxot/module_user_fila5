@@ -490,6 +490,10 @@ return [
             'icon' => 'createAnother',
             'label' => 'createAnother',
         ],
+        'resetColumnManager' => [
+            'tooltip' => 'resetColumnManager',
+            'icon' => 'resetColumnManager',
+        ],
     ],
     'messages' => [
         'created' => 'Utente creato con successo',
