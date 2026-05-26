@@ -13,10 +13,6 @@ use function Safe\file_get_contents;
 
 use Webmozart\Assert\Assert;
 
-use function Safe\file_get_contents;
-
-use Webmozart\Assert\Assert;
-
 class PrivacyPolicy extends Component
 {
     /**
