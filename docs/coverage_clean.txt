@@ -1,2 +1,7 @@
-  at Modules/User/tests/Feature/AuthComponentsTest.php:16
-  1   Modules/User/tests/Feature/AuthComponentsTest.php:16
+---
+module: theme
+topic: coverage_clean
+canonical: ../../../Themes/docs/shared-components/coverage-clean-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/coverage-clean-Modules.md
