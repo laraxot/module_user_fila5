@@ -571,9 +571,41 @@ return [
             ],
         ],
         'register' => [
-            'title' => 'Registrati',
-            'subtitle' => 'Crea un nuovo account',
-            'button' => 'Registrati',
+            'title' => [
+                'text' => 'Registrati',
+            ],
+            'subtitle' => [
+                'text' => 'Crea un nuovo account',
+            ],
+            'description' => [
+                'text' => 'Inserisci i tuoi dati per completare la registrazione',
+            ],
+            'button' => [
+                'text' => 'Registrati',
+            ],
+            'login' => [
+                'text' => 'Accedi',
+            ],
+            'already_have_account' => [
+                'text' => 'Hai già un account?',
+            ],
+            'submit' => [
+                'text' => 'Registrati',
+            ],
+            'sidebar' => [
+                'support_title' => [
+                    'text' => 'Hai bisogno di aiuto?',
+                ],
+                'help_email' => [
+                    'text' => 'Contatta il supporto via email',
+                ],
+                'help_password' => [
+                    'text' => 'Password dimenticata? Recupera l\'accesso',
+                ],
+                'help_support' => [
+                    'text' => 'Guida e assistenza',
+                ],
+            ],
             'fields' => [
                 'first_name' => 'Nome',
                 'last_name' => 'Cognome',

@@ -319,6 +319,12 @@ return [
             'description' => 'Pulsante per avviare il processo di registrazione',
             'context' => 'login_form',
             'placeholder' => '',
+            'actions' => [
+                'submit' => [
+                    'label' => 'Registrati',
+                    'description' => 'Etichetta del pulsante di invio nel form di registrazione',
+                ],
+            ],
         ],
         'success' => [
             'key' => 'user::auth.login-success',
@@ -441,15 +447,50 @@ return [
     'register' => [
         'title' => [
             'key' => 'user::auth.register-title',
-            'text' => 'Crea un nuovo account',
+            'label' => 'Crea un nuovo account',
             'description' => 'Titolo della pagina di registrazione',
             'context' => 'registration_form',
             'placeholder' => '',
         ],
         'subtitle' => [
             'key' => 'user::auth.register-subtitle',
-            'text' => 'Inserisci i tuoi dati per registrarti',
+            'label' => 'Inserisci i tuoi dati per registrarti',
             'description' => 'Sottotitolo della pagina di registrazione',
+            'context' => 'registration_form',
+            'placeholder' => '',
+        ],
+        'description' => [
+            'key' => 'user::auth.register-description',
+            'label' => 'Inserisci i tuoi dati per registrarti',
+            'description' => 'Descrizione pagina registrazione',
+            'context' => 'registration_form',
+            'placeholder' => '',
+        ],
+        'support_title' => [
+            'key' => 'user::auth.register-support-title',
+            'label' => 'Supporto registrazione',
+            'description' => 'Titolo box di supporto registrazione',
+            'context' => 'registration_form',
+            'placeholder' => '',
+        ],
+        'support_item_email' => [
+            'key' => 'user::auth.register-support-item-email',
+            'label' => 'Usa l’indirizzo email che userai per accedere.',
+            'description' => 'Suggerimento per email',
+            'context' => 'registration_form',
+            'placeholder' => '',
+        ],
+        'support_item_password' => [
+            'key' => 'user::auth.register-support-item-password',
+            'label' => 'La password deve contenere almeno 12 caratteri, un numero, una maiuscola, una minuscola e un simbolo.',
+            'description' => 'Suggerimento per password',
+            'context' => 'registration_form',
+            'placeholder' => '',
+        ],
+        'support_item_help' => [
+            'key' => 'user::auth.register-support-item-help',
+            'label' => 'Per assistenza contatta l’ufficio competente.',
+            'description' => 'Suggerimento supporto',
             'context' => 'registration_form',
             'placeholder' => '',
         ],
