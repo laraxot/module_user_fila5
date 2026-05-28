@@ -1,14 +1,7 @@
-# directory_structure_checklist - User
+---
+module: theme
+topic: directory_structure_checklist
+canonical: ../../../../Themes/docs/shared-components/directory_structure_checklist.md
+---
 
-## Overview
-
-Documentazione per directory_structure_checklist nel modulo User.
-
-## Dettagli
-
-[Da completare]
-
-## Collegamenti
-
-- [Modulo Principale](../README.md)
-
+See canonical documentation: ../../../../Themes/docs/shared-components/directory_structure_checklist.md

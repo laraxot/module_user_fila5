@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Grid;
-use Filament\Schemas\Components\Section;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -18,6 +18,8 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 class RegisterWidget extends XotBaseWidget
 {
+    use InteractsWithForms;
+
     protected string $view = 'user::widgets.auth.register-widget';
 
     protected static ?int $sort = 2;
@@ -38,56 +40,54 @@ class RegisterWidget extends XotBaseWidget
     public function getFormSchema(): array
     {
         return [
-            'user_info' => Section::make()->schema([
-                'first_name' => TextInput::make('first_name')
+            'first_name' => TextInput::make('first_name')
+                ->required()
+                ->string()
+                ->minLength(2)
+                ->maxLength(255)
+                ->autocomplete('given-name'),
+            'last_name' => TextInput::make('last_name')
+                ->required()
+                ->string()
+                ->minLength(2)
+                ->maxLength(255)
+                ->autocomplete('family-name'),
+            'email' => TextInput::make('email')
+                ->required()
+                ->email()
+                ->maxLength(255)
+                ->unique(User::class, 'email')
+                ->autocomplete('email'),
+            'password_grid' => Grid::make(2)->schema([
+                'password' => TextInput::make('password')
+                    ->password()
                     ->required()
                     ->string()
-                    ->minLength(2)
+                    ->minLength(12)
                     ->maxLength(255)
-                    ->autocomplete('given-name'),
-                'last_name' => TextInput::make('last_name')
+                    ->rules([
+                        'required',
+                        'string',
+                        'min:12',
+                        'regex:/[A-Z]/',
+                        'regex:/[a-z]/',
+                        'regex:/[0-9]/',
+                        'regex:/[^A-Za-z0-9]/',
+                    ])
+                    ->validationMessages([
+                        'password.regex' => __('user::auth.validation.password.complexity'),
+                    ])
+                    ->autocomplete('new-password')
+                    ->confirmed(),
+                'password_confirmation' => TextInput::make('password_confirmation')
+                    ->password()
                     ->required()
                     ->string()
-                    ->minLength(2)
+                    ->minLength(12)
                     ->maxLength(255)
-                    ->autocomplete('family-name'),
-                'email' => TextInput::make('email')
-                    ->required()
-                    ->email()
-                    ->maxLength(255)
-                    ->unique(User::class, 'email')
-                    ->autocomplete('email'),
-                'password_grid' => Grid::make(2)->schema([
-                    'password' => TextInput::make('password')
-                        ->password()
-                        ->required()
-                        ->string()
-                        ->minLength(12)
-                        ->maxLength(255)
-                        ->rules([
-                            'required',
-                            'string',
-                            'min:12',
-                            'regex:/[A-Z]/',
-                            'regex:/[a-z]/',
-                            'regex:/[0-9]/',
-                            'regex:/[^A-Za-z0-9]/',
-                        ])
-                        ->validationMessages([
-                            'password.regex' => __('user::auth.validation.password.complexity'),
-                        ])
-                        ->autocomplete('new-password')
-                        ->confirmed(),
-                    'password_confirmation' => TextInput::make('password_confirmation')
-                        ->password()
-                        ->required()
-                        ->string()
-                        ->minLength(12)
-                        ->maxLength(255)
-                        ->autocomplete('new-password')
-                        ->dehydrated(false)
-                        ->same('password'),
-                ]),
+                    ->autocomplete('new-password')
+                    ->dehydrated(false)
+                    ->same('password'),
             ]),
         ];
     }
