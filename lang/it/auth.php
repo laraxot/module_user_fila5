@@ -497,7 +497,7 @@ return [
             'context' => 'registration_form',
             'placeholder' => '',
         ],
-                'sidebar' => [
+        'sidebar' => [
             'support_title' => [
                 'text' => 'Supporto registrazione',
             ],
@@ -511,7 +511,7 @@ return [
                 'text' => "Per assistenza contatta l'ufficio competente.",
             ],
         ],
-'name' => [
+        'name' => [
             'key' => 'user::auth.register-name',
             'text' => 'Nome completo',
             'description' => 'Etichetta per il campo nome completo nel form di registrazione',
