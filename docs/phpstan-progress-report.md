@@ -1,3 +1,4 @@
+*Ultimo aggiornamento: 2025-01-22*
 ---
 module: theme
 topic: phpstan-progress-report

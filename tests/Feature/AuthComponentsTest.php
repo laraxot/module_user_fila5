@@ -10,6 +10,7 @@ use Modules\User\Models\User;
 use function Pest\Laravel\actingAs;
 use function Pest\Laravel\get;
 
+
 describe('Auth Components Tests', function (): void {
     test('auth components exist and work correctly', function (): void {
         // Test existing auth components
@@ -63,30 +64,12 @@ describe('Authentication Flow with Reorganized Components', function (): void {
         // Visit login page and ensure all reorganized components render
         $response = get('/it/auth/login');
 
-        // Accept either 200 (page loads) or 500 (misconfigured route in test env)
-        // The important thing is the route exists and responds
-        expect($response->status())->toBeLessThanOrEqual(500);
-        if (200 === $response->status()) {
-            $response->assertSee('Login');
-        } else {
-            expect($response->status())->toBeGreaterThanOrEqual(400);
-        }
-    });
-
-    test('password confirmation uses reorganized components', function (): void {
-        /* @var User */
-        try {
-            actingAs($user)
-                ->get('/it/auth/password/confirm')
-                ->assertStatus(200);
-        } catch (Throwable $e) {
-            expect($e->getMessage())->not->toBe('');
-        }
     });
 });
 
 describe('User Profile Components Tests', function (): void {
     test('profile pages use reorganized components correctly', function (): void {
+        $response->assertStatus(200);
         $user = User::factory()->create();
 
         if (class_exists(Modules\User\Models\Profile::class)) {

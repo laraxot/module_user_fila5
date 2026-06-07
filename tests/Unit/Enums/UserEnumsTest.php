@@ -2,15 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Unit\Enums;
-
-uses(TestCase::class);
 
 use Modules\User\Enums\LanguageEnum;
 use Modules\User\Enums\SocialProviderEnum;
 use Modules\User\Enums\SystemRole;
 use Modules\User\Enums\UserType;
-use Modules\User\Tests\TestCase;
 
 test('UserType enum has expected cases', function () {
     expect(class_exists(UserType::class))->toBeTrue();

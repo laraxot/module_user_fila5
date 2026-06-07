@@ -72,6 +72,7 @@ This document serves as the central index for the User module, providing guidanc
 Questa documentazione viene aggiornata regolarmente. Prima di apportare modifiche al codice, consultare la documentazione pertinente e aggiornare i documenti correlati.
 
 Ultimo aggiornamento: 14 Maggio 2025
+Ultimo aggiornamento: 14 Maggio 2025
 
 # Indice Documentazione User
 

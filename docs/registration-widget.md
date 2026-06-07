@@ -41,6 +41,9 @@ protected function getConfirmationRoute(): string
     return $mapping[$this->type] ?? 'user.registration.confirmation';
 ```
 ## References
+- [Filament Resource Guidelines](../../../Modules/Xot/project_docs/rules/filament-resource-guidelines.md)
+- [Namespace Issues](../../../docs/references/namespace-issues.md)
+- [Filament Resource Guidelines](../../../Modules/Xot/docs/rules/filament-resource-guidelines.md)
 - [Namespace Issues](../../../../docs/project/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../modules/xot/project_docs/rules/filament-resource-guidelines.md)
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
@@ -108,5 +111,6 @@ protected function getConfirmationRoute(): string
 
 ## References
 
+- [Filament Resource Guidelines](../../../Modules/Xot/docs/rules/filament-resource-guidelines.md)
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)

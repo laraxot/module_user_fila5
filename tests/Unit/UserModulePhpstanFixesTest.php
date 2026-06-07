@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Unit;
-
 use Illuminate\Validation\Rules\Password;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Events\AddingTeam;

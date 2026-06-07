@@ -369,6 +369,7 @@ php artisan queue:prune-failed --hours=48
 
 ## 🔗 Collegamenti
 
+- [← User Module README](./README.md)
 - [← User Module README](./readme.md)
 - [← PHPStan Fixes 2025-10-01](./phpstan-fixes-2025-10-01.md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
@@ -380,6 +381,3 @@ php artisan queue:prune-failed --hours=48
 **Priorità**: 🟡 ALTA  
 **Timeline**: 2 Ottobre 2025  
 **Effort**: ~6 ore → 100% CLEAN
-
-
-

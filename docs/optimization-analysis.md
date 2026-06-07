@@ -733,4 +733,3 @@ class SecurityAlertService
 *Documento creato: Gennaio 2025*  
 *Principi: DRY + KISS + SOLID + ROBUST + Laraxot*  
 *Stato: 🟡 Necessita Refactoring Interface e Performance*
-

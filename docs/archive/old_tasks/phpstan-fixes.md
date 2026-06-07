@@ -42,6 +42,11 @@ Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` ut
 * [phpstan_fixes.md](../../../user/project_docs/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../ui/project_docs/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../media/project_docs/phpstan_fixes.md)
+* [phpstan_fixes.md](../../../Xot/project_docs/phpstan/phpstan_fixes.md)
+* [phpstan_fixes.md](../../../Xot/project_docs/phpstan_fixes.md)
+* [phpstan_fixes.md](../../../User/project_docs/phpstan_fixes.md)
+* [phpstan_fixes.md](../../../UI/project_docs/phpstan_fixes.md)
+* [phpstan_fixes.md](../../../Media/project_docs/phpstan_fixes.md)
 
 
 ### Versione Incoming

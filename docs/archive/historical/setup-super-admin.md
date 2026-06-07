@@ -435,4 +435,3 @@ Il comando `user:super-admin` è fondamentale per il setup iniziale dell'applica
 4. ✅ Verifica funzionamento
 
 Con questa guida, il setup dovrebbe essere straightforward e senza errori! 🚀
-

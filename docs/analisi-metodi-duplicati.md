@@ -140,6 +140,7 @@ protected function registerObservers(): void
 
 ## Link Correlati
 
+- 📖 [Modulo Xot - Classi Base](../../Xot/docs/analisi-metodi-duplicati.md)
 - 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
 - 📖 [Modulo Xot - Classi Base](../../xot/docs/analisi-metodi-duplicati.md)
 - 📖 [Architettura User](./core/architecture.md)
@@ -149,4 +150,3 @@ protected function registerObservers(): void
 
 **Data:** 2025-10-15  
 **Status:** 📋 Draft per Review
-

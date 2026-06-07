@@ -230,5 +230,3 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 **PHPStan Level**: 9  
 **Prossima sessione**: 2 Ottobre 2025  
 **Obiettivo**: 0 errori User + Xot
-
-

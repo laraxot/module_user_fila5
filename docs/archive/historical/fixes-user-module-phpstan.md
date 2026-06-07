@@ -161,4 +161,3 @@ Gli errori rimanenti (94) sono principalmente:
 2. **Data Classes**: Definire sempre tutte le proprietà readonly nel costruttore
 3. **Actions**: Usare proprietà readonly solo quando necessario e inizializzarle correttamente
 4. **Test**: Creare sempre test di validazione per le correzioni PHPStan
-

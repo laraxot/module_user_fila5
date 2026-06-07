@@ -1,3 +1,8 @@
+# UserFactory Integration - Modulo User e Laraxot
+
+## Overview
+
+Questo documento descrive l'integrazione tra la `UserFactory` del modulo Laraxot e la base `BaseUser` del modulo User, evidenziando l'architettura Single Table Inheritance (STI) implementata con Parental.
 # UserFactory Integration - Modulo User e healthcare_app
 
 ## Overview
@@ -10,6 +15,10 @@ Questo documento descrive l'integrazione tra la `UserFactory` del modulo healthc
 
 ```php
 BaseUser (Modules\User\Models\BaseUser)
+├── User (Modules\Laraxot\Models\User) - Base for STI
+    ├── Patient (Modules\Laraxot\Models\Patient) - uses HasParent
+    ├── Doctor (Modules\Laraxot\Models\Doctor) - uses HasParent  
+    └── Admin (Modules\Laraxot\Models\Admin) - uses HasParent
 ├── User (Modules\healthcare_app\Models\User) - Base for STI
     ├── Patient (Modules\healthcare_app\Models\Patient) - uses HasParent
     ├── Doctor (Modules\healthcare_app\Models\Doctor) - uses HasParent  
@@ -22,6 +31,7 @@ BaseUser (Modules\User\Models\BaseUser)
 // BaseUser (Modulo User)
 protected $connection = 'user'; // Default connection
 
+// User (Modulo Laraxot) 
 // User (Modulo healthcare_app) 
 protected $connection = 'salute_ora'; // Override for healthcare domain
 ```
@@ -41,6 +51,11 @@ use HasRoles;            // Permission management
 use HasAuthenticationLogTrait; // Authentication logging
 ```
 
+### Modulo Laraxot (User)
+Aggiunge trait specifici per il dominio sanitario:
+
+```php
+// In Laraxot\Models\User
 ### Modulo healthcare_app (User)
 Aggiunge trait specifici per il dominio sanitario:
 
@@ -65,6 +80,10 @@ use HasParent;           // Parental STI support
 
 ### Factory Ownership
 
+La `UserFactory` è implementata **nel modulo Laraxot** perché:
+
+1. **Domain Specificity**: I dati sono specifici del dominio sanitario
+2. **Enum Integration**: Usa `UserTypeEnum` e `UserState` del modulo Laraxot
 La `UserFactory` è implementata **nel modulo healthcare_app** perché:
 
 1. **Domain Specificity**: I dati sono specifici del dominio sanitario
@@ -75,6 +94,12 @@ La `UserFactory` è implementata **nel modulo healthcare_app** perché:
 ### Integration Pattern
 
 ```php
+// Factory nel modulo Laraxot
+namespace Modules\Laraxot\Database\Factories;
+
+class UserFactory extends Factory
+{
+    protected $model = \Modules\Laraxot\Models\User::class;
 // Factory nel modulo healthcare_app
 namespace Modules\healthcare_app\Database\Factories;
 
@@ -91,6 +116,7 @@ class UserFactory extends Factory
             'email' => $this->faker->unique()->safeEmail(),
             'password' => Hash::make('password'),
             
+            // Campi User Laraxot (specifici dominio)
             // Campi User healthcare_app (specifici dominio)
             'type' => UserTypeEnum::PATIENT,
             'state' => Pending::class,
@@ -170,6 +196,7 @@ public function admin(): static
 
 ### Field Mapping
 
+| BaseUser (User Module) | Laraxot User | Usage |
 | BaseUser (User Module) | healthcare_app User | Usage |
 |------------------------|----------------|-------|
 | `name` | `name` | Full name compatibility |
@@ -194,6 +221,7 @@ protected function casts(): array
     ];
 }
 
+// Laraxot User - Domain-specific casts
 // healthcare_app User - Domain-specific casts
 protected function casts(): array
 {
@@ -257,11 +285,13 @@ expect($user->isActive())->toBeTrue();
 ### 1. Modular Design
 
 - **BaseUser**: Campi generici per autenticazione e autorizzazione
+- **Laraxot User**: Campi specifici del dominio sanitario
 - **healthcare_app User**: Campi specifici del dominio sanitario
 - **STI Children**: Campi altamente specializzati per tipo
 
 ### 2. Factory Responsibility
 
+- **UserFactory in Laraxot**: Genera dati completi per testing del dominio
 - **UserFactory in healthcare_app**: Genera dati completi per testing del dominio
 - **Compatibility**: Rispetta i vincoli del BaseUser del modulo User
 - **Extensibility**: Facilmente estendibile per nuovi tipi di utente
@@ -324,21 +354,28 @@ public function test_bulk_sti_creation()
 
 ### 2. Domain Separation
 - Modulo User: Generics per autenticazione/autorizzazione
+- Modulo Laraxot: Specifics per dominio sanitario
 - Modulo healthcare_app: Specifics per dominio sanitario
 - Clear boundaries e responsibilities
 
 ### 3. Testing Flexibility
 - Test generici nel modulo User
+- Test specifici sanitari nel modulo Laraxot
 - Test specifici sanitari nel modulo healthcare_app
 - Factory supporta entrambi i livelli
 
 ### 4. Maintenance
 - Changes al BaseUser automaticamente ereditati
+- Healthcare-specific changes isolati nel modulo Laraxot
 - Healthcare-specific changes isolati nel modulo healthcare_app
 - Factory evolution indipendente
 
 ## Links to Documentation
 
+### Laraxot Module
+- [UserFactory Improvements Analysis](../ptvx/docs/factories/userfactory-improvements-analysis.md)
+- [Model Architecture](../ptvx/docs/model-architecture.md)
+- [STI Implementation](../ptvx/docs/model-inheritance.md)
 ### healthcare_app Module
 - [UserFactory Improvements Analysis](../healthcare_app/docs/factories/userfactory-improvements-analysis.md)
 - [Model Architecture](../healthcare_app/docs/model-architecture.md)

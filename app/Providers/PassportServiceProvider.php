@@ -92,9 +92,6 @@ class PassportServiceProvider extends ServiceProvider
     /**
      * Configura i modelli personalizzati.
      */
-    /**
-     * Configura i modelli personalizzati.
-     */
     protected function configureModels(): void
     {
         $models = config('user.passport.models', []);
@@ -145,14 +142,15 @@ class PassportServiceProvider extends ServiceProvider
         $scopes = config('user.passport.scopes', []);
         Assert::isArray($scopes);
 
-        foreach ($scopes as $key => $value) {
-            Assert::stringNotEmpty($key);
-            Assert::stringNotEmpty($value);
-        }
-
         if (! empty($scopes)) {
-            /** @phpstan-ignore varTag.nativeType */
-            $typedScopes = $scopes;
+            /** @var array<string, string> $typedScopes */
+            $typedScopes = [];
+            foreach ($scopes as $key => $value) {
+                Assert::stringNotEmpty($key);
+                Assert::stringNotEmpty($value);
+                $typedScopes[$key] = $value;
+            }
+
             Passport::tokensCan($typedScopes);
         }
     }

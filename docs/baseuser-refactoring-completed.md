@@ -238,6 +238,11 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
+- [User Module README](./README.md)
+
+### Root Progetto
+- [Code Quality](../../docs/code-quality-analysis.md)
+- [DRY Violations](../../docs/dry-violations-analysis.md)
 - [User Module README](./readme.md)
 
 ### Root Progetto
@@ -342,4 +347,3 @@ Il refactoring di `BaseUser` è stato un **successo completo**:
 **Status**: ✅ PRODUCTION READY  
 **Risk Level**: 🟢 LOW  
 **Confidence**: 💯 HIGH
-

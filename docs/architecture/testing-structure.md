@@ -285,6 +285,9 @@ dump($variable);
 
 ## Collegamenti
 
+- [README Modulo User](../README.md)
+- [Best Practices Testing](../../../project_docs/testing-best-practices.md)
+- [Architettura Modulo User](../architecture/README.md)
 - [README Modulo User](../readme.md)
 - [Best Practices Testing](../../../project_docs/testing-best-practices.md)
 - [Architettura Modulo User](../architecture/readme.md)
@@ -292,9 +295,4 @@ dump($variable);
 
 ---
 
-
-
-
-
-
-
+*Ultimo aggiornamento: 2025-01-06*

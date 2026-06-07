@@ -1,5 +1,5 @@
 <div>
-    <form wire:submit="submit">
+    <form wire:submit="save">
         {{ $this->form }}
 
         <div class="flex items-center justify-between mt-4">

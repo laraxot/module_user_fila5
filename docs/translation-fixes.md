@@ -1,3 +1,4 @@
+*Ultimo aggiornamento: 2025-01-06*
 ---
 module: theme
 topic: translation-fixes

@@ -210,6 +210,10 @@ Modules/User/
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
 - [README.md](../readme.md)
+- [User Models](../models/README.md)
+- [Role Management](../models/role-management.md)
+- [Password Management](../password.md)
+- [README.md](../README.md)
 
 ## Aggiornamenti Recenti
 
@@ -243,4 +247,5 @@ Modules/User/
 - [ ] Logging strutturato
 - [ ] Metriche di utilizzo
 
+*Ultimo aggiornamento: 2025-01-27*
 *Ultimo aggiornamento: 2025-01-27*

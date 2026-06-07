@@ -10,6 +10,11 @@
 
 ## Analisi e Miglioramenti della Pagina di Login
 
+La pagina di login è stata migliorata per conformarsi alle regole e alle best practices di Laraxot. Ecco i principali miglioramenti apportati:
+
+### 1. Utilizzo dei Componenti Filament
+
+Secondo le regole di Laraxot, si devono utilizzare SEMPRE i componenti Blade nativi di Filament invece di componenti UI personalizzati. Questo garantisce coerenza, manutenibilità e accessibilità.
 La pagina di login è stata migliorata per conformarsi alle regole e alle best practices di healthcare_app. Ecco i principali miglioramenti apportati:
 
 ### 1. Utilizzo dei Componenti Filament
@@ -194,4 +199,5 @@ rules([
 
 ## Conclusione
 
+Seguendo queste linee guida, è possibile implementare pagine di autenticazione conformi alle regole e alle best practices di Laraxot, garantendo coerenza, manutenibilità e accessibilità in tutto il progetto.
 Seguendo queste linee guida, è possibile implementare pagine di autenticazione conformi alle regole e alle best practices di healthcare_app, garantendo coerenza, manutenibilità e accessibilità in tutto il progetto.

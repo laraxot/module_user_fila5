@@ -149,4 +149,3 @@ protected function registerObservers(): void
 
 **Data:** 2025-10-15  
 **Status:** 📋 Draft per Review
-

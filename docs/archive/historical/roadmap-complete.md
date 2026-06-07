@@ -421,5 +421,3 @@ La cartella `docs/` contiene ~300+ file con molti duplicati:
 **Maintainer**: User Module Team  
 **Status**: 🚧 In Development (70% completo)  
 **Prossima Revisione**: 2025-02-01
-
-

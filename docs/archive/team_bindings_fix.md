@@ -165,7 +165,7 @@ $this->assertTrue($user->belongsToTeam($team));
 - [TeamUser Model](../app/Models/TeamUser.php)
 - [TeamInvitation Model](../app/Models/TeamInvitation.php)
 - [UserServiceProvider](../app/Providers/UserServiceProvider.php)
-- [Critical Errors Documentation](../../healthcare_app/docs/critical-errors-resolved.md)
+- [Critical Errors Documentation](../../ptvx/docs/critical-errors-resolved.md)
 
 ---
 

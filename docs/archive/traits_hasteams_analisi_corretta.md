@@ -529,4 +529,3 @@ trait HasTeams
 - [Modules/User/docs/traits.md](traits.md)  
 - [docs/phpstan_fixes.md](../../../../docs/phpstan_fixes.md)
 - [Modules/Xot/docs/RELATION_X.md](../../xot/docs/relation_x.md)
-

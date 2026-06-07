@@ -102,6 +102,11 @@ TextInput::make('name')->label('Name')->placeholder('Enter name')
 // ✅ CORRECT - Let LangServiceProvider handle translations
 TextInput::make('name')
 ```
+### Never Use Direct Labels
+// ❌ WRONG - Never use ->label() in widgets
+TextInput::make('name')->label('Name')
+// ✅ CORRECT - Let LangServiceProvider handle translations
+TextInput::make('name')
 ### Translation Key Usage
 // ✅ CORRECT - Use translation keys for options
 Select::make('lang')
@@ -155,4 +160,8 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 - [Translation System Overview](../../xot/docs/translations.md)
 - [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)
 - [Translation System Overview](../../xot/project_docs/translations.md)
+- [Filament Widget Conventions](../../Xot/docs/filament-widgets.md)
+- [Translation System Overview](../../Xot/docs/translations.md)
+- [Filament Widget Conventions](../../Xot/project_docs/filament-widgets.md)
+- [Translation System Overview](../../Xot/project_docs/translations.md)
 - [EditUserWidget Documentation](./edit-user-widget.md)

@@ -1,3 +1,4 @@
+https://learn.userfrosting.com/recipes/extending-the-user-model
 ---
 module: theme
 topic: profile

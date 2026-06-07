@@ -8,11 +8,12 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Component;
+use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
+    use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
  * LoginWidget: Widget di login conforme alle regole Windsurf/Xot.
@@ -23,19 +24,8 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  *
  * @property array<string, mixed>|null $data
  */
-class LoginWidget extends XotBaseWidget
+class LoginWidget extends XotBaseSchemaWidget
 {
-    /**
-     * Blade view del widget nel modulo User.
-     * IMPORTANTE: quando il widget viene usato con @livewire() direttamente nelle Blade,
-     * il path deve essere senza il namespace del modulo (senza "user::").
-     *
-     * @see \Modules\User\docs\WIDGETS_STRUCTURE.md - Sezione B
-     *
-     * @var view-string
-     */
-    protected string $view = 'pub_theme::filament.widgets.auth.login';
-
     /**
      * Inizializza il widget quando viene montato.
      */
@@ -44,12 +34,19 @@ class LoginWidget extends XotBaseWidget
         $this->form->fill();
     }
 
+    public function render(): View
+    {
+        /** @var view-string $view */
+        $view = 'pub_theme::filament.widgets.auth.login';
+
+        return view($view, $this->getViewData());
+    }
+
     /**
      * Get the form schema for the login form.
      *
      * @return array<int, Component>
      */
-    #[\Override]
     public function getFormSchema(): array
     {
         return [
@@ -70,7 +67,6 @@ class LoginWidget extends XotBaseWidget
      *
      * @return array<string, mixed>
      */
-    #[\Override]
     public function getFormFill(): array
     {
         return [
@@ -82,7 +78,6 @@ class LoginWidget extends XotBaseWidget
     /**
      * Handle login form submission.
      */
-    #[\Override]
     public function save(): void
     {
         try {
@@ -144,7 +139,6 @@ class LoginWidget extends XotBaseWidget
     /**
      * Get the form model.
      */
-    #[\Override]
     protected function getFormModel(): ?Model
     {
         return null;
