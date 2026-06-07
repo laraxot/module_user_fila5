@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-
 use Modules\User\Console\Commands\AssignRoleCommand;
 use Modules\User\Console\Commands\ChangeTypeCommand;
 use Modules\User\Console\Commands\CreateTeamCommand;

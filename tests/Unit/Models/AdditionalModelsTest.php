@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-
 use Modules\User\Models\Authentication;
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Device;

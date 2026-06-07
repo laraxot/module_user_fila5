@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-
 test('TeamInvitation mail can be instantiated', function () {
     expect(class_exists(TeamInvitation::class))->toBeTrue();
 

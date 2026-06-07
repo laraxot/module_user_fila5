@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-
 test('FilamentShield facade can be accessed', function () {
     expect(class_exists(FilamentShield::class))->toBeTrue();
 

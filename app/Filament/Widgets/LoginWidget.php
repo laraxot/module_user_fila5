@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
-    use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
  * LoginWidget: Widget di login conforme alle regole Windsurf/Xot.

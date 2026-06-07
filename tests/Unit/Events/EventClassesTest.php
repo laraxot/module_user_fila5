@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-
 use Modules\User\Events\AddingTeam;
 use Modules\User\Events\AddingTeamMember;
 use Modules\User\Events\RecoveryCodeReplaced;

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Enums;
 
-use Modules\Xot\Traits\EnumTrait;
 use Filament\Support\Contracts\HasLabel;
+use Modules\Xot\Traits\EnumTrait;
 
 enum LanguageEnum: string implements HasLabel
 {

@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-
 use Modules\User\Events\Login;
 use Modules\User\Events\Registered;
 use Modules\User\Events\TeamCreated;

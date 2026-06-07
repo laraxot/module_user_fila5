@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-
 test('CheckOtpExpiredRule can be instantiated', function () {
     $user = User::factory()->make();
     $rule = new CheckOtpExpiredRule($user);
