@@ -39,7 +39,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     public function markAsRead(string $notificationId): void
     {
         $user = $this->authUser();
-        if ($user === null) {
+        if (null === $user) {
             return;
         }
 
@@ -52,7 +52,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     public function markAllAsRead(): void
     {
         $user = $this->authUser();
-        if ($user === null) {
+        if (null === $user) {
             return;
         }
 
@@ -64,7 +64,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     private function refreshNotifications(): void
     {
         $user = $this->authUser();
-        if ($user === null) {
+        if (null === $user) {
             $this->notifications = collect();
             $this->unreadCount = 0;
 
