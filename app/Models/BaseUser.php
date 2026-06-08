@@ -36,6 +36,8 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits as XotTraits;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Parental\HasChildren;
+use Modules\Comment\Models\Contracts\CanComment;
+use Modules\Comment\Models\Concerns\InteractsWithComments;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
@@ -125,7 +127,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  *
  * @mixin \Eloquent
  */
-abstract class BaseUser extends Authenticatable implements HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
+abstract class BaseUser extends Authenticatable implements CanComment, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
 {
     use HasApiTokens;
     use HasAuthenticationLogTrait;
@@ -136,6 +138,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     use HasUuids;
     use HasXotFactory;
     use InteractsWithMedia;
+    use InteractsWithComments;
     use Notifiable;
 
     // use SoftDeletes;
