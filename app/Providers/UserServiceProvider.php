@@ -22,7 +22,6 @@ use Modules\User\Filament\Widgets\Auth\ForgotPasswordWidget;
 use Modules\User\Filament\Widgets\Auth\LoginWidget;
 use Modules\User\Filament\Widgets\Auth\PasswordResetConfirmWidget;
 use Modules\User\Filament\Widgets\Auth\PasswordResetWidget;
-use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Filament\Widgets\Auth\ResetPasswordWidget;
 use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
 use Modules\Xot\Contracts\UserContract;

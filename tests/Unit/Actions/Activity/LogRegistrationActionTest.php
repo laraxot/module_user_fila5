@@ -14,7 +14,7 @@ class LogRegistrationActionTest extends TestCase
     #[Test]
     public function itLogsRegistrationWithDefaultProperties(): void
     {
-        $user = new User(['type' => 'standard']);
+        $user = new User(['type' => 'customer_user']);
         $user->forceFill(['id' => 1]);
 
         $action = new LogRegistrationAction();
@@ -38,15 +38,15 @@ class LogRegistrationActionTest extends TestCase
     #[Test]
     public function itLogsRegistrationWithDifferentUserTypes(): void
     {
-        $standardUser = new User(['type' => 'standard']);
-        $standardUser->forceFill(['id' => 3]);
+        $customerUser = new User(['type' => 'customer_user']);
+        $customerUser->forceFill(['id' => 3]);
 
         $adminUser = new User(['type' => 'admin']);
         $adminUser->forceFill(['id' => 4]);
 
         $action = new LogRegistrationAction();
 
-        $action->execute($standardUser);
+        $action->execute($customerUser);
         $action->execute($adminUser);
 
         $this->assertTrue(true);
