@@ -26,6 +26,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
+use Modules\Comment\Models\Concerns\InteractsWithComments;
+use Modules\Comment\Models\Contracts\CanComment;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 use Modules\User\Models\Traits\HasModules;
 use Modules\User\Models\Traits\HasSpatiePermission;
@@ -36,8 +38,6 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits as XotTraits;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Parental\HasChildren;
-use Modules\Comment\Models\Contracts\CanComment;
-use Modules\Comment\Models\Concerns\InteractsWithComments;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
