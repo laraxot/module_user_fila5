@@ -8,7 +8,7 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
 // Simple test to verify basic functionality
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('user model can be created', function () {
     $user = new User();

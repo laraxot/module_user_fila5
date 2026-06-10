@@ -13,11 +13,11 @@ use Modules\User\Database\Factories\TeamPermissionFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
-use Modules\User\Models\TeamPermission;
-use Modules\User\Models\User;
 use Modules\User\Models\TeamUser;
+use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
 use function Safe\json_encode;
 
 uses(TestCase::class);
@@ -38,7 +38,7 @@ function teamMgmtTeamUsersRelationSupported(): bool
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtCreateUser(array $attributes = []): User
 {
@@ -51,7 +51,7 @@ function teamMgmtCreateUser(array $attributes = []): User
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtCreateTeam(User $owner, array $attributes = []): Team
 {
@@ -74,7 +74,7 @@ function teamMgmtBootstrap(): array
 }
 
 /**
- * @param  array<string, mixed>  $pivot
+ * @param array<string, mixed> $pivot
  */
 function teamMgmtAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -118,7 +118,7 @@ function teamMgmtMemberExists(Team $team, User $user): bool
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtCreateInvitation(Team $team, array $attributes = []): TeamInvitation
 {

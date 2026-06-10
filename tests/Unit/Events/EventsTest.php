@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Events;
 
-use Throwable;
 use Modules\User\Events\Login;
 use Modules\User\Events\Registered;
 use Modules\User\Events\TeamCreated;
@@ -23,7 +22,7 @@ test('Login event can be instantiated', function () {
     try {
         $event = new Login(User::first() ?: User::make(['id' => 1, 'email' => 'test@example.com']));
         expect($event)->toBeInstanceOf(Login::class);
-    } catch (Throwable $e) {
+    } catch (\Throwable $e) {
         expect(true)->toBeTrue(); // Pass if class exists
     }
 });
@@ -34,7 +33,7 @@ test('Registered event can be instantiated', function () {
     try {
         $event = new Registered(User::first() ?: User::make(['id' => 1, 'email' => 'test@example.com']));
         expect($event)->toBeInstanceOf(Registered::class);
-    } catch (Throwable $e) {
+    } catch (\Throwable $e) {
         expect(true)->toBeTrue(); // Pass if class exists
     }
 });
@@ -46,7 +45,7 @@ test('TeamCreated event can be instantiated', function () {
         $team = Team::first() ?: Team::make(['id' => 1, 'name' => 'Test Team']);
         $event = new TeamCreated($team);
         expect($event)->toBeInstanceOf(TeamCreated::class);
-    } catch (Throwable $e) {
+    } catch (\Throwable $e) {
         expect(true)->toBeTrue(); // Pass if class exists
     }
 });
@@ -60,7 +59,7 @@ test('TeamMemberAdded event can be instantiated', function () {
 
         $event = new TeamMemberAdded($team, $user);
         expect($event)->toBeInstanceOf(TeamMemberAdded::class);
-    } catch (Throwable $e) {
+    } catch (\Throwable $e) {
         expect(true)->toBeTrue(); // Pass if class exists
     }
 });
@@ -71,7 +70,7 @@ test('TwoFactorAuthenticationEnabled event can be instantiated', function () {
     try {
         $event = new TwoFactorAuthenticationEnabled(User::first() ?: User::make(['id' => 1, 'email' => 'test@example.com']));
         expect($event)->toBeInstanceOf(TwoFactorAuthenticationEnabled::class);
-    } catch (Throwable $e) {
+    } catch (\Throwable $e) {
         expect(true)->toBeTrue(); // Pass if class exists
     }
 });
@@ -82,7 +81,7 @@ test('UserNotAllowed event can be instantiated', function () {
     try {
         $event = new UserNotAllowed(User::first() ?: User::make(['id' => 1, 'email' => 'test@example.com']));
         expect($event)->toBeInstanceOf(UserNotAllowed::class);
-    } catch (Throwable $e) {
+    } catch (\Throwable $e) {
         expect(true)->toBeTrue(); // Pass if class exists
     }
 });

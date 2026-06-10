@@ -40,7 +40,6 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static Builder|ModelHasPermission whereTeamId($value)
  *
- *
  * @property ProfileContract|null $deleter
  *
  * @method static \Modules\User\Database\Factories\ModelHasPermissionFactory factory($count = null, $state = [])

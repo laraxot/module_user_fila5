@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Facades;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 use Modules\User\Facades\FilamentShield;
 use Modules\User\Tests\TestCase;

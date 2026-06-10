@@ -16,7 +16,7 @@ beforeEach(function (): void {
 });
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function hasTeamsCurrentCreateUser(array $attributes = []): User
 {
@@ -27,7 +27,7 @@ function hasTeamsCurrentCreateUser(array $attributes = []): User
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 {

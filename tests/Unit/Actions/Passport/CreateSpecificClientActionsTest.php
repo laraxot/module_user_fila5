@@ -10,7 +10,7 @@ use Modules\User\Actions\Passport\CreatePersonalAccessClientAction;
 use Modules\User\Models\OauthClient;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Create specific passport client actions', function (): void {
     afterEach(function (): void {

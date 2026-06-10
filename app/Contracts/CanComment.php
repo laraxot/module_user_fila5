@@ -26,8 +26,6 @@ interface CanComment
     public function getMorphClass();
 
     /**
-     * @param mixed $instance
-     *
      * @return void
      */
     public function notify($instance);

@@ -52,7 +52,7 @@ abstract class TestCase extends BaseTestCase
         $connections = config('database.connections', []);
 
         foreach (array_keys($connections) as $connection) {
-            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
                 continue;
             }
 
@@ -79,7 +79,7 @@ abstract class TestCase extends BaseTestCase
 
     protected function userTableHasColumn(string $table, string $column): bool
     {
-        return \Illuminate\Support\Facades\Schema::connection('user')->hasColumn($table, $column);
+        return Schema::connection('user')->hasColumn($table, $column);
     }
 
     protected function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
@@ -129,7 +129,7 @@ abstract class TestCase extends BaseTestCase
     }
 
     /**
-     * @param  array<string, mixed>  $attributes
+     * @param array<string, mixed> $attributes
      */
     protected function createTestUser(array $attributes = []): User
     {
@@ -152,7 +152,7 @@ abstract class TestCase extends BaseTestCase
     }
 
     /**
-     * @param  array<string, mixed>  $pivot
+     * @param array<string, mixed> $pivot
      */
     protected function attachTeamMember(Team $team, User $user, array $pivot = []): void
     {
@@ -205,7 +205,7 @@ abstract class TestCase extends BaseTestCase
     }
 
     /**
-     * @param  array<string, mixed>  $attributes
+     * @param array<string, mixed> $attributes
      */
     protected function createTeamInvitationRecord(Team $team, array $attributes = []): TeamInvitation
     {

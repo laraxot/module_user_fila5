@@ -9,7 +9,7 @@ use Modules\User\Actions\GetCurrentDeviceAction;
 use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('User Misc Actions Coverage', function (): void {
     test('GetCurrentDeviceAction is accessible', function (): void {

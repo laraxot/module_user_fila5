@@ -6,16 +6,15 @@ namespace Modules\User\Tests\Feature\Actions;
 
 use Illuminate\Support\Str;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
-use Mockery;
 use Modules\User\Actions\Socialite\IsUserAllowedAction;
 use Modules\User\Tests\TestCase;
 use Webmozart\Assert\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 function fakeSocialiteUser(string $email): SocialiteUserContract
 {
-    $user = Mockery::mock(SocialiteUserContract::class);
+    $user = \Mockery::mock(SocialiteUserContract::class);
     $user->shouldReceive('getEmail')->andReturn($email);
 
     return $user;
@@ -23,9 +22,9 @@ function fakeSocialiteUser(string $email): SocialiteUserContract
 
 function makeIsUserAllowedAction(): IsUserAllowedAction
 {
-    $assert = Mockery::mock(Assert::class);
+    $assert = \Mockery::mock(Assert::class);
     $assert->shouldReceive('notNull')
-        ->with(Mockery::any(), Mockery::any())
+        ->with(\Mockery::any(), \Mockery::any())
         ->andReturnUsing(static fn (mixed $value): mixed => $value);
 
     return new IsUserAllowedAction($assert, new Str());

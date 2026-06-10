@@ -11,9 +11,8 @@ use Illuminate\Support\Facades\Artisan;
 use Modules\User\Models\Tenant;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
-use RuntimeException;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('TenantScope Console Context Behavior', function (): void {
     beforeEach(function (): void {
@@ -129,7 +128,7 @@ describe('TenantScope Console Context Behavior', function (): void {
     describe('TenantScope Exception Handling', function (): void {
         it('handles gracefully when Filament::getTenant() throws exception', function (): void {
             Filament::shouldReceive('getTenant')
-                ->andThrow(new RuntimeException('Session not available'));
+                ->andThrow(new \RuntimeException('Session not available'));
 
             $users = User::query()->limit(1)->get();
 

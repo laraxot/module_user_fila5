@@ -18,7 +18,7 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Traits\HasUserTestCase;
 
-uses(\Modules\User\Tests\TestCase::class, HasUserTestCase::class);
+uses(TestCase::class, HasUserTestCase::class);
 
 beforeEach(function () {
     $user = User::factory()->create([

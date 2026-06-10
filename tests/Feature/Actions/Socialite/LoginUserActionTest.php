@@ -6,16 +6,13 @@ namespace Modules\User\Tests\Feature\Actions\Socialite;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Event;
-use InvalidArgumentException;
-use LogicException;
-use stdClass;
 use Modules\User\Actions\Socialite\LoginUserAction;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('LoginUserAction', function (): void {
     test('authenticates connected socialite user and dispatches event', function (): void {
@@ -45,10 +42,10 @@ describe('LoginUserAction', function (): void {
             'email' => 'not-authenticatable@example.com',
         ]);
 
-        $socialiteUser->setRelation('user', new stdClass());
+        $socialiteUser->setRelation('user', new \stdClass());
 
         app(LoginUserAction::class)->execute($socialiteUser);
-    })->throws(LogicException::class, 'User instance must implement Authenticatable.');
+    })->throws(\LogicException::class, 'User instance must implement Authenticatable.');
 
     test('redirects to intended page when available', function (): void {
         $user = User::factory()->create();
@@ -135,7 +132,7 @@ describe('LoginUserAction', function (): void {
         $socialiteUser->setRelation('user', null);
 
         app(LoginUserAction::class)->execute($socialiteUser);
-    })->throws(InvalidArgumentException::class);
+    })->throws(\InvalidArgumentException::class);
 
     test('preserves user attributes after login', function (): void {
         $user = User::factory()->create([

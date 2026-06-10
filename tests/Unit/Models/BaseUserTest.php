@@ -11,7 +11,7 @@ use Modules\User\Models\BaseUser;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Models\Fixtures\TestBaseUser;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
     $this->baseUser = new TestBaseUser();

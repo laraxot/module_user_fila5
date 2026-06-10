@@ -7,7 +7,7 @@ namespace Modules\User\Tests\Unit\Actions\User;
 use Modules\User\Actions\User\UpdateUserAction;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('UpdateUserAction', function (): void {
     test('action is accessible via app', function (): void {

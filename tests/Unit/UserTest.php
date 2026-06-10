@@ -13,7 +13,7 @@ use Modules\User\Tests\TestCase;
 /*
  * @property User $user
  */
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('user can be created', function (): void {
     try {

@@ -22,8 +22,6 @@ interface UserContract extends Authenticatable
 {
     /**
      * Get the primary key for the model.
-     *
-     * @return mixed
      */
     public function getKey();
 

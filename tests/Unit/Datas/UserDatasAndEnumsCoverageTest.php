@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Datas;
 
-use DateInterval;
 use Modules\User\Datas\FilamentShieldData;
 use Modules\User\Datas\PermissionData;
 use Modules\User\Datas\SocialiteUserAttributesData;
@@ -12,7 +11,7 @@ use Modules\User\Enums\Enums\LanguageEnum as NestedLanguageEnum;
 use Modules\User\Enums\LanguageEnum;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('User datas and enums coverage', function (): void {
     it('creates SocialiteUserAttributesData with expected values', function (): void {
@@ -55,7 +54,7 @@ describe('User datas and enums coverage', function (): void {
                 'display_role_in_exception' => false,
                 'enable_wildcard_permission' => false,
                 'cache' => [
-                    'expiration_time' => new DateInterval('PT24H'),
+                    'expiration_time' => new \DateInterval('PT24H'),
                     'key' => 'spatie.permission.cache',
                     'store' => 'default',
                 ],

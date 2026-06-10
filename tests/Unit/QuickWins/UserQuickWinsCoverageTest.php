@@ -13,7 +13,7 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\QuickWins\Fixtures\FilamentShieldStubFixture;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('User quick wins coverage', function (): void {
     it('builds provider not configured exception message', function (): void {

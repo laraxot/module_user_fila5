@@ -120,7 +120,8 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     /**
      * Scope per lookup da API/Android/Postgres (usa uuid, non id).
      *
-     * @param  Builder<static>  $query
+     * @param Builder<static> $query
+     *
      * @return Builder<static>
      */
     public function scopeByUuid(Builder $query, string $uuid): Builder

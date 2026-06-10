@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Events;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Events\AddingTeam;

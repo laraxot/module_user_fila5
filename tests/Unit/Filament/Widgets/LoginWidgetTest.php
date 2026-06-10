@@ -9,7 +9,7 @@ use Filament\Forms\Components\Toggle;
 use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('LoginWidget', function (): void {
     test('login widget can be instantiated', function (): void {

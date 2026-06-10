@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature;
 
-use Exception;
 use Illuminate\Console\Application;
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;
@@ -13,8 +12,6 @@ use Modules\User\Console\Commands\ChangeTypeCommand;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
-use ReflectionClass;
-use stdClass;
 use Webmozart\Assert\Assert;
 
 uses(TestCase::class);
@@ -69,7 +66,7 @@ describe('User Command Integration', function () {
         expect(class_exists('Webmozart\Assert\Assert'))->toBeTrue();
 
         // Test basic assertion functionality
-        expect(fn () => Assert::notNull('test'))->not->toThrow(Exception::class);
+        expect(fn () => Assert::notNull('test'))->not->toThrow(\Exception::class);
     });
 
     it('integrates with Illuminate Support Arr', function () {
@@ -105,7 +102,7 @@ describe('User Command Integration', function () {
     });
 
     it('validates command signature and options', function () {
-        $reflection = new ReflectionClass($this->command);
+        $reflection = new \ReflectionClass($this->command);
 
         // Check command properties
         expect($reflection->hasProperty('name'))->toBeTrue()->and($reflection->hasProperty('description'))->toBeTrue();
@@ -125,7 +122,7 @@ describe('User Command Integration', function () {
         // Test UserContract interface
         expect(interface_exists('Modules\Xot\Contracts\UserContract'))->toBeTrue();
 
-        $reflection = new ReflectionClass('Modules\Xot\Contracts\UserContract');
+        $reflection = new \ReflectionClass('Modules\Xot\Contracts\UserContract');
         expect($reflection->isInterface())->toBeTrue();
     });
 
@@ -139,7 +136,7 @@ describe('User Command Integration', function () {
 
     it('validates error handling patterns', function () {
         // Test that the command structure supports proper error handling
-        $reflection = new ReflectionClass($this->command);
+        $reflection = new \ReflectionClass($this->command);
         $handleMethod = $reflection->getMethod('handle');
 
         expect($handleMethod->getReturnType()?->getName())->toBe('void');
@@ -147,7 +144,7 @@ describe('User Command Integration', function () {
 
     it('can work with type checking utilities', function () {
         // Test type checking functions used in the command
-        $testObject = new stdClass();
+        $testObject = new \stdClass();
         $testObject->value = 'test';
         $testObject->getLabel = fn () => 'Test Label';
 
@@ -236,10 +233,10 @@ describe('User Command Integration', function () {
 
     it('handles reflection operations correctly', function () {
         // Test reflection operations used in the command logic
-        $reflection = new ReflectionClass($this->command);
+        $reflection = new \ReflectionClass($this->command);
 
         expect($reflection)
-            ->toBeInstanceOf(ReflectionClass::class)
+            ->toBeInstanceOf(\ReflectionClass::class)
             ->and($reflection->getName())
             ->toBe(ChangeTypeCommand::class);
     });
@@ -254,7 +251,7 @@ describe('User Command Integration', function () {
 
     it('can handle object property access safely', function () {
         // Test safe property access patterns
-        $testObject = new stdClass();
+        $testObject = new \stdClass();
         $testObject->testProperty = 'test_value';
 
         $objectData = (array) $testObject;

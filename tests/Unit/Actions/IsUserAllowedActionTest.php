@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Actions;
 
+use Illuminate\Support\Str;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Actions\Socialite\IsUserAllowedAction;
-use Illuminate\Support\Str;
 use Modules\User\Tests\TestCase;
 use Webmozart\Assert\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('IsUserAllowedAction', function (): void {
     $getMockUser = function (string $email = 'user@example.com'): SocialiteUserContract {

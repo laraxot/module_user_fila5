@@ -7,7 +7,7 @@ namespace Modules\User\Tests\Feature\Auth;
 use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Microsoft Login Button', function () {
     test('social login widget renders correctly when microsoft is configured', function () {

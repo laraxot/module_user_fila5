@@ -13,7 +13,7 @@ use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
     // Ensure the panel is registered

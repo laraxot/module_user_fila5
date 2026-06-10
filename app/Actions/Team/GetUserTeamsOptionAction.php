@@ -23,7 +23,7 @@ class GetUserTeamsOptionAction
 
         foreach ($teams as $teamUser) {
             $team = $teamUser->team;
-            if ($team === null) {
+            if (null === $team) {
                 continue;
             }
 

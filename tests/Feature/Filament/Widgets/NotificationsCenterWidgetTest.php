@@ -7,7 +7,7 @@ namespace Modules\User\Tests\Feature\Filament\Widgets;
 use Modules\User\Filament\Widgets\Auth\NotificationsCenterWidget;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 it('redirects guests from notifiche page', function (): void {
     $response = $this->get('/it/area-personale/notifications');

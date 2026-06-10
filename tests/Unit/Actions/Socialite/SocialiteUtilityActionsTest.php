@@ -8,7 +8,6 @@ use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
-use Mockery;
 use Modules\User\Actions\Socialite\GetDomainAllowListAction;
 use Modules\User\Actions\Socialite\GetGuardAction;
 use Modules\User\Actions\Socialite\GetLoginRedirectRouteAction;
@@ -19,12 +18,12 @@ use Modules\User\Actions\Socialite\IsRegistrationEnabledAction;
 use Modules\User\Actions\Socialite\LogoutUserAction;
 use Modules\User\Actions\Socialite\RedirectToLoginAction;
 use Modules\User\Actions\Socialite\ValidateProviderAction;
-use Modules\User\Tests\Unit\Actions\Socialite\Fixtures\DeletableAccessTokenFixture;
 use Modules\User\Exceptions\ProviderNotConfigured;
 use Modules\User\Tests\TestCase;
+use Modules\User\Tests\Unit\Actions\Socialite\Fixtures\DeletableAccessTokenFixture;
 use Modules\Xot\Contracts\UserContract;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Socialite utility actions', function (): void {
     it('returns allow list when configured as string', function (): void {
@@ -127,7 +126,7 @@ describe('Socialite utility actions', function (): void {
             'updated_at' => now(),
         ]);
 
-        $user = Mockery::mock(UserContract::class);
+        $user = \Mockery::mock(UserContract::class);
         $user->shouldReceive('token')->once()->andReturn($accessToken);
         $user->shouldReceive('getKey')->once()->andReturn($userId);
 

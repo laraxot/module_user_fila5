@@ -9,7 +9,7 @@ use Modules\User\Datas\PasswordData;
 use Modules\User\Http\Livewire\Auth\Login;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('password data labels are translated', function (): void {
     // Arrange

@@ -15,7 +15,7 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
     $user = User::factory()

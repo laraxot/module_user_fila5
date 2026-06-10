@@ -7,7 +7,7 @@ namespace Modules\User\Tests\Unit;
 use Illuminate\Support\Facades\DB;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('verify database connections config', function () {
     $sqlitePath = database_path('fixcity_data.sqlite');

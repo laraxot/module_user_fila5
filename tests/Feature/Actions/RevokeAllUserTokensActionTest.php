@@ -10,7 +10,7 @@ use Modules\User\Actions\Passport\RevokeAllUserTokensAction;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('RevokeAllUserTokensAction', function (): void {
     test('revokes all user tokens', function (): void {

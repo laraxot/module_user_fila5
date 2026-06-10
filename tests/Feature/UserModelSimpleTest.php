@@ -8,7 +8,7 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
 // Simple test to verify model instantiation
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('user model can be instantiated', function () {
     $user = new User();

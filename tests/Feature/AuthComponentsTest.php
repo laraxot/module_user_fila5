@@ -71,7 +71,7 @@ describe('Authentication Flow with Reorganized Components', function (): void {
             $this->actingAs($user)
                 ->get('/it/auth/password/confirm')
                 ->assertStatus(200);
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             test()->markTestSkipped('Password confirm route unavailable in test env: '.$e->getMessage());
         }
     });
@@ -95,7 +95,7 @@ describe('User Profile Components Tests', function (): void {
             }
             try {
                 Profile::create($profileData);
-            } catch (\Throwable) {
+            } catch (Throwable) {
                 // Profile creation may fail in test env; continue with user only
             }
         }
@@ -104,7 +104,7 @@ describe('User Profile Components Tests', function (): void {
             $this->actingAs($user, 'web')
                 ->get('/it/profile/edit')
                 ->assertStatus(200);
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             test()->markTestSkipped('Profile edit route unavailable in test env: '.$e->getMessage());
         }
     });

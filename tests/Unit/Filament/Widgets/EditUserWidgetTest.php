@@ -7,7 +7,7 @@ namespace Modules\User\Tests\Unit\Filament\Widgets;
 use Modules\User\Filament\Widgets\EditUserWidget;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('EditUserWidget', function (): void {
     test('edit user widget can be instantiated', function (): void {

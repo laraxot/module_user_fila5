@@ -16,10 +16,10 @@ use Modules\User\Models\OauthRefreshToken;
 use Modules\User\Models\OauthToken;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 /**
- * @param  class-string  $wrapperClass
+ * @param class-string $wrapperClass
  */
 function passportWrapperConnectionName(string $wrapperClass): ?string
 {

@@ -7,12 +7,12 @@ namespace Modules\User\Tests\Feature\Filament\Widgets\Auth;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Schema;
 use Livewire\Livewire;
-use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\User\Filament\Widgets\Auth\RegisterWidget;
+use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
     config(['activitylog.enabled' => false]);

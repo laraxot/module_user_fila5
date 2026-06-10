@@ -5,17 +5,15 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit\Actions\Socialite\Utils;
 
 use Illuminate\Support\Facades\Config;
-use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User as SocialiteUser;
-use Mockery;
 use Modules\User\Actions\Socialite\Utils\EmailDomainAnalyzer;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 function createMockSocialiteUser(?string $email): SocialiteUser
 {
-    $mock = Mockery::mock(SocialiteUser::class);
+    $mock = \Mockery::mock(SocialiteUser::class);
     $mock->shouldReceive('getEmail')->andReturn($email);
 
     return $mock;
@@ -29,7 +27,7 @@ describe('EmailDomainAnalyzer', function () {
 
     it('throws for empty provider', function () {
         expect(fn () => new EmailDomainAnalyzer(''))
-            ->toThrow(InvalidArgumentException::class, 'Il provider SSO non può essere vuoto');
+            ->toThrow(\InvalidArgumentException::class, 'Il provider SSO non può essere vuoto');
     });
 
     it('detects first party domain', function () {

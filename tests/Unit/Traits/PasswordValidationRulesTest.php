@@ -8,7 +8,6 @@ use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesFixture;
 use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesMockableFixture;
 use Modules\User\Traits\PasswordValidationRules;
-use ReflectionClass;
 
 uses(TestCase::class);
 
@@ -18,7 +17,7 @@ test('PasswordValidationRules trait can be used', function (): void {
 });
 
 test('PasswordValidationRules trait provides passwordRules method', function (): void {
-    $reflection = new ReflectionClass(PasswordValidationRules::class);
+    $reflection = new \ReflectionClass(PasswordValidationRules::class);
 
     expect($reflection->hasMethod('passwordRules'))->toBeTrue();
 

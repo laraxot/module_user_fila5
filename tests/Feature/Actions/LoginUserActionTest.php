@@ -6,15 +6,13 @@ namespace Modules\User\Tests\Feature\Actions;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Event;
-use LogicException;
-use stdClass;
 use Modules\User\Actions\Socialite\LoginUserAction;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('LoginUserAction', function (): void {
     test('authenticates connected socialite user and dispatches event', function (): void {
@@ -44,8 +42,8 @@ describe('LoginUserAction', function (): void {
             'email' => 'not-authenticatable@example.com',
         ]);
 
-        $socialiteUser->setRelation('user', new stdClass());
+        $socialiteUser->setRelation('user', new \stdClass());
 
         app(LoginUserAction::class)->execute($socialiteUser);
-    })->throws(LogicException::class, 'User instance must implement Authenticatable.');
+    })->throws(\LogicException::class, 'User instance must implement Authenticatable.');
 });

@@ -8,7 +8,7 @@ use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Team;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 use Carbon\Carbon;
 use Modules\User\Models\Profile;

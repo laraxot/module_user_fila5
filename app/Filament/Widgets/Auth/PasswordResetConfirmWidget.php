@@ -39,11 +39,11 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
     public ?string $errorMessage = null;
 
     /**
-     * @return class-string<Schemas\UserForm>
+     * @return class-string<UserForm>
      */
     protected static function formClass(): string
     {
-        return Schemas\UserForm::class;
+        return UserForm::class;
     }
 
     protected static function schemaMethod(): string
@@ -80,7 +80,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
                     'password' => $data['password'],
                 ],
                 static function (Authenticatable $user, string $password): void {
-                    /** @var Model&Authenticatable $user */
+                    /* @var Model&Authenticatable $user */
                     $user->setAttribute('password', Hash::make($password));
                     $user->setRememberToken(Str::random(60));
                     $user->save();

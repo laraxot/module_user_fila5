@@ -12,7 +12,7 @@ use Modules\User\Tests\TestCase;
 
 use function Pest\Laravel\assertAuthenticatedAs;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
     $this->widget = new LoginWidget();

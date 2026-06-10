@@ -8,7 +8,7 @@ use Filament\Actions\Action;
 use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
     $this->setupFilamentAdminPanel();

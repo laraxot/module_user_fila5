@@ -9,7 +9,7 @@ use Laravel\Passport\ClientRepository;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 /**
  * @return array{client: Client, secret: string}

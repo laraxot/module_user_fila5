@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Modules\User\Models\Profile;
 use Modules\User\Tests\TestCase;
@@ -12,7 +11,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function modelsProfileCreate(array $attributes = []): Profile
 {
@@ -40,7 +39,7 @@ function modelsProfileCreate(array $attributes = []): Profile
 }
 
 /**
- * @param  array<string, mixed>  $where
+ * @param array<string, mixed> $where
  */
 function modelsProfileAssertInDatabase(array $where): void
 {

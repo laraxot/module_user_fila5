@@ -15,7 +15,7 @@ use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 it('password data can be instantiated', function (): void {
     $passwordData = new PasswordData();

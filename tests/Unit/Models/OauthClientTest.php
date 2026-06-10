@@ -9,18 +9,18 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
     config(['passport.connection' => 'user']);
 
-    if (! \Illuminate\Support\Facades\Schema::connection('user')->hasTable('oauth_clients')) {
+    if (! Illuminate\Support\Facades\Schema::connection('user')->hasTable('oauth_clients')) {
         test()->markTestSkipped('oauth_clients table missing on user connection.');
     }
 });
 
 /**
- * @param  array<string, mixed>  $overrides
+ * @param array<string, mixed> $overrides
  */
 function oauthClientTestPersistedClient(array $overrides = []): OauthClient
 {
@@ -43,7 +43,7 @@ function oauthClientTestPersistedClient(array $overrides = []): OauthClient
         'updated_at' => now(),
     ], $overrides);
 
-    if (\Illuminate\Support\Facades\Schema::connection('user')->hasColumn('oauth_clients', 'owner_id')) {
+    if (Illuminate\Support\Facades\Schema::connection('user')->hasColumn('oauth_clients', 'owner_id')) {
         $payload['owner_id'] = $payload['owner_id'] ?? $payload['user_id'] ?? null;
         $payload['owner_type'] = $payload['owner_type'] ?? null;
     }

@@ -16,7 +16,7 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Clusters\XotBaseCluster;
 use Modules\Xot\Filament\Pages\XotBasePage;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 /*
  * Test per il Cluster Appearance e le sue Pages.

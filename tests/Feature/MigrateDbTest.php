@@ -6,7 +6,7 @@ namespace Modules\User\Tests\Feature;
 
 use Modules\User\Tests\TestCase;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 it('migrates the test database', function () {
     $this->markTestSkipped('Destructive migrate:fresh is not run in module tests — use forward-only migrate externally.');

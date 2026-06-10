@@ -4,14 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Filament;
 
-use Filament\Facades\Filament;
 use Livewire\Livewire;
+use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Filament\Resources\UserResource\Pages\EditUser;
 use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
 use Modules\User\Filament\Resources\UserResource\Pages\ViewUser;
-use Modules\User\Enums\UserType;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\User\Models\User;
