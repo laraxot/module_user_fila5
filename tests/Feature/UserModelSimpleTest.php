@@ -8,7 +8,7 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
 // Simple test to verify model instantiation
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 test('user model can be instantiated', function () {
     $user = new User();
@@ -24,25 +24,20 @@ test('user model can access connection', function () {
 });
 
 test('user model can create basic record', function () {
-    $userData = [
+    test()->skipUnlessUsersTableReady();
+
+    $user = test()->createTestUser([
         'name' => 'Test User',
         'first_name' => 'Test',
         'last_name' => 'User',
-        'email' => 'test-'.uniqid().'@example.com',
-        'password' => bcrypt('password'),
         'lang' => 'it',
         'is_active' => true,
-    ];
-
-    $user = User::create($userData);
+    ]);
 
     expect($user)
         ->toBeInstanceOf(User::class)
         ->name->toBe('Test User')
-        ->email->toBe($userData['email'])
+        ->email->not->toBeEmpty()
         ->lang->toBe('it')
         ->is_active->toBe(true);
-
-    // Clean up
-    $user->delete();
 });

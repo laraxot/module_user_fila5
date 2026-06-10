@@ -6,7 +6,7 @@ namespace Modules\User\Tests\Unit\Actions\User;
 
 use Modules\User\Actions\User\DeleteUserAction;
 use Modules\User\Models\User;
-use Tests\TestCase;
+use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 

@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Datas;
 
-uses(TestCase::class);
+use DateInterval;
+
+uses(\Modules\User\Tests\TestCase::class);
 
 use Modules\User\Datas\DeviceData;
 use Modules\User\Datas\FilamentShieldData;

@@ -177,6 +177,9 @@ class PasswordData extends Data
         ];
     }
 
+    /**
+     * @return array<string, \Filament\Forms\Components\TextInput>
+     */
     public static function getFormSchema(): array
     {
         return [

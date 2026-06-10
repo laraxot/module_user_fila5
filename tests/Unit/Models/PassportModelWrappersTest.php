@@ -16,7 +16,33 @@ use Modules\User\Models\OauthRefreshToken;
 use Modules\User\Models\OauthToken;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
+
+/**
+ * @param  class-string  $wrapperClass
+ */
+function passportWrapperConnectionName(string $wrapperClass): ?string
+{
+    config(['passport.connection' => 'user']);
+
+    $reflection = new \ReflectionClass($wrapperClass);
+
+    if ($reflection->hasProperty('connection')) {
+        $property = $reflection->getProperty('connection');
+        $property->setAccessible(true);
+        $connection = $property->getValue($reflection->newInstanceWithoutConstructor());
+
+        if (is_string($connection) && '' !== $connection) {
+            return $connection;
+        }
+    }
+
+    return (new $wrapperClass())->getConnectionName();
+}
+
+beforeEach(function (): void {
+    config(['passport.connection' => 'user']);
+});
 
 test('passport eloquent models have oauth wrappers in user module', function (): void {
     $expectedWrappers = [
@@ -31,6 +57,6 @@ test('passport eloquent models have oauth wrappers in user module', function ():
         expect(class_exists($passportClass))->toBeTrue();
         expect(class_exists($wrapperClass))->toBeTrue();
         expect(is_subclass_of($wrapperClass, $passportClass))->toBeTrue();
-        expect((new $wrapperClass())->getConnectionName())->toBe('user');
+        expect(passportWrapperConnectionName($wrapperClass))->toBe('user');
     }
 });

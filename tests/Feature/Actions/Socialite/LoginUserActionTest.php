@@ -6,13 +6,16 @@ namespace Modules\User\Tests\Feature\Actions\Socialite;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Event;
+use InvalidArgumentException;
+use LogicException;
+use stdClass;
 use Modules\User\Actions\Socialite\LoginUserAction;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 describe('LoginUserAction', function (): void {
     test('authenticates connected socialite user and dispatches event', function (): void {
@@ -84,8 +87,8 @@ describe('LoginUserAction', function (): void {
     });
 
     test('authenticates different users independently', function (): void {
-        $user1 = User::factory()->create(['email' => 'user1@example.com']);
-        $user2 = User::factory()->create(['email' => 'user2@example.com']);
+        $user1 = User::factory()->create(['email' => 'user1-'.uniqid().'@example.com']);
+        $user2 = User::factory()->create(['email' => 'user2-'.uniqid().'@example.com']);
 
         $socialiteUser1 = new SocialiteUser([
             'provider' => 'google',

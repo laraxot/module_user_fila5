@@ -7,36 +7,21 @@ namespace Modules\User\Tests\Unit;
 use Illuminate\Support\Facades\DB;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 test('verify database connections config', function () {
-    $mysql = config('database.connections.mysql.database');
+    $sqlitePath = database_path('fixcity_data.sqlite');
     $user = config('database.connections.user.database');
     $media = config('database.connections.media.database');
 
-    echo "\nMYSQL DB: ".$mysql;
-    echo "\nUSER DB: ".$user;
-    echo "\nMEDIA DB: ".$media;
-
-    expect($user)->toBe($mysql);
-    expect($media)->toBe($mysql);
+    expect($user)->toBe($sqlitePath);
+    expect($media)->toBe($sqlitePath);
 
     $resolvedUser = DB::connection('user')->getDatabaseName();
-    echo "\nRESOLVED USER DB: ".$resolvedUser;
-
-    expect($resolvedUser)->toBe($mysql);
+    expect($resolvedUser)->toBe($sqlitePath);
 
     $profilesExists = DB::connection('user')->getSchemaBuilder()->hasTable('profiles');
-    echo "\nPROFILES TABLE EXISTS: ".($profilesExists ? 'YES' : 'NO');
-
     $tenantsExists = DB::connection('user')->getSchemaBuilder()->hasTable('tenants');
-    echo "\nTENANTS TABLE EXISTS: ".($tenantsExists ? 'YES' : 'NO');
-
-    $migrations = DB::connection('user')->table('migrations')->get();
-    echo "\nTOTAL MIGRATIONS IN DB: ".$migrations->count();
-    foreach ($migrations as $m) {
-        echo "\nRUN MIGRATION: ".$m->migration;
-    }
 
     expect($profilesExists)->toBeTrue();
     expect($tenantsExists)->toBeTrue();

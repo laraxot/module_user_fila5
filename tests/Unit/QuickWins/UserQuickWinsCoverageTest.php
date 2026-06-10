@@ -9,11 +9,11 @@ use Modules\User\Actions\User\CreateUserAction;
 use Modules\User\Exceptions\ProviderNotConfigured;
 use Modules\User\Facades\FilamentShield;
 use Modules\User\Models\Team;
-use Modules\User\Models\TeamUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use Modules\User\Tests\Unit\QuickWins\Fixtures\FilamentShieldStubFixture;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 describe('User quick wins coverage', function (): void {
     it('builds provider not configured exception message', function (): void {
@@ -24,12 +24,7 @@ describe('User quick wins coverage', function (): void {
     });
 
     it('resolves filament shield facade accessor', function (): void {
-        $service = new class {
-            public function getWidgets(): array
-            {
-                return ['w1', 'w2'];
-            }
-        };
+        $service = new FilamentShieldStubFixture();
 
         app()->instance('filament-shield', $service);
 
@@ -44,9 +39,8 @@ describe('User quick wins coverage', function (): void {
         $team1 = Team::factory()->create(['user_id' => $user->id, 'name' => 'Team One']);
         $team2 = Team::factory()->create(['user_id' => $user->id, 'name' => 'Team Two']);
 
-        // Create TeamUser relationships using factories
-        TeamUser::factory()->create(['team_id' => $team1->id, 'user_id' => $user->id, 'role' => 'member']);
-        TeamUser::factory()->create(['team_id' => $team2->id, 'user_id' => $user->id, 'role' => 'member']);
+        $this->attachTeamMember($team1, $user, ['role' => 'member']);
+        $this->attachTeamMember($team2, $user, ['role' => 'member']);
 
         $options = app(GetUserTeamsOptionAction::class)->execute();
 

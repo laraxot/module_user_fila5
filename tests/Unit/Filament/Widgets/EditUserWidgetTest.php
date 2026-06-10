@@ -7,7 +7,7 @@ namespace Modules\User\Tests\Unit\Filament\Widgets;
 use Modules\User\Filament\Widgets\EditUserWidget;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 describe('EditUserWidget', function (): void {
     test('edit user widget can be instantiated', function (): void {
@@ -19,7 +19,7 @@ describe('EditUserWidget', function (): void {
     test('edit user widget extends xot base widget', function (): void {
         $widget = new EditUserWidget();
 
-        expect($widget)->toBeInstanceOf(Modules\Xot\Filament\Widgets\XotBaseWidget::class);
+        expect($widget)->toBeInstanceOf(\Modules\Xot\Filament\Widgets\XotBaseSchemaWidget::class);
     });
 
     test('edit user widget has type property', function (): void {

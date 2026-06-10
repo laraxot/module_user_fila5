@@ -12,7 +12,7 @@ use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 describe('RegisterOauthUserAction', function (): void {
     $getMockUser = function (array $attributes = []): SocialiteUserContract {

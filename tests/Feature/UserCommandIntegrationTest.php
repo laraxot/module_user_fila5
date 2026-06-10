@@ -4,14 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature;
 
+use Exception;
 use Illuminate\Console\Application;
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Artisan;
 use Modules\User\Console\Commands\ChangeTypeCommand;
+use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+use ReflectionClass;
+use stdClass;
 use Webmozart\Assert\Assert;
+
+uses(TestCase::class);
 
 describe('User Command Integration', function () {
     beforeEach(function () {
@@ -213,7 +219,7 @@ describe('User Command Integration', function () {
         expect($this->command)
             ->toBeInstanceOf(Command::class)
             ->and($this->command)
-            ->toBeInstanceOf(Symfony\Component\Console\Command\Command::class);
+            ->toBeInstanceOf(\Symfony\Component\Console\Command\Command::class);
     });
 
     it('validates command help and description', function () {

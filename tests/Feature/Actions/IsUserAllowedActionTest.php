@@ -4,11 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Actions;
 
+use Illuminate\Support\Str;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
+use Mockery;
 use Modules\User\Actions\Socialite\IsUserAllowedAction;
 use Modules\User\Tests\TestCase;
+use Webmozart\Assert\Assert;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 function fakeSocialiteUser(string $email): SocialiteUserContract
 {
@@ -18,12 +21,22 @@ function fakeSocialiteUser(string $email): SocialiteUserContract
     return $user;
 }
 
+function makeIsUserAllowedAction(): IsUserAllowedAction
+{
+    $assert = Mockery::mock(Assert::class);
+    $assert->shouldReceive('notNull')
+        ->with(Mockery::any(), Mockery::any())
+        ->andReturnUsing(static fn (mixed $value): mixed => $value);
+
+    return new IsUserAllowedAction($assert, new Str());
+}
+
 describe('IsUserAllowedAction', function (): void {
     test('allows user with whitelisted email domain', function (): void {
         $user = fakeSocialiteUser('user@allowed-company.com');
         config(['filament-socialite.domain_allowlist' => ['allowed-company.com']]);
 
-        $result = app(IsUserAllowedAction::class)->execute($user);
+        $result = makeIsUserAllowedAction()->execute($user);
 
         expect($result)->toBeTrue();
     });
@@ -32,7 +45,7 @@ describe('IsUserAllowedAction', function (): void {
         $user = fakeSocialiteUser('user@unknown-domain.com');
         config(['filament-socialite.domain_allowlist' => ['allowed-company.com']]);
 
-        $result = app(IsUserAllowedAction::class)->execute($user);
+        $result = makeIsUserAllowedAction()->execute($user);
 
         expect($result)->toBeFalse();
     });
@@ -41,7 +54,7 @@ describe('IsUserAllowedAction', function (): void {
         $user = fakeSocialiteUser('user@any-domain.com');
         config(['filament-socialite.domain_allowlist' => []]);
 
-        $result = app(IsUserAllowedAction::class)->execute($user);
+        $result = makeIsUserAllowedAction()->execute($user);
 
         expect($result)->toBeTrue();
     });

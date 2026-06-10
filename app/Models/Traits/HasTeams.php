@@ -50,11 +50,14 @@ trait HasTeams
     /**
      * Get all teams the user belongs to.
      *
-     * @return Collection<TeamContract>
+     * @return Collection<int, TeamContract>
      */
     public function allTeams(): Collection
     {
-        return $this->ownedTeams->merge($this->teams)->sortBy('name');
+        /** @var Collection<int, TeamContract> $teams */
+        $teams = $this->ownedTeams->merge($this->teams)->sortBy('name');
+
+        return $teams;
     }
 
     /**
@@ -533,18 +536,28 @@ trait HasTeams
 
     /**
      * Get all admins of the team.
+     *
+     * @return Collection<int, Model>
      */
     public function getTeamAdmins(TeamContract $team): Collection
     {
-        return $team->members()->wherePivot('role', 'admin')->get();
+        /** @var Collection<int, Model> $admins */
+        $admins = $team->members()->wherePivot('role', 'admin')->get();
+
+        return $admins;
     }
 
     /**
      * Get all members of the team.
+     *
+     * @return Collection<int, Model>
      */
     public function getTeamMembers(TeamContract $team): Collection
     {
-        return $team->members()->wherePivot('role', 'member')->get();
+        /** @var Collection<int, Model> $members */
+        $members = $team->members()->wherePivot('role', 'member')->get();
+
+        return $members;
     }
 
     /**

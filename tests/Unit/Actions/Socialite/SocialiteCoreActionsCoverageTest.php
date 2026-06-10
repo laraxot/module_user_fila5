@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit\Actions\Socialite;
 
 use Illuminate\Contracts\Events\Dispatcher;
+use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
+use Mockery;
+use RuntimeException;
 use Laravel\Socialite\Facades\Socialite;
 use Laravel\Socialite\Two\InvalidStateException;
 use Modules\User\Actions\Socialite\CreateSocialiteUserAction;
@@ -17,7 +20,7 @@ use Modules\User\Models\SocialiteUser;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 describe('Socialite core actions coverage', function (): void {
     it('builds user attributes from oauth user', function (): void {

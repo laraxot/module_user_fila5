@@ -10,7 +10,7 @@ use Modules\User\Models\Role;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 describe('SetDefaultRolesBySocialiteUserAction', function (): void {
     $getMockUser = static function (string $email = 'user@example.com'): SocialiteUserContract {
@@ -70,8 +70,9 @@ describe('SetDefaultRolesBySocialiteUserAction', function (): void {
     });
 
     test('handles user with no email', function () use ($getMockUser): void {
-        $user = User::factory()->create(['email' => 'nomaildomain@localhost']);
-        $oauthUser = $getMockUser('nomaildomain@localhost');
+        $email = 'nomail-'.uniqid('', true).'@localhost';
+        $user = User::factory()->create(['email' => $email]);
+        $oauthUser = $getMockUser($email);
 
         app(SetDefaultRolesBySocialiteUserAction::class)->execute('github', $user, $oauthUser);
 

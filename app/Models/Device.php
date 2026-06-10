@@ -45,7 +45,7 @@ use Modules\Xot\Datas\XotData;
  * @property ProfileContract|null $updater
  * @property string               $id
  * @property string|null          $mobile_id
- * @property array|null           $languages
+ * @property array<int, string>|null $languages
  * @property string|null          $device
  * @property string|null          $platform
  * @property string|null          $browser
@@ -64,7 +64,6 @@ use Modules\Xot\Datas\XotData;
  *
  * @method static Builder<static>|Device whereUuid($value)
  *
- * @mixin IdeHelperDevice
  *
  * @property ProfileContract|null $deleter
  *
@@ -99,15 +98,16 @@ class Device extends BaseModel
     ];
 
     /**
-     * Define the many-to-many relationship between devices and users.
-     *
-     * return BelongsToMany<UserContract, Device>
+     * @return BelongsToMany<Model&UserContract, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
      */
     public function users(): BelongsToMany
     {
         $userClass = XotData::make()->getUserClass();
 
-        return $this->belongsToManyX($userClass);
+        /** @var BelongsToMany<Model&UserContract, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'> $relation */
+        $relation = $this->belongsToManyX($userClass);
+
+        return $relation;
     }
 
     /**

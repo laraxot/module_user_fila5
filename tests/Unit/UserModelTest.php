@@ -8,10 +8,9 @@ use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Team;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\Profile;
 use Modules\User\Models\User;
 
@@ -40,16 +39,6 @@ function stubUser(array $attributes = []): User
 
     return $u;
 }
-
-// Provide Eloquent connection resolver and event dispatcher once for this file
-beforeAll(function (): void {
-    try {
-        Model::setConnectionResolver(app('db'));
-        Model::setEventDispatcher(app('events'));
-    } catch (Throwable $e) {
-        // TestCase should have the app; if not, ignore silently for pure in-memory assertions
-    }
-});
 
 describe('User Model', function () {
     it('can be created (in-memory)', function () {

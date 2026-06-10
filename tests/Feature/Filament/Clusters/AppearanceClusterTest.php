@@ -16,7 +16,7 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Clusters\XotBaseCluster;
 use Modules\Xot\Filament\Pages\XotBasePage;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 /*
  * Test per il Cluster Appearance e le sue Pages.
@@ -59,7 +59,7 @@ test('all cluster pages have cluster property set', function () {
     ];
 
     foreach ($pages as $pageClass) {
-        $reflection = new ReflectionClass($pageClass);
+        $reflection = new \ReflectionClass($pageClass);
         $property = $reflection->getProperty('cluster');
         $defaultValue = $property->getDefaultValue();
 
@@ -92,7 +92,10 @@ test('cluster does not extend Filament directly', function () {
 
 test('cluster pages are accessible', function () {
     $userClass = XotData::make()->getUserClass();
-    $user = $userClass::factory()->create();
+    $user = $userClass::factory()->create([
+        'name' => 'Cluster Test User',
+        'email' => 'cluster-'.uniqid('', true).'@example.com',
+    ]);
 
     $this->actingAs($user);
 

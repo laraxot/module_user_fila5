@@ -11,7 +11,7 @@ use Modules\User\Tests\TestCase;
 use Spatie\Permission\PermissionRegistrar;
 use Spatie\Permission\Support\Config as PermissionConfig;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 test('spatie permission registrar uses user module models for teams', function (): void {
     $registrar = app(PermissionRegistrar::class);

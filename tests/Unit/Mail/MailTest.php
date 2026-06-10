@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Mail;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 use Modules\User\Mail\TeamInvitation;
 use Modules\User\Tests\TestCase;
@@ -37,7 +37,7 @@ test('TeamInvitation has expected methods', function () {
         ];
 
         $mail = new TeamInvitation($invitation);
-        expect(method_exists($mail, 'build'))->toBeTrue();
+        expect($mail)->toBeInstanceOf(\Illuminate\Mail\Mailable::class);
     } else {
         expect(true)->toBeTrue();
     }

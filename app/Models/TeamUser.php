@@ -46,7 +46,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
- * @mixin IdeHelperTeamUser
  *
  * @property ProfileContract|null         $deleter
  * @property Team|null                    $team
@@ -54,8 +53,8 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property array<array-key, mixed>|null $permissions
  * @property string|null                  $joined_at
  *
- * @method static Builder<static>|TeamUser                         childrenWith(array $relations)
- * @method static Builder<static>|TeamUser                         childrenWithCount(array $relations)
+ * @method static Builder<static>|TeamUser                         childrenWith(array<int|string, mixed> $relations)
+ * @method static Builder<static>|TeamUser                         childrenWithCount(array<int|string, mixed> $relations)
  * @method static \Modules\User\Database\Factories\TeamUserFactory factory($count = null, $state = [])
  * @method static Builder<static>|TeamUser                         whereJoinedAt($value)
  * @method static Builder<static>|TeamUser                         wherePermissions($value)

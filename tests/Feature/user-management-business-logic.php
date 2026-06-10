@@ -13,7 +13,7 @@ use Modules\User\Models\Role;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 it('can create user with profile', function () {
     // Arrange

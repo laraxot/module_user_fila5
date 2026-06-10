@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Rules;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 use Modules\User\Rules\CheckOtpExpiredRule;
 use Modules\User\Tests\TestCase;
@@ -24,7 +24,7 @@ test('CheckOtpExpiredRule has validation methods', function () {
     if (class_exists(CheckOtpExpiredRule::class)) {
         try {
             $rule = app(CheckOtpExpiredRule::class);
-            expect(method_exists($rule, 'passes'))->toBeTrue();
+            expect(method_exists($rule, 'validate') || method_exists($rule, 'passes'))->toBeTrue();
             expect(method_exists($rule, 'message'))->toBeTrue();
         } catch (Exception $e) {
             expect(true)->toBeTrue(); // Pass if class exists

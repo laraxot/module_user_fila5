@@ -2,10 +2,15 @@
 
 declare(strict_types=1);
 
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Modules\User\Database\Factories\TeamFactory;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+
+use function Safe\json_encode;
 
 /*
  * |--------------------------------------------------------------------------
@@ -18,7 +23,10 @@ use Modules\User\Tests\TestCase;
  * |
  */
 
-pest()->extend(TestCase::class)->in('Feature', 'Unit');
+/*
+ * | Test Case — ogni file Pest dichiara uses(\Modules\User\Tests\TestCase::class).
+ * | Vietato pest()->extend qui + uses() per file (conflitto Pest).
+ */
 
 /*
  * |--------------------------------------------------------------------------
@@ -31,11 +39,20 @@ pest()->extend(TestCase::class)->in('Feature', 'Unit');
  * |
  */
 
-expect()->extend('toBeUser', fn () => $this->toBeInstanceOf(User::class));
+expect()->extend('toBeUser', function () {
+    /** @phpstan-ignore-next-line */
+    return $this->toBeInstanceOf(User::class);
+});
 
-expect()->extend('toBeTeam', fn () => $this->toBeInstanceOf(Team::class));
+expect()->extend('toBeTeam', function () {
+    /** @phpstan-ignore-next-line */
+    return $this->toBeInstanceOf(Team::class);
+});
 
-expect()->extend('toBeProfile', fn () => $this->toBeInstanceOf(Profile::class));
+expect()->extend('toBeProfile', function () {
+    /** @phpstan-ignore-next-line */
+    return $this->toBeInstanceOf(Profile::class);
+});
 
 /*
  * |--------------------------------------------------------------------------
@@ -48,22 +65,217 @@ expect()->extend('toBeProfile', fn () => $this->toBeInstanceOf(Profile::class));
  * |
  */
 
+/**
+ * @param  array<string, mixed>  $attributes
+ */
 function createUser(array $attributes = []): User
 {
-    return User::factory()->create($attributes);
+    $factory = User::factory();
+    \assert($factory instanceof Factory);
+
+    $user = $factory->create($attributes);
+    \assert($user instanceof User);
+
+    return $user;
 }
 
+/**
+ * @param  array<string, mixed>  $attributes
+ */
 function makeUser(array $attributes = []): User
 {
-    return User::factory()->make($attributes);
+    $factory = User::factory();
+    \assert($factory instanceof Factory);
+
+    $user = $factory->make($attributes);
+    \assert($user instanceof User);
+
+    return $user;
 }
 
+/**
+ * @param  array<string, mixed>  $attributes
+ */
 function createTeam(array $attributes = []): Team
 {
-    return Team::factory()->create($attributes);
+    return TeamFactory::new()->createOne(array_merge([
+        'name' => 'team-'.uniqid(),
+    ], $attributes));
 }
 
+/**
+ * @param  array<string, mixed>  $attributes
+ */
+function createTestUser(array $attributes = []): User
+{
+    return UserFactory::new()->createOne(array_merge([
+        'email' => 'test-'.uniqid('', true).'@example.com',
+    ], $attributes));
+}
+
+/**
+ * @return array{user: User, team: Team, personalTeam: Team}
+ */
+function bootstrapHasTeamsFixture(): array
+{
+    $user = createTestUser();
+    $team = TeamFactory::new()->createOne(['name' => 'shared-'.uniqid()]);
+    $personalTeam = TeamFactory::new()->createOne([
+        'user_id' => $user->id,
+        'name' => 'personal-'.uniqid(),
+        'personal_team' => true,
+    ]);
+
+    return [
+        'user' => $user,
+        'team' => $team,
+        'personalTeam' => $personalTeam,
+    ];
+}
+
+function userTableHasColumn(string $table, string $column): bool
+{
+    return \Illuminate\Support\Facades\Schema::connection('user')->hasColumn($table, $column);
+}
+
+function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
+{
+    if (! userTableHasColumn($table, $column)) {
+        /** @var TestCase $testCase */
+        $testCase = test();
+        $testCase->markTestSkipped('' !== $reason ? $reason : "Column {$table}.{$column} missing on user connection.");
+    }
+}
+
+function userTableExists(string $table): bool
+{
+    return \Illuminate\Support\Facades\Schema::connection('user')->hasTable($table);
+}
+
+function skipUnlessUserTable(string $table, string $reason = ''): void
+{
+    if (! userTableExists($table)) {
+        /** @var TestCase $testCase */
+        $testCase = test();
+        $testCase->markTestSkipped('' !== $reason ? $reason : "Table {$table} missing on user connection.");
+    }
+}
+
+function permissionRolePivotTable(): string
+{
+    return (string) config('permission.table_names.model_has_roles', 'model_has_role');
+}
+
+function permissionPivotTable(): string
+{
+    return (string) config('permission.table_names.model_has_permissions', 'model_has_permission');
+}
+
+function skipUnlessUsersTableReady(string $reason = ''): void
+{
+    skipUnlessUserTable('users', '' !== $reason ? $reason : 'users table missing on user connection.');
+}
+
+function skipUnlessRoleAssignmentSupported(string $reason = ''): void
+{
+    $table = permissionRolePivotTable();
+    skipUnlessUserTable($table, '' !== $reason ? $reason : "Role pivot table {$table} missing on user connection.");
+}
+
+function skipUnlessDirectPermissionSupported(string $reason = ''): void
+{
+    $table = permissionPivotTable();
+    skipUnlessUserTable($table, '' !== $reason ? $reason : "Permission pivot table {$table} missing on user connection.");
+}
+
+function skipUnlessTeamUsersRelationSupported(): void
+{
+    if (! userTableHasColumn('team_user', 'permissions')) {
+        /** @var TestCase $testCase */
+        $testCase = test();
+        $testCase->markTestSkipped('team_user.permissions column missing — Team::users() pivot not loadable.');
+    }
+}
+
+/**
+ * @param  array<string, mixed>  $pivot
+ */
+function attachTeamMember(Team $team, User $user, array $pivot = []): void
+{
+    $payload = [
+        'team_id' => $team->id,
+        'user_id' => $user->id,
+        'created_at' => now(),
+        'updated_at' => now(),
+    ];
+
+    if (isset($pivot['role'])) {
+        $payload['role'] = $pivot['role'];
+    }
+
+    if (userTableHasColumn('team_user', 'permissions') && array_key_exists('permissions', $pivot)) {
+        $permissions = $pivot['permissions'];
+        $payload['permissions'] = is_array($permissions) ? json_encode($permissions) : $permissions;
+    }
+
+    if (userTableHasColumn('team_user', 'joined_at') && array_key_exists('joined_at', $pivot)) {
+        $payload['joined_at'] = $pivot['joined_at'];
+    }
+
+    \Illuminate\Support\Facades\DB::connection('user')->table('team_user')->insert($payload);
+}
+
+function detachTeamMember(Team $team, User $user): void
+{
+    \Illuminate\Support\Facades\DB::connection('user')->table('team_user')
+        ->where('team_id', $team->id)
+        ->where('user_id', $user->id)
+        ->delete();
+}
+
+function teamMemberExists(Team $team, User $user): bool
+{
+    return \Illuminate\Support\Facades\DB::connection('user')->table('team_user')
+        ->where('team_id', $team->id)
+        ->where('user_id', $user->id)
+        ->exists();
+}
+
+function teamUsesSoftDeletes(): bool
+{
+    return in_array(
+        \Illuminate\Database\Eloquent\SoftDeletes::class,
+        class_uses_recursive(Team::class),
+        true
+    );
+}
+
+/**
+ * @param  array<string, mixed>  $attributes
+ */
 function createProfile(array $attributes = []): Profile
 {
-    return Profile::factory()->create($attributes);
+    $factory = Profile::factory();
+    \assert($factory instanceof Factory);
+
+    $profile = $factory->create($attributes);
+    \assert($profile instanceof Profile);
+
+    return $profile;
+}
+
+function setupFilamentAdminPanel(): void
+{
+    $filament = \Filament\Facades\Filament::class;
+
+    try {
+        $panel = $filament::getPanel('user::admin');
+    } catch (\Throwable) {
+        $panelProvider = new \Modules\User\Providers\Filament\AdminPanelProvider(app());
+        $registry = $filament::getPanelRegistry();
+        $panel = $panelProvider->panel($registry->makePanel('user::admin'));
+        $filament::registerPanel($panel);
+    }
+
+    $filament::setCurrentPanel($panel);
 }

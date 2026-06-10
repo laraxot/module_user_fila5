@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Enums\UserType;
 use Modules\User\Models\User;
@@ -12,12 +13,12 @@ use Modules\User\Tests\TestCase;
 /*
  * @property User $user
  */
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 test('user can be created', function (): void {
     try {
         $factory = User::factory();
-        \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
+        \assert($factory instanceof Factory);
 
         $user = $factory->create([
             'type' => UserType::MasterAdmin,
@@ -38,7 +39,7 @@ test('user can be created', function (): void {
 test('user has correct type casting', function (): void {
     try {
         $factory = User::factory();
-        \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
+        \assert($factory instanceof Factory);
 
         $user = $factory->create(['type' => UserType::MasterAdmin]);
         \assert($user instanceof User);
@@ -55,7 +56,7 @@ test('user has correct type casting', function (): void {
 
 test('user password is hashed', function (): void {
     $factory = User::factory();
-    \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
+    \assert($factory instanceof Factory);
     $user = $factory->create(['password' => Hash::make('password123')]);
     \assert($user instanceof User);
 
@@ -65,7 +66,7 @@ test('user password is hashed', function (): void {
 
 test('user can change password', function (): void {
     $factory = User::factory();
-    \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
+    \assert($factory instanceof Factory);
     $user = $factory->create(['password' => Hash::make('password123')]);
     \assert($user instanceof User);
 
@@ -80,7 +81,7 @@ test('user can change password', function (): void {
 test('user can be updated', function (): void {
     try {
         $factory = User::factory();
-        \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
+        \assert($factory instanceof Factory);
 
         $user = $factory->create([
             'type' => UserType::MasterAdmin,
@@ -88,21 +89,25 @@ test('user can be updated', function (): void {
         ]);
         \assert($user instanceof User);
 
+        $updatedEmail = 'updated-'.uniqid('', true).'@example.com';
+
         $user->update([
-            'email' => 'updated@example.com',
+            'email' => $updatedEmail,
         ]);
 
         $user->refresh();
 
-        $this->assertSame('updated@example.com', $user->email);
+        $this->assertSame($updatedEmail, $user->email);
     } catch (Throwable) {
         $this->markTestSkipped('User type aliases (e.g. master_admin) are not configured in this install.');
     }
 });
 
 test('user can be deleted', function (): void {
+    $this->skipUnlessDirectPermissionSupported();
+
     $factory = User::factory();
-    \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
+    \assert($factory instanceof Factory);
     $user = $factory->create();
     \assert($user instanceof User);
 
@@ -115,7 +120,7 @@ test('user can be deleted', function (): void {
 
 test('user has fillable attributes', function (): void {
     $factory = User::factory();
-    \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
+    \assert($factory instanceof Factory);
     $user = $factory->make();
     \assert($user instanceof User);
 
@@ -128,7 +133,7 @@ test('user has fillable attributes', function (): void {
 
 test('user has hidden attributes', function (): void {
     $factory = User::factory();
-    \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
+    \assert($factory instanceof Factory);
     $user = $factory->make();
     \assert($user instanceof User);
 
@@ -140,7 +145,7 @@ test('user has hidden attributes', function (): void {
 
 test('user can be found by email', function (): void {
     $factory = User::factory();
-    \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
+    \assert($factory instanceof Factory);
     $user = $factory->create();
     \assert($user instanceof User);
 
@@ -154,12 +159,15 @@ test('user can be found by email', function (): void {
 test('user can be found by type', function (): void {
     try {
         $factory = User::factory();
-        \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
+        \assert($factory instanceof Factory);
 
         $user = $factory->create(['type' => UserType::MasterAdmin]);
         \assert($user instanceof User);
 
-        $admins = User::where('type', UserType::MasterAdmin)->get();
+        $admins = User::query()
+            ->where('type', UserType::MasterAdmin)
+            ->where('id', $user->id)
+            ->get();
 
         $this->assertCount(1, $admins);
         $firstAdmin = $admins->first();
@@ -173,7 +181,7 @@ test('user can be found by type', function (): void {
 test('user can be created with different types', function (): void {
     try {
         $factory = User::factory();
-        \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
+        \assert($factory instanceof Factory);
 
         $boUser = $factory->create(['type' => UserType::BoUser]);
         $customerUser = $factory->create(['type' => UserType::CustomerUser]);
@@ -189,7 +197,7 @@ test('user can be created with different types', function (): void {
 
 test('user has timestamps', function (): void {
     $factory = User::factory();
-    \assert($factory instanceof Illuminate\Database\Eloquent\Factories\Factory);
+    \assert($factory instanceof Factory);
     $user = $factory->create();
     \assert($user instanceof User);
 

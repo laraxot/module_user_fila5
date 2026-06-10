@@ -14,7 +14,7 @@ use Modules\User\Models\User;
 use Modules\User\Notifications\Auth\Otp;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 describe('SendOtpByUserAction', function () {
     it('generates and sends an OTP to the user', function () {
@@ -22,7 +22,7 @@ describe('SendOtpByUserAction', function () {
         Notification::fake();
 
         $user = User::factory()->create([
-            'email' => self::generateUniqueEmail(),
+            'email' => 'otp-'.uniqid('', true).'@example.com',
         ]);
 
         $passwordData = PasswordData::from([

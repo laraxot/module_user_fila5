@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Actions;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;
@@ -52,12 +52,13 @@ test('CreateUserAction can be instantiated', function () {
 test('IsUserAllowedAction can be instantiated', function () {
     expect(class_exists(IsUserAllowedAction::class))->toBeTrue();
 
-    try {
-        $action = app(IsUserAllowedAction::class);
-        expect($action)->toBeInstanceOf(IsUserAllowedAction::class);
-    } catch (Exception $e) {
-        expect(true)->toBeTrue(); // Pass if class exists
-    }
+    $assertMock = \Mockery::mock(\Webmozart\Assert\Assert::class);
+    $assertMock->shouldReceive('notNull')->andReturnUsing(
+        static fn (mixed $value): mixed => \Webmozart\Assert\Assert::notNull($value)
+    );
+
+    $action = new IsUserAllowedAction($assertMock, new \Illuminate\Support\Str());
+    expect($action)->toBeInstanceOf(IsUserAllowedAction::class);
 });
 
 test('DeleteUserAction can be instantiated', function () {

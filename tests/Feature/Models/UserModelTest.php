@@ -10,9 +10,12 @@ use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 describe('User Model', function (): void {
+    beforeEach(function (): void {
+        test()->skipUnlessUsersTableReady();
+    });
     test('can create user with factory', function (): void {
         $user = User::factory()->create();
 
@@ -73,6 +76,8 @@ describe('User Model', function (): void {
     });
 
     test('user can have permissions', function (): void {
+        test()->skipUnlessDirectPermissionSupported();
+
         $user = User::factory()->create();
         $permission = Permission::factory()->create(['guard_name' => 'web', 'name' => 'permission-'.uniqid()]);
 
@@ -92,6 +97,8 @@ describe('User Model', function (): void {
     });
 
     test('user can check if has permission', function (): void {
+        test()->skipUnlessDirectPermissionSupported();
+
         $user = User::factory()->create();
         $permission = Permission::factory()->create(['name' => 'perm-'.uniqid(), 'guard_name' => 'web']);
 
@@ -199,7 +206,7 @@ describe('User Model', function (): void {
     });
 
     test('user can be queried by email', function (): void {
-        $email = 'unique-test@example.com';
+        $email = 'unique-test-'.uniqid('', true).'@example.com';
         User::factory()->create(['email' => $email]);
 
         $user = User::where('email', $email)->first();
@@ -221,6 +228,8 @@ describe('User Model', function (): void {
     });
 
     test('user can be deleted', function (): void {
+        test()->skipUnlessDirectPermissionSupported();
+
         $user = User::factory()->create();
         $userId = $user->id;
 
@@ -244,7 +253,11 @@ describe('User Model', function (): void {
 
     test('user belongs to socialite users', function (): void {
         $user = User::factory()->create();
-        SocialiteUser::factory()->create(['user_id' => $user->id, 'provider' => 'google']);
+        SocialiteUser::factory()->create([
+            'user_id' => $user->id,
+            'provider' => 'google',
+            'provider_id' => 'google-'.uniqid(),
+        ]);
 
         $socialiteUsers = $user->socialiteUsers()->get();
 
@@ -254,8 +267,16 @@ describe('User Model', function (): void {
 
     test('user can have multiple socialite accounts', function (): void {
         $user = User::factory()->create();
-        SocialiteUser::factory()->create(['user_id' => $user->id, 'provider' => 'google']);
-        SocialiteUser::factory()->create(['user_id' => $user->id, 'provider' => 'github']);
+        SocialiteUser::factory()->create([
+            'user_id' => $user->id,
+            'provider' => 'google',
+            'provider_id' => 'google-'.uniqid(),
+        ]);
+        SocialiteUser::factory()->create([
+            'user_id' => $user->id,
+            'provider' => 'github',
+            'provider_id' => 'github-'.uniqid(),
+        ]);
 
         expect($user->socialiteUsers()->count())->toBe(2);
     });

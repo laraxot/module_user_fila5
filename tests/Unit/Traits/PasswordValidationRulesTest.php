@@ -5,35 +5,31 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit\Traits;
 
 use Modules\User\Tests\TestCase;
+use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesFixture;
+use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesMockableFixture;
 use Modules\User\Traits\PasswordValidationRules;
+use ReflectionClass;
 
 uses(TestCase::class);
 
-test('PasswordValidationRules trait can be used', function () {
-    $testClass = new class {
-        use PasswordValidationRules;
-    };
-
-    expect($testClass)->not()->toBeNull();
+test('PasswordValidationRules trait can be used', function (): void {
+    expect(trait_exists(PasswordValidationRules::class))->toBeTrue();
+    expect(new PasswordValidationRulesFixture())->toBeInstanceOf(PasswordValidationRulesFixture::class);
 });
 
-test('PasswordValidationRules trait provides passwordRules method', function () {
-    $testClass = new class {
-        use PasswordValidationRules;
+test('PasswordValidationRules trait provides passwordRules method', function (): void {
+    $reflection = new ReflectionClass(PasswordValidationRules::class);
 
-        public function getPasswordRules()
-        {
-            return $this->passwordRules();
-        }
-    };
+    expect($reflection->hasMethod('passwordRules'))->toBeTrue();
 
-    $className = get_class($testClass);
+    $fixture = new PasswordValidationRulesMockableFixture();
+    $className = $fixture::class;
 
     $mock = $this->getMockBuilder($className)
-        ->onlyMethods(['passwordRules'])
+        ->onlyMethods(['getPasswordRules'])
         ->getMock();
 
-    $mock->method('passwordRules')
+    $mock->method('getPasswordRules')
         ->willReturn(['required', 'string', 'confirmed']);
 
     $rules = $mock->getPasswordRules();

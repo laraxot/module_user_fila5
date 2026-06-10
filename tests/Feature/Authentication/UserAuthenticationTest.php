@@ -6,15 +6,19 @@ namespace Modules\User\Tests\Feature\Authentication;
 
 use Illuminate\Auth\Notifications\VerifyEmail;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Notification;
+use Illuminate\Support\Str;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Traits\HasUserTestCase;
 
-uses(TestCase::class, HasUserTestCase::class);
+uses(\Modules\User\Tests\TestCase::class, HasUserTestCase::class);
 
 beforeEach(function () {
     $user = User::factory()->create([
@@ -201,68 +205,80 @@ describe('User Email Verification', function () {
 
 describe('User Authorization', function () {
     it('can assign and check roles', function () {
-        $adminRole = Role::factory()->create(['name' => 'admin']);
-        $editorRole = Role::factory()->create(['name' => 'editor']);
+        $this->skipUnlessRoleAssignmentSupported();
+        $uid = uniqid();
+        $adminRole = Role::factory()->create(['name' => 'admin-'.$uid]);
+        $editorRole = Role::factory()->create(['name' => 'editor-'.$uid]);
 
         $this->user->assignRole($adminRole);
 
-        expect($this->user->hasRole('admin'))->toBe(true);
-        expect($this->user->hasRole('editor'))->toBe(false);
+        expect($this->user->hasRole('admin-'.$uid))->toBe(true);
+        expect($this->user->hasRole('editor-'.$uid))->toBe(false);
         expect($this->user->hasRole($adminRole))->toBe(true);
     });
 
     it('can assign and check permissions', function () {
-        $editPermission = Permission::factory()->create(['name' => 'edit posts']);
-        $deletePermission = Permission::factory()->create(['name' => 'delete posts']);
+        $this->skipUnlessDirectPermissionSupported();
+        $uid = uniqid();
+        $editPermission = Permission::factory()->create(['name' => 'edit posts '.$uid]);
+        $deletePermission = Permission::factory()->create(['name' => 'delete posts '.$uid]);
 
         $this->user->givePermissionTo($editPermission);
 
-        expect($this->user->hasPermissionTo('edit posts'))->toBe(true);
-        expect($this->user->hasPermissionTo('delete posts'))->toBe(false);
+        expect($this->user->hasPermissionTo('edit posts '.$uid))->toBe(true);
+        expect($this->user->hasPermissionTo('delete posts '.$uid))->toBe(false);
         expect($this->user->hasPermissionTo($editPermission))->toBe(true);
     });
 
     it('can inherit permissions from roles', function () {
-        $role = Role::factory()->create(['name' => 'editor']);
-        $permission = Permission::factory()->create(['name' => 'edit posts']);
+        $this->skipUnlessRoleAssignmentSupported();
+        $this->skipUnlessDirectPermissionSupported();
+        $uid = uniqid();
+        $role = Role::factory()->create(['name' => 'editor '.$uid]);
+        $permission = Permission::factory()->create(['name' => 'edit posts '.$uid]);
 
         $role->givePermissionTo($permission);
         $this->user->assignRole($role);
 
-        expect($this->user->hasPermissionTo('edit posts'))->toBe(true);
+        expect($this->user->hasPermissionTo('edit posts '.$uid))->toBe(true);
     });
 
     it('can check multiple permissions', function () {
-        $permission1 = Permission::factory()->create(['name' => 'edit posts']);
-        $permission2 = Permission::factory()->create(['name' => 'delete posts']);
+        $this->skipUnlessDirectPermissionSupported();
+        $uid = uniqid();
+        $permission1 = Permission::factory()->create(['name' => 'edit posts '.$uid]);
+        $permission2 = Permission::factory()->create(['name' => 'delete posts '.$uid]);
 
         $this->user->givePermissionTo([$permission1, $permission2]);
 
-        expect($this->user->hasAllPermissions(['edit posts', 'delete posts']))->toBe(true);
-        expect($this->user->hasAnyPermission(['edit posts', 'publish posts']))->toBe(true);
+        expect($this->user->hasAllPermissions(['edit posts '.$uid, 'delete posts '.$uid]))->toBe(true);
+        expect($this->user->hasAnyPermission(['edit posts '.$uid, 'publish posts '.$uid]))->toBe(true);
     });
 
     it('can remove roles and permissions', function () {
-        $role = Role::factory()->create(['name' => 'editor']);
-        $permission = Permission::factory()->create(['name' => 'edit posts']);
+        $this->skipUnlessRoleAssignmentSupported();
+        $this->skipUnlessDirectPermissionSupported();
+        $uid = uniqid();
+        $role = Role::factory()->create(['name' => 'editor '.$uid]);
+        $permission = Permission::factory()->create(['name' => 'edit posts '.$uid]);
 
         $this->user->assignRole($role);
         $this->user->givePermissionTo($permission);
 
-        expect($this->user->hasRole('editor'))->toBe(true);
-        expect($this->user->hasPermissionTo('edit posts'))->toBe(true);
+        expect($this->user->hasRole('editor '.$uid))->toBe(true);
+        expect($this->user->hasPermissionTo('edit posts '.$uid))->toBe(true);
 
         $this->user->removeRole($role);
         $this->user->revokePermissionTo($permission);
 
-        expect($this->user->hasRole('editor'))->toBe(false);
-        expect($this->user->hasPermissionTo('edit posts'))->toBe(false);
+        expect($this->user->hasRole('editor '.$uid))->toBe(false);
+        expect($this->user->hasPermissionTo('edit posts '.$uid))->toBe(false);
     });
 });
 
 describe('User OAuth Authentication', function () {
     it('can have oauth clients', function () {
-        expect($this->user->clients())->toBeInstanceOf(Illuminate\Database\Eloquent\Relations\MorphMany::class);
+        expect($this->user->clients())->toBeInstanceOf(MorphMany::class);
     });
 
     it('can have oauth tokens', function () {
@@ -285,12 +301,12 @@ describe('User OAuth Authentication', function () {
 
 describe('User Authentication Logging', function () {
     it('can log authentication attempts', function () {
-        expect($this->user->authentications())->toBeInstanceOf(Illuminate\Database\Eloquent\Relations\MorphMany::class);
+        expect($this->user->authentications())->toBeInstanceOf(MorphMany::class);
     });
 
     it('can get latest authentication log', function () {
         expect($this->user->latestAuthentication())
-            ->toBeInstanceOf(Illuminate\Database\Eloquent\Relations\MorphOne::class);
+            ->toBeInstanceOf(MorphOne::class);
     });
 });
 

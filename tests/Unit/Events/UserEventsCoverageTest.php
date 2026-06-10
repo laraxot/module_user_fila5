@@ -6,6 +6,8 @@ namespace Modules\User\Tests\Unit\Events;
 
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Auth\Authenticatable;
+use Mockery;
+use Modules\User\Tests\TestCase;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Laravel\Socialite\Two\InvalidStateException;
 use Modules\User\Contracts\TeamContract;
@@ -37,6 +39,8 @@ use Modules\User\Events\UserRegistered;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract;
+
+uses(TestCase::class);
 
 describe('User events coverage', function (): void {
     it('instantiates team and membership events', function (): void {

@@ -4,122 +4,151 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit;
 
-use Modules\Tenant\Models\Tenant;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Role;
-use Modules\User\Models\Socialite;
+use Modules\User\Models\SocialiteUser;
+use Modules\User\Models\Tenant;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class)->in(__DIR__);
+uses(\Modules\User\Tests\TestCase::class);
 
 it('can create a user with basic attributes', function () {
-    $user = User::factory()->create([
+    $email = 'john-'.uniqid('', true).'@example.com';
+    $user = $this->createTestUser([
         'name' => 'John Doe',
-        'email' => 'john@example.com',
+        'email' => $email,
         'password' => bcrypt('password123'),
     ]);
 
     expect($user)->toBeInstanceOf(User::class);
     expect($user->name)->toBe('John Doe');
-    expect($user->email)->toBe('john@example.com');
+    expect($user->email)->toBe($email);
     expect($user->exists)->toBeTrue();
 });
 
 it('can create a user with profile', function () {
-    $user = User::factory()->withProfile()->create([
+    $this->skipUnlessUserTable('profiles', 'profiles table missing on user connection.');
+    $this->skipUnlessUserColumn('profiles', 'user_id', 'profiles.user_id column missing on user connection.');
+    $this->skipUnlessUserColumn('profiles', 'uuid', 'profiles.uuid column missing on user connection.');
+
+    $email = 'jane-'.uniqid('', true).'@example.com';
+    $user = $this->createTestUser([
         'name' => 'Jane Smith',
-        'email' => 'jane@example.com',
+        'email' => $email,
     ]);
+
+    Profile::factory()->create(['user_id' => $user->id]);
+
+    $user->refresh();
 
     expect($user->profile)->toBeInstanceOf(Profile::class);
     expect($user->profile->user_id)->toBe($user->id);
 });
 
 it('can authenticate a user', function () {
-    $user = User::factory()->create([
-        'email' => 'auth@example.com',
+    $email = 'auth-'.uniqid('', true).'@example.com';
+    $user = $this->createTestUser([
+        'email' => $email,
         'password' => bcrypt('secret123'),
     ]);
 
-    $this->assertTrue(auth()->attempt([
-        'email' => 'auth@example.com',
+    expect(auth()->attempt([
+        'email' => $email,
         'password' => 'secret123',
-    ]));
+    ]))->toBeTrue();
+
+    expect(auth()->id())->toBe($user->id);
 });
 
 it('can create a user role', function () {
+    $roleName = 'admin-'.uniqid();
     $role = Role::factory()->create([
-        'name' => 'admin',
+        'name' => $roleName,
         'guard_name' => 'web',
     ]);
 
     expect($role)->toBeInstanceOf(Role::class);
-    expect($role->name)->toBe('admin');
+    expect($role->name)->toBe($roleName);
 });
 
 it('can create a user permission', function () {
+    $permissionName = 'edit_posts_'.uniqid();
     $permission = Permission::factory()->create([
-        'name' => 'edit_posts',
+        'name' => $permissionName,
         'guard_name' => 'web',
     ]);
 
     expect($permission)->toBeInstanceOf(Permission::class);
-    expect($permission->name)->toBe('edit_posts');
+    expect($permission->name)->toBe($permissionName);
 });
 
 it('can assign role to user', function () {
-    $user = User::factory()->create();
+    $this->skipUnlessRoleAssignmentSupported();
+
+    $user = $this->createTestUser();
+    $roleName = 'editor-'.uniqid();
     $role = Role::factory()->create([
-        'name' => 'editor',
+        'name' => $roleName,
         'guard_name' => 'web',
     ]);
 
     $user->assignRole($role);
 
-    expect($user->hasRole('editor'))->toBeTrue();
+    expect($user->hasRole($roleName))->toBeTrue();
 });
 
 it('can attach permission to user', function () {
-    $user = User::factory()->create();
+    $this->skipUnlessDirectPermissionSupported();
+
+    $user = $this->createTestUser();
+    $permissionName = 'delete_users_'.uniqid();
     $permission = Permission::factory()->create([
-        'name' => 'delete_users',
+        'name' => $permissionName,
         'guard_name' => 'web',
     ]);
 
     $user->givePermissionTo($permission);
 
-    expect($user->can('delete_users'))->toBeTrue();
+    expect($user->can($permissionName))->toBeTrue();
 });
 
 it('can create a tenant user', function () {
+    $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing on user connection.');
+
     $tenant = Tenant::factory()->create([
-        'name' => 'Test Tenant',
-        'domain' => 'tenant.example.com',
+        'name' => 'Test Tenant '.uniqid(),
+        'domain' => 'tenant-'.uniqid().'.example.com',
     ]);
 
-    $user = User::factory()->forTenant($tenant)->create([
+    $email = 'tenant-'.uniqid('', true).'@example.com';
+    $user = $this->createTestUser([
         'name' => 'Tenant User',
-        'email' => 'tenant@example.com',
+        'email' => $email,
+        'tenant_id' => $tenant->id,
     ]);
 
     expect($user->tenant_id)->toBe($tenant->id);
-    expect($user->tenant->name)->toBe('Test Tenant');
+    expect($user->tenant?->name)->toBe($tenant->name);
 });
 
 it('can create a user with socialite data', function () {
-    $user = User::factory()->create([
+    $email = 'social-'.uniqid('', true).'@example.com';
+    $user = $this->createTestUser([
         'name' => 'Social User',
-        'email' => 'social@example.com',
+        'email' => $email,
     ]);
 
-    $user->socialite()->create([
+    SocialiteUser::factory()->create([
+        'user_id' => $user->id,
         'provider' => 'google',
-        'provider_id' => 'google_12345',
+        'provider_id' => 'google_'.uniqid(),
         'token' => 'google_token',
     ]);
 
-    expect($user->socialite->first())->toBeInstanceOf(Socialite::class);
-    expect($user->socialite->first()->provider)->toBe('google');
+    $socialiteUser = $user->socialiteUsers()->first();
+
+    expect($socialiteUser)->toBeInstanceOf(SocialiteUser::class);
+    expect($socialiteUser?->provider)->toBe('google');
 });

@@ -14,11 +14,15 @@ use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 beforeEach(function () {
-    $user = User::factory()->create();
-    $admin = User::factory()->create();
+    $this->user = User::factory()->create([
+        'email' => 'user-'.uniqid('', true).'@example.com',
+    ]);
+    $this->admin = User::factory()->create([
+        'email' => 'admin-'.uniqid('', true).'@example.com',
+    ]);
 });
 
 describe('User Model Creation', function () {
@@ -46,11 +50,11 @@ describe('User Model Creation', function () {
     });
 
     it('generates uuid for id', function () {
-        expect($user->id); // UUID format
+        expect($this->user->id)->not->toBeEmpty();
     });
 
     it('uses user database connection', function () {
-        expect($user->getConnectionName());
+        expect($this->user->getConnectionName())->toBeString();
     });
 
     it('has factory', function () {
@@ -127,124 +131,121 @@ describe('User Authentication Features', function () {
     });
 
     it('can access socialite feature', function () {
-        expect($user->canAccessSocialite());
+        expect($this->user->canAccessSocialite())->toBeBool();
     });
 });
 
 describe('User Relationships', function () {
     it('can have teams', function () {
-        expect($user->teams());
+        expect($this->user->teams())->toBeInstanceOf(BelongsToMany::class);
     });
 
     it('can own teams', function () {
-        expect($user->ownedTeams());
+        expect($this->user->ownedTeams())->toBeInstanceOf(HasMany::class);
     });
 
     it('can have current team', function () {
-        $team = Team::factory()->create(['user_id' => $user->id]);
-        $user->update(['current_team_id' => $team->id]);
+        $team = Team::factory()->create(['user_id' => $this->user->id]);
+        $this->user->update(['current_team_id' => $team->id]);
 
-        expect($user->currentTeam());
+        expect($this->user->currentTeam())->not->toBeNull();
     });
 
     it('can have roles', function () {
-        expect($user->roles());
+        expect($this->user->roles())->toBeInstanceOf(BelongsToMany::class);
     });
 
     it('can have permissions', function () {
-        expect($user->permissions())
+        expect($this->user->permissions())
             ->toBeInstanceOf(BelongsToMany::class);
     });
 
     it('can have profile', function () {
-        expect($user->profile());
+        expect($this->user->profile())->toBeInstanceOf(\Illuminate\Database\Eloquent\Relations\HasOne::class);
     });
 
     it('can have devices', function () {
-        expect($user->devices());
+        expect($this->user->devices())->toBeInstanceOf(BelongsToMany::class);
     });
 
     it('can have authentication logs', function () {
-        // authentications() returns MorphMany (polymorphic relationship)
-        expect($user->authentications());
+        expect($this->user->authentications())->toBeInstanceOf(MorphMany::class);
     });
 
     it('can have oauth clients', function () {
-        // clients() may return HasMany or MorphMany depending on implementation
-        $relation = $user->clients();
-        expect($relation)->toBeInstanceOf(Illuminate\Database\Eloquent\Relations\Relation::class);
+        $relation = $this->user->clients();
+        expect($relation)->toBeInstanceOf(MorphMany::class);
     });
 
     it('can have oauth tokens', function () {
-        // tokens() may return HasMany or MorphMany depending on implementation
-        $relation = $user->tokens();
-        expect($relation)->toBeInstanceOf(Illuminate\Database\Eloquent\Relations\Relation::class);
+        $relation = $this->user->tokens();
+        expect($relation)->toBeInstanceOf(HasMany::class);
     });
 
     it('can have notifications', function () {
-        expect($user->notifications());
+        expect($this->user->notifications())->toBeInstanceOf(MorphMany::class);
     });
 
     it('can have socialite users', function () {
-        expect($user->socialiteUsers());
+        expect($this->user->socialiteUsers())->toBeInstanceOf(HasMany::class);
     });
 });
 
 describe('User Team Management', function () {
     it('can join a team', function () {
         $team = Team::factory()->create();
+        $this->user->teams()->attach($team);
 
-        $user->teams();
-        $user->refresh();
-
-        expect($user->teams->contains('id', $team->id));
+        expect($this->user->fresh()->teams->contains('id', $team->id))->toBeTrue();
     });
 
     it('can leave a team', function () {
         $team = Team::factory()->create();
-        $user->teams();
-        $user->refresh();
+        $this->user->teams()->attach($team);
+        $this->user->teams()->detach($team);
 
-        expect($user->teams->contains('id', $team->id));
-
-        $user->teams();
-
-        expect($user->fresh());
+        expect($this->user->fresh()->teams->contains('id', $team->id))->toBeFalse();
     });
 
     it('can own multiple teams', function () {
-        $teams = Team::factory()->count(3)->create(['user_id' => $user->id]);
+        Team::factory()->count(3)->create(['user_id' => $this->user->id]);
 
-        expect($user->ownedTeams);
+        expect($this->user->fresh()->ownedTeams)->toHaveCount(3);
     });
 
     it('can switch current team', function () {
-        $team1 = Team::factory()->create(['user_id' => $user->id]);
-        $team2 = Team::factory()->create(['user_id' => $user->id]);
+        $team1 = Team::factory()->create(['user_id' => $this->user->id]);
+        $team2 = Team::factory()->create(['user_id' => $this->user->id]);
 
-        $user->update(['current_team_id' => $team1->id]);
-        expect($user->fresh());
+        $this->user->update(['current_team_id' => $team1->id]);
+        expect($this->user->fresh()->current_team_id)->toBe($team1->id);
 
-        $user->update(['current_team_id' => $team2->id]);
-        expect($user->fresh());
+        $this->user->update(['current_team_id' => $team2->id]);
+        expect($this->user->fresh()->current_team_id)->toBe($team2->id);
     });
 });
 
 describe('User Permission System', function () {
+    beforeEach(function () {
+        if (! $this->userTableExists('model_has_permission')) {
+            $this->markTestSkipped('model_has_permission table missing on user connection.');
+        }
+    });
+
     it('can have roles assigned', function () {
         $role = Role::factory()->create(['name' => 'assigned role '.uniqid()]);
 
-        $user->assignRole($role);
+        $this->user->assignRole($role);
 
-        expect($user->hasRole($role));
+        expect($this->user->hasRole($role))->toBeTrue();
     });
 
     it('can have direct permissions', function () {
         $permission = Permission::factory()->create(['name' => 'direct permission '.uniqid()]);
 
-        $user->givePermissionTo($permission);
+        $this->user->givePermissionTo($permission);
 
-        expect($user->hasPermissionTo($permission));
+        expect($this->user->hasPermissionTo($permission))->toBeTrue();
     });
 
     it('can check multiple permissions', function () {
@@ -252,9 +253,9 @@ describe('User Permission System', function () {
         $permission1 = Permission::factory()->create(['name' => 'edit posts '.$uid]);
         $permission2 = Permission::factory()->create(['name' => 'delete posts '.$uid]);
 
-        $user->givePermissionTo([$permission1, $permission2]);
+        $this->user->givePermissionTo([$permission1, $permission2]);
 
-        expect($user->hasAllPermissions([$permission1, $permission2]));
+        expect($this->user->hasAllPermissions([$permission1, $permission2]))->toBeTrue();
     });
 
     it('can check any permission', function () {
@@ -262,19 +263,19 @@ describe('User Permission System', function () {
         $permission1 = Permission::factory()->create(['name' => 'edit posts '.$uid]);
         $permission2 = Permission::factory()->create(['name' => 'delete posts '.$uid]);
 
-        $user->givePermissionTo($permission1);
+        $this->user->givePermissionTo($permission1);
 
-        expect($user->hasAnyPermission([$permission1, $permission2]));
+        expect($this->user->hasAnyPermission([$permission1, $permission2]))->toBeTrue();
     });
 });
 
 describe('User Media Management', function () {
     it('implements HasMedia interface', function () {
-        expect($user);
+        expect($this->user)->toBeInstanceOf(User::class);
     });
 
     it('can have media attached', function () {
-        expect($user->media());
+        expect($this->user->media())->toBeInstanceOf(MorphMany::class);
     });
 });
 

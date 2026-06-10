@@ -4,82 +4,49 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Enums;
 
-uses(TestCase::class);
-
 use Modules\User\Enums\LanguageEnum;
 use Modules\User\Enums\SocialProviderEnum;
 use Modules\User\Enums\SystemRole;
 use Modules\User\Enums\UserType;
 use Modules\User\Tests\TestCase;
 
-test('UserType enum has expected cases', function () {
+uses(TestCase::class);
+
+test('UserType enum has expected cases', function (): void {
     expect(class_exists(UserType::class))->toBeTrue();
 
-    try {
-        $cases = UserType::cases();
-        expect($cases)->toBeArray();
+    $values = array_map(static fn ($case) => $case->value, UserType::cases());
 
-        // Check if some expected values exist
-        $values = array_map(fn ($case) => $case->value, $cases);
-        expect(in_array('admin', $values))->toBeTrue();
-        expect(in_array('user', $values))->toBeTrue();
-    } catch (Exception $e) {
-        expect(true)->toBeTrue(); // Pass if class exists
-    }
+    expect($values)->toContain('master_admin')
+        ->and($values)->toContain('customer_user');
 });
 
-test('SystemRole enum has expected cases', function () {
+test('SystemRole enum has expected cases', function (): void {
     expect(class_exists(SystemRole::class))->toBeTrue();
 
-    try {
-        $cases = SystemRole::cases();
-        expect($cases)->toBeArray();
+    $values = array_map(static fn ($case) => $case->value, SystemRole::cases());
 
-        // Check if some expected values exist
-        $values = array_map(fn ($case) => $case->value, $cases);
-        expect(in_array('super_admin', $values))->toBeTrue();
-        expect(in_array('admin', $values))->toBeTrue();
-    } catch (Exception $e) {
-        expect(true)->toBeTrue(); // Pass if class exists
-    }
+    expect($values)->toContain('%');
 });
 
-test('SocialProviderEnum enum has expected cases', function () {
+test('SocialProviderEnum enum has expected cases', function (): void {
     expect(class_exists(SocialProviderEnum::class))->toBeTrue();
 
-    try {
-        $cases = SocialProviderEnum::cases();
-        expect($cases)->toBeArray();
+    $values = array_map(static fn ($case) => $case->value, SocialProviderEnum::cases());
 
-        // Check if some expected values exist
-        $values = array_map(fn ($case) => $case->value, $cases);
-        expect(in_array('google', $values))->toBeTrue();
-        expect(in_array('facebook', $values))->toBeTrue();
-    } catch (Exception $e) {
-        expect(true)->toBeTrue(); // Pass if class exists
-    }
+    expect($values)->toContain('google')
+        ->and($values)->toContain('auth0');
 });
 
-test('LanguageEnum enum has expected cases', function () {
+test('LanguageEnum enum has expected cases', function (): void {
     expect(class_exists(LanguageEnum::class))->toBeTrue();
 
-    try {
-        $cases = LanguageEnum::cases();
-        expect($cases)->toBeArray();
+    $values = array_map(static fn ($case) => $case->value, LanguageEnum::cases());
 
-        // Check if some expected values exist
-        $values = array_map(fn ($case) => $case->value, $cases);
-        expect(in_array('it', $values))->toBeTrue();
-        expect(in_array('en', $values))->toBeTrue();
-    } catch (Exception $e) {
-        expect(true)->toBeTrue(); // Pass if class exists
-    }
+    expect($values)->toContain('it')
+        ->and($values)->toContain('en');
 });
 
-test('UserType has getLabel method', function () {
-    if (class_exists(UserType::class)) {
-        expect(method_exists(UserType::class, 'getLabel'))->toBeTrue();
-    } else {
-        expect(true)->toBeTrue();
-    }
+test('UserType has getLabel method', function (): void {
+    expect(method_exists(UserType::class, 'getLabel'))->toBeTrue();
 });

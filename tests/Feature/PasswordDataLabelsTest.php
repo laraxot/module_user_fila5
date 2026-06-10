@@ -9,7 +9,7 @@ use Modules\User\Datas\PasswordData;
 use Modules\User\Http\Livewire\Auth\Login;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 test('password data labels are translated', function (): void {
     // Arrange
@@ -23,7 +23,7 @@ test('password data labels are translated', function (): void {
     $confirmationComponent = $passwordData->getPasswordConfirmationFormComponent();
 
     // Assert
-    expect($passwordComponent->getLabel())->toBe('Password');
+    expect($passwordComponent->getLabel())->toBe('Parola d\'ordine');
     expect($confirmationComponent->getLabel())->toBe('Conferma Password');
 });
 
@@ -51,7 +51,7 @@ test('login form labels are translated', function (): void {
     expect($email->getLabel())->toBe('Email');
 
     expect($password)->not->toBeNull();
-    expect($password->getLabel())->toBe('Password');
+    expect($password->getLabel())->toBe('Parola d\'ordine');
 
     expect($remember)->not->toBeNull();
     expect($remember->getLabel())->toBe('Ricordami');

@@ -11,7 +11,6 @@ use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
-use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
  * Modules\User\Models\DeviceUser.
@@ -51,7 +50,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
- * @mixin IdeHelperDeviceUser
  *
  * @property ProfileContract|null $deleter
  *
@@ -61,8 +59,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class DeviceUser extends BasePivot
 {
-    use HasXotFactory;
-
     /** @var list<string> */
     protected $fillable = [
         'id',
@@ -75,7 +71,7 @@ class DeviceUser extends BasePivot
     ];
 
     /**
-     * old_return BelongsTo<Device, DeviceUser>.
+     * @return BelongsTo<Device, $this>
      */
     public function device(): BelongsTo
     {
@@ -83,7 +79,7 @@ class DeviceUser extends BasePivot
     }
 
     /**
-     * old_return BelongsTo<Model&UserContract, DeviceUser>.
+     * @return BelongsTo<Model, $this>
      */
     public function user(): BelongsTo
     {
@@ -94,7 +90,7 @@ class DeviceUser extends BasePivot
     }
 
     /**
-     * old_return BelongsTo<Model&ProfileContract, DeviceUser>.
+     * @return BelongsTo<Model, $this>
      */
     public function profile(): BelongsTo
     {

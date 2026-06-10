@@ -6,9 +6,11 @@ namespace Modules\User\Tests\Unit\Actions;
 
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Actions\Socialite\IsUserAllowedAction;
+use Illuminate\Support\Str;
 use Modules\User\Tests\TestCase;
+use Webmozart\Assert\Assert;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 describe('IsUserAllowedAction', function (): void {
     $getMockUser = function (string $email = 'user@example.com'): SocialiteUserContract {
@@ -31,7 +33,12 @@ describe('IsUserAllowedAction', function (): void {
         config(['filament-socialite.domain_allowlist' => []]);
 
         $user = $getMockUser('any@example.com');
-        $action = app(IsUserAllowedAction::class);
+        $action = new IsUserAllowedAction(
+            \Mockery::mock(Assert::class)->shouldReceive('notNull')->andReturnUsing(
+                static fn (mixed $value): mixed => Assert::notNull($value)
+            )->getMock(),
+            new Str(),
+        );
 
         expect($action->execute($user))->toBeTrue();
     });
@@ -40,7 +47,12 @@ describe('IsUserAllowedAction', function (): void {
         config(['filament-socialite.domain_allowlist' => ['allowed-company.com']]);
 
         $user = $getMockUser('denied@other-company.com');
-        $action = app(IsUserAllowedAction::class);
+        $action = new IsUserAllowedAction(
+            \Mockery::mock(Assert::class)->shouldReceive('notNull')->andReturnUsing(
+                static fn (mixed $value): mixed => Assert::notNull($value)
+            )->getMock(),
+            new Str(),
+        );
 
         expect($action->execute($user))->toBeFalse();
     });
@@ -49,7 +61,12 @@ describe('IsUserAllowedAction', function (): void {
         config(['filament-socialite.domain_allowlist' => ['allowed-company.com']]);
 
         $user = $getMockUser('user@allowed-company.com');
-        $action = app(IsUserAllowedAction::class);
+        $action = new IsUserAllowedAction(
+            \Mockery::mock(Assert::class)->shouldReceive('notNull')->andReturnUsing(
+                static fn (mixed $value): mixed => Assert::notNull($value)
+            )->getMock(),
+            new Str(),
+        );
 
         expect($action->execute($user))->toBeTrue();
     });

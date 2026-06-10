@@ -13,7 +13,7 @@ use Modules\User\Models\OauthRefreshToken;
 use Modules\User\Models\OauthToken;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 test('every eloquent passport model has a local oauth wrapper', function (): void {
     /** @var array<int, string>|false $files */

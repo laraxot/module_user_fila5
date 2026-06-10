@@ -13,11 +13,12 @@ use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
 
-use function Pest\Laravel\actingAs;
-
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 beforeEach(function (): void {
+    $this->skipUnlessUsersTableReady();
+    $this->skipUnlessUserColumn('profiles', 'uuid', 'profiles.uuid column is not available in the test database.');
+
     $this->app->register(AdminPanelProvider::class);
     $this->app->register(SchemasServiceProvider::class);
     Filament::setCurrentPanel(Filament::getPanel('user::admin'));
@@ -29,7 +30,7 @@ test('can change profile password', function (): void {
         'password' => Hash::make('old_password'),
     ]);
 
-    actingAs($user);
+    $this->actingAs($user);
 
     Livewire::test(MyProfilePage::class)
         ->fill([
@@ -49,7 +50,7 @@ test('cannot change password with wrong current password', function (): void {
         'password' => Hash::make('old_password'),
     ]);
 
-    actingAs($user);
+    $this->actingAs($user);
 
     $testable = Livewire::test(MyProfilePage::class)
         ->fill([

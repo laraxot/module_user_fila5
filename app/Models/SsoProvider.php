@@ -9,7 +9,6 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
  * Modules\User\Models\SsoProvider.
@@ -24,16 +23,15 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property string|null $redirect_url
  * @property string|null $metadata_url
  * @property string|null $scopes
- * @property array|null  $settings
- * @property array|null  $domain_whitelist
- * @property array|null  $role_mapping
+ * @property array<string, mixed>|null $settings
+ * @property array<int, string>|null   $domain_whitelist
+ * @property array<string, string>|null $role_mapping
  * @property bool        $is_active
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
  *
- * @mixin IdeHelperSsoProvider
  *
  * @property Collection<int, User> $users
  * @property int|null              $users_count
@@ -70,8 +68,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class SsoProvider extends BaseModel
 {
-    use HasXotFactory;
-
     /**
      * The attributes that are mass assignable.
      *
@@ -94,7 +90,7 @@ class SsoProvider extends BaseModel
     ];
 
     /**
-     * Get all users associated with this SSO provider.
+     * @return HasMany<User, $this>
      */
     public function users(): HasMany
     {

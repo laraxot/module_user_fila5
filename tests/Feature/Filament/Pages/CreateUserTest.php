@@ -8,12 +8,12 @@ use Filament\Facades\Filament;
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
-use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 beforeEach(function (): void {
     // Ensure the panel is registered
@@ -116,5 +116,5 @@ test('create user page handles form submission structure', function (): void {
 test('create user page follows filament conventions', function (): void {
     // Test that the page follows standard Filament conventions
     expect($this->createUserPage->getResource())->toBe(UserResource::class);
-    expect($this->createUserPage->getModel())->toBe(User::class);
+    expect($this->createUserPage->getModel())->toBe(XotData::make()->getUserClass());
 });

@@ -10,13 +10,20 @@ use Modules\User\Actions\Passport\CreatePersonalAccessClientAction;
 use Modules\User\Models\OauthClient;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 describe('Create specific passport client actions', function (): void {
+    afterEach(function (): void {
+        \Mockery::close();
+        app()->forgetInstance(CreateGenericClientAction::class);
+        app()->forgetInstance(CreatePasswordClientAction::class);
+        app()->forgetInstance(CreatePersonalAccessClientAction::class);
+    });
+
     it('delegates password client creation to generic action', function (): void {
         $expectedClient = new OauthClient();
 
-        $genericAction = Mockery::mock(CreateGenericClientAction::class);
+        $genericAction = \Mockery::mock(CreateGenericClientAction::class);
         $genericAction->shouldReceive('execute')->once()->andReturn($expectedClient);
 
         app()->instance(CreateGenericClientAction::class, $genericAction);
@@ -32,7 +39,7 @@ describe('Create specific passport client actions', function (): void {
     it('delegates personal access client creation to generic action', function (): void {
         $expectedClient = new OauthClient();
 
-        $genericAction = Mockery::mock(CreateGenericClientAction::class);
+        $genericAction = \Mockery::mock(CreateGenericClientAction::class);
         $genericAction->shouldReceive('execute')->once()->andReturn($expectedClient);
 
         app()->instance(CreateGenericClientAction::class, $genericAction);

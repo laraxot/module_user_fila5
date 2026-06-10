@@ -2,160 +2,116 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Unit;
-
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-describe('HasTeams Trait CurrentTeam', function () {
-    it('currentTeam does not crash when user has no teams', function () {
-        // Arrange: Crea un utente senza team
-        $user = User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+beforeEach(function (): void {
+    test()->skipUnlessUsersTableReady();
+});
 
-        // Act: Accedi a currentTeam (non dovrebbe crashare)
-        $currentTeam = $user->currentTeam;
+/**
+ * @param  array<string, mixed>  $attributes
+ */
+function hasTeamsCurrentCreateUser(array $attributes = []): User
+{
+    return test()->createTestUser(array_merge([
+        'name' => 'Test User',
+        'current_team_id' => null,
+    ], $attributes));
+}
 
-        // Assert: currentTeam dovrebbe essere null
-        expect($currentTeam)->toBeNull();
-    });
+/**
+ * @param  array<string, mixed>  $attributes
+ */
+function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
+{
+    return TeamFactory::new()->createOne(array_merge([
+        'user_id' => $user->id,
+        'name' => 'Team-'.uniqid(),
+        'personal_team' => true,
+    ], $attributes));
+}
 
-    it('currentTeam is side effect free', function () {
-        // Arrange: Crea un utente senza current_team_id
-        $user = User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-            'current_team_id' => null,
-        ]);
+test('has teams currentTeam does not crash when user has no teams', function (): void {
+    $user = hasTeamsCurrentCreateUser();
 
-        // Act: Accedi a currentTeam più volte
-        $currentTeam1 = $user->currentTeam;
-        $currentTeam2 = $user->currentTeam;
+    Assert::assertNull($user->currentTeam);
+    Assert::assertInstanceOf(BelongsTo::class, $user->currentTeam());
+});
 
-        // Assert: current_team_id dovrebbe rimanere null
-        $user->refresh();
-        expect($user->current_team_id)->toBeNull();
-        expect($currentTeam1)->toBeNull();
-        expect($currentTeam2)->toBeNull();
-    });
+test('has teams currentTeam is side effect free', function (): void {
+    $user = hasTeamsCurrentCreateUser(['current_team_id' => null]);
 
-    it('currentTeam can access personal team when available', function () {
-        // Arrange: Crea un utente con un personal team
-        $user = User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+    Assert::assertNull($user->currentTeam);
+    Assert::assertNull($user->currentTeam);
 
-        $personalTeam = Team::factory()->create([
-            'user_id' => $user->id,
-            'name' => 'Personal Team',
-            'personal_team' => true,
-        ]);
+    $user->refresh();
+    Assert::assertNull($user->current_team_id);
+});
 
-        // Act: Imposta manualmente il current_team_id e accedi a currentTeam
-        $user->current_team_id = $personalTeam->id;
-        $user->save();
-        $user->refresh();
+test('has teams currentTeam can access personal team when available', function (): void {
+    $user = hasTeamsCurrentCreateUser();
+    $personalTeam = hasTeamsCurrentCreateTeam($user, [
+        'name' => 'Personal Team',
+        'personal_team' => true,
+    ]);
 
-        $currentTeam = $user->currentTeam;
+    $user->current_team_id = (int) $personalTeam->id;
+    $user->save();
+    $user->refresh();
 
-        // Assert: currentTeam dovrebbe essere il personal team
-        expect($currentTeam)->not->toBeNull();
-        expect((string) $user->current_team_id)->toBe((string) $personalTeam->id);
-    });
+    Assert::assertInstanceOf(Team::class, $user->currentTeam);
+    Assert::assertSame($personalTeam->id, $user->currentTeam->id);
+});
 
-    it('currentTeam does not override existing current_team_id', function () {
-        // Arrange: Crea un utente con un team già impostato
-        $user = User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+test('has teams currentTeam does not override existing current_team_id', function (): void {
+    $user = hasTeamsCurrentCreateUser();
+    $team1 = hasTeamsCurrentCreateTeam($user, ['name' => 'Team 1', 'personal_team' => false]);
+    hasTeamsCurrentCreateTeam($user, ['name' => 'Team 2', 'personal_team' => true]);
 
-        $team1 = Team::factory()->create([
-            'user_id' => $user->id,
-            'name' => 'Team 1',
-            'personal_team' => false,
-        ]);
+    $user->current_team_id = (int) $team1->id;
+    $user->save();
 
-        $team2 = Team::factory()->create([
-            'user_id' => $user->id,
-            'name' => 'Team 2',
-            'personal_team' => true,
-        ]);
+    Assert::assertInstanceOf(Team::class, $user->currentTeam);
 
-        $user->current_team_id = $team1->id;
-        $user->save();
+    $user->refresh();
+    Assert::assertSame($team1->id, $user->current_team_id);
+});
 
-        // Act: Accedi a currentTeam
-        $currentTeam = $user->currentTeam;
+test('has teams switchTeam can change current team', function (): void {
+    $user = hasTeamsCurrentCreateUser();
+    $team1 = hasTeamsCurrentCreateTeam($user, ['name' => 'Team 1', 'personal_team' => false]);
+    $team2 = hasTeamsCurrentCreateTeam($user, ['name' => 'Team 2', 'personal_team' => true]);
 
-        // Assert: current_team_id dovrebbe rimanere team1
-        $user->refresh();
-        expect((string) $user->current_team_id)->toBe((string) $team1->id);
-        expect($currentTeam)->not->toBeNull();
-    });
+    $this->attachTeamMember($team1, $user);
+    $this->attachTeamMember($team2, $user);
 
-    it('switchTeam can change current team', function () {
-        // Arrange: Crea un utente con due team
-        $user = User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+    $result = $user->switchTeam($team1);
 
-        $team1 = Team::factory()->create([
-            'user_id' => $user->id,
-            'name' => 'Team 1',
-            'personal_team' => false,
-        ]);
+    Assert::assertTrue($result);
+    $user->refresh();
+    Assert::assertSame($team1->id, $user->current_team_id);
+});
 
-        $team2 = Team::factory()->create([
-            'user_id' => $user->id,
-            'name' => 'Team 2',
-            'personal_team' => true,
-        ]);
+test('has teams currentTeam supports repeated access', function (): void {
+    $user = hasTeamsCurrentCreateUser();
+    $team = hasTeamsCurrentCreateTeam($user, ['name' => 'Test Team', 'personal_team' => true]);
 
-        // Assicura che l'utente appartenga a entrambi i team
-        $user->teams()->attach($team1->id);
-        $user->teams()->attach($team2->id);
+    $user->current_team_id = (int) $team->id;
+    $user->save();
+    $user->refresh();
 
-        // Act: Cambia il team corrente
-        $result = $user->switchTeam($team1);
+    $currentTeam1 = $user->currentTeam;
+    $currentTeam2 = $user->currentTeam;
 
-        // Assert: switchTeam dovrebbe funzionare
-        expect($result)->toBeTrue();
-        $user->refresh();
-        expect((string) $user->current_team_id)->toBe((string) $team1->id);
-    });
-
-    it('currentTeam does not cause N+1 queries', function () {
-        // Arrange: Crea un utente con un team
-        $user = User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
-
-        $team = Team::factory()->create([
-            'user_id' => $user->id,
-            'name' => 'Test Team',
-            'personal_team' => true,
-        ]);
-
-        $user->current_team_id = $team->id;
-        $user->save();
-
-        // Act & Assert: Accedi a currentTeam più volte
-        // (dovrebbe usare la relazione Eloquent senza query extra)
-        $user->refresh();
-        $currentTeam1 = $user->currentTeam;
-        $currentTeam2 = $user->currentTeam;
-
-        // Verifica che entrambi gli accessi restituiscano lo stesso team
-        expect($currentTeam1)->not->toBeNull();
-        expect($currentTeam2)->not->toBeNull();
-    });
+    Assert::assertInstanceOf(Team::class, $currentTeam1);
+    Assert::assertInstanceOf(Team::class, $currentTeam2);
+    Assert::assertSame($team->id, $currentTeam1->id);
+    Assert::assertSame($team->id, $currentTeam2->id);
 });

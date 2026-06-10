@@ -9,7 +9,7 @@ use Filament\Forms\Components\Toggle;
 use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 describe('LoginWidget', function (): void {
     test('login widget can be instantiated', function (): void {
@@ -49,7 +49,7 @@ describe('LoginWidget', function (): void {
 
     test('login widget has correct view property', function (): void {
         $widget = new LoginWidget();
-        $reflection = new ReflectionClass($widget);
+        $reflection = new \ReflectionClass($widget);
         $property = $reflection->getProperty('view');
         $property->setAccessible(true);
         $view = $property->getValue($widget);
@@ -60,6 +60,6 @@ describe('LoginWidget', function (): void {
     test('login widget extends xot base widget', function (): void {
         $widget = new LoginWidget();
 
-        expect($widget)->toBeInstanceOf(Modules\Xot\Filament\Widgets\XotBaseWidget::class);
+        expect($widget)->toBeInstanceOf(\Modules\Xot\Filament\Widgets\XotBaseSchemaWidget::class);
     });
 });

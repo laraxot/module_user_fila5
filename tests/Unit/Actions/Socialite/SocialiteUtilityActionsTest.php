@@ -8,6 +8,7 @@ use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+use Mockery;
 use Modules\User\Actions\Socialite\GetDomainAllowListAction;
 use Modules\User\Actions\Socialite\GetGuardAction;
 use Modules\User\Actions\Socialite\GetLoginRedirectRouteAction;
@@ -18,11 +19,12 @@ use Modules\User\Actions\Socialite\IsRegistrationEnabledAction;
 use Modules\User\Actions\Socialite\LogoutUserAction;
 use Modules\User\Actions\Socialite\RedirectToLoginAction;
 use Modules\User\Actions\Socialite\ValidateProviderAction;
+use Modules\User\Tests\Unit\Actions\Socialite\Fixtures\DeletableAccessTokenFixture;
 use Modules\User\Exceptions\ProviderNotConfigured;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 describe('Socialite utility actions', function (): void {
     it('returns allow list when configured as string', function (): void {
@@ -74,9 +76,7 @@ describe('Socialite utility actions', function (): void {
     });
 
     it('throws for non configured provider', function (): void {
-        config(['services.github' => ['client_id' => 'id']]);
-
-        app(ValidateProviderAction::class)->execute('gitlab');
+        app(ValidateProviderAction::class)->execute('pest-missing-socialite-provider');
     })->throws(ProviderNotConfigured::class);
 
     it('returns configured auth guard', function (): void {
@@ -103,34 +103,25 @@ describe('Socialite utility actions', function (): void {
         config(['services.github' => ['client_id' => 'id']]);
 
         expect(app(IsProviderConfiguredAction::class)->execute('github'))->toBeTrue()
-            ->and(app(IsProviderConfiguredAction::class)->execute('gitlab'))->toBeFalse();
+            ->and(app(IsProviderConfiguredAction::class)->execute('pest-missing-socialite-provider'))->toBeFalse();
     });
 
     it('logs out user token and device sessions', function (): void {
-        $accessToken = new class {
-            public bool $deleted = false;
-
-            public function getKey(): string
-            {
-                return 'tok-1';
-            }
-
-            public function delete(): void
-            {
-                $deleted = true;
-            }
-        };
+        $accessToken = new DeletableAccessTokenFixture();
+        $refreshTokenId = 'rtok-'.uniqid();
+        $deviceId = 'dev-'.uniqid();
+        $userId = 'user-'.uniqid();
 
         DB::connection('user')->table('oauth_refresh_tokens')->insert([
-            'id' => 'rtok-1',
+            'id' => $refreshTokenId,
             'access_token_id' => 'tok-1',
             'revoked' => false,
             'expires_at' => now()->addHour(),
         ]);
 
         DB::connection('user')->table('device_user')->insert([
-            'device_id' => 'dev-1',
-            'user_id' => 'user-1',
+            'device_id' => $deviceId,
+            'user_id' => $userId,
             'logout_at' => null,
             'created_at' => now(),
             'updated_at' => now(),
@@ -138,13 +129,13 @@ describe('Socialite utility actions', function (): void {
 
         $user = Mockery::mock(UserContract::class);
         $user->shouldReceive('token')->once()->andReturn($accessToken);
-        $user->shouldReceive('getKey')->once()->andReturn('user-1');
+        $user->shouldReceive('getKey')->once()->andReturn($userId);
 
         app(LogoutUserAction::class)->execute($user);
 
         expect($accessToken->deleted)->toBeTrue()
             ->and(DB::connection('user')->table('oauth_refresh_tokens')->where('access_token_id', 'tok-1')->count())->toBe(0)
-            ->and(DB::connection('user')->table('device_user')->where('user_id', 'user-1')->whereNotNull('logout_at')->count())->toBe(1);
+            ->and(DB::connection('user')->table('device_user')->where('user_id', $userId)->whereNotNull('logout_at')->count())->toBe(1);
     });
 
     it('redirects to login route with error', function (): void {

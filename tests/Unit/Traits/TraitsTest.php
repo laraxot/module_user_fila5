@@ -4,38 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Traits;
 
-uses(TestCase::class);
-
 use Modules\User\Tests\TestCase;
 use Modules\User\Traits\PasswordValidationRules;
+use ReflectionClass;
 
-test('PasswordValidationRules trait can be used', function () {
+uses(TestCase::class);
+
+test('PasswordValidationRules trait can be used', function (): void {
     expect(trait_exists(PasswordValidationRules::class))->toBeTrue();
 
-    try {
-        $testClass = new class {
-            use PasswordValidationRules;
-        };
-        // Check if the trait methods exist
-        expect(method_exists($testClass, 'passwordRules'))->toBeTrue();
-    } catch (\Exception $e) {
-        expect(true)->toBeTrue(); // Pass if trait exists
-    }
+    $reflection = new ReflectionClass(PasswordValidationRules::class);
+
+    expect($reflection->hasMethod('passwordRules'))->toBeTrue();
 });
 
-test('PasswordValidationRules has expected methods', function () {
-    if (trait_exists(PasswordValidationRules::class)) {
-        $testClass = new class {
-            use PasswordValidationRules;
-        };
-        $hasMethod = method_exists($testClass, 'passwordRules');
-        $hasMin = method_exists($testClass, 'passwordMinimum');
-        $hasMixedCase = method_exists($testClass, 'passwordRequiresMixedCase');
-        $hasNumbers = method_exists($testClass, 'passwordRequiresNumbers');
-        $hasSymbols = method_exists($testClass, 'passwordRequiresSymbols');
+test('PasswordValidationRules has expected methods', function (): void {
+    $reflection = new ReflectionClass(PasswordValidationRules::class);
 
-        expect($hasMethod)->toBeTrue();
-    } else {
-        expect(true)->toBeTrue();
-    }
+    expect($reflection->getMethod('passwordRules')->isProtected())->toBeTrue();
 });

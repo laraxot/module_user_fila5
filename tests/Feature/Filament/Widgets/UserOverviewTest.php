@@ -12,7 +12,7 @@ use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(\Modules\User\Tests\TestCase::class);
 
 beforeEach(function (): void {
     $this->widget = new UserOverview();
@@ -27,7 +27,7 @@ test('user overview widget extends correct base class', function (): void {
 });
 
 test('user overview widget has correct view', function (): void {
-    $reflection = new ReflectionClass(UserOverview::class);
+    $reflection = new \ReflectionClass(UserOverview::class);
     $viewProperty = $reflection->getProperty('view');
     $viewProperty->setAccessible(true);
 
@@ -48,7 +48,7 @@ test('user overview widget can set record', function (): void {
 });
 
 test('user overview widget record property is nullable', function (): void {
-    $reflection = new ReflectionClass(UserOverview::class);
+    $reflection = new \ReflectionClass(UserOverview::class);
     $recordProperty = $reflection->getProperty('record');
 
     expect($recordProperty->getType()->allowsNull())->toBeTrue();
@@ -63,7 +63,7 @@ test('user overview widget can be instantiated', function (): void {
 });
 
 test('user overview widget has correct static properties', function (): void {
-    $reflection = new ReflectionClass(UserOverview::class);
+    $reflection = new \ReflectionClass(UserOverview::class);
     $viewProperty = $reflection->getProperty('view');
     $viewProperty->setAccessible(true);
 
@@ -71,7 +71,7 @@ test('user overview widget has correct static properties', function (): void {
 });
 
 test('user overview widget view path is correct', function (): void {
-    $reflection = new ReflectionClass(UserOverview::class);
+    $reflection = new \ReflectionClass(UserOverview::class);
     $viewProperty = $reflection->getProperty('view');
     $viewProperty->setAccessible(true);
 

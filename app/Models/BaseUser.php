@@ -26,7 +26,9 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
+use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
+use Modules\User\Models\Traits\HasCommentatorRelations;
 use Modules\User\Models\Traits\HasModules;
 use Modules\User\Models\Traits\HasSpatiePermission;
 use Modules\User\Models\Traits\HasTeams;
@@ -36,7 +38,7 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits as XotTraits;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Parental\HasChildren;
-use Modules\Comment\Models\Contracts\CanComment;
+use Modules\User\Contracts\CanComment;
 use Modules\Comment\Models\Concerns\InteractsWithComments;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -131,11 +133,13 @@ abstract class BaseUser extends Authenticatable implements CanComment, HasMedia,
 {
     use HasApiTokens;
     use HasAuthenticationLogTrait;
+    use HasCommentatorRelations;
     use HasChildren;
     use HasModules;
     use HasSpatiePermission;
     use HasTeams;
     use HasUuids;
+    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
     use HasXotFactory;
     use InteractsWithMedia;
     use InteractsWithComments;
@@ -255,22 +259,34 @@ abstract class BaseUser extends Authenticatable implements CanComment, HasMedia,
         return $fullName;
     }
 
+    /**
+     * @return HasOne<Model, Model>
+     */
     #[\Override]
     public function profile(): HasOne
     {
         $profileClass = XotData::make()->getProfileClass();
         if (class_exists($profileClass)) {
-            return $this->hasOne($profileClass);
+            /** @var HasOne<Model, Model> $relation */
+            $relation = $this->hasOne($profileClass);
+
+            return $relation;
         }
 
         // Try direct module class if XotData failed
         $directClass = 'Modules\User\Models\Profile';
         if (class_exists($directClass)) {
-            return $this->hasOne($directClass);
+            /** @var HasOne<Model, Model> $relation */
+            $relation = $this->hasOne($directClass);
+
+            return $relation;
         }
 
         // Fallback: stay on current model if nothing found
-        return $this->hasOne(static::class, 'id', 'id')->whereRaw('1=0');
+        /** @var HasOne<Model, Model> $relation */
+        $relation = $this->hasOne(static::class, 'id', 'id')->whereRaw('1=0');
+
+        return $relation;
     }
 
     /**
@@ -329,6 +345,12 @@ abstract class BaseUser extends Authenticatable implements CanComment, HasMedia,
         return (string) ($this->name ?? $this->email);
     }
 
+    /**
+     * @return Collection<int, Team>
+     */
+    /**
+     * @return Collection<int, Team>
+     */
     public function treeSons(): Collection
     {
         return $this->teams ?? new Collection();
@@ -337,7 +359,7 @@ abstract class BaseUser extends Authenticatable implements CanComment, HasMedia,
     /**
      * Get the devices associated with the user.
      *
-     * @return BelongsToMany<Device, static>
+     * @return BelongsToMany<Device, $this, Pivot, 'pivot'>
      */
     public function devices(): BelongsToMany
     {
