@@ -25,7 +25,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static DatabaseNotificationCollection<int, static> all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static> get($columns = ['*'])
  *
- * @mixin IdeHelperNotification
  *
  * @method static \Modules\User\Database\Factories\NotificationFactory factory($count = null, $state = [])
  *
@@ -33,6 +32,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class Notification extends BaseNotification
 {
+    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
     use HasXotFactory;
 
     protected $connection = 'user';

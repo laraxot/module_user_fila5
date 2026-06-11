@@ -2,42 +2,27 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Unit\Traits;
-
-use Modules\User\Tests\TestCase;
+uses(\Modules\User\Tests\TestCase::class);
+use PHPUnit\Framework\Assert;
+use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesFixture;
+use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesMockableFixture;
 use Modules\User\Traits\PasswordValidationRules;
+use ReflectionClass;
 
-uses(TestCase::class);
-
-test('PasswordValidationRules trait can be used', function () {
-    $testClass = new class {
-        use PasswordValidationRules;
-    };
-
-    expect($testClass)->not()->toBeNull();
+test('PasswordValidationRules trait can be used', function (): void {
+    /** @var \Modules\User\Tests\TestCase $this */
+    Assert::assertTrue(trait_exists(PasswordValidationRules::class));
+    Assert::assertInstanceOf(PasswordValidationRulesFixture::class, new PasswordValidationRulesFixture());
 });
 
-test('PasswordValidationRules trait provides passwordRules method', function () {
-    $testClass = new class {
-        use PasswordValidationRules;
+test('PasswordValidationRules trait provides passwordRules method', function (): void {
+    /** @var \Modules\User\Tests\TestCase $this */
+    $reflection = new ReflectionClass(PasswordValidationRules::class);
 
-        public function getPasswordRules()
-        {
-            return $this->passwordRules();
-        }
-    };
+    Assert::assertTrue($reflection->hasMethod('passwordRules'));
+    $fixture = new PasswordValidationRulesMockableFixture();
+    $rules = $fixture->getPasswordRules();
 
-    $className = get_class($testClass);
-
-    $mock = $this->getMockBuilder($className)
-        ->onlyMethods(['passwordRules'])
-        ->getMock();
-
-    $mock->method('passwordRules')
-        ->willReturn(['required', 'string', 'confirmed']);
-
-    $rules = $mock->getPasswordRules();
-
-    expect($rules)->toBeArray()
-        ->and($rules)->toHaveCount(3);
+    Assert::assertCount(3, $rules);
+    Assert::assertSame(['required', 'string', 'confirmed'], $rules);
 });

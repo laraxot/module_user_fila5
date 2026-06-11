@@ -32,6 +32,9 @@ class SocialLoginWidget extends XotBaseSchemaWidget
         return [];
     }
 
+    /**
+     * @return list<array{driver: string, label: string, icon: string, color: string}>
+     */
     public function getProviders(): array
     {
         $providers = [];

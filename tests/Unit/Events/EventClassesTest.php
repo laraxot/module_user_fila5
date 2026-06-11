@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Unit\Events;
-
-uses(TestCase::class);
-
+uses(\Modules\User\Tests\TestCase::class);
+use Modules\User\Database\Factories\UserFactory;
+use PHPUnit\Framework\Assert;
+use Modules\User\Contracts\TeamContract;
 use Modules\User\Events\AddingTeam;
 use Modules\User\Events\AddingTeamMember;
 use Modules\User\Events\RecoveryCodeReplaced;
@@ -17,91 +17,95 @@ use Modules\User\Events\TeamSwitched;
 use Modules\User\Events\TwoFactorAuthenticationDisabled;
 use Modules\User\Events\TwoFactorAuthenticationEnabled;
 use Modules\User\Models\User;
-use Modules\User\Tests\TestCase;
 
 // Using mock for contracts since they are interfaces
 test('RecoveryCodesGenerated event can be instantiated', function () {
-    $user = User::factory()->make();
+    /** @var \Modules\User\Tests\TestCase $this */
+    $user = UserFactory::new()->makeOne();
     $event = new RecoveryCodesGenerated($user);
 
-    expect($event)->toBeInstanceOf(RecoveryCodesGenerated::class)
-        ->and($event->userContract)->toBe($user);
+    Assert::assertInstanceOf(RecoveryCodesGenerated::class, $event);
+    Assert::assertSame($user, $event->userContract);
 });
 
 test('TeamMemberAdded event can be instantiated', function () {
-    $team = $this->getMockBuilder(Modules\User\Contracts\TeamContract::class)
-        ->getMock();
-    $user = User::factory()->make();
+    /** @var \Modules\User\Tests\TestCase $this */
+    $team = typedMock(TeamContract::class);
+    $user = UserFactory::new()->makeOne();
     $event = new TeamMemberAdded($team, $user);
 
-    expect($event)->toBeInstanceOf(TeamMemberAdded::class);
+    Assert::assertInstanceOf(TeamMemberAdded::class, $event);
 });
 
 test('TeamMemberRemoved event can be instantiated', function () {
-    $team = $this->getMockBuilder(Modules\User\Contracts\TeamContract::class)
-        ->getMock();
-    $user = User::factory()->make();
+    /** @var \Modules\User\Tests\TestCase $this */
+    $team = typedMock(TeamContract::class);
+    $user = UserFactory::new()->makeOne();
     $event = new TeamMemberRemoved($team, $user);
 
-    expect($event)->toBeInstanceOf(TeamMemberRemoved::class);
+    Assert::assertInstanceOf(TeamMemberRemoved::class, $event);
 });
 
 test('TwoFactorAuthenticationEnabled event can be instantiated', function () {
-    $user = User::factory()->make();
+    /** @var \Modules\User\Tests\TestCase $this */
+    $user = UserFactory::new()->makeOne();
     $event = new TwoFactorAuthenticationEnabled($user);
 
-    expect($event)->toBeInstanceOf(TwoFactorAuthenticationEnabled::class)
-        ->and($event->userContract)->toBe($user);
+    Assert::assertInstanceOf(TwoFactorAuthenticationEnabled::class, $event);
+    Assert::assertSame($user, $event->userContract);
 });
 
 test('TwoFactorAuthenticationDisabled event can be instantiated', function () {
-    $user = User::factory()->make();
+    /** @var \Modules\User\Tests\TestCase $this */
+    $user = UserFactory::new()->makeOne();
     $event = new TwoFactorAuthenticationDisabled($user);
 
-    expect($event)->toBeInstanceOf(TwoFactorAuthenticationDisabled::class)
-        ->and($event->userContract)->toBe($user);
+    Assert::assertInstanceOf(TwoFactorAuthenticationDisabled::class, $event);
+    Assert::assertSame($user, $event->userContract);
 });
 
 test('RecoveryCodeReplaced event can be instantiated', function () {
-    $user = User::factory()->make();
+    /** @var \Modules\User\Tests\TestCase $this */
+    $user = UserFactory::new()->makeOne();
     $event = new RecoveryCodeReplaced($user, 'test_code');
 
-    expect($event)->toBeInstanceOf(RecoveryCodeReplaced::class)
-        ->and($event->user)->toBe($user)
-        ->and($event->code)->toBe('test_code');
+    Assert::assertInstanceOf(RecoveryCodeReplaced::class, $event);
+    Assert::assertSame($user, $event->user);
+    Assert::assertSame('test_code', $event->code);
 });
 
 test('TeamMemberUpdated event can be instantiated', function () {
-    $team = $this->getMockBuilder(Modules\User\Contracts\TeamContract::class)
-        ->getMock();
-    $user = User::factory()->make();
+    /** @var \Modules\User\Tests\TestCase $this */
+    $team = typedMock(TeamContract::class);
+    $user = UserFactory::new()->makeOne();
     $event = new TeamMemberUpdated($team, $user);
 
-    expect($event)->toBeInstanceOf(TeamMemberUpdated::class);
+    Assert::assertInstanceOf(TeamMemberUpdated::class, $event);
 });
 
 test('AddingTeam event can be instantiated', function () {
-    $user = User::factory()->make();
+    /** @var \Modules\User\Tests\TestCase $this */
+    $user = UserFactory::new()->makeOne();
     $event = new AddingTeam($user);
 
-    expect($event)->toBeInstanceOf(AddingTeam::class)
-        ->and($event->owner)->toBe($user);
+    Assert::assertInstanceOf(AddingTeam::class, $event);
+    Assert::assertSame($user, $event->owner);
 });
 
 test('AddingTeamMember event can be instantiated', function () {
-    $team = $this->getMockBuilder(Modules\User\Contracts\TeamContract::class)
-        ->getMock();
-    $user = User::factory()->make();
+    /** @var \Modules\User\Tests\TestCase $this */
+    $team = typedMock(TeamContract::class);
+    $user = UserFactory::new()->makeOne();
     $event = new AddingTeamMember($team, $user);
 
-    expect($event)->toBeInstanceOf(AddingTeamMember::class);
+    Assert::assertInstanceOf(AddingTeamMember::class, $event);
 });
 
 test('TeamSwitched event can be instantiated', function () {
-    $team = $this->getMockBuilder(Modules\User\Contracts\TeamContract::class)
-        ->getMock();
-    $user = User::factory()->make();
+    /** @var \Modules\User\Tests\TestCase $this */
+    $team = typedMock(TeamContract::class);
+    $user = UserFactory::new()->makeOne();
     $event = new TeamSwitched($team, $user);
 
-    expect($event)->toBeInstanceOf(TeamSwitched::class);
+    Assert::assertInstanceOf(TeamSwitched::class, $event);
 });

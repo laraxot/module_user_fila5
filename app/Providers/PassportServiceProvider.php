@@ -151,9 +151,7 @@ class PassportServiceProvider extends ServiceProvider
         }
 
         if (! empty($scopes)) {
-            /** @phpstan-ignore varTag.nativeType */
-            $typedScopes = $scopes;
-            Passport::tokensCan($typedScopes);
+            Passport::tokensCan($scopes);
         }
     }
 

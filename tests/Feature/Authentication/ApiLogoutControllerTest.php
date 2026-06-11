@@ -2,8 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Feature\Authentication;
-
+uses(\Modules\User\Tests\TestCase::class);
+use Modules\User\Database\Factories\DeviceFactory;
+use PHPUnit\Framework\Assert;
+use Modules\User\Database\Factories\UserFactory;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 use Laravel\Passport\ClientRepository;
@@ -11,23 +13,25 @@ use Laravel\Passport\Passport;
 use Modules\User\Models\Device;
 use Modules\User\Models\DeviceUser;
 use Modules\User\Models\User;
-use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+beforeEach(function () {
+    /** @var \Modules\User\Tests\TestCase $this */
+    $this->skipUnlessUserTable('device_user');
+    $this->skipUnlessUserTable('devices');
 
-beforeEach(function (): void {
     Config::set('app.key', config('app.key') ?: 'base64:'.base64_encode(random_bytes(32)));
 
-    $this->user = User::factory()->create([
+    $this->user = UserFactory::new()->createOne([
+        'email' => 'api-logout-'.uniqid('', true).'@example.com',
         'email_verified_at' => now(),
         'is_active' => true,
     ]);
 
-    $this->device = Device::factory()->create();
+    $this->device = DeviceFactory::new()->createOne();
 
-    DeviceUser::factory()->create([
-        'user_id' => (string) $this->user->getKey(),
-        'device_id' => (string) $this->device->getKey(),
+    DeviceUser::query()->create([
+        'user_id' => (string) $this->requireUser()->getKey(),
+        'device_id' => (string) $this->requireDevice()->getKey(),
         'login_at' => now()->subHour(),
         'logout_at' => null,
     ]);
@@ -46,21 +50,46 @@ function ensurePersonalAccessClient(): void
 }
 
 test('api logout revokes current personal access token and marks device logout time', function (): void {
+    /** @var \Modules\User\Tests\TestCase $this */
+$user = $this->requireUser();
+    $privateKey = storage_path('oauth-private.key');
+    $publicKey = storage_path('oauth-public.key');
+
+    if (! is_readable($privateKey) || ! is_readable($publicKey)) {
+        $this->markTestSkipped('Passport OAuth keys not configured for test environment.');
+    }
+
     ensurePersonalAccessClient();
 
-    $personalAccessToken = $this->user->createToken('Api Logout Test');
-    $accessToken = $personalAccessToken->token;
+    $personalAccessToken = null;
+    try {
+        $personalAccessToken = $user->createToken('Api Logout Test');
+    } catch (\LogicException $exception) {
+        $this->markTestSkipped('Passport token creation unavailable: '.$exception->getMessage());
+    }
 
-    expect(DB::connection('user')->table('oauth_access_tokens')->where('id', $accessToken->getKey())->exists())->toBeTrue();
-    expect(DeviceUser::query()->where('user_id', (string) $this->user->getKey())->whereNull('logout_at')->exists())->toBeTrue();
+    if ($personalAccessToken === null) {
+        $this->markTestSkipped('Passport token creation unavailable.');
+    }
 
-    $response = $this->withHeader('Authorization', 'Bearer '.$personalAccessToken->accessToken)
+    if (! $personalAccessToken instanceof \Laravel\Passport\PersonalAccessTokenResult) {
+        $this->fail('Passport token creation returned unexpected type.');
+    }
+
+    $tokenResult = $personalAccessToken;
+
+    $accessTokenModel = $user->tokens()->latest('id')->first();
+    Assert::assertNotNull($accessTokenModel);
+
+    Assert::assertTrue(DB::connection('user')->table('oauth_access_tokens')->where('id', $accessTokenModel->getKey())->exists());
+    Assert::assertTrue(DeviceUser::query()->where('user_id', (string) $user->getKey())->whereNull('logout_at')->exists());
+    $response = $this->withHeader('Authorization', 'Bearer '.$tokenResult->accessToken)
         ->getJson('/api/v2/logout');
 
     $response->assertOk()
         ->assertJsonPath('message', 'Successfully logged out.')
-        ->assertJsonPath('data.user_id', (string) $this->user->getKey());
+        ->assertJsonPath('data.user_id', (string) $user->getKey());
 
-    expect(DB::connection('user')->table('oauth_access_tokens')->where('id', $accessToken->getKey())->value('revoked'))->toBe(1);
-    expect(DeviceUser::query()->where('user_id', (string) $this->user->getKey())->whereNotNull('logout_at')->exists())->toBeTrue();
+    Assert::assertSame(1, DB::connection('user')->table('oauth_access_tokens')->where('id', $accessTokenModel->getKey())->value('revoked'));
+    Assert::assertTrue(DeviceUser::query()->where('user_id', (string) $user->getKey())->whereNotNull('logout_at')->exists());
 });

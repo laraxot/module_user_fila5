@@ -27,7 +27,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|TeamPermission newQuery()
  * @method static Builder<static>|TeamPermission query()
  *
- * @mixin IdeHelperTeamPermission
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
@@ -71,7 +70,7 @@ class TeamPermission extends BaseModel
     ];
 
     /**
-     * Get the team that owns the permission.
+     * @return BelongsTo<Team, $this>
      */
     public function team(): BelongsTo
     {
@@ -79,7 +78,7 @@ class TeamPermission extends BaseModel
     }
 
     /**
-     * Get the user that owns the permission.
+     * @return BelongsTo<User, $this>
      */
     public function user(): BelongsTo
     {

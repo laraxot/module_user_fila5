@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Feature\Actions;
-
+uses(\Modules\User\Tests\TestCase::class);
+use PHPUnit\Framework\Assert;
+use Modules\User\Database\Factories\UserFactory;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Event;
+use LogicException;
+use stdClass;
 use Modules\User\Actions\Socialite\LoginUserAction;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
-use Modules\User\Models\User;
-use Modules\User\Tests\TestCase;
-
-uses(TestCase::class);
 
 describe('LoginUserAction', function (): void {
     test('authenticates connected socialite user and dispatches event', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
         Event::fake([SocialiteUserConnected::class]);
 
-        $user = User::factory()->create();
+        $user = UserFactory::new()->createOne();
 
         $socialiteUser = new SocialiteUser([
             'provider' => 'test-provider',
@@ -29,13 +29,14 @@ describe('LoginUserAction', function (): void {
 
         $response = app(LoginUserAction::class)->execute($socialiteUser);
 
-        expect($response)->toBeInstanceOf(RedirectResponse::class);
+        Assert::assertInstanceOf(RedirectResponse::class, $response);
         $this->assertAuthenticatedAs($user);
 
         Event::assertDispatched(SocialiteUserConnected::class);
     });
 
     test('throws when related user is not authenticatable', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
         $socialiteUser = new SocialiteUser([
             'provider' => 'test-provider',
             'provider_id' => 'provider-id-2',
@@ -44,6 +45,11 @@ describe('LoginUserAction', function (): void {
 
         $socialiteUser->setRelation('user', new stdClass());
 
-        app(LoginUserAction::class)->execute($socialiteUser);
-    })->throws(LogicException::class, 'User instance must implement Authenticatable.');
+        try {
+            app(LoginUserAction::class)->execute($socialiteUser);
+            Assert::fail('Expected LogicException was not thrown');
+        } catch (LogicException $exception) {
+            Assert::assertSame('User instance must implement Authenticatable.', $exception->getMessage());
+        }
+    });
 });

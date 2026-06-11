@@ -33,7 +33,6 @@ use Webmozart\Assert\Assert;
  * @method static Builder|PermissionRole whereUpdatedAt($value)
  * @method static Builder|PermissionRole whereUpdatedBy($value)
  *
- * @mixin IdeHelperPermissionRole
  *
  * @property ProfileContract|null $deleter
  *

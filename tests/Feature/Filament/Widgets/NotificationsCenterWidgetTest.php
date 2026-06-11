@@ -2,25 +2,25 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Feature\Filament\Widgets;
-
+uses(\Modules\User\Tests\TestCase::class);
+use ReflectionClass;
+use PHPUnit\Framework\Assert;
 use Modules\User\Filament\Widgets\Auth\NotificationsCenterWidget;
-use Modules\User\Tests\TestCase;
-
-uses(TestCase::class);
 
 it('redirects guests from notifiche page', function (): void {
-    $response = $this->get('/it/area-personale/notifiche');
+    /** @var \Modules\User\Tests\TestCase $this */
+    $response = $this->get('/it/area-personale/notifications');
 
     $response->assertRedirect();
 });
 
 it('uses notifications center widget view', function (): void {
+    /** @var \Modules\User\Tests\TestCase $this */
     $widget = new NotificationsCenterWidget();
     $reflection = new \ReflectionClass($widget);
     $property = $reflection->getProperty('view');
     $property->setAccessible(true);
     $view = $property->getValue($widget);
 
-    expect($view)->toBe('user::widgets.auth.notifications-center-widget');
+    Assert::assertSame('user::widgets.auth.notifications-center-widget', $view);
 });

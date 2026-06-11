@@ -2,10 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Feature\Filament\Pages;
-
+uses(\Modules\User\Tests\TestCase::class);
+use Modules\User\Database\Factories\UserFactory;
+use PHPUnit\Framework\Assert;
 use Filament\Actions\Action;
 use Filament\Facades\Filament;
+use Filament\Panel;
 use Filament\Tables\Columns\TextColumn;
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Actions\ChangePasswordAction;
@@ -14,17 +16,15 @@ use Modules\User\Filament\Resources\UserResource\Pages\BaseListUsers;
 use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
 use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
-use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
-
-beforeEach(function (): void {
+beforeEach(function () {
+    /** @var \Modules\User\Tests\TestCase $this */
     // Ensure the panel is registered
     try {
         $panel = Filament::getPanel('user::admin');
     } catch (Exception $e) {
         $panelProvider = new AdminPanelProvider(app());
-        $panel = $panelProvider->panel(Filament::getPanelRegistry()->makePanel('user::admin'));
+        $panel = $panelProvider->panel(Panel::make());
         Filament::registerPanel($panel);
     }
     Filament::setCurrentPanel($panel);
@@ -32,7 +32,7 @@ beforeEach(function (): void {
     $this->listUsersPage = new ListUsers();
 
     // Create some test users
-    $this->users = User::factory()
+    $users = UserFactory::new()
         ->count(3)
         ->create([
             'type' => UserType::MasterAdmin,
@@ -40,127 +40,142 @@ beforeEach(function (): void {
 });
 
 test('list users page has correct resource', function (): void {
-    expect(ListUsers::getResource())->toBe(UserResource::class);
+    /** @var \Modules\User\Tests\TestCase $this */
+    Assert::assertSame(UserResource::class, ListUsers::getResource());
 });
 
 test('list users page extends correct base class', function (): void {
-    expect($this->listUsersPage)
-        ->toBeInstanceOf(BaseListUsers::class);
+    /** @var \Modules\User\Tests\TestCase $this */
+$listUsersPage = $this->requireListUsersPage();
+    Assert::assertInstanceOf(BaseListUsers::class, $listUsersPage);
 });
 
 test('list users page can be instantiated', function (): void {
-    expect($this->listUsersPage)->toBeInstanceOf(ListUsers::class);
+    /** @var \Modules\User\Tests\TestCase $this */
+$listUsersPage = $this->requireListUsersPage();
+    Assert::assertInstanceOf(ListUsers::class, $listUsersPage);
 });
 
 test('list users page has correct table columns', function (): void {
-    $columns = $this->listUsersPage->getTableColumns();
+    /** @var \Modules\User\Tests\TestCase $this */
+$listUsersPage = $this->requireListUsersPage();
+    $columns = $listUsersPage->getTableColumns();
 
-    expect($columns)->toHaveKey('name');
-    expect($columns)->toHaveKey('email');
-
+    Assert::assertArrayHasKey('name', $columns);
+    Assert::assertArrayHasKey('email', $columns);
     // Test name column
     $nameColumn = $columns['name'];
-    expect($nameColumn)->toBeInstanceOf(TextColumn::class);
-    expect($nameColumn->getName())->toBe('name');
-    expect($nameColumn->isSearchable())->toBeTrue();
-
+    Assert::assertInstanceOf(TextColumn::class, $nameColumn);
+    Assert::assertSame('name', $nameColumn->getName());
+    Assert::assertTrue($nameColumn->isSearchable());
     // Test email column
     $emailColumn = $columns['email'];
-    expect($emailColumn)->toBeInstanceOf(TextColumn::class);
-    expect($emailColumn->getName())->toBe('email');
-    expect($emailColumn->isSearchable())->toBeTrue();
+    Assert::assertInstanceOf(TextColumn::class, $emailColumn);
+    Assert::assertSame('email', $emailColumn->getName());
+    Assert::assertTrue($emailColumn->isSearchable());
 });
 
 test('list users page has correct table filters', function (): void {
-    $filters = $this->listUsersPage->getTableFilters();
+    /** @var \Modules\User\Tests\TestCase $this */
+$listUsersPage = $this->requireListUsersPage();
+    $filters = $listUsersPage->getTableFilters();
 
     // Currently no filters are defined
-    expect($filters)->toBeArray();
-    expect($filters)->toHaveCount(0);
+    Assert::assertCount(0, $filters);
 });
 
 test('list users page has correct table actions', function (): void {
-    $actions = $this->listUsersPage->getTableActions();
+    /** @var \Modules\User\Tests\TestCase $this */
+$listUsersPage = $this->requireListUsersPage();
+    $actions = $listUsersPage->getTableActions();
 
     // Debug output
     // dump($actions);
 
-    expect($actions)->toHaveKey('change_password');
-    expect($actions)->toHaveKey('change_password');
+    Assert::assertArrayHasKey('change_password', $actions);
+    Assert::assertArrayHasKey('change_password', $actions);
     // expect($actions)->toHaveKey('deactivate');
 
     // Test change password action
     $changePasswordAction = $actions['change_password'];
-    expect($changePasswordAction)->toBeInstanceOf(ChangePasswordAction::class);
-
+    Assert::assertInstanceOf(ChangePasswordAction::class, $changePasswordAction);
     // Test deactivate action
     /*
     $deactivateAction = $actions['deactivate'];
-    expect($deactivateAction)->toBeInstanceOf(Action::class);
-    expect($deactivateAction->getColor())->toBe('danger');
-    expect($deactivateAction->getIcon())->toBe('heroicon-o-trash');
+    Assert::assertInstanceOf(Action::class, $deactivateAction);
+    Assert::assertSame('danger', $deactivateAction->getColor());
+    Assert::assertSame('heroicon-o-trash', $deactivateAction->getIcon());
     */
 });
 
 test('list users page has correct header widgets', function (): void {
+    /** @var \Modules\User\Tests\TestCase $this */
     // getHeaderWidgets is protected and currently commented out in BaseListUsers
     // So we can't test it directly on the instance without reflection
     // And since it returns empty, the previous test expectation was wrong.
-    expect(true)->toBeTrue();
 });
 
 test('list users page has correct bulk actions', function (): void {
+    /** @var \Modules\User\Tests\TestCase $this */
     // getTableBulkActions is available on BaseListUsers via inheritance/mixins effectively?
     // Usually defined in ListRecords or InteractsWithTable.
     // However, calling it might rely on table() being set up.
     // For now, simpler test or skip if it's protected/complex.
-    expect(true)->toBeTrue();
 });
 
 test('list users page can display users', function (): void {
-    $createdUserIds = $this->users->pluck('id');
+    /** @var \Modules\User\Tests\TestCase $this */
+    $users = $this->requireUsers();
+    $createdUserIds = $users->pluck('id');
     $testUsers = User::whereIn('id', $createdUserIds)->get();
 
-    expect($testUsers)->toHaveCount(3);
-
+    Assert::assertCount(3, $testUsers);
     foreach ($testUsers as $user) {
-        expect($user)->toBeInstanceOf(User::class);
+        Assert::assertInstanceOf(User::class, $user);
         // Fix Enum check - use value comparison if type is string in DB/Accessor
         if (is_string($user->type)) {
-            expect($user->type)->toBe(UserType::MasterAdmin->value);
+            Assert::assertSame(UserType::MasterAdmin->value, $user->type);
         } else {
-            expect($user->type)->toBe(UserType::MasterAdmin);
+            Assert::assertSame(UserType::MasterAdmin, $user->type);
         }
     }
 });
 
 test('list users page has correct navigation label', function (): void {
-    $label = $this->listUsersPage->getNavigationLabel();
-    expect($label)->not->toBeNull();
+    /** @var \Modules\User\Tests\TestCase $this */
+$listUsersPage = $this->requireListUsersPage();
+    $label = $listUsersPage->getNavigationLabel();
+    Assert::assertNotNull($label);
 });
 
 test('list users page has correct title', function (): void {
-    $title = $this->listUsersPage->getTitle();
-    expect($title)->not->toBeNull();
+    /** @var \Modules\User\Tests\TestCase $this */
+$listUsersPage = $this->requireListUsersPage();
+    $title = $listUsersPage->getTitle();
+    Assert::assertNotNull($title);
 });
 
 test('list users page has correct breadcrumbs', function (): void {
+    /** @var \Modules\User\Tests\TestCase $this */
+$listUsersPage = $this->requireListUsersPage();
     // Breadcrumbs might depend on routing parameters which are missing in simple instantiation
     try {
-        $breadcrumbs = $this->listUsersPage->getBreadcrumbs();
-        expect($breadcrumbs)->toBeArray();
+        $breadcrumbs = $listUsersPage->getBreadcrumbs();
+        Assert::assertIsArray($breadcrumbs);
     } catch (Exception $e) {
-        expect(true)->toBeTrue(); // Skip if fails due to routing
+        // assertTrue(true) removed — tautology // Skip if fails due to routing
     }
 });
 
 test('list users page can handle search', function (): void {
-    $columns = $this->listUsersPage->getTableColumns();
+    /** @var \Modules\User\Tests\TestCase $this */
+$listUsersPage = $this->requireListUsersPage();
+    $columns = $listUsersPage->getTableColumns();
     $nameColumn = $columns['name'];
     $emailColumn = $columns['email'];
 
-    expect($nameColumn->isSearchable())->toBeTrue();
-    expect($emailColumn->isSearchable())->toBeTrue();
+    Assert::assertTrue($nameColumn->isSearchable());
+    Assert::assertTrue($emailColumn->isSearchable());
 });
 
 // Removed tests for protected methods:

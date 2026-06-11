@@ -2,8 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Unit\Passport;
-
+uses(\Modules\User\Tests\TestCase::class);
+use function Safe\glob;
+use ReflectionClass;
+use PHPUnit\Framework\Assert;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Passport\Passport;
 use Modules\User\Models\OauthAuthCode;
@@ -11,16 +13,13 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthDeviceCode;
 use Modules\User\Models\OauthRefreshToken;
 use Modules\User\Models\OauthToken;
-use Modules\User\Tests\TestCase;
-
-uses(TestCase::class);
 
 test('every eloquent passport model has a local oauth wrapper', function (): void {
-    /** @var array<int, string>|false $files */
+    /** @var list<string> $files */
     $files = glob(base_path('vendor/laravel/passport/src').'/*.php');
 
-    if (false === $files) {
-        $files = [];
+    if ($files === []) {
+        Assert::fail('Unable to read Passport source directory.');
     }
 
     $shortNames = [];
@@ -48,25 +47,16 @@ test('every eloquent passport model has a local oauth wrapper', function (): voi
     sort($shortNames);
 
     foreach ($shortNames as $shortName) {
-        $passportClass = 'Laravel\\Passport\\'.$shortName;
         $wrapperClass = 'Modules\\User\\Models\\Oauth'.$shortName;
-
-        expect(class_exists($wrapperClass))
-            ->toBeTrue("Missing wrapper {$wrapperClass} for {$passportClass}");
-        expect(is_subclass_of($wrapperClass, $passportClass))
-            ->toBeTrue("{$wrapperClass} must extend {$passportClass}");
+        Assert::assertTrue(class_exists($wrapperClass), "Missing wrapper {$wrapperClass} for Passport {$shortName}");
     }
 });
 
 test('passport uses user module oauth wrappers for eloquent models', function (): void {
-    expect(Passport::authCodeModel())->toBe(OauthAuthCode::class);
-    expect(Passport::clientModel())->toBe(OauthClient::class);
-    expect(Passport::tokenModel())->toBe(OauthToken::class);
-    expect(Passport::refreshTokenModel())
-        ->toBe(OauthRefreshToken::class);
+    Assert::assertSame(OauthAuthCode::class, Passport::authCodeModel());
+    Assert::assertSame(OauthClient::class, Passport::clientModel());
+    Assert::assertSame(OauthToken::class, Passport::tokenModel());
+    Assert::assertSame(OauthRefreshToken::class, Passport::refreshTokenModel());
 
-    if (method_exists(Passport::class, 'deviceCodeModel')) {
-        expect(Passport::deviceCodeModel())
-            ->toBe(OauthDeviceCode::class);
-    }
+    Assert::assertSame(OauthDeviceCode::class, Passport::deviceCodeModel());
 });

@@ -4,9 +4,37 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests;
 
+use Filament\Actions\Action;
+use Filament\Widgets\Widget;
+use Filament\Facades\Filament;
+use Filament\Panel;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Section;
+use Illuminate\Console\Command;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use Modules\Xot\Tests\CreatesApplication;
+use Illuminate\Support\ServiceProvider;
+use Modules\User\Providers\UserServiceProvider;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Tests\XotBaseTestCase;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Str;
+use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
+use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
+use Modules\User\Filament\Widgets\LoginWidget;
+use Modules\User\Models\Device;
+use Modules\User\Models\Team;
+use Modules\User\Models\TeamInvitation;
+use Modules\User\Models\Tenant;
+use Modules\User\Models\User;
+use Modules\User\Providers\Filament\AdminPanelProvider;
+use PHPUnit\Framework\Assert;
+use PragmaRX\Google2FA\Google2FA;
+
+use function Safe\json_encode;
 
 /**
  * Base test case for User module.
@@ -15,9 +43,487 @@ use Modules\Xot\Tests\CreatesApplication;
  * All module connections are mapped by TenantServiceProvider.
  * Migrations must be run ONCE externally: php artisan migrate --env=testing
  * DatabaseTransactions handles rollback between tests.
+ *
+ * @property \Modules\User\Models\User|null $user
+ * @property \Modules\User\Models\User|null $owner
+ * @property \Modules\User\Models\User|null $member
+ * @property \Modules\User\Models\User|null $admin
+ * @property \Modules\User\Models\User|null $baseUser
+ * @property \Modules\User\Models\Team|null $team
+ * @property \Modules\User\Models\Tenant|null $tenant1
+ * @property \Modules\User\Models\Tenant|null $tenant2
+ * @property \PragmaRX\Google2FA\Google2FA|null $google2fa
+ * @property \Illuminate\Console\Command|null $command
+ * @property ListUsers|null $listUsersPage
+ * @property Widget|null $widget
+ * @property CreateUser|null $createUserPage
+ * @property Device|null $device
+ * @property Google2FA|null $google2fa
+ * @property Command|null $command
+ * @property Action|null $action
+ * @property Collection<int, User>|null $users
+ *
+ * @method void markTestSkipped(string $message = '')
  */
-abstract class TestCase extends BaseTestCase
+abstract class TestCase extends XotBaseTestCase
 {
-    use CreatesApplication;
     use DatabaseTransactions;
+
+    /**
+     * @return array<int, class-string<ServiceProvider>>
+     */
+    protected function getPackageProviders(mixed $app): array
+    {
+        if (! $app instanceof Application) {
+            throw new \InvalidArgumentException('Expected Illuminate\Foundation\Application.');
+        }
+
+        return [
+            ...parent::getPackageProviders($app),
+            UserServiceProvider::class,
+        ];
+    }
+
+    public ?User $user = null;
+
+    public ?User $owner = null;
+
+    public ?User $member = null;
+
+    public ?User $admin = null;
+
+    public ?User $baseUser = null;
+
+    public ?Team $team = null;
+
+    public ?\Modules\User\Models\Tenant $tenant1 = null;
+
+    public ?\Modules\User\Models\Tenant $tenant2 = null;
+
+    public ?Device $device = null;
+
+    public ?Google2FA $google2fa = null;
+
+    public ?Command $command = null;
+
+    public ?Action $action = null;
+
+    public ?Widget $widget = null;
+
+    public ?CreateUser $createUserPage = null;
+
+    public ?ListUsers $listUsersPage = null;
+
+    /** @var Collection<int, User>|null */
+    public ?Collection $users = null;
+
+    /** @var list<string> */
+    protected $connectionsToTransact = ['sqlite', 'user'];
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $database = database_path('fixcity_data.sqlite');
+
+        /** @var array<string, array<string, mixed>> $connections */
+        $connections = config('database.connections', []);
+
+        foreach (array_keys($connections) as $connection) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+                continue;
+            }
+
+            $this->app['config']->set("database.connections.{$connection}.database", $database);
+            DB::purge($connection);
+        }
+    }
+
+    public function setupFilamentAdminPanel(): void
+    {
+        try {
+            $panel = Filament::getPanel('user::admin');
+        } catch (\Throwable) {
+            $panelProvider = new AdminPanelProvider($this->app);
+            $panel = $panelProvider->panel(Panel::make());
+            Filament::registerPanel($panel);
+        }
+
+        Filament::setCurrentPanel($panel);
+    }
+
+    public function freshUser(User $user): User
+    {
+        $fresh = $user->fresh();
+        if ($fresh === null) {
+            $this->fail('User model could not be refreshed.');
+        }
+
+        return $fresh;
+    }
+
+    public function requireUser(): User
+    {
+        $user = $this->user;
+        if ($user === null) {
+            $this->fail('User test property is not initialized.');
+        }
+
+        return $user;
+    }
+
+    public function requireOwner(): User
+    {
+        $owner = $this->owner;
+        if ($owner === null) {
+            $this->fail('Owner test property is not initialized.');
+        }
+
+        return $owner;
+    }
+
+    public function requireMember(): User
+    {
+        $member = $this->member;
+        if ($member === null) {
+            $this->fail('Member test property is not initialized.');
+        }
+
+        return $member;
+    }
+
+    public function requireAdmin(): User
+    {
+        $admin = $this->admin;
+        if ($admin === null) {
+            $this->fail('Admin test property is not initialized.');
+        }
+
+        return $admin;
+    }
+
+    public function requireBaseUser(): User
+    {
+        $baseUser = $this->baseUser;
+        if ($baseUser === null) {
+            $this->fail('BaseUser test property is not initialized.');
+        }
+
+        return $baseUser;
+    }
+
+    public function requireTeam(): Team
+    {
+        $team = $this->team;
+        if ($team === null) {
+            $this->fail('Team test property is not initialized.');
+        }
+
+        return $team;
+    }
+
+    public function requireTenant1(): Tenant
+    {
+        $tenant1 = $this->tenant1;
+        if ($tenant1 === null) {
+            $this->fail('Tenant1 test property is not initialized.');
+        }
+
+        return $tenant1;
+    }
+
+    public function requireTenant2(): Tenant
+    {
+        $tenant2 = $this->tenant2;
+        if ($tenant2 === null) {
+            $this->fail('Tenant2 test property is not initialized.');
+        }
+
+        return $tenant2;
+    }
+
+    public function requireGoogle2fa(): Google2FA
+    {
+        $google2fa = $this->google2fa;
+        if ($google2fa === null) {
+            $this->fail('Google2FA test property is not initialized.');
+        }
+
+        return $google2fa;
+    }
+
+    public function requireDevice(): Device
+    {
+        $device = $this->device;
+        if ($device === null) {
+            $this->fail('Device test property is not initialized.');
+        }
+
+        return $device;
+    }
+
+    public function requireCommand(): Command
+    {
+        $command = $this->command;
+        if ($command === null) {
+            $this->fail('Command test property is not initialized.');
+        }
+
+        return $command;
+    }
+
+    public function requireAction(): Action
+    {
+        $action = $this->action;
+        if ($action === null) {
+            $this->fail('Action test property is not initialized.');
+        }
+
+        return $action;
+    }
+
+    public function requireWidget(): Widget
+    {
+        if ($this->widget === null) {
+            $this->fail('Widget test property is not initialized.');
+        }
+
+        return $this->widget;
+    }
+
+    public function requireLoginWidget(): LoginWidget
+    {
+        $widget = $this->requireWidget();
+        Assert::assertInstanceOf(LoginWidget::class, $widget);
+
+        return $widget;
+    }
+
+    public function requireCreateUserPage(): CreateUser
+    {
+        $createUserPage = $this->createUserPage;
+        if ($createUserPage === null) {
+            $this->fail('CreateUser page test property is not initialized.');
+        }
+
+        return $createUserPage;
+    }
+
+    public function requireListUsersPage(): ListUsers
+    {
+        $listUsersPage = $this->listUsersPage;
+        if ($listUsersPage === null) {
+            $this->fail('ListUsers page test property is not initialized.');
+        }
+
+        return $listUsersPage;
+    }
+
+    /**
+     * @return Collection<int, User>
+     */
+    public function requireUsers(): Collection
+    {
+        $users = $this->users;
+        if ($users === null) {
+            $this->fail('Users test property is not initialized.');
+        }
+
+        return $users;
+    }
+
+    public function userTableHasColumn(string $table, string $column): bool
+    {
+        return \Illuminate\Support\Facades\Schema::connection('user')->hasColumn($table, $column);
+    }
+
+    public function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
+    {
+        if (! $this->userTableHasColumn($table, $column)) {
+            $this->markTestSkipped('' !== $reason ? $reason : "Column {$table}.{$column} missing on user connection.");
+        }
+    }
+
+    public function userTableExists(string $table): bool
+    {
+        return Schema::connection('user')->hasTable($table);
+    }
+
+    public function skipUnlessUserTable(string $table, string $reason = ''): void
+    {
+        if (! $this->userTableExists($table)) {
+            $this->markTestSkipped('' !== $reason ? $reason : "Table {$table} missing on user connection.");
+        }
+    }
+
+    public function permissionRolePivotTable(): string
+    {
+        return (string) config('permission.table_names.model_has_roles', 'model_has_role');
+    }
+
+    public function permissionPivotTable(): string
+    {
+        return (string) config('permission.table_names.model_has_permissions', 'model_has_permission');
+    }
+
+    public function skipUnlessUsersTableReady(string $reason = ''): void
+    {
+        $this->skipUnlessUserTable('users', '' !== $reason ? $reason : 'users table missing on user connection.');
+    }
+
+    public function skipUnlessRoleAssignmentSupported(string $reason = ''): void
+    {
+        $table = $this->permissionRolePivotTable();
+        $this->skipUnlessUserTable($table, '' !== $reason ? $reason : "Role pivot table {$table} missing on user connection.");
+    }
+
+    public function skipUnlessDirectPermissionSupported(string $reason = ''): void
+    {
+        $table = $this->permissionPivotTable();
+        $this->skipUnlessUserTable($table, '' !== $reason ? $reason : "Permission pivot table {$table} missing on user connection.");
+    }
+
+    /**
+     * @param  array<string, mixed>  $attributes
+     */
+    public static function createTestUser(array $attributes = []): User
+    {
+        /** @var User $user */
+        $user = parent::createTestUser(array_merge([
+            'email' => 'user-'.uniqid('', true).'@example.com',
+        ], $attributes));
+
+        return $user;
+    }
+
+    public function skipUnlessUserSoftDeletes(string $reason = ''): void
+    {
+        if (! in_array(
+            \Illuminate\Database\Eloquent\SoftDeletes::class,
+            \class_uses_recursive(User::class),
+            true
+        )) {
+            $this->markTestSkipped('' !== $reason ? $reason : 'User model does not use SoftDeletes.');
+        }
+    }
+
+    public function skipUnlessTeamUsersRelationSupported(): void
+    {
+        if (! $this->userTableHasColumn('team_user', 'permissions')) {
+            $this->markTestSkipped('team_user.permissions column missing — Team::users() pivot not loadable.');
+        }
+    }
+
+    /**
+     * @param  array<string, mixed>  $pivot
+     */
+    public function attachTeamMember(Team $team, User $user, array $pivot = []): void
+    {
+        $payload = [
+            'team_id' => $team->id,
+            'user_id' => $user->id,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ];
+
+        if (isset($pivot['role'])) {
+            $payload['role'] = $pivot['role'];
+        }
+
+        if ($this->userTableHasColumn('team_user', 'permissions') && array_key_exists('permissions', $pivot)) {
+            $permissions = $pivot['permissions'];
+            $payload['permissions'] = is_array($permissions) ? json_encode($permissions) : $permissions;
+        }
+
+        if ($this->userTableHasColumn('team_user', 'joined_at') && array_key_exists('joined_at', $pivot)) {
+            $payload['joined_at'] = $pivot['joined_at'];
+        }
+
+        DB::connection('user')->table('team_user')->insert($payload);
+    }
+
+    public function detachTeamMember(Team $team, User $user): void
+    {
+        DB::connection('user')->table('team_user')
+            ->where('team_id', $team->id)
+            ->where('user_id', $user->id)
+            ->delete();
+    }
+
+    public function teamMemberExists(Team $team, User $user): bool
+    {
+        return DB::connection('user')->table('team_user')
+            ->where('team_id', $team->id)
+            ->where('user_id', $user->id)
+            ->exists();
+    }
+
+    /**
+     * @param  array<string, mixed>  $data
+     */
+    public function assertDatabaseHasRow(string $table, array $data, ?string $connection = 'user'): void
+    {
+        $this->assertDatabaseHas($table, $data, $connection);
+    }
+
+    /**
+     * @param  array<string, mixed>  $data
+     */
+    public function assertDatabaseMissingRow(string $table, array $data, ?string $connection = 'user'): void
+    {
+        $query = DB::connection($connection)->table($table);
+
+        foreach ($data as $column => $value) {
+            $query->where((string) $column, $value);
+        }
+
+        Assert::assertFalse($query->exists());
+    }
+
+    public function requireFreshUser(User $user): User
+    {
+        $fresh = $user->fresh();
+        Assert::assertNotNull($fresh);
+
+        return $fresh;
+    }
+
+    /**
+     * @return array<int, Component|\Filament\Actions\Action|\Filament\Actions\ActionGroup>
+     */
+    public function filamentSectionChildComponents(Section $section): array
+    {
+        return array_values($section->getChildComponents());
+    }
+
+    public function teamUsesSoftDeletes(): bool
+    {
+        /** @var array<class-string, class-string> $traits */
+        $traits = \class_uses_recursive(Team::class);
+
+        return in_array(
+            \Illuminate\Database\Eloquent\SoftDeletes::class,
+            $traits,
+            true
+        );
+    }
+
+    /**
+     * @param  array<string, mixed>  $attributes
+     */
+    public function createTeamInvitationRecord(Team $team, array $attributes = []): TeamInvitation
+    {
+        $payload = array_merge([
+            'uuid' => (string) Str::uuid(),
+            'team_id' => (string) $team->id,
+            'email' => 'invite-'.uniqid().'@example.com',
+            'role' => 'member',
+        ], $attributes);
+
+        $invitation = new TeamInvitation();
+        $invitation->forceFill($payload);
+        $invitation->save();
+
+        return $invitation->fresh() ?? $invitation;
+    }
 }

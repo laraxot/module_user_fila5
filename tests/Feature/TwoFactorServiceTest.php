@@ -2,200 +2,406 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Feature;
-
+uses(\Modules\User\Tests\TestCase::class);
+use function Safe\json_decode;
+use function Safe\json_encode;
+use PHPUnit\Framework\Assert;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Str;
 use Modules\User\Models\User;
-use Modules\User\Services\TwoFactorService;
-use Modules\User\Tests\TestCase;
 use PragmaRX\Google2FA\Google2FA;
 
-uses(TestCase::class);
+/**
+ * Persistence-layer tests for two-factor columns on users.
+ * TwoFactorService was removed; site uses Fortify-style column contract.
+ *
+ * @return array{secret: string, recovery_codes: list<string>, qr_code: string}
+ */
+function enableTwoFactorForUser(User $user, Google2FA $google2fa): array
+{
+    $secret = $google2fa->generateSecretKey();
+    $recoveryCodes = generateTwoFactorRecoveryCodes();
 
-beforeEach(function (): void {
-    $this->service = new TwoFactorService();
-    $this->user = User::factory()->create();
+    $user->forceFill([
+        'two_factor_secret' => encrypt($secret),
+        'two_factor_recovery_codes' => encrypt(json_encode($recoveryCodes)),
+        'two_factor_confirmed_at' => null,
+    ])->save();
+
+    $issuer = rawurlencode((string) config('app.name', 'Fixcity'));
+    $email = rawurlencode($user->email);
+    $qrCode = "otpauth://totp/{$issuer}:{$email}?secret={$secret}&issuer={$issuer}";
+
+    return [
+        'secret' => $secret,
+        'recovery_codes' => $recoveryCodes,
+        'qr_code' => $qrCode,
+    ];
+}
+
+/** @return list<string> */
+function generateTwoFactorRecoveryCodes(int $count = 10): array
+{
+    return array_map(
+        static fn (): string => Str::random(10).'-'.Str::random(10),
+        range(1, $count)
+    );
+}
+
+/** @return list<string> */
+function readStoredRecoveryCodes(User $user): array
+{
+    $fresh = $user->fresh();
+    if ($fresh === null) {
+        return [];
+    }
+
+    $encrypted = $fresh->two_factor_recovery_codes;
+
+    if (null === $encrypted) {
+        return [];
+    }
+
+    $decoded = json_decode((string) decrypt($encrypted), true);
+    Assert::assertIsArray($decoded);
+                                /** @var list<string> $codes */
+    $codes = array_values(array_filter($decoded, static fn (mixed $item): bool => is_string($item)));
+
+    return $codes;
+}
+
+function confirmTwoFactorForUser(User $user, Google2FA $google2fa, string $secret, string $code): bool
+{
+    if (! $google2fa->verifyKey($secret, $code)) {
+        return false;
+    }
+
+    $user->forceFill(['two_factor_confirmed_at' => now()])->save();
+
+    return true;
+}
+
+function verifyTwoFactorCode(User $user, Google2FA $google2fa, string $code): bool
+{
+    $fresh = $user->fresh();
+    if ($fresh === null) {
+        return false;
+    }
+
+    $encrypted = $fresh->two_factor_secret;
+
+    if (null === $encrypted) {
+        return false;
+    }
+
+    return (bool) $google2fa->verifyKey((string) decrypt($encrypted), $code);
+}
+
+function verifyTwoFactorRecoveryCode(User $user, string $code): bool
+{
+    $codes = readStoredRecoveryCodes($user);
+
+    if (! in_array($code, $codes, true)) {
+        return false;
+    }
+
+    $remaining = array_values(array_filter($codes, static fn (string $item): bool => $item !== $code));
+
+    $user->forceFill([
+        'two_factor_recovery_codes' => encrypt(json_encode($remaining)),
+    ])->save();
+
+    return true;
+}
+
+function disableTwoFactorForUser(User $user): void
+{
+    $user->forceFill([
+        'two_factor_secret' => null,
+        'two_factor_recovery_codes' => null,
+        'two_factor_confirmed_at' => null,
+    ])->save();
+}
+
+/** @return list<string> */
+function regenerateTwoFactorRecoveryCodes(User $user): array
+{
+    $codes = generateTwoFactorRecoveryCodes();
+    $user->forceFill([
+        'two_factor_recovery_codes' => encrypt(json_encode($codes)),
+    ])->save();
+
+    return $codes;
+}
+
+beforeEach(function () {
+    /** @var \Modules\User\Tests\TestCase $this */
+    $this->skipUnlessUserColumn('users', 'two_factor_secret');
+    $this->skipUnlessUserColumn('users', 'two_factor_recovery_codes');
+    $this->skipUnlessUserColumn('users', 'two_factor_confirmed_at');
+
+    $this->user = createTestUser();
     $this->google2fa = new Google2FA();
 });
 
 test('enable generates secret and qr code', function (): void {
-    $result = $this->service->enable($this->user);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $result = enableTwoFactorForUser($user, $google2fa);
 
-    expect($result)->toHaveKeys(['secret', 'qr_code', 'recovery_codes']);
-    expect($result['secret'])->toBeString();
-    expect($result['qr_code'])->toBeString();
-    expect($result['recovery_codes'])->toHaveCount(10);
+    Assert::assertIsString($result['secret']);
+    Assert::assertIsString($result['qr_code']);
+    Assert::assertCount(10, $result['recovery_codes']);
 });
 
 test('enable stores encrypted secret', function (): void {
-    $this->service->enable($this->user);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    enableTwoFactorForUser($user, $google2fa);
 
-    expect($this->user->fresh()->two_factor_secret)->not->toBeNull();
-    expect($this->user->fresh()->two_factor_enabled)->toBeFalse();
+    $fresh = $user->fresh();
+    Assert::assertNotNull($fresh);
+    Assert::assertNotNull($fresh->two_factor_secret);
+    $fresh = $user->fresh();
+    Assert::assertNotNull($fresh);
+    Assert::assertNull($fresh->two_factor_confirmed_at);
 });
 
 test('enable generates 10 recovery codes', function (): void {
-    $result = $this->service->enable($this->user);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $result = enableTwoFactorForUser($user, $google2fa);
 
-    expect($result['recovery_codes'])->toHaveCount(10);
-
+    Assert::assertCount(10, $result['recovery_codes']);
     foreach ($result['recovery_codes'] as $code) {
-        expect($code)->toMatch('/^[a-zA-Z0-9]+-[a-zA-Z0-9]+$/');
+        Assert::assertMatchesRegularExpression('/^[a-zA-Z0-9]+-[a-zA-Z0-9]+$/', (string) $code);
     }
 });
 
 test('confirm enables 2fa with valid code', function (): void {
-    $result = $this->service->enable($this->user);
-    $validCode = $this->google2fa->getCurrentOtp($result['secret']);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $result = enableTwoFactorForUser($user, $google2fa);
+    $validCode = $google2fa->getCurrentOtp($result['secret']);
 
-    $confirmed = $this->service->confirm($this->user, $validCode);
+    $confirmed = confirmTwoFactorForUser($user, $google2fa, $result['secret'], $validCode);
 
-    expect($confirmed)->toBeTrue();
-    expect($this->user->fresh()->two_factor_enabled)->toBeTrue();
-    expect($this->user->fresh()->two_factor_confirmed_at)->not->toBeNull();
+    Assert::assertTrue($confirmed);
+    $fresh = $user->fresh();
+    Assert::assertNotNull($fresh);
+    Assert::assertNotNull($fresh->two_factor_confirmed_at);
 });
 
 test('confirm fails with invalid code', function (): void {
-    $this->service->enable($this->user);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $result = enableTwoFactorForUser($user, $google2fa);
 
-    $confirmed = $this->service->confirm($this->user, '000000');
+    $confirmed = confirmTwoFactorForUser($user, $google2fa, $result['secret'], '000000');
 
-    expect($confirmed)->toBeFalse();
-    expect($this->user->fresh()->two_factor_enabled)->toBeFalse();
+    Assert::assertFalse($confirmed);
+    $fresh = $user->fresh();
+    Assert::assertNotNull($fresh);
+    Assert::assertNull($fresh->two_factor_confirmed_at);
 });
 
 test('disable removes all 2fa data', function (): void {
-    $this->service->enable($this->user);
-    $this->user->update(['two_factor_enabled' => true]);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $result = enableTwoFactorForUser($user, $google2fa);
+    confirmTwoFactorForUser(
+        $user,
+        $google2fa,
+        $result['secret'],
+        $google2fa->getCurrentOtp($result['secret'])
+    );
 
-    $this->service->disable($this->user);
+    disableTwoFactorForUser($user);
 
-    $fresh = $this->user->fresh();
-    expect($fresh->two_factor_secret)->toBeNull();
-    expect($fresh->two_factor_recovery_codes)->toBeNull();
-    expect($fresh->two_factor_confirmed_at)->toBeNull();
-    expect($fresh->two_factor_enabled)->toBeFalse();
+    $fresh = $user->fresh();
+    Assert::assertNotNull($fresh);
+    Assert::assertNull($fresh->two_factor_secret);
+    Assert::assertNull($fresh->two_factor_recovery_codes);
+    Assert::assertNull($fresh->two_factor_confirmed_at);
 });
 
 test('verify validates correct code', function (): void {
-    $result = $this->service->enable($this->user);
-    $validCode = $this->google2fa->getCurrentOtp($result['secret']);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $result = enableTwoFactorForUser($user, $google2fa);
+    $validCode = $google2fa->getCurrentOtp($result['secret']);
 
-    $verified = $this->service->verify($this->user, $validCode);
+    $verified = verifyTwoFactorCode($user, $google2fa, $validCode);
 
-    expect($verified)->toBeTrue();
+    Assert::assertTrue($verified);
 });
 
 test('verify rejects incorrect code', function (): void {
-    $this->service->enable($this->user);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    enableTwoFactorForUser($user, $google2fa);
 
-    $verified = $this->service->verify($this->user, '000000');
+    $verified = verifyTwoFactorCode($user, $google2fa, '000000');
 
-    expect($verified)->toBeFalse();
+    Assert::assertFalse($verified);
 });
 
 test('verify returns false if no secret', function (): void {
-    $verified = $this->service->verify($this->user, '123456');
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $verified = verifyTwoFactorCode($user, $google2fa, '123456');
 
-    expect($verified)->toBeFalse();
+    Assert::assertFalse($verified);
 });
 
 test('verify recovery code works once', function (): void {
-    $result = $this->service->enable($this->user);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $result = enableTwoFactorForUser($user, $google2fa);
     $recoveryCode = $result['recovery_codes'][0];
 
-    $verified = $this->service->verifyRecoveryCode($this->user, $recoveryCode);
+    $verified = verifyTwoFactorRecoveryCode($user, $recoveryCode);
 
-    expect($verified)->toBeTrue();
-    expect($this->user->fresh()->getRecoveryCodes())->toHaveCount(9);
+    Assert::assertTrue($verified);
+    $freshUser = $user->fresh();
+    Assert::assertNotNull($freshUser);
+    Assert::assertCount(9, readStoredRecoveryCodes($freshUser));
 });
 
 test('verify recovery code fails if already used', function (): void {
-    $result = $this->service->enable($this->user);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $result = enableTwoFactorForUser($user, $google2fa);
     $recoveryCode = $result['recovery_codes'][0];
 
-    // Use it once
-    $this->service->verifyRecoveryCode($this->user, $recoveryCode);
+    verifyTwoFactorRecoveryCode($user, $recoveryCode);
 
-    // Try again
-    $verified = $this->service->verifyRecoveryCode($this->user, $recoveryCode);
+    $verified = verifyTwoFactorRecoveryCode($user, $recoveryCode);
 
-    expect($verified)->toBeFalse();
+    Assert::assertFalse($verified);
 });
 
 test('verify recovery code fails with invalid code', function (): void {
-    $this->service->enable($this->user);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    enableTwoFactorForUser($user, $google2fa);
 
-    $verified = $this->service->verifyRecoveryCode($this->user, 'invalid-code');
+    $verified = verifyTwoFactorRecoveryCode($user, 'invalid-code');
 
-    expect($verified)->toBeFalse();
+    Assert::assertFalse($verified);
 });
 
 test('regenerate recovery codes creates new set', function (): void {
-    $result = $this->service->enable($this->user);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $result = enableTwoFactorForUser($user, $google2fa);
     $oldCodes = $result['recovery_codes'];
 
-    $newCodes = $this->service->regenerateRecoveryCodes($this->user);
+    $newCodes = regenerateTwoFactorRecoveryCodes($user);
 
-    expect($newCodes)->toHaveCount(10);
-    expect($newCodes)->not->toBe($oldCodes);
+    Assert::assertCount(10, $newCodes);
+    Assert::assertNotSame($oldCodes, $newCodes);
 });
 
 test('regenerate recovery codes invalidates old ones', function (): void {
-    $result = $this->service->enable($this->user);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $result = enableTwoFactorForUser($user, $google2fa);
     $oldCode = $result['recovery_codes'][0];
 
-    $this->service->regenerateRecoveryCodes($this->user);
+    regenerateTwoFactorRecoveryCodes($user);
 
-    $verified = $this->service->verifyRecoveryCode($this->user, $oldCode);
+    $verified = verifyTwoFactorRecoveryCode($user, $oldCode);
 
-    expect($verified)->toBeFalse();
+    Assert::assertFalse($verified);
 });
 
 test('qr code contains user email', function (): void {
-    $result = $this->service->enable($this->user);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $result = enableTwoFactorForUser($user, $google2fa);
 
-    expect($result['qr_code'])->toContain($this->user->email);
+    Assert::assertStringContainsString((string) rawurlencode($user->email), (string) $result['qr_code']);
 });
 
-test('qr code is valid svg', function (): void {
-    $result = $this->service->enable($this->user);
+test('qr code is valid otpauth url', function (): void {
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $result = enableTwoFactorForUser($user, $google2fa);
 
-    expect($result['qr_code'])->toContain('<svg');
-    expect($result['qr_code'])->toContain('</svg>');
+    Assert::assertStringStartsWith('otpauth://totp/', (string) $result['qr_code']);
+    Assert::assertStringContainsString((string) 'secret=', (string) $result['qr_code']);
 });
 
 test('secret is properly encrypted in database', function (): void {
-    $result = $this->service->enable($this->user);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $result = enableTwoFactorForUser($user, $google2fa);
 
-    $encrypted = $this->user->fresh()->two_factor_secret;
+    $freshUser = $user->fresh();
+    Assert::assertNotNull($freshUser);
+    $encrypted = $freshUser->two_factor_secret;
 
-    expect($encrypted)->not->toBe($result['secret']);
-    expect(decrypt($encrypted))->toBe($result['secret']);
+    Assert::assertNotNull($encrypted);
+    Assert::assertIsString($encrypted);
+    Assert::assertNotSame($result['secret'], $encrypted);
+    Assert::assertSame($result['secret'], decrypt($encrypted));
 });
 
 test('recovery codes are properly encrypted in database', function (): void {
-    $result = $this->service->enable($this->user);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $result = enableTwoFactorForUser($user, $google2fa);
 
-    $encrypted = $this->user->fresh()->two_factor_recovery_codes;
+    $freshUser = $user->fresh();
+    Assert::assertNotNull($freshUser);
+    $encrypted = $freshUser->two_factor_recovery_codes;
 
-    expect($encrypted)->not->toBeNull();
-    expect(json_decode(decrypt($encrypted), true))->toBe($result['recovery_codes']);
+    Assert::assertNotNull($encrypted);
+    Assert::assertSame($result['recovery_codes'], json_decode((string) decrypt($encrypted), true));
 });
 
 test('enable can be called multiple times', function (): void {
-    $result1 = $this->service->enable($this->user);
-    $result2 = $this->service->enable($this->user);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $result1 = enableTwoFactorForUser($user, $google2fa);
+    $result2 = enableTwoFactorForUser($user, $google2fa);
 
-    expect($result1['secret'])->not->toBe($result2['secret']);
+    Assert::assertNotSame($result2['secret'], $result1['secret']);
 });
 
 test('confirm sets confirmed_at timestamp', function (): void {
-    $result = $this->service->enable($this->user);
-    $validCode = $this->google2fa->getCurrentOtp($result['secret']);
+    /** @var \Modules\User\Tests\TestCase $this */
+$google2fa = $this->requireGoogle2fa();
+$user = $this->requireUser();
+    $result = enableTwoFactorForUser($user, $google2fa);
+    $validCode = $google2fa->getCurrentOtp($result['secret']);
 
-    $this->service->confirm($this->user, $validCode);
+    confirmTwoFactorForUser($user, $google2fa, $result['secret'], $validCode);
 
-    expect($this->user->fresh()->two_factor_confirmed_at)->not->toBeNull();
-    expect($this->user->fresh()->two_factor_confirmed_at)->toBeInstanceOf(Carbon::class);
+    $freshUser = $user->fresh();
+    Assert::assertNotNull($freshUser);
+    $confirmedAt = $freshUser->two_factor_confirmed_at;
+
+    Assert::assertNotNull($confirmedAt);
+    Assert::assertInstanceOf(Carbon::class, Carbon::parse((string) $confirmedAt));
 });

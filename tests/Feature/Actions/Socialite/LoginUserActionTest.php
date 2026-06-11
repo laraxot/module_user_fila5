@@ -2,23 +2,24 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Feature\Actions\Socialite;
-
+uses(\Modules\User\Tests\TestCase::class);
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Event;
+use InvalidArgumentException;
+use LogicException;
 use Modules\User\Actions\Socialite\LoginUserAction;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
-use Modules\User\Models\User;
-use Modules\User\Tests\TestCase;
-
-uses(TestCase::class);
+use PHPUnit\Framework\Assert;
+use stdClass;
 
 describe('LoginUserAction', function (): void {
     test('authenticates connected socialite user and dispatches event', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
         Event::fake([SocialiteUserConnected::class]);
 
-        $user = User::factory()->create();
+        $user = UserFactory::new()->createOne();
 
         $socialiteUser = new SocialiteUser([
             'provider' => 'test-provider',
@@ -29,13 +30,14 @@ describe('LoginUserAction', function (): void {
 
         $response = app(LoginUserAction::class)->execute($socialiteUser);
 
-        expect($response)->toBeInstanceOf(RedirectResponse::class);
+        Assert::assertInstanceOf(RedirectResponse::class, $response);
         $this->assertAuthenticatedAs($user);
 
         Event::assertDispatched(SocialiteUserConnected::class);
     });
 
     test('throws when related user is not authenticatable', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
         $socialiteUser = new SocialiteUser([
             'provider' => 'test-provider',
             'provider_id' => 'provider-id-2',
@@ -44,11 +46,17 @@ describe('LoginUserAction', function (): void {
 
         $socialiteUser->setRelation('user', new stdClass());
 
-        app(LoginUserAction::class)->execute($socialiteUser);
-    })->throws(LogicException::class, 'User instance must implement Authenticatable.');
+        try {
+            app(LoginUserAction::class)->execute($socialiteUser);
+            Assert::fail('Expected LogicException was not thrown');
+        } catch (LogicException $exception) {
+            Assert::assertSame('User instance must implement Authenticatable.', $exception->getMessage());
+        }
+    });
 
     test('redirects to intended page when available', function (): void {
-        $user = User::factory()->create();
+        /** @var \Modules\User\Tests\TestCase $this */
+        $user = UserFactory::new()->createOne();
 
         $socialiteUser = new SocialiteUser([
             'provider' => 'google',
@@ -59,14 +67,15 @@ describe('LoginUserAction', function (): void {
 
         $response = app(LoginUserAction::class)->execute($socialiteUser);
 
-        expect($response)->toBeInstanceOf(RedirectResponse::class);
+        Assert::assertInstanceOf(RedirectResponse::class, $response);
         $this->assertAuthenticatedAs($user);
     });
 
     test('dispatches event with correct socialite user instance', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
         Event::fake();
 
-        $user = User::factory()->create();
+        $user = UserFactory::new()->createOne();
 
         $socialiteUser = new SocialiteUser([
             'provider' => 'github',
@@ -84,8 +93,9 @@ describe('LoginUserAction', function (): void {
     });
 
     test('authenticates different users independently', function (): void {
-        $user1 = User::factory()->create(['email' => 'user1@example.com']);
-        $user2 = User::factory()->create(['email' => 'user2@example.com']);
+        /** @var \Modules\User\Tests\TestCase $this */
+        $user1 = UserFactory::new()->createOne(['email' => 'user1-'.uniqid().'@example.com']);
+        $user2 = UserFactory::new()->createOne(['email' => 'user2-'.uniqid().'@example.com']);
 
         $socialiteUser1 = new SocialiteUser([
             'provider' => 'google',
@@ -109,7 +119,8 @@ describe('LoginUserAction', function (): void {
     });
 
     test('returns redirect response instance', function (): void {
-        $user = User::factory()->create();
+        /** @var \Modules\User\Tests\TestCase $this */
+        $user = UserFactory::new()->createOne();
 
         $socialiteUser = new SocialiteUser([
             'provider' => 'test',
@@ -120,10 +131,11 @@ describe('LoginUserAction', function (): void {
 
         $response = app(LoginUserAction::class)->execute($socialiteUser);
 
-        expect($response)->toBeInstanceOf(RedirectResponse::class);
+        Assert::assertInstanceOf(RedirectResponse::class, $response);
     });
 
     test('handles null user assertion gracefully', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
         $socialiteUser = new SocialiteUser([
             'provider' => 'test',
             'provider_id' => 'test-null',
@@ -131,11 +143,17 @@ describe('LoginUserAction', function (): void {
         ]);
         $socialiteUser->setRelation('user', null);
 
-        app(LoginUserAction::class)->execute($socialiteUser);
-    })->throws(InvalidArgumentException::class);
+        try {
+            app(LoginUserAction::class)->execute($socialiteUser);
+            Assert::fail('Expected InvalidArgumentException was not thrown');
+        } catch (InvalidArgumentException $exception) {
+            Assert::assertInstanceOf(InvalidArgumentException::class, $exception);
+        }
+    });
 
     test('preserves user attributes after login', function (): void {
-        $user = User::factory()->create([
+        /** @var \Modules\User\Tests\TestCase $this */
+        $user = UserFactory::new()->createOne([
             'email' => 'preserve-'.uniqid().'@example.com',
             'name' => 'John Doe',
             'is_active' => true,
@@ -151,8 +169,9 @@ describe('LoginUserAction', function (): void {
         app(LoginUserAction::class)->execute($socialiteUser);
 
         $authenticatedUser = auth()->user();
-        expect($authenticatedUser->email)->toBe($user->email);
-        expect($authenticatedUser->name)->toBe($user->name);
-        expect($authenticatedUser->is_active)->toBeTrue();
+        Assert::assertNotNull($authenticatedUser);
+        Assert::assertSame($user->email, $authenticatedUser->email);
+        Assert::assertSame($user->name, $authenticatedUser->name);
+        Assert::assertTrue($authenticatedUser->is_active);
     });
 });

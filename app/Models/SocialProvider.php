@@ -15,8 +15,8 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * @property int|null             $id
  * @property string|null          $name
- * @property array|null           $scopes
- * @property array|null           $parameters
+ * @property array<int, string>|null $scopes
+ * @property array<string, mixed>|null $parameters
  * @property bool|null            $stateless
  * @property bool|null            $active
  * @property bool|null            $socialite
@@ -50,7 +50,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|SocialProvider whereUpdatedAt($value)
  * @method static Builder|SocialProvider whereUpdatedBy($value)
  *
- * @mixin IdeHelperSocialProvider
  *
  * @property ProfileContract|null $deleter
  *
@@ -114,9 +113,15 @@ class SocialProvider extends BaseModel
         'updated_by' => 'string',
     ];
 
+    /**
+     * @return array<int, array<string, mixed>>
+     */
     public function getRows(): array
     {
-        return $this->getSushiRows();
+        /** @var array<int, array<string, mixed>> $rows */
+        $rows = $this->getSushiRows();
+
+        return $rows;
     }
 
     /** @return array<string, string> */

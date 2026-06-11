@@ -20,7 +20,7 @@ trait IsTenant
     /**
      * Get all users associated with this tenant.
      *
-     * @return BelongsToMany<Model&UserContract, static>
+     * @return BelongsToMany<Model&UserContract, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
      */
     public function users(): BelongsToMany
     {

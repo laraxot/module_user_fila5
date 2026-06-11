@@ -2,106 +2,133 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Unit\Actions\Socialite;
-
+uses(\Modules\User\Tests\TestCase::class);
 use Illuminate\Contracts\Events\Dispatcher;
+use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Laravel\Socialite\Facades\Socialite;
 use Laravel\Socialite\Two\InvalidStateException;
+use Mockery;
+use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\CreateSocialiteUserAction;
 use Modules\User\Actions\Socialite\GetUserModelAttributesFromSocialiteAction;
 use Modules\User\Actions\Socialite\RetrieveOauthUserAction;
 use Modules\User\Datas\SocialiteUserAttributesData;
 use Modules\User\Events\InvalidState;
 use Modules\User\Models\SocialiteUser;
-use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
-
-uses(TestCase::class);
+use PHPUnit\Framework\Assert;
+use RuntimeException;
 
 describe('Socialite core actions coverage', function (): void {
     it('builds user attributes from oauth user', function (): void {
-        $oauthUser = Mockery::mock(SocialiteUserContract::class);
-        $oauthUser->shouldReceive('getName')->andReturn('Mario Rossi');
-        $oauthUser->shouldReceive('getEmail')->andReturn('mario.rossi@example.com');
+        $oauthUser = configureMock(SocialiteUserContract::class, function (MockInterface $mock): void {
+            $mock->allows(['getName' => 'Mario Rossi']);
+            $mock->allows(['getEmail' => 'mario.rossi@example.com']);
+        });
 
         $data = app(GetUserModelAttributesFromSocialiteAction::class)->execute('github', $oauthUser);
 
-        expect($data)->toBeInstanceOf(SocialiteUserAttributesData::class)
-            ->and($data->provider)->toBe('github')
-            ->and($data->email)->toBe('mario.rossi@example.com')
-            ->and($data->firstName)->toBe('Mario')
-            ->and($data->lastName)->toBe('Rossi');
+        Assert::assertInstanceOf(SocialiteUserAttributesData::class, $data);
+        Assert::assertSame('github', $data->provider);
+        Assert::assertSame('mario.rossi@example.com', $data->email);
+        Assert::assertSame('Mario', $data->firstName);
+        Assert::assertSame('Rossi', $data->lastName);
     });
 
     it('throws when provider is empty while building attributes', function (): void {
-        $oauthUser = Mockery::mock(SocialiteUserContract::class);
-        $oauthUser->shouldReceive('getName')->andReturn('Mario Rossi');
-        $oauthUser->shouldReceive('getEmail')->andReturn('mario.rossi@example.com');
+        $oauthUser = configureMock(SocialiteUserContract::class, function (MockInterface $mock): void {
+            $mock->allows(['getName' => 'Mario Rossi']);
+            $mock->allows(['getEmail' => 'mario.rossi@example.com']);
+        });
 
-        app(GetUserModelAttributesFromSocialiteAction::class)->execute('', $oauthUser);
-    })->throws(InvalidArgumentException::class, 'provider non può essere vuoto');
+        try {
+            app(GetUserModelAttributesFromSocialiteAction::class)->execute('', $oauthUser);
+            Assert::fail('Expected InvalidArgumentException was not thrown');
+        } catch (InvalidArgumentException $exception) {
+            Assert::assertSame('provider non può essere vuoto', $exception->getMessage());
+        }
+    });
 
     it('throws when oauth email is invalid while building attributes', function (): void {
-        $oauthUser = Mockery::mock(SocialiteUserContract::class);
-        $oauthUser->shouldReceive('getName')->andReturn('Mario Rossi');
-        $oauthUser->shouldReceive('getEmail')->andReturn(null);
+        $oauthUser = configureMock(SocialiteUserContract::class, function (MockInterface $mock): void {
+            $mock->allows(['getName' => 'Mario Rossi']);
+            $mock->allows(['getEmail' => null]);
+        });
 
-        app(GetUserModelAttributesFromSocialiteAction::class)->execute('github', $oauthUser);
-    })->throws(RuntimeException::class, 'email deve essere una stringa non vuota');
+        try {
+            app(GetUserModelAttributesFromSocialiteAction::class)->execute('github', $oauthUser);
+            Assert::fail('Expected RuntimeException was not thrown');
+        } catch (RuntimeException $exception) {
+            Assert::assertSame('email deve essere una stringa non vuota', $exception->getMessage());
+        }
+    });
 
     it('retrieves oauth user from socialite driver', function (): void {
-        $oauthUser = Mockery::mock(SocialiteUserContract::class);
+        $oauthUser = configureMock(SocialiteUserContract::class, function (MockInterface $mock): void {
+            $mock->allows(['getEmail' => 'user@example.com']);
+        });
+
+        /** @var \Mockery\MockInterface $driver */
         $driver = Mockery::mock();
-        $driver->shouldReceive('user')->once()->andReturn($oauthUser);
+        $driver->allows(['user' => $oauthUser]);
 
-        Socialite::shouldReceive('driver')->once()->with('github')->andReturn($driver);
+        Socialite::shouldReceive('driver')->with('github')->andReturn($driver);
 
-        $dispatcher = Mockery::mock(Dispatcher::class);
-        $dispatcher->shouldNotReceive('dispatch');
+        $dispatcher = configureMock(Dispatcher::class, function (MockInterface $mock): void {
+            $mock->allows(['dispatch' => null]);
+        });
 
         $result = (new RetrieveOauthUserAction($dispatcher))->execute('github');
 
-        expect($result)->toBe($oauthUser);
+        Assert::assertSame($oauthUser, $result);
     });
 
     it('returns null and dispatches invalid state event when socialite state is invalid', function (): void {
         $exception = new InvalidStateException();
 
+        /** @var \Mockery\MockInterface $driver */
         $driver = Mockery::mock();
-        $driver->shouldReceive('user')->once()->andThrow($exception);
+        $driver->allows(['user' => fn (): never => throw $exception]);
 
-        Socialite::shouldReceive('driver')->once()->with('github')->andReturn($driver);
+        Socialite::shouldReceive('driver')->with('github')->andReturn($driver);
 
-        $dispatcher = Mockery::mock(Dispatcher::class);
-        $dispatcher->shouldReceive('dispatch')
-            ->once()
-            ->with(Mockery::on(fn (mixed $event): bool => $event instanceof InvalidState && $event->exception === $exception));
+        $dispatcher = configureMock(Dispatcher::class, function (MockInterface $mock) use ($exception): void {
+            $mock->allows([
+                'dispatch' => function (mixed $event) use ($exception): void {
+                    Assert::assertInstanceOf(InvalidState::class, $event);
+                    Assert::assertSame($exception, $event->exception);
+                },
+            ]);
+        });
 
         $result = (new RetrieveOauthUserAction($dispatcher))->execute('github');
 
-        expect($result)->toBeNull();
+        Assert::assertNull($result);
     });
 
     it('creates socialite user model with normalized attributes', function (): void {
-        $oauthUser = Mockery::mock(SocialiteUserContract::class);
-        $oauthUser->shouldReceive('getId')->once()->andReturn('provider-user-1');
-        $oauthUser->shouldReceive('getName')->once()->andReturn('Mario Rossi');
-        $oauthUser->shouldReceive('getEmail')->once()->andReturn('mario.rossi@example.com');
-        $oauthUser->shouldReceive('getAvatar')->once()->andReturn('https://example.com/avatar.jpg');
+        $oauthUser = configureMock(SocialiteUserContract::class, function (MockInterface $mock): void {
+            $mock->allows([
+                'getId' => 'provider-user-1',
+                'getName' => 'Mario Rossi',
+                'getEmail' => 'mario.rossi@example.com',
+                'getAvatar' => 'https://example.com/avatar.jpg',
+            ]);
+        });
 
-        $user = Mockery::mock(UserContract::class);
-        $user->shouldReceive('getKey')->once()->andReturn('user-1');
+        $user = configureMock(UserContract::class, function (MockInterface $mock): void {
+            $mock->allows(['getKey' => 'user-1']);
+        });
 
         $created = new SocialiteUser();
 
-        $socialiteUserModel = Mockery::mock(SocialiteUser::class);
-        $socialiteUserModel->shouldReceive('create')
-            ->once()
-            ->andReturn($created);
+        $socialiteUserModel = configureMock(SocialiteUser::class, function (MockInterface $mock) use ($created): void {
+            $mock->allows(['create' => $created]);
+        });
 
         $result = (new CreateSocialiteUserAction($socialiteUserModel))->execute('github', $oauthUser, $user);
 
-        expect($result)->toBe($created);
+        Assert::assertSame($created, $result);
     });
 });

@@ -2,14 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Feature\Passport;
-
+uses(\Modules\User\Tests\TestCase::class);
+use PHPUnit\Framework\Assert;
+use Modules\User\Database\Factories\UserFactory;
 use Laravel\Passport\Client;
 use Laravel\Passport\ClientRepository;
 use Modules\User\Models\User;
-use Modules\User\Tests\TestCase;
-
-uses(TestCase::class);
 
 /**
  * @return array{client: Client, secret: string}
@@ -20,10 +18,13 @@ function createPassportClient(): array
 
     $client = $repository->createClientCredentialsGrantClient('Flow Test Client');
 
-    return ['client' => $client, 'secret' => $client->plainSecret ?? $client->secret];
+    $secret = $client->plainSecret ?? (string) $client->getAttribute('secret');
+
+    return ['client' => $client, 'secret' => $secret];
 }
 
 test('client credentials grant returns token', function (): void {
+    /** @var \Modules\User\Tests\TestCase $this */
     ['client' => $client, 'secret' => $secret] = createPassportClient();
 
     $response = $this->post('/oauth/token', [
@@ -39,8 +40,9 @@ test('client credentials grant returns token', function (): void {
 });
 
 test('client credentials can be associated to a specific user', function (): void {
+    /** @var \Modules\User\Tests\TestCase $this */
     ['client' => $client] = createPassportClient();
-    $user = User::factory()->create();
+    $user = UserFactory::new()->createOne();
 
     $client->owner()->associate($user);
     $client->forceFill([
@@ -51,7 +53,7 @@ test('client credentials can be associated to a specific user', function (): voi
     $client->save();
     $client->refresh();
 
-    expect($client->owner)->not->toBeNull()
-        ->and($client->owner->is($user))->toBeTrue()
-        ->and($client->user_id)->toBe($user->getKey());
+    Assert::assertNotNull($client->owner);
+    Assert::assertTrue($client->owner->is($user));
+    Assert::assertSame($user->getKey(), $client->getAttribute('user_id'));
 });
