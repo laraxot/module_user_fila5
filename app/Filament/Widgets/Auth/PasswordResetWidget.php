@@ -25,11 +25,11 @@ class PasswordResetWidget extends XotBaseSchemaWidget
     public bool $emailSent = false;
 
     /**
-     * @return class-string<Schemas\UserForm>
+     * @return class-string<UserForm>
      */
     protected static function formClass(): string
     {
-        return Schemas\UserForm::class;
+        return UserForm::class;
     }
 
     protected static function schemaMethod(): string

@@ -2,20 +2,19 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use Modules\User\Database\Factories\TenantFactory;
-use Modules\User\Database\Factories\UserFactory;
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Filament\Facades\Filament;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Foundation\Console\Kernel;
 use Illuminate\Support\Facades\Artisan;
+use Modules\User\Database\Factories\TenantFactory;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
 use RuntimeException;
 
 describe('TenantScope Console Context Behavior', function (): void {
     beforeEach(function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         $this->skipUnlessUsersTableReady();
         $this->tenant1 = TenantFactory::new()->createOne(['name' => 'Tenant 1 '.uniqid()]);
         $this->tenant2 = TenantFactory::new()->createOne(['name' => 'Tenant 2 '.uniqid()]);
@@ -23,10 +22,10 @@ describe('TenantScope Console Context Behavior', function (): void {
 
     describe('User Creation in Console Context', function (): void {
         it('allows user creation without tenant in console context', function (): void {
-            /** @var \Modules\User\Tests\TestCase $this */
-            app()->bind(\Illuminate\Contracts\Console\Kernel::class, static function (\Illuminate\Contracts\Foundation\Application $app): \Illuminate\Contracts\Console\Kernel {
-                $kernel = $app->make(\Illuminate\Contracts\Console\Kernel::class);
-                Assert::assertInstanceOf(\Illuminate\Contracts\Console\Kernel::class, $kernel);
+            /* @var \Modules\User\Tests\TestCase $this */
+            app()->bind(Illuminate\Contracts\Console\Kernel::class, static function (Illuminate\Contracts\Foundation\Application $app): Illuminate\Contracts\Console\Kernel {
+                $kernel = $app->make(Illuminate\Contracts\Console\Kernel::class);
+                Assert::assertInstanceOf(Illuminate\Contracts\Console\Kernel::class, $kernel);
 
                 return $kernel;
             });
@@ -44,7 +43,7 @@ describe('TenantScope Console Context Behavior', function (): void {
         });
 
         it('executes make:filament-user command successfully', function (): void {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $email = 'artisan-test-'.uniqid('', true).'@example.com';
 
             $exitCode = Artisan::call('make:filament-user', [
@@ -61,7 +60,7 @@ describe('TenantScope Console Context Behavior', function (): void {
         });
 
         it('allows querying all users in console context without tenant filter', function (): void {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $tenant1 = $this->requireTenant1();
             $tenant2 = $this->requireTenant2();
             $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
@@ -86,7 +85,7 @@ describe('TenantScope Console Context Behavior', function (): void {
 
     describe('User Creation in HTTP Context with Tenant', function (): void {
         it('automatically sets tenant_id when creating user in HTTP context', function (): void {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $tenant1 = $this->requireTenant1();
             $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
 
@@ -106,7 +105,7 @@ describe('TenantScope Console Context Behavior', function (): void {
         });
 
         it('filters users by tenant in HTTP context', function (): void {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $tenant1 = $this->requireTenant1();
             $tenant2 = $this->requireTenant2();
             $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
@@ -139,7 +138,7 @@ describe('TenantScope Console Context Behavior', function (): void {
 
     describe('TenantScope Exception Handling', function (): void {
         it('handles gracefully when Filament::getTenant() throws exception', function (): void {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /* @var \Modules\User\Tests\TestCase $this */
             Filament::shouldReceive('getTenant')
                 ->andThrow(new RuntimeException('Session not available'));
 
@@ -149,7 +148,7 @@ describe('TenantScope Console Context Behavior', function (): void {
         });
 
         it('allows user creation when Filament context is not available', function (): void {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /* @var \Modules\User\Tests\TestCase $this */
             Filament::shouldReceive('getTenant')
                 ->andReturn(null);
 
@@ -167,7 +166,7 @@ describe('TenantScope Console Context Behavior', function (): void {
 
     describe('Manual Tenant Assignment in Console', function (): void {
         it('allows manual tenant_id assignment in console context', function (): void {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $tenant1 = $this->requireTenant1();
             $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
 
@@ -185,7 +184,7 @@ describe('TenantScope Console Context Behavior', function (): void {
         });
 
         it('allows querying users by specific tenant in console', function (): void {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $tenant1 = $this->requireTenant1();
             $tenant2 = $this->requireTenant2();
             $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
@@ -210,12 +209,12 @@ describe('TenantScope Console Context Behavior', function (): void {
 
 describe('InteractsWithTenant Trait Behavior', function (): void {
     beforeEach(function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         $this->skipUnlessUsersTableReady();
     });
 
     it('does not crash when booting in console context', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $email = 'boot-test-'.uniqid('', true).'@example.com';
         $user = new User([
             'name' => 'Boot Test User',
@@ -230,7 +229,7 @@ describe('InteractsWithTenant Trait Behavior', function (): void {
     });
 
     it('skips tenant assignment in console context during creating event', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $email = 'creating-event-'.uniqid('', true).'@example.com';
         $user = User::create([
             'name' => 'Creating Event Test',

@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use Modules\User\Database\Factories\UserFactory;
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Enums\UserType;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
 
 /*
  * @property User $user
  */
 test('user can be created', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     try {
         $user = UserFactory::new()->createOne([
             'type' => UserType::MasterAdmin,
@@ -33,7 +33,7 @@ test('user can be created', function (): void {
 });
 
 test('user has correct type casting', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     try {
         $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
         \assert($user instanceof User);
@@ -49,7 +49,7 @@ test('user has correct type casting', function (): void {
 });
 
 test('user password is hashed', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = UserFactory::new()->createOne(['password' => Hash::make('password123')]);
     \assert($user instanceof User);
 
@@ -58,7 +58,7 @@ test('user password is hashed', function (): void {
 });
 
 test('user can change password', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = UserFactory::new()->createOne(['password' => Hash::make('password123')]);
     \assert($user instanceof User);
 
@@ -71,7 +71,7 @@ test('user can change password', function (): void {
 });
 
 test('user can be updated', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     try {
         $user = UserFactory::new()->createOne([
             'type' => UserType::MasterAdmin,
@@ -94,7 +94,7 @@ test('user can be updated', function (): void {
 });
 
 test('user can be deleted', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     $this->skipUnlessDirectPermissionSupported();
 
     $user = UserFactory::new()->createOne();
@@ -108,7 +108,7 @@ test('user can be deleted', function (): void {
 });
 
 test('user has fillable attributes', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $factory = UserFactory::new();
     \assert($factory instanceof Factory);
     $user = $factory->make();
@@ -122,7 +122,7 @@ test('user has fillable attributes', function (): void {
 });
 
 test('user has hidden attributes', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $factory = UserFactory::new();
     \assert($factory instanceof Factory);
     $user = $factory->make();
@@ -135,7 +135,7 @@ test('user has hidden attributes', function (): void {
 });
 
 test('user can be found by email', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = UserFactory::new()->createOne();
     \assert($user instanceof User);
 
@@ -147,7 +147,7 @@ test('user can be found by email', function (): void {
 });
 
 test('user can be found by type', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     try {
         $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
         \assert($user instanceof User);
@@ -167,7 +167,7 @@ test('user can be found by type', function (): void {
 });
 
 test('user can be created with different types', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     try {
         $factory = UserFactory::new();
         \assert($factory instanceof Factory);
@@ -185,7 +185,7 @@ test('user can be created with different types', function (): void {
 });
 
 test('user has timestamps', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = UserFactory::new()->createOne();
     \assert($user instanceof User);
 
@@ -194,7 +194,7 @@ test('user has timestamps', function (): void {
 });
 
 test('user soft delete functionality', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     // Skip this test as User model does not implement SoftDeletes trait
     $this->markTestSkipped('User model does not implement SoftDeletes trait');
 });

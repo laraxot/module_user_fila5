@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Modules\User\Database\Factories\TeamFactory;
@@ -12,7 +12,7 @@ use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function modelsTeamCreateUser(array $attributes = []): User
 {

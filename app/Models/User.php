@@ -119,7 +119,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|User whereStatus($value)
  * @method static Builder<static>|User whereType($value)
  *
- *
  * @property string|null $facebook_id
  *
  * @method static Builder<static>|User whereFacebookId($value)

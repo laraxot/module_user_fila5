@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use ReflectionClass;
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Schema;
 use Livewire\Livewire;
-use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\User\Filament\Widgets\Auth\RegisterWidget;
+use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
+use ReflectionClass;
 
 beforeEach(function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     config(['activitylog.enabled' => false]);
 
     if (! Schema::connection('user')->hasTable('users')) {
@@ -23,14 +23,14 @@ beforeEach(function () {
 
 describe('RegisterWidget FO', function (): void {
     test('register page loads with livewire widget', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         $this->get('/it/auth/register')->assertSuccessful();
         Livewire::test(RegisterWidget::class)->assertSuccessful();
     });
 
     test('delegates form schema to UserForm via formClass', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
-        $reflection = new \ReflectionClass(RegisterWidget::class);
+        /** @var Modules\User\Tests\TestCase $this */
+        $reflection = new ReflectionClass(RegisterWidget::class);
 
         $formClass = $reflection->getMethod('formClass');
         $formClass->setAccessible(true);
@@ -41,7 +41,7 @@ describe('RegisterWidget FO', function (): void {
     });
 
     test('can register user via submit', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $email = 'pest-register-'.uniqid('', true).'@example.test';
 
         Livewire::test(RegisterWidget::class)
@@ -61,7 +61,7 @@ describe('RegisterWidget FO', function (): void {
     });
 
     test('rejects invalid email without creating user', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         Livewire::test(RegisterWidget::class)
             ->fillForm([
                 'first_name' => 'Mario',
@@ -77,7 +77,7 @@ describe('RegisterWidget FO', function (): void {
     });
 
     test('save delegates to submit', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $email = 'pest-save-'.uniqid('', true).'@example.test';
 
         Livewire::test(RegisterWidget::class)

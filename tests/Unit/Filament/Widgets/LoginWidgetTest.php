@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use ReflectionClass;
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Modules\User\Filament\Widgets\LoginWidget;
+use PHPUnit\Framework\Assert;
+use ReflectionClass;
 
 describe('LoginWidget', function (): void {
     test('login widget can be instantiated', function (): void {
@@ -44,7 +44,7 @@ describe('LoginWidget', function (): void {
 
     test('login widget has correct view property', function (): void {
         $widget = new LoginWidget();
-        $reflection = new \ReflectionClass($widget);
+        $reflection = new ReflectionClass($widget);
         $property = $reflection->getProperty('view');
         $property->setAccessible(true);
         $view = $property->getValue($widget);
@@ -55,6 +55,6 @@ describe('LoginWidget', function (): void {
     test('login widget extends xot base widget', function (): void {
         $widget = new LoginWidget();
 
-        Assert::assertInstanceOf(\Modules\Xot\Filament\Widgets\XotBaseSchemaWidget::class, $widget);
+        Assert::assertInstanceOf(Modules\Xot\Filament\Widgets\XotBaseSchemaWidget::class, $widget);
     });
 });

@@ -2,12 +2,11 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
-use Modules\User\Database\Factories\UserFactory;
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Actions\User\GetNewPasswordAction;
-use Modules\User\Models\User;
+use Modules\User\Database\Factories\UserFactory;
+use PHPUnit\Framework\Assert;
 
 describe('GetNewPasswordAction', function (): void {
     it('generates and stores a new hashed password for the user', function (): void {
@@ -36,7 +35,7 @@ describe('GetNewPasswordAction', function (): void {
         $firstHash = (string) $freshModel0->password;
 
         $refreshedUser = $user->fresh();
-        if ($refreshedUser === null) {
+        if (null === $refreshedUser) {
             Assert::fail('User refresh failed.');
         }
         $secondPlain = app(GetNewPasswordAction::class)->execute($refreshedUser);

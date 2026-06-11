@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\DB;
@@ -34,11 +34,11 @@ function teamMgmtBizTeamUsesSoftDeletes(): bool
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtBizCreateUser(array $attributes = []): User
 {
-    /** @var \Modules\User\Models\User $user */
+    /** @var User $user */
     $user = UserFactory::new()->createOne(array_merge([
         'email' => 'team-biz-'.uniqid('', true).'@example.com',
     ], $attributes));
@@ -47,7 +47,7 @@ function teamMgmtBizCreateUser(array $attributes = []): User
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtBizCreateTeam(array $attributes = []): Team
 {
@@ -58,7 +58,7 @@ function teamMgmtBizCreateTeam(array $attributes = []): Team
 }
 
 /**
- * @param  array<string, mixed>  $where
+ * @param array<string, mixed> $where
  */
 function teamMgmtBizAssertDatabaseHas(string $table, array $where): void
 {
@@ -71,7 +71,7 @@ function teamMgmtBizAssertDatabaseHas(string $table, array $where): void
 }
 
 /**
- * @param  array<string, mixed>  $where
+ * @param array<string, mixed> $where
  */
 function teamMgmtBizAssertDatabaseMissing(string $table, array $where): void
 {
@@ -84,7 +84,7 @@ function teamMgmtBizAssertDatabaseMissing(string $table, array $where): void
 }
 
 /**
- * @param  array<string, mixed>  $pivot
+ * @param array<string, mixed> $pivot
  */
 function teamMgmtBizAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -124,7 +124,7 @@ function teamMgmtBizMemberExists(Team $team, User $user): bool
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtBizCreateInvitation(Team $team, array $attributes = []): TeamInvitation
 {

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use ReflectionClass;
+uses(Modules\User\Tests\TestCase::class);
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Modules\User\Enums\UserType;
 use PHPUnit\Framework\Assert;
+use ReflectionClass;
 
 test('user type enum has correct cases', function (): void {
     Assert::assertCount(5, UserType::cases());

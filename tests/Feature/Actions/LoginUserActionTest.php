@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
-use Modules\User\Database\Factories\UserFactory;
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Event;
 use LogicException;
-use stdClass;
 use Modules\User\Actions\Socialite\LoginUserAction;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
+use PHPUnit\Framework\Assert;
+use stdClass;
 
 describe('LoginUserAction', function (): void {
     test('authenticates connected socialite user and dispatches event', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         Event::fake([SocialiteUserConnected::class]);
 
         $user = UserFactory::new()->createOne();
@@ -36,7 +36,7 @@ describe('LoginUserAction', function (): void {
     });
 
     test('throws when related user is not authenticatable', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $socialiteUser = new SocialiteUser([
             'provider' => 'test-provider',
             'provider_id' => 'provider-id-2',

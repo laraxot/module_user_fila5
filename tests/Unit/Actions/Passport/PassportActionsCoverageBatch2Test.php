@@ -2,27 +2,26 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use Mockery;
-use PHPUnit\Framework\Assert;
-use Modules\User\Database\Factories\UserFactory;
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
+use Mockery;
 use Modules\User\Actions\Passport\CreateClientAction;
 use Modules\User\Actions\Passport\CreateGenericClientAction;
 use Modules\User\Actions\Passport\RegenerateClientSecretAction;
 use Modules\User\Actions\Passport\RevokeClientAction;
 use Modules\User\Actions\Passport\RevokeRefreshTokenAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\OauthClient;
-use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
 
 describe('Passport actions coverage batch 2', function (): void {
     beforeEach(function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         config(['passport.connection' => 'user']);
 
         if (! Schema::connection('user')->hasTable('oauth_clients')) {
@@ -31,8 +30,8 @@ describe('Passport actions coverage batch 2', function (): void {
     });
 
     afterEach(function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
-        \Mockery::close();
+        /* @var \Modules\User\Tests\TestCase $this */
+        Mockery::close();
     });
 
     /**
@@ -113,7 +112,7 @@ describe('Passport actions coverage batch 2', function (): void {
     });
 
     it('regenerates client secret from model instance and client id', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $clientId = (string) Str::uuid();
 
         DB::connection('user')->table('oauth_clients')->insert([
@@ -149,7 +148,7 @@ describe('Passport actions coverage batch 2', function (): void {
     });
 
     it('revokes refresh token and returns false for missing token', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $clientId = (string) Str::uuid();
         $tokenId = (string) Str::uuid();
         $refreshId = hash('sha256', (string) Str::uuid());
@@ -197,7 +196,7 @@ describe('Passport actions coverage batch 2', function (): void {
     });
 
     it('revokes access token and associated refresh token', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $clientId = (string) Str::uuid();
         $tokenId = (string) Str::uuid();
         $refreshId = hash('sha256', (string) Str::uuid());
@@ -246,7 +245,7 @@ describe('Passport actions coverage batch 2', function (): void {
     });
 
     it('revokes client with and without associated tokens', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $clientWithTokenId = (string) Str::uuid();
         $tokenId = (string) Str::uuid();
         $clientWithoutTokenRevokeId = (string) Str::uuid();

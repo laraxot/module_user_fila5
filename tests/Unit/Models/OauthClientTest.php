@@ -2,27 +2,27 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use function Safe\json_encode;
-use PHPUnit\Framework\Assert;
-use Modules\User\Database\Factories\UserFactory;
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Laravel\Passport\Client;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\OauthClient;
-use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
+
+use function Safe\json_encode;
 
 beforeEach(function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     config(['passport.connection' => 'user']);
 
-    if (! \Illuminate\Support\Facades\Schema::connection('user')->hasTable('oauth_clients')) {
+    if (! Illuminate\Support\Facades\Schema::connection('user')->hasTable('oauth_clients')) {
         $this->markTestSkipped('oauth_clients table missing on user connection.');
     }
 });
 
 /**
- * @param  array<string, mixed>  $overrides
+ * @param array<string, mixed> $overrides
  */
 function oauthClientTestPersistedClient(array $overrides = []): OauthClient
 {
@@ -45,7 +45,7 @@ function oauthClientTestPersistedClient(array $overrides = []): OauthClient
         'updated_at' => now(),
     ], $overrides);
 
-    if (\Illuminate\Support\Facades\Schema::connection('user')->hasColumn('oauth_clients', 'owner_id')) {
+    if (Illuminate\Support\Facades\Schema::connection('user')->hasColumn('oauth_clients', 'owner_id')) {
         $payload['owner_id'] = $payload['owner_id'] ?? $payload['user_id'] ?? null;
         $payload['owner_type'] = $payload['owner_type'] ?? null;
     }
@@ -56,7 +56,7 @@ function oauthClientTestPersistedClient(array $overrides = []): OauthClient
 }
 
 test('oauth client can be instantiated', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $client = new OauthClient();
 
     Assert::assertInstanceOf(OauthClient::class, $client);
@@ -64,14 +64,14 @@ test('oauth client can be instantiated', function (): void {
 });
 
 test('oauth client has connection user', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $client = new OauthClient();
 
     Assert::assertSame('user', $client->getConnectionName());
 });
 
 test('oauth client user relation uses xot data', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = UserFactory::new()->createOne();
     $client = oauthClientTestPersistedClient(['user_id' => (string) $user->getKey()]);
 
@@ -80,21 +80,21 @@ test('oauth client user relation uses xot data', function (): void {
 });
 
 test('oauth client is confidential when secret is present', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $client = oauthClientTestPersistedClient(['secret' => 'hashed-secret']);
 
     Assert::assertTrue($client->confidential());
 });
 
 test('oauth client is not confidential when secret is empty', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $client = oauthClientTestPersistedClient(['secret' => null]);
 
     Assert::assertFalse($client->confidential());
 });
 
 test('oauth client has grant type check', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $client = oauthClientTestPersistedClient([
         'grant_types' => json_encode(['authorization_code', 'refresh_token']),
     ]);
@@ -104,7 +104,7 @@ test('oauth client has grant type check', function (): void {
 });
 
 test('oauth client has scope check', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $client = oauthClientTestPersistedClient();
 
     Assert::assertTrue($client->hasScope('read'));

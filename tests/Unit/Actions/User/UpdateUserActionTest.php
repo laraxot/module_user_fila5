@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Actions\User\UpdateUserAction;
+use PHPUnit\Framework\Assert;
 
 describe('UpdateUserAction', function (): void {
     test('action is accessible via app', function (): void {
@@ -18,7 +18,7 @@ describe('UpdateUserAction', function (): void {
     test('execute method accepts user and data parameters', function (): void {
         $action = app(UpdateUserAction::class);
 
-        $reflection = new \ReflectionMethod($action, 'execute');
+        $reflection = new ReflectionMethod($action, 'execute');
         $params = $reflection->getParameters();
 
         Assert::assertCount(2, $params);

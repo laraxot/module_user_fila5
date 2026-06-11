@@ -182,17 +182,18 @@ trait HasTeams
      * @return Collection<int, User>
      */
     public function allTeamUsers(): Collection // @phpstan-ignore return.type
-    {
-        /** @var Collection<int, mixed> $teams */
+    {/** @var Collection<int, mixed> $teams */
         $teams = $this->teams; // @phpstan-ignore property.nonObject
         /** @var Collection<int, User> $result */
         $result = $teams->flatMap( // @phpstan-ignore argument.type
-        /** @param mixed $team @return array<int,User>|Collection<int,User> */
-        static function (mixed $team): array { // @phpstan-ignore return.type
-            /** @var array<int,User> $users */
-            $users = (array) ($team->users ?? []); // @phpstan-ignore property.nonObject
-            return $users;
-        })->unique('id');
+            /** @param mixed $team @return array<int,User>|Collection<int,User> */
+            static function (mixed $team): array { // @phpstan-ignore return.type
+                /** @var array<int,User> $users */
+                $users = (array) ($team->users ?? []); // @phpstan-ignore property.nonObject
+
+                return $users;
+            })->unique('id');
+
         return $result;
     }
 

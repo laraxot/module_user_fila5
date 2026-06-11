@@ -2,20 +2,18 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use Modules\User\Database\Factories\DeviceFactory;
-use PHPUnit\Framework\Assert;
-use Modules\User\Database\Factories\UserFactory;
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 use Laravel\Passport\ClientRepository;
 use Laravel\Passport\Passport;
-use Modules\User\Models\Device;
+use Modules\User\Database\Factories\DeviceFactory;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\DeviceUser;
-use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
 
 beforeEach(function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     $this->skipUnlessUserTable('device_user');
     $this->skipUnlessUserTable('devices');
 
@@ -50,8 +48,8 @@ function ensurePersonalAccessClient(): void
 }
 
 test('api logout revokes current personal access token and marks device logout time', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-$user = $this->requireUser();
+    /** @var Modules\User\Tests\TestCase $this */
+    $user = $this->requireUser();
     $privateKey = storage_path('oauth-private.key');
     $publicKey = storage_path('oauth-public.key');
 
@@ -64,15 +62,15 @@ $user = $this->requireUser();
     $personalAccessToken = null;
     try {
         $personalAccessToken = $user->createToken('Api Logout Test');
-    } catch (\LogicException $exception) {
+    } catch (LogicException $exception) {
         $this->markTestSkipped('Passport token creation unavailable: '.$exception->getMessage());
     }
 
-    if ($personalAccessToken === null) {
+    if (null === $personalAccessToken) {
         $this->markTestSkipped('Passport token creation unavailable.');
     }
 
-    if (! $personalAccessToken instanceof \Laravel\Passport\PersonalAccessTokenResult) {
+    if (! $personalAccessToken instanceof Laravel\Passport\PersonalAccessTokenResult) {
         $this->fail('Passport token creation returned unexpected type.');
     }
 

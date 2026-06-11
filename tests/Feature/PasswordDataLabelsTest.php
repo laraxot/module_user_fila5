@@ -2,14 +2,12 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
-use Livewire\Livewire;
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Datas\PasswordData;
-use Modules\User\Http\Livewire\Auth\Login;
+use PHPUnit\Framework\Assert;
 
 test('password data labels are translated', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     // Arrange
     app()->setLocale('it');
 
@@ -26,6 +24,6 @@ test('password data labels are translated', function (): void {
 });
 
 test('login form labels are translated', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     $this->markTestSkipped('Login Livewire form labels — coperto da widget Filament LoginWidgetTest');
 });

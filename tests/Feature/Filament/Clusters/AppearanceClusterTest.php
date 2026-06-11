@@ -2,9 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use function Safe\glob;
-use function Safe\file_get_contents;
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Clusters\Appearance;
 use Modules\User\Filament\Clusters\Appearance\Pages\Alignment;
@@ -17,13 +15,16 @@ use Modules\Xot\Filament\Clusters\XotBaseCluster;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use PHPUnit\Framework\Assert;
 
+use function Safe\file_get_contents;
+use function Safe\glob;
+
 test('Appearance cluster extends XotBaseCluster', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     Assert::assertSame(XotBaseCluster::class, get_parent_class(Appearance::class));
 });
 
 test('all cluster pages extend XotBasePage', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $pages = [
         Alignment::class,
         Background::class,
@@ -39,7 +40,7 @@ test('all cluster pages extend XotBasePage', function (): void {
 });
 
 test('all cluster pages have cluster property set', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $pages = [
         Alignment::class,
         Background::class,
@@ -50,7 +51,7 @@ test('all cluster pages have cluster property set', function (): void {
     ];
 
     foreach ($pages as $pageClass) {
-        $reflection = new \ReflectionClass($pageClass);
+        $reflection = new ReflectionClass($pageClass);
         $property = $reflection->getProperty('cluster');
         $defaultValue = $property->getDefaultValue();
 
@@ -59,10 +60,10 @@ test('all cluster pages have cluster property set', function (): void {
 });
 
 test('cluster pages do not extend Filament classes directly', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $files = glob(base_path('Modules/User/app/Filament/Clusters/Appearance/Pages/*.php'));
 
-    if ($files === []) {
+    if ([] === $files) {
         $this->markTestSkipped('Appearance cluster pages directory not found.');
     }
 
@@ -75,7 +76,7 @@ test('cluster pages do not extend Filament classes directly', function (): void 
 });
 
 test('cluster does not extend Filament directly', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $file = base_path('Modules/User/app/Filament/Clusters/Appearance.php');
     $content = (string) file_get_contents($file);
 
@@ -85,7 +86,7 @@ test('cluster does not extend Filament directly', function (): void {
 });
 
 test('cluster pages are accessible', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = UserFactory::new()->createOne([
         'name' => 'Cluster Test User',
         'email' => 'cluster-'.uniqid('', true).'@example.com',

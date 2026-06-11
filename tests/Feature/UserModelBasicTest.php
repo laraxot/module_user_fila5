@@ -2,27 +2,27 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
 
 // Simple test to verify basic functionality
 test('user model can be created', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = new User();
 
     Assert::assertInstanceOf(User::class, $user);
 });
 
 test('user model can access connection', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = new User();
 
     Assert::assertSame('user', $user->getConnectionName());
 });
 
 test('user model can create basic record', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     $this->skipUnlessUsersTableReady();
 
     $user = createTestUser([
@@ -41,7 +41,7 @@ test('user model can create basic record', function () {
 });
 
 test('user model can query records', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     $this->skipUnlessUsersTableReady();
 
     $user1 = createTestUser(['name' => 'User 1']);
@@ -53,7 +53,7 @@ test('user model can query records', function () {
 });
 
 test('user model can filter records', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     $this->skipUnlessUsersTableReady();
 
     $activeUser = createTestUser([
@@ -75,7 +75,7 @@ test('user model can filter records', function () {
 });
 
 test('user model can update records', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     $this->skipUnlessUsersTableReady();
 
     $user = createTestUser(['name' => 'Original Name']);

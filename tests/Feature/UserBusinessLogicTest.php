@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -10,17 +10,14 @@ use Illuminate\Support\Facades\Schema;
 use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\TeamFactory;
-use Modules\User\Models\Permission;
 use Modules\User\Models\Profile;
-use Modules\User\Models\Role;
 use Modules\User\Models\Team;
-use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
 describe('User Business Logic Integration', function () {
     describe('User Authentication Business Rules', function () {
         it('enforces password complexity requirements', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $weakPassword = '123456';
             $strongPassword = 'SecurePass123!';
 
@@ -34,14 +31,14 @@ describe('User Business Logic Integration', function () {
         });
 
         it('enforces email uniqueness across the system', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $email = 'unique-'.uniqid('', true).'@example.com';
 
             createTestUser(['email' => $email]);
         });
 
         it('enforces username uniqueness when required', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             if (! $this->userTableHasColumn('users', 'username')) {
                 $email = 'alias-'.uniqid('', true).'@example.com';
                 createTestUser(['email' => $email]);
@@ -56,7 +53,7 @@ describe('User Business Logic Integration', function () {
 
     describe('User Profile Business Rules', function () {
         it('enforces profile completion requirements', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $user = createTestUser([
                 'first_name' => null,
                 'last_name' => null,
@@ -75,7 +72,7 @@ describe('User Business Logic Integration', function () {
         });
 
         it('enforces data validation rules', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $user = createTestUser([
                 'first_name' => 'Mario',
                 'last_name' => 'Rossi',
@@ -92,7 +89,7 @@ describe('User Business Logic Integration', function () {
         });
 
         it('enforces age restrictions for certain operations', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /* @var \Modules\User\Tests\TestCase $this */
             if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
                 $this->markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
             }
@@ -125,9 +122,9 @@ describe('User Business Logic Integration', function () {
 
     describe('Team Management Business Rules', function () {
         it('enforces team membership limits', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $user = createTestUser();
-            /** @var \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\Team> $teams */
+            /** @var Collection<int, Team> $teams */
             $teams = TeamFactory::new()->count(5)->create();
 
             foreach ($teams as $team) {
@@ -144,7 +141,7 @@ describe('User Business Logic Integration', function () {
         });
 
         it('enforces team role hierarchy', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $user = createTestUser();
             $team = TeamFactory::new()->createOne();
 
@@ -158,7 +155,7 @@ describe('User Business Logic Integration', function () {
         });
 
         it('enforces team ownership rules', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $owner = createTestUser();
             $member = createTestUser();
             $team = TeamFactory::new()->createOne(['user_id' => $owner->id]);
@@ -175,7 +172,7 @@ describe('User Business Logic Integration', function () {
 
     describe('Permission and Role Business Rules', function () {
         it('enforces permission inheritance', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $user = createTestUser();
             $role = RoleFactory::new()->createOne(['name' => 'editor-'.uniqid()]);
             $permission = PermissionFactory::new()->createOne(['name' => 'edit_posts-'.uniqid()]);
@@ -188,7 +185,7 @@ describe('User Business Logic Integration', function () {
         });
 
         it('enforces permission conflicts', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             if (! $this->userTableExists('model_has_permission')) {
                 $this->markTestSkipped('model_has_permission table missing on user connection.');
             }
@@ -214,7 +211,7 @@ describe('User Business Logic Integration', function () {
         });
 
         it('enforces role-based access control', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $admin = createTestUser();
             $moderator = createTestUser();
             $user = createTestUser();
@@ -236,16 +233,16 @@ describe('User Business Logic Integration', function () {
 
     describe('Data Integrity Business Rules', function () {
         it('enforces referential integrity for user relationships', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /* @var \Modules\User\Tests\TestCase $this */
             if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
                 $this->markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
             }
 
             $user = createTestUser();
-            /** @var \Modules\User\Models\Profile $profile */
-            /** @var \Modules\User\Models\Profile $profile */
-        /** @var \Modules\User\Models\Profile $profile */
-        $profile = $user->profile()->create([
+            /** @var Profile $profile */
+            /** @var Profile $profile */
+            /** @var Profile $profile */
+            $profile = $user->profile()->create([
                 'first_name' => 'Mario',
                 'last_name' => 'Rossi',
             ]);
@@ -261,7 +258,7 @@ describe('User Business Logic Integration', function () {
         });
 
         it('enforces data consistency across user attributes', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $user = createTestUser([
                 'first_name' => 'Mario',
                 'last_name' => 'Rossi',
@@ -281,7 +278,7 @@ describe('User Business Logic Integration', function () {
         });
 
         it('enforces audit trail for sensitive operations', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $user = createTestUser();
             $originalEmail = $user->email;
             $originalUpdatedAt = $user->updated_at;
@@ -298,7 +295,7 @@ describe('User Business Logic Integration', function () {
 
     describe('Security Business Rules', function () {
         it('enforces password expiration policies', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $user = createTestUser([
                 'password_expires_at' => now()->subDays(1),
             ]);
@@ -314,7 +311,7 @@ describe('User Business Logic Integration', function () {
         });
 
         it('enforces account lockout policies', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $user = createTestUser(['is_active' => true]);
 
             Assert::assertTrue($user->is_active);
@@ -329,7 +326,7 @@ describe('User Business Logic Integration', function () {
         });
 
         it('enforces session management policies', function () {
-            /** @var \Modules\User\Tests\TestCase $this */
+            /** @var Modules\User\Tests\TestCase $this */
             $user = createTestUser();
             $staleTimestamp = now()->subMinutes(30);
 

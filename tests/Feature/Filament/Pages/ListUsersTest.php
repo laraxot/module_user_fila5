@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use Modules\User\Database\Factories\UserFactory;
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Filament\Panel;
 use Filament\Tables\Columns\TextColumn;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\User\Filament\Resources\UserResource;
@@ -16,9 +15,10 @@ use Modules\User\Filament\Resources\UserResource\Pages\BaseListUsers;
 use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
 use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
+use PHPUnit\Framework\Assert;
 
 beforeEach(function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     // Ensure the panel is registered
     try {
         $panel = Filament::getPanel('user::admin');
@@ -40,25 +40,25 @@ beforeEach(function () {
 });
 
 test('list users page has correct resource', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     Assert::assertSame(UserResource::class, ListUsers::getResource());
 });
 
 test('list users page extends correct base class', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-$listUsersPage = $this->requireListUsersPage();
+    /** @var Modules\User\Tests\TestCase $this */
+    $listUsersPage = $this->requireListUsersPage();
     Assert::assertInstanceOf(BaseListUsers::class, $listUsersPage);
 });
 
 test('list users page can be instantiated', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-$listUsersPage = $this->requireListUsersPage();
+    /** @var Modules\User\Tests\TestCase $this */
+    $listUsersPage = $this->requireListUsersPage();
     Assert::assertInstanceOf(ListUsers::class, $listUsersPage);
 });
 
 test('list users page has correct table columns', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-$listUsersPage = $this->requireListUsersPage();
+    /** @var Modules\User\Tests\TestCase $this */
+    $listUsersPage = $this->requireListUsersPage();
     $columns = $listUsersPage->getTableColumns();
 
     Assert::assertArrayHasKey('name', $columns);
@@ -76,8 +76,8 @@ $listUsersPage = $this->requireListUsersPage();
 });
 
 test('list users page has correct table filters', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-$listUsersPage = $this->requireListUsersPage();
+    /** @var Modules\User\Tests\TestCase $this */
+    $listUsersPage = $this->requireListUsersPage();
     $filters = $listUsersPage->getTableFilters();
 
     // Currently no filters are defined
@@ -85,8 +85,8 @@ $listUsersPage = $this->requireListUsersPage();
 });
 
 test('list users page has correct table actions', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-$listUsersPage = $this->requireListUsersPage();
+    /** @var Modules\User\Tests\TestCase $this */
+    $listUsersPage = $this->requireListUsersPage();
     $actions = $listUsersPage->getTableActions();
 
     // Debug output
@@ -109,14 +109,14 @@ $listUsersPage = $this->requireListUsersPage();
 });
 
 test('list users page has correct header widgets', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     // getHeaderWidgets is protected and currently commented out in BaseListUsers
     // So we can't test it directly on the instance without reflection
     // And since it returns empty, the previous test expectation was wrong.
 });
 
 test('list users page has correct bulk actions', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     // getTableBulkActions is available on BaseListUsers via inheritance/mixins effectively?
     // Usually defined in ListRecords or InteractsWithTable.
     // However, calling it might rely on table() being set up.
@@ -124,7 +124,7 @@ test('list users page has correct bulk actions', function (): void {
 });
 
 test('list users page can display users', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $users = $this->requireUsers();
     $createdUserIds = $users->pluck('id');
     $testUsers = User::whereIn('id', $createdUserIds)->get();
@@ -142,22 +142,22 @@ test('list users page can display users', function (): void {
 });
 
 test('list users page has correct navigation label', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-$listUsersPage = $this->requireListUsersPage();
+    /** @var Modules\User\Tests\TestCase $this */
+    $listUsersPage = $this->requireListUsersPage();
     $label = $listUsersPage->getNavigationLabel();
     Assert::assertNotNull($label);
 });
 
 test('list users page has correct title', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-$listUsersPage = $this->requireListUsersPage();
+    /** @var Modules\User\Tests\TestCase $this */
+    $listUsersPage = $this->requireListUsersPage();
     $title = $listUsersPage->getTitle();
     Assert::assertNotNull($title);
 });
 
 test('list users page has correct breadcrumbs', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-$listUsersPage = $this->requireListUsersPage();
+    /** @var Modules\User\Tests\TestCase $this */
+    $listUsersPage = $this->requireListUsersPage();
     // Breadcrumbs might depend on routing parameters which are missing in simple instantiation
     try {
         $breadcrumbs = $listUsersPage->getBreadcrumbs();
@@ -168,8 +168,8 @@ $listUsersPage = $this->requireListUsersPage();
 });
 
 test('list users page can handle search', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-$listUsersPage = $this->requireListUsersPage();
+    /** @var Modules\User\Tests\TestCase $this */
+    $listUsersPage = $this->requireListUsersPage();
     $columns = $listUsersPage->getTableColumns();
     $nameColumn = $columns['name'];
     $emailColumn = $columns['email'];

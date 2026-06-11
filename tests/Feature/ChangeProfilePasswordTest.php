@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
-use Modules\User\Database\Factories\UserFactory;
+uses(Modules\User\Tests\TestCase::class);
 use Filament\Facades\Filament;
 use Filament\Schemas\SchemasServiceProvider;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Livewire;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Pages\MyProfilePage;
 use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
+use PHPUnit\Framework\Assert;
 
 beforeEach(function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     $this->skipUnlessUsersTableReady();
     $this->skipUnlessUserColumn('profiles', 'uuid', 'profiles.uuid column is not available in the test database.');
 
@@ -24,8 +24,8 @@ beforeEach(function () {
 });
 
 test('can change profile password', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-    /** @var \Modules\User\Models\User $user */
+    /** @var Modules\User\Tests\TestCase $this */
+    /** @var User $user */
     $user = UserFactory::new()->createOne([
         'password' => Hash::make('old_password'),
     ]);
@@ -45,8 +45,8 @@ test('can change profile password', function (): void {
 });
 
 test('cannot change password with wrong current password', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-    /** @var \Modules\User\Models\User $user */
+    /** @var Modules\User\Tests\TestCase $this */
+    /** @var User $user */
     $user = UserFactory::new()->createOne([
         'password' => Hash::make('old_password'),
     ]);

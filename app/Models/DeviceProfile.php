@@ -23,7 +23,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|DeviceProfile newQuery()
  * @method static Builder<static>|DeviceProfile query()
  *
- *
  * @property ProfileContract|null $deleter
  *
  * @method static \Modules\User\Database\Factories\DeviceProfileFactory factory($count = null, $state = [])

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
@@ -40,7 +40,7 @@ use PHPUnit\Framework\Assert;
 
 describe('User events coverage', function (): void {
     it('instantiates team and membership events', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $team = typedMock(TeamContract::class);
         $user = UserFactory::new()->makeOne();
 
@@ -58,7 +58,7 @@ describe('User events coverage', function (): void {
     });
 
     it('instantiates socialite and auth events', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $socialiteUser = new SocialiteUser([
             'provider' => 'github',
             'provider_id' => 'provider-'.uniqid(),
@@ -74,8 +74,8 @@ describe('User events coverage', function (): void {
     });
 
     it('instantiates recovery and invalid-state events', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
-        /** @var \Illuminate\Contracts\Auth\Authenticatable $auth */
+        /** @var Modules\User\Tests\TestCase $this */
+        /** @var Authenticatable $auth */
         $auth = UserFactory::new()->makeOne();
         $exception = new InvalidStateException('state invalid');
 
@@ -84,7 +84,7 @@ describe('User events coverage', function (): void {
     });
 
     it('instantiates two-factor events', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->makeOne();
 
         Assert::assertInstanceOf(TwoFactorAuthenticationEnabled::class, new TwoFactorAuthenticationEnabled($user));
@@ -94,7 +94,7 @@ describe('User events coverage', function (): void {
     });
 
     it('exposes broadcast channel for new password set event', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->makeOne();
         $event = new NewPasswordSet($user);
 
@@ -105,7 +105,7 @@ describe('User events coverage', function (): void {
     });
 
     it('instantiates recovery-generated and user-registered events', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $userContract = UserFactory::new()->makeOne();
         $user = new User();
 

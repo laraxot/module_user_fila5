@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use DateInterval;
 use Modules\User\Datas\FilamentShieldData;
 use Modules\User\Datas\PermissionData;
@@ -13,7 +13,7 @@ use PHPUnit\Framework\Assert;
 
 describe('User datas and enums coverage', function (): void {
     it('creates SocialiteUserAttributesData with expected values', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $data = new SocialiteUserAttributesData(
             name: 'Mario',
             firstName: 'Mario',
@@ -28,7 +28,7 @@ describe('User datas and enums coverage', function (): void {
     });
 
     it('builds PermissionData from permission config', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         config([
             'permission' => [
                 'models' => [
@@ -70,7 +70,7 @@ describe('User datas and enums coverage', function (): void {
     });
 
     it('builds FilamentShieldData from filament-shield config', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         config([
             'filament-shield' => [
                 'shield_resource' => [
@@ -101,7 +101,7 @@ describe('User datas and enums coverage', function (): void {
     });
 
     it('returns labels for both language enums', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         app()->setLocale('it');
 
         $italianLabel = LanguageEnum::ITALIAN->getLabel();

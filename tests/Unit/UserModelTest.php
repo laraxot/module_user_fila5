@@ -2,18 +2,17 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
-use Modules\User\Models\AuthenticationLog;
-use Modules\User\Models\Team;
-
+uses(Modules\User\Tests\TestCase::class);
 use Carbon\Carbon;
+use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Profile;
+use Modules\User\Models\Team;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
 
 // In-memory helper: build a User without touching DB
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function stubUser(array $attributes = []): User
 {
@@ -33,7 +32,7 @@ function stubUser(array $attributes = []): User
         'updated_at' => Carbon::now(),
     ];
 
-    /** @var \Modules\User\Models\User $u */
+    /** @var User $u */
     $u = new User();
     $u->forceFill(array_merge($defaults, $attributes));
 
@@ -91,7 +90,7 @@ describe('User Model', function () {
     describe('Relationships', function () {
         it('has profile relationship (in-memory)', function () {
             $user = stubUser();
-            /** @var \Modules\User\Models\Profile $profile */
+            /** @var Profile $profile */
             $profile = new Profile();
             $profile->forceFill(['user_id' => 'test-user-id']);
             // Set relation without touching DB
@@ -102,7 +101,7 @@ describe('User Model', function () {
 
         it('can attach authentication logs in-memory', function () {
             $user = stubUser();
-            /** @var \Modules\User\Models\AuthenticationLog $log */
+            /** @var AuthenticationLog $log */
             $log = new AuthenticationLog();
             $user->setRelation('authentications', collect([$log]));
             Assert::assertCount(1, $user->authentications);
@@ -110,7 +109,7 @@ describe('User Model', function () {
 
         it('can expose ownedTeams relation when preset', function () {
             $user = stubUser();
-            /** @var \Modules\User\Models\Team $team */
+            /** @var Team $team */
             $team = new Team();
             $user->setRelation('ownedTeams', collect([$team]));
             Assert::assertCount(1, $user->ownedTeams);
@@ -118,7 +117,7 @@ describe('User Model', function () {
 
         it('can expose teams relation when preset', function () {
             $user = stubUser();
-            /** @var \Modules\User\Models\Team $team */
+            /** @var Team $team */
             $team = new Team();
             $user->setRelation('teams', collect([$team]));
             Assert::assertCount(1, $user->teams);
@@ -147,7 +146,6 @@ describe('User Model', function () {
 
         it('hashes password when set', function () {
             $user = stubUser(['password' => 'plain-password']);
-
         });
     });
 
@@ -155,7 +153,7 @@ describe('User Model', function () {
         it('reflects verified email state when timestamp is set', function () {
             $user = stubUser(['email_verified_at' => null]);
             Assert::assertFalse($user->hasVerifiedEmail());
-            $user->email_verified_at = \Illuminate\Support\Carbon::parse(Carbon::now()->toDateTimeString());
+            $user->email_verified_at = Illuminate\Support\Carbon::parse(Carbon::now()->toDateTimeString());
             Assert::assertTrue($user->hasVerifiedEmail());
         });
 
@@ -182,7 +180,8 @@ describe('User Model', function () {
             $active = collect([$u1, $u2])->filter(fn (User $u) => true === $u->is_active);
             $inactive = collect([$u1, $u2])->filter(fn (User $u) => false === $u->is_active);
 
-            Assert::assertCount(1, $inactive); Assert::assertCount(1, $active);
+            Assert::assertCount(1, $inactive);
+            Assert::assertCount(1, $active);
         });
 
         it('exposes email verification flag for filtering (in-memory)', function () {
@@ -192,7 +191,8 @@ describe('User Model', function () {
             $verified = collect([$u1, $u2])->filter(fn (User $u) => null !== $u->email_verified_at);
             $unverified = collect([$u1, $u2])->filter(fn (User $u) => null === $u->email_verified_at);
 
-            Assert::assertCount(1, $unverified); Assert::assertCount(1, $verified);
+            Assert::assertCount(1, $unverified);
+            Assert::assertCount(1, $verified);
         });
 
         it('exposes language for filtering (in-memory)', function () {
@@ -228,7 +228,7 @@ describe('User Model', function () {
 
         it('can own teams (in-memory)', function () {
             $user = stubUser();
-            /** @var \Modules\User\Models\Team $team */
+            /** @var Team $team */
             $team = new Team();
             $team->forceFill(['user_id' => $user->id]);
             $user->setRelation('ownedTeams', collect([$team]));

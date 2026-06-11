@@ -40,7 +40,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|ProfileTeam whereUpdatedBy($value)
  * @method static Builder<static>|ProfileTeam whereUserId($value)
  *
- *
  * @property ProfileContract|null         $deleter
  * @property Team|null                    $team
  * @property User|null                    $user

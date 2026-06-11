@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Support\Facades\DB;
 use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\TeamFactory;
@@ -10,7 +10,7 @@ use Modules\User\Models\Role;
 use PHPUnit\Framework\Assert;
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function modelsRoleCreate(array $attributes = []): Role
 {

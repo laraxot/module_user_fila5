@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Models\Team;
@@ -10,12 +10,12 @@ use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
 beforeEach(function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     $this->skipUnlessUsersTableReady();
 });
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function currentTeamFixCreateUser(array $attributes = []): User
 {
@@ -26,7 +26,7 @@ function currentTeamFixCreateUser(array $attributes = []): User
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function currentTeamFixCreateTeam(User $user, array $attributes = []): Team
 {
@@ -38,7 +38,7 @@ function currentTeamFixCreateTeam(User $user, array $attributes = []): Team
 }
 
 test('currentTeam getter does not crash when user has no teams', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = currentTeamFixCreateUser();
 
     Assert::assertInstanceOf(BelongsTo::class, $user->currentTeam());
@@ -46,7 +46,7 @@ test('currentTeam getter does not crash when user has no teams', function (): vo
 });
 
 test('currentTeam getter is side-effect-free', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = currentTeamFixCreateUser(['current_team_id' => null]);
     $originalTeamId = $user->current_team_id;
 
@@ -59,7 +59,7 @@ test('currentTeam getter is side-effect-free', function (): void {
 });
 
 test('currentTeam getter does not trigger save operations', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = currentTeamFixCreateUser();
     $updatedAtBefore = $user->updated_at;
 
@@ -72,7 +72,7 @@ test('currentTeam getter does not trigger save operations', function (): void {
 });
 
 test('initializeCurrentTeam sets personal team correctly', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = currentTeamFixCreateUser(['current_team_id' => null]);
     $personalTeam = currentTeamFixCreateTeam($user, [
         'name' => 'Personal Team',
@@ -86,7 +86,7 @@ test('initializeCurrentTeam sets personal team correctly', function (): void {
 });
 
 test('initializeCurrentTeam does not override existing current_team_id', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = currentTeamFixCreateUser();
     $team1 = currentTeamFixCreateTeam($user, ['name' => 'Team 1', 'personal_team' => false]);
     currentTeamFixCreateTeam($user, ['name' => 'Team 2', 'personal_team' => true]);
@@ -101,7 +101,7 @@ test('initializeCurrentTeam does not override existing current_team_id', functio
 });
 
 test('initializeCurrentTeam sets first available team if no personal team', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = currentTeamFixCreateUser(['current_team_id' => null]);
     $team = currentTeamFixCreateTeam($user, [
         'name' => 'Regular Team',
@@ -115,7 +115,7 @@ test('initializeCurrentTeam sets first available team if no personal team', func
 });
 
 test('initializeCurrentTeam handles user without teams gracefully', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = currentTeamFixCreateUser(['current_team_id' => null]);
 
     $user->initializeCurrentTeam();
@@ -125,7 +125,7 @@ test('initializeCurrentTeam handles user without teams gracefully', function ():
 });
 
 test('currentTeam getter does not cause errors on repeated access', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = currentTeamFixCreateUser();
     $team = currentTeamFixCreateTeam($user, ['name' => 'Test Team', 'personal_team' => true]);
 
@@ -139,7 +139,7 @@ test('currentTeam getter does not cause errors on repeated access', function ():
 });
 
 test('currentTeam getter works correctly with existing team', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = currentTeamFixCreateUser();
     $team = currentTeamFixCreateTeam($user, ['name' => 'Test Team', 'personal_team' => true]);
 
@@ -154,7 +154,7 @@ test('currentTeam getter works correctly with existing team', function (): void 
 });
 
 test('user creation does not trigger infinite loop', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = currentTeamFixCreateUser(['name' => 'New User']);
 
     Assert::assertInstanceOf(User::class, $user);
@@ -165,7 +165,7 @@ test('user creation does not trigger infinite loop', function (): void {
 });
 
 test('multiple users can be created without issues', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $users = [];
 
     for ($i = 1; $i <= 5; ++$i) {

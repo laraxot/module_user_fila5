@@ -2,9 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use Mockery;
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Actions\Socialite\CreateUserAction;
@@ -13,9 +11,10 @@ use Modules\User\Actions\Socialite\LoginUserAction;
 use Modules\User\Actions\Socialite\RegisterSocialiteUserAction;
 use Modules\User\Actions\User\DeleteUserAction;
 use Modules\User\Actions\User\UpdateUserAction;
+use PHPUnit\Framework\Assert;
 
 test('RegisterSocialiteUserAction can be instantiated', function () {
-        try {
+    try {
         $action = app(RegisterSocialiteUserAction::class);
         Assert::assertInstanceOf(RegisterSocialiteUserAction::class, $action);
     } catch (Exception $e) {
@@ -24,7 +23,7 @@ test('RegisterSocialiteUserAction can be instantiated', function () {
 });
 
 test('LoginUserAction can be instantiated', function () {
-        try {
+    try {
         $action = app(LoginUserAction::class);
         Assert::assertInstanceOf(LoginUserAction::class, $action);
     } catch (Exception $e) {
@@ -33,7 +32,7 @@ test('LoginUserAction can be instantiated', function () {
 });
 
 test('CreateUserAction can be instantiated', function () {
-        try {
+    try {
         $action = app(CreateUserAction::class);
         Assert::assertInstanceOf(CreateUserAction::class, $action);
     } catch (Exception $e) {
@@ -47,7 +46,7 @@ test('IsUserAllowedAction can be instantiated', function () {
 });
 
 test('DeleteUserAction can be instantiated', function () {
-        try {
+    try {
         $action = app(DeleteUserAction::class);
         Assert::assertInstanceOf(DeleteUserAction::class, $action);
     } catch (Exception $e) {
@@ -56,7 +55,7 @@ test('DeleteUserAction can be instantiated', function () {
 });
 
 test('UpdateUserAction can be instantiated', function () {
-        try {
+    try {
         $action = app(UpdateUserAction::class);
         Assert::assertInstanceOf(UpdateUserAction::class, $action);
     } catch (Exception $e) {
@@ -65,7 +64,7 @@ test('UpdateUserAction can be instantiated', function () {
 });
 
 test('SendOtpByUserAction can be instantiated', function () {
-        try {
+    try {
         $action = app(SendOtpByUserAction::class);
         Assert::assertInstanceOf(SendOtpByUserAction::class, $action);
     } catch (Exception $e) {
@@ -74,7 +73,7 @@ test('SendOtpByUserAction can be instantiated', function () {
 });
 
 test('RevokeTokenAction can be instantiated', function () {
-        try {
+    try {
         $action = app(RevokeTokenAction::class);
         Assert::assertInstanceOf(RevokeTokenAction::class, $action);
     } catch (Exception $e) {

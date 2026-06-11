@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\AuthenticationLog;
+use PHPUnit\Framework\Assert;
 
 describe('User Authentication', function () {
     it('can authenticate user with correct credentials', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $email = 'auth-'.uniqid('', true).'@example.com';
 
         $user = createTestUser([
@@ -29,7 +29,7 @@ describe('User Authentication', function () {
     });
 
     it('cannot authenticate inactive user', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $email = 'inactive-'.uniqid('', true).'@example.com';
 
         createTestUser([
@@ -51,7 +51,7 @@ describe('User Authentication', function () {
     });
 
     it('logs authentication attempts', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $email = 'log-'.uniqid('', true).'@example.com';
 
         $user = createTestUser([
@@ -77,7 +77,7 @@ describe('User Authentication', function () {
     });
 
     it('handles password expiration', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = createTestUser([
             'password_expires_at' => now()->subDay(),
         ]);
@@ -86,7 +86,7 @@ describe('User Authentication', function () {
     });
 
     it('supports OTP authentication', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = createTestUser(['is_otp' => true]);
 
         Assert::assertTrue($user->is_otp);

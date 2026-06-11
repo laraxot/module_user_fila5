@@ -2,8 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use Modules\User\Database\Factories\PermissionFactory;
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
@@ -15,10 +14,10 @@ use Modules\User\Database\Factories\TeamPermissionFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
-use Modules\User\Models\TeamPermission;
-use Modules\User\Models\User;
 use Modules\User\Models\TeamUser;
+use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
+
 use function Safe\json_encode;
 
 function teamMgmtUserTableHasColumn(string $table, string $column): bool
@@ -37,11 +36,11 @@ function teamMgmtTeamUsersRelationSupported(): bool
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtCreateUser(array $attributes = []): User
 {
-    /** @var \Modules\User\Models\User $user */
+    /** @var User $user */
     $user = UserFactory::new()->createOne(array_merge([
         'email' => 'team-mgmt-'.uniqid('', true).'@example.com',
     ], $attributes));
@@ -50,7 +49,7 @@ function teamMgmtCreateUser(array $attributes = []): User
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtCreateTeam(User $owner, array $attributes = []): Team
 {
@@ -73,7 +72,7 @@ function teamMgmtBootstrap(): array
 }
 
 /**
- * @param  array<string, mixed>  $pivot
+ * @param array<string, mixed> $pivot
  */
 function teamMgmtAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -117,7 +116,7 @@ function teamMgmtMemberExists(Team $team, User $user): bool
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtCreateInvitation(Team $team, array $attributes = []): TeamInvitation
 {

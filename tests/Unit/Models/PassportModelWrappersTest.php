@@ -2,10 +2,8 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Model;
-use PHPUnit\Framework\Assert;
-use ReflectionClass;
 use Laravel\Passport\AuthCode;
 use Laravel\Passport\Client;
 use Laravel\Passport\DeviceCode;
@@ -16,15 +14,17 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthDeviceCode;
 use Modules\User\Models\OauthRefreshToken;
 use Modules\User\Models\OauthToken;
+use PHPUnit\Framework\Assert;
+use ReflectionClass;
 
 /**
- * @param  class-string  $wrapperClass
+ * @param class-string $wrapperClass
  */
 function passportWrapperConnectionName(string $wrapperClass): ?string
 {
     config(['passport.connection' => 'user']);
 
-    $reflection = new \ReflectionClass($wrapperClass);
+    $reflection = new ReflectionClass($wrapperClass);
 
     if ($reflection->hasProperty('connection')) {
         $property = $reflection->getProperty('connection');
@@ -38,11 +38,11 @@ function passportWrapperConnectionName(string $wrapperClass): ?string
 
     $instance = new $wrapperClass();
 
-    if (! $instance instanceof \Illuminate\Database\Eloquent\Model) {
+    if (! $instance instanceof Model) {
         return null;
     }
 
-    /** @var \Illuminate\Database\Eloquent\Model $instance */
+    /* @var \Illuminate\Database\Eloquent\Model $instance */
     return $instance->getConnectionName();
 }
 

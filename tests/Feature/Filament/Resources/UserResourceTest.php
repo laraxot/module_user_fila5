@@ -2,9 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use Modules\User\Database\Factories\UserFactory;
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Forms\Components\Field;
@@ -13,25 +11,26 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Illuminate\Support\Facades\Hash;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
-use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+use PHPUnit\Framework\Assert;
 
 /**
- * @return array<int, Component|\Filament\Actions\Action|\Filament\Actions\ActionGroup>
+ * @return array<int, Component|Action|ActionGroup>
  */
-function userResourceSectionComponents(\Modules\User\Tests\TestCase $testCase, Component $section): array
+function userResourceSectionComponents(Modules\User\Tests\TestCase $testCase, Component $section): array
 {
     Assert::assertInstanceOf(Section::class, $section);
 
-    /** @var Section $section */
+    /* @var Section $section */
     return $testCase->filamentSectionChildComponents($section);
 }
 
 /**
- * @param  array<int, Component|\Filament\Actions\Action|\Filament\Actions\ActionGroup>  $components
+ * @param array<int, Component|Action|ActionGroup> $components
  */
 function userResourceFindComponentByName(array $components, string $name): ?Component
 {
@@ -49,7 +48,7 @@ function userResourceFindComponentByName(array $components, string $name): ?Comp
 }
 
 beforeEach(function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = UserFactory::new()
         ->create([
             'type' => UserType::MasterAdmin,
@@ -59,12 +58,12 @@ beforeEach(function () {
 });
 
 test('user resource has correct navigation icon', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     Assert::assertSame('ui-user-main', UserResource::getNavigationIcon());
 });
 
 test('user resource has correct widgets', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $widgets = UserResource::getWidgets();
 
     Assert::assertCount(1, $widgets);
@@ -72,7 +71,7 @@ test('user resource has correct widgets', function (): void {
 });
 
 test('user resource has correct form schema', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $form = UserResource::getFormSchema();
 
     Assert::assertArrayHasKey('section01', $form);
@@ -100,21 +99,21 @@ test('user resource has correct form schema', function (): void {
 });
 
 test('user resource has combined relation manager tabs', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $resource = new UserResource();
 
     Assert::assertTrue($resource->hasCombinedRelationManagerTabsWithContent());
 });
 
 test('user resource extends correct base class', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $resource = new UserResource();
 
     Assert::assertInstanceOf(XotBaseResource::class, $resource);
 });
 
 test('user resource form schema has correct column spans', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $form = UserResource::getFormSchema();
 
     $section01 = $form['section01'];
@@ -126,7 +125,7 @@ test('user resource form schema has correct column spans', function (): void {
 });
 
 test('user resource name field is required', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $form = UserResource::getFormSchema();
     $section01 = $form['section01'];
     $section01Schema = userResourceSectionComponents($this, $section01);
@@ -141,7 +140,7 @@ test('user resource name field is required', function (): void {
 });
 
 test('user resource email field is required', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $form = UserResource::getFormSchema();
     $section01 = $form['section01'];
     $section01Schema = userResourceSectionComponents($this, $section01);
@@ -156,7 +155,7 @@ test('user resource email field is required', function (): void {
 });
 
 test('user resource password field is required only on create', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $form = UserResource::getFormSchema();
     $section01 = $form['section01'];
     $section01Schema = userResourceSectionComponents($this, $section01);
@@ -171,7 +170,7 @@ test('user resource password field is required only on create', function (): voi
 });
 
 test('user resource password field has correct type', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $form = UserResource::getFormSchema();
     $section01 = $form['section01'];
     $section01Schema = userResourceSectionComponents($this, $section01);
@@ -184,7 +183,7 @@ test('user resource password field has correct type', function (): void {
 });
 
 test('user resource email field has unique validation', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $form = UserResource::getFormSchema();
     $section01 = $form['section01'];
     $section01Schema = userResourceSectionComponents($this, $section01);
@@ -199,7 +198,7 @@ test('user resource email field has unique validation', function (): void {
 });
 
 test('user resource created_at field shows diff for humans', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $form = UserResource::getFormSchema();
     $section02 = $form['section02'];
     $section02Schema = userResourceSectionComponents($this, $section02);
@@ -214,14 +213,14 @@ test('user resource created_at field shows diff for humans', function (): void {
 });
 
 test('user resource can be instantiated', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $resource = new UserResource();
 
     Assert::assertInstanceOf(UserResource::class, $resource);
 });
 
 test('user resource has correct model', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Since the model is commented out, we'll test the default behavior
     $resource = new UserResource();
 

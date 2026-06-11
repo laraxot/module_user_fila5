@@ -2,22 +2,21 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Mockery;
-use Modules\User\Database\Factories\TeamFactory;
-use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Actions\Team\GetUserTeamsOptionAction;
 use Modules\User\Actions\User\CreateUserAction;
+use Modules\User\Database\Factories\TeamFactory;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Exceptions\ProviderNotConfigured;
 use Modules\User\Facades\FilamentShield;
-use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Tests\Unit\QuickWins\Fixtures\FilamentShieldStubFixture;
 use PHPUnit\Framework\Assert;
 
 describe('User quick wins coverage', function (): void {
     it('builds provider not configured exception message', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $exception = ProviderNotConfigured::make('github');
 
         Assert::assertInstanceOf(ProviderNotConfigured::class, $exception);
@@ -25,7 +24,7 @@ describe('User quick wins coverage', function (): void {
     });
 
     it('resolves filament shield facade accessor', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $service = new FilamentShieldStubFixture();
 
         app()->instance('filament-shield', $service);
@@ -35,7 +34,7 @@ describe('User quick wins coverage', function (): void {
     });
 
     it('returns default option plus team options', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
         $this->actingAs($user);
 
@@ -51,7 +50,7 @@ describe('User quick wins coverage', function (): void {
     });
 
     it('creates user using resolved model instance', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $payload = [
             'email' => 'quick-win@example.test',
             'name' => 'Quick Win',
@@ -61,7 +60,7 @@ describe('User quick wins coverage', function (): void {
         $createdUser->email = $payload['email'];
         $createdUser->name = $payload['name'];
 
-        $userModel = configureMock(User::class, function (\Mockery\MockInterface $mock) use ($createdUser): void {
+        $userModel = configureMock(User::class, function (Mockery\MockInterface $mock) use ($createdUser): void {
             $mock->allows(['create' => $createdUser]);
         });
 

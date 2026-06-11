@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use function Safe\exec;
-use function Safe\glob;
+uses(Modules\User\Tests\TestCase::class);
 use PHPUnit\Framework\Assert;
+
+use function Safe\exec;
 use function Safe\file_get_contents;
+use function Safe\glob;
 
 /**
  * @return list<string>
@@ -38,7 +39,7 @@ test('user migrations have valid php syntax', function (): void {
 
         exec('php -l '.escapeshellarg($migrationFile), $output, $exitCode);
 
-        /** @var list<string> $output */
+        /* @var list<string> $output */
         Assert::assertSame(0, $exitCode, implode(PHP_EOL, $output));
     }
 });

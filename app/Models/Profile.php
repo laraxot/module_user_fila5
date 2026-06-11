@@ -75,7 +75,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @method static Builder<static>|Profile withoutPermission($permissions)
  * @method static Builder<static>|Profile withoutRole($roles, $guard = null)
  *
- *
  * @property string|null          $user_id
  * @property Carbon|null          $created_at
  * @property Carbon|null          $updated_at
@@ -212,7 +211,8 @@ class Profile extends BaseProfile implements HasMedia
     /**
      * Scope a query to include schemaless attributes.
      *
-     * @param  Builder<static>  $query
+     * @param Builder<static> $query
+     *
      * @return Builder<static>
      */
     public function scopeWithExtraAttributes(Builder $query): Builder

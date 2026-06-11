@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Mail\TeamInvitation;
 use Modules\User\Models\TeamInvitation as TeamInvitationModel;
 use PHPUnit\Framework\Assert;

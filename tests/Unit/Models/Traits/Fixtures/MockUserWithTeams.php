@@ -19,14 +19,14 @@ use Spatie\Permission\Contracts\Role;
 /**
  * Stub model for HasTeams trait unit tests — satisfies PHPStan in-context analysis.
  *
- * @property string                               $id
- * @property int|null                             $current_team_id
- * @property TeamContract|null                    $currentTeam
- * @property EloquentCollection<int, Team>        $teams
- * @property EloquentCollection<int, Team>        $ownedTeams
- * @property EloquentCollection<int, TeamUser>    $teamUsers
- * @property XotUserContract|null                   $owner
- * @property int                                  $total_members
+ * @property string                            $id
+ * @property int|null                          $current_team_id
+ * @property TeamContract|null                 $currentTeam
+ * @property EloquentCollection<int, Team>     $teams
+ * @property EloquentCollection<int, Team>     $ownedTeams
+ * @property EloquentCollection<int, TeamUser> $teamUsers
+ * @property XotUserContract|null              $owner
+ * @property int                               $total_members
  */
 class MockUserWithTeams extends Model
 {
@@ -48,7 +48,7 @@ class MockUserWithTeams extends Model
     }
 
     /**
-     * @param  string|int|Permission  $permission
+     * @param string|int|Permission $permission
      */
     public function hasPermissionTo($permission, ?string $guardName = null): bool
     {
@@ -56,7 +56,7 @@ class MockUserWithTeams extends Model
     }
 
     /**
-     * @param  string|int|array<int, string>|Role|\BackedEnum  $roles
+     * @param string|int|array<int, string>|Role|\BackedEnum $roles
      */
     public function hasRole($roles, ?string $guard = null): bool
     {

@@ -2,12 +2,11 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
-use Mockery;
 use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\GetDomainAllowListAction;
 use Modules\User\Actions\Socialite\GetGuardAction;

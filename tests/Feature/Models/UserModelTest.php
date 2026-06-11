@@ -2,24 +2,22 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use Modules\User\Database\Factories\SocialiteUserFactory;
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\RoleFactory;
-use PHPUnit\Framework\Assert;
+use Modules\User\Database\Factories\SocialiteUserFactory;
 use Modules\User\Database\Factories\UserFactory;
-use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
-use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
 
 describe('User Model', function (): void {
     beforeEach(function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         $this->skipUnlessUsersTableReady();
     });
     test('can create user with factory', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
 
         Assert::assertInstanceOf(User::class, $user);
@@ -29,7 +27,7 @@ describe('User Model', function (): void {
     });
 
     test('user has email attribute', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $email = 'test-'.uniqid().'@example.com';
         $user = UserFactory::new()->createOne(['email' => $email]);
 
@@ -37,7 +35,7 @@ describe('User Model', function (): void {
     });
 
     test('user has name attribute', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $name = 'John Doe';
         $user = UserFactory::new()->createOne(['name' => $name]);
 
@@ -45,7 +43,7 @@ describe('User Model', function (): void {
     });
 
     test('user has first_name and last_name attributes', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne([
             'first_name' => 'John',
             'last_name' => 'Doe',
@@ -56,14 +54,14 @@ describe('User Model', function (): void {
     });
 
     test('user is active by default', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
 
         Assert::assertTrue($user->is_active);
     });
 
     test('user can have roles assigned', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
         $role = RoleFactory::new()->createOne(['guard_name' => 'web']);
 
@@ -72,12 +70,12 @@ describe('User Model', function (): void {
         Assert::assertSame(1, $user->roles()->count());
         $firstRole = $user->roles()->first();
         Assert::assertNotNull($firstRole);
-        Assert::assertInstanceOf(\Modules\User\Models\Role::class, $firstRole);
+        Assert::assertInstanceOf(Role::class, $firstRole);
         Assert::assertSame($role->id, $firstRole->getKey());
     });
 
     test('user can have multiple roles', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'admin', 'guard_name' => 'web']);
         $role2 = RoleFactory::new()->createOne(['name' => 'editor', 'guard_name' => 'web']);
@@ -88,7 +86,7 @@ describe('User Model', function (): void {
     });
 
     test('user can have permissions', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         $this->skipUnlessDirectPermissionSupported();
 
         $user = UserFactory::new()->createOne();
@@ -100,7 +98,7 @@ describe('User Model', function (): void {
     });
 
     test('user can check if has role', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
         $role = RoleFactory::new()->createOne(['name' => 'admin-'.uniqid(), 'guard_name' => 'web']);
 
@@ -111,7 +109,7 @@ describe('User Model', function (): void {
     });
 
     test('user can check if has permission', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         $this->skipUnlessDirectPermissionSupported();
 
         $user = UserFactory::new()->createOne();
@@ -123,7 +121,7 @@ describe('User Model', function (): void {
     });
 
     test('user can have password hash', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
 
         Assert::assertNotNull($user->password);
@@ -131,14 +129,14 @@ describe('User Model', function (): void {
     });
 
     test('password is hidden from serialization', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
 
         Assert::assertTrue(in_array('password', $user->getHidden(), true));
     });
 
     test('user can have remember token', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
         $token = 'test-remember-token';
 
@@ -150,21 +148,21 @@ describe('User Model', function (): void {
     });
 
     test('user can be inactive', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne(['is_active' => false]);
 
         Assert::assertFalse($user->is_active);
     });
 
     test('user can be active', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne(['is_active' => true]);
 
         Assert::assertTrue($user->is_active);
     });
 
     test('user has phone attribute', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
 
         // Phone might not be in all schema versions, just test the user was created
@@ -172,35 +170,35 @@ describe('User Model', function (): void {
     });
 
     test('user has email verified at timestamp', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne(['email_verified_at' => now()]);
 
         Assert::assertNotNull($user->email_verified_at);
     });
 
     test('user can have unverified email', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne(['email_verified_at' => null]);
 
         Assert::assertNull($user->email_verified_at);
     });
 
     test('user can access filament by default', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
 
         Assert::assertTrue($user->canAccessFilament());
     });
 
     test('user can access socialite by default', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
 
         Assert::assertTrue($user->canAccessSocialite());
     });
 
     test('user has timestamps', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
 
         Assert::assertNotNull($user->created_at);
@@ -208,7 +206,7 @@ describe('User Model', function (): void {
     });
 
     test('user uses uuid as primary key', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
 
         Assert::assertNotNull($user->id);
@@ -216,12 +214,12 @@ describe('User Model', function (): void {
     });
 
     test('user increments is false for uuid', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         Assert::assertFalse(UserFactory::new()->makeOne()->incrementing);
     });
 
     test('user fillable attributes are correct', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->makeOne();
 
         Assert::assertTrue(in_array('email', $user->getFillable(), true));
@@ -229,14 +227,14 @@ describe('User Model', function (): void {
     });
 
     test('user connection is user', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->makeOne();
 
         Assert::assertSame('user', $user->getConnectionName());
     });
 
     test('user can be queried by email', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $email = 'unique-test-'.uniqid('', true).'@example.com';
         UserFactory::new()->createOne(['email' => $email]);
 
@@ -247,7 +245,7 @@ describe('User Model', function (): void {
     });
 
     test('user can be updated', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne(['name' => 'Original Name']);
         $originalId = $user->id;
 
@@ -259,7 +257,7 @@ describe('User Model', function (): void {
     });
 
     test('user can be deleted', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         $this->skipUnlessDirectPermissionSupported();
 
         $user = UserFactory::new()->createOne();
@@ -272,21 +270,21 @@ describe('User Model', function (): void {
     });
 
     test('user has current team id attribute', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne(['current_team_id' => 'team-123']);
 
         Assert::assertSame('team-123', $user->current_team_id);
     });
 
     test('user has lang attribute for localization', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne(['lang' => 'it']);
 
         Assert::assertSame('it', $user->lang);
     });
 
     test('user belongs to socialite users', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
         SocialiteUserFactory::new()->createOne([
             'user_id' => $user->id,
@@ -303,7 +301,7 @@ describe('User Model', function (): void {
     });
 
     test('user can have multiple socialite accounts', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
         SocialiteUserFactory::new()->createOne([
             'user_id' => $user->id,

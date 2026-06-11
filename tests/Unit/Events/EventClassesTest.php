@@ -2,10 +2,9 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use Modules\User\Database\Factories\UserFactory;
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Contracts\TeamContract;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Events\AddingTeam;
 use Modules\User\Events\AddingTeamMember;
 use Modules\User\Events\RecoveryCodeReplaced;
@@ -16,11 +15,11 @@ use Modules\User\Events\TeamMemberUpdated;
 use Modules\User\Events\TeamSwitched;
 use Modules\User\Events\TwoFactorAuthenticationDisabled;
 use Modules\User\Events\TwoFactorAuthenticationEnabled;
-use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
 
 // Using mock for contracts since they are interfaces
 test('RecoveryCodesGenerated event can be instantiated', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = UserFactory::new()->makeOne();
     $event = new RecoveryCodesGenerated($user);
 
@@ -29,7 +28,7 @@ test('RecoveryCodesGenerated event can be instantiated', function () {
 });
 
 test('TeamMemberAdded event can be instantiated', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $team = typedMock(TeamContract::class);
     $user = UserFactory::new()->makeOne();
     $event = new TeamMemberAdded($team, $user);
@@ -38,7 +37,7 @@ test('TeamMemberAdded event can be instantiated', function () {
 });
 
 test('TeamMemberRemoved event can be instantiated', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $team = typedMock(TeamContract::class);
     $user = UserFactory::new()->makeOne();
     $event = new TeamMemberRemoved($team, $user);
@@ -47,7 +46,7 @@ test('TeamMemberRemoved event can be instantiated', function () {
 });
 
 test('TwoFactorAuthenticationEnabled event can be instantiated', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = UserFactory::new()->makeOne();
     $event = new TwoFactorAuthenticationEnabled($user);
 
@@ -56,7 +55,7 @@ test('TwoFactorAuthenticationEnabled event can be instantiated', function () {
 });
 
 test('TwoFactorAuthenticationDisabled event can be instantiated', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = UserFactory::new()->makeOne();
     $event = new TwoFactorAuthenticationDisabled($user);
 
@@ -65,7 +64,7 @@ test('TwoFactorAuthenticationDisabled event can be instantiated', function () {
 });
 
 test('RecoveryCodeReplaced event can be instantiated', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = UserFactory::new()->makeOne();
     $event = new RecoveryCodeReplaced($user, 'test_code');
 
@@ -75,7 +74,7 @@ test('RecoveryCodeReplaced event can be instantiated', function () {
 });
 
 test('TeamMemberUpdated event can be instantiated', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $team = typedMock(TeamContract::class);
     $user = UserFactory::new()->makeOne();
     $event = new TeamMemberUpdated($team, $user);
@@ -84,7 +83,7 @@ test('TeamMemberUpdated event can be instantiated', function () {
 });
 
 test('AddingTeam event can be instantiated', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = UserFactory::new()->makeOne();
     $event = new AddingTeam($user);
 
@@ -93,7 +92,7 @@ test('AddingTeam event can be instantiated', function () {
 });
 
 test('AddingTeamMember event can be instantiated', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $team = typedMock(TeamContract::class);
     $user = UserFactory::new()->makeOne();
     $event = new AddingTeamMember($team, $user);
@@ -102,7 +101,7 @@ test('AddingTeamMember event can be instantiated', function () {
 });
 
 test('TeamSwitched event can be instantiated', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $team = typedMock(TeamContract::class);
     $user = UserFactory::new()->makeOne();
     $event = new TeamSwitched($team, $user);

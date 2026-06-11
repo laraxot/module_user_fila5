@@ -2,21 +2,19 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use Modules\User\Database\Factories\PermissionFactory;
-use Modules\User\Database\Factories\RoleFactory;
-use PHPUnit\Framework\Assert;
-use Modules\User\Database\Factories\UserFactory;
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
-use Modules\User\Models\Permission;
+use Modules\User\Database\Factories\PermissionFactory;
+use Modules\User\Database\Factories\RoleFactory;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
-use Modules\User\Models\Role;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
 
 it('can create user with profile', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $userData = [
         'name' => 'Mario Rossi',
@@ -55,7 +53,7 @@ it('can create user with profile', function () {
 });
 
 it('can assign role to user', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne();
     $role = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -70,7 +68,7 @@ it('can assign role to user', function () {
 });
 
 it('can assign multiple roles to user', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne();
     $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -88,7 +86,7 @@ it('can assign multiple roles to user', function () {
 });
 
 it('can remove role from user', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne();
     $role = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -104,7 +102,7 @@ it('can remove role from user', function () {
 });
 
 it('can sync user roles', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne();
     $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -124,7 +122,7 @@ it('can sync user roles', function () {
 });
 
 it('can check user permissions', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne();
     $role = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -140,7 +138,7 @@ it('can check user permissions', function () {
 });
 
 it('can assign direct permission to user', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne();
     $permission = PermissionFactory::new()->createOne(['name' => 'special.permission']);
@@ -155,7 +153,7 @@ it('can assign direct permission to user', function () {
 });
 
 it('can revoke direct permission from user', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne();
     $permission = PermissionFactory::new()->createOne(['name' => 'special.permission']);
@@ -171,7 +169,7 @@ it('can revoke direct permission from user', function () {
 });
 
 it('can check user has any role', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne();
     $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -186,7 +184,7 @@ it('can check user has any role', function () {
 });
 
 it('can check user has all roles', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne();
     $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -200,7 +198,7 @@ it('can check user has all roles', function () {
 });
 
 it('can get user permissions', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne();
     $role = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -220,7 +218,7 @@ it('can get user permissions', function () {
 });
 
 it('can get user roles', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne();
     $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -238,7 +236,7 @@ it('can get user roles', function () {
 });
 
 it('can check user is super admin', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne();
     $superAdminRole = RoleFactory::new()->createOne(['name' => 'super-admin']);
@@ -251,7 +249,7 @@ it('can check user is super admin', function () {
 });
 
 it('can update user profile', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne();
     $createdProfile = $user->profile()->create([
@@ -280,7 +278,7 @@ it('can update user profile', function () {
 });
 
 it('can delete user with profile', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne();
     $createdProfile = $user->profile()->create([
@@ -299,17 +297,17 @@ it('can delete user with profile', function () {
 });
 
 it('can soft delete user', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     $this->markTestSkipped('User model does not use SoftDeletes.');
 });
 
 it('can restore soft deleted user', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     $this->markTestSkipped('User model does not use SoftDeletes.');
 });
 
 it('can force delete user', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne();
     $createdProfile = $user->profile()->create([
@@ -328,7 +326,7 @@ it('can force delete user', function () {
 });
 
 it('can search users by name', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user1 = UserFactory::new()->createOne(['name' => 'Mario Rossi']);
     $user2 = UserFactory::new()->createOne(['name' => 'Giulia Bianchi']);
@@ -345,7 +343,7 @@ it('can search users by name', function () {
 });
 
 it('can search users by email', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user1 = UserFactory::new()->createOne(['email' => 'mario@example.com']);
     $user2 = UserFactory::new()->createOne(['email' => 'giulia@test.com']);
@@ -362,7 +360,7 @@ it('can search users by email', function () {
 });
 
 it('can filter users by role', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $doctorRole = RoleFactory::new()->createOne(['name' => 'doctor']);
     $nurseRole = RoleFactory::new()->createOne(['name' => 'nurse']);
@@ -386,7 +384,7 @@ it('can filter users by role', function () {
 });
 
 it('can filter users by permission', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $role = RoleFactory::new()->createOne(['name' => 'doctor']);
     $permission = PermissionFactory::new()->createOne(['name' => 'patients.read']);
@@ -408,7 +406,7 @@ it('can filter users by permission', function () {
 });
 
 it('can get users with roles and permissions', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $role = RoleFactory::new()->createOne(['name' => 'doctor']);
     $permission = PermissionFactory::new()->createOne(['name' => 'patients.read']);
@@ -430,7 +428,7 @@ it('can get users with roles and permissions', function () {
 });
 
 it('can validate user email uniqueness', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     // Arrange
     UserFactory::new()->createOne(['email' => 'test@example.com']);
 
@@ -448,7 +446,7 @@ it('can validate user email uniqueness', function () {
 });
 
 it('can handle user email verification', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne(['email_verified_at' => null]);
 
@@ -461,7 +459,7 @@ it('can handle user email verification', function () {
 });
 
 it('can handle user status changes', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne(['is_active' => true]);
 
@@ -482,7 +480,7 @@ it('can handle user status changes', function () {
 });
 
 it('can handle user info', function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     // Arrange
     $user = UserFactory::new()->createOne();
     $lastLogin = now();

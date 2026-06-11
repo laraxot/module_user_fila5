@@ -2,10 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use function Safe\glob;
-use ReflectionClass;
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Passport\Passport;
 use Modules\User\Models\OauthAuthCode;
@@ -13,12 +10,16 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthDeviceCode;
 use Modules\User\Models\OauthRefreshToken;
 use Modules\User\Models\OauthToken;
+use PHPUnit\Framework\Assert;
+use ReflectionClass;
+
+use function Safe\glob;
 
 test('every eloquent passport model has a local oauth wrapper', function (): void {
     /** @var list<string> $files */
     $files = glob(base_path('vendor/laravel/passport/src').'/*.php');
 
-    if ($files === []) {
+    if ([] === $files) {
         Assert::fail('Unable to read Passport source directory.');
     }
 
@@ -31,7 +32,7 @@ test('every eloquent passport model has a local oauth wrapper', function (): voi
             continue;
         }
 
-        $reflection = new \ReflectionClass($class);
+        $reflection = new ReflectionClass($class);
 
         if ($reflection->isAbstract()) {
             continue;

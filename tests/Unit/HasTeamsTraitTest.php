@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
@@ -18,7 +18,7 @@ use PHPUnit\Framework\Assert;
 use function Safe\json_encode;
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function hasTeamsCreateTestUser(array $attributes = []): User
 {
@@ -48,7 +48,7 @@ function hasTeamsBootstrapFixture(): array
 }
 
 /**
- * @param  array<string, mixed>  $pivot
+ * @param array<string, mixed> $pivot
  */
 function hasTeamsAttachMember(Team $team, User $user, array $pivot = []): void
 {

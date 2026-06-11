@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Contracts\Events\Dispatcher;
 use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
@@ -69,7 +69,7 @@ describe('Socialite core actions coverage', function (): void {
             $mock->allows(['getEmail' => 'user@example.com']);
         });
 
-        /** @var \Mockery\MockInterface $driver */
+        /** @var MockInterface $driver */
         $driver = Mockery::mock();
         $driver->allows(['user' => $oauthUser]);
 
@@ -87,7 +87,7 @@ describe('Socialite core actions coverage', function (): void {
     it('returns null and dispatches invalid state event when socialite state is invalid', function (): void {
         $exception = new InvalidStateException();
 
-        /** @var \Mockery\MockInterface $driver */
+        /** @var MockInterface $driver */
         $driver = Mockery::mock();
         $driver->allows(['user' => fn (): never => throw $exception]);
 

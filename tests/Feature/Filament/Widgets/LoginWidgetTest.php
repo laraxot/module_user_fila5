@@ -2,28 +2,25 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use ReflectionClass;
-use PHPUnit\Framework\Assert;
-use Modules\User\Database\Factories\UserFactory;
-use Filament\Schemas\Schema;
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Support\Facades\Hash;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Models\User;
-
-
+use PHPUnit\Framework\Assert;
+use ReflectionClass;
 
 beforeEach(function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     $this->widget = new LoginWidget();
 });
 
 test('it can render widget', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $widget = new LoginWidget();
 
     // Use reflection to access the protected view property
-    $reflection = new \ReflectionClass($widget);
+    $reflection = new ReflectionClass($widget);
     $property = $reflection->getProperty('view');
     $property->setAccessible(true);
     $view = $property->getValue($widget);
@@ -32,7 +29,7 @@ test('it can render widget', function (): void {
 });
 
 test('it has correct form schema', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $widget = $this->requireLoginWidget();
     $form = $widget->getFormSchema();
 
@@ -50,14 +47,14 @@ test('it has correct form schema', function (): void {
 });
 
 test('it can authenticate user', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-$widget = $this->requireLoginWidget();
+    /** @var Modules\User\Tests\TestCase $this */
+    $widget = $this->requireLoginWidget();
     // Skip if we can't use the database
     if (! class_exists('CreateUsersTable')) {
         $this->markTestSkipped('Database not available for testing');
     }
 
-    /** @var \Modules\User\Models\User $user */
+    /** @var User $user */
     $user = UserFactory::new()->createOne([
         'email' => 'test@example.com',
         'password' => Hash::make('password123'),
@@ -75,11 +72,11 @@ $widget = $this->requireLoginWidget();
 });
 
 test('it validates credentials', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     $this->markTestSkipped('LoginWidget Livewire validation — coperto da test auth FO');
 });
 
 test('it requires email and password', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     $this->markTestSkipped('LoginWidget Livewire validation — coperto da test auth FO');
 });

@@ -2,12 +2,11 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use Modules\User\Database\Factories\SocialiteUserFactory;
-use Modules\User\Database\Factories\UserFactory;
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Validation\Rules\Password;
+use Modules\User\Database\Factories\SocialiteUserFactory;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Events\AddingTeam;
 use Modules\User\Events\Login;
@@ -15,6 +14,7 @@ use Modules\User\Events\Registered;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
 
 it('password data can be instantiated', function (): void {
     $passwordData = new PasswordData();

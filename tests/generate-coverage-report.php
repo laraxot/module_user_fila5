@@ -28,7 +28,7 @@ foreach ($coverageFiles as $file) {
 
     try {
         $xml = simplexml_load_file($file);
-    } catch (\Throwable) {
+    } catch (Throwable) {
         echo "Warning: Could not parse {$file}\n";
 
         continue;

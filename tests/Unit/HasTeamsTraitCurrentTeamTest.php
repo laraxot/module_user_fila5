@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Models\Team;
@@ -10,12 +10,12 @@ use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
 beforeEach(function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     $this->skipUnlessUsersTableReady();
 });
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function hasTeamsCurrentCreateUser(array $attributes = []): User
 {
@@ -26,7 +26,7 @@ function hasTeamsCurrentCreateUser(array $attributes = []): User
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 {
@@ -38,7 +38,7 @@ function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 }
 
 test('has teams currentTeam does not crash when user has no teams', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = hasTeamsCurrentCreateUser();
 
     Assert::assertNull($user->currentTeam);
@@ -46,7 +46,7 @@ test('has teams currentTeam does not crash when user has no teams', function ():
 });
 
 test('has teams currentTeam is side effect free', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = hasTeamsCurrentCreateUser(['current_team_id' => null]);
 
     Assert::assertNull($user->currentTeam);
@@ -57,7 +57,7 @@ test('has teams currentTeam is side effect free', function (): void {
 });
 
 test('has teams currentTeam can access personal team when available', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = hasTeamsCurrentCreateUser();
     $personalTeam = hasTeamsCurrentCreateTeam($user, [
         'name' => 'Personal Team',
@@ -73,7 +73,7 @@ test('has teams currentTeam can access personal team when available', function (
 });
 
 test('has teams currentTeam does not override existing current_team_id', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = hasTeamsCurrentCreateUser();
     $team1 = hasTeamsCurrentCreateTeam($user, ['name' => 'Team 1', 'personal_team' => false]);
     hasTeamsCurrentCreateTeam($user, ['name' => 'Team 2', 'personal_team' => true]);
@@ -88,7 +88,7 @@ test('has teams currentTeam does not override existing current_team_id', functio
 });
 
 test('has teams switchTeam can change current team', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = hasTeamsCurrentCreateUser();
     $team1 = hasTeamsCurrentCreateTeam($user, ['name' => 'Team 1', 'personal_team' => false]);
     $team2 = hasTeamsCurrentCreateTeam($user, ['name' => 'Team 2', 'personal_team' => true]);
@@ -104,7 +104,7 @@ test('has teams switchTeam can change current team', function (): void {
 });
 
 test('has teams currentTeam supports repeated access', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /** @var Modules\User\Tests\TestCase $this */
     $user = hasTeamsCurrentCreateUser();
     $team = hasTeamsCurrentCreateTeam($user, ['name' => 'Test Team', 'personal_team' => true]);
 

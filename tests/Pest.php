@@ -10,7 +10,6 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
-use Modules\User\Tests\TestCase;
 
 use function Safe\json_encode;
 
@@ -42,17 +41,17 @@ use function Safe\json_encode;
  */
 
 expect()->extend('toBeUser', function () {
-    /** @phpstan-ignore-next-line */
+    /* @phpstan-ignore-next-line */
     return $this->toBeInstanceOf(User::class);
 });
 
 expect()->extend('toBeTeam', function () {
-    /** @phpstan-ignore-next-line */
+    /* @phpstan-ignore-next-line */
     return $this->toBeInstanceOf(Team::class);
 });
 
 expect()->extend('toBeProfile', function () {
-    /** @phpstan-ignore-next-line */
+    /* @phpstan-ignore-next-line */
     return $this->toBeInstanceOf(Profile::class);
 });
 
@@ -68,7 +67,7 @@ expect()->extend('toBeProfile', function () {
  */
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function createUser(array $attributes = []): User
 {
@@ -82,7 +81,7 @@ function createUser(array $attributes = []): User
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function makeUser(array $attributes = []): User
 {
@@ -96,7 +95,7 @@ function makeUser(array $attributes = []): User
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function createTeam(array $attributes = []): Team
 {
@@ -106,7 +105,7 @@ function createTeam(array $attributes = []): Team
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function createTestUser(array $attributes = []): User
 {
@@ -137,12 +136,12 @@ function bootstrapHasTeamsFixture(): array
 
 function userTableHasColumn(string $table, string $column): bool
 {
-    return \Illuminate\Support\Facades\Schema::connection('user')->hasColumn($table, $column);
+    return Illuminate\Support\Facades\Schema::connection('user')->hasColumn($table, $column);
 }
 
 function pestSkip(string $message): never
 {
-    \PHPUnit\Framework\Assert::markTestSkipped($message);
+    PHPUnit\Framework\Assert::markTestSkipped($message);
 }
 
 function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
@@ -154,7 +153,7 @@ function skipUnlessUserColumn(string $table, string $column, string $reason = ''
 
 function userTableExists(string $table): bool
 {
-    return \Illuminate\Support\Facades\Schema::connection('user')->hasTable($table);
+    return Illuminate\Support\Facades\Schema::connection('user')->hasTable($table);
 }
 
 function skipUnlessUserTable(string $table, string $reason = ''): void
@@ -199,7 +198,7 @@ function skipUnlessTeamUsersRelationSupported(): void
 }
 
 /**
- * @param  array<string, mixed>  $pivot
+ * @param array<string, mixed> $pivot
  */
 function attachTeamMember(Team $team, User $user, array $pivot = []): void
 {
@@ -223,12 +222,12 @@ function attachTeamMember(Team $team, User $user, array $pivot = []): void
         $payload['joined_at'] = $pivot['joined_at'];
     }
 
-    \Illuminate\Support\Facades\DB::connection('user')->table('team_user')->insert($payload);
+    Illuminate\Support\Facades\DB::connection('user')->table('team_user')->insert($payload);
 }
 
 function detachTeamMember(Team $team, User $user): void
 {
-    \Illuminate\Support\Facades\DB::connection('user')->table('team_user')
+    Illuminate\Support\Facades\DB::connection('user')->table('team_user')
         ->where('team_id', $team->id)
         ->where('user_id', $user->id)
         ->delete();
@@ -236,7 +235,7 @@ function detachTeamMember(Team $team, User $user): void
 
 function teamMemberExists(Team $team, User $user): bool
 {
-    return \Illuminate\Support\Facades\DB::connection('user')->table('team_user')
+    return Illuminate\Support\Facades\DB::connection('user')->table('team_user')
         ->where('team_id', $team->id)
         ->where('user_id', $user->id)
         ->exists();
@@ -248,14 +247,14 @@ function teamUsesSoftDeletes(): bool
     $traits = \class_uses_recursive(Team::class);
 
     return in_array(
-        \Illuminate\Database\Eloquent\SoftDeletes::class,
+        Illuminate\Database\Eloquent\SoftDeletes::class,
         $traits,
         true
     );
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function createProfile(array $attributes = []): Profile
 {
@@ -270,13 +269,13 @@ function createProfile(array $attributes = []): Profile
 
 function setupFilamentAdminPanel(): void
 {
-    $filament = \Filament\Facades\Filament::class;
+    $filament = Filament\Facades\Filament::class;
 
     try {
         $panel = $filament::getPanel('user::admin');
-    } catch (\Throwable) {
-        $panelProvider = new \Modules\User\Providers\Filament\AdminPanelProvider(app());
-        $panel = $panelProvider->panel(\Filament\Panel::make());
+    } catch (Throwable) {
+        $panelProvider = new Modules\User\Providers\Filament\AdminPanelProvider(app());
+        $panel = $panelProvider->panel(Filament\Panel::make());
         $filament::registerPanel($panel);
     }
 
@@ -284,9 +283,9 @@ function setupFilamentAdminPanel(): void
 }
 
 /**
- * @param  array<mixed>  $attributes
+ * @param array<mixed> $attributes
  */
-function mockSocialiteOauthUser(array $attributes = []): \Laravel\Socialite\Contracts\User
+function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contracts\User
 {
     /** @var array<string, mixed> $attributes */
     $unique = uniqid();
@@ -298,7 +297,7 @@ function mockSocialiteOauthUser(array $attributes = []): \Laravel\Socialite\Cont
         'nickname' => 'user'.$unique,
     ], $attributes);
 
-    return configureMock(\Laravel\Socialite\Contracts\User::class, static function (MockInterface $mock) use ($data): void {
+    return configureMock(Laravel\Socialite\Contracts\User::class, static function (MockInterface $mock) use ($data): void {
         $mock->allows([
             'getId' => $data['id'],
             'getName' => $data['name'],
@@ -312,13 +311,13 @@ function mockSocialiteOauthUser(array $attributes = []): \Laravel\Socialite\Cont
 /**
  * @template T of object
  *
- * @param  class-string<T>  $class
+ * @param class-string<T> $class
  *
  * @return T&MockInterface
  */
 function typedMock(string $class)
 {
-    /** @var T&MockInterface */
+    /* @var T&MockInterface */
     return Mockery::mock($class);
 }
 
@@ -327,8 +326,8 @@ function typedMock(string $class)
  *
  * @template T of object
  *
- * @param  class-string<T>  $class
- * @param  callable(T&MockInterface): void  $configure
+ * @param class-string<T>                 $class
+ * @param callable(T&MockInterface): void $configure
  *
  * @return T&MockInterface
  */

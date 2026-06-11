@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Actions\GetCurrentDeviceAction;
 use Modules\User\Models\Device;
 use Modules\User\Tests\Fakes\FakeAgent;
 use PHPUnit\Framework\Assert;
 
 /**
- * @param  array<string, mixed>  $expected
+ * @param array<string, mixed> $expected
  */
 function assertDeviceMatches(Device $device, array $expected): void
 {
@@ -20,7 +20,7 @@ function assertDeviceMatches(Device $device, array $expected): void
 
 function bindFakeAgent(FakeAgent $agent): void
 {
-    app()->instance(\Jenssegers\Agent\Agent::class, $agent);
+    app()->instance(Jenssegers\Agent\Agent::class, $agent);
 }
 
 it('creates device with valid agent data', function (): void {
@@ -80,7 +80,7 @@ it('handles empty mobile id', function (): void {
     try {
         app(GetCurrentDeviceAction::class)->execute('');
         Assert::fail('Expected InvalidArgumentException');
-    } catch (\InvalidArgumentException $exception) {
+    } catch (InvalidArgumentException $exception) {
         Assert::assertSame('L\'ID mobile non può essere vuoto', $exception->getMessage());
     }
 });

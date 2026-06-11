@@ -4,21 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature;
 
-use function Safe\json_decode;
-
-use function Safe\json_encode;
-use Modules\User\Database\Factories\PermissionFactory;
-use Modules\User\Database\Factories\RoleFactory;
-use Modules\User\Database\Factories\UserFactory;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
-use Modules\User\Models\Permission;
+use Modules\User\Database\Factories\PermissionFactory;
+use Modules\User\Database\Factories\RoleFactory;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
-use Modules\User\Models\Role;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+use function Safe\json_decode;
+use function Safe\json_encode;
 
 class UserManagementBusinessLogicTest extends TestCase
 {

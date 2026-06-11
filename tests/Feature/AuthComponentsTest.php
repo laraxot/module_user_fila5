@@ -2,39 +2,39 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
 use Modules\User\Models\Profile;
+use PHPUnit\Framework\Assert;
 
 describe('Auth Components Tests', function (): void {
     test('auth components exist and work correctly', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         Assert::assertTrue(View::exists('components.auth-session-status'));
         Assert::assertTrue(View::exists('user::components.auth-header'));
         Assert::assertTrue(View::exists('user::components.auth-session-status'));
     });
 
     test('auth layout components exist and work correctly', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         Assert::assertTrue(View::exists('components.layouts.auth'));
         Assert::assertTrue(View::exists('user::layouts.auth'));
     });
 
     test('login page loads correctly', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         $this->get('/it/auth/login')->assertStatus(200);
     });
 
     test('register page loads correctly', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         $this->get('/it/auth/register')->assertStatus(200);
     });
 
     test('auth-session-status component renders correctly', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $html = view('components.auth-session-status', ['status' => 'Test status'])->render();
 
         Assert::assertIsString($html);
@@ -42,7 +42,7 @@ describe('Auth Components Tests', function (): void {
     });
 
     test('auth header component exists and renders', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         Assert::assertTrue(View::exists('user::components.auth-header'));
         $html = view('user::components.auth-header', [
             'title' => 'Login Test',
@@ -56,7 +56,7 @@ describe('Auth Components Tests', function (): void {
 
 describe('Authentication Flow with Reorganized Components', function (): void {
     test('login form components work after reorganization', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $response = $this->get('/it/auth/login');
 
         Assert::assertSame(200, $response->status());
@@ -70,14 +70,14 @@ describe('Authentication Flow with Reorganized Components', function (): void {
     });
 
     test('password confirmation uses reorganized components', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = createTestUser();
 
         try {
             $this->actingAs($user)
                 ->get('/it/auth/password/confirm')
                 ->assertStatus(200);
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             $this->markTestSkipped('Password confirm route unavailable in test env: '.$e->getMessage());
         }
     });
@@ -85,7 +85,7 @@ describe('Authentication Flow with Reorganized Components', function (): void {
 
 describe('User Profile Components Tests', function (): void {
     test('profile pages use reorganized components correctly', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var Modules\User\Tests\TestCase $this */
         $user = createTestUser();
 
         if (class_exists(Profile::class)) {
@@ -102,7 +102,7 @@ describe('User Profile Components Tests', function (): void {
             }
             try {
                 Profile::create($profileData);
-            } catch (\Throwable) {
+            } catch (Throwable) {
                 // Profile creation may fail in test env; continue with user only
             }
         }
@@ -111,7 +111,7 @@ describe('User Profile Components Tests', function (): void {
             $this->actingAs($user, 'web')
                 ->get('/it/profile/edit')
                 ->assertStatus(200);
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             $this->markTestSkipped('Profile edit route unavailable in test env: '.$e->getMessage());
         }
     });

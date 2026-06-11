@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Mockery;
-use PHPUnit\Framework\Assert;
 use Modules\User\Actions\Passport\CreateGenericClientAction;
 use Modules\User\Actions\Passport\CreatePasswordClientAction;
 use Modules\User\Actions\Passport\CreatePersonalAccessClientAction;
 use Modules\User\Models\OauthClient;
+use PHPUnit\Framework\Assert;
 
 describe('Create specific passport client actions', function (): void {
     afterEach(function (): void {
-        \Mockery::close();
+        Mockery::close();
         app()->forgetInstance(CreateGenericClientAction::class);
         app()->forgetInstance(CreatePasswordClientAction::class);
         app()->forgetInstance(CreatePersonalAccessClientAction::class);

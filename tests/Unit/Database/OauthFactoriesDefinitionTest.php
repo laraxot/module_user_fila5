@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Database\Factories\OauthAccessTokenFactory;
 use Modules\User\Database\Factories\OauthAuthCodeFactory;
 use Modules\User\Database\Factories\OauthClientFactory;
@@ -13,8 +13,4 @@ it('oauth factories expose the expected definition keys', function (): void {
     $accessTokenDefinition = (new OauthAccessTokenFactory())->definition();
     $authCodeDefinition = (new OauthAuthCodeFactory())->definition();
     $refreshTokenDefinition = (new OauthRefreshTokenFactory())->definition();
-
-
-
-
 });
