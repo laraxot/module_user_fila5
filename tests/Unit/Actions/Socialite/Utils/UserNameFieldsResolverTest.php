@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Actions\Socialite\Utils;
 
-use PHPUnit\Framework\Assert;
 use Laravel\Socialite\Contracts\User as SocialiteUser;
 use Modules\User\Actions\Socialite\Utils\UserNameFieldsResolver;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\Assert;
 use PHPUnit\Framework\Attributes\Test;
 
