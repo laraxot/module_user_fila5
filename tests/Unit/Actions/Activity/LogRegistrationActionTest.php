@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Actions\Activity;
 
+use PHPUnit\Framework\Assert;
 use Modules\User\Actions\Activity\LogRegistrationAction;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;

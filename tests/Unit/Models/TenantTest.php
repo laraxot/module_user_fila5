@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
 
+use Modules\User\Database\Factories\TenantFactory;
+use PHPUnit\Framework\Assert;
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Models\Tenant;
