@@ -2,95 +2,103 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
+namespace Modules\User\Tests\Feature\Filament\Widgets;
+
 use Filament\Widgets\Widget;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
+use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionClass;
 
-beforeEach(function () {
-    /* @var \Modules\User\Tests\TestCase $this */
-    $this->widget = new UserOverview();
-    $this->user = UserFactory::new()->createOne([
-        'type' => UserType::MasterAdmin,
-        'email' => 'admin-'.Str::lower(Str::random(10)).'@example.com',
-    ]);
-});
+final class UserOverviewTest extends TestCase
+{
+    protected function setUp(): void
+    {
+        parent::setUp();
 
-test('user overview widget extends correct base class', function (): void {
-    /** @var Modules\User\Tests\TestCase $this */
-    $widget = $this->requireWidget();
-    Assert::assertInstanceOf(Widget::class, $widget);
-});
+        $this->widget = new UserOverview();
+        $this->user = UserFactory::new()->createOne([
+            'type' => UserType::MasterAdmin,
+            'email' => 'admin-'.Str::lower(Str::random(10)).'@example.com',
+        ]);
+    }
 
-test('user overview widget has correct view', function (): void {
-    /** @var Modules\User\Tests\TestCase $this */
-    $widget = $this->requireWidget();
-    $reflection = new ReflectionClass(UserOverview::class);
-    $viewProperty = $reflection->getProperty('view');
-    $viewProperty->setAccessible(true);
+    public function testUserOverviewWidgetExtendsCorrectBaseClass(): void
+    {
+        $widget = $this->requireWidget();
+        Assert::assertInstanceOf(Widget::class, $widget);
+    }
 
-    Assert::assertSame('user::filament.resources.user-resource.widgets.user-overview', $viewProperty->getValue($widget));
-});
+    public function testUserOverviewWidgetHasCorrectView(): void
+    {
+        $widget = $this->requireWidget();
+        $reflection = new ReflectionClass(UserOverview::class);
+        $viewProperty = $reflection->getProperty('view');
+        $viewProperty->setAccessible(true);
 
-test('user overview widget has record property', function (): void {
-    /** @var Modules\User\Tests\TestCase $this */
-    $widget = $this->requireWidget();
-    Assert::assertInstanceOf(UserOverview::class, $widget);
-    Assert::assertNull($widget->record);
-});
+        Assert::assertSame('user::filament.resources.user-resource.widgets.user-overview', $viewProperty->getValue($widget));
+    }
 
-test('user overview widget can set record', function (): void {
-    /** @var Modules\User\Tests\TestCase $this */
-    $widget = $this->requireWidget();
-    Assert::assertInstanceOf(UserOverview::class, $widget);
-    $user = $this->requireUser();
-    $widget->record = $user;
+    public function testUserOverviewWidgetHasRecordProperty(): void
+    {
+        $widget = $this->requireWidget();
+        Assert::assertInstanceOf(UserOverview::class, $widget);
+        Assert::assertNull($widget->record);
+    }
 
-    Assert::assertSame($user, $widget->record);
-    Assert::assertInstanceOf(Model::class, $widget->record);
-});
+    public function testUserOverviewWidgetCanSetRecord(): void
+    {
+        $widget = $this->requireWidget();
+        Assert::assertInstanceOf(UserOverview::class, $widget);
+        $user = $this->requireUser();
+        $widget->record = $user;
 
-test('user overview widget record property is nullable', function (): void {
-    /** @var Modules\User\Tests\TestCase $this */
-    $reflection = new ReflectionClass(UserOverview::class);
-    $recordProperty = $reflection->getProperty('record');
+        Assert::assertSame($user, $widget->record);
+        Assert::assertInstanceOf(Model::class, $widget->record);
+    }
 
-    Assert::assertTrue($recordProperty->getType()?->allowsNull() ?? false);
-});
+    public function testUserOverviewWidgetRecordPropertyIsNullable(): void
+    {
+        $reflection = new ReflectionClass(UserOverview::class);
+        $recordProperty = $reflection->getProperty('record');
 
-test('user overview widget has correct namespace', function (): void {
-    /* @var \Modules\User\Tests\TestCase $this */
-    Assert::assertStringContainsString((string) 'Modules\User\Filament\Resources\UserResource\Widgets', (string) UserOverview::class);
-});
+        Assert::assertTrue($recordProperty->getType()?->allowsNull() ?? false);
+    }
 
-test('user overview widget can be instantiated', function (): void {
-    /** @var Modules\User\Tests\TestCase $this */
-    $widget = $this->requireWidget();
-    Assert::assertInstanceOf(UserOverview::class, $widget);
-});
+    public function testUserOverviewWidgetHasCorrectNamespace(): void
+    {
+        Assert::assertStringContainsString((string) 'Modules\User\Filament\Resources\UserResource\Widgets', (string) UserOverview::class);
+    }
 
-test('user overview widget has correct static properties', function (): void {
-    /** @var Modules\User\Tests\TestCase $this */
-    $reflection = new ReflectionClass(UserOverview::class);
-    $viewProperty = $reflection->getProperty('view');
-    $viewProperty->setAccessible(true);
+    public function testUserOverviewWidgetCanBeInstantiated(): void
+    {
+        $widget = $this->requireWidget();
+        Assert::assertInstanceOf(UserOverview::class, $widget);
+    }
 
-    Assert::assertFalse($viewProperty->isStatic());
-});
+    public function testUserOverviewWidgetHasCorrectStaticProperties(): void
+    {
+        $reflection = new ReflectionClass(UserOverview::class);
+        $viewProperty = $reflection->getProperty('view');
+        $viewProperty->setAccessible(true);
 
-test('user overview widget view path is correct', function (): void {
-    /** @var Modules\User\Tests\TestCase $this */
-    $widget = $this->requireWidget();
-    $reflection = new ReflectionClass(UserOverview::class);
-    $viewProperty = $reflection->getProperty('view');
-    $viewProperty->setAccessible(true);
+        Assert::assertFalse($viewProperty->isStatic());
+    }
 
-    $viewPath = $viewProperty->getValue($widget);
-    Assert::assertStringContainsString((string) 'user::', (string) $viewPath);
-    Assert::assertStringContainsString((string) 'widgets.user-overview', (string) $viewPath);
-});
+    public function testUserOverviewWidgetViewPathIsCorrect(): void
+    {
+        $widget = $this->requireWidget();
+        $reflection = new ReflectionClass(UserOverview::class);
+        $viewProperty = $reflection->getProperty('view');
+        $viewProperty->setAccessible(true);
+
+        $viewPath = $viewProperty->getValue($widget);
+        Assert::assertStringContainsString((string) 'user::', (string) $viewPath);
+        Assert::assertStringContainsString((string) 'widgets.user-overview', (string) $viewPath);
+    }
+}

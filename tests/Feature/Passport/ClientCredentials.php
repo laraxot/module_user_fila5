@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
+namespace Modules\User\Tests\Feature\Passport;
+
 use Laravel\Passport\Client;
 use Laravel\Passport\ClientRepository;
 use Modules\User\Database\Factories\UserFactory;
-use PHPUnit\Framework\Assert;
+use Modules\User\Tests\TestCase;
 
 /**
  * @return array{client: Client, secret: string}
@@ -22,37 +23,40 @@ function createPassportClient(): array
     return ['client' => $client, 'secret' => $secret];
 }
 
-test('client credentials grant returns token', function (): void {
-    /* @var \Modules\User\Tests\TestCase $this */
-    ['client' => $client, 'secret' => $secret] = createPassportClient();
+class ClientCredentials extends TestCase
+{
+    public function test_client_credentials_grant_returns_token(): void
+    {
+        ['client' => $client, 'secret' => $secret] = createPassportClient();
 
-    $response = $this->post('/oauth/token', [
-        'grant_type' => 'client_credentials',
-        'client_id' => $client->id,
-        'client_secret' => $secret,
-        'scope' => '',
-    ]);
+        $response = $this->post('/oauth/token', [
+            'grant_type' => 'client_credentials',
+            'client_id' => $client->id,
+            'client_secret' => $secret,
+            'scope' => '',
+        ]);
 
-    $response->assertOk()
-        ->assertJsonStructure(['token_type', 'expires_in', 'access_token'])
-        ->assertJsonPath('token_type', 'Bearer');
-});
+        $response->assertOk()
+            ->assertJsonStructure(['token_type', 'expires_in', 'access_token'])
+            ->assertJsonPath('token_type', 'Bearer');
+    }
 
-test('client credentials can be associated to a specific user', function (): void {
-    /* @var \Modules\User\Tests\TestCase $this */
-    ['client' => $client] = createPassportClient();
-    $user = UserFactory::new()->createOne();
+    public function test_client_credentials_can_be_associated_to_a_specific_user(): void
+    {
+        ['client' => $client] = createPassportClient();
+        $user = UserFactory::new()->createOne();
 
-    $client->owner()->associate($user);
-    $client->forceFill([
-        'user_id' => $user->getKey(),
-        'owner_id' => (string) $user->getKey(),
-        'owner_type' => $user::class,
-    ]);
-    $client->save();
-    $client->refresh();
+        $client->owner()->associate($user);
+        $client->forceFill([
+            'user_id' => $user->getKey(),
+            'owner_id' => (string) $user->getKey(),
+            'owner_type' => $user::class,
+        ]);
+        $client->save();
+        $client->refresh();
 
-    Assert::assertNotNull($client->owner);
-    Assert::assertTrue($client->owner->is($user));
-    Assert::assertSame($user->getKey(), $client->getAttribute('user_id'));
-});
+        $this->assertNotNull($client->owner);
+        $this->assertTrue($client->owner->is($user));
+        $this->assertSame($user->getKey(), $client->getAttribute('user_id'));
+    }
+}

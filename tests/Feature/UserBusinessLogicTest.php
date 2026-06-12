@@ -2,9 +2,8 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Support\Facades\DB;
+namespace Modules\User\Tests\Feature;
+
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Database\Factories\PermissionFactory;
@@ -12,335 +11,322 @@ use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
-use PHPUnit\Framework\Assert;
+use Modules\User\Tests\TestCase;
 
-describe('User Business Logic Integration', function () {
-    describe('User Authentication Business Rules', function () {
-        it('enforces password complexity requirements', function () {
-            /** @var Modules\User\Tests\TestCase $this */
-            $weakPassword = '123456';
-            $strongPassword = 'SecurePass123!';
+class UserBusinessLogicTest extends TestCase
+{
+    public function test_enforces_password_complexity_requirements(): void
+    {
+        $weakPassword = '123456';
+        $strongPassword = 'SecurePass123!';
 
-            $weakUser = createTestUser(['password' => Hash::make($weakPassword)]);
-            $strongUser = createTestUser(['password' => Hash::make($strongPassword)]);
+        $weakUser = createTestUser(['password' => Hash::make($weakPassword)]);
+        $strongUser = createTestUser(['password' => Hash::make($strongPassword)]);
 
-            Assert::assertNotSame($weakPassword, $weakUser->password);
-            Assert::assertNotSame($strongPassword, $strongUser->password);
-            Assert::assertTrue(Hash::check($weakPassword, (string) $weakUser->password));
-            Assert::assertTrue(Hash::check($strongPassword, (string) $strongUser->password));
-        });
+        $this->assertNotSame($weakPassword, $weakUser->password);
+        $this->assertNotSame($strongPassword, $strongUser->password);
+        $this->assertTrue(Hash::check($weakPassword, (string) $weakUser->password));
+        $this->assertTrue(Hash::check($strongPassword, (string) $strongUser->password));
+    }
 
-        it('enforces email uniqueness across the system', function () {
-            /** @var Modules\User\Tests\TestCase $this */
-            $email = 'unique-'.uniqid('', true).'@example.com';
+    public function test_enforces_email_uniqueness_across_the_system(): void
+    {
+        $email = 'unique-'.uniqid('', true).'@example.com';
 
+        createTestUser(['email' => $email]);
+    }
+
+    public function test_enforces_username_uniqueness_when_required(): void
+    {
+        if (! $this->userTableHasColumn('users', 'username')) {
+            $email = 'alias-'.uniqid('', true).'@example.com';
             createTestUser(['email' => $email]);
-        });
 
-        it('enforces username uniqueness when required', function () {
-            /** @var Modules\User\Tests\TestCase $this */
-            if (! $this->userTableHasColumn('users', 'username')) {
-                $email = 'alias-'.uniqid('', true).'@example.com';
-                createTestUser(['email' => $email]);
+            return;
+        }
 
-                return;
-            }
+        $username = 'user-'.uniqid();
+        createTestUser(['username' => $username]);
+    }
 
-            $username = 'user-'.uniqid();
-            createTestUser(['username' => $username]);
-        });
-    });
+    public function test_enforces_profile_completion_requirements(): void
+    {
+        $user = createTestUser([
+            'first_name' => null,
+            'last_name' => null,
+        ]);
 
-    describe('User Profile Business Rules', function () {
-        it('enforces profile completion requirements', function () {
-            /** @var Modules\User\Tests\TestCase $this */
-            $user = createTestUser([
-                'first_name' => null,
-                'last_name' => null,
-            ]);
+        $this->assertNull($user->first_name);
+        $this->assertNull($user->last_name);
+        $user->update([
+            'first_name' => 'Mario',
+            'last_name' => 'Rossi',
+        ]);
 
-            Assert::assertNull($user->first_name);
-            Assert::assertNull($user->last_name);
-            $user->update([
-                'first_name' => 'Mario',
-                'last_name' => 'Rossi',
-            ]);
+        $user->refresh();
+        $this->assertSame('Mario', $user->first_name);
+        $this->assertSame('Rossi', $user->last_name);
+    }
 
-            $user->refresh();
-            Assert::assertSame('Mario', $user->first_name);
-            Assert::assertSame('Rossi', $user->last_name);
-        });
+    public function test_enforces_data_validation_rules(): void
+    {
+        $user = createTestUser([
+            'first_name' => 'Mario',
+            'last_name' => 'Rossi',
+            'email' => 'mario.rossi-'.uniqid().'@example.com',
+        ]);
 
-        it('enforces data validation rules', function () {
-            /** @var Modules\User\Tests\TestCase $this */
-            $user = createTestUser([
-                'first_name' => 'Mario',
-                'last_name' => 'Rossi',
-                'email' => 'mario.rossi-'.uniqid().'@example.com',
-            ]);
+        $this->assertStringContainsString('@example.com', (string) $user->email);
+        $this->assertSame('Mario Rossi', $user->full_name);
+        $user->update(['first_name' => 'Marco']);
+        $user->refresh();
 
-            Assert::assertStringContainsString('@example.com', (string) $user->email);
-            Assert::assertSame('Mario Rossi', $user->full_name);
-            $user->update(['first_name' => 'Marco']);
-            $user->refresh();
+        $this->assertSame('Marco', $user->first_name);
+        $this->assertSame('Marco Rossi', $user->full_name);
+    }
 
-            Assert::assertSame('Marco', $user->first_name);
-            Assert::assertSame('Marco Rossi', $user->full_name);
-        });
+    public function test_enforces_age_restrictions_for_certain_operations(): void
+    {
+        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+            $this->markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
+        }
 
-        it('enforces age restrictions for certain operations', function () {
-            /* @var \Modules\User\Tests\TestCase $this */
-            if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
-                $this->markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
-            }
+        if (! Schema::connection('fixcity')->hasColumn('profiles', 'birth_date')) {
+            $this->markTestSkipped('profiles.birth_date column missing on fixcity connection.');
+        }
 
-            if (! Schema::connection('fixcity')->hasColumn('profiles', 'birth_date')) {
-                $this->markTestSkipped('profiles.birth_date column missing on fixcity connection.');
-            }
+        $underageBirthDate = now()->subYears(16)->toDateString();
+        $adultBirthDate = now()->subYears(25)->toDateString();
 
-            $underageBirthDate = now()->subYears(16)->toDateString();
-            $adultBirthDate = now()->subYears(25)->toDateString();
+        $underageUser = createTestUser();
+        $adultUser = createTestUser();
 
-            $underageUser = createTestUser();
-            $adultUser = createTestUser();
+        $underageUser->profile()->create(['birth_date' => $underageBirthDate]);
+        $adultUser->profile()->create(['birth_date' => $adultBirthDate]);
 
-            $underageUser->profile()->create(['birth_date' => $underageBirthDate]);
-            $adultUser->profile()->create(['birth_date' => $adultBirthDate]);
+        $underageProfile = $underageUser->profile;
+        $adultProfile = $adultUser->profile;
+        $this->assertInstanceOf(Profile::class, $underageProfile);
+        $this->assertInstanceOf(Profile::class, $adultProfile);
 
-            $underageProfile = $underageUser->profile;
-            $adultProfile = $adultUser->profile;
-            Assert::assertInstanceOf(Profile::class, $underageProfile);
-            Assert::assertInstanceOf(Profile::class, $adultProfile);
+        $underageAge = now()->diffInYears($underageProfile->birth_date);
+        $adultAge = now()->diffInYears($adultProfile->birth_date);
 
-            $underageAge = now()->diffInYears($underageProfile->birth_date);
-            $adultAge = now()->diffInYears($adultProfile->birth_date);
+        $this->assertLessThan(18, $underageAge);
+        $this->assertGreaterThan(17, $adultAge);
+    }
 
-            Assert::assertLessThan(18, $underageAge);
-            Assert::assertGreaterThan(17, $adultAge);
-        });
-    });
+    public function test_enforces_team_membership_limits(): void
+    {
+        $user = createTestUser();
+        /** @var \Illuminate\Database\Eloquent\Collection<int, Team> $teams */
+        $teams = TeamFactory::new()->count(5)->create();
 
-    describe('Team Management Business Rules', function () {
-        it('enforces team membership limits', function () {
-            /** @var Modules\User\Tests\TestCase $this */
-            $user = createTestUser();
-            /** @var Collection<int, Team> $teams */
-            $teams = TeamFactory::new()->count(5)->create();
+        foreach ($teams as $team) {
+            $user->teams()->attach($team->id);
+        }
 
-            foreach ($teams as $team) {
-                $user->teams()->attach($team->id);
-            }
+        $freshUser = $user->fresh();
+        $this->assertNotNull($freshUser);
+        $this->assertCount(5, $freshUser->teams);
 
-            $freshUser = $user->fresh();
-            Assert::assertNotNull($freshUser);
-            Assert::assertCount(5, $freshUser->teams);
+        $firstTeam = $teams->first();
+        $this->assertInstanceOf(Team::class, $firstTeam);
+        $this->assertTrue($this->teamMemberExists($firstTeam, $user));
+    }
 
-            $firstTeam = $teams->first();
-            Assert::assertInstanceOf(Team::class, $firstTeam);
-            Assert::assertTrue($this->teamMemberExists($firstTeam, $user));
-        });
+    public function test_enforces_team_role_hierarchy(): void
+    {
+        $user = createTestUser();
+        $team = TeamFactory::new()->createOne();
 
-        it('enforces team role hierarchy', function () {
-            /** @var Modules\User\Tests\TestCase $this */
-            $user = createTestUser();
-            $team = TeamFactory::new()->createOne();
+        $this->attachTeamMember($team, $user, ['role' => 'member']);
 
-            $this->attachTeamMember($team, $user, ['role' => 'member']);
+        $this->assertDatabaseHasRow('team_user', [
+            'team_id' => $team->id,
+            'user_id' => $user->id,
+            'role' => 'member',
+        ], 'user');
+    }
 
-            $this->assertDatabaseHasRow('team_user', [
-                'team_id' => $team->id,
-                'user_id' => $user->id,
-                'role' => 'member',
-            ], 'user');
-        });
+    public function test_enforces_team_ownership_rules(): void
+    {
+        $owner = createTestUser();
+        $member = createTestUser();
+        $team = TeamFactory::new()->createOne(['user_id' => $owner->id]);
 
-        it('enforces team ownership rules', function () {
-            /** @var Modules\User\Tests\TestCase $this */
-            $owner = createTestUser();
-            $member = createTestUser();
-            $team = TeamFactory::new()->createOne(['user_id' => $owner->id]);
+        $this->assertSame($owner->id, $team->user_id);
+        $this->attachTeamMember($team, $member, ['role' => 'member']);
 
-            Assert::assertSame($owner->id, $team->user_id);
-            $this->attachTeamMember($team, $member, ['role' => 'member']);
+        $freshTeam = $team->fresh();
+        $this->assertNotNull($freshTeam);
+        $this->assertSame($owner->id, $freshTeam->user_id);
+        $this->assertFalse($member->ownsTeam($team));
+    }
 
-            $freshTeam = $team->fresh();
-            Assert::assertNotNull($freshTeam);
-            Assert::assertSame($owner->id, $freshTeam->user_id);
-            Assert::assertFalse($member->ownsTeam($team));
-        });
-    });
+    public function test_enforces_permission_inheritance(): void
+    {
+        $user = createTestUser();
+        $role = RoleFactory::new()->createOne(['name' => 'editor-'.uniqid()]);
+        $permission = PermissionFactory::new()->createOne(['name' => 'edit_posts-'.uniqid()]);
 
-    describe('Permission and Role Business Rules', function () {
-        it('enforces permission inheritance', function () {
-            /** @var Modules\User\Tests\TestCase $this */
-            $user = createTestUser();
-            $role = RoleFactory::new()->createOne(['name' => 'editor-'.uniqid()]);
-            $permission = PermissionFactory::new()->createOne(['name' => 'edit_posts-'.uniqid()]);
+        $user->assignRole($role);
+        $role->givePermissionTo($permission);
 
-            $user->assignRole($role);
-            $role->givePermissionTo($permission);
+        $this->assertStringContainsString((string) $permission->name, (string) $role->permissions->pluck('name'));
+        $this->assertStringContainsString((string) $role->name, (string) $user->roles->pluck('name'));
+    }
 
-            Assert::assertStringContainsString((string) $permission->name, (string) $role->permissions->pluck('name'));
-            Assert::assertStringContainsString((string) $role->name, (string) $user->roles->pluck('name'));
-        });
+    public function test_enforces_permission_conflicts(): void
+    {
+        if (! $this->userTableExists('model_has_permission')) {
+            $this->markTestSkipped('model_has_permission table missing on user connection.');
+        }
 
-        it('enforces permission conflicts', function () {
-            /** @var Modules\User\Tests\TestCase $this */
-            if (! $this->userTableExists('model_has_permission')) {
-                $this->markTestSkipped('model_has_permission table missing on user connection.');
-            }
+        $user = createTestUser();
+        $uid = uniqid();
 
-            $user = createTestUser();
-            $uid = uniqid();
+        $readPermission = PermissionFactory::new()->createOne(['name' => 'read_posts-'.$uid]);
+        $writePermission = PermissionFactory::new()->createOne(['name' => 'write_posts-'.$uid]);
+        $deletePermission = PermissionFactory::new()->createOne(['name' => 'delete_posts-'.$uid]);
 
-            $readPermission = PermissionFactory::new()->createOne(['name' => 'read_posts-'.$uid]);
-            $writePermission = PermissionFactory::new()->createOne(['name' => 'write_posts-'.$uid]);
-            $deletePermission = PermissionFactory::new()->createOne(['name' => 'delete_posts-'.$uid]);
+        $user->givePermissionTo([
+            $readPermission,
+            $writePermission,
+            $deletePermission,
+        ]);
 
-            $user->givePermissionTo([
-                $readPermission,
-                $writePermission,
-                $deletePermission,
-            ]);
+        $this->assertCount(3, $user->permissions);
+        $userPermissions = $user->permissions->pluck('name')->toArray();
+        $this->assertContains('read_posts-'.$uid, $userPermissions);
+        $this->assertContains('write_posts-'.$uid, $userPermissions);
+        $this->assertContains('delete_posts-'.$uid, $userPermissions);
+    }
 
-            Assert::assertCount(3, $user->permissions);
-            $userPermissions = $user->permissions->pluck('name')->toArray();
-            Assert::assertContains('read_posts-'.$uid, $userPermissions);
-            Assert::assertContains('write_posts-'.$uid, $userPermissions);
-            Assert::assertContains('delete_posts-'.$uid, $userPermissions);
-        });
+    public function test_enforces_role_based_access_control(): void
+    {
+        $admin = createTestUser();
+        $moderator = createTestUser();
+        $user = createTestUser();
 
-        it('enforces role-based access control', function () {
-            /** @var Modules\User\Tests\TestCase $this */
-            $admin = createTestUser();
-            $moderator = createTestUser();
-            $user = createTestUser();
+        $adminRole = RoleFactory::new()->createOne(['name' => 'admin-'.uniqid()]);
+        $moderatorRole = RoleFactory::new()->createOne(['name' => 'moderator-'.uniqid()]);
+        $userRole = RoleFactory::new()->createOne(['name' => 'user-'.uniqid()]);
 
-            $adminRole = RoleFactory::new()->createOne(['name' => 'admin-'.uniqid()]);
-            $moderatorRole = RoleFactory::new()->createOne(['name' => 'moderator-'.uniqid()]);
-            $userRole = RoleFactory::new()->createOne(['name' => 'user-'.uniqid()]);
+        $admin->assignRole($adminRole);
+        $moderator->assignRole($moderatorRole);
+        $user->assignRole($userRole);
 
-            $admin->assignRole($adminRole);
-            $moderator->assignRole($moderatorRole);
-            $user->assignRole($userRole);
+        $this->assertTrue($admin->hasRole($adminRole));
+        $this->assertTrue($moderator->hasRole($moderatorRole));
+        $this->assertTrue($user->hasRole($userRole));
+        $this->assertFalse($admin->hasRole($userRole));
+    }
 
-            Assert::assertTrue($admin->hasRole($adminRole));
-            Assert::assertTrue($moderator->hasRole($moderatorRole));
-            Assert::assertTrue($user->hasRole($userRole));
-            Assert::assertFalse($admin->hasRole($userRole));
-        });
-    });
+    public function test_enforces_referential_integrity_for_user_relationships(): void
+    {
+        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+            $this->markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
+        }
 
-    describe('Data Integrity Business Rules', function () {
-        it('enforces referential integrity for user relationships', function () {
-            /* @var \Modules\User\Tests\TestCase $this */
-            if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
-                $this->markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
-            }
+        $user = createTestUser();
+        /** @var Profile $profile */
+        $profile = $user->profile()->create([
+            'first_name' => 'Mario',
+            'last_name' => 'Rossi',
+        ]);
+        $this->assertInstanceOf(Profile::class, $profile);
 
-            $user = createTestUser();
-            /** @var Profile $profile */
-            /** @var Profile $profile */
-            /** @var Profile $profile */
-            $profile = $user->profile()->create([
-                'first_name' => 'Mario',
-                'last_name' => 'Rossi',
-            ]);
-            Assert::assertInstanceOf(Profile::class, $profile);
+        $this->assertSame($user->id, $profile->user_id);
+        $user->delete();
 
-            Assert::assertSame($user->id, $profile->user_id);
-            $user->delete();
+        $this->assertTrue(Profile::query()->where('id', $profile->id)->exists());
+        $freshProfile = $profile->fresh();
+        $this->assertNotNull($freshProfile);
+        $this->assertSame($user->id, $freshProfile->user_id);
+    }
 
-            Assert::assertTrue(Profile::query()->where('id', $profile->id)->exists());
-            $freshProfile = $profile->fresh();
-            Assert::assertNotNull($freshProfile);
-            Assert::assertSame($user->id, $freshProfile->user_id);
-        });
+    public function test_enforces_data_consistency_across_user_attributes(): void
+    {
+        $user = createTestUser([
+            'first_name' => 'Mario',
+            'last_name' => 'Rossi',
+            'email' => 'mario.rossi-'.uniqid().'@example.com',
+        ]);
 
-        it('enforces data consistency across user attributes', function () {
-            /** @var Modules\User\Tests\TestCase $this */
-            $user = createTestUser([
-                'first_name' => 'Mario',
-                'last_name' => 'Rossi',
-                'email' => 'mario.rossi-'.uniqid().'@example.com',
-            ]);
+        $this->assertSame('Mario Rossi', $user->full_name);
+        $this->assertStringContainsString('mario.rossi-', (string) $user->email);
+        $user->update([
+            'first_name' => 'Marco',
+            'email' => 'marco.rossi-'.uniqid().'@example.com',
+        ]);
 
-            Assert::assertSame('Mario Rossi', $user->full_name);
-            Assert::assertStringContainsString('mario.rossi-', (string) $user->email);
-            $user->update([
-                'first_name' => 'Marco',
-                'email' => 'marco.rossi-'.uniqid().'@example.com',
-            ]);
+        $user->refresh();
+        $this->assertSame('Marco Rossi', $user->full_name);
+        $this->assertStringContainsString('marco.rossi-', (string) $user->email);
+    }
 
-            $user->refresh();
-            Assert::assertSame('Marco Rossi', $user->full_name);
-            Assert::assertStringContainsString('marco.rossi-', (string) $user->email);
-        });
+    public function test_enforces_audit_trail_for_sensitive_operations(): void
+    {
+        $user = createTestUser();
+        $originalEmail = $user->email;
+        $originalUpdatedAt = $user->updated_at;
+        $this->assertNotNull($originalUpdatedAt);
 
-        it('enforces audit trail for sensitive operations', function () {
-            /** @var Modules\User\Tests\TestCase $this */
-            $user = createTestUser();
-            $originalEmail = $user->email;
-            $originalUpdatedAt = $user->updated_at;
-            Assert::assertNotNull($originalUpdatedAt);
+        $user->update(['email' => 'newemail-'.uniqid().'@example.com']);
 
-            $user->update(['email' => 'newemail-'.uniqid().'@example.com']);
+        $user->refresh();
+        $this->assertNotNull($user->updated_at);
+        $this->assertTrue($user->updated_at->greaterThanOrEqualTo($originalUpdatedAt));
+        $this->assertNotSame($originalEmail, $user->email);
+    }
 
-            $user->refresh();
-            Assert::assertNotNull($user->updated_at);
-            Assert::assertTrue($user->updated_at->greaterThanOrEqualTo($originalUpdatedAt));
-            Assert::assertNotSame($originalEmail, $user->email);
-        });
-    });
+    public function test_enforces_password_expiration_policies(): void
+    {
+        $user = createTestUser([
+            'password_expires_at' => now()->subDays(1),
+        ]);
 
-    describe('Security Business Rules', function () {
-        it('enforces password expiration policies', function () {
-            /** @var Modules\User\Tests\TestCase $this */
-            $user = createTestUser([
-                'password_expires_at' => now()->subDays(1),
-            ]);
+        $this->assertTrue($user->password_expires_at?->isPast() ?? false);
+        $user->update([
+            'password' => Hash::make('NewPassword123!'),
+            'password_expires_at' => now()->addDays(90),
+        ]);
 
-            Assert::assertTrue($user->password_expires_at?->isPast() ?? false);
-            $user->update([
-                'password' => Hash::make('NewPassword123!'),
-                'password_expires_at' => now()->addDays(90),
-            ]);
+        $user->refresh();
+        $this->assertTrue($user->password_expires_at?->isFuture() ?? false);
+    }
 
-            $user->refresh();
-            Assert::assertTrue($user->password_expires_at?->isFuture() ?? false);
-        });
+    public function test_enforces_account_lockout_policies(): void
+    {
+        $user = createTestUser(['is_active' => true]);
 
-        it('enforces account lockout policies', function () {
-            /** @var Modules\User\Tests\TestCase $this */
-            $user = createTestUser(['is_active' => true]);
+        $this->assertTrue($user->is_active);
+        $user->update(['is_active' => false]);
+        $user->refresh();
 
-            Assert::assertTrue($user->is_active);
-            $user->update(['is_active' => false]);
-            $user->refresh();
+        $this->assertFalse($user->is_active);
+        $user->update(['is_active' => true]);
+        $user->refresh();
 
-            Assert::assertFalse($user->is_active);
-            $user->update(['is_active' => true]);
-            $user->refresh();
+        $this->assertTrue($user->is_active);
+    }
 
-            Assert::assertTrue($user->is_active);
-        });
+    public function test_enforces_session_management_policies(): void
+    {
+        $user = createTestUser();
+        $staleTimestamp = now()->subMinutes(30);
 
-        it('enforces session management policies', function () {
-            /** @var Modules\User\Tests\TestCase $this */
-            $user = createTestUser();
-            $staleTimestamp = now()->subMinutes(30);
+        \Illuminate\Support\Facades\DB::connection('user')->table('users')
+            ->where('id', $user->id)
+            ->update(['updated_at' => $staleTimestamp]);
 
-            DB::connection('user')->table('users')
-                ->where('id', $user->id)
-                ->update(['updated_at' => $staleTimestamp]);
+        $user->refresh();
 
-            $user->refresh();
+        $this->assertTrue($user->updated_at?->lt(now()->subMinutes(20)) ?? false);
+        $user->touch();
+        $user->refresh();
 
-            Assert::assertTrue($user->updated_at?->lt(now()->subMinutes(20)) ?? false);
-            $user->touch();
-            $user->refresh();
-
-            Assert::assertTrue($user->updated_at?->greaterThan($staleTimestamp) ?? false);
-        });
-    });
-});
+        $this->assertTrue($user->updated_at?->greaterThan($staleTimestamp) ?? false);
+    }
+}

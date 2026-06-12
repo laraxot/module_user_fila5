@@ -2,17 +2,13 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
+namespace Modules\User\Tests\Unit;
+
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
-use PHPUnit\Framework\Assert;
-
-beforeEach(function () {
-    /* @var \Modules\User\Tests\TestCase $this */
-    $this->skipUnlessUsersTableReady();
-});
+use Modules\User\Tests\TestCase;
 
 /**
  * @param array<string, mixed> $attributes
@@ -37,86 +33,96 @@ function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
     ], $attributes));
 }
 
-test('has teams currentTeam does not crash when user has no teams', function (): void {
-    /** @var Modules\User\Tests\TestCase $this */
-    $user = hasTeamsCurrentCreateUser();
+class HasTeamsTraitCurrentTeamTest extends TestCase
+{
+    protected function setUp(): void
+    {
+        parent::setUp();
 
-    Assert::assertNull($user->currentTeam);
-    Assert::assertInstanceOf(BelongsTo::class, $user->currentTeam());
-});
+        $this->skipUnlessUsersTableReady();
+    }
 
-test('has teams currentTeam is side effect free', function (): void {
-    /** @var Modules\User\Tests\TestCase $this */
-    $user = hasTeamsCurrentCreateUser(['current_team_id' => null]);
+    public function test_has_teams_current_team_does_not_crash_when_user_has_no_teams(): void
+    {
+        $user = hasTeamsCurrentCreateUser();
 
-    Assert::assertNull($user->currentTeam);
-    Assert::assertNull($user->currentTeam);
+        $this->assertNull($user->currentTeam);
+        $this->assertInstanceOf(BelongsTo::class, $user->currentTeam());
+    }
 
-    $user->refresh();
-    Assert::assertNull($user->current_team_id);
-});
+    public function test_has_teams_current_team_is_side_effect_free(): void
+    {
+        $user = hasTeamsCurrentCreateUser(['current_team_id' => null]);
 
-test('has teams currentTeam can access personal team when available', function (): void {
-    /** @var Modules\User\Tests\TestCase $this */
-    $user = hasTeamsCurrentCreateUser();
-    $personalTeam = hasTeamsCurrentCreateTeam($user, [
-        'name' => 'Personal Team',
-        'personal_team' => true,
-    ]);
+        $this->assertNull($user->currentTeam);
+        $this->assertNull($user->currentTeam);
 
-    $user->current_team_id = (int) $personalTeam->id;
-    $user->save();
-    $user->refresh();
+        $user->refresh();
+        $this->assertNull($user->current_team_id);
+    }
 
-    Assert::assertInstanceOf(Team::class, $user->currentTeam);
-    Assert::assertSame($personalTeam->id, $user->currentTeam->id);
-});
+    public function test_has_teams_current_team_can_access_personal_team_when_available(): void
+    {
+        $user = hasTeamsCurrentCreateUser();
+        $personalTeam = hasTeamsCurrentCreateTeam($user, [
+            'name' => 'Personal Team',
+            'personal_team' => true,
+        ]);
 
-test('has teams currentTeam does not override existing current_team_id', function (): void {
-    /** @var Modules\User\Tests\TestCase $this */
-    $user = hasTeamsCurrentCreateUser();
-    $team1 = hasTeamsCurrentCreateTeam($user, ['name' => 'Team 1', 'personal_team' => false]);
-    hasTeamsCurrentCreateTeam($user, ['name' => 'Team 2', 'personal_team' => true]);
+        $user->current_team_id = (int) $personalTeam->id;
+        $user->save();
+        $user->refresh();
 
-    $user->current_team_id = (int) $team1->id;
-    $user->save();
+        $this->assertInstanceOf(Team::class, $user->currentTeam);
+        $this->assertSame($personalTeam->id, $user->currentTeam->id);
+    }
 
-    Assert::assertInstanceOf(Team::class, $user->currentTeam);
+    public function test_has_teams_current_team_does_not_override_existing_current_team_id(): void
+    {
+        $user = hasTeamsCurrentCreateUser();
+        $team1 = hasTeamsCurrentCreateTeam($user, ['name' => 'Team 1', 'personal_team' => false]);
+        hasTeamsCurrentCreateTeam($user, ['name' => 'Team 2', 'personal_team' => true]);
 
-    $user->refresh();
-    Assert::assertSame($team1->id, $user->current_team_id);
-});
+        $user->current_team_id = (int) $team1->id;
+        $user->save();
 
-test('has teams switchTeam can change current team', function (): void {
-    /** @var Modules\User\Tests\TestCase $this */
-    $user = hasTeamsCurrentCreateUser();
-    $team1 = hasTeamsCurrentCreateTeam($user, ['name' => 'Team 1', 'personal_team' => false]);
-    $team2 = hasTeamsCurrentCreateTeam($user, ['name' => 'Team 2', 'personal_team' => true]);
+        $this->assertInstanceOf(Team::class, $user->currentTeam);
 
-    $this->attachTeamMember($team1, $user);
-    $this->attachTeamMember($team2, $user);
+        $user->refresh();
+        $this->assertSame($team1->id, $user->current_team_id);
+    }
 
-    $result = $user->switchTeam($team1);
+    public function test_has_teams_switch_team_can_change_current_team(): void
+    {
+        $user = hasTeamsCurrentCreateUser();
+        $team1 = hasTeamsCurrentCreateTeam($user, ['name' => 'Team 1', 'personal_team' => false]);
+        $team2 = hasTeamsCurrentCreateTeam($user, ['name' => 'Team 2', 'personal_team' => true]);
 
-    Assert::assertTrue($result);
-    $user->refresh();
-    Assert::assertSame($team1->id, $user->current_team_id);
-});
+        $this->attachTeamMember($team1, $user);
+        $this->attachTeamMember($team2, $user);
 
-test('has teams currentTeam supports repeated access', function (): void {
-    /** @var Modules\User\Tests\TestCase $this */
-    $user = hasTeamsCurrentCreateUser();
-    $team = hasTeamsCurrentCreateTeam($user, ['name' => 'Test Team', 'personal_team' => true]);
+        $result = $user->switchTeam($team1);
 
-    $user->current_team_id = (int) $team->id;
-    $user->save();
-    $user->refresh();
+        $this->assertTrue($result);
+        $user->refresh();
+        $this->assertSame($team1->id, $user->current_team_id);
+    }
 
-    $currentTeam1 = $user->currentTeam;
-    $currentTeam2 = $user->currentTeam;
+    public function test_has_teams_current_team_supports_repeated_access(): void
+    {
+        $user = hasTeamsCurrentCreateUser();
+        $team = hasTeamsCurrentCreateTeam($user, ['name' => 'Test Team', 'personal_team' => true]);
 
-    Assert::assertInstanceOf(Team::class, $currentTeam1);
-    Assert::assertInstanceOf(Team::class, $currentTeam2);
-    Assert::assertSame($team->id, $currentTeam1->id);
-    Assert::assertSame($team->id, $currentTeam2->id);
-});
+        $user->current_team_id = (int) $team->id;
+        $user->save();
+        $user->refresh();
+
+        $currentTeam1 = $user->currentTeam;
+        $currentTeam2 = $user->currentTeam;
+
+        $this->assertInstanceOf(Team::class, $currentTeam1);
+        $this->assertInstanceOf(Team::class, $currentTeam2);
+        $this->assertSame($team->id, $currentTeam1->id);
+        $this->assertSame($team->id, $currentTeam2->id);
+    }
+}

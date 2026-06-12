@@ -2,27 +2,31 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
+namespace Modules\User\Tests\Unit\Traits;
+
+use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesFixture;
 use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesMockableFixture;
 use Modules\User\Traits\PasswordValidationRules;
-use PHPUnit\Framework\Assert;
 use ReflectionClass;
 
-test('PasswordValidationRules trait can be used', function (): void {
-    /* @var \Modules\User\Tests\TestCase $this */
-    Assert::assertTrue(trait_exists(PasswordValidationRules::class));
-    Assert::assertInstanceOf(PasswordValidationRulesFixture::class, new PasswordValidationRulesFixture());
-});
+class PasswordValidationRulesTest extends TestCase
+{
+    public function test_password_validation_rules_trait_can_be_used(): void
+    {
+        $this->assertTrue(trait_exists(PasswordValidationRules::class));
+        $this->assertInstanceOf(PasswordValidationRulesFixture::class, new PasswordValidationRulesFixture());
+    }
 
-test('PasswordValidationRules trait provides passwordRules method', function (): void {
-    /** @var Modules\User\Tests\TestCase $this */
-    $reflection = new ReflectionClass(PasswordValidationRules::class);
+    public function test_password_validation_rules_trait_provides_password_rules_method(): void
+    {
+        $reflection = new ReflectionClass(PasswordValidationRules::class);
 
-    Assert::assertTrue($reflection->hasMethod('passwordRules'));
-    $fixture = new PasswordValidationRulesMockableFixture();
-    $rules = $fixture->getPasswordRules();
+        $this->assertTrue($reflection->hasMethod('passwordRules'));
+        $fixture = new PasswordValidationRulesMockableFixture();
+        $rules = $fixture->getPasswordRules();
 
-    Assert::assertCount(3, $rules);
-    Assert::assertSame(['required', 'string', 'confirmed'], $rules);
-});
+        $this->assertCount(3, $rules);
+        $this->assertSame(['required', 'string', 'confirmed'], $rules);
+    }
+}

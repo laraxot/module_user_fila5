@@ -2,7 +2,8 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
+namespace Modules\User\Tests\Unit\Events;
+
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Events\AddingTeam;
@@ -15,96 +16,98 @@ use Modules\User\Events\TeamMemberUpdated;
 use Modules\User\Events\TeamSwitched;
 use Modules\User\Events\TwoFactorAuthenticationDisabled;
 use Modules\User\Events\TwoFactorAuthenticationEnabled;
-use PHPUnit\Framework\Assert;
+use Modules\User\Tests\TestCase;
 
-// Using mock for contracts since they are interfaces
-test('RecoveryCodesGenerated event can be instantiated', function () {
-    /** @var Modules\User\Tests\TestCase $this */
-    $user = UserFactory::new()->makeOne();
-    $event = new RecoveryCodesGenerated($user);
+class EventClassesTest extends TestCase
+{
+    public function test_recovery_codes_generated_event_can_be_instantiated(): void
+    {
+        $user = UserFactory::new()->makeOne();
+        $event = new RecoveryCodesGenerated($user);
 
-    Assert::assertInstanceOf(RecoveryCodesGenerated::class, $event);
-    Assert::assertSame($user, $event->userContract);
-});
+        $this->assertInstanceOf(RecoveryCodesGenerated::class, $event);
+        $this->assertSame($user, $event->userContract);
+    }
 
-test('TeamMemberAdded event can be instantiated', function () {
-    /** @var Modules\User\Tests\TestCase $this */
-    $team = typedMock(TeamContract::class);
-    $user = UserFactory::new()->makeOne();
-    $event = new TeamMemberAdded($team, $user);
+    public function test_team_member_added_event_can_be_instantiated(): void
+    {
+        $team = typedMock(TeamContract::class);
+        $user = UserFactory::new()->makeOne();
+        $event = new TeamMemberAdded($team, $user);
 
-    Assert::assertInstanceOf(TeamMemberAdded::class, $event);
-});
+        $this->assertInstanceOf(TeamMemberAdded::class, $event);
+    }
 
-test('TeamMemberRemoved event can be instantiated', function () {
-    /** @var Modules\User\Tests\TestCase $this */
-    $team = typedMock(TeamContract::class);
-    $user = UserFactory::new()->makeOne();
-    $event = new TeamMemberRemoved($team, $user);
+    public function test_team_member_removed_event_can_be_instantiated(): void
+    {
+        $team = typedMock(TeamContract::class);
+        $user = UserFactory::new()->makeOne();
+        $event = new TeamMemberRemoved($team, $user);
 
-    Assert::assertInstanceOf(TeamMemberRemoved::class, $event);
-});
+        $this->assertInstanceOf(TeamMemberRemoved::class, $event);
+    }
 
-test('TwoFactorAuthenticationEnabled event can be instantiated', function () {
-    /** @var Modules\User\Tests\TestCase $this */
-    $user = UserFactory::new()->makeOne();
-    $event = new TwoFactorAuthenticationEnabled($user);
+    public function test_two_factor_authentication_enabled_event_can_be_instantiated(): void
+    {
+        $user = UserFactory::new()->makeOne();
+        $event = new TwoFactorAuthenticationEnabled($user);
 
-    Assert::assertInstanceOf(TwoFactorAuthenticationEnabled::class, $event);
-    Assert::assertSame($user, $event->userContract);
-});
+        $this->assertInstanceOf(TwoFactorAuthenticationEnabled::class, $event);
+        $this->assertSame($user, $event->userContract);
+    }
 
-test('TwoFactorAuthenticationDisabled event can be instantiated', function () {
-    /** @var Modules\User\Tests\TestCase $this */
-    $user = UserFactory::new()->makeOne();
-    $event = new TwoFactorAuthenticationDisabled($user);
+    public function test_two_factor_authentication_disabled_event_can_be_instantiated(): void
+    {
+        $user = UserFactory::new()->makeOne();
+        $event = new TwoFactorAuthenticationDisabled($user);
 
-    Assert::assertInstanceOf(TwoFactorAuthenticationDisabled::class, $event);
-    Assert::assertSame($user, $event->userContract);
-});
+        $this->assertInstanceOf(TwoFactorAuthenticationDisabled::class, $event);
+        $this->assertSame($user, $event->userContract);
+    }
 
-test('RecoveryCodeReplaced event can be instantiated', function () {
-    /** @var Modules\User\Tests\TestCase $this */
-    $user = UserFactory::new()->makeOne();
-    $event = new RecoveryCodeReplaced($user, 'test_code');
+    public function test_recovery_code_replaced_event_can_be_instantiated(): void
+    {
+        $user = UserFactory::new()->makeOne();
+        $event = new RecoveryCodeReplaced($user, 'test_code');
 
-    Assert::assertInstanceOf(RecoveryCodeReplaced::class, $event);
-    Assert::assertSame($user, $event->user);
-    Assert::assertSame('test_code', $event->code);
-});
+        $this->assertInstanceOf(RecoveryCodeReplaced::class, $event);
+        $this->assertSame($user, $event->user);
+        $this->assertSame('test_code', $event->code);
+    }
 
-test('TeamMemberUpdated event can be instantiated', function () {
-    /** @var Modules\User\Tests\TestCase $this */
-    $team = typedMock(TeamContract::class);
-    $user = UserFactory::new()->makeOne();
-    $event = new TeamMemberUpdated($team, $user);
+    public function test_team_member_updated_event_can_be_instantiated(): void
+    {
+        $team = typedMock(TeamContract::class);
+        $user = UserFactory::new()->makeOne();
+        $event = new TeamMemberUpdated($team, $user);
 
-    Assert::assertInstanceOf(TeamMemberUpdated::class, $event);
-});
+        $this->assertInstanceOf(TeamMemberUpdated::class, $event);
+    }
 
-test('AddingTeam event can be instantiated', function () {
-    /** @var Modules\User\Tests\TestCase $this */
-    $user = UserFactory::new()->makeOne();
-    $event = new AddingTeam($user);
+    public function test_adding_team_event_can_be_instantiated(): void
+    {
+        $user = UserFactory::new()->makeOne();
+        $event = new AddingTeam($user);
 
-    Assert::assertInstanceOf(AddingTeam::class, $event);
-    Assert::assertSame($user, $event->owner);
-});
+        $this->assertInstanceOf(AddingTeam::class, $event);
+        $this->assertSame($user, $event->owner);
+    }
 
-test('AddingTeamMember event can be instantiated', function () {
-    /** @var Modules\User\Tests\TestCase $this */
-    $team = typedMock(TeamContract::class);
-    $user = UserFactory::new()->makeOne();
-    $event = new AddingTeamMember($team, $user);
+    public function test_adding_team_member_event_can_be_instantiated(): void
+    {
+        $team = typedMock(TeamContract::class);
+        $user = UserFactory::new()->makeOne();
+        $event = new AddingTeamMember($team, $user);
 
-    Assert::assertInstanceOf(AddingTeamMember::class, $event);
-});
+        $this->assertInstanceOf(AddingTeamMember::class, $event);
+    }
 
-test('TeamSwitched event can be instantiated', function () {
-    /** @var Modules\User\Tests\TestCase $this */
-    $team = typedMock(TeamContract::class);
-    $user = UserFactory::new()->makeOne();
-    $event = new TeamSwitched($team, $user);
+    public function test_team_switched_event_can_be_instantiated(): void
+    {
+        $team = typedMock(TeamContract::class);
+        $user = UserFactory::new()->makeOne();
+        $event = new TeamSwitched($team, $user);
 
-    Assert::assertInstanceOf(TeamSwitched::class, $event);
-});
+        $this->assertInstanceOf(TeamSwitched::class, $event);
+    }
+}

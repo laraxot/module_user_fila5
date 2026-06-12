@@ -8,13 +8,10 @@ use PHPUnit\Framework\Assert;
 use Laravel\Socialite\Contracts\User as SocialiteUser;
 use Modules\User\Actions\Socialite\Utils\UserNameFieldsResolver;
 use Modules\User\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-use PHPUnit\Framework\Attributes\Test;
 
 class UserNameFieldsResolverTest extends TestCase
 {
-    #[Test]
-    public function itResolvesFirstAndLastNameFromFullName(): void
+    public function testItResolvesFirstAndLastNameFromFullName(): void
     {
         $ssoUser = $this->createMockSocialiteUser('John Doe', 'john@example.com');
         $resolver = UserNameFieldsResolver::make($ssoUser);
@@ -22,9 +19,7 @@ class UserNameFieldsResolverTest extends TestCase
         Assert::assertEquals('John', $resolver->firstName);
         Assert::assertEquals('Doe', $resolver->lastName);
     }
-
-    #[Test]
-    public function itResolvesNameFromSingleWord(): void
+    public function testItResolvesNameFromSingleWord(): void
     {
         $ssoUser = $this->createMockSocialiteUser('John', 'john@example.com');
         $resolver = UserNameFieldsResolver::make($ssoUser);
@@ -33,9 +28,7 @@ class UserNameFieldsResolverTest extends TestCase
         // Single word name results in firstName = lastName = 'John'
         Assert::assertEquals('John', $resolver->lastName);
     }
-
-    #[Test]
-    public function itFallsBackToEmailWhenNameIsEmpty(): void
+    public function testItFallsBackToEmailWhenNameIsEmpty(): void
     {
         $ssoUser = $this->createMockSocialiteUser(null, 'john.doe@example.com');
         $resolver = UserNameFieldsResolver::make($ssoUser);
@@ -43,9 +36,7 @@ class UserNameFieldsResolverTest extends TestCase
         Assert::assertEquals('John', $resolver->firstName);
         Assert::assertEquals('Doe', $resolver->lastName);
     }
-
-    #[Test]
-    public function itHandlesEmptyNameAndEmail(): void
+    public function testItHandlesEmptyNameAndEmail(): void
     {
         $ssoUser = $this->createMockSocialiteUser(null, null);
         $resolver = UserNameFieldsResolver::make($ssoUser);
@@ -53,9 +44,7 @@ class UserNameFieldsResolverTest extends TestCase
         Assert::assertEquals('', $resolver->firstName);
         Assert::assertEquals('', $resolver->lastName);
     }
-
-    #[Test]
-    public function itHandlesEmptyStringName(): void
+    public function testItHandlesEmptyStringName(): void
     {
         $ssoUser = $this->createMockSocialiteUser('', '');
         $resolver = UserNameFieldsResolver::make($ssoUser);
@@ -63,9 +52,7 @@ class UserNameFieldsResolverTest extends TestCase
         Assert::assertEquals('', $resolver->firstName);
         Assert::assertEquals('', $resolver->lastName);
     }
-
-    #[Test]
-    public function itResolvesThreeWordNames(): void
+    public function testItResolvesThreeWordNames(): void
     {
         $ssoUser = $this->createMockSocialiteUser('John Michael Doe', 'john@example.com');
         $resolver = UserNameFieldsResolver::make($ssoUser);

@@ -2,37 +2,39 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
+namespace Modules\User\Tests\Feature;
+
 use Modules\User\Models\User;
-use PHPUnit\Framework\Assert;
+use Modules\User\Tests\TestCase;
 
-// Simple test to verify model instantiation
-test('user model can be instantiated', function () {
-    /** @var Modules\User\Tests\TestCase $this */
-    $user = new User();
+class UserModelSimpleTest extends TestCase
+{
+    public function test_user_model_can_be_instantiated(): void
+    {
+        $user = new User();
 
-    Assert::assertInstanceOf(User::class, $user);
-});
+        $this->assertInstanceOf(User::class, $user);
+    }
 
-test('user model can access connection', function () {
-    /** @var Modules\User\Tests\TestCase $this */
-    $user = new User();
+    public function test_user_model_can_access_connection(): void
+    {
+        $user = new User();
 
-    // This should work if the connection resolver is properly set up
-    Assert::assertSame('user', $user->getConnectionName());
-});
+        $this->assertSame('user', $user->getConnectionName());
+    }
 
-test('user model can create basic record', function () {
-    /* @var \Modules\User\Tests\TestCase $this */
-    $this->skipUnlessUsersTableReady();
+    public function test_user_model_can_create_basic_record(): void
+    {
+        $this->skipUnlessUsersTableReady();
 
-    $user = createTestUser([
-        'name' => 'Test User',
-        'first_name' => 'Test',
-        'last_name' => 'User',
-        'lang' => 'it',
-        'is_active' => true,
-    ]);
+        $user = createTestUser([
+            'name' => 'Test User',
+            'first_name' => 'Test',
+            'last_name' => 'User',
+            'lang' => 'it',
+            'is_active' => true,
+        ]);
 
-    Assert::assertInstanceOf(User::class, $user);
-});
+        $this->assertInstanceOf(User::class, $user);
+    }
+}

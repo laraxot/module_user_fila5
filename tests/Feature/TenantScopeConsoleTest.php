@@ -2,219 +2,212 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
+namespace Modules\User\Tests\Feature;
+
 use Filament\Facades\Filament;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Contracts\Console\Kernel;
+use Illuminate\Contracts\Foundation\Application;
 use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
-use PHPUnit\Framework\Assert;
+use Modules\User\Tests\TestCase;
 use RuntimeException;
 
-describe('TenantScope Console Context Behavior', function (): void {
-    beforeEach(function () {
-        /* @var \Modules\User\Tests\TestCase $this */
+class TenantScopeConsoleTest extends TestCase
+{
+    protected function setUp(): void
+    {
+        parent::setUp();
+
         $this->skipUnlessUsersTableReady();
         $this->tenant1 = TenantFactory::new()->createOne(['name' => 'Tenant 1 '.uniqid()]);
         $this->tenant2 = TenantFactory::new()->createOne(['name' => 'Tenant 2 '.uniqid()]);
-    });
+    }
 
-    describe('User Creation in Console Context', function (): void {
-        it('allows user creation without tenant in console context', function (): void {
-            /* @var \Modules\User\Tests\TestCase $this */
-            app()->bind(Illuminate\Contracts\Console\Kernel::class, static function (Illuminate\Contracts\Foundation\Application $app): Illuminate\Contracts\Console\Kernel {
-                $kernel = $app->make(Illuminate\Contracts\Console\Kernel::class);
-                Assert::assertInstanceOf(Illuminate\Contracts\Console\Kernel::class, $kernel);
+    public function test_allows_user_creation_without_tenant_in_console_context(): void
+    {
+        app()->bind(Kernel::class, static function (Application $app): Kernel {
+            $kernel = $app->make(Kernel::class);
+            self::assertInstanceOf(Kernel::class, $kernel);
 
-                return $kernel;
-            });
-
-            $email = 'console-test-'.uniqid('', true).'@example.com';
-            $user = User::create([
-                'name' => 'Console Test User',
-                'email' => $email,
-                'password' => bcrypt('password123'),
-            ]);
-
-            Assert::assertInstanceOf(User::class, $user);
-            Assert::assertSame('Console Test User', $user->name);
-            Assert::assertSame($email, $user->email);
+            return $kernel;
         });
 
-        it('executes make:filament-user command successfully', function (): void {
-            /** @var Modules\User\Tests\TestCase $this */
-            $email = 'artisan-test-'.uniqid('', true).'@example.com';
+        $email = 'console-test-'.uniqid('', true).'@example.com';
+        $user = User::create([
+            'name' => 'Console Test User',
+            'email' => $email,
+            'password' => bcrypt('password123'),
+        ]);
 
-            $exitCode = Artisan::call('make:filament-user', [
-                '--name' => 'Artisan Test User',
-                '--email' => $email,
-                '--password' => 'TestPassword123!',
-            ]);
+        $this->assertInstanceOf(User::class, $user);
+        $this->assertSame('Console Test User', $user->name);
+        $this->assertSame($email, $user->email);
+    }
 
-            Assert::assertSame(0, $exitCode);
-            $user = User::where('email', $email)->first();
-            Assert::assertNotNull($user);
-            Assert::assertSame($email, $user->email);
-            Assert::assertSame('Artisan Test User', $user->name);
-        });
+    public function test_executes_make_filament_user_command_successfully(): void
+    {
+        $email = 'artisan-test-'.uniqid('', true).'@example.com';
 
-        it('allows querying all users in console context without tenant filter', function (): void {
-            /** @var Modules\User\Tests\TestCase $this */
-            $tenant1 = $this->requireTenant1();
-            $tenant2 = $this->requireTenant2();
-            $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+        $exitCode = Artisan::call('make:filament-user', [
+            '--name' => 'Artisan Test User',
+            '--email' => $email,
+            '--password' => 'TestPassword123!',
+        ]);
 
-            $user1 = UserFactory::new()->createOne([
-                'name' => 'Tenant 1 User',
-                'tenant_id' => $tenant1->id,
-            ]);
+        $this->assertSame(0, $exitCode);
+        $user = User::where('email', $email)->first();
+        $this->assertNotNull($user);
+        $this->assertSame($email, $user->email);
+        $this->assertSame('Artisan Test User', $user->name);
+    }
 
-            $user2 = UserFactory::new()->createOne([
-                'name' => 'Tenant 2 User',
-                'tenant_id' => $tenant2->id,
-            ]);
+    public function test_allows_querying_all_users_in_console_context_without_tenant_filter(): void
+    {
+        $tenant1 = $this->requireTenant1();
+        $tenant2 = $this->requireTenant2();
+        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
 
-            $allUsers = User::query()->whereIn('id', [$user1->id, $user2->id])->get();
+        $user1 = UserFactory::new()->createOne([
+            'name' => 'Tenant 1 User',
+            'tenant_id' => $tenant1->id,
+        ]);
 
-            Assert::assertCount(2, $allUsers);
-            Assert::assertTrue($allUsers->pluck('id')->contains($user1->id));
-            Assert::assertTrue($allUsers->pluck('id')->contains($user2->id));
-        });
-    });
+        $user2 = UserFactory::new()->createOne([
+            'name' => 'Tenant 2 User',
+            'tenant_id' => $tenant2->id,
+        ]);
 
-    describe('User Creation in HTTP Context with Tenant', function (): void {
-        it('automatically sets tenant_id when creating user in HTTP context', function (): void {
-            /** @var Modules\User\Tests\TestCase $this */
-            $tenant1 = $this->requireTenant1();
-            $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+        $allUsers = User::query()->whereIn('id', [$user1->id, $user2->id])->get();
 
-            $this->actingAs(UserFactory::new()->createOne());
+        $this->assertCount(2, $allUsers);
+        $this->assertTrue($allUsers->pluck('id')->contains($user1->id));
+        $this->assertTrue($allUsers->pluck('id')->contains($user2->id));
+    }
 
-            Filament::shouldReceive('getTenant')
-                ->andReturn($tenant1);
+    public function test_automatically_sets_tenant_id_when_creating_user_in_http_context(): void
+    {
+        $tenant1 = $this->requireTenant1();
+        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
 
-            $email = 'http-test-'.uniqid('', true).'@example.com';
-            $user = User::create([
-                'name' => 'HTTP Context User',
-                'email' => $email,
-                'password' => bcrypt('password123'),
-            ]);
+        $this->actingAs(UserFactory::new()->createOne());
 
-            Assert::assertInstanceOf(User::class, $user);
-        });
+        Filament::shouldReceive('getTenant')
+            ->andReturn($tenant1);
 
-        it('filters users by tenant in HTTP context', function (): void {
-            /** @var Modules\User\Tests\TestCase $this */
-            $tenant1 = $this->requireTenant1();
-            $tenant2 = $this->requireTenant2();
-            $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+        $email = 'http-test-'.uniqid('', true).'@example.com';
+        $user = User::create([
+            'name' => 'HTTP Context User',
+            'email' => $email,
+            'password' => bcrypt('password123'),
+        ]);
 
-            $user1 = UserFactory::new()->createOne([
-                'name' => 'Tenant 1 User Only',
-                'email' => 'tenant1-only-'.uniqid('', true).'@example.com',
-                'tenant_id' => $tenant1->id,
-            ]);
+        $this->assertInstanceOf(User::class, $user);
+    }
 
-            $user2 = UserFactory::new()->createOne([
-                'name' => 'Tenant 2 User Only',
-                'email' => 'tenant2-only-'.uniqid('', true).'@example.com',
-                'tenant_id' => $tenant2->id,
-            ]);
+    public function test_filters_users_by_tenant_in_http_context(): void
+    {
+        $tenant1 = $this->requireTenant1();
+        $tenant2 = $this->requireTenant2();
+        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
 
-            $adminUser = UserFactory::new()->createOne([
-                'tenant_id' => $tenant1->id,
-            ]);
+        $user1 = UserFactory::new()->createOne([
+            'name' => 'Tenant 1 User Only',
+            'email' => 'tenant1-only-'.uniqid('', true).'@example.com',
+            'tenant_id' => $tenant1->id,
+        ]);
 
-            $this->actingAs($adminUser);
+        $user2 = UserFactory::new()->createOne([
+            'name' => 'Tenant 2 User Only',
+            'email' => 'tenant2-only-'.uniqid('', true).'@example.com',
+            'tenant_id' => $tenant2->id,
+        ]);
 
-            Filament::shouldReceive('getTenant')
-                ->andReturn($tenant1);
+        $adminUser = UserFactory::new()->createOne([
+            'tenant_id' => $tenant1->id,
+        ]);
 
-            Assert::assertNotNull(User::withoutGlobalScopes()->find($user1->id));
-            Assert::assertNull(User::withoutGlobalScopes()->find($user2->id));
-        });
-    });
+        $this->actingAs($adminUser);
 
-    describe('TenantScope Exception Handling', function (): void {
-        it('handles gracefully when Filament::getTenant() throws exception', function (): void {
-            /* @var \Modules\User\Tests\TestCase $this */
-            Filament::shouldReceive('getTenant')
-                ->andThrow(new RuntimeException('Session not available'));
+        Filament::shouldReceive('getTenant')
+            ->andReturn($tenant1);
 
-            $users = User::query()->limit(1)->get();
+        $this->assertNotNull(User::withoutGlobalScopes()->find($user1->id));
+        $this->assertNull(User::withoutGlobalScopes()->find($user2->id));
+    }
 
-            Assert::assertInstanceOf(Collection::class, $users);
-        });
+    public function test_handles_gracefully_when_filament_get_tenant_throws_exception(): void
+    {
+        Filament::shouldReceive('getTenant')
+            ->andThrow(new RuntimeException('Session not available'));
 
-        it('allows user creation when Filament context is not available', function (): void {
-            /* @var \Modules\User\Tests\TestCase $this */
-            Filament::shouldReceive('getTenant')
-                ->andReturn(null);
+        $users = User::query()->limit(1)->get();
 
-            $email = 'no-tenant-'.uniqid('', true).'@example.com';
-            $user = User::create([
-                'name' => 'No Tenant Context User',
-                'email' => $email,
-                'password' => bcrypt('password123'),
-            ]);
+        $this->assertInstanceOf(Collection::class, $users);
+    }
 
-            Assert::assertInstanceOf(User::class, $user);
-            Assert::assertSame('No Tenant Context User', $user->name);
-        });
-    });
+    public function test_allows_user_creation_when_filament_context_is_not_available(): void
+    {
+        Filament::shouldReceive('getTenant')
+            ->andReturn(null);
 
-    describe('Manual Tenant Assignment in Console', function (): void {
-        it('allows manual tenant_id assignment in console context', function (): void {
-            /** @var Modules\User\Tests\TestCase $this */
-            $tenant1 = $this->requireTenant1();
-            $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+        $email = 'no-tenant-'.uniqid('', true).'@example.com';
+        $user = User::create([
+            'name' => 'No Tenant Context User',
+            'email' => $email,
+            'password' => bcrypt('password123'),
+        ]);
 
-            $email = 'manual-tenant-'.uniqid('', true).'@example.com';
-            $user = User::create([
-                'name' => 'Manual Tenant User',
-                'email' => $email,
-                'password' => bcrypt('password123'),
-                'tenant_id' => $tenant1->id,
-            ]);
+        $this->assertInstanceOf(User::class, $user);
+        $this->assertSame('No Tenant Context User', $user->name);
+    }
 
-            Assert::assertSame($tenant1->id, $user->getAttribute('tenant_id'));
-            $user->refresh();
-            Assert::assertSame($tenant1->id, $user->getAttribute('tenant_id'));
-        });
+    public function test_allows_manual_tenant_id_assignment_in_console_context(): void
+    {
+        $tenant1 = $this->requireTenant1();
+        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
 
-        it('allows querying users by specific tenant in console', function (): void {
-            /** @var Modules\User\Tests\TestCase $this */
-            $tenant1 = $this->requireTenant1();
-            $tenant2 = $this->requireTenant2();
-            $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+        $email = 'manual-tenant-'.uniqid('', true).'@example.com';
+        $user = User::create([
+            'name' => 'Manual Tenant User',
+            'email' => $email,
+            'password' => bcrypt('password123'),
+            'tenant_id' => $tenant1->id,
+        ]);
 
-            UserFactory::new()->count(3)->create(['tenant_id' => $tenant1->id]);
-            UserFactory::new()->count(2)->create(['tenant_id' => $tenant2->id]);
+        $this->assertSame($tenant1->id, $user->getAttribute('tenant_id'));
+        $user->refresh();
+        $this->assertSame($tenant1->id, $user->getAttribute('tenant_id'));
+    }
 
-            $tenant1Users = User::withoutGlobalScopes()
-                ->where('tenant_id', $tenant1->id)
-                ->get();
+    public function test_allows_querying_users_by_specific_tenant_in_console(): void
+    {
+        $tenant1 = $this->requireTenant1();
+        $tenant2 = $this->requireTenant2();
+        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
 
-            $tenant2Users = User::withoutGlobalScopes()
-                ->where('tenant_id', $tenant2->id)
-                ->get();
+        UserFactory::new()->count(3)->create(['tenant_id' => $tenant1->id]);
+        UserFactory::new()->count(2)->create(['tenant_id' => $tenant2->id]);
 
-            Assert::assertGreaterThanOrEqual(3, $tenant1Users->count());
+        $tenant1Users = User::withoutGlobalScopes()
+            ->where('tenant_id', $tenant1->id)
+            ->get();
 
-            Assert::assertGreaterThanOrEqual(2, $tenant2Users->count());
-        });
-    });
-});
+        $tenant2Users = User::withoutGlobalScopes()
+            ->where('tenant_id', $tenant2->id)
+            ->get();
 
-describe('InteractsWithTenant Trait Behavior', function (): void {
-    beforeEach(function () {
-        /* @var \Modules\User\Tests\TestCase $this */
+        $this->assertGreaterThanOrEqual(3, $tenant1Users->count());
+
+        $this->assertGreaterThanOrEqual(2, $tenant2Users->count());
+    }
+
+    public function test_does_not_crash_when_booting_in_console_context(): void
+    {
         $this->skipUnlessUsersTableReady();
-    });
 
-    it('does not crash when booting in console context', function (): void {
-        /** @var Modules\User\Tests\TestCase $this */
         $email = 'boot-test-'.uniqid('', true).'@example.com';
         $user = new User([
             'name' => 'Boot Test User',
@@ -222,14 +215,16 @@ describe('InteractsWithTenant Trait Behavior', function (): void {
             'password' => bcrypt('password123'),
         ]);
 
-        Assert::assertInstanceOf(User::class, $user);
+        $this->assertInstanceOf(User::class, $user);
         $user->save();
 
-        Assert::assertTrue($user->exists);
-    });
+        $this->assertTrue($user->exists);
+    }
 
-    it('skips tenant assignment in console context during creating event', function (): void {
-        /** @var Modules\User\Tests\TestCase $this */
+    public function test_skips_tenant_assignment_in_console_context_during_creating_event(): void
+    {
+        $this->skipUnlessUsersTableReady();
+
         $email = 'creating-event-'.uniqid('', true).'@example.com';
         $user = User::create([
             'name' => 'Creating Event Test',
@@ -237,7 +232,7 @@ describe('InteractsWithTenant Trait Behavior', function (): void {
             'password' => bcrypt('password123'),
         ]);
 
-        Assert::assertTrue($user->exists);
-        Assert::assertSame('Creating Event Test', $user->name);
-    });
-});
+        $this->assertTrue($user->exists);
+        $this->assertSame('Creating Event Test', $user->name);
+    }
+}

@@ -2,28 +2,29 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
+namespace Modules\User\Tests\Feature;
+
 use Modules\User\Datas\PasswordData;
-use PHPUnit\Framework\Assert;
+use Modules\User\Tests\TestCase;
 
-test('password data labels are translated', function (): void {
-    /* @var \Modules\User\Tests\TestCase $this */
-    // Arrange
-    app()->setLocale('it');
+class PasswordDataLabelsTest extends TestCase
+{
+    public function test_password_data_labels_are_translated(): void
+    {
+        app()->setLocale('it');
 
-    $passwordData = PasswordData::make();
-    $passwordData->setFieldName('password');
+        $passwordData = PasswordData::make();
+        $passwordData->setFieldName('password');
 
-    // Act
-    $passwordComponent = $passwordData->getPasswordFormComponent('password');
-    $confirmationComponent = $passwordData->getPasswordConfirmationFormComponent();
+        $passwordComponent = $passwordData->getPasswordFormComponent('password');
+        $confirmationComponent = $passwordData->getPasswordConfirmationFormComponent();
 
-    // Assert
-    Assert::assertSame('Parola d\'ordine', $passwordComponent->getLabel());
-    Assert::assertSame('Conferma Password', $confirmationComponent->getLabel());
-});
+        $this->assertSame('Parola d\'ordine', $passwordComponent->getLabel());
+        $this->assertSame('Conferma Password', $confirmationComponent->getLabel());
+    }
 
-test('login form labels are translated', function (): void {
-    /* @var \Modules\User\Tests\TestCase $this */
-    $this->markTestSkipped('Login Livewire form labels — coperto da widget Filament LoginWidgetTest');
-});
+    public function test_login_form_labels_are_translated(): void
+    {
+        $this->markTestSkipped('Login Livewire form labels — coperto da widget Filament LoginWidgetTest');
+    }
+}
