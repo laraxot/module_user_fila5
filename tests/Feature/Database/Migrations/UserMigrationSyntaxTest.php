@@ -44,7 +44,7 @@ class UserMigrationSyntaxTest extends TestCase
 
             exec('php -l '.escapeshellarg($migrationFile), $output, $exitCode);
 
-            /** @var list<string> $output */
+            /* @var list<string> $output */
             $this->assertSame(0, $exitCode, implode(PHP_EOL, $output ?? []));
         }
     }
