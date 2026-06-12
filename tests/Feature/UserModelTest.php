@@ -58,8 +58,8 @@ final class UserModelTest extends TestCase
 
     public function testHasFactory(): void
     {
+        /** @var \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\User> $users */
         $users = UserFactory::new()->count(3)->create();
-        /* @var \Illuminate\Database\Eloquent\Collection<int, \Modules\User\Models\User> $users */
 
         Assert::assertCount(3, $users);
         $users->each(function ($user) {
