@@ -25,7 +25,7 @@ function userMigrationFiles(): array
 
 class UserMigrationSyntaxTest extends TestCase
 {
-    public function test_user_migrations_do_not_contain_merge_conflict_markers(): void
+    public function testUserMigrationsDoNotContainMergeConflictMarkers(): void
     {
         foreach (userMigrationFiles() as $migrationFile) {
             $contents = file_get_contents($migrationFile);
@@ -36,7 +36,7 @@ class UserMigrationSyntaxTest extends TestCase
         }
     }
 
-    public function test_user_migrations_have_valid_php_syntax(): void
+    public function testUserMigrationsHaveValidPhpSyntax(): void
     {
         foreach (userMigrationFiles() as $migrationFile) {
             $output = [];
@@ -44,7 +44,7 @@ class UserMigrationSyntaxTest extends TestCase
 
             exec('php -l '.escapeshellarg($migrationFile), $output, $exitCode);
 
-            /** @var list<string> $output */
+            /* @var list<string> $output */
             $this->assertSame(0, $exitCode, implode(PHP_EOL, $output));
         }
     }

@@ -9,21 +9,21 @@ use Modules\User\Tests\TestCase;
 
 class UserModelBasicTest extends TestCase
 {
-    public function test_user_model_can_be_created(): void
+    public function testUserModelCanBeCreated(): void
     {
         $user = new User();
 
         $this->assertInstanceOf(User::class, $user);
     }
 
-    public function test_user_model_can_access_connection(): void
+    public function testUserModelCanAccessConnection(): void
     {
         $user = new User();
 
         $this->assertSame('user', $user->getConnectionName());
     }
 
-    public function test_user_model_can_create_basic_record(): void
+    public function testUserModelCanCreateBasicRecord(): void
     {
         $this->skipUnlessUsersTableReady();
 
@@ -42,7 +42,7 @@ class UserModelBasicTest extends TestCase
         $this->assertSame(true, $user->is_active);
     }
 
-    public function test_user_model_can_query_records(): void
+    public function testUserModelCanQueryRecords(): void
     {
         $this->skipUnlessUsersTableReady();
 
@@ -54,7 +54,7 @@ class UserModelBasicTest extends TestCase
         $this->assertCount(2, $users);
     }
 
-    public function test_user_model_can_filter_records(): void
+    public function testUserModelCanFilterRecords(): void
     {
         $this->skipUnlessUsersTableReady();
 
@@ -76,7 +76,7 @@ class UserModelBasicTest extends TestCase
         $this->assertSame('Active User', $activeUsers->first()?->name);
     }
 
-    public function test_user_model_can_update_records(): void
+    public function testUserModelCanUpdateRecords(): void
     {
         $this->skipUnlessUsersTableReady();
 

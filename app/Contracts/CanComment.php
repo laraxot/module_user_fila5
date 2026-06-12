@@ -25,9 +25,6 @@ interface CanComment
     /** @return string */
     public function getMorphClass();
 
-/**
-     * @param object $instance
-     */
     public function notify(object $instance): void;
 
     public function subscribeToCommentNotifications(

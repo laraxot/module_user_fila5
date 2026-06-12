@@ -10,7 +10,6 @@ use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 
 final class LoginWidgetTest extends TestCase
 {
@@ -25,7 +24,7 @@ final class LoginWidgetTest extends TestCase
     {
         $widget = new LoginWidget();
 
-        $reflection = new ReflectionClass($widget);
+        $reflection = new \ReflectionClass($widget);
         $property = $reflection->getProperty('view');
         $property->setAccessible(true);
         $view = $property->getValue($widget);

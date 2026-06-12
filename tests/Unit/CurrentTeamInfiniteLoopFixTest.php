@@ -42,7 +42,7 @@ class CurrentTeamInfiniteLoopFixTest extends TestCase
         $this->skipUnlessUsersTableReady();
     }
 
-    public function test_current_team_getter_does_not_crash_when_user_has_no_teams(): void
+    public function testCurrentTeamGetterDoesNotCrashWhenUserHasNoTeams(): void
     {
         $user = currentTeamFixCreateUser();
 
@@ -50,7 +50,7 @@ class CurrentTeamInfiniteLoopFixTest extends TestCase
         $this->assertNull($user->currentTeam);
     }
 
-    public function test_current_team_getter_is_side_effect_free(): void
+    public function testCurrentTeamGetterIsSideEffectFree(): void
     {
         $user = currentTeamFixCreateUser(['current_team_id' => null]);
         $originalTeamId = $user->current_team_id;
@@ -63,7 +63,7 @@ class CurrentTeamInfiniteLoopFixTest extends TestCase
         $this->assertSame($originalTeamId, $user->current_team_id);
     }
 
-    public function test_current_team_getter_does_not_trigger_save_operations(): void
+    public function testCurrentTeamGetterDoesNotTriggerSaveOperations(): void
     {
         $user = currentTeamFixCreateUser();
         $updatedAtBefore = $user->updated_at;
@@ -76,7 +76,7 @@ class CurrentTeamInfiniteLoopFixTest extends TestCase
         $this->assertTrue($user->updated_at->equalTo($updatedAtBefore));
     }
 
-    public function test_initialize_current_team_sets_personal_team_correctly(): void
+    public function testInitializeCurrentTeamSetsPersonalTeamCorrectly(): void
     {
         $user = currentTeamFixCreateUser(['current_team_id' => null]);
         $personalTeam = currentTeamFixCreateTeam($user, [
@@ -90,7 +90,7 @@ class CurrentTeamInfiniteLoopFixTest extends TestCase
         $this->assertSame($personalTeam->id, $user->current_team_id);
     }
 
-    public function test_initialize_current_team_does_not_override_existing_current_team_id(): void
+    public function testInitializeCurrentTeamDoesNotOverrideExistingCurrentTeamId(): void
     {
         $user = currentTeamFixCreateUser();
         $team1 = currentTeamFixCreateTeam($user, ['name' => 'Team 1', 'personal_team' => false]);
@@ -105,7 +105,7 @@ class CurrentTeamInfiniteLoopFixTest extends TestCase
         $this->assertSame($team1->id, $user->current_team_id);
     }
 
-    public function test_initialize_current_team_sets_first_available_team_if_no_personal_team(): void
+    public function testInitializeCurrentTeamSetsFirstAvailableTeamIfNoPersonalTeam(): void
     {
         $user = currentTeamFixCreateUser(['current_team_id' => null]);
         $team = currentTeamFixCreateTeam($user, [
@@ -119,7 +119,7 @@ class CurrentTeamInfiniteLoopFixTest extends TestCase
         $this->assertSame($team->id, $user->current_team_id);
     }
 
-    public function test_initialize_current_team_handles_user_without_teams_gracefully(): void
+    public function testInitializeCurrentTeamHandlesUserWithoutTeamsGracefully(): void
     {
         $user = currentTeamFixCreateUser(['current_team_id' => null]);
 
@@ -129,7 +129,7 @@ class CurrentTeamInfiniteLoopFixTest extends TestCase
         $this->assertNull($user->current_team_id);
     }
 
-    public function test_current_team_getter_does_not_cause_errors_on_repeated_access(): void
+    public function testCurrentTeamGetterDoesNotCauseErrorsOnRepeatedAccess(): void
     {
         $user = currentTeamFixCreateUser();
         $team = currentTeamFixCreateTeam($user, ['name' => 'Test Team', 'personal_team' => true]);
@@ -143,7 +143,7 @@ class CurrentTeamInfiniteLoopFixTest extends TestCase
         $this->assertInstanceOf(BelongsTo::class, $user->currentTeam());
     }
 
-    public function test_current_team_getter_works_correctly_with_existing_team(): void
+    public function testCurrentTeamGetterWorksCorrectlyWithExistingTeam(): void
     {
         $user = currentTeamFixCreateUser();
         $team = currentTeamFixCreateTeam($user, ['name' => 'Test Team', 'personal_team' => true]);
@@ -158,7 +158,7 @@ class CurrentTeamInfiniteLoopFixTest extends TestCase
         $this->assertSame('Test Team', $currentTeam->name);
     }
 
-    public function test_user_creation_does_not_trigger_infinite_loop(): void
+    public function testUserCreationDoesNotTriggerInfiniteLoop(): void
     {
         $user = currentTeamFixCreateUser(['name' => 'New User']);
 
@@ -169,7 +169,7 @@ class CurrentTeamInfiniteLoopFixTest extends TestCase
         $this->assertInstanceOf(BelongsTo::class, $user->currentTeam());
     }
 
-    public function test_multiple_users_can_be_created_without_issues(): void
+    public function testMultipleUsersCanBeCreatedWithoutIssues(): void
     {
         $users = [];
 

@@ -20,6 +20,7 @@ class LogRegistrationActionTest extends TestCase
             $this->markTestSkipped('activity_log table missing on sqlite test database.');
         }
     }
+
     public function testItLogsRegistrationWithDefaultProperties(): void
     {
         $user = new User(['type' => 'customer_user']);

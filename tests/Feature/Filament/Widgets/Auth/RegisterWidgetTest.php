@@ -11,7 +11,6 @@ use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
-use ReflectionClass;
 
 class RegisterWidgetTest extends TestCase
 {
@@ -26,15 +25,15 @@ class RegisterWidgetTest extends TestCase
         }
     }
 
-    public function test_register_page_loads_with_livewire_widget(): void
+    public function testRegisterPageLoadsWithLivewireWidget(): void
     {
         $this->get('/it/auth/register')->assertSuccessful();
         Livewire::test(RegisterWidget::class)->assertSuccessful();
     }
 
-    public function test_delegates_form_schema_to_user_form_via_form_class(): void
+    public function testDelegatesFormSchemaToUserFormViaFormClass(): void
     {
-        $reflection = new ReflectionClass(RegisterWidget::class);
+        $reflection = new \ReflectionClass(RegisterWidget::class);
 
         $formClass = $reflection->getMethod('formClass');
         $formClass->setAccessible(true);
@@ -44,7 +43,7 @@ class RegisterWidgetTest extends TestCase
         $this->assertSame('getRegisterFormSchema', $schemaMethod->invoke(null));
     }
 
-    public function test_can_register_user_via_submit(): void
+    public function testCanRegisterUserViaSubmit(): void
     {
         $email = 'pest-register-'.uniqid('', true).'@example.test';
 
@@ -64,7 +63,7 @@ class RegisterWidgetTest extends TestCase
         $this->assertDatabaseHasRow(User::class, ['email' => $email]);
     }
 
-    public function test_rejects_invalid_email_without_creating_user(): void
+    public function testRejectsInvalidEmailWithoutCreatingUser(): void
     {
         Livewire::test(RegisterWidget::class)
             ->fillForm([
@@ -80,7 +79,7 @@ class RegisterWidgetTest extends TestCase
         $this->assertFalse(Auth::check());
     }
 
-    public function test_save_delegates_to_submit(): void
+    public function testSaveDelegatesToSubmit(): void
     {
         $email = 'pest-save-'.uniqid('', true).'@example.test';
 

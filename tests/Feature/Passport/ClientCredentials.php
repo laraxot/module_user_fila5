@@ -25,7 +25,7 @@ function createPassportClient(): array
 
 class ClientCredentials extends TestCase
 {
-    public function test_client_credentials_grant_returns_token(): void
+    public function testClientCredentialsGrantReturnsToken(): void
     {
         ['client' => $client, 'secret' => $secret] = createPassportClient();
 
@@ -41,7 +41,7 @@ class ClientCredentials extends TestCase
             ->assertJsonPath('token_type', 'Bearer');
     }
 
-    public function test_client_credentials_can_be_associated_to_a_specific_user(): void
+    public function testClientCredentialsCanBeAssociatedToASpecificUser(): void
     {
         ['client' => $client] = createPassportClient();
         $user = UserFactory::new()->createOne();

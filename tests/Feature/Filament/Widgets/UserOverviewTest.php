@@ -10,10 +10,8 @@ use Illuminate\Support\Str;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
-use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 
 final class UserOverviewTest extends TestCase
 {
@@ -37,7 +35,7 @@ final class UserOverviewTest extends TestCase
     public function testUserOverviewWidgetHasCorrectView(): void
     {
         $widget = $this->requireWidget();
-        $reflection = new ReflectionClass(UserOverview::class);
+        $reflection = new \ReflectionClass(UserOverview::class);
         $viewProperty = $reflection->getProperty('view');
         $viewProperty->setAccessible(true);
 
@@ -64,7 +62,7 @@ final class UserOverviewTest extends TestCase
 
     public function testUserOverviewWidgetRecordPropertyIsNullable(): void
     {
-        $reflection = new ReflectionClass(UserOverview::class);
+        $reflection = new \ReflectionClass(UserOverview::class);
         $recordProperty = $reflection->getProperty('record');
 
         Assert::assertTrue($recordProperty->getType()?->allowsNull() ?? false);
@@ -83,7 +81,7 @@ final class UserOverviewTest extends TestCase
 
     public function testUserOverviewWidgetHasCorrectStaticProperties(): void
     {
-        $reflection = new ReflectionClass(UserOverview::class);
+        $reflection = new \ReflectionClass(UserOverview::class);
         $viewProperty = $reflection->getProperty('view');
         $viewProperty->setAccessible(true);
 
@@ -93,7 +91,7 @@ final class UserOverviewTest extends TestCase
     public function testUserOverviewWidgetViewPathIsCorrect(): void
     {
         $widget = $this->requireWidget();
-        $reflection = new ReflectionClass(UserOverview::class);
+        $reflection = new \ReflectionClass(UserOverview::class);
         $viewProperty = $reflection->getProperty('view');
         $viewProperty->setAccessible(true);
 

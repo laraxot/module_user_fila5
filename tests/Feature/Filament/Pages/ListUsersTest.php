@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Filament\Pages;
 
-use Exception;
 use Filament\Facades\Filament;
 use Filament\Panel;
 use Filament\Tables\Columns\TextColumn;
@@ -28,7 +27,7 @@ final class ListUsersTest extends TestCase
 
         try {
             $panel = Filament::getPanel('user::admin');
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             $panelProvider = new AdminPanelProvider(app());
             $panel = $panelProvider->panel(Panel::make());
             Filament::registerPanel($panel);
@@ -136,7 +135,7 @@ final class ListUsersTest extends TestCase
         try {
             $breadcrumbs = $listUsersPage->getBreadcrumbs();
             Assert::assertNotEmpty($breadcrumbs);
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
         }
     }
 

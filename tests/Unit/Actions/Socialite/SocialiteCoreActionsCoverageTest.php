@@ -5,25 +5,22 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit\Actions\Socialite;
 
 use Illuminate\Contracts\Events\Dispatcher;
-use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Laravel\Socialite\Facades\Socialite;
 use Laravel\Socialite\Two\InvalidStateException;
-use Mockery;
 use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\CreateSocialiteUserAction;
 use Modules\User\Actions\Socialite\GetUserModelAttributesFromSocialiteAction;
 use Modules\User\Actions\Socialite\RetrieveOauthUserAction;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Datas\SocialiteUserAttributesData;
 use Modules\User\Events\InvalidState;
-use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Tests\TestCase;
-use RuntimeException;
 
 class SocialiteCoreActionsCoverageTest extends TestCase
 {
-    public function test_builds_user_attributes_from_oauth_user(): void
+    public function testBuildsUserAttributesFromOauthUser(): void
     {
         $oauthUser = configureMock(SocialiteUserContract::class, function (MockInterface $mock): void {
             $mock->allows(['getName' => 'Mario Rossi']);
@@ -39,7 +36,7 @@ class SocialiteCoreActionsCoverageTest extends TestCase
         $this->assertSame('Rossi', $data->lastName);
     }
 
-    public function test_throws_when_provider_is_empty_while_building_attributes(): void
+    public function testThrowsWhenProviderIsEmptyWhileBuildingAttributes(): void
     {
         $oauthUser = configureMock(SocialiteUserContract::class, function (MockInterface $mock): void {
             $mock->allows(['getName' => 'Mario Rossi']);
@@ -49,12 +46,12 @@ class SocialiteCoreActionsCoverageTest extends TestCase
         try {
             app(GetUserModelAttributesFromSocialiteAction::class)->execute('', $oauthUser);
             $this->fail('Expected InvalidArgumentException was not thrown');
-        } catch (InvalidArgumentException $exception) {
+        } catch (\InvalidArgumentException $exception) {
             $this->assertSame('Il provider non può essere vuoto', $exception->getMessage());
         }
     }
 
-    public function test_throws_when_oauth_email_is_invalid_while_building_attributes(): void
+    public function testThrowsWhenOauthEmailIsInvalidWhileBuildingAttributes(): void
     {
         $oauthUser = configureMock(SocialiteUserContract::class, function (MockInterface $mock): void {
             $mock->allows(['getName' => 'Mario Rossi']);
@@ -64,19 +61,19 @@ class SocialiteCoreActionsCoverageTest extends TestCase
         try {
             app(GetUserModelAttributesFromSocialiteAction::class)->execute('github', $oauthUser);
             $this->fail('Expected RuntimeException was not thrown');
-        } catch (RuntimeException $exception) {
+        } catch (\RuntimeException $exception) {
             $this->assertSame('L\'email deve essere una stringa non vuota', $exception->getMessage());
         }
     }
 
-    public function test_retrieves_oauth_user_from_socialite_driver(): void
+    public function testRetrievesOauthUserFromSocialiteDriver(): void
     {
         $oauthUser = configureMock(SocialiteUserContract::class, function (MockInterface $mock): void {
             $mock->allows(['getEmail' => 'user@example.com']);
         });
 
-        $driver = Mockery::mock();
-        /** @phpstan-ignore-next-line */
+        $driver = \Mockery::mock();
+        /* @phpstan-ignore-next-line */
         $driver->shouldReceive('user')->once()->andReturn($oauthUser);
 
         Socialite::shouldReceive('driver')->with('github')->andReturn($driver);
@@ -90,12 +87,12 @@ class SocialiteCoreActionsCoverageTest extends TestCase
         $this->assertSame($oauthUser, $result);
     }
 
-    public function test_returns_null_and_dispatches_invalid_state_event_when_socialite_state_is_invalid(): void
+    public function testReturnsNullAndDispatchesInvalidStateEventWhenSocialiteStateIsInvalid(): void
     {
         $exception = new InvalidStateException();
 
-        $driver = Mockery::mock();
-        /** @phpstan-ignore-next-line */
+        $driver = \Mockery::mock();
+        /* @phpstan-ignore-next-line */
         $driver->shouldReceive('user')->once()->andThrow($exception);
 
         Socialite::shouldReceive('driver')->with('github')->andReturn($driver);
@@ -114,7 +111,7 @@ class SocialiteCoreActionsCoverageTest extends TestCase
         $this->assertNull($result);
     }
 
-    public function test_creates_socialite_user_model_with_normalized_attributes(): void
+    public function testCreatesSocialiteUserModelWithNormalizedAttributes(): void
     {
         /** @var \Modules\Xot\Contracts\UserContract $user */
         $user = UserFactory::new()->createOne();
