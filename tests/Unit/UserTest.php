@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Throwable;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Enums\UserType;
@@ -14,7 +13,7 @@ use Modules\User\Tests\TestCase;
 
 class UserTest extends TestCase
 {
-    public function test_user_can_be_created(): void
+    public function testUserCanBeCreated(): void
     {
         try {
             $user = UserFactory::new()->createOne([
@@ -33,7 +32,7 @@ class UserTest extends TestCase
         }
     }
 
-    public function test_user_has_correct_type_casting(): void
+    public function testUserHasCorrectTypeCasting(): void
     {
         try {
             $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
@@ -49,7 +48,7 @@ class UserTest extends TestCase
         }
     }
 
-    public function test_user_password_is_hashed(): void
+    public function testUserPasswordIsHashed(): void
     {
         $user = UserFactory::new()->createOne(['password' => Hash::make('password123')]);
         \assert($user instanceof User);
@@ -58,7 +57,7 @@ class UserTest extends TestCase
         $this->assertFalse(Hash::check('wrongpassword', $user->password));
     }
 
-    public function test_user_can_change_password(): void
+    public function testUserCanChangePassword(): void
     {
         $user = UserFactory::new()->createOne(['password' => Hash::make('password123')]);
         \assert($user instanceof User);
@@ -71,7 +70,7 @@ class UserTest extends TestCase
         $this->assertFalse(Hash::check('password123', $freshUser->password));
     }
 
-    public function test_user_can_be_updated(): void
+    public function testUserCanBeUpdated(): void
     {
         try {
             $user = UserFactory::new()->createOne([
@@ -94,7 +93,7 @@ class UserTest extends TestCase
         }
     }
 
-    public function test_user_can_be_deleted(): void
+    public function testUserCanBeDeleted(): void
     {
         $this->skipUnlessDirectPermissionSupported();
 
@@ -108,7 +107,7 @@ class UserTest extends TestCase
         $this->assertNull(User::find($userId));
     }
 
-    public function test_user_has_fillable_attributes(): void
+    public function testUserHasFillableAttributes(): void
     {
         $factory = UserFactory::new();
         \assert($factory instanceof Factory);
@@ -122,7 +121,7 @@ class UserTest extends TestCase
         $this->assertContains('type', $fillable);
     }
 
-    public function test_user_has_hidden_attributes(): void
+    public function testUserHasHiddenAttributes(): void
     {
         $factory = UserFactory::new();
         \assert($factory instanceof Factory);
@@ -135,7 +134,7 @@ class UserTest extends TestCase
         $this->assertContains('remember_token', $hidden);
     }
 
-    public function test_user_can_be_found_by_email(): void
+    public function testUserCanBeFoundByEmail(): void
     {
         $user = UserFactory::new()->createOne();
         \assert($user instanceof User);
@@ -147,7 +146,7 @@ class UserTest extends TestCase
         $this->assertSame($user->id, $foundUser->id);
     }
 
-    public function test_user_can_be_found_by_type(): void
+    public function testUserCanBeFoundByType(): void
     {
         try {
             $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
@@ -162,12 +161,12 @@ class UserTest extends TestCase
             $firstAdmin = $admins->first();
             \assert($firstAdmin instanceof User);
             $this->assertSame($user->id, $firstAdmin->id);
-        } catch (Throwable) {
+        } catch (\Throwable) {
             $this->markTestSkipped('User type aliases (e.g. master_admin) are not configured in this install.');
         }
     }
 
-    public function test_user_can_be_created_with_different_types(): void
+    public function testUserCanBeCreatedWithDifferentTypes(): void
     {
         try {
             $factory = UserFactory::new();
@@ -185,7 +184,7 @@ class UserTest extends TestCase
         }
     }
 
-    public function test_user_has_timestamps(): void
+    public function testUserHasTimestamps(): void
     {
         $user = UserFactory::new()->createOne();
         \assert($user instanceof User);
@@ -194,7 +193,7 @@ class UserTest extends TestCase
         $this->assertNotNull($user->updated_at);
     }
 
-    public function test_user_soft_delete_functionality(): void
+    public function testUserSoftDeleteFunctionality(): void
     {
         $this->markTestSkipped('User model does not implement SoftDeletes trait');
     }

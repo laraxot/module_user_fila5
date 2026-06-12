@@ -6,17 +6,15 @@ namespace Modules\User\Tests\Feature\Actions;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Event;
-use LogicException;
 use Modules\User\Actions\Socialite\LoginUserAction;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Tests\TestCase;
-use stdClass;
 
 class LoginUserActionTest extends TestCase
 {
-    public function test_authenticates_connected_socialite_user_and_dispatches_event(): void
+    public function testAuthenticatesConnectedSocialiteUserAndDispatchesEvent(): void
     {
         Event::fake([SocialiteUserConnected::class]);
 
@@ -37,7 +35,7 @@ class LoginUserActionTest extends TestCase
         Event::assertDispatched(SocialiteUserConnected::class);
     }
 
-    public function test_throws_when_related_user_is_not_authenticatable(): void
+    public function testThrowsWhenRelatedUserIsNotAuthenticatable(): void
     {
         $socialiteUser = new SocialiteUser([
             'provider' => 'test-provider',
@@ -45,12 +43,12 @@ class LoginUserActionTest extends TestCase
             'email' => 'not-authenticatable@example.com',
         ]);
 
-        $socialiteUser->setRelation('user', new stdClass());
+        $socialiteUser->setRelation('user', new \stdClass());
 
         try {
             app(LoginUserAction::class)->execute($socialiteUser);
             $this->fail('Expected LogicException was not thrown');
-        } catch (LogicException $exception) {
+        } catch (\LogicException $exception) {
             $this->assertSame('User instance must implement Authenticatable.', $exception->getMessage());
         }
     }

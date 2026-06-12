@@ -5,15 +5,14 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Feature;
 
 use Filament\Facades\Filament;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Facades\Artisan;
 use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
-use RuntimeException;
 
 class TenantScopeConsoleTest extends TestCase
 {
@@ -26,7 +25,7 @@ class TenantScopeConsoleTest extends TestCase
         $this->tenant2 = TenantFactory::new()->createOne(['name' => 'Tenant 2 '.uniqid()]);
     }
 
-    public function test_allows_user_creation_without_tenant_in_console_context(): void
+    public function testAllowsUserCreationWithoutTenantInConsoleContext(): void
     {
         app()->bind(Kernel::class, static function (Application $app): Kernel {
             $kernel = $app->make(Kernel::class);
@@ -47,7 +46,7 @@ class TenantScopeConsoleTest extends TestCase
         $this->assertSame($email, $user->email);
     }
 
-    public function test_executes_make_filament_user_command_successfully(): void
+    public function testExecutesMakeFilamentUserCommandSuccessfully(): void
     {
         $email = 'artisan-test-'.uniqid('', true).'@example.com';
 
@@ -64,7 +63,7 @@ class TenantScopeConsoleTest extends TestCase
         $this->assertSame('Artisan Test User', $user->name);
     }
 
-    public function test_allows_querying_all_users_in_console_context_without_tenant_filter(): void
+    public function testAllowsQueryingAllUsersInConsoleContextWithoutTenantFilter(): void
     {
         $tenant1 = $this->requireTenant1();
         $tenant2 = $this->requireTenant2();
@@ -87,7 +86,7 @@ class TenantScopeConsoleTest extends TestCase
         $this->assertTrue($allUsers->pluck('id')->contains($user2->id));
     }
 
-    public function test_automatically_sets_tenant_id_when_creating_user_in_http_context(): void
+    public function testAutomaticallySetsTenantIdWhenCreatingUserInHttpContext(): void
     {
         $tenant1 = $this->requireTenant1();
         $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
@@ -107,7 +106,7 @@ class TenantScopeConsoleTest extends TestCase
         $this->assertInstanceOf(User::class, $user);
     }
 
-    public function test_filters_users_by_tenant_in_http_context(): void
+    public function testFiltersUsersByTenantInHttpContext(): void
     {
         $tenant1 = $this->requireTenant1();
         $tenant2 = $this->requireTenant2();
@@ -138,17 +137,17 @@ class TenantScopeConsoleTest extends TestCase
         $this->assertNull(User::withoutGlobalScopes()->find($user2->id));
     }
 
-    public function test_handles_gracefully_when_filament_get_tenant_throws_exception(): void
+    public function testHandlesGracefullyWhenFilamentGetTenantThrowsException(): void
     {
         Filament::shouldReceive('getTenant')
-            ->andThrow(new RuntimeException('Session not available'));
+            ->andThrow(new \RuntimeException('Session not available'));
 
         $users = User::query()->limit(1)->get();
 
         $this->assertInstanceOf(Collection::class, $users);
     }
 
-    public function test_allows_user_creation_when_filament_context_is_not_available(): void
+    public function testAllowsUserCreationWhenFilamentContextIsNotAvailable(): void
     {
         Filament::shouldReceive('getTenant')
             ->andReturn(null);
@@ -164,7 +163,7 @@ class TenantScopeConsoleTest extends TestCase
         $this->assertSame('No Tenant Context User', $user->name);
     }
 
-    public function test_allows_manual_tenant_id_assignment_in_console_context(): void
+    public function testAllowsManualTenantIdAssignmentInConsoleContext(): void
     {
         $tenant1 = $this->requireTenant1();
         $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
@@ -182,7 +181,7 @@ class TenantScopeConsoleTest extends TestCase
         $this->assertSame($tenant1->id, $user->getAttribute('tenant_id'));
     }
 
-    public function test_allows_querying_users_by_specific_tenant_in_console(): void
+    public function testAllowsQueryingUsersBySpecificTenantInConsole(): void
     {
         $tenant1 = $this->requireTenant1();
         $tenant2 = $this->requireTenant2();
@@ -204,7 +203,7 @@ class TenantScopeConsoleTest extends TestCase
         $this->assertGreaterThanOrEqual(2, $tenant2Users->count());
     }
 
-    public function test_does_not_crash_when_booting_in_console_context(): void
+    public function testDoesNotCrashWhenBootingInConsoleContext(): void
     {
         $this->skipUnlessUsersTableReady();
 
@@ -221,7 +220,7 @@ class TenantScopeConsoleTest extends TestCase
         $this->assertTrue($user->exists);
     }
 
-    public function test_skips_tenant_assignment_in_console_context_during_creating_event(): void
+    public function testSkipsTenantAssignmentInConsoleContextDuringCreatingEvent(): void
     {
         $this->skipUnlessUsersTableReady();
 

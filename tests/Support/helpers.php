@@ -264,7 +264,7 @@ function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contr
 function typedMock(string $class)
 {
     /** @var T&MockInterface */
-    $mock = \Mockery::mock($class);
+    $mock = Mockery::mock($class);
 
     return $mock;
 }
@@ -282,7 +282,7 @@ function typedMock(string $class)
 function configureMock(string $class, callable $configure)
 {
     /** @var T&MockInterface $mock */
-    $mock = \Mockery::mock($class);
+    $mock = Mockery::mock($class);
     $configure($mock);
 
     return $mock;

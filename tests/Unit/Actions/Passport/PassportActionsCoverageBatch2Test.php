@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
-use Mockery;
 use Modules\User\Actions\Passport\CreateClientAction;
 use Modules\User\Actions\Passport\CreateGenericClientAction;
 use Modules\User\Actions\Passport\RegenerateClientSecretAction;
@@ -35,7 +34,7 @@ class PassportActionsCoverageBatch2Test extends TestCase
 
     protected function tearDown(): void
     {
-        Mockery::close();
+        \Mockery::close();
     }
 
     /**
@@ -55,7 +54,7 @@ class PassportActionsCoverageBatch2Test extends TestCase
         }
     }
 
-    public function test_creates_oauth_client_with_defaults_and_user_association(): void
+    public function testCreatesOauthClientWithDefaultsAndUserAssociation(): void
     {
         $this->skipLegacyRedirectPersistence();
 
@@ -91,7 +90,7 @@ class PassportActionsCoverageBatch2Test extends TestCase
         );
     }
 
-    public function test_creates_generic_oauth_client_with_explicit_flags_and_provider(): void
+    public function testCreatesGenericOauthClientWithExplicitFlagsAndProvider(): void
     {
         $this->skipLegacyRedirectPersistence();
 
@@ -118,7 +117,7 @@ class PassportActionsCoverageBatch2Test extends TestCase
         $this->assertFalse((bool) $client->revoked);
     }
 
-    public function test_regenerates_client_secret_from_model_instance_and_client_id(): void
+    public function testRegeneratesClientSecretFromModelInstanceAndClientId(): void
     {
         $clientId = (string) Str::uuid();
 
@@ -154,7 +153,7 @@ class PassportActionsCoverageBatch2Test extends TestCase
         $this->assertTrue(Hash::check($secretFromId, (string) $storedSecret));
     }
 
-    public function test_revokes_refresh_token_and_returns_false_for_missing_token(): void
+    public function testRevokesRefreshTokenAndReturnsFalseForMissingToken(): void
     {
         $clientId = (string) Str::uuid();
         $tokenId = (string) Str::uuid();
@@ -202,7 +201,7 @@ class PassportActionsCoverageBatch2Test extends TestCase
         $this->assertFalse($action->execute('missing-refresh-token-id'));
     }
 
-    public function test_revokes_access_token_and_associated_refresh_token(): void
+    public function testRevokesAccessTokenAndAssociatedRefreshToken(): void
     {
         $clientId = (string) Str::uuid();
         $tokenId = (string) Str::uuid();
@@ -251,7 +250,7 @@ class PassportActionsCoverageBatch2Test extends TestCase
         $this->assertFalse($action->execute('missing-access-token-id'));
     }
 
-    public function test_revokes_client_with_and_without_associated_tokens(): void
+    public function testRevokesClientWithAndWithoutAssociatedTokens(): void
     {
         $clientWithTokenId = (string) Str::uuid();
         $tokenId = (string) Str::uuid();

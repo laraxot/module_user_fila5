@@ -4,16 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Authentication;
 
-use Exception;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 use Laravel\Passport\ClientRepository;
 use Laravel\Passport\Passport;
 use Modules\User\Database\Factories\DeviceFactory;
 use Modules\User\Database\Factories\UserFactory;
-use Modules\User\Models\Device;
 use Modules\User\Models\DeviceUser;
-use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -71,7 +68,7 @@ final class ApiLogoutControllerTest extends TestCase
         $personalAccessToken = null;
         try {
             $personalAccessToken = $user->createToken('Api Logout Test');
-        } catch (Exception $exception) {
+        } catch (\Exception $exception) {
             $this->markTestSkipped('Passport token creation unavailable: '.$exception->getMessage());
         }
 

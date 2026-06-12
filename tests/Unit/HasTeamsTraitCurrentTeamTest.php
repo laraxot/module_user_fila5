@@ -42,7 +42,7 @@ class HasTeamsTraitCurrentTeamTest extends TestCase
         $this->skipUnlessUsersTableReady();
     }
 
-    public function test_has_teams_current_team_does_not_crash_when_user_has_no_teams(): void
+    public function testHasTeamsCurrentTeamDoesNotCrashWhenUserHasNoTeams(): void
     {
         $user = hasTeamsCurrentCreateUser();
 
@@ -50,7 +50,7 @@ class HasTeamsTraitCurrentTeamTest extends TestCase
         $this->assertInstanceOf(BelongsTo::class, $user->currentTeam());
     }
 
-    public function test_has_teams_current_team_is_side_effect_free(): void
+    public function testHasTeamsCurrentTeamIsSideEffectFree(): void
     {
         $user = hasTeamsCurrentCreateUser(['current_team_id' => null]);
 
@@ -61,7 +61,7 @@ class HasTeamsTraitCurrentTeamTest extends TestCase
         $this->assertNull($user->current_team_id);
     }
 
-    public function test_has_teams_current_team_can_access_personal_team_when_available(): void
+    public function testHasTeamsCurrentTeamCanAccessPersonalTeamWhenAvailable(): void
     {
         $user = hasTeamsCurrentCreateUser();
         $personalTeam = hasTeamsCurrentCreateTeam($user, [
@@ -77,7 +77,7 @@ class HasTeamsTraitCurrentTeamTest extends TestCase
         $this->assertSame($personalTeam->id, $user->currentTeam->id);
     }
 
-    public function test_has_teams_current_team_does_not_override_existing_current_team_id(): void
+    public function testHasTeamsCurrentTeamDoesNotOverrideExistingCurrentTeamId(): void
     {
         $user = hasTeamsCurrentCreateUser();
         $team1 = hasTeamsCurrentCreateTeam($user, ['name' => 'Team 1', 'personal_team' => false]);
@@ -92,7 +92,7 @@ class HasTeamsTraitCurrentTeamTest extends TestCase
         $this->assertSame($team1->id, $user->current_team_id);
     }
 
-    public function test_has_teams_switch_team_can_change_current_team(): void
+    public function testHasTeamsSwitchTeamCanChangeCurrentTeam(): void
     {
         $user = hasTeamsCurrentCreateUser();
         $team1 = hasTeamsCurrentCreateTeam($user, ['name' => 'Team 1', 'personal_team' => false]);
@@ -108,7 +108,7 @@ class HasTeamsTraitCurrentTeamTest extends TestCase
         $this->assertSame($team1->id, $user->current_team_id);
     }
 
-    public function test_has_teams_current_team_supports_repeated_access(): void
+    public function testHasTeamsCurrentTeamSupportsRepeatedAccess(): void
     {
         $user = hasTeamsCurrentCreateUser();
         $team = hasTeamsCurrentCreateTeam($user, ['name' => 'Test Team', 'personal_team' => true]);

@@ -61,7 +61,7 @@ class OauthClientTest extends TestCase
         return OauthClient::query()->findOrFail($clientId);
     }
 
-    public function test_oauth_client_can_be_instantiated(): void
+    public function testOauthClientCanBeInstantiated(): void
     {
         $client = new OauthClient();
 
@@ -69,14 +69,14 @@ class OauthClientTest extends TestCase
         $this->assertInstanceOf(Client::class, $client);
     }
 
-    public function test_oauth_client_has_connection_user(): void
+    public function testOauthClientHasConnectionUser(): void
     {
         $client = new OauthClient();
 
         $this->assertSame('user', $client->getConnectionName());
     }
 
-    public function test_oauth_client_user_relation_uses_xot_data(): void
+    public function testOauthClientUserRelationUsesXotData(): void
     {
         $user = UserFactory::new()->createOne();
         $client = $this->oauthClientTestPersistedClient(['user_id' => (string) $user->getKey()]);
@@ -85,21 +85,21 @@ class OauthClientTest extends TestCase
         $this->assertSame($user->getKey(), $client->user->getKey());
     }
 
-    public function test_oauth_client_is_confidential_when_secret_is_present(): void
+    public function testOauthClientIsConfidentialWhenSecretIsPresent(): void
     {
         $client = $this->oauthClientTestPersistedClient(['secret' => 'hashed-secret']);
 
         $this->assertTrue($client->confidential());
     }
 
-    public function test_oauth_client_is_not_confidential_when_secret_is_empty(): void
+    public function testOauthClientIsNotConfidentialWhenSecretIsEmpty(): void
     {
         $client = $this->oauthClientTestPersistedClient(['secret' => null]);
 
         $this->assertFalse($client->confidential());
     }
 
-    public function test_oauth_client_has_grant_type_check(): void
+    public function testOauthClientHasGrantTypeCheck(): void
     {
         $client = $this->oauthClientTestPersistedClient([
             'grant_types' => json_encode(['authorization_code', 'refresh_token']),
@@ -109,7 +109,7 @@ class OauthClientTest extends TestCase
         $this->assertFalse($client->hasGrantType('client_credentials'));
     }
 
-    public function test_oauth_client_has_scope_check(): void
+    public function testOauthClientHasScopeCheck(): void
     {
         $client = $this->oauthClientTestPersistedClient();
 

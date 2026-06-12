@@ -15,7 +15,7 @@ use Modules\User\Tests\TestCase;
 
 class UserBusinessLogicTest extends TestCase
 {
-    public function test_enforces_password_complexity_requirements(): void
+    public function testEnforcesPasswordComplexityRequirements(): void
     {
         $weakPassword = '123456';
         $strongPassword = 'SecurePass123!';
@@ -29,14 +29,14 @@ class UserBusinessLogicTest extends TestCase
         $this->assertTrue(Hash::check($strongPassword, (string) $strongUser->password));
     }
 
-    public function test_enforces_email_uniqueness_across_the_system(): void
+    public function testEnforcesEmailUniquenessAcrossTheSystem(): void
     {
         $email = 'unique-'.uniqid('', true).'@example.com';
 
         createTestUser(['email' => $email]);
     }
 
-    public function test_enforces_username_uniqueness_when_required(): void
+    public function testEnforcesUsernameUniquenessWhenRequired(): void
     {
         if (! $this->userTableHasColumn('users', 'username')) {
             $email = 'alias-'.uniqid('', true).'@example.com';
@@ -49,7 +49,7 @@ class UserBusinessLogicTest extends TestCase
         createTestUser(['username' => $username]);
     }
 
-    public function test_enforces_profile_completion_requirements(): void
+    public function testEnforcesProfileCompletionRequirements(): void
     {
         $user = createTestUser([
             'first_name' => null,
@@ -68,7 +68,7 @@ class UserBusinessLogicTest extends TestCase
         $this->assertSame('Rossi', $user->last_name);
     }
 
-    public function test_enforces_data_validation_rules(): void
+    public function testEnforcesDataValidationRules(): void
     {
         $user = createTestUser([
             'first_name' => 'Mario',
@@ -85,7 +85,7 @@ class UserBusinessLogicTest extends TestCase
         $this->assertSame('Marco Rossi', $user->full_name);
     }
 
-    public function test_enforces_age_restrictions_for_certain_operations(): void
+    public function testEnforcesAgeRestrictionsForCertainOperations(): void
     {
         if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
             $this->markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
@@ -116,7 +116,7 @@ class UserBusinessLogicTest extends TestCase
         $this->assertGreaterThan(17, $adultAge);
     }
 
-    public function test_enforces_team_membership_limits(): void
+    public function testEnforcesTeamMembershipLimits(): void
     {
         $user = createTestUser();
         /** @var \Illuminate\Database\Eloquent\Collection<int, Team> $teams */
@@ -135,7 +135,7 @@ class UserBusinessLogicTest extends TestCase
         $this->assertTrue($this->teamMemberExists($firstTeam, $user));
     }
 
-    public function test_enforces_team_role_hierarchy(): void
+    public function testEnforcesTeamRoleHierarchy(): void
     {
         $user = createTestUser();
         $team = TeamFactory::new()->createOne();
@@ -149,7 +149,7 @@ class UserBusinessLogicTest extends TestCase
         ], 'user');
     }
 
-    public function test_enforces_team_ownership_rules(): void
+    public function testEnforcesTeamOwnershipRules(): void
     {
         $owner = createTestUser();
         $member = createTestUser();
@@ -164,7 +164,7 @@ class UserBusinessLogicTest extends TestCase
         $this->assertFalse($member->ownsTeam($team));
     }
 
-    public function test_enforces_permission_inheritance(): void
+    public function testEnforcesPermissionInheritance(): void
     {
         $user = createTestUser();
         $role = RoleFactory::new()->createOne(['name' => 'editor-'.uniqid()]);
@@ -177,7 +177,7 @@ class UserBusinessLogicTest extends TestCase
         $this->assertStringContainsString((string) $role->name, (string) $user->roles->pluck('name'));
     }
 
-    public function test_enforces_permission_conflicts(): void
+    public function testEnforcesPermissionConflicts(): void
     {
         if (! $this->userTableExists('model_has_permission')) {
             $this->markTestSkipped('model_has_permission table missing on user connection.');
@@ -203,7 +203,7 @@ class UserBusinessLogicTest extends TestCase
         $this->assertContains('delete_posts-'.$uid, $userPermissions);
     }
 
-    public function test_enforces_role_based_access_control(): void
+    public function testEnforcesRoleBasedAccessControl(): void
     {
         $admin = createTestUser();
         $moderator = createTestUser();
@@ -223,7 +223,7 @@ class UserBusinessLogicTest extends TestCase
         $this->assertFalse($admin->hasRole($userRole));
     }
 
-    public function test_enforces_referential_integrity_for_user_relationships(): void
+    public function testEnforcesReferentialIntegrityForUserRelationships(): void
     {
         if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
             $this->markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
@@ -246,7 +246,7 @@ class UserBusinessLogicTest extends TestCase
         $this->assertSame($user->id, $freshProfile->user_id);
     }
 
-    public function test_enforces_data_consistency_across_user_attributes(): void
+    public function testEnforcesDataConsistencyAcrossUserAttributes(): void
     {
         $user = createTestUser([
             'first_name' => 'Mario',
@@ -266,7 +266,7 @@ class UserBusinessLogicTest extends TestCase
         $this->assertStringContainsString('marco.rossi-', (string) $user->email);
     }
 
-    public function test_enforces_audit_trail_for_sensitive_operations(): void
+    public function testEnforcesAuditTrailForSensitiveOperations(): void
     {
         $user = createTestUser();
         $originalEmail = $user->email;
@@ -281,7 +281,7 @@ class UserBusinessLogicTest extends TestCase
         $this->assertNotSame($originalEmail, $user->email);
     }
 
-    public function test_enforces_password_expiration_policies(): void
+    public function testEnforcesPasswordExpirationPolicies(): void
     {
         $user = createTestUser([
             'password_expires_at' => now()->subDays(1),
@@ -297,7 +297,7 @@ class UserBusinessLogicTest extends TestCase
         $this->assertTrue($user->password_expires_at?->isFuture() ?? false);
     }
 
-    public function test_enforces_account_lockout_policies(): void
+    public function testEnforcesAccountLockoutPolicies(): void
     {
         $user = createTestUser(['is_active' => true]);
 
@@ -312,7 +312,7 @@ class UserBusinessLogicTest extends TestCase
         $this->assertTrue($user->is_active);
     }
 
-    public function test_enforces_session_management_policies(): void
+    public function testEnforcesSessionManagementPolicies(): void
     {
         $user = createTestUser();
         $staleTimestamp = now()->subMinutes(30);

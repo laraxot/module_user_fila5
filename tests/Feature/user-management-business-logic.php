@@ -16,7 +16,7 @@ use Modules\User\Tests\TestCase;
 
 class UserManagementBusinessLogicTest extends TestCase
 {
-    public function test_can_create_user_with_profile(): void
+    public function testCanCreateUserWithProfile(): void
     {
         $userData = [
             'name' => 'Mario Rossi',
@@ -52,7 +52,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertSame($user->id, $profile->user_id);
     }
 
-    public function test_can_assign_role_to_user(): void
+    public function testCanAssignRoleToUser(): void
     {
         $user = UserFactory::new()->createOne();
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -64,7 +64,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertContains($role->name, $user->getRoleNames()->toArray());
     }
 
-    public function test_can_assign_multiple_roles_to_user(): void
+    public function testCanAssignMultipleRolesToUser(): void
     {
         $user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -79,7 +79,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertCount(2, $user->getRoleNames());
     }
 
-    public function test_can_remove_role_from_user(): void
+    public function testCanRemoveRoleFromUser(): void
     {
         $user = UserFactory::new()->createOne();
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -92,7 +92,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertCount(0, $user->getRoleNames());
     }
 
-    public function test_can_sync_user_roles(): void
+    public function testCanSyncUserRoles(): void
     {
         $user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -109,7 +109,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertCount(2, $user->getRoleNames());
     }
 
-    public function test_can_check_user_permissions(): void
+    public function testCanCheckUserPermissions(): void
     {
         $user = UserFactory::new()->createOne();
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -123,7 +123,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertTrue($user->can('patients.read'));
     }
 
-    public function test_can_assign_direct_permission_to_user(): void
+    public function testCanAssignDirectPermissionToUser(): void
     {
         $user = UserFactory::new()->createOne();
         $permission = PermissionFactory::new()->createOne(['name' => 'special.permission']);
@@ -135,7 +135,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertTrue($user->can('special.permission'));
     }
 
-    public function test_can_revoke_direct_permission_from_user(): void
+    public function testCanRevokeDirectPermissionFromUser(): void
     {
         $user = UserFactory::new()->createOne();
         $permission = PermissionFactory::new()->createOne(['name' => 'special.permission']);
@@ -148,7 +148,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertFalse($user->can('special.permission'));
     }
 
-    public function test_can_check_user_has_any_role(): void
+    public function testCanCheckUserHasAnyRole(): void
     {
         $user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -161,7 +161,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertFalse($user->hasAnyRole(['admin', 'super-admin']));
     }
 
-    public function test_can_check_user_has_all_roles(): void
+    public function testCanCheckUserHasAllRoles(): void
     {
         $user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -173,7 +173,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertFalse($user->hasAllRoles(['doctor', 'nurse']));
     }
 
-    public function test_can_get_user_permissions(): void
+    public function testCanGetUserPermissions(): void
     {
         $user = UserFactory::new()->createOne();
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -190,7 +190,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertTrue($permissions->contains($permission2));
     }
 
-    public function test_can_get_user_roles(): void
+    public function testCanGetUserRoles(): void
     {
         $user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
@@ -205,7 +205,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertStringContainsString((string) 'admin', (string) $roles);
     }
 
-    public function test_can_check_user_is_super_admin(): void
+    public function testCanCheckUserIsSuperAdmin(): void
     {
         $user = UserFactory::new()->createOne();
         $superAdminRole = RoleFactory::new()->createOne(['name' => 'super-admin']);
@@ -216,7 +216,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertTrue($user->isSuperAdmin());
     }
 
-    public function test_can_update_user_profile(): void
+    public function testCanUpdateUserProfile(): void
     {
         $user = UserFactory::new()->createOne();
         $createdProfile = $user->profile()->create([
@@ -242,7 +242,7 @@ class UserManagementBusinessLogicTest extends TestCase
         ])->exists());
     }
 
-    public function test_can_delete_user_with_profile(): void
+    public function testCanDeleteUserWithProfile(): void
     {
         $user = UserFactory::new()->createOne();
         $createdProfile = $user->profile()->create([
@@ -258,17 +258,17 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertFalse(DB::table('profiles')->where(['id' => $profile->id])->exists());
     }
 
-    public function test_can_soft_delete_user(): void
+    public function testCanSoftDeleteUser(): void
     {
         $this->markTestSkipped('User model does not use SoftDeletes.');
     }
 
-    public function test_can_restore_soft_deleted_user(): void
+    public function testCanRestoreSoftDeletedUser(): void
     {
         $this->markTestSkipped('User model does not use SoftDeletes.');
     }
 
-    public function test_can_force_delete_user(): void
+    public function testCanForceDeleteUser(): void
     {
         $user = UserFactory::new()->createOne();
         $createdProfile = $user->profile()->create([
@@ -284,7 +284,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertFalse(DB::table('profiles')->where(['id' => $profile->id])->exists());
     }
 
-    public function test_can_search_users_by_name(): void
+    public function testCanSearchUsersByName(): void
     {
         $user1 = UserFactory::new()->createOne(['name' => 'Mario Rossi']);
         $user2 = UserFactory::new()->createOne(['name' => 'Giulia Bianchi']);
@@ -298,7 +298,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertFalse($results->contains($user2));
     }
 
-    public function test_can_search_users_by_email(): void
+    public function testCanSearchUsersByEmail(): void
     {
         $user1 = UserFactory::new()->createOne(['email' => 'mario@example.com']);
         $user2 = UserFactory::new()->createOne(['email' => 'giulia@test.com']);
@@ -312,7 +312,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertFalse($results->contains($user2));
     }
 
-    public function test_can_filter_users_by_role(): void
+    public function testCanFilterUsersByRole(): void
     {
         $doctorRole = RoleFactory::new()->createOne(['name' => 'doctor']);
         $nurseRole = RoleFactory::new()->createOne(['name' => 'nurse']);
@@ -333,7 +333,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertFalse($doctors->contains($user2));
     }
 
-    public function test_can_filter_users_by_permission(): void
+    public function testCanFilterUsersByPermission(): void
     {
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
         $permission = PermissionFactory::new()->createOne(['name' => 'patients.read']);
@@ -352,7 +352,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertFalse($usersWithPermission->contains($user2));
     }
 
-    public function test_can_get_users_with_roles_and_permissions(): void
+    public function testCanGetUsersWithRolesAndPermissions(): void
     {
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
         $permission = PermissionFactory::new()->createOne(['name' => 'patients.read']);
@@ -371,7 +371,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertCount(1, $userWithRelations->getAllPermissions());
     }
 
-    public function test_can_validate_user_email_uniqueness(): void
+    public function testCanValidateUserEmailUniqueness(): void
     {
         UserFactory::new()->createOne(['email' => 'test@example.com']);
 
@@ -387,7 +387,7 @@ class UserManagementBusinessLogicTest extends TestCase
         }
     }
 
-    public function test_can_handle_user_email_verification(): void
+    public function testCanHandleUserEmailVerification(): void
     {
         $user = UserFactory::new()->createOne(['email_verified_at' => null]);
 
@@ -397,7 +397,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertTrue($user->hasVerifiedEmail());
     }
 
-    public function test_can_handle_user_status_changes(): void
+    public function testCanHandleUserStatusChanges(): void
     {
         $user = UserFactory::new()->createOne(['is_active' => true]);
 
@@ -414,7 +414,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertTrue($freshModel3->is_active);
     }
 
-    public function test_can_handle_user_info(): void
+    public function testCanHandleUserInfo(): void
     {
         $user = UserFactory::new()->createOne();
 

@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Hash;
 use Livewire\Livewire;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Pages\MyProfilePage;
-use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
 
@@ -28,7 +27,7 @@ class ChangeProfilePasswordTest extends TestCase
         Filament::setCurrentPanel(Filament::getPanel('user::admin'));
     }
 
-    public function test_can_change_profile_password(): void
+    public function testCanChangeProfilePassword(): void
     {
         $user = UserFactory::new()->createOne([
             'password' => Hash::make('old_password'),
@@ -48,7 +47,7 @@ class ChangeProfilePasswordTest extends TestCase
         $this->assertTrue(Hash::check('new_password', (string) $user->fresh()?->password));
     }
 
-    public function test_cannot_change_password_with_wrong_current_password(): void
+    public function testCannotChangePasswordWithWrongCurrentPassword(): void
     {
         $user = UserFactory::new()->createOne([
             'password' => Hash::make('old_password'),

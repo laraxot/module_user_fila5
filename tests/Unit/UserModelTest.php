@@ -41,7 +41,7 @@ function stubUser(array $attributes = []): User
 
 class UserModelTest extends TestCase
 {
-    public function test_can_be_created_in_memory(): void
+    public function testCanBeCreatedInMemory(): void
     {
         $user = stubUser();
 
@@ -50,7 +50,7 @@ class UserModelTest extends TestCase
         $this->assertIsString($user->email);
     }
 
-    public function test_supports_mass_assignment_of_expected_attributes_behavior(): void
+    public function testSupportsMassAssignmentOfExpectedAttributesBehavior(): void
     {
         $data = [
             'first_name' => 'Jane',
@@ -70,7 +70,7 @@ class UserModelTest extends TestCase
         $this->assertTrue($user->is_otp);
     }
 
-    public function test_declares_sensitive_attributes_as_hidden_without_serialization(): void
+    public function testDeclaresSensitiveAttributesAsHiddenWithoutSerialization(): void
     {
         $user = stubUser();
         $hidden = $user->getHidden();
@@ -78,7 +78,7 @@ class UserModelTest extends TestCase
         $this->assertContains('remember_token', $hidden);
     }
 
-    public function test_casts_attributes_correctly(): void
+    public function testCastsAttributesCorrectly(): void
     {
         $user = stubUser([
             'email_verified_at' => Carbon::now(),
@@ -92,7 +92,7 @@ class UserModelTest extends TestCase
         $this->assertInstanceOf(Carbon::class, $user->created_at);
     }
 
-    public function test_has_profile_relationship_in_memory(): void
+    public function testHasProfileRelationshipInMemory(): void
     {
         $user = stubUser();
         $profile = new Profile();
@@ -102,7 +102,7 @@ class UserModelTest extends TestCase
         $this->assertInstanceOf(Profile::class, $user->profile);
     }
 
-    public function test_can_attach_authentication_logs_in_memory(): void
+    public function testCanAttachAuthenticationLogsInMemory(): void
     {
         $user = stubUser();
         $log = new AuthenticationLog();
@@ -110,7 +110,7 @@ class UserModelTest extends TestCase
         $this->assertCount(1, $user->authentications);
     }
 
-    public function test_can_expose_owned_teams_relation_when_preset(): void
+    public function testCanExposeOwnedTeamsRelationWhenPreset(): void
     {
         $user = stubUser();
         $team = new Team();
@@ -118,7 +118,7 @@ class UserModelTest extends TestCase
         $this->assertCount(1, $user->ownedTeams);
     }
 
-    public function test_can_expose_teams_relation_when_preset(): void
+    public function testCanExposeTeamsRelationWhenPreset(): void
     {
         $user = stubUser();
         $team = new Team();
@@ -126,7 +126,7 @@ class UserModelTest extends TestCase
         $this->assertCount(1, $user->teams);
     }
 
-    public function test_has_full_name_accessor(): void
+    public function testHasFullNameAccessor(): void
     {
         $user = stubUser([
             'first_name' => 'John',
@@ -136,7 +136,7 @@ class UserModelTest extends TestCase
         $this->assertSame('John Doe', $user->full_name);
     }
 
-    public function test_handles_null_names_in_full_name_accessor(): void
+    public function testHandlesNullNamesInFullNameAccessor(): void
     {
         $user = stubUser([
             'first_name' => 'John',
@@ -146,12 +146,12 @@ class UserModelTest extends TestCase
         $this->assertSame('John', rtrim($user->full_name));
     }
 
-    public function test_hashes_password_when_set(): void
+    public function testHashesPasswordWhenSet(): void
     {
         $user = stubUser(['password' => 'plain-password']);
     }
 
-    public function test_reflects_verified_email_state_when_timestamp_is_set(): void
+    public function testReflectsVerifiedEmailStateWhenTimestampIsSet(): void
     {
         $user = stubUser(['email_verified_at' => null]);
         $this->assertFalse($user->hasVerifiedEmail());
@@ -159,7 +159,7 @@ class UserModelTest extends TestCase
         $this->assertTrue($user->hasVerifiedEmail());
     }
 
-    public function test_can_be_activated_deactivated_in_memory(): void
+    public function testCanBeActivatedDeactivatedInMemory(): void
     {
         $user = stubUser(['is_active' => false]);
         $this->assertFalse($user->is_active);
@@ -167,14 +167,14 @@ class UserModelTest extends TestCase
         $this->assertTrue($user->is_active);
     }
 
-    public function test_supports_otp_authentication(): void
+    public function testSupportsOtpAuthentication(): void
     {
         $user = stubUser(['is_otp' => true]);
 
         $this->assertTrue($user->is_otp);
     }
 
-    public function test_exposes_active_flag_for_filtering_in_memory(): void
+    public function testExposesActiveFlagForFilteringInMemory(): void
     {
         $u1 = stubUser(['is_active' => true]);
         $u2 = stubUser(['is_active' => false]);
@@ -186,7 +186,7 @@ class UserModelTest extends TestCase
         $this->assertCount(1, $active);
     }
 
-    public function test_exposes_email_verification_flag_for_filtering_in_memory(): void
+    public function testExposesEmailVerificationFlagForFilteringInMemory(): void
     {
         $u1 = stubUser(['email_verified_at' => Carbon::now()]);
         $u2 = stubUser(['email_verified_at' => null]);
@@ -198,7 +198,7 @@ class UserModelTest extends TestCase
         $this->assertCount(1, $verified);
     }
 
-    public function test_exposes_language_for_filtering_in_memory(): void
+    public function testExposesLanguageForFilteringInMemory(): void
     {
         $u1 = stubUser(['lang' => 'it']);
         $u2 = stubUser(['lang' => 'en']);
@@ -207,14 +207,14 @@ class UserModelTest extends TestCase
         $this->assertCount(1, $italians);
     }
 
-    public function test_has_password_expiration(): void
+    public function testHasPasswordExpiration(): void
     {
         $user = stubUser(['password_expires_at' => Carbon::now()->addDays(30)]);
 
         $this->assertInstanceOf(Carbon::class, $user->password_expires_at);
     }
 
-    public function test_tracks_creation_and_updates_in_memory(): void
+    public function testTracksCreationAndUpdatesInMemory(): void
     {
         $user = stubUser();
 
@@ -222,13 +222,13 @@ class UserModelTest extends TestCase
         $this->assertInstanceOf(Carbon::class, $user->updated_at);
     }
 
-    public function test_can_have_current_team_in_memory(): void
+    public function testCanHaveCurrentTeamInMemory(): void
     {
         $user = stubUser(['current_team_id' => 'team-id']);
         $this->assertSame('team-id', $user->current_team_id);
     }
 
-    public function test_can_own_teams_in_memory(): void
+    public function testCanOwnTeamsInMemory(): void
     {
         $user = stubUser();
         $team = new Team();

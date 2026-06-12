@@ -15,19 +15,18 @@ use Modules\User\Filament\Clusters\Appearance\Pages\Logo;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Clusters\XotBaseCluster;
 use Modules\Xot\Filament\Pages\XotBasePage;
-use ReflectionClass;
 
 use function Safe\file_get_contents;
 use function Safe\glob;
 
 class AppearanceClusterTest extends TestCase
 {
-    public function test_appearance_cluster_extends_xot_base_cluster(): void
+    public function testAppearanceClusterExtendsXotBaseCluster(): void
     {
         $this->assertSame(XotBaseCluster::class, get_parent_class(Appearance::class));
     }
 
-    public function test_all_cluster_pages_extend_xot_base_page(): void
+    public function testAllClusterPagesExtendXotBasePage(): void
     {
         $pages = [
             Alignment::class,
@@ -43,7 +42,7 @@ class AppearanceClusterTest extends TestCase
         }
     }
 
-    public function test_all_cluster_pages_have_cluster_property_set(): void
+    public function testAllClusterPagesHaveClusterPropertySet(): void
     {
         $pages = [
             Alignment::class,
@@ -55,7 +54,7 @@ class AppearanceClusterTest extends TestCase
         ];
 
         foreach ($pages as $pageClass) {
-            $reflection = new ReflectionClass($pageClass);
+            $reflection = new \ReflectionClass($pageClass);
             $property = $reflection->getProperty('cluster');
             $defaultValue = $property->getDefaultValue();
 
@@ -63,7 +62,7 @@ class AppearanceClusterTest extends TestCase
         }
     }
 
-    public function test_cluster_pages_do_not_extend_filament_classes_directly(): void
+    public function testClusterPagesDoNotExtendFilamentClassesDirectly(): void
     {
         $files = glob(base_path('Modules/User/app/Filament/Clusters/Appearance/Pages/*.php'));
 
@@ -79,7 +78,7 @@ class AppearanceClusterTest extends TestCase
         }
     }
 
-    public function test_cluster_does_not_extend_filament_directly(): void
+    public function testClusterDoesNotExtendFilamentDirectly(): void
     {
         $file = base_path('Modules/User/app/Filament/Clusters/Appearance.php');
         $content = (string) file_get_contents($file);
@@ -89,7 +88,7 @@ class AppearanceClusterTest extends TestCase
         $this->assertStringContainsString('extends XotBaseCluster', $content);
     }
 
-    public function test_cluster_pages_are_accessible(): void
+    public function testClusterPagesAreAccessible(): void
     {
         $user = UserFactory::new()->createOne([
             'name' => 'Cluster Test User',

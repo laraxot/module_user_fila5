@@ -8,8 +8,6 @@ use Filament\Actions\Action;
 use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
-use ReflectionMethod;
 
 use function Safe\file_get_contents;
 
@@ -46,7 +44,7 @@ final class ChangePasswordActionTest extends TestCase
     {
         $action = $this->requireAction();
         Assert::assertInstanceOf(Action::class, $action);
-        $reflection = new ReflectionClass(ChangePasswordAction::class);
+        $reflection = new \ReflectionClass(ChangePasswordAction::class);
         Assert::assertTrue($reflection->hasMethod('setUp'));
     }
 
@@ -59,7 +57,7 @@ final class ChangePasswordActionTest extends TestCase
 
     public function testChangePasswordActionUsesPasswordDataComponent(): void
     {
-        $source = (new ReflectionClass(ChangePasswordAction::class))->getFileName();
+        $source = (new \ReflectionClass(ChangePasswordAction::class))->getFileName();
         $content = is_string($source) ? file_get_contents($source) : '';
 
         Assert::assertStringContainsString((string) 'PasswordData', (string) $content);
@@ -68,7 +66,7 @@ final class ChangePasswordActionTest extends TestCase
 
     public function testChangePasswordActionHasConfirmationField(): void
     {
-        $source = (new ReflectionClass(ChangePasswordAction::class))->getFileName();
+        $source = (new \ReflectionClass(ChangePasswordAction::class))->getFileName();
         $content = is_string($source) ? file_get_contents($source) : '';
 
         Assert::assertStringContainsString((string) 'new_password_confirmation', (string) $content);
@@ -83,7 +81,7 @@ final class ChangePasswordActionTest extends TestCase
 
     public function testChangePasswordActionValidatesPasswordConfirmation(): void
     {
-        $source = (new ReflectionClass(ChangePasswordAction::class))->getFileName();
+        $source = (new \ReflectionClass(ChangePasswordAction::class))->getFileName();
         $content = is_string($source) ? file_get_contents($source) : '';
 
         Assert::assertStringContainsString((string) "->same('new_password')", (string) $content);
@@ -98,7 +96,7 @@ final class ChangePasswordActionTest extends TestCase
 
     public function testChangePasswordActionHasCorrectSetupMethod(): void
     {
-        $reflection = new ReflectionClass(ChangePasswordAction::class);
+        $reflection = new \ReflectionClass(ChangePasswordAction::class);
 
         Assert::assertTrue($reflection->hasMethod('setUp'));
         Assert::assertTrue($reflection->getMethod('setUp')->isProtected());

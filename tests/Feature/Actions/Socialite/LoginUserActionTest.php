@@ -6,18 +6,15 @@ namespace Modules\User\Tests\Feature\Actions\Socialite;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Event;
-use InvalidArgumentException;
-use LogicException;
 use Modules\User\Actions\Socialite\LoginUserAction;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Tests\TestCase;
-use stdClass;
 
 class LoginUserActionTest extends TestCase
 {
-    public function test_authenticates_connected_socialite_user_and_dispatches_event(): void
+    public function testAuthenticatesConnectedSocialiteUserAndDispatchesEvent(): void
     {
         Event::fake([SocialiteUserConnected::class]);
 
@@ -38,7 +35,7 @@ class LoginUserActionTest extends TestCase
         Event::assertDispatched(SocialiteUserConnected::class);
     }
 
-    public function test_throws_when_related_user_is_not_authenticatable(): void
+    public function testThrowsWhenRelatedUserIsNotAuthenticatable(): void
     {
         $socialiteUser = new SocialiteUser([
             'provider' => 'test-provider',
@@ -46,17 +43,17 @@ class LoginUserActionTest extends TestCase
             'email' => 'not-authenticatable@example.com',
         ]);
 
-        $socialiteUser->setRelation('user', new stdClass());
+        $socialiteUser->setRelation('user', new \stdClass());
 
         try {
             app(LoginUserAction::class)->execute($socialiteUser);
             $this->fail('Expected LogicException was not thrown');
-        } catch (LogicException $exception) {
+        } catch (\LogicException $exception) {
             $this->assertSame('User instance must implement Authenticatable.', $exception->getMessage());
         }
     }
 
-    public function test_redirects_to_intended_page_when_available(): void
+    public function testRedirectsToIntendedPageWhenAvailable(): void
     {
         $user = UserFactory::new()->createOne();
 
@@ -73,7 +70,7 @@ class LoginUserActionTest extends TestCase
         $this->assertAuthenticatedAs($user);
     }
 
-    public function test_dispatches_event_with_correct_socialite_user_instance(): void
+    public function testDispatchesEventWithCorrectSocialiteUserInstance(): void
     {
         Event::fake();
 
@@ -94,7 +91,7 @@ class LoginUserActionTest extends TestCase
         });
     }
 
-    public function test_authenticates_different_users_independently(): void
+    public function testAuthenticatesDifferentUsersIndependently(): void
     {
         $user1 = UserFactory::new()->createOne(['email' => 'user1-'.uniqid().'@example.com']);
         $user2 = UserFactory::new()->createOne(['email' => 'user2-'.uniqid().'@example.com']);
@@ -120,7 +117,7 @@ class LoginUserActionTest extends TestCase
         $this->assertAuthenticatedAs($user2);
     }
 
-    public function test_returns_redirect_response_instance(): void
+    public function testReturnsRedirectResponseInstance(): void
     {
         $user = UserFactory::new()->createOne();
 
@@ -136,7 +133,7 @@ class LoginUserActionTest extends TestCase
         $this->assertInstanceOf(RedirectResponse::class, $response);
     }
 
-    public function test_handles_null_user_assertion_gracefully(): void
+    public function testHandlesNullUserAssertionGracefully(): void
     {
         $socialiteUser = new SocialiteUser([
             'provider' => 'test',
@@ -148,12 +145,12 @@ class LoginUserActionTest extends TestCase
         try {
             app(LoginUserAction::class)->execute($socialiteUser);
             $this->fail('Expected InvalidArgumentException was not thrown');
-        } catch (InvalidArgumentException $exception) {
-            $this->assertInstanceOf(InvalidArgumentException::class, $exception);
+        } catch (\InvalidArgumentException $exception) {
+            $this->assertInstanceOf(\InvalidArgumentException::class, $exception);
         }
     }
 
-    public function test_preserves_user_attributes_after_login(): void
+    public function testPreservesUserAttributesAfterLogin(): void
     {
         $user = UserFactory::new()->createOne([
             'email' => 'preserve-'.uniqid().'@example.com',

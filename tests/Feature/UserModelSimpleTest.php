@@ -9,21 +9,21 @@ use Modules\User\Tests\TestCase;
 
 class UserModelSimpleTest extends TestCase
 {
-    public function test_user_model_can_be_instantiated(): void
+    public function testUserModelCanBeInstantiated(): void
     {
         $user = new User();
 
         $this->assertInstanceOf(User::class, $user);
     }
 
-    public function test_user_model_can_access_connection(): void
+    public function testUserModelCanAccessConnection(): void
     {
         $user = new User();
 
         $this->assertSame('user', $user->getConnectionName());
     }
 
-    public function test_user_model_can_create_basic_record(): void
+    public function testUserModelCanCreateBasicRecord(): void
     {
         $this->skipUnlessUsersTableReady();
 

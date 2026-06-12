@@ -41,7 +41,7 @@ use Modules\User\Tests\TestCase;
 
 class UserEventsCoverageTest extends TestCase
 {
-    public function test_instantiates_team_and_membership_events(): void
+    public function testInstantiatesTeamAndMembershipEvents(): void
     {
         $team = typedMock(TeamContract::class);
         $user = UserFactory::new()->makeOne();
@@ -59,7 +59,7 @@ class UserEventsCoverageTest extends TestCase
         $this->assertInstanceOf(TeamDeleted::class, new TeamDeleted($team));
     }
 
-    public function test_instantiates_socialite_and_auth_events(): void
+    public function testInstantiatesSocialiteAndAuthEvents(): void
     {
         $socialiteUser = new SocialiteUser([
             'provider' => 'github',
@@ -75,7 +75,7 @@ class UserEventsCoverageTest extends TestCase
         $this->assertInstanceOf(UserNotAllowed::class, new UserNotAllowed($oauthUser));
     }
 
-    public function test_instantiates_recovery_and_invalid_state_events(): void
+    public function testInstantiatesRecoveryAndInvalidStateEvents(): void
     {
         /** @var Authenticatable $auth */
         $auth = UserFactory::new()->makeOne();
@@ -85,7 +85,7 @@ class UserEventsCoverageTest extends TestCase
         $this->assertInstanceOf(InvalidState::class, new InvalidState($exception));
     }
 
-    public function test_instantiates_two_factor_events(): void
+    public function testInstantiatesTwoFactorEvents(): void
     {
         $user = UserFactory::new()->makeOne();
 
@@ -95,7 +95,7 @@ class UserEventsCoverageTest extends TestCase
         $this->assertInstanceOf(TwoFactorAuthenticationChallenged::class, new TwoFactorAuthenticationChallenged($user));
     }
 
-    public function test_exposes_broadcast_channel_for_new_password_set_event(): void
+    public function testExposesBroadcastChannelForNewPasswordSetEvent(): void
     {
         $user = UserFactory::new()->makeOne();
         $event = new NewPasswordSet($user);
@@ -106,7 +106,7 @@ class UserEventsCoverageTest extends TestCase
         $this->assertInstanceOf(PrivateChannel::class, $channels[0]);
     }
 
-    public function test_instantiates_recovery_generated_and_user_registered_events(): void
+    public function testInstantiatesRecoveryGeneratedAndUserRegisteredEvents(): void
     {
         $userContract = UserFactory::new()->makeOne();
         $user = new User();

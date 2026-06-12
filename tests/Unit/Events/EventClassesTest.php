@@ -20,7 +20,7 @@ use Modules\User\Tests\TestCase;
 
 class EventClassesTest extends TestCase
 {
-    public function test_recovery_codes_generated_event_can_be_instantiated(): void
+    public function testRecoveryCodesGeneratedEventCanBeInstantiated(): void
     {
         $user = UserFactory::new()->makeOne();
         $event = new RecoveryCodesGenerated($user);
@@ -29,7 +29,7 @@ class EventClassesTest extends TestCase
         $this->assertSame($user, $event->userContract);
     }
 
-    public function test_team_member_added_event_can_be_instantiated(): void
+    public function testTeamMemberAddedEventCanBeInstantiated(): void
     {
         $team = typedMock(TeamContract::class);
         $user = UserFactory::new()->makeOne();
@@ -38,7 +38,7 @@ class EventClassesTest extends TestCase
         $this->assertInstanceOf(TeamMemberAdded::class, $event);
     }
 
-    public function test_team_member_removed_event_can_be_instantiated(): void
+    public function testTeamMemberRemovedEventCanBeInstantiated(): void
     {
         $team = typedMock(TeamContract::class);
         $user = UserFactory::new()->makeOne();
@@ -47,7 +47,7 @@ class EventClassesTest extends TestCase
         $this->assertInstanceOf(TeamMemberRemoved::class, $event);
     }
 
-    public function test_two_factor_authentication_enabled_event_can_be_instantiated(): void
+    public function testTwoFactorAuthenticationEnabledEventCanBeInstantiated(): void
     {
         $user = UserFactory::new()->makeOne();
         $event = new TwoFactorAuthenticationEnabled($user);
@@ -56,7 +56,7 @@ class EventClassesTest extends TestCase
         $this->assertSame($user, $event->userContract);
     }
 
-    public function test_two_factor_authentication_disabled_event_can_be_instantiated(): void
+    public function testTwoFactorAuthenticationDisabledEventCanBeInstantiated(): void
     {
         $user = UserFactory::new()->makeOne();
         $event = new TwoFactorAuthenticationDisabled($user);
@@ -65,7 +65,7 @@ class EventClassesTest extends TestCase
         $this->assertSame($user, $event->userContract);
     }
 
-    public function test_recovery_code_replaced_event_can_be_instantiated(): void
+    public function testRecoveryCodeReplacedEventCanBeInstantiated(): void
     {
         $user = UserFactory::new()->makeOne();
         $event = new RecoveryCodeReplaced($user, 'test_code');
@@ -75,7 +75,7 @@ class EventClassesTest extends TestCase
         $this->assertSame('test_code', $event->code);
     }
 
-    public function test_team_member_updated_event_can_be_instantiated(): void
+    public function testTeamMemberUpdatedEventCanBeInstantiated(): void
     {
         $team = typedMock(TeamContract::class);
         $user = UserFactory::new()->makeOne();
@@ -84,7 +84,7 @@ class EventClassesTest extends TestCase
         $this->assertInstanceOf(TeamMemberUpdated::class, $event);
     }
 
-    public function test_adding_team_event_can_be_instantiated(): void
+    public function testAddingTeamEventCanBeInstantiated(): void
     {
         $user = UserFactory::new()->makeOne();
         $event = new AddingTeam($user);
@@ -93,7 +93,7 @@ class EventClassesTest extends TestCase
         $this->assertSame($user, $event->owner);
     }
 
-    public function test_adding_team_member_event_can_be_instantiated(): void
+    public function testAddingTeamMemberEventCanBeInstantiated(): void
     {
         $team = typedMock(TeamContract::class);
         $user = UserFactory::new()->makeOne();
@@ -102,7 +102,7 @@ class EventClassesTest extends TestCase
         $this->assertInstanceOf(AddingTeamMember::class, $event);
     }
 
-    public function test_team_switched_event_can_be_instantiated(): void
+    public function testTeamSwitchedEventCanBeInstantiated(): void
     {
         $team = typedMock(TeamContract::class);
         $user = UserFactory::new()->makeOne();

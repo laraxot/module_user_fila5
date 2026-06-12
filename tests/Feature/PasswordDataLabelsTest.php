@@ -9,7 +9,7 @@ use Modules\User\Tests\TestCase;
 
 class PasswordDataLabelsTest extends TestCase
 {
-    public function test_password_data_labels_are_translated(): void
+    public function testPasswordDataLabelsAreTranslated(): void
     {
         app()->setLocale('it');
 
@@ -23,7 +23,7 @@ class PasswordDataLabelsTest extends TestCase
         $this->assertSame('Conferma Password', $confirmationComponent->getLabel());
     }
 
-    public function test_login_form_labels_are_translated(): void
+    public function testLoginFormLabelsAreTranslated(): void
     {
         $this->markTestSkipped('Login Livewire form labels — coperto da widget Filament LoginWidgetTest');
     }

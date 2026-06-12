@@ -13,32 +13,32 @@ use Modules\User\Tests\Unit\Models\Fixtures\TestBaseUser;
 
 class BaseUserTest extends TestCase
 {
-    public function test_base_user_extends_eloquent_model(): void
+    public function testBaseUserExtendsEloquentModel(): void
     {
         $baseUser = new TestBaseUser();
         $this->assertInstanceOf(Model::class, $baseUser);
     }
 
-    public function test_base_user_has_correct_table_name(): void
+    public function testBaseUserHasCorrectTableName(): void
     {
         $baseUser = new TestBaseUser();
         $this->assertSame('test_users', $baseUser->getTable());
     }
 
-    public function test_base_user_can_be_instantiated(): void
+    public function testBaseUserCanBeInstantiated(): void
     {
         $baseUser = new TestBaseUser();
         $this->assertInstanceOf(BaseUser::class, $baseUser);
     }
 
-    public function test_base_user_has_proper_inheritance_chain(): void
+    public function testBaseUserHasProperInheritanceChain(): void
     {
         $baseUser = new TestBaseUser();
         $this->assertInstanceOf(BaseUser::class, $baseUser);
         $this->assertInstanceOf(Model::class, $baseUser);
     }
 
-    public function test_base_user_has_authentication_traits(): void
+    public function testBaseUserHasAuthenticationTraits(): void
     {
         $baseUser = new TestBaseUser();
         $this->assertInstanceOf(User::class, $baseUser);

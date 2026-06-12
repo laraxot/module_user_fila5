@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Datas;
 
-use DateInterval;
 use Modules\User\Datas\FilamentShieldData;
 use Modules\User\Datas\PermissionData;
 use Modules\User\Datas\SocialiteUserAttributesData;
@@ -14,7 +13,7 @@ use Modules\User\Tests\TestCase;
 
 class UserDatasAndEnumsCoverageTest extends TestCase
 {
-    public function test_creates_socialite_user_attributes_data_with_expected_values(): void
+    public function testCreatesSocialiteUserAttributesDataWithExpectedValues(): void
     {
         $data = new SocialiteUserAttributesData(
             name: 'Mario',
@@ -29,7 +28,7 @@ class UserDatasAndEnumsCoverageTest extends TestCase
         $this->assertSame('github', $data->provider);
     }
 
-    public function test_builds_permission_data_from_permission_config(): void
+    public function testBuildsPermissionDataFromPermissionConfig(): void
     {
         config([
             'permission' => [
@@ -56,7 +55,7 @@ class UserDatasAndEnumsCoverageTest extends TestCase
                 'display_role_in_exception' => false,
                 'enable_wildcard_permission' => false,
                 'cache' => [
-                    'expiration_time' => new DateInterval('PT24H'),
+                    'expiration_time' => new \DateInterval('PT24H'),
                     'key' => 'spatie.permission.cache',
                     'store' => 'default',
                 ],
@@ -71,7 +70,7 @@ class UserDatasAndEnumsCoverageTest extends TestCase
         $this->assertSame('spatie.permission.cache', $data->cache->key);
     }
 
-    public function test_builds_filament_shield_data_from_filament_shield_config(): void
+    public function testBuildsFilamentShieldDataFromFilamentShieldConfig(): void
     {
         config([
             'filament-shield' => [
@@ -102,7 +101,7 @@ class UserDatasAndEnumsCoverageTest extends TestCase
         $this->assertTrue($data->filament_user->enabled);
     }
 
-    public function test_returns_labels_for_both_language_enums(): void
+    public function testReturnsLabelsForBothLanguageEnums(): void
     {
         app()->setLocale('it');
 
