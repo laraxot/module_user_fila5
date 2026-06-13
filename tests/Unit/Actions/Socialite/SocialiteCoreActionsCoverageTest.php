@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-use PHPUnit\Framework\Assert;
-
 use Illuminate\Contracts\Events\Dispatcher;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Laravel\Socialite\Facades\Socialite;
@@ -17,8 +15,9 @@ use Modules\User\Datas\SocialiteUserAttributesData;
 use Modules\User\Events\InvalidState;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 test('builds user attributes from oauth user', function (): void {
     $oauthUser = configureMock(SocialiteUserContract::class, function (MockInterface $mock): void {
@@ -44,7 +43,7 @@ test('throws when provider is empty while building attributes', function (): voi
     try {
         app(GetUserModelAttributesFromSocialiteAction::class)->execute('', $oauthUser);
         Assert::fail('Expected InvalidArgumentException');
-    } catch (\InvalidArgumentException $exception) {
+    } catch (InvalidArgumentException $exception) {
         Assert::assertSame('Il provider non può essere vuoto', $exception->getMessage());
     }
 });
@@ -58,7 +57,7 @@ test('throws when oauth email is invalid while building attributes', function ()
     try {
         app(GetUserModelAttributesFromSocialiteAction::class)->execute('github', $oauthUser);
         Assert::fail('Expected RuntimeException');
-    } catch (\RuntimeException $exception) {
+    } catch (RuntimeException $exception) {
         Assert::assertSame('L\'email deve essere una stringa non vuota', $exception->getMessage());
     }
 });
@@ -107,7 +106,7 @@ test('returns null and dispatches invalid state event when socialite state is in
 });
 
 test('creates socialite user model with normalized attributes', function (): void {
-    /** @var \Modules\Xot\Contracts\UserContract $user */
+    /** @var Modules\Xot\Contracts\UserContract $user */
     $user = UserFactory::new()->createOne();
 
     $oauthUser = configureMock(SocialiteUserContract::class, function (MockInterface $mock): void {

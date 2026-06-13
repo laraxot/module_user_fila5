@@ -5,30 +5,28 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Str;
-use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
-use function Safe\json_decode;
-use function Safe\json_encode;
 
-uses(\Modules\User\Tests\TestCase::class);
+use function Safe\json_decode;
+
+uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-$this->skipUnlessUserColumn('users', 'two_factor_secret');
-        $this->skipUnlessUserColumn('users', 'two_factor_recovery_codes');
-        $this->skipUnlessUserColumn('users', 'two_factor_confirmed_at');
+    /* @var \Modules\User\Tests\TestCase $this */
+    $this->skipUnlessUserColumn('users', 'two_factor_secret');
+    $this->skipUnlessUserColumn('users', 'two_factor_recovery_codes');
+    $this->skipUnlessUserColumn('users', 'two_factor_confirmed_at');
 
-        $this->user = $this->createTestUser();
-        $this->google2fa = new Google2FA();
+    $this->user = $this->createTestUser();
+    $this->google2fa = new Google2FA();
 });
 
 describe('Two Factor Service', function (): void {
     test('enable generates secret and qr code', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
-$google2fa = $this->requireGoogle2fa();
+        /** @var TestCase $this */
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $result = enableTwoFactorForUser($user, $google2fa);
 
@@ -38,7 +36,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('enable stores encrypted secret', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         enableTwoFactorForUser($user, $google2fa);
 
@@ -51,7 +49,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('enable generates10recovery codes', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $result = enableTwoFactorForUser($user, $google2fa);
 
@@ -62,7 +60,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('confirm enables2fa with valid code', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $result = enableTwoFactorForUser($user, $google2fa);
         $validCode = $google2fa->getCurrentOtp($result['secret']);
@@ -76,7 +74,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('confirm fails with invalid code', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $result = enableTwoFactorForUser($user, $google2fa);
 
@@ -89,7 +87,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('disable removes all2fa data', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $result = enableTwoFactorForUser($user, $google2fa);
         confirmTwoFactorForUser(
@@ -109,7 +107,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('verify validates correct code', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $result = enableTwoFactorForUser($user, $google2fa);
         $validCode = $google2fa->getCurrentOtp($result['secret']);
@@ -120,7 +118,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('verify rejects incorrect code', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         enableTwoFactorForUser($user, $google2fa);
 
@@ -130,7 +128,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('verify returns false if no secret', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $verified = verifyTwoFactorCode($user, $google2fa, '123456');
 
@@ -138,7 +136,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('verify recovery code works once', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $result = enableTwoFactorForUser($user, $google2fa);
         $recoveryCode = $result['recovery_codes'][0];
@@ -152,7 +150,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('verify recovery code fails if already used', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $result = enableTwoFactorForUser($user, $google2fa);
         $recoveryCode = $result['recovery_codes'][0];
@@ -165,7 +163,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('verify recovery code fails with invalid code', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         enableTwoFactorForUser($user, $google2fa);
 
@@ -175,7 +173,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('regenerate recovery codes creates new set', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $result = enableTwoFactorForUser($user, $google2fa);
         $oldCodes = $result['recovery_codes'];
@@ -187,7 +185,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('regenerate recovery codes invalidates old ones', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $result = enableTwoFactorForUser($user, $google2fa);
         $oldCode = $result['recovery_codes'][0];
@@ -200,7 +198,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('qr code contains user email', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $result = enableTwoFactorForUser($user, $google2fa);
 
@@ -208,7 +206,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('qr code is valid otpauth url', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $result = enableTwoFactorForUser($user, $google2fa);
 
@@ -217,7 +215,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('secret is properly encrypted in database', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $result = enableTwoFactorForUser($user, $google2fa);
 
@@ -232,7 +230,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('recovery codes are properly encrypted in database', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $result = enableTwoFactorForUser($user, $google2fa);
 
@@ -245,7 +243,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('enable can be called multiple times', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $result1 = enableTwoFactorForUser($user, $google2fa);
         $result2 = enableTwoFactorForUser($user, $google2fa);
@@ -254,7 +252,7 @@ $google2fa = $this->requireGoogle2fa();
     });
 
     test('confirm sets confirmed at timestamp', function (): void {
-$google2fa = $this->requireGoogle2fa();
+        $google2fa = $this->requireGoogle2fa();
         $user = $this->requireUser();
         $result = enableTwoFactorForUser($user, $google2fa);
         $validCode = $google2fa->getCurrentOtp($result['secret']);

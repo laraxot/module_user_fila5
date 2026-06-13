@@ -19,21 +19,21 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
-$user = UserFactory::new()->createOne([
-            'password' => Hash::make('password123'),
-            'is_active' => true,
-            'email_verified_at' => now(),
-        ]);
-        \assert($user instanceof User);
-        $this->user = $user;
+    $user = UserFactory::new()->createOne([
+        'password' => Hash::make('password123'),
+        'is_active' => true,
+        'email_verified_at' => now(),
+    ]);
+    \assert($user instanceof User);
+    $this->user = $user;
 });
 
 describe('User Authentication', function (): void {
     test('can authenticate with valid credentials', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         $result = Auth::attempt([
             'email' => $user->email,
             'password' => 'password123',
@@ -44,7 +44,7 @@ $user = $this->requireUser();
     });
 
     test('cannot authenticate with invalid password', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         $result = Auth::attempt([
             'email' => $user->email,
             'password' => 'wrongpassword',
@@ -55,7 +55,7 @@ $user = $this->requireUser();
     });
 
     test('cannot authenticate with non existent email', function (): void {
-$result = Auth::attempt([
+        $result = Auth::attempt([
             'email' => 'nonexistent@example.com',
             'password' => 'password123',
         ]);
@@ -65,7 +65,7 @@ $result = Auth::attempt([
     });
 
     test('cannot authenticate inactive user', function (): void {
-$inactiveUser = UserFactory::new()->createOne([
+        $inactiveUser = UserFactory::new()->createOne([
             'password' => Hash::make('password123'),
             'is_active' => false,
         ]);
@@ -81,7 +81,7 @@ $inactiveUser = UserFactory::new()->createOne([
     });
 
     test('can logout user', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         Auth::login($user);
         Assert::assertSame(true, Auth::check());
         Auth::logout();
@@ -89,7 +89,7 @@ $user = $this->requireUser();
     });
 
     test('can hash password on creation', function (): void {
-$user = UserFactory::new()->createOne([
+        $user = UserFactory::new()->createOne([
             'password' => Hash::make('testpassword'),
         ]);
         \assert($user instanceof User);
@@ -98,7 +98,7 @@ $user = UserFactory::new()->createOne([
     });
 
     test('can change password', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         $newPassword = 'newpassword123';
         $user->update([
             'password' => Hash::make($newPassword),
@@ -111,7 +111,7 @@ $user = $this->requireUser();
     });
 
     test('can check password expiration', function (): void {
-$user = UserFactory::new()->createOne([
+        $user = UserFactory::new()->createOne([
             'password_expires_at' => now()->subDays(1),
         ]);
         Assert::assertNotNull($user->password_expires_at);
@@ -121,7 +121,7 @@ $user = UserFactory::new()->createOne([
     });
 
     test('can set password expiration', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         $expirationDate = now()->addDays(90);
         $user->update([
             'password_expires_at' => $expirationDate,
@@ -134,7 +134,7 @@ $user = $this->requireUser();
     });
 
     test('can generate remember token', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         $token = Str::random(60);
         $user->forceFill(['remember_token' => $token])->save();
 
@@ -143,7 +143,7 @@ $user = $this->requireUser();
     });
 
     test('can authenticate using remember token', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         $token = Str::random(60);
         $user->forceFill(['remember_token' => $token])->save();
 
@@ -154,7 +154,7 @@ $user = $this->requireUser();
     });
 
     test('can mark email as verified', function (): void {
-$user = UserFactory::new()->createOne([
+        $user = UserFactory::new()->createOne([
             'email_verified_at' => null,
         ]);
         \assert($user instanceof User);
@@ -168,7 +168,7 @@ $user = UserFactory::new()->createOne([
     });
 
     test('can check if email is verified', function (): void {
-$verifiedUser = UserFactory::new()->createOne([
+        $verifiedUser = UserFactory::new()->createOne([
             'email_verified_at' => now(),
         ]);
         \assert($verifiedUser instanceof User);
@@ -183,7 +183,7 @@ $verifiedUser = UserFactory::new()->createOne([
     });
 
     test('can send email verification notification', function (): void {
-$user = UserFactory::new()->createOne([
+        $user = UserFactory::new()->createOne([
             'email_verified_at' => null,
         ]);
         \assert($user instanceof User);
@@ -196,7 +196,7 @@ $user = UserFactory::new()->createOne([
     });
 
     test('can assign and check roles', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         $this->skipUnlessRoleAssignmentSupported();
         $uid = uniqid();
         $adminRole = RoleFactory::new()->createOne(['name' => 'admin-'.$uid]);
@@ -210,7 +210,7 @@ $user = $this->requireUser();
     });
 
     test('can assign and check permissions', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         $this->skipUnlessDirectPermissionSupported();
         $uid = uniqid();
         $editPermission = PermissionFactory::new()->createOne(['name' => 'edit posts '.$uid]);
@@ -224,7 +224,7 @@ $user = $this->requireUser();
     });
 
     test('can inherit permissions from roles', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         $this->skipUnlessRoleAssignmentSupported();
         $this->skipUnlessDirectPermissionSupported();
         $uid = uniqid();
@@ -238,7 +238,7 @@ $user = $this->requireUser();
     });
 
     test('can check multiple permissions', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         $this->skipUnlessDirectPermissionSupported();
         $uid = uniqid();
         $permission1 = PermissionFactory::new()->createOne(['name' => 'edit posts '.$uid]);
@@ -251,7 +251,7 @@ $user = $this->requireUser();
     });
 
     test('can remove roles and permissions', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         $this->skipUnlessRoleAssignmentSupported();
         $this->skipUnlessDirectPermissionSupported();
         $uid = uniqid();
@@ -271,17 +271,17 @@ $user = $this->requireUser();
     });
 
     test('can have oauth clients', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         Assert::assertInstanceOf(MorphMany::class, $user->clients());
     });
 
     test('can have oauth tokens', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         Assert::assertInstanceOf(HasMany::class, $user->tokens());
     });
 
     test('can find user for passport', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         $user = User::findForPassport($user->email);
 
         Assert::assertNotNull($user);
@@ -289,24 +289,24 @@ $user = $this->requireUser();
     });
 
     test('can validate password for passport', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         $isValid = $user->validateForPassportPasswordGrant('password123');
 
         Assert::assertSame(true, $isValid);
     });
 
     test('can log authentication attempts', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         Assert::assertInstanceOf(MorphMany::class, $user->authentications());
     });
 
     test('can get latest authentication log', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         Assert::assertInstanceOf(MorphOne::class, $user->latestAuthentication());
     });
 
     test('can store user in session', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         Auth::login($user);
 
         Assert::assertSame(true, Auth::check());
@@ -314,7 +314,7 @@ $user = $this->requireUser();
     });
 
     test('can remember user across sessions', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         Auth::login($user, true);
 
         $fresh = $user->fresh();
@@ -323,7 +323,7 @@ $user = $this->requireUser();
     });
 
     test('can clear user session on logout', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         Auth::login($user);
         Assert::assertSame(true, Auth::check());
         Auth::logout();
@@ -331,7 +331,7 @@ $user = $this->requireUser();
     });
 
     test('can enable two factor authentication', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         $user->update(['is_otp' => true]);
 
         Assert::assertNotNull($freshUser = $user->fresh());
@@ -339,7 +339,7 @@ $user = $this->requireUser();
     });
 
     test('can disable two factor authentication', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         $user->update(['is_otp' => false]);
 
         Assert::assertNotNull($freshUser = $user->fresh());
@@ -347,7 +347,7 @@ $user = $this->requireUser();
     });
 
     test('handles otp authentication workflow', function (): void {
-$user = UserFactory::new()->createOne([
+        $user = UserFactory::new()->createOne([
             'is_otp' => true,
             'password' => Hash::make('password123'),
         ]);

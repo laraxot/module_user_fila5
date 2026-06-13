@@ -12,26 +12,25 @@ use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use function Pest\Laravel\get;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
-$this->widget = new UserOverview();
-        $this->user = UserFactory::new()->createOne([
-            'type' => UserType::MasterAdmin,
-            'email' => 'admin-'.Str::lower(Str::random(10)).'@example.com',
-        ]);
+    $this->widget = new UserOverview();
+    $this->user = UserFactory::new()->createOne([
+        'type' => UserType::MasterAdmin,
+        'email' => 'admin-'.Str::lower(Str::random(10)).'@example.com',
+    ]);
 });
 
 describe('User Overview', function (): void {
     test('user overview widget extends correct base class', function (): void {
-$widget = $this->requireWidget();
+        $widget = $this->requireWidget();
         Assert::assertInstanceOf(Widget::class, $widget);
     });
 
     test('user overview widget has correct view', function (): void {
-$widget = $this->requireWidget();
+        $widget = $this->requireWidget();
         $reflection = new \ReflectionClass(UserOverview::class);
         $viewProperty = $reflection->getProperty('view');
         $viewProperty->setAccessible(true);
@@ -40,13 +39,13 @@ $widget = $this->requireWidget();
     });
 
     test('user overview widget has record property', function (): void {
-$widget = $this->requireWidget();
+        $widget = $this->requireWidget();
         Assert::assertInstanceOf(UserOverview::class, $widget);
         Assert::assertNull($widget->record);
     });
 
     test('user overview widget can set record', function (): void {
-$widget = $this->requireWidget();
+        $widget = $this->requireWidget();
         Assert::assertInstanceOf(UserOverview::class, $widget);
         $user = $this->requireUser();
         $widget->record = $user;
@@ -56,23 +55,23 @@ $widget = $this->requireWidget();
     });
 
     test('user overview widget record property is nullable', function (): void {
-$reflection = new \ReflectionClass(UserOverview::class);
+        $reflection = new \ReflectionClass(UserOverview::class);
         $recordProperty = $reflection->getProperty('record');
 
         Assert::assertTrue($recordProperty->getType()?->allowsNull() ?? false);
     });
 
     test('user overview widget has correct namespace', function (): void {
-Assert::assertStringContainsString((string) 'Modules\User\Filament\Resources\UserResource\Widgets', (string) UserOverview::class);
+        Assert::assertStringContainsString((string) 'Modules\User\Filament\Resources\UserResource\Widgets', (string) UserOverview::class);
     });
 
     test('user overview widget can be instantiated', function (): void {
-$widget = $this->requireWidget();
+        $widget = $this->requireWidget();
         Assert::assertInstanceOf(UserOverview::class, $widget);
     });
 
     test('user overview widget has correct static properties', function (): void {
-$reflection = new \ReflectionClass(UserOverview::class);
+        $reflection = new \ReflectionClass(UserOverview::class);
         $viewProperty = $reflection->getProperty('view');
         $viewProperty->setAccessible(true);
 
@@ -80,7 +79,7 @@ $reflection = new \ReflectionClass(UserOverview::class);
     });
 
     test('user overview widget view path is correct', function (): void {
-$widget = $this->requireWidget();
+        $widget = $this->requireWidget();
         $reflection = new \ReflectionClass(UserOverview::class);
         $viewProperty = $reflection->getProperty('view');
         $viewProperty->setAccessible(true);

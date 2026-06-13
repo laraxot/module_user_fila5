@@ -13,12 +13,12 @@ use Modules\User\Models\SocialiteUser;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Login User Action', function (): void {
     test('authenticates connected socialite user and dispatches event', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
-Event::fake([SocialiteUserConnected::class]);
+        /* @var \Modules\User\Tests\TestCase $this */
+        Event::fake([SocialiteUserConnected::class]);
 
         $user = UserFactory::new()->createOne();
 
@@ -38,7 +38,7 @@ Event::fake([SocialiteUserConnected::class]);
     });
 
     test('throws when related user is not authenticatable', function (): void {
-$socialiteUser = new SocialiteUser([
+        $socialiteUser = new SocialiteUser([
             'provider' => 'test-provider',
             'provider_id' => 'provider-id-2',
             'email' => 'not-authenticatable@example.com',

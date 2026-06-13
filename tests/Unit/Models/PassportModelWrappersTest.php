@@ -46,7 +46,7 @@ function passportWrapperConnectionName(string $wrapperClass): ?string
 }
 
 beforeEach(function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+    /* @var \Modules\User\Tests\TestCase $this */
     config(['passport.connection' => 'user']);
 });
 

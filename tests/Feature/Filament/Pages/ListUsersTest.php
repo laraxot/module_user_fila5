@@ -18,48 +18,47 @@ use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use function Pest\Laravel\get;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
-try {
-            $panel = Filament::getPanel('user::admin');
-        } catch (\Exception $e) {
-            $panelProvider = new AdminPanelProvider(app());
-            $panel = $panelProvider->panel(Panel::make());
-            Filament::registerPanel($panel);
-        }
-        Filament::setCurrentPanel($panel);
+    try {
+        $panel = Filament::getPanel('user::admin');
+    } catch (\Exception $e) {
+        $panelProvider = new AdminPanelProvider(app());
+        $panel = $panelProvider->panel(Panel::make());
+        Filament::registerPanel($panel);
+    }
+    Filament::setCurrentPanel($panel);
 
-        $this->listUsersPage = new ListUsers();
+    $this->listUsersPage = new ListUsers();
 
-        $users = UserFactory::new()
-            ->count(3)
-            ->create([
-                'type' => UserType::MasterAdmin,
-            ]);
+    $users = UserFactory::new()
+        ->count(3)
+        ->create([
+            'type' => UserType::MasterAdmin,
+        ]);
 
-        $this->users = new Collection($users->all());
+    $this->users = new Collection($users->all());
 });
 
 describe('List Users', function (): void {
     test('list users page has correct resource', function (): void {
-Assert::assertSame(UserResource::class, ListUsers::getResource());
+        Assert::assertSame(UserResource::class, ListUsers::getResource());
     });
 
     test('list users page extends correct base class', function (): void {
-$listUsersPage = $this->requireListUsersPage();
+        $listUsersPage = $this->requireListUsersPage();
         Assert::assertInstanceOf(BaseListUsers::class, $listUsersPage);
     });
 
     test('list users page can be instantiated', function (): void {
-$listUsersPage = $this->requireListUsersPage();
+        $listUsersPage = $this->requireListUsersPage();
         Assert::assertInstanceOf(ListUsers::class, $listUsersPage);
     });
 
     test('list users page has correct table columns', function (): void {
-$listUsersPage = $this->requireListUsersPage();
+        $listUsersPage = $this->requireListUsersPage();
         $columns = $listUsersPage->getTableColumns();
 
         Assert::assertArrayHasKey('name', $columns);
@@ -75,14 +74,14 @@ $listUsersPage = $this->requireListUsersPage();
     });
 
     test('list users page has correct table filters', function (): void {
-$listUsersPage = $this->requireListUsersPage();
+        $listUsersPage = $this->requireListUsersPage();
         $filters = $listUsersPage->getTableFilters();
 
         Assert::assertCount(0, $filters);
     });
 
     test('list users page has correct table actions', function (): void {
-$listUsersPage = $this->requireListUsersPage();
+        $listUsersPage = $this->requireListUsersPage();
         $actions = $listUsersPage->getTableActions();
 
         Assert::assertArrayHasKey('change_password', $actions);
@@ -92,7 +91,7 @@ $listUsersPage = $this->requireListUsersPage();
     });
 
     test('list users page can display users', function (): void {
-$users = $this->requireUsers();
+        $users = $this->requireUsers();
         $createdUserIds = $users->pluck('id');
         $testUsers = User::whereIn('id', $createdUserIds)->get();
 
@@ -108,19 +107,19 @@ $users = $this->requireUsers();
     });
 
     test('list users page has correct navigation label', function (): void {
-$listUsersPage = $this->requireListUsersPage();
+        $listUsersPage = $this->requireListUsersPage();
         $label = $listUsersPage->getNavigationLabel();
         Assert::assertNotEmpty($label);
     });
 
     test('list users page has correct title', function (): void {
-$listUsersPage = $this->requireListUsersPage();
+        $listUsersPage = $this->requireListUsersPage();
         $title = $listUsersPage->getTitle();
         Assert::assertNotEmpty($title);
     });
 
     test('list users page has correct breadcrumbs', function (): void {
-$listUsersPage = $this->requireListUsersPage();
+        $listUsersPage = $this->requireListUsersPage();
         try {
             $breadcrumbs = $listUsersPage->getBreadcrumbs();
             Assert::assertNotEmpty($breadcrumbs);
@@ -129,7 +128,7 @@ $listUsersPage = $this->requireListUsersPage();
     });
 
     test('list users page can handle search', function (): void {
-$listUsersPage = $this->requireListUsersPage();
+        $listUsersPage = $this->requireListUsersPage();
         $columns = $listUsersPage->getTableColumns();
         $nameColumn = $columns['name'];
         $emailColumn = $columns['email'];

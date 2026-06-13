@@ -20,31 +20,31 @@ use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
-UserFactory::new()
-            ->create([
-                'type' => UserType::MasterAdmin,
-                'email' => 'admin-'.uniqid().'@example.com',
-                'password' => Hash::make('password123'),
-            ]);
+    UserFactory::new()
+                ->create([
+                    'type' => UserType::MasterAdmin,
+                    'email' => 'admin-'.uniqid().'@example.com',
+                    'password' => Hash::make('password123'),
+                ]);
 });
 
 describe('User Resource', function (): void {
     test('user resource has correct navigation icon', function (): void {
-Assert::assertSame('ui-user-main', UserResource::getNavigationIcon());
+        Assert::assertSame('ui-user-main', UserResource::getNavigationIcon());
     });
 
     test('user resource has correct widgets', function (): void {
-$widgets = UserResource::getWidgets();
+        $widgets = UserResource::getWidgets();
 
         Assert::assertCount(1, $widgets);
         Assert::assertContains(UserOverview::class, $widgets);
     });
 
     test('user resource has correct form schema', function (): void {
-$form = UserResource::getFormSchema();
+        $form = UserResource::getFormSchema();
 
         Assert::assertArrayHasKey('section01', $form);
         Assert::assertArrayHasKey('section02', $form);
@@ -69,19 +69,19 @@ $form = UserResource::getFormSchema();
     });
 
     test('user resource has combined relation manager tabs', function (): void {
-$resource = new UserResource();
+        $resource = new UserResource();
 
         Assert::assertTrue($resource->hasCombinedRelationManagerTabsWithContent());
     });
 
     test('user resource extends correct base class', function (): void {
-$resource = new UserResource();
+        $resource = new UserResource();
 
         Assert::assertInstanceOf(XotBaseResource::class, $resource);
     });
 
     test('user resource form schema has correct column spans', function (): void {
-$form = UserResource::getFormSchema();
+        $form = UserResource::getFormSchema();
 
         $section01 = $form['section01'];
         $section02 = $form['section02'];
@@ -91,7 +91,7 @@ $form = UserResource::getFormSchema();
     });
 
     test('user resource name field is required', function (): void {
-$form = UserResource::getFormSchema();
+        $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -105,7 +105,7 @@ $form = UserResource::getFormSchema();
     });
 
     test('user resource email field is required', function (): void {
-$form = UserResource::getFormSchema();
+        $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -119,7 +119,7 @@ $form = UserResource::getFormSchema();
     });
 
     test('user resource password field is required only on create', function (): void {
-$form = UserResource::getFormSchema();
+        $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -133,7 +133,7 @@ $form = UserResource::getFormSchema();
     });
 
     test('user resource password field has correct type', function (): void {
-$form = UserResource::getFormSchema();
+        $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -145,7 +145,7 @@ $form = UserResource::getFormSchema();
     });
 
     test('user resource email field has unique validation', function (): void {
-$form = UserResource::getFormSchema();
+        $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -159,7 +159,7 @@ $form = UserResource::getFormSchema();
     });
 
     test('user resource created at field shows diff for humans', function (): void {
-$form = UserResource::getFormSchema();
+        $form = UserResource::getFormSchema();
         $section02 = $form['section02'];
         $section02Schema = userResourceSectionComponents($this, $section02);
 
@@ -173,13 +173,13 @@ $form = UserResource::getFormSchema();
     });
 
     test('user resource can be instantiated', function (): void {
-$resource = new UserResource();
+        $resource = new UserResource();
 
         Assert::assertInstanceOf(UserResource::class, $resource);
     });
 
     test('user resource has correct model', function (): void {
-$resource = new UserResource();
+        $resource = new UserResource();
 
         Assert::assertInstanceOf(UserResource::class, $resource);
     });

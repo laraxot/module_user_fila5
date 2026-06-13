@@ -15,20 +15,23 @@ use Modules\User\Filament\Clusters\Appearance\Pages\Logo;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Clusters\XotBaseCluster;
 use Modules\Xot\Filament\Pages\XotBasePage;
-use function Safe\file_get_contents;
-use function Safe\glob;
-use PHPUnit\Framework\Assert;
+
 use function Pest\Laravel\actingAs;
 
-uses(\Modules\User\Tests\TestCase::class);
+use PHPUnit\Framework\Assert;
+
+use function Safe\file_get_contents;
+use function Safe\glob;
+
+uses(TestCase::class);
 
 describe('Appearance Cluster', function (): void {
     test('appearance cluster extends xot base cluster', function (): void {
-Assert::assertSame(XotBaseCluster::class, get_parent_class(Appearance::class));
+        Assert::assertSame(XotBaseCluster::class, get_parent_class(Appearance::class));
     });
 
     test('all cluster pages extend xot base page', function (): void {
-$pages = [
+        $pages = [
             Alignment::class,
             Background::class,
             Colors::class,
@@ -43,7 +46,7 @@ $pages = [
     });
 
     test('all cluster pages have cluster property set', function (): void {
-$pages = [
+        $pages = [
             Alignment::class,
             Background::class,
             Colors::class,
@@ -62,7 +65,7 @@ $pages = [
     });
 
     test('cluster pages do not extend filament classes directly', function (): void {
-$files = glob(base_path('Modules/User/app/Filament/Clusters/Appearance/Pages/*.php'));
+        $files = glob(base_path('Modules/User/app/Filament/Clusters/Appearance/Pages/*.php'));
 
         if ([] === $files) {
             $this->skipTest('Appearance cluster pages directory not found.');
@@ -77,7 +80,7 @@ $files = glob(base_path('Modules/User/app/Filament/Clusters/Appearance/Pages/*.p
     });
 
     test('cluster does not extend filament directly', function (): void {
-$file = base_path('Modules/User/app/Filament/Clusters/Appearance.php');
+        $file = base_path('Modules/User/app/Filament/Clusters/Appearance.php');
         $content = (string) file_get_contents($file);
 
         Assert::assertStringNotContainsString('extends Cluster', $content);
@@ -86,7 +89,7 @@ $file = base_path('Modules/User/app/Filament/Clusters/Appearance.php');
     });
 
     test('cluster pages are accessible', function (): void {
-$user = UserFactory::new()->createOne([
+        $user = UserFactory::new()->createOne([
             'name' => 'Cluster Test User',
             'email' => 'cluster-'.uniqid('', true).'@example.com',
         ]);

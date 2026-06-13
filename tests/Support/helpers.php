@@ -93,7 +93,7 @@ function userTableHasColumn(string $table, string $column): bool
 
 function pestSkip(string $message): never
 {
-    \PHPUnit\Framework\Assert::markTestSkipped($message);
+    Assert::markTestSkipped($message);
 }
 
 function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
@@ -199,7 +199,7 @@ function teamUsesSoftDeletes(): bool
     $traits = \class_uses_recursive(Team::class);
 
     return in_array(
-        \Illuminate\Database\Eloquent\SoftDeletes::class,
+        Illuminate\Database\Eloquent\SoftDeletes::class,
         $traits,
         true
     );
@@ -221,13 +221,13 @@ function createProfile(array $attributes = []): Profile
 
 function setupFilamentAdminPanel(): void
 {
-    $filament = \Filament\Facades\Filament::class;
+    $filament = Filament\Facades\Filament::class;
 
     try {
         $panel = $filament::getPanel('user::admin');
-    } catch (\Throwable) {
-        $panelProvider = new \Modules\User\Providers\Filament\AdminPanelProvider(app());
-        $panel = $panelProvider->panel(\Filament\Panel::make());
+    } catch (Throwable) {
+        $panelProvider = new Modules\User\Providers\Filament\AdminPanelProvider(app());
+        $panel = $panelProvider->panel(Filament\Panel::make());
         $filament::registerPanel($panel);
     }
 
@@ -237,7 +237,7 @@ function setupFilamentAdminPanel(): void
 /**
  * @param array<mixed> $attributes
  */
-function mockSocialiteOauthUser(array $attributes = []): \Laravel\Socialite\Contracts\User
+function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contracts\User
 {
     /** @var array<string, mixed> $attributes */
     $unique = uniqid();
@@ -249,7 +249,7 @@ function mockSocialiteOauthUser(array $attributes = []): \Laravel\Socialite\Cont
         'nickname' => 'user'.$unique,
     ], $attributes);
 
-    return configureMock(\Laravel\Socialite\Contracts\User::class, static function (MockInterface $mock) use ($data): void {
+    return configureMock(Laravel\Socialite\Contracts\User::class, static function (MockInterface $mock) use ($data): void {
         $mock->allows([
             'getId' => $data['id'],
             'getName' => $data['name'],
@@ -270,7 +270,7 @@ function mockSocialiteOauthUser(array $attributes = []): \Laravel\Socialite\Cont
 function typedMock(string $class): MockInterface
 {
     /** @var T&MockInterface $mock */
-    $mock = \Mockery::mock($class);
+    $mock = Mockery::mock($class);
 
     return $mock;
 }
@@ -286,22 +286,22 @@ function typedMock(string $class): MockInterface
 function configureMock(string $class, callable $configure): MockInterface
 {
     /** @var T&MockInterface $mock */
-    $mock = \Mockery::mock($class);
+    $mock = Mockery::mock($class);
     $configure($mock);
 
     return $mock;
 }
 
-function fakeSocialiteUser(string $email): \Laravel\Socialite\Contracts\User
+function fakeSocialiteUser(string $email): Laravel\Socialite\Contracts\User
 {
-    return configureMock(\Laravel\Socialite\Contracts\User::class, static function (MockInterface $mock) use ($email): void {
+    return configureMock(Laravel\Socialite\Contracts\User::class, static function (MockInterface $mock) use ($email): void {
         $mock->allows(['getEmail' => $email]);
     });
 }
 
-function makeIsUserAllowedAction(): \Modules\User\Actions\Socialite\IsUserAllowedAction
+function makeIsUserAllowedAction(): Modules\User\Actions\Socialite\IsUserAllowedAction
 {
-    return new \Modules\User\Actions\Socialite\IsUserAllowedAction();
+    return new Modules\User\Actions\Socialite\IsUserAllowedAction();
 }
 
 /**
@@ -334,34 +334,34 @@ function skipLegacyRedirectPersistenceCheck(): void
 
 function ensurePersonalAccessClient(): void
 {
-    $clientModel = \Laravel\Passport\Passport::client();
+    $clientModel = Laravel\Passport\Passport::client();
 
     if ($clientModel->newQuery()->where('revoked', false)->exists()) {
         return;
     }
 
-    $repository = app(\Laravel\Passport\ClientRepository::class);
+    $repository = app(Laravel\Passport\ClientRepository::class);
     $repository->createPersonalAccessGrantClient('Test Personal Access Client');
 }
 
 /**
- * @return array<int, \Filament\Schemas\Components\Component|\Filament\Actions\Action|\Filament\Actions\ActionGroup>
+ * @return array<int, Filament\Schemas\Components\Component|Filament\Actions\Action|Filament\Actions\ActionGroup>
  */
-function userResourceSectionComponents(\Modules\User\Tests\TestCase $testCase, \Filament\Schemas\Components\Component $section): array
+function userResourceSectionComponents(Modules\User\Tests\TestCase $testCase, Filament\Schemas\Components\Component $section): array
 {
-    \PHPUnit\Framework\Assert::assertInstanceOf(\Filament\Schemas\Components\Section::class, $section);
+    Assert::assertInstanceOf(Filament\Schemas\Components\Section::class, $section);
 
-    /** @var \Filament\Schemas\Components\Section $section */
+    /* @var \Filament\Schemas\Components\Section $section */
     return $testCase->filamentSectionChildComponents($section);
 }
 
 /**
- * @param array<int, \Filament\Schemas\Components\Component|\Filament\Actions\Action|\Filament\Actions\ActionGroup> $components
+ * @param array<int, Filament\Schemas\Components\Component|Filament\Actions\Action|Filament\Actions\ActionGroup> $components
  */
-function userResourceFindComponentByName(array $components, string $name): ?\Filament\Schemas\Components\Component
+function userResourceFindComponentByName(array $components, string $name): ?Filament\Schemas\Components\Component
 {
     foreach ($components as $component) {
-        if (! $component instanceof \Filament\Forms\Components\Field) {
+        if (! $component instanceof Filament\Forms\Components\Field) {
             continue;
         }
 
@@ -446,7 +446,7 @@ function verifyTwoFactorCode(User $user, Google2FA $google2fa, string $code): bo
 
     $secret = (string) decrypt($user->two_factor_secret);
 
-    return $google2fa->verifyKey($secret, $code) !== false;
+    return false !== $google2fa->verifyKey($secret, $code);
 }
 
 function disableTwoFactorForUser(User $user): void

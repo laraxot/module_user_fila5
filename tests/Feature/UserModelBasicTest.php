@@ -7,26 +7,25 @@ namespace Modules\User\Tests\Feature;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use function Pest\Laravel\get;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('User Model Basic', function (): void {
     test('user model can be created', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
-$user = new User();
+        /** @var TestCase $this */
+        $user = new User();
 
         Assert::assertInstanceOf(User::class, $user);
     });
 
     test('user model can access connection', function (): void {
-$user = new User();
+        $user = new User();
 
         Assert::assertSame('user', $user->getConnectionName());
     });
 
     test('user model can create basic record', function (): void {
-$this->skipUnlessUsersTableReady();
+        $this->skipUnlessUsersTableReady();
 
         $user = createTestUser([
             'name' => 'Test User',
@@ -44,7 +43,7 @@ $this->skipUnlessUsersTableReady();
     });
 
     test('user model can query records', function (): void {
-$this->skipUnlessUsersTableReady();
+        $this->skipUnlessUsersTableReady();
 
         $user1 = createTestUser(['name' => 'User 1']);
         $user2 = createTestUser(['name' => 'User 2']);
@@ -55,7 +54,7 @@ $this->skipUnlessUsersTableReady();
     });
 
     test('user model can filter records', function (): void {
-$this->skipUnlessUsersTableReady();
+        $this->skipUnlessUsersTableReady();
 
         $activeUser = createTestUser([
             'name' => 'Active User',
@@ -76,7 +75,7 @@ $this->skipUnlessUsersTableReady();
     });
 
     test('user model can update records', function (): void {
-$this->skipUnlessUsersTableReady();
+        $this->skipUnlessUsersTableReady();
 
         $user = createTestUser(['name' => 'Original Name']);
 

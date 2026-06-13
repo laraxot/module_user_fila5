@@ -40,11 +40,11 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('User Events Coverage', function (): void {
     test('instantiates team and membership events', function (): void {
-$team = typedMock(TeamContract::class);
+        $team = typedMock(TeamContract::class);
         $user = UserFactory::new()->makeOne();
 
         Assert::assertInstanceOf(AddingTeam::class, new AddingTeam($user));
@@ -61,7 +61,7 @@ $team = typedMock(TeamContract::class);
     });
 
     test('instantiates socialite and auth events', function (): void {
-$socialiteUser = new SocialiteUser([
+        $socialiteUser = new SocialiteUser([
             'provider' => 'github',
             'provider_id' => 'provider-'.uniqid(),
             'email' => 'oauth-'.uniqid().'@example.com',
@@ -76,7 +76,7 @@ $socialiteUser = new SocialiteUser([
     });
 
     test('instantiates recovery and invalid state events', function (): void {
-/** @var Authenticatable $auth */
+        /** @var Authenticatable $auth */
         $auth = UserFactory::new()->makeOne();
         $exception = new InvalidStateException('state invalid');
 
@@ -85,7 +85,7 @@ $socialiteUser = new SocialiteUser([
     });
 
     test('instantiates two factor events', function (): void {
-$user = UserFactory::new()->makeOne();
+        $user = UserFactory::new()->makeOne();
 
         Assert::assertInstanceOf(TwoFactorAuthenticationEnabled::class, new TwoFactorAuthenticationEnabled($user));
         Assert::assertInstanceOf(TwoFactorAuthenticationDisabled::class, new TwoFactorAuthenticationDisabled($user));
@@ -94,7 +94,7 @@ $user = UserFactory::new()->makeOne();
     });
 
     test('exposes broadcast channel for new password set event', function (): void {
-$user = UserFactory::new()->makeOne();
+        $user = UserFactory::new()->makeOne();
         $event = new NewPasswordSet($user);
 
         $channels = $event->broadcastOn();
@@ -104,7 +104,7 @@ $user = UserFactory::new()->makeOne();
     });
 
     test('instantiates recovery generated and user registered events', function (): void {
-$userContract = UserFactory::new()->makeOne();
+        $userContract = UserFactory::new()->makeOne();
         $user = new User();
 
         $generated = new RecoveryCodesGenerated($userContract);

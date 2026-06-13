@@ -11,44 +11,43 @@ use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-$this->command = new ChangeTypeCommand();
+    /* @var \Modules\User\Tests\TestCase $this */
+    $this->command = new ChangeTypeCommand();
 });
 
 describe('User Command Integration', function (): void {
     test('can be registered with laravel artisan', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
-$command = $this->requireCommand();
+        /** @var TestCase $this */
+        $command = $this->requireCommand();
         Assert::assertSame('user:change-type', $command->getName());
         Assert::assertInstanceOf(Command::class, $command);
     });
 
     test('integrates with xot data system', function (): void {
-$xotData = XotData::make();
+        $xotData = XotData::make();
 
         Assert::assertInstanceOf(XotData::class, $xotData);
     });
 
     test('validates command registration in service provider', function (): void {
-$command = $this->requireCommand();
+        $command = $this->requireCommand();
         Assert::assertSame('user:change-type', $command->getName());
         Assert::assertSame('Change user type based on project configuration', $command->getDescription());
     });
 
     test('handles laravel prompts integration', function (): void {
-Assert::assertTrue(function_exists('Laravel\Prompts\text'));
+        Assert::assertTrue(function_exists('Laravel\Prompts\text'));
         Assert::assertTrue(function_exists('Laravel\Prompts\select'));
     });
 
     test('validates webmozart assert integration', function (): void {
-
     });
 
     test('integrates with illuminate support arr', function (): void {
-$testArray = ['a' => 1, 'b' => 2, 'c' => 3];
+        $testArray = ['a' => 1, 'b' => 2, 'c' => 3];
 
         $result = Arr::mapWithKeys($testArray, fn ($value, $key) => [
             $key.'_mapped' => $value * 2,
@@ -61,11 +60,11 @@ $testArray = ['a' => 1, 'b' => 2, 'c' => 3];
     });
 
     test('can handle command input output operations', function (): void {
-$command = $this->requireCommand();
+        $command = $this->requireCommand();
     });
 
     test('validates command signature and options', function (): void {
-$command = $this->requireCommand();
+        $command = $this->requireCommand();
         $reflection = new \ReflectionClass($command);
 
         Assert::assertTrue($reflection->hasProperty('name'));
@@ -76,22 +75,22 @@ $command = $this->requireCommand();
     });
 
     test('handles enum integration correctly', function (): void {
-Assert::assertTrue(interface_exists('BackedEnum'));
+        Assert::assertTrue(interface_exists('BackedEnum'));
     });
 
     test('validates user contract integration', function (): void {
-Assert::assertTrue(interface_exists('Modules\Xot\Contracts\UserContract'));
+        Assert::assertTrue(interface_exists('Modules\Xot\Contracts\UserContract'));
         $reflection = new \ReflectionClass('Modules\Xot\Contracts\UserContract');
         Assert::assertTrue($reflection->isInterface());
     });
 
     test('handles command execution context', function (): void {
-$command = $this->requireCommand();
+        $command = $this->requireCommand();
         Assert::assertInstanceOf(Command::class, $command);
     });
 
     test('validates error handling patterns', function (): void {
-$command = $this->requireCommand();
+        $command = $this->requireCommand();
         $reflection = new \ReflectionClass($command);
         $handleMethod = $reflection->getMethod('handle');
 
@@ -101,7 +100,7 @@ $command = $this->requireCommand();
     });
 
     test('can work with type checking utilities', function (): void {
-$testObject = new \stdClass();
+        $testObject = new \stdClass();
         $testObject->value = 'test';
         $testObject->getLabel = fn () => 'Test Label';
 
@@ -113,19 +112,19 @@ $testObject = new \stdClass();
     });
 
     test('integrates with laravel configuration system', function (): void {
-$command = $this->requireCommand();
+        $command = $this->requireCommand();
         Assert::assertTrue(function_exists('config'));
         Assert::assertInstanceOf(ChangeTypeCommand::class, $command);
     });
 
     test('handles string manipulation correctly', function (): void {
-$testString = 'TestValue';
+        $testString = 'TestValue';
 
         Assert::assertSame('TestValue', (string) $testString);
     });
 
     test('validates array operations', function (): void {
-$testArray = ['key1' => 'value1', 'key2' => 'value2'];
+        $testArray = ['key1' => 'value1', 'key2' => 'value2'];
 
         $mapped = [];
         foreach ($testArray as $key => $value) {
@@ -135,33 +134,32 @@ $testArray = ['key1' => 'value1', 'key2' => 'value2'];
     });
 
     test('can handle command lifecycle', function (): void {
-$command = $this->requireCommand();
+        $command = $this->requireCommand();
     });
 
     test('validates dependency injection compatibility', function (): void {
-$command = $this->requireCommand();
+        $command = $this->requireCommand();
         Assert::assertInstanceOf(ChangeTypeCommand::class, $command);
         Assert::assertSame('user:change-type', $command->getName());
     });
 
     test('handles console application integration', function (): void {
-$command = $this->requireCommand();
+        $command = $this->requireCommand();
         Assert::assertInstanceOf(Command::class, $command);
         Assert::assertInstanceOf(\Symfony\Component\Console\Command\Command::class, $command);
     });
 
     test('validates command help and description', function (): void {
-$command = $this->requireCommand();
+        $command = $this->requireCommand();
         Assert::assertSame('Change user type based on project configuration', $command->getDescription());
         Assert::assertSame('user:change-type', $command->getName());
     });
 
     test('can access laravel facades', function (): void {
-
     });
 
     test('handles reflection operations correctly', function (): void {
-$command = $this->requireCommand();
+        $command = $this->requireCommand();
         $reflection = new \ReflectionClass($command);
 
         Assert::assertInstanceOf(\ReflectionClass::class, $reflection);
@@ -170,12 +168,12 @@ $command = $this->requireCommand();
     });
 
     test('validates method existence checks', function (): void {
-$command = $this->requireCommand();
+        $command = $this->requireCommand();
         Assert::assertFalse(method_exists($command, 'nonExistentMethod'));
     });
 
     test('can handle object property access safely', function (): void {
-$testObject = new \stdClass();
+        $testObject = new \stdClass();
         $testObject->testProperty = 'test_value';
 
         $objectData = (array) $testObject;

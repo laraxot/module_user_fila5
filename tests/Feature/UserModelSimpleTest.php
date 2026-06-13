@@ -8,24 +8,24 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('User Model Simple', function (): void {
     test('user model can be instantiated', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
-$user = new User();
+        /** @var TestCase $this */
+        $user = new User();
 
         Assert::assertInstanceOf(User::class, $user);
     });
 
     test('user model can access connection', function (): void {
-$user = new User();
+        $user = new User();
 
         Assert::assertSame('user', $user->getConnectionName());
     });
 
     test('user model can create basic record', function (): void {
-$this->skipUnlessUsersTableReady();
+        $this->skipUnlessUsersTableReady();
 
         $user = createTestUser([
             'name' => 'Test User',

@@ -7,12 +7,13 @@ use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
 use Modules\User\Models\Profile;
 use Modules\User\Tests\TestCase;
-use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
 use function Pest\Laravel\get;
 
-uses(\Modules\User\Tests\TestCase::class);
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 describe('Auth components', function (): void {
     test('auth components exist and work correctly', function (): void {
@@ -74,7 +75,7 @@ describe('Auth components', function (): void {
             actingAs($user);
             $response = get('/it/auth/password/confirm');
             Assert::assertSame(200, $response->status());
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             skip(
                 'Password confirm route unavailable in test env: '.$e->getMessage()
             );
@@ -99,7 +100,7 @@ describe('Auth components', function (): void {
             }
             try {
                 Profile::create($profileData);
-            } catch (\Throwable) {
+            } catch (Throwable) {
             }
         }
 
@@ -107,7 +108,7 @@ describe('Auth components', function (): void {
             actingAs($user, 'web');
             $response = get('/it/profile/edit');
             Assert::assertSame(200, $response->status());
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             skip(
                 'Profile edit route unavailable in test env: '.$e->getMessage()
             );
