@@ -70,12 +70,12 @@ class DemoUserSeeder extends Seeder
             );
 
             $role = Role::query()->where('name', $roleName)->where('guard_name', 'web')->first();
-            if ($role !== null && ! $user->hasRole($roleName)) {
+            if (null !== $role && ! $user->hasRole($roleName)) {
                 $user->assignRole($role);
             }
         }
 
-        if ($this->command !== null) {
+        if (null !== $this->command) {
             $this->command->info('DemoUserSeeder: '.count($demoUsers).' utenti demo pronti.');
         }
     }

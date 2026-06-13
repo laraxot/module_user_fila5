@@ -19,7 +19,7 @@ final class UserDatabaseSeederTest extends TestCase
     /**
      * Test that UserDatabaseSeeder runs without errors.
      */
-    public function test_user_database_seeder_runs_successfully(): void
+    public function testUserDatabaseSeederRunsSuccessfully(): void
     {
         // Arrange
         $seeder = new UserDatabaseSeeder();
@@ -42,7 +42,7 @@ final class UserDatabaseSeederTest extends TestCase
     /**
      * Test that super-admin role has all permissions after seeding.
      */
-    public function test_super_admin_role_has_all_permissions(): void
+    public function testSuperAdminRoleHasAllPermissions(): void
     {
         // Arrange
         $seeder = new UserDatabaseSeeder();
