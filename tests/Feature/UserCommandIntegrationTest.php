@@ -9,200 +9,179 @@ use Illuminate\Support\Arr;
 use Modules\User\Console\Commands\ChangeTypeCommand;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
+use PHPUnit\Framework\Assert;
 
-class UserCommandIntegrationTest extends TestCase
-{
-    protected function setUp(): void
-    {
-        parent::setUp();
+uses(\Modules\User\Tests\TestCase::class);
 
-        $this->command = new ChangeTypeCommand();
-    }
+beforeEach(function (): void {
+    /** @var \Modules\User\Tests\TestCase $this */
+$this->command = new ChangeTypeCommand();
+});
 
-    public function testCanBeRegisteredWithLaravelArtisan(): void
-    {
-        $command = $this->requireCommand();
-        $this->assertSame('user:change-type', $command->getName());
-        $this->assertInstanceOf(Command::class, $command);
-    }
+describe('User Command Integration', function (): void {
+    test('can be registered with laravel artisan', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
+$command = $this->requireCommand();
+        Assert::assertSame('user:change-type', $command->getName());
+        Assert::assertInstanceOf(Command::class, $command);
+    });
 
-    public function testIntegratesWithXotDataSystem(): void
-    {
-        $xotData = XotData::make();
+    test('integrates with xot data system', function (): void {
+$xotData = XotData::make();
 
-        $this->assertInstanceOf(XotData::class, $xotData);
-    }
+        Assert::assertInstanceOf(XotData::class, $xotData);
+    });
 
-    public function testValidatesCommandRegistrationInServiceProvider(): void
-    {
-        $command = $this->requireCommand();
-        $this->assertSame('user:change-type', $command->getName());
-        $this->assertSame('Change user type based on project configuration', $command->getDescription());
-    }
+    test('validates command registration in service provider', function (): void {
+$command = $this->requireCommand();
+        Assert::assertSame('user:change-type', $command->getName());
+        Assert::assertSame('Change user type based on project configuration', $command->getDescription());
+    });
 
-    public function testHandlesLaravelPromptsIntegration(): void
-    {
-        $this->assertTrue(function_exists('Laravel\Prompts\text'));
-        $this->assertTrue(function_exists('Laravel\Prompts\select'));
-    }
+    test('handles laravel prompts integration', function (): void {
+Assert::assertTrue(function_exists('Laravel\Prompts\text'));
+        Assert::assertTrue(function_exists('Laravel\Prompts\select'));
+    });
 
-    public function testValidatesWebmozartAssertIntegration(): void
-    {
-    }
+    test('validates webmozart assert integration', function (): void {
 
-    public function testIntegratesWithIlluminateSupportArr(): void
-    {
-        $testArray = ['a' => 1, 'b' => 2, 'c' => 3];
+    });
+
+    test('integrates with illuminate support arr', function (): void {
+$testArray = ['a' => 1, 'b' => 2, 'c' => 3];
 
         $result = Arr::mapWithKeys($testArray, fn ($value, $key) => [
             $key.'_mapped' => $value * 2,
         ]);
-        $this->assertSame(2, $result['a_mapped']);
+        Assert::assertSame(2, $result['a_mapped']);
 
-        $this->assertSame(4, $result['b_mapped']);
+        Assert::assertSame(4, $result['b_mapped']);
 
-        $this->assertSame(6, $result['c_mapped']);
-    }
+        Assert::assertSame(6, $result['c_mapped']);
+    });
 
-    public function testCanHandleCommandInputOutputOperations(): void
-    {
-        $command = $this->requireCommand();
-    }
+    test('can handle command input output operations', function (): void {
+$command = $this->requireCommand();
+    });
 
-    public function testValidatesCommandSignatureAndOptions(): void
-    {
-        $command = $this->requireCommand();
+    test('validates command signature and options', function (): void {
+$command = $this->requireCommand();
         $reflection = new \ReflectionClass($command);
 
-        $this->assertTrue($reflection->hasProperty('name'));
-        $this->assertTrue($reflection->hasProperty('description'));
+        Assert::assertTrue($reflection->hasProperty('name'));
+        Assert::assertTrue($reflection->hasProperty('description'));
         $nameProperty = $reflection->getProperty('name');
         $nameProperty->setAccessible(true);
-        $this->assertSame('user:change-type', $nameProperty->getValue($command));
-    }
+        Assert::assertSame('user:change-type', $nameProperty->getValue($command));
+    });
 
-    public function testHandlesEnumIntegrationCorrectly(): void
-    {
-        $this->assertTrue(interface_exists('BackedEnum'));
-    }
+    test('handles enum integration correctly', function (): void {
+Assert::assertTrue(interface_exists('BackedEnum'));
+    });
 
-    public function testValidatesUserContractIntegration(): void
-    {
-        $this->assertTrue(interface_exists('Modules\Xot\Contracts\UserContract'));
+    test('validates user contract integration', function (): void {
+Assert::assertTrue(interface_exists('Modules\Xot\Contracts\UserContract'));
         $reflection = new \ReflectionClass('Modules\Xot\Contracts\UserContract');
-        $this->assertTrue($reflection->isInterface());
-    }
+        Assert::assertTrue($reflection->isInterface());
+    });
 
-    public function testHandlesCommandExecutionContext(): void
-    {
-        $command = $this->requireCommand();
-        $this->assertInstanceOf(Command::class, $command);
-    }
+    test('handles command execution context', function (): void {
+$command = $this->requireCommand();
+        Assert::assertInstanceOf(Command::class, $command);
+    });
 
-    public function testValidatesErrorHandlingPatterns(): void
-    {
-        $command = $this->requireCommand();
+    test('validates error handling patterns', function (): void {
+$command = $this->requireCommand();
         $reflection = new \ReflectionClass($command);
         $handleMethod = $reflection->getMethod('handle');
 
         $returnType = $handleMethod->getReturnType();
-        $this->assertInstanceOf(\ReflectionNamedType::class, $returnType);
-        $this->assertSame('void', $returnType->getName());
-    }
+        Assert::assertInstanceOf(\ReflectionNamedType::class, $returnType);
+        Assert::assertSame('void', $returnType->getName());
+    });
 
-    public function testCanWorkWithTypeCheckingUtilities(): void
-    {
-        $testObject = new \stdClass();
+    test('can work with type checking utilities', function (): void {
+$testObject = new \stdClass();
         $testObject->value = 'test';
         $testObject->getLabel = fn () => 'Test Label';
 
         $objectData = (array) $testObject;
 
-        $this->assertTrue(array_key_exists('value', $objectData));
+        Assert::assertTrue(array_key_exists('value', $objectData));
 
-        $this->assertTrue(($testObject->value ?? null) !== null);
-    }
+        Assert::assertTrue(($testObject->value ?? null) !== null);
+    });
 
-    public function testIntegratesWithLaravelConfigurationSystem(): void
-    {
-        $command = $this->requireCommand();
-        $this->assertTrue(function_exists('config'));
-        $this->assertInstanceOf(ChangeTypeCommand::class, $command);
-    }
+    test('integrates with laravel configuration system', function (): void {
+$command = $this->requireCommand();
+        Assert::assertTrue(function_exists('config'));
+        Assert::assertInstanceOf(ChangeTypeCommand::class, $command);
+    });
 
-    public function testHandlesStringManipulationCorrectly(): void
-    {
-        $testString = 'TestValue';
+    test('handles string manipulation correctly', function (): void {
+$testString = 'TestValue';
 
-        $this->assertSame('TestValue', (string) $testString);
-    }
+        Assert::assertSame('TestValue', (string) $testString);
+    });
 
-    public function testValidatesArrayOperations(): void
-    {
-        $testArray = ['key1' => 'value1', 'key2' => 'value2'];
+    test('validates array operations', function (): void {
+$testArray = ['key1' => 'value1', 'key2' => 'value2'];
 
         $mapped = [];
         foreach ($testArray as $key => $value) {
             $mapped[$key.'_suffix'] = $value.'_modified';
         }
-        $this->assertSame('value1_modified', $mapped['key1_suffix']);
-    }
+        Assert::assertSame('value1_modified', $mapped['key1_suffix']);
+    });
 
-    public function testCanHandleCommandLifecycle(): void
-    {
-        $command = $this->requireCommand();
-    }
+    test('can handle command lifecycle', function (): void {
+$command = $this->requireCommand();
+    });
 
-    public function testValidatesDependencyInjectionCompatibility(): void
-    {
-        $command = $this->requireCommand();
-        $this->assertInstanceOf(ChangeTypeCommand::class, $command);
-        $this->assertSame('user:change-type', $command->getName());
-    }
+    test('validates dependency injection compatibility', function (): void {
+$command = $this->requireCommand();
+        Assert::assertInstanceOf(ChangeTypeCommand::class, $command);
+        Assert::assertSame('user:change-type', $command->getName());
+    });
 
-    public function testHandlesConsoleApplicationIntegration(): void
-    {
-        $command = $this->requireCommand();
-        $this->assertInstanceOf(Command::class, $command);
-        $this->assertInstanceOf(\Symfony\Component\Console\Command\Command::class, $command);
-    }
+    test('handles console application integration', function (): void {
+$command = $this->requireCommand();
+        Assert::assertInstanceOf(Command::class, $command);
+        Assert::assertInstanceOf(\Symfony\Component\Console\Command\Command::class, $command);
+    });
 
-    public function testValidatesCommandHelpAndDescription(): void
-    {
-        $command = $this->requireCommand();
-        $this->assertSame('Change user type based on project configuration', $command->getDescription());
-        $this->assertSame('user:change-type', $command->getName());
-    }
+    test('validates command help and description', function (): void {
+$command = $this->requireCommand();
+        Assert::assertSame('Change user type based on project configuration', $command->getDescription());
+        Assert::assertSame('user:change-type', $command->getName());
+    });
 
-    public function testCanAccessLaravelFacades(): void
-    {
-    }
+    test('can access laravel facades', function (): void {
 
-    public function testHandlesReflectionOperationsCorrectly(): void
-    {
-        $command = $this->requireCommand();
+    });
+
+    test('handles reflection operations correctly', function (): void {
+$command = $this->requireCommand();
         $reflection = new \ReflectionClass($command);
 
-        $this->assertInstanceOf(\ReflectionClass::class, $reflection);
+        Assert::assertInstanceOf(\ReflectionClass::class, $reflection);
 
-        $this->assertSame(ChangeTypeCommand::class, $reflection->getName());
-    }
+        Assert::assertSame(ChangeTypeCommand::class, $reflection->getName());
+    });
 
-    public function testValidatesMethodExistenceChecks(): void
-    {
-        $command = $this->requireCommand();
-        $this->assertFalse(method_exists($command, 'nonExistentMethod'));
-    }
+    test('validates method existence checks', function (): void {
+$command = $this->requireCommand();
+        Assert::assertFalse(method_exists($command, 'nonExistentMethod'));
+    });
 
-    public function testCanHandleObjectPropertyAccessSafely(): void
-    {
-        $testObject = new \stdClass();
+    test('can handle object property access safely', function (): void {
+$testObject = new \stdClass();
         $testObject->testProperty = 'test_value';
 
         $objectData = (array) $testObject;
 
-        $this->assertTrue(array_key_exists('testProperty', $objectData));
+        Assert::assertTrue(array_key_exists('testProperty', $objectData));
 
-        $this->assertFalse(array_key_exists('nonExistentProperty', $objectData));
-    }
-}
+        Assert::assertFalse(array_key_exists('nonExistentProperty', $objectData));
+    });
+});

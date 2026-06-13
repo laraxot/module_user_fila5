@@ -13,26 +13,12 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\DeviceUser;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use function Pest\Laravel\getJson;
 
-function ensurePersonalAccessClient(): void
-{
-    $clientModel = Passport::client();
+uses(\Modules\User\Tests\TestCase::class);
 
-    if ($clientModel->newQuery()->where('revoked', false)->exists()) {
-        return;
-    }
-
-    $repository = app(ClientRepository::class);
-    $repository->createPersonalAccessGrantClient('Test Personal Access Client');
-}
-
-final class ApiLogoutControllerTest extends TestCase
-{
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        $this->skipUnlessUserTable('device_user');
+beforeEach(function (): void {
+$this->skipUnlessUserTable('device_user');
         $this->skipUnlessUserTable('devices');
 
         Config::set('app.key', config('app.key') ?: 'base64:'.base64_encode(random_bytes(32)));
@@ -51,16 +37,16 @@ final class ApiLogoutControllerTest extends TestCase
             'login_at' => now()->subHour(),
             'logout_at' => null,
         ]);
-    }
+});
 
-    public function testApiLogoutRevokesCurrentPersonalAccessTokenAndMarksDeviceLogoutTime(): void
-    {
-        $user = $this->requireUser();
+describe('Api Logout Controller', function (): void {
+    test('api logout revokes current personal access token and marks device logout time', function (): void {
+$user = $this->requireUser();
         $privateKey = storage_path('oauth-private.key');
         $publicKey = storage_path('oauth-public.key');
 
         if (! is_readable($privateKey) || ! is_readable($publicKey)) {
-            $this->markTestSkipped('Passport OAuth keys not configured for test environment.');
+            $this->skipTest('Passport OAuth keys not configured for test environment.');
         }
 
         ensurePersonalAccessClient();
@@ -69,11 +55,11 @@ final class ApiLogoutControllerTest extends TestCase
         try {
             $personalAccessToken = $user->createToken('Api Logout Test');
         } catch (\Exception $exception) {
-            $this->markTestSkipped('Passport token creation unavailable: '.$exception->getMessage());
+            $this->skipTest('Passport token creation unavailable: '.$exception->getMessage());
         }
 
         if (null === $personalAccessToken) {
-            $this->markTestSkipped('Passport token creation unavailable.');
+            $this->skipTest('Passport token creation unavailable.');
         }
 
         if (! $personalAccessToken instanceof \Laravel\Passport\PersonalAccessTokenResult) {
@@ -96,5 +82,5 @@ final class ApiLogoutControllerTest extends TestCase
 
         Assert::assertSame(1, DB::connection('user')->table('oauth_access_tokens')->where('id', $accessTokenModel->getKey())->value('revoked'));
         Assert::assertTrue(DeviceUser::query()->where('user_id', (string) $user->getKey())->whereNotNull('logout_at')->exists());
-    }
-}
+    });
+});

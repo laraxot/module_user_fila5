@@ -18,14 +18,12 @@ use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use function Pest\Laravel\get;
 
-final class ListUsersTest extends TestCase
-{
-    protected function setUp(): void
-    {
-        parent::setUp();
+uses(\Modules\User\Tests\TestCase::class);
 
-        try {
+beforeEach(function (): void {
+try {
             $panel = Filament::getPanel('user::admin');
         } catch (\Exception $e) {
             $panelProvider = new AdminPanelProvider(app());
@@ -43,28 +41,25 @@ final class ListUsersTest extends TestCase
             ]);
 
         $this->users = new Collection($users->all());
-    }
+});
 
-    public function testListUsersPageHasCorrectResource(): void
-    {
-        Assert::assertSame(UserResource::class, ListUsers::getResource());
-    }
+describe('List Users', function (): void {
+    test('list users page has correct resource', function (): void {
+Assert::assertSame(UserResource::class, ListUsers::getResource());
+    });
 
-    public function testListUsersPageExtendsCorrectBaseClass(): void
-    {
-        $listUsersPage = $this->requireListUsersPage();
+    test('list users page extends correct base class', function (): void {
+$listUsersPage = $this->requireListUsersPage();
         Assert::assertInstanceOf(BaseListUsers::class, $listUsersPage);
-    }
+    });
 
-    public function testListUsersPageCanBeInstantiated(): void
-    {
-        $listUsersPage = $this->requireListUsersPage();
+    test('list users page can be instantiated', function (): void {
+$listUsersPage = $this->requireListUsersPage();
         Assert::assertInstanceOf(ListUsers::class, $listUsersPage);
-    }
+    });
 
-    public function testListUsersPageHasCorrectTableColumns(): void
-    {
-        $listUsersPage = $this->requireListUsersPage();
+    test('list users page has correct table columns', function (): void {
+$listUsersPage = $this->requireListUsersPage();
         $columns = $listUsersPage->getTableColumns();
 
         Assert::assertArrayHasKey('name', $columns);
@@ -77,30 +72,27 @@ final class ListUsersTest extends TestCase
         Assert::assertInstanceOf(TextColumn::class, $emailColumn);
         Assert::assertSame('email', $emailColumn->getName());
         Assert::assertTrue($emailColumn->isSearchable());
-    }
+    });
 
-    public function testListUsersPageHasCorrectTableFilters(): void
-    {
-        $listUsersPage = $this->requireListUsersPage();
+    test('list users page has correct table filters', function (): void {
+$listUsersPage = $this->requireListUsersPage();
         $filters = $listUsersPage->getTableFilters();
 
         Assert::assertCount(0, $filters);
-    }
+    });
 
-    public function testListUsersPageHasCorrectTableActions(): void
-    {
-        $listUsersPage = $this->requireListUsersPage();
+    test('list users page has correct table actions', function (): void {
+$listUsersPage = $this->requireListUsersPage();
         $actions = $listUsersPage->getTableActions();
 
         Assert::assertArrayHasKey('change_password', $actions);
 
         $changePasswordAction = $actions['change_password'];
         Assert::assertInstanceOf(ChangePasswordAction::class, $changePasswordAction);
-    }
+    });
 
-    public function testListUsersPageCanDisplayUsers(): void
-    {
-        $users = $this->requireUsers();
+    test('list users page can display users', function (): void {
+$users = $this->requireUsers();
         $createdUserIds = $users->pluck('id');
         $testUsers = User::whereIn('id', $createdUserIds)->get();
 
@@ -113,40 +105,36 @@ final class ListUsersTest extends TestCase
                 Assert::assertSame(UserType::MasterAdmin, $user->type);
             }
         }
-    }
+    });
 
-    public function testListUsersPageHasCorrectNavigationLabel(): void
-    {
-        $listUsersPage = $this->requireListUsersPage();
+    test('list users page has correct navigation label', function (): void {
+$listUsersPage = $this->requireListUsersPage();
         $label = $listUsersPage->getNavigationLabel();
         Assert::assertNotEmpty($label);
-    }
+    });
 
-    public function testListUsersPageHasCorrectTitle(): void
-    {
-        $listUsersPage = $this->requireListUsersPage();
+    test('list users page has correct title', function (): void {
+$listUsersPage = $this->requireListUsersPage();
         $title = $listUsersPage->getTitle();
         Assert::assertNotEmpty($title);
-    }
+    });
 
-    public function testListUsersPageHasCorrectBreadcrumbs(): void
-    {
-        $listUsersPage = $this->requireListUsersPage();
+    test('list users page has correct breadcrumbs', function (): void {
+$listUsersPage = $this->requireListUsersPage();
         try {
             $breadcrumbs = $listUsersPage->getBreadcrumbs();
             Assert::assertNotEmpty($breadcrumbs);
         } catch (\Exception $e) {
         }
-    }
+    });
 
-    public function testListUsersPageCanHandleSearch(): void
-    {
-        $listUsersPage = $this->requireListUsersPage();
+    test('list users page can handle search', function (): void {
+$listUsersPage = $this->requireListUsersPage();
         $columns = $listUsersPage->getTableColumns();
         $nameColumn = $columns['name'];
         $emailColumn = $columns['email'];
 
         Assert::assertTrue($nameColumn->isSearchable());
         Assert::assertTrue($emailColumn->isSearchable());
-    }
-}
+    });
+});

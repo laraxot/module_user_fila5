@@ -6,26 +6,26 @@ namespace Modules\User\Tests\Feature;
 
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-class UserModelSimpleTest extends TestCase
-{
-    public function testUserModelCanBeInstantiated(): void
-    {
-        $user = new User();
+uses(\Modules\User\Tests\TestCase::class);
 
-        $this->assertInstanceOf(User::class, $user);
-    }
+describe('User Model Simple', function (): void {
+    test('user model can be instantiated', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
+$user = new User();
 
-    public function testUserModelCanAccessConnection(): void
-    {
-        $user = new User();
+        Assert::assertInstanceOf(User::class, $user);
+    });
 
-        $this->assertSame('user', $user->getConnectionName());
-    }
+    test('user model can access connection', function (): void {
+$user = new User();
 
-    public function testUserModelCanCreateBasicRecord(): void
-    {
-        $this->skipUnlessUsersTableReady();
+        Assert::assertSame('user', $user->getConnectionName());
+    });
+
+    test('user model can create basic record', function (): void {
+$this->skipUnlessUsersTableReady();
 
         $user = createTestUser([
             'name' => 'Test User',
@@ -35,6 +35,6 @@ class UserModelSimpleTest extends TestCase
             'is_active' => true,
         ]);
 
-        $this->assertInstanceOf(User::class, $user);
-    }
-}
+        Assert::assertInstanceOf(User::class, $user);
+    });
+});

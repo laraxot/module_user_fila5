@@ -38,85 +38,81 @@ use Modules\User\Events\UserRegistered;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-class UserEventsCoverageTest extends TestCase
-{
-    public function testInstantiatesTeamAndMembershipEvents(): void
-    {
-        $team = typedMock(TeamContract::class);
+uses(\Modules\User\Tests\TestCase::class);
+
+describe('User Events Coverage', function (): void {
+    test('instantiates team and membership events', function (): void {
+$team = typedMock(TeamContract::class);
         $user = UserFactory::new()->makeOne();
 
-        $this->assertInstanceOf(AddingTeam::class, new AddingTeam($user));
-        $this->assertInstanceOf(AddingTeamMember::class, new AddingTeamMember($team, $user));
-        $this->assertInstanceOf(InvitingTeamMember::class, new InvitingTeamMember($team, 'member@example.com', 'editor'));
-        $this->assertInstanceOf(RemovingTeamMember::class, new RemovingTeamMember($team, $user));
-        $this->assertInstanceOf(TeamMemberAdded::class, new TeamMemberAdded($team, $user));
-        $this->assertInstanceOf(TeamMemberRemoved::class, new TeamMemberRemoved($team, $user));
-        $this->assertInstanceOf(TeamMemberUpdated::class, new TeamMemberUpdated($team, $user));
-        $this->assertInstanceOf(TeamSwitched::class, new TeamSwitched($team, $user));
-        $this->assertInstanceOf(TeamCreated::class, new TeamCreated($team));
-        $this->assertInstanceOf(TeamUpdated::class, new TeamUpdated($team));
-        $this->assertInstanceOf(TeamDeleted::class, new TeamDeleted($team));
-    }
+        Assert::assertInstanceOf(AddingTeam::class, new AddingTeam($user));
+        Assert::assertInstanceOf(AddingTeamMember::class, new AddingTeamMember($team, $user));
+        Assert::assertInstanceOf(InvitingTeamMember::class, new InvitingTeamMember($team, 'member@example.com', 'editor'));
+        Assert::assertInstanceOf(RemovingTeamMember::class, new RemovingTeamMember($team, $user));
+        Assert::assertInstanceOf(TeamMemberAdded::class, new TeamMemberAdded($team, $user));
+        Assert::assertInstanceOf(TeamMemberRemoved::class, new TeamMemberRemoved($team, $user));
+        Assert::assertInstanceOf(TeamMemberUpdated::class, new TeamMemberUpdated($team, $user));
+        Assert::assertInstanceOf(TeamSwitched::class, new TeamSwitched($team, $user));
+        Assert::assertInstanceOf(TeamCreated::class, new TeamCreated($team));
+        Assert::assertInstanceOf(TeamUpdated::class, new TeamUpdated($team));
+        Assert::assertInstanceOf(TeamDeleted::class, new TeamDeleted($team));
+    });
 
-    public function testInstantiatesSocialiteAndAuthEvents(): void
-    {
-        $socialiteUser = new SocialiteUser([
+    test('instantiates socialite and auth events', function (): void {
+$socialiteUser = new SocialiteUser([
             'provider' => 'github',
             'provider_id' => 'provider-'.uniqid(),
             'email' => 'oauth-'.uniqid().'@example.com',
         ]);
         $oauthUser = typedMock(SocialiteUserContract::class);
 
-        $this->assertInstanceOf(Login::class, new Login($socialiteUser));
-        $this->assertInstanceOf(Registered::class, new Registered($socialiteUser));
-        $this->assertInstanceOf(SocialiteUserConnected::class, new SocialiteUserConnected($socialiteUser));
-        $this->assertInstanceOf(RegistrationNotEnabled::class, new RegistrationNotEnabled('github', $oauthUser));
-        $this->assertInstanceOf(UserNotAllowed::class, new UserNotAllowed($oauthUser));
-    }
+        Assert::assertInstanceOf(Login::class, new Login($socialiteUser));
+        Assert::assertInstanceOf(Registered::class, new Registered($socialiteUser));
+        Assert::assertInstanceOf(SocialiteUserConnected::class, new SocialiteUserConnected($socialiteUser));
+        Assert::assertInstanceOf(RegistrationNotEnabled::class, new RegistrationNotEnabled('github', $oauthUser));
+        Assert::assertInstanceOf(UserNotAllowed::class, new UserNotAllowed($oauthUser));
+    });
 
-    public function testInstantiatesRecoveryAndInvalidStateEvents(): void
-    {
-        /** @var Authenticatable $auth */
+    test('instantiates recovery and invalid state events', function (): void {
+/** @var Authenticatable $auth */
         $auth = UserFactory::new()->makeOne();
         $exception = new InvalidStateException('state invalid');
 
-        $this->assertInstanceOf(RecoveryCodeReplaced::class, new RecoveryCodeReplaced($auth, '123456'));
-        $this->assertInstanceOf(InvalidState::class, new InvalidState($exception));
-    }
+        Assert::assertInstanceOf(RecoveryCodeReplaced::class, new RecoveryCodeReplaced($auth, '123456'));
+        Assert::assertInstanceOf(InvalidState::class, new InvalidState($exception));
+    });
 
-    public function testInstantiatesTwoFactorEvents(): void
-    {
-        $user = UserFactory::new()->makeOne();
+    test('instantiates two factor events', function (): void {
+$user = UserFactory::new()->makeOne();
 
-        $this->assertInstanceOf(TwoFactorAuthenticationEnabled::class, new TwoFactorAuthenticationEnabled($user));
-        $this->assertInstanceOf(TwoFactorAuthenticationDisabled::class, new TwoFactorAuthenticationDisabled($user));
-        $this->assertInstanceOf(TwoFactorAuthenticationConfirmed::class, new TwoFactorAuthenticationConfirmed($user));
-        $this->assertInstanceOf(TwoFactorAuthenticationChallenged::class, new TwoFactorAuthenticationChallenged($user));
-    }
+        Assert::assertInstanceOf(TwoFactorAuthenticationEnabled::class, new TwoFactorAuthenticationEnabled($user));
+        Assert::assertInstanceOf(TwoFactorAuthenticationDisabled::class, new TwoFactorAuthenticationDisabled($user));
+        Assert::assertInstanceOf(TwoFactorAuthenticationConfirmed::class, new TwoFactorAuthenticationConfirmed($user));
+        Assert::assertInstanceOf(TwoFactorAuthenticationChallenged::class, new TwoFactorAuthenticationChallenged($user));
+    });
 
-    public function testExposesBroadcastChannelForNewPasswordSetEvent(): void
-    {
-        $user = UserFactory::new()->makeOne();
+    test('exposes broadcast channel for new password set event', function (): void {
+$user = UserFactory::new()->makeOne();
         $event = new NewPasswordSet($user);
 
         $channels = $event->broadcastOn();
 
-        $this->assertCount(1, $channels);
-        $this->assertInstanceOf(PrivateChannel::class, $channels[0]);
-    }
+        Assert::assertCount(1, $channels);
+        Assert::assertInstanceOf(PrivateChannel::class, $channels[0]);
+    });
 
-    public function testInstantiatesRecoveryGeneratedAndUserRegisteredEvents(): void
-    {
-        $userContract = UserFactory::new()->makeOne();
+    test('instantiates recovery generated and user registered events', function (): void {
+$userContract = UserFactory::new()->makeOne();
         $user = new User();
 
         $generated = new RecoveryCodesGenerated($userContract);
         $registered = new UserRegistered($user, ['source' => 'test'], '127.0.0.1', 'Pest');
 
-        $this->assertInstanceOf(RecoveryCodesGenerated::class, $generated);
-        $this->assertInstanceOf(UserRegistered::class, $registered);
-        $this->assertSame(['source' => 'test'], $registered->formData);
-        $this->assertSame('127.0.0.1', $registered->ipAddress);
-    }
-}
+        Assert::assertInstanceOf(RecoveryCodesGenerated::class, $generated);
+        Assert::assertInstanceOf(UserRegistered::class, $registered);
+        Assert::assertSame(['source' => 'test'], $registered->formData);
+        Assert::assertSame('127.0.0.1', $registered->ipAddress);
+    });
+});

@@ -10,19 +10,17 @@ use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use function Pest\Laravel\get;
 
-final class LoginWidgetTest extends TestCase
-{
-    protected function setUp(): void
-    {
-        parent::setUp();
+uses(\Modules\User\Tests\TestCase::class);
 
-        $this->widget = new LoginWidget();
-    }
+beforeEach(function (): void {
+$this->widget = new LoginWidget();
+});
 
-    public function testItCanRenderWidget(): void
-    {
-        $widget = new LoginWidget();
+describe('Login Widget', function (): void {
+    test('it can render widget', function (): void {
+$widget = new LoginWidget();
 
         $reflection = new \ReflectionClass($widget);
         $property = $reflection->getProperty('view');
@@ -30,11 +28,10 @@ final class LoginWidgetTest extends TestCase
         $view = $property->getValue($widget);
 
         Assert::assertStringContainsString((string) 'pub_theme::filament.widgets.auth.login', (string) $view);
-    }
+    });
 
-    public function testItHasCorrectFormSchema(): void
-    {
-        $widget = $this->requireLoginWidget();
+    test('it has correct form schema', function (): void {
+$widget = $this->requireLoginWidget();
         $form = $widget->getFormSchema();
 
         Assert::assertCount(3, $form);
@@ -48,13 +45,12 @@ final class LoginWidgetTest extends TestCase
         Assert::assertContains('email', $names);
         Assert::assertContains('password', $names);
         Assert::assertContains('remember', $names);
-    }
+    });
 
-    public function testItCanAuthenticateUser(): void
-    {
-        $widget = $this->requireLoginWidget();
+    test('it can authenticate user', function (): void {
+$widget = $this->requireLoginWidget();
         if (! class_exists('CreateUsersTable')) {
-            $this->markTestSkipped('Database not available for testing');
+            $this->skipTest('Database not available for testing');
         }
 
         /** @var User $user */
@@ -72,5 +68,5 @@ final class LoginWidgetTest extends TestCase
         $widget->save();
 
         $this->assertAuthenticatedAs($user);
-    }
-}
+    });
+});

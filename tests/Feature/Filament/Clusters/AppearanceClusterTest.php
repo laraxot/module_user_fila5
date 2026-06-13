@@ -15,20 +15,20 @@ use Modules\User\Filament\Clusters\Appearance\Pages\Logo;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Clusters\XotBaseCluster;
 use Modules\Xot\Filament\Pages\XotBasePage;
-
 use function Safe\file_get_contents;
 use function Safe\glob;
+use PHPUnit\Framework\Assert;
+use function Pest\Laravel\actingAs;
 
-class AppearanceClusterTest extends TestCase
-{
-    public function testAppearanceClusterExtendsXotBaseCluster(): void
-    {
-        $this->assertSame(XotBaseCluster::class, get_parent_class(Appearance::class));
-    }
+uses(\Modules\User\Tests\TestCase::class);
 
-    public function testAllClusterPagesExtendXotBasePage(): void
-    {
-        $pages = [
+describe('Appearance Cluster', function (): void {
+    test('appearance cluster extends xot base cluster', function (): void {
+Assert::assertSame(XotBaseCluster::class, get_parent_class(Appearance::class));
+    });
+
+    test('all cluster pages extend xot base page', function (): void {
+$pages = [
             Alignment::class,
             Background::class,
             Colors::class,
@@ -38,13 +38,12 @@ class AppearanceClusterTest extends TestCase
         ];
 
         foreach ($pages as $pageClass) {
-            $this->assertSame(XotBasePage::class, get_parent_class($pageClass));
+            Assert::assertSame(XotBasePage::class, get_parent_class($pageClass));
         }
-    }
+    });
 
-    public function testAllClusterPagesHaveClusterPropertySet(): void
-    {
-        $pages = [
+    test('all cluster pages have cluster property set', function (): void {
+$pages = [
             Alignment::class,
             Background::class,
             Colors::class,
@@ -58,44 +57,41 @@ class AppearanceClusterTest extends TestCase
             $property = $reflection->getProperty('cluster');
             $defaultValue = $property->getDefaultValue();
 
-            $this->assertSame(Appearance::class, $defaultValue);
+            Assert::assertSame(Appearance::class, $defaultValue);
         }
-    }
+    });
 
-    public function testClusterPagesDoNotExtendFilamentClassesDirectly(): void
-    {
-        $files = glob(base_path('Modules/User/app/Filament/Clusters/Appearance/Pages/*.php'));
+    test('cluster pages do not extend filament classes directly', function (): void {
+$files = glob(base_path('Modules/User/app/Filament/Clusters/Appearance/Pages/*.php'));
 
         if ([] === $files) {
-            $this->markTestSkipped('Appearance cluster pages directory not found.');
+            $this->skipTest('Appearance cluster pages directory not found.');
         }
 
         foreach ($files as $file) {
             $filePath = (string) $file;
             $content = (string) file_get_contents($filePath);
-            $this->assertStringContainsString('extends XotBasePage', $content, basename($filePath));
-            $this->assertStringNotContainsString('extends Page', $content, basename($filePath));
+            Assert::assertStringContainsString('extends XotBasePage', $content, basename($filePath));
+            Assert::assertStringNotContainsString('extends Page', $content, basename($filePath));
         }
-    }
+    });
 
-    public function testClusterDoesNotExtendFilamentDirectly(): void
-    {
-        $file = base_path('Modules/User/app/Filament/Clusters/Appearance.php');
+    test('cluster does not extend filament directly', function (): void {
+$file = base_path('Modules/User/app/Filament/Clusters/Appearance.php');
         $content = (string) file_get_contents($file);
 
-        $this->assertStringNotContainsString('extends Cluster', $content);
-        $this->assertStringNotContainsString('use Filament\\Clusters\\Cluster;', $content);
-        $this->assertStringContainsString('extends XotBaseCluster', $content);
-    }
+        Assert::assertStringNotContainsString('extends Cluster', $content);
+        Assert::assertStringNotContainsString('use Filament\\Clusters\\Cluster;', $content);
+        Assert::assertStringContainsString('extends XotBaseCluster', $content);
+    });
 
-    public function testClusterPagesAreAccessible(): void
-    {
-        $user = UserFactory::new()->createOne([
+    test('cluster pages are accessible', function (): void {
+$user = UserFactory::new()->createOne([
             'name' => 'Cluster Test User',
             'email' => 'cluster-'.uniqid('', true).'@example.com',
         ]);
 
-        $this->actingAs($user);
+        actingAs($user);
 
         $pages = [
             Alignment::class,
@@ -107,7 +103,7 @@ class AppearanceClusterTest extends TestCase
         ];
 
         foreach ($pages as $pageClass) {
-            $this->assertTrue(class_exists($pageClass));
+            Assert::assertTrue(class_exists($pageClass));
         }
-    }
-}
+    });
+});

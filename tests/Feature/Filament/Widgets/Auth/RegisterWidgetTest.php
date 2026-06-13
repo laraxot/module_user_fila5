@@ -11,41 +11,38 @@ use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use function Pest\Laravel\get;
 
-class RegisterWidgetTest extends TestCase
-{
-    protected function setUp(): void
-    {
-        parent::setUp();
+uses(\Modules\User\Tests\TestCase::class);
 
-        config(['activitylog.enabled' => false]);
+beforeEach(function (): void {
+config(['activitylog.enabled' => false]);
 
         if (! Schema::connection('user')->hasTable('users')) {
-            $this->markTestSkipped('users table missing on user connection (run migrations for testing)');
+            skip('users table missing on user connection (run migrations for testing)');
         }
-    }
+});
 
-    public function testRegisterPageLoadsWithLivewireWidget(): void
-    {
-        $this->get('/it/auth/register')->assertSuccessful();
+describe('Register Widget', function (): void {
+    test('register page loads with livewire widget', function (): void {
+get('/it/auth/register')->assertSuccessful();
         Livewire::test(RegisterWidget::class)->assertSuccessful();
-    }
+    });
 
-    public function testDelegatesFormSchemaToUserFormViaFormClass(): void
-    {
-        $reflection = new \ReflectionClass(RegisterWidget::class);
+    test('delegates form schema to user form via form class', function (): void {
+$reflection = new \ReflectionClass(RegisterWidget::class);
 
         $formClass = $reflection->getMethod('formClass');
         $formClass->setAccessible(true);
-        $this->assertSame(UserForm::class, $formClass->invoke(null));
+        Assert::assertSame(UserForm::class, $formClass->invoke(null));
         $schemaMethod = $reflection->getMethod('schemaMethod');
         $schemaMethod->setAccessible(true);
-        $this->assertSame('getRegisterFormSchema', $schemaMethod->invoke(null));
-    }
+        Assert::assertSame('getRegisterFormSchema', $schemaMethod->invoke(null));
+    });
 
-    public function testCanRegisterUserViaSubmit(): void
-    {
-        $email = 'pest-register-'.uniqid('', true).'@example.test';
+    test('can register user via submit', function (): void {
+$email = 'pest-register-'.uniqid('', true).'@example.test';
 
         Livewire::test(RegisterWidget::class)
             ->fillForm([
@@ -61,11 +58,10 @@ class RegisterWidgetTest extends TestCase
         $this->assertAuthenticated();
 
         $this->assertDatabaseHasRow(User::class, ['email' => $email]);
-    }
+    });
 
-    public function testRejectsInvalidEmailWithoutCreatingUser(): void
-    {
-        Livewire::test(RegisterWidget::class)
+    test('rejects invalid email without creating user', function (): void {
+Livewire::test(RegisterWidget::class)
             ->fillForm([
                 'first_name' => 'Mario',
                 'last_name' => 'Rossi',
@@ -76,12 +72,11 @@ class RegisterWidgetTest extends TestCase
             ->call('submit')
             ->assertHasErrors();
 
-        $this->assertFalse(Auth::check());
-    }
+        Assert::assertFalse(Auth::check());
+    });
 
-    public function testSaveDelegatesToSubmit(): void
-    {
-        $email = 'pest-save-'.uniqid('', true).'@example.test';
+    test('save delegates to submit', function (): void {
+$email = 'pest-save-'.uniqid('', true).'@example.test';
 
         Livewire::test(RegisterWidget::class)
             ->fillForm([
@@ -95,5 +90,5 @@ class RegisterWidgetTest extends TestCase
             ->assertHasNoErrors();
 
         $this->assertDatabaseHasRow(User::class, ['email' => $email]);
-    }
-}
+    });
+});

@@ -6,26 +6,27 @@ namespace Modules\User\Tests\Feature;
 
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use function Pest\Laravel\get;
 
-class UserModelBasicTest extends TestCase
-{
-    public function testUserModelCanBeCreated(): void
-    {
-        $user = new User();
+uses(\Modules\User\Tests\TestCase::class);
 
-        $this->assertInstanceOf(User::class, $user);
-    }
+describe('User Model Basic', function (): void {
+    test('user model can be created', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
+$user = new User();
 
-    public function testUserModelCanAccessConnection(): void
-    {
-        $user = new User();
+        Assert::assertInstanceOf(User::class, $user);
+    });
 
-        $this->assertSame('user', $user->getConnectionName());
-    }
+    test('user model can access connection', function (): void {
+$user = new User();
 
-    public function testUserModelCanCreateBasicRecord(): void
-    {
-        $this->skipUnlessUsersTableReady();
+        Assert::assertSame('user', $user->getConnectionName());
+    });
+
+    test('user model can create basic record', function (): void {
+$this->skipUnlessUsersTableReady();
 
         $user = createTestUser([
             'name' => 'Test User',
@@ -35,28 +36,26 @@ class UserModelBasicTest extends TestCase
             'is_active' => true,
         ]);
 
-        $this->assertInstanceOf(User::class, $user);
-        $this->assertSame('Test User', $user->name);
-        $this->assertNotEmpty($user->email);
-        $this->assertSame('it', $user->lang);
-        $this->assertSame(true, $user->is_active);
-    }
+        Assert::assertInstanceOf(User::class, $user);
+        Assert::assertSame('Test User', $user->name);
+        Assert::assertNotEmpty($user->email);
+        Assert::assertSame('it', $user->lang);
+        Assert::assertSame(true, $user->is_active);
+    });
 
-    public function testUserModelCanQueryRecords(): void
-    {
-        $this->skipUnlessUsersTableReady();
+    test('user model can query records', function (): void {
+$this->skipUnlessUsersTableReady();
 
         $user1 = createTestUser(['name' => 'User 1']);
         $user2 = createTestUser(['name' => 'User 2']);
 
         $users = User::query()->whereIn('id', [$user1->id, $user2->id])->get();
 
-        $this->assertCount(2, $users);
-    }
+        Assert::assertCount(2, $users);
+    });
 
-    public function testUserModelCanFilterRecords(): void
-    {
-        $this->skipUnlessUsersTableReady();
+    test('user model can filter records', function (): void {
+$this->skipUnlessUsersTableReady();
 
         $activeUser = createTestUser([
             'name' => 'Active User',
@@ -72,19 +71,18 @@ class UserModelBasicTest extends TestCase
             ->where('is_active', true)
             ->get();
 
-        $this->assertCount(1, $activeUsers);
-        $this->assertSame('Active User', $activeUsers->first()?->name);
-    }
+        Assert::assertCount(1, $activeUsers);
+        Assert::assertSame('Active User', $activeUsers->first()?->name);
+    });
 
-    public function testUserModelCanUpdateRecords(): void
-    {
-        $this->skipUnlessUsersTableReady();
+    test('user model can update records', function (): void {
+$this->skipUnlessUsersTableReady();
 
         $user = createTestUser(['name' => 'Original Name']);
 
         $user->name = 'Updated Name';
         $user->save();
 
-        $this->assertSame('Updated Name', $user->name);
-    }
-}
+        Assert::assertSame('Updated Name', $user->name);
+    });
+});

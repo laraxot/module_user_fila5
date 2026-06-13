@@ -3,13 +3,19 @@
 declare(strict_types=1);
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 use Mockery\MockInterface;
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
+use PragmaRX\Google2FA\Google2FA;
 
+use function Safe\glob;
+use function Safe\json_decode;
 use function Safe\json_encode;
 
 /**
@@ -82,12 +88,12 @@ function bootstrapHasTeamsFixture(): array
 
 function userTableHasColumn(string $table, string $column): bool
 {
-    return Illuminate\Support\Facades\Schema::connection('user')->hasColumn($table, $column);
+    return Schema::connection('user')->hasColumn($table, $column);
 }
 
 function pestSkip(string $message): never
 {
-    PHPUnit\Framework\Assert::markTestSkipped($message);
+    \PHPUnit\Framework\Assert::markTestSkipped($message);
 }
 
 function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
@@ -99,7 +105,7 @@ function skipUnlessUserColumn(string $table, string $column, string $reason = ''
 
 function userTableExists(string $table): bool
 {
-    return Illuminate\Support\Facades\Schema::connection('user')->hasTable($table);
+    return Schema::connection('user')->hasTable($table);
 }
 
 function skipUnlessUserTable(string $table, string $reason = ''): void
@@ -168,12 +174,12 @@ function attachTeamMember(Team $team, User $user, array $pivot = []): void
         $payload['joined_at'] = $pivot['joined_at'];
     }
 
-    Illuminate\Support\Facades\DB::connection('user')->table('team_user')->insert($payload);
+    DB::connection('user')->table('team_user')->insert($payload);
 }
 
 function detachTeamMember(Team $team, User $user): void
 {
-    Illuminate\Support\Facades\DB::connection('user')->table('team_user')
+    DB::connection('user')->table('team_user')
         ->where('team_id', $team->id)
         ->where('user_id', $user->id)
         ->delete();
@@ -181,7 +187,7 @@ function detachTeamMember(Team $team, User $user): void
 
 function teamMemberExists(Team $team, User $user): bool
 {
-    return Illuminate\Support\Facades\DB::connection('user')->table('team_user')
+    return DB::connection('user')->table('team_user')
         ->where('team_id', $team->id)
         ->where('user_id', $user->id)
         ->exists();
@@ -193,7 +199,7 @@ function teamUsesSoftDeletes(): bool
     $traits = \class_uses_recursive(Team::class);
 
     return in_array(
-        Illuminate\Database\Eloquent\SoftDeletes::class,
+        \Illuminate\Database\Eloquent\SoftDeletes::class,
         $traits,
         true
     );
@@ -215,13 +221,13 @@ function createProfile(array $attributes = []): Profile
 
 function setupFilamentAdminPanel(): void
 {
-    $filament = Filament\Facades\Filament::class;
+    $filament = \Filament\Facades\Filament::class;
 
     try {
         $panel = $filament::getPanel('user::admin');
-    } catch (Throwable) {
-        $panelProvider = new Modules\User\Providers\Filament\AdminPanelProvider(app());
-        $panel = $panelProvider->panel(Filament\Panel::make());
+    } catch (\Throwable) {
+        $panelProvider = new \Modules\User\Providers\Filament\AdminPanelProvider(app());
+        $panel = $panelProvider->panel(\Filament\Panel::make());
         $filament::registerPanel($panel);
     }
 
@@ -231,7 +237,7 @@ function setupFilamentAdminPanel(): void
 /**
  * @param array<mixed> $attributes
  */
-function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contracts\User
+function mockSocialiteOauthUser(array $attributes = []): \Laravel\Socialite\Contracts\User
 {
     /** @var array<string, mixed> $attributes */
     $unique = uniqid();
@@ -243,7 +249,7 @@ function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contr
         'nickname' => 'user'.$unique,
     ], $attributes);
 
-    return configureMock(Laravel\Socialite\Contracts\User::class, static function (MockInterface $mock) use ($data): void {
+    return configureMock(\Laravel\Socialite\Contracts\User::class, static function (MockInterface $mock) use ($data): void {
         $mock->allows([
             'getId' => $data['id'],
             'getName' => $data['name'],
@@ -261,17 +267,15 @@ function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contr
  *
  * @return T&MockInterface
  */
-function typedMock(string $class)
+function typedMock(string $class): MockInterface
 {
-    /** @var T&MockInterface */
-    $mock = Mockery::mock($class);
+    /** @var T&MockInterface $mock */
+    $mock = \Mockery::mock($class);
 
     return $mock;
 }
 
 /**
- * Configure a typed mock via Mockery expectations.
- *
  * @template T of object
  *
  * @param class-string<T>                 $class
@@ -279,11 +283,230 @@ function typedMock(string $class)
  *
  * @return T&MockInterface
  */
-function configureMock(string $class, callable $configure)
+function configureMock(string $class, callable $configure): MockInterface
 {
     /** @var T&MockInterface $mock */
-    $mock = Mockery::mock($class);
+    $mock = \Mockery::mock($class);
     $configure($mock);
 
     return $mock;
+}
+
+function fakeSocialiteUser(string $email): \Laravel\Socialite\Contracts\User
+{
+    return configureMock(\Laravel\Socialite\Contracts\User::class, static function (MockInterface $mock) use ($email): void {
+        $mock->allows(['getEmail' => $email]);
+    });
+}
+
+function makeIsUserAllowedAction(): \Modules\User\Actions\Socialite\IsUserAllowedAction
+{
+    return new \Modules\User\Actions\Socialite\IsUserAllowedAction();
+}
+
+/**
+ * @return list<string>
+ */
+function userMigrationFiles(): array
+{
+    $basePath = dirname(__DIR__, 2).'/database/migrations';
+    /** @var list<string> $files */
+    $files = glob($basePath.'/*.php');
+    sort($files);
+
+    return $files;
+}
+
+function skipUserTest(string $message): never
+{
+    Assert::markTestSkipped($message);
+}
+
+function skipLegacyRedirectPersistenceCheck(): void
+{
+    if (
+        Schema::connection('user')->hasColumn('oauth_clients', 'redirect')
+        && Schema::connection('user')->hasColumn('oauth_clients', 'redirect_uris')
+    ) {
+        skipUserTest('oauth_clients legacy redirect columns require redirect_uris sync not performed by Create*ClientAction.');
+    }
+}
+
+function ensurePersonalAccessClient(): void
+{
+    $clientModel = \Laravel\Passport\Passport::client();
+
+    if ($clientModel->newQuery()->where('revoked', false)->exists()) {
+        return;
+    }
+
+    $repository = app(\Laravel\Passport\ClientRepository::class);
+    $repository->createPersonalAccessGrantClient('Test Personal Access Client');
+}
+
+/**
+ * @return array<int, \Filament\Schemas\Components\Component|\Filament\Actions\Action|\Filament\Actions\ActionGroup>
+ */
+function userResourceSectionComponents(\Modules\User\Tests\TestCase $testCase, \Filament\Schemas\Components\Component $section): array
+{
+    \PHPUnit\Framework\Assert::assertInstanceOf(\Filament\Schemas\Components\Section::class, $section);
+
+    /** @var \Filament\Schemas\Components\Section $section */
+    return $testCase->filamentSectionChildComponents($section);
+}
+
+/**
+ * @param array<int, \Filament\Schemas\Components\Component|\Filament\Actions\Action|\Filament\Actions\ActionGroup> $components
+ */
+function userResourceFindComponentByName(array $components, string $name): ?\Filament\Schemas\Components\Component
+{
+    foreach ($components as $component) {
+        if (! $component instanceof \Filament\Forms\Components\Field) {
+            continue;
+        }
+
+        if ($component->getName() === $name) {
+            return $component;
+        }
+    }
+
+    return null;
+}
+
+/**
+ * @param array<string, mixed> $attributes
+ */
+function stubUser(array $attributes = []): User
+{
+    return UserFactory::new()->makeOne($attributes);
+}
+
+/**
+ * @param array<string, mixed> $attributes
+ */
+function hasTeamsCurrentCreateUser(array $attributes = []): User
+{
+    return createTestUser($attributes);
+}
+
+/**
+ * @param array<string, mixed> $attributes
+ */
+function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
+{
+    return TeamFactory::new()->createOne(array_merge([
+        'user_id' => $user->id,
+        'personal_team' => true,
+    ], $attributes));
+}
+
+/**
+ * @param array<string, mixed> $attributes
+ *
+ * @return array{secret: string, qr_code: string, recovery_codes: array<int, string>}
+ */
+function enableTwoFactorForUser(User $user, Google2FA $google2fa, array $attributes = []): array
+{
+    $secret = (string) $google2fa->generateSecretKey();
+    $qrCode = $google2fa->getQRCodeUrl((string) config('app.name'), $user->email, $secret);
+
+    $recoveryCodes = array_map(
+        static fn (): string => substr(str_shuffle('0123456789ABCDEF'), 0, 10).'-'.substr(str_shuffle('0123456789ABCDEF'), 0, 10),
+        range(1, 10)
+    );
+
+    $user->two_factor_secret = encrypt($secret);
+    $user->two_factor_recovery_codes = encrypt(json_encode($recoveryCodes));
+    $user->save();
+
+    return [
+        'secret' => $secret,
+        'qr_code' => $qrCode,
+        'recovery_codes' => $recoveryCodes,
+    ];
+}
+
+function confirmTwoFactorForUser(User $user, Google2FA $google2fa, string $secret, string $code): bool
+{
+    if (! $google2fa->verifyKey($secret, $code)) {
+        return false;
+    }
+
+    $user->two_factor_confirmed_at = now()->toDateTimeString();
+    $user->save();
+
+    return true;
+}
+
+function verifyTwoFactorCode(User $user, Google2FA $google2fa, string $code): bool
+{
+    if (! $user->two_factor_secret) {
+        return false;
+    }
+
+    $secret = (string) decrypt($user->two_factor_secret);
+
+    return $google2fa->verifyKey($secret, $code) !== false;
+}
+
+function disableTwoFactorForUser(User $user): void
+{
+    $user->two_factor_secret = null;
+    $user->two_factor_recovery_codes = null;
+    $user->two_factor_confirmed_at = null;
+    $user->save();
+}
+
+function verifyTwoFactorRecoveryCode(User $user, string $code): bool
+{
+    if (! $user->two_factor_recovery_codes) {
+        return false;
+    }
+
+    $codes = json_decode((string) decrypt($user->two_factor_recovery_codes), true);
+    if (! is_array($codes)) {
+        return false;
+    }
+
+    $codes = array_values(array_filter($codes, static fn ($c): bool => $c !== $code));
+    $user->two_factor_recovery_codes = encrypt(json_encode($codes));
+    $user->save();
+
+    return true;
+}
+
+/**
+ * @return array<int, string>
+ */
+function readStoredRecoveryCodes(User $user): array
+{
+    if (! $user->two_factor_recovery_codes) {
+        return [];
+    }
+
+    $codes = json_decode((string) decrypt($user->two_factor_recovery_codes), true);
+    if (! is_array($codes)) {
+        return [];
+    }
+
+    /** @var array<int, string> $stringCodes */
+    $stringCodes = array_values(array_filter($codes, 'is_string'));
+
+    return $stringCodes;
+}
+
+/**
+ * @return array<int, string>
+ */
+function regenerateTwoFactorRecoveryCodes(User $user): array
+{
+    $codes = array_map(
+        static fn (): string => substr(str_shuffle('0123456789ABCDEF'), 0, 10).'-'.substr(str_shuffle('0123456789ABCDEF'), 0, 10),
+        range(1, 10)
+    );
+
+    $user->two_factor_recovery_codes = encrypt(json_encode($codes));
+    $user->save();
+
+    return $codes;
 }

@@ -10,49 +10,21 @@ use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-/**
- * @param array<string, mixed> $attributes
- */
-function stubUser(array $attributes = []): User
-{
-    $defaults = [
-        'first_name' => 'John',
-        'last_name' => 'Doe',
-        'name' => 'John Doe',
-        'email' => 'john.doe@example.test',
-        'email_verified_at' => Carbon::now(),
-        'password' => password_hash('secret', PASSWORD_BCRYPT),
-        'remember_token' => null,
-        'lang' => 'it',
-        'is_active' => true,
-        'is_otp' => false,
-        'password_expires_at' => null,
-        'created_at' => Carbon::now(),
-        'updated_at' => Carbon::now(),
-    ];
+uses(\Modules\User\Tests\TestCase::class);
 
-    /** @var User $u */
-    $u = new User();
-    $u->forceFill(array_merge($defaults, $attributes));
+describe('User Model', function (): void {
+    test('can be created in memory', function (): void {
+$user = stubUser();
 
-    return $u;
-}
+        Assert::assertInstanceOf(User::class, $user);
+        Assert::assertFalse($user->exists);
+        Assert::assertIsString($user->email);
+    });
 
-class UserModelTest extends TestCase
-{
-    public function testCanBeCreatedInMemory(): void
-    {
-        $user = stubUser();
-
-        $this->assertInstanceOf(User::class, $user);
-        $this->assertFalse($user->exists);
-        $this->assertIsString($user->email);
-    }
-
-    public function testSupportsMassAssignmentOfExpectedAttributesBehavior(): void
-    {
-        $data = [
+    test('supports mass assignment of expected attributes behavior', function (): void {
+$data = [
             'first_name' => 'Jane',
             'last_name' => 'Roe',
             'name' => 'Jane Roe',
@@ -62,179 +34,160 @@ class UserModelTest extends TestCase
             'is_otp' => true,
         ];
         $user = new User($data);
-        $this->assertSame('Jane', $user->first_name);
-        $this->assertSame('Roe', $user->last_name);
-        $this->assertSame('jane.roe@example.test', $user->email);
-        $this->assertSame('en', $user->lang);
-        $this->assertFalse($user->is_active);
-        $this->assertTrue($user->is_otp);
-    }
+        Assert::assertSame('Jane', $user->first_name);
+        Assert::assertSame('Roe', $user->last_name);
+        Assert::assertSame('jane.roe@example.test', $user->email);
+        Assert::assertSame('en', $user->lang);
+        Assert::assertFalse($user->is_active);
+        Assert::assertTrue($user->is_otp);
+    });
 
-    public function testDeclaresSensitiveAttributesAsHiddenWithoutSerialization(): void
-    {
-        $user = stubUser();
+    test('declares sensitive attributes as hidden without serialization', function (): void {
+$user = stubUser();
         $hidden = $user->getHidden();
-        $this->assertStringContainsString('password', implode(',', $hidden));
-        $this->assertContains('remember_token', $hidden);
-    }
+        Assert::assertStringContainsString('password', implode(',', $hidden));
+        Assert::assertContains('remember_token', $hidden);
+    });
 
-    public function testCastsAttributesCorrectly(): void
-    {
-        $user = stubUser([
+    test('casts attributes correctly', function (): void {
+$user = stubUser([
             'email_verified_at' => Carbon::now(),
             'created_at' => Carbon::now(),
             'is_active' => true,
             'is_otp' => false,
         ]);
 
-        $this->assertInstanceOf(Carbon::class, $user->email_verified_at);
+        Assert::assertInstanceOf(Carbon::class, $user->email_verified_at);
 
-        $this->assertInstanceOf(Carbon::class, $user->created_at);
-    }
+        Assert::assertInstanceOf(Carbon::class, $user->created_at);
+    });
 
-    public function testHasProfileRelationshipInMemory(): void
-    {
-        $user = stubUser();
+    test('has profile relationship in memory', function (): void {
+$user = stubUser();
         $profile = new Profile();
         $profile->forceFill(['user_id' => 'test-user-id']);
         $user->setRelation('profile', $profile);
 
-        $this->assertInstanceOf(Profile::class, $user->profile);
-    }
+        Assert::assertInstanceOf(Profile::class, $user->profile);
+    });
 
-    public function testCanAttachAuthenticationLogsInMemory(): void
-    {
-        $user = stubUser();
+    test('can attach authentication logs in memory', function (): void {
+$user = stubUser();
         $log = new AuthenticationLog();
         $user->setRelation('authentications', collect([$log]));
-        $this->assertCount(1, $user->authentications);
-    }
+        Assert::assertCount(1, $user->authentications);
+    });
 
-    public function testCanExposeOwnedTeamsRelationWhenPreset(): void
-    {
-        $user = stubUser();
+    test('can expose owned teams relation when preset', function (): void {
+$user = stubUser();
         $team = new Team();
         $user->setRelation('ownedTeams', collect([$team]));
-        $this->assertCount(1, $user->ownedTeams);
-    }
+        Assert::assertCount(1, $user->ownedTeams);
+    });
 
-    public function testCanExposeTeamsRelationWhenPreset(): void
-    {
-        $user = stubUser();
+    test('can expose teams relation when preset', function (): void {
+$user = stubUser();
         $team = new Team();
         $user->setRelation('teams', collect([$team]));
-        $this->assertCount(1, $user->teams);
-    }
+        Assert::assertCount(1, $user->teams);
+    });
 
-    public function testHasFullNameAccessor(): void
-    {
-        $user = stubUser([
+    test('has full name accessor', function (): void {
+$user = stubUser([
             'first_name' => 'John',
             'last_name' => 'Doe',
         ]);
 
-        $this->assertSame('John Doe', $user->full_name);
-    }
+        Assert::assertSame('John Doe', $user->full_name);
+    });
 
-    public function testHandlesNullNamesInFullNameAccessor(): void
-    {
-        $user = stubUser([
+    test('handles null names in full name accessor', function (): void {
+$user = stubUser([
             'first_name' => 'John',
             'last_name' => null,
         ]);
 
-        $this->assertSame('John', rtrim($user->full_name));
-    }
+        Assert::assertSame('John', rtrim($user->full_name));
+    });
 
-    public function testHashesPasswordWhenSet(): void
-    {
-        $user = stubUser(['password' => 'plain-password']);
-    }
+    test('hashes password when set', function (): void {
+$user = stubUser(['password' => 'plain-password']);
+    });
 
-    public function testReflectsVerifiedEmailStateWhenTimestampIsSet(): void
-    {
-        $user = stubUser(['email_verified_at' => null]);
-        $this->assertFalse($user->hasVerifiedEmail());
+    test('reflects verified email state when timestamp is set', function (): void {
+$user = stubUser(['email_verified_at' => null]);
+        Assert::assertFalse($user->hasVerifiedEmail());
         $user->email_verified_at = \Illuminate\Support\Carbon::parse(Carbon::now()->toDateTimeString());
-        $this->assertTrue($user->hasVerifiedEmail());
-    }
+        Assert::assertTrue($user->hasVerifiedEmail());
+    });
 
-    public function testCanBeActivatedDeactivatedInMemory(): void
-    {
-        $user = stubUser(['is_active' => false]);
-        $this->assertFalse($user->is_active);
+    test('can be activated deactivated in memory', function (): void {
+$user = stubUser(['is_active' => false]);
+        Assert::assertFalse($user->is_active);
         $user->is_active = true;
-        $this->assertTrue($user->is_active);
-    }
+        Assert::assertTrue($user->is_active);
+    });
 
-    public function testSupportsOtpAuthentication(): void
-    {
-        $user = stubUser(['is_otp' => true]);
+    test('supports otp authentication', function (): void {
+$user = stubUser(['is_otp' => true]);
 
-        $this->assertTrue($user->is_otp);
-    }
+        Assert::assertTrue($user->is_otp);
+    });
 
-    public function testExposesActiveFlagForFilteringInMemory(): void
-    {
-        $u1 = stubUser(['is_active' => true]);
+    test('exposes active flag for filtering in memory', function (): void {
+$u1 = stubUser(['is_active' => true]);
         $u2 = stubUser(['is_active' => false]);
 
         $active = collect([$u1, $u2])->filter(fn (User $u) => true === $u->is_active);
         $inactive = collect([$u1, $u2])->filter(fn (User $u) => false === $u->is_active);
 
-        $this->assertCount(1, $inactive);
-        $this->assertCount(1, $active);
-    }
+        Assert::assertCount(1, $inactive);
+        Assert::assertCount(1, $active);
+    });
 
-    public function testExposesEmailVerificationFlagForFilteringInMemory(): void
-    {
-        $u1 = stubUser(['email_verified_at' => Carbon::now()]);
+    test('exposes email verification flag for filtering in memory', function (): void {
+$u1 = stubUser(['email_verified_at' => Carbon::now()]);
         $u2 = stubUser(['email_verified_at' => null]);
 
         $verified = collect([$u1, $u2])->filter(fn (User $u) => null !== $u->email_verified_at);
         $unverified = collect([$u1, $u2])->filter(fn (User $u) => null === $u->email_verified_at);
 
-        $this->assertCount(1, $unverified);
-        $this->assertCount(1, $verified);
-    }
+        Assert::assertCount(1, $unverified);
+        Assert::assertCount(1, $verified);
+    });
 
-    public function testExposesLanguageForFilteringInMemory(): void
-    {
-        $u1 = stubUser(['lang' => 'it']);
+    test('exposes language for filtering in memory', function (): void {
+$u1 = stubUser(['lang' => 'it']);
         $u2 = stubUser(['lang' => 'en']);
 
         $italians = collect([$u1, $u2])->where('lang', 'it');
-        $this->assertCount(1, $italians);
-    }
+        Assert::assertCount(1, $italians);
+    });
 
-    public function testHasPasswordExpiration(): void
-    {
-        $user = stubUser(['password_expires_at' => Carbon::now()->addDays(30)]);
+    test('has password expiration', function (): void {
+$user = stubUser(['password_expires_at' => Carbon::now()->addDays(30)]);
 
-        $this->assertInstanceOf(Carbon::class, $user->password_expires_at);
-    }
+        Assert::assertInstanceOf(Carbon::class, $user->password_expires_at);
+    });
 
-    public function testTracksCreationAndUpdatesInMemory(): void
-    {
-        $user = stubUser();
+    test('tracks creation and updates in memory', function (): void {
+$user = stubUser();
 
-        $this->assertInstanceOf(Carbon::class, $user->created_at);
-        $this->assertInstanceOf(Carbon::class, $user->updated_at);
-    }
+        Assert::assertInstanceOf(Carbon::class, $user->created_at);
+        Assert::assertInstanceOf(Carbon::class, $user->updated_at);
+    });
 
-    public function testCanHaveCurrentTeamInMemory(): void
-    {
-        $user = stubUser(['current_team_id' => 'team-id']);
-        $this->assertSame('team-id', $user->current_team_id);
-    }
+    test('can have current team in memory', function (): void {
+$user = stubUser(['current_team_id' => 'team-id']);
+        Assert::assertSame('team-id', $user->current_team_id);
+    });
 
-    public function testCanOwnTeamsInMemory(): void
-    {
-        $user = stubUser();
+    test('can own teams in memory', function (): void {
+$user = stubUser();
         $team = new Team();
         $team->forceFill(['user_id' => $user->id]);
         $user->setRelation('ownedTeams', collect([$team]));
 
-        $this->assertCount(1, $user->ownedTeams);
-    }
-}
+        Assert::assertCount(1, $user->ownedTeams);
+    });
+});

@@ -13,12 +13,14 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use function Pest\Laravel\get;
 
-class UserManagementBusinessLogicTest extends TestCase
-{
-    public function testCanCreateUserWithProfile(): void
-    {
-        $userData = [
+uses(\Modules\User\Tests\TestCase::class);
+
+describe('User Management Business Logic', function (): void {
+    test('can create user with profile', function (): void {
+$userData = [
             'name' => 'Mario Rossi',
             'email' => 'mario.rossi@example.com',
             'password' => Hash::make('password123'),
@@ -34,67 +36,63 @@ class UserManagementBusinessLogicTest extends TestCase
 
         $user = User::create($userData);
         $createdProfile = $user->profile()->create($profileData);
-        $this->assertInstanceOf(Profile::class, $createdProfile);
+        Assert::assertInstanceOf(Profile::class, $createdProfile);
         $profile = $createdProfile;
 
-        $this->assertTrue(DB::table('users')->where([
+        Assert::assertTrue(DB::table('users')->where([
             'id' => $user->id,
             'name' => 'Mario Rossi',
             'email' => 'mario.rossi@example.com',
         ])->exists());
-        $this->assertTrue(DB::table('profiles')->where([
+        Assert::assertTrue(DB::table('profiles')->where([
             'id' => $profile->id,
             'user_id' => $user->id,
             'phone' => '+39 123 456 7890',
             'address' => 'Via Roma 123, Milano',
         ])->exists());
-        $this->assertInstanceOf(Profile::class, $user->profile);
-        $this->assertSame($user->id, $profile->user_id);
-    }
+        Assert::assertInstanceOf(Profile::class, $user->profile);
+        Assert::assertSame($user->id, $profile->user_id);
+    });
 
-    public function testCanAssignRoleToUser(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('can assign role to user', function (): void {
+$user = UserFactory::new()->createOne();
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
 
         $user->assignRole($role);
 
-        $this->assertTrue($user->hasRole('doctor'));
-        $this->assertTrue($user->hasRole($role));
-        $this->assertContains($role->name, $user->getRoleNames()->toArray());
-    }
+        Assert::assertTrue($user->hasRole('doctor'));
+        Assert::assertTrue($user->hasRole($role));
+        Assert::assertContains($role->name, $user->getRoleNames()->toArray());
+    });
 
-    public function testCanAssignMultipleRolesToUser(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('can assign multiple roles to user', function (): void {
+$user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
         $role2 = RoleFactory::new()->createOne(['name' => 'admin']);
 
         $user->assignRole([$role1, $role2]);
 
-        $this->assertTrue($user->hasRole('doctor'));
-        $this->assertTrue($user->hasRole('admin'));
-        $this->assertTrue($user->hasRole($role1));
-        $this->assertTrue($user->hasRole($role2));
-        $this->assertCount(2, $user->getRoleNames());
-    }
+        Assert::assertTrue($user->hasRole('doctor'));
+        Assert::assertTrue($user->hasRole('admin'));
+        Assert::assertTrue($user->hasRole($role1));
+        Assert::assertTrue($user->hasRole($role2));
+        Assert::assertCount(2, $user->getRoleNames());
+    });
 
-    public function testCanRemoveRoleFromUser(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('can remove role from user', function (): void {
+$user = UserFactory::new()->createOne();
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
         $user->assignRole($role);
 
         $user->removeRole($role);
 
-        $this->assertFalse($user->hasRole('doctor'));
-        $this->assertFalse($user->hasRole($role));
-        $this->assertCount(0, $user->getRoleNames());
-    }
+        Assert::assertFalse($user->hasRole('doctor'));
+        Assert::assertFalse($user->hasRole($role));
+        Assert::assertCount(0, $user->getRoleNames());
+    });
 
-    public function testCanSyncUserRoles(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('can sync user roles', function (): void {
+$user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
         $role2 = RoleFactory::new()->createOne(['name' => 'admin']);
         $role3 = RoleFactory::new()->createOne(['name' => 'nurse']);
@@ -103,79 +101,73 @@ class UserManagementBusinessLogicTest extends TestCase
 
         $user->syncRoles([$role2, $role3]);
 
-        $this->assertFalse($user->hasRole('doctor'));
-        $this->assertTrue($user->hasRole('admin'));
-        $this->assertTrue($user->hasRole('nurse'));
-        $this->assertCount(2, $user->getRoleNames());
-    }
+        Assert::assertFalse($user->hasRole('doctor'));
+        Assert::assertTrue($user->hasRole('admin'));
+        Assert::assertTrue($user->hasRole('nurse'));
+        Assert::assertCount(2, $user->getRoleNames());
+    });
 
-    public function testCanCheckUserPermissions(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('can check user permissions', function (): void {
+$user = UserFactory::new()->createOne();
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
         $permission = PermissionFactory::new()->createOne(['name' => 'patients.read']);
 
         $role->givePermissionTo($permission);
         $user->assignRole($role);
 
-        $this->assertTrue($user->hasPermissionTo('patients.read'));
-        $this->assertTrue($user->hasPermissionTo($permission));
-        $this->assertTrue($user->can('patients.read'));
-    }
+        Assert::assertTrue($user->hasPermissionTo('patients.read'));
+        Assert::assertTrue($user->hasPermissionTo($permission));
+        Assert::assertTrue($user->can('patients.read'));
+    });
 
-    public function testCanAssignDirectPermissionToUser(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('can assign direct permission to user', function (): void {
+$user = UserFactory::new()->createOne();
         $permission = PermissionFactory::new()->createOne(['name' => 'special.permission']);
 
         $user->givePermissionTo($permission);
 
-        $this->assertTrue($user->hasPermissionTo('special.permission'));
-        $this->assertTrue($user->hasPermissionTo($permission));
-        $this->assertTrue($user->can('special.permission'));
-    }
+        Assert::assertTrue($user->hasPermissionTo('special.permission'));
+        Assert::assertTrue($user->hasPermissionTo($permission));
+        Assert::assertTrue($user->can('special.permission'));
+    });
 
-    public function testCanRevokeDirectPermissionFromUser(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('can revoke direct permission from user', function (): void {
+$user = UserFactory::new()->createOne();
         $permission = PermissionFactory::new()->createOne(['name' => 'special.permission']);
         $user->givePermissionTo($permission);
 
         $user->revokePermissionTo($permission);
 
-        $this->assertFalse($user->hasPermissionTo('special.permission'));
-        $this->assertFalse($user->hasPermissionTo($permission));
-        $this->assertFalse($user->can('special.permission'));
-    }
+        Assert::assertFalse($user->hasPermissionTo('special.permission'));
+        Assert::assertFalse($user->hasPermissionTo($permission));
+        Assert::assertFalse($user->can('special.permission'));
+    });
 
-    public function testCanCheckUserHasAnyRole(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('can check user has any role', function (): void {
+$user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
         $role2 = RoleFactory::new()->createOne(['name' => 'nurse']);
 
         $user->assignRole($role1);
 
-        $this->assertTrue($user->hasAnyRole(['doctor', 'nurse']));
-        $this->assertFalse($user->hasAnyRole(['nurse', 'admin']));
-        $this->assertFalse($user->hasAnyRole(['admin', 'super-admin']));
-    }
+        Assert::assertTrue($user->hasAnyRole(['doctor', 'nurse']));
+        Assert::assertFalse($user->hasAnyRole(['nurse', 'admin']));
+        Assert::assertFalse($user->hasAnyRole(['admin', 'super-admin']));
+    });
 
-    public function testCanCheckUserHasAllRoles(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('can check user has all roles', function (): void {
+$user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
         $role2 = RoleFactory::new()->createOne(['name' => 'admin']);
 
         $user->assignRole([$role1, $role2]);
 
-        $this->assertTrue($user->hasAllRoles(['doctor', 'admin']));
-        $this->assertFalse($user->hasAllRoles(['doctor', 'nurse']));
-    }
+        Assert::assertTrue($user->hasAllRoles(['doctor', 'admin']));
+        Assert::assertFalse($user->hasAllRoles(['doctor', 'nurse']));
+    });
 
-    public function testCanGetUserPermissions(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('can get user permissions', function (): void {
+$user = UserFactory::new()->createOne();
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
         $permission1 = PermissionFactory::new()->createOne(['name' => 'patients.read']);
         $permission2 = PermissionFactory::new()->createOne(['name' => 'patients.write']);
@@ -185,14 +177,13 @@ class UserManagementBusinessLogicTest extends TestCase
 
         $permissions = $user->getAllPermissions();
 
-        $this->assertCount(2, $permissions);
-        $this->assertTrue($permissions->contains($permission1));
-        $this->assertTrue($permissions->contains($permission2));
-    }
+        Assert::assertCount(2, $permissions);
+        Assert::assertTrue($permissions->contains($permission1));
+        Assert::assertTrue($permissions->contains($permission2));
+    });
 
-    public function testCanGetUserRoles(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('can get user roles', function (): void {
+$user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
         $role2 = RoleFactory::new()->createOne(['name' => 'admin']);
 
@@ -200,30 +191,28 @@ class UserManagementBusinessLogicTest extends TestCase
 
         $roles = $user->getRoleNames();
 
-        $this->assertCount(2, $roles);
-        $this->assertStringContainsString((string) 'doctor', (string) $roles);
-        $this->assertStringContainsString((string) 'admin', (string) $roles);
-    }
+        Assert::assertCount(2, $roles);
+        Assert::assertStringContainsString((string) 'doctor', (string) $roles);
+        Assert::assertStringContainsString((string) 'admin', (string) $roles);
+    });
 
-    public function testCanCheckUserIsSuperAdmin(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('can check user is super admin', function (): void {
+$user = UserFactory::new()->createOne();
         $superAdminRole = RoleFactory::new()->createOne(['name' => 'super-admin']);
 
         $user->assignRole($superAdminRole);
 
-        $this->assertTrue($user->hasRole('super-admin'));
-        $this->assertTrue($user->isSuperAdmin());
-    }
+        Assert::assertTrue($user->hasRole('super-admin'));
+        Assert::assertTrue($user->isSuperAdmin());
+    });
 
-    public function testCanUpdateUserProfile(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('can update user profile', function (): void {
+$user = UserFactory::new()->createOne();
         $createdProfile = $user->profile()->create([
             'phone' => '+39 123 456 7890',
             'address' => 'Via Roma 123, Milano',
         ]);
-        $this->assertInstanceOf(Profile::class, $createdProfile);
+        Assert::assertInstanceOf(Profile::class, $createdProfile);
         $profile = $createdProfile;
 
         $updatedData = [
@@ -234,87 +223,80 @@ class UserManagementBusinessLogicTest extends TestCase
 
         $profile->update($updatedData);
 
-        $this->assertTrue(DB::table('profiles')->where([
+        Assert::assertTrue(DB::table('profiles')->where([
             'id' => $profile->id,
             'phone' => '+39 987 654 3210',
             'address' => 'Via Milano 456, Roma',
             'birth_date' => '1985-10-20',
         ])->exists());
-    }
+    });
 
-    public function testCanDeleteUserWithProfile(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('can delete user with profile', function (): void {
+$user = UserFactory::new()->createOne();
         $createdProfile = $user->profile()->create([
             'phone' => '+39 123 456 7890',
         ]);
-        $this->assertInstanceOf(Profile::class, $createdProfile);
+        Assert::assertInstanceOf(Profile::class, $createdProfile);
         $profile = $createdProfile;
 
         $profile->forceDelete();
         $user->forceDelete();
 
-        $this->assertFalse(DB::table('users')->where(['id' => $user->id])->exists());
-        $this->assertFalse(DB::table('profiles')->where(['id' => $profile->id])->exists());
-    }
+        Assert::assertFalse(DB::table('users')->where(['id' => $user->id])->exists());
+        Assert::assertFalse(DB::table('profiles')->where(['id' => $profile->id])->exists());
+    });
 
-    public function testCanSoftDeleteUser(): void
-    {
-        $this->markTestSkipped('User model does not use SoftDeletes.');
-    }
+    test('can soft delete user', function (): void {
+$this->skipTest('User model does not use SoftDeletes.');
+    });
 
-    public function testCanRestoreSoftDeletedUser(): void
-    {
-        $this->markTestSkipped('User model does not use SoftDeletes.');
-    }
+    test('can restore soft deleted user', function (): void {
+$this->skipTest('User model does not use SoftDeletes.');
+    });
 
-    public function testCanForceDeleteUser(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('can force delete user', function (): void {
+$user = UserFactory::new()->createOne();
         $createdProfile = $user->profile()->create([
             'phone' => '+39 123 456 7890',
         ]);
-        $this->assertInstanceOf(Profile::class, $createdProfile);
+        Assert::assertInstanceOf(Profile::class, $createdProfile);
         $profile = $createdProfile;
 
         $profile->forceDelete();
         $user->forceDelete();
 
-        $this->assertFalse(DB::table('users')->where(['id' => $user->id])->exists());
-        $this->assertFalse(DB::table('profiles')->where(['id' => $profile->id])->exists());
-    }
+        Assert::assertFalse(DB::table('users')->where(['id' => $user->id])->exists());
+        Assert::assertFalse(DB::table('profiles')->where(['id' => $profile->id])->exists());
+    });
 
-    public function testCanSearchUsersByName(): void
-    {
-        $user1 = UserFactory::new()->createOne(['name' => 'Mario Rossi']);
+    test('can search users by name', function (): void {
+$user1 = UserFactory::new()->createOne(['name' => 'Mario Rossi']);
         $user2 = UserFactory::new()->createOne(['name' => 'Giulia Bianchi']);
         $user3 = UserFactory::new()->createOne(['name' => 'Marco Rossi']);
 
         $results = User::where('name', 'like', '%Rossi%')->get();
 
-        $this->assertCount(2, $results);
-        $this->assertTrue($results->contains($user1));
-        $this->assertTrue($results->contains($user3));
-        $this->assertFalse($results->contains($user2));
-    }
+        Assert::assertCount(2, $results);
+        Assert::assertTrue($results->contains($user1));
+        Assert::assertTrue($results->contains($user3));
+        Assert::assertFalse($results->contains($user2));
+    });
 
-    public function testCanSearchUsersByEmail(): void
-    {
-        $user1 = UserFactory::new()->createOne(['email' => 'mario@example.com']);
+    test('can search users by email', function (): void {
+$user1 = UserFactory::new()->createOne(['email' => 'mario@example.com']);
         $user2 = UserFactory::new()->createOne(['email' => 'giulia@test.com']);
         $user3 = UserFactory::new()->createOne(['email' => 'marco@example.org']);
 
         $results = User::where('email', 'like', '%@example%')->get();
 
-        $this->assertCount(2, $results);
-        $this->assertTrue($results->contains($user1));
-        $this->assertTrue($results->contains($user3));
-        $this->assertFalse($results->contains($user2));
-    }
+        Assert::assertCount(2, $results);
+        Assert::assertTrue($results->contains($user1));
+        Assert::assertTrue($results->contains($user3));
+        Assert::assertFalse($results->contains($user2));
+    });
 
-    public function testCanFilterUsersByRole(): void
-    {
-        $doctorRole = RoleFactory::new()->createOne(['name' => 'doctor']);
+    test('can filter users by role', function (): void {
+$doctorRole = RoleFactory::new()->createOne(['name' => 'doctor']);
         $nurseRole = RoleFactory::new()->createOne(['name' => 'nurse']);
 
         $user1 = UserFactory::new()->createOne();
@@ -327,15 +309,14 @@ class UserManagementBusinessLogicTest extends TestCase
 
         $doctors = User::role('doctor')->get();
 
-        $this->assertCount(2, $doctors);
-        $this->assertTrue($doctors->contains($user1));
-        $this->assertTrue($doctors->contains($user3));
-        $this->assertFalse($doctors->contains($user2));
-    }
+        Assert::assertCount(2, $doctors);
+        Assert::assertTrue($doctors->contains($user1));
+        Assert::assertTrue($doctors->contains($user3));
+        Assert::assertFalse($doctors->contains($user2));
+    });
 
-    public function testCanFilterUsersByPermission(): void
-    {
-        $role = RoleFactory::new()->createOne(['name' => 'doctor']);
+    test('can filter users by permission', function (): void {
+$role = RoleFactory::new()->createOne(['name' => 'doctor']);
         $permission = PermissionFactory::new()->createOne(['name' => 'patients.read']);
 
         $role->givePermissionTo($permission);
@@ -347,14 +328,13 @@ class UserManagementBusinessLogicTest extends TestCase
 
         $usersWithPermission = User::permission('patients.read')->get();
 
-        $this->assertCount(1, $usersWithPermission);
-        $this->assertTrue($usersWithPermission->contains($user1));
-        $this->assertFalse($usersWithPermission->contains($user2));
-    }
+        Assert::assertCount(1, $usersWithPermission);
+        Assert::assertTrue($usersWithPermission->contains($user1));
+        Assert::assertFalse($usersWithPermission->contains($user2));
+    });
 
-    public function testCanGetUsersWithRolesAndPermissions(): void
-    {
-        $role = RoleFactory::new()->createOne(['name' => 'doctor']);
+    test('can get users with roles and permissions', function (): void {
+$role = RoleFactory::new()->createOne(['name' => 'doctor']);
         $permission = PermissionFactory::new()->createOne(['name' => 'patients.read']);
 
         $role->givePermissionTo($permission);
@@ -364,16 +344,15 @@ class UserManagementBusinessLogicTest extends TestCase
 
         $userWithRelations = User::with(['roles', 'permissions'])->find($user->id);
 
-        $this->assertNotNull($userWithRelations);
-        $this->assertTrue($userWithRelations->relationLoaded('roles'));
-        $this->assertTrue($userWithRelations->relationLoaded('permissions'));
-        $this->assertCount(1, $userWithRelations->roles);
-        $this->assertCount(1, $userWithRelations->getAllPermissions());
-    }
+        Assert::assertNotNull($userWithRelations);
+        Assert::assertTrue($userWithRelations->relationLoaded('roles'));
+        Assert::assertTrue($userWithRelations->relationLoaded('permissions'));
+        Assert::assertCount(1, $userWithRelations->roles);
+        Assert::assertCount(1, $userWithRelations->getAllPermissions());
+    });
 
-    public function testCanValidateUserEmailUniqueness(): void
-    {
-        UserFactory::new()->createOne(['email' => 'test@example.com']);
+    test('can validate user email uniqueness', function (): void {
+UserFactory::new()->createOne(['email' => 'test@example.com']);
 
         try {
             User::create([
@@ -383,46 +362,43 @@ class UserManagementBusinessLogicTest extends TestCase
             ]);
             $this->fail('Expected QueryException was not thrown');
         } catch (QueryException $exception) {
-            $this->assertInstanceOf(QueryException::class, $exception);
+            Assert::assertInstanceOf(QueryException::class, $exception);
         }
-    }
+    });
 
-    public function testCanHandleUserEmailVerification(): void
-    {
-        $user = UserFactory::new()->createOne(['email_verified_at' => null]);
+    test('can handle user email verification', function (): void {
+$user = UserFactory::new()->createOne(['email_verified_at' => null]);
 
         $user->markEmailAsVerified();
 
-        $this->assertNotNull($user->email_verified_at);
-        $this->assertTrue($user->hasVerifiedEmail());
-    }
+        Assert::assertNotNull($user->email_verified_at);
+        Assert::assertTrue($user->hasVerifiedEmail());
+    });
 
-    public function testCanHandleUserStatusChanges(): void
-    {
-        $user = UserFactory::new()->createOne(['is_active' => true]);
+    test('can handle user status changes', function (): void {
+$user = UserFactory::new()->createOne(['is_active' => true]);
 
         $user->update(['is_active' => false]);
 
         $freshModel2 = $user->fresh();
-        $this->assertNotNull($freshModel2);
-        $this->assertFalse($freshModel2->is_active);
+        Assert::assertNotNull($freshModel2);
+        Assert::assertFalse($freshModel2->is_active);
 
         $user->update(['is_active' => true]);
 
         $freshModel3 = $user->fresh();
-        $this->assertNotNull($freshModel3);
-        $this->assertTrue($freshModel3->is_active);
-    }
+        Assert::assertNotNull($freshModel3);
+        Assert::assertTrue($freshModel3->is_active);
+    });
 
-    public function testCanHandleUserInfo(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('can handle user info', function (): void {
+$user = UserFactory::new()->createOne();
 
         $user->update(['lang' => 'it']);
 
-        $this->assertTrue(DB::table('users')->where([
+        Assert::assertTrue(DB::table('users')->where([
             'id' => $user->id,
             'lang' => 'it',
         ])->exists());
-    }
-}
+    });
+});

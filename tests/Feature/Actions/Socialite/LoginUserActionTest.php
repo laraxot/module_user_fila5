@@ -11,12 +11,14 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-class LoginUserActionTest extends TestCase
-{
-    public function testAuthenticatesConnectedSocialiteUserAndDispatchesEvent(): void
-    {
-        Event::fake([SocialiteUserConnected::class]);
+uses(\Modules\User\Tests\TestCase::class);
+
+describe('Login User Action', function (): void {
+    test('authenticates connected socialite user and dispatches event', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
+Event::fake([SocialiteUserConnected::class]);
 
         $user = UserFactory::new()->createOne();
 
@@ -29,15 +31,14 @@ class LoginUserActionTest extends TestCase
 
         $response = app(LoginUserAction::class)->execute($socialiteUser);
 
-        $this->assertInstanceOf(RedirectResponse::class, $response);
+        Assert::assertInstanceOf(RedirectResponse::class, $response);
         $this->assertAuthenticatedAs($user);
 
         Event::assertDispatched(SocialiteUserConnected::class);
-    }
+    });
 
-    public function testThrowsWhenRelatedUserIsNotAuthenticatable(): void
-    {
-        $socialiteUser = new SocialiteUser([
+    test('throws when related user is not authenticatable', function (): void {
+$socialiteUser = new SocialiteUser([
             'provider' => 'test-provider',
             'provider_id' => 'provider-id-2',
             'email' => 'not-authenticatable@example.com',
@@ -49,13 +50,12 @@ class LoginUserActionTest extends TestCase
             app(LoginUserAction::class)->execute($socialiteUser);
             $this->fail('Expected LogicException was not thrown');
         } catch (\LogicException $exception) {
-            $this->assertSame('User instance must implement Authenticatable.', $exception->getMessage());
+            Assert::assertSame('User instance must implement Authenticatable.', $exception->getMessage());
         }
-    }
+    });
 
-    public function testRedirectsToIntendedPageWhenAvailable(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('redirects to intended page when available', function (): void {
+$user = UserFactory::new()->createOne();
 
         $socialiteUser = new SocialiteUser([
             'provider' => 'google',
@@ -66,13 +66,12 @@ class LoginUserActionTest extends TestCase
 
         $response = app(LoginUserAction::class)->execute($socialiteUser);
 
-        $this->assertInstanceOf(RedirectResponse::class, $response);
+        Assert::assertInstanceOf(RedirectResponse::class, $response);
         $this->assertAuthenticatedAs($user);
-    }
+    });
 
-    public function testDispatchesEventWithCorrectSocialiteUserInstance(): void
-    {
-        Event::fake();
+    test('dispatches event with correct socialite user instance', function (): void {
+Event::fake();
 
         $user = UserFactory::new()->createOne();
 
@@ -89,11 +88,10 @@ class LoginUserActionTest extends TestCase
             return $event->socialiteUser->provider === $socialiteUser->provider
                 && $event->socialiteUser->provider_id === $socialiteUser->provider_id;
         });
-    }
+    });
 
-    public function testAuthenticatesDifferentUsersIndependently(): void
-    {
-        $user1 = UserFactory::new()->createOne(['email' => 'user1-'.uniqid().'@example.com']);
+    test('authenticates different users independently', function (): void {
+$user1 = UserFactory::new()->createOne(['email' => 'user1-'.uniqid().'@example.com']);
         $user2 = UserFactory::new()->createOne(['email' => 'user2-'.uniqid().'@example.com']);
 
         $socialiteUser1 = new SocialiteUser([
@@ -115,11 +113,10 @@ class LoginUserActionTest extends TestCase
 
         app(LoginUserAction::class)->execute($socialiteUser2);
         $this->assertAuthenticatedAs($user2);
-    }
+    });
 
-    public function testReturnsRedirectResponseInstance(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('returns redirect response instance', function (): void {
+$user = UserFactory::new()->createOne();
 
         $socialiteUser = new SocialiteUser([
             'provider' => 'test',
@@ -130,12 +127,11 @@ class LoginUserActionTest extends TestCase
 
         $response = app(LoginUserAction::class)->execute($socialiteUser);
 
-        $this->assertInstanceOf(RedirectResponse::class, $response);
-    }
+        Assert::assertInstanceOf(RedirectResponse::class, $response);
+    });
 
-    public function testHandlesNullUserAssertionGracefully(): void
-    {
-        $socialiteUser = new SocialiteUser([
+    test('handles null user assertion gracefully', function (): void {
+$socialiteUser = new SocialiteUser([
             'provider' => 'test',
             'provider_id' => 'test-null',
             'email' => 'test-null-'.uniqid().'@example.com',
@@ -146,13 +142,12 @@ class LoginUserActionTest extends TestCase
             app(LoginUserAction::class)->execute($socialiteUser);
             $this->fail('Expected InvalidArgumentException was not thrown');
         } catch (\InvalidArgumentException $exception) {
-            $this->assertInstanceOf(\InvalidArgumentException::class, $exception);
+            Assert::assertInstanceOf(\InvalidArgumentException::class, $exception);
         }
-    }
+    });
 
-    public function testPreservesUserAttributesAfterLogin(): void
-    {
-        $user = UserFactory::new()->createOne([
+    test('preserves user attributes after login', function (): void {
+$user = UserFactory::new()->createOne([
             'email' => 'preserve-'.uniqid().'@example.com',
             'name' => 'John Doe',
             'is_active' => true,
@@ -168,9 +163,9 @@ class LoginUserActionTest extends TestCase
         app(LoginUserAction::class)->execute($socialiteUser);
 
         $authenticatedUser = auth()->user();
-        $this->assertNotNull($authenticatedUser);
-        $this->assertSame($user->email, $authenticatedUser->email);
-        $this->assertSame($user->name, $authenticatedUser->name);
-        $this->assertTrue($authenticatedUser->is_active);
-    }
-}
+        Assert::assertNotNull($authenticatedUser);
+        Assert::assertSame($user->email, $authenticatedUser->email);
+        Assert::assertSame($user->name, $authenticatedUser->name);
+        Assert::assertTrue($authenticatedUser->is_active);
+    });
+});

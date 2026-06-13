@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Feature;
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
@@ -11,84 +9,84 @@ use Modules\User\Models\Profile;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-final class AuthComponentsTest extends TestCase
-{
-    public function testAuthComponentsExistAndWorkCorrectly(): void
-    {
+use function Pest\Laravel\actingAs;
+use function Pest\Laravel\get;
+
+uses(\Modules\User\Tests\TestCase::class);
+
+describe('Auth components', function (): void {
+    test('auth components exist and work correctly', function (): void {
         Assert::assertTrue(View::exists('components.auth-session-status'));
         Assert::assertTrue(View::exists('user::components.auth-header'));
         Assert::assertTrue(View::exists('user::components.auth-session-status'));
-    }
+    });
 
-    public function testAuthLayoutComponentsExistAndWorkCorrectly(): void
-    {
+    test('auth layout components exist and work correctly', function (): void {
         Assert::assertTrue(View::exists('components.layouts.auth'));
         Assert::assertTrue(View::exists('user::layouts.auth'));
-    }
+    });
 
-    public function testLoginPageLoadsCorrectly(): void
-    {
-        $this->get('/it/auth/login')->assertStatus(200);
-    }
+    test('login page loads correctly', function (): void {
+        $response = get('/it/auth/login');
+        Assert::assertSame(200, $response->status());
+    });
 
-    public function testRegisterPageLoadsCorrectly(): void
-    {
-        $this->get('/it/auth/register')->assertStatus(200);
-    }
+    test('register page loads correctly', function (): void {
+        $response = get('/it/auth/register');
+        Assert::assertSame(200, $response->status());
+    });
 
-    public function testAuthSessionStatusComponentRendersCorrectly(): void
-    {
+    test('auth session status component renders correctly', function (): void {
         $html = view('components.auth-session-status', ['status' => 'Test status'])->render();
 
         Assert::assertIsString($html);
         Assert::assertNotEmpty($html);
-    }
+    });
 
-    public function testAuthHeaderComponentExistsAndRenders(): void
-    {
+    test('auth header component exists and renders', function (): void {
         Assert::assertTrue(View::exists('user::components.auth-header'));
         $html = view('user::components.auth-header', [
             'title' => 'Login Test',
             'description' => 'Test description',
         ])->render();
 
-        Assert::assertStringContainsString((string) 'Login Test', (string) $html);
-        Assert::assertStringContainsString((string) 'Test description', (string) $html);
-    }
+        Assert::assertStringContainsString('Login Test', $html);
+        Assert::assertStringContainsString('Test description', $html);
+    });
 
-    public function testLoginFormComponentsWorkAfterReorganization(): void
-    {
-        $response = $this->get('/it/auth/login');
+    test('login form components work after reorganization', function (): void {
+        $response = get('/it/auth/login');
 
         Assert::assertSame(200, $response->status());
-        $content = $response->getContent() ?? '';
+        $content = (string) $response->getContent();
         Assert::assertTrue(
-            str_contains((string) $content, 'Login')
-            || str_contains((string) $content, 'login')
-            || str_contains((string) $content, 'Accedi')
-            || str_contains((string) $content, 'accedi')
+            str_contains($content, 'Login')
+            || str_contains($content, 'login')
+            || str_contains($content, 'Accedi')
+            || str_contains($content, 'accedi')
         );
-    }
+    });
 
-    public function testPasswordConfirmationUsesReorganizedComponents(): void
-    {
-        $user = $this->createTestUser();
+    test('password confirmation uses reorganized components', function (): void {
+        $user = createTestUser();
 
         try {
-            $this->actingAs($user)
-                ->get('/it/auth/password/confirm')
-                ->assertStatus(200);
+            actingAs($user);
+            $response = get('/it/auth/password/confirm');
+            Assert::assertSame(200, $response->status());
         } catch (\Throwable $e) {
-            $this->markTestSkipped('Password confirm route unavailable in test env: '.$e->getMessage());
+            skip(
+                'Password confirm route unavailable in test env: '.$e->getMessage()
+            );
         }
-    }
+    });
 
-    public function testProfilePagesUseReorganizedComponentsCorrectly(): void
-    {
-        $user = $this->createTestUser();
+    test('profile pages use reorganized components', function (): void {
+        $user = createTestUser();
 
         if (class_exists(Profile::class)) {
-            $hasUuid = Schema::connection('user')->hasColumn('profiles', 'uuid');
+            $hasUuid = Schema::connection('user')
+                ->hasColumn('profiles', 'uuid');
             $profileData = [
                 'id' => $user->id,
                 'user_id' => $user->id,
@@ -106,11 +104,13 @@ final class AuthComponentsTest extends TestCase
         }
 
         try {
-            $this->actingAs($user, 'web')
-                ->get('/it/profile/edit')
-                ->assertStatus(200);
+            actingAs($user, 'web');
+            $response = get('/it/profile/edit');
+            Assert::assertSame(200, $response->status());
         } catch (\Throwable $e) {
-            $this->markTestSkipped('Profile edit route unavailable in test env: '.$e->getMessage());
+            skip(
+                'Profile edit route unavailable in test env: '.$e->getMessage()
+            );
         }
-    }
-}
+    });
+});

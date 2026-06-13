@@ -5,40 +5,26 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Feature\Database\Migrations;
 
 use Modules\User\Tests\TestCase;
-
 use function Safe\exec;
 use function Safe\file_get_contents;
 use function Safe\glob;
+use PHPUnit\Framework\Assert;
 
-/**
- * @return list<string>
- */
-function userMigrationFiles(): array
-{
-    $basePath = dirname(__DIR__, 4).'/database/migrations';
-    /** @var list<string> $files */
-    $files = glob($basePath.'/*.php');
-    sort($files);
+uses(\Modules\User\Tests\TestCase::class);
 
-    return $files;
-}
-
-class UserMigrationSyntaxTest extends TestCase
-{
-    public function testUserMigrationsDoNotContainMergeConflictMarkers(): void
-    {
-        foreach (userMigrationFiles() as $migrationFile) {
+describe('User Migration Syntax', function (): void {
+    test('user migrations do not contain merge conflict markers', function (): void {
+foreach (userMigrationFiles() as $migrationFile) {
             $contents = file_get_contents($migrationFile);
 
-            $this->assertStringNotContainsString('<<<<<<<', $contents, $migrationFile);
-            $this->assertStringNotContainsString('=======', $contents, $migrationFile);
-            $this->assertStringNotContainsString('>>>>>>>', $contents, $migrationFile);
+            Assert::assertStringNotContainsString('<<<<<<<', $contents, $migrationFile);
+            Assert::assertStringNotContainsString('=======', $contents, $migrationFile);
+            Assert::assertStringNotContainsString('>>>>>>>', $contents, $migrationFile);
         }
-    }
+    });
 
-    public function testUserMigrationsHaveValidPhpSyntax(): void
-    {
-        foreach (userMigrationFiles() as $migrationFile) {
+    test('user migrations have valid php syntax', function (): void {
+foreach (userMigrationFiles() as $migrationFile) {
             $output = [];
             $exitCode = 0;
 
@@ -53,7 +39,7 @@ class UserMigrationSyntaxTest extends TestCase
                 }
             }
 
-            $this->assertSame(0, $exitCode, implode(PHP_EOL, $lines));
+            Assert::assertSame(0, $exitCode, implode(PHP_EOL, $lines));
         }
-    }
-}
+    });
+});

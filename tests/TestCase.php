@@ -22,6 +22,7 @@ use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
 use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Models\Device;
+use Modules\User\Models\OauthClient;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\Tenant;
@@ -53,15 +54,11 @@ use function Safe\json_encode;
  * @property Google2FA|null             $google2fa
  * @property Command|null               $command
  * @property ListUsers|null             $listUsersPage
- * @property Widget|null                $widget
  * @property CreateUser|null            $createUserPage
  * @property Device|null                $device
- * @property Google2FA|null             $google2fa
- * @property Command|null               $command
  * @property Action|null                $action
+ * @property Widget|null                $widget
  * @property Collection<int, User>|null $users
- *
- * @method void markTestSkipped(string $message = '')
  */
 abstract class TestCase extends XotBaseTestCase
 {
@@ -103,10 +100,6 @@ abstract class TestCase extends XotBaseTestCase
     public ?Google2FA $google2fa = null;
 
     public ?Command $command = null;
-
-    public ?Action $action = null;
-
-    public ?Widget $widget = null;
 
     public ?CreateUser $createUserPage = null;
 
@@ -338,7 +331,7 @@ abstract class TestCase extends XotBaseTestCase
     public function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
     {
         if (! $this->userTableHasColumn($table, $column)) {
-            $this->markTestSkipped('' !== $reason ? $reason : "Column {$table}.{$column} missing on user connection.");
+            $this->skipTest('' !== $reason ? $reason : "Column {$table}.{$column} missing on user connection.");
         }
     }
 
@@ -350,18 +343,13 @@ abstract class TestCase extends XotBaseTestCase
     public function skipUnlessUserTable(string $table, string $reason = ''): void
     {
         if (! $this->userTableExists($table)) {
-            $this->markTestSkipped('' !== $reason ? $reason : "Table {$table} missing on user connection.");
+            $this->skipTest('' !== $reason ? $reason : "Table {$table} missing on user connection.");
         }
     }
 
-    public function permissionRolePivotTable(): string
+    public function skipUnlessTenantColumn(string $column, string $reason = ''): void
     {
-        return (string) config('permission.table_names.model_has_roles', 'model_has_role');
-    }
-
-    public function permissionPivotTable(): string
-    {
-        return (string) config('permission.table_names.model_has_permissions', 'model_has_permission');
+        $this->skipUnlessUserColumn('tenants', $column, $reason);
     }
 
     public function skipUnlessUsersTableReady(string $reason = ''): void
@@ -381,6 +369,44 @@ abstract class TestCase extends XotBaseTestCase
         $this->skipUnlessUserTable($table, '' !== $reason ? $reason : "Permission pivot table {$table} missing on user connection.");
     }
 
+    public function skipUnlessUserSoftDeletes(string $reason = ''): void
+    {
+        if (! in_array(
+            \Illuminate\Database\Eloquent\SoftDeletes::class,
+            \class_uses_recursive(User::class),
+            true
+        )) {
+            $this->skipTest('' !== $reason ? $reason : 'User model does not use SoftDeletes.');
+        }
+    }
+
+    public function skipUnlessTeamUsersRelationSupported(): void
+    {
+        if (! $this->userTableHasColumn('team_user', 'permissions')) {
+            $this->skipTest('team_user.permissions column missing — Team::users() pivot not loadable.');
+        }
+    }
+
+    public function skipLegacyRedirectPersistence(): void
+    {
+        if (
+            Schema::connection('user')->hasColumn('oauth_clients', 'redirect')
+            && Schema::connection('user')->hasColumn('oauth_clients', 'redirect_uris')
+        ) {
+            $this->skipTest('oauth_clients legacy redirect columns require redirect_uris sync not performed by Create*ClientAction.');
+        }
+    }
+
+    public function permissionRolePivotTable(): string
+    {
+        return (string) config('permission.table_names.model_has_roles', 'model_has_role');
+    }
+
+    public function permissionPivotTable(): string
+    {
+        return (string) config('permission.table_names.model_has_permissions', 'model_has_permission');
+    }
+
     /**
      * @param array<string, mixed> $attributes
      */
@@ -394,22 +420,47 @@ abstract class TestCase extends XotBaseTestCase
         return $user;
     }
 
-    public function skipUnlessUserSoftDeletes(string $reason = ''): void
+    public function createMockSocialiteUser(?string $name, ?string $email): \Laravel\Socialite\Contracts\User
     {
-        if (! in_array(
-            \Illuminate\Database\Eloquent\SoftDeletes::class,
-            \class_uses_recursive(User::class),
-            true
-        )) {
-            $this->markTestSkipped('' !== $reason ? $reason : 'User model does not use SoftDeletes.');
-        }
+        $mock = $this->createUnitMock(\Laravel\Socialite\Contracts\User::class);
+        $mock->method('getName')->willReturn($name);
+        $mock->method('getEmail')->willReturn($email);
+
+        return $mock;
     }
 
-    public function skipUnlessTeamUsersRelationSupported(): void
+    /**
+     * @param array<string, mixed> $overrides
+     */
+    public function oauthClientTestPersistedClient(array $overrides = []): OauthClient
     {
-        if (! $this->userTableHasColumn('team_user', 'permissions')) {
-            $this->markTestSkipped('team_user.permissions column missing — Team::users() pivot not loadable.');
+        $clientId = (string) Str::uuid();
+        $redirect = 'https://example.test/callback/'.uniqid('', true);
+
+        $payload = array_merge([
+            'id' => $clientId,
+            'user_id' => null,
+            'name' => 'Test OAuth Client '.uniqid('', true),
+            'secret' => 'test-secret',
+            'provider' => 'users',
+            'redirect' => $redirect,
+            'redirect_uris' => json_encode([$redirect]),
+            'grant_types' => json_encode(['authorization_code', 'refresh_token']),
+            'personal_access_client' => 0,
+            'password_client' => 0,
+            'revoked' => 0,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ], $overrides);
+
+        if (Schema::connection('user')->hasColumn('oauth_clients', 'owner_id')) {
+            $payload['owner_id'] = $payload['owner_id'] ?? $payload['user_id'] ?? null;
+            $payload['owner_type'] = $payload['owner_type'] ?? null;
         }
+
+        DB::connection('user')->table('oauth_clients')->insert($payload);
+
+        return OauthClient::query()->findOrFail($clientId);
     }
 
     /**

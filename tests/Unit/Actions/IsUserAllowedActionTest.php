@@ -10,6 +10,7 @@ use PHPUnit\Framework\Assert;
 
 describe('IsUserAllowedAction', function (): void {
     beforeEach(function (): void {
+    /** @var \Modules\User\Tests\TestCase $this */
         config(['filament-socialite.domain_allowlist' => []]);
     });
 

@@ -10,12 +10,16 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Enums\UserType;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use function Pest\Laravel\get;
+use function Pest\Laravel\delete;
 
-class UserTest extends TestCase
-{
-    public function testUserCanBeCreated(): void
-    {
-        try {
+uses(\Modules\User\Tests\TestCase::class);
+
+describe('User', function (): void {
+    test('user can be created', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
+try {
             $user = UserFactory::new()->createOne([
                 'type' => UserType::MasterAdmin,
                 'email' => fake()->unique()->safeEmail(),
@@ -23,56 +27,52 @@ class UserTest extends TestCase
             ]);
             \assert($user instanceof User);
 
-            $this->assertInstanceOf(User::class, $user);
-            $this->assertIsString($user->email);
+            Assert::assertInstanceOf(User::class, $user);
+            Assert::assertIsString($user->email);
             $this->assertNotSame('', $user->email);
-            $this->assertSame(UserType::MasterAdmin, $user->type);
+            Assert::assertSame(UserType::MasterAdmin, $user->type);
         } catch (\Throwable) {
-            $this->markTestSkipped('User type aliases (e.g. master_admin) are not configured in this install.');
+            $this->skipTest('User type aliases (e.g. master_admin) are not configured in this install.');
         }
-    }
+    });
 
-    public function testUserHasCorrectTypeCasting(): void
-    {
-        try {
+    test('user has correct type casting', function (): void {
+try {
             $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
             \assert($user instanceof User);
 
             $type = $user->type;
             \assert($type instanceof UserType);
 
-            $this->assertInstanceOf(UserType::class, $type);
-            $this->assertSame('master_admin', $type->value);
+            Assert::assertInstanceOf(UserType::class, $type);
+            Assert::assertSame('master_admin', $type->value);
         } catch (\Throwable) {
-            $this->markTestSkipped('User type aliases (e.g. master_admin) are not configured in this install.');
+            $this->skipTest('User type aliases (e.g. master_admin) are not configured in this install.');
         }
-    }
+    });
 
-    public function testUserPasswordIsHashed(): void
-    {
-        $user = UserFactory::new()->createOne(['password' => Hash::make('password123')]);
+    test('user password is hashed', function (): void {
+$user = UserFactory::new()->createOne(['password' => Hash::make('password123')]);
         \assert($user instanceof User);
 
-        $this->assertTrue(Hash::check('password123', $user->password));
-        $this->assertFalse(Hash::check('wrongpassword', $user->password));
-    }
+        Assert::assertTrue(Hash::check('password123', $user->password));
+        Assert::assertFalse(Hash::check('wrongpassword', $user->password));
+    });
 
-    public function testUserCanChangePassword(): void
-    {
-        $user = UserFactory::new()->createOne(['password' => Hash::make('password123')]);
+    test('user can change password', function (): void {
+$user = UserFactory::new()->createOne(['password' => Hash::make('password123')]);
         \assert($user instanceof User);
 
         $user->update(['password' => Hash::make('newpassword123')]);
 
         $freshUser = $user->fresh();
         \assert($freshUser instanceof User);
-        $this->assertTrue(Hash::check('newpassword123', $freshUser->password));
-        $this->assertFalse(Hash::check('password123', $freshUser->password));
-    }
+        Assert::assertTrue(Hash::check('newpassword123', $freshUser->password));
+        Assert::assertFalse(Hash::check('password123', $freshUser->password));
+    });
 
-    public function testUserCanBeUpdated(): void
-    {
-        try {
+    test('user can be updated', function (): void {
+try {
             $user = UserFactory::new()->createOne([
                 'type' => UserType::MasterAdmin,
                 'email' => fake()->unique()->safeEmail(),
@@ -87,15 +87,14 @@ class UserTest extends TestCase
 
             $user->refresh();
 
-            $this->assertSame($updatedEmail, $user->email);
+            Assert::assertSame($updatedEmail, $user->email);
         } catch (\Throwable) {
-            $this->markTestSkipped('User type aliases (e.g. master_admin) are not configured in this install.');
+            $this->skipTest('User type aliases (e.g. master_admin) are not configured in this install.');
         }
-    }
+    });
 
-    public function testUserCanBeDeleted(): void
-    {
-        $this->skipUnlessDirectPermissionSupported();
+    test('user can be deleted', function (): void {
+$this->skipUnlessDirectPermissionSupported();
 
         $user = UserFactory::new()->createOne();
         \assert($user instanceof User);
@@ -104,51 +103,47 @@ class UserTest extends TestCase
 
         $user->delete();
 
-        $this->assertNull(User::find($userId));
-    }
+        Assert::assertNull(User::find($userId));
+    });
 
-    public function testUserHasFillableAttributes(): void
-    {
-        $factory = UserFactory::new();
+    test('user has fillable attributes', function (): void {
+$factory = UserFactory::new();
         \assert($factory instanceof Factory);
         $user = $factory->make();
         \assert($user instanceof User);
 
         $fillable = $user->getFillable();
 
-        $this->assertContains('email', $fillable);
-        $this->assertContains('password', $fillable);
-        $this->assertContains('type', $fillable);
-    }
+        Assert::assertContains('email', $fillable);
+        Assert::assertContains('password', $fillable);
+        Assert::assertContains('type', $fillable);
+    });
 
-    public function testUserHasHiddenAttributes(): void
-    {
-        $factory = UserFactory::new();
+    test('user has hidden attributes', function (): void {
+$factory = UserFactory::new();
         \assert($factory instanceof Factory);
         $user = $factory->make();
         \assert($user instanceof User);
 
         $hidden = $user->getHidden();
 
-        $this->assertContains('password', $hidden);
-        $this->assertContains('remember_token', $hidden);
-    }
+        Assert::assertContains('password', $hidden);
+        Assert::assertContains('remember_token', $hidden);
+    });
 
-    public function testUserCanBeFoundByEmail(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('user can be found by email', function (): void {
+$user = UserFactory::new()->createOne();
         \assert($user instanceof User);
 
         $foundUser = User::where('email', $user->email)->first();
 
         \assert($foundUser instanceof User);
-        $this->assertInstanceOf(User::class, $foundUser);
-        $this->assertSame($user->id, $foundUser->id);
-    }
+        Assert::assertInstanceOf(User::class, $foundUser);
+        Assert::assertSame($user->id, $foundUser->id);
+    });
 
-    public function testUserCanBeFoundByType(): void
-    {
-        try {
+    test('user can be found by type', function (): void {
+try {
             $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
             \assert($user instanceof User);
 
@@ -157,18 +152,17 @@ class UserTest extends TestCase
                 ->where('id', $user->id)
                 ->get();
 
-            $this->assertCount(1, $admins);
+            Assert::assertCount(1, $admins);
             $firstAdmin = $admins->first();
             \assert($firstAdmin instanceof User);
-            $this->assertSame($user->id, $firstAdmin->id);
+            Assert::assertSame($user->id, $firstAdmin->id);
         } catch (\Throwable) {
-            $this->markTestSkipped('User type aliases (e.g. master_admin) are not configured in this install.');
+            $this->skipTest('User type aliases (e.g. master_admin) are not configured in this install.');
         }
-    }
+    });
 
-    public function testUserCanBeCreatedWithDifferentTypes(): void
-    {
-        try {
+    test('user can be created with different types', function (): void {
+try {
             $factory = UserFactory::new();
             \assert($factory instanceof Factory);
 
@@ -177,24 +171,22 @@ class UserTest extends TestCase
             \assert($boUser instanceof User);
             \assert($customerUser instanceof User);
 
-            $this->assertSame(UserType::BoUser, $boUser->type);
-            $this->assertSame(UserType::CustomerUser, $customerUser->type);
+            Assert::assertSame(UserType::BoUser, $boUser->type);
+            Assert::assertSame(UserType::CustomerUser, $customerUser->type);
         } catch (\Throwable) {
-            $this->markTestSkipped('User type aliases are not configured in this install.');
+            $this->skipTest('User type aliases are not configured in this install.');
         }
-    }
+    });
 
-    public function testUserHasTimestamps(): void
-    {
-        $user = UserFactory::new()->createOne();
+    test('user has timestamps', function (): void {
+$user = UserFactory::new()->createOne();
         \assert($user instanceof User);
 
-        $this->assertNotNull($user->created_at);
-        $this->assertNotNull($user->updated_at);
-    }
+        Assert::assertNotNull($user->created_at);
+        Assert::assertNotNull($user->updated_at);
+    });
 
-    public function testUserSoftDeleteFunctionality(): void
-    {
-        $this->markTestSkipped('User model does not implement SoftDeletes trait');
-    }
-}
+    test('user soft delete functionality', function (): void {
+$this->skipTest('User model does not implement SoftDeletes trait');
+    });
+});

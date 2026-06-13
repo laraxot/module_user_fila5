@@ -6,12 +6,13 @@ namespace Modules\User\Tests\Feature;
 
 use Modules\User\Datas\PasswordData;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-class PasswordDataLabelsTest extends TestCase
-{
-    public function testPasswordDataLabelsAreTranslated(): void
-    {
-        app()->setLocale('it');
+uses(\Modules\User\Tests\TestCase::class);
+
+describe('Password Data Labels', function (): void {
+    test('password data labels are translated', function (): void {
+app()->setLocale('it');
 
         $passwordData = PasswordData::make();
         $passwordData->setFieldName('password');
@@ -19,12 +20,11 @@ class PasswordDataLabelsTest extends TestCase
         $passwordComponent = $passwordData->getPasswordFormComponent('password');
         $confirmationComponent = $passwordData->getPasswordConfirmationFormComponent();
 
-        $this->assertSame('Parola d\'ordine', $passwordComponent->getLabel());
-        $this->assertSame('Conferma Password', $confirmationComponent->getLabel());
-    }
+        Assert::assertSame('Parola d\'ordine', $passwordComponent->getLabel());
+        Assert::assertSame('Conferma Password', $confirmationComponent->getLabel());
+    });
 
-    public function testLoginFormLabelsAreTranslated(): void
-    {
-        $this->markTestSkipped('Login Livewire form labels — coperto da widget Filament LoginWidgetTest');
-    }
-}
+    test('login form labels are translated', function (): void {
+$this->skipTest('Login Livewire form labels — coperto da widget Filament LoginWidgetTest');
+    });
+});

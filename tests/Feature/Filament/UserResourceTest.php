@@ -10,14 +10,12 @@ use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
+use function Pest\Laravel\actingAs;
 
-final class UserResourceTest extends TestCase
-{
-    protected function setUp(): void
-    {
-        parent::setUp();
+uses(\Modules\User\Tests\TestCase::class);
 
-        $this->setupFilamentAdminPanel();
+beforeEach(function (): void {
+$this->setupFilamentAdminPanel();
 
         $this->admin = UserFactory::new()->createOne([
             'type' => UserType::MasterAdmin,
@@ -30,57 +28,48 @@ final class UserResourceTest extends TestCase
         ]);
 
         $this->actingAs($this->requireAdmin());
-    }
+});
 
-    public function testHasCorrectModelClass(): void
-    {
-        Assert::assertSame(XotData::make()->getUserClass(), UserResource::getModel());
-    }
+describe('User Resource', function (): void {
+    test('has correct model class', function (): void {
+Assert::assertSame(XotData::make()->getUserClass(), UserResource::getModel());
+    });
 
-    public function testHasCorrectSlug(): void
-    {
-        Assert::assertSame('users', UserResource::getSlug());
-    }
+    test('has correct slug', function (): void {
+Assert::assertSame('users', UserResource::getSlug());
+    });
 
-    public function testHasNavigationConfiguration(): void
-    {
-        $navigationBadge = UserResource::getNavigationBadge();
+    test('has navigation configuration', function (): void {
+$navigationBadge = UserResource::getNavigationBadge();
         Assert::assertNotNull($navigationBadge);
-    }
+    });
 
-    public function testCanGetNavigationItems(): void
-    {
-        $navigationItems = UserResource::getNavigationItems();
+    test('can get navigation items', function (): void {
+$navigationItems = UserResource::getNavigationItems();
         Assert::assertNotEmpty($navigationItems);
-    }
+    });
 
-    public function testListUsersPageCoveredByDedicatedTest(): void
-    {
-        $this->markTestSkipped('Livewire table UserResource richiede panel admin completo — coperto da Feature/Filament/Pages/ListUsersTest');
-    }
+    test('list users page covered by dedicated test', function (): void {
+$this->skipTest('Livewire table UserResource richiede panel admin completo — coperto da Feature/Filament/Pages/ListUsersTest');
+    });
 
-    public function testCreateUserPageCoveredByDedicatedTest(): void
-    {
-        $this->markTestSkipped('Livewire create UserResource richiede panel admin completo — coperto da Feature/Filament/Pages/CreateUserTest');
-    }
+    test('create user page covered by dedicated test', function (): void {
+$this->skipTest('Livewire create UserResource richiede panel admin completo — coperto da Feature/Filament/Pages/CreateUserTest');
+    });
 
-    public function testEditUserPageCoveredByDedicatedTest(): void
-    {
-        $this->markTestSkipped('Livewire edit UserResource richiede panel admin completo + policy');
-    }
+    test('edit user page covered by dedicated test', function (): void {
+$this->skipTest('Livewire edit UserResource richiede panel admin completo + policy');
+    });
 
-    public function testViewUserPageCoveredByDedicatedTest(): void
-    {
-        $this->markTestSkipped('Livewire view UserResource richiede panel admin completo + policy');
-    }
+    test('view user page covered by dedicated test', function (): void {
+$this->skipTest('Livewire view UserResource richiede panel admin completo + policy');
+    });
 
-    public function testBulkActionsRequiresFullAdminPanel(): void
-    {
-        $this->markTestSkipped('Bulk actions UserResource richiedono panel admin completo + azioni registrate');
-    }
+    test('bulk actions requires full admin panel', function (): void {
+$this->skipTest('Bulk actions UserResource richiedono panel admin completo + azioni registrate');
+    });
 
-    public function testSecurityCoveredByCreateUserTest(): void
-    {
-        $this->markTestSkipped('Security Livewire UserResource richiede panel admin completo — validazione coperta da CreateUserTest');
-    }
-}
+    test('security covered by create user test', function (): void {
+$this->skipTest('Security Livewire UserResource richiede panel admin completo — validazione coperta da CreateUserTest');
+    });
+});

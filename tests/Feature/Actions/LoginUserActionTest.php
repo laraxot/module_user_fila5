@@ -11,12 +11,14 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-class LoginUserActionTest extends TestCase
-{
-    public function testAuthenticatesConnectedSocialiteUserAndDispatchesEvent(): void
-    {
-        Event::fake([SocialiteUserConnected::class]);
+uses(\Modules\User\Tests\TestCase::class);
+
+describe('Login User Action', function (): void {
+    test('authenticates connected socialite user and dispatches event', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
+Event::fake([SocialiteUserConnected::class]);
 
         $user = UserFactory::new()->createOne();
 
@@ -29,15 +31,14 @@ class LoginUserActionTest extends TestCase
 
         $response = app(LoginUserAction::class)->execute($socialiteUser);
 
-        $this->assertInstanceOf(RedirectResponse::class, $response);
+        Assert::assertInstanceOf(RedirectResponse::class, $response);
         $this->assertAuthenticatedAs($user);
 
         Event::assertDispatched(SocialiteUserConnected::class);
-    }
+    });
 
-    public function testThrowsWhenRelatedUserIsNotAuthenticatable(): void
-    {
-        $socialiteUser = new SocialiteUser([
+    test('throws when related user is not authenticatable', function (): void {
+$socialiteUser = new SocialiteUser([
             'provider' => 'test-provider',
             'provider_id' => 'provider-id-2',
             'email' => 'not-authenticatable@example.com',
@@ -49,7 +50,7 @@ class LoginUserActionTest extends TestCase
             app(LoginUserAction::class)->execute($socialiteUser);
             $this->fail('Expected LogicException was not thrown');
         } catch (\LogicException $exception) {
-            $this->assertSame('User instance must implement Authenticatable.', $exception->getMessage());
+            Assert::assertSame('User instance must implement Authenticatable.', $exception->getMessage());
         }
-    }
-}
+    });
+});

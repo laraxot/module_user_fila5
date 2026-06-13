@@ -10,11 +10,13 @@ use Modules\User\Datas\SocialiteUserAttributesData;
 use Modules\User\Enums\Enums\LanguageEnum as NestedLanguageEnum;
 use Modules\User\Enums\LanguageEnum;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-class UserDatasAndEnumsCoverageTest extends TestCase
-{
-    public function testCreatesSocialiteUserAttributesDataWithExpectedValues(): void
-    {
+uses(\Modules\User\Tests\TestCase::class);
+
+describe('User Datas And Enums Coverage', function (): void {
+    test('creates socialite user attributes data with expected values', function (): void {
+        /** @var TestCase $this */
         $data = new SocialiteUserAttributesData(
             name: 'Mario',
             firstName: 'Mario',
@@ -23,13 +25,13 @@ class UserDatasAndEnumsCoverageTest extends TestCase
             provider: 'github',
         );
 
-        $this->assertSame('Mario', $data->name);
-        $this->assertSame('Rossi', $data->lastName);
-        $this->assertSame('github', $data->provider);
-    }
+        Assert::assertSame('Mario', $data->name);
+        Assert::assertSame('Rossi', $data->lastName);
+        Assert::assertSame('github', $data->provider);
+    });
 
-    public function testBuildsPermissionDataFromPermissionConfig(): void
-    {
+    test('builds permission data from permission config', function (): void {
+        /** @var TestCase $this */
         config([
             'permission' => [
                 'models' => [
@@ -64,14 +66,14 @@ class UserDatasAndEnumsCoverageTest extends TestCase
 
         $data = PermissionData::make();
 
-        $this->assertInstanceOf(PermissionData::class, $data);
-        $this->assertStringContainsString('Role', (string) $data->models->role);
-        $this->assertSame('permissions', $data->table_names->permissions);
-        $this->assertSame('spatie.permission.cache', $data->cache->key);
-    }
+        Assert::assertInstanceOf(PermissionData::class, $data);
+        Assert::assertStringContainsString('Role', (string) $data->models->role);
+        Assert::assertSame('permissions', $data->table_names->permissions);
+        Assert::assertSame('spatie.permission.cache', $data->cache->key);
+    });
 
-    public function testBuildsFilamentShieldDataFromFilamentShieldConfig(): void
-    {
+    test('builds filament shield data from filament shield config', function (): void {
+        /** @var TestCase $this */
         config([
             'filament-shield' => [
                 'shield_resource' => [
@@ -95,24 +97,24 @@ class UserDatasAndEnumsCoverageTest extends TestCase
 
         $data = FilamentShieldData::make();
 
-        $this->assertInstanceOf(FilamentShieldData::class, $data);
-        $this->assertSame(-1, $data->shield_resource->navigation_sort);
-        $this->assertSame('super_admin', $data->super_admin->name);
-        $this->assertTrue($data->filament_user->enabled);
-    }
+        Assert::assertInstanceOf(FilamentShieldData::class, $data);
+        Assert::assertSame(-1, $data->shield_resource->navigation_sort);
+        Assert::assertSame('super_admin', $data->super_admin->name);
+        Assert::assertTrue($data->filament_user->enabled);
+    });
 
-    public function testReturnsLabelsForBothLanguageEnums(): void
-    {
+    test('returns labels for both language enums', function (): void {
+        /** @var TestCase $this */
         app()->setLocale('it');
 
         $italianLabel = LanguageEnum::ITALIAN->getLabel();
         if (str_contains((string) $italianLabel, 'language_enum')) {
-            $this->markTestSkipped('Language enum translations not loaded in test environment.');
+            $this->skipTest('Language enum translations not loaded in test environment.');
         }
 
-        $this->assertSame('Italiano', $italianLabel);
-        $this->assertSame('English', LanguageEnum::ENGLISH->getLabel());
-        $this->assertSame('Deutsch', NestedLanguageEnum::GERMAN->getLabel());
-        $this->assertSame('es', NestedLanguageEnum::SPANISH->value);
-    }
-}
+        Assert::assertSame('Italiano', $italianLabel);
+        Assert::assertSame('English', LanguageEnum::ENGLISH->getLabel());
+        Assert::assertSame('Deutsch', NestedLanguageEnum::GERMAN->getLabel());
+        Assert::assertSame('es', NestedLanguageEnum::SPANISH->value);
+    });
+});
