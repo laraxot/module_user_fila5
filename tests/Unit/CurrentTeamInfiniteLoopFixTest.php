@@ -34,9 +34,8 @@ function currentTeamFixCreateTeam(User $user, array $attributes = []): Team
     ], $attributes));
 }
 
-beforeEach(function () {
-    /* @var TestCase $this */
-    $this->skipUnlessUsersTableReady();
+beforeEach(function (): void {
+    skipUnlessUsersTableReady();
 });
 
 test('current team getter does not crash when user has no teams', function () {
