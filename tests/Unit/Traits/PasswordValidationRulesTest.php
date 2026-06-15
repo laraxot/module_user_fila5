@@ -10,16 +10,16 @@ use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesMockableFixtu
 use Modules\User\Traits\PasswordValidationRules;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Password Validation Rules', function (): void {
     test('password validation rules trait can be used', function (): void {
-Assert::assertTrue(trait_exists(PasswordValidationRules::class));
+        Assert::assertTrue(trait_exists(PasswordValidationRules::class));
         Assert::assertInstanceOf(PasswordValidationRulesFixture::class, new PasswordValidationRulesFixture());
     });
 
     test('password validation rules trait provides password rules method', function (): void {
-$reflection = new \ReflectionClass(PasswordValidationRules::class);
+        $reflection = new \ReflectionClass(PasswordValidationRules::class);
 
         Assert::assertTrue($reflection->hasMethod('passwordRules'));
         $fixture = new PasswordValidationRulesMockableFixture();

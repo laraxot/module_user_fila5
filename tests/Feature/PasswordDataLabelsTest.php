@@ -8,11 +8,11 @@ use Modules\User\Datas\PasswordData;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Password Data Labels', function (): void {
     test('password data labels are translated', function (): void {
-app()->setLocale('it');
+        app()->setLocale('it');
 
         $passwordData = PasswordData::make();
         $passwordData->setFieldName('password');
@@ -25,6 +25,6 @@ app()->setLocale('it');
     });
 
     test('login form labels are translated', function (): void {
-$this->skipTest('Login Livewire form labels — coperto da widget Filament LoginWidgetTest');
+        $this->skipTest('Login Livewire form labels — coperto da widget Filament LoginWidgetTest');
     });
 });

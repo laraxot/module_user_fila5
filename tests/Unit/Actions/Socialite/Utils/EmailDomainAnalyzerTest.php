@@ -18,7 +18,7 @@ function createMockSocialiteUser(?string $email): SocialiteUser
 
 describe('EmailDomainAnalyzer', function () {
     beforeEach(function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         Config::set('services.google.email_domains.first_party.tld', null);
         Config::set('services.google.email_domains.client.tld', null);
     });

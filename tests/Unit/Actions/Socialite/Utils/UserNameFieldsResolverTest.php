@@ -10,13 +10,11 @@ use Modules\User\Actions\Socialite\Utils\UserNameFieldsResolver;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-use function configureMock;
-
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 function userNameFieldsResolverMock(?string $name, ?string $email): SocialiteUser
 {
-    return configureMock(SocialiteUser::class, static function (MockInterface $mock) use ($name, $email): void {
+    return \configureMock(SocialiteUser::class, static function (MockInterface $mock) use ($name, $email): void {
         $mock->allows([
             'getName' => $name,
             'getEmail' => $email,

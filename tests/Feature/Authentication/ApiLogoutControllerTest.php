@@ -6,42 +6,39 @@ namespace Modules\User\Tests\Feature\Authentication;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
-use Laravel\Passport\ClientRepository;
-use Laravel\Passport\Passport;
 use Modules\User\Database\Factories\DeviceFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\DeviceUser;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use function Pest\Laravel\getJson;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
-$this->skipUnlessUserTable('device_user');
-        $this->skipUnlessUserTable('devices');
+    $this->skipUnlessUserTable('device_user');
+    $this->skipUnlessUserTable('devices');
 
-        Config::set('app.key', config('app.key') ?: 'base64:'.base64_encode(random_bytes(32)));
+    Config::set('app.key', config('app.key') ?: 'base64:'.base64_encode(random_bytes(32)));
 
-        $this->user = UserFactory::new()->createOne([
-            'email' => 'api-logout-'.uniqid('', true).'@example.com',
-            'email_verified_at' => now(),
-            'is_active' => true,
-        ]);
+    $this->user = UserFactory::new()->createOne([
+        'email' => 'api-logout-'.uniqid('', true).'@example.com',
+        'email_verified_at' => now(),
+        'is_active' => true,
+    ]);
 
-        $this->device = DeviceFactory::new()->createOne();
+    $this->device = DeviceFactory::new()->createOne();
 
-        DeviceUser::query()->create([
-            'user_id' => (string) $this->requireUser()->getKey(),
-            'device_id' => (string) $this->requireDevice()->getKey(),
-            'login_at' => now()->subHour(),
-            'logout_at' => null,
-        ]);
+    DeviceUser::query()->create([
+        'user_id' => (string) $this->requireUser()->getKey(),
+        'device_id' => (string) $this->requireDevice()->getKey(),
+        'login_at' => now()->subHour(),
+        'logout_at' => null,
+    ]);
 });
 
 describe('Api Logout Controller', function (): void {
     test('api logout revokes current personal access token and marks device logout time', function (): void {
-$user = $this->requireUser();
+        $user = $this->requireUser();
         $privateKey = storage_path('oauth-private.key');
         $publicKey = storage_path('oauth-public.key');
 

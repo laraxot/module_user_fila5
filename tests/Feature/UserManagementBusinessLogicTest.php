@@ -14,13 +14,12 @@ use Modules\User\Models\Profile;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use function Pest\Laravel\get;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('User Management Business Logic', function (): void {
     test('can create user with profile', function (): void {
-$userData = [
+        $userData = [
             'name' => 'Mario Rossi',
             'email' => 'mario.rossi@example.com',
             'password' => Hash::make('password123'),
@@ -55,7 +54,7 @@ $userData = [
     });
 
     test('can assign role to user', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
 
         $user->assignRole($role);
@@ -66,7 +65,7 @@ $user = UserFactory::new()->createOne();
     });
 
     test('can assign multiple roles to user', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
         $role2 = RoleFactory::new()->createOne(['name' => 'admin']);
 
@@ -80,7 +79,7 @@ $user = UserFactory::new()->createOne();
     });
 
     test('can remove role from user', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
         $user->assignRole($role);
 
@@ -92,7 +91,7 @@ $user = UserFactory::new()->createOne();
     });
 
     test('can sync user roles', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
         $role2 = RoleFactory::new()->createOne(['name' => 'admin']);
         $role3 = RoleFactory::new()->createOne(['name' => 'nurse']);
@@ -108,7 +107,7 @@ $user = UserFactory::new()->createOne();
     });
 
     test('can check user permissions', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
         $permission = PermissionFactory::new()->createOne(['name' => 'patients.read']);
 
@@ -121,7 +120,7 @@ $user = UserFactory::new()->createOne();
     });
 
     test('can assign direct permission to user', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
         $permission = PermissionFactory::new()->createOne(['name' => 'special.permission']);
 
         $user->givePermissionTo($permission);
@@ -132,7 +131,7 @@ $user = UserFactory::new()->createOne();
     });
 
     test('can revoke direct permission from user', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
         $permission = PermissionFactory::new()->createOne(['name' => 'special.permission']);
         $user->givePermissionTo($permission);
 
@@ -144,7 +143,7 @@ $user = UserFactory::new()->createOne();
     });
 
     test('can check user has any role', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
         $role2 = RoleFactory::new()->createOne(['name' => 'nurse']);
 
@@ -156,7 +155,7 @@ $user = UserFactory::new()->createOne();
     });
 
     test('can check user has all roles', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
         $role2 = RoleFactory::new()->createOne(['name' => 'admin']);
 
@@ -167,7 +166,7 @@ $user = UserFactory::new()->createOne();
     });
 
     test('can get user permissions', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
         $permission1 = PermissionFactory::new()->createOne(['name' => 'patients.read']);
         $permission2 = PermissionFactory::new()->createOne(['name' => 'patients.write']);
@@ -183,7 +182,7 @@ $user = UserFactory::new()->createOne();
     });
 
     test('can get user roles', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
         $role1 = RoleFactory::new()->createOne(['name' => 'doctor']);
         $role2 = RoleFactory::new()->createOne(['name' => 'admin']);
 
@@ -197,7 +196,7 @@ $user = UserFactory::new()->createOne();
     });
 
     test('can check user is super admin', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
         $superAdminRole = RoleFactory::new()->createOne(['name' => 'super-admin']);
 
         $user->assignRole($superAdminRole);
@@ -207,7 +206,7 @@ $user = UserFactory::new()->createOne();
     });
 
     test('can update user profile', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
         $createdProfile = $user->profile()->create([
             'phone' => '+39 123 456 7890',
             'address' => 'Via Roma 123, Milano',
@@ -232,7 +231,7 @@ $user = UserFactory::new()->createOne();
     });
 
     test('can delete user with profile', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
         $createdProfile = $user->profile()->create([
             'phone' => '+39 123 456 7890',
         ]);
@@ -247,15 +246,15 @@ $user = UserFactory::new()->createOne();
     });
 
     test('can soft delete user', function (): void {
-$this->skipTest('User model does not use SoftDeletes.');
+        $this->skipTest('User model does not use SoftDeletes.');
     });
 
     test('can restore soft deleted user', function (): void {
-$this->skipTest('User model does not use SoftDeletes.');
+        $this->skipTest('User model does not use SoftDeletes.');
     });
 
     test('can force delete user', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
         $createdProfile = $user->profile()->create([
             'phone' => '+39 123 456 7890',
         ]);
@@ -270,7 +269,7 @@ $user = UserFactory::new()->createOne();
     });
 
     test('can search users by name', function (): void {
-$user1 = UserFactory::new()->createOne(['name' => 'Mario Rossi']);
+        $user1 = UserFactory::new()->createOne(['name' => 'Mario Rossi']);
         $user2 = UserFactory::new()->createOne(['name' => 'Giulia Bianchi']);
         $user3 = UserFactory::new()->createOne(['name' => 'Marco Rossi']);
 
@@ -283,7 +282,7 @@ $user1 = UserFactory::new()->createOne(['name' => 'Mario Rossi']);
     });
 
     test('can search users by email', function (): void {
-$user1 = UserFactory::new()->createOne(['email' => 'mario@example.com']);
+        $user1 = UserFactory::new()->createOne(['email' => 'mario@example.com']);
         $user2 = UserFactory::new()->createOne(['email' => 'giulia@test.com']);
         $user3 = UserFactory::new()->createOne(['email' => 'marco@example.org']);
 
@@ -296,7 +295,7 @@ $user1 = UserFactory::new()->createOne(['email' => 'mario@example.com']);
     });
 
     test('can filter users by role', function (): void {
-$doctorRole = RoleFactory::new()->createOne(['name' => 'doctor']);
+        $doctorRole = RoleFactory::new()->createOne(['name' => 'doctor']);
         $nurseRole = RoleFactory::new()->createOne(['name' => 'nurse']);
 
         $user1 = UserFactory::new()->createOne();
@@ -316,7 +315,7 @@ $doctorRole = RoleFactory::new()->createOne(['name' => 'doctor']);
     });
 
     test('can filter users by permission', function (): void {
-$role = RoleFactory::new()->createOne(['name' => 'doctor']);
+        $role = RoleFactory::new()->createOne(['name' => 'doctor']);
         $permission = PermissionFactory::new()->createOne(['name' => 'patients.read']);
 
         $role->givePermissionTo($permission);
@@ -334,7 +333,7 @@ $role = RoleFactory::new()->createOne(['name' => 'doctor']);
     });
 
     test('can get users with roles and permissions', function (): void {
-$role = RoleFactory::new()->createOne(['name' => 'doctor']);
+        $role = RoleFactory::new()->createOne(['name' => 'doctor']);
         $permission = PermissionFactory::new()->createOne(['name' => 'patients.read']);
 
         $role->givePermissionTo($permission);
@@ -352,7 +351,7 @@ $role = RoleFactory::new()->createOne(['name' => 'doctor']);
     });
 
     test('can validate user email uniqueness', function (): void {
-UserFactory::new()->createOne(['email' => 'test@example.com']);
+        UserFactory::new()->createOne(['email' => 'test@example.com']);
 
         try {
             User::create([
@@ -367,7 +366,7 @@ UserFactory::new()->createOne(['email' => 'test@example.com']);
     });
 
     test('can handle user email verification', function (): void {
-$user = UserFactory::new()->createOne(['email_verified_at' => null]);
+        $user = UserFactory::new()->createOne(['email_verified_at' => null]);
 
         $user->markEmailAsVerified();
 
@@ -376,7 +375,7 @@ $user = UserFactory::new()->createOne(['email_verified_at' => null]);
     });
 
     test('can handle user status changes', function (): void {
-$user = UserFactory::new()->createOne(['is_active' => true]);
+        $user = UserFactory::new()->createOne(['is_active' => true]);
 
         $user->update(['is_active' => false]);
 
@@ -392,7 +391,7 @@ $user = UserFactory::new()->createOne(['is_active' => true]);
     });
 
     test('can handle user info', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
 
         $user->update(['lang' => 'it']);
 

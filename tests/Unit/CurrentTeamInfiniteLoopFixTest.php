@@ -9,7 +9,7 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 /**
  * @param array<string, mixed> $attributes
@@ -35,7 +35,7 @@ function currentTeamFixCreateTeam(User $user, array $attributes = []): Team
 }
 
 beforeEach(function () {
-    /** @var TestCase $this */
+    /* @var TestCase $this */
     $this->skipUnlessUsersTableReady();
 });
 

@@ -13,13 +13,12 @@ use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use function Pest\Laravel\delete;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('User Business Logic', function (): void {
     test('enforces password complexity requirements', function (): void {
-$weakPassword = '123456';
+        $weakPassword = '123456';
         $strongPassword = 'SecurePass123!';
 
         $weakUser = createTestUser(['password' => Hash::make($weakPassword)]);
@@ -32,13 +31,13 @@ $weakPassword = '123456';
     });
 
     test('enforces email uniqueness across the system', function (): void {
-$email = 'unique-'.uniqid('', true).'@example.com';
+        $email = 'unique-'.uniqid('', true).'@example.com';
 
         createTestUser(['email' => $email]);
     });
 
     test('enforces username uniqueness when required', function (): void {
-if (! $this->userTableHasColumn('users', 'username')) {
+        if (! $this->userTableHasColumn('users', 'username')) {
             $email = 'alias-'.uniqid('', true).'@example.com';
             createTestUser(['email' => $email]);
 
@@ -50,7 +49,7 @@ if (! $this->userTableHasColumn('users', 'username')) {
     });
 
     test('enforces profile completion requirements', function (): void {
-$user = createTestUser([
+        $user = createTestUser([
             'first_name' => null,
             'last_name' => null,
         ]);
@@ -68,7 +67,7 @@ $user = createTestUser([
     });
 
     test('enforces data validation rules', function (): void {
-$user = createTestUser([
+        $user = createTestUser([
             'first_name' => 'Mario',
             'last_name' => 'Rossi',
             'email' => 'mario.rossi-'.uniqid().'@example.com',
@@ -84,7 +83,7 @@ $user = createTestUser([
     });
 
     test('enforces age restrictions for certain operations', function (): void {
-if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
             $this->skipTest('profiles.uuid column missing — Profile model requires uuid.');
         }
 
@@ -114,7 +113,7 @@ if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
     });
 
     test('enforces team membership limits', function (): void {
-$user = createTestUser();
+        $user = createTestUser();
         /** @var \Illuminate\Database\Eloquent\Collection<int, Team> $teams */
         $teams = TeamFactory::new()->count(5)->create();
 
@@ -132,7 +131,7 @@ $user = createTestUser();
     });
 
     test('enforces team role hierarchy', function (): void {
-$user = createTestUser();
+        $user = createTestUser();
         $team = TeamFactory::new()->createOne();
 
         $this->attachTeamMember($team, $user, ['role' => 'member']);
@@ -145,7 +144,7 @@ $user = createTestUser();
     });
 
     test('enforces team ownership rules', function (): void {
-$owner = createTestUser();
+        $owner = createTestUser();
         $member = createTestUser();
         $team = TeamFactory::new()->createOne(['user_id' => $owner->id]);
 
@@ -159,7 +158,7 @@ $owner = createTestUser();
     });
 
     test('enforces permission inheritance', function (): void {
-$user = createTestUser();
+        $user = createTestUser();
         $role = RoleFactory::new()->createOne(['name' => 'editor-'.uniqid()]);
         $permission = PermissionFactory::new()->createOne(['name' => 'edit_posts-'.uniqid()]);
 
@@ -171,7 +170,7 @@ $user = createTestUser();
     });
 
     test('enforces permission conflicts', function (): void {
-if (! $this->userTableExists('model_has_permission')) {
+        if (! $this->userTableExists('model_has_permission')) {
             $this->skipTest('model_has_permission table missing on user connection.');
         }
 
@@ -196,7 +195,7 @@ if (! $this->userTableExists('model_has_permission')) {
     });
 
     test('enforces role based access control', function (): void {
-$admin = createTestUser();
+        $admin = createTestUser();
         $moderator = createTestUser();
         $user = createTestUser();
 
@@ -215,7 +214,7 @@ $admin = createTestUser();
     });
 
     test('enforces referential integrity for user relationships', function (): void {
-if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
             $this->skipTest('profiles.uuid column missing — Profile model requires uuid.');
         }
 
@@ -237,7 +236,7 @@ if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
     });
 
     test('enforces data consistency across user attributes', function (): void {
-$user = createTestUser([
+        $user = createTestUser([
             'first_name' => 'Mario',
             'last_name' => 'Rossi',
             'email' => 'mario.rossi-'.uniqid().'@example.com',
@@ -256,7 +255,7 @@ $user = createTestUser([
     });
 
     test('enforces audit trail for sensitive operations', function (): void {
-$user = createTestUser();
+        $user = createTestUser();
         $originalEmail = $user->email;
         $originalUpdatedAt = $user->updated_at;
         Assert::assertNotNull($originalUpdatedAt);
@@ -270,7 +269,7 @@ $user = createTestUser();
     });
 
     test('enforces password expiration policies', function (): void {
-$user = createTestUser([
+        $user = createTestUser([
             'password_expires_at' => now()->subDays(1),
         ]);
 
@@ -285,7 +284,7 @@ $user = createTestUser([
     });
 
     test('enforces account lockout policies', function (): void {
-$user = createTestUser(['is_active' => true]);
+        $user = createTestUser(['is_active' => true]);
 
         Assert::assertTrue($user->is_active);
         $user->update(['is_active' => false]);
@@ -299,7 +298,7 @@ $user = createTestUser(['is_active' => true]);
     });
 
     test('enforces session management policies', function (): void {
-$user = createTestUser();
+        $user = createTestUser();
         $staleTimestamp = now()->subMinutes(30);
 
         \Illuminate\Support\Facades\DB::connection('user')->table('users')

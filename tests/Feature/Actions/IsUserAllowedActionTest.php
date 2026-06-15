@@ -4,19 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Actions;
 
-use Illuminate\Support\Str;
-use Laravel\Socialite\Contracts\User as SocialiteUserContract;
-use Mockery\MockInterface;
-use Modules\User\Actions\Socialite\IsUserAllowedAction;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert as PHPUnitAssert;
-use Webmozart\Assert\Assert as WebmozartAssert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Is User Allowed Action', function (): void {
     test('allows user with whitelisted email domain', function (): void {
-$user = fakeSocialiteUser('user@allowed-company.com');
+        $user = fakeSocialiteUser('user@allowed-company.com');
         config(['filament-socialite.domain_allowlist' => ['allowed-company.com']]);
 
         $result = makeIsUserAllowedAction()->execute($user);
@@ -25,7 +20,7 @@ $user = fakeSocialiteUser('user@allowed-company.com');
     });
 
     test('denies user with non whitelisted email domain', function (): void {
-$user = fakeSocialiteUser('user@unknown-domain.com');
+        $user = fakeSocialiteUser('user@unknown-domain.com');
         config(['filament-socialite.domain_allowlist' => ['allowed-company.com']]);
 
         $result = makeIsUserAllowedAction()->execute($user);
@@ -34,7 +29,7 @@ $user = fakeSocialiteUser('user@unknown-domain.com');
     });
 
     test('allows user when whitelist is empty', function (): void {
-$user = fakeSocialiteUser('user@any-domain.com');
+        $user = fakeSocialiteUser('user@any-domain.com');
         config(['filament-socialite.domain_allowlist' => []]);
 
         $result = makeIsUserAllowedAction()->execute($user);

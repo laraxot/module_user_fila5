@@ -19,11 +19,11 @@ use Modules\User\Events\TwoFactorAuthenticationEnabled;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Event Classes', function (): void {
     test('recovery codes generated event can be instantiated', function (): void {
-$user = UserFactory::new()->makeOne();
+        $user = UserFactory::new()->makeOne();
         $event = new RecoveryCodesGenerated($user);
 
         Assert::assertInstanceOf(RecoveryCodesGenerated::class, $event);
@@ -31,7 +31,7 @@ $user = UserFactory::new()->makeOne();
     });
 
     test('team member added event can be instantiated', function (): void {
-$team = typedMock(TeamContract::class);
+        $team = typedMock(TeamContract::class);
         $user = UserFactory::new()->makeOne();
         $event = new TeamMemberAdded($team, $user);
 
@@ -39,7 +39,7 @@ $team = typedMock(TeamContract::class);
     });
 
     test('team member removed event can be instantiated', function (): void {
-$team = typedMock(TeamContract::class);
+        $team = typedMock(TeamContract::class);
         $user = UserFactory::new()->makeOne();
         $event = new TeamMemberRemoved($team, $user);
 
@@ -47,7 +47,7 @@ $team = typedMock(TeamContract::class);
     });
 
     test('two factor authentication enabled event can be instantiated', function (): void {
-$user = UserFactory::new()->makeOne();
+        $user = UserFactory::new()->makeOne();
         $event = new TwoFactorAuthenticationEnabled($user);
 
         Assert::assertInstanceOf(TwoFactorAuthenticationEnabled::class, $event);
@@ -55,7 +55,7 @@ $user = UserFactory::new()->makeOne();
     });
 
     test('two factor authentication disabled event can be instantiated', function (): void {
-$user = UserFactory::new()->makeOne();
+        $user = UserFactory::new()->makeOne();
         $event = new TwoFactorAuthenticationDisabled($user);
 
         Assert::assertInstanceOf(TwoFactorAuthenticationDisabled::class, $event);
@@ -63,7 +63,7 @@ $user = UserFactory::new()->makeOne();
     });
 
     test('recovery code replaced event can be instantiated', function (): void {
-$user = UserFactory::new()->makeOne();
+        $user = UserFactory::new()->makeOne();
         $event = new RecoveryCodeReplaced($user, 'test_code');
 
         Assert::assertInstanceOf(RecoveryCodeReplaced::class, $event);
@@ -72,7 +72,7 @@ $user = UserFactory::new()->makeOne();
     });
 
     test('team member updated event can be instantiated', function (): void {
-$team = typedMock(TeamContract::class);
+        $team = typedMock(TeamContract::class);
         $user = UserFactory::new()->makeOne();
         $event = new TeamMemberUpdated($team, $user);
 
@@ -80,7 +80,7 @@ $team = typedMock(TeamContract::class);
     });
 
     test('adding team event can be instantiated', function (): void {
-$user = UserFactory::new()->makeOne();
+        $user = UserFactory::new()->makeOne();
         $event = new AddingTeam($user);
 
         Assert::assertInstanceOf(AddingTeam::class, $event);
@@ -88,7 +88,7 @@ $user = UserFactory::new()->makeOne();
     });
 
     test('adding team member event can be instantiated', function (): void {
-$team = typedMock(TeamContract::class);
+        $team = typedMock(TeamContract::class);
         $user = UserFactory::new()->makeOne();
         $event = new AddingTeamMember($team, $user);
 
@@ -96,7 +96,7 @@ $team = typedMock(TeamContract::class);
     });
 
     test('team switched event can be instantiated', function (): void {
-$team = typedMock(TeamContract::class);
+        $team = typedMock(TeamContract::class);
         $user = UserFactory::new()->makeOne();
         $event = new TeamSwitched($team, $user);
 

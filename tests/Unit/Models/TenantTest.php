@@ -4,24 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
 
-use Illuminate\Support\Facades\Schema;
 use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Models\Tenant;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use function Pest\Laravel\get;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-$this->skipUnlessUserTable('tenants');
+    /* @var \Modules\User\Tests\TestCase $this */
+    $this->skipUnlessUserTable('tenants');
 });
 
 describe('Tenant', function (): void {
     test('can create tenant with minimal data', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
-$tenant = TenantFactory::new()->createOne([
+        /** @var TestCase $this */
+        $tenant = TenantFactory::new()->createOne([
             'name' => 'Test Tenant',
         ]);
 
@@ -32,7 +30,7 @@ $tenant = TenantFactory::new()->createOne([
     });
 
     test('can create tenant with all fields', function (): void {
-$this->skipUnlessTenantColumn('settings');
+        $this->skipUnlessTenantColumn('settings');
         $this->skipUnlessTenantColumn('trial_ends_at');
 
         $tenantData = [
@@ -60,15 +58,15 @@ $this->skipUnlessTenantColumn('settings');
     });
 
     test('tenant has soft deletes', function (): void {
-$this->skipTest('Tenant model does not use SoftDeletes.');
+        $this->skipTest('Tenant model does not use SoftDeletes.');
     });
 
     test('can restore soft deleted tenant', function (): void {
-$this->skipTest('Tenant restore/withTrashed not supported on User Tenant model.');
+        $this->skipTest('Tenant restore/withTrashed not supported on User Tenant model.');
     });
 
     test('can find tenant by name', function (): void {
-$name = 'Unique Tenant Name '.uniqid();
+        $name = 'Unique Tenant Name '.uniqid();
         $tenant = TenantFactory::new()->createOne(['name' => $name]);
 
         $foundTenant = Tenant::where('name', $name)->first();
@@ -78,7 +76,7 @@ $name = 'Unique Tenant Name '.uniqid();
     });
 
     test('can find tenant by slug', function (): void {
-$slug = 'unique-tenant-'.uniqid();
+        $slug = 'unique-tenant-'.uniqid();
         $tenant = TenantFactory::new()->createOne(['slug' => $slug]);
 
         $foundTenant = Tenant::where('slug', $slug)->first();
@@ -88,7 +86,7 @@ $slug = 'unique-tenant-'.uniqid();
     });
 
     test('can find tenant by domain', function (): void {
-$domain = uniqid().'.uniquetenant.com';
+        $domain = uniqid().'.uniquetenant.com';
         $tenant = TenantFactory::new()->createOne(['domain' => $domain]);
 
         $foundTenant = Tenant::where('domain', $domain)->first();
@@ -98,7 +96,7 @@ $domain = uniqid().'.uniquetenant.com';
     });
 
     test('can find tenant by database', function (): void {
-$database = 'unique_db_'.uniqid();
+        $database = 'unique_db_'.uniqid();
         $tenant = TenantFactory::new()->createOne(['database' => $database]);
 
         $foundTenant = Tenant::where('database', $database)->first();
@@ -108,7 +106,7 @@ $database = 'unique_db_'.uniqid();
     });
 
     test('can find active tenants', function (): void {
-$marker = 'active-tenant-'.uniqid();
+        $marker = 'active-tenant-'.uniqid();
 
         TenantFactory::new()->createOne(['name' => $marker.'-1', 'is_active' => true]);
         TenantFactory::new()->createOne(['name' => $marker.'-2', 'is_active' => false]);
@@ -124,7 +122,7 @@ $marker = 'active-tenant-'.uniqid();
     });
 
     test('can find tenants by name pattern', function (): void {
-$marker = 'company-pattern-'.uniqid();
+        $marker = 'company-pattern-'.uniqid();
 
         TenantFactory::new()->createOne(['name' => $marker.' Development Company']);
         TenantFactory::new()->createOne(['name' => $marker.' Marketing Agency']);
@@ -137,7 +135,7 @@ $marker = 'company-pattern-'.uniqid();
     });
 
     test('can find tenants by domain pattern', function (): void {
-$marker = uniqid();
+        $marker = uniqid();
 
         TenantFactory::new()->createOne(['domain' => 'dev-'.$marker.'.example.com']);
         TenantFactory::new()->createOne(['domain' => 'staging-'.$marker.'.example.com']);
@@ -150,7 +148,7 @@ $marker = uniqid();
     });
 
     test('can update tenant', function (): void {
-$tenant = TenantFactory::new()->createOne(['name' => 'Old Name']);
+        $tenant = TenantFactory::new()->createOne(['name' => 'Old Name']);
 
         $tenant->update(['name' => 'New Name']);
 
@@ -161,7 +159,7 @@ $tenant = TenantFactory::new()->createOne(['name' => 'Old Name']);
     });
 
     test('can handle null values', function (): void {
-$tenant = TenantFactory::new()->createOne([
+        $tenant = TenantFactory::new()->createOne([
             'name' => 'Test Tenant',
             'domain' => null,
             'database' => null,
@@ -172,7 +170,7 @@ $tenant = TenantFactory::new()->createOne([
     });
 
     test('can find tenants by multiple criteria', function (): void {
-$marker = 'multi-criteria-'.uniqid();
+        $marker = 'multi-criteria-'.uniqid();
 
         TenantFactory::new()->createOne([
             'name' => $marker.' Active Company',
@@ -200,26 +198,26 @@ $marker = 'multi-criteria-'.uniqid();
     });
 
     test('tenant has users relationship', function (): void {
-$tenant = TenantFactory::new()->createOne();
+        $tenant = TenantFactory::new()->createOne();
     });
 
     test('tenant has members relationship', function (): void {
-$tenant = TenantFactory::new()->createOne();
+        $tenant = TenantFactory::new()->createOne();
     });
 
     test('tenant has media relationship', function (): void {
-$tenant = TenantFactory::new()->createOne();
+        $tenant = TenantFactory::new()->createOne();
     });
 
     test('tenant has factory', function (): void {
-$tenant = TenantFactory::new()->createOne();
+        $tenant = TenantFactory::new()->createOne();
 
         Assert::assertNotNull($tenant->id);
         Assert::assertInstanceOf(Tenant::class, $tenant);
     });
 
     test('can find tenants by trial status', function (): void {
-$this->skipUnlessTenantColumn('trial_ends_at');
+        $this->skipUnlessTenantColumn('trial_ends_at');
 
         $marker = 'trial-status-'.uniqid();
 
@@ -245,7 +243,7 @@ $this->skipUnlessTenantColumn('trial_ends_at');
     });
 
     test('can find tenants by settings value', function (): void {
-$this->skipUnlessTenantColumn('settings');
+        $this->skipUnlessTenantColumn('settings');
 
         $marker = 'settings-theme-'.uniqid();
 

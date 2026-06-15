@@ -5,16 +5,16 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Feature\Database\Migrations;
 
 use Modules\User\Tests\TestCase;
-use function Safe\exec;
-use function Safe\file_get_contents;
-use function Safe\glob;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+use function Safe\exec;
+use function Safe\file_get_contents;
+
+uses(TestCase::class);
 
 describe('User Migration Syntax', function (): void {
     test('user migrations do not contain merge conflict markers', function (): void {
-foreach (userMigrationFiles() as $migrationFile) {
+        foreach (userMigrationFiles() as $migrationFile) {
             $contents = file_get_contents($migrationFile);
 
             Assert::assertStringNotContainsString('<<<<<<<', $contents, $migrationFile);
@@ -24,7 +24,7 @@ foreach (userMigrationFiles() as $migrationFile) {
     });
 
     test('user migrations have valid php syntax', function (): void {
-foreach (userMigrationFiles() as $migrationFile) {
+        foreach (userMigrationFiles() as $migrationFile) {
             $output = [];
             $exitCode = 0;
 

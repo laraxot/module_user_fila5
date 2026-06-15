@@ -13,12 +13,12 @@ use Modules\User\Models\SocialiteUser;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Login User Action', function (): void {
     test('authenticates connected socialite user and dispatches event', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
-Event::fake([SocialiteUserConnected::class]);
+        /* @var \Modules\User\Tests\TestCase $this */
+        Event::fake([SocialiteUserConnected::class]);
 
         $user = UserFactory::new()->createOne();
 
@@ -38,7 +38,7 @@ Event::fake([SocialiteUserConnected::class]);
     });
 
     test('throws when related user is not authenticatable', function (): void {
-$socialiteUser = new SocialiteUser([
+        $socialiteUser = new SocialiteUser([
             'provider' => 'test-provider',
             'provider_id' => 'provider-id-2',
             'email' => 'not-authenticatable@example.com',
@@ -55,7 +55,7 @@ $socialiteUser = new SocialiteUser([
     });
 
     test('redirects to intended page when available', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
 
         $socialiteUser = new SocialiteUser([
             'provider' => 'google',
@@ -71,7 +71,7 @@ $user = UserFactory::new()->createOne();
     });
 
     test('dispatches event with correct socialite user instance', function (): void {
-Event::fake();
+        Event::fake();
 
         $user = UserFactory::new()->createOne();
 
@@ -91,7 +91,7 @@ Event::fake();
     });
 
     test('authenticates different users independently', function (): void {
-$user1 = UserFactory::new()->createOne(['email' => 'user1-'.uniqid().'@example.com']);
+        $user1 = UserFactory::new()->createOne(['email' => 'user1-'.uniqid().'@example.com']);
         $user2 = UserFactory::new()->createOne(['email' => 'user2-'.uniqid().'@example.com']);
 
         $socialiteUser1 = new SocialiteUser([
@@ -116,7 +116,7 @@ $user1 = UserFactory::new()->createOne(['email' => 'user1-'.uniqid().'@example.c
     });
 
     test('returns redirect response instance', function (): void {
-$user = UserFactory::new()->createOne();
+        $user = UserFactory::new()->createOne();
 
         $socialiteUser = new SocialiteUser([
             'provider' => 'test',
@@ -131,7 +131,7 @@ $user = UserFactory::new()->createOne();
     });
 
     test('handles null user assertion gracefully', function (): void {
-$socialiteUser = new SocialiteUser([
+        $socialiteUser = new SocialiteUser([
             'provider' => 'test',
             'provider_id' => 'test-null',
             'email' => 'test-null-'.uniqid().'@example.com',
@@ -147,7 +147,7 @@ $socialiteUser = new SocialiteUser([
     });
 
     test('preserves user attributes after login', function (): void {
-$user = UserFactory::new()->createOne([
+        $user = UserFactory::new()->createOne([
             'email' => 'preserve-'.uniqid().'@example.com',
             'name' => 'John Doe',
             'is_active' => true,

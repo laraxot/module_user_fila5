@@ -10,17 +10,16 @@ use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use function Pest\Laravel\get;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
-$this->widget = new LoginWidget();
+    $this->widget = new LoginWidget();
 });
 
 describe('Login Widget', function (): void {
     test('it can render widget', function (): void {
-$widget = new LoginWidget();
+        $widget = new LoginWidget();
 
         $reflection = new \ReflectionClass($widget);
         $property = $reflection->getProperty('view');
@@ -31,7 +30,7 @@ $widget = new LoginWidget();
     });
 
     test('it has correct form schema', function (): void {
-$widget = $this->requireLoginWidget();
+        $widget = $this->requireLoginWidget();
         $form = $widget->getFormSchema();
 
         Assert::assertCount(3, $form);
@@ -48,7 +47,7 @@ $widget = $this->requireLoginWidget();
     });
 
     test('it can authenticate user', function (): void {
-$widget = $this->requireLoginWidget();
+        $widget = $this->requireLoginWidget();
         if (! class_exists('CreateUsersTable')) {
             $this->skipTest('Database not available for testing');
         }
