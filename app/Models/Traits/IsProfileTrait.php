@@ -56,7 +56,6 @@ trait IsProfileTrait
      */
     public function user(): BelongsTo
     {
-        /** @var class-string<Model&UserContract> $userClass */
         $userClass = XotData::make()->getUserClass();
 
         /** @var BelongsTo<Model, Model> $relation */
