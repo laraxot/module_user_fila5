@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
@@ -11,7 +11,6 @@ use Modules\User\Actions\Otp\Hasher;
 use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Datas\PasswordData;
-use Modules\User\Models\User;
 use Modules\User\Notifications\Auth\Otp;
 use PHPUnit\Framework\Assert;
 

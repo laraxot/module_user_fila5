@@ -2,19 +2,24 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
-use Modules\User\Database\Factories\UserFactory;
+namespace Modules\User\Tests\Feature;
+
 use Filament\Facades\Filament;
 use Filament\Schemas\SchemasServiceProvider;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Livewire;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Pages\MyProfilePage;
-use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
+use Modules\User\Tests\TestCase;
 
-beforeEach(function () {
-    /** @var \Modules\User\Tests\TestCase $this */
+use function Pest\Laravel\actingAs;
+
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
+
+beforeEach(function (): void {
     $this->skipUnlessUsersTableReady();
     $this->skipUnlessUserColumn('profiles', 'uuid', 'profiles.uuid column is not available in the test database.');
 
@@ -23,55 +28,53 @@ beforeEach(function () {
     Filament::setCurrentPanel(Filament::getPanel('user::admin'));
 });
 
-test('can change profile password', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-    /** @var \Modules\User\Models\User $user */
-    $user = UserFactory::new()->createOne([
-        'password' => Hash::make('old_password'),
-    ]);
+describe('Change Profile Password', function (): void {
+    test('can change profile password', function (): void {
+        $user = UserFactory::new()->createOne([
+            'password' => Hash::make('old_password'),
+        ]);
 
-    $this->actingAs($user);
+        actingAs($user);
 
-    Livewire::test(MyProfilePage::class)
-        ->fill([
-            'passwordData.current_password' => 'old_password',
-            'passwordData.new_password' => 'new_password',
-            'passwordData.password_confirmation' => 'new_password',
-        ])
-        ->call('updatePassword')
-        ->assertHasNoFormErrors();
+        Livewire::test(MyProfilePage::class)
+            ->fill([
+                'passwordData.current_password' => 'old_password',
+                'passwordData.new_password' => 'new_password',
+                'passwordData.password_confirmation' => 'new_password',
+            ])
+            ->call('updatePassword')
+            ->assertHasNoFormErrors();
 
-    Assert::assertTrue(Hash::check('new_password', (string) $user->fresh()?->password));
-});
+        Assert::assertTrue(Hash::check('new_password', (string) $user->fresh()?->password));
+    });
 
-test('cannot change password with wrong current password', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-    /** @var \Modules\User\Models\User $user */
-    $user = UserFactory::new()->createOne([
-        'password' => Hash::make('old_password'),
-    ]);
+    test('cannot change password with wrong current password', function (): void {
+        $user = UserFactory::new()->createOne([
+            'password' => Hash::make('old_password'),
+        ]);
 
-    $this->actingAs($user);
+        actingAs($user);
 
-    $testable = Livewire::test(MyProfilePage::class)
-        ->fill([
-            'passwordData.current_password' => 'wrong_password',
-            'passwordData.new_password' => 'new_password',
-            'passwordData.password_confirmation' => 'new_password',
-        ])
-        ->call('updatePassword');
+        $testable = Livewire::test(MyProfilePage::class)
+            ->fill([
+                'passwordData.current_password' => 'wrong_password',
+                'passwordData.new_password' => 'new_password',
+                'passwordData.password_confirmation' => 'new_password',
+            ])
+            ->call('updatePassword');
 
-    $testable->assertHasErrors();
+        $testable->assertHasErrors();
 
-    $errors = $testable->errors();
-    Assert::assertIsArray($errors);
-    $hasCurrentPasswordError = false;
-    foreach (array_keys($errors) as $errorKey) {
-        if (str_contains((string) $errorKey, 'current_password')) {
-            $hasCurrentPasswordError = true;
-            break;
+        $errors = $testable->errors();
+        Assert::assertIsArray($errors);
+        $hasCurrentPasswordError = false;
+        foreach (array_keys($errors) as $errorKey) {
+            if (str_contains((string) $errorKey, 'current_password')) {
+                $hasCurrentPasswordError = true;
+                break;
+            }
         }
-    }
-    Assert::assertTrue($hasCurrentPasswordError);
-    Assert::assertTrue(Hash::check('old_password', (string) $user->fresh()?->password));
+        Assert::assertTrue($hasCurrentPasswordError);
+        Assert::assertTrue(Hash::check('old_password', (string) $user->fresh()?->password));
+    });
 });

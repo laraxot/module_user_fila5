@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Filament\Widgets\EditUserWidget;
+use PHPUnit\Framework\Assert;
 
 describe('EditUserWidget', function (): void {
     test('edit user widget can be instantiated', function (): void {
@@ -16,21 +16,18 @@ describe('EditUserWidget', function (): void {
     test('edit user widget extends xot base widget', function (): void {
         $widget = new EditUserWidget();
 
-        Assert::assertInstanceOf(\Modules\Xot\Filament\Widgets\XotBaseSchemaWidget::class, $widget);
+        Assert::assertInstanceOf(Modules\Xot\Filament\Widgets\XotBaseSchemaWidget::class, $widget);
     });
 
     test('edit user widget has type property', function (): void {
         $widget = new EditUserWidget();
-
     });
 
     test('edit user widget has resource property', function (): void {
         $widget = new EditUserWidget();
-
     });
 
     test('edit user widget has model property', function (): void {
         $widget = new EditUserWidget();
-
     });
 });

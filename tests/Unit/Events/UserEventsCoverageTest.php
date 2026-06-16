@@ -2,7 +2,8 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+namespace Modules\User\Tests\Unit\Events;
+
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
@@ -36,11 +37,13 @@ use Modules\User\Events\UserNotAllowed;
 use Modules\User\Events\UserRegistered;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-describe('User events coverage', function (): void {
-    it('instantiates team and membership events', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+uses(TestCase::class);
+
+describe('User Events Coverage', function (): void {
+    test('instantiates team and membership events', function (): void {
         $team = typedMock(TeamContract::class);
         $user = UserFactory::new()->makeOne();
 
@@ -57,8 +60,7 @@ describe('User events coverage', function (): void {
         Assert::assertInstanceOf(TeamDeleted::class, new TeamDeleted($team));
     });
 
-    it('instantiates socialite and auth events', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+    test('instantiates socialite and auth events', function (): void {
         $socialiteUser = new SocialiteUser([
             'provider' => 'github',
             'provider_id' => 'provider-'.uniqid(),
@@ -73,9 +75,8 @@ describe('User events coverage', function (): void {
         Assert::assertInstanceOf(UserNotAllowed::class, new UserNotAllowed($oauthUser));
     });
 
-    it('instantiates recovery and invalid-state events', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
-        /** @var \Illuminate\Contracts\Auth\Authenticatable $auth */
+    test('instantiates recovery and invalid state events', function (): void {
+        /** @var Authenticatable $auth */
         $auth = UserFactory::new()->makeOne();
         $exception = new InvalidStateException('state invalid');
 
@@ -83,8 +84,7 @@ describe('User events coverage', function (): void {
         Assert::assertInstanceOf(InvalidState::class, new InvalidState($exception));
     });
 
-    it('instantiates two-factor events', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+    test('instantiates two factor events', function (): void {
         $user = UserFactory::new()->makeOne();
 
         Assert::assertInstanceOf(TwoFactorAuthenticationEnabled::class, new TwoFactorAuthenticationEnabled($user));
@@ -93,8 +93,7 @@ describe('User events coverage', function (): void {
         Assert::assertInstanceOf(TwoFactorAuthenticationChallenged::class, new TwoFactorAuthenticationChallenged($user));
     });
 
-    it('exposes broadcast channel for new password set event', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+    test('exposes broadcast channel for new password set event', function (): void {
         $user = UserFactory::new()->makeOne();
         $event = new NewPasswordSet($user);
 
@@ -104,8 +103,7 @@ describe('User events coverage', function (): void {
         Assert::assertInstanceOf(PrivateChannel::class, $channels[0]);
     });
 
-    it('instantiates recovery-generated and user-registered events', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+    test('instantiates recovery generated and user registered events', function (): void {
         $userContract = UserFactory::new()->makeOne();
         $user = new User();
 

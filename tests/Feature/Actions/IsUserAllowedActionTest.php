@@ -2,34 +2,14 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
-use Illuminate\Support\Str;
-use Laravel\Socialite\Contracts\User as SocialiteUserContract;
-use Mockery\MockInterface;
-use Modules\User\Actions\Socialite\IsUserAllowedAction;
+namespace Modules\User\Tests\Feature\Actions;
+
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert as PHPUnitAssert;
-use Webmozart\Assert\Assert as WebmozartAssert;
 
-function fakeSocialiteUser(string $email): SocialiteUserContract
-{
-    return configureMock(SocialiteUserContract::class, function (MockInterface $mock) use ($email): void {
-        $mock->allows(['getEmail' => $email]);
-    });
-}
+uses(TestCase::class);
 
-function makeIsUserAllowedAction(): IsUserAllowedAction
-{
-    $assert = configureMock(WebmozartAssert::class, function (MockInterface $mock): void {
-        $mock->allows([
-            'notNull' => static fn (mixed $value, ?string $message = null): mixed => $value,
-        ]);
-    });
-
-    return new IsUserAllowedAction($assert, new Str());
-}
-
-describe('IsUserAllowedAction', function (): void {
+describe('Is User Allowed Action', function (): void {
     test('allows user with whitelisted email domain', function (): void {
         $user = fakeSocialiteUser('user@allowed-company.com');
         config(['filament-socialite.domain_allowlist' => ['allowed-company.com']]);
@@ -39,7 +19,7 @@ describe('IsUserAllowedAction', function (): void {
         PHPUnitAssert::assertTrue($result);
     });
 
-    test('denies user with non-whitelisted email domain', function (): void {
+    test('denies user with non whitelisted email domain', function (): void {
         $user = fakeSocialiteUser('user@unknown-domain.com');
         config(['filament-socialite.domain_allowlist' => ['allowed-company.com']]);
 

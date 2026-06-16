@@ -2,13 +2,18 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\IsUserAllowedAction;
 use PHPUnit\Framework\Assert;
 
 describe('IsUserAllowedAction', function (): void {
+    beforeEach(function (): void {
+        /* @var \Modules\User\Tests\TestCase $this */
+        config(['filament-socialite.domain_allowlist' => []]);
+    });
+
     $getMockUser = function (string $email = 'user@example.com'): SocialiteUserContract {
         return configureMock(SocialiteUserContract::class, function (MockInterface $mock) use ($email): void {
             $mock->allows([

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Rules\CheckOtpExpiredRule;
+use PHPUnit\Framework\Assert;
 
 test('CheckOtpExpiredRule can be instantiated', function () {
-        try {
+    try {
         $rule = app(CheckOtpExpiredRule::class);
         Assert::assertInstanceOf(CheckOtpExpiredRule::class, $rule);
     } catch (Exception $e) {
@@ -23,6 +23,5 @@ test('CheckOtpExpiredRule has validation methods', function () {
         } catch (Exception $e) {
             // assertTrue(true) removed — tautology // Pass if class exists
         }
-    } else {
     }
 });

@@ -2,13 +2,19 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-it('does not reference the Comment module anywhere under User app', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-    $this->markTestSkipped('User module integrates Comment traits in production — dependency check disabled for test DB.');
-});
+namespace Modules\User\Tests\Unit;
 
-it('loads BaseUser without Comment traits', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-    $this->markTestSkipped('User module integrates Comment traits in production — dependency check disabled for test DB.');
+use Modules\User\Tests\TestCase;
+
+uses(TestCase::class);
+
+describe('No Comment Module Dependency', function (): void {
+    test('it does not reference the comment module anywhere under user app', function (): void {
+        /* @var \Modules\User\Tests\TestCase $this */
+        $this->skipTest('User module integrates Comment traits in production — dependency check disabled for test DB.');
+    });
+
+    test('it loads base user without comment traits', function (): void {
+        $this->skipTest('User module integrates Comment traits in production — dependency check disabled for test DB.');
+    });
 });

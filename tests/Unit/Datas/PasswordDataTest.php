@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Datas\PasswordData;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 use ReflectionNamedType;
-use Spatie\LaravelData\Data;
 
 use function Safe\file_get_contents;
+
+use Spatie\LaravelData\Data;
 
 function samplePasswordData(): PasswordData
 {
@@ -68,7 +68,7 @@ test('password data extends spatie data class', function (): void {
 test('password data has correct properties', function (): void {
     $reflection = new ReflectionClass(PasswordData::class);
     $propertyNames = array_map(
-        static fn (\ReflectionProperty $prop): string => $prop->getName(),
+        static fn (ReflectionProperty $prop): string => $prop->getName(),
         $reflection->getProperties(),
     );
 

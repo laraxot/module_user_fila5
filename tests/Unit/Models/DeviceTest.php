@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Modules\User\Database\Factories\DeviceFactory;
@@ -10,7 +10,7 @@ use Modules\User\Models\Device;
 use PHPUnit\Framework\Assert;
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function modelsDeviceCreate(array $attributes = []): Device
 {
@@ -18,7 +18,7 @@ function modelsDeviceCreate(array $attributes = []): Device
 }
 
 /**
- * @param  array<string, mixed>  $where
+ * @param array<string, mixed> $where
  */
 function modelsDeviceAssertInDatabase(string $id, array $where): void
 {
@@ -283,7 +283,7 @@ test('can find devices by multiple criteria', function (): void {
 
 test('device has users relationship', function (): void {
     $device = modelsDeviceCreate();
-    Assert::assertInstanceOf(\Illuminate\Database\Eloquent\Relations\BelongsToMany::class, $device->users());
+    Assert::assertInstanceOf(Illuminate\Database\Eloquent\Relations\BelongsToMany::class, $device->users());
 });
 
 test('device has factory', function (): void {

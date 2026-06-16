@@ -5,34 +5,20 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit\Models;
 
 use Modules\User\Database\Factories\TenantFactory;
-use PHPUnit\Framework\Assert;
-use Illuminate\Support\Facades\Schema;
 use Modules\User\Models\Tenant;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-class TenantTest extends TestCase
-{
-    protected function setUp(): void
-    {
-        parent::setUp();
+uses(TestCase::class);
 
-        $this->skipUnlessUserTable('tenants');
-    }
+beforeEach(function (): void {
+    /* @var \Modules\User\Tests\TestCase $this */
+    $this->skipUnlessUserTable('tenants');
+});
 
-    protected function skipUnlessTenantColumn(string $column, string $reason = ''): void
-    {
-        $this->skipUnlessUserColumn('tenants', $column, '' !== $reason ? $reason : "tenants.{$column} column missing on user connection.");
-    }
-
-    protected function skipUnlessMediaTable(): void
-    {
-        if (! Schema::connection('media')->hasTable('media')) {
-            $this->markTestSkipped('media table missing on media connection.');
-        }
-    }
-
-    public function testCanCreateTenantWithMinimalData(): void
-    {
+describe('Tenant', function (): void {
+    test('can create tenant with minimal data', function (): void {
+        /** @var TestCase $this */
         $tenant = TenantFactory::new()->createOne([
             'name' => 'Test Tenant',
         ]);
@@ -41,10 +27,9 @@ class TenantTest extends TestCase
             'id' => $tenant->id,
             'name' => 'Test Tenant',
         ]);
-    }
+    });
 
-    public function testCanCreateTenantWithAllFields(): void
-    {
+    test('can create tenant with all fields', function (): void {
         $this->skipUnlessTenantColumn('settings');
         $this->skipUnlessTenantColumn('trial_ends_at');
 
@@ -70,20 +55,17 @@ class TenantTest extends TestCase
         ]);
 
         Assert::assertSame(['theme' => 'dark', 'features' => ['chat', 'analytics']], $tenant->settings);
-    }
+    });
 
-    public function testTenantHasSoftDeletes(): void
-    {
-        $this->markTestSkipped('Tenant model does not use SoftDeletes.');
-    }
+    test('tenant has soft deletes', function (): void {
+        $this->skipTest('Tenant model does not use SoftDeletes.');
+    });
 
-    public function testCanRestoreSoftDeletedTenant(): void
-    {
-        $this->markTestSkipped('Tenant restore/withTrashed not supported on User Tenant model.');
-    }
+    test('can restore soft deleted tenant', function (): void {
+        $this->skipTest('Tenant restore/withTrashed not supported on User Tenant model.');
+    });
 
-    public function testCanFindTenantByName(): void
-    {
+    test('can find tenant by name', function (): void {
         $name = 'Unique Tenant Name '.uniqid();
         $tenant = TenantFactory::new()->createOne(['name' => $name]);
 
@@ -91,10 +73,9 @@ class TenantTest extends TestCase
 
         Assert::assertNotNull($foundTenant);
         Assert::assertSame($tenant->id, $foundTenant->id);
-    }
+    });
 
-    public function testCanFindTenantBySlug(): void
-    {
+    test('can find tenant by slug', function (): void {
         $slug = 'unique-tenant-'.uniqid();
         $tenant = TenantFactory::new()->createOne(['slug' => $slug]);
 
@@ -102,10 +83,9 @@ class TenantTest extends TestCase
 
         Assert::assertNotNull($foundTenant);
         Assert::assertSame($tenant->id, $foundTenant->id);
-    }
+    });
 
-    public function testCanFindTenantByDomain(): void
-    {
+    test('can find tenant by domain', function (): void {
         $domain = uniqid().'.uniquetenant.com';
         $tenant = TenantFactory::new()->createOne(['domain' => $domain]);
 
@@ -113,10 +93,9 @@ class TenantTest extends TestCase
 
         Assert::assertNotNull($foundTenant);
         Assert::assertSame($tenant->id, $foundTenant->id);
-    }
+    });
 
-    public function testCanFindTenantByDatabase(): void
-    {
+    test('can find tenant by database', function (): void {
         $database = 'unique_db_'.uniqid();
         $tenant = TenantFactory::new()->createOne(['database' => $database]);
 
@@ -124,10 +103,9 @@ class TenantTest extends TestCase
 
         Assert::assertNotNull($foundTenant);
         Assert::assertSame($tenant->id, $foundTenant->id);
-    }
+    });
 
-    public function testCanFindActiveTenants(): void
-    {
+    test('can find active tenants', function (): void {
         $marker = 'active-tenant-'.uniqid();
 
         TenantFactory::new()->createOne(['name' => $marker.'-1', 'is_active' => true]);
@@ -141,10 +119,9 @@ class TenantTest extends TestCase
 
         Assert::assertCount(2, $activeTenants);
         Assert::assertTrue($activeTenants->every(fn ($tenant) => (bool) $tenant->is_active));
-    }
+    });
 
-    public function testCanFindTenantsByNamePattern(): void
-    {
+    test('can find tenants by name pattern', function (): void {
         $marker = 'company-pattern-'.uniqid();
 
         TenantFactory::new()->createOne(['name' => $marker.' Development Company']);
@@ -155,10 +132,9 @@ class TenantTest extends TestCase
 
         Assert::assertCount(1, $companyTenants);
         Assert::assertTrue($companyTenants->every(fn ($tenant) => str_contains((string) $tenant->name, 'Company')));
-    }
+    });
 
-    public function testCanFindTenantsByDomainPattern(): void
-    {
+    test('can find tenants by domain pattern', function (): void {
         $marker = uniqid();
 
         TenantFactory::new()->createOne(['domain' => 'dev-'.$marker.'.example.com']);
@@ -169,10 +145,9 @@ class TenantTest extends TestCase
 
         Assert::assertCount(3, $exampleTenants);
         Assert::assertTrue($exampleTenants->every(fn ($tenant) => str_ends_with((string) $tenant->domain, '.example.com')));
-    }
+    });
 
-    public function testCanUpdateTenant(): void
-    {
+    test('can update tenant', function (): void {
         $tenant = TenantFactory::new()->createOne(['name' => 'Old Name']);
 
         $tenant->update(['name' => 'New Name']);
@@ -181,10 +156,9 @@ class TenantTest extends TestCase
             'id' => $tenant->id,
             'name' => 'New Name',
         ]);
-    }
+    });
 
-    public function testCanHandleNullValues(): void
-    {
+    test('can handle null values', function (): void {
         $tenant = TenantFactory::new()->createOne([
             'name' => 'Test Tenant',
             'domain' => null,
@@ -193,10 +167,9 @@ class TenantTest extends TestCase
 
         Assert::assertNull($tenant->domain);
         Assert::assertNull($tenant->database);
-    }
+    });
 
-    public function testCanFindTenantsByMultipleCriteria(): void
-    {
+    test('can find tenants by multiple criteria', function (): void {
         $marker = 'multi-criteria-'.uniqid();
 
         TenantFactory::new()->createOne([
@@ -222,33 +195,28 @@ class TenantTest extends TestCase
         Assert::assertNotNull($firstTenant);
         Assert::assertSame($marker.' Active Company', $firstTenant->name);
         Assert::assertTrue((bool) $firstTenant->is_active);
-    }
+    });
 
-    public function testTenantHasUsersRelationship(): void
-    {
+    test('tenant has users relationship', function (): void {
         $tenant = TenantFactory::new()->createOne();
-    }
+    });
 
-    public function testTenantHasMembersRelationship(): void
-    {
+    test('tenant has members relationship', function (): void {
         $tenant = TenantFactory::new()->createOne();
-    }
+    });
 
-    public function testTenantHasMediaRelationship(): void
-    {
+    test('tenant has media relationship', function (): void {
         $tenant = TenantFactory::new()->createOne();
-    }
+    });
 
-    public function testTenantHasFactory(): void
-    {
+    test('tenant has factory', function (): void {
         $tenant = TenantFactory::new()->createOne();
 
         Assert::assertNotNull($tenant->id);
         Assert::assertInstanceOf(Tenant::class, $tenant);
-    }
+    });
 
-    public function testCanFindTenantsByTrialStatus(): void
-    {
+    test('can find tenants by trial status', function (): void {
         $this->skipUnlessTenantColumn('trial_ends_at');
 
         $marker = 'trial-status-'.uniqid();
@@ -272,10 +240,9 @@ class TenantTest extends TestCase
         $firstTrial = $activeTrials->first();
         Assert::assertNotNull($firstTrial);
         Assert::assertSame($activeTenant->id, $firstTrial->id);
-    }
+    });
 
-    public function testCanFindTenantsBySettingsValue(): void
-    {
+    test('can find tenants by settings value', function (): void {
         $this->skipUnlessTenantColumn('settings');
 
         $marker = 'settings-theme-'.uniqid();
@@ -301,5 +268,5 @@ class TenantTest extends TestCase
         /** @var array<string, mixed> $settings */
         $settings = $firstDark->settings ?? [];
         Assert::assertSame('dark', $settings['theme'] ?? null);
-    }
-}
+    });
+});

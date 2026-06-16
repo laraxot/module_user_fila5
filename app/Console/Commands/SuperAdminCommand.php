@@ -9,7 +9,6 @@ use Illuminate\Support\Str;
 use Modules\User\Models\Role;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
-use Throwable;
 use Webmozart\Assert\Assert;
 
 class SuperAdminCommand extends Command
@@ -24,7 +23,7 @@ class SuperAdminCommand extends Command
     {
         $email = $this->resolveEmail();
 
-        if ($email === null) {
+        if (null === $email) {
             return self::FAILURE;
         }
 
@@ -36,7 +35,7 @@ class SuperAdminCommand extends Command
 
         $user = XotData::make()->findUserByEmail($email);
 
-        if ($user === null) {
+        if (null === $user) {
             $this->error("Utente non trovato per email: {$email}");
 
             return self::FAILURE;
@@ -58,12 +57,12 @@ class SuperAdminCommand extends Command
     private function resolveEmail(): ?string
     {
         $fromOption = $this->option('email');
-        if (is_string($fromOption) && $fromOption !== '') {
+        if (is_string($fromOption) && '' !== $fromOption) {
             return strtolower(trim($fromOption));
         }
 
         $fromArgument = $this->argument('email');
-        if (is_string($fromArgument) && $fromArgument !== '') {
+        if (is_string($fromArgument) && '' !== $fromArgument) {
             return strtolower(trim($fromArgument));
         }
 
@@ -78,13 +77,13 @@ class SuperAdminCommand extends Command
             Assert::string($asked);
 
             return strtolower(trim($asked));
-        } catch (Throwable $exception) {
+        } catch (\Throwable $exception) {
             // WSL / TTY: fallback senza stty (Laravel Prompts fallisce qui)
             $this->warn('Prompt avanzato non disponibile, inserisci email:');
 
             $line = fgets(STDIN);
 
-            if (! is_string($line) || trim($line) === '') {
+            if (! is_string($line) || '' === trim($line)) {
                 $this->error('Email non fornita. Usa: php artisan user:super-admin --email=tuo@email.com');
                 $this->error($exception->getMessage());
 

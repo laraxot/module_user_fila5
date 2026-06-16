@@ -2,27 +2,30 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
+namespace Modules\User\Tests\Unit\Traits;
+
+use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesFixture;
 use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesMockableFixture;
 use Modules\User\Traits\PasswordValidationRules;
-use ReflectionClass;
+use PHPUnit\Framework\Assert;
 
-test('PasswordValidationRules trait can be used', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-    Assert::assertTrue(trait_exists(PasswordValidationRules::class));
-    Assert::assertInstanceOf(PasswordValidationRulesFixture::class, new PasswordValidationRulesFixture());
-});
+uses(TestCase::class);
 
-test('PasswordValidationRules trait provides passwordRules method', function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-    $reflection = new ReflectionClass(PasswordValidationRules::class);
+describe('Password Validation Rules', function (): void {
+    test('password validation rules trait can be used', function (): void {
+        Assert::assertTrue(trait_exists(PasswordValidationRules::class));
+        Assert::assertInstanceOf(PasswordValidationRulesFixture::class, new PasswordValidationRulesFixture());
+    });
 
-    Assert::assertTrue($reflection->hasMethod('passwordRules'));
-    $fixture = new PasswordValidationRulesMockableFixture();
-    $rules = $fixture->getPasswordRules();
+    test('password validation rules trait provides password rules method', function (): void {
+        $reflection = new \ReflectionClass(PasswordValidationRules::class);
 
-    Assert::assertCount(3, $rules);
-    Assert::assertSame(['required', 'string', 'confirmed'], $rules);
+        Assert::assertTrue($reflection->hasMethod('passwordRules'));
+        $fixture = new PasswordValidationRulesMockableFixture();
+        $rules = $fixture->getPasswordRules();
+
+        Assert::assertCount(3, $rules);
+        Assert::assertSame(['required', 'string', 'confirmed'], $rules);
+    });
 });

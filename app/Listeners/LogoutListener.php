@@ -9,9 +9,9 @@ declare(strict_types=1);
 namespace Modules\User\Listeners;
 
 use Illuminate\Auth\Events\Logout;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Database\Eloquent\Model;
 use Modules\User\Actions\GetCurrentDeviceAction;
 use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Models\DeviceUser;

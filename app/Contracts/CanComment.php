@@ -25,10 +25,7 @@ interface CanComment
     /** @return string */
     public function getMorphClass();
 
-    /**
-     * @return void
-     */
-    public function notify($instance);
+    public function notify(object $instance): void;
 
     public function subscribeToCommentNotifications(
         Model $hasComments,

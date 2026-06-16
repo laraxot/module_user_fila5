@@ -38,7 +38,6 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static Builder<static>|PasswordReset whereUuid($value)
  *
- *
  * @property ProfileContract|null $deleter
  *
  * @method static \Modules\User\Database\Factories\PasswordResetFactory factory($count = null, $state = [])

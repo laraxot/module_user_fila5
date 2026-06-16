@@ -43,7 +43,10 @@
   "autoload-dev": {
     "psr-4": {
       "Modules\\User\\Tests\\": "tests/"
-    }
+    },
+    "files": [
+      "tests/Support/helpers.php"
+    ]
   },
   "require": {
     "flowframe/laravel-trend": "*",

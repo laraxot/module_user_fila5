@@ -2,8 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Datas\DeviceData;
 use Modules\User\Datas\FilamentShieldData;
 use Modules\User\Datas\FilamentUserData;
@@ -15,9 +14,10 @@ use Modules\User\Datas\PermissionTableNamesData;
 use Modules\User\Datas\ShieldResourceData;
 use Modules\User\Datas\SocialProviderData;
 use Modules\User\Datas\SuperAdminData;
+use PHPUnit\Framework\Assert;
 
 test('PermissionTableNamesData can be instantiated', function () {
-        try {
+    try {
         $data = PermissionTableNamesData::from([]);
         Assert::assertInstanceOf(PermissionTableNamesData::class, $data);
     } catch (Exception $e) {
@@ -26,7 +26,7 @@ test('PermissionTableNamesData can be instantiated', function () {
 });
 
 test('ShieldResourceData can be instantiated', function () {
-        try {
+    try {
         $data = ShieldResourceData::from([]);
         Assert::assertInstanceOf(ShieldResourceData::class, $data);
     } catch (Exception $e) {
@@ -35,7 +35,7 @@ test('ShieldResourceData can be instantiated', function () {
 });
 
 test('FilamentUserData can be instantiated', function () {
-        try {
+    try {
         $data = FilamentUserData::from([]);
         Assert::assertInstanceOf(FilamentUserData::class, $data);
     } catch (Exception $e) {
@@ -44,7 +44,7 @@ test('FilamentUserData can be instantiated', function () {
 });
 
 test('SuperAdminData can be instantiated', function () {
-        try {
+    try {
         $data = SuperAdminData::from([]);
         Assert::assertInstanceOf(SuperAdminData::class, $data);
     } catch (Exception $e) {
@@ -53,7 +53,7 @@ test('SuperAdminData can be instantiated', function () {
 });
 
 test('PermissionData can be instantiated', function () {
-        try {
+    try {
         $data = PermissionData::from([]);
         Assert::assertInstanceOf(PermissionData::class, $data);
     } catch (Exception $e) {
@@ -62,7 +62,7 @@ test('PermissionData can be instantiated', function () {
 });
 
 test('PermissionColumnNamesData can be instantiated', function () {
-        try {
+    try {
         $data = PermissionColumnNamesData::from([]);
         Assert::assertInstanceOf(PermissionColumnNamesData::class, $data);
     } catch (Exception $e) {
@@ -71,7 +71,7 @@ test('PermissionColumnNamesData can be instantiated', function () {
 });
 
 test('PermissionCacheData can be instantiated', function () {
-        try {
+    try {
         $data = PermissionCacheData::from([]);
         Assert::assertInstanceOf(PermissionCacheData::class, $data);
     } catch (Exception $e) {
@@ -80,7 +80,7 @@ test('PermissionCacheData can be instantiated', function () {
 });
 
 test('DeviceData can be instantiated', function () {
-        try {
+    try {
         $data = DeviceData::from([]);
         Assert::assertInstanceOf(DeviceData::class, $data);
     } catch (Exception $e) {
@@ -89,7 +89,7 @@ test('DeviceData can be instantiated', function () {
 });
 
 test('SocialProviderData can be instantiated', function () {
-        try {
+    try {
         $data = SocialProviderData::from([]);
         Assert::assertInstanceOf(SocialProviderData::class, $data);
     } catch (Exception $e) {
@@ -98,7 +98,7 @@ test('SocialProviderData can be instantiated', function () {
 });
 
 test('FilamentShieldData can be instantiated', function () {
-        try {
+    try {
         $data = FilamentShieldData::from([]);
         Assert::assertInstanceOf(FilamentShieldData::class, $data);
     } catch (Exception $e) {
@@ -107,7 +107,7 @@ test('FilamentShieldData can be instantiated', function () {
 });
 
 test('PermissionModelsData can be instantiated', function () {
-        try {
+    try {
         $data = PermissionModelsData::from([]);
         Assert::assertInstanceOf(PermissionModelsData::class, $data);
     } catch (Exception $e) {

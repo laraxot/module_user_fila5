@@ -2,18 +2,21 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use DateInterval;
+namespace Modules\User\Tests\Unit\Datas;
+
 use Modules\User\Datas\FilamentShieldData;
 use Modules\User\Datas\PermissionData;
 use Modules\User\Datas\SocialiteUserAttributesData;
 use Modules\User\Enums\Enums\LanguageEnum as NestedLanguageEnum;
 use Modules\User\Enums\LanguageEnum;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-describe('User datas and enums coverage', function (): void {
-    it('creates SocialiteUserAttributesData with expected values', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+uses(TestCase::class);
+
+describe('User Datas And Enums Coverage', function (): void {
+    test('creates socialite user attributes data with expected values', function (): void {
+        /** @var TestCase $this */
         $data = new SocialiteUserAttributesData(
             name: 'Mario',
             firstName: 'Mario',
@@ -27,8 +30,8 @@ describe('User datas and enums coverage', function (): void {
         Assert::assertSame('github', $data->provider);
     });
 
-    it('builds PermissionData from permission config', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+    test('builds permission data from permission config', function (): void {
+        /* @var TestCase $this */
         config([
             'permission' => [
                 'models' => [
@@ -54,7 +57,7 @@ describe('User datas and enums coverage', function (): void {
                 'display_role_in_exception' => false,
                 'enable_wildcard_permission' => false,
                 'cache' => [
-                    'expiration_time' => new DateInterval('PT24H'),
+                    'expiration_time' => new \DateInterval('PT24H'),
                     'key' => 'spatie.permission.cache',
                     'store' => 'default',
                 ],
@@ -69,8 +72,8 @@ describe('User datas and enums coverage', function (): void {
         Assert::assertSame('spatie.permission.cache', $data->cache->key);
     });
 
-    it('builds FilamentShieldData from filament-shield config', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+    test('builds filament shield data from filament shield config', function (): void {
+        /* @var TestCase $this */
         config([
             'filament-shield' => [
                 'shield_resource' => [
@@ -100,13 +103,13 @@ describe('User datas and enums coverage', function (): void {
         Assert::assertTrue($data->filament_user->enabled);
     });
 
-    it('returns labels for both language enums', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+    test('returns labels for both language enums', function (): void {
+        /* @var TestCase $this */
         app()->setLocale('it');
 
         $italianLabel = LanguageEnum::ITALIAN->getLabel();
         if (str_contains((string) $italianLabel, 'language_enum')) {
-            $this->markTestSkipped('Language enum translations not loaded in test environment.');
+            $this->skipTest('Language enum translations not loaded in test environment.');
         }
 
         Assert::assertSame('Italiano', $italianLabel);

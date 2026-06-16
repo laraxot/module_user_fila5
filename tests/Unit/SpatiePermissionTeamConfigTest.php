@@ -2,8 +2,7 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use Illuminate\Support\Facades\Config;
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;

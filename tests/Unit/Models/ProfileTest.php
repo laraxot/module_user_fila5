@@ -2,15 +2,14 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Modules\User\Models\Profile;
 use PHPUnit\Framework\Assert;
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function modelsProfileCreate(array $attributes = []): Profile
 {
@@ -23,7 +22,7 @@ function modelsProfileCreate(array $attributes = []): Profile
         'status' => 'active',
     ], $attributes);
 
-    /** @var \Modules\User\Models\Profile $created */
+    /** @var Profile $created */
     $created = Profile::withoutEvents(static function () use ($payload): Profile {
         $profile = new Profile();
         $profile->forceFill($payload);
@@ -38,7 +37,7 @@ function modelsProfileCreate(array $attributes = []): Profile
 }
 
 /**
- * @param  array<string, mixed>  $where
+ * @param array<string, mixed> $where
  */
 function modelsProfileAssertInDatabase(array $where): void
 {

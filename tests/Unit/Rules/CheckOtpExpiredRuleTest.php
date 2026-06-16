@@ -2,11 +2,10 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Database\Factories\UserFactory;
-use PHPUnit\Framework\Assert;
-use Modules\User\Models\User;
 use Modules\User\Rules\CheckOtpExpiredRule;
+use PHPUnit\Framework\Assert;
 
 test('CheckOtpExpiredRule can be instantiated', function () {
     $user = UserFactory::new()->makeOne();

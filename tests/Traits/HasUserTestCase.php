@@ -2,23 +2,16 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use Modules\User\Database\Factories\UserFactory;
+namespace Modules\User\Tests\Traits;
+
 use Modules\User\Models\User;
 
 /**
- * Trait HasUserTestCase.
+ * Type-safe $user property for Pest / PHPUnit test cases.
  *
- * Provides type-safe $user property for Pest test cases.
- *
- * @property User $user The authenticated user instance for testing
+ * @property User $user
  */
 trait HasUserTestCase
 {
-    /**
-     * The user instance for testing.
-     *
-     * Typically initialized in beforeEach() with UserFactory::new()->createOne()
-     */
     protected User $user;
 }

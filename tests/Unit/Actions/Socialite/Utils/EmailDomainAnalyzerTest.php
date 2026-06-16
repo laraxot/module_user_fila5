@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Support\Facades\Config;
-use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User as SocialiteUser;
 use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\Utils\EmailDomainAnalyzer;
+use PHPUnit\Framework\Assert;
 
 function createMockSocialiteUser(?string $email): SocialiteUser
 {
@@ -19,12 +18,12 @@ function createMockSocialiteUser(?string $email): SocialiteUser
 
 describe('EmailDomainAnalyzer', function () {
     beforeEach(function () {
+        /* @var \Modules\User\Tests\TestCase $this */
         Config::set('services.google.email_domains.first_party.tld', null);
         Config::set('services.google.email_domains.client.tld', null);
     });
 
     it('throws for empty provider', function () {
-
     });
 
     it('detects first party domain', function () {

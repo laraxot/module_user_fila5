@@ -20,9 +20,9 @@ use Modules\Notify\Emails\SpatieEmail;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Filament\Widgets\Auth\ForgotPasswordWidget;
 use Modules\User\Filament\Widgets\Auth\LoginWidget;
-use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Filament\Widgets\Auth\PasswordResetConfirmWidget;
 use Modules\User\Filament\Widgets\Auth\PasswordResetWidget;
+use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Filament\Widgets\Auth\ResetPasswordWidget;
 use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
 use Modules\Xot\Contracts\UserContract;
@@ -86,12 +86,12 @@ class UserServiceProvider extends XotBaseServiceProvider
             $serviceConfig = config("services.{$provider}", []);
 
             $clientId = $serviceConfig['client_id'] ?? null;
-            if (is_string($clientId) && $clientId !== '') {
+            if (is_string($clientId) && '' !== $clientId) {
                 Config::set("user.social-providers.{$provider}.client_id", $clientId);
             }
 
             $clientSecret = $serviceConfig['client_secret'] ?? null;
-            if (is_string($clientSecret) && $clientSecret !== '') {
+            if (is_string($clientSecret) && '' !== $clientSecret) {
                 Config::set("user.social-providers.{$provider}.client_secret", $clientSecret);
             }
         }

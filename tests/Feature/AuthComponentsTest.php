@@ -2,39 +2,42 @@
 
 declare(strict_types=1);
 
-uses(\Modules\User\Tests\TestCase::class);
-use PHPUnit\Framework\Assert;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
 use Modules\User\Models\Profile;
+use Modules\User\Tests\TestCase;
 
-describe('Auth Components Tests', function (): void {
+use function Pest\Laravel\actingAs;
+use function Pest\Laravel\get;
+
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
+
+describe('Auth components', function (): void {
     test('auth components exist and work correctly', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
         Assert::assertTrue(View::exists('components.auth-session-status'));
         Assert::assertTrue(View::exists('user::components.auth-header'));
         Assert::assertTrue(View::exists('user::components.auth-session-status'));
     });
 
     test('auth layout components exist and work correctly', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
         Assert::assertTrue(View::exists('components.layouts.auth'));
         Assert::assertTrue(View::exists('user::layouts.auth'));
     });
 
     test('login page loads correctly', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
-        $this->get('/it/auth/login')->assertStatus(200);
+        $response = get('/it/auth/login');
+        Assert::assertSame(200, $response->status());
     });
 
     test('register page loads correctly', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
-        $this->get('/it/auth/register')->assertStatus(200);
+        $response = get('/it/auth/register');
+        Assert::assertSame(200, $response->status());
     });
 
-    test('auth-session-status component renders correctly', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+    test('auth session status component renders correctly', function (): void {
         $html = view('components.auth-session-status', ['status' => 'Test status'])->render();
 
         Assert::assertIsString($html);
@@ -42,54 +45,49 @@ describe('Auth Components Tests', function (): void {
     });
 
     test('auth header component exists and renders', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
         Assert::assertTrue(View::exists('user::components.auth-header'));
         $html = view('user::components.auth-header', [
             'title' => 'Login Test',
             'description' => 'Test description',
         ])->render();
 
-        Assert::assertStringContainsString((string) 'Login Test', (string) $html);
-        Assert::assertStringContainsString((string) 'Test description', (string) $html);
+        Assert::assertStringContainsString('Login Test', $html);
+        Assert::assertStringContainsString('Test description', $html);
     });
-});
 
-describe('Authentication Flow with Reorganized Components', function (): void {
     test('login form components work after reorganization', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
-        $response = $this->get('/it/auth/login');
+        $response = get('/it/auth/login');
 
         Assert::assertSame(200, $response->status());
-        $content = $response->getContent() ?? '';
+        $content = (string) $response->getContent();
         Assert::assertTrue(
-            str_contains((string) $content, 'Login')
-            || str_contains((string) $content, 'login')
-            || str_contains((string) $content, 'Accedi')
-            || str_contains((string) $content, 'accedi')
+            str_contains($content, 'Login')
+            || str_contains($content, 'login')
+            || str_contains($content, 'Accedi')
+            || str_contains($content, 'accedi')
         );
     });
 
     test('password confirmation uses reorganized components', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
         $user = createTestUser();
 
         try {
-            $this->actingAs($user)
-                ->get('/it/auth/password/confirm')
-                ->assertStatus(200);
-        } catch (\Throwable $e) {
-            $this->markTestSkipped('Password confirm route unavailable in test env: '.$e->getMessage());
+            actingAs($user);
+            $response = get('/it/auth/password/confirm');
+            Assert::assertSame(200, $response->status());
+        } catch (Throwable $e) {
+            skip(
+                'Password confirm route unavailable in test env: '.$e->getMessage()
+            );
         }
     });
-});
 
-describe('User Profile Components Tests', function (): void {
-    test('profile pages use reorganized components correctly', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+    test('profile pages use reorganized components', function (): void {
         $user = createTestUser();
 
         if (class_exists(Profile::class)) {
-            $hasUuid = Schema::connection('user')->hasColumn('profiles', 'uuid');
+            $hasUuid = Schema::connection('user')
+                ->hasColumn('profiles', 'uuid');
             $profileData = [
                 'id' => $user->id,
                 'user_id' => $user->id,
@@ -102,17 +100,18 @@ describe('User Profile Components Tests', function (): void {
             }
             try {
                 Profile::create($profileData);
-            } catch (\Throwable) {
-                // Profile creation may fail in test env; continue with user only
+            } catch (Throwable) {
             }
         }
 
         try {
-            $this->actingAs($user, 'web')
-                ->get('/it/profile/edit')
-                ->assertStatus(200);
-        } catch (\Throwable $e) {
-            $this->markTestSkipped('Profile edit route unavailable in test env: '.$e->getMessage());
+            actingAs($user, 'web');
+            $response = get('/it/profile/edit');
+            Assert::assertSame(200, $response->status());
+        } catch (Throwable $e) {
+            skip(
+                'Profile edit route unavailable in test env: '.$e->getMessage()
+            );
         }
     });
 });
