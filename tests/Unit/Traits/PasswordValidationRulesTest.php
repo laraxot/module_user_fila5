@@ -25,7 +25,9 @@ describe('Password Validation Rules', function (): void {
         $fixture = new PasswordValidationRulesMockableFixture();
         $rules = $fixture->getPasswordRules();
 
-        Assert::assertCount(3, $rules);
-        Assert::assertSame(['required', 'string', 'confirmed'], $rules);
+        Assert::assertCount(4, $rules);
+        Assert::assertSame('required', $rules[0]);
+        Assert::assertSame('string', $rules[1]);
+        Assert::assertSame('confirmed', $rules[3]);
     });
 });
