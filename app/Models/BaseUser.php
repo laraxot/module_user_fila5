@@ -24,10 +24,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
-use Modules\Comment\Models\Concerns\InteractsWithComments;
-use Modules\Comment\Models\Contracts\CanComment;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
-use Modules\User\Models\Traits\HasCommentatorRelations;
 use Modules\User\Models\Traits\HasDevices;
 use Modules\User\Models\Traits\HasModules;
 use Modules\User\Models\Traits\HasSocialite;
@@ -128,11 +125,10 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  *
  * @mixin \Eloquent
  */
-abstract class BaseUser extends Authenticatable implements CanComment, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
+abstract class BaseUser extends Authenticatable implements HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
 {
     use HasApiTokens;
     use HasAuthenticationLogTrait;
-    use HasCommentatorRelations;
     use HasChildren;
     use HasDevices;
     use HasModules;
@@ -143,7 +139,6 @@ abstract class BaseUser extends Authenticatable implements CanComment, HasMedia,
     /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
     use HasXotFactory;
     use InteractsWithMedia;
-    use InteractsWithComments;
     use Notifiable;
 
     // use SoftDeletes;
