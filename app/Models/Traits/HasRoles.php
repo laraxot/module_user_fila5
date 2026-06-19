@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models\Traits;
 
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 use Modules\User\Models\Role;
 use Spatie\Permission\Traits\HasRoles as SpatieHasRoles;
 
@@ -15,7 +16,7 @@ trait HasRoles
     /**
      * A user may have multiple roles.
      *
-     * @return BelongsToMany<Role, $this>
+     * @return BelongsToMany<Role, $this, Pivot, 'pivot'>
      */
     public function roles(): BelongsToMany
     {

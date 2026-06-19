@@ -13,21 +13,13 @@ trait HasPasswordExpiry
     {
         $pwd = PasswordData::make();
 
-        static::creating(function ($model) use ($pwd): void {
-            if (! $model instanceof Model) {
-                return;
-            }
-
+        static::creating(static function (Model $model) use ($pwd): void {
             if (filled($model->getAttribute('password'))) {
                 $model->setAttribute('password_expires_at', now()->addDays($pwd->expires_in));
             }
         });
 
-        static::updating(function ($model) use ($pwd): void {
-            if (! $model instanceof Model) {
-                return;
-            }
-
+        static::updating(static function (Model $model) use ($pwd): void {
             if ($model->isDirty('password') && filled($model->getAttribute('password'))) {
                 $model->setAttribute('password_expires_at', now()->addDays($pwd->expires_in));
             }
