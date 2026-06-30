@@ -12,8 +12,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
@@ -27,7 +25,9 @@ use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
+use Modules\User\Models\Traits\HasDevices;
 use Modules\User\Models\Traits\HasModules;
+use Modules\User\Models\Traits\HasSocialite;
 use Modules\User\Models\Traits\HasSpatiePermission;
 use Modules\User\Models\Traits\HasTeams;
 use Modules\Xot\Contracts\ProfileContract;
@@ -125,15 +125,18 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  *
  * @mixin \Eloquent
  */
-abstract class BaseUser extends Authenticatable implements HasMedia, HasName, HasTenants, MustVerifyEmail, UserContract, OAuthenticatable
+abstract class BaseUser extends Authenticatable implements HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
 {
     use HasApiTokens;
     use HasAuthenticationLogTrait;
     use HasChildren;
+    use HasDevices;
     use HasModules;
+    use HasSocialite;
     use HasSpatiePermission;
     use HasTeams;
     use HasUuids;
+    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
     use HasXotFactory;
     use InteractsWithMedia;
     use Notifiable;
@@ -142,25 +145,18 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     use Traits\HasTenants;
     use XotTraits\RelationX;
 
-    /** @var bool */
     public $incrementing = false;
 
-    /** @var Pivot|null */
-    public $pivot;
+    public ?Pivot $pivot = null;
 
-    /** @var string */
     protected $connection = 'user';
 
-    /** @var string */
     protected $primaryKey = 'id';
 
-    /** @var string */
     protected $keyType = 'string';
 
-    /** @var string */
-    protected $childColumn = 'type';
+    protected string $childColumn = 'type';
 
-    /** @var list<string> */
     protected $fillable = [
         'id',
         // 'ente',
@@ -201,17 +197,14 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     /** @var array<string, class-string> */
     protected $childTypes = [];
 
-    /** @var array<string, mixed> */
     protected $attributes = [
         'is_active' => true,
     ];
 
     /**
      * Guard coerente con Spatie/Permission: deve essere 'web'.
-     *
-     * @var string
      */
-    protected $guard_name = 'web';
+    protected string $guard_name = 'web';
 
     public function __construct(array $attributes = [])
     {
@@ -262,22 +255,36 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return $fullName;
     }
 
+    /**
+     * @return HasOne<Model&ProfileContract, $this>
+     *
+     * @phpstan-return HasOne<Model&ProfileContract, $this>
+     */
     #[\Override]
     public function profile(): HasOne
     {
         $profileClass = XotData::make()->getProfileClass();
         if (class_exists($profileClass)) {
-            return $this->hasOne($profileClass);
+            /** @var HasOne<Model&ProfileContract, $this> $relation */
+            $relation = $this->hasOne($profileClass);
+
+            return $relation;
         }
 
         // Try direct module class if XotData failed
         $directClass = 'Modules\User\Models\Profile';
         if (class_exists($directClass)) {
-            return $this->hasOne($directClass);
+            /** @var HasOne<Model&ProfileContract, $this> $relation */
+            $relation = $this->hasOne($directClass);
+
+            return $relation;
         }
 
         // Fallback: stay on current model if nothing found
-        return $this->hasOne(static::class, 'id', 'id')->whereRaw('1=0');
+        /** @var HasOne<Model&ProfileContract, $this> $relation */
+        $relation = $this->hasOne(static::class, 'id', 'id')->whereRaw('1=0');
+
+        return $relation;
     }
 
     /**
@@ -316,25 +323,14 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return true; // str_ends_with($this->email, '@yourdomain.com') && $this->hasVerifiedEmail();
     }
 
-    public function canAccessSocialite(): bool
-    {
-        return true;
-    }
-
     public function detach(Model $model): void
     {
-        // @phpstan-ignore function.alreadyNarrowedType
-        if (method_exists($this, 'teams')) {
-            $this->teams()->detach($model);
-        }
+        $this->teams()->detach($model);
     }
 
     public function attach(Model $model): void
     {
-        // @phpstan-ignore function.alreadyNarrowedType
-        if (method_exists($this, 'teams')) {
-            $this->teams()->attach($model);
-        }
+        $this->teams()->attach($model);
     }
 
     public function treeLabel(): string
@@ -342,56 +338,35 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return (string) ($this->name ?? $this->email);
     }
 
+    /**
+     * @return Collection<int, Team>
+     */
+    /**
+     * @return Collection<int, Team>
+     */
     public function treeSons(): Collection
     {
         return $this->teams ?? new Collection();
     }
 
     /**
-     * Get the devices associated with the user.
-     *
-     * @return BelongsToMany<Device, static>
-     */
-    public function devices(): BelongsToMany
-    {
-        return $this->belongsToManyX(Device::class);
-    }
-
-    /**
-     * Get the socialite users associated with the user.
-     *
-     * @return HasMany<SocialiteUser, $this>
-     */
-    public function socialiteUsers(): HasMany
-    {
-        return $this->hasMany(SocialiteUser::class);
-    }
-
-    public function getProviderField(string $provider, string $field): string
-    {
-        $socialiteUser = $this->socialiteUsers()->firstWhere(['provider' => $provider]);
-        if (null === $socialiteUser) {
-            throw new \Exception('SocialiteUser not found');
-        }
-
-        $res = $socialiteUser->{$field};
-
-        return (string) $res;
-    }
-
-    /**
      * Get the entity's notifications.
      *
-     * @return MorphMany<Notification, static|$this>
+     * @return MorphMany<Notification, $this>
      */
     public function notifications(): MorphMany
     {
-        return $this->morphMany(Notification::class, 'notifiable'); // @phpstan-ignore return.type
+        return $this->morphMany(Notification::class, 'notifiable');
     }
 
+    /**
+     * Get the user's latest authentication log.
+     *
+     * @return MorphOne<AuthenticationLog, $this>
+     */
     public function latestAuthentication(): MorphOne
     {
-        return $this->morphOne(AuthenticationLog::class, 'authenticatable')->latestOfMany(); // @phpstan-ignore return.type
+        return $this->morphOne(AuthenticationLog::class, 'authenticatable')->latestOfMany();
     }
 
     public function getFullNameAttribute(?string $value): string
@@ -490,6 +465,22 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return $this->morphMany(OauthClient::class, 'owner');
     }
 
+    /**
+     * Find the user instance for the given username.
+     */
+    public static function findForPassport(string $username): ?self
+    {
+        return static::where('email', $username)->first();
+    }
+
+    /**
+     * Validate the password of the user for the given password.
+     */
+    public function validateForPassportPasswordGrant(string $password): bool
+    {
+        return Hash::check($password, (string) $this->password);
+    }
+
     /** @return array<string, string> */
     protected function casts(): array
     {
@@ -511,21 +502,5 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
             'created_by' => 'string',
             'deleted_by' => 'string',
         ];
-    }
-
-    /**
-     * Find the user instance for the given username.
-     */
-    public static function findForPassport(string $username): ?self
-    {
-        return static::where('email', $username)->first();
-    }
-
-    /**
-     * Validate the password of the user for the given password.
-     */
-    public function validateForPassportPasswordGrant(string $password): bool
-    {
-        return Hash::check($password, (string) $this->password);
     }
 }

@@ -13,11 +13,6 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  */
 return new class extends XotBaseMigration {
     /**
-     * Nome della tabella gestita dalla migrazione.
-     */
-    protected string $table_name = 'team_user';
-
-    /**
      * Esegue la migrazione.
      */
     public function up(): void
@@ -33,30 +28,28 @@ return new class extends XotBaseMigration {
 
             // Indice univoco per evitare duplicati team_id + user_id
             $table->unique(['team_id', 'user_id']);
-            $table->softDeletes();
-            $table->timestamps();
         });
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
             // Converte solo i vecchi schemi con `id` non bigint (es. UUID/string).
-            // if ($this->hasColumn('id') && 'bigint' !== $this->getColumnType('id')) {
-            //     // Rimuoviamo la PRIMARY KEY esistente
-            //     // $this->dropPrimaryKey();
+            if ($this->hasColumn('id') && 'bigint' !== $this->getColumnType('id')) {
+                // Rimuoviamo la PRIMARY KEY esistente
+                $this->dropPrimaryKey();
 
-            //     // Se non esiste già, rinominiamo id a uuid per preservare i dati
-            //     if (! $this->hasColumn('uuid')) {
-            //         $this->renameColumn('id', 'uuid');
-            //     }
+                // Se non esiste già, rinominiamo id a uuid per preservare i dati
+                if (! $this->hasColumn('uuid')) {
+                    $this->renameColumn('id', 'uuid');
+                }
 
-            //     // Aggiungiamo la nuova colonna id come bigint autoincrement
-            //     if (! $this->hasColumn('id')) {
-            //         $table->id()->first();
-            //     }
+                // Aggiungiamo la nuova colonna id come bigint autoincrement
+                if (! $this->hasColumn('id')) {
+                    $table->id()->first();
+                }
 
-            //     // Impostiamo la nuova PRIMARY KEY su id
-            //     $this->query('ALTER TABLE `'.$this->table_name.'` ADD PRIMARY KEY (`id`)');
-            // }
+                // Impostiamo la nuova PRIMARY KEY su id
+                // $this->query('ALTER TABLE `'.$this->getTableName().'` ADD PRIMARY KEY (`id`)');
+            }
 
             if (! $this->hasColumn('role')) {
                 $table->string('role')->nullable();

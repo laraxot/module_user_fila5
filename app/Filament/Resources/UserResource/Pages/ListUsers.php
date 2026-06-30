@@ -59,7 +59,7 @@ class ListUsers extends BaseListUsers
                 ->tooltip(__('filament-actions::delete.single.label'))
                 ->color('danger')
                 ->icon('heroicon-o-trash')
-                ->action(fn (UserContract $user) => $user->delete()),
+                ->action(static fn (UserContract $user) => $user->delete()),
         ];
     }
 

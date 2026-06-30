@@ -6,7 +6,7 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 
@@ -59,11 +59,9 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $owner_id
  *
  * @method static Builder<static>|Team whereOwnerId($value)
- * @method static static               create(array $attributes = [])
- * @method static static               firstOrCreate(array $attributes, array $values = [])
- * @method static static               updateOrCreate(array $attributes, array $values = [])
- *
- * @mixin IdeHelperTeam
+ * @method static static               create(array<string, mixed> $attributes = [])
+ * @method static static               firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static               updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  *
  * @property ProfileContract|null $deleter
  *
@@ -100,6 +98,14 @@ class Team extends BaseTeam
     ];
 
     /**
+     * @return HasMany<TeamPermission, $this>
+     */
+    public function permissions(): HasMany
+    {
+        return $this->hasMany(TeamPermission::class);
+    }
+
+    /**
      * Get the attributes that should be cast.
      *
      * @return array<string, string>
@@ -110,10 +116,5 @@ class Team extends BaseTeam
             'personal_team' => 'boolean',
             'settings' => 'array',
         ];
-    }
-
-    public function permissions(): \Illuminate\Database\Eloquent\Relations\HasMany
-    {
-        return $this->hasMany(TeamPermission::class);
     }
 }

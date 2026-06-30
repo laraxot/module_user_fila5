@@ -1,4 +1,4 @@
-# UserFactory Advanced Integration - Modulo User & Quaeris
+# UserFactory Advanced Integration - Modulo User & healthcare_app
 
 ## Post Deep-Study Analysis 
 
@@ -9,7 +9,7 @@ Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integr
 ### Hierarchy Mapping
 ```
 BaseUser (User Module)
-├── User (Quaeris) - STI Base + Business Logic
+├── User (healthcare_app) - STI Base + Business Logic  
     ├── Patient (HasParent) - Healthcare Consumer
     ├── Doctor (HasParent) - Healthcare Provider  
     └── Admin (HasParent) - System Administrator
@@ -17,7 +17,7 @@ BaseUser (User Module)
 
 ### Cross-Module Compatibility Matrix
 
-| BaseUser Field | Quaeris User | Business Logic | Factory Support |
+| BaseUser Field | healthcare_app User | Business Logic | Factory Support |
 |----------------|----------------|----------------|-----------------|
 | `name` | `name` | Full name concat | ✅ Complete |
 | `email` | `email` | Authentication | ✅ Complete |
@@ -84,7 +84,7 @@ User::factory()->gdprCompliant()->create();
 // BaseUser (User Module) 
 protected $connection = 'user';
 
-// Quaeris User (Healthcare Domain)
+// healthcare_app User (Healthcare Domain)
 protected $connection = 'salute_ora';
 
 // Factory automatically handles connection switching
@@ -115,7 +115,7 @@ public function test_cross_module_compatibility()
     expect($user)->toHaveProperty('password'); 
     expect($user->email_verified_at)->toBeInstanceOf(Carbon::class);
     
-// Quaeris domain contracts
+    // healthcare_app domain contracts
     expect($user->type)->toBeInstanceOf(UserTypeEnum::class);
     expect($user->state)->toBeInstanceOf(UserState::class);
 }
@@ -261,7 +261,7 @@ public function run(): void
 - **Reusability**: Base authentication contracts preserved
 - **Testability**: Comprehensive user scenario testing
 
-### For Quaeris Module
+### For healthcare_app Module  
 - **Domain Focus**: Healthcare-specific data generation
 - **Business Logic**: Real-world scenario testing
 - **Compliance**: GDPR and healthcare regulation support
@@ -280,10 +280,10 @@ public function run(): void
 
 ## Link Documentazione
 
-### Quaeris Module
-- [Advanced Improvements Analysis](../../Quaeris/docs/factories/userfactory-advanced-improvements-analysis.md)
-- [Implementation Completed](../../Quaeris/docs/factories/userfactory_implementation_completed.md)
-- [Model States](../../Quaeris/docs/models/states.md)
+### healthcare_app Module
+- [Advanced Improvements Analysis](../../healthcare_app/docs/factories/userfactory-advanced-improvements-analysis.md)
+- [Implementation Completed](../../healthcare_app/docs/factories/userfactory_implementation_completed.md)
+- [Model States](../../healthcare_app/docs/models/states.md)
 
 ### User Module
 - [User Factory Integration](./user_factory_integration.md)
@@ -291,5 +291,5 @@ public function run(): void
 - [BaseUser Architecture](./parental_inheritance.md)
 
 ### Root Documentation  
-- [UserFactory Quaeris Integration](../../../../../docs/userfactory_Quaeris_integration.md)
+- [UserFactory healthcare_app Integration](../../../../../docs/userfactory_healthcare_app_integration.md)
 - [Testing Standards](../../../../../docs/testing_standards.md) 

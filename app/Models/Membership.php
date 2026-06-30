@@ -43,9 +43,6 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
- *
- * @mixin IdeHelperMembership
- *
  * @property ProfileContract|null $deleter
  *
  * @method static Builder<static>|Membership whereId($value)
@@ -64,16 +61,12 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class Membership extends BasePivot
 {
-    /** @var string */
     protected $connection = 'user';
 
-    /** @var string */
     protected $table = 'team_user';
 
     /**
      * The "type" of the primary key ID.
-     *
-     * @var string
      */
     protected $keyType = 'int';
 

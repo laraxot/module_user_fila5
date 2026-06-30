@@ -5,9 +5,13 @@ declare(strict_types=1);
 namespace Modules\User\Providers;
 
 use Carbon\CarbonInterval;
-use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Passport\AuthCode;
+use Laravel\Passport\Client;
+use Laravel\Passport\DeviceCode;
 use Laravel\Passport\Passport;
+use Laravel\Passport\RefreshToken;
+use Laravel\Passport\Token;
 use Modules\User\Models\OauthAuthCode;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthDeviceCode;
@@ -72,19 +76,29 @@ class PassportServiceProvider extends ServiceProvider
         $tokens = config('user.passport.tokens', []);
         Assert::isArray($tokens);
 
+        $accessToken = $tokens['access_token'] ?? 15;
+        Assert::integer($accessToken);
+        $refreshToken = $tokens['refresh_token'] ?? 30;
+        Assert::integer($refreshToken);
+        $personalAccessToken = $tokens['personal_access_token'] ?? 6;
+        Assert::integer($personalAccessToken);
+
         Passport::tokensExpireIn(
-            CarbonInterval::days((int) ($tokens['access_token'] ?? 15))
+            CarbonInterval::days($accessToken)
         );
 
         Passport::refreshTokensExpireIn(
-            CarbonInterval::days((int) ($tokens['refresh_token'] ?? 30))
+            CarbonInterval::days($refreshToken)
         );
 
         Passport::personalAccessTokensExpireIn(
-            CarbonInterval::months((int) ($tokens['personal_access_token'] ?? 6))
+            CarbonInterval::months($personalAccessToken)
         );
     }
 
+    /**
+     * Configura i modelli personalizzati.
+     */
     /**
      * Configura i modelli personalizzati.
      */
@@ -94,42 +108,30 @@ class PassportServiceProvider extends ServiceProvider
         Assert::isArray($models);
 
         $tokenModel = $models['token'] ?? OauthToken::class;
-        if (\is_string($tokenModel) && class_exists($tokenModel)) {
-            Assert::stringNotEmpty($tokenModel);
-            Assert::subclassOf($tokenModel, \Laravel\Passport\Token::class);
-            Passport::useTokenModel($tokenModel);
-        }
+        Assert::stringNotEmpty($tokenModel);
+        Assert::subclassOf($tokenModel, Token::class);
 
         $refreshTokenModel = $models['refresh_token'] ?? OauthRefreshToken::class;
-        if (\is_string($refreshTokenModel) && class_exists($refreshTokenModel)) {
-            Assert::stringNotEmpty($refreshTokenModel);
-            Assert::subclassOf($refreshTokenModel, \Laravel\Passport\RefreshToken::class);
-            Passport::useRefreshTokenModel($refreshTokenModel);
-        }
+        Assert::stringNotEmpty($refreshTokenModel);
+        Assert::subclassOf($refreshTokenModel, RefreshToken::class);
 
         $authCodeModel = $models['auth_code'] ?? OauthAuthCode::class;
-        if (\is_string($authCodeModel) && class_exists($authCodeModel)) {
-            Assert::stringNotEmpty($authCodeModel);
-            Assert::subclassOf($authCodeModel, \Laravel\Passport\AuthCode::class);
-            Passport::useAuthCodeModel($authCodeModel);
-        }
+        Assert::stringNotEmpty($authCodeModel);
+        Assert::subclassOf($authCodeModel, AuthCode::class);
 
         $clientModel = config('user.passport.client_model', OauthClient::class);
-        if (\is_string($clientModel) && class_exists($clientModel)) {
-            Assert::stringNotEmpty($clientModel);
-            Assert::subclassOf($clientModel, \Laravel\Passport\Client::class);
-            Passport::useClientModel($clientModel);
-        }
+        Assert::stringNotEmpty($clientModel);
+        Assert::subclassOf($clientModel, Client::class);
 
-        // @phpstan-ignore function.alreadyNarrowedType
-        if (method_exists(Passport::class, 'useDeviceCodeModel')) {
-            $deviceCodeModel = $models['device_code'] ?? OauthDeviceCode::class;
-            if (\is_string($deviceCodeModel) && class_exists($deviceCodeModel)) {
-                Assert::stringNotEmpty($deviceCodeModel);
-                Assert::subclassOf($deviceCodeModel, \Laravel\Passport\DeviceCode::class);
-                Passport::useDeviceCodeModel($deviceCodeModel);
-            }
-        }
+        Passport::useTokenModel($tokenModel);
+        Passport::useRefreshTokenModel($refreshTokenModel);
+        Passport::useAuthCodeModel($authCodeModel);
+        Passport::useClientModel($clientModel);
+
+        $deviceCodeModel = $models['device_code'] ?? OauthDeviceCode::class;
+        Assert::stringNotEmpty($deviceCodeModel);
+        Assert::subclassOf($deviceCodeModel, DeviceCode::class);
+        Passport::useDeviceCodeModel($deviceCodeModel);
     }
 
     /**
@@ -156,10 +158,7 @@ class PassportServiceProvider extends ServiceProvider
         }
 
         if (! empty($scopes)) {
-            // PHPStan: dopo i controlli Assert, l'array è garantito essere array<string, string>
-            /** @var array<string, string> $typedScopes */
-            $typedScopes = $scopes;
-            Passport::tokensCan($typedScopes);
+            Passport::tokensCan($scopes);
         }
     }
 

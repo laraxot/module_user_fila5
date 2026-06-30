@@ -38,8 +38,6 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static Builder<static>|PasswordReset whereUuid($value)
  *
- * @mixin IdeHelperPasswordReset
- *
  * @property ProfileContract|null $deleter
  *
  * @method static \Modules\User\Database\Factories\PasswordResetFactory factory($count = null, $state = [])
@@ -57,8 +55,6 @@ class PasswordReset extends BaseModel
 
     /**
      * The table associated with the model.
-     *
-     * @var string
      */
     protected $table = 'password_resets';
 }

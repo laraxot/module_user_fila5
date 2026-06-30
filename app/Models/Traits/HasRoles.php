@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models\Traits;
 
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 use Modules\User\Models\Role;
 use Spatie\Permission\Traits\HasRoles as SpatieHasRoles;
 
@@ -15,6 +15,8 @@ trait HasRoles
 
     /**
      * A user may have multiple roles.
+     *
+     * @return BelongsToMany<Role, $this, Pivot, 'pivot'>
      */
     public function roles(): BelongsToMany
     {
@@ -22,31 +24,5 @@ trait HasRoles
             'model_type',
             self::class,
         );
-    }
-
-    /**
-     * Determine if the user has the given role.
-     */
-    public function hasRoleTest(string|array|\Spatie\Permission\Contracts\Role|Collection $roles, ?string $guard = null): bool
-    {
-        if (is_string($roles) && str_contains($roles, '|')) {
-            $roles = explode('|', $roles);
-        }
-
-        if (is_string($roles)) {
-            return $this->roles->contains('name', $roles);
-        }
-
-        if (is_array($roles)) {
-            foreach ($roles as $role) {
-                if ($this->hasRole($role)) {
-                    return true;
-                }
-            }
-
-            return false;
-        }
-
-        return ! is_null($roles) && $this->roles->contains('id', $roles->id);
     }
 }

@@ -38,13 +38,13 @@ class RedirectToProviderController extends Controller
         }
 
         // PHPStan Level 10: Type guard for socialite provider chaining
-        $scopedProvider = $socialiteProvider->scopes($scopes); // @phpstan-ignore argument.type
+        $scopedProvider = $socialiteProvider->scopes($scopes);
 
-        if (! method_exists($scopedProvider, 'redirect')) { // @phpstan-ignore argument.type
+        if (! is_object($scopedProvider) || ! method_exists($scopedProvider, 'redirect')) {
             throw new \Exception('scopes() must return object with redirect method');
         }
 
-        $redirectResult = $scopedProvider->redirect(); // @phpstan-ignore method.nonObject
+        $redirectResult = $scopedProvider->redirect();
 
         if (! $redirectResult instanceof RedirectResponse) {
             throw new \Exception('Expected RedirectResponse from socialite provider');
