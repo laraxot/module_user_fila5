@@ -19,12 +19,12 @@ use Modules\User\Models\AuthenticationLog;
  *
  * @property MorphMany<AuthenticationLog, static> $authentications      The authentication logs related to the model.
  * @property MorphOne<AuthenticationLog, static>  $latestAuthentication The most recent authentication log entry.
- * @property string|null                         $login_at             The timestamp of the last login.
- * @property string|null                         $ip_address           The IP address of the last login.
- * @property MorphMany<AuthenticationLog>        $authentications
- * @property MorphOne<AuthenticationLog>         $latestAuthentication
- * @property Carbon|null                         $login_at
- * @property string|null                         $ip_address
+ * @property string|null                          $login_at             The timestamp of the last login.
+ * @property string|null                          $ip_address           The IP address of the last login.
+ * @property MorphMany<AuthenticationLog>         $authentications
+ * @property MorphOne<AuthenticationLog>          $latestAuthentication
+ * @property Carbon|null                          $login_at
+ * @property string|null                          $ip_address
  */
 trait HasAuthenticationLogTrait
 {
@@ -35,7 +35,7 @@ trait HasAuthenticationLogTrait
      */
     public function authentications(): MorphMany
     {
-        /** @var MorphMany<AuthenticationLog, static> */
+        /* @var MorphMany<AuthenticationLog, static> */
         return $this->morphMany(AuthenticationLog::class, 'authenticatable');
     }
 
