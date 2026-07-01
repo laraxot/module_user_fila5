@@ -38,7 +38,7 @@ function teamMgmtTeamUsersRelationSupported(): bool
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtCreateUser(array $attributes = []): User
 {
@@ -51,7 +51,7 @@ function teamMgmtCreateUser(array $attributes = []): User
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtCreateTeam(User $owner, array $attributes = []): Team
 {
@@ -74,7 +74,7 @@ function teamMgmtBootstrap(): array
 }
 
 /**
- * @param  array<string, mixed>  $pivot
+ * @param array<string, mixed> $pivot
  */
 function teamMgmtAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -118,7 +118,7 @@ function teamMgmtMemberExists(Team $team, User $user): bool
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtCreateInvitation(Team $team, array $attributes = []): TeamInvitation
 {
@@ -129,7 +129,7 @@ function teamMgmtCreateInvitation(Team $team, array $attributes = []): TeamInvit
         'role' => 'member',
     ], $attributes);
 
-    $invitation = new TeamInvitation;
+    $invitation = new TeamInvitation();
     $invitation->forceFill($payload);
     $invitation->save();
     $fresh = $invitation->fresh();

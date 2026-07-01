@@ -44,7 +44,7 @@ describe('Login User Action', function (): void {
             'email' => 'not-authenticatable@example.com',
         ]);
 
-        $socialiteUser->setRelation('user', new \stdClass);
+        $socialiteUser->setRelation('user', new \stdClass());
 
         try {
             app(LoginUserAction::class)->execute($socialiteUser);

@@ -276,6 +276,7 @@ class Utils
         /** @var class-string $modelClass */
         $modelClass = $resourceFQCN::getModel();
         Assert::string($modelClass);
+
         return config('filament-shield.shield_resource.show_model_path', true)
             ? (new $modelClass())::class
             : '';
