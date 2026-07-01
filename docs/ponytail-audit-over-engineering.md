@@ -1,6 +1,6 @@
 # Ponytail audit — User (over-engineering)
 
-**Ultimo run:** 2026-06-30  
+**Ultimo run:** 2026-07-01  
 **Modulo:** auth, team, Passport, profili.  
 **Hub:** [../../../../docs/audit/ponytail-audit.md](../../../../docs/audit/ponytail-audit.md)  
 **Remediation:** [../../../../docs/project/ponytail-audit-remediation.md](../../../../docs/project/ponytail-audit-remediation.md)  
@@ -10,9 +10,13 @@
 
 | # | Tag | Cosa | Sostituzione | Path |
 |---|-----|------|--------------|------|
-| U2 | `delete`→`.bak` | Contratti Fortify/Jetstream orfani | Grep e archivio | `app/Contracts/` | ✅ **7** canonici (2026-06-30) |
+| U2 | `delete` | 16 contratti Fortify/Jetstream orfani (1 ref = solo definizione) | Widget `getState()` + Action | `app/Contracts/` | ✅ **2026-07-01** |
+| U2b | `delete` | `MockUserWithTeams` duplicato fuori `Fixtures/` | Solo `Fixtures/MockUserWithTeams` | `tests/Unit/Models/Traits/` | ✅ |
+| U2c | `shrink` | `HasAuthenticationLogTrait` generics `$this` | PHPStan L10 covariant | `app/Models/Traits/` | ✅ |
 | U3 | `shrink` | `BaseUser.php` con molti trait | Dopo audit permessi Spatie | `app/Models/BaseUser.php` | aperto |
 | U4 | `delete` | ~281 `lang/**/*.backup_*` | `lang/{locale}/*.php.bak` in-place | `lang/` | ✅ — [wiki](./wiki/concepts/lang-backup-in-place.md) |
+
+**Contratti rimasti (canonici):** `UserContract`, `TeamContract`, `TenantContract`, `HasTeamsContract`, `HasAuthentications`, `HasShieldPermissions`, `ModelContract`, `PassportHasApiTokensContract`.
 
 ## ⛔ Fuori perimetro (non tagliare)
 

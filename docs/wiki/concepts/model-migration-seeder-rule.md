@@ -41,7 +41,7 @@ class PersonalAccessToken extends Model
 ### Comando per verificare
 ```bash
 # Esegui l'audit
-bash bashscripts/tools/audit-model-migration-seeder.sh
+bash bashscripts/tools/audit-module-artifact-parity.sh
 ```
 
 ### Struttura attesa
@@ -96,7 +96,7 @@ php artisan make:migration create_external_table
 
 ### Audit Script
 ```bash
-bashscripts/tools/audit-model-migration-seeder.sh
+bashscripts/tools/audit-module-artifact-parity.sh
 ```
 Genera report con:
 - Totale modelli

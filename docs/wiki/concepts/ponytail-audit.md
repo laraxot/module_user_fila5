@@ -1,11 +1,9 @@
 # Ponytail audit — User
 
-**Run:** 2026-06-30
+**Delta modulo only here.** Ranked list, gate e remediation globale negli hub progetto.
 
-Documento canonico: [ponytail-audit-over-engineering.md](../../ponytail-audit-over-engineering.md)
+- [Hub audit](../../../../../../docs/audit/ponytail-audit.md)
+- [Remediation](../../../../../../docs/project/ponytail-audit-remediation.md)
+- [Findings User](../../ponytail-audit-over-engineering.md)
 
-## Findings
-
-- ~281 file `lang/**/*.backup_*` + sottoalbero `lang/lang/`
-- ~~policy stub~~ — **fuori perimetro** ([model-policy-laravel-contract](../../../Job/docs/wiki/concepts/model-policy-laravel-contract.md))
-- contratti Fortify-style mai implementati
+Aggiornare solo finding e stato specifici di questo modulo.
