@@ -19,17 +19,17 @@ final class UserDatabaseSeederTest extends TestCase
     /**
      * Test that UserDatabaseSeeder runs without errors.
      */
-    public function testUserDatabaseSeederRunsSuccessfully(): void
+    public function test_user_database_seeder_runs_successfully(): void
     {
         // Arrange
-        $seeder = new UserDatabaseSeeder();
+        $seeder = new UserDatabaseSeeder;
         $seeder->setContainer($this->app);
 
         // Act & Assert - Should not throw any exceptions
         $seeder->run();
 
         // Verify that roles were created
-        $this->assertDatabaseHas('roles', [
+        $this->assertDatabaseHasRow('roles', [
             'name' => 'super-admin',
             'guard_name' => 'web',
         ], 'user');
@@ -42,10 +42,10 @@ final class UserDatabaseSeederTest extends TestCase
     /**
      * Test that super-admin role has all permissions after seeding.
      */
-    public function testSuperAdminRoleHasAllPermissions(): void
+    public function test_super_admin_role_has_all_permissions(): void
     {
         // Arrange
-        $seeder = new UserDatabaseSeeder();
+        $seeder = new UserDatabaseSeeder;
         $seeder->setContainer($this->app);
 
         // Act

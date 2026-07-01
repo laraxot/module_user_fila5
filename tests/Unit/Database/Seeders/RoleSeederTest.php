@@ -13,7 +13,7 @@ use Modules\User\Tests\TestCase;
  */
 final class RoleSeederTest extends TestCase
 {
-    public function testRoleSeederCreatesExpectedRoles(): void
+    public function test_role_seeder_creates_expected_roles(): void
     {
         $expectedRoles = [
             'super-admin',
@@ -24,12 +24,12 @@ final class RoleSeederTest extends TestCase
             'guest',
         ];
 
-        $seeder = new RoleSeeder();
+        $seeder = new RoleSeeder;
         $seeder->setContainer($this->app);
         $seeder->run();
 
         foreach ($expectedRoles as $roleName) {
-            $this->assertDatabaseHas('roles', [
+            $this->assertDatabaseHasRow('roles', [
                 'name' => $roleName,
                 'guard_name' => 'web',
             ], 'user');
@@ -39,9 +39,9 @@ final class RoleSeederTest extends TestCase
         $this->assertGreaterThanOrEqual(count($expectedRoles), $roleCount);
     }
 
-    public function testRoleSeederIsIdempotent(): void
+    public function test_role_seeder_is_idempotent(): void
     {
-        $seeder = new RoleSeeder();
+        $seeder = new RoleSeeder;
         $seeder->setContainer($this->app);
 
         $seeder->run();

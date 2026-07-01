@@ -13,10 +13,9 @@ use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
-
-use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
@@ -136,7 +135,7 @@ describe('Tenant Scope Console', function (): void {
 
     test('handles gracefully when filament get tenant throws exception', function (): void {
         Filament::shouldReceive('getTenant')
-                    ->andThrow(new \RuntimeException('Session not available'));
+            ->andThrow(new \RuntimeException('Session not available'));
 
         $users = User::query()->limit(1)->get();
 
@@ -145,7 +144,7 @@ describe('Tenant Scope Console', function (): void {
 
     test('allows user creation when filament context is not available', function (): void {
         Filament::shouldReceive('getTenant')
-                    ->andReturn(null);
+            ->andReturn(null);
 
         $email = 'no-tenant-'.uniqid('', true).'@example.com';
         $user = User::create([

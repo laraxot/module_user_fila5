@@ -31,11 +31,11 @@ beforeEach(function (): void {
     }
     Filament::setCurrentPanel($panel);
 
-    $this->listUsersPage = new ListUsers();
+    $this->listUsersPage = new ListUsers;
 
     $users = UserFactory::new()
         ->count(3)
-        ->create([
+        ->createOne([
             'type' => UserType::MasterAdmin,
         ]);
 

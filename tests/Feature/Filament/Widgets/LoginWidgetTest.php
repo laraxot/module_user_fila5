@@ -14,12 +14,12 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    $this->widget = new LoginWidget();
+    $this->widget = new LoginWidget;
 });
 
 describe('Login Widget', function (): void {
     test('it can render widget', function (): void {
-        $widget = new LoginWidget();
+        $widget = new LoginWidget;
 
         $reflection = new \ReflectionClass($widget);
         $property = $reflection->getProperty('view');

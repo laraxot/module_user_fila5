@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
@@ -16,7 +15,10 @@ use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\TeamUser;
 use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 use function Safe\json_encode;
 
@@ -36,7 +38,7 @@ function teamMgmtTeamUsersRelationSupported(): bool
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function teamMgmtCreateUser(array $attributes = []): User
 {
@@ -49,7 +51,7 @@ function teamMgmtCreateUser(array $attributes = []): User
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function teamMgmtCreateTeam(User $owner, array $attributes = []): Team
 {
@@ -72,7 +74,7 @@ function teamMgmtBootstrap(): array
 }
 
 /**
- * @param array<string, mixed> $pivot
+ * @param  array<string, mixed>  $pivot
  */
 function teamMgmtAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -116,7 +118,7 @@ function teamMgmtMemberExists(Team $team, User $user): bool
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function teamMgmtCreateInvitation(Team $team, array $attributes = []): TeamInvitation
 {
@@ -127,7 +129,7 @@ function teamMgmtCreateInvitation(Team $team, array $attributes = []): TeamInvit
         'role' => 'member',
     ], $attributes);
 
-    $invitation = new TeamInvitation();
+    $invitation = new TeamInvitation;
     $invitation->forceFill($payload);
     $invitation->save();
     $fresh = $invitation->fresh();

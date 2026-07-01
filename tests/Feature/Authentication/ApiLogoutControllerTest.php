@@ -6,6 +6,7 @@ namespace Modules\User\Tests\Feature\Authentication;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
+use Laravel\Passport\PersonalAccessTokenResult;
 use Modules\User\Database\Factories\DeviceFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\DeviceUser;
@@ -55,11 +56,11 @@ describe('Api Logout Controller', function (): void {
             $this->skipTest('Passport token creation unavailable: '.$exception->getMessage());
         }
 
-        if (null === $personalAccessToken) {
+        if ($personalAccessToken === null) {
             $this->skipTest('Passport token creation unavailable.');
         }
 
-        if (! $personalAccessToken instanceof \Laravel\Passport\PersonalAccessTokenResult) {
+        if (! $personalAccessToken instanceof PersonalAccessTokenResult) {
             $this->fail('Passport token creation returned unexpected type.');
         }
 

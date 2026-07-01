@@ -5,11 +5,12 @@ declare(strict_types=1);
 namespace Modules\User\Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Modules\User\Models\Authentication;
 
-/** Stub parità entità — regola 1 modello = 1 seeder. Dati da factory/test/runtime. */
 class AuthenticationSeeder extends Seeder
 {
     public function run(): void
     {
+        xotSeedModelOnce(Authentication::class);
     }
 }

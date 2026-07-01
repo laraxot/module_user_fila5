@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
 use Mockery;
 use Modules\User\Actions\Team\GetUserTeamsOptionAction;
 use Modules\User\Actions\User\CreateUserAction;
@@ -11,12 +10,16 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Exceptions\ProviderNotConfigured;
 use Modules\User\Facades\FilamentShield;
 use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\QuickWins\Fixtures\FilamentShieldStubFixture;
 use PHPUnit\Framework\Assert;
 
+use function Pest\Laravel\actingAs;
+
+uses(TestCase::class);
+
 describe('User quick wins coverage', function (): void {
     it('builds provider not configured exception message', function (): void {
-        /** @var Modules\User\Tests\TestCase $this */
         $exception = ProviderNotConfigured::make('github');
 
         Assert::assertInstanceOf(ProviderNotConfigured::class, $exception);
@@ -24,25 +27,23 @@ describe('User quick wins coverage', function (): void {
     });
 
     it('resolves filament shield facade accessor', function (): void {
-        /** @var Modules\User\Tests\TestCase $this */
-        $service = new FilamentShieldStubFixture();
+        $service = new FilamentShieldStubFixture;
 
         app()->instance('filament-shield', $service);
 
         Assert::assertSame($service, FilamentShield::getFacadeRoot());
-        Assert::assertSame(['w1', 'w2'], (new FilamentShieldStubFixture())->getWidgets());
+        Assert::assertSame(['w1', 'w2'], (new FilamentShieldStubFixture)->getWidgets());
     });
 
     it('returns default option plus team options', function (): void {
-        /** @var Modules\User\Tests\TestCase $this */
         $user = UserFactory::new()->createOne();
-        $this->actingAs($user);
+        actingAs($user);
 
         $team1 = TeamFactory::new()->createOne(['user_id' => $user->id, 'name' => 'Team One']);
         $team2 = TeamFactory::new()->createOne(['user_id' => $user->id, 'name' => 'Team Two']);
 
-        $this->attachTeamMember($team1, $user, ['role' => 'member']);
-        $this->attachTeamMember($team2, $user, ['role' => 'member']);
+        attachTeamMember($team1, $user, ['role' => 'member']);
+        attachTeamMember($team2, $user, ['role' => 'member']);
 
         $options = app(GetUserTeamsOptionAction::class)->execute();
         Assert::assertArrayHasKey('', $options);
@@ -50,13 +51,12 @@ describe('User quick wins coverage', function (): void {
     });
 
     it('creates user using resolved model instance', function (): void {
-        /** @var Modules\User\Tests\TestCase $this */
         $payload = [
             'email' => 'quick-win@example.test',
             'name' => 'Quick Win',
         ];
 
-        $createdUser = new User();
+        $createdUser = new User;
         $createdUser->email = $payload['email'];
         $createdUser->name = $payload['name'];
 

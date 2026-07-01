@@ -7,11 +7,10 @@ use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
 use Modules\User\Models\Profile;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
 use function Pest\Laravel\get;
-
-use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
@@ -38,7 +37,10 @@ describe('Auth components', function (): void {
     });
 
     test('auth session status component renders correctly', function (): void {
-        $html = view('components.auth-session-status', ['status' => 'Test status'])->render();
+        Assert::assertTrue(View::exists('components.auth-session-status'));
+        /** @var view-string $viewName */
+        $viewName = 'components.auth-session-status';
+        $html = view($viewName, ['status' => 'Test status'])->render();
 
         Assert::assertIsString($html);
         Assert::assertNotEmpty($html);

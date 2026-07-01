@@ -11,10 +11,9 @@ use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\get;
-
-use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
@@ -64,15 +63,15 @@ describe('Register Widget', function (): void {
 
     test('rejects invalid email without creating user', function (): void {
         Livewire::test(RegisterWidget::class)
-                    ->fillForm([
-                        'first_name' => 'Mario',
-                        'last_name' => 'Rossi',
-                        'email' => 'not-an-email',
-                        'password' => 'Password1!Secure',
-                        'password_confirmation' => 'Password1!Secure',
-                    ])
-                    ->call('submit')
-                    ->assertHasErrors();
+            ->fillForm([
+                'first_name' => 'Mario',
+                'last_name' => 'Rossi',
+                'email' => 'not-an-email',
+                'password' => 'Password1!Secure',
+                'password_confirmation' => 'Password1!Secure',
+            ])
+            ->call('submit')
+            ->assertHasErrors();
 
         Assert::assertFalse(Auth::check());
     });

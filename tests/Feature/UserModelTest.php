@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature;
 
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Support\Str;
 use Modules\User\Database\Factories\PermissionFactory;
@@ -52,7 +54,7 @@ describe('User Model', function (): void {
     });
 
     test('has factory', function (): void {
-        /** @var \Illuminate\Database\Eloquent\Collection<int, User> $users */
+        /** @var Collection<int, User> $users */
         $users = UserFactory::new()->count(3)->create();
 
         Assert::assertCount(3, $users);
@@ -152,7 +154,7 @@ describe('User Model', function (): void {
 
     test('can have profile', function (): void {
         $user = $this->requireUser();
-        Assert::assertInstanceOf(\Illuminate\Database\Eloquent\Relations\HasOne::class, $user->profile());
+        Assert::assertInstanceOf(HasOne::class, $user->profile());
     });
 
     test('can have devices', function (): void {
@@ -314,8 +316,8 @@ describe('User Model', function (): void {
         $verifiedUsers = User::whereNotNull('email_verified_at')->get();
         $unverifiedUsers = User::whereNull('email_verified_at')->get();
 
-        Assert::assertSame(true, $verifiedUsers->every(fn ($user) => null !== $user->email_verified_at));
-        Assert::assertSame(true, $unverifiedUsers->every(fn ($user) => null === $user->email_verified_at));
+        Assert::assertSame(true, $verifiedUsers->every(fn ($user) => $user->email_verified_at !== null));
+        Assert::assertSame(true, $unverifiedUsers->every(fn ($user) => $user->email_verified_at === null));
     });
 
     test('can filter by language', function (): void {
@@ -325,7 +327,7 @@ describe('User Model', function (): void {
         $italianUsers = User::where('lang', 'it')->get();
         $englishUsers = User::where('lang', 'en')->get();
 
-        Assert::assertSame(true, $italianUsers->every(fn ($user) => 'it' === $user->lang));
-        Assert::assertSame(true, $englishUsers->every(fn ($user) => 'en' === $user->lang));
+        Assert::assertSame(true, $italianUsers->every(fn ($user) => $user->lang === 'it'));
+        Assert::assertSame(true, $englishUsers->every(fn ($user) => $user->lang === 'en'));
     });
 });
