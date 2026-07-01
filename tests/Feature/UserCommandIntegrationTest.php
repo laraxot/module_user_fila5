@@ -15,7 +15,7 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
-    $this->command = new ChangeTypeCommand;
+    $this->command = new ChangeTypeCommand();
 });
 
 describe('User Command Integration', function (): void {
@@ -43,7 +43,8 @@ describe('User Command Integration', function (): void {
         Assert::assertTrue(function_exists('Laravel\Prompts\select'));
     });
 
-    test('validates webmozart assert integration', function (): void {});
+    test('validates webmozart assert integration', function (): void {
+    });
 
     test('integrates with illuminate support arr', function (): void {
         $testArray = ['a' => 1, 'b' => 2, 'c' => 3];
@@ -99,7 +100,7 @@ describe('User Command Integration', function (): void {
     });
 
     test('can work with type checking utilities', function (): void {
-        $testObject = new \stdClass;
+        $testObject = new \stdClass();
         $testObject->value = 'test';
         $testObject->getLabel = fn () => 'Test Label';
 
@@ -154,7 +155,8 @@ describe('User Command Integration', function (): void {
         Assert::assertSame('user:change-type', $command->getName());
     });
 
-    test('can access laravel facades', function (): void {});
+    test('can access laravel facades', function (): void {
+    });
 
     test('handles reflection operations correctly', function (): void {
         $command = $this->requireCommand();
@@ -171,7 +173,7 @@ describe('User Command Integration', function (): void {
     });
 
     test('can handle object property access safely', function (): void {
-        $testObject = new \stdClass;
+        $testObject = new \stdClass();
         $testObject->testProperty = 'test_value';
 
         $objectData = (array) $testObject;

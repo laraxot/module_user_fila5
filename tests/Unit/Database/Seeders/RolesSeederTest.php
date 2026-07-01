@@ -18,7 +18,7 @@ final class RolesSeederTest extends TestCase
     /**
      * Test that RolesSeeder creates all expected roles.
      */
-    public function test_roles_seeder_creates_expected_roles(): void
+    public function testRolesSeederCreatesExpectedRoles(): void
     {
         // Arrange
         $expectedRoles = [
@@ -31,7 +31,7 @@ final class RolesSeederTest extends TestCase
         ];
 
         // Act
-        $seeder = new RolesSeeder;
+        $seeder = new RolesSeeder();
         $seeder->setContainer($this->app);
         $seeder->run();
 
@@ -51,10 +51,10 @@ final class RolesSeederTest extends TestCase
     /**
      * Test that RolesSeeder is idempotent (can run multiple times without duplication).
      */
-    public function test_roles_seeder_is_idempotent(): void
+    public function testRolesSeederIsIdempotent(): void
     {
         // Arrange
-        $seeder = new RolesSeeder;
+        $seeder = new RolesSeeder();
         $seeder->setContainer($this->app);
 
         // Act - Run twice
