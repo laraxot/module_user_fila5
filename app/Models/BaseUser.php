@@ -27,11 +27,10 @@ use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
 use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
-use Modules\User\Models\Traits\HasDevices;
-use Modules\User\Models\Traits\HasModules;
-use Modules\User\Models\Traits\HasSocialite;
-use Modules\User\Models\Traits\HasSpatiePermission;
+use Modules\User\Models\Traits\HasRelations;
 use Modules\User\Models\Traits\HasTeams;
+use Spatie\Permission\Traits\HasPermissions;
+use Spatie\Permission\Traits\HasRoles;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -132,11 +131,10 @@ abstract class BaseUser extends Authenticatable implements HasAuthentications, H
     use HasApiTokens;
     use HasAuthenticationLogTrait;
     use HasChildren;
-    use HasDevices;
-    use HasModules;
-    use HasSocialite;
-    use HasSpatiePermission, HasTeams {
-        HasSpatiePermission::teams insteadof HasTeams;
+    use HasRelations;
+    // ponytail: HasRoles+HasPermissions inlined from HasSpatiePermission wrapper
+    use HasRoles, HasPermissions, HasTeams {
+        HasRoles::teams insteadof HasTeams;
         HasTeams::teams as membershipTeams;
     }
     use HasUuids;
@@ -441,10 +439,9 @@ abstract class BaseUser extends Authenticatable implements HasAuthentications, H
     /**
      * Check if the user has a specific role.
      *
-     * NOTE: This method has been moved to trait HasSpatiePermission.
-     * If you need role checking functionality, use the trait method instead.
+     * NOTE: Provided by Spatie's HasRoles trait (inlined from HasSpatiePermission).
      *
-     * @see HasSpatiePermission::hasRole()
+     * @see \Spatie\Permission\Traits\HasRoles::hasRole()
      */
     public function setPasswordAttribute(?string $value): void
     {

@@ -14,7 +14,6 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\TeamUser;
-use Modules\Xot\Contracts\ModelContract;
 use Modules\Xot\Contracts\UserContract;
 
 /**
@@ -45,7 +44,7 @@ use Modules\Xot\Contracts\UserContract;
  *
  * @mixin \Eloquent
  */
-interface TeamContract extends ModelContract
+interface TeamContract
 {
     /**
      * Get the owner of the team.

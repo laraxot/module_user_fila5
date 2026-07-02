@@ -36,6 +36,60 @@ Il modello `Team` accede direttamente a proprietà che potrebbero non essere dis
 - [Best Practices per i Modelli](/docs/modules/user/models.md)
 - [Interfacce e Contratti](/docs/modules/xot/contracts.md) 
 
+## HasRelations.php (2026-07-02)
+
+### Problema
+
+Il trait `HasRelations` definiva le relazioni `devices()` e `socialiteUsers()` senza specificare i tipi generici delle relazioni Eloquent. PHPStan segnalava:
+- `missingType.generics` su entrambi i metodi
+- `property.notFound` nel test `UserModelTest.php` perché `socialiteUsers()->first()` veniva visto come `Model|null`
+
+### Soluzione
+
+Aggiunti PHPDoc con i tipi generici completi, includendo `$this` come modello dichiarante:
+
+```php
+/**
+ * @return BelongsToMany<Device, $this>
+ */
+public function devices(): BelongsToMany
+
+/**
+ * @return HasMany<SocialiteUser, $this>
+ */
+public function socialiteUsers(): HasMany
+```
+
+## Change.php (Team Livewire) (2026-07-02)
+
+### Problema
+
+`$this->teams` è tipizzato come `array<int, array<string, mixed>>`, ma l'assegnamento da `Collection->map(...)->all()` produceva un `array<int, array>` generico, causando `assign.propertyType`.
+
+### Soluzione
+
+Forzato il tipo intermedio con `@var` prima dell'assegnamento:
+
+```php
+/** @var array<int, array<string, mixed>> $teams */
+$teams = $allTeams
+    ->values()
+    ->map(static fn (TeamContract $team): array => $team->toArray())
+    ->all();
+
+$this->teams = $teams;
+```
+
+### Verifica
+
+```bash
+./vendor/bin/phpstan analyse Modules
+# Risultato: [OK] No errors
+
+./vendor/bin/pest Modules/User/tests --no-coverage
+# Risultato: passed
+```
+
 ## Collegamenti tra versioni di phpstan_fixes.md
 * [phpstan_fixes.md](../../../xot/docs/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../user/docs/phpstan_fixes.md)
