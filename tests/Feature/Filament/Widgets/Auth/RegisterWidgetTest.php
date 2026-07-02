@@ -22,7 +22,7 @@ beforeEach(function (): void {
     config(['activitylog.enabled' => false]);
 
     if (! Schema::connection('user')->hasTable('users')) {
-        skip('users table missing on user connection (run migrations for testing)');
+        skipUserTest('users table missing on user connection (run migrations for testing)');
     }
 });
 

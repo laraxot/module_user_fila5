@@ -38,7 +38,9 @@ describe('Auth components', function (): void {
     });
 
     test('auth session status component renders correctly', function (): void {
-        $html = view('components.auth-session-status', ['status' => 'Test status'])->render();
+        /** @var view-string $viewName */
+        $viewName = 'components.auth-session-status';
+        $html = view($viewName, ['status' => 'Test status'])->render();
 
         Assert::assertIsString($html);
         Assert::assertNotEmpty($html);
@@ -76,7 +78,7 @@ describe('Auth components', function (): void {
             $response = get('/it/auth/password/confirm');
             Assert::assertSame(200, $response->status());
         } catch (Throwable $e) {
-            skip(
+            skipUserTest(
                 'Password confirm route unavailable in test env: '.$e->getMessage()
             );
         }
@@ -109,7 +111,7 @@ describe('Auth components', function (): void {
             $response = get('/it/profile/edit');
             Assert::assertSame(200, $response->status());
         } catch (Throwable $e) {
-            skip(
+            skipUserTest(
                 'Profile edit route unavailable in test env: '.$e->getMessage()
             );
         }

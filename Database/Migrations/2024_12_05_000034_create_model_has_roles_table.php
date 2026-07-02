@@ -11,10 +11,10 @@ use Modules\Xot\Datas\XotData;
  * Class CreateModelHasRolesTable.
  */
 return new class extends XotBaseMigration {
-    public function up()
+    public function up(): void
     {
         // -- CREATE --
-        $this->tableCreate(static function (Blueprint $table) {
+        $this->tableCreate(static function (Blueprint $table): void {
             $team_class = XotData::make()->getTeamClass();
             $table->id();
             $table->integer('role_id')->index()->nullable();
@@ -23,7 +23,7 @@ return new class extends XotBaseMigration {
         });
 
         // -- UPDATE --
-        $this->tableUpdate(function (Blueprint $table) {
+        $this->tableUpdate(function (Blueprint $table): void {
             $team_class = XotData::make()->getTeamClass();
             if (! $this->hasColumn('team_id')) {
                 $table->foreignIdFor($team_class, 'team_id')->nullable();

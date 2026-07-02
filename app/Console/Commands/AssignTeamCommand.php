@@ -10,7 +10,7 @@ use Illuminate\Support\Collection;
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\BaseUser;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
@@ -38,8 +38,10 @@ class AssignTeamCommand extends Command
         $xot = XotData::make();
         $email = text('email ?');
         $user_class = $xot->getUserClass();
-        /** @var UserContract */
-        $user = XotData::make()->getUserByEmail($email);
+        $userContract = $xot->getUserByEmail($email);
+        Assert::isInstanceOf($userContract, BaseUser::class);
+        /** @var BaseUser $user */
+        $user = $userContract;
 
         $teamClass = $xot->getTeamClass();
 
