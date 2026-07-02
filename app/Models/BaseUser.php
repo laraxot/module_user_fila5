@@ -29,8 +29,6 @@ use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 use Modules\User\Models\Traits\HasRelations;
 use Modules\User\Models\Traits\HasTeams;
-use Spatie\Permission\Traits\HasPermissions;
-use Spatie\Permission\Traits\HasRoles;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -39,6 +37,8 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 use Parental\HasChildren;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\Permission\Traits\HasPermissions;
+use Spatie\Permission\Traits\HasRoles;
 
 /**
  * Base User Model.
@@ -441,7 +441,7 @@ abstract class BaseUser extends Authenticatable implements HasAuthentications, H
      *
      * NOTE: Provided by Spatie's HasRoles trait (inlined from HasSpatiePermission).
      *
-     * @see \Spatie\Permission\Traits\HasRoles::hasRole()
+     * @see HasRoles::hasRole()
      */
     public function setPasswordAttribute(?string $value): void
     {
