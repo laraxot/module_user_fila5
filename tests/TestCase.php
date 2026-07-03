@@ -65,6 +65,14 @@ abstract class TestCase extends XotBaseTestCase
     use DatabaseTransactions;
 
     /**
+     * @return array<int, string|null>
+     */
+    public function connectionsToTransact(): array
+    {
+        return [null, 'user', 'mysql'];
+    }
+
+    /**
      * @return array<int, class-string<ServiceProvider>>
      */
     protected function getPackageProviders(mixed $app): array

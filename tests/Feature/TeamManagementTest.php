@@ -261,15 +261,14 @@ test('can get team membership with pivot data', function (): void {
     }
 
     $team->users()->attach($member, $attachPayload);
-    $memberRow = $team->users()->where('user_id', $member->id)->first();
+    $teamUser = $team->teamUsers()->where('user_id', $member->id)->first();
 
-    Assert::assertNotNull($memberRow);
-    $pivot = $memberRow->pivot;
-    Assert::assertInstanceOf(TeamUser::class, $pivot);
-    Assert::assertSame('editor', $pivot->role);
+    Assert::assertNotNull($teamUser);
+    Assert::assertInstanceOf(TeamUser::class, $teamUser);
+    Assert::assertSame('editor', $teamUser->role);
 
     if (teamMgmtUserTableHasColumn('team_user', 'joined_at')) {
-        Assert::assertNotNull($pivot->getAttribute('joined_at'));
+        Assert::assertNotNull($teamUser->getAttribute('joined_at'));
     }
 });
 
@@ -431,12 +430,11 @@ test('can check team member permissions role', function (): void {
 
     ['team' => $team, 'member' => $member] = teamMgmtBootstrap();
     $team->users()->attach($member, ['role' => 'admin']);
-    $memberRow = $team->users()->where('user_id', $member->id)->first();
+    $teamUser = $team->teamUsers()->where('user_id', $member->id)->first();
 
-    Assert::assertNotNull($memberRow);
-    $pivot = $memberRow->pivot;
-    Assert::assertInstanceOf(TeamUser::class, $pivot);
-    Assert::assertSame('admin', $pivot->role);
+    Assert::assertNotNull($teamUser);
+    Assert::assertInstanceOf(TeamUser::class, $teamUser);
+    Assert::assertSame('admin', $teamUser->role);
 });
 
 test('can filter teams by owner', function (): void {

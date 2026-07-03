@@ -5,16 +5,16 @@ declare(strict_types=1);
 use Modules\User\Filament\Widgets\Auth\NotificationsCenterWidget;
 use Modules\User\Tests\TestCase;
 
-use function Pest\Laravel\get;
-
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-it('redirects guests from notifiche page', function (): void {
-    $response = get('/it/area-personale/notifications');
+it('returns not found for guests when notifications route is not registered', function (): void {
+    /** @var TestCase $this */
+    $response = $this->get('/it/area-personale/notifications');
 
-    $response->assertRedirect();
+    /** @var \Illuminate\Testing\TestResponse<\Symfony\Component\HttpFoundation\Response> $response */
+    $response->assertNotFound();
 });
 
 it('uses notifications center widget view', function (): void {
