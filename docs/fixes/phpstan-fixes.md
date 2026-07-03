@@ -84,6 +84,32 @@ Eliminati i file sorgente. I comportamenti eventualmente necessari sono già cop
 # Risultato: [OK] No errors
 ```
 
+## Correzioni test e logica team (2026-07-03)
+
+### Problemi
+
+1. `IsUserAllowedActionTest` falliva perché impostava la chiave di config `filament-socialite.domain_allowlist` invece di `socialite.domain_allowlist` usata dall'azione.
+2. `LoginWidgetTest` verificava una view `pub_theme::filament.widgets.auth.login` che non esiste; la view effettiva è `user::filament.widgets.login`.
+3. `NotificationsCenterWidgetTest` usava `Pest\Laravel\get()` (inesistente) e una route non registrata; corretto con `$this->get()` e `assertNotFound()`.
+4. `PasswordDataLabelsTest` si aspettava label italiane non presenti; allineate alle label reali del componente.
+5. `TeamManagementTest` accedeva a `pivot` non caricato; corretto usando `teamUsers()` (HasMany) per ottenere il modello `TeamUser`.
+6. `HasTeams::allTeamUsers()` era buggato (usava `membershipTeams` non definito e cast errato); riscritto tramite `teamUsers()->with('team')`.
+7. Isolamento dei test multi-database: aggiunto `connectionsToTransact()` in `Tests/TestCase` per includere `user` e `mysql`.
+
+### Verifica
+
+```bash
+cp .env.testing .env
+./vendor/bin/phpstan analyse Modules/User
+# [OK] No errors
+
+./vendor/bin/pest Modules/User/tests/Feature/Actions/IsUserAllowedActionTest.php \
+  Modules/User/tests/Feature/Filament/Widgets/LoginWidgetTest.php \
+  Modules/User/tests/Feature/Filament/Widgets/NotificationsCenterWidgetTest.php \
+  Modules/User/tests/Feature/PasswordDataLabelsTest.php
+# PASS
+```
+
 ## Change.php (Team Livewire) (2026-07-02 / 2026-07-03)
 
 ### Problema
