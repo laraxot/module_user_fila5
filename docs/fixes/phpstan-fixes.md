@@ -60,7 +60,31 @@ public function devices(): BelongsToMany
 public function socialiteUsers(): HasMany
 ```
 
-## Change.php (Team Livewire) (2026-07-02)
+## Trait morti rimossi (2026-07-03)
+
+### Problema
+
+PHPStan segnalava `trait.unused` per quattro trait nel modulo User:
+
+- `Modules\User\Models\Traits\HasDevices`
+- `Modules\User\Models\Traits\HasModules`
+- `Modules\User\Models\Traits\HasSocialite`
+- `Modules\User\Models\Traits\HasSpatiePermission`
+
+Nessun modello o componente del perimetro `Modules/` e `Themes/` li utilizzava.
+
+### Soluzione
+
+Eliminati i file sorgente. I comportamenti eventualmente necessari sono già coperti da trait più specifici o dalle classi base del modulo.
+
+### Verifica
+
+```bash
+./vendor/bin/phpstan analyse Modules/User
+# Risultato: [OK] No errors
+```
+
+## Change.php (Team Livewire) (2026-07-02 / 2026-07-03)
 
 ### Problema
 
