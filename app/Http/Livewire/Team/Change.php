@@ -49,6 +49,7 @@ class Change extends Component
             ->all();
 
         $this->teams = $teams;
+        Assert::isArray($this->teams);
     }
 
     /**
