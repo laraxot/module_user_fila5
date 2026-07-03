@@ -42,7 +42,7 @@ trait InteractsWithTenant
         Assert::classExists($tenantClass);
         Assert::subclassOf($tenantClass, Model::class);
 
-        /** @var class-string<Model> $tenantClass */
+        /* @var class-string<Model> $tenantClass */
         return $this->belongsTo($tenantClass, 'tenant_id');
     }
 

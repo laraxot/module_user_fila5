@@ -19,7 +19,7 @@ it('does not reference the Comment module anywhere under User app', function ():
         $contents = $file->getContents();
         $relative = str_replace($appPath.'/', '', $file->getPathname());
 
-        if (preg_match('/Modules\\\\Comment\\\\/', $contents) === 1) {
+        if (1 === preg_match('/Modules\\\\Comment\\\\/', $contents)) {
             $violations[] = $relative;
         }
     }

@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-
 test('CheckOtpExpiredRule can be instantiated', function () {
     expect(class_exists(CheckOtpExpiredRule::class))->toBeTrue();
 

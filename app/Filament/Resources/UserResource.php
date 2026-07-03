@@ -31,7 +31,7 @@ class UserResource extends XotBaseResource
     #[\Override]
     public static function getFormSchema(): array
     {
-        /** @var array<int|string, \Filament\Schemas\Components\Component> */
+        /* @var array<int|string, \Filament\Schemas\Components\Component> */
         return UserForm::getFormSchema();
     }
 
