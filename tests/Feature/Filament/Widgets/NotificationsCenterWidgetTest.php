@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Modules\User\Filament\Widgets\Auth\NotificationsCenterWidget;
 use Modules\User\Tests\TestCase;
-
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -13,7 +12,7 @@ it('returns not found for guests when notifications route is not registered', fu
     /** @var TestCase $this */
     $response = $this->get('/it/area-personale/notifications');
 
-    /** @var \Illuminate\Testing\TestResponse<\Symfony\Component\HttpFoundation\Response> $response */
+    /* @var \Illuminate\Testing\TestResponse<\Symfony\Component\HttpFoundation\Response> $response */
     $response->assertNotFound();
 });
 
