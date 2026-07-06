@@ -16,8 +16,8 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-        $this->skipUnlessUserTable('device_user');
+    /** @var TestCase $this */
+    $this->skipUnlessUserTable('device_user');
     $this->skipUnlessUserTable('devices');
 
     Config::set('app.key', config('app.key') ?: 'base64:'.base64_encode(random_bytes(32)));
@@ -40,7 +40,7 @@ beforeEach(function (): void {
 
 describe('Api Logout Controller', function (): void {
     test('api logout revokes current personal access token and marks device logout time', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $user = $this->requireUser();
         $privateKey = storage_path('oauth-private.key');
         $publicKey = storage_path('oauth-public.key');
@@ -58,7 +58,7 @@ describe('Api Logout Controller', function (): void {
             $this->skipTest('Passport token creation unavailable: '.$exception->getMessage());
         }
 
-        if (null === $personalAccessToken) {
+        if ($personalAccessToken === null) {
             $this->skipTest('Passport token creation unavailable.');
         }
 

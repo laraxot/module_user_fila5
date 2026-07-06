@@ -15,11 +15,9 @@ use Modules\User\Filament\Clusters\Appearance\Pages\Logo;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Clusters\XotBaseCluster;
 use Modules\Xot\Filament\Pages\XotBasePage;
-
-use function Pest\Laravel\actingAs;
-
 use PHPUnit\Framework\Assert;
 
+use function Pest\Laravel\actingAs;
 use function Safe\file_get_contents;
 use function Safe\glob;
 
@@ -65,10 +63,10 @@ describe('Appearance Cluster', function (): void {
     });
 
     test('cluster pages do not extend filament classes directly', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $files = glob(base_path('Modules/User/app/Filament/Clusters/Appearance/Pages/*.php'));
 
-        if ([] === $files) {
+        if ($files === []) {
             $this->skipTest('Appearance cluster pages directory not found.');
         }
 

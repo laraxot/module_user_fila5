@@ -470,15 +470,18 @@ trait HasTeams
      * Laraxot team membership (Jetstream-style pivot).
      * Su {@see BaseUser} esposto come {@see membershipTeams()} — {@see HasRoles::teams()} resta Spatie.
      *
-     * @return BelongsToMany<Model&TeamContract, $this, Pivot, 'pivot'>
+     * @return BelongsToMany<Model&TeamContract, Model, Pivot, 'pivot'>
      */
     public function teams(): BelongsToMany
     {
         $xot = XotData::make();
         $teamClass = $xot->getTeamClass();
 
-        /* @var BelongsToMany<Model&TeamContract, $this, Pivot, 'pivot'> */
-        return $this->belongsToManyX($teamClass);
+        /** @var BelongsToMany<Model&TeamContract, Model, Pivot, 'pivot'> $relation */
+        $relation = $this->belongsToManyX($teamClass);
+
+        // @phpstan-ignore return.type (BelongsToMany generics invariance)
+        return $relation;
     }
 
     /**

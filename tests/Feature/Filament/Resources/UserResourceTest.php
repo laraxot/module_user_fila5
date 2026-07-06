@@ -44,7 +44,7 @@ describe('User Resource', function (): void {
     });
 
     test('user resource has correct form schema', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $form = UserResource::getFormSchema();
 
         Assert::assertArrayHasKey('section01', $form);
@@ -92,14 +92,14 @@ describe('User Resource', function (): void {
     });
 
     test('user resource name field is required', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $nameField = userResourceFindComponentByName($section01Schema, 'name');
 
-        if (null === $nameField) {
+        if ($nameField === null) {
             $this->skipTest('name field not found in section01 schema');
         }
 
@@ -107,14 +107,14 @@ describe('User Resource', function (): void {
     });
 
     test('user resource email field is required', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $emailField = userResourceFindComponentByName($section01Schema, 'email');
 
-        if (null === $emailField) {
+        if ($emailField === null) {
             $this->skipTest('email field not found in section01 schema');
         }
 
@@ -122,14 +122,14 @@ describe('User Resource', function (): void {
     });
 
     test('user resource password field is required only on create', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $passwordField = userResourceFindComponentByName($section01Schema, 'password');
 
-        if (null === $passwordField) {
+        if ($passwordField === null) {
             $this->skipTest('password field not found in section01 schema');
         }
 
@@ -137,7 +137,7 @@ describe('User Resource', function (): void {
     });
 
     test('user resource password field has correct type', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
@@ -150,14 +150,14 @@ describe('User Resource', function (): void {
     });
 
     test('user resource email field has unique validation', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $emailField = userResourceFindComponentByName($section01Schema, 'email');
 
-        if (null === $emailField) {
+        if ($emailField === null) {
             $this->skipTest('email field not found in section01 schema');
         }
 
@@ -165,14 +165,14 @@ describe('User Resource', function (): void {
     });
 
     test('user resource created at field shows diff for humans', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $form = UserResource::getFormSchema();
         $section02 = $form['section02'];
         $section02Schema = userResourceSectionComponents($this, $section02);
 
         $createdAtField = userResourceFindComponentByName($section02Schema, 'created_at');
 
-        if (null === $createdAtField) {
+        if ($createdAtField === null) {
             $this->skipTest('created_at field not found in section02 schema');
         }
 

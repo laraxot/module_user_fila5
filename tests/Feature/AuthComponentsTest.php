@@ -4,11 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature;
 
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Str;
+use Modules\User\Database\Factories\UserFactory;
+use Modules\User\Models\Profile;
 use Modules\User\Models\User;
-
 use function Pest\Laravel\actingAs;
 use function Pest\Laravel\get;
+use Throwable;
+
+uses(\Modules\User\Tests\TestCase::class);
 
 describe('Auth Components Tests', function (): void {
     test('auth components exist and work correctly', function (): void {
@@ -48,7 +54,7 @@ describe('Auth Components Tests', function (): void {
         // Test the auth header component that exists
         expect(View::exists('components.auth-header'))->toBeTrue();
 
-        $html = view('components.auth-header', [
+        $html = View::make('components.auth-header', [
             'title' => 'Login Test',
             'description' => 'Test description',
         ])->render();
@@ -62,17 +68,19 @@ describe('Authentication Flow with Reorganized Components', function (): void {
     test('login form components work after reorganization', function (): void {
         // Visit login page and ensure all reorganized components render
         $response = get('/it/auth/login');
+        $response->assertStatus(200);
     });
 });
 
 describe('User Profile Components Tests', function (): void {
     test('profile pages use reorganized components correctly', function (): void {
-        $response->assertStatus(200);
-        $user = User::factory()->create();
+        $user = UserFactory::new()->create();
+        \assert($user instanceof User);
 
-        if (class_exists(Modules\User\Models\Profile::class)) {
+        if (class_exists(Profile::class)) {
             // Skip if profiles table doesn't have uuid column
-            $hasUuid = Illuminate\Support\Facades\Schema::connection('user')->hasColumn('profiles', 'uuid');
+            $hasUuid = Schema::connection('user')
+                ->hasColumn('profiles', 'uuid');
             $profileData = [
                 'id' => $user->id,
                 'user_id' => $user->id,
@@ -81,18 +89,19 @@ describe('User Profile Components Tests', function (): void {
                 'last_name' => $user->last_name ?? '',
             ];
             if ($hasUuid) {
-                $profileData['uuid'] = (string) Illuminate\Support\Str::uuid();
+                $profileData['uuid'] = (string) Str::uuid();
             }
             try {
-                Modules\User\Models\Profile::create($profileData);
-            } catch (Throwable) {
-                // Profile creation may fail in test env; continue with user only
+                Profile::create($profileData);
+            } catch (Throwable $e) {
+                expect($e->getMessage())->not->toBe('');
             }
         }
 
         /* @var Illuminate\Contracts\Auth\Authenticatable $user */
         try {
-            $response = actingAs($user, 'web')->get('/it/profile/edit');
+            actingAs($user, 'web');
+            $response = get('/it/profile/edit');
             $response->assertStatus(200);
         } catch (Throwable $e) {
             expect($e->getMessage())->not->toBe('');

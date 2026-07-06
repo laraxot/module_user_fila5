@@ -64,7 +64,7 @@ class MockUserWithTeams extends Model
     }
 
     /**
-     * @return BelongsToMany<Team, $this>
+     * @return BelongsToMany<Team, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
      */
     public function membershipTeams(): BelongsToMany
     {

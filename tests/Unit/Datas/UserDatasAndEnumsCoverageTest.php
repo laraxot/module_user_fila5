@@ -105,7 +105,7 @@ describe('User Datas And Enums Coverage', function (): void {
 
     test('returns labels for both language enums', function (): void {
         /* @var TestCase $this */
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         app()->setLocale('it');
 
         $italianLabel = LanguageEnum::ITALIAN->getLabel();

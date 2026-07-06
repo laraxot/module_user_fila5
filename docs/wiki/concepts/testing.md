@@ -25,6 +25,8 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/User
 ## Regole
 
 - `uses(\Modules\User\Tests\TestCase::class)` — sempre FQCN, mai `uses(TestCase::class)`.
+- Nei test namespaced importare esplicitamente facades, modelli ed eccezioni (`Schema`, `Str`, `Throwable`, `Profile`); non usare FQCN non importati nel corpo del test.
+- Per `BelongsToMany` dichiarato da trait riusabili su piu model, non usare `` nel template `TDeclaringModel` se il contratto richiede `Model`: il template non e covariante e PHPStan segnala `return.type`.
 - Assertion: `PHPUnit\Framework\Assert::assert*` nelle closure (no `expect()->…` se segnalato `method.internalClass`).
 - Eccezioni attese: `try/catch` + `Assert::fail()` / `Assert::assertSame()` sul messaggio (no catena `test()->throws()`).
 - Skip senza `$this` in closure: helper globali in `tests/Support/helpers.php`:

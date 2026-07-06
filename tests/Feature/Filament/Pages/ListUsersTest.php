@@ -22,8 +22,8 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-        try {
+    /** @var TestCase $this */
+    try {
         $panel = Filament::getPanel('user::admin');
     } catch (\Exception $e) {
         $panelProvider = new AdminPanelProvider(app());
@@ -49,19 +49,19 @@ describe('List Users', function (): void {
     });
 
     test('list users page extends correct base class', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $listUsersPage = $this->requireListUsersPage();
         Assert::assertInstanceOf(BaseListUsers::class, $listUsersPage);
     });
 
     test('list users page can be instantiated', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $listUsersPage = $this->requireListUsersPage();
         Assert::assertInstanceOf(ListUsers::class, $listUsersPage);
     });
 
     test('list users page has correct table columns', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $listUsersPage = $this->requireListUsersPage();
         $columns = $listUsersPage->getTableColumns();
 
@@ -78,7 +78,7 @@ describe('List Users', function (): void {
     });
 
     test('list users page has correct table filters', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $listUsersPage = $this->requireListUsersPage();
         $filters = $listUsersPage->getTableFilters();
 
@@ -86,7 +86,7 @@ describe('List Users', function (): void {
     });
 
     test('list users page has correct table actions', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $listUsersPage = $this->requireListUsersPage();
         $actions = $listUsersPage->getTableActions();
 
@@ -97,7 +97,7 @@ describe('List Users', function (): void {
     });
 
     test('list users page can display users', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $users = $this->requireUsers();
         $createdUserIds = $users->pluck('id');
         $testUsers = User::whereIn('id', $createdUserIds)->get();
@@ -114,21 +114,21 @@ describe('List Users', function (): void {
     });
 
     test('list users page has correct navigation label', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $listUsersPage = $this->requireListUsersPage();
         $label = $listUsersPage->getNavigationLabel();
         Assert::assertNotEmpty($label);
     });
 
     test('list users page has correct title', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $listUsersPage = $this->requireListUsersPage();
         $title = $listUsersPage->getTitle();
         Assert::assertNotEmpty($title);
     });
 
     test('list users page has correct breadcrumbs', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $listUsersPage = $this->requireListUsersPage();
         try {
             $breadcrumbs = $listUsersPage->getBreadcrumbs();
@@ -138,7 +138,7 @@ describe('List Users', function (): void {
     });
 
     test('list users page can handle search', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $listUsersPage = $this->requireListUsersPage();
         $columns = $listUsersPage->getTableColumns();
         $nameColumn = $columns['name'];
