@@ -273,14 +273,16 @@ class Utils
      */
     public static function showModelPath(string $resourceFQCN): string
     {
+        $modelClass = $resourceFQCN::getModel();
+        Assert::string($modelClass);
+
         if (! config('filament-shield.shield_resource.show_model_path', true)) {
             return '';
         }
 
-        $modelClass = $resourceFQCN::getModel();
         Assert::classExists($modelClass);
 
-        return (new $modelClass())::class;
+        return $modelClass;
     }
 
     /**

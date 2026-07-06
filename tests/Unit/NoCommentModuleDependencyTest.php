@@ -4,15 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit;
 
-use RecursiveDirectoryIterator;
-use RecursiveIteratorIterator;
-use FilesystemIterator;
 use function Safe\file_get_contents;
 
 test('it does not reference the comment module anywhere under user app', function (): void {
     $appPath = dirname(__DIR__, 2).'/app';
-    $iterator = new RecursiveIteratorIterator(
-        new RecursiveDirectoryIterator($appPath, FilesystemIterator::SKIP_DOTS)
+    $iterator = new \RecursiveIteratorIterator(
+        new \RecursiveDirectoryIterator($appPath, \FilesystemIterator::SKIP_DOTS)
     );
 
     /** @var \SplFileInfo $file */

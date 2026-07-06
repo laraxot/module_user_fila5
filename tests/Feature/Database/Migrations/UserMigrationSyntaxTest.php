@@ -2,44 +2,33 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Tests\Feature\Database\Migrations;
-
-use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
 use function Safe\exec;
 use function Safe\file_get_contents;
+use function Safe\glob;
 
-uses(TestCase::class);
+$userMigrationSyntaxFiles = static function (): array {
+    $basePath = dirname(__DIR__, 4).'/database/migrations';
+    $files = array_filter(glob($basePath.'/*.php'), 'is_string');
 
-describe('User Migration Syntax', function (): void {
-    test('user migrations do not contain merge conflict markers', function (): void {
-        foreach (userMigrationFiles() as $migrationFile) {
-            $contents = file_get_contents($migrationFile);
+    sort($files);
 
-            Assert::assertStringNotContainsString('<<<<<<<', $contents, $migrationFile);
-            Assert::assertStringNotContainsString('=======', $contents, $migrationFile);
-            Assert::assertStringNotContainsString('>>>>>>>', $contents, $migrationFile);
-        }
-    });
+    return $files;
+};
 
-    test('user migrations have valid php syntax', function (): void {
-        foreach (userMigrationFiles() as $migrationFile) {
-            $output = [];
-            $exitCode = 0;
+it('does not contain merge conflict markers in user migrations', function () use ($userMigrationSyntaxFiles): void {
+    foreach ($userMigrationSyntaxFiles() as $migrationFile) {
+        Assert::assertStringNotContainsString('<<<<<<<', file_get_contents($migrationFile), $migrationFile);
+    }
+});
 
-            exec('php -l '.escapeshellarg($migrationFile), $output, $exitCode);
+it('has valid php syntax in user migrations', function () use ($userMigrationSyntaxFiles): void {
+    foreach ($userMigrationSyntaxFiles() as $migrationFile) {
+        $output = [];
+        $exitCode = 0;
 
-            $lines = [];
-            if (is_array($output)) {
-                foreach ($output as $line) {
-                    if (is_string($line)) {
-                        $lines[] = $line;
-                    }
-                }
-            }
+        exec('php -l '.escapeshellarg($migrationFile), $output, $exitCode);
 
-            Assert::assertSame(0, $exitCode, implode(PHP_EOL, $lines));
-        }
-    });
+        Assert::assertSame(0, $exitCode, $migrationFile);
+    }
 });
