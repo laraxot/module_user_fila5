@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use PHPUnit\Framework\Assert;
+
 use function Safe\exec;
 use function Safe\file_get_contents;
 use function Safe\glob;

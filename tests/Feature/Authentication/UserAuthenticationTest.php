@@ -21,7 +21,7 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Traits\HasUserTestCase;
 
-uses(\Modules\User\Tests\TestCase::class, HasUserTestCase::class);
+uses(TestCase::class, HasUserTestCase::class);
 
 /**
  * @param array<string, bool|string|\DateTimeInterface|null> $attributes
@@ -164,7 +164,7 @@ describe('User Password Management', function (): void {
             'password_expires_at' => now()->subDays(1),
         ]);
         $expiresAt = $user->password_expires_at;
-        if ($expiresAt === null) {
+        if (null === $expiresAt) {
             throw new \RuntimeException('Expected password expiration date.');
         }
 

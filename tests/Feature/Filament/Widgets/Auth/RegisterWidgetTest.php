@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Schema;
 use Livewire\Livewire;
 use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
 use Modules\User\Filament\Widgets\Auth\RegisterWidget;
-use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
 use function Safe\json_encode;

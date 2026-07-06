@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
 use Modules\User\Models\Profile;
 use Modules\User\Models\User;
-use Throwable;
 
 use function Pest\Laravel\actingAs;
 use function Pest\Laravel\get;
@@ -74,7 +73,7 @@ describe('User Profile Components Tests', function (): void {
         $userFactory = User::factory();
         /** @var \Modules\User\Database\Factories\UserFactory $userFactory */
         $user = $userFactory->create();
-        /** @var User $user */
+        /* @var User $user */
 
         if (class_exists(Profile::class)) {
             // Skip if profiles table doesn't have uuid column
@@ -91,7 +90,7 @@ describe('User Profile Components Tests', function (): void {
             }
             try {
                 Profile::create($profileData);
-            } catch (Throwable) {
+            } catch (\Throwable) {
                 // Profile creation may fail in test env; continue with user only
             }
         }
@@ -100,7 +99,7 @@ describe('User Profile Components Tests', function (): void {
             actingAs($user, 'web');
             $response = get('/it/profile/edit');
             $response->assertStatus(200);
-        } catch (Throwable $e) {
+        } catch (\Throwable $e) {
             expect($e->getMessage())->not->toBe('');
         }
     });
