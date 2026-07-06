@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Hash;
 use Modules\User\Actions\User\GetNewPasswordAction;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\User\Tests\TestCase::class);
 
 describe('GetNewPasswordAction', function (): void {

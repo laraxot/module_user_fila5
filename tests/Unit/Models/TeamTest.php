@@ -9,6 +9,7 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\User\Tests\TestCase::class);
 
 /**

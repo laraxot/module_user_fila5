@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\User\Tests\TestCase::class);
 
 describe('Social Login Widget', function () {

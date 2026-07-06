@@ -7,6 +7,7 @@ use Modules\User\Enums\SocialProviderEnum;
 use Modules\User\Enums\SystemRole;
 use Modules\User\Enums\UserType;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\User\Tests\TestCase::class);
 
 test('UserType enum has expected cases', function (): void {

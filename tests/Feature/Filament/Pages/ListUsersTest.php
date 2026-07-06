@@ -22,7 +22,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
+    /* @var TestCase $this */
     try {
         $panel = Filament::getPanel('user::admin');
     } catch (\Exception $e) {

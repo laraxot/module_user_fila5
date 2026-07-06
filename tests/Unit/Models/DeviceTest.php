@@ -7,6 +7,7 @@ use Illuminate\Support\Str;
 use Modules\User\Database\Factories\DeviceFactory;
 use Modules\User\Models\Device;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\User\Tests\TestCase::class);
 
 /**

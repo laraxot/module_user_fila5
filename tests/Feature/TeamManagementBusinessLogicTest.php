@@ -16,6 +16,7 @@ use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
+
 uses(Modules\User\Tests\TestCase::class);
 
 function teamMgmtBizUserTableHasColumn(string $table, string $column): bool

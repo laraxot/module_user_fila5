@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Modules\User\Facades\FilamentShield;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\User\Tests\TestCase::class);
 
 test('FilamentShield facade can be accessed', function () {

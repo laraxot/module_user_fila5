@@ -18,8 +18,8 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-
 use function Safe\json_encode;
+
 uses(TestCase::class);
 
 function teamMgmtUserTableHasColumn(string $table, string $column): bool

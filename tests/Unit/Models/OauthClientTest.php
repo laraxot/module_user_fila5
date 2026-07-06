@@ -17,7 +17,7 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
-    /** @var TestCase $this */
+    /* @var TestCase $this */
     config(['passport.connection' => 'user']);
 
     if (! Schema::connection('user')->hasTable('oauth_clients')) {

@@ -7,6 +7,7 @@ use Illuminate\Support\Str;
 use Modules\User\Actions\Passport\RevokeAllUserTokensAction;
 use Modules\User\Database\Factories\UserFactory;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\User\Tests\TestCase::class);
 
 describe('RevokeAllUserTokensAction', function (): void {

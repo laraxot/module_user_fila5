@@ -9,6 +9,7 @@ use Modules\User\Events\Registered;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\User\Tests\TestCase::class);
 
 describe('RegisterOauthUserAction', function (): void {

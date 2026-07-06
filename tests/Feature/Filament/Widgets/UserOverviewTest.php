@@ -16,7 +16,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
+    /* @var TestCase $this */
     $this->widget = new UserOverview();
     $this->user = UserFactory::new()->createOne([
         'type' => UserType::MasterAdmin,

@@ -21,6 +21,7 @@ use Modules\User\Exceptions\ProviderNotConfigured;
 use Modules\User\Tests\Unit\Actions\Socialite\Fixtures\DeletableAccessTokenFixture;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\User\Tests\TestCase::class);
 
 describe('Socialite utility actions', function (): void {

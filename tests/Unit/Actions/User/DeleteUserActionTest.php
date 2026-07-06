@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Modules\User\Actions\User\DeleteUserAction;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\User\Tests\TestCase::class);
 
 it('returns failure when password is incorrect', function (): void {

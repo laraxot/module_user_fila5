@@ -12,6 +12,7 @@ use Modules\User\Models\OauthToken;
 use PHPUnit\Framework\Assert;
 
 use function Safe\glob;
+
 uses(Modules\User\Tests\TestCase::class);
 
 test('every eloquent passport model has a local oauth wrapper', function (): void {

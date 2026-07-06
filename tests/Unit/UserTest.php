@@ -17,7 +17,7 @@ uses(TestCase::class);
 describe('User', function (): void {
     test('user can be created', function (): void {
         /* @var \Modules\User\Tests\TestCase $this */
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         try {
             $user = UserFactory::new()->createOne([
                 'type' => UserType::MasterAdmin,
@@ -36,7 +36,7 @@ describe('User', function (): void {
     });
 
     test('user has correct type casting', function (): void {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         try {
             $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
             \assert($user instanceof User);
@@ -72,7 +72,7 @@ describe('User', function (): void {
     });
 
     test('user can be updated', function (): void {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         try {
             $user = UserFactory::new()->createOne([
                 'type' => UserType::MasterAdmin,
@@ -95,7 +95,7 @@ describe('User', function (): void {
     });
 
     test('user can be deleted', function (): void {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         $this->skipUnlessDirectPermissionSupported();
 
         $user = UserFactory::new()->createOne();
@@ -145,7 +145,7 @@ describe('User', function (): void {
     });
 
     test('user can be found by type', function (): void {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         try {
             $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
             \assert($user instanceof User);
@@ -165,7 +165,7 @@ describe('User', function (): void {
     });
 
     test('user can be created with different types', function (): void {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         try {
             $factory = UserFactory::new();
             \assert($factory instanceof Factory);
@@ -191,7 +191,7 @@ describe('User', function (): void {
     });
 
     test('user soft delete functionality', function (): void {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         $this->skipTest('User model does not implement SoftDeletes trait');
     });
 });

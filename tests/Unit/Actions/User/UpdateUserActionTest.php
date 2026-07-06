@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Modules\User\Actions\User\UpdateUserAction;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\User\Tests\TestCase::class);
 
 describe('UpdateUserAction', function (): void {

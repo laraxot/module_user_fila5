@@ -8,7 +8,7 @@ use function Safe\exec;
 use function Safe\file_get_contents;
 use function Safe\glob;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(Modules\User\Tests\TestCase::class);
 
 /** @return list<string> */
 function getUserMigrationFiles(): array
@@ -18,7 +18,7 @@ function getUserMigrationFiles(): array
 
     sort($files);
 
-    /** @var list<string> $files */
+    /* @var list<string> $files */
     return $files;
 }
 

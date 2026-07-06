@@ -8,6 +8,7 @@ use Modules\User\Console\Commands\CreateTeamCommand;
 use Modules\User\Console\Commands\CreateTenantCommand;
 use Modules\User\Console\Commands\SuperAdminCommand;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\User\Tests\TestCase::class);
 
 test('AssignRoleCommand can be instantiated', function () {

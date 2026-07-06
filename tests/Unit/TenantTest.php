@@ -14,6 +14,7 @@ use Modules\User\Models\Tenant;
 use PHPUnit\Framework\Assert;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\Sluggable\SlugOptions;
+
 uses(Modules\User\Tests\TestCase::class);
 
 /**

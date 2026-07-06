@@ -10,9 +10,9 @@ use Illuminate\Support\Str;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
 use Modules\User\Models\User;
+
 use function Pest\Laravel\actingAs;
 use function Pest\Laravel\get;
-use Throwable;
 
 uses(\Modules\User\Tests\TestCase::class);
 
@@ -93,7 +93,7 @@ describe('User Profile Components Tests', function (): void {
             }
             try {
                 Profile::create($profileData);
-            } catch (Throwable $e) {
+            } catch (\Throwable $e) {
                 expect($e->getMessage())->not->toBe('');
             }
         }
@@ -103,7 +103,7 @@ describe('User Profile Components Tests', function (): void {
             actingAs($user, 'web');
             $response = get('/it/profile/edit');
             $response->assertStatus(200);
-        } catch (Throwable $e) {
+        } catch (\Throwable $e) {
             expect($e->getMessage())->not->toBe('');
         }
     });

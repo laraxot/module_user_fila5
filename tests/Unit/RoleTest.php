@@ -8,6 +8,7 @@ use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\User\Tests\TestCase::class);
 
 /**

@@ -9,6 +9,7 @@ use ReflectionNamedType;
 use function Safe\file_get_contents;
 
 use Spatie\LaravelData\Data;
+
 uses(Modules\User\Tests\TestCase::class);
 
 function samplePasswordData(): PasswordData

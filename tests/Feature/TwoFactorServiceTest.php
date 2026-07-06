@@ -15,7 +15,7 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
-    /** @var TestCase $this */
+    /* @var TestCase $this */
     $this->skipUnlessUserColumn('users', 'two_factor_secret');
     $this->skipUnlessUserColumn('users', 'two_factor_recovery_codes');
     $this->skipUnlessUserColumn('users', 'two_factor_confirmed_at');

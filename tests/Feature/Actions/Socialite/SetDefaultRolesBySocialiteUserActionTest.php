@@ -9,6 +9,7 @@ use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Role;
 use PHPUnit\Framework\Assert;
+
 uses(Modules\User\Tests\TestCase::class);
 
 describe('SetDefaultRolesBySocialiteUserAction', function (): void {

@@ -8,6 +8,7 @@ use Modules\User\Models\Team;
 use PHPUnit\Framework\Assert;
 use Spatie\Permission\PermissionRegistrar;
 use Spatie\Permission\Support\Config as PermissionConfig;
+
 uses(Modules\User\Tests\TestCase::class);
 
 test('spatie permission registrar uses user module models for teams', function (): void {

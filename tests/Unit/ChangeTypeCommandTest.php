@@ -7,6 +7,7 @@ use Modules\User\Console\Commands\ChangeTypeCommand;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
 use ReflectionNamedType;
+
 uses(Modules\User\Tests\TestCase::class);
 
 function changeTypeCommandInstance(): ChangeTypeCommand

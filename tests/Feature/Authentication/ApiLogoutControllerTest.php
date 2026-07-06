@@ -16,7 +16,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
+    /* @var TestCase $this */
     $this->skipUnlessUserTable('device_user');
     $this->skipUnlessUserTable('devices');
 
@@ -58,7 +58,7 @@ describe('Api Logout Controller', function (): void {
             $this->skipTest('Passport token creation unavailable: '.$exception->getMessage());
         }
 
-        if ($personalAccessToken === null) {
+        if (null === $personalAccessToken) {
             $this->skipTest('Passport token creation unavailable.');
         }
 
