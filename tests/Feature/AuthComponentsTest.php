@@ -10,7 +10,6 @@ use Modules\User\Models\User;
 use function Pest\Laravel\actingAs;
 use function Pest\Laravel\get;
 
-
 describe('Auth Components Tests', function (): void {
     test('auth components exist and work correctly', function (): void {
         // Test existing auth components
@@ -63,7 +62,6 @@ describe('Authentication Flow with Reorganized Components', function (): void {
     test('login form components work after reorganization', function (): void {
         // Visit login page and ensure all reorganized components render
         $response = get('/it/auth/login');
-
     });
 });
 
