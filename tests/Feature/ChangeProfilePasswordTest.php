@@ -20,8 +20,8 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var \Modules\User\Tests\TestCase $this */
-        $this->skipUnlessUsersTableReady();
+    /* @var \Modules\User\Tests\TestCase $this */
+    $this->skipUnlessUsersTableReady();
     $this->skipUnlessUserColumn('profiles', 'uuid', 'profiles.uuid column is not available in the test database.');
 
     app()->register(AdminPanelProvider::class);

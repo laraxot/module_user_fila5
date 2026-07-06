@@ -15,8 +15,8 @@ use Modules\User\Tests\Traits\HasUserTestCase;
 uses(TestCase::class, HasUserTestCase::class);
 
 beforeEach(function () {
-    /** @var \Modules\User\Tests\TestCase $this */
-        $user = User::factory()->create([
+    /** @var TestCase $this */
+    $user = User::factory()->create([
         'password' => Hash::make('password123'),
         'is_active' => true,
         'email_verified_at' => now(),
@@ -28,7 +28,7 @@ beforeEach(function () {
 
 describe('User Authentication', function () {
     it('can authenticate with valid credentials', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $result = Auth::attempt([
             'email' => $this->user->email,
             'password' => 'password123',
@@ -39,7 +39,7 @@ describe('User Authentication', function () {
     });
 
     it('cannot authenticate with invalid password', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $result = Auth::attempt([
             'email' => $this->user->email,
             'password' => 'wrongpassword',
@@ -78,7 +78,7 @@ describe('User Authentication', function () {
     });
 
     it('can logout user', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         Auth::login($this->user);
         expect(Auth::check())->toBe(true);
 
@@ -100,7 +100,7 @@ describe('User Password Management', function () {
     });
 
     it('can change password', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $newPassword = 'newpassword123';
         $this->user->update([
             'password' => Hash::make($newPassword),
@@ -122,7 +122,7 @@ describe('User Password Management', function () {
     });
 
     it('can set password expiration', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $expirationDate = now()->addDays(90);
         $this->user->update([
             'password_expires_at' => $expirationDate,
@@ -139,7 +139,7 @@ describe('User Password Management', function () {
 
 describe('User Remember Token', function () {
     it('can generate remember token', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $token = Str::random(60);
         $this->user->forceFill(['remember_token' => $token])->save();
 
@@ -147,7 +147,7 @@ describe('User Remember Token', function () {
     });
 
     it('can authenticate using remember token', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $token = Str::random(60);
         $this->user->forceFill(['remember_token' => $token])->save();
 
@@ -207,7 +207,7 @@ describe('User Email Verification', function () {
 
 describe('User Authorization', function () {
     it('can assign and check roles', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $adminRole = Role::factory()->create(['name' => 'admin']);
         $editorRole = Role::factory()->create(['name' => 'editor']);
 
@@ -219,7 +219,7 @@ describe('User Authorization', function () {
     });
 
     it('can assign and check permissions', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $editPermission = Permission::factory()->create(['name' => 'edit posts']);
         $deletePermission = Permission::factory()->create(['name' => 'delete posts']);
 
@@ -231,7 +231,7 @@ describe('User Authorization', function () {
     });
 
     it('can inherit permissions from roles', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $role = Role::factory()->create(['name' => 'editor']);
         $permission = Permission::factory()->create(['name' => 'edit posts']);
 
@@ -242,7 +242,7 @@ describe('User Authorization', function () {
     });
 
     it('can check multiple permissions', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $permission1 = Permission::factory()->create(['name' => 'edit posts']);
         $permission2 = Permission::factory()->create(['name' => 'delete posts']);
 
@@ -253,7 +253,7 @@ describe('User Authorization', function () {
     });
 
     it('can remove roles and permissions', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $role = Role::factory()->create(['name' => 'editor']);
         $permission = Permission::factory()->create(['name' => 'edit posts']);
 
@@ -273,17 +273,17 @@ describe('User Authorization', function () {
 
 describe('User OAuth Authentication', function () {
     it('can have oauth clients', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         expect($this->user->clients())->toBeInstanceOf(Illuminate\Database\Eloquent\Relations\MorphMany::class);
     });
 
     it('can have oauth tokens', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         expect($this->user->tokens())->toBeInstanceOf(HasMany::class);
     });
 
     it('can find user for passport', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $user = User::findForPassport($this->user->email);
 
         expect($user)->not->toBeNull();
@@ -291,7 +291,7 @@ describe('User OAuth Authentication', function () {
     });
 
     it('can validate password for passport', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $isValid = $this->user->validateForPassportPasswordGrant('password123');
 
         expect($isValid)->toBe(true);
@@ -300,12 +300,12 @@ describe('User OAuth Authentication', function () {
 
 describe('User Authentication Logging', function () {
     it('can log authentication attempts', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         expect($this->user->authentications())->toBeInstanceOf(Illuminate\Database\Eloquent\Relations\MorphMany::class);
     });
 
     it('can get latest authentication log', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         expect($this->user->latestAuthentication())
             ->toBeInstanceOf(Illuminate\Database\Eloquent\Relations\MorphOne::class);
     });
@@ -313,7 +313,7 @@ describe('User Authentication Logging', function () {
 
 describe('User Session Management', function () {
     it('can store user in session', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         Auth::login($this->user);
 
         expect(Auth::check())->toBe(true);
@@ -321,14 +321,14 @@ describe('User Session Management', function () {
     });
 
     it('can remember user across sessions', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         Auth::login($this->user, true);
 
         expect($this->user->fresh()->remember_token)->not->toBeNull();
     });
 
     it('can clear user session on logout', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         Auth::login($this->user);
         expect(Auth::check())->toBe(true);
 
@@ -339,14 +339,14 @@ describe('User Session Management', function () {
 
 describe('User Two Factor Authentication', function () {
     it('can enable two factor authentication', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         $this->user->update(['is_otp' => true]);
 
         expect($this->user->fresh()->is_otp)->toBe(true);
     });
 
     it('can disable two factor authentication', function () {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /* @var \Modules\User\Tests\TestCase $this */
         $this->user->update(['is_otp' => false]);
 
         expect($this->user->fresh()->is_otp)->toBe(false);

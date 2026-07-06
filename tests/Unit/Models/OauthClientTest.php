@@ -17,8 +17,8 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
-    /** @var \Modules\User\Tests\TestCase $this */
-        config(['passport.connection' => 'user']);
+    /* @var \Modules\User\Tests\TestCase $this */
+    config(['passport.connection' => 'user']);
 
     if (! Schema::connection('user')->hasTable('oauth_clients')) {
         $this->skipTest('oauth_clients table missing on user connection.');
@@ -41,7 +41,7 @@ describe('Oauth Client', function (): void {
     });
 
     test('oauth client user relation uses xot data', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
         $client = $this->oauthClientTestPersistedClient(['user_id' => (string) $user->getKey()]);
 
@@ -50,21 +50,21 @@ describe('Oauth Client', function (): void {
     });
 
     test('oauth client is confidential when secret is present', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $client = $this->oauthClientTestPersistedClient(['secret' => 'hashed-secret']);
 
         Assert::assertTrue($client->confidential());
     });
 
     test('oauth client is not confidential when secret is empty', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $client = $this->oauthClientTestPersistedClient(['secret' => null]);
 
         Assert::assertFalse($client->confidential());
     });
 
     test('oauth client has grant type check', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $client = $this->oauthClientTestPersistedClient([
             'grant_types' => json_encode(['authorization_code', 'refresh_token']),
         ]);
@@ -74,7 +74,7 @@ describe('Oauth Client', function (): void {
     });
 
     test('oauth client has scope check', function (): void {
-        /** @var \Modules\User\Tests\TestCase $this */
+        /** @var TestCase $this */
         $client = $this->oauthClientTestPersistedClient();
 
         Assert::assertTrue($client->hasScope('read'));
