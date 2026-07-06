@@ -184,7 +184,7 @@ trait HasTeams
      */
     public function allTeamUsers(): Collection // @phpstan-ignore return.type
     {/** @var Collection<int, mixed> $teams */
-                    $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
+                        $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
         /** @var Collection<int, User> $result */
         $result = $teams->flatMap( // @phpstan-ignore argument.type
             /** @param mixed $team @return array<int,User>|Collection<int,User> */
@@ -480,7 +480,7 @@ trait HasTeams
         /** @var BelongsToMany<Model&TeamContract, Model, Pivot, 'pivot'> $relation */
         $relation = $this->belongsToManyX($teamClass);
 
-        /** @phpstan-ignore return.type */
+        /* @phpstan-ignore return.type */
         return $relation;
     }
 
