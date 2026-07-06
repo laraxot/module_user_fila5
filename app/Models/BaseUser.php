@@ -11,9 +11,8 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
@@ -26,8 +25,11 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
+use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
+use Modules\User\Models\Traits\HasDevices;
 use Modules\User\Models\Traits\HasModules;
+use Modules\User\Models\Traits\HasSocialite;
 use Modules\User\Models\Traits\HasSpatiePermission;
 use Modules\User\Models\Traits\HasTeams;
 use Modules\Xot\Contracts\ProfileContract;
@@ -61,8 +63,8 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @property ProfileContract|null                                      $profile
  * @property Collection<int, Role>                                     $roles
  * @property int|null                                                  $roles_count
- * @property Collection<int, Team>                                     $teams
- * @property int|null                                                  $teams_count
+ * @property Collection<int, Team>                                     $membershipTeams
+ * @property int|null                                                  $membership_teams_count
  * @property Collection<int, Tenant>                                   $tenants
  * @property int|null                                                  $tenants_count
  * @property Collection<int, OauthToken>                               $tokens
@@ -125,18 +127,23 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  *
  * @mixin \Eloquent
  */
-abstract class BaseUser extends Authenticatable implements HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
+abstract class BaseUser extends Authenticatable implements HasAuthentications, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
 {
     use HasApiTokens;
     use HasAuthenticationLogTrait;
     use HasChildren;
+    use HasDevices;
     use HasModules;
+    use HasSocialite;
     use HasSpatiePermission, HasTeams {
-        HasTeams::teams insteadof HasSpatiePermission;
-        HasSpatiePermission::teams as spatiePermissionTeams;
+        HasSpatiePermission::teams insteadof HasTeams;
+        HasTeams::teams as membershipTeams;
     }
     use HasUuids;
+
+    /** @phpstan-use HasXotFactory<Factory<static>> */
     use HasXotFactory;
+
     use InteractsWithMedia;
     use Notifiable;
 
@@ -254,22 +261,36 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return $fullName;
     }
 
+    /**
+     * @return HasOne<Model&ProfileContract, $this>
+     *
+     * @phpstan-return HasOne<Model&ProfileContract, $this>
+     */
     #[\Override]
     public function profile(): HasOne
     {
         $profileClass = XotData::make()->getProfileClass();
         if (class_exists($profileClass)) {
-            return $this->hasOne($profileClass);
+            /** @var HasOne<Model&ProfileContract, $this> $relation */
+            $relation = $this->hasOne($profileClass);
+
+            return $relation;
         }
 
         // Try direct module class if XotData failed
         $directClass = 'Modules\User\Models\Profile';
         if (class_exists($directClass)) {
-            return $this->hasOne($directClass);
+            /** @var HasOne<Model&ProfileContract, $this> $relation */
+            $relation = $this->hasOne($directClass);
+
+            return $relation;
         }
 
         // Fallback: stay on current model if nothing found
-        return $this->hasOne(static::class, 'id', 'id')->whereRaw('1=0');
+        /** @var HasOne<Model&ProfileContract, $this> $relation */
+        $relation = $this->hasOne(static::class, 'id', 'id')->whereRaw('1=0');
+
+        return $relation;
     }
 
     /**
@@ -308,19 +329,14 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return true; // str_ends_with($this->email, '@yourdomain.com') && $this->hasVerifiedEmail();
     }
 
-    public function canAccessSocialite(): bool
-    {
-        return true;
-    }
-
     public function detach(Model $model): void
     {
-        $this->teams()->detach($model);
+        $this->membershipTeams()->detach($model);
     }
 
     public function attach(Model $model): void
     {
-        $this->teams()->attach($model);
+        $this->membershipTeams()->attach($model);
     }
 
     public function treeLabel(): string
@@ -328,41 +344,15 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return (string) ($this->name ?? $this->email);
     }
 
+    /**
+     * @return Collection<int, Team>
+     */
+    /**
+     * @return Collection<int, Team>
+     */
     public function treeSons(): Collection
     {
-        return $this->teams ?? new Collection();
-    }
-
-    /**
-     * Get the devices associated with the user.
-     *
-     * @return BelongsToMany<Device, static>
-     */
-    public function devices(): BelongsToMany
-    {
-        return $this->belongsToManyX(Device::class);
-    }
-
-    /**
-     * Get the socialite users associated with the user.
-     *
-     * @return HasMany<SocialiteUser, $this>
-     */
-    public function socialiteUsers(): HasMany
-    {
-        return $this->hasMany(SocialiteUser::class);
-    }
-
-    public function getProviderField(string $provider, string $field): string
-    {
-        $socialiteUser = $this->socialiteUsers()->firstWhere(['provider' => $provider]);
-        if (null === $socialiteUser) {
-            throw new \Exception('SocialiteUser not found');
-        }
-
-        $res = $socialiteUser->{$field};
-
-        return (string) $res;
+        return $this->membershipTeams ?? new Collection();
     }
 
     /**

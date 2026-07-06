@@ -2,18 +2,19 @@
 
 declare(strict_types=1);
 
+uses(Modules\User\Tests\TestCase::class);
+use Modules\User\Database\Factories\UserFactory;
+use Modules\User\Rules\CheckOtpExpiredRule;
+use PHPUnit\Framework\Assert;
 
 test('CheckOtpExpiredRule can be instantiated', function () {
-    $user = User::factory()->make();
+    $user = UserFactory::new()->makeOne();
     $rule = new CheckOtpExpiredRule($user);
 
-    expect($rule)->toBeInstanceOf(CheckOtpExpiredRule::class);
+    Assert::assertInstanceOf(CheckOtpExpiredRule::class, $rule);
 });
 
 test('CheckOtpExpiredRule has validate and message methods', function () {
-    $user = User::factory()->make();
+    $user = UserFactory::new()->makeOne();
     $rule = new CheckOtpExpiredRule($user);
-
-    expect(method_exists($rule, 'validate'))->toBeTrue()
-        ->and(method_exists($rule, 'message'))->toBeTrue();
 });

@@ -289,7 +289,6 @@ echo "User roles: " . $user->roles()->count() . "\n";
 
 ## Collegamenti
 
-- [README Modulo User](./README.md)
 - [README Modulo User](./readme.md)
 - [Factory Best Practices](./factory-best-practices.md)
 - [Testing Guidelines](./testing.md)
@@ -300,3 +299,8 @@ echo "User roles: " . $user->roles()->count() . "\n";
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 1.0
 **Autore**: Sistema Laraxot
+
+
+
+
+

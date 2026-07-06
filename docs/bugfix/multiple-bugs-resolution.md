@@ -206,10 +206,6 @@ public function render(): View
 - [Super Mucca Workflow](../../xot/docs/super-mucca-workflow.md)
 - [Git Conflict Resolution](./git-conflicts-resolution-2025-12-16.md)
 - [TenantService Actions](../../tenant/docs/configuration.md)
-- [Priority Decision Rules](../../Xot/docs/priority-decision-rules.md)
-- [Super Mucca Workflow](../../Xot/docs/super-mucca-workflow.md)
-- [Git Conflict Resolution](./git-conflicts-resolution-2025-12-16.md)
-- [TenantService Actions](../../Tenant/docs/configuration.md)
 
 ---
 

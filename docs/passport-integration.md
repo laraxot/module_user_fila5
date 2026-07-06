@@ -1,8 +1,5 @@
 # Laravel Passport Integration - Architettura Completa
 
-> **Generato**: 2026-01-07
-> **Filosofia**: L'Architetto Laraxot (Vincitore del Dibattito Interno)
-> **PHPStan Status**: ✅ Level MAX Compliant (Zero Errori)
 > **Generato**: [DATE]
 > **Filosofia**: L'Architetto Laraxot (Vincitore del Dibattito Interno)
 > **PHPStan Status**: ✅ Modulo `User` verificato pulito il 2026-03-10
@@ -502,9 +499,6 @@ $ ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 ## 📚 Collegamenti
 
 ### Documentazione Correlata
-- [FILOSOFIA_MODULO_USER.md](./FILOSOFIA_MODULO_USER.md) - Filosofia generale
-- [README.md](./README.md) - Overview modulo
-- [BUSINESS_LOGIC_DEEP_DIVE.md](./BUSINESS_LOGIC_DEEP_DIVE.md) - Business logic completa
 - [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia generale
 - [README.md](./readme.md) - Overview modulo
 - [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md) - Business logic completa

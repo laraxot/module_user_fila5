@@ -281,7 +281,6 @@ public function run(): void
 ## Link Documentazione
 
 ### <nome progetto> Module
-- [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/UserFactory-advanced-improvements-analysis.md)
 - [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
 - [Implementation Completed](../../<nome progetto>/docs/factories/userfactory_implementation_completed.md)
 - [Model States](../../<nome progetto>/docs/models/states.md)
@@ -577,7 +576,6 @@ public function run(): void
 ## Link Documentazione
 
 ### <nome progetto> Module
-- [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/UserFactory-advanced-improvements-analysis.md)
 - [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
 - [Implementation Completed](../../<nome progetto>/docs/factories/userfactory_implementation_completed.md)
 - [Model States](../../<nome progetto>/docs/models/states.md)

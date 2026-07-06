@@ -1,5 +1,3 @@
-https://tailwindflex.com/@sophia-baker/responsive-registration-form
-
 ---
 module: theme
 topic: tailwind

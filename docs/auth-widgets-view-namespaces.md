@@ -100,7 +100,6 @@ Per ogni nuovo widget di autenticazione:
 - [ ] View minimalista (solo styling)
 - [ ] Logica centralizzata nel widget PHP
 ## Collegamenti
-*Ultimo aggiornamento: Dicembre 2024*
 - [Documentazione Root: Widget View Namespaces](../../../../docs/project/frontend/widget-view-namespaces.md)
 - [Struttura Temi](../../../../docs/project/tecnico/themes/theme-structure.md)
 - [Documentazione Root: Widget View Namespaces](../../../../docs/frontend/widget-view-namespaces.md)

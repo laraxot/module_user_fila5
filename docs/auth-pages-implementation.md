@@ -8,13 +8,6 @@
 - [Volt Errors](./volt_errors.md)
 - [Volt Folio Logout](./volt_folio_logout.md)
 - [Volt Logout Action](./volt_logout_action.md)
-- [Documentazione centrale](../../../docs/README.md)
-- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Volt Errors](./VOLT_ERRORS.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
 
 ## Introduzione
 
@@ -478,13 +471,6 @@ Utilizzare sempre la funzione `__()` per le stringhe visualizzate all'utente:
 - [Volt Errors](./volt_errors.md)
 - [Volt Folio Logout](./volt_folio_logout.md)
 - [Volt Logout Action](./volt_logout_action.md)
-- [Documentazione centrale](../../../docs/README.md)
-- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Volt Errors](./VOLT_ERRORS.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
 
 ## Introduzione
 

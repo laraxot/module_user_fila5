@@ -52,3 +52,4 @@ $logs = $user->activities()->where('log_name', 'user_moderation')->get();
 - [Filament Best Practices](mdc:filament-best-practices.md)
 - [Testing](mdc:testing.md)
 - [Documentazione centrale](mdc:../../../../../docs/index.md)
+

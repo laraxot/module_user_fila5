@@ -96,9 +96,6 @@ Questo errore è **GRAVISSIMO** perché:
 
 ## COLLEGAMENTI
 
-- [User Module README](./README.md)
-- [Factory PHPStan Fixes](./phpstan/factory-fixes.md)
-- [Database Documentation](./database/README.md)
 - [Factory Audit Complete Analysis](../../../../docs/project/factory-audit-complete-analysis.md)
 - [User Module README](./readme.md)
 - [Factory PHPStan Fixes](./phpstan/factory-fixes.md)
@@ -113,4 +110,3 @@ Questo errore è **GRAVISSIMO** perché:
 5. ⏳ Documentare pattern e best practice
 
 *Creato: 2025-01-06*
-*Ultimo aggiornamento: 2025-01-06*

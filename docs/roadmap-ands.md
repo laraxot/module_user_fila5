@@ -380,3 +380,6 @@ php artisan queue:prune-failed --hours=48
 **Priorità**: 🟡 ALTA  
 **Timeline**: 2 Ottobre 2025  
 **Effort**: ~6 ore → 100% CLEAN
+
+
+

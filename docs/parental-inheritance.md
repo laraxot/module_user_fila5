@@ -1,4 +1,3 @@
-*Ultimo aggiornamento: Dicembre 2024*
 ---
 module: theme
 topic: parental-inheritance

@@ -6,10 +6,11 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Schemas\Components\Component;
 use Illuminate\Notifications\DatabaseNotification;
-use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Modules\User\Models\BaseUser;
+use Modules\User\Models\Notification;
+use Modules\User\Support\NotificationSchema;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
@@ -19,8 +20,8 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
 {
     protected string $view = 'user::widgets.auth.notifications-center-widget';
 
-    /** @var DatabaseNotificationCollection<int, DatabaseNotification>|Collection */
-    public Collection|DatabaseNotificationCollection $notifications;
+    /** @var Collection<int, DatabaseNotification|Notification> */
+    public Collection $notifications;
 
     public int $unreadCount = 0;
 
@@ -40,7 +41,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     public function markAsRead(string $notificationId): void
     {
         $user = $this->authUser();
-        if ($user === null) {
+        if (null === $user) {
             return;
         }
 
@@ -53,7 +54,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     public function markAllAsRead(): void
     {
         $user = $this->authUser();
-        if ($user === null) {
+        if (null === $user) {
             return;
         }
 
@@ -65,16 +66,17 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     private function refreshNotifications(): void
     {
         $user = $this->authUser();
-        if ($user === null) {
-            $this->notifications = collect();
+        if (null === $user || ! NotificationSchema::isReadable()) {
+            $this->notifications = new Collection([]);
             $this->unreadCount = 0;
 
             return;
         }
 
-        /** @var Collection<int, DatabaseNotification> $notifications */
-        $notifications = $user->notifications()->latest()->limit(50)->get();
-        $this->notifications = $notifications;
+        /** @var Collection<int, DatabaseNotification|Notification> $loaded */
+        $loaded = $user->notifications()->latest()->limit(50)->get();
+
+        $this->notifications = $loaded;
         $this->unreadCount = $user->unreadNotifications()->count();
     }
 

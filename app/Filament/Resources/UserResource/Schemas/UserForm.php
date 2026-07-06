@@ -32,45 +32,49 @@ class UserForm extends XotBaseResourceForm
     {
         return [
             'worker' => UserSection::make('worker'),
-            'section01' => Section::make([
-                'name' => TextInput::make('name')->required(),
-                'password' => TextInput::make('password')
-                    ->password()
-                    ->dehydrateStateUsing(function ($state): ?string {
-                        if (! is_string($state) || empty($state)) {
-                            return null;
+            'section01' => Section::make()
+                ->schema([
+                    TextInput::make('name')->required(),
+                    TextInput::make('password')
+                        ->password()
+                        ->dehydrateStateUsing(function ($state): ?string {
+                            if (! is_string($state) || empty($state)) {
+                                return null;
+                            }
+
+                            return Hash::make($state);
+                        })
+                        ->required(fn ($livewire) => $livewire instanceof CreateUser),
+                ])
+                ->columnSpan(8),
+            'section02' => Section::make()
+                ->schema([
+                    Placeholder::make('created_at')->content(static function ($record) {
+                        if (! $record instanceof Model) {
+                            return new HtmlString('&mdash;');
                         }
 
-                        return Hash::make($state);
-                    })
-                    ->required(fn ($livewire) => $livewire instanceof CreateUser),
-            ])->columnSpan(8),
-            'section02' => Section::make(__('user::fields.created_at'))->schema([
-                'created_at' => Placeholder::make('created_at')->content(static function ($record) {
-                    if (! $record instanceof Model) {
+                        if (! $record->hasAttribute('created_at')) {
+                            return new HtmlString('&mdash;');
+                        }
+
+                        /** @var Carbon|null $createdAt */
+                        $createdAt = $record->getAttribute('created_at');
+
+                        if (null === $createdAt) {
+                            return new HtmlString('&mdash;');
+                        }
+                        if ($createdAt instanceof CarbonInterface) {
+                            return $createdAt->diffForHumans();
+                        }
+                        if ($createdAt instanceof \DateTimeInterface) {
+                            return $createdAt->format('Y-m-d H:i:s');
+                        }
+
                         return new HtmlString('&mdash;');
-                    }
-
-                    if (! $record->hasAttribute('created_at')) {
-                        return new HtmlString('&mdash;');
-                    }
-
-                    /** @var Carbon|null $createdAt */
-                    $createdAt = $record->getAttribute('created_at');
-
-                    if (null === $createdAt) {
-                        return new HtmlString('&mdash;');
-                    }
-                    if ($createdAt instanceof CarbonInterface) {
-                        return $createdAt->diffForHumans();
-                    }
-                    if ($createdAt instanceof \DateTimeInterface) {
-                        return $createdAt->format('Y-m-d H:i:s');
-                    }
-
-                    return new HtmlString('&mdash;');
-                }),
-            ])->columnSpan(4),
+                    }),
+                ])
+                ->columnSpan(4),
         ];
     }
 

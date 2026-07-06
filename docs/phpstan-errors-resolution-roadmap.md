@@ -145,10 +145,6 @@ public function clients();
 - [PHPStan Code Quality Guide](../../xot/docs/phpstan-code-quality-guide.md)
 - [Passport Integration](../../user/docs/passport-integration.md)
 - [Vendor Contract Patterns](../../xot/docs/development/vendor-contract-patterns.md)
-- [Filament Class Extension Rules](../../Xot/docs/filament-class-extension-rules.md)
-- [PHPStan Code Quality Guide](../../Xot/docs/phpstan-code-quality-guide.md)
-- [Passport Integration](../../User/docs/passport-integration.md)
-- [Vendor Contract Patterns](../../Xot/docs/development/vendor-contract-patterns.md)
 
 ---
 
@@ -201,4 +197,3 @@ Tutti gli errori sono stati corretti:
 3. **PHPMD**:
     - Aggiunto `@SuppressWarnings` per `StaticAccess` e `CouplingBetweenObjects` in `PassportServiceProvider`.
 
-*Ultimo aggiornamento: 2025-01-27*

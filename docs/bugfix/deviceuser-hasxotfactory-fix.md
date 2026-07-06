@@ -80,8 +80,6 @@ php artisan tinker
 
 ## Link Correlati
 
-- [HasXotFactory Documentation](../../Xot/docs/traits/hasxotfactory.md)
-- [HasXotFactory Restoration](../../Xot/docs/bugfix/hasxotfactory-restoration.md)
 - [HasXotFactory Documentation](../../xot/docs/traits/hasxotfactory.md)
 - [HasXotFactory Restoration](../../xot/docs/bugfix/hasxotfactory-restoration.md)
 - [BasePivot Documentation](../models/basepivot.md)
@@ -92,3 +90,8 @@ php artisan tinker
 **Stato**: ✅ RISOLTO  
 **Modulo**: User  
 **File Modificati**: `Modules/User/app/Models/BasePivot.php`
+
+
+
+
+

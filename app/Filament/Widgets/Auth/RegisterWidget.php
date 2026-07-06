@@ -6,13 +6,14 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Notifications\Notification;
 use Illuminate\Contracts\Auth\Authenticatable;
-use Webmozart\Assert\Assert;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Schema;
+use Modules\Activity\Support\ActivityLogSchema;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+use Webmozart\Assert\Assert;
 
 /**
  * Register FO — schema SSoT in `Schemas\UserForm::getRegisterFormSchema()`.
@@ -79,7 +80,7 @@ class RegisterWidget extends XotBaseSchemaWidget
                 'email_verified_at' => null,
             ]));
 
-            if (Schema::hasTable('activity_log')) {
+            if (ActivityLogSchema::isWritable()) {
                 activity()
                     ->causedBy($user)
                     ->performedOn($user)
@@ -100,7 +101,7 @@ class RegisterWidget extends XotBaseSchemaWidget
 
     protected function handleSuccessfulRegistration(Authenticatable $user): void
     {
-        if (config('auth.must_verify_email') && method_exists($user, 'sendEmailVerificationNotification')) {
+        if (config('auth.must_verify_email') && $user instanceof MustVerifyEmail) {
             $user->sendEmailVerificationNotification();
         }
 

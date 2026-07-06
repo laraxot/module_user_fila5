@@ -204,10 +204,6 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 
 ## 🔗 Collegamenti
 
-- [← User Module README](./README.md)
-- [← PHPStan Session Report](../../../docs/phpstan/filament-v4-fixes-session.md)
-- [← Final Report](../../../docs/phpstan/final-report-session-2025-10-01.md)
-- [← Root Documentation](../../../docs/index.md)
 - [← User Module README](./readme.md)
 - [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Final Report](../../../../docs/phpstan/final-report-session-2025-10-01.md)
@@ -621,11 +617,6 @@ public string $currentState = 'default';
 - [PHPStan Usage](../../xot/docs/phpstan-usage.md)
 - [XotBaseResource Documentation](../../xot/docs/filament/xot-base-resource.md)
 
-- [Filament Class Extension Rules](../../Xot/docs/filament-class-extension-rules.md)
-- [PHPStan Usage](../../Xot/docs/phpstan-usage.md)
-- [XotBaseResource Documentation](../../Xot/docs/filament/xot-base-resource.md)
-
-*Ultimo aggiornamento: 2025-01-22*
 # PHPStan Fixes - Modulo User
 
 ## OauthClientResource.php

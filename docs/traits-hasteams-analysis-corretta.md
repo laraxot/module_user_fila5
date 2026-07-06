@@ -525,13 +525,8 @@ trait HasTeams
 
 ## Backlink e Riferimenti
 
-- [docs/USER_MODULE.md](../../../project_docs/USER_MODULE.md)
-- [Modules/User/project_docs/traits.md](traits.md)  
-- [docs/phpstan_fixes.md](../../../project_docs/phpstan_fixes.md)
-- [Modules/Xot/project_docs/RELATION_X.md](../../Xot/project_docs/RELATION_X.md)
-
-*Ultimo aggiornamento: gennaio 2025* 
 - [docs/USER_MODULE.md](../../../../docs/project/user_module.md)
 - [Modules/User/project_docs/traits.md](traits.md)  
 - [docs/phpstan_fixes.md](../../../../docs/project/phpstan_fixes.md)
 - [Modules/Xot/project_docs/RELATION_X.md](../../xot/project_docs/relation_x.md)
+

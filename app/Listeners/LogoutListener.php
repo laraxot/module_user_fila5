@@ -12,8 +12,9 @@ use Illuminate\Auth\Events\Logout;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Modules\User\Actions\GetCurrentDeviceAction;
-use Modules\User\Contracts\HasAuthentications;
+use Modules\User\Models\BaseUser;
 use Modules\User\Models\DeviceUser;
+use Modules\User\Support\AuthenticationLogQuery;
 
 class LogoutListener
 {
@@ -62,7 +63,7 @@ class LogoutListener
             }
 
             // Gestione delle autenticazioni
-            if ($event->user instanceof HasAuthentications) {
+            if ($event->user instanceof BaseUser) {
                 try {
                     $event
                         ->user
@@ -100,11 +101,9 @@ class LogoutListener
      */
     public function forgetRememberTokens(Logout $event): void
     {
-        if ($event->user && $event->user instanceof HasAuthentications) {
+        if ($event->user instanceof BaseUser) {
             try {
-                $event
-                    ->user
-                    ->authentications()
+                AuthenticationLogQuery::forAuthenticatable($event->user)
                     ->whereNotNull('remember_token')
                     ->update([
                         'remember_token' => null,

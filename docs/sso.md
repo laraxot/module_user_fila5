@@ -725,4 +725,3 @@ class SsoTest extends TestCase
 
 **Status**: Pianificato Q1 2026  
 **Priority**: MEDIUM  
-https://fusionauth.io/blog/single-sign-on-laravel-fusionauth

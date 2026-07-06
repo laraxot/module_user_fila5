@@ -5,10 +5,6 @@
 - [Convenzioni Path](./path_conventions.md)
 - [Volt Folio Logout](./volt_folio_logout.md)
 - [Implementazione Logout](./logout_blade_implementation.md)
-- [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Implementazione Logout](./LOGOUT_BLADE_IMPLEMENTATION.md)
 
 ## Panoramica
 
@@ -387,10 +383,6 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
 - [Convenzioni Path](./path_conventions.md)
 - [Volt Folio Logout](./volt_folio_logout.md)
 - [Implementazione Logout](./logout_blade_implementation.md)
-- [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Implementazione Logout](./LOGOUT_BLADE_IMPLEMENTATION.md)
 
 ## Panoramica
 

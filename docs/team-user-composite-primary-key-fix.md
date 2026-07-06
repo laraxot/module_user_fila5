@@ -1,5 +1,3 @@
-*Ultimo aggiornamento: novembre 2025*
-*Status: IMPLEMENTATO E VALIDATO*
 ---
 module: theme
 topic: team-user-composite-primary-key-fix

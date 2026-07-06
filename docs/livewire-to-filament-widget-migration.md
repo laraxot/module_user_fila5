@@ -1,8 +1,3 @@
-- [../../Themes/Sixteen/docs/login-agid-correct-implementation.md](../../Themes/Sixteen/docs/login-agid-correct-implementation.md)
-- [../../Themes/Sixteen/project_docs/login-agid-correct-implementation.md](../../Themes/Sixteen/project_docs/login-agid-correct-implementation.md)
----
-**QUESTA È UNA REGOLA ASSOLUTA E INVIOLABILE**
-*Ultimo aggiornamento: agosto 2025*
 ---
 module: theme
 topic: livewire-to-filament-widget-migration

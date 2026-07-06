@@ -155,9 +155,6 @@ Result: No changes made to user modules.
 
 ## Collegamenti
 - [Console Commands Philosophy](console_commands_philosophy.md)
-- [User Models](models/README.md)
-- [Role Management](models/role-management.md)
-- [README.md](../README.md)
 - [User Models](models/readme.md)
 - [Role Management](models/role-management.md)
 - [README.md](../readme.md)
@@ -171,4 +168,3 @@ Result: No changes made to user modules.
 - ✅ **Gestione Errori**: Controlli preventivi per utenti non trovati
 - ✅ **Documentazione**: Documentazione completa con esempi
 
-*Ultimo aggiornamento: 2025-01-27*

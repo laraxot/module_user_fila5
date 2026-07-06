@@ -10,7 +10,6 @@ Il modulo User gestisce l'autenticazione, l'autorizzazione, e la gestione multi-
 
 ## Architettura Base
 
-Tutti i modelli in questo modulo seguono la [gerarchia a tre livelli](../../../Xot/docs/models/MODEL_ARCHITECTURE.md) standard:
 Tutti i modelli in questo modulo seguono la [gerarchia a tre livelli](../../../xot/docs/models/model_architecture.md) standard:
 
 ```
@@ -33,7 +32,6 @@ if (property_exists($user, 'email')) { ... }
 if (isset($user->email)) { ... }
 ```
 
-Vedi [Magic Properties Documentation](../../../Xot/docs/models/magic-properties.md) per dettagli completi.
 Vedi [Magic Properties Documentation](../../../xot/docs/models/magic-properties.md) per dettagli completi.
 
 ## Base Classes
@@ -619,11 +617,6 @@ La connection `user` gestisce queste tabelle principali:
 - [XotBaseModel](../../../Xot/app/Models/XotBaseModel.php) - Base class livello 1
 - [BaseModel](../../app/Models/BaseModel.php) - Base class User module
 - [CLAUDE.md](../../../../claude.md) - Convenzioni progetto
-- [Model Architecture](../../../Xot/docs/models/MODEL_ARCHITECTURE.md) - Guida completa architettura modelli
-- [DRY-KISS Analysis](../../../Xot/docs/models/DRY-KISS-ANALYSIS.md) - Analisi duplicazioni
-- [XotBaseModel](../../../Xot/app/Models/XotBaseModel.php) - Base class livello 1
-- [BaseModel](../../app/Models/BaseModel.php) - Base class User module
-- [CLAUDE.md](../../../../CLAUDE.md) - Convenzioni progetto
 
 ## Changelog
 

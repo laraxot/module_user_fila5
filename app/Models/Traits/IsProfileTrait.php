@@ -50,14 +50,17 @@ trait IsProfileTrait
     /**
      * Relazione con l'utente a cui appartiene il profilo.
      *
-     * @return BelongsTo<Model&UserContract, $this>
+     * @return BelongsTo<Model&UserContract, Model>
      */
     public function user(): BelongsTo
     {
         /** @var class-string<Model&UserContract> $userClass */
         $userClass = XotData::make()->getUserClass();
 
-        return $this->belongsTo($userClass);
+        /** @var BelongsTo<Model&UserContract, Model> $relation */
+        $relation = $this->belongsTo($userClass);
+
+        return $relation;
     }
 
     /**
@@ -277,6 +280,7 @@ trait IsProfileTrait
      * Get the user's user_name.
      * Ottiene il nome utente dal modello utente collegato.
      */
+    /** @return Attribute<?string, never> */
     protected function userName(): Attribute
     {
         return Attribute::make(
@@ -298,6 +302,7 @@ trait IsProfileTrait
      * Get the user's avatar URL.
      * Recupera l'URL dell'avatar dell'utente dalla MediaLibrary.
      */
+    /** @return Attribute<string, never> */
     protected function avatar(): Attribute
     {
         return Attribute::make(get: function (): string {

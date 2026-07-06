@@ -33,3 +33,4 @@ if (! $this->hasColumn('state')) {
 - [Linee guida Actions](mdc:actions.mdc)
 - [Linee guida Activitylog](mdc:activitylog.mdc)
 - [Documentazione centrale](mdc:../../../../../docs/index.md)
+

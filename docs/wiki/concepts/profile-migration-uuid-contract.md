@@ -15,7 +15,7 @@ updated: 2026-06-05
 
 Per connessione `fixcity`, **owner migrazione = modulo Fixcity** (non User):
 
-- `laravel/Modules/Fixcity/database/migrations/2026_06_05_090000_create_profiles_table.php`
+- `laravel/Modules/Fixcity/database/migrations/2026_06_10_123000_create_profiles_table.php`
 
 Le migrazioni `create_profiles_table` in User/Blog sono state archiviate in `_bak/*.merged` per rispettare 1 modello = 1 migrazione owner.
 
@@ -57,6 +57,6 @@ La prima domanda corretta e':
 ## Riferimenti
 
 - `laravel/Modules/User/app/Models/BaseProfile.php`
-- `laravel/Modules/Fixcity/database/migrations/2026_06_05_090000_create_profiles_table.php`
+- `laravel/Modules/Fixcity/database/migrations/2026_06_10_123000_create_profiles_table.php`
 - [architecture-one-migration-per-model](../../../../../docs/wiki/bmad/architecture-one-migration-per-model.md)
 - `laravel/Modules/Xot/docs/database/migration-base-rules.md`

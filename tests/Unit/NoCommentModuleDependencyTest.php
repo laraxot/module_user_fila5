@@ -2,40 +2,41 @@
 
 declare(strict_types=1);
 
-use Modules\User\Models\BaseUser;
-use Symfony\Component\Finder\Finder;
+namespace Modules\User\Tests\Unit;
 
-it('does not reference the Comment module anywhere under User app', function (): void {
+use function Safe\file_get_contents;
+
+test('it does not reference the comment module anywhere under user app', function (): void {
     $appPath = dirname(__DIR__, 2).'/app';
-
-    $finder = (new Finder())
-        ->files()
-        ->in($appPath)
-        ->name('*.php');
-
-    $violations = [];
-
-    foreach ($finder as $file) {
-        $contents = $file->getContents();
-        $relative = str_replace($appPath.'/', '', $file->getPathname());
-
-        if (preg_match('/Modules\\\\Comment\\\\/', $contents) === 1) {
-            $violations[] = $relative;
-        }
-    }
-
-    expect($violations)->toBeEmpty(
-        'User must not depend on Comment module. Violations: '.implode(', ', $violations)
+    $iterator = new \RecursiveIteratorIterator(
+        new \RecursiveDirectoryIterator($appPath, \FilesystemIterator::SKIP_DOTS)
     );
+
+    /** @var \SplFileInfo $file */
+    foreach ($iterator as $file) {
+        if (! $file->isFile() || 'php' !== $file->getExtension()) {
+            continue;
+        }
+
+        if (str_ends_with($file->getFilename(), '.old')) {
+            continue;
+        }
+
+        $contents = file_get_contents($file->getPathname());
+
+        expect($contents)
+            ->not->toContain('Modules\\Comment\\')
+            ->not->toContain('InteractsWithComments')
+            ->not->toContain('HasCommentatorRelations');
+    }
 });
 
-it('loads BaseUser without Comment traits', function (): void {
-    $traits = array_map(
-        static fn (ReflectionClass $trait): string => $trait->getName(),
-        (new ReflectionClass(BaseUser::class))->getTraits()
-    );
+test('base user model does not use comment traits', function (): void {
+    $baseUserPath = dirname(__DIR__, 2).'/app/Models/BaseUser.php';
+    $contents = file_get_contents($baseUserPath);
 
-    foreach ($traits as $trait) {
-        expect($trait)->not->toContain('Comment');
-    }
+    expect($contents)
+        ->not->toContain('HasCommentatorRelations')
+        ->not->toContain('CanComment')
+        ->not->toContain('InteractsWithComments');
 });

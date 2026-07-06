@@ -1,9 +1,3 @@
-- [XotBaseMigration Commandment](../Xot/docs/migration-unicity-commandment.md)
-- [Laraxot Philosophy](../Xot/docs/philosophy.md)
-
----
-
-*VIOLAZIONE SISTEMICA RISOLTA - Ordine ripristinato, filosofia Laraxot pienamente rispettata*.*
 ---
 module: theme
 topic: migration-duplicate-resolution

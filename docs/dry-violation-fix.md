@@ -64,9 +64,5 @@ Tutte le funzioni `safeStringCast()` private sono state rimosse dai file, elimin
 - [SafeStringCastAction](../../Xot/app/Actions/String/SafeStringCastAction.php)
 - [Documentazione Actions](../../xot/docs/actions.md)
 - [Documentazione Actions](../../xot/project_docs/actions.md)
-- [Regola DRY Aggiornata](../.cursor/rules/DRY-actions-rules.md)
-- [SafeStringCastAction](../../Xot/app/Actions/String/SafeStringCastAction.php)
-- [Documentazione Actions](../../Xot/docs/actions.md)
-- [Documentazione Actions](../../Xot/project_docs/actions.md)
 *Data correzione: 2025-01-06*
 *Stato: ✅ Completato*

@@ -1,11 +1,3 @@
-- [Translation Standards](../../Xot/docs/translation-standards.md)
-- [Navigation Translations Fixes](../../Lang/docs/navigation-translations-fixes.md)
-
----
-
-**Status**: 📝 **ROADMAP CREATA - PRONTA PER IMPLEMENTAZIONE**
-
-**Ultimo aggiornamento**: 2026-01-09
 ---
 module: theme
 topic: navigation-translations-completion-roadmap

@@ -1,8 +1,6 @@
 # Registrazione dei Componenti Blade nel Modulo User
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo User.
-> La documentazione principale e completa si trova nel [modulo UI](../../../UI/docs/architecture/component-registration.md).
-> La documentazione principale e completa si trova nel [modulo UI](../../../UI/project_docs/architecture/component-registration.md).
 > La documentazione principale e completa si trova nel [modulo UI](../../../ui/docs/architecture/component-registration.md).
 > La documentazione principale e completa si trova nel [modulo UI](../../../ui/project_docs/architecture/component-registration.md).
 ## Implementazione Corretta nel Modulo User
@@ -28,8 +26,3 @@ I componenti possono essere utilizzati nei template Blade con il prefisso del na
 - [Documentazione principale sulla registrazione dei componenti](../ui/docs/architecture/component-registration.md)
 - [Implementazione di UserServiceProvider](Modules/User/app/Providers/UserServiceProvider.php)
 - [Documentazione principale sulla registrazione dei componenti](modules/ui/project_docs/architecture/component-registration.md)
-- [Documentazione principale sulla registrazione dei componenti](../UI/docs/architecture/component-registration.md)
-- [Implementazione di UserServiceProvider](../User/app/Providers/UserServiceProvider.php)
-- [Documentazione principale sulla registrazione dei componenti](../UI/docs/architecture/component-registration.md)
-- [Implementazione di UserServiceProvider](Modules/User/app/Providers/UserServiceProvider.php)
-- [Documentazione principale sulla registrazione dei componenti](Modules/UI/project_docs/architecture/component-registration.md)

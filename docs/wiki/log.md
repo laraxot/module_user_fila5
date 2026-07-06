@@ -1,3 +1,23 @@
+---
+title: "User Wiki Log"
+type: log
+module: User
+tags: [user, wiki, log, phpstan, boundary]
+created: 2026-04-15
+updated: 2026-06-18
+qmd: "user module wiki log phpstan no comment dependency"
+issues:
+  - "https://github.com/provtv/base_ptv_fila5_mono/issues/102"
+discussions:
+  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
+related:
+  - ./concepts/no-comment-module-dependency.md
+  - ./rules/can-comment-retired-wrong-placement.md
+---
+
+- 2026-06-18: PHPStan User 14→0 — ripristinato `Tenant\Models\Traits\SushiToPhpArray` (dipendenza `SocialProvider`), rimosso `hasRoleTest()` morto in `HasRoles`, `HasPasswordExpiry` via `getAttribute`/`setAttribute`, fixture `PasswordValidationRules*` usa il trait reale.
+- 2026-06-18: rimosso coupling residuo User -> Comment: `BaseUser` non usa piu' `HasCommentatorRelations`, `UserContract` non espone metodi Comment, trait disattivata eliminata. Verifica: `bashscripts/tools/check-user-no-comment-dependency.sh`, `pest Modules/User/tests/Unit/NoCommentModuleDependencyTest.php`, PHPStan User/Progressioni.
+- 2026-06-10: notifications-folio-page + notifications-folio-route — `route('notifications')`, vietato `area-personale.notifiche`
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
@@ -122,3 +142,15 @@
 - Best practices documentate: type-hint UserContract, permission dot notation, test con permessi reali
 - Enhancements proposti: canAny(), canAll(), scope(), after() hooks
 - Commit: docs: document policy inheritance boundary decision
+
+## 2026-06-10 — session learnings
+
+- Notifiche: runtime User, schema Notify; `NotificationSchema::isReadable()` per guard FO
+- Folio: `name('notifications')`; vietato `area-personale.notifiche`
+- `user:super-admin`: `--email` + ask + fallback WSL (no Laravel Prompts)
+- Profiles: owner Fixcity `2026_06_10_123000_create_profiles_table` — vedi profile-migration-uuid-contract
+
+## 2026-06-10 — Folio owner pattern docs
+
+- INDEX Folio FO con cross-link Cms
+- Catena notifications: Notify schema → User page → Sixteen link

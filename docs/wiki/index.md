@@ -4,7 +4,7 @@ type: index
 module: User
 tags: [user, wiki, index, auth, socialite, permissions]
 created: 2026-04-15
-updated: 2026-06-05
+updated: 2026-06-18
 qmd: "user module wiki index auth socialite permissions filament forms"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
@@ -25,12 +25,14 @@ Indice operativo del wiki User.
 
 - [ai-harness-user-discipline](./concepts/ai-harness-user-discipline.md)
 - [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) — tips 001–022
-- [bmad/architecture](../../../../docs/wiki/bmad/architecture.md) — pilastri schema/doc
+- [bmad/architecture](../../../../docs/wiki/bmad/architecture.md) — pilastri schema/doc (ADR)
+- [architecture-module-directory-structure](../../../../docs/wiki/bmad/architecture-module-directory-structure.md) — PHP solo in `app/`
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) — stub → canon Xot
 
 ## Struttura canonica (sacred)
 
-- [concepts/](./concepts/): Pattern architetturali e metodologie user/auth.
+- [module-root-folder-violations](./concepts/module-root-folder-violations.md) — bonifica root User ✅
+- [directory-structure-checklist](../directory-structure-checklist.md) — checklist percorsi
 - [entities/](./entities/): Modelli e componenti chiave.
 - [sources/](./sources/): Dati di ricerca e link esterni.
 - [comparisons/](./comparisons/): Implementazioni alternative.
@@ -80,6 +82,7 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 | [socialite-facebook-tenant](./concepts/socialite-facebook-tenant.md) | Concept | OAuth Facebook | 2026-04-27 |
 | [socialite-linkedin-tenant](./concepts/socialite-linkedin-tenant.md) | Concept | OAuth LinkedIn | 2026-04-27 |
 | [phpstan-widget-property-types-2026-05-06](./troubleshooting/phpstan-widget-property-types-2026-05-06.md) | Troubleshooting | Widget property types PHPStan | 2026-05-06 |
+| [phpstan-module-analysis-memory](./troubleshooting/phpstan-module-analysis-memory.md) | Troubleshooting | PHPStan User OOM/cache vs errori reali | 2026-06-18 |
 | [xotbase-table-columns-enforcement](./concepts/xotbase-table-columns-enforcement.md) | Concept | 24 Table files populated — XotBaseResourceTable enforcement | 2026-05-07 |
 
 ## Best Practices
@@ -107,5 +110,6 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 | [socialite-development](./concepts/socialite-development.md) | Concept | Socialite troubleshooting |
 | [spatie-permission-team-model-not-configured](./troubleshooting/spatie-permission-team-model-not-configured.md) | Troubleshooting | Team model mancante in config permission |
 | [phpstan-widget-property-types-2026-05-06](./troubleshooting/phpstan-widget-property-types-2026-05-06.md) | Troubleshooting | Tipizzazione widget Livewire/Filament |
+| [phpstan-module-analysis-memory](./troubleshooting/phpstan-module-analysis-memory.md) | Troubleshooting | PHPStan User OOM/cache vs errori reali |
 
 Aggiornato: 2026-05-06

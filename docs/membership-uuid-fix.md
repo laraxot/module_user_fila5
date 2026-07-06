@@ -1,4 +1,3 @@
-*Ultimo aggiornamento: gennaio 2025*
 ---
 module: theme
 topic: membership-uuid-fix

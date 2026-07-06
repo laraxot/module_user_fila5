@@ -27,11 +27,11 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
     protected string $view = 'user::widgets.auth.reset-password-widget';
 
     /**
-     * @return class-string<Schemas\UserForm>
+     * @return class-string<UserForm>
      */
     protected static function formClass(): string
     {
-        return Schemas\UserForm::class;
+        return UserForm::class;
     }
 
     protected static function schemaMethod(): string

@@ -967,7 +967,6 @@ test('user can switch teams', function () {
 - **Fixed**: File locking pattern implementation
 - **Improved**: Security alert widgets
 
-See [CHANGELOG.md](./CHANGELOG.md) for full history.
 See [CHANGELOG.md](./changelog.md) for full history.
 
 ---
@@ -986,7 +985,6 @@ See [CHANGELOG.md](./changelog.md) for full history.
 - Social login enhancements
 - Advanced audit reporting
 
-See [ROADMAP.md](./ROADMAP.md) for details.
 See [ROADMAP.md](./roadmap.md) for details.
 
 ---
@@ -1001,14 +999,6 @@ See [ROADMAP.md](./roadmap.md) for details.
 
 ### Project Documentation
 - [CLAUDE.md](../../../claude.md) - Project architecture
-- [Xot Module](../Xot/docs/README.md) - Core foundation
-- [Activity Module](../Activity/docs/README.md) - Activity tracking
-- [Lang Module](../Lang/docs/README.md) - Translations
-- [Tenant Module](../Tenant/docs/README.md) - Enhanced tenancy
-
-### Project Documentation
-- [CLAUDE.md](../../../CLAUDE.md) - Project architecture
-- [Security Guidelines](../../../docs/security.md)
 - [Security Guidelines](../../../../docs/security.md)
 
 ### External Resources

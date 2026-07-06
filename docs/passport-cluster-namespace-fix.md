@@ -1,11 +1,3 @@
-- [Laraxot Module Structure](../../Xot/docs/module-structure.md)
-- [Previous Implementation Doc](./passport-cluster-implementation-status.md)
-
----
-
-**Documentato da**: Claude (Super Cow Mode)
-**Metodologia**: DRY + KISS + SOLID + PSR-4 Compliance
-**Status**: 📝 Documented - Ready for Implementation
 ---
 module: theme
 topic: passport-cluster-namespace-fix

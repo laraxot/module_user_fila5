@@ -36,8 +36,3 @@ I form Filament complessi, in particolare quelli di registrazione e wizard multi
 - [Layout Responsivo dei Widget Filament](../../../UI/project_docs/blocks/filament-component-integration.md#layout-responsivo-dei-widget-filament)
 - [Best Practices per i Form Filament](../../../ui/project_docs/filament/form-best-practices.md)
 - [Implementazione Corretta dei Widget](../../../xot/project_docs/filament-widgets.md)
-- [Best Practices per i Form Filament](../../../UI/docs/filament/form-best-practices.md)
-- [Implementazione Corretta dei Widget](../../../Xot/docs/filament-widgets.md)
-- [Layout Responsivo dei Widget Filament](../../../UI/project_docs/blocks/filament-component-integration.md#layout-responsivo-dei-widget-filament)
-- [Best Practices per i Form Filament](../../../UI/project_docs/filament/form-best-practices.md)
-- [Implementazione Corretta dei Widget](../../../Xot/project_docs/filament-widgets.md)

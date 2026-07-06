@@ -456,3 +456,4 @@ La rimozione dei metodi duplicati in `BaseUser`:
 
 > **"Se esiste già, non reinventare la ruota"**  
 > Spatie ha fatto il lavoro per noi, usalo!
+
