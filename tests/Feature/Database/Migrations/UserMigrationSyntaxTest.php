@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+/** @return list<string> */
 dataset('userMigrationFiles', static function (): array {
     $basePath = dirname(__DIR__, 4).'/database/migrations';
     $files = glob($basePath.'/*.php');
@@ -12,7 +13,7 @@ dataset('userMigrationFiles', static function (): array {
 
     sort($files);
 
-    return array_combine($files, $files);
+    return $files;
 });
 
 it('does not contain merge conflict markers in user migrations', function (string $migrationFile): void {

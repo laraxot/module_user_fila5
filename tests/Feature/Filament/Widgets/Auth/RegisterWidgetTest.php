@@ -15,7 +15,8 @@ use Modules\User\Tests\TestCase;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    config(['activitylog.enabled' => false]);
+    /** @var \Modules\User\Tests\TestCase $this */
+        config(['activitylog.enabled' => false]);
 
     if (! Schema::connection('user')->hasTable('users')) {
         $this->markTestSkipped('users table missing on user connection (run migrations for testing)');
@@ -24,6 +25,7 @@ beforeEach(function (): void {
 
 describe('RegisterWidget FO', function (): void {
     test('register page loads with livewire widget', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
         $this->get('/it/auth/register')
             ->assertSuccessful()
             ->assertSeeLivewire(RegisterWidget::class);
@@ -42,6 +44,7 @@ describe('RegisterWidget FO', function (): void {
     });
 
     test('can register user via submit', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
         $email = 'pest-register-'.uniqid('', true).'@example.test';
 
         Livewire::test(RegisterWidget::class)
@@ -76,6 +79,7 @@ describe('RegisterWidget FO', function (): void {
     });
 
     test('save delegates to submit', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
         $email = 'pest-save-'.uniqid('', true).'@example.test';
 
         Livewire::test(RegisterWidget::class)

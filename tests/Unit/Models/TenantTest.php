@@ -13,7 +13,8 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
-    $this->skipUnlessUserTable('tenants');
+    /** @var \Modules\User\Tests\TestCase $this */
+        $this->skipUnlessUserTable('tenants');
 });
 
 describe('Tenant', function (): void {
@@ -30,6 +31,7 @@ describe('Tenant', function (): void {
     });
 
     test('can create tenant with all fields', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
         $this->skipUnlessTenantColumn('settings');
         $this->skipUnlessTenantColumn('trial_ends_at');
 
@@ -58,10 +60,12 @@ describe('Tenant', function (): void {
     });
 
     test('tenant has soft deletes', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
         $this->skipTest('Tenant model does not use SoftDeletes.');
     });
 
     test('can restore soft deleted tenant', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
         $this->skipTest('Tenant restore/withTrashed not supported on User Tenant model.');
     });
 
@@ -148,6 +152,7 @@ describe('Tenant', function (): void {
     });
 
     test('can update tenant', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
         $tenant = TenantFactory::new()->createOne(['name' => 'Old Name']);
 
         $tenant->update(['name' => 'New Name']);
@@ -217,6 +222,7 @@ describe('Tenant', function (): void {
     });
 
     test('can find tenants by trial status', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
         $this->skipUnlessTenantColumn('trial_ends_at');
 
         $marker = 'trial-status-'.uniqid();
@@ -243,6 +249,7 @@ describe('Tenant', function (): void {
     });
 
     test('can find tenants by settings value', function (): void {
+        /** @var \Modules\User\Tests\TestCase $this */
         $this->skipUnlessTenantColumn('settings');
 
         $marker = 'settings-theme-'.uniqid();
