@@ -480,7 +480,7 @@ trait HasTeams
         /** @var BelongsToMany<Model&TeamContract, Model, Pivot, 'pivot'> $relation */
         $relation = $this->belongsToManyX($teamClass);
 
-        // @phpstan-ignore return.type (BelongsToMany generics invariance)
+        /** @phpstan-ignore return.type */
         return $relation;
     }
 
