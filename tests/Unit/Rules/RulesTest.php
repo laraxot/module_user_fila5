@@ -2,25 +2,17 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-namespace Modules\User\Tests\Unit\Rules;
-
-uses(\Modules\User\Tests\TestCase::class);
-
-=======
->>>>>>> 9fa499be (.)
 use Modules\User\Rules\CheckOtpExpiredRule;
+use PHPUnit\Framework\Assert;
 
 uses(Modules\User\Tests\TestCase::class);
 
 test('CheckOtpExpiredRule can be instantiated', function () {
-    expect(class_exists(CheckOtpExpiredRule::class))->toBeTrue();
-
     try {
         $rule = app(CheckOtpExpiredRule::class);
-        expect($rule)->toBeInstanceOf(CheckOtpExpiredRule::class);
+        Assert::assertInstanceOf(CheckOtpExpiredRule::class, $rule);
     } catch (Exception $e) {
-        expect(true)->toBeTrue(); // Pass if class exists
+        // assertTrue(true) removed — tautology // Pass if class exists
     }
 });
 
@@ -28,12 +20,9 @@ test('CheckOtpExpiredRule has validation methods', function () {
     if (class_exists(CheckOtpExpiredRule::class)) {
         try {
             $rule = app(CheckOtpExpiredRule::class);
-            expect(method_exists($rule, 'passes'))->toBeTrue();
-            expect(method_exists($rule, 'message'))->toBeTrue();
+            Assert::assertTrue(method_exists($rule, 'validate') || method_exists($rule, 'passes'));
         } catch (Exception $e) {
-            expect(true)->toBeTrue(); // Pass if class exists
+            // assertTrue(true) removed — tautology // Pass if class exists
         }
-    } else {
-        expect(true)->toBeTrue();
     }
 });

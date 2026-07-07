@@ -4,9 +4,36 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests;
 
+use Filament\Actions\Action;
+use Filament\Facades\Filament;
+use Filament\Panel;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Section;
+use Filament\Widgets\Widget;
+use Illuminate\Console\Command;
+use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use Modules\Xot\Tests\CreatesApplication;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Str;
+use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
+use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
+use Modules\User\Filament\Widgets\LoginWidget;
+use Modules\User\Models\Device;
+use Modules\User\Models\OauthClient;
+use Modules\User\Models\Team;
+use Modules\User\Models\TeamInvitation;
+use Modules\User\Models\Tenant;
+use Modules\User\Models\User;
+use Modules\User\Providers\Filament\AdminPanelProvider;
+use Modules\User\Providers\UserServiceProvider;
+use Modules\Xot\Tests\XotBaseTestCase;
+use PHPUnit\Framework\Assert;
+use PragmaRX\Google2FA\Google2FA;
+
+use function Safe\json_encode;
 
 /**
  * Base test case for User module.
@@ -15,13 +42,27 @@ use Modules\Xot\Tests\CreatesApplication;
  * All module connections are mapped by TenantServiceProvider.
  * Migrations must be run ONCE externally: php artisan migrate --env=testing
  * DatabaseTransactions handles rollback between tests.
+ *
+ * @property User|null                  $user
+ * @property User|null                  $owner
+ * @property User|null                  $member
+ * @property User|null                  $admin
+ * @property User|null                  $baseUser
+ * @property Team|null                  $team
+ * @property Tenant|null                $tenant1
+ * @property Tenant|null                $tenant2
+ * @property Google2FA|null             $google2fa
+ * @property Command|null               $command
+ * @property ListUsers|null             $listUsersPage
+ * @property CreateUser|null            $createUserPage
+ * @property Device|null                $device
+ * @property Action|null                $action
+ * @property Widget|null                $widget
+ * @property Collection<int, User>|null $users
  */
-abstract class TestCase extends BaseTestCase
+abstract class TestCase extends XotBaseTestCase
 {
-    use CreatesApplication;
     use DatabaseTransactions;
-<<<<<<< HEAD
-=======
 
     /**
      * @return array<int, class-string<ServiceProvider>>
@@ -534,5 +575,4 @@ abstract class TestCase extends BaseTestCase
 
         return $invitation->fresh() ?? $invitation;
     }
->>>>>>> 6d3760fe (.)
 }

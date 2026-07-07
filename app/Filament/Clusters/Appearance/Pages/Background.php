@@ -89,6 +89,7 @@ class Background extends XotBasePage
         $this->form->fill($data);
     }
 
+    /** @return array<int, \Filament\Actions\Action> */
     protected function getUpdateFormActions(): array
     {
         return [

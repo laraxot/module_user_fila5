@@ -56,8 +56,6 @@ use Modules\Xot\Datas\XotData;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
- * @mixin IdeHelperSocialiteUser
- *
  * @property ProfileContract|null $deleter
  *
  * @method static \Modules\User\Database\Factories\SocialiteUserFactory factory($count = null, $state = [])
@@ -78,6 +76,7 @@ class SocialiteUser extends BaseModel
         'avatar',
     ];
 
+    /** @return BelongsTo<Model, $this> */
     public function user(): BelongsTo
     {
         /** @var class-string<Model> */

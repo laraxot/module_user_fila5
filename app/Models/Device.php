@@ -45,7 +45,7 @@ use Modules\Xot\Datas\XotData;
  * @property ProfileContract|null $updater
  * @property string               $id
  * @property string|null          $mobile_id
- * @property array|null           $languages
+ * @property array<int, string>|null $languages
  * @property string|null          $device
  * @property string|null          $platform
  * @property string|null          $browser
@@ -63,8 +63,6 @@ use Modules\Xot\Datas\XotData;
  * @property string|null          $uuid
  *
  * @method static Builder<static>|Device whereUuid($value)
- *
- * @mixin IdeHelperDevice
  *
  * @property ProfileContract|null $deleter
  *
@@ -101,7 +99,7 @@ class Device extends BaseModel
     /**
      * Define the many-to-many relationship between devices and users.
      *
-     * return BelongsToMany<UserContract, Device>
+     * @return BelongsToMany<Model&UserContract, $this>
      */
     public function users(): BelongsToMany
     {

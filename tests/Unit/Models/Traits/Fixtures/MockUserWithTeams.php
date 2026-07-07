@@ -4,19 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models\Traits\Fixtures;
 
+use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
-=======
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamUser;
->>>>>>> 9fa499be (.)
 use Modules\User\Models\Traits\HasTeams;
+use Modules\Xot\Contracts\UserContract as XotUserContract;
+use Modules\Xot\Models\Traits\RelationX;
+use Spatie\Permission\Contracts\Permission;
+use Spatie\Permission\Contracts\Role;
 
-<<<<<<< HEAD
-=======
 /**
  * Stub model for HasTeams trait unit tests; satisfies PHPStan in-context analysis.
  *
@@ -29,20 +29,22 @@ use Modules\User\Models\Traits\HasTeams;
  * @property XotUserContract|null              $owner
  * @property int                               $total_members
  */
->>>>>>> 6d3760fe (.)
 class MockUserWithTeams extends Model
 {
     use HasTeams;
+    use RelationX;
+
+    public $incrementing = false;
+
+    protected $keyType = 'string';
 
     protected $table = 'users';
 
-    protected $fillable = ['name', 'email'];
+    /** @var list<string> */
+    protected $fillable = ['id', 'name', 'email', 'current_team_id', 'total_members'];
 
-    public function getKey(): int
+    public function getKey(): string
     {
-<<<<<<< HEAD
-        return 1;
-=======
         return (string) ($this->attributes['id'] ?? 'mock-user-1');
     }
 
@@ -67,14 +69,9 @@ class MockUserWithTeams extends Model
      */
     public function membershipTeams(): BelongsToMany
     {
-<<<<<<< HEAD
-        return $this->belongsToManyX(Team::class);
->>>>>>> 6d3760fe (.)
-=======
         /** @var BelongsToMany<Model&TeamContract, Model, Pivot, 'pivot'> $relation */
         $relation = $this->belongsToManyX(Team::class);
 
         return $relation;
->>>>>>> 9fa499be (.)
     }
 }

@@ -6,8 +6,6 @@ Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 e questo progetto aderisce al [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-<<<<<<< HEAD
-=======
 
 ### Fixed
 - Rimosso il modificatore `static` dal metodo `getTableColumns()` in `TeamsRelationManager` per risolvere l'errore di compatibilità con Filament
@@ -42,4 +40,3 @@ e questo progetto aderisce al [Semantic Versioning](https://semver.org/spec/v2.0
 - Widget per il login e la registrazione
 - Gestione delle autenticazioni
 - Documentazione base del modulo
->>>>>>> 6d3760fe (.)

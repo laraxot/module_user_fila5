@@ -7,7 +7,6 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Laravel\Passport\DeviceCode as PassportDeviceCode;
 use Laravel\Passport\Passport;
-use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 
 /**
@@ -19,7 +18,7 @@ use Modules\Xot\Datas\XotData;
  * @property string            $client_id
  * @property string            $user_code
  * @property OauthClient|null  $client
- * @property UserContract|null $user
+ * @property User|null         $user
  */
 class OauthDeviceCode extends PassportDeviceCode
 {
@@ -42,9 +41,10 @@ class OauthDeviceCode extends PassportDeviceCode
     /**
      * Get the user that approved the device code (nullable until approved).
      */
+    /** @return BelongsTo<User, $this> */
     public function user(): BelongsTo
     {
-        /** @var class-string<\Illuminate\Database\Eloquent\Model> $userClass */
+        /** @var class-string<User> $userClass */
         $userClass = XotData::make()->getUserClass();
 
         return $this->belongsTo($userClass, 'user_id');

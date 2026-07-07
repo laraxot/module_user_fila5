@@ -32,6 +32,7 @@ use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 use Modules\User\Models\Traits\HasDevices;
 use Modules\User\Models\Traits\HasModules;
+use Modules\User\Models\Traits\HasSocialite;
 use Modules\User\Models\Traits\HasSpatiePermission;
 use Modules\User\Models\Traits\HasTeams;
 use Modules\Xot\Contracts\ProfileContract;
@@ -145,7 +146,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     }
     use HasUuids;
 
-    /** @phpstan-use HasXotFactory<Factory<static>> */
+    /** @use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     use InteractsWithMedia;
@@ -277,22 +278,14 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         return $fullName;
     }
 
+    /** @return HasOne<Model&ProfileContract, $this> */
     #[\Override]
     public function profile(): HasOne
     {
+        /** @var class-string<Model&ProfileContract> $profileClass */
         $profileClass = XotData::make()->getProfileClass();
-        if (class_exists($profileClass)) {
-            return $this->hasOne($profileClass);
-        }
 
-        // Try direct module class if XotData failed
-        $directClass = 'Modules\User\Models\Profile';
-        if (class_exists($directClass)) {
-            return $this->hasOne($directClass);
-        }
-
-        // Fallback: stay on current model if nothing found
-        return $this->hasOne(static::class, 'id', 'id')->whereRaw('1=0');
+        return $this->hasOne($profileClass);
     }
 
     /**
@@ -354,6 +347,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         return (string) ($this->name ?? $this->email);
     }
 
+    /** @return Collection<int, Team> */
     public function treeSons(): Collection
     {
         return $this->membershipTeams ?? new Collection();
@@ -362,7 +356,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     /**
      * Get the devices associated with the user.
      *
-     * @return BelongsToMany<Device, static>
+     * @return BelongsToMany<Device, $this>
      */
     public function devices(): BelongsToMany
     {

@@ -24,7 +24,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property bool                 $login_successful
  * @property Carbon|null          $logout_at
  * @property bool                 $cleared_by_user
- * @property array|null           $location
+ * @property array<string, mixed>|null $location
  * @property Carbon|null          $created_at
  * @property Carbon|null          $updated_at
  * @property string|null          $updated_by
@@ -50,8 +50,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|AuthenticationLog whereUpdatedAt($value)
  * @method static Builder|AuthenticationLog whereUpdatedBy($value)
  * @method static Builder|AuthenticationLog whereUserAgent($value)
- *
- * @mixin IdeHelperAuthenticationLog
  *
  * @property ProfileContract|null $deleter
  *
@@ -89,6 +87,7 @@ class AuthenticationLog extends BaseModel
     //    return config('authentication-log.table_name', parent::getTable());
     // }
 
+    /** @return MorphTo<Model, $this> */
     public function authenticatable(): MorphTo
     {
         return $this->morphTo();

@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
+namespace Modules\User\Tests\Unit\Models;
+
+use Illuminate\Support\Facades\Schema;
+use Laravel\Passport\Client;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\OauthClient;
-use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-uses(Modules\User\Tests\TestCase::class);
+use function Safe\json_encode;
 
-test('oauth client can be instantiated', function (): void {
-    $client = new OauthClient();
+uses(TestCase::class);
 
-<<<<<<< HEAD
-    expect($client)->toBeInstanceOf(OauthClient::class)
-        ->and($client)->toBeInstanceOf(Laravel\Passport\Client::class)
-        ->and($client)->toBeInstanceOf(Illuminate\Contracts\Auth\Access\Authorizable::class);
-=======
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
     /* @var TestCase $this */
@@ -23,53 +23,13 @@ beforeEach(function (): void {
     if (! Schema::connection('user')->hasTable('oauth_clients')) {
         $this->skipTest('oauth_clients table missing on user connection.');
     }
->>>>>>> 9fa499be (.)
 });
 
-test('oauth client has connection user', function (): void {
-    $client = new OauthClient();
+describe('Oauth Client', function (): void {
+    test('oauth client can be instantiated', function (): void {
+        /** @var TestCase $this */
+        $client = new OauthClient();
 
-<<<<<<< HEAD
-    expect($client->getConnectionName())->toBe('user');
-});
-
-test('oauth client has guard_name api', function (): void {
-    $client = new OauthClient();
-
-    expect($client->guard_name)->toBe('api');
-});
-
-test('oauth client user relation uses xot data', function (): void {
-    $user = User::factory()->create();
-    $client = OauthClient::factory()->create(['user_id' => $user->getKey()]);
-
-    expect($client->user)->not->toBeNull()
-        ->and($client->user->getKey())->toBe($user->getKey());
-});
-
-test('oauth client can returns false when permission does not exist', function (): void {
-    $client = OauthClient::factory()->create();
-
-    expect($client->can('non-existent-permission'))->toBeFalse();
-});
-
-test('oauth client cant returns true when permission does not exist', function (): void {
-    $client = OauthClient::factory()->create();
-
-    expect($client->cant('non-existent-permission'))->toBeTrue();
-});
-
-test('oauth client cannot is alias of cant', function (): void {
-    $client = OauthClient::factory()->create();
-
-    expect($client->cannot('non-existent-permission'))->toBeTrue();
-});
-
-test('oauth client canAny returns false for empty abilities', function (): void {
-    $client = OauthClient::factory()->create();
-
-    expect($client->canAny([]))->toBeFalse();
-=======
         Assert::assertInstanceOf(OauthClient::class, $client);
         Assert::assertInstanceOf(Client::class, $client);
     });
@@ -119,5 +79,4 @@ test('oauth client canAny returns false for empty abilities', function (): void 
 
         Assert::assertTrue($client->hasScope('read'));
     });
->>>>>>> 9fa499be (.)
 });

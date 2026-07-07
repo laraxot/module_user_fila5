@@ -10,8 +10,6 @@
 # PHPStan documentation
 docs/phpstan/
 _docs/
-<<<<<<< HEAD
-=======
 
 # Backup files
 *.backup
@@ -19,4 +17,3 @@ _docs/
 *.backup-*
 *.backup_*
 agentdb.rvf
->>>>>>> 6d3760fe (.)
