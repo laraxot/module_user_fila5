@@ -34,7 +34,7 @@ beforeEach(function (): void {
     // Create some test users
     $this->users = User::factory()
         ->count(3)
-        ->create([
+        ->createOne([
             'type' => UserType::MasterAdmin,
         ]);
 });

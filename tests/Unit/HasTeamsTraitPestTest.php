@@ -58,12 +58,16 @@ test('it correctly checks team ownership', function () {
     // Test: Owned team
     expect($this->user->ownsTeam($this->personalTeam))->toBeTrue();
 
+<<<<<<< HEAD
     // Test: Non-owned team
     expect($this->user->ownsTeam($this->team))->toBeFalse();
 
     // Test: Member team (not owner)
     $this->user->teams()->attach($this->team->id, ['role' => 'member']);
     expect($this->user->ownsTeam($this->team))->toBeFalse();
+=======
+    Assert::assertInstanceOf(BelongsToMany::class, $user->membershipTeams());
+>>>>>>> 6d3760fe (.)
 });
 
 test('it uses belongs to many x for teams relationship', function () {

@@ -18,8 +18,13 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 uses(TestCase::class);
 
 beforeEach(function (): void {
+<<<<<<< HEAD
     $user = User::factory()
         ->create([
+=======
+    UserFactory::new()
+        ->createOne([
+>>>>>>> 6d3760fe (.)
             'type' => UserType::MasterAdmin,
             'email' => 'admin-'.uniqid().'@example.com',
             'password' => Hash::make('password123'),

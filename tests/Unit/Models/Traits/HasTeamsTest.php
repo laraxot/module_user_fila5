@@ -370,6 +370,7 @@ describe('HasTeams Trait Error Handling', function () {
     });
 });
 
+<<<<<<< HEAD
 describe('HasTeams Trait Performance', function () {
     it('can handle large numbers of team checks efficiently', function () {
         $team2 = new Team();
@@ -424,4 +425,23 @@ describe('HasTeams Trait Performance', function () {
         expect($executionTime)->toBeLessThan(0.1);
         expect($teamNames)->toContain('Team 1', 'Team 5', 'Team 10');
     });
+=======
+test('has teams trait user model exposes teams relation', function (): void {
+    Assert::assertInstanceOf(BelongsToMany::class, (new User())->membershipTeams());
+});
+
+test('has teams trait empty teams collection', function (): void {
+    $user = traitsHasTeamsMockUser();
+    $user->setRelation('teams', collect([]));
+
+    Assert::assertInstanceOf(Collection::class, $user->teams);
+    Assert::assertCount(0, $user->teams);
+    Assert::assertTrue($user->teams->isEmpty());
+});
+
+test('has teams trait belongsToTeams is false without teams', function (): void {
+    $user = UserFactory::new()->createOne(['email' => 'no-teams-'.uniqid('', true).'@example.com']);
+
+    Assert::assertFalse($user->belongsToTeams());
+>>>>>>> 6d3760fe (.)
 });

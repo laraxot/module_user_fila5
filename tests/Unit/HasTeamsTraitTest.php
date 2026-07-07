@@ -82,8 +82,12 @@ test('it uses belongs to many x for teams relationship', function (): void {
     $relation = $this->user->teams();
     expect($relation)->toBeInstanceOf(BelongsToMany::class);
 
+<<<<<<< HEAD
     // Verifica che il pivot model sia TeamUser
     expect($relation->getTable())->toBe('team_user');
+=======
+    Assert::assertInstanceOf(BelongsToMany::class, $user->membershipTeams());
+>>>>>>> 6d3760fe (.)
 });
 
 test('it correctly manages current team', function (): void {

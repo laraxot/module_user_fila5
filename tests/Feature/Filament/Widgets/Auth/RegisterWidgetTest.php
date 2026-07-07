@@ -12,6 +12,11 @@ use Modules\User\Filament\Widgets\Auth\RegisterWidget;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
+<<<<<<< HEAD
+=======
+use function Safe\json_encode;
+
+>>>>>>> 6d3760fe (.)
 uses(TestCase::class);
 
 beforeEach(function (): void {
@@ -25,9 +30,23 @@ beforeEach(function (): void {
 
 describe('RegisterWidget FO', function (): void {
     test('register page loads with livewire widget', function (): void {
+<<<<<<< HEAD
         $this->get('/it/auth/register')->assertSuccessful();
 
         Livewire::test(RegisterWidget::class)->assertSuccessful();
+=======
+        // NB: non usiamo TestResponse::assertSeeLivewire() (macro registrata da Livewire
+        // solo quando app()->environment('testing'), quindi non visibile a PHPStan/Larastan
+        // in fase di analisi statica). Replichiamo la stessa identica logica della macro
+        // (vedi vendor/livewire/livewire/src/Features/SupportTesting/SupportTesting.php) usando
+        // solo API tipizzate staticamente.
+        $componentName = app('livewire.factory')->resolveComponentName(RegisterWidget::class);
+        $escapedComponentName = trim(htmlspecialchars((string) json_encode(['name' => $componentName])), '{}');
+
+        $this->get('/it/auth/register')
+            ->assertSuccessful()
+            ->assertSee($escapedComponentName, false);
+>>>>>>> 6d3760fe (.)
     });
 
     test('delegates form schema to UserForm via formClass', function (): void {
@@ -59,7 +78,7 @@ describe('RegisterWidget FO', function (): void {
 
         $this->assertAuthenticated();
 
-        $this->assertDatabaseHasRow(User::class, ['email' => $email]);
+        $this->assertDatabaseHasUser('users', ['email' => $email]);
     });
 
     test('rejects invalid email without creating user', function (): void {
@@ -92,6 +111,6 @@ describe('RegisterWidget FO', function (): void {
             ->call('save')
             ->assertHasNoErrors();
 
-        $this->assertDatabaseHasRow(User::class, ['email' => $email]);
+        $this->assertDatabaseHasUser('users', ['email' => $email]);
     });
 });

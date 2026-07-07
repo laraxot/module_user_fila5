@@ -11,8 +11,11 @@ final class HasUserTestCaseFixture
 {
     use HasUserTestCase;
 
+<<<<<<< HEAD
     public User $user;
 
+=======
+>>>>>>> 6d3760fe (.)
     public function __construct()
     {
         $this->user = new User();

@@ -2,8 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\User\Tests\Feature;
 
+=======
+use Illuminate\Database\Eloquent\Relations\HasMany;
+>>>>>>> 6d3760fe (.)
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\Notification;
 use Modules\User\Models\Team;
@@ -11,8 +15,16 @@ use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\TeamPermission;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+<<<<<<< HEAD
 
 uses(TestCase::class);
+=======
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
+
+use function Safe\json_encode;
+>>>>>>> 6d3760fe (.)
 
 beforeEach(function () {
     $this->owner = User::factory()->create();

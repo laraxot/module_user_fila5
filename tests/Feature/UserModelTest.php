@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature;
 
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Support\Str;
 use Modules\User\Models\Permission;
@@ -53,8 +55,14 @@ describe('User Model Creation', function () {
         expect($user->getConnectionName());
     });
 
+<<<<<<< HEAD
     it('has factory', function () {
         $users = User::factory()->count(3)->create();
+=======
+    test('has factory', function (): void {
+        /** @var Collection<int, User> $users */
+        $users = UserFactory::new()->count(3)->create();
+>>>>>>> 6d3760fe (.)
 
         expect($users)->toHaveCount(3);
         $users->each(function ($user) {
@@ -126,6 +134,7 @@ describe('User Authentication Features', function () {
         expect($user->remember_token)->toBe($token);
     });
 
+<<<<<<< HEAD
     it('can access socialite feature', function () {
         expect($user->canAccessSocialite());
     });
@@ -134,6 +143,11 @@ describe('User Authentication Features', function () {
 describe('User Relationships', function () {
     it('can have teams', function () {
         expect($user->teams());
+=======
+    test('can have teams', function (): void {
+        $user = $this->requireUser();
+        Assert::assertInstanceOf(BelongsToMany::class, $user->membershipTeams());
+>>>>>>> 6d3760fe (.)
     });
 
     it('can own teams', function () {
@@ -144,7 +158,11 @@ describe('User Relationships', function () {
         $team = Team::factory()->create(['user_id' => $user->id]);
         $user->update(['current_team_id' => $team->id]);
 
+<<<<<<< HEAD
         expect($user->currentTeam());
+=======
+        Assert::assertInstanceOf(BelongsToMany::class, $user->membershipTeams());
+>>>>>>> 6d3760fe (.)
     });
 
     it('can have roles', function () {
@@ -156,8 +174,14 @@ describe('User Relationships', function () {
             ->toBeInstanceOf(BelongsToMany::class);
     });
 
+<<<<<<< HEAD
     it('can have profile', function () {
         expect($user->profile());
+=======
+    test('can have profile', function (): void {
+        $user = $this->requireUser();
+        Assert::assertInstanceOf(HasOne::class, $user->profile());
+>>>>>>> 6d3760fe (.)
     });
 
     it('can have devices', function () {
@@ -200,10 +224,17 @@ describe('User Team Management', function () {
         expect($user->teams->contains('id', $team->id));
     });
 
+<<<<<<< HEAD
     it('can leave a team', function () {
         $team = Team::factory()->create();
         $user->teams();
         $user->refresh();
+=======
+    test('can join ateam', function (): void {
+        $user = $this->requireUser();
+        $team = TeamFactory::new()->createOne();
+        $user->membershipTeams()->attach($team);
+>>>>>>> 6d3760fe (.)
 
         expect($user->teams->contains('id', $team->id));
 
@@ -212,8 +243,16 @@ describe('User Team Management', function () {
         expect($user->fresh());
     });
 
+<<<<<<< HEAD
     it('can own multiple teams', function () {
         $teams = Team::factory()->count(3)->create(['user_id' => $user->id]);
+=======
+    test('can leave ateam', function (): void {
+        $user = $this->requireUser();
+        $team = TeamFactory::new()->createOne();
+        $user->membershipTeams()->attach($team);
+        $user->membershipTeams()->detach($team);
+>>>>>>> 6d3760fe (.)
 
         expect($user->ownedTeams);
     });
