@@ -11,7 +11,7 @@ return new class extends XotBaseMigration {
      *
      * @return void
      */
-    public function up()
+    public function up(): void
     {
         // -- CREATE --
         $this->tableCreate(

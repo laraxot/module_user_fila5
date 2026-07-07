@@ -43,6 +43,10 @@ trait HasUserTestCase
  */
 trait HasUserTestCase
 {
+<<<<<<< HEAD
     public User|null $user = null;
 >>>>>>> 6d3760fe (.)
+=======
+    protected User $user;
+>>>>>>> 9fa499be (.)
 }

@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\User\Tests\Unit\Models\Traits;
 
+=======
+>>>>>>> 9fa499be (.)
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Collection;
 use Modules\User\Models\Team;
@@ -11,7 +14,16 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Models\Traits\Fixtures\MockUserWithTeams;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(Modules\User\Tests\TestCase::class);
+
+function traitsHasTeamsMockUser(string $id = 'mock-user-1'): MockUserWithTeams
+{
+    $user = new MockUserWithTeams();
+    $user->forceFill(['id' => $id]);
+>>>>>>> 9fa499be (.)
 
 beforeEach(function () {
     $this->user = \Mockery::mock(MockUserWithTeams::class)->makePartial();

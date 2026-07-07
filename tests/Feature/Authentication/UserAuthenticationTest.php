@@ -15,13 +15,17 @@ use Illuminate\Support\Str;
 use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\UserFactory;
+<<<<<<< HEAD
 >>>>>>> 6d3760fe (.)
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
+=======
+>>>>>>> 9fa499be (.)
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Traits\HasUserTestCase;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 uses(TestCase::class, HasUserTestCase::class);
 
@@ -79,10 +83,17 @@ function freshUser(User $user): User
 beforeEach(function (): void {
     $user = createUser([
 >>>>>>> 6d3760fe (.)
+=======
+uses(TestCase::class, HasUserTestCase::class);
+
+beforeEach(function () {
+    $user = UserFactory::new()->create([
+>>>>>>> 9fa499be (.)
         'password' => Hash::make('password123'),
         'is_active' => true,
         'email_verified_at' => now(),
     ]);
+<<<<<<< HEAD
 <<<<<<< HEAD
     \assert($user instanceof User);
     \assert($user instanceof User);
@@ -94,18 +105,26 @@ describe('User Authentication', function () {
         $result = Auth::attempt([
             'email' => $this->user->email,
 =======
+=======
+    \assert($user instanceof User);
+>>>>>>> 9fa499be (.)
     $this->user = $user;
 });
 
-describe('User Authentication', function (): void {
-    it('can authenticate with valid credentials', function (): void {
+describe('User Authentication', function () {
+    it('can authenticate with valid credentials', function () {
         $result = Auth::attempt([
+<<<<<<< HEAD
             'email' => userUnderTest($this)->email,
 >>>>>>> 6d3760fe (.)
+=======
+            'email' => $this->requireUser()->email,
+>>>>>>> 9fa499be (.)
             'password' => 'password123',
         ]);
 
         expect($result)->toBe(true);
+<<<<<<< HEAD
 <<<<<<< HEAD
         expect(Auth::user()?->id)->toBe($this->user->id);
     });
@@ -115,12 +134,19 @@ describe('User Authentication', function (): void {
             'email' => $this->user->email,
 =======
         expect(Auth::user()?->id)->toBe(userUnderTest($this)->id);
+=======
+        expect(Auth::user()?->id)->toBe($this->requireUser()->id);
+>>>>>>> 9fa499be (.)
     });
 
-    it('cannot authenticate with invalid password', function (): void {
+    it('cannot authenticate with invalid password', function () {
         $result = Auth::attempt([
+<<<<<<< HEAD
             'email' => userUnderTest($this)->email,
 >>>>>>> 6d3760fe (.)
+=======
+            'email' => $this->requireUser()->email,
+>>>>>>> 9fa499be (.)
             'password' => 'wrongpassword',
         ]);
 
@@ -129,10 +155,14 @@ describe('User Authentication', function (): void {
     });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     it('cannot authenticate with non-existent email', function () {
 =======
     it('cannot authenticate with non-existent email', function (): void {
 >>>>>>> 6d3760fe (.)
+=======
+    it('cannot authenticate with non-existent email', function () {
+>>>>>>> 9fa499be (.)
         $result = Auth::attempt([
             'email' => 'nonexistent@example.com',
             'password' => 'password123',
@@ -142,6 +172,7 @@ describe('User Authentication', function (): void {
         expect(Auth::user())->toBeNull();
     });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     it('cannot authenticate inactive user', function () {
         /** @var User $inactiveUser */
@@ -153,10 +184,16 @@ describe('User Authentication', function (): void {
         /** @var User $inactiveUser */
         $inactiveUser = createUser([
 >>>>>>> 6d3760fe (.)
+=======
+    it('cannot authenticate inactive user', function () {
+        /** @var User $inactiveUser */
+        /** @var User $inactiveUser */
+        $inactiveUser = UserFactory::new()->create([
+>>>>>>> 9fa499be (.)
             'password' => Hash::make('password123'),
             'is_active' => false,
         ]);
-        assert($inactiveUser instanceof User);
+        \assert($inactiveUser instanceof User);
 
         $result = Auth::attempt([
             'email' => $inactiveUser->email,
@@ -168,12 +205,17 @@ describe('User Authentication', function (): void {
     });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     it('can logout user', function () {
         Auth::login($this->user);
 =======
     it('can logout user', function (): void {
         Auth::login(userUnderTest($this));
 >>>>>>> 6d3760fe (.)
+=======
+    it('can logout user', function () {
+        Auth::login($this->requireUser());
+>>>>>>> 9fa499be (.)
         expect(Auth::check())->toBe(true);
 
         Auth::logout();
@@ -181,6 +223,7 @@ describe('User Authentication', function (): void {
     });
 });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 describe('User Password Management', function () {
     it('can hash password on creation', function () {
@@ -194,12 +237,21 @@ describe('User Password Management', function (): void {
         /** @var User $user */
         $user = createUser([
 >>>>>>> 6d3760fe (.)
+=======
+describe('User Password Management', function () {
+    it('can hash password on creation', function () {
+        /** @var User $user */
+        /** @var User $user */
+        $user = UserFactory::new()->create([
+>>>>>>> 9fa499be (.)
             'password' => Hash::make('testpassword'),
         ]);
+        \assert($user instanceof User);
 
         expect(Hash::check('testpassword', $user->password))->toBe(true);
     });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     it('can change password', function () {
         $newPassword = 'newpassword123';
@@ -227,31 +279,33 @@ describe('User Password Management', function (): void {
         $this->user->update([
 =======
     it('can change password', function (): void {
+=======
+    it('can change password', function () {
+>>>>>>> 9fa499be (.)
         $newPassword = 'newpassword123';
-        userUnderTest($this)->update([
+        $this->requireUser()->update([
             'password' => Hash::make($newPassword),
         ]);
 
-        expect(Hash::check($newPassword, freshUser(userUnderTest($this))->password))->toBe(true);
-        expect(Hash::check('password123', freshUser(userUnderTest($this))->password))->toBe(false);
+        expect(Hash::check($newPassword, $this->requireFreshUser($this->requireUser())->password))->toBe(true);
+        expect(Hash::check('password123', $this->requireFreshUser($this->requireUser())->password))->toBe(false);
     });
 
-    it('can check password expiration', function (): void {
+    it('can check password expiration', function () {
         /** @var User $user */
-        /** @var User $user */
-        $user = createUser([
+        $user = UserFactory::new()->create([
             'password_expires_at' => now()->subDays(1),
         ]);
-        $expiresAt = $user->password_expires_at;
-        if ($expiresAt === null) {
-            throw new \RuntimeException('Expected password expiration date.');
-        }
+        \assert($user instanceof User);
+        $passwordExpiresAt = $user->password_expires_at;
+        \assert(null !== $passwordExpiresAt);
 
-        expect($expiresAt->isPast())->toBe(true);
+        expect($passwordExpiresAt->isPast())->toBe(true);
     });
 
-    it('can set password expiration', function (): void {
+    it('can set password expiration', function () {
         $expirationDate = now()->addDays(90);
+<<<<<<< HEAD
         userUnderTest($this)->update([
 >>>>>>> 6d3760fe (.)
             'password_expires_at' => $expirationDate,
@@ -266,10 +320,21 @@ describe('User Password Management', function (): void {
             freshUser(userUnderTest($this))->password_expires_at?->toDateString(),
 >>>>>>> 6d3760fe (.)
         )
+=======
+        $this->requireUser()->update([
+            'password_expires_at' => $expirationDate,
+        ]);
+
+        $passwordExpiresAt = $this->requireFreshUser($this->requireUser())->password_expires_at;
+        \assert(null !== $passwordExpiresAt);
+
+        expect($passwordExpiresAt->toDateString())
+>>>>>>> 9fa499be (.)
             ->toBe($expirationDate->toDateString());
     });
 });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 describe('User Remember Token', function () {
     it('can generate remember token', function () {
@@ -297,38 +362,46 @@ describe('User Email Verification', function () {
 =======
 describe('User Remember Token', function (): void {
     it('can generate remember token', function (): void {
+=======
+describe('User Remember Token', function () {
+    it('can generate remember token', function () {
+>>>>>>> 9fa499be (.)
         $token = Str::random(60);
-        userUnderTest($this)->forceFill(['remember_token' => $token])->save();
+        $this->requireUser()->forceFill(['remember_token' => $token])->save();
 
-        expect(freshUser(userUnderTest($this))->remember_token)->toBe($token);
+        expect($this->requireFreshUser($this->requireUser())->remember_token)->toBe($token);
     });
 
-    it('can authenticate using remember token', function (): void {
+    it('can authenticate using remember token', function () {
         $token = Str::random(60);
-        userUnderTest($this)->forceFill(['remember_token' => $token])->save();
+        $this->requireUser()->forceFill(['remember_token' => $token])->save();
 
-        $user = User::where('email', userUnderTest($this)->email)->where('remember_token', $token)->first();
+        $user = User::where('email', $this->requireUser()->email)->where('remember_token', $token)->first();
 
-        if (! $user instanceof User) {
-            throw new \RuntimeException('Expected user with remember token.');
-        }
-
-        expect($user->id)->toBe(userUnderTest($this)->id);
+        expect($user)->not->toBeNull();
+        \assert($user instanceof User);
+        expect($user->id)->toBe($this->requireUser()->id);
     });
 });
 
-describe('User Email Verification', function (): void {
-    it('can mark email as verified', function (): void {
+describe('User Email Verification', function () {
+    it('can mark email as verified', function () {
         /** @var User $user */
+<<<<<<< HEAD
         $user = createUser([
 >>>>>>> 6d3760fe (.)
+=======
+        $user = UserFactory::new()->create([
+>>>>>>> 9fa499be (.)
             'email_verified_at' => null,
         ]);
+        \assert($user instanceof User);
 
         expect($user->email_verified_at)->toBeNull();
 
         $user->markEmailAsVerified();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         expect($user->fresh()->email_verified_at)->not->toBeNull();
     });
@@ -338,30 +411,45 @@ describe('User Email Verification', function (): void {
         $verifiedUser = User::factory()->create([
 =======
         expect(freshUser($user)->email_verified_at)->not->toBeNull();
+=======
+        $fresh = $user->fresh();
+        \assert(null !== $fresh);
+
+        expect($fresh->email_verified_at)->not->toBeNull();
+>>>>>>> 9fa499be (.)
     });
 
-    it('can check if email is verified', function (): void {
+    it('can check if email is verified', function () {
         /** @var User $verifiedUser */
+<<<<<<< HEAD
         $verifiedUser = createUser([
 >>>>>>> 6d3760fe (.)
+=======
+        $verifiedUser = UserFactory::new()->create([
+>>>>>>> 9fa499be (.)
             'email_verified_at' => now(),
         ]);
-        assert($verifiedUser instanceof User);
+        \assert($verifiedUser instanceof User);
 
         /** @var User $unverifiedUser */
+<<<<<<< HEAD
 <<<<<<< HEAD
         $unverifiedUser = User::factory()->create([
 =======
         $unverifiedUser = createUser([
 >>>>>>> 6d3760fe (.)
+=======
+        $unverifiedUser = UserFactory::new()->create([
+>>>>>>> 9fa499be (.)
             'email_verified_at' => null,
         ]);
-        assert($unverifiedUser instanceof User);
+        \assert($unverifiedUser instanceof User);
 
         expect($verifiedUser->hasVerifiedEmail())->toBe(true);
         expect($unverifiedUser->hasVerifiedEmail())->toBe(false);
     });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     it('can send email verification notification', function () {
         /** @var User $user */
@@ -371,8 +459,14 @@ describe('User Email Verification', function (): void {
         /** @var User $user */
         $user = createUser([
 >>>>>>> 6d3760fe (.)
+=======
+    it('can send email verification notification', function () {
+        /** @var User $user */
+        $user = UserFactory::new()->create([
+>>>>>>> 9fa499be (.)
             'email_verified_at' => null,
         ]);
+        \assert($user instanceof User);
 
         Notification::fake();
 
@@ -382,6 +476,7 @@ describe('User Email Verification', function (): void {
     });
 });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 describe('User Authorization', function () {
     it('can assign and check roles', function () {
@@ -466,89 +561,100 @@ describe('User OAuth Authentication', function () {
 describe('User Authorization', function (): void {
     it('can assign and check roles', function (): void {
         $adminRole = createRole(['name' => 'admin']);
+=======
+describe('User Authorization', function () {
+    it('can assign and check roles', function () {
+        $adminRole = RoleFactory::new()->createOne(['name' => 'admin']);
+        $editorRole = RoleFactory::new()->createOne(['name' => 'editor']);
+>>>>>>> 9fa499be (.)
 
-        userUnderTest($this)->assignRole($adminRole);
+        $this->requireUser()->assignRole($adminRole);
 
-        expect(userUnderTest($this)->hasRole('admin'))->toBe(true);
-        expect(userUnderTest($this)->hasRole('editor'))->toBe(false);
-        expect(userUnderTest($this)->hasRole($adminRole))->toBe(true);
+        expect($this->requireUser()->hasRole('admin'))->toBe(true);
+        expect($this->requireUser()->hasRole('editor'))->toBe(false);
+        expect($this->requireUser()->hasRole($adminRole))->toBe(true);
     });
 
-    it('can assign and check permissions', function (): void {
-        $editPermission = createPermission(['name' => 'edit posts']);
+    it('can assign and check permissions', function () {
+        $editPermission = PermissionFactory::new()->createOne(['name' => 'edit posts']);
+        $deletePermission = PermissionFactory::new()->createOne(['name' => 'delete posts']);
 
-        userUnderTest($this)->givePermissionTo($editPermission);
+        $this->requireUser()->givePermissionTo($editPermission);
 
-        expect(userUnderTest($this)->hasPermissionTo('edit posts'))->toBe(true);
-        expect(userUnderTest($this)->hasPermissionTo('delete posts'))->toBe(false);
-        expect(userUnderTest($this)->hasPermissionTo($editPermission))->toBe(true);
+        expect($this->requireUser()->hasPermissionTo('edit posts'))->toBe(true);
+        expect($this->requireUser()->hasPermissionTo('delete posts'))->toBe(false);
+        expect($this->requireUser()->hasPermissionTo($editPermission))->toBe(true);
     });
 
-    it('can inherit permissions from roles', function (): void {
-        $role = createRole(['name' => 'editor']);
-        $permission = createPermission(['name' => 'edit posts']);
+    it('can inherit permissions from roles', function () {
+        $role = RoleFactory::new()->createOne(['name' => 'editor']);
+        $permission = PermissionFactory::new()->createOne(['name' => 'edit posts']);
 
         $role->givePermissionTo($permission);
-        userUnderTest($this)->assignRole($role);
+        $this->requireUser()->assignRole($role);
 
-        expect(userUnderTest($this)->hasPermissionTo('edit posts'))->toBe(true);
+        expect($this->requireUser()->hasPermissionTo('edit posts'))->toBe(true);
     });
 
-    it('can check multiple permissions', function (): void {
-        $permission1 = createPermission(['name' => 'edit posts']);
-        $permission2 = createPermission(['name' => 'delete posts']);
+    it('can check multiple permissions', function () {
+        $permission1 = PermissionFactory::new()->createOne(['name' => 'edit posts']);
+        $permission2 = PermissionFactory::new()->createOne(['name' => 'delete posts']);
 
-        userUnderTest($this)->givePermissionTo([$permission1, $permission2]);
+        $this->requireUser()->givePermissionTo([$permission1, $permission2]);
 
-        expect(userUnderTest($this)->hasAllPermissions(['edit posts', 'delete posts']))->toBe(true);
-        expect(userUnderTest($this)->hasAnyPermission(['edit posts', 'publish posts']))->toBe(true);
+        expect($this->requireUser()->hasAllPermissions(['edit posts', 'delete posts']))->toBe(true);
+        expect($this->requireUser()->hasAnyPermission(['edit posts', 'publish posts']))->toBe(true);
     });
 
-    it('can remove roles and permissions', function (): void {
-        $role = createRole(['name' => 'editor']);
-        $permission = createPermission(['name' => 'edit posts']);
+    it('can remove roles and permissions', function () {
+        $role = RoleFactory::new()->createOne(['name' => 'editor']);
+        $permission = PermissionFactory::new()->createOne(['name' => 'edit posts']);
 
-        userUnderTest($this)->assignRole($role);
-        userUnderTest($this)->givePermissionTo($permission);
+        $this->requireUser()->assignRole($role);
+        $this->requireUser()->givePermissionTo($permission);
 
-        expect(userUnderTest($this)->hasRole('editor'))->toBe(true);
-        expect(userUnderTest($this)->hasPermissionTo('edit posts'))->toBe(true);
+        expect($this->requireUser()->hasRole('editor'))->toBe(true);
+        expect($this->requireUser()->hasPermissionTo('edit posts'))->toBe(true);
 
-        userUnderTest($this)->removeRole($role);
-        userUnderTest($this)->revokePermissionTo($permission);
+        $this->requireUser()->removeRole($role);
+        $this->requireUser()->revokePermissionTo($permission);
 
-        expect(userUnderTest($this)->hasRole('editor'))->toBe(false);
-        expect(userUnderTest($this)->hasPermissionTo('edit posts'))->toBe(false);
+        expect($this->requireUser()->hasRole('editor'))->toBe(false);
+        expect($this->requireUser()->hasPermissionTo('edit posts'))->toBe(false);
     });
 });
 
-describe('User OAuth Authentication', function (): void {
-    it('can have oauth clients', function (): void {
-        expect(userUnderTest($this)->clients())->toBeInstanceOf(MorphMany::class);
+describe('User OAuth Authentication', function () {
+    it('can have oauth clients', function () {
+        expect($this->requireUser()->clients())->toBeInstanceOf(MorphMany::class);
     });
 
-    it('can have oauth tokens', function (): void {
-        expect(userUnderTest($this)->tokens())->toBeInstanceOf(HasMany::class);
+    it('can have oauth tokens', function () {
+        expect($this->requireUser()->tokens())->toBeInstanceOf(HasMany::class);
     });
 
-    it('can find user for passport', function (): void {
-        $user = User::findForPassport(userUnderTest($this)->email);
+    it('can find user for passport', function () {
+        $user = User::findForPassport($this->requireUser()->email);
 
-        if (! $user instanceof User) {
-            throw new \RuntimeException('Expected passport user.');
-        }
-
-        expect($user->id)->toBe(userUnderTest($this)->id);
+        expect($user)->not->toBeNull();
+        \assert($user instanceof User);
+        expect($user->id)->toBe($this->requireUser()->id);
     });
 
+<<<<<<< HEAD
     it('can validate password for passport', function (): void {
         $isValid = userUnderTest($this)->validateForPassportPasswordGrant('password123');
 >>>>>>> 6d3760fe (.)
+=======
+    it('can validate password for passport', function () {
+        $isValid = $this->requireUser()->validateForPassportPasswordGrant('password123');
+>>>>>>> 9fa499be (.)
 
         expect($isValid)->toBe(true);
     });
 });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 describe('User Authentication Logging', function () {
     it('can log authentication attempts', function () {
@@ -581,31 +687,41 @@ describe('User Session Management', function () {
 describe('User Authentication Logging', function (): void {
     it('can log authentication attempts', function (): void {
         expect(userUnderTest($this)->authentications())->toBeInstanceOf(MorphMany::class);
+=======
+describe('User Authentication Logging', function () {
+    it('can log authentication attempts', function () {
+        expect($this->requireUser()->authentications())->toBeInstanceOf(MorphMany::class);
+>>>>>>> 9fa499be (.)
     });
 
-    it('can get latest authentication log', function (): void {
-        expect(userUnderTest($this)->latestAuthentication())
+    it('can get latest authentication log', function () {
+        expect($this->requireUser()->latestAuthentication())
             ->toBeInstanceOf(MorphOne::class);
     });
 });
 
-describe('User Session Management', function (): void {
-    it('can store user in session', function (): void {
-        Auth::login(userUnderTest($this));
+describe('User Session Management', function () {
+    it('can store user in session', function () {
+        Auth::login($this->requireUser());
 
         expect(Auth::check())->toBe(true);
-        expect(Auth::id())->toBe(userUnderTest($this)->id);
+        expect(Auth::id())->toBe($this->requireUser()->id);
     });
 
-    it('can remember user across sessions', function (): void {
-        Auth::login(userUnderTest($this), true);
+    it('can remember user across sessions', function () {
+        Auth::login($this->requireUser(), true);
 
-        expect(freshUser(userUnderTest($this))->remember_token)->not->toBeNull();
+        expect($this->requireFreshUser($this->requireUser())->remember_token)->not->toBeNull();
     });
 
+<<<<<<< HEAD
     it('can clear user session on logout', function (): void {
         Auth::login(userUnderTest($this));
 >>>>>>> 6d3760fe (.)
+=======
+    it('can clear user session on logout', function () {
+        Auth::login($this->requireUser());
+>>>>>>> 9fa499be (.)
         expect(Auth::check())->toBe(true);
 
         Auth::logout();
@@ -613,6 +729,7 @@ describe('User Session Management', function (): void {
     });
 });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 describe('User Two Factor Authentication', function () {
     it('can enable two factor authentication', function () {
@@ -634,23 +751,33 @@ describe('User Two Factor Authentication', function () {
 describe('User Two Factor Authentication', function (): void {
     it('can enable two factor authentication', function (): void {
         userUnderTest($this)->update(['is_otp' => true]);
+=======
+describe('User Two Factor Authentication', function () {
+    it('can enable two factor authentication', function () {
+        $this->requireUser()->update(['is_otp' => true]);
+>>>>>>> 9fa499be (.)
 
-        expect(freshUser(userUnderTest($this))->is_otp)->toBe(true);
+        expect($this->requireFreshUser($this->requireUser())->is_otp)->toBe(true);
     });
 
-    it('can disable two factor authentication', function (): void {
-        userUnderTest($this)->update(['is_otp' => false]);
+    it('can disable two factor authentication', function () {
+        $this->requireUser()->update(['is_otp' => false]);
 
-        expect(freshUser(userUnderTest($this))->is_otp)->toBe(false);
+        expect($this->requireFreshUser($this->requireUser())->is_otp)->toBe(false);
     });
 
-    it('handles otp authentication workflow', function (): void {
+    it('handles otp authentication workflow', function () {
         /** @var User $user */
+<<<<<<< HEAD
         $user = createUser([
 >>>>>>> 6d3760fe (.)
+=======
+        $user = UserFactory::new()->create([
+>>>>>>> 9fa499be (.)
             'is_otp' => true,
             'password' => Hash::make('password123'),
         ]);
+        \assert($user instanceof User);
 
         // First step: password authentication
         $result = Auth::attempt([
@@ -658,10 +785,15 @@ describe('User Two Factor Authentication', function (): void {
             'password' => 'password123',
         ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         // Should handle OTP requirement
 =======
 >>>>>>> 6d3760fe (.)
+=======
+
+        // Should handle OTP requirement
+>>>>>>> 9fa499be (.)
         expect($user->is_otp)->toBe(true);
     });
 });

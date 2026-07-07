@@ -14,12 +14,21 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 describe('TenantScope Console Context Behavior', function (): void {
     beforeEach(function (): void {
         // Crea tenant per i test
         $this->tenant1 = Tenant::factory()->create(['name' => 'Tenant 1']);
         $this->tenant2 = Tenant::factory()->create(['name' => 'Tenant 2']);
     });
+=======
+beforeEach(function (): void {
+    /* @var TestCase $this */
+    $this->skipUnlessUsersTableReady();
+    $this->tenant1 = TenantFactory::new()->createOne(['name' => 'Tenant 1 '.uniqid()]);
+    $this->tenant2 = TenantFactory::new()->createOne(['name' => 'Tenant 2 '.uniqid()]);
+});
+>>>>>>> 9fa499be (.)
 
     describe('User Creation in Console Context', function (): void {
         it('allows user creation without tenant in console context', function (): void {
@@ -218,18 +227,83 @@ describe('InteractsWithTenant Trait Behavior', function (): void {
         expect($user->exists)->toBeTrue();
     });
 
+<<<<<<< HEAD
     it('skips tenant assignment in console context during creating event', function (): void {
         // In console, il creating event non dovrebbe tentare di chiamare Filament::getTenant()
+=======
+    test('executes make filament user command successfully', function (): void {
+        $email = 'artisan-test-'.uniqid('', true).'@example.com';
+
+        $exitCode = Artisan::call('make:filament-user', [
+            '--name' => 'Artisan Test User',
+            '--email' => $email,
+            '--password' => 'TestPassword123!',
+        ]);
+
+        Assert::assertSame(0, $exitCode);
+        $user = User::where('email', $email)->first();
+        Assert::assertNotNull($user);
+        Assert::assertSame($email, $user->email);
+        Assert::assertSame('Artisan Test User', $user->name);
+    });
+
+    test('allows querying all users in console context without tenant filter', function (): void {
+        /** @var TestCase $this */
+        $tenant1 = $this->requireTenant1();
+        $tenant2 = $this->requireTenant2();
+        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+
+        $user1 = UserFactory::new()->createOne([
+            'name' => 'Tenant 1 User',
+            'tenant_id' => $tenant1->id,
+        ]);
+
+        $user2 = UserFactory::new()->createOne([
+            'name' => 'Tenant 2 User',
+            'tenant_id' => $tenant2->id,
+        ]);
+
+        $allUsers = User::query()->whereIn('id', [$user1->id, $user2->id])->get();
+
+        Assert::assertCount(2, $allUsers);
+        Assert::assertTrue($allUsers->pluck('id')->contains($user1->id));
+        Assert::assertTrue($allUsers->pluck('id')->contains($user2->id));
+    });
+
+    test('automatically sets tenant id when creating user in http context', function (): void {
+        /** @var TestCase $this */
+        $tenant1 = $this->requireTenant1();
+        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+
+        actingAs(UserFactory::new()->createOne());
+
+        Filament::shouldReceive('getTenant')
+            ->andReturn($tenant1);
+
+        $email = 'http-test-'.uniqid('', true).'@example.com';
+>>>>>>> 9fa499be (.)
         $user = User::create([
             'name' => 'Creating Event Test',
             'email' => 'creating-event@example.com',
             'password' => bcrypt('password123'),
         ]);
 
+<<<<<<< HEAD
         // Dovrebbe essere creato senza errori
         expect($user->exists)->toBeTrue()
             ->and($user->name)->toBe('Creating Event Test');
 =======
+=======
+        Assert::assertInstanceOf(User::class, $user);
+    });
+
+    test('filters users by tenant in http context', function (): void {
+        /** @var TestCase $this */
+        $tenant1 = $this->requireTenant1();
+        $tenant2 = $this->requireTenant2();
+        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
+
+>>>>>>> 9fa499be (.)
         $user1 = UserFactory::new()->createOne([
             'name' => 'Tenant 1 User Only',
             'email' => 'tenant1-only-'.uniqid('', true).'@example.com',
@@ -280,6 +354,7 @@ describe('InteractsWithTenant Trait Behavior', function (): void {
     });
 
     test('allows manual tenant id assignment in console context', function (): void {
+        /** @var TestCase $this */
         $tenant1 = $this->requireTenant1();
         $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
 
@@ -297,6 +372,7 @@ describe('InteractsWithTenant Trait Behavior', function (): void {
     });
 
     test('allows querying users by specific tenant in console', function (): void {
+        /** @var TestCase $this */
         $tenant1 = $this->requireTenant1();
         $tenant2 = $this->requireTenant2();
         $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
@@ -318,6 +394,7 @@ describe('InteractsWithTenant Trait Behavior', function (): void {
     });
 
     test('does not crash when booting in console context', function (): void {
+        /* @var TestCase $this */
         $this->skipUnlessUsersTableReady();
 
         $email = 'boot-test-'.uniqid('', true).'@example.com';
@@ -334,6 +411,7 @@ describe('InteractsWithTenant Trait Behavior', function (): void {
     });
 
     test('skips tenant assignment in console context during creating event', function (): void {
+        /* @var TestCase $this */
         $this->skipUnlessUsersTableReady();
 
         $email = 'creating-event-'.uniqid('', true).'@example.com';

@@ -13,10 +13,13 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use function Safe\json_encode;
 
 >>>>>>> 6d3760fe (.)
+=======
+>>>>>>> 9fa499be (.)
 uses(TestCase::class);
 
 beforeEach(function (): void {
@@ -30,6 +33,7 @@ beforeEach(function (): void {
 
 describe('RegisterWidget FO', function (): void {
     test('register page loads with livewire widget', function (): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
         $this->get('/it/auth/register')->assertSuccessful();
 
@@ -47,6 +51,11 @@ describe('RegisterWidget FO', function (): void {
             ->assertSuccessful()
             ->assertSee($escapedComponentName, false);
 >>>>>>> 6d3760fe (.)
+=======
+        $this->get('/it/auth/register')->assertSuccessful();
+
+        Livewire::test(RegisterWidget::class)->assertSuccessful();
+>>>>>>> 9fa499be (.)
     });
 
     test('delegates form schema to UserForm via formClass', function (): void {
@@ -78,7 +87,7 @@ describe('RegisterWidget FO', function (): void {
 
         $this->assertAuthenticated();
 
-        $this->assertDatabaseHasUser('users', ['email' => $email]);
+        $this->assertDatabaseHasRow(User::class, ['email' => $email]);
     });
 
     test('rejects invalid email without creating user', function (): void {
@@ -111,6 +120,6 @@ describe('RegisterWidget FO', function (): void {
             ->call('save')
             ->assertHasNoErrors();
 
-        $this->assertDatabaseHasUser('users', ['email' => $email]);
+        $this->assertDatabaseHasRow(User::class, ['email' => $email]);
     });
 });

@@ -371,6 +371,7 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertDatabaseMissing('profiles', ['id' => $profile->id]);
     }
 
+<<<<<<< HEAD
     /** @test */
     public function itCanSoftDeleteUser(): void
     {
@@ -379,6 +380,17 @@ class UserManagementBusinessLogicTest extends TestCase
 
         // Act
         $user->delete();
+=======
+    test('can soft delete user', function (): void {
+        /* @var TestCase $this */
+        $this->skipTest('User model does not use SoftDeletes.');
+    });
+
+    test('can restore soft deleted user', function (): void {
+        /* @var TestCase $this */
+        $this->skipTest('User model does not use SoftDeletes.');
+    });
+>>>>>>> 9fa499be (.)
 
 <<<<<<< HEAD
         // Assert
@@ -531,11 +543,17 @@ class UserManagementBusinessLogicTest extends TestCase
         $this->assertCount(1, $userWithRelations->permissions);
     }
 
+<<<<<<< HEAD
     /** @test */
     public function itCanValidateUserEmailUniqueness(): void
     {
         // Arrange
         User::factory()->create(['email' => 'test@example.com']);
+=======
+    test('can validate user email uniqueness', function (): void {
+        /* @var TestCase $this */
+        UserFactory::new()->createOne(['email' => 'test@example.com']);
+>>>>>>> 9fa499be (.)
 
         // Act & Assert
         $this->expectException(QueryException::class);

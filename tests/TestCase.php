@@ -379,16 +379,6 @@ abstract class TestCase extends BaseTestCase
         return $user;
     }
 
-    /**
-     * Assert that a given where condition exists in the database.
-     *
-     * @param array<string, mixed> $data
-     */
-    public function assertDatabaseHasUser(string $table, array $data): void
-    {
-        $this->assertDatabaseHas($table, $data, 'user');
-    }
-
     public function createMockSocialiteUser(?string $name, ?string $email): \Laravel\Socialite\Contracts\User
     {
         $mock = $this->createUnitMock(\Laravel\Socialite\Contracts\User::class);

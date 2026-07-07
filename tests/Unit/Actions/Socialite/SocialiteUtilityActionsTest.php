@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\User\Tests\Unit\Actions\Socialite;
 
+=======
+>>>>>>> 9fa499be (.)
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\DB;
@@ -23,6 +26,8 @@ use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 
 uses(TestCase::class);
+
+uses(Modules\User\Tests\TestCase::class);
 
 describe('Socialite utility actions', function (): void {
     it('returns allow list when configured as string', function (): void {

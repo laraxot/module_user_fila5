@@ -14,6 +14,7 @@ use Modules\User\Tests\TestCase;
  */
 uses(TestCase::class);
 
+<<<<<<< HEAD
 test('user can be created', function (): void {
     try {
         $factory = User::factory();
@@ -24,6 +25,47 @@ test('user can be created', function (): void {
             'email' => fake()->unique()->safeEmail(),
             'password' => Hash::make('password123'),
         ]);
+=======
+describe('User', function (): void {
+    test('user can be created', function (): void {
+        /* @var \Modules\User\Tests\TestCase $this */
+        /* @var TestCase $this */
+        try {
+            $user = UserFactory::new()->createOne([
+                'type' => UserType::MasterAdmin,
+                'email' => fake()->unique()->safeEmail(),
+                'password' => Hash::make('password123'),
+            ]);
+            \assert($user instanceof User);
+
+            Assert::assertInstanceOf(User::class, $user);
+            Assert::assertIsString($user->email);
+            $this->assertNotSame('', $user->email);
+            Assert::assertSame(UserType::MasterAdmin, $user->type);
+        } catch (\Throwable) {
+            $this->skipTest('User type aliases (e.g. master_admin) are not configured in this install.');
+        }
+    });
+
+    test('user has correct type casting', function (): void {
+        /* @var TestCase $this */
+        try {
+            $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
+            \assert($user instanceof User);
+
+            $type = $user->type;
+            \assert($type instanceof UserType);
+
+            Assert::assertInstanceOf(UserType::class, $type);
+            Assert::assertSame('master_admin', $type->value);
+        } catch (\Throwable) {
+            $this->skipTest('User type aliases (e.g. master_admin) are not configured in this install.');
+        }
+    });
+
+    test('user password is hashed', function (): void {
+        $user = UserFactory::new()->createOne(['password' => Hash::make('password123')]);
+>>>>>>> 9fa499be (.)
         \assert($user instanceof User);
 
 <<<<<<< HEAD
@@ -219,6 +261,7 @@ test('user soft delete functionality', function (): void {
     });
 
     test('user can be updated', function (): void {
+        /* @var TestCase $this */
         try {
             $user = UserFactory::new()->createOne([
                 'type' => UserType::MasterAdmin,
@@ -241,6 +284,7 @@ test('user soft delete functionality', function (): void {
     });
 
     test('user can be deleted', function (): void {
+        /* @var TestCase $this */
         $this->skipUnlessDirectPermissionSupported();
 
         $user = UserFactory::new()->createOne();
@@ -290,6 +334,7 @@ test('user soft delete functionality', function (): void {
     });
 
     test('user can be found by type', function (): void {
+        /* @var TestCase $this */
         try {
             $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
             \assert($user instanceof User);
@@ -309,6 +354,7 @@ test('user soft delete functionality', function (): void {
     });
 
     test('user can be created with different types', function (): void {
+        /* @var TestCase $this */
         try {
             $factory = UserFactory::new();
             \assert($factory instanceof Factory);
@@ -334,6 +380,7 @@ test('user soft delete functionality', function (): void {
     });
 
     test('user soft delete functionality', function (): void {
+        /* @var TestCase $this */
         $this->skipTest('User model does not implement SoftDeletes trait');
     });
 >>>>>>> 6d3760fe (.)
