@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
-use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Contracts\UserContract;
 
 /**

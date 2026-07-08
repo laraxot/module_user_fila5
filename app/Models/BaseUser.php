@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+use Filament\Models\Contracts\FilamentUser;
 use Filament\Models\Contracts\HasName;
 use Filament\Models\Contracts\HasTenants;
 use Filament\Panel;
@@ -40,7 +41,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 use Parental\HasChildren;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
-use Filament\Models\Contracts\FilamentUser;
 
 /**
  * Base User Model.
@@ -235,14 +235,14 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         return (string) ($this->getAttribute('provider') ?? config('auth.guards.api.provider', 'users'));
     }
 
-    /* 
+    /*
     public function canAccessFilament(?Panel $panel = null): bool
     {
          dddx($panel->getId());
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;
         return true;
     }
-    */ 
+    */
     /**
      * Get the user's name for Filament.
      */
@@ -315,7 +315,6 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function canAccessPanel(Panel $panel): bool
     {
-        
         // $panel->default('admin');
         if ('admin' !== $panel->getId()) {
             $role = $panel->getId();
