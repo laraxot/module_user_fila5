@@ -16,6 +16,7 @@ use Modules\User\Models\TeamUser;
 use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract as XotUserContract;
 use Modules\Xot\Datas\XotData;
+use Spatie\Permission\Models\Permission;
 
 /**
  * Trait HasTeams.
@@ -93,7 +94,7 @@ trait HasTeams
      */
     public function canCreateTeam(): bool
     {
-        return $this->hasPermissionTo('create team');
+        return $this->hasPermissionTo('create team'); // @phpstan-ignore method.notFound, return.type
     }
 
     /**
@@ -183,7 +184,7 @@ trait HasTeams
      */
     public function allTeamUsers(): Collection // @phpstan-ignore return.type
     {/** @var Collection<int, mixed> $teams */
-                                $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
+                        $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
         /** @var Collection<int, User> $result */
         $result = $teams->flatMap( // @phpstan-ignore argument.type
             /** @param mixed $team @return array<int,User>|Collection<int,User> */
@@ -349,7 +350,7 @@ trait HasTeams
         // Permissions from Role
         $role = $this->teamRole($team);
         if (null !== $role && $role->permissions) {
-            /** @var \Illuminate\Database\Eloquent\Collection<int, \Spatie\Permission\Models\Permission> $permissionsCollection */
+            /** @var \Illuminate\Database\Eloquent\Collection<int, Permission> $permissionsCollection */
             $permissionsCollection = $role->permissions;
             /** @var array<string> $rolePermissionNames */
             $rolePermissionNames = $permissionsCollection->pluck('name')->toArray();
@@ -549,11 +550,11 @@ trait HasTeams
     /**
      * Get all admins of the team.
      *
-     * @return Collection<int, XotUserContract>
+     * @return Collection<int, Model>
      */
     public function getTeamAdmins(TeamContract $team): Collection
     {
-        /** @var Collection<int, XotUserContract> $admins */
+        /** @var Collection<int, Model> $admins */
         $admins = $team->members()->wherePivot('role', 'admin')->get();
 
         return $admins;
@@ -562,11 +563,11 @@ trait HasTeams
     /**
      * Get all members of the team.
      *
-     * @return Collection<int, XotUserContract>
+     * @return Collection<int, Model>
      */
     public function getTeamMembers(TeamContract $team): Collection
     {
-        /** @var Collection<int, XotUserContract> $members */
+        /** @var Collection<int, Model> $members */
         $members = $team->members()->wherePivot('role', 'member')->get();
 
         return $members;

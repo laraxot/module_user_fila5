@@ -28,11 +28,8 @@ use Illuminate\Support\Collection;
 use Modules\User\Actions\Passport\RevokeAllUserTokensAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport;
-use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource\Pages\EditOauthAccessTokens;
-use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource\Pages\ListOauthAccessTokens;
-use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource\Pages\ViewOauthAccessToken;
 use Modules\User\Filament\Resources\UserResource;
-use Modules\User\Models\OauthToken;
+use Modules\User\Models\OauthAccessToken;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use function Safe\json_encode;
@@ -41,22 +38,134 @@ class OauthAccessTokenResource extends XotBaseResource
 {
     protected static ?string $cluster = Passport::class;
 
-    protected static ?string $model = OauthToken::class;
+    protected static ?string $model = OauthAccessToken::class;
 
     public static function table(Table $table): Table
     {
         return $table
-            ->columns(static::getTableColumns())
-            ->filters(static::getTableFilters())
-            ->actions(static::getTableActions())
-            ->bulkActions(static::getTableBulkActions())
+            ->columns([
+                TextColumn::make('id')
+                    ->searchable()
+                    ->sortable()
+                    ->copyable(),
+
+                TextColumn::make('user.name')
+                    ->searchable()
+                    ->sortable()
+                    ->url(function (mixed $record): ?string {
+                        if (! $record instanceof OauthAccessToken) {
+                            return null;
+                        }
+                        $user = $record->user;
+                        if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+                            return UserResource::getUrl('view', ['record' => $user]);
+                        }
+
+                        return null;
+                    })
+                    ->openUrlInNewTab(),
+
+                TextColumn::make('client.name')
+                    ->searchable()
+                    ->sortable(),
+
+                TextColumn::make('name')
+                    ->searchable()
+                    ->sortable(),
+
+                TextColumn::make('scopes')
+                    ->limit(30)
+                    ->tooltip(function (mixed $state): ?string {
+                        if (null === $state) {
+                            return null;
+                        }
+                        if (is_array($state)) {
+                            /* @var array<string, mixed> $state */
+                            return json_encode($state);
+                        }
+
+                        return is_string($state) ? $state : null;
+                    }),
+
+                IconColumn::make('revoked')
+                    ->boolean()
+                    ->color(fn (bool $state): string => $state ? 'danger' : 'success'),
+
+                TextColumn::make('created_at')
+                    ->dateTime()
+                    ->sortable(),
+
+                TextColumn::make('expires_at')
+                    ->dateTime()
+                    ->sortable()
+                    ->formatStateUsing(function (mixed $state): string {
+                        if ($state instanceof Carbon) {
+                            $now = Carbon::now();
+                            if ($state->lt($now)) {
+                                return $state->format('Y-m-d H:i:s').' (Expired)';
+                            }
+
+                            return $state->format('Y-m-d H:i:s');
+                        }
+
+                        return 'N/A';
+                    }),
+            ])
+            ->filters([
+                Filter::make('revoked')
+                    ->query(fn (Builder $query) => $query->where('revoked', true)),
+
+                Filter::make('expired')
+                    ->query(fn (Builder $query) => $query->where('expires_at', '<', now())),
+
+                Filter::make('valid')
+                    ->query(fn (Builder $query) => $query->where('revoked', false)->where('expires_at', '>', now())),
+            ])
+            ->recordActions([
+                Action::make('revoke')
+                    ->icon('heroicon-o-x-circle')
+                    ->color('danger')
+                    ->requiresConfirmation()
+                    ->action(function (mixed $record): void {
+                        if ($record instanceof Model) {
+                            if (app(RevokeTokenAction::class)->execute((string) $record->getKey())) {
+                                Notification::make()
+                                    ->title(static::trans('actions.revoke.success'))
+                                    ->success()
+                                    ->send();
+                            }
+                        }
+                    })
+                    ->visible(fn (mixed $record) => $record instanceof OauthAccessToken && ! $record->revoked),
+                DeleteAction::make(),
+            ])
+            ->bulkActions([
+                BulkAction::make('revoke_all_for_user')
+                    ->icon('heroicon-o-x-circle')
+                    ->color('danger')
+                    ->requiresConfirmation()
+                    ->action(function (Collection $records): void {
+                        $users = $records->pluck('user_id')->unique();
+                        $count = 0;
+                        foreach ($users as $userId) {
+                            if (is_string($userId) || is_int($userId)) {
+                                $count += app(RevokeAllUserTokensAction::class)->execute((string) $userId);
+                            }
+                        }
+                        Notification::make()
+                            ->title(static::trans('actions.revoke_all_for_user.success'))
+                            ->success()
+                            ->send();
+                    }),
+                DeleteBulkAction::make(),
+            ])
             ->defaultSort('created_at', 'desc');
     }
 
     /**
      * @return array<string, Column>
      */
-    public static function getTableColumns(): array
+    public function getTableColumns(): array
     {
         return [
             'id' => TextColumn::make('id')
@@ -68,7 +177,7 @@ class OauthAccessTokenResource extends XotBaseResource
                 ->searchable()
                 ->sortable()
                 ->url(function (mixed $record): ?string {
-                    if (! $record instanceof OauthToken) {
+                    if (! $record instanceof OauthAccessToken) {
                         return null;
                     }
                     $user = $record->user;
@@ -155,7 +264,7 @@ class OauthAccessTokenResource extends XotBaseResource
                 ->icon('heroicon-o-x-circle')
                 ->color('danger')
                 ->requiresConfirmation()
-                ->action(function (mixed $record) {
+                ->action(function (mixed $record): void {
                     if ($record instanceof Model) {
                         if (app(RevokeTokenAction::class)->execute((string) $record->getKey())) {
                             Notification::make()
@@ -165,7 +274,7 @@ class OauthAccessTokenResource extends XotBaseResource
                         }
                     }
                 })
-                ->visible(fn (mixed $record) => $record instanceof OauthToken && ! $record->revoked),
+                ->visible(fn (mixed $record): bool => $record instanceof OauthAccessToken && ! $record->revoked),
             'delete' => DeleteAction::make(),
         ];
     }
@@ -180,7 +289,7 @@ class OauthAccessTokenResource extends XotBaseResource
                 ->icon('heroicon-o-x-circle')
                 ->color('danger')
                 ->requiresConfirmation()
-                ->action(function (Collection $records) {
+                ->action(function (Collection $records): void {
                     $users = $records->pluck('user_id')->unique();
                     $count = 0;
                     foreach ($users as $userId) {
@@ -194,19 +303,6 @@ class OauthAccessTokenResource extends XotBaseResource
                         ->send();
                 }),
             'delete' => DeleteBulkAction::make(),
-        ];
-    }
-
-    /**
-     * @return array<string, \Filament\Resources\Pages\PageRegistration>
-     */
-    #[\Override]
-    public static function getPages(): array
-    {
-        return [
-            'index' => ListOauthAccessTokens::route('/'),
-            'view' => ViewOauthAccessToken::route('/{record}'),
-            'edit' => EditOauthAccessTokens::route('/{record}/edit'),
         ];
     }
 

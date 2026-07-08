@@ -163,7 +163,7 @@ class PasswordData extends Data
     /**
      * Get both password form components.
      *
-     * @return array<int, TextInput>
+     * @return array<TextInput>
      */
     public function getPasswordFormComponents(string $field_name): array
     {

@@ -1,6 +1,3 @@
-# Implementazione Corretta del Logout con Volt e Folio
-
-## Collegamenti correlati
 - [README modulo User](./README.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Analisi Logout Blade](./LOGOUT_BLADE_ANALYSIS.md)

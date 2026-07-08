@@ -16,6 +16,7 @@
  *
  * @return JsonResponse The JSON response
  */
+
 declare(strict_types=1);
 
 namespace Modules\User\Http\Controllers\Api;
@@ -49,7 +50,7 @@ class RegisterController extends XotBaseController
             $messages,
         );
         if ($validator->fails()) {
-            return $this->sendError('Validation Error.', ['errors' => $validator->errors()->all()]);
+            return $this->sendError('Validation Error.', $validator->errors()->toArray());
         }
 
         /** @var array<string, mixed> $input */

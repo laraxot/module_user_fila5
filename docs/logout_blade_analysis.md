@@ -1,16 +1,13 @@
-# Analisi del File logout.blade.php
-
-## Collegamenti correlati
-- [README modulo User](./readme.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Auth Pages Implementation](./auth_pages_implementation.md)
-- [Logout Blade Implementation](./logout_blade_implementation.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
+- [README modulo User](./README.md)
+- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
+- [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
+- [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Analisi dell'Errore di Implementazione](./VOLT_BLADE_IMPLEMENTATION_ERROR.md)
 
 ## Panoramica
 
-Questo documento analizza l'implementazione attuale del file `logout.blade.php` situato in `Themes/One/resources/views/pages/auth/`, identifica problemi e propone miglioramenti in linea con le convenzioni di Quaeris.
+Questo documento analizza l'implementazione attuale del file `logout.blade.php` situato in `Themes/One/resources/views/pages/auth/`, identifica problemi e propone miglioramenti in linea con le convenzioni di SaluteOra.
 
 ## Analisi dell'Implementazione Attuale
 
@@ -109,7 +106,7 @@ $logout = function () {
 
 ## Approcci Possibili
 
-In base alle convenzioni di Quaeris, ci sono tre approcci principali per implementare il logout:
+In base alle convenzioni di SaluteOra, ci sono tre approcci principali per implementare il logout:
 
 ### 1. Folio con PHP puro (Raccomandato)
 
@@ -225,7 +222,7 @@ Questo approccio utilizza Volt all'interno di una pagina Folio per gestire il lo
 
 ## Analisi Dettagliata dell'Implementazione Attuale
 
-L'implementazione attuale del file `logout.blade.php` presenta diversi problemi che devono essere corretti per allinearsi alle convenzioni del progetto Quaeris:
+L'implementazione attuale del file `logout.blade.php` presenta diversi problemi che devono essere corretti per allinearsi alle convenzioni del progetto SaluteOra:
 
 ### 1. Struttura e Organizzazione
 
@@ -296,13 +293,13 @@ L'implementazione attuale utilizza un approccio Volt con conferma utente, che no
 
 ## Raccomandazioni Specifiche
 
-In base all'analisi e alle convenzioni del progetto Quaeris, si raccomanda di adottare l'**Approccio 1: Folio con PHP puro** per le seguenti ragioni:
+In base all'analisi e alle convenzioni del progetto SaluteOra, si raccomanda di adottare l'**Approccio 1: Folio con PHP puro** per le seguenti ragioni:
 
 1. **Semplicità**: Il logout è un'operazione semplice che non richiede gestione dello stato o interazione con l'utente.
 
 2. **Efficienza**: Il reindirizzamento immediato offre una migliore esperienza utente rispetto a una pagina di conferma.
 
-3. **Coerenza**: Questo approccio è coerente con le convenzioni di Quaeris per le operazioni semplici.
+3. **Coerenza**: Questo approccio è coerente con le convenzioni di SaluteOra per le operazioni semplici.
 
 4. **Sicurezza**: Implementa correttamente tutte le misure di sicurezza necessarie (invalidazione sessione, rigenerazione token).
 
@@ -420,7 +417,7 @@ new class extends Component {
 
 ## Conclusioni
 
-L'implementazione attuale del file `logout.blade.php` presenta diverse aree di miglioramento. Riorganizzando la struttura, utilizzando i componenti Filament, implementando la localizzazione degli URL e sfruttando appieno le capacità di Volt e Folio, è possibile creare un'implementazione più robusta, manutenibile e conforme alle convenzioni di Quaeris.
+L'implementazione attuale del file `logout.blade.php` presenta diverse aree di miglioramento. Riorganizzando la struttura, utilizzando i componenti Filament, implementando la localizzazione degli URL e sfruttando appieno le capacità di Volt e Folio, è possibile creare un'implementazione più robusta, manutenibile e conforme alle convenzioni di SaluteOra.
 
 La versione migliorata proposta risolve tutti i problemi identificati e offre un'esperienza utente coerente con il resto dell'applicazione.
 
@@ -440,3 +437,10 @@ La versione migliorata proposta risolve tutti i problemi identificati e offre un
 - [Documentazione Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Livewire](https://livewire.laravel.com/docs)
 - [Documentazione Filament](https://filamentphp.com/docs)
+---
+module: theme
+topic: logout_blade_analysis
+canonical: ../../../Themes/docs/shared-components/logout_blade_analysis.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout_blade_analysis.md

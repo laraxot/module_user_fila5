@@ -22,7 +22,7 @@ Questo documento descrive l'implementazione corretta delle pagine di autenticazi
 
 ## Introduzione
 
-Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di Quaeris, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
+Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di healthcare_app, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
 
 ## Struttura delle Directory
 

@@ -1,7 +1,14 @@
----
-module: theme
-topic: git_conflict_resolution
-canonical: ../../../../Themes/docs/shared-components/git-conflict-resolution-1.md
----
+# git_conflict_resolution - User
 
-See canonical documentation: ../../../../Themes/docs/shared-components/git-conflict-resolution-1.md
+## Overview
+
+Documentazione per git_conflict_resolution nel modulo User.
+
+## Dettagli
+
+[Da completare]
+
+## Collegamenti
+
+- [Modulo Principale](../README.md)
+

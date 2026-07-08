@@ -93,7 +93,7 @@ class ListPermissions extends XotBaseListRecords
 
                         // Poi verifichiamo che il modello abbia il metodo roles() prima di chiamarlo
                         if (method_exists($record, 'roles')) {
-                            /** @var BelongsToMany<Role, \Modules\User\Models\Permission, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'> $rolesRelation */
+                            /** @var BelongsToMany<Role, \Modules\User\Models\Permission> $rolesRelation */
                             $rolesRelation = $record->roles();
                             $roleData = $data['role'];
                             if (is_array($roleData) || is_int($roleData) || is_string($roleData)) {
@@ -108,11 +108,10 @@ class ListPermissions extends XotBaseListRecords
                     Select::make('role')->options(function () use ($roleModel): array {
                         /** @var Builder<Role> $query */
                         $query = $roleModel::query();
-                        /** @var \Illuminate\Support\Collection<string|int, string> $collection */
-                        $collection = $query->pluck('name', 'id');
 
-                        /* @var array<string|int, string> $options */
-                        return $collection->toArray();
+                        return $query->pluck('name', 'id')
+                            ->mapWithKeys(static fn (mixed $name, mixed $id): array => is_string($name) || is_int($name) ? [(string) $id => (string) $name] : [])
+                            ->all();
                     })->required(),
                 ])
                 ->deselectRecordsAfterCompletion(),

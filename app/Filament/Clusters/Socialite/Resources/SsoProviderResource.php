@@ -15,6 +15,7 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Resources\Pages\PageRegistration;
+use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Modules\User\Filament\Clusters\Socialite;
@@ -71,7 +72,7 @@ class SsoProviderResource extends XotBaseResource
     /**
      * @return array<string, TextColumn|IconColumn>
      */
-    public static function getTableColumns(): array
+    public function getTableColumns(): array
     {
         return [
             'name' => TextColumn::make('name')
@@ -119,7 +120,7 @@ class SsoProviderResource extends XotBaseResource
     }
 
     /**
-     * @return array<string, class-string<\Filament\Resources\RelationManagers\RelationManager>>
+     * @return array<string, class-string<RelationManager>>
      */
     #[\Override]
     public static function getRelations(): array

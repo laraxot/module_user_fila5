@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Log;
 use Modules\User\Actions\GetCurrentDeviceAction;
 use Modules\User\Models\BaseUser;
 use Modules\User\Models\DeviceUser;
+use Modules\User\Support\AuthenticationLogQuery;
 
 class LogoutListener
 {
@@ -102,9 +103,7 @@ class LogoutListener
     {
         if ($event->user instanceof BaseUser) {
             try {
-                $event
-                    ->user
-                    ->authentications()
+                AuthenticationLogQuery::forAuthenticatable($event->user)
                     ->whereNotNull('remember_token')
                     ->update([
                         'remember_token' => null,

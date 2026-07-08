@@ -1,6 +1,3 @@
-# Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio
-
-## Collegamenti correlati
 - [README modulo User](./README.md)
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Volt Errors](./VOLT_ERRORS.md)

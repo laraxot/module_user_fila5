@@ -2,9 +2,9 @@
 
 ## Problema Identificato
 
-**Errore**: `SQLSTATE[HY000]: General error: 1 no such table: Quaeris_data.customer_user`
+**Errore**: `SQLSTATE[HY000]: General error: 1 no such table: app_data.customer_user`
 
-**Contesto**: Il trait `HasTenants` utilizza `belongsToManyX` per creare relazioni cross-database tra User (Quaeris_user) e Customer (Quaeris_data).
+**Contesto**: Il trait `HasTenants` utilizza `belongsToManyX` per creare relazioni cross-database tra User (app_user) e Customer (app_data).
 
 ## Analisi del Trait HasTenants
 
@@ -16,16 +16,16 @@ return $this->belongsToManyX($tenant_class);
 
 ### Flusso di Esecuzione
 1. `User::tenants()` chiama `belongsToManyX(Customer::class)`
-2. `belongsToManyX` rileva che User è in `Quaeris_user` e Customer è in `Quaeris_data`
-3. Cerca la tabella pivot `CustomerUser` nel database `Quaeris_data`
-4. Aggiunge il prefisso database: `Quaeris_data.customer_user`
+2. `belongsToManyX` rileva che User è in `app_user` e Customer è in `app_data`
+3. Cerca la tabella pivot `CustomerUser` nel database `app_data`
+4. Aggiunge il prefisso database: `app_data.customer_user`
 5. SQLite non riconosce questa sintassi e fallisce
 
 ## Architettura Multi-Tenant
 
 ### Separazione Database
-- **User Database**: `Quaeris_user` - Gestione utenti e autenticazione
-- **Tenant Databases**: `Quaeris_data` - Dati specifici per customer/tenant
+- **User Database**: `app_user` - Gestione utenti e autenticazione
+- **Tenant Databases**: `app_data` - Dati specifici per customer/tenant
 - **Pivot Tables**: Nel database del tenant per isolamento dati
 
 ### Filosofia Laraxot
@@ -56,7 +56,7 @@ Sostituire `belongsToManyX` con relazioni `belongsToMany` esplicite per cross-da
 
 ### Moduli Affetti
 - **User Module**: Trait HasTenants
-- **Quaeris Module**: Customer-User relationships
+- **ExternalProject Module**: Customer-User relationships
 - **Altri Moduli**: Qualsiasi relazione cross-database
 
 ### Funzionalità Compromesse
@@ -76,7 +76,7 @@ $tenants = $user->tenants; // Dovrebbe funzionare senza errori
 ### Test 2: Verifica Cross-Database Query
 ```php
 use Modules\User\Models\User;
-use Modules\Quaeris\Models\Customer;
+use Modules\ExternalProject\Models\Customer;
 $user = User::with('tenants')->find('0199690d-481a-7101-ac17-7518b3959314');
 // Verifica che la query sia corretta
 ```
@@ -119,7 +119,7 @@ echo 'HasTenants works! Count: ' . \$tenants->count();
 php artisan tinker --execute="
 use Modules\User\Models\User;
 \$user = User::find('0199690d-481a-7101-ac17-7518b3959314');
-\$tenants = \$user->getTenants(app('filament')->getPanel('Quaeris::admin'));
+\$tenants = \$user->getTenants(app('filament')->getPanel('ptvx::admin'));
 echo 'getTenants works! Count: ' . count(\$tenants); // ✅ Funziona
 "
 ```

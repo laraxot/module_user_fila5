@@ -102,6 +102,8 @@ Thumbs.db
 *.old2
 *.backup
 *.backup.*
+*.backup-*
+*.backup_*
 *.bak
 *.bakcup
 *.new
@@ -161,7 +163,6 @@ public_html
 lang/lang/
 _docs/
 _docs/
-docs/archive/
 
 # Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
 **/docs/archive/
@@ -175,4 +176,6 @@ docs/archive/
 *~head
 
 agentdb.rvf
+
+
 test-results/

@@ -9,7 +9,6 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
  * Modules\User\Models\SsoProvider.
@@ -67,9 +66,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class SsoProvider extends BaseModel
 {
-    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
-    use HasXotFactory;
-
     /**
      * The attributes that are mass assignable.
      *
@@ -92,9 +88,8 @@ class SsoProvider extends BaseModel
     ];
 
     /**
-     * Get all users associated with this SSO provider.
+     * @return HasMany<User, $this>
      */
-    /** @return HasMany<User, $this> */
     public function users(): HasMany
     {
         return $this->hasMany(User::class, 'sso_provider_id');
