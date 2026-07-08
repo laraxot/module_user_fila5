@@ -22,11 +22,13 @@ class Change extends Component
 {
     // use HasUserProperty;
 
+    /** @var array<int|string, mixed> */
     public array $teams = [];
 
     public XotData $xot;
 
-    public UserContract $user;
+    /** @var UserContract */
+    public $user;
 
     public function mount(): void
     {

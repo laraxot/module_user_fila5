@@ -14,8 +14,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Carbon;
-use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
@@ -26,23 +24,23 @@ use Webmozart\Assert\Assert;
 /**
  * Modules\User\Models\Role.
  *
- * @property int                                 $id
- * @property string                              $uuid
- * @property string|null                         $team_id
- * @property string                              $name
- * @property string                              $guard_name
- * @property string|null                         $display_name
- * @property string|null                         $description
- * @property Carbon|null                         $created_at
- * @property Carbon|null                         $updated_at
- * @property string|null                         $updated_by
- * @property string|null                         $created_by
- * @property Collection<int, Permission>         $permissions
- * @property int|null                            $permissions_count
- * @property Team|null                           $team
- * @property Collection<int, Model&UserContract> $users
- * @property int|null                            $users_count
- * @property PermissionRole|null                 $pivot
+ * @property int                                                        $id
+ * @property string                                                     $uuid
+ * @property string|null                                                $team_id
+ * @property string                                                     $name
+ * @property string                                                     $guard_name
+ * @property string|null                                                $display_name
+ * @property string|null                                                $description
+ * @property Carbon|null                                                $created_at
+ * @property Carbon|null                                                $updated_at
+ * @property string|null                                                $updated_by
+ * @property string|null                                                $created_by
+ * @property Collection<int, Permission>                                $permissions
+ * @property int|null                                                   $permissions_count
+ * @property Team|null                                                  $team
+ * @property Collection<int, Model&\Modules\Xot\Contracts\UserContract> $users
+ * @property int|null                                                   $users_count
+ * @property PermissionRole|null                                        $pivot
  *
  * @method static Builder|Role newModelQuery()
  * @method static Builder|Role newQuery()
@@ -59,12 +57,12 @@ use Webmozart\Assert\Assert;
  * @method static Builder|Role withoutPermission($permissions)
  * @method static Builder|Role whereDescription($value)
  * @method static Builder|Role whereDisplayName($value)
- * @method static static       firstOrCreate(array $attributes, array $values = [])
- * @method static static       updateOrCreate(array $attributes, array $values = [])
+ * @method static static       firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static       updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  *
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $deleter
- * @property ProfileContract|null $updater
+ * @property \Modules\Xot\Contracts\ProfileContract|null $creator
+ * @property \Modules\Xot\Contracts\ProfileContract|null $deleter
+ * @property \Modules\Xot\Contracts\ProfileContract|null $updater
  *
  * @method static \Modules\User\Database\Factories\RoleFactory factory($count = null, $state = [])
  * @method static Builder<static>|Role                         whereUuid($value)
@@ -73,6 +71,7 @@ use Webmozart\Assert\Assert;
  */
 class Role extends SpatieRole
 {
+    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
     use HasXotFactory;
     use RelationX;
     use Updater;
@@ -85,8 +84,10 @@ class Role extends SpatieRole
 
     final public const ROLE_USER = 3;
 
+    /** @var string */
     protected $connection = 'user';
 
+    /** @var string */
     protected $keyType = 'int';
 
     /** @var list<string> */
@@ -109,6 +110,8 @@ class Role extends SpatieRole
 
     /**
      * Get all of the teams the user belongs to.
+     *
+     * @return BelongsTo<Model, $this>
      */
     public function team(): BelongsTo
     {
@@ -121,6 +124,8 @@ class Role extends SpatieRole
 
     /**
      * A role may be given various permissions.
+     *
+     * @return BelongsToMany<Permission, $this>
      */
     public function permissions(): BelongsToMany
     {

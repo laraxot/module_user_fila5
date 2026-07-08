@@ -11,7 +11,7 @@ return [
         'github' => 'GitHub',
         'with_google' => 'Continua con Google',
         'with_github' => 'Continua con GitHub',
-        'or_continue_with' => 'oppure continua con email e password',
+        'or_continue_with' => 'oppure',
         'email' => 'Email',
         'email_placeholder' => 'esempio@email.com',
         'password' => 'Password',
@@ -48,12 +48,5 @@ return [
     'fields' => [
     ],
     'actions' => [
-    ],
-    'credentials_incorrect' => [
-        'key' => 'user::auth.credentials_incorrect',
-        'text' => 'Verifica i tuoi dati di accesso',
-        'description' => 'Messaggio di errore quando le credenziali sono errate',
-        'context' => 'login_form.credentials',
-        'placeholder' => '',
     ],
 ];

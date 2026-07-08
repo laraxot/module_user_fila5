@@ -6,7 +6,7 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 
 ### 1. Posizione del File
 ```
-/var/www/html/healthcare_app/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
+/var/www/html/Quaeris/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
 ```
 
 ### 2. Implementazione Corretta
@@ -99,6 +99,14 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 4. **Mantieni la logica** semplice e diretta
 
 ## Collegamenti Correlati
-- [Best Practices Folio](./routing_best_practices.md)
-- [Gestione Sessione](./session_management.md)
-- [Tema One Documentation](../../themes/one/docs/readme.md) 
+- [Best Practices Folio](./ROUTING_BEST_PRACTICES.md)
+- [Gestione Sessione](./SESSION_MANAGEMENT.md)
+- [Tema One Documentation](../../Themes/One/docs/README.md)
+
+---
+module: theme
+topic: logout_page_implementation
+canonical: ../../../Themes/docs/shared-components/logout_page_implementation.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout_page_implementation.md

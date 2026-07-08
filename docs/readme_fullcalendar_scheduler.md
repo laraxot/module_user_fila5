@@ -2,7 +2,7 @@
 
 ## 🎯 Obiettivo
 
-Questa documentazione è stata creata per risolvere i problemi comuni relativi alle licenze FullCalendar Scheduler nel progetto healthcare_app, basandosi sulla ricerca approfondita della documentazione ufficiale di FullCalendar e dei problemi noti nella community.
+Questa documentazione è stata creata per risolvere i problemi comuni relativi alle licenze FullCalendar Scheduler nel progetto Quaeris, basandosi sulla ricerca approfondita della documentazione ufficiale di FullCalendar e dei problemi noti nella community.
 
 ## 📚 Documenti Creati
 
@@ -11,7 +11,7 @@ Questa documentazione è stata creata per risolvere i problemi comuni relativi a
 - **400+ righe** di documentazione dettagliata
 - Copertura completa di tutti i problemi noti
 - Soluzioni specifiche per Laravel/Filament
-- Best practices per ambiente sanitario healthcare_app
+- Best practices per ambiente sanitario Quaeris
 
 ### 2. **Riferimento Rapido**
 📄 `fullcalendar-scheduler-quick-reference.md`
@@ -69,7 +69,7 @@ private function getFullCalendarPlugin(): FilamentFullCalendarPlugin
             'dayGrid', 'timeGrid', 'list', 'interaction',
             'resourceTimeline', 'resourceDayGrid', // Premium
         ],
-        // Configurazioni healthcare_app specifiche...
+// Configurazioni Quaeris specifiche...
     ]);
 }
 ```
@@ -96,7 +96,7 @@ FULLCALENDAR_CACHE_TTL=300
 FULLCALENDAR_MAX_EVENTS=100
 ```
 
-## 🏥 Specifiche healthcare_app
+## 🏥 Specifiche Quaeris
 
 ### Business Hours Sanitarie
 ```javascript
@@ -183,7 +183,7 @@ Log::info('FullCalendar configured', [
 ✅ **Configurazione incompleta** - Setup completo fornito
 ✅ **Bug versioning** - Soluzioni per v5.x e v6.x
 ✅ **Ambiente-specific** - Gestione produzione/sviluppo
-✅ **healthcare_app integration** - Configurazioni sanitarie specifiche
+✅ **Quaeris integration** - Configurazioni sanitarie specifiche
 
 ### Benefici
 - **Riduzione troubleshooting time** - Soluzioni immediate disponibili
@@ -209,12 +209,12 @@ Log::info('FullCalendar configured', [
 ### Quando Aggiornare
 - Nuove versioni FullCalendar con breaking changes
 - Nuovi bug noti nella community
-- Modifiche architettura healthcare_app
+- Modifiche architettura Quaeris
 - Nuovi requisiti sanitari/legali
 
 ### Come Aggiornare
 1. Verificare issue GitHub FullCalendar
-2. Testare soluzioni in ambiente healthcare_app
+2. Testare soluzioni in ambiente Quaeris
 3. Aggiornare documenti pertinenti
 4. Aggiornare questo README
 
@@ -224,5 +224,6 @@ Log::info('FullCalendar configured', [
 **Ultima modifica**: Gennaio 2025  
 **Versione FullCalendar**: v6.1.17  
 **Versione Filament**: v3.x  
-**Progetto**: Laraxot Multi-Tenant Healthcare Platform 
-**Progetto**: healthcare_app Multi-Tenant Healthcare Platform 
+**Progetto**: Quaeris Multi-Tenant Healthcare Platform
+
+See canonical documentation: ../../../Themes/docs/shared-components/readme_fullcalendar_scheduler.md

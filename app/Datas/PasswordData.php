@@ -12,6 +12,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\TextInput as FormsTextInput;
 use Illuminate\Validation\Rules\Password;
 use Modules\Tenant\Services\TenantService;
+use Modules\User\Traits\PasswordValidationRules;
 use Spatie\LaravelData\Data;
 
 /**
@@ -19,6 +20,7 @@ use Spatie\LaravelData\Data;
  */
 class PasswordData extends Data
 {
+    use PasswordValidationRules;
     private static ?self $instance = null;
 
     public function __construct(
@@ -161,7 +163,7 @@ class PasswordData extends Data
     /**
      * Get both password form components.
      *
-     * @return array<TextInput>
+     * @return array<int, TextInput>
      */
     public function getPasswordFormComponents(string $field_name): array
     {
@@ -177,6 +179,9 @@ class PasswordData extends Data
         ];
     }
 
+    /**
+     * @return array<string, FormsTextInput>
+     */
     public static function getFormSchema(): array
     {
         return [

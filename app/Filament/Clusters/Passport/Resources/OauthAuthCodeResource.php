@@ -4,17 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
-use Filament\Actions\Action;
-use Filament\Actions\DeleteAction;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
-use Filament\Resources\Pages\PageRegistration;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
-use Filament\Tables\Columns\IconColumn;
-use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Clusters\Passport;
@@ -69,38 +64,49 @@ class OauthAuthCodeResource extends XotBaseResource
     {
         return $table
             ->columns([
-                TextColumn::make('id')
+                \Filament\Tables\Columns\TextColumn::make('id')
                     ->searchable()
                     ->sortable()
                     ->copyable(),
 
-                TextColumn::make('user_id')
+                \Filament\Tables\Columns\TextColumn::make('user_id')
                     ->searchable()
                     ->sortable(),
 
-                TextColumn::make('client_id')
+                \Filament\Tables\Columns\TextColumn::make('client_id')
                     ->searchable()
                     ->sortable(),
 
-                TextColumn::make('scopes')
+                \Filament\Tables\Columns\TextColumn::make('scopes')
                     ->limit(30),
 
-                IconColumn::make('revoked')
+                \Filament\Tables\Columns\IconColumn::make('revoked')
                     ->boolean()
                     ->color(fn (bool $state): string => $state ? 'danger' : 'success'),
 
-                TextColumn::make('expires_at')
+                \Filament\Tables\Columns\TextColumn::make('expires_at')
                     ->dateTime()
                     ->sortable(),
             ])
+            ->filters([
+                \Filament\Tables\Filters\Filter::make('revoked')
+                    ->label(static::trans('filters.revoked'))
+                    ->query(fn (Builder $query) => $query->where('revoked', true)),
+                \Filament\Tables\Filters\Filter::make('expired')
+                    ->label(static::trans('filters.expired'))
+                    ->query(fn (Builder $query) => $query->where('expires_at', '<', now())),
+                \Filament\Tables\Filters\Filter::make('valid')
+                    ->label(static::trans('filters.valid'))
+                    ->query(fn (Builder $query) => $query->where('revoked', false)->where('expires_at', '>', now())),
+            ])
             ->recordActions([
-                Action::make('revoke')
+                \Filament\Actions\Action::make('revoke')
                     ->label(static::trans('actions.revoke.label'))
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
                     ->requiresConfirmation()
                     ->modalHeading(static::trans('actions.revoke.label'))
-                    ->action(function (mixed $record): void {
+                    ->action(function (mixed $record) {
                         if ($record instanceof OauthAuthCode) {
                             $record->revoked = true;
                             $record->save();
@@ -111,12 +117,12 @@ class OauthAuthCodeResource extends XotBaseResource
                         }
                     })
                     ->visible(fn (mixed $record) => $record instanceof OauthAuthCode && ! $record->revoked),
-                DeleteAction::make(),
+                \Filament\Actions\DeleteAction::make(),
             ]);
     }
 
     /**
-     * @return array<string, PageRegistration>
+     * @return array<string, \Filament\Resources\Pages\PageRegistration>
      */
     #[\Override]
     public static function getPages(): array

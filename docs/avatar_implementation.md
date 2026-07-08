@@ -1,6 +1,8 @@
 # Implementazione degli Avatar 
 
 ## Collegamenti correlati
+- [README modulo User](./README.md)
+- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
 - [README modulo User](./readme.md)
 - [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header_language_selector_with_flags.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
@@ -11,14 +13,14 @@ Questo documento descrive l'implementazione degli avatar utente , con particolar
 
 ## Struttura degli Avatar SVG
 
-Gli avatar SVG sono posizionati nella directory `/laravel/Modules/UI/resources/svg/avatars/` seguendo le convenzioni di healthcare_app per i componenti SVG. Sono stati creati quattro avatar predefiniti con design simpatici e colorati:
+Gli avatar SVG sono posizionati nella directory `/laravel/Modules/UI/resources/svg/avatars/` seguendo le convenzioni di Quaeris per i componenti SVG. Sono stati creati quattro avatar predefiniti con design simpatici e colorati:
 
 1. **default-1.svg**: Avatar con sfondo viola e silhouette semplice
 2. **default-2.svg**: Avatar con sfondo verde e volto sorridente
 3. **default-3.svg**: Avatar con sfondo rosa e espressione vivace
 4. **default-4.svg**: Avatar con sfondo arancione e espressione sorpresa
 
-Questi avatar vengono registrati automaticamente come componenti Blade con il prefisso `ui-avatars` grazie al sistema di registrazione delle icone di healthcare_app.
+Questi avatar vengono registrati automaticamente come componenti Blade con il prefisso `ui-avatars` grazie al sistema di registrazione delle icone di Quaeris.
 
 ## Componente Avatar
 

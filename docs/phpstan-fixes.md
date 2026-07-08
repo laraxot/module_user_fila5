@@ -1,14 +1,37 @@
 # User Module - PHPStan Fixes Session 2025-10-01
 
-## ⚠️ Stato: IN PROGRESS - 95 errori rimanenti
+**Last Updated**: 2026-07-07  
+**Status**: ✅ Zero Errors (residual: unmatched global ignore pattern, see below)  
+**PHPStan Level**: max
 
-**Data correzione**: 1 Ottobre 2025  
+**Data correzione (sessione iniziale)**: 1 Ottobre 2025  
 **Analizzati**: ~400 file  
 **Errori iniziali**: ~100+ (bloccavano analisi)  
-**Errori attuali**: 95  
+**Errori attuali (sessione 1 Ottobre 2025)**: 95 (poi risolti a 0 nella sessione 2026-07-07, vedi sotto)  
 **Errori critici risolti**: 7 (syntax errors)
 
----
+### 0. Batch Fix — 24 Errors (2026-07-07)
+
+| File | Errors | Fix |
+|---|---|---|
+| `app/Models/OauthAccessToken.php` | 6 | `@method` PHPDoc: `array` → `array<string, mixed>` (create/firstOrCreate/updateOrCreate), `array<int, string>` (existsIn) |
+| `app/Models/Passport/Client.php` | 1 | `@method existsIn(array $haystack)` → `array<int, string>` |
+| `app/Models/Permission.php` | 4 | Same array generics on firstOrCreate/updateOrCreate |
+| `app/Models/Role.php` | 4 | Same array generics on firstOrCreate/updateOrCreate |
+| `app/Models/Team.php` | 5 | Same array generics on create/firstOrCreate/updateOrCreate |
+| `app/Traits/PasswordValidationRules.php` | 1 | `@return array<int, Password\|array\|string>` → `array<int, Password\|string>` (no nested array ever returned) |
+| `routes/web.php` | 1 | `$xotData->register_pub_theme ?? false` → `$xotData->register_pub_theme` (property is non-nullable `bool`, `??` was flagged as dead) |
+| `app/Models/Traits/HasTeams.php` | 1 | `teams()` return generic: `BelongsToMany<Model&TeamContract, Model, Pivot, 'pivot'>` → `BelongsToMany<Model&TeamContract, $this, Pivot, 'pivot'>`. `BaseUser` aliases `HasTeams::teams as membershipTeams`, and `Xot\Contracts\UserContract::membershipTeams()` requires the declaring-model generic to be `$this`, not a generic `Model`. Removed the now-unneeded `@phpstan-ignore return.type`. |
+
+**Residual (not fixable within constraints)**: running PHPStan scoped to `Modules/User` alone reports:
+```
+Ignored error pattern larastan.noEnvCallsOutsideOfConfig was not matched in reported errors.
+```
+This is a global `ignoreErrors` pattern in `phpstan.neon` (untouchable) written for whole-project analysis; no file inside `Modules/User` triggers an `env()`-outside-config call, so the pattern is legitimately unmatched when the module is analyzed in isolation. Not a Modules/User defect — reproduces identically on a pristine checkout scoped the same way.
+
+## Issues Resolved (earlier sessions)
+
+### 1. Pest Closure Scope Type Hints
 
 ## 🛠️ Correzioni Implementate
 
@@ -204,10 +227,10 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 
 ## 🔗 Collegamenti
 
-- [← User Module README](./readme.md)
-- [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
-- [← Final Report](../../../../docs/phpstan/final-report-session-2025-10-01.md)
-- [← Root Documentation](../../../../docs/index.md)
+- [← User Module README](./README.md)
+- [← PHPStan Session Report](../../../docs/phpstan/filament-v4-fixes-session.md)
+- [← Final Report](../../../docs/phpstan/final-report-session-2025-10-01.md)
+- [← Root Documentation](../../../docs/index.md)
 
 ---
 

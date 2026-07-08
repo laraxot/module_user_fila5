@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantUserResource\Pages;
 
-use Modules\User\Filament\Resources\TenantUserResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 
 /**
@@ -12,5 +11,5 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
  */
 class EditTenantUser extends XotBaseEditRecord
 {
-    protected static string $resource = TenantUserResource::class;
+    protected static string $resource = \Modules\User\Filament\Resources\TenantUserResource::class;
 }

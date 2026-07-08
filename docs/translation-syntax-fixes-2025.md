@@ -1,14 +1,7 @@
-# translation-syntax-fixes-2025 - User
+---
+module: theme
+topic: translation-syntax-fixes-2025
+canonical: ../../../Themes/docs/shared-components/translation-syntax-fixes-2025.md
+---
 
-## Overview
-
-Documentazione per translation-syntax-fixes-2025 nel modulo User.
-
-## Dettagli
-
-[Da completare]
-
-## Collegamenti
-
-- [Modulo Principale](../README.md)
-
+See canonical documentation: ../../../Themes/docs/shared-components/translation-syntax-fixes-2025.md

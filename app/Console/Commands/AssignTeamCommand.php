@@ -5,24 +5,28 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Collection;
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\BaseUser;
 use Modules\Xot\Datas\XotData;
+use Symfony\Component\Console\Input\InputOption;
 use Webmozart\Assert\Assert;
 
 class AssignTeamCommand extends Command
 {
     /**
      * The name and signature of the console command.
+     *
+     * @var string
      */
     protected $name = 'user:assign-team';
 
     /**
      * The console command description.
+     *
+     * @var string
      */
     protected $description = 'Assign a team to user';
 
@@ -37,13 +41,12 @@ class AssignTeamCommand extends Command
     {
         $xot = XotData::make();
         $email = text('email ?');
-        $user_class = $xot->getUserClass();
-        /** @var UserContract */
         $user = XotData::make()->getUserByEmail($email);
+        Assert::isInstanceOf($user, BaseUser::class);
 
         $teamClass = $xot->getTeamClass();
 
-        /** @var array<int|string, string>|Collection<int|string, string> */
+        /** @var array<int|string, string> $opts */
         $opts = $teamClass::pluck('name', 'id')->toArray();
 
         $rows = multiselect(
@@ -58,7 +61,7 @@ class AssignTeamCommand extends Command
             // }
         );
 
-        $user->teams()->sync($rows);
+        $user->membershipTeams()->sync($rows);
         /*
          * foreach ($rows as $row) {
          * $role = Role::firstOrCreate(['name' => $row]);
@@ -67,7 +70,7 @@ class AssignTeamCommand extends Command
          */
         $this->info('Teams :'.implode(', ', $rows).' assigned to '.$email);
 
-        $rows = $user->teams()->get()->toArray();
+        $rows = $user->membershipTeams()->get()->toArray();
 
         if (\count($rows) > 0) {
             Assert::isArray($rows[0]);

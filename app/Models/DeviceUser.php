@@ -51,8 +51,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
- * @mixin IdeHelperDeviceUser
- *
  * @property ProfileContract|null $deleter
  *
  * @method static \Modules\User\Database\Factories\DeviceUserFactory factory($count = null, $state = [])
@@ -61,6 +59,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class DeviceUser extends BasePivot
 {
+    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
     use HasXotFactory;
 
     /** @var list<string> */
@@ -75,7 +74,7 @@ class DeviceUser extends BasePivot
     ];
 
     /**
-     * old_return BelongsTo<Device, DeviceUser>.
+     * @return BelongsTo<Device, $this>
      */
     public function device(): BelongsTo
     {
@@ -83,22 +82,22 @@ class DeviceUser extends BasePivot
     }
 
     /**
-     * old_return BelongsTo<Model&UserContract, DeviceUser>.
+     * @return BelongsTo<Model&UserContract, $this>
      */
     public function user(): BelongsTo
     {
-        /** @var class-string<Model> */
+        /** @var class-string<Model&UserContract> $userClass */
         $userClass = XotData::make()->getUserClass();
 
         return $this->belongsTo($userClass);
     }
 
     /**
-     * old_return BelongsTo<Model&ProfileContract, DeviceUser>.
+     * @return BelongsTo<Model&ProfileContract, $this>
      */
     public function profile(): BelongsTo
     {
-        /** @var class-string<Model> */
+        /** @var class-string<Model&ProfileContract> $profileClass */
         $profileClass = XotData::make()->getProfileClass();
 
         return $this->belongsTo($profileClass, 'user_id', 'user_id');

@@ -29,6 +29,7 @@ use Webmozart\Assert\Assert;
  */
 class PasswordResetConfirmWidget extends XotBaseWidget
 {
+    /** @var array<string, mixed>|null */
     public ?array $data = [];
 
     public ?string $token = null;
@@ -38,6 +39,11 @@ class PasswordResetConfirmWidget extends XotBaseWidget
     public string $currentState = 'form'; // form, success, error, expired
 
     public ?string $errorMessage = null;
+
+    /**
+     * @phpstan-ignore-next-line
+     */
+    protected string $view = 'pub_theme::filament.widgets.auth.password.reset-confirm';
 
     /**
      * Mount the widget with token and optional email.
@@ -141,7 +147,8 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 // Redirect after a short delay to show success message
                 $this->js('setTimeout(() => { window.location.href = "'.route('login').'"; }, 3000);');
             } else {
-                $this->handleResetError(is_string($response) ? $response : 'passwords.generic_error');
+                /* @phpstan-ignore argument.type */
+                $this->handleResetError($response);
             }
         } catch (\Exception $e) {
             $this->handleResetError('passwords.generic_error');

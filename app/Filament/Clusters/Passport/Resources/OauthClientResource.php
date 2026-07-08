@@ -4,13 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
+use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
-use Filament\Forms\Components\Field;
+use Filament\Actions\EditAction;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Component;
+use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Laravel\Passport\Passport as LaravelPassport;
 use Modules\User\Filament\Clusters\Passport;
@@ -18,7 +20,6 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Pages\
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Pages\EditOauthClient;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Pages\ListOauthClients;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Pages\ViewOauthClient;
-use Modules\User\Models\OauthClient;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Webmozart\Assert\Assert;
 
@@ -26,15 +27,13 @@ class OauthClientResource extends XotBaseResource
 {
     protected static ?string $cluster = Passport::class;
 
-    // use HasResourceFormComponents;
-
     /**
      * Get the form schema for the resource (XotBaseResource pattern).
      *
-     * @return array<string, Field>
+     * @return array<string, Component>
      */
     /**
-     * @return array<string, Field>
+     * @return array<string, Component>
      */
     public static function getFormSchema(): array
     {
@@ -64,12 +63,26 @@ class OauthClientResource extends XotBaseResource
                 TextColumn::make('name')
                     ->formatStateUsing(fn (string $state): string => Str::headline($state))
                     ->searchable(),
-                TextColumn::make('owner.name')
-                    ->searchable(),
+                TextColumn::make('user.name')
+                    ->searchable()
+                    ->label('Owner'),
+                IconColumn::make('personal_access_client')
+                    ->boolean()
+                    ->label('Personal'),
+                IconColumn::make('password_client')
+                    ->boolean()
+                    ->label('Password'),
+                IconColumn::make('revoked')
+                    ->boolean()
+                    ->label('Active'),
                 TextColumn::make('created_at')
                     ->dateTime(),
                 TextColumn::make('updated_at')
                     ->dateTime(),
+            ])
+            ->actions([
+                EditAction::make(),
+                DeleteAction::make(),
             ])
             ->toolbarActions([
                 DeleteBulkAction::make(),
@@ -79,21 +92,22 @@ class OauthClientResource extends XotBaseResource
     /**
      * Get the model class for the resource from Passport.
      *
-     * @return class-string<Model>
+     * @return class-string<\Illuminate\Database\Eloquent\Model>
      */
     public static function getModel(): string
     {
         $model = LaravelPassport::clientModel();
         if (! class_exists($model)) {
-            return OauthClient::class;
+            return \Modules\User\Models\OauthClient::class;
         }
 
-        Assert::subclassOf($model, Model::class);
+        Assert::subclassOf($model, \Illuminate\Database\Eloquent\Model::class);
 
-        /* @var class-string<Model> $model */
+        /* @var class-string<\Illuminate\Database\Eloquent\Model> $model */
         return $model;
     }
 
+    /** @return array<string, \Filament\Resources\Pages\PageRegistration> */
     public static function getPages(): array
     {
         return [
@@ -115,6 +129,7 @@ class OauthClientResource extends XotBaseResource
     /**
      * Get resource form components.
      */
+    /** @return array<string, Component> */
     protected static function getResourceFormComponents(): array
     {
         return [];

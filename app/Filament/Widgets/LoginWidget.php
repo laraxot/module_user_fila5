@@ -26,15 +26,19 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 class LoginWidget extends XotBaseWidget
 {
     /**
-     * Blade view del widget nel modulo User.
-     * IMPORTANTE: quando il widget viene usato con @livewire() direttamente nelle Blade,
-     * il path deve essere senza il namespace del modulo (senza "user::").
-     *
-     * @see \Modules\User\docs\WIDGETS_STRUCTURE.md - Sezione B
-     *
      * @var view-string
      */
-    protected string $view = 'pub_theme::filament.widgets.auth.login';
+
+    protected string $view;
+
+    public function __construct()
+    {
+        /** @var view-string $view */
+        $view = 'pub_theme::filament.widgets.auth.login';
+        $this->view = $view;
+
+        parent::__construct();
+    }
 
     /**
      * Inizializza il widget quando viene montato.
@@ -93,7 +97,7 @@ class LoginWidget extends XotBaseWidget
             $attempt_data = Arr::only($data, ['email', 'password']);
 
             if (! Auth::attempt($attempt_data, $remember)) {
-                throw ValidationException::withMessages(['email' => [__('user::messages.failed')]]);
+                throw ValidationException::withMessages(['email' => [__('user::messages.credentials_incorrect')]]);
             }
 
             session()->regenerate();
@@ -116,13 +120,12 @@ class LoginWidget extends XotBaseWidget
             // $this->form->callAfter();
 
             foreach ($e->errors() as $field => $messages) {
-                // PHPStan Level 10: Ensure messages is array of strings
+                // PHPStan Level 10: Ensure messages is array
                 if (! is_array($messages)) {
                     $messages = [$messages];
                 }
 
-                /* @var array<int, string> $messages */
-                $this->addError($field, implode(' ', array_map(static fn (mixed $v): string => (string) $v, $messages)));
+                $this->addError($field, implode(' ', array_map(static fn (mixed $message): string => (string) $message, $messages)));
             }
         } catch (\Exception $e) {
             report($e);

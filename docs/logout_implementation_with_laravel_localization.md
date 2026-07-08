@@ -1,11 +1,11 @@
-# Implementazione del Logout con LaravelLocalization 
+# Implementazione del Logout con LaravelLocalization
 
 ## Collegamenti correlati
-- [README modulo User](./readme.md)
-- [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
-- [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
+- [README modulo User](./README.md)
+- [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
+- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
-- [Regole Traduzioni](/laravel/modules/lang/docs/translation_keys_rules.md)
+- [Regole Traduzioni](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Panoramica
@@ -59,7 +59,7 @@ mount(function() {
 
 ## Utilizzo Corretto di LaravelLocalization
 
-Per garantire la compatibilità con il sistema di localizzazione di healthcare_app, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
+Per garantire la compatibilità con il sistema di localizzazione di SaluteOra, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
 
 ```php
 // ERRATO
@@ -71,7 +71,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 ```
 
-Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di healthcare_app per la gestione della localizzazione.
+Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di SaluteOra per la gestione della localizzazione.
 
 ## Template Blade con Componenti Filament
 
@@ -103,7 +103,7 @@ Il template Blade per il logout dovrebbe utilizzare i componenti Filament e most
 2. **Feedback Visivo**: L'utente riceve un feedback chiaro durante il processo di logout
 3. **Gestione Errori Robusta**: Gli errori vengono catturati e gestiti appropriatamente
 4. **Esperienza Utente Migliorata**: L'interfaccia è più intuitiva e reattiva
-5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di healthcare_app per la localizzazione
+5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di SaluteOra per la localizzazione
 
 ## Chiavi di Traduzione per il Logout
 
@@ -156,3 +156,11 @@ Queste chiavi devono essere definite nel file di traduzione `auth.php` per ogni 
 ## Conclusione
 
 Seguendo queste best practices, è possibile implementare un processo di logout robusto e user-friendly , che rispetta le convenzioni del progetto per la localizzazione e l'utilizzo dei componenti Filament.
+
+---
+module: theme
+topic: logout_implementation_with_laravel_localization
+canonical: ../../../Themes/docs/shared-components/logout_implementation_with_laravel_localization.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout_implementation_with_laravel_localization.md

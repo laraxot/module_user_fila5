@@ -8,10 +8,11 @@ use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Support\Facades\Auth;
+use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 /**
- * LoginWidget: widget login con form Filament e "vestito" demandato al template tema.
+ * LoginWidget: Widget di login conforme alle regole Windsurf/Xot.
  * - Estende XotBaseWidget
  * - Usa solo componenti Filament importati
  * - Validazione e sicurezza integrate
@@ -25,6 +26,9 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  */
 class LoginWidget extends XotBaseWidget
 {
+    /** Vista del widget (evita lookup da GetViewByClassAction che cerca login-widget). */
+    protected string $view = 'user::filament.widgets.auth.login';
+
     /**
      * @return array<string, Field>
      */
@@ -62,7 +66,10 @@ class LoginWidget extends XotBaseWidget
             redirect()->intended('/');
         }
 
-        $this->addError('data.email', __('user::login.actions.login.error'));
+        $userClass = XotData::make()->getUserClass();
+        $user = $userClass::where('email', $credentials['email'])->first();
+
+        $this->addError('data.email', __('auth.failed'));
         // } catch (ValidationException $e) {
         // dddx([
         //    'credentials' => $credentials,

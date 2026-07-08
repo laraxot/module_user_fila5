@@ -5,22 +5,28 @@ declare(strict_types=1);
 namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Modules\User\Models\OauthAccessToken;
 use Modules\User\Models\OauthClient;
+use Modules\User\Models\OauthToken;
 use Modules\User\Models\User;
 
 /**
- * OauthAccessToken Factory.
+ * OauthToken Factory.
  *
- * Factory for creating OauthAccessToken model instances for testing and seeding.
+ * Factory for creating OauthToken model instances for testing and seeding.
+ */
+/**
+ * @extends Factory<OauthToken>
  */
 class OauthAccessTokenFactory extends Factory
 {
-    protected $model = OauthAccessToken::class;
+    protected $model = OauthToken::class;
 
     /**
      * Define the model's default state.
      *
+     * @return array<string, mixed>
+     */
+    /**
      * @return array<string, mixed>
      */
     public function definition(): array

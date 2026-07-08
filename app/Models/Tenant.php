@@ -30,8 +30,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property EloquentCollection<int, User>               $users
  * @property int|null                                    $users_count
  *
- * @mixin IdeHelperTenant
- *
  * @property string               $id
  * @property string               $name
  * @property string|null          $slug

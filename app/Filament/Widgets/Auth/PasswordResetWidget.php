@@ -23,9 +23,15 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  */
 class PasswordResetWidget extends XotBaseWidget
 {
+    /** @var array<string, mixed>|null */
     public ?array $data = [];
 
     public bool $emailSent = false;
+
+    /**
+     * @phpstan-ignore-next-line
+     */
+    protected string $view = 'pub_theme::filament.widgets.auth.password.reset';
 
     /**
      * Get the form schema for password reset.

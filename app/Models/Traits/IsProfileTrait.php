@@ -50,13 +50,14 @@ trait IsProfileTrait
     /**
      * Relazione con l'utente a cui appartiene il profilo.
      *
-     * @return BelongsTo<Model&UserContract, $this>
+     * @return BelongsTo<Model&UserContract, Model>
      */
     public function user(): BelongsTo
     {
         /** @var class-string<Model&UserContract> $userClass */
         $userClass = XotData::make()->getUserClass();
 
+        // @phpstan-ignore return.type
         return $this->belongsTo($userClass);
     }
 
@@ -220,17 +221,18 @@ trait IsProfileTrait
     /**
      * Relazione con i dispositivi mobili associati al profilo.
      *
-     * @return BelongsToMany<Device, $this>
+     * @return BelongsToMany<Device, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
      */
     public function mobileDevices(): BelongsToMany
     {
+        // @phpstan-ignore return.type
         return $this->belongsToManyX(Device::class);
     }
 
     /**
      * Relazione con tutti i dispositivi associati al profilo.
      *
-     * @return BelongsToMany<Device, $this>
+     * @return BelongsToMany<Device, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
      */
     public function devices(): BelongsToMany
     {
@@ -244,6 +246,7 @@ trait IsProfileTrait
      */
     public function mobileDeviceUsers(): HasMany
     {
+        // @phpstan-ignore return.type
         return $this->hasMany(DeviceUser::class, 'profile_id')->where('type', 'mobile');
     }
 
@@ -254,6 +257,7 @@ trait IsProfileTrait
      */
     public function deviceUsers(): HasMany
     {
+        // @phpstan-ignore return.type
         return $this->hasMany(DeviceUser::class, 'profile_id');
     }
 
@@ -276,6 +280,8 @@ trait IsProfileTrait
     /**
      * Get the user's user_name.
      * Ottiene il nome utente dal modello utente collegato.
+     *
+     * @return Attribute<string|null, never>
      */
     protected function userName(): Attribute
     {
@@ -297,6 +303,8 @@ trait IsProfileTrait
     /**
      * Get the user's avatar URL.
      * Recupera l'URL dell'avatar dell'utente dalla MediaLibrary.
+     *
+     * @return Attribute<string, never>
      */
     protected function avatar(): Attribute
     {

@@ -33,6 +33,7 @@ class SocialLoginWidget extends XotBaseWidget
         return [];
     }
 
+    /** @return array<int, array{driver: string, label: mixed, icon: string, color: string}> */
     public function getProviders(): array
     {
         $providers = [];
@@ -40,7 +41,7 @@ class SocialLoginWidget extends XotBaseWidget
         if (config('services.google.client_id')) {
             $providers[] = [
                 'driver' => 'google',
-                'label' => __('user::auth.social.google'),
+                'label' => __('user::auth.login.google'),
                 'icon' => 'google',
                 'color' => '#4285F4',
             ];
@@ -49,7 +50,7 @@ class SocialLoginWidget extends XotBaseWidget
         if (config('services.microsoft.client_id')) {
             $providers[] = [
                 'driver' => 'microsoft',
-                'label' => __('user::auth.social.microsoft'),
+                'label' => __('user::auth.login.microsoft'),
                 'icon' => 'microsoft',
                 'color' => '#00A4EF',
             ];
@@ -58,7 +59,7 @@ class SocialLoginWidget extends XotBaseWidget
         if (config('services.github.client_id')) {
             $providers[] = [
                 'driver' => 'github',
-                'label' => __('user::auth.social.github'),
+                'label' => __('user::auth.login.github'),
                 'icon' => 'github',
                 'color' => '#24292F',
             ];

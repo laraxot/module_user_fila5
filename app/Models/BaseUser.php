@@ -11,6 +11,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -26,8 +27,12 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
+
+use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
+use Modules\User\Models\Traits\HasDevices;
 use Modules\User\Models\Traits\HasModules;
+use Modules\User\Models\Traits\HasSocialite;
 use Modules\User\Models\Traits\HasSpatiePermission;
 use Modules\User\Models\Traits\HasTeams;
 use Modules\Xot\Contracts\ProfileContract;
@@ -38,6 +43,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 use Parental\HasChildren;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
+use Filament\Models\Contracts\FilamentUser;
 
 /**
  * Base User Model.
@@ -61,8 +67,8 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @property ProfileContract|null                                      $profile
  * @property Collection<int, Role>                                     $roles
  * @property int|null                                                  $roles_count
- * @property Collection<int, Team>                                     $teams
- * @property int|null                                                  $teams_count
+ * @property Collection<int, Team>                                     $membershipTeams
+ * @property int|null                                                  $membership_teams_count
  * @property Collection<int, Tenant>                                   $tenants
  * @property int|null                                                  $tenants_count
  * @property Collection<int, OauthToken>                               $tokens
@@ -125,16 +131,24 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  *
  * @mixin \Eloquent
  */
-abstract class BaseUser extends Authenticatable implements HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
+
+abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
 {
     use HasApiTokens;
     use HasAuthenticationLogTrait;
     use HasChildren;
     use HasModules;
-    use HasSpatiePermission;
-    use HasTeams;
+
+    use HasSocialite;
+    use HasSpatiePermission, HasTeams {
+        HasSpatiePermission::teams insteadof HasTeams;
+        HasTeams::teams as membershipTeams;
+    }
     use HasUuids;
+
+    /** @use HasXotFactory<Factory<static>> */
     use HasXotFactory;
+
     use InteractsWithMedia;
     use Notifiable;
 
@@ -142,18 +156,25 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     use Traits\HasTenants;
     use XotTraits\RelationX;
 
+    /** @var bool */
     public $incrementing = false;
 
-    public ?Pivot $pivot = null;
+    /** @var Pivot|null */
+    public $pivot;
 
+    /** @var string */
     protected $connection = 'user';
 
+    /** @var string */
     protected $primaryKey = 'id';
 
+    /** @var string */
     protected $keyType = 'string';
 
-    protected string $childColumn = 'type';
+    /** @var string */
+    protected $childColumn = 'type';
 
+    /** @var list<string> */
     protected $fillable = [
         'id',
         // 'ente',
@@ -194,14 +215,17 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     /** @var array<string, class-string> */
     protected $childTypes = [];
 
+    /** @var array<string, mixed> */
     protected $attributes = [
         'is_active' => true,
     ];
 
     /**
      * Guard coerente con Spatie/Permission: deve essere 'web'.
+     *
+     * @var string
      */
-    protected string $guard_name = 'web';
+    protected $guard_name = 'web';
 
     public function __construct(array $attributes = [])
     {
@@ -225,12 +249,14 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return (string) ($this->getAttribute('provider') ?? config('auth.guards.api.provider', 'users'));
     }
 
+    /* 
     public function canAccessFilament(?Panel $panel = null): bool
     {
+         dddx($panel->getId());
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;
         return true;
     }
-
+    */ 
     /**
      * Get the user's name for Filament.
      */
@@ -252,22 +278,14 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return $fullName;
     }
 
+    /** @return HasOne<Model&ProfileContract, $this> */
     #[\Override]
     public function profile(): HasOne
     {
+        /** @var class-string<Model&ProfileContract> $profileClass */
         $profileClass = XotData::make()->getProfileClass();
-        if (class_exists($profileClass)) {
-            return $this->hasOne($profileClass);
-        }
 
-        // Try direct module class if XotData failed
-        $directClass = 'Modules\User\Models\Profile';
-        if (class_exists($directClass)) {
-            return $this->hasOne($directClass);
-        }
-
-        // Fallback: stay on current model if nothing found
-        return $this->hasOne(static::class, 'id', 'id')->whereRaw('1=0');
+        return $this->hasOne($profileClass);
     }
 
     /**
@@ -289,6 +307,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
 
     public function canAccessPanel(Panel $panel): bool
     {
+        
         // $panel->default('admin');
         if ('admin' !== $panel->getId()) {
             $role = $panel->getId();
@@ -313,12 +332,14 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
 
     public function detach(Model $model): void
     {
-        $this->teams()->detach($model);
+
+        $this->membershipTeams()->detach($model);
     }
 
     public function attach(Model $model): void
     {
-        $this->teams()->attach($model);
+
+        $this->membershipTeams()->attach($model);
     }
 
     public function treeLabel(): string
@@ -326,15 +347,16 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return (string) ($this->name ?? $this->email);
     }
 
+    /** @return Collection<int, Team> */
     public function treeSons(): Collection
     {
-        return $this->teams ?? new Collection();
+        return $this->membershipTeams ?? new Collection();
     }
 
     /**
      * Get the devices associated with the user.
      *
-     * @return BelongsToMany<Device, static>
+     * @return BelongsToMany<Device, $this>
      */
     public function devices(): BelongsToMany
     {
@@ -366,20 +388,22 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     /**
      * Get the entity's notifications.
      *
-     * @return MorphMany<Notification, $this>
+     * @return MorphMany<Notification, static|$this>
      */
     public function notifications(): MorphMany
     {
+        // @phpstan-ignore return.type
         return $this->morphMany(Notification::class, 'notifiable');
     }
 
     /**
      * Get the user's latest authentication log.
      *
-     * @return MorphOne<AuthenticationLog, $this>
+     * @return MorphOne<AuthenticationLog, static>
      */
     public function latestAuthentication(): MorphOne
     {
+        // @phpstan-ignore return.type
         return $this->morphOne(AuthenticationLog::class, 'authenticatable')->latestOfMany();
     }
 
@@ -479,22 +503,6 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return $this->morphMany(OauthClient::class, 'owner');
     }
 
-    /**
-     * Find the user instance for the given username.
-     */
-    public static function findForPassport(string $username): ?self
-    {
-        return static::where('email', $username)->first();
-    }
-
-    /**
-     * Validate the password of the user for the given password.
-     */
-    public function validateForPassportPasswordGrant(string $password): bool
-    {
-        return Hash::check($password, (string) $this->password);
-    }
-
     /** @return array<string, string> */
     protected function casts(): array
     {
@@ -516,5 +524,21 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
             'created_by' => 'string',
             'deleted_by' => 'string',
         ];
+    }
+
+    /**
+     * Find the user instance for the given username.
+     */
+    public static function findForPassport(string $username): ?self
+    {
+        return static::where('email', $username)->first();
+    }
+
+    /**
+     * Validate the password of the user for the given password.
+     */
+    public function validateForPassportPasswordGrant(string $password): bool
+    {
+        return Hash::check($password, (string) $this->password);
     }
 }

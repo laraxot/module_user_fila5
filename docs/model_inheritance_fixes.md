@@ -165,7 +165,7 @@ Illuminate\Database\Eloquent\Relations\MorphPivot
 Per verificare che non ci siano più modelli che estendono direttamente `Model`:
 
 ```bash
-cd /var/www/_bases/base_app_fila5_mono/laravel/Modules/User
+cd /var/www/_bases/base_Quaeris_fila5_mono/laravel/Modules/User
 grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|BasePivot\|BaseMorphPivot"
 ```
 
@@ -174,7 +174,7 @@ grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|Base
 Dopo le modifiche, eseguire:
 
 ```bash
-cd /var/www/_bases/base_app_fila5_mono/laravel/Modules/User
+cd /var/www/_bases/base_Quaeris_fila5_mono/laravel/Modules/User
 ./vendor/bin/phpstan analyse --memory-limit=2G
 ```
 
@@ -187,8 +187,16 @@ cd /var/www/_bases/base_app_fila5_mono/laravel/Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model_inheritance_analysis.md)
+- [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
+
+---
+module: theme
+topic: model_inheritance_fixes
+canonical: ../../../Themes/docs/shared-components/model_inheritance_fixes.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/model_inheritance_fixes.md

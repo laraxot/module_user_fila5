@@ -1,14 +1,7 @@
-# terms_and_conditions - User
+---
+module: theme
+topic: terms_and_conditions
+canonical: ../../../../../Themes/docs/shared-components/terms-and-conditions.md
+---
 
-## Overview
-
-Documentazione per terms_and_conditions nel modulo User.
-
-## Dettagli
-
-[Da completare]
-
-## Collegamenti
-
-- [Modulo Principale](../README.md)
-
+See canonical documentation: ../../../../../Themes/docs/shared-components/terms-and-conditions.md

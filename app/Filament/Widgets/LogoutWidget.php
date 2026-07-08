@@ -48,6 +48,15 @@ class LogoutWidget extends XotBaseWidget
     public bool $isLoggingOut = false;
 
     /**
+     * The view to render the widget.
+     *
+     * IMPORTANT: When using @livewire() directly in Blade templates,
+     * the path should be without the module namespace.
+     */
+    /** @phpstan-ignore-next-line property.defaultValue */
+    protected string $view = 'user::widgets.logout';
+
+    /**
      * Mount the widget and initialize the form.
      */
     public function mount(): void
@@ -66,8 +75,11 @@ class LogoutWidget extends XotBaseWidget
     #[\Override]
     public function getFormSchema(): array
     {
+        /** @var view-string $view */
+        $view = 'filament.widgets.auth.logout-message';
+
         return [
-            'message' => View::make('user::filament.widgets.auth.logout-message')->columnSpanFull(),
+            'message' => View::make($view)->columnSpanFull(),
         ];
     }
 

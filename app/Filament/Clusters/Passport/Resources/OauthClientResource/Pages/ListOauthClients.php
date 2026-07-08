@@ -32,7 +32,7 @@ class ListOauthClients extends XotBaseListRecords
                         ->required()
                         ->maxLength(255),
                 ])
-                ->action(function (array $data): void {
+                ->action(function (array $data) {
                     app(CreatePersonalAccessClientAction::class)->execute(
                         name: (string) $data['name'],
                         redirect: (string) config('app.url'),
@@ -58,7 +58,7 @@ class ListOauthClients extends XotBaseListRecords
                         ->required()
                         ->maxLength(255),
                 ])
-                ->action(function (array $data): void {
+                ->action(function (array $data) {
                     app(CreatePasswordClientAction::class)->execute(
                         name: (string) $data['name'],
                         redirect: (string) config('app.url'),
@@ -80,7 +80,7 @@ class ListOauthClients extends XotBaseListRecords
                         ->required()
                         ->maxLength(255),
                 ])
-                ->action(function (array $data): void {
+                ->action(function (array $data) {
                     app(CreateGenericClientAction::class)->execute(
                         name: (string) $data['name'],
                         redirect: (string) config('app.url'),

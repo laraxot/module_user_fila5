@@ -181,7 +181,7 @@ if (app()->environment('local') && empty($licenseKey)) {
 - [ ] Banner rosso rimosso
 - [ ] Funzionalità premium attive
 
-## 🚀 healthcare_app Specifico
+## 🚀 Quaeris Specifico
 
 ### Business Hours Sanitarie
 ```javascript

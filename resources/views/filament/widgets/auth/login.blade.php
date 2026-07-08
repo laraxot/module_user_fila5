@@ -11,7 +11,7 @@
         $hasGithub = (bool) config('services.github.client_id');
         $hasAnySocial = $hasGoogle || $hasMicrosoft || $hasGithub;
     @endphp
-    
+
     @if ($hasAnySocial)
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
         @if ($hasGoogle)
@@ -28,7 +28,7 @@
         <a href="{{ route('socialite.oauth.redirect', ['provider' => 'microsoft']) }}"
             class="flex items-center justify-center gap-3 py-2.5 px-4 bg-[#00A4EF] border border-[#00A4EF] rounded-xl hover:bg-[#0088cc] hover:border-[#0088cc] hover:shadow-sm transition-all duration-200 group focus:outline-none focus:ring-2 focus:ring-[#00A4EF]/30"
         >
-            <x-filament::icon icon="ui-brands.microsoft" class="w-5 h-5 flex-shrink-0 text-white" />
+            <x-filament::icon icon="ui-microsoft" class="w-5 h-5 flex-shrink-0 text-white" />
             <span class="font-medium text-white transition-colors">
                 {{ __('user::auth.social.microsoft') }}
             </span>
@@ -55,7 +55,7 @@
         </div>
         <div class="relative flex justify-center text-sm font-medium leading-6">
             <span class="bg-white px-4 text-gray-400 font-normal italic">
-                {{ __('user::auth.login.or_continue_with') }}
+                {{ __('user::auth.social.title') }}
             </span>
         </div>
     </div>
@@ -70,7 +70,7 @@
         @if (Route::has('password.request'))
             <div class="flex justify-end">
                 <a href="{{ route('password.request') }}" class="text-sm font-medium transition-colors duration-200" style="color: #1E5A96;">
-                    {{ __('user::auth.login.forgot_password') }}
+                    {{ __('user::auth.password_reset.back_to_login') }}
                 </a>
             </div>
         @endif
@@ -79,32 +79,20 @@
         <button
             type="submit"
             wire:loading.attr="disabled"
-            class="w-full py-3 px-5 rounded-xl font-semibold text-white disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 ease-in-out shadow-sm hover:shadow-md transform hover:scale-[1.02] active:scale-[1.00] flex justify-center items-center gap-2 group focus:outline-none focus:ring-4 focus:ring-[#1E5A96]/30"
-            style="background: url('/vendor/geo/img/btn/submit-button-bg.svg') center/cover/auto; background-size: 100%;"
-            onmouseover="this.style.transform='scale(1.03)';"
-            onmouseout="this.style.transform='scale(1.00)';"
+            class="w-full py-3 px-4 rounded-xl font-semibold text-white disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 ease-in-out shadow-sm hover:shadow-md transform hover:scale-[1.01] active:scale-[0.99] flex justify-center items-center gap-2 group focus:outline-none focus:ring-4 focus:ring-[#1E5A96]/30"
+            style="background: linear-gradient(135deg, #1E5A96 0%, #2D8659 100%);"
+            onmouseover="this.style.background='linear-gradient(135deg, #174a7a 0%, #246b48 100%)'"
+            onmouseout="this.style.background='linear-gradient(135deg, #1E5A96 0%, #2D8659 100%)'"
         >
             <span wire:loading wire:target="save" class="flex items-center gap-2 italic">
                 <x-filament::icon icon="heroicon-o-arrow-path" class="animate-spin h-5 w-5" aria-hidden="true" />
-                {{ __('user::auth.login.logging_in') }}
+                {{ __('user::auth.social.title') }}
             </span>
 
             <div wire:loading.remove wire:target="save" class="flex items-center gap-2">
-                <span>{{ __('user::auth.login.submit') }}</span>
+                <span>{{ __('user::login_widget.ui.login_button') }}</span>
                 <x-filament::icon icon="heroicon-o-arrow-right" class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
             </div>
         </button>
     </form>
-
-    <!-- Register CTA -->
-    @if (Route::has('register'))
-        <div class="text-center pt-4">
-            <p class="text-sm text-gray-500">
-                {{ __('user::auth.login.no_account') }}
-                <a href="{{ route('register') }}" class="font-semibold transition-colors duration-200 ml-1" style="color: #1E5A96;">
-                    {{ __('user::auth.login.create_account') }}
-                </a>
-            </p>
-        </div>
-    @endif
 </div>
