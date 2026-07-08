@@ -17,12 +17,12 @@ return new class extends XotBaseMigration {
             $table->string('uuid', 36)->nullable()->index();
             $table->string('email')->index();
             $table->string('token');
-            // $table->timestamp('created_at')->nullable();
-            $table->timestamps();
+            // ponytail: timestamps solo in tableUpdate via updateTimestamps() (regola XotBaseMigration)
         });
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+            $this->updateTimestamps($table);
             // if (! $this->hasColumn('email'))
             //    $table->string('email')->nullable();
             // }
