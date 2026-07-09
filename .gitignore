@@ -186,3 +186,4 @@ test-results/
 !audit-coverage/
 !audit-coverage/**
 docs/legacy
+tests/AuditCoverage
