@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
@@ -11,7 +10,6 @@ use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
-use Modules\User\Models\TeamUser;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
@@ -142,4 +140,3 @@ function teamMgmtBizCreateInvitation(Team $team, array $attributes = []): TeamIn
 
     return $fresh instanceof TeamInvitation ? $fresh : $invitation;
 }
-

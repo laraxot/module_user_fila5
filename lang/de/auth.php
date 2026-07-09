@@ -7,20 +7,20 @@ declare(strict_types=1);
 // Canon: Modules/User/docs/wiki — domain i18n only.
 // File: lang/de/auth.php
 return [
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
     'failed' => 'Diese Anmeldedaten stimmen nicht mit unseren Aufzeichnungen überein.',
     'password' => 'Das eingegebene Passwort ist nicht korrekt.',
     'throttle' => 'Zu viele Anmeldeversuche. Bitte versuchen Sie es in :seconds Sekunden erneut.',

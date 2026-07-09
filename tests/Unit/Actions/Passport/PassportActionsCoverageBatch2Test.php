@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Actions\Passport;
+
 // User Pest/PHPUnit — claude-audit documentation ratio.
 // User Pest/PHPUnit — claude-audit documentation ratio.
 // User Pest/PHPUnit — claude-audit documentation ratio.

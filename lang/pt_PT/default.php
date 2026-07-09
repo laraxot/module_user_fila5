@@ -7,15 +7,15 @@ declare(strict_types=1);
 // Canon: Modules/User/docs/wiki — domain i18n only.
 // File: lang/pt_PT/default.php
 return [
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
     'password_confirm' => [
         'heading' => 'Confirmar palavra-passe',
         'description' => 'Por favor, confirme a sua palavra-passe para completar esta acção.',

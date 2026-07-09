@@ -7,24 +7,24 @@ declare(strict_types=1);
 // Canon: Modules/User/docs/wiki — domain i18n only.
 // File: lang/it/auth.php
 return [
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
     'failed' => 'Credenziali non valide.',
     'password' => 'La password inserita non è corretta.',
     'throttle' => 'Troppi tentativi di accesso. Riprova fra :seconds secondi.',

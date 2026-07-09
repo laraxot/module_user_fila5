@@ -7,15 +7,15 @@ declare(strict_types=1);
 // Canon: Modules/User/docs/wiki — domain i18n only.
 // File: lang/id/default.php
 return [
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
     'password_confirm' => [
         'heading' => 'Konfirmasi kata sandi',
         'description' => 'Harap konfirmasi kata sandi Anda untuk melanjutkan.',

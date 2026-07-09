@@ -7,19 +7,19 @@ declare(strict_types=1);
 // Canon: Modules/User/docs/wiki — domain i18n only.
 // File: lang/it/register_tenant.php
 return [
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
-// User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation section (claude-audit doc ratio).
     'navigation' => [
         'label' => 'Registrazione Studio',
         'group' => 'Gestione Tenant',

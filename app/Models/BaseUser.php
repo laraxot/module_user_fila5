@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+use Filament\Models\Contracts\FilamentUser;
 use Filament\Models\Contracts\HasName;
 use Filament\Models\Contracts\HasTenants;
 use Filament\Panel;
@@ -24,14 +25,11 @@ use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
-
 use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Models\Traits\BaseUserUniqueNameAttribute;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
-use Modules\User\Models\Traits\HasDevices;
 use Modules\User\Models\Traits\HasModules;
 use Modules\User\Models\Traits\HasSocialite;
 use Modules\User\Models\Traits\HasSpatiePermission;
@@ -44,7 +42,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 use Parental\HasChildren;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
-use Filament\Models\Contracts\FilamentUser;
 
 /**
  * Base User Model.
@@ -132,7 +129,6 @@ use Filament\Models\Contracts\FilamentUser;
  *
  * @mixin \Eloquent
  */
-
 abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
 {
     use HasApiTokens;
@@ -251,14 +247,14 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         return (string) ($this->getAttribute('provider') ?? config('auth.guards.api.provider', 'users'));
     }
 
-    /* 
+    /*
     public function canAccessFilament(?Panel $panel = null): bool
     {
          dddx($panel->getId());
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;
         return true;
     }
-    */ 
+    */
     /**
      * Get the user's name for Filament.
      */
@@ -309,7 +305,6 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function canAccessPanel(Panel $panel): bool
     {
-        
         // $panel->default('admin');
         if ('admin' !== $panel->getId()) {
             $role = $panel->getId();
@@ -334,13 +329,11 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function detach(Model $model): void
     {
-
         $this->membershipTeams()->detach($model);
     }
 
     public function attach(Model $model): void
     {
-
         $this->membershipTeams()->attach($model);
     }
 

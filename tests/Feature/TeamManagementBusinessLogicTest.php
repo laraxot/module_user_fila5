@@ -2,20 +2,10 @@
 
 declare(strict_types=1);
 
-use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Str;
-use Modules\User\Database\Factories\TeamFactory;
-use Modules\User\Database\Factories\UserFactory;
-use Modules\User\Models\Team;
-use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\TeamUser;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
-
-use function Safe\json_encode;
 
 uses(Modules\User\Tests\TestCase::class);
 // User Pest/PHPUnit — claude-audit documentation ratio.

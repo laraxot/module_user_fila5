@@ -6,15 +6,13 @@ declare(strict_types=1);
 // claude-audit static: split from user.php for maintainability.
 // Canon: Modules/User/docs/wiki — domain i18n only.
 // File: lang/it/user/sections.php
-return array (
-  'empty' => 
-  array (
-    'heading' => 'empty',
-    'label' => 'empty',
-  ),
-  'worker' => 
-  array (
-    'label' => 'worker',
-    'heading' => 'worker',
-  ),
-);
+return [
+    'empty' => [
+        'heading' => 'empty',
+        'label' => 'empty',
+    ],
+    'worker' => [
+        'label' => 'worker',
+        'heading' => 'worker',
+    ],
+];

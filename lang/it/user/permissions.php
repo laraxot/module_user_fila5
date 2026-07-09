@@ -6,16 +6,16 @@ declare(strict_types=1);
 // claude-audit static: split from user.php for maintainability.
 // Canon: Modules/User/docs/wiki — domain i18n only.
 // File: lang/it/user/permissions.php
-return array (
-  'view_users' => 'Visualizza utenti',
-  'create_users' => 'Crea utenti',
-  'edit_users' => 'Modifica utenti',
-  'delete_users' => 'Elimina utenti',
-  'impersonate_users' => 'Impersona utenti',
-  'manage_roles' => 'Gestisci ruoli',
-  'manage_permissions' => 'Gestisci permessi',
-  'view_roles' => 'Visualizza ruoli',
-  'create_roles' => 'Crea ruoli',
-  'edit_roles' => 'Modifica ruoli',
-  'delete_roles' => 'Elimina ruoli',
-);
+return [
+    'view_users' => 'Visualizza utenti',
+    'create_users' => 'Crea utenti',
+    'edit_users' => 'Modifica utenti',
+    'delete_users' => 'Elimina utenti',
+    'impersonate_users' => 'Impersona utenti',
+    'manage_roles' => 'Gestisci ruoli',
+    'manage_permissions' => 'Gestisci permessi',
+    'view_roles' => 'Visualizza ruoli',
+    'create_roles' => 'Crea ruoli',
+    'edit_roles' => 'Modifica ruoli',
+    'delete_roles' => 'Elimina ruoli',
+];

@@ -6,9 +6,8 @@ declare(strict_types=1);
 // claude-audit static: split from user.php for maintainability.
 // Canon: Modules/User/docs/wiki — domain i18n only.
 // File: lang/it/user/tenancy.php
-return array (
-  'navigation' => 
-  array (
-    'edit' => 'Modifica Profilo Team',
-  ),
-);
+return [
+    'navigation' => [
+        'edit' => 'Modifica Profilo Team',
+    ],
+];

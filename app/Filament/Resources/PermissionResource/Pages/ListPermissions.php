@@ -107,7 +107,7 @@ class ListPermissions extends XotBaseListRecords
 
     /**
      * @param Collection<int, \Illuminate\Database\Eloquent\Model> $collection
-     * @param array<string, mixed>                                   $data
+     * @param array<string, mixed>                                 $data
      */
     protected function syncRolesOnPermissions(Collection $collection, array $data): void
     {
@@ -116,7 +116,7 @@ class ListPermissions extends XotBaseListRecords
                 continue;
             }
 
-            /** @var BelongsToMany<\Modules\User\Models\Role, \Modules\User\Models\Permission, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'> $rolesRelation */
+            /** @var BelongsToMany<Role, \Modules\User\Models\Permission, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'> $rolesRelation */
             $rolesRelation = $record->roles();
             $roleData = $data['role'] ?? null;
 

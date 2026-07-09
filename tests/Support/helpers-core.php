@@ -3,20 +3,12 @@
 declare(strict_types=1);
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
-use Mockery\MockInterface;
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Database\Factories\UserFactory;
-use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
-use PragmaRX\Google2FA\Google2FA;
-
-use function Safe\glob;
-use function Safe\json_decode;
-use function Safe\json_encode;
 
 /**
  * @param array<string, mixed> $attributes

@@ -6,8 +6,8 @@ declare(strict_types=1);
 // claude-audit static: split from user.php for maintainability.
 // Canon: Modules/User/docs/wiki — domain i18n only.
 // File: lang/it/user/model.php
-return array (
-  'label' => 'Utente',
-  'plural' => 'Utenti',
-  'description' => 'Gestione degli utenti del sistema',
-);
+return [
+    'label' => 'Utente',
+    'plural' => 'Utenti',
+    'description' => 'Gestione degli utenti del sistema',
+];

@@ -7,8 +7,8 @@ declare(strict_types=1);
 // Canon: Modules/User/docs/wiki — domain i18n only.
 // File: lang/it/register_widget.php
 return [
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
     'navigation' => [
         'label' => 'Registrazione',
         'plural_label' => 'Registrazione',

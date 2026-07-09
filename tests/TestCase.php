@@ -7,8 +7,6 @@ namespace Modules\User\Tests;
 use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Filament\Panel;
-use Filament\Schemas\Components\Component;
-use Filament\Schemas\Components\Section;
 use Filament\Widgets\Widget;
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Application;
@@ -17,14 +15,11 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Str;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
 use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Models\Device;
-use Modules\User\Models\OauthClient;
 use Modules\User\Models\Team;
-use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\Tenant;
 use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
@@ -33,8 +28,6 @@ use Modules\User\Tests\Concerns\UserTestCaseOAuthTeamConcern;
 use Modules\Xot\Tests\XotBaseTestCase;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
-
-use function Safe\json_encode;
 
 /**
  * Base test case for User module.
@@ -399,4 +392,3 @@ abstract class TestCase extends XotBaseTestCase
         }
     }
 }
-

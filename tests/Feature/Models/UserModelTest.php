@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Models;
+
 // User Pest/PHPUnit — claude-audit documentation ratio.
 // User Pest/PHPUnit — claude-audit documentation ratio.
 // User Pest/PHPUnit — claude-audit documentation ratio.

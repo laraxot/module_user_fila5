@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite\Utils;
+
 // User — domain PHP (claude-audit documentation ratio).
 // User — domain PHP (claude-audit documentation ratio).
 // User — domain PHP (claude-audit documentation ratio).

@@ -22,71 +22,53 @@ final class ProfileEditVoltComponent extends Component
 {
     /**
      * Current user's first name.
-     *
-     * @var string
      */
     #[Validate('required|string|max:100')]
     public string $first_name = '';
 
     /**
      * Current user's last name.
-     *
-     * @var string
      */
     #[Validate('required|string|max:100')]
     public string $last_name = '';
 
     /**
      * Current user's email address.
-     *
-     * @var string
      */
     #[Validate('required|email|max:255')]
     public string $email = '';
 
     /**
      * User ID (locked to prevent tampering).
-     *
-     * @var string
      */
     #[Locked]
     public string $user_id = '';
 
     /**
      * Current password for verification.
-     *
-     * @var string
      */
     #[Validate('required|current_password')]
     public string $current_password = '';
 
     /**
      * New password for password updates.
-     *
-     * @var string
      */
     #[Validate('required|min:8|confirmed')]
     public string $password = '';
 
     /**
      * Password confirmation.
-     *
-     * @var string
      */
     public string $password_confirmation = '';
 
     /**
      * Password for account deletion confirmation.
-     *
-     * @var string
      */
     #[Validate('required|current_password')]
     public string $delete_password = '';
 
     /**
      * Mount the component and initialize user data with type safety.
-     *
-     * @return void
      */
     public function mount(): void
     {
@@ -108,7 +90,7 @@ final class ProfileEditVoltComponent extends Component
             Assert::stringNotEmpty($this->user_id, 'User ID cannot be empty');
 
             // Validate email format
-            Assert::true(filter_var($this->email, FILTER_VALIDATE_EMAIL) !== false, 'User email must be valid');
+            Assert::true(false !== filter_var($this->email, FILTER_VALIDATE_EMAIL), 'User email must be valid');
         } catch (\Webmozart\Assert\InvalidArgumentException $e) {
             Log::error('Profile mount validation failed', [
                 'error' => $e->getMessage(),
@@ -134,7 +116,6 @@ final class ProfileEditVoltComponent extends Component
     /**
      * Update user profile information with comprehensive validation and error handling.
      *
-     * @return void
      * @throws \Illuminate\Validation\ValidationException
      */
     public function updateProfile(): void
@@ -169,7 +150,7 @@ final class ProfileEditVoltComponent extends Component
             }
 
             // Update user data with type casting
-            /** @var User $user */
+            /* @var User $user */
             $user->fill([
                 'first_name' => trim($validated['first_name']),
                 'last_name' => trim($validated['last_name']),
@@ -243,7 +224,7 @@ final class ProfileEditVoltComponent extends Component
                 'trace' => $e->getTraceAsString(),
             ]);
 
-            session()->flash('error', 'Profile update failed: ' . $e->getMessage());
+            session()->flash('error', 'Profile update failed: '.$e->getMessage());
         } catch (\Exception $e) {
             Log::error('Profile update failed with unexpected error', [
                 'error' => $e->getMessage(),
@@ -259,8 +240,6 @@ final class ProfileEditVoltComponent extends Component
 
     /**
      * Update user password with comprehensive security validation.
-     *
-     * @return void
      */
     public function updatePassword(): void
     {
@@ -334,7 +313,7 @@ final class ProfileEditVoltComponent extends Component
 
             // Clear password fields for security
             $this->reset(['current_password', 'password', 'password_confirmation']);
-            session()->flash('error', 'Password update failed: ' . $e->getMessage());
+            session()->flash('error', 'Password update failed: '.$e->getMessage());
         } catch (\Exception $e) {
             Log::error('Password update failed with unexpected error', [
                 'error' => $e->getMessage(),
@@ -352,8 +331,6 @@ final class ProfileEditVoltComponent extends Component
 
     /**
      * Delete user account with comprehensive security validation and cleanup.
-     *
-     * @return \Illuminate\Http\RedirectResponse
      */
     public function deleteAccount(): \Illuminate\Http\RedirectResponse
     {
@@ -421,7 +398,8 @@ final class ProfileEditVoltComponent extends Component
 
             // Clear password field for security
             $this->reset('delete_password');
-            session()->flash('error', 'Account deletion failed: ' . $e->getMessage());
+            session()->flash('error', 'Account deletion failed: '.$e->getMessage());
+
             return Redirect::back();
         } catch (\Exception $e) {
             Log::error('Account deletion failed with unexpected error', [
@@ -435,17 +413,16 @@ final class ProfileEditVoltComponent extends Component
             // Clear password field for security
             $this->reset('delete_password');
             session()->flash('error', 'An unexpected error occurred while deleting your account.');
+
             return Redirect::back();
         }
     }
 
     /**
      * Clear all password fields for security.
-     *
-     * @return void
      */
     public function clearPasswords(): void
     {
         $this->reset(['current_password', 'password', 'password_confirmation', 'delete_password']);
     }
-};
+}

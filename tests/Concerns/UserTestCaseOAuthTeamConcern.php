@@ -7,8 +7,6 @@ namespace Modules\User\Tests\Concerns;
 use Filament\Actions\Action;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
-use Illuminate\Console\Command;
-use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;

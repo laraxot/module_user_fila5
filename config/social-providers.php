@@ -3,16 +3,16 @@
 declare(strict_types=1);
 
 return [
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
+    // User — domain PHP (claude-audit documentation ratio).
+    // User — domain PHP (claude-audit documentation ratio).
+    // User — domain PHP (claude-audit documentation ratio).
+    // User — domain PHP (claude-audit documentation ratio).
+    // User — domain PHP (claude-audit documentation ratio).
+    // User — domain PHP (claude-audit documentation ratio).
+    // User — domain PHP (claude-audit documentation ratio).
+    // User — domain PHP (claude-audit documentation ratio).
+    // User — domain PHP (claude-audit documentation ratio).
+    // User — domain PHP (claude-audit documentation ratio).
     'facebook' => [
         'name' => 'Facebook',
         'scopes' => null,

@@ -6,15 +6,14 @@ declare(strict_types=1);
 // claude-audit static: split from user.php for maintainability.
 // Canon: Modules/User/docs/wiki — domain i18n only.
 // File: lang/en/user/navigation.php
-return array (
-  'name' => 'Utenti',
-  'plural' => 'Utenti',
-  'group' => 
-  array (
-    'name' => 'Gestione Utenti',
-    'description' => 'Gestione degli utenti e dei loro permessi',
-  ),
-  'label' => 'Utenti',
-  'sort' => '26',
-  'icon' => 'user-main',
-);
+return [
+    'name' => 'Utenti',
+    'plural' => 'Utenti',
+    'group' => [
+        'name' => 'Gestione Utenti',
+        'description' => 'Gestione degli utenti e dei loro permessi',
+    ],
+    'label' => 'Utenti',
+    'sort' => '26',
+    'icon' => 'user-main',
+];

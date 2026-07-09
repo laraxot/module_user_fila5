@@ -118,7 +118,7 @@ final readonly class UserNameFieldsResolver
      */
     private function getRawUserData(User $idpUser): array
     {
-        /** @var \ReflectionClass<\Laravel\Socialite\Contracts\User> $reflection */
+        /** @var \ReflectionClass<User> $reflection */
         $reflection = new \ReflectionClass($idpUser);
 
         if ($reflection->hasMethod('getRaw')) {
@@ -133,7 +133,7 @@ final readonly class UserNameFieldsResolver
     }
 
     /**
-     * @param \ReflectionClass<\Laravel\Socialite\Contracts\User> $reflection
+     * @param \ReflectionClass<User> $reflection
      *
      * @return array<string, mixed>
      */
@@ -147,7 +147,7 @@ final readonly class UserNameFieldsResolver
     }
 
     /**
-     * @param \ReflectionClass<\Laravel\Socialite\Contracts\User> $reflection
+     * @param \ReflectionClass<User> $reflection
      *
      * @return array<string, mixed>
      */
