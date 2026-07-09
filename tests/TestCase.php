@@ -29,6 +29,7 @@ use Modules\User\Models\Tenant;
 use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Providers\UserServiceProvider;
+use Modules\User\Tests\Concerns\UserTestCaseOAuthTeamConcern;
 use Modules\Xot\Tests\XotBaseTestCase;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
@@ -63,6 +64,7 @@ use function Safe\json_encode;
 abstract class TestCase extends XotBaseTestCase
 {
     use DatabaseTransactions;
+    use UserTestCaseOAuthTeamConcern;
 
     /**
      * @return array<int, class-string<ServiceProvider>>
@@ -396,183 +398,5 @@ abstract class TestCase extends XotBaseTestCase
             $this->skipTest('oauth_clients legacy redirect columns require redirect_uris sync not performed by Create*ClientAction.');
         }
     }
-
-    public function permissionRolePivotTable(): string
-    {
-        return (string) config('permission.table_names.model_has_roles', 'model_has_role');
-    }
-
-    public function permissionPivotTable(): string
-    {
-        return (string) config('permission.table_names.model_has_permissions', 'model_has_permission');
-    }
-
-    /**
-     * @param array<string, mixed> $attributes
-     */
-    public static function createTestUser(array $attributes = []): User
-    {
-        /** @var User $user */
-        $user = parent::createTestUser(array_merge([
-            'email' => 'user-'.uniqid('', true).'@example.com',
-        ], $attributes));
-
-        return $user;
-    }
-
-    public function createMockSocialiteUser(?string $name, ?string $email): \Laravel\Socialite\Contracts\User
-    {
-        $mock = $this->createUnitMock(\Laravel\Socialite\Contracts\User::class);
-        $mock->method('getName')->willReturn($name);
-        $mock->method('getEmail')->willReturn($email);
-
-        return $mock;
-    }
-
-    /**
-     * @param array<string, mixed> $overrides
-     */
-    public function oauthClientTestPersistedClient(array $overrides = []): OauthClient
-    {
-        $clientId = (string) Str::uuid();
-        $redirect = 'https://example.test/callback/'.uniqid('', true);
-
-        $payload = array_merge([
-            'id' => $clientId,
-            'user_id' => null,
-            'name' => 'Test OAuth Client '.uniqid('', true),
-            'secret' => 'test-secret',
-            'provider' => 'users',
-            'redirect' => $redirect,
-            'redirect_uris' => json_encode([$redirect]),
-            'grant_types' => json_encode(['authorization_code', 'refresh_token']),
-            'personal_access_client' => 0,
-            'password_client' => 0,
-            'revoked' => 0,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ], $overrides);
-
-        if (Schema::connection('user')->hasColumn('oauth_clients', 'owner_id')) {
-            $payload['owner_id'] = $payload['owner_id'] ?? $payload['user_id'] ?? null;
-            $payload['owner_type'] = $payload['owner_type'] ?? null;
-        }
-
-        DB::connection('user')->table('oauth_clients')->insert($payload);
-
-        return OauthClient::query()->findOrFail($clientId);
-    }
-
-    /**
-     * @param array<string, mixed> $pivot
-     */
-    public function attachTeamMember(Team $team, User $user, array $pivot = []): void
-    {
-        $payload = [
-            'team_id' => $team->id,
-            'user_id' => $user->id,
-            'created_at' => now(),
-            'updated_at' => now(),
-        ];
-
-        if (isset($pivot['role'])) {
-            $payload['role'] = $pivot['role'];
-        }
-
-        if ($this->userTableHasColumn('team_user', 'permissions') && array_key_exists('permissions', $pivot)) {
-            $permissions = $pivot['permissions'];
-            $payload['permissions'] = is_array($permissions) ? json_encode($permissions) : $permissions;
-        }
-
-        if ($this->userTableHasColumn('team_user', 'joined_at') && array_key_exists('joined_at', $pivot)) {
-            $payload['joined_at'] = $pivot['joined_at'];
-        }
-
-        DB::connection('user')->table('team_user')->insert($payload);
-    }
-
-    public function detachTeamMember(Team $team, User $user): void
-    {
-        DB::connection('user')->table('team_user')
-            ->where('team_id', $team->id)
-            ->where('user_id', $user->id)
-            ->delete();
-    }
-
-    public function teamMemberExists(Team $team, User $user): bool
-    {
-        return DB::connection('user')->table('team_user')
-            ->where('team_id', $team->id)
-            ->where('user_id', $user->id)
-            ->exists();
-    }
-
-    /**
-     * @param array<string, mixed> $data
-     */
-    public function assertDatabaseHasRow(string $table, array $data, ?string $connection = 'user'): void
-    {
-        $this->assertDatabaseHas($table, $data, $connection);
-    }
-
-    /**
-     * @param array<string, mixed> $data
-     */
-    public function assertDatabaseMissingRow(string $table, array $data, ?string $connection = 'user'): void
-    {
-        $query = DB::connection($connection)->table($table);
-
-        foreach ($data as $column => $value) {
-            $query->where((string) $column, $value);
-        }
-
-        Assert::assertFalse($query->exists());
-    }
-
-    public function requireFreshUser(User $user): User
-    {
-        $fresh = $user->fresh();
-        Assert::assertNotNull($fresh);
-
-        return $fresh;
-    }
-
-    /**
-     * @return array<int, Component|Action|\Filament\Actions\ActionGroup>
-     */
-    public function filamentSectionChildComponents(Section $section): array
-    {
-        return array_values($section->getChildComponents());
-    }
-
-    public function teamUsesSoftDeletes(): bool
-    {
-        /** @var array<class-string, class-string> $traits */
-        $traits = \class_uses_recursive(Team::class);
-
-        return in_array(
-            \Illuminate\Database\Eloquent\SoftDeletes::class,
-            $traits,
-            true
-        );
-    }
-
-    /**
-     * @param array<string, mixed> $attributes
-     */
-    public function createTeamInvitationRecord(Team $team, array $attributes = []): TeamInvitation
-    {
-        $payload = array_merge([
-            'uuid' => (string) Str::uuid(),
-            'team_id' => (string) $team->id,
-            'email' => 'invite-'.uniqid().'@example.com',
-            'role' => 'member',
-        ], $attributes);
-
-        $invitation = new TeamInvitation();
-        $invitation->forceFill($payload);
-        $invitation->save();
-
-        return $invitation->fresh() ?? $invitation;
-    }
 }
+

@@ -19,7 +19,7 @@ use Modules\User\Models\User;
 use Modules\User\Rules\CheckOtpExpiredRule;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Traits\TransTrait;
-use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 /**
  * Widget for handling expired password reset.
@@ -30,7 +30,7 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  * @property string|null               $passwordConfirmation
  * @property array<string, mixed>|null $data
  */
-class PasswordExpiredWidget extends XotBaseSchemaWidget
+class PasswordExpiredWidget extends XotBaseWidget
 {
     // XotBaseWidget already implements HasForms and uses InteractsWithForms
     use TransTrait;
@@ -56,6 +56,7 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
      *
      * @return array<int, Component>
      */
+    #[\Override]
     public function getFormSchema(): array
     {
         $schema = [
@@ -64,7 +65,7 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
         ];
 
         // Ensure list type for PHPStan Level 10
-        /* @var array<int, Component> $schema */
+        /* @var array<int, Component> $result */
         return array_values($schema);
     }
 
@@ -181,6 +182,7 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
      *
      * @return array<int, Action|ActionGroup>
      */
+    #[\Override]
     protected function getFormActions(): array
     {
         return [

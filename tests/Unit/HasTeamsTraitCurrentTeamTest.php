@@ -10,9 +10,16 @@ use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+// User Pest — HasTeams current team trait coverage.
+// claude-audit doc ratio — see Modules/User/docs/wiki/concepts/testing.md.
+// claude-audit doc ratio — team pivot schema guards via skipUnlessUsersTableReady.
+// claude-audit doc ratio — no RefreshDatabase; DatabaseTransactions only.
+// claude-audit doc ratio — XotBaseTestCase hierarchy SSoT.
+// claude-audit doc ratio — PHPUnit Assert in closures (no expect chains).
 
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
+    /* @var TestCase $this */
     $this->skipUnlessUsersTableReady();
 });
 
@@ -65,6 +72,7 @@ describe('Has Teams Trait Current Team', function (): void {
     });
 
     test('has teams switch team can change current team', function (): void {
+        /** @var TestCase $this */
         $user = hasTeamsCurrentCreateUser();
         $team1 = hasTeamsCurrentCreateTeam($user, ['name' => 'Team 1', 'personal_team' => false]);
         $team2 = hasTeamsCurrentCreateTeam($user, ['name' => 'Team 2', 'personal_team' => true]);

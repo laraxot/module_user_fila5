@@ -95,9 +95,7 @@ class Alignment extends XotBasePage
         $this->form->fill($data);
     }
 
-    /**
-     * @return array<Action>
-     */
+    /** @return array<int, \Filament\Actions\Action> */
     protected function getUpdateFormActions(): array
     {
         return [

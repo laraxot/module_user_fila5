@@ -43,12 +43,6 @@ class Dashboard extends Page
 - [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md)
 - [Regole Generali Xot](../../xot/docs/readme.md)
 - [Best Practices Filament](../../cms/docs/best-practices/filament.md)
-- [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md)
-- [Regole Generali Xot](../../Xot/project_docs/README.md)
-- [Best Practices Filament](../../Cms/project_docs/best-practices/filament.md)
-- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md)
-- [Regole Generali Xot](../../Xot/docs/README.md)
-- [Best Practices Filament](../../Cms/docs/best-practices/filament.md)
 # Regole per i Namespace Filament
 
 ## Regola 1: Namespace Modulare
@@ -113,9 +107,6 @@ class Dashboard extends Page
 ```
 
 ## Collegamenti
-- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md)
-- [Regole Generali Xot](../../Xot/docs/README.md)
-- [Best Practices Filament](../../Cms/docs/best-practices/filament.md)
 - [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md)
 - [Regole Generali Xot](../../xot/docs/readme.md)
 - [Best Practices Filament](../../cms/docs/best-practices/filament.md)

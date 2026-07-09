@@ -22,9 +22,8 @@ class GetDomainAllowListAction
 
     /**
      * Execute the action.
-     *
-     * @return array<int, string>
      */
+    /** @return array<int, string> */
     public function execute(): array
     {
         $res = config('socialite.domain_allowlist', []);

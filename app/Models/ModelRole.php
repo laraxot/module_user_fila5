@@ -40,6 +40,7 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+ *
  * @property ProfileContract|null $deleter
  *
  * @method static \Modules\User\Database\Factories\ModelRoleFactory factory($count = null, $state = [])
@@ -48,5 +49,6 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class ModelRole extends BaseMorphPivot
 {
+    /** @var string */
     protected $table = 'model_has_role';
 }

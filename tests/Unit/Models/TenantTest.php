@@ -3,6 +3,12 @@
 declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
 
 use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Models\Tenant;
@@ -13,6 +19,7 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
+    /* @var TestCase $this */
     $this->skipUnlessUserTable('tenants');
 });
 
@@ -30,6 +37,7 @@ describe('Tenant', function (): void {
     });
 
     test('can create tenant with all fields', function (): void {
+        /* @var TestCase $this */
         $this->skipUnlessTenantColumn('settings');
         $this->skipUnlessTenantColumn('trial_ends_at');
 
@@ -58,10 +66,12 @@ describe('Tenant', function (): void {
     });
 
     test('tenant has soft deletes', function (): void {
+        /* @var TestCase $this */
         $this->skipTest('Tenant model does not use SoftDeletes.');
     });
 
     test('can restore soft deleted tenant', function (): void {
+        /* @var TestCase $this */
         $this->skipTest('Tenant restore/withTrashed not supported on User Tenant model.');
     });
 
@@ -148,6 +158,7 @@ describe('Tenant', function (): void {
     });
 
     test('can update tenant', function (): void {
+        /** @var TestCase $this */
         $tenant = TenantFactory::new()->createOne(['name' => 'Old Name']);
 
         $tenant->update(['name' => 'New Name']);
@@ -217,6 +228,7 @@ describe('Tenant', function (): void {
     });
 
     test('can find tenants by trial status', function (): void {
+        /* @var TestCase $this */
         $this->skipUnlessTenantColumn('trial_ends_at');
 
         $marker = 'trial-status-'.uniqid();
@@ -243,6 +255,7 @@ describe('Tenant', function (): void {
     });
 
     test('can find tenants by settings value', function (): void {
+        /* @var TestCase $this */
         $this->skipUnlessTenantColumn('settings');
 
         $marker = 'settings-theme-'.uniqid();

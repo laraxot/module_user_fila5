@@ -13,16 +13,16 @@ use Modules\Tenant\Models\Traits\SushiToPhpArray;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
- * @property int|null $id
- * @property string|null $name
- * @property array<int, string>|null $scopes
+ * @property int|null             $id
+ * @property string|null          $name
+ * @property array<string, mixed>|null $scopes
  * @property array<string, mixed>|null $parameters
- * @property bool|null $stateless
- * @property bool|null $active
- * @property bool|null $socialite
- * @property string|null $svg
- * @property string|null $client_id
- * @property string|null $client_secret
+ * @property bool|null            $stateless
+ * @property bool|null            $active
+ * @property bool|null            $socialite
+ * @property string|null          $svg
+ * @property string|null          $client_id
+ * @property string|null          $client_secret
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
@@ -60,6 +60,7 @@ class SocialProvider extends BaseModel
 {
     use SushiToPhpArray;
 
+    /** @var bool */
     public $incrementing = false;
 
     /** @var list<string> */
@@ -112,9 +113,7 @@ class SocialProvider extends BaseModel
         'updated_by' => 'string',
     ];
 
-    /**
-     * @return array<int, array<string, mixed>>
-     */
+    /** @return array<int, array<string, mixed>> */
     public function getRows(): array
     {
         return $this->getSushiRows();

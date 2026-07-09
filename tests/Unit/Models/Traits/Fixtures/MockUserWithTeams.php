@@ -7,6 +7,7 @@ namespace Modules\User\Tests\Unit\Models\Traits\Fixtures;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamUser;
@@ -17,12 +18,12 @@ use Spatie\Permission\Contracts\Permission;
 use Spatie\Permission\Contracts\Role;
 
 /**
- * Stub model for HasTeams trait unit tests — satisfies PHPStan in-context analysis.
+ * Stub model for HasTeams trait unit tests; satisfies PHPStan in-context analysis.
  *
  * @property string                            $id
  * @property int|null                          $current_team_id
  * @property TeamContract|null                 $currentTeam
- * @property EloquentCollection<int, Team>     $teams
+ * @property EloquentCollection<int, Team>     $membershipTeams
  * @property EloquentCollection<int, Team>     $ownedTeams
  * @property EloquentCollection<int, TeamUser> $teamUsers
  * @property XotUserContract|null              $owner
@@ -56,7 +57,7 @@ class MockUserWithTeams extends Model
     }
 
     /**
-     * @param string|int|array<int, string>|Role|\BackedEnum $roles
+     * @param string|int|array|Role|\BackedEnum $roles
      */
     public function hasRole($roles, ?string $guard = null): bool
     {
@@ -64,10 +65,13 @@ class MockUserWithTeams extends Model
     }
 
     /**
-     * @return BelongsToMany<Team, $this>
+     * @return BelongsToMany<Model&TeamContract, Model, Pivot, 'pivot'>
      */
-    public function teams(): BelongsToMany
+    public function membershipTeams(): BelongsToMany
     {
-        return $this->belongsToManyX(Team::class);
+        /** @var BelongsToMany<Model&TeamContract, Model, Pivot, 'pivot'> $relation */
+        $relation = $this->belongsToManyX(Team::class);
+
+        return $relation;
     }
 }

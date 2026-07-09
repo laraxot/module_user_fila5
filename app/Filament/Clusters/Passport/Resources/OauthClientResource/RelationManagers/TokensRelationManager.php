@@ -7,7 +7,6 @@ namespace Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Filament\Notifications\Notification;
-use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
@@ -32,7 +31,7 @@ class TokensRelationManager extends XotBaseRelationManager
     protected static ?string $title = 'Token OAuth';
 
     /**
-     * @return array<string, Column>
+     * @return array<string, \Filament\Tables\Columns\Column>
      */
     #[\Override]
     public function getTableColumns(): array
@@ -119,7 +118,7 @@ class TokensRelationManager extends XotBaseRelationManager
                 ->icon('heroicon-o-x-circle')
                 ->color('danger')
                 ->requiresConfirmation()
-                ->action(function (OauthToken $record): void {
+                ->action(function (OauthToken $record) {
                     if (app(RevokeTokenAction::class)->execute($record)) {
                         Notification::make()
                             ->title('Token revocato')

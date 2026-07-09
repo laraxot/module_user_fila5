@@ -4,14 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
-use Filament\Actions\Action;
-use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Forms\Components\Select;
-use Filament\Resources\Pages\PageRegistration;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Filament\Tables;
@@ -111,7 +108,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Get the table actions for the resource.
      *
-     * @return array<string, Action>
+     * @return array<string, \Filament\Actions\Action>
      */
     public static function getTableActions(): array
     {
@@ -124,7 +121,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Get the table bulk actions for the resource.
      *
-     * @return array<string, Action|ActionGroup>
+     * @return array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
      */
     public static function getTableBulkActions(): array
     {
@@ -136,7 +133,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     }
 
     /**
-     * @return array<string, PageRegistration>
+     * @return array<string, \Filament\Resources\Pages\PageRegistration>
      */
     #[\Override]
     public static function getPages(): array

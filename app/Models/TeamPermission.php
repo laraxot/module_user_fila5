@@ -6,7 +6,6 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -27,14 +26,14 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|TeamPermission newQuery()
  * @method static Builder<static>|TeamPermission query()
  *
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $deleter
- * @property ProfileContract|null $updater
- * @property string|null          $name
- * @property string|null          $updated_by
- * @property string|null          $created_by
- * @property Carbon|null          $deleted_at
- * @property string|null          $deleted_by
+ * @property ProfileContract|null            $creator
+ * @property ProfileContract|null            $deleter
+ * @property ProfileContract|null            $updater
+ * @property string|null                     $name
+ * @property string|null                     $updated_by
+ * @property string|null                     $created_by
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @property string|null                     $deleted_by
  *
  * @method static \Modules\User\Database\Factories\TeamPermissionFactory factory($count = null, $state = [])
  * @method static Builder<static>|TeamPermission                         whereCreatedAt($value)
@@ -54,6 +53,8 @@ class TeamPermission extends BaseModel
 {
     /**
      * The database connection that should be used by the model.
+     *
+     * @var string
      */
     protected $connection = 'user';
 
@@ -69,6 +70,8 @@ class TeamPermission extends BaseModel
     ];
 
     /**
+     * Get the team that owns the permission.
+     *
      * @return BelongsTo<Team, $this>
      */
     public function team(): BelongsTo
@@ -77,6 +80,8 @@ class TeamPermission extends BaseModel
     }
 
     /**
+     * Get the user that owns the permission.
+     *
      * @return BelongsTo<User, $this>
      */
     public function user(): BelongsTo

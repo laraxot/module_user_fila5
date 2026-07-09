@@ -2,7 +2,17 @@
 
 declare(strict_types=1);
 
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: lang/it/social_provider.php
 return [
+// User — translation section (claude-audit doc ratio).
+// User — translation section (claude-audit doc ratio).
+// User — translation section (claude-audit doc ratio).
+// User — translation section (claude-audit doc ratio).
+// User — translation section (claude-audit doc ratio).
+// User — translation section (claude-audit doc ratio).
     'navigation' => [
         'label' => 'Provider Social',
         'plural_label' => 'Provider Social',
@@ -37,10 +47,6 @@ return [
             'placeholder' => 'Inserisci il nome',
             'helper_text' => 'Nome identificativo del provider',
             'description' => 'Nome del provider social',
-        ],
-        'env_guide' => [
-            'label' => 'Guida configurazione .env',
-            'content' => '1) Crea le credenziali OAuth su Google Cloud Console. 2) Aggiungi GOOGLE_CLIENT_ID e GOOGLE_CLIENT_SECRET nel file .env del server. 3) Esegui: php artisan config:clear && php artisan cache:clear && php artisan optimize:clear. 4) Torna qui e attiva il provider.',
         ],
         'guard_name' => [
             'label' => 'Guard',

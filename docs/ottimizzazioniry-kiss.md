@@ -536,3 +536,4 @@ class UserResource extends XotBaseResource
 - [Modulo Xot](../xot/docs/ottimizzazioni-dry-kiss.md)
 
 ---
+

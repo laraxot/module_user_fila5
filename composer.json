@@ -43,10 +43,7 @@
   "autoload-dev": {
     "psr-4": {
       "Modules\\User\\Tests\\": "tests/"
-    },
-    "files": [
-      "tests/Support/helpers.php"
-    ]
+    }
   },
   "require": {
     "flowframe/laravel-trend": "*",
@@ -56,10 +53,7 @@
     "spatie/laravel-personal-data-export": "*",
     "socialiteproviders/microsoft": "^4.8"
   },
-  "require-dev": {
-    "phpstan/phpstan": "^2.1",
-    "phpstan/phpstan-deprecation-rules": "^2.0"
-  },
+  "require-dev": {},
   "repositories": [
     {
       "type": "path",

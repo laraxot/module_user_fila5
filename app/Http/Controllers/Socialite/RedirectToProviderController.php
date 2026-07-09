@@ -32,7 +32,6 @@ class RedirectToProviderController extends Controller
         if (! is_object($socialiteProvider)) {
             throw new \Exception('wip');
         }
-
         if (! method_exists($socialiteProvider, 'scopes') || ! method_exists($socialiteProvider, 'redirect')) {
             throw new \Exception('scopes/redirect methods not available');
         }

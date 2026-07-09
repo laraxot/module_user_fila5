@@ -6,7 +6,6 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
@@ -133,8 +132,8 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property string|null $campground_short
  *
  * @method static Builder<static>|Profile byUuid(string $uuid)
- * @method static Builder<static>|Profile childrenWith(list<string> $relations)
- * @method static Builder<static>|Profile childrenWithCount(list<string> $relations)
+ * @method static Builder<static>|Profile childrenWith(array<int|string, string> $relations)
+ * @method static Builder<static>|Profile childrenWithCount(array<int|string, string> $relations)
  * @method static Builder<static>|Profile whereAddress($value)
  * @method static Builder<static>|Profile whereAdministrativeAreaLevel1($value)
  * @method static Builder<static>|Profile whereAdministrativeAreaLevel1Short($value)
@@ -194,25 +193,19 @@ class Profile extends BaseProfile implements HasMedia
     use InteractsWithMedia;
 
     /**
-     * The table associated with the model.
-     */
-    protected $table = 'profiles';
-
-    /**
      * Get the teams that the profile belongs to.
      *
-     * @return BelongsToMany<Team, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany<Team, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
      */
-    public function teams(): BelongsToMany
+    public function teams(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
         return $this->belongsToManyX(Team::class);
     }
 
     /**
      * Scope a query to include schemaless attributes.
-     *
-     * @param Builder<static> $query
-     *
+     */
+    /** @param Builder<static> $query
      * @return Builder<static>
      */
     public function scopeWithExtraAttributes(Builder $query): Builder
@@ -231,6 +224,13 @@ class Profile extends BaseProfile implements HasMedia
             'extra',
         ];
     }
+
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = 'profiles';
 
     /**
      * Generate Schema.org ProfilePage/Person JSON-LD structured data.

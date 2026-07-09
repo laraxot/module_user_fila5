@@ -47,9 +47,7 @@ trait HasTenants
     /**
      * Get all of the tenants the user belongs to.
      *
-     * @return BelongsToMany<Model, $this>
-     *
-     * @phpstan-return BelongsToMany<Model, $this, Pivot, 'pivot'>
+     * @return BelongsToMany<Model, $this, Pivot, 'pivot'>
      */
     public function tenants(): BelongsToMany
     {
@@ -57,9 +55,6 @@ trait HasTenants
         /** @var class-string<Model> */
         $tenant_class = $xot->getTenantClass();
 
-        /** @var BelongsToMany<Model, $this, Pivot, 'pivot'> $relation */
-        $relation = $this->belongsToManyX($tenant_class);
-
-        return $relation;
+        return $this->belongsToManyX($tenant_class);
     }
 }

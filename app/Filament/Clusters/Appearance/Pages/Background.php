@@ -27,6 +27,7 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 class Background extends XotBasePage
 {
     // $data è già definita in XotBasePage, non ridichiarare!
+
     protected string $view = 'user::filament.clusters.appearance.pages.background';
 
     protected static ?string $cluster = Appearance::class;
@@ -88,9 +89,7 @@ class Background extends XotBasePage
         $this->form->fill($data);
     }
 
-    /**
-     * @return array<Action>
-     */
+    /** @return array<int, \Filament\Actions\Action> */
     protected function getUpdateFormActions(): array
     {
         return [

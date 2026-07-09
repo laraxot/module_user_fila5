@@ -153,6 +153,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     // {
     //     return filament('filament-breezy')->getRegisteredMyProfileComponents();
     // }
+    /** @return array<int, \Filament\Forms\Components\TextInput> */
     public function getFormSchema(): array
     {
         return [
@@ -210,6 +211,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         $this->sendSuccessNotification();
     }
 
+    /** @return array<int, string> */
     protected function getForms(): array
     {
         return [
@@ -227,6 +229,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         $this->editPasswordForm->fill();
     }
 
+    /** @return array<int, Action> */
     protected function getFormActions(): array
     {
         return [
@@ -248,9 +251,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
      * }
      */
 
-    /**
-     * @return array<Action>
-     */
+    /** @return array<int, \Filament\Actions\Action> */
     protected function getUpdateProfileFormActions(): array
     {
         return [
@@ -258,9 +259,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         ];
     }
 
-    /**
-     * @return array<Action>
-     */
+    /** @return array<int, \Filament\Actions\Action> */
     protected function getUpdatePasswordFormActions(): array
     {
         return [

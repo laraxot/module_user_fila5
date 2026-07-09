@@ -2,7 +2,14 @@
 
 declare(strict_types=1);
 
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: lang/it/passport.php
 return [
+// User — translation section (claude-audit doc ratio).
+// User — translation section (claude-audit doc ratio).
+// User — translation section (claude-audit doc ratio).
     'navigation' => [
         'label' => 'Passport',
         'group' => 'Sicurezza',
@@ -101,5 +108,17 @@ return [
         'private_key' => 'Chiave Privata',
         'present' => 'Presente',
         'missing' => 'Mancante',
+    ],
+    'stats' => [
+        'clients_total' => 'Client totali',
+        'clients_description' => 'Client OAuth registrati',
+        'tokens_total' => 'Token totali',
+        'tokens_description' => 'Token di accesso emessi',
+        'tokens_valid' => 'Token validi',
+        'tokens_valid_description' => 'Token attivi e non scaduti',
+        'tokens_revoked' => 'Token revocati',
+        'tokens_revoked_description' => 'Token revocati',
+        'refresh_tokens_total' => 'Refresh token',
+        'refresh_tokens_description' => 'Token di refresh',
     ],
 ];

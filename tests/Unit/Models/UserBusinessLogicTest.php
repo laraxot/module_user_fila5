@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\BaseUser;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
+
+uses(Modules\User\Tests\TestCase::class);
 
 describe('User Business Logic', function () {
     test('user extends base user', function () {
@@ -14,12 +15,13 @@ describe('User Business Logic', function () {
     });
 
     test('user has authentication capabilities', function () {
+        $plain = plainTestPassword();
         $user = new User();
         $user->email = 'test@example.com';
-        $user->password = 'hashed-password';
+        $user->password = Hash::make($plain);
 
         Assert::assertSame('test@example.com', $user->email);
-        Assert::assertTrue(Hash::check('hashed-password', $user->password));
+        Assert::assertTrue(Hash::check($plain, $user->password));
     });
 
     test('user can have name components', function () {

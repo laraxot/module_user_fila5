@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Modules\Xot\Database\Migrations\XotBaseMigration;
+use Webmozart\Assert\Assert;
 
 return new class extends XotBaseMigration {
     /**
@@ -11,17 +12,20 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         /**
-         * @var array<mixed> $tableNames
+         * @var array<string, string> $tableNames
          */
         $tableNames = config('permission.table_names');
+        Assert::isArray($tableNames);
         /**
-         * @var array<mixed> $columnNames
+         * @var array<string, string> $columnNames
          */
         $columnNames = config('permission.column_names');
+        Assert::isArray($columnNames);
         /**
-         * @var array<mixed> $teams
+         * @var bool $teams
          */
         $teams = config('permission.teams');
+        Assert::boolean($teams);
 
         if (empty($tableNames)) {
             throw new Exception('Error: config/permission.php not loaded. Run [php artisan config:clear] and try again.');
@@ -35,11 +39,13 @@ return new class extends XotBaseMigration {
          * @var string|null $cache_store
          */
         $cache_store = config('permission.cache.store');
+        Assert::nullOrString($cache_store);
 
         /**
          * @var string $cache_key
          */
         $cache_key = config('permission.cache.key');
+        Assert::string($cache_key);
 
         try {
             // Verifica se l'applicazione è completamente inizializzata

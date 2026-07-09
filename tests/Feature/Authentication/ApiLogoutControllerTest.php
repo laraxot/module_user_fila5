@@ -6,6 +6,7 @@ namespace Modules\User\Tests\Feature\Authentication;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
+use Laravel\Passport\PersonalAccessTokenResult;
 use Modules\User\Database\Factories\DeviceFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\DeviceUser;
@@ -15,6 +16,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
+    /* @var TestCase $this */
     $this->skipUnlessUserTable('device_user');
     $this->skipUnlessUserTable('devices');
 
@@ -38,6 +40,7 @@ beforeEach(function (): void {
 
 describe('Api Logout Controller', function (): void {
     test('api logout revokes current personal access token and marks device logout time', function (): void {
+        /** @var TestCase $this */
         $user = $this->requireUser();
         $privateKey = storage_path('oauth-private.key');
         $publicKey = storage_path('oauth-public.key');
@@ -59,7 +62,7 @@ describe('Api Logout Controller', function (): void {
             $this->skipTest('Passport token creation unavailable.');
         }
 
-        if (! $personalAccessToken instanceof \Laravel\Passport\PersonalAccessTokenResult) {
+        if (! $personalAccessToken instanceof PersonalAccessTokenResult) {
             $this->fail('Passport token creation returned unexpected type.');
         }
 

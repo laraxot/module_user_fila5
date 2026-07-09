@@ -4,19 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\User\Contracts;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Modules\User\Models\AuthenticationLog;
+use Modules\User\Models\BaseUser;
 
 /**
- * Interfaccia che definisce i metodi per gestire i log di autenticazione associati a un utente.
+ * Marker: il modello usa {@see \Modules\User\Models\Traits\HasAuthenticationLogTrait}.
+ *
+ * @phpstan-require-extends BaseUser
  */
-interface HasAuthentications
+interface HasAuthentications extends Authenticatable
 {
     /**
      * Ottiene tutti i log di autenticazione associati all'utente.
-     *
-     * @return MorphMany<AuthenticationLog, Model>
      */
+    /** @return MorphMany<AuthenticationLog, BaseUser&$this> */
     public function authentications(): MorphMany;
 }

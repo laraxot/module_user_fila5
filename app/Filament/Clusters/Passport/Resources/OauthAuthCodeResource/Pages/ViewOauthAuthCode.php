@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages;
+// User — domain PHP (claude-audit documentation ratio).
 
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;

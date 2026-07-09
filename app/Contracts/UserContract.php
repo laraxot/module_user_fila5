@@ -9,16 +9,17 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Laravel\Passport\PersonalAccessTokenResult;
 use Laravel\Passport\Token;
 use Laravel\Passport\TransientToken;
-use Spatie\Permission\Contracts\Role;
+use Modules\User\Models\Role as UserRole;
 
 /**
- * User contract interface.
+ * Alias tipizzato verso il contratto utente cross-modulo (SSoT: Xot).
+ *
+ * @phpstan-require-extends Model
  */
-interface UserContract extends Authenticatable
+interface UserContract extends \Modules\Xot\Contracts\UserContract
 {
     /**
      * Get the primary key for the model.
@@ -28,14 +29,16 @@ interface UserContract extends Authenticatable
     /**
      * Get the current team of the user's context.
      *
-     * @return BelongsTo<Model, Model>
+     * @return BelongsTo<Model&TeamContract, Model>
      */
     public function currentTeam(): BelongsTo;
 
     /**
      * Get all of the teams the user belongs to.
      *
-     * @return BelongsToMany<Model, Model>
+     * @return BelongsToMany<Model, $this>
+     *
+     * @phpstan-ignore generics.notSubtype
      */
     public function teams(): BelongsToMany;
 
@@ -95,16 +98,16 @@ interface UserContract extends Authenticatable
     /**
      * Determine if the user has the given role.
      *
-     * @param string|array<int, string>|Role|\Illuminate\Support\Collection<int, Role> $roles
+     * @param string|int|array<int|string>|UserRole|\Illuminate\Database\Eloquent\Collection<int, UserRole> $roles
      */
-    public function hasRole(string|array|Role|\Illuminate\Support\Collection $roles, ?string $guard = null): bool;
+    public function hasRole(string|int|array|UserRole|\Illuminate\Database\Eloquent\Collection $roles, ?string $guard = null): bool;
 
     /**
      * Get the user's authentication logs.
      *
-     * @return MorphMany<Model, Model>
+     * @return BelongsToMany<Model, Model>
      */
-    public function authentications(): MorphMany;
+    public function authentications(): BelongsToMany;
 
     /**
      * Get the user's socialite accounts.
@@ -116,7 +119,7 @@ interface UserContract extends Authenticatable
     /**
      * Get the user's owned teams.
      *
-     * @return BelongsToMany<Model, Model>
+     * @return BelongsToMany<Model&TeamContract, Model>
      */
     public function ownedTeams(): BelongsToMany;
 
@@ -133,7 +136,7 @@ interface UserContract extends Authenticatable
     /**
      * Get all of the teams the user owns or belongs to.
      *
-     * @return Collection<int, Model>
+     * @return Collection<int, Model&TeamContract>
      */
     public function allTeams(): Collection;
 
@@ -152,19 +155,21 @@ interface UserContract extends Authenticatable
      *
      * @param array<int, string> $scopes
      *
-     * @return PersonalAccessTokenResult<Token>
+     * @return PersonalAccessTokenResult<mixed>
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;
 
     /**
      * Get the user's tenants.
      *
-     * @return BelongsToMany<Model, Model>
+     * @return BelongsToMany<Model, $this>
+     *
+     * @phpstan-ignore generics.notSubtype
      */
     public function tenants(): BelongsToMany;
 
     /**
      * Remove a role from the user.
      */
-    public function removeRole(string|int|Role $role): static;
+    public function removeRole(mixed ...$role): static;
 }

@@ -82,19 +82,18 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     ];
 
     /**
-     * @return BelongsTo<Model&UserContract, Model>
+     * Get the owner of the team.
+     *
+     * @return BelongsTo<Model&UserContract, $this>
      */
     #[\Override]
     public function owner(): BelongsTo
     {
         $xotData = XotData::make();
-        /** @var class-string<Model> */
+        /** @var class-string<Model&UserContract> $user_class */
         $user_class = $xotData->getUserClass();
 
-        /** @var BelongsTo<Model&UserContract, Model> $relation */
-        $relation = $this->belongsTo($user_class, 'user_id');
-
-        return $relation;
+        return $this->belongsTo($user_class, 'user_id');
     }
 
     /**
@@ -106,28 +105,27 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     public function allUsers(): Collection
     {
         if (! $this->owner instanceof User) {
-            return $this->users;
+            return collect($this->users);
         }
 
-        return $this->users->merge([$this->owner]);
+        return collect($this->users)->merge([$this->owner]);
     }
 
     /**
-     * @return BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'>
+     * Get all of the users that belong to the team.
+     *
+     * @return BelongsToMany<Model&UserContract, $this, TeamUser, 'pivot'>
      */
     #[\Override]
     public function users(): BelongsToMany
     {
         $xotData = XotData::make();
-        /** @var class-string<Model> */
+        /** @var class-string<Model&UserContract> $userClass */
         $userClass = $xotData->getUserClass();
 
-        /** @var BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'> $relation */
-        $relation = $this->belongsToManyX($userClass)
+        return $this->belongsToManyX($userClass)
             ->using(TeamUser::class)
             ->withPivot(['role', 'permissions']);
-
-        return $relation;
     }
 
     /**
@@ -141,7 +139,9 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     }
 
     /**
-     * @return BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'>
+     * Ottiene tutti i membri del team (alias di users).
+     *
+     * @return BelongsToMany<Model&UserContract, $this, TeamUser, 'pivot'>
      */
     #[\Override]
     public function members(): BelongsToMany
@@ -178,7 +178,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     #[\Override]
     public function hasUserWithEmail(string $email): bool
     {
-        return $this->allUsers()->contains(static function (Model&UserContract $user) use ($email): bool {
+        return $this->allUsers()->contains(static function (UserContract $user) use ($email): bool {
             return ($user->email ?? null) === $email;
         });
     }
@@ -198,15 +198,14 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     }
 
     /**
-     * @return HasMany<TeamInvitation, Model>
+     * Ottiene tutti gli inviti utente pendenti per il team.
+     *
+     * @return HasMany<TeamInvitation, $this>
      */
     #[\Override]
     public function teamInvitations(): HasMany
     {
-        /** @var HasMany<TeamInvitation, Model> $relation */
-        $relation = $this->hasMany(TeamInvitation::class);
-
-        return $relation;
+        return $this->hasMany(TeamInvitation::class);
     }
 
     /**

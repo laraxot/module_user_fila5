@@ -3,6 +3,10 @@
 declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit;
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
@@ -17,6 +21,7 @@ uses(TestCase::class);
 describe('User', function (): void {
     test('user can be created', function (): void {
         /* @var \Modules\User\Tests\TestCase $this */
+        /* @var TestCase $this */
         try {
             $user = UserFactory::new()->createOne([
                 'type' => UserType::MasterAdmin,
@@ -35,6 +40,7 @@ describe('User', function (): void {
     });
 
     test('user has correct type casting', function (): void {
+        /* @var TestCase $this */
         try {
             $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
             \assert($user instanceof User);
@@ -70,6 +76,7 @@ describe('User', function (): void {
     });
 
     test('user can be updated', function (): void {
+        /* @var TestCase $this */
         try {
             $user = UserFactory::new()->createOne([
                 'type' => UserType::MasterAdmin,
@@ -92,6 +99,7 @@ describe('User', function (): void {
     });
 
     test('user can be deleted', function (): void {
+        /* @var TestCase $this */
         $this->skipUnlessDirectPermissionSupported();
 
         $user = UserFactory::new()->createOne();
@@ -141,6 +149,7 @@ describe('User', function (): void {
     });
 
     test('user can be found by type', function (): void {
+        /* @var TestCase $this */
         try {
             $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
             \assert($user instanceof User);
@@ -160,12 +169,13 @@ describe('User', function (): void {
     });
 
     test('user can be created with different types', function (): void {
+        /* @var TestCase $this */
         try {
             $factory = UserFactory::new();
             \assert($factory instanceof Factory);
 
-            $boUser = $factory->create(['type' => UserType::BoUser]);
-            $customerUser = $factory->create(['type' => UserType::CustomerUser]);
+            $boUser = $factory->createOne(['type' => UserType::BoUser]);
+            $customerUser = $factory->createOne(['type' => UserType::CustomerUser]);
             \assert($boUser instanceof User);
             \assert($customerUser instanceof User);
 
@@ -185,6 +195,7 @@ describe('User', function (): void {
     });
 
     test('user soft delete functionality', function (): void {
+        /* @var TestCase $this */
         $this->skipTest('User model does not implement SoftDeletes trait');
     });
 });

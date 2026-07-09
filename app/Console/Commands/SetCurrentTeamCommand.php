@@ -11,6 +11,7 @@ use function Laravel\Prompts\select;
 use function Laravel\Prompts\text;
 
 use Modules\Xot\Datas\XotData;
+use Symfony\Component\Console\Input\InputOption;
 
 /**
  * Comando per impostare il team corrente per un utente.
@@ -19,11 +20,15 @@ class SetCurrentTeamCommand extends Command
 {
     /**
      * The name and signature of the console command.
+     *
+     * @var string
      */
     protected $name = 'user:set-current-team';
 
     /**
      * The console command description.
+     *
+     * @var string
      */
     protected $description = 'Assign current team to user';
 

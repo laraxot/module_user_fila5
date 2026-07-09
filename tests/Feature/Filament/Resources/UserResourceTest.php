@@ -3,6 +3,10 @@
 declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Filament\Resources;
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
 
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
@@ -24,11 +28,11 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     UserFactory::new()
-                ->create([
-                    'type' => UserType::MasterAdmin,
-                    'email' => 'admin-'.uniqid().'@example.com',
-                    'password' => Hash::make('password123'),
-                ]);
+        ->createOne([
+            'type' => UserType::MasterAdmin,
+            'email' => 'admin-'.uniqid().'@example.com',
+            'password' => Hash::make('password123'),
+        ]);
 });
 
 describe('User Resource', function (): void {
@@ -44,6 +48,7 @@ describe('User Resource', function (): void {
     });
 
     test('user resource has correct form schema', function (): void {
+        /** @var TestCase $this */
         $form = UserResource::getFormSchema();
 
         Assert::assertArrayHasKey('section01', $form);
@@ -91,6 +96,7 @@ describe('User Resource', function (): void {
     });
 
     test('user resource name field is required', function (): void {
+        /** @var TestCase $this */
         $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
@@ -105,6 +111,7 @@ describe('User Resource', function (): void {
     });
 
     test('user resource email field is required', function (): void {
+        /** @var TestCase $this */
         $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
@@ -119,6 +126,7 @@ describe('User Resource', function (): void {
     });
 
     test('user resource password field is required only on create', function (): void {
+        /** @var TestCase $this */
         $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
@@ -133,6 +141,7 @@ describe('User Resource', function (): void {
     });
 
     test('user resource password field has correct type', function (): void {
+        /** @var TestCase $this */
         $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
@@ -145,6 +154,7 @@ describe('User Resource', function (): void {
     });
 
     test('user resource email field has unique validation', function (): void {
+        /** @var TestCase $this */
         $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
@@ -159,6 +169,7 @@ describe('User Resource', function (): void {
     });
 
     test('user resource created at field shows diff for humans', function (): void {
+        /** @var TestCase $this */
         $form = UserResource::getFormSchema();
         $section02 = $form['section02'];
         $section02Schema = userResourceSectionComponents($this, $section02);

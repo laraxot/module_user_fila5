@@ -69,8 +69,3 @@ This document outlines the best practices for managing user profiles within a La
 - [Authentication Pages Implementation](./auth_pages_implementation.md)
 - [Routing Best Practices](./routing_best_practices.md)
 - [Session Management](./session_management.md)
-- [User Module Index](./INDEX.md)
-- [BaseUser Model](./BaseUser.md)
-- [Authentication Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
-- [Routing Best Practices](./ROUTING_BEST_PRACTICES.md)
-- [Session Management](./SESSION_MANAGEMENT.md)

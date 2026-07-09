@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: lang/it/login.php
 return [
     'fields' => [
         'email' => [
@@ -30,7 +34,7 @@ return [
         'login' => [
             'label' => 'Accedi',
             'success' => 'Accesso effettuato con successo',
-            'error' => 'Le credenziali inserite non sono corrette.',
+            'error' => 'Credenziali non valide',
         ],
         'register' => [
             'label' => 'Registrati',

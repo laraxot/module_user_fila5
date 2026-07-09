@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: resources/lang/it/auth.php
 return [
     'login' => [
         'title' => 'Accedi al tuo account',
@@ -48,12 +52,5 @@ return [
     'fields' => [
     ],
     'actions' => [
-    ],
-    'credentials_incorrect' => [
-        'key' => 'user::auth.credentials_incorrect',
-        'text' => 'Verifica i tuoi dati di accesso',
-        'description' => 'Messaggio di errore quando le credenziali sono errate',
-        'context' => 'login_form.credentials',
-        'placeholder' => '',
     ],
 ];

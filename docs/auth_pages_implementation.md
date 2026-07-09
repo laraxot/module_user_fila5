@@ -8,10 +8,21 @@
 - [Volt Errors](./volt_errors.md)
 - [Volt Folio Logout](./volt_folio_logout.md)
 - [Volt Logout Action](./volt_logout_action.md)
+- [Documentazione centrale](../../../docs/README.md)
+- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
+- [README modulo User](./README.md)
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Volt Errors](./VOLT_ERRORS.md)
+- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
+- [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
 
 ## Introduzione
 
-Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di healthcare_app, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
+Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di SaluteOra, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
+
+## Introduzione
+
+Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di Quaeris, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
 
 ## Struttura delle Directory
 

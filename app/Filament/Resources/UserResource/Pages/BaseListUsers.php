@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 use Filament\Actions\Action;
-use Filament\Actions\ActionGroup;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
@@ -35,7 +34,7 @@ abstract class BaseListUsers extends XotBaseListRecords
     /**
      * Get table filters for user records.
      *
-     * @return array<BaseFilter>
+     * @return array<string, BaseFilter>
      */
     #[\Override]
     public function getTableFilters(): array
@@ -54,19 +53,27 @@ abstract class BaseListUsers extends XotBaseListRecords
     /**
      * Get table actions for user records.
      *
-     * @return array<string, Action|ActionGroup>
+     * @return array<string, Action|\Filament\Actions\ActionGroup>
      */
     #[\Override]
     public function getTableActions(): array
     {
+        $changePassword = ChangePasswordAction::make()
+            ->tooltip('Cambio Password')
+            ->iconButton();
+
+        /** @var array<string, Action|\Filament\Actions\ActionGroup> $actions */
         $actions = [
-            'change_password' => ChangePasswordAction::make()->tooltip('Cambio Password')->iconButton(),
+            'change_password' => $changePassword,
         ];
 
         // Add parent actions - merge arrays
         $parentActions = parent::getTableActions();
 
-        return array_merge($actions, $parentActions);
+        /** @var array<string, Action|\Filament\Actions\ActionGroup> $merged */
+        $merged = array_merge($actions, $parentActions);
+
+        return $merged;
 
         /*
          * // Add deactivate action

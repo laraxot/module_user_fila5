@@ -13,6 +13,11 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  */
 return new class extends XotBaseMigration {
     /**
+     * Nome della tabella gestita dalla migrazione.
+     */
+    protected string $table_name = 'team_user';
+
+    /**
      * Esegue la migrazione.
      */
     public function up(): void
@@ -28,6 +33,8 @@ return new class extends XotBaseMigration {
 
             // Indice univoco per evitare duplicati team_id + user_id
             $table->unique(['team_id', 'user_id']);
+            $table->softDeletes();
+            $table->timestamps();
         });
 
         // -- UPDATE --
@@ -48,7 +55,7 @@ return new class extends XotBaseMigration {
                 }
 
                 // Impostiamo la nuova PRIMARY KEY su id
-                // $this->query('ALTER TABLE `'.$this->getTableName().'` ADD PRIMARY KEY (`id`)');
+                $this->query('ALTER TABLE `'.$this->table_name.'` ADD PRIMARY KEY (`id`)');
             }
 
             if (! $this->hasColumn('role')) {

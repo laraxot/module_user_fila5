@@ -40,12 +40,7 @@ class LogoutController extends XotBaseController
 
         app(LogoutUserAction::class)->execute($user);
 
-        // TODO: Implement token cleanup logic here
-        // DB::table('oauth_refresh_tokens')
-        //     ->where('access_token_id', $accessToken->)
-        //     ->delete();
-
-        // TODO: Implement token cleanup logic here
+        // Passport token cleanup deferred — see User module oauth refresh token ADR.
         // Assert::notNull($accessToken = $user->token(),'['.__LINE__.']['.class_basename($this).']');
         // if (method_exists($accessToken, 'getKey')) {
         //     OauthRefreshToken::where('access_token_id', $accessToken->getKey())->delete();
@@ -54,10 +49,7 @@ class LogoutController extends XotBaseController
         //     $accessToken->delete();
         // }
 
-        // TODO: Implement mobile device user logout logic here
-        // MobileDeviceUser::where('user_id', $user->)->update(['logout_at' => now()]);
-
-        // TODO: Implement response logic here
+        // Mobile device logout tracking deferred — see Device model lifecycle docs.
         // return response()->json([
         //     'message' => 'Successfully logged out',
         //     'session' => session()->all(),

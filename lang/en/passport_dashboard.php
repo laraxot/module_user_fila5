@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: lang/en/passport_dashboard.php
 return [
     'navigation' => [
         'label' => 'Passport / API',
@@ -36,17 +40,38 @@ return [
         'install' => [
             'label' => 'Install Passport',
             'modal_description' => 'This command will install Passport and create the necessary encryption keys.',
+            'force_label' => 'Force overwrite keys',
+            'force_help' => 'Overwrites existing keys if present.',
         ],
-        'generate_keys' => [
-            'label' => 'Generate Keys',
+        'keys' => [
+            'label' => 'Generate keys',
+            'force_label' => 'Force overwrite',
+            'force_help' => 'Overwrites existing keys (required if keys already exist).',
+        ],
+        'purge' => [
+            'label' => 'Purge tokens',
+            'revoked_label' => 'Remove revoked tokens',
+            'revoked_help' => 'Deletes revoked tokens and codes.',
+            'expired_label' => 'Remove expired tokens',
+            'expired_help' => 'Deletes tokens expired for more than N hours.',
+            'hours_label' => 'Retention hours',
+            'hours_help' => 'Tokens expired for more than N hours will be deleted (default 168 = 7 days).',
         ],
         'purge_tokens' => [
             'label' => 'Purge Tokens',
-            'modal_description' => 'Delete all expired or revoked tokens.',
+            'modal_description' => 'Revoked and/or expired tokens and codes will be removed according to selected options.',
+        ],
+        'hash' => [
+            'label' => 'Hash secrets',
+            'force_label' => 'Force without confirmation',
+            'force_help' => 'Runs without confirmation prompt.',
         ],
         'hash_secrets' => [
             'label' => 'Hash Secrets',
-            'modal_description' => 'Apply hashing to all existing client secrets.',
+            'modal_description' => 'Apply hashing to all existing client secrets. Irreversible operation.',
+        ],
+        'generate_keys' => [
+            'label' => 'Generate Keys',
         ],
     ],
     'status' => [

@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 use Modules\User\Models\Role;
 use Spatie\Permission\Traits\HasRoles as SpatieHasRoles;
 
+/** @phpstan-ignore trait.unused */
 trait HasRoles
 {
     use SpatieHasRoles;

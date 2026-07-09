@@ -38,6 +38,7 @@ class SocialProviderData extends Data
     public static function make(): self
     {
         if (! self::$instance) {
+            /** @var array<string, mixed> $data */
             $data = TenantService::getConfig('social-providers');
             dddx($data);
             self::$instance = self::from($data);

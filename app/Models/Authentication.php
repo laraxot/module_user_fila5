@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
  * Authentication Model.
@@ -63,6 +64,9 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class Authentication extends BaseModel
 {
+    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+    use HasXotFactory;
+
     /**
      * The attributes that are mass assignable.
      *
@@ -80,9 +84,7 @@ class Authentication extends BaseModel
         'authenticatable_id',
     ];
 
-    /**
-     * @return MorphTo<Model, $this>
-     */
+    /** @return MorphTo<Model, $this> */
     public function authenticatable(): MorphTo
     {
         return $this->morphTo();

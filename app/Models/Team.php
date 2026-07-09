@@ -6,7 +6,7 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 
@@ -98,14 +98,6 @@ class Team extends BaseTeam
     ];
 
     /**
-     * @return HasMany<TeamPermission, $this>
-     */
-    public function permissions(): HasMany
-    {
-        return $this->hasMany(TeamPermission::class);
-    }
-
-    /**
      * Get the attributes that should be cast.
      *
      * @return array<string, string>
@@ -116,5 +108,11 @@ class Team extends BaseTeam
             'personal_team' => 'boolean',
             'settings' => 'array',
         ];
+    }
+
+    /** @return \Illuminate\Database\Eloquent\Relations\HasMany<TeamPermission, $this> */
+    public function permissions(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(TeamPermission::class);
     }
 }

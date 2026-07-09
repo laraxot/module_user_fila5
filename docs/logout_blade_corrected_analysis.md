@@ -7,21 +7,11 @@
 - [Logout Blade Implementation](./logout_blade_implementation.md)
 - [Convenzioni Path](./path_conventions.md)
 - [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
-- [README modulo User](./README.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
-- [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Analisi dell'Errore di Implementazione](./VOLT_BLADE_IMPLEMENTATION_ERROR.md)
 
 ## Panoramica
 
-Questo documento fornisce un'analisi corretta dell'implementazione attuale del file `logout.blade.php` situato in `Themes/One/resources/views/pages/auth/`, identifica problemi e propone miglioramenti in linea con le convenzioni di SaluteOra.
+Questo documento fornisce un'analisi corretta dell'implementazione attuale del file `logout.blade.php` situato in `Themes/One/resources/views/pages/auth/`, identifica problemi e propone miglioramenti in linea con le convenzioni di Quaeris.
 
-
-## Panoramica
-
-Questo documento fornisce un'analisi corretta dell'implementazione attuale del file `logout.blade.php` situato in `Themes/One/resources/views/pages/auth/`, identifica problemi e propone miglioramenti in linea con le convenzioni di Laraxot.
 ## Analisi dell'Implementazione Attuale
 
 ### Struttura del File
@@ -197,7 +187,8 @@ Per il logout , si raccomanda di utilizzare l'approccio Folio con PHP puro, che 
 
 2. **Efficienza**: Il reindirizzamento immediato offre una migliore esperienza utente rispetto a una pagina di conferma.
 
-3. **Coerenza**: Questo approccio è coerente con le convenzioni di Laraxot per le operazioni semplici.
+3. **Coerenza**: Questo approccio è coerente con le convenzioni di Quaeris per le operazioni semplici.
+
 4. **Sicurezza**: Implementa correttamente tutte le misure di sicurezza necessarie (invalidazione sessione, rigenerazione token).
 
 ## Implementazione Raccomandata

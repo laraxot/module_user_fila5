@@ -3,6 +3,8 @@
 declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Datas;
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
 
 use Modules\User\Datas\FilamentShieldData;
 use Modules\User\Datas\PermissionData;
@@ -104,6 +106,7 @@ describe('User Datas And Enums Coverage', function (): void {
     });
 
     test('returns labels for both language enums', function (): void {
+        /* @var TestCase $this */
         /* @var TestCase $this */
         app()->setLocale('it');
 

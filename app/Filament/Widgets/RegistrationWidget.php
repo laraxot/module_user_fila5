@@ -7,43 +7,49 @@ namespace Modules\User\Filament\Widgets;
 use Filament\Schemas\Components\Component;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Livewire\Features\SupportRedirects\Redirector;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Modules\Xot\Actions\Cast\SafeArrayCastAction;
 use Modules\Xot\Datas\XotData;
-use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Webmozart\Assert\Assert;
 
-class RegistrationWidget extends XotBaseSchemaWidget
+class RegistrationWidget extends XotBaseWidget
 {
-    public string $type = '';
+    /**
+     * @var array<string, mixed>|null
+     */
+    public ?array $data = null;
 
-    /** @var class-string */
+    public string $type;
+
     public string $resource;
 
-    /** @var class-string<Model> */
-    public string $model = Model::class;
+    public string $model;
 
-    public string $action = '';
+    public string $action;
 
     public Model $record;
 
     protected int|string|array $columnSpan = 'full';
 
-    public function mount(string $type = ''): void
-    {
-        parent::mount();
-        $this->type = $type;
-        $resourceClass = XotData::make()->getUserResourceClassByType($type);
-        Assert::classExists($resourceClass);
-        $this->resource = $resourceClass;
+    /**
+     * @phpstan-var class-string
+     *
+     * @phpstan-ignore-next-line
+     */
+    protected string $view = 'pub_theme::filament.widgets.registration';
 
-        /** @var class-string<Model> $modelClass */
-        $modelClass = $resourceClass::getModel();
-        Assert::subclassOf($modelClass, Model::class);
-        $this->model = $modelClass;
+    public function mount(string $type, Request $_request): void
+    {
+        $this->type = $type;
+        $this->resource = XotData::make()->getUserResourceClassByType($type);
+
+        $modelClass = $this->resource::getModel();
+        $this->model = \is_string($modelClass) ? $modelClass : '';
 
         $this->action = Str::of($this->model)
             ->replace('\\Models\\', '\\Actions\\')
@@ -60,36 +66,36 @@ class RegistrationWidget extends XotBaseSchemaWidget
 
     public function getFormModel(): Model
     {
+        /** @var class-string<Model> $modelClass */
+        $modelClass = $this->model;
+
         $data = request()->all();
         $email = Arr::get($data, 'email');
         $token = Arr::get($data, 'token');
 
-        $user = is_string($email)
-            ? $this->model::firstWhere('email', $email)
-            : null;
-        if (! $user instanceof Model) {
+        /** @var Model|null $user */
+        $user = $this->model::firstWhere('email', $email);
+        if (null === $user) {
+            /** @var Model $model */
             $model = app($this->model);
-            Assert::isInstanceOf($model, Model::class);
 
             return $model;
         }
 
-        $rememberToken = $user->getAttribute('remember_token');
-        if (is_string($token) && '' !== $token) {
+        $remember_token = $user->getAttribute('remember_token');
+        if ($token) {
             $user->setAttribute('remember_token', $token);
             $user->save();
+            $remember_token = $user->getAttribute('remember_token');
+        }
+
+        if ($remember_token === $token) {
             $this->record = $user;
 
             return $user;
         }
 
-        if (is_string($rememberToken) && $rememberToken === $token) {
-            $this->record = $user;
-
-            return $user;
-        }
-
-        $model = app($this->model);
+        $model = app($modelClass);
         Assert::isInstanceOf($model, Model::class);
 
         return $model;
@@ -98,7 +104,7 @@ class RegistrationWidget extends XotBaseSchemaWidget
     /**
      * @return array<string, mixed>
      */
-    // @override
+    #[\Override]
     public function getFormFill(): array
     {
         /** @var array<string, mixed> $data */
@@ -111,28 +117,34 @@ class RegistrationWidget extends XotBaseSchemaWidget
     /**
      * @return array<int|string, Component>
      */
+    #[\Override]
     public function getFormSchema(): array
     {
-        return self::normalizeFormSchema($this->resource::getFormSchemaWidget());
+        /** @var array<int|string, Component> $schema */
+        $schema = $this->resource::getFormSchemaWidget();
+        Assert::isArray($schema);
+
+        return $schema;
     }
 
     /**
      * @see https://filamentphp.com/docs/3.x/forms/adding-a-form-to-a-livewire-component
      */
-    // @override
     public function register(): RedirectResponse|Redirector
     {
+        $lang = app()->getLocale();
+
         $data = $this->form->getState();
         /** @var array<string, mixed> $initialData */
         $initialData = $this->data ?? [];
         $data = array_merge($initialData, $data);
         $record = $this->record;
 
+        /** @var object{execute: callable} $actionInstance */
         $actionInstance = app($this->action);
-        if (! \is_object($actionInstance) || ! method_exists($actionInstance, 'execute')) {
-            throw new \RuntimeException(\sprintf('Registration action [%s] must expose an execute method.', $this->action));
-        }
-        \call_user_func([$actionInstance, 'execute'], $record, $data);
+
+        /** @phpstan-ignore method.notFound */
+        $user = $actionInstance->execute($record, $data);
 
         $lang = app()->getLocale();
         $route = route('pages.view', ['slug' => $this->type.'_register_complete']);
@@ -140,26 +152,5 @@ class RegistrationWidget extends XotBaseSchemaWidget
 
         // return redirect()->route('pages.view', ['slug' => $this->type . '_register_complete','lang'=>$lang]);
         return redirect($route);
-    }
-
-    /**
-     * @return array<int|string, Component>
-     */
-    private static function normalizeFormSchema(mixed $schema): array
-    {
-        if (! \is_array($schema)) {
-            return [];
-        }
-
-        $normalized = [];
-        foreach ($schema as $key => $component) {
-            if (! $component instanceof Component) {
-                return [];
-            }
-
-            $normalized[$key] = $component;
-        }
-
-        return $normalized;
     }
 }

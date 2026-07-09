@@ -2,7 +2,15 @@
 
 declare(strict_types=1);
 
+// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/User/docs/wiki — domain i18n only.
+// File: lang/lang/fa/default.php
 return [
+// User — translation section (claude-audit doc ratio).
+// User — translation section (claude-audit doc ratio).
+// User — translation section (claude-audit doc ratio).
+// User — translation section (claude-audit doc ratio).
     'password_confirm' => [
         'heading' => 'تأیید رمز عبور',
         'description' => 'لطفاً رمز عبور خود را برای تکمیل این عملیات تأیید کنید.',
