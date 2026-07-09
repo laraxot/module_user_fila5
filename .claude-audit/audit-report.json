@@ -1,15 +1,15 @@
 {
   "version": "0.2.2",
-  "timestamp": "2026-07-09T18:48:13.743Z",
+  "timestamp": "2026-07-09T19:26:22.171Z",
   "project": {
     "name": "User",
     "path": "/var/www/_bases/base_fixcity_fila5/laravel/Modules/User",
     "languages": {
-      "Markdown": 2469,
+      "Markdown": 1748,
       "Docker": 1,
       "JSON": 13,
       "YAML": 3,
-      "PHP": 1970,
+      "PHP": 1800,
       "XML": 10,
       "JavaScript": 19,
       "Shell": 8,
@@ -19,8 +19,8 @@
     "frameworks": [
       "TailwindCSS"
     ],
-    "totalFiles": 4497,
-    "totalLines": 500032,
+    "totalFiles": 3606,
+    "totalLines": 405604,
     "hasTests": true,
     "hasDependencyFile": true,
     "dependencyFile": "package.json",
@@ -102,5 +102,5 @@
   "mediumCount": 0,
   "lowCount": 0,
   "aiPowered": false,
-  "durationMs": 489
+  "durationMs": 524
 }
