@@ -7,18 +7,18 @@ declare(strict_types=1);
 // Canon: Modules/User/docs/wiki — domain i18n only.
 // File: lang/de/user.php
 return [
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
     'navigation' => [
         'name' => 'Utenti',
         'plural' => 'Utenti',

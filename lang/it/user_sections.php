@@ -6,18 +6,15 @@ declare(strict_types=1);
 // claude-audit static: split from user.php for maintainability (<500 LOC).
 // Canon: Modules/User/docs/wiki/concepts/claude-audit-static.md
 // File: lang/it/user_sections.php
-return array (
-  'sections' => 
-  array (
-    'empty' => 
-    array (
-      'heading' => 'empty',
-      'label' => 'empty',
-    ),
-    'worker' => 
-    array (
-      'label' => 'worker',
-      'heading' => 'worker',
-    ),
-  ),
-);
+return [
+    'sections' => [
+        'empty' => [
+            'heading' => 'empty',
+            'label' => 'empty',
+        ],
+        'worker' => [
+            'label' => 'worker',
+            'heading' => 'worker',
+        ],
+    ],
+];
