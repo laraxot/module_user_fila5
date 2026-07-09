@@ -7,24 +7,24 @@ declare(strict_types=1);
 // Canon: Modules/User/docs/wiki — domain i18n only.
 // File: lang/en/user.php
 return [
-// User — translation section (claude-audit doc ratio).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
-// User — translation keys (no business logic).
+    // User — translation section (claude-audit doc ratio).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
+    // User — translation keys (no business logic).
     'actions' => [
         'attach_user' => 'Attach User',
         'associate_user' => 'Associate User',
