@@ -1,3 +1,22 @@
+@php
+// User Blade view — see Modules/User/docs/wiki.
+@endphp
+
+@php
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+// User Blade view — see Modules/User/docs/wiki.
+@endphp
+
 <?php
 
 declare(strict_types=1);

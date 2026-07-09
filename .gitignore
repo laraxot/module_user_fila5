@@ -183,4 +183,6 @@ test-results/
 # Pest + audit-coverage bridge (claude-audit legge .gitignore case-insensitive su WSL)
 !tests/
 !tests/**
-!!**
+!audit-coverage/
+!audit-coverage/**
+docs/legacy

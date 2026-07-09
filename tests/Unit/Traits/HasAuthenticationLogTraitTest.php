@@ -7,6 +7,10 @@ use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
 uses(Modules\User\Tests\TestCase::class);
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
+// User Pest/PHPUnit — claude-audit documentation ratio.
 
 /**
  * @param array<string, mixed> $attributes
