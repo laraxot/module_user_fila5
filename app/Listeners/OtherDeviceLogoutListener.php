@@ -59,21 +59,15 @@ class OtherDeviceLogoutListener
             return;
         }
 
-        $newIP = $this->request->ip();
-        $newUserAgent = $this->request->userAgent();
-
         $user = $event->user;
         if (! $user || ! ($user instanceof HasAuthentications)) {
             return;
         }
 
-        $logs = $user
-            ->authentications()
-            ->orderByDesc('login_at')
-            ->where(function ($query) use ($newIP, $newUserAgent): void {
-                $query->where('ip_address', '!=', $newIP)->orWhere('user_agent', '!=', $newUserAgent);
-            })
-            ->where('login_successful', true)
-            ->get();
+        // ponytail: "notify_other_devices" config gate has no notification implementation yet.
+        // Previous code queried the other-device login logs here and discarded the result
+        // (dead query, phpmd UnusedLocalVariable). Upgrade path: once a "new device login"
+        // Notification class exists, query $user->authentications() filtered by IP/user agent
+        // and dispatch it per log entry.
     }
 }

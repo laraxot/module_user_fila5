@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\User;
 
+use Exception;
 use Illuminate\Contracts\Hashing\Hasher;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\Model;
@@ -22,7 +23,7 @@ class UpdateUserAction
      * @param Model                $user L'utente da aggiornare
      * @param array<string, mixed> $data I dati da aggiornare
      *
-     * @throws \Exception Se l'aggiornamento fallisce
+     * @throws Exception Se l'aggiornamento fallisce
      *
      * @return Model L'utente aggiornato
      */
@@ -32,8 +33,6 @@ class UpdateUserAction
         $logger = \app(LoggerInterface::class);
         $hasher = \app(Hasher::class);
         $safeStringCast = \app(SafeStringCastAction::class);
-        $validationException = \app(ValidationException::class);
-
         try {
             $dbManager->beginTransaction();
 
@@ -41,7 +40,7 @@ class UpdateUserAction
             $updateData = $this->prepareUpdateData($data, $hasher, $safeStringCast);
 
             // Valida i dati specifici per l'aggiornamento
-            $this->validateUpdateData($user, $updateData, $validationException);
+            $this->validateUpdateData($user, $updateData);
 
             // Aggiorna l'utente
             $user->fill($updateData);
@@ -59,11 +58,11 @@ class UpdateUserAction
 
             $updatedUser = $user->fresh();
             if (! $updatedUser instanceof Model) {
-                throw new \Exception('Failed to refresh user model after update');
+                throw new Exception('Failed to refresh user model after update');
             }
 
             return $updatedUser;
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             $dbManager->rollBack();
 
             $logger->error("Errore nell'aggiornamento utente", [
@@ -124,7 +123,7 @@ class UpdateUserAction
      *
      * @throws ValidationException
      */
-    protected function validateUpdateData(Model $user, array $data, ValidationException $validationException): void
+    protected function validateUpdateData(Model $user, array $data): void
     {
         // Validazione email univoca
         if (isset($data['email'])) {
@@ -135,7 +134,7 @@ class UpdateUserAction
                 ->first();
 
             if ($existingUser) {
-                throw $validationException->withMessages(['email' => __('user::validation.email_already_taken')]);
+                throw ValidationException::withMessages(['email' => __('user::validation.email_already_taken')]);
             }
         }
 

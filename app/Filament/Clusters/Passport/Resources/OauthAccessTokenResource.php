@@ -189,7 +189,7 @@ class OauthAccessTokenResource extends XotBaseResource
                         }
                     }
                     Notification::make()
-                        ->title(static::trans('actions.revoke_all_for_user.success'))
+                        ->title(static::trans('actions.revoke_all_for_user.success', params: ['count' => $count]))
                         ->success()
                         ->send();
                 }),

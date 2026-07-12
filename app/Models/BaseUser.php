@@ -229,17 +229,8 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     {
         // Concateno i fillable del parent con quelli della classe corrente
         // array_values() garantisce che sia un array indicizzato (list<string>)
-        try {
-            $this->fillable = array_values(array_merge(parent::getFillable(), $this->getFillable()));
-            parent::__construct($attributes);
-        } catch (\Throwable $e) {
-            // Fallback in case database connection is not available (e.g., during testing)
-            $this->fillable = array_values($this->getFillable());
-            // Avoid calling parent constructor if database is not available
-            foreach ($attributes as $key => $value) {
-                $this->setAttribute($key, $value);
-            }
-        }
+        $this->fillable = array_values(array_merge(parent::getFillable(), $this->getFillable()));
+        parent::__construct($attributes);
     }
 
     public function getProviderName(): string
@@ -319,7 +310,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
             return $this->hasRole($role);
         }
 
-        return true; // str_ends_with($this->email, '@yourdomain.com') && $this->hasVerifiedEmail();
+        return $this->isSuperAdmin() || $this->hasRole('admin');
     }
 
     public function canAccessSocialite(): bool
@@ -420,12 +411,13 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
             return;
         }
-        if (\strlen($value) < 32) {
-            $this->attributes['password'] = Hash::make($value);
+        if (Hash::isHashed($value)) {
+            $this->attributes['password'] = $value;
 
             return;
         }
-        $this->attributes['password'] = $value;
+
+        $this->attributes['password'] = Hash::make($value);
     }
 
     /**

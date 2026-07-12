@@ -5,8 +5,9 @@ declare(strict_types=1);
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
+use Illuminate\Contracts\Hashing\Hasher;
 use Mockery\MockInterface;
-use Modules\User\Actions\Otp\Hasher;
+use Modules\User\Actions\Otp\HashOtpValueAction;
 use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Datas\PasswordData;
@@ -35,7 +36,7 @@ describe('SendOtpByUserAction', function () {
             $mock->allows(['make' => str_repeat('a', 60)]);
         });
 
-        $action = new SendOtpByUserAction($passwordData, $mockStr, $mockHasher);
+        $action = new SendOtpByUserAction($passwordData, $mockStr, new HashOtpValueAction($mockHasher));
 
         $now = Carbon::now();
         Carbon::setTestNow($now);

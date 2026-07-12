@@ -142,6 +142,12 @@ class EditUserWidget extends XotBaseWidget
         $data = $this->form->getState();
         $record = $this->record;
 
+        /** @var object{execute: callable} $actionInstance */
+        $actionInstance = app($this->action);
+
+        /** @phpstan-ignore method.notFound */
+        $actionInstance->execute($record, $data);
+
         return redirect()->back();
     }
 
@@ -165,8 +171,6 @@ class EditUserWidget extends XotBaseWidget
      */
     protected function getFormModel(?string $userId = null): Model
     {
-        /** @var class-string<Model> $modelClass */
-        $modelClass = $this->model;
         if ($userId) {
             $user = $this->model::findOrFail($userId);
             Assert::isInstanceOf($user, Model::class);

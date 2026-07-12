@@ -8,7 +8,6 @@ use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Support\Facades\Auth;
-use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 /**
@@ -65,9 +64,6 @@ class LoginWidget extends XotBaseWidget
             session()->regenerate();
             redirect()->intended('/');
         }
-
-        $userClass = XotData::make()->getUserClass();
-        $user = $userClass::where('email', $credentials['email'])->first();
 
         $this->addError('data.email', __('auth.failed'));
         // } catch (ValidationException $e) {

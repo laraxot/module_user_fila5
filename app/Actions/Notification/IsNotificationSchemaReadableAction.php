@@ -2,22 +2,25 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Support;
+namespace Modules\User\Actions\Notification;
 
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Models\Notification;
+use Spatie\QueueableAction\QueueableAction;
 
 /**
- * Verifica che la tabella `notifications` esista sulla connection User prima di query FO.
+ * Verifica che la tabella notifications esista sulla connection User prima di query FO.
  */
-final class NotificationSchema
+final class IsNotificationSchemaReadableAction
 {
-    public static function isReadable(): bool
+    use QueueableAction;
+
+    public function execute(): bool
     {
         $model = new Notification();
 
         $connection = $model->getConnectionName();
-        if (! is_string($connection) || '' === $connection) {
+        if (! is_string($connection) || $connection === '') {
             $default = config('database.default');
             $connection = is_string($default) ? $default : 'mysql';
         }

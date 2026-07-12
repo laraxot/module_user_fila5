@@ -46,11 +46,11 @@
     }
   },
   "require": {
-    "flowframe/laravel-trend": "*",
-    "jenssegers/agent": "*",
-    "laravel/passport": "*",
-    "socialiteproviders/auth0": "*",
-    "spatie/laravel-personal-data-export": "*",
+    "flowframe/laravel-trend": "^0.5",
+    "jenssegers/agent": "^2.6",
+    "laravel/passport": "^13.0",
+    "socialiteproviders/auth0": "^4.2",
+    "spatie/laravel-personal-data-export": "^4.3",
     "socialiteproviders/microsoft": "^4.8"
   },
   "require-dev": {},

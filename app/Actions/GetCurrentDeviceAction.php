@@ -8,8 +8,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions;
 
+use InvalidArgumentException;
 use Jenssegers\Agent\Agent;
 use Modules\User\Models\Device;
+use RuntimeException;
 use Spatie\QueueableAction\QueueableAction;
 
 class GetCurrentDeviceAction
@@ -32,12 +34,12 @@ class GetCurrentDeviceAction
 
         if (null !== $mobileId) {
             if (empty($mobileId)) {
-                throw new \InvalidArgumentException('L\'ID mobile non può essere vuoto');
+                throw new InvalidArgumentException('L\'ID mobile non può essere vuoto');
             }
 
             $device = $this->deviceModel->firstOrCreate(['mobile_id' => $mobileId]);
             if (null === $device) {
-                throw new \RuntimeException('Impossibile creare o trovare il dispositivo');
+                throw new RuntimeException('Impossibile creare o trovare il dispositivo');
             }
             $device->update([...$deviceInfo, ...$browserInfo]);
 
@@ -46,7 +48,7 @@ class GetCurrentDeviceAction
 
         $device = $this->deviceModel->firstOrCreate($deviceInfo);
         if (null === $device) {
-            throw new \RuntimeException('Impossibile creare o trovare il dispositivo');
+            throw new RuntimeException('Impossibile creare o trovare il dispositivo');
         }
         $device->update($browserInfo);
 

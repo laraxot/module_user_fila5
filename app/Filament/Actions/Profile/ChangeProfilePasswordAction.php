@@ -33,7 +33,6 @@ final class ChangeProfilePasswordAction extends Action
                 $user = $record->user;
                 $profile_data = Arr::except($record->toArray(), ['id']);
                 if (null === $user) {
-                    $user_class = XotData::make()->getUserClass();
                     /** @var UserContract */
                     $user = XotData::make()->getUserByEmail($record->email);
                 }

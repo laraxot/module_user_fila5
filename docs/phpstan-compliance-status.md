@@ -3,7 +3,7 @@
 **Last Updated**: 2026-07-06
 **Status**: ✅ `Modules/User` fully compliant including `tests/` (0 errors, level max).
 
-Baseline STORY-288: 234 → 0. Pattern: social-providers env in ServiceProvider, Contracts Model generics, AuthenticationLogQuery typed.
+Baseline STORY-288: 234 → 0. Pattern: social-providers env in ServiceProvider, Contracts Model generics, `GetAuthenticationLogQueryForAuthenticatableAction` typed.
 
 Previous status (2026-03-10): ✅ FULLY COMPLIANT (0 errors), after a Passport/OAuth recovery batch (see below).
 

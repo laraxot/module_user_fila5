@@ -35,7 +35,6 @@ class FetchUserApiTokenCommand extends Command
             $userEmail = trim($userEmail);
         }
 
-        $user_class = XotData::make()->getUserClass();
         /** @var UserContract */
         $user = XotData::make()->getUserByEmail($userEmail);
 

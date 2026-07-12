@@ -15,6 +15,7 @@ related:
   - ./rules/can-comment-retired-wrong-placement.md
 ---
 
+- 2026-07-12: deadcode swarm — rimosso `app/Actions/CreateUserAction.php` (root legacy, 0 consumer; canonico `User/CreateUserAction` + `Socialite/CreateUserAction`). Issue [#372](https://github.com/laraxot/base_fixcity_fila5/issues/372).
 - 2026-06-18: PHPStan User 14→0 — ripristinato `Tenant\Models\Traits\SushiToPhpArray` (dipendenza `SocialProvider`), rimosso `hasRoleTest()` morto in `HasRoles`, `HasPasswordExpiry` via `getAttribute`/`setAttribute`, fixture `PasswordValidationRules*` usa il trait reale.
 - 2026-06-18: rimosso coupling residuo User -> Comment: `BaseUser` non usa piu' `HasCommentatorRelations`, `UserContract` non espone metodi Comment, trait disattivata eliminata. Verifica: `bashscripts/tools/check-user-no-comment-dependency.sh`, `pest Modules/User/tests/Unit/NoCommentModuleDependencyTest.php`, PHPStan User/Progressioni.
 - 2026-06-10: notifications-folio-page + notifications-folio-route — `route('notifications')`, vietato `area-personale.notifiche`
@@ -143,9 +144,15 @@ related:
 - Enhancements proposti: canAny(), canAll(), scope(), after() hooks
 - Commit: docs: document policy inheritance boundary decision
 
+## 2026-07-12 — app/Support eliminato → QueueableAction
+
+- Rimossa `app/Support/` (Hasher, Socialite utils, NotificationSchema, AuthenticationLogQuery, Utils Shield dead code)
+- Azioni: `HashOtpValueAction`, `ResolveUserNameFieldsFromSocialiteAction`, `AnalyzeSocialiteEmailDomainAction`, `IsNotificationSchemaReadableAction`, `GetAuthenticationLogQueryForAuthenticatableAction`
+- Canon: [no-app-support-queueable-actions](concepts/no-app-support-queueable-actions.md)
+
 ## 2026-06-10 — session learnings
 
-- Notifiche: runtime User, schema Notify; `NotificationSchema::isReadable()` per guard FO
+- Notifiche: runtime User, schema Notify; `IsNotificationSchemaReadableAction` per guard FO
 - Folio: `name('notifications')`; vietato `area-personale.notifiche`
 - `user:super-admin`: `--email` + ask + fallback WSL (no Laravel Prompts)
 - Profiles: owner Fixcity `2026_06_10_123000_create_profiles_table` — vedi profile-migration-uuid-contract
