@@ -26,7 +26,7 @@ test('admin panel requires admin or super-admin role', function (): void {
         }
     };
 
-    $panel = Mockery::mock(\Filament\Panel::class);
+    $panel = Mockery::mock(Filament\Panel::class);
     $panel->shouldReceive('getId')->andReturn('admin');
 
     Assert::assertFalse($user->canAccessPanel($panel));

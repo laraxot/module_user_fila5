@@ -9,10 +9,8 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite;
 
 // use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
-use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Models\SocialiteUser;
-use RuntimeException;
 use Spatie\QueueableAction\QueueableAction;
 
 class RetrieveSocialiteUserAction
@@ -25,12 +23,12 @@ class RetrieveSocialiteUserAction
     public function execute(string $provider, SocialiteUserContract $user): ?SocialiteUser
     {
         if (empty($provider)) {
-            throw new InvalidArgumentException('Il provider non può essere vuoto');
+            throw new \InvalidArgumentException('Il provider non può essere vuoto');
         }
 
         $providerId = $user->getId();
         if (! is_string($providerId) && ! is_int($providerId)) {
-            throw new RuntimeException('L\'ID del provider deve essere una stringa o un intero');
+            throw new \RuntimeException('L\'ID del provider deve essere una stringa o un intero');
         }
 
         $res = SocialiteUser::query()
@@ -45,8 +43,8 @@ class RetrieveSocialiteUserAction
 
         $token = $this->resolveOAuthToken($user);
 
-        if ($token === '') {
-            throw new RuntimeException('Impossibile recuperare il token OAuth dal provider '.$provider);
+        if ('' === $token) {
+            throw new \RuntimeException('Impossibile recuperare il token OAuth dal provider '.$provider);
         }
 
         $res->update([
@@ -58,13 +56,13 @@ class RetrieveSocialiteUserAction
 
     private function resolveOAuthToken(SocialiteUserContract $user): string
     {
-        if (isset($user->token) && is_string($user->token) && $user->token !== '') {
+        if (isset($user->token) && is_string($user->token) && '' !== $user->token) {
             return $user->token;
         }
 
         if (method_exists($user, 'getToken')) {
             $tokenValue = $user->getToken();
-            if (is_string($tokenValue) && $tokenValue !== '') {
+            if (is_string($tokenValue) && '' !== $tokenValue) {
                 return $tokenValue;
             }
         }

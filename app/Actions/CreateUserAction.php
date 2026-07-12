@@ -6,7 +6,6 @@ namespace Modules\User\Actions;
 
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
-use InvalidArgumentException;
 use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -34,12 +33,12 @@ final class CreateUserAction
         protected ?array $data = null,
     ) {
         // Validazione input nel costruttore
-        if ($this->name === '' || $this->email === '') {
-            throw new InvalidArgumentException('Nome e email sono obbligatori');
+        if ('' === $this->name || '' === $this->email) {
+            throw new \InvalidArgumentException('Nome e email sono obbligatori');
         }
 
         if (! filter_var($this->email, FILTER_VALIDATE_EMAIL)) {
-            throw new InvalidArgumentException('Email non valida');
+            throw new \InvalidArgumentException('Email non valida');
         }
     }
 

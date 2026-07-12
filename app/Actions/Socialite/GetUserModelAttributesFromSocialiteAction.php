@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite;
 
-use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Datas\SocialiteUserAttributesData;
-use RuntimeException;
 use Spatie\QueueableAction\QueueableAction;
 
 class GetUserModelAttributesFromSocialiteAction
@@ -21,15 +19,15 @@ class GetUserModelAttributesFromSocialiteAction
 
     public function execute(string $provider, SocialiteUserContract $oauthUser): SocialiteUserAttributesData
     {
-        if ($provider === '') {
-            throw new InvalidArgumentException('Il provider non può essere vuoto');
+        if ('' === $provider) {
+            throw new \InvalidArgumentException('Il provider non può essere vuoto');
         }
 
         $nameFields = $this->resolveUserNameFieldsFromSocialiteAction->execute($oauthUser);
 
         $email = $oauthUser->getEmail();
-        if (! is_string($email) || $email === '') {
-            throw new RuntimeException('L\'email deve essere una stringa non vuota');
+        if (! is_string($email) || '' === $email) {
+            throw new \RuntimeException('L\'email deve essere una stringa non vuota');
         }
 
         return new SocialiteUserAttributesData(
