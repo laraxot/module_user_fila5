@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite;
 
 use Illuminate\Support\Str;
-use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Datas\SocialiteEmailDomainAnalysisData;
 use Spatie\QueueableAction\QueueableAction;
@@ -16,8 +15,8 @@ final class AnalyzeSocialiteEmailDomainAction
 
     public function execute(SocialiteUserContract $oauthUser, string $provider): SocialiteEmailDomainAnalysisData
     {
-        if ($provider === '') {
-            throw new InvalidArgumentException('Il provider SSO non può essere vuoto');
+        if ('' === $provider) {
+            throw new \InvalidArgumentException('Il provider SSO non può essere vuoto');
         }
 
         return new SocialiteEmailDomainAnalysisData(
@@ -32,12 +31,12 @@ final class AnalyzeSocialiteEmailDomainAction
         string $domainKind,
     ): bool {
         $email = $oauthUser->getEmail();
-        if (! is_string($email) || $email === '') {
+        if (! is_string($email) || '' === $email) {
             return false;
         }
 
         $configuredDomain = config(sprintf('services.%s.email_domains.%s.tld', $provider, $domainKind));
-        if (! is_string($configuredDomain) || $configuredDomain === '') {
+        if (! is_string($configuredDomain) || '' === $configuredDomain) {
             return false;
         }
 

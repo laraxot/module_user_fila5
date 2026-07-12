@@ -145,7 +145,7 @@ class EditUserWidget extends XotBaseWidget
         /** @var object{execute: callable} $actionInstance */
         $actionInstance = app($this->action);
 
-        /** @phpstan-ignore method.notFound */
+        /* @phpstan-ignore method.notFound */
         $actionInstance->execute($record, $data);
 
         return redirect()->back();

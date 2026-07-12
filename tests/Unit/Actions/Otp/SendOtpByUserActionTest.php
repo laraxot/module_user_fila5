@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
+use Illuminate\Contracts\Hashing\Hasher;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
-use Illuminate\Contracts\Hashing\Hasher;
 use Mockery\MockInterface;
 use Modules\User\Actions\Otp\HashOtpValueAction;
 use Modules\User\Actions\Otp\SendOtpByUserAction;
