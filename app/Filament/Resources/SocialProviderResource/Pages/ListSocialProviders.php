@@ -17,9 +17,6 @@ class ListSocialProviders extends XotBaseListRecords
 {
     protected static string $resource = SocialProviderResource::class;
 
-    /**
-     * @return array<string, \Filament\Tables\Columns\Column>
-     */
     #[\Override]
     public function getTableColumns(): array
     {
@@ -38,9 +35,6 @@ class ListSocialProviders extends XotBaseListRecords
         ];
     }
 
-    /**
-     * @return array<string, \Filament\Tables\Filters\BaseFilter>
-     */
     #[\Override]
     public function getTableFilters(): array
     {

@@ -14,7 +14,6 @@ use function Laravel\Folio\middleware;
 use function Laravel\Folio\name;
 
 /** @var array */
-//$middleware=app(\Modules\Tenant\Actions\Config\ResolveTenantConfigValueAction::class)->execute('middleware');
 //$base_middleware=Arr::get($middleware,'base',[]);
 $base_middleware = [];
 

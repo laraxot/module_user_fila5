@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+uses(Modules\User\Tests\TestCase::class);
 use Modules\User\Datas\DeviceData;
 use Modules\User\Datas\FilamentShieldData;
 use Modules\User\Datas\FilamentUserData;
@@ -14,8 +15,6 @@ use Modules\User\Datas\ShieldResourceData;
 use Modules\User\Datas\SocialProviderData;
 use Modules\User\Datas\SuperAdminData;
 use PHPUnit\Framework\Assert;
-
-uses(Modules\User\Tests\TestCase::class);
 
 test('PermissionTableNamesData can be instantiated', function () {
     try {

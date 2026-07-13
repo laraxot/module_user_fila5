@@ -29,9 +29,6 @@ class OauthClientFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    /**
-     * @return array<string, mixed>
-     */
     public function definition(): array
     {
         return [
@@ -70,11 +67,6 @@ class OauthClientFactory extends Factory
     /**
      * Create a password client.
      */
-    public function asPersonalAccessTokenClient(): static
-    {
-        return $this->personalAccess();
-    }
-
     public function password(): static
     {
         return $this->state(fn (): array => [

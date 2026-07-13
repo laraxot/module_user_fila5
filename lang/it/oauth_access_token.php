@@ -2,17 +2,7 @@
 
 declare(strict_types=1);
 
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/it/oauth_access_token.php
 return [
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
     'navigation' => [
         'label' => 'Token Accesso OAuth',
         'plural_label' => 'Token Accesso OAuth',
@@ -153,9 +143,6 @@ return [
             'helper_text' => 'Crea un nuovo token',
             'description' => 'Azione per creare',
             'icon' => 'heroicon-o-plus',
-        ],
-        'openColumnManager' => [
-            'tooltip' => 'openColumnManager',
         ],
     ],
     'messages' => [

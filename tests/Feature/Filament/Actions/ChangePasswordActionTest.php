@@ -14,7 +14,6 @@ use function Safe\file_get_contents;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /* @var TestCase $this */
     $this->setupFilamentAdminPanel();
 
     $this->action = ChangePasswordAction::make();
@@ -26,20 +25,17 @@ describe('Change Password Action', function (): void {
     });
 
     test('change password action extends correct base class', function (): void {
-        /** @var TestCase $this */
         $action = $this->requireAction();
         Assert::assertInstanceOf(Action::class, $action);
     });
 
     test('change password action has correct icon', function (): void {
-        /** @var TestCase $this */
         $action = $this->requireAction();
         Assert::assertInstanceOf(Action::class, $action);
         Assert::assertSame('heroicon-o-key', $action->getIcon());
     });
 
     test('change password action form has required fields', function (): void {
-        /** @var TestCase $this */
         $action = $this->requireAction();
         Assert::assertInstanceOf(Action::class, $action);
         $reflection = new \ReflectionClass(ChangePasswordAction::class);
@@ -47,7 +43,6 @@ describe('Change Password Action', function (): void {
     });
 
     test('change password action can be executed', function (): void {
-        /** @var TestCase $this */
         $action = $this->requireAction();
         Assert::assertInstanceOf(Action::class, $action);
         Assert::assertSame('changePassword', $action->getName());
@@ -69,7 +64,6 @@ describe('Change Password Action', function (): void {
     });
 
     test('change password action shows success notification', function (): void {
-        /** @var TestCase $this */
         $action = $this->requireAction();
         Assert::assertInstanceOf(Action::class, $action);
         Assert::assertSame('changePassword', $action->getName());
@@ -83,7 +77,6 @@ describe('Change Password Action', function (): void {
     });
 
     test('change password action uses translation keys', function (): void {
-        /** @var TestCase $this */
         $action = $this->requireAction();
         Assert::assertInstanceOf(Action::class, $action);
         Assert::assertNotEmpty($action->getLabel());

@@ -380,7 +380,7 @@ app/Notifications/Auth
 app/Providers
 app/Providers/Filament
 app/Rules
-# app/Support — eliminato 2026-07-12 → Actions/Adapters/Datas
+app/Support
 app/Traits
 app/View
 app/View/Components

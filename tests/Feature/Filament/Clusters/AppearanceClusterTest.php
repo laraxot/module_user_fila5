@@ -4,13 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Filament\Clusters;
 
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Clusters\Appearance;
 use Modules\User\Filament\Clusters\Appearance\Pages\Alignment;
@@ -72,7 +65,6 @@ describe('Appearance Cluster', function (): void {
     });
 
     test('cluster pages do not extend filament classes directly', function (): void {
-        /** @var TestCase $this */
         $files = glob(base_path('Modules/User/app/Filament/Clusters/Appearance/Pages/*.php'));
 
         if ([] === $files) {

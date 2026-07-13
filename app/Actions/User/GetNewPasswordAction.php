@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\User;
 
+use Illuminate\Contracts\Hashing\Hasher;
 use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\QueueableAction\QueueableAction;
@@ -16,10 +17,10 @@ class GetNewPasswordAction
     {
         $user = $record;
 
-        $password = once(function () use ($user) {
+        return once(function () use ($user) {
             $generator = new GetPronounceablePasswordAction();
             $plainPassword = $generator->execute();
-            $hasher = app(\Illuminate\Contracts\Hashing\Hasher::class);
+            $hasher = app(Hasher::class);
             $hashedPassword = $hasher->make($plainPassword);
 
             $user->forceFill([
@@ -28,7 +29,5 @@ class GetNewPasswordAction
 
             return $plainPassword;
         });
-
-        return $password;
     }
 }

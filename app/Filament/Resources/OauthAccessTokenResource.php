@@ -4,14 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
-// User — domain PHP (claude-audit documentation ratio).
-
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;

@@ -2,33 +2,33 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Support;
+namespace Modules\User\Actions\Shield;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\User\Contracts\HasShieldPermissions;
 use Modules\User\Datas\FilamentShieldData;
-
-use function Safe\class_implements;
-use function Safe\class_uses;
-
+use Spatie\QueueableAction\QueueableAction;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Traits\HasRoles;
 use Webmozart\Assert\Assert;
 
+use function Safe\class_implements;
+use function Safe\class_uses;
+
 /**
- * ---.
+ * Wrapper che raccoglie i metodi utility legacy di Support\Utils in un'unica
+ * QueueableAction, in attesa di essere suddivisi in action granulari.
  */
-class Utils
+class ShieldUtilsAction
 {
+    use QueueableAction;
+
     public static function getFilamentAuthGuard(): string
     {
         return 'web';
-
-        // Assert::string($res = config('filament.auth.guard'), 'wip');
-        // return $res;
     }
 
     public static function isResourcePublished(): bool
@@ -59,25 +59,21 @@ class Utils
 
     public static function getResourceNavigationSort(): int
     {
-        // return config('filament-shield.shield_resource.navigation_sort');
         return FilamentShieldData::make()->shield_resource->navigation_sort;
     }
 
     public static function isResourceNavigationBadgeEnabled(): bool
     {
-        // return config('filament-shield.shield_resource.navigation_badge', true);
         return FilamentShieldData::make()->shield_resource->navigation_badge;
     }
 
     public static function isResourceNavigationGroupEnabled(): bool
     {
-        // return config('filament-shield.shield_resource.navigation_group', true);
         return FilamentShieldData::make()->shield_resource->navigation_group;
     }
 
     public static function isResourceGloballySearchable(): bool
     {
-        // return config('filament-shield.shield_resource.is_globally_searchable', false);
         return FilamentShieldData::make()->shield_resource->is_globally_searchable;
     }
 
@@ -90,46 +86,40 @@ class Utils
 
     public static function isAuthProviderConfigured(): bool
     {
-        return in_array(
+        return \in_array(
             "BezhanSalleh\FilamentShield\Traits\HasFilamentShield",
             class_uses(static::getAuthProviderFQCN()),
             strict: true
-        ) || in_array(HasRoles::class, class_uses(static::getAuthProviderFQCN()), strict: true);
+        ) || \in_array(HasRoles::class, class_uses(static::getAuthProviderFQCN()), strict: true);
     }
 
     public static function isSuperAdminEnabled(): bool
     {
-        // return (bool) config('filament-shield.super_admin.enabled', true);
         return FilamentShieldData::make()->super_admin->enabled;
     }
 
     public static function getSuperAdminName(): string
     {
-        // return (string) config('filament-shield.super_admin.name');
         return FilamentShieldData::make()->super_admin->name;
     }
 
     public static function isSuperAdminDefinedViaGate(): bool
     {
-        // return (bool) static::isSuperAdminEnabled() && config('filament-shield.super_admin.define_via_gate', false);
         return FilamentShieldData::make()->super_admin->define_via_gate;
     }
 
     public static function getSuperAdminGateInterceptionStatus(): string
     {
-        // return (string) config('filament-shield.super_admin.intercept_gate');
         return FilamentShieldData::make()->super_admin->intercept_gate;
     }
 
     public static function isFilamentUserRoleEnabled(): bool
     {
-        // return (bool) config('filament-shield.filament_user.enabled', true);
         return FilamentShieldData::make()->filament_user->enabled;
     }
 
     public static function getFilamentUserRoleName(): string
     {
-        // return (string) config('filament-shield.filament_user.name');
         return FilamentShieldData::make()->filament_user->name;
     }
 
@@ -263,7 +253,7 @@ class Utils
 
     public static function doesResourceHaveCustomPermissions(string $resourceClass): bool
     {
-        return in_array(HasShieldPermissions::class, class_implements($resourceClass), strict: true);
+        return \in_array(HasShieldPermissions::class, class_implements($resourceClass), strict: true);
     }
 
     /**
@@ -323,5 +313,10 @@ class Utils
         $roleResourcePath = base_path('Modules/User/app/Filament/Resources/RoleResource.php');
 
         return File::exists($roleResourcePath);
+    }
+
+    public function execute(): void
+    {
+        // Action di raccolta: i metodi statici sono utility retro-compatibili.
     }
 }

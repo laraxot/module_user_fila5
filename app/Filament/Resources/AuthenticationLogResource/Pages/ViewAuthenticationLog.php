@@ -4,14 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\AuthenticationLogResource\Pages;
 
-// User — domain PHP (claude-audit documentation ratio).
-
-// User — domain PHP (claude-audit documentation ratio).
-
-// User — domain PHP (claude-audit documentation ratio).
-
-// User — domain PHP (claude-audit documentation ratio).
-
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;

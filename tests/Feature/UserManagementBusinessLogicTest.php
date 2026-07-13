@@ -4,28 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature;
 
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -271,12 +249,10 @@ describe('User Management Business Logic', function (): void {
     });
 
     test('can soft delete user', function (): void {
-        /* @var TestCase $this */
         $this->skipTest('User model does not use SoftDeletes.');
     });
 
     test('can restore soft deleted user', function (): void {
-        /* @var TestCase $this */
         $this->skipTest('User model does not use SoftDeletes.');
     });
 
@@ -379,7 +355,6 @@ describe('User Management Business Logic', function (): void {
     });
 
     test('can validate user email uniqueness', function (): void {
-        /* @var TestCase $this */
         UserFactory::new()->createOne(['email' => 'test@example.com']);
 
         try {

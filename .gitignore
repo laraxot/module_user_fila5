@@ -102,6 +102,8 @@ Thumbs.db
 *.old2
 *.backup
 *.backup.*
+*.backup-*
+*.backup_*
 *.bak
 *.bakcup
 *.new
@@ -161,7 +163,6 @@ public_html
 lang/lang/
 _docs/
 _docs/
-docs/archive/
 
 # Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
 **/docs/archive/
@@ -175,15 +176,3 @@ docs/archive/
 *~head
 
 agentdb.rvf
-test-results/
-
-# Legacy PHPUnit (solo cartella maiuscola Tests/ — non confondere con Pest tests/)
-/Tests/
-
-# Pest + audit-coverage bridge (claude-audit legge .gitignore case-insensitive su WSL)
-!tests/
-!tests/**
-!audit-coverage/
-!audit-coverage/**
-docs/legacy
-tests/AuditCoverage

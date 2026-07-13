@@ -17,9 +17,6 @@ class OauthPersonalAccessClientFactory extends Factory
 {
     protected $model = OauthPersonalAccessClient::class;
 
-    /**
-     * @return array<string, mixed>
-     */
     public function definition(): array
     {
         return [

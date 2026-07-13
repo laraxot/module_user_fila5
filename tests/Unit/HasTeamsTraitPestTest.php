@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
@@ -15,13 +16,6 @@ use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
-
-uses(Modules\User\Tests\TestCase::class);
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
 
 /**
  * @param array<string, mixed> $attributes

@@ -2,19 +2,17 @@
 
 declare(strict_types=1);
 
-use Illuminate\Contracts\Hashing\Hasher;
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
 use Mockery\MockInterface;
-use Modules\User\Actions\Otp\HashOtpValueAction;
+use Illuminate\Contracts\Hashing\Hasher as HasherContract;
 use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Notifications\Auth\Otp;
 use PHPUnit\Framework\Assert;
-
-uses(Modules\User\Tests\TestCase::class);
 
 describe('SendOtpByUserAction', function () {
     it('generates and sends an OTP to the user', function () {
@@ -32,11 +30,12 @@ describe('SendOtpByUserAction', function () {
             $mock->allows(['random' => 'random-otp-12']);
         });
 
-        $mockHasher = configureMock(Hasher::class, function (MockInterface $mock): void {
+        $hasher = configureMock(HasherContract::class, function (MockInterface $mock): void {
             $mock->allows(['make' => str_repeat('a', 60)]);
         });
+        app()->instance(HasherContract::class, $hasher);
 
-        $action = new SendOtpByUserAction($passwordData, $mockStr, new HashOtpValueAction($mockHasher));
+        $action = new SendOtpByUserAction($passwordData, $mockStr);
 
         $now = Carbon::now();
         Carbon::setTestNow($now);

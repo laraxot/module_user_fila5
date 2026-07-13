@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/it/oauth_refresh_token.php
 return [
     'navigation' => [
         'label' => 'Refresh Token OAuth',
@@ -49,11 +45,6 @@ return [
             'helper_text' => 'Data e ora di creazione del token',
             'description' => 'Timestamp di creazione',
         ],
-    ],
-    'filters' => [
-        'revoked' => 'Revocati',
-        'expired' => 'Scaduti',
-        'valid' => 'Validi',
     ],
     'actions' => [
         'revoke' => [

@@ -16,6 +16,7 @@ return new class extends XotBaseMigration {
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+            // Laraxot extensions with hasColumn checks - DRY + KISS
             if (! $this->hasColumn('display_name')) {
                 $table->string('display_name')->nullable();
             }

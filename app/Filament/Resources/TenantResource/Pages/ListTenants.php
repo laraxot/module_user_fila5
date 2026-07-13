@@ -3,6 +3,7 @@
 /**
  * Tenant List Management.
  */
+
 declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
@@ -19,9 +20,6 @@ class ListTenants extends XotBaseListRecords
 
     /**
      * Definisce le colonne della tabella per la lista tenant.
-     */
-    /**
-     * @return array<string, \Filament\Tables\Columns\Column>
      */
     #[\Override]
     public function getTableColumns(): array

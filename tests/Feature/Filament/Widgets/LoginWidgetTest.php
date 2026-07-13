@@ -14,7 +14,6 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /* @var TestCase $this */
     $this->widget = new LoginWidget();
 });
 
@@ -31,7 +30,6 @@ describe('Login Widget', function (): void {
     });
 
     test('it has correct form schema', function (): void {
-        /** @var TestCase $this */
         $widget = $this->requireLoginWidget();
         $form = $widget->getFormSchema();
 
@@ -49,7 +47,6 @@ describe('Login Widget', function (): void {
     });
 
     test('it can authenticate user', function (): void {
-        /** @var TestCase $this */
         $widget = $this->requireLoginWidget();
         if (! class_exists('CreateUsersTable')) {
             $this->skipTest('Database not available for testing');

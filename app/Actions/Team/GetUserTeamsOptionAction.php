@@ -11,7 +11,9 @@ class GetUserTeamsOptionAction
 {
     use QueueableAction;
 
-    /** @return array<int|string, string> */
+    /**
+     * @return array<int|string, string>
+     */
     public function execute(): array
     {
         $teams = TeamUser::where('user_id', authId())->get();

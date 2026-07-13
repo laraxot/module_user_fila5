@@ -97,15 +97,16 @@ class Device extends BaseModel
     ];
 
     /**
-     * Define the many-to-many relationship between devices and users.
-     *
-     * @return BelongsToMany<Model&UserContract, $this>
+     * @return BelongsToMany<Model&UserContract, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
      */
     public function users(): BelongsToMany
     {
         $userClass = XotData::make()->getUserClass();
 
-        return $this->belongsToManyX($userClass);
+        /** @var BelongsToMany<Model&UserContract, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'> $relation */
+        $relation = $this->belongsToManyX($userClass);
+
+        return $relation;
     }
 
     /**

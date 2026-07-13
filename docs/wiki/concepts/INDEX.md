@@ -3,7 +3,7 @@ title: "concepts index — User"
 type: index
 tags: [concepts, User]
 created: 2026-05-11
-updated: 2026-07-12
+updated: 2026-06-04
 ---
 
 # concepts Index — User
@@ -24,8 +24,7 @@ Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta
 
 ## Notifiche e profili (2026-06-10)
 
-- [no-app-support-queueable-actions](no-app-support-queueable-actions.md) — vietato `app/Support/` per business logic; solo QueueableAction
-- [notifications-runtime-model.md](notifications-runtime-model.md) — runtime + `IsNotificationSchemaReadableAction`
+- [notifications-runtime-model.md](notifications-runtime-model.md) — runtime + `NotificationSchema`
 - [notifications-folio-page.md](notifications-folio-page.md) — `route('notifications')`
 - [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner Fixcity
 - [no-notifications-migration-in-user-module](../rules/no-notifications-migration-in-user-module.md)
@@ -42,7 +41,7 @@ Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta
 - [folio-pages-owner-pattern](folio-pages-owner-pattern.md) — `pages/` nel modulo, mount Cms, zero `web.php`
 - [notifications-folio-page](notifications-folio-page.md) — centro notifiche in-app
 - [notifications-folio-route](notifications-folio-route.md) — `route('notifications')` quick ref
-- [notifications-runtime-model](notifications-runtime-model.md) — model + `IsNotificationSchemaReadableAction`
+- [notifications-runtime-model](notifications-runtime-model.md) — model + `NotificationSchema`
 - Cms: [folio-list-vs-route-list](../../Cms/docs/wiki/concepts/folio-list-vs-route-list.md) — `folio:list` audit
 - Cms: [folio-filesystem-routing-no-web-php](../../Cms/docs/wiki/concepts/folio-filesystem-routing-no-web-php.md) — religione routing
 

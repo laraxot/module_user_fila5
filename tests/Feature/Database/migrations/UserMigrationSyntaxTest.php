@@ -12,17 +12,6 @@ use function Safe\file_get_contents;
 
 uses(TestCase::class);
 
-function assertMigrationPhpSyntaxValid(string $migrationFile): void
-{
-    $output = [];
-    $exitCode = 0;
-    exec('php -l '.escapeshellarg($migrationFile), $output, $exitCode);
-
-    $message = implode(PHP_EOL, array_values(array_filter($output, 'is_string')));
-
-    Assert::assertSame(0, $exitCode, $message);
-}
-
 describe('User Migration Syntax', function (): void {
     test('user migrations do not contain merge conflict markers', function (): void {
         foreach (userMigrationFiles() as $migrationFile) {
@@ -36,7 +25,21 @@ describe('User Migration Syntax', function (): void {
 
     test('user migrations have valid php syntax', function (): void {
         foreach (userMigrationFiles() as $migrationFile) {
-            assertMigrationPhpSyntaxValid($migrationFile);
+            $output = [];
+            $exitCode = 0;
+
+            exec('php -l '.escapeshellarg($migrationFile), $output, $exitCode);
+
+            $lines = [];
+            if (is_array($output)) {
+                foreach ($output as $line) {
+                    if (is_string($line)) {
+                        $lines[] = $line;
+                    }
+                }
+            }
+
+            Assert::assertSame(0, $exitCode, implode(PHP_EOL, $lines));
         }
     });
 });

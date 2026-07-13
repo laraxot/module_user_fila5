@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/it/oauth_auth_code.php
 return [
     'navigation' => [
         'label' => 'Codici Autorizzazione OAuth',
@@ -57,11 +53,6 @@ return [
             'helper_text' => 'Data e ora di scadenza del codice',
             'description' => 'Data di scadenza',
         ],
-    ],
-    'filters' => [
-        'revoked' => 'Revocati',
-        'expired' => 'Scaduti',
-        'valid' => 'Validi',
     ],
     'actions' => [
         'revoke' => [

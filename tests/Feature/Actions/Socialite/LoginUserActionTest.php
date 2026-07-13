@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Actions\Socialite;
 
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Event;
 use Modules\User\Actions\Socialite\LoginUserAction;
@@ -23,7 +18,6 @@ uses(TestCase::class);
 describe('Login User Action', function (): void {
     test('authenticates connected socialite user and dispatches event', function (): void {
         /* @var \Modules\User\Tests\TestCase $this */
-        /* @var TestCase $this */
         Event::fake([SocialiteUserConnected::class]);
 
         $user = UserFactory::new()->createOne();
@@ -44,7 +38,6 @@ describe('Login User Action', function (): void {
     });
 
     test('throws when related user is not authenticatable', function (): void {
-        /** @var TestCase $this */
         $socialiteUser = new SocialiteUser([
             'provider' => 'test-provider',
             'provider_id' => 'provider-id-2',
@@ -62,7 +55,6 @@ describe('Login User Action', function (): void {
     });
 
     test('redirects to intended page when available', function (): void {
-        /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
 
         $socialiteUser = new SocialiteUser([
@@ -99,7 +91,6 @@ describe('Login User Action', function (): void {
     });
 
     test('authenticates different users independently', function (): void {
-        /** @var TestCase $this */
         $user1 = UserFactory::new()->createOne(['email' => 'user1-'.uniqid().'@example.com']);
         $user2 = UserFactory::new()->createOne(['email' => 'user2-'.uniqid().'@example.com']);
 
@@ -140,7 +131,6 @@ describe('Login User Action', function (): void {
     });
 
     test('handles null user assertion gracefully', function (): void {
-        /** @var TestCase $this */
         $socialiteUser = new SocialiteUser([
             'provider' => 'test',
             'provider_id' => 'test-null',

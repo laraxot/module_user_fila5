@@ -2,29 +2,7 @@
 
 declare(strict_types=1);
 
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/en/user.php
 return [
-    // User — translation section (claude-audit doc ratio).
-    // User — translation keys (no business logic).
-    // User — translation keys (no business logic).
-    // User — translation keys (no business logic).
-    // User — translation keys (no business logic).
-    // User — translation keys (no business logic).
-    // User — translation keys (no business logic).
-    // User — translation keys (no business logic).
-    // User — translation keys (no business logic).
-    // User — translation keys (no business logic).
-    // User — translation keys (no business logic).
-    // User — translation keys (no business logic).
-    // User — translation keys (no business logic).
-    // User — translation keys (no business logic).
-    // User — translation keys (no business logic).
-    // User — translation keys (no business logic).
-    // User — translation keys (no business logic).
-    // User — translation keys (no business logic).
     'actions' => [
         'attach_user' => 'Attach User',
         'associate_user' => 'Associate User',
@@ -381,6 +359,45 @@ return [
         'delete_users' => 'Elimina utenti',
         'impersonate_users' => 'Impersona utenti',
         'manage_roles' => 'Gestisci ruoli',
+    ],
+    'auth' => [
+        'register' => [
+            'title' => [
+                'text' => 'Register',
+            ],
+            'subtitle' => [
+                'text' => 'Create a new account',
+            ],
+            'description' => [
+                'text' => 'Enter your details to complete registration',
+            ],
+            'button' => [
+                'text' => 'Register',
+            ],
+            'login' => [
+                'text' => 'Login',
+            ],
+            'already_have_account' => [
+                'text' => 'Already have an account?',
+            ],
+            'submit' => [
+                'text' => 'Register',
+            ],
+            'sidebar' => [
+                'support_title' => [
+                    'text' => 'Need help?',
+                ],
+                'help_email' => [
+                    'text' => 'Contact support via email',
+                ],
+                'help_password' => [
+                    'text' => 'Forgot password? Recover access',
+                ],
+                'help_support' => [
+                    'text' => 'Guide and support',
+                ],
+            ],
+        ],
     ],
     'model' => [
         'label' => 'Utente',

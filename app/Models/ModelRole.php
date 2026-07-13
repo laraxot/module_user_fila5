@@ -48,6 +48,5 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class ModelRole extends BaseMorphPivot
 {
-    /** @var string */
     protected $table = 'model_has_role';
 }

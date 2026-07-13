@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+uses(Modules\User\Tests\TestCase::class);
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Collection;
 use Modules\User\Database\Factories\TeamFactory;
@@ -10,16 +11,6 @@ use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Tests\Unit\Models\Traits\Fixtures\MockUserWithTeams;
 use PHPUnit\Framework\Assert;
-
-uses(Modules\User\Tests\TestCase::class);
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
 
 function traitsHasTeamsMockUser(string $id = 'mock-user-1'): MockUserWithTeams
 {

@@ -16,7 +16,6 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /* @var TestCase $this */
     $this->widget = new UserOverview();
     $this->user = UserFactory::new()->createOne([
         'type' => UserType::MasterAdmin,
@@ -26,13 +25,11 @@ beforeEach(function (): void {
 
 describe('User Overview', function (): void {
     test('user overview widget extends correct base class', function (): void {
-        /** @var TestCase $this */
         $widget = $this->requireWidget();
         Assert::assertInstanceOf(Widget::class, $widget);
     });
 
     test('user overview widget has correct view', function (): void {
-        /** @var TestCase $this */
         $widget = $this->requireWidget();
         $reflection = new \ReflectionClass(UserOverview::class);
         $viewProperty = $reflection->getProperty('view');
@@ -42,14 +39,12 @@ describe('User Overview', function (): void {
     });
 
     test('user overview widget has record property', function (): void {
-        /** @var TestCase $this */
         $widget = $this->requireWidget();
         Assert::assertInstanceOf(UserOverview::class, $widget);
         Assert::assertNull($widget->record);
     });
 
     test('user overview widget can set record', function (): void {
-        /** @var TestCase $this */
         $widget = $this->requireWidget();
         Assert::assertInstanceOf(UserOverview::class, $widget);
         $user = $this->requireUser();
@@ -71,7 +66,6 @@ describe('User Overview', function (): void {
     });
 
     test('user overview widget can be instantiated', function (): void {
-        /** @var TestCase $this */
         $widget = $this->requireWidget();
         Assert::assertInstanceOf(UserOverview::class, $widget);
     });
@@ -85,7 +79,6 @@ describe('User Overview', function (): void {
     });
 
     test('user overview widget view path is correct', function (): void {
-        /** @var TestCase $this */
         $widget = $this->requireWidget();
         $reflection = new \ReflectionClass(UserOverview::class);
         $viewProperty = $reflection->getProperty('view');

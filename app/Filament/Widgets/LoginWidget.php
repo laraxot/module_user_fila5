@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
  * LoginWidget: Widget di login conforme alle regole Windsurf/Xot.
@@ -23,7 +23,7 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  *
  * @property array<string, mixed>|null $data
  */
-class LoginWidget extends XotBaseWidget
+class LoginWidget extends XotBaseSchemaWidget
 {
     /**
      * @var view-string
@@ -52,7 +52,6 @@ class LoginWidget extends XotBaseWidget
      *
      * @return array<int, Component>
      */
-    #[\Override]
     public function getFormSchema(): array
     {
         return [
@@ -73,7 +72,6 @@ class LoginWidget extends XotBaseWidget
      *
      * @return array<string, mixed>
      */
-    #[\Override]
     public function getFormFill(): array
     {
         return [
@@ -85,7 +83,6 @@ class LoginWidget extends XotBaseWidget
     /**
      * Handle login form submission.
      */
-    #[\Override]
     public function save(): void
     {
         try {
@@ -96,7 +93,7 @@ class LoginWidget extends XotBaseWidget
             $attempt_data = Arr::only($data, ['email', 'password']);
 
             if (! Auth::attempt($attempt_data, $remember)) {
-                throw ValidationException::withMessages(['email' => [__('user::messages.credentials_incorrect')]]);
+                throw ValidationException::withMessages(['email' => [__('user::messages.failed')]]);
             }
 
             session()->regenerate();
@@ -119,12 +116,13 @@ class LoginWidget extends XotBaseWidget
             // $this->form->callAfter();
 
             foreach ($e->errors() as $field => $messages) {
-                // PHPStan Level 10: Ensure messages is array
+                // PHPStan Level 10: Ensure messages is array of strings
                 if (! is_array($messages)) {
                     $messages = [$messages];
                 }
 
-                $this->addError($field, implode(' ', array_map(static fn (mixed $message): string => (string) $message, $messages)));
+                /* @var array<int, string> $messages */
+                $this->addError($field, implode(' ', array_map(static fn (mixed $v): string => (string) $v, $messages)));
             }
         } catch (\Exception $e) {
             report($e);
@@ -146,7 +144,6 @@ class LoginWidget extends XotBaseWidget
     /**
      * Get the form model.
      */
-    #[\Override]
     protected function getFormModel(): ?Model
     {
         return null;

@@ -20,7 +20,10 @@ test('admin panel requires admin or super-admin role', function (): void {
             return $this->superAdmin;
         }
 
-        public function hasRole($roles, ?string $guard = null): bool
+        /**
+     * @param  array<int, string>|Collection<int, string>  $roles
+     */
+    public function hasRole($roles, ?string $guard = null): bool
         {
             return $this->hasAdminRole;
         }

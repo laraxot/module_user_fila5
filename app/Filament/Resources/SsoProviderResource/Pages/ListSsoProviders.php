@@ -14,9 +14,6 @@ class ListSsoProviders extends XotBaseListRecords
 {
     protected static string $resource = SsoProviderResource::class;
 
-    /**
-     * @return array<string, \Filament\Tables\Columns\Column>
-     */
     #[\Override]
     public function getTableColumns(): array
     {
@@ -30,9 +27,6 @@ class ListSsoProviders extends XotBaseListRecords
         ];
     }
 
-    /**
-     * @return array<string, \Filament\Tables\Filters\BaseFilter>
-     */
     #[\Override]
     public function getTableFilters(): array
     {
