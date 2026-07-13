@@ -9,7 +9,7 @@ use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-use Modules\Activity\Actions\IsActivityLogSchemaWritableAction;
+use Modules\Activity\Actions\Schema\IsActivityLogSchemaWritableAction;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
