@@ -6,7 +6,6 @@ namespace Modules\User\Actions\Socialite;
 
 use Illuminate\Contracts\Database\Query\Builder;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
-use Modules\User\Actions\Socialite\AnalyzeSocialiteEmailDomainAction;
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;

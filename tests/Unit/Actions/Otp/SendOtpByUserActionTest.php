@@ -3,11 +3,11 @@
 declare(strict_types=1);
 
 uses(Modules\User\Tests\TestCase::class);
+use Illuminate\Contracts\Hashing\Hasher as HasherContract;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
 use Mockery\MockInterface;
-use Illuminate\Contracts\Hashing\Hasher as HasherContract;
 use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Datas\PasswordData;

@@ -11,10 +11,10 @@ namespace Modules\User\Listeners;
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Modules\User\Actions\Authentication\GetAuthenticationLogQueryForAuthenticatableAction;
 use Modules\User\Actions\GetCurrentDeviceAction;
 use Modules\User\Models\BaseUser;
 use Modules\User\Models\DeviceUser;
-use Modules\User\Actions\Authentication\GetAuthenticationLogQueryForAuthenticatableAction;
 
 class LogoutListener
 {
