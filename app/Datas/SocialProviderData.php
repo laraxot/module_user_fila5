@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Datas;
 
-use Modules\Tenant\Services\TenantService;
 use Spatie\LaravelData\Data;
 
 /**
@@ -39,7 +38,7 @@ class SocialProviderData extends Data
     {
         if (! self::$instance) {
             /** @var array<string, mixed> $data */
-            $data = TenantService::getConfig('social-providers');
+            $data = app(\Modules\Tenant\Actions\Config\GetTenantConfigArrayAction::class)->execute('social-providers');
             dddx($data);
             self::$instance = self::from($data);
         }
