@@ -78,11 +78,13 @@ class Change extends Component
 
     public function render(): View
     {
+        /** @phpstan-var view-string */
         $view = 'user::livewire.team.change';
         $view_params = [
             'view' => $view,
         ];
         if ([] === $this->teams) {
+            /** @phpstan-var view-string */
             $view = 'ui::livewire.empty';
         }
 

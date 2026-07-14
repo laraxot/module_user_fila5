@@ -11,7 +11,10 @@ class UserDropdown extends XotBaseSchemaWidget
 {
     /**
      * The view for this widget.
+     *
+     * @phpstan-var view-string
      */
+    /** @phpstan-ignore property.defaultValue */
     protected string $view = 'user::filament.widgets.user-dropdown';
 
     /**

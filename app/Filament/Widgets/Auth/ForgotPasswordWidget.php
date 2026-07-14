@@ -18,6 +18,8 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class ForgotPasswordWidget extends XotBaseSchemaWidget
 {
+    /** @phpstan-var view-string */
+    /** @phpstan-ignore property.defaultValue */
     protected string $view = 'user::widgets.auth.forgot-password-widget';
 
     /**

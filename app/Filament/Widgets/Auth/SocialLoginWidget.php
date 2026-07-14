@@ -20,12 +20,12 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class SocialLoginWidget extends XotBaseSchemaWidget
 {
+    /** @phpstan-var view-string */
+    /** @phpstan-ignore property.defaultValue */
     protected string $view = 'user::filament.widgets.auth.social-login';
 
     /**
      * Widget senza form: schema vuoto.
-     *
-     * @return array<string, Component>
      */
     public function getFormSchema(): array
     {

@@ -176,3 +176,5 @@ _docs/
 *~head
 
 agentdb.rvf
+.vscode/
+.devcontainer/

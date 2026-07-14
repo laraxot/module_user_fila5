@@ -26,6 +26,7 @@ class Message extends Component
     public function render(): View|\Closure|string
     {
         $metatag = MetatagData::make();
+        /** @phpstan-var view-string */
         $view = 'user::components.mail.html.message';
         $view_params = [
             'logo' => asset($metatag->getLogoHeader()),

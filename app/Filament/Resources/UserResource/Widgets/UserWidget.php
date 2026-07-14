@@ -16,6 +16,8 @@ class UserWidget extends XotBaseWidget
 
     protected static bool $isLazy = false;
 
+    /** @phpstan-var view-string */
+    /** @phpstan-ignore property.defaultValue */
     protected string $view = 'user::filament.resources.user.widgets.user-widget';
 
     public function getFormSchema(): array

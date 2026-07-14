@@ -30,17 +30,18 @@ test('admin panel requires admin or super-admin role', function (): void {
         }
     };
 
-    $panel = Mockery::mock(Filament\Panel::class);
-    $panel->shouldReceive('getId')->andReturn('admin');
+    $panel = app(Filament\Panel::class)->id('admin');
 
+    /** @phpstan-ignore argument.type (Panel mock acceptable at runtime) */
     Assert::assertFalse($user->canAccessPanel($panel));
 
     $user->hasAdminRole = true;
+    /** @phpstan-ignore argument.type (Panel mock acceptable at runtime) */
     Assert::assertTrue($user->canAccessPanel($panel));
 });
 
 test('password mutator hashes long passphrases instead of storing plaintext', function (): void {
-    $user = new BaseUser();
+    $user = new class extends BaseUser {};
     $longPassphrase = 'this-is-a-very-long-passphrase-that-exceeds-thirty-two-characters';
 
     $user->password = $longPassphrase;

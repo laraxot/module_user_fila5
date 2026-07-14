@@ -12,6 +12,8 @@ class UserOverview extends XotBaseWidget
 {
     public ?Model $record = null;
 
+    /** @phpstan-var view-string */
+    /** @phpstan-ignore property.defaultValue */
     protected string $view = 'user::filament.resources.user-resource.widgets.user-overview';
 
     /**

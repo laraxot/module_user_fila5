@@ -45,6 +45,9 @@ class Logout extends Component
      */
     public function render(): View
     {
-        return view('user::livewire.logout');
+        /** @phpstan-var view-string */
+        $viewName = 'user::livewire.logout';
+
+        return view($viewName);
     }
 }

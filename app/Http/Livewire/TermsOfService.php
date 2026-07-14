@@ -22,7 +22,10 @@ class TermsOfService extends Component
             $text = config('terms-of-service.text');
         }
 
-        return view('user::livewire.terms-of-service', [
+        /** @phpstan-var view-string */
+        $viewName = 'user::livewire.terms-of-service';
+
+        return view($viewName, [
             'text' => $text,
         ]);
     }
