@@ -8,9 +8,9 @@ use Filament\Schemas\Components\Component;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
+use Modules\User\Actions\Notification\IsNotificationSchemaReadableAction;
 use Modules\User\Models\BaseUser;
 use Modules\User\Models\Notification;
-use Modules\User\Actions\Notification\IsNotificationSchemaReadableAction;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
