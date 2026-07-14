@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
-use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**

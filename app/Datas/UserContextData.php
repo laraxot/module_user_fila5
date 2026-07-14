@@ -35,7 +35,7 @@ class UserContextData extends Data
         return new self(
             userId: $userId,
             email: (string) ($userModel->email ?? ''),
-            isAdministrator: ! empty($userModel->role) && strtolower((string) $userModel->role) === 'admin',
+            isAdministrator: ! empty($userModel->role) && 'admin' === strtolower((string) $userModel->role),
             roles: $roles,
         );
     }
