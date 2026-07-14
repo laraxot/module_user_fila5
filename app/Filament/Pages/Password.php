@@ -11,7 +11,7 @@ use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Database\Eloquent\Model;
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Config\SaveTenantConfigAction;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Filament\Pages\XotBasePage;
 
@@ -86,7 +86,7 @@ class Password extends XotBasePage
         try {
             /** @var array<string, mixed> $data */
             $data = $this->form->getState();
-            TenantService::saveConfig('password', $data);
+            app(SaveTenantConfigAction::class)->execute('password', $data);
 
             // $this->handleRecordUpdate($this->getUser(), $data);
         } catch (Halt $exception) {

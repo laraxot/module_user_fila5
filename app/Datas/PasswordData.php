@@ -11,7 +11,7 @@ namespace Modules\User\Datas;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\TextInput as FormsTextInput;
 use Illuminate\Validation\Rules\Password;
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
 use Modules\User\Traits\PasswordValidationRules;
 use Spatie\LaravelData\Data;
 
@@ -45,8 +45,7 @@ class PasswordData extends Data
     public static function make(): self
     {
         if (! self::$instance) {
-            /** @var array<string, mixed> $data */
-            $data = TenantService::getConfig('password');
+            $data = app(GetTenantConfigArrayAction::class)->execute('password');
             self::$instance = self::from($data);
         }
 
