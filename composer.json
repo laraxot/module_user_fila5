@@ -45,7 +45,8 @@
       "Modules\\User\\Tests\\": "tests/"
     },
     "files": [
-      "tests/Support/helpers.php"
+      "tests/Support/helpers.php",
+      "tests/Support/team-management-helpers.php"
     ]
   },
   "require": {
