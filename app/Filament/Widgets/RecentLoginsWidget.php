@@ -7,7 +7,7 @@ namespace Modules\User\Filament\Widgets;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Widgets\TableWidget as BaseWidget;
+use Modules\Xot\Filament\Widgets\XotBaseTableWidget as BaseWidget;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\AuthenticationLog;
 
