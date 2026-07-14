@@ -10,17 +10,11 @@ return new class extends XotBaseMigration {
      */
     public function up(): void
     {
-        /**
-         * @var array<mixed> $tableNames
-         */
+        /** @var array<string, string> $tableNames */
         $tableNames = config('permission.table_names');
-        /**
-         * @var array<mixed> $columnNames
-         */
+        /** @var array<string, string> $columnNames */
         $columnNames = config('permission.column_names');
-        /**
-         * @var array<mixed> $teams
-         */
+        /** @var bool $teams */
         $teams = config('permission.teams');
 
         if (empty($tableNames)) {

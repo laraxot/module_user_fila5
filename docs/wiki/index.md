@@ -4,7 +4,7 @@ type: index
 module: User
 tags: [user, wiki, index, auth, socialite, permissions]
 created: 2026-04-15
-updated: 2026-06-18
+updated: 2026-07-08
 qmd: "user module wiki index auth socialite permissions filament forms"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
@@ -38,6 +38,8 @@ Indice operativo del wiki User.
 - [comparisons/](./comparisons/): Implementazioni alternative.
 - [decisions/](./decisions/): ADL (Architectural Decision Log).
 - [troubleshooting/](./troubleshooting/): Problemi noti e soluzioni.
+  - [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md) — push rifiutato per LFS corrotto (squash)
+  - [git-merge-conflict-inventory](./troubleshooting/git-merge-conflict-inventory.md) — marker merge / rebase
 - [_archive/](./_archive/): Documentazione legacy.
 - [_templates/](./_templates/): Template standard.
 

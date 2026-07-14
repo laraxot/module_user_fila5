@@ -4,7 +4,7 @@ type: log
 module: User
 tags: [user, wiki, log, phpstan, boundary]
 created: 2026-04-15
-updated: 2026-06-18
+updated: 2026-07-08
 qmd: "user module wiki log phpstan no comment dependency"
 issues:
   - "https://github.com/provtv/base_ptv_fila5_mono/issues/102"
@@ -15,6 +15,7 @@ related:
   - ./rules/can-comment-retired-wrong-placement.md
 ---
 
+- 2026-07-08: push `laraxot/dev` — squash 365 commit (LFS missing 41 oggetti); abort rebase 328 commit; PHPStan User 0 errori (`password_resets` `updateTimestamps`, `permission` config types). Doc: [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md).
 - 2026-06-18: PHPStan User 14→0 — ripristinato `Tenant\Models\Traits\SushiToPhpArray` (dipendenza `SocialProvider`), rimosso `hasRoleTest()` morto in `HasRoles`, `HasPasswordExpiry` via `getAttribute`/`setAttribute`, fixture `PasswordValidationRules*` usa il trait reale.
 - 2026-06-18: rimosso coupling residuo User -> Comment: `BaseUser` non usa piu' `HasCommentatorRelations`, `UserContract` non espone metodi Comment, trait disattivata eliminata. Verifica: `bashscripts/tools/check-user-no-comment-dependency.sh`, `pest Modules/User/tests/Unit/NoCommentModuleDependencyTest.php`, PHPStan User/Progressioni.
 - 2026-06-10: notifications-folio-page + notifications-folio-route — `route('notifications')`, vietato `area-personale.notifiche`

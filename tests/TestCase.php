@@ -109,26 +109,7 @@ abstract class TestCase extends XotBaseTestCase
     public ?Collection $users = null;
 
     /** @var list<string> */
-    protected $connectionsToTransact = ['sqlite', 'user'];
-
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        $database = database_path('fixcity_data.sqlite');
-
-        /** @var array<string, array<string, mixed>> $connections */
-        $connections = config('database.connections', []);
-
-        foreach (array_keys($connections) as $connection) {
-            if ('sqlite' !== config("database.connections.{$connection}.driver")) {
-                continue;
-            }
-
-            $this->app['config']->set("database.connections.{$connection}.database", $database);
-            DB::purge($connection);
-        }
-    }
+    protected $connectionsToTransact = ['mysql', 'user'];
 
     public function setupFilamentAdminPanel(): void
     {

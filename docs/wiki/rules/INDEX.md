@@ -2,7 +2,7 @@
 title: "Rules Index"
 type: index
 created: 2026-05-11
-updated: 2026-05-11
+updated: 2026-07-08
 tags: [rules, index, on-demand]
 related:
   - ../rules/00-TRIGGER_MAP.md
@@ -35,6 +35,12 @@ Le Rules progettuali vivono qui, nel wiki del Module **User**, e vengono caricat
 - La sorgente di verita' per le Rules e' sempre il wiki locale
 - Non embeddare Rules nei prompt di avvio
 - Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/INDEX.md)
+
+## Rules ricorrenti
+
+| Rule | Scopo |
+|------|-------|
+| [module-commit-push-after-change](module-commit-push-after-change.md) | Commit e push dal repo modulo dopo ogni modifica |
 
 ## Aggiungere una Nuova RULES
 
