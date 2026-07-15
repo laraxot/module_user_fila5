@@ -40,8 +40,6 @@ class Client extends PassportClient
      */
     public function initializeHasUniqueStringIds(): void
     {
-        if (method_exists(parent::class, 'initializeHasUniqueStringIds')) {
-            parent::initializeHasUniqueStringIds();
-        }
+        parent::initializeHasUniqueStringIds();
     }
 }

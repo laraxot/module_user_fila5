@@ -265,16 +265,16 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     }
 
     /**
-     * @return HasOne<Model&ProfileContract, $this>
+     * @return HasOne<Model&ProfileContract, Model&static>
      *
-     * @phpstan-return HasOne<Model&ProfileContract, $this>
+     * @phpstan-return HasOne<Model&ProfileContract, Model&static>
      */
     #[\Override]
     public function profile(): HasOne
     {
         $profileClass = XotData::make()->getProfileClass();
         if (class_exists($profileClass)) {
-            /** @var HasOne<Model&ProfileContract, $this> $relation */
+            /** @var HasOne<Model&ProfileContract, Model&static> $relation */
             $relation = $this->hasOne($profileClass);
 
             return $relation;
@@ -283,14 +283,14 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         // Try direct module class if XotData failed
         $directClass = 'Modules\User\Models\Profile';
         if (class_exists($directClass)) {
-            /** @var HasOne<Model&ProfileContract, $this> $relation */
+            /** @var HasOne<Model&ProfileContract, Model&static> $relation */
             $relation = $this->hasOne($directClass);
 
             return $relation;
         }
 
         // Fallback: stay on current model if nothing found
-        /** @var HasOne<Model&ProfileContract, $this> $relation */
+        /** @var HasOne<Model&ProfileContract, Model&static> $relation */
         $relation = $this->hasOne(static::class, 'id', 'id')->whereRaw('1=0');
 
         return $relation;
