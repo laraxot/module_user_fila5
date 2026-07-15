@@ -45,4 +45,6 @@ uses(TestCase::class);
 
 ## Verifica
 
-`./vendor/bin/pest Modules/User/tests/Feature/Authentication/UserAuthenticationTest.php --list-tests` ora elenca correttamente tutti i 29 test (prima: fatal immediato). Esecuzione completa con asserzioni richiede DB di test migrato (`laravel/.env.testing`) — non verificata in questa sessione per limiti di tempo, ma la composizione della classe (il punto che falliva) è confermata funzionante.
+`./vendor/bin/pest Modules/User/tests/Feature/Authentication/UserAuthenticationTest.php --list-tests` elenca correttamente tutti i 29 test (prima: fatal immediato).
+
+Esecuzione completa (2026-07-15): la composizione ora funziona — i 31 test **vengono eseguiti** invece di fallire a livello di bootstrap. Tutti falliscono con `SQLSTATE[HY000] [2002] Connection timed out` verso `DB_HOST=10.100.200.53:3306` (`laravel/.env.testing`) — **problema di raggiungibilità di rete verso il DB di test esterno**, non legato a questo fix né al codice applicativo. Chi riprende il lavoro deve verificare la connettività di rete/VPN verso `10.100.200.53` prima di poter eseguire la suite con asserzioni reali.
