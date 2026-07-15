@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
-use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Illuminate\Support\Facades\Schema;
+use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
  * Class CreateLiveuserUsersTable.
