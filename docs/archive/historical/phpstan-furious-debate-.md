@@ -1,3 +1,23 @@
+---
+title: "Il Grande Dibattito Furioso: PHPStan Level 10 - La Verità Assoluta"
+type: concept
+tags: [phpstan, furious, debate]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-furious-debate- il grande dibattito furioso: phpstan level 10 - la verità assoluta"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Il Grande Dibattito Furioso: PHPStan Level 10 - La Verità Assoluta
 
 **Data**: 2025-01-22

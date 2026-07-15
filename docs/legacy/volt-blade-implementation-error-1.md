@@ -1,8 +1,28 @@
+---
+title: "Analisi dell'Errore di Implementazione Volt/Blade"
+type: concept
+tags: [volt, blade, implementation, error]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "volt-blade-implementation-error-1 analisi dell'errore di implementazione volt/blade"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+  - "./auth-components-best-practices-1.md"
+  - "./auth-components-best-practices.md"
+  - "./auth-login-implementation-1.md"
+---
+
 # Analisi dell'Errore di Implementazione Volt/Blade
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Convenzioni Path](./path-conventions.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
 
 ## Identificazione dell'Errore

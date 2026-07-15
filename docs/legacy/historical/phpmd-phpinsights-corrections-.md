@@ -1,3 +1,23 @@
+---
+title: "PHPMD e PHP Insights Corrections - 2025-01-22"
+type: concept
+tags: [phpmd, phpinsights, corrections]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpmd-phpinsights-corrections- phpmd e php insights corrections - 2025-01-22"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # PHPMD e PHP Insights Corrections - 2025-01-22
 
 ## Obiettivo
@@ -98,6 +118,6 @@ I seguenti warning sono accettabili e non richiedono correzione immediata:
 
 ## Collegamenti
 
-- [Resources Corrections Summary](./resources-corrections-summary-2025-01-22.md)
+- [Resources Corrections Summary](./resources-corrections-summary.md)
 - [Quality Tools Report](./quality-tools-report.md)
 - [PHPStan Complete Success](./phpstan-complete-success.md)

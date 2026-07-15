@@ -1,3 +1,23 @@
+---
+title: "Quality Tools Final Report - 2025-01-22"
+type: concept
+tags: [quality, tools, final, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "quality-tools-final-report- quality tools final report - 2025-01-22"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Quality Tools Final Report - 2025-01-22
 
 ## Obiettivo
@@ -153,8 +173,8 @@ $user_class = XotData::make()->getUserClass();
 
 - [XotBaseResource getPages() Automatic](./xotbase-resource-getpages-automatic.md)
 - [Resources Array Keys Philosophy](./resources-array-keys-philosophy.md)
-- [Resources Corrections Summary](./resources-corrections-summary-2025-01-22.md)
-- [PHPMD PHP Insights Corrections](./phpmd-phpinsights-corrections-2025-01-22.md)
+- [Resources Corrections Summary](./resources-corrections-summary.md)
+- [PHPMD PHP Insights Corrections](./phpmd-phpinsights-corrections.md)
 - [Quality Tools Report](./quality-tools-report.md)
 - [PHPStan Complete Success](./phpstan-complete-success.md)
 

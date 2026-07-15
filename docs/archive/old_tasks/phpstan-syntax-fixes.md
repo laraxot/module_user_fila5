@@ -1,3 +1,23 @@
+---
+title: "PHPStan Syntax Fixes - Modulo User"
+type: concept
+tags: [phpstan, syntax, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-syntax-fixes phpstan syntax fixes - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./login-widget-translation-audit.md"
+  - "./password-translation-completion.md"
+  - "./phpstan-analysis-user.md"
+  - "./phpstan-array-types-fixes.md"
+  - "./phpstan-compliance-status.md"
+  - "./phpstan-compliance.md"
+  - "./phpstan-corrections.md"
+  - "./phpstan-dry-kiss-improvements.md"
+---
+
 # PHPStan Syntax Fixes - Modulo User
 
 **Data**: 2025-01-11  

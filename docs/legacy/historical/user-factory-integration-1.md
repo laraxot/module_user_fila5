@@ -1,3 +1,23 @@
+---
+title: "UserFactory Integration - Modulo User e <nome progetto>"
+type: concept
+tags: [user, factory, integration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user-factory-integration-1 userfactory integration - modulo user e <nome progetto>"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # UserFactory Integration - Modulo User e <nome progetto>
 
 ## Overview
@@ -346,7 +366,7 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
-- [Traits Complete Guide](../user/docs/traits_complete_guide.md)
+- [Traits Complete Guide](../user/docs/traits-complete-guide-2.md)
 - [Authentication Framework](../user/docs/authentication.md)
 
 ---

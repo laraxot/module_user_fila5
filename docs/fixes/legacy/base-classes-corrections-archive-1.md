@@ -1,3 +1,18 @@
+---
+title: "Correzione Estensioni Classi Base - Modulo User"
+type: concept
+tags: [base, classes, corrections, archive]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "base-classes-corrections-archive-1 correzione estensioni classi base - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./base-classes-corrections-.md"
+  - "./base-classes-corrections-1.md"
+  - "./base-classes-corrections.md"
+---
+
 # Correzione Estensioni Classi Base - Modulo User
 
 **Data:** 15 Ottobre 2025  

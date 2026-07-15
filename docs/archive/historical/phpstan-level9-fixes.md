@@ -1,3 +1,23 @@
+---
+title: "Correzione conflitto e miglioramento PHPStan livello 9 in Filament/Resources/UserResource.php"
+type: concept
+tags: [phpstan, level9, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-level9-fixes correzione conflitto e miglioramento phpstan livello 9 in filament/resources/userresource.php"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Correzione conflitto e miglioramento PHPStan livello 9 in Filament/Resources/UserResource.php
 
 **Data:** 2025-04-16

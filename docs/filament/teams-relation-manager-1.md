@@ -1,3 +1,23 @@
+---
+title: "TeamsRelationManager in User Module"
+type: concept
+tags: [teams, relation, manager]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "teams-relation-manager-1 teamsrelationmanager in user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./filament-table-columns-1.md"
+  - "./filament-table-columns-2.md"
+  - "./filament-table-columns-3.md"
+  - "./filament-table-columns.md"
+  - "./teams-relation-manager-2.md"
+  - "./teams-relation-manager-3.md"
+  - "./teams-relation-manager.md"
+  - "./widgets-responsive-layout.md"
+---
+
 # TeamsRelationManager in User Module
 
 ## Panoramica

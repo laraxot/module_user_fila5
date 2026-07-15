@@ -1,3 +1,23 @@
+---
+title: "Analisi Metodi Duplicati in BaseUser.php"
+type: concept
+tags: [baseuser, spatie, duplicates, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "baseuser-spatie-duplicates-analysis analisi metodi duplicati in baseuser.php"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+  - "./auth-components-best-practices-1.md"
+  - "./auth-components-best-practices.md"
+  - "./auth-login-implementation-1.md"
+---
+
 # Analisi Metodi Duplicati in BaseUser.php
 
 ## Data Analisi

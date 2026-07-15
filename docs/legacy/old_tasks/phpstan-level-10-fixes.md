@@ -1,3 +1,23 @@
+---
+title: "PHPStan Level 10 Fixes - User Module"
+type: concept
+tags: [phpstan, level, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-level-10-fixes phpstan level 10 fixes - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./login-widget-translation-audit.md"
+  - "./password-translation-completion.md"
+  - "./phpstan-analysis-user.md"
+  - "./phpstan-array-types-fixes.md"
+  - "./phpstan-compliance-status.md"
+  - "./phpstan-compliance.md"
+  - "./phpstan-corrections.md"
+  - "./phpstan-dry-kiss-improvements.md"
+---
+
 # PHPStan Level 10 Fixes - User Module
 
 ## Duplicate Method Declaration Fix

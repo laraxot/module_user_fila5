@@ -1,3 +1,23 @@
+---
+title: "Sicurezza nel Processo di Logout"
+type: concept
+tags: [logout, security]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logout-security sicurezza nel processo di logout"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Sicurezza nel Processo di Logout
 
 ## Analisi della Sicurezza
@@ -171,6 +191,6 @@ Log::channel('auth')->info('Logout effettuato', [
 
 ## Collegamenti Correlati
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session_management.md)
-- [Documentazione Volt](./volt_blade_implementation.md)
+- [Gestione Sessione](./session-management-2.md)
+- [Documentazione Volt](./volt-blade-implementation-3.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 

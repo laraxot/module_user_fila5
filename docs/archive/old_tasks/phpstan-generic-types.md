@@ -1,3 +1,23 @@
+---
+title: "Risoluzione Problemi di Tipi Generici con PHPStan"
+type: concept
+tags: [phpstan, generic, types]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-generic-types risoluzione problemi di tipi generici con phpstan"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./login-widget-translation-audit.md"
+  - "./password-translation-completion.md"
+  - "./phpstan-analysis-user.md"
+  - "./phpstan-array-types-fixes.md"
+  - "./phpstan-compliance-status.md"
+  - "./phpstan-compliance.md"
+  - "./phpstan-corrections.md"
+  - "./phpstan-dry-kiss-improvements.md"
+---
+
 # Risoluzione Problemi di Tipi Generici con PHPStan
 
 ## Problema: Template Type Covariance nelle Relazioni Eloquent

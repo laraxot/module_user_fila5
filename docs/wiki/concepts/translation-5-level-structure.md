@@ -6,12 +6,15 @@ created: 2026-04-20
 updated: 2026-04-20
 tags: [translation, i18n, localization, user-module, laravel, filament]
 sources:
-  - laravel/Modules/User/lang/it/auth.php
-  - laravel/Modules/User/lang/en/auth.php
-  - laravel/Themes/Sixteen/resources/views/pages/auth/login.blade.php
 related:
-  - ../../../../docs/wiki/concepts/translation-management.md
-  - ./filament-no-label-rule.md
+  - "./ai-harness-user-discipline.md"
+  - "./baseuser-hierarchy.md"
+  - "./code-redundancy-user.md"
+  - "./context-mode-user-discipline.md"
+  - "./context-overflow-prevention.md"
+  - "./filament-langserviceprovider-governance.md"
+  - "./filament-widget-linear-crud-model-create.md"
+  - "./filament-widget-resource-form-delegation.md"
 ---
 
 # Translation 5-Level Structure Rule

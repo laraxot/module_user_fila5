@@ -1,3 +1,23 @@
+---
+title: "OAuth Cluster - Processo Decisionale"
+type: concept
+tags: [oauth, cluster, decision, making]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "oauth-cluster-decision-making oauth cluster - processo decisionale"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # OAuth Cluster - Processo Decisionale
 
 **Data**: 2025-01-22

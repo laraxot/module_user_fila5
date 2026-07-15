@@ -1,3 +1,23 @@
+---
+title: "Conversione Livewire Auth/Login a Filament LoginWidget"
+type: concept
+tags: [login, widget, conversion]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "login-widget-conversion conversione livewire auth/login a filament loginwidget"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Conversione Livewire Auth/Login a Filament LoginWidget
 
 ## Analisi del componente Livewire
@@ -65,7 +85,7 @@ class LoginWidget extends XotBaseWidget
 - Ciclo di vita differente: Livewire puro vs Filament Widgets.
 - Alcune funzionalità (es. `render()`) non sono necessarie nel widget.
 ## Collegamenti
-- [WIDGETS_STRUCTURE.md](../widgets_structure.md) — Regole di struttura per i widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../widgets-structure-2.md) — Regole di struttura per i widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse e widget Filament.
 - [login-improvements.md](../../../themes/twentyone/project_docs/login-improvements.md) — Analisi e miglioramenti della pagina di login nel tema TwentyOne.
 - [login-improvements.md](../../../themes/twentyone/docs/login-improvements.md) — Analisi e miglioramenti della pagina di login nel tema TwentyOne.
@@ -160,6 +180,6 @@ class LoginWidget extends XotBaseWidget
 - Alcune funzionalità (es. `render()`) non sono necessarie nel widget.
 
 ## Collegamenti
-- [WIDGETS_STRUCTURE.md](../widgets_structure.md) — Regole di struttura per i widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../widgets-structure-2.md) — Regole di struttura per i widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse e widget Filament.
 - [login-improvements.md](../../../themes/twentyone/docs/login-improvements.md) — Analisi e miglioramenti della pagina di login nel tema TwentyOne.

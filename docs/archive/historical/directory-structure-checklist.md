@@ -1,3 +1,23 @@
+---
+title: "Checklist per la Struttura delle Directory nei Moduli Windsurf/Xot"
+type: concept
+tags: [directory, structure, checklist]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "directory-structure-checklist checklist per la struttura delle directory nei moduli windsurf/xot"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Checklist per la Struttura delle Directory nei Moduli Windsurf/Xot
 
 ## Panoramica

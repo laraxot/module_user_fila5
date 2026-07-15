@@ -1,3 +1,23 @@
+---
+title: "Passport Cluster - Completamento Lavoro"
+type: concept
+tags: [passport, cluster, work, completion]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "passport-cluster-work-completion passport cluster - completamento lavoro"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Passport Cluster - Completamento Lavoro
 
 **Status**: ✅ Completato

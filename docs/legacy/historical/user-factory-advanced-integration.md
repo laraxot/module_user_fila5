@@ -1,3 +1,23 @@
+---
+title: "UserFactory Advanced Integration - Modulo User & healthcare_app"
+type: concept
+tags: [user, factory, advanced, integration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user-factory-advanced-integration userfactory advanced integration - modulo user & healthcare_app"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # UserFactory Advanced Integration - Modulo User & healthcare_app
 
 ## Post Deep-Study Analysis 
@@ -286,9 +306,9 @@ public function run(): void
 - [Model States](../../healthcare_app/docs/models/states.md)
 
 ### User Module
-- [User Factory Integration](./user_factory_integration.md)
-- [Traits Complete Guide](./traits_complete_guide.md)
-- [BaseUser Architecture](./parental_inheritance.md)
+- [User Factory Integration](./user-factory-integration-2.md)
+- [Traits Complete Guide](./traits-complete-guide-2.md)
+- [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation  
 - [UserFactory healthcare_app Integration](../../../../../docs/userfactory_healthcare_app_integration.md)

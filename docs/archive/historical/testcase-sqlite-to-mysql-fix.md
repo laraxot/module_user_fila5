@@ -1,3 +1,23 @@
+---
+title: "TestCase SQLite to MySQL Fix - User Module"
+type: concept
+tags: [testcase, sqlite, mysql, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testcase-sqlite-to-mysql-fix testcase sqlite to mysql fix - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # TestCase SQLite to MySQL Fix - User Module
 
 ## Problema Identificato

@@ -1,10 +1,30 @@
+---
+title: "Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio"
+type: concept
+tags: [volt, folio, auth, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "volt-folio-auth-implementation-1 implementazione corretta delle pagine di autenticazione con volt e folio"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+  - "./auth-components-best-practices-1.md"
+  - "./auth-components-best-practices.md"
+  - "./auth-login-implementation-1.md"
+---
+
 # Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Volt Errors](./VOLT_ERRORS.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Errors](./volt-errors.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
 
 ## Introduzione
 

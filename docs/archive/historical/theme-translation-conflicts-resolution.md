@@ -1,3 +1,23 @@
+---
+title: "Risoluzione Conflitti Traduzioni Tema Two - Modulo User"
+type: concept
+tags: [theme, translation, conflicts, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "theme-translation-conflicts-resolution risoluzione conflitti traduzioni tema two - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Risoluzione Conflitti Traduzioni Tema Two - Modulo User
 
 ## Data: 2025-01-06
@@ -394,7 +414,7 @@ php artisan lang:missing --locale=it,en,de
 
 ### Collegamenti Interni
 - [User States](user_states.mdc)
-- [Moderation Strategy](user_moderation_strategy.md)
+- [Moderation Strategy](user-moderation-strategy-3.md)
 - [Filament Best Practices](filament_best_practices.md)
 
 ### Collegamenti Esterni

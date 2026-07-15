@@ -1,3 +1,23 @@
+---
+title: "OAuth Cluster - Analisi Errore e Correzione"
+type: concept
+tags: [oauth, cluster, error, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "oauth-cluster-error-analysis oauth cluster - analisi errore e correzione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # OAuth Cluster - Analisi Errore e Correzione
 
 **Data**: 2025-01-22

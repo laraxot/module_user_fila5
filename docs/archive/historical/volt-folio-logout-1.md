@@ -1,9 +1,29 @@
+---
+title: "Implementazione Corretta del Logout con Volt e Folio"
+type: concept
+tags: [volt, folio, logout]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "volt-folio-logout-1 implementazione corretta del logout con volt e folio"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Analisi Logout Blade](./logout_blade_analysis.md)
+- [Convenzioni Path](./path-conventions-2.md)
+- [Analisi Logout Blade](./logout-blade-analysis-3.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
 ## Panoramica

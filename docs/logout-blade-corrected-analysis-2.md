@@ -1,12 +1,32 @@
+---
+title: "Analisi Corretta del File logout.blade.php"
+type: concept
+tags: [logout, blade, corrected, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logout-blade-corrected-analysis-2 analisi corretta del file logout.blade.php"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Analisi Corretta del File logout.blade.php
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Auth Pages Implementation](./auth_pages_implementation.md)
-- [Logout Blade Implementation](./logout_blade_implementation.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
+- [Volt Folio Logout](./volt-folio-logout-2.md)
+- [Auth Pages Implementation](./auth-pages-implementation.md)
+- [Logout Blade Implementation](./logout-blade-implementation-2.md)
+- [Convenzioni Path](./path-conventions-2.md)
+- [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
 
 ## Panoramica
 

@@ -1,3 +1,23 @@
+---
+title: "Laravel Passport Implementation Summary - User Module"
+type: concept
+tags: [passport, implementation, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "passport-implementation-summary laravel passport implementation summary - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Laravel Passport Implementation Summary - User Module
 
 ## Overview

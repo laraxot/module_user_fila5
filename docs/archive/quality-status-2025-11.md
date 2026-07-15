@@ -1,3 +1,23 @@
+---
+title: "User Module - Quality Status (November 2025)"
+type: concept
+tags: [quality, status, 2025]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "quality-status-2025-11 user module - quality status (november 2025)"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+  - "./auth-components-best-practices-1.md"
+  - "./auth-components-best-practices.md"
+  - "./auth-login-implementation-1.md"
+---
+
 # User Module - Quality Status (November 2025)
 
 ## 🎯 Overview

@@ -1,3 +1,23 @@
+---
+title: "LoginWidget Translation Audit - Gennaio 2025"
+type: concept
+tags: [login, widget, translation, audit]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "login-widget-translation-audit-2025 loginwidget translation audit - gennaio 2025"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo

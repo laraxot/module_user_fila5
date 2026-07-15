@@ -1,3 +1,23 @@
+---
+title: "Separazione dei Modelli User e Profile: Analisi e Raccomandazioni"
+type: concept
+tags: [user, profile, separation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user-profile-separation separazione dei modelli user e profile: analisi e raccomandazioni"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Separazione dei Modelli User e Profile: Analisi e Raccomandazioni
 
 ## Introduzione

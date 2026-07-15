@@ -1,3 +1,23 @@
+---
+title: "CRITICAL VIOLATION: Hardcoded Labels in XotBaseResource Extensions"
+type: concept
+tags: [resource, translation, violation, critical]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "resource-translation-violation-critical-fix critical violation: hardcoded labels in xotbaseresource extensions"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # CRITICAL VIOLATION: Hardcoded Labels in XotBaseResource Extensions
 
 **Data**: 2026-01-09

@@ -1,3 +1,23 @@
+---
+title: "Proposta: Implementazione di Laravel Passport in un Filament Cluster"
+type: concept
+tags: [passport, cluster, proposal]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "passport-cluster-proposal proposta: implementazione di laravel passport in un filament cluster"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Proposta: Implementazione di Laravel Passport in un Filament Cluster
 
 **Status**: ✅ **IMPLEMENTATO** - Vedi [passport-cluster-summary.md](./passport-cluster-summary.md)

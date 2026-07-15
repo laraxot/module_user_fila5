@@ -1,3 +1,23 @@
+---
+title: "LoginWidget Translation Audit - Gennaio 2025"
+type: concept
+tags: [login, widget, translation, audit]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "login-widget-translation-audit loginwidget translation audit - gennaio 2025"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./password-translation-completion.md"
+  - "./phpstan-analysis-user.md"
+  - "./phpstan-array-types-fixes.md"
+  - "./phpstan-compliance-status.md"
+  - "./phpstan-compliance.md"
+  - "./phpstan-corrections.md"
+  - "./phpstan-dry-kiss-improvements.md"
+  - "./phpstan-fixes-2025.md"
+---
+
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo

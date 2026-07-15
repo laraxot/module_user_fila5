@@ -1,3 +1,23 @@
+---
+title: "Guida Rendering Widget Filament 4 - Modulo User"
+type: concept
+tags: [filament, widget, rendering]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-4-widget-rendering guida rendering widget filament 4 - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Guida Rendering Widget Filament 4 - Modulo User
 
 **Modulo**: User  
@@ -378,7 +398,7 @@ class LoginWidget extends XotBaseWidget
 - [Filament 4 Widgets](https://filamentphp.com/docs/4.x/widgets)
 - [Filament 4 Forms](https://filamentphp.com/docs/4.x/forms)
 - [Livewire 3](https://livewire.laravel.com/docs/3.x)
-- [Laraxot Widget Rules](./auth_widget_rules.md)
+- [Laraxot Widget Rules](./auth-widget-rules.md)
 
 ## 🎯 Conclusione
 

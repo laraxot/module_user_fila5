@@ -1,3 +1,23 @@
+---
+title: "Risoluzione dei Conflitti nei File JavaScript del Modulo User"
+type: concept
+tags: [jss]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "jss risoluzione dei conflitti nei file javascript del modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Risoluzione dei Conflitti nei File JavaScript del Modulo User
 
 ## Problema

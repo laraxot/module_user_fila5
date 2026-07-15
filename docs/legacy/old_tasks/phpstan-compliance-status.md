@@ -1,3 +1,23 @@
+---
+title: "PHPStan Level 10 Compliance Status"
+type: concept
+tags: [phpstan, compliance, status]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-compliance-status phpstan level 10 compliance status"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./login-widget-translation-audit.md"
+  - "./password-translation-completion.md"
+  - "./phpstan-analysis-user.md"
+  - "./phpstan-array-types-fixes.md"
+  - "./phpstan-compliance.md"
+  - "./phpstan-corrections.md"
+  - "./phpstan-dry-kiss-improvements.md"
+  - "./phpstan-fixes-2025.md"
+---
+
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2025-12-10  

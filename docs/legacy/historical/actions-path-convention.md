@@ -2,6 +2,15 @@
 module: theme
 topic: actions-path-convention
 canonical: ../../../../../Themes/docs/shared-components/actions-path-convention.md
+related:
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+  - "./auth-components-best-practices-1.md"
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/actions-path-convention.md

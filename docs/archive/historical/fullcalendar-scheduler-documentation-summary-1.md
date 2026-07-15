@@ -1,3 +1,23 @@
+---
+title: "FullCalendar Scheduler - Documentazione Completa"
+type: concept
+tags: [fullcalendar, scheduler, documentation, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "fullcalendar-scheduler-documentation-summary-1 fullcalendar scheduler - documentazione completa"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # FullCalendar Scheduler - Documentazione Completa
 
 ## Panoramica
@@ -32,7 +52,7 @@ Documentazione base esistente per:
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
 
-#### 4. [Scheduler License Key](./scheduler_license_key.md)
+#### 4. [Scheduler License Key](./scheduler-license-key-2.md)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi

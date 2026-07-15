@@ -1,3 +1,23 @@
+---
+title: "Analisi Errore Logout"
+type: concept
+tags: [logout, error, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logout-error-analysis-1 analisi errore logout"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Analisi Errore Logout
 
 ## Problema Identificato
@@ -121,5 +141,5 @@ class LogoutWidget extends XotBaseWidget
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session_management.md)
+- [Gestione Sessione](./session-management-2.md)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)

@@ -1,3 +1,23 @@
+---
+title: "ERRORE ARCHITETTURALE CRITICO: Uso Diretto di Componenti Livewire nei Login-Card"
+type: concept
+tags: [livewire, filament, widget, migration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "livewire-to-filament-widget-migration errore architetturale critico: uso diretto di componenti livewire nei login-card"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # ERRORE ARCHITETTURALE CRITICO: Uso Diretto di Componenti Livewire nei Login-Card
 
 ## Problema Identificato
@@ -130,7 +150,7 @@ class LoginWidget extends XotBaseWidget
 - Ottimizzazione asset e bundle
 ## Backlink e Riferimenti
 - [best-practices/filament-widgets.md](best-practices/filament-widgets.md)
-- [login_filament_widget_error.md](login_filament_widget_error.md)
+- [login-filament-widget-error-2.md](login-filament-widget-error-2.md)
 - [../../Themes/Sixteen/docs/login-agid-correct-implementation.md](../../themes/sixteen/docs/login-agid-correct-implementation.md)
 - [../../Themes/Sixteen/project_docs/login-agid-correct-implementation.md](../../themes/sixteen/project_docs/login-agid-correct-implementation.md)
 ---

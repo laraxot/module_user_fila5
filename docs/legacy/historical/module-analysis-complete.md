@@ -1,3 +1,23 @@
+---
+title: "Analisi Completa Modulo User - Factory, Seeder e Test"
+type: concept
+tags: [module, analysis, complete]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "module-analysis-complete analisi completa modulo user - factory, seeder e test"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Analisi Completa Modulo User - Factory, Seeder e Test
 
 ## 📊 Panoramica Generale

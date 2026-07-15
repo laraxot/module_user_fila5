@@ -1,3 +1,23 @@
+---
+title: "Best Practices per le Traduzioni"
+type: concept
+tags: [translation, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "translation-best-practices best practices per le traduzioni"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Best Practices per le Traduzioni
 
 ## Principi Generali
@@ -142,4 +162,4 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 ## Collegamenti Correlati
 - [Documentazione Laravel Localization](https://laravel.com/docs/localization)
 - [Best Practices di Codice](./code_best_practices.md)
-- [Struttura Moduli](./module_structure.md) 
+- [Struttura Moduli](./module-structure-2.md) 

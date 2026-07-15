@@ -2,6 +2,7 @@
 title: "roadmap — puntatore"
 type: reference
 updated: 2026-05-21
+related:
 ---
 
 # Policy globale (puntatore)

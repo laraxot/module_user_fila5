@@ -1,3 +1,23 @@
+---
+title: "Struttura delle Blade di Autenticazione con Volt"
+type: concept
+tags: [auth, blade, structure]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "auth-blade-structure struttura delle blade di autenticazione con volt"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-components-best-practices-1.md"
+---
+
 # Struttura delle Blade di Autenticazione con Volt
 
 ## Introduzione
@@ -178,7 +198,7 @@ Ogni azione di autenticazione deve:
 
 ## Collegamenti
 
-- [Documentazione Volt](./volt_logout.md)
-- [Best Practices Routing](./routing_best_practices.md)
-- [Struttura Directory](./directory_structure_checklist.md)
-- [Gestione Errori](./error_handling.md) 
+- [Documentazione Volt](./volt-logout-2.md)
+- [Best Practices Routing](./routing-best-practices-2.md)
+- [Struttura Directory](./directory-structure-checklist.md)
+- [Gestione Errori](./error-handling.md) 

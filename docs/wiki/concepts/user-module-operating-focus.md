@@ -5,8 +5,14 @@ type: concept
 created: "2026-04-29T00:00:00Z"
 updated: "2026-04-29T00:00:00Z"
 related:
-  - "[[User Architecture Sources]]"
-  - "[[user-module]]"
+  - "./ai-harness-user-discipline.md"
+  - "./baseuser-hierarchy.md"
+  - "./code-redundancy-user.md"
+  - "./context-mode-user-discipline.md"
+  - "./context-overflow-prevention.md"
+  - "./filament-langserviceprovider-governance.md"
+  - "./filament-widget-linear-crud-model-create.md"
+  - "./filament-widget-resource-form-delegation.md"
 ---
 
 # User Module Operating Focus
@@ -65,6 +71,6 @@ This avoids repeating the same identity analysis across sessions and keeps busin
 - [[User Architecture Sources]]
 - [[user-module]]
 - `../../README.md`
-- `../../PRODUCT_STRATEGY.md`
+- `../../product-strategy-2.md`
 - `../../architecture/architecture-rules.md`
 - `../../advanced-user-architecture.md`

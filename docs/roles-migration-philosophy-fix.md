@@ -1,3 +1,23 @@
+---
+title: "Fix della Migration Roles - Allineamento con la Filosofia Laraxot"
+type: concept
+tags: [roles, migration, philosophy, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "roles-migration-philosophy-fix fix della migration roles - allineamento con la filosofia laraxot"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Fix della Migration Roles - Allineamento con la Filosofia Laraxot
 
 ## Problema Identificato

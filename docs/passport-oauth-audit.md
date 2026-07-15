@@ -1,3 +1,23 @@
+---
+title: "Audit Passport OAuth - Modelli e Corredo Filament"
+type: concept
+tags: [passport, oauth, audit]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "passport-oauth-audit audit passport oauth - modelli e corredo filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Audit Passport OAuth - Modelli e Corredo Filament
 
 **Scopo**: Verificare che ogni modello Passport abbia wrapper Oauth* completo con policy, Filament resource, traduzioni e test.

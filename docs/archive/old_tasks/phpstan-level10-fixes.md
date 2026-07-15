@@ -1,3 +1,23 @@
+---
+title: "Correzioni PHPStan Livello 10 - Modulo User"
+type: concept
+tags: [phpstan, level10, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-level10-fixes correzioni phpstan livello 10 - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./login-widget-translation-audit.md"
+  - "./password-translation-completion.md"
+  - "./phpstan-analysis-user.md"
+  - "./phpstan-array-types-fixes.md"
+  - "./phpstan-compliance-status.md"
+  - "./phpstan-compliance.md"
+  - "./phpstan-corrections.md"
+  - "./phpstan-dry-kiss-improvements.md"
+---
+
 # Correzioni PHPStan Livello 10 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo User e le relative soluzioni implementate.

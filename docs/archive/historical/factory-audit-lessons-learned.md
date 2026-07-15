@@ -1,3 +1,23 @@
+---
+title: "Factory Audit Lessons Learned - User Module"
+type: concept
+tags: [factory, audit, lessons, learned]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "factory-audit-lessons-learned factory audit lessons learned - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Factory Audit Lessons Learned - User Module
 
 ## ERRORE GRAVISSIMO RISOLTO NEL MODULO USER

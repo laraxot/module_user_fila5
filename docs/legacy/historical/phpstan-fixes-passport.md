@@ -1,3 +1,23 @@
+---
+title: "PHPStan Fixes and Architectural Decisions for Passport/Socialite Configuration"
+type: concept
+tags: [phpstan, fixes, passport]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-fixes-passport phpstan fixes and architectural decisions for passport/socialite configuration"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # PHPStan Fixes and Architectural Decisions for Passport/Socialite Configuration
 
 This document outlines the rationale behind the architectural decision to move from a trait-based configuration approach to dedicated Service Providers for Laravel Passport and Socialite within the `Modules/User` module. It also details the PHPStan issues encountered during this process and their resolutions.

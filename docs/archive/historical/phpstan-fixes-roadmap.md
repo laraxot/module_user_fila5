@@ -1,3 +1,23 @@
+---
+title: "PHPStan Level 10 Fixes Roadmap - Modulo User"
+type: concept
+tags: [phpstan, fixes, roadmap]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-fixes-roadmap phpstan level 10 fixes roadmap - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # PHPStan Level 10 Fixes Roadmap - Modulo User
 
 **Data Creazione**: 2025-01-27  
@@ -106,4 +126,4 @@ public static function getTableActions(): array
 
 - [Regole Filament Resources](../../../.cursor/rules/filament-relation-managers.mdc)
 - [Regole No Labels](../../../.cursor/rules/no-filament-labels.mdc)
-- [PHPStan Fixes User Module - 2026-01-05](./phpstan-fix-plan-2026-01-05.md)
+- [PHPStan Fixes User Module - 2026-01-05](./phpstan-fix-plan.md)

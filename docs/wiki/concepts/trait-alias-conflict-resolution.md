@@ -8,8 +8,14 @@ qmd: "conflitto teams HasSpatiePermission HasRoles HasTeams BaseUser Spatie stan
 issues: []
 discussions: []
 related:
-  - ../../../../docs/wiki/concepts/quality-gate-canonical-commands.md
-  - ../../../Xot/docs/wiki/memories/phpstan-remediation-swarm.md
+  - "./ai-harness-user-discipline.md"
+  - "./baseuser-hierarchy.md"
+  - "./code-redundancy-user.md"
+  - "./context-mode-user-discipline.md"
+  - "./context-overflow-prevention.md"
+  - "./filament-langserviceprovider-governance.md"
+  - "./filament-widget-linear-crud-model-create.md"
+  - "./filament-widget-resource-form-delegation.md"
 ---
 
 # Trait conflict — `teams()` Spatie vs Laraxot

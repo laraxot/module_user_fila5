@@ -1,3 +1,23 @@
+---
+title: "UserFactory Advanced Integration - Modulo User & <nome progetto>"
+type: concept
+tags: [user, factory, advanced, integration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user-factory-advanced-integration userfactory advanced integration - modulo user & <nome progetto>"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # UserFactory Advanced Integration - Modulo User & <nome progetto>
 
 ## Post Deep-Study Analysis
@@ -286,9 +306,9 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
-- [User Factory Integration](./user_factory_integration.md)
-- [Traits Complete Guide](./traits_complete_guide.md)
-- [BaseUser Architecture](./parental_inheritance.md)
+- [User Factory Integration](./user-factory-integration-2.md)
+- [Traits Complete Guide](./traits-complete-guide-2.md)
+- [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
@@ -581,9 +601,9 @@ public function run(): void
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
-- [User Factory Integration](./user_factory_integration.md)
-- [Traits Complete Guide](./traits_complete_guide.md)
-- [BaseUser Architecture](./parental_inheritance.md)
+- [User Factory Integration](./user-factory-integration-2.md)
+- [Traits Complete Guide](./traits-complete-guide-2.md)
+- [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)

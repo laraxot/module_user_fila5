@@ -1,3 +1,23 @@
+---
+title: "Implementazione della Pagina di Logout nel Tema One"
+type: concept
+tags: [logout, page, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logout-page-implementation-1 implementazione della pagina di logout nel tema one"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Implementazione della Pagina di Logout nel Tema One
 
 ## Struttura Corretta
@@ -99,6 +119,6 @@ Themes/One/resources/views/pages/auth/logout.blade.php
 4. **Mantieni la logica** semplice e diretta
 
 ## Collegamenti Correlati
-- [Best Practices Folio](./routing_best_practices.md)
-- [Gestione Sessione](./session_management.md)
+- [Best Practices Folio](./routing-best-practices-2.md)
+- [Gestione Sessione](./session-management-2.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md)

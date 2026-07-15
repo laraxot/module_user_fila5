@@ -1,3 +1,21 @@
+---
+title: "👥 USER MODULE - ROADMAP 2025"
+type: concept
+tags: [legacy, roadmap]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "legacy-roadmap-x 👥 user module - roadmap 2025"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./legacy-roadmap-1.md"
+  - "./legacy-roadmap-and-issues.md"
+  - "./legacy-roadmap-ands.md"
+  - "./legacy-roadmap-complete.md"
+  - "./legacy-roadmap-conflict.md"
+  - "./legacy-roadmap.md"
+---
+
 # 👥 USER MODULE - ROADMAP 2025
 
 **Modulo**: User (Authentication & Authorization)  

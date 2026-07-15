@@ -1,3 +1,23 @@
+---
+title: "Implementazione del Logout con Widget Filament"
+type: concept
+tags: [logout, filament, widget]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logout-filament-widget-1 implementazione del logout con widget filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+  - "./auth-components-best-practices-1.md"
+  - "./auth-components-best-practices.md"
+  - "./auth-login-implementation-1.md"
+---
+
 # Implementazione del Logout con Widget Filament
 
 ## Collegamenti correlati

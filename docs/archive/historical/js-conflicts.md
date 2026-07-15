@@ -1,3 +1,23 @@
+---
+title: "Risoluzione dei Conflitti nei File JavaScript del Modulo User"
+type: concept
+tags: [conflicts]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "js-conflicts risoluzione dei conflitti nei file javascript del modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Risoluzione dei Conflitti nei File JavaScript del Modulo User
 
 ## Problema

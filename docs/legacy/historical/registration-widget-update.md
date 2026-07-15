@@ -1,3 +1,23 @@
+---
+title: "Aggiornamento relativo a DoctorResource.php"
+type: concept
+tags: [registration, widget, update]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "registration-widget-update aggiornamento relativo a doctorresource.php"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Aggiornamento relativo a DoctorResource.php
 
 ## Nota del [DATE]

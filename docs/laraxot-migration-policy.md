@@ -6,9 +6,14 @@ tags: [migrations, database, xotbase, policy]
 created: 2026-07-15
 updated: 2026-07-15
 related:
-  - "../../../docs/database/migrations-philosophy.md"
-  - "../../Xot/docs/migration-conventions.md"
-  - "../app/Database/Migrations/XotBaseMigration.php"
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
 ---
 
 # Laraxot Migration Policy — User Module

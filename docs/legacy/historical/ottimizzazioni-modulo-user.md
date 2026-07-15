@@ -1,3 +1,23 @@
+---
+title: "Ottimizzazioni Modulo User - DRY + KISS"
+type: concept
+tags: [ottimizzazioni, modulo, user]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ottimizzazioni-modulo-user ottimizzazioni modulo user - dry + kiss"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Ottimizzazioni Modulo User - DRY + KISS
 
 ## Panoramica
@@ -7,9 +27,9 @@ Questo documento identifica e propone ottimizzazioni per il modulo User seguendo
 
 ### 1. Duplicazione Massiva Documentazione
 - **File duplicati con naming inconsistente:**
-  - `git-conflict-resolution.md` vs `git_conflict_resolution.md`
-  - `volt_folio_logout_error.md` vs `volt-folio-logout-error.md`
-  - `user_factory_integration.md` vs `userfactory_advanced_integration_complete.md`
+  - `git-conflict-resolution.md` vs `git-conflict-resolution.md`
+  - `volt-folio-logout-error-3.md` vs `volt-folio-logout-error.md`
+  - `user-factory-integration-2.md` vs `userfactory_advanced_integration_complete.md`
 
 - **Contenuto duplicato:**
   - Guide PHPStan ripetute in 8+ file diversi
@@ -18,10 +38,10 @@ Questo documento identifica e propone ottimizzazioni per il modulo User seguendo
 
 ### 2. Naming Convention Caotico
 - **Pattern misti:**
-  - Underscore: `user_factory_integration.md`
+  - Underscore: `user-factory-integration-2.md`
   - Trattini: `user-management.md`
   - CamelCase: `userfactory_advanced_integration_complete.md`
-  - Snake_case: `volt_folio_auth_implementation.md`
+  - Snake_case: `volt-folio-auth-implementation-3.md`
 
 ### 3. Organizzazione Inconsistente
 - **Documenti correlati sparsi:**

@@ -1,3 +1,23 @@
+---
+title: "Correzione conflitto e miglioramento PHPStan livello 9 in Filament/Resources/UserResource.php"
+type: concept
+tags: [phpstan, level9, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-level9-fixes correzione conflitto e miglioramento phpstan livello 9 in filament/resources/userresource.php"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./login-widget-translation-audit.md"
+  - "./password-translation-completion.md"
+  - "./phpstan-analysis-user.md"
+  - "./phpstan-array-types-fixes.md"
+  - "./phpstan-compliance-status.md"
+  - "./phpstan-compliance.md"
+  - "./phpstan-corrections.md"
+  - "./phpstan-dry-kiss-improvements.md"
+---
+
 # Correzione conflitto e miglioramento PHPStan livello 9 in Filament/Resources/UserResource.php
 
 **Data:** 2025-04-16

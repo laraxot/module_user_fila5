@@ -1,3 +1,23 @@
+---
+title: "User Module Documentation"
+type: concept
+tags: [index]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "index user module documentation"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # User Module Documentation
 
 ## Overview
@@ -47,15 +67,15 @@ This document serves as the central index for the User module, providing guidanc
 
 ## Links to Related Documentation
 - [BaseUser Model](./baseuser.md)
-- [Authentication Pages Implementation](./auth_pages_implementation.md)
-- [Profile Management](./profile_management.md)
-- [Routing Best Practices](./routing_best_practices.md)
-- [Session Management](./session_management.md)
-- [BaseUser Model](./BaseUser.md)
-- [Authentication Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
-- [Profile Management](./PROFILE_MANAGEMENT.md)
-- [Routing Best Practices](./ROUTING_BEST_PRACTICES.md)
-- [Session Management](./SESSION_MANAGEMENT.md)
+- [Authentication Pages Implementation](./auth-pages-implementation.md)
+- [Profile Management](./profile-management-2.md)
+- [Routing Best Practices](./routing-best-practices-2.md)
+- [Session Management](./session-management-2.md)
+- [BaseUser Model](./baseuser.md)
+- [Authentication Pages Implementation](./auth-pages-implementation.md)
+- [Profile Management](./profile-management.md)
+- [Routing Best Practices](./routing-best-practices.md)
+- [Session Management](./session-management.md)
 - [Passport OAuth Wrapper Conformance](./passport-oauth-wrapper-conformance.md)
 
 ## Sottocartelle
@@ -94,5 +114,5 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 ## Modelli e Database
 
-- [Model Inheritance Analysis](./MODEL_INHERITANCE_ANALYSIS.md) — Analisi completa della gerarchia di ereditarietà dei modelli
-- [Model Inheritance Fixes](./MODEL_INHERITANCE_FIXES.md) — Riepilogo delle correzioni applicate ai modelli (15 Ottobre 2025)
+- [Model Inheritance Analysis](./model-inheritance-analysis-4.md) — Analisi completa della gerarchia di ereditarietà dei modelli
+- [Model Inheritance Fixes](./model-inheritance-fixes-4.md) — Riepilogo delle correzioni applicate ai modelli (15 Ottobre 2025)

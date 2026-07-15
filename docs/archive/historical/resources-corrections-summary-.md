@@ -1,3 +1,23 @@
+---
+title: "Resources Corrections Summary - 2025-01-22"
+type: concept
+tags: [resources, corrections, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "resources-corrections-summary- resources corrections summary - 2025-01-22"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Resources Corrections Summary - 2025-01-22
 
 ## Obiettivo

@@ -1,3 +1,23 @@
+---
+title: "Analisi dell'Errore negli Eventi di Logout"
+type: concept
+tags: [logout, event, error]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logout-event-error-1 analisi dell'errore negli eventi di logout"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+  - "./auth-components-best-practices-1.md"
+  - "./auth-components-best-practices.md"
+  - "./auth-login-implementation-1.md"
+---
+
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati

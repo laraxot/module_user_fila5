@@ -1,3 +1,23 @@
+---
+title: "Struttura Widget Filament nel Modulo User"
+type: concept
+tags: [widgets, structure]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "widgets-structure struttura widget filament nel modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Struttura Widget Filament nel Modulo User
 
 ## Introduzione
@@ -244,7 +264,7 @@ Estende: Modules\Xot\Filament\Widgets\XotBaseWidget
 
 ## Collegamenti contestuali
 
-- **[LOGIN_FILAMENT_WIDGET_ERROR.md](../../../themes/twentyone/docs/login_filament_widget_error.md)** — Per conoscere gli errori più comuni e le soluzioni sbagliate da evitare nella progettazione dei widget Filament, consulta questo file: offre casi reali e motivazioni pratiche.
+- **[LOGIN_FILAMENT_WIDGET_ERROR.md](../../../themes/twentyone/docs/login-filament-widget-error-2.md)** — Per conoscere gli errori più comuni e le soluzioni sbagliate da evitare nella progettazione dei widget Filament, consulta questo file: offre casi reali e motivazioni pratiche.
 - **[LOGIN_FILAMENT_WIDGET_PRO_CONS.md](../../../themes/twentyone/docs/login_filament_widget_pro_cons.md)** — Per un confronto ragionato tra approcci, vantaggi/svantaggi e best practice sull’implementazione del LoginWidget, consulta questo file: aiuta a scegliere il pattern più adatto e conforme alle regole Windsurf/Xot.
 
 ---

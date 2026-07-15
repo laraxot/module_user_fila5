@@ -1,3 +1,23 @@
+---
+title: "Service Provider Architecture - Module Pattern"
+type: concept
+tags: [service, provider, architecture]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "service-provider-architecture service provider architecture - module pattern"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Service Provider Architecture - Module Pattern
 
 > **Generato**: 2026-01-07
@@ -366,8 +386,8 @@ test('user service provider only configures, not registers dependencies', functi
 ## 📚 Collegamenti
 
 ### Documentazione Correlata
-- [PASSPORT_INTEGRATION.md](./passport_integration.md) - Passport integration completa
-- [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia generale modulo
+- [PASSPORT_INTEGRATION.md](./passport-integration.md) - Passport integration completa
+- [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale modulo
 - [README.md](./readme.md) - Overview modulo
 
 ### Documentazione Esterna

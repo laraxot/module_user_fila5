@@ -1,3 +1,23 @@
+---
+title: "Analisi Metodi Duplicati - Modulo User"
+type: concept
+tags: [duplicate, methods, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "duplicate-methods-analysis analisi metodi duplicati - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Analisi Metodi Duplicati - Modulo User
 
 **Data Generazione**: 2025-10-15 06:41:17

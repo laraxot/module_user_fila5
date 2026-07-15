@@ -1,3 +1,23 @@
+---
+title: "Moderazione e Wizard di Registrazione Generici per User"
+type: concept
+tags: [moderation, wizard, generic]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "moderation-wizard-generic moderazione e wizard di registrazione generici per user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Moderazione e Wizard di Registrazione Generici per User
 
 ## Premessa

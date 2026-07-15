@@ -1,3 +1,23 @@
+---
+title: "Gestione delle Sessioni"
+type: concept
+tags: [session, management]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "session-management gestione delle sessioni"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Gestione delle Sessioni
 
 ## Panoramica
@@ -69,9 +89,9 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 ## Collegamenti a Documentazione Correlata
 - [Indice del Modulo Utente](./index.md)
 - [Modello BaseUser](./baseuser.md)
-- [Implementazione delle Pagine di Autenticazione](./auth_pages_implementation.md)
-- [Gestione del Profilo](./profile_management.md)
-- [Best Practices per il Routing](./routing_best_practices.md)
+- [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)
+- [Gestione del Profilo](./profile-management-2.md)
+- [Best Practices per il Routing](./routing-best-practices-2.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Documentazione Volt](./volt_blade_implementation.md)
+- [Documentazione Volt](./volt-blade-implementation-3.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 

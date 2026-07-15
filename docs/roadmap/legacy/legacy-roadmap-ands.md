@@ -1,3 +1,21 @@
+---
+title: "User Module - Roadmap, Issues & Optimization"
+type: concept
+tags: [legacy, roadmap, ands]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "legacy-roadmap-ands user module - roadmap, issues & optimization"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./legacy-roadmap-1.md"
+  - "./legacy-roadmap-and-issues.md"
+  - "./legacy-roadmap-complete.md"
+  - "./legacy-roadmap-conflict.md"
+  - "./legacy-roadmap-x.md"
+  - "./legacy-roadmap.md"
+---
+
 # User Module - Roadmap, Issues & Optimization
 
 **Modulo**: User (Authentication, Authorization, Profiles)  

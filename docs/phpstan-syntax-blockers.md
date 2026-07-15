@@ -1,3 +1,23 @@
+---
+title: "PHPStan — stato modulo User (2026-07-08)"
+type: concept
+tags: [phpstan, syntax, blockers]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-syntax-blockers phpstan — stato modulo user (2026-07-08)"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # PHPStan — stato modulo User (2026-07-08)
 
 ## Stato attuale: risolto
@@ -38,5 +58,5 @@ Wrapper Passport e risorse Filament possono ancora generare warning PHPStan su s
 
 ## Collegamenti
 
-- [QUALITY_STATUS.md](../QUALITY_STATUS.md)
+- [quality-status-2.md](../quality-status-2.md)
 - [module-commit-push-after-change](wiki/rules/module-commit-push-after-change.md)

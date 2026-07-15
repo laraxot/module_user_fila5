@@ -1,3 +1,23 @@
+---
+title: "Team User Permissions Column Fix - Laraxot Philosophy Compliant"
+type: concept
+tags: [team, user, permissions, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "team-user-permissions-fix team user permissions column fix - laraxot philosophy compliant"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Team User Permissions Column Fix - Laraxot Philosophy Compliant
 
 **Date**: 2026-01-12  

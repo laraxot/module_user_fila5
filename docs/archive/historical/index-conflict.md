@@ -1,3 +1,23 @@
+---
+title: "User Module Documentation"
+type: concept
+tags: [index, conflict]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "index-conflict user module documentation"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # User Module Documentation
 
 ## Overview
@@ -47,10 +67,10 @@ This document serves as the central index for the User module, providing guidanc
 
 ## Links to Related Documentation
 - [BaseUser Model](./baseuser.md)
-- [Authentication Pages Implementation](./auth_pages_implementation.md)
-- [Profile Management](./profile_management.md)
-- [Routing Best Practices](./routing_best_practices.md)
-- [Session Management](./session_management.md)
+- [Authentication Pages Implementation](./auth-pages-implementation.md)
+- [Profile Management](./profile-management-2.md)
+- [Routing Best Practices](./routing-best-practices-2.md)
+- [Session Management](./session-management-2.md)
 
 ## Sottocartelle
 

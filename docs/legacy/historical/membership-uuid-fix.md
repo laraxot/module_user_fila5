@@ -1,3 +1,23 @@
+---
+title: "Fix: Duplicate Entry Error in team_user Table (DEPRECATO)"
+type: concept
+tags: [membership, uuid, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "membership-uuid-fix fix: duplicate entry error in team_user table (deprecato)"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Fix: Duplicate Entry Error in team_user Table (DEPRECATO)
 
 > ⚠️ **DEPRECATO**: Questa soluzione è stata sostituita dalla conversione UUID → autoincrement.

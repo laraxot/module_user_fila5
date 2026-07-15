@@ -1,3 +1,23 @@
+---
+title: "PHPStan Analysis - User Module"
+type: concept
+tags: [phpstan, analysis, user]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-analysis-user phpstan analysis - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./login-widget-translation-audit.md"
+  - "./password-translation-completion.md"
+  - "./phpstan-array-types-fixes.md"
+  - "./phpstan-compliance-status.md"
+  - "./phpstan-compliance.md"
+  - "./phpstan-corrections.md"
+  - "./phpstan-dry-kiss-improvements.md"
+  - "./phpstan-fixes-2025.md"
+---
+
 # PHPStan Analysis - User Module
 
 ## 📊 Status

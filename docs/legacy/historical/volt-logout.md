@@ -1,3 +1,23 @@
+---
+title: "Implementazione del Logout con Volt"
+type: concept
+tags: [volt, logout]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "volt-logout implementazione del logout con volt"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Implementazione del Logout con Volt
 
 ## Il Problema
@@ -216,5 +236,5 @@ public function test_logout_clears_session()
 ## Collegamenti
 
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
-- [Best Practices Filament](./filament_best_practices.md)
-- [Routing Best Practices](./routing_best_practices.md) 
+- [Best Practices Filament](./filament-best-practices.md)
+- [Routing Best Practices](./routing-best-practices-2.md) 

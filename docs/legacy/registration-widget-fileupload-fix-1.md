@@ -1,3 +1,23 @@
+---
+title: "RegistrationWidget FileUpload Fix"
+type: concept
+tags: [registration, widget, fileupload, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "registration-widget-fileupload-fix-1 registrationwidget fileupload fix"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+  - "./auth-components-best-practices-1.md"
+  - "./auth-components-best-practices.md"
+  - "./auth-login-implementation-1.md"
+---
+
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto

@@ -1,3 +1,23 @@
+---
+title: "Widget Translation Rules - <nome progetto> Project"
+type: rule
+tags: [widget, translation, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "widget-translation-rules-1 widget translation rules - <nome progetto> project"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+  - "./auth-components-best-practices-1.md"
+  - "./auth-components-best-practices.md"
+  - "./auth-login-implementation-1.md"
+---
+
 # Widget Translation Rules - <nome progetto> Project
 
 ## Core Principles
@@ -183,7 +203,7 @@ protected static string $view = 'user::widgets.edit-user';
 
 ## Related Documentation
 
-- [User Module Widget Structure](../Modules/User/docs/widgets_structure.md)
+- [User Module Widget Structure](../Modules/User/docs/widgets-structure-2.md)
 - [EditUserWidget Documentation](../Modules/User/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../Modules/User/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)

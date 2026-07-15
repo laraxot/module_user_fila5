@@ -6,17 +6,23 @@ confidence: high
 created: 2026-05-21
 updated: 2026-05-22
 tags: [legacy, documentation, duplication, drift, User]
-related:
-  - ../../redundancy-report.md
-  - ../../../../docs/redundancy-report.md
 sources: []
+related:
+  - "./ai-harness-user-discipline.md"
+  - "./baseuser-hierarchy.md"
+  - "./code-redundancy-user.md"
+  - "./context-mode-user-discipline.md"
+  - "./context-overflow-prevention.md"
+  - "./filament-langserviceprovider-governance.md"
+  - "./filament-widget-linear-crud-model-create.md"
+  - "./filament-widget-resource-form-delegation.md"
 ---
 
 # Pattern ridondanza in `Modules/User/docs/legacy`
 
 ## Business reason
 
-Cartella **`docs/legacy`** conserva **storia progettuale**: decisioni Volt/Filament/widget, fix translation, refactor routing. Nel tempo più agenti/note hanno prodotto **varianti nominative dello stesso argomento** (`auth-performance` vs `AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md`, `-1`, snake_case vs kebab-case), generando migliaia di file sovrapposti.
+Cartella **`docs/legacy`** conserva **storia progettuale**: decisioni Volt/Filament/widget, fix translation, refactor routing. Nel tempo più agenti/note hanno prodotto **varianti nominative dello stesso argomento** (`auth-performance` vs `authentication-performance-optimization-2.md`, `-1`, snake_case vs kebab-case), generando migliaia di file sovrapposti.
 
 ## Rischi operativi
 

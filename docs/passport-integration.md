@@ -1,3 +1,23 @@
+---
+title: "Laravel Passport Integration - Architettura Completa"
+type: concept
+tags: [passport, integration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "passport-integration laravel passport integration - architettura completa"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Laravel Passport Integration - Architettura Completa
 
 > **Generato**: [DATE]
@@ -499,9 +519,9 @@ $ ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 ## 📚 Collegamenti
 
 ### Documentazione Correlata
-- [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia generale
+- [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale
 - [README.md](./readme.md) - Overview modulo
-- [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md) - Business logic completa
+- [business-logic-deep-dive-4.md](./business-logic-deep-dive.md) - Business logic completa
 
 ### Documentazione Esterna
 - [Laravel Passport Official](https://laravel.com/docs/passport)

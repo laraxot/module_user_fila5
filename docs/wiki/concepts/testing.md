@@ -6,12 +6,16 @@ created: 2026-06-13
 updated: 2026-07-06
 qmd: "User module pest phpstan skipUserTest uses fqcn helpers Safe glob"
 issues:
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/372"
 discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/373"
 related:
-  - ../../../../../../docs/wiki/PHPSTAN-INDEX.md
-  - ../../../../../../docs/wiki/rules/phpstan-pest-tests-stay-pest.md
+  - "./ai-harness-user-discipline.md"
+  - "./baseuser-hierarchy.md"
+  - "./code-redundancy-user.md"
+  - "./context-mode-user-discipline.md"
+  - "./context-overflow-prevention.md"
+  - "./filament-langserviceprovider-governance.md"
+  - "./filament-widget-linear-crud-model-create.md"
+  - "./filament-widget-resource-form-delegation.md"
 ---
 
 # Testing in User

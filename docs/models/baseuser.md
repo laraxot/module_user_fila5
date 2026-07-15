@@ -1,3 +1,21 @@
+---
+title: "BaseUser"
+type: concept
+tags: [baseuser]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "baseuser baseuser"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./base-classes-hierarchy.md"
+  - "./readme.md"
+  - "./team.md"
+  - "./teampermission.md"
+  - "./xotbaivot-migration.md"
+  - "./xotbasepivot-migration.md"
+---
+
 # BaseUser
 
 ## Descrizione

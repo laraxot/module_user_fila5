@@ -1,3 +1,23 @@
+---
+title: "Struttura dei Tests del Modulo User"
+type: concept
+tags: [testing, structure]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing-structure struttura dei tests del modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./architecture-rules.md"
+  - "./architecture.md"
+  - "./auth-blade-structure.md"
+  - "./component-registration.md"
+  - "./readme.md"
+  - "./structure.md"
+  - "./user-gdpr-decoupling.md"
+  - "./user-gdpr-oupling.md"
+---
+
 # Struttura dei Tests del Modulo User
 
 ## Panoramica

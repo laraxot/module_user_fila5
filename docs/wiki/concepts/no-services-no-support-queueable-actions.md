@@ -7,8 +7,14 @@ created: 2026-07-13
 updated: 2026-07-13
 qmd: "User module Services and Support banned use app Actions QueueableAction policy"
 related:
-  - no-app-support-queueable-actions.md
-  - ../../../Xot/docs/wiki/concepts/queueable-action-trait-mandatory.md
+  - "./ai-harness-user-discipline.md"
+  - "./baseuser-hierarchy.md"
+  - "./code-redundancy-user.md"
+  - "./context-mode-user-discipline.md"
+  - "./context-overflow-prevention.md"
+  - "./filament-langserviceprovider-governance.md"
+  - "./filament-widget-linear-crud-model-create.md"
+  - "./filament-widget-resource-form-delegation.md"
 ---
 
 # User — Services/Support vietati: solo Actions

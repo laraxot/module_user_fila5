@@ -1,3 +1,21 @@
+---
+title: "User Module - XotBasePivot Migration"
+type: concept
+tags: [xotbaivot, migration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "xotbaivot-migration user module - xotbasepivot migration"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./base-classes-hierarchy.md"
+  - "./baseuser.md"
+  - "./readme.md"
+  - "./team.md"
+  - "./teampermission.md"
+  - "./xotbasepivot-migration.md"
+---
+
 # User Module - XotBasePivot Migration
 
 ## 📊 Overview

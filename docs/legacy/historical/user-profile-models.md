@@ -1,3 +1,23 @@
+---
+title: "Modelli User e Profile: Analisi delle Scelte di Progettazione"
+type: concept
+tags: [user, profile, models]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user-profile-models modelli user e profile: analisi delle scelte di progettazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Modelli User e Profile: Analisi delle Scelte di Progettazione
 
 ## Approccio 1: Modello User Unificato

@@ -1,3 +1,23 @@
+---
+title: "Invio Email per la Continuazione della Registrazione del Dottore"
+type: concept
+tags: [email, doctor, registration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "email-doctor-registration invio email per la continuazione della registrazione del dottore"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Invio Email per la Continuazione della Registrazione del Dottore
 
 ## Panoramica del Processo

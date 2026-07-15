@@ -1,3 +1,23 @@
+---
+title: "Resources Array Keys Philosophy: String Keys Always"
+type: concept
+tags: [resources, array, keys, philosophy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "resources-array-keys-philosophy resources array keys philosophy: string keys always"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Resources Array Keys Philosophy: String Keys Always
 
 ## Data: 2025-01-22

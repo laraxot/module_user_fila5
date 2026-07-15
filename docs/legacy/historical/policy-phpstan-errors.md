@@ -1,3 +1,23 @@
+---
+title: "Errori PHPStan nelle Policy del Modulo User"
+type: concept
+tags: [policy, phpstan, errors]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "policy-phpstan-errors errori phpstan nelle policy del modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Errori PHPStan nelle Policy del Modulo User
 
 ## Problema Identificato (2025-01-06)

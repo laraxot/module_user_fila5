@@ -1,3 +1,16 @@
+---
+title: "Filament Version Declaration — {ModuleOrThemeName}"
+type: concept
+tags: [filament, version]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-version filament version declaration — {moduleorthemename}"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./confidence-guidelines.md"
+---
+
 # Filament Version Declaration — {ModuleOrThemeName}
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)

@@ -7,12 +7,16 @@ created: 2026-04-15
 updated: 2026-07-08
 qmd: "user module wiki log phpstan no comment dependency"
 issues:
-  - "https://github.com/provtv/base_ptv_fila5_mono/issues/102"
 discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
-  - ./concepts/no-comment-module-dependency.md
-  - ./rules/can-comment-retired-wrong-placement.md
+  - "./agents.md"
+  - "./architecture.md"
+  - "./auth-patterns.md"
+  - "./bmad-method.md"
+  - "./context-compression.md"
+  - "./index.md"
+  - "./overview.md"
+  - "./socialite-architecture.md"
 ---
 
 - 2026-07-08: push `laraxot/dev` — squash 365 commit (LFS missing 41 oggetti); abort rebase 328 commit; PHPStan User 0 errori (`password_resets` `updateTimestamps`, `permission` config types). Doc: [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md).
@@ -46,7 +50,7 @@ related:
 - risolti errori PHPStan mirati su `PassportDashboard`, `EditUserWidget` e `RegistrationWidget`.
 - regola documentata: proprieta' Livewire tipizzate, `class-string` validati prima dell'assegnazione, nessun default stringa vuota per `class-string`.
 - evitato override locale di `$view` nei widget quando `XotBaseWidget::resolveView()` puo' calcolare la vista.
-- nuova pagina troubleshooting: `troubleshooting/phpstan-widget-property-types-2026-05-06.md`.
+- nuova pagina troubleshooting: `troubleshooting/phpstan-widget-property-types-.md.md`.
 
 ## [2026-04-28] fix | spatie permission team model config missing su route admin
 - errore runtime gestito: `Spatie\Permission\Exceptions\TeamModelNotConfigured` su `/admin`.

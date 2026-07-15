@@ -1,3 +1,23 @@
+---
+title: "PHPStan Fixes Complete - Gennaio 2025"
+type: concept
+tags: [phpstan, fixes, gennaio, complete]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-fixes-gennaio-complete phpstan fixes complete - gennaio 2025"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./login-widget-translation-audit.md"
+  - "./password-translation-completion.md"
+  - "./phpstan-analysis-user.md"
+  - "./phpstan-array-types-fixes.md"
+  - "./phpstan-compliance-status.md"
+  - "./phpstan-compliance.md"
+  - "./phpstan-corrections.md"
+  - "./phpstan-dry-kiss-improvements.md"
+---
+
 # PHPStan Fixes Complete - Gennaio 2025
 
 ## Riepilogo

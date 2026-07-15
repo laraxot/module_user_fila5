@@ -1,3 +1,23 @@
+---
+title: "Teams Migration - Laraxot Compliance Fix"
+type: concept
+tags: [teams, migration, laraxot, compliance]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "teams-migration-laraxot-compliance teams migration - laraxot compliance fix"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Teams Migration - Laraxot Compliance Fix
 
 ## Data
@@ -60,7 +80,7 @@ Entrambe dovrebbero usare `uuid()` per coerenza con il sistema laraxot.
 
 ## Checklist Conformità Laraxot
 
-Riferimento: `/Modules/User/docs/MIGRATION_BEST_PRACTICES.md`
+Riferimento: `/Modules/User/docs/migration-best-practices-2.md`
 
 ### Prima della Correzione
 
@@ -166,7 +186,7 @@ Questo garantisce:
 
 ## Riferimenti
 
-- `/Modules/User/docs/MIGRATION_BEST_PRACTICES.md` - Standard migrations modulo User
+- `/Modules/User/docs/migration-best-practices-2.md` - Standard migrations modulo User
 - `/Modules/Xot/app/Database/Migrations/XotBaseMigration.php` - Classe base
 - `/Modules/Xot/docs/migration-standards.md` - Standard generali (se esiste)
 
@@ -190,7 +210,7 @@ Questo garantisce:
 
 ## Lesson Learned
 
-**SEMPRE seguire la checklist di MIGRATION_BEST_PRACTICES.md prima di committare una migration!**
+**SEMPRE seguire la checklist di migration-best-practices-2.md prima di committare una migration!**
 
 Le violazioni delle convenzioni laraxot rendono:
 - Più difficile il refactoring
@@ -270,7 +290,7 @@ Entrambe dovrebbero usare `uuid()` per coerenza con il sistema laraxot.
 
 ## Checklist Conformità Laraxot
 
-Riferimento: `/Modules/User/docs/MIGRATION_BEST_PRACTICES.md`
+Riferimento: `/Modules/User/docs/migration-best-practices-2.md`
 
 ### Prima della Correzione
 
@@ -376,7 +396,7 @@ Questo garantisce:
 
 ## Riferimenti
 
-- `/Modules/User/docs/MIGRATION_BEST_PRACTICES.md` - Standard migrations modulo User
+- `/Modules/User/docs/migration-best-practices-2.md` - Standard migrations modulo User
 - `/Modules/Xot/app/Database/Migrations/XotBaseMigration.php` - Classe base
 - `/Modules/Xot/docs/migration-standards.md` - Standard generali (se esiste)
 
@@ -400,7 +420,7 @@ Questo garantisce:
 
 ## Lesson Learned
 
-**SEMPRE seguire la checklist di MIGRATION_BEST_PRACTICES.md prima di committare una migration!**
+**SEMPRE seguire la checklist di migration-best-practices-2.md prima di committare una migration!**
 
 Le violazioni delle convenzioni laraxot rendono:
 - Più difficile il refactoring

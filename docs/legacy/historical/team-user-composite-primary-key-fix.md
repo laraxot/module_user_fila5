@@ -1,3 +1,23 @@
+---
+title: "Fix: team_user Composite Primary Key Implementation"
+type: concept
+tags: [team, user, composite, primary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "team-user-composite-primary-key-fix fix: team_user composite primary key implementation"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Fix: team_user Composite Primary Key Implementation
 
 ## Data Intervento

@@ -6,13 +6,9 @@ tags: [migrations, xotbase, schema, conventions]
 created: 2026-07-15
 updated: 2026-07-15
 qmd: "user migration philosophy xotbase one migration per model no connection"
-related:
-  - "../../../../docs/wiki/bmad/architecture-one-migration-per-model.md"
-  - "../../../../docs/wiki/memories/one-migration-per-model-bump-timestamp.md"
 issues:
-  - "https://github.com/provtv/base_ptv_fila5/issues/193"
 discussions:
-  - "https://github.com/provtv/base_ptv_fila5/discussions/194"
+related:
 ---
 
 # Migration philosophy

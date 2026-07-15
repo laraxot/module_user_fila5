@@ -1,3 +1,23 @@
+---
+title: "Filament 4: Namespace Actions - Filosofia Laraxot"
+type: concept
+tags: [filament, actions, namespace]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-4-actions-namespace filament 4: namespace actions - filosofia laraxot"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+  - "./auth-components-best-practices-1.md"
+  - "./auth-components-best-practices.md"
+  - "./auth-login-implementation-1.md"
+---
+
 # Filament 4: Namespace Actions - Filosofia Laraxot
 
 **Data Creazione**: 2025-01-22

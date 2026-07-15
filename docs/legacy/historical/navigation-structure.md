@@ -1,3 +1,23 @@
+---
+title: "Struttura Navigazione"
+type: concept
+tags: [navigation, structure]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "navigation-structure struttura navigazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Struttura Navigazione
 
 ## Overview
@@ -139,6 +159,6 @@ Event::dispatch('user.action', [
    - Input validation
 
 ## Collegamenti Correlati
-- [Header Components](./header_components.md)
+- [Header Components](./header-components.md)
 - [Security Best Practices](./security_best_practices.md)
-- [Session Management](./session_management.md) 
+- [Session Management](./session-management-2.md) 

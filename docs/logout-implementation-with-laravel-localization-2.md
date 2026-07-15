@@ -1,11 +1,31 @@
+---
+title: "Implementazione del Logout con LaravelLocalization"
+type: concept
+tags: [logout, implementation, laravel, localization]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logout-implementation-with-laravel-localization-2 implementazione del logout con laravellocalization"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Implementazione del Logout con LaravelLocalization 
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
+- [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
-- [Regole Traduzioni](/laravel/modules/lang/docs/translation_keys_rules.md)
+- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Panoramica

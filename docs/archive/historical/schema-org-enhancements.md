@@ -1,3 +1,23 @@
+---
+title: "🧠 Schema.org Model Enhancement Analysis"
+type: concept
+tags: [schema, org, enhancements]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "schema-org-enhancements 🧠 schema.org model enhancement analysis"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # 🧠 Schema.org Model Enhancement Analysis
 
 ## Observation

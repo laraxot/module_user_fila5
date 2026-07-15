@@ -1,3 +1,23 @@
+---
+title: "Passport Complete Management - Internal Debate & Decision"
+type: concept
+tags: [passport, managementebate]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "passport-managementebate passport complete management - internal debate & decision"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Passport Complete Management - Internal Debate & Decision
 
 > **Data**: [DATE]  
@@ -219,8 +239,8 @@ app/Policies/OauthClientPolicy.php
 ## 🔗 Collegamenti
 
 - [passport.md](./passport.md) - Documentazione completa Passport
-- [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia modulo User
-- [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md) - Business logic approfondita
+- [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia modulo User
+- [business-logic-deep-dive-4.md](./business-logic-deep-dive.md) - Business logic approfondita
 
 ---
 

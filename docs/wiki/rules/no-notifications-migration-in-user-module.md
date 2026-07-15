@@ -2,17 +2,21 @@
 title: vietato create_notifications_table nel modulo User
 type: rule
 tags:
-  - user
-  - notify
-  - migration
-  - boundary
 dates:
   created: 2026-06-10
   updated: 2026-06-10
 qmd:
-  - notifications migration user forbidden notify owner
 issues: []
 discussions: []
+related:
+  - "./agent-confidence-protocol.md"
+  - "./can-comment-retired-wrong-placement.md"
+  - "./frontend-stack-canonical.md"
+  - "./header-auth-flow.md"
+  - "./header-design-colors.md"
+  - "./module-commit-push-after-change.md"
+  - "./navigation-properties.md"
+  - "./no-filament-labels.md"
 ---
 
 # Vietato `create_notifications_table` in User

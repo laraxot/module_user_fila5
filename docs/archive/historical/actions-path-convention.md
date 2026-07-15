@@ -1,3 +1,23 @@
+---
+title: "Convenzione dei Percorsi per le Actions"
+type: concept
+tags: [actions, path, convention]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "actions-path-convention convenzione dei percorsi per le actions"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+  - "./auth-components-best-practices-1.md"
+---
+
 # Convenzione dei Percorsi per le Actions
 
 ## Regola Fondamentale
@@ -61,6 +81,6 @@ fi
 ```
 
 ## Collegamenti
-- [Convenzioni Path nei Moduli Laravel](./path_conventions.md)
-- [Checklist per la Struttura delle Directory](./directory_structure_checklist.md)
+- [Convenzioni Path nei Moduli Laravel](./path-conventions-2.md)
+- [Checklist per la Struttura delle Directory](./directory-structure-checklist.md)
 - [Analisi Errore: Gestione Percorsi](../../../../docs/error_analysis/path_management.md)

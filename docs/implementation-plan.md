@@ -1,3 +1,23 @@
+---
+title: "Piano di Implementazione Componenti Header"
+type: concept
+tags: [implementation, plan]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "implementation-plan piano di implementazione componenti header"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Piano di Implementazione Componenti Header
 
 ## Fase 1: Setup Struttura
@@ -163,11 +183,11 @@ class NavigationTest extends TestCase
 ## Fase 7: Documentazione
 
 ### 7.1 Aggiornare
-- [Header Components](./HEADER_COMPONENTS.md)
-- [Navigation Structure](./NAVIGATION_STRUCTURE.md)
+- [Header Components](./header-components.md)
+- [Navigation Structure](./navigation-structure.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
-- [Header Components](./header_components.md)
-- [Navigation Structure](./navigation_structure.md)
+- [Header Components](./header-components.md)
+- [Navigation Structure](./navigation-structure-2.md)
 - [Security Best Practices](./security_best_practices.md)
 
 ## Timeline
@@ -195,9 +215,9 @@ class NavigationTest extends TestCase
    - Cache settings
 
 ## Collegamenti Correlati
-- [Header Components](./HEADER_COMPONENTS.md)
-- [Navigation Structure](./NAVIGATION_STRUCTURE.md)
+- [Header Components](./header-components.md)
+- [Navigation Structure](./navigation-structure.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md) 
-- [Header Components](./header_components.md)
-- [Navigation Structure](./navigation_structure.md)
+- [Header Components](./header-components.md)
+- [Navigation Structure](./navigation-structure-2.md)
 - [Security Best Practices](./security_best_practices.md) 

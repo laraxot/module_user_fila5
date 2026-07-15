@@ -1,3 +1,23 @@
+---
+title: "Risoluzione Problema Login - Report Finale (Aggiornato)"
+type: concept
+tags: [login, issue, resolution, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "login-issue-resolution-report risoluzione problema login - report finale (aggiornato)"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Risoluzione Problema Login - Report Finale (Aggiornato)
 
 ## Prologo: La Sfida degli Agenti

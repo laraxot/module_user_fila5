@@ -2,12 +2,9 @@
 type: overview
 module: User
 sources:
-  - ../../../docs/models.md
-  - ../../../docs/permissions.md
-  - ../../../docs/architecture.md
-  - ../../../docs/structure.md
 confidence: high
 updated: 2026-04-15
+related:
 ---
 
 # User Module — Overview

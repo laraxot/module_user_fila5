@@ -1,3 +1,23 @@
+---
+title: "Quality Tools Report - PHPStan, PHPMD, PHP Insights"
+type: concept
+tags: [quality, tools, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "quality-tools-report quality tools report - phpstan, phpmd, php insights"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Quality Tools Report - PHPStan, PHPMD, PHP Insights
 
 ## Data: 2025-01-02

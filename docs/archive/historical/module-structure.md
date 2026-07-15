@@ -1,3 +1,23 @@
+---
+title: "Struttura del Modulo User"
+type: concept
+tags: [module, structure]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "module-structure struttura del modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Struttura del Modulo User
 
 ## Panoramica
@@ -227,9 +247,9 @@ Modules/User/Lang/it/
 
 ## Collegamenti Correlati
 
-- [Best Practices per le Traduzioni](translation_best_practices.md)
-- [Regole per le Chiavi di Traduzione](translation_keys_rules.md)
-- [Convenzioni di Codice](code_conventions.md)
+- [Best Practices per le Traduzioni](translation-best-practices-2.md)
+- [Regole per le Chiavi di Traduzione](translation-keys-rules-2.md)
+- [Convenzioni di Codice](code-conventions.md)
 1. **Verifica Path**
    ```bash
    # Prima di creare un file/cartella, verifica sempre il path
@@ -522,9 +542,9 @@ Modules/User/Lang/it/
 
 ## Collegamenti Correlati
 
-- [Best Practices per le Traduzioni](translation_best_practices.md)
-- [Regole per le Chiavi di Traduzione](translation_keys_rules.md)
-- [Convenzioni di Codice](code_conventions.md)
+- [Best Practices per le Traduzioni](translation-best-practices-2.md)
+- [Regole per le Chiavi di Traduzione](translation-keys-rules-2.md)
+- [Convenzioni di Codice](code-conventions.md)
 1. **Verifica Path**
    ```bash
    # Prima di creare un file/cartella, verifica sempre il path

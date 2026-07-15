@@ -1,3 +1,23 @@
+---
+title: "User Module - Roadmap, Issues & Optimization"
+type: concept
+tags: [roadmap, issues]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "roadmap-and-issues user module - roadmap, issues & optimization"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # User Module - Roadmap, Issues & Optimization
 
 **Modulo**: User (Authentication, Authorization, Profiles)  
@@ -370,7 +390,7 @@ php artisan queue:prune-failed --hours=48
 ## 🔗 Collegamenti
 
 - [← User Module README](./readme.md)
-- [← PHPStan Fixes 2025-10-01](./phpstan-fixes-2025-10-01.md)
+- [← PHPStan Fixes 2025-10-01](./phpstan-fixes.md)
 - [← Project Roadmap](../../../../docs/project-analysis-and-roadmap.md)
 - [← Root Documentation](../../../../docs/index.md)
 

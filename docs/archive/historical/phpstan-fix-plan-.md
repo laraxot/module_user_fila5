@@ -1,3 +1,23 @@
+---
+title: "PHPStan Analysis - User Module (Jan 2026)"
+type: concept
+tags: [phpstan, fix, plan]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-fix-plan- phpstan analysis - user module (jan 2026)"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # PHPStan Analysis - User Module (Jan 2026)
 
 ## Current Status

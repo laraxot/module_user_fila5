@@ -1,3 +1,23 @@
+---
+title: "FullCalendar Scheduler - Riferimento Rapido"
+type: concept
+tags: [fullcalendar, scheduler, quick, reference]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "fullcalendar-scheduler-quick-reference fullcalendar scheduler - riferimento rapido"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # FullCalendar Scheduler - Riferimento Rapido
 
 ## 🚨 Problemi Comuni e Soluzioni Immediate

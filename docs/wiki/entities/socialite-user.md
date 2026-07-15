@@ -3,6 +3,7 @@ title: SocialiteUser — Entità OAuth utente
 type: entity
 module: User
 updated: 2026-04-20
+related:
 ---
 
 # SocialiteUser

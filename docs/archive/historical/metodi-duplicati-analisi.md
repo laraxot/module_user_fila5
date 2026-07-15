@@ -1,3 +1,23 @@
+---
+title: "🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION"
+type: concept
+tags: [metodi, duplicati, analisi]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "metodi-duplicati-analisi 🐄⚡ analisi metodi duplicati - super mucca edition"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨  

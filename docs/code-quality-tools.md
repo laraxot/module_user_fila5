@@ -1,3 +1,23 @@
+---
+title: "🔍 Code Quality Tools - Modulo User"
+type: concept
+tags: [code, quality, tools]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "code-quality-tools 🔍 code quality tools - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # 🔍 Code Quality Tools - Modulo User
 
 **Data Creazione**: 2025-01-27  

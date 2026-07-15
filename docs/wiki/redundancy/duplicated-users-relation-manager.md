@@ -4,6 +4,11 @@ type: redundancy
 owner: Modules/User
 severity: high
 created: 2026-05-21
+related:
+  - "./duplicated-auth-widgets.md"
+  - "./duplicated-profile-form.md"
+  - "./duplicated-ratings-relation-manager.md"
+  - "./oauth-dual-resource-trees.md"
 ---
 
 # Duplicated UsersRelationManager

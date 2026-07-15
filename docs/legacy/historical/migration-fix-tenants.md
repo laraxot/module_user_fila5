@@ -1,3 +1,23 @@
+---
+title: "🔧 Migration Fix: create_tenants_table"
+type: concept
+tags: [migration, fix, tenants]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration-fix-tenants 🔧 migration fix: create_tenants_table"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # 🔧 Migration Fix: create_tenants_table
 
 **File**: `database/migrations/2023_01_01_000008_create_tenants_table.php`

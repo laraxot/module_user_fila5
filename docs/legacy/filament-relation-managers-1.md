@@ -1,3 +1,23 @@
+---
+title: "Filament Relation Managers nel Modulo User"
+type: concept
+tags: [filament, relation, managers]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-relation-managers-1 filament relation managers nel modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+  - "./auth-components-best-practices-1.md"
+  - "./auth-components-best-practices.md"
+  - "./auth-login-implementation-1.md"
+---
+
 # Filament Relation Managers nel Modulo User
 
 ## Struttura dei Relation Managers

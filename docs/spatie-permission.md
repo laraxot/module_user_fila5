@@ -1,3 +1,23 @@
+---
+title: "🏛️ FILOSOFIA SPATIE PERMISSION IN LARAXOT"
+type: concept
+tags: [spatie, permission]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "spatie-permission 🏛️ filosofia spatie permission in laraxot"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # 🏛️ FILOSOFIA SPATIE PERMISSION IN LARAXOT
 
 ## 📋 CONTESTO E ANALISI
@@ -218,7 +238,7 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 - [External Package Integration](../Xot/docs/models/model-architecture.md#special-cases)
 - [Class Responsibility Separation](../xot/docs/critical-architecture-rules.md)
 - [Spatie Permission Methods](spatie-permissions-methods.md)
-- [Roles and Permissions](roles_permissions.md)
+- [Roles and Permissions](roles-permissions-3.md)
 
 ## ✅ **VERIFICA STATO ATTUALE**
 

@@ -1,3 +1,23 @@
+---
+title: "Analisi Corretta del Trait HasTeams - Filosofia Laraxot"
+type: concept
+tags: [traits, hasteams, analysis, corrected]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "traits-hasteams-analysis-corrected analisi corretta del trait hasteams - filosofia laraxot"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Analisi Corretta del Trait HasTeams - Filosofia Laraxot
 
 ## Comprensione della Filosofia `belongsToManyX`
@@ -527,5 +547,5 @@ trait HasTeams
 
 - [docs/USER_MODULE.md](../../../project_docs/user_module.md)
 - [Modules/User/project_docs/traits.md](traits.md)
-- [docs/phpstan_fixes.md](../../../project_docs/phpstan_fixes.md)
+- [docs/phpstan-fixes-8.md](../../../project_docs/phpstan-fixes-8.md)
 - [Modules/Xot/project_docs/RELATION_X.md](../../xot/project_docs/relation_x.md)

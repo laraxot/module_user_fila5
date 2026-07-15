@@ -1,3 +1,23 @@
+---
+title: "Correzioni PHPStan Livello 7 - Modulo User"
+type: concept
+tags: [phpstan, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-fixes-1 correzioni phpstan livello 7 - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Correzioni PHPStan Livello 7 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo User e le relative soluzioni implementate.
@@ -36,12 +56,12 @@ Il problema è che i tag PHPDoc facevano riferimento a una classe `Builder` nel 
 ### Versione HEAD
 
 Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` utilizzando il namespace completo `\Illuminate\Database\Eloquent\Builder`.
-## Collegamenti tra versioni di phpstan_fixes.md
-* [phpstan_fixes.md](../../../xot/docs/phpstan/phpstan_fixes.md)
-* [phpstan_fixes.md](../../../xot/docs/phpstan_fixes.md)
-* [phpstan_fixes.md](../../../user/docs/phpstan_fixes.md)
-* [phpstan_fixes.md](../../../ui/docs/phpstan_fixes.md)
-* [phpstan_fixes.md](../../../media/docs/phpstan_fixes.md)
+## Collegamenti tra versioni di phpstan-fixes-8.md
+* [phpstan-fixes-8.md](../../../xot/docs/phpstan/phpstan-fixes-8.md)
+* [phpstan-fixes-8.md](../../../xot/docs/phpstan-fixes-8.md)
+* [phpstan-fixes-8.md](../../../user/docs/phpstan-fixes-8.md)
+* [phpstan-fixes-8.md](../../../ui/docs/phpstan-fixes-8.md)
+* [phpstan-fixes-8.md](../../../media/docs/phpstan-fixes-8.md)
 
 ### Versione Incoming
 

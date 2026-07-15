@@ -1,3 +1,23 @@
+---
+title: "LoginWidget Filament Schema JavaScript Errors - Roadmap"
+type: concept
+tags: [login, widget, filament, schema]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "login-widget-filament-schema-errors-roadmap loginwidget filament schema javascript errors - roadmap"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # LoginWidget Filament Schema JavaScript Errors - Roadmap
 
 **Data**: 2025-01-22

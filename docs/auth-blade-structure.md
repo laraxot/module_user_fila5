@@ -1,3 +1,23 @@
+---
+title: "Struttura delle Blade di Autenticazione con Volt"
+type: concept
+tags: [auth, blade, structure]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "auth-blade-structure struttura delle blade di autenticazione con volt"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Struttura delle Blade di Autenticazione con Volt
 
 ## Introduzione
@@ -178,11 +198,11 @@ Ogni azione di autenticazione deve:
 
 ## Collegamenti
 
-- [Documentazione Volt](./volt_logout.md)
-- [Best Practices Routing](./routing_best_practices.md)
-- [Struttura Directory](./directory_structure_checklist.md)
-- [Gestione Errori](./error_handling.md) 
-- [Documentazione Volt](./VOLT_LOGOUT.md)
-- [Best Practices Routing](./ROUTING_BEST_PRACTICES.md)
-- [Struttura Directory](./DIRECTORY_STRUCTURE_CHECKLIST.md)
-- [Gestione Errori](./ERROR_HANDLING.md) 
+- [Documentazione Volt](./volt-logout-2.md)
+- [Best Practices Routing](./routing-best-practices-2.md)
+- [Struttura Directory](./directory-structure-checklist.md)
+- [Gestione Errori](./error-handling.md) 
+- [Documentazione Volt](./volt-logout.md)
+- [Best Practices Routing](./routing-best-practices.md)
+- [Struttura Directory](./directory-structure-checklist.md)
+- [Gestione Errori](./error-handling.md) 

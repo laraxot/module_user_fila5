@@ -5,7 +5,6 @@ type: source
 created: "2026-04-29T00:00:00Z"
 updated: "2026-04-29T00:00:00Z"
 related:
-  - "[[User Module Operating Focus]]"
 ---
 
 # User Architecture Sources
@@ -15,7 +14,7 @@ related:
 ## Source Cluster
 
 - `README.md`
-- `PRODUCT_STRATEGY.md`
+- `product-strategy-2.md`
 - `architecture/architecture-rules.md`
 - `advanced-user-architecture.md`
 

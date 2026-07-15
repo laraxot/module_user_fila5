@@ -1,12 +1,32 @@
+---
+title: "Implementazione Corretta di logout.blade.php"
+type: concept
+tags: [auth, logout, blade]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "auth-logout-blade implementazione corretta di logout.blade.php"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
 - [Documentazione centrale](../../../../docs/readme.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
+- [Convenzioni Path](./path-conventions-2.md)
 - [Struttura moduli](../../../../docs/architecture/modules-structure.md)
-- [Logout Page Fix](./logout_page_fix.md)
+- [Logout Page Fix](./logout-page-fix-2.md)
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:

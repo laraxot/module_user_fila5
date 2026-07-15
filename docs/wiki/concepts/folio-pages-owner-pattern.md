@@ -6,13 +6,15 @@ created: 2026-06-10
 updated: 2026-06-10
 qmd: "user module folio pages owner notifications dashboard profile mount cms provider"
 issues:
-  - https://github.com/laraxot/base_fixcity_fila5/issues/289
 related:
-  - notifications-folio-page.md
-  - notifications-folio-route.md
-  - ../../../Cms/docs/wiki/concepts/folio-filesystem-routing-no-web-php.md
-  - ../../../Cms/docs/wiki/concepts/folio-list-vs-route-list.md
-  - ../../../../Themes/Sixteen/docs/wiki/concepts/fo-folio-named-routes-header.md
+  - "./ai-harness-user-discipline.md"
+  - "./baseuser-hierarchy.md"
+  - "./code-redundancy-user.md"
+  - "./context-mode-user-discipline.md"
+  - "./context-overflow-prevention.md"
+  - "./filament-langserviceprovider-governance.md"
+  - "./filament-widget-linear-crud-model-create.md"
+  - "./filament-widget-resource-form-delegation.md"
 ---
 
 # Modulo User — owner pagine Folio, zero web.php

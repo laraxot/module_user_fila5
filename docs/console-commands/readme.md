@@ -1,3 +1,19 @@
+---
+title: "Comandi Console - Modulo User"
+type: concept
+tags: [readme]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "readme comandi console - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./assign-module-command.md"
+  - "./change-password-command.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands.md"
+---
+
 # Comandi Console - Modulo User
 
 ## Panoramica
@@ -205,7 +221,7 @@ Modules/User/
 ```
 
 ## Collegamenti
-- [Console Commands Philosophy](console_commands_philosophy.md)
+- [Console Commands Philosophy](console-commands-philosophy.md)
 - [User Models](../models/readme.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)

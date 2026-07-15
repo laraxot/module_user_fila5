@@ -1,3 +1,23 @@
+---
+title: "Ottimizzazioni Approfondite Modulo User - DRY + KISS"
+type: concept
+tags: [ottimizzazioni, approfondite, modulo, user]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ottimizzazioni-approfondite-modulo-user ottimizzazioni approfondite modulo user - dry + kiss"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Ottimizzazioni Approfondite Modulo User - DRY + KISS
 
 ## Panoramica
@@ -79,9 +99,9 @@ app/
 **File da rinominare:**
 ```bash
 # Esempi di rinominazione
-git_conflict_resolution.md → git-conflict-resolution.md
-volt_folio_logout_error.md → volt-folio-logout-error.md
-user_factory_integration.md → user-factory-integration.md
+git-conflict-resolution.md → git-conflict-resolution.md
+volt-folio-logout-error-3.md → volt-folio-logout-error.md
+user-factory-integration-2.md → user-factory-integration.md
 phpstan_level9.md → phpstan-level9.md
 filament_best_practices.md → filament-best-practices.md
 ```
@@ -184,9 +204,9 @@ done
 ```bash
 # Eliminare file duplicati
 cd docs/
-rm git_conflict_resolution.md
-rm volt_folio_logout_error.md
-rm user_factory_integration.md
+rm git-conflict-resolution.md
+rm volt-folio-logout-error-3.md
+rm user-factory-integration-2.md
 rm phpstan_level9.md
 rm filament_best_practices.md
 

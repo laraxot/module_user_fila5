@@ -1,12 +1,32 @@
+---
+title: "Conclusioni e Raccomandazioni per logout.blade.php"
+type: concept
+tags: [logout, blade, conclusions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logout-blade-conclusions-1 conclusioni e raccomandazioni per logout.blade.php"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+  - "./auth-components-best-practices-1.md"
+  - "./auth-components-best-practices.md"
+  - "./auth-login-implementation-1.md"
+---
+
 # Conclusioni e Raccomandazioni per logout.blade.php
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
-- [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
-- [Logout Blade Analysis](./LOGOUT_BLADE_ANALYSIS.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Auth Pages Implementation](./auth-pages-implementation.md)
+- [Logout Blade Implementation](./logout-blade-implementation.md)
+- [Logout Blade Analysis](./logout-blade-analysis.md)
+- [Convenzioni Path](./path-conventions.md)
 
 ## Sintesi dell'Analisi
 

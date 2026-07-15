@@ -1,3 +1,23 @@
+---
+title: "Componenti Header"
+type: concept
+tags: [header, components]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "header-components componenti header"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Componenti Header
 
 ## Struttura e Convenzioni
@@ -87,4 +107,4 @@
 ## Collegamenti Correlati
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session_management.md) 
+- [Gestione Sessione](./session-management-2.md) 

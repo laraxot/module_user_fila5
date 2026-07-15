@@ -1,3 +1,23 @@
+---
+title: "Filament Resources: Furious Philosophical Debate"
+type: concept
+tags: [filament, resources, philosophical, debate]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-resources-philosophical-debate filament resources: furious philosophical debate"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Filament Resources: Furious Philosophical Debate
 
 ## Data: 2025-01-02
@@ -211,5 +231,5 @@ vs
 ## Collegamenti
 
 - [Filament Resources Coverage Analysis](./filament-resources-coverage-analysis.md)
-- [Filosofia Modulo User](./filosofia_modulo_user.md)
+- [Filosofia Modulo User](./filosofia-modulo-user.md)
 - [Filament Best Practices](./filament-best-practices.md)

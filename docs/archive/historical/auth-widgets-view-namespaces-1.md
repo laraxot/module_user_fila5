@@ -1,3 +1,23 @@
+---
+title: "Widget di Autenticazione: Namespace delle View"
+type: concept
+tags: [auth, widgets, view, namespaces]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "auth-widgets-view-namespaces-1 widget di autenticazione: namespace delle view"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Widget di Autenticazione: Namespace delle View
 
 ## ⚠️ **Regola Critica**

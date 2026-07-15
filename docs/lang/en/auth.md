@@ -1,3 +1,15 @@
+---
+title: "File di Traduzione Inglese per l'Autenticazione"
+type: concept
+tags: [auth]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "auth file di traduzione inglese per l'autenticazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+---
+
 # File di Traduzione Inglese per l'Autenticazione
 
 ## Panoramica

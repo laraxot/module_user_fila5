@@ -1,3 +1,23 @@
+---
+title: "Analisi Modelli, Factory e Seeder - Modulo User"
+type: concept
+tags: [modelli, factory, seeder, analisi]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "modelli-factory-seeder-analisi analisi modelli, factory e seeder - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./advanced-user-architecture.md"
+  - "./analisi-metodi-duplicati.md"
+  - "./analysis.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+---
+
 # Analisi Modelli, Factory e Seeder - Modulo User
 
 ## Panoramica
@@ -182,9 +202,9 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Jetstream Integration](./jetstream_integration.md)
 
 ### Moduli Collegati
-- [<nome progetto> Module](../../<nome progetto>/project_docs/modelli_factory_seeder_analisi.md)
-- [Tenant Module](../../tenant/project_docs/modelli_factory_seeder_analisi.md)
-- [Notify Module](../../notify/project_docs/modelli_factory_seeder_analisi.md)
+- [<nome progetto> Module](../../<nome progetto>/project_docs/modelli-factory-seeder-analisi-2.md)
+- [Tenant Module](../../tenant/project_docs/modelli-factory-seeder-analisi-2.md)
+- [Notify Module](../../notify/project_docs/modelli-factory-seeder-analisi-2.md)
 
 *Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*
 # Analisi Modelli, Factory e Seeder - Modulo User
@@ -371,8 +391,8 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Jetstream Integration](./jetstream_integration.md)
 
 ### Moduli Collegati
-- [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md)
-- [Tenant Module](../../tenant/docs/modelli_factory_seeder_analisi.md)
-- [Notify Module](../../notify/docs/modelli_factory_seeder_analisi.md)
+- [<nome progetto> Module](../../<nome progetto>/docs/modelli-factory-seeder-analisi-2.md)
+- [Tenant Module](../../tenant/docs/modelli-factory-seeder-analisi-2.md)
+- [Notify Module](../../notify/docs/modelli-factory-seeder-analisi-2.md)
 
 *Analisi completa di 35+ modelli attivi, sistema completo authentication/authorization*

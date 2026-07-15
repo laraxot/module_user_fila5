@@ -1,3 +1,23 @@
+---
+title: "User Moderation Strategy"
+type: concept
+tags: [user, moderation, strategy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user-moderation-strategy-1 user moderation strategy"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./actions-path-convention.md"
+  - "./actions-structure-1.md"
+  - "./actions-structure.md"
+  - "./architecture-rules.md"
+  - "./auth-blade-structure.md"
+  - "./auth-components-best-practices-1.md"
+  - "./auth-components-best-practices.md"
+  - "./auth-login-implementation-1.md"
+---
+
 # User Moderation Strategy
 
 ## Overview
