@@ -3,11 +3,13 @@
 declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
-use Modules\User\Models\ProfileTeam;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration {
-    protected ?string $model_class = ProfileTeam::class;
+    /**
+     * Nome della tabella gestita dalla migrazione.
+     */
+    protected string $table_name = 'profile_team';
 
     /**
      * Esegue la migrazione.

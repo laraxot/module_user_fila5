@@ -21,6 +21,7 @@ trait ResolvesPassportTokenUserRelation
      */
     public function user(): BelongsTo
     {
+        $clientProvider = $this->client?->provider;
         $provider = is_string($clientProvider) && '' !== $clientProvider
             ? $clientProvider
             : $this->resolveDefaultApiGuardProvider();
