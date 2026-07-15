@@ -11,7 +11,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Class CreateLiveuserUsersTable.
  */
 return new class extends XotBaseMigration {
-    protected $connection = 'user';
+    protected ?string $model_class = User::class;
 
     /**
      * Run the migrations.
