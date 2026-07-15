@@ -65,6 +65,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property ProfileContract|null                                      $updater
  * @property UserContract|null                                         $user
  * @property string|null                                               $user_name
+ *
  * @method static Builder<static>|Profile newModelQuery()
  * @method static Builder<static>|Profile newQuery()
  * @method static Builder<static>|Profile permission($permissions, $without = false)
@@ -73,6 +74,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @method static Builder<static>|Profile withExtraAttributes()
  * @method static Builder<static>|Profile withoutPermission($permissions)
  * @method static Builder<static>|Profile withoutRole($roles, $guard = null)
+ *
  * @property string|null          $user_id
  * @property Carbon|null          $created_at
  * @property Carbon|null          $updated_at
@@ -81,6 +83,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property Carbon|null          $deleted_at
  * @property string|null          $deleted_by
  * @property ProfileContract|null $deleter
+ *
  * @method static Builder<static>|Profile                         whereBio($value)
  * @method static Builder<static>|Profile                         whereCreatedAt($value)
  * @method static Builder<static>|Profile                         whereCreatedBy($value)
@@ -95,6 +98,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @method static Builder<static>|Profile                         whereUpdatedBy($value)
  * @method static Builder<static>|Profile                         whereUserId($value)
  * @method static \Modules\User\Database\Factories\ProfileFactory factory($count = null, $state = [])
+ *
  * @property string|null $post_type
  * @property int|null    $ente
  * @property int|null    $matr
@@ -127,6 +131,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property string|null $political_short
  * @property string|null $campground
  * @property string|null $campground_short
+ *
  * @method static Builder<static>|Profile byUuid(string $uuid)
  * @method static Builder<static>|Profile childrenWith(list<string> $relations)
  * @method static Builder<static>|Profile childrenWithCount(list<string> $relations)
@@ -167,10 +172,12 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @method static Builder<static>|Profile whereStreetNumber($value)
  * @method static Builder<static>|Profile whereStreetNumberShort($value)
  * @method static Builder<static>|Profile whereTimezone($value)
+ *
  * @property string|null $type
  * @property string|null $birth_date
  * @property string|null $gender
  * @property bool        $is_active
+ *
  * @method static Builder<static>|Profile whereBirthDate($value)
  * @method static Builder<static>|Profile whereExtra($value)
  * @method static Builder<static>|Profile whereGender($value)
@@ -179,6 +186,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @method static Builder<static>|Profile whereUserName($value)
  * @method static Builder<static>|Profile team($teams, bool $without = false)
  * @method static Builder<static>|Profile withoutTeam($teams)
+ *
  * @mixin \Eloquent
  */
 class Profile extends BaseProfile implements HasMedia

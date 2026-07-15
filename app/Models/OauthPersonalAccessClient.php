@@ -7,17 +7,18 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
- * @property string           $id
- * @property string           $client_id
- * @property OauthClient|null $client
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property-read \Modules\Ptv\Models\Profile|null $creator
- * @property-read \Modules\Ptv\Models\Profile|null $deleter
- * @property-read \Modules\Ptv\Models\Profile|null $updater
- * @method static \Modules\User\Database\Factories\OauthPersonalAccessClientFactory factory($count = null, $state = [])
+ * @property string                           $id
+ * @property string                           $client_id
+ * @property OauthClient|null                 $client
+ * @property \Illuminate\Support\Carbon|null  $created_at
+ * @property \Illuminate\Support\Carbon|null  $updated_at
+ * @property string|null                      $updated_by
+ * @property string|null                      $created_by
+ * @property \Modules\Ptv\Models\Profile|null $creator
+ * @property \Modules\Ptv\Models\Profile|null $deleter
+ * @property \Modules\Ptv\Models\Profile|null $updater
+ *
+ * @method static \Modules\User\Database\Factories\OauthPersonalAccessClientFactory       factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient query()
@@ -27,6 +28,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient whereUpdatedBy($value)
+ *
  * @mixin \Eloquent
  */
 class OauthPersonalAccessClient extends BaseModel

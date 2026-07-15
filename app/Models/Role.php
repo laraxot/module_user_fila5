@@ -43,6 +43,7 @@ use Webmozart\Assert\Assert;
  * @property Collection<int, Model&UserContract> $users
  * @property int|null                            $users_count
  * @property PermissionRole|null                 $pivot
+ *
  * @method static Builder|Role newModelQuery()
  * @method static Builder|Role newQuery()
  * @method static Builder|Role permission($permissions)
@@ -60,11 +61,14 @@ use Webmozart\Assert\Assert;
  * @method static Builder|Role whereDisplayName($value)
  * @method static static       firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static       updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
+ *
  * @method static \Modules\User\Database\Factories\RoleFactory factory($count = null, $state = [])
  * @method static Builder<static>|Role                         whereUuid($value)
+ *
  * @mixin \Eloquent
  */
 class Role extends SpatieRole
