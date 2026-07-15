@@ -8,11 +8,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
-/*
-=======
 /**
->>>>>>> a550648f (.)
  * @covers \Modules\User\Database\Seeders\RoleSeeder
  */
 it('creates expected roles', function (): void {

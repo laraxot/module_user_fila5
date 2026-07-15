@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
+use Modules\User\Models\TeamUser;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
@@ -12,6 +13,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Se la tabella esiste già con id UUID, viene convertita a id autoincrement.
  */
 return new class extends XotBaseMigration {
+    protected ?string $model_class = TeamUser::class;
+
     /**
      * Esegue la migrazione.
      */

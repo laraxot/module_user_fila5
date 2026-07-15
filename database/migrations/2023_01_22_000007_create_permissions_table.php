@@ -4,8 +4,7 @@ declare(strict_types=1);
 
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Database\Schema\Blueprint;
-// ---- models ---
-use Illuminate\Support\Facades\Schema;
+use Modules\User\Models\Permission;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
@@ -13,6 +12,8 @@ use Modules\Xot\Datas\XotData;
  * Class CreatePermissionsTable.
  */
 return new class extends XotBaseMigration {
+    protected ?string $model_class = Permission::class;
+
     /**
      * Run the migrations.
      */
@@ -26,7 +27,6 @@ return new class extends XotBaseMigration {
                 $cache_key = config('permission.cache.key');
                 /** @var string|null $store */
                 $store = 'default' !== $cache_store ? $cache_store : null;
-                /** @var string $cache_key */
                 if (is_string($cache_key)) {
                     $cache->store($store)->forget($cache_key);
                 }
@@ -43,21 +43,18 @@ return new class extends XotBaseMigration {
         });
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-            // Usa Schema::hasColumn direttamente per verificare esistenza
-            $tableName = 'permissions';
             if (
-                ! Schema::connection('user')->hasColumn($tableName, 'created_at')
-                && ! Schema::connection('user')->hasColumn($tableName, 'updated_at')
+                ! $this->hasColumn('created_at')
+                && ! $this->hasColumn('updated_at')
             ) {
                 $this->updateTimestamps($table);
             } else {
-                // Se i timestamp esistono già, aggiungi solo i campi user se mancanti
                 $xot = XotData::make();
                 $userClass = $xot->getUserClass();
-                if (! Schema::connection('user')->hasColumn($tableName, 'updated_by')) {
+                if (! $this->hasColumn('updated_by')) {
                     $table->foreignIdFor($userClass, 'updated_by')->nullable();
                 }
-                if (! Schema::connection('user')->hasColumn($tableName, 'created_by')) {
+                if (! $this->hasColumn('created_by')) {
                     $table->foreignIdFor($userClass, 'created_by')->nullable();
                 }
             }

@@ -17,9 +17,8 @@ use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
-use Modules\User\Tests\Traits\HasUserTestCase;
 
-uses(TestCase::class, HasUserTestCase::class);
+uses(TestCase::class);
 
 beforeEach(function () {
     $user = UserFactory::new()->create([

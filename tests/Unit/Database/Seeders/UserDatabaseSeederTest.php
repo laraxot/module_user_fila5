@@ -9,11 +9,7 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
-/*
-=======
 /**
->>>>>>> a550648f (.)
  * @covers \Modules\User\Database\Seeders\UserDatabaseSeeder
  */
 it('runs UserDatabaseSeeder successfully', function (): void {

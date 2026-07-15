@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
+use Modules\User\Models\TeamUser;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
@@ -12,10 +13,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Se la tabella esiste già con id UUID, viene convertita a id autoincrement.
  */
 return new class extends XotBaseMigration {
-    /**
-     * Nome della tabella gestita dalla migrazione.
-     */
-    protected string $table_name = 'team_user';
+    protected ?string $model_class = TeamUser::class;
 
     /**
      * Esegue la migrazione.
@@ -52,7 +50,7 @@ return new class extends XotBaseMigration {
 
                 // Impostiamo la nuova PRIMARY KEY su id (MySQL only — SQLite defines PK at creation)
                 if ($this->isMysqlFamilyDriver()) {
-                    $this->query('ALTER TABLE `'.$this->table_name.'` ADD PRIMARY KEY (`id`)');
+                    $this->query('ALTER TABLE `'.$this->getTable().'` ADD PRIMARY KEY (`id`)');
                 }
             }
 
