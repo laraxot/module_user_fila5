@@ -21,8 +21,8 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @property string|null                     $created_by
  * @property string|null                     $deleted_at
  * @property string|null                     $deleted_by
- * @property-read OauthClient|null           $client
- * @property-read OauthRefreshToken|null     $refreshToken
+ * @property OauthClient|null                $client
+ * @property OauthRefreshToken|null          $refreshToken
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken existsIn(array<int, string> $haystack)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken newModelQuery()

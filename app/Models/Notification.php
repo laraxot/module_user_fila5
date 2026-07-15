@@ -12,6 +12,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
  * @property Model|\Eloquent $notifiable
+ *
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  * @method static Builder|Notification                                 newModelQuery()
@@ -24,6 +25,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  * @method static \Modules\User\Database\Factories\NotificationFactory factory($count = null, $state = [])
+ *
  * @mixin \Eloquent
  */
 class Notification extends BaseNotification
