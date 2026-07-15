@@ -179,3 +179,5 @@ agentdb.rvf
 
 
 test-results/
+.devcontainer/
+.vscode/

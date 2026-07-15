@@ -79,7 +79,7 @@ return [
         'search' => 'Cerca utenti...',
     ],
     'actions' => [
-        'toggle_layout' => 'Cambia Layout',
+        'toggle_layout' => 'Cambia Layout!!!!!',
         'create' => [
             'label' => 'Crea Utente',
         ],
