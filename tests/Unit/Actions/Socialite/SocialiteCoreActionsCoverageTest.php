@@ -68,7 +68,6 @@ test('retrieves oauth user from socialite driver', function (): void {
     });
 
     $driver = Mockery::mock();
-    /* @phpstan-ignore-next-line */
     $driver->shouldReceive('user')->once()->andReturn($oauthUser);
 
     Socialite::shouldReceive('driver')->with('github')->andReturn($driver);
@@ -86,7 +85,6 @@ test('returns null and dispatches invalid state event when socialite state is in
     $exception = new InvalidStateException();
 
     $driver = Mockery::mock();
-    /* @phpstan-ignore-next-line */
     $driver->shouldReceive('user')->once()->andThrow($exception);
 
     Socialite::shouldReceive('driver')->with('github')->andReturn($driver);

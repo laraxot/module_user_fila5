@@ -10,9 +10,11 @@ uses(TestCase::class);
 
 function createMockSocialiteUser(?string $name, ?string $email): SocialiteUser
 {
-    $mock = test()->createMock(SocialiteUser::class);
-    $mock->method('getName')->willReturn($name);
-    $mock->method('getEmail')->willReturn($email);
+    $mock = typedMock(SocialiteUser::class);
+    $mock->allows([
+        'getName' => $name,
+        'getEmail' => $email,
+    ]);
 
     return $mock;
 }

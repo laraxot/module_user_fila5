@@ -32,11 +32,9 @@ test('admin panel requires admin or super-admin role', function (): void {
 
     $panel = app(Filament\Panel::class)->id('admin');
 
-    /* @phpstan-ignore argument.type (Panel mock acceptable at runtime) */
     Assert::assertFalse($user->canAccessPanel($panel));
 
     $user->hasAdminRole = true;
-    /* @phpstan-ignore argument.type (Panel mock acceptable at runtime) */
     Assert::assertTrue($user->canAccessPanel($panel));
 });
 

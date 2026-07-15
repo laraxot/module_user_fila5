@@ -36,7 +36,6 @@ class Confirm extends Component
 
         /** @var View $res */
         $res = view($view);
-        // @phpstan-ignore-next-line
         $res->extends('pub_theme::layouts.auth');
 
         return $res;
