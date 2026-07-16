@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\TeamInvitation;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Modules\User\Models\TeamInvitation>
+ * @extends Factory<TeamInvitation>
  */
 class TeamInvitationFactory extends Factory
 {

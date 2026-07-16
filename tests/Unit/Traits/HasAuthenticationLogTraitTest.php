@@ -4,16 +4,17 @@ declare(strict_types=1);
 
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 // User Pest/PHPUnit — claude-audit documentation ratio.
 // User Pest/PHPUnit — claude-audit documentation ratio.
 // User Pest/PHPUnit — claude-audit documentation ratio.
 // User Pest/PHPUnit — claude-audit documentation ratio.
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function makeAuthenticationLogFor(User $user, array $attributes = []): AuthenticationLog
 {
@@ -31,7 +32,7 @@ function makeAuthenticationLogFor(User $user, array $attributes = []): Authentic
 }
 
 it('returns null for lastLoginAt when user has no authentication logs', function (): void {
-    $user = Modules\User\Tests\TestCase::createTestUser();
+    $user = TestCase::createTestUser();
 
     Assert::assertNull($user->lastLoginAt());
     Assert::assertNull($user->lastLoginIp());
@@ -42,7 +43,7 @@ it('returns null for lastLoginAt when user has no authentication logs', function
 });
 
 it('returns the most recent login timestamp and ip', function (): void {
-    $user = Modules\User\Tests\TestCase::createTestUser();
+    $user = TestCase::createTestUser();
 
     makeAuthenticationLogFor($user, [
         'ip_address' => '10.0.0.1',
@@ -60,7 +61,7 @@ it('returns the most recent login timestamp and ip', function (): void {
 });
 
 it('distinguishes successful logins from failed ones', function (): void {
-    $user = Modules\User\Tests\TestCase::createTestUser();
+    $user = TestCase::createTestUser();
 
     makeAuthenticationLogFor($user, [
         'ip_address' => '10.0.0.3',
@@ -80,7 +81,7 @@ it('distinguishes successful logins from failed ones', function (): void {
 });
 
 it('returns the previous login when at least two logins exist', function (): void {
-    $user = Modules\User\Tests\TestCase::createTestUser();
+    $user = TestCase::createTestUser();
 
     makeAuthenticationLogFor($user, [
         'ip_address' => '10.0.0.5',
@@ -98,7 +99,7 @@ it('returns the previous login when at least two logins exist', function (): voi
 });
 
 it('counts consecutive days of login starting today', function (): void {
-    $user = Modules\User\Tests\TestCase::createTestUser();
+    $user = TestCase::createTestUser();
 
     makeAuthenticationLogFor($user, ['login_at' => now()]);
     makeAuthenticationLogFor($user, ['login_at' => now()->subDay()]);
@@ -108,7 +109,7 @@ it('counts consecutive days of login starting today', function (): void {
 });
 
 it('returns zero consecutive days when there is no login today', function (): void {
-    $user = Modules\User\Tests\TestCase::createTestUser();
+    $user = TestCase::createTestUser();
 
     makeAuthenticationLogFor($user, ['login_at' => now()->subDays(5)]);
 

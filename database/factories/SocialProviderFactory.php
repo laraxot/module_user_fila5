@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\SocialProvider;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Modules\User\Models\SocialProvider>
+ * @extends Factory<SocialProvider>
  */
 class SocialProviderFactory extends Factory
 {

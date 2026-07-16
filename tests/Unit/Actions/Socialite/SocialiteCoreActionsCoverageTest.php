@@ -15,6 +15,7 @@ use Modules\User\Datas\SocialiteUserAttributesData;
 use Modules\User\Events\InvalidState;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -104,7 +105,7 @@ test('returns null and dispatches invalid state event when socialite state is in
 });
 
 test('creates socialite user model with normalized attributes', function (): void {
-    /** @var Modules\Xot\Contracts\UserContract $user */
+    /** @var UserContract $user */
     $user = UserFactory::new()->createOne();
 
     $oauthUser = configureMock(SocialiteUserContract::class, function (MockInterface $mock): void {

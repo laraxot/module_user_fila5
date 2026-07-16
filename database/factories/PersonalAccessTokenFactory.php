@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\PersonalAccessToken;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Modules\User\Models\PersonalAccessToken>
+ * @extends Factory<PersonalAccessToken>
  */
 class PersonalAccessTokenFactory extends Factory
 {

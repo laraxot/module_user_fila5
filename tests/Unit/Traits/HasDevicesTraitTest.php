@@ -4,19 +4,20 @@ declare(strict_types=1);
 
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Modules\User\Models\Device;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 it('exposes a belongsToMany devices relation on the user model', function (): void {
-    $user = Modules\User\Tests\TestCase::createTestUser();
+    $user = TestCase::createTestUser();
 
     Assert::assertInstanceOf(BelongsToMany::class, $user->devices());
     Assert::assertInstanceOf(Device::class, $user->devices()->getRelated());
 });
 
 it('attaches and retrieves devices for a user', function (): void {
-    $user = Modules\User\Tests\TestCase::createTestUser();
+    $user = TestCase::createTestUser();
 
     $device = Device::factory()->create();
 
@@ -29,7 +30,7 @@ it('attaches and retrieves devices for a user', function (): void {
 });
 
 it('detaches devices from a user', function (): void {
-    $user = Modules\User\Tests\TestCase::createTestUser();
+    $user = TestCase::createTestUser();
     $device = Device::factory()->create();
 
     $user->devices()->attach($device->getKey());

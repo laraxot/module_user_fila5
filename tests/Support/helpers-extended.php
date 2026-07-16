@@ -2,15 +2,27 @@
 
 declare(strict_types=1);
 
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+use Filament\Forms\Components\Field;
+use Filament\Panel;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
+use Laravel\Passport\ClientRepository;
+use Laravel\Passport\Passport;
 use Mockery\MockInterface;
+use Modules\User\Actions\Socialite\IsUserAllowedAction;
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
+use Modules\User\Providers\Filament\AdminPanelProvider;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 
@@ -19,7 +31,7 @@ use function Safe\json_decode;
 use function Safe\json_encode;
 
 /**
- * @param array<string, mixed> $pivot
+ * @param  array<string, mixed>  $pivot
  */
 function attachTeamMember(Team $team, User $user, array $pivot = []): void
 {
@@ -68,14 +80,14 @@ function teamUsesSoftDeletes(): bool
     $traits = \class_uses_recursive(Team::class);
 
     return in_array(
-        Illuminate\Database\Eloquent\SoftDeletes::class,
+        SoftDeletes::class,
         $traits,
         true
     );
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function createProfile(array $attributes = []): Profile
 {
@@ -95,8 +107,8 @@ function setupFilamentAdminPanel(): void
     try {
         $panel = $filament::getPanel('user::admin');
     } catch (Throwable) {
-        $panelProvider = new Modules\User\Providers\Filament\AdminPanelProvider(app());
-        $panel = $panelProvider->panel(Filament\Panel::make());
+        $panelProvider = new AdminPanelProvider(app());
+        $panel = $panelProvider->panel(Panel::make());
         $filament::registerPanel($panel);
     }
 
@@ -104,7 +116,7 @@ function setupFilamentAdminPanel(): void
 }
 
 /**
- * @param array<mixed> $attributes
+ * @param  array<mixed>  $attributes
  */
 function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contracts\User
 {
@@ -133,8 +145,7 @@ if (! function_exists('typedMock')) {
     /**
      * @template T of object
      *
-     * @param class-string<T> $class
-     *
+     * @param  class-string<T>  $class
      * @return T&MockInterface
      */
     function typedMock(string $class): MockInterface
@@ -149,9 +160,8 @@ if (! function_exists('typedMock')) {
 /**
  * @template T of object
  *
- * @param class-string<T>                 $class
- * @param callable(T&MockInterface): void $configure
- *
+ * @param  class-string<T>  $class
+ * @param  callable(T&MockInterface): void  $configure
  * @return T&MockInterface
  */
 function configureMock(string $class, callable $configure): MockInterface
@@ -170,9 +180,9 @@ function fakeSocialiteUser(string $email): Laravel\Socialite\Contracts\User
     });
 }
 
-function makeIsUserAllowedAction(): Modules\User\Actions\Socialite\IsUserAllowedAction
+function makeIsUserAllowedAction(): IsUserAllowedAction
 {
-    return new Modules\User\Actions\Socialite\IsUserAllowedAction();
+    return new IsUserAllowedAction();
 }
 
 /**
@@ -205,34 +215,34 @@ function skipLegacyRedirectPersistenceCheck(): void
 
 function ensurePersonalAccessClient(): void
 {
-    $clientModel = Laravel\Passport\Passport::client();
+    $clientModel = Passport::client();
 
     if ($clientModel->newQuery()->where('revoked', false)->exists()) {
         return;
     }
 
-    $repository = app(Laravel\Passport\ClientRepository::class);
+    $repository = app(ClientRepository::class);
     $repository->createPersonalAccessGrantClient('Test Personal Access Client');
 }
 
 /**
- * @return array<int, Filament\Schemas\Components\Component|Filament\Actions\Action|Filament\Actions\ActionGroup>
+ * @return array<int, Component|Action|ActionGroup>
  */
-function userResourceSectionComponents(Modules\User\Tests\TestCase $testCase, Filament\Schemas\Components\Component $section): array
+function userResourceSectionComponents(TestCase $testCase, Component $section): array
 {
-    Assert::assertInstanceOf(Filament\Schemas\Components\Section::class, $section);
+    Assert::assertInstanceOf(Section::class, $section);
 
     /* @var \Filament\Schemas\Components\Section $section */
     return $testCase->filamentSectionChildComponents($section);
 }
 
 /**
- * @param array<int, Filament\Schemas\Components\Component|Filament\Actions\Action|Filament\Actions\ActionGroup> $components
+ * @param  array<int, Component|Action|ActionGroup>  $components
  */
-function userResourceFindComponentByName(array $components, string $name): ?Filament\Schemas\Components\Component
+function userResourceFindComponentByName(array $components, string $name): ?Component
 {
     foreach ($components as $component) {
-        if (! $component instanceof Filament\Forms\Components\Field) {
+        if (! $component instanceof Field) {
             continue;
         }
 
@@ -245,7 +255,7 @@ function userResourceFindComponentByName(array $components, string $name): ?Fila
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function stubUser(array $attributes = []): User
 {
@@ -253,7 +263,7 @@ function stubUser(array $attributes = []): User
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function hasTeamsCurrentCreateUser(array $attributes = []): User
 {
@@ -261,7 +271,7 @@ function hasTeamsCurrentCreateUser(array $attributes = []): User
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 {
@@ -272,8 +282,7 @@ function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 }
 
 /**
- * @param array<string, mixed> $attributes
- *
+ * @param  array<string, mixed>  $attributes
  * @return array{secret: string, qr_code: string, recovery_codes: array<int, string>}
  */
 function enableTwoFactorForUser(User $user, Google2FA $google2fa, array $attributes = []): array
@@ -317,7 +326,7 @@ function verifyTwoFactorCode(User $user, Google2FA $google2fa, string $code): bo
 
     $secret = (string) decrypt($user->two_factor_secret);
 
-    return false !== $google2fa->verifyKey($secret, $code);
+    return $google2fa->verifyKey($secret, $code) !== false;
 }
 
 function disableTwoFactorForUser(User $user): void

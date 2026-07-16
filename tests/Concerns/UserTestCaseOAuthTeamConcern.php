@@ -5,8 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Concerns;
 
 use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
@@ -31,7 +33,7 @@ trait UserTestCaseOAuthTeamConcern
     }
 
     /**
-     * @param array<string, mixed> $attributes
+     * @param  array<string, mixed>  $attributes
      */
     public static function createTestUser(array $attributes = []): User
     {
@@ -53,7 +55,7 @@ trait UserTestCaseOAuthTeamConcern
     }
 
     /**
-     * @param array<string, mixed> $overrides
+     * @param  array<string, mixed>  $overrides
      */
     public function oauthClientTestPersistedClient(array $overrides = []): OauthClient
     {
@@ -87,7 +89,7 @@ trait UserTestCaseOAuthTeamConcern
     }
 
     /**
-     * @param array<string, mixed> $pivot
+     * @param  array<string, mixed>  $pivot
      */
     public function attachTeamMember(Team $team, User $user, array $pivot = []): void
     {
@@ -131,7 +133,7 @@ trait UserTestCaseOAuthTeamConcern
     }
 
     /**
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = 'user'): void
     {
@@ -139,7 +141,7 @@ trait UserTestCaseOAuthTeamConcern
     }
 
     /**
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     public function assertDatabaseMissingRow(string $table, array $data, ?string $connection = 'user'): void
     {
@@ -161,7 +163,7 @@ trait UserTestCaseOAuthTeamConcern
     }
 
     /**
-     * @return array<int, Component|Action|\Filament\Actions\ActionGroup>
+     * @return array<int, Component|Action|ActionGroup>
      */
     public function filamentSectionChildComponents(Section $section): array
     {
@@ -174,14 +176,14 @@ trait UserTestCaseOAuthTeamConcern
         $traits = \class_uses_recursive(Team::class);
 
         return in_array(
-            \Illuminate\Database\Eloquent\SoftDeletes::class,
+            SoftDeletes::class,
             $traits,
             true
         );
     }
 
     /**
-     * @param array<string, mixed> $attributes
+     * @param  array<string, mixed>  $attributes
      */
     public function createTeamInvitationRecord(Team $team, array $attributes = []): TeamInvitation
     {

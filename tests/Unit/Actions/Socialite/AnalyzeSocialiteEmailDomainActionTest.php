@@ -6,9 +6,10 @@ use Illuminate\Support\Facades\Config;
 use Laravel\Socialite\Contracts\User as SocialiteUser;
 use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\AnalyzeSocialiteEmailDomainAction;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 function createMockSocialiteUserForDomain(?string $email): SocialiteUser
 {

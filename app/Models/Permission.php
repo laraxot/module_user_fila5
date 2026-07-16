@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
@@ -14,19 +15,19 @@ use Modules\Xot\Traits\Updater;
 use Spatie\Permission\Models\Permission as SpatiePermission;
 
 /**
- * @property int                         $id
- * @property string                      $name
- * @property string                      $guard_name
- * @property Carbon|null                 $created_at
- * @property Carbon|null                 $updated_at
- * @property string|null                 $updated_by
- * @property string|null                 $created_by
+ * @property int $id
+ * @property string $name
+ * @property string $guard_name
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
  * @property Collection<int, Permission> $permissions
- * @property int|null                    $permissions_count
- * @property Collection<int, Role>       $roles
- * @property int|null                    $roles_count
- * @property Collection<int, User>       $users
- * @property int|null                    $users_count
+ * @property int|null $permissions_count
+ * @property Collection<int, Role> $roles
+ * @property int|null $roles_count
+ * @property Collection<int, User> $users
+ * @property int|null $users_count
  *
  * @method static Builder<static>|Permission newModelQuery()
  * @method static Builder<static>|Permission newQuery()
@@ -42,8 +43,8 @@ use Spatie\Permission\Models\Permission as SpatiePermission;
  * @method static Builder<static>|Permission whereUpdatedBy($value)
  * @method static Builder<static>|Permission withoutPermission($permissions)
  * @method static Builder<static>|Permission withoutRole($roles, $guard = null)
- * @method static static                     firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
- * @method static static                     updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
@@ -52,7 +53,7 @@ use Spatie\Permission\Models\Permission as SpatiePermission;
  * @method static \Modules\User\Database\Factories\PermissionFactory factory($count = null, $state = [])
  *
  * @property Collection<int, Team> $teams
- * @property int|null              $teams_count
+ * @property int|null $teams_count
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission team($teams, bool $without = false)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission withoutTeam($teams)
@@ -61,8 +62,9 @@ use Spatie\Permission\Models\Permission as SpatiePermission;
  */
 class Permission extends SpatiePermission
 {
-    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+    /** @phpstan-use HasXotFactory<Factory<static>> */
     use HasXotFactory;
+
     use RelationX;
     use Updater;
 

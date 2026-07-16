@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\Authentication;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Modules\User\Models\Authentication>
+ * @extends Factory<Authentication>
  */
 class AuthenticationFactory extends Factory
 {

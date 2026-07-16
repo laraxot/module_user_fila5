@@ -13,15 +13,14 @@ use Spatie\LaravelData\Data;
 class UserContextData extends Data
 {
     /**
-     * @param array<int, string> $roles
+     * @param  array<int, string>  $roles
      */
     public function __construct(
         public readonly ?string $userId = null,
         public readonly string $email = '',
         public readonly bool $isAdministrator = false,
         public readonly array $roles = [],
-    ) {
-    }
+    ) {}
 
     public static function fromUserModel(object $userModel): self
     {
@@ -35,7 +34,7 @@ class UserContextData extends Data
         return new self(
             userId: $userId,
             email: (string) ($userModel->email ?? ''),
-            isAdministrator: ! empty($userModel->role) && 'admin' === strtolower((string) $userModel->role),
+            isAdministrator: ! empty($userModel->role) && strtolower((string) $userModel->role) === 'admin',
             roles: $roles,
         );
     }
