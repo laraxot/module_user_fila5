@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Forms\Components;
 
-use Filament\Forms\Components\Select;
 use Modules\User\Models\Role;
+use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
 
-class SingleRoleSelect extends Select
+class SingleRoleSelect extends XotBaseSelect
 {
     protected string $optionValueProperty = 'id';
 

@@ -42,7 +42,7 @@ class SocialLoginWidget extends XotBaseSchemaWidget
         if (config('services.google.client_id')) {
             $providers[] = [
                 'driver' => 'google',
-                'label' => __('user::auth.login.google'),
+                'label' => __('user::auth.login.google.text'),
                 'icon' => 'google',
                 'color' => '#4285F4',
             ];
@@ -51,7 +51,7 @@ class SocialLoginWidget extends XotBaseSchemaWidget
         if (config('services.microsoft.client_id')) {
             $providers[] = [
                 'driver' => 'microsoft',
-                'label' => __('user::auth.login.microsoft'),
+                'label' => __('user::auth.login.microsoft.text'),
                 'icon' => 'microsoft',
                 'color' => '#00A4EF',
             ];
@@ -60,7 +60,7 @@ class SocialLoginWidget extends XotBaseSchemaWidget
         if (config('services.github.client_id')) {
             $providers[] = [
                 'driver' => 'github',
-                'label' => __('user::auth.login.github'),
+                'label' => __('user::auth.login.github.text'),
                 'icon' => 'github',
                 'color' => '#24292F',
             ];

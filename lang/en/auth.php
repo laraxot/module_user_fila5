@@ -107,6 +107,15 @@ return [
         'facebook' => 'Sign in with Facebook',
     ],
     'login' => [
+        'google' => ['text' => 'Google'],
+        'microsoft' => ['text' => 'Microsoft'],
+        'github' => ['text' => 'GitHub'],
+        'or_continue_with' => ['text' => 'or'],
+        'submit' => ['text' => 'Sign in'],
+        'forgot_password' => ['text' => 'Forgot your password?'],
+        'no_account' => ['text' => 'Do not have an account?'],
+        'create_account' => ['text' => 'Create account'],
+        'logging_in' => ['text' => 'Logging in…'],
         'page' => [
             'meta_title' => [
                 'label' => 'Access services',

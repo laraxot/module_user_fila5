@@ -14,7 +14,11 @@ return new class extends XotBaseMigration {
         // -- CREATE --
         $this->tableCreate(static function (Blueprint $table): void {
             $table->id();
-            $table->uuid('owner_id')->nullable()->index()->after('id');
+            // No ->after('id') here: valid only on ALTER (see tableUpdate() below
+            // for the equivalent add-if-missing branch on existing tables) —
+            // MySQL rejects AFTER inside CREATE TABLE, column order is already
+            // fixed by declaration order.
+            $table->uuid('owner_id')->nullable()->index();
             $table->uuid('uuid')->nullable()->index();
             $table->string('user_id', 36)->nullable()->index();
             $table->string('name');

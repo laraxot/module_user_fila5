@@ -7,11 +7,11 @@ namespace Modules\User\Filament\Widgets;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Widgets\TableWidget as BaseWidget;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\AuthenticationLog;
+use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 
-final class RecentLoginsWidget extends BaseWidget
+final class RecentLoginsWidget extends XotBaseTableWidget
 {
     protected static ?string $heading = 'Recent Logins'; // Rendi static la proprietà
 

@@ -13,12 +13,12 @@ use Filament\Actions\DissociateAction;
 use Filament\Actions\DissociateBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Forms\Components\TextInput;
-use Filament\Resources\Pages\ManageRelatedRecords;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Modules\User\Filament\Resources\RoleResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseManageRelatedRecords;
 
-class ManageRolePermissions extends ManageRelatedRecords
+class ManageRolePermissions extends XotBaseManageRelatedRecords
 {
     protected static string $resource = RoleResource::class;
 

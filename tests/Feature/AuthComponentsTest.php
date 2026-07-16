@@ -44,7 +44,7 @@ describe('Auth Components Tests', function (): void {
 
     test('auth-session-status component renders correctly', function (): void {
         // Test the existing auth-session-status component rendering
-        $html = view('components.auth-session-status', ['status' => 'Test status'])->render();
+        $html = View::make('components.auth-session-status', ['status' => 'Test status'])->render();
 
         expect($html)->toBeString();
         expect($html)->not->toBeEmpty();

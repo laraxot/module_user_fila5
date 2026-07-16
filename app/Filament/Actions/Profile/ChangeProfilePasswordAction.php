@@ -8,7 +8,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Actions\Profile;
 
-use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Illuminate\Database\Eloquent\Model;
@@ -18,11 +17,12 @@ use Modules\User\Datas\PasswordData;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+use Modules\Xot\Filament\Actions\XotBaseAction;
 
 /**
  * ---.
  */
-final class ChangeProfilePasswordAction extends Action
+final class ChangeProfilePasswordAction extends XotBaseAction
 {
     protected function setUp(): void
     {
@@ -33,12 +33,12 @@ final class ChangeProfilePasswordAction extends Action
             ->action(static function (ProfileContract $record, array $data): void {
                 $user = $record->user;
                 $profileData = Arr::except($record->toArray(), ['id']);
-                if (null === $user) {
+                if ($user === null) {
                     /** @var UserContract */
                     $user = XotData::make()->getUserByEmail($record->email);
                 }
 
-                if (null === $user) {
+                if ($user === null) {
                     /** @var array<string, mixed> $profileData */
                     $user = $record->user()->create($profileData);
                 }
@@ -70,7 +70,7 @@ final class ChangeProfilePasswordAction extends Action
                         ->rule(
                             'required',
                             /**
-                             * @param callable(string): mixed $get
+                             * @param  callable(string): mixed  $get
                              */
                             static fn (callable $get): bool => (bool) $get('new_password')
                         )

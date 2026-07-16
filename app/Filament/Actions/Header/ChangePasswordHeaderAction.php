@@ -8,16 +8,16 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Actions\Header;
 
-use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Filament\Actions\XotBaseAction;
 use Webmozart\Assert\Assert;
 
-final class ChangePasswordHeaderAction extends Action
+final class ChangePasswordHeaderAction extends XotBaseAction
 {
     protected function setUp(): void
     {
@@ -57,7 +57,7 @@ final class ChangePasswordHeaderAction extends Action
                         ->rule(
                             'required',
                             /**
-                             * @param callable(string): mixed $get
+                             * @param  callable(string): mixed  $get
                              */
                             static fn (callable $get): bool => (bool) $get('new_password')
                         )

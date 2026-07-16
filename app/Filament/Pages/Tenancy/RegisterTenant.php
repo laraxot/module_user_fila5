@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Pages\Tenancy;
 
-use Filament\Pages\Tenancy\RegisterTenant as BaseRegisterTenant;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Illuminate\Database\Eloquent\Model;
@@ -12,10 +11,11 @@ use Illuminate\Support\Str;
 use Modules\User\Contracts\TenantContract;
 use Modules\User\Models\BaseTenant;
 use Modules\Xot\Datas\XotData;
+use Modules\Xot\Filament\Pages\Tenancy\XotBaseRegisterTenant;
 use Modules\Xot\Filament\Traits\TransTrait;
 use Webmozart\Assert\Assert;
 
-class RegisterTenant extends BaseRegisterTenant
+class RegisterTenant extends XotBaseRegisterTenant
 {
     use TransTrait;
 
@@ -67,7 +67,7 @@ class RegisterTenant extends BaseRegisterTenant
     }
 
     /**
-     * @param array<string, string|int|bool|null> $data
+     * @param  array<string, string|int|bool|null>  $data
      */
     protected function handleRegistration(array $data): Model
     {
@@ -85,7 +85,7 @@ class RegisterTenant extends BaseRegisterTenant
      */
     private function resolveResourceClass(): string
     {
-        if (null !== $this->resourceClass) {
+        if ($this->resourceClass !== null) {
             return $this->resourceClass;
         }
 
