@@ -9,9 +9,9 @@ use Illuminate\Auth\Events\OtherDeviceLogout;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use Modules\User\Actions\Authentication\GetAuthenticationLogQueryForAuthenticatableAction;
 use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Models\AuthenticationLog;
-use Modules\User\Actions\Authentication\GetAuthenticationLogQueryForAuthenticatableAction;
 
 // use Rappasoft\LaravelAuthenticationLog\Traits\AuthenticationLoggable;
 
