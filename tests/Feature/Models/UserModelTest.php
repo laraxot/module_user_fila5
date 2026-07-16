@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Models;
 
+use Filament\Panel;
+use Mockery\MockInterface;
 use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\SocialiteUserFactory;
@@ -171,10 +173,14 @@ describe('User Model', function (): void {
         Assert::assertNull($user->email_verified_at);
     });
 
-    test('user can access filament by default', function (): void {
+    test('user can access the default admin filament panel by default', function (): void {
         $user = UserFactory::new()->createOne();
 
-        Assert::assertTrue($user->canAccessFilament());
+        $panel = configureMock(Panel::class, function (MockInterface $mock): void {
+            $mock->allows(['getId' => 'admin']);
+        });
+
+        Assert::assertTrue($user->canAccessPanel($panel));
     });
 
     test('user can access socialite by default', function (): void {

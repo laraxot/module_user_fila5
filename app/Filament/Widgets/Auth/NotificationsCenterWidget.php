@@ -10,7 +10,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Modules\User\Models\BaseUser;
 use Modules\User\Models\Notification;
-use Modules\User\Support\NotificationSchema;
+use Modules\User\Actions\Notification\IsNotificationSchemaReadableAction;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
@@ -66,7 +66,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     private function refreshNotifications(): void
     {
         $user = $this->authUser();
-        if (null === $user || ! NotificationSchema::isReadable()) {
+        if (null === $user || ! app(IsNotificationSchemaReadableAction::class)->execute()) {
             $this->notifications = new Collection([]);
             $this->unreadCount = 0;
 

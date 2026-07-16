@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Models\AuthenticationLog;
-use Modules\User\Support\AuthenticationLogQuery;
+use Modules\User\Actions\Authentication\GetAuthenticationLogQueryForAuthenticatableAction;
 
 // use Rappasoft\LaravelAuthenticationLog\Traits\AuthenticationLoggable;
 
@@ -31,7 +31,7 @@ class OtherDeviceLogoutListener
             $ip = $this->request->ip();
             $userAgent = $this->request->userAgent();
 
-            $logQuery = AuthenticationLogQuery::forAuthenticatable($user);
+            $logQuery = app(GetAuthenticationLogQueryForAuthenticatableAction::class)->execute($user);
 
             $authenticationLog = $logQuery
                 ->where('ip_address', $ip)
@@ -73,7 +73,7 @@ class OtherDeviceLogoutListener
             return;
         }
 
-        $loginQuery = AuthenticationLogQuery::forAuthenticatable($user);
+        $loginQuery = app(GetAuthenticationLogQueryForAuthenticatableAction::class)->execute($user);
 
         $loginQuery
             ->orderByDesc('login_at')

@@ -66,7 +66,10 @@ abstract class BaseListUsers extends XotBaseListRecords
         // Add parent actions - merge arrays
         $parentActions = parent::getTableActions();
 
-        return array_merge($actions, $parentActions);
+        /** @var array<string, Action|ActionGroup> $result */
+        $result = array_merge($actions, $parentActions);
+
+        return $result;
 
         /*
          * // Add deactivate action

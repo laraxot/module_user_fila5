@@ -4,41 +4,36 @@ declare(strict_types=1);
 
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
+return new class() extends XotBaseMigration
+{
     /**
      * Run the migrations.
      */
     public function up(): void
     {
-        /** @var array<string, string> $tableNames */
         $tableNames = config('permission.table_names');
-        /** @var array<string, string> $columnNames */
         $columnNames = config('permission.column_names');
-        /** @var bool $teams */
         $teams = config('permission.teams');
 
-        if (empty($tableNames)) {
+        if (! is_array($tableNames) || $tableNames === []) {
             throw new Exception('Error: config/permission.php not loaded. Run [php artisan config:clear] and try again.');
         }
 
-        if ($teams && empty($columnNames['team_foreign_key'] ?? null)) {
+        $teamForeignKey = is_array($columnNames) ? ($columnNames['team_foreign_key'] ?? null) : null;
+
+        if ($teams && empty($teamForeignKey)) {
             throw new Exception('Error: team_foreign_key on config/permission.php not loaded. Run [php artisan config:clear] and try again.');
         }
 
-        /**
-         * @var string|null $cache_store
-         */
         $cache_store = config('permission.cache.store');
+        $store = is_string($cache_store) && $cache_store !== 'default' ? $cache_store : null;
 
-        /**
-         * @var string $cache_key
-         */
         $cache_key = config('permission.cache.key');
 
         try {
             // Verifica se l'applicazione è completamente inizializzata
-            if (app()->bound('cache')) {
-                app('cache')->store('default' !== $cache_store ? $cache_store : null)->forget($cache_key);
+            if (app()->bound('cache') && is_string($cache_key)) {
+                app('cache')->store($store)->forget($cache_key);
             }
         } catch (Exception $e) {
             // Silently ignore cache errors during package discovery

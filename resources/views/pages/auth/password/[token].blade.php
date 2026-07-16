@@ -17,21 +17,27 @@ name('password.reset');
 
 new class extends Component {
     #[Validate('required')]
-    public $token;
+    public string $token = '';
 
     #[Validate('required|email')]
-    public $email;
+    public string $email = '';
 
     #[Validate('required|min:8|same:passwordConfirmation')]
-    public $password;
-    public $passwordConfirmation;
+    public string $password = '';
+    public string $passwordConfirmation = '';
 
-    public function mount($token)
+    /**
+     * @return void
+     */
+    public function mount(string $token)
     {
-        $this->email = request()->query('email', '');
+        $this->email = (string) request()->query('email', '');
         $this->token = $token;
     }
 
+    /**
+     * @return \Illuminate\Http\RedirectResponse|null
+     */
     public function resetPassword()
     {
         $this->validate();
@@ -42,7 +48,8 @@ new class extends Component {
                 'email' => $this->email,
                 'password' => $this->password,
             ],
-            function ($user, $password) {
+            function ($user, string $password) {
+                /** @var \Modules\User\Models\User $user */
                 $user->password = Hash::make($password);
 
                 $user->setRememberToken(Str::random(60));
@@ -55,13 +62,17 @@ new class extends Component {
             },
         );
 
-        if ($response === Password::PASSWORD_RESET) {
+        if (\is_string($response) && $response === Password::PASSWORD_RESET) {
             session()->flash(trans($response));
 
             return redirect('/');
         }
 
-        $this->addError('email', trans($response));
+        if (\is_string($response)) {
+            $this->addError('email', trans($response));
+        }
+
+        return null;
     }
 };
 

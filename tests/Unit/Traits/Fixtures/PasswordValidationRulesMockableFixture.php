@@ -15,7 +15,7 @@ final class PasswordValidationRulesMockableFixture
     use PasswordValidationRules;
 
     /**
-     * @return array<int, Password|array|string>
+     * @return array<int, Password|string>
      */
     public function getPasswordRules(): array
     {

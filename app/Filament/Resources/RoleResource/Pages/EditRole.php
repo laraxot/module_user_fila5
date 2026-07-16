@@ -9,9 +9,9 @@ use Filament\Actions\ViewAction;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
+use Modules\User\Actions\Shield\GetPermissionModelAction;
 use Modules\User\Filament\Resources\RoleResource;
 use Modules\User\Models\Role;
-use Modules\User\Support\Utils;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 use Webmozart\Assert\Assert;
 
@@ -31,7 +31,7 @@ class EditRole extends XotBaseEditRecord
         $permissionModels = collect();
         Assert::isArray($data = $this->data);
         $this->permissions->each(static function ($permission) use ($permissionModels, $data): void {
-            $permissionModels->push(Utils::getPermissionModel()::firstOrCreate([
+            $permissionModels->push(app(GetPermissionModelAction::class)->execute()::firstOrCreate([
                 'name' => $permission,
                 'guard_name' => $data['guard_name'] ?? 'web',
             ]));

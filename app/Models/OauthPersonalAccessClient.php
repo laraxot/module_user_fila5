@@ -6,21 +6,17 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
-use Modules\Ptv\Models\Profile;
 
 /**
- * @property string           $id
- * @property string           $client_id
+ * @property string $id
+ * @property string $client_id
  * @property OauthClient|null $client
- * @property Carbon|null      $created_at
- * @property Carbon|null      $updated_at
- * @property string|null      $updated_by
- * @property string|null      $created_by
- * @property Profile|null     $creator
- * @property Profile|null     $deleter
- * @property Profile|null     $updater
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
  *
- * @method static \Modules\User\Database\Factories\OauthPersonalAccessClientFactory       factory($count = null, $state = [])
+ * @method static \Modules\User\Database\Factories\OauthPersonalAccessClientFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient query()

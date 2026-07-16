@@ -2,11 +2,14 @@
 
 declare(strict_types=1);
 
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
+use Modules\User\Models\TeamUser;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 require_once __DIR__.'/../Support/team-management-business-helpers.php';
 

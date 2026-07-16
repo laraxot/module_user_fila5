@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Modules\User\Database\Seeders\RolesSeeder;
 use Modules\User\Models\Role;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
@@ -22,23 +23,20 @@ it('creates all expected roles', function (): void {
     ];
 
     $seeder = new RolesSeeder();
-    $seeder->setContainer($this->app);
+    $seeder->setContainer(app());
     $seeder->run();
 
     foreach ($expectedRoles as $roleName) {
-        $this->assertDatabaseHasRow('roles', [
-            'name' => $roleName,
-            'guard_name' => 'web',
-        ], 'user');
+        Assert::assertTrue(Role::where('name', $roleName)->where('guard_name', 'web')->exists());
     }
 
     $roleCount = Role::where('guard_name', 'web')->count();
-    $this->assertGreaterThanOrEqual(count($expectedRoles), $roleCount);
+    Assert::assertGreaterThanOrEqual(count($expectedRoles), $roleCount);
 });
 
 it('is idempotent when run multiple times', function (): void {
     $seeder = new RolesSeeder();
-    $seeder->setContainer($this->app);
+    $seeder->setContainer(app());
 
     $seeder->run();
     $countAfterFirstRun = Role::where('guard_name', 'web')->count();
@@ -46,5 +44,5 @@ it('is idempotent when run multiple times', function (): void {
     $seeder->run();
     $countAfterSecondRun = Role::where('guard_name', 'web')->count();
 
-    $this->assertSame($countAfterFirstRun, $countAfterSecondRun);
+    Assert::assertSame($countAfterFirstRun, $countAfterSecondRun);
 });

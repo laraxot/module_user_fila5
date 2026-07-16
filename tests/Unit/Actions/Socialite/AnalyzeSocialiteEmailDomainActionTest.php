@@ -27,8 +27,12 @@ describe('AnalyzeSocialiteEmailDomainAction', function () {
     it('throws for empty provider', function () {
         $ssoUser = createMockSocialiteUserForDomain('user@example.com');
 
-        expect(fn () => app(AnalyzeSocialiteEmailDomainAction::class)->execute($ssoUser, ''))
-            ->toThrow(InvalidArgumentException::class);
+        try {
+            app(AnalyzeSocialiteEmailDomainAction::class)->execute($ssoUser, '');
+            Assert::fail('Expected InvalidArgumentException');
+        } catch (InvalidArgumentException $exception) {
+            Assert::assertInstanceOf(InvalidArgumentException::class, $exception);
+        }
     });
 
     it('detects first party domain', function () {
