@@ -11,12 +11,10 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\User;
-use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
-uses(TestCase::class);
 function teamMgmtBizUserTableHasColumn(string $table, string $column): bool
 {
     return Schema::connection('user')->hasColumn($table, $column);

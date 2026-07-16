@@ -181,3 +181,4 @@ agentdb.rvf
 test-results/
 .devcontainer/
 .vscode/
+tests/AuditCoverage
