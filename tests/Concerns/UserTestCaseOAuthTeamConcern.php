@@ -33,7 +33,7 @@ trait UserTestCaseOAuthTeamConcern
     }
 
     /**
-     * @param  array<string, mixed>  $attributes
+     * @param array<string, mixed> $attributes
      */
     public static function createTestUser(array $attributes = []): User
     {
@@ -55,7 +55,7 @@ trait UserTestCaseOAuthTeamConcern
     }
 
     /**
-     * @param  array<string, mixed>  $overrides
+     * @param array<string, mixed> $overrides
      */
     public function oauthClientTestPersistedClient(array $overrides = []): OauthClient
     {
@@ -89,7 +89,7 @@ trait UserTestCaseOAuthTeamConcern
     }
 
     /**
-     * @param  array<string, mixed>  $pivot
+     * @param array<string, mixed> $pivot
      */
     public function attachTeamMember(Team $team, User $user, array $pivot = []): void
     {
@@ -133,7 +133,7 @@ trait UserTestCaseOAuthTeamConcern
     }
 
     /**
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = 'user'): void
     {
@@ -141,7 +141,7 @@ trait UserTestCaseOAuthTeamConcern
     }
 
     /**
-     * @param  array<string, mixed>  $data
+     * @param array<string, mixed> $data
      */
     public function assertDatabaseMissingRow(string $table, array $data, ?string $connection = 'user'): void
     {
@@ -183,7 +183,7 @@ trait UserTestCaseOAuthTeamConcern
     }
 
     /**
-     * @param  array<string, mixed>  $attributes
+     * @param array<string, mixed> $attributes
      */
     public function createTeamInvitationRecord(Team $team, array $attributes = []): TeamInvitation
     {

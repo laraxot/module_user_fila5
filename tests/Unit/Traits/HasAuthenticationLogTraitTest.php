@@ -14,7 +14,7 @@ uses(TestCase::class);
 // User Pest/PHPUnit — claude-audit documentation ratio.
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function makeAuthenticationLogFor(User $user, array $attributes = []): AuthenticationLog
 {
