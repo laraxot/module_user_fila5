@@ -19,7 +19,8 @@ class NewPasswordSet
 
     /**
      * Create a new event instance.
-      * @return void
+     *
+     * @return void
      */
     public function __construct(
         public UserContract $authObject,

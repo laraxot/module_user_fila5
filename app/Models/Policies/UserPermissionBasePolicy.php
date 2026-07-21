@@ -5,7 +5,8 @@ declare(strict_types=1);
 /**
  * ----------------------------------------------------------------.
  * EX XotBasePolicy.
-  * @return mixed
+ *
+ * @return mixed
  */
 
 namespace Modules\User\Models\Policies;

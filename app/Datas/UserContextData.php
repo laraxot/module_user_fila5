@@ -14,7 +14,8 @@ class UserContextData extends Data
 {
     /**
      * @param array<int, string> $roles
-      * @return void
+     *
+     * @return void
      */
     public function __construct(
         public readonly ?string $userId = null,

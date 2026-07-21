@@ -18,7 +18,8 @@ class RetrieveSocialiteUserAction
 
     /**
      * Execute the action.
-      * @return mixed
+     *
+     * @return mixed
      */
     public function execute(string $provider, SocialiteUserContract $user): ?SocialiteUser
     {

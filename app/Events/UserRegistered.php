@@ -25,7 +25,8 @@ class UserRegistered
      * @param array<string, mixed> $formData  Raw form data from registration
      * @param string|null          $ipAddress IP address of the registrant
      * @param string|null          $userAgent User agent of the registrant
-      * @return void
+     *
+     * @return void
      */
     public function __construct(
         public User $user,

@@ -217,7 +217,7 @@ trait HasTeams
      */
     public function allTeamUsers(): Collection // @phpstan-ignore return.type
     {/** @var Collection<int, mixed> $teams */
-                                                $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
+                                                    $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
         /** @var Collection<int, User> $result */
         $result = $teams->flatMap( // @phpstan-ignore argument.type
             /** @param mixed $team @return array<int,User>|Collection<int,User> */
@@ -355,7 +355,8 @@ trait HasTeams
 
     /**
      * Get the role for a specific team.
-      * @return mixed
+     *
+     * @return mixed
      */
     public function teamRole(TeamContract $team): ?Role
     {
@@ -446,7 +447,8 @@ trait HasTeams
 
     /**
      * Get the user's personal team.
-      * @return mixed
+     *
+     * @return mixed
      */
     public function personalTeam(): ?TeamContract
     {
@@ -545,9 +547,6 @@ trait HasTeams
     /**
      * Get all of the teams that the user owns.
      */
-    /**
-     * @return bool
-     */
     public function inviteToTeam(XotUserContract $user, TeamContract $team): bool
     {
         if ($this->ownsTeam($team)) {
@@ -561,9 +560,6 @@ trait HasTeams
 
     /**
      * Remove a user from the team.
-     */
-    /**
-     * @return bool
      */
     public function removeFromTeam(XotUserContract $user, TeamContract $team): bool
     {
@@ -590,9 +586,6 @@ trait HasTeams
     /**
      * Promote a member to team admin.
      */
-    /**
-     * @return bool
-     */
     public function promoteToAdmin(XotUserContract $user, TeamContract $team): bool
     {
         if ($this->ownsTeam($team)) {
@@ -606,9 +599,6 @@ trait HasTeams
 
     /**
      * Demote a member from team admin.
-     */
-    /**
-     * @return bool
      */
     public function demoteFromAdmin(XotUserContract $user, TeamContract $team): bool
     {

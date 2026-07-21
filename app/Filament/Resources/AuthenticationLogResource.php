@@ -21,9 +21,6 @@ class AuthenticationLogResource extends XotBaseResource
 {
     protected static ?string $model = AuthenticationLog::class;
 
-    /**
-     * @return array
-     */
     public static function getPages(): array
     {
         return [

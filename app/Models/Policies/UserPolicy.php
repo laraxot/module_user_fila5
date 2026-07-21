@@ -11,9 +11,6 @@ class UserPolicy extends UserBasePolicy
     /**
      * Determine whether the user can view any models.
      */
-    /**
-     * @return bool
-     */
     public function viewAny(Post $user): bool
     {
         return false;
@@ -21,9 +18,6 @@ class UserPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can view the model.
-     */
-    /**
-     * @return bool
      */
     public function view(Post $_user, Post $_post): bool
     {
@@ -33,9 +27,6 @@ class UserPolicy extends UserBasePolicy
     /**
      * Determine whether the user can create models.
      */
-    /**
-     * @return bool
-     */
     public function create(Post $_user): bool
     {
         return true;
@@ -43,9 +34,6 @@ class UserPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can update the model.
-     */
-    /**
-     * @return bool
      */
     public function update(Post $_user, Post $_post): bool
     {

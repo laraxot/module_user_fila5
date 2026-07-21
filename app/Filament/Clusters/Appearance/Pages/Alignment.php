@@ -47,9 +47,6 @@ class Alignment extends XotBasePage
     //    ];
     // }
 
-    /**
-     * @return array
-     */
     public function getViewData(): array
     {
         return [

@@ -18,9 +18,6 @@ abstract class BaseProfileResource extends XotBaseResource
     protected static ?string $model = BaseProfile::class;
 
     #[\Override]
-    /**
-     * @return array
-     */
     public static function getFormSchema(): array
     {
         return [
@@ -47,9 +44,6 @@ abstract class BaseProfileResource extends XotBaseResource
     }
 
     #[\Override]
-    /**
-     * @return array
-     */
     public static function getPages(): array
     {
         return [

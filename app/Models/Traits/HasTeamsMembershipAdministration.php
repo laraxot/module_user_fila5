@@ -12,9 +12,6 @@ use Modules\Xot\Contracts\UserContract as XotUserContract;
 /** @phpstan-ignore trait.unused */
 trait HasTeamsMembershipAdministration
 {
-    /**
-     * @return bool
-     */
     public function inviteToTeam(XotUserContract $user, TeamContract $team): bool
     {
         if (! $this->ownsTeam($team)) {
@@ -26,9 +23,6 @@ trait HasTeamsMembershipAdministration
         return true;
     }
 
-    /**
-     * @return bool
-     */
     public function removeFromTeam(XotUserContract $user, TeamContract $team): bool
     {
         if (! $this->ownsTeam($team)) {
@@ -48,9 +42,6 @@ trait HasTeamsMembershipAdministration
         return $this->ownsTeam($team) || $this->belongsToTeam($team);
     }
 
-    /**
-     * @return bool
-     */
     public function promoteToAdmin(XotUserContract $user, TeamContract $team): bool
     {
         if (! $this->ownsTeam($team)) {
@@ -62,9 +53,6 @@ trait HasTeamsMembershipAdministration
         return true;
     }
 
-    /**
-     * @return bool
-     */
     public function demoteFromAdmin(XotUserContract $user, TeamContract $team): bool
     {
         if (! $this->ownsTeam($team)) {

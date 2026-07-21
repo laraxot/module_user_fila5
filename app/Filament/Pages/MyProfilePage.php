@@ -174,9 +174,6 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     // {
     //     return filament('filament-breezy')->getRegisteredMyProfileComponents();
     // }
-    /**
-     * @return array
-     */
     public function getFormSchema(): array
     {
         return [

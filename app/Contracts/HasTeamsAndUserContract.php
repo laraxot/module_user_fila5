@@ -15,7 +15,8 @@ interface HasTeamsAndUserContract extends HasTeamsContract, UserContract
 {
     /**
      * Ottiene il ruolo dell'utente nel team.
-      * @return mixed
+     *
+     * @return mixed
      */
     #[\Override]
     public function teamRole(TeamContract $team): ?Role;
