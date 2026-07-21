@@ -7,7 +7,6 @@ namespace Modules\User\Actions\Shield;
 use Illuminate\Support\Str;
 use Modules\User\Datas\FilamentShieldData;
 use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
 
 /**
  * Action per risolvere la configurazione Filament Shield del resource.

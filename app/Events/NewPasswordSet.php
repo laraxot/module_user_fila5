@@ -19,11 +19,11 @@ class NewPasswordSet
 
     /**
      * Create a new event instance.
-<<<<<<< HEAD
+     * <<<<<<< HEAD.
      *
      * @return void
-=======
->>>>>>> d33e3c69 (.)
+     *              =======
+     *              >>>>>>> d33e3c69 (.)
      */
     public function __construct(
         public UserContract $authObject,

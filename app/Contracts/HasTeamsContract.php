@@ -74,11 +74,11 @@ interface HasTeamsContract
 
     /**
      * Get the user's "personal" team.
-<<<<<<< HEAD
+     * <<<<<<< HEAD.
      *
      * @return mixed
-=======
->>>>>>> d33e3c69 (.)
+     *               =======
+     *               >>>>>>> d33e3c69 (.)
      */
     public function personalTeam(): ?TeamContract;
 
@@ -94,11 +94,11 @@ interface HasTeamsContract
 
     /**
      * Get the role that the user has on the team.
-<<<<<<< HEAD
+     * <<<<<<< HEAD.
      *
      * @return mixed
-=======
->>>>>>> d33e3c69 (.)
+     *               =======
+     *               >>>>>>> d33e3c69 (.)
      */
     public function teamRole(TeamContract $teamContract): ?Role;
 

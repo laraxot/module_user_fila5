@@ -35,11 +35,11 @@ class DeviceProfile extends DeviceUser
      * Create a new model instance.
      *
      * @param array<string, mixed> $attributes
-<<<<<<< HEAD
+     *                                         <<<<<<< HEAD
      *
      * @return void
-=======
->>>>>>> d33e3c69 (.)
+     *              =======
+     *              >>>>>>> d33e3c69 (.)
      */
     public function __construct(array $attributes = [])
     {
