@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Shield;
 
 use Modules\User\Contracts\HasShieldPermissions;
+
 use function Safe\class_implements;
 
 /**
