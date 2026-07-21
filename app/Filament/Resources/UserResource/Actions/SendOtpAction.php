@@ -36,7 +36,8 @@ class SendOtpAction extends XotBaseAction
 
     /**
      * Ottieni il nome predefinito dell'azione.
-      * @return mixed
+     *
+     * @return mixed
      */
     public static function getDefaultName(): ?string
     {

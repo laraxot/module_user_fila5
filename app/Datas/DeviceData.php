@@ -63,9 +63,6 @@ class DeviceData extends Data
         return self::from($headers);
     }
 
-    /**
-     * @return bool
-     */
     public function isValid(): bool
     {
         return true;

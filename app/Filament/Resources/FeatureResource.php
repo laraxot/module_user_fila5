@@ -20,9 +20,6 @@ class FeatureResource extends XotBaseResource
     protected static ?string $model = Feature::class;
 
     #[\Override]
-    /**
-     * @return array
-     */
     public static function getFormSchema(): array
     {
         return [
@@ -33,18 +30,12 @@ class FeatureResource extends XotBaseResource
     }
 
     #[\Override]
-    /**
-     * @return array
-     */
     public static function getRelations(): array
     {
         return [];
     }
 
     #[\Override]
-    /**
-     * @return array
-     */
     public static function getPages(): array
     {
         return [

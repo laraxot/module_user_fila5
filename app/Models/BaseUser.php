@@ -233,9 +233,6 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         }
     }
 
-    /**
-     * @return string
-     */
     public function getProviderName(): string
     {
         return (string) ($this->getAttribute('provider') ?? config('auth.guards.api.provider', 'users'));
@@ -251,8 +248,6 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     */
     /**
      * Get the user's name for Filament.
-     *
-     * @return string
      */
     public function getFilamentName(): string
     {
@@ -340,25 +335,16 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         return true; // str_ends_with($this->email, '@yourdomain.com') && $this->hasVerifiedEmail();
     }
 
-    /**
-     * @return void
-     */
     public function detach(Model $model): void
     {
         $this->membershipTeams()->detach($model);
     }
 
-    /**
-     * @return void
-     */
     public function attach(Model $model): void
     {
         $this->membershipTeams()->attach($model);
     }
 
-    /**
-     * @return string
-     */
     public function treeLabel(): string
     {
         return (string) ($this->name ?? $this->email);
@@ -406,9 +392,6 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         return '' !== $fullName ? $fullName : ($this->email ?? 'User');
     }
 
-    /**
-     * @return string
-     */
     public function getNameAttribute(?string $value): string
     {
         if (null !== $value) {
@@ -504,8 +487,6 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     /**
      * Validate the password of the user for the given password.
-     *
-     * @return bool
      */
     public function validateForPassportPasswordGrant(string $password): bool
     {

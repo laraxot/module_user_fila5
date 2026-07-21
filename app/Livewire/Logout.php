@@ -21,7 +21,8 @@ class Logout extends Component
 
     /**
      * Handle user logout process.
-      * @return mixed
+     *
+     * @return mixed
      */
     public function logout(): ?RedirectResponse
     {

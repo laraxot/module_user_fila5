@@ -40,9 +40,6 @@ class ViewUser extends BaseViewUser
             ])->columns(2);
     }
 
-    /**
-     * @return array
-     */
     public function getFooterWidgets(): array
     {
         return [

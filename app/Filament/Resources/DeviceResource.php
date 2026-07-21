@@ -15,9 +15,6 @@ class DeviceResource extends XotBaseResource
     protected static ?string $model = Device::class;
 
     #[\Override]
-    /**
-     * @return array
-     */
     public static function getFormSchema(): array
     {
         return [

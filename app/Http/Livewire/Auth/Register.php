@@ -110,9 +110,6 @@ class Register extends Component implements HasSchemas
      * In Livewire components, the render method ultimately returns a view,
      * but it's processed through Livewire's component system.
      */
-    /**
-     * @return mixed
-     */
     public function render(): mixed
     {
         // Copy the view templates to the pub_theme location

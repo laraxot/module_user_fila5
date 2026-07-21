@@ -102,9 +102,6 @@ class TenantResource extends XotBaseResource
     }
 
     #[\Override]
-    /**
-     * @return array
-     */
     public static function getRelations(): array
     {
         return [
@@ -114,9 +111,6 @@ class TenantResource extends XotBaseResource
     }
 
     #[\Override]
-    /**
-     * @return array
-     */
     public static function getPages(): array
     {
         return [

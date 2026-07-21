@@ -20,9 +20,6 @@ final class RecentLoginsWidget extends XotBaseTableWidget
     /**
      * Define the columns to display in the table.
      */
-    /**
-     * @return array
-     */
     public function getTableColumns(): array
     {
         return [

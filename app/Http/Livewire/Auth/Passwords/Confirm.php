@@ -26,9 +26,6 @@ class Confirm extends Component
         return redirect()->intended(route('home'));
     }
 
-    /**
-     * @return mixed
-     */
     public function render(): mixed
     {
         app(ViewCopyAction::class)

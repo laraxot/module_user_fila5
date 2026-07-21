@@ -82,9 +82,6 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
     /**
      * Check if the widget should display a logo.
      */
-    /**
-     * @return bool
-     */
     public function hasLogo(): bool
     {
         return false;
@@ -92,7 +89,8 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
 
     /**
      * Reset the user's password.
-      * @return mixed
+     *
+     * @return mixed
      */
     public function resetPassword(): ?PasswordResetResponse
     {

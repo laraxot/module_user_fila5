@@ -30,7 +30,8 @@ class RetrieveOauthUserAction
 
     /**
      * Execute the action.
-      * @return mixed
+     *
+     * @return mixed
      */
     public function execute(string $provider): ?SocialiteUserContract
     {

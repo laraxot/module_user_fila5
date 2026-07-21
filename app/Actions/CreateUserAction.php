@@ -25,7 +25,8 @@ class CreateUserAction
 
     /**
      * @param array<string, mixed>|null $data
-      * @return void
+     *
+     * @return void
      */
     public function __construct(
         protected string $name,

@@ -22,9 +22,6 @@ class RolesRelationManager extends XotBaseRelationManager
     // {
     // }
     #[\Override]
-    /**
-     * @return array
-     */
     public function getFormSchema(): array
     {
         return [

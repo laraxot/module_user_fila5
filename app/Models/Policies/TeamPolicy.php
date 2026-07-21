@@ -12,9 +12,6 @@ class TeamPolicy extends UserBasePolicy
     /**
      * Determine whether the user can view any models.
      */
-    /**
-     * @return bool
-     */
     public function viewAny(UserContract $user): bool
     {
         return false;
@@ -33,9 +30,6 @@ class TeamPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can create models.
-     */
-    /**
-     * @return bool
      */
     public function create(UserContract $_user): bool
     {

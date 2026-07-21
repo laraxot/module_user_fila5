@@ -152,9 +152,6 @@ class OauthAccessTokenResource extends XotBaseResource
             ->defaultSort('created_at', 'desc');
     }
 
-    /**
-     * @return array
-     */
     public static function getPages(): array
     {
         return [
