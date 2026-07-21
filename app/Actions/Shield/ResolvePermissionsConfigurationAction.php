@@ -173,10 +173,13 @@ class ResolvePermissionsConfigurationAction
         $res = $this->doesResourceHaveCustomPermissions($resourceFQCN)
             ? $resourceFQCN::getPermissionPrefixes()
             : $this->getGeneralResourcePermissionPrefixes();
-        Assert::isArray($res);
+
+        if (! is_array($res)) {
+            return [];
+        }
 
         return array_values(array_map(
-            static fn (mixed $item): string => Assert::string($item),
+            static fn (mixed $item): string => is_string($item) ? $item : '',
             $res
         ));
     }
