@@ -52,6 +52,7 @@ trait HasTeams
      * Get all teams the user belongs to.
      *
      * @return Collection<int, TeamContract>
+     *
      * @phpstan-return Collection<int, TeamContract>
      */
     public function allTeams(): Collection
@@ -158,6 +159,7 @@ trait HasTeams
      * Get all of the team's users including its owner.
      *
      * @return Collection<int, User>
+     *
      * @phpstan-return Collection<int, User>
      */
     public function getAllTeamUsersAttribute(): Collection
@@ -183,11 +185,12 @@ trait HasTeams
      * Get all of the team's users including its owner.
      *
      * @return Collection<int, User>
+     *
      * @phpstan-return Collection<int, User>
      */
     public function allTeamUsers(): Collection // @phpstan-ignore return.type
     {/** @var Collection<int, mixed> $teams */
-                                                    $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
+                                                        $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
         /** @var Collection<int, User> $result */
         $result = $teams->flatMap( // @phpstan-ignore argument.type
             /** @param mixed $team @return array<int,User>|Collection<int,User> */
@@ -279,6 +282,7 @@ trait HasTeams
      * Get the current team of the user's context.
      *
      * @return BelongsTo<Model&TeamContract, $this>
+     *
      * @phpstan-return BelongsTo<Model&TeamContract, $this>
      */
     public function currentTeam(): BelongsTo
@@ -293,6 +297,7 @@ trait HasTeams
      * Get the teams owned by the user.
      *
      * @return HasMany<Model&TeamContract, $this>
+     *
      * @phpstan-return HasMany<Model&TeamContract, $this>
      */
     public function ownedTeams(): HasMany
@@ -307,6 +312,7 @@ trait HasTeams
      * Get all team users.
      *
      * @return HasMany<TeamUser, $this>
+     *
      * @phpstan-return HasMany<TeamUser, $this>
      */
     public function teamUsers(): HasMany
@@ -347,6 +353,7 @@ trait HasTeams
      * Get permissions for a specific team.
      *
      * @return array<int, string>
+     *
      * @phpstan-return array<int, string>
      */
     public function teamPermissions(TeamContract $team): array
@@ -481,6 +488,7 @@ trait HasTeams
      * Su {@see BaseUser} esposto come {@see membershipTeams()} — {@see HasRoles::teams()} resta Spatie.
      *
      * @return BelongsToMany<Model&TeamContract, Model, Pivot, 'pivot'>
+     *
      * @phpstan-return BelongsToMany<Model&TeamContract, Model, Pivot, 'pivot'>
      */
     public function teams(): BelongsToMany
@@ -562,6 +570,7 @@ trait HasTeams
      * Get all admins of the team.
      *
      * @return Collection<int, Model>
+     *
      * @phpstan-return Collection<int, Model>
      */
     public function getTeamAdmins(TeamContract $team): Collection
@@ -576,6 +585,7 @@ trait HasTeams
      * Get all members of the team.
      *
      * @return Collection<int, Model>
+     *
      * @phpstan-return Collection<int, Model>
      */
     public function getTeamMembers(TeamContract $team): Collection
