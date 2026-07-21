@@ -57,9 +57,12 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Define the table for the resource.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function table(Table $table): Table
     {
         return $table
@@ -155,9 +158,12 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Configure the model query.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['client']);

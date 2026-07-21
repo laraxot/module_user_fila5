@@ -18,9 +18,12 @@ class PrivacyPolicy extends Component
     /**
      * Show the terms of service for the application.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function render(): View
     {
         $policyFile = app(GetLocalizedMarkdownPathAction::class)->execute('policy.md');

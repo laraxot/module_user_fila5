@@ -14,8 +14,11 @@ use Modules\Xot\Contracts\UserContract;
  */
 interface RemovesTeamMembers
 {
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function remove(UserContract $user, TeamContract $teamContract, UserContract $teamMember): void;
 }

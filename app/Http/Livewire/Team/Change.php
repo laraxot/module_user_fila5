@@ -29,9 +29,12 @@ class Change extends Component
 
     public UserContract $user;
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function mount(): void
     {
         $this->xot = XotData::make();
@@ -54,9 +57,12 @@ class Change extends Component
     /**
      * Update the authenticated user's current team.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function switchTeam(int $teamId): Application|RedirectResponse|Redirector
     {
         $teamClass = $this->xot->getTeamClass();
@@ -82,9 +88,12 @@ class Change extends Component
         return redirect($path, 303);
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function render(): View
     {
         $view = 'user::livewire.team.change';

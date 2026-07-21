@@ -11,17 +11,23 @@ class EditOauthAccessToken extends XotBaseEditRecord
 {
     protected static string $resource = OauthAccessTokenResource::class;
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getNavigationLabel(): string
     {
         return 'Edit Access Token';
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getNavigationIcon(): string
     {
         return 'heroicon-o-pencil';

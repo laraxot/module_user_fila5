@@ -44,9 +44,12 @@ class DeviceData extends Data
     // = 'X-Operating-System';
     public ?string $synchronizationId = null; // = 'X-Synchronization-Identifier';
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function make(): self
     {
         $headers = collect(request()->header())->mapWithKeys(static function ($item, $key): array {
@@ -68,9 +71,12 @@ class DeviceData extends Data
         return true;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getSynchronizationId(string $apiName): string
     {
         if (null !== $this->synchronizationId) {

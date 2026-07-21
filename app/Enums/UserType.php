@@ -31,9 +31,12 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
 
     private const WEB = 'web';
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getDefaultGuard(): string
     {
         return match ($this) {

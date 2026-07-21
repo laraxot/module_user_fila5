@@ -58,9 +58,12 @@ class PasswordExpired extends XotBasePage
         return false;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function resetPassword(): ?PasswordResetResponse
     {
         $pwd = PasswordData::make();

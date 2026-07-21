@@ -20,9 +20,12 @@ class Email extends Component
     /**
      * Invia il link per il reset della password.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function sendResetPasswordLink(): void
     {
         $this->validate([
@@ -44,17 +47,23 @@ class Email extends Component
     /**
      * Get the broker to be used during password reset.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function broker(): PasswordBroker
     {
         return Password::broker();
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function render(): View|Factory
     {
         app(ViewCopyAction::class)

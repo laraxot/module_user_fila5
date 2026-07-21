@@ -19,9 +19,12 @@ class OtherDeviceLogoutListener
 {
     protected Request $request;
 
+<<<<<<< HEAD
     /**
      * @return void
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function __construct(Request $request)
     {
         $this->request = $request;
@@ -62,9 +65,12 @@ class OtherDeviceLogoutListener
     /**
      * Handle the event.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function handleLogin(Login $event): void
     {
         if (! config('authentication-log.notify_other_devices', false)) {

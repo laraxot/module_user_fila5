@@ -22,9 +22,12 @@ class UserObserver
      *
      * Crea automaticamente un personal team per l'utente se configurato.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function created(User $user): void
     {
         // Verifica se la creazione automatica del personal team è abilitata
@@ -67,9 +70,12 @@ class UserObserver
      *
      * Gestisce la pulizia dei team quando un utente viene eliminato.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function deleting(User $user): void
     {
         // Se l'utente ha un personal team, eliminalo

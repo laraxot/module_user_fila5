@@ -24,9 +24,12 @@ class RegisterTenant extends XotBaseRegisterTenant
      */
     private ?string $resourceClass = null;
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getLabel(): string
     {
         $tenantClass = XotData::make()->getTenantClass();
@@ -43,9 +46,12 @@ class RegisterTenant extends XotBaseRegisterTenant
         return static::transClass($tenantClass, $key);
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function schema(Schema $schema): Schema
     {
         /** @var array<Component> $components */

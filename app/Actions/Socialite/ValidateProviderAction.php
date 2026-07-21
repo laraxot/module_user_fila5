@@ -11,9 +11,12 @@ class ValidateProviderAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function execute(string $provider): void
     {
         $hasConfig = config()->has('services.'.$provider);

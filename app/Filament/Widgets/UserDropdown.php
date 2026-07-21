@@ -17,9 +17,12 @@ class UserDropdown extends XotBaseSchemaWidget
     /**
      * Handle user logout.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function logout(): void
     {
         Auth::guard('web')->logout();

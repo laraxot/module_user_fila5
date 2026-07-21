@@ -50,9 +50,12 @@ class LogoutWidget extends XotBaseSchemaWidget
     /**
      * Mount the widget and initialize the form.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function mount(): void
     {
         $this->form->fill();
@@ -87,9 +90,12 @@ class LogoutWidget extends XotBaseSchemaWidget
      *
      * @throws \RuntimeException If the logout process fails
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function logout(): void
     {
         try {

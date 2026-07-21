@@ -27,17 +27,23 @@ class ShieldUtilsAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getFilamentAuthGuard(): string
     {
         return 'web';
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function isResourcePublished(): bool
     {
         $roleResourcePath = app_path((string) Str::of('Filament\\Resources\\Shield\\RoleResource.php')->replace(
@@ -50,9 +56,12 @@ class ShieldUtilsAction
         return $filesystem->exists($roleResourcePath);
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getResourceSlug(): string
     {
         Assert::string($res = config('filament-shield.shield_resource.slug'), 'wip');
@@ -60,9 +69,12 @@ class ShieldUtilsAction
         return $res;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function isResourceNavigationRegistered(): bool
     {
         Assert::boolean($res = config('filament-shield.shield_resource.should_register_navigation', true));
@@ -70,41 +82,56 @@ class ShieldUtilsAction
         return $res;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getResourceNavigationSort(): int
     {
         return FilamentShieldData::make()->shield_resource->navigation_sort;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function isResourceNavigationBadgeEnabled(): bool
     {
         return FilamentShieldData::make()->shield_resource->navigation_badge;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function isResourceNavigationGroupEnabled(): bool
     {
         return FilamentShieldData::make()->shield_resource->navigation_group;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function isResourceGloballySearchable(): bool
     {
         return FilamentShieldData::make()->shield_resource->is_globally_searchable;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getAuthProviderFQCN(): string
     {
         Assert::string($res = config('filament-shield.auth_provider_model.fqcn'));
@@ -112,9 +139,12 @@ class ShieldUtilsAction
         return $res;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function isAuthProviderConfigured(): bool
     {
         return \in_array(
@@ -124,49 +154,67 @@ class ShieldUtilsAction
         ) || \in_array(HasRoles::class, class_uses(static::getAuthProviderFQCN()), strict: true);
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function isSuperAdminEnabled(): bool
     {
         return FilamentShieldData::make()->super_admin->enabled;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getSuperAdminName(): string
     {
         return FilamentShieldData::make()->super_admin->name;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function isSuperAdminDefinedViaGate(): bool
     {
         return FilamentShieldData::make()->super_admin->define_via_gate;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getSuperAdminGateInterceptionStatus(): string
     {
         return FilamentShieldData::make()->super_admin->intercept_gate;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function isFilamentUserRoleEnabled(): bool
     {
         return FilamentShieldData::make()->filament_user->enabled;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getFilamentUserRoleName(): string
     {
         return FilamentShieldData::make()->filament_user->name;
@@ -192,9 +240,12 @@ class ShieldUtilsAction
         return $res;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getWidgetPermissionPrefix(): string
     {
         Assert::string($res = config('filament-shield.permission_prefixes.widget'));
@@ -202,9 +253,12 @@ class ShieldUtilsAction
         return $res;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function isResourceEntityEnabled(): bool
     {
         Assert::boolean($res = config('filament-shield.entities.resources', true));
@@ -212,9 +266,12 @@ class ShieldUtilsAction
         return $res;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function isPageEntityEnabled(): bool
     {
         Assert::boolean($res = config('filament-shield.entities.pages', true));
@@ -225,9 +282,12 @@ class ShieldUtilsAction
     /**
      * Widget Entity Status.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function isWidgetEntityEnabled(): bool
     {
         Assert::boolean($res = config('filament-shield.entities.widgets', true));
@@ -235,9 +295,12 @@ class ShieldUtilsAction
         return $res;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function isCustomPermissionEntityEnabled(): bool
     {
         Assert::boolean($res = config('filament-shield.entities.custom_permissions', false));
@@ -245,9 +308,12 @@ class ShieldUtilsAction
         return $res;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getGeneratorOption(): string
     {
         Assert::string($res = config('filament-shield.generator.option', 'policies_and_permissions'));
@@ -255,9 +321,12 @@ class ShieldUtilsAction
         return $res;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function isGeneralExcludeEnabled(): bool
     {
         Assert::boolean($res = config('filament-shield.exclude.enabled', true));
@@ -265,17 +334,23 @@ class ShieldUtilsAction
         return $res;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function enableGeneralExclude(): void
     {
         config(['filament-shield.exclude.enabled' => true]);
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function disableGeneralExclude(): void
     {
         config(['filament-shield.exclude.enabled' => false]);
@@ -327,9 +402,12 @@ class ShieldUtilsAction
         return $res;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function doesResourceHaveCustomPermissions(string $resourceClass): bool
     {
         return \in_array(HasShieldPermissions::class, class_implements($resourceClass), strict: true);
@@ -377,9 +455,12 @@ class ShieldUtilsAction
         return $res;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getPermissionModel(): string
     {
         Assert::string($res = config('permission.models.permission', Permission::class));
@@ -390,9 +471,12 @@ class ShieldUtilsAction
     /**
      * Check if the role resource exists.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function roleResourceExists(): bool
     {
         $roleResourcePath = base_path('Modules/User/app/Filament/Resources/RoleResource.php');
@@ -400,9 +484,12 @@ class ShieldUtilsAction
         return File::exists($roleResourcePath);
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function execute(): void
     {
         // Action di raccolta: i metodi statici sono utility retro-compatibili.

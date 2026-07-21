@@ -62,9 +62,12 @@ class LoginWidget extends XotBaseSchemaWidget
     /**
      * Compat: il template tema usa `wire:submit.prevent="save"`.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function save(): void
     {
         $this->login();

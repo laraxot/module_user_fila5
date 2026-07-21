@@ -15,9 +15,12 @@ class GetLoggedUserController extends XotBaseController
     /**
      * Login api.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function __invoke(Request $request): JsonResponse
     {
         Assert::notNull($user = $request->user(), PHP_EOL.'['.__LINE__.']'.PHP_EOL.'['.__FILE__.']');

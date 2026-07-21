@@ -17,9 +17,12 @@ class ChangePasswordCommand extends Command
 
     protected $description = 'Change user password';
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function handle(): void
     {
         $emailInput = $this->option('email') ?? $this->ask('Enter the user email:');

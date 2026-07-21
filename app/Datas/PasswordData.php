@@ -24,9 +24,12 @@ class PasswordData extends Data
 
     private static ?self $instance = null;
 
+<<<<<<< HEAD
     /**
      * @return void
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function __construct(
         public int $otp_expiration_minutes = 5,
         public int $otp_length = 6,
@@ -46,9 +49,12 @@ class PasswordData extends Data
     /**
      * Crea un'istanza della classe PasswordData.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function make(): self
     {
         if (! self::$instance) {
@@ -62,9 +68,12 @@ class PasswordData extends Data
     /**
      * Get the password validation rule.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getPasswordRule(): Password
     {
         $pwd = Password::min($this->min);
@@ -134,9 +143,12 @@ class PasswordData extends Data
     /**
      * Set the field name.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function setFieldName(string $field_name): self
     {
         $this->field_name = $field_name;
@@ -147,9 +159,12 @@ class PasswordData extends Data
     /**
      * Get the password form component.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getPasswordFormComponent(string $field_name): FormsTextInput
     {
         return FormsTextInput::make($field_name)
@@ -162,9 +177,12 @@ class PasswordData extends Data
     /**
      * Get the password confirmation form component.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getPasswordConfirmationFormComponent(): FormsTextInput
     {
         if (null === $this->field_name) {

@@ -16,8 +16,11 @@ interface DeletesTeams
     /**
      * ---.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function delete(TeamContract $teamContract): void;
 }

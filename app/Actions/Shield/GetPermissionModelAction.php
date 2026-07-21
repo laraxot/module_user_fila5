@@ -12,9 +12,12 @@ final class GetPermissionModelAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function execute(): string
     {
         Assert::string($res = config('permission.models.permission', Permission::class));

@@ -16,9 +16,12 @@ class CreateUserAction
      *
      * @param array<string, mixed> $data
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function execute(array $data): User
     {
         // Use app() to resolve the User model instance

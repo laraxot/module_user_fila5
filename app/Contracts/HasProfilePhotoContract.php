@@ -13,9 +13,12 @@ use Illuminate\Database\Eloquent\Model;
  */
 interface HasProfilePhotoContract
 {
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getFilamentAvatarUrl(): ?string;
 
     /**
@@ -31,14 +34,18 @@ interface HasProfilePhotoContract
     /**
      * Get the URL to the user's profile photo.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getProfilePhotoUrlAttribute(): string;
 
     /**
      * Determine if the image file exists.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
@@ -47,21 +54,31 @@ interface HasProfilePhotoContract
     /**
      * @return mixed
      */
+=======
+    public function photoExists(): bool;
+
+>>>>>>> d33e3c69 (.)
     public function filamentDefaultAvatar(): string;
 
     /**
      * Get the disk that profile photos should be stored on.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function profilePhotoDisk(): string;
 
     /**
      * Get the directory that profile photos should be stored on.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function profilePhotoDirectory(): string;
 }

@@ -99,9 +99,12 @@ class LogoutListener
     /**
      * Rimuove i remember tokens.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function forgetRememberTokens(Logout $event): void
     {
         if ($event->user instanceof BaseUser) {

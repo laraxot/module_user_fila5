@@ -13,9 +13,12 @@ use Webmozart\Assert\Assert;
 
 class Verify extends Component
 {
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function resend(): void
     {
         Assert::notNull($user = Auth::user(), '['.__LINE__.']['.class_basename($this).']');
@@ -30,9 +33,12 @@ class Verify extends Component
         session()->flash('resent');
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function render(): View|Factory
     {
         app(ViewCopyAction::class)

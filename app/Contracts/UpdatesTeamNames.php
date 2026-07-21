@@ -17,8 +17,11 @@ interface UpdatesTeamNames
     /**
      * @param array<string, mixed> $input
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function update(UserContract $userContract, TeamContract $teamContract, array $input): void;
 }

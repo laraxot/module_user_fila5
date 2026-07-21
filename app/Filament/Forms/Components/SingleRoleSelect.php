@@ -26,9 +26,12 @@ class SingleRoleSelect extends XotBaseSelect
             ->placeholder('Select a role');
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getOptionValueProperty(): string
     {
         return $this->optionValueProperty;

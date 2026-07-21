@@ -13,9 +13,12 @@ class AuthenticationLogPolicy extends UserBasePolicy
     /**
      * Determine whether the user can view any models.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function viewAny(UserContract $user): bool
     {
         return $this->hasPermission($user, 'authentication-log.view.any');
@@ -24,9 +27,12 @@ class AuthenticationLogPolicy extends UserBasePolicy
     /**
      * Determine whether the user can view the model.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function view(UserContract $user, AuthenticationLog $authenticationLog): bool
     {
         return $this->hasPermission($user, 'authentication-log.view')
@@ -37,9 +43,12 @@ class AuthenticationLogPolicy extends UserBasePolicy
     /**
      * Determine whether the user can create models.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function create(UserContract $user): bool
     {
         return $this->hasPermission($user, 'authentication-log.create');
@@ -48,9 +57,12 @@ class AuthenticationLogPolicy extends UserBasePolicy
     /**
      * Determine whether the user can update the model.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function update(UserContract $user, AuthenticationLog $_authenticationLog): bool
     {
         return $this->hasPermission($user, 'authentication-log.update') || $user->hasRole('super-admin');
@@ -59,9 +71,12 @@ class AuthenticationLogPolicy extends UserBasePolicy
     /**
      * Determine whether the user can delete the model.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function delete(UserContract $user, AuthenticationLog $_authenticationLog): bool
     {
         return $this->hasPermission($user, 'authentication-log.delete') || $user->hasRole('super-admin');
@@ -70,9 +85,12 @@ class AuthenticationLogPolicy extends UserBasePolicy
     /**
      * Determine whether the user can restore the model.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function restore(UserContract $user, AuthenticationLog $_authenticationLog): bool
     {
         return $this->hasPermission($user, 'authentication-log.restore') || $user->hasRole('super-admin');
@@ -81,9 +99,12 @@ class AuthenticationLogPolicy extends UserBasePolicy
     /**
      * Determine whether the user can permanently delete the model.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function forceDelete(UserContract $user, AuthenticationLog $authenticationLog): bool
     {
         return $this->hasPermission($user, 'authentication-log.force-delete') || $user->hasRole('super-admin');

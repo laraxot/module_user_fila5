@@ -13,9 +13,12 @@ class CreateGenericClientAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function execute(
         string $name,
         string $redirect,

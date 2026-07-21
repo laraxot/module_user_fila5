@@ -17,9 +17,12 @@ class GetLoginRedirectRouteAction
     /**
      * Execute the action.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function execute(): string
     {
         // return config('filament-socialite.login_redirect_route') ?? 'filament.pages.dashboard';

@@ -12,9 +12,12 @@ class Confirm extends Component
 {
     public string $password = '';
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function confirm(): RedirectResponse
     {
         $this->validate([

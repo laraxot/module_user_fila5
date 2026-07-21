@@ -38,9 +38,12 @@ class Register extends Component implements HasSchemas
     /**
      * Mount the component.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function mount(): void
     {
         $this->form->fill();
@@ -49,9 +52,12 @@ class Register extends Component implements HasSchemas
     /**
      * Define the form schema.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function form(Schema $schema): Schema
     {
         return $schema
@@ -80,9 +86,12 @@ class Register extends Component implements HasSchemas
     /**
      * Execute the action.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function register(): RedirectResponse|Redirector
     {
         $data = $this->form->getState();

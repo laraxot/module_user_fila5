@@ -100,9 +100,12 @@ class TeamInvitation extends BaseModel
     /**
      * Decline the invitation.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function decline(): void
     {
         $this->delete();

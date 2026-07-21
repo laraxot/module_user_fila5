@@ -12,9 +12,12 @@ use Modules\Xot\Filament\Pages\Tenancy\XotBaseRegisterTenant;
 
 class RegisterTeam extends XotBaseRegisterTenant
 {
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getLabel(): string
     {
         return 'Register team';

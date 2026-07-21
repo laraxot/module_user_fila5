@@ -5,8 +5,11 @@ declare(strict_types=1);
 /**
  * ----------------------------------------------------------------.
  * EX XotBasePolicy.
+<<<<<<< HEAD
  *
  * @return mixed
+=======
+>>>>>>> d33e3c69 (.)
  */
 
 namespace Modules\User\Models\Policies;
@@ -22,9 +25,12 @@ abstract class UserPermissionBasePolicy
 {
     use HandlesAuthorization;
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function before(UserContract $user, string $ability): ?bool
     {
         if ($user->hasRole('super-admin')) {

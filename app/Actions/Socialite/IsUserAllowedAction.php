@@ -20,9 +20,12 @@ class IsUserAllowedAction
     /**
      * Execute the action.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function execute(SocialiteUserContract $user): bool
     {
         $domains = app(GetDomainAllowListAction::class)->execute();
