@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\Shield;
 
+use BezhanSalleh\FilamentShield\Traits\HasPanelShield;
+use Spatie\Permission\Traits\HasRoles;
 use Spatie\QueueableAction\QueueableAction;
+
+use function Safe\class_uses;
 
 /**
  * Action per risolvere la configurazione autenticazione Filament Shield.
