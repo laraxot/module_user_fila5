@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Shield;
 
 use Modules\User\Contracts\HasShieldPermissions;
-use Spatie\QueueableAction\QueueableAction;
+use function Safe\class_implements;
 
 /**
  * Action per risolvere la configurazione permissions e entities.
