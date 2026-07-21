@@ -136,5 +136,9 @@ docs/**/workbench/
 docs/**/scripts/
 docs/**/bashscripts/
 resources/views/node_modules
+<<<<<<< HEAD
 database/migrations/_legacy
 database/migrations/Database
+=======
+database/migrations/_bak
+>>>>>>> laraxot/dev
