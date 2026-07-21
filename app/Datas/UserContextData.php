@@ -14,7 +14,6 @@ class UserContextData extends Data
 {
     /**
      * @param array<int, string> $roles
-      * @return void
      */
     public function __construct(
         public readonly ?string $userId = null,
@@ -26,7 +25,7 @@ class UserContextData extends Data
 
     public static function fromUserModel(object $userModel): self
     {
-        $userId = isset($userModel->id) ? (string) $userModel->id : null;
+        $userId = property_exists($userModel, 'id') ? (string) $userModel->id : null;
 
         $roles = array_values(array_map(
             static fn (mixed $role): string => (string) $role,
@@ -41,9 +40,6 @@ class UserContextData extends Data
         );
     }
 
-    /**
-     * @return mixed
-     */
     public function hasRole(string $role): bool
     {
         return in_array(strtolower($role), array_map('strtolower', $this->roles), true);

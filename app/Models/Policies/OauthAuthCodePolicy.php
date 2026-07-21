@@ -12,9 +12,6 @@ class OauthAuthCodePolicy extends UserBasePolicy
     /**
      * Determine whether the user can view any models.
      */
-    /**
-     * @return mixed
-     */
     public function viewAny(UserContract $user): bool
     {
         return $user->hasPermissionTo('oauth-auth-code.view.any');
@@ -22,9 +19,6 @@ class OauthAuthCodePolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can view the model.
-     */
-    /**
-     * @return mixed
      */
     public function view(UserContract $user, OauthAuthCode $_oauthAuthCode): bool
     {
@@ -34,9 +28,6 @@ class OauthAuthCodePolicy extends UserBasePolicy
     /**
      * Determine whether the user can create models.
      */
-    /**
-     * @return mixed
-     */
     public function create(UserContract $user): bool
     {
         return $user->hasPermissionTo('oauth-auth-code.create');
@@ -44,9 +35,6 @@ class OauthAuthCodePolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can update the model.
-     */
-    /**
-     * @return mixed
      */
     public function update(UserContract $user, OauthAuthCode $_oauthAuthCode): bool
     {
@@ -56,9 +44,6 @@ class OauthAuthCodePolicy extends UserBasePolicy
     /**
      * Determine whether the user can delete the model.
      */
-    /**
-     * @return mixed
-     */
     public function delete(UserContract $user, OauthAuthCode $_oauthAuthCode): bool
     {
         return $user->hasPermissionTo('oauth-auth-code.delete') || $user->hasRole('super-admin');
@@ -67,9 +52,6 @@ class OauthAuthCodePolicy extends UserBasePolicy
     /**
      * Determine whether the user can restore the model.
      */
-    /**
-     * @return mixed
-     */
     public function restore(UserContract $user, OauthAuthCode $_oauthAuthCode): bool
     {
         return $user->hasPermissionTo('oauth-auth-code.restore') || $user->hasRole('super-admin');
@@ -77,9 +59,6 @@ class OauthAuthCodePolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can permanently delete the model.
-     */
-    /**
-     * @return mixed
      */
     public function forceDelete(UserContract $user, OauthAuthCode $oauthAuthCode): bool
     {

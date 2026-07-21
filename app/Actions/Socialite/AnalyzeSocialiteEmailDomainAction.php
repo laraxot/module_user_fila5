@@ -13,9 +13,6 @@ final class AnalyzeSocialiteEmailDomainAction
 {
     use QueueableAction;
 
-    /**
-     * @return mixed
-     */
     public function execute(SocialiteUserContract $oauthUser, string $provider): SocialiteEmailDomainAnalysisData
     {
         if ('' === $provider) {

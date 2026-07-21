@@ -14,9 +14,6 @@ use Modules\Xot\Contracts\UserContract;
  */
 interface InvitesTeamMembers
 {
-    /**
-     * @return mixed
-     */
     public function invite(
         UserContract $userContract,
         TeamContract $teamContract,

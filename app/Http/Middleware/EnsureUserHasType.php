@@ -22,9 +22,6 @@ class EnsureUserHasType
      *
      * @param \Closure(Request):Response $next
      */
-    /**
-     * @return mixed
-     */
     public function handle(Request $request, \Closure $next, string $type): Response
     {
         $userType = $request->user()?->type;

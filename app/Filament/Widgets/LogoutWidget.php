@@ -50,9 +50,6 @@ class LogoutWidget extends XotBaseSchemaWidget
     /**
      * Mount the widget and initialize the form.
      */
-    /**
-     * @return mixed
-     */
     public function mount(): void
     {
         $this->form->fill();
@@ -86,9 +83,6 @@ class LogoutWidget extends XotBaseSchemaWidget
      * 7. Handles redirection with proper localization
      *
      * @throws \RuntimeException If the logout process fails
-     */
-    /**
-     * @return mixed
      */
     public function logout(): void
     {

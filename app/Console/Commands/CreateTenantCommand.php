@@ -27,9 +27,6 @@ class CreateTenantCommand extends Command
     /**
      * Execute the console command.
      */
-    /**
-     * @return mixed
-     */
     public function handle(): void
     {
         $modelClass = XotData::make()->getTenantClass();

@@ -35,8 +35,5 @@ use Illuminate\Support\Carbon;
  */
 interface TeamInvitationContract
 {
-    /**
-     * @return mixed
-     */
     public function delete(): void;
 }

@@ -26,9 +26,6 @@ class AssignModuleCommand extends Command
      */
     protected $description = 'Assign or revoke modules to/from user';
 
-    /**
-     * @return void
-     */
     public function __construct(
         private readonly RepositoryInterface $moduleRepository,
         private readonly Role $roleModel,

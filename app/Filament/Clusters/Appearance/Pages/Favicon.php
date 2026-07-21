@@ -25,9 +25,6 @@ class Favicon extends XotBasePage
 
     protected static ?int $navigationSort = 5;
 
-    /**
-     * @return mixed
-     */
     public function mount(): void
     {
         $this->fillForms();
@@ -40,9 +37,6 @@ class Favicon extends XotBasePage
     //    ];
     // }
 
-    /**
-     * @return mixed
-     */
     public function schema(Schema $schema): Schema
     {
         return $schema
@@ -64,9 +58,6 @@ class Favicon extends XotBasePage
             ->statePath('data');
     }
 
-    /**
-     * @return mixed
-     */
     public function updateData(): void
     {
         try {

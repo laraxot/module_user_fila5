@@ -33,9 +33,6 @@ class PassportServiceProvider extends ServiceProvider
     /**
      * Register services.
      */
-    /**
-     * @return mixed
-     */
     public function register(): void
     {
         $this->mergeConfigFrom(
@@ -46,9 +43,6 @@ class PassportServiceProvider extends ServiceProvider
 
     /**
      * Bootstrap services.
-     */
-    /**
-     * @return mixed
      */
     public function boot(): void
     {

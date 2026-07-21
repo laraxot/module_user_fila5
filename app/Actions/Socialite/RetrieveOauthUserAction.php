@@ -20,9 +20,6 @@ class RetrieveOauthUserAction
 {
     use QueueableAction;
 
-    /**
-     * @return void
-     */
     public function __construct(
         private readonly Dispatcher $eventDispatcher,
     ) {
@@ -30,7 +27,6 @@ class RetrieveOauthUserAction
 
     /**
      * Execute the action.
-      * @return mixed
      */
     public function execute(string $provider): ?SocialiteUserContract
     {

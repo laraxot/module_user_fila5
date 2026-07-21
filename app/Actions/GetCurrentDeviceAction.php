@@ -16,9 +16,6 @@ class GetCurrentDeviceAction
 {
     use QueueableAction;
 
-    /**
-     * @return void
-     */
     public function __construct(
         private readonly Agent $agent,
         private readonly Device $deviceModel,

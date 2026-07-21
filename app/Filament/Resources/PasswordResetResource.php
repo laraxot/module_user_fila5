@@ -17,9 +17,6 @@ class PasswordResetResource extends XotBaseResource
 {
     protected static ?string $model = PasswordReset::class;
 
-    /**
-     * @return array
-     */
     public static function getPages(): array
     {
         return [
@@ -48,9 +45,6 @@ class PasswordResetResource extends XotBaseResource
         ];
     }
 
-    /**
-     * @return mixed
-     */
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery();

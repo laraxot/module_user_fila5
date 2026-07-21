@@ -37,9 +37,6 @@ class Password extends XotBasePage
     /**
      * Inizializza la pagina.
      */
-    /**
-     * @return mixed
-     */
     public function mount(): void
     {
         $this->fillForms();
@@ -83,9 +80,6 @@ class Password extends XotBasePage
 
     /**
      * Aggiorna i dati delle impostazioni delle password.
-     */
-    /**
-     * @return mixed
      */
     public function updateData(): void
     {

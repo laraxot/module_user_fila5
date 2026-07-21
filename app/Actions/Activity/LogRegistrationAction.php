@@ -16,9 +16,6 @@ class LogRegistrationAction
      *
      * @param array<string, mixed> $properties Extra properties to log
      */
-    /**
-     * @return mixed
-     */
     public function execute(User $user, array $properties = []): void
     {
         activity()

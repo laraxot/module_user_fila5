@@ -25,9 +25,6 @@ class CustomCss extends XotBasePage
 
     protected static ?int $navigationSort = 6;
 
-    /**
-     * @return mixed
-     */
     public function mount(): void
     {
         $this->fillForms();
@@ -40,9 +37,6 @@ class CustomCss extends XotBasePage
     //    ];
     // }
 
-    /**
-     * @return mixed
-     */
     public function schema(Schema $schema): Schema
     {
         return $schema
@@ -64,9 +58,6 @@ class CustomCss extends XotBasePage
             ->statePath('data');
     }
 
-    /**
-     * @return mixed
-     */
     public function updateData(): void
     {
         try {

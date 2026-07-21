@@ -12,9 +12,6 @@ class ModelHasPermissionPolicy extends UserBasePolicy
     /**
      * Determine whether the user can view any models.
      */
-    /**
-     * @return mixed
-     */
     public function viewAny(UserContract $user): bool
     {
         return $user->hasPermissionTo('model-has-permission.view.any');
@@ -22,9 +19,6 @@ class ModelHasPermissionPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can view the model.
-     */
-    /**
-     * @return mixed
      */
     public function view(UserContract $user, ModelHasPermission $_modelHasPermission): bool
     {
@@ -34,9 +28,6 @@ class ModelHasPermissionPolicy extends UserBasePolicy
     /**
      * Determine whether the user can create models.
      */
-    /**
-     * @return mixed
-     */
     public function create(UserContract $user): bool
     {
         return $user->hasPermissionTo('model-has-permission.create');
@@ -44,9 +35,6 @@ class ModelHasPermissionPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can update the model.
-     */
-    /**
-     * @return mixed
      */
     public function update(UserContract $user, ModelHasPermission $_modelHasPermission): bool
     {
@@ -56,9 +44,6 @@ class ModelHasPermissionPolicy extends UserBasePolicy
     /**
      * Determine whether the user can delete the model.
      */
-    /**
-     * @return mixed
-     */
     public function delete(UserContract $user, ModelHasPermission $_modelHasPermission): bool
     {
         return $user->hasPermissionTo('model-has-permission.delete') || $user->hasRole('super-admin');
@@ -67,9 +52,6 @@ class ModelHasPermissionPolicy extends UserBasePolicy
     /**
      * Determine whether the user can restore the model.
      */
-    /**
-     * @return mixed
-     */
     public function restore(UserContract $user, ModelHasPermission $_modelHasPermission): bool
     {
         return $user->hasPermissionTo('model-has-permission.restore') || $user->hasRole('super-admin');
@@ -77,9 +59,6 @@ class ModelHasPermissionPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can permanently delete the model.
-     */
-    /**
-     * @return mixed
      */
     public function forceDelete(UserContract $user, ModelHasPermission $modelHasPermission): bool
     {

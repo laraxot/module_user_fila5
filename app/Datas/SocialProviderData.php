@@ -35,9 +35,6 @@ class SocialProviderData extends Data
 
     private static ?self $instance = null;
 
-    /**
-     * @return mixed
-     */
     public static function make(): self
     {
         if (! self::$instance) {

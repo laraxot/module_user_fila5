@@ -59,18 +59,12 @@ class SocialProviderResource extends XotBaseResource
     }
 
     #[\Override]
-    /**
-     * @return array
-     */
     public static function getRelations(): array
     {
         return [];
     }
 
     #[\Override]
-    /**
-     * @return array
-     */
     public static function getPages(): array
     {
         return [

@@ -15,9 +15,6 @@ class GetDomainAllowListAction
 {
     use QueueableAction;
 
-    /**
-     * @return void
-     */
     public function __construct(
         private readonly Arr $arrHelper,
     ) {

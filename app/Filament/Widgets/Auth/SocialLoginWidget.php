@@ -69,9 +69,6 @@ class SocialLoginWidget extends XotBaseSchemaWidget
         return $providers;
     }
 
-    /**
-     * @return mixed
-     */
     public function redirectToProvider(string $driver): void
     {
         $driver = match ($driver) {

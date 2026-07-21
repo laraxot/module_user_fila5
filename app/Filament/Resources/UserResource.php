@@ -17,9 +17,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class UserResource extends XotBaseResource
 {
-    /**
-     * @return array
-     */
     public static function getWidgets(): array
     {
         return [
@@ -33,9 +30,6 @@ class UserResource extends XotBaseResource
     // }
 
     #[\Override]
-    /**
-     * @return mixed
-     */
     public static function getFormSchema(): array
     {
         return UserForm::getFormSchema();
@@ -54,9 +48,6 @@ class UserResource extends XotBaseResource
      */
 
     #[\Override]
-    /**
-     * @return bool
-     */
     public function hasCombinedRelationManagerTabsWithContent(): bool
     {
         return true;

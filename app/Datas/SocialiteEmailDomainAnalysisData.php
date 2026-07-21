@@ -8,9 +8,6 @@ use Spatie\LaravelData\Data;
 
 final class SocialiteEmailDomainAnalysisData extends Data
 {
-    /**
-     * @return void
-     */
     public function __construct(
         public bool $hasFirstPartyDomain,
         public bool $hasClientDomain,

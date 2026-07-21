@@ -15,9 +15,6 @@ final class IsNotificationSchemaReadableAction
 {
     use QueueableAction;
 
-    /**
-     * @return mixed
-     */
     public function execute(): bool
     {
         $model = new Notification();

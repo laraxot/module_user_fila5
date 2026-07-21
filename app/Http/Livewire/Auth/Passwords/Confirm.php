@@ -12,9 +12,6 @@ class Confirm extends Component
 {
     public string $password = '';
 
-    /**
-     * @return mixed
-     */
     public function confirm(): RedirectResponse
     {
         $this->validate([
@@ -26,9 +23,6 @@ class Confirm extends Component
         return redirect()->intended(route('home'));
     }
 
-    /**
-     * @return mixed
-     */
     public function render(): mixed
     {
         app(ViewCopyAction::class)

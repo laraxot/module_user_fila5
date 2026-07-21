@@ -17,9 +17,6 @@ class SetDefaultRolesBySocialiteUserAction
 {
     use QueueableAction;
 
-    /**
-     * @return mixed
-     */
     public function execute(string $provider, UserContract $userModel, SocialiteUserContract $oauthUser): void
     {
         $domainAnalyzer = app(EmailDomainAnalyzer::class, [

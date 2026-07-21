@@ -28,9 +28,6 @@ class ViewUser extends BaseViewUser
 
     protected bool $persistsFiltersInSession = true;
 
-    /**
-     * @return mixed
-     */
     public function filtersForm(Schema $schema): Schema
     {
         return $schema
@@ -40,9 +37,6 @@ class ViewUser extends BaseViewUser
             ])->columns(2);
     }
 
-    /**
-     * @return array
-     */
     public function getFooterWidgets(): array
     {
         return [

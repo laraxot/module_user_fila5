@@ -12,9 +12,6 @@ class OauthAccessTokenPolicy extends UserBasePolicy
     /**
      * Determine whether the user can view any models.
      */
-    /**
-     * @return mixed
-     */
     public function viewAny(UserContract $user): bool
     {
         return $user->hasPermissionTo('oauth-access-token.view.any');
@@ -22,9 +19,6 @@ class OauthAccessTokenPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can view the model.
-     */
-    /**
-     * @return mixed
      */
     public function view(UserContract $user, OauthAccessToken $oauthAccessToken): bool
     {
@@ -36,9 +30,6 @@ class OauthAccessTokenPolicy extends UserBasePolicy
     /**
      * Determine whether the user can create models.
      */
-    /**
-     * @return mixed
-     */
     public function create(UserContract $user): bool
     {
         return $user->hasPermissionTo('oauth-access-token.create');
@@ -47,9 +38,6 @@ class OauthAccessTokenPolicy extends UserBasePolicy
     /**
      * Determine whether the user can update the model.
      */
-    /**
-     * @return mixed
-     */
     public function update(UserContract $user, OauthAccessToken $_oauthAccessToken): bool
     {
         return $user->hasPermissionTo('oauth-access-token.update') || $user->hasRole('super-admin');
@@ -57,9 +45,6 @@ class OauthAccessTokenPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can delete the model.
-     */
-    /**
-     * @return mixed
      */
     public function delete(UserContract $user, OauthAccessToken $oauthAccessToken): bool
     {
@@ -71,9 +56,6 @@ class OauthAccessTokenPolicy extends UserBasePolicy
     /**
      * Determine whether the user can restore the model.
      */
-    /**
-     * @return mixed
-     */
     public function restore(UserContract $user, OauthAccessToken $_oauthAccessToken): bool
     {
         return $user->hasPermissionTo('oauth-access-token.restore') || $user->hasRole('super-admin');
@@ -81,9 +63,6 @@ class OauthAccessTokenPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can permanently delete the model.
-     */
-    /**
-     * @return mixed
      */
     public function forceDelete(UserContract $user, OauthAccessToken $oauthAccessToken): bool
     {

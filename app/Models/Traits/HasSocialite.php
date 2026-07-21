@@ -29,9 +29,6 @@ trait HasSocialite
         return (string) $res;
     }
 
-    /**
-     * @return bool
-     */
     public function canAccessSocialite(): bool
     {
         return true;

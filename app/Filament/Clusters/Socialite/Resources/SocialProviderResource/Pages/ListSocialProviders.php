@@ -39,9 +39,6 @@ class ListSocialProviders extends XotBaseListRecords
     }
 
     #[\Override]
-    /**
-     * @return array
-     */
     public function getTableFilters(): array
     {
         return [

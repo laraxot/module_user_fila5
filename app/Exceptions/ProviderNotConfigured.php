@@ -6,9 +6,6 @@ namespace Modules\User\Exceptions;
 
 final class ProviderNotConfigured extends \LogicException
 {
-    /**
-     * @return mixed
-     */
     public static function make(string $provider): static
     {
         return new self('Provider "'.

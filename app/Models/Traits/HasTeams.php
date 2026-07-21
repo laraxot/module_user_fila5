@@ -36,9 +36,6 @@ trait HasTeams
     /**
      * Add a user to the team.
      */
-    /**
-     * @return mixed
-     */
     public function addTeamMember(Model $user, ?Model $role = null): Model
     {
         $teamUser = $this->teamUsers()->create([
@@ -75,9 +72,6 @@ trait HasTeams
     /**
      * Check if the user belongs to a specific team.
      */
-    /**
-     * @return mixed
-     */
     public function belongsToTeam(?TeamContract $team): bool
     {
         if (null === $team) {
@@ -90,9 +84,6 @@ trait HasTeams
     /**
      * Check if the user can add a member to a team.
      */
-    /**
-     * @return mixed
-     */
     public function canAddTeamMember(TeamContract $team): bool
     {
         return $this->ownsTeam($team) || $this->hasTeamPermission($team, 'add team member');
@@ -100,9 +91,6 @@ trait HasTeams
 
     /**
      * Check if the user can create a team.
-     */
-    /**
-     * @return mixed
      */
     public function canCreateTeam(): bool
     {
@@ -112,9 +100,6 @@ trait HasTeams
     /**
      * Check if the user can delete a team.
      */
-    /**
-     * @return mixed
-     */
     public function canDeleteTeam(TeamContract $team): bool
     {
         return $this->ownsTeam($team);
@@ -122,9 +107,6 @@ trait HasTeams
 
     /**
      * Check if the user can leave a team.
-     */
-    /**
-     * @return mixed
      */
     public function canLeaveTeam(TeamContract $team): bool
     {
@@ -134,9 +116,6 @@ trait HasTeams
     /**
      * Check if the user can manage a team.
      */
-    /**
-     * @return mixed
-     */
     public function canManageTeam(TeamContract $team): bool
     {
         return $this->ownsTeam($team);
@@ -144,9 +123,6 @@ trait HasTeams
 
     /**
      * Check if the user can remove a member from a team.
-     */
-    /**
-     * @return mixed
      */
     public function canRemoveTeamMember(TeamContract $team, XotUserContract $_user): bool
     {
@@ -156,9 +132,6 @@ trait HasTeams
     /**
      * Check if the user can update a team.
      */
-    /**
-     * @return mixed
-     */
     public function canUpdateTeam(TeamContract $team): bool
     {
         return $this->ownsTeam($team) || $this->hasTeamPermission($team, 'update team');
@@ -167,9 +140,6 @@ trait HasTeams
     /**
      * Check if the user can update a team member.
      */
-    /**
-     * @return mixed
-     */
     public function canUpdateTeamMember(TeamContract $team, XotUserContract $_user): bool
     {
         return $this->ownsTeam($team) || $this->hasTeamPermission($team, 'update team member');
@@ -177,9 +147,6 @@ trait HasTeams
 
     /**
      * Check if the user can view a team.
-     */
-    /**
-     * @return mixed
      */
     public function canViewTeam(TeamContract $team): bool
     {
@@ -217,7 +184,7 @@ trait HasTeams
      */
     public function allTeamUsers(): Collection // @phpstan-ignore return.type
     {/** @var Collection<int, mixed> $teams */
-                                                $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
+                                            $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
         /** @var Collection<int, User> $result */
         $result = $teams->flatMap( // @phpstan-ignore argument.type
             /** @param mixed $team @return array<int,User>|Collection<int,User> */
@@ -264,9 +231,6 @@ trait HasTeams
     /**
      * Check if the user has teams.
      */
-    /**
-     * @return mixed
-     */
     public function hasTeams(): bool
     {
         return $this->allTeams()->isNotEmpty();
@@ -275,9 +239,6 @@ trait HasTeams
     /**
      * Check if the user has a specific permission in a team.
      */
-    /**
-     * @return mixed
-     */
     public function hasTeamPermission(TeamContract $team, string $permission): bool
     {
         return $this->ownsTeam($team) || \in_array($permission, $this->teamPermissions($team), true);
@@ -285,9 +246,6 @@ trait HasTeams
 
     /**
      * Check if the user has a specific role in a team.
-     */
-    /**
-     * @return mixed
      */
     public function hasTeamRole(TeamContract $team, string $role): bool
     {
@@ -302,9 +260,6 @@ trait HasTeams
 
     /**
      * Get the role name for a specific team.
-     */
-    /**
-     * @return mixed
      */
     public function teamRoleName(TeamContract $team): string
     {
@@ -355,7 +310,6 @@ trait HasTeams
 
     /**
      * Get the role for a specific team.
-      * @return mixed
      */
     public function teamRole(TeamContract $team): ?Role
     {
@@ -434,9 +388,6 @@ trait HasTeams
     /**
      * Remove a user from the team.
      */
-    /**
-     * @return mixed
-     */
     public function removeTeamMember(Model $user): void
     {
         $this->teamUsers()->where('user_id', $user->getKey())->delete();
@@ -446,7 +397,6 @@ trait HasTeams
 
     /**
      * Get the user's personal team.
-      * @return mixed
      */
     public function personalTeam(): ?TeamContract
     {
@@ -479,9 +429,6 @@ trait HasTeams
     /**
      * Switch the user's context to the given team.
      */
-    /**
-     * @return mixed
-     */
     public function switchTeam(TeamContract $team): bool
     {
         if (! $this->belongsToTeam($team)) {
@@ -498,9 +445,6 @@ trait HasTeams
     /**
      * Determine if the given team is the current team.
      */
-    /**
-     * @return mixed
-     */
     public function isCurrentTeam(TeamContract $team): bool
     {
         if (null === $this->currentTeam) {
@@ -512,9 +456,6 @@ trait HasTeams
 
     /**
      * Determine if the user owns the given team.
-     */
-    /**
-     * @return mixed
      */
     public function ownsTeam(?TeamContract $team): bool
     {
@@ -545,9 +486,6 @@ trait HasTeams
     /**
      * Get all of the teams that the user owns.
      */
-    /**
-     * @return bool
-     */
     public function inviteToTeam(XotUserContract $user, TeamContract $team): bool
     {
         if ($this->ownsTeam($team)) {
@@ -561,9 +499,6 @@ trait HasTeams
 
     /**
      * Remove a user from the team.
-     */
-    /**
-     * @return bool
      */
     public function removeFromTeam(XotUserContract $user, TeamContract $team): bool
     {
@@ -579,9 +514,6 @@ trait HasTeams
     /**
      * Check if the user is an owner or a member.
      */
-    /**
-     * @return mixed
-     */
     public function isOwnerOrMember(TeamContract $team): bool
     {
         return $this->ownsTeam($team) || $this->belongsToTeam($team);
@@ -589,9 +521,6 @@ trait HasTeams
 
     /**
      * Promote a member to team admin.
-     */
-    /**
-     * @return bool
      */
     public function promoteToAdmin(XotUserContract $user, TeamContract $team): bool
     {
@@ -606,9 +535,6 @@ trait HasTeams
 
     /**
      * Demote a member from team admin.
-     */
-    /**
-     * @return bool
      */
     public function demoteFromAdmin(XotUserContract $user, TeamContract $team): bool
     {

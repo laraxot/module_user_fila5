@@ -37,9 +37,6 @@ interface HasTeamsContract
     /**
      * Determine if the given team is the current team.
      */
-    /**
-     * @return bool
-     */
     public function isCurrentTeam(TeamContract $teamContract): bool;
 
     /**
@@ -77,7 +74,6 @@ interface HasTeamsContract
 
     /**
      * Get the user's "personal" team.
-      * @return mixed
      */
     public function personalTeam(): ?TeamContract;
 
@@ -93,7 +89,6 @@ interface HasTeamsContract
 
     /**
      * Get the role that the user has on the team.
-      * @return mixed
      */
     public function teamRole(TeamContract $teamContract): ?Role;
 

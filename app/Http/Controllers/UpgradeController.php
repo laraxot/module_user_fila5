@@ -14,9 +14,6 @@ use Modules\Xot\Datas\XotData;
 
 class UpgradeController extends Controller
 {
-    /**
-     * @return mixed
-     */
     public function __invoke(Request $_request): void
     {
         $user_class = XotData::make()->getUserClass();

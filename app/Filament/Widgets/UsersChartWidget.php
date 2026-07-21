@@ -33,9 +33,6 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
 
     protected static ?int $sort = 2;
 
-    /**
-     * @return mixed
-     */
     public function getHeading(): ?string
     {
         return __('user::widgets.users_chart.heading');

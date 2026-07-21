@@ -79,9 +79,6 @@ final class ChangeProfilePasswordAction extends XotBaseAction
             });
     }
 
-    /**
-     * @return mixed
-     */
     public static function getDefaultName(): string
     {
         return 'changePassword';

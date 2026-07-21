@@ -14,8 +14,5 @@ use Modules\Xot\Contracts\UserContract;
  */
 interface RemovesTeamMembers
 {
-    /**
-     * @return mixed
-     */
     public function remove(UserContract $user, TeamContract $teamContract, UserContract $teamMember): void;
 }

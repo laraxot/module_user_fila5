@@ -29,9 +29,6 @@ final class AttachRoleAction extends XotBaseAttachAction
             });
     }
 
-    /**
-     * @return mixed
-     */
     public static function getDefaultName(): string
     {
         return 'attachRole';

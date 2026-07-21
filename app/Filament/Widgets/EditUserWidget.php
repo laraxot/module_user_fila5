@@ -46,9 +46,6 @@ class EditUserWidget extends XotBaseSchemaWidget
     /**
      * Initialize the widget with user type and optional user ID.
      */
-    /**
-     * @return mixed
-     */
     public function mount(string $type = '', ?string $userId = null): void
     {
         parent::mount();
@@ -136,9 +133,6 @@ class EditUserWidget extends XotBaseSchemaWidget
      *
      * @see https://filamentphp.com/docs/3.x/forms/adding-a-form-to-a-livewire-component
      */
-    /**
-     * @return mixed
-     */
     public function updateUser(): RedirectResponse|Redirector
     {
         $data = $this->form->getState();
@@ -155,9 +149,6 @@ class EditUserWidget extends XotBaseSchemaWidget
 
     /**
      * Controlla se l'utente può modificare il record corrente.
-     */
-    /**
-     * @return mixed
      */
     public function canEdit(): bool
     {

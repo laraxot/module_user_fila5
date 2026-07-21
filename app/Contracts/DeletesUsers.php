@@ -14,8 +14,5 @@ use Modules\Xot\Contracts\UserContract;
  */
 interface DeletesUsers
 {
-    /**
-     * @return mixed
-     */
     public function delete(UserContract $userContract): void;
 }

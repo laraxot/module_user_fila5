@@ -18,9 +18,6 @@ class CreateSocialiteUserAction
 {
     use QueueableAction;
 
-    /**
-     * @return void
-     */
     public function __construct(
         private readonly SocialiteUser $socialiteUserModel,
     ) {

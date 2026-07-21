@@ -165,9 +165,6 @@ class User extends BaseUser
     ];
 
     #[\Override]
-    /**
-     * @return mixed
-     */
     public function canAccessSocialite(): bool
     {
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;

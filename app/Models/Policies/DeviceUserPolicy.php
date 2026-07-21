@@ -12,9 +12,6 @@ class DeviceUserPolicy extends UserBasePolicy
     /**
      * Determine whether the user can view any models.
      */
-    /**
-     * @return mixed
-     */
     public function viewAny(UserContract $user): bool
     {
         return $user->hasPermissionTo('device-user.view.any');
@@ -22,9 +19,6 @@ class DeviceUserPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can view the model.
-     */
-    /**
-     * @return mixed
      */
     public function view(UserContract $user, DeviceUser $deviceUser): bool
     {
@@ -36,9 +30,6 @@ class DeviceUserPolicy extends UserBasePolicy
     /**
      * Determine whether the user can create models.
      */
-    /**
-     * @return mixed
-     */
     public function create(UserContract $user): bool
     {
         return $user->hasPermissionTo('device-user.create');
@@ -46,9 +37,6 @@ class DeviceUserPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can update the model.
-     */
-    /**
-     * @return mixed
      */
     public function update(UserContract $user, DeviceUser $_deviceUser): bool
     {
@@ -58,9 +46,6 @@ class DeviceUserPolicy extends UserBasePolicy
     /**
      * Determine whether the user can delete the model.
      */
-    /**
-     * @return mixed
-     */
     public function delete(UserContract $user, DeviceUser $_deviceUser): bool
     {
         return $user->hasPermissionTo('device-user.delete') || $user->hasRole('super-admin');
@@ -69,9 +54,6 @@ class DeviceUserPolicy extends UserBasePolicy
     /**
      * Determine whether the user can restore the model.
      */
-    /**
-     * @return mixed
-     */
     public function restore(UserContract $user, DeviceUser $_deviceUser): bool
     {
         return $user->hasPermissionTo('device-user.restore') || $user->hasRole('super-admin');
@@ -79,9 +61,6 @@ class DeviceUserPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can permanently delete the model.
-     */
-    /**
-     * @return mixed
      */
     public function forceDelete(UserContract $user, DeviceUser $deviceUser): bool
     {

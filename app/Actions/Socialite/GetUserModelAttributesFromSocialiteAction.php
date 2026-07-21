@@ -13,9 +13,6 @@ class GetUserModelAttributesFromSocialiteAction
 {
     use QueueableAction;
 
-    /**
-     * @return mixed
-     */
     public function execute(string $provider, SocialiteUserContract $oauthUser): SocialiteUserAttributesData
     {
         if (empty($provider)) {

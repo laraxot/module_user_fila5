@@ -17,9 +17,6 @@ class RevokeTokenAction
 {
     use QueueableAction;
 
-    /**
-     * @return void
-     */
     public function __construct(
         private readonly OauthToken $oauthTokenModel,
     ) {

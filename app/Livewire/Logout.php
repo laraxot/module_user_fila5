@@ -21,7 +21,6 @@ class Logout extends Component
 
     /**
      * Handle user logout process.
-      * @return mixed
      */
     public function logout(): ?RedirectResponse
     {
@@ -43,9 +42,6 @@ class Logout extends Component
 
     /**
      * Render the logout component view.
-     */
-    /**
-     * @return mixed
      */
     public function render(): View
     {

@@ -16,9 +16,6 @@ final class GetAuthenticationLogQueryForAuthenticatableAction
     /**
      * @phpstan-return Builder<AuthenticationLog>
      */
-    /**
-     * @return mixed
-     */
     public function execute(Model $authenticatable): Builder
     {
         return AuthenticationLog::query()

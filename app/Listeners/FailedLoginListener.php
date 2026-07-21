@@ -19,9 +19,6 @@ class FailedLoginListener
 {
     protected Request $request;
 
-    /**
-     * @return void
-     */
     public function __construct(Request $request)
     {
         $this->request = $request;

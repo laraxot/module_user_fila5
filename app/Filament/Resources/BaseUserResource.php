@@ -27,9 +27,6 @@ abstract class BaseUserResource extends XotBaseResource
     // Static property Modules\User\Filament\Resources\UserResource::$enablePasswordUpdates is never read, only written.
     // private static bool|\Closure $enablePasswordUpdates = true;
 
-    /**
-     * @return array
-     */
     public static function getWidgets(): array
     {
         return [
@@ -43,9 +40,6 @@ abstract class BaseUserResource extends XotBaseResource
     // }
 
     #[\Override]
-    /**
-     * @return mixed
-     */
     public static function getFormSchema(): array
     {
         return [
@@ -94,9 +88,6 @@ abstract class BaseUserResource extends XotBaseResource
      */
 
     #[\Override]
-    /**
-     * @return bool
-     */
     public function hasCombinedRelationManagerTabsWithContent(): bool
     {
         return true;

@@ -30,9 +30,6 @@ class LoginWidget extends XotBaseSchemaWidget
      */
     protected string $view;
 
-    /**
-     * @return void
-     */
     public function __construct()
     {
         /** @var view-string $view */

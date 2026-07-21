@@ -38,9 +38,6 @@ class Client extends PassportClient
      * Initialize the trait.
      * Overriding to match Laravel 12 HasUuids trait signature (removing : void).
      */
-    /**
-     * @return mixed
-     */
     public function initializeHasUniqueStringIds(): void
     {
         parent::initializeHasUniqueStringIds();

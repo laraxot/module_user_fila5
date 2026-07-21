@@ -15,9 +15,6 @@ class EnsureRegistrationEnabled
      *
      * @param \Closure(Request):Response $next
      */
-    /**
-     * @return mixed
-     */
     public function handle(Request $request, \Closure $next): Response
     {
         $enabled = Config::boolean('auth.registration_enabled', true);

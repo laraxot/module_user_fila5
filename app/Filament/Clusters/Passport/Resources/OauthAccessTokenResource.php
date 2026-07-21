@@ -40,9 +40,6 @@ class OauthAccessTokenResource extends XotBaseResource
 
     protected static ?string $model = OauthAccessToken::class;
 
-    /**
-     * @return mixed
-     */
     public static function table(Table $table): Table
     {
         return $table
@@ -337,9 +334,6 @@ class OauthAccessTokenResource extends XotBaseResource
         ];
     }
 
-    /**
-     * @return mixed
-     */
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['user', 'client']);

@@ -30,9 +30,6 @@ class PermissionData extends Data
 
     public PermissionCacheData $cache;
 
-    /**
-     * @return mixed
-     */
     public static function make(): self
     {
         Assert::isArray($xot = config('permission'), 'check config [permission] ');

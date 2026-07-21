@@ -13,9 +13,6 @@ class GetNewPasswordAction
 {
     use QueueableAction;
 
-    /**
-     * @return mixed
-     */
     public function execute(UserContract $record): string
     {
         $user = $record;

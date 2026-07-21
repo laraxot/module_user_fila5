@@ -71,9 +71,6 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
     /**
      * Get the reset password form action.
      */
-    /**
-     * @return mixed
-     */
     public function getResetPasswordFormAction(): Action
     {
         return Action::make('resetPassword')->submit('resetPassword');
@@ -82,9 +79,6 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
     /**
      * Check if the widget should display a logo.
      */
-    /**
-     * @return bool
-     */
     public function hasLogo(): bool
     {
         return false;
@@ -92,7 +86,6 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
 
     /**
      * Reset the user's password.
-      * @return mixed
      */
     public function resetPassword(): ?PasswordResetResponse
     {

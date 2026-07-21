@@ -15,8 +15,5 @@ interface CreatesTeams
     /**
      * @param array<string, mixed> $input
      */
-    /**
-     * @return mixed
-     */
     public function create(UserContract $userContract, array $input): TeamContract;
 }
