@@ -10,17 +10,11 @@ use Livewire\Component;
 
 class AuthLogout extends Component
 {
-    /**
-     * @return mixed
-     */
     public function mount(): void
     {
         Auth::logout();
     }
 
-    /**
-     * @return mixed
-     */
     public function render(): View
     {
         /** @var view-string $viewName */

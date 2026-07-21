@@ -33,33 +33,21 @@ class OauthAccessTokenResource extends XotBaseResource
 
     protected static ?int $navigationSort = 5;
 
-    /**
-     * @return mixed
-     */
     public static function getNavigationLabel(): string
     {
         return __('OAuth Access Tokens');
     }
 
-    /**
-     * @return mixed
-     */
     public static function getPluralLabel(): string
     {
         return __('OAuth Access Tokens');
     }
 
-    /**
-     * @return mixed
-     */
     public static function getModelLabel(): string
     {
         return __('OAuth Access Token');
     }
 
-    /**
-     * @return mixed
-     */
     public static function table(Table $table): Table
     {
         return $table
@@ -152,9 +140,6 @@ class OauthAccessTokenResource extends XotBaseResource
             ->defaultSort('created_at', 'desc');
     }
 
-    /**
-     * @return array
-     */
     public static function getPages(): array
     {
         return [
@@ -192,9 +177,6 @@ class OauthAccessTokenResource extends XotBaseResource
         ];
     }
 
-    /**
-     * @return mixed
-     */
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['user', 'client']);

@@ -32,9 +32,6 @@ class Alignment extends XotBasePage
 
     protected static ?int $navigationSort = 4;
 
-    /**
-     * @return mixed
-     */
     public function mount(): void
     {
         $this->fillForms();
@@ -47,9 +44,6 @@ class Alignment extends XotBasePage
     //    ];
     // }
 
-    /**
-     * @return array
-     */
     public function getViewData(): array
     {
         return [
@@ -58,9 +52,6 @@ class Alignment extends XotBasePage
         ];
     }
 
-    /**
-     * @return mixed
-     */
     public function schema(Schema $schema): Schema
     {
         return $schema
@@ -82,9 +73,6 @@ class Alignment extends XotBasePage
             ->statePath('data');
     }
 
-    /**
-     * @return mixed
-     */
     public function updateData(): void
     {
         try {

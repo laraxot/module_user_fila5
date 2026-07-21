@@ -18,9 +18,6 @@ class VerifyEmailController extends Controller
     /**
      * Mark the authenticated user's email address as verified.
      */
-    /**
-     * @return mixed
-     */
     public function __invoke(EmailVerificationRequest $request): RedirectResponse
     {
         $user = Auth::user();

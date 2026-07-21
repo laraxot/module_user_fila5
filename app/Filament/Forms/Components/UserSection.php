@@ -29,9 +29,6 @@ class UserSection extends XotBaseSection
         ]);
     }
 
-    /**
-     * @return mixed
-     */
     public static function getDefaultName(): ?string
     {
         return 'user';

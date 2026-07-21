@@ -24,9 +24,6 @@ trait HasTenants
     /**
      * Check if the user can access a specific tenant.
      */
-    /**
-     * @return mixed
-     */
     public function canAccessTenant(Model $tenant): bool
     {
         return $this->tenants()->whereKey($tenant)->exists();

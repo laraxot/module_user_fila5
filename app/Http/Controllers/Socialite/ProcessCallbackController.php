@@ -32,9 +32,6 @@ class ProcessCallbackController extends Controller
     /**
      * Undocumented function.
      */
-    /**
-     * @return mixed
-     */
     public function __invoke(Request $_request, string $provider): RedirectResponse
     {
         // See if provider exists

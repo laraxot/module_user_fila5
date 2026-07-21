@@ -17,8 +17,5 @@ interface ResetsUserPasswords
     /**
      * @param array<string, mixed> $input
      */
-    /**
-     * @return mixed
-     */
     public function reset(UserContract $userContract, array $input): void;
 }

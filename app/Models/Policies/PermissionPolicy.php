@@ -11,9 +11,6 @@ class PermissionPolicy extends UserBasePolicy
     /**
      * Determine whether the user can view any models.
      */
-    /**
-     * @return bool
-     */
     public function viewAny(Post $user): bool
     {
         return false;
@@ -21,9 +18,6 @@ class PermissionPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can view the model.
-     */
-    /**
-     * @return bool
      */
     public function view(Post $_user, Post $_post): bool
     {
@@ -33,9 +27,6 @@ class PermissionPolicy extends UserBasePolicy
     /**
      * Determine whether the user can create models.
      */
-    /**
-     * @return bool
-     */
     public function create(Post $_user): bool
     {
         return true;
@@ -44,9 +35,6 @@ class PermissionPolicy extends UserBasePolicy
     /**
      * Determine whether the user can update the model.
      */
-    /**
-     * @return bool
-     */
     public function update(Post $_user, Post $_post): bool
     {
         return true;
@@ -54,9 +42,6 @@ class PermissionPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can delete the model.
-     */
-    /**
-     * @return mixed
      */
     public function delete(Post $_user, Post $_post): bool
     {

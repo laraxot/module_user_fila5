@@ -22,9 +22,6 @@ class LogoutUserAction
     /**
      * Execute the action.
      */
-    /**
-     * @return mixed
-     */
     public function execute(UserContract $user): void
     {
         Assert::notNull($accessToken = $user->token(), '['.__FILE__.']['.__LINE__.']');

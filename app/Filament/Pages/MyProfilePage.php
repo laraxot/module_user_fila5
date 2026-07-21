@@ -48,17 +48,11 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     //     return filament('filament-breezy')->slug();
     // }
 
-    /**
-     * @return mixed
-     */
     public function mount(): void
     {
         $this->fillForms();
     }
 
-    /**
-     * @return mixed
-     */
     public function editProfileForm(Schema $schema): Schema
     {
         return $schema
@@ -78,9 +72,6 @@ class MyProfilePage extends XotBasePage implements HasSchemas
             ->statePath('profileData');
     }
 
-    /**
-     * @return mixed
-     */
     public function editPasswordForm(Schema $schema): Schema
     {
         return $schema
@@ -122,9 +113,6 @@ class MyProfilePage extends XotBasePage implements HasSchemas
             ->statePath('passwordData');
     }
 
-    /**
-     * @return mixed
-     */
     public function getUser(): Authenticatable&Model
     {
         $user = Filament::auth()->user();
@@ -136,25 +124,16 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         return $user;
     }
 
-    /**
-     * @return mixed
-     */
     public function getTitle(): string
     {
         return __('user::profile.my_profile');
     }
 
-    /**
-     * @return mixed
-     */
     public function getHeading(): string
     {
         return __('user::profile.my_profile');
     }
 
-    /**
-     * @return mixed
-     */
     public function getSubheading(): ?string
     {
         return __('user::profile.subheading') ?? null;
@@ -174,9 +153,6 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     // {
     //     return filament('filament-breezy')->getRegisteredMyProfileComponents();
     // }
-    /**
-     * @return array
-     */
     public function getFormSchema(): array
     {
         return [
@@ -189,9 +165,6 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         // ->model(auth()->user());
     }
 
-    /**
-     * @return mixed
-     */
     public function updateProfile(): void
     {
         try {
@@ -205,9 +178,6 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         $this->sendSuccessNotification();
     }
 
-    /**
-     * @return mixed
-     */
     public function updatePassword(): void
     {
         try {

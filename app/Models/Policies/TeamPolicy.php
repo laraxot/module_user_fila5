@@ -12,9 +12,6 @@ class TeamPolicy extends UserBasePolicy
     /**
      * Determine whether the user can view any models.
      */
-    /**
-     * @return bool
-     */
     public function viewAny(UserContract $user): bool
     {
         return false;
@@ -22,9 +19,6 @@ class TeamPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can view the model.
-     */
-    /**
-     * @return mixed
      */
     public function view(UserContract $user, Team $team): bool
     {
@@ -34,9 +28,6 @@ class TeamPolicy extends UserBasePolicy
     /**
      * Determine whether the user can create models.
      */
-    /**
-     * @return bool
-     */
     public function create(UserContract $_user): bool
     {
         return true;
@@ -44,9 +35,6 @@ class TeamPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can update the model.
-     */
-    /**
-     * @return mixed
      */
     public function update(UserContract $user, Team $team): bool
     {
@@ -56,9 +44,6 @@ class TeamPolicy extends UserBasePolicy
     /**
      * Determine whether the user can add team members.
      */
-    /**
-     * @return mixed
-     */
     public function addTeamMember(UserContract $user, Team $team): bool
     {
         return $user->ownsTeam($team);
@@ -66,9 +51,6 @@ class TeamPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can update team member permissions.
-     */
-    /**
-     * @return mixed
      */
     public function updateTeamMember(UserContract $user, Team $team): bool
     {
@@ -78,9 +60,6 @@ class TeamPolicy extends UserBasePolicy
     /**
      * Determine whether the user can remove team members.
      */
-    /**
-     * @return mixed
-     */
     public function removeTeamMember(UserContract $user, Team $team): bool
     {
         return $user->ownsTeam($team);
@@ -88,9 +67,6 @@ class TeamPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can delete the model.
-     */
-    /**
-     * @return mixed
      */
     public function delete(UserContract $user, Team $team): bool
     {

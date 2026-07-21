@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Database\Factories;
+namespace Modules\User\database\Factories;
 
 use Modules\User\Models\DeviceProfile;
 

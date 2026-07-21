@@ -10,9 +10,6 @@ use Modules\User\Datas\PasswordData;
 /** @phpstan-ignore trait.unused */
 trait HasPasswordExpiry
 {
-    /**
-     * @return mixed
-     */
     public static function bootHasPasswordExpiry(): void
     {
         $pwd = PasswordData::make();

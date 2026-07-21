@@ -20,9 +20,6 @@ class ListUsers extends BaseListUsers
     protected static string $resource = UserResource::class;
 
     #[\Override]
-    /**
-     * @return array
-     */
     public function getTableColumns(): array
     {
         return [
@@ -53,9 +50,6 @@ class ListUsers extends BaseListUsers
     }
 
     #[\Override]
-    /**
-     * @return array
-     */
     public function getTableActions(): array
     {
         return [

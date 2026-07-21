@@ -11,9 +11,6 @@ final class OtpHashNeedsRehashAction
 {
     use QueueableAction;
 
-    /**
-     * @return void
-     */
     public function __construct(
         private readonly Hasher $hasher,
     ) {

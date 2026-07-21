@@ -9,9 +9,6 @@ use Modules\Xot\Filament\Pages\Tenancy\XotBaseEditTenantProfile;
 
 class EditTeamProfile extends XotBaseEditTenantProfile
 {
-    /**
-     * @return mixed
-     */
     public static function getLabel(): string
     {
         return 'Team profile';

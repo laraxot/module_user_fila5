@@ -46,9 +46,6 @@ class PermissionRole extends BasePivot
      */
     protected $fillable = ['permission_id', 'role_id'];
 
-    /**
-     * @return mixed
-     */
     public function getTable(): string
     {
         Assert::string($table = config('permission.table_names.role_has_permissions'));

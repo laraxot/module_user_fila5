@@ -13,9 +13,6 @@ class DeleteUserAction
 {
     use QueueableAction;
 
-    /**
-     * @return void
-     */
     public function __construct(
         private readonly Hasher $hasher,
         private readonly Guard $authGuard,

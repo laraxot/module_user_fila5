@@ -101,9 +101,6 @@ class Role extends SpatieRole
         'updated_by',
     ];
 
-    /**
-     * @return mixed
-     */
     public function getTable(): string
     {
         Assert::string($table = config('permission.table_names.roles'));

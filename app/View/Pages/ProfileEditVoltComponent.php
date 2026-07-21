@@ -73,9 +73,6 @@ final class ProfileEditVoltComponent extends Component
     /**
      * Mount the component and initialize user data with type safety.
      */
-    /**
-     * @return mixed
-     */
     public function mount(): void
     {
         try {
@@ -123,9 +120,6 @@ final class ProfileEditVoltComponent extends Component
      * Update user profile information with comprehensive validation and error handling.
      *
      * @throws ValidationException
-     */
-    /**
-     * @return mixed
      */
     public function updateProfile(): void
     {
@@ -250,9 +244,6 @@ final class ProfileEditVoltComponent extends Component
     /**
      * Update user password with comprehensive security validation.
      */
-    /**
-     * @return mixed
-     */
     public function updatePassword(): void
     {
         try {
@@ -343,9 +334,6 @@ final class ProfileEditVoltComponent extends Component
 
     /**
      * Delete user account with comprehensive security validation and cleanup.
-     */
-    /**
-     * @return mixed
      */
     public function deleteAccount(): RedirectResponse
     {
@@ -438,9 +426,6 @@ final class ProfileEditVoltComponent extends Component
 
     /**
      * Clear all password fields for security.
-     */
-    /**
-     * @return mixed
      */
     public function clearPasswords(): void
     {

@@ -66,9 +66,6 @@ final class ChangePasswordHeaderAction extends XotBaseAction
             });
     }
 
-    /**
-     * @return mixed
-     */
     public static function getDefaultName(): string
     {
         return 'changePassword';

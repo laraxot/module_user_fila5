@@ -27,7 +27,6 @@ class Logout extends Component
 
     /**
      * Esegui logout, invalidazione sessione e redirect.
-      * @return mixed
      */
     public function mount(): ?RedirectResponse
     {
@@ -75,9 +74,6 @@ class Logout extends Component
 
     /**
      * Renderizza il componente.
-     */
-    /**
-     * @return mixed
      */
     public function render(): View
     {

@@ -49,9 +49,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  */
 final class Extra extends BaseExtra
 {
-    /**
-     * @return mixed
-     */
     public function getConnectionName(): string
     {
         return 'user';

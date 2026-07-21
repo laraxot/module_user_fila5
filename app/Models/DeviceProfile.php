@@ -35,7 +35,6 @@ class DeviceProfile extends DeviceUser
      * Create a new model instance.
      *
      * @param array<string, mixed> $attributes
-      * @return void
      */
     public function __construct(array $attributes = [])
     {

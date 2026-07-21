@@ -15,9 +15,6 @@ class RegenerateClientSecretAction
 {
     use QueueableAction;
 
-    /**
-     * @return void
-     */
     public function __construct(
         private readonly OauthClient $oauthClientModel,
         private readonly Str $stringHelper,

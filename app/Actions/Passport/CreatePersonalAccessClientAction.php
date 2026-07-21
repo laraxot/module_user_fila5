@@ -18,9 +18,6 @@ class CreatePersonalAccessClientAction
 {
     use QueueableAction;
 
-    /**
-     * @return mixed
-     */
     public function execute(
         string $name,
         string $redirect,

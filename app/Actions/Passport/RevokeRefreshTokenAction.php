@@ -14,9 +14,6 @@ class RevokeRefreshTokenAction
 {
     use QueueableAction;
 
-    /**
-     * @return void
-     */
     public function __construct(
         private readonly OauthRefreshToken $refreshTokenModel,
     ) {

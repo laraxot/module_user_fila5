@@ -12,9 +12,6 @@ class MembershipPolicy extends UserBasePolicy
     /**
      * Determine whether the user can view any models.
      */
-    /**
-     * @return mixed
-     */
     public function viewAny(UserContract $user): bool
     {
         return $user->hasPermissionTo('membership.view.any');
@@ -22,9 +19,6 @@ class MembershipPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can view the model.
-     */
-    /**
-     * @return mixed
      */
     public function view(UserContract $user, Membership $membership): bool
     {
@@ -36,9 +30,6 @@ class MembershipPolicy extends UserBasePolicy
     /**
      * Determine whether the user can create models.
      */
-    /**
-     * @return mixed
-     */
     public function create(UserContract $user): bool
     {
         return $user->hasPermissionTo('membership.create');
@@ -46,9 +37,6 @@ class MembershipPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can update the model.
-     */
-    /**
-     * @return mixed
      */
     public function update(UserContract $user, Membership $_membership): bool
     {
@@ -58,9 +46,6 @@ class MembershipPolicy extends UserBasePolicy
     /**
      * Determine whether the user can delete the model.
      */
-    /**
-     * @return mixed
-     */
     public function delete(UserContract $user, Membership $_membership): bool
     {
         return $user->hasPermissionTo('membership.delete') || $user->hasRole('super-admin');
@@ -69,9 +54,6 @@ class MembershipPolicy extends UserBasePolicy
     /**
      * Determine whether the user can restore the model.
      */
-    /**
-     * @return mixed
-     */
     public function restore(UserContract $user, Membership $_membership): bool
     {
         return $user->hasPermissionTo('membership.restore') || $user->hasRole('super-admin');
@@ -79,9 +61,6 @@ class MembershipPolicy extends UserBasePolicy
 
     /**
      * Determine whether the user can permanently delete the model.
-     */
-    /**
-     * @return mixed
      */
     public function forceDelete(UserContract $user, Membership $membership): bool
     {

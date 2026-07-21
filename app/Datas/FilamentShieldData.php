@@ -18,9 +18,6 @@ class FilamentShieldData extends Data
 
     public FilamentUserData $filament_user;
 
-    /**
-     * @return mixed
-     */
     public static function make(): self
     {
         Assert::isArray($xot = config('filament-shield'), 'check config [filament-shield] ');

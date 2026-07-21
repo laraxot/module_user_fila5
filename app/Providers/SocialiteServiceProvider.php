@@ -15,9 +15,6 @@ class SocialiteServiceProvider extends BaseSocialiteServiceProvider
     /**
      * Register the provider services.
      */
-    /**
-     * @return mixed
-     */
     public function register(): void
     {
         parent::register();
@@ -28,9 +25,6 @@ class SocialiteServiceProvider extends BaseSocialiteServiceProvider
 
     /**
      * Bootstrap the provider services.
-     */
-    /**
-     * @return mixed
      */
     public function boot(): void
     {

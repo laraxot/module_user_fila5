@@ -26,9 +26,6 @@ class EditRole extends XotBaseEditRecord
     /**
      *  ---.
      */
-    /**
-     * @return mixed
-     */
     public function afterSave(): void
     {
         $permissionModels = collect();

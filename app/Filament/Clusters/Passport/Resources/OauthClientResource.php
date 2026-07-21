@@ -57,9 +57,6 @@ class OauthClientResource extends XotBaseResource
     /**
      * Build the table for the resource.
      */
-    /**
-     * @return mixed
-     */
     public static function table(Table $table): Table
     {
         return $table

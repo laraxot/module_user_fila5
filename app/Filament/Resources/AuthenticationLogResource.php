@@ -21,9 +21,6 @@ class AuthenticationLogResource extends XotBaseResource
 {
     protected static ?string $model = AuthenticationLog::class;
 
-    /**
-     * @return array
-     */
     public static function getPages(): array
     {
         return [
@@ -80,9 +77,6 @@ class AuthenticationLogResource extends XotBaseResource
         ];
     }
 
-    /**
-     * @return mixed
-     */
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['authenticatable']);

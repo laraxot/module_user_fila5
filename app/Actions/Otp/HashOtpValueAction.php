@@ -11,9 +11,6 @@ final class HashOtpValueAction
 {
     use QueueableAction;
 
-    /**
-     * @return void
-     */
     public function __construct(
         private readonly Hasher $hasher,
     ) {

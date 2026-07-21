@@ -17,9 +17,6 @@ class IsRegistrationEnabledAction
     /**
      * Execute the action.
      */
-    /**
-     * @return mixed
-     */
     public function execute(): bool
     {
         return (bool) config('socialite.registration', true);

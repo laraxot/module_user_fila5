@@ -55,9 +55,6 @@ class OauthClientResource extends XotBaseResource
     /**
      * Configure the model query.
      */
-    /**
-     * @return mixed
-     */
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['user']);

@@ -19,9 +19,6 @@ class OtherDeviceLogoutListener
 {
     protected Request $request;
 
-    /**
-     * @return void
-     */
     public function __construct(Request $request)
     {
         $this->request = $request;
@@ -61,9 +58,6 @@ class OtherDeviceLogoutListener
 
     /**
      * Handle the event.
-     */
-    /**
-     * @return mixed
      */
     public function handleLogin(Login $event): void
     {

@@ -34,9 +34,6 @@ class PassportDashboard extends XotBasePage
 
     protected string $view = 'user::filament.pages.passport-dashboard';
 
-    /**
-     * @return mixed
-     */
     public function executeCommand(string $command): void
     {
         $this->reset(['output', 'status']);
@@ -57,35 +54,23 @@ class PassportDashboard extends XotBasePage
     }
 
     #[On('artisan-command.started')]
-    /**
-     * @return mixed
-     */
     public function handleCommandStarted(string $command): void
     {
         $this->isRunning = true;
     }
 
     #[On('artisan-command.output')]
-    /**
-     * @return mixed
-     */
     public function handleCommandOutput(string $command, string $output): void
     {
         $this->output[] = $output;
         $this->dispatch('terminal-update');
     }
 
-    /**
-     * @return mixed
-     */
     public function mount(): void
     {
         $this->checkKeys();
     }
 
-    /**
-     * @return mixed
-     */
     public function checkKeys(): void
     {
         $this->hasPublicKey = file_exists(storage_path('oauth-public.key'));
@@ -93,9 +78,6 @@ class PassportDashboard extends XotBasePage
     }
 
     #[On('artisan-command.completed')]
-    /**
-     * @return mixed
-     */
     public function onCommandCompleted(string $command): void
     {
         if ($this->currentCommand === $command) {
@@ -111,9 +93,6 @@ class PassportDashboard extends XotBasePage
     }
 
     #[On('artisan-command.failed')]
-    /**
-     * @return mixed
-     */
     public function handleCommandFailed(string $command, string $error): void
     {
         $this->status = 'failed';
@@ -128,9 +107,6 @@ class PassportDashboard extends XotBasePage
     }
 
     #[On('artisan-command.error')]
-    /**
-     * @return mixed
-     */
     public function handleCommandError(string $command, string $error): void
     {
         $this->status = 'failed';

@@ -19,9 +19,6 @@ class SuperAdminCommand extends Command
 
     protected $description = 'Assign super-admin to user';
 
-    /**
-     * @return mixed
-     */
     public function handle(): int
     {
         $email = $this->resolveEmail();

@@ -57,9 +57,6 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Define the table for the resource.
      */
-    /**
-     * @return mixed
-     */
     public static function table(Table $table): Table
     {
         return $table
@@ -154,9 +151,6 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
 
     /**
      * Configure the model query.
-     */
-    /**
-     * @return mixed
      */
     public static function getEloquentQuery(): Builder
     {

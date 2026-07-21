@@ -38,9 +38,6 @@ class Register extends Component implements HasSchemas
     /**
      * Mount the component.
      */
-    /**
-     * @return mixed
-     */
     public function mount(): void
     {
         $this->form->fill();
@@ -48,9 +45,6 @@ class Register extends Component implements HasSchemas
 
     /**
      * Define the form schema.
-     */
-    /**
-     * @return mixed
      */
     public function form(Schema $schema): Schema
     {
@@ -80,9 +74,6 @@ class Register extends Component implements HasSchemas
     /**
      * Execute the action.
      */
-    /**
-     * @return mixed
-     */
     public function register(): RedirectResponse|Redirector
     {
         $data = $this->form->getState();
@@ -109,9 +100,6 @@ class Register extends Component implements HasSchemas
      *
      * In Livewire components, the render method ultimately returns a view,
      * but it's processed through Livewire's component system.
-     */
-    /**
-     * @return mixed
      */
     public function render(): mixed
     {

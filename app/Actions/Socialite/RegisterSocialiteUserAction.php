@@ -26,9 +26,6 @@ class RegisterSocialiteUserAction
     /**
      * Execute the action.
      */
-    /**
-     * @return mixed
-     */
     public function execute(string $provider, SocialiteUserContract $oauthUser, UserContract $user): SocialiteUser
     {
         // Create a new SocialiteUser instance

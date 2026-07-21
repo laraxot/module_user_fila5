@@ -15,9 +15,6 @@ class DeleteAccount extends Component
 {
     public string $delete_confirm_password = '';
 
-    /**
-     * @return mixed
-     */
     public function render(): View
     {
         /** @var view-string $viewName */
@@ -26,9 +23,6 @@ class DeleteAccount extends Component
         return view($viewName);
     }
 
-    /**
-     * @return mixed
-     */
     public function destroy(): void
     {
         /** @var User|null $user */

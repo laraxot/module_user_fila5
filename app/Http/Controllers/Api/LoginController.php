@@ -20,9 +20,6 @@ class LoginController extends XotBaseController
     /**
      * Login api.
      */
-    /**
-     * @return mixed
-     */
     public function __invoke(Request $request): JsonResponse
     {
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {

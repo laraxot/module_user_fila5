@@ -32,9 +32,6 @@ class LogoutWidget extends XotBaseSchemaWidget
     /**
      * Mount the widget and initialize the form.
      */
-    /**
-     * @return mixed
-     */
     public function mount(): void
     {
         $this->form->fill();

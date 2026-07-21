@@ -17,8 +17,5 @@ interface UpdatesUserPasswords
     /**
      * @param array<string, mixed> $input
      */
-    /**
-     * @return mixed
-     */
     public function update(UserContract $userContract, array $input): void;
 }

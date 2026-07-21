@@ -67,27 +67,18 @@ class PasswordResetWidget extends XotBaseSchemaWidget
         }
     }
 
-    /**
-     * @return mixed
-     */
     public function resetForm(): void
     {
         $this->emailSent = false;
         $this->form->fill();
     }
 
-    /**
-     * @return mixed
-     */
     public function sendAnotherLink(): void
     {
         $this->emailSent = false;
         $this->form->fill(['email' => '']);
     }
 
-    /**
-     * @return mixed
-     */
     public function checkEmailStatus(): void
     {
         $this->redirect(route('login'));

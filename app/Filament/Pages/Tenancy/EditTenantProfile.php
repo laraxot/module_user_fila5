@@ -11,17 +11,11 @@ use Webmozart\Assert\Assert;
 
 class EditTenantProfile extends XotBaseEditTenantProfile
 {
-    /**
-     * @return mixed
-     */
     public static function getLabel(): string
     {
         return __('user::tenancy.navigation.edit');
     }
 
-    /**
-     * @return mixed
-     */
     public function schema(Schema $schema): Schema
     {
         $resource = XotData::make()->getTenantResourceClass();

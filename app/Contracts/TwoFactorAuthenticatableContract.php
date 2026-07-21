@@ -18,14 +18,8 @@ interface TwoFactorAuthenticatableContract
     /**
      * Determine if two-factor authentication has been enabled.
      */
-    /**
-     * @return mixed
-     */
     public function hasEnabledTwoFactorAuthentication(): bool;
 
-    /**
-     * @return mixed
-     */
     public function hasConfirmedTwoFactorAuthentication(): bool;
 
     /**
@@ -47,9 +41,6 @@ interface TwoFactorAuthenticatableContract
 
     /**
      * Get the two factor authentication QR code URL.
-     */
-    /**
-     * @return mixed
      */
     public function twoFactorQrCodeUrl(): string;
 }

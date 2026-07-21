@@ -59,9 +59,6 @@ class OauthRefreshTokenResource extends XotBaseResource
         ];
     }
 
-    /**
-     * @return mixed
-     */
     public static function table(Table $table): Table
     {
         return $table

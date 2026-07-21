@@ -22,9 +22,6 @@ class EnsureUserHasRole
      *
      * @param \Closure(Request):Response $next
      */
-    /**
-     * @return mixed
-     */
     public function handle(Request $request, \Closure $next, string $role): Response
     {
         $user = $request->user();

@@ -17,9 +17,6 @@ class UserDropdown extends XotBaseSchemaWidget
     /**
      * Handle user logout.
      */
-    /**
-     * @return mixed
-     */
     public function logout(): void
     {
         Auth::guard('web')->logout();
@@ -32,9 +29,6 @@ class UserDropdown extends XotBaseSchemaWidget
     /**
      * Get the form schema.
      * Required by XotBaseWidget but not used for this simple dropdown.
-     */
-    /**
-     * @return array
      */
     public function getFormSchema(): array
     {
