@@ -136,3 +136,4 @@ docs/**/workbench/
 docs/**/scripts/
 docs/**/bashscripts/
 resources/views/node_modules
+database/migrations/_legacy
