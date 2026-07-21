@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\Shield;
 
-use BezhanSalleh\FilamentShield\Traits\HasPanelShield;
 use Spatie\Permission\Traits\HasRoles;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -63,7 +62,6 @@ class ResolveShieldAuthenticationConfigurationAction
             return false;
         }
 
-        return \in_array(HasPanelShield::class, $classUses, strict: true)
-            || \in_array(HasRoles::class, $classUses, strict: true);
+        return \in_array(HasRoles::class, $classUses, strict: true);
     }
 }
