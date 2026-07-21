@@ -59,14 +59,11 @@ class ResolveShieldAuthenticationConfigurationAction
 
         $classUses = class_uses($fqcn);
 
-        if (! is_array($classUses)) {
+        if ($classUses === []) {
             return false;
         }
 
-        return \in_array(
-            "BezhanSalleh\FilamentShield\Traits\HasFilamentShield",
-            $classUses,
-            strict: true
-        ) || \in_array("Spatie\Permission\Traits\HasRoles", $classUses, strict: true);
+        return \in_array(HasPanelShield::class, $classUses, strict: true)
+            || \in_array(HasRoles::class, $classUses, strict: true);
     }
 }
