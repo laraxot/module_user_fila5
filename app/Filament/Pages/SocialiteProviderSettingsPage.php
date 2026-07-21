@@ -61,9 +61,12 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Mount the page and load current configuration.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function mount(): void
     {
         $this->loadProviderConfigs();
@@ -72,9 +75,12 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Define the form schema for provider configuration.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function form(Schema $schema): Schema
     {
         return $schema
@@ -176,9 +182,12 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Save the configuration to secure file.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function save(): void
     {
         $data = $this->data;

@@ -27,9 +27,12 @@ class Logo extends XotBasePage
 
     protected static ?int $navigationSort = 1;
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function mount(): void
     {
         $this->fillForms();
@@ -42,9 +45,12 @@ class Logo extends XotBasePage
     //    ];
     // }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function schema(Schema $schema): Schema
     {
         return $schema
@@ -62,9 +68,12 @@ class Logo extends XotBasePage
             ->statePath('logoData');
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function updateLogo(): void
     {
         try {

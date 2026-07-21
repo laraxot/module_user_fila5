@@ -12,9 +12,12 @@ final class EmailDomainAnalyzer
 {
     private User $ssoUser;
 
+<<<<<<< HEAD
     /**
      * @return void
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function __construct(
         private readonly string $ssoProvider,
     ) {
@@ -33,17 +36,23 @@ final class EmailDomainAnalyzer
         return $this;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function hasUnrecognizedDomain(): bool
     {
         return ! $this->hasFirstPartyDomain() && ! $this->hasClientDomain();
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function hasFirstPartyDomain(): bool
     {
         if (! isset($this->ssoUser)) {
@@ -66,9 +75,12 @@ final class EmailDomainAnalyzer
         return $emailDomain === $configDomain;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function hasClientDomain(): bool
     {
         if (! isset($this->ssoUser)) {

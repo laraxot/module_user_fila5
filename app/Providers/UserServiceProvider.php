@@ -38,9 +38,12 @@ class UserServiceProvider extends XotBaseServiceProvider
     protected string $module_ns = __NAMESPACE__;
 
     #[\Override]
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function boot(): void
     {
         parent::boot();
@@ -53,9 +56,12 @@ class UserServiceProvider extends XotBaseServiceProvider
     }
 
     #[\Override]
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function register(): void
     {
         parent::register();
@@ -103,9 +109,12 @@ class UserServiceProvider extends XotBaseServiceProvider
         }
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function registerMailsNotification(): void
     {
         $app_name = config('app.name');
@@ -196,18 +205,24 @@ class UserServiceProvider extends XotBaseServiceProvider
         });
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function registerPulse(): void
     {
         Config::set('pulse.path', 'pulse/admin');
         Gate::define('viewPulse', fn (UserContract $user): bool => $user->hasRole('super-admin'));
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function registerPasswordRules(): void
     {
         Password::defaults(function (): Password {

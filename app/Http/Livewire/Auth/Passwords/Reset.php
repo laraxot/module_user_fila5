@@ -32,9 +32,12 @@ class Reset extends Component
 
     public string $passwordConfirmation = '';
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function mount(string $token): void
     {
         Assert::string($email = request()->query('email', ''));
@@ -45,9 +48,12 @@ class Reset extends Component
     /**
      * Reimposta la password dell'utente.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function resetPassword(): Redirector|RedirectResponse|null
     {
         $messages = __('user::validation');
@@ -92,17 +98,23 @@ class Reset extends Component
     /**
      * Get the broker to be used during password reset.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function broker(): PasswordBroker
     {
         return Password::broker();
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function render(): View|Factory
     {
         app(ViewCopyAction::class)

@@ -25,9 +25,12 @@ class LoginUserAction
     /**
      * Execute the action.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function execute(SocialiteUser $socialiteUser): RedirectResponse
     {
         Assert::notNull($user = $socialiteUser->user, '['.__FILE__.']['.__LINE__.']');

@@ -20,9 +20,12 @@ class RedirectToProviderController extends Controller
     /**
      * Undocumented function.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function __invoke(Request $_request, string $provider): RedirectResponse
     {
         // if (! app(IsProviderConfiguredAction::class)->execute($provider)) {

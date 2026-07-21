@@ -32,9 +32,12 @@ class AssignTeamCommand extends Command
     /**
      * Execute the console command.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function handle(): void
     {
         $xot = XotData::make();

@@ -28,9 +28,12 @@ class ViewUser extends BaseViewUser
 
     protected bool $persistsFiltersInSession = true;
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function filtersForm(Schema $schema): Schema
     {
         return $schema

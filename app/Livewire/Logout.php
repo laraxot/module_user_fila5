@@ -21,8 +21,11 @@ class Logout extends Component
 
     /**
      * Handle user logout process.
+<<<<<<< HEAD
      *
      * @return mixed
+=======
+>>>>>>> d33e3c69 (.)
      */
     public function logout(): ?RedirectResponse
     {
@@ -45,9 +48,12 @@ class Logout extends Component
     /**
      * Render the logout component view.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function render(): View
     {
         return view('user::livewire.logout');

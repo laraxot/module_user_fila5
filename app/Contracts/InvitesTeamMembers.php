@@ -14,9 +14,12 @@ use Modules\Xot\Contracts\UserContract;
  */
 interface InvitesTeamMembers
 {
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function invite(
         UserContract $userContract,
         TeamContract $teamContract,

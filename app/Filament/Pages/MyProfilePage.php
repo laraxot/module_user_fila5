@@ -48,17 +48,23 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     //     return filament('filament-breezy')->slug();
     // }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function mount(): void
     {
         $this->fillForms();
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function editProfileForm(Schema $schema): Schema
     {
         return $schema
@@ -78,9 +84,12 @@ class MyProfilePage extends XotBasePage implements HasSchemas
             ->statePath('profileData');
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function editPasswordForm(Schema $schema): Schema
     {
         return $schema
@@ -122,9 +131,12 @@ class MyProfilePage extends XotBasePage implements HasSchemas
             ->statePath('passwordData');
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getUser(): Authenticatable&Model
     {
         $user = Filament::auth()->user();
@@ -136,25 +148,34 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         return $user;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getTitle(): string
     {
         return __('user::profile.my_profile');
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getHeading(): string
     {
         return __('user::profile.my_profile');
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getSubheading(): ?string
     {
         return __('user::profile.subheading') ?? null;
@@ -186,9 +207,12 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         // ->model(auth()->user());
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function updateProfile(): void
     {
         try {
@@ -202,9 +226,12 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         $this->sendSuccessNotification();
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function updatePassword(): void
     {
         try {

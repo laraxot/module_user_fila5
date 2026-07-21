@@ -12,9 +12,12 @@ abstract class BaseAuthWidget extends XotBaseWidget
     /** @var array<string, mixed>|null */
     public ?array $data = [];
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function mount(): void
     {
         if (Auth::check()) {

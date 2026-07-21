@@ -43,9 +43,12 @@ class UserPolicy extends UserBasePolicy
     /**
      * Determine whether the user can delete the model.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function delete(Post $_user, Post $_post): bool
     {
         // return $user->ownsTeam($team);
@@ -55,9 +58,12 @@ class UserPolicy extends UserBasePolicy
     /**
      * Determine whether the user can delete the model.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function superadmin(Post $_user, Post $_post): bool
     {
         // return $user->ownsTeam($team);

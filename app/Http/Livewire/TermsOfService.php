@@ -14,9 +14,12 @@ class TermsOfService extends Component
     /**
      * Show the terms of service for the application.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function render(): View
     {
         // $this->accepted = true;
@@ -30,9 +33,12 @@ class TermsOfService extends Component
         ]);
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function testfunction(): void
     {
         dddx('wip');

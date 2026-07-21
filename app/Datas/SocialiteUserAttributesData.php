@@ -8,9 +8,12 @@ use Spatie\LaravelData\Data;
 
 class SocialiteUserAttributesData extends Data
 {
+<<<<<<< HEAD
     /**
      * @return void
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function __construct(
         public string $name,
         public string $firstName,

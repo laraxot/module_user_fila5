@@ -21,9 +21,12 @@ class FetchUserApiTokenCommand extends Command
 
     protected $description = 'Fetches an OAuth Token to be able to test APIs';
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function handle(): int
     {
         if (app()->isProduction()) {

@@ -34,9 +34,12 @@ class RegisterController extends XotBaseController
     /**
      * Register api.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function __invoke(Request $request): JsonResponse
     {
         $success = [];

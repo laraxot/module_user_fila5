@@ -71,9 +71,12 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
     /**
      * Get the reset password form action.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getResetPasswordFormAction(): Action
     {
         return Action::make('resetPassword')->submit('resetPassword');
@@ -89,8 +92,11 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
 
     /**
      * Reset the user's password.
+<<<<<<< HEAD
      *
      * @return mixed
+=======
+>>>>>>> d33e3c69 (.)
      */
     public function resetPassword(): ?PasswordResetResponse
     {

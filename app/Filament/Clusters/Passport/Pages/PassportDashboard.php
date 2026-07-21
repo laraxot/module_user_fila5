@@ -34,9 +34,12 @@ class PassportDashboard extends XotBasePage
 
     protected string $view = 'user::filament.pages.passport-dashboard';
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function executeCommand(string $command): void
     {
         $this->reset(['output', 'status']);
@@ -57,35 +60,47 @@ class PassportDashboard extends XotBasePage
     }
 
     #[On('artisan-command.started')]
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function handleCommandStarted(string $command): void
     {
         $this->isRunning = true;
     }
 
     #[On('artisan-command.output')]
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function handleCommandOutput(string $command, string $output): void
     {
         $this->output[] = $output;
         $this->dispatch('terminal-update');
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function mount(): void
     {
         $this->checkKeys();
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function checkKeys(): void
     {
         $this->hasPublicKey = file_exists(storage_path('oauth-public.key'));
@@ -93,9 +108,12 @@ class PassportDashboard extends XotBasePage
     }
 
     #[On('artisan-command.completed')]
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function onCommandCompleted(string $command): void
     {
         if ($this->currentCommand === $command) {
@@ -111,9 +129,12 @@ class PassportDashboard extends XotBasePage
     }
 
     #[On('artisan-command.failed')]
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function handleCommandFailed(string $command, string $error): void
     {
         $this->status = 'failed';
@@ -128,9 +149,12 @@ class PassportDashboard extends XotBasePage
     }
 
     #[On('artisan-command.error')]
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function handleCommandError(string $command, string $error): void
     {
         $this->status = 'failed';

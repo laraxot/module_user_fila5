@@ -18,9 +18,12 @@ final class ResolveUserNameFieldsFromSocialiteAction
 
     private const SURNAME_SEARCH = 'after';
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function execute(User $oauthUser): SocialiteNameFieldsData
     {
         $name = $this->resolveName($oauthUser);

@@ -25,8 +25,11 @@ class CreateUserAction
 
     /**
      * @param array<string, mixed>|null $data
+<<<<<<< HEAD
      *
      * @return void
+=======
+>>>>>>> d33e3c69 (.)
      */
     public function __construct(
         protected string $name,
@@ -44,9 +47,12 @@ class CreateUserAction
         }
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function handle(): User
     {
         /** @var array<string, mixed> $attributes */

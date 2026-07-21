@@ -31,9 +31,12 @@ class Colors extends XotBasePage
 
     protected static ?int $navigationSort = 3;
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function mount(): void
     {
         $this->fillForms();
@@ -46,9 +49,12 @@ class Colors extends XotBasePage
     //    ];
     // }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function schema(Schema $schema): Schema
     {
         return $schema
@@ -68,9 +74,12 @@ class Colors extends XotBasePage
             ->statePath('data');
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function updateData(): void
     {
         try {

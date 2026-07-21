@@ -62,9 +62,12 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
         }
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function confirmPasswordReset(): void
     {
         if ('form' !== $this->currentState) {
@@ -117,9 +120,12 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
         }
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function resetForm(): void
     {
         $this->currentState = 'form';
@@ -127,17 +133,23 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
         $this->form->fill(['email' => $this->email ?? '']);
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getCurrentState(): string
     {
         return $this->currentState;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getErrorMessage(): ?string
     {
         return $this->errorMessage;
@@ -153,17 +165,23 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
         return 'loading' === $this->currentState;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function isSuccess(): bool
     {
         return 'success' === $this->currentState;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function hasError(): bool
     {
         return 'error' === $this->currentState;

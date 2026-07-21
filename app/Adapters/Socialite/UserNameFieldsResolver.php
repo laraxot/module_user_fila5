@@ -23,9 +23,12 @@ final readonly class UserNameFieldsResolver
 
     public ?string $lastName;
 
+<<<<<<< HEAD
     /**
      * @return void
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function __construct(User $user)
     {
         $this->name = $this->resolveName($user);

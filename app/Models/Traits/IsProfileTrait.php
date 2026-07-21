@@ -188,9 +188,12 @@ trait IsProfileTrait
      *
      * @throws \Exception Se l'utente non è disponibile
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function toggleSuperAdmin(): void
     {
         $user = $this->user;

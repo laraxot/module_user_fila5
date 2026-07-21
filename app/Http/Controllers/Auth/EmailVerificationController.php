@@ -30,9 +30,12 @@ use Modules\User\Http\Controllers\Controller;
 
 class EmailVerificationController extends Controller
 {
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function __invoke(string $id, string $hash): RedirectResponse
     {
         $user = Auth::user();

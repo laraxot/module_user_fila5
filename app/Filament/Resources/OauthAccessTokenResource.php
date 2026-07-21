@@ -33,33 +33,45 @@ class OauthAccessTokenResource extends XotBaseResource
 
     protected static ?int $navigationSort = 5;
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getNavigationLabel(): string
     {
         return __('OAuth Access Tokens');
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getPluralLabel(): string
     {
         return __('OAuth Access Tokens');
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getModelLabel(): string
     {
         return __('OAuth Access Token');
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function table(Table $table): Table
     {
         return $table
@@ -189,9 +201,12 @@ class OauthAccessTokenResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['user', 'client']);

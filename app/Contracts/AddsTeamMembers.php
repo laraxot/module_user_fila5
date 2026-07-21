@@ -14,9 +14,12 @@ use Modules\Xot\Contracts\UserContract;
  */
 interface AddsTeamMembers
 {
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function add(
         UserContract $userContract,
         TeamContract $teamContract,

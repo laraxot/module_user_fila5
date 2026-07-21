@@ -10,9 +10,12 @@ use Illuminate\Routing\Redirector;
 
 class PasswordResetResponse implements Responsable
 {
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function toResponse($request): RedirectResponse|Redirector
     {
         // Assert::string($path = config('password-expiry.after_password_reset_redirect') ?: Filament::getLoginUrl());

@@ -14,9 +14,12 @@ use Illuminate\Support\Facades\Auth;
  */
 final class LogoutAction
 {
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function __invoke(): RedirectResponse
     {
         Auth::logout();

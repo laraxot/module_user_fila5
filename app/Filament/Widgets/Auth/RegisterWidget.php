@@ -49,9 +49,12 @@ class RegisterWidget extends XotBaseSchemaWidget
         return 'getRegisterFormSchema';
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function canView(): bool
     {
         return ! Auth::check();
@@ -60,17 +63,23 @@ class RegisterWidget extends XotBaseSchemaWidget
     /**
      * Compat: il template tema usa `wire:submit="save"`.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function save(): void
     {
         $this->submit();
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function submit(): void
     {
         /** @var array<string, mixed> $data */

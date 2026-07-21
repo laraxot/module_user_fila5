@@ -25,9 +25,12 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
 
     public int $unreadCount = 0;
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function mount(): void
     {
         $this->refreshNotifications();
@@ -54,9 +57,12 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
         $this->refreshNotifications();
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function markAllAsRead(): void
     {
         $user = $this->authUser();

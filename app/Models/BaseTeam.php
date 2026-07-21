@@ -215,9 +215,12 @@ abstract class BaseTeam extends BaseModel implements TeamContract
      * @param UserContract $userContract L'utente da rimuovere dal team
      */
     #[\Override]
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function removeUser(UserContract $userContract): void
     {
         if ($userContract->current_team_id === $this->id) {
@@ -233,9 +236,12 @@ abstract class BaseTeam extends BaseModel implements TeamContract
      * Rimuove tutte le risorse del team.
      */
     #[\Override]
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function purge(): void
     {
         $this->owner()->where('current_team_id', $this->id)->update(['current_team_id' => null]);

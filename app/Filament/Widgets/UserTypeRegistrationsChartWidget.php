@@ -21,9 +21,12 @@ final class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
     protected static bool $isLazy = true;
 
     #[\Override]
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getHeading(): string
     {
         return self::transClass($this->model, 'widgets.user_type_registrations_chart.heading');

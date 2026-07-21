@@ -81,9 +81,12 @@ interface TeamContract extends ModelContract
     /**
      * Determine if the given user has the given permission on the team.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function userHasPermission(UserContract $userContract, string $permission): bool;
 
     /**

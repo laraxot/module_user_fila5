@@ -14,9 +14,12 @@ class PasswordExpiryMiddleware
     /**
      * @param \Closure(Request):((Response|RedirectResponse)) $next
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function handle(Request $request, \Closure $next): Response|RedirectResponse
     {
         if ($request->routeIs('password.change') || $request->routeIs('password.update')) {
@@ -34,9 +37,12 @@ class PasswordExpiryMiddleware
         return $next($request);
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getPasswordExpiryRoute(): string
     {
         return 'errors.password-expired';

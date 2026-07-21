@@ -56,9 +56,12 @@ final class TenantUserResource extends XotBaseResource
     /**
      * Configure the model query.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['tenant', 'user']);

@@ -41,9 +41,12 @@ class Login extends Component implements HasActions, HasForms
     /**
      * Inizializza il componente.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function mount(): void
     {
         $this->form->fill();
@@ -52,9 +55,12 @@ class Login extends Component implements HasActions, HasForms
     /**
      * Crea il form schema.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function form(Schema $schema): Schema
     {
         return $schema
@@ -96,9 +102,12 @@ class Login extends Component implements HasActions, HasForms
     /**
      * Renderizza il componente.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function render(): View|Factory
     {
         /** @var view-string $viewName */

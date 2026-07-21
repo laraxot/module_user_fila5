@@ -32,9 +32,12 @@ class RegistrationWidget extends XotBaseSchemaWidget
 
     protected int|string|array $columnSpan = 'full';
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function mount(string $type = ''): void
     {
         parent::mount();
@@ -61,9 +64,12 @@ class RegistrationWidget extends XotBaseSchemaWidget
         $this->record = $record;
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function getFormModel(): Model
     {
         $data = request()->all();

@@ -8,9 +8,12 @@ use Illuminate\Contracts\Hashing\Hasher as BaseHasher;
 
 class Hasher
 {
+<<<<<<< HEAD
     /**
      * @return void
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function __construct(
         private readonly BaseHasher $hasher,
     ) {
@@ -26,9 +29,12 @@ class Hasher
         return $this->hasher->check($value, $hashedValue);
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function needsRehash(string $hashedValue): bool
     {
         return $this->hasher->needsRehash($hashedValue);

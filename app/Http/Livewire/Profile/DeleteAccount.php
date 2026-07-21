@@ -15,9 +15,12 @@ class DeleteAccount extends Component
 {
     public string $delete_confirm_password = '';
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function render(): View
     {
         /** @var view-string $viewName */
@@ -26,9 +29,12 @@ class DeleteAccount extends Component
         return view($viewName);
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function destroy(): void
     {
         /** @var User|null $user */

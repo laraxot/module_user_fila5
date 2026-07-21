@@ -27,9 +27,12 @@ class PassportInstallCommand extends Command
     /**
      * Execute the console command.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function handle(): int
     {
         $this->info('Installing Laravel Passport...');

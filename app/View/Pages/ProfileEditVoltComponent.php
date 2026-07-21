@@ -73,9 +73,12 @@ final class ProfileEditVoltComponent extends Component
     /**
      * Mount the component and initialize user data with type safety.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function mount(): void
     {
         try {
@@ -124,9 +127,12 @@ final class ProfileEditVoltComponent extends Component
      *
      * @throws ValidationException
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function updateProfile(): void
     {
         try {
@@ -250,9 +256,12 @@ final class ProfileEditVoltComponent extends Component
     /**
      * Update user password with comprehensive security validation.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function updatePassword(): void
     {
         try {
@@ -344,9 +353,12 @@ final class ProfileEditVoltComponent extends Component
     /**
      * Delete user account with comprehensive security validation and cleanup.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function deleteAccount(): RedirectResponse
     {
         try {
@@ -439,9 +451,12 @@ final class ProfileEditVoltComponent extends Component
     /**
      * Clear all password fields for security.
      */
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function clearPasswords(): void
     {
         $this->reset(['current_password', 'password', 'password_confirmation', 'delete_password']);

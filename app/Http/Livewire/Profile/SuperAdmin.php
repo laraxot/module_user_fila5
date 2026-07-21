@@ -17,18 +17,24 @@ class SuperAdmin extends Component
 
     public ProfileContract $profile;
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function mount(): void
     {
         $this->profile = XotData::make()->getProfileModel();
         $this->url = url()->current();
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function toggleSuperAdmin(): RedirectResponse|Redirector
     {
         $this->profile->toggleSuperAdmin();
@@ -36,9 +42,12 @@ class SuperAdmin extends Component
         return redirect($this->url, 303);
     }
 
+<<<<<<< HEAD
     /**
      * @return mixed
      */
+=======
+>>>>>>> d33e3c69 (.)
     public function render(): View
     {
         /** @var view-string $viewName */
