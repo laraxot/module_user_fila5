@@ -47,3 +47,10 @@ Seguire sync multi-org e mantenere docs allineate alla story.
 
 - `laraxot/dev` = `3ea7273a` (**0 0**, push OK)
 - `provtv/dev` = unrelated — [wiki/troubleshooting/git-push-dual-remote-unrelated.md](./wiki/troubleshooting/git-push-dual-remote-unrelated.md)
+
+### Sync 2026-07-23 (batch 5-item, seguito)
+
+- Working tree dirty (docs handoff aggiornati da sessione precedente, non miei) → committato (`f1f1295`, "chore(User): sync locale").
+- `laraxot/dev`: eravamo 1 ahead / 0 behind. Push iniziale respinto per race (`cannot lock ref`, remoto avanzato nel frattempo), rifetch → remoto già allineato a `f1f1295` (altra sessione concorrente ha completato il push) → **0 0**, nessuna azione ulteriore necessaria.
+- `provtv/dev`: **confermato UNRELATED HISTORIES** (`git merge-base HEAD provtv/dev` vuoto, root commit diversi: locale `cd6af2aa`, provtv `516161d9`/`d2b107e0` come tip). Non tentato merge/force, lasciato per decisione utente come da regola.
+- Nessuna rottura di codice trovata in questo giro.
