@@ -4,9 +4,10 @@ type: rule
 module: User
 tags: [git, lfs, push, troubleshooting, user]
 created: 2026-07-08
-updated: 2026-07-08
-qmd: "git push LFS missing objects module User risoluzione squash rebase"
+updated: 2026-07-23
+qmd: "git push LFS missing objects module User risoluzione squash rebase forward-only"
 related:
+  - "./git-push-dual-remote-unrelated.md"
   - "./filament-user-creation-pty-error.md"
   - "./git-merge-conflict-inventory-1.md"
   - "./git-merge-conflict-inventory.md"
@@ -17,6 +18,13 @@ related:
 ---
 
 # Git push — oggetti LFS mancanti
+
+## Stato 2026-07-23
+
+`laraxot/dev` = tip **`3ea7273a`** (`0 0`) — squash locale che ripristina SVG come blob Git (niente puntatori LFS orfani).  
+`provtv/dev` = **unrelated** → vedi [git-push-dual-remote-unrelated.md](./git-push-dual-remote-unrelated.md) (non LFS).
+
+**Default oggi:** preferire LFS sibling / blob normali in HEAD + `push --no-thin`. Lo squash con `reset --soft` sotto è **storico** (2026-07-08) e **non** è il default forward-only.
 
 ## Sintomo
 
@@ -54,17 +62,19 @@ git lfs push laraxot dev 2>&1 | grep -c missing
 test -d .git/rebase-merge && echo REBASE_BLOCCATO
 ```
 
-## Soluzione definitiva (applicata 2026-07-08)
+## Soluzione storica (2026-07-08) — solo se LFS irrecuperabile
+
+> **Attenzione:** usa `reset --soft`. Oggi è ultima spiaggia e richiede decisione umana. Preferire sibling LFS o tip già sanato (`3ea7273a`).
 
 ### 1. Uscire da rebase bloccato (se presente)
 
 ```bash
 cd laravel/Modules/User
 git rebase --abort
-git checkout dev
+# restare su dev (no checkout distruttivo di file)
 ```
 
-### 2. Squash sopra `laraxot/dev`
+### 2. Squash sopra `laraxot/dev` (storico)
 
 Un solo commit con il tree attuale (blob Git normali, senza storico LFS corrotto):
 
@@ -75,7 +85,7 @@ git commit -m "fix(git): consolidamento commit locali e blob Git al posto di LFS
 git push -u laraxot dev
 ```
 
-Risultato sessione 2026-07-08: `a8cd01ad..b0fa6e3d` su `laraxot/dev`, branch traccia `laraxot/dev`.
+Risultato sessione 2026-07-08: `a8cd01ad..b0fa6e3d` su `laraxot/dev`. Sessione 2026-07-23: tip `3ea7273a` già su `laraxot` (`Everything up-to-date`).
 
 ### Cosa **non** fare
 

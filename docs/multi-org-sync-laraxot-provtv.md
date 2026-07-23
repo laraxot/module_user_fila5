@@ -3,9 +3,11 @@ title: "Sincronizzazione multi-organizzazione (laraxot + provtv)"
 type: concept
 tags: [git, sync, multi-org, laraxot, provtv, quality-gates]
 created: "2026-07-21"
-updated: "2026-07-22"
+updated: "2026-07-23"
 related:
   - "../../../bashscripts/tools/prompts/02-gitmodules-sync.md"
+  - "./wiki/troubleshooting/git-push-dual-remote-unrelated.md"
+  - "./wiki/troubleshooting/git-push-lfs-missing-objects.md"
 ---
 
 # Sincronizzazione multi-organizzazione (laraxot + provtv)
@@ -21,18 +23,17 @@ fetch di tutti i remote, quality gates (PHPStan L10, PHPMD), risincronizzazione 
 
 - **Clone shallow**: il repo era stato clonato con storia troncata, causando push
   respinti (`did not receive expected object`). Fix: `git fetch --unshallow` su tutti i remote.
-- **Storie scollegate ("unrelated histories")**: alcuni repo avevano un branch `dev`
-  remoto rigenerato senza antenato comune con la storia locale. Risolto con
-  `git merge --allow-unrelated-histories`, verificando caso per caso i conflitti
-  "add/add" (nella maggior parte dei casi contenuto identico, differenze reali
-  risolte a mano confrontando i diff).
+- **Storie scollegate ("unrelated histories")**: root commit diversi tra org.
+  **2026-07-23:** `laraxot` = tip `3ea7273a` (`0 0`); `provtv` = unrelated (ahead 3 / behind 57).
+  **Non** si fa merge/force automatico — decisione umana su storia autoritativa.
+  Canon: [wiki/troubleshooting/git-push-dual-remote-unrelated.md](./wiki/troubleshooting/git-push-dual-remote-unrelated.md).
 
 ## Regola per il futuro
 
 Prima di un merge/rebase su questo repo, controllare sempre `git remote -v` e
 sincronizzare **tutti** i remote elencati, non solo `origin`/`provtv`. Mai forzare
-push distruttivi su storie scollegate: preferire `--allow-unrelated-histories` e
-revisione manuale dei conflitti reali.
+push distruttivi. Se `merge-base` è vuoto → STOP. Se merge-base esiste e c’è divergenza →
+merge forward-only manuale. LFS: sibling o playbook UI.
 
 ### Playbook push dual-remote (2026-07-22, canon UI)
 
@@ -41,3 +42,11 @@ Se `GH008` / LFS missing su un org e l’altro ha già accettato il tip →
 `git lfs fetch <sibling> --all` poi `git lfs push <target> --all`, poi push.
 Dettaglio (SSoT): [../UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md](../UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md).
 Niente reset/squash/force per aggirare LFS.
+
+### Push User 2026-07-23
+
+| Remote | Esito |
+|--------|-------|
+| `laraxot` | OK `3ea7273a` |
+| `provtv` | bloccato unrelated — [git-push-dual-remote-unrelated.md](./wiki/troubleshooting/git-push-dual-remote-unrelated.md) |
+

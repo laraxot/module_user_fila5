@@ -39,7 +39,8 @@ Indice operativo del wiki User.
 - [comparisons/](./comparisons/): Implementazioni alternative.
 - [decisions/](./decisions/): ADL (Architectural Decision Log).
 - [troubleshooting/](./troubleshooting/): Problemi noti e soluzioni.
-  - [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md) — push rifiutato per LFS corrotto (squash)
+  - [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md) — push rifiutato per LFS corrotto (storico squash; tip attuale `3ea7273a` su laraxot)
+  - [git-push-dual-remote-unrelated](./troubleshooting/git-push-dual-remote-unrelated.md) — `provtv` history unrelated: STOP, no merge/force (2026-07-23)
   - [git-merge-conflict-inventory](./troubleshooting/git-merge-conflict-inventory.md) — marker merge / rebase
 - [_archive/](./_archive/): Documentazione legacy.
 - [_templates/](./_templates/): Template standard.
