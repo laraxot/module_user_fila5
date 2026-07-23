@@ -12,6 +12,7 @@ use function Laravel\Prompts\select;
 use function Laravel\Prompts\text;
 
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
@@ -73,7 +74,7 @@ class ChangeTypeCommand extends Command
             } elseif ($label instanceof Htmlable) {
                 $typeLabel = $label->toHtml();
             } else {
-                $typeLabel = (string) $label;
+                $typeLabel = SafeStringCastAction::cast($label);
             }
         }
 
@@ -91,9 +92,9 @@ class ChangeTypeCommand extends Command
             ) {
                 $value = app(SafeObjectCastAction::class)
                     ->getStringProperty($item, 'value', '');
-                $options[$value] = (string) $item->getLabel();
+                $options[$value] = SafeStringCastAction::cast($item->getLabel());
             } else {
-                $options[(string) $key] = 'Unknown';
+                $options[SafeStringCastAction::cast($key)] = 'Unknown';
             }
         }
 
@@ -107,7 +108,7 @@ class ChangeTypeCommand extends Command
         Assert::isInstanceOf($newTypeEnum, \BackedEnum::class);
 
         /* @var \BackedEnum&HasLabel $newTypeEnum */
-        $user->type = (string) $newTypeEnum->value;
+        $user->type = SafeStringCastAction::cast($newTypeEnum->value);
         $user->save();
 
         $label = $newTypeEnum->getLabel();
@@ -117,7 +118,7 @@ class ChangeTypeCommand extends Command
         } elseif ($label instanceof Htmlable) {
             $labelString = $label->toHtml();
         } else {
-            $labelString = (string) $label;
+            $labelString = SafeStringCastAction::cast($label);
         }
         $this->info("User type changed to '{$labelString}' for {$email}");
     }

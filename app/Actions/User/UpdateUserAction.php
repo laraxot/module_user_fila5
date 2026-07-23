@@ -8,6 +8,7 @@ use Illuminate\Contracts\Hashing\Hasher;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Validation\ValidationException;
+use Modules\User\Datas\UpdateUserData;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Psr\Log\LoggerInterface;
 use Spatie\QueueableAction\QueueableAction;
@@ -19,14 +20,14 @@ class UpdateUserAction
     /**
      * Esegue l'aggiornamento dell'utente.
      *
-     * @param Model                $user L'utente da aggiornare
-     * @param array<string, mixed> $data I dati da aggiornare
+     * @param Model          $user L'utente da aggiornare
+     * @param UpdateUserData $data I dati da aggiornare
      *
      * @throws \Exception Se l'aggiornamento fallisce
      *
      * @return Model L'utente aggiornato
      */
-    public function execute(Model $user, array $data): Model
+    public function execute(Model $user, UpdateUserData $data): Model
     {
         $dbManager = \app(DatabaseManager::class);
         $logger = \app(LoggerInterface::class);
@@ -77,24 +78,19 @@ class UpdateUserAction
     }
 
     /**
-     * Prepara i dati per l'aggiornamento rimuovendo campi non aggiornabili.
+     * Prepara i dati per l'aggiornamento (Data → array pronto per `$user->fill()`).
      *
-     * @param array<string, mixed> $data
+     * Campi non aggiornabili direttamente (id, email_verified_at, remember_token,
+     * created_at, updated_at) sono già assenti da `UpdateUserData` by design.
      *
      * @return array<string, mixed>
      */
-    protected function prepareUpdateData(array $data, Hasher $hasher, SafeStringCastAction $safeStringCast): array
+    protected function prepareUpdateData(UpdateUserData $data, Hasher $hasher, SafeStringCastAction $safeStringCast): array
     {
-        // Rimuovi campi che non dovrebbero essere aggiornati direttamente
-        $excludeFields = [
-            'id',
-            'email_verified_at',
-            'remember_token',
-            'created_at',
-            'updated_at',
-        ];
-
-        $updateData = array_diff_key($data, array_flip($excludeFields));
+        $updateData = [];
+        foreach ($data->toArray() as $key => $value) {
+            $updateData[(string) $key] = $value;
+        }
 
         // Gestione speciale per la password
         if (isset($updateData['password'])) {
@@ -119,6 +115,10 @@ class UpdateUserAction
 
     /**
      * Valida i dati di aggiornamento.
+     *
+     * NB: `$data` qui è l'array già preparato da {@see self::prepareUpdateData()}
+     * (Data→array pronto per `$user->fill()`), non un bag di parametri esterni grezzi:
+     * confine ORM/framework, non soggetto alla regola "no array $data".
      *
      * @param array<string, mixed> $data
      *
@@ -146,6 +146,8 @@ class UpdateUserAction
     /**
      * Operazioni da eseguire dopo l'aggiornamento.
      * Può essere sovrascritto dalle classi che estendono questa action.
+     *
+     * NB: `$data` è l'array già preparato (post Data→array), confine ORM/framework.
      *
      * @param array<string, mixed> $data
      */

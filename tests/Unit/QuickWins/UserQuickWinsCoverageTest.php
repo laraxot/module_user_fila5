@@ -7,6 +7,7 @@ use Modules\User\Actions\Team\GetUserTeamsOptionAction;
 use Modules\User\Actions\User\CreateUserAction;
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Database\Factories\UserFactory;
+use Modules\User\Datas\CreateUserData;
 use Modules\User\Exceptions\ProviderNotConfigured;
 use Modules\User\Facades\FilamentShield;
 use Modules\User\Models\User;
@@ -67,7 +68,7 @@ describe('User quick wins coverage', function (): void {
 
         app()->instance(User::class, $userModel);
 
-        $result = app(CreateUserAction::class)->execute($payload);
+        $result = app(CreateUserAction::class)->execute(CreateUserData::from($payload));
 
         Assert::assertSame($createdUser, $result);
         Assert::assertSame('quick-win@example.test', $result->email);

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Modules\User\Actions\User\CreateUserAction;
+use Modules\User\Datas\CreateUserData;
 use PHPUnit\Framework\Assert;
 
 uses(Modules\User\Tests\TestCase::class);
@@ -16,7 +17,7 @@ describe('CreateUserAction', function (): void {
         $action = app(CreateUserAction::class);
     });
 
-    test('execute method accepts array parameter', function (): void {
+    test('execute method accepts a typed CreateUserData parameter', function (): void {
         $action = app(CreateUserAction::class);
 
         $reflection = new ReflectionMethod($action, 'execute');
@@ -24,5 +25,6 @@ describe('CreateUserAction', function (): void {
 
         Assert::assertCount(1, $params);
         Assert::assertSame('data', $params[0]->getName());
+        Assert::assertSame(CreateUserData::class, $params[0]->getType()?->getName());
     });
 });

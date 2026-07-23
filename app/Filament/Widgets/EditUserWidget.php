@@ -13,6 +13,7 @@ use Illuminate\Support\Str;
 use Livewire\Features\SupportRedirects\Redirector;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
 
 /**
@@ -142,9 +143,42 @@ class EditUserWidget extends XotBaseSchemaWidget
             throw new \RuntimeException(sprintf('Update action [%s] must expose execute().', $this->action));
         }
 
-        \call_user_func([$actionInstance, 'execute'], $record, $data);
+        $payload = $this->resolveExecutePayload($actionInstance, $data);
+
+        \call_user_func([$actionInstance, 'execute'], $record, $payload);
 
         return redirect()->back();
+    }
+
+    /**
+     * Costruisce il secondo argomento per `execute()` rispettando il tipo dichiarato.
+     *
+     * Questo widget risolve dinamicamente l'action da eseguire (una per ogni
+     * modulo/modello utente), quindi non può assumere staticamente se essa si
+     * aspetti un `array` grezzo oppure un `Spatie\LaravelData\Data` tipizzato
+     * (es. `Modules\User\Datas\UpdateUserData`). Ispeziona via reflection il tipo
+     * del secondo parametro di `execute()` e costruisce il Data object quando
+     * richiesto, altrimenti mantiene il comportamento storico (array).
+     *
+     * @param  array<string, mixed>  $data
+     * @return array<string, mixed>|Data
+     */
+    private function resolveExecutePayload(object $actionInstance, array $data): array|Data
+    {
+        $reflection = new \ReflectionMethod($actionInstance, 'execute');
+        $parameters = $reflection->getParameters();
+        $dataParameter = $parameters[1] ?? null;
+        $type = $dataParameter?->getType();
+
+        if ($type instanceof \ReflectionNamedType && ! $type->isBuiltin()) {
+            /** @var class-string $className */
+            $className = $type->getName();
+            if (is_a($className, Data::class, true)) {
+                return $className::from($data);
+            }
+        }
+
+        return $data;
     }
 
     /**

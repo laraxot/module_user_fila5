@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Datas;
 
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\LaravelData\Data;
 
 /**
@@ -25,17 +26,17 @@ class UserContextData extends Data
 
     public static function fromUserModel(object $userModel): self
     {
-        $userId = property_exists($userModel, 'id') ? (string) $userModel->id : null;
+        $userId = property_exists($userModel, 'id') ? SafeStringCastAction::cast($userModel->id) : null;
 
         $roles = array_values(array_map(
-            static fn (mixed $role): string => (string) $role,
+            static fn (mixed $role): string => SafeStringCastAction::cast($role),
             is_array($userModel->roles ?? null) ? $userModel->roles : [],
         ));
 
         return new self(
             userId: $userId,
-            email: (string) ($userModel->email ?? ''),
-            isAdministrator: ! empty($userModel->role) && 'admin' === strtolower((string) $userModel->role),
+            email: SafeStringCastAction::cast($userModel->email ?? ''),
+            isAdministrator: ! empty($userModel->role) && 'admin' === strtolower(SafeStringCastAction::cast($userModel->role)),
             roles: $roles,
         );
     }

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\User;
 
+use Modules\User\Datas\CreateUserData;
 use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -13,12 +14,15 @@ class CreateUserAction
 
     /**
      * Create a new user.
-     *
-     * @param array<string, mixed> $data
      */
-    public function execute(array $data): User
+    public function execute(CreateUserData $data): User
     {
+        $attributes = [];
+        foreach ($data->toArray() as $key => $value) {
+            $attributes[(string) $key] = $value;
+        }
+
         // Use app() to resolve the User model instance
-        return app(User::class)->create($data);
+        return app(User::class)->create($attributes);
     }
 }
