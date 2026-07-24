@@ -15,11 +15,15 @@ function getUserMigrationFiles(): array
 {
     $basePath = dirname(__DIR__, 4).'/database/migrations';
     $files = glob($basePath.'/*.php');
+    $result = [];
 
-    sort($files);
+    foreach ($files as $file) {
+        $result[] = (string) $file;
+    }
 
-    /* @var list<string> $files */
-    return $files;
+    sort($result);
+
+    return $result;
 }
 
 it('does not contain merge conflict markers in user migrations', function (): void {
