@@ -58,7 +58,7 @@ describe('Api Logout Controller', function (): void {
             $this->skipTest('Passport token creation unavailable: '.$exception->getMessage());
         }
 
-        if (null === $personalAccessToken) {
+        if ($personalAccessToken === null) {
             $this->skipTest('Passport token creation unavailable.');
         }
 
