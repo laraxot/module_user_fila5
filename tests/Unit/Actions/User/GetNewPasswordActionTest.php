@@ -37,7 +37,7 @@ describe('GetNewPasswordAction', function (): void {
         $firstHash = (string) $freshModel0->password;
 
         $refreshedUser = $user->fresh();
-        if (null === $refreshedUser) {
+        if ($refreshedUser === null) {
             Assert::fail('User refresh failed.');
         }
         $secondPlain = app(GetNewPasswordAction::class)->execute($refreshedUser);
