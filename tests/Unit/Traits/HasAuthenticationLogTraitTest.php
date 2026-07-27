@@ -11,7 +11,7 @@ use Modules\User\Tests\TestCase;
 uses(TestCase::class);
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function makeAuthenticationLogFor(User $user, array $attributes = []): AuthenticationLog
 {
