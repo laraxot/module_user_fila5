@@ -56,7 +56,7 @@ describe('SendOtpByUserAction', function () {
 
                 return ($routes['mail'] ?? null) === $user->email
                     && $notification->user->id === $user->id
-                    && 'random-otp-12' === $notification->code;
+                    && $notification->code === 'random-otp-12';
             }
         );
 
