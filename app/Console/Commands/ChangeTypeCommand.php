@@ -7,14 +7,13 @@ namespace Modules\User\Console\Commands;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Support\Htmlable;
-
-use function Laravel\Prompts\select;
-use function Laravel\Prompts\text;
-
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
+
+use function Laravel\Prompts\select;
+use function Laravel\Prompts\text;
 
 /**
  * Command to change user type based on project configuration.
@@ -66,11 +65,9 @@ class ChangeTypeCommand extends Command
         $typeLabel = 'None';
         if (isset($user->type) && \is_object($user->type) && method_exists($user->type, 'getLabel')) {
             $enumType = $user->type;
-            /** @var string|Htmlable|mixed */
+            /** @var Htmlable|string $label */
             $label = $enumType->getLabel();
-            if (\is_string($label)) {
-                $typeLabel = $label;
-            } elseif ($label instanceof Htmlable) {
+            if ($label instanceof Htmlable) {
                 $typeLabel = $label->toHtml();
             } else {
                 $typeLabel = (string) $label;
@@ -91,16 +88,17 @@ class ChangeTypeCommand extends Command
             ) {
                 $value = app(SafeObjectCastAction::class)
                     ->getStringProperty($item, 'value', '');
-                $options[$value] = (string) $item->getLabel();
+                $label = $item->getLabel();
+                $options[$value] = is_string($label) ? $label : (string) $label;
             } else {
-                $options[(string) $key] = 'Unknown';
+                $options[is_string($key) ? $key : (string) $key] = 'Unknown';
             }
         }
 
         $newType = select('Select new user type:', $options);
 
         $newTypeEnum = $typeClass::tryFrom($newType);
-        if (null === $newTypeEnum) {
+        if ($newTypeEnum === null) {
             throw new \InvalidArgumentException('Invalid user type selected.');
         }
         Assert::isInstanceOf($newTypeEnum, HasLabel::class);
