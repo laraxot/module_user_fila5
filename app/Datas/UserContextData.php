@@ -26,7 +26,7 @@ class UserContextData extends Data
     public static function fromUserModel(object $userModel): self
     {
         $rawId = property_exists($userModel, 'id') ? $userModel->id : null;
-        $userId = $rawId !== null ? (string) $rawId : null;
+        $userId = null !== $rawId ? (string) $rawId : null;
 
         $roles = array_values(array_map(
             static fn (mixed $role): string => is_string($role) ? $role : (string) $role,
