@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module Documentation"
 type: documentation
@@ -5,15 +6,20 @@ tags: [module, documentation]
 created: 2026-06-05
 updated: 2026-07-27
 ---
+=======
+# Documentation
+>>>>>>> c5e6021c (.)
 
-# Modulo User - Documentazione Completa
+This directory contains documentation for the module.
 
-## Overview
+## Structure
 
-Il modulo **User** gestisce l'autenticazione, l'autorizzazione e la gestione utenti completa nel sistema [PROJECT_NAME] platform.
+- **architecture.md** - Module architecture and design patterns
+- **README.md** - This file
 
-## Funzionalità Principali
+## Guidelines
 
+<<<<<<< HEAD
 ### Autenticazione
 - Login multi-tenant
 - Gestione sessioni sicure
@@ -114,3 +120,10 @@ Rule: never commit files with conflict markers. Fix immediately when found.
 - [QMD Setup](./qmd-setup.md) — Configurazione ricerca locale
 - [Performance](./performance-optimization.md) — Metriche e best practice
 - [Project Structure](./project-structure.md) — Directory layout
+=======
+Documentation should be:
+- Clear and concise
+- Example-driven
+- Updated with code changes
+- Use Markdown format (.md)
+>>>>>>> c5e6021c (.)

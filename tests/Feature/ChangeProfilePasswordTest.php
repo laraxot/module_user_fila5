@@ -12,9 +12,7 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Pages\MyProfilePage;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
-
 use function Pest\Laravel\actingAs;
-
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -46,7 +44,7 @@ describe('Change Profile Password', function (): void {
             ->call('updatePassword')
             ->assertHasNoFormErrors();
 
-        Assert::assertTrue(Hash::check('new_password', (string) $user->fresh()?->password));
+        Assert::assertTrue(Hash::check('new_password', $user->fresh()?->password ?? ''));
     });
 
     test('cannot change password with wrong current password', function (): void {
@@ -70,12 +68,12 @@ describe('Change Profile Password', function (): void {
         Assert::assertIsArray($errors);
         $hasCurrentPasswordError = false;
         foreach (array_keys($errors) as $errorKey) {
-            if (str_contains((string) $errorKey, 'current_password')) {
+            if (str_contains($errorKey, 'current_password')) {
                 $hasCurrentPasswordError = true;
                 break;
             }
         }
         Assert::assertTrue($hasCurrentPasswordError);
-        Assert::assertTrue(Hash::check('old_password', (string) $user->fresh()?->password));
+        Assert::assertTrue(Hash::check('old_password', $user->fresh()?->password ?? ''));
     });
 });

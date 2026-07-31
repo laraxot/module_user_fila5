@@ -1,5 +1,21 @@
+---
+title: "<nome progetto> User Module - Pest Test Implementation Report"
+type: concept
+tags: [pest, test, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "pest-test-report <nome progetto> user module - pest test implementation report"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./git-reset.md"
+---
+
+<<<<<<<< HEAD:docs/raw/root-import/pest-test-report-2.md
+========
 # <nome progetto> User Module - Pest Test Implementation Report
 
+>>>>>>>> c5e6021c (.):docs/root-md-files/pest-test-report.md
 ## Executive Summary
 
 Successfully implemented comprehensive Pest PHP tests for 5 critical User module Actions in <nome progetto>. All tests are now **PASSING** with high code coverage and comprehensive test scenarios.
