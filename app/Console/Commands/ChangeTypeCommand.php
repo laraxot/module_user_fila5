@@ -4,17 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\User\Console\Commands;
 
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Support\Htmlable;
-
-use function Laravel\Prompts\select;
-use function Laravel\Prompts\text;
-
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
+
+use function Laravel\Prompts\select;
+use function Laravel\Prompts\text;
 
 /**
  * Command to change user type based on project configuration.
@@ -90,16 +91,22 @@ class ChangeTypeCommand extends Command
                 $value = app(SafeObjectCastAction::class)
                     ->getStringProperty($item, 'value', '');
                 $label = $item->getLabel();
+<<<<<<< HEAD
                 $options[$value] = is_string($label) ? $label : (string) $label;
             } else {
                 $options[is_string($key) ? $key : (string) $key] = 'Unknown';
+=======
+                $options[$value] = SafeStringCastAction::cast($label);
+            } else {
+                $options[is_string($key) ? $key : SafeStringCastAction::cast($key)] = 'Unknown';
+>>>>>>> c5e6021c (.)
             }
         }
 
         $newType = select('Select new user type:', $options);
 
         $newTypeEnum = $typeClass::tryFrom($newType);
-        if (null === $newTypeEnum) {
+        if ($newTypeEnum === null) {
             throw new \InvalidArgumentException('Invalid user type selected.');
         }
         Assert::isInstanceOf($newTypeEnum, HasLabel::class);
