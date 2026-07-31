@@ -4,12 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\SocialProviderResource\Pages;
 
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Modules\User\Filament\Resources\SocialProviderResource;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
