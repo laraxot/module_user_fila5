@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # MODULE ROOT FORBIDDEN DIRS
 _docs
@@ -10,6 +11,22 @@ legacy/
 phpmd.ruleset.xml
 phpmd.ruleset.xml.bak
 phpstan*
+<<<<<<< .merge_file_2Hz3yj
+=======
+=======
+
+# MODULE ROOT FORBIDDEN DIRS
+_docs
+archive/
+docs/**/*-[0-9].md
+docs/img/*.jpg
+docs/img/*.png
+docs/screenshots/*.png
+legacy/
+phpmd.ruleset.xml
+phpmd.ruleset.xml.bak
+phpstan*
+>>>>>>> .merge_file_xjNv41
 resources/favicon.png
 resources/img/*.png
 resources/img/screenshots
@@ -18,3 +35,7 @@ workbench
 # Root quality tool configs forbidden in module root
 rector.php
 phpmd*
+<<<<<<< .merge_file_2Hz3yj
+=======
+>>>>>>> c5e6021c (.)
+>>>>>>> .merge_file_xjNv41

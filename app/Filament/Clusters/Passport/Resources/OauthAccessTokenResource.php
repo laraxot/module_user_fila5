@@ -131,7 +131,15 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->action(function (mixed $record): void {
                         if ($record instanceof Model) {
                             $key = $record->getKey();
+<<<<<<< .merge_file_svxHCg
                             $keyString = is_string($key) ? $key : SafeStringCastAction::cast($key);
+=======
+<<<<<<< HEAD
+                            $keyString = is_string($key) ? $key : (string) $key;
+=======
+                            $keyString = is_string($key) ? $key : SafeStringCastAction::cast($key);
+>>>>>>> c5e6021c (.)
+>>>>>>> .merge_file_I5B3KA
                             if (app(RevokeTokenAction::class)->execute($keyString)) {
                                 Notification::make()
                                     ->title(static::trans('actions.revoke.success'))

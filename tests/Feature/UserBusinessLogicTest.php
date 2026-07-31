@@ -40,7 +40,16 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces username uniqueness when required', function (): void {
+<<<<<<< .merge_file_TWMlt6
         if (! userTableHasColumn('users', 'username')) {
+=======
+<<<<<<< HEAD
+        /** @var TestCase $this */
+        if (! $this->userTableHasColumn('users', 'username')) {
+=======
+        if (! userTableHasColumn('users', 'username')) {
+>>>>>>> c5e6021c (.)
+>>>>>>> .merge_file_HZh3fL
             $email = 'alias-'.uniqid('', true).'@example.com';
             createTestUser(['email' => $email]);
 
@@ -174,7 +183,18 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces permission conflicts', function (): void {
+<<<<<<< .merge_file_TWMlt6
         skipUnlessUserTable('model_has_permission', 'model_has_permission table missing on user connection.');
+=======
+<<<<<<< HEAD
+        /** @var TestCase $this */
+        if (! $this->userTableExists('model_has_permission')) {
+            $this->skipTest('model_has_permission table missing on user connection.');
+        }
+=======
+        skipUnlessUserTable('model_has_permission', 'model_has_permission table missing on user connection.');
+>>>>>>> c5e6021c (.)
+>>>>>>> .merge_file_HZh3fL
 
         $user = createTestUser();
         $uid = uniqid();

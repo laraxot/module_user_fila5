@@ -91,9 +91,21 @@ class ChangeTypeCommand extends Command
                 $value = app(SafeObjectCastAction::class)
                     ->getStringProperty($item, 'value', '');
                 $label = $item->getLabel();
+<<<<<<< .merge_file_c9xtGr
                 $options[$value] = SafeStringCastAction::cast($label);
             } else {
                 $options[is_string($key) ? $key : SafeStringCastAction::cast($key)] = 'Unknown';
+=======
+<<<<<<< HEAD
+                $options[$value] = is_string($label) ? $label : (string) $label;
+            } else {
+                $options[is_string($key) ? $key : (string) $key] = 'Unknown';
+=======
+                $options[$value] = SafeStringCastAction::cast($label);
+            } else {
+                $options[is_string($key) ? $key : SafeStringCastAction::cast($key)] = 'Unknown';
+>>>>>>> c5e6021c (.)
+>>>>>>> .merge_file_HL2w8R
             }
         }
 

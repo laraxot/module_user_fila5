@@ -1,3 +1,9 @@
+<<<<<<< .merge_file_Gwco7E
+=======
+<<<<<<< HEAD
+va nella cartella laravel/Modules/User e fa git push , capisci gli errori sistameli e documenta come hai risolto dentro laravel/Modules/User/docs ti ricordo che con git andiamo solo in avanti, percio' non puoi fare checkout revert rollback, ma puoi anzi devi studiare le vecchie versioni e ti ricordo che il tuo lavoro non e' finito finche' non supera anche il controllo di phpstan phpmd, phpinisghts tutta la cartella laravel/Modules/User
+=======
+>>>>>>> .merge_file_nm0IbI
 va nella cartella laravel/Modules/User e fa git push , capisci gli errori sistameli e documenta come hai risolto dentro laravel/Modules/User/docs ti ricordo che con git andiamo solo in avanti, percio' non puoi fare checkout revert rollback, ma puoi anzi devi studiare le vecchie versioni e ti ricordo che il tuo lavoro non e' finito finche' non supera anche il controllo di phpstan phpmd, phpinisghts tutta la cartella laravel/Modules/User
 
 
@@ -94,3 +100,7 @@ Raccomandazioni prossimi step:
 - 📚 Documentare split strategy per PHPStan sweep (per-module audit)
 
 Progresso complessivo: SYNC OK (provtv), QUALITY GATE FAILED (PHPStan L10)
+<<<<<<< .merge_file_Gwco7E
+=======
+>>>>>>> c5e6021c (.)
+>>>>>>> .merge_file_nm0IbI

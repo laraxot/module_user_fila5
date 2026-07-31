@@ -11,8 +11,20 @@ issues:
 discussions:
   - https://github.com/provtv/base_ptv_fila5/discussions/204
 related:
+<<<<<<< .merge_file_w2M8Nw
   - "../../multi-org-sync-laraxot-provtv.md"
   - "../../git-multi-org-sync-handoff.md"
+=======
+<<<<<<< HEAD
+  - "./git-push-lfs-missing-objects.md"
+  - "../../multi-org-sync-laraxot-provtv.md"
+  - "../../git-multi-org-sync-handoff.md"
+  - "../../../../UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md"
+=======
+  - "../../multi-org-sync-laraxot-provtv.md"
+  - "../../git-multi-org-sync-handoff.md"
+>>>>>>> c5e6021c (.)
+>>>>>>> .merge_file_ZGo0to
   - "../../../../Activity/docs/wiki/troubleshooting/git-push-dual-remote.md"
 ---
 
@@ -46,6 +58,13 @@ git rev-list --max-parents=0 HEAD
 git rev-list --max-parents=0 provtv/dev                # root diversi
 ```
 
+<<<<<<< .merge_file_w2M8Nw
+=======
+<<<<<<< HEAD
+Diff tip↔tip: **centinaia di file** (non un semplice gap di commit). Tip locale include squash LFS (`3ea7273a` — SVG non più puntatori LFS orfani).
+=======
+>>>>>>> c5e6021c (.)
+>>>>>>> .merge_file_ZGo0to
 
 ### Cosa fare / non fare
 
@@ -54,9 +73,23 @@ git rev-list --max-parents=0 provtv/dev                # root diversi
 | Solo `laraxot` da pubblicare | `git -c pack.useSparse=false push --no-thin laraxot HEAD:dev` |
 | `provtv` unrelated | **Niente** merge/rebase/force finché un umano non sceglie la storia autoritativa |
 | Serve unificare | Decisione umana: (A) `provtv` adotta tip `laraxot` con force esplicito, oppure (B) cherry-pick selettivo commit utili da `provtv` su tip `laraxot` (forward-only) |
+<<<<<<< .merge_file_w2M8Nw
+=======
+<<<<<<< HEAD
+| GH008 / LFS | [git-push-lfs-missing-objects.md](./git-push-lfs-missing-objects.md) · playbook UI sibling |
+=======
+>>>>>>> c5e6021c (.)
+>>>>>>> .merge_file_ZGo0to
 
 **Vietato agenti:** `push --force`, `merge --allow-unrelated-histories` cieco, `reset`/`restore` per “aggiustare”.
 
 ## Relazione con altri playbook
 
 - Divergenza **con** merge-base (Activity): [Activity git-push-dual-remote](../../../../Activity/docs/wiki/troubleshooting/git-push-dual-remote.md)
+<<<<<<< .merge_file_w2M8Nw
+=======
+<<<<<<< HEAD
+- LFS / `--no-thin` (UI): [UI git-push-lfs-missing-objects](../../../../UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md)
+=======
+>>>>>>> c5e6021c (.)
+>>>>>>> .merge_file_ZGo0to

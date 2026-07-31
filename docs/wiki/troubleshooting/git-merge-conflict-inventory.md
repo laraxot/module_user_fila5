@@ -9,6 +9,13 @@ qmd: "git merge conflict markers User docs inventory rebase"
 related:
   - "./filament-user-creation-pty-error.md"
   - "./git-merge-conflict-inventory-1.md"
+<<<<<<< .merge_file_GTsiU6
+=======
+<<<<<<< HEAD
+  - "./git-push-lfs-missing-objects.md"
+=======
+>>>>>>> c5e6021c (.)
+>>>>>>> .merge_file_vNi1a8
   - "./phpstan-module-analysis-memory.md"
   - "./phpstan-widget-property-types-1.md"
   - "./phpstan-widget-property-types.md"
@@ -19,7 +26,17 @@ related:
 
 ## Stato 2026-07-08
 
+<<<<<<< .merge_file_GTsiU6
 - Dopo `git rebase --abort`: **0** marker `<<<<<<<` nei `.md` tracciati (`git grep`).
+=======
+<<<<<<< HEAD
+- **Rebase abortito** su `dev` (328 pick, 623 file `AA`) — causa: tentativo rebase sopra `laraxot/dev` con storico LFS corrotto.
+- Dopo `git rebase --abort`: **0** marker `<<<<<<<` nei `.md` tracciati (`git grep`).
+- Push risolto con squash → [git-push-lfs-missing-objects](./git-push-lfs-missing-objects.md).
+=======
+- Dopo `git rebase --abort`: **0** marker `<<<<<<<` nei `.md` tracciati (`git grep`).
+>>>>>>> c5e6021c (.)
+>>>>>>> .merge_file_vNi1a8
 
 ## Inventario storico (2026-04-28)
 
@@ -35,4 +52,12 @@ File con marker (da risolvere forward-only se riappaiono):
 
 - Rigenerare lista: `git grep -l '^<<<<<<<' -- '*.md' 'docs/'`
 - Non risolvere in parallelo senza lock; preferire wiki canonico `docs/wiki/` rispetto a duplicati root `docs/*.md`.
+<<<<<<< .merge_file_GTsiU6
 - Task dedicato marker doc: `docs/tasks/fix-doc-merge-markers.md`
+=======
+<<<<<<< HEAD
+- Task dedicato marker doc: `docs/tasks/fix-doc-merge-markers.md`
+=======
+- Task dedicato marker doc: `docs/tasks/fix-doc-merge-markers.md`
+>>>>>>> c5e6021c (.)
+>>>>>>> .merge_file_vNi1a8
