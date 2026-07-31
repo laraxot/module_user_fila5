@@ -35,11 +35,7 @@ class GetProviderScopesAction
         }
 
         return array_values(array_map(
-<<<<<<< HEAD
-            static fn (mixed $scope): string => is_string($scope) ? $scope : (string) $scope,
-=======
             static fn (mixed $scope): string => SafeStringCastAction::cast($scope),
->>>>>>> c5e6021c (.)
             $scopes
         ));
     }

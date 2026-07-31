@@ -8,8 +8,6 @@ See canonical documentation: ../../../Themes/docs/shared-components/.gitignore-M
 archive
 legacy
 agentdb.rvf
-<<<<<<< HEAD
-=======
 
 # Version-suffixed markdown (AI artifacts)
 *-[0-9]*.md
@@ -40,4 +38,3 @@ redundancy-fixes-january-2026.md
 # No numbered .md duplicates (rule: docs/wiki/rules/no-numbered-filenames.md)
 *-[0-9].md
 *-[0-9][0-9].md
->>>>>>> c5e6021c (.)

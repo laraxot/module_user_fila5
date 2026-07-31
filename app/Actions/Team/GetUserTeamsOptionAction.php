@@ -31,11 +31,7 @@ class GetUserTeamsOptionAction
 
             $key = $team->getKey();
             $name = $team->getAttribute('name');
-<<<<<<< HEAD
-            $options[is_string($key) ? $key : (string) $key] = is_string($name) ? $name : (string) $name;
-=======
             $options[is_string($key) ? $key : SafeStringCastAction::cast($key)] = SafeStringCastAction::cast($name);
->>>>>>> c5e6021c (.)
         }
 
         return $options;

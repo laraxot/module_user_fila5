@@ -190,20 +190,10 @@ trait HasTeams
      *
      * @phpstan-return Collection<int, User>
      */
-<<<<<<< HEAD
-    public function allTeamUsers(): Collection // @phpstan-ignore return.type
-    {/** @var Collection<int, mixed> $teams */
-<<<<<<< HEAD
-                        $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
-=======
-            $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
->>>>>>> ddd198be (.)
-=======
     public function allTeamUsers(): Collection
     {
         /** @var Collection<int, TeamContract> $teams */
         $teams = $this->membershipTeams;
->>>>>>> c5e6021c (.)
         /** @var Collection<int, User> $result */
         $result = $teams->flatMap(
             /** @return array<int, User> */
@@ -381,11 +371,7 @@ trait HasTeams
             $permissionsCollection = $role->permissions;
             /** @var list<string> $rolePermissionNames */
             $rolePermissionNames = array_values(array_map(
-<<<<<<< HEAD
-                static fn (mixed $name): string => is_string($name) ? $name : (string) $name,
-=======
                 static fn (mixed $name): string => SafeStringCastAction::cast($name),
->>>>>>> c5e6021c (.)
                 $permissionsCollection->pluck('name')->all(),
             ));
 

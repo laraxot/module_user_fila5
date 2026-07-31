@@ -20,14 +20,6 @@ use function Pest\Laravel\actingAs;
 
 uses(TestCase::class);
 
-<<<<<<< HEAD
-beforeEach(function (): void {
-    /* @var TestCase $this */
-    $this->skipUnlessUsersTableReady();
-    $this->tenant1 = TenantFactory::new()->createOne(['name' => 'Tenant 1 '.uniqid()]);
-    $this->tenant2 = TenantFactory::new()->createOne(['name' => 'Tenant 2 '.uniqid()]);
-});
-=======
 /** @return array{Tenant, Tenant} */
 function tenantScopeFixture(): array
 {
@@ -38,7 +30,6 @@ function tenantScopeFixture(): array
         TenantFactory::new()->createOne(['name' => 'Tenant 2 '.uniqid()]),
     ];
 }
->>>>>>> c5e6021c (.)
 
 describe('Tenant Scope Console', function (): void {
     test('allows user creation without tenant in console context', function (): void {
@@ -78,15 +69,8 @@ describe('Tenant Scope Console', function (): void {
     });
 
     test('allows querying all users in console context without tenant filter', function (): void {
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $tenant1 = $this->requireTenant1();
-        $tenant2 = $this->requireTenant2();
-        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
-=======
         [$tenant1, $tenant2] = tenantScopeFixture();
         skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
->>>>>>> c5e6021c (.)
 
         $user1 = UserFactory::new()->createOne([
             'name' => 'Tenant 1 User',
@@ -106,14 +90,8 @@ describe('Tenant Scope Console', function (): void {
     });
 
     test('automatically sets tenant id when creating user in http context', function (): void {
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $tenant1 = $this->requireTenant1();
-        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
-=======
         [$tenant1] = tenantScopeFixture();
         skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
->>>>>>> c5e6021c (.)
 
         actingAs(UserFactory::new()->createOne());
 
@@ -131,15 +109,8 @@ describe('Tenant Scope Console', function (): void {
     });
 
     test('filters users by tenant in http context', function (): void {
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $tenant1 = $this->requireTenant1();
-        $tenant2 = $this->requireTenant2();
-        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
-=======
         [$tenant1, $tenant2] = tenantScopeFixture();
         skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
->>>>>>> c5e6021c (.)
 
         $user1 = UserFactory::new()->createOne([
             'name' => 'Tenant 1 User Only',
@@ -191,14 +162,8 @@ describe('Tenant Scope Console', function (): void {
     });
 
     test('allows manual tenant id assignment in console context', function (): void {
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $tenant1 = $this->requireTenant1();
-        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
-=======
         [$tenant1] = tenantScopeFixture();
         skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
->>>>>>> c5e6021c (.)
 
         $email = 'manual-tenant-'.uniqid('', true).'@example.com';
         $user = User::create([
@@ -214,15 +179,8 @@ describe('Tenant Scope Console', function (): void {
     });
 
     test('allows querying users by specific tenant in console', function (): void {
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $tenant1 = $this->requireTenant1();
-        $tenant2 = $this->requireTenant2();
-        $this->skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
-=======
         [$tenant1, $tenant2] = tenantScopeFixture();
         skipUnlessUserColumn('users', 'tenant_id', 'users.tenant_id column missing — tenant scope tests skipped.');
->>>>>>> c5e6021c (.)
 
         UserFactory::new()->count(3)->create(['tenant_id' => $tenant1->id]);
         UserFactory::new()->count(2)->create(['tenant_id' => $tenant2->id]);
@@ -241,12 +199,7 @@ describe('Tenant Scope Console', function (): void {
     });
 
     test('does not crash when booting in console context', function (): void {
-<<<<<<< HEAD
-        /* @var TestCase $this */
-        $this->skipUnlessUsersTableReady();
-=======
         skipUnlessUsersTableReady();
->>>>>>> c5e6021c (.)
 
         $email = 'boot-test-'.uniqid('', true).'@example.com';
         $user = new User([
@@ -262,12 +215,7 @@ describe('Tenant Scope Console', function (): void {
     });
 
     test('skips tenant assignment in console context during creating event', function (): void {
-<<<<<<< HEAD
-        /* @var TestCase $this */
-        $this->skipUnlessUsersTableReady();
-=======
         skipUnlessUsersTableReady();
->>>>>>> c5e6021c (.)
 
         $email = 'creating-event-'.uniqid('', true).'@example.com';
         $user = User::create([

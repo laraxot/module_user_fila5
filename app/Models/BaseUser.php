@@ -4,11 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
-<<<<<<< HEAD
-=======
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
->>>>>>> c5e6021c (.)
 use Filament\Models\Contracts\FilamentUser;
 use Filament\Models\Contracts\HasName;
 use Filament\Models\Contracts\HasTenants;
