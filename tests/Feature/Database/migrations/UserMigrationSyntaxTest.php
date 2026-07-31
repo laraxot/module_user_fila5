@@ -42,8 +42,4 @@ describe('User Migration Syntax', function (): void {
             Assert::assertSame(0, $exitCode, implode(PHP_EOL, $lines));
         }
     });
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> c5e6021c (.)

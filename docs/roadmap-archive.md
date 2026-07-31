@@ -1,17 +1,10 @@
 ---
 title: "👥 USER MODULE - ROADMAP 2025"
 type: concept
-<<<<<<< HEAD:docs/roadmap-2025.md
-tags: [roadmap, 2025]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "roadmap-2025 👥 user module - roadmap 2025"
-=======
 tags: [roadmap, archive]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "roadmap-archive-1 👥 user module - roadmap 2025"
->>>>>>> c5e6021c (.):docs/roadmap-archive.md
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

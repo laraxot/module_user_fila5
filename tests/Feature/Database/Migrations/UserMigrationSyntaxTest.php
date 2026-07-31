@@ -34,21 +34,6 @@ it('does not contain merge conflict markers in user migrations', function (): vo
         Assert::assertNotFalse($contents, "Could not read {$migrationFile}");
         Assert::assertStringNotContainsString('<<<<<<<', $contents, "Merge conflict marker in {$migrationFile}");
     }
-<<<<<<< HEAD
-});
-
-it('has valid php syntax in user migrations', function (): void {
-    foreach (getUserMigrationFiles() as $migrationFile) {
-        $output = [];
-        $exitCode = 0;
-
-        exec('php -l '.escapeshellarg($migrationFile), $output, $exitCode);
-        /** @var list<string> $output */
-        $outputLines = array_map(static fn (mixed $line): string => (string) $line, $output);
-        Assert::assertSame(0, $exitCode, implode(PHP_EOL, $outputLines));
-    }
-=======
->>>>>>> c5e6021c (.)
 });
 
 it('has valid php syntax in user migrations', function (): void {

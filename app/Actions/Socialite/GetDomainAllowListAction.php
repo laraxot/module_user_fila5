@@ -36,11 +36,7 @@ class GetDomainAllowListAction
 
         if (\is_array($res)) {
             return array_values(array_map(
-<<<<<<< HEAD
-                static fn (mixed $item): string => is_string($item) ? $item : (string) $item,
-=======
                 static fn (mixed $item): string => SafeStringCastAction::cast($item),
->>>>>>> c5e6021c (.)
                 $res
             ));
         }

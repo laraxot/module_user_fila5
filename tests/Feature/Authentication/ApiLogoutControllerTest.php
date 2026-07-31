@@ -6,7 +6,6 @@ namespace Modules\User\Tests\Feature\Authentication;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
-use Laravel\Passport\PersonalAccessTokenResult;
 use Modules\User\Database\Factories\DeviceFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\DeviceUser;
@@ -22,14 +21,7 @@ final class ApiLogoutControllerTest extends TestCase
         skipUnlessUserTable('device_user');
         skipUnlessUserTable('devices');
 
-<<<<<<< HEAD
-beforeEach(function (): void {
-    /* @var TestCase $this */
-    $this->skipUnlessUserTable('device_user');
-    $this->skipUnlessUserTable('devices');
-=======
         Config::set('app.key', config('app.key') ?: 'base64:'.base64_encode(random_bytes(32)));
->>>>>>> c5e6021c (.)
 
         $this->user = UserFactory::new()->createOne([
             'email' => 'api-logout-'.uniqid('', true).'@example.com',
@@ -47,22 +39,8 @@ beforeEach(function (): void {
         ]);
     }
 
-<<<<<<< HEAD
-    DeviceUser::query()->create([
-        'user_id' => (string) $this->requireUser()->getKey(),
-        'device_id' => (string) $this->requireDevice()->getKey(),
-        'login_at' => now()->subHour(),
-        'logout_at' => null,
-    ]);
-});
-
-describe('Api Logout Controller', function (): void {
-    test('api logout revokes current personal access token and marks device logout time', function (): void {
-        /** @var TestCase $this */
-=======
     public function test_api_logout_revokes_current_personal_access_token_and_marks_device_logout_time(): void
     {
->>>>>>> c5e6021c (.)
         $user = $this->requireUser();
         $privateKey = storage_path('oauth-private.key');
         $publicKey = storage_path('oauth-public.key');
@@ -79,17 +57,6 @@ describe('Api Logout Controller', function (): void {
             $this->skipTest('Passport token creation unavailable: '.$exception->getMessage());
         }
 
-<<<<<<< HEAD
-        if (null === $personalAccessToken) {
-            $this->skipTest('Passport token creation unavailable.');
-        }
-
-        if (! $personalAccessToken instanceof PersonalAccessTokenResult) {
-            $this->fail('Passport token creation returned unexpected type.');
-        }
-
-=======
->>>>>>> c5e6021c (.)
         $tokenResult = $personalAccessToken;
         $userId = (string) WebmozartAssert::scalar($user->getKey());
 

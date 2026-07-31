@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-
-# LFS image placeholders (corrupted LFS objects removed 2026-07-28)
-docs/img/*.jpg
-docs/img/*.png
-docs/screenshots/*.png
-resources/img/*.png
-resources/favicon.png
-phpstan*
-=======
 
 # MODULE ROOT FORBIDDEN DIRS
 _docs
@@ -28,4 +18,3 @@ workbench
 # Root quality tool configs forbidden in module root
 rector.php
 phpmd*
->>>>>>> c5e6021c (.)
