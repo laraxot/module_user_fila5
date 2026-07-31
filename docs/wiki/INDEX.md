@@ -40,6 +40,13 @@ Indice operativo del wiki User.
 - [comparisons/](./comparisons/): Implementazioni alternative.
 - [decisions/](./decisions/): ADL (Architectural Decision Log).
 - [troubleshooting/](./troubleshooting/): Problemi noti e soluzioni.
+<<<<<<< .merge_file_wHpgAp
+=======
+<<<<<<< HEAD:docs/wiki/index.md
+  - [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md) — push rifiutato per LFS corrotto (squash)
+=======
+>>>>>>> c5e6021c (.):docs/wiki/INDEX.md
+>>>>>>> .merge_file_AJKn2F
   - [git-merge-conflict-inventory](./troubleshooting/git-merge-conflict-inventory.md) — marker merge / rebase
 - [_archive/](./_archive/): Documentazione legacy.
 - [_templates/](./_templates/): Template standard.

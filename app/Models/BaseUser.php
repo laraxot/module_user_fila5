@@ -4,8 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< .merge_file_cMGpej
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
+=======
+<<<<<<< HEAD
+=======
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+
+>>>>>>> c5e6021c (.)
+>>>>>>> .merge_file_hmN8K6
 use Filament\Models\Contracts\FilamentUser;
 use Filament\Models\Contracts\HasName;
 use Filament\Models\Contracts\HasTenants;

@@ -35,7 +35,15 @@ class GetProviderScopesAction
         }
 
         return array_values(array_map(
+<<<<<<< .merge_file_oQdzNC
             static fn (mixed $scope): string => SafeStringCastAction::cast($scope),
+=======
+<<<<<<< HEAD
+            static fn (mixed $scope): string => is_string($scope) ? $scope : (string) $scope,
+=======
+            static fn (mixed $scope): string => SafeStringCastAction::cast($scope),
+>>>>>>> c5e6021c (.)
+>>>>>>> .merge_file_Ns0C7s
             $scopes
         ));
     }

@@ -36,7 +36,15 @@ class GetDomainAllowListAction
 
         if (\is_array($res)) {
             return array_values(array_map(
+<<<<<<< .merge_file_nCmsyE
                 static fn (mixed $item): string => SafeStringCastAction::cast($item),
+=======
+<<<<<<< HEAD
+                static fn (mixed $item): string => is_string($item) ? $item : (string) $item,
+=======
+                static fn (mixed $item): string => SafeStringCastAction::cast($item),
+>>>>>>> c5e6021c (.)
+>>>>>>> .merge_file_L8ecY3
                 $res
             ));
         }
