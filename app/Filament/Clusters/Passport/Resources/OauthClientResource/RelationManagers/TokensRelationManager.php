@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\RelationManagers;
 
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Filament\Notifications\Notification;
@@ -18,6 +16,7 @@ use Illuminate\Support\Carbon;
 use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource;
 use Modules\User\Models\OauthToken;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
