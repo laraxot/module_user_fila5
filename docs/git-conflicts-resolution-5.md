@@ -1,10 +1,17 @@
 ---
 title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
 type: concept
+<<<<<<<< HEAD:docs/git-conflicts-resolution-5.md
 tags: [git, conflicts, resolution]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "git-conflicts-resolution-5 risoluzione conflitti git - modulo user (2025-01-27)"
+========
+tags: [git, conflicts, resolution, 2025]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "git-conflicts-resolution-2025-01-27.deprecated risoluzione conflitti git - modulo user (2025-01-27)"
+>>>>>>>> c5e6021c (.):docs/git-conflicts-resolution-.deprecated.md
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -27,11 +34,19 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
+<<<<<<<< HEAD:docs/git-conflicts-resolution-5.md
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
+========
+- [Indice documentazione User](/laravel/Modules/User/docs/index.md)
+- [README User](/laravel/Modules/User/docs/README.md)
+- [Auth Components Best Practices](/laravel/Modules/User/docs/auth-components-best-practices.md)
+- [Filament Widgets Structure](/laravel/Modules/User/docs/widgets-structure-2.md)
+- [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
+>>>>>>>> c5e6021c (.):docs/git-conflicts-resolution-.deprecated.md
 
 ## File Risolti
 

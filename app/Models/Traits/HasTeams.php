@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Models\Traits;
 
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -188,6 +190,7 @@ trait HasTeams
      *
      * @phpstan-return Collection<int, User>
      */
+<<<<<<< HEAD
     public function allTeamUsers(): Collection // @phpstan-ignore return.type
     {/** @var Collection<int, mixed> $teams */
 <<<<<<< HEAD
@@ -195,12 +198,18 @@ trait HasTeams
 =======
             $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
 >>>>>>> ddd198be (.)
+=======
+    public function allTeamUsers(): Collection
+    {
+        /** @var Collection<int, TeamContract> $teams */
+        $teams = $this->membershipTeams;
+>>>>>>> c5e6021c (.)
         /** @var Collection<int, User> $result */
-        $result = $teams->flatMap( // @phpstan-ignore argument.type
-            /** @param mixed $team @return array<int,User>|Collection<int,User> */
-            static function (mixed $team): array { // @phpstan-ignore return.type
-                /** @var array<int,User> $users */
-                $users = (array) ($team->users ?? []); // @phpstan-ignore property.nonObject
+        $result = $teams->flatMap(
+            /** @return array<int, User> */
+            static function (TeamContract $team): array {
+                /** @var array<int, User> $users */
+                $users = (array) ($team->users ?? []);
 
                 return $users;
             })->unique('id');
@@ -372,7 +381,11 @@ trait HasTeams
             $permissionsCollection = $role->permissions;
             /** @var list<string> $rolePermissionNames */
             $rolePermissionNames = array_values(array_map(
+<<<<<<< HEAD
                 static fn (mixed $name): string => is_string($name) ? $name : (string) $name,
+=======
+                static fn (mixed $name): string => SafeStringCastAction::cast($name),
+>>>>>>> c5e6021c (.)
                 $permissionsCollection->pluck('name')->all(),
             ));
 
