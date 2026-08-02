@@ -13,6 +13,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
@@ -24,6 +25,7 @@ use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
 use Modules\User\Contracts\HasAuthentications;
+use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 use Modules\User\Models\Traits\HasDevices;
 use Modules\User\Models\Traits\HasModules;
@@ -52,10 +54,12 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         HasSpatiePermission::teams insteadof HasTeams;
         HasTeams::teams as membershipTeams;
     }
-    use HasUuids;/**
- * @phpstan-use HasXotFactory<\Modules\User\Database\Factories\BaseUserFactory, BaseUser>
- */
-use HasXotFactory;
+    use HasUuids;
+
+    /**
+     * @phpstan-use HasXotFactory<Factory<static>, static>
+     */
+    use HasXotFactory;
 
     use InteractsWithMedia;
     use Notifiable;
