@@ -9,7 +9,6 @@ use Filament\Models\Contracts\HasName;
 use Filament\Models\Contracts\HasTenants;
 use Filament\Panel;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
@@ -19,6 +18,7 @@ use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
@@ -30,8 +30,6 @@ use Modules\User\Models\Traits\HasModules;
 use Modules\User\Models\Traits\HasSocialite;
 use Modules\User\Models\Traits\HasSpatiePermission;
 use Modules\User\Models\Traits\HasTeams;
-use Modules\User\Models\AuthenticationLog;
-use Modules\User\Models\OauthClient;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
@@ -260,9 +258,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     }
 
     /**
-     * @return Collection<int, \Modules\User\Contracts\TeamContract>
-     *
-     * @phpstan-return Collection<int, \Modules\User\Contracts\TeamContract>
+     * @return Collection<int, TeamContract>
      */
     public function treeSons(): Collection
     {
@@ -270,9 +266,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     }
 
     /**
-     * @return MorphMany<Notification, static>
-     *
-     * @phpstan-return MorphMany<Notification, static>
+     * @return MorphMany<Notification, $this>
      */
     public function notifications(): MorphMany
     {
@@ -280,9 +274,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     }
 
     /**
-     * @return MorphOne<AuthenticationLog, static>
-     *
-     * @phpstan-return MorphOne<AuthenticationLog, static>
+     * @return MorphOne<AuthenticationLog, $this>
      */
     public function latestAuthentication(): MorphOne
     {
@@ -368,9 +360,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     }
 
     /**
-     * @return MorphMany<OauthClient, static>
-     *
-     * @phpstan-return MorphMany<OauthClient, static>
+     * @return MorphMany<OauthClient, $this>
      */
     public function clients(): MorphMany
     {
@@ -384,7 +374,12 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function validateForPassportPasswordGrant(string $password): bool
     {
-        return Hash::check($password, (string) $this->password);
+        $hashedPassword = $this->password;
+        if (! is_string($hashedPassword)) {
+            return false;
+        }
+
+        return Hash::check($password, $hashedPassword);
     }
 
     /** @return array<string, string> */
