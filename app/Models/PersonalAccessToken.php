@@ -39,7 +39,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class PersonalAccessToken extends Model
 {
-    /** @phpstan-ignore-next-line */
+    /** @phpstan-use HasXotFactory<\Modules\User\Database\Factories\PersonalAccessTokenFactory, PersonalAccessToken> */
     use HasXotFactory;
 
     protected $connection = 'user';
