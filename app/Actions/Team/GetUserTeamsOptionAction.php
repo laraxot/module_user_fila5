@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\Team;
 
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-
 use Modules\User\Models\TeamUser;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 class GetUserTeamsOptionAction

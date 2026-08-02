@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
-use Modules\User\Database\Factories\PermissionFactory;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
@@ -15,7 +14,7 @@ class Permission extends SpatiePermission
 {/**
  * @phpstan-use HasXotFactory<\Modules\User\Database\Factories\PermissionFactory, Permission>
  */
-use HasXotFactory;
+    use HasXotFactory;
 
     use RelationX;
     use Updater;

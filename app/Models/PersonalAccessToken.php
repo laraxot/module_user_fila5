@@ -5,14 +5,13 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Modules\User\Database\Factories\PersonalAccessTokenFactory;
 use Modules\Xot\Models\Traits\HasXotFactory;
 
 class PersonalAccessToken extends Model
 {/**
  * @phpstan-use HasXotFactory<\Modules\User\Database\Factories\PersonalAccessTokenFactory, PersonalAccessToken>
  */
-use HasXotFactory;
+    use HasXotFactory;
 
     protected $connection = 'user';
 

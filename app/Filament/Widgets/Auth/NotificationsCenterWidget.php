@@ -47,7 +47,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
 
         /** @var DatabaseNotification|Notification|null $notification */
         $notification = $user->notifications()->whereKey($notificationId)->first();
-        if ($notification !== null) {
+        if (null !== $notification) {
             $notification->markAsRead();
         }
 

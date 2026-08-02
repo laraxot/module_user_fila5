@@ -13,7 +13,6 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
@@ -25,7 +24,6 @@ use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
 use Modules\User\Contracts\HasAuthentications;
-use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 use Modules\User\Models\Traits\HasDevices;
 use Modules\User\Models\Traits\HasModules;
@@ -224,7 +222,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     public function canAccessPanel(Panel $panel): bool
     {
         // $panel->default('admin');
-        if ($panel->getId() !== 'admin') {
+        if ('admin' !== $panel->getId()) {
             $role = $panel->getId();
             /*
              * $xot = XotData::make();
@@ -257,7 +255,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function treeSons(): Collection
     {
-        return $this->membershipTeams ?? new Collection;
+        return $this->membershipTeams ?? new Collection();
     }
 
     public function notifications(): MorphMany
@@ -272,22 +270,22 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function getFullNameAttribute(?string $value): string
     {
-        if ($value !== null) {
+        if (null !== $value) {
             return $value;
         }
 
         $fullName = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
 
-        return $fullName !== '' ? $fullName : ($this->email ?? 'User');
+        return '' !== $fullName ? $fullName : ($this->email ?? 'User');
     }
 
     public function getNameAttribute(?string $value): string
     {
-        if ($value !== null) {
+        if (null !== $value) {
             return $value;
         }
 
-        if ($this->getKey() === null) {
+        if (null === $this->getKey()) {
             return $this->email ?? 'User';
         }
 
@@ -302,7 +300,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
                 return true;
             }
 
-            return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
+            return \PHP_SAPI === 'cli' && ('testing' === getenv('APP_ENV') || 'testing' === getenv('ENV'));
         })();
         if ($isTesting) {
             // Do not call update() here to avoid hitting the database.
@@ -313,8 +311,8 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
         try {
             $value = $candidate;
-            while (self::firstWhere(['name' => $value]) !== null) {
-                $i++;
+            while (null !== self::firstWhere(['name' => $value])) {
+                ++$i;
                 $value = $name.'-'.$i;
             }
             $this->update(['name' => $value]);
