@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\DatabaseNotification as BaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
@@ -24,13 +25,14 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static DatabaseNotificationCollection<int, static> get($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static> all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static> get($columns = ['*'])
- * @method static \Modules\User\Database\Factories\NotificationFactory factory($count = null, $state = [])
+ * @method static Factory<self> factory($count = null, $state = [])
  *
  * @mixin \Eloquent
  */
 class Notification extends BaseNotification
 {
-    /** @phpstan-use HasXotFactory<\Modules\User\Database\Factories\NotificationFactory, Notification> */
+    /**
+     */
     use HasXotFactory;
 
     protected $connection = 'user';
