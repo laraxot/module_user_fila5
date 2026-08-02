@@ -16,10 +16,9 @@ use Spatie\Permission\Models\Role as SpatieRole;
 use Webmozart\Assert\Assert;
 
 class Role extends SpatieRole
-{/**
- * @phpstan-use HasXotFactory<\Modules\User\Database\Factories\RoleFactory, Role>
- */
-use HasXotFactory;
+{
+    /** @phpstan-use HasXotFactory<RoleFactory, Role> */
+    use HasXotFactory;
 
     use RelationX;
     use Updater;
@@ -54,6 +53,9 @@ use HasXotFactory;
         return $table;
     }
 
+    /**
+     * @return BelongsTo<Model, $this>
+     */
     public function team(): BelongsTo
     {
         $xotData = XotData::make();
@@ -63,6 +65,9 @@ use HasXotFactory;
         return $this->belongsTo($teamClass);
     }
 
+    /**
+     * @return BelongsToMany<Permission, $this>
+     */
     public function permissions(): BelongsToMany
     {
         return $this->belongsToManyX(Permission::class);
