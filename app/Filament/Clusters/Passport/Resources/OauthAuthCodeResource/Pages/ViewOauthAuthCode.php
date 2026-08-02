@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages;
 
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
@@ -16,6 +14,7 @@ use Illuminate\Support\Str;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource;
 use Modules\User\Filament\Resources\UserResource;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 
