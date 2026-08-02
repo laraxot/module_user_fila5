@@ -9,8 +9,10 @@ use Modules\User\Database\Factories\PersonalAccessTokenFactory;
 use Modules\Xot\Models\Traits\HasXotFactory;
 
 class PersonalAccessToken extends Model
-{
-    use HasXotFactory;
+{/**
+ * @phpstan-use HasXotFactory<\Modules\User\Database\Factories\PersonalAccessTokenFactory, PersonalAccessToken>
+ */
+use HasXotFactory;
 
     protected $connection = 'user';
 
