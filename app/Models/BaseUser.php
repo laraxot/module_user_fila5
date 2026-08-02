@@ -30,6 +30,8 @@ use Modules\User\Models\Traits\HasModules;
 use Modules\User\Models\Traits\HasSocialite;
 use Modules\User\Models\Traits\HasSpatiePermission;
 use Modules\User\Models\Traits\HasTeams;
+use Modules\User\Models\AuthenticationLog;
+use Modules\User\Models\OauthClient;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
@@ -40,6 +42,10 @@ use Parental\HasChildren;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
+/**
+ * @property string $password User password (hashed)
+ * @property string $email User email address
+ */
 abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
 {
     use HasApiTokens;
@@ -253,16 +259,31 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         return (string) ($this->name ?? $this->email);
     }
 
+    /**
+     * @return Collection<int, \Modules\User\Contracts\TeamContract>
+     *
+     * @phpstan-return Collection<int, \Modules\User\Contracts\TeamContract>
+     */
     public function treeSons(): Collection
     {
         return $this->membershipTeams ?? new Collection();
     }
 
+    /**
+     * @return MorphMany<Notification, static>
+     *
+     * @phpstan-return MorphMany<Notification, static>
+     */
     public function notifications(): MorphMany
     {
         return $this->morphMany(Notification::class, 'notifiable');
     }
 
+    /**
+     * @return MorphOne<AuthenticationLog, static>
+     *
+     * @phpstan-return MorphOne<AuthenticationLog, static>
+     */
     public function latestAuthentication(): MorphOne
     {
         return $this->morphOne(AuthenticationLog::class, 'authenticatable')->latestOfMany();
@@ -346,6 +367,11 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         $this->attributes['password'] = $value;
     }
 
+    /**
+     * @return MorphMany<OauthClient, static>
+     *
+     * @phpstan-return MorphMany<OauthClient, static>
+     */
     public function clients(): MorphMany
     {
         return $this->morphMany(OauthClient::class, 'owner');
