@@ -190,26 +190,10 @@ trait HasTeams
      *
      * @phpstan-return Collection<int, User>
      */
-<<<<<<< .merge_file_wBZvgC
-=======
-<<<<<<< HEAD
-    public function allTeamUsers(): Collection // @phpstan-ignore return.type
-    {/** @var Collection<int, mixed> $teams */
-<<<<<<< HEAD
-                        $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
-=======
-            $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
->>>>>>> ddd198be (.)
-=======
->>>>>>> .merge_file_F69hOd
     public function allTeamUsers(): Collection
     {
         /** @var Collection<int, TeamContract> $teams */
         $teams = $this->membershipTeams;
-<<<<<<< .merge_file_wBZvgC
-=======
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_F69hOd
         /** @var Collection<int, User> $result */
         $result = $teams->flatMap(
             /** @return array<int, User> */
@@ -387,15 +371,7 @@ trait HasTeams
             $permissionsCollection = $role->permissions;
             /** @var list<string> $rolePermissionNames */
             $rolePermissionNames = array_values(array_map(
-<<<<<<< .merge_file_wBZvgC
                 static fn (mixed $name): string => SafeStringCastAction::cast($name),
-=======
-<<<<<<< HEAD
-                static fn (mixed $name): string => is_string($name) ? $name : (string) $name,
-=======
-                static fn (mixed $name): string => SafeStringCastAction::cast($name),
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_F69hOd
                 $permissionsCollection->pluck('name')->all(),
             ));
 

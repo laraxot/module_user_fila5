@@ -47,7 +47,7 @@ When fixing an existing installation:
 
 ## 2026-03-12 Incident
 
-In `base_predict_fila5`, the runtime failed with:
+In `base_ptvx_fila5`, the runtime failed with:
 
 - insert into `profiles` ... `uuid` ...
 - SQLSTATE `42S22`

@@ -4,16 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit;
 
-<<<<<<< .merge_file_ZuSkQA
 use PHPUnit\Framework\Assert;
 
-=======
-<<<<<<< HEAD
-=======
-use PHPUnit\Framework\Assert;
-
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_uleVBK
 use function Safe\file_get_contents;
 
 test('it does not reference the comment module anywhere under user app', function (): void {

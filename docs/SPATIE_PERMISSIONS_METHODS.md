@@ -403,7 +403,7 @@ public function assignAdminRole(User $user): void
 ### Setup Test User
 
 ```php
-use Modules\Fixcity\Models\User;
+use Modules\Application\Models\User;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 

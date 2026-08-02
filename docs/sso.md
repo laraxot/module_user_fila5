@@ -27,7 +27,7 @@ related:
 
 ## 🎯 OVERVIEW
 
-Implementazione Single Sign-On (SSO) per FixCity con supporto SAML 2.0 e OpenID Connect (OIDC), permettendo l'integrazione con provider enterprise come Azure AD, Google Workspace, Okta.
+Implementazione Single Sign-On (SSO) per Application con supporto SAML 2.0 e OpenID Connect (OIDC), permettendo l'integrazione con provider enterprise come Azure AD, Google Workspace, Okta.
 
 ---
 

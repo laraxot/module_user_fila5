@@ -4,11 +4,7 @@ type: concept
 tags: [git, conflicts, resolution]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<<< HEAD:docs/git-conflicts-resolution-3.md
-qmd: "git-conflicts-resolution-3 risoluzione conflitti git - modulo user (2025-01-27)"
-========
 qmd: "git-conflicts-resolution-1 risoluzione conflitti git - modulo user (2025-01-27)"
->>>>>>>> c5e6021c (.):docs/git-conflicts-resolution-local-swarm-backup.md
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

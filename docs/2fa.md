@@ -27,7 +27,7 @@ related:
 
 ## 🎯 OVERVIEW
 
-Implementazione completa del sistema di autenticazione a due fattori (2FA) per FixCity utilizzando TOTP (Time-based One-Time Password) con supporto per recovery codes.
+Implementazione completa del sistema di autenticazione a due fattori (2FA) per Application utilizzando TOTP (Time-based One-Time Password) con supporto per recovery codes.
 
 ---
 

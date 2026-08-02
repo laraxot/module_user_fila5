@@ -10,7 +10,6 @@ use Filament\Actions\EditAction;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 /**

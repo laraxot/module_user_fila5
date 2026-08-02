@@ -1,8 +1,8 @@
-# UserFactory Integration - Modulo User e SaluteOra
+# UserFactory Integration - Modulo User e Application
 
 ## Overview
 
-Questo documento descrive l'integrazione tra la `UserFactory` del modulo SaluteOra e la base `BaseUser` del modulo User, evidenziando l'architettura Single Table Inheritance (STI) implementata con Parental.
+Questo documento descrive l'integrazione tra la `UserFactory` del modulo Application e la base `BaseUser` del modulo User, evidenziando l'architettura Single Table Inheritance (STI) implementata con Parental.
 
 ## Architettura STI
 
@@ -10,10 +10,10 @@ Questo documento descrive l'integrazione tra la `UserFactory` del modulo SaluteO
 
 ```php
 BaseUser (Modules\User\Models\BaseUser)
-├── User (Modules\SaluteOra\Models\User) - Base for STI
-    ├── Patient (Modules\SaluteOra\Models\Patient) - uses HasParent
-    ├── Doctor (Modules\SaluteOra\Models\Doctor) - uses HasParent  
-    └── Admin (Modules\SaluteOra\Models\Admin) - uses HasParent
+├── User (Modules\Application\Models\User) - Base for STI
+    ├── Patient (Modules\Application\Models\Patient) - uses HasParent
+    ├── Doctor (Modules\Application\Models\Doctor) - uses HasParent  
+    └── Admin (Modules\Application\Models\Admin) - uses HasParent
 ```
 
 ### Database Connection Strategy
@@ -22,7 +22,7 @@ BaseUser (Modules\User\Models\BaseUser)
 // BaseUser (Modulo User)
 protected $connection = 'user'; // Default connection
 
-// User (Modulo SaluteOra) 
+// User (Modulo Application) 
 protected $connection = 'salute_ora'; // Override for healthcare domain
 ```
 
@@ -41,11 +41,11 @@ use HasRoles;            // Permission management
 use HasAuthenticationLogTrait; // Authentication logging
 ```
 
-### Modulo SaluteOra (User)
+### Modulo Application (User)
 Aggiunge trait specifici per il dominio sanitario:
 
 ```php
-// In SaluteOra\Models\User
+// In Application\Models\User
 use LogsActivity;        // Spatie Activity Log
 use HasStates;           // Spatie Model States
 use HasGdpr;             // GDPR compliance
@@ -65,22 +65,22 @@ use HasParent;           // Parental STI support
 
 ### Factory Ownership
 
-La `UserFactory` è implementata **nel modulo SaluteOra** perché:
+La `UserFactory` è implementata **nel modulo Application** perché:
 
 1. **Domain Specificity**: I dati sono specifici del dominio sanitario
-2. **Enum Integration**: Usa `UserTypeEnum` e `UserState` del modulo SaluteOra
+2. **Enum Integration**: Usa `UserTypeEnum` e `UserState` del modulo Application
 3. **Business Logic**: Gestisce logica sanitaria (ISEE, pregnancy, certifications)
 4. **Connection Override**: Usa database 'salute_ora'
 
 ### Integration Pattern
 
 ```php
-// Factory nel modulo SaluteOra
-namespace Modules\SaluteOra\Database\Factories;
+// Factory nel modulo Application
+namespace Modules\Application\Database\Factories;
 
 class UserFactory extends Factory
 {
-    protected $model = \Modules\SaluteOra\Models\User::class;
+    protected $model = \Modules\Application\Models\User::class;
     
     // Genera dati compatibili con tutti i modelli della gerarchia
     public function definition(): array
@@ -91,7 +91,7 @@ class UserFactory extends Factory
             'email' => $this->faker->unique()->safeEmail(),
             'password' => Hash::make('password'),
             
-            // Campi User SaluteOra (specifici dominio)
+            // Campi User Application (specifici dominio)
             'type' => UserTypeEnum::PATIENT,
             'state' => Pending::class,
             'is_active' => true,
@@ -170,7 +170,7 @@ public function admin(): static
 
 ### Field Mapping
 
-| BaseUser (User Module) | SaluteOra User | Usage |
+| BaseUser (User Module) | Application User | Usage |
 |------------------------|----------------|-------|
 | `name` | `name` | Full name compatibility |
 | `email` | `email` | Authentication |
@@ -194,7 +194,7 @@ protected function casts(): array
     ];
 }
 
-// SaluteOra User - Domain-specific casts
+// Application User - Domain-specific casts
 protected function casts(): array
 {
     return array_merge(parent::casts(), [
@@ -257,12 +257,12 @@ expect($user->isActive())->toBeTrue();
 ### 1. Modular Design
 
 - **BaseUser**: Campi generici per autenticazione e autorizzazione
-- **SaluteOra User**: Campi specifici del dominio sanitario
+- **Application User**: Campi specifici del dominio sanitario
 - **STI Children**: Campi altamente specializzati per tipo
 
 ### 2. Factory Responsibility
 
-- **UserFactory in SaluteOra**: Genera dati completi per testing del dominio
+- **UserFactory in Application**: Genera dati completi per testing del dominio
 - **Compatibility**: Rispetta i vincoli del BaseUser del modulo User
 - **Extensibility**: Facilmente estendibile per nuovi tipi di utente
 
@@ -324,25 +324,25 @@ public function test_bulk_sti_creation()
 
 ### 2. Domain Separation
 - Modulo User: Generics per autenticazione/autorizzazione
-- Modulo SaluteOra: Specifics per dominio sanitario
+- Modulo Application: Specifics per dominio sanitario
 - Clear boundaries e responsibilities
 
 ### 3. Testing Flexibility
 - Test generici nel modulo User
-- Test specifici sanitari nel modulo SaluteOra
+- Test specifici sanitari nel modulo Application
 - Factory supporta entrambi i livelli
 
 ### 4. Maintenance
 - Changes al BaseUser automaticamente ereditati
-- Healthcare-specific changes isolati nel modulo SaluteOra
+- Healthcare-specific changes isolati nel modulo Application
 - Factory evolution indipendente
 
 ## Links to Documentation
 
-### SaluteOra Module
-- [UserFactory Improvements Analysis](../SaluteOra/docs/factories/UserFactory-improvements-analysis.md)
-- [Model Architecture](../SaluteOra/docs/model-architecture.md)
-- [STI Implementation](../SaluteOra/docs/model-inheritance.md)
+### Application Module
+- [UserFactory Improvements Analysis](../Application/docs/factories/UserFactory-improvements-analysis.md)
+- [Model Architecture](../Application/docs/model-architecture.md)
+- [STI Implementation](../Application/docs/model-inheritance.md)
 
 ### User Module
 - [BaseUser Documentation](../User/docs/baseuser_conflicts.md)

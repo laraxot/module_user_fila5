@@ -1,10 +1,10 @@
 ---
-title: "User — provision MySQL locale marco + database fixcity_user"
+title: "User — provision MySQL locale marco + database application_user"
 type: concept
 tags: [user, mysql, local, env, database]
 created: 2026-06-12
 updated: 2026-06-12
-qmd: "User module local mysql marco fixcity_user provision migrate login"
+qmd: "User module local mysql marco application_user provision migrate login"
 issues:
 discussions:
 related:
@@ -24,7 +24,7 @@ related:
 
 `Access denied for user 'marco'@'localhost'` sulla connessione `user` → credenziali/host MySQL.
 
-`Table 'fixcity_user.users' doesn't exist` → migrazioni non eseguite su `--database=user`.
+`Table 'application_user.users' doesn't exist` → migrazioni non eseguite su `--database=user`.
 
 ## Setup locale (idempotente)
 
@@ -36,17 +36,17 @@ cd laravel && php artisan migrate --database=user
 
 ## Variabili `.env`
 
-| Chiave | Esempio Fixcity |
+| Chiave | Esempio Application |
 |--------|-----------------|
-| `DB_DATABASE_USER` | `fixcity_user` |
+| `DB_DATABASE_USER` | `application_user` |
 | `DB_USERNAME_USER` | `marco` |
 | `DB_PASSWORD_USER` | `marco` |
 
-La connessione Laravel `user` è mappata da `config/local/fixcity/database.php` (`user_mariadb` quando `DB_CONNECTION=mariadb`).
+La connessione Laravel `user` è mappata da `config/local/application/database.php` (`user_mariadb` quando `DB_CONNECTION=mariadb`).
 
 ## Utente applicativo
 
-Dopo migrate, creare l'utente FO (email da `FIXCITY_ADMIN_EMAIL`) con password nota per dev — es. via factory/`XotData::getUserClass()`.
+Dopo migrate, creare l'utente FO (email da `APPLICATION_ADMIN_EMAIL`) con password nota per dev — es. via factory/`XotData::getUserClass()`.
 
 ## Canon
 

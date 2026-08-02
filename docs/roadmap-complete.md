@@ -23,7 +23,7 @@ related:
 ## 📊 Business Logic
 
 ### Scopo Principale
-Il modulo **User** è il cuore dell'autenticazione, autorizzazione e gestione utenti della piattaforma FixCity. Gestisce cittadini, operatori, amministratori con permessi granulari e profili personalizzabili.
+Il modulo **User** è il cuore dell'autenticazione, autorizzazione e gestione utenti della piattaforma Application. Gestisce cittadini, operatori, amministratori con permessi granulari e profili personalizzabili.
 
 ### Responsabilità
 - ✅ Autenticazione (Laravel Auth + Socialite)
@@ -425,7 +425,7 @@ La cartella `docs/` contiene ~300+ file con molti duplicati:
 
 ### Documentazione Correlata
 - [Roadmap Progetto](../../../docs/roadmap_project.md)
-- [Modulo Fixcity](../../fixcity/docs/roadmap.md)
+- [Modulo Application](../../application/docs/roadmap.md)
 - [Modulo Tenant](../../tenant/docs/readme.md)
 - [Spatie Permissions](https://spatie.be/docs/laravel-permission)
 

@@ -1,10 +1,10 @@
 ---
-title: "Widget Translation Rules - FixCity Project"
+title: "Widget Translation Rules - Application Project"
 type: rule
 tags: [widget, translation, rules]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "widget-translation-rules widget translation rules - fixcity project"
+qmd: "widget-translation-rules widget translation rules - application project"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -18,7 +18,7 @@ related:
   - "./dependency-rules.md"
 ---
 
-# Widget Translation Rules - FixCity Project
+# Widget Translation Rules - Application Project
 
 ## Core Principles
 ### Translation File Structure
@@ -167,4 +167,4 @@ This document serves as a reference for:
 - Translation implementation patterns
 - Code quality requirements
 - Documentation standards
-All widget development should follow these rules to maintain consistency and quality across the FixCity project.
+All widget development should follow these rules to maintain consistency and quality across the Application project.

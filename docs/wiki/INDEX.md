@@ -26,7 +26,7 @@ Indice operativo del wiki User.
 ## AI / second brain (root)
 
 - [ai-harness-user-discipline](./concepts/ai-harness-user-discipline.md)
-- [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) — tips 001–022
+- [hackernoon-ai-coding-tips-application-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-application-map.md) — tips 001–022
 - [bmad/architecture](../../../../docs/wiki/bmad/architecture.md) — pilastri schema/doc (ADR)
 - [architecture-module-directory-structure](../../../../docs/wiki/bmad/architecture-module-directory-structure.md) — PHP solo in `app/`
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) — stub → canon Xot
@@ -40,12 +40,9 @@ Indice operativo del wiki User.
 - [comparisons/](./comparisons/): Implementazioni alternative.
 - [decisions/](./decisions/): ADL (Architectural Decision Log).
 - [troubleshooting/](./troubleshooting/): Problemi noti e soluzioni.
-<<<<<<< .merge_file_wHpgAp
-=======
 <<<<<<< HEAD:docs/wiki/index.md
   - [git-push-lfs-missing-objects](./troubleshooting/git-push-lfs-missing-objects.md) — push rifiutato per LFS corrotto (squash)
 =======
->>>>>>> c5e6021c (.):docs/wiki/INDEX.md
 >>>>>>> .merge_file_AJKn2F
   - [git-merge-conflict-inventory](./troubleshooting/git-merge-conflict-inventory.md) — marker merge / rebase
 - [_archive/](./_archive/): Documentazione legacy.
@@ -55,7 +52,7 @@ Indice operativo del wiki User.
 
 - [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Vincoli strutturali strict.
 - [llm-wiki-standard](../../../../docs/project/karpathy-llm-wiki-adoption.md): Mapping repository e ciclo di vita conoscenza.
-- [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md): Mappa tips 001-022.
+- [hackernoon-ai-coding-tips-application-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-application-map.md): Mappa tips 001-022.
 - [laravel-socialite](../../../../docs/wiki/concepts/laravel-socialite.md): OAuth social authentication.
 - [laravel-permission](../../../../docs/wiki/concepts/laravel-permission.md): RBAC Spatie Laravel Permission.
 
@@ -114,7 +111,7 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 
 ## Bad Practices
 
-- NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
+- NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/platform/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
 - NON usare `dehydrated(false)` nei trait - blocca salvataggio (vedi Geo CoordinatePicker fix)
 - NON modificare `laravel/config/permission.php` → `table_names` per fix 1146 (vedi [bugfix-permission-table-names-singular](../bugfix-permission-table-names-singular.md))
 - NON hardcodare nomi tabella pivot su modelli (`$table`) — usare `getTable()` da config

@@ -27,7 +27,7 @@ Examples:
 - user::auth.login.page.meta_title.label -> page meta title label for login
 
 Why:
-- Ensures predictable namespacing across modules and themes
+- Ensures deterministic namespacing across modules and themes
 - Easier to programmatically find translation entries
 - Prevents collisions and improves maintainability
 

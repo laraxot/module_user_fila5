@@ -466,7 +466,7 @@ User Module
 
 ## 🔗 INTEGRATION POINTS
 
-### 🎫 Fixcity Module
+### 🎫 Application Module
 - [ ] User-ticket relationships
 - [ ] Profile-ticket associations
 - [ ] Role-based ticket access

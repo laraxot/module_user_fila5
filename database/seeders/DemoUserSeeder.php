@@ -13,7 +13,7 @@ use Modules\User\Models\User;
 use Modules\Xot\Datas\XotData;
 
 /**
- * Utenti demo deterministici per FO Fixcity (login + owner ticket).
+ * Utenti demo deterministici per la demo application (login + owner ticket).
  *
  * Idempotente: updateOrCreate su email.
  */
@@ -43,8 +43,8 @@ class DemoUserSeeder extends Seeder
                 'role' => 'super-admin',
             ],
             [
-                'email' => 'cittadino@fixcity.demo',
-                'name' => 'Cittadino Demo',
+                'email' => 'citizen@demo.local',
+                'name' => 'Demo Citizen',
                 'password' => 'password123',
                 'type' => 'customer_user',
                 'role' => 'user',

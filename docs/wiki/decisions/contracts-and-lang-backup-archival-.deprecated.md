@@ -82,8 +82,8 @@ cartelle `archive.bak`.
   pochi MB liberi e fluttuanti). Non eseguibile in modo affidabile in questa sessione.
 - **Pest** (`Modules/User/tests`): 1013/1015 test falliti per causa ambientale
   pre-esistente e non correlata: manca il file
-  `database/predict_user_test.sqlite` (esistono solo `database.sqlite`,
-  `database_test.sqlite`, `predict_user.sqlite`). Nessun fallimento menziona
+  `database/forecast_user_test.sqlite` (esistono solo `database.sqlite`,
+  `database_test.sqlite`, `forecast_user.sqlite`). Nessun fallimento menziona
   `ModelContract`, `PassportHasApiTokensContract` o `UserContract.php.to_xot`.
 
 ## Blocchi ambientali (non correlati al codice)
@@ -91,7 +91,7 @@ cartelle `archive.bak`.
 1. Spazio disco quasi esaurito sulla partizione root (`/`, 460G al 100%, pochi MB
    liberi, fluttuanti) — ha causato fallimenti intermittenti di comandi con output
    ampio durante questa sessione.
-2. Manca `database/predict_user_test.sqlite` per i test Pest del modulo User.
+2. Manca `database/forecast_user_test.sqlite` per i test Pest del modulo User.
 3. PHPInsights non trova `composer.lock` nonostante sia presente in `laravel/`.
 
 Questi tre punti sono pre-esistenti all'intervento e vanno segnalati/risolti a livello

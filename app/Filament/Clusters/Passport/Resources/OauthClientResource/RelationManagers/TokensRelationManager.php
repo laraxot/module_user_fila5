@@ -17,7 +17,6 @@ use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource;
 use Modules\User\Models\OauthToken;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 use function Safe\json_encode;
@@ -46,7 +45,7 @@ class TokensRelationManager extends XotBaseRelationManager
             'scopes' => TextColumn::make('scopes')
                 ->limit(30)
                 ->tooltip(function (mixed $state): ?string {
-                    if (null === $state) {
+                    if ($state === null) {
                         return null;
                     }
                     if (is_array($state)) {

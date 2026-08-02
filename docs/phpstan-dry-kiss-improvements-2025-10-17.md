@@ -22,7 +22,7 @@ Il modulo User è stato analizzato e migliorato per conformità PHPStan Level 10
 **Before**:
 ```php
 /**
- * @property-read \Modules\Fixcity\Models\Profile|null $creator
+ * @property-read \Modules\Application\Models\Profile|null $creator
  */
 ```
 
@@ -179,10 +179,10 @@ class Permission extends SpatiePermission
    }
    ```
 
-2. **Don't use Fixcity references**:
+2. **Don't use Application references**:
    ```php
    /**
-    * @property-read \Modules\Fixcity\Models\Profile|null $creator // ❌ Class doesn't exist!
+    * @property-read \Modules\Application\Models\Profile|null $creator // ❌ Class doesn't exist!
     */
    ```
 

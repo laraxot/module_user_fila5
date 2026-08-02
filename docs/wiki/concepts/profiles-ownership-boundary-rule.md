@@ -22,7 +22,7 @@ related:
 
 ## Regola
 
-Nel contesto Laraxot di questo repository, il contratto schema di `profiles` e' owner del modulo Fixcity.
+Nel contesto Laraxot di questo repository, il contratto schema di `profiles` e' owner del modulo Application.
 
 ## Implicazioni
 
@@ -39,4 +39,4 @@ Nel contesto Laraxot di questo repository, il contratto schema di `profiles` e' 
 ## Riferimenti
 
 - [profiles uuid single migration rule](../../../../../docs/wiki/concepts/profiles-uuid-single-migration-rule.md)
-- [fixcity profiles uuid contract](../../../../Fixcity/docs/wiki/concepts/profiles-uuid-contract.md)
+- [application profiles uuid contract](../../../../Application/docs/wiki/concepts/profiles-uuid-contract.md)

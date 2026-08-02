@@ -36,7 +36,7 @@ related:
 
 ## Panoramica
 
-Questo documento fornisce un'analisi corretta dell'implementazione attuale del file `logout.blade.php` situato in `Themes/One/resources/views/pages/auth/`, identifica problemi e propone miglioramenti in linea con le convenzioni di SaluteOra.
+Questo documento fornisce un'analisi corretta dell'implementazione attuale del file `logout.blade.php` situato in `Themes/One/resources/views/pages/auth/`, identifica problemi e propone miglioramenti in linea con le convenzioni di Application.
 
 
 ## Panoramica

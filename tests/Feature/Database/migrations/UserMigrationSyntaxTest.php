@@ -42,12 +42,4 @@ describe('User Migration Syntax', function (): void {
             Assert::assertSame(0, $exitCode, implode(PHP_EOL, $lines));
         }
     });
-<<<<<<< .merge_file_9YkPlC
 });
-=======
-<<<<<<< HEAD
-});
-=======
-});
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_yJLWEW

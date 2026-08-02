@@ -21,18 +21,8 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-<<<<<<< .merge_file_quzlAc
 function makeListUsersPage(): ListUsers
 {
-=======
-<<<<<<< HEAD
-beforeEach(function (): void {
-    /* @var TestCase $this */
-=======
-function makeListUsersPage(): ListUsers
-{
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_2m45M7
     try {
         $panel = Filament::getPanel('user::admin');
     } catch (\Exception $e) {
@@ -63,44 +53,17 @@ describe('List Users', function (): void {
     });
 
     test('list users page extends correct base class', function (): void {
-<<<<<<< .merge_file_quzlAc
         $listUsersPage = makeListUsersPage();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
-=======
-        $listUsersPage = makeListUsersPage();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_2m45M7
         Assert::assertInstanceOf(BaseListUsers::class, $listUsersPage);
     });
 
     test('list users page can be instantiated', function (): void {
-<<<<<<< .merge_file_quzlAc
         $listUsersPage = makeListUsersPage();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
-=======
-        $listUsersPage = makeListUsersPage();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_2m45M7
         Assert::assertInstanceOf(ListUsers::class, $listUsersPage);
     });
 
     test('list users page has correct table columns', function (): void {
-<<<<<<< .merge_file_quzlAc
         $listUsersPage = makeListUsersPage();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
-=======
-        $listUsersPage = makeListUsersPage();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_2m45M7
         $columns = $listUsersPage->getTableColumns();
 
         Assert::assertArrayHasKey('name', $columns);
@@ -116,32 +79,14 @@ describe('List Users', function (): void {
     });
 
     test('list users page has correct table filters', function (): void {
-<<<<<<< .merge_file_quzlAc
         $listUsersPage = makeListUsersPage();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
-=======
-        $listUsersPage = makeListUsersPage();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_2m45M7
         $filters = $listUsersPage->getTableFilters();
 
         Assert::assertCount(0, $filters);
     });
 
     test('list users page has correct table actions', function (): void {
-<<<<<<< .merge_file_quzlAc
         $listUsersPage = makeListUsersPage();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
-=======
-        $listUsersPage = makeListUsersPage();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_2m45M7
         $actions = $listUsersPage->getTableActions();
 
         Assert::assertArrayHasKey('change_password', $actions);
@@ -151,16 +96,7 @@ describe('List Users', function (): void {
     });
 
     test('list users page can display users', function (): void {
-<<<<<<< .merge_file_quzlAc
         $users = createMasterAdminUsers();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $users = $this->requireUsers();
-=======
-        $users = createMasterAdminUsers();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_2m45M7
         $createdUserIds = $users->pluck('id');
         $testUsers = User::whereIn('id', $createdUserIds)->get();
 
@@ -176,46 +112,19 @@ describe('List Users', function (): void {
     });
 
     test('list users page has correct navigation label', function (): void {
-<<<<<<< .merge_file_quzlAc
         $listUsersPage = makeListUsersPage();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
-=======
-        $listUsersPage = makeListUsersPage();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_2m45M7
         $label = $listUsersPage->getNavigationLabel();
         Assert::assertNotEmpty($label);
     });
 
     test('list users page has correct title', function (): void {
-<<<<<<< .merge_file_quzlAc
         $listUsersPage = makeListUsersPage();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
-=======
-        $listUsersPage = makeListUsersPage();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_2m45M7
         $title = $listUsersPage->getTitle();
         Assert::assertNotEmpty($title);
     });
 
     test('list users page has correct breadcrumbs', function (): void {
-<<<<<<< .merge_file_quzlAc
         $listUsersPage = makeListUsersPage();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
-=======
-        $listUsersPage = makeListUsersPage();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_2m45M7
         try {
             $breadcrumbs = $listUsersPage->getBreadcrumbs();
             Assert::assertNotEmpty($breadcrumbs);
@@ -224,16 +133,7 @@ describe('List Users', function (): void {
     });
 
     test('list users page can handle search', function (): void {
-<<<<<<< .merge_file_quzlAc
         $listUsersPage = makeListUsersPage();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $listUsersPage = $this->requireListUsersPage();
-=======
-        $listUsersPage = makeListUsersPage();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_2m45M7
         $columns = $listUsersPage->getTableColumns();
         $nameColumn = $columns['name'];
         $emailColumn = $columns['email'];

@@ -9,7 +9,7 @@
     "Supportare profili e relazioni cross-modulo"
   ],
   "nonGoals": [
-    "Sostituire il dominio Predict o Cms"
+    "Sostituire il dominio Forecast o Cms"
   ],
   "dependencies": [
     "Xot"

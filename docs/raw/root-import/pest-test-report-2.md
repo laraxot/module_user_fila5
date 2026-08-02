@@ -11,11 +11,8 @@ related:
   - "./git-reset.md"
 ---
 
-<<<<<<<< HEAD:docs/raw/root-import/pest-test-report-2.md
-========
 # <nome progetto> User Module - Pest Test Implementation Report
 
->>>>>>>> c5e6021c (.):docs/root-md-files/pest-test-report.md
 ## Executive Summary
 
 Successfully implemented comprehensive Pest PHP tests for 5 critical User module Actions in <nome progetto>. All tests are now **PASSING** with high code coverage and comprehensive test scenarios.
