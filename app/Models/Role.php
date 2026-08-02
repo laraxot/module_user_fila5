@@ -16,8 +16,10 @@ use Spatie\Permission\Models\Role as SpatieRole;
 use Webmozart\Assert\Assert;
 
 class Role extends SpatieRole
-{
-    use HasXotFactory;
+{/**
+ * @phpstan-use HasXotFactory<\Modules\User\Database\Factories\RoleFactory, Role>
+ */
+use HasXotFactory;
 
     use RelationX;
     use Updater;

@@ -52,9 +52,10 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         HasSpatiePermission::teams insteadof HasTeams;
         HasTeams::teams as membershipTeams;
     }
-    use HasUuids;
-
-    use HasXotFactory;
+    use HasUuids;/**
+ * @phpstan-use HasXotFactory<\Modules\User\Database\Factories\BaseUserFactory, BaseUser>
+ */
+use HasXotFactory;
 
     use InteractsWithMedia;
     use Notifiable;

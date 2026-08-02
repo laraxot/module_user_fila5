@@ -12,8 +12,10 @@ use Spatie\Permission\Models\Permission as SpatiePermission;
 use Webmozart\Assert\Assert;
 
 class Permission extends SpatiePermission
-{
-    use HasXotFactory;
+{/**
+ * @phpstan-use HasXotFactory<\Modules\User\Database\Factories\PermissionFactory, Permission>
+ */
+use HasXotFactory;
 
     use RelationX;
     use Updater;
