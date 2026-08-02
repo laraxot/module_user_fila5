@@ -43,7 +43,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 
 /**
  * @property string $password User password (hashed)
- * @property string $email User email address
+ * @property string $email    User email address
  */
 abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
 {
