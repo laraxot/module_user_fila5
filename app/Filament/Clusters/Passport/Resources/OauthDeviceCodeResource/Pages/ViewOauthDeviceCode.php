@@ -15,7 +15,6 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 

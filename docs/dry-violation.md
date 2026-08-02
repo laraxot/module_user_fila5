@@ -27,8 +27,8 @@ La funzione `safeStringCast()` era duplicata in **15+ file** del progetto, viola
 - `Modules/User/app/Filament/Widgets/Auth/RegisterWidget.php`
 - `Modules/User/app/Filament/Widgets/Auth/ResetPasswordWidget.php`
 - `Modules/User/app/Actions/User/UpdateUserAction.php`
-- `Modules/TechPlanner/app/Filament/Resources/ClientResource/Pages/ListClients.php`
-- `Modules/TechPlanner/app/Models/Worker.php`
+- `app/Filament/Resources/ClientResource/Pages/ListClients.php`
+- `app/Models/Worker.php`
 - `Modules/Geo/app/Console/Commands/SushiCommand.php`
 - `Modules/Geo/app/Services/GeoDataService.php`
 - `Modules/Geo/app/Filament/Forms/Components/AddressesField.php`

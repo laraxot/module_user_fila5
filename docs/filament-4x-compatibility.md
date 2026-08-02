@@ -35,7 +35,7 @@ related:
 #### Errori Principali Risolti:
 
 ##### 1.1 Metodi Astratti Mancanti
-- **File**: `Modules\Fixcity\Models\Profile`
+- **File**: `Modules\Application\Models\Profile`
 - **Errore**: Metodi `isSuperAdmin()` e `user()` mancanti dal contratto `ProfileContract`
 - **Soluzione**: Implementati metodi astratti nel modello Profile
 
@@ -174,7 +174,7 @@ if (is_object($notifiable)) {
 
 ### Moduli Testati
 - ✅ **User**: Autenticazione, profili, ruoli
-- ✅ **Fixcity**: Ticket management, workflow
+- ✅ **Application**: Ticket management, workflow
 - ✅ **Notify**: Notifiche, comunicazioni
 - ✅ **Xot**: Contratti, interfacce base
 

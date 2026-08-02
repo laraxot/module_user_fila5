@@ -52,4 +52,4 @@ Ogni coppia include **Form, Table, Infolist** duplicati sotto `Schemas/` e `Tabl
 
 ## Tracker
 
-[#89](https://github.com/laraxot/base_fixcity_fila5/issues/89), [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90).
+[#89](https://github.com/laraxot/platform/issues/89), [#90](https://github.com/laraxot/platform/issues/90).

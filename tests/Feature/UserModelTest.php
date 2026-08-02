@@ -20,19 +20,6 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-<<<<<<< .merge_file_tsPsFB
-=======
-<<<<<<< HEAD
-beforeEach(function (): void {
-    /* @var TestCase $this */
-    $this->user = UserFactory::new()->createOne([
-        'email' => 'user-'.uniqid('', true).'@example.com',
-    ]);
-});
-
-=======
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
 describe('User Model', function (): void {
     test('can be created with valid data', function (): void {
         $userData = [
@@ -51,30 +38,12 @@ describe('User Model', function (): void {
     });
 
     test('generates uuid for id', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         Assert::assertNotEmpty($user->id);
     });
 
     test('uses user database connection', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         Assert::assertIsString($user->getConnectionName());
     });
 
@@ -150,44 +119,17 @@ describe('User Model', function (): void {
     });
 
     test('can have teams', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         Assert::assertInstanceOf(BelongsToMany::class, $user->membershipTeams());
     });
 
     test('can own teams', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         Assert::assertInstanceOf(HasMany::class, $user->ownedTeams());
     });
 
     test('can have current team', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         $team = TeamFactory::new()->createOne(['user_id' => $user->id]);
         $user->update(['current_team_id' => $team->id]);
 
@@ -195,144 +137,54 @@ describe('User Model', function (): void {
     });
 
     test('can have roles', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         Assert::assertInstanceOf(BelongsToMany::class, $user->roles());
     });
 
     test('can have permissions', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         Assert::assertInstanceOf(BelongsToMany::class, $user->permissions());
     });
 
     test('can have profile', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         Assert::assertInstanceOf(HasOne::class, $user->profile());
     });
 
     test('can have devices', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         Assert::assertInstanceOf(BelongsToMany::class, $user->devices());
     });
 
     test('can have authentication logs', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         Assert::assertInstanceOf(MorphMany::class, $user->authentications());
     });
 
     test('can have oauth clients', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         $relation = $user->clients();
         Assert::assertInstanceOf(MorphMany::class, $relation);
     });
 
     test('can have oauth tokens', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         $relation = $user->tokens();
         Assert::assertInstanceOf(HasMany::class, $relation);
     });
 
     test('can have notifications', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         Assert::assertInstanceOf(MorphMany::class, $user->notifications());
     });
 
     test('can have socialite users', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         Assert::assertInstanceOf(HasMany::class, $user->socialiteUsers());
     });
 
     test('can join ateam', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         $team = TeamFactory::new()->createOne();
         $user->membershipTeams()->attach($team);
 
@@ -342,16 +194,7 @@ describe('User Model', function (): void {
     });
 
     test('can leave ateam', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         $team = TeamFactory::new()->createOne();
         $user->membershipTeams()->attach($team);
         $user->membershipTeams()->detach($team);
@@ -362,16 +205,7 @@ describe('User Model', function (): void {
     });
 
     test('can own multiple teams', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         TeamFactory::new()->count(3)->create(['user_id' => $user->id]);
 
         $freshModel3 = $user->fresh();
@@ -380,16 +214,7 @@ describe('User Model', function (): void {
     });
 
     test('can switch current team', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         $team1 = TeamFactory::new()->createOne(['user_id' => $user->id]);
         $team2 = TeamFactory::new()->createOne(['user_id' => $user->id]);
 
@@ -402,22 +227,8 @@ describe('User Model', function (): void {
     });
 
     test('permission skip check', function (): void {
-<<<<<<< .merge_file_tsPsFB
         skipUnlessUserTable('model_has_permission', 'model_has_permission table missing on user connection.');
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        if (! $this->userTableExists('model_has_permission')) {
-            $this->skipTest('model_has_permission table missing on user connection.');
-        }
-
-        $user = $this->requireUser();
-=======
-        skipUnlessUserTable('model_has_permission', 'model_has_permission table missing on user connection.');
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         $role = RoleFactory::new()->createOne(['name' => 'assigned role '.uniqid()]);
 
         $user->assignRole($role);
@@ -426,22 +237,8 @@ describe('User Model', function (): void {
     });
 
     test('can have direct permissions', function (): void {
-<<<<<<< .merge_file_tsPsFB
         skipUnlessUserTable('model_has_permission', 'model_has_permission table missing on user connection.');
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        if (! $this->userTableExists('model_has_permission')) {
-            $this->skipTest('model_has_permission table missing on user connection.');
-        }
-
-        $user = $this->requireUser();
-=======
-        skipUnlessUserTable('model_has_permission', 'model_has_permission table missing on user connection.');
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         $permission = PermissionFactory::new()->createOne(['name' => 'direct permission '.uniqid()]);
 
         $user->givePermissionTo($permission);
@@ -450,22 +247,8 @@ describe('User Model', function (): void {
     });
 
     test('can check multiple permissions', function (): void {
-<<<<<<< .merge_file_tsPsFB
         skipUnlessUserTable('model_has_permission', 'model_has_permission table missing on user connection.');
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        if (! $this->userTableExists('model_has_permission')) {
-            $this->skipTest('model_has_permission table missing on user connection.');
-        }
-
-        $user = $this->requireUser();
-=======
-        skipUnlessUserTable('model_has_permission', 'model_has_permission table missing on user connection.');
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         $uid = uniqid();
         $permission1 = PermissionFactory::new()->createOne(['name' => 'edit posts '.$uid]);
         $permission2 = PermissionFactory::new()->createOne(['name' => 'delete posts '.$uid]);
@@ -476,22 +259,8 @@ describe('User Model', function (): void {
     });
 
     test('can check any permission', function (): void {
-<<<<<<< .merge_file_tsPsFB
         skipUnlessUserTable('model_has_permission', 'model_has_permission table missing on user connection.');
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        if (! $this->userTableExists('model_has_permission')) {
-            $this->skipTest('model_has_permission table missing on user connection.');
-        }
-
-        $user = $this->requireUser();
-=======
-        skipUnlessUserTable('model_has_permission', 'model_has_permission table missing on user connection.');
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         $uid = uniqid();
         $permission1 = PermissionFactory::new()->createOne(['name' => 'edit posts '.$uid]);
         $permission2 = PermissionFactory::new()->createOne(['name' => 'delete posts '.$uid]);
@@ -502,30 +271,12 @@ describe('User Model', function (): void {
     });
 
     test('implements has media interface', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         Assert::assertInstanceOf(User::class, $user);
     });
 
     test('can have media attached', function (): void {
-<<<<<<< .merge_file_tsPsFB
         $user = createTestUser();
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        $user = $this->requireUser();
-=======
-        $user = createTestUser();
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_PVApLy
         Assert::assertInstanceOf(MorphMany::class, $user->media());
     });
 

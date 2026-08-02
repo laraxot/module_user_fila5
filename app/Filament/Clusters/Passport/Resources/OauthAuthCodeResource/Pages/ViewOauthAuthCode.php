@@ -35,15 +35,7 @@ class ViewOauthAuthCode extends XotBaseViewRecord
                     'code_grid' => Grid::make(2)
                         ->schema([
                             'id' => TextEntry::make('id')
-<<<<<<< .merge_file_dyb0Fo
                                 ->formatStateUsing(fn (mixed $state): string => Str::limit(SafeStringCastAction::cast($state), 15, '...')),
-=======
-<<<<<<< HEAD
-                                ->formatStateUsing(fn (mixed $state): string => Str::limit(is_string($state) ? $state : (string) $state, 15, '...')),
-=======
-                                ->formatStateUsing(fn (mixed $state): string => Str::limit(SafeStringCastAction::cast($state), 15, '...')),
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_q0aYLf
                             'client_name' => TextEntry::make('client.name')
                                 ->url(function (mixed $state, $record): ?string {
                                     if (! $record instanceof Model) {
@@ -84,28 +76,12 @@ class ViewOauthAuthCode extends XotBaseViewRecord
                             if (is_array($state)) {
                                 /* @var array<int|string, mixed> $state */
                                 return implode(', ', array_map(
-<<<<<<< .merge_file_dyb0Fo
                                     fn (mixed $item): string => SafeStringCastAction::cast($item),
-=======
-<<<<<<< HEAD
-                                    fn (mixed $item): string => is_string($item) ? $item : (string) $item,
-=======
-                                    fn (mixed $item): string => SafeStringCastAction::cast($item),
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_q0aYLf
                                     $state
                                 ));
                             }
 
-<<<<<<< .merge_file_dyb0Fo
                             return SafeStringCastAction::cast($state);
-=======
-<<<<<<< HEAD
-                            return is_string($state) ? $state : (string) $state;
-=======
-                            return SafeStringCastAction::cast($state);
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_q0aYLf
                         })
                         ->columnSpanFull(),
                 ])->columns(1),

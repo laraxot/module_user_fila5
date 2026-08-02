@@ -135,7 +135,7 @@ class Doctor extends User
 ### Integrazione Moduli
 
 Il modulo User **è utilizzato da** tutti i moduli business:
-- **TechPlanner**: Workers sono User, appointments hanno causer User
+- **PlanningModule**: Workers sono User, appointments hanno causer User
 - **Employee**: Employee relaziona User per autenticazione
 - **Activity**: Causer di tutte le activities
 - **Notify**: Destinatari notifiche

@@ -21,7 +21,7 @@ related:
 # Social Authentication Architecture
 
 ## Overview
-This document describes the implementation of social login (Google, Microsoft, GitHub) in the Fixcity User module using Laravel Socialite and Filament, without adding provider‑specific columns to the `users` table.
+This document describes the implementation of social login (Google, Microsoft, GitHub) in the Application User module using Laravel Socialite and Filament, without adding provider‑specific columns to the `users` table.
 
 ## Models
 - **SocialProvider**: Stores provider configuration (client_id, client_secret, scopes, parameters, active flag). One row per provider.

@@ -88,7 +88,7 @@ The User module provides comprehensive authentication, authorization, roles, per
    - Implement user behavior analytics
    - Add security analytics dashboard
    - Create user activity reports
-   - Add predictive analytics
+   - Add forecasting analytics
 
 2. **Scalability Improvements**
    - Implement horizontal scaling support

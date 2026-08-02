@@ -1,6 +1,3 @@
-<<<<<<< .merge_file_Mm7eaq
-# Documentation
-=======
 <<<<<<< HEAD
 ---
 title: "User Module Documentation"
@@ -11,7 +8,6 @@ updated: 2026-07-27
 ---
 =======
 # Documentation
->>>>>>> c5e6021c (.)
 >>>>>>> .merge_file_dG01tF
 
 This directory contains documentation for the module.
@@ -23,8 +19,6 @@ This directory contains documentation for the module.
 
 ## Guidelines
 
-<<<<<<< .merge_file_Mm7eaq
-=======
 <<<<<<< HEAD
 ### Autenticazione
 - Login multi-tenant
@@ -127,13 +121,9 @@ Rule: never commit files with conflict markers. Fix immediately when found.
 - [Performance](./performance-optimization.md) — Metriche e best practice
 - [Project Structure](./project-structure.md) — Directory layout
 =======
->>>>>>> .merge_file_dG01tF
 Documentation should be:
 - Clear and concise
 - Example-driven
 - Updated with code changes
 - Use Markdown format (.md)
-<<<<<<< .merge_file_Mm7eaq
-=======
->>>>>>> c5e6021c (.)
 >>>>>>> .merge_file_dG01tF

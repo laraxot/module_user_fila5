@@ -40,16 +40,7 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces username uniqueness when required', function (): void {
-<<<<<<< .merge_file_TWMlt6
         if (! userTableHasColumn('users', 'username')) {
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        if (! $this->userTableHasColumn('users', 'username')) {
-=======
-        if (! userTableHasColumn('users', 'username')) {
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_HZh3fL
             $email = 'alias-'.uniqid('', true).'@example.com';
             createTestUser(['email' => $email]);
 
@@ -96,12 +87,12 @@ describe('User Business Logic', function (): void {
 
     test('enforces age restrictions for certain operations', function (): void {
         /* @var TestCase $this */
-        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+        if (! Schema::connection('user')->hasColumn('profiles', 'uuid')) {
             Assert::markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
         }
 
-        if (! Schema::connection('fixcity')->hasColumn('profiles', 'birth_date')) {
-            Assert::markTestSkipped('profiles.birth_date column missing on fixcity connection.');
+        if (! Schema::connection('user')->hasColumn('profiles', 'birth_date')) {
+            Assert::markTestSkipped('profiles.birth_date column missing on user connection.');
         }
 
         $underageBirthDate = now()->subYears(16)->toDateString();
@@ -183,18 +174,7 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces permission conflicts', function (): void {
-<<<<<<< .merge_file_TWMlt6
         skipUnlessUserTable('model_has_permission', 'model_has_permission table missing on user connection.');
-=======
-<<<<<<< HEAD
-        /** @var TestCase $this */
-        if (! $this->userTableExists('model_has_permission')) {
-            $this->skipTest('model_has_permission table missing on user connection.');
-        }
-=======
-        skipUnlessUserTable('model_has_permission', 'model_has_permission table missing on user connection.');
->>>>>>> c5e6021c (.)
->>>>>>> .merge_file_HZh3fL
 
         $user = createTestUser();
         $uid = uniqid();
@@ -237,7 +217,7 @@ describe('User Business Logic', function (): void {
 
     test('enforces referential integrity for user relationships', function (): void {
         /* @var TestCase $this */
-        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+        if (! Schema::connection('user')->hasColumn('profiles', 'uuid')) {
             Assert::markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
         }
 

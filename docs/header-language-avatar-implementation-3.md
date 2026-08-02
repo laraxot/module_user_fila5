@@ -32,7 +32,7 @@ related:
 
 ## Panoramica
 
-Questo documento descrive come implementare nell'header di SaluteOra:
+Questo documento descrive come implementare nell'header di Application:
 
 ## Panoramica
 

@@ -18,9 +18,9 @@ related:
   - "./actions-path-convention.md"
 ---
 
-- [Advanced Improvements Analysis](../../SaluteOra/docs/factories/UserFactory-advanced-improvements-analysis.md)
-- [Implementation Completed](../../SaluteOra/docs/factories/userfactory_implementation_completed.md)
-- [Model States](../../SaluteOra/docs/models/states.md)
+- [Advanced Improvements Analysis](../../Application/docs/factories/UserFactory-advanced-improvements-analysis.md)
+- [Implementation Completed](../../Application/docs/factories/userfactory_implementation_completed.md)
+- [Model States](../../Application/docs/models/states.md)
 
 ### User Module
 - [User Factory Integration](./user-factory-integration-2.md)
@@ -28,7 +28,7 @@ related:
 - [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation  
-- [UserFactory SaluteOra Integration](../../../../docs/userfactory_saluteora_integration.md)
+- [UserFactory Application Integration](../../../../docs/userfactory_application_integration.md)
 - [Testing Standards](../../../../docs/testing_standards.md) 
 ---
 module: theme

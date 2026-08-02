@@ -24,7 +24,7 @@ related:
 
 `Modules\User\Models\Notification` estende `Illuminate\Notifications\DatabaseNotification`.
 
-- Connessione: `user` (`fixcity_user`)
+- Connessione: `user` (`application_user`)
 - Usato da `BaseUser::notifications()` e `unreadNotifications()` nel FO/header
 
 ## Schema owner (non qui)

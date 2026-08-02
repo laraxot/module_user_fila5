@@ -11,12 +11,9 @@ related:
   - "./filament-user-creation-pty-error.md"
   - "./git-merge-conflict-inventory-1.md"
   - "./git-merge-conflict-inventory.md"
-<<<<<<< .merge_file_0iXaQw
-=======
 <<<<<<< HEAD
   - "./git-push-lfs-missing-objects.md"
 =======
->>>>>>> c5e6021c (.)
 >>>>>>> .merge_file_j3tnLX
   - "./phpstan-module-analysis-memory.md"
   - "./phpstan-widget-property-types-1.md"
@@ -52,10 +49,10 @@ Aggiunta la voce `models.team` in tutti i profili config attivi, per evitare dri
 
 - `../../../../../config/permission.php`
 - `../../../../../config/localhost/permission.php`
-- `../../../../../config/local/fixcity/permission.php`
-- `../../../../../config/local/fixcityam/permission.php`
-- `../../../../../config/eu/fixcity/permission.php`
-- `../../../../../config/test/fixcity/permission.php`
+- `../../../../../config/local/application/permission.php`
+- `../../../../../config/local/applicationam/permission.php`
+- `../../../../../config/eu/application/permission.php`
+- `../../../../../config/test/application/permission.php`
 
 Valore impostato:
 

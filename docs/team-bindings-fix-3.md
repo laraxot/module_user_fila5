@@ -18,7 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-- [Critical Errors Documentation](../../SaluteOra/docs/critical-errors-resolved.md)
+- [Critical Errors Documentation](../../Application/docs/critical-errors-resolved.md)
 
 ---
 

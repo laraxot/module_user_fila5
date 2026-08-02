@@ -188,7 +188,7 @@ Quando un altro agente AI incontrerà questo problema:
 
 ```bash
 # Verificare che id è già INT
-php artisan db:table profiles --database=predict
+php artisan db:table profiles --database=forecast
 ```
 
 **Risultato**: ✅ `id int unsigned autoincrement` - Perfetto!
@@ -216,26 +216,26 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::connection('predict')->table('profiles', function (Blueprint $table) {
+        Schema::connection('forecast')->table('profiles', function (Blueprint $table) {
             $table->uuid('uuid')->nullable()->after('id');
         });
 
         // Populate existing records with UUIDs
-        DB::connection('predict')->statement('
+        DB::connection('forecast')->statement('
             UPDATE profiles 
             SET uuid = UUID() 
             WHERE uuid IS NULL
         ');
 
         // Add unique index
-        Schema::connection('predict')->table('profiles', function (Blueprint $table) {
+        Schema::connection('forecast')->table('profiles', function (Blueprint $table) {
             $table->unique('uuid');
         });
     }
 
     public function down(): void
     {
-        Schema::connection('predict')->table('profiles', function (Blueprint $table) {
+        Schema::connection('forecast')->table('profiles', function (Blueprint $table) {
             $table->dropUnique(['uuid']);
             $table->dropColumn('uuid');
         });

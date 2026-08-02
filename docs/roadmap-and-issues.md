@@ -22,7 +22,7 @@ related:
 
 **Modulo**: User (Authentication, Authorization, Profiles)  
 **Data Analisi**: 1 Ottobre 2025  
-**Maintainer**: Team FixCity  
+**Maintainer**: Team Application  
 **Status PHPStan**: ⚠️ 95 errori (Level 10)
 
 ---

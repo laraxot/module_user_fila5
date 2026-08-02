@@ -10,12 +10,9 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./git-merge-conflict-inventory-1.md"
   - "./git-merge-conflict-inventory.md"
-<<<<<<< .merge_file_HnriiP
-=======
 <<<<<<< HEAD
   - "./git-push-lfs-missing-objects.md"
 =======
->>>>>>> c5e6021c (.)
 >>>>>>> .merge_file_aTxR0I
   - "./phpstan-module-analysis-memory.md"
   - "./phpstan-widget-property-types-1.md"
@@ -37,7 +34,7 @@ Laravel Prompts attempts to read terminal configuration using `stty`. In non-int
 - **Use Non-Interactive Flags:** Always use `--no-interaction` (or `-n`) when automating artisan commands.
 - **Pass Arguments Explicitly:** Provide all required data via command-line arguments.
   ```bash
-  php artisan make:filament-user --name="Admin" --email="admin@example.com" --password="password" --panel="fixcity::admin" --no-interaction
+  php artisan make:filament-user --name="Admin" --email="admin@example.com" --password="password" --panel="application::admin" --no-interaction
   ```
 
 ### Bad Practices
