@@ -30,7 +30,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class Notification extends BaseNotification
 {
-    /** @phpstan-ignore-next-line */
+    /** @phpstan-use HasXotFactory<\Modules\User\Database\Factories\NotificationFactory, Notification> */
     use HasXotFactory;
 
     protected $connection = 'user';
