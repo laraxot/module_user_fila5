@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Livewire\Auth\Passwords;
 
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\PasswordBroker;
@@ -21,6 +19,7 @@ use Illuminate\Support\Str;
 use Illuminate\Validation\Rules\Password as PasswordRule;
 use Livewire\Component;
 use Livewire\Features\SupportRedirects\Redirector;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\File\ViewCopyAction;
 use Webmozart\Assert\Assert;
 
