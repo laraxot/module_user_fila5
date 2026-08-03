@@ -21,12 +21,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Controllers\Api;
 
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rules\Password as PasswordRule;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Http\Controllers\XotBaseController;
