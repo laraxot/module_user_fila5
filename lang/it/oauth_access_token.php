@@ -150,4 +150,10 @@ return [
         'revoked' => 'Token revocato con successo',
         'deleted' => 'Token eliminato con successo',
     ],
+    'sections' => [
+        'OAuth Access Token Information' => [
+            'label' => 'OAuth Access Token Information',
+            'heading' => 'OAuth Access Token Information',
+        ],
+    ],
 ];

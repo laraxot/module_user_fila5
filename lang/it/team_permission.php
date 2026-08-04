@@ -81,4 +81,10 @@ return [
     ],
     'label' => 'Team Permission',
     'plural_label' => 'Team Permission (Plurale)',
+    'sections' => [
+        'empty' => [
+            'label' => 'empty',
+            'heading' => 'empty',
+        ],
+    ],
 ];

@@ -110,6 +110,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'placeholder' => 'name',
         ],
         'recordId' => [
             'label' => 'recordId',
@@ -149,6 +150,12 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+        ],
+        'display_name' => [
+            'label' => 'display_name',
+            'placeholder' => 'display_name',
+            'helper_text' => 'display_name',
+            'description' => 'display_name',
         ],
     ],
     'actions' => [
