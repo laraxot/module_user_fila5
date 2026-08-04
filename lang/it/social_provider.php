@@ -101,6 +101,57 @@ return [
             'helper_text' => 'Applica i filtri selezionati',
             'description' => 'Azione per applicare i filtri',
         ],
+        'scopes' => [
+            'placeholder' => 'scopes',
+            'description' => 'scopes',
+        ],
+        'client_id' => [
+            'helper_text' => 'client_id',
+            'description' => 'client_id',
+        ],
+        'client_secret' => [
+            'helper_text' => 'client_secret',
+            'description' => 'client_secret',
+        ],
+        'redirect' => [
+            'helper_text' => 'redirect',
+            'description' => 'redirect',
+        ],
+        'parameters' => [
+            'placeholder' => 'parameters',
+            'description' => 'parameters',
+        ],
+        'additional_params' => [
+            'label' => 'additional_params',
+            'placeholder' => 'additional_params',
+            'helper_text' => 'additional_params',
+            'description' => 'additional_params',
+        ],
+        'stateless' => [
+            'placeholder' => 'stateless',
+            'helper_text' => 'stateless',
+            'description' => 'stateless',
+        ],
+        'active' => [
+            'placeholder' => 'active',
+            'helper_text' => 'active',
+            'description' => 'active',
+        ],
+        'socialite' => [
+            'placeholder' => 'socialite',
+            'helper_text' => 'socialite',
+            'description' => 'socialite',
+        ],
+        'enabled' => [
+            'label' => 'enabled',
+            'placeholder' => 'enabled',
+            'helper_text' => 'enabled',
+            'description' => 'enabled',
+        ],
+        'svg' => [
+            'helper_text' => 'svg',
+            'description' => 'svg',
+        ],
     ],
     'actions' => [
         'import' => [

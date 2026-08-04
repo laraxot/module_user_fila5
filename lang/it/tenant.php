@@ -98,6 +98,36 @@ return [
             'helper_text' => 'Colore principale utilizzato nell\'interfaccia',
             'description' => 'Colore primario del tema',
         ],
+        'domain' => [
+            'label' => 'domain',
+            'placeholder' => 'domain',
+            'helper_text' => 'domain',
+            'description' => 'domain',
+        ],
+        'email_address' => [
+            'label' => 'email_address',
+            'placeholder' => 'email_address',
+            'helper_text' => 'email_address',
+            'description' => 'email_address',
+        ],
+        'phone' => [
+            'label' => 'phone',
+            'placeholder' => 'phone',
+            'helper_text' => 'phone',
+            'description' => 'phone',
+        ],
+        'mobile' => [
+            'label' => 'mobile',
+            'placeholder' => 'mobile',
+            'helper_text' => 'mobile',
+            'description' => 'mobile',
+        ],
+        'address' => [
+            'label' => 'address',
+            'placeholder' => 'address',
+            'helper_text' => 'address',
+            'description' => 'address',
+        ],
     ],
     'actions' => [
         'import' => [
@@ -195,5 +225,11 @@ return [
         'created' => 'Tenant creato con successo',
         'updated' => 'Tenant aggiornato con successo',
         'deleted' => 'Tenant eliminato con successo',
+    ],
+    'sections' => [
+        'empty' => [
+            'label' => 'empty',
+            'heading' => 'empty',
+        ],
     ],
 ];

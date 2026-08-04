@@ -111,6 +111,7 @@ return [
                 'false' => 'No',
             ],
             'description' => '',
+            'placeholder' => 'enabled',
         ],
         'team' => [
             'name' => [

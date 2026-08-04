@@ -78,4 +78,10 @@ return [
         'updated' => 'Personal Access Client aggiornato con successo',
         'deleted' => 'Personal Access Client eliminato con successo',
     ],
+    'sections' => [
+        'OAuth Personal Access Client Information' => [
+            'label' => 'OAuth Personal Access Client Information',
+            'heading' => 'OAuth Personal Access Client Information',
+        ],
+    ],
 ];

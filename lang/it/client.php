@@ -20,6 +20,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'placeholder' => 'name',
         ],
         'user' => [
             'email' => [

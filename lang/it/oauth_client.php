@@ -39,6 +39,7 @@ return [
             'tooltip' => 'Tipo client password',
             'helper_text' => 'Indica se è un client di tipo password',
             'description' => 'Flag per client di tipo password',
+            'placeholder' => 'password_client',
         ],
         'redirect_callback' => [
             'label' => 'Redirect Callback',
@@ -46,6 +47,15 @@ return [
             'placeholder' => 'https://esempio.it/callback',
             'helper_text' => 'URI per il callback',
             'description' => 'URI di callback',
+        ],
+        'user_id' => [
+            'placeholder' => 'user_id',
+        ],
+        'provider' => [
+            'placeholder' => 'provider',
+        ],
+        'personal_access_client' => [
+            'placeholder' => 'personal_access_client',
         ],
     ],
     'actions' => [

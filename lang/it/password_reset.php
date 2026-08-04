@@ -35,6 +35,12 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+        'email' => [
+            'placeholder' => 'email',
+        ],
+        'token' => [
+            'placeholder' => 'token',
+        ],
     ],
     'actions' => [
         'create' => [
@@ -45,6 +51,12 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Password Reset',
+        ],
+    ],
+    'sections' => [
+        'Password Reset Information' => [
+            'label' => 'Password Reset Information',
+            'heading' => 'Password Reset Information',
         ],
     ],
 ];

@@ -31,6 +31,7 @@ return [
             'tooltip' => 'Stato di revoca',
             'helper_text' => 'Indica se il token è stato revocato',
             'description' => 'Stato di revoca del token',
+            'placeholder' => 'revoked',
         ],
         'expires_at' => [
             'label' => 'Scade il',
