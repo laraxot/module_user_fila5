@@ -73,7 +73,7 @@ class Reset extends Component
 
         Assert::string($response_lang = trans(SafeStringCastAction::cast($response)));
 
-        if (Password::PASSWORD_RESET === $response) {
+        if ($response === Password::PASSWORD_RESET) {
             session()->flash($response_lang);
 
             return redirect(route('home'));

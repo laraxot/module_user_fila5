@@ -39,7 +39,7 @@ final class ApiLogoutControllerTest extends TestCase
         ]);
     }
 
-    public function testApiLogoutRevokesCurrentPersonalAccessTokenAndMarksDeviceLogoutTime(): void
+    public function test_api_logout_revokes_current_personal_access_token_and_marks_device_logout_time(): void
     {
         $user = $this->requireUser();
         $privateKey = storage_path('oauth-private.key');
