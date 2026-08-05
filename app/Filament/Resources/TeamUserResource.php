@@ -10,7 +10,6 @@ use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 
-use Filament\Forms\Components\Field;
 /**
  * Class TeamUserResource.
  */
@@ -21,7 +20,7 @@ final class TeamUserResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
-    //#[\Override]
+    // #[\Override]
     public static function getFormSchemaOld(): array
     {
         return [
