@@ -12,7 +12,6 @@ use Modules\User\Filament\Resources\PasswordResetResource\Pages\ViewPasswordRese
 use Modules\User\Models\PasswordReset; // Added
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-use Filament\Forms\Components\Field;
 class PasswordResetResource extends XotBaseResource
 {
     protected static ?string $model = PasswordReset::class;

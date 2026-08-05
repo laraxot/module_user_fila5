@@ -9,12 +9,12 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Modules\User\Models\Device;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-use Filament\Forms\Components\Field;
+
 class DeviceResource extends XotBaseResource
 {
     protected static ?string $model = Device::class;
 
-    //#[\Override]
+    // #[\Override]
     /**
      * @return array<string, mixed>
      */

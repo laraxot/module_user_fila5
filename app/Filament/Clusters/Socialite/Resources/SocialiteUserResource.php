@@ -13,7 +13,7 @@ use Modules\User\Filament\Clusters\Socialite\Resources\SocialiteUserResource\Pag
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialiteUserResource\Pages\ListSocialiteUsers;
 use Modules\User\Models\SocialiteUser;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-use Filament\Forms\Components\Field;
+
 /**
  * Class SocialiteUserResource.
  */
@@ -28,7 +28,7 @@ class SocialiteUserResource extends XotBaseResource
      *
      * @return array<string, Select|TextInput>
      */
-    //#[\Override]
+    // #[\Override]
     /**
      * @return array<string, mixed>
      */

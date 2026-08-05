@@ -11,7 +11,7 @@ use Modules\User\Filament\Resources\FeatureResource\Pages\EditFeature;
 use Modules\User\Filament\Resources\FeatureResource\Pages\ListFeatures;
 use Modules\User\Models\Feature;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-use Filament\Forms\Components\Field;
+
 /**
  * @property Feature $record
  */
@@ -19,7 +19,7 @@ class FeatureResource extends XotBaseResource
 {
     protected static ?string $model = Feature::class;
 
-    //#[\Override]
+    // #[\Override]
     /**
      * @return array<string, mixed>
      */
