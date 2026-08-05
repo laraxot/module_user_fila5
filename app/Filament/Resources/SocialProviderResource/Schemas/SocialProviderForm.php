@@ -18,7 +18,7 @@ class SocialProviderForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
-    public static function getFormSchemaOld(): array
+    public static function getFormSchema(): array
     {
         return [
             'env_guide' => Placeholder::make('env_guide')

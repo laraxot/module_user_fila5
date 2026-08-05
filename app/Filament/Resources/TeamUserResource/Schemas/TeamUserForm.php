@@ -14,7 +14,7 @@ class TeamUserForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
-    public static function getFormSchemaOld(): array
+    public static function getFormSchema(): array
     {
         return [
             'team_user' => XotBaseSection::make('Team User Information')

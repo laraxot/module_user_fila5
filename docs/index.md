@@ -87,12 +87,12 @@ This document serves as the central index for the User module, providing guidanc
 ### Folio e Blade
 - [Documentazione Blade](./blade/index.md) - Documentazione sui template Blade
 - [Componenti](./components/index.md) - Documentazione sui componenti
-- [Index](./Models/INDEX.md) - Indice della documentazione sui modelli
-- [Documentazione Traits](./traits/INDEX.md) - Documentazione sui trait utilizzati
+- [Index](./Models/index.md) - Indice della documentazione sui modelli
+- [Documentazione Traits](./traits/index.md) - Documentazione sui trait utilizzati
 
 ### Folio e Blade
-- [Documentazione Blade](./blade/INDEX.md) - Documentazione sui template Blade
-- [Componenti](./components/INDEX.md) - Documentazione sui componenti
+- [Documentazione Blade](./blade/index.md) - Documentazione sui template Blade
+- [Componenti](./components/index.md) - Documentazione sui componenti
 
 ## Roadmap e Sviluppo Futuro
 - [Roadmap](./roadmap.md) - Piano di sviluppo futuro del modulo User

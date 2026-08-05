@@ -31,7 +31,7 @@ class UserResource extends XotBaseResource
     #[\Override]
     public static function getFormSchemaOld(): array
     {
-        return UserForm::getFormSchemaOld();
+        return UserForm::getFormSchema();
     }
 
     // public static function extendForm(\Closure $callback): void
