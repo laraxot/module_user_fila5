@@ -987,7 +987,7 @@ test('user can switch teams', function () {
 - **Fixed**: File locking pattern implementation
 - **Improved**: Security alert widgets
 
-See [CHANGELOG.md](./changelog.md) for full history.
+See [changelog.md](./changelog.md) for full history.
 
 ---
 

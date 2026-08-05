@@ -40,20 +40,20 @@ At module root level, these folders MUST NOT exist:
 │   │   ├── 00-TRIGGER_MAP.md    # Trigger map (link a globale)
 │   │   └── *.md                 # Regole specifiche modulo
 │   ├── skills/                   # Skill progettuali
-│   │   ├── INDEX.md
+│   │   ├── index.md
 │   │   └── *.md
 │   ├── commands/                 # Comandi progettuali
-│   │   ├── INDEX.md
+│   │   ├── index.md
 │   │   └── *.md
 │   ├── memories/                 # Memorie progettuali
-│   │   ├── INDEX.md
+│   │   ├── index.md
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
 ├── on-demand-pattern.md          # 🌟 QUESTO FILE — Pattern on-demand
 ├── qmd-setup.md                  # Configurazione QMD
 ├── performance-optimization.md    # Metriche e best practice
-├── ARCHITECTURE.md               # (opzionale) Architettura modulo
+├── architecture.md               # (opzionale) Architettura modulo
 └── README.md                     # (opzionale) Overview modulo
 \`\`\`
 
@@ -125,7 +125,7 @@ graph TD
 mkdir -p docs/wiki/{rules,skills,commands,memories,concepts,entities,decisions,troubleshooting}
 
 # 2. Crea INDEX files (già creati)
-cp docs/wiki/rules/INDEX.md docs/wiki/rules/
+cp docs/wiki/rules/index.md docs/wiki/rules/
 # ... etc
 
 # 3. Aggiungi a QMD collection (opzionale, già incluso global)

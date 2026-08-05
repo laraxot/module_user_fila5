@@ -23,7 +23,7 @@ related:
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-2.md)
-- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
+- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation-keys-best-practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
@@ -207,7 +207,7 @@ return [
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-2.md)
-- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
+- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation-keys-best-practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 

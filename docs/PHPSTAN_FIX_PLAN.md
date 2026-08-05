@@ -517,7 +517,7 @@ test('Console command can access user properties', function () {
 2. Document all policy classes
 3. Document all console commands
 4. Document all actions
-5. Update AGENTS.md with User-specific patterns
+5. Update agents.md with User-specific patterns
 
 ## File Structure
 

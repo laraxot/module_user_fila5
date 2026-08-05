@@ -64,7 +64,7 @@ This document outlines the best practices for managing user profiles within a La
 - Update this document if new profile management functionalities are introduced.
 
 ## Links to Related Documentation
-- [User Module Index](./INDEX.md)
+- [User Module Index](./index.md)
 - [BaseUser Model](./BaseUser.md)
 - [Authentication Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Routing Best Practices](./ROUTING_BEST_PRACTICES.md)

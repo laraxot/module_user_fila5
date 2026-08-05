@@ -14,7 +14,7 @@ class OauthPersonalAccessClientForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
-    public static function getFormSchemaOld(): array
+    public static function getFormSchema(): array
     {
         return [
             'oauth_personal_access_client' => Section::make('OAuth Personal Access Client Information')

@@ -22,7 +22,7 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
+- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation-keys-best-practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
@@ -215,7 +215,7 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
+- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation-keys-best-practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 

@@ -41,7 +41,7 @@ related:
 - [Team Management](./team_management.md)
 - [BaseUser Model](./baseuser.md)
 - [Database Structure](../database_structure.md)
-- [User Module Overview](../INDEX.md)
+- [User Module Overview](../index.md)
 - [Team Management](./TEAM_MANAGEMENT.md)
 - [BaseUser Model](./baseuser.md)
 - [Database Structure](../DATABASE_STRUCTURE.md)

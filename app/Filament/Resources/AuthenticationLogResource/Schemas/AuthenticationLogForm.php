@@ -18,7 +18,7 @@ class AuthenticationLogForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
-    public static function getFormSchemaOld(): array
+    public static function getFormSchema(): array
     {
         return [
             'authentication_info_section' => Section::make('Authentication Information')
