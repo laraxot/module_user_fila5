@@ -12,7 +12,6 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\Column;
@@ -35,6 +34,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use function Safe\json_encode;
 
+use Filament\Forms\Components\Field;
 class OauthAccessTokenResource extends XotBaseResource
 {
     protected static ?string $cluster = Passport::class;
@@ -310,10 +310,10 @@ class OauthAccessTokenResource extends XotBaseResource
     }
 
     /**
-     * @return array<string, Component>
+     * @return array<string, mixed>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    //#[\Override]
+    public static function getFormSchemaOld(): array
     {
         return [
             'oauth_access_token_info' => Section::make('OAuth Access Token Information')

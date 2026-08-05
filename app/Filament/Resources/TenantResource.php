@@ -10,8 +10,8 @@ namespace Modules\User\Filament\Resources;
 
 use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Field;
 use Filament\Schemas\Components\Section;
-use Filament\Support\Components\Component;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\User\Filament\Resources\TenantResource\Pages\CreateTenant;
@@ -21,7 +21,6 @@ use Modules\User\Filament\Resources\TenantResource\Pages\ViewTenant;
 use Modules\User\Filament\Resources\TenantResource\RelationManagers\UsersRelationManager;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-
 class TenantResource extends XotBaseResource
 {
     /**
@@ -38,10 +37,10 @@ class TenantResource extends XotBaseResource
     }
 
     /**
-     * @return array<string, Component>
+     * @return array<string, mixed>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    //#[\Override]
+    public static function getFormSchemaOld(): array
     {
         return [
             'main' => Section::make()

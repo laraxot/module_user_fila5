@@ -10,7 +10,6 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\PageRegistration;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\IconColumn;
@@ -24,6 +23,7 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource\Pa
 use Modules\User\Models\OauthDeviceCode;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+use Filament\Forms\Components\Field;
 /**
  * Class OauthDeviceCodeResource.
  *
@@ -38,10 +38,10 @@ class OauthDeviceCodeResource extends XotBaseResource
     /**
      * Get the form schema for the resource.
      *
-     * @return array<string, Component>
+     * @return array<string, mixed>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    //#[\Override]
+    public static function getFormSchemaOld(): array
     {
         return [
             'oauth_device_code_info' => Section::make(static::trans('label'))

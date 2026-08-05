@@ -15,7 +15,7 @@ class DeviceForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         return [
             'uuid' => TextInput::make('uuid')->maxLength(255),

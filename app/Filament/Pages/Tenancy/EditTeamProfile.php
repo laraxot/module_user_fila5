@@ -17,7 +17,7 @@ class EditTeamProfile extends XotBaseEditTenantProfile
     /**
      * @return array<int, TextInput>
      */
-    public function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
         return [
             TextInput::make('name'),

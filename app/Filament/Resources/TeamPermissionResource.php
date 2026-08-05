@@ -20,7 +20,7 @@ class TeamPermissionResource extends XotBaseResource
      *
      * @return array<string, Field|Section>
      */
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         return [
             'section01' => Section::make([

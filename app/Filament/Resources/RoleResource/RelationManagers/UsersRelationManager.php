@@ -32,7 +32,7 @@ final class UsersRelationManager extends XotBaseRelationManager
      * @return array<\Filament\Schemas\Components\Component>
      */
     #[\Override]
-    public function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
         return [
             TextInput::make('name')->required()->maxLength(255),

@@ -23,7 +23,6 @@ use Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource\Pages
 use Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource\RelationManagers\UsersRelationManager;
 use Modules\User\Models\SsoProvider;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-
 class SsoProviderResource extends XotBaseResource
 {
     protected static ?string $cluster = Socialite::class;
@@ -31,10 +30,13 @@ class SsoProviderResource extends XotBaseResource
     protected static ?string $model = SsoProvider::class;
 
     /**
-     * @return array<string, Field>
+     * @return array<string, mixed>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    //#[\Override]
+    /**
+     * @return array<string, mixed>
+     */
+    public static function getFormSchemaOld(): array
     {
         return [
             'name' => TextInput::make('name')

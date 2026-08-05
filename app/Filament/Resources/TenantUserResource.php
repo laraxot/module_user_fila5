@@ -5,12 +5,12 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 use Filament\Forms\Components\Select;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\TenantUser;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+use Filament\Forms\Components\Field;
 /**
  * Class TenantUserResource.
  */
@@ -19,10 +19,10 @@ final class TenantUserResource extends XotBaseResource
     protected static ?string $model = TenantUser::class;
 
     /**
-     * @return array<string, Component>
+     * @return array<string, mixed>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    //#[\Override]
+    public static function getFormSchemaOld(): array
     {
         return [
             'tenant_user' => Section::make('Tenant User Information')

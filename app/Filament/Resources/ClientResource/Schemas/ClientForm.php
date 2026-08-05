@@ -16,7 +16,7 @@ class ClientForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         $components = [
             'name' => TextInput::make('name')

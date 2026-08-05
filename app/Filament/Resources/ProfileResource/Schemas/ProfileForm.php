@@ -14,7 +14,7 @@ class ProfileForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         return [
             // Forms\Components\TextInput::make('user_id'),

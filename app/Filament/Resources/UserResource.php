@@ -10,6 +10,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 use Illuminate\Database\Eloquent\Model;
+use Filament\Forms\Components\Field;
 use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Datas\XotData;
@@ -24,16 +25,21 @@ class UserResource extends XotBaseResource
         ];
     }
 
+    /**
+     * @return array<int|string, \Filament\Schemas\Components\Component>
+     */
+    #[\Override]
+    public static function getFormSchemaOld(): array
+    {
+        return UserForm::getFormSchemaOld();
+    }
+
     // public static function extendForm(\Closure $callback): void
     // {
     //    static::$extendFormCallback = $callback;
     // }
 
-    #[\Override]
-    public static function getFormSchema(): array
-    {
-        return UserForm::getFormSchema();
-    }
+   
 
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {

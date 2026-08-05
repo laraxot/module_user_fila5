@@ -20,7 +20,7 @@ class RegisterTeam extends XotBaseRegisterTenant
     /**
      * @return array<int, TextInput>
      */
-    public function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
         return [
             TextInput::make('name'),
