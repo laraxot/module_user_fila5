@@ -16,12 +16,12 @@ use Modules\User\Filament\Resources\PermissionResource\Pages\EditPermission;
 use Modules\User\Filament\Resources\PermissionResource\Pages\ListPermissions;
 use Modules\User\Models\Permission;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-use Filament\Forms\Components\Field;
+
 class PermissionResource extends XotBaseResource
 {
     protected static ?string $model = Permission::class;
 
-    //#[\Override]
+    // #[\Override]
     /**
      * @return array<string, mixed>
      */

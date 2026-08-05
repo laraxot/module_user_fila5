@@ -8,7 +8,6 @@ use Filament\Forms\Components\TextInput;
 use Modules\User\Models\OauthAccessToken;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-use Filament\Forms\Components\Field;
 final class PersonalAccessTokenResource extends XotBaseResource
 {
     protected static ?string $model = OauthAccessToken::class;
@@ -18,7 +17,7 @@ final class PersonalAccessTokenResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
-    //#[\Override]
+    // #[\Override]
     public static function getFormSchemaOld(): array
     {
         return [

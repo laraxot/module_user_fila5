@@ -23,7 +23,6 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource\Pa
 use Modules\User\Models\OauthDeviceCode;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-use Filament\Forms\Components\Field;
 /**
  * Class OauthDeviceCodeResource.
  *
@@ -40,7 +39,7 @@ class OauthDeviceCodeResource extends XotBaseResource
      *
      * @return array<string, mixed>
      */
-    //#[\Override]
+    // #[\Override]
     public static function getFormSchemaOld(): array
     {
         return [
