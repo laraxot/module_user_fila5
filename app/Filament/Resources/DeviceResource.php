@@ -9,13 +9,16 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Modules\User\Models\Device;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-
+use Filament\Forms\Components\Field;
 class DeviceResource extends XotBaseResource
 {
     protected static ?string $model = Device::class;
 
-    #[\Override]
-    public static function getFormSchema(): array
+    //#[\Override]
+    /**
+     * @return array<string, mixed>
+     */
+    public static function getFormSchemaOld(): array
     {
         return [
             'uuid' => TextInput::make('uuid')->maxLength(255),

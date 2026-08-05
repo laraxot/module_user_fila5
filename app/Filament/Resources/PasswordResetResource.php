@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Resources\PasswordResetResource\Pages\ListPasswordResets;
@@ -13,6 +12,7 @@ use Modules\User\Filament\Resources\PasswordResetResource\Pages\ViewPasswordRese
 use Modules\User\Models\PasswordReset; // Added
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+use Filament\Forms\Components\Field;
 class PasswordResetResource extends XotBaseResource
 {
     protected static ?string $model = PasswordReset::class;
@@ -26,9 +26,9 @@ class PasswordResetResource extends XotBaseResource
     }
 
     /**
-     * @return array<string, Component>
+     * @return array<string, mixed>
      */
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         return [
             'password_reset_info' => Section::make('Password Reset Information')

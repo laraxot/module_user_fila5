@@ -9,7 +9,6 @@ use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\IconColumn;
@@ -25,6 +24,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use function Safe\json_encode;
 
+use Filament\Forms\Components\Field;
 class OauthAccessTokenResource extends XotBaseResource
 {
     protected static ?string $model = OauthAccessToken::class;
@@ -149,9 +149,9 @@ class OauthAccessTokenResource extends XotBaseResource
     }
 
     /**
-     * @return array<string, Component>
+     * @return array<string, mixed>
      */
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         return [
             'oauth_access_token_info' => Section::make('OAuth Access Token Information')

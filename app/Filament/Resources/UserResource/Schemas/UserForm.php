@@ -28,7 +28,7 @@ class UserForm extends XotBaseResourceForm
      *
      * @return array<int|string, SchemaComponent>
      */
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         return [
             'worker' => UserSection::make('worker'),

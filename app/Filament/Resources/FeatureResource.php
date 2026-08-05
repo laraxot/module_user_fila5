@@ -11,7 +11,7 @@ use Modules\User\Filament\Resources\FeatureResource\Pages\EditFeature;
 use Modules\User\Filament\Resources\FeatureResource\Pages\ListFeatures;
 use Modules\User\Models\Feature;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-
+use Filament\Forms\Components\Field;
 /**
  * @property Feature $record
  */
@@ -19,8 +19,11 @@ class FeatureResource extends XotBaseResource
 {
     protected static ?string $model = Feature::class;
 
-    #[\Override]
-    public static function getFormSchema(): array
+    //#[\Override]
+    /**
+     * @return array<string, mixed>
+     */
+    public static function getFormSchemaOld(): array
     {
         return [
             'name' => TextInput::make('name')->required()->maxLength(255),

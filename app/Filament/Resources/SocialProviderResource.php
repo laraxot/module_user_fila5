@@ -9,7 +9,6 @@ use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use Filament\Schemas\Components\Component;
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\CreateSocialProvider;
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\EditSocialProvider;
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\ListSocialProviders;
@@ -17,6 +16,7 @@ use Modules\User\Filament\Resources\SocialProviderResource\Pages\ViewSocialProvi
 use Modules\User\Models\SocialProvider;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+use Filament\Forms\Components\Field;
 /**
  * @property SocialProvider $record
  *                                  -------
@@ -26,10 +26,10 @@ class SocialProviderResource extends XotBaseResource
     protected static ?string $model = SocialProvider::class;
 
     /**
-     * @return array<string, Component>
+     * @return array<string, mixed>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    //#[\Override]
+    public static function getFormSchemaOld(): array
     {
         return [
             'env_guide' => Placeholder::make('env_guide')

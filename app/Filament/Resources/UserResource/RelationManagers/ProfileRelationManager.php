@@ -27,7 +27,7 @@ class ProfileRelationManager extends XotBaseRelationManager
      * @return array<string, Component>
      */
     #[\Override]
-    public function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
         return [
             'ente' => TextInput::make('ente'),

@@ -16,7 +16,7 @@ class EditProfile extends XotBaseEditProfile
      *
      * @return array<int|string, \Filament\Schemas\Components\Component>
      */
-    public function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
         return [
             $this->getNameFormComponent(),

@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
 use Modules\User\Models\OauthAccessToken;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+use Filament\Forms\Components\Field;
 final class PersonalAccessTokenResource extends XotBaseResource
 {
     protected static ?string $model = OauthAccessToken::class;
@@ -16,10 +16,10 @@ final class PersonalAccessTokenResource extends XotBaseResource
     protected static ?string $recordTitleAttribute = 'name';
 
     /**
-     * @return array<string, Component>
+     * @return array<string, mixed>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    //#[\Override]
+    public static function getFormSchemaOld(): array
     {
         return [
             'name' => TextInput::make('name')

@@ -8,7 +8,7 @@ use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-
+use Filament\Forms\Components\Field;
 class TeamResource extends XotBaseResource
 {
     /**
@@ -25,8 +25,11 @@ class TeamResource extends XotBaseResource
         return $xot->getTeamClass();
     }
 
-    #[\Override]
-    public static function getFormSchema(): array
+    //#[\Override]
+    /**
+     * @return array<string, mixed>
+     */
+    public static function getFormSchemaOld(): array
     {
         return [
             'name' => TextInput::make('name')->required()->maxLength(255),

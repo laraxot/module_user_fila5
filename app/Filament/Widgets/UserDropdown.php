@@ -30,7 +30,7 @@ class UserDropdown extends XotBaseSchemaWidget
      * Get the form schema.
      * Required by XotBaseWidget but not used for this simple dropdown.
      */
-    public function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
         return [];
     }
