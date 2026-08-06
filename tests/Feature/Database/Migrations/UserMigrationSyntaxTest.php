@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -21,7 +24,11 @@ function getUserMigrationFiles(): array
     $result = [];
 
     foreach ($files as $file) {
+<<<<<<< HEAD
         $result[] = SafeStringCastAction::cast($file);
+=======
+        $result[] = (string) $file;
+>>>>>>> laraxot/dev
     }
 
     sort($result);

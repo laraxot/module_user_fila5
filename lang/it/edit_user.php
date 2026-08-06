@@ -49,12 +49,21 @@ return [
         'name' => 'Edit User',
         'plural' => 'Edit User',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Utenti',
             'description' => 'Anagrafiche utenti, profili e dispositivi',
         ],
         'label' => 'Edit User',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Edit User',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Edit User',
     'plural_label' => 'Edit User (Plurale)',

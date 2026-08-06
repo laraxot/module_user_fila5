@@ -390,10 +390,14 @@ return [
     ],
     'navigation' => [
         'label' => 'Registration',
+<<<<<<< HEAD
         'group' => [
             'name' => 'Authentication',
             'description' => 'Sign-in, registration and credentials',
         ],
+=======
+        'group' => 'User Management',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-user-plus',
         'sort' => '50',
     ],

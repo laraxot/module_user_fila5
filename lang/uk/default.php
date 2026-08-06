@@ -203,10 +203,14 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
+<<<<<<< HEAD
         'group' => [
             'name' => 'Налаштування',
             'description' => 'Налаштування модуля користувачів',
         ],
+=======
+        'group' => 'Missing Group',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

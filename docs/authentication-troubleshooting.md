@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Debug Autenticazione - Login Widget"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Debug Autenticazione - Login Widget
 
 ## Introduzione

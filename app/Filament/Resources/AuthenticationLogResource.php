@@ -32,7 +32,11 @@ class AuthenticationLogResource extends XotBaseResource
     /**
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     public static function getFormSchemaOld(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'authentication_info_section' => Section::make('Authentication Information')

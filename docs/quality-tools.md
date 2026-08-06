@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Quality Tools Usage (User)"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Quality Tools Usage (User)
 
 Module-specific guidance for PHPMD, PHP-CS-Fixer, Laravel Pint, Psalm, PHPQA, actionlint. Canonical reference: `Modules/Xot/docs/QUALITY_TOOLS.md`.

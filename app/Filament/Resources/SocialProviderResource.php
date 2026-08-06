@@ -26,11 +26,18 @@ class SocialProviderResource extends XotBaseResource
     protected static ?string $model = SocialProvider::class;
 
     /**
+<<<<<<< HEAD
      * Schema legacy del form: la sorgente di verità è SocialProviderForm::getFormSchema().
      *
      * @return array<string, Component>
      */
     public static function getFormSchemaOld(): array
+=======
+     * @return array<string, Component>
+     */
+    #[\Override]
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'env_guide' => Placeholder::make('env_guide')

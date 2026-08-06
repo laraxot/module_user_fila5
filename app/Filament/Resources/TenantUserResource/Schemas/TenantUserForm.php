@@ -7,13 +7,17 @@ namespace Modules\User\Filament\Resources\TenantUserResource\Schemas;
 use Filament\Forms\Components\Select;
 use Filament\Schemas\Components\Component as SchemaComponent;
 use Filament\Schemas\Components\Section;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class TenantUserForm extends XotBaseResourceForm
 {
     /**
+<<<<<<< HEAD
      * Records with a NULL name would make Filament pass null where a string label
      * is required, so fall back to the primary key.
      */
@@ -34,6 +38,8 @@ class TenantUserForm extends XotBaseResourceForm
     }
 
     /**
+=======
+>>>>>>> laraxot/dev
      * @return array<int|string, SchemaComponent>
      */
     public static function getFormSchema(): array
@@ -41,6 +47,7 @@ class TenantUserForm extends XotBaseResourceForm
         return [
             'tenant_user' => Section::make('Tenant User Information')
                 ->schema([
+<<<<<<< HEAD
                     'tenant' => Select::make('tenant')
                         ->label('Tenant')
                         ->relationship('tenant', 'name')
@@ -57,6 +64,29 @@ class TenantUserForm extends XotBaseResourceForm
                         )
                         ->required()
                         ->searchable(),
+=======
+                    'tenant_id' => Select::make('tenant_id')
+                        ->label('Tenant')
+                        ->relationship('tenant', 'name')
+                        ->required()
+                        ->searchable(),
+                    'user_id' => Select::make('user_id')
+                        ->label('User')
+                        ->relationship('user', 'name')
+                        ->required()
+                        ->searchable(),
+                    'role' => Select::make('role')
+                        ->label('Role')
+                        ->options([
+                            'admin' => 'Admin',
+                            'manager' => 'Manager',
+                            'user' => 'User',
+                            'viewer' => 'Viewer',
+                        ])
+                        ->required()
+                        ->searchable()
+                        ->helperText('Role of the user in the tenant'),
+>>>>>>> laraxot/dev
                 ])
                 ->columns(2),
         ];

@@ -5,10 +5,14 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'OAuth-Autorisierungscode',
+<<<<<<< HEAD
         'group' => [
             'name' => 'OAuth',
             'description' => 'Clients, Token und Passport-API',
         ],
+=======
+        'group' => '',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-key',
         'sort' => 32,
     ],

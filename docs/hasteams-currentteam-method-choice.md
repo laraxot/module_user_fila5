@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Choice of currentTeam() Method in HasTeams Trait"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Choice of currentTeam() Method in HasTeams Trait
 
 ## Analysis and Decision

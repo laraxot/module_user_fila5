@@ -105,12 +105,21 @@ return [
         'name' => 'Oauth Token',
         'plural' => 'Oauth Token',
         'group' => [
+<<<<<<< HEAD
             'name' => 'OAuth',
             'description' => 'Client, token e API Passport',
         ],
         'label' => 'Oauth Token',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Oauth Token',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Oauth Token',
     'plural_label' => 'Oauth Token (Plurale)',

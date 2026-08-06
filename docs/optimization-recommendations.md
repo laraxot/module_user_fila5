@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Raccomandazioni di Ottimizzazione - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -291,10 +294,18 @@ php artisan user:benchmark  # Target: < 100ms
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Analisi Moduli Globale](../../../../docs/project/modules_analysis_and_optimization.md)
 - [Linee Guida Riusabilità](../../../../docs/project/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
 
+=======
+- [Analisi Moduli Globale](../../../project_docs/modules_analysis_and_optimization.md)
+- [Linee Guida Riusabilità](../../../project_docs/module_reusability_guidelines.md)
+- [Best Practices User](best-practices/)
+
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> laraxot/dev
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -568,7 +579,15 @@ php artisan user:benchmark  # Target: < 100ms
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [Linee Guida Riusabilità](../../../../docs/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
 
+=======
+- [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
+- [Linee Guida Riusabilità](../../../docs/module_reusability_guidelines.md)
+- [Best Practices User](best-practices/)
+
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> laraxot/dev

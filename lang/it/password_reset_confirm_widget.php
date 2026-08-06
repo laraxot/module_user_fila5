@@ -6,10 +6,14 @@ return [
     'navigation' => [
         'label' => 'Conferma Reset Password',
         'plural_label' => 'Conferma Reset Password',
+<<<<<<< HEAD
         'group' => [
             'name' => 'Autenticazione',
             'description' => 'Accesso, registrazione e credenziali',
         ],
+=======
+        'group' => 'Autenticazione',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-lock-closed',
         'sort' => 8,
     ],

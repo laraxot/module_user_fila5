@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Popolamento Database - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Popolamento Database - Modulo User
 
 ## Panoramica
@@ -309,7 +312,11 @@ echo "User roles: " . $user->roles()->count() . "\n";
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [README Modulo User](./readme.md)
+=======
+- [README Modulo User](./README.md)
+>>>>>>> laraxot/dev
 - [Factory Best Practices](./factory-best-practices.md)
 - [Testing Guidelines](./testing.md)
 - [Database Schema](./database-schema.md)

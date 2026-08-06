@@ -7,8 +7,13 @@ return [
         'name' => 'Utenti',
         'plural' => 'Utenti',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Benutzer',
             'description' => 'Benutzerdaten, Profile und Geräte',
+=======
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione degli utenti e dei loro permessi',
+>>>>>>> laraxot/dev
         ],
         'label' => 'Utenti',
         'sort' => '26',

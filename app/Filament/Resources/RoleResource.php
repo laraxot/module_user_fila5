@@ -16,12 +16,17 @@ class RoleResource extends XotBaseResource
 {
     protected static ?string $model = Role::class;
 
+<<<<<<< HEAD
     /**
      * Schema legacy del form: la sorgente di verità è RoleForm::getFormSchema().
      *
      * @return array<string, \Filament\Schemas\Components\Component>
      */
     public static function getFormSchemaOld(): array
+=======
+    #[\Override]
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'name' => TextInput::make('name')->required()->maxLength(255),

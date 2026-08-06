@@ -278,6 +278,7 @@ return [
         'user' => 'Non riusciamo a trovare un utente con questo indirizzo email.',
     ],
     'navigation' => [
+<<<<<<< HEAD
         'name' => 'Authentifizierung',
         'plural' => 'Authentifizierung',
         'group' => [
@@ -287,6 +288,13 @@ return [
         'label' => 'Authentifizierung',
         'sort' => 1,
         'icon' => 'heroicon-o-lock-closed',
+=======
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+>>>>>>> laraxot/dev
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',

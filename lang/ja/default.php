@@ -210,10 +210,14 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
+<<<<<<< HEAD
         'group' => [
             'name' => '設定',
             'description' => 'ユーザーモジュールの設定',
         ],
+=======
+        'group' => 'Missing Group',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

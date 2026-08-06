@@ -39,12 +39,17 @@ abstract class BaseUserResource extends XotBaseResource
     //    static::$extendFormCallback = $callback;
     // }
 
+<<<<<<< HEAD
     /**
      * Schema legacy del form: la sorgente di verità è BaseUserForm::getFormSchema().
      *
      * @return array<string, \Filament\Schemas\Components\Component>
      */
     public static function getFormSchemaOld(): array
+=======
+    #[\Override]
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'section01' => Section::make([

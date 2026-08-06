@@ -13,12 +13,22 @@ use Modules\User\Filament\Clusters\Appearance\Pages\CustomCss;
 use Modules\User\Filament\Clusters\Appearance\Pages\Favicon;
 use Modules\User\Filament\Clusters\Appearance\Pages\Logo;
 use Modules\User\Tests\TestCase;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Clusters\XotBaseCluster;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
+=======
+use Modules\Xot\Filament\Clusters\XotBaseCluster;
+use Modules\Xot\Filament\Pages\XotBasePage;
+
+use function Pest\Laravel\actingAs;
+
+use PHPUnit\Framework\Assert;
+
+>>>>>>> laraxot/dev
 use function Safe\file_get_contents;
 use function Safe\glob;
 
@@ -67,12 +77,20 @@ describe('Appearance Cluster', function (): void {
         /** @var TestCase $this */
         $files = glob(base_path('Modules/User/app/Filament/Clusters/Appearance/Pages/*.php'));
 
+<<<<<<< HEAD
         if ($files === []) {
+=======
+        if ([] === $files) {
+>>>>>>> laraxot/dev
             $this->skipTest('Appearance cluster pages directory not found.');
         }
 
         foreach ($files as $file) {
+<<<<<<< HEAD
             $filePath = SafeStringCastAction::cast($file);
+=======
+            $filePath = (string) $file;
+>>>>>>> laraxot/dev
             $content = (string) file_get_contents($filePath);
             Assert::assertStringContainsString('extends XotBasePage', $content, basename($filePath));
             Assert::assertStringNotContainsString('extends Page', $content, basename($filePath));

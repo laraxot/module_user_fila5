@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Cyclomatic Complexity Report - Module: User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Cyclomatic Complexity Report - Module: User
 
 **Generated:** 2025-10-01 19:44:12  

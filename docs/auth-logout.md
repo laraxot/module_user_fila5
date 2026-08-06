@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Componente di Logout"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Componente di Logout
 
 ## Problemi Identificati

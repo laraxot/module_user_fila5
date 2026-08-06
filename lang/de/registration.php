@@ -5,10 +5,14 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Registrazione',
+<<<<<<< HEAD
         'group' => [
             'name' => 'Authentifizierung',
             'description' => 'Anmeldung, Registrierung und Zugangsdaten',
         ],
+=======
+        'group' => 'Gestione Utenti',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-user-plus',
         'sort' => '50',
     ],

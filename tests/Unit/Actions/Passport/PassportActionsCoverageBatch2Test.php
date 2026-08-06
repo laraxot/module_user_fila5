@@ -16,7 +16,10 @@ use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\OauthClient;
 use Modules\User\Tests\TestCase;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -119,7 +122,11 @@ test('regenerates client secret from model instance and client id', function ():
     $storedSecret = DB::connection('user')->table('oauth_clients')->where('id', $clientId)->value('secret');
 
     Assert::assertNotSame($secretFromId, $storedSecret);
+<<<<<<< HEAD
     Assert::assertTrue(Hash::check($secretFromId, SafeStringCastAction::cast($storedSecret)));
+=======
+    Assert::assertTrue(Hash::check($secretFromId, (string) $storedSecret));
+>>>>>>> laraxot/dev
 });
 
 test('revokes refresh token and returns false for missing token', function (): void {

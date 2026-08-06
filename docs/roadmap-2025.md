@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "👥 USER MODULE - ROADMAP 2025"
 type: concept
@@ -18,12 +19,18 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 👥 USER MODULE - ROADMAP 2025
 
 **Modulo**: User (Authentication & Authorization)  
 **Status**: 90% COMPLETATO  
 **Priority**: HIGH  
+<<<<<<< HEAD
 **PHPStan**: ✅ Level 10 (0 errori)  
+=======
+**PHPStan**: ✅ Level 9 (0 errori)  
+>>>>>>> laraxot/dev
 **Filament**: ✅ 4.x Compatibile  
 
 ---
@@ -102,7 +109,11 @@ User Module
 - [x] **Notification System**: User notifications
 
 ### 🔧 Technical Excellence
+<<<<<<< HEAD
 - [x] **PHPStan Level 10**: 0 errori
+=======
+- [x] **PHPStan Level 9**: 0 errori
+>>>>>>> laraxot/dev
 - [x] **Filament 4.x**: Compatibilità completa
 - [x] **Type Safety**: Type hints completi
 - [x] **Error Handling**: Gestione errori robusta
@@ -269,7 +280,11 @@ User Module
 **Status**: 95% COMPLETATO
 
 #### ✅ Completed
+<<<<<<< HEAD
 - [x] PHPStan Level 10 compliance
+=======
+- [x] PHPStan Level 9 compliance
+>>>>>>> laraxot/dev
 - [x] Type safety implementation
 - [x] Error handling improvement
 - [x] Code documentation
@@ -328,7 +343,11 @@ User Module
 ## 🎯 SUCCESS METRICS
 
 ### 📊 Technical Metrics
+<<<<<<< HEAD
 - [x] **PHPStan Level 10**: 0 errori ✅
+=======
+- [x] **PHPStan Level 9**: 0 errori ✅
+>>>>>>> laraxot/dev
 - [x] **Filament 4.x**: Compatibile ✅
 - [ ] **Test Coverage**: 80% (target)
 - [ ] **Response Time**: < 200ms
@@ -492,6 +511,11 @@ User Module
 
 ---
 
+<<<<<<< HEAD
+=======
+**Last Updated**: 2025-10-01
+**Next Review**: 2025-11-01
+>>>>>>> laraxot/dev
 **Status**: 🚧 ACTIVE DEVELOPMENT  
 **Confidence Level**: 98%  
 

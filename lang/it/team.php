@@ -7,8 +7,13 @@ return [
         'name' => 'Team',
         'plural' => 'Teams',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Team e tenant',
             'description' => 'Organizzazioni, inviti e appartenenze',
+=======
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione dei team e delle loro autorizzazioni',
+>>>>>>> laraxot/dev
         ],
         'label' => 'team',
         'sort' => 18,

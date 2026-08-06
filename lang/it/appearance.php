@@ -8,7 +8,11 @@ return [
         'plural' => 'Aspetto',
         'group' => [
             'name' => 'Aspetto',
+<<<<<<< HEAD
             'description' => 'Temi, colori e personalizzazioni',
+=======
+            'description' => 'Personalizzazione dell\'aspetto del sistema',
+>>>>>>> laraxot/dev
         ],
         'label' => 'Aspetto',
         'icon' => 'heroicon-o-paint-brush',

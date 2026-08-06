@@ -7,15 +7,26 @@ namespace Modules\User\Console\Commands;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Support\Htmlable;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> laraxot/dev
 
 use function Laravel\Prompts\select;
 use function Laravel\Prompts\text;
 
+<<<<<<< HEAD
+=======
+use Modules\Xot\Actions\Cast\SafeObjectCastAction;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+use Webmozart\Assert\Assert;
+
+>>>>>>> laraxot/dev
 /**
  * Command to change user type based on project configuration.
  *
@@ -90,7 +101,11 @@ class ChangeTypeCommand extends Command
                 $value = app(SafeObjectCastAction::class)
                     ->getStringProperty($item, 'value', '');
                 $label = $item->getLabel();
+<<<<<<< HEAD
                 $options[$value] = is_string($label) ? $label : SafeStringCastAction::cast($label);
+=======
+                $options[$value] = is_string($label) ? $label : (string) $label;
+>>>>>>> laraxot/dev
             } else {
                 $options[is_string($key) ? $key : (string) $key] = 'Unknown';
             }

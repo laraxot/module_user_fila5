@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module Analysis"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # User Module Analysis
 
 ## Overview
@@ -68,6 +71,7 @@ Modules/User/
 - Integration tests for user flows
 ### Versione HEAD
 ## Collegamenti tra versioni di analysis.md
+<<<<<<< HEAD
 * [analysis.md](../../../notify/docs/analysis.md)
 * [analysis.md](../../../notify/docs/phpstan/analysis.md)
 * [analysis.md](../../../xot/docs/analysis.md)
@@ -94,5 +98,33 @@ Modules/User/
 * [analysis.md](../../../media/project_docs/analysis.md)
 * [analysis.md](../../../media/project_docs/phpstan/analysis.md)
 * [analysis.md](../../../../themes/one/project_docs/analysis.md)
+=======
+* [analysis.md](../../../Notify/docs/analysis.md)
+* [analysis.md](../../../Notify/docs/phpstan/analysis.md)
+* [analysis.md](../../../Xot/docs/analysis.md)
+* [analysis.md](../../../Xot/docs/phpstan/analysis.md)
+* [analysis.md](../../../User/docs/analysis.md)
+* [analysis.md](../../../User/docs/phpstan/analysis.md)
+* [analysis.md](../../../UI/docs/analysis.md)
+* [analysis.md](../../../UI/docs/phpstan/analysis.md)
+* [analysis.md](../../../Job/docs/analysis.md)
+* [analysis.md](../../../Job/docs/phpstan/analysis.md)
+* [analysis.md](../../../Media/docs/analysis.md)
+* [analysis.md](../../../Media/docs/phpstan/analysis.md)
+* [analysis.md](../../../../Themes/One/docs/analysis.md)
+* [analysis.md](../../../Notify/project_docs/analysis.md)
+* [analysis.md](../../../Notify/project_docs/phpstan/analysis.md)
+* [analysis.md](../../../Xot/project_docs/analysis.md)
+* [analysis.md](../../../Xot/project_docs/phpstan/analysis.md)
+* [analysis.md](../../../User/project_docs/analysis.md)
+* [analysis.md](../../../User/project_docs/phpstan/analysis.md)
+* [analysis.md](../../../UI/project_docs/analysis.md)
+* [analysis.md](../../../UI/project_docs/phpstan/analysis.md)
+* [analysis.md](../../../Job/project_docs/analysis.md)
+* [analysis.md](../../../Job/project_docs/phpstan/analysis.md)
+* [analysis.md](../../../Media/project_docs/analysis.md)
+* [analysis.md](../../../Media/project_docs/phpstan/analysis.md)
+* [analysis.md](../../../../Themes/One/project_docs/analysis.md)
+>>>>>>> laraxot/dev
 ### Versione Incoming
 ---

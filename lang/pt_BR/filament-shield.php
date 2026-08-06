@@ -27,10 +27,14 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
+<<<<<<< HEAD
         'group' => [
             'name' => 'Perfis e permissões',
             'description' => 'Controle de acesso',
         ],
+=======
+        'group' => 'Missing Group',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

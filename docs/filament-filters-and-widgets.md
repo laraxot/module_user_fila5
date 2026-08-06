@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Filament 4 — filtri pagina e widget (lezioni apprese)"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament 4 — filtri pagina e widget (lezioni apprese)
 
 - Pagina: usare `HasFiltersForm` e renderizzare lo schema in Blade con `{{ $this->getFiltersForm() }}`.

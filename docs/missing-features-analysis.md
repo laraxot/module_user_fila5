@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Analisi Funzionalità Mancanti - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Analisi Funzionalità Mancanti - Modulo User
 
 **Data Analisi**: 2026-01-22  

@@ -40,12 +40,21 @@ return [
         'name' => 'Attach Role',
         'plural' => 'Attach Role',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Ruoli e permessi',
             'description' => 'Controllo degli accessi',
         ],
         'label' => 'Attach Role',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Attach Role',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Attach Role',
     'plural_label' => 'Attach Role (Plurale)',

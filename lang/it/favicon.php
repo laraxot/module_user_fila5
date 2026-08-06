@@ -6,10 +6,14 @@ return [
     'navigation' => [
         'label' => 'Favicon',
         'plural_label' => 'Favicon',
+<<<<<<< HEAD
         'group' => [
             'name' => 'Aspetto',
             'description' => 'Temi, colori e personalizzazioni',
         ],
+=======
+        'group' => 'Aspetto',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-photo',
         'sort' => 5,
     ],

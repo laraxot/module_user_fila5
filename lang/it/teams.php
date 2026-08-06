@@ -84,12 +84,21 @@ return [
         'name' => 'Teams',
         'plural' => 'Teams',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Team e tenant',
             'description' => 'Organizzazioni, inviti e appartenenze',
         ],
         'label' => 'Teams',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Teams',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Teams',
     'plural_label' => 'Teams (Plurale)',

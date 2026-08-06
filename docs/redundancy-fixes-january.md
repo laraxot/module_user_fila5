@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Correzioni Ridondanze - Gennaio 2026"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Correzioni Ridondanze - Gennaio 2026
 
 ## Problema Identificato
@@ -125,6 +128,7 @@ Prima di committare, verifica:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Redundancy Rules](../../xot/docs/filament/redundancy-rules.md)
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [XotBaseRelationManager Documentation](../../xot/docs/filament/relation-managers.md)
@@ -134,3 +138,10 @@ Prima di committare, verifica:
 - [XotBaseRelationManager Documentation](../../Xot/docs/filament/relation-managers.md)
 
 *Ultimo aggiornamento: Gennaio 2026*
+=======
+- [Redundancy Rules](../../Xot/docs/filament/redundancy-rules.md)
+- [Service Provider Architecture](./SERVICE_PROVIDER_ARCHITECTURE.md)
+- [XotBaseRelationManager Documentation](../../Xot/docs/filament/relation-managers.md)
+
+*Ultimo aggiornamento: Gennaio 2026*
+>>>>>>> laraxot/dev

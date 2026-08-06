@@ -38,7 +38,11 @@ return [
         'plural' => 'Logo',
         'group' => [
             'name' => 'Aspetto',
+<<<<<<< HEAD
             'description' => 'Temi, colori e personalizzazioni',
+=======
+            'description' => 'Personalizzazione dell\'aspetto del sistema',
+>>>>>>> laraxot/dev
         ],
         'label' => 'Logo',
         'sort' => 10,

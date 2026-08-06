@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
@@ -12,6 +13,10 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+=======
+use Illuminate\Support\Carbon;
+use Modules\Xot\Contracts\ProfileContract;
+>>>>>>> laraxot/dev
 
 /**
  * Modules\User\Models\TenantUser.
@@ -91,6 +96,7 @@ class TenantUser extends BasePivot
             // ALTER TABLE model_has_role CHANGE COLUMN `id` `id` CHAR(37) NOT NULL DEFAULT uuid();
         ];
     }
+<<<<<<< HEAD
 
 
     /**
@@ -108,4 +114,6 @@ class TenantUser extends BasePivot
     {
         return $this->belongsTo(XotData::make()->getUserClass());
     }
+=======
+>>>>>>> laraxot/dev
 }

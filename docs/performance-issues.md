@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "🐌 user module - performance issues"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🐌 user module - performance issues
 
 > analisi sprechi memoria, query inefficienti, bottlenecks auth/authorization

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Risoluzione Conflitti Traduzioni Tema Two - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Conflitti Traduzioni Tema Two - Modulo User
 
 ## Data: 2025-01-06
@@ -414,12 +417,21 @@ php artisan lang:missing --locale=it,en,de
 
 ### Collegamenti Interni
 - [User States](user_states.mdc)
+<<<<<<< HEAD
 - [Moderation Strategy](user-moderation-strategy-3.md)
 - [Filament Best Practices](filament_best_practices.md)
 
 ### Collegamenti Esterni
 - [Translation Standards](../../../../docs/project/translation-standards.md)
 - [Theme Documentation](../../../themes/two/project_docs/readme.md)
+=======
+- [Moderation Strategy](user_moderation_strategy.md)
+- [Filament Best Practices](filament_best_practices.md)
+
+### Collegamenti Esterni
+- [Translation Standards](../../../project_docs/translation-standards.md)
+- [Theme Documentation](../../../Themes/Two/project_docs/README.md)
+>>>>>>> laraxot/dev
 
 ## Note per Sviluppatori
 

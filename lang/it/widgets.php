@@ -175,12 +175,21 @@ return [
         'name' => 'Widgets',
         'plural' => 'Widgets',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Aspetto',
             'description' => 'Temi, colori e personalizzazioni',
         ],
         'label' => 'Widgets',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Widgets',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Widgets',
     'plural_label' => 'Widgets (Plurale)',

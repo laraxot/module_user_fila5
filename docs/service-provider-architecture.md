@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Service Provider Architecture - Module Pattern"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Service Provider Architecture - Module Pattern
 
 > **Generato**: 2026-01-07
@@ -218,7 +221,11 @@ class UserServiceProvider extends XotBaseServiceProvider
 
 ```json
 {
+<<<<<<< HEAD
     "name": "laraxot/module_user_fila5",
+=======
+    "name": "laraxot/module_user_fila3",
+>>>>>>> laraxot/dev
     "extra": {
         "laravel": {
             "providers": [
@@ -386,9 +393,15 @@ test('user service provider only configures, not registers dependencies', functi
 ## 📚 Collegamenti
 
 ### Documentazione Correlata
+<<<<<<< HEAD
 - [PASSPORT_INTEGRATION.md](./passport-integration.md) - Passport integration completa
 - [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale modulo
 - [README.md](./readme.md) - Overview modulo
+=======
+- [PASSPORT_INTEGRATION.md](./PASSPORT_INTEGRATION.md) - Passport integration completa
+- [FILOSOFIA_MODULO_USER.md](./FILOSOFIA_MODULO_USER.md) - Filosofia generale modulo
+- [README.md](./README.md) - Overview modulo
+>>>>>>> laraxot/dev
 
 ### Documentazione Esterna
 - [Laravel Modules Documentation](https://nwidart.com/laravel-modules)

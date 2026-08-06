@@ -6,10 +6,14 @@ return [
     'navigation' => [
         'label' => 'Header Password',
         'plural_label' => 'Header Password',
+<<<<<<< HEAD
         'group' => [
             'name' => 'Autenticazione',
             'description' => 'Accesso, registrazione e credenziali',
         ],
+=======
+        'group' => 'Impostazioni',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-lock-closed',
         'sort' => 11,
     ],

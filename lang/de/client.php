@@ -7,8 +7,13 @@ return [
         'name' => 'Client',
         'plural' => 'Clients',
         'group' => [
+<<<<<<< HEAD
             'name' => 'OAuth',
             'description' => 'Clients, Token und Passport-API',
+=======
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione dei client e delle loro autorizzazioni',
+>>>>>>> laraxot/dev
         ],
         'label' => 'client',
         'sort' => '92',

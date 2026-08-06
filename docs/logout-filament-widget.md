@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementazione del Logout con Widget Filament"
 type: concept
@@ -28,6 +29,18 @@ related:
 - [Analisi Errore Logout](logout-implementation-error-3.md)
 - [Struttura Widget](widgets-structure-2.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
+=======
+# Implementazione del Logout con Widget Filament
+
+## Collegamenti correlati
+- [Documentazione centrale](/docs/README.md)
+- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+- [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
+- [Implementazione Logout](LOGOUT_BLADE_IMPLEMENTATION.md)
+- [Analisi Errore Logout](LOGOUT_IMPLEMENTATION_ERROR.md)
+- [Struttura Widget](WIDGETS_STRUCTURE.md)
+- [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
+>>>>>>> laraxot/dev
 
 ## Introduzione
 
@@ -247,7 +260,11 @@ FilamentView::registerRenderHook(
 
 ## Alternativa: Logout Immediato
 
+<<<<<<< HEAD
 Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout-blade-implementation-2.md), che esegue il logout immediatamente senza richiedere conferma.
+=======
+Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](LOGOUT_BLADE_IMPLEMENTATION.md), che esegue il logout immediatamente senza richiedere conferma.
+>>>>>>> laraxot/dev
 
 ## Conclusione
 
@@ -255,6 +272,7 @@ L'implementazione del logout con un widget Filament offre un approccio flessibil
 # Implementazione del Logout con Widget Filament
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
@@ -262,6 +280,15 @@ L'implementazione del logout con un widget Filament offre un approccio flessibil
 - [Analisi Errore Logout](logout-implementation-error-3.md)
 - [Struttura Widget](widgets-structure-2.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
+=======
+- [Documentazione centrale](/docs/README.md)
+- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+- [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
+- [Implementazione Logout](LOGOUT_BLADE_IMPLEMENTATION.md)
+- [Analisi Errore Logout](LOGOUT_IMPLEMENTATION_ERROR.md)
+- [Struttura Widget](WIDGETS_STRUCTURE.md)
+- [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
+>>>>>>> laraxot/dev
 
 ## Introduzione
 
@@ -481,7 +508,11 @@ FilamentView::registerRenderHook(
 
 ## Alternativa: Logout Immediato
 
+<<<<<<< HEAD
 Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout-blade-implementation-2.md), che esegue il logout immediatamente senza richiedere conferma.
+=======
+Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](LOGOUT_BLADE_IMPLEMENTATION.md), che esegue il logout immediatamente senza richiedere conferma.
+>>>>>>> laraxot/dev
 
 ## Conclusione
 

@@ -15,12 +15,21 @@ return [
         'name' => 'Notifications',
         'plural' => 'Notifications',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Utenti',
             'description' => 'Anagrafiche utenti, profili e dispositivi',
         ],
         'label' => 'Notifications',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Notifications',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Notifications',
     'plural_label' => 'Notifications (Plurale)',

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Syntax Errors da Fixare - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Syntax Errors da Fixare - Modulo User
 
 ## 🚨 File con Errori Attivi

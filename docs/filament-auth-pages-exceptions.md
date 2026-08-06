@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Eccezioni Regola XotBase - Pagine Autenticazione"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Eccezioni Regola XotBase - Pagine Autenticazione
 
 ## Scopo
@@ -145,7 +148,11 @@ Estendere `Filament\Pages\Page` direttamente solo per:
 ## Documentazione Correlata
 
 - [Regole XotBase](../../../bashscripts/docs/xotbase_critical_rules.md)
+<<<<<<< HEAD
 - [XotBasePage Implementation](../../../xot/docs/xotbasepage_implementation.md)
+=======
+- [XotBasePage Implementation](../../../Xot/docs/xotbasepage_implementation.md)
+>>>>>>> laraxot/dev
 - [Filament Namespace Rules](./filament-namespace-rules.md)
 
 ---

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Database Issues in User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Database Issues in User Module
 
 ## Missing `doctor_team` Table
@@ -37,6 +40,7 @@ related:
 **Latest Update (Corrected Migration Structure)**: Updated the migration files for `doctor_team` table on 2025-05-16 to use the correct structure with `tableCreate` and `tableUpdate` methods from `XotBaseMigration`. Also updated project rules in `.mdc` files to enforce this convention. Attempted migration again to resolve the `Internal Server Error`.
 
 **Related Documentation**:
+<<<<<<< HEAD
 - [User Module Overview](../index.md)
 - [Team Management](./team_management.md)
 - [BaseUser Model](./baseuser.md)
@@ -47,3 +51,10 @@ related:
 - [Database Structure](../DATABASE_STRUCTURE.md)
 - [Migration Guidelines](../../../../docs/collegamenti-documentazione.md)
 - [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
+=======
+- [User Module Overview](../INDEX.md)
+- [Team Management](./TEAM_MANAGEMENT.md)
+- [BaseUser Model](./BaseUser.md)
+- [Database Structure](../DATABASE_STRUCTURE.md)
+- [Migration Guidelines](../../../../docs/collegamenti-documentazione.md)
+>>>>>>> laraxot/dev

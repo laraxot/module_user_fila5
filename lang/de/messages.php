@@ -38,6 +38,7 @@ return [
     'value_too_long' => 'Wert ist zu lang.',
     'value_too_short' => 'Wert ist zu kurz.',
     'navigation' => [
+<<<<<<< HEAD
         'label' => 'Nachrichten',
         'plural_label' => 'Nachrichten',
         'group' => [
@@ -49,6 +50,16 @@ return [
     ],
     'label' => 'Nachricht',
     'plural_label' => 'Nachrichten',
+=======
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> laraxot/dev
     'fields' => [
     ],
     'actions' => [

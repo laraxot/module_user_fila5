@@ -10,8 +10,13 @@ return [
         'name' => 'Social Provider',
         'plural' => 'Social Providers',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Authentifizierung',
             'description' => 'Anmeldung, Registrierung und Zugangsdaten',
+=======
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione dei provider social',
+>>>>>>> laraxot/dev
         ],
         'label' => 'social provider',
         'sort' => '93',

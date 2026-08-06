@@ -1034,6 +1034,7 @@ return [
         ],
     ],
     'navigation' => [
+<<<<<<< HEAD
         'name' => 'Autenticazione',
         'plural' => 'Autenticazione',
         'group' => [
@@ -1043,6 +1044,59 @@ return [
         'label' => 'Autenticazione',
         'sort' => 1,
         'icon' => 'heroicon-o-lock-closed',
+=======
+        'name' => [
+            'key' => 'user::auth.navigation.name',
+            'text' => 'Auth',
+            'description' => 'Nome singolare della sezione di navigazione per l\'autenticazione',
+            'context' => 'navigation',
+            'placeholder' => '',
+        ],
+        'plural' => [
+            'key' => 'user::auth.navigation.plural',
+            'text' => 'Auth',
+            'description' => 'Nome plurale della sezione di navigazione per l\'autenticazione',
+            'context' => 'navigation',
+            'placeholder' => '',
+        ],
+        'group' => [
+            'name' => [
+                'key' => 'user::auth.navigation.group.name',
+                'text' => 'General',
+                'description' => 'Nome del gruppo di navigazione',
+                'context' => 'navigation-group',
+                'placeholder' => '',
+            ],
+            'description' => [
+                'key' => 'user::auth.navigation.group.description',
+                'text' => 'General Settings',
+                'description' => 'Descrizione del gruppo di navigazione',
+                'context' => 'navigation-group',
+                'placeholder' => '',
+            ],
+        ],
+        'label' => [
+            'key' => 'user::auth.navigation.label',
+            'text' => 'Auth',
+            'description' => 'Etichetta della sezione di navigazione per l\'autenticazione',
+            'context' => 'navigation',
+            'placeholder' => '',
+        ],
+        'sort' => [
+            'key' => 'user::auth.navigation.sort',
+            'text' => '1',
+            'description' => 'Ordine di visualizzazione nella navigazione',
+            'context' => 'navigation',
+            'placeholder' => '',
+        ],
+        'icon' => [
+            'key' => 'user::auth.navigation.icon',
+            'text' => 'heroicon-o-collection',
+            'description' => 'Icona associata alla sezione di navigazione per l\'autenticazione',
+            'context' => 'navigation',
+            'placeholder' => '',
+        ],
+>>>>>>> laraxot/dev
     ],
     'label' => [
         'key' => 'user::auth.label',

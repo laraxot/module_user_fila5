@@ -5,10 +5,14 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Réinitialisation de Mot de Passe',
+<<<<<<< HEAD
         'group' => [
             'name' => 'Authentification',
             'description' => 'Connexion, inscription et identifiants',
         ],
+=======
+        'group' => 'Sécurité',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-key',
         'sort' => 42,
     ],

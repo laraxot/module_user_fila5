@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Filament Resources Coverage Analysis - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament Resources Coverage Analysis - Modulo User
 
 ## Data: 2025-01-02
@@ -227,4 +230,8 @@ Questi modelli sono pivot tables e NON devono avere Resources standalone:
 
 - [Filament Resources Organization](./filament-resources-organization.md)
 - [Filament Best Practices](./filament-best-practices.md)
+<<<<<<< HEAD
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
+=======
+- [Filosofia Modulo User](./FILOSOFIA_MODULO_USER.md)
+>>>>>>> laraxot/dev

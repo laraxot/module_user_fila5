@@ -45,7 +45,10 @@ related:
 - 🔑 **[Passport Cluster](./passport-cluster-summary.md)** - Gestione centralizzata delle chiavi API.
 - ⚡ **[Auth Widgets](./login-widget-fix.md)** - Componenti di login/registrazione riutilizzabili.
 - 🔐 **[Socialite + Microsoft OAuth](./socialite-microsoft-integration.md)** - Integrazione autenticazione Microsoft (NEW)
+<<<<<<< HEAD
 - 🧭 **[Gruppi di navigazione](./navigation-groups.md)** - Tassonomia dei sette gruppi di menu e regole per `navigation.group`.
+=======
+>>>>>>> laraxot/dev
 
 ## 🧪 **Qualità e Sviluppo**
 - ✅ **[PHPStan Analysis](./phpstan-level10-user-fixes.md)** - Report di conformità Level 10.

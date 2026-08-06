@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Componenti Header"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Componenti Header
 
 ## Struttura e Convenzioni
@@ -106,5 +109,10 @@ related:
 
 ## Collegamenti Correlati
 - [Documentazione Filament](https://filamentphp.com/docs)
+<<<<<<< HEAD
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management-2.md) 
+=======
+- [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
+- [Gestione Sessione](./SESSION_MANAGEMENT.md) 
+>>>>>>> laraxot/dev
