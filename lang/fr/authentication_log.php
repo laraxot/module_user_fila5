@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'group' => 'Authentification',
+        'group' => [
+            'name' => 'Authentification',
+            'description' => 'Connexion, inscription et identifiants',
+        ],
         'icon' => 'heroicon-o-shield-exclamation',
         'label' => 'Journaux d\'Authentification',
         'sort' => 5,

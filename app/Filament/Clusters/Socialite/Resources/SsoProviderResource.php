@@ -31,10 +31,11 @@ class SsoProviderResource extends XotBaseResource
     protected static ?string $model = SsoProvider::class;
 
     /**
+     * Schema legacy del form: la sorgente di verità è SsoProviderForm::getFormSchema().
+     *
      * @return array<string, Field>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         return [
             'name' => TextInput::make('name')

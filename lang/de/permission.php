@@ -7,8 +7,8 @@ return [
         'name' => 'Permessi',
         'plural' => 'Permessi',
         'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione dei permessi di sistema',
+            'name' => 'Rollen und Berechtigungen',
+            'description' => 'Zugriffssteuerung',
         ],
         'label' => 'Permessi',
         'sort' => '44',

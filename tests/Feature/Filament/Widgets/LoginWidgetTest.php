@@ -9,25 +9,26 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var TestCase $this */
-    $this->widget = new LoginWidget();
+    $this->widget = new LoginWidget;
 });
 
 describe('Login Widget', function (): void {
     test('it can render widget', function (): void {
-        $widget = new LoginWidget();
+        $widget = new LoginWidget;
 
         $reflection = new \ReflectionClass($widget);
         $property = $reflection->getProperty('view');
         $property->setAccessible(true);
         $view = $property->getValue($widget);
 
-        Assert::assertStringContainsString((string) 'pub_theme::filament.widgets.auth.login', (string) $view);
+        Assert::assertStringContainsString(SafeStringCastAction::cast('pub_theme::filament.widgets.auth.login'), SafeStringCastAction::cast($view));
     });
 
     test('it has correct form schema', function (): void {

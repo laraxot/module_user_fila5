@@ -39,7 +39,10 @@ return [
         ],
     ],
     'navigation' => [
-        'group' => 'Benutzerdefiniertes CSS',
+        'group' => [
+            'name' => 'Erscheinungsbild',
+            'description' => 'Themes, Farben und Anpassungen',
+        ],
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',

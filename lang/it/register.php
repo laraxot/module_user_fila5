@@ -6,7 +6,10 @@ return [
     'navigation' => [
         'label' => 'Registrazione',
         'plural_label' => 'Registrazione',
-        'group' => 'Autenticazione',
+        'group' => [
+            'name' => 'Autenticazione',
+            'description' => 'Accesso, registrazione e credenziali',
+        ],
         'icon' => 'heroicon-o-user-plus',
         'sort' => 10,
     ],

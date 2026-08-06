@@ -38,7 +38,10 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'group' => [
+            'name' => 'Benutzer',
+            'description' => 'Benutzerdaten, Profile und Geräte',
+        ],
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

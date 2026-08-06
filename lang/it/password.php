@@ -7,7 +7,8 @@ return [
         'name' => 'Password',
         'plural' => 'Passwords',
         'group' => [
-            'name' => 'Admin',
+            'name' => 'Autenticazione',
+            'description' => 'Accesso, registrazione e credenziali',
         ],
     ],
     'fields' => [

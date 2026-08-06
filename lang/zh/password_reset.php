@@ -5,7 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => '密码重置',
-        'group' => '安全',
+        'group' => [
+            'name' => '认证',
+            'description' => '登录、注册和凭据',
+        ],
         'icon' => 'heroicon-o-key',
         'sort' => 42,
     ],

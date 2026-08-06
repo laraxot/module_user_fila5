@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'group' => 'Autenticação',
+        'group' => [
+            'name' => 'Autenticação',
+            'description' => 'Acesso, registo e credenciais',
+        ],
         'icon' => 'heroicon-o-shield-exclamation',
         'label' => 'Registros de Autenticação',
         'sort' => 5,

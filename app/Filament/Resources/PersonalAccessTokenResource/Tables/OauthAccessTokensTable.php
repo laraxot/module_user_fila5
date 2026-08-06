@@ -8,7 +8,7 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
-class PersonalAccessTokensTable extends XotBaseResourceTable
+class OauthAccessTokensTable extends XotBaseResourceTable
 {
     /**
      * @return array<string, Column>

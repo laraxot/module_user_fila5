@@ -6,7 +6,10 @@ return [
     'navigation' => [
         'label' => 'Passport / API',
         'plural_label' => 'Passport / API',
-        'group' => 'Sistema',
+        'group' => [
+            'name' => 'OAuth',
+            'description' => 'Client, token e API Passport',
+        ],
         'icon' => 'heroicon-o-key',
         'sort' => 95,
     ],

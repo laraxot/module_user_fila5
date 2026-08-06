@@ -8,7 +8,9 @@ use Filament\Forms\Components\Select;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\TenantUser;
+use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 /**
@@ -16,13 +18,26 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
  */
 final class TenantUserResource extends XotBaseResource
 {
-    protected static ?string $model = TenantUser::class;
-
+    //protected static ?string $model = TenantUser::class;
     /**
-     * @return array<string, Component>
+     * Get the model class name for this resource.
+     *
+     * @return class-string<Model>
      */
     #[\Override]
-    public static function getFormSchema(): array
+    public static function getModel(): string
+    {
+        $xot = XotData::make();
+
+        return $xot->getTenantUserClass();
+    }
+
+    /**
+     * Schema legacy del form: la sorgente di verità è TenantUserForm::getFormSchema().
+     *
+     * @return array<string, Component>
+     */
+    public static function getFormSchemaOld(): array
     {
         return [
             'tenant_user' => Section::make('Tenant User Information')

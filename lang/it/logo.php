@@ -38,7 +38,7 @@ return [
         'plural' => 'Logo',
         'group' => [
             'name' => 'Aspetto',
-            'description' => 'Personalizzazione dell\'aspetto del sistema',
+            'description' => 'Temi, colori e personalizzazioni',
         ],
         'label' => 'Logo',
         'sort' => 10,

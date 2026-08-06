@@ -6,7 +6,10 @@ return [
     'navigation' => [
         'label' => 'Accesso con social',
         'plural_label' => 'Accesso con social',
-        'group' => 'Autenticazione',
+        'group' => [
+            'name' => 'Autenticazione',
+            'description' => 'Accesso, registrazione e credenziali',
+        ],
         'icon' => 'heroicon-o-share',
         'sort' => 90,
     ],

@@ -7,8 +7,8 @@ return [
         'name' => 'Client',
         'plural' => 'Clients',
         'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione dei client e delle loro autorizzazioni',
+            'name' => 'OAuth',
+            'description' => 'Clients, tokens and Passport API',
         ],
         'label' => 'client',
         'sort' => '92',

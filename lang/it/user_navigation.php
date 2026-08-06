@@ -11,8 +11,8 @@ return [
         'name' => 'Utenti',
         'plural' => 'Utenti',
         'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione degli utenti e dei loro permessi',
+            'name' => 'Utenti',
+            'description' => 'Anagrafiche utenti, profili e dispositivi',
         ],
         'label' => 'Utenti',
         'sort' => 26,

@@ -5,7 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Utilisateurs Locataires',
-        'group' => 'Locataires',
+        'group' => [
+            'name' => 'Équipes et locataires',
+            'description' => 'Organisations, invitations et adhésions',
+        ],
         'icon' => 'heroicon-o-building-office',
         'sort' => 99,
     ],

@@ -5,7 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Jeton de Rafraîchissement OAuth',
-        'group' => '',
+        'group' => [
+            'name' => 'OAuth',
+            'description' => 'Clients, jetons et API Passport',
+        ],
         'icon' => 'heroicon-o-arrow-path',
         'sort' => 34,
     ],

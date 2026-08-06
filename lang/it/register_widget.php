@@ -3,7 +3,10 @@
 declare(strict_types=1);
 
 return [
-    'navigation' => ['label' => 'Registrazione', 'plural_label' => 'Registrazione', 'group' => 'Autenticazione', 'icon' => 'heroicon-o-user-plus', 'sort' => 2],
+    'navigation' => ['label' => 'Registrazione', 'plural_label' => 'Registrazione', 'group' => [
+        'name' => 'Autenticazione',
+        'description' => 'Accesso, registrazione e credenziali',
+    ], 'icon' => 'heroicon-o-user-plus', 'sort' => 2],
     'label' => 'Registrazione',
     'plural_label' => 'Registrazione',
     'sections' => [

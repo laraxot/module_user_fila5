@@ -7,8 +7,8 @@ return [
         'label' => 'Profilo',
         'plural' => 'Profili',
         'group' => [
-            'label' => 'Gestione Utenti',
-            'description' => 'Gestione dei profili utente',
+            'name' => 'Utenti',
+            'description' => 'Anagrafiche utenti, profili e dispositivi',
         ],
         'icon' => 'user-profile-animated',
         'sort' => 73,

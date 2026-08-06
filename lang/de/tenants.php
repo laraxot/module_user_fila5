@@ -152,7 +152,10 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'group' => [
+            'name' => 'Teams und Mandanten',
+            'description' => 'Organisationen, Einladungen und Mitgliedschaften',
+        ],
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

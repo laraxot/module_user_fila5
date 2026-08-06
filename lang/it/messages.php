@@ -242,14 +242,13 @@ return [
         'placeholder' => '',
     ],
     'navigation' => [
-        'key' => 'user::messages.navigation',
         'label' => 'Messaggi',
         'plural_label' => 'Messaggi',
         'group' => [
-            'name' => 'Generale',
-            'description' => 'Impostazioni Generali',
+            'name' => 'Utenti',
+            'description' => 'Anagrafiche utenti, profili e dispositivi',
         ],
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
         'sort' => 1,
     ],
     'label' => [

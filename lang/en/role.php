@@ -7,8 +7,8 @@ return [
         'name' => 'Ruoli',
         'plural' => 'Ruoli',
         'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione dei ruoli e dei permessi associati',
+            'name' => 'Roles and permissions',
+            'description' => 'Access control',
         ],
         'label' => 'Ruoli',
         'sort' => '26',

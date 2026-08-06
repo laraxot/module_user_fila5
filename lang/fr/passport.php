@@ -5,7 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'OAuth Passport',
-        'group' => 'Authentification',
+        'group' => [
+            'name' => 'OAuth',
+            'description' => 'Clients, jetons et API Passport',
+        ],
         'icon' => 'heroicon-o-key',
         'sort' => 17,
     ],

@@ -10,8 +10,8 @@ return [
         'name' => 'Feature',
         'plural' => 'Features',
         'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione delle feature e delle funzionalità',
+            'name' => 'Einstellungen',
+            'description' => 'Konfiguration des Benutzermoduls',
         ],
         'label' => 'feature',
         'sort' => '75',

@@ -5,7 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Mandanten-Benutzer',
-        'group' => 'Mandanten',
+        'group' => [
+            'name' => 'Teams und Mandanten',
+            'description' => 'Organisationen, Einladungen und Mitgliedschaften',
+        ],
         'icon' => 'heroicon-o-building-office',
         'sort' => 99,
     ],

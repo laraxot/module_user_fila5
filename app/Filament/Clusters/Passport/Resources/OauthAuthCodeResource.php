@@ -33,12 +33,11 @@ class OauthAuthCodeResource extends XotBaseResource
     protected static ?string $model = OauthAuthCode::class;
 
     /**
-     * Get the form schema for the resource.
+     * Schema legacy del form: la sorgente di verità è OauthAuthCodeForm::getFormSchema().
      *
      * @return array<string, Component>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         return [
             'oauth_auth_code_info' => Section::make(static::trans('label'))

@@ -11,6 +11,7 @@ use Modules\User\Models\OauthAccessToken;
 use Modules\User\Models\OauthAuthCode;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthRefreshToken;
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Webmozart\Assert\Assert;
 
 /** @phpstan-ignore trait.unused */
@@ -53,13 +54,13 @@ trait HasPassportConfiguration
         Assert::isArray($config);
 
         Passport::tokensExpireIn(
-            CarbonInterval::days((int) ($config['access_token'] ?? 15))
+            CarbonInterval::days(SafeIntCastAction::cast($config['access_token'] ?? 15))
         );
         Passport::refreshTokensExpireIn(
-            CarbonInterval::days((int) ($config['refresh_token'] ?? 30))
+            CarbonInterval::days(SafeIntCastAction::cast($config['refresh_token'] ?? 30))
         );
         Passport::personalAccessTokensExpireIn(
-            CarbonInterval::months((int) ($config['personal_access_token'] ?? 6))
+            CarbonInterval::months(SafeIntCastAction::cast($config['personal_access_token'] ?? 6))
         );
     }
 

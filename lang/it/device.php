@@ -7,8 +7,8 @@ return [
         'label' => 'Dispositivi',
         'plural_label' => 'Dispositivi',
         'group' => [
-            'name' => 'Sicurezza',
-            'description' => 'Gestione dispositivi e sicurezza',
+            'name' => 'Utenti',
+            'description' => 'Anagrafiche utenti, profili e dispositivi',
         ],
         'sort' => 50,
         'icon' => 'heroicon-o-device-phone-mobile',

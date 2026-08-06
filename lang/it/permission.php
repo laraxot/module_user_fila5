@@ -50,7 +50,10 @@ return [
     'navigation' => [
         'sort' => 80,
         'label' => 'Permessi',
-        'group' => 'Sicurezza',
+        'group' => [
+            'name' => 'Ruoli e permessi',
+            'description' => 'Controllo degli accessi',
+        ],
         'icon' => 'heroicon-o-shield-check',
     ],
     'label' => 'Permission',

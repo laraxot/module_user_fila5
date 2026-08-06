@@ -12,7 +12,8 @@ use Modules\Xot\Datas\XotData;
  *
  * owner_id → User (senza constrained cross-DB).
  */
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     protected ?string $model_class = Team::class;
 
     public function up(): void
@@ -37,6 +38,10 @@ return new class extends XotBaseMigration {
 
     private function syncTeamsColumns(Blueprint $table, string $userClass): void
     {
+        // NB: `teams.id` resta INT UNSIGNED (forma legacy). Non allargarlo a BIGINT:
+        // `team_permissions.team_id` e' stato allineato a INT UNSIGNED e la FK
+        // team_permissions_team_id_foreign ora esiste — MySQL rifiuta la modifica
+        // del tipo di una colonna referenziata da un vincolo attivo.
         if ($this->hasColumn('uuid')) {
             $table->uuid('uuid')->nullable()->change();
         }

@@ -43,7 +43,7 @@ return [
         'plural' => 'Sfondi',
         'group' => [
             'name' => 'Aspetto',
-            'description' => 'Personalizzazione dell\'aspetto del sistema',
+            'description' => 'Temi, colori e personalizzazioni',
         ],
         'label' => 'Sfondo',
         'sort' => 14,

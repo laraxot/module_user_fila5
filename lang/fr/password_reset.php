@@ -5,7 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Réinitialisation de Mot de Passe',
-        'group' => 'Sécurité',
+        'group' => [
+            'name' => 'Authentification',
+            'description' => 'Connexion, inscription et identifiants',
+        ],
         'icon' => 'heroicon-o-key',
         'sort' => 42,
     ],

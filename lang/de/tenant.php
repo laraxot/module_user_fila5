@@ -7,8 +7,8 @@ return [
         'name' => 'Tenant',
         'plural' => 'Tenants',
         'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione dei tenant e delle loro configurazioni',
+            'name' => 'Teams und Mandanten',
+            'description' => 'Organisationen, Einladungen und Mitgliedschaften',
         ],
         'label' => 'tenant',
         'sort' => '30',

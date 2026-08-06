@@ -11,13 +11,14 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var TestCase $this */
-    $this->widget = new UserOverview();
+    $this->widget = new UserOverview;
     $this->user = UserFactory::new()->createOne([
         'type' => UserType::MasterAdmin,
         'email' => 'admin-'.Str::lower(Str::random(10)).'@example.com',
@@ -92,7 +93,7 @@ describe('User Overview', function (): void {
         $viewProperty->setAccessible(true);
 
         $viewPath = $viewProperty->getValue($widget);
-        Assert::assertStringContainsString((string) 'user::', (string) $viewPath);
-        Assert::assertStringContainsString((string) 'widgets.user-overview', (string) $viewPath);
+        Assert::assertStringContainsString(SafeStringCastAction::cast('user::'), SafeStringCastAction::cast($viewPath));
+        Assert::assertStringContainsString(SafeStringCastAction::cast('widgets.user-overview'), SafeStringCastAction::cast($viewPath));
     });
 });

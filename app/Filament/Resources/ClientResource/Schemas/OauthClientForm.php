@@ -11,7 +11,7 @@ use Filament\Schemas\Components\Component as SchemaComponent;
 use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
-class ClientForm extends XotBaseResourceForm
+class OauthClientForm extends XotBaseResourceForm
 {
     /**
      * @return array<int|string, SchemaComponent>

@@ -9,7 +9,7 @@ use Filament\Schemas\Components\Component;
 use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
-class TenantInfolist extends XotBaseResourceInfolist
+class CustomerInfolist extends XotBaseResourceInfolist
 {
     /**
      * @return array<string, Component|Htmlable|string>

@@ -22,7 +22,7 @@ class RolesRelationManager extends XotBaseRelationManager
     // {
     // }
     #[\Override]
-    public function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
         return [
             TextInput::make('name')

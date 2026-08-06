@@ -38,10 +38,11 @@ class TenantResource extends XotBaseResource
     }
 
     /**
+     * Schema legacy del form: la sorgente di verità è TenantForm::getFormSchema().
+     *
      * @return array<string, Component>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         return [
             'main' => Section::make()

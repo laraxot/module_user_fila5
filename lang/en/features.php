@@ -62,7 +62,10 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'group' => [
+            'name' => 'Settings',
+            'description' => 'User module configuration',
+        ],
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

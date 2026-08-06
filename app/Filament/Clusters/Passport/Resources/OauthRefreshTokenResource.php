@@ -34,12 +34,11 @@ class OauthRefreshTokenResource extends XotBaseResource
     protected static ?string $model = OauthRefreshToken::class;
 
     /**
-     * Get the form schema for the resource.
+     * Schema legacy del form: la sorgente di verità è OauthRefreshTokenForm::getFormSchema().
      *
      * @return array<string, Component>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         return [
             'oauth_refresh_token_info' => Section::make(static::trans('label'))

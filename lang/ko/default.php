@@ -186,7 +186,10 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'group' => [
+            'name' => '설정',
+            'description' => '사용자 모듈 구성',
+        ],
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

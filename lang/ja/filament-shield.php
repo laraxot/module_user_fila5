@@ -41,7 +41,10 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'group' => [
+            'name' => 'ロールと権限',
+            'description' => 'アクセス制御',
+        ],
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

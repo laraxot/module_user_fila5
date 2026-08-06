@@ -5,7 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Passwort-Zurücksetzung',
-        'group' => 'Sicherheit',
+        'group' => [
+            'name' => 'Authentifizierung',
+            'description' => 'Anmeldung, Registrierung und Zugangsdaten',
+        ],
         'icon' => 'heroicon-o-key',
         'sort' => 42,
     ],

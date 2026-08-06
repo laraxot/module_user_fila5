@@ -5,7 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'OAuth Refresh Token',
-        'group' => '',
+        'group' => [
+            'name' => 'OAuth',
+            'description' => 'Clients, tokens and Passport API',
+        ],
         'icon' => 'heroicon-o-arrow-path',
         'sort' => 34,
     ],

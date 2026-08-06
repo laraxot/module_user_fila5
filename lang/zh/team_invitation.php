@@ -5,7 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => '团队邀请',
-        'group' => '团队',
+        'group' => [
+            'name' => '团队与租户',
+            'description' => '组织、邀请和成员',
+        ],
         'icon' => 'heroicon-o-user-plus',
         'sort' => 37,
     ],

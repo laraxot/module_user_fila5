@@ -390,7 +390,10 @@ return [
     ],
     'navigation' => [
         'label' => 'Registration',
-        'group' => 'User Management',
+        'group' => [
+            'name' => 'Authentication',
+            'description' => 'Sign-in, registration and credentials',
+        ],
         'icon' => 'heroicon-o-user-plus',
         'sort' => '50',
     ],

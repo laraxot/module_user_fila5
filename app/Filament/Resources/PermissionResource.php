@@ -21,8 +21,12 @@ class PermissionResource extends XotBaseResource
 {
     protected static ?string $model = Permission::class;
 
-    #[\Override]
-    public static function getFormSchema(): array
+    /**
+     * Schema legacy del form: la sorgente di verità è PermissionForm::getFormSchema().
+     *
+     * @return array<string, \Filament\Schemas\Components\Component>
+     */
+    public static function getFormSchemaOld(): array
     {
         return [
             'name' => TextInput::make('name')->required()->maxLength(255),

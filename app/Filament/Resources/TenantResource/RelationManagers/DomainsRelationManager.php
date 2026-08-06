@@ -31,7 +31,7 @@ class DomainsRelationManager extends XotBaseRelationManager
      * @return array<string, Component>
      */
     #[\Override]
-    public function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
         return [
             'domain' => TextInput::make('domain')

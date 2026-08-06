@@ -6,7 +6,10 @@ return [
     'navigation' => [
         'label' => 'Header Password',
         'plural_label' => 'Header Password',
-        'group' => 'Impostazioni',
+        'group' => [
+            'name' => 'Autenticazione',
+            'description' => 'Accesso, registrazione e credenziali',
+        ],
         'icon' => 'heroicon-o-lock-closed',
         'sort' => 11,
     ],

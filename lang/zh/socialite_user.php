@@ -5,7 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Socialite用户',
-        'group' => '认证',
+        'group' => [
+            'name' => '认证',
+            'description' => '登录、注册和凭据',
+        ],
         'icon' => 'heroicon-o-user-group',
         'sort' => 40,
     ],

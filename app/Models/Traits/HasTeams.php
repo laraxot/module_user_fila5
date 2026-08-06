@@ -14,6 +14,7 @@ use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Role;
 use Modules\User\Models\TeamUser;
 use Modules\User\Models\User;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract as XotUserContract;
 use Modules\Xot\Datas\XotData;
 use Spatie\Permission\Models\Permission;
@@ -369,7 +370,7 @@ trait HasTeams
             $permissionsCollection = $role->permissions;
             /** @var list<string> $rolePermissionNames */
             $rolePermissionNames = array_values(array_map(
-                static fn (mixed $name): string => is_string($name) ? $name : (string) $name,
+                static fn (mixed $name): string => is_string($name) ? $name : SafeStringCastAction::cast($name),
                 $permissionsCollection->pluck('name')->all(),
             ));
 

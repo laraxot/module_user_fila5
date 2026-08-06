@@ -5,8 +5,9 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
-class OauthAccessTokenInfolist
+class OauthAccessTokenInfolist extends XotBaseResourceInfolist
 {
     /**
      * @return array<string, TextEntry>

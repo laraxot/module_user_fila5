@@ -31,7 +31,7 @@ class ClientResource extends XotBaseResource
      *
      * @return array<string, Field>
      */
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         $components = [
             'name' => TextInput::make('name')

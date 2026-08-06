@@ -6,7 +6,10 @@ return [
     'navigation' => [
         'label' => 'Favicon',
         'plural_label' => 'Favicon',
-        'group' => 'Aspetto',
+        'group' => [
+            'name' => 'Aspetto',
+            'description' => 'Temi, colori e personalizzazioni',
+        ],
         'icon' => 'heroicon-o-photo',
         'sort' => 5,
     ],

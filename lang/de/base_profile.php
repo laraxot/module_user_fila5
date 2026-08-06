@@ -10,8 +10,8 @@ return [
         'name' => 'Profilo',
         'plural' => 'Profili',
         'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione dei profili',
+            'name' => 'Benutzer',
+            'description' => 'Benutzerdaten, Profile und Geräte',
         ],
         'label' => 'profili',
         'sort' => '31',

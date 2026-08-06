@@ -98,8 +98,8 @@ return [
         'name' => 'OTP',
         'plural' => 'OTPs',
         'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione delle password usa e getta',
+            'name' => 'Autenticazione',
+            'description' => 'Accesso, registrazione e credenziali',
         ],
         'label' => 'otp',
         'sort' => 31,

@@ -43,7 +43,7 @@ return [
         'plural' => 'CSS Personalizzati',
         'group' => [
             'name' => 'Aspetto',
-            'description' => 'Personalizzazione CSS del tema',
+            'description' => 'Temi, colori e personalizzazioni',
         ],
         'label' => 'CSS Personalizzato',
         'sort' => 15,

@@ -8,6 +8,7 @@ use Filament\Support\Contracts\HasLabel;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
@@ -89,7 +90,7 @@ class ChangeTypeCommand extends Command
                 $value = app(SafeObjectCastAction::class)
                     ->getStringProperty($item, 'value', '');
                 $label = $item->getLabel();
-                $options[$value] = is_string($label) ? $label : (string) $label;
+                $options[$value] = is_string($label) ? $label : SafeStringCastAction::cast($label);
             } else {
                 $options[is_string($key) ? $key : (string) $key] = 'Unknown';
             }

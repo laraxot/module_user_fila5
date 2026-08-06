@@ -30,6 +30,7 @@ use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\OauthAccessToken;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use function Safe\json_encode;
@@ -129,7 +130,7 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->action(function (mixed $record): void {
                         if ($record instanceof Model) {
                             $key = $record->getKey();
-                            $keyString = is_string($key) ? $key : (string) $key;
+                            $keyString = is_string($key) ? $key : SafeStringCastAction::cast($key);
                             if (app(RevokeTokenAction::class)->execute($keyString)) {
                                 Notification::make()
                                     ->title(static::trans('actions.revoke.success'))
@@ -268,7 +269,7 @@ class OauthAccessTokenResource extends XotBaseResource
                 ->requiresConfirmation()
                 ->action(function (mixed $record): void {
                     if ($record instanceof Model) {
-                        if (app(RevokeTokenAction::class)->execute((string) $record->getKey())) {
+                        if (app(RevokeTokenAction::class)->execute(SafeStringCastAction::cast($record->getKey()))) {
                             Notification::make()
                                 ->title(static::trans('actions.revoke.success'))
                                 ->success()
@@ -309,10 +310,11 @@ class OauthAccessTokenResource extends XotBaseResource
     }
 
     /**
+     * Schema legacy del form: la sorgente di verità è OauthAccessTokenForm::getFormSchema().
+     *
      * @return array<string, Component>
      */
-    #[\Override]
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         return [
             'oauth_access_token_info' => Section::make('OAuth Access Token Information')

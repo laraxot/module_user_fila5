@@ -7,8 +7,8 @@ return [
         'name' => 'Token',
         'plural' => 'Tokens',
         'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione dei token di accesso',
+            'name' => 'OAuth',
+            'description' => 'Client, token e API Passport',
         ],
         'label' => 'token',
         'sort' => 29,

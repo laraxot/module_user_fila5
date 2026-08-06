@@ -5,8 +5,9 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
-class SocialProviderInfolist
+class SocialProviderInfolist extends XotBaseResourceInfolist
 {
     /**
      * @return array<string, TextEntry>

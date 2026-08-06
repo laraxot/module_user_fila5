@@ -5,7 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Erscheinungsbild',
-        'group' => 'Erscheinungsbild',
+        'group' => [
+            'name' => 'Erscheinungsbild',
+            'description' => 'Themes, Farben und Anpassungen',
+        ],
         'icon' => 'appearance',
         'sort' => 5,
     ],

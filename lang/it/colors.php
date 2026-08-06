@@ -50,7 +50,7 @@ return [
         'plural' => 'Colori',
         'group' => [
             'name' => 'Aspetto',
-            'description' => 'Personalizzazione dell\'aspetto del sistema',
+            'description' => 'Temi, colori e personalizzazioni',
         ],
         'label' => 'Colori',
         'sort' => 13,

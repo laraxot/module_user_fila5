@@ -80,7 +80,10 @@ return [
     'navigation' => [
         'sort' => 89,
         'icon' => 'heroicon-o-user-circle',
-        'group' => 'Authentication',
+        'group' => [
+            'name' => 'Authentication',
+            'description' => 'Sign-in, registration and credentials',
+        ],
         'label' => 'Socialite Users',
     ],
     'label' => 'Missing Label',

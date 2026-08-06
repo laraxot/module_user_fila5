@@ -16,6 +16,7 @@ use Illuminate\Support\Carbon;
 use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource;
 use Modules\User\Models\OauthToken;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 use function Safe\json_encode;
@@ -44,7 +45,7 @@ class TokensRelationManager extends XotBaseRelationManager
             'scopes' => TextColumn::make('scopes')
                 ->limit(30)
                 ->tooltip(function (mixed $state): ?string {
-                    if (null === $state) {
+                    if ($state === null) {
                         return null;
                     }
                     if (is_array($state)) {
@@ -55,10 +56,10 @@ class TokensRelationManager extends XotBaseRelationManager
                 })
                 ->formatStateUsing(function (mixed $state): string {
                     if (is_array($state)) {
-                        return implode(', ', array_map(fn (mixed $s): string => (string) $s, $state));
+                        return implode(', ', array_map(fn (mixed $s): string => SafeStringCastAction::cast($s), $state));
                     }
 
-                    return (string) ($state ?? '');
+                    return SafeStringCastAction::cast($state ?? '');
                 }),
             'revoked' => IconColumn::make('revoked')
                 ->boolean()

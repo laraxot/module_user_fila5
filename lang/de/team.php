@@ -7,8 +7,8 @@ return [
         'name' => 'Team',
         'plural' => 'Teams',
         'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione dei team e delle loro autorizzazioni',
+            'name' => 'Teams und Mandanten',
+            'description' => 'Organisationen, Einladungen und Mitgliedschaften',
         ],
         'label' => 'team',
         'sort' => '18',

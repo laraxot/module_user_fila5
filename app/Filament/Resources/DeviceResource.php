@@ -14,8 +14,12 @@ class DeviceResource extends XotBaseResource
 {
     protected static ?string $model = Device::class;
 
-    #[\Override]
-    public static function getFormSchema(): array
+    /**
+     * Schema legacy del form: la sorgente di verità è DeviceForm::getFormSchema().
+     *
+     * @return array<string, \Filament\Schemas\Components\Component>
+     */
+    public static function getFormSchemaOld(): array
     {
         return [
             'uuid' => TextInput::make('uuid')->maxLength(255),

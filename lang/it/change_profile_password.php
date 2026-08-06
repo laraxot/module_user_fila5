@@ -6,7 +6,10 @@ return [
     'navigation' => [
         'label' => 'Password Profilo',
         'plural_label' => 'Password Profilo',
-        'group' => 'Profilo',
+        'group' => [
+            'name' => 'Autenticazione',
+            'description' => 'Accesso, registrazione e credenziali',
+        ],
         'icon' => 'heroicon-o-lock-closed',
         'sort' => 12,
     ],

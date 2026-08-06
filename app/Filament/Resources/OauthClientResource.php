@@ -27,7 +27,7 @@ class OauthClientResource extends XotBaseResource
      *
      * @return array<string, Field>
      */
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         return [
             'name' => TextInput::make('name')

@@ -39,7 +39,10 @@ return [
         ],
     ],
     'navigation' => [
-        'group' => 'Custom CSS',
+        'group' => [
+            'name' => 'Appearance',
+            'description' => 'Themes, colors and customization',
+        ],
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',

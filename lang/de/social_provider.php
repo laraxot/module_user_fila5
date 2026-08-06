@@ -10,8 +10,8 @@ return [
         'name' => 'Social Provider',
         'plural' => 'Social Providers',
         'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione dei provider social',
+            'name' => 'Authentifizierung',
+            'description' => 'Anmeldung, Registrierung und Zugangsdaten',
         ],
         'label' => 'social provider',
         'sort' => '93',

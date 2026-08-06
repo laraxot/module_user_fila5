@@ -6,7 +6,10 @@ return [
     'navigation' => [
         'label' => 'Feature',
         'plural_label' => 'Features',
-        'group' => 'Gestione Utenti',
+        'group' => [
+            'name' => 'Impostazioni',
+            'description' => 'Configurazione del modulo utenti',
+        ],
         'icon' => 'heroicon-o-star',
         'sort' => 75,
     ],

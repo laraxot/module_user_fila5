@@ -43,7 +43,7 @@ return [
         'plural' => 'Allineamenti',
         'group' => [
             'name' => 'Aspetto',
-            'description' => 'Personalizzazione dell\'aspetto del sistema',
+            'description' => 'Temi, colori e personalizzazioni',
         ],
         'label' => 'Allineamento',
         'sort' => 16,

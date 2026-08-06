@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite;
 
 use Illuminate\Support\Arr;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 class GetProviderScopesAction
@@ -33,7 +34,7 @@ class GetProviderScopesAction
         }
 
         return array_values(array_map(
-            static fn (mixed $scope): string => is_string($scope) ? $scope : (string) $scope,
+            static fn (mixed $scope): string => is_string($scope) ? $scope : SafeStringCastAction::cast($scope),
             $scopes
         ));
     }

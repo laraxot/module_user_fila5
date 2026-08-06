@@ -5,7 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Redefinição de Senha',
-        'group' => 'Segurança',
+        'group' => [
+            'name' => 'Autenticação',
+            'description' => 'Acesso, registo e credenciais',
+        ],
         'icon' => 'heroicon-o-key',
         'sort' => 42,
     ],

@@ -6,7 +6,10 @@ return [
     'navigation' => [
         'label' => 'Conferma Reset Password',
         'plural_label' => 'Conferma Reset Password',
-        'group' => 'Autenticazione',
+        'group' => [
+            'name' => 'Autenticazione',
+            'description' => 'Accesso, registrazione e credenziali',
+        ],
         'icon' => 'heroicon-o-lock-closed',
         'sort' => 8,
     ],

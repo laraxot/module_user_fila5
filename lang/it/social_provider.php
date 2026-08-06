@@ -6,7 +6,10 @@ return [
     'navigation' => [
         'label' => 'Provider Social',
         'plural_label' => 'Provider Social',
-        'group' => 'Gestione Utenti',
+        'group' => [
+            'name' => 'Autenticazione',
+            'description' => 'Accesso, registrazione e credenziali',
+        ],
         'icon' => 'heroicon-o-share',
         'sort' => 93,
     ],

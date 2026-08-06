@@ -11,7 +11,7 @@ use Filament\Schemas\Components\Section;
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
-class TenantForm extends XotBaseResourceForm
+class CustomerForm extends XotBaseResourceForm
 {
     /**
      * @return array<int|string, SchemaComponent>

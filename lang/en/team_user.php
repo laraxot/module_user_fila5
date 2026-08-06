@@ -5,7 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Team Users',
-        'group' => 'Teams',
+        'group' => [
+            'name' => 'Teams and tenants',
+            'description' => 'Organizations, invitations and memberships',
+        ],
         'icon' => 'heroicon-o-users',
         'sort' => 41,
     ],

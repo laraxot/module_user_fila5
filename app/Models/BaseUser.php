@@ -33,6 +33,7 @@ use Modules\User\Models\Traits\HasModules;
 use Modules\User\Models\Traits\HasSocialite;
 use Modules\User\Models\Traits\HasSpatiePermission;
 use Modules\User\Models\Traits\HasTeams;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -49,52 +50,52 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * functionality for the application. It extends Laravel's Authenticatable class
  * and implements the required interfaces for Filament and multi-tenancy.
  *
- * @property Collection<int, OauthClient>                              $clients
- * @property int|null                                                  $clients_count
- * @property Team|null                                                 $currentTeam
- * @property Collection<int, Device>                                   $devices
- * @property int|null                                                  $devices_count
- * @property string|null                                               $full_name
+ * @property Collection<int, OauthClient> $clients
+ * @property int|null $clients_count
+ * @property Team|null $currentTeam
+ * @property Collection<int, Device> $devices
+ * @property int|null $devices_count
+ * @property string|null $full_name
  * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
- * @property int|null                                                  $notifications_count
- * @property Collection<int, Team>                                     $ownedTeams
- * @property int|null                                                  $owned_teams_count
- * @property Collection<int, Permission>                               $permissions
- * @property int|null                                                  $permissions_count
- * @property ProfileContract|null                                      $profile
- * @property Collection<int, Role>                                     $roles
- * @property int|null                                                  $roles_count
- * @property Collection<int, Team>                                     $membershipTeams
- * @property int|null                                                  $membership_teams_count
- * @property Collection<int, Tenant>                                   $tenants
- * @property int|null                                                  $tenants_count
- * @property Collection<int, OauthToken>                               $tokens
- * @property int|null                                                  $tokens_count
- * @property string                                                    $last_name
- * @property string|null                                               $facebook_id
- * @property Collection<int, SocialiteUser>                            $socialiteUsers
- * @property int|null                                                  $socialite_users_count
- * @property string|null                                               $name
- * @property string|null                                               $first_name
- * @property string|null                                               $last_name
- * @property string|null                                               $email
- * @property string|null                                               $password
- * @property string|null                                               $lang
- * @property string|null                                               $current_team_id
- * @property bool|null                                                 $is_active
- * @property bool|null                                                 $is_otp
- * @property string|null                                               $type
- * @property \DateTime|null                                            $password_expires_at
- * @property \DateTime|null                                            $email_verified_at
- * @property string|null                                               $remember_token
- * @property \DateTime|null                                            $created_at
- * @property \DateTime|null                                            $updated_at
- * @property \DateTime|null                                            $deleted_at
- * @property string|null                                               $created_by
- * @property string|null                                               $updated_by
- * @property string|null                                               $deleted_by
- * @property string|null                                               $profile_photo_path
- * @property Pivot|null                                                $pivot
+ * @property int|null $notifications_count
+ * @property Collection<int, Team> $ownedTeams
+ * @property int|null $owned_teams_count
+ * @property Collection<int, Permission> $permissions
+ * @property int|null $permissions_count
+ * @property ProfileContract|null $profile
+ * @property Collection<int, Role> $roles
+ * @property int|null $roles_count
+ * @property Collection<int, Team> $membershipTeams
+ * @property int|null $membership_teams_count
+ * @property Collection<int, Tenant> $tenants
+ * @property int|null $tenants_count
+ * @property Collection<int, OauthToken> $tokens
+ * @property int|null $tokens_count
+ * @property string $last_name
+ * @property string|null $facebook_id
+ * @property Collection<int, SocialiteUser> $socialiteUsers
+ * @property int|null $socialite_users_count
+ * @property string|null $name
+ * @property string|null $first_name
+ * @property string|null $last_name
+ * @property string|null $email
+ * @property string|null $password
+ * @property string|null $lang
+ * @property string|null $current_team_id
+ * @property bool|null $is_active
+ * @property bool|null $is_otp
+ * @property string|null $type
+ * @property \DateTime|null $password_expires_at
+ * @property \DateTime|null $email_verified_at
+ * @property string|null $remember_token
+ * @property \DateTime|null $created_at
+ * @property \DateTime|null $updated_at
+ * @property \DateTime|null $deleted_at
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property string|null $deleted_by
+ * @property string|null $profile_photo_path
+ * @property Pivot|null $pivot
  *
  * @method static Builder|User newModelQuery()
  * @method static Builder|User newQuery()
@@ -232,7 +233,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function getProviderName(): string
     {
-        return (string) ($this->getAttribute('provider') ?? config('auth.guards.api.provider', 'users'));
+        return SafeStringCastAction::cast($this->getAttribute('provider') ?? config('auth.guards.api.provider', 'users'));
     }
 
     /*
@@ -248,15 +249,15 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
      */
     public function getFilamentName(): string
     {
-        $name = (string) ($this->getAttribute('name') ?? '');
-        $firstName = (string) ($this->getAttribute('first_name') ?? '');
-        $lastName = (string) ($this->getAttribute('last_name') ?? '');
+        $name = SafeStringCastAction::cast($this->getAttribute('name') ?? '');
+        $firstName = SafeStringCastAction::cast($this->getAttribute('first_name') ?? '');
+        $lastName = SafeStringCastAction::cast($this->getAttribute('last_name') ?? '');
 
         $fullName = trim(\sprintf('%s %s %s', $name, $firstName, $lastName));
 
         // Ensure we always return a non-empty string
         if (empty($fullName)) {
-            $email = (string) ($this->getAttribute('email') ?? '');
+            $email = SafeStringCastAction::cast($this->getAttribute('email') ?? '');
 
             return ! empty($email) ? $email : 'User';
         }
@@ -316,7 +317,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     public function canAccessPanel(Panel $panel): bool
     {
         // $panel->default('admin');
-        if ('admin' !== $panel->getId()) {
+        if ($panel->getId() !== 'admin') {
             $role = $panel->getId();
             /*
              * $xot = XotData::make();
@@ -355,7 +356,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
      */
     public function treeSons(): Collection
     {
-        return $this->membershipTeams ?? new Collection();
+        return $this->membershipTeams ?? new Collection;
     }
 
     /**
@@ -380,22 +381,22 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function getFullNameAttribute(?string $value): string
     {
-        if (null !== $value) {
+        if ($value !== null) {
             return $value;
         }
 
         $fullName = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
 
-        return '' !== $fullName ? $fullName : ($this->email ?? 'User');
+        return $fullName !== '' ? $fullName : ($this->email ?? 'User');
     }
 
     public function getNameAttribute(?string $value): string
     {
-        if (null !== $value) {
+        if ($value !== null) {
             return $value;
         }
 
-        if (null === $this->getKey()) {
+        if ($this->getKey() === null) {
             return $this->email ?? 'User';
         }
 
@@ -410,7 +411,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
                 return true;
             }
 
-            return \PHP_SAPI === 'cli' && ('testing' === getenv('APP_ENV') || 'testing' === getenv('ENV'));
+            return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
         })();
         if ($isTesting) {
             // Do not call update() here to avoid hitting the database.
@@ -421,8 +422,8 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
         try {
             $value = $candidate;
-            while (null !== self::firstWhere(['name' => $value])) {
-                ++$i;
+            while (self::firstWhere(['name' => $value]) !== null) {
+                $i++;
                 $value = $name.'-'.$i;
             }
             $this->update(['name' => $value]);

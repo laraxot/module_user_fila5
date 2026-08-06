@@ -5,8 +5,8 @@ declare(strict_types=1);
 return [
     'sections' => [
         'empty' => [
-            'label' => 'empty',
-            'heading' => 'empty',
+            'label' => '',
+            'heading' => '',
         ],
     ],
     'fields' => [
@@ -83,7 +83,10 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'group' => [
+            'name' => 'Authentication',
+            'description' => 'Sign-in, registration and credentials',
+        ],
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

@@ -6,7 +6,10 @@ return [
     'navigation' => [
         'label' => 'Azioni',
         'plural_label' => 'Azioni',
-        'group' => 'User',
+        'group' => [
+            'name' => 'Impostazioni',
+            'description' => 'Configurazione del modulo utenti',
+        ],
         'icon' => 'heroicon-o-cog',
         'sort' => 50,
     ],
