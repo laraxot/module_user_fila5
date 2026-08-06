@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Modulo User
 
 Data: 2025-04-23 19:09:56
@@ -28,11 +25,7 @@ Data: 2025-04-23 19:09:56
 - **Namespace principale**: Modules\\User
 Modules\\User\\Database\\Factories
 Modules\\User\\Database\\Seeders
-<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_user_fila5
-=======
-- **Pacchetto Composer**: laraxot/module_user_fila3
->>>>>>> laraxot/dev
 Marco Sottana
 - **Dipendenze**: flowframe/laravel-trend * jenssegers/agent * laravel/passport * socialiteproviders/auth0 * spatie/laravel-personal-data-export * repositories type path url ../Xot type path url ../Tenant type path url ../UI
 - **Totale file PHP**: 673
@@ -622,7 +615,6 @@ tests_old
 - [Report PHPStan](/docs/phpstan/)
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
-<<<<<<< HEAD
 * [structure.md](../../../gdpr/docs/structure.md)
 * [structure.md](../../../notify/docs/structure.md)
 * [structure.md](../../../xot/docs/structure.md)
@@ -656,38 +648,3 @@ tests_old
 * [structure.md](../../../cms/project_docs/structure.md)
 * [structure.md](../../../cms/project_docs/themes/structure.md)
 * [structure.md](../../../cms/project_docs/components/structure.md)
-=======
-* [structure.md](../../../Gdpr/docs/structure.md)
-* [structure.md](../../../Notify/docs/structure.md)
-* [structure.md](../../../Xot/docs/structure.md)
-* [structure.md](../../../Xot/docs/base/structure.md)
-* [structure.md](../../../Xot/docs/config/structure.md)
-* [structure.md](../../../User/docs/structure.md)
-* [structure.md](../../../UI/docs/structure.md)
-* [structure.md](../../../Lang/docs/structure.md)
-* [structure.md](../../../Job/docs/structure.md)
-* [structure.md](../../../Media/docs/structure.md)
-* [structure.md](../../../Tenant/docs/structure.md)
-* [structure.md](../../../Activity/docs/structure.md)
-* [structure.md](../../../Cms/docs/structure.md)
-* [structure.md](../../../Cms/docs/themes/structure.md)
-* [structure.md](../../../Cms/docs/components/structure.md)
-- [Analisi strutturale complessiva](/project_docs/phpstan/modules_structure_analysis.md)
-- [Report PHPStan](/project_docs/phpstan/)
-* [structure.md](bashscripts/project_docs/structure.md)
-* [structure.md](../../../Gdpr/project_docs/structure.md)
-* [structure.md](../../../Notify/project_docs/structure.md)
-* [structure.md](../../../Xot/project_docs/structure.md)
-* [structure.md](../../../Xot/project_docs/base/structure.md)
-* [structure.md](../../../Xot/project_docs/config/structure.md)
-* [structure.md](../../../User/project_docs/structure.md)
-* [structure.md](../../../UI/project_docs/structure.md)
-* [structure.md](../../../Lang/project_docs/structure.md)
-* [structure.md](../../../Job/project_docs/structure.md)
-* [structure.md](../../../Media/project_docs/structure.md)
-* [structure.md](../../../Tenant/project_docs/structure.md)
-* [structure.md](../../../Activity/project_docs/structure.md)
-* [structure.md](../../../Cms/project_docs/structure.md)
-* [structure.md](../../../Cms/project_docs/themes/structure.md)
-* [structure.md](../../../Cms/project_docs/components/structure.md)
->>>>>>> laraxot/dev

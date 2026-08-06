@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Module Migration Policy - DRY Violations Report"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # User Module Migration Policy - DRY Violations Report
 
 ## Issue Summary

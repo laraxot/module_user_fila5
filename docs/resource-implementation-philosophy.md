@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Internal Analysis: Approaches to Missing Filament Resources"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Internal Analysis: Approaches to Missing Filament Resources
 
 ## 🥊 Philosophical Battle: Two Approaches Clash

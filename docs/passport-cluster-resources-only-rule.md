@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Regola Critica: Cluster Passport - Solo Risorse OAuth/Passport"
 type: rule
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Regola Critica: Cluster Passport - Solo Risorse OAuth/Passport
 
 **Data**: 2025-01-22
@@ -124,11 +121,7 @@ find Modules/User/app/Filament/Clusters/Passport/Resources -name "*Resource.php"
 
 - [Passport Cluster Summary](./passport-cluster-summary.md)
 - [Passport Cluster Implementation](./passport-cluster-implementation-completed.md)
-<<<<<<< HEAD
 - [Filament Clusters Documentation](../../xot/docs/filament-class-extension-rules.md)
-=======
-- [Filament Clusters Documentation](../../Xot/docs/filament-class-extension-rules.md)
->>>>>>> laraxot/dev
 
 ---
 

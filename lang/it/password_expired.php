@@ -75,21 +75,12 @@ return [
         'name' => 'Password Expired',
         'plural' => 'Password Expired',
         'group' => [
-<<<<<<< HEAD
             'name' => 'Autenticazione',
             'description' => 'Accesso, registrazione e credenziali',
         ],
         'label' => 'Password Expired',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
-=======
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Password Expired',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
->>>>>>> laraxot/dev
     ],
     'label' => 'Password Expired',
     'plural_label' => 'Password Expired (Plurale)',

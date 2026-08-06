@@ -37,18 +37,11 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     protected static \BackedEnum|string|null $navigationIcon = 'heroicon-o-key';
 
     /**
-<<<<<<< HEAD
      * Schema legacy del form: la sorgente di verità è OauthPersonalAccessClientForm::getFormSchema().
      *
      * @return array<string, Component>
      */
     public static function getFormSchemaOld(): array
-=======
-     * @return array<string, Component>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'oauth_personal_access_client' => Section::make('OAuth Personal Access Client Information')

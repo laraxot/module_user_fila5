@@ -6,14 +6,10 @@ return [
     'navigation' => [
         'label' => 'Passport / API',
         'plural_label' => 'Passport / API',
-<<<<<<< HEAD
         'group' => [
             'name' => 'OAuth',
             'description' => 'Clients, tokens and Passport API',
         ],
-=======
-        'group' => 'System',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-key',
         'sort' => 95,
     ],

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Implementazione Corretta delle Pagine Auth"
 type: concept
@@ -29,18 +28,6 @@ related:
 - [Volt Errors](./volt-errors-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Volt Logout Action](./volt-logout-action-2.md)
-=======
-# Implementazione Corretta delle Pagine Auth
-
-## Collegamenti correlati
-- [Documentazione centrale](../../../docs/README.md)
-- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Volt Errors](./VOLT_ERRORS.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
->>>>>>> laraxot/dev
 
 ## Introduzione
 
@@ -497,7 +484,6 @@ Utilizzare sempre la funzione `__()` per le stringhe visualizzate all'utente:
 # Implementazione Corretta delle Pagine Auth
 
 ## Collegamenti correlati
-<<<<<<< HEAD
 - [Documentazione centrale](../../../../docs/readme.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./readme.md)
@@ -505,15 +491,6 @@ Utilizzare sempre la funzione `__()` per le stringhe visualizzate all'utente:
 - [Volt Errors](./volt-errors-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Volt Logout Action](./volt-logout-action-2.md)
-=======
-- [Documentazione centrale](../../../docs/README.md)
-- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Volt Errors](./VOLT_ERRORS.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
->>>>>>> laraxot/dev
 
 ## Introduzione
 

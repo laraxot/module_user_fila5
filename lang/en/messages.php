@@ -252,17 +252,10 @@ return [
         'label' => 'Messages',
         'plural_label' => 'Messages',
         'group' => [
-<<<<<<< HEAD
             'name' => 'Users',
             'description' => 'User records, profiles and devices',
         ],
         'icon' => 'heroicon-o-rectangle-stack',
-=======
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'icon' => 'heroicon-o-collection',
->>>>>>> laraxot/dev
         'sort' => 1,
     ],
     'label' => 'Messages',

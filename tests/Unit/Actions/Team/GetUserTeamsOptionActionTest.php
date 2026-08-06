@@ -7,10 +7,7 @@ use Modules\User\Actions\Team\GetUserTeamsOptionAction;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamUser;
 use Modules\User\Tests\TestCase;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-=======
->>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -27,19 +24,11 @@ it('returns only the placeholder when the authenticated user has no teams', func
 it('returns the teams the authenticated user belongs to, keyed by team id', function (): void {
     $user = TestCase::createTestUser();
 
-<<<<<<< HEAD
     $team = new Team;
     $team->forceFill(['user_id' => $user->getKey(), 'name' => 'Engineering']);
     $team->save();
 
     $teamUser = new TeamUser;
-=======
-    $team = new Team();
-    $team->forceFill(['user_id' => $user->getKey(), 'name' => 'Engineering']);
-    $team->save();
-
-    $teamUser = new TeamUser();
->>>>>>> laraxot/dev
     $teamUser->forceFill([
         'team_id' => $team->getKey(),
         'user_id' => $user->getKey(),
@@ -50,24 +39,15 @@ it('returns the teams the authenticated user belongs to, keyed by team id', func
 
     $options = app(GetUserTeamsOptionAction::class)->execute();
 
-<<<<<<< HEAD
     Assert::assertArrayHasKey(SafeStringCastAction::cast($team->getKey()), $options);
     Assert::assertSame('Engineering', $options[SafeStringCastAction::cast($team->getKey())]);
-=======
-    Assert::assertArrayHasKey((string) $team->getKey(), $options);
-    Assert::assertSame('Engineering', $options[(string) $team->getKey()]);
->>>>>>> laraxot/dev
     Assert::assertArrayHasKey('', $options);
 });
 
 it('skips team_user rows whose team no longer exists', function (): void {
     $user = TestCase::createTestUser();
 
-<<<<<<< HEAD
     $teamUser = new TeamUser;
-=======
-    $teamUser = new TeamUser();
->>>>>>> laraxot/dev
     $teamUser->forceFill([
         'team_id' => 999999,
         'user_id' => $user->getKey(),

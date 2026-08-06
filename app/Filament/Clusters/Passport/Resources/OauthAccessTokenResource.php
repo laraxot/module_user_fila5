@@ -30,10 +30,7 @@ use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\OauthAccessToken;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use function Safe\json_encode;
@@ -61,11 +58,7 @@ class OauthAccessTokenResource extends XotBaseResource
                             return null;
                         }
                         $user = $record->user;
-<<<<<<< HEAD
                         if ($user !== null && method_exists($user, 'exists') && $user->exists) {
-=======
-                        if (null !== $user && method_exists($user, 'exists') && $user->exists) {
->>>>>>> laraxot/dev
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -84,11 +77,7 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('scopes')
                     ->limit(30)
                     ->tooltip(function (mixed $state): ?string {
-<<<<<<< HEAD
                         if ($state === null) {
-=======
-                        if (null === $state) {
->>>>>>> laraxot/dev
                             return null;
                         }
                         if (is_array($state)) {
@@ -141,11 +130,7 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->action(function (mixed $record): void {
                         if ($record instanceof Model) {
                             $key = $record->getKey();
-<<<<<<< HEAD
                             $keyString = is_string($key) ? $key : SafeStringCastAction::cast($key);
-=======
-                            $keyString = is_string($key) ? $key : (string) $key;
->>>>>>> laraxot/dev
                             if (app(RevokeTokenAction::class)->execute($keyString)) {
                                 Notification::make()
                                     ->title(static::trans('actions.revoke.success'))
@@ -199,11 +184,7 @@ class OauthAccessTokenResource extends XotBaseResource
                         return null;
                     }
                     $user = $record->user;
-<<<<<<< HEAD
                     if ($user !== null && method_exists($user, 'exists') && $user->exists) {
-=======
-                    if (null !== $user && method_exists($user, 'exists') && $user->exists) {
->>>>>>> laraxot/dev
                         return UserResource::getUrl('view', ['record' => $user]);
                     }
 
@@ -222,11 +203,7 @@ class OauthAccessTokenResource extends XotBaseResource
             'scopes' => TextColumn::make('scopes')
                 ->limit(30)
                 ->tooltip(function (mixed $state): ?string {
-<<<<<<< HEAD
                     if ($state === null) {
-=======
-                    if (null === $state) {
->>>>>>> laraxot/dev
                         return null;
                     }
                     if (is_array($state)) {
@@ -292,11 +269,7 @@ class OauthAccessTokenResource extends XotBaseResource
                 ->requiresConfirmation()
                 ->action(function (mixed $record): void {
                     if ($record instanceof Model) {
-<<<<<<< HEAD
                         if (app(RevokeTokenAction::class)->execute(SafeStringCastAction::cast($record->getKey()))) {
-=======
-                        if (app(RevokeTokenAction::class)->execute((string) $record->getKey())) {
->>>>>>> laraxot/dev
                             Notification::make()
                                 ->title(static::trans('actions.revoke.success'))
                                 ->success()
@@ -337,18 +310,11 @@ class OauthAccessTokenResource extends XotBaseResource
     }
 
     /**
-<<<<<<< HEAD
      * Schema legacy del form: la sorgente di verità è OauthAccessTokenForm::getFormSchema().
      *
      * @return array<string, Component>
      */
     public static function getFormSchemaOld(): array
-=======
-     * @return array<string, Component>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'oauth_access_token_info' => Section::make('OAuth Access Token Information')

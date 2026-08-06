@@ -21,21 +21,12 @@ return [
         'name' => 'Edit Role',
         'plural' => 'Edit Role',
         'group' => [
-<<<<<<< HEAD
             'name' => 'Ruoli e permessi',
             'description' => 'Controllo degli accessi',
         ],
         'label' => 'Edit Role',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
-=======
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Edit Role',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
->>>>>>> laraxot/dev
     ],
     'label' => 'Edit Role',
     'plural_label' => 'Edit Role (Plurale)',

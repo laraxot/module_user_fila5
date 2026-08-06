@@ -5,14 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Usuários de Equipe',
-<<<<<<< HEAD
         'group' => [
             'name' => 'Equipas e inquilinos',
             'description' => 'Organizações, convites e associações',
         ],
-=======
-        'group' => 'Equipes',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-users',
         'sort' => 41,
     ],

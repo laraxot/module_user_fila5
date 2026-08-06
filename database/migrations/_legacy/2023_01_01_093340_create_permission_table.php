@@ -4,12 +4,8 @@ declare(strict_types=1);
 
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
-=======
-return new class extends XotBaseMigration {
->>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -49,11 +45,7 @@ return new class extends XotBaseMigration {
         try {
             // Verifica se l'applicazione è completamente inizializzata
             if (app()->bound('cache')) {
-<<<<<<< HEAD
                 app('cache')->store($cache_store !== 'default' ? $cache_store : null)->forget($cache_key);
-=======
-                app('cache')->store('default' !== $cache_store ? $cache_store : null)->forget($cache_key);
->>>>>>> laraxot/dev
             }
         } catch (Exception $e) {
             // Silently ignore cache errors during package discovery

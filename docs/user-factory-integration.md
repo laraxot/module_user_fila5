@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "UserFactory Integration - Modulo User e <nome progetto>"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # UserFactory Integration - Modulo User e <nome progetto>
 
 ## Overview
@@ -363,24 +360,14 @@ public function test_bulk_sti_creation()
 ## Links to Documentation
 
 ### <nome progetto> Module
-<<<<<<< HEAD
 - [UserFactory Improvements Analysis](../<nome progetto>/docs/factories/userfactory-improvements-analysis.md)
-=======
-- [UserFactory Improvements Analysis](../<nome progetto>/docs/factories/UserFactory-improvements-analysis.md)
->>>>>>> laraxot/dev
 - [Model Architecture](../<nome progetto>/docs/model-architecture.md)
 - [STI Implementation](../<nome progetto>/docs/model-inheritance.md)
 
 ### User Module
-<<<<<<< HEAD
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
 - [Traits Complete Guide](../user/docs/traits-complete-guide-2.md)
 - [Authentication Framework](../user/docs/authentication.md)
-=======
-- [BaseUser Documentation](../User/docs/baseuser_conflicts.md)
-- [Traits Complete Guide](../User/docs/traits_complete_guide.md)
-- [Authentication Framework](../User/docs/authentication.md)
->>>>>>> laraxot/dev
 
 ---
 
@@ -730,24 +717,14 @@ public function test_bulk_sti_creation()
 ## Links to Documentation
 
 ### <nome progetto> Module
-<<<<<<< HEAD
 - [UserFactory Improvements Analysis](../<nome progetto>/docs/factories/userfactory-improvements-analysis.md)
-=======
-- [UserFactory Improvements Analysis](../<nome progetto>/docs/factories/UserFactory-improvements-analysis.md)
->>>>>>> laraxot/dev
 - [Model Architecture](../<nome progetto>/docs/model-architecture.md)
 - [STI Implementation](../<nome progetto>/docs/model-inheritance.md)
 
 ### User Module
-<<<<<<< HEAD
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
 - [Traits Complete Guide](../user/docs/traits-complete-guide-2.md)
 - [Authentication Framework](../user/docs/authentication.md)
-=======
-- [BaseUser Documentation](../User/docs/baseuser_conflicts.md)
-- [Traits Complete Guide](../User/docs/traits_complete_guide.md)
-- [Authentication Framework](../User/docs/authentication.md)
->>>>>>> laraxot/dev
 
 ---
 

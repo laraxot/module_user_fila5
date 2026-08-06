@@ -2,11 +2,8 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
-=======
->>>>>>> laraxot/dev
 use Illuminate\Contracts\Events\Dispatcher;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Laravel\Socialite\Facades\Socialite;
@@ -73,16 +70,9 @@ test('retrieves oauth user from socialite driver', function (): void {
         $mock->allows(['getEmail' => 'user@example.com']);
     });
 
-<<<<<<< HEAD
     $driver = new class($oauthUser)
     {
         public function __construct(private SocialiteUserContract $oauthUser) {}
-=======
-    $driver = new class($oauthUser) {
-        public function __construct(private SocialiteUserContract $oauthUser)
-        {
-        }
->>>>>>> laraxot/dev
 
         public function user(): SocialiteUserContract
         {
@@ -102,20 +92,11 @@ test('retrieves oauth user from socialite driver', function (): void {
 });
 
 test('returns null and dispatches invalid state event when socialite state is invalid', function (): void {
-<<<<<<< HEAD
     $exception = new InvalidStateException;
 
     $driver = new class($exception)
     {
         public function __construct(private InvalidStateException $exception) {}
-=======
-    $exception = new InvalidStateException();
-
-    $driver = new class($exception) {
-        public function __construct(private InvalidStateException $exception)
-        {
-        }
->>>>>>> laraxot/dev
 
         public function user(): never
         {
@@ -155,11 +136,7 @@ test('creates socialite user model with normalized attributes', function (): voi
     $result = app(CreateSocialiteUserAction::class)->execute('github', $oauthUser, $user);
 
     Assert::assertInstanceOf(SocialiteUser::class, $result);
-<<<<<<< HEAD
     Assert::assertSame(SafeStringCastAction::cast($result->user_id), SafeStringCastAction::cast($user->getKey()));
-=======
-    Assert::assertSame((string) $result->user_id, (string) $user->getKey());
->>>>>>> laraxot/dev
     Assert::assertSame('github', $result->provider);
     Assert::assertSame('provider-user-1', $result->provider_id);
 });

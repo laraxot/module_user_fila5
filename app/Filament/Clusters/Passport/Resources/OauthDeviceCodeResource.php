@@ -36,20 +36,11 @@ class OauthDeviceCodeResource extends XotBaseResource
     protected static ?string $model = OauthDeviceCode::class;
 
     /**
-<<<<<<< HEAD
      * Schema legacy del form: la sorgente di verità è OauthDeviceCodeForm::getFormSchema().
      *
      * @return array<string, Component>
      */
     public static function getFormSchemaOld(): array
-=======
-     * Get the form schema for the resource.
-     *
-     * @return array<string, Component>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'oauth_device_code_info' => Section::make(static::trans('label'))

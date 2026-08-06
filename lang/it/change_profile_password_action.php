@@ -6,14 +6,10 @@ return [
     'navigation' => [
         'label' => 'Azione Cambia Password',
         'plural_label' => 'Azione Cambia Password',
-<<<<<<< HEAD
         'group' => [
             'name' => 'Autenticazione',
             'description' => 'Accesso, registrazione e credenziali',
         ],
-=======
-        'group' => 'Profilo',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-lock-closed',
         'sort' => 13,
     ],

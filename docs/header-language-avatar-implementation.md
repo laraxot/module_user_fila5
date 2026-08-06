@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Implementazione del Selettore di Lingua e Avatar Utente nell'Header"
 type: concept
@@ -26,15 +25,6 @@ related:
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)
-=======
-# Implementazione del Selettore di Lingua e Avatar Utente nell'Header
-
-## Collegamenti correlati
-- [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Implementazione Logout](./LOGOUT_BLADE_IMPLEMENTATION.md)
->>>>>>> laraxot/dev
 
 ## Panoramica
 
@@ -409,17 +399,10 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
-<<<<<<< HEAD
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)
-=======
-- [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Implementazione Logout](./LOGOUT_BLADE_IMPLEMENTATION.md)
->>>>>>> laraxot/dev
 
 ## Panoramica
 

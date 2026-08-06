@@ -6,14 +6,10 @@ return [
     'navigation' => [
         'label' => 'Feature',
         'plural_label' => 'Features',
-<<<<<<< HEAD
         'group' => [
             'name' => 'Impostazioni',
             'description' => 'Configurazione del modulo utenti',
         ],
-=======
-        'group' => 'Gestione Utenti',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-star',
         'sort' => 75,
     ],

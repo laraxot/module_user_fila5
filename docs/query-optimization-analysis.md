@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Module - Query Optimization Analysis"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # User Module - Query Optimization Analysis
 
 ## Overview

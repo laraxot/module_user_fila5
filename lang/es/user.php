@@ -339,13 +339,8 @@ return [
         'name' => 'Usuarios',
         'plural' => 'Usuarios',
         'group' => [
-<<<<<<< HEAD
             'name' => 'Usuarios',
             'description' => 'Cuentas, perfiles y dispositivos',
-=======
-            'name' => 'Gestión de Usuarios',
-            'description' => 'Gestión de usuarios y sus permisos',
->>>>>>> laraxot/dev
         ],
         'label' => 'Usuarios',
         'sort' => '26',

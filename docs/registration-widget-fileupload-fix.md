@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "RegistrationWidget FileUpload Fix"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto
@@ -142,20 +139,11 @@ Per evitare simili problemi in futuro:
 3. **Type Checking**: Usare type checking difensivo nei callback
 4. **Documentation**: Documentare i tipi di dati attesi per ogni campo
 ## Riferimenti
-<<<<<<< HEAD
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/project/fileupload-foreach-error-fix.md)
 - [Correzione XotBaseResource: Modules/Xot/project_docs/fileupload-components.md](../../xot/project_docs/fileupload-components.md)
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)
-=======
-- [Problema principale: docs/fileupload-foreach-error-fix.md](../../../project_docs/fileupload-foreach-error-fix.md)
-- [Correzione XotBaseResource: Modules/Xot/project_docs/fileupload-components.md](../../Xot/project_docs/fileupload-components.md)
-- [Problema principale: docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
-- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../Xot/docs/fileupload-components.md)
-- [Registration Widget base: registration-widget.md](./registration-widget.md)
-*Ultimo aggiornamento: 2025-01-03*
->>>>>>> laraxot/dev
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto
@@ -373,11 +361,6 @@ Per evitare simili problemi in futuro:
 
 ## Riferimenti
 
-<<<<<<< HEAD
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
-=======
-- [Problema principale: docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
-- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../Xot/docs/fileupload-components.md)
->>>>>>> laraxot/dev
 - [Registration Widget base: registration-widget.md](./registration-widget.md)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "dependency-rules"
 type: rule
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # dependency-rules
 
 ## Principle (MANDATORY)

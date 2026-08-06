@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Final Summary - User Module Passport Integration & Architecture Refactoring"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Final Summary - User Module Passport Integration & Architecture Refactoring
 
 > **Date**: 2026-01-07
@@ -300,17 +297,10 @@ public function getHeaderActions(): array
 ## 📚 Documentation References
 
 ### Internal Documentation
-<<<<<<< HEAD
 - [Passport Integration](./passport-integration.md)
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
 - [README](./readme.md)
-=======
-- [Passport Integration](./PASSPORT_INTEGRATION.md)
-- [Service Provider Architecture](./SERVICE_PROVIDER_ARCHITECTURE.md)
-- [Filosofia Modulo User](./FILOSOFIA_MODULO_USER.md)
-- [README](./README.md)
->>>>>>> laraxot/dev
 
 ### External Documentation
 - [Laravel Modules](https://nwidart.com/laravel-modules)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Factory Creation Status - User Module"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Factory Creation Status - User Module
 
 ## ERRORE GRAVISSIMO IDENTIFICATO E RISOLUZIONE IN CORSO
@@ -119,17 +116,10 @@ Questo errore è **GRAVISSIMO** perché:
 
 ## COLLEGAMENTI
 
-<<<<<<< HEAD
 - [Factory Audit Complete Analysis](../../../../docs/project/factory-audit-complete-analysis.md)
 - [User Module README](./readme.md)
 - [Factory PHPStan Fixes](./phpstan/factory-fixes.md)
 - [Database Documentation](./database/readme.md)
-=======
-- [Factory Audit Complete Analysis](../../../project_docs/factory-audit-complete-analysis.md)
-- [User Module README](./README.md)
-- [Factory PHPStan Fixes](./phpstan/factory-fixes.md)
-- [Database Documentation](./database/README.md)
->>>>>>> laraxot/dev
 
 ## PROSSIMI PASSI
 
@@ -140,7 +130,3 @@ Questo errore è **GRAVISSIMO** perché:
 5. ⏳ Documentare pattern e best practice
 
 *Creato: 2025-01-06*
-<<<<<<< HEAD
-=======
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> laraxot/dev

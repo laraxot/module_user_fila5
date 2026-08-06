@@ -24,11 +24,7 @@ class RoleRelationManager extends XotBaseRelationManager
      * @return array<string, Component>
      */
     #[\Override]
-<<<<<<< HEAD
     public function getFormSchemaOld(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'name' => TextInput::make('name'),

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Errori Comuni Filament nel Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Errori Comuni Filament nel Modulo User
 
 ## Errori di Metodi Statici

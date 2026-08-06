@@ -9,12 +9,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Class CreateRolesTable.
  */
-<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
-=======
-return new class extends XotBaseMigration {
->>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Implementazione degli Avatar"
 type: concept
@@ -24,13 +23,6 @@ related:
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 - [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header-language-selector-with-flags.md)
-=======
-# Implementazione degli Avatar
-
-## Collegamenti correlati
-- [README modulo User](./README.md)
-- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
->>>>>>> laraxot/dev
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -149,13 +141,8 @@ Il sistema di avatar può essere esteso in futuro per includere:
 # Implementazione degli Avatar
 
 ## Collegamenti correlati
-<<<<<<< HEAD
 - [README modulo User](./readme.md)
 - [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header-language-selector-with-flags.md)
-=======
-- [README modulo User](./README.md)
-- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
->>>>>>> laraxot/dev
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

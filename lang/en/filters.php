@@ -6,16 +6,11 @@ return [
     'navigation' => [
         'label' => 'Filter',
         'plural_label' => 'Filters',
-<<<<<<< HEAD
         'group' => [
             'name' => 'Settings',
             'description' => 'User module configuration',
         ],
         'icon' => 'heroicon-o-funnel',
-=======
-        'group' => 'User',
-        'icon' => 'heroicon-o-filter',
->>>>>>> laraxot/dev
         'sort' => 20,
     ],
     'label' => 'Filter',

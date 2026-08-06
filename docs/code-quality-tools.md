@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "🔍 Code Quality Tools - Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # 🔍 Code Quality Tools - Modulo User
 
 **Data Creazione**: 2025-01-27  
@@ -202,15 +199,9 @@ npm install
 - [Stylelint Documentation](https://stylelint.io/)
 
 ### **Guide Specifiche**
-<<<<<<< HEAD
 - [PHP Code Quality Guide](../xot/docs/php-code-quality.md)
 - [Frontend Code Quality Guide](../xot/docs/frontend-code-quality.md)
 - [Security Best Practices](../xot/docs/security-best-practices.md)
-=======
-- [PHP Code Quality Guide](../Xot/docs/php-code-quality.md)
-- [Frontend Code Quality Guide](../Xot/docs/frontend-code-quality.md)
-- [Security Best Practices](../Xot/docs/security-best-practices.md)
->>>>>>> laraxot/dev
 
 ---
 

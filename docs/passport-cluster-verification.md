@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Passport Cluster - Verifica Risorse"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Passport Cluster - Verifica Risorse
 
 **Data**: 2025-01-22

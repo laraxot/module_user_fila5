@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Migration Violations Analysis - User Module"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Migration Violations Analysis - User Module
 
 ## Executive Summary
@@ -158,17 +155,9 @@ The User module contains multiple violations of the Laraxot migration philosophy
 
 These violations directly contravene the Laraxot migration philosophy:
 - ❌ Single source of truth principle
-<<<<<<< HEAD
 - ❌ <nome progetto>able migration order
-=======
-- ❌ Predictable migration order
->>>>>>> laraxot/dev
 - ❌ DRY principle
 - ❌ Maintenance simplicity
 - ❌ Clear schema definition
 
-<<<<<<< HEAD
 The violations demonstrate a clear gap in understanding and implementation of the core Laraxot migration philosophy that emphasizes: **ONE TABLE, ONE MIGRATION, ONE MODULE**.
-=======
-The violations demonstrate a clear gap in understanding and implementation of the core Laraxot migration philosophy that emphasizes: **ONE TABLE, ONE MIGRATION, ONE MODULE**.
->>>>>>> laraxot/dev

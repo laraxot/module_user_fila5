@@ -7,13 +7,8 @@ return [
         'label' => 'Dispositivi',
         'plural_label' => 'Dispositivi',
         'group' => [
-<<<<<<< HEAD
             'name' => 'Utenti',
             'description' => 'Anagrafiche utenti, profili e dispositivi',
-=======
-            'name' => 'Sicurezza',
-            'description' => 'Gestione dispositivi e sicurezza',
->>>>>>> laraxot/dev
         ],
         'sort' => 50,
         'icon' => 'heroicon-o-device-phone-mobile',

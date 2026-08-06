@@ -5,14 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Code d\'Autorisation OAuth',
-<<<<<<< HEAD
         'group' => [
             'name' => 'OAuth',
             'description' => 'Clients, jetons et API Passport',
         ],
-=======
-        'group' => '',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-key',
         'sort' => 32,
     ],

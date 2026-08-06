@@ -20,11 +20,7 @@ return [
         'hidePassword' => ['label' => 'Nascondi password', 'icon' => 'heroicon-o-eye-slash', 'tooltip' => 'Nascondi password'],
     ],
     'sections' => [
-<<<<<<< HEAD
         'empty' => ['heading' => '', 'label' => ''],
-=======
-        'empty' => ['heading' => 'empty', 'label' => 'empty'],
->>>>>>> laraxot/dev
         'worker' => ['label' => 'worker', 'heading' => 'worker'],
     ],
 ];

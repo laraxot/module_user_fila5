@@ -38,34 +38,20 @@ return [
     ],
     'sections' => [
         'empty' => [
-<<<<<<< HEAD
             'heading' => '',
             'label' => '',
-=======
-            'heading' => 'empty',
-            'label' => 'empty',
->>>>>>> laraxot/dev
         ],
     ],
     'navigation' => [
         'name' => 'View User',
         'plural' => 'View User',
         'group' => [
-<<<<<<< HEAD
             'name' => 'Utenti',
             'description' => 'Anagrafiche utenti, profili e dispositivi',
         ],
         'label' => 'View User',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
-=======
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'View User',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
->>>>>>> laraxot/dev
     ],
     'label' => 'View User',
     'plural_label' => 'View User (Plurale)',

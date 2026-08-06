@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Implementazione Login Personalizzato"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 https://ajaxray.com/blog/lets-beautify-filament-3-login-page/
 
 https://www.codef.site/blog/laravel/how-to-customize-laravel-filament-login-page
@@ -36,11 +33,7 @@ https://v2.filamentphp.com/tricks/customizing-filament-breezy-registration-profi
 > - [Passport Integration](passport.md) - Integrazione OAuth2 con Passport
 > - [Socialite Integration](socialite.txt) - Integrazione con provider social
 > - [Two Factor Authentication](two_factor.txt) - Autenticazione a due fattori
-<<<<<<< HEAD
 > - [Filament Best Practices](filament_best_practices.md) - Best practices Filament
-=======
-> - [Filament Best Practices](FILAMENT_BEST_PRACTICES.md) - Best practices Filament
->>>>>>> laraxot/dev
 > - [User Profile Models](user_profile_models.md) - Modelli del profilo utente
 
 ## Implementazione con Filament
@@ -104,11 +97,7 @@ class LoginWidget extends XotBaseWidget
 ## Collegamenti Utili
 
 - [Documentazione Filament](https://filamentphp.com/docs)
-<<<<<<< HEAD
 - [Best Practices Filament](filament_best_practices.md)
-=======
-- [Best Practices Filament](FILAMENT_BEST_PRACTICES.md)
->>>>>>> laraxot/dev
 - [User Profile Models](user_profile_models.md)
 
 

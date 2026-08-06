@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Translation Maintenance Log - User Module"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Translation Maintenance Log - User Module
 
 ## Overview

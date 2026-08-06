@@ -7,13 +7,8 @@ return [
         'name' => 'Dispositivo',
         'plural' => 'Dispositivi',
         'group' => [
-<<<<<<< HEAD
             'name' => 'Benutzer',
             'description' => 'Benutzerdaten, Profile und Geräte',
-=======
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione dei dispositivi degli utenti',
->>>>>>> laraxot/dev
         ],
         'label' => 'device',
         'sort' => '20',

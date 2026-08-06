@@ -43,11 +43,7 @@ return [
         'plural' => 'CSS Personalizzati',
         'group' => [
             'name' => 'Aspetto',
-<<<<<<< HEAD
             'description' => 'Temi, colori e personalizzazioni',
-=======
-            'description' => 'Personalizzazione CSS del tema',
->>>>>>> laraxot/dev
         ],
         'label' => 'CSS Personalizzato',
         'sort' => 15,

@@ -5,14 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Restablecimiento de Contraseña',
-<<<<<<< HEAD
         'group' => [
             'name' => 'Autenticación',
             'description' => 'Acceso, registro y credenciales',
         ],
-=======
-        'group' => 'Seguridad',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-key',
         'sort' => 42,
     ],

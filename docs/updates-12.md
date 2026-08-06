@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Module Updates - December 2025"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # User Module Updates - December 2025
 
 ## Refactoring Translations

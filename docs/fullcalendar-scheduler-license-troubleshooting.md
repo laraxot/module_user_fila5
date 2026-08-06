@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "FullCalendar Scheduler License - Troubleshooting e Configurazione Avanzata"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # FullCalendar Scheduler License - Troubleshooting e Configurazione Avanzata
 
 ## Panoramica

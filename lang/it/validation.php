@@ -135,21 +135,12 @@ return [
         'name' => 'Validation',
         'plural' => 'Validation',
         'group' => [
-<<<<<<< HEAD
             'name' => 'Impostazioni',
             'description' => 'Configurazione del modulo utenti',
         ],
         'label' => 'Validation',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
-=======
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Validation',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
->>>>>>> laraxot/dev
     ],
     'label' => 'Validation',
     'plural_label' => 'Validation (Plurale)',

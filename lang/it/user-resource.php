@@ -163,21 +163,12 @@ return [
         'name' => 'User Resource',
         'plural' => 'User Resource',
         'group' => [
-<<<<<<< HEAD
             'name' => 'Utenti',
             'description' => 'Anagrafiche utenti, profili e dispositivi',
         ],
         'label' => 'User Resource',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
-=======
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'User Resource',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
->>>>>>> laraxot/dev
     ],
     'label' => 'User Resource',
     'plural_label' => 'User Resource (Plurale)',

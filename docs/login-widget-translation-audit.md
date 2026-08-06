@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "LoginWidget Translation Audit - Gennaio 2025"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo
@@ -87,11 +84,7 @@ return [
 
 ## Collegamenti
 - [Widget Translation Rules](widget-translation-rules.md)
-<<<<<<< HEAD
 - [Root Translation Guidelines](../../../../../docs/project/translation-standards.md)
-=======
-- [Root Translation Guidelines](../../../../project_docs/translation-standards.md)
->>>>>>> laraxot/dev
 ### 2. Struttura Completa delle Traduzioni
 Ogni file `messages.php` include categorie complete di messaggi:
 

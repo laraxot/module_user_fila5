@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Dentist Moderation Approach in User Module"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Dentist Moderation Approach in User Module
 
 ## Overview

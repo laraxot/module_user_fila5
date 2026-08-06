@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Riferimento Componenti Filament Verificati"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Riferimento Componenti Filament Verificati
 
 ## ⚠️ REGOLA CRITICA: Verificare SEMPRE l'esistenza dei componenti

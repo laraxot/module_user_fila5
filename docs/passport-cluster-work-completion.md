@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Passport Cluster - Completamento Lavoro"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Passport Cluster - Completamento Lavoro
 
 **Data**: 2025-01-22

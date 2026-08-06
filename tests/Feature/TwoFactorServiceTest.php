@@ -6,10 +6,7 @@ namespace Modules\User\Tests\Feature;
 
 use Illuminate\Support\Carbon;
 use Modules\User\Tests\TestCase;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-=======
->>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 
@@ -25,11 +22,7 @@ beforeEach(function (): void {
     $this->skipUnlessUserColumn('users', 'two_factor_confirmed_at');
 
     $this->user = $this->createTestUser();
-<<<<<<< HEAD
     $this->google2fa = new Google2FA;
-=======
-    $this->google2fa = new Google2FA();
->>>>>>> laraxot/dev
 });
 
 describe('Two Factor Service', function (): void {
@@ -265,11 +258,7 @@ describe('Two Factor Service', function (): void {
         $encrypted = $freshUser->two_factor_recovery_codes;
 
         Assert::assertNotNull($encrypted);
-<<<<<<< HEAD
         Assert::assertSame($result['recovery_codes'], json_decode(SafeStringCastAction::cast(decrypt($encrypted)), true));
-=======
-        Assert::assertSame($result['recovery_codes'], json_decode((string) decrypt($encrypted), true));
->>>>>>> laraxot/dev
     });
 
     test('enable can be called multiple times', function (): void {

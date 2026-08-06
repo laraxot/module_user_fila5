@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi dell'Errore negli Eventi di Logout"
 type: concept
@@ -29,11 +28,6 @@ related:
 - [Analisi Errore Logout](logout-blade-error-analysis-3.md)
 - [Widget Filament Corretto](logout-filament-widget-corrected-3.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
-=======
-# Analisi dell'Errore negli Eventi di Logout
-
-## Collegamenti correlati
->>>>>>> laraxot/dev
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
@@ -179,7 +173,6 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati
-<<<<<<< HEAD
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
@@ -187,8 +180,6 @@ Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier
 - [Analisi Errore Logout](logout-blade-error-analysis-3.md)
 - [Widget Filament Corretto](logout-filament-widget-corrected-3.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
-=======
->>>>>>> laraxot/dev
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
@@ -330,8 +321,4 @@ Si raccomanda di implementare l'**Opzione 1** perché:
 2. Evita di modificare il `LogoutListener` che potrebbe essere utilizzato da altre parti dell'applicazione
 3. Garantisce che gli eventi di logout abbiano sempre accesso all'utente che si è disconnesso
 
-<<<<<<< HEAD
 Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
-=======
-Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
->>>>>>> laraxot/dev

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Funzionalità del Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Funzionalità del Modulo User
 
 ## Cambio Password

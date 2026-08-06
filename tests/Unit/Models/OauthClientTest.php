@@ -9,10 +9,7 @@ use Laravel\Passport\Client;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\OauthClient;
 use Modules\User\Tests\TestCase;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-=======
->>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
@@ -32,22 +29,14 @@ beforeEach(function (): void {
 describe('Oauth Client', function (): void {
     test('oauth client can be instantiated', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $client = new OauthClient;
-=======
-        $client = new OauthClient();
->>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(OauthClient::class, $client);
         Assert::assertInstanceOf(Client::class, $client);
     });
 
     test('oauth client has connection user', function (): void {
-<<<<<<< HEAD
         $client = new OauthClient;
-=======
-        $client = new OauthClient();
->>>>>>> laraxot/dev
 
         Assert::assertSame('user', $client->getConnectionName());
     });
@@ -55,11 +44,7 @@ describe('Oauth Client', function (): void {
     test('oauth client user relation uses xot data', function (): void {
         /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
-<<<<<<< HEAD
         $client = $this->oauthClientTestPersistedClient(['user_id' => SafeStringCastAction::cast($user->getKey())]);
-=======
-        $client = $this->oauthClientTestPersistedClient(['user_id' => (string) $user->getKey()]);
->>>>>>> laraxot/dev
 
         Assert::assertNotNull($client->user);
         Assert::assertSame($user->getKey(), $client->user->getKey());

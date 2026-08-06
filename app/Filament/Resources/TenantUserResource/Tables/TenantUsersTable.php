@@ -6,7 +6,6 @@ namespace Modules\User\Filament\Resources\TenantUserResource\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Str;
@@ -29,18 +28,11 @@ class TenantUsersTable extends XotBaseResourceTable
     /** @var list<string> Colonne di audit: in coda e nascoste per default. */
     private const AUDIT_FIELDS = ['created_by', 'updated_by', 'deleted_by', 'deleted_at'];
 
-=======
-use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
-
-class TenantUsersTable extends XotBaseResourceTable
-{
->>>>>>> laraxot/dev
     /**
      * @return array<string, Column>
      */
     public function getTableColumns(): array
     {
-<<<<<<< HEAD
         $model = app(XotData::make()->getTenantUserClass());
         $columns = ['id' => TextColumn::make('id')->sortable()];
         if (! $model instanceof Model) {
@@ -116,21 +108,5 @@ class TenantUsersTable extends XotBaseResourceTable
         }
 
         return [$relation, TextColumn::make($relation.'.name')->searchable()];
-=======
-        return [
-            'id' => TextColumn::make('id')->sortable(),
-            'uuid' => TextColumn::make('uuid'),
-            'user_id' => TextColumn::make('user_id'),
-            'tenant_id' => TextColumn::make('tenant_id'),
-            'role' => TextColumn::make('role'),
-            'permissions' => TextColumn::make('permissions'),
-            'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
-            'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->toggleable(),
-            'deleted_at' => TextColumn::make('deleted_at')->dateTime()->toggleable(),
-            'updated_by' => TextColumn::make('updated_by')->toggleable(),
-            'created_by' => TextColumn::make('created_by')->toggleable(),
-            'deleted_by' => TextColumn::make('deleted_by')->toggleable(),
-        ];
->>>>>>> laraxot/dev
     }
 }

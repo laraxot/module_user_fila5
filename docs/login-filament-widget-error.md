@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Risoluzione Errori LoginWidget Filament"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Risoluzione Errori LoginWidget Filament
 
 ## Introduzione

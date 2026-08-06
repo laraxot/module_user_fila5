@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Compatibilità Filament 4.x - Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Compatibilità Filament 4.x - Modulo User
 
 **Data**: 2025-01-27

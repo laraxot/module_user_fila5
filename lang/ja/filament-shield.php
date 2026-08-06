@@ -41,14 +41,10 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-<<<<<<< HEAD
         'group' => [
             'name' => 'ロールと権限',
             'description' => 'アクセス制御',
         ],
-=======
-        'group' => 'Missing Group',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],
