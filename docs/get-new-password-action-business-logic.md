@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "GetNewPasswordAction - Business Logic Analysis"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # GetNewPasswordAction - Business Logic Analysis
 
 ## Overview

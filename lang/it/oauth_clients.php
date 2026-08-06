@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+<<<<<<< HEAD
         'id' => ['label' => 'id'],
         'user_id' => ['label' => 'user_id'],
         'name' => ['label' => 'name'],
@@ -17,5 +18,37 @@ return [
     ],
     'actions' => [
         'delete' => ['tooltip' => 'delete'],
+=======
+        'id' => [
+            'label' => 'id',
+        ],
+        'user_id' => [
+            'label' => 'user_id',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'provider' => [
+            'label' => 'provider',
+        ],
+        'redirect' => [
+            'label' => 'redirect',
+        ],
+        'personal_access_client' => [
+            'label' => 'personal_access_client',
+        ],
+        'password_client' => [
+            'label' => 'password_client',
+        ],
+        'revoked' => [
+            'label' => 'revoked',
+        ],
+        'created_at' => [
+            'label' => 'created_at',
+        ],
+        'updated_at' => [
+            'label' => 'updated_at',
+        ],
+>>>>>>> laraxot/dev
     ],
 ];

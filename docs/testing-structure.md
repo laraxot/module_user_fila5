@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Struttura dei Tests del Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Struttura dei Tests del Modulo User
 
 ## Panoramica
@@ -305,13 +308,23 @@ dump($variable);
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [README Modulo User](../readme.md)
 - [Best Practices Testing](../../../../docs/project/testing-best-practices.md)
 - [Architettura Modulo User](../architecture/readme.md)
+=======
+- [README Modulo User](../README.md)
+- [Best Practices Testing](../../../project_docs/testing-best-practices.md)
+- [Architettura Modulo User](../architecture/README.md)
+>>>>>>> laraxot/dev
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
 ---
 
+<<<<<<< HEAD
+=======
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> laraxot/dev
 
 
 

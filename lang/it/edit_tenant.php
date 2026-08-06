@@ -15,12 +15,21 @@ return [
         'name' => 'Edit Tenant',
         'plural' => 'Edit Tenant',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Team e tenant',
             'description' => 'Organizzazioni, inviti e appartenenze',
         ],
         'label' => 'Edit Tenant',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Edit Tenant',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Edit Tenant',
     'plural_label' => 'Edit Tenant (Plurale)',

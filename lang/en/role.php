@@ -7,8 +7,13 @@ return [
         'name' => 'Ruoli',
         'plural' => 'Ruoli',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Roles and permissions',
             'description' => 'Access control',
+=======
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione dei ruoli e dei permessi associati',
+>>>>>>> laraxot/dev
         ],
         'label' => 'Ruoli',
         'sort' => '26',

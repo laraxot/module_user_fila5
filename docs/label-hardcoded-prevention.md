@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Prevenzione ->label() Hardcoded - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Prevenzione ->label() Hardcoded - Modulo User
 
 ## 🚨 **REGOLA ASSOLUTA**
@@ -206,13 +209,23 @@ return [
 
 ## 🔗 **Collegamenti**
 
+<<<<<<< HEAD
 - [Translation Standards](../../../docs/translation-standards.md)
 - [PHPStan Fixes](../../../docs/phpstan_level10_fixes.md)
 - [Best Practices](../../../docs/best-practices.md)
+=======
+- [Translation Standards](../../docs/translation-standards.md)
+- [PHPStan Fixes](../../docs/phpstan_level10_fixes.md)
+- [Best Practices](../../docs/best-practices.md)
+>>>>>>> laraxot/dev
 
 ---
 
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025  
 **📦 Versione**: 3.1.0  
 **🎯 Obiettivo**: Zero ->label() hardcoded  
+<<<<<<< HEAD
 **✅ Status**: Prevenzione attiva e monitorata
+=======
+**✅ Status**: Prevenzione attiva e monitorata
+>>>>>>> laraxot/dev

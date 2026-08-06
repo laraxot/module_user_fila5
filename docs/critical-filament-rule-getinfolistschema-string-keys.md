@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Critical Filament Rule: getInfolistSchema String Keys"
 type: rule
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Critical Filament Rule: getInfolistSchema String Keys
 
 ## The Rule

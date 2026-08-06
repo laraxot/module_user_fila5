@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Factory Audit Lessons Learned - User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Factory Audit Lessons Learned - User Module
 
 ## ERRORE GRAVISSIMO RISOLTO NEL MODULO USER
@@ -119,9 +122,15 @@ class DeviceProfileFactory extends DeviceUserFactory
 
 ## 🔗 COLLEGAMENTI
 
+<<<<<<< HEAD
 - [Factory Lessons Learned CRITICAL](../../../../docs/project/factory-lessons-learned-critical.md)
 - [Factory Creation Status](./factory-creation-status.md)
 - [User Module README](./readme.md)
+=======
+- [Factory Lessons Learned CRITICAL](../../../project_docs/factory-lessons-learned-CRITICAL.md)
+- [Factory Creation Status](./factory-creation-status.md)
+- [User Module README](./README.md)
+>>>>>>> laraxot/dev
 
 ## ⚠️ REGOLE DA NON DIMENTICARE MAI
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementazione Corretta del Logout con Volt e Folio"
 type: concept
@@ -25,6 +26,15 @@ related:
 - [Convenzioni Path](./path-conventions-2.md)
 - [Analisi Logout Blade](./logout-blade-analysis-3.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
+=======
+# Implementazione Corretta del Logout con Volt e Folio
+
+## Collegamenti correlati
+- [README modulo User](./README.md)
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Analisi Logout Blade](./LOGOUT_BLADE_ANALYSIS.md)
+- [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
+>>>>>>> laraxot/dev
 
 ## Panoramica
 Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di <nome progetto>.
@@ -205,10 +215,17 @@ Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . 
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-2.md)
 - [Analisi Logout Blade](./logout-blade-analysis-3.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
+=======
+- [README modulo User](./README.md)
+- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Analisi Logout Blade](./LOGOUT_BLADE_ANALYSIS.md)
+- [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
+>>>>>>> laraxot/dev
 
 ## Panoramica
 Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di <nome progetto>.

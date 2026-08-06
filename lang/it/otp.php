@@ -98,8 +98,13 @@ return [
         'name' => 'OTP',
         'plural' => 'OTPs',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Autenticazione',
             'description' => 'Accesso, registrazione e credenziali',
+=======
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione delle password usa e getta',
+>>>>>>> laraxot/dev
         ],
         'label' => 'otp',
         'sort' => 31,

@@ -10,7 +10,10 @@ use Filament\Actions\EditAction;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 use function Safe\json_encode;
@@ -47,11 +50,19 @@ class AuthenticationLogsRelationManager extends XotBaseRelationManager
                 ->formatStateUsing(function ($state) {
                     if (is_array($state)) {
                         return collect($state)
+<<<<<<< HEAD
                             ->map(fn ($value, $key): string => SafeStringCastAction::cast($key).': '.SafeStringCastAction::cast($value))
                             ->join(', ');
                     }
 
                     if ($state === null) {
+=======
+                            ->map(fn ($value, $key): string => (string) $key.': '.(string) $value)
+                            ->join(', ');
+                    }
+
+                    if (null === $state) {
+>>>>>>> laraxot/dev
                         return 'N/A';
                     }
 

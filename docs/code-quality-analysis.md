@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Code Quality Analysis - User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Code Quality Analysis - User Module
 
 ## 🚨 Critical Issues Identified
@@ -324,9 +327,17 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
+<<<<<<< HEAD
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-2.md)
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-3.md)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
 This analysis provides a comprehensive roadmap for improving code quality in the User module while maintaining security and functionality.
+=======
+- [AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md](./performance/AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md)
+- [optimization-analysis.md](./optimization-analysis.md)
+- [phpstan-compliance.md](./phpstan-compliance.md)
+
+This analysis provides a comprehensive roadmap for improving code quality in the User module while maintaining security and functionality.
+>>>>>>> laraxot/dev

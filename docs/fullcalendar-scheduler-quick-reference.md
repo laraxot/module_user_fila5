@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "FullCalendar Scheduler - Riferimento Rapido"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # FullCalendar Scheduler - Riferimento Rapido
 
 ## 🚨 Problemi Comuni e Soluzioni Immediate

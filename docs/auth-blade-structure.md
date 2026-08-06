@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Struttura delle Blade di Autenticazione con Volt"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Struttura delle Blade di Autenticazione con Volt
 
 ## Introduzione
@@ -198,6 +201,7 @@ Ogni azione di autenticazione deve:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Documentazione Volt](./volt-logout-2.md)
 - [Best Practices Routing](./routing-best-practices-2.md)
 - [Struttura Directory](./directory-structure-checklist.md)
@@ -206,3 +210,9 @@ Ogni azione di autenticazione deve:
 - [Best Practices Routing](./routing-best-practices.md)
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 
+=======
+- [Documentazione Volt](./VOLT_LOGOUT.md)
+- [Best Practices Routing](./ROUTING_BEST_PRACTICES.md)
+- [Struttura Directory](./DIRECTORY_STRUCTURE_CHECKLIST.md)
+- [Gestione Errori](./ERROR_HANDLING.md) 
+>>>>>>> laraxot/dev

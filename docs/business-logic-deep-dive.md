@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - Business Logic Deep Dive"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # User Module - Business Logic Deep Dive
 
 ## 🎯 Module Overview

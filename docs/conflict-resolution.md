@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Git Conflict Resolution - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Git Conflict Resolution - Modulo User
 
 ## Data
@@ -45,3 +48,7 @@ related:
 - Factory utilizza `@var OauthClient` per evitare `mixed`.
 - PHPStan blocca per seeder legacy; verrà affrontato in step successivi.
 
+<<<<<<< HEAD
+=======
+Ultimo aggiornamento: 2025-01-06
+>>>>>>> laraxot/dev

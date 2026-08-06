@@ -9,7 +9,10 @@ use Laravel\Passport\ClientRepository;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -23,7 +26,11 @@ function createPassportClient(): array
 
     $client = $repository->createClientCredentialsGrantClient('Flow Test Client');
 
+<<<<<<< HEAD
     $secret = $client->plainSecret ?? SafeStringCastAction::cast($client->getAttribute('secret'));
+=======
+    $secret = $client->plainSecret ?? (string) $client->getAttribute('secret');
+>>>>>>> laraxot/dev
 
     return [
         'client' => $client,
@@ -55,7 +62,11 @@ test('client credentials can be associated to a specific user', function (): voi
     $client->owner()->associate($user);
     $client->forceFill([
         'user_id' => $user->getKey(),
+<<<<<<< HEAD
         'owner_id' => SafeStringCastAction::cast($user->getKey()),
+=======
+        'owner_id' => (string) $user->getKey(),
+>>>>>>> laraxot/dev
         'owner_type' => User::class,
     ]);
     $client->save();

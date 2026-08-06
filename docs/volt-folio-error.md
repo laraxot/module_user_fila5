@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Errore VoltDirectiveMissingException in Folio"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Errore VoltDirectiveMissingException in Folio
 
 ## Il Problema
@@ -74,5 +77,9 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 ## Collegamenti
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Folio](https://laravel.com/docs/folio)
+<<<<<<< HEAD
 - [Best Practices Routing](./routing-best-practices.md) 
 - [Best Practices Routing](./routing-best-practices-2.md) 
+=======
+- [Best Practices Routing](./ROUTING_BEST_PRACTICES.md) 
+>>>>>>> laraxot/dev

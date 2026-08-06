@@ -17,12 +17,17 @@ abstract class BaseProfileResource extends XotBaseResource
 
     protected static ?string $model = BaseProfile::class;
 
+<<<<<<< HEAD
     /**
      * Schema legacy del form: la sorgente di verità è BaseProfileForm::getFormSchema().
      *
      * @return array<string, \Filament\Schemas\Components\Component>
      */
     public static function getFormSchemaOld(): array
+=======
+    #[\Override]
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             // Forms\Components\TextInput::make('user_id'),

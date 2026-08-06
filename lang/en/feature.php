@@ -10,8 +10,13 @@ return [
         'name' => 'Feature',
         'plural' => 'Features',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Settings',
             'description' => 'User module configuration',
+=======
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione delle feature e delle funzionalità',
+>>>>>>> laraxot/dev
         ],
         'label' => 'feature',
         'sort' => '75',

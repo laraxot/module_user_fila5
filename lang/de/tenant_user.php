@@ -5,10 +5,14 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Mandanten-Benutzer',
+<<<<<<< HEAD
         'group' => [
             'name' => 'Teams und Mandanten',
             'description' => 'Organisationen, Einladungen und Mitgliedschaften',
         ],
+=======
+        'group' => 'Mandanten',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-building-office',
         'sort' => 99,
     ],

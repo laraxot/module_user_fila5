@@ -9,7 +9,10 @@ use Filament\Actions\DeleteAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 /**
@@ -39,7 +42,11 @@ class SocialiteUsersRelationManager extends XotBaseRelationManager
                         /** @phpstan-var view-string $viewString */
                         $viewString = 'filament.components.avatar';
 
+<<<<<<< HEAD
                         return view($viewString, ['url' => SafeStringCastAction::cast($state)])->render();
+=======
+                        return view($viewString, ['url' => (string) $state])->render();
+>>>>>>> laraxot/dev
                     }
 
                     return 'No Avatar';

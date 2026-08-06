@@ -11,10 +11,14 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
+<<<<<<< HEAD
         'group' => [
             'name' => 'Users',
             'description' => 'User records, profiles and devices',
         ],
+=======
+        'group' => 'Missing Group',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

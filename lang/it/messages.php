@@ -242,6 +242,7 @@ return [
         'placeholder' => '',
     ],
     'navigation' => [
+<<<<<<< HEAD
         'label' => 'Messaggi',
         'plural_label' => 'Messaggi',
         'group' => [
@@ -249,6 +250,16 @@ return [
             'description' => 'Anagrafiche utenti, profili e dispositivi',
         ],
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+        'key' => 'user::messages.navigation',
+        'label' => 'Messaggi',
+        'plural_label' => 'Messaggi',
+        'group' => [
+            'name' => 'Generale',
+            'description' => 'Impostazioni Generali',
+        ],
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
         'sort' => 1,
     ],
     'label' => [

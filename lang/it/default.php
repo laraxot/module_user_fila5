@@ -234,12 +234,21 @@ return [
         'name' => 'Default',
         'plural' => 'Default',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Impostazioni',
             'description' => 'Configurazione del modulo utenti',
         ],
         'label' => 'Default',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Default',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Default',
     'plural_label' => 'Default (Plurale)',

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "FullCalendar Scheduler License Configuration"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # FullCalendar Scheduler License Configuration
 
 ## License Key Overview

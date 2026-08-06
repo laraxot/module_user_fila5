@@ -8,6 +8,11 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\DB;
+>>>>>>> laraxot/dev
 use Modules\Media\Models\Media;
 use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
@@ -170,4 +175,30 @@ class User extends BaseUser
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;
         return true;
     }
+<<<<<<< HEAD
+=======
+
+    /**
+     * Give consent for a specific consent type.
+     *
+     * @param string $consentType
+     * @param array<string, mixed> $metadata
+     * @return void
+     */
+    public function giveConsent(string $consentType, array $metadata = []): void
+    {
+        // Create consent record
+        $consentData = [
+            'user_id' => $this->id,
+            'user_type' => static::class,
+            'type' => $consentType,
+            'accepted_at' => date('Y-m-d H:i:s'),
+            'created_by' => $this->id,
+            'updated_by' => $this->id,
+        ];
+
+        // Use DB to insert directly
+        \Illuminate\Support\Facades\DB::table('consents')->insert($consentData);
+    }
+>>>>>>> laraxot/dev
 }

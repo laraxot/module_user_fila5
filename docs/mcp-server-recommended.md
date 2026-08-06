@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "MCP Server Consigliati per il Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # MCP Server Consigliati per il Modulo User
 
 ## Scopo del Modulo

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Widget di Registrazione del Dottore"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Widget di Registrazione del Dottore
 
 ## Panoramica

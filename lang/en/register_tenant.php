@@ -5,10 +5,14 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Registrazione Studio',
+<<<<<<< HEAD
         'group' => [
             'name' => 'Teams and tenants',
             'description' => 'Organizations, invitations and memberships',
         ],
+=======
+        'group' => 'Gestione Tenant',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-building-office',
         'color' => 'primary',
         'sort' => '10',

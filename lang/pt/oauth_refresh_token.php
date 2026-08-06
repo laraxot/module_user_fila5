@@ -5,10 +5,14 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Token de Atualização OAuth',
+<<<<<<< HEAD
         'group' => [
             'name' => 'OAuth',
             'description' => 'Clientes, tokens e API Passport',
         ],
+=======
+        'group' => '',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-arrow-path',
         'sort' => 34,
     ],

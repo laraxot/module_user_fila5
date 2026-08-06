@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Registration Widget Documentation"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Registration Widget Documentation
 
 ## Overview
@@ -61,10 +64,17 @@ protected function getConfirmationRoute(): string
     return $mapping[$this->type] ?? 'user.registration.confirmation';
 ```
 ## References
+<<<<<<< HEAD
 - [Namespace Issues](../../../../docs/project/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../modules/xot/project_docs/rules/filament-resource-guidelines.md)
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)
+=======
+- [Namespace Issues](../../../project_docs/references/namespace-issues.md)
+- [Filament Resource Guidelines](../../../Modules/Xot/project_docs/rules/filament-resource-guidelines.md)
+- [Namespace Issues](../../../docs/references/namespace-issues.md)
+- [Filament Resource Guidelines](../../../Modules/Xot/docs/rules/filament-resource-guidelines.md)
+>>>>>>> laraxot/dev
 # Registration Widget Documentation
 
 ## Overview
@@ -128,5 +138,10 @@ protected function getConfirmationRoute(): string
 
 ## References
 
+<<<<<<< HEAD
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)
+=======
+- [Namespace Issues](../../../docs/references/namespace-issues.md)
+- [Filament Resource Guidelines](../../../Modules/Xot/docs/rules/filament-resource-guidelines.md)
+>>>>>>> laraxot/dev

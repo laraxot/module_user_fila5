@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Migration Consolidation Strategy - User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Migration Consolidation Strategy - User Module
 
 ## The Furious Argument: One File vs. Multiple Incremental Files

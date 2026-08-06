@@ -80,10 +80,14 @@ return [
     'navigation' => [
         'sort' => 89,
         'icon' => 'heroicon-o-user-circle',
+<<<<<<< HEAD
         'group' => [
             'name' => 'Authentification',
             'description' => 'Connexion, inscription et identifiants',
         ],
+=======
+        'group' => 'Authentification',
+>>>>>>> laraxot/dev
         'label' => 'Utilisateurs Socialite',
     ],
     'label' => 'Missing Label',

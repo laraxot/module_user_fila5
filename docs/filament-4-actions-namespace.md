@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Filament 4: Namespace Actions - Filosofia Laraxot"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Filament 4: Namespace Actions - Filosofia Laraxot
 
 **Data Creazione**: 2025-01-22
@@ -232,7 +235,11 @@ grep -r "Filament\\\\Actions" laravel/Modules/*/app/
 
 ## 📚 Riferimenti
 
+<<<<<<< HEAD
 - [Filament 4 Migration Guide](../../xot/docs/filament-4-migration-guide.md)
+=======
+- [Filament 4 Migration Guide](../../Xot/docs/filament-4-migration-guide.md)
+>>>>>>> laraxot/dev
 - [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
 - [Filament 4 Documentation](https://filamentphp.com/docs/4.x)
 

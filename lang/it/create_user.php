@@ -42,12 +42,21 @@ return [
         'name' => 'Create User',
         'plural' => 'Create User',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Utenti',
             'description' => 'Anagrafiche utenti, profili e dispositivi',
         ],
         'label' => 'Create User',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Create User',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Create User',
     'plural_label' => 'Create User (Plurale)',

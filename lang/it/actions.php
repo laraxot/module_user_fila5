@@ -6,10 +6,14 @@ return [
     'navigation' => [
         'label' => 'Azioni',
         'plural_label' => 'Azioni',
+<<<<<<< HEAD
         'group' => [
             'name' => 'Impostazioni',
             'description' => 'Configurazione del modulo utenti',
         ],
+=======
+        'group' => 'User',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-cog',
         'sort' => 50,
     ],

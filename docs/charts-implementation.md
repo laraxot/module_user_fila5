@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - Charts Implementation"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # User Module - Charts Implementation
 
 ## 📋 Panoramica
@@ -568,9 +571,15 @@ class UsersChartWidgetTest extends TestCase
 ## 📚 Risorse
 
 ### Documentazione Correlata
+<<<<<<< HEAD
 - [Filament Charts Complete Guide](../../xot/docs/filament-charts-complete-guide.md)
 - [Chart Export Guide](../../xot/docs/chart-export-guide.md)
 - [User Module README](./readme.md)
+=======
+- [Filament Charts Complete Guide](../../Xot/docs/filament-charts-complete-guide.md)
+- [Chart Export Guide](../../Xot/docs/chart-export-guide.md)
+- [User Module README](./README.md)
+>>>>>>> laraxot/dev
 
 ### Chart.js
 - [Chart.js Documentation](https://www.chartjs.org/docs/latest/)
@@ -581,6 +590,10 @@ class UsersChartWidgetTest extends TestCase
 
 ---
 
+<<<<<<< HEAD
+=======
+**Ultimo aggiornamento:** Dicembre 2025
+>>>>>>> laraxot/dev
 **Modulo:** User
 **Framework:** Laraxot/PTVX
 **Filament:** 4.x

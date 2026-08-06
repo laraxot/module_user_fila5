@@ -2,10 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
+=======
+>>>>>>> laraxot/dev
 use Carbon\Carbon;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -130,7 +133,11 @@ describe('Authentication Business Logic', function (): void {
 
         it('validates email format and verification', function (): void {
             $user = authBizUserData();
+<<<<<<< HEAD
             $email = SafeStringCastAction::cast($user['email']);
+=======
+            $email = (string) $user['email'];
+>>>>>>> laraxot/dev
             $verifiedAt = $user['email_verified_at'];
             Assert::assertInstanceOf(Carbon::class, $verifiedAt);
 
@@ -140,7 +147,11 @@ describe('Authentication Business Logic', function (): void {
 
         it('handles password security requirements', function (): void {
             $user = authBizUserData();
+<<<<<<< HEAD
             $password = SafeStringCastAction::cast($user['password']);
+=======
+            $password = (string) $user['password'];
+>>>>>>> laraxot/dev
             $expiresAt = $user['password_expires_at'];
             Assert::assertInstanceOf(Carbon::class, $expiresAt);
 
@@ -154,7 +165,11 @@ describe('Authentication Business Logic', function (): void {
             $maxAttempts = 5;
             $lockoutMinutes = 30;
 
+<<<<<<< HEAD
             Assert::assertLessThan($maxAttempts, SafeIntCastAction::cast($user['failed_login_attempts']));
+=======
+            Assert::assertLessThan($maxAttempts, (int) $user['failed_login_attempts']);
+>>>>>>> laraxot/dev
             Assert::assertNull($user['locked_until']);
 
             $userLocked = array_merge(authBizUserData(), [
@@ -170,7 +185,11 @@ describe('Authentication Business Logic', function (): void {
 
         it('manages session and remember tokens', function (): void {
             $user = authBizUserData();
+<<<<<<< HEAD
             $rememberToken = SafeStringCastAction::cast($user['remember_token']);
+=======
+            $rememberToken = (string) $user['remember_token'];
+>>>>>>> laraxot/dev
 
             Assert::assertGreaterThan(10, strlen($rememberToken));
             Assert::assertInstanceOf(Carbon::class, $user['last_login_at']);
@@ -179,6 +198,7 @@ describe('Authentication Business Logic', function (): void {
         it('validates profile completeness', function (): void {
             $user = authBizUserData();
 
+<<<<<<< HEAD
             Assert::assertNotSame('', SafeStringCastAction::cast($user['name']));
             Assert::assertNotSame('', SafeStringCastAction::cast($user['email']));
 
@@ -187,12 +207,26 @@ describe('Authentication Business Logic', function (): void {
                 $profileScore += 25;
             }
             if ($user['email'] !== '') {
+=======
+            Assert::assertNotSame('', (string) $user['name']);
+            Assert::assertNotSame('', (string) $user['email']);
+
+            $profileScore = 0;
+            if ('' !== $user['name']) {
+                $profileScore += 25;
+            }
+            if ('' !== $user['email']) {
+>>>>>>> laraxot/dev
                 $profileScore += 25;
             }
             if ($user['email_verified_at'] instanceof Carbon) {
                 $profileScore += 25;
             }
+<<<<<<< HEAD
             if ($user['profile_photo_path'] !== '') {
+=======
+            if ('' !== $user['profile_photo_path']) {
+>>>>>>> laraxot/dev
                 $profileScore += 25;
             }
 
@@ -214,7 +248,11 @@ describe('Authentication Business Logic', function (): void {
             $team = authBizTeamData();
 
             Assert::assertFalse((bool) $team['personal_team']);
+<<<<<<< HEAD
             Assert::assertStringNotContainsString('Personal', SafeStringCastAction::cast($team['name']));
+=======
+            Assert::assertStringNotContainsString('Personal', (string) $team['name']);
+>>>>>>> laraxot/dev
 
             $personalTeam = [
                 'name' => 'Mario Rossi (Personal)',
@@ -369,8 +407,13 @@ describe('Authentication Business Logic', function (): void {
         it('validates push notification setup', function (): void {
             $device = authBizDeviceData();
 
+<<<<<<< HEAD
             if ($device['device_type'] === 'mobile') {
                 $pushToken = SafeStringCastAction::cast($device['push_token']);
+=======
+            if ('mobile' === $device['device_type']) {
+                $pushToken = (string) $device['push_token'];
+>>>>>>> laraxot/dev
                 Assert::assertGreaterThan(20, strlen($pushToken));
             }
         });

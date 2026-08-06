@@ -6,10 +6,14 @@ return [
     'navigation' => [
         'label' => 'Provider Social',
         'plural_label' => 'Provider Social',
+<<<<<<< HEAD
         'group' => [
             'name' => 'Autenticazione',
             'description' => 'Accesso, registrazione e credenziali',
         ],
+=======
+        'group' => 'Gestione Utenti',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-share',
         'sort' => 93,
     ],

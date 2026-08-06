@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Correzioni PHPStan per il Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Correzioni PHPStan per il Modulo User
 
 ## Panoramica
@@ -173,7 +176,11 @@ Gli errori rimanenti (94) sono principalmente:
 
 - [Test di Validazione](../../tests/Unit/UserModulePhpstanFixesTest.php)
 - [Configurazione Password](../../config/password.php)
+<<<<<<< HEAD
 - [Documentazione Root](../../../../docs/user-module-phpstan-fixes.md)
+=======
+- [Documentazione Root](../../../docs/user-module-phpstan-fixes.md)
+>>>>>>> laraxot/dev
 
 ## Note per il Futuro
 
@@ -182,6 +189,7 @@ Gli errori rimanenti (94) sono principalmente:
 3. **Actions**: Usare proprietà readonly solo quando necessario e inizializzarle correttamente
 4. **Test**: Creare sempre test di validazione per le correzioni PHPStan
 
+<<<<<<< HEAD
 ## Aggiornamento verificato (2026-07-06, sessione pomeridiana)
 
 Ri-verificato con `phpstan analyse Modules/User --memory-limit=-1` (cache pulita): **0 errori**. Fix applicati in questa sessione oltre a quanto sopra:
@@ -193,3 +201,6 @@ Ri-verificato con `phpstan analyse Modules/User --memory-limit=-1` (cache pulita
 
 Dettagli completi: `docs/chat/phpstan-modules-progress-2026-07-06-pm.md` (root del repo) e `docs/wiki/second-brain/phpstan-journey.md`.
 
+=======
+*Ultimo aggiornamento: dicembre 2024*
+>>>>>>> laraxot/dev

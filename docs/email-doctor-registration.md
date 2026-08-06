@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Invio Email per la Continuazione della Registrazione del Dottore"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Invio Email per la Continuazione della Registrazione del Dottore
 
 ## Panoramica del Processo

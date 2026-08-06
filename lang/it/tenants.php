@@ -153,12 +153,21 @@ return [
         'name' => 'Tenants',
         'plural' => 'Tenants',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Team e tenant',
             'description' => 'Organizzazioni, inviti e appartenenze',
         ],
         'label' => 'Tenants',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Tenants',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Tenants',
     'plural_label' => 'Tenants (Plurale)',

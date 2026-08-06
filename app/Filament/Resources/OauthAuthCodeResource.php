@@ -31,11 +31,20 @@ class OauthAuthCodeResource extends XotBaseResource
     protected static ?string $recordTitleAttribute = 'id';
 
     /**
+<<<<<<< HEAD
      * Schema legacy del form: la sorgente di verità è OauthAuthCodeForm::getFormSchema().
      *
      * @return array<string, Select|TextInput>
      */
     public static function getFormSchemaOld(): array
+=======
+     * Get the form schema for the resource.
+     *
+     * @return array<string, Select|TextInput>
+     */
+    #[\Override]
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'user_id' => Select::make('user_id')

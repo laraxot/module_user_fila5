@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Factory Mancanti - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Factory Mancanti - Modulo User
 
 ## Situazione Critica Identificata
@@ -153,9 +156,19 @@ related:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [README Modulo User](./readme.md)
 - [Factory Audit Root](../../../../docs/project/factory-audit-2025.md)
 - [Models Documentation](./models/readme.md)
 
 ---
 **Errore gravissimo da non ripetere mai più**  
+=======
+- [README Modulo User](./README.md)
+- [Factory Audit Root](../../../project_docs/factory-audit-2025.md)
+- [Models Documentation](./models/README.md)
+
+---
+**Errore gravissimo da non ripetere mai più**  
+*Ultimo aggiornamento: 2025-01-06*
+>>>>>>> laraxot/dev

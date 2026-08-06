@@ -9,8 +9,13 @@ declare(strict_types=1);
 return [
     'sections' => [
         'empty' => [
+<<<<<<< HEAD
             'heading' => '',
             'label' => '',
+=======
+            'heading' => 'empty',
+            'label' => 'empty',
+>>>>>>> laraxot/dev
         ],
         'worker' => [
             'label' => 'worker',

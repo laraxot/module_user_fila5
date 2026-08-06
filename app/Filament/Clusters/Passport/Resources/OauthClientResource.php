@@ -36,7 +36,11 @@ class OauthClientResource extends XotBaseResource
     /**
      * @return array<string, Field>
      */
+<<<<<<< HEAD
     public static function getFormSchemaOld(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'name' => TextInput::make('name')

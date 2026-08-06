@@ -16,7 +16,10 @@ use Livewire\Attributes\Locked;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
 use Modules\User\Models\User;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 use Webmozart\Assert\InvalidArgumentException;
 
@@ -89,7 +92,11 @@ final class ProfileEditVoltComponent extends Component
             Assert::stringNotEmpty($this->last_name, 'User last name cannot be empty');
             Assert::stringNotEmpty($this->email, 'User email cannot be empty');
             Assert::stringNotEmpty($this->user_id, 'User ID cannot be empty');
+<<<<<<< HEAD
             Assert::true(filter_var($this->email, FILTER_VALIDATE_EMAIL) !== false, 'User email must be valid');
+=======
+            Assert::true(false !== filter_var($this->email, FILTER_VALIDATE_EMAIL), 'User email must be valid');
+>>>>>>> laraxot/dev
         } catch (InvalidArgumentException) {
             redirect()->route('login')->with('error', 'Invalid user session. Please log in again.');
         } catch (\Exception) {
@@ -120,7 +127,11 @@ final class ProfileEditVoltComponent extends Component
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for profile update');
             Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+<<<<<<< HEAD
             Assert::same($this->user_id, SafeStringCastAction::cast($user->id), 'User ID mismatch detected');
+=======
+            Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
+>>>>>>> laraxot/dev
 
             $emailChanged = $user->email !== $validated['email'];
 
@@ -162,7 +173,11 @@ final class ProfileEditVoltComponent extends Component
 
             session()->flash('status', $message);
 
+<<<<<<< HEAD
             if ($emailChanged && $user->email_verified_at === null) {
+=======
+            if ($emailChanged && null === $user->email_verified_at) {
+>>>>>>> laraxot/dev
                 $user->sendEmailVerificationNotification();
             }
         } catch (ValidationException $e) {
@@ -252,7 +267,11 @@ final class ProfileEditVoltComponent extends Component
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for account deletion');
             Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+<<<<<<< HEAD
             Assert::same($this->user_id, SafeStringCastAction::cast($user->id), 'User ID mismatch detected');
+=======
+            Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
+>>>>>>> laraxot/dev
 
             Assert::stringNotEmpty($this->delete_password, 'Password cannot be empty for account deletion');
             $hashedPassword = $user->password;

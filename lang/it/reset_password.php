@@ -17,12 +17,21 @@ return [
         'name' => 'Reset Password',
         'plural' => 'Reset Password',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Autenticazione',
             'description' => 'Accesso, registrazione e credenziali',
         ],
         'label' => 'Reset Password',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Reset Password',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Reset Password',
     'plural_label' => 'Reset Password (Plurale)',

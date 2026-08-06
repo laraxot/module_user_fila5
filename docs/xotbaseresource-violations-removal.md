@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Rimozione Proprietà/Metodi Vietati da XotBaseResource - [DATE]"
 type: concept
@@ -21,6 +22,12 @@ related:
 # Rimozione Proprietà/Metodi Vietati da XotBaseResource - [DATE]
 
 **Status**: ✅ Completato  
+=======
+# Rimozione Proprietà/Metodi Vietati da XotBaseResource - 2026-01-21
+
+**Status**: ✅ Completato  
+**Data**: 2026-01-21
+>>>>>>> laraxot/dev
 
 ## Violazioni Corrette
 
@@ -56,7 +63,11 @@ related:
 5. **PersonalAccessTokenResource**
    - ❌ Rimosso: `protected static ?string $recordTitleAttribute = 'name'`
 
+<<<<<<< HEAD
 ### Modulo ExternalProject
+=======
+### Modulo Quaeris
+>>>>>>> laraxot/dev
 
 6. **ContactResource**
    - ❌ Rimosso: `protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-user-circle'`

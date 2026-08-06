@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module Policies Documentation"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # User Module Policies Documentation
 
 ## Overview
@@ -302,7 +305,11 @@ Test policy integration with Filament resources and controllers.
 
 ## Related Documentation
 
+<<<<<<< HEAD
 - [Main Policies Documentation](../../../../docs/policies_implementation.md)
+=======
+- [Main Policies Documentation](../../../docs/policies_implementation.md)
+>>>>>>> laraxot/dev
 - [User Authentication](./authentication.md)
 - [Permissions and Roles](./permissions.md)
 - [Team Management](./teams.md)

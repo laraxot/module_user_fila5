@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Passport Cluster - Implementazione Necessaria"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Passport Cluster - Implementazione Necessaria
 
 **Data**: 2025-01-22
@@ -210,7 +213,11 @@ class ListOauthClients extends XotBaseListRecords
 
 - [Passport Cluster Resources Pattern](./passport-cluster-resources-pattern.md)
 - [Passport Cluster Summary](./passport-cluster-summary.md)
+<<<<<<< HEAD
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
+=======
+- [Filament Class Extension Rules](../../Xot/docs/filament-class-extension-rules.md)
+>>>>>>> laraxot/dev
 
 ---
 

@@ -5,10 +5,14 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => '密码重置',
+<<<<<<< HEAD
         'group' => [
             'name' => '认证',
             'description' => '登录、注册和凭据',
         ],
+=======
+        'group' => '安全',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-key',
         'sort' => 42,
     ],

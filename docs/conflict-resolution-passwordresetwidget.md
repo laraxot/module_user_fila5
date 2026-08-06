@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Risoluzione Conflitti PasswordResetWidget.php"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto
@@ -77,11 +80,20 @@ Verificare che:
 - Il styling Tailwind sia disponibile nel contesto Filament
 - Altri widget di autenticazione abbiano componenti simili per coerenza
 ## Collegamenti
+<<<<<<< HEAD
 - [User Module Documentation](readme.md)
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
+=======
+- [User Module Documentation](README.md)
+- [Authentication Widgets Guide](auth_widgets.md)
+- [Filament Form Components](filament_form_components.md)
+- [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
+- [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> laraxot/dev
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto
@@ -173,8 +185,17 @@ Verificare che:
 - Altri widget di autenticazione abbiano componenti simili per coerenza
 
 ## Collegamenti
+<<<<<<< HEAD
 - [User Module Documentation](readme.md)
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
 
+=======
+- [User Module Documentation](README.md)
+- [Authentication Widgets Guide](auth_widgets.md)
+- [Filament Form Components](filament_form_components.md)
+- [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
+
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> laraxot/dev

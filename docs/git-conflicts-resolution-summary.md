@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Risoluzione Conflitti Git - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - Modulo User
 
 ## Data Risoluzione
@@ -55,7 +58,11 @@ related:
 - `docs/README.md` - Documentazione principale
 - `docs/baseuser.md` - Documentazione BaseUser
 - `docs/registration-widget.md` - Widget registrazione
+<<<<<<< HEAD
 - `docs/phpstan-fixes-8.md` - Fix PHPStan
+=======
+- `docs/phpstan_fixes.md` - Fix PHPStan
+>>>>>>> laraxot/dev
 - `docs/filament/widgets/registration-widget.md` - Widget Filament
 
 ## Modifiche Applicate
@@ -121,10 +128,17 @@ Funzionalità team includono:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Documentazione Root User](../../../../docs/project/modules/user.md)
 - [BaseUser Documentation](./baseuser.md)
 - [Registration Widget](./registration-widget.md)
 - [PHPStan Fixes](./phpstan-fixes-8.md)
+=======
+- [Documentazione Root User](../../../project_docs/modules/user.md)
+- [BaseUser Documentation](./baseuser.md)
+- [Registration Widget](./registration-widget.md)
+- [PHPStan Fixes](./phpstan_fixes.md)
+>>>>>>> laraxot/dev
 
 ---
 *Aggiornato automaticamente dopo risoluzione conflitti Git*

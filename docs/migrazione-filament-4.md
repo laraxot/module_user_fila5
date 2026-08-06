@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - Migrazione a Filament 4"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # User Module - Migrazione a Filament 4
 
 ## Panoramica User Module

@@ -4,10 +4,14 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
+<<<<<<< HEAD
         'group' => [
             'name' => 'Autenticação',
             'description' => 'Acesso, registo e credenciais',
         ],
+=======
+        'group' => 'Autenticação',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-shield-exclamation',
         'label' => 'Registros de Autenticação',
         'sort' => 5,

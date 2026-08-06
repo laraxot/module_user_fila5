@@ -5,9 +5,14 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthPersonalAccessClientResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class OauthPersonalAccessClientInfolist extends XotBaseResourceInfolist
+=======
+
+class OauthPersonalAccessClientInfolist
+>>>>>>> laraxot/dev
 {
     /**
      * @return array<string, TextEntry>

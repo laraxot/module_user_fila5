@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Laravel Passport Implementation Summary - User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Laravel Passport Implementation Summary - User Module
 
 ## Overview

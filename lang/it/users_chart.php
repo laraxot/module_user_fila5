@@ -12,12 +12,21 @@ return [
         'name' => 'Users Chart',
         'plural' => 'Users Chart',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Utenti',
             'description' => 'Anagrafiche utenti, profili e dispositivi',
         ],
         'label' => 'Users Chart',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Users Chart',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Users Chart',
     'plural_label' => 'Users Chart (Plurale)',

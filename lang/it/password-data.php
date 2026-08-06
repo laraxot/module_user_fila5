@@ -36,12 +36,21 @@ return [
         'name' => 'Password Data',
         'plural' => 'Password Data',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Autenticazione',
             'description' => 'Accesso, registrazione e credenziali',
         ],
         'label' => 'Password Data',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Password Data',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Password Data',
     'plural_label' => 'Password Data (Plurale)',

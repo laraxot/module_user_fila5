@@ -8,6 +8,9 @@ declare(strict_types=1);
  * Ogni file Pest dichiara uses(\Modules\User\Tests\TestCase::class).
  */
 
+<<<<<<< HEAD
 require_once __DIR__.'/../../Xot/tests/XotBasePest.php';
 
+=======
+>>>>>>> laraxot/dev
 // Vietato expect()->extend() qui (PHPStan method.internalClass su PestExpectation).

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Gestione Avanzata dei Conflitti Git"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Gestione Avanzata dei Conflitti Git
 
 ## Approccio Sicuro alla Risoluzione dei Conflitti

@@ -6,10 +6,14 @@ return [
     'navigation' => [
         'name' => 'Utenti',
         'plural' => 'Utenti',
+<<<<<<< HEAD
         'group' => [
             'name' => 'Utenti',
             'description' => 'Anagrafiche utenti, profili e dispositivi',
         ],
+=======
+        'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione degli utenti e dei loro permessi'],
+>>>>>>> laraxot/dev
         'label' => 'Utenti',
         'sort' => 26,
         'icon' => 'ui-user-main',
@@ -111,7 +115,11 @@ return [
         'export_xls' => ['icon' => 'export_xls', 'label' => 'export_xls', 'tooltip' => 'export_xls'],
         'cancel' => ['icon' => 'cancel', 'label' => 'cancel', 'tooltip' => 'cancel'],
         'save' => ['icon' => 'save', 'label' => 'save', 'tooltip' => 'save'],
+<<<<<<< HEAD
         'submit' => ['tooltip' => 'submit', 'icon' => 'submit', 'label' => 'submit'],
+=======
+        'submit' => ['tooltip' => 'submit'],
+>>>>>>> laraxot/dev
         'createAnother' => ['tooltip' => 'createAnother', 'icon' => 'createAnother', 'label' => 'createAnother'],
         'resetColumnManager' => ['tooltip' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'label' => 'resetColumnManager'],
     ],
@@ -208,7 +216,11 @@ return [
     'search_placeholder' => 'Cerca per nome, email o ruolo...',
     'label' => 'user',
     'sections' => [
+<<<<<<< HEAD
         'empty' => ['heading' => '', 'label' => ''],
+=======
+        'empty' => ['heading' => 'empty', 'label' => 'empty'],
+>>>>>>> laraxot/dev
         'worker' => ['label' => 'worker', 'heading' => 'worker'],
     ],
     'plural_label' => 'User (Plurale)',

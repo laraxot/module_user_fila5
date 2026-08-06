@@ -41,10 +41,14 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
+<<<<<<< HEAD
         'group' => [
             'name' => 'نقش‌ها و مجوزها',
             'description' => 'کنترل دسترسی',
         ],
+=======
+        'group' => 'Missing Group',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

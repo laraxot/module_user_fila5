@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Regole per i Namespace Filament"
 type: rule
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Regole per i Namespace Filament
 
 ## Regola 1: Namespace Modulare
@@ -57,12 +60,15 @@ class UserResource extends Resource
 namespace Modules\User\Filament\Pages;
 class Dashboard extends Page
 ## Collegamenti
+<<<<<<< HEAD
 - [Convenzioni Namespace Filament](../../cms/project_docs/convenzioni-namespace-filament.md)
 - [Regole Generali Xot](../../xot/project_docs/readme.md)
 - [Best Practices Filament](../../cms/project_docs/best-practices/filament.md)
 - [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md)
 - [Regole Generali Xot](../../xot/docs/readme.md)
 - [Best Practices Filament](../../cms/docs/best-practices/filament.md)
+=======
+>>>>>>> laraxot/dev
 - [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md)
 - [Regole Generali Xot](../../Xot/project_docs/README.md)
 - [Best Practices Filament](../../Cms/project_docs/best-practices/filament.md)
@@ -136,6 +142,9 @@ class Dashboard extends Page
 - [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md)
 - [Regole Generali Xot](../../Xot/docs/README.md)
 - [Best Practices Filament](../../Cms/docs/best-practices/filament.md)
+<<<<<<< HEAD
 - [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md)
 - [Regole Generali Xot](../../xot/docs/readme.md)
 - [Best Practices Filament](../../cms/docs/best-practices/filament.md)
+=======
+>>>>>>> laraxot/dev

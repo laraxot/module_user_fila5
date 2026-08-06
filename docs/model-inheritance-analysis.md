@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Analisi Ereditarietà Modelli - Modulo User"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Analisi Ereditarietà Modelli - Modulo User
 
 ## Regola Fondamentale

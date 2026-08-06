@@ -18,12 +18,21 @@ return [
         'name' => 'Email',
         'plural' => 'Email',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Autenticazione',
             'description' => 'Accesso, registrazione e credenziali',
         ],
         'label' => 'Email',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Email',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Email',
     'plural_label' => 'Email (Plurale)',

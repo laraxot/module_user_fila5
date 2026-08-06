@@ -5,10 +5,14 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'SSO提供商',
+<<<<<<< HEAD
         'group' => [
             'name' => '认证',
             'description' => '登录、注册和凭据',
         ],
+=======
+        'group' => '认证',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-shield-check',
         'sort' => 41,
     ],

@@ -14,7 +14,10 @@ use Illuminate\Support\Str;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource;
 use Modules\User\Filament\Resources\UserResource;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 
@@ -34,7 +37,11 @@ class ViewOauthDeviceCode extends XotBaseViewRecord
                     'code_grid' => Grid::make(2)
                         ->schema([
                             'id' => TextEntry::make('id')
+<<<<<<< HEAD
                                 ->formatStateUsing(fn (mixed $state): string => Str::limit(SafeStringCastAction::cast($state), 15, '...')),
+=======
+                                ->formatStateUsing(fn (mixed $state): string => Str::limit((string) $state, 15, '...')),
+>>>>>>> laraxot/dev
                             'user_code' => TextEntry::make('user_code'),
                             'client_name' => TextEntry::make('client.name')
                                 ->url(function (mixed $state, $record): ?string {
@@ -75,10 +82,17 @@ class ViewOauthDeviceCode extends XotBaseViewRecord
                         ->formatStateUsing(function (mixed $state): string {
                             if (is_array($state)) {
                                 /* @var array<int|string, mixed> $state */
+<<<<<<< HEAD
                                 return implode(', ', array_map(fn (mixed $item): string => SafeStringCastAction::cast($item), $state));
                             }
 
                             return SafeStringCastAction::cast($state);
+=======
+                                return implode(', ', array_map(fn (mixed $item): string => (string) $item, $state));
+                            }
+
+                            return (string) $state;
+>>>>>>> laraxot/dev
                         })
                         ->columnSpanFull(),
                 ])->columns(1),

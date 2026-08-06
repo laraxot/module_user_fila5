@@ -117,12 +117,21 @@ return [
         'name' => 'Social Providers',
         'plural' => 'Social Providers',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Autenticazione',
             'description' => 'Accesso, registrazione e credenziali',
         ],
         'label' => 'Social Providers',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Social Providers',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Social Providers',
     'plural_label' => 'Social Providers (Plurale)',

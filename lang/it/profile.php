@@ -7,8 +7,13 @@ return [
         'label' => 'Profilo',
         'plural' => 'Profili',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Utenti',
             'description' => 'Anagrafiche utenti, profili e dispositivi',
+=======
+            'label' => 'Gestione Utenti',
+            'description' => 'Gestione dei profili utente',
+>>>>>>> laraxot/dev
         ],
         'icon' => 'user-profile-animated',
         'sort' => 73,

@@ -22,11 +22,20 @@ class TeamInvitationResource extends XotBaseResource
     protected static ?string $model = TeamInvitation::class;
 
     /**
+<<<<<<< HEAD
      * Schema legacy del form: la sorgente di verità è TeamInvitationForm::getFormSchema().
      *
      * @return array<string, Component>
      */
     public static function getFormSchemaOld(): array
+=======
+     * Get the form schema for the resource.
+     *
+     * @return array<string, Component>
+     */
+    #[\Override]
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'team_id' => Select::make('team_id')

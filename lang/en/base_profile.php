@@ -10,8 +10,13 @@ return [
         'name' => 'Profilo',
         'plural' => 'Profili',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Users',
             'description' => 'User records, profiles and devices',
+=======
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione dei profili',
+>>>>>>> laraxot/dev
         ],
         'label' => 'profili',
         'sort' => '31',

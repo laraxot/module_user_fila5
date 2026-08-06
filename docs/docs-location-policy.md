@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Documentazione: Policy Posizione Docs (Modulo User)"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Documentazione: Policy Posizione Docs (Modulo User)
 
 ## Regola

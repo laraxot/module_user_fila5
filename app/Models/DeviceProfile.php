@@ -14,10 +14,17 @@ use Modules\Xot\Contracts\ProfileContract;
  * Extends the base DeviceUser model to add specific functionality.
  *
  * @property ProfileContract|null $creator
+<<<<<<< HEAD
  * @property Device|null $device
  * @property ProfileContract|null $profile
  * @property ProfileContract|null $updater
  * @property User|null $user
+=======
+ * @property Device|null          $device
+ * @property ProfileContract|null $profile
+ * @property ProfileContract|null $updater
+ * @property User|null            $user
+>>>>>>> laraxot/dev
  *
  * @method static Builder<static>|DeviceProfile newModelQuery()
  * @method static Builder<static>|DeviceProfile newQuery()
@@ -29,4 +36,10 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 class DeviceProfile extends DeviceUser {}
+=======
+class DeviceProfile extends DeviceUser
+{
+}
+>>>>>>> laraxot/dev

@@ -12,7 +12,10 @@ use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamUser;
 use Modules\User\Models\Traits\HasTeams;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Contracts\UserContract as XotUserContract;
 use Modules\Xot\Models\Traits\RelationX;
 use Spatie\Permission\Contracts\Permission;
@@ -21,6 +24,7 @@ use Spatie\Permission\Contracts\Role;
 /**
  * Stub model for HasTeams trait unit tests; satisfies PHPStan in-context analysis.
  *
+<<<<<<< HEAD
  * @property string $id
  * @property int|null $current_team_id
  * @property TeamContract|null $currentTeam
@@ -29,6 +33,16 @@ use Spatie\Permission\Contracts\Role;
  * @property EloquentCollection<int, TeamUser> $teamUsers
  * @property XotUserContract|null $owner
  * @property int $total_members
+=======
+ * @property string                            $id
+ * @property int|null                          $current_team_id
+ * @property TeamContract|null                 $currentTeam
+ * @property EloquentCollection<int, Team>     $membershipTeams
+ * @property EloquentCollection<int, Team>     $ownedTeams
+ * @property EloquentCollection<int, TeamUser> $teamUsers
+ * @property XotUserContract|null              $owner
+ * @property int                               $total_members
+>>>>>>> laraxot/dev
  */
 class MockUserWithTeams extends Model
 {
@@ -46,11 +60,19 @@ class MockUserWithTeams extends Model
 
     public function getKey(): string
     {
+<<<<<<< HEAD
         return SafeStringCastAction::cast($this->attributes['id'] ?? 'mock-user-1');
     }
 
     /**
      * @param  string|int|Permission  $permission
+=======
+        return (string) ($this->attributes['id'] ?? 'mock-user-1');
+    }
+
+    /**
+     * @param string|int|Permission $permission
+>>>>>>> laraxot/dev
      */
     public function hasPermissionTo($permission, ?string $guardName = null): bool
     {
@@ -58,7 +80,11 @@ class MockUserWithTeams extends Model
     }
 
     /**
+<<<<<<< HEAD
      * @param  string|int|array<array-key, string|int>|Role|\BackedEnum  $roles
+=======
+     * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
+>>>>>>> laraxot/dev
      */
     public function hasRole($roles, ?string $guard = null): bool
     {

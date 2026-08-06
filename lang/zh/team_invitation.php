@@ -5,10 +5,14 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => '团队邀请',
+<<<<<<< HEAD
         'group' => [
             'name' => '团队与租户',
             'description' => '组织、邀请和成员',
         ],
+=======
+        'group' => '团队',
+>>>>>>> laraxot/dev
         'icon' => 'heroicon-o-user-plus',
         'sort' => 37,
     ],

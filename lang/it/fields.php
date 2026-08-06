@@ -27,12 +27,21 @@ return [
         'name' => 'Fields',
         'plural' => 'Fields',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Impostazioni',
             'description' => 'Configurazione del modulo utenti',
         ],
         'label' => 'Fields',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Fields',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Fields',
     'plural_label' => 'Fields (Plurale)',

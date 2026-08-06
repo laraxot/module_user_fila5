@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Models Analysis - User Module"
 type: concept
@@ -18,6 +19,8 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Models Analysis - User Module
 
 ## Factory e Seeder Status

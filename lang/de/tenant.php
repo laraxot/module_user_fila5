@@ -7,8 +7,13 @@ return [
         'name' => 'Tenant',
         'plural' => 'Tenants',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Teams und Mandanten',
             'description' => 'Organisationen, Einladungen und Mitgliedschaften',
+=======
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione dei tenant e delle loro configurazioni',
+>>>>>>> laraxot/dev
         ],
         'label' => 'tenant',
         'sort' => '30',

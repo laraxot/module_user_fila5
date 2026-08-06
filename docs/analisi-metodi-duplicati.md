@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Analisi Metodi Duplicati - Modulo User"
 type: concept
@@ -18,11 +19,17 @@ related:
   - "./actions-path-convention.md"
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Analisi Metodi Duplicati - Modulo User
 
 ## Riferimento Principale
 
+<<<<<<< HEAD
 📚 **Documento Completo:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
+=======
+📚 **Documento Completo:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
+>>>>>>> laraxot/dev
 
 ## Stato del Modulo User
 
@@ -160,8 +167,13 @@ protected function registerObservers(): void
 
 ## Link Correlati
 
+<<<<<<< HEAD
 - 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
 - 📖 [Modulo Xot - Classi Base](../../xot/docs/analisi-metodi-duplicati.md)
+=======
+- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
+- 📖 [Modulo Xot - Classi Base](../../Xot/docs/analisi-metodi-duplicati.md)
+>>>>>>> laraxot/dev
 - 📖 [Architettura User](./core/architecture.md)
 - 📖 [Regole Business Logic](./business-logic-deep-dive.md)
 

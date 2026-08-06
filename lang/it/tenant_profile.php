@@ -34,12 +34,21 @@ return [
         'name' => 'Tenant Profile',
         'plural' => 'Tenant Profile',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Utenti',
             'description' => 'Anagrafiche utenti, profili e dispositivi',
         ],
         'label' => 'Tenant Profile',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
+=======
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Tenant Profile',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+>>>>>>> laraxot/dev
     ],
     'label' => 'Tenant Profile',
     'plural_label' => 'Tenant Profile (Plurale)',

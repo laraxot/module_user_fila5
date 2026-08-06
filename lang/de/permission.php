@@ -7,8 +7,13 @@ return [
         'name' => 'Permessi',
         'plural' => 'Permessi',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Rollen und Berechtigungen',
             'description' => 'Zugriffssteuerung',
+=======
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione dei permessi di sistema',
+>>>>>>> laraxot/dev
         ],
         'label' => 'Permessi',
         'sort' => '44',

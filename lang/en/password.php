@@ -7,8 +7,12 @@ return [
         'name' => 'Password',
         'plural' => 'Passwords',
         'group' => [
+<<<<<<< HEAD
             'name' => 'Authentication',
             'description' => 'Sign-in, registration and credentials',
+=======
+            'name' => 'Admin',
+>>>>>>> laraxot/dev
         ],
     ],
     'fields' => [

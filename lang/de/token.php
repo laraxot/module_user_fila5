@@ -7,8 +7,13 @@ return [
         'name' => 'Token',
         'plural' => 'Tokens',
         'group' => [
+<<<<<<< HEAD
             'name' => 'OAuth',
             'description' => 'Clients, Token und Passport-API',
+=======
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione dei token di accesso',
+>>>>>>> laraxot/dev
         ],
         'label' => 'token',
         'sort' => '29',
