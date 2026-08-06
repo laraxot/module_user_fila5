@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Actions;
+namespace Modules\User\actions;
 
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\User;
