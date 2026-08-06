@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Errori Comuni in Volt e Soluzioni"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Errori Comuni in Volt e Soluzioni
 
 ## VoltDirectiveMissingException
@@ -208,7 +205,4 @@ class LogoutPage
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](../filament_best_practices.md)
 - [Routing Best Practices](../ROUTING_BEST_PRACTICES.md) 
-<<<<<<< HEAD
 - [Routing Best Practices](../routing-best-practices-2.md) 
-=======
->>>>>>> laraxot/dev

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Moderazione Dentista dal Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Moderazione Dentista dal Modulo User
 
 ## Premessa

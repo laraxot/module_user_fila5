@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Correzione Violazione DRY: safeStringCast"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Correzione Violazione DRY: safeStringCast
 
 ## Problema Identificato
@@ -83,16 +80,9 @@ Tutte le funzioni `safeStringCast()` private sono state rimosse dai file, elimin
 3. **Tooling**: Implementare controlli automatici per violazioni DRY
 4. **Training**: Formare il team sulle nuove regole DRY
 ## Collegamenti
-<<<<<<< HEAD
 - [Regola DRY Aggiornata](../.cursor/rules/dry-actions-rules.md)
 - [SafeStringCastAction](../../Xot/app/Actions/String/SafeStringCastAction.php)
 - [Documentazione Actions](../../xot/docs/actions.md)
 - [Documentazione Actions](../../xot/project_docs/actions.md)
-=======
-- [Regola DRY Aggiornata](../.cursor/rules/DRY-actions-rules.md)
-- [SafeStringCastAction](../../Xot/app/Actions/String/SafeStringCastAction.php)
-- [Documentazione Actions](../../Xot/docs/actions.md)
-- [Documentazione Actions](../../Xot/project_docs/actions.md)
->>>>>>> laraxot/dev
 *Data correzione: 2025-01-06*
 *Stato: ✅ Completato*

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Jetstream vs Laraxot: Filosofia, Religione e Politica dei Team"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Jetstream vs Laraxot: Filosofia, Religione e Politica dei Team
 
 ## 🌟 **LA RELIGIONE JETSTREAM**

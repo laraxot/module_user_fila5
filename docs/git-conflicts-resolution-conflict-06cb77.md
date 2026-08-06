@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
 
 ## Data
@@ -30,19 +27,11 @@ related:
 Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i file modificati e le decisioni prese per migliorare la stabilità del sistema.
 
 ## Collegamenti correlati
-<<<<<<< HEAD
 - [Indice documentazione User](/laravel/modules/user/docs/index.md)
 - [README User](/laravel/modules/user/docs/readme.md)
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
-=======
-- [Indice documentazione User](/laravel/Modules/User/docs/index.md)
-- [README User](/laravel/Modules/User/docs/README.md)
-- [Auth Components Best Practices](/laravel/Modules/User/docs/auth_components_best_practices.md)
-- [Filament Widgets Structure](/laravel/Modules/User/docs/widgets_structure.md)
-- [BaseUser Documentation](/laravel/Modules/User/docs/BaseUser.md)
->>>>>>> laraxot/dev
 
 ## File Risolti
 
@@ -326,17 +315,10 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - **Tipizzazione**: PHPDoc rigorosi per conformità PHPStan
 
 ### **Documentazione Aggiornata:**
-<<<<<<< HEAD
 - [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
 - [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
-=======
-- [widgets_structure.md](./widgets_structure.md) - Regole per widget structure
-- [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
-- [path_conventions.md](./path_conventions.md) - Convenzioni percorsi
-- [volt_blade_implementation.md](./volt_blade_implementation.md) - View patterns
->>>>>>> laraxot/dev
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Registrazione Odontoiatra (Doctor)"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Registrazione Odontoiatra (Doctor)
 
 ## Panoramica

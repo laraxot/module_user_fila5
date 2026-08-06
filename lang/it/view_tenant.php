@@ -12,21 +12,12 @@ return [
         'name' => 'View Tenant',
         'plural' => 'View Tenant',
         'group' => [
-<<<<<<< HEAD
             'name' => 'Team e tenant',
             'description' => 'Organizzazioni, inviti e appartenenze',
         ],
         'label' => 'View Tenant',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
-=======
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'View Tenant',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
->>>>>>> laraxot/dev
     ],
     'label' => 'View Tenant',
     'plural_label' => 'View Tenant (Plurale)',

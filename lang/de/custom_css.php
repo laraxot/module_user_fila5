@@ -39,14 +39,10 @@ return [
         ],
     ],
     'navigation' => [
-<<<<<<< HEAD
         'group' => [
             'name' => 'Erscheinungsbild',
             'description' => 'Themes, Farben und Anpassungen',
         ],
-=======
-        'group' => 'Benutzerdefiniertes CSS',
->>>>>>> laraxot/dev
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',

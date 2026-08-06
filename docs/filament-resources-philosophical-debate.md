@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Filament Resources: Furious Philosophical Debate"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Filament Resources: Furious Philosophical Debate
 
 ## Data: 2025-01-02
@@ -234,9 +231,5 @@ vs
 ## Collegamenti
 
 - [Filament Resources Coverage Analysis](./filament-resources-coverage-analysis.md)
-<<<<<<< HEAD
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
-=======
-- [Filosofia Modulo User](./FILOSOFIA_MODULO_USER.md)
->>>>>>> laraxot/dev
 - [Filament Best Practices](./filament-best-practices.md)

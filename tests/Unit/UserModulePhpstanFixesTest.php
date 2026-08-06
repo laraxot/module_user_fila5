@@ -14,20 +14,13 @@ use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-=======
->>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 it('password data can be instantiated', function (): void {
-<<<<<<< HEAD
     $passwordData = new PasswordData;
-=======
-    $passwordData = new PasswordData();
->>>>>>> laraxot/dev
 
     Assert::assertInstanceOf(PasswordData::class, $passwordData);
     Assert::assertSame(5, $passwordData->otp_expiration_minutes);
@@ -105,11 +98,7 @@ it('password data get helper text works', function (): void {
 });
 
 it('password data get form components returns array', function (): void {
-<<<<<<< HEAD
     $passwordData = new PasswordData;
-=======
-    $passwordData = new PasswordData();
->>>>>>> laraxot/dev
 
     // Smoke tests: methods should be callable without throwing.
     $passwordData->getPasswordFormComponent('password');
@@ -126,11 +115,7 @@ it('events can be instantiated', function (): void {
     $socialiteFactory = SocialiteUserFactory::new();
     \assert($socialiteFactory instanceof Factory);
     $socialiteUser = $socialiteFactory->create([
-<<<<<<< HEAD
         'user_id' => SafeStringCastAction::cast($owner->getKey()),
-=======
-        'user_id' => (string) $owner->getKey(),
->>>>>>> laraxot/dev
         'provider' => 'github',
         'provider_id' => 'provider-'.uniqid(),
     ]);
@@ -156,11 +141,7 @@ it('events have dispatchable trait', function (): void {
     $socialiteFactory = SocialiteUserFactory::new();
     \assert($socialiteFactory instanceof Factory);
     $socialiteUser = $socialiteFactory->create([
-<<<<<<< HEAD
         'user_id' => SafeStringCastAction::cast($owner->getKey()),
-=======
-        'user_id' => (string) $owner->getKey(),
->>>>>>> laraxot/dev
         'provider' => 'github',
         'provider_id' => 'provider-'.uniqid(),
     ]);
@@ -177,11 +158,7 @@ it('password data static make method exists', function (): void {
 });
 
 it('password data get validation messages method exists', function (): void {
-<<<<<<< HEAD
     $passwordData = new PasswordData;
-=======
-    $passwordData = new PasswordData();
->>>>>>> laraxot/dev
 
     $passwordData->getValidationMessages();
 });

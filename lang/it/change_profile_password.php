@@ -6,14 +6,10 @@ return [
     'navigation' => [
         'label' => 'Password Profilo',
         'plural_label' => 'Password Profilo',
-<<<<<<< HEAD
         'group' => [
             'name' => 'Autenticazione',
             'description' => 'Accesso, registrazione e credenziali',
         ],
-=======
-        'group' => 'Profilo',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-lock-closed',
         'sort' => 12,
     ],

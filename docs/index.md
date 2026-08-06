@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Module Documentation"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # User Module Documentation
 
 ## Overview
@@ -69,7 +66,6 @@ This document serves as the central index for the User module, providing guidanc
 - Update this index if new features or significant changes are introduced to the User module.
 
 ## Links to Related Documentation
-<<<<<<< HEAD
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 - [Profile Management](./profile-management-2.md)
@@ -81,26 +77,16 @@ This document serves as the central index for the User module, providing guidanc
 - [Routing Best Practices](./routing-best-practices.md)
 - [Session Management](./session-management.md)
 - [Passport OAuth Wrapper Conformance](./passport-oauth-wrapper-conformance.md)
-=======
-- [BaseUser Model](./BaseUser.md)
-- [Authentication Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
-- [Profile Management](./PROFILE_MANAGEMENT.md)
-- [Routing Best Practices](./ROUTING_BEST_PRACTICES.md)
-- [Session Management](./SESSION_MANAGEMENT.md)
->>>>>>> laraxot/dev
 
 ## Sottocartelle
 
 ### Models
-<<<<<<< HEAD
 - [Index](./models/index.md) - Indice della documentazione sui modelli
 - [Documentazione Traits](./traits/index.md) - Documentazione sui trait utilizzati
 
 ### Folio e Blade
 - [Documentazione Blade](./blade/index.md) - Documentazione sui template Blade
 - [Componenti](./components/index.md) - Documentazione sui componenti
-=======
->>>>>>> laraxot/dev
 - [Index](./Models/INDEX.md) - Indice della documentazione sui modelli
 - [Documentazione Traits](./traits/INDEX.md) - Documentazione sui trait utilizzati
 
@@ -114,13 +100,10 @@ This document serves as the central index for the User module, providing guidanc
 ## Note sulla Manutenzione
 Questa documentazione viene aggiornata regolarmente. Prima di apportare modifiche al codice, consultare la documentazione pertinente e aggiornare i documenti correlati.
 
-<<<<<<< HEAD
 
 # Indice Documentazione User
 
 - [filament-best-practices.mdc](./filament-best-practices.mdc) — **Regola fondamentale:** chi estende XotBaseResource NON deve dichiarare $navigationGroup, $navigationLabel, né il metodo statico table(Table $table): Table. Seguire sempre questa regola per evitare errori di override e garantire coerenza tra i moduli.
-=======
->>>>>>> laraxot/dev
 Ultimo aggiornamento: 14 Maggio 2025
 
 # Indice Documentazione User
@@ -131,10 +114,5 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 ## Modelli e Database
 
-<<<<<<< HEAD
 - [Model Inheritance Analysis](./model-inheritance-analysis-4.md) — Analisi completa della gerarchia di ereditarietà dei modelli
 - [Model Inheritance Fixes](./model-inheritance-fixes-4.md) — Riepilogo delle correzioni applicate ai modelli (15 Ottobre 2025)
-=======
-- [Model Inheritance Analysis](./MODEL_INHERITANCE_ANALYSIS.md) — Analisi completa della gerarchia di ereditarietà dei modelli
-- [Model Inheritance Fixes](./MODEL_INHERITANCE_FIXES.md) — Riepilogo delle correzioni applicate ai modelli (15 Ottobre 2025)
->>>>>>> laraxot/dev

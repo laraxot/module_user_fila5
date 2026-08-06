@@ -6,10 +6,8 @@ docs/screenshots/*.png
 resources/img/*.png
 resources/favicon.png
 phpstan*
-<<<<<<< HEAD
-=======
 
 # MODULE ROOT FORBIDDEN DIRS
 _docs
 workbench
->>>>>>> laraxot/dev
+graphify-out/

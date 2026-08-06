@@ -34,21 +34,12 @@ return [
         'name' => 'Create Oauth Client',
         'plural' => 'Create Oauth Client',
         'group' => [
-<<<<<<< HEAD
             'name' => 'OAuth',
             'description' => 'Client, token e API Passport',
         ],
         'label' => 'Create Oauth Client',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
-=======
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Create Oauth Client',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
->>>>>>> laraxot/dev
     ],
     'label' => 'Create Oauth Client',
     'plural_label' => 'Create Oauth Client (Plurale)',

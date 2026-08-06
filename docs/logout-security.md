@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Sicurezza nel Processo di Logout"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Sicurezza nel Processo di Logout
 
 ## Analisi della Sicurezza
@@ -193,7 +190,6 @@ Log::channel('auth')->info('Logout effettuato', [
 - Tracking sessioni anomale
 
 ## Collegamenti Correlati
-<<<<<<< HEAD
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management-2.md)
 - [Documentazione Volt](./volt-blade-implementation-3.md)
@@ -202,9 +198,3 @@ Log::channel('auth')->info('Logout effettuato', [
 - [Gestione Sessione](./session-management.md)
 - [Documentazione Volt](./volt-blade-implementation.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
-=======
-- [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
-- [Gestione Sessione](./SESSION_MANAGEMENT.md)
-- [Documentazione Volt](./VOLT_BLADE_IMPLEMENTATION.md)
-- [Tema One Documentation](../../Themes/One/docs/README.md) 
->>>>>>> laraxot/dev

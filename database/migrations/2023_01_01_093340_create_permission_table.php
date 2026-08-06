@@ -4,12 +4,8 @@ declare(strict_types=1);
 
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
-=======
-return new class extends XotBaseMigration {
->>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -19,11 +15,7 @@ return new class extends XotBaseMigration {
         $columnNames = config('permission.column_names');
         $teams = config('permission.teams');
 
-<<<<<<< HEAD
         if (! is_array($tableNames) || $tableNames === []) {
-=======
-        if (! is_array($tableNames) || [] === $tableNames) {
->>>>>>> laraxot/dev
             throw new Exception('Error: config/permission.php not loaded. Run [php artisan config:clear] and try again.');
         }
 
@@ -34,11 +26,7 @@ return new class extends XotBaseMigration {
         }
 
         $cache_store = config('permission.cache.store');
-<<<<<<< HEAD
         $store = is_string($cache_store) && $cache_store !== 'default' ? $cache_store : null;
-=======
-        $store = is_string($cache_store) && 'default' !== $cache_store ? $cache_store : null;
->>>>>>> laraxot/dev
 
         $cache_key = config('permission.cache.key');
 

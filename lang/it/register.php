@@ -6,14 +6,10 @@ return [
     'navigation' => [
         'label' => 'Registrazione',
         'plural_label' => 'Registrazione',
-<<<<<<< HEAD
         'group' => [
             'name' => 'Autenticazione',
             'description' => 'Accesso, registrazione e credenziali',
         ],
-=======
-        'group' => 'Autenticazione',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-user-plus',
         'sort' => 10,
     ],

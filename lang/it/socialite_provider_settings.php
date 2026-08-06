@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-<<<<<<< HEAD
         'name' => 'Provider Socialite',
         'plural' => 'Provider Socialite',
         'group' => [
@@ -14,8 +13,5 @@ return [
         'label' => 'Provider Socialite',
         'sort' => 30,
         'icon' => 'heroicon-o-key',
-=======
-        'group' => 'socialite provider settings.navigation',
->>>>>>> laraxot/dev
     ],
 ];

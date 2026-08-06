@@ -11,13 +11,8 @@ return [
         'name' => 'Utenti',
         'plural' => 'Utenti',
         'group' => [
-<<<<<<< HEAD
             'name' => 'Utenti',
             'description' => 'Anagrafiche utenti, profili e dispositivi',
-=======
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione degli utenti e dei loro permessi',
->>>>>>> laraxot/dev
         ],
         'label' => 'Utenti',
         'sort' => 26,

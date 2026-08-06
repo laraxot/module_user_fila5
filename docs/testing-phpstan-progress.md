@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Module - PHPStan Testing Progress"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # User Module - PHPStan Testing Progress
 
 **Date**: 2025-12-15

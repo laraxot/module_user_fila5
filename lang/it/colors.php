@@ -50,11 +50,7 @@ return [
         'plural' => 'Colori',
         'group' => [
             'name' => 'Aspetto',
-<<<<<<< HEAD
             'description' => 'Temi, colori e personalizzazioni',
-=======
-            'description' => 'Personalizzazione dell\'aspetto del sistema',
->>>>>>> laraxot/dev
         ],
         'label' => 'Colori',
         'sort' => 13,

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi Metodi Duplicati - Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Analisi Metodi Duplicati - Modulo User
 
 **Data Generazione**: 2025-10-15 06:41:17

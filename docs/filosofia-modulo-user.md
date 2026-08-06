@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi Approfondita del Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Analisi Approfondita del Modulo User
 
 > **Generato**: 2025-12-24
@@ -496,9 +493,5 @@ BaseUser implements:
 
 - [Spatie Permission Documentation](https://spatie.be/docs/laravel-permission)
 - [Laravel Passport Documentation](https://laravel.com/docs/passport)
-<<<<<<< HEAD
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md)
-=======
-- [BUSINESS_LOGIC_DEEP_DIVE.md](./BUSINESS_LOGIC_DEEP_DIVE.md)
->>>>>>> laraxot/dev
 - [docs/_integration/spatie-permissions.md](./_integration/spatie-permissions.md)

@@ -28,21 +28,12 @@ return [
         'name' => 'Filament Shield',
         'plural' => 'Filament Shield',
         'group' => [
-<<<<<<< HEAD
             'name' => 'Ruoli e permessi',
             'description' => 'Controllo degli accessi',
         ],
         'label' => 'Filament Shield',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
-=======
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Filament Shield',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
->>>>>>> laraxot/dev
     ],
     'label' => 'Filament Shield',
     'plural_label' => 'Filament Shield (Plurale)',

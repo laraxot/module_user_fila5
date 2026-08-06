@@ -151,11 +151,7 @@ class OauthAccessTokenResource extends XotBaseResource
     /**
      * @return array<string, Component>
      */
-<<<<<<< HEAD
     public static function getFormSchemaOld(): array
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'oauth_access_token_info' => Section::make('OAuth Access Token Information')

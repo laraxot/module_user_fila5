@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Actions Structure"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Actions Structure
 
 ## Directory Structure
@@ -94,15 +91,9 @@ class DeleteUserAction
 
 ## Documentazione Correlata
 
-<<<<<<< HEAD
 - [Path Conventions](./path-conventions-2.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)
 - [Module Structure](./module-structure-2.md)
-=======
-- [Path Conventions](./PATH_CONVENTIONS.md)
-- [Directory Structure Checklist](./DIRECTORY_STRUCTURE_CHECKLIST.md)
-- [Module Structure](./MODULE_STRUCTURE.md)
->>>>>>> laraxot/dev
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)
 # Actions Structure
 
@@ -177,13 +168,7 @@ class DeleteUserAction
 
 ## Documentazione Correlata
 
-<<<<<<< HEAD
 - [Path Conventions](./path-conventions-2.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)
 - [Module Structure](./module-structure-2.md)
-=======
-- [Path Conventions](./PATH_CONVENTIONS.md)
-- [Directory Structure Checklist](./DIRECTORY_STRUCTURE_CHECKLIST.md)
-- [Module Structure](./MODULE_STRUCTURE.md)
->>>>>>> laraxot/dev
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)

@@ -50,14 +50,10 @@ return [
     'navigation' => [
         'sort' => 80,
         'label' => 'Permessi',
-<<<<<<< HEAD
         'group' => [
             'name' => 'Ruoli e permessi',
             'description' => 'Controllo degli accessi',
         ],
-=======
-        'group' => 'Sicurezza',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-shield-check',
     ],
     'label' => 'Permission',

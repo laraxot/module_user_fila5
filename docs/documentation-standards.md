@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Standard di Documentazione"
 type: rule
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Standard di Documentazione
 
 ## Convenzioni di Naming

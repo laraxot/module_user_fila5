@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Pattern di Ereditarietà per Pacchetti Esterni"
 type: pattern
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Pattern di Ereditarietà per Pacchetti Esterni
 
 ## 📋 Panoramica
@@ -164,16 +161,9 @@ use RelationX;  // ✅ OK - Enhancement Laraxot
 - [Filosofia Spatie Permission](./spatie-permission-philosophy.md)
 - [Architettura Modelli](../Xot/docs/models/model-architecture.md)
 - [Regole Critiche Architettura](../Xot/docs/critical-architecture-rules.md)
-<<<<<<< HEAD
 - [Architettura Modelli](../xot/docs/models/model-architecture.md)
 - [Regole Critiche Architettura](../xot/docs/critical-architecture-rules.md)
 
 ---
 
 *Pattern verificato e documentato: 2025-01-XX*
-=======
-
----
-
-*Pattern verificato e documentato: 2025-01-XX*
->>>>>>> laraxot/dev

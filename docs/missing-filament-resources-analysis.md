@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Missing Filament Resources Analysis - User Module"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Missing Filament Resources Analysis - User Module
 
 ## 📋 Executive Summary

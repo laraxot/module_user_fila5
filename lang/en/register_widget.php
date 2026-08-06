@@ -5,13 +5,8 @@ declare(strict_types=1);
 return [
     'sections' => [
         'empty' => [
-<<<<<<< HEAD
             'label' => '',
             'heading' => '',
-=======
-            'label' => 'empty',
-            'heading' => 'empty',
->>>>>>> laraxot/dev
         ],
     ],
     'fields' => [
@@ -88,14 +83,10 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-<<<<<<< HEAD
         'group' => [
             'name' => 'Authentication',
             'description' => 'Sign-in, registration and credentials',
         ],
-=======
-        'group' => 'Missing Group',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

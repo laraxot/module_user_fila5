@@ -1,3 +1,23 @@
+---
+title: "PHPStan Level 10 Errors Resolution Roadmap - User Module"
+type: concept
+tags: [phpstan, errors, resolution, roadmap]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-errors-resolution-roadmap phpstan level 10 errors resolution roadmap - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # PHPStan Level 10 Errors Resolution Roadmap - User Module
 
 **Data**: 2025-01-27  
@@ -141,10 +161,10 @@ public function clients();
 
 ## 📚 Riferimenti
 
-- [Filament Class Extension Rules](../../Xot/docs/filament-class-extension-rules.md)
-- [PHPStan Code Quality Guide](../../Xot/docs/phpstan-code-quality-guide.md)
-- [Passport Integration](../../User/docs/passport-integration.md)
-- [Vendor Contract Patterns](../../Xot/docs/development/vendor-contract-patterns.md)
+- [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
+- [PHPStan Code Quality Guide](../../xot/docs/phpstan-code-quality-guide.md)
+- [Passport Integration](../../user/docs/passport-integration.md)
+- [Vendor Contract Patterns](../../xot/docs/development/vendor-contract-patterns.md)
 
 ---
 
@@ -197,4 +217,3 @@ Tutti gli errori sono stati corretti:
 3. **PHPMD**:
     - Aggiunto `@SuppressWarnings` per `StaticAccess` e `CouplingBetweenObjects` in `PassportServiceProvider`.
 
-*Ultimo aggiornamento: 2026-02-02*

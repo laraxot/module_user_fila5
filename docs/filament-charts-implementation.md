@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Filament Installation and Chart Widget Implementation Guide"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Filament Installation and Chart Widget Implementation Guide
 
 ## Overview

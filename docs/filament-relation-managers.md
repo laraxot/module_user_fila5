@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Filament Relation Managers nel Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Filament Relation Managers nel Modulo User
 
 ## Struttura dei Relation Managers
@@ -115,7 +112,6 @@ use Filament\Tables\Columns\TextColumn;
 - Mantenere una struttura coerente in tutti i RelationManager
 ## Riferimenti
 - [Documentazione Filament RelationManager](https://filamentphp.com/project_docs/tables#relation-managers)
-<<<<<<< HEAD
 - [XotBaseRelationManager](../xot/project_docs/filament-relation-managers.md)
 - [Sistema di Traduzione](../xot/project_docs/translation-system.md)
 - [Best Practices Filament](../xot/project_docs/filament-best-practices.md)
@@ -123,15 +119,6 @@ use Filament\Tables\Columns\TextColumn;
 - [XotBaseRelationManager](../xot/docs/filament-relation-managers.md)
 - [Sistema di Traduzione](../xot/docs/translation-system.md)
 - [Best Practices Filament](../xot/docs/filament-best-practices.md)
-=======
-- [XotBaseRelationManager](../Xot/project_docs/filament-relation-managers.md)
-- [Sistema di Traduzione](../Xot/project_docs/translation-system.md)
-- [Best Practices Filament](../Xot/project_docs/filament-best-practices.md)
-- [Documentazione Filament RelationManager](https://filamentphp.com/docs/tables#relation-managers)
-- [XotBaseRelationManager](../Xot/docs/filament-relation-managers.md)
-- [Sistema di Traduzione](../Xot/docs/translation-system.md)
-- [Best Practices Filament](../Xot/docs/filament-best-practices.md)
->>>>>>> laraxot/dev
 # Filament Relation Managers nel Modulo User
 
 ## Struttura dei Relation Managers
@@ -305,12 +292,6 @@ class TeamsRelationManager extends XotBaseRelationManager
 ## Riferimenti
 
 - [Documentazione Filament RelationManager](https://filamentphp.com/docs/tables#relation-managers)
-<<<<<<< HEAD
 - [XotBaseRelationManager](../xot/docs/filament-relation-managers.md)
 - [Sistema di Traduzione](../xot/docs/translation-system.md)
 - [Best Practices Filament](../xot/docs/filament-best-practices.md)
-=======
-- [XotBaseRelationManager](../Xot/docs/filament-relation-managers.md)
-- [Sistema di Traduzione](../Xot/docs/translation-system.md)
-- [Best Practices Filament](../Xot/docs/filament-best-practices.md)
->>>>>>> laraxot/dev

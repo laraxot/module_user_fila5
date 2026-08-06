@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Colli di Bottiglia e Soluzioni - Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Colli di Bottiglia e Soluzioni - Modulo User
 
 ## Panoramica
@@ -432,7 +429,6 @@ class AuthLogAnalyticsService
 Implementando queste soluzioni, il modulo User potrà superare i principali colli di bottiglia e migliorare significativamente le performance dell'applicazione. È consigliabile implementare le soluzioni in modo incrementale, misurando l'impatto di ciascuna modifica per garantire miglioramenti effettivi.
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
-<<<<<<< HEAD
 - [Best Practices Filament](./filament-best-practices.md)
 - [Best Practices Widget](./best-practices/filament-widgets.md)
 - [Struttura Moduli](../xot/docs/module-structure-2.md)
@@ -486,58 +482,3 @@ Implementando queste soluzioni, il modulo User potrà superare i principali coll
 * [bottlenecks.md](../../activity/project_docs/bottlenecks.md)
 * [bottlenecks.md](../../patient/project_docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../cms/project_docs/bottlenecks.md)
-=======
-- [Best Practices Filament](./FILAMENT_BEST_PRACTICES.md)
-- [Best Practices Widget](./best-practices/filament-widgets.md)
-- [Struttura Moduli](../Xot/docs/MODULE_STRUCTURE.md)
-## Collegamenti tra versioni di BOTTLENECKS.md
-* [BOTTLENECKS.md](../../../Xot/docs/BOTTLENECKS.md)
-* [BOTTLENECKS.md](../../../User/docs/BOTTLENECKS.md)
-* [BOTTLENECKS.md](../../../Media/docs/BOTTLENECKS.md)
-* [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)
-## Collegamenti tra versioni di bottlenecks.md
-* [bottlenecks.md](../../../../bashscripts/docs/bottlenecks.md)
-* [bottlenecks.md](../../Chart/docs/bottlenecks.md)
-* [bottlenecks.md](../../Chart/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Gdpr/docs/bottlenecks.md)
-* [bottlenecks.md](../../Gdpr/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Xot/docs/bottlenecks.md)
-* [bottlenecks.md](../../Xot/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Xot/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../Dental/docs/bottlenecks.md)
-* [bottlenecks.md](roadmap/bottlenecks.md)
-* [bottlenecks.md](../../UI/docs/bottlenecks.md)
-* [bottlenecks.md](../../UI/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../Lang/docs/bottlenecks.md)
-* [bottlenecks.md](../../Lang/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Job/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Media/docs/bottlenecks.md)
-* [bottlenecks.md](../../Media/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Activity/docs/bottlenecks.md)
-* [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
-- [Struttura Moduli](../Xot/project_docs/MODULE_STRUCTURE.md)
-* [BOTTLENECKS.md](../../../Xot/project_docs/BOTTLENECKS.md)
-* [BOTTLENECKS.md](../../../User/project_docs/BOTTLENECKS.md)
-* [BOTTLENECKS.md](../../../Media/project_docs/BOTTLENECKS.md)
-* [BOTTLENECKS.md](../../../Cms/project_docs/BOTTLENECKS.md)
-* [bottlenecks.md](../../../../bashscripts/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../Chart/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../Chart/project_docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Gdpr/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../Gdpr/project_docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Xot/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../Xot/project_docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Xot/project_docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../Dental/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../UI/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../UI/project_docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../Lang/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../Lang/project_docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Job/project_docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Media/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../Media/project_docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Activity/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../Patient/project_docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../Cms/project_docs/bottlenecks.md)
->>>>>>> laraxot/dev

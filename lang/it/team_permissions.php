@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-<<<<<<< HEAD
         'id' => ['label' => 'id'],
         'uuid' => ['label' => 'uuid'],
         'team_id' => ['label' => 'team_id'],
@@ -18,37 +17,5 @@ return [
     ],
     'actions' => [
         'delete' => ['tooltip' => 'delete'],
-=======
-        'id' => [
-            'label' => 'id',
-        ],
-        'uuid' => [
-            'label' => 'uuid',
-        ],
-        'team_id' => [
-            'label' => 'team_id',
-        ],
-        'permission_id' => [
-            'label' => 'permission_id',
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
-        'updated_at' => [
-            'label' => 'updated_at',
-        ],
-        'deleted_at' => [
-            'label' => 'deleted_at',
-        ],
-        'updated_by' => [
-            'label' => 'updated_by',
-        ],
-        'created_by' => [
-            'label' => 'created_by',
-        ],
-        'deleted_by' => [
-            'label' => 'deleted_by',
-        ],
->>>>>>> laraxot/dev
     ],
 ];

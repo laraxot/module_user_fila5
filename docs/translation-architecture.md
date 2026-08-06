@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Translation Architecture - Filament Navigation Best Practices"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Translation Architecture - Filament Navigation Best Practices
 
 > **Generated**: 2026-01-07

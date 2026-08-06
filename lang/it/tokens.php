@@ -15,21 +15,12 @@ return [
         'name' => 'Tokens',
         'plural' => 'Tokens',
         'group' => [
-<<<<<<< HEAD
             'name' => 'OAuth',
             'description' => 'Client, token e API Passport',
         ],
         'label' => 'Tokens',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
-=======
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Tokens',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
->>>>>>> laraxot/dev
     ],
     'label' => 'Tokens',
     'plural_label' => 'Tokens (Plurale)',

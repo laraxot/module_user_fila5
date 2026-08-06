@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "UserFactory Advanced Integration - Modulo User & <nome progetto>"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # UserFactory Advanced Integration - Modulo User & <nome progetto>
 
 ## Post Deep-Study Analysis
@@ -304,16 +301,11 @@ public function run(): void
 ## Link Documentazione
 
 ### <nome progetto> Module
-<<<<<<< HEAD
 - [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
-=======
-- [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/UserFactory-advanced-improvements-analysis.md)
->>>>>>> laraxot/dev
 - [Implementation Completed](../../<nome progetto>/docs/factories/userfactory_implementation_completed.md)
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
-<<<<<<< HEAD
 - [User Factory Integration](./user-factory-integration-2.md)
 - [Traits Complete Guide](./traits-complete-guide-2.md)
 - [BaseUser Architecture](./parental-inheritance.md)
@@ -321,15 +313,6 @@ public function run(): void
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
 - [Testing Standards](../../../../../docs/testing_standards.md)
-=======
-- [User Factory Integration](./user_factory_integration.md)
-- [Traits Complete Guide](./traits_complete_guide.md)
-- [BaseUser Architecture](./parental_inheritance.md)
-
-### Root Documentation
-- [UserFactory <nome progetto> Integration](../../../../docs/userfactory_<nome progetto>_integration.md)
-- [Testing Standards](../../../../docs/testing_standards.md)
->>>>>>> laraxot/dev
 # UserFactory Advanced Integration - Modulo User & <nome progetto>
 
 ## Post Deep-Study Analysis
@@ -613,16 +596,11 @@ public function run(): void
 ## Link Documentazione
 
 ### <nome progetto> Module
-<<<<<<< HEAD
 - [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
-=======
-- [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/UserFactory-advanced-improvements-analysis.md)
->>>>>>> laraxot/dev
 - [Implementation Completed](../../<nome progetto>/docs/factories/userfactory_implementation_completed.md)
 - [Model States](../../<nome progetto>/docs/models/states.md)
 
 ### User Module
-<<<<<<< HEAD
 - [User Factory Integration](./user-factory-integration-2.md)
 - [Traits Complete Guide](./traits-complete-guide-2.md)
 - [BaseUser Architecture](./parental-inheritance.md)
@@ -630,12 +608,3 @@ public function run(): void
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
 - [Testing Standards](../../../../../docs/testing_standards.md)
-=======
-- [User Factory Integration](./user_factory_integration.md)
-- [Traits Complete Guide](./traits_complete_guide.md)
-- [BaseUser Architecture](./parental_inheritance.md)
-
-### Root Documentation
-- [UserFactory <nome progetto> Integration](../../../../docs/userfactory_<nome progetto>_integration.md)
-- [Testing Standards](../../../../docs/testing_standards.md)
->>>>>>> laraxot/dev

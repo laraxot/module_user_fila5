@@ -5,14 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Password Reset',
-<<<<<<< HEAD
         'group' => [
             'name' => 'Authentication',
             'description' => 'Sign-in, registration and credentials',
         ],
-=======
-        'group' => 'Security',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-key',
         'sort' => 42,
     ],

@@ -5,14 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Redefinição de Senha',
-<<<<<<< HEAD
         'group' => [
             'name' => 'Autenticação',
             'description' => 'Acesso, registo e credenciais',
         ],
-=======
-        'group' => 'Segurança',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-key',
         'sort' => 42,
     ],

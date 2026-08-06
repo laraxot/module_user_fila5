@@ -5,23 +5,13 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
-=======
-use Illuminate\Support\Collection;
->>>>>>> laraxot/dev
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
-<<<<<<< HEAD
-=======
-use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
-
->>>>>>> laraxot/dev
 class AssignTenantCommand extends Command
 {
     /**
@@ -44,7 +34,6 @@ class AssignTenantCommand extends Command
     public function handle(): void
     {
         $email = text('email ?');
-<<<<<<< HEAD
         $xot = XotData::make();
         /** @var UserContract */
         $user = $xot->getUserByEmail($email);
@@ -73,16 +62,6 @@ class AssignTenantCommand extends Command
 
             return;
         }
-=======
-        $user_class = XotData::make()->getUserClass();
-        /** @var UserContract */
-        $user = XotData::make()->getUserByEmail($email);
-        $xot = XotData::make();
-        $tenantClass = $xot->getTenantClass();
-
-        /** @var array<int|string, string>|Collection<int|string, string> */
-        $opts = $tenantClass::all()->pluck('name', 'id')->toArray();
->>>>>>> laraxot/dev
 
         $rows = multiselect(
             label: 'What tenant',

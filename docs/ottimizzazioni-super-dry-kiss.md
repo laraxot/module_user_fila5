@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Ottimizzazioni Super DRY + KISS - Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Ottimizzazioni Super DRY + KISS - Modulo User
 
 ## 🎯 Panoramica
@@ -373,25 +370,14 @@ class User extends Model
 
 ## 🔗 Collegamenti
 
-<<<<<<< HEAD
 - [Documentazione Core](../../../../docs/core/)
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
-=======
-- [Documentazione Core](../../../docs/core/)
-- [Best Practices Filament](../../../docs/core/filament-best-practices.md)
-- [Convenzioni Sistema](../../../docs/core/conventions.md)
-- [Template Modulo](../../../docs/templates/module-template.md)
->>>>>>> laraxot/dev
 
 ---
 
 **Responsabile:** Team User
 **Data:** 2025-01-XX
 **Stato:** In Analisi
-<<<<<<< HEAD
 **Priorità:** CRITICA
-=======
-**Priorità:** CRITICA
->>>>>>> laraxot/dev

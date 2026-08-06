@@ -54,21 +54,12 @@ return [
         'name' => 'Login Widget',
         'plural' => 'Login Widget',
         'group' => [
-<<<<<<< HEAD
             'name' => 'Autenticazione',
             'description' => 'Accesso, registrazione e credenziali',
         ],
         'label' => 'Login Widget',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
-=======
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Login Widget',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
->>>>>>> laraxot/dev
     ],
     'label' => 'Login Widget',
     'plural_label' => 'Login Widget (Plurale)',

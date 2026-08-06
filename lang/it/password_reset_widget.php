@@ -6,14 +6,10 @@ return [
     'navigation' => [
         'label' => 'Reset Password',
         'plural_label' => 'Reset Password',
-<<<<<<< HEAD
         'group' => [
             'name' => 'Autenticazione',
             'description' => 'Accesso, registrazione e credenziali',
         ],
-=======
-        'group' => 'Autenticazione',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-lock-closed',
         'sort' => 7,
     ],

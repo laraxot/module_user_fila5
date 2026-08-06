@@ -63,21 +63,12 @@ return [
         'name' => 'Features',
         'plural' => 'Features',
         'group' => [
-<<<<<<< HEAD
             'name' => 'Impostazioni',
             'description' => 'Configurazione del modulo utenti',
         ],
         'label' => 'Features',
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
-=======
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Features',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
->>>>>>> laraxot/dev
     ],
     'label' => 'Features',
     'plural_label' => 'Features (Plurale)',

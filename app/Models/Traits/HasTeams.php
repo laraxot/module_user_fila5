@@ -14,10 +14,7 @@ use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Role;
 use Modules\User\Models\TeamUser;
 use Modules\User\Models\User;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Contracts\UserContract as XotUserContract;
 use Modules\Xot\Datas\XotData;
 use Spatie\Permission\Models\Permission;
@@ -193,14 +190,9 @@ trait HasTeams
      * @phpstan-return Collection<int, User>
      */
     public function allTeamUsers(): Collection // @phpstan-ignore return.type
-<<<<<<< HEAD
     {
         /** @var Collection<int, mixed> $teams */
         $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
-=======
-    {/** @var Collection<int, mixed> $teams */
-            $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
->>>>>>> laraxot/dev
         /** @var Collection<int, User> $result */
         $result = $teams->flatMap( // @phpstan-ignore argument.type
             /** @param mixed $team @return array<int,User>|Collection<int,User> */
@@ -378,11 +370,7 @@ trait HasTeams
             $permissionsCollection = $role->permissions;
             /** @var list<string> $rolePermissionNames */
             $rolePermissionNames = array_values(array_map(
-<<<<<<< HEAD
                 static fn (mixed $name): string => is_string($name) ? $name : SafeStringCastAction::cast($name),
-=======
-                static fn (mixed $name): string => is_string($name) ? $name : (string) $name,
->>>>>>> laraxot/dev
                 $permissionsCollection->pluck('name')->all(),
             ));
 

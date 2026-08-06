@@ -4,14 +4,10 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-<<<<<<< HEAD
         'group' => [
             'name' => 'Authentification',
             'description' => 'Connexion, inscription et identifiants',
         ],
-=======
-        'group' => 'Authentification',
->>>>>>> laraxot/dev
         'icon' => 'heroicon-o-shield-exclamation',
         'label' => 'Journaux d\'Authentification',
         'sort' => 5,
