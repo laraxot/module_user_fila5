@@ -15,8 +15,10 @@ use Spatie\QueueableAction\QueueableAction;
  * Segue il pattern Spatie QueueableAction per separazione responsabilità
  * e adherence ai principi Laraxot (DRY + KISS + SOLID + ROBUST).
  */
-class CreateUserAction extends QueueableAction
+class CreateUserAction
 {
+    use QueueableAction;
+
     /**
      * Execute the action to create a new user.
      *
