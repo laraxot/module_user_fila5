@@ -5,8 +5,8 @@ tags: [git, merge, conflict, inventory]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "git-merge-conflict-inventory-2026-04-28.deprecated git conflict inventory"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./filament-user-creation-pty-error.md"
   - "./git-merge-conflict-inventory-1.md"

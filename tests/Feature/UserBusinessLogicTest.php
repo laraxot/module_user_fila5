@@ -87,12 +87,12 @@ describe('User Business Logic', function (): void {
 
     test('enforces age restrictions for certain operations', function (): void {
         /* @var TestCase $this */
-        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+        if (! Schema::connection('<nome progetto>')->hasColumn('profiles', 'uuid')) {
             Assert::markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
         }
 
-        if (! Schema::connection('fixcity')->hasColumn('profiles', 'birth_date')) {
-            Assert::markTestSkipped('profiles.birth_date column missing on fixcity connection.');
+        if (! Schema::connection('<nome progetto>')->hasColumn('profiles', 'birth_date')) {
+            Assert::markTestSkipped('profiles.birth_date column missing on <nome progetto> connection.');
         }
 
         $underageBirthDate = now()->subYears(16)->toDateString();
@@ -217,7 +217,7 @@ describe('User Business Logic', function (): void {
 
     test('enforces referential integrity for user relationships', function (): void {
         /* @var TestCase $this */
-        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+        if (! Schema::connection('<nome progetto>')->hasColumn('profiles', 'uuid')) {
             Assert::markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
         }
 

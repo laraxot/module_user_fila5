@@ -19,9 +19,4 @@ class ClientHeader extends XotBaseWidget
     {
         $this->client = $record;
     }
-
-    public function getFormSchemaOld(): array
-    {
-        return [];
-    }
 }

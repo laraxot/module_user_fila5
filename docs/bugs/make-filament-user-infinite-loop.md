@@ -5,8 +5,8 @@ tags: [make, filament, user, infinite]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "make-filament-user-infinite-loop bug: infinite loop in make:filament-user command"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./testing.md"
 ---

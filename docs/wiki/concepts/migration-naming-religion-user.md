@@ -7,9 +7,9 @@ created: 2026-07-27
 updated: 2026-07-27
 qmd: "user module migration naming create table snake case one model no connection xotbase"
 issues:
-  - "https://github.com/laraxot/base_workorder_fila5/issues/7"
+  - "https://github.com/laraxot/<nome repository>/issues/7"
 discussions:
-  - "https://github.com/laraxot/base_workorder_fila5/discussions/8"
+  - "https://github.com/laraxot/<nome repository>/discussions/8"
 related:
   - ./teams-owner-id-in-create-migration.md
   - ./model-migration-seeder-rule.md

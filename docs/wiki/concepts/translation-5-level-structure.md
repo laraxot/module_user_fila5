@@ -61,7 +61,7 @@ Examples:
 
 | Level | Name | Description | Example |
 |-------|------|-------------|---------|
-| 1 | **Namespace** | Module name | `user::`, `geo::`, `fixcity::` |
+| 1 | **Namespace** | Module name | `user::`, `geo::`, `<nome progetto>::` |
 | 2 | **Context** | Feature/section | `auth.`, `profile.`, `settings.` |
 | 3 | **Collection** | Group/component | `login.`, `form.`, `page.`, `wizard.` |
 | 4 | **Element** | Specific item | `email`, `password`, `submit`, `title` |

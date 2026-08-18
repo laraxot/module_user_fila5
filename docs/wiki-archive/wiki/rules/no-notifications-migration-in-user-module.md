@@ -46,7 +46,7 @@ return new class extends Migration { ... };
 
 Contratto: [notifications-database-contract](../../../Notify/docs/wiki/concepts/notifications-database-contract.md)
 
-## Se manca tabella su `fixcity_user`
+## Se manca tabella su `<nome progetto>_user`
 
 1. Edit file owner **Notify** + bump timestamp nel nome
 2. `cd laravel && php artisan migrate` — mai `--force`
@@ -54,4 +54,4 @@ Contratto: [notifications-database-contract](../../../Notify/docs/wiki/concepts/
 ## Collegamenti
 
 - [notifications-runtime-model](../concepts/notifications-runtime-model.md)
-- [main-module-profiles-ownership](../../../Fixcity/docs/wiki/concepts/main-module-profiles-ownership.md) (stesso pattern boundary)
+- [main-module-profiles-ownership](../../../<nome progetto>/docs/wiki/concepts/main-module-profiles-ownership.md) (stesso pattern boundary)

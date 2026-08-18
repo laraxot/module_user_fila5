@@ -5,8 +5,8 @@ tags: [component, registration]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "component-registration registrazione dei componenti blade nel modulo user"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./architecture-rules.md"
   - "./architecture.md"
