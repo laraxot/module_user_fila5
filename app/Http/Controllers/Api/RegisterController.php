@@ -12,7 +12,12 @@
  * If the validation passes, a new user is created and a success response is returned with the user's name and an access token.
  * If the validation fails, an error response is returned with the validation errors.
  *
+<<<<<<< .merge_file_wAMzc6
  * @param  Request  $request  The incoming request
+=======
+ * @param Request $request The incoming request
+ *
+>>>>>>> .merge_file_VuXBdg
  * @return JsonResponse The JSON response
  */
 

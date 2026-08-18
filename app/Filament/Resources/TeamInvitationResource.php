@@ -6,13 +6,20 @@ namespace Modules\User\Filament\Resources;
 
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+<<<<<<< .merge_file_AAz6wi
 use Filament\Forms\Components\Field;
+=======
+>>>>>>> .merge_file_9UZqU7
 use Filament\Resources\Pages\PageRegistration;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Resources\TeamInvitationResource\Pages\EditTeamInvitations;
 use Modules\User\Filament\Resources\TeamInvitationResource\Pages\ListTeamInvitations;
 use Modules\User\Models\TeamInvitation;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< .merge_file_AAz6wi
+=======
+
+>>>>>>> .merge_file_9UZqU7
 /**
  * Class TeamInvitationResource.
  */
@@ -25,7 +32,11 @@ class TeamInvitationResource extends XotBaseResource
      *
      * @return array<string, mixed>
      */
+<<<<<<< .merge_file_AAz6wi
     //#[\Override]
+=======
+    // #[\Override]
+>>>>>>> .merge_file_9UZqU7
     public static function getFormSchemaOld(): array
     {
         return [

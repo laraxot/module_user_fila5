@@ -8,7 +8,11 @@ use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< .merge_file_nLfqJq
 use Filament\Forms\Components\Field;
+=======
+
+>>>>>>> .merge_file_JAKC4M
 class TeamResource extends XotBaseResource
 {
     /**
@@ -25,7 +29,11 @@ class TeamResource extends XotBaseResource
         return $xot->getTeamClass();
     }
 
+<<<<<<< .merge_file_nLfqJq
     //#[\Override]
+=======
+    // #[\Override]
+>>>>>>> .merge_file_JAKC4M
     /**
      * @return array<string, mixed>
      */

@@ -54,13 +54,21 @@ class UserDropdown extends XotBaseSchemaWidget
 
         if (method_exists($profile, 'getAvatarUrl')) {
             $url = $profile->getAvatarUrl();
+<<<<<<< .merge_file_iNpvyX
             if (\is_string($url) && $url !== '') {
+=======
+            if (\is_string($url) && '' !== $url) {
+>>>>>>> .merge_file_WmmM57
                 return $url;
             }
         }
 
         $avatarUrl = $profile->avatar_url ?? null;
 
+<<<<<<< .merge_file_iNpvyX
         return \is_string($avatarUrl) && $avatarUrl !== '' ? $avatarUrl : $fallback;
+=======
+        return \is_string($avatarUrl) && '' !== $avatarUrl ? $avatarUrl : $fallback;
+>>>>>>> .merge_file_WmmM57
     }
 }

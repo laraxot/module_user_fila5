@@ -24,7 +24,11 @@ class GetUserTeamsOptionAction
 
         foreach ($teams as $teamUser) {
             $team = $teamUser->team;
+<<<<<<< .merge_file_cjQlX1
             if ($team === null) {
+=======
+            if (null === $team) {
+>>>>>>> .merge_file_QsZiZE
                 continue;
             }
 

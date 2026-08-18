@@ -18,7 +18,12 @@ class GetDomainAllowListAction
 
     public function __construct(
         private readonly Arr $arrHelper,
+<<<<<<< .merge_file_JR7py3
     ) {}
+=======
+    ) {
+    }
+>>>>>>> .merge_file_CRRDyD
 
     /**
      * Execute the action.

@@ -25,12 +25,21 @@ use Spatie\Permission\Models\Permission;
  * Provides team functionality for User models implementing team-based organization.
  * This trait handles team ownership, membership, permissions, and relationships.
  *
+<<<<<<< .merge_file_NTr2aK
  * @property TeamContract $currentTeam
  * @property int|null $current_team_id
  * @property Collection<int, TeamContract> $membershipTeams
  * @property Collection<int, TeamContract> $ownedTeams
  * @property Collection<int, TeamUser> $teamUsers
  * @property XotUserContract|null $owner
+=======
+ * @property TeamContract                  $currentTeam
+ * @property int|null                      $current_team_id
+ * @property Collection<int, TeamContract> $membershipTeams
+ * @property Collection<int, TeamContract> $ownedTeams
+ * @property Collection<int, TeamUser>     $teamUsers
+ * @property XotUserContract|null          $owner
+>>>>>>> .merge_file_lr8hqk
  */
 trait HasTeams
 {
@@ -77,7 +86,11 @@ trait HasTeams
      */
     public function belongsToTeam(?TeamContract $team): bool
     {
+<<<<<<< .merge_file_NTr2aK
         if ($team === null) {
+=======
+        if (null === $team) {
+>>>>>>> .merge_file_lr8hqk
             return false;
         }
 
@@ -171,11 +184,19 @@ trait HasTeams
             // Membership always extends Model, check only if user attribute exists
             $user = $membership->getAttribute('user');
 
+<<<<<<< .merge_file_NTr2aK
             return $user !== null ? $user : null;
         })->filter();
 
         $owner = $this->owner;
         if ($owner !== null && $owner instanceof User) {
+=======
+            return null !== $user ? $user : null;
+        })->filter();
+
+        $owner = $this->owner;
+        if (null !== $owner && $owner instanceof User) {
+>>>>>>> .merge_file_lr8hqk
             return $users->merge([$owner]);
         }
 
@@ -218,13 +239,21 @@ trait HasTeams
             if ($memberUser instanceof Model) {
                 $memberUserKey = $memberUser->getKey();
 
+<<<<<<< .merge_file_NTr2aK
                 return $memberUserKey !== null && $memberUserKey === $user->getKey();
+=======
+                return null !== $memberUserKey && $memberUserKey === $user->getKey();
+>>>>>>> .merge_file_lr8hqk
             }
 
             return false;
         });
 
+<<<<<<< .merge_file_NTr2aK
         if ($userFound !== null) {
+=======
+        if (null !== $userFound) {
+>>>>>>> .merge_file_lr8hqk
             return true;
         }
 
@@ -263,7 +292,11 @@ trait HasTeams
 
         $teamRole = $this->teamRole($team);
 
+<<<<<<< .merge_file_NTr2aK
         return $teamRole !== null && $teamRole->name === $role;
+=======
+        return null !== $teamRole && $teamRole->name === $role;
+>>>>>>> .merge_file_lr8hqk
     }
 
     /**
@@ -273,7 +306,11 @@ trait HasTeams
     {
         $role = $this->teamRole($team);
 
+<<<<<<< .merge_file_NTr2aK
         if ($role === null) {
+=======
+        if (null === $role) {
+>>>>>>> .merge_file_lr8hqk
             return 'Unknown';
         }
 
@@ -334,7 +371,11 @@ trait HasTeams
         /** @var Model|Pivot|null $teamUser */
         $teamUser = $this->teamUsers()->where('team_id', $team->id)->first();
 
+<<<<<<< .merge_file_NTr2aK
         if ($teamUser === null) {
+=======
+        if (null === $teamUser) {
+>>>>>>> .merge_file_lr8hqk
             return null;
         }
 
@@ -365,7 +406,11 @@ trait HasTeams
 
         // Permissions from Role
         $role = $this->teamRole($team);
+<<<<<<< .merge_file_NTr2aK
         if ($role !== null && $role->permissions) {
+=======
+        if (null !== $role && $role->permissions) {
+>>>>>>> .merge_file_lr8hqk
             /** @var \Illuminate\Database\Eloquent\Collection<int, Permission> $permissionsCollection */
             $permissionsCollection = $role->permissions;
             /** @var list<string> $rolePermissionNames */
@@ -376,14 +421,22 @@ trait HasTeams
 
             $permissions = array_values(array_filter(
                 $rolePermissionNames,
+<<<<<<< .merge_file_NTr2aK
                 static fn (string $value): bool => $value !== ''
+=======
+                static fn (string $value): bool => '' !== $value
+>>>>>>> .merge_file_lr8hqk
             ));
         }
 
         // Permissions from Pivot
         /** @var Model|Pivot|null $teamUser */
         $teamUser = $this->teamUsers()->where('team_id', (string) $team->id)->first();
+<<<<<<< .merge_file_NTr2aK
         if ($teamUser !== null) {
+=======
+        if (null !== $teamUser) {
+>>>>>>> .merge_file_lr8hqk
             $pivotPermissions = $teamUser->getAttribute('permissions');
             if (is_array($pivotPermissions)) {
                 $pivotPermissionNames = array_keys(array_filter($pivotPermissions));
@@ -392,7 +445,11 @@ trait HasTeams
                     $permissions,
                     array_values(array_filter(
                         $pivotPermissionNames,
+<<<<<<< .merge_file_NTr2aK
                         static fn (string $value): bool => $value !== ''
+=======
+                        static fn (string $value): bool => '' !== $value
+>>>>>>> .merge_file_lr8hqk
                     ))
                 );
             }
@@ -428,19 +485,31 @@ trait HasTeams
      */
     public function initializeCurrentTeam(): void
     {
+<<<<<<< .merge_file_NTr2aK
         if ($this->current_team_id !== null) {
+=======
+        if (null !== $this->current_team_id) {
+>>>>>>> .merge_file_lr8hqk
             return;
         }
 
         $team = $this->personalTeam();
+<<<<<<< .merge_file_NTr2aK
         if ($team === null) {
+=======
+        if (null === $team) {
+>>>>>>> .merge_file_lr8hqk
             $teamCandidate = $this->allTeams()->first();
             if ($teamCandidate instanceof TeamContract) {
                 $team = $teamCandidate;
             }
         }
 
+<<<<<<< .merge_file_NTr2aK
         if ($team !== null) {
+=======
+        if (null !== $team) {
+>>>>>>> .merge_file_lr8hqk
             $this->switchTeam($team);
         }
     }
@@ -466,7 +535,11 @@ trait HasTeams
      */
     public function isCurrentTeam(TeamContract $team): bool
     {
+<<<<<<< .merge_file_NTr2aK
         if ($this->currentTeam === null) {
+=======
+        if (null === $this->currentTeam) {
+>>>>>>> .merge_file_lr8hqk
             return false;
         }
 
@@ -478,7 +551,11 @@ trait HasTeams
      */
     public function ownsTeam(?TeamContract $team): bool
     {
+<<<<<<< .merge_file_NTr2aK
         if ($team === null) {
+=======
+        if (null === $team) {
+>>>>>>> .merge_file_lr8hqk
             return false;
         }
 

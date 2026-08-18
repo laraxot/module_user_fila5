@@ -23,7 +23,10 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource\Pa
 use Modules\User\Models\OauthDeviceCode;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+<<<<<<< .merge_file_MIOAL3
 use Filament\Forms\Components\Field;
+=======
+>>>>>>> .merge_file_6ojjEh
 /**
  * Class OauthDeviceCodeResource.
  *
@@ -40,7 +43,11 @@ class OauthDeviceCodeResource extends XotBaseResource
      *
      * @return array<string, mixed>
      */
+<<<<<<< .merge_file_MIOAL3
     //#[\Override]
+=======
+    // #[\Override]
+>>>>>>> .merge_file_6ojjEh
     public static function getFormSchemaOld(): array
     {
         return [

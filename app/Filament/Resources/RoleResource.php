@@ -11,12 +11,20 @@ use Modules\User\Filament\Resources\RoleResource\Pages\EditRole;
 use Modules\User\Filament\Resources\RoleResource\Pages\ListRoles;
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< .merge_file_hoSB3c
 use Filament\Forms\Components\Field;
+=======
+
+>>>>>>> .merge_file_0rOJ8u
 class RoleResource extends XotBaseResource
 {
     protected static ?string $model = Role::class;
 
+<<<<<<< .merge_file_hoSB3c
     //#[\Override]
+=======
+    // #[\Override]
+>>>>>>> .merge_file_0rOJ8u
     /**
      * @return array<string, mixed>
      */

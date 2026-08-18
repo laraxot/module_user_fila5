@@ -16,7 +16,10 @@ use Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource\Pa
 use Modules\User\Models\SocialProvider;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+<<<<<<< .merge_file_AH9mRN
 use Filament\Forms\Components\Field;
+=======
+>>>>>>> .merge_file_OZ6pj5
 /**
  * @property SocialProvider $record
  *                                  -------
@@ -30,7 +33,11 @@ class SocialProviderResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
+<<<<<<< .merge_file_AH9mRN
     //#[\Override]
+=======
+    // #[\Override]
+>>>>>>> .merge_file_OZ6pj5
     public static function getFormSchemaOld(): array
     {
         return [

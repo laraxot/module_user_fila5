@@ -50,6 +50,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * functionality for the application. It extends Laravel's Authenticatable class
  * and implements the required interfaces for Filament and multi-tenancy.
  *
+<<<<<<< .merge_file_hZDPhF
  * @property Collection<int, OauthClient> $clients
  * @property int|null $clients_count
  * @property Team|null $currentTeam
@@ -96,6 +97,54 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @property string|null $deleted_by
  * @property string|null $profile_photo_path
  * @property Pivot|null $pivot
+=======
+ * @property Collection<int, OauthClient>                              $clients
+ * @property int|null                                                  $clients_count
+ * @property Team|null                                                 $currentTeam
+ * @property Collection<int, Device>                                   $devices
+ * @property int|null                                                  $devices_count
+ * @property string|null                                               $full_name
+ * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
+ * @property int|null                                                  $notifications_count
+ * @property Collection<int, Team>                                     $ownedTeams
+ * @property int|null                                                  $owned_teams_count
+ * @property Collection<int, Permission>                               $permissions
+ * @property int|null                                                  $permissions_count
+ * @property ProfileContract|null                                      $profile
+ * @property Collection<int, Role>                                     $roles
+ * @property int|null                                                  $roles_count
+ * @property Collection<int, Team>                                     $membershipTeams
+ * @property int|null                                                  $membership_teams_count
+ * @property Collection<int, Tenant>                                   $tenants
+ * @property int|null                                                  $tenants_count
+ * @property Collection<int, OauthToken>                               $tokens
+ * @property int|null                                                  $tokens_count
+ * @property string                                                    $last_name
+ * @property string|null                                               $facebook_id
+ * @property Collection<int, SocialiteUser>                            $socialiteUsers
+ * @property int|null                                                  $socialite_users_count
+ * @property string|null                                               $name
+ * @property string|null                                               $first_name
+ * @property string|null                                               $last_name
+ * @property string|null                                               $email
+ * @property string|null                                               $password
+ * @property string|null                                               $lang
+ * @property string|null                                               $current_team_id
+ * @property bool|null                                                 $is_active
+ * @property bool|null                                                 $is_otp
+ * @property string|null                                               $type
+ * @property \DateTime|null                                            $password_expires_at
+ * @property \DateTime|null                                            $email_verified_at
+ * @property string|null                                               $remember_token
+ * @property \DateTime|null                                            $created_at
+ * @property \DateTime|null                                            $updated_at
+ * @property \DateTime|null                                            $deleted_at
+ * @property string|null                                               $created_by
+ * @property string|null                                               $updated_by
+ * @property string|null                                               $deleted_by
+ * @property string|null                                               $profile_photo_path
+ * @property Pivot|null                                                $pivot
+>>>>>>> .merge_file_VX7f2y
  *
  * @method static Builder|User newModelQuery()
  * @method static Builder|User newQuery()
@@ -325,7 +374,11 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     public function canAccessPanel(Panel $panel): bool
     {
         // $panel->default('admin');
+<<<<<<< .merge_file_hZDPhF
         if ($panel->getId() !== 'admin') {
+=======
+        if ('admin' !== $panel->getId()) {
+>>>>>>> .merge_file_VX7f2y
             $role = $panel->getId();
             /*
              * $xot = XotData::make();
@@ -364,7 +417,11 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
      */
     public function treeSons(): Collection
     {
+<<<<<<< .merge_file_hZDPhF
         return $this->membershipTeams ?? new Collection;
+=======
+        return $this->membershipTeams ?? new Collection();
+>>>>>>> .merge_file_VX7f2y
     }
 
     /**
@@ -389,22 +446,38 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function getFullNameAttribute(?string $value): string
     {
+<<<<<<< .merge_file_hZDPhF
         if ($value !== null) {
+=======
+        if (null !== $value) {
+>>>>>>> .merge_file_VX7f2y
             return $value;
         }
 
         $fullName = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
 
+<<<<<<< .merge_file_hZDPhF
         return $fullName !== '' ? $fullName : ($this->email ?? 'User');
+=======
+        return '' !== $fullName ? $fullName : ($this->email ?? 'User');
+>>>>>>> .merge_file_VX7f2y
     }
 
     public function getNameAttribute(?string $value): string
     {
+<<<<<<< .merge_file_hZDPhF
         if ($value !== null) {
             return $value;
         }
 
         if ($this->getKey() === null) {
+=======
+        if (null !== $value) {
+            return $value;
+        }
+
+        if (null === $this->getKey()) {
+>>>>>>> .merge_file_VX7f2y
             return $this->email ?? 'User';
         }
 
@@ -419,7 +492,11 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
                 return true;
             }
 
+<<<<<<< .merge_file_hZDPhF
             return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
+=======
+            return \PHP_SAPI === 'cli' && ('testing' === getenv('APP_ENV') || 'testing' === getenv('ENV'));
+>>>>>>> .merge_file_VX7f2y
         })();
         if ($isTesting) {
             // Do not call update() here to avoid hitting the database.
@@ -430,8 +507,13 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
         try {
             $value = $candidate;
+<<<<<<< .merge_file_hZDPhF
             while (self::firstWhere(['name' => $value]) !== null) {
                 $i++;
+=======
+            while (null !== self::firstWhere(['name' => $value])) {
+                ++$i;
+>>>>>>> .merge_file_VX7f2y
                 $value = $name.'-'.$i;
             }
             $this->update(['name' => $value]);

@@ -26,7 +26,10 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthRefreshTokenResource\
 use Modules\User\Models\OauthRefreshToken;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+<<<<<<< .merge_file_DnovX7
 use Filament\Forms\Components\Field;
+=======
+>>>>>>> .merge_file_4ByWnl
 class OauthRefreshTokenResource extends XotBaseResource
 {
     protected static ?string $cluster = Passport::class;
@@ -38,7 +41,11 @@ class OauthRefreshTokenResource extends XotBaseResource
      *
      * @return array<string, mixed>
      */
+<<<<<<< .merge_file_DnovX7
     //#[\Override]
+=======
+    // #[\Override]
+>>>>>>> .merge_file_4ByWnl
     public static function getFormSchemaOld(): array
     {
         return [
