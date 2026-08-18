@@ -42,17 +42,19 @@ ferma `phpstan analyse Modules`. Chi lo usa: login `/it/auth/login` e widget pro
 L'override vuoto non serve: `XotBaseWidget::getFormSchema()` documenta esplicitamente il
 default vuoto «per i widget senza form».
 
-## Debito residuo nel modulo
+## Chiusura debito widget/pagine
 
-Dodici classi del modulo dichiarano ancora `getFormSchemaOld()` in gerarchia widget o
-pagina — `EditUserWidget`, `LoginWidget`, `LogoutWidget`, `PasswordExpiredWidget`,
-`RegistrationWidget`, `Auth/LogoutWidget`, `Auth/NotificationsCenterWidget`,
-`Auth/SocialLoginWidget`, `UserResource/Widgets/UserOverview`, `Pages/Auth/EditProfile`,
-`Pages/Tenancy/EditTeamProfile`, `RegisterTeam`, `RegisterTenant`, più il data object
-`Datas/PasswordData`. PHPStan non li vede: vanno verificati **uno per uno**, perché il
-rename di massa è ciò che ha generato il problema.
+`getFormSchemaOld` sui widget non viene chiamato: login e correlati restavano vuoti. Chi lo usa: dipendente su `/it/auth/login`, admin team/tenant, permessi ruolo.
 
-Censimento e comandi: [docs/chat/formschema-widget-hierarchy-regression.md](../../../../docs/chat/formschema-widget-hierarchy-regression.md).
+| Cosa | Azione |
+|---|---|
+| Widget con campi | `getFormSchema()` |
+| Widget senza form | metodo vuoto rimosso |
+| Pagine Filament (`EditProfile`, tenancy) | `form()` delega a `getFormSchema()` — Filament v5 chiama `form()` |
+| `PasswordData` | `getFormSchema()` |
+| Resource | restano su `getFormSchemaOld()` |
+
+Niente `mixed` aggiunto. Censimento storico: [formschema-widget-hierarchy-regression.md](../../../../docs/chat/formschema-widget-hierarchy-regression.md).
 
 ## Riferimenti
 

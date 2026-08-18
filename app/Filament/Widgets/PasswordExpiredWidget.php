@@ -56,7 +56,7 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
      *
      * @return array<int, Component>
      */
-    public function getFormSchemaOld(): array
+    public function getFormSchema(): array
     {
         $schema = [
             $this->getCurrentPasswordFormComponent(),

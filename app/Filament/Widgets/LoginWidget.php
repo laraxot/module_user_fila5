@@ -53,7 +53,7 @@ class LoginWidget extends XotBaseSchemaWidget
      *
      * @return array<int, Component>
      */
-    public function getFormSchemaOld(): array
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('email')

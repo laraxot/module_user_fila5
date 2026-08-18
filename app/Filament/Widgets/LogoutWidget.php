@@ -22,7 +22,7 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  * event dispatching, and proper redirection with localization support.
  *
  * @method void                     mount()          Initialize the widget and form state.
- * @method array<string, Component> getFormSchemaOld()  Define the form schema for the logout confirmation.
+ * @method array<string, Component> getFormSchema()  Define the form schema for the logout confirmation.
  * @method void                     logout()         Handle the user logout process.
  * @method array<string, Action>    getFormActions() Define the form actions (logout and cancel buttons).
  * @method array<string, string>    getViewData()    Get additional data to pass to the view.
@@ -63,7 +63,7 @@ class LogoutWidget extends XotBaseSchemaWidget
      *
      * @return array<string, Component>
      */
-    public function getFormSchemaOld(): array
+    public function getFormSchema(): array
     {
         return [
             'message' => View::make('user::filament.widgets.auth.logout-message')->columnSpanFull(),
