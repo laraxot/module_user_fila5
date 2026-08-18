@@ -10,7 +10,6 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 use Illuminate\Database\Eloquent\Model;
-use Filament\Forms\Components\Field;
 use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Datas\XotData;
@@ -38,8 +37,6 @@ class UserResource extends XotBaseResource
     // {
     //    static::$extendFormCallback = $callback;
     // }
-
-   
 
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {

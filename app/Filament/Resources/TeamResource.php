@@ -8,7 +8,7 @@ use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-use Filament\Forms\Components\Field;
+
 class TeamResource extends XotBaseResource
 {
     /**
@@ -25,7 +25,7 @@ class TeamResource extends XotBaseResource
         return $xot->getTeamClass();
     }
 
-    //#[\Override]
+    // #[\Override]
     /**
      * @return array<string, mixed>
      */

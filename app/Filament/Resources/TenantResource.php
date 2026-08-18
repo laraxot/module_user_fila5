@@ -10,7 +10,6 @@ namespace Modules\User\Filament\Resources;
 
 use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Field;
 use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
@@ -21,6 +20,7 @@ use Modules\User\Filament\Resources\TenantResource\Pages\ViewTenant;
 use Modules\User\Filament\Resources\TenantResource\RelationManagers\UsersRelationManager;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+
 class TenantResource extends XotBaseResource
 {
     /**
@@ -39,7 +39,7 @@ class TenantResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
-    //#[\Override]
+    // #[\Override]
     public static function getFormSchemaOld(): array
     {
         return [

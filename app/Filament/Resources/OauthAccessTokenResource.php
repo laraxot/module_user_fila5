@@ -24,7 +24,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use function Safe\json_encode;
 
-use Filament\Forms\Components\Field;
 class OauthAccessTokenResource extends XotBaseResource
 {
     protected static ?string $model = OauthAccessToken::class;

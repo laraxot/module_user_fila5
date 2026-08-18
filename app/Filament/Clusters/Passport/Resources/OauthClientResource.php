@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
 use Filament\Actions\DeleteBulkAction;
-use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\TextColumn;

@@ -7,7 +7,6 @@ namespace Modules\User\Filament\Resources;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use Filament\Forms\Components\Field;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Builder;
@@ -16,6 +15,7 @@ use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ViewAuthenti
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+
 class AuthenticationLogResource extends XotBaseResource
 {
     protected static ?string $model = AuthenticationLog::class;

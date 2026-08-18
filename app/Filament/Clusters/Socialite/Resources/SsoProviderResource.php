@@ -8,7 +8,6 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-use Filament\Forms\Components\Field;
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
@@ -23,6 +22,7 @@ use Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource\Pages
 use Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource\RelationManagers\UsersRelationManager;
 use Modules\User\Models\SsoProvider;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+
 class SsoProviderResource extends XotBaseResource
 {
     protected static ?string $cluster = Socialite::class;
@@ -32,7 +32,7 @@ class SsoProviderResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
-    //#[\Override]
+    // #[\Override]
     /**
      * @return array<string, mixed>
      */
