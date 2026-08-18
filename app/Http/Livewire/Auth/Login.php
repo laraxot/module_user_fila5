@@ -52,7 +52,7 @@ class Login extends Component implements HasActions, HasForms
     public function form(Schema $schema): Schema
     {
         return $schema
-            ->components($this->getFormSchemaOld())
+            ->components($this->getFormSchema())
             ->statePath('data');
     }
 
@@ -104,7 +104,7 @@ class Login extends Component implements HasActions, HasForms
      *
      * @return array<TextInput|Checkbox>
      */
-    protected function getFormSchemaOld(): array
+    protected function getFormSchema(): array
     {
         return [
             TextInput::make('email')

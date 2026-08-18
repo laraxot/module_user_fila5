@@ -40,10 +40,10 @@ class RegisterTenant extends XotBaseRegisterTenant
         return static::transClass($tenantClass, $key);
     }
 
-    public function schema(Schema $schema): Schema
+    public function form(Schema $schema): Schema
     {
         /** @var array<Component> $components */
-        $components = $this->getFormSchemaOld();
+        $components = $this->getFormSchema();
 
         return $schema->components($components);
     }
@@ -51,7 +51,7 @@ class RegisterTenant extends XotBaseRegisterTenant
     /**
      * @return array<int|string, Component>
      */
-    public function getFormSchemaOld(): array
+    public function getFormSchema(): array
     {
         $resourceClass = $this->resolveResourceClass();
         $schema = $resourceClass::getFormSchemaOld();

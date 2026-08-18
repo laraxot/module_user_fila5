@@ -27,7 +27,7 @@ class ManageRolePermissions extends XotBaseManageRelatedRecords
     /**
      * @return array<int, TextInput>
      */
-    public function getFormSchemaOld(): array
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('name')->required()->maxLength(255),

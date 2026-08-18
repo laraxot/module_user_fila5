@@ -42,7 +42,7 @@ class LogoutWidget extends XotBaseSchemaWidget
      *
      * @return array<string, Component>
      */
-    public function getFormSchemaOld(): array
+    public function getFormSchema(): array
     {
         return [
             'logout_message' => View::make('user::filament.widgets.auth.logout-message')->columnSpanFull(),

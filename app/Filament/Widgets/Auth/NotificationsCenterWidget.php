@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
-use Filament\Schemas\Components\Component;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
@@ -28,14 +27,6 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     public function mount(): void
     {
         $this->refreshNotifications();
-    }
-
-    /**
-     * @return array<string, Component>
-     */
-    public function getFormSchemaOld(): array
-    {
-        return [];
     }
 
     public function markAsRead(string $notificationId): void

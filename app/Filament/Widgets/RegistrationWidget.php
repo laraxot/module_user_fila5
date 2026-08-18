@@ -111,7 +111,7 @@ class RegistrationWidget extends XotBaseSchemaWidget
     /**
      * @return array<int|string, Component>
      */
-    public function getFormSchemaOld(): array
+    public function getFormSchema(): array
     {
         return self::normalizeFormSchema($this->resource::getFormSchemaWidget());
     }
