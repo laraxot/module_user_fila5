@@ -18,7 +18,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\OauthPersonalAccessClient;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-use Filament\Forms\Components\Field;
 /**
  * Class OauthPersonalAccessClientResource.
  */
@@ -39,7 +38,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
-    //#[\Override]
+    // #[\Override]
     public static function getFormSchemaOld(): array
     {
         return [

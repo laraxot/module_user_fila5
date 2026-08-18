@@ -12,13 +12,13 @@ use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Forms\Components\Field;
 // Already there, but explicitly for boolean()
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages\ListOauthRefreshTokens;
 use Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages\ViewOauthRefreshToken;
 use Modules\User\Models\OauthRefreshToken;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+
 /**
  * Class OauthRefreshTokenResource.
  */
@@ -39,7 +39,7 @@ class OauthRefreshTokenResource extends XotBaseResource
      *
      * @return array<string, Select|TextInput>
      */
-    //#[\Override]
+    // #[\Override]
     /**
      * @return array<string, mixed>
      */

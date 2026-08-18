@@ -16,7 +16,6 @@ use Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource\Pa
 use Modules\User\Models\SocialProvider;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-use Filament\Forms\Components\Field;
 /**
  * @property SocialProvider $record
  *                                  -------
@@ -30,7 +29,7 @@ class SocialProviderResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
-    //#[\Override]
+    // #[\Override]
     public static function getFormSchemaOld(): array
     {
         return [
