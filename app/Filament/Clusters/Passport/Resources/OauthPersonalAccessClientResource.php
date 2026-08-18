@@ -24,7 +24,10 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthPersonalAccessClientR
 use Modules\User\Models\OauthPersonalAccessClient;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+<<<<<<< .merge_file_qClYrp
 use Filament\Forms\Components\Field;
+=======
+>>>>>>> .merge_file_Zf9hqN
 /**
  * Class OauthPersonalAccessClientResource.
  */
@@ -37,7 +40,11 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
+<<<<<<< .merge_file_qClYrp
     //#[\Override]
+=======
+    // #[\Override]
+>>>>>>> .merge_file_Zf9hqN
     public static function getFormSchemaOld(): array
     {
         return [

@@ -12,8 +12,12 @@ use Modules\Xot\Datas\XotData;
  *
  * owner_id → User (senza constrained cross-DB).
  */
+<<<<<<< .merge_file_Jc63Kt
 return new class extends XotBaseMigration
 {
+=======
+return new class extends XotBaseMigration {
+>>>>>>> .merge_file_KxWePh
     protected ?string $model_class = Team::class;
 
     public function up(): void

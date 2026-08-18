@@ -34,7 +34,10 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use function Safe\json_encode;
 
+<<<<<<< .merge_file_FY4qIo
 use Filament\Forms\Components\Field;
+=======
+>>>>>>> .merge_file_WqKklv
 class OauthAccessTokenResource extends XotBaseResource
 {
     protected static ?string $cluster = Passport::class;
@@ -58,7 +61,11 @@ class OauthAccessTokenResource extends XotBaseResource
                             return null;
                         }
                         $user = $record->user;
+<<<<<<< .merge_file_FY4qIo
                         if ($user !== null && method_exists($user, 'exists') && $user->exists) {
+=======
+                        if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+>>>>>>> .merge_file_WqKklv
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -77,7 +84,11 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('scopes')
                     ->limit(30)
                     ->tooltip(function (mixed $state): ?string {
+<<<<<<< .merge_file_FY4qIo
                         if ($state === null) {
+=======
+                        if (null === $state) {
+>>>>>>> .merge_file_WqKklv
                             return null;
                         }
                         if (is_array($state)) {
@@ -184,7 +195,11 @@ class OauthAccessTokenResource extends XotBaseResource
                         return null;
                     }
                     $user = $record->user;
+<<<<<<< .merge_file_FY4qIo
                     if ($user !== null && method_exists($user, 'exists') && $user->exists) {
+=======
+                    if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+>>>>>>> .merge_file_WqKklv
                         return UserResource::getUrl('view', ['record' => $user]);
                     }
 
@@ -203,7 +218,11 @@ class OauthAccessTokenResource extends XotBaseResource
             'scopes' => TextColumn::make('scopes')
                 ->limit(30)
                 ->tooltip(function (mixed $state): ?string {
+<<<<<<< .merge_file_FY4qIo
                     if ($state === null) {
+=======
+                    if (null === $state) {
+>>>>>>> .merge_file_WqKklv
                         return null;
                     }
                     if (is_array($state)) {
@@ -312,7 +331,11 @@ class OauthAccessTokenResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
+<<<<<<< .merge_file_FY4qIo
     //#[\Override]
+=======
+    // #[\Override]
+>>>>>>> .merge_file_WqKklv
     public static function getFormSchemaOld(): array
     {
         return [

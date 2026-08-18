@@ -32,7 +32,11 @@ function makeListUsersPage(): ListUsers
     }
     Filament::setCurrentPanel($panel);
 
+<<<<<<< .merge_file_YYVl4h
     return new ListUsers;
+=======
+    return new ListUsers();
+>>>>>>> .merge_file_qtPs9a
 }
 
 /** @return Collection<int, User> */

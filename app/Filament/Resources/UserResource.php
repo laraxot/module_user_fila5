@@ -10,7 +10,10 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< .merge_file_Ey9NZu
 use Filament\Forms\Components\Field;
+=======
+>>>>>>> .merge_file_rjC07V
 use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Datas\XotData;
@@ -39,8 +42,11 @@ class UserResource extends XotBaseResource
     //    static::$extendFormCallback = $callback;
     // }
 
+<<<<<<< .merge_file_Ey9NZu
    
 
+=======
+>>>>>>> .merge_file_rjC07V
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {
     //     static::$enablePasswordUpdates = $condition;

@@ -22,7 +22,10 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Page
 use Modules\User\Models\OauthAuthCode;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+<<<<<<< .merge_file_DQVqdc
 use Filament\Forms\Components\Field;
+=======
+>>>>>>> .merge_file_kFrgeu
 /**
  * Class OauthAuthCodeResource.
  */
@@ -37,7 +40,11 @@ class OauthAuthCodeResource extends XotBaseResource
      *
      * @return array<string, mixed>
      */
+<<<<<<< .merge_file_DQVqdc
     //#[\Override]
+=======
+    // #[\Override]
+>>>>>>> .merge_file_kFrgeu
     public static function getFormSchemaOld(): array
     {
         return [

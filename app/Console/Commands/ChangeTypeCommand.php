@@ -7,15 +7,25 @@ namespace Modules\User\Console\Commands;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Support\Htmlable;
+<<<<<<< .merge_file_SfW9Xa
+=======
+
+use function Laravel\Prompts\select;
+use function Laravel\Prompts\text;
+
+>>>>>>> .merge_file_NgvUCq
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
+<<<<<<< .merge_file_SfW9Xa
 use function Laravel\Prompts\select;
 use function Laravel\Prompts\text;
 
+=======
+>>>>>>> .merge_file_NgvUCq
 /**
  * Command to change user type based on project configuration.
  *
@@ -99,7 +109,11 @@ class ChangeTypeCommand extends Command
         $newType = select('Select new user type:', $options);
 
         $newTypeEnum = $typeClass::tryFrom($newType);
+<<<<<<< .merge_file_SfW9Xa
         if ($newTypeEnum === null) {
+=======
+        if (null === $newTypeEnum) {
+>>>>>>> .merge_file_NgvUCq
             throw new \InvalidArgumentException('Invalid user type selected.');
         }
         Assert::isInstanceOf($newTypeEnum, HasLabel::class);

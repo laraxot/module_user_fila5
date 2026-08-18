@@ -11,7 +11,11 @@ use Modules\User\Filament\Resources\FeatureResource\Pages\EditFeature;
 use Modules\User\Filament\Resources\FeatureResource\Pages\ListFeatures;
 use Modules\User\Models\Feature;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< .merge_file_RWDRSs
 use Filament\Forms\Components\Field;
+=======
+
+>>>>>>> .merge_file_r7UNqP
 /**
  * @property Feature $record
  */
@@ -19,7 +23,11 @@ class FeatureResource extends XotBaseResource
 {
     protected static ?string $model = Feature::class;
 
+<<<<<<< .merge_file_RWDRSs
     //#[\Override]
+=======
+    // #[\Override]
+>>>>>>> .merge_file_r7UNqP
     /**
      * @return array<string, mixed>
      */

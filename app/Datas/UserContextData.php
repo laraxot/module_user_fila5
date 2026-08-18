@@ -14,19 +14,32 @@ use Spatie\LaravelData\Data;
 class UserContextData extends Data
 {
     /**
+<<<<<<< .merge_file_zEBMkI
      * @param  array<int, string>  $roles
+=======
+     * @param array<int, string> $roles
+>>>>>>> .merge_file_5oQ1ZT
      */
     public function __construct(
         public readonly ?string $userId = null,
         public readonly string $email = '',
         public readonly bool $isAdministrator = false,
         public readonly array $roles = [],
+<<<<<<< .merge_file_zEBMkI
     ) {}
+=======
+    ) {
+    }
+>>>>>>> .merge_file_5oQ1ZT
 
     public static function fromUserModel(object $userModel): self
     {
         $rawId = property_exists($userModel, 'id') ? $userModel->id : null;
+<<<<<<< .merge_file_zEBMkI
         $userId = $rawId !== null ? SafeStringCastAction::cast($rawId) : null;
+=======
+        $userId = null !== $rawId ? SafeStringCastAction::cast($rawId) : null;
+>>>>>>> .merge_file_5oQ1ZT
 
         $roles = array_values(array_map(
             static fn (mixed $role): string => SafeStringCastAction::cast($role),
@@ -37,7 +50,11 @@ class UserContextData extends Data
         $email = SafeStringCastAction::cast($rawEmail);
 
         $rawRole = $userModel->role ?? '';
+<<<<<<< .merge_file_zEBMkI
         $isAdmin = ! empty($rawRole) && strtolower(SafeStringCastAction::cast($rawRole)) === 'admin';
+=======
+        $isAdmin = ! empty($rawRole) && 'admin' === strtolower(SafeStringCastAction::cast($rawRole));
+>>>>>>> .merge_file_5oQ1ZT
 
         return new self(
             userId: $userId,

@@ -9,12 +9,20 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Modules\User\Models\Device;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< .merge_file_Fq6GiJ
 use Filament\Forms\Components\Field;
+=======
+
+>>>>>>> .merge_file_3sqqKe
 class DeviceResource extends XotBaseResource
 {
     protected static ?string $model = Device::class;
 
+<<<<<<< .merge_file_Fq6GiJ
     //#[\Override]
+=======
+    // #[\Override]
+>>>>>>> .merge_file_3sqqKe
     /**
      * @return array<string, mixed>
      */

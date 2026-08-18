@@ -8,7 +8,10 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
+<<<<<<< .merge_file_QK6kHC
 use Filament\Forms\Components\Field;
+=======
+>>>>>>> .merge_file_Ws64iB
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
@@ -23,6 +26,10 @@ use Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource\Pages
 use Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource\RelationManagers\UsersRelationManager;
 use Modules\User\Models\SsoProvider;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< .merge_file_QK6kHC
+=======
+
+>>>>>>> .merge_file_Ws64iB
 class SsoProviderResource extends XotBaseResource
 {
     protected static ?string $cluster = Socialite::class;
@@ -32,7 +39,11 @@ class SsoProviderResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
+<<<<<<< .merge_file_QK6kHC
     //#[\Override]
+=======
+    // #[\Override]
+>>>>>>> .merge_file_Ws64iB
     /**
      * @return array<string, mixed>
      */

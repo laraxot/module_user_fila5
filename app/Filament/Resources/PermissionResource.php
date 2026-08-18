@@ -16,12 +16,20 @@ use Modules\User\Filament\Resources\PermissionResource\Pages\EditPermission;
 use Modules\User\Filament\Resources\PermissionResource\Pages\ListPermissions;
 use Modules\User\Models\Permission;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< .merge_file_mhhzjL
 use Filament\Forms\Components\Field;
+=======
+
+>>>>>>> .merge_file_1op5pD
 class PermissionResource extends XotBaseResource
 {
     protected static ?string $model = Permission::class;
 
+<<<<<<< .merge_file_mhhzjL
     //#[\Override]
+=======
+    // #[\Override]
+>>>>>>> .merge_file_1op5pD
     /**
      * @return array<string, mixed>
      */

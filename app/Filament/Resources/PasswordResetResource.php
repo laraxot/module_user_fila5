@@ -12,7 +12,10 @@ use Modules\User\Filament\Resources\PasswordResetResource\Pages\ViewPasswordRese
 use Modules\User\Models\PasswordReset; // Added
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
+<<<<<<< .merge_file_sXilxg
 use Filament\Forms\Components\Field;
+=======
+>>>>>>> .merge_file_9XKbyR
 class PasswordResetResource extends XotBaseResource
 {
     protected static ?string $model = PasswordReset::class;

@@ -16,7 +16,11 @@ test('it does not reference the comment module anywhere under user app', functio
 
     /** @var \SplFileInfo $file */
     foreach ($iterator as $file) {
+<<<<<<< .merge_file_o5HWYi
         if (! $file->isFile() || $file->getExtension() !== 'php') {
+=======
+        if (! $file->isFile() || 'php' !== $file->getExtension()) {
+>>>>>>> .merge_file_l70BdL
             continue;
         }
 
