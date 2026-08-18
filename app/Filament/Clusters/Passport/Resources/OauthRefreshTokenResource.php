@@ -26,7 +26,6 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthRefreshTokenResource\
 use Modules\User\Models\OauthRefreshToken;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-use Filament\Forms\Components\Field;
 class OauthRefreshTokenResource extends XotBaseResource
 {
     protected static ?string $cluster = Passport::class;
@@ -38,7 +37,7 @@ class OauthRefreshTokenResource extends XotBaseResource
      *
      * @return array<string, mixed>
      */
-    //#[\Override]
+    // #[\Override]
     public static function getFormSchemaOld(): array
     {
         return [
