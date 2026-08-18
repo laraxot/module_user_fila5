@@ -5,8 +5,8 @@ tags: [base, classes, corrections, 2025]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "base-classes-corrections-2025-10-15.deprecated correzione estensioni classi base - modulo user"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./base-classes-corrections-.md"
   - "./base-classes-corrections-1.md"

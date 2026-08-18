@@ -5,8 +5,8 @@ tags: [dashboard, filters, integration]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "dashboard-filters-integration dashboard filters integration per widget filament"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./edit-user-widget.md"
   - "./registration-widget-fileupload-fix.md"

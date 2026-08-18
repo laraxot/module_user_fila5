@@ -5,8 +5,8 @@ tags: [spatie, permissions, methods]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "spatie-permissions-methods user module - spatie permission methods reference"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -423,7 +423,7 @@ public function assignAdminRole(User $user): void
 ### Setup Test User
 
 ```php
-use Modules\Fixcity\Models\User;
+use Modules\<nome progetto>\Models\User;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 

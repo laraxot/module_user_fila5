@@ -27,15 +27,6 @@ class UserDropdown extends XotBaseSchemaWidget
     }
 
     /**
-     * Get the form schema.
-     * Required by XotBaseWidget but not used for this simple dropdown.
-     */
-    public function getFormSchemaOld(): array
-    {
-        return [];
-    }
-
-    /**
      * Get view data for the widget.
      * Standardized way to pass data in XotBaseWidget.
      *
@@ -63,13 +54,13 @@ class UserDropdown extends XotBaseSchemaWidget
 
         if (method_exists($profile, 'getAvatarUrl')) {
             $url = $profile->getAvatarUrl();
-            if (\is_string($url) && '' !== $url) {
+            if (\is_string($url) && $url !== '') {
                 return $url;
             }
         }
 
         $avatarUrl = $profile->avatar_url ?? null;
 
-        return \is_string($avatarUrl) && '' !== $avatarUrl ? $avatarUrl : $fallback;
+        return \is_string($avatarUrl) && $avatarUrl !== '' ? $avatarUrl : $fallback;
     }
 }

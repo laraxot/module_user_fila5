@@ -112,7 +112,7 @@ git push laraxot dev
 **Proceed with Option A** — Remove image files from git tracking:
 
 ```bash
-cd /var/www/_bases/base_ptvx_fila5/laravel/Modules/User
+cd /var/www/_bases/<nome repository>/laravel/Modules/User
 
 # Execute the cleanup
 git rm docs/img/*.jpg docs/screenshots/*.png 2>/dev/null

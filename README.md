@@ -8,7 +8,7 @@
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
 [![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
 [![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
+[![<nome progetto> Platform](https://img.shields.io/badge/Platform-<nome progetto>-008758.svg)](#)
 
 > **Chi entra, cosa può fare, su quale team.** Auth AGID-ready, ruoli Spatie, profili — senza compromessi sicurezza.
 
@@ -37,7 +37,7 @@ Identità e autorizzazione per cittadini, operatori e multi-tenant.
 
 ## Vuoi entrare nel team?
 
-Security-minded dev? Qui si definisce **chi è autorizzato** su FixCity.
+Security-minded dev? Qui si definisce **chi è autorizzato** su <nome progetto>.
 
 Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — vedi [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
 
@@ -53,4 +53,4 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ---
 
-**Modulo** `user` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+**Modulo** `user` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5

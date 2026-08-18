@@ -9,7 +9,7 @@ qmd: "User module_user_fila5 push unrelated histories laraxot provtv no merge fo
 issues:
   - https://github.com/provtv/module_user_fila5/issues/16
 discussions:
-  - https://github.com/provtv/base_ptv_fila5/discussions/204
+  - https://github.com/provtv/<nome repository>/discussions/204
 related:
   - "../../multi-org-sync-laraxot-provtv.md"
   - "../../git-multi-org-sync-handoff.md"

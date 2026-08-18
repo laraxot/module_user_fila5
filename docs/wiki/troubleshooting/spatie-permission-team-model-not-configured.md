@@ -5,8 +5,8 @@ tags: [spatie, permission, team, model]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "spatie-permission-team-model-not-configured spatie permission team model not configured"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./filament-user-creation-pty-error.md"
   - "./git-merge-conflict-inventory-1.md"
@@ -46,10 +46,10 @@ Aggiunta la voce `models.team` in tutti i profili config attivi, per evitare dri
 
 - `../../../../../config/permission.php`
 - `../../../../../config/localhost/permission.php`
-- `../../../../../config/local/fixcity/permission.php`
-- `../../../../../config/local/fixcityam/permission.php`
-- `../../../../../config/eu/fixcity/permission.php`
-- `../../../../../config/test/fixcity/permission.php`
+- `../../../../../config/local/<nome progetto>/permission.php`
+- `../../../../../config/local/<nome progetto>am/permission.php`
+- `../../../../../config/eu/<nome progetto>/permission.php`
+- `../../../../../config/test/<nome progetto>/permission.php`
 
 Valore impostato:
 

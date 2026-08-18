@@ -5,8 +5,8 @@ tags: [mcp, database, tools]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "mcp-database-tools mcp (management control panel) tools for database analysis"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -32,7 +32,7 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 {
   "command": "node",
   "args": [
-    "/var/www/_bases/base_techplanner_fila5_mono/bashscripts/mcp/mysql-db-connector.js"
+    "/var/www/_bases/<nome repository>/bashscripts/mcp/mysql-db-connector.js"
   ]
 }
 ```

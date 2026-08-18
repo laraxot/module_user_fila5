@@ -5,8 +5,8 @@ tags: [deviceuser, hasxotfactory]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "deviceuser-hasxotfactory bugfix: deviceuser e hasxotfactory"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./deviceuser-hasxotfactory-fix.md"
   - "./git-conflicts-resolution.md"

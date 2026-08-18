@@ -5,8 +5,8 @@ tags: [edit, user, widget]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "edit-user-widget edituserwidget: widget generico per la modifica dati utente"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./dashboard-filters-integration.md"
   - "./registration-widget-fileupload-fix.md"

@@ -5,8 +5,8 @@ tags: [translation, keys, rules]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "translation-keys-rules regole per le chiavi di traduzione"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./auth-components-best-practices.md"
   - "./auth-widget-rules.md"

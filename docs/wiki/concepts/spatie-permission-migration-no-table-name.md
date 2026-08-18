@@ -5,7 +5,7 @@ module: User
 tags: [spatie, migration, xot-base-migration, model-has-role, config]
 updated: 2026-07-27
 issues:
-  - "https://github.com/laraxot/base_workorder_fila5/issues/7"
+  - "https://github.com/laraxot/<nome repository>/issues/7"
 related:
   - ./spatie-permission-table-names.md
   - ./migration-naming-religion-user.md

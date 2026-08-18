@@ -28,7 +28,7 @@ class TenantsRelationManager extends XotBaseRelationManager
      * @return array<Component>
      */
     #[\Override]
-    public function getFormSchemaOld(): array
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('name')->required()->maxLength(255),

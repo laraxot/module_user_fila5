@@ -5,8 +5,8 @@ tags: [duplicate, methods, analysis]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "duplicate-methods-analysis analisi metodi duplicati - modulo user"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -119,13 +119,13 @@ public function team(): BelongsTo
 - `extends::user` - [Modules/Activity/app/Models/Activity.php:97](Modules/Activity/app/Models/Activity.php) (Modulo: Activity)
 - `Article::user` - [Modules/Blog/app/Models/Article.php:393](Modules/Blog/app/Models/Article.php) (Modulo: Blog)
 - `Comment::user` - [Modules/Blog/app/Models/Comment.php:102](Modules/Blog/app/Models/Comment.php) (Modulo: Blog)
-- `Activity::user` - [Modules/Fixcity/app/Models/Activity.php:58](Modules/Fixcity/app/Models/Activity.php) (Modulo: Fixcity)
-- `PushSubscription::user` - [Modules/Fixcity/app/Models/PushSubscription.php:64](Modules/Fixcity/app/Models/PushSubscription.php) (Modulo: Fixcity)
-- `Ticket::user` - [Modules/Fixcity/app/Models/Ticket.php:572](Modules/Fixcity/app/Models/Ticket.php) (Modulo: Fixcity)
-- `TicketActivity::user` - [Modules/Fixcity/app/Models/TicketActivity.php:78](Modules/Fixcity/app/Models/TicketActivity.php) (Modulo: Fixcity)
-- `TicketComment::user` - [Modules/Fixcity/app/Models/TicketComment.php:68](Modules/Fixcity/app/Models/TicketComment.php) (Modulo: Fixcity)
-- `TicketHour::user` - [Modules/Fixcity/app/Models/TicketHour.php:62](Modules/Fixcity/app/Models/TicketHour.php) (Modulo: Fixcity)
-- `TicketSubscriber::user` - [Modules/Fixcity/app/Models/TicketSubscriber.php:51](Modules/Fixcity/app/Models/TicketSubscriber.php) (Modulo: Fixcity)
+- `Activity::user` - [Modules/<nome progetto>/app/Models/Activity.php:58](Modules/<nome progetto>/app/Models/Activity.php) (Modulo: <nome progetto>)
+- `PushSubscription::user` - [Modules/<nome progetto>/app/Models/PushSubscription.php:64](Modules/<nome progetto>/app/Models/PushSubscription.php) (Modulo: <nome progetto>)
+- `Ticket::user` - [Modules/<nome progetto>/app/Models/Ticket.php:572](Modules/<nome progetto>/app/Models/Ticket.php) (Modulo: <nome progetto>)
+- `TicketActivity::user` - [Modules/<nome progetto>/app/Models/TicketActivity.php:78](Modules/<nome progetto>/app/Models/TicketActivity.php) (Modulo: <nome progetto>)
+- `TicketComment::user` - [Modules/<nome progetto>/app/Models/TicketComment.php:68](Modules/<nome progetto>/app/Models/TicketComment.php) (Modulo: <nome progetto>)
+- `TicketHour::user` - [Modules/<nome progetto>/app/Models/TicketHour.php:62](Modules/<nome progetto>/app/Models/TicketHour.php) (Modulo: <nome progetto>)
+- `TicketSubscriber::user` - [Modules/<nome progetto>/app/Models/TicketSubscriber.php:51](Modules/<nome progetto>/app/Models/TicketSubscriber.php) (Modulo: <nome progetto>)
 - `TaskComment::user` - [Modules/Job/app/Models/TaskComment.php:70](Modules/Job/app/Models/TaskComment.php) (Modulo: Job)
 - `RatingMorph::user` - [Modules/Rating/app/Models/RatingMorph.php:104](Modules/Rating/app/Models/RatingMorph.php) (Modulo: Rating)
 - `AuthenticationLog::user` - [Modules/User/app/Models/AuthenticationLog.php:74](Modules/User/app/Models/AuthenticationLog.php)
@@ -209,7 +209,7 @@ public function getAvatarUrl(): string
 
 **Trovato in  file2 file**:
 
-- `Category::getFullNameAttribute` - [Modules/Fixcity/app/Models/Category.php:174](Modules/Fixcity/app/Models/Category.php) (Modulo: Fixcity)
+- `Category::getFullNameAttribute` - [Modules/<nome progetto>/app/Models/Category.php:174](Modules/<nome progetto>/app/Models/Category.php) (Modulo: <nome progetto>)
 - `BaseUser::getFullNameAttribute` - [Modules/User/app/Models/BaseUser.php:271](Modules/User/app/Models/BaseUser.php)
 
 **Signature**:
@@ -244,7 +244,7 @@ public function getFullNameAttribute(): string
 
 **Trovato in  file4 file**:
 
-- `Ticket::getSlugOptions` - [Modules/Fixcity/app/Models/Ticket.php:234](Modules/Fixcity/app/Models/Ticket.php) (Modulo: Fixcity)
+- `Ticket::getSlugOptions` - [Modules/<nome progetto>/app/Models/Ticket.php:234](Modules/<nome progetto>/app/Models/Ticket.php) (Modulo: <nome progetto>)
 - `Post::getSlugOptions` - [Modules/Lang/app/Models/Post.php:174](Modules/Lang/app/Models/Post.php) (Modulo: Lang)
 - `MailTemplate::getSlugOptions` - [Modules/Notify/app/Models/MailTemplate.php:112](Modules/Notify/app/Models/MailTemplate.php) (Modulo: Notify)
 - `BaseTenant::getSlugOptions` - [Modules/User/app/Models/BaseTenant.php:59](Modules/User/app/Models/BaseTenant.php)
@@ -281,7 +281,7 @@ public function getSlugOptions(): SlugOptions
 
 **Trovato in  file2 file**:
 
-- `Ticket::owner` - [Modules/Fixcity/app/Models/Ticket.php:313](Modules/Fixcity/app/Models/Ticket.php) (Modulo: Fixcity)
+- `Ticket::owner` - [Modules/<nome progetto>/app/Models/Ticket.php:313](Modules/<nome progetto>/app/Models/Ticket.php) (Modulo: <nome progetto>)
 - `BaseTeam::owner` - [Modules/User/app/Models/BaseTeam.php:91](Modules/User/app/Models/BaseTeam.php)
 
 **Signature**:
@@ -538,15 +538,15 @@ public function getRows(): array
 - `BaseModel::casts` - [Modules/Comment/app/Models/BaseModel.php:44](Modules/Comment/app/Models/BaseModel.php) (Modulo: Comment)
 - `BaseMorphPivot::casts` - [Modules/Comment/app/Models/BaseMorphPivot.php:54](Modules/Comment/app/Models/BaseMorphPivot.php) (Modulo: Comment)
 - `BasePivot::casts` - [Modules/Comment/app/Models/BasePivot.php:41](Modules/Comment/app/Models/BasePivot.php) (Modulo: Comment)
-- `Activity::casts` - [Modules/Fixcity/app/Models/Activity.php:50](Modules/Fixcity/app/Models/Activity.php) (Modulo: Fixcity)
-- `BaseModel::casts` - [Modules/Fixcity/app/Models/BaseModel.php:47](Modules/Fixcity/app/Models/BaseModel.php) (Modulo: Fixcity)
-- `BasePivot::casts` - [Modules/Fixcity/app/Models/BasePivot.php:49](Modules/Fixcity/app/Models/BasePivot.php) (Modulo: Fixcity)
-- `Category::casts` - [Modules/Fixcity/app/Models/Category.php:117](Modules/Fixcity/app/Models/Category.php) (Modulo: Fixcity)
-- `Faq::casts` - [Modules/Fixcity/app/Models/Faq.php:63](Modules/Fixcity/app/Models/Faq.php) (Modulo: Fixcity)
-- `FaqCategory::casts` - [Modules/Fixcity/app/Models/FaqCategory.php:67](Modules/Fixcity/app/Models/FaqCategory.php) (Modulo: Fixcity)
-- `PushSubscription::casts` - [Modules/Fixcity/app/Models/PushSubscription.php:58](Modules/Fixcity/app/Models/PushSubscription.php) (Modulo: Fixcity)
-- `Ticket::casts` - [Modules/Fixcity/app/Models/Ticket.php:188](Modules/Fixcity/app/Models/Ticket.php) (Modulo: Fixcity)
-- `TicketCategory::casts` - [Modules/Fixcity/app/Models/TicketCategory.php:51](Modules/Fixcity/app/Models/TicketCategory.php) (Modulo: Fixcity)
+- `Activity::casts` - [Modules/<nome progetto>/app/Models/Activity.php:50](Modules/<nome progetto>/app/Models/Activity.php) (Modulo: <nome progetto>)
+- `BaseModel::casts` - [Modules/<nome progetto>/app/Models/BaseModel.php:47](Modules/<nome progetto>/app/Models/BaseModel.php) (Modulo: <nome progetto>)
+- `BasePivot::casts` - [Modules/<nome progetto>/app/Models/BasePivot.php:49](Modules/<nome progetto>/app/Models/BasePivot.php) (Modulo: <nome progetto>)
+- `Category::casts` - [Modules/<nome progetto>/app/Models/Category.php:117](Modules/<nome progetto>/app/Models/Category.php) (Modulo: <nome progetto>)
+- `Faq::casts` - [Modules/<nome progetto>/app/Models/Faq.php:63](Modules/<nome progetto>/app/Models/Faq.php) (Modulo: <nome progetto>)
+- `FaqCategory::casts` - [Modules/<nome progetto>/app/Models/FaqCategory.php:67](Modules/<nome progetto>/app/Models/FaqCategory.php) (Modulo: <nome progetto>)
+- `PushSubscription::casts` - [Modules/<nome progetto>/app/Models/PushSubscription.php:58](Modules/<nome progetto>/app/Models/PushSubscription.php) (Modulo: <nome progetto>)
+- `Ticket::casts` - [Modules/<nome progetto>/app/Models/Ticket.php:188](Modules/<nome progetto>/app/Models/Ticket.php) (Modulo: <nome progetto>)
+- `TicketCategory::casts` - [Modules/<nome progetto>/app/Models/TicketCategory.php:51](Modules/<nome progetto>/app/Models/TicketCategory.php) (Modulo: <nome progetto>)
 - `BaseModel::casts` - [Modules/Gdpr/app/Models/BaseModel.php:58](Modules/Gdpr/app/Models/BaseModel.php) (Modulo: Gdpr)
 - `BaseMorphPivot::casts` - [Modules/Gdpr/app/Models/BaseMorphPivot.php:67](Modules/Gdpr/app/Models/BaseMorphPivot.php) (Modulo: Gdpr)
 - `BasePivot::casts` - [Modules/Gdpr/app/Models/BasePivot.php:47](Modules/Gdpr/app/Models/BasePivot.php) (Modulo: Gdpr)
@@ -728,7 +728,7 @@ public function scopeWithExtraAttributes(Builder $query): Builder
 
 **Trovato in  file4 file**:
 
-- `Ticket::profile` - [Modules/Fixcity/app/Models/Ticket.php:562](Modules/Fixcity/app/Models/Ticket.php) (Modulo: Fixcity)
+- `Ticket::profile` - [Modules/<nome progetto>/app/Models/Ticket.php:562](Modules/<nome progetto>/app/Models/Ticket.php) (Modulo: <nome progetto>)
 - `RatingMorph::profile` - [Modules/Rating/app/Models/RatingMorph.php:111](Modules/Rating/app/Models/RatingMorph.php) (Modulo: Rating)
 - `BaseUser::profile` - [Modules/User/app/Models/BaseUser.php:243](Modules/User/app/Models/BaseUser.php)
 - `DeviceUser::profile` - [Modules/User/app/Models/DeviceUser.php:90](Modules/User/app/Models/DeviceUser.php)
@@ -819,8 +819,8 @@ public function users(): HasMany
 - `GetViewThemeByViewAction::execute` - [Modules/Cms/app/Actions/GetViewThemeByViewAction.php:13](Modules/Cms/app/Actions/GetViewThemeByViewAction.php) (Modulo: Cms)
 - `SaveFooterConfigAction::execute` - [Modules/Cms/app/Actions/SaveFooterConfigAction.php:14](Modules/Cms/app/Actions/SaveFooterConfigAction.php) (Modulo: Cms)
 - `SaveHeadernavConfigAction::execute` - [Modules/Cms/app/Actions/SaveHeadernavConfigAction.php:12](Modules/Cms/app/Actions/SaveHeadernavConfigAction.php) (Modulo: Cms)
-- `ChangeStatus::execute` - [Modules/Fixcity/app/Actions/ChangeStatus.php:12](Modules/Fixcity/app/Actions/ChangeStatus.php) (Modulo: Fixcity)
-- `GenerateTicketsAction::execute` - [Modules/Fixcity/app/Actions/GenerateTicketsAction.php:24](Modules/Fixcity/app/Actions/GenerateTicketsAction.php) (Modulo: Fixcity)
+- `ChangeStatus::execute` - [Modules/<nome progetto>/app/Actions/ChangeStatus.php:12](Modules/<nome progetto>/app/Actions/ChangeStatus.php) (Modulo: <nome progetto>)
+- `GenerateTicketsAction::execute` - [Modules/<nome progetto>/app/Actions/GenerateTicketsAction.php:24](Modules/<nome progetto>/app/Actions/GenerateTicketsAction.php) (Modulo: <nome progetto>)
 - `CalculateDistanceAction::execute` - [Modules/Geo/app/Actions/CalculateDistanceAction.php:47](Modules/Geo/app/Actions/CalculateDistanceAction.php) (Modulo: Geo)
 - `ClusterLocationsAction::execute` - [Modules/Geo/app/Actions/ClusterLocationsAction.php:25](Modules/Geo/app/Actions/ClusterLocationsAction.php) (Modulo: Geo)
 - `FilterCoordinatesAction::execute` - [Modules/Geo/app/Actions/FilterCoordinatesAction.php:29](Modules/Geo/app/Actions/FilterCoordinatesAction.php) (Modulo: Geo)

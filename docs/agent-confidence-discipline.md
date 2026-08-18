@@ -5,7 +5,7 @@ status: approved
 tags: [agent, confidence, verification]
 created: "2026-05-26"
 updated: "2026-05-26"
-issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/152"
+issue: "https://github.com/provtv/<nome repository>/issues/152"
 related:
   - "./00-index-1.md"
   - "./00-index.md"

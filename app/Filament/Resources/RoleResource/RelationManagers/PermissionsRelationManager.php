@@ -28,7 +28,7 @@ class PermissionsRelationManager extends XotBaseRelationManager
      * @return array<string, Component>
      */
     #[\Override]
-    public function getFormSchemaOld(): array
+    public function getFormSchema(): array
     {
         return [
             'name' => TextInput::make('name')
