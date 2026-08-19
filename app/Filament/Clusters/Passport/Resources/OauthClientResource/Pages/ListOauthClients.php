@@ -27,7 +27,7 @@ class ListOauthClients extends XotBaseListRecords
             'create_personal_access_client' => Action::make('create_personal_access_client')
                 ->label(static::trans('actions.create_personal.label'))
                 ->icon('heroicon-o-key')
-                ->form([
+                ->schema([
                     TextInput::make('name')
                         ->default(SafeStringCastAction::cast(config('app.name')).' '.static::trans('actions.create_personal.label'))
                         ->required()
@@ -49,7 +49,7 @@ class ListOauthClients extends XotBaseListRecords
             'create_password_grant_client' => Action::make('create_password_grant_client')
                 ->label(static::trans('actions.create_password.label'))
                 ->icon('heroicon-o-lock-closed')
-                ->form([
+                ->schema([
                     TextInput::make('name')
                         ->default(SafeStringCastAction::cast(config('app.name')).' '.static::trans('actions.create_password.label'))
                         ->required()
@@ -75,7 +75,7 @@ class ListOauthClients extends XotBaseListRecords
             'create_client_credentials_client' => Action::make('create_client_credentials_client')
                 ->label(static::trans('actions.create_client_credentials.label'))
                 ->icon('heroicon-o-server')
-                ->form([
+                ->schema([
                     TextInput::make('name')
                         ->default(SafeStringCastAction::cast(config('app.name')).' '.static::trans('actions.create_client_credentials.label'))
                         ->required()
