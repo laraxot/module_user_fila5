@@ -92,7 +92,11 @@ describe('User Overview', function (): void {
         $viewProperty->setAccessible(true);
 
         $viewPath = $viewProperty->getValue($widget);
-        Assert::assertStringContainsString((string) 'user::', (string) $viewPath);
-        Assert::assertStringContainsString((string) 'widgets.user-overview', (string) $viewPath);
+        if (! is_string($viewPath)) {
+            Assert::fail('UserOverview::$view is not a string.');
+        }
+
+        Assert::assertStringContainsString('user::', $viewPath);
+        Assert::assertStringContainsString('widgets.user-overview', $viewPath);
     });
 });

@@ -14,7 +14,21 @@ function authBizSuspiciousLogin(): bool
 }
 
 /**
- * @return array<string, mixed>
+ * @return array{
+ *     id: int,
+ *     name: string,
+ *     email: string,
+ *     email_verified_at: Carbon,
+ *     password: string,
+ *     remember_token: string,
+ *     current_team_id: int,
+ *     profile_photo_path: string,
+ *     is_active: bool,
+ *     password_expires_at: Carbon,
+ *     last_login_at: Carbon,
+ *     failed_login_attempts: int,
+ *     locked_until: null
+ * }
  */
 function authBizUserData(): array
 {
@@ -36,7 +50,14 @@ function authBizUserData(): array
 }
 
 /**
- * @return array<string, mixed>
+ * @return array{
+ *     id: int,
+ *     name: string,
+ *     user_id: int,
+ *     personal_team: bool,
+ *     is_active: bool,
+ *     settings: array{timezone: string, language: string, notification_preferences: list<string>}
+ * }
  */
 function authBizTeamData(): array
 {
@@ -55,7 +76,13 @@ function authBizTeamData(): array
 }
 
 /**
- * @return array<string, mixed>
+ * @return array{
+ *     id: int,
+ *     name: string,
+ *     guard_name: string,
+ *     description: string,
+ *     permissions: list<string>
+ * }
  */
 function authBizRoleData(): array
 {
@@ -98,7 +125,16 @@ function authBizOauthData(): array
 }
 
 /**
- * @return array<string, mixed>
+ * @return array{
+ *     id: int,
+ *     user_id: int,
+ *     device_name: string,
+ *     device_type: string,
+ *     device_id: string,
+ *     push_token: string,
+ *     last_active: Carbon,
+ *     is_trusted: bool
+ * }
  */
 function authBizDeviceData(): array
 {

@@ -37,7 +37,12 @@ test('it logs registration with custom properties', function (): void {
 
     $row = DB::connection('user')->table('activity_log')->orderByDesc('id')->first();
     Assert::assertNotNull($row);
-    Assert::assertStringContainsString((string) 'newsletter', (string) (string) $row->properties);
+    $properties = $row->properties;
+    if (! is_string($properties)) {
+        Assert::fail('activity_log.properties is not a string.');
+    }
+
+    Assert::assertStringContainsString('newsletter', $properties);
 });
 
 test('it logs registration with different user types', function (): void {

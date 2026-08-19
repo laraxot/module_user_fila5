@@ -11,7 +11,6 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-require_once __DIR__.'/../Support/team-management-business-helpers.php';
 
 test('can create team', function (): void {
     $owner = teamMgmtBizCreateUser();

@@ -22,7 +22,10 @@ function createPassportClient(): array
 
     $client = $repository->createClientCredentialsGrantClient('Flow Test Client');
 
-    $secret = $client->plainSecret ?? (string) $client->getAttribute('secret');
+    $secret = $client->plainSecret ?? $client->getAttribute('secret');
+    if (! is_string($secret)) {
+        Assert::fail('Passport client secret is not a string.');
+    }
 
     return [
         'client' => $client,
@@ -51,10 +54,15 @@ test('client credentials can be associated to a specific user', function (): voi
     ['client' => $client] = createPassportClient();
     $user = UserFactory::new()->createOne();
 
+    $ownerId = $user->getKey();
+    if (! is_int($ownerId) && ! is_string($ownerId)) {
+        Assert::fail('User key is neither int nor string.');
+    }
+
     $client->owner()->associate($user);
     $client->forceFill([
-        'user_id' => $user->getKey(),
-        'owner_id' => (string) $user->getKey(),
+        'user_id' => $ownerId,
+        'owner_id' => (string) $ownerId,
         'owner_type' => User::class,
     ]);
     $client->save();

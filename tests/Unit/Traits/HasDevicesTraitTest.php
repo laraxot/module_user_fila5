@@ -13,8 +13,10 @@ uses(TestCase::class);
 it('exposes a belongsToMany devices relation on the user model', function (): void {
     $user = TestCase::createTestUser();
 
-    expect($user->devices())->toBeInstanceOf(BelongsToMany::class);
-    expect($user->devices()->getRelated())->toBeInstanceOf(Device::class);
+    $relation = $user->devices();
+
+    expect($relation->getRelated()::class)->toBe(Device::class);
+    expect($relation->getRelationName())->toBe('devices');
 });
 
 it('attaches and retrieves devices for a user', function (): void {

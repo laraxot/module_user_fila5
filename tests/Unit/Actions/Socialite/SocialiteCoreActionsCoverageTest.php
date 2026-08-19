@@ -16,6 +16,7 @@ use Modules\User\Events\InvalidState;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -136,7 +137,7 @@ test('creates socialite user model with normalized attributes', function (): voi
     $result = app(CreateSocialiteUserAction::class)->execute('github', $oauthUser, $user);
 
     Assert::assertInstanceOf(SocialiteUser::class, $result);
-    Assert::assertSame((string) $result->user_id, (string) $user->getKey());
+    Assert::assertSame((string) $result->user_id, (string) XotBasePest::assertModelKey($user->getKey()));
     Assert::assertSame('github', $result->provider);
     Assert::assertSame('provider-user-1', $result->provider_id);
 });

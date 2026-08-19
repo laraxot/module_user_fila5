@@ -30,7 +30,6 @@ uses(TestCase::class);
 // User Pest/PHPUnit — claude-audit documentation ratio.
 // User Pest/PHPUnit — claude-audit documentation ratio.
 // User Pest/PHPUnit — claude-audit documentation ratio.
-require_once __DIR__.'/../Support/team-management-helpers.php';
 
 test('can create team invitations', function (): void {
     ['team' => $team] = teamMgmtBootstrap();

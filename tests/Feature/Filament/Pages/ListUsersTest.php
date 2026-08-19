@@ -17,9 +17,29 @@ use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
 use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+
+/**
+ * Filament v4 deprecata `ListRecords::getTableColumns()` e le sue sorelle: l'override del
+ * modulo eredita la deprecazione, quindi la chiamata diretta è un `method.deprecated`.
+ * Si raggiunge per reflection, esattamente come fa
+ * `Modules\Xot\Filament\Traits\HasXotTable::resolveTableColumnsForXotTable()`.
+ *
+ * @return array<string, object>
+ */
+function listUsersPageTableMember(ListUsers $page, string $method): array
+{
+    /** @var array<string, object> $members */
+    $members = array_filter(
+        XotBasePest::assertArray((new \ReflectionMethod($page, $method))->invoke($page)),
+        'is_object'
+    );
+
+    return $members;
+}
 
 function makeListUsersPage(): ListUsers
 {
@@ -64,7 +84,7 @@ describe('List Users', function (): void {
 
     test('list users page has correct table columns', function (): void {
         $listUsersPage = makeListUsersPage();
-        $columns = $listUsersPage->getTableColumns();
+        $columns = listUsersPageTableMember($listUsersPage, 'getTableColumns');
 
         Assert::assertArrayHasKey('name', $columns);
         Assert::assertArrayHasKey('email', $columns);
@@ -80,14 +100,14 @@ describe('List Users', function (): void {
 
     test('list users page has correct table filters', function (): void {
         $listUsersPage = makeListUsersPage();
-        $filters = $listUsersPage->getTableFilters();
+        $filters = listUsersPageTableMember($listUsersPage, 'getTableFilters');
 
         Assert::assertCount(0, $filters);
     });
 
     test('list users page has correct table actions', function (): void {
         $listUsersPage = makeListUsersPage();
-        $actions = $listUsersPage->getTableActions();
+        $actions = listUsersPageTableMember($listUsersPage, 'getTableActions');
 
         Assert::assertArrayHasKey('change_password', $actions);
 
@@ -134,9 +154,11 @@ describe('List Users', function (): void {
 
     test('list users page can handle search', function (): void {
         $listUsersPage = makeListUsersPage();
-        $columns = $listUsersPage->getTableColumns();
+        $columns = listUsersPageTableMember($listUsersPage, 'getTableColumns');
         $nameColumn = $columns['name'];
         $emailColumn = $columns['email'];
+        Assert::assertInstanceOf(TextColumn::class, $nameColumn);
+        Assert::assertInstanceOf(TextColumn::class, $emailColumn);
 
         Assert::assertTrue($nameColumn->isSearchable());
         Assert::assertTrue($emailColumn->isSearchable());

@@ -7,6 +7,7 @@ use Laravel\Socialite\Contracts\User as SocialiteUser;
 use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\Utils\EmailDomainAnalyzer;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -25,7 +26,11 @@ describe('EmailDomainAnalyzer', function () {
         Config::set('services.google.email_domains.client.tld', null);
     });
 
-    it('throws for empty provider', function () {
+    it('throws for empty provider', function (): void {
+        XotBasePest::assertThrows(
+            static fn () => new EmailDomainAnalyzer(''),
+            InvalidArgumentException::class,
+        );
     });
 
     it('detects first party domain', function () {

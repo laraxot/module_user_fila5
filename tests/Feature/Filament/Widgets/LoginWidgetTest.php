@@ -26,8 +26,11 @@ describe('Login Widget', function (): void {
         $property = $reflection->getProperty('view');
         $property->setAccessible(true);
         $view = $property->getValue($widget);
+        if (! is_string($view)) {
+            Assert::fail('LoginWidget::$view is not a string.');
+        }
 
-        Assert::assertStringContainsString((string) 'pub_theme::filament.widgets.auth.login', (string) $view);
+        Assert::assertStringContainsString('pub_theme::filament.widgets.auth.login', $view);
     });
 
     test('it has correct form schema', function (): void {

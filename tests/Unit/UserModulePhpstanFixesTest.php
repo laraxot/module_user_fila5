@@ -14,6 +14,7 @@ use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -114,7 +115,7 @@ it('events can be instantiated', function (): void {
     $socialiteFactory = SocialiteUserFactory::new();
     \assert($socialiteFactory instanceof Factory);
     $socialiteUser = $socialiteFactory->create([
-        'user_id' => (string) $owner->getKey(),
+        'user_id' => (string) XotBasePest::assertModelKey($owner->getKey()),
         'provider' => 'github',
         'provider_id' => 'provider-'.uniqid(),
     ]);
@@ -140,7 +141,7 @@ it('events have dispatchable trait', function (): void {
     $socialiteFactory = SocialiteUserFactory::new();
     \assert($socialiteFactory instanceof Factory);
     $socialiteUser = $socialiteFactory->create([
-        'user_id' => (string) $owner->getKey(),
+        'user_id' => (string) XotBasePest::assertModelKey($owner->getKey()),
         'provider' => 'github',
         'provider_id' => 'provider-'.uniqid(),
     ]);
