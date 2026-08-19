@@ -2,19 +2,12 @@
 
 declare(strict_types=1);
 
-use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenDefineFunctions;
-use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenFinalClasses;
-use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenNormalClasses;
-use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenPrivateMethods;
-use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenTraits;
-use NunoMaduro\PhpInsights\Domain\Metrics\Architecture\Classes;
-use SlevomatCodingStandard\Sniffs\Commenting\UselessFunctionDocCommentSniff;
-use SlevomatCodingStandard\Sniffs\Namespaces\AlphabeticallySortedUsesSniff;
-use SlevomatCodingStandard\Sniffs\TypeHints\DeclareStrictTypesSniff;
-use SlevomatCodingStandard\Sniffs\TypeHints\DisallowMixedTypeHintSniff;
-use SlevomatCodingStandard\Sniffs\TypeHints\ParameterTypeHintSniff;
-use SlevomatCodingStandard\Sniffs\TypeHints\PropertyTypeHintSniff;
-use SlevomatCodingStandard\Sniffs\TypeHints\ReturnTypeHintSniff;
+/*
+ * PHP Insights è installato standalone in laravel/tools/phpinsights/vendor: le sue classi
+ * non sono nell'autoloader del progetto. I riferimenti vanno quindi scritti come stringhe
+ * FQCN — stessa convenzione di Modules/Activity/phpinsights.php — altrimenti PHPStan
+ * segnala class.notFound su ogni ::class di questo file.
+ */
 
 return [
     /*
@@ -65,24 +58,24 @@ return [
         //  'path/to/directory-or-file'
     ],
     'add' => [
-        Classes::class => [
-            ForbiddenFinalClasses::class,
+        'NunoMaduro\PhpInsights\Domain\Metrics\Architecture\Classes' => [
+            'NunoMaduro\PhpInsights\Domain\Insights\ForbiddenFinalClasses',
         ],
     ],
     'remove' => [
-        AlphabeticallySortedUsesSniff::class,
-        DeclareStrictTypesSniff::class,
-        DisallowMixedTypeHintSniff::class,
-        ForbiddenDefineFunctions::class,
-        ForbiddenNormalClasses::class,
-        ForbiddenTraits::class,
-        ParameterTypeHintSniff::class,
-        PropertyTypeHintSniff::class,
-        ReturnTypeHintSniff::class,
-        UselessFunctionDocCommentSniff::class,
+        'SlevomatCodingStandard\Sniffs\Namespaces\AlphabeticallySortedUsesSniff',
+        'SlevomatCodingStandard\Sniffs\TypeHints\DeclareStrictTypesSniff',
+        'SlevomatCodingStandard\Sniffs\TypeHints\DisallowMixedTypeHintSniff',
+        'NunoMaduro\PhpInsights\Domain\Insights\ForbiddenDefineFunctions',
+        'NunoMaduro\PhpInsights\Domain\Insights\ForbiddenNormalClasses',
+        'NunoMaduro\PhpInsights\Domain\Insights\ForbiddenTraits',
+        'SlevomatCodingStandard\Sniffs\TypeHints\ParameterTypeHintSniff',
+        'SlevomatCodingStandard\Sniffs\TypeHints\PropertyTypeHintSniff',
+        'SlevomatCodingStandard\Sniffs\TypeHints\ReturnTypeHintSniff',
+        'SlevomatCodingStandard\Sniffs\Commenting\UselessFunctionDocCommentSniff',
     ],
     'config' => [
-        ForbiddenPrivateMethods::class => [
+        'NunoMaduro\PhpInsights\Domain\Insights\ForbiddenPrivateMethods' => [
             'title' => 'The usage of private methods is not idiomatic in Laravel.',
         ],
     ],

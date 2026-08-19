@@ -98,7 +98,7 @@ class OauthRefreshTokenResource extends XotBaseResource
                     ->visible(fn (OauthRefreshToken $record): bool => ! (bool) $record->getAttribute('revoked')),
                 DeleteAction::make(),
             ])
-            ->bulkActions([
+            ->toolbarActions([
                 BulkActionGroup::make([
                     DeleteBulkAction::make(),
                 ]),

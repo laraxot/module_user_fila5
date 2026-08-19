@@ -135,17 +135,16 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->visible(fn (OauthAccessToken $record): bool => ! $record->revoked),
                 DeleteAction::make(),
             ])
-            ->bulkActions([
+            ->toolbarActions([
                 BulkAction::make('revoke_all_for_user')
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
                     ->requiresConfirmation()
                     ->action(function (Collection $records): void {
                         $users = $records->pluck('user_id')->unique();
-                        $count = 0;
                         foreach ($users as $userId) {
                             if (is_string($userId) || is_int($userId)) {
-                                $count += app(RevokeAllUserTokensAction::class)->execute(SafeStringCastAction::cast($userId));
+                                app(RevokeAllUserTokensAction::class)->execute(SafeStringCastAction::cast($userId));
                             }
                         }
                         Notification::make()
@@ -282,10 +281,9 @@ class OauthAccessTokenResource extends XotBaseResource
                 ->requiresConfirmation()
                 ->action(function (Collection $records): void {
                     $users = $records->pluck('user_id')->unique();
-                    $count = 0;
                     foreach ($users as $userId) {
                         if (is_string($userId) || is_int($userId)) {
-                            $count += app(RevokeAllUserTokensAction::class)->execute(SafeStringCastAction::cast($userId));
+                            app(RevokeAllUserTokensAction::class)->execute(SafeStringCastAction::cast($userId));
                         }
                     }
                     Notification::make()
