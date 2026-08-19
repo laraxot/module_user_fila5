@@ -9,10 +9,9 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
+use Webmozart\Assert\Assert as WebmozartAssert;
 
 use function Safe\json_decode;
-
-use Webmozart\Assert\Assert as WebmozartAssert;
 
 uses(TestCase::class);
 

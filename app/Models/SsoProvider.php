@@ -13,26 +13,27 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Modules\User\Models\SsoProvider.
  *
- * @property int                        $id
- * @property string                     $name
- * @property string                     $display_name
- * @property string                     $type
- * @property string|null                $entity_id
- * @property string|null                $client_id
- * @property string|null                $client_secret
- * @property string|null                $redirect_url
- * @property string|null                $metadata_url
- * @property string|null                $scopes
- * @property array<string, mixed>|null  $settings
- * @property array<int, string>|null    $domain_whitelist
+ * @property int $id
+ * @property string $name
+ * @property string $display_name
+ * @property string $type
+ * @property string|null $entity_id
+ * @property string|null $client_id
+ * @property string|null $client_secret
+ * @property string|null $redirect_url
+ * @property string|null $metadata_url
+ * @property string|null $scopes
+ * @property array<string, mixed>|null $settings
+ * @property array<int, string>|null $domain_whitelist
  * @property array<string, string>|null $role_mapping
- * @property bool                       $is_active
- * @property Carbon|null                $created_at
- * @property Carbon|null                $updated_at
- * @property string|null                $created_by
- * @property string|null                $updated_by
- * @property Collection<int, User>      $users
- * @property int|null                   $users_count
+ * @property bool $is_active
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property Collection<int, User> $users
+ * @property int|null $users_count
+ *
  * @method static Builder<static>|SsoProvider newModelQuery()
  * @method static Builder<static>|SsoProvider newQuery()
  * @method static Builder<static>|SsoProvider query()
@@ -54,10 +55,13 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|SsoProvider whereType($value)
  * @method static Builder<static>|SsoProvider whereUpdatedAt($value)
  * @method static Builder<static>|SsoProvider whereUpdatedBy($value)
+ *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
+ *
  * @method static \Modules\User\Database\Factories\SsoProviderFactory factory($count = null, $state = [])
+ *
  * @mixin \Eloquent
  */
 class SsoProvider extends BaseModel
@@ -101,7 +105,7 @@ class SsoProvider extends BaseModel
         }
 
         $atPos = strrchr($email, '@');
-        if (false === $atPos) {
+        if ($atPos === false) {
             return false;
         }
 
@@ -113,8 +117,7 @@ class SsoProvider extends BaseModel
     /**
      * Map SAML/OIDC roles to application roles.
      *
-     * @param array<string> $samlRoles
-     *
+     * @param  array<string>  $samlRoles
      * @return list<string>
      */
     public function mapRoles(array $samlRoles): array

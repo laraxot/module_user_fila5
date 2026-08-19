@@ -19,7 +19,8 @@ use Modules\Xot\Datas\XotData;
  * Device model representing a user's device in the system.
  *
  * @property EloquentCollection<int, Model&UserContract> $users
- * @property int|null                                    $users_count
+ * @property int|null $users_count
+ *
  * @method static Builder|Device newModelQuery()
  * @method static Builder|Device newQuery()
  * @method static Builder|Device query()
@@ -40,34 +41,41 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|Device whereUpdatedAt($value)
  * @method static Builder|Device whereUpdatedBy($value)
  * @method static Builder|Device whereVersion($value)
- * @property DeviceUser              $pivot
- * @property ProfileContract|null    $creator
- * @property ProfileContract|null    $updater
- * @property string                  $id
- * @property string|null             $mobile_id
+ *
+ * @property DeviceUser $pivot
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @property string $id
+ * @property string|null $mobile_id
  * @property array<int, string>|null $languages
- * @property string|null             $device
- * @property string|null             $platform
- * @property string|null             $browser
- * @property string|null             $version
- * @property bool|null               $is_robot
- * @property string|null             $robot
- * @property bool|null               $is_desktop
- * @property bool|null               $is_mobile
- * @property bool|null               $is_tablet
- * @property bool|null               $is_phone
- * @property Carbon|null             $created_at
- * @property Carbon|null             $updated_at
- * @property string|null             $updated_by
- * @property string|null             $created_by
- * @property string|null             $uuid
+ * @property string|null $device
+ * @property string|null $platform
+ * @property string|null $browser
+ * @property string|null $version
+ * @property bool|null $is_robot
+ * @property string|null $robot
+ * @property bool|null $is_desktop
+ * @property bool|null $is_mobile
+ * @property bool|null $is_tablet
+ * @property bool|null $is_phone
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property string|null $uuid
+ *
  * @method static Builder<static>|Device whereUuid($value)
+ *
  * @property ProfileContract|null $deleter
+ *
  * @method static \Modules\User\Database\Factories\DeviceFactory factory($count = null, $state = [])
+ *
  * @property string|null $name
  * @property string|null $type
+ *
  * @method static Builder<static>|Device whereName($value)
  * @method static Builder<static>|Device whereType($value)
+ *
  * @mixin \Eloquent
  */
 class Device extends BaseModel

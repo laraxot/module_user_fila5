@@ -6,10 +6,9 @@ use Modules\User\Datas\PasswordData;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionNamedType;
+use Spatie\LaravelData\Data;
 
 use function Safe\file_get_contents;
-
-use Spatie\LaravelData\Data;
 
 uses(TestCase::class);
 
@@ -48,7 +47,7 @@ test('password data can be created with custom parameters', function (): void {
 });
 
 test('password data has default values', function (): void {
-    $defaultPasswordData = new PasswordData();
+    $defaultPasswordData = new PasswordData;
 
     Assert::assertSame(5, $defaultPasswordData->otp_expiration_minutes);
     Assert::assertSame(6, $defaultPasswordData->otp_length);

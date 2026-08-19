@@ -11,7 +11,7 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Action per la creazione di un nuovo utente.
- * 
+ *
  * Segue il pattern Spatie QueueableAction per separazione responsabilità
  * e adherence ai principi Laraxot (DRY + KISS + SOLID + ROBUST).
  */
@@ -22,8 +22,7 @@ class CreateUserAction
     /**
      * Execute the action to create a new user.
      *
-     * @param array<string, mixed> $data
-     * @return User
+     * @param  array<string, mixed>  $data
      */
     public function execute(array $data): User
     {
@@ -69,8 +68,6 @@ class CreateUserAction
 
     /**
      * Get the display name for the action.
-     *
-     * @return string
      */
     public function displayName(): string
     {
@@ -79,8 +76,6 @@ class CreateUserAction
 
     /**
      * Get the description for the action.
-     *
-     * @return string
      */
     public function description(): string
     {

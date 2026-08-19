@@ -13,18 +13,19 @@ use Modules\Tenant\Models\Traits\SushiToPhpArray;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
- * @property int|null                  $id
- * @property string|null               $name
- * @property array<int, string>|null   $scopes
+ * @property int|null $id
+ * @property string|null $name
+ * @property array<int, string>|null $scopes
  * @property array<string, mixed>|null $parameters
- * @property bool|null                 $stateless
- * @property bool|null                 $active
- * @property bool|null                 $socialite
- * @property string|null               $svg
- * @property string|null               $client_id
- * @property string|null               $client_secret
- * @property ProfileContract|null      $creator
- * @property ProfileContract|null      $updater
+ * @property bool|null $stateless
+ * @property bool|null $active
+ * @property bool|null $socialite
+ * @property string|null $svg
+ * @property string|null $client_id
+ * @property string|null $client_secret
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ *
  * @method static Builder|SocialProvider newModelQuery()
  * @method static Builder|SocialProvider newQuery()
  * @method static Builder|SocialProvider query()
@@ -38,16 +39,21 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|SocialProvider whereSocialite($value)
  * @method static Builder|SocialProvider whereStateless($value)
  * @method static Builder|SocialProvider whereSvg($value)
+ *
  * @property string|null $created_at
  * @property string|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
+ *
  * @method static Builder|SocialProvider whereCreatedAt($value)
  * @method static Builder|SocialProvider whereCreatedBy($value)
  * @method static Builder|SocialProvider whereUpdatedAt($value)
  * @method static Builder|SocialProvider whereUpdatedBy($value)
+ *
  * @property ProfileContract|null $deleter
+ *
  * @method static \Modules\User\Database\Factories\SocialProviderFactory factory($count = null, $state = [])
+ *
  * @mixin \Eloquent
  */
 class SocialProvider extends BaseModel

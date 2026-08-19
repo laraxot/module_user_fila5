@@ -14,7 +14,7 @@ describe('Social Login Widget', function () {
         config(['services.google.client_id' => null]);
         config(['services.github.client_id' => null]);
 
-        $widget = new SocialLoginWidget();
+        $widget = new SocialLoginWidget;
         $providers = $widget->getProviders();
 
         Assert::assertCount(1, $providers);
@@ -26,7 +26,7 @@ describe('Social Login Widget', function () {
         config(['services.microsoft.client_id' => null]);
         config(['services.github.client_id' => null]);
 
-        $widget = new SocialLoginWidget();
+        $widget = new SocialLoginWidget;
         $providers = $widget->getProviders();
 
         Assert::assertCount(1, $providers);
@@ -39,7 +39,7 @@ describe('Social Login Widget', function () {
         config(['services.google.client_id' => null]);
         config(['services.github.client_id' => null]);
 
-        $widget = new SocialLoginWidget();
+        $widget = new SocialLoginWidget;
         $providers = $widget->getProviders();
 
         Assert::assertEmpty($providers);
@@ -50,7 +50,7 @@ describe('Social Login Widget', function () {
         config(['services.microsoft.client_id' => 'microsoft-id']);
         config(['services.github.client_id' => null]);
 
-        $widget = new SocialLoginWidget();
+        $widget = new SocialLoginWidget;
         $providers = $widget->getProviders();
 
         Assert::assertCount(2, $providers);

@@ -325,7 +325,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     public function canAccessPanel(Panel $panel): bool
     {
         // $panel->default('admin');
-        if ('admin' !== $panel->getId()) {
+        if ($panel->getId() !== 'admin') {
             $role = $panel->getId();
             /*
              * $xot = XotData::make();
@@ -361,7 +361,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
      */
     public function treeSons(): Collection
     {
-        return $this->membershipTeams ?? new Collection();
+        return $this->membershipTeams ?? new Collection;
     }
 
     /**
@@ -386,22 +386,22 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function getFullNameAttribute(?string $value): string
     {
-        if (null !== $value) {
+        if ($value !== null) {
             return $value;
         }
 
         $fullName = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
 
-        return '' !== $fullName ? $fullName : ($this->email ?? 'User');
+        return $fullName !== '' ? $fullName : ($this->email ?? 'User');
     }
 
     public function getNameAttribute(?string $value): string
     {
-        if (null !== $value) {
+        if ($value !== null) {
             return $value;
         }
 
-        if (null === $this->getKey()) {
+        if ($this->getKey() === null) {
             return $this->email ?? 'User';
         }
 
@@ -416,7 +416,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
                 return true;
             }
 
-            return \PHP_SAPI === 'cli' && ('testing' === getenv('APP_ENV') || 'testing' === getenv('ENV'));
+            return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
         })();
         if ($isTesting) {
             // Do not call update() here to avoid hitting the database.
@@ -427,8 +427,8 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
         try {
             $value = $candidate;
-            while (null !== self::firstWhere(['name' => $value])) {
-                ++$i;
+            while (self::firstWhere(['name' => $value]) !== null) {
+                $i++;
                 $value = $name.'-'.$i;
             }
             $this->update(['name' => $value]);

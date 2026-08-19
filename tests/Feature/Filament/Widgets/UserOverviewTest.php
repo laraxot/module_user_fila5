@@ -17,7 +17,7 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var TestCase $this */
-    $this->widget = new UserOverview();
+    $this->widget = new UserOverview;
     $this->user = UserFactory::new()->createOne([
         'type' => UserType::MasterAdmin,
         'email' => 'admin-'.Str::lower(Str::random(10)).'@example.com',
