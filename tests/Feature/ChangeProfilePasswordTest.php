@@ -45,7 +45,7 @@ describe('Change Profile Password', function (): void {
             ->call('updatePassword')
             ->assertHasNoFormErrors();
 
-        Assert::assertTrue(Hash::check('new_password', $user->fresh()?->password ?? ''));
+        Assert::assertTrue(Hash::check('new_password', $user->fresh()->password ?? ''));
     });
 
     test('cannot change password with wrong current password', function (): void {
@@ -75,6 +75,6 @@ describe('Change Profile Password', function (): void {
             }
         }
         Assert::assertTrue($hasCurrentPasswordError);
-        Assert::assertTrue(Hash::check('old_password', $user->fresh()?->password ?? ''));
+        Assert::assertTrue(Hash::check('old_password', $user->fresh()->password ?? ''));
     });
 });

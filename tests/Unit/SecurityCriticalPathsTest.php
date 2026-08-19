@@ -7,6 +7,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\BaseUser;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -46,5 +47,5 @@ test('password mutator hashes long passphrases instead of storing plaintext', fu
 
     $user->password = $longPassphrase;
 
-    Assert::assertTrue(Hash::check($longPassphrase, (string) $user->getAttributes()['password']));
+    Assert::assertTrue(Hash::check($longPassphrase, XotBasePest::assertString($user->getAttributes()['password'])));
 });

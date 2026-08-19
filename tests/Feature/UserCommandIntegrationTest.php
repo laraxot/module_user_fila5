@@ -5,10 +5,15 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Console\Command;
+use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Arr;
 use Modules\User\Console\Commands\ChangeTypeCommand;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
+use Modules\Xot\Tests\XotBasePest;
+use Webmozart\Assert\Assert as WebmozartAssert;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -38,6 +43,13 @@ describe('User Command Integration', function (): void {
     });
 
     test('validates webmozart assert integration', function (): void {
+        WebmozartAssert::string('user:change-type');
+        WebmozartAssert::classExists(ChangeTypeCommand::class);
+
+        XotBasePest::assertThrows(
+            static fn () => WebmozartAssert::string(42),
+            \InvalidArgumentException::class,
+        );
     });
 
     test('integrates with illuminate support arr', function (): void {
@@ -150,6 +162,9 @@ describe('User Command Integration', function (): void {
     });
 
     test('can access laravel facades', function (): void {
+        Assert::assertInstanceOf(Application::class, App::getFacadeRoot());
+        Assert::assertSame(config('app.name'), Config::get('app.name'));
+        Assert::assertTrue(App::hasBeenBootstrapped());
     });
 
     test('handles reflection operations correctly', function (): void {

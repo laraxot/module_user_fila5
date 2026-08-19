@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
@@ -382,12 +383,12 @@ abstract class TestCase extends XotBaseTestCase
 
     public function permissionRolePivotTable(): string
     {
-        return config('permission.table_names.model_has_roles', 'model_has_role');
+        return Config::string('permission.table_names.model_has_roles', 'model_has_role');
     }
 
     public function permissionPivotTable(): string
     {
-        return config('permission.table_names.model_has_permissions', 'model_has_permission');
+        return Config::string('permission.table_names.model_has_permissions', 'model_has_permission');
     }
 
     /**

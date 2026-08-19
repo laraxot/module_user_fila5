@@ -15,12 +15,7 @@ uses(TestCase::class);
 function getUserMigrationFiles(): array
 {
     $basePath = dirname(__DIR__, 4).'/database/migrations';
-    $files = glob($basePath.'/*.php');
-    $result = [];
-
-    foreach ($files as $file) {
-        $result[] = (string) $file;
-    }
+    $result = array_values(array_filter(glob($basePath.'/*.php'), 'is_string'));
 
     sort($result);
 

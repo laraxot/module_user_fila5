@@ -39,4 +39,15 @@ test('LanguageEnum enum has expected cases', function (): void {
 });
 
 test('UserType has getLabel method', function (): void {
+    foreach (UserType::cases() as $case) {
+        Assert::assertNotSame('', $case->getLabel());
+    }
+});
+
+test('UserType maps every case to a default guard', function (): void {
+    Assert::assertSame('web', UserType::MasterAdmin->getDefaultGuard());
+    Assert::assertSame('web', UserType::BoUser->getDefaultGuard());
+    Assert::assertSame('web', UserType::CustomerUser->getDefaultGuard());
+    Assert::assertSame('web', UserType::System->getDefaultGuard());
+    Assert::assertSame('api', UserType::Technician->getDefaultGuard());
 });

@@ -116,9 +116,12 @@ test('regenerates client secret from model instance and client id', function ():
     Assert::assertNotSame($secretFromModel, $secretFromId);
     Assert::assertNotSame('old-secret-value', $secretFromModel);
     $storedSecret = DB::connection('user')->table('oauth_clients')->where('id', $clientId)->value('secret');
+    if (! is_string($storedSecret)) {
+        Assert::fail('oauth_clients.secret is not a string.');
+    }
 
     Assert::assertNotSame($secretFromId, $storedSecret);
-    Assert::assertTrue(Hash::check($secretFromId, (string) $storedSecret));
+    Assert::assertTrue(Hash::check($secretFromId, $storedSecret));
 });
 
 test('revokes refresh token and returns false for missing token', function (): void {
