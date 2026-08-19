@@ -29,24 +29,13 @@ class ResolveSuperAdminConfigurationAction
      */
     public function execute(): array
     {
-        $shieldData = FilamentShieldData::make();
-        $superAdminConfig = $shieldData->super_admin;
+        $superAdminConfig = FilamentShieldData::make()->super_admin;
 
         return [
-            'enabled' => $this->toBoolean($superAdminConfig->enabled ?? false),
-            'name' => $this->toString($superAdminConfig->name ?? 'Super Admin'),
-            'defined_via_gate' => $this->toBoolean($superAdminConfig->define_via_gate ?? false),
-            'gate_interception_status' => $this->toString($superAdminConfig->intercept_gate ?? 'block'),
+            'enabled' => $superAdminConfig->enabled,
+            'name' => $superAdminConfig->name,
+            'defined_via_gate' => $superAdminConfig->define_via_gate,
+            'gate_interception_status' => $superAdminConfig->intercept_gate,
         ];
-    }
-
-    private function toBoolean(mixed $value): bool
-    {
-        return is_bool($value) ? $value : false;
-    }
-
-    private function toString(mixed $value): string
-    {
-        return is_string($value) ? $value : '';
     }
 }

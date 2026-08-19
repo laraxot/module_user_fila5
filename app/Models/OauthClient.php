@@ -33,7 +33,6 @@ use Laravel\Passport\Client as PassportClient;
  * @property string|null                           $plain_secret
  * @property Collection<int, OauthToken>           $tokens
  * @property int|null                              $tokens_count
- *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient existsIn(array<int, string> $haystack)
  * @method static \Laravel\Passport\Database\Factories\ClientFactory        factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient newModelQuery()
@@ -56,7 +55,6 @@ use Laravel\Passport\Client as PassportClient;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient whereUserId($value)
- *
  * @mixin \Eloquent
  */
 class OauthClient extends PassportClient

@@ -22,10 +22,6 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Page
 use Modules\User\Models\OauthAuthCode;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-<<<<<<< .merge_file_DQVqdc
-use Filament\Forms\Components\Field;
-=======
->>>>>>> .merge_file_kFrgeu
 /**
  * Class OauthAuthCodeResource.
  */
@@ -40,11 +36,7 @@ class OauthAuthCodeResource extends XotBaseResource
      *
      * @return array<string, mixed>
      */
-<<<<<<< .merge_file_DQVqdc
-    //#[\Override]
-=======
     // #[\Override]
->>>>>>> .merge_file_kFrgeu
     public static function getFormSchemaOld(): array
     {
         return [
@@ -107,17 +99,15 @@ class OauthAuthCodeResource extends XotBaseResource
                     ->color('danger')
                     ->requiresConfirmation()
                     ->modalHeading(static::trans('actions.revoke.label'))
-                    ->action(function (mixed $record): void {
-                        if ($record instanceof OauthAuthCode) {
-                            $record->revoked = true;
-                            $record->save();
-                            Notification::make()
-                                ->title(static::trans('actions.revoke.success'))
-                                ->success()
-                                ->send();
-                        }
+                    ->action(function (OauthAuthCode $record): void {
+                        $record->revoked = true;
+                        $record->save();
+                        Notification::make()
+                            ->title(static::trans('actions.revoke.success'))
+                            ->success()
+                            ->send();
                     })
-                    ->visible(fn (mixed $record) => $record instanceof OauthAuthCode && ! $record->revoked),
+                    ->visible(fn (OauthAuthCode $record): bool => ! $record->revoked),
                 DeleteAction::make(),
             ]);
     }

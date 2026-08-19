@@ -51,11 +51,7 @@ class AuthenticationLogsRelationManager extends XotBaseRelationManager
                             ->join(', ');
                     }
 
-<<<<<<< .merge_file_pArqjZ
-                    if ($state === null) {
-=======
                     if (null === $state) {
->>>>>>> .merge_file_lONrns
                         return 'N/A';
                     }
 

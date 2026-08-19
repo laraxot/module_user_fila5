@@ -10,10 +10,6 @@ use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 
-<<<<<<< .merge_file_LWVVwd
-use Filament\Forms\Components\Field;
-=======
->>>>>>> .merge_file_g6iUUo
 /**
  * Class TeamUserResource.
  */
@@ -24,11 +20,7 @@ final class TeamUserResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
-<<<<<<< .merge_file_LWVVwd
-    //#[\Override]
-=======
     // #[\Override]
->>>>>>> .merge_file_g6iUUo
     public static function getFormSchemaOld(): array
     {
         return [

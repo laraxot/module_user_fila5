@@ -14,6 +14,7 @@ use Illuminate\Support\Str;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource;
 use Modules\User\Filament\Resources\UserResource;
+use Modules\User\Models\OauthDeviceCode;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
@@ -37,11 +38,7 @@ class ViewOauthDeviceCode extends XotBaseViewRecord
                                 ->formatStateUsing(fn (mixed $state): string => Str::limit(SafeStringCastAction::cast($state), 15, '...')),
                             'user_code' => TextEntry::make('user_code'),
                             'client_name' => TextEntry::make('client.name')
-                                ->url(function (mixed $state, $record): ?string {
-                                    if (! $record instanceof Model) {
-                                        return null;
-                                    }
-
+                                ->url(function (mixed $state, OauthDeviceCode $record): ?string {
                                     $client = $record->getRelationValue('client');
                                     if (($client instanceof Model) && $client->exists) {
                                         return OauthClientResource::getUrl('view', ['record' => $client]);
@@ -54,11 +51,7 @@ class ViewOauthDeviceCode extends XotBaseViewRecord
                     'user_grid' => Grid::make(2)
                         ->schema([
                             'user_name' => TextEntry::make('user.name')
-                                ->url(function (mixed $state, $record): ?string {
-                                    if (! $record instanceof Model) {
-                                        return null;
-                                    }
-
+                                ->url(function (mixed $state, OauthDeviceCode $record): ?string {
                                     $user = $record->getRelationValue('user');
                                     if (($user instanceof Model) && $user->exists) {
                                         return UserResource::getUrl('view', ['record' => $user]);

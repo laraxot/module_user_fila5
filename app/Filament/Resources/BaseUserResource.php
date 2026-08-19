@@ -19,11 +19,7 @@ use Illuminate\Support\HtmlString;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-<<<<<<< .merge_file_KnCiut
-use Filament\Forms\Components\Field;
-=======
 
->>>>>>> .merge_file_7MFSKE
 abstract class BaseUserResource extends XotBaseResource
 {
     // protected static ?string $model = \Modules\Xot\Datas\XotData::make()->getUserClass();
@@ -43,11 +39,7 @@ abstract class BaseUserResource extends XotBaseResource
     //    static::$extendFormCallback = $callback;
     // }
 
-<<<<<<< .merge_file_KnCiut
-    //#[\Override]
-=======
     // #[\Override]
->>>>>>> .merge_file_7MFSKE
     /**
      * @return array<string, mixed>
      */

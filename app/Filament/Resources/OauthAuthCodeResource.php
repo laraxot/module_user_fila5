@@ -18,15 +18,9 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Page
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ViewOauthAuthCode;
 use Modules\User\Models\OauthAuthCode;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-<<<<<<< .merge_file_JIAqLK
-use function Safe\json_encode;
-
-use Filament\Forms\Components\Field;
-=======
 
 use function Safe\json_encode;
 
->>>>>>> .merge_file_tnWD0J
 /**
  * Class OauthAuthCodeResource.
  */
@@ -41,11 +35,7 @@ class OauthAuthCodeResource extends XotBaseResource
      *
      * @return array<string, Select|TextInput>
      */
-<<<<<<< .merge_file_JIAqLK
-    //#[\Override]
-=======
     // #[\Override]
->>>>>>> .merge_file_tnWD0J
     /**
      * @return array<string, mixed>
      */

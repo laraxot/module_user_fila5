@@ -39,7 +39,7 @@ Conflitti Git nei blocchi PHPDoc di 25+ modelli del modulo User, causati da merg
 1. **ProfileContract vs Meetup\Profile**: mantenuto `ProfileContract` (modulo User generico, non dipende da Meetup)
 2. **Formattazione**: preferita versione compatta (da38c10) senza righe vuote ridondanti
 3. **property-read**: usato dove appropriato per proprietà di sola lettura (Passport Client)
-4. **Factory**: mantenuto riferimento a factory del modulo User
+5. **Resource Filament**: import `Field` inutilizzato rimosso; commento Override con spazio (`// #[\Override]`); riga vuota dopo l'ultimo `use`
 
 ## Riferimenti
 

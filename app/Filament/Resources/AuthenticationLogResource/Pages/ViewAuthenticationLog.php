@@ -8,7 +8,6 @@ use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\User\Filament\Resources\AuthenticationLogResource;
 use Modules\User\Filament\Resources\UserResource;
@@ -34,18 +33,15 @@ class ViewAuthenticationLog extends XotBaseViewRecord
                         ->schema([
                             'id' => TextEntry::make('id'),
                             'authenticatable_type' => TextEntry::make('authenticatable_type')
-                                ->formatStateUsing(fn (?string $state): string => null !== $state ? Str::afterLast($state, '\\') : ''),
+                                ->formatStateUsing(fn (?string $state): string => $state !== null ? Str::afterLast($state, '\\') : ''),
                         ]),
 
                     'details_grid_2' => Grid::make(2)
                         ->schema([
                             'authenticatable_name' => TextEntry::make('authenticatable.name')
-                                ->url(function (mixed $state, ?Model $record): ?string {
-                                    if (! $record instanceof AuthenticationLog) {
-                                        return null;
-                                    }
+                                ->url(function (mixed $state, AuthenticationLog $record): ?string {
                                     $authenticatable = $record->authenticatable;
-                                    if (null !== $authenticatable && method_exists($authenticatable, 'exists') && $authenticatable->exists) {
+                                    if ($authenticatable !== null && method_exists($authenticatable, 'exists') && $authenticatable->exists) {
                                         return UserResource::getUrl('view', ['record' => $authenticatable]);
                                     }
 
@@ -95,7 +91,7 @@ class ViewAuthenticationLog extends XotBaseViewRecord
                 ->schema([
                     'location_data' => TextEntry::make('location')
                         ->formatStateUsing(function (mixed $state): string {
-                            if (null === $state || [] === $state) {
+                            if ($state === null || $state === []) {
                                 return 'No location data';
                             }
 

@@ -12,20 +12,13 @@ use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
-<<<<<<< .merge_file_6thtGn
-use Filament\Forms\Components\Field;
-=======
->>>>>>> .merge_file_a08w6A
 // Already there, but explicitly for boolean()
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages\ListOauthRefreshTokens;
 use Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages\ViewOauthRefreshToken;
 use Modules\User\Models\OauthRefreshToken;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-<<<<<<< .merge_file_6thtGn
-=======
 
->>>>>>> .merge_file_a08w6A
 /**
  * Class OauthRefreshTokenResource.
  */
@@ -46,11 +39,7 @@ class OauthRefreshTokenResource extends XotBaseResource
      *
      * @return array<string, Select|TextInput>
      */
-<<<<<<< .merge_file_6thtGn
-    //#[\Override]
-=======
     // #[\Override]
->>>>>>> .merge_file_a08w6A
     /**
      * @return array<string, mixed>
      */

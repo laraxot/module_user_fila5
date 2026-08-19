@@ -24,7 +24,6 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @property string|null                  $deleted_by
  * @property OauthClient|null             $client
  * @property OauthRefreshToken|null       $refreshToken
- *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken existsIn(array<int, string> $haystack)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken newQuery()
@@ -42,7 +41,7 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUserId($value)
- *
+ * @property-read \Modules\User\Models\User|null $user
  * @mixin \Eloquent
  */
 class OauthToken extends PassportToken

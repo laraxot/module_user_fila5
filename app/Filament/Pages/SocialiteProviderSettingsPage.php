@@ -88,9 +88,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->password()
                             ->revealable()
                             ->placeholder('GOCSPX-xxx')
-                            ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
-                                 ? $this->configString('services.google.client_secret')
-                                 : $this->stringValue($state))
+                            ->dehydrateStateUsing(fn (mixed $state): string => $this->dehydrateSecret($state, 'services.google.client_secret'))
                             ->visible(fn (Get $get): bool => true === $get('google.enabled')),
 
                         TagsInput::make('google.scopes')
@@ -118,9 +116,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                         TextInput::make('github.client_secret')
                             ->password()
                             ->revealable()
-                            ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
-                                 ? $this->configString('services.github.client_secret')
-                                 : $this->stringValue($state))
+                            ->dehydrateStateUsing(fn (mixed $state): string => $this->dehydrateSecret($state, 'services.github.client_secret'))
                             ->visible(fn (Get $get): bool => true === $get('github.enabled')),
 
                         TagsInput::make('github.scopes')
@@ -148,9 +144,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                         TextInput::make('microsoft.client_secret')
                             ->password()
                             ->revealable()
-                            ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
-                                 ? $this->configString('services.microsoft.client_secret')
-                                 : $this->stringValue($state))
+                            ->dehydrateStateUsing(fn (mixed $state): string => $this->dehydrateSecret($state, 'services.microsoft.client_secret'))
                             ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
 
                         TagsInput::make('microsoft.scopes')
@@ -181,7 +175,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
             $google = $this->providerData($data['google']);
             $config['google'] = [
                 'enabled' => ($google['enabled'] ?? false) === true,
-                'client_id' => $this->stringValue($google['client_id'] ?? ''),
+                'client_id' => $this->providerClientId($google),
                 'client_secret' => $this->resolveSecret(
                     $google['client_secret'] ?? '',
                     config('services.google.client_secret'),
@@ -195,7 +189,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
             $github = $this->providerData($data['github']);
             $config['github'] = [
                 'enabled' => ($github['enabled'] ?? false) === true,
-                'client_id' => $this->stringValue($github['client_id'] ?? ''),
+                'client_id' => $this->providerClientId($github),
                 'client_secret' => $this->resolveSecret(
                     $github['client_secret'] ?? '',
                     config('services.github.client_secret'),
@@ -209,7 +203,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
             $microsoft = $this->providerData($data['microsoft']);
             $config['microsoft'] = [
                 'enabled' => ($microsoft['enabled'] ?? false) === true,
-                'client_id' => $this->stringValue($microsoft['client_id'] ?? ''),
+                'client_id' => $this->providerClientId($microsoft),
                 'client_secret' => $this->resolveSecret(
                     $microsoft['client_secret'] ?? '',
                     config('services.microsoft.client_secret'),
@@ -328,14 +322,26 @@ class SocialiteProviderSettingsPage extends XotBasePage
     }
 
     /**
-     * Check if value contains masked characters.
+     * Filament dehydrateStateUsing passa mixed: narrowing locale prima di isMasked(string).
      */
-    private function isMasked(mixed $value): bool
+    private function dehydrateSecret(mixed $state, string $configKey): string
     {
-        if (! is_string($value)) {
-            return false;
+        if (! is_string($state)) {
+            return '';
         }
 
+        if ($this->isMasked($state)) {
+            return $this->configString($configKey);
+        }
+
+        return $state;
+    }
+
+    /**
+     * Check if value contains masked characters.
+     */
+    private function isMasked(string $value): bool
+    {
         return str_contains($value, '•') || str_contains($value, '*');
     }
 
@@ -344,8 +350,8 @@ class SocialiteProviderSettingsPage extends XotBasePage
      */
     private function resolveSecret(mixed $newValue, mixed $existingValue): string
     {
-        $newSecret = $this->stringValue($newValue);
-        $existingSecret = $this->stringValue($existingValue);
+        $newSecret = is_string($newValue) ? $newValue : '';
+        $existingSecret = is_string($existingValue) ? $existingValue : '';
 
         if ($this->isMasked($newSecret) && '' !== $existingSecret) {
             return $existingSecret;
@@ -361,7 +367,9 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
     private function configString(string $key): string
     {
-        return $this->stringValue(config($key, ''));
+        $value = config($key, '');
+
+        return is_string($value) ? $value : '';
     }
 
     /**
@@ -376,17 +384,14 @@ class SocialiteProviderSettingsPage extends XotBasePage
         return $this->stringList([] === $value ? $default : $value);
     }
 
-    private function stringValue(mixed $value): string
+    /**
+     * @param array<string, mixed> $provider
+     */
+    private function providerClientId(array $provider): string
     {
-        if (is_string($value)) {
-            return $value;
-        }
+        $clientId = $provider['client_id'] ?? '';
 
-        if (is_numeric($value) || is_bool($value)) {
-            return (string) $value;
-        }
-
-        return '';
+        return is_string($clientId) ? $clientId : '';
     }
 
     /**

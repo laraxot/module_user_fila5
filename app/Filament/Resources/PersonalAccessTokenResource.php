@@ -8,10 +8,6 @@ use Filament\Forms\Components\TextInput;
 use Modules\User\Models\OauthAccessToken;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-<<<<<<< .merge_file_ZB87Zg
-use Filament\Forms\Components\Field;
-=======
->>>>>>> .merge_file_4yKE8E
 final class PersonalAccessTokenResource extends XotBaseResource
 {
     protected static ?string $model = OauthAccessToken::class;
@@ -21,11 +17,7 @@ final class PersonalAccessTokenResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
-<<<<<<< .merge_file_ZB87Zg
-    //#[\Override]
-=======
     // #[\Override]
->>>>>>> .merge_file_4yKE8E
     public static function getFormSchemaOld(): array
     {
         return [

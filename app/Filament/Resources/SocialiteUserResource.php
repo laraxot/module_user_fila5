@@ -12,11 +12,7 @@ use Modules\User\Filament\Resources\SocialiteUserResource\Pages\EditSocialiteUse
 use Modules\User\Filament\Resources\SocialiteUserResource\Pages\ListSocialiteUsers;
 use Modules\User\Models\SocialiteUser;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-<<<<<<< .merge_file_905asv
-use Filament\Forms\Components\Field;
-=======
 
->>>>>>> .merge_file_9jDWZo
 /**
  * Class SocialiteUserResource.
  */
@@ -29,11 +25,7 @@ class SocialiteUserResource extends XotBaseResource
      *
      * @return array<string, Select|TextInput>
      */
-<<<<<<< .merge_file_905asv
-    //#[\Override]
-=======
     // #[\Override]
->>>>>>> .merge_file_9jDWZo
     /**
      * @return array<string, mixed>
      */

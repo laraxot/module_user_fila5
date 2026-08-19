@@ -13,11 +13,7 @@ use Modules\User\Filament\Clusters\Socialite\Resources\SocialiteUserResource\Pag
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialiteUserResource\Pages\ListSocialiteUsers;
 use Modules\User\Models\SocialiteUser;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-<<<<<<< .merge_file_tunewY
-use Filament\Forms\Components\Field;
-=======
 
->>>>>>> .merge_file_oYjljU
 /**
  * Class SocialiteUserResource.
  */
@@ -32,11 +28,7 @@ class SocialiteUserResource extends XotBaseResource
      *
      * @return array<string, Select|TextInput>
      */
-<<<<<<< .merge_file_tunewY
-    //#[\Override]
-=======
     // #[\Override]
->>>>>>> .merge_file_oYjljU
     /**
      * @return array<string, mixed>
      */

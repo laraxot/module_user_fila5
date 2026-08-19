@@ -9,20 +9,13 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-<<<<<<< .merge_file_6PsBpV
-use Filament\Forms\Components\Field;
-=======
->>>>>>> .merge_file_cYDwof
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Resources\RelationManagers\RelationManager;
 use Modules\User\Filament\Resources\SsoProviderResource\Pages;
 use Modules\User\Filament\Resources\SsoProviderResource\RelationManagers\UsersRelationManager;
 use Modules\User\Models\SsoProvider;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-<<<<<<< .merge_file_6PsBpV
-=======
 
->>>>>>> .merge_file_cYDwof
 class SsoProviderResource extends XotBaseResource
 {
     protected static ?string $model = SsoProvider::class;
@@ -30,11 +23,7 @@ class SsoProviderResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
-<<<<<<< .merge_file_6PsBpV
-    //#[\Override]
-=======
     // #[\Override]
->>>>>>> .merge_file_cYDwof
     public static function getFormSchemaOld(): array
     {
         return [

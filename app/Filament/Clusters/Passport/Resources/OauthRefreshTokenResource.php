@@ -26,10 +26,6 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthRefreshTokenResource\
 use Modules\User\Models\OauthRefreshToken;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-<<<<<<< .merge_file_DnovX7
-use Filament\Forms\Components\Field;
-=======
->>>>>>> .merge_file_4ByWnl
 class OauthRefreshTokenResource extends XotBaseResource
 {
     protected static ?string $cluster = Passport::class;
@@ -41,11 +37,7 @@ class OauthRefreshTokenResource extends XotBaseResource
      *
      * @return array<string, mixed>
      */
-<<<<<<< .merge_file_DnovX7
-    //#[\Override]
-=======
     // #[\Override]
->>>>>>> .merge_file_4ByWnl
     public static function getFormSchemaOld(): array
     {
         return [
@@ -95,15 +87,15 @@ class OauthRefreshTokenResource extends XotBaseResource
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
                     ->requiresConfirmation()
-                    ->action(function (mixed $record): void {
-                        if ($record instanceof OauthRefreshToken && app(RevokeRefreshTokenAction::class)->execute($record)) {
+                    ->action(function (OauthRefreshToken $record): void {
+                        if (app(RevokeRefreshTokenAction::class)->execute($record)) {
                             Notification::make()
                                 ->title(static::trans('actions.revoke.success'))
                                 ->success()
                                 ->send();
                         }
                     })
-                    ->visible(fn (mixed $record) => $record instanceof OauthRefreshToken && ! (bool) $record->getAttribute('revoked')),
+                    ->visible(fn (OauthRefreshToken $record): bool => ! (bool) $record->getAttribute('revoked')),
                 DeleteAction::make(),
             ])
             ->bulkActions([

@@ -6,12 +6,8 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\TeamPermission;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-<<<<<<< .merge_file_Y4aNhp
 return new class extends XotBaseMigration
 {
-=======
-return new class extends XotBaseMigration {
->>>>>>> .merge_file_9HEpoR
     protected ?string $model_class = TeamPermission::class;
 
     /**
