@@ -7,10 +7,6 @@ namespace Modules\User\Filament\Resources;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-<<<<<<< .merge_file_PAoClC
-use Filament\Forms\Components\Field;
-=======
->>>>>>> .merge_file_VvPUze
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Builder;
@@ -19,10 +15,7 @@ use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ViewAuthenti
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-<<<<<<< .merge_file_PAoClC
-=======
 
->>>>>>> .merge_file_VvPUze
 class AuthenticationLogResource extends XotBaseResource
 {
     protected static ?string $model = AuthenticationLog::class;

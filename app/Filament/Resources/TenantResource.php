@@ -10,10 +10,6 @@ namespace Modules\User\Filament\Resources;
 
 use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\TextInput;
-<<<<<<< .merge_file_Bhyjcp
-use Filament\Forms\Components\Field;
-=======
->>>>>>> .merge_file_lgrWGk
 use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
@@ -24,10 +20,7 @@ use Modules\User\Filament\Resources\TenantResource\Pages\ViewTenant;
 use Modules\User\Filament\Resources\TenantResource\RelationManagers\UsersRelationManager;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-<<<<<<< .merge_file_Bhyjcp
-=======
 
->>>>>>> .merge_file_lgrWGk
 class TenantResource extends XotBaseResource
 {
     /**
@@ -46,11 +39,7 @@ class TenantResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
-<<<<<<< .merge_file_Bhyjcp
-    //#[\Override]
-=======
     // #[\Override]
->>>>>>> .merge_file_lgrWGk
     public static function getFormSchemaOld(): array
     {
         return [

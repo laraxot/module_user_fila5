@@ -45,11 +45,7 @@ class TokensRelationManager extends XotBaseRelationManager
             'scopes' => TextColumn::make('scopes')
                 ->limit(30)
                 ->tooltip(function (mixed $state): ?string {
-<<<<<<< .merge_file_CkYzOK
-                    if ($state === null) {
-=======
                     if (null === $state) {
->>>>>>> .merge_file_DXerSj
                         return null;
                     }
                     if (is_array($state)) {

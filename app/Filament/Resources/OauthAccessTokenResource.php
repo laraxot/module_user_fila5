@@ -24,10 +24,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use function Safe\json_encode;
 
-<<<<<<< .merge_file_le2XyK
-use Filament\Forms\Components\Field;
-=======
->>>>>>> .merge_file_OFvtHI
 class OauthAccessTokenResource extends XotBaseResource
 {
     protected static ?string $model = OauthAccessToken::class;
@@ -63,12 +59,9 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('user.name')
                     ->searchable()
                     ->sortable()
-                    ->url(function (mixed $record): ?string {
-                        if (! $record instanceof OauthAccessToken) {
-                            return null;
-                        }
+                    ->url(function (OauthAccessToken $record): ?string {
                         $user = $record->user;
-                        if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+                        if ($user !== null && method_exists($user, 'exists') && $user->exists) {
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -87,7 +80,7 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('scopes')
                     ->limit(30)
                     ->tooltip(function (mixed $state): ?string {
-                        if (null === $state) {
+                        if ($state === null) {
                             return null;
                         }
                         if (is_array($state)) {

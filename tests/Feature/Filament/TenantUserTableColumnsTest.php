@@ -11,11 +11,7 @@ use Webmozart\Assert\Assert;
 
 uses(TestCase::class);
 
-<<<<<<< .merge_file_8Xptww
 /**
-=======
-/*
->>>>>>> .merge_file_zIytR4
  * Regressione: `Filament\Tables\Concerns\HasColumns::getTableColumns()` e'
  * deprecato e ritorna array vuoto. Quella dichiarazione soddisfa il metodo
  * astratto di HasXotTable, quindi una pagina di elenco che non reimplementa il

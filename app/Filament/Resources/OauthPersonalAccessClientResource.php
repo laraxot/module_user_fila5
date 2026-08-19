@@ -13,15 +13,10 @@ use Filament\Actions\EditAction;
 use Filament\Forms\Components\Select;
 use Filament\Schemas\Components\Section;
 use Filament\Tables;
-use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\OauthPersonalAccessClient;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-<<<<<<< .merge_file_LKRIrp
-use Filament\Forms\Components\Field;
-=======
->>>>>>> .merge_file_46QvpX
 /**
  * Class OauthPersonalAccessClientResource.
  */
@@ -42,11 +37,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
-<<<<<<< .merge_file_LKRIrp
-    //#[\Override]
-=======
     // #[\Override]
->>>>>>> .merge_file_46QvpX
     public static function getFormSchemaOld(): array
     {
         return [

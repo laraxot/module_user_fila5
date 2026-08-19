@@ -21,11 +21,7 @@ trait HasSocialite
     public function getProviderField(string $provider, string $field): string
     {
         $socialiteUser = $this->socialiteUsers()->firstWhere(['provider' => $provider]);
-<<<<<<< .merge_file_MYeoY7
-        if ($socialiteUser === null) {
-=======
         if (null === $socialiteUser) {
->>>>>>> .merge_file_YXfiVN
             throw new \Exception('SocialiteUser not found');
         }
 

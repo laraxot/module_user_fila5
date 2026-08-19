@@ -5,10 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
 use Filament\Actions\DeleteBulkAction;
-<<<<<<< .merge_file_HN7gj5
-use Filament\Forms\Components\Field;
-=======
->>>>>>> .merge_file_NjlV4F
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\TextColumn;

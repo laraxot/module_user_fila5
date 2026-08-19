@@ -10,10 +10,6 @@ use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\TenantUser;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-<<<<<<< .merge_file_77sLWD
-use Filament\Forms\Components\Field;
-=======
->>>>>>> .merge_file_0crENX
 /**
  * Class TenantUserResource.
  */
@@ -24,11 +20,7 @@ final class TenantUserResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
-<<<<<<< .merge_file_77sLWD
-    //#[\Override]
-=======
     // #[\Override]
->>>>>>> .merge_file_0crENX
     public static function getFormSchemaOld(): array
     {
         return [

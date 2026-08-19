@@ -7,28 +7,17 @@ namespace Modules\User\Filament\Resources;
 // // use LaraZeus\SpatieTranslatable\Resources\Concerns\Translatable; // Temporaneamente commentato per compatibilità Filament 4.x
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\TextInput;
-<<<<<<< .merge_file_RpRLJm
-use Filament\Forms\Components\Field;
-use Modules\User\Filament\Resources\BaseProfileResource\Pages\ListProfiles;
-use Modules\User\Models\BaseProfile;
-use Modules\Xot\Filament\Resources\XotBaseResource;
-=======
 use Modules\User\Filament\Resources\BaseProfileResource\Pages\ListProfiles;
 use Modules\User\Models\BaseProfile;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
->>>>>>> .merge_file_3HYIkn
 abstract class BaseProfileResource extends XotBaseResource
 {
     // // use Translatable; // Temporaneamente commentato per compatibilità Filament 4.x // Temporaneamente commentato per compatibilità Filament 4.x
 
     protected static ?string $model = BaseProfile::class;
 
-<<<<<<< .merge_file_RpRLJm
-    //#[\Override]
-=======
     // #[\Override]
->>>>>>> .merge_file_3HYIkn
     /**
      * @return array<string, mixed>
      */

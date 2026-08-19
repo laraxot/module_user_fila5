@@ -504,6 +504,7 @@ Activity::create([
 - **Socialite Architecture**: `./socialite-architecture-analysis.md`
 - **Filament Settings Pages**: https://filamentphp.com/docs/3.x/pages/settings
 - **Laravel Config**: https://laravel.com/docs/configuration
+- **Mixed ultima spiaggia**: [`mixed-type-ultima-spiaggia.md`](../../../Notify/docs/mixed-type-ultima-spiaggia.md) — `isMasked(string)`; `dehydrateStateUsing(mixed $state)` resta contratto Filament
 
 ---
 

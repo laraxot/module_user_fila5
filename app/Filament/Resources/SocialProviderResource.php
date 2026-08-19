@@ -16,10 +16,6 @@ use Modules\User\Filament\Resources\SocialProviderResource\Pages\ViewSocialProvi
 use Modules\User\Models\SocialProvider;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
-<<<<<<< .merge_file_DLqUxs
-use Filament\Forms\Components\Field;
-=======
->>>>>>> .merge_file_DxwgCT
 /**
  * @property SocialProvider $record
  *                                  -------
@@ -31,11 +27,7 @@ class SocialProviderResource extends XotBaseResource
     /**
      * @return array<string, mixed>
      */
-<<<<<<< .merge_file_DLqUxs
-    //#[\Override]
-=======
     // #[\Override]
->>>>>>> .merge_file_DxwgCT
     public static function getFormSchemaOld(): array
     {
         return [

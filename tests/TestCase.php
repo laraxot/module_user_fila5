@@ -45,7 +45,6 @@ use function Safe\json_encode;
  * Migrations must be run ONCE externally: php artisan migrate --env=testing
  * DatabaseTransactions handles rollback between tests.
  *
-<<<<<<< .merge_file_P9M5J8
  * @property User|null $user
  * @property User|null $owner
  * @property User|null $member
@@ -61,23 +60,6 @@ use function Safe\json_encode;
  * @property Device|null $device
  * @property Action|null $action
  * @property Widget|null $widget
-=======
- * @property User|null                  $user
- * @property User|null                  $owner
- * @property User|null                  $member
- * @property User|null                  $admin
- * @property User|null                  $baseUser
- * @property Team|null                  $team
- * @property Tenant|null                $tenant1
- * @property Tenant|null                $tenant2
- * @property Google2FA|null             $google2fa
- * @property Command|null               $command
- * @property ListUsers|null             $listUsersPage
- * @property CreateUser|null            $createUserPage
- * @property Device|null                $device
- * @property Action|null                $action
- * @property Widget|null                $widget
->>>>>>> .merge_file_qYFIHV
  * @property Collection<int, User>|null $users
  */
 abstract class TestCase extends XotBaseTestCase
@@ -147,11 +129,7 @@ abstract class TestCase extends XotBaseTestCase
     public function freshUser(User $user): User
     {
         $fresh = $user->fresh();
-<<<<<<< .merge_file_P9M5J8
-        if ($fresh === null) {
-=======
         if (null === $fresh) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('User model could not be refreshed.');
         }
 
@@ -161,11 +139,7 @@ abstract class TestCase extends XotBaseTestCase
     public function requireUser(): User
     {
         $user = $this->user;
-<<<<<<< .merge_file_P9M5J8
-        if ($user === null) {
-=======
         if (null === $user) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('User test property is not initialized.');
         }
 
@@ -175,11 +149,7 @@ abstract class TestCase extends XotBaseTestCase
     public function requireOwner(): User
     {
         $owner = $this->owner;
-<<<<<<< .merge_file_P9M5J8
-        if ($owner === null) {
-=======
         if (null === $owner) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('Owner test property is not initialized.');
         }
 
@@ -189,11 +159,7 @@ abstract class TestCase extends XotBaseTestCase
     public function requireMember(): User
     {
         $member = $this->member;
-<<<<<<< .merge_file_P9M5J8
-        if ($member === null) {
-=======
         if (null === $member) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('Member test property is not initialized.');
         }
 
@@ -203,11 +169,7 @@ abstract class TestCase extends XotBaseTestCase
     public function requireAdmin(): User
     {
         $admin = $this->admin;
-<<<<<<< .merge_file_P9M5J8
-        if ($admin === null) {
-=======
         if (null === $admin) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('Admin test property is not initialized.');
         }
 
@@ -217,11 +179,7 @@ abstract class TestCase extends XotBaseTestCase
     public function requireBaseUser(): User
     {
         $baseUser = $this->baseUser;
-<<<<<<< .merge_file_P9M5J8
-        if ($baseUser === null) {
-=======
         if (null === $baseUser) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('BaseUser test property is not initialized.');
         }
 
@@ -231,11 +189,7 @@ abstract class TestCase extends XotBaseTestCase
     public function requireTeam(): Team
     {
         $team = $this->team;
-<<<<<<< .merge_file_P9M5J8
-        if ($team === null) {
-=======
         if (null === $team) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('Team test property is not initialized.');
         }
 
@@ -245,11 +199,7 @@ abstract class TestCase extends XotBaseTestCase
     public function requireTenant1(): Tenant
     {
         $tenant1 = $this->tenant1;
-<<<<<<< .merge_file_P9M5J8
-        if ($tenant1 === null) {
-=======
         if (null === $tenant1) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('Tenant1 test property is not initialized.');
         }
 
@@ -259,11 +209,7 @@ abstract class TestCase extends XotBaseTestCase
     public function requireTenant2(): Tenant
     {
         $tenant2 = $this->tenant2;
-<<<<<<< .merge_file_P9M5J8
-        if ($tenant2 === null) {
-=======
         if (null === $tenant2) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('Tenant2 test property is not initialized.');
         }
 
@@ -273,11 +219,7 @@ abstract class TestCase extends XotBaseTestCase
     public function requireGoogle2fa(): Google2FA
     {
         $google2fa = $this->google2fa;
-<<<<<<< .merge_file_P9M5J8
-        if ($google2fa === null) {
-=======
         if (null === $google2fa) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('Google2FA test property is not initialized.');
         }
 
@@ -287,11 +229,7 @@ abstract class TestCase extends XotBaseTestCase
     public function requireDevice(): Device
     {
         $device = $this->device;
-<<<<<<< .merge_file_P9M5J8
-        if ($device === null) {
-=======
         if (null === $device) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('Device test property is not initialized.');
         }
 
@@ -301,11 +239,7 @@ abstract class TestCase extends XotBaseTestCase
     public function requireCommand(): Command
     {
         $command = $this->command;
-<<<<<<< .merge_file_P9M5J8
-        if ($command === null) {
-=======
         if (null === $command) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('Command test property is not initialized.');
         }
 
@@ -315,11 +249,7 @@ abstract class TestCase extends XotBaseTestCase
     public function requireAction(): Action
     {
         $action = $this->action;
-<<<<<<< .merge_file_P9M5J8
-        if ($action === null) {
-=======
         if (null === $action) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('Action test property is not initialized.');
         }
 
@@ -328,11 +258,7 @@ abstract class TestCase extends XotBaseTestCase
 
     public function requireWidget(): Widget
     {
-<<<<<<< .merge_file_P9M5J8
-        if ($this->widget === null) {
-=======
         if (null === $this->widget) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('Widget test property is not initialized.');
         }
 
@@ -350,11 +276,7 @@ abstract class TestCase extends XotBaseTestCase
     public function requireCreateUserPage(): CreateUser
     {
         $createUserPage = $this->createUserPage;
-<<<<<<< .merge_file_P9M5J8
-        if ($createUserPage === null) {
-=======
         if (null === $createUserPage) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('CreateUser page test property is not initialized.');
         }
 
@@ -364,11 +286,7 @@ abstract class TestCase extends XotBaseTestCase
     public function requireListUsersPage(): ListUsers
     {
         $listUsersPage = $this->listUsersPage;
-<<<<<<< .merge_file_P9M5J8
-        if ($listUsersPage === null) {
-=======
         if (null === $listUsersPage) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('ListUsers page test property is not initialized.');
         }
 
@@ -381,11 +299,7 @@ abstract class TestCase extends XotBaseTestCase
     public function requireUsers(): Collection
     {
         $users = $this->users;
-<<<<<<< .merge_file_P9M5J8
-        if ($users === null) {
-=======
         if (null === $users) {
->>>>>>> .merge_file_qYFIHV
             $this->fail('Users test property is not initialized.');
         }
 
@@ -400,11 +314,7 @@ abstract class TestCase extends XotBaseTestCase
     public function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
     {
         if (! $this->userTableHasColumn($table, $column)) {
-<<<<<<< .merge_file_P9M5J8
-            $this->skipTest($reason !== '' ? $reason : "Column {$table}.{$column} missing on user connection.");
-=======
             $this->skipTest('' !== $reason ? $reason : "Column {$table}.{$column} missing on user connection.");
->>>>>>> .merge_file_qYFIHV
         }
     }
 
@@ -416,11 +326,7 @@ abstract class TestCase extends XotBaseTestCase
     public function skipUnlessUserTable(string $table, string $reason = ''): void
     {
         if (! $this->userTableExists($table)) {
-<<<<<<< .merge_file_P9M5J8
-            $this->skipTest($reason !== '' ? $reason : "Table {$table} missing on user connection.");
-=======
             $this->skipTest('' !== $reason ? $reason : "Table {$table} missing on user connection.");
->>>>>>> .merge_file_qYFIHV
         }
     }
 
@@ -431,31 +337,19 @@ abstract class TestCase extends XotBaseTestCase
 
     public function skipUnlessUsersTableReady(string $reason = ''): void
     {
-<<<<<<< .merge_file_P9M5J8
-        $this->skipUnlessUserTable('users', $reason !== '' ? $reason : 'users table missing on user connection.');
-=======
         $this->skipUnlessUserTable('users', '' !== $reason ? $reason : 'users table missing on user connection.');
->>>>>>> .merge_file_qYFIHV
     }
 
     public function skipUnlessRoleAssignmentSupported(string $reason = ''): void
     {
         $table = $this->permissionRolePivotTable();
-<<<<<<< .merge_file_P9M5J8
-        $this->skipUnlessUserTable($table, $reason !== '' ? $reason : "Role pivot table {$table} missing on user connection.");
-=======
         $this->skipUnlessUserTable($table, '' !== $reason ? $reason : "Role pivot table {$table} missing on user connection.");
->>>>>>> .merge_file_qYFIHV
     }
 
     public function skipUnlessDirectPermissionSupported(string $reason = ''): void
     {
         $table = $this->permissionPivotTable();
-<<<<<<< .merge_file_P9M5J8
-        $this->skipUnlessUserTable($table, $reason !== '' ? $reason : "Permission pivot table {$table} missing on user connection.");
-=======
         $this->skipUnlessUserTable($table, '' !== $reason ? $reason : "Permission pivot table {$table} missing on user connection.");
->>>>>>> .merge_file_qYFIHV
     }
 
     public function skipUnlessUserSoftDeletes(string $reason = ''): void
@@ -465,11 +359,7 @@ abstract class TestCase extends XotBaseTestCase
             \class_uses_recursive(User::class),
             true
         )) {
-<<<<<<< .merge_file_P9M5J8
-            $this->skipTest($reason !== '' ? $reason : 'User model does not use SoftDeletes.');
-=======
             $this->skipTest('' !== $reason ? $reason : 'User model does not use SoftDeletes.');
->>>>>>> .merge_file_qYFIHV
         }
     }
 
@@ -501,11 +391,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-<<<<<<< .merge_file_P9M5J8
-     * @param  array<string, mixed>  $attributes
-=======
      * @param array<string, mixed> $attributes
->>>>>>> .merge_file_qYFIHV
      */
     public static function createTestUser(array $attributes = []): User
     {
@@ -527,11 +413,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-<<<<<<< .merge_file_P9M5J8
-     * @param  array<string, mixed>  $overrides
-=======
      * @param array<string, mixed> $overrides
->>>>>>> .merge_file_qYFIHV
      */
     public function oauthClientTestPersistedClient(array $overrides = []): OauthClient
     {
@@ -565,11 +447,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-<<<<<<< .merge_file_P9M5J8
-     * @param  array<string, mixed>  $pivot
-=======
      * @param array<string, mixed> $pivot
->>>>>>> .merge_file_qYFIHV
      */
     public function attachTeamMember(Team $team, User $user, array $pivot = []): void
     {
@@ -613,11 +491,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-<<<<<<< .merge_file_P9M5J8
-     * @param  array<string, mixed>  $data
-=======
      * @param array<string, mixed> $data
->>>>>>> .merge_file_qYFIHV
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = 'user'): void
     {
@@ -625,11 +499,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-<<<<<<< .merge_file_P9M5J8
-     * @param  array<string, mixed>  $data
-=======
      * @param array<string, mixed> $data
->>>>>>> .merge_file_qYFIHV
      */
     public function assertDatabaseMissingRow(string $table, array $data, ?string $connection = 'user'): void
     {
@@ -671,11 +541,7 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
-<<<<<<< .merge_file_P9M5J8
-     * @param  array<string, mixed>  $attributes
-=======
      * @param array<string, mixed> $attributes
->>>>>>> .merge_file_qYFIHV
      */
     public function createTeamInvitationRecord(Team $team, array $attributes = []): TeamInvitation
     {
@@ -686,11 +552,7 @@ abstract class TestCase extends XotBaseTestCase
             'role' => 'member',
         ], $attributes);
 
-<<<<<<< .merge_file_P9M5J8
-        $invitation = new TeamInvitation;
-=======
         $invitation = new TeamInvitation();
->>>>>>> .merge_file_qYFIHV
         $invitation->forceFill($payload);
         $invitation->save();
 

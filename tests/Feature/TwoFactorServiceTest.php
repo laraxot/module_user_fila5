@@ -9,18 +9,11 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
-<<<<<<< .merge_file_wFluZW
-use Webmozart\Assert\Assert as WebmozartAssert;
-
-use function Safe\json_decode;
-
-=======
 
 use function Safe\json_decode;
 
 use Webmozart\Assert\Assert as WebmozartAssert;
 
->>>>>>> .merge_file_5xDjD1
 uses(TestCase::class);
 
 /** @return array{User, Google2FA} */
@@ -30,11 +23,7 @@ function twoFactorFixture(): array
     skipUnlessUserColumn('users', 'two_factor_recovery_codes');
     skipUnlessUserColumn('users', 'two_factor_confirmed_at');
 
-<<<<<<< .merge_file_wFluZW
     return [createTestUser(), new Google2FA];
-=======
-    return [createTestUser(), new Google2FA()];
->>>>>>> .merge_file_5xDjD1
 }
 
 describe('Two Factor Service', function (): void {
