@@ -13,7 +13,7 @@ uses(TestCase::class);
 
 function changeTypeCommandInstance(): ChangeTypeCommand
 {
-    return new ChangeTypeCommand();
+    return new ChangeTypeCommand;
 }
 
 test('change type command can be instantiated', function (): void {

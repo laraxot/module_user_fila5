@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Traits;
 
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Modules\User\Models\Device;
 use Modules\User\Tests\TestCase;
 

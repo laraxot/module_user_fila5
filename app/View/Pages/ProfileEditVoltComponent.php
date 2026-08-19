@@ -93,7 +93,7 @@ final class ProfileEditVoltComponent extends Component
             Assert::stringNotEmpty($this->user_id, 'User ID cannot be empty');
 
             // Validate email format
-            Assert::true(false !== filter_var($this->email, FILTER_VALIDATE_EMAIL), 'User email must be valid');
+            Assert::true(filter_var($this->email, FILTER_VALIDATE_EMAIL) !== false, 'User email must be valid');
         } catch (InvalidArgumentException $e) {
             Log::error('Profile mount validation failed', [
                 'error' => $e->getMessage(),
@@ -206,7 +206,7 @@ final class ProfileEditVoltComponent extends Component
             session()->flash('status', $message);
 
             // Send email verification if email changed
-            if ($emailChanged && null === $user->email_verified_at) {
+            if ($emailChanged && $user->email_verified_at === null) {
                 $user->sendEmailVerificationNotification();
             }
         } catch (ValidationException $e) {

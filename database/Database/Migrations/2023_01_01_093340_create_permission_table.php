@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     /**
      * Run the migrations.
      */
@@ -17,7 +18,7 @@ return new class extends XotBaseMigration {
         $columnNames = config('permission.column_names');
         $teams = config('permission.teams');
 
-        if (! \is_array($tableNames) || [] === $tableNames) {
+        if (! \is_array($tableNames) || $tableNames === []) {
             throw new Exception('Error: config/permission.php not loaded. Run [php artisan config:clear] and try again.');
         }
 
@@ -35,7 +36,7 @@ return new class extends XotBaseMigration {
         try {
             // Verifica se l'applicazione è completamente inizializzata
             if (\is_string($cacheKey) && app()->bound('cache')) {
-                $store = \is_string($cacheStore) && 'default' !== $cacheStore ? $cacheStore : null;
+                $store = \is_string($cacheStore) && $cacheStore !== 'default' ? $cacheStore : null;
                 app('cache')->store($store)->forget($cacheKey);
             }
         } catch (Exception $e) {

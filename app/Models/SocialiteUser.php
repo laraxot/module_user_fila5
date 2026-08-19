@@ -19,19 +19,20 @@ use Modules\Xot\Datas\XotData;
 /**
  * Modules\User\Models\SocialiteUser.
  *
- * @property int               $id
- * @property string            $user_id
- * @property string            $provider
- * @property string            $provider_id
- * @property string|null       $token
- * @property string|null       $name
- * @property string|null       $email
- * @property string|null       $avatar
- * @property Carbon|null       $created_at
- * @property Carbon|null       $updated_at
- * @property string|null       $updated_by
- * @property string|null       $created_by
+ * @property int $id
+ * @property string $user_id
+ * @property string $provider
+ * @property string $provider_id
+ * @property string|null $token
+ * @property string|null $name
+ * @property string|null $email
+ * @property string|null $avatar
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
  * @property UserContract|null $user
+ *
  * @method static Builder|SocialiteUser newModelQuery()
  * @method static Builder|SocialiteUser newQuery()
  * @method static Builder|SocialiteUser query()
@@ -47,12 +48,17 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|SocialiteUser whereUpdatedAt($value)
  * @method static Builder|SocialiteUser whereUpdatedBy($value)
  * @method static Builder|SocialiteUser whereUserId($value)
+ *
  * @property string $uuid (DC2Type:guid)
+ *
  * @method static Builder|SocialiteUser whereUuid($value)
+ *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @property ProfileContract|null $deleter
+ *
  * @method static \Modules\User\Database\Factories\SocialiteUserFactory factory($count = null, $state = [])
+ *
  * @mixin \Eloquent
  */
 class SocialiteUser extends BaseModel

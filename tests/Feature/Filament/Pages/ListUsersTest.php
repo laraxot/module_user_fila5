@@ -52,7 +52,7 @@ function makeListUsersPage(): ListUsers
     }
     Filament::setCurrentPanel($panel);
 
-    return new ListUsers();
+    return new ListUsers;
 }
 
 /** @return Collection<int, User> */

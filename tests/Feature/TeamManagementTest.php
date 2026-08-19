@@ -17,7 +17,6 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-
 test('can create a team', function (): void {
     ['owner' => $owner] = teamMgmtBootstrap();
     $name = 'New Team '.uniqid();

@@ -11,6 +11,4 @@ namespace Modules\User\Models\Policies;
 
 use Modules\Xot\Models\Policies\XotBasePolicy;
 
-abstract class UserBasePolicy extends XotBasePolicy
-{
-}
+abstract class UserBasePolicy extends XotBasePolicy {}

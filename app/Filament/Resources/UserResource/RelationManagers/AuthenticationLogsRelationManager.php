@@ -51,7 +51,7 @@ class AuthenticationLogsRelationManager extends XotBaseRelationManager
                             ->join(', ');
                     }
 
-                    if (null === $state) {
+                    if ($state === null) {
                         return 'N/A';
                     }
 

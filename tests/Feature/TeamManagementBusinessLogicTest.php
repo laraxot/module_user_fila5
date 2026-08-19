@@ -11,7 +11,6 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-
 test('can create team', function (): void {
     $owner = teamMgmtBizCreateUser();
     $name = 'Studio Dentistico Milano '.uniqid();
