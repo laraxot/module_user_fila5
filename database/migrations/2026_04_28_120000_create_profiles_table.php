@@ -80,6 +80,24 @@ return new class extends XotBaseMigration
             if (! $this->hasColumn('user_name')) {
                 $table->string('user_name')->nullable();
             }
+            if (! $this->hasColumn('first_name')) {
+                $table->string('first_name')->nullable();
+            }
+            if (! $this->hasColumn('last_name')) {
+                $table->string('last_name')->nullable();
+            }
+            if (! $this->hasColumn('bio')) {
+                $table->text('bio')->nullable();
+            }
+            if (! $this->hasColumn('address')) {
+                $table->string('address')->nullable();
+            }
+            if (! $this->hasColumn('birth_date')) {
+                $table->date('birth_date')->nullable();
+            }
+            if (! $this->hasColumn('gender')) {
+                $table->string('gender', 1)->nullable();
+            }
             if (! $this->hasColumn('email')) {
                 $table->string('email')->nullable();
             }
