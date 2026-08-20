@@ -8,7 +8,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\glob;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-user-db');
 
 test('every vendor passport eloquent model has a local oauth wrapper', function (): void {
     $passportSrc = base_path('vendor/laravel/passport/src');

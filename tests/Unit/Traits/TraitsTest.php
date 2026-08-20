@@ -6,7 +6,7 @@ use Modules\User\Tests\TestCase;
 use Modules\User\Traits\PasswordValidationRules;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-user-db');
 
 test('PasswordValidationRules trait can be used', function (): void {
     Assert::assertTrue(trait_exists(PasswordValidationRules::class));

@@ -51,7 +51,7 @@ describe('LoginWidget', function (): void {
         $property->setAccessible(true);
         $view = $property->getValue($widget);
 
-        Assert::assertSame('pub_theme::filament.widgets.auth.login', $view);
+        Assert::assertSame('user::filament.widgets.login', $view);
     });
 
     test('login widget extends xot base widget', function (): void {

@@ -7,7 +7,7 @@ use Modules\User\Models\TeamInvitation as TeamInvitationModel;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-user-db');
 
 test('TeamInvitation mail can be instantiated', function () {
     Assert::assertTrue(class_exists(TeamInvitation::class));

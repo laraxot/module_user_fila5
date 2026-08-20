@@ -1,0 +1,6 @@
+LOCKED at 2026-08-20T17:13:07+02:00
+Task: cov100-opus5-c
+Agent: opus5-caveman-c
+Session: unknown
+PID: 2745214
+PID note: subshell di lock.sh, gia' terminato — NON usarlo per giudicare il lock stale, guarda 'LOCKED at'

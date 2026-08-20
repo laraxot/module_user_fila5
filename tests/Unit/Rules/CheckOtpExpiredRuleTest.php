@@ -19,4 +19,7 @@ test('CheckOtpExpiredRule can be instantiated', function () {
 test('CheckOtpExpiredRule has validate and message methods', function () {
     $user = UserFactory::new()->makeOne();
     $rule = new CheckOtpExpiredRule($user);
+
+    Assert::assertTrue(method_exists($rule, 'validate'));
+    Assert::assertTrue(method_exists($rule, 'message') || method_exists($rule, '__invoke'));
 });

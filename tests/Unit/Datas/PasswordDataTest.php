@@ -10,7 +10,7 @@ use Spatie\LaravelData\Data;
 
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-user-db');
 
 function samplePasswordData(): PasswordData
 {

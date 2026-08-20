@@ -16,7 +16,7 @@ use PHPUnit\Framework\Assert;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\Sluggable\SlugOptions;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('user-db');
 
 /**
  * @param  array<string, mixed>  $overrides

@@ -6,7 +6,7 @@ use Modules\User\Actions\User\UpdateUserAction;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-user-db');
 
 describe('UpdateUserAction', function (): void {
     test('action is accessible via app', function (): void {
@@ -15,6 +15,8 @@ describe('UpdateUserAction', function (): void {
 
     test('action has execute method', function (): void {
         $action = app(UpdateUserAction::class);
+
+        Assert::assertTrue(method_exists($action, 'execute'));
     });
 
     test('execute method accepts user and data parameters', function (): void {

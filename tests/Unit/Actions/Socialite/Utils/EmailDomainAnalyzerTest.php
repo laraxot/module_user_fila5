@@ -10,7 +10,7 @@ use Modules\User\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-user-db');
 
 function createMockSocialiteUserForEmailAnalyzer(?string $email): SocialiteUser
 {

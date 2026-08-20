@@ -10,7 +10,7 @@ use Modules\User\Models\Device;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('user-db');
 
 /**
  * @param  array<string, mixed>  $attributes

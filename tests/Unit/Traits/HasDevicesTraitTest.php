@@ -7,7 +7,7 @@ namespace Modules\User\Tests\Unit\Traits;
 use Modules\User\Models\Device;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('user-db');
 
 it('exposes a belongsToMany devices relation on the user model', function (): void {
     $user = TestCase::createTestUser();

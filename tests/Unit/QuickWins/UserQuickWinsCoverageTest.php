@@ -16,7 +16,7 @@ use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('user-db');
 
 describe('User quick wins coverage', function (): void {
     it('builds provider not configured exception message', function (): void {
