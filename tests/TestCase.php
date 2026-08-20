@@ -67,6 +67,31 @@ use function Safe\json_encode;
  */
 abstract class TestCase extends XotBaseTestCase
 {
+    /**
+     * Tiene del payload solo le colonne che `oauth_clients` ha davvero.
+     *
+     * I test costruiscono gli insert dichiarando sia i nomi di Passport 11
+     * (`user_id`, `redirect`, `password_client`) sia quelli di Passport 12
+     * (`owner_id`, `redirect_uris`, `grant_types`), per girare su installazioni di
+     * entrambe le generazioni. Spedirli tutti però fa fallire la query su qualunque
+     * schema: qui si scarta ciò che la tabella non ha, e `user_id` viene riportato su
+     * `owner_id` quando è quest'ultimo a esistere.
+     *
+     * @param  array<string, mixed>  $payload
+     * @return array<string, mixed>
+     */
+    public static function oauthClientColumnsOnly(array $payload): array
+    {
+        $columns = Schema::connection('user')->getColumnListing('oauth_clients');
+
+        if (in_array('owner_id', $columns, true)) {
+            $payload['owner_id'] ??= $payload['user_id'] ?? null;
+            $payload['owner_type'] ??= $payload['owner_id'] === null ? null : User::class;
+        }
+
+        return array_intersect_key($payload, array_flip($columns));
+    }
+
     use DatabaseTransactions;
 
     /**
@@ -524,9 +549,18 @@ abstract class TestCase extends XotBaseTestCase
         ], $overrides);
 
         if (Schema::connection('user')->hasColumn('oauth_clients', 'owner_id')) {
-            $payload['owner_id'] = $payload['owner_id'] ?? $payload['user_id'];
-            $payload['owner_type'] = $payload['owner_type'] ?? null;
+            $payload['owner_id'] ??= $payload['user_id'];
+            $payload['owner_type'] ??= $payload['owner_id'] === null ? null : User::class;
         }
+
+        // Il payload dichiara di proposito le colonne di entrambe le generazioni dello
+        // schema Passport (`user_id`/`redirect`/`password_client` contro
+        // `owner_id`/`redirect_uris`/`grant_types`), così l'helper funziona sia su
+        // un'installazione vecchia sia su una nuova. Va però filtrato prima dell'insert:
+        // spedire una colonna che non esiste fa fallire la query, ed è così che quindici
+        // test morivano con `no column named user_id`.
+        $columns = Schema::connection('user')->getColumnListing('oauth_clients');
+        $payload = array_intersect_key($payload, array_flip($columns));
 
         DB::connection('user')->table('oauth_clients')->insert($payload);
 

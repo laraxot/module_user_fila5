@@ -10,7 +10,7 @@ use Modules\User\Actions\Socialite\Utils\UserNameFieldsResolver;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-user-db');
 
 function userNameFieldsResolverMock(?string $name, ?string $email): SocialiteUser
 {

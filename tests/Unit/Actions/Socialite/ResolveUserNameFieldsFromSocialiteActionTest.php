@@ -7,7 +7,7 @@ use Modules\User\Actions\Socialite\ResolveUserNameFieldsFromSocialiteAction;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-user-db');
 
 function createMockSocialiteUser(?string $name, ?string $email): SocialiteUser
 {

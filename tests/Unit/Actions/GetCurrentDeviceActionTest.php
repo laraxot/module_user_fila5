@@ -9,7 +9,7 @@ use Modules\User\Tests\Fakes\FakeAgent;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('user-db');
 
 /**
  * @param  array<string, mixed>  $expected

@@ -17,7 +17,7 @@ use Modules\User\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('user-db');
 
 it('password data can be instantiated', function (): void {
     $passwordData = new PasswordData;

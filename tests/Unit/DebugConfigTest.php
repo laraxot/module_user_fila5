@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\DB;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('user-db');
 
 test('verify database connections config', function () {
     $userDatabase = config('database.connections.user.database');

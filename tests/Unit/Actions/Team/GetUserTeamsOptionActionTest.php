@@ -10,7 +10,7 @@ use Modules\User\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('user-db');
 
 it('returns only the placeholder when the authenticated user has no teams', function (): void {
     $user = TestCase::createTestUser();

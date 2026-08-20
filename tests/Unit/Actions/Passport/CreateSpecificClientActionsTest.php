@@ -10,7 +10,7 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-user-db');
 
 describe('Create specific passport client actions', function (): void {
     afterEach(function (): void {

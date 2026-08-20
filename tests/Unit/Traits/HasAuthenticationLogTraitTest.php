@@ -8,7 +8,7 @@ use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('user-db');
 
 /**
  * @param  array<string, mixed>  $attributes

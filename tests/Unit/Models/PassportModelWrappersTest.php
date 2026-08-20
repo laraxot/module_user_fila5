@@ -16,7 +16,7 @@ use Modules\User\Models\OauthToken;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-user-db');
 
 /**
  * @param  class-string  $wrapperClass
