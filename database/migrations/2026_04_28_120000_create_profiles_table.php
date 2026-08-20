@@ -71,6 +71,15 @@ return new class extends XotBaseMigration
             if (! $this->hasColumn('type')) {
                 $table->string('type')->index()->nullable();
             }
+            // Era dichiarata solo nel blocco CREATE, che su questa tabella non gira mai:
+            // `profiles` viene creata da `Modules/Ptv/.../2024_01_01_000004_create_profiles_table.php`,
+            // che parte prima e non conosce questa colonna. Il model `Profile` invece la
+            // dichiara (`@property string $user_name`) e la usa per costruire l'URL del
+            // profilo, quindi senza questa riga la colonna non esiste in nessun database
+            // già migrato.
+            if (! $this->hasColumn('user_name')) {
+                $table->string('user_name')->nullable();
+            }
             if (! $this->hasColumn('email')) {
                 $table->string('email')->nullable();
             }
