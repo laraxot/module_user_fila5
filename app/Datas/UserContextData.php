@@ -26,15 +26,10 @@ class UserContextData extends Data
 
     public static function fromUserModel(object $userModel): self
     {
-<<<<<<< .merge_file_t9pSJ5
         // property_exists() è sempre false sugli attributi Eloquent (magic, in $attributes):
         // isset() passa da __isset() e vede l'attributo davvero valorizzato.
         $rawId = $userModel->id ?? null;
         $userId = $rawId !== null ? SafeStringCastAction::cast($rawId) : null;
-=======
-        $rawId = property_exists($userModel, 'id') ? $userModel->id : null;
-        $userId = null !== $rawId ? SafeStringCastAction::cast($rawId) : null;
->>>>>>> .merge_file_RTkWDn
 
         $roles = array_values(array_map(
             static fn (mixed $role): string => SafeStringCastAction::cast($role),

@@ -16,12 +16,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('no-user-db');
 
 /**
-<<<<<<< .merge_file_ZlqJgX
  * @param  list<string>  $roles
-=======
- * @param list<string> $roles
- *
->>>>>>> .merge_file_tpDgYX
  * @return Mockery\MockInterface&UserContract
  */
 function userBehaviorUser(
@@ -30,21 +25,13 @@ function userBehaviorUser(
     bool $belongsToTeam = false,
 ): UserContract {
     /** @var Mockery\MockInterface&UserContract $user */
-<<<<<<< .merge_file_ZlqJgX
     $user = Mockery::mock(UserContract::class);
-=======
-    $user = \Mockery::mock(UserContract::class);
->>>>>>> .merge_file_tpDgYX
     $user->shouldReceive('hasRole')
         ->andReturnUsing(static function (array|string $richiesti) use ($roles): bool {
             /** @var list<string> $normalizzati */
             $normalizzati = is_array($richiesti) ? $richiesti : [$richiesti];
 
-<<<<<<< .merge_file_ZlqJgX
             return array_intersect($normalizzati, $roles) !== [];
-=======
-            return [] !== array_intersect($normalizzati, $roles);
->>>>>>> .merge_file_tpDgYX
         });
     $user->shouldReceive('ownsTeam')->andReturn($ownsTeam);
     $user->shouldReceive('belongsToTeam')->andReturn($belongsToTeam);
@@ -53,11 +40,7 @@ function userBehaviorUser(
 }
 
 afterEach(function (): void {
-<<<<<<< .merge_file_ZlqJgX
     Mockery::close();
-=======
-    \Mockery::close();
->>>>>>> .merge_file_tpDgYX
 });
 
 test('RolePolicy: viewAny false, view/create/update/delete true', function (): void {

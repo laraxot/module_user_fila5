@@ -30,14 +30,8 @@ class Otp extends Notification implements ShouldQueue
     /**
      * Get the notification's delivery channels.
      *
-<<<<<<< .merge_file_yjVEV0
      * @param  AnonymousNotifiable  $_notifiable  L'entità da notificare: la notifica è inviata
      *                                            on-demand da SendOtpByUserAction
-=======
-     * @param AnonymousNotifiable $_notifiable L'entità da notificare: la notifica è inviata
-     *                                         on-demand da SendOtpByUserAction
-     *
->>>>>>> .merge_file_Jv7WOe
      * @return array<int, string>
      */
     public function via(AnonymousNotifiable $_notifiable): array

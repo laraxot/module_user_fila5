@@ -89,11 +89,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->revealable()
                             ->placeholder('GOCSPX-xxx')
                             ->dehydrateStateUsing(fn (mixed $state): string => $this->dehydrateSecret($state, 'services.google.client_secret'))
-<<<<<<< .merge_file_7JUQVG
                             ->visible(fn (Get $get): bool => $get('google.enabled') === true),
-=======
-                            ->visible(fn (Get $get): bool => true === $get('google.enabled')),
->>>>>>> .merge_file_3ziJRh
 
                         TagsInput::make('google.scopes')
                             ->placeholder('openid, email, profile')
@@ -121,11 +117,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->password()
                             ->revealable()
                             ->dehydrateStateUsing(fn (mixed $state): string => $this->dehydrateSecret($state, 'services.github.client_secret'))
-<<<<<<< .merge_file_7JUQVG
                             ->visible(fn (Get $get): bool => $get('github.enabled') === true),
-=======
-                            ->visible(fn (Get $get): bool => true === $get('github.enabled')),
->>>>>>> .merge_file_3ziJRh
 
                         TagsInput::make('github.scopes')
                             ->placeholder('read:user, user:email')
@@ -153,11 +145,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->password()
                             ->revealable()
                             ->dehydrateStateUsing(fn (mixed $state): string => $this->dehydrateSecret($state, 'services.microsoft.client_secret'))
-<<<<<<< .merge_file_7JUQVG
                             ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
-=======
-                            ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
->>>>>>> .merge_file_3ziJRh
 
                         TagsInput::make('microsoft.scopes')
                             ->placeholder('User.Read, openid, email')
@@ -340,21 +328,12 @@ class SocialiteProviderSettingsPage extends XotBasePage
     {
         if (! is_string($state)) {
             return '';
-<<<<<<< .merge_file_7JUQVG
         }
 
         if ($this->isMasked($state)) {
             return $this->configString($configKey);
         }
 
-=======
-        }
-
-        if ($this->isMasked($state)) {
-            return $this->configString($configKey);
-        }
-
->>>>>>> .merge_file_3ziJRh
         return $state;
     }
 
@@ -405,11 +384,7 @@ class SocialiteProviderSettingsPage extends XotBasePage
     }
 
     /**
-<<<<<<< .merge_file_7JUQVG
      * @param  array<string, mixed>  $provider
-=======
-     * @param array<string, mixed> $provider
->>>>>>> .merge_file_3ziJRh
      */
     private function providerClientId(array $provider): string
     {

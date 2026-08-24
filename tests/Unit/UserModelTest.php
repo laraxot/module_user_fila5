@@ -64,11 +64,7 @@ describe('User Model', function (): void {
 
     test('has profile relationship in memory', function (): void {
         $user = \stubUser();
-<<<<<<< .merge_file_F2z2oL
         $profile = new Profile;
-=======
-        $profile = new Profile();
->>>>>>> .merge_file_QL9SJ8
         $profile->forceFill(['user_id' => 'test-user-id']);
         $user->setRelation('profile', $profile);
 
@@ -77,33 +73,21 @@ describe('User Model', function (): void {
 
     test('can attach authentication logs in memory', function (): void {
         $user = \stubUser();
-<<<<<<< .merge_file_F2z2oL
         $log = new AuthenticationLog;
-=======
-        $log = new AuthenticationLog();
->>>>>>> .merge_file_QL9SJ8
         $user->setRelation('authentications', collect([$log]));
         Assert::assertCount(1, $user->authentications);
     });
 
     test('can expose owned teams relation when preset', function (): void {
         $user = \stubUser();
-<<<<<<< .merge_file_F2z2oL
         $team = new Team;
-=======
-        $team = new Team();
->>>>>>> .merge_file_QL9SJ8
         $user->setRelation('ownedTeams', collect([$team]));
         Assert::assertCount(1, $user->ownedTeams);
     });
 
     test('can expose teams relation when preset', function (): void {
         $user = \stubUser();
-<<<<<<< .merge_file_F2z2oL
         $team = new Team;
-=======
-        $team = new Team();
->>>>>>> .merge_file_QL9SJ8
         $user->setRelation('teams', collect([$team]));
         Assert::assertCount(1, $user->teams);
     });
@@ -206,11 +190,7 @@ describe('User Model', function (): void {
 
     test('can own teams in memory', function (): void {
         $user = \stubUser();
-<<<<<<< .merge_file_F2z2oL
         $team = new Team;
-=======
-        $team = new Team();
->>>>>>> .merge_file_QL9SJ8
         $team->forceFill(['user_id' => $user->id]);
         $user->setRelation('ownedTeams', collect([$team]));
 

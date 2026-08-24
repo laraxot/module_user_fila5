@@ -324,11 +324,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function canAccessPanel(Panel $panel): bool
     {
-<<<<<<< .merge_file_abyoax
         if ($panel->getId() !== 'admin') {
-=======
-        if ('admin' !== $panel->getId()) {
->>>>>>> .merge_file_i7k6ic
             return $this->hasRole($panel->getId());
         }
 

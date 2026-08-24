@@ -12,15 +12,10 @@ use Filament\Tables\Columns\TextColumn;
 use Illuminate\Contracts\Translation\Translator;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-<<<<<<< .merge_file_Hww5Ht
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Notifications\AnonymousNotifiable;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
-=======
-use Illuminate\Notifications\AnonymousNotifiable;
-use Illuminate\Support\Carbon;
->>>>>>> .merge_file_iNJ84P
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
@@ -33,10 +28,7 @@ use Modules\User\Actions\Passport\RevokeAllUserTokensAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Actions\Shield\ShieldUtilsAction;
 use Modules\User\Contracts\TeamContract;
-<<<<<<< .merge_file_Hww5Ht
 use Modules\User\Tests\Unit\Fixtures\HasShieldPermissionsFixture;
-=======
->>>>>>> .merge_file_iNJ84P
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource;
 use Modules\User\Filament\Pages\SocialiteProviderSettingsPage;
 use Modules\User\Filament\Resources\UserResource;
@@ -47,13 +39,8 @@ use Modules\User\Models\OauthAccessToken;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
-<<<<<<< .merge_file_Hww5Ht
 use Modules\User\Models\Tenant;
 use Modules\User\Models\TeamUser;
-=======
-use Modules\User\Models\TeamUser;
-use Modules\User\Models\Tenant;
->>>>>>> .merge_file_iNJ84P
 use Modules\User\Models\User;
 use Modules\User\Notifications\Auth\Otp;
 use Modules\User\Notifications\Auth\ResetPassword;
@@ -65,7 +52,6 @@ use Modules\User\Rules\CheckOtpExpiredRule;
 use Modules\User\Support\AuthenticationLogQuery;
 use Modules\User\Support\NotificationSchema;
 use Modules\User\Support\Utils;
-<<<<<<< .merge_file_Hww5Ht
 use Modules\User\View\Components\Mail\Message;
 use Modules\User\View\Pages\ProfileEditVoltComponent;
 use Modules\User\Tests\TestCase;
@@ -75,26 +61,13 @@ use Modules\Xot\Tests\ModuleExecuteCoverage;
 use PHPUnit\Framework\Assert;
 use ReflectionMethod;
 use ReflectionProperty;
-=======
-use Modules\User\Tests\TestCase;
-use Modules\User\Tests\Unit\Fixtures\HasShieldPermissionsFixture;
-use Modules\User\View\Components\Mail\Message;
-use Modules\User\View\Pages\ProfileEditVoltComponent;
-use Modules\Xot\Tests\ModuleBusinessCoverage;
-use Modules\Xot\Tests\ModuleExecuteCoverage;
-use PHPUnit\Framework\Assert;
->>>>>>> .merge_file_iNJ84P
 
 use function Safe\glob;
 
 uses(TestCase::class)->group('no-user-db');
 
 afterEach(function (): void {
-<<<<<<< .merge_file_Hww5Ht
     Mockery::close();
-=======
-    \Mockery::close();
->>>>>>> .merge_file_iNJ84P
 });
 
 /**
@@ -112,11 +85,7 @@ function userExecuteContext(): array
  * Le eccezioni applicative sono tollerate — questi test girano senza database.
  * La sonda non deve contenere asserzioni: verrebbero inghiottite dal catch.
  *
-<<<<<<< .merge_file_Hww5Ht
  * @param  \Closure(): void  $probe
-=======
- * @param \Closure(): void $probe
->>>>>>> .merge_file_iNJ84P
  */
 function userCaptureFatal(\Closure $probe): ?\Error
 {
@@ -131,12 +100,9 @@ function userCaptureFatal(\Closure $probe): ?\Error
     return null;
 }
 
-<<<<<<< .merge_file_Hww5Ht
 /**
  * @return mixed
  */
-=======
->>>>>>> .merge_file_iNJ84P
 function userInvoke(object $target, string $method, mixed ...$args): mixed
 {
     $reflection = new \ReflectionMethod($target, $method);
@@ -147,11 +113,7 @@ function userInvoke(object $target, string $method, mixed ...$args): mixed
 
 function userMockWithTeams(string $id = 'owner-1'): User
 {
-<<<<<<< .merge_file_Hww5Ht
     $user = new User;
-=======
-    $user = new User();
->>>>>>> .merge_file_iNJ84P
     $user->forceFill(['id' => $id, 'current_team_id' => null, 'total_members' => 0]);
 
     return $user;
@@ -159,11 +121,7 @@ function userMockWithTeams(string $id = 'owner-1'): User
 
 function userTeamFixture(string $ownerId, int $teamId = 1, bool $personal = false): Team
 {
-<<<<<<< .merge_file_Hww5Ht
     $team = new Team;
-=======
-    $team = new Team();
->>>>>>> .merge_file_iNJ84P
     $team->forceFill([
         'id' => $teamId,
         'user_id' => $ownerId,
@@ -180,12 +138,7 @@ function userTeamFixture(string $ownerId, int $teamId = 1, bool $personal = fals
  * `Illuminate\Contracts\Validation\ValidationRule::validate()`: il test esercita
  * il contratto reale della regola, non una closure di comodo.
  *
-<<<<<<< .merge_file_Hww5Ht
  * @param  bool  $flag  alzato quando la regola invoca `$fail`
-=======
- * @param bool $flag alzato quando la regola invoca `$fail`
- *
->>>>>>> .merge_file_iNJ84P
  * @return \Closure(string, string|null=): PotentiallyTranslatedString
  */
 function userFailClosure(bool &$flag): \Closure
@@ -215,11 +168,7 @@ function userDehydrateField(object $field, mixed $state): mixed
         return $state;
     }
 
-<<<<<<< .merge_file_Hww5Ht
     $ref = new ReflectionProperty($field, 'dehydrateStateUsing');
-=======
-    $ref = new \ReflectionProperty($field, 'dehydrateStateUsing');
->>>>>>> .merge_file_iNJ84P
     $ref->setAccessible(true);
     $callback = $ref->getValue($field);
     if (! $callback instanceof \Closure) {
@@ -229,18 +178,12 @@ function userDehydrateField(object $field, mixed $state): mixed
     return $callback($state);
 }
 
-<<<<<<< .merge_file_Hww5Ht
 /**
  * @param  mixed  ...$args
  */
 function userInvokeStateClosure(object $field, mixed ...$args): mixed
 {
     $ref = new ReflectionProperty($field, 'getConstantStateUsing');
-=======
-function userInvokeStateClosure(object $field, mixed ...$args): mixed
-{
-    $ref = new \ReflectionProperty($field, 'getConstantStateUsing');
->>>>>>> .merge_file_iNJ84P
     $ref->setAccessible(true);
     $callback = $ref->getValue($field);
     if (! $callback instanceof \Closure) {
@@ -255,11 +198,7 @@ function userInvokeStateClosure(object $field, mixed ...$args): mixed
  */
 function userSectionChildren(Section $section): array
 {
-<<<<<<< .merge_file_Hww5Ht
     $ref = new ReflectionProperty($section, 'childComponents');
-=======
-    $ref = new \ReflectionProperty($section, 'childComponents');
->>>>>>> .merge_file_iNJ84P
     $ref->setAccessible(true);
     /** @var array<string, mixed> $children */
     $children = $ref->getValue($section);
@@ -283,11 +222,7 @@ function userSectionChildren(Section $section): array
 }
 
 /**
-<<<<<<< .merge_file_Hww5Ht
  * @param  array<int|string, SchemaComponent>  $schema
-=======
- * @param array<int|string, SchemaComponent> $schema
->>>>>>> .merge_file_iNJ84P
  */
 function userFindNamedComponent(array $schema, string $name): ?SchemaComponent
 {
@@ -316,11 +251,7 @@ function userFindNamedComponent(array $schema, string $name): ?SchemaComponent
 function userProfileMock(string $password = 'Secret123!'): User
 {
     /** @var Mockery\MockInterface&User $user */
-<<<<<<< .merge_file_Hww5Ht
     $user = Mockery::mock(User::class)->makePartial();
-=======
-    $user = \Mockery::mock(User::class)->makePartial();
->>>>>>> .merge_file_iNJ84P
     $user->forceFill([
         'id' => 'profile-user-1',
         'first_name' => 'Mario',
@@ -410,11 +341,7 @@ describe('User execute coverage floor 50', function (): void {
             'services.microsoft.scopes' => ['User.Read'],
         ]);
 
-<<<<<<< .merge_file_Hww5Ht
         $page = new SocialiteProviderSettingsPage;
-=======
-        $page = new SocialiteProviderSettingsPage();
->>>>>>> .merge_file_iNJ84P
         $page->mount();
 
         Assert::assertTrue($page->google['enabled']);
@@ -446,11 +373,7 @@ describe('User execute coverage floor 50', function (): void {
         Assert::assertNotEmpty(OauthAccessTokenResource::getTableBulkActions());
         Assert::assertNotEmpty(OauthAccessTokenResource::getFormSchemaOld());
 
-<<<<<<< .merge_file_Hww5Ht
         $resource = new OauthAccessTokenResource;
-=======
-        $resource = new OauthAccessTokenResource();
->>>>>>> .merge_file_iNJ84P
         $columns = $resource->getTableColumns();
 
         Assert::assertArrayHasKey('id', $columns);
@@ -477,11 +400,7 @@ describe('User execute coverage floor 50', function (): void {
             'filament-shield.exclude.widgets' => ['BazWidget'],
             'filament-shield.auth_provider_model.fqcn' => User::class,
             'filament-shield.register_role_policy' => true,
-<<<<<<< .merge_file_Hww5Ht
             'permission.models.role' => \Modules\User\Models\Role::class,
-=======
-            'permission.models.role' => Role::class,
->>>>>>> .merge_file_iNJ84P
             'permission.models.permission' => \Modules\User\Models\Permission::class,
         ]);
 
@@ -509,11 +428,7 @@ describe('User execute coverage floor 50', function (): void {
         Assert::assertTrue(ShieldUtilsAction::doesResourceHaveCustomPermissions($resourceClass));
         Assert::assertSame(['custom-view', 'custom-update'], ShieldUtilsAction::getResourcePermissionPrefixes($resourceClass));
         Assert::assertSame(User::class, ShieldUtilsAction::showModelPath($resourceClass));
-<<<<<<< .merge_file_Hww5Ht
         Assert::assertSame(\Modules\User\Models\Role::class, ShieldUtilsAction::getRoleModel());
-=======
-        Assert::assertSame(Role::class, ShieldUtilsAction::getRoleModel());
->>>>>>> .merge_file_iNJ84P
         Assert::assertSame(\Modules\User\Models\Permission::class, ShieldUtilsAction::getPermissionModel());
 
         Assert::assertSame('web', Utils::getFilamentAuthGuard());
@@ -542,11 +457,7 @@ describe('User execute coverage floor 50', function (): void {
     });
 
     test('profile edit volt component mount inizializza stato utente', function (): void {
-<<<<<<< .merge_file_Hww5Ht
         $user = new User;
-=======
-        $user = new User();
->>>>>>> .merge_file_iNJ84P
         $user->forceFill([
             'id' => 'user-1',
             'first_name' => 'Mario',
@@ -556,11 +467,7 @@ describe('User execute coverage floor 50', function (): void {
 
         Auth::shouldReceive('user')->once()->andReturn($user);
 
-<<<<<<< .merge_file_Hww5Ht
         $component = new ProfileEditVoltComponent;
-=======
-        $component = new ProfileEditVoltComponent();
->>>>>>> .merge_file_iNJ84P
         $component->mount();
 
         Assert::assertSame('Mario', $component->first_name);
@@ -627,11 +534,7 @@ describe('User execute coverage — HasTeams trait mock', function (): void {
         $team = userTeamFixture('owner-4', 401);
         $memberUser = userMockWithTeams('member-4');
 
-<<<<<<< .merge_file_Hww5Ht
         $members = Mockery::mock(BelongsToMany::class);
-=======
-        $members = \Mockery::mock(BelongsToMany::class);
->>>>>>> .merge_file_iNJ84P
         $members->shouldReceive('attach')->once()->andReturn(true);
         $members->shouldReceive('detach')->once()->andReturn(true);
         $members->shouldReceive('updateExistingPivot')->twice()->andReturn(true);
@@ -639,11 +542,7 @@ describe('User execute coverage — HasTeams trait mock', function (): void {
         $members->shouldReceive('wherePivot')->with('role', 'member')->andReturnSelf();
         $members->shouldReceive('get')->andReturn(collect([$memberUser]));
 
-<<<<<<< .merge_file_Hww5Ht
         $teamMock = Mockery::mock($team)->makePartial();
-=======
-        $teamMock = \Mockery::mock($team)->makePartial();
->>>>>>> .merge_file_iNJ84P
         $teamMock->shouldReceive('members')->andReturn($members);
         // Il partial mock di un Team resta un TeamContract: la guardia lo dichiara
         // a PHPStan e verifica davvero che Mockery non abbia perso il contratto.
@@ -657,11 +556,7 @@ describe('User execute coverage — HasTeams trait mock', function (): void {
         Assert::assertCount(1, $owner->getTeamAdmins($teamMock));
         Assert::assertCount(1, $owner->getTeamMembers($teamMock));
 
-<<<<<<< .merge_file_Hww5Ht
         $membership = new TeamUser;
-=======
-        $membership = new TeamUser();
->>>>>>> .merge_file_iNJ84P
         $membership->forceFill(['user' => $memberUser]);
         $owner->setRelation('teamUsers', collect([$membership]));
         $owner->setRelation('owner', $owner);
@@ -685,11 +580,7 @@ describe('User execute coverage — ProfileEditVoltComponent', function (): void
         Auth::shouldReceive('id')->andReturn('profile-user-1');
         Auth::shouldReceive('logout')->andReturnNull();
 
-<<<<<<< .merge_file_Hww5Ht
         $component = new ProfileEditVoltComponent;
-=======
-        $component = new ProfileEditVoltComponent();
->>>>>>> .merge_file_iNJ84P
         $component->user_id = 'profile-user-1';
         $component->first_name = 'Mario';
         $component->last_name = 'Rossi';
@@ -719,11 +610,7 @@ describe('User execute coverage — ProfileEditVoltComponent', function (): void
     test('mount gestisce dati utente invalidi', function (): void {
         Log::shouldReceive('error')->atLeast()->once();
 
-<<<<<<< .merge_file_Hww5Ht
         $badUser = new User;
-=======
-        $badUser = new User();
->>>>>>> .merge_file_iNJ84P
         $badUser->forceFill([
             'id' => 'bad-1',
             'first_name' => '',
@@ -734,11 +621,7 @@ describe('User execute coverage — ProfileEditVoltComponent', function (): void
         Auth::shouldReceive('user')->andReturn($badUser);
         Auth::shouldReceive('id')->andReturn('bad-1');
 
-<<<<<<< .merge_file_Hww5Ht
         $component = new ProfileEditVoltComponent;
-=======
-        $component = new ProfileEditVoltComponent();
->>>>>>> .merge_file_iNJ84P
         $component->mount();
 
         // `mount()` idrata le quattro proprietà e solo dopo verifica gli invarianti:
@@ -759,11 +642,7 @@ describe('User execute coverage — Socialite settings e OAuth resource', functi
 
         Artisan::shouldReceive('call')->once()->with('config:clear');
 
-<<<<<<< .merge_file_Hww5Ht
         $page = new SocialiteProviderSettingsPage;
-=======
-        $page = new SocialiteProviderSettingsPage();
->>>>>>> .merge_file_iNJ84P
         $page->mount();
         $page->data = [
             'google' => [
@@ -812,11 +691,7 @@ describe('User execute coverage — Socialite settings e OAuth resource', functi
     });
 
     test('oauth access token resource callbacks e azioni revoke', function (): void {
-<<<<<<< .merge_file_Hww5Ht
         $resource = new OauthAccessTokenResource;
-=======
-        $resource = new OauthAccessTokenResource();
->>>>>>> .merge_file_iNJ84P
         $columns = $resource->getTableColumns();
 
         $expiresAt = $columns['expires_at'];
@@ -836,11 +711,7 @@ describe('User execute coverage — Socialite settings e OAuth resource', functi
         Assert::assertSame('read', $scopes->getTooltip('read'));
 
         $user = userProfileMock();
-<<<<<<< .merge_file_Hww5Ht
         $token = new OauthAccessToken;
-=======
-        $token = new OauthAccessToken();
->>>>>>> .merge_file_iNJ84P
         $token->forceFill([
             'id' => 'token-1',
             'user_id' => $user->id,
@@ -854,7 +725,6 @@ describe('User execute coverage — Socialite settings e OAuth resource', functi
         $userName->getUrl($token);
         $userName->formatState(null);
 
-<<<<<<< .merge_file_Hww5Ht
         app()->instance(RevokeTokenAction::class, new class
         {
             public function execute(string $id): bool
@@ -867,18 +737,6 @@ describe('User execute coverage — Socialite settings e OAuth resource', functi
             public function execute(string $userId): bool
             {
                 return $userId === 'profile-user-1';
-=======
-        app()->instance(RevokeTokenAction::class, new class {
-            public function execute(string $id): bool
-            {
-                return 'token-1' === $id;
-            }
-        });
-        app()->instance(RevokeAllUserTokensAction::class, new class {
-            public function execute(string $userId): bool
-            {
-                return 'profile-user-1' === $userId;
->>>>>>> .merge_file_iNJ84P
             }
         });
 
@@ -909,26 +767,15 @@ describe('User execute coverage — UserResource form schemas', function (): voi
         $createdAt = userFindNamedComponent($schema, 'created_at');
         Assert::assertNotNull($createdAt);
 
-<<<<<<< .merge_file_Hww5Ht
         $model = new User;
-=======
-        $model = new User();
->>>>>>> .merge_file_iNJ84P
         $model->forceFill(['created_at' => Carbon::parse('2024-06-01 12:00:00')]);
         $human = userInvokeStateClosure($createdAt, $model);
         Assert::assertIsString($human);
 
-<<<<<<< .merge_file_Hww5Ht
         $missing = userInvokeStateClosure($createdAt, new User);
         Assert::assertNotNull($missing);
 
         $badRecord = userInvokeStateClosure($createdAt, new Team);
-=======
-        $missing = userInvokeStateClosure($createdAt, new User());
-        Assert::assertNotNull($missing);
-
-        $badRecord = userInvokeStateClosure($createdAt, new Team());
->>>>>>> .merge_file_iNJ84P
         Assert::assertNotNull($badRecord);
     });
 
@@ -956,11 +803,7 @@ describe('User execute coverage — notifications rules observer helpers', funct
         \module_helper_placeholder();
 
         $user = userProfileMock();
-<<<<<<< .merge_file_Hww5Ht
         $notifiable = new AnonymousNotifiable;
-=======
-        $notifiable = new AnonymousNotifiable();
->>>>>>> .merge_file_iNJ84P
 
         $otp = new Otp($user, '123456');
         Assert::assertSame(['mail'], $otp->via($notifiable));
@@ -969,7 +812,6 @@ describe('User execute coverage — notifications rules observer helpers', funct
 
         $reset = new ResetPassword('reset-token');
         $reset->url = 'https://example.test/reset';
-<<<<<<< .merge_file_Hww5Ht
         $mail = (new ReflectionMethod($reset, 'buildMailMessage'))->invoke($reset, $reset->url);
         Assert::assertInstanceOf(\Illuminate\Notifications\Messages\MailMessage::class, $mail);
 
@@ -979,17 +821,6 @@ describe('User execute coverage — notifications rules observer helpers', funct
         Assert::assertSame($verify->url, $verifyUrl);
 
         $freshUser = new User;
-=======
-        $mail = (new \ReflectionMethod($reset, 'buildMailMessage'))->invoke($reset, $reset->url);
-        Assert::assertInstanceOf(\Illuminate\Notifications\Messages\MailMessage::class, $mail);
-
-        $verify = new VerifyEmail();
-        $verify->url = 'https://example.test/verify';
-        $verifyUrl = (new \ReflectionMethod($verify, 'verificationUrl'))->invoke($verify, $user);
-        Assert::assertSame($verify->url, $verifyUrl);
-
-        $freshUser = new User();
->>>>>>> .merge_file_iNJ84P
         $freshUser->forceFill(['updated_at' => now()]);
         $rule = new CheckOtpExpiredRule($freshUser);
         $failed = false;
@@ -997,11 +828,7 @@ describe('User execute coverage — notifications rules observer helpers', funct
         Assert::assertFalse($failed);
         Assert::assertNotSame('', $rule->message());
 
-<<<<<<< .merge_file_Hww5Ht
         $expiredUser = new User;
-=======
-        $expiredUser = new User();
->>>>>>> .merge_file_iNJ84P
         $expiredUser->forceFill(['updated_at' => now()->subMinutes(30)]);
         $expiredRule = new CheckOtpExpiredRule($expiredUser);
         $expired = false;
@@ -1011,11 +838,7 @@ describe('User execute coverage — notifications rules observer helpers', funct
 
     test('user observer e passport token user relation', function (): void {
         config(['user.create_personal_team' => false]);
-<<<<<<< .merge_file_Hww5Ht
         $observer = new UserObserver;
-=======
-        $observer = new UserObserver();
->>>>>>> .merge_file_iNJ84P
         $user = userProfileMock();
         $user->shouldReceive('personalTeam')->andReturn(null);
         $observer->created($user);
@@ -1030,11 +853,7 @@ describe('User execute coverage — notifications rules observer helpers', funct
             $observer->created($owner);
         }));
 
-<<<<<<< .merge_file_Hww5Ht
         $token = new OauthAccessToken;
-=======
-        $token = new OauthAccessToken();
->>>>>>> .merge_file_iNJ84P
         $token->forceFill(['user_id' => $owner->id]);
         $token->setRelation('client', new OauthClient(['provider' => 'users']));
         // `Token::user()` è deprecato in Passport: si esercita la relazione
@@ -1089,11 +908,7 @@ describe('User execute coverage — Filament pages sweep', function (): void {
                     continue;
                 }
                 try {
-<<<<<<< .merge_file_Hww5Ht
                     $refMethod = new ReflectionMethod($instance, $method);
-=======
-                    $refMethod = new \ReflectionMethod($instance, $method);
->>>>>>> .merge_file_iNJ84P
                     if ($refMethod->getNumberOfRequiredParameters() > 0) {
                         continue;
                     }
@@ -1113,29 +928,17 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
     test('notification schema auth log mail message socialite provider', function (): void {
         // `isReadable()` promette una cosa sola: rispondere quanto lo schema
         // della connection del model Notification dice della sua tabella.
-<<<<<<< .merge_file_Hww5Ht
         $notification = new Notification;
-=======
-        $notification = new Notification();
->>>>>>> .merge_file_iNJ84P
         Assert::assertSame(
             Schema::connection($notification->getConnectionName())->hasTable($notification->getTable()),
             NotificationSchema::isReadable()
         );
 
-<<<<<<< .merge_file_Hww5Ht
         $user = new User;
         $user->forceFill(['id' => 'auth-log-1']);
         Assert::assertInstanceOf(\Illuminate\Database\Eloquent\Builder::class, AuthenticationLogQuery::forAuthenticatable($user));
 
         $mail = new Message;
-=======
-        $user = new User();
-        $user->forceFill(['id' => 'auth-log-1']);
-        Assert::assertInstanceOf(\Illuminate\Database\Eloquent\Builder::class, AuthenticationLogQuery::forAuthenticatable($user));
-
-        $mail = new Message();
->>>>>>> .merge_file_iNJ84P
         $rendered = null;
         $renderError = null;
         try {
@@ -1144,11 +947,7 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
             $renderError = $throwable;
         }
         Assert::assertNotInstanceOf(\Error::class, $renderError);
-<<<<<<< .merge_file_Hww5Ht
         if ($rendered !== null) {
-=======
-        if (null !== $rendered) {
->>>>>>> .merge_file_iNJ84P
             Assert::assertInstanceOf(View::class, $rendered);
         }
 
@@ -1162,12 +961,8 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
         }));
         File::delete($configPath);
 
-<<<<<<< .merge_file_Hww5Ht
         $passport = new class(app()) extends \Illuminate\Support\ServiceProvider
         {
-=======
-        $passport = new class(app()) extends \Illuminate\Support\ServiceProvider {
->>>>>>> .merge_file_iNJ84P
             use HasPassportConfiguration;
 
             public function runConfigure(): void
@@ -1179,11 +974,7 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
             $passport->runConfigure();
         }));
 
-<<<<<<< .merge_file_Hww5Ht
         $lifetime = new ReflectionMethod(HasPassportConfiguration::class, 'tokenLifetime');
-=======
-        $lifetime = new \ReflectionMethod(HasPassportConfiguration::class, 'tokenLifetime');
->>>>>>> .merge_file_iNJ84P
         $lifetime->setAccessible(true);
         Assert::assertSame(15, $lifetime->invoke(null, [], 'access_token', 15));
         Assert::assertSame(7, $lifetime->invoke(null, ['access_token' => 7], 'access_token', 15));
@@ -1191,21 +982,12 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
     });
 
     test('tenant traits espongono relazioni in memoria', function (): void {
-<<<<<<< .merge_file_Hww5Ht
         $user = new User;
         $tenant = new Tenant;
         $tenant->forceFill(['id' => 1, 'name' => 'T1']);
         $user->setRelation('tenants', collect([$tenant]));
 
         $panel = Mockery::mock(\Filament\Panel::class);
-=======
-        $user = new User();
-        $tenant = new Tenant();
-        $tenant->forceFill(['id' => 1, 'name' => 'T1']);
-        $user->setRelation('tenants', collect([$tenant]));
-
-        $panel = \Mockery::mock(\Filament\Panel::class);
->>>>>>> .merge_file_iNJ84P
         Assert::assertInstanceOf(\Filament\Panel::class, $panel);
         Assert::assertCount(1, $user->getTenants($panel));
         Assert::assertInstanceOf(BelongsToMany::class, $user->tenants());

@@ -12,17 +12,10 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('no-user-db');
 
 it('oauth factories expose the expected definition keys', function (): void {
-<<<<<<< .merge_file_ZVweZ1
     $clientDefinition = (new OauthClientFactory)->definition();
     $accessTokenDefinition = (new OauthAccessTokenFactory)->definition();
     $authCodeDefinition = (new OauthAuthCodeFactory)->definition();
     $refreshTokenDefinition = (new OauthRefreshTokenFactory)->definition();
-=======
-    $clientDefinition = (new OauthClientFactory())->definition();
-    $accessTokenDefinition = (new OauthAccessTokenFactory())->definition();
-    $authCodeDefinition = (new OauthAuthCodeFactory())->definition();
-    $refreshTokenDefinition = (new OauthRefreshTokenFactory())->definition();
->>>>>>> .merge_file_9ZEefV
 
     Assert::assertArrayHasKey('name', $clientDefinition);
     Assert::assertArrayHasKey('id', $accessTokenDefinition);

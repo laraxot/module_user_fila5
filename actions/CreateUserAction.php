@@ -22,11 +22,7 @@ class CreateUserAction
     /**
      * Execute the action to create a new user.
      *
-<<<<<<< .merge_file_RzrF7V
      * @param  array<string, mixed>  $data
-=======
-     * @param array<string, mixed> $data
->>>>>>> .merge_file_oxlQ2s
      */
     public function execute(array $data): User
     {

@@ -203,12 +203,7 @@ class EditUserWidget extends XotBaseSchemaWidget
     }
 
     /**
-<<<<<<< .merge_file_8BSZX0
      * @param  array<int|string, Component>  $schema
-=======
-     * @param array<int|string, Component> $schema
-     *
->>>>>>> .merge_file_T3SQyb
      * @return array<int|string, Component>
      */
     private static function normalizeFormSchema(array $schema): array

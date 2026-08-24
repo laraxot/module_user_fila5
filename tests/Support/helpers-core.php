@@ -12,11 +12,7 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
 /**
-<<<<<<< .merge_file_fywQxW
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_pMXJCN
  */
 function createUser(array $attributes = []): User
 {
@@ -30,11 +26,7 @@ function createUser(array $attributes = []): User
 }
 
 /**
-<<<<<<< .merge_file_fywQxW
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_pMXJCN
  */
 function makeUser(array $attributes = []): User
 {
@@ -48,11 +40,7 @@ function makeUser(array $attributes = []): User
 }
 
 /**
-<<<<<<< .merge_file_fywQxW
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_pMXJCN
  */
 function createTeam(array $attributes = []): Team
 {
@@ -62,11 +50,7 @@ function createTeam(array $attributes = []): Team
 }
 
 /**
-<<<<<<< .merge_file_fywQxW
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_pMXJCN
  */
 function createTestUser(array $attributes = []): User
 {
@@ -119,11 +103,7 @@ function pestSkip(string $message): never
 function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
 {
     if (! userTableHasColumn($table, $column)) {
-<<<<<<< .merge_file_fywQxW
         pestSkip($reason !== '' ? $reason : "Column {$table}.{$column} missing on user connection.");
-=======
-        pestSkip('' !== $reason ? $reason : "Column {$table}.{$column} missing on user connection.");
->>>>>>> .merge_file_pMXJCN
     }
 }
 
@@ -135,11 +115,7 @@ function userTableExists(string $table): bool
 function skipUnlessUserTable(string $table, string $reason = ''): void
 {
     if (! userTableExists($table)) {
-<<<<<<< .merge_file_fywQxW
         pestSkip($reason !== '' ? $reason : "Table {$table} missing on user connection.");
-=======
-        pestSkip('' !== $reason ? $reason : "Table {$table} missing on user connection.");
->>>>>>> .merge_file_pMXJCN
     }
 }
 
@@ -155,31 +131,19 @@ function permissionPivotTable(): string
 
 function skipUnlessUsersTableReady(string $reason = ''): void
 {
-<<<<<<< .merge_file_fywQxW
     skipUnlessUserTable('users', $reason !== '' ? $reason : 'users table missing on user connection.');
-=======
-    skipUnlessUserTable('users', '' !== $reason ? $reason : 'users table missing on user connection.');
->>>>>>> .merge_file_pMXJCN
 }
 
 function skipUnlessRoleAssignmentSupported(string $reason = ''): void
 {
     $table = permissionRolePivotTable();
-<<<<<<< .merge_file_fywQxW
     skipUnlessUserTable($table, $reason !== '' ? $reason : "Role pivot table {$table} missing on user connection.");
-=======
-    skipUnlessUserTable($table, '' !== $reason ? $reason : "Role pivot table {$table} missing on user connection.");
->>>>>>> .merge_file_pMXJCN
 }
 
 function skipUnlessDirectPermissionSupported(string $reason = ''): void
 {
     $table = permissionPivotTable();
-<<<<<<< .merge_file_fywQxW
     skipUnlessUserTable($table, $reason !== '' ? $reason : "Permission pivot table {$table} missing on user connection.");
-=======
-    skipUnlessUserTable($table, '' !== $reason ? $reason : "Permission pivot table {$table} missing on user connection.");
->>>>>>> .merge_file_pMXJCN
 }
 
 function skipUnlessTeamUsersRelationSupported(): void

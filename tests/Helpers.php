@@ -34,11 +34,7 @@ use function Safe\json_decode;
 use function Safe\json_encode;
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_wUgb9N
  */
 function createUser(array $attributes = []): User
 {
@@ -52,11 +48,7 @@ function createUser(array $attributes = []): User
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_wUgb9N
  */
 function makeUser(array $attributes = []): User
 {
@@ -70,11 +62,7 @@ function makeUser(array $attributes = []): User
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_wUgb9N
  */
 function createTeam(array $attributes = []): Team
 {
@@ -84,11 +72,7 @@ function createTeam(array $attributes = []): Team
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_wUgb9N
  */
 function createTestUser(array $attributes = []): User
 {
@@ -130,11 +114,7 @@ function pestSkip(string $message): never
 function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
 {
     if (! userTableHasColumn($table, $column)) {
-<<<<<<< .merge_file_8kxQrv
         pestSkip($reason !== '' ? $reason : "Column {$table}.{$column} missing on user connection.");
-=======
-        pestSkip('' !== $reason ? $reason : "Column {$table}.{$column} missing on user connection.");
->>>>>>> .merge_file_wUgb9N
     }
 }
 
@@ -146,11 +126,7 @@ function userTableExists(string $table): bool
 function skipUnlessUserTable(string $table, string $reason = ''): void
 {
     if (! userTableExists($table)) {
-<<<<<<< .merge_file_8kxQrv
         pestSkip($reason !== '' ? $reason : "Table {$table} missing on user connection.");
-=======
-        pestSkip('' !== $reason ? $reason : "Table {$table} missing on user connection.");
->>>>>>> .merge_file_wUgb9N
     }
 }
 
@@ -166,31 +142,19 @@ function permissionPivotTable(): string
 
 function skipUnlessUsersTableReady(string $reason = ''): void
 {
-<<<<<<< .merge_file_8kxQrv
     skipUnlessUserTable('users', $reason !== '' ? $reason : 'users table missing on user connection.');
-=======
-    skipUnlessUserTable('users', '' !== $reason ? $reason : 'users table missing on user connection.');
->>>>>>> .merge_file_wUgb9N
 }
 
 function skipUnlessRoleAssignmentSupported(string $reason = ''): void
 {
     $table = permissionRolePivotTable();
-<<<<<<< .merge_file_8kxQrv
     skipUnlessUserTable($table, $reason !== '' ? $reason : "Role pivot table {$table} missing on user connection.");
-=======
-    skipUnlessUserTable($table, '' !== $reason ? $reason : "Role pivot table {$table} missing on user connection.");
->>>>>>> .merge_file_wUgb9N
 }
 
 function skipUnlessDirectPermissionSupported(string $reason = ''): void
 {
     $table = permissionPivotTable();
-<<<<<<< .merge_file_8kxQrv
     skipUnlessUserTable($table, $reason !== '' ? $reason : "Permission pivot table {$table} missing on user connection.");
-=======
-    skipUnlessUserTable($table, '' !== $reason ? $reason : "Permission pivot table {$table} missing on user connection.");
->>>>>>> .merge_file_wUgb9N
 }
 
 function skipUnlessTeamUsersRelationSupported(): void
@@ -201,11 +165,7 @@ function skipUnlessTeamUsersRelationSupported(): void
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $pivot
-=======
- * @param array<string, mixed> $pivot
->>>>>>> .merge_file_wUgb9N
  */
 function attachTeamMember(Team $team, User $user, array $pivot = []): void
 {
@@ -261,11 +221,7 @@ function teamUsesSoftDeletes(): bool
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_wUgb9N
  */
 function createProfile(array $attributes = []): Profile
 {
@@ -294,11 +250,7 @@ function setupFilamentAdminPanel(): void
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<mixed>  $attributes
-=======
- * @param array<mixed> $attributes
->>>>>>> .merge_file_wUgb9N
  */
 function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contracts\User
 {
@@ -326,12 +278,7 @@ function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contr
 /**
  * @template T of object
  *
-<<<<<<< .merge_file_8kxQrv
  * @param  class-string<T>  $class
-=======
- * @param class-string<T> $class
- *
->>>>>>> .merge_file_wUgb9N
  * @return T&MockInterface
  */
 function typedMock(string $class): MockInterface
@@ -345,14 +292,8 @@ function typedMock(string $class): MockInterface
 /**
  * @template T of object
  *
-<<<<<<< .merge_file_8kxQrv
  * @param  class-string<T>  $class
  * @param  callable(T&MockInterface): void  $configure
-=======
- * @param class-string<T>                 $class
- * @param callable(T&MockInterface): void $configure
- *
->>>>>>> .merge_file_wUgb9N
  * @return T&MockInterface
  */
 function configureMock(string $class, callable $configure): MockInterface
@@ -373,11 +314,7 @@ function fakeSocialiteUser(string $email): Laravel\Socialite\Contracts\User
 
 function makeIsUserAllowedAction(): IsUserAllowedAction
 {
-<<<<<<< .merge_file_8kxQrv
     return new IsUserAllowedAction;
-=======
-    return new IsUserAllowedAction();
->>>>>>> .merge_file_wUgb9N
 }
 
 /**
@@ -432,11 +369,7 @@ function userResourceSectionComponents(TestCase $testCase, Component $section): 
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<int, Component|Action|ActionGroup>  $components
-=======
- * @param array<int, Component|Action|ActionGroup> $components
->>>>>>> .merge_file_wUgb9N
  */
 function userResourceFindComponentByName(array $components, string $name): ?Component
 {
@@ -454,11 +387,7 @@ function userResourceFindComponentByName(array $components, string $name): ?Comp
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_wUgb9N
  */
 function stubUser(array $attributes = []): User
 {
@@ -466,11 +395,7 @@ function stubUser(array $attributes = []): User
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_wUgb9N
  */
 function hasTeamsCurrentCreateUser(array $attributes = []): User
 {
@@ -478,11 +403,7 @@ function hasTeamsCurrentCreateUser(array $attributes = []): User
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_wUgb9N
  */
 function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 {
@@ -539,11 +460,7 @@ function verifyTwoFactorCode(User $user, Google2FA $google2fa, string $code): bo
         return false;
     }
 
-<<<<<<< .merge_file_8kxQrv
     return $google2fa->verifyKey($secret, $code) !== false;
-=======
-    return false !== $google2fa->verifyKey($secret, $code);
->>>>>>> .merge_file_wUgb9N
 }
 
 function disableTwoFactorForUser(User $user): void
@@ -634,11 +551,7 @@ function teamMgmtTeamUsersRelationSupported(): bool
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_wUgb9N
  */
 function teamMgmtCreateUser(array $attributes = []): User
 {
@@ -651,11 +564,7 @@ function teamMgmtCreateUser(array $attributes = []): User
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_wUgb9N
  */
 function teamMgmtCreateTeam(User $owner, array $attributes = []): Team
 {
@@ -678,11 +587,7 @@ function teamMgmtBootstrap(): array
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $pivot
-=======
- * @param array<string, mixed> $pivot
->>>>>>> .merge_file_wUgb9N
  */
 function teamMgmtAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -726,11 +631,7 @@ function teamMgmtMemberExists(Team $team, User $user): bool
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_wUgb9N
  */
 function teamMgmtCreateInvitation(Team $team, array $attributes = []): TeamInvitation
 {
@@ -741,11 +642,7 @@ function teamMgmtCreateInvitation(Team $team, array $attributes = []): TeamInvit
         'role' => 'member',
     ], $attributes);
 
-<<<<<<< .merge_file_8kxQrv
     $invitation = new TeamInvitation;
-=======
-    $invitation = new TeamInvitation();
->>>>>>> .merge_file_wUgb9N
     $invitation->forceFill($payload);
     $invitation->save();
     $fresh = $invitation->fresh();
@@ -769,11 +666,7 @@ function teamMgmtBizTeamUsesSoftDeletes(): bool
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_wUgb9N
  */
 function teamMgmtBizCreateUser(array $attributes = []): User
 {
@@ -786,11 +679,7 @@ function teamMgmtBizCreateUser(array $attributes = []): User
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_wUgb9N
  */
 function teamMgmtBizCreateTeam(array $attributes = []): Team
 {
@@ -801,11 +690,7 @@ function teamMgmtBizCreateTeam(array $attributes = []): Team
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $where
-=======
- * @param array<string, mixed> $where
->>>>>>> .merge_file_wUgb9N
  */
 function teamMgmtBizAssertDatabaseHas(string $table, array $where): void
 {
@@ -818,11 +703,7 @@ function teamMgmtBizAssertDatabaseHas(string $table, array $where): void
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $where
-=======
- * @param array<string, mixed> $where
->>>>>>> .merge_file_wUgb9N
  */
 function teamMgmtBizAssertDatabaseMissing(string $table, array $where): void
 {
@@ -835,11 +716,7 @@ function teamMgmtBizAssertDatabaseMissing(string $table, array $where): void
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $pivot
-=======
- * @param array<string, mixed> $pivot
->>>>>>> .merge_file_wUgb9N
  */
 function teamMgmtBizAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -879,11 +756,7 @@ function teamMgmtBizMemberExists(Team $team, User $user): bool
 }
 
 /**
-<<<<<<< .merge_file_8kxQrv
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> .merge_file_wUgb9N
  */
 function teamMgmtBizCreateInvitation(Team $team, array $attributes = []): TeamInvitation
 {
@@ -894,11 +767,7 @@ function teamMgmtBizCreateInvitation(Team $team, array $attributes = []): TeamIn
         'role' => 'member',
     ], $attributes);
 
-<<<<<<< .merge_file_8kxQrv
     $invitation = new TeamInvitation;
-=======
-    $invitation = new TeamInvitation();
->>>>>>> .merge_file_wUgb9N
     $invitation->forceFill($payload);
     $invitation->save();
     $fresh = $invitation->fresh();

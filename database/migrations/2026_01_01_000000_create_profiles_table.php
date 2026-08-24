@@ -6,12 +6,8 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Profile;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-<<<<<<< .merge_file_WSQjRZ
 return new class extends XotBaseMigration
 {
-=======
-return new class extends XotBaseMigration {
->>>>>>> .merge_file_sAhvFi
     protected ?string $model_class = Profile::class;
 
     /**

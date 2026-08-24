@@ -10,10 +10,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
-<<<<<<< .merge_file_qlMlmD
 use Mockery;
-=======
->>>>>>> .merge_file_gi7jOK
 use Modules\User\Http\Livewire\Auth\Login;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
@@ -23,11 +20,7 @@ use Spatie\Permission\Models\Role;
 uses(TestCase::class)->group('no-user-db');
 
 afterEach(function (): void {
-<<<<<<< .merge_file_qlMlmD
     Mockery::close();
-=======
-    \Mockery::close();
->>>>>>> .merge_file_gi7jOK
 });
 
 /**
@@ -45,22 +38,14 @@ function loginFormSchema(Login $component): array
 }
 
 /**
-<<<<<<< .merge_file_qlMlmD
  * @param  list<string>  $roleNames
-=======
- * @param list<string> $roleNames
->>>>>>> .merge_file_gi7jOK
  */
 function loginRedirectForRoles(array $roleNames): string
 {
     app()->setLocale('it');
     /** @var class-string<\Illuminate\Database\Eloquent\Model> $userClass */
     $userClass = XotData::make()->getUserClass();
-<<<<<<< .merge_file_qlMlmD
     $user = new $userClass;
-=======
-    $user = new $userClass();
->>>>>>> .merge_file_gi7jOK
     $user->forceFill(['id' => 'redirect-user']);
 
     /** @var \Illuminate\Support\Collection<int, Role> $roles */
@@ -69,26 +54,15 @@ function loginRedirectForRoles(array $roleNames): string
         $roleNames
     ));
 
-<<<<<<< .merge_file_qlMlmD
     $relation = Mockery::mock(BelongsToMany::class);
     $relation->shouldReceive('get')->andReturn($roles);
 
     $userMock = Mockery::mock($user)->makePartial();
-=======
-    $relation = \Mockery::mock(BelongsToMany::class);
-    $relation->shouldReceive('get')->andReturn($roles);
-
-    $userMock = \Mockery::mock($user)->makePartial();
->>>>>>> .merge_file_gi7jOK
     $userMock->shouldReceive('roles')->andReturn($relation);
 
     Auth::shouldReceive('user')->andReturn($userMock);
 
-<<<<<<< .merge_file_qlMlmD
     $component = new Login;
-=======
-    $component = new Login();
->>>>>>> .merge_file_gi7jOK
     $method = new \ReflectionMethod($component, 'getRedirectUrl');
     $method->setAccessible(true);
 
@@ -100,22 +74,14 @@ function loginRedirectForRoles(array $roleNames): string
 
 describe('Login Livewire component', function (): void {
     test('mount initializes component without throwing', function (): void {
-<<<<<<< .merge_file_qlMlmD
         $component = new Login;
-=======
-        $component = new Login();
->>>>>>> .merge_file_gi7jOK
         $component->mount();
 
         Assert::assertIsArray($component->data);
     });
 
     test('form schema exposes email password remember fields', function (): void {
-<<<<<<< .merge_file_qlMlmD
         $schema = loginFormSchema(new Login);
-=======
-        $schema = loginFormSchema(new Login());
->>>>>>> .merge_file_gi7jOK
 
         Assert::assertCount(3, $schema);
         Assert::assertInstanceOf(TextInput::class, $schema[0]);
@@ -125,11 +91,7 @@ describe('Login Livewire component', function (): void {
     });
 
     test('render returns login view', function (): void {
-<<<<<<< .merge_file_qlMlmD
         $view = (new Login)->render();
-=======
-        $view = (new Login())->render();
->>>>>>> .merge_file_gi7jOK
 
         Assert::assertInstanceOf(View::class, $view);
         Assert::assertSame('user::livewire.auth.login', $view->name());
