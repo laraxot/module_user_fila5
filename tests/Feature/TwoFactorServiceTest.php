@@ -22,7 +22,7 @@ beforeEach(function (): void {
     $this->skipUnlessUserColumn('users', 'two_factor_confirmed_at');
 
     $this->user = $this->createTestUser();
-    $this->google2fa = new Google2FA;
+    $this->google2fa = new Google2FA();
 });
 
 describe('Two Factor Service', function (): void {

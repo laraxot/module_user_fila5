@@ -6,11 +6,12 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
-use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
+
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
 
 class AssignTenantCommand extends Command
 {
@@ -49,7 +50,7 @@ class AssignTenantCommand extends Command
                 $key = $tenant->getKey();
                 $id = \is_scalar($key) ? (string) $key : '';
                 $name = $tenant->getAttribute('name');
-                $label = \is_string($name) && $name !== '' ? $name : '#'.$id;
+                $label = \is_string($name) && '' !== $name ? $name : '#'.$id;
 
                 return [$id => $label];
             })
@@ -57,7 +58,7 @@ class AssignTenantCommand extends Command
 
         // Con zero tenant `longest()` va comunque in TypeError: la lista vuota non
         // ha nulla da misurare. E' il caso reale su un database appena replicato.
-        if ($opts === []) {
+        if ([] === $opts) {
             $this->error('Nessun tenant presente in '.$tenantClass.'. Crearne almeno uno prima di assegnarlo.');
 
             return;

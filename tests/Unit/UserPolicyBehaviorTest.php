@@ -16,7 +16,8 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('no-user-db');
 
 /**
- * @param  list<string>  $roles
+ * @param list<string> $roles
+ *
  * @return Mockery\MockInterface&UserContract
  */
 function userBehaviorUser(
@@ -25,13 +26,13 @@ function userBehaviorUser(
     bool $belongsToTeam = false,
 ): UserContract {
     /** @var Mockery\MockInterface&UserContract $user */
-    $user = Mockery::mock(UserContract::class);
+    $user = \Mockery::mock(UserContract::class);
     $user->shouldReceive('hasRole')
         ->andReturnUsing(static function (array|string $richiesti) use ($roles): bool {
             /** @var list<string> $normalizzati */
             $normalizzati = is_array($richiesti) ? $richiesti : [$richiesti];
 
-            return array_intersect($normalizzati, $roles) !== [];
+            return [] !== array_intersect($normalizzati, $roles);
         });
     $user->shouldReceive('ownsTeam')->andReturn($ownsTeam);
     $user->shouldReceive('belongsToTeam')->andReturn($belongsToTeam);
@@ -40,7 +41,7 @@ function userBehaviorUser(
 }
 
 afterEach(function (): void {
-    Mockery::close();
+    \Mockery::close();
 });
 
 test('RolePolicy: viewAny false, view/create/update/delete true', function (): void {

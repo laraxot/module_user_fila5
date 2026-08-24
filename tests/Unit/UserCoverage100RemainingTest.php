@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit;
 
 use Illuminate\Support\Facades\Process;
-use Mockery;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Tests\ModuleRemainingCoverage;
 use PHPUnit\Framework\Assert;
@@ -13,7 +12,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('no-user-db');
 
 afterEach(function (): void {
-    Mockery::close();
+    \Mockery::close();
 });
 
 describe('User coverage 100 — remaining sweep', function (): void {
