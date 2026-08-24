@@ -32,7 +32,11 @@ use function Safe\json_decode;
 use function Safe\json_encode;
 
 /**
+<<<<<<< .merge_file_Xo4dMn
  * @param  array<string, mixed>  $pivot
+=======
+ * @param array<string, mixed> $pivot
+>>>>>>> .merge_file_qaYccB
  */
 function attachTeamMember(Team $team, User $user, array $pivot = []): void
 {
@@ -88,7 +92,11 @@ function teamUsesSoftDeletes(): bool
 }
 
 /**
+<<<<<<< .merge_file_Xo4dMn
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> .merge_file_qaYccB
  */
 function createProfile(array $attributes = []): Profile
 {
@@ -117,7 +125,11 @@ function setupFilamentAdminPanel(): void
 }
 
 /**
+<<<<<<< .merge_file_Xo4dMn
  * @param  array<mixed>  $attributes
+=======
+ * @param array<mixed> $attributes
+>>>>>>> .merge_file_qaYccB
  */
 function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contracts\User
 {
@@ -146,7 +158,12 @@ if (! function_exists('typedMock')) {
     /**
      * @template T of object
      *
+<<<<<<< .merge_file_Xo4dMn
      * @param  class-string<T>  $class
+=======
+     * @param class-string<T> $class
+     *
+>>>>>>> .merge_file_qaYccB
      * @return T&MockInterface
      */
     function typedMock(string $class): MockInterface
@@ -161,8 +178,14 @@ if (! function_exists('typedMock')) {
 /**
  * @template T of object
  *
+<<<<<<< .merge_file_Xo4dMn
  * @param  class-string<T>  $class
  * @param  callable(T&MockInterface): void  $configure
+=======
+ * @param class-string<T>                 $class
+ * @param callable(T&MockInterface): void $configure
+ *
+>>>>>>> .merge_file_qaYccB
  * @return T&MockInterface
  */
 function configureMock(string $class, callable $configure): MockInterface
@@ -183,7 +206,11 @@ function fakeSocialiteUser(string $email): Laravel\Socialite\Contracts\User
 
 function makeIsUserAllowedAction(): IsUserAllowedAction
 {
+<<<<<<< .merge_file_Xo4dMn
     return new IsUserAllowedAction;
+=======
+    return new IsUserAllowedAction();
+>>>>>>> .merge_file_qaYccB
 }
 
 /**
@@ -238,7 +265,11 @@ function userResourceSectionComponents(TestCase $testCase, Component $section): 
 }
 
 /**
+<<<<<<< .merge_file_Xo4dMn
  * @param  array<int, Component|Action|ActionGroup>  $components
+=======
+ * @param array<int, Component|Action|ActionGroup> $components
+>>>>>>> .merge_file_qaYccB
  */
 function userResourceFindComponentByName(array $components, string $name): ?Component
 {
@@ -256,7 +287,11 @@ function userResourceFindComponentByName(array $components, string $name): ?Comp
 }
 
 /**
+<<<<<<< .merge_file_Xo4dMn
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> .merge_file_qaYccB
  */
 function stubUser(array $attributes = []): User
 {
@@ -264,7 +299,11 @@ function stubUser(array $attributes = []): User
 }
 
 /**
+<<<<<<< .merge_file_Xo4dMn
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> .merge_file_qaYccB
  */
 function hasTeamsCurrentCreateUser(array $attributes = []): User
 {
@@ -272,7 +311,11 @@ function hasTeamsCurrentCreateUser(array $attributes = []): User
 }
 
 /**
+<<<<<<< .merge_file_Xo4dMn
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> .merge_file_qaYccB
  */
 function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 {
@@ -283,7 +326,12 @@ function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 }
 
 /**
+<<<<<<< .merge_file_Xo4dMn
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+ *
+>>>>>>> .merge_file_qaYccB
  * @return array{secret: string, qr_code: string, recovery_codes: array<int, string>}
  */
 function enableTwoFactorForUser(User $user, Google2FA $google2fa, array $attributes = []): array
@@ -327,7 +375,11 @@ function verifyTwoFactorCode(User $user, Google2FA $google2fa, string $code): bo
 
     $secret = SafeStringCastAction::cast(decrypt($user->two_factor_secret));
 
+<<<<<<< .merge_file_Xo4dMn
     return $google2fa->verifyKey($secret, $code) !== false;
+=======
+    return false !== $google2fa->verifyKey($secret, $code);
+>>>>>>> .merge_file_qaYccB
 }
 
 function disableTwoFactorForUser(User $user): void

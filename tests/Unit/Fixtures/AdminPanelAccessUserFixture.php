@@ -22,7 +22,11 @@ final class AdminPanelAccessUserFixture extends BaseUser
     }
 
     /**
+<<<<<<< .merge_file_ileVvb
      * @param  array<int, string>|Collection<int, string>  $roles
+=======
+     * @param array<int, string>|Collection<int, string> $roles
+>>>>>>> .merge_file_bGKTdA
      */
     public function hasRole($roles, ?string $guard = null): bool
     {

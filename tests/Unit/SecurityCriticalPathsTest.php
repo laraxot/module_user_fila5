@@ -13,7 +13,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('admin panel requires admin or super-admin role', function (): void {
+<<<<<<< .merge_file_Jil1tK
     $user = new AdminPanelAccessUserFixture;
+=======
+    $user = new AdminPanelAccessUserFixture();
+>>>>>>> .merge_file_If33p9
 
     $panel = app(Panel::class)->id('admin');
 
@@ -24,7 +28,11 @@ test('admin panel requires admin or super-admin role', function (): void {
 });
 
 test('password mutator hashes long passphrases instead of storing plaintext', function (): void {
+<<<<<<< .merge_file_Jil1tK
     $user = new TestBaseUser;
+=======
+    $user = new TestBaseUser();
+>>>>>>> .merge_file_If33p9
     $longPassphrase = 'this-is-a-very-long-passphrase-that-exceeds-thirty-two-characters';
 
     $user->password = $longPassphrase;

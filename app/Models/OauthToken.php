@@ -43,7 +43,11 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUserId($value)
  *
+<<<<<<< .merge_file_TTAkYW
  * @property-read User|null $user
+=======
+ * @property User|null $user
+>>>>>>> .merge_file_gNZs2f
  *
  * @mixin \Eloquent
  */

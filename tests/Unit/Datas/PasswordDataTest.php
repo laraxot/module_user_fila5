@@ -10,6 +10,11 @@ use Spatie\LaravelData\Data;
 
 use function Safe\file_get_contents;
 
+<<<<<<< .merge_file_LAk0Sp
+=======
+use Spatie\LaravelData\Data;
+
+>>>>>>> .merge_file_Yz4cqP
 uses(TestCase::class)->group('no-user-db');
 
 function samplePasswordData(): PasswordData

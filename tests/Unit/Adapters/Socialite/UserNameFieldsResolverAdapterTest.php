@@ -14,7 +14,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('no-user-db');
 
 /**
+<<<<<<< .merge_file_Iigc1U
  * @param  array<string, mixed>  $raw
+=======
+ * @param array<string, mixed> $raw
+>>>>>>> .merge_file_w1I7l7
  */
 function adapterSocialiteUserMock(?string $name, ?string $email, array $raw = []): SocialiteUser
 {
@@ -23,7 +27,11 @@ function adapterSocialiteUserMock(?string $name, ?string $email, array $raw = []
             'getName' => $name,
             'getEmail' => $email,
         ]);
+<<<<<<< .merge_file_Iigc1U
         if ($raw !== []) {
+=======
+        if ([] !== $raw) {
+>>>>>>> .merge_file_w1I7l7
             $mock->allows('getRaw')->andReturn($raw);
         }
     });

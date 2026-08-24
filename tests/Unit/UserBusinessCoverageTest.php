@@ -4,14 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit;
 
+<<<<<<< .merge_file_uQnKTc
 use Mockery;
+=======
+>>>>>>> .merge_file_PVrUBK
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Tests\ModuleBusinessCoverage;
 
 uses(TestCase::class)->group('no-user-db');
 
 afterEach(function (): void {
+<<<<<<< .merge_file_uQnKTc
     Mockery::close();
+=======
+    \Mockery::close();
+>>>>>>> .merge_file_PVrUBK
 });
 
 /** @return array{string, string} */

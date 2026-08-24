@@ -70,7 +70,11 @@ trait HasPassportConfiguration
      * castata a ogni chiamata. Una voce non numerica è un errore di configurazione e ricade
      * sul default invece di diventare `0`, che scadrebbe i token immediatamente.
      *
+<<<<<<< .merge_file_pU53x3
      * @param  array<array-key, mixed>  $config
+=======
+     * @param array<array-key, mixed> $config
+>>>>>>> .merge_file_n5SkNF
      */
     private static function tokenLifetime(array $config, string $key, int $default): int
     {

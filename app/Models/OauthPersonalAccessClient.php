@@ -28,9 +28,15 @@ use Modules\Ptv\Models\Profile;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient whereUpdatedBy($value)
  *
+<<<<<<< .merge_file_oPgeiU
  * @property-read Profile|null $creator
  * @property-read Profile|null $deleter
  * @property-read Profile|null $updater
+=======
+ * @property Profile|null $creator
+ * @property Profile|null $deleter
+ * @property Profile|null $updater
+>>>>>>> .merge_file_z9uRgV
  *
  * @mixin \Eloquent
  */

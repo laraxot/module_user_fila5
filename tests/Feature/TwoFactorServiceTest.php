@@ -9,9 +9,10 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
-use Webmozart\Assert\Assert as WebmozartAssert;
 
 use function Safe\json_decode;
+
+use Webmozart\Assert\Assert as WebmozartAssert;
 
 uses(TestCase::class);
 
@@ -22,7 +23,7 @@ function twoFactorFixture(): array
     skipUnlessUserColumn('users', 'two_factor_recovery_codes');
     skipUnlessUserColumn('users', 'two_factor_confirmed_at');
 
-    return [createTestUser(), new Google2FA];
+    return [createTestUser(), new Google2FA()];
 }
 
 describe('Two Factor Service', function (): void {

@@ -20,10 +20,17 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static \Modules\User\Database\Factories\PermissionUserFactory factory($count = null, $state = [])
  *
+<<<<<<< .merge_file_XVN95M
  * @property string $id
  * @property string $permission_id
  * @property string $model_type
  * @property string $model_id
+=======
+ * @property string      $id
+ * @property string      $permission_id
+ * @property string      $model_type
+ * @property string      $model_id
+>>>>>>> .merge_file_OOQMCl
  * @property string|null $team_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at

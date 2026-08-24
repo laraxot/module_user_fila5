@@ -12,13 +12,22 @@ use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 final class SocialiteUserWithRawFixture implements SocialiteUserContract
 {
     /**
+<<<<<<< .merge_file_e7PEH4
      * @param  array<string, mixed>  $raw
+=======
+     * @param array<string, mixed> $raw
+>>>>>>> .merge_file_RqJHM2
      */
     public function __construct(
         private readonly ?string $name,
         private readonly ?string $email,
         private readonly array $raw = [],
+<<<<<<< .merge_file_e7PEH4
     ) {}
+=======
+    ) {
+    }
+>>>>>>> .merge_file_RqJHM2
 
     public function getId(): string
     {
