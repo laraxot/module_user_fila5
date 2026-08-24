@@ -34,7 +34,7 @@ use function Safe\json_decode;
 use function Safe\json_encode;
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function createUser(array $attributes = []): User
 {
@@ -48,7 +48,7 @@ function createUser(array $attributes = []): User
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function makeUser(array $attributes = []): User
 {
@@ -62,7 +62,7 @@ function makeUser(array $attributes = []): User
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function createTeam(array $attributes = []): Team
 {
@@ -72,7 +72,7 @@ function createTeam(array $attributes = []): Team
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function createTestUser(array $attributes = []): User
 {
@@ -114,7 +114,7 @@ function pestSkip(string $message): never
 function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
 {
     if (! userTableHasColumn($table, $column)) {
-        pestSkip($reason !== '' ? $reason : "Column {$table}.{$column} missing on user connection.");
+        pestSkip('' !== $reason ? $reason : "Column {$table}.{$column} missing on user connection.");
     }
 }
 
@@ -126,7 +126,7 @@ function userTableExists(string $table): bool
 function skipUnlessUserTable(string $table, string $reason = ''): void
 {
     if (! userTableExists($table)) {
-        pestSkip($reason !== '' ? $reason : "Table {$table} missing on user connection.");
+        pestSkip('' !== $reason ? $reason : "Table {$table} missing on user connection.");
     }
 }
 
@@ -142,19 +142,19 @@ function permissionPivotTable(): string
 
 function skipUnlessUsersTableReady(string $reason = ''): void
 {
-    skipUnlessUserTable('users', $reason !== '' ? $reason : 'users table missing on user connection.');
+    skipUnlessUserTable('users', '' !== $reason ? $reason : 'users table missing on user connection.');
 }
 
 function skipUnlessRoleAssignmentSupported(string $reason = ''): void
 {
     $table = permissionRolePivotTable();
-    skipUnlessUserTable($table, $reason !== '' ? $reason : "Role pivot table {$table} missing on user connection.");
+    skipUnlessUserTable($table, '' !== $reason ? $reason : "Role pivot table {$table} missing on user connection.");
 }
 
 function skipUnlessDirectPermissionSupported(string $reason = ''): void
 {
     $table = permissionPivotTable();
-    skipUnlessUserTable($table, $reason !== '' ? $reason : "Permission pivot table {$table} missing on user connection.");
+    skipUnlessUserTable($table, '' !== $reason ? $reason : "Permission pivot table {$table} missing on user connection.");
 }
 
 function skipUnlessTeamUsersRelationSupported(): void
@@ -165,7 +165,7 @@ function skipUnlessTeamUsersRelationSupported(): void
 }
 
 /**
- * @param  array<string, mixed>  $pivot
+ * @param array<string, mixed> $pivot
  */
 function attachTeamMember(Team $team, User $user, array $pivot = []): void
 {
@@ -221,7 +221,7 @@ function teamUsesSoftDeletes(): bool
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function createProfile(array $attributes = []): Profile
 {
@@ -250,7 +250,7 @@ function setupFilamentAdminPanel(): void
 }
 
 /**
- * @param  array<mixed>  $attributes
+ * @param array<mixed> $attributes
  */
 function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contracts\User
 {
@@ -278,7 +278,8 @@ function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contr
 /**
  * @template T of object
  *
- * @param  class-string<T>  $class
+ * @param class-string<T> $class
+ *
  * @return T&MockInterface
  */
 function typedMock(string $class): MockInterface
@@ -292,8 +293,9 @@ function typedMock(string $class): MockInterface
 /**
  * @template T of object
  *
- * @param  class-string<T>  $class
- * @param  callable(T&MockInterface): void  $configure
+ * @param class-string<T>                 $class
+ * @param callable(T&MockInterface): void $configure
+ *
  * @return T&MockInterface
  */
 function configureMock(string $class, callable $configure): MockInterface
@@ -314,7 +316,7 @@ function fakeSocialiteUser(string $email): Laravel\Socialite\Contracts\User
 
 function makeIsUserAllowedAction(): IsUserAllowedAction
 {
-    return new IsUserAllowedAction;
+    return new IsUserAllowedAction();
 }
 
 /**
@@ -369,7 +371,7 @@ function userResourceSectionComponents(TestCase $testCase, Component $section): 
 }
 
 /**
- * @param  array<int, Component|Action|ActionGroup>  $components
+ * @param array<int, Component|Action|ActionGroup> $components
  */
 function userResourceFindComponentByName(array $components, string $name): ?Component
 {
@@ -387,7 +389,7 @@ function userResourceFindComponentByName(array $components, string $name): ?Comp
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function stubUser(array $attributes = []): User
 {
@@ -395,7 +397,7 @@ function stubUser(array $attributes = []): User
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function hasTeamsCurrentCreateUser(array $attributes = []): User
 {
@@ -403,7 +405,7 @@ function hasTeamsCurrentCreateUser(array $attributes = []): User
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 {
@@ -460,7 +462,7 @@ function verifyTwoFactorCode(User $user, Google2FA $google2fa, string $code): bo
         return false;
     }
 
-    return $google2fa->verifyKey($secret, $code) !== false;
+    return false !== $google2fa->verifyKey($secret, $code);
 }
 
 function disableTwoFactorForUser(User $user): void
@@ -551,7 +553,7 @@ function teamMgmtTeamUsersRelationSupported(): bool
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtCreateUser(array $attributes = []): User
 {
@@ -564,7 +566,7 @@ function teamMgmtCreateUser(array $attributes = []): User
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtCreateTeam(User $owner, array $attributes = []): Team
 {
@@ -587,7 +589,7 @@ function teamMgmtBootstrap(): array
 }
 
 /**
- * @param  array<string, mixed>  $pivot
+ * @param array<string, mixed> $pivot
  */
 function teamMgmtAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -631,7 +633,7 @@ function teamMgmtMemberExists(Team $team, User $user): bool
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtCreateInvitation(Team $team, array $attributes = []): TeamInvitation
 {
@@ -642,7 +644,7 @@ function teamMgmtCreateInvitation(Team $team, array $attributes = []): TeamInvit
         'role' => 'member',
     ], $attributes);
 
-    $invitation = new TeamInvitation;
+    $invitation = new TeamInvitation();
     $invitation->forceFill($payload);
     $invitation->save();
     $fresh = $invitation->fresh();
@@ -666,7 +668,7 @@ function teamMgmtBizTeamUsesSoftDeletes(): bool
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtBizCreateUser(array $attributes = []): User
 {
@@ -679,7 +681,7 @@ function teamMgmtBizCreateUser(array $attributes = []): User
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtBizCreateTeam(array $attributes = []): Team
 {
@@ -690,7 +692,7 @@ function teamMgmtBizCreateTeam(array $attributes = []): Team
 }
 
 /**
- * @param  array<string, mixed>  $where
+ * @param array<string, mixed> $where
  */
 function teamMgmtBizAssertDatabaseHas(string $table, array $where): void
 {
@@ -703,7 +705,7 @@ function teamMgmtBizAssertDatabaseHas(string $table, array $where): void
 }
 
 /**
- * @param  array<string, mixed>  $where
+ * @param array<string, mixed> $where
  */
 function teamMgmtBizAssertDatabaseMissing(string $table, array $where): void
 {
@@ -716,7 +718,7 @@ function teamMgmtBizAssertDatabaseMissing(string $table, array $where): void
 }
 
 /**
- * @param  array<string, mixed>  $pivot
+ * @param array<string, mixed> $pivot
  */
 function teamMgmtBizAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -756,7 +758,7 @@ function teamMgmtBizMemberExists(Team $team, User $user): bool
 }
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function teamMgmtBizCreateInvitation(Team $team, array $attributes = []): TeamInvitation
 {
@@ -767,7 +769,7 @@ function teamMgmtBizCreateInvitation(Team $team, array $attributes = []): TeamIn
         'role' => 'member',
     ], $attributes);
 
-    $invitation = new TeamInvitation;
+    $invitation = new TeamInvitation();
     $invitation->forceFill($payload);
     $invitation->save();
     $fresh = $invitation->fresh();

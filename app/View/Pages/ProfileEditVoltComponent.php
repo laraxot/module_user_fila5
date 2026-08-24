@@ -89,7 +89,7 @@ final class ProfileEditVoltComponent extends Component
             Assert::stringNotEmpty($this->last_name, 'User last name cannot be empty');
             Assert::stringNotEmpty($this->email, 'User email cannot be empty');
             Assert::stringNotEmpty($this->user_id, 'User ID cannot be empty');
-            Assert::true(filter_var($this->email, FILTER_VALIDATE_EMAIL) !== false, 'User email must be valid');
+            Assert::true(false !== filter_var($this->email, FILTER_VALIDATE_EMAIL), 'User email must be valid');
         } catch (InvalidArgumentException) {
             redirect()->route('login')->with('error', 'Invalid user session. Please log in again.');
         } catch (\Exception) {
@@ -162,7 +162,7 @@ final class ProfileEditVoltComponent extends Component
 
             session()->flash('status', $message);
 
-            if ($emailChanged && $user->email_verified_at === null) {
+            if ($emailChanged && null === $user->email_verified_at) {
                 $user->sendEmailVerificationNotification();
             }
         } catch (ValidationException $e) {

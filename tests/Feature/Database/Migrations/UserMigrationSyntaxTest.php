@@ -2,9 +2,8 @@
 
 declare(strict_types=1);
 
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
 use function Safe\exec;

@@ -18,7 +18,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
  */
 final class TenantUserResource extends XotBaseResource
 {
-    //protected static ?string $model = TenantUser::class;
+    // protected static ?string $model = TenantUser::class;
     /**
      * Get the model class name for this resource.
      *

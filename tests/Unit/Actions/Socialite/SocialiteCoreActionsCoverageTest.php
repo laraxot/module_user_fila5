@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-
 use Illuminate\Contracts\Events\Dispatcher;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Laravel\Socialite\Facades\Socialite;
@@ -17,6 +15,7 @@ use Modules\User\Datas\SocialiteUserAttributesData;
 use Modules\User\Events\InvalidState;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
@@ -70,9 +69,10 @@ test('retrieves oauth user from socialite driver', function (): void {
         $mock->allows(['getEmail' => 'user@example.com']);
     });
 
-    $driver = new class($oauthUser)
-    {
-        public function __construct(private SocialiteUserContract $oauthUser) {}
+    $driver = new class($oauthUser) {
+        public function __construct(private SocialiteUserContract $oauthUser)
+        {
+        }
 
         public function user(): SocialiteUserContract
         {
@@ -92,11 +92,12 @@ test('retrieves oauth user from socialite driver', function (): void {
 });
 
 test('returns null and dispatches invalid state event when socialite state is invalid', function (): void {
-    $exception = new InvalidStateException;
+    $exception = new InvalidStateException();
 
-    $driver = new class($exception)
-    {
-        public function __construct(private InvalidStateException $exception) {}
+    $driver = new class($exception) {
+        public function __construct(private InvalidStateException $exception)
+        {
+        }
 
         public function user(): never
         {
