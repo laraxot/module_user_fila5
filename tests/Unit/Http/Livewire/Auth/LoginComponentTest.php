@@ -7,11 +7,13 @@ namespace Modules\User\Tests\Unit\Http\Livewire\Auth;
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\View\View;
 use Mockery;
 use Modules\User\Http\Livewire\Auth\Login;
-use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
 use Spatie\Permission\Models\Role;
 
@@ -35,12 +37,18 @@ function loginFormSchema(Login $component): array
     return $schema;
 }
 
+/**
+ * @param  list<string>  $roleNames
+ */
 function loginRedirectForRoles(array $roleNames): string
 {
     app()->setLocale('it');
-    $user = new User;
+    /** @var class-string<\Illuminate\Database\Eloquent\Model> $userClass */
+    $userClass = XotData::make()->getUserClass();
+    $user = new $userClass;
     $user->forceFill(['id' => 'redirect-user']);
 
+    /** @var \Illuminate\Support\Collection<int, Role> $roles */
     $roles = collect(array_map(
         static fn (string $name): Role => new Role(['name' => $name, 'guard_name' => 'web']),
         $roleNames
@@ -58,7 +66,10 @@ function loginRedirectForRoles(array $roleNames): string
     $method = new \ReflectionMethod($component, 'getRedirectUrl');
     $method->setAccessible(true);
 
-    return $method->invoke($component)->getTargetUrl();
+    $redirect = $method->invoke($component);
+    Assert::assertInstanceOf(RedirectResponse::class, $redirect);
+
+    return $redirect->getTargetUrl();
 }
 
 describe('Login Livewire component', function (): void {
@@ -82,6 +93,7 @@ describe('Login Livewire component', function (): void {
     test('render returns login view', function (): void {
         $view = (new Login)->render();
 
+        Assert::assertInstanceOf(View::class, $view);
         Assert::assertSame('user::livewire.auth.login', $view->name());
     });
 

@@ -14,6 +14,8 @@ afterEach(function (): void {
     Mockery::close();
 });
 
+/** @return array{string, string} */
+/** @return list{string, string} */
 function userBusinessContext(): array
 {
     return [dirname(__DIR__, 2).'/app', 'Modules\\User\\'];

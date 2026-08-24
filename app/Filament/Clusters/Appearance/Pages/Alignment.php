@@ -77,12 +77,8 @@ class Alignment extends XotBasePage
     {
         try {
             $data = $this->form->getState();
-            dddx($data);
-
             // $this->handleRecordUpdate($this->getUser(), $data);
         } catch (Halt $exception) {
-            dddx($exception->getMessage());
-
             return;
         }
     }

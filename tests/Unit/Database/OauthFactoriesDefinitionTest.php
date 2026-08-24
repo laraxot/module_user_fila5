@@ -17,9 +17,9 @@ it('oauth factories expose the expected definition keys', function (): void {
     $authCodeDefinition = (new OauthAuthCodeFactory)->definition();
     $refreshTokenDefinition = (new OauthRefreshTokenFactory)->definition();
 
-    Assert::assertIsArray($clientDefinition);
-    Assert::assertIsArray($accessTokenDefinition);
-    Assert::assertIsArray($authCodeDefinition);
-    Assert::assertIsArray($refreshTokenDefinition);
+    Assert::assertArrayHasKey('name', $clientDefinition);
+    Assert::assertArrayHasKey('id', $accessTokenDefinition);
+    Assert::assertArrayHasKey('id', $authCodeDefinition);
+    Assert::assertArrayHasKey('id', $refreshTokenDefinition);
     Assert::assertNotEmpty($clientDefinition);
 });

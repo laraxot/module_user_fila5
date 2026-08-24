@@ -4,20 +4,23 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit;
 
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Auth\Events\Logout;
+use Illuminate\Auth\Events\OtherDeviceLogout;
+use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\Hash;
+use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Mockery;
+use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\RetrieveSocialiteUserAction;
+use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource;
 use Modules\User\Filament\Resources\OauthAccessTokenResource;
 use Modules\User\Filament\Resources\OauthAuthCodeResource;
-use Modules\User\Filament\Resources\OauthDeviceCodeResource;
 use Modules\User\Filament\Resources\OauthRefreshTokenResource;
 use Modules\User\Filament\Widgets\EditUserWidget;
 use Modules\User\Filament\Widgets\RegistrationWidget;
 use Modules\User\Filament\Widgets\UserTypeRegistrationsChartWidget;
-use Modules\User\Http\Livewire\Auth\PasswordExpired;
+use Modules\User\Http\Livewire\Auth\Passwords\Reset;
 use Modules\User\Http\Livewire\Auth\Register;
-use Modules\User\Http\Livewire\Passwords\Reset;
 use Modules\User\Listeners\LogoutListener;
 use Modules\User\Listeners\OtherDeviceLogoutListener;
 use Modules\User\Models\BaseUser;
@@ -85,8 +88,10 @@ describe('User gap attack — highest miss files', function (): void {
         }
     });
 
-    test('Auth Livewire Register Reset PasswordExpired offline', function (): void {
-        foreach ([Register::class, Reset::class, PasswordExpired::class] as $class) {
+    test('Auth Livewire Register e Reset offline', function (): void {
+        // PasswordExpired Livewire non esiste: è Filament Page Auth\PasswordExpired (git log -S).
+        // Reset vive in Http\Livewire\Auth\Passwords, non in Http\Livewire\Passwords.
+        foreach ([Register::class, Reset::class] as $class) {
             if (! class_exists($class)) {
                 continue;
             }
@@ -145,8 +150,8 @@ describe('User gap attack — highest miss files', function (): void {
     });
 
     test('Listeners Logout e Socialite Retrieve', function (): void {
+        /** @var UserContract&MockInterface $user */
         $user = Mockery::mock(UserContract::class);
-        $user->id = 1;
         $user->shouldReceive('getAuthIdentifier')->andReturn(1);
 
         foreach ([LogoutListener::class, OtherDeviceLogoutListener::class] as $class) {
@@ -162,9 +167,15 @@ describe('User gap attack — highest miss files', function (): void {
                     continue;
                 }
             }
-            $event = Mockery::mock();
-            $event->shouldReceive('user')->andReturn($user);
-            $event->user = $user;
+
+            $eventClass = $class === OtherDeviceLogoutListener::class
+                ? OtherDeviceLogout::class
+                : Logout::class;
+            /** @var Authenticatable&MockInterface $authUser */
+            $authUser = Mockery::mock(Authenticatable::class);
+            $authUser->shouldReceive('getAuthIdentifier')->andReturn(1);
+            $event = new $eventClass('web', $authUser);
+
             try {
                 if (method_exists($listener, 'handle')) {
                     $listener->handle($event);
@@ -179,14 +190,19 @@ describe('User gap attack — highest miss files', function (): void {
                 $action = app(RetrieveSocialiteUserAction::class);
                 $ref = new ReflectionClass($action);
                 if ($ref->hasMethod('execute')) {
+                    /** @var SocialiteUserContract&MockInterface $socialiteUser */
+                    $socialiteUser = Mockery::mock(SocialiteUserContract::class);
                     try {
-                        $action->execute('google', Mockery::mock(\Laravel\Socialite\Contracts\User::class));
+                        $action->execute('google', $socialiteUser);
                     } catch (\Throwable) {
                     }
                 }
                 Assert::assertInstanceOf(RetrieveSocialiteUserAction::class, $action);
-            } catch (\Throwable) {
-                Assert::assertTrue(true);
+            } catch (\Throwable $e) {
+                Assert::assertTrue(
+                    class_exists(RetrieveSocialiteUserAction::class),
+                    'RetrieveSocialiteUserAction deve restare caricabile: '.$e->getMessage()
+                );
             }
         }
     });

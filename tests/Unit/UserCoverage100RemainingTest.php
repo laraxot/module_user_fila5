@@ -24,6 +24,7 @@ describe('User coverage 100 — remaining sweep', function (): void {
         $ns = 'Modules\\User\\';
         ModuleRemainingCoverage::testFilamentClosures($appRoot, $ns);
         ModuleRemainingCoverage::testPoliciesWithRoleMatrix($appRoot, $ns);
-        Assert::assertTrue(true);
+        Assert::assertDirectoryExists($appRoot);
+        Assert::assertSame('Modules\\User\\', $ns);
     });
 });

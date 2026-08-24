@@ -20,7 +20,7 @@ final class SocialiteUserWithRawFixture implements SocialiteUserContract
         private readonly array $raw = [],
     ) {}
 
-    public function getId(): string|int|null
+    public function getId(): string
     {
         return 'fixture-id';
     }
