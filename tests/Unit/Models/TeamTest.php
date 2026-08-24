@@ -14,7 +14,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('user-db');
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function modelsTeamCreateUser(array $attributes = []): User
 {

@@ -13,7 +13,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('user-db');
 
 /**
- * @param  array<string, mixed>  $attributes
+ * @param array<string, mixed> $attributes
  */
 function modelsDeviceCreate(array $attributes = []): Device
 {
@@ -21,7 +21,7 @@ function modelsDeviceCreate(array $attributes = []): Device
 }
 
 /**
- * @param  array<string, mixed>  $where
+ * @param array<string, mixed> $where
  */
 function modelsDeviceAssertInDatabase(string $id, array $where): void
 {
@@ -296,7 +296,7 @@ test('device has factory', function (): void {
 });
 
 test('device has fillable attributes', function (): void {
-    $fillable = (new Device)->getFillable();
+    $fillable = (new Device())->getFillable();
 
     foreach ([
         'id', 'uuid', 'mobile_id', 'languages', 'device', 'platform', 'browser', 'version',
@@ -307,7 +307,7 @@ test('device has fillable attributes', function (): void {
 });
 
 test('device has casts', function (): void {
-    $casts = (new Device)->getCasts();
+    $casts = (new Device())->getCasts();
 
     Assert::assertSame('array', $casts['languages']);
     Assert::assertSame('boolean', $casts['is_robot']);

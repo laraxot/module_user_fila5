@@ -12,12 +12,12 @@ uses(TestCase::class)->group('no-user-db');
 test('TeamInvitation mail can be instantiated', function () {
     Assert::assertTrue(class_exists(TeamInvitation::class));
 
-    $model = new TeamInvitationModel;
+    $model = new TeamInvitationModel();
     $model->forceFill([
         'email' => 'test@example.com',
     ]);
 
-    $mail = new TeamInvitation;
+    $mail = new TeamInvitation();
     $mail->invitation = $model;
 
     Assert::assertInstanceOf(TeamInvitation::class, $mail);

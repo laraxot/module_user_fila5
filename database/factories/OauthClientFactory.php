@@ -120,7 +120,7 @@ class OauthClientFactory extends Factory
     /**
      * Create client with specific scopes.
      *
-     * @param  array<string>  $scopes
+     * @param array<string> $scopes
      */
     public function withScopes(array $scopes): static
     {

@@ -12,10 +12,10 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('no-user-db');
 
 it('oauth factories expose the expected definition keys', function (): void {
-    $clientDefinition = (new OauthClientFactory)->definition();
-    $accessTokenDefinition = (new OauthAccessTokenFactory)->definition();
-    $authCodeDefinition = (new OauthAuthCodeFactory)->definition();
-    $refreshTokenDefinition = (new OauthRefreshTokenFactory)->definition();
+    $clientDefinition = (new OauthClientFactory())->definition();
+    $accessTokenDefinition = (new OauthAccessTokenFactory())->definition();
+    $authCodeDefinition = (new OauthAuthCodeFactory())->definition();
+    $refreshTokenDefinition = (new OauthRefreshTokenFactory())->definition();
 
     Assert::assertArrayHasKey('name', $clientDefinition);
     Assert::assertArrayHasKey('id', $accessTokenDefinition);

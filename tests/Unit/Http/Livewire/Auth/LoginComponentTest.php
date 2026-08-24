@@ -10,7 +10,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
-use Mockery;
 use Modules\User\Http\Livewire\Auth\Login;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
@@ -20,7 +19,7 @@ use Spatie\Permission\Models\Role;
 uses(TestCase::class)->group('no-user-db');
 
 afterEach(function (): void {
-    Mockery::close();
+    \Mockery::close();
 });
 
 /**
@@ -38,14 +37,14 @@ function loginFormSchema(Login $component): array
 }
 
 /**
- * @param  list<string>  $roleNames
+ * @param list<string> $roleNames
  */
 function loginRedirectForRoles(array $roleNames): string
 {
     app()->setLocale('it');
     /** @var class-string<\Illuminate\Database\Eloquent\Model> $userClass */
     $userClass = XotData::make()->getUserClass();
-    $user = new $userClass;
+    $user = new $userClass();
     $user->forceFill(['id' => 'redirect-user']);
 
     /** @var \Illuminate\Support\Collection<int, Role> $roles */
@@ -54,15 +53,15 @@ function loginRedirectForRoles(array $roleNames): string
         $roleNames
     ));
 
-    $relation = Mockery::mock(BelongsToMany::class);
+    $relation = \Mockery::mock(BelongsToMany::class);
     $relation->shouldReceive('get')->andReturn($roles);
 
-    $userMock = Mockery::mock($user)->makePartial();
+    $userMock = \Mockery::mock($user)->makePartial();
     $userMock->shouldReceive('roles')->andReturn($relation);
 
     Auth::shouldReceive('user')->andReturn($userMock);
 
-    $component = new Login;
+    $component = new Login();
     $method = new \ReflectionMethod($component, 'getRedirectUrl');
     $method->setAccessible(true);
 
@@ -74,14 +73,14 @@ function loginRedirectForRoles(array $roleNames): string
 
 describe('Login Livewire component', function (): void {
     test('mount initializes component without throwing', function (): void {
-        $component = new Login;
+        $component = new Login();
         $component->mount();
 
         Assert::assertIsArray($component->data);
     });
 
     test('form schema exposes email password remember fields', function (): void {
-        $schema = loginFormSchema(new Login);
+        $schema = loginFormSchema(new Login());
 
         Assert::assertCount(3, $schema);
         Assert::assertInstanceOf(TextInput::class, $schema[0]);
@@ -91,7 +90,7 @@ describe('Login Livewire component', function (): void {
     });
 
     test('render returns login view', function (): void {
-        $view = (new Login)->render();
+        $view = (new Login())->render();
 
         Assert::assertInstanceOf(View::class, $view);
         Assert::assertSame('user::livewire.auth.login', $view->name());

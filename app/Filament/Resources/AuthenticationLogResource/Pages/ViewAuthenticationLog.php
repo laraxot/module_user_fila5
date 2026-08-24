@@ -33,7 +33,7 @@ class ViewAuthenticationLog extends XotBaseViewRecord
                         ->schema([
                             'id' => TextEntry::make('id'),
                             'authenticatable_type' => TextEntry::make('authenticatable_type')
-                                ->formatStateUsing(fn (?string $state): string => $state !== null ? Str::afterLast($state, '\\') : ''),
+                                ->formatStateUsing(fn (?string $state): string => null !== $state ? Str::afterLast($state, '\\') : ''),
                         ]),
 
                     'details_grid_2' => Grid::make(2)
@@ -41,7 +41,7 @@ class ViewAuthenticationLog extends XotBaseViewRecord
                             'authenticatable_name' => TextEntry::make('authenticatable.name')
                                 ->url(function (mixed $state, AuthenticationLog $record): ?string {
                                     $authenticatable = $record->authenticatable;
-                                    if ($authenticatable !== null && method_exists($authenticatable, 'exists') && $authenticatable->exists) {
+                                    if (null !== $authenticatable && method_exists($authenticatable, 'exists') && $authenticatable->exists) {
                                         return UserResource::getUrl('view', ['record' => $authenticatable]);
                                     }
 
@@ -91,7 +91,7 @@ class ViewAuthenticationLog extends XotBaseViewRecord
                 ->schema([
                     'location_data' => TextEntry::make('location')
                         ->formatStateUsing(function (mixed $state): string {
-                            if ($state === null || $state === []) {
+                            if (null === $state || [] === $state) {
                                 return 'No location data';
                             }
 

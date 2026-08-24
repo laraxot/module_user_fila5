@@ -28,7 +28,7 @@ beforeEach(function (): void {
     }
     Filament::setCurrentPanel($panel);
 
-    $this->createUserPage = new CreateUser;
+    $this->createUserPage = new CreateUser();
 });
 
 describe('Create User', function (): void {

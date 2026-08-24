@@ -20,10 +20,10 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static \Modules\User\Database\Factories\PermissionUserFactory factory($count = null, $state = [])
  *
- * @property string $id
- * @property string $permission_id
- * @property string $model_type
- * @property string $model_id
+ * @property string      $id
+ * @property string      $permission_id
+ * @property string      $model_type
+ * @property string      $model_id
  * @property string|null $team_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
@@ -42,4 +42,6 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @mixin \Eloquent
  */
-class PermissionUser extends ModelHasPermission {}
+class PermissionUser extends ModelHasPermission
+{
+}

@@ -14,7 +14,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('no-user-db');
 
 /**
- * @param  array<string, mixed>  $raw
+ * @param array<string, mixed> $raw
  */
 function adapterSocialiteUserMock(?string $name, ?string $email, array $raw = []): SocialiteUser
 {
@@ -23,7 +23,7 @@ function adapterSocialiteUserMock(?string $name, ?string $email, array $raw = []
             'getName' => $name,
             'getEmail' => $email,
         ]);
-        if ($raw !== []) {
+        if ([] !== $raw) {
             $mock->allows('getRaw')->andReturn($raw);
         }
     });
