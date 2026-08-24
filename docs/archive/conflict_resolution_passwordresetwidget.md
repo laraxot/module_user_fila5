@@ -1,3 +1,12 @@
+---
+title: "Risoluzione Conflitti PasswordResetWidget.php"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto

@@ -34,6 +34,8 @@ Filament\Forms\Concerns\SupportsFileUploadFields:39 getUploadedFiles
 ## Soluzione Implementata ✅
 ### 1. Correzione in `RegistrationWidget.getFormFill()` ✅
 Il metodo è stato modificato per convertire i campi file upload da stringhe ad array quando il modello esiste:
+```
+
 ```php
 public function getFormFill(): array
 {
@@ -97,6 +99,8 @@ I componenti `FileUpload` si aspettano array:
 3. **Modifica File**: Verifica che upload di nuovi file sostituisca quelli esistenti
 4. **Wizard Navigation**: Verifica navigazione tra step senza perdere file
 ### Comandi Test
+```
+
 ```bash
 cd laravel
 cd laravel
@@ -159,3 +163,5 @@ Questo pattern può essere riutilizzato in altri widget che:
 **Tipo**: Bug Fix Documentation
 **Priorità**: Critica (blocca registrazione paziente)
 **Status**: ✅ **RISOLTO**
+
+```

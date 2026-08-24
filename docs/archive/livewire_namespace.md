@@ -1,3 +1,12 @@
+---
+title: "Regole per i componenti Livewire in Windsurf/Xot"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Regole per i componenti Livewire in Windsurf/Xot
 
 ## Namespace corretto

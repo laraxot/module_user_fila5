@@ -1,3 +1,12 @@
+---
+title: "Jetstream vs Laraxot: Filosofia, Religione e Politica dei Team"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Jetstream vs Laraxot: Filosofia, Religione e Politica dei Team
 
 ## 🌟 **LA RELIGIONE JETSTREAM**

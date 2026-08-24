@@ -25,7 +25,9 @@ class UserContextData extends Data
 
     public static function fromUserModel(object $userModel): self
     {
-        $rawId = property_exists($userModel, 'id') ? $userModel->id : null;
+        // property_exists() è sempre false sugli attributi Eloquent (magic, in $attributes):
+        // isset() passa da __isset() e vede l'attributo davvero valorizzato.
+        $rawId = $userModel->id ?? null;
         $userId = $rawId !== null ? SafeStringCastAction::cast($rawId) : null;
 
         $roles = array_values(array_map(

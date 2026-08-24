@@ -273,3 +273,5 @@ php artisan test --filter=User
 
 # Check for any new errors
 ./vendor/bin/phpstan analyse Modules
+
+```

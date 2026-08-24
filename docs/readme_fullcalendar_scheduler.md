@@ -1,3 +1,12 @@
+---
+title: "FullCalendar Scheduler Documentation - README"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # FullCalendar Scheduler Documentation - README
 
 ## 🎯 Obiettivo

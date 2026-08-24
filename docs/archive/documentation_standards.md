@@ -1,3 +1,12 @@
+---
+title: "Standard di Documentazione"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Standard di Documentazione
 
 ## Convenzioni di Naming

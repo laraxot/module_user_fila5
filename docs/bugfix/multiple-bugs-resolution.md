@@ -51,6 +51,8 @@ related:
 **Problema**: `expect($hidden)->toContain(...)` ma `$hidden` non era definito
 
 **Fix**: Aggiunta definizione variabile:
+```
+
 ```php
 it('declares sensitive attributes as hidden (without serialization)', function () {
     $user = stubUser();

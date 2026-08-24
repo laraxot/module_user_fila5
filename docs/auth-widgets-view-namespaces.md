@@ -138,6 +138,8 @@ I widget di autenticazione sono parte dell'**interfaccia utente del tema** e dev
 ## Pattern Corretto vs Errato
 
 ### ✅ **CORRETTO**
+```
+
 ```php
 namespace Modules\User\Filament\Widgets\Auth;
 

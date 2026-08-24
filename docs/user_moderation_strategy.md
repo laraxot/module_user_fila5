@@ -1,3 +1,12 @@
+---
+title: "User Moderation Strategy"
+module: user
+type: product
+tags: [product, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # User Moderation Strategy
 
 ## Overview

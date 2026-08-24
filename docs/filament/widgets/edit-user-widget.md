@@ -127,3 +127,5 @@ namespace Modules\<nome progetto>\Actions\Patient;
 ---
 **Nota:**
 Se vuoi estendere la logica di aggiornamento per un nuovo tipo di utente, crea una nuova Action seguendo la convenzione e aggiorna la documentazione del modulo specifico. La documentazione generale delle regole e delle convenzioni si trova nel modulo Xot e va sempre collegata da qui.
+
+```

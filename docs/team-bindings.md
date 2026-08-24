@@ -40,6 +40,8 @@ Il trait `HasTeams` utilizzava binding dinamici del container Laravel per i mode
 - **Utilizzo**: Nel metodo `teamInvitations()` del trait `HasTeams`
 ## Implementazione
 ### UserServiceProvider.php
+```
+
 ```php
 /**
  * Register the team model bindings.
@@ -64,6 +66,8 @@ public function register(): void
 3. **TeamInvitation**: Gestione inviti ai team
 4. **User**: Utilizzatori con trait `HasTeams`
 ### Relazioni
+```
+
 ```mermaid
 erDiagram
     User ||--o{ TeamUser : has_many
@@ -172,6 +176,8 @@ Il trait `HasTeams` utilizzava binding dinamici del container Laravel per i mode
 ## Implementazione
 
 ### UserServiceProvider.php
+
+```
 
 ```php
 /**

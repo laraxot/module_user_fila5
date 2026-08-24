@@ -213,3 +213,5 @@ public function resetPassword()
 - **Widget Auth**: Specifici, logica autenticazione interna sicura
 - **Entrambi**: Stesso pattern XotBaseWidget + form schema + view convention
 ## Collegamenti aggiornati
+
+```

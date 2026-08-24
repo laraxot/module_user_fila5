@@ -191,6 +191,8 @@ All widget development should follow these rules to maintain consistency and qua
 ## Translation Structure Pattern
 
 ### Required Structure
+```
+
 ```php
 return [
     'widget_name' => [

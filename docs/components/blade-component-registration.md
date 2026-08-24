@@ -42,3 +42,5 @@ Utilizzare direttamente i componenti nei template:
 - [UI Module Blade Components Registration](../../../ui/docs/components/blade-component-registration.md)
 - [UI Module Blade Components Registration](../../../ui/project_docs/components/blade-component-registration.md)
 - [Regole LangServiceProvider](../langserviceprovider-labels.md)
+
+```

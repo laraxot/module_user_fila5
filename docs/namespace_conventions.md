@@ -1,3 +1,12 @@
+---
+title: "Convenzioni di Namespace nel Modulo User"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Convenzioni di Namespace nel Modulo User
 
 ## Principi Fondamentali

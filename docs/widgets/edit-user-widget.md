@@ -147,3 +147,5 @@ All widget text follows the expanded translation structure:
 * [Translation System Overview](../../xot/docs/translations.md)
 * [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)
 * [Translation System Overview](../../xot/project_docs/translations.md)
+
+```

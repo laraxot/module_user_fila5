@@ -212,6 +212,8 @@ I file di traduzione del tema Two presentavano conflitti Git che coinvolgevano s
 - Aggiunto `declare(strict_types=1);` dove mancante
 
 **Struttura Corretta**:
+```
+
 ```php
 <?php
 

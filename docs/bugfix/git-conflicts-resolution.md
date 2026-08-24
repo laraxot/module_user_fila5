@@ -46,6 +46,8 @@ related:
 ```
 
 **DOPO (Risolto)**:
+```
+
 ```php
  * @mixin IdeHelperModelHasRole
  *
