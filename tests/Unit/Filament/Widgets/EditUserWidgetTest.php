@@ -22,32 +22,14 @@ describe('EditUserWidget', function (): void {
         Assert::assertInstanceOf(XotBaseSchemaWidget::class, $widget);
     });
 
-    test('edit user widget has type property', function (): void {
+    test('edit user widget defaults type resource and model properties', function (): void {
         $widget = new EditUserWidget;
         $ref = new ReflectionClass($widget);
 
-        Assert::assertTrue($ref->hasProperty('type') || property_exists($widget, 'type') || method_exists($widget, 'getType'));
-    });
-
-    test('edit user widget has resource property', function (): void {
-        $widget = new EditUserWidget;
-        $ref = new ReflectionClass($widget);
-
-        Assert::assertTrue(
-            $ref->hasProperty('resource')
-            || property_exists($widget, 'resource')
-            || method_exists($widget, 'getResource')
-        );
-    });
-
-    test('edit user widget has model property', function (): void {
-        $widget = new EditUserWidget;
-        $ref = new ReflectionClass($widget);
-
-        Assert::assertTrue(
-            $ref->hasProperty('model')
-            || property_exists($widget, 'model')
-            || method_exists($widget, 'getModel')
-        );
+        Assert::assertTrue($ref->hasProperty('type'));
+        Assert::assertTrue($ref->hasProperty('resource'));
+        Assert::assertTrue($ref->hasProperty('model'));
+        Assert::assertSame('', $widget->type);
+        Assert::assertSame(\Illuminate\Database\Eloquent\Model::class, $widget->model);
     });
 });

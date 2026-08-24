@@ -13,6 +13,9 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-user-db');
 
+/**
+ * @param  array<string, mixed>  $raw
+ */
 function adapterSocialiteUserMock(?string $name, ?string $email, array $raw = []): SocialiteUser
 {
     return \configureMock(SocialiteUser::class, static function (MockInterface $mock) use ($name, $email, $raw): void {

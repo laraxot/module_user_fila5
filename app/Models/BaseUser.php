@@ -242,7 +242,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     /*
     public function canAccessFilament(?Panel $panel = null): bool
     {
-         dddx($panel->getId());
+         throw new \RuntimeException('Removed debug dddx');
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;
         return true;
     }
@@ -324,21 +324,11 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function canAccessPanel(Panel $panel): bool
     {
-        // $panel->default('admin');
         if ($panel->getId() !== 'admin') {
-            $role = $panel->getId();
-            /*
-             * $xot = XotData::make();
-             * if ($xot->super_admin === $this->email) {
-             * $role = Role::firstOrCreate(['name' => $role]);
-             * $this->assignRole($role);
-             * }
-             */
-
-            return $this->hasRole($role);
+            return $this->hasRole($panel->getId());
         }
 
-        return true; // str_ends_with($this->email, '@yourdomain.com') && $this->hasVerifiedEmail();
+        return $this->isSuperAdmin() || $this->hasRole(['admin', 'super-admin']);
     }
 
     public function detach(Model $model): void
@@ -462,12 +452,15 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
             return;
         }
-        if (\strlen($value) < 32) {
-            $this->attributes['password'] = Hash::make($value);
+
+        // Bcrypt/argon già hashati (~60 char): non ri-hashare. Passphrase lunghe in chiaro: hash.
+        if (Hash::isHashed($value)) {
+            $this->attributes['password'] = $value;
 
             return;
         }
-        $this->attributes['password'] = $value;
+
+        $this->attributes['password'] = Hash::make($value);
     }
 
     /**

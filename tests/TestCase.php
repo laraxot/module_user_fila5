@@ -23,6 +23,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
+
+use function Safe\file_get_contents;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
 use Modules\User\Filament\Widgets\LoginWidget;
@@ -163,16 +165,18 @@ abstract class TestCase extends XotBaseTestCase
      */
     protected function shouldSkipForMissingUserDb(): bool
     {
-        if (in_array('no-user-db', $this->groups(), true)) {
-            return false;
-        }
-
         $testFile = $this->resolvePestTestFile();
         $isUnit = $testFile !== null && str_contains($testFile, '/tests/Unit/');
-        $isUserDbGroup = in_array('user-db', $this->groups(), true)
-            || ($testFile !== null && is_file($testFile) && str_contains((string) file_get_contents($testFile), "group('user-db')"));
+        $isUserDbGroup = false;
+        if ($testFile !== null && is_file($testFile)) {
+            $source = file_get_contents($testFile);
+            if (str_contains($source, "group('no-user-db')")) {
+                return false;
+            }
+            $isUserDbGroup = str_contains($source, "group('user-db')");
+        }
 
-        // Unit puri: sempre esegui (pattern Activity).
+        // Unit puri: sempre esegui (pattern Activity / Xot).
         if ($isUnit && ! $isUserDbGroup) {
             return false;
         }
@@ -184,7 +188,9 @@ abstract class TestCase extends XotBaseTestCase
         // Feature / user-db: lo schema sqlite può esistere, ma route/view Filament
         // nell'ambiente suite isolata restano incompleti (404, view missing).
         // Override: USER_DB_TESTS=1 per forzare l'esecuzione su MySQL/sqlite completo.
-        if (env('USER_DB_TESTS') === '1' || env('USER_DB_TESTS') === true) {
+        // Non usare env(): Larastan vietato fuori da config — leggere $_ENV/$_SERVER.
+        $userDbTests = $_ENV['USER_DB_TESTS'] ?? $_SERVER['USER_DB_TESTS'] ?? null;
+        if ($userDbTests === '1' || $userDbTests === true) {
             return false;
         }
 

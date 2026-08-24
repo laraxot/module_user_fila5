@@ -14,7 +14,7 @@ use function Safe\glob;
 uses(TestCase::class)->group('no-user-db');
 
 /**
- * @return list<string>
+ * @return list<class-string>
  */
 function userBoostClasses(string $pattern): array
 {
@@ -25,9 +25,10 @@ function userBoostClasses(string $pattern): array
 
     foreach ($files as $file) {
         $relative = str_replace($root.'/', '', $file);
-        $class = 'Modules\\User\\'.str_replace(['/', '.php'], ['\\', ''], $relative);
-        if (class_exists($class)) {
-            $classes[] = $class;
+        $candidate = 'Modules\\User\\'.str_replace(['/', '.php'], ['\\', ''], $relative);
+        if (class_exists($candidate) || enum_exists($candidate)) {
+            /** @var class-string $candidate */
+            $classes[] = $candidate;
         }
     }
 
@@ -39,15 +40,19 @@ function userBoostClasses(string $pattern): array
 describe('User coverage boost', function (): void {
     test('enums expose cases and labels', function (): void {
         foreach (userBoostClasses('Enums/*.php') as $class) {
-            $ref = new ReflectionClass($class);
-            if (! $ref->isEnum()) {
+            if (! enum_exists($class)) {
                 continue;
             }
-            Assert::assertNotEmpty($class::cases());
-            if (method_exists($class, 'getLabel')) {
-                foreach ($class::cases() as $case) {
-                    Assert::assertIsString($case->getLabel());
+            /** @var class-string<\UnitEnum> $enumClass */
+            $enumClass = $class;
+            $cases = $enumClass::cases();
+            Assert::assertNotEmpty($cases);
+            foreach ($cases as $case) {
+                if (! is_object($case) || ! method_exists($case, 'getLabel')) {
+                    continue;
                 }
+                $label = $case->getLabel();
+                Assert::assertIsString($label);
             }
         }
     });

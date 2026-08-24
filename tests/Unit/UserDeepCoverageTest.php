@@ -9,6 +9,8 @@ use Modules\Xot\Tests\ModuleDeepCoverage;
 
 uses(TestCase::class)->group('no-user-db');
 
+/** @return array{string, string} */
+/** @return list{string, string} */
 function userDeepContext(): array
 {
     return [dirname(__DIR__, 2).'/app', 'Modules\\User\\'];

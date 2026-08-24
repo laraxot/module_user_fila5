@@ -225,7 +225,7 @@ test('revokes client with and without associated tokens', function (): void {
     $clientWithoutTokenRevokeId = (string) Str::uuid();
     $tokenNoRevokeId = (string) Str::uuid();
 
-    DB::connection('user')->table('oauth_clients')->insert(TestCase::oauthClientColumnsOnly([
+    $clientRows = [
         [
             'id' => $clientWithTokenId,
             'user_id' => null,
@@ -256,7 +256,11 @@ test('revokes client with and without associated tokens', function (): void {
             'created_at' => now(),
             'updated_at' => now(),
         ],
-    ]));
+    ];
+    DB::connection('user')->table('oauth_clients')->insert(array_map(
+        static fn (array $row): array => TestCase::oauthClientColumnsOnly($row),
+        $clientRows
+    ));
 
     DB::connection('user')->table('oauth_access_tokens')->insert([
         [

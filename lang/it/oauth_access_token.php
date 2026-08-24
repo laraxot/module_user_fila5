@@ -39,6 +39,10 @@ return [
         'logout' => ['label' => 'Logout', 'tooltip' => 'Disconnettiti', 'helper_text' => 'Esci dall\'account', 'description' => 'Azione di logout', 'icon' => 'heroicon-o-arrow-right-on-rectangle'],
         'delete' => ['label' => 'Elimina', 'tooltip' => 'Elimina il token', 'helper_text' => 'Elimina definitivamente il token', 'description' => 'Azione per eliminare', 'icon' => 'heroicon-o-trash'],
         'create' => ['label' => 'Crea', 'tooltip' => 'Crea un nuovo token', 'helper_text' => 'Crea un nuovo token', 'description' => 'Azione per creare', 'icon' => 'heroicon-o-plus'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'messages' => ['created' => 'Token creato con successo', 'revoked' => 'Token revocato con successo', 'deleted' => 'Token eliminato con successo'],
     'sections' => [

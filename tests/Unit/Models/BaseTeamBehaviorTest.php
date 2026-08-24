@@ -6,11 +6,11 @@ namespace Modules\User\Tests\Unit\Models;
 
 use Mockery;
 use Modules\User\Models\BaseTeam;
-use Modules\User\Models\Team;
-use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Models\Fixtures\TestBaseTeam;
 use Modules\User\Tests\Unit\Models\Fixtures\TestBaseUser;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-user-db');
@@ -21,9 +21,11 @@ afterEach(function (): void {
 
 describe('BaseTeam in-memory behavior', function (): void {
     test('allUsers merges owner when owner is User instance', function (): void {
-        $owner = new User;
+        /** @var class-string<\Illuminate\Database\Eloquent\Model> $userClass */
+        $userClass = XotData::make()->getUserClass();
+        $owner = new $userClass;
         $owner->forceFill(['id' => 'owner-1', 'email' => 'owner@test.it']);
-        $member = new User;
+        $member = new $userClass;
         $member->forceFill(['id' => 'member-1', 'email' => 'member@test.it']);
 
         $team = new TestBaseTeam;
@@ -50,7 +52,9 @@ describe('BaseTeam in-memory behavior', function (): void {
     });
 
     test('hasUserWithEmail matches by email in allUsers', function (): void {
-        $owner = new User;
+        /** @var class-string<\Illuminate\Database\Eloquent\Model> $userClass */
+        $userClass = XotData::make()->getUserClass();
+        $owner = new $userClass;
         $owner->forceFill(['id' => 'o-3', 'email' => 'team.owner@test.it']);
 
         $team = new TestBaseTeam;
@@ -66,7 +70,8 @@ describe('BaseTeam in-memory behavior', function (): void {
         $team = new TestBaseTeam;
         $team->forceFill(['id' => 4]);
 
-        $user = Mockery::mock(TestBaseUser::class)->makePartial();
+        /** @var UserContract&\Mockery\MockInterface $user */
+        $user = Mockery::mock(UserContract::class);
         $user->shouldReceive('hasTeamPermission')->with($team, 'edit-team')->andReturnTrue();
 
         Assert::assertTrue($team->userHasPermission($user, 'edit-team'));
