@@ -20,7 +20,7 @@ use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 beforeEach(function (): void {
     UserFactory::new()

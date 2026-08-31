@@ -16,7 +16,7 @@ use Modules\User\Models\OauthToken;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 /**
  * @param class-string $wrapperClass
