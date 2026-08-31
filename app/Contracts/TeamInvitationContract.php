@@ -11,21 +11,22 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\User\Contracts\TeamInvitationContract.
  *
-<<<<<<< HEAD
- * @property int $id
- * @property int $team_id
- * @property string $email
- * @property string|null $role
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
-=======
+ * <<<<<<< HEAD
+ *
  * @property int          $id
  * @property int          $team_id
  * @property string       $email
  * @property string|null  $role
  * @property Carbon|null  $created_at
  * @property Carbon|null  $updated_at
->>>>>>> laraxot/dev
+ *                                    =======
+ * @property int          $id
+ * @property int          $team_id
+ * @property string       $email
+ * @property string|null  $role
+ * @property Carbon|null  $created_at
+ * @property Carbon|null  $updated_at
+ *                                    >>>>>>> laraxot/dev
  * @property TeamContract $team
  *
  * @method static Builder<Model>|TeamInvitationContract newModelQuery()

@@ -20,21 +20,8 @@ use Modules\Xot\Datas\XotData;
 /**
  * Modules\User\Models\Team.
  *
-<<<<<<< HEAD
- * @property int $id
- * @property int $user_id
- * @property string $name
- * @property int $personal_team
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property EloquentCollection<int, Model&UserContract> $members
- * @property int|null $members_count
- * @property UserContract|null $owner
- * @property EloquentCollection<int, TeamInvitation> $teamInvitations
- * @property int|null $team_invitations_count
- * @property EloquentCollection<int, Model&UserContract> $users
- * @property int|null $users_count
-=======
+ * <<<<<<< HEAD
+ *
  * @property int                                         $id
  * @property int                                         $user_id
  * @property string                                      $name
@@ -48,7 +35,21 @@ use Modules\Xot\Datas\XotData;
  * @property int|null                                    $team_invitations_count
  * @property EloquentCollection<int, Model&UserContract> $users
  * @property int|null                                    $users_count
->>>>>>> laraxot/dev
+ *                                                                               =======
+ * @property int                                         $id
+ * @property int                                         $user_id
+ * @property string                                      $name
+ * @property int                                         $personal_team
+ * @property Carbon|null                                 $created_at
+ * @property Carbon|null                                 $updated_at
+ * @property EloquentCollection<int, Model&UserContract> $members
+ * @property int|null                                    $members_count
+ * @property UserContract|null                           $owner
+ * @property EloquentCollection<int, TeamInvitation>     $teamInvitations
+ * @property int|null                                    $team_invitations_count
+ * @property EloquentCollection<int, Model&UserContract> $users
+ * @property int|null                                    $users_count
+ *                                                                               >>>>>>> laraxot/dev
  *
  * @method static Builder|Team newModelQuery()
  * @method static Builder|Team newQuery()
@@ -70,17 +71,18 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|Team whereDeletedBy($value)
  * @method static Builder|Team whereUpdatedBy($value)
  *
-<<<<<<< HEAD
- * @property Membership $membership
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
- * @property string $uuid
-=======
+ * <<<<<<< HEAD
+ *
  * @property Membership           $membership
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @property string               $uuid
->>>>>>> laraxot/dev
+ *                                            =======
+ * @property Membership           $membership
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @property string               $uuid
+ *                                            >>>>>>> laraxot/dev
  *
  * @method static Builder|Team whereUuid($value)
  *
@@ -175,12 +177,14 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     /**
      * Determina se l'utente specificato appartiene al team.
      *
-<<<<<<< HEAD
-     * @param  UserContract  $user  L'utente da verificare
-=======
+     * <<<<<<< HEAD
+     *
+     * @param UserContract $user L'utente da verificare
+     *                           =======
      * @param UserContract $user L'utente da verificare
      *
->>>>>>> laraxot/dev
+     * >>>>>>> laraxot/dev
+     *
      * @return bool True se l'utente appartiene al team, false altrimenti
      */
     #[\Override]
@@ -198,12 +202,14 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     /**
      * Determina se l'indirizzo email specificato appartiene a un utente del team.
      *
-<<<<<<< HEAD
-     * @param  string  $email  Indirizzo email da verificare
-=======
+     * <<<<<<< HEAD
+     *
+     * @param string $email Indirizzo email da verificare
+     *                      =======
      * @param string $email Indirizzo email da verificare
      *
->>>>>>> laraxot/dev
+     * >>>>>>> laraxot/dev
+     *
      * @return bool True se un utente con quell'email appartiene al team, false altrimenti
      */
     #[\Override]
@@ -217,14 +223,16 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     /**
      * Determina se l'utente specificato ha il permesso indicato sul team.
      *
-<<<<<<< HEAD
-     * @param  UserContract  $userContract  L'utente da verificare
-     * @param  string  $permission  Il permesso da controllare
-=======
+     * <<<<<<< HEAD
+     *
+     * @param UserContract $userContract L'utente da verificare
+     * @param string       $permission   Il permesso da controllare
+     *                                   =======
      * @param UserContract $userContract L'utente da verificare
      * @param string       $permission   Il permesso da controllare
      *
->>>>>>> laraxot/dev
+     * >>>>>>> laraxot/dev
+     *
      * @return bool True se l'utente ha il permesso, false altrimenti
      */
     #[\Override]
@@ -248,11 +256,12 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     /**
      * Rimuove l'utente specificato dal team.
      *
-<<<<<<< HEAD
-     * @param  UserContract  $userContract  L'utente da rimuovere dal team
-=======
+     * <<<<<<< HEAD
+     *
      * @param UserContract $userContract L'utente da rimuovere dal team
->>>>>>> laraxot/dev
+     *                                   =======
+     * @param UserContract $userContract L'utente da rimuovere dal team
+     *                                   >>>>>>> laraxot/dev
      */
     #[\Override]
     public function removeUser(UserContract $userContract): void

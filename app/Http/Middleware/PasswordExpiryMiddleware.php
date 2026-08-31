@@ -12,11 +12,12 @@ use Illuminate\Support\Facades\Auth;
 class PasswordExpiryMiddleware
 {
     /**
-<<<<<<< HEAD
-     * @param  \Closure(Request):((Response|RedirectResponse))  $next
-=======
+     * <<<<<<< HEAD.
+     *
      * @param \Closure(Request):((Response|RedirectResponse)) $next
->>>>>>> laraxot/dev
+     *                                                              =======
+     * @param \Closure(Request):((Response|RedirectResponse)) $next
+     *                                                              >>>>>>> laraxot/dev
      */
     public function handle(Request $request, \Closure $next): Response|RedirectResponse
     {

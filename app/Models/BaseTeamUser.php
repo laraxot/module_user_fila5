@@ -21,13 +21,14 @@ use Parental\HasChildren;
  * @method static Builder|TeamUser newQuery()
  * @method static Builder|TeamUser query()
  *
-<<<<<<< HEAD
- * @property int $id
- * @property string $uuid
-=======
+ * <<<<<<< HEAD
+ *
  * @property int         $id
  * @property string      $uuid
->>>>>>> laraxot/dev
+ *                                    =======
+ * @property int         $id
+ * @property string      $uuid
+ *                                    >>>>>>> laraxot/dev
  * @property string|null $team_id
  * @property string|null $user_id
  * @property string|null $role

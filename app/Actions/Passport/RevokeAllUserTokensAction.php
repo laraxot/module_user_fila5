@@ -21,12 +21,14 @@ class RevokeAllUserTokensAction
     /**
      * Revoca tutti i token di un utente.
      *
-<<<<<<< HEAD
-     * @param  UserContract|string  $user  L'utente di cui revocare i token (istanza o ID)
-=======
+     * <<<<<<< HEAD
+     *
+     * @param UserContract|string $user L'utente di cui revocare i token (istanza o ID)
+     *                                  =======
      * @param UserContract|string $user L'utente di cui revocare i token (istanza o ID)
      *
->>>>>>> laraxot/dev
+     * >>>>>>> laraxot/dev
+     *
      * @return int Numero di token revocati
      */
     public function execute(UserContract|string $user): int

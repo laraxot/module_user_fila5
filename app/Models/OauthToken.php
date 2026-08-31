@@ -9,31 +9,32 @@ use Laravel\Passport\Token as PassportToken;
 use Modules\User\Traits\ResolvesPassportTokenUserRelation;
 
 /**
-<<<<<<< HEAD
- * @property bool $revoked
- * @property int|string|null $user_id
- * @property-read OauthClient|null $client
- * @property-read OauthRefreshToken|null $refreshToken
- * @property-read User|null $user
+ * <<<<<<< HEAD.
+ *
+ * @property bool                   $revoked
+ * @property int|string|null        $user_id
+ * @property OauthClient|null       $client
+ * @property OauthRefreshToken|null $refreshToken
+ * @property User|null              $user
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken existsIn(array<int, mixed> $haystack)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken query()
  *
- * @property string $id
- * @property string $client_id
- * @property string|null $name
+ * @property string                       $id
+ * @property string                       $client_id
+ * @property string|null                  $name
  * @property array<array-key, mixed>|null $scopes
- * @property Carbon|null $expires_at
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property string|null $deleted_at
- * @property string|null $deleted_by
+ * @property Carbon|null                  $expires_at
+ * @property Carbon|null                  $created_at
+ * @property Carbon|null                  $updated_at
+ * @property string|null                  $updated_by
+ * @property string|null                  $created_by
+ * @property string|null                  $deleted_at
+ * @property string|null                  $deleted_by
  *
-=======
+ * =======
  * @property bool                         $revoked
  * @property int|string|null              $user_id
  * @property string                       $id
@@ -54,7 +55,7 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken query()
->>>>>>> laraxot/dev
+ *                                                                                                                >>>>>>> laraxot/dev
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereClientId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereCreatedBy($value)

@@ -15,11 +15,12 @@ use Modules\Xot\Contracts\UserContract;
 interface ResetsUserPasswords
 {
     /**
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $input
-=======
+     * <<<<<<< HEAD.
+     *
      * @param array<string, mixed> $input
->>>>>>> laraxot/dev
+     *                                    =======
+     * @param array<string, mixed> $input
+     *                                    >>>>>>> laraxot/dev
      */
     public function reset(UserContract $userContract, array $input): void;
 }

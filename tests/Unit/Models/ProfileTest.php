@@ -11,11 +11,12 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
-<<<<<<< HEAD
- * @param  array<string, mixed>  $attributes
-=======
+ * <<<<<<< HEAD.
+ *
  * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
+ *                                         =======
+ * @param array<string, mixed> $attributes
+ *                                         >>>>>>> laraxot/dev
  */
 function modelsProfileCreate(array $attributes = []): Profile
 {
@@ -43,11 +44,12 @@ function modelsProfileCreate(array $attributes = []): Profile
 }
 
 /**
-<<<<<<< HEAD
- * @param  array<string, mixed>  $where
-=======
+ * <<<<<<< HEAD.
+ *
  * @param array<string, mixed> $where
->>>>>>> laraxot/dev
+ *                                    =======
+ * @param array<string, mixed> $where
+ *                                    >>>>>>> laraxot/dev
  */
 function modelsProfileAssertInDatabase(array $where): void
 {

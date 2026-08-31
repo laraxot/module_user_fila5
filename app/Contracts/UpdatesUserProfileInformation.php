@@ -12,11 +12,12 @@ use Modules\Xot\Contracts\UserContract;
 interface UpdatesUserProfileInformation
 {
     /**
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $input
-=======
+     * <<<<<<< HEAD.
+     *
      * @param array<string, mixed> $input
->>>>>>> laraxot/dev
+     *                                    =======
+     * @param array<string, mixed> $input
+     *                                    >>>>>>> laraxot/dev
      */
     public function update(UserContract $userContract, array $input): void;
 }
