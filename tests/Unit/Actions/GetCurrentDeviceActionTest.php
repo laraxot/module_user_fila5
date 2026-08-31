@@ -9,7 +9,7 @@ use Modules\User\Tests\Fakes\FakeAgent;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 /**
  * @param array<string, mixed> $expected

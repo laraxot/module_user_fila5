@@ -23,7 +23,7 @@ use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 use function Safe\glob;
 
-uses(\Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('Appearance Cluster', function (): void {
     test('appearance cluster extends xot base cluster', function (): void {

@@ -62,15 +62,13 @@ use Modules\User\View\Pages\ProfileEditVoltComponent;
 use Modules\Xot\Tests\ModuleBusinessCoverage;
 use Modules\Xot\Tests\ModuleExecuteCoverage;
 use PHPUnit\Framework\Assert;
-use ReflectionMethod;
-use ReflectionProperty;
 
 use function Safe\glob;
 
 uses(TestCase::class)->group('no-user-db');
 
 afterEach(function (): void {
-    Mockery::close();
+    \Mockery::close();
 });
 
 /**
@@ -88,7 +86,7 @@ function userExecuteContext(): array
  * Le eccezioni applicative sono tollerate — questi test girano senza database.
  * La sonda non deve contenere asserzioni: verrebbero inghiottite dal catch.
  *
- * @param  \Closure(): void  $probe
+ * @param \Closure(): void $probe
  */
 function userCaptureFatal(\Closure $probe): ?\Error
 {
@@ -105,7 +103,7 @@ function userCaptureFatal(\Closure $probe): ?\Error
 
 function userInvoke(object $target, string $method, mixed ...$args): mixed
 {
-    $reflection = new ReflectionMethod($target, $method);
+    $reflection = new \ReflectionMethod($target, $method);
     $reflection->setAccessible(true);
 
     return $reflection->invoke($target, ...$args);
@@ -138,7 +136,8 @@ function userTeamFixture(string $ownerId, int $teamId = 1, bool $personal = fals
  * `Illuminate\Contracts\Validation\ValidationRule::validate()`: il test esercita
  * il contratto reale della regola, non una closure di comodo.
  *
- * @param  bool  $flag  alzato quando la regola invoca `$fail`
+ * @param bool $flag alzato quando la regola invoca `$fail`
+ *
  * @return \Closure(string, string|null=): PotentiallyTranslatedString
  */
 function userFailClosure(bool &$flag): \Closure
@@ -168,7 +167,7 @@ function userDehydrateField(object $field, mixed $state): mixed
         return $state;
     }
 
-    $ref = new ReflectionProperty($field, 'dehydrateStateUsing');
+    $ref = new \ReflectionProperty($field, 'dehydrateStateUsing');
     $ref->setAccessible(true);
     $callback = $ref->getValue($field);
     if (! $callback instanceof \Closure) {
@@ -180,7 +179,7 @@ function userDehydrateField(object $field, mixed $state): mixed
 
 function userInvokeStateClosure(object $field, mixed ...$args): mixed
 {
-    $ref = new ReflectionProperty($field, 'getConstantStateUsing');
+    $ref = new \ReflectionProperty($field, 'getConstantStateUsing');
     $ref->setAccessible(true);
     $callback = $ref->getValue($field);
     if (! $callback instanceof \Closure) {
@@ -195,7 +194,7 @@ function userInvokeStateClosure(object $field, mixed ...$args): mixed
  */
 function userSectionChildren(Section $section): array
 {
-    $ref = new ReflectionProperty($section, 'childComponents');
+    $ref = new \ReflectionProperty($section, 'childComponents');
     $ref->setAccessible(true);
     /** @var array<string, mixed> $children */
     $children = $ref->getValue($section);
@@ -219,7 +218,7 @@ function userSectionChildren(Section $section): array
 }
 
 /**
- * @param  array<int|string, SchemaComponent>  $schema
+ * @param array<int|string, SchemaComponent> $schema
  */
 function userFindNamedComponent(array $schema, string $name): ?SchemaComponent
 {
@@ -248,7 +247,7 @@ function userFindNamedComponent(array $schema, string $name): ?SchemaComponent
 function userProfileMock(string $password = 'Secret123!'): User
 {
     /** @var Mockery\MockInterface&User $user */
-    $user = Mockery::mock(User::class)->makePartial();
+    $user = \Mockery::mock(User::class)->makePartial();
     $user->forceFill([
         'id' => 'profile-user-1',
         'first_name' => 'Mario',
@@ -296,7 +295,7 @@ describe('User execute coverage floor 50', function (): void {
             foreach ($class::cases() as $case) {
                 if (method_exists($case, 'getLabel')) {
                     $case->getLabel();
-                    $labels++;
+                    ++$labels;
                 }
             }
         }
@@ -531,7 +530,7 @@ describe('User execute coverage — HasTeams trait mock', function (): void {
         $team = userTeamFixture('owner-4', 401);
         $memberUser = userMockWithTeams('member-4');
 
-        $members = Mockery::mock(BelongsToMany::class);
+        $members = \Mockery::mock(BelongsToMany::class);
         mockeryExpect($members->shouldReceive('attach'))->once()->andReturn(true);
         mockeryExpect($members->shouldReceive('detach'))->once()->andReturn(true);
         mockeryExpect($members->shouldReceive('updateExistingPivot'))->twice()->andReturn(true);
@@ -539,7 +538,7 @@ describe('User execute coverage — HasTeams trait mock', function (): void {
         mockeryExpect($members->shouldReceive('wherePivot'))->with('role', 'member')->andReturnSelf();
         mockeryExpect($members->shouldReceive('get'))->andReturn(collect([$memberUser]));
 
-        $teamMock = Mockery::mock($team)->makePartial();
+        $teamMock = \Mockery::mock($team)->makePartial();
         mockeryExpect($teamMock->shouldReceive('members'))->andReturn($members);
         // Il partial mock di un Team resta un TeamContract: la guardia lo dichiara
         // a PHPStan e verifica davvero che Mockery non abbia perso il contratto.
@@ -722,18 +721,16 @@ describe('User execute coverage — Socialite settings e OAuth resource', functi
         $userName->getUrl($token);
         $userName->formatState(null);
 
-        app()->instance(RevokeTokenAction::class, new class()
-        {
+        app()->instance(RevokeTokenAction::class, new class {
             public function execute(string $id): bool
             {
-                return $id === 'token-1';
+                return 'token-1' === $id;
             }
         });
-        app()->instance(RevokeAllUserTokensAction::class, new class()
-        {
+        app()->instance(RevokeAllUserTokensAction::class, new class {
             public function execute(string $userId): bool
             {
-                return $userId === 'profile-user-1';
+                return 'profile-user-1' === $userId;
             }
         });
 
@@ -809,12 +806,12 @@ describe('User execute coverage — notifications rules observer helpers', funct
 
         $reset = new ResetPassword('reset-token');
         $reset->url = 'https://example.test/reset';
-        $mail = (new ReflectionMethod($reset, 'buildMailMessage'))->invoke($reset, $reset->url);
+        $mail = (new \ReflectionMethod($reset, 'buildMailMessage'))->invoke($reset, $reset->url);
         Assert::assertInstanceOf(MailMessage::class, $mail);
 
         $verify = new VerifyEmail();
         $verify->url = 'https://example.test/verify';
-        $verifyUrl = (new ReflectionMethod($verify, 'verificationUrl'))->invoke($verify, $user);
+        $verifyUrl = (new \ReflectionMethod($verify, 'verificationUrl'))->invoke($verify, $user);
         Assert::assertSame($verify->url, $verifyUrl);
 
         $freshUser = new User();
@@ -894,9 +891,9 @@ describe('User execute coverage — Filament pages sweep', function (): void {
             if ($instance instanceof SocialiteProviderSettingsPage) {
                 try {
                     $instance->mount();
-                    $executed++;
+                    ++$executed;
                 } catch (\Throwable) {
-                    $executed++;
+                    ++$executed;
                 }
             }
 
@@ -905,14 +902,14 @@ describe('User execute coverage — Filament pages sweep', function (): void {
                     continue;
                 }
                 try {
-                    $refMethod = new ReflectionMethod($instance, $method);
+                    $refMethod = new \ReflectionMethod($instance, $method);
                     if ($refMethod->getNumberOfRequiredParameters() > 0) {
                         continue;
                     }
                     $refMethod->invoke($instance);
-                    $executed++;
+                    ++$executed;
                 } catch (\Throwable) {
-                    $executed++;
+                    ++$executed;
                 }
             }
         }
@@ -944,7 +941,7 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
             $renderError = $throwable;
         }
         Assert::assertNotInstanceOf(\Error::class, $renderError);
-        if ($rendered !== null) {
+        if (null !== $rendered) {
             Assert::assertInstanceOf(View::class, $rendered);
         }
 
@@ -958,8 +955,7 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
         }));
         File::delete($configPath);
 
-        $passport = new class(app()) extends ServiceProvider
-        {
+        $passport = new class(app()) extends ServiceProvider {
             use HasPassportConfiguration;
 
             public function runConfigure(): void
@@ -971,7 +967,7 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
             $passport->runConfigure();
         }));
 
-        $lifetime = new ReflectionMethod(HasPassportConfiguration::class, 'tokenLifetime');
+        $lifetime = new \ReflectionMethod(HasPassportConfiguration::class, 'tokenLifetime');
         $lifetime->setAccessible(true);
         Assert::assertSame(15, $lifetime->invoke(null, [], 'access_token', 15));
         Assert::assertSame(7, $lifetime->invoke(null, ['access_token' => 7], 'access_token', 15));
@@ -984,7 +980,7 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
         $tenant->forceFill(['id' => 1, 'name' => 'T1']);
         $user->setRelation('tenants', collect([$tenant]));
 
-        $panel = Mockery::mock(Panel::class);
+        $panel = \Mockery::mock(Panel::class);
         Assert::assertInstanceOf(Panel::class, $panel);
         Assert::assertCount(1, $user->getTenants($panel));
         Assert::assertInstanceOf(BelongsToMany::class, $user->tenants());
