@@ -9,14 +9,24 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\User\Contracts\HasShieldPermissions;
 use Modules\User\Datas\FilamentShieldData;
+<<<<<<< HEAD
+=======
+
+use function Safe\class_implements;
+use function Safe\class_uses;
+
+>>>>>>> laraxot/dev
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Traits\HasRoles;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 use function Safe\class_implements;
 use function Safe\class_uses;
 
+=======
+>>>>>>> laraxot/dev
 /**
  * ---.
  */
@@ -138,9 +148,17 @@ class Utils
     public static function getGeneralResourcePermissionPrefixes(): array
     {
         Assert::isArray($res = config('filament-shield.permission_prefixes.resource'), 'wip');
+<<<<<<< HEAD
         Assert::allString($res, 'wip');
 
         return array_values($res);
+=======
+
+        return array_values(array_map(
+            static fn (mixed $item): string => Assert::string($item),
+            $res
+        ));
+>>>>>>> laraxot/dev
     }
 
     public static function getPagePermissionPrefix(): string
@@ -218,9 +236,17 @@ class Utils
     public static function getExcludedResouces(): array
     {
         Assert::isArray($res = config('filament-shield.exclude.resources'));
+<<<<<<< HEAD
         Assert::allString($res);
 
         return array_values($res);
+=======
+
+        return array_values(array_map(
+            static fn (mixed $item): string => Assert::string($item),
+            $res
+        ));
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -229,9 +255,17 @@ class Utils
     public static function getExcludedPages(): array
     {
         Assert::isArray($res = config('filament-shield.exclude.pages'));
+<<<<<<< HEAD
         Assert::allString($res);
 
         return array_values($res);
+=======
+
+        return array_values(array_map(
+            static fn (mixed $item): string => Assert::string($item),
+            $res
+        ));
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -240,9 +274,17 @@ class Utils
     public static function getExcludedWidgets(): array
     {
         Assert::isArray($res = config('filament-shield.exclude.widgets'));
+<<<<<<< HEAD
         Assert::allString($res);
 
         return array_values($res);
+=======
+
+        return array_values(array_map(
+            static fn (mixed $item): string => Assert::string($item),
+            $res
+        ));
+>>>>>>> laraxot/dev
     }
 
     public static function isRolePolicyRegistered(): bool
@@ -285,9 +327,17 @@ class Utils
             ? $resourceFQCN::getPermissionPrefixes()
             : static::getGeneralResourcePermissionPrefixes();
         Assert::isArray($res);
+<<<<<<< HEAD
         Assert::allString($res);
 
         return array_values($res);
+=======
+
+        return array_values(array_map(
+            static fn (mixed $item): string => Assert::string($item),
+            $res
+        ));
+>>>>>>> laraxot/dev
     }
 
     public static function getRoleModel(): string

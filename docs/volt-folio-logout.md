@@ -5,8 +5,13 @@ tags: [volt, folio, logout]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "volt-folio-logout implementazione corretta del logout con volt e folio"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -21,7 +26,11 @@ related:
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [README modulo User](./README.md)
+=======
+- [README modulo User](./readme.md)
+>>>>>>> laraxot/dev
 - [Convenzioni Path](./path-conventions-2.md)
 - [Analisi Logout Blade](./logout-blade-analysis-3.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
@@ -205,7 +214,11 @@ Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . 
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
+<<<<<<< HEAD
 - [README modulo User](./README.md)
+=======
+- [README modulo User](./readme.md)
+>>>>>>> laraxot/dev
 - [Convenzioni Path](./path-conventions-2.md)
 - [Analisi Logout Blade](./logout-blade-analysis-3.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)

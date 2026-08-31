@@ -5,7 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Team;
 
 use Modules\User\Models\TeamUser;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 
 class GetUserTeamsOptionAction
@@ -24,6 +27,7 @@ class GetUserTeamsOptionAction
 
         foreach ($teams as $teamUser) {
             $team = $teamUser->team;
+<<<<<<< HEAD
             if ($team === null) {
                 continue;
             }
@@ -31,6 +35,13 @@ class GetUserTeamsOptionAction
             $key = $team->getKey();
             $name = $team->getAttribute('name');
             $options[is_string($key) ? $key : SafeStringCastAction::cast($key)] = SafeStringCastAction::cast($name);
+=======
+            if (null === $team) {
+                continue;
+            }
+
+            $options[(string) $team->getKey()] = (string) $team->getAttribute('name');
+>>>>>>> laraxot/dev
         }
 
         return $options;

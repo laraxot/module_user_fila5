@@ -75,7 +75,11 @@ class RegistrationWidget extends XotBaseSchemaWidget
         }
 
         $rememberToken = $user->getAttribute('remember_token');
+<<<<<<< HEAD
         if (is_string($token) && $token !== '') {
+=======
+        if (is_string($token) && '' !== $token) {
+>>>>>>> laraxot/dev
             $user->setAttribute('remember_token', $token);
             $user->save();
             $this->record = $user;

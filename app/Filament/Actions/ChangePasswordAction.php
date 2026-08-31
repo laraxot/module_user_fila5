@@ -43,7 +43,11 @@ final class ChangePasswordAction extends XotBaseAction
                         ->rule(
                             'required',
                             /**
+<<<<<<< HEAD
                              * @param  callable(string): mixed  $get
+=======
+                             * @param callable(string): mixed $get
+>>>>>>> laraxot/dev
                              */
                             static fn (callable $get): bool => (bool) $get('new_password')
                         )

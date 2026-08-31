@@ -5,8 +5,13 @@ tags: [xotbase, resource, getpages, automatic]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "xotbase-resource-getpages-automatic xotbaseresource getpages() automatic: filosofia dry"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"

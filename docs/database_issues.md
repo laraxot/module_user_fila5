@@ -17,7 +17,11 @@
 **Latest Update (Corrected Migration Structure)**: Updated the migration files for `doctor_team` table on 2025-05-16 to use the correct structure with `tableCreate` and `tableUpdate` methods from `XotBaseMigration`. Also updated project rules in `.mdc` files to enforce this convention. Attempted migration again to resolve the `Internal Server Error`.
 
 **Related Documentation**:
+<<<<<<< HEAD
 - [User Module Overview](../index.md)
+=======
+- [User Module Overview](../INDEX.md)
+>>>>>>> laraxot/dev
 - [Team Management](./TEAM_MANAGEMENT.md)
 - [BaseUser Model](./BaseUser.md)
 - [Database Structure](../DATABASE_STRUCTURE.md)

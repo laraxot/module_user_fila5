@@ -15,9 +15,17 @@ use Modules\User\Filament\Clusters\Appearance\Pages\Logo;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Clusters\XotBaseCluster;
 use Modules\Xot\Filament\Pages\XotBasePage;
+<<<<<<< HEAD
 use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
+=======
+
+use function Pest\Laravel\actingAs;
+
+use PHPUnit\Framework\Assert;
+
+>>>>>>> laraxot/dev
 use function Safe\file_get_contents;
 use function Safe\glob;
 
@@ -64,6 +72,7 @@ describe('Appearance Cluster', function (): void {
 
     test('cluster pages do not extend filament classes directly', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $files = array_values(array_filter(
             glob(base_path('Modules/User/app/Filament/Clusters/Appearance/Pages/*.php')),
             'is_string'
@@ -74,6 +83,16 @@ describe('Appearance Cluster', function (): void {
         }
 
         foreach ($files as $filePath) {
+=======
+        $files = glob(base_path('Modules/User/app/Filament/Clusters/Appearance/Pages/*.php'));
+
+        if ([] === $files) {
+            $this->skipTest('Appearance cluster pages directory not found.');
+        }
+
+        foreach ($files as $file) {
+            $filePath = (string) $file;
+>>>>>>> laraxot/dev
             $content = (string) file_get_contents($filePath);
             Assert::assertStringContainsString('extends XotBasePage', $content, basename($filePath));
             Assert::assertStringNotContainsString('extends Page', $content, basename($filePath));

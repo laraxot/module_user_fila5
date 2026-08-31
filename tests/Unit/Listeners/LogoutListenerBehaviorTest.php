@@ -8,19 +8,29 @@ use Illuminate\Auth\Events\Logout;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+<<<<<<< HEAD
 use Mockery;
+=======
+>>>>>>> laraxot/dev
 use Mockery\MockInterface;
 use Modules\User\Listeners\LogoutListener;
 use Modules\User\Models\BaseUser;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Models\Fixtures\TestBaseUser;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use ReflectionClass;
+=======
+>>>>>>> laraxot/dev
 
 uses(TestCase::class)->group('no-user-db');
 
 afterEach(function (): void {
+<<<<<<< HEAD
     Mockery::close();
+=======
+    \Mockery::close();
+>>>>>>> laraxot/dev
 });
 
 /**
@@ -30,10 +40,17 @@ afterEach(function (): void {
 function logoutEvent(?Authenticatable $user): Logout
 {
     /** @var Authenticatable&MockInterface $placeholder */
+<<<<<<< HEAD
     $placeholder = Mockery::mock(Authenticatable::class);
     $event = new Logout('web', $placeholder);
     if ($user === null) {
         $prop = (new ReflectionClass($event))->getProperty('user');
+=======
+    $placeholder = \Mockery::mock(Authenticatable::class);
+    $event = new Logout('web', $placeholder);
+    if (null === $user) {
+        $prop = (new \ReflectionClass($event))->getProperty('user');
+>>>>>>> laraxot/dev
         $prop->setAccessible(true);
         $prop->setValue($event, null);
     } else {
@@ -55,7 +72,11 @@ describe('LogoutListener behavior', function (): void {
 
     test('forgetRememberTokens no-ops for non BaseUser', function (): void {
         /** @var Authenticatable&MockInterface $guest */
+<<<<<<< HEAD
         $guest = Mockery::mock(Authenticatable::class);
+=======
+        $guest = \Mockery::mock(Authenticatable::class);
+>>>>>>> laraxot/dev
         $listener = new LogoutListener(Request::create('/'));
         $listener->forgetRememberTokens(logoutEvent($guest));
 

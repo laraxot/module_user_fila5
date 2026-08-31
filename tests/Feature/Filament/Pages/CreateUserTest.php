@@ -18,7 +18,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
+<<<<<<< HEAD
     /** @var TestCase $this */
+=======
+    /* @var TestCase $this */
+>>>>>>> laraxot/dev
     try {
         $panel = Filament::getPanel('user::admin');
     } catch (\Exception $e) {

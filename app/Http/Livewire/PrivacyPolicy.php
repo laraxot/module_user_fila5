@@ -8,10 +8,18 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;
 use Livewire\Component;
 use Modules\Tenant\Actions\Markdown\GetLocalizedMarkdownPathAction;
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 
 use function Safe\file_get_contents;
 
+=======
+
+use function Safe\file_get_contents;
+
+use Webmozart\Assert\Assert;
+
+>>>>>>> laraxot/dev
 class PrivacyPolicy extends Component
 {
     /**
@@ -21,7 +29,11 @@ class PrivacyPolicy extends Component
     {
         $policyFile = app(GetLocalizedMarkdownPathAction::class)->execute('policy.md');
         Assert::string($policyFile, 'Policy file path must be a string');
+<<<<<<< HEAD
         if ($policyFile === '' || $policyFile === '#') {
+=======
+        if ('' === $policyFile || '#' === $policyFile) {
+>>>>>>> laraxot/dev
             throw new \RuntimeException('Policy file path is empty or invalid');
         }
         /**

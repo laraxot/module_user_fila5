@@ -15,7 +15,11 @@ final class AnalyzeSocialiteEmailDomainAction
 
     public function execute(SocialiteUserContract $oauthUser, string $provider): SocialiteEmailDomainAnalysisData
     {
+<<<<<<< HEAD
         if ($provider === '') {
+=======
+        if ('' === $provider) {
+>>>>>>> laraxot/dev
             throw new \InvalidArgumentException('Il provider SSO non può essere vuoto');
         }
 
@@ -31,12 +35,20 @@ final class AnalyzeSocialiteEmailDomainAction
         string $domainKind,
     ): bool {
         $email = $oauthUser->getEmail();
+<<<<<<< HEAD
         if (! is_string($email) || $email === '') {
+=======
+        if (! is_string($email) || '' === $email) {
+>>>>>>> laraxot/dev
             return false;
         }
 
         $configuredDomain = config(sprintf('services.%s.email_domains.%s.tld', $provider, $domainKind));
+<<<<<<< HEAD
         if (! is_string($configuredDomain) || $configuredDomain === '') {
+=======
+        if (! is_string($configuredDomain) || '' === $configuredDomain) {
+>>>>>>> laraxot/dev
             return false;
         }
 

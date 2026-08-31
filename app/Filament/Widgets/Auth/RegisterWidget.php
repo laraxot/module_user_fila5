@@ -9,7 +9,10 @@ use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Route;
+=======
+>>>>>>> laraxot/dev
 use Modules\Activity\Actions\Schema\IsActivityLogSchemaWritableAction;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Datas\XotData;
@@ -77,7 +80,11 @@ class RegisterWidget extends XotBaseSchemaWidget
             $email = is_string($data['email'] ?? null) ? trim($data['email']) : '';
 
             $user = $userClass::create(array_merge($data, [
+<<<<<<< HEAD
                 'name' => $name !== '' ? $name : $email,
+=======
+                'name' => '' !== $name ? $name : $email,
+>>>>>>> laraxot/dev
                 'email_verified_at' => null,
             ]));
 
@@ -113,7 +120,11 @@ class RegisterWidget extends XotBaseSchemaWidget
             ->success()
             ->send();
 
+<<<<<<< HEAD
         $redirectUrl = Route::has('dashboard')
+=======
+        $redirectUrl = \Illuminate\Support\Facades\Route::has('dashboard')
+>>>>>>> laraxot/dev
             ? route('dashboard')
             : url('/'.app()->getLocale());
 

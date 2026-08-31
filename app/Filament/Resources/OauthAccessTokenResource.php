@@ -9,6 +9,10 @@ use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
+=======
+use Filament\Schemas\Components\Component;
+>>>>>>> laraxot/dev
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\IconColumn;
@@ -59,9 +63,18 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('user.name')
                     ->searchable()
                     ->sortable()
+<<<<<<< HEAD
                     ->url(function (OauthAccessToken $record): ?string {
                         $user = $record->user;
                         if ($user !== null && method_exists($user, 'exists') && $user->exists) {
+=======
+                    ->url(function (mixed $record): ?string {
+                        if (! $record instanceof OauthAccessToken) {
+                            return null;
+                        }
+                        $user = $record->user;
+                        if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+>>>>>>> laraxot/dev
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -80,7 +93,11 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('scopes')
                     ->limit(30)
                     ->tooltip(function (mixed $state): ?string {
+<<<<<<< HEAD
                         if ($state === null) {
+=======
+                        if (null === $state) {
+>>>>>>> laraxot/dev
                             return null;
                         }
                         if (is_array($state)) {
@@ -145,9 +162,15 @@ class OauthAccessTokenResource extends XotBaseResource
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, mixed>
      */
     public static function getFormSchemaOld(): array
+=======
+     * @return array<string, Component>
+     */
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'oauth_access_token_info' => Section::make('OAuth Access Token Information')

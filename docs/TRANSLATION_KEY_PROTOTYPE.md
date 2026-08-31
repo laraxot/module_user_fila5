@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "TRANSLATION KEY PROTOTYPE"
 module: user
@@ -7,6 +8,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> laraxot/dev
 Translation key prototype
 
 Project convention: '<namespace>::<context>.<collection>.<item>.<type>'

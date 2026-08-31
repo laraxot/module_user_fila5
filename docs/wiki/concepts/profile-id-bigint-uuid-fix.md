@@ -7,7 +7,11 @@ created: 2026-07-27
 updated: 2026-07-27
 qmd: "user profiles id bigint uuid convertIdFromUuidToBigintIfNeeded field id default value 1364"
 issues:
+<<<<<<< HEAD
   - "https://github.com/laraxot/<nome repository>/issues/7"
+=======
+  - "https://github.com/laraxot/base_workorder_fila5/issues/7"
+>>>>>>> laraxot/dev
 related:
   - ./profile-migration-uuid-contract.md
   - ./migration-naming-religion-user.md

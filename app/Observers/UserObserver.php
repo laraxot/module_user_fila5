@@ -32,7 +32,11 @@ class UserObserver
         }
 
         // Evita di creare team duplicati
+<<<<<<< HEAD
         if ($user->personalTeam() !== null) {
+=======
+        if (null !== $user->personalTeam()) {
+>>>>>>> laraxot/dev
             return;
         }
 
@@ -48,7 +52,11 @@ class UserObserver
 
             // Imposta come current team
             $teamId = $personalTeam->id;
+<<<<<<< HEAD
             $user->current_team_id = is_int($teamId) ? $teamId : (is_numeric($teamId) ? (int) $teamId : null);
+=======
+            $user->current_team_id = is_numeric($teamId) ? (int) $teamId : null;
+>>>>>>> laraxot/dev
             $user->saveQuietly(); // Evita di triggerare eventi ricorsivi
         } catch (\Throwable $e) {
             // Log dell'errore ma non bloccare la creazione dell'utente

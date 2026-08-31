@@ -14,6 +14,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/socialite.md
+<<<<<<< HEAD
 
 
 ## Appendice — contenuto migrato
@@ -25,3 +26,5 @@ canonical: ../../../Themes/docs/shared-components/socialite.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/socialite.txt
+=======
+>>>>>>> laraxot/dev

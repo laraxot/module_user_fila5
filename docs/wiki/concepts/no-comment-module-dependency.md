@@ -25,8 +25,13 @@ related:
 
 | Tipo | Link |
 |------|------|
+<<<<<<< HEAD
 | Issue | [#13 — User must never depend on Comment](https://github.com/laraxot/<nome repository>/issues/13) |
 | Discussion | [#14 — Architecture User ↔ Comment](https://github.com/laraxot/<nome repository>/discussions/14) |
+=======
+| Issue | [#13 — User must never depend on Comment](https://github.com/laraxot/base_techplanner_fila5/issues/13) |
+| Discussion | [#14 — Architecture User ↔ Comment](https://github.com/laraxot/base_techplanner_fila5/discussions/14) |
+>>>>>>> laraxot/dev
 
 ## Regola (legge operativa)
 
@@ -43,7 +48,11 @@ Il modulo **User** è infrastruttura identity/auth: **non deve** importare class
 
 - User è dipendenza di quasi tutti i moduli: coupling con Comment rompe bootstrap e test
 - Comment (se serve) dipende da User, mai il contrario — inversione DIP
+<<<<<<< HEAD
 - Progetti senza Comment (es. `<nome repository>`) devono avviarsi senza fatal error
+=======
+- Progetti senza Comment (es. `base_techplanner_fila5`) devono avviarsi senza fatal error
+>>>>>>> laraxot/dev
 
 ## Se servono commenti su User
 

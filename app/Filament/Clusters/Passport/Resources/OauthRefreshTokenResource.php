@@ -13,6 +13,10 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\PageRegistration;
+<<<<<<< HEAD
+=======
+use Filament\Schemas\Components\Component;
+>>>>>>> laraxot/dev
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\IconColumn;
@@ -35,10 +39,17 @@ class OauthRefreshTokenResource extends XotBaseResource
     /**
      * Get the form schema for the resource.
      *
+<<<<<<< HEAD
      * @return array<string, mixed>
      */
     // #[\Override]
     public static function getFormSchemaOld(): array
+=======
+     * @return array<string, Component>
+     */
+    #[\Override]
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'oauth_refresh_token_info' => Section::make(static::trans('label'))
@@ -87,18 +98,30 @@ class OauthRefreshTokenResource extends XotBaseResource
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
                     ->requiresConfirmation()
+<<<<<<< HEAD
                     ->action(function (OauthRefreshToken $record): void {
                         if (app(RevokeRefreshTokenAction::class)->execute($record)) {
+=======
+                    ->action(function (mixed $record): void {
+                        if ($record instanceof OauthRefreshToken && app(RevokeRefreshTokenAction::class)->execute($record)) {
+>>>>>>> laraxot/dev
                             Notification::make()
                                 ->title(static::trans('actions.revoke.success'))
                                 ->success()
                                 ->send();
                         }
                     })
+<<<<<<< HEAD
                     ->visible(fn (OauthRefreshToken $record): bool => ! (bool) $record->getAttribute('revoked')),
                 DeleteAction::make(),
             ])
             ->toolbarActions([
+=======
+                    ->visible(fn (mixed $record) => $record instanceof OauthRefreshToken && ! (bool) $record->getAttribute('revoked')),
+                DeleteAction::make(),
+            ])
+            ->bulkActions([
+>>>>>>> laraxot/dev
                 BulkActionGroup::make([
                     DeleteBulkAction::make(),
                 ]),

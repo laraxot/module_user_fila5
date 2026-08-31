@@ -13,6 +13,10 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthRefreshToken;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
+=======
+/** @phpstan-ignore trait.unused */
+>>>>>>> laraxot/dev
 trait HasPassportConfiguration
 {
     /**
@@ -50,6 +54,7 @@ trait HasPassportConfiguration
     {
         $config = Config::get('user.passport.tokens', []);
         Assert::isArray($config);
+<<<<<<< HEAD
         /** @var array<string, mixed> $config */
 
         Passport::tokensExpireIn(
@@ -60,10 +65,22 @@ trait HasPassportConfiguration
         );
         Passport::personalAccessTokensExpireIn(
             CarbonInterval::months(self::tokenLifetime($config, 'personal_access_token', 6))
+=======
+
+        Passport::tokensExpireIn(
+            CarbonInterval::days((int) ($config['access_token'] ?? 15))
+        );
+        Passport::refreshTokensExpireIn(
+            CarbonInterval::days((int) ($config['refresh_token'] ?? 30))
+        );
+        Passport::personalAccessTokensExpireIn(
+            CarbonInterval::months((int) ($config['personal_access_token'] ?? 6))
+>>>>>>> laraxot/dev
         );
     }
 
     /**
+<<<<<<< HEAD
      * Durata dichiarata in `user.passport.tokens`, o il default se la voce manca o non è numerica.
      *
      * I valori di configurazione sono `mixed`: la scelta va fatta qui una volta sola, non
@@ -80,6 +97,8 @@ trait HasPassportConfiguration
     }
 
     /**
+=======
+>>>>>>> laraxot/dev
      * Configurazione degli scope OAuth.
      */
     protected function configureScopes(): void

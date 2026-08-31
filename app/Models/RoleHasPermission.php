@@ -6,12 +6,17 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
 use Modules\TechPlanner\Models\Profile;
+=======
+use Modules\Xot\Contracts\ProfileContract;
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 /**
  * Modules\User\Models\RoleHasPermission.
  *
+<<<<<<< HEAD
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
  *
@@ -22,11 +27,25 @@ use Webmozart\Assert\Assert;
  * @property string $id
  * @property int $permission_id
  * @property int $role_id
+=======
+ * @property int $id
+ * @property int $permission_id
+ * @property int $role_id
+ *
+ * @method static Builder|RoleHasPermission newModelQuery()
+ * @method static Builder|RoleHasPermission newQuery()
+ * @method static Builder|RoleHasPermission query()
+ * @method static Builder|RoleHasPermission whereId($value)
+ * @method static Builder|RoleHasPermission wherePermissionId($value)
+ * @method static Builder|RoleHasPermission whereRoleId($value)
+ *
+>>>>>>> laraxot/dev
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  *
+<<<<<<< HEAD
  * @method static Builder<static>|RoleHasPermission whereCreatedAt($value)
  * @method static Builder<static>|RoleHasPermission whereCreatedBy($value)
  * @method static Builder<static>|RoleHasPermission whereId($value)
@@ -34,6 +53,16 @@ use Webmozart\Assert\Assert;
  * @method static Builder<static>|RoleHasPermission whereRoleId($value)
  * @method static Builder<static>|RoleHasPermission whereUpdatedAt($value)
  * @method static Builder<static>|RoleHasPermission whereUpdatedBy($value)
+=======
+ * @method static Builder|RoleHasPermission whereCreatedAt($value)
+ * @method static Builder|RoleHasPermission whereCreatedBy($value)
+ * @method static Builder|RoleHasPermission whereUpdatedAt($value)
+ * @method static Builder|RoleHasPermission whereUpdatedBy($value)
+ *
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @property ProfileContract|null $deleter
+>>>>>>> laraxot/dev
  *
  * @mixin \Eloquent
  */

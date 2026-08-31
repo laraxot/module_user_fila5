@@ -11,10 +11,17 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('user-db');
 
 /**
  * @param  array<string, mixed>  $attributes
+=======
+uses(TestCase::class);
+
+/**
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function modelsUserCreate(array $attributes = []): User
 {

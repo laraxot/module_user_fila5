@@ -16,10 +16,17 @@ use Modules\User\Models\OauthToken;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
 
 /**
  * @param  class-string  $wrapperClass
+=======
+uses(TestCase::class);
+
+/**
+ * @param class-string $wrapperClass
+>>>>>>> laraxot/dev
  */
 function passportWrapperConnectionName(string $wrapperClass): ?string
 {
@@ -32,7 +39,11 @@ function passportWrapperConnectionName(string $wrapperClass): ?string
         $property->setAccessible(true);
         $connection = $property->getValue($reflection->newInstanceWithoutConstructor());
 
+<<<<<<< HEAD
         if (is_string($connection) && $connection !== '') {
+=======
+        if (is_string($connection) && '' !== $connection) {
+>>>>>>> laraxot/dev
             return $connection;
         }
     }

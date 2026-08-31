@@ -7,10 +7,16 @@ use Laravel\Socialite\Contracts\User as SocialiteUser;
 use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\Utils\EmailDomainAnalyzer;
 use Modules\User\Tests\TestCase;
+<<<<<<< HEAD
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-user-db');
+=======
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 function createMockSocialiteUserForEmailAnalyzer(?string $email): SocialiteUser
 {
@@ -26,11 +32,15 @@ describe('EmailDomainAnalyzer', function () {
         Config::set('services.google.email_domains.client.tld', null);
     });
 
+<<<<<<< HEAD
     it('throws for empty provider', function (): void {
         XotBasePest::assertThrows(
             static fn () => new EmailDomainAnalyzer(''),
             InvalidArgumentException::class,
         );
+=======
+    it('throws for empty provider', function () {
+>>>>>>> laraxot/dev
     });
 
     it('detects first party domain', function () {

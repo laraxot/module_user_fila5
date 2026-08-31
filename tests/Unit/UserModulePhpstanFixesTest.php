@@ -14,10 +14,16 @@ use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+<<<<<<< HEAD
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('user-db');
+=======
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 it('password data can be instantiated', function (): void {
     $passwordData = new PasswordData();
@@ -115,7 +121,11 @@ it('events can be instantiated', function (): void {
     $socialiteFactory = SocialiteUserFactory::new();
     \assert($socialiteFactory instanceof Factory);
     $socialiteUser = $socialiteFactory->create([
+<<<<<<< HEAD
         'user_id' => (string) XotBasePest::assertModelKey($owner->getKey()),
+=======
+        'user_id' => (string) $owner->getKey(),
+>>>>>>> laraxot/dev
         'provider' => 'github',
         'provider_id' => 'provider-'.uniqid(),
     ]);
@@ -141,7 +151,11 @@ it('events have dispatchable trait', function (): void {
     $socialiteFactory = SocialiteUserFactory::new();
     \assert($socialiteFactory instanceof Factory);
     $socialiteUser = $socialiteFactory->create([
+<<<<<<< HEAD
         'user_id' => (string) XotBasePest::assertModelKey($owner->getKey()),
+=======
+        'user_id' => (string) $owner->getKey(),
+>>>>>>> laraxot/dev
         'provider' => 'github',
         'provider_id' => 'provider-'.uniqid(),
     ]);

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Boost Skill Fix Summary - User Module"
 module: user
@@ -7,6 +8,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Boost Skill Fix Summary - User Module
 
 **Date**: 2026-03-02  

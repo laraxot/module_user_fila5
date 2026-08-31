@@ -4,10 +4,18 @@ declare(strict_types=1);
 
 use Modules\User\Filament\Widgets\Auth\NotificationsCenterWidget;
 use Modules\User\Tests\TestCase;
+<<<<<<< HEAD
 use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\get;
 
+=======
+
+use function Pest\Laravel\get;
+
+use PHPUnit\Framework\Assert;
+
+>>>>>>> laraxot/dev
 uses(TestCase::class);
 
 it('redirects guests from notifiche page', function (): void {

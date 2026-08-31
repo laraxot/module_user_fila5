@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
+=======
+use App\Support\AccountFeatures;
+>>>>>>> laraxot/dev
 use Filament\Models\Contracts\FilamentUser;
 use Filament\Models\Contracts\HasName;
 use Filament\Models\Contracts\HasTenants;
@@ -12,6 +16,10 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\Factories\Factory;
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
@@ -21,7 +29,10 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
@@ -33,7 +44,10 @@ use Modules\User\Models\Traits\HasModules;
 use Modules\User\Models\Traits\HasSocialite;
 use Modules\User\Models\Traits\HasSpatiePermission;
 use Modules\User\Models\Traits\HasTeams;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -50,6 +64,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * functionality for the application. It extends Laravel's Authenticatable class
  * and implements the required interfaces for Filament and multi-tenancy.
  *
+<<<<<<< HEAD
  * @property Collection<int, OauthClient> $clients
  * @property int|null $clients_count
  * @property Team|null $currentTeam
@@ -96,6 +111,54 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @property string|null $deleted_by
  * @property string|null $profile_photo_path
  * @property Pivot|null $pivot
+=======
+ * @property Collection<int, OauthClient>                              $clients
+ * @property int|null                                                  $clients_count
+ * @property Team|null                                                 $currentTeam
+ * @property Collection<int, Device>                                   $devices
+ * @property int|null                                                  $devices_count
+ * @property string|null                                               $full_name
+ * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
+ * @property int|null                                                  $notifications_count
+ * @property Collection<int, Team>                                     $ownedTeams
+ * @property int|null                                                  $owned_teams_count
+ * @property Collection<int, Permission>                               $permissions
+ * @property int|null                                                  $permissions_count
+ * @property ProfileContract|null                                      $profile
+ * @property Collection<int, Role>                                     $roles
+ * @property int|null                                                  $roles_count
+ * @property Collection<int, Team>                                     $membershipTeams
+ * @property int|null                                                  $membership_teams_count
+ * @property Collection<int, Tenant>                                   $tenants
+ * @property int|null                                                  $tenants_count
+ * @property Collection<int, OauthToken>                               $tokens
+ * @property int|null                                                  $tokens_count
+ * @property string                                                    $last_name
+ * @property string|null                                               $facebook_id
+ * @property Collection<int, SocialiteUser>                            $socialiteUsers
+ * @property int|null                                                  $socialite_users_count
+ * @property string|null                                               $name
+ * @property string|null                                               $first_name
+ * @property string|null                                               $last_name
+ * @property string|null                                               $email
+ * @property string|null                                               $password
+ * @property string|null                                               $lang
+ * @property string|null                                               $current_team_id
+ * @property bool|null                                                 $is_active
+ * @property bool|null                                                 $is_otp
+ * @property string|null                                               $type
+ * @property \DateTime|null                                            $password_expires_at
+ * @property \DateTime|null                                            $email_verified_at
+ * @property string|null                                               $remember_token
+ * @property \DateTime|null                                            $created_at
+ * @property \DateTime|null                                            $updated_at
+ * @property \DateTime|null                                            $deleted_at
+ * @property string|null                                               $created_by
+ * @property string|null                                               $updated_by
+ * @property string|null                                               $deleted_by
+ * @property string|null                                               $profile_photo_path
+ * @property Pivot|null                                                $pivot
+>>>>>>> laraxot/dev
  *
  * @method static Builder|User newModelQuery()
  * @method static Builder|User newQuery()
@@ -142,7 +205,14 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         HasTeams::teams as membershipTeams;
     }
     use HasUuids;
+<<<<<<< HEAD
     use HasXotFactory;
+=======
+
+    /** @phpstan-use HasXotFactory<Factory<static>> */
+    use HasXotFactory;
+
+>>>>>>> laraxot/dev
     use InteractsWithMedia;
     use Notifiable;
 
@@ -152,8 +222,11 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public $incrementing = false;
 
+<<<<<<< HEAD
     public ?Pivot $pivot = null;
 
+=======
+>>>>>>> laraxot/dev
     protected $connection = 'user';
 
     protected $primaryKey = 'id';
@@ -230,16 +303,24 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function getProviderName(): string
     {
+<<<<<<< HEAD
         $providerVal = $this->getAttribute('provider') ?? config('auth.guards.api.provider', 'users');
         $provider = SafeStringCastAction::cast($providerVal);
 
         return $provider;
+=======
+        return (string) ($this->getAttribute('provider') ?? config('auth.guards.api.provider', 'users'));
+>>>>>>> laraxot/dev
     }
 
     /*
     public function canAccessFilament(?Panel $panel = null): bool
     {
+<<<<<<< HEAD
          throw new \RuntimeException('Removed debug dddx');
+=======
+         dddx($panel->getId());
+>>>>>>> laraxot/dev
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;
         return true;
     }
@@ -249,6 +330,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
      */
     public function getFilamentName(): string
     {
+<<<<<<< HEAD
         $nameVal = $this->getAttribute('name') ?? '';
         $firstNameVal = $this->getAttribute('first_name') ?? '';
         $lastNameVal = $this->getAttribute('last_name') ?? '';
@@ -256,13 +338,22 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         $name = SafeStringCastAction::cast($nameVal);
         $firstName = SafeStringCastAction::cast($firstNameVal);
         $lastName = SafeStringCastAction::cast($lastNameVal);
+=======
+        $name = (string) ($this->getAttribute('name') ?? '');
+        $firstName = (string) ($this->getAttribute('first_name') ?? '');
+        $lastName = (string) ($this->getAttribute('last_name') ?? '');
+>>>>>>> laraxot/dev
 
         $fullName = trim(\sprintf('%s %s %s', $name, $firstName, $lastName));
 
         // Ensure we always return a non-empty string
         if (empty($fullName)) {
+<<<<<<< HEAD
             $emailVal = $this->getAttribute('email') ?? '';
             $email = SafeStringCastAction::cast($emailVal);
+=======
+            $email = (string) ($this->getAttribute('email') ?? '');
+>>>>>>> laraxot/dev
 
             return ! empty($email) ? $email : 'User';
         }
@@ -321,11 +412,31 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function canAccessPanel(Panel $panel): bool
     {
+<<<<<<< HEAD
         if ($panel->getId() !== 'admin') {
             return $this->hasRole($panel->getId());
         }
 
         return $this->isSuperAdmin() || $this->hasRole(['admin', 'super-admin']);
+=======
+        // $panel->default('admin');
+        if ('admin' !== $panel->getId()) {
+            $role = $panel->getId();
+
+            // Matrice pannelli/ruoli del gestionale (config/account_features.php):
+            // copre i ruoli di dominio (timber_admin, wts_operator, …) senza richiedere
+            // un ruolo omonimo al panel id. I panel Laraxot usano id "{modulo}::admin":
+            // alla matrice va passata la chiave modulo. hasRole(panelId) resta come fallback.
+            $panelKey = str_contains($role, '::') ? (string) strtok($role, ':') : $role;
+            if (AccountFeatures::canAccessPanel($this, $panelKey)) {
+                return true;
+            }
+
+            return $this->hasRole($role);
+        }
+
+        return true; // str_ends_with($this->email, '@yourdomain.com') && $this->hasVerifiedEmail();
+>>>>>>> laraxot/dev
     }
 
     public function detach(Model $model): void
@@ -346,6 +457,12 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     /**
      * @return Collection<int, Team>
      */
+<<<<<<< HEAD
+=======
+    /**
+     * @return Collection<int, Team>
+     */
+>>>>>>> laraxot/dev
     public function treeSons(): Collection
     {
         return $this->membershipTeams ?? new Collection();
@@ -373,22 +490,38 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function getFullNameAttribute(?string $value): string
     {
+<<<<<<< HEAD
         if ($value !== null) {
+=======
+        if (null !== $value) {
+>>>>>>> laraxot/dev
             return $value;
         }
 
         $fullName = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
 
+<<<<<<< HEAD
         return $fullName !== '' ? $fullName : ($this->email ?? 'User');
+=======
+        return '' !== $fullName ? $fullName : ($this->email ?? 'User');
+>>>>>>> laraxot/dev
     }
 
     public function getNameAttribute(?string $value): string
     {
+<<<<<<< HEAD
         if ($value !== null) {
             return $value;
         }
 
         if ($this->getKey() === null) {
+=======
+        if (null !== $value) {
+            return $value;
+        }
+
+        if (null === $this->getKey()) {
+>>>>>>> laraxot/dev
             return $this->email ?? 'User';
         }
 
@@ -403,7 +536,11 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
                 return true;
             }
 
+<<<<<<< HEAD
             return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
+=======
+            return \PHP_SAPI === 'cli' && ('testing' === getenv('APP_ENV') || 'testing' === getenv('ENV'));
+>>>>>>> laraxot/dev
         })();
         if ($isTesting) {
             // Do not call update() here to avoid hitting the database.
@@ -414,8 +551,13 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
         try {
             $value = $candidate;
+<<<<<<< HEAD
             while (self::firstWhere(['name' => $value]) !== null) {
                 $i++;
+=======
+            while (null !== self::firstWhere(['name' => $value])) {
+                ++$i;
+>>>>>>> laraxot/dev
                 $value = $name.'-'.$i;
             }
             $this->update(['name' => $value]);
@@ -449,6 +591,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
             return;
         }
+<<<<<<< HEAD
 
         // Bcrypt/argon già hashati (~60 char): non ri-hashare. Passphrase lunghe in chiaro: hash.
         if (Hash::isHashed($value)) {
@@ -458,6 +601,14 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         }
 
         $this->attributes['password'] = Hash::make($value);
+=======
+        if (\strlen($value) < 32) {
+            $this->attributes['password'] = Hash::make($value);
+
+            return;
+        }
+        $this->attributes['password'] = $value;
+>>>>>>> laraxot/dev
     }
 
     /**

@@ -17,6 +17,11 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
+=======
+require_once __DIR__.'/../Support/team-management-helpers.php';
+
+>>>>>>> laraxot/dev
 test('can create a team', function (): void {
     ['owner' => $owner] = teamMgmtBootstrap();
     $name = 'New Team '.uniqid();

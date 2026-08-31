@@ -5,8 +5,13 @@ tags: [sso, providers, implementation]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "sso-providers-implementation user module - sso providers implementation"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -106,6 +111,7 @@ ALTER TABLE users ADD CONSTRAINT fk_sso_provider
   "client_id": "your-client-id",
   "client_secret": "your-client-secret",
   "scopes": "openid email profile",
+<<<<<<< HEAD
   "redirect_url": "https://app.<nome progetto>.it/auth/callback/google"
 }
 ```
@@ -417,6 +423,8 @@ ALTER TABLE users ADD CONSTRAINT fk_sso_provider
   "client_id": "your-client-id",
   "client_secret": "your-client-secret",
   "scopes": "openid email profile",
+=======
+>>>>>>> laraxot/dev
   "redirect_url": "https://app.fixcity.it/auth/callback/google"
 }
 ```
@@ -428,9 +436,15 @@ ALTER TABLE users ADD CONSTRAINT fk_sso_provider
 ```json
 {
   "type": "saml",
+<<<<<<< HEAD
   "entity_id": "https://app.<nome progetto>.it",
   "metadata_url": "https://idp.provider.it/metadata.xml",
   "redirect_url": "https://app.<nome progetto>.it/auth/callback/spid"
+=======
+  "entity_id": "https://app.fixcity.it",
+  "metadata_url": "https://idp.provider.it/metadata.xml",
+  "redirect_url": "https://app.fixcity.it/auth/callback/spid"
+>>>>>>> laraxot/dev
 }
 ```
 
@@ -441,7 +455,11 @@ ALTER TABLE users ADD CONSTRAINT fk_sso_provider
 ```json
 {
   "type": "oidc",
+<<<<<<< HEAD
   "client_id": "<nome progetto>-app",
+=======
+  "client_id": "fixcity-app",
+>>>>>>> laraxot/dev
   "discovery_url": "https://auth.provider.it/.well-known/openid-configuration",
   "scopes": "openid email profile roles"
 }
@@ -458,7 +476,11 @@ $spidProvider = SsoProvider::create([
     'name' => 'spid',
     'display_name' => 'SPID',
     'type' => 'saml',
+<<<<<<< HEAD
     'entity_id' => 'https://app.<nome progetto>.it',
+=======
+    'entity_id' => 'https://app.fixcity.it',
+>>>>>>> laraxot/dev
     'metadata_url' => 'https://registry.spid.gov.it/metadata/idp/spid-idp-metadata.xml',
     'redirect_url' => route('auth.spid.callback'),
     'is_active' => true,

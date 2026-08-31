@@ -5,8 +5,13 @@ tags: [conflict, resolution, passwordresetwidget]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "conflict-resolution-passwordresetwidget risoluzione conflitti passwordresetwidget.php"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -77,7 +82,11 @@ Verificare che:
 - Il styling Tailwind sia disponibile nel contesto Filament
 - Altri widget di autenticazione abbiano componenti simili per coerenza
 ## Collegamenti
+<<<<<<< HEAD
 - [User Module Documentation](README.md)
+=======
+- [User Module Documentation](readme.md)
+>>>>>>> laraxot/dev
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
@@ -173,7 +182,11 @@ Verificare che:
 - Altri widget di autenticazione abbiano componenti simili per coerenza
 
 ## Collegamenti
+<<<<<<< HEAD
 - [User Module Documentation](README.md)
+=======
+- [User Module Documentation](readme.md)
+>>>>>>> laraxot/dev
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)

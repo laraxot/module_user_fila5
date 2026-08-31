@@ -5,8 +5,13 @@ tags: [navigation, translations, fixes]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "navigation-translations-fixes correzioni traduzioni navigation - gennaio 2026"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -208,7 +213,11 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../xot/docs/translation-standards.md)
+<<<<<<< HEAD
 - [Documentazione Modulo User](./README.md)
+=======
+- [Documentazione Modulo User](./readme.md)
+>>>>>>> laraxot/dev
 
 ## Note Tecniche
 

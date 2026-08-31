@@ -9,6 +9,10 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
+<<<<<<< HEAD
+=======
+use Filament\Support\Components\Component;
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ListAuthenticationLogs;
 use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ViewAuthenticationLog;
@@ -29,9 +33,15 @@ class AuthenticationLogResource extends XotBaseResource
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, mixed>
      */
     public static function getFormSchemaOld(): array
+=======
+     * @return array<string, Component>
+     */
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'authentication_info_section' => Section::make('Authentication Information')

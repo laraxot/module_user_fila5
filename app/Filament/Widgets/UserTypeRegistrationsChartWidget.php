@@ -43,10 +43,17 @@ final class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
         }
 
         // Fallback ai valori di default se i filtri non sono disponibili
+<<<<<<< HEAD
         if ($startDate === null) {
             $startDate = now()->subDays(30);
         }
         if ($endDate === null) {
+=======
+        if (null === $startDate) {
+            $startDate = now()->subDays(30);
+        }
+        if (null === $endDate) {
+>>>>>>> laraxot/dev
             $endDate = now();
         }
 

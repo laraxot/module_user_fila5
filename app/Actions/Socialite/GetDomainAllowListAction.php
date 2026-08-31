@@ -9,7 +9,10 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite;
 
 use Illuminate\Support\Arr;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 
 class GetDomainAllowListAction
@@ -18,7 +21,12 @@ class GetDomainAllowListAction
 
     public function __construct(
         private readonly Arr $arrHelper,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 
     /**
      * Execute the action.
@@ -33,10 +41,14 @@ class GetDomainAllowListAction
         }
 
         if (\is_array($res)) {
+<<<<<<< HEAD
             return array_values(array_map(
                 static fn (mixed $item): string => SafeStringCastAction::cast($item),
                 $res
             ));
+=======
+            return array_values(array_map(static fn (mixed $item): string => (string) $item, $res));
+>>>>>>> laraxot/dev
         }
 
         return [];

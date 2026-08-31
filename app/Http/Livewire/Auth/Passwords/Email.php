@@ -29,7 +29,11 @@ class Email extends Component
         $broker = $this->broker();
         $response = $broker->sendResetLink(['email' => $this->email]);
 
+<<<<<<< HEAD
         if ($response === Password::RESET_LINK_SENT) {
+=======
+        if (Password::RESET_LINK_SENT === $response) {
+>>>>>>> laraxot/dev
             $this->emailSentMessage = trans('user::'.$response);
 
             return;

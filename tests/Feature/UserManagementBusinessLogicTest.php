@@ -249,12 +249,20 @@ describe('User Management Business Logic', function (): void {
     });
 
     test('can soft delete user', function (): void {
+<<<<<<< HEAD
         /** @var TestCase $this */
+=======
+        /* @var TestCase $this */
+>>>>>>> laraxot/dev
         $this->skipTest('User model does not use SoftDeletes.');
     });
 
     test('can restore soft deleted user', function (): void {
+<<<<<<< HEAD
         /** @var TestCase $this */
+=======
+        /* @var TestCase $this */
+>>>>>>> laraxot/dev
         $this->skipTest('User model does not use SoftDeletes.');
     });
 
@@ -357,7 +365,11 @@ describe('User Management Business Logic', function (): void {
     });
 
     test('can validate user email uniqueness', function (): void {
+<<<<<<< HEAD
         /** @var TestCase $this */
+=======
+        /* @var TestCase $this */
+>>>>>>> laraxot/dev
         UserFactory::new()->createOne(['email' => 'test@example.com']);
 
         try {

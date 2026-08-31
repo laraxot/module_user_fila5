@@ -21,14 +21,23 @@ uses(TestCase::class);
 
 describe('User Business Logic', function (): void {
     test('enforces password complexity requirements', function (): void {
+<<<<<<< HEAD
+=======
+        /** @var TestCase $this */
+>>>>>>> laraxot/dev
         $weakPassword = '123456';
         $strongPassword = 'SecurePass123!';
 
         $weakUser = createTestUser(['password' => Hash::make($weakPassword)]);
         $strongUser = createTestUser(['password' => Hash::make($strongPassword)]);
 
+<<<<<<< HEAD
         Assert::assertNotSame($weakPassword, $weakUser->password);
         Assert::assertNotSame($strongPassword, $strongUser->password);
+=======
+        $this->assertNotSame($weakPassword, $weakUser->password);
+        $this->assertNotSame($strongPassword, $strongUser->password);
+>>>>>>> laraxot/dev
         Assert::assertTrue(Hash::check($weakPassword, (string) $weakUser->password));
         Assert::assertTrue(Hash::check($strongPassword, (string) $strongUser->password));
     });
@@ -40,7 +49,12 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces username uniqueness when required', function (): void {
+<<<<<<< HEAD
         if (! userTableHasColumn('users', 'username')) {
+=======
+        /** @var TestCase $this */
+        if (! $this->userTableHasColumn('users', 'username')) {
+>>>>>>> laraxot/dev
             $email = 'alias-'.uniqid('', true).'@example.com';
             createTestUser(['email' => $email]);
 
@@ -86,6 +100,7 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces age restrictions for certain operations', function (): void {
+<<<<<<< HEAD
         /** @var TestCase $this */
         if (! Schema::connection('<nome progetto>')->hasColumn('profiles', 'uuid')) {
             Assert::markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
@@ -93,6 +108,15 @@ describe('User Business Logic', function (): void {
 
         if (! Schema::connection('<nome progetto>')->hasColumn('profiles', 'birth_date')) {
             Assert::markTestSkipped('profiles.birth_date column missing on <nome progetto> connection.');
+=======
+        /* @var TestCase $this */
+        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+            $this->skipTest('profiles.uuid column missing — Profile model requires uuid.');
+        }
+
+        if (! Schema::connection('fixcity')->hasColumn('profiles', 'birth_date')) {
+            $this->skipTest('profiles.birth_date column missing on fixcity connection.');
+>>>>>>> laraxot/dev
         }
 
         $underageBirthDate = now()->subYears(16)->toDateString();
@@ -109,14 +133,23 @@ describe('User Business Logic', function (): void {
         Assert::assertInstanceOf(Profile::class, $underageProfile);
         Assert::assertInstanceOf(Profile::class, $adultProfile);
 
+<<<<<<< HEAD
         $underageAge = now()->diffInYears($underageBirthDate);
         $adultAge = now()->diffInYears($adultBirthDate);
+=======
+        $underageAge = now()->diffInYears($underageProfile->birth_date);
+        $adultAge = now()->diffInYears($adultProfile->birth_date);
+>>>>>>> laraxot/dev
 
         Assert::assertLessThan(18, $underageAge);
         Assert::assertGreaterThan(17, $adultAge);
     });
 
     test('enforces team membership limits', function (): void {
+<<<<<<< HEAD
+=======
+        /** @var TestCase $this */
+>>>>>>> laraxot/dev
         $user = createTestUser();
         /** @var Collection<int, Team> $teams */
         $teams = TeamFactory::new()->count(5)->create();
@@ -131,6 +164,7 @@ describe('User Business Logic', function (): void {
 
         $firstTeam = $teams->first();
         Assert::assertInstanceOf(Team::class, $firstTeam);
+<<<<<<< HEAD
         Assert::assertTrue(teamMemberExists($firstTeam, $user));
     });
 
@@ -148,12 +182,37 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces team ownership rules', function (): void {
+=======
+        Assert::assertTrue($this->teamMemberExists($firstTeam, $user));
+    });
+
+    test('enforces team role hierarchy', function (): void {
+        /** @var TestCase $this */
+        $user = createTestUser();
+        $team = TeamFactory::new()->createOne();
+
+        $this->attachTeamMember($team, $user, ['role' => 'member']);
+
+        $this->assertDatabaseHasRow('team_user', [
+            'team_id' => $team->id,
+            'user_id' => $user->id,
+            'role' => 'member',
+        ], 'user');
+    });
+
+    test('enforces team ownership rules', function (): void {
+        /** @var TestCase $this */
+>>>>>>> laraxot/dev
         $owner = createTestUser();
         $member = createTestUser();
         $team = TeamFactory::new()->createOne(['user_id' => $owner->id]);
 
         Assert::assertSame($owner->id, $team->user_id);
+<<<<<<< HEAD
         attachTeamMember($team, $member, ['role' => 'member']);
+=======
+        $this->attachTeamMember($team, $member, ['role' => 'member']);
+>>>>>>> laraxot/dev
 
         $freshTeam = $team->fresh();
         Assert::assertNotNull($freshTeam);
@@ -174,7 +233,14 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces permission conflicts', function (): void {
+<<<<<<< HEAD
         skipUnlessUserTable('model_has_permission', 'model_has_permission table missing on user connection.');
+=======
+        /** @var TestCase $this */
+        if (! $this->userTableExists('model_has_permission')) {
+            $this->skipTest('model_has_permission table missing on user connection.');
+        }
+>>>>>>> laraxot/dev
 
         $user = createTestUser();
         $uid = uniqid();
@@ -216,9 +282,15 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces referential integrity for user relationships', function (): void {
+<<<<<<< HEAD
         /** @var TestCase $this */
         if (! Schema::connection('<nome progetto>')->hasColumn('profiles', 'uuid')) {
             Assert::markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
+=======
+        /* @var TestCase $this */
+        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+            $this->skipTest('profiles.uuid column missing — Profile model requires uuid.');
+>>>>>>> laraxot/dev
         }
 
         $user = createTestUser();
@@ -258,6 +330,10 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces audit trail for sensitive operations', function (): void {
+<<<<<<< HEAD
+=======
+        /** @var TestCase $this */
+>>>>>>> laraxot/dev
         $user = createTestUser();
         $originalEmail = $user->email;
         $originalUpdatedAt = $user->updated_at;
@@ -268,7 +344,11 @@ describe('User Business Logic', function (): void {
         $user->refresh();
         Assert::assertNotNull($user->updated_at);
         Assert::assertTrue($user->updated_at->greaterThanOrEqualTo($originalUpdatedAt));
+<<<<<<< HEAD
         Assert::assertNotSame($originalEmail, $user->email);
+=======
+        $this->assertNotSame($originalEmail, $user->email);
+>>>>>>> laraxot/dev
     });
 
     test('enforces password expiration policies', function (): void {

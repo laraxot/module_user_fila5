@@ -20,7 +20,11 @@ class GetUserModelAttributesFromSocialiteAction
         }
 
         $nameFieldsResolver = app(UserNameFieldsResolver::class, ['user' => $oauthUser]);
+<<<<<<< HEAD
         if ($nameFieldsResolver === null) {
+=======
+        if (null === $nameFieldsResolver) {
+>>>>>>> laraxot/dev
             throw new \RuntimeException('Impossibile istanziare UserNameFieldsResolver');
         }
 

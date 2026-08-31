@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
 use Filament\Actions\DeleteBulkAction;
+<<<<<<< HEAD
+=======
+use Filament\Forms\Components\Field;
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\TextColumn;
@@ -30,12 +34,21 @@ class OauthClientResource extends XotBaseResource
     /**
      * Get the form schema for the resource (XotBaseResource pattern).
      *
+<<<<<<< HEAD
      * @return array<string, mixed>
      */
     /**
      * @return array<string, mixed>
      */
     public static function getFormSchemaOld(): array
+=======
+     * @return array<string, Field>
+     */
+    /**
+     * @return array<string, Field>
+     */
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'name' => TextInput::make('name')

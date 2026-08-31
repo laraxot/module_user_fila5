@@ -5,10 +5,17 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\SocialProviderResource\Schemas;
 
 use Filament\Forms\Components\KeyValue;
+<<<<<<< HEAD
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Infolists\Components\TextEntry;
+=======
+use Filament\Forms\Components\Placeholder;
+use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Toggle;
+>>>>>>> laraxot/dev
 use Filament\Schemas\Components\Component as SchemaComponent;
 use Modules\User\Filament\Resources\SocialProviderResource;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
@@ -21,9 +28,15 @@ class SocialProviderForm extends XotBaseResourceForm
     public static function getFormSchema(): array
     {
         return [
+<<<<<<< HEAD
             'env_guide' => TextEntry::make('env_guide')
                 ->hiddenLabel()
                 ->state(__('fields.env_guide.content'))
+=======
+            'env_guide' => Placeholder::make('env_guide')
+                ->hiddenLabel()
+                ->content(__('fields.env_guide.content'))
+>>>>>>> laraxot/dev
                 ->columnSpanFull(),
             'name' => TextInput::make('name')
                 ->required()

@@ -19,4 +19,12 @@ class ClientHeader extends XotBaseWidget
     {
         $this->client = $record;
     }
+<<<<<<< HEAD
+=======
+
+    public function getFormSchema(): array
+    {
+        return [];
+    }
+>>>>>>> laraxot/dev
 }

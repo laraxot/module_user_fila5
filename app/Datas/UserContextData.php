@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Datas;
 
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> laraxot/dev
 use Spatie\LaravelData\Data;
 
 /**
@@ -14,13 +17,18 @@ use Spatie\LaravelData\Data;
 class UserContextData extends Data
 {
     /**
+<<<<<<< HEAD
      * @param  array<int, string>  $roles
+=======
+     * @param array<int, string> $roles
+>>>>>>> laraxot/dev
      */
     public function __construct(
         public readonly ?string $userId = null,
         public readonly string $email = '',
         public readonly bool $isAdministrator = false,
         public readonly array $roles = [],
+<<<<<<< HEAD
     ) {}
 
     public static function fromUserModel(object $userModel): self
@@ -45,6 +53,24 @@ class UserContextData extends Data
             userId: $userId,
             email: $email,
             isAdministrator: $isAdmin,
+=======
+    ) {
+    }
+
+    public static function fromUserModel(object $userModel): self
+    {
+        $userId = property_exists($userModel, 'id') ? (string) $userModel->id : null;
+
+        $roles = array_values(array_map(
+            static fn (mixed $role): string => (string) $role,
+            is_array($userModel->roles ?? null) ? $userModel->roles : [],
+        ));
+
+        return new self(
+            userId: $userId,
+            email: (string) ($userModel->email ?? ''),
+            isAdministrator: ! empty($userModel->role) && 'admin' === strtolower((string) $userModel->role),
+>>>>>>> laraxot/dev
             roles: $roles,
         );
     }

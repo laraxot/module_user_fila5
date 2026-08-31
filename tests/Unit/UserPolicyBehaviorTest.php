@@ -16,7 +16,12 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('no-user-db');
 
 /**
+<<<<<<< HEAD
  * @param  list<string>  $roles
+=======
+ * @param list<string> $roles
+ *
+>>>>>>> laraxot/dev
  * @return Mockery\MockInterface&UserContract
  */
 function userBehaviorUser(
@@ -25,13 +30,21 @@ function userBehaviorUser(
     bool $belongsToTeam = false,
 ): UserContract {
     /** @var Mockery\MockInterface&UserContract $user */
+<<<<<<< HEAD
     $user = Mockery::mock(UserContract::class);
+=======
+    $user = \Mockery::mock(UserContract::class);
+>>>>>>> laraxot/dev
     mockeryExpect($user->shouldReceive('hasRole'))
         ->andReturnUsing(static function (array|string $richiesti) use ($roles): bool {
             /** @var list<string> $normalizzati */
             $normalizzati = is_array($richiesti) ? $richiesti : [$richiesti];
 
+<<<<<<< HEAD
             return array_intersect($normalizzati, $roles) !== [];
+=======
+            return [] !== array_intersect($normalizzati, $roles);
+>>>>>>> laraxot/dev
         });
     mockeryExpect($user->shouldReceive('ownsTeam'))->andReturn($ownsTeam);
     mockeryExpect($user->shouldReceive('belongsToTeam'))->andReturn($belongsToTeam);
@@ -40,7 +53,11 @@ function userBehaviorUser(
 }
 
 afterEach(function (): void {
+<<<<<<< HEAD
     Mockery::close();
+=======
+    \Mockery::close();
+>>>>>>> laraxot/dev
 });
 
 test('RolePolicy: viewAny false, view/create/update/delete true', function (): void {

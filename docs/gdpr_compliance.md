@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "GDPR Compliance Guide for Registration"
 module: user
@@ -7,6 +8,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> laraxot/dev
 # GDPR Compliance Guide for Registration
 
 ## Core Principles (Italian Privacy Code & GDPR)

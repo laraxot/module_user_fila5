@@ -5,8 +5,13 @@ tags: [testing, structure]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "testing-structure struttura dei tests del modulo user"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./architecture-rules.md"
   - "./architecture.md"
@@ -305,9 +310,15 @@ dump($variable);
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [README Modulo User](../README.md)
 - [Best Practices Testing](../../../project_docs/testing-best-practices.md)
 - [Architettura Modulo User](../architecture/README.md)
+=======
+- [README Modulo User](../readme.md)
+- [Best Practices Testing](../../../project_docs/testing-best-practices.md)
+- [Architettura Modulo User](../architecture/readme.md)
+>>>>>>> laraxot/dev
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
 ---

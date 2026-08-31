@@ -5,8 +5,13 @@ tags: [final]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "final final summary - user module passport integration & architecture refactoring"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -300,7 +305,11 @@ public function getHeaderActions(): array
 - [Passport Integration](./passport-integration.md)
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
+<<<<<<< HEAD
 - [README](./README.md)
+=======
+- [README](./readme.md)
+>>>>>>> laraxot/dev
 
 ### External Documentation
 - [Laravel Modules](https://nwidart.com/laravel-modules)

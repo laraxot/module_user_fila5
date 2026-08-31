@@ -5,8 +5,13 @@ tags: [index]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "00-index 📚 **indice documentazione modulo user**"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./2fa-guide.md"
@@ -24,7 +29,11 @@ related:
 **Module Version**: 2.5.0
 
 ## 🎯 **Lettura Essenziale**
+<<<<<<< HEAD
 1. [README.md](./README.md) - Panoramica completa del sistema di identità.
+=======
+1. [README.md](./readme.md) - Panoramica completa del sistema di identità.
+>>>>>>> laraxot/dev
 2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Biometric Auth & AI Moderation.
 3. [philosophy.md](./philosophy.md) - "Essere Unici": la gestione dell'identità digitale.
 
@@ -148,6 +157,7 @@ related:
 
 ## Dependency Intelligence
 
+<<<<<<< HEAD
 - [Dependency intelligence](dependency-intelligence.md)
 
 ---
@@ -215,3 +225,6 @@ related:
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
+=======
+- [Dependency intelligence](dependency-intelligence.md)
+>>>>>>> laraxot/dev

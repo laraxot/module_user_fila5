@@ -5,8 +5,13 @@ tags: [service, provider, architecture]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "service-provider-architecture service provider architecture - module pattern"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -388,7 +393,11 @@ test('user service provider only configures, not registers dependencies', functi
 ### Documentazione Correlata
 - [PASSPORT_INTEGRATION.md](./passport-integration.md) - Passport integration completa
 - [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale modulo
+<<<<<<< HEAD
 - [README.md](./README.md) - Overview modulo
+=======
+- [README.md](./readme.md) - Overview modulo
+>>>>>>> laraxot/dev
 
 ### Documentazione Esterna
 - [Laravel Modules Documentation](https://nwidart.com/laravel-modules)

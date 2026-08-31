@@ -3,7 +3,16 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     'navigation' => ['label' => 'Authentication Logs', 'group' => 'Authentication', 'icon' => 'heroicon-o-shield-check', 'sort' => 5],
+=======
+    'navigation' => [
+        'label' => 'Authentication Logs',
+        'group' => 'Authentication',
+        'icon' => 'heroicon-o-shield-check',
+        'sort' => 5,
+    ],
+>>>>>>> laraxot/dev
     'actions' => [
         'reorderRecords' => [
             'tooltip' => 'reorderRecords',
@@ -60,6 +69,7 @@ return [
             'icon' => 'applyTableColumnManager',
             'tooltip' => 'applyTableColumnManager',
         ],
+<<<<<<< HEAD
         'resetColumnManager' => [
             'tooltip' => 'resetColumnManager',
             'icon' => 'resetColumnManager',
@@ -75,10 +85,13 @@ return [
             'icon' => 'save',
             'tooltip' => 'save',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'label' => 'Authentication Log',
     'plural_label' => 'Authentication Log (Plurale)',
     'fields' => [
+<<<<<<< HEAD
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -103,4 +116,43 @@ return [
         'Status' => ['label' => 'Status', 'heading' => 'Status'],
         'Location' => ['label' => 'Location', 'heading' => 'Location'],
     ],
+=======
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'ip_address' => [
+            'label' => 'ip_address',
+        ],
+        'user_agent' => [
+            'label' => 'user_agent',
+        ],
+        'login_successful' => [
+            'label' => 'login_successful',
+        ],
+        'login_at' => [
+            'label' => 'login_at',
+        ],
+        'logout_at' => [
+            'label' => 'logout_at',
+        ],
+        'location' => [
+            'label' => 'location',
+        ],
+    ],
+>>>>>>> laraxot/dev
 ];

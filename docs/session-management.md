@@ -5,8 +5,13 @@ tags: [session, management]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "session-management gestione delle sessioni"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -95,7 +100,11 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Documentazione Volt](./volt-blade-implementation-3.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
+<<<<<<< HEAD
 - [Indice del Modulo Utente](./index.md)
+=======
+- [Indice del Modulo Utente](./INDEX.md)
+>>>>>>> laraxot/dev
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)
 - [Gestione del Profilo](./profile-management.md)
