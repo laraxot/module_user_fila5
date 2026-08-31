@@ -25,11 +25,7 @@ describe('Password Data Labels', function (): void {
     });
 
     test('login form labels are translated', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         $this->skipTest('Login Livewire form labels — coperto da widget Filament LoginWidgetTest');
     });
 });

@@ -16,11 +16,7 @@ describe('RevokeAllUserTokensAction', function (): void {
         $user = UserFactory::new()->createOne();
 
         $clientId = (string) Str::uuid();
-<<<<<<< HEAD
         DB::connection('user')->table('oauth_clients')->insert(TestCase::oauthClientColumnsOnly([
-=======
-        DB::connection('user')->table('oauth_clients')->insert([
->>>>>>> laraxot/dev
             'id' => $clientId,
             'user_id' => (string) $user->id,
             'name' => 'Test Client',
@@ -34,11 +30,7 @@ describe('RevokeAllUserTokensAction', function (): void {
             'revoked' => 0,
             'created_at' => now(),
             'updated_at' => now(),
-<<<<<<< HEAD
         ]));
-=======
-        ]);
->>>>>>> laraxot/dev
 
         DB::connection('user')->table('oauth_access_tokens')->insert([
             [

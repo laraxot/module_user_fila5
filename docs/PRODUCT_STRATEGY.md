@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Module - Product Strategy"
 module: user
@@ -8,8 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-=======
->>>>>>> laraxot/dev
 # User Module - Product Strategy
 
 **Module:** User  

@@ -9,25 +9,15 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\User\Contracts\HasShieldPermissions;
 use Modules\User\Datas\FilamentShieldData;
-<<<<<<< HEAD
-=======
-
-use function Safe\class_implements;
-use function Safe\class_uses;
-
->>>>>>> laraxot/dev
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Traits\HasRoles;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
-<<<<<<< HEAD
 use function Safe\class_implements;
 use function Safe\class_uses;
 
-=======
->>>>>>> laraxot/dev
 /**
  * Wrapper che raccoglie i metodi utility legacy di Support\Utils in un'unica
  * QueueableAction, in attesa di essere suddivisi in action granulari.

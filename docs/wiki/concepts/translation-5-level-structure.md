@@ -61,11 +61,9 @@ Examples:
 
 | Level | Name | Description | Example |
 |-------|------|-------------|---------|
-<<<<<<< HEAD
 | 1 | **Namespace** | Module name | `user::`, `geo::`, `<nome progetto>::` |
-=======
+
 | 1 | **Namespace** | Module name | `user::`, `geo::`, `fixcity::` |
->>>>>>> laraxot/dev
 | 2 | **Context** | Feature/section | `auth.`, `profile.`, `settings.` |
 | 3 | **Collection** | Group/component | `login.`, `form.`, `page.`, `wizard.` |
 | 4 | **Element** | Specific item | `email`, `password`, `submit`, `title` |

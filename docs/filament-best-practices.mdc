@@ -1,22 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
-description:
-globs:
-alwaysApply: false
----
----
->>>>>>> laraxot/dev
 description: >
   Regola per l'estensione di XotBaseResource nelle Filament Resource: vietato dichiarare le proprietà statiche $navigationGroup, $navigationLabel e il metodo statico table(Table $table): Table. Garantisce coerenza, DRY e compatibilità con l'architettura XotBaseResource.
 globs:
   - '*/Filament/Resources/*.php'
-<<<<<<< HEAD
 alwaysApply: false
 ---
-=======
-alwaysApply: true
->>>>>>> laraxot/dev
 
 # Regola: Estensione di XotBaseResource
 

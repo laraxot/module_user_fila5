@@ -7,11 +7,7 @@ use Modules\User\Models\TeamInvitation as TeamInvitationModel;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
-=======
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 test('TeamInvitation mail can be instantiated', function () {
     Assert::assertTrue(class_exists(TeamInvitation::class));

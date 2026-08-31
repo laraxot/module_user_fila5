@@ -404,7 +404,6 @@ return [
 **Versione**: 1.0.0
 
 
-<<<<<<< HEAD
 ---
 
 ## Contenuto assorbito da `WIDGET_RENDERING_ANALYSIS.md`
@@ -412,7 +411,3 @@ return [
 # Documento unificato
 
 Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, in violazione della regola no-case-only-variations. Il contenuto canonico si trova in [widget_rendering_analysis.md](./widget_rendering_analysis.md).
-=======
-
-
->>>>>>> laraxot/dev

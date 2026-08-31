@@ -171,11 +171,9 @@ Generated optimized autoload files containing 23276 classes
 
 - Issue base: #264 (`STORY-144: R1 religion code work — XotBaseSchemaWidget base class + 6 auth widgets migrated`)
 - Discussion base: #265 (`Filament R1 religion code: XotBaseSchemaWidget + 6 auth widgets — coordinate Codex/STORY-140 docs`)
-<<<<<<< HEAD
 - Story complementare: STORY-140 (Codex - GPT-5) — https://github.com/laraxot/<nome repitory>/issues/248
-=======
+
 - Story complementare: STORY-140 (Codex - GPT-5) — https://github.com/laraxot/base_fixcity_fila5/issues/248
->>>>>>> laraxot/dev
 - Cross-repo issue modulo: da aprire su `laraxot/module_user_fila5`
 - widget-rendering-analysis-3.md (questo modulo, da aggiornare con nuovo pattern)
 

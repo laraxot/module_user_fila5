@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
-<<<<<<< HEAD
-=======
-use Filament\Schemas\Components\Component;
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\TeamUser;
 use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
@@ -22,17 +18,10 @@ final class TeamUserResource extends XotBaseResource
     protected static ?string $model = TeamUser::class;
 
     /**
-<<<<<<< HEAD
      * @return array<string, mixed>
      */
     // #[\Override]
     public static function getFormSchemaOld(): array
-=======
-     * @return array<string, Component>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'team_user' => XotBaseSection::make('Team User Information')

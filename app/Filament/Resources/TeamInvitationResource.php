@@ -7,10 +7,6 @@ namespace Modules\User\Filament\Resources;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
-<<<<<<< HEAD
-=======
-use Filament\Support\Components\Component;
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Resources\TeamInvitationResource\Pages\EditTeamInvitations;
 use Modules\User\Filament\Resources\TeamInvitationResource\Pages\ListTeamInvitations;
@@ -27,17 +23,10 @@ class TeamInvitationResource extends XotBaseResource
     /**
      * Get the form schema for the resource.
      *
-<<<<<<< HEAD
      * @return array<string, mixed>
      */
     // #[\Override]
     public static function getFormSchemaOld(): array
-=======
-     * @return array<string, Component>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'team_id' => Select::make('team_id')

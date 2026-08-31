@@ -8,18 +8,11 @@ use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
 /**
  * @param  array<string, mixed>  $attributes
-=======
-use PHPUnit\Framework\Assert;
-
-/**
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
  */
 function createUser(array $attributes = []): User
 {
@@ -33,11 +26,7 @@ function createUser(array $attributes = []): User
 }
 
 /**
-<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
  */
 function makeUser(array $attributes = []): User
 {
@@ -51,11 +40,7 @@ function makeUser(array $attributes = []): User
 }
 
 /**
-<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
  */
 function createTeam(array $attributes = []): Team
 {
@@ -65,11 +50,7 @@ function createTeam(array $attributes = []): Team
 }
 
 /**
-<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
  */
 function createTestUser(array $attributes = []): User
 {
@@ -122,11 +103,7 @@ function pestSkip(string $message): never
 function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
 {
     if (! userTableHasColumn($table, $column)) {
-<<<<<<< HEAD
         pestSkip($reason !== '' ? $reason : "Column {$table}.{$column} missing on user connection.");
-=======
-        pestSkip('' !== $reason ? $reason : "Column {$table}.{$column} missing on user connection.");
->>>>>>> laraxot/dev
     }
 }
 
@@ -138,59 +115,35 @@ function userTableExists(string $table): bool
 function skipUnlessUserTable(string $table, string $reason = ''): void
 {
     if (! userTableExists($table)) {
-<<<<<<< HEAD
         pestSkip($reason !== '' ? $reason : "Table {$table} missing on user connection.");
-=======
-        pestSkip('' !== $reason ? $reason : "Table {$table} missing on user connection.");
->>>>>>> laraxot/dev
     }
 }
 
 function permissionRolePivotTable(): string
 {
-<<<<<<< HEAD
     return SafeStringCastAction::cast(config('permission.table_names.model_has_roles', 'model_has_role'));
-=======
-    return (string) config('permission.table_names.model_has_roles', 'model_has_role');
->>>>>>> laraxot/dev
 }
 
 function permissionPivotTable(): string
 {
-<<<<<<< HEAD
     return SafeStringCastAction::cast(config('permission.table_names.model_has_permissions', 'model_has_permission'));
-=======
-    return (string) config('permission.table_names.model_has_permissions', 'model_has_permission');
->>>>>>> laraxot/dev
 }
 
 function skipUnlessUsersTableReady(string $reason = ''): void
 {
-<<<<<<< HEAD
     skipUnlessUserTable('users', $reason !== '' ? $reason : 'users table missing on user connection.');
-=======
-    skipUnlessUserTable('users', '' !== $reason ? $reason : 'users table missing on user connection.');
->>>>>>> laraxot/dev
 }
 
 function skipUnlessRoleAssignmentSupported(string $reason = ''): void
 {
     $table = permissionRolePivotTable();
-<<<<<<< HEAD
     skipUnlessUserTable($table, $reason !== '' ? $reason : "Role pivot table {$table} missing on user connection.");
-=======
-    skipUnlessUserTable($table, '' !== $reason ? $reason : "Role pivot table {$table} missing on user connection.");
->>>>>>> laraxot/dev
 }
 
 function skipUnlessDirectPermissionSupported(string $reason = ''): void
 {
     $table = permissionPivotTable();
-<<<<<<< HEAD
     skipUnlessUserTable($table, $reason !== '' ? $reason : "Permission pivot table {$table} missing on user connection.");
-=======
-    skipUnlessUserTable($table, '' !== $reason ? $reason : "Permission pivot table {$table} missing on user connection.");
->>>>>>> laraxot/dev
 }
 
 function skipUnlessTeamUsersRelationSupported(): void

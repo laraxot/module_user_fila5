@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
-=======
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Models\Traits\HasXotFactory;
@@ -15,7 +12,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 /**
  * Modules\User\Models\PersonalAccessToken.
  *
-<<<<<<< HEAD
  * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newQuery()
@@ -30,23 +26,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property Carbon|null $last_used_at
  * @property Carbon|null $expires_at
  *
-=======
- * @property int         $id
- * @property string      $tokenable_type
- * @property int         $tokenable_id
- * @property string      $name
- * @property string      $token
- * @property string|null $abilities
- * @property Carbon|null $last_used_at
- * @property Carbon|null $expires_at
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- *
- * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory       factory($count = null, $state = [])
- * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken query()
->>>>>>> laraxot/dev
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereAbilities($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereExpiresAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereId($value)
@@ -60,10 +39,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class PersonalAccessToken extends Model
 {
-<<<<<<< HEAD
-=======
-    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
->>>>>>> laraxot/dev
     use HasXotFactory;
 
     protected $connection = 'user';

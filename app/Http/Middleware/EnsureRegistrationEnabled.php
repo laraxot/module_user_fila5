@@ -13,11 +13,7 @@ class EnsureRegistrationEnabled
     /**
      * Handle an incoming request.
      *
-<<<<<<< HEAD
      * @param  \Closure(Request):Response  $next
-=======
-     * @param \Closure(Request):Response $next
->>>>>>> laraxot/dev
      */
     public function handle(Request $request, \Closure $next): Response
     {

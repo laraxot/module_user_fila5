@@ -8,10 +8,6 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-<<<<<<< HEAD
-=======
-use Filament\Forms\Components\Field;
->>>>>>> laraxot/dev
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
@@ -34,7 +30,6 @@ class SsoProviderResource extends XotBaseResource
     protected static ?string $model = SsoProvider::class;
 
     /**
-<<<<<<< HEAD
      * @return array<string, mixed>
      */
     // #[\Override]
@@ -42,12 +37,6 @@ class SsoProviderResource extends XotBaseResource
      * @return array<string, mixed>
      */
     public static function getFormSchemaOld(): array
-=======
-     * @return array<string, Field>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'name' => TextInput::make('name')

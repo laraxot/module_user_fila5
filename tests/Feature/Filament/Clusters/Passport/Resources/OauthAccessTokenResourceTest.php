@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Contracts\HasTable;
@@ -47,17 +46,4 @@ it('oauth access token resource declares the expected table columns', function (
 
     Assert::assertContains('id', $names);
     Assert::assertContains('user.name', $names);
-=======
-use Modules\User\Tests\TestCase;
-
-uses(TestCase::class);
-
-it('oauth access token resource class exists', function () {
-});
-
-it('can render oauth access token resource page', function () {
-});
-
-it('can list oauth access tokens', function () {
->>>>>>> laraxot/dev
 });

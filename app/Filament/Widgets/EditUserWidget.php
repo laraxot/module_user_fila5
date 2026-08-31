@@ -27,11 +27,7 @@ use Webmozart\Assert\Assert;
  * @property string $resource
  * @property string $model
  * @property string $action
-<<<<<<< HEAD
  * @property Model $record
-=======
- * @property Model  $record
->>>>>>> laraxot/dev
  */
 class EditUserWidget extends XotBaseSchemaWidget
 {
@@ -127,13 +123,8 @@ class EditUserWidget extends XotBaseSchemaWidget
     {
         $schema = $this->resource::getFormSchemaWidget();
         Assert::isArray($schema, 'Schema must be array');
-<<<<<<< HEAD
         Assert::allIsInstanceOf($schema, Component::class);
 
-=======
-
-        /* @var array<int|string, Component> $result */
->>>>>>> laraxot/dev
         return self::normalizeFormSchema($schema);
     }
 
@@ -212,7 +203,6 @@ class EditUserWidget extends XotBaseSchemaWidget
     }
 
     /**
-<<<<<<< HEAD
      * @param  array<int|string, Component>  $schema
      * @return array<int|string, Component>
      */
@@ -221,22 +211,6 @@ class EditUserWidget extends XotBaseSchemaWidget
         $normalized = [];
 
         foreach ($schema as $key => $component) {
-=======
-     * @return array<int|string, Component>
-     */
-    private static function normalizeFormSchema(mixed $schema): array
-    {
-        if (! \is_array($schema)) {
-            return [];
-        }
-
-        $normalized = [];
-        foreach ($schema as $key => $component) {
-            if (! $component instanceof Component) {
-                return [];
-            }
-
->>>>>>> laraxot/dev
             $normalized[$key] = $component;
         }
 

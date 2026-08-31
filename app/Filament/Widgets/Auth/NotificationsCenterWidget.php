@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
-<<<<<<< HEAD
-=======
-use Filament\Schemas\Components\Component;
->>>>>>> laraxot/dev
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
@@ -33,25 +29,10 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
         $this->refreshNotifications();
     }
 
-<<<<<<< HEAD
     public function markAsRead(string $notificationId): void
     {
         $user = $this->authUser();
         if ($user === null) {
-=======
-    /**
-     * @return array<string, Component>
-     */
-    public function getFormSchema(): array
-    {
-        return [];
-    }
-
-    public function markAsRead(string $notificationId): void
-    {
-        $user = $this->authUser();
-        if (null === $user) {
->>>>>>> laraxot/dev
             return;
         }
 
@@ -64,11 +45,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     public function markAllAsRead(): void
     {
         $user = $this->authUser();
-<<<<<<< HEAD
         if ($user === null) {
-=======
-        if (null === $user) {
->>>>>>> laraxot/dev
             return;
         }
 
@@ -80,11 +57,7 @@ class NotificationsCenterWidget extends XotBaseSchemaWidget
     private function refreshNotifications(): void
     {
         $user = $this->authUser();
-<<<<<<< HEAD
         if ($user === null || ! app(IsNotificationSchemaReadableAction::class)->execute()) {
-=======
-        if (null === $user || ! app(IsNotificationSchemaReadableAction::class)->execute()) {
->>>>>>> laraxot/dev
             $this->notifications = new Collection([]);
             $this->unreadCount = 0;
 

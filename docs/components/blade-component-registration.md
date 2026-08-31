@@ -5,13 +5,11 @@ tags: [blade, component, registration]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "blade-component-registration registrazione dei componenti blade"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
 ---
 
@@ -47,8 +45,5 @@ Utilizzare direttamente i componenti nei template:
 - [UI Module Blade Components Registration](../../../ui/docs/components/blade-component-registration.md)
 - [UI Module Blade Components Registration](../../../ui/project_docs/components/blade-component-registration.md)
 - [Regole LangServiceProvider](../langserviceprovider-labels.md)
-<<<<<<< HEAD
 
 ```
-=======
->>>>>>> laraxot/dev

@@ -8,10 +8,6 @@ use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-<<<<<<< HEAD
-=======
-use Filament\Schemas\Components\Component;
->>>>>>> laraxot/dev
 use Modules\User\Filament\Clusters\Socialite;
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource\Pages\CreateSocialProvider;
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource\Pages\EditSocialProvider;
@@ -31,17 +27,10 @@ class SocialProviderResource extends XotBaseResource
     protected static ?string $model = SocialProvider::class;
 
     /**
-<<<<<<< HEAD
      * @return array<string, mixed>
      */
     // #[\Override]
     public static function getFormSchemaOld(): array
-=======
-     * @return array<string, Component>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'name' => TextInput::make('name')

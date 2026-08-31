@@ -5,13 +5,11 @@ tags: [database, issues]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "database-issues database issues in user module"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -46,11 +44,9 @@ related:
 - [Team Management](./team_management.md)
 - [BaseUser Model](./baseuser.md)
 - [Database Structure](../database_structure.md)
-<<<<<<< HEAD
 - [User Module Overview](../index.md)
-=======
+
 - [User Module Overview](../INDEX.md)
->>>>>>> laraxot/dev
 - [Team Management](./TEAM_MANAGEMENT.md)
 - [BaseUser Model](./baseuser.md)
 - [Database Structure](../DATABASE_STRUCTURE.md)

@@ -16,11 +16,7 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('user-db');
-=======
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 it('can create a user with basic attributes', function () {
     $email = 'john-'.uniqid('', true).'@example.com';

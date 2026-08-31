@@ -13,15 +13,9 @@ use Laravel\Socialite\Contracts\User;
  */
 final readonly class UserNameFieldsResolver
 {
-<<<<<<< HEAD
     private const string NAME_SEARCH = 'before';
 
     private const string SURNAME_SEARCH = 'after';
-=======
-    private const NAME_SEARCH = 'before';
-
-    private const SURNAME_SEARCH = 'after';
->>>>>>> laraxot/dev
 
     public ?string $name;
 
@@ -52,11 +46,7 @@ final readonly class UserNameFieldsResolver
     }
 
     /**
-<<<<<<< HEAD
      * @param  string  $searchMethod  use self constants (NAME_SEARCH, SURNAME_SEARCH)
-=======
-     * @param string $searchMethod use self constants (NAME_SEARCH, SURNAME_SEARCH)
->>>>>>> laraxot/dev
      */
     private function resolveNameFields(User $idpUser, string $searchMethod): string
     {
@@ -113,11 +103,7 @@ final readonly class UserNameFieldsResolver
             ->before('@');
 
         // Use conditional logic instead of dynamic method call for type safety
-<<<<<<< HEAD
         if ($searchMethod === self::NAME_SEARCH) {
-=======
-        if (self::NAME_SEARCH === $searchMethod) {
->>>>>>> laraxot/dev
             return $emailPart->before('.')->trim()->title();
         }
 

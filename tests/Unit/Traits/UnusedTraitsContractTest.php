@@ -13,11 +13,7 @@ use Modules\User\Tests\Unit\Traits\Fixtures\HasUserTestCaseFixture;
 use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesMockableFixture;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
-=======
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 test('phpstan fixtures reference dormant traits', function (): void {
     Assert::assertInstanceOf(PasswordValidationRulesMockableFixture::class, new PasswordValidationRulesMockableFixture());

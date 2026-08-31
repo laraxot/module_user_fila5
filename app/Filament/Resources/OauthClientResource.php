@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
-<<<<<<< HEAD
-=======
-use Filament\Forms\Components\Field;
->>>>>>> laraxot/dev
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
@@ -18,11 +14,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
  * OAuth Client Resource.
  *
  * ⚠️ IMPORTANTE: Estende XotBaseResource, MAI Filament\Resources\Resource
-<<<<<<< HEAD
  * direttamente! Segue il pattern DRY: solo getFormSchemaOld() necessario,
-=======
- * direttamente! Segue il pattern DRY: solo getFormSchema() necessario,
->>>>>>> laraxot/dev
  * table() e metodi table* gestiti automaticamente.
  */
 class OauthClientResource extends XotBaseResource
@@ -32,15 +24,9 @@ class OauthClientResource extends XotBaseResource
     /**
      * Schema del form per la risorsa.
      *
-<<<<<<< HEAD
      * @return array<string, mixed>
      */
     public static function getFormSchemaOld(): array
-=======
-     * @return array<string, Field>
-     */
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'name' => TextInput::make('name')

@@ -16,16 +16,10 @@ use Modules\User\Events\InvalidState;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
-<<<<<<< HEAD
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('user-db');
-=======
-use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 test('builds user attributes from oauth user', function (): void {
     $oauthUser = configureMock(SocialiteUserContract::class, function (MockInterface $mock): void {
@@ -75,16 +69,9 @@ test('retrieves oauth user from socialite driver', function (): void {
         $mock->allows(['getEmail' => 'user@example.com']);
     });
 
-<<<<<<< HEAD
     $driver = new class($oauthUser)
     {
         public function __construct(private SocialiteUserContract $oauthUser) {}
-=======
-    $driver = new class($oauthUser) {
-        public function __construct(private SocialiteUserContract $oauthUser)
-        {
-        }
->>>>>>> laraxot/dev
 
         public function user(): SocialiteUserContract
         {
@@ -106,16 +93,9 @@ test('retrieves oauth user from socialite driver', function (): void {
 test('returns null and dispatches invalid state event when socialite state is invalid', function (): void {
     $exception = new InvalidStateException();
 
-<<<<<<< HEAD
     $driver = new class($exception)
     {
         public function __construct(private InvalidStateException $exception) {}
-=======
-    $driver = new class($exception) {
-        public function __construct(private InvalidStateException $exception)
-        {
-        }
->>>>>>> laraxot/dev
 
         public function user(): never
         {
@@ -155,11 +135,7 @@ test('creates socialite user model with normalized attributes', function (): voi
     $result = app(CreateSocialiteUserAction::class)->execute('github', $oauthUser, $user);
 
     Assert::assertInstanceOf(SocialiteUser::class, $result);
-<<<<<<< HEAD
     Assert::assertSame((string) $result->user_id, (string) XotBasePest::assertModelKey($user->getKey()));
-=======
-    Assert::assertSame((string) $result->user_id, (string) $user->getKey());
->>>>>>> laraxot/dev
     Assert::assertSame('github', $result->provider);
     Assert::assertSame('provider-user-1', $result->provider_id);
 });

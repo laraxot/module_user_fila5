@@ -32,11 +32,7 @@ class ViewSocialiteUser extends XotBaseViewRecord
                         ->schema([
                             'user_name' => TextEntry::make('user.name')
                                 ->url(function (mixed $state, ?SocialiteUser $record): ?string {
-<<<<<<< HEAD
                                     if ($record === null) {
-=======
-                                    if (null === $record) {
->>>>>>> laraxot/dev
                                         return null;
                                     }
 

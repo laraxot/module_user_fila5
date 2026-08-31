@@ -21,11 +21,7 @@ use Modules\User\Models\Policies\TeamPermissionPolicy;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
-=======
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 test('OauthClientPolicy can be instantiated', function () {
     $policy = new OauthClientPolicy();

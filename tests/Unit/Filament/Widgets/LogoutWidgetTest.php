@@ -7,11 +7,7 @@ use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
-=======
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 describe('LogoutWidget', function (): void {
     test('logout widget can be instantiated', function (): void {

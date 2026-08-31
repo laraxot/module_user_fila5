@@ -5,13 +5,11 @@ tags: [tasks, index]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "tasks-index indice task - modulo user"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./001-user-management-system.md"
   - "./audit-dipendenze-user.md"
@@ -49,9 +47,7 @@ Lista dei task del modulo con link ai file .md separati. Ogni task è un file ne
 ## Collegamenti
 
 - [Roadmap User](../roadmap.md)
-<<<<<<< HEAD
 - [README User](../README.md)
-=======
+
 - [README User](../readme.md)
->>>>>>> laraxot/dev
 - [Scopo moduli progetto](../../../../../docs/moduli-scopo.md)

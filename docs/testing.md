@@ -5,13 +5,11 @@ tags: [testing]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "testing testing rules summary"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -482,7 +480,6 @@ jobs:
 ---
 
 *User Module Testing - Ensuring reliable and secure user management functionality*
-<<<<<<< HEAD
 *Testing del Modulo User: DRY + KISS + SOLID + ROBUST + LARAXOT*
 
 ---
@@ -579,6 +576,3 @@ User::factory()
 php artisan test Modules/User/tests/
 php artisan test Modules/User/tests/Feature/LoginTest.php --filter="test_user_can_login"
 ```
-=======
-*Testing del Modulo User: DRY + KISS + SOLID + ROBUST + LARAXOT*
->>>>>>> laraxot/dev

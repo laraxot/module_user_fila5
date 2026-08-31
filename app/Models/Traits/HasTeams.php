@@ -24,21 +24,12 @@ use Spatie\Permission\Models\Permission;
  * Provides team functionality for User models implementing team-based organization.
  * This trait handles team ownership, membership, permissions, and relationships.
  *
-<<<<<<< HEAD
  * @property TeamContract $currentTeam
  * @property int|null $current_team_id
  * @property Collection<int, TeamContract> $membershipTeams
  * @property Collection<int, TeamContract> $ownedTeams
  * @property Collection<int, TeamUser> $teamUsers
  * @property XotUserContract|null $owner
-=======
- * @property TeamContract                  $currentTeam
- * @property int|null                      $current_team_id
- * @property Collection<int, TeamContract> $membershipTeams
- * @property Collection<int, TeamContract> $ownedTeams
- * @property Collection<int, TeamUser>     $teamUsers
- * @property XotUserContract|null          $owner
->>>>>>> laraxot/dev
  */
 trait HasTeams
 {
@@ -61,11 +52,8 @@ trait HasTeams
      * Get all teams the user belongs to.
      *
      * @return Collection<int, TeamContract>
-<<<<<<< HEAD
      *
      * @phpstan-return Collection<int, TeamContract>
-=======
->>>>>>> laraxot/dev
      */
     public function allTeams(): Collection
     {
@@ -88,11 +76,7 @@ trait HasTeams
      */
     public function belongsToTeam(?TeamContract $team): bool
     {
-<<<<<<< HEAD
         if ($team === null) {
-=======
-        if (null === $team) {
->>>>>>> laraxot/dev
             return false;
         }
 
@@ -175,11 +159,8 @@ trait HasTeams
      * Get all of the team's users including its owner.
      *
      * @return Collection<int, User>
-<<<<<<< HEAD
      *
      * @phpstan-return Collection<int, User>
-=======
->>>>>>> laraxot/dev
      */
     public function getAllTeamUsersAttribute(): Collection
     {
@@ -189,19 +170,11 @@ trait HasTeams
             // Membership always extends Model, check only if user attribute exists
             $user = $membership->getAttribute('user');
 
-<<<<<<< HEAD
             return $user !== null ? $user : null;
         })->filter();
 
         $owner = $this->owner;
         if ($owner !== null && $owner instanceof User) {
-=======
-            return null !== $user ? $user : null;
-        })->filter();
-
-        $owner = $this->owner;
-        if (null !== $owner && $owner instanceof User) {
->>>>>>> laraxot/dev
             return $users->merge([$owner]);
         }
 
@@ -212,7 +185,6 @@ trait HasTeams
      * Get all of the team's users including its owner.
      *
      * @return Collection<int, User>
-<<<<<<< HEAD
      *
      * @phpstan-return Collection<int, User>
      */
@@ -226,18 +198,6 @@ trait HasTeams
             static function (TeamContract $team): array {
                 /** @var array<int, User> $users */
                 $users = (array) ($team->users ?? []);
-=======
-     */
-    public function allTeamUsers(): Collection // @phpstan-ignore return.type
-    {/** @var Collection<int, mixed> $teams */
-                            $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
-        /** @var Collection<int, User> $result */
-        $result = $teams->flatMap( // @phpstan-ignore argument.type
-            /** @param mixed $team @return array<int,User>|Collection<int,User> */
-            static function (mixed $team): array { // @phpstan-ignore return.type
-                /** @var array<int,User> $users */
-                $users = (array) ($team->users ?? []); // @phpstan-ignore property.nonObject
->>>>>>> laraxot/dev
 
                 return $users;
             })->unique('id');
@@ -257,21 +217,13 @@ trait HasTeams
             if ($memberUser instanceof Model) {
                 $memberUserKey = $memberUser->getKey();
 
-<<<<<<< HEAD
                 return $memberUserKey !== null && $memberUserKey === $user->getKey();
-=======
-                return null !== $memberUserKey && $memberUserKey === $user->getKey();
->>>>>>> laraxot/dev
             }
 
             return false;
         });
 
-<<<<<<< HEAD
         if ($userFound !== null) {
-=======
-        if (null !== $userFound) {
->>>>>>> laraxot/dev
             return true;
         }
 
@@ -310,11 +262,7 @@ trait HasTeams
 
         $teamRole = $this->teamRole($team);
 
-<<<<<<< HEAD
         return $teamRole !== null && $teamRole->name === $role;
-=======
-        return null !== $teamRole && $teamRole->name === $role;
->>>>>>> laraxot/dev
     }
 
     /**
@@ -324,11 +272,7 @@ trait HasTeams
     {
         $role = $this->teamRole($team);
 
-<<<<<<< HEAD
         if ($role === null) {
-=======
-        if (null === $role) {
->>>>>>> laraxot/dev
             return 'Unknown';
         }
 
@@ -339,11 +283,8 @@ trait HasTeams
      * Get the current team of the user's context.
      *
      * @return BelongsTo<Model&TeamContract, $this>
-<<<<<<< HEAD
      *
      * @phpstan-return BelongsTo<Model&TeamContract, $this>
-=======
->>>>>>> laraxot/dev
      */
     public function currentTeam(): BelongsTo
     {
@@ -357,11 +298,8 @@ trait HasTeams
      * Get the teams owned by the user.
      *
      * @return HasMany<Model&TeamContract, $this>
-<<<<<<< HEAD
      *
      * @phpstan-return HasMany<Model&TeamContract, $this>
-=======
->>>>>>> laraxot/dev
      */
     public function ownedTeams(): HasMany
     {
@@ -375,11 +313,8 @@ trait HasTeams
      * Get all team users.
      *
      * @return HasMany<TeamUser, $this>
-<<<<<<< HEAD
      *
      * @phpstan-return HasMany<TeamUser, $this>
-=======
->>>>>>> laraxot/dev
      */
     public function teamUsers(): HasMany
     {
@@ -398,11 +333,7 @@ trait HasTeams
         /** @var Model|Pivot|null $teamUser */
         $teamUser = $this->teamUsers()->where('team_id', $team->id)->first();
 
-<<<<<<< HEAD
         if ($teamUser === null) {
-=======
-        if (null === $teamUser) {
->>>>>>> laraxot/dev
             return null;
         }
 
@@ -423,11 +354,8 @@ trait HasTeams
      * Get permissions for a specific team.
      *
      * @return array<int, string>
-<<<<<<< HEAD
      *
      * @phpstan-return array<int, string>
-=======
->>>>>>> laraxot/dev
      */
     public function teamPermissions(TeamContract $team): array
     {
@@ -436,7 +364,6 @@ trait HasTeams
 
         // Permissions from Role
         $role = $this->teamRole($team);
-<<<<<<< HEAD
         if ($role !== null && $role->permissions) {
             /** @var \Illuminate\Database\Eloquent\Collection<int, Permission> $permissionsCollection */
             $permissionsCollection = $role->permissions;
@@ -448,28 +375,13 @@ trait HasTeams
             $permissions = array_values(array_filter(
                 $rolePermissionNames,
                 static fn (string $value): bool => $value !== ''
-=======
-        if (null !== $role && $role->permissions) {
-            /** @var \Illuminate\Database\Eloquent\Collection<int, Permission> $permissionsCollection */
-            $permissionsCollection = $role->permissions;
-            /** @var array<string> $rolePermissionNames */
-            $rolePermissionNames = $permissionsCollection->pluck('name')->toArray();
-
-            $permissions = array_values(array_filter(
-                $rolePermissionNames,
-                static fn (string $value): bool => '' !== $value
->>>>>>> laraxot/dev
             ));
         }
 
         // Permissions from Pivot
         /** @var Model|Pivot|null $teamUser */
         $teamUser = $this->teamUsers()->where('team_id', (string) $team->id)->first();
-<<<<<<< HEAD
         if ($teamUser !== null) {
-=======
-        if (null !== $teamUser) {
->>>>>>> laraxot/dev
             $pivotPermissions = $teamUser->getAttribute('permissions');
             if (is_array($pivotPermissions)) {
                 $pivotPermissionNames = array_keys(array_filter($pivotPermissions));
@@ -478,11 +390,7 @@ trait HasTeams
                     $permissions,
                     array_values(array_filter(
                         $pivotPermissionNames,
-<<<<<<< HEAD
                         static fn (string $value): bool => $value !== ''
-=======
-                        static fn (string $value): bool => '' !== $value
->>>>>>> laraxot/dev
                     ))
                 );
             }
@@ -518,31 +426,19 @@ trait HasTeams
      */
     public function initializeCurrentTeam(): void
     {
-<<<<<<< HEAD
         if ($this->current_team_id !== null) {
-=======
-        if (null !== $this->current_team_id) {
->>>>>>> laraxot/dev
             return;
         }
 
         $team = $this->personalTeam();
-<<<<<<< HEAD
         if ($team === null) {
-=======
-        if (null === $team) {
->>>>>>> laraxot/dev
             $teamCandidate = $this->allTeams()->first();
             if ($teamCandidate instanceof TeamContract) {
                 $team = $teamCandidate;
             }
         }
 
-<<<<<<< HEAD
         if ($team !== null) {
-=======
-        if (null !== $team) {
->>>>>>> laraxot/dev
             $this->switchTeam($team);
         }
     }
@@ -568,11 +464,7 @@ trait HasTeams
      */
     public function isCurrentTeam(TeamContract $team): bool
     {
-<<<<<<< HEAD
         if ($this->currentTeam === null) {
-=======
-        if (null === $this->currentTeam) {
->>>>>>> laraxot/dev
             return false;
         }
 
@@ -584,11 +476,7 @@ trait HasTeams
      */
     public function ownsTeam(?TeamContract $team): bool
     {
-<<<<<<< HEAD
         if ($team === null) {
-=======
-        if (null === $team) {
->>>>>>> laraxot/dev
             return false;
         }
 
@@ -600,11 +488,8 @@ trait HasTeams
      * Su {@see BaseUser} esposto come {@see membershipTeams()} — {@see HasRoles::teams()} resta Spatie.
      *
      * @return BelongsToMany<Model&TeamContract, Model&static, Pivot, 'pivot'>
-<<<<<<< HEAD
      *
      * @phpstan-return BelongsToMany<Model&TeamContract, Model&static, Pivot, 'pivot'>
-=======
->>>>>>> laraxot/dev
      */
     public function teams(): BelongsToMany
     {
@@ -685,11 +570,8 @@ trait HasTeams
      * Get all admins of the team.
      *
      * @return Collection<int, Model>
-<<<<<<< HEAD
      *
      * @phpstan-return Collection<int, Model>
-=======
->>>>>>> laraxot/dev
      */
     public function getTeamAdmins(TeamContract $team): Collection
     {
@@ -703,11 +585,8 @@ trait HasTeams
      * Get all members of the team.
      *
      * @return Collection<int, Model>
-<<<<<<< HEAD
      *
      * @phpstan-return Collection<int, Model>
-=======
->>>>>>> laraxot/dev
      */
     public function getTeamMembers(TeamContract $team): Collection
     {

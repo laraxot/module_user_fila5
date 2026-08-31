@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Prevenzione ->label() Hardcoded - Modulo User"
 module: user
@@ -8,8 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-=======
->>>>>>> laraxot/dev
 # Prevenzione ->label() Hardcoded - Modulo User
 
 ## 🚨 **REGOLA ASSOLUTA**

@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Pages\Tenancy;
 
 use Filament\Forms\Components\TextInput;
-<<<<<<< HEAD
 use Filament\Schemas\Schema;
-=======
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Datas\XotData;
@@ -21,14 +18,11 @@ class RegisterTeam extends XotBaseRegisterTenant
         return 'Register team';
     }
 
-<<<<<<< HEAD
     public function form(Schema $schema): Schema
     {
         return $schema->components($this->getFormSchema());
     }
 
-=======
->>>>>>> laraxot/dev
     /**
      * @return array<int, TextInput>
      */
@@ -41,11 +35,7 @@ class RegisterTeam extends XotBaseRegisterTenant
     }
 
     /**
-<<<<<<< HEAD
      * @param  array<string, mixed>  $data
-=======
-     * @param array<string, mixed> $data
->>>>>>> laraxot/dev
      */
     protected function handleRegistration(array $data): Model
     {

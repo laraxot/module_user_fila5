@@ -34,11 +34,7 @@ function createPassportClient(): array
 }
 
 test('client credentials grant returns token', function (): void {
-<<<<<<< HEAD
     /** @var TestCase $this */
-=======
-    /* @var TestCase $this */
->>>>>>> laraxot/dev
     ['client' => $client, 'secret' => $secret] = createPassportClient();
 
     $response = $this->post('/oauth/token', [
@@ -54,11 +50,7 @@ test('client credentials grant returns token', function (): void {
 });
 
 test('client credentials can be associated to a specific user', function (): void {
-<<<<<<< HEAD
     /** @var TestCase $this */
-=======
-    /* @var TestCase $this */
->>>>>>> laraxot/dev
     ['client' => $client] = createPassportClient();
     $user = UserFactory::new()->createOne();
 

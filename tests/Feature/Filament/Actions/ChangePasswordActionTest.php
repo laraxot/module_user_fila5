@@ -14,11 +14,7 @@ use function Safe\file_get_contents;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-<<<<<<< HEAD
     /** @var TestCase $this */
-=======
-    /* @var TestCase $this */
->>>>>>> laraxot/dev
     $this->setupFilamentAdminPanel();
 
     $this->action = ChangePasswordAction::make();

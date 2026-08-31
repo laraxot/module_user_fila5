@@ -15,11 +15,7 @@ use Modules\User\Tests\TestCase;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-<<<<<<< HEAD
     /** @var TestCase $this */
-=======
-    /* @var TestCase $this */
->>>>>>> laraxot/dev
     config(['activitylog.enabled' => false]);
 
     if (! Schema::connection('user')->hasTable('users')) {
@@ -29,10 +25,7 @@ beforeEach(function (): void {
 
 describe('RegisterWidget FO', function (): void {
     test('register page loads with livewire widget', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
->>>>>>> laraxot/dev
         $this->get('/it/auth/register')->assertSuccessful();
 
         Livewire::test(RegisterWidget::class)->assertSuccessful();

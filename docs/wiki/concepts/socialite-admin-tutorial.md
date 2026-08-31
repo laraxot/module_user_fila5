@@ -30,11 +30,9 @@ related:
 2. Seleziona il progetto → **API e Servizi** → **Credenziali**
 3. Clicca **+ Crea credenziali** → **ID client OAuth**
 4. Tipo applicazione: **Applicazione web**
-<<<<<<< HEAD
 5. Nome: `<nome progetto> Production` (o simile)
-=======
+
 5. Nome: `Fixcity Production` (o simile)
->>>>>>> laraxot/dev
 6. URI di reindirizzamento autorizzati: aggiungi `https://tuodominio.it/auth/google/callback`
 7. Clicca **Crea**
 8. Copia **ID client** e **Segreto client**

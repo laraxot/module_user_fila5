@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "directory_structure_checklist - User"
 module: user
@@ -8,8 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-=======
->>>>>>> laraxot/dev
 # directory_structure_checklist - User
 
 ## Overview

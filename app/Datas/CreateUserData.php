@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Datas;
 
-<<<<<<< HEAD
 use Modules\User\Actions\User\CreateUserAction;
-=======
->>>>>>> laraxot/dev
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\Optional;
 
@@ -18,11 +15,7 @@ use Spatie\LaravelData\Optional;
  * Ogni proprietà è `Optional` per preservare la semantica precedente
  * (array parziale → solo i campi forniti vengono passati a `User::create()`).
  *
-<<<<<<< HEAD
  * @see CreateUserAction
-=======
- * @see \Modules\User\Actions\User\CreateUserAction
->>>>>>> laraxot/dev
  */
 class CreateUserData extends Data
 {
@@ -40,10 +33,5 @@ class CreateUserData extends Data
         public string|Optional $email_verified_at,
         public string|Optional $type,
         public string|Optional $state,
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
 }

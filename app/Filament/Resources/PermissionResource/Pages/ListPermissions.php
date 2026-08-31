@@ -22,10 +22,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Modules\User\Filament\Resources\PermissionResource;
-<<<<<<< HEAD
 use Modules\User\Models\Permission;
-=======
->>>>>>> laraxot/dev
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Webmozart\Assert\Assert;
@@ -97,11 +94,7 @@ class ListPermissions extends XotBaseListRecords
 
                         // Poi verifichiamo che il modello abbia il metodo roles() prima di chiamarlo
                         if (method_exists($record, 'roles')) {
-<<<<<<< HEAD
                             /** @var BelongsToMany<Role, Permission> $rolesRelation */
-=======
-                            /** @var BelongsToMany<Role, \Modules\User\Models\Permission> $rolesRelation */
->>>>>>> laraxot/dev
                             $rolesRelation = $record->roles();
                             $roleData = $data['role'];
                             if (is_array($roleData) || is_int($roleData) || is_string($roleData)) {
@@ -117,16 +110,11 @@ class ListPermissions extends XotBaseListRecords
                         /** @var Builder<Role> $query */
                         $query = $roleModel::query();
 
-<<<<<<< HEAD
                         /** @var \Illuminate\Support\Collection<int|string, string|int> $names */
                         $names = $query->pluck('name', 'id');
 
                         return $names
                             ->mapWithKeys(static fn (string|int $name, int|string $id): array => [(string) $id => (string) $name])
-=======
-                        return $query->pluck('name', 'id')
-                            ->mapWithKeys(static fn (mixed $name, mixed $id): array => is_string($name) || is_int($name) ? [(string) $id => (string) $name] : [])
->>>>>>> laraxot/dev
                             ->all();
                     })->required(),
                 ])

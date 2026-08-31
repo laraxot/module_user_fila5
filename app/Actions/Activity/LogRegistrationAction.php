@@ -14,11 +14,7 @@ class LogRegistrationAction
     /**
      * Log a successful user registration activity.
      *
-<<<<<<< HEAD
      * @param  array<string, mixed>  $properties  Extra properties to log
-=======
-     * @param array<string, mixed> $properties Extra properties to log
->>>>>>> laraxot/dev
      */
     public function execute(User $user, array $properties = []): void
     {

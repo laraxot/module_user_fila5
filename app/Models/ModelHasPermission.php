@@ -6,19 +6,14 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-use Modules\TechPlanner\Models\Profile;
-=======
 use Modules\Xot\Contracts\ProfileContract;
->>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 /**
  * Modules\User\Models\ModelHasPermission.
  *
-<<<<<<< HEAD
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
  *
  * @method static \Modules\User\Database\Factories\ModelHasPermissionFactory factory($count = null, $state = [])
  * @method static Builder<static>|ModelHasPermission newModelQuery()
@@ -30,27 +25,11 @@ use Webmozart\Assert\Assert;
  * @property string $model_type
  * @property string $model_id
  * @property int|null $team_id
-=======
- * @property int    $id
- * @property int    $permission_id
- * @property string $model_type
- * @property string $model_id
- *
- * @method static Builder|ModelHasPermission newModelQuery()
- * @method static Builder|ModelHasPermission newQuery()
- * @method static Builder|ModelHasPermission query()
- * @method static Builder|ModelHasPermission whereId($value)
- * @method static Builder|ModelHasPermission whereModelId($value)
- * @method static Builder|ModelHasPermission whereModelType($value)
- * @method static Builder|ModelHasPermission wherePermissionId($value)
- *
->>>>>>> laraxot/dev
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  *
-<<<<<<< HEAD
  * @method static Builder<static>|ModelHasPermission whereCreatedAt($value)
  * @method static Builder<static>|ModelHasPermission whereCreatedBy($value)
  * @method static Builder<static>|ModelHasPermission whereId($value)
@@ -60,22 +39,6 @@ use Webmozart\Assert\Assert;
  * @method static Builder<static>|ModelHasPermission whereTeamId($value)
  * @method static Builder<static>|ModelHasPermission whereUpdatedAt($value)
  * @method static Builder<static>|ModelHasPermission whereUpdatedBy($value)
-=======
- * @method static Builder|ModelHasPermission whereCreatedAt($value)
- * @method static Builder|ModelHasPermission whereCreatedBy($value)
- * @method static Builder|ModelHasPermission whereUpdatedAt($value)
- * @method static Builder|ModelHasPermission whereUpdatedBy($value)
- *
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
- * @property string|null          $team_id
- *
- * @method static Builder|ModelHasPermission whereTeamId($value)
- *
- * @property ProfileContract|null $deleter
- *
- * @method static \Modules\User\Database\Factories\ModelHasPermissionFactory factory($count = null, $state = [])
->>>>>>> laraxot/dev
  *
  * @mixin \Eloquent
  */

@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
-<<<<<<< HEAD
-=======
 use Filament\Schemas\Components\Component;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
@@ -26,8 +23,6 @@ class SocialLoginWidget extends XotBaseSchemaWidget
     protected string $view = 'user::filament.widgets.auth.social-login';
 
     /**
-<<<<<<< HEAD
-=======
      * Widget senza form: schema vuoto.
      *
      * @return array<string, Component>
@@ -38,7 +33,6 @@ class SocialLoginWidget extends XotBaseSchemaWidget
     }
 
     /**
->>>>>>> laraxot/dev
      * @return list<array{driver: string, label: string, icon: string, color: string}>
      */
     public function getProviders(): array

@@ -21,16 +21,11 @@ class PermissionResource extends XotBaseResource
 {
     protected static ?string $model = Permission::class;
 
-<<<<<<< HEAD
     // #[\Override]
     /**
      * @return array<string, mixed>
      */
     public static function getFormSchemaOld(): array
-=======
-    #[\Override]
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'name' => TextInput::make('name')->required()->maxLength(255),

@@ -47,13 +47,10 @@ return [
             'tooltip' => 'Annulla l\'operazione',
             'helper_text' => 'Torna indietro senza salvare',
             'description' => 'Azione per annullare',
-<<<<<<< HEAD
             'icon' => 'cancel',
         ],
         'submit' => [
             'tooltip' => 'submit',
-=======
->>>>>>> laraxot/dev
         ],
     ],
     'messages' => [

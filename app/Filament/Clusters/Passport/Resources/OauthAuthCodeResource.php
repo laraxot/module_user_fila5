@@ -10,10 +10,6 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\PageRegistration;
-<<<<<<< HEAD
-=======
-use Filament\Schemas\Components\Component;
->>>>>>> laraxot/dev
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\IconColumn;
@@ -38,17 +34,10 @@ class OauthAuthCodeResource extends XotBaseResource
     /**
      * Get the form schema for the resource.
      *
-<<<<<<< HEAD
      * @return array<string, mixed>
      */
     // #[\Override]
     public static function getFormSchemaOld(): array
-=======
-     * @return array<string, Component>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'oauth_auth_code_info' => Section::make(static::trans('label'))
@@ -110,7 +99,6 @@ class OauthAuthCodeResource extends XotBaseResource
                     ->color('danger')
                     ->requiresConfirmation()
                     ->modalHeading(static::trans('actions.revoke.label'))
-<<<<<<< HEAD
                     ->action(function (OauthAuthCode $record): void {
                         $record->revoked = true;
                         $record->save();
@@ -120,19 +108,6 @@ class OauthAuthCodeResource extends XotBaseResource
                             ->send();
                     })
                     ->visible(fn (OauthAuthCode $record): bool => ! $record->revoked),
-=======
-                    ->action(function (mixed $record): void {
-                        if ($record instanceof OauthAuthCode) {
-                            $record->revoked = true;
-                            $record->save();
-                            Notification::make()
-                                ->title(static::trans('actions.revoke.success'))
-                                ->success()
-                                ->send();
-                        }
-                    })
-                    ->visible(fn (mixed $record) => $record instanceof OauthAuthCode && ! $record->revoked),
->>>>>>> laraxot/dev
                 DeleteAction::make(),
             ]);
     }

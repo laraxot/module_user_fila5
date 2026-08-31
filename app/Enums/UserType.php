@@ -27,15 +27,9 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
     case System = 'system';
     case Technician = 'technician';
 
-<<<<<<< HEAD
     private const string API = 'api';
 
     private const string WEB = 'web';
-=======
-    private const API = 'api';
-
-    private const WEB = 'web';
->>>>>>> laraxot/dev
 
     public function getDefaultGuard(): string
     {

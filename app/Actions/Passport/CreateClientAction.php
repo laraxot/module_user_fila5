@@ -21,22 +21,12 @@ class CreateClientAction
     /**
      * Crea un nuovo client OAuth2.
      *
-<<<<<<< HEAD
      * @param  string  $name  Nome del client
      * @param  string  $redirect  URL di redirect dopo autenticazione
      * @param  UserContract|null  $user  Utente proprietario del client (opzionale)
      * @param  bool  $personalAccess  Indica se è un personal access client
      * @param  bool  $password  Indica se è un password client
      * @param  string|null  $provider  Provider di autenticazione (default: 'users')
-=======
-     * @param string            $name           Nome del client
-     * @param string            $redirect       URL di redirect dopo autenticazione
-     * @param UserContract|null $user           Utente proprietario del client (opzionale)
-     * @param bool              $personalAccess Indica se è un personal access client
-     * @param bool              $password       Indica se è un password client
-     * @param string|null       $provider       Provider di autenticazione (default: 'users')
-     *
->>>>>>> laraxot/dev
      * @return OauthClient Il client creato
      */
     public function execute(
@@ -55,11 +45,7 @@ class CreateClientAction
         $client->provider = $provider ?? 'users';
         $client->revoked = false;
 
-<<<<<<< HEAD
         if ($user !== null) {
-=======
-        if (null !== $user) {
->>>>>>> laraxot/dev
             $client->user_id = $user->id;
         }
 

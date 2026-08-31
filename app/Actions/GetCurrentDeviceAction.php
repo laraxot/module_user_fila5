@@ -19,12 +19,7 @@ class GetCurrentDeviceAction
     public function __construct(
         private readonly Agent $agent,
         private readonly Device $deviceModel,
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
 
     /**
      * Execute the action.
@@ -34,21 +29,13 @@ class GetCurrentDeviceAction
         $deviceInfo = $this->getDeviceInfo();
         $browserInfo = $this->getBrowserInfo();
 
-<<<<<<< HEAD
         if ($mobileId !== null) {
-=======
-        if (null !== $mobileId) {
->>>>>>> laraxot/dev
             if (empty($mobileId)) {
                 throw new \InvalidArgumentException('L\'ID mobile non può essere vuoto');
             }
 
             $device = $this->deviceModel->firstOrCreate(['mobile_id' => $mobileId]);
-<<<<<<< HEAD
             if ($device === null) {
-=======
-            if (null === $device) {
->>>>>>> laraxot/dev
                 throw new \RuntimeException('Impossibile creare o trovare il dispositivo');
             }
             $device->update([...$deviceInfo, ...$browserInfo]);
@@ -57,11 +44,7 @@ class GetCurrentDeviceAction
         }
 
         $device = $this->deviceModel->firstOrCreate($deviceInfo);
-<<<<<<< HEAD
         if ($device === null) {
-=======
-        if (null === $device) {
->>>>>>> laraxot/dev
             throw new \RuntimeException('Impossibile creare o trovare il dispositivo');
         }
         $device->update($browserInfo);

@@ -14,11 +14,7 @@ use Modules\User\Notifications\Auth\Otp;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('user-db');
-=======
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 describe('SendOtpByUserAction', function () {
     it('generates and sends an OTP to the user', function () {
@@ -60,11 +56,7 @@ describe('SendOtpByUserAction', function () {
 
                 return ($routes['mail'] ?? null) === $user->email
                     && $notification->user->id === $user->id
-<<<<<<< HEAD
                     && $notification->code === 'random-otp-12';
-=======
-                    && 'random-otp-12' === $notification->code;
->>>>>>> laraxot/dev
             }
         );
 

@@ -3,17 +3,15 @@ title: "Risoluzione Conflitti in BaseUser.php"
 type: concept
 tags: [baseuser, conflicts]
 created: 2026-07-14
-<<<<<<< HEAD
 updated: 2026-08-18
 qmd: "baseuser-conflicts risoluzione conflitti in baseuser.php"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-=======
+
 updated: 2026-07-14
 qmd: "baseuser-conflicts risoluzione conflitti in baseuser.php"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -29,7 +27,6 @@ related:
 
 ## Analisi dei Conflitti
 
-<<<<<<< HEAD
 I marker residui su `BaseUser.php` (e trait `HasTeams` / `HasSocialite`) non erano un merge aperto: erano leftover `merge_file_*`. Risolti a mano:
 
 1. PHPDoc compatto (niente padding colonne) — [git-conflicts-models-phpdoc](./git-conflicts-models-phpdoc.md)
@@ -38,14 +35,13 @@ I marker residui su `BaseUser.php` (e trait `HasTeams` / `HasSocialite`) non era
 4. Tipizzazione stretta, relazioni e autorizzazioni già corrette nel parent
 
 Inventario vivo: [git-merge-conflict-inventory](./wiki/troubleshooting/git-merge-conflict-inventory.md).
-=======
+
 Dopo un'analisi approfondita del file `BaseUser.php` e dei file correlati, è stato determinato che non ci sono conflitti da risolvere. Il file è già correttamente implementato con:
 
 1. Tipizzazione stretta per tutti i metodi
 2. Annotazioni PHPStan appropriate
 3. Implementazione corretta delle relazioni
 4. Gestione appropriata delle autorizzazioni
->>>>>>> laraxot/dev
 
 ## File di Lingua
 

@@ -40,11 +40,7 @@ class OauthTokensRelationManager extends XotBaseRelationManager
                 ->limit(30)
                 ->tooltip(function (TextColumn $column): ?string {
                     $state = $column->getState();
-<<<<<<< HEAD
                     if ($state === null) {
-=======
-                    if (null === $state) {
->>>>>>> laraxot/dev
                         return null;
                     }
 

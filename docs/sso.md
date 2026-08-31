@@ -5,13 +5,11 @@ tags: [sso]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "sso 🔑 single sign-on (sso) - guida implementazione"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -32,11 +30,9 @@ related:
 
 ## 🎯 OVERVIEW
 
-<<<<<<< HEAD
 Implementazione Single Sign-On (SSO) per <nome progetto> con supporto SAML 2.0 e OpenID Connect (OIDC), permettendo l'integrazione con provider enterprise come Azure AD, Google Workspace, Okta.
-=======
+
 Implementazione Single Sign-On (SSO) per FixCity con supporto SAML 2.0 e OpenID Connect (OIDC), permettendo l'integrazione con provider enterprise come Azure AD, Google Workspace, Okta.
->>>>>>> laraxot/dev
 
 ---
 
@@ -754,7 +750,6 @@ class SsoTest extends TestCase
 
 **Status**: Pianificato Q1 2026  
 **Priority**: MEDIUM  
-<<<<<<< HEAD
 
 
 ## Appendice — contenuto migrato
@@ -766,5 +761,3 @@ canonical: ../../../Themes/docs/shared-components/sso.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/sso.txt
-=======
->>>>>>> laraxot/dev

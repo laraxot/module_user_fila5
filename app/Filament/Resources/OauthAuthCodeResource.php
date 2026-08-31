@@ -35,16 +35,11 @@ class OauthAuthCodeResource extends XotBaseResource
      *
      * @return array<string, Select|TextInput>
      */
-<<<<<<< HEAD
     // #[\Override]
     /**
      * @return array<string, mixed>
      */
     public static function getFormSchemaOld(): array
-=======
-    #[\Override]
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'user_id' => Select::make('user_id')
@@ -92,11 +87,7 @@ class OauthAuthCodeResource extends XotBaseResource
                     ->limit(30)
                     ->tooltip(function (TextColumn $column): ?string {
                         $state = $column->getState();
-<<<<<<< HEAD
                         if ($state === null) {
-=======
-                        if (null === $state) {
->>>>>>> laraxot/dev
                             return null;
                         }
                         if (is_array($state)) {

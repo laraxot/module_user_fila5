@@ -5,13 +5,11 @@ tags: [code, quality, analysis]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "code-quality-analysis code quality analysis - user module"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -334,7 +332,6 @@ public function getTableColumns(): array
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
-<<<<<<< HEAD
 This analysis provides a comprehensive roadmap for improving code quality in the User module while maintaining security and functionality.
 
 ---
@@ -652,6 +649,3 @@ public function getTableColumns(): array
 - [phpstan-compliance.md](./phpstan-compliance.md)
 
 This analysis provides a comprehensive roadmap for improving code quality in the User module while maintaining security and functionality.
-=======
-This analysis provides a comprehensive roadmap for improving code quality in the User module while maintaining security and functionality.
->>>>>>> laraxot/dev

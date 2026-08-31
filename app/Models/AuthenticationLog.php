@@ -12,8 +12,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-use Modules\TechPlanner\Models\Profile;
+use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * @property-read Model $authenticatable
@@ -26,8 +25,8 @@ use Modules\TechPlanner\Models\Profile;
  * @property Carbon|null $logout_at
  * @property bool|null $cleared_by_user
  * @property array<string, mixed>|null $location
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
  *
  * @method static Builder<static>|AuthenticationLog newModelQuery()
  * @method static Builder<static>|AuthenticationLog newQuery()
@@ -53,50 +52,6 @@ use Modules\TechPlanner\Models\Profile;
  * @method static Builder<static>|AuthenticationLog whereUpdatedAt($value)
  * @method static Builder<static>|AuthenticationLog whereUpdatedBy($value)
  * @method static Builder<static>|AuthenticationLog whereUserAgent($value)
-=======
-use Modules\Xot\Contracts\ProfileContract;
-
-/**
- * @property int                       $id
- * @property string                    $authenticatable_type
- * @property int                       $authenticatable_id
- * @property string|null               $ip_address
- * @property string|null               $user_agent
- * @property Carbon|null               $login_at
- * @property bool                      $login_successful
- * @property Carbon|null               $logout_at
- * @property bool                      $cleared_by_user
- * @property array<string, mixed>|null $location
- * @property Carbon|null               $created_at
- * @property Carbon|null               $updated_at
- * @property string|null               $updated_by
- * @property string|null               $created_by
- * @property Model|\Eloquent           $authenticatable
- * @property ProfileContract|null      $creator
- * @property ProfileContract|null      $updater
- *
- * @method static Builder|AuthenticationLog newModelQuery()
- * @method static Builder|AuthenticationLog newQuery()
- * @method static Builder|AuthenticationLog query()
- * @method static Builder|AuthenticationLog whereAuthenticatableId($value)
- * @method static Builder|AuthenticationLog whereAuthenticatableType($value)
- * @method static Builder|AuthenticationLog whereClearedByUser($value)
- * @method static Builder|AuthenticationLog whereCreatedAt($value)
- * @method static Builder|AuthenticationLog whereCreatedBy($value)
- * @method static Builder|AuthenticationLog whereId($value)
- * @method static Builder|AuthenticationLog whereIpAddress($value)
- * @method static Builder|AuthenticationLog whereLocation($value)
- * @method static Builder|AuthenticationLog whereLoginAt($value)
- * @method static Builder|AuthenticationLog whereLoginSuccessful($value)
- * @method static Builder|AuthenticationLog whereLogoutAt($value)
- * @method static Builder|AuthenticationLog whereUpdatedAt($value)
- * @method static Builder|AuthenticationLog whereUpdatedBy($value)
- * @method static Builder|AuthenticationLog whereUserAgent($value)
- *
- * @property ProfileContract|null $deleter
- *
- * @method static \Modules\User\Database\Factories\AuthenticationLogFactory factory($count = null, $state = [])
->>>>>>> laraxot/dev
  *
  * @mixin \Eloquent
  */

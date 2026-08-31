@@ -9,11 +9,7 @@ use Modules\User\Enums\UserType;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
-=======
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 test('UserType enum has expected cases', function (): void {
     $values = array_map(static fn ($case) => $case->value, UserType::cases());
@@ -43,7 +39,6 @@ test('LanguageEnum enum has expected cases', function (): void {
 });
 
 test('UserType has getLabel method', function (): void {
-<<<<<<< HEAD
     foreach (UserType::cases() as $case) {
         Assert::assertNotSame('', $case->getLabel());
     }
@@ -55,6 +50,4 @@ test('UserType maps every case to a default guard', function (): void {
     Assert::assertSame('web', UserType::CustomerUser->getDefaultGuard());
     Assert::assertSame('web', UserType::System->getDefaultGuard());
     Assert::assertSame('api', UserType::Technician->getDefaultGuard());
-=======
->>>>>>> laraxot/dev
 });

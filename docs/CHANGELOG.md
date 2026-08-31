@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Changelog"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> laraxot/dev
 # Changelog
 
 Tutte le modifiche notevoli a questo modulo saranno documentate in questo file.

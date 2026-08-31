@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
     'navigation' => ['group' => 'socialite provider settings.navigation'],
     'actions' => [
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
@@ -38,9 +37,5 @@ return [
             'scopes' => ['label' => 'microsoft.scopes', 'placeholder' => 'microsoft.scopes', 'helper_text' => 'microsoft.scopes', 'description' => 'microsoft.scopes'],
             'redirect' => ['label' => 'microsoft.redirect', 'placeholder' => 'microsoft.redirect', 'helper_text' => 'microsoft.redirect', 'description' => 'microsoft.redirect'],
         ],
-=======
-    'navigation' => [
-        'group' => 'socialite provider settings.navigation',
->>>>>>> laraxot/dev
     ],
 ];

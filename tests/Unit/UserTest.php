@@ -12,20 +12,12 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('user-db');
-=======
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 describe('User', function (): void {
     test('user can be created', function (): void {
         /* @var \Modules\User\Tests\TestCase $this */
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         try {
             $user = UserFactory::new()->createOne([
                 'type' => UserType::MasterAdmin,
@@ -44,11 +36,7 @@ describe('User', function (): void {
     });
 
     test('user has correct type casting', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         try {
             $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
             \assert($user instanceof User);
@@ -84,11 +72,7 @@ describe('User', function (): void {
     });
 
     test('user can be updated', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         try {
             $user = UserFactory::new()->createOne([
                 'type' => UserType::MasterAdmin,
@@ -111,11 +95,7 @@ describe('User', function (): void {
     });
 
     test('user can be deleted', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         $this->skipUnlessDirectPermissionSupported();
 
         $user = UserFactory::new()->createOne();
@@ -165,11 +145,7 @@ describe('User', function (): void {
     });
 
     test('user can be found by type', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         try {
             $user = UserFactory::new()->createOne(['type' => UserType::MasterAdmin]);
             \assert($user instanceof User);
@@ -189,11 +165,7 @@ describe('User', function (): void {
     });
 
     test('user can be created with different types', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         try {
             $factory = UserFactory::new();
             \assert($factory instanceof Factory);
@@ -219,11 +191,7 @@ describe('User', function (): void {
     });
 
     test('user soft delete functionality', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         $this->skipTest('User model does not implement SoftDeletes trait');
     });
 });

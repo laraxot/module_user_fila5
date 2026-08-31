@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 # Prototype: laravel/Modules/* e laravel/Themes/*
 # Sync: bash bashscripts/templates/sync-gitattributes-modules.sh
 #
 # Git LFS VIETATO. Binari = blob git normali.
 # Mai: filter=lfs / diff=lfs / merge=lfs
 
-=======
->>>>>>> laraxot/dev
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored

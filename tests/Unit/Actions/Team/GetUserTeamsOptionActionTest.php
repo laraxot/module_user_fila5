@@ -7,16 +7,10 @@ use Modules\User\Actions\Team\GetUserTeamsOptionAction;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamUser;
 use Modules\User\Tests\TestCase;
-<<<<<<< HEAD
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('user-db');
-=======
-use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 it('returns only the placeholder when the authenticated user has no teams', function (): void {
     $user = TestCase::createTestUser();
@@ -45,15 +39,10 @@ it('returns the teams the authenticated user belongs to, keyed by team id', func
 
     $options = app(GetUserTeamsOptionAction::class)->execute();
 
-<<<<<<< HEAD
     $teamKey = (string) XotBasePest::assertModelKey($team->getKey());
 
     Assert::assertArrayHasKey($teamKey, $options);
     Assert::assertSame('Engineering', $options[$teamKey]);
-=======
-    Assert::assertArrayHasKey((string) $team->getKey(), $options);
-    Assert::assertSame('Engineering', $options[(string) $team->getKey()]);
->>>>>>> laraxot/dev
     Assert::assertArrayHasKey('', $options);
 });
 

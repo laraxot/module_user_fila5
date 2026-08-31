@@ -14,7 +14,6 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/json.md
-<<<<<<< HEAD
 
 
 ## Appendice — contenuto migrato
@@ -26,5 +25,3 @@ canonical: ../../../Themes/docs/shared-components/json.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/json.txt
-=======
->>>>>>> laraxot/dev

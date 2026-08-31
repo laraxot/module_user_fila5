@@ -5,13 +5,11 @@ tags: [database, population]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "database-population popolamento database - modulo user"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -314,11 +312,9 @@ echo "User roles: " . $user->roles()->count() . "\n";
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [README Modulo User](./README.md)
-=======
+
 - [README Modulo User](./readme.md)
->>>>>>> laraxot/dev
 - [Factory Best Practices](./factory-best-practices.md)
 - [Testing Guidelines](./testing.md)
 - [Database Schema](./database-schema.md)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Piano di Implementazione Componenti Header"
 module: user
@@ -8,8 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-=======
->>>>>>> laraxot/dev
 # Piano di Implementazione Componenti Header
 
 ## Fase 1: Setup Struttura

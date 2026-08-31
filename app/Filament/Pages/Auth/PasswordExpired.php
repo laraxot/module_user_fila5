@@ -65,20 +65,12 @@ class PasswordExpired extends XotBasePage
         Assert::string($currentPassword = Arr::get($data, 'current_password'));
         Assert::string($password = Arr::get($data, 'password'));
         $user = Auth::user();
-<<<<<<< HEAD
         if ($user === null) {
-=======
-        if (null === $user) {
->>>>>>> laraxot/dev
             return null;
         }
 
         // check if current password is correct
-<<<<<<< HEAD
         if ($user->password === null || ! Hash::check($currentPassword, $user->password)) {
-=======
-        if (null === $user->password || ! Hash::check($currentPassword, $user->password)) {
->>>>>>> laraxot/dev
             Notification::make()
                 ->title(__('user::otp.notifications.wrong_password.title'))
                 ->body(__('user::otp.notifications.wrong_password.body'))

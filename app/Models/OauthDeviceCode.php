@@ -19,10 +19,4 @@ use Laravel\Passport\DeviceCode as PassportDeviceCode;
  *
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
 class OauthDeviceCode extends PassportDeviceCode {}
-=======
-class OauthDeviceCode extends PassportDeviceCode
-{
-}
->>>>>>> laraxot/dev

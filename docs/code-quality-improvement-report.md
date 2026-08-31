@@ -4,7 +4,6 @@ type: report
 tags: [code-quality, phpstan, pest, maintainability]
 module: "User"
 created: 2026-07-17
-<<<<<<< HEAD
 updated: 2026-07-27
 qmd: "code quality baseline PHPStan Pest strict types Laraxot User"
 story: STORY-001
@@ -12,7 +11,7 @@ issues:
   - "https://github.com/laraxot/<nome repository>/issues/46"
 discussions:
   - "https://github.com/laraxot/<nome repository>/discussions/47"
-=======
+
 updated: 2026-07-17
 qmd: "code quality baseline PHPStan Pest strict types Laraxot User"
 story: STORY-001
@@ -20,7 +19,6 @@ issues:
   - "https://github.com/laraxot/base_techplanner_fila5/issues/46"
 discussions:
   - "https://github.com/laraxot/base_techplanner_fila5/discussions/47"
->>>>>>> laraxot/dev
 related:
   - "../../../../docs/stories/STORY-001-code-quality-moduli-temi.md"
 ---
@@ -86,11 +84,9 @@ Rilevazione del 17 luglio 2026 sul working tree locale; esclusi vendor e dipende
 6. **resources/views/node_modules.** Rimuovere dipendenze vendorizzate dall’albero delle view, dichiararle nel package.json owner e aggiungere la directory al gitignore; rigenerare gli asset con Vite. Questo elimina megabyte non revisionabili e falsi positivi di audit.
 
 
-<<<<<<< HEAD
 - [x] PHPStan L10 scoped senza errori non giustificati. (Modules 2026-07-27)
-=======
+
 - [ ] PHPStan L10 scoped senza errori non giustificati.
->>>>>>> laraxot/dev
 - [ ] Pest scoped verde sui flussi critici.
 - [ ] Nessuna nuova estensione Filament diretta o controller FO.
 - [ ] Nessuna nuova business logic in Services/Support.
@@ -99,14 +95,11 @@ Rilevazione del 17 luglio 2026 sul working tree locale; esclusi vendor e dipende
 
 ## Criteri di uscita
 
-<<<<<<< HEAD
 ## Gate PHPStan (2026-07-27)
 
 - `cd laravel && ./vendor/bin/phpstan analyse Modules --memory-limit=-1` → **0 errori**.
 - Themes: solo insieme a Modules — [phpstan-stale-ignore-pattern](../../../../docs/wiki/troubleshooting/phpstan-stale-ignore-pattern.md).
 
-=======
->>>>>>> laraxot/dev
 ## Verifica
 
 Dalla cartella laravel/:

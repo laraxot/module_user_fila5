@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "MIGRATION_BEST_PRACTICES - Modulo User"
 module: user
@@ -8,8 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-=======
->>>>>>> laraxot/dev
 # MIGRATION_BEST_PRACTICES - Modulo User
 
 ## Scopo

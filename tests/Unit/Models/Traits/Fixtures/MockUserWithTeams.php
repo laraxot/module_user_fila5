@@ -20,7 +20,6 @@ use Spatie\Permission\Contracts\Role;
 /**
  * Stub model for HasTeams trait unit tests; satisfies PHPStan in-context analysis.
  *
-<<<<<<< HEAD
  * @property string $id
  * @property int|null $current_team_id
  * @property TeamContract|null $currentTeam
@@ -29,16 +28,6 @@ use Spatie\Permission\Contracts\Role;
  * @property EloquentCollection<int, TeamUser> $teamUsers
  * @property XotUserContract|null $owner
  * @property int $total_members
-=======
- * @property string                            $id
- * @property int|null                          $current_team_id
- * @property TeamContract|null                 $currentTeam
- * @property EloquentCollection<int, Team>     $membershipTeams
- * @property EloquentCollection<int, Team>     $ownedTeams
- * @property EloquentCollection<int, TeamUser> $teamUsers
- * @property XotUserContract|null              $owner
- * @property int                               $total_members
->>>>>>> laraxot/dev
  */
 class MockUserWithTeams extends Model
 {
@@ -56,7 +45,6 @@ class MockUserWithTeams extends Model
 
     public function getKey(): string
     {
-<<<<<<< HEAD
         $id = $this->attributes['id'] ?? 'mock-user-1';
 
         return \is_string($id) ? $id : 'mock-user-1';
@@ -64,13 +52,6 @@ class MockUserWithTeams extends Model
 
     /**
      * @param  string|int|Permission  $permission
-=======
-        return (string) ($this->attributes['id'] ?? 'mock-user-1');
-    }
-
-    /**
-     * @param string|int|Permission $permission
->>>>>>> laraxot/dev
      */
     public function hasPermissionTo($permission, ?string $guardName = null): bool
     {
@@ -78,11 +59,7 @@ class MockUserWithTeams extends Model
     }
 
     /**
-<<<<<<< HEAD
      * @param  string|int|array<array-key, string|int>|Role|\BackedEnum  $roles
-=======
-     * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
->>>>>>> laraxot/dev
      */
     public function hasRole($roles, ?string $guard = null): bool
     {

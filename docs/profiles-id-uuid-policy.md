@@ -5,13 +5,11 @@ tags: [profiles, uuid, policy]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "profiles-id-uuid-policy profiles id/uuid policy"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -52,11 +50,9 @@ When fixing an existing installation:
 
 ## 2026-03-12 Incident
 
-<<<<<<< HEAD
 In `<nome repository>`, the runtime failed with:
-=======
+
 In `base_predict_fila5`, the runtime failed with:
->>>>>>> laraxot/dev
 
 - insert into `profiles` ... `uuid` ...
 - SQLSTATE `42S22`

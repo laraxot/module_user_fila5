@@ -7,10 +7,7 @@ namespace Modules\User\Models\Traits;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Datas\PasswordData;
 
-<<<<<<< HEAD
-=======
 /** @phpstan-ignore trait.unused */
->>>>>>> laraxot/dev
 trait HasPasswordExpiry
 {
     public static function bootHasPasswordExpiry(): void

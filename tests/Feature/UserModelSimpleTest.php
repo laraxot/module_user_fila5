@@ -25,11 +25,7 @@ describe('User Model Simple', function (): void {
     });
 
     test('user model can create basic record', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         $this->skipUnlessUsersTableReady();
 
         $user = createTestUser([

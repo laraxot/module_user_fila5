@@ -5,18 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Shield;
 
 use Modules\User\Contracts\HasShieldPermissions;
-<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\class_implements;
 
-=======
-
-use function Safe\class_implements;
-
-use Spatie\QueueableAction\QueueableAction;
-
->>>>>>> laraxot/dev
 /**
  * Action per risolvere la configurazione permissions e entities.
  *
@@ -77,14 +69,7 @@ class ResolvePermissionsConfigurationAction
             return [];
         }
 
-<<<<<<< HEAD
         return array_values(array_filter($res, 'is_string'));
-=======
-        return array_values(array_map(
-            static fn (mixed $item): string => is_string($item) ? $item : '',
-            $res
-        ));
->>>>>>> laraxot/dev
     }
 
     private function getPagePermissionPrefix(): string
@@ -188,13 +173,6 @@ class ResolvePermissionsConfigurationAction
             return [];
         }
 
-<<<<<<< HEAD
         return array_values(array_filter($res, 'is_string'));
-=======
-        return array_values(array_map(
-            static fn (mixed $item): string => is_string($item) ? $item : '',
-            $res
-        ));
->>>>>>> laraxot/dev
     }
 }

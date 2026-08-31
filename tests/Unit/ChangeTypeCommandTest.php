@@ -9,11 +9,7 @@ use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
 use ReflectionNamedType;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
-=======
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 function changeTypeCommandInstance(): ChangeTypeCommand
 {

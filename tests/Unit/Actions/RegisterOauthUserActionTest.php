@@ -11,19 +11,11 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('user-db');
 
 describe('RegisterOauthUserAction', function (): void {
     /**
      * @param  array<string, mixed>  $attributes
-=======
-uses(TestCase::class);
-
-describe('RegisterOauthUserAction', function (): void {
-    /**
-     * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
      */
     $getMockUser = function (array $attributes = []): SocialiteUserContract {
         /** @var array<string, mixed> $normalizedAttributes */

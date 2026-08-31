@@ -5,13 +5,11 @@ tags: [registration, widget, fileupload, fix]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "registration-widget-fileupload-fix registrationwidget fileupload error fix"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./dashboard-filters-integration.md"
   - "./edit-user-widget.md"
@@ -39,11 +37,8 @@ Filament\Forms\Concerns\SupportsFileUploadFields:39 getUploadedFiles
 ## Soluzione Implementata ✅
 ### 1. Correzione in `RegistrationWidget.getFormFill()` ✅
 Il metodo è stato modificato per convertire i campi file upload da stringhe ad array quando il modello esiste:
-<<<<<<< HEAD
 ```
 
-=======
->>>>>>> laraxot/dev
 ```php
 public function getFormFill(): array
 {
@@ -107,11 +102,8 @@ I componenti `FileUpload` si aspettano array:
 3. **Modifica File**: Verifica che upload di nuovi file sostituisca quelli esistenti
 4. **Wizard Navigation**: Verifica navigazione tra step senza perdere file
 ### Comandi Test
-<<<<<<< HEAD
 ```
 
-=======
->>>>>>> laraxot/dev
 ```bash
 cd laravel
 cd laravel
@@ -174,8 +166,5 @@ Questo pattern può essere riutilizzato in altri widget che:
 **Tipo**: Bug Fix Documentation
 **Priorità**: Critica (blocca registrazione paziente)
 **Status**: ✅ **RISOLTO**
-<<<<<<< HEAD
 
 ```
-=======
->>>>>>> laraxot/dev

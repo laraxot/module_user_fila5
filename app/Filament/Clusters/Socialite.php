@@ -11,10 +11,4 @@ use Modules\Xot\Filament\Clusters\XotBaseCluster;
  *
  * @see XotBaseCluster
  */
-<<<<<<< HEAD
 class Socialite extends XotBaseCluster {}
-=======
-class Socialite extends XotBaseCluster
-{
-}
->>>>>>> laraxot/dev

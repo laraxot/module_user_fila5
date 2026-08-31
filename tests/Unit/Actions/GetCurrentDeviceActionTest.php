@@ -9,17 +9,10 @@ use Modules\User\Tests\Fakes\FakeAgent;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('user-db');
 
 /**
  * @param  array<string, mixed>  $expected
-=======
-uses(TestCase::class);
-
-/**
- * @param array<string, mixed> $expected
->>>>>>> laraxot/dev
  */
 function assertDeviceMatches(Device $device, array $expected): void
 {

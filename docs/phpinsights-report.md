@@ -14,7 +14,6 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-report.md
-<<<<<<< HEAD
 
 
 ## Appendice — contenuto migrato
@@ -26,5 +25,3 @@ canonical: ../../../Themes/docs/shared-components/.gitkeep
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
-=======
->>>>>>> laraxot/dev

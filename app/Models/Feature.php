@@ -6,12 +6,11 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-use Modules\TechPlanner\Models\Profile;
+use Modules\Xot\Contracts\ProfileContract;
 
 /**
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
  *
  * @method static Builder<static>|Feature newModelQuery()
  * @method static Builder<static>|Feature newQuery()
@@ -32,43 +31,6 @@ use Modules\TechPlanner\Models\Profile;
  * @method static Builder<static>|Feature whereScope($value)
  * @method static Builder<static>|Feature whereUpdatedAt($value)
  * @method static Builder<static>|Feature whereValue($value)
-=======
-use Modules\Xot\Contracts\ProfileContract;
-
-/**
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
- *
- * @method static Builder|Feature newModelQuery()
- * @method static Builder|Feature newQuery()
- * @method static Builder|Feature query()
- *
- * @property string      $id
- * @property string      $name
- * @property string      $scope
- * @property string      $value
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property Carbon|null $deleted_at
- * @property string|null $deleted_by
- *
- * @method static Builder|Feature whereCreatedAt($value)
- * @method static Builder|Feature whereCreatedBy($value)
- * @method static Builder|Feature whereDeletedAt($value)
- * @method static Builder|Feature whereDeletedBy($value)
- * @method static Builder|Feature whereId($value)
- * @method static Builder|Feature whereName($value)
- * @method static Builder|Feature whereScope($value)
- * @method static Builder|Feature whereUpdatedAt($value)
- * @method static Builder|Feature whereUpdatedBy($value)
- * @method static Builder|Feature whereValue($value)
- *
- * @property ProfileContract|null $deleter
- *
- * @method static \Modules\User\Database\Factories\FeatureFactory factory($count = null, $state = [])
->>>>>>> laraxot/dev
  *
  * @mixin \Eloquent
  */

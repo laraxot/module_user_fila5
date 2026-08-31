@@ -473,7 +473,6 @@ class ApiRateLimitingMiddleware
 - User satisfaction scores
 - Security incident reduction
 - Team collaboration effectiveness
-<<<<<<< HEAD
 
 ---
 
@@ -954,5 +953,3 @@ class ApiRateLimitingMiddleware
 - User satisfaction scores
 - Security incident reduction
 - Team collaboration effectiveness
-=======
->>>>>>> laraxot/dev

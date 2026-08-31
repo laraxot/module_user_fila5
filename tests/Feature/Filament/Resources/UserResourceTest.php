@@ -7,13 +7,8 @@ namespace Modules\User\Tests\Feature\Filament\Resources;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Forms\Components\Field;
-<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
-=======
-use Filament\Forms\Components\Placeholder;
-use Filament\Forms\Components\TextInput;
->>>>>>> laraxot/dev
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Illuminate\Support\Facades\Hash;
@@ -50,11 +45,7 @@ describe('User Resource', function (): void {
 
     test('user resource has correct form schema', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $form = UserResource::getFormSchemaOld();
-=======
-        $form = UserResource::getFormSchema();
->>>>>>> laraxot/dev
 
         Assert::assertArrayHasKey('section01', $form);
         Assert::assertArrayHasKey('section02', $form);
@@ -75,11 +66,7 @@ describe('User Resource', function (): void {
 
         $createdAtField = userResourceFindComponentByName($section02Schema, 'created_at');
         Assert::assertNotNull($createdAtField);
-<<<<<<< HEAD
         Assert::assertInstanceOf(TextEntry::class, $createdAtField);
-=======
-        Assert::assertInstanceOf(Placeholder::class, $createdAtField);
->>>>>>> laraxot/dev
     });
 
     test('user resource has combined relation manager tabs', function (): void {
@@ -95,11 +82,7 @@ describe('User Resource', function (): void {
     });
 
     test('user resource form schema has correct column spans', function (): void {
-<<<<<<< HEAD
         $form = UserResource::getFormSchemaOld();
-=======
-        $form = UserResource::getFormSchema();
->>>>>>> laraxot/dev
 
         $section01 = $form['section01'];
         $section02 = $form['section02'];
@@ -110,21 +93,13 @@ describe('User Resource', function (): void {
 
     test('user resource name field is required', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $form = UserResource::getFormSchemaOld();
-=======
-        $form = UserResource::getFormSchema();
->>>>>>> laraxot/dev
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $nameField = userResourceFindComponentByName($section01Schema, 'name');
 
-<<<<<<< HEAD
         if ($nameField === null) {
-=======
-        if (null === $nameField) {
->>>>>>> laraxot/dev
             $this->skipTest('name field not found in section01 schema');
         }
 
@@ -133,21 +108,13 @@ describe('User Resource', function (): void {
 
     test('user resource email field is required', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $form = UserResource::getFormSchemaOld();
-=======
-        $form = UserResource::getFormSchema();
->>>>>>> laraxot/dev
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $emailField = userResourceFindComponentByName($section01Schema, 'email');
 
-<<<<<<< HEAD
         if ($emailField === null) {
-=======
-        if (null === $emailField) {
->>>>>>> laraxot/dev
             $this->skipTest('email field not found in section01 schema');
         }
 
@@ -156,21 +123,13 @@ describe('User Resource', function (): void {
 
     test('user resource password field is required only on create', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $form = UserResource::getFormSchemaOld();
-=======
-        $form = UserResource::getFormSchema();
->>>>>>> laraxot/dev
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $passwordField = userResourceFindComponentByName($section01Schema, 'password');
 
-<<<<<<< HEAD
         if ($passwordField === null) {
-=======
-        if (null === $passwordField) {
->>>>>>> laraxot/dev
             $this->skipTest('password field not found in section01 schema');
         }
 
@@ -179,11 +138,7 @@ describe('User Resource', function (): void {
 
     test('user resource password field has correct type', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $form = UserResource::getFormSchemaOld();
-=======
-        $form = UserResource::getFormSchema();
->>>>>>> laraxot/dev
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -196,21 +151,13 @@ describe('User Resource', function (): void {
 
     test('user resource email field has unique validation', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $form = UserResource::getFormSchemaOld();
-=======
-        $form = UserResource::getFormSchema();
->>>>>>> laraxot/dev
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $emailField = userResourceFindComponentByName($section01Schema, 'email');
 
-<<<<<<< HEAD
         if ($emailField === null) {
-=======
-        if (null === $emailField) {
->>>>>>> laraxot/dev
             $this->skipTest('email field not found in section01 schema');
         }
 
@@ -219,29 +166,17 @@ describe('User Resource', function (): void {
 
     test('user resource created at field shows diff for humans', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $form = UserResource::getFormSchemaOld();
-=======
-        $form = UserResource::getFormSchema();
->>>>>>> laraxot/dev
         $section02 = $form['section02'];
         $section02Schema = userResourceSectionComponents($this, $section02);
 
         $createdAtField = userResourceFindComponentByName($section02Schema, 'created_at');
 
-<<<<<<< HEAD
         if ($createdAtField === null) {
             $this->skipTest('created_at field not found in section02 schema');
         }
 
         Assert::assertInstanceOf(TextEntry::class, $createdAtField);
-=======
-        if (null === $createdAtField) {
-            $this->skipTest('created_at field not found in section02 schema');
-        }
-
-        Assert::assertInstanceOf(Placeholder::class, $createdAtField);
->>>>>>> laraxot/dev
     });
 
     test('user resource can be instantiated', function (): void {

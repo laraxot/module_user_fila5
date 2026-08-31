@@ -10,10 +10,7 @@ use Filament\Schemas\Contracts\HasSchemas;
 use Filament\Schemas\Schema;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Contracts\Auth\Authenticatable;
-<<<<<<< HEAD
 use Illuminate\Contracts\View\View;
-=======
->>>>>>> laraxot/dev
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -101,16 +98,8 @@ class Register extends Component implements HasSchemas
 
     /**
      * Render the component.
-<<<<<<< HEAD
      */
     public function render(): View
-=======
-     *
-     * In Livewire components, the render method ultimately returns a view,
-     * but it's processed through Livewire's component system.
-     */
-    public function render(): mixed
->>>>>>> laraxot/dev
     {
         // Copy the view templates to the pub_theme location
         app(ViewCopyAction::class)
@@ -123,16 +112,11 @@ class Register extends Component implements HasSchemas
          */
         $view = 'pub_theme::livewire.auth.register';
 
-<<<<<<< HEAD
         // `extends()` passa da __call sul factory: il tipo va riportato a View
         // con un'asserzione runtime, come in Verify::render().
         $result = view($view)->extends('pub_theme::layouts.auth');
         Assert::isInstanceOf($result, View::class);
 
         return $result;
-=======
-        // Return view with layout - Livewire specific implementation
-        return view($view)->extends('pub_theme::layouts.auth');
->>>>>>> laraxot/dev
     }
 }

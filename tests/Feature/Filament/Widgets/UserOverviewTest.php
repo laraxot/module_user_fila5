@@ -16,11 +16,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-<<<<<<< HEAD
     /** @var TestCase $this */
-=======
-    /* @var TestCase $this */
->>>>>>> laraxot/dev
     $this->widget = new UserOverview();
     $this->user = UserFactory::new()->createOne([
         'type' => UserType::MasterAdmin,
@@ -96,16 +92,11 @@ describe('User Overview', function (): void {
         $viewProperty->setAccessible(true);
 
         $viewPath = $viewProperty->getValue($widget);
-<<<<<<< HEAD
         if (! is_string($viewPath)) {
             Assert::fail('UserOverview::$view is not a string.');
         }
 
         Assert::assertStringContainsString('user::', $viewPath);
         Assert::assertStringContainsString('widgets.user-overview', $viewPath);
-=======
-        Assert::assertStringContainsString((string) 'user::', (string) $viewPath);
-        Assert::assertStringContainsString((string) 'widgets.user-overview', (string) $viewPath);
->>>>>>> laraxot/dev
     });
 });

@@ -14,7 +14,6 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/profile.md
-<<<<<<< HEAD
 
 
 ## Appendice — contenuto migrato
@@ -26,5 +25,3 @@ canonical: ../../../Themes/docs/shared-components/profile.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/profile.txt
-=======
->>>>>>> laraxot/dev

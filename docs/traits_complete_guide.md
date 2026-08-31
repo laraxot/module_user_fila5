@@ -357,11 +357,8 @@ trait HasTeams
 ## Analisi del Conflitto con HasTeamsContract
 
 Il contratto `HasTeamsContract` definisce:
-<<<<<<< HEAD
 ```
 
-=======
->>>>>>> laraxot/dev
 ```php
 public function teamRole(TeamContract $teamContract): ?Role;
 ```

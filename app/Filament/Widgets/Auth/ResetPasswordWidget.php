@@ -63,11 +63,7 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
             ])->save();
         });
 
-<<<<<<< HEAD
         if ($status === Password::PASSWORD_RESET) {
-=======
-        if (Password::PASSWORD_RESET === $status) {
->>>>>>> laraxot/dev
             session()->flash('status', __($status));
 
             return redirect()->route('login');

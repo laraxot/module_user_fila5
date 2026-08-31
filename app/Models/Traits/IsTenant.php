@@ -6,10 +6,7 @@ namespace Modules\User\Models\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\Pivot;
-=======
->>>>>>> laraxot/dev
 use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -24,11 +21,7 @@ trait IsTenant
     /**
      * Get all users associated with this tenant.
      *
-<<<<<<< HEAD
      * @return BelongsToMany<Model&UserContract, $this, Pivot, 'pivot'>
-=======
-     * @return BelongsToMany<Model&UserContract, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
->>>>>>> laraxot/dev
      */
     public function users(): BelongsToMany
     {

@@ -67,20 +67,12 @@ class DeviceData extends Data
 
     public function getSynchronizationId(string $apiName): string
     {
-<<<<<<< HEAD
         if ($this->synchronizationId !== null) {
-=======
-        if (null !== $this->synchronizationId) {
->>>>>>> laraxot/dev
             return $this->synchronizationId;
         }
 
         $synchronizationClass = config('morph_map.synchronization');
-<<<<<<< HEAD
         if ($synchronizationClass === null) {
-=======
-        if (null === $synchronizationClass) {
->>>>>>> laraxot/dev
             $synchronizationClass = '\Modules\Egea\Models\Synchronization';
         }
 

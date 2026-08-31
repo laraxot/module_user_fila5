@@ -5,7 +5,6 @@ tags: [change, password, command]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "change-password-command changepasswordcommand"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
@@ -13,12 +12,11 @@ related:
   - "./console-commands-philosophy-1-1.md"
   - "./console-commands-philosophy-1.md"
   - "./console-commands-philosophy-2.md"
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./assign-module-command.md"
->>>>>>> laraxot/dev
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./readme.md"
@@ -367,11 +365,9 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - `Modules\Xot\Datas\XotData`: Accesso centralizzato dati
 
 ## Collegamenti
-<<<<<<< HEAD
 - [README Comandi Console](README.md)
-=======
+
 - [README Comandi Console](readme.md)
->>>>>>> laraxot/dev
 - [PasswordData](../datas/passworddata.md)
 - [NewPasswordSet Event](../events/newpasswordset.md)
 - [User Model](../models/user.md)

@@ -5,13 +5,11 @@ tags: [filament, user, creation, pty]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "filament-user-creation-pty-error filament user creation pty error"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./git-merge-conflict-inventory-1.md"
   - "./git-merge-conflict-inventory.md"
@@ -36,11 +34,9 @@ Laravel Prompts attempts to read terminal configuration using `stty`. In non-int
 - **Use Non-Interactive Flags:** Always use `--no-interaction` (or `-n`) when automating artisan commands.
 - **Pass Arguments Explicitly:** Provide all required data via command-line arguments.
   ```bash
-<<<<<<< HEAD
   php artisan make:filament-user --name="Admin" --email="admin@example.com" --password="password" --panel="<nome progetto>::admin" --no-interaction
-=======
+
   php artisan make:filament-user --name="Admin" --email="admin@example.com" --password="password" --panel="fixcity::admin" --no-interaction
->>>>>>> laraxot/dev
   ```
 
 ### Bad Practices

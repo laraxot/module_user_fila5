@@ -150,7 +150,6 @@ POST /api/auth/logout
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Project Roadmap](../../Activity/docs/wiki/project-roadmap.md)
 - [Tenant Module](../../../Tenant/docs/wiki/)
 
@@ -292,7 +291,5 @@ POST /api/auth/logout
 
 ## Collegamenti
 
-=======
->>>>>>> laraxot/dev
 - [Project Roadmap](../../Activity/docs/wiki/PROJECT-ROADMAP.md)
 - [Tenant Module](../../../Tenant/docs/wiki/)

@@ -12,19 +12,11 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
 
 describe('User Model', function (): void {
     test('can be created in memory', function (): void {
         $user = \stubUser();
-=======
-uses(TestCase::class);
-
-describe('User Model', function (): void {
-    test('can be created in memory', function (): void {
-        $user = stubUser();
->>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(User::class, $user);
         Assert::assertFalse($user->exists);
@@ -51,22 +43,14 @@ describe('User Model', function (): void {
     });
 
     test('declares sensitive attributes as hidden without serialization', function (): void {
-<<<<<<< HEAD
         $user = \stubUser();
-=======
-        $user = stubUser();
->>>>>>> laraxot/dev
         $hidden = $user->getHidden();
         Assert::assertStringContainsString('password', implode(',', $hidden));
         Assert::assertContains('remember_token', $hidden);
     });
 
     test('casts attributes correctly', function (): void {
-<<<<<<< HEAD
         $user = \stubUser([
-=======
-        $user = stubUser([
->>>>>>> laraxot/dev
             'email_verified_at' => Carbon::now(),
             'created_at' => Carbon::now(),
             'is_active' => true,
@@ -79,11 +63,7 @@ describe('User Model', function (): void {
     });
 
     test('has profile relationship in memory', function (): void {
-<<<<<<< HEAD
         $user = \stubUser();
-=======
-        $user = stubUser();
->>>>>>> laraxot/dev
         $profile = new Profile();
         $profile->forceFill(['user_id' => 'test-user-id']);
         $user->setRelation('profile', $profile);
@@ -92,44 +72,28 @@ describe('User Model', function (): void {
     });
 
     test('can attach authentication logs in memory', function (): void {
-<<<<<<< HEAD
         $user = \stubUser();
-=======
-        $user = stubUser();
->>>>>>> laraxot/dev
         $log = new AuthenticationLog();
         $user->setRelation('authentications', collect([$log]));
         Assert::assertCount(1, $user->authentications);
     });
 
     test('can expose owned teams relation when preset', function (): void {
-<<<<<<< HEAD
         $user = \stubUser();
-=======
-        $user = stubUser();
->>>>>>> laraxot/dev
         $team = new Team();
         $user->setRelation('ownedTeams', collect([$team]));
         Assert::assertCount(1, $user->ownedTeams);
     });
 
     test('can expose teams relation when preset', function (): void {
-<<<<<<< HEAD
         $user = \stubUser();
-=======
-        $user = stubUser();
->>>>>>> laraxot/dev
         $team = new Team();
         $user->setRelation('teams', collect([$team]));
         Assert::assertCount(1, $user->teams);
     });
 
     test('has full name accessor', function (): void {
-<<<<<<< HEAD
         $user = \stubUser([
-=======
-        $user = stubUser([
->>>>>>> laraxot/dev
             'first_name' => 'John',
             'last_name' => 'Doe',
         ]);
@@ -138,11 +102,7 @@ describe('User Model', function (): void {
     });
 
     test('handles null names in full name accessor', function (): void {
-<<<<<<< HEAD
         $user = \stubUser([
-=======
-        $user = stubUser([
->>>>>>> laraxot/dev
             'first_name' => 'John',
             'last_name' => null,
         ]);
@@ -151,7 +111,6 @@ describe('User Model', function (): void {
     });
 
     test('hashes password when set', function (): void {
-<<<<<<< HEAD
         $user = \stubUser(['password' => 'plain-password']);
 
         // makeOne può lasciare plain o hashed a seconda dei cast: verifica solo che sia valorizzata.
@@ -160,129 +119,77 @@ describe('User Model', function (): void {
 
     test('reflects verified email state when timestamp is set', function (): void {
         $user = \stubUser(['email_verified_at' => null]);
-=======
-        $user = stubUser(['password' => 'plain-password']);
-    });
-
-    test('reflects verified email state when timestamp is set', function (): void {
-        $user = stubUser(['email_verified_at' => null]);
->>>>>>> laraxot/dev
         Assert::assertFalse($user->hasVerifiedEmail());
         $user->email_verified_at = \Illuminate\Support\Carbon::parse(Carbon::now()->toDateTimeString());
         Assert::assertTrue($user->hasVerifiedEmail());
     });
 
     test('can be activated deactivated in memory', function (): void {
-<<<<<<< HEAD
         $user = \stubUser(['is_active' => false]);
-=======
-        $user = stubUser(['is_active' => false]);
->>>>>>> laraxot/dev
         Assert::assertFalse($user->is_active);
         $user->is_active = true;
         Assert::assertTrue($user->is_active);
     });
 
     test('supports otp authentication', function (): void {
-<<<<<<< HEAD
         $user = \stubUser(['is_otp' => true]);
-=======
-        $user = stubUser(['is_otp' => true]);
->>>>>>> laraxot/dev
 
         Assert::assertTrue($user->is_otp);
     });
 
     test('exposes active flag for filtering in memory', function (): void {
-<<<<<<< HEAD
         $u1 = \stubUser(['is_active' => true]);
         $u2 = \stubUser(['is_active' => false]);
 
         $active = collect([$u1, $u2])->filter(fn (User $u) => $u->is_active === true);
         $inactive = collect([$u1, $u2])->filter(fn (User $u) => $u->is_active === false);
-=======
-        $u1 = stubUser(['is_active' => true]);
-        $u2 = stubUser(['is_active' => false]);
-
-        $active = collect([$u1, $u2])->filter(fn (User $u) => true === $u->is_active);
-        $inactive = collect([$u1, $u2])->filter(fn (User $u) => false === $u->is_active);
->>>>>>> laraxot/dev
 
         Assert::assertCount(1, $inactive);
         Assert::assertCount(1, $active);
     });
 
     test('exposes email verification flag for filtering in memory', function (): void {
-<<<<<<< HEAD
         $u1 = \stubUser(['email_verified_at' => Carbon::now()]);
         $u2 = \stubUser(['email_verified_at' => null]);
 
         $verified = collect([$u1, $u2])->filter(fn (User $u) => $u->email_verified_at !== null);
         $unverified = collect([$u1, $u2])->filter(fn (User $u) => $u->email_verified_at === null);
-=======
-        $u1 = stubUser(['email_verified_at' => Carbon::now()]);
-        $u2 = stubUser(['email_verified_at' => null]);
-
-        $verified = collect([$u1, $u2])->filter(fn (User $u) => null !== $u->email_verified_at);
-        $unverified = collect([$u1, $u2])->filter(fn (User $u) => null === $u->email_verified_at);
->>>>>>> laraxot/dev
 
         Assert::assertCount(1, $unverified);
         Assert::assertCount(1, $verified);
     });
 
     test('exposes language for filtering in memory', function (): void {
-<<<<<<< HEAD
         $u1 = \stubUser(['lang' => 'it']);
         $u2 = \stubUser(['lang' => 'en']);
-=======
-        $u1 = stubUser(['lang' => 'it']);
-        $u2 = stubUser(['lang' => 'en']);
->>>>>>> laraxot/dev
 
         $italians = collect([$u1, $u2])->where('lang', 'it');
         Assert::assertCount(1, $italians);
     });
 
     test('has password expiration', function (): void {
-<<<<<<< HEAD
         $user = \stubUser(['password_expires_at' => Carbon::now()->addDays(30)]);
-=======
-        $user = stubUser(['password_expires_at' => Carbon::now()->addDays(30)]);
->>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(Carbon::class, $user->password_expires_at);
     });
 
     test('tracks creation and updates in memory', function (): void {
-<<<<<<< HEAD
         $user = \stubUser([
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
-=======
-        $user = stubUser();
->>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(Carbon::class, $user->created_at);
         Assert::assertInstanceOf(Carbon::class, $user->updated_at);
     });
 
     test('can have current team in memory', function (): void {
-<<<<<<< HEAD
         $user = \stubUser(['current_team_id' => 'team-id']);
-=======
-        $user = stubUser(['current_team_id' => 'team-id']);
->>>>>>> laraxot/dev
         Assert::assertSame('team-id', $user->current_team_id);
     });
 
     test('can own teams in memory', function (): void {
-<<<<<<< HEAD
         $user = \stubUser();
-=======
-        $user = stubUser();
->>>>>>> laraxot/dev
         $team = new Team();
         $team->forceFill(['user_id' => $user->id]);
         $user->setRelation('ownedTeams', collect([$team]));

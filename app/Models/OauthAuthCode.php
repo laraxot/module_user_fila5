@@ -8,23 +8,12 @@ use Illuminate\Support\Carbon;
 use Laravel\Passport\AuthCode as PassportAuthCode;
 
 /**
-<<<<<<< HEAD
  * @property bool $revoked
  * @property-read OauthClient|null $client
-=======
- * @property string           $id
- * @property string           $user_id    (DC2Type:guid)
- * @property string           $client_id
- * @property string|null      $scopes
- * @property bool             $revoked
- * @property Carbon|null      $expires_at
- * @property OauthClient|null $client
->>>>>>> laraxot/dev
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAuthCode newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAuthCode newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAuthCode query()
-<<<<<<< HEAD
  *
  * @property string $id
  * @property string|null $user_id
@@ -32,8 +21,6 @@ use Laravel\Passport\AuthCode as PassportAuthCode;
  * @property string|null $scopes
  * @property Carbon|null $expires_at
  *
-=======
->>>>>>> laraxot/dev
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAuthCode whereClientId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAuthCode whereExpiresAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAuthCode whereId($value)

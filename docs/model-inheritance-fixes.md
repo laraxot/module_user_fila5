@@ -14,7 +14,6 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/model-inheritance-fixes.md
-<<<<<<< HEAD
 
 ---
 
@@ -214,5 +213,3 @@ cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
-=======
->>>>>>> laraxot/dev

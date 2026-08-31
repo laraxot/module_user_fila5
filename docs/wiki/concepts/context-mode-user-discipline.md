@@ -25,17 +25,15 @@ related:
 laravel/Modules/User/docs/wiki/
 ├── index.md                           # ≤30 righe
 ├── rules/
-<<<<<<< HEAD
 │   ├── index.md                       # ≤20 righe → root trigger map
 │   └── filament-user-labels.md        # ≤150 righe
 ├── skills/
 │   ├── index.md                       # ≤20 righe
-=======
+
 │   ├── INDEX.md                       # ≤20 righe → root trigger map
 │   └── filament-user-labels.md        # ≤150 righe
 ├── skills/
 │   ├── INDEX.md                       # ≤20 righe
->>>>>>> laraxot/dev
 │   └── filament-translation-audit.md  # ≤100 righe
 └── concepts/
     └── langserviceprovider-pattern.md  # ≤150 righe

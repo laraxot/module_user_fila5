@@ -18,22 +18,12 @@ class RegenerateClientSecretAction
     public function __construct(
         private readonly OauthClient $oauthClientModel,
         private readonly Str $stringHelper,
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
 
     /**
      * Rigenera il secret di un client OAuth2.
      *
-<<<<<<< HEAD
      * @param  OauthClient|string  $client  Il client di cui rigenerare il secret
-=======
-     * @param OauthClient|string $client Il client di cui rigenerare il secret
-     *
->>>>>>> laraxot/dev
      * @return string Il nuovo secret (in chiaro)
      */
     public function execute(OauthClient|string $client): string

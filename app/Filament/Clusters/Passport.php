@@ -16,10 +16,4 @@ use Modules\Xot\Filament\Clusters\XotBaseCluster;
  *
  * @see XotBaseCluster
  */
-<<<<<<< HEAD
 class Passport extends XotBaseCluster {}
-=======
-class Passport extends XotBaseCluster
-{
-}
->>>>>>> laraxot/dev

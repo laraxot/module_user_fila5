@@ -7,13 +7,8 @@ namespace Modules\User\Filament\Resources\UserResource\Schemas;
 use Carbon\Carbon;
 use Carbon\CarbonInterface;
 use Filament\Forms\Components\Checkbox;
-<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
-=======
-use Filament\Forms\Components\Placeholder;
-use Filament\Forms\Components\TextInput;
->>>>>>> laraxot/dev
 use Filament\Schemas\Components\Component as SchemaComponent;
 use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Model;
@@ -54,11 +49,7 @@ class UserForm extends XotBaseResourceForm
                 ->columnSpan(8),
             'section02' => Section::make()
                 ->schema([
-<<<<<<< HEAD
                     TextEntry::make('created_at')->html()->state(static function ($record) {
-=======
-                    Placeholder::make('created_at')->content(static function ($record) {
->>>>>>> laraxot/dev
                         if (! $record instanceof Model) {
                             return new HtmlString('&mdash;');
                         }
@@ -70,11 +61,7 @@ class UserForm extends XotBaseResourceForm
                         /** @var Carbon|null $createdAt */
                         $createdAt = $record->getAttribute('created_at');
 
-<<<<<<< HEAD
                         if ($createdAt === null) {
-=======
-                        if (null === $createdAt) {
->>>>>>> laraxot/dev
                             return new HtmlString('&mdash;');
                         }
                         if ($createdAt instanceof CarbonInterface) {

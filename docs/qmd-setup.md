@@ -75,7 +75,6 @@ qmd search "form" -c user  # Solo questo modulo
 
 ---
 *Cache: ~/.cache/qmd-cache/ | Index: ~/.cache/qmd-cache/index*
-<<<<<<< HEAD
 
 ---
 
@@ -151,5 +150,3 @@ qmd search "form" -c user  # Solo questo modulo
 
 ---
 *Cache: ~/.cache/qmd-cache/ | Index: ~/.cache/qmd-cache/index*
-=======
->>>>>>> laraxot/dev

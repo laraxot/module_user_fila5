@@ -9,10 +9,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
-<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
-=======
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
@@ -28,7 +25,6 @@ class UserResource extends XotBaseResource
         ];
     }
 
-<<<<<<< HEAD
     /**
      * @return array<int|string, Component>
      */
@@ -38,22 +34,17 @@ class UserResource extends XotBaseResource
         return UserForm::getFormSchema();
     }
 
-=======
->>>>>>> laraxot/dev
     // public static function extendForm(\Closure $callback): void
     // {
     //    static::$extendFormCallback = $callback;
     // }
 
-<<<<<<< HEAD
-=======
     #[\Override]
     public static function getFormSchema(): array
     {
         return UserForm::getFormSchema();
     }
 
->>>>>>> laraxot/dev
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {
     //     static::$enablePasswordUpdates = $condition;

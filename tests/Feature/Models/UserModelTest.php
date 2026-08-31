@@ -18,11 +18,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-<<<<<<< HEAD
     /** @var TestCase $this */
-=======
-    /* @var TestCase $this */
->>>>>>> laraxot/dev
     $this->skipUnlessUsersTableReady();
 });
 
@@ -90,11 +86,7 @@ describe('User Model', function (): void {
     });
 
     test('user can have permissions', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         $this->skipUnlessDirectPermissionSupported();
 
         $user = UserFactory::new()->createOne();
@@ -116,11 +108,7 @@ describe('User Model', function (): void {
     });
 
     test('user can check if has permission', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         $this->skipUnlessDirectPermissionSupported();
 
         $user = UserFactory::new()->createOne();
@@ -254,11 +242,7 @@ describe('User Model', function (): void {
     });
 
     test('user can be deleted', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         $this->skipUnlessDirectPermissionSupported();
 
         $user = UserFactory::new()->createOne();

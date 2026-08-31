@@ -32,11 +32,7 @@ class ViewSocialiteUser extends XotBaseViewRecord
                         ->schema([
                             'user_name' => TextEntry::make('user.name')
                                 ->url(function (mixed $state, ?SocialiteUser $record): ?string {
-<<<<<<< HEAD
                                     if ($record === null) {
-=======
-                                    if (null === $record) {
->>>>>>> laraxot/dev
                                         return null;
                                     }
 
@@ -68,11 +64,7 @@ class ViewSocialiteUser extends XotBaseViewRecord
                                 ->copyable()
                                 ->copyMessage('Email copied'),
                             'avatar' => TextEntry::make('avatar')
-<<<<<<< HEAD
                                 ->url(fn (mixed $state): ?string => is_string($state) && $state !== '' ? $state : null)
-=======
-                                ->url(fn (mixed $state): ?string => is_string($state) && '' !== $state ? $state : null)
->>>>>>> laraxot/dev
                                 ->openUrlInNewTab(),
                         ]),
                 ])->columns(1),

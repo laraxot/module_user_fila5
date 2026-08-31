@@ -14,7 +14,6 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/two-factor-2.md
-<<<<<<< HEAD
 
 
 ## Appendice — contenuto migrato
@@ -26,5 +25,3 @@ canonical: ../../../Themes/docs/shared-components/two_factor.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/two_factor.txt
-=======
->>>>>>> laraxot/dev

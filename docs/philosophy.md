@@ -5,13 +5,11 @@ tags: [philosophy]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "philosophy user - filosofia completa: logica, religione, politica, zen"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -277,11 +275,9 @@ class DoctorScope implements Scope
 ## 🔗 Collegamenti
 
 - [Business Logic Deep Dive](./business-logic-deep-dive.md)
-<<<<<<< HEAD
 - [Architecture README](./architecture/README.md)
-=======
+
 - [Architecture README](./architecture/readme.md)
->>>>>>> laraxot/dev
 - [Xot Module Foundation](../../xot/docs/philosophy-complete.md)
 - [Tenant Module Integration](../../tenant/docs/philosophy.md)
 

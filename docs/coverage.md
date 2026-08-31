@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Coverage del modulo User"
 type: report
 module: User
@@ -70,7 +69,7 @@ Dettaglio in [story 7.3](stories/7.3.test-mai-eseguiti-suffisso-mancante.story.m
 2. Lanciare il comando canonico qui sopra.
 3. Aggiornare questa tabella, riportando **sempre** anche il numero dei saltati: un
    coverage senza il denominatore reale non è una misura.
-=======
+
 title: "Code Coverage: User"
 type: concept
 tags: [coverage]
@@ -114,4 +113,3 @@ This module contains User functionality for the application.
 - 📋 **Module Size**: Medium complexity with multiple components
 
 - 🔍 **Recommendations**: Focus on integration tests for complex workflows
->>>>>>> laraxot/dev

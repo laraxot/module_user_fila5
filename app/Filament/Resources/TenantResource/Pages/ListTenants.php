@@ -32,11 +32,7 @@ class ListTenants extends XotBaseListRecords
             'name' => TextColumn::make('name')->searchable(),
             'slug' => TextColumn::make('slug')
                 ->default(function ($record) {
-<<<<<<< HEAD
                     if ($record === null || ! $record instanceof Tenant) {
-=======
-                    if (null === $record || ! $record instanceof Tenant) {
->>>>>>> laraxot/dev
                         return '';
                     }
                     $record->generateSlug();

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Convenzioni di Namespace nel Modulo User"
 module: user
@@ -8,8 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-=======
->>>>>>> laraxot/dev
 # Convenzioni di Namespace nel Modulo User
 
 ## Principi Fondamentali

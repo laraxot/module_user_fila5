@@ -26,10 +26,5 @@ class TeamMemberAdded
          * The team member being added.
          */
         public UserContract $userContract,
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
 }

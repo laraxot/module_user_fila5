@@ -16,24 +16,13 @@ class DeleteUserAction
     public function __construct(
         private readonly Hasher $hasher,
         private readonly Guard $authGuard,
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> laraxot/dev
 
     /**
      * Elimina l'utente dopo aver verificato la password.
      *
-<<<<<<< HEAD
      * @param  User  $user  L'utente da eliminare
      * @param  string  $confirmPassword  La password di conferma
-=======
-     * @param User   $user            L'utente da eliminare
-     * @param string $confirmPassword La password di conferma
-     *
->>>>>>> laraxot/dev
      * @return array{success: bool, message: string} Risultato dell'operazione
      */
     public function execute(User $user, string $confirmPassword): array

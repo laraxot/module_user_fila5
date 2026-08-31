@@ -46,11 +46,9 @@ related:
 ```
 docs/wiki/
 ├── rules/
-<<<<<<< HEAD
 │   ├── index.md (pointer)
-=======
+
 │   ├── INDEX.md (pointer)
->>>>>>> laraxot/dev
 │   ├── user-model-structure.md
 │   └── user-filament-resource-pattern.md
 ├── concepts/
@@ -77,11 +75,9 @@ metadata:
 **Quando applico:**
 - Post-modifica User code: aggiungi riga a `docs/wiki/log.md`
 - Pattern ricorrente in User: crea `docs/wiki/concepts/...md`
-<<<<<<< HEAD
 - Dubbio mai risolto prima: crea `docs/wiki/how-to/...md` + link da `rules/index.md`
-=======
+
 - Dubbio mai risolto prima: crea `docs/wiki/how-to/...md` + link da `rules/INDEX.md`
->>>>>>> laraxot/dev
 
 ---
 

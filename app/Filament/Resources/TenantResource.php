@@ -11,10 +11,6 @@ namespace Modules\User\Filament\Resources;
 use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
-<<<<<<< HEAD
-=======
-use Filament\Support\Components\Component;
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\User\Filament\Resources\TenantResource\Pages\CreateTenant;
@@ -41,17 +37,10 @@ class TenantResource extends XotBaseResource
     }
 
     /**
-<<<<<<< HEAD
      * @return array<string, mixed>
      */
     // #[\Override]
     public static function getFormSchemaOld(): array
-=======
-     * @return array<string, Component>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'main' => Section::make()
@@ -74,11 +63,7 @@ class TenantResource extends XotBaseResource
                         ->helperText('Inserisci il nome del tenant'),
                     TextInput::make('slug')
                         ->required()
-<<<<<<< HEAD
                         ->disabled(fn ($context) => $context !== 'create')
-=======
-                        ->disabled(fn ($context) => 'create' !== $context)
->>>>>>> laraxot/dev
                         ->unique(
                             table: 'tenants',
                             ignoreRecord: true,
@@ -86,11 +71,7 @@ class TenantResource extends XotBaseResource
                         ->helperText('Lo slug verrà generato automaticamente dal nome'),
                     TextInput::make('domain')
                         ->required()
-<<<<<<< HEAD
                         ->visible(fn ($context) => $context === 'create')
-=======
-                        ->visible(fn ($context) => 'create' === $context)
->>>>>>> laraxot/dev
                         ->unique(
                             table: 'domains',
                             ignoreRecord: true,

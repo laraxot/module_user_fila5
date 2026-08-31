@@ -10,11 +10,7 @@ use PHPUnit\Framework\Assert;
 use Spatie\Permission\PermissionRegistrar;
 use Spatie\Permission\Support\Config as PermissionConfig;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
-=======
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 test('spatie permission registrar uses user module models for teams', function (): void {
     $registrar = app(PermissionRegistrar::class);

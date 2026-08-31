@@ -5,18 +5,11 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 use Filament\Forms\Components\KeyValue;
-<<<<<<< HEAD
-use Filament\Forms\Components\Textarea;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Toggle;
-use Filament\Infolists\Components\TextEntry;
-=======
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
-use Filament\Schemas\Components\Component;
->>>>>>> laraxot/dev
+use Filament\Infolists\Components\TextEntry;
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\CreateSocialProvider;
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\EditSocialProvider;
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\ListSocialProviders;
@@ -33,7 +26,6 @@ class SocialProviderResource extends XotBaseResource
     protected static ?string $model = SocialProvider::class;
 
     /**
-<<<<<<< HEAD
      * @return array<string, mixed>
      */
     // #[\Override]
@@ -43,17 +35,6 @@ class SocialProviderResource extends XotBaseResource
             'env_guide' => TextEntry::make('env_guide')
                 ->hiddenLabel()
                 ->state(__('fields.env_guide.content'))
-=======
-     * @return array<string, Component>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
-    {
-        return [
-            'env_guide' => Placeholder::make('env_guide')
-                ->hiddenLabel()
-                ->content(__('fields.env_guide.content'))
->>>>>>> laraxot/dev
                 ->columnSpanFull(),
             'name' => TextInput::make('name')
                 ->required()

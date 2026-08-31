@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
 use Mockery;
-=======
->>>>>>> laraxot/dev
 use Mockery\Expectation;
 use Mockery\MockInterface;
 use Modules\User\Models\BaseTeam;
@@ -22,11 +19,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('no-user-db');
 
 afterEach(function (): void {
-<<<<<<< HEAD
     Mockery::close();
-=======
-    \Mockery::close();
->>>>>>> laraxot/dev
 });
 
 describe('BaseTeam in-memory behavior', function (): void {
@@ -81,11 +74,7 @@ describe('BaseTeam in-memory behavior', function (): void {
         $team->forceFill(['id' => 4]);
 
         /** @var UserContract&MockInterface $user */
-<<<<<<< HEAD
         $user = Mockery::mock(UserContract::class);
-=======
-        $user = \Mockery::mock(UserContract::class);
->>>>>>> laraxot/dev
         $userExpectation = $user->shouldReceive('hasTeamPermission');
         \assert($userExpectation instanceof Expectation);
         $userExpectation->with($team, 'edit-team')->andReturnTrue();

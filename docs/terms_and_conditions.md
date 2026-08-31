@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "terms and conditions"
 module: user
@@ -8,8 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-=======
->>>>>>> laraxot/dev
 https://github.com/nowendwell/laravel-terms
 https://github.com/nowendwell/laravel-terms
 
@@ -18,7 +15,6 @@ https://github.com/nowendwell/laravel-terms
 https://dev.to/filamentmastery/adding-terms-and-conditions-acceptance-to-filament-registration-2nhc
 
 
-<<<<<<< HEAD
 
 
 ## Appendice — contenuto migrato
@@ -30,5 +26,3 @@ canonical: ../../../Themes/docs/shared-components/terms_and_conditions.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/terms_and_conditions.txt
-=======
->>>>>>> laraxot/dev

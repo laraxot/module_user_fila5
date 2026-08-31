@@ -11,15 +11,9 @@ use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Forms\Components\Select;
-<<<<<<< HEAD
-use Filament\Schemas\Components\Section;
-use Filament\Tables;
-=======
-use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Filament\Tables;
 use Filament\Tables\Table;
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\OauthPersonalAccessClient;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -42,17 +36,10 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     protected static \BackedEnum|string|null $navigationIcon = 'heroicon-o-key';
 
     /**
-<<<<<<< HEAD
      * @return array<string, mixed>
      */
     // #[\Override]
     public static function getFormSchemaOld(): array
-=======
-     * @return array<string, Component>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'oauth_personal_access_client' => Section::make('OAuth Personal Access Client Information')

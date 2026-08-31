@@ -6,20 +6,12 @@ return [
     'navigation' => [
         'name' => 'Team',
         'plural' => 'Teams',
-<<<<<<< HEAD
         'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione dei team e delle loro autorizzazioni'],
-=======
-        'group' => [
-            'name' => 'Gestione Utenti',
-            'description' => 'Gestione dei team e delle loro autorizzazioni',
-        ],
->>>>>>> laraxot/dev
         'label' => 'team',
         'sort' => 18,
         'icon' => 'ui-user-team',
     ],
     'fields' => [
-<<<<<<< HEAD
         'first_name' => ['label' => 'Nome', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'last_name' => ['label' => 'Cognome', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'detach' => ['label' => 'detach', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -48,149 +40,6 @@ return [
     'actions' => [
         'import' => [
             'fields' => ['import_file' => 'Seleziona un file XLS o CSV da caricare'],
-=======
-        'first_name' => [
-            'label' => 'Nome',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'last_name' => [
-            'label' => 'Cognome',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'detach' => [
-            'label' => 'detach',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'create' => [
-            'label' => 'create',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'attach' => [
-            'label' => 'attach',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'view' => [
-            'label' => 'view',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'edit' => [
-            'label' => 'edit',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'updated_at' => [
-            'label' => 'updated_at',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'users_count' => [
-            'label' => 'users_count',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'name' => [
-            'label' => 'name',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'recordId' => [
-            'label' => 'recordId',
-            'description' => 'recordId',
-            'helper_text' => 'recordId',
-            'placeholder' => 'recordId',
-            'tooltip' => '',
-        ],
-        'personal_team' => [
-            'label' => 'personal_team',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'role' => [
-            'label' => 'role',
-            'description' => 'role',
-            'helper_text' => 'role',
-            'placeholder' => 'role',
-            'tooltip' => '',
-        ],
-        'description' => [
-            'description' => 'description',
-            'helper_text' => 'description',
-            'placeholder' => 'description',
-            'label' => '',
-            'tooltip' => '',
-        ],
-        'delete' => [
-            'label' => 'delete',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'layout' => [
-            'label' => 'layout',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-    ],
-    'actions' => [
-        'import' => [
-            'fields' => [
-                'import_file' => 'Seleziona un file XLS o CSV da caricare',
-            ],
->>>>>>> laraxot/dev
         ],
         'export' => [
             'filename_prefix' => 'Aree al',
@@ -201,11 +50,8 @@ return [
         ],
         'create' => [
             'label' => 'create',
-<<<<<<< HEAD
             'icon' => 'create',
             'tooltip' => 'create',
-=======
->>>>>>> laraxot/dev
         ],
         'logout' => [
             'icon' => 'logout',
@@ -277,7 +123,6 @@ return [
             'icon' => 'delete',
             'label' => 'delete',
         ],
-<<<<<<< HEAD
         'resetColumnManager' => [
             'tooltip' => 'resetColumnManager',
             'icon' => 'resetColumnManager',
@@ -313,17 +158,4 @@ return [
     'sections' => [
         'empty' => ['label' => 'empty', 'heading' => 'empty'],
     ],
-=======
-    ],
-    'plural' => [
-        'model' => [
-            'label' => 'team.plural.model',
-        ],
-    ],
-    'model' => [
-        'label' => 'team.model',
-    ],
-    'label' => 'team',
-    'plural_label' => 'Team (Plurale)',
->>>>>>> laraxot/dev
 ];

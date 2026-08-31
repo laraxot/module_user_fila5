@@ -6,11 +6,7 @@ use Carbon\Carbon;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
-=======
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 function authBizSuspiciousLogin(): bool
 {
@@ -18,7 +14,6 @@ function authBizSuspiciousLogin(): bool
 }
 
 /**
-<<<<<<< HEAD
  * @return array{
  *     id: int,
  *     name: string,
@@ -34,9 +29,6 @@ function authBizSuspiciousLogin(): bool
  *     failed_login_attempts: int,
  *     locked_until: null
  * }
-=======
- * @return array<string, mixed>
->>>>>>> laraxot/dev
  */
 function authBizUserData(): array
 {
@@ -58,7 +50,6 @@ function authBizUserData(): array
 }
 
 /**
-<<<<<<< HEAD
  * @return array{
  *     id: int,
  *     name: string,
@@ -67,9 +58,6 @@ function authBizUserData(): array
  *     is_active: bool,
  *     settings: array{timezone: string, language: string, notification_preferences: list<string>}
  * }
-=======
- * @return array<string, mixed>
->>>>>>> laraxot/dev
  */
 function authBizTeamData(): array
 {
@@ -88,7 +76,6 @@ function authBizTeamData(): array
 }
 
 /**
-<<<<<<< HEAD
  * @return array{
  *     id: int,
  *     name: string,
@@ -96,9 +83,6 @@ function authBizTeamData(): array
  *     description: string,
  *     permissions: list<string>
  * }
-=======
- * @return array<string, mixed>
->>>>>>> laraxot/dev
  */
 function authBizRoleData(): array
 {
@@ -141,7 +125,6 @@ function authBizOauthData(): array
 }
 
 /**
-<<<<<<< HEAD
  * @return array{
  *     id: int,
  *     user_id: int,
@@ -152,9 +135,6 @@ function authBizOauthData(): array
  *     last_active: Carbon,
  *     is_trusted: bool
  * }
-=======
- * @return array<string, mixed>
->>>>>>> laraxot/dev
  */
 function authBizDeviceData(): array
 {
@@ -235,27 +215,16 @@ describe('Authentication Business Logic', function (): void {
             Assert::assertNotSame('', (string) $user['email']);
 
             $profileScore = 0;
-<<<<<<< HEAD
             if ($user['name'] !== '') {
                 $profileScore += 25;
             }
             if ($user['email'] !== '') {
-=======
-            if ('' !== $user['name']) {
-                $profileScore += 25;
-            }
-            if ('' !== $user['email']) {
->>>>>>> laraxot/dev
                 $profileScore += 25;
             }
             if ($user['email_verified_at'] instanceof Carbon) {
                 $profileScore += 25;
             }
-<<<<<<< HEAD
             if ($user['profile_photo_path'] !== '') {
-=======
-            if ('' !== $user['profile_photo_path']) {
->>>>>>> laraxot/dev
                 $profileScore += 25;
             }
 
@@ -432,11 +401,7 @@ describe('Authentication Business Logic', function (): void {
         it('validates push notification setup', function (): void {
             $device = authBizDeviceData();
 
-<<<<<<< HEAD
             if ($device['device_type'] === 'mobile') {
-=======
-            if ('mobile' === $device['device_type']) {
->>>>>>> laraxot/dev
                 $pushToken = (string) $device['push_token'];
                 Assert::assertGreaterThan(20, strlen($pushToken));
             }

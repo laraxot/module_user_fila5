@@ -5,13 +5,11 @@ tags: [index]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "index user module documentation"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -92,21 +90,19 @@ This document serves as the central index for the User module, providing guidanc
 ### Folio e Blade
 - [Documentazione Blade](./blade/index.md) - Documentazione sui template Blade
 - [Componenti](./components/index.md) - Documentazione sui componenti
-<<<<<<< HEAD
 - [Index](./Models/index.md) - Indice della documentazione sui modelli
 - [Documentazione Traits](./traits/index.md) - Documentazione sui trait utilizzati
 
 ### Folio e Blade
 - [Documentazione Blade](./blade/index.md) - Documentazione sui template Blade
 - [Componenti](./components/index.md) - Documentazione sui componenti
-=======
+
 - [Index](./Models/INDEX.md) - Indice della documentazione sui modelli
 - [Documentazione Traits](./traits/INDEX.md) - Documentazione sui trait utilizzati
 
 ### Folio e Blade
 - [Documentazione Blade](./blade/INDEX.md) - Documentazione sui template Blade
 - [Componenti](./components/INDEX.md) - Documentazione sui componenti
->>>>>>> laraxot/dev
 
 ## Roadmap e Sviluppo Futuro
 - [Roadmap](./roadmap.md) - Piano di sviluppo futuro del modulo User
@@ -129,7 +125,6 @@ Ultimo aggiornamento: 14 Maggio 2025
 ## Modelli e Database
 
 - [Model Inheritance Analysis](./model-inheritance-analysis-4.md) — Analisi completa della gerarchia di ereditarietà dei modelli
-<<<<<<< HEAD
 - [Model Inheritance Fixes](./model-inheritance-fixes-4.md) — Riepilogo delle correzioni applicate ai modelli (15 Ottobre 2025)
 
 ---
@@ -3556,6 +3551,3 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-widget-property-types.md](./wiki/troubleshooting/phpstan-widget-property-types.md)
 - [spatie-permission-team-model-not-configured.md](./wiki/troubleshooting/spatie-permission-team-model-not-configured.md)
 
-=======
-- [Model Inheritance Fixes](./model-inheritance-fixes-4.md) — Riepilogo delle correzioni applicate ai modelli (15 Ottobre 2025)
->>>>>>> laraxot/dev

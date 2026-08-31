@@ -44,11 +44,7 @@
       "Modules\\User\\Tests\\": "tests/"
     },
     "files": [
-<<<<<<< HEAD
-      
-=======
       "tests/Support/helpers.php"
->>>>>>> laraxot/dev
     ]
   },
   "require": {

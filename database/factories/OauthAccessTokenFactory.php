@@ -88,11 +88,7 @@ class OauthAccessTokenFactory extends Factory
     /**
      * Create token with specific scopes.
      *
-<<<<<<< HEAD
      * @param  list<string>  $scopes
-=======
-     * @param list<string> $scopes
->>>>>>> laraxot/dev
      */
     public function withScopes(array $scopes): static
     {

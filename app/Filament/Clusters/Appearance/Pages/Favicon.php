@@ -62,17 +62,8 @@ class Favicon extends XotBasePage
     {
         try {
             $data = $this->form->getState();
-<<<<<<< HEAD
             // $this->handleRecordUpdate($this->getUser(), $data);
         } catch (Halt $exception) {
-=======
-            dddx($data);
-
-            // $this->handleRecordUpdate($this->getUser(), $data);
-        } catch (Halt $exception) {
-            dddx($exception->getMessage());
-
->>>>>>> laraxot/dev
             return;
         }
     }
@@ -96,11 +87,7 @@ class Favicon extends XotBasePage
     }
 
     /**
-<<<<<<< HEAD
      * @param  array<string, mixed>  $data
-=======
-     * @param array<string, mixed> $data
->>>>>>> laraxot/dev
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {

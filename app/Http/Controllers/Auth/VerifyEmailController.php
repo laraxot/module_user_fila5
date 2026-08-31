@@ -21,21 +21,13 @@ class VerifyEmailController extends Controller
     public function __invoke(EmailVerificationRequest $request): RedirectResponse
     {
         $user = Auth::user();
-<<<<<<< HEAD
         if ($user === null) {
-=======
-        if (null === $user) {
->>>>>>> laraxot/dev
             return redirect()->route('filament.user.auth.login');
         }
 
         // Ottieni il valore hash in modo sicuro
         $routeHash = $request->route('hash');
-<<<<<<< HEAD
         if ($routeHash === null) {
-=======
-        if (null === $routeHash) {
->>>>>>> laraxot/dev
             throw new \InvalidArgumentException('Hash di verifica mancante');
         }
 

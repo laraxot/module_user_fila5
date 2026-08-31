@@ -34,11 +34,9 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/User
 - `membershipTeams()` resta API concreta di `BaseUser`/`HasTeams`: non inserirla in `Modules\Xot\Contracts\UserContract`; nei command/service che partono dal contratto usare `Assert::isInstanceOf($user, BaseUser::class)` prima della chiamata.
 - Assertion: `PHPUnit\Framework\Assert::assert*` nelle closure (no `expect()->…` se segnalato `method.internalClass`).
 - Eccezioni attese: `try/catch` + `Assert::fail()` / `Assert::assertSame()` sul messaggio (no catena `test()->throws()`).
-<<<<<<< HEAD
 - Skip senza `$this` in closure: helper globali in `tests/Support/helpers-core.php` e `tests/Support/helpers-extended.php`:
-=======
+
 - Skip senza `$this` in closure: helper globali in `tests/Support/helpers.php`:
->>>>>>> laraxot/dev
   - `skipUserTest(string $message): never` → `Assert::markTestSkipped()`
   - `skipLegacyRedirectPersistenceCheck(): void` — Passport Create*ClientAction
 - Seeders: `$this->seed(RolesSeeder::class)` con `@var TestCase $this` quando serve DB assertion; evitare `$this->app` protected.

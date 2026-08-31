@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
 use function Safe\exec;
@@ -15,11 +16,10 @@ uses(TestCase::class);
 function getUserMigrationFiles(): array
 {
     $basePath = dirname(__DIR__, 4).'/database/migrations';
-    $files = glob($basePath.'/*.php');
     $result = [];
 
-    foreach ($files as $file) {
-        $result[] = (string) $file;
+    foreach (glob($basePath.'/*.php') as $file) {
+        $result[] = app(SafeStringCastAction::class)->execute($file);
     }
 
     sort($result);

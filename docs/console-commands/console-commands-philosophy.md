@@ -5,7 +5,6 @@ tags: [console, commands, philosophy]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "console-commands-philosophy filosofia dei comandi console - modulo user"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
@@ -14,13 +13,12 @@ related:
   - "./console-commands-philosophy-1-1.md"
   - "./console-commands-philosophy-1.md"
   - "./console-commands-philosophy-2.md"
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./assign-module-command.md"
   - "./change-password-command.md"
->>>>>>> laraxot/dev
   - "./console-commands.md"
   - "./readme.md"
 ---
@@ -82,16 +80,11 @@ public function handle(): int
             $this->error('Email non fornita.');
             return Command::FAILURE;
         }
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $this->error('Email non valida: ' . $email);
             return Command::FAILURE;
         }
-<<<<<<< HEAD
 
         // Logica principale
         $result = $this->processCommand();
@@ -99,7 +92,7 @@ public function handle(): int
         $this->info('Operazione completata con successo!');
         return Command::SUCCESS;
 
-=======
+
         
         // Logica principale
         $result = $this->processCommand();
@@ -107,7 +100,6 @@ public function handle(): int
         $this->info('Operazione completata con successo!');
         return Command::SUCCESS;
         
->>>>>>> laraxot/dev
     } catch (\Exception $e) {
         $this->error('Errore durante l\'esecuzione: ' . $e->getMessage());
         return Command::FAILURE;
@@ -134,11 +126,7 @@ class ChangePasswordCommand extends Command
 {
     // Metodo principale - coordinamento
     public function handle(): int { /* ... */ }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     // Metodi privati - responsabilità specifiche
     private function getUserEmail(): string { /* ... */ }
     private function getUserByEmail(string $email): ?User { /* ... */ }
@@ -244,11 +232,7 @@ $email = text('Inserisci l\'email dell\'utente:')
 
 // Con validazione in tempo reale
 $email = text('Inserisci l\'email dell\'utente:')
-<<<<<<< HEAD
     ->validate(fn (string $value): string|bool =>
-=======
-    ->validate(fn (string $value): string|bool => 
->>>>>>> laraxot/dev
         filter_var($value, FILTER_VALIDATE_EMAIL) ? true : 'Email non valida'
     );
 
@@ -377,20 +361,12 @@ public function it_changes_user_password_successfully(): void
 {
     // Arrange
     $user = User::factory()->create();
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     // Act
     $result = $this->artisan('user:change-password', [
         '--email' => $user->email
     ]);
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     // Assert
     $result->assertExitCode(Command::SUCCESS);
     $this->assertDatabaseHas('users', [
@@ -412,11 +388,7 @@ public function it_handles_nonexistent_user_gracefully(): void
     $result = $this->artisan('user:change-password', [
         '--email' => 'nonexistent@example.com'
     ]);
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     // Assert
     $result->assertExitCode(Command::FAILURE);
     $result->expectsOutput('Utente con email \'nonexistent@example.com\' non trovato.');
@@ -433,7 +405,6 @@ public function it_handles_large_datasets_efficiently(): void
 {
     // Arrange
     User::factory()->count(1000)->create();
-<<<<<<< HEAD
 
     // Act & Assert
     $startTime = microtime(true);
@@ -443,7 +414,7 @@ public function it_handles_large_datasets_efficiently(): void
     $endTime = microtime(true);
     $executionTime = $endTime - $startTime;
 
-=======
+
     
     // Act & Assert
     $startTime = microtime(true);
@@ -453,7 +424,6 @@ public function it_handles_large_datasets_efficiently(): void
     $endTime = microtime(true);
     $executionTime = $endTime - $startTime;
     
->>>>>>> laraxot/dev
     $this->assertLessThan(5.0, $executionTime, 'Comando troppo lento');
     $result->assertExitCode(Command::SUCCESS);
 }
@@ -467,11 +437,7 @@ Mantenere **versioning chiaro** per ogni comando:
 ```php
 /**
  * ChangePasswordCommand
-<<<<<<< HEAD
  *
-=======
- * 
->>>>>>> laraxot/dev
  * @version 2.0
  * @since 2025-01-27
  * @author Laraxot Team
@@ -516,11 +482,9 @@ private function getPasswordLegacy(): string
 ```
 
 ## Collegamenti
-<<<<<<< HEAD
 - [README Comandi Console](README.md)
-=======
+
 - [README Comandi Console](readme.md)
->>>>>>> laraxot/dev
 - [ChangePasswordCommand](change-password-command.md)
 - [AssignModuleCommand](assign-module-command.md)
 - [Testing Strategy](../testing/console-commands-testing.md)
@@ -536,7 +500,6 @@ private function getPasswordLegacy(): string
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
 
-<<<<<<< HEAD
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -993,6 +956,4 @@ private function getPasswordLegacy(): string
 - ✅ **Security Framework**: Validazione, audit trail e controlli accesso
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
-=======
->>>>>>> laraxot/dev
 

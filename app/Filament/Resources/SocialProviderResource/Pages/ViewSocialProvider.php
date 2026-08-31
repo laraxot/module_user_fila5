@@ -8,10 +8,7 @@ use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Modules\User\Filament\Resources\SocialProviderResource;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 use function Safe\json_encode;
@@ -35,22 +32,14 @@ class ViewSocialProvider extends XotBaseViewRecord
                         return json_encode($state);
                     }
 
-<<<<<<< HEAD
                     return SafeStringCastAction::cast($state);
-=======
-                    return is_string($state) ? $state : ((string) $state);
->>>>>>> laraxot/dev
                 }),
                 'parameters' => TextEntry::make('parameters')->formatStateUsing(function ($state): string {
                     if (is_array($state)) {
                         return json_encode($state);
                     }
 
-<<<<<<< HEAD
                     return SafeStringCastAction::cast($state);
-=======
-                    return is_string($state) ? $state : ((string) $state);
->>>>>>> laraxot/dev
                 }),
                 'stateless' => TextEntry::make('stateless')->badge()->color(fn (bool $state): string => $state ? 'success' : 'danger'),
                 'active' => TextEntry::make('active')->badge()->color(fn (bool $state): string => $state ? 'success' : 'danger'),

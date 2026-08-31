@@ -5,13 +5,11 @@ tags: [factory, creation, status]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "factory-creation-status factory creation status - user module"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -122,11 +120,9 @@ Questo errore è **GRAVISSIMO** perché:
 ## COLLEGAMENTI
 
 - [Factory Audit Complete Analysis](../../../../docs/project/factory-audit-complete-analysis.md)
-<<<<<<< HEAD
 - [User Module README](./README.md)
-=======
+
 - [User Module README](./readme.md)
->>>>>>> laraxot/dev
 - [Factory PHPStan Fixes](./phpstan/factory-fixes.md)
 - [Database Documentation](./database/readme.md)
 

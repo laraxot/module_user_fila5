@@ -26,7 +26,6 @@ class ResolveFilamentUserConfigurationAction
      */
     public function execute(): array
     {
-<<<<<<< HEAD
         $filamentUserConfig = FilamentShieldData::make()->filament_user;
 
         return [
@@ -34,24 +33,4 @@ class ResolveFilamentUserConfigurationAction
             'name' => $filamentUserConfig->name,
         ];
     }
-=======
-        $shieldData = FilamentShieldData::make();
-        $filamentUserConfig = $shieldData->filament_user;
-
-        return [
-            'enabled' => $this->toBoolean($filamentUserConfig->enabled ?? false),
-            'name' => $this->toString($filamentUserConfig->name ?? 'Filament User'),
-        ];
-    }
-
-    private function toBoolean(mixed $value): bool
-    {
-        return is_bool($value) ? $value : false;
-    }
-
-    private function toString(mixed $value): string
-    {
-        return is_string($value) ? $value : '';
-    }
->>>>>>> laraxot/dev
 }

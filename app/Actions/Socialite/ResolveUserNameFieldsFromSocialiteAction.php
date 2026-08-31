@@ -14,15 +14,9 @@ final class ResolveUserNameFieldsFromSocialiteAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
     private const string NAME_SEARCH = 'before';
 
     private const string SURNAME_SEARCH = 'after';
-=======
-    private const NAME_SEARCH = 'before';
-
-    private const SURNAME_SEARCH = 'after';
->>>>>>> laraxot/dev
 
     public function execute(User $oauthUser): SocialiteNameFieldsData
     {
@@ -63,11 +57,7 @@ final class ResolveUserNameFieldsFromSocialiteAction
     private function determineNameField(User $idpUser, string $searchMethod): Stringable
     {
         $name = $idpUser->getName();
-<<<<<<< HEAD
         if (is_string($name) && $name !== '') {
-=======
-        if (is_string($name) && '' !== $name) {
->>>>>>> laraxot/dev
             $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($name, $searchMethod);
             if ($nameSection->isNotEmpty()) {
                 return $nameSection;
@@ -75,11 +65,7 @@ final class ResolveUserNameFieldsFromSocialiteAction
         }
 
         $rawName = $this->extractRawNameField($idpUser);
-<<<<<<< HEAD
         if ($rawName !== '') {
-=======
-        if ('' !== $rawName) {
->>>>>>> laraxot/dev
             $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($rawName, $searchMethod);
             if ($nameSection->isNotEmpty() && ! filter_var($nameSection->toString(), FILTER_VALIDATE_EMAIL)) {
                 return $nameSection;
@@ -94,31 +80,19 @@ final class ResolveUserNameFieldsFromSocialiteAction
         $raw = $this->getRawUserData($idpUser);
         $nameField = $raw['name'] ?? null;
 
-<<<<<<< HEAD
         return is_string($nameField) && $nameField !== '' ? $nameField : '';
-=======
-        return is_string($nameField) && '' !== $nameField ? $nameField : '';
->>>>>>> laraxot/dev
     }
 
     private function analyzeEmailForNameSection(User $idpUser, string $searchMethod): Stringable
     {
         $email = $idpUser->getEmail();
-<<<<<<< HEAD
         if (! is_string($email) || $email === '') {
-=======
-        if (! is_string($email) || '' === $email) {
->>>>>>> laraxot/dev
             return Str::of('');
         }
 
         $emailPart = Str::of($email)->trim()->before('@');
 
-<<<<<<< HEAD
         if ($searchMethod === self::NAME_SEARCH) {
-=======
-        if (self::NAME_SEARCH === $searchMethod) {
->>>>>>> laraxot/dev
             return $emailPart->before('.')->trim()->title();
         }
 
@@ -145,12 +119,7 @@ final class ResolveUserNameFieldsFromSocialiteAction
     }
 
     /**
-<<<<<<< HEAD
      * @param  \ReflectionClass<User>  $reflection
-=======
-     * @param \ReflectionClass<User> $reflection
-     *
->>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     private function rawDataFromReflectionMethod(\ReflectionClass $reflection, User $idpUser, string $method): array
@@ -163,12 +132,7 @@ final class ResolveUserNameFieldsFromSocialiteAction
     }
 
     /**
-<<<<<<< HEAD
      * @param  \ReflectionClass<User>  $reflection
-=======
-     * @param \ReflectionClass<User> $reflection
-     *
->>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     private function rawDataFromReflectionProperty(\ReflectionClass $reflection, User $idpUser, string $property): array
@@ -181,12 +145,7 @@ final class ResolveUserNameFieldsFromSocialiteAction
     }
 
     /**
-<<<<<<< HEAD
      * @param  array<int|string, mixed>  $data
-=======
-     * @param array<int|string, mixed> $data
-     *
->>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     private function normalizeRawUserArray(array $data): array
@@ -201,11 +160,7 @@ final class ResolveUserNameFieldsFromSocialiteAction
 
     private function resolveNameFieldByNameAttributeAnalysis(string $nameField, string $searchMethod): Stringable
     {
-<<<<<<< HEAD
         if ($nameField === '') {
-=======
-        if ('' === $nameField) {
->>>>>>> laraxot/dev
             return Str::of('');
         }
 

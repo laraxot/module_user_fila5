@@ -5,23 +5,13 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
-<<<<<<< HEAD
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
-=======
->>>>>>> laraxot/dev
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
-<<<<<<< HEAD
-=======
-use Modules\User\Models\Role;
-use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
-
->>>>>>> laraxot/dev
 class AssignRoleCommand extends Command
 {
     /**

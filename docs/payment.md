@@ -14,7 +14,6 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/payment.md
-<<<<<<< HEAD
 
 
 ## Appendice — contenuto migrato
@@ -26,5 +25,3 @@ canonical: ../../../Themes/docs/shared-components/payment.txt
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/payment.txt
-=======
->>>>>>> laraxot/dev

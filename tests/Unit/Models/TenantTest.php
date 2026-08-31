@@ -9,19 +9,11 @@ use Modules\User\Models\Tenant;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('user-db');
 
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
     /** @var TestCase $this */
-=======
-uses(TestCase::class);
-
-beforeEach(function (): void {
-    /* @var \Modules\User\Tests\TestCase $this */
-    /* @var TestCase $this */
->>>>>>> laraxot/dev
     $this->skipUnlessUserTable('tenants');
 });
 
@@ -39,11 +31,7 @@ describe('Tenant', function (): void {
     });
 
     test('can create tenant with all fields', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         $this->skipUnlessTenantColumn('settings');
         $this->skipUnlessTenantColumn('trial_ends_at');
 
@@ -72,20 +60,12 @@ describe('Tenant', function (): void {
     });
 
     test('tenant has soft deletes', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         $this->skipTest('Tenant model does not use SoftDeletes.');
     });
 
     test('can restore soft deleted tenant', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         $this->skipTest('Tenant restore/withTrashed not supported on User Tenant model.');
     });
 
@@ -242,11 +222,7 @@ describe('Tenant', function (): void {
     });
 
     test('can find tenants by trial status', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         $this->skipUnlessTenantColumn('trial_ends_at');
 
         $marker = 'trial-status-'.uniqid();
@@ -273,11 +249,7 @@ describe('Tenant', function (): void {
     });
 
     test('can find tenants by settings value', function (): void {
-<<<<<<< HEAD
         /** @var TestCase $this */
-=======
-        /* @var TestCase $this */
->>>>>>> laraxot/dev
         $this->skipUnlessTenantColumn('settings');
 
         $marker = 'settings-theme-'.uniqid();

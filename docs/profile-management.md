@@ -5,13 +5,11 @@ tags: [profile, management]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "profile-management profile management in laravel modules"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -94,11 +92,9 @@ This document outlines the best practices for managing user profiles within a La
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 - [Routing Best Practices](./routing-best-practices-2.md)
 - [Session Management](./session-management-2.md)
-<<<<<<< HEAD
 - [User Module Index](./index.md)
-=======
+
 - [User Module Index](./INDEX.md)
->>>>>>> laraxot/dev
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 - [Routing Best Practices](./routing-best-practices.md)

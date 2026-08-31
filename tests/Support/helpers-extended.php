@@ -23,10 +23,7 @@ use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-=======
->>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 
@@ -35,11 +32,7 @@ use function Safe\json_decode;
 use function Safe\json_encode;
 
 /**
-<<<<<<< HEAD
  * @param  array<string, mixed>  $pivot
-=======
- * @param array<string, mixed> $pivot
->>>>>>> laraxot/dev
  */
 function attachTeamMember(Team $team, User $user, array $pivot = []): void
 {
@@ -95,11 +88,7 @@ function teamUsesSoftDeletes(): bool
 }
 
 /**
-<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
  */
 function createProfile(array $attributes = []): Profile
 {
@@ -128,11 +117,7 @@ function setupFilamentAdminPanel(): void
 }
 
 /**
-<<<<<<< HEAD
  * @param  array<mixed>  $attributes
-=======
- * @param array<mixed> $attributes
->>>>>>> laraxot/dev
  */
 function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contracts\User
 {
@@ -161,12 +146,7 @@ if (! function_exists('typedMock')) {
     /**
      * @template T of object
      *
-<<<<<<< HEAD
      * @param  class-string<T>  $class
-=======
-     * @param class-string<T> $class
-     *
->>>>>>> laraxot/dev
      * @return T&MockInterface
      */
     function typedMock(string $class): MockInterface
@@ -181,14 +161,8 @@ if (! function_exists('typedMock')) {
 /**
  * @template T of object
  *
-<<<<<<< HEAD
  * @param  class-string<T>  $class
  * @param  callable(T&MockInterface): void  $configure
-=======
- * @param class-string<T>                 $class
- * @param callable(T&MockInterface): void $configure
- *
->>>>>>> laraxot/dev
  * @return T&MockInterface
  */
 function configureMock(string $class, callable $configure): MockInterface
@@ -264,11 +238,7 @@ function userResourceSectionComponents(TestCase $testCase, Component $section): 
 }
 
 /**
-<<<<<<< HEAD
  * @param  array<int, Component|Action|ActionGroup>  $components
-=======
- * @param array<int, Component|Action|ActionGroup> $components
->>>>>>> laraxot/dev
  */
 function userResourceFindComponentByName(array $components, string $name): ?Component
 {
@@ -286,11 +256,7 @@ function userResourceFindComponentByName(array $components, string $name): ?Comp
 }
 
 /**
-<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
  */
 function stubUser(array $attributes = []): User
 {
@@ -298,11 +264,7 @@ function stubUser(array $attributes = []): User
 }
 
 /**
-<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
  */
 function hasTeamsCurrentCreateUser(array $attributes = []): User
 {
@@ -310,11 +272,7 @@ function hasTeamsCurrentCreateUser(array $attributes = []): User
 }
 
 /**
-<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
  */
 function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 {
@@ -325,22 +283,13 @@ function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 }
 
 /**
-<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
- *
->>>>>>> laraxot/dev
  * @return array{secret: string, qr_code: string, recovery_codes: array<int, string>}
  */
 function enableTwoFactorForUser(User $user, Google2FA $google2fa, array $attributes = []): array
 {
     $secret = (string) $google2fa->generateSecretKey();
-<<<<<<< HEAD
     $qrCode = $google2fa->getQRCodeUrl(SafeStringCastAction::cast(config('app.name')), $user->email, $secret);
-=======
-    $qrCode = $google2fa->getQRCodeUrl((string) config('app.name'), $user->email, $secret);
->>>>>>> laraxot/dev
 
     $recoveryCodes = array_map(
         static fn (): string => substr(str_shuffle('0123456789ABCDEF'), 0, 10).'-'.substr(str_shuffle('0123456789ABCDEF'), 0, 10),
@@ -376,15 +325,9 @@ function verifyTwoFactorCode(User $user, Google2FA $google2fa, string $code): bo
         return false;
     }
 
-<<<<<<< HEAD
     $secret = SafeStringCastAction::cast(decrypt($user->two_factor_secret));
 
     return $google2fa->verifyKey($secret, $code) !== false;
-=======
-    $secret = (string) decrypt($user->two_factor_secret);
-
-    return false !== $google2fa->verifyKey($secret, $code);
->>>>>>> laraxot/dev
 }
 
 function disableTwoFactorForUser(User $user): void
@@ -401,11 +344,7 @@ function verifyTwoFactorRecoveryCode(User $user, string $code): bool
         return false;
     }
 
-<<<<<<< HEAD
     $codes = json_decode(SafeStringCastAction::cast(decrypt($user->two_factor_recovery_codes)), true);
-=======
-    $codes = json_decode((string) decrypt($user->two_factor_recovery_codes), true);
->>>>>>> laraxot/dev
     if (! is_array($codes)) {
         return false;
     }
@@ -426,11 +365,7 @@ function readStoredRecoveryCodes(User $user): array
         return [];
     }
 
-<<<<<<< HEAD
     $codes = json_decode(SafeStringCastAction::cast(decrypt($user->two_factor_recovery_codes)), true);
-=======
-    $codes = json_decode((string) decrypt($user->two_factor_recovery_codes), true);
->>>>>>> laraxot/dev
     if (! is_array($codes)) {
         return [];
     }

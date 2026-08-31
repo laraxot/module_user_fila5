@@ -26,11 +26,9 @@ Indice operativo del wiki User.
 ## AI / second brain (root)
 
 - [ai-harness-user-discipline](./concepts/ai-harness-user-discipline.md)
-<<<<<<< HEAD
 - [hackernoon-ai-coding-tips-<nome progetto>-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md) — tips 001–022
-=======
+
 - [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) — tips 001–022
->>>>>>> laraxot/dev
 - [bmad/architecture](../../../../docs/wiki/bmad/architecture.md) — pilastri schema/doc (ADR)
 - [architecture-module-directory-structure](../../../../docs/wiki/bmad/architecture-module-directory-structure.md) — PHP solo in `app/`
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) — stub → canon Xot
@@ -53,11 +51,9 @@ Indice operativo del wiki User.
 
 - [forbidden-folders-rule](../../../../docs/wiki/concepts/forbidden-folders.md): Vincoli strutturali strict.
 - [llm-wiki-standard](../../../../docs/project/karpathy-llm-wiki-adoption.md): Mapping repository e ciclo di vita conoscenza.
-<<<<<<< HEAD
 - [hackernoon-ai-coding-tips-<nome progetto>-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md): Mappa tips 001-022.
-=======
+
 - [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md): Mappa tips 001-022.
->>>>>>> laraxot/dev
 - [laravel-socialite](../../../../docs/wiki/concepts/laravel-socialite.md): OAuth social authentication.
 - [laravel-permission](../../../../docs/wiki/concepts/laravel-permission.md): RBAC Spatie Laravel Permission.
 
@@ -116,7 +112,6 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 
 ## Bad Practices
 
-<<<<<<< HEAD
 - NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/<nome repitory>/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
 - NON usare `dehydrated(false)` nei trait - blocca salvataggio (vedi Geo CoordinatePicker fix)
 - NON modificare `laravel/config/permission.php` → `table_names` per fix 1146 (vedi [bugfix-permission-table-names-singular](../bugfix-permission-table-names-singular.md))
@@ -252,9 +247,8 @@ Gestione utenti, profili, ruoli, permessi e autenticazione social (Socialite).
 ## Bad Practices
 
 - NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/base_ptv_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
-=======
+
 - NON creare Service classes - usare Actions (vedi [actions-over-services-governance](https://github.com/laraxot/base_fixcity_fila5/blob/main/.opencode/skills/actions-over-services-governance/SKILL.md))
->>>>>>> laraxot/dev
 - NON usare `dehydrated(false)` nei trait - blocca salvataggio (vedi Geo CoordinatePicker fix)
 - NON modificare `laravel/config/permission.php` → `table_names` per fix 1146 (vedi [bugfix-permission-table-names-singular](../bugfix-permission-table-names-singular.md))
 - NON hardcodare nomi tabella pivot su modelli (`$table`) — usare `getTable()` da config

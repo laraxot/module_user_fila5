@@ -5,13 +5,11 @@ tags: [coverage, full]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "coverage-full coverage full"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-=======
+
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -902,7 +900,6 @@ Failed asserting that 500 is identical to 200.
 
 The following exception occurred during the last request:
 
-<<<<<<< HEAD
 Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: /var/www/_bases/<nome repository>/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
 Stack trace:
 #0 /var/www/_bases/<nome repository>/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php(384): Illuminate\Foundation\Vite->manifest()
@@ -1259,7 +1256,7 @@ Stack trace:
 #104 /var/www/_bases/<nome repository>/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #105 /var/www/_bases/<nome repository>/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #106 /var/www/_bases/<nome repository>/laravel/vendor/bin/pest(119): include('...')
-=======
+
 Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
 Stack trace:
 #0 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php(384): Illuminate\Foundation\Vite->manifest()
@@ -1616,16 +1613,13 @@ Stack trace:
 #104 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #105 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #106 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
->>>>>>> laraxot/dev
 #107 {main}
 
 ----------------------------------------------------------------------------------
 
-<<<<<<< HEAD
 Vite manifest not found at: /var/www/_bases/<nome repository>/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
-=======
+
 Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
->>>>>>> laraxot/dev
 
   at Modules/User/tests/Feature/AuthComponentsTest.php:31
      27▕     test('login page loads correctly', function (): void {
@@ -1645,7 +1639,6 @@ Failed asserting that 500 is identical to 200.
 
 The following exception occurred during the last request:
 
-<<<<<<< HEAD
 Illuminate\Contracts\Container\BindingResolutionException: Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget in /var/www/_bases/<nome repository>/laravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:198
 Stack trace:
 #0 /var/www/_bases/<nome repository>/laravel/vendor/livewire/livewire/src/ImplicitlyBoundMethod.php(21): Illuminate\Container\BoundMethod::addDependencyForCallParameter()
@@ -1887,7 +1880,7 @@ Stack trace:
 #106 /var/www/_bases/<nome repository>/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #107 /var/www/_bases/<nome repository>/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #108 /var/www/_bases/<nome repository>/laravel/vendor/bin/pest(119): include('...')
-=======
+
 Illuminate\Contracts\Container\BindingResolutionException: Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:198
 Stack trace:
 #0 /var/www/_bases/base_app_fila5_mono/laravel/vendor/livewire/livewire/src/ImplicitlyBoundMethod.php(21): Illuminate\Container\BoundMethod::addDependencyForCallParameter()
@@ -2129,16 +2122,13 @@ Stack trace:
 #106 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #107 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #108 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
->>>>>>> laraxot/dev
 #109 {main}
 
 ----------------------------------------------------------------------------------
 
-<<<<<<< HEAD
 Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget (View: /var/www/_bases/<nome repository>/laravel/Modules/User/resources/views/pages/auth/register.blade.php)
-=======
+
 Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/resources/views/pages/auth/register.blade.php)
->>>>>>> laraxot/dev
 
   at Modules/User/tests/Feature/AuthComponentsTest.php:38
      34▕     test('register page loads correctly', function (): void {
@@ -2193,7 +2183,6 @@ Failed asserting that 500 is identical to 200.
 
 The following exception occurred during the last request:
 
-<<<<<<< HEAD
 Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: /var/www/_bases/<nome repository>/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
 Stack trace:
 #0 /var/www/_bases/<nome repository>/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php(384): Illuminate\Foundation\Vite->manifest()
@@ -2550,7 +2539,7 @@ Stack trace:
 #104 /var/www/_bases/<nome repository>/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #105 /var/www/_bases/<nome repository>/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #106 /var/www/_bases/<nome repository>/laravel/vendor/bin/pest(119): include('...')
-=======
+
 Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
 Stack trace:
 #0 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php(384): Illuminate\Foundation\Vite->manifest()
@@ -2907,16 +2896,13 @@ Stack trace:
 #104 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #105 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #106 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
->>>>>>> laraxot/dev
 #107 {main}
 
 ----------------------------------------------------------------------------------
 
-<<<<<<< HEAD
 Vite manifest not found at: /var/www/_bases/<nome repository>/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
-=======
+
 Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
->>>>>>> laraxot/dev
 
   at Modules/User/tests/Feature/AuthComponentsTest.php:69
      65▕         // Visit login page and ensure all reorganized components render
@@ -2936,7 +2922,6 @@ Failed asserting that 500 is identical to 200.
 
 The following exception occurred during the last request:
 
-<<<<<<< HEAD
 InvalidArgumentException: Database connection [<nome progetto>] not configured. in /var/www/_bases/<nome repository>/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php:221
 Stack trace:
 #0 /var/www/_bases/<nome repository>/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(187): Illuminate\Database\DatabaseManager->configuration()
@@ -3041,7 +3026,7 @@ Stack trace:
 #99 /var/www/_bases/<nome repository>/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #100 /var/www/_bases/<nome repository>/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #101 /var/www/_bases/<nome repository>/laravel/vendor/bin/pest(119): include('...')
-=======
+
 InvalidArgumentException: Database connection [<nome progetto>] not configured. in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php:221
 Stack trace:
 #0 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(187): Illuminate\Database\DatabaseManager->configuration()
@@ -3146,7 +3131,6 @@ Stack trace:
 #99 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #100 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #101 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
->>>>>>> laraxot/dev
 #102 {main}
 
 ----------------------------------------------------------------------------------
@@ -3171,7 +3155,6 @@ Failed asserting that 500 is identical to 200.
 
 The following exception occurred during the last request:
 
-<<<<<<< HEAD
 InvalidArgumentException: Database connection [<nome progetto>] not configured. in /var/www/_bases/<nome repository>/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php:221
 Stack trace:
 #0 /var/www/_bases/<nome repository>/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(187): Illuminate\Database\DatabaseManager->configuration()
@@ -3278,7 +3261,7 @@ Stack trace:
 #101 /var/www/_bases/<nome repository>/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #102 /var/www/_bases/<nome repository>/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #103 /var/www/_bases/<nome repository>/laravel/vendor/bin/pest(119): include('...')
-=======
+
 InvalidArgumentException: Database connection [<nome progetto>] not configured. in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php:221
 Stack trace:
 #0 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(187): Illuminate\Database\DatabaseManager->configuration()
@@ -3385,7 +3368,6 @@ Stack trace:
 #101 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #102 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #103 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
->>>>>>> laraxot/dev
 #104 {main}
 
 ----------------------------------------------------------------------------------
@@ -4394,11 +4376,9 @@ Database connection [ptvx] not configured.
 
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\PasswordDataLabelsTest…   ViewException   
-<<<<<<< HEAD
   Route [social.redirect] not defined. (View: /var/www/_bases/<nome repository>/laravel/Modules/User/resources/views/livewire/auth/login.blade.php)
-=======
+
   Route [social.redirect] not defined. (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/resources/views/livewire/auth/login.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/resources/views/livewire/auth/login.blade.php)
->>>>>>> laraxot/dev
 
   at vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:526
     522▕             ! is_null($url = call_user_func($this->missingNamedRouteResolver, $name, $parameters, $absolute))) {
@@ -6794,11 +6774,9 @@ Database connection [ptvx] not configured.
 
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\HasTeamsTraitTest > it correct…  TypeError   
-<<<<<<< HEAD
   Modules\User\Models\BaseUser::switchTeam(): Argument #1 ($team) must be of type Modules\User\Contracts\TeamContract, null given, called in /var/www/_bases/<nome repository>/laravel/Modules/User/tests/Unit/HasTeamsTraitTest.php on line 95
-=======
+
   Modules\User\Models\BaseUser::switchTeam(): Argument #1 ($team) must be of type Modules\User\Contracts\TeamContract, null given, called in /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/tests/Unit/HasTeamsTraitTest.php on line 95
->>>>>>> laraxot/dev
 
   at Modules/User/app/Models/Traits/HasTeams.php:420
     416▕ 
@@ -9032,7 +9010,6 @@ Database connection [ptvx] not configured.
   Tests:    321 failed, 2 risky, 4 skipped, 413 passed (1126 assertions)
   Duration: 170.56s
 
-<<<<<<< HEAD
 
 
 ## Appendice — contenuto migrato
@@ -16847,5 +16824,3 @@ Database connection [quaeris] not configured.
 
   Tests:    321 failed, 2 risky, 4 skipped, 413 passed (1126 assertions)
   Duration: 170.56s
-=======
->>>>>>> laraxot/dev

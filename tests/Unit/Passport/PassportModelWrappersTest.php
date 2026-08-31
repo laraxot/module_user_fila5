@@ -14,21 +14,13 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\glob;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
-=======
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 test('every eloquent passport model has a local oauth wrapper', function (): void {
     /** @var list<string> $files */
     $files = glob(base_path('vendor/laravel/passport/src').'/*.php');
 
-<<<<<<< HEAD
     if ($files === []) {
-=======
-    if ([] === $files) {
->>>>>>> laraxot/dev
         Assert::fail('Unable to read Passport source directory.');
     }
 
