@@ -13,21 +13,23 @@ use Modules\User\Models\OauthToken;
 /**
  * Custom Passport Client model to fix compatibility issues with Laravel 12.
  *
-<<<<<<< HEAD
- * @property-read Collection<int, OauthAuthCode> $authCodes
- * @property-read int|null $auth_codes_count
- * @property-read array<int, string> $grant_types
- * @property-read User $owner
- * @property-read string|null $plain_secret
- * @property-read array<int, string> $redirect_uris
- * @property-write string|null $secret
- * @property-read Collection<int, OauthToken> $tokens
- * @property-read int|null $tokens_count
- * @property-read \Modules\User\Models\User|null $user
+ * <<<<<<< HEAD
+ *
+ * @property Collection<int, OauthAuthCode> $authCodes
+ * @property int|null                       $auth_codes_count
+ * @property array<int, string>             $grant_types
+ * @property User                           $owner
+ * @property string|null                    $plain_secret
+ * @property array<int, string>             $redirect_uris
+ * @property string|null                    $secret
+ * @property Collection<int, OauthToken>    $tokens
+ * @property int|null                       $tokens_count
+ * @property \Modules\User\Models\User|null $user
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client existsIn(array<int, mixed> $haystack)
- * @method static \Laravel\Passport\Database\Factories\ClientFactory factory($count = null, $state = [])
-=======
+ * @method static \Laravel\Passport\Database\Factories\ClientFactory   factory($count = null, $state = [])
+ *                                                                                                           =======
+ *
  * @property Collection<int, OauthAuthCode> $authCodes
  * @property int|null                       $auth_codes_count
  * @property list<string>                   $grant_types
@@ -41,7 +43,7 @@ use Modules\User\Models\OauthToken;
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client existsIn(array<int, string> $haystack)
  * @method static \Laravel\Passport\Database\Factories\ClientFactory   factory($count = null, $state = [])
->>>>>>> laraxot/dev
+ *                                                                                                            >>>>>>> laraxot/dev
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client query()

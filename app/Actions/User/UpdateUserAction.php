@@ -19,20 +19,20 @@ class UpdateUserAction
     /**
      * Esegue l'aggiornamento dell'utente.
      *
-<<<<<<< HEAD
-     * @param  Model  $user  L'utente da aggiornare
-     * @param  array<string, mixed>  $data  I dati da aggiornare
-     * @return Model L'utente aggiornato
+     * <<<<<<< HEAD
      *
-     * @throws \Exception Se l'aggiornamento fallisce
-=======
+     * @param Model                $user L'utente da aggiornare
+     * @param array<string, mixed> $data I dati da aggiornare
      * @param Model                $user L'utente da aggiornare
      * @param array<string, mixed> $data I dati da aggiornare
      *
      * @throws \Exception Se l'aggiornamento fallisce
+     *                    =======
+     * @throws \Exception Se l'aggiornamento fallisce
      *
      * @return Model L'utente aggiornato
->>>>>>> laraxot/dev
+     * @return Model L'utente aggiornato
+     *               >>>>>>> laraxot/dev
      */
     public function execute(Model $user, array $data): Model
     {
@@ -87,12 +87,14 @@ class UpdateUserAction
     /**
      * Prepara i dati per l'aggiornamento rimuovendo campi non aggiornabili.
      *
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $data
-=======
+     * <<<<<<< HEAD
+     *
+     * @param array<string, mixed> $data
+     *                                   =======
      * @param array<string, mixed> $data
      *
->>>>>>> laraxot/dev
+     * >>>>>>> laraxot/dev
+     *
      * @return array<string, mixed>
      */
     protected function prepareUpdateData(array $data, Hasher $hasher, SafeStringCastAction $safeStringCast): array
@@ -132,11 +134,12 @@ class UpdateUserAction
     /**
      * Valida i dati di aggiornamento.
      *
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $data
-=======
+     * <<<<<<< HEAD
+     *
      * @param array<string, mixed> $data
->>>>>>> laraxot/dev
+     *                                   =======
+     * @param array<string, mixed> $data
+     *                                   >>>>>>> laraxot/dev
      *
      * @throws ValidationException
      */
@@ -163,11 +166,12 @@ class UpdateUserAction
      * Operazioni da eseguire dopo l'aggiornamento.
      * Può essere sovrascritto dalle classi che estendono questa action.
      *
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $data
-=======
+     * <<<<<<< HEAD
+     *
      * @param array<string, mixed> $data
->>>>>>> laraxot/dev
+     *                                   =======
+     * @param array<string, mixed> $data
+     *                                   >>>>>>> laraxot/dev
      */
     protected function afterUpdate(Model $user, array $data): void
     {

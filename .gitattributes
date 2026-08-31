@@ -12,7 +12,6 @@
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
-<<<<<<< HEAD
 # `binary` + `!filter` azzera eventuali filtri LFS ereditati
 *.png binary !filter
 *.jpg binary !filter
@@ -38,5 +37,3 @@ CHANGELOG.md export-ignore
 *.jpeg !text !filter !merge !diff
 *.gif !text !filter !merge !diff
 *.webp !text !filter !merge !diff
-=======
->>>>>>> laraxot/dev

@@ -12,29 +12,30 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
 /**
  * Modules\User\Models\OauthAccessToken.
  *
-<<<<<<< HEAD
- * @property bool $revoked
- * @property int|string|null $user_id
- * @property-read OauthClient|null $client
- * @property-read OauthRefreshToken|null $refreshToken
- * @property-read User|null $user
+ * <<<<<<< HEAD
+ *
+ * @property bool                   $revoked
+ * @property int|string|null        $user_id
+ * @property OauthClient|null       $client
+ * @property OauthRefreshToken|null $refreshToken
+ * @property User|null              $user
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAccessToken existsIn(array<int, mixed> $haystack)
- * @method static Builder<static>|OauthAccessToken newModelQuery()
- * @method static Builder<static>|OauthAccessToken newQuery()
- * @method static Builder<static>|OauthAccessToken query()
+ * @method static Builder<static>|OauthAccessToken                               newModelQuery()
+ * @method static Builder<static>|OauthAccessToken                               newQuery()
+ * @method static Builder<static>|OauthAccessToken                               query()
  *
- * @property string $id
- * @property string $client_id
- * @property string|null $name
+ * @property string                       $id
+ * @property string                       $client_id
+ * @property string|null                  $name
  * @property array<array-key, mixed>|null $scopes
- * @property Carbon|null $expires_at
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property string|null $deleted_at
- * @property string|null $deleted_by
+ * @property Carbon|null                  $expires_at
+ * @property Carbon|null                  $created_at
+ * @property Carbon|null                  $updated_at
+ * @property string|null                  $updated_by
+ * @property string|null                  $created_by
+ * @property string|null                  $deleted_at
+ * @property string|null                  $deleted_by
  *
  * @method static Builder<static>|OauthAccessToken whereClientId($value)
  * @method static Builder<static>|OauthAccessToken whereCreatedAt($value)
@@ -49,7 +50,8 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @method static Builder<static>|OauthAccessToken whereUpdatedAt($value)
  * @method static Builder<static>|OauthAccessToken whereUpdatedBy($value)
  * @method static Builder<static>|OauthAccessToken whereUserId($value)
-=======
+ *                                                                        =======
+ *
  * @property string            $id
  * @property string|null       $user_id
  * @property string            $client_id
@@ -89,7 +91,7 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @method static static                                                         firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static                                                         updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAccessToken existsIn(array<int, string> $haystack)
->>>>>>> laraxot/dev
+ *                                                                                                                                                                   >>>>>>> laraxot/dev
  *
  * @mixin \Eloquent
  */

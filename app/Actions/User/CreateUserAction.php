@@ -14,11 +14,12 @@ class CreateUserAction
     /**
      * Create a new user.
      *
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $data
-=======
+     * <<<<<<< HEAD
+     *
      * @param array<string, mixed> $data
->>>>>>> laraxot/dev
+     *                                   =======
+     * @param array<string, mixed> $data
+     *                                   >>>>>>> laraxot/dev
      */
     public function execute(array $data): User
     {
