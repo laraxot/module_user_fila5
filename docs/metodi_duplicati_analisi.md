@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "ANALISI METODI DUPLICATI - SUPER MUCCA EDITION"
 module: user
@@ -7,6 +8,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> laraxot/dev
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨  
@@ -116,7 +119,11 @@ abstract class BaseModel extends \Modules\Xot\Models\XotBaseModel
 
 ### Pattern 1: getTableColumns() - ESEMPIO REALE
 
+<<<<<<< HEAD
 #### <nome progetto>/TicketResource/ListTickets.php (ECCELLENTE)
+=======
+#### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
+>>>>>>> laraxot/dev
 ```php
 protected function getTableColumns(): array
 {
@@ -477,7 +484,11 @@ public function getTableFilters(): array
 - Test dopo ogni modulo
 - Code review
 
+<<<<<<< HEAD
 **Settimana 2**: Moduli Business (<nome progetto>, Blog, Geo)
+=======
+**Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
+>>>>>>> laraxot/dev
 - 20 List files
 - Test integrazione
 - Performance check
@@ -515,7 +526,11 @@ public function getTableFilters(): array
 3. Refactoring moduli core (Xot, User, Cms)
 
 #### ⭐⭐⭐⭐ PRIORITÀ ALTA
+<<<<<<< HEAD
 4. Refactoring moduli business (<nome progetto>, Blog, Geo)
+=======
+4. Refactoring moduli business (Fixcity, Blog, Geo)
+>>>>>>> laraxot/dev
 5. ActionPresets per CRUD
 6. Documentazione completa
 
@@ -545,6 +560,7 @@ public function getTableFilters(): array
 4. Implementazione ColumnBuilder
 
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
+<<<<<<< HEAD
 
 ---
 
@@ -2763,3 +2779,5 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 ---
 _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
+=======
+>>>>>>> laraxot/dev

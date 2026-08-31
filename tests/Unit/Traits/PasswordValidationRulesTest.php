@@ -10,7 +10,11 @@ use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesMockableFixtu
 use Modules\User\Traits\PasswordValidationRules;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('Password Validation Rules', function (): void {
     test('password validation rules trait can be used', function (): void {

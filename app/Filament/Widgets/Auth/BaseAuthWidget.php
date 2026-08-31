@@ -21,8 +21,12 @@ abstract class BaseAuthWidget extends XotBaseWidget
 
     /**
      * Restituisce i dati per la view.
+<<<<<<< HEAD
      * Il form dei widget vive su `getFormSchema()`: `getFormSchemaOld()` appartiene
      * alla gerarchia Resource, non a quella Widget.
+=======
+     * In Filament v3/Xot, il form va gestito tramite getFormSchema().
+>>>>>>> laraxot/dev
      *
      * @return array<string, mixed>
      */

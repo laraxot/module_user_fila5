@@ -9,11 +9,19 @@ use Modules\User\Models\Team;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('user-db');
 
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
     /** @var TestCase $this */
+=======
+uses(TestCase::class);
+
+beforeEach(function (): void {
+    /* @var \Modules\User\Tests\TestCase $this */
+    /* @var TestCase $this */
+>>>>>>> laraxot/dev
     $this->skipUnlessUsersTableReady();
 });
 

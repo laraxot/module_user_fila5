@@ -29,9 +29,15 @@ class ClientResource extends XotBaseResource
      *
      * Get the form schema for the resource (XotBaseResource pattern).
      *
+<<<<<<< HEAD
      * @return array<string, mixed>
      */
     public static function getFormSchemaOld(): array
+=======
+     * @return array<string, Field>
+     */
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         $components = [
             'name' => TextInput::make('name')

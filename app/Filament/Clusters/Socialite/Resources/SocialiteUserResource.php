@@ -28,11 +28,16 @@ class SocialiteUserResource extends XotBaseResource
      *
      * @return array<string, Select|TextInput>
      */
+<<<<<<< HEAD
     // #[\Override]
     /**
      * @return array<string, mixed>
      */
     public static function getFormSchemaOld(): array
+=======
+    #[\Override]
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'user_id' => Select::make('user_id')

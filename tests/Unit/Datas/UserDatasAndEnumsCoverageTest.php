@@ -12,7 +12,11 @@ use Modules\User\Enums\LanguageEnum;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('User Datas And Enums Coverage', function (): void {
     test('creates socialite user attributes data with expected values', function (): void {
@@ -31,7 +35,11 @@ describe('User Datas And Enums Coverage', function (): void {
     });
 
     test('builds permission data from permission config', function (): void {
+<<<<<<< HEAD
         /** @var TestCase $this */
+=======
+        /* @var TestCase $this */
+>>>>>>> laraxot/dev
         config([
             'permission' => [
                 'models' => [
@@ -73,7 +81,11 @@ describe('User Datas And Enums Coverage', function (): void {
     });
 
     test('builds filament shield data from filament shield config', function (): void {
+<<<<<<< HEAD
         /** @var TestCase $this */
+=======
+        /* @var TestCase $this */
+>>>>>>> laraxot/dev
         config([
             'filament-shield' => [
                 'shield_resource' => [
@@ -104,8 +116,13 @@ describe('User Datas And Enums Coverage', function (): void {
     });
 
     test('returns labels for both language enums', function (): void {
+<<<<<<< HEAD
         /** @var TestCase $this */
         /** @var TestCase $this */
+=======
+        /* @var TestCase $this */
+        /* @var TestCase $this */
+>>>>>>> laraxot/dev
         app()->setLocale('it');
 
         $italianLabel = LanguageEnum::ITALIAN->getLabel();

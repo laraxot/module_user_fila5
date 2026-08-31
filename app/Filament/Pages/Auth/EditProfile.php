@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Pages\Auth;
 
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Filament\Pages\Auth\XotBaseEditProfile;
 
@@ -13,6 +16,7 @@ class EditProfile extends XotBaseEditProfile
 {
     public static ?string $title = 'Profilo Utente';
 
+<<<<<<< HEAD
     public function form(Schema $schema): Schema
     {
         return $schema->components($this->getFormSchema());
@@ -22,6 +26,12 @@ class EditProfile extends XotBaseEditProfile
      * Costruisce il form schema per la pagina di modifica profilo.
      *
      * @return array<int|string, Component>
+=======
+    /**
+     * Costruisce il form schema per la pagina di modifica profilo.
+     *
+     * @return array<int|string, \Filament\Schemas\Components\Component>
+>>>>>>> laraxot/dev
      */
     public function getFormSchema(): array
     {

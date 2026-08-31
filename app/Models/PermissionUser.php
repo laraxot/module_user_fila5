@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
 
@@ -13,10 +14,19 @@ use Modules\TechPlanner\Models\Profile;
  * @property-read Profile|null $updater
  *
  * @method static \Modules\User\Database\Factories\PermissionUserFactory factory($count = null, $state = [])
+=======
+use Modules\Xot\Contracts\ProfileContract;
+
+/**
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ *
+>>>>>>> laraxot/dev
  * @method static Builder<static>|PermissionUser newModelQuery()
  * @method static Builder<static>|PermissionUser newQuery()
  * @method static Builder<static>|PermissionUser query()
  *
+<<<<<<< HEAD
  * @property string $id
  * @property int $permission_id
  * @property string $model_type
@@ -40,3 +50,14 @@ use Modules\TechPlanner\Models\Profile;
  * @mixin \Eloquent
  */
 class PermissionUser extends ModelHasPermission {}
+=======
+ * @property ProfileContract|null $deleter
+ *
+ * @method static \Modules\User\Database\Factories\PermissionUserFactory factory($count = null, $state = [])
+ *
+ * @mixin \Eloquent
+ */
+class PermissionUser extends ModelHasPermission
+{
+}
+>>>>>>> laraxot/dev

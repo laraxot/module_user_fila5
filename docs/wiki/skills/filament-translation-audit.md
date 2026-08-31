@@ -68,6 +68,10 @@ Se il task tocca page/resource Filament, carica anche:
 
 ## Vedi anche
 
+<<<<<<< HEAD
 - [Rules Index](../rules/index.md)
+=======
+- [Rules Index](../rules/INDEX.md)
+>>>>>>> laraxot/dev
 - [User Wiki Index](../index.md)
 - [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)

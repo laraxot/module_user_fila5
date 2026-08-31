@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+<<<<<<< HEAD
         'background_color' => ['label' => 'background_color', 'placeholder' => 'background_color', 'helper_text' => 'background_color', 'description' => 'background_color', 'tooltip' => ''],
         'background' => ['label' => 'background', 'placeholder' => 'background', 'helper_text' => 'background', 'description' => 'background', 'tooltip' => ''],
         'overlay_color' => ['label' => 'overlay_color', 'placeholder' => 'overlay_color', 'helper_text' => 'overlay_color', 'description' => 'overlay_color', 'tooltip' => ''],
@@ -12,11 +13,53 @@ return [
     'actions' => [
         'updateAction' => ['label' => 'updateAction', 'icon' => 'updateAction', 'tooltip' => 'updateAction'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+=======
+        'background_color' => [
+            'label' => 'background_color',
+            'placeholder' => 'background_color',
+            'helper_text' => 'background_color',
+            'description' => 'background_color',
+            'tooltip' => '',
+        ],
+        'background' => [
+            'label' => 'background',
+            'placeholder' => 'background',
+            'helper_text' => 'background',
+            'description' => 'background',
+            'tooltip' => '',
+        ],
+        'overlay_color' => [
+            'label' => 'overlay_color',
+            'placeholder' => 'overlay_color',
+            'helper_text' => 'overlay_color',
+            'description' => 'overlay_color',
+            'tooltip' => '',
+        ],
+        'overlay_opacity' => [
+            'label' => 'overlay_opacity',
+            'placeholder' => 'overlay_opacity',
+            'helper_text' => 'overlay_opacity',
+            'description' => 'overlay_opacity',
+            'tooltip' => '',
+        ],
+    ],
+    'actions' => [
+        'updateAction' => [
+            'label' => 'updateAction',
+        ],
+>>>>>>> laraxot/dev
     ],
     'navigation' => [
         'name' => 'Sfondo',
         'plural' => 'Sfondi',
+<<<<<<< HEAD
         'group' => ['name' => 'Aspetto', 'description' => 'Personalizzazione dell\'aspetto del sistema'],
+=======
+        'group' => [
+            'name' => 'Aspetto',
+            'description' => 'Personalizzazione dell\'aspetto del sistema',
+        ],
+>>>>>>> laraxot/dev
         'label' => 'Sfondo',
         'sort' => 14,
         'icon' => 'heroicon-o-rectangle-stack',

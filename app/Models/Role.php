@@ -10,6 +10,7 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -17,6 +18,14 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Models\Profile;
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Support\Carbon;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Contracts\UserContract;
+>>>>>>> laraxot/dev
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
@@ -27,6 +36,7 @@ use Webmozart\Assert\Assert;
 /**
  * Modules\User\Models\Role.
  *
+<<<<<<< HEAD
  * @property-read Profile|null $creator
  * @property-read PermissionRole|null $pivot
  * @property-read Collection<int, Permission> $permissions
@@ -64,22 +74,78 @@ use Webmozart\Assert\Assert;
  * @method static Builder<static>|Role whereTeamId($value)
  * @method static Builder<static>|Role whereUpdatedAt($value)
  * @method static Builder<static>|Role whereUpdatedBy($value)
+=======
+ * @property int                                 $id
+ * @property string                              $uuid
+ * @property string|null                         $team_id
+ * @property string                              $name
+ * @property string                              $guard_name
+ * @property string|null                         $display_name
+ * @property string|null                         $description
+ * @property Carbon|null                         $created_at
+ * @property Carbon|null                         $updated_at
+ * @property string|null                         $updated_by
+ * @property string|null                         $created_by
+ * @property Collection<int, Permission>         $permissions
+ * @property int|null                            $permissions_count
+ * @property Team|null                           $team
+ * @property Collection<int, Model&UserContract> $users
+ * @property int|null                            $users_count
+ * @property PermissionRole|null                 $pivot
+ *
+ * @method static Builder|Role newModelQuery()
+ * @method static Builder|Role newQuery()
+ * @method static Builder|Role permission($permissions)
+ * @method static Builder|Role query()
+ * @method static Builder|Role whereCreatedAt($value)
+ * @method static Builder|Role whereGuardName($value)
+ * @method static Builder|Role whereName($value)
+ * @method static Builder|Role whereTeamId($value)
+ * @method static Builder|Role whereUpdatedAt($value)
+ * @method static Builder|Role whereId($value)
+ * @method static Builder|Role whereCreatedBy($value)
+ * @method static Builder|Role whereUpdatedBy($value)
+ * @method static Builder|Role withoutPermission($permissions)
+ * @method static Builder|Role whereDescription($value)
+ * @method static Builder|Role whereDisplayName($value)
+ * @method static static       firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static       updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ *
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $deleter
+ * @property ProfileContract|null $updater
+ *
+ * @method static \Modules\User\Database\Factories\RoleFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Role                         whereUuid($value)
+>>>>>>> laraxot/dev
  *
  * @mixin \Eloquent
  */
 class Role extends SpatieRole
 {
+<<<<<<< HEAD
+=======
+    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+>>>>>>> laraxot/dev
     use HasXotFactory;
     use RelationX;
     use Updater;
 
     // use HasUuids;
 
+<<<<<<< HEAD
     final public const int ROLE_ADMINISTRATOR = 1;
 
     final public const int ROLE_OWNER = 2;
 
     final public const int ROLE_USER = 3;
+=======
+    final public const ROLE_ADMINISTRATOR = 1;
+
+    final public const ROLE_OWNER = 2;
+
+    final public const ROLE_USER = 3;
+>>>>>>> laraxot/dev
 
     protected $connection = 'user';
 
@@ -116,7 +182,11 @@ class Role extends SpatieRole
     }
 
     /**
+<<<<<<< HEAD
      * @return BelongsToMany<Permission, $this, Pivot, 'pivot'>
+=======
+     * @return BelongsToMany<Permission, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
+>>>>>>> laraxot/dev
      */
     public function permissions(): BelongsToMany
     {

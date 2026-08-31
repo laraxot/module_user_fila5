@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
+=======
+use Filament\Schemas\Components\Component;
+>>>>>>> laraxot/dev
 use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Resources\PasswordResetResource\Pages\ListPasswordResets;
@@ -25,9 +29,15 @@ class PasswordResetResource extends XotBaseResource
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, mixed>
      */
     public static function getFormSchemaOld(): array
+=======
+     * @return array<string, Component>
+     */
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'password_reset_info' => Section::make('Password Reset Information')

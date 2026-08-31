@@ -13,7 +13,11 @@ use Modules\User\Models\User;
 use Modules\Xot\Datas\XotData;
 
 /**
+<<<<<<< HEAD
  * Utenti demo deterministici per FO <nome progetto> (login + owner ticket).
+=======
+ * Utenti demo deterministici per FO Fixcity (login + owner ticket).
+>>>>>>> laraxot/dev
  *
  * Idempotente: updateOrCreate su email.
  */
@@ -43,7 +47,11 @@ class DemoUserSeeder extends Seeder
                 'role' => 'super-admin',
             ],
             [
+<<<<<<< HEAD
                 'email' => 'cittadino@<nome progetto>.demo',
+=======
+                'email' => 'cittadino@fixcity.demo',
+>>>>>>> laraxot/dev
                 'name' => 'Cittadino Demo',
                 'password' => 'password123',
                 'type' => 'customer_user',
@@ -70,12 +78,20 @@ class DemoUserSeeder extends Seeder
             );
 
             $role = Role::query()->where('name', $roleName)->where('guard_name', 'web')->first();
+<<<<<<< HEAD
             if ($role !== null && ! $user->hasRole($roleName)) {
+=======
+            if (null !== $role && ! $user->hasRole($roleName)) {
+>>>>>>> laraxot/dev
                 $user->assignRole($role);
             }
         }
 
+<<<<<<< HEAD
         if ($this->command !== null) {
+=======
+        if (null !== $this->command) {
+>>>>>>> laraxot/dev
             $this->command->info('DemoUserSeeder: '.count($demoUsers).' utenti demo pronti.');
         }
     }

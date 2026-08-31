@@ -16,10 +16,17 @@ use PHPUnit\Framework\Assert;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\Sluggable\SlugOptions;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('user-db');
 
 /**
  * @param  array<string, mixed>  $overrides
+=======
+uses(TestCase::class);
+
+/**
+ * @param array<string, mixed> $overrides
+>>>>>>> laraxot/dev
  */
 function createPersistedTenant(array $overrides = []): Tenant
 {

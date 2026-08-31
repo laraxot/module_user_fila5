@@ -9,16 +9,27 @@ use Laravel\Passport\Client;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\OauthClient;
 use Modules\User\Tests\TestCase;
+<<<<<<< HEAD
 use Modules\Xot\Tests\XotBasePest;
+=======
+>>>>>>> laraxot/dev
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('user-db');
 
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
     /** @var TestCase $this */
+=======
+uses(TestCase::class);
+
+beforeEach(function (): void {
+    /* @var \Modules\User\Tests\TestCase $this */
+    /* @var TestCase $this */
+>>>>>>> laraxot/dev
     config(['passport.connection' => 'user']);
 
     if (! Schema::connection('user')->hasTable('oauth_clients')) {
@@ -44,7 +55,11 @@ describe('Oauth Client', function (): void {
     test('oauth client user relation uses xot data', function (): void {
         /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
+<<<<<<< HEAD
         $client = $this->oauthClientTestPersistedClient(['user_id' => (string) XotBasePest::assertModelKey($user->getKey())]);
+=======
+        $client = $this->oauthClientTestPersistedClient(['user_id' => (string) $user->getKey()]);
+>>>>>>> laraxot/dev
 
         Assert::assertNotNull($client->user);
         Assert::assertSame($user->getKey(), $client->user->getKey());

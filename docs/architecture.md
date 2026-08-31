@@ -14,6 +14,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/architecture-rules-Modules.md
+<<<<<<< HEAD
 
 ---
 
@@ -121,3 +122,5 @@ config/user.php                  # Module-level settings
 ✅ **PHPStan L10:** Executed (2026-07-28)  
 ⚠️ **PHPMD:** Blocked (PDepend/Symfony conflict)  
 ⚠️ **PHP Insights:** Blocked (plugin allowlist)
+=======
+>>>>>>> laraxot/dev

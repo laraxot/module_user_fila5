@@ -4,7 +4,11 @@ type: troubleshooting
 module: User
 tags: [git, merge, conflict, user]
 created: 2026-04-28
+<<<<<<< HEAD
 updated: 2026-08-18
+=======
+updated: 2026-07-08
+>>>>>>> laraxot/dev
 qmd: "git merge conflict markers User docs inventory rebase"
 related:
   - "./filament-user-creation-pty-error.md"
@@ -18,6 +22,7 @@ related:
 
 # Git — inventario conflitti merge (User)
 
+<<<<<<< HEAD
 ## Stato 2026-08-18
 
 - **PHP User:** marker di conflitto rimossi (Resource Filament, BaseUser, trait, test, migrazioni). Policy: PHPDoc compatto, confronti Yoda, `new Foo()`, import `Field` inutilizzato rimosso, commento `Override` con spazio dopo `//`.
@@ -29,6 +34,12 @@ related:
 
 - **Rebase abortito** su `dev` (328 pick, 623 file `AA`) — causa: tentativo rebase sopra `laraxot/dev` con storico LFS corrotto.
 - Dopo `git rebase --abort`: 0 marker di conflitto a inizio riga nei `.md` tracciati.
+=======
+## Stato 2026-07-08
+
+- **Rebase abortito** su `dev` (328 pick, 623 file `AA`) — causa: tentativo rebase sopra `laraxot/dev` con storico LFS corrotto.
+- Dopo `git rebase --abort`: **0** marker `<<<<<<<` nei `.md` tracciati (`git grep`).
+>>>>>>> laraxot/dev
 - Push risolto con squash → [git-push-lfs-missing-objects](./git-push-lfs-missing-objects.md).
 
 ## Inventario storico (2026-04-28)
@@ -43,6 +54,10 @@ File con marker (da risolvere forward-only se riappaiono):
 
 ## Note operative
 
+<<<<<<< HEAD
 - Rigenerare lista: `git grep -l` sui marker di conflitto a inizio riga, scope `*.md` e `docs/`
+=======
+- Rigenerare lista: `git grep -l '^<<<<<<<' -- '*.md' 'docs/'`
+>>>>>>> laraxot/dev
 - Non risolvere in parallelo senza lock; preferire wiki canonico `docs/wiki/` rispetto a duplicati root `docs/*.md`.
 - Task dedicato marker doc: `docs/tasks/fix-doc-merge-markers.md`

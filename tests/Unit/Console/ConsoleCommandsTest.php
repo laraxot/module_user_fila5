@@ -10,7 +10,11 @@ use Modules\User\Console\Commands\SuperAdminCommand;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 test('AssignRoleCommand can be instantiated', function () {
     try {

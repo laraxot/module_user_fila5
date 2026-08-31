@@ -5,8 +5,13 @@ tags: [filament, compatibility]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "filament-4x-compatibility compatibilità filament 4.x - modulo user"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -35,7 +40,11 @@ related:
 #### Errori Principali Risolti:
 
 ##### 1.1 Metodi Astratti Mancanti
+<<<<<<< HEAD
 - **File**: `Modules\<nome progetto>\Models\Profile`
+=======
+- **File**: `Modules\Fixcity\Models\Profile`
+>>>>>>> laraxot/dev
 - **Errore**: Metodi `isSuperAdmin()` e `user()` mancanti dal contratto `ProfileContract`
 - **Soluzione**: Implementati metodi astratti nel modello Profile
 
@@ -174,7 +183,11 @@ if (is_object($notifiable)) {
 
 ### Moduli Testati
 - ✅ **User**: Autenticazione, profili, ruoli
+<<<<<<< HEAD
 - ✅ **<nome progetto>**: Ticket management, workflow
+=======
+- ✅ **Fixcity**: Ticket management, workflow
+>>>>>>> laraxot/dev
 - ✅ **Notify**: Notifiche, comunicazioni
 - ✅ **Xot**: Contratti, interfacce base
 

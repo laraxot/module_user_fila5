@@ -23,7 +23,11 @@ use Modules\User\Tests\Unit\Actions\Socialite\Fixtures\DeletableAccessTokenFixtu
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('user-db');
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('Socialite utility actions', function (): void {
     it('returns allow list when configured as string', function (): void {

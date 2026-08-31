@@ -35,7 +35,11 @@ use function Safe\json_decode;
 use function Safe\json_encode;
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function createUser(array $attributes = []): User
 {
@@ -49,7 +53,11 @@ function createUser(array $attributes = []): User
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function makeUser(array $attributes = []): User
 {
@@ -63,7 +71,11 @@ function makeUser(array $attributes = []): User
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function createTeam(array $attributes = []): Team
 {
@@ -73,7 +85,11 @@ function createTeam(array $attributes = []): Team
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function createTestUser(array $attributes = []): User
 {
@@ -126,7 +142,11 @@ function mockeryExpect(mixed $expectation): Expectation
 function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
 {
     if (! userTableHasColumn($table, $column)) {
+<<<<<<< HEAD
         pestSkip($reason !== '' ? $reason : "Column {$table}.{$column} missing on user connection.");
+=======
+        pestSkip('' !== $reason ? $reason : "Column {$table}.{$column} missing on user connection.");
+>>>>>>> laraxot/dev
     }
 }
 
@@ -138,7 +158,11 @@ function userTableExists(string $table): bool
 function skipUnlessUserTable(string $table, string $reason = ''): void
 {
     if (! userTableExists($table)) {
+<<<<<<< HEAD
         pestSkip($reason !== '' ? $reason : "Table {$table} missing on user connection.");
+=======
+        pestSkip('' !== $reason ? $reason : "Table {$table} missing on user connection.");
+>>>>>>> laraxot/dev
     }
 }
 
@@ -154,19 +178,31 @@ function permissionPivotTable(): string
 
 function skipUnlessUsersTableReady(string $reason = ''): void
 {
+<<<<<<< HEAD
     skipUnlessUserTable('users', $reason !== '' ? $reason : 'users table missing on user connection.');
+=======
+    skipUnlessUserTable('users', '' !== $reason ? $reason : 'users table missing on user connection.');
+>>>>>>> laraxot/dev
 }
 
 function skipUnlessRoleAssignmentSupported(string $reason = ''): void
 {
     $table = permissionRolePivotTable();
+<<<<<<< HEAD
     skipUnlessUserTable($table, $reason !== '' ? $reason : "Role pivot table {$table} missing on user connection.");
+=======
+    skipUnlessUserTable($table, '' !== $reason ? $reason : "Role pivot table {$table} missing on user connection.");
+>>>>>>> laraxot/dev
 }
 
 function skipUnlessDirectPermissionSupported(string $reason = ''): void
 {
     $table = permissionPivotTable();
+<<<<<<< HEAD
     skipUnlessUserTable($table, $reason !== '' ? $reason : "Permission pivot table {$table} missing on user connection.");
+=======
+    skipUnlessUserTable($table, '' !== $reason ? $reason : "Permission pivot table {$table} missing on user connection.");
+>>>>>>> laraxot/dev
 }
 
 function skipUnlessTeamUsersRelationSupported(): void
@@ -177,7 +213,11 @@ function skipUnlessTeamUsersRelationSupported(): void
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $pivot
+=======
+ * @param array<string, mixed> $pivot
+>>>>>>> laraxot/dev
  */
 function attachTeamMember(Team $team, User $user, array $pivot = []): void
 {
@@ -233,7 +273,11 @@ function teamUsesSoftDeletes(): bool
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function createProfile(array $attributes = []): Profile
 {
@@ -262,7 +306,11 @@ function setupFilamentAdminPanel(): void
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<mixed>  $attributes
+=======
+ * @param array<mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contracts\User
 {
@@ -290,7 +338,12 @@ function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contr
 /**
  * @template T of object
  *
+<<<<<<< HEAD
  * @param  class-string<T>  $class
+=======
+ * @param class-string<T> $class
+ *
+>>>>>>> laraxot/dev
  * @return T&MockInterface
  */
 function typedMock(string $class): MockInterface
@@ -304,8 +357,14 @@ function typedMock(string $class): MockInterface
 /**
  * @template T of object
  *
+<<<<<<< HEAD
  * @param  class-string<T>  $class
  * @param  callable(T&MockInterface): void  $configure
+=======
+ * @param class-string<T>                 $class
+ * @param callable(T&MockInterface): void $configure
+ *
+>>>>>>> laraxot/dev
  * @return T&MockInterface
  */
 function configureMock(string $class, callable $configure): MockInterface
@@ -381,7 +440,11 @@ function userResourceSectionComponents(TestCase $testCase, Component $section): 
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<int, Component|Action|ActionGroup>  $components
+=======
+ * @param array<int, Component|Action|ActionGroup> $components
+>>>>>>> laraxot/dev
  */
 function userResourceFindComponentByName(array $components, string $name): ?Component
 {
@@ -399,7 +462,11 @@ function userResourceFindComponentByName(array $components, string $name): ?Comp
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function stubUser(array $attributes = []): User
 {
@@ -407,7 +474,11 @@ function stubUser(array $attributes = []): User
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function hasTeamsCurrentCreateUser(array $attributes = []): User
 {
@@ -415,7 +486,11 @@ function hasTeamsCurrentCreateUser(array $attributes = []): User
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 {
@@ -472,7 +547,11 @@ function verifyTwoFactorCode(User $user, Google2FA $google2fa, string $code): bo
         return false;
     }
 
+<<<<<<< HEAD
     return $google2fa->verifyKey($secret, $code) !== false;
+=======
+    return false !== $google2fa->verifyKey($secret, $code);
+>>>>>>> laraxot/dev
 }
 
 function disableTwoFactorForUser(User $user): void
@@ -563,7 +642,11 @@ function teamMgmtTeamUsersRelationSupported(): bool
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function teamMgmtCreateUser(array $attributes = []): User
 {
@@ -576,7 +659,11 @@ function teamMgmtCreateUser(array $attributes = []): User
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function teamMgmtCreateTeam(User $owner, array $attributes = []): Team
 {
@@ -599,7 +686,11 @@ function teamMgmtBootstrap(): array
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $pivot
+=======
+ * @param array<string, mixed> $pivot
+>>>>>>> laraxot/dev
  */
 function teamMgmtAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -643,7 +734,11 @@ function teamMgmtMemberExists(Team $team, User $user): bool
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function teamMgmtCreateInvitation(Team $team, array $attributes = []): TeamInvitation
 {
@@ -678,7 +773,11 @@ function teamMgmtBizTeamUsesSoftDeletes(): bool
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function teamMgmtBizCreateUser(array $attributes = []): User
 {
@@ -691,7 +790,11 @@ function teamMgmtBizCreateUser(array $attributes = []): User
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function teamMgmtBizCreateTeam(array $attributes = []): Team
 {
@@ -702,7 +805,11 @@ function teamMgmtBizCreateTeam(array $attributes = []): Team
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $where
+=======
+ * @param array<string, mixed> $where
+>>>>>>> laraxot/dev
  */
 function teamMgmtBizAssertDatabaseHas(string $table, array $where): void
 {
@@ -715,7 +822,11 @@ function teamMgmtBizAssertDatabaseHas(string $table, array $where): void
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $where
+=======
+ * @param array<string, mixed> $where
+>>>>>>> laraxot/dev
  */
 function teamMgmtBizAssertDatabaseMissing(string $table, array $where): void
 {
@@ -728,7 +839,11 @@ function teamMgmtBizAssertDatabaseMissing(string $table, array $where): void
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $pivot
+=======
+ * @param array<string, mixed> $pivot
+>>>>>>> laraxot/dev
  */
 function teamMgmtBizAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -768,7 +883,11 @@ function teamMgmtBizMemberExists(Team $team, User $user): bool
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function teamMgmtBizCreateInvitation(Team $team, array $attributes = []): TeamInvitation
 {

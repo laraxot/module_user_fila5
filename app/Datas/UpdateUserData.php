@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Datas;
 
+<<<<<<< HEAD
 use Modules\User\Actions\User\UpdateUserAction;
+=======
+>>>>>>> laraxot/dev
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\Optional;
 
@@ -18,7 +21,11 @@ use Spatie\LaravelData\Optional;
  * Campi non aggiornabili direttamente (id, email_verified_at, remember_token,
  * created_at, updated_at) sono intenzionalmente assenti da questo Data.
  *
+<<<<<<< HEAD
  * @see UpdateUserAction
+=======
+ * @see \Modules\User\Actions\User\UpdateUserAction
+>>>>>>> laraxot/dev
  */
 class UpdateUserData extends Data
 {
@@ -35,5 +42,10 @@ class UpdateUserData extends Data
         public string|Optional $password_expires_at,
         public string|Optional $type,
         public string|Optional $state,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 }

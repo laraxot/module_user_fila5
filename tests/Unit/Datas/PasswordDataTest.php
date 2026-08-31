@@ -6,11 +6,20 @@ use Modules\User\Datas\PasswordData;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use ReflectionNamedType;
+<<<<<<< HEAD
 use Spatie\LaravelData\Data;
 
 use function Safe\file_get_contents;
 
 uses(TestCase::class)->group('no-user-db');
+=======
+
+use function Safe\file_get_contents;
+
+use Spatie\LaravelData\Data;
+
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 function samplePasswordData(): PasswordData
 {

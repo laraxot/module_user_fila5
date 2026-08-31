@@ -27,7 +27,10 @@ use Modules\User\Filament\Widgets\Auth\ResetPasswordWidget;
 use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Providers\XotBaseServiceProvider;
+<<<<<<< HEAD
 use Spatie\Permission\PermissionRegistrar;
+=======
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 class UserServiceProvider extends XotBaseServiceProvider
@@ -42,7 +45,10 @@ class UserServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
+<<<<<<< HEAD
         $this->syncPermissionRegistrarTeamModel();
+=======
+>>>>>>> laraxot/dev
         $this->registerLivewireAuthWidgets();
         // $this->registerEventListener();
         $this->registerPasswordRules();
@@ -88,12 +94,20 @@ class UserServiceProvider extends XotBaseServiceProvider
             $serviceConfig = config("services.{$provider}", []);
 
             $clientId = $serviceConfig['client_id'] ?? null;
+<<<<<<< HEAD
             if (is_string($clientId) && $clientId !== '') {
+=======
+            if (is_string($clientId) && '' !== $clientId) {
+>>>>>>> laraxot/dev
                 Config::set("user.social-providers.{$provider}.client_id", $clientId);
             }
 
             $clientSecret = $serviceConfig['client_secret'] ?? null;
+<<<<<<< HEAD
             if (is_string($clientSecret) && $clientSecret !== '') {
+=======
+            if (is_string($clientSecret) && '' !== $clientSecret) {
+>>>>>>> laraxot/dev
                 Config::set("user.social-providers.{$provider}.client_secret", $clientSecret);
             }
         }
@@ -235,6 +249,7 @@ class UserServiceProvider extends XotBaseServiceProvider
         // OAuth policies are handled by PassportServiceProvider
         // Register other policies here if needed
     }
+<<<<<<< HEAD
 
     /**
      * Allinea PermissionRegistrar al config merge tenant (ide-helper risolve teams() prima del merge completo).
@@ -248,4 +263,6 @@ class UserServiceProvider extends XotBaseServiceProvider
 
         app(PermissionRegistrar::class)->setTeamClass($teamClass);
     }
+=======
+>>>>>>> laraxot/dev
 }

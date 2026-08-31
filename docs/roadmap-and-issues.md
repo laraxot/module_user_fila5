@@ -5,8 +5,13 @@ tags: [roadmap, issues]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "roadmap-and-issues user module - roadmap, issues & optimization"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -22,7 +27,11 @@ related:
 
 **Modulo**: User (Authentication, Authorization, Profiles)  
 **Data Analisi**: 1 Ottobre 2025  
+<<<<<<< HEAD
 **Maintainer**: Team <nome progetto>  
+=======
+**Maintainer**: Team FixCity  
+>>>>>>> laraxot/dev
 **Status PHPStan**: ⚠️ 95 errori (Level 10)
 
 ---
@@ -389,7 +398,11 @@ php artisan queue:prune-failed --hours=48
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [← User Module README](./README.md)
+=======
+- [← User Module README](./readme.md)
+>>>>>>> laraxot/dev
 - [← PHPStan Fixes 2025-10-01](./phpstan-fixes.md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
 - [← Root Documentation](../../../docs/index.md)

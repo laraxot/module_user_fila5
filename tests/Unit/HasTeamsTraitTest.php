@@ -17,10 +17,17 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('user-db');
 
 /**
  * @param  array<string, mixed>  $attributes
+=======
+uses(TestCase::class);
+
+/**
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function hasTeamsCreateTestUser(array $attributes = []): User
 {
@@ -50,7 +57,11 @@ function hasTeamsBootstrapFixture(): array
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $pivot
+=======
+ * @param array<string, mixed> $pivot
+>>>>>>> laraxot/dev
  */
 function hasTeamsAttachMember(Team $team, User $user, array $pivot = []): void
 {

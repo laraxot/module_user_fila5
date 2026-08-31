@@ -14,7 +14,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
+<<<<<<< HEAD
     /** @var TestCase $this */
+=======
+    /* @var TestCase $this */
+>>>>>>> laraxot/dev
     $this->widget = new LoginWidget();
 });
 
@@ -26,11 +30,16 @@ describe('Login Widget', function (): void {
         $property = $reflection->getProperty('view');
         $property->setAccessible(true);
         $view = $property->getValue($widget);
+<<<<<<< HEAD
         if (! is_string($view)) {
             Assert::fail('LoginWidget::$view is not a string.');
         }
 
         Assert::assertStringContainsString('pub_theme::filament.widgets.auth.login', $view);
+=======
+
+        Assert::assertStringContainsString((string) 'pub_theme::filament.widgets.auth.login', (string) $view);
+>>>>>>> laraxot/dev
     });
 
     test('it has correct form schema', function (): void {

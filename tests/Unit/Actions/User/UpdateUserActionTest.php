@@ -6,7 +6,11 @@ use Modules\User\Actions\User\UpdateUserAction;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('UpdateUserAction', function (): void {
     test('action is accessible via app', function (): void {
@@ -15,8 +19,11 @@ describe('UpdateUserAction', function (): void {
 
     test('action has execute method', function (): void {
         $action = app(UpdateUserAction::class);
+<<<<<<< HEAD
 
         Assert::assertTrue(method_exists($action, 'execute'));
+=======
+>>>>>>> laraxot/dev
     });
 
     test('execute method accepts user and data parameters', function (): void {

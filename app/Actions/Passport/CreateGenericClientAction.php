@@ -29,7 +29,11 @@ class CreateGenericClientAction
         $client->provider = $provider ?? 'users';
         $client->revoked = false;
 
+<<<<<<< HEAD
         if ($user !== null) {
+=======
+        if (null !== $user) {
+>>>>>>> laraxot/dev
             $client->user_id = $user->id;
         }
 

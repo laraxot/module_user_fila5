@@ -5,8 +5,13 @@ tags: [baseuser, refactoringd]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "baseuser-refactoringd baseuser refactoring - completato"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -257,7 +262,11 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
+<<<<<<< HEAD
 - [User Module README](./README.md)
+=======
+- [User Module README](./readme.md)
+>>>>>>> laraxot/dev
 
 ### Root Progetto
 - [Code Quality](../../../docs/code-quality-analysis.md)

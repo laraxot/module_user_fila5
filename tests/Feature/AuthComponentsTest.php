@@ -47,8 +47,13 @@ describe('Auth Components Tests', function (): void {
         // Test the existing auth-session-status component rendering
         $html = View::make('components.auth-session-status', ['status' => 'Test status'])->render();
 
+<<<<<<< HEAD
         expect($html)->not->toBeEmpty();
         expect($html)->toContain('Test status');
+=======
+        expect($html)->toBeString();
+        expect($html)->not->toBeEmpty();
+>>>>>>> laraxot/dev
     });
 
     test('auth header component exists and renders', function (): void {

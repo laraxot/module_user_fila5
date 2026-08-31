@@ -7,15 +7,26 @@ namespace Modules\User\Console\Commands;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Support\Htmlable;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
+=======
+>>>>>>> laraxot/dev
 
 use function Laravel\Prompts\select;
 use function Laravel\Prompts\text;
 
+<<<<<<< HEAD
+=======
+use Modules\Xot\Actions\Cast\SafeObjectCastAction;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+use Webmozart\Assert\Assert;
+
+>>>>>>> laraxot/dev
 /**
  * Command to change user type based on project configuration.
  *
@@ -66,9 +77,17 @@ class ChangeTypeCommand extends Command
         $typeLabel = 'None';
         if (isset($user->type) && \is_object($user->type) && method_exists($user->type, 'getLabel')) {
             $enumType = $user->type;
+<<<<<<< HEAD
             /** @var Htmlable|string $label */
             $label = $enumType->getLabel();
             if ($label instanceof Htmlable) {
+=======
+            /** @var string|Htmlable|mixed */
+            $label = $enumType->getLabel();
+            if (\is_string($label)) {
+                $typeLabel = $label;
+            } elseif ($label instanceof Htmlable) {
+>>>>>>> laraxot/dev
                 $typeLabel = $label->toHtml();
             } else {
                 $typeLabel = (string) $label;
@@ -89,17 +108,27 @@ class ChangeTypeCommand extends Command
             ) {
                 $value = app(SafeObjectCastAction::class)
                     ->getStringProperty($item, 'value', '');
+<<<<<<< HEAD
                 $label = $item->getLabel();
                 $options[$value] = SafeStringCastAction::cast($label);
             } else {
                 $options[is_string($key) ? $key : SafeStringCastAction::cast($key)] = 'Unknown';
+=======
+                $options[$value] = (string) $item->getLabel();
+            } else {
+                $options[(string) $key] = 'Unknown';
+>>>>>>> laraxot/dev
             }
         }
 
         $newType = select('Select new user type:', $options);
 
         $newTypeEnum = $typeClass::tryFrom($newType);
+<<<<<<< HEAD
         if ($newTypeEnum === null) {
+=======
+        if (null === $newTypeEnum) {
+>>>>>>> laraxot/dev
             throw new \InvalidArgumentException('Invalid user type selected.');
         }
         Assert::isInstanceOf($newTypeEnum, HasLabel::class);

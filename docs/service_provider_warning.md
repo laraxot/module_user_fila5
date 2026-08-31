@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "service_provider_warning - User"
 module: user
@@ -7,6 +8,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> laraxot/dev
 # service_provider_warning - User
 
 ## Overview

@@ -7,7 +7,11 @@ use Modules\User\Actions\Socialite\ResolveUserNameFieldsFromSocialiteAction;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 function createMockSocialiteUser(?string $name, ?string $email): SocialiteUser
 {

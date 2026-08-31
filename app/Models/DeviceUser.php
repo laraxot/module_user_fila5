@@ -8,12 +8,18 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
 use Modules\TechPlanner\Models\Profile;
+=======
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Contracts\UserContract;
+>>>>>>> laraxot/dev
 use Modules\Xot\Datas\XotData;
 
 /**
  * Modules\User\Models\DeviceUser.
  *
+<<<<<<< HEAD
  * @property string|null $user_id
  * @property string|null $device_id
  * @property-read Profile|null $creator
@@ -31,11 +37,27 @@ use Modules\Xot\Datas\XotData;
  * @property Carbon|null $logout_at
  * @property string|null $push_notifications_token
  * @property bool|null $push_notifications_enabled
+=======
+ * @property Device|null $device
+ *
+ * @method static Builder|DeviceUser newModelQuery()
+ * @method static Builder|DeviceUser newQuery()
+ * @method static Builder|DeviceUser query()
+ *
+ * @property string      $id
+ * @property string      $device_id
+ * @property string      $user_id
+ * @property Carbon|null $login_at
+ * @property Carbon|null $logout_at
+ * @property string|null $push_notifications_token
+ * @property bool|null   $push_notifications_enabled
+>>>>>>> laraxot/dev
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  *
+<<<<<<< HEAD
  * @method static Builder<static>|DeviceUser whereCreatedAt($value)
  * @method static Builder<static>|DeviceUser whereCreatedBy($value)
  * @method static Builder<static>|DeviceUser whereDeviceId($value)
@@ -47,6 +69,27 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder<static>|DeviceUser whereUpdatedAt($value)
  * @method static Builder<static>|DeviceUser whereUpdatedBy($value)
  * @method static Builder<static>|DeviceUser whereUserId($value)
+=======
+ * @method static Builder|DeviceUser whereCreatedAt($value)
+ * @method static Builder|DeviceUser whereCreatedBy($value)
+ * @method static Builder|DeviceUser whereDeviceId($value)
+ * @method static Builder|DeviceUser whereId($value)
+ * @method static Builder|DeviceUser whereLoginAt($value)
+ * @method static Builder|DeviceUser whereLogoutAt($value)
+ * @method static Builder|DeviceUser wherePushNotificationsEnabled($value)
+ * @method static Builder|DeviceUser wherePushNotificationsToken($value)
+ * @method static Builder|DeviceUser whereUpdatedAt($value)
+ * @method static Builder|DeviceUser whereUpdatedBy($value)
+ * @method static Builder|DeviceUser whereUserId($value)
+ *
+ * @property ProfileContract|null $profile
+ * @property UserContract|null    $user
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @property ProfileContract|null $deleter
+ *
+ * @method static \Modules\User\Database\Factories\DeviceUserFactory factory($count = null, $state = [])
+>>>>>>> laraxot/dev
  *
  * @mixin \Eloquent
  */

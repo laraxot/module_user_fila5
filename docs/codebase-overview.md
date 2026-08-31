@@ -18,6 +18,7 @@ related:
 tags: [codebase, architecture, user, documentation]
 qmd: "user codebase architecture actions models tests documentation boundaries"
 issues:
+<<<<<<< HEAD
   - https://github.com/laraxot/<nome repository>/issues/123
 discussions:
   - https://github.com/laraxot/<nome repository>/discussions/124
@@ -27,6 +28,17 @@ github:
     - https://github.com/laraxot/<nome repository>/issues/123
   discussions:
     - https://github.com/laraxot/<nome repository>/discussions/124
+=======
+  - https://github.com/laraxot/base_quaeris_fila5/issues/123
+discussions:
+  - https://github.com/laraxot/base_quaeris_fila5/discussions/124
+github:
+  repo: laraxot/base_quaeris_fila5
+  issues:
+    - https://github.com/laraxot/base_quaeris_fila5/issues/123
+  discussions:
+    - https://github.com/laraxot/base_quaeris_fila5/discussions/124
+>>>>>>> laraxot/dev
 created_at: '2026-07-20'
 updated_at: '2026-07-20'
 created: 2026-07-20

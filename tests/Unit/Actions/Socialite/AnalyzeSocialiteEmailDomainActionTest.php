@@ -9,7 +9,11 @@ use Modules\User\Actions\Socialite\AnalyzeSocialiteEmailDomainAction;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 function createMockSocialiteUserForDomain(?string $email): SocialiteUser
 {

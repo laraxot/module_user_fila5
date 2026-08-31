@@ -5,8 +5,13 @@ tags: [index]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "index raw sources — user"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
 ---
 
@@ -39,7 +44,11 @@ Il layer raw per questo modulo/tema è **l'intera cartella `docs/`** (esclusa `d
 
 ## Schema di riferimento
 
+<<<<<<< HEAD
 → `docs/.schema/wiki-schema.md` (root progetto)
+=======
+→ `docs/.schema/WIKI_SCHEMA.md` (root progetto)
+>>>>>>> laraxot/dev
 → `docs/project/llm-wiki-module-adoption.md` (guida per moduli/temi)
 
 ---

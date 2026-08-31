@@ -7,9 +7,15 @@ created: 2026-07-27
 updated: 2026-07-27
 qmd: "user teams owner_id create_teams_table no add_owner_id migration naming create snake_case"
 issues:
+<<<<<<< HEAD
   - "https://github.com/laraxot/<nome repository>/issues/7"
 discussions:
   - "https://github.com/laraxot/<nome repository>/discussions/8"
+=======
+  - "https://github.com/laraxot/base_workorder_fila5/issues/7"
+discussions:
+  - "https://github.com/laraxot/base_workorder_fila5/discussions/8"
+>>>>>>> laraxot/dev
 related:
   - ./migration-naming-religion-user.md
   - ../../../../Xot/docs/wiki/concepts/xotbase-migration-religion.md

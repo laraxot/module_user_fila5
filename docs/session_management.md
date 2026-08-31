@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Gestione delle Sessioni"
 module: user
@@ -7,6 +8,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Gestione delle Sessioni
 
 ## Panoramica
@@ -76,7 +79,11 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - Aggiornare questo documento se vengono identificate nuove strategie di gestione delle sessioni o problemi.
 
 ## Collegamenti a Documentazione Correlata
+<<<<<<< HEAD
 - [Indice del Modulo Utente](./index.md)
+=======
+- [Indice del Modulo Utente](./INDEX.md)
+>>>>>>> laraxot/dev
 - [Modello BaseUser](./BaseUser.md)
 - [Implementazione delle Pagine di Autenticazione](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Gestione del Profilo](./PROFILE_MANAGEMENT.md)

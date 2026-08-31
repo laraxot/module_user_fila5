@@ -10,6 +10,10 @@ use Modules\User\Models\Role;
 use Spatie\Permission\Traits\HasRoles as SpatieHasRoles;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
+=======
+/** @phpstan-ignore trait.unused */
+>>>>>>> laraxot/dev
 trait HasRoles
 {
     use SpatieHasRoles;

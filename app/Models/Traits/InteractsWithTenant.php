@@ -31,7 +31,11 @@ trait InteractsWithTenant
     public function tenant(): BelongsTo
     {
         $tenant = $this->getTenant();
+<<<<<<< HEAD
         if ($tenant === null) {
+=======
+        if (null === $tenant) {
+>>>>>>> laraxot/dev
             $this->loadTenantFromSession();
             $tenant = $this->getTenant();
         }
@@ -73,9 +77,15 @@ trait InteractsWithTenant
         static::creating(static function ($model): void {
             // PHPStan Level 10: Verifica se il modello ha tenant_id
             // Uso isFillable() invece di property_exists() per Eloquent magic properties
+<<<<<<< HEAD
             if ($model !== null && $model instanceof Model && $model->isFillable('tenant_id')) {
                 $tenant = Filament::getTenant();
                 if ($tenant !== null) {
+=======
+            if (null !== $model && $model instanceof Model && $model->isFillable('tenant_id')) {
+                $tenant = Filament::getTenant();
+                if (null !== $tenant) {
+>>>>>>> laraxot/dev
                     // Usa setAttribute() invece di assegnazione diretta per PHPStan
                     $model->setAttribute('tenant_id', $tenant->getKey());
                 }
@@ -89,14 +99,22 @@ trait InteractsWithTenant
     protected function setTenantIdAttribute(?int $value): void
     {
         $tenant = Filament::getTenant();
+<<<<<<< HEAD
         if ($value === null && $tenant !== null) {
+=======
+        if (null === $value && null !== $tenant) {
+>>>>>>> laraxot/dev
             $tenantId = $tenant->getKey();
             if (is_int($tenantId)) {
                 $value = $tenantId;
             }
         }
 
+<<<<<<< HEAD
         if ($value !== null) {
+=======
+        if (null !== $value) {
+>>>>>>> laraxot/dev
             $this->attributes['tenant_id'] = $value;
         }
     }
@@ -107,14 +125,24 @@ trait InteractsWithTenant
     protected function applyTenantScope(): void
     {
         $tenant = $this->getTenant();
+<<<<<<< HEAD
         if ($tenant === null) {
+=======
+        if (null === $tenant) {
+>>>>>>> laraxot/dev
             $this->loadTenantFromSession();
             $tenant = $this->getTenant();
         }
 
+<<<<<<< HEAD
         if ($tenant !== null) {
             $tenantId = $tenant->getKey();
             if ($tenantId !== null) {
+=======
+        if (null !== $tenant) {
+            $tenantId = $tenant->getKey();
+            if (null !== $tenantId) {
+>>>>>>> laraxot/dev
                 static::addGlobalScope(new TenantScope());
             }
         }

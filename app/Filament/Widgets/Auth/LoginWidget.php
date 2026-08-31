@@ -6,7 +6,10 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Auth;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Route;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
@@ -47,11 +50,19 @@ class LoginWidget extends XotBaseSchemaWidget
             'password' => is_string($data['password'] ?? null) ? $data['password'] : '',
         ];
 
+<<<<<<< HEAD
         $remember = isset($data['remember']) && $data['remember'] === true;
 
         if (Auth::attempt($credentials, $remember)) {
             session()->regenerate();
             $redirectUrl = Route::has('dashboard')
+=======
+        $remember = isset($data['remember']) && true === $data['remember'];
+
+        if (Auth::attempt($credentials, $remember)) {
+            session()->regenerate();
+            $redirectUrl = \Illuminate\Support\Facades\Route::has('dashboard')
+>>>>>>> laraxot/dev
                 ? route('dashboard')
                 : url('/'.app()->getLocale());
             $this->redirect($redirectUrl);

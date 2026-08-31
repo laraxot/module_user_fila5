@@ -8,6 +8,10 @@ use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> laraxot/dev
 use Illuminate\Support\Str;
 use Modules\User\Filament\Resources\AuthenticationLogResource;
 use Modules\User\Filament\Resources\UserResource;
@@ -33,15 +37,28 @@ class ViewAuthenticationLog extends XotBaseViewRecord
                         ->schema([
                             'id' => TextEntry::make('id'),
                             'authenticatable_type' => TextEntry::make('authenticatable_type')
+<<<<<<< HEAD
                                 ->formatStateUsing(fn (?string $state): string => $state !== null ? Str::afterLast($state, '\\') : ''),
+=======
+                                ->formatStateUsing(fn (?string $state): string => null !== $state ? Str::afterLast($state, '\\') : ''),
+>>>>>>> laraxot/dev
                         ]),
 
                     'details_grid_2' => Grid::make(2)
                         ->schema([
                             'authenticatable_name' => TextEntry::make('authenticatable.name')
+<<<<<<< HEAD
                                 ->url(function (mixed $state, AuthenticationLog $record): ?string {
                                     $authenticatable = $record->authenticatable;
                                     if ($authenticatable !== null && method_exists($authenticatable, 'exists') && $authenticatable->exists) {
+=======
+                                ->url(function (mixed $state, ?Model $record): ?string {
+                                    if (! $record instanceof AuthenticationLog) {
+                                        return null;
+                                    }
+                                    $authenticatable = $record->authenticatable;
+                                    if (null !== $authenticatable && method_exists($authenticatable, 'exists') && $authenticatable->exists) {
+>>>>>>> laraxot/dev
                                         return UserResource::getUrl('view', ['record' => $authenticatable]);
                                     }
 
@@ -91,7 +108,11 @@ class ViewAuthenticationLog extends XotBaseViewRecord
                 ->schema([
                     'location_data' => TextEntry::make('location')
                         ->formatStateUsing(function (mixed $state): string {
+<<<<<<< HEAD
                             if ($state === null || $state === []) {
+=======
+                            if (null === $state || [] === $state) {
+>>>>>>> laraxot/dev
                                 return 'No location data';
                             }
 

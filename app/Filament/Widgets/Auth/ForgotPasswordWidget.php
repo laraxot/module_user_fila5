@@ -39,7 +39,11 @@ class ForgotPasswordWidget extends XotBaseSchemaWidget
 
         $status = Password::sendResetLink(['email' => $data['email']]);
 
+<<<<<<< HEAD
         if ($status === Password::RESET_LINK_SENT) {
+=======
+        if (Password::RESET_LINK_SENT === $status) {
+>>>>>>> laraxot/dev
             session()->flash('status', __($status));
         } else {
             $this->addError('email', __($status));

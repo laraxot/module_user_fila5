@@ -25,7 +25,11 @@ describe('User Model Basic', function (): void {
     });
 
     test('user model can create basic record', function (): void {
+<<<<<<< HEAD
         /** @var TestCase $this */
+=======
+        /* @var TestCase $this */
+>>>>>>> laraxot/dev
         $this->skipUnlessUsersTableReady();
 
         $user = createTestUser([
@@ -44,7 +48,11 @@ describe('User Model Basic', function (): void {
     });
 
     test('user model can query records', function (): void {
+<<<<<<< HEAD
         /** @var TestCase $this */
+=======
+        /* @var TestCase $this */
+>>>>>>> laraxot/dev
         $this->skipUnlessUsersTableReady();
 
         $user1 = createTestUser(['name' => 'User 1']);
@@ -56,7 +64,11 @@ describe('User Model Basic', function (): void {
     });
 
     test('user model can filter records', function (): void {
+<<<<<<< HEAD
         /** @var TestCase $this */
+=======
+        /* @var TestCase $this */
+>>>>>>> laraxot/dev
         $this->skipUnlessUsersTableReady();
 
         $activeUser = createTestUser([
@@ -78,7 +90,11 @@ describe('User Model Basic', function (): void {
     });
 
     test('user model can update records', function (): void {
+<<<<<<< HEAD
         /** @var TestCase $this */
+=======
+        /* @var TestCase $this */
+>>>>>>> laraxot/dev
         $this->skipUnlessUsersTableReady();
 
         $user = createTestUser(['name' => 'Original Name']);

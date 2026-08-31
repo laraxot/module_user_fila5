@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Modules\Xot\Models\Traits\RelationX;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Models\XotBaseModel;
 
 /**
@@ -12,8 +15,11 @@ use Modules\Xot\Models\XotBaseModel;
  */
 abstract class BaseModel extends XotBaseModel
 {
+<<<<<<< HEAD
     use RelationX;
 
+=======
+>>>>>>> laraxot/dev
     /** @var string */
     protected $connection = 'user';
 

@@ -8,7 +8,11 @@ use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('User Misc Actions Coverage', function (): void {
     test('GetCurrentDeviceAction is accessible', function (): void {
@@ -25,19 +29,28 @@ describe('User Misc Actions Coverage', function (): void {
 
     test('GetCurrentDeviceAction has execute method', function (): void {
         $action = app(GetCurrentDeviceAction::class);
+<<<<<<< HEAD
 
         Assert::assertTrue(method_exists($action, 'execute'));
+=======
+>>>>>>> laraxot/dev
     });
 
     test('LogRegistrationAction has execute method', function (): void {
         $action = app(LogRegistrationAction::class);
+<<<<<<< HEAD
 
         Assert::assertTrue(method_exists($action, 'execute'));
+=======
+>>>>>>> laraxot/dev
     });
 
     test('SendOtpByUserAction has execute method', function (): void {
         $action = app(SendOtpByUserAction::class);
+<<<<<<< HEAD
 
         Assert::assertTrue(method_exists($action, 'execute'));
+=======
+>>>>>>> laraxot/dev
     });
 });

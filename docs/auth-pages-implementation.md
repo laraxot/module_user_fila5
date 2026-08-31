@@ -5,8 +5,13 @@ tags: [auth, pages, implementation]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "auth-pages-implementation implementazione corretta delle pagine auth"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -23,7 +28,11 @@ related:
 ## Collegamenti correlati
 - [Documentazione centrale](../../../../docs/readme.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+<<<<<<< HEAD
 - [README modulo User](./README.md)
+=======
+- [README modulo User](./readme.md)
+>>>>>>> laraxot/dev
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Errors](./volt-errors-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
@@ -486,7 +495,11 @@ Utilizzare sempre la funzione `__()` per le stringhe visualizzate all'utente:
 ## Collegamenti correlati
 - [Documentazione centrale](../../../../docs/readme.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+<<<<<<< HEAD
 - [README modulo User](./README.md)
+=======
+- [README modulo User](./readme.md)
+>>>>>>> laraxot/dev
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Errors](./volt-errors-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)

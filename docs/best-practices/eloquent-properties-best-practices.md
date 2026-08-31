@@ -5,8 +5,13 @@ tags: [eloquent, properties, best, practices]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "eloquent-properties-best-practices 🛡️ best practices per proprietà eloquent"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./auth-components-best-practices.md"
   - "./auth-widget-rules.md"

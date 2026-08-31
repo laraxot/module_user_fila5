@@ -10,7 +10,11 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('Create specific passport client actions', function (): void {
     afterEach(function (): void {

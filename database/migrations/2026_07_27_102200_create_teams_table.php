@@ -12,8 +12,12 @@ use Modules\Xot\Datas\XotData;
  *
  * owner_id → User (senza constrained cross-DB).
  */
+<<<<<<< HEAD
 return new class() extends XotBaseMigration
 {
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
     protected ?string $model_class = Team::class;
 
     public function up(): void

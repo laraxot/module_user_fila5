@@ -9,7 +9,10 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite;
 
 use Illuminate\Support\Arr;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 
 class GetProviderScopesAction
@@ -33,9 +36,13 @@ class GetProviderScopesAction
             return [];
         }
 
+<<<<<<< HEAD
         return array_values(array_map(
             static fn (mixed $scope): string => SafeStringCastAction::cast($scope),
             $scopes
         ));
+=======
+        return array_values(array_map(static fn (mixed $scope): string => (string) $scope, $scopes));
+>>>>>>> laraxot/dev
     }
 }

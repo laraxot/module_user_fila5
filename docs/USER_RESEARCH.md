@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Module - User Research"
 module: user
@@ -7,6 +8,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> laraxot/dev
 # User Module - User Research
 
 **Module:** User  

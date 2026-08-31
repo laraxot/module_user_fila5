@@ -5,8 +5,13 @@ tags: [spatie, permissions, methods]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "spatie-permissions-methods user module - spatie permission methods reference"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -423,6 +428,7 @@ public function assignAdminRole(User $user): void
 ### Setup Test User
 
 ```php
+<<<<<<< HEAD
 use Modules\<nome progetto>\Models\User;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
@@ -918,6 +924,8 @@ public function assignAdminRole(User $user): void
 ### Setup Test User
 
 ```php
+=======
+>>>>>>> laraxot/dev
 use Modules\Fixcity\Models\User;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
@@ -987,7 +995,11 @@ $user->assignRole(Role::findByName('admin', 'web'));
 
 - **Official Docs**: https://spatie.be/docs/laravel-permission/
 - **GitHub**: https://github.com/spatie/laravel-permission
+<<<<<<< HEAD
 - **Changelog**: https://github.com/spatie/laravel-permission/blob/main/changelog.md
+=======
+- **Changelog**: https://github.com/spatie/laravel-permission/blob/main/CHANGELOG.md
+>>>>>>> laraxot/dev
 
 ## Version Information
 

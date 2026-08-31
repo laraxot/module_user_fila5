@@ -8,10 +8,17 @@ use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('user-db');
 
 /**
  * @param  array<string, mixed>  $attributes
+=======
+uses(TestCase::class);
+
+/**
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function makeAuthenticationLogFor(User $user, array $attributes = []): AuthenticationLog
 {

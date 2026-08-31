@@ -17,7 +17,11 @@ final class NotificationSchema
         $model = new Notification();
 
         $connection = $model->getConnectionName();
+<<<<<<< HEAD
         if (! is_string($connection) || $connection === '') {
+=======
+        if (! is_string($connection) || '' === $connection) {
+>>>>>>> laraxot/dev
             $default = config('database.default');
             $connection = is_string($default) ? $default : 'mysql';
         }

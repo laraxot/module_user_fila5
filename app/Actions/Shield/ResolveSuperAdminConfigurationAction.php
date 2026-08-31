@@ -29,6 +29,7 @@ class ResolveSuperAdminConfigurationAction
      */
     public function execute(): array
     {
+<<<<<<< HEAD
         $superAdminConfig = FilamentShieldData::make()->super_admin;
 
         return [
@@ -38,4 +39,26 @@ class ResolveSuperAdminConfigurationAction
             'gate_interception_status' => $superAdminConfig->intercept_gate,
         ];
     }
+=======
+        $shieldData = FilamentShieldData::make();
+        $superAdminConfig = $shieldData->super_admin;
+
+        return [
+            'enabled' => $this->toBoolean($superAdminConfig->enabled ?? false),
+            'name' => $this->toString($superAdminConfig->name ?? 'Super Admin'),
+            'defined_via_gate' => $this->toBoolean($superAdminConfig->define_via_gate ?? false),
+            'gate_interception_status' => $this->toString($superAdminConfig->intercept_gate ?? 'block'),
+        ];
+    }
+
+    private function toBoolean(mixed $value): bool
+    {
+        return is_bool($value) ? $value : false;
+    }
+
+    private function toString(mixed $value): string
+    {
+        return is_string($value) ? $value : '';
+    }
+>>>>>>> laraxot/dev
 }

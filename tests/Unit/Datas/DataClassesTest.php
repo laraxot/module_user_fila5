@@ -18,7 +18,11 @@ use Modules\User\Datas\SuperAdminData;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 test('PermissionData can be instantiated', function () {
     $permissionData = PermissionData::from([

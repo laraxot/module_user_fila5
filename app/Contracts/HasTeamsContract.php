@@ -20,6 +20,7 @@ use Modules\User\Models\Role;
 /**
  * Modules\User\Contracts\HasTeamsContract.
  *
+<<<<<<< HEAD
  * @property int $id
  * @property string $name
  * @property string $two_factor_secret
@@ -27,6 +28,15 @@ use Modules\User\Models\Role;
  * @property Collection<int, Token> $tokens
  * @property Carbon|null $two_factor_confirmed_at
  * @property int $current_team_id
+=======
+ * @property int                    $id
+ * @property string                 $name
+ * @property string                 $two_factor_secret
+ * @property TeamContract|null      $currentTeam
+ * @property Collection<int, Token> $tokens
+ * @property Carbon|null            $two_factor_confirmed_at
+ * @property int                    $current_team_id
+>>>>>>> laraxot/dev
  *
  * @phpstan-require-extends Model
  *

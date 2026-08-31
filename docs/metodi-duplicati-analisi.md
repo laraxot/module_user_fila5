@@ -14,6 +14,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/metodi-duplicati-analisi-4.md
+<<<<<<< HEAD
 
 ---
 
@@ -1101,3 +1102,5 @@ public function getTableFilters(): array
 4. Implementazione ColumnBuilder
 
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
+=======
+>>>>>>> laraxot/dev

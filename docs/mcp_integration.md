@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Integrazione dei Server MCP con il Modulo User"
 module: user
@@ -7,6 +8,8 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+=======
+>>>>>>> laraxot/dev
 # Integrazione dei Server MCP con il Modulo User
 
 ## Panoramica

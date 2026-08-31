@@ -19,8 +19,12 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * The `id` is NEVER exposed in APIs or URLs; `uuid` is used for all external
  * references. XotBaseModel::casts() already handles both.
  */
+<<<<<<< HEAD
 return new class() extends XotBaseMigration
 {
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
     protected ?string $model_class = Profile::class;
 
     public function up(): void

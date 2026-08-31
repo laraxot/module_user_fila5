@@ -7,7 +7,10 @@ namespace Modules\User\Tests\Unit;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use ReflectionClass;
+=======
+>>>>>>> laraxot/dev
 
 use function Safe\glob;
 
@@ -27,7 +30,11 @@ function userBoostClasses(string $pattern): array
         $relative = str_replace($root.'/', '', $file);
         $candidate = 'Modules\\User\\'.str_replace(['/', '.php'], ['\\', ''], $relative);
         if (class_exists($candidate) || enum_exists($candidate)) {
+<<<<<<< HEAD
             /** @var class-string $candidate */
+=======
+            /* @var class-string $candidate */
+>>>>>>> laraxot/dev
             $classes[] = $candidate;
         }
     }
@@ -59,7 +66,11 @@ describe('User coverage boost', function (): void {
 
     test('actions resolve or instantiate with strict types', function (): void {
         foreach (userBoostClasses('Actions/**/*.php') as $class) {
+<<<<<<< HEAD
             $ref = new ReflectionClass($class);
+=======
+            $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
             if ($ref->isAbstract() || $ref->isInterface()) {
                 continue;
             }
@@ -74,7 +85,11 @@ describe('User coverage boost', function (): void {
 
     test('policies declare crud methods', function (): void {
         foreach (userBoostClasses('Models/Policies/*.php') as $class) {
+<<<<<<< HEAD
             $ref = new ReflectionClass($class);
+=======
+            $ref = new \ReflectionClass($class);
+>>>>>>> laraxot/dev
             if ($ref->isAbstract()) {
                 continue;
             }
@@ -86,11 +101,19 @@ describe('User coverage boost', function (): void {
         $checked = 0;
         // Safe\glob non espande sempre **; Datas User è piatto sotto app/Datas.
         foreach (userBoostClasses('Datas/*.php') as $class) {
+<<<<<<< HEAD
             $ref = new ReflectionClass($class);
             if ($ref->isAbstract()) {
                 continue;
             }
             $checked++;
+=======
+            $ref = new \ReflectionClass($class);
+            if ($ref->isAbstract()) {
+                continue;
+            }
+            ++$checked;
+>>>>>>> laraxot/dev
             if (method_exists($class, 'from')) {
                 Assert::assertTrue($ref->hasMethod('from'));
             }

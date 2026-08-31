@@ -29,6 +29,10 @@ class TermsOfService extends Component
 
     public function testfunction(): void
     {
+<<<<<<< HEAD
         throw new \RuntimeException('Removed debug dddx');
+=======
+        dddx('wip');
+>>>>>>> laraxot/dev
     }
 }

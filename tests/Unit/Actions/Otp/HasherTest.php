@@ -6,7 +6,11 @@ use Modules\User\Actions\Otp\Hasher;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-user-db');
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 it('makes hashed value', function (): void {
     $hasher = app(Hasher::class);

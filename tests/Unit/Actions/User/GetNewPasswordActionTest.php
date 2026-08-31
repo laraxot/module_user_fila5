@@ -8,7 +8,11 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('user-db');
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('GetNewPasswordAction', function (): void {
     it('generates and stores a new hashed password for the user', function (): void {
@@ -37,7 +41,11 @@ describe('GetNewPasswordAction', function (): void {
         $firstHash = (string) $freshModel0->password;
 
         $refreshedUser = $user->fresh();
+<<<<<<< HEAD
         if ($refreshedUser === null) {
+=======
+        if (null === $refreshedUser) {
+>>>>>>> laraxot/dev
             Assert::fail('User refresh failed.');
         }
         $secondPlain = app(GetNewPasswordAction::class)->execute($refreshedUser);

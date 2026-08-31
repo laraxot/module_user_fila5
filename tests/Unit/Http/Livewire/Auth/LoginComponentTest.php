@@ -12,7 +12,10 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
+<<<<<<< HEAD
 use Mockery;
+=======
+>>>>>>> laraxot/dev
 use Mockery\ExpectationInterface;
 use Modules\User\Http\Livewire\Auth\Login;
 use Modules\User\Tests\TestCase;
@@ -23,7 +26,11 @@ use Spatie\Permission\Models\Role;
 uses(TestCase::class)->group('no-user-db');
 
 afterEach(function (): void {
+<<<<<<< HEAD
     Mockery::close();
+=======
+    \Mockery::close();
+>>>>>>> laraxot/dev
 });
 
 /**
@@ -41,7 +48,11 @@ function loginFormSchema(Login $component): array
 }
 
 /**
+<<<<<<< HEAD
  * @param  list<string>  $roleNames
+=======
+ * @param list<string> $roleNames
+>>>>>>> laraxot/dev
  */
 function loginRedirectForRoles(array $roleNames): string
 {
@@ -57,12 +68,20 @@ function loginRedirectForRoles(array $roleNames): string
         $roleNames
     ));
 
+<<<<<<< HEAD
     $relation = Mockery::mock(BelongsToMany::class);
+=======
+    $relation = \Mockery::mock(BelongsToMany::class);
+>>>>>>> laraxot/dev
     $relationGetExpectation = $relation->shouldReceive('get');
     \assert($relationGetExpectation instanceof ExpectationInterface);
     $relationGetExpectation->andReturn($roles);
 
+<<<<<<< HEAD
     $userMock = Mockery::mock($user)->makePartial();
+=======
+    $userMock = \Mockery::mock($user)->makePartial();
+>>>>>>> laraxot/dev
     $userRolesExpectation = $userMock->shouldReceive('roles');
     \assert($userRolesExpectation instanceof ExpectationInterface);
     $userRolesExpectation->andReturn($relation);

@@ -17,7 +17,12 @@ class Message extends Component
      */
     public function __construct(
         // public string $message
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 
     /**
      * Get the view / contents that represent the component.
@@ -26,10 +31,18 @@ class Message extends Component
     {
         $metatag = MetatagData::make();
         $view = 'user::components.mail.html.message';
+<<<<<<< HEAD
         $viewParams = [
             'logo' => $metatag->getBrandLogo(),
         ];
 
         return view($view, $viewParams);
+=======
+        $view_params = [
+            'logo' => asset($metatag->getLogoHeader()),
+        ];
+
+        return view($view, $view_params);
+>>>>>>> laraxot/dev
     }
 }

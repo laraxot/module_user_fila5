@@ -5,8 +5,13 @@ tags: [accessor, delegation, pattern]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "accessor-delegation-pattern accessor delegation pattern (sacro)"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -61,4 +66,8 @@ protected function getSomeValue(): float
 ---
 **Riferimenti**:
 - [Documento Canonico AI Agents](../../../../.agents/docs/accessor-auto-persistence.md)
+<<<<<<< HEAD
 - [index.md](index.md)
+=======
+- [INDEX.md](INDEX.md)
+>>>>>>> laraxot/dev
