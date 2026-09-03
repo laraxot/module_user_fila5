@@ -1,0 +1,28 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'actions' => [
+        'view' => [
+            'label' => 'view',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+    ],
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => [
+            'name' => 'Teams und Mandanten',
+            'description' => 'Organisationen, Einladungen und Mitgliedschaften',
+        ],
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+];

@@ -1,0 +1,42 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'navigation' => [
+        'label' => 'Client OAuth',
+        'plural_label' => 'Client OAuth',
+        'group' => ['name' => 'OAuth', 'description' => 'Client, token e API Passport'],
+        'icon' => 'heroicon-o-key',
+        'sort' => 89,
+    ],
+    'label' => 'Client OAuth',
+    'plural_label' => 'Client OAuth',
+    'fields' => [
+        'name' => ['label' => 'Nome', 'tooltip' => 'Nome del client', 'placeholder' => 'Inserisci il nome', 'helper_text' => 'Nome identificativo del client', 'description' => 'Nome del client OAuth'],
+        'redirect' => ['label' => 'Redirect URI', 'tooltip' => 'URI di redirect', 'placeholder' => 'https://esempio.it/callback', 'helper_text' => 'URI dove sarà reindirizzato dopo l\'autenticazione', 'description' => 'URI di redirect per OAuth'],
+        'secret' => ['label' => 'Secret', 'tooltip' => 'Secret del client', 'placeholder' => 'Inserisci il secret', 'helper_text' => 'Secret per l\'autenticazione', 'description' => 'Secret del client'],
+        'password_client' => ['label' => 'Client Password', 'tooltip' => 'Tipo client password', 'helper_text' => 'Indica se è un client di tipo password', 'description' => 'Flag per client di tipo password'],
+        'redirect_callback' => ['label' => 'Redirect Callback', 'tooltip' => 'URI di callback', 'placeholder' => 'https://esempio.it/callback', 'helper_text' => 'URI per il callback', 'description' => 'URI di callback'],
+    ],
+    'actions' => [
+        'create' => ['label' => 'Crea Client', 'tooltip' => 'Crea un nuovo client', 'helper_text' => 'Crea un nuovo client OAuth', 'description' => 'Azione per creare', 'icon' => 'create'],
+        'edit' => ['label' => 'Modifica Client', 'tooltip' => 'Modifica il client', 'helper_text' => 'Modifica il client esistente', 'description' => 'Azione per modificare', 'icon' => 'edit'],
+        'delete' => ['label' => 'Elimina Client', 'tooltip' => 'Elimina il client', 'helper_text' => 'Elimina il client', 'description' => 'Azione per eliminare', 'icon' => 'delete'],
+        'logout' => ['label' => 'Logout', 'tooltip' => 'Disconnettiti', 'helper_text' => 'Esci dall\'account', 'description' => 'Azione di logout', 'icon' => 'heroicon-o-arrow-right-on-rectangle'],
+        'profile' => ['tooltip' => 'profile', 'icon' => 'profile', 'label' => 'profile'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+        'applyFilters' => ['label' => 'applyFilters', 'icon' => 'applyFilters', 'tooltip' => 'applyFilters'],
+        'openFilters' => ['label' => 'openFilters', 'icon' => 'openFilters', 'tooltip' => 'openFilters'],
+        'resetFilters' => ['label' => 'resetFilters', 'icon' => 'resetFilters', 'tooltip' => 'resetFilters'],
+        'applyTableColumnManager' => ['label' => 'applyTableColumnManager', 'icon' => 'applyTableColumnManager', 'tooltip' => 'applyTableColumnManager'],
+        'openColumnManager' => ['label' => 'openColumnManager', 'icon' => 'openColumnManager', 'tooltip' => 'openColumnManager'],
+        'resetColumnManager' => ['label' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'tooltip' => 'resetColumnManager'],
+        'reorderRecords' => ['label' => 'reorderRecords', 'icon' => 'reorderRecords', 'tooltip' => 'reorderRecords'],
+        'revoke' => ['label' => 'revoke', 'icon' => 'revoke', 'tooltip' => 'revoke'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'cancel' => ['label' => 'cancel', 'icon' => 'cancel', 'tooltip' => 'cancel'],
+    ],
+    'messages' => ['created' => 'Client creato con successo', 'updated' => 'Client aggiornato con successo', 'deleted' => 'Client eliminato con successo'],
+];

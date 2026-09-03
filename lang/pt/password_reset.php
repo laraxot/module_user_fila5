@@ -1,0 +1,51 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'navigation' => [
+        'label' => 'Redefinição de Senha',
+        'group' => [
+            'name' => 'Autenticação',
+            'description' => 'Acesso, registo e credenciais',
+        ],
+        'icon' => 'heroicon-o-key',
+        'sort' => 42,
+    ],
+    'label' => 'Redefinição de Senha',
+    'plural_label' => 'Redefinições de Senha',
+    'fields' => [
+        'id' => [
+            'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'email' => [
+            'label' => 'Email',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'token' => [
+            'label' => 'Token',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'Criado Em',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'actions' => [
+        'resend_email' => [
+            'label' => 'Reenviar Email',
+        ],
+        'view_request' => [
+            'label' => 'Ver Solicitação',
+        ],
+    ],
+];
