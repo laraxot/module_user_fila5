@@ -15,8 +15,9 @@ use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Locked;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
-use Modules\User\Models\User;
+use Modules\User\Models\BaseUser;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use RuntimeException;
 use Webmozart\Assert\Assert;
 use Webmozart\Assert\InvalidArgumentException;
 
@@ -75,10 +76,10 @@ final class ProfileEditVoltComponent extends Component
     public function mount(): void
     {
         try {
-            /** @var User|null $user */
             $user = Auth::user();
-            Assert::notNull($user, 'User must be authenticated');
-            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+            if (! $user instanceof BaseUser) {
+                throw new RuntimeException('User must be authenticated and an instance of BaseUser model');
+            }
 
             $this->first_name = (string) ($user->first_name ?? '');
             $this->last_name = (string) ($user->last_name ?? '');
@@ -118,15 +119,20 @@ final class ProfileEditVoltComponent extends Component
             ]);
 
             $user = Auth::user();
-            Assert::notNull($user, 'User must be authenticated for profile update');
-            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+            if (! $user instanceof BaseUser) {
+                throw new RuntimeException('User must be authenticated and an instance of BaseUser model for profile update');
+            }
             Assert::same($this->user_id, SafeStringCastAction::cast($user->id), 'User ID mismatch detected');
 
             $emailChanged = $user->email !== $validated['email'];
 
             if ($emailChanged) {
+                // $user::where(), non User::where(): il modello di autenticazione reale e'
+                // configurato in config/auth.php e puo' essere una sottoclasse concreta
+                // diversa da Modules\User\Models\User (qui Modules\Quaeris\Models\User);
+                // $user:: usa late static binding sull'istanza narrowed sopra.
                 Assert::false(
-                    User::where('email', $validated['email'])->where('id', '!=', $this->user_id)->exists(),
+                    $user::where('email', $validated['email'])->where('id', '!=', $this->user_id)->exists(),
                     'Email is already in use by another user',
                 );
             }
@@ -186,10 +192,10 @@ final class ProfileEditVoltComponent extends Component
                 'password_confirmation' => ['required'],
             ]);
 
-            /** @var User $user */
             $user = Auth::user();
-            Assert::notNull($user, 'User must be authenticated for password update');
-            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+            if (! $user instanceof BaseUser) {
+                throw new RuntimeException('User must be authenticated and an instance of BaseUser model for password update');
+            }
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
             Assert::stringNotEmpty($this->current_password, 'Current password cannot be empty');
@@ -199,7 +205,9 @@ final class ProfileEditVoltComponent extends Component
             Assert::greaterThanEq(strlen($this->password), 8, 'Password must be at least 8 characters long');
 
             $hashedPassword = $user->password;
-            Assert::stringNotEmpty($hashedPassword, 'Stored password hash is missing');
+            if (null === $hashedPassword) {
+                throw new RuntimeException('Stored password hash is missing');
+            }
             Assert::true(Hash::check($this->current_password, $hashedPassword), 'Current password is incorrect');
             Assert::false(
                 Hash::check($this->password, $hashedPassword),
@@ -250,13 +258,16 @@ final class ProfileEditVoltComponent extends Component
             ]);
 
             $user = Auth::user();
-            Assert::notNull($user, 'User must be authenticated for account deletion');
-            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+            if (! $user instanceof BaseUser) {
+                throw new RuntimeException('User must be authenticated and an instance of BaseUser model for account deletion');
+            }
             Assert::same($this->user_id, SafeStringCastAction::cast($user->id), 'User ID mismatch detected');
 
             Assert::stringNotEmpty($this->delete_password, 'Password cannot be empty for account deletion');
             $hashedPassword = $user->password;
-            Assert::stringNotEmpty($hashedPassword, 'Stored password hash is missing');
+            if (null === $hashedPassword) {
+                throw new RuntimeException('Stored password hash is missing');
+            }
             Assert::true(
                 Hash::check($this->delete_password, $hashedPassword),
                 'Password is incorrect for account deletion',

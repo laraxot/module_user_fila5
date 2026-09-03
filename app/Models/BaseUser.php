@@ -22,6 +22,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
@@ -50,6 +51,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * functionality for the application. It extends Laravel's Authenticatable class
  * and implements the required interfaces for Filament and multi-tenancy.
  *
+ * @property string                                                    $id
  * @property Collection<int, OauthClient>                              $clients
  * @property int|null                                                  $clients_count
  * @property Team|null                                                 $currentTeam
@@ -85,12 +87,12 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @property bool|null                                                 $is_active
  * @property bool|null                                                 $is_otp
  * @property string|null                                               $type
- * @property \DateTime|null                                            $password_expires_at
- * @property \DateTime|null                                            $email_verified_at
+ * @property Carbon|null                                            $password_expires_at
+ * @property Carbon|null                                            $email_verified_at
  * @property string|null                                               $remember_token
- * @property \DateTime|null                                            $created_at
- * @property \DateTime|null                                            $updated_at
- * @property \DateTime|null                                            $deleted_at
+ * @property Carbon|null                                            $created_at
+ * @property Carbon|null                                            $updated_at
+ * @property Carbon|null                                            $deleted_at
  * @property string|null                                               $created_by
  * @property string|null                                               $updated_by
  * @property string|null                                               $deleted_by
