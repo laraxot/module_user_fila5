@@ -18,17 +18,16 @@ return [
     'navigation' => [
         'name' => 'Clients',
         'plural' => 'Clients',
-        'group' => ['name' => 'OAuth', 'description' => 'Client, token e API Passport'],
+        'group' => ['name' => 'General', 'description' => 'General Settings'],
         'label' => 'Clients',
         'sort' => 1,
-        'icon' => 'heroicon-o-rectangle-stack',
+        'icon' => 'heroicon-o-collection',
     ],
     'label' => 'Clients',
     'plural_label' => 'Clients (Plurale)',
     'actions' => [
         'create' => ['label' => 'Crea Clients', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Clients'],
-        'delete' => ['label' => 'Elimina Clients', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+        'delete' => ['label' => 'Elimina Clients'],
     ],
 ];

@@ -20,6 +20,6 @@ return [
         'created_by' => ['label' => 'created_by'],
     ],
     'actions' => [
-        'delete' => ['tooltip' => 'delete'],
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
     ],
 ];

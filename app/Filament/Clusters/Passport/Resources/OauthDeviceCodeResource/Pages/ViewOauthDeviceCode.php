@@ -14,7 +14,6 @@ use Illuminate\Support\Str;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource;
 use Modules\User\Filament\Resources\UserResource;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 
@@ -34,7 +33,7 @@ class ViewOauthDeviceCode extends XotBaseViewRecord
                     'code_grid' => Grid::make(2)
                         ->schema([
                             'id' => TextEntry::make('id')
-                                ->formatStateUsing(fn (mixed $state): string => Str::limit(SafeStringCastAction::cast($state), 15, '...')),
+                                ->formatStateUsing(fn (mixed $state): string => Str::limit(is_scalar($state) ? (string) $state : '', 15, '...')),
                             'user_code' => TextEntry::make('user_code'),
                             'client_name' => TextEntry::make('client.name')
                                 ->url(function (mixed $state, mixed $record): ?string {
@@ -75,10 +74,10 @@ class ViewOauthDeviceCode extends XotBaseViewRecord
                         ->formatStateUsing(function (mixed $state): string {
                             if (is_array($state)) {
                                 /* @var array<int|string, mixed> $state */
-                                return implode(', ', array_map(fn (mixed $item): string => SafeStringCastAction::cast($item), $state));
+                                return implode(', ', array_map(fn (mixed $item): string => is_scalar($item) ? (string) $item : '', $state));
                             }
 
-                            return SafeStringCastAction::cast($state);
+                            return is_scalar($state) ? (string) $state : '';
                         })
                         ->columnSpanFull(),
                 ])->columns(1),

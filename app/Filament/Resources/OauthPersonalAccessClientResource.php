@@ -37,11 +37,10 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     protected static \BackedEnum|string|null $navigationIcon = 'heroicon-o-key';
 
     /**
-     * Schema legacy del form: la sorgente di verità è OauthPersonalAccessClientForm::getFormSchema().
-     *
      * @return array<string, Component>
      */
-    public static function getFormSchemaOld(): array
+    #[\Override]
+    public static function getFormSchema(): array
     {
         return [
             'oauth_personal_access_client' => Section::make('OAuth Personal Access Client Information')

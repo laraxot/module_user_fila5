@@ -10,7 +10,6 @@ use Filament\Actions\EditAction;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 use function Safe\json_encode;
@@ -47,11 +46,15 @@ class AuthenticationLogsRelationManager extends XotBaseRelationManager
                 ->formatStateUsing(function (mixed $state) {
                     if (is_array($state)) {
                         return collect($state)
-                            ->map(fn (mixed $value, int|string $key): string => SafeStringCastAction::cast($key).': '.SafeStringCastAction::cast($value))
+                            ->map(function (mixed $value, int|string $key): string {
+                                $valueString = is_scalar($value) || $value instanceof \Stringable ? (string) $value : '';
+
+                                return $key.': '.$valueString;
+                            })
                             ->join(', ');
                     }
 
-                    if (null === $state) {
+                    if ($state === null) {
                         return 'N/A';
                     }
 

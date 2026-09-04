@@ -5,9 +5,8 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
-use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
-class OauthDeviceCodeInfolist extends XotBaseResourceInfolist
+class OauthDeviceCodeInfolist
 {
     /**
      * @return array<string, TextEntry>

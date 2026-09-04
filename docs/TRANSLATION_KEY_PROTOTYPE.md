@@ -1,3 +1,12 @@
+---
+title: "TRANSLATION KEY PROTOTYPE"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 Translation key prototype
 
 Project convention: '<namespace>::<context>.<collection>.<item>.<type>'

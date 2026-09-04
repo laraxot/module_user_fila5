@@ -8,7 +8,7 @@ return [
         'plural' => 'Aspetto',
         'group' => [
             'name' => 'Aspetto',
-            'description' => 'Temi, colori e personalizzazioni',
+            'description' => 'Personalizzazione dell\'aspetto del sistema',
         ],
         'label' => 'Aspetto',
         'icon' => 'heroicon-o-paint-brush',

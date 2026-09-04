@@ -44,7 +44,7 @@ class ViewSocialiteUser extends XotBaseViewRecord
                                     return null;
                                 }),
                             'provider' => TextEntry::make('provider')
-                                ->formatStateUsing(fn (mixed $state): string => is_string($state) ? Str::title($state) : ''),
+                                ->formatStateUsing(fn ($state): string => is_string($state) ? Str::title($state) : ''),
                         ]),
 
                     'provider_grid' => Grid::make(2)

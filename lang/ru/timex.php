@@ -40,10 +40,7 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => [
-            'name' => 'Настройки',
-            'description' => 'Настройка модуля пользователей',
-        ],
+        'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

@@ -6,10 +6,7 @@ return [
     'navigation' => [
         'label' => 'Azione Cambia Password',
         'plural_label' => 'Azione Cambia Password',
-        'group' => [
-            'name' => 'Autenticazione',
-            'description' => 'Accesso, registrazione e credenziali',
-        ],
+        'group' => 'Profilo',
         'icon' => 'heroicon-o-lock-closed',
         'sort' => 13,
     ],

@@ -16,6 +16,6 @@ return [
         'deleted_by' => ['label' => 'deleted_by'],
     ],
     'actions' => [
-        'delete' => ['tooltip' => 'delete'],
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
     ],
 ];

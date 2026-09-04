@@ -21,7 +21,7 @@ class UsersRelationManager extends XotBaseRelationManager
      * @return array<Component>
      */
     #[\Override]
-    public function getFormSchemaOld(): array
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('name')->required()->maxLength(255),
@@ -33,14 +33,14 @@ class UsersRelationManager extends XotBaseRelationManager
             DateTimePicker::make('email_verified_at')->nullable(),
             TextInput::make('password')
                 ->password()
-                ->required(fn (string $context) => 'create' === $context)
+                ->required(fn ($context) => 'create' === $context)
                 ->minLength(8)
                 ->same('password_confirmation')
                 ->dehydrated(filled(...))
                 ->dehydrateStateUsing(bcrypt(...)),
             TextInput::make('password_confirmation')
                 ->password()
-                ->required(fn (string $context) => 'create' === $context)
+                ->required(fn ($context) => 'create' === $context)
                 ->minLength(8),
         ];
     }

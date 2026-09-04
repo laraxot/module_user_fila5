@@ -5,8 +5,8 @@ tags: [assign, module, command]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "assign-module-command assignmodulecommand - gestione moduli utente"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
   - "./change-password-command.md"
   - "./console-commands-philosophy-1-1.md"
@@ -176,7 +176,7 @@ Result: No changes made to user modules.
 - [Console Commands Philosophy](console-commands-philosophy.md)
 - [User Models](models/readme.md)
 - [Role Management](models/role-management.md)
-- [README.md](../readme.md)
+- [README.md](../README.md)
 
 ## Aggiornamenti
 

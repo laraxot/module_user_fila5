@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit\Adapters\Socialite;
 
 use Laravel\Socialite\Contracts\User as SocialiteUser;
+use Mockery\Expectation;
 use Mockery\MockInterface;
 use Modules\User\Adapters\Socialite\UserNameFieldsResolver;
 use Modules\User\Tests\TestCase;
@@ -14,7 +15,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('no-user-db');
 
 /**
- * @param array<string, mixed> $raw
+ * @param  array<string, mixed>  $raw
  */
 function adapterSocialiteUserMock(?string $name, ?string $email, array $raw = []): SocialiteUser
 {
@@ -23,8 +24,10 @@ function adapterSocialiteUserMock(?string $name, ?string $email, array $raw = []
             'getName' => $name,
             'getEmail' => $email,
         ]);
-        if ([] !== $raw) {
-            $mock->allows('getRaw')->andReturn($raw);
+        if ($raw !== []) {
+            $expectation = $mock->allows('getRaw');
+            \assert($expectation instanceof Expectation);
+            $expectation->andReturn($raw);
         }
     });
 }

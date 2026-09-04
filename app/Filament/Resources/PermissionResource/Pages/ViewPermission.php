@@ -23,7 +23,7 @@ class ViewPermission extends XotBaseViewRecord
             'name' => TextEntry::make('name'),
             'guard_name' => TextEntry::make('guard_name'),
             'active' => TextEntry::make('active')
-                ->formatStateUsing(fn (mixed $state): string => $state ? __('user::common.yes') : __('user::common.no')),
+                ->formatStateUsing(fn ($state): string => $state ? __('user::common.yes') : __('user::common.no')),
             'created_at' => TextEntry::make('created_at')
                 ->dateTime(),
         ];

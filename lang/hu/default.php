@@ -210,10 +210,7 @@ return [
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => [
-            'name' => 'Beállítások',
-            'description' => 'A felhasználói modul konfigurációja',
-        ],
+        'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],

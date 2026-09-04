@@ -12,7 +12,6 @@ use Laravel\Passport\RefreshToken as PassportRefreshToken;
  * @property bool                    $revoked
  * @property \DateTimeInterface|null $expires_at
  * @property OauthToken|null         $accessToken
- *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken query()
@@ -20,7 +19,6 @@ use Laravel\Passport\RefreshToken as PassportRefreshToken;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken whereExpiresAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken whereRevoked($value)
- *
  * @mixin \Eloquent
  */
 class OauthRefreshToken extends PassportRefreshToken

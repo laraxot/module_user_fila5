@@ -12,7 +12,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
@@ -122,8 +121,10 @@ class LoginWidget extends XotBaseSchemaWidget
                     $messages = [$messages];
                 }
 
-                /* @var array<int, string> $messages */
-                $this->addError($field, implode(' ', array_map(static fn (mixed $v): string => SafeStringCastAction::cast($v), $messages)));
+                $this->addError($field, implode(' ', array_map(
+                    static fn (mixed $v): string => \is_scalar($v) || $v instanceof \Stringable ? (string) $v : '',
+                    $messages
+                )));
             }
         } catch (\Exception $e) {
             report($e);

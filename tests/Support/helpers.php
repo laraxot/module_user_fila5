@@ -23,7 +23,6 @@ use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 
@@ -32,7 +31,7 @@ use function Safe\json_decode;
 use function Safe\json_encode;
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function createUser(array $attributes = []): User
 {
@@ -46,7 +45,7 @@ function createUser(array $attributes = []): User
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function makeUser(array $attributes = []): User
 {
@@ -60,7 +59,7 @@ function makeUser(array $attributes = []): User
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function createTeam(array $attributes = []): Team
 {
@@ -70,7 +69,7 @@ function createTeam(array $attributes = []): Team
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function createTestUser(array $attributes = []): User
 {
@@ -112,7 +111,7 @@ function pestSkip(string $message): never
 function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
 {
     if (! userTableHasColumn($table, $column)) {
-        pestSkip('' !== $reason ? $reason : "Column {$table}.{$column} missing on user connection.");
+        pestSkip($reason !== '' ? $reason : "Column {$table}.{$column} missing on user connection.");
     }
 }
 
@@ -124,35 +123,39 @@ function userTableExists(string $table): bool
 function skipUnlessUserTable(string $table, string $reason = ''): void
 {
     if (! userTableExists($table)) {
-        pestSkip('' !== $reason ? $reason : "Table {$table} missing on user connection.");
+        pestSkip($reason !== '' ? $reason : "Table {$table} missing on user connection.");
     }
 }
 
 function permissionRolePivotTable(): string
 {
-    return SafeStringCastAction::cast(config('permission.table_names.model_has_roles', 'model_has_role'));
+    $value = config('permission.table_names.model_has_roles', 'model_has_role');
+
+    return is_string($value) ? $value : 'model_has_role';
 }
 
 function permissionPivotTable(): string
 {
-    return SafeStringCastAction::cast(config('permission.table_names.model_has_permissions', 'model_has_permission'));
+    $value = config('permission.table_names.model_has_permissions', 'model_has_permission');
+
+    return is_string($value) ? $value : 'model_has_permission';
 }
 
 function skipUnlessUsersTableReady(string $reason = ''): void
 {
-    skipUnlessUserTable('users', '' !== $reason ? $reason : 'users table missing on user connection.');
+    skipUnlessUserTable('users', $reason !== '' ? $reason : 'users table missing on user connection.');
 }
 
 function skipUnlessRoleAssignmentSupported(string $reason = ''): void
 {
     $table = permissionRolePivotTable();
-    skipUnlessUserTable($table, '' !== $reason ? $reason : "Role pivot table {$table} missing on user connection.");
+    skipUnlessUserTable($table, $reason !== '' ? $reason : "Role pivot table {$table} missing on user connection.");
 }
 
 function skipUnlessDirectPermissionSupported(string $reason = ''): void
 {
     $table = permissionPivotTable();
-    skipUnlessUserTable($table, '' !== $reason ? $reason : "Permission pivot table {$table} missing on user connection.");
+    skipUnlessUserTable($table, $reason !== '' ? $reason : "Permission pivot table {$table} missing on user connection.");
 }
 
 function skipUnlessTeamUsersRelationSupported(): void
@@ -163,7 +166,7 @@ function skipUnlessTeamUsersRelationSupported(): void
 }
 
 /**
- * @param array<string, mixed> $pivot
+ * @param  array<string, mixed>  $pivot
  */
 function attachTeamMember(Team $team, User $user, array $pivot = []): void
 {
@@ -219,7 +222,7 @@ function teamUsesSoftDeletes(): bool
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function createProfile(array $attributes = []): Profile
 {
@@ -248,7 +251,7 @@ function setupFilamentAdminPanel(): void
 }
 
 /**
- * @param array<mixed> $attributes
+ * @param  array<mixed>  $attributes
  */
 function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contracts\User
 {
@@ -277,8 +280,7 @@ if (! function_exists('typedMock')) {
     /**
      * @template T of object
      *
-     * @param class-string<T> $class
-     *
+     * @param  class-string<T>  $class
      * @return T&MockInterface
      */
     function typedMock(string $class): MockInterface
@@ -293,9 +295,8 @@ if (! function_exists('typedMock')) {
 /**
  * @template T of object
  *
- * @param class-string<T>                 $class
- * @param callable(T&MockInterface): void $configure
- *
+ * @param  class-string<T>  $class
+ * @param  callable(T&MockInterface): void  $configure
  * @return T&MockInterface
  */
 function configureMock(string $class, callable $configure): MockInterface
@@ -316,7 +317,7 @@ function fakeSocialiteUser(string $email): Laravel\Socialite\Contracts\User
 
 function makeIsUserAllowedAction(): IsUserAllowedAction
 {
-    return new IsUserAllowedAction();
+    return new IsUserAllowedAction;
 }
 
 /**
@@ -371,7 +372,7 @@ function userResourceSectionComponents(TestCase $testCase, Component $section): 
 }
 
 /**
- * @param array<int, Component|Action|ActionGroup> $components
+ * @param  array<int, Component|Action|ActionGroup>  $components
  */
 function userResourceFindComponentByName(array $components, string $name): ?Component
 {
@@ -389,7 +390,7 @@ function userResourceFindComponentByName(array $components, string $name): ?Comp
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function stubUser(array $attributes = []): User
 {
@@ -397,7 +398,7 @@ function stubUser(array $attributes = []): User
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function hasTeamsCurrentCreateUser(array $attributes = []): User
 {
@@ -405,7 +406,7 @@ function hasTeamsCurrentCreateUser(array $attributes = []): User
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 {
@@ -416,14 +417,14 @@ function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 }
 
 /**
- * @param array<string, mixed> $attributes
- *
+ * @param  array<string, mixed>  $attributes
  * @return array{secret: string, qr_code: string, recovery_codes: array<int, string>}
  */
 function enableTwoFactorForUser(User $user, Google2FA $google2fa, array $attributes = []): array
 {
     $secret = (string) $google2fa->generateSecretKey();
-    $qrCode = $google2fa->getQRCodeUrl(SafeStringCastAction::cast(config('app.name')), $user->email, $secret);
+    $appName = config('app.name');
+    $qrCode = $google2fa->getQRCodeUrl(is_string($appName) ? $appName : '', $user->email, $secret);
 
     $recoveryCodes = array_map(
         static fn (): string => substr(str_shuffle('0123456789ABCDEF'), 0, 10).'-'.substr(str_shuffle('0123456789ABCDEF'), 0, 10),
@@ -459,9 +460,10 @@ function verifyTwoFactorCode(User $user, Google2FA $google2fa, string $code): bo
         return false;
     }
 
-    $secret = SafeStringCastAction::cast(decrypt($user->two_factor_secret));
+    $decryptedSecret = decrypt($user->two_factor_secret);
+    $secret = is_string($decryptedSecret) ? $decryptedSecret : '';
 
-    return false !== $google2fa->verifyKey($secret, $code);
+    return $google2fa->verifyKey($secret, $code) !== false;
 }
 
 function disableTwoFactorForUser(User $user): void
@@ -478,7 +480,8 @@ function verifyTwoFactorRecoveryCode(User $user, string $code): bool
         return false;
     }
 
-    $codes = json_decode(SafeStringCastAction::cast(decrypt($user->two_factor_recovery_codes)), true);
+    $decryptedCodes = decrypt($user->two_factor_recovery_codes);
+    $codes = json_decode(is_string($decryptedCodes) ? $decryptedCodes : '', true);
     if (! is_array($codes)) {
         return false;
     }
@@ -499,7 +502,8 @@ function readStoredRecoveryCodes(User $user): array
         return [];
     }
 
-    $codes = json_decode(SafeStringCastAction::cast(decrypt($user->two_factor_recovery_codes)), true);
+    $decryptedCodes = decrypt($user->two_factor_recovery_codes);
+    $codes = json_decode(is_string($decryptedCodes) ? $decryptedCodes : '', true);
     if (! is_array($codes)) {
         return [];
     }

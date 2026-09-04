@@ -252,10 +252,10 @@ return [
         'label' => 'Messages',
         'plural_label' => 'Messages',
         'group' => [
-            'name' => 'Users',
-            'description' => 'User records, profiles and devices',
+            'name' => 'General',
+            'description' => 'General Settings',
         ],
-        'icon' => 'heroicon-o-rectangle-stack',
+        'icon' => 'heroicon-o-collection',
         'sort' => 1,
     ],
     'label' => 'Messages',

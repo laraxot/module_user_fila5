@@ -20,16 +20,16 @@ return [
     'navigation' => [
         'name' => 'Socialite Users',
         'plural' => 'Socialite Users',
-        'group' => ['name' => 'Autenticazione', 'description' => 'Accesso, registrazione e credenziali'],
+        'group' => ['name' => 'General', 'description' => 'General Settings'],
         'label' => 'Socialite Users',
         'sort' => 1,
-        'icon' => 'heroicon-o-rectangle-stack',
+        'icon' => 'heroicon-o-collection',
     ],
     'label' => 'Socialite Users',
     'plural_label' => 'Socialite Users (Plurale)',
     'actions' => [
-        'create' => ['label' => 'Crea Socialite Users'],
+        'create' => ['label' => 'Crea Socialite Users', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Socialite Users'],
-        'delete' => ['label' => 'Elimina Socialite Users', 'tooltip' => 'delete'],
+        'delete' => ['label' => 'Elimina Socialite Users'],
     ],
 ];

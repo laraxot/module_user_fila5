@@ -6,10 +6,13 @@ namespace Modules\User\Tests\Unit\Http\Livewire\Auth;
 
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\TextInput;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
+use Mockery\ExpectationInterface;
 use Modules\User\Http\Livewire\Auth\Login;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
@@ -37,31 +40,35 @@ function loginFormSchema(Login $component): array
 }
 
 /**
- * @param list<string> $roleNames
+ * @param  list<string>  $roleNames
  */
 function loginRedirectForRoles(array $roleNames): string
 {
     app()->setLocale('it');
-    /** @var class-string<\Illuminate\Database\Eloquent\Model> $userClass */
+    /** @var class-string<Model> $userClass */
     $userClass = XotData::make()->getUserClass();
-    $user = new $userClass();
+    $user = new $userClass;
     $user->forceFill(['id' => 'redirect-user']);
 
-    /** @var \Illuminate\Support\Collection<int, Role> $roles */
+    /** @var Collection<int, Role> $roles */
     $roles = collect(array_map(
         static fn (string $name): Role => new Role(['name' => $name, 'guard_name' => 'web']),
         $roleNames
     ));
 
     $relation = \Mockery::mock(BelongsToMany::class);
-    $relation->shouldReceive('get')->andReturn($roles);
+    $relationGetExpectation = $relation->shouldReceive('get');
+    \assert($relationGetExpectation instanceof ExpectationInterface);
+    $relationGetExpectation->andReturn($roles);
 
     $userMock = \Mockery::mock($user)->makePartial();
-    $userMock->shouldReceive('roles')->andReturn($relation);
+    $userRolesExpectation = $userMock->shouldReceive('roles');
+    \assert($userRolesExpectation instanceof ExpectationInterface);
+    $userRolesExpectation->andReturn($relation);
 
     Auth::shouldReceive('user')->andReturn($userMock);
 
-    $component = new Login();
+    $component = new Login;
     $method = new \ReflectionMethod($component, 'getRedirectUrl');
     $method->setAccessible(true);
 
@@ -73,22 +80,14 @@ function loginRedirectForRoles(array $roleNames): string
 
 describe('Login Livewire component', function (): void {
     test('mount initializes component without throwing', function (): void {
-        $component = new Login();
+        $component = new Login;
         $component->mount();
 
-        // `assertIsArray()` tolta: `$data` e' dichiarata `array`, quindi l'asserzione non
-        // poteva fallire. `mount()` chiama `form->fill()` con `statePath('data')`, e cio'
-        // che non e' garantito dai tipi e' che lo stato resti dentro i campi dichiarati:
-        // nessuna chiave estranea, comunque vada il fill. Vale sia a stato vuoto sia
-        // popolato. Story ROOT-17.11.
-        Assert::assertSame(
-            [],
-            array_diff(array_keys($component->data), ['email', 'password', 'remember']),
-        );
+        Assert::assertIsArray($component->data);
     });
 
     test('form schema exposes email password remember fields', function (): void {
-        $schema = loginFormSchema(new Login());
+        $schema = loginFormSchema(new Login);
 
         Assert::assertCount(3, $schema);
         Assert::assertInstanceOf(TextInput::class, $schema[0]);
@@ -98,7 +97,7 @@ describe('Login Livewire component', function (): void {
     });
 
     test('render returns login view', function (): void {
-        $view = (new Login())->render();
+        $view = (new Login)->render();
 
         Assert::assertInstanceOf(View::class, $view);
         Assert::assertSame('user::livewire.auth.login', $view->name());

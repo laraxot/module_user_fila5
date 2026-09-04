@@ -6,11 +6,8 @@ return [
     'navigation' => [
         'label' => 'Filter',
         'plural_label' => 'Filters',
-        'group' => [
-            'name' => 'Settings',
-            'description' => 'User module configuration',
-        ],
-        'icon' => 'heroicon-o-funnel',
+        'group' => 'User',
+        'icon' => 'heroicon-o-filter',
         'sort' => 20,
     ],
     'label' => 'Filter',

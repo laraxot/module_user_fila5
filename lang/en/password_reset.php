@@ -5,10 +5,7 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Password Reset',
-        'group' => [
-            'name' => 'Authentication',
-            'description' => 'Sign-in, registration and credentials',
-        ],
+        'group' => 'Security',
         'icon' => 'heroicon-o-key',
         'sort' => 42,
     ],

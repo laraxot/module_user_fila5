@@ -339,8 +339,8 @@ return [
         'name' => 'Usuários',
         'plural' => 'Usuários',
         'group' => [
-            'name' => 'Utilizadores',
-            'description' => 'Contas, perfis e dispositivos',
+            'name' => 'Gestão de Usuários',
+            'description' => 'Gestão de usuários e suas permissões',
         ],
         'label' => 'Usuários',
         'sort' => '26',

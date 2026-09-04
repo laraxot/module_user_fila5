@@ -5,10 +5,7 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Token de Atualização OAuth',
-        'group' => [
-            'name' => 'OAuth',
-            'description' => 'Clientes, tokens e API Passport',
-        ],
+        'group' => '',
         'icon' => 'heroicon-o-arrow-path',
         'sort' => 34,
     ],

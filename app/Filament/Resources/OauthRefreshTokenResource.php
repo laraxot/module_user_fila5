@@ -35,11 +35,12 @@ class OauthRefreshTokenResource extends XotBaseResource
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-arrow-path';
 
     /**
-     * Schema legacy del form: la sorgente di verità è OauthRefreshTokenForm::getFormSchema().
+     * Get the form schema for the resource.
      *
      * @return array<string, Select|TextInput>
      */
-    public static function getFormSchemaOld(): array
+    #[\Override]
+    public static function getFormSchema(): array
     {
         return [
             'access_token_id' => Select::make('access_token_id')

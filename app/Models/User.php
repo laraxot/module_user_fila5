@@ -60,7 +60,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property int|null                                          $tenants_count
  * @property Collection<int, OauthToken>                       $tokens
  * @property int|null                                          $tokens_count
- *
  * @method static Builder|User         newModelQuery()
  * @method static Builder|User         newQuery()
  * @method static Builder|User         permission($permissions, $without = false)
@@ -87,7 +86,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder|User         whereUpdatedBy($value)
  * @method static Builder|User         withoutPermission($permissions)
  * @method static Builder|User         withoutRole($roles, $guard = null)
- *
  * @property string                         $last_name
  * @property Team|null                      $currentTeam
  * @property MediaCollection<int, Media>    $media
@@ -106,7 +104,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null                    $moderation_data
  * @property string|null                    $certifications
  * @property string|null                    $type
- *
  * @method static Builder<static>|User whereAddress($value)
  * @method static Builder<static>|User whereCertifications($value)
  * @method static Builder<static>|User whereCity($value)
@@ -118,17 +115,12 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|User whereState($value)
  * @method static Builder<static>|User whereStatus($value)
  * @method static Builder<static>|User whereType($value)
- *
  * @property string|null $facebook_id
- *
  * @method static Builder<static>|User whereFacebookId($value)
- *
  * @property User|null $creator
  * @property User|null $updater
  * @property User|null $user
- *
  * @method static \Modules\User\Database\Factories\UserFactory factory($count = null, $state = [])
- *
  * @property string|null                  $uuid
  * @property string                       $surname
  * @property string|null                  $two_factor_secret
@@ -136,7 +128,6 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null                  $two_factor_confirmed_at
  * @property Collection<int, OauthClient> $oauthApps
  * @property int|null                     $oauth_apps_count
- *
  * @method static Builder<static>|User childrenWith(array<int|string, mixed> $relations)
  * @method static Builder<static>|User childrenWithCount(array<int|string, mixed> $relations)
  * @method static Builder<static>|User whereSurname($value)
@@ -144,19 +135,16 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|User whereTwoFactorRecoveryCodes($value)
  * @method static Builder<static>|User whereTwoFactorSecret($value)
  * @method static Builder<static>|User whereUuid($value)
- *
  * @property Collection<int, Team> $membershipTeams
  * @property int|null              $membership_teams_count
- *
  * @method static Builder<static>|User team($teams, bool $without = false)
  * @method static Builder<static>|User withoutTeam($teams)
- *
  * @mixin \Eloquent
  */
 class User extends BaseUser
 {
     /** @var array<string, class-string> */
-    protected array $childTypes = [
+    protected $childTypes = [
         'master_admin' => self::class,
         'backoffice_user' => self::class,
         'customer_user' => self::class,

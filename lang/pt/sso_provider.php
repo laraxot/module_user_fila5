@@ -5,10 +5,7 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Provedores SSO',
-        'group' => [
-            'name' => 'Autenticação',
-            'description' => 'Acesso, registo e credenciais',
-        ],
+        'group' => 'Autenticação',
         'icon' => 'heroicon-o-shield-check',
         'sort' => 40,
     ],

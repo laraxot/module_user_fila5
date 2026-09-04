@@ -28,11 +28,10 @@ class SocialProviderResource extends XotBaseResource
     protected static ?string $model = SocialProvider::class;
 
     /**
-     * Schema legacy del form: la sorgente di verità è SocialProviderForm::getFormSchema().
-     *
      * @return array<string, Component>
      */
-    public static function getFormSchemaOld(): array
+    #[\Override]
+    public static function getFormSchema(): array
     {
         return [
             'name' => TextInput::make('name')

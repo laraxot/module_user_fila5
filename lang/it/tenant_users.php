@@ -16,17 +16,8 @@ return [
         'updated_by' => ['label' => 'updated_by'],
         'created_by' => ['label' => 'created_by'],
         'deleted_by' => ['label' => 'deleted_by'],
-        '_old' => ['label' => '_old'],
-        'user' => [
-            'name' => ['label' => 'user.name'],
-        ],
-        'customer' => [
-            'name' => ['label' => 'customer.name'],
-        ],
     ],
     'actions' => [
-        'delete' => ['tooltip' => 'delete', 'icon' => 'delete', 'label' => 'delete'],
-        'layout' => ['tooltip' => 'layout', 'icon' => 'layout', 'label' => 'layout'],
-        'create' => ['tooltip' => 'create', 'icon' => 'create', 'label' => 'create'],
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
     ],
 ];

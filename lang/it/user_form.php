@@ -20,7 +20,7 @@ return [
         'hidePassword' => ['label' => 'Nascondi password', 'icon' => 'heroicon-o-eye-slash', 'tooltip' => 'Nascondi password'],
     ],
     'sections' => [
-        'empty' => ['heading' => '', 'label' => ''],
+        'empty' => ['heading' => 'empty', 'label' => 'empty'],
         'worker' => ['label' => 'worker', 'heading' => 'worker'],
     ],
 ];

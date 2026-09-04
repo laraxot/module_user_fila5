@@ -3,13 +3,7 @@
 declare(strict_types=1);
 
 return [
-    'navigation' => [
-        'label' => 'Token Accesso OAuth',
-        'plural_label' => 'Token Accesso OAuth',
-        'group' => ['name' => 'OAuth', 'description' => 'Client, token e API Passport'],
-        'icon' => 'heroicon-o-key',
-        'sort' => 33,
-    ],
+    'navigation' => ['label' => 'Token Accesso OAuth', 'plural_label' => 'Token Accesso OAuth', 'group' => 'OAuth', 'icon' => 'heroicon-o-key', 'sort' => 33],
     'label' => 'Token Accesso OAuth',
     'plural_label' => 'Token Accesso OAuth',
     'fields' => [
@@ -39,13 +33,19 @@ return [
         'valid' => ['label' => 'Valido', 'tooltip' => 'Validità del token', 'helper_text' => 'Indica se il token è valido', 'description' => 'Stato di validità'],
     ],
     'actions' => [
-        'revoke' => ['label' => 'Revoca', 'tooltip' => 'Revoca il token', 'helper_text' => 'Revoca questo token', 'description' => 'Azione per revocare il token'],
+        'revoke' => ['label' => 'Revoca', 'tooltip' => 'Revoca il token', 'helper_text' => 'Revoca questo token', 'description' => 'Azione per revocare il token', 'icon' => 'revoke'],
         'refresh' => ['label' => 'Aggiorna', 'tooltip' => 'Aggiorna il token', 'helper_text' => 'Aggiorna questo token', 'description' => 'Azione per aggiornare il token'],
-        'revoke_all_for_user' => ['label' => 'Revoca Tutti', 'tooltip' => 'Revoca tutti i token per questo utente', 'helper_text' => 'Revoca tutti i token dell\'utente', 'description' => 'Revoca tutti i token per utente', 'success' => ':count token revocati con successo.'],
+        'revoke_all_for_user' => ['label' => 'Revoca Tutti', 'tooltip' => 'Revoca tutti i token per questo utente', 'helper_text' => 'Revoca tutti i token dell\'utente', 'description' => 'Revoca tutti i token per utente', 'success' => ':count token revocati con successo.', 'icon' => 'revoke_all_for_user'],
         'logout' => ['label' => 'Logout', 'tooltip' => 'Disconnettiti', 'helper_text' => 'Esci dall\'account', 'description' => 'Azione di logout', 'icon' => 'heroicon-o-arrow-right-on-rectangle'],
         'delete' => ['label' => 'Elimina', 'tooltip' => 'Elimina il token', 'helper_text' => 'Elimina definitivamente il token', 'description' => 'Azione per eliminare', 'icon' => 'heroicon-o-trash'],
         'create' => ['label' => 'Crea', 'tooltip' => 'Crea un nuovo token', 'helper_text' => 'Crea un nuovo token', 'description' => 'Azione per creare', 'icon' => 'heroicon-o-plus'],
-        'profile' => ['tooltip' => 'profile'],
+        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
     ],
     'messages' => ['created' => 'Token creato con successo', 'revoked' => 'Token revocato con successo', 'deleted' => 'Token eliminato con successo'],
+    'sections' => [
+        'OAuth Access Token Information' => ['label' => 'OAuth Access Token Information', 'heading' => 'OAuth Access Token Information'],
+    ],
 ];

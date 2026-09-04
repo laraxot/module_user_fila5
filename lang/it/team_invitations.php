@@ -19,6 +19,8 @@ return [
         'deleted_by' => ['label' => 'deleted_by'],
     ],
     'actions' => [
-        'delete' => ['tooltip' => 'delete'],
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
 ];

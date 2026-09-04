@@ -9,7 +9,6 @@ use Filament\Actions\DeleteAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 /**
@@ -35,11 +34,11 @@ class SocialiteUsersRelationManager extends XotBaseRelationManager
                 ->searchable(),
             'provider_avatar' => TextColumn::make('provider_avatar')
                 ->formatStateUsing(function (mixed $state): string {
-                    if ($state) {
+                    if (\is_scalar($state) && $state) {
                         /** @phpstan-var view-string $viewString */
                         $viewString = 'filament.components.avatar';
 
-                        return view($viewString, ['url' => SafeStringCastAction::cast($state)])->render();
+                        return view($viewString, ['url' => (string) $state])->render();
                     }
 
                     return 'No Avatar';

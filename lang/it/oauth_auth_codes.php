@@ -14,4 +14,7 @@ return [
         'updated_at' => ['label' => 'updated_at'],
         'name' => ['label' => 'name'],
     ],
+    'actions' => [
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+    ],
 ];

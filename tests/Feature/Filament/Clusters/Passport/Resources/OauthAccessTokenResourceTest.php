@@ -5,11 +5,8 @@ use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);
 
-it('oauth access token resource class exists', function () {
-})->todo('class_exists() su una classe nota e\' decidibile staticamente: serve una asserzione sulla resource montata.');
+it('oauth access token resource class exists')->todo();
 
-it('can render oauth access token resource page', function () {
-})->todo('Serve il pannello Passport montato e un utente autorizzato.');
+it('can render oauth access token resource page')->todo();
 
-it('can list oauth access tokens', function () {
-})->todo('Serve il pannello Passport montato piu\' dei token di fixture.');
+it('can list oauth access tokens')->todo();

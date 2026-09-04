@@ -5,10 +5,7 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Registrazione Studio',
-        'group' => [
-            'name' => 'Teams and tenants',
-            'description' => 'Organizations, invitations and memberships',
-        ],
+        'group' => 'Gestione Tenant',
         'icon' => 'heroicon-o-building-office',
         'color' => 'primary',
         'sort' => '10',

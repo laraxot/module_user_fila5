@@ -8,4 +8,7 @@ return [
         'name' => ['label' => 'name'],
         'created_at' => ['label' => 'created_at'],
     ],
+    'actions' => [
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+    ],
 ];

@@ -1,3 +1,12 @@
+---
+title: "Completamento Traduzioni Password - 2025"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Completamento Traduzioni Password - 2025
 
 ## Problema Identificato

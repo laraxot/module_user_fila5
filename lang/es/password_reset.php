@@ -5,10 +5,7 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Restablecimiento de Contraseña',
-        'group' => [
-            'name' => 'Autenticación',
-            'description' => 'Acceso, registro y credenciales',
-        ],
+        'group' => 'Seguridad',
         'icon' => 'heroicon-o-key',
         'sort' => 42,
     ],

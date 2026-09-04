@@ -12,7 +12,6 @@ use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamUser;
 use Modules\User\Models\Traits\HasTeams;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract as XotUserContract;
 use Modules\Xot\Models\Traits\RelationX;
 use Spatie\Permission\Contracts\Permission;
@@ -21,14 +20,14 @@ use Spatie\Permission\Contracts\Role;
 /**
  * Stub model for HasTeams trait unit tests; satisfies PHPStan in-context analysis.
  *
- * @property string                            $id
- * @property int|null                          $current_team_id
- * @property TeamContract|null                 $currentTeam
- * @property EloquentCollection<int, Team>     $membershipTeams
- * @property EloquentCollection<int, Team>     $ownedTeams
+ * @property string $id
+ * @property int|null $current_team_id
+ * @property TeamContract|null $currentTeam
+ * @property EloquentCollection<int, Team> $membershipTeams
+ * @property EloquentCollection<int, Team> $ownedTeams
  * @property EloquentCollection<int, TeamUser> $teamUsers
- * @property XotUserContract|null              $owner
- * @property int                               $total_members
+ * @property XotUserContract|null $owner
+ * @property int $total_members
  */
 class MockUserWithTeams extends Model
 {
@@ -46,21 +45,20 @@ class MockUserWithTeams extends Model
 
     public function getKey(): string
     {
-        return SafeStringCastAction::cast($this->attributes['id'] ?? 'mock-user-1');
+        $id = $this->attributes['id'] ?? 'mock-user-1';
+
+        return is_scalar($id) ? (string) $id : 'mock-user-1';
     }
 
-    /**
-     * @param string|int|Permission $permission
-     */
-    public function hasPermissionTo($permission, ?string $guardName = null): bool
+    public function hasPermissionTo(string|int|Permission $permission, ?string $guardName = null): bool
     {
         return false;
     }
 
     /**
-     * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
+     * @param  string|int|array<array-key, string|int>|Role|\BackedEnum  $roles
      */
-    public function hasRole($roles, ?string $guard = null): bool
+    public function hasRole(string|int|array|Role|\BackedEnum $roles, ?string $guard = null): bool
     {
         return false;
     }

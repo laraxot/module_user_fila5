@@ -1,3 +1,12 @@
+---
+title: "Gestione coerente di roles, permissions e guard_name"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Gestione coerente di roles, permissions e guard_name
 
 ## Regola fondamentale

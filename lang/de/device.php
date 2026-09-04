@@ -7,8 +7,8 @@ return [
         'name' => 'Dispositivo',
         'plural' => 'Dispositivi',
         'group' => [
-            'name' => 'Benutzer',
-            'description' => 'Benutzerdaten, Profile und Geräte',
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione dei dispositivi degli utenti',
         ],
         'label' => 'device',
         'sort' => '20',

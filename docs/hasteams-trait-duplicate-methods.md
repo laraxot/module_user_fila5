@@ -1,3 +1,23 @@
+---
+title: "Analisi metodi duplicati in HasTeams (trait)"
+type: concept
+tags: [hasteams, trait, duplicate, methods]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "hasteams-trait-duplicate-methods analisi metodi duplicati in hasteams (trait)"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Analisi metodi duplicati in HasTeams (trait)
 
 ## Introduzione
@@ -72,11 +92,11 @@ Nel trait `HasTeams` sono presenti diversi metodi con lo stesso nome ma implemen
 - [ ] Verificare la compatibilità con i moduli che usano il trait
 
 ## Collegamenti correlati
-- [Indice documentazione User](./INDEX.md)
-- [Modello User](./Models/User.md)
+- [Indice documentazione User](./index.md)
+- [Modello User](./models/user.md)
 - [Best practices trait](./best-practices-traits.md)
 - [Refactor checklist](./refactor-checklist.md)
-- [XotData helper](../../Xot/docs/standards/README.md)
+- [XotData helper](../../xot/docs/standards/readme.md)
 
 ---
 

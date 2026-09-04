@@ -11,15 +11,14 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\User\Tests\TestCase;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var TestCase $this */
-    $this->widget = new UserOverview();
-    $this->user = UserFactory::new()->createOne([
+    $this->widget = new UserOverview;
+    TestCase::$user = UserFactory::new()->createOne([
         'type' => UserType::MasterAdmin,
         'email' => 'admin-'.Str::lower(Str::random(10)).'@example.com',
     ]);
@@ -53,7 +52,7 @@ describe('User Overview', function (): void {
         /** @var TestCase $this */
         $widget = $this->requireWidget();
         Assert::assertInstanceOf(UserOverview::class, $widget);
-        $user = $this->requireUser();
+        $user = TestCase::requireUser();
         $widget->record = $user;
 
         Assert::assertSame($user, $widget->record);
@@ -93,7 +92,10 @@ describe('User Overview', function (): void {
         $viewProperty->setAccessible(true);
 
         $viewPath = $viewProperty->getValue($widget);
-        Assert::assertStringContainsString(SafeStringCastAction::cast('user::'), SafeStringCastAction::cast($viewPath));
-        Assert::assertStringContainsString(SafeStringCastAction::cast('widgets.user-overview'), SafeStringCastAction::cast($viewPath));
+        if (! is_string($viewPath)) {
+            Assert::fail('Expected $viewPath to be a string.');
+        }
+        Assert::assertStringContainsString('user::', $viewPath);
+        Assert::assertStringContainsString('widgets.user-overview', $viewPath);
     });
 });

@@ -6,10 +6,7 @@ return [
     'navigation' => [
         'label' => 'Passport / API',
         'plural_label' => 'Passport / API',
-        'group' => [
-            'name' => 'OAuth',
-            'description' => 'Clients, tokens and Passport API',
-        ],
+        'group' => 'System',
         'icon' => 'heroicon-o-key',
         'sort' => 95,
     ],
@@ -26,17 +23,8 @@ return [
             'placeholder' => 'Enter client secret',
             'help' => 'Secret for OAuth authentication',
         ],
-        'client_name' => [
-            'label' => 'Client name',
-            'placeholder' => 'e.g. the customer name',
-            'help' => 'Used to identify these credentials later',
-        ],
     ],
     'actions' => [
-        'new_credentials' => [
-            'label' => 'New credentials',
-            'tooltip' => 'Create a new client_credentials grant client, ready to use',
-        ],
         'create' => [
             'label' => 'Create Client',
             'tooltip' => 'Create a new OAuth client',
@@ -68,7 +56,6 @@ return [
         'missing' => 'Missing',
     ],
     'messages' => [
-        'credentials_created' => 'New credentials created — copy them now, they will not be shown again',
         'client_created' => 'Client created successfully',
         'client_revoked' => 'Client revoked successfully',
         'command_started' => 'Command started...',

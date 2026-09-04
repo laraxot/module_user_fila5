@@ -6,10 +6,7 @@ return [
     'navigation' => [
         'label' => 'Social Providers',
         'plural_label' => 'Social Providers',
-        'group' => [
-            'name' => 'Authentication',
-            'description' => 'Sign-in, registration and credentials',
-        ],
+        'group' => 'User Management',
         'icon' => 'heroicon-o-share',
         'sort' => 93,
     ],

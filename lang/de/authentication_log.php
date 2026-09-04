@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'group' => [
-            'name' => 'Authentifizierung',
-            'description' => 'Anmeldung, Registrierung und Zugangsdaten',
-        ],
+        'group' => 'Authentifizierung',
         'icon' => 'heroicon-o-shield-exclamation',
         'label' => 'Authentifizierungsprotokolle',
         'sort' => 5,

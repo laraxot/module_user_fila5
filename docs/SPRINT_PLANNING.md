@@ -1,3 +1,12 @@
+---
+title: "User Module - Sprint Planning"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # User Module - Sprint Planning
 
 **Module:** User  

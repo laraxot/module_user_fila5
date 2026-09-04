@@ -1,3 +1,12 @@
+---
+title: "MCP Server Consigliati per il Modulo User"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # MCP Server Consigliati per il Modulo User
 
 ## Scopo del Modulo

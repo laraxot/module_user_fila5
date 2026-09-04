@@ -1,3 +1,12 @@
+---
+title: "Convenzione dei Percorsi per le Actions"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Convenzione dei Percorsi per le Actions
 
 ## Regola Fondamentale

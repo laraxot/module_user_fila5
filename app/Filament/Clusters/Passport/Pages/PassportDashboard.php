@@ -6,16 +6,11 @@ namespace Modules\User\Filament\Clusters\Passport\Pages;
 
 use Filament\Actions\Action;
 use Filament\Clusters\Cluster;
-use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
-use Illuminate\Support\Facades\Auth;
-use Laravel\Passport\ClientRepository;
 use Livewire\Attributes\On;
 use Modules\User\Filament\Clusters\Passport;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\ExecuteArtisanCommandAction;
 use Modules\Xot\Filament\Pages\XotBasePage;
-use Webmozart\Assert\Assert;
 
 class PassportDashboard extends XotBasePage
 {
@@ -137,57 +132,9 @@ class PassportDashboard extends XotBasePage
         ];
     }
 
-    /**
-     * Story user-passport-create-client-credentials-button.md: crea un
-     * client OAuth `client_credentials` con credenziali funzionanti,
-     * senza SSH. Chiama direttamente ClientRepository (la stessa logica
-     * usata da `php artisan passport:client --client`), non un comando
-     * shell: il nome del cliente e' un valore dinamico, e interpolarlo
-     * dentro una stringa di comando (come fa ExecuteArtisanCommandAction
-     * per i comandi fissi della whitelist) sarebbe un rischio di
-     * injection. Riservata a super-admin, sia in visibilita' che in
-     * esecuzione (AC4).
-     */
-    protected function newCredentialsAction(): Action
-    {
-        return Action::make('new_credentials')
-            ->label(static::trans('actions.new_credentials.label'))
-            ->icon('heroicon-o-plus-circle')
-            ->color('primary')
-            ->disabled(fn (): bool => $this->isRunning)
-            ->visible(fn (): bool => (bool) Auth::user()?->hasRole('super-admin'))
-            ->schema([
-                TextInput::make('name')
-                    ->label(static::trans('fields.client_name.label'))
-                    ->required()
-                    ->maxLength(255),
-            ])
-            ->action(function (array $data): void {
-                Assert::true((bool) Auth::user()?->hasRole('super-admin'), 'Azione riservata a super-admin.');
-
-                /** @var string $name */
-                $name = $data['name'];
-
-                $client = app(ClientRepository::class)->createClientCredentialsGrantClient($name);
-                $clientId = SafeStringCastAction::cast($client->getKey());
-
-                Notification::make()
-                    ->title(static::trans('messages.credentials_created'))
-                    ->body(
-                        'Client ID: '.$clientId."\n".
-                        'Client Secret: '.$client->plainSecret
-                    )
-                    ->success()
-                    ->persistent()
-                    ->send();
-            });
-    }
-
     protected function getHeaderActions(): array
     {
         return [
-            'new_credentials' => $this->newCredentialsAction(),
-
             'passport_install' => Action::make('passport_install')
                 ->icon('heroicon-o-arrow-down-tray')
                 ->color('success')

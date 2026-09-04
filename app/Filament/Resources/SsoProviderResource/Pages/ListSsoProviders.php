@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\SsoProviderResource\Pages;
 
-use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
@@ -15,10 +14,10 @@ class ListSsoProviders extends XotBaseListRecords
 {
     protected static string $resource = SsoProviderResource::class;
 
-    /**
-     * @return array<string, Column>
-     */
     #[\Override]
+    /**
+     * @return array<string, mixed>
+     */
     public function getTableColumns(): array
     {
         return [

@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Modules\User\Tests\TestCase;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
 use function Safe\exec;
@@ -20,7 +19,10 @@ function getUserMigrationFiles(): array
     $result = [];
 
     foreach ($files as $file) {
-        $result[] = SafeStringCastAction::cast($file);
+        if (! is_string($file)) {
+            continue;
+        }
+        $result[] = $file;
     }
 
     sort($result);

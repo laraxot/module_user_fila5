@@ -25,8 +25,8 @@ return [
     ],
     'sections' => [
         'empty' => [
-            'label' => '',
-            'heading' => '',
+            'label' => 'empty',
+            'heading' => 'empty',
         ],
     ],
 ];

@@ -11,7 +11,6 @@ use Modules\User\Models\OauthAccessToken;
 use Modules\User\Models\OauthAuthCode;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthRefreshToken;
-use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Webmozart\Assert\Assert;
 
 /** @phpstan-ignore trait.unused */
@@ -54,14 +53,32 @@ trait HasPassportConfiguration
         Assert::isArray($config);
 
         Passport::tokensExpireIn(
-            CarbonInterval::days(SafeIntCastAction::cast($config['access_token'] ?? 15))
+            CarbonInterval::days(self::toIntOrDefault($config['access_token'] ?? null, 15))
         );
         Passport::refreshTokensExpireIn(
-            CarbonInterval::days(SafeIntCastAction::cast($config['refresh_token'] ?? 30))
+            CarbonInterval::days(self::toIntOrDefault($config['refresh_token'] ?? null, 30))
         );
         Passport::personalAccessTokensExpireIn(
-            CarbonInterval::months(SafeIntCastAction::cast($config['personal_access_token'] ?? 6))
+            CarbonInterval::months(self::toIntOrDefault($config['personal_access_token'] ?? null, 6))
         );
+    }
+
+    /**
+     * Narrows an untyped config value (mixed, from an `array<mixed>` config
+     * entry) to a real int, without a blind cast. Falls back to $default when
+     * the value is neither an int nor a numeric string/float.
+     */
+    private static function toIntOrDefault(mixed $value, int $default): int
+    {
+        if (\is_int($value)) {
+            return $value;
+        }
+
+        if (\is_numeric($value)) {
+            return (int) $value;
+        }
+
+        return $default;
     }
 
     /**

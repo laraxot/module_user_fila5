@@ -31,7 +31,7 @@ class ViewOauthRefreshToken extends XotBaseViewRecord
                         ->schema([
                             'id' => TextEntry::make('id'),
                             'access_token_id' => TextEntry::make('accessToken.id')
-                                ->url(function (mixed $_state, mixed $record): ?string {
+                                ->url(function (mixed $_state, $record): ?string {
                                     if (! $record instanceof Model) {
                                         return null;
                                     }

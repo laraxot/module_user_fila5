@@ -10,6 +10,6 @@ return [
         'created_at' => ['label' => 'created_at'],
     ],
     'actions' => [
-        'delete' => ['tooltip' => 'delete'],
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
     ],
 ];

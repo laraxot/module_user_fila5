@@ -1,3 +1,12 @@
+---
+title: "Implementazione del Selettore di Lingua con Bandiere SVG"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati

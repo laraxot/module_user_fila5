@@ -6,7 +6,6 @@ namespace Modules\User\Models\Traits;
 
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Modules\User\Models\SocialiteUser;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 trait HasSocialite
 {
@@ -21,13 +20,17 @@ trait HasSocialite
     public function getProviderField(string $provider, string $field): string
     {
         $socialiteUser = $this->socialiteUsers()->firstWhere(['provider' => $provider]);
-        if (null === $socialiteUser) {
+        if ($socialiteUser === null) {
             throw new \Exception('SocialiteUser not found');
         }
 
         $res = $socialiteUser->{$field};
 
-        return SafeStringCastAction::cast($res);
+        if (\is_scalar($res) || $res instanceof \Stringable) {
+            return (string) $res;
+        }
+
+        throw new \Exception(\sprintf('SocialiteUser field "%s" is not stringable', $field));
     }
 
     public function canAccessSocialite(): bool

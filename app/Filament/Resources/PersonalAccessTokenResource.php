@@ -16,11 +16,10 @@ final class PersonalAccessTokenResource extends XotBaseResource
     protected static ?string $recordTitleAttribute = 'name';
 
     /**
-     * Schema legacy del form: la sorgente di verità è PersonalAccessTokenForm::getFormSchema().
-     *
      * @return array<string, Component>
      */
-    public static function getFormSchemaOld(): array
+    #[\Override]
+    public static function getFormSchema(): array
     {
         return [
             'name' => TextInput::make('name')

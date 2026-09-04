@@ -6,34 +6,35 @@ namespace Modules\User\Tests\Feature\Authentication;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
-use Laravel\Passport\PersonalAccessTokenResult;
 use Modules\User\Database\Factories\DeviceFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\DeviceUser;
 use Modules\User\Tests\TestCase;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var TestCase $this */
-    $this->skipUnlessUserTable('device_user');
-    $this->skipUnlessUserTable('devices');
+    TestCase::skipUnlessUserTable('device_user');
+    TestCase::skipUnlessUserTable('devices');
 
     Config::set('app.key', config('app.key') ?: 'base64:'.base64_encode(random_bytes(32)));
 
-    $this->user = UserFactory::new()->createOne([
+    TestCase::$user = UserFactory::new()->createOne([
         'email' => 'api-logout-'.uniqid('', true).'@example.com',
         'email_verified_at' => now(),
         'is_active' => true,
     ]);
 
-    $this->device = DeviceFactory::new()->createOne();
+    TestCase::$device = DeviceFactory::new()->createOne();
+
+    $userKey = TestCase::requireUser()->getKey();
+    $deviceKey = TestCase::requireDevice()->getKey();
 
     DeviceUser::query()->create([
-        'user_id' => SafeStringCastAction::cast($this->requireUser()->getKey()),
-        'device_id' => SafeStringCastAction::cast($this->requireDevice()->getKey()),
+        'user_id' => (is_int($userKey) || is_string($userKey)) ? (string) $userKey : '',
+        'device_id' => (is_int($deviceKey) || is_string($deviceKey)) ? (string) $deviceKey : '',
         'login_at' => now()->subHour(),
         'logout_at' => null,
     ]);
@@ -42,7 +43,9 @@ beforeEach(function (): void {
 describe('Api Logout Controller', function (): void {
     test('api logout revokes current personal access token and marks device logout time', function (): void {
         /** @var TestCase $this */
-        $user = $this->requireUser();
+        $user = TestCase::requireUser();
+        $userKey = $user->getKey();
+        $userKeyString = (is_int($userKey) || is_string($userKey)) ? (string) $userKey : '';
         $privateKey = storage_path('oauth-private.key');
         $publicKey = storage_path('oauth-public.key');
 
@@ -53,18 +56,11 @@ describe('Api Logout Controller', function (): void {
         ensurePersonalAccessClient();
 
         $personalAccessToken = null;
+        $personalAccessToken = null;
         try {
             $personalAccessToken = $user->createToken('Api Logout Test');
         } catch (\Exception $exception) {
             $this->skipTest('Passport token creation unavailable: '.$exception->getMessage());
-        }
-
-        if (null === $personalAccessToken) {
-            $this->skipTest('Passport token creation unavailable.');
-        }
-
-        if (! $personalAccessToken instanceof PersonalAccessTokenResult) {
-            $this->fail('Passport token creation returned unexpected type.');
         }
 
         $tokenResult = $personalAccessToken;
@@ -73,15 +69,15 @@ describe('Api Logout Controller', function (): void {
         Assert::assertNotNull($accessTokenModel);
 
         Assert::assertTrue(DB::connection('user')->table('oauth_access_tokens')->where('id', $accessTokenModel->getKey())->exists());
-        Assert::assertTrue(DeviceUser::query()->where('user_id', SafeStringCastAction::cast($user->getKey()))->whereNull('logout_at')->exists());
+        Assert::assertTrue(DeviceUser::query()->where('user_id', $userKeyString)->whereNull('logout_at')->exists());
         $response = $this->withHeader('Authorization', 'Bearer '.$tokenResult->accessToken)
             ->getJson('/api/v2/logout');
 
         $response->assertOk()
             ->assertJsonPath('message', 'Successfully logged out.')
-            ->assertJsonPath('data.user_id', SafeStringCastAction::cast($user->getKey()));
+            ->assertJsonPath('data.user_id', $userKeyString);
 
         Assert::assertSame(1, DB::connection('user')->table('oauth_access_tokens')->where('id', $accessTokenModel->getKey())->value('revoked'));
-        Assert::assertTrue(DeviceUser::query()->where('user_id', SafeStringCastAction::cast($user->getKey()))->whereNotNull('logout_at')->exists());
+        Assert::assertTrue(DeviceUser::query()->where('user_id', $userKeyString)->whereNotNull('logout_at')->exists());
     });
 });

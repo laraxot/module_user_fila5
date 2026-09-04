@@ -3,10 +3,7 @@
 declare(strict_types=1);
 
 return [
-    'navigation' => ['label' => 'Registrazione', 'plural_label' => 'Registrazione', 'group' => [
-        'name' => 'Autenticazione',
-        'description' => 'Accesso, registrazione e credenziali',
-    ], 'icon' => 'heroicon-o-user-plus', 'sort' => 2],
+    'navigation' => ['label' => 'Registrazione', 'plural_label' => 'Registrazione', 'group' => 'Autenticazione', 'icon' => 'heroicon-o-user-plus', 'sort' => 2],
     'label' => 'Registrazione',
     'plural_label' => 'Registrazione',
     'sections' => [
@@ -28,6 +25,7 @@ return [
         'create' => ['label' => 'Registrati', 'tooltip' => 'Crea un nuovo account', 'helper_text' => 'Registrati al sistema', 'description' => 'Azione di registrazione'],
         'hidePassword' => ['tooltip' => 'hidePassword', 'icon' => 'hidePassword', 'label' => 'hidePassword'],
         'showPassword' => ['tooltip' => 'showPassword', 'icon' => 'showPassword', 'label' => 'showPassword'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'messages' => ['success' => 'Registrazione completata con successo', 'error' => 'Si è verificato un errore'],
 ];

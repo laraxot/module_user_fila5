@@ -7,7 +7,7 @@ return [
         'name' => 'Utente Team',
         'plural' => 'Utenti Team',
         'label' => 'Utenti Team',
-        'group' => ['name' => 'Team e tenant', 'description' => 'Organizzazioni, inviti e appartenenze'],
+        'group' => ['name' => 'Teams', 'description' => 'Gestione degli utenti associati ai team'],
         'sort' => 65,
         'icon' => 'heroicon-o-user-group',
     ],
@@ -17,11 +17,23 @@ return [
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+        'team' => [
+            'name' => ['label' => 'team.name'],
+        ],
+        'user' => [
+            'name' => ['label' => 'user.name'],
+        ],
+        'role' => ['label' => 'role'],
     ],
     'actions' => [
-        'create' => ['label' => 'Crea Team User'],
-        'edit' => ['label' => 'Modifica Team User'],
-        'delete' => ['label' => 'Elimina Team User'],
-        'logout' => ['tooltip' => 'logout', 'icon' => 'logout', 'label' => 'logout'],
+        'create' => ['label' => 'Crea Team User', 'icon' => 'create', 'tooltip' => 'create'],
+        'edit' => ['label' => 'Modifica Team User', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'delete' => ['label' => 'Elimina Team User', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+    ],
+    'sections' => [
+        'empty' => ['label' => '', 'heading' => ''],
     ],
 ];

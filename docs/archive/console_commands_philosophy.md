@@ -1,3 +1,12 @@
+---
+title: "Filosofia dei Console Commands in Laraxot (Standard Supremo)"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Filosofia dei Console Commands in Laraxot (Standard Supremo)
 
 ## Filosofia Fondamentale

@@ -5,10 +5,7 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Usuários de Inquilino',
-        'group' => [
-            'name' => 'Equipas e inquilinos',
-            'description' => 'Organizações, convites e associações',
-        ],
+        'group' => 'Inquilinos',
         'icon' => 'heroicon-o-building-office',
         'sort' => 99,
     ],

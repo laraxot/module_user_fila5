@@ -6,7 +6,7 @@ return [
     'navigation' => [
         'label' => 'Ruoli',
         'plural_label' => 'Ruoli',
-        'group' => ['name' => 'Ruoli e permessi', 'description' => 'Controllo degli accessi'],
+        'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione dei ruoli e dei permessi associati'],
         'sort' => 26,
         'icon' => 'heroicon-o-user-group',
         'badge' => 'Gestione ruoli e permessi',
@@ -45,6 +45,7 @@ return [
             'helper_text' => 'Indica se il ruolo è attualmente attivo e utilizzabile',
             'options' => ['true' => 'Sì', 'false' => 'No'],
             'description' => '',
+            'placeholder' => 'enabled',
         ],
         'team' => [
             'name' => ['label' => 'team.name'],
@@ -53,6 +54,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+        'uuid' => ['label' => 'uuid'],
     ],
     'actions' => [
         'create' => [
@@ -120,14 +122,15 @@ return [
         'logout' => ['tooltip' => 'logout', 'icon' => 'logout', 'label' => 'logout'],
         'profile' => ['tooltip' => 'profile', 'icon' => 'profile', 'label' => 'profile'],
         'layout' => ['tooltip' => 'layout', 'icon' => 'layout', 'label' => 'layout'],
-        'createAnother' => ['tooltip' => 'createAnother'],
+        'createAnother' => ['tooltip' => 'createAnother', 'label' => 'createAnother', 'icon' => 'createAnother'],
         'submit' => ['tooltip' => 'submit', 'icon' => 'submit', 'label' => 'submit'],
-        'resetColumnManager' => ['tooltip' => 'resetColumnManager'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'sections' => [
         'basic_info' => ['label' => 'Informazioni Base', 'description' => 'Informazioni fondamentali del ruolo', 'icon' => 'heroicon-o-information-circle'],
         'permissions' => ['label' => 'Permessi', 'description' => 'Gestione permessi e autorizzazioni', 'icon' => 'heroicon-o-key'],
         'settings' => ['label' => 'Impostazioni', 'description' => 'Configurazioni avanzate del ruolo', 'icon' => 'heroicon-o-cog'],
+        'empty' => ['label' => '', 'heading' => ''],
     ],
     'filters' => [
         'guard_name' => [

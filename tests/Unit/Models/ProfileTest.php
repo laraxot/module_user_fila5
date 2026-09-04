@@ -11,7 +11,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function modelsProfileCreate(array $attributes = []): Profile
 {
@@ -26,7 +26,7 @@ function modelsProfileCreate(array $attributes = []): Profile
 
     /** @var Profile $created */
     $created = Profile::withoutEvents(static function () use ($payload): Profile {
-        $profile = new Profile();
+        $profile = new Profile;
         $profile->forceFill($payload);
         $profile->save();
 
@@ -39,7 +39,7 @@ function modelsProfileCreate(array $attributes = []): Profile
 }
 
 /**
- * @param array<string, mixed> $where
+ * @param  array<string, mixed>  $where
  */
 function modelsProfileAssertInDatabase(array $where): void
 {
@@ -95,11 +95,11 @@ test('can create profile with all fields', function (): void {
 });
 
 test('profile has schemaless attributes', function (): void {
-    Assert::assertSame(['extra'], (new Profile())->getSchemalessAttributes());
+    Assert::assertSame(['extra'], (new Profile)->getSchemalessAttributes());
 });
 
 test('profile has table name', function (): void {
-    Assert::assertSame('profiles', (new Profile())->getTable());
+    Assert::assertSame('profiles', (new Profile)->getTable());
 });
 
 test('can find profile by email', function (): void {

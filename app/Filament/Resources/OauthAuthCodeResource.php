@@ -31,11 +31,12 @@ class OauthAuthCodeResource extends XotBaseResource
     protected static ?string $recordTitleAttribute = 'id';
 
     /**
-     * Schema legacy del form: la sorgente di verità è OauthAuthCodeForm::getFormSchema().
+     * Get the form schema for the resource.
      *
      * @return array<string, Select|TextInput>
      */
-    public static function getFormSchemaOld(): array
+    #[\Override]
+    public static function getFormSchema(): array
     {
         return [
             'user_id' => Select::make('user_id')
@@ -83,7 +84,7 @@ class OauthAuthCodeResource extends XotBaseResource
                     ->limit(30)
                     ->tooltip(function (TextColumn $column): ?string {
                         $state = $column->getState();
-                        if (null === $state) {
+                        if ($state === null) {
                             return null;
                         }
                         if (is_array($state)) {

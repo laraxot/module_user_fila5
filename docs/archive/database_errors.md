@@ -1,3 +1,12 @@
+---
+title: "Database Errors in User Module"
+module: user
+type: integration
+tags: [integrations, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Database Errors in User Module
 
 ## Missing `doctor_team` Table

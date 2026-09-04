@@ -7,8 +7,8 @@ return [
         'name' => 'Utenti',
         'plural' => 'Utenti',
         'group' => [
-            'name' => 'Benutzer',
-            'description' => 'Benutzerdaten, Profile und Geräte',
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione degli utenti e dei loro permessi',
         ],
         'label' => 'Utenti',
         'sort' => '26',

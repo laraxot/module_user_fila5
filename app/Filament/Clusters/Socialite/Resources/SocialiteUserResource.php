@@ -24,11 +24,12 @@ class SocialiteUserResource extends XotBaseResource
     protected static ?string $model = SocialiteUser::class;
 
     /**
-     * Schema legacy del form: la sorgente di verità è SocialiteUserForm::getFormSchema().
+     * Get the form schema for the resource.
      *
      * @return array<string, Select|TextInput>
      */
-    public static function getFormSchemaOld(): array
+    #[\Override]
+    public static function getFormSchema(): array
     {
         return [
             'user_id' => Select::make('user_id')

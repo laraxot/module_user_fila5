@@ -38,20 +38,20 @@ return [
     ],
     'sections' => [
         'empty' => [
-            'heading' => '',
-            'label' => '',
+            'heading' => 'empty',
+            'label' => 'empty',
         ],
     ],
     'navigation' => [
         'name' => 'View User',
         'plural' => 'View User',
         'group' => [
-            'name' => 'Utenti',
-            'description' => 'Anagrafiche utenti, profili e dispositivi',
+            'name' => 'General',
+            'description' => 'General Settings',
         ],
         'label' => 'View User',
         'sort' => 1,
-        'icon' => 'heroicon-o-rectangle-stack',
+        'icon' => 'heroicon-o-collection',
     ],
     'label' => 'View User',
     'plural_label' => 'View User (Plurale)',

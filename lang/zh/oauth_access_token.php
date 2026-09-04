@@ -5,10 +5,7 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'OAuth访问令牌',
-        'group' => [
-            'name' => 'OAuth',
-            'description' => '客户端、令牌和 Passport API',
-        ],
+        'group' => '',
         'icon' => 'heroicon-o-key',
         'sort' => 33,
     ],

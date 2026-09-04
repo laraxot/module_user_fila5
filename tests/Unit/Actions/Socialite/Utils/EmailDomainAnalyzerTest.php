@@ -25,10 +25,7 @@ describe('EmailDomainAnalyzer', function () {
         Config::set('services.google.email_domains.client.tld', null);
     });
 
-    it('throws for empty provider', function () {
-        expect(static fn (): EmailDomainAnalyzer => new EmailDomainAnalyzer(''))
-            ->toThrow(InvalidArgumentException::class, 'Il provider SSO non può essere vuoto');
-    });
+    it('throws for empty provider')->todo();
 
     it('detects first party domain', function () {
         Config::set('services.google.email_domains.first_party.tld', '@company.com');

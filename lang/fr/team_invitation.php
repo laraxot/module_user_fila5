@@ -5,10 +5,7 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Invitations d\'Équipe',
-        'group' => [
-            'name' => 'Équipes et locataires',
-            'description' => 'Organisations, invitations et adhésions',
-        ],
+        'group' => 'Équipes',
         'icon' => 'heroicon-o-envelope',
         'sort' => 34,
     ],

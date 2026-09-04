@@ -40,7 +40,6 @@ use Modules\Xot\Contracts\UserContract;
  * @method static Builder<Model> wherePersonalTeam($value)
  * @method static Builder<Model> whereUpdatedAt($value)
  * @method static Builder<Model> whereUserId($value)
- * @method        array<string, mixed> toArray()
  *
  * @phpstan-require-extends Model
  *

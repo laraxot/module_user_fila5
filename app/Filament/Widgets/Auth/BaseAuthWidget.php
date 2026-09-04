@@ -28,7 +28,7 @@ abstract class BaseAuthWidget extends XotBaseWidget
     protected function getViewData(): array
     {
         return [
-            'form' => $this->getFormSchema(), // @phpstan-ignore method.deprecated (hook di progetto: la deprecazione e ereditata per nome dal prototipo Filament 5, il codice eseguito e il nostro — story 16.12)
+            'form' => $this->getFormSchema(),
         ];
     }
 }

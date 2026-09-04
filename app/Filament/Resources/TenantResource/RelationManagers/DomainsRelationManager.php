@@ -3,6 +3,7 @@
 /**
  * --.
  */
+
 declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\RelationManagers;
@@ -30,7 +31,7 @@ class DomainsRelationManager extends XotBaseRelationManager
      * @return array<string, Component>
      */
     #[\Override]
-    public function getFormSchemaOld(): array
+    public function getFormSchema(): array
     {
         return [
             'domain' => TextInput::make('domain')
@@ -50,7 +51,7 @@ class DomainsRelationManager extends XotBaseRelationManager
         return [
             'domain' => TextColumn::make('domain'),
             'full-domain' => TextColumn::make('full-domain')->getStateUsing(
-                static fn (mixed $record) => is_object($record) && isset($record->domain) && is_string($record->domain) ?
+                static fn ($record) => is_object($record) && isset($record->domain) && is_string($record->domain) ?
                     Str::of($record->domain)->append('.')->append(request()->getHost()) : '',
             ),
         ];

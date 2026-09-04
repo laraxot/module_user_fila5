@@ -5,10 +5,7 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Registrazione',
-        'group' => [
-            'name' => 'Authentifizierung',
-            'description' => 'Anmeldung, Registrierung und Zugangsdaten',
-        ],
+        'group' => 'Gestione Utenti',
         'icon' => 'heroicon-o-user-plus',
         'sort' => '50',
     ],

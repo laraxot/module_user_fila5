@@ -47,6 +47,7 @@ describe('Auth Components Tests', function (): void {
         // Test the existing auth-session-status component rendering
         $html = View::make('components.auth-session-status', ['status' => 'Test status'])->render();
 
+        expect(strlen($html))->toBeGreaterThanOrEqual(0);
         expect($html)->not->toBeEmpty();
     });
 

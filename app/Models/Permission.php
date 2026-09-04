@@ -29,7 +29,6 @@ use Webmozart\Assert\Assert;
  * @property int|null                    $roles_count
  * @property Collection<int, User>       $users
  * @property int|null                    $users_count
- *
  * @method static Builder<static>|Permission newModelQuery()
  * @method static Builder<static>|Permission newQuery()
  * @method static Builder<static>|Permission permission($permissions, $without = false)
@@ -46,24 +45,18 @@ use Webmozart\Assert\Assert;
  * @method static Builder<static>|Permission withoutRole($roles, $guard = null)
  * @method static static                     firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static                     updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
- *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
- *
  * @method static \Modules\User\Database\Factories\PermissionFactory factory($count = null, $state = [])
- *
  * @property Collection<int, Team> $teams
  * @property int|null              $teams_count
- *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission team($teams, bool $without = false)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission withoutTeam($teams)
- *
  * @mixin \Eloquent
  */
 class Permission extends SpatiePermission
 {
-    /** @phpstan-use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     use RelationX;

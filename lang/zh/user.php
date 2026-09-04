@@ -339,8 +339,8 @@ return [
         'name' => '用户',
         'plural' => '用户',
         'group' => [
-            'name' => '用户',
-            'description' => '账户、资料和设备',
+            'name' => '用户管理',
+            'description' => '用户及其权限管理',
         ],
         'label' => '用户',
         'sort' => '26',

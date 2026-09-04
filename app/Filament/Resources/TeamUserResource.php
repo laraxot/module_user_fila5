@@ -19,11 +19,10 @@ final class TeamUserResource extends XotBaseResource
     protected static ?string $model = TeamUser::class;
 
     /**
-     * Schema legacy del form: la sorgente di verità è TeamUserForm::getFormSchema().
-     *
      * @return array<string, Component>
      */
-    public static function getFormSchemaOld(): array
+    #[\Override]
+    public static function getFormSchema(): array
     {
         return [
             'team_user' => XotBaseSection::make('Team User Information')

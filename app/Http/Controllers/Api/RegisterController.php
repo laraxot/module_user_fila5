@@ -12,10 +12,10 @@
  * If the validation passes, a new user is created and a success response is returned with the user's name and an access token.
  * If the validation fails, an error response is returned with the validation errors.
  *
- * @param Request $request The incoming request
- *
+ * @param  Request  $request  The incoming request
  * @return JsonResponse The JSON response
  */
+
 declare(strict_types=1);
 
 namespace Modules\User\Http\Controllers\Api;
@@ -24,7 +24,6 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rules\Password as PasswordRule;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Http\Controllers\XotBaseController;
@@ -55,7 +54,11 @@ class RegisterController extends XotBaseController
 
         /** @var array<string, mixed> $input */
         $input = $request->all();
-       $input['password'] = bcrypt(SafeStringCastAction::cast($input['password']));
+        $password = $input['password'] ?? null;
+        if (! \is_string($password)) {
+            return $this->sendError('Validation Error.', ['password' => ['The password must be a string.']]);
+        }
+        $input['password'] = bcrypt($password);
         $user_class = XotData::make()->getUserClass();
         /** @var UserContract */
         $user = $user_class::create($input);

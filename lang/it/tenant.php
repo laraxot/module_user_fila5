@@ -3,13 +3,7 @@
 declare(strict_types=1);
 
 return [
-    'navigation' => [
-        'label' => 'Tenant',
-        'plural_label' => 'Tenant',
-        'group' => ['name' => 'Team e tenant', 'description' => 'Organizzazioni, inviti e appartenenze'],
-        'icon' => 'heroicon-o-building-office',
-        'sort' => 30,
-    ],
+    'navigation' => ['label' => 'Tenant', 'plural_label' => 'Tenant', 'group' => 'Gestione Utenti', 'icon' => 'heroicon-o-building-office', 'sort' => 30],
     'label' => 'Tenant',
     'plural_label' => 'Tenant',
     'table' => [
@@ -27,6 +21,13 @@ return [
         'applyFilters' => ['label' => 'Applica Filtri', 'tooltip' => 'Applica i filtri selezionati', 'placeholder' => 'Clicca per applicare', 'helper_text' => 'Azione per applicare i filtri configurati', 'description' => 'Applica i filtri'],
         'recordId' => ['label' => 'ID Record', 'tooltip' => 'Identificatore del record', 'placeholder' => 'ID del record', 'helper_text' => 'Identificatore univoco del record', 'description' => 'ID del record'],
         'primary_color' => ['label' => 'Colore Primario', 'tooltip' => 'Colore principale del tema', 'placeholder' => 'Seleziona colore primario', 'helper_text' => 'Colore principale utilizzato nell\'interfaccia', 'description' => 'Colore primario del tema'],
+        'domain' => ['label' => 'domain', 'placeholder' => 'domain', 'helper_text' => 'domain', 'description' => 'domain'],
+        'email_address' => ['label' => 'email_address', 'placeholder' => 'email_address', 'helper_text' => 'email_address', 'description' => 'email_address'],
+        'phone' => ['label' => 'phone', 'placeholder' => 'phone', 'helper_text' => 'phone', 'description' => 'phone'],
+        'mobile' => ['label' => 'mobile', 'placeholder' => 'mobile', 'helper_text' => 'mobile', 'description' => 'mobile'],
+        'address' => ['label' => 'address', 'placeholder' => 'address', 'helper_text' => 'address', 'description' => 'address'],
+        'created_at' => ['label' => 'created_at'],
+        'updated_at' => ['label' => 'updated_at'],
     ],
     'actions' => [
         'import' => [
@@ -56,11 +57,11 @@ return [
         'view' => ['label' => 'Visualizza', 'tooltip' => 'Visualizza dettagli', 'helper_text' => 'Visualizza i dettagli del tenant', 'description' => 'Azione per visualizzare', 'icon' => 'heroicon-o-eye'],
         'save' => ['label' => 'Salva', 'tooltip' => 'Salva modifiche', 'helper_text' => 'Salva le modifiche', 'description' => 'Azione per salvare', 'icon' => 'heroicon-o-check'],
         'cancel' => ['label' => 'Annulla', 'tooltip' => 'Annulla operazione', 'helper_text' => 'Annulla e torna indietro', 'description' => 'Azione per annullare', 'icon' => 'heroicon-o-x-mark'],
-        'logout' => ['tooltip' => 'logout', 'icon' => 'logout', 'label' => 'logout'],
-        'reorderRecords' => ['tooltip' => 'reorderRecords', 'icon' => 'reorderRecords', 'label' => 'reorderRecords'],
-        'resetColumnManager' => ['tooltip' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'label' => 'resetColumnManager'],
-        'applyTableColumnManager' => ['tooltip' => 'applyTableColumnManager', 'icon' => 'applyTableColumnManager', 'label' => 'applyTableColumnManager'],
-        'profile' => ['tooltip' => 'profile'],
+        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+        'detach' => ['label' => 'detach', 'icon' => 'detach', 'tooltip' => 'detach'],
     ],
     'messages' => ['created' => 'Tenant creato con successo', 'updated' => 'Tenant aggiornato con successo', 'deleted' => 'Tenant eliminato con successo'],
+    'sections' => [
+        'empty' => ['label' => '', 'heading' => ''],
+    ],
 ];

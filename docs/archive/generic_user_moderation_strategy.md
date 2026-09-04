@@ -1,3 +1,12 @@
+---
+title: "Generic User Moderation Strategy in User Module"
+module: user
+type: product
+tags: [product, modules, user]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Generic User Moderation Strategy in User Module
 
 ## Overview

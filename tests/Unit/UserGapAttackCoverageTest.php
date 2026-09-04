@@ -23,6 +23,7 @@ use Modules\User\Http\Livewire\Auth\Register;
 use Modules\User\Listeners\LogoutListener;
 use Modules\User\Listeners\OtherDeviceLogoutListener;
 use Modules\User\Models\BaseUser;
+use Modules\User\Tests\Fixtures\UserGapBaseUserProbe;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
@@ -32,17 +33,6 @@ uses(TestCase::class)->group('no-user-db');
 afterEach(function (): void {
     \Mockery::close();
 });
-
-/**
- * Named BaseUser probe for offline accessor coverage.
- */
-final class UserGapBaseUserProbe extends BaseUser
-{
-    public function getTable(): string
-    {
-        return 'users';
-    }
-}
 
 describe('User gap attack — highest miss files', function (): void {
     test('OAuth Filament resources pages e schema', function (): void {
@@ -149,7 +139,7 @@ describe('User gap attack — highest miss files', function (): void {
     test('Listeners Logout e Socialite Retrieve', function (): void {
         /** @var UserContract&MockInterface $user */
         $user = \Mockery::mock(UserContract::class);
-        $user->shouldReceive('getAuthIdentifier')->andReturn(1);
+        mockeryExpect($user->shouldReceive('getAuthIdentifier'))->andReturn(1);
 
         foreach ([LogoutListener::class, OtherDeviceLogoutListener::class] as $class) {
             if (! class_exists($class)) {
@@ -165,12 +155,12 @@ describe('User gap attack — highest miss files', function (): void {
                 }
             }
 
-            $eventClass = OtherDeviceLogoutListener::class === $class
+            $eventClass = $class === OtherDeviceLogoutListener::class
                 ? OtherDeviceLogout::class
                 : Logout::class;
             /** @var Authenticatable&MockInterface $authUser */
             $authUser = \Mockery::mock(Authenticatable::class);
-            $authUser->shouldReceive('getAuthIdentifier')->andReturn(1);
+            mockeryExpect($authUser->shouldReceive('getAuthIdentifier'))->andReturn(1);
             $event = new $eventClass('web', $authUser);
 
             try {
@@ -210,7 +200,7 @@ describe('User gap attack — highest miss files', function (): void {
         Hash::shouldReceive('check')->andReturn(true);
         Hash::shouldReceive('needsRehash')->andReturn(false);
 
-        $user = new UserGapBaseUserProbe();
+        $user = new UserGapBaseUserProbe;
         $user->setRawAttributes([
             'id' => 1,
             'name' => 'Test',
@@ -221,8 +211,8 @@ describe('User gap attack — highest miss files', function (): void {
 
         $ref = new \ReflectionClass($user);
         foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
-            if (UserGapBaseUserProbe::class !== $method->getDeclaringClass()->getName()
-                && BaseUser::class !== $method->getDeclaringClass()->getName()) {
+            if ($method->getDeclaringClass()->getName() !== UserGapBaseUserProbe::class
+                && $method->getDeclaringClass()->getName() !== BaseUser::class) {
                 continue;
             }
             if (str_starts_with($method->getName(), '__')) {

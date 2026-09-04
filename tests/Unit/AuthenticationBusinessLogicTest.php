@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 use Carbon\Carbon;
 use Modules\User\Tests\TestCase;
-use Modules\Xot\Actions\Cast\SafeIntCastAction;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -16,7 +14,21 @@ function authBizSuspiciousLogin(): bool
 }
 
 /**
- * @return array<string, mixed>
+ * @return array{
+ *     id: int,
+ *     name: string,
+ *     email: string,
+ *     email_verified_at: Carbon,
+ *     password: string,
+ *     remember_token: string,
+ *     current_team_id: int,
+ *     profile_photo_path: string,
+ *     is_active: bool,
+ *     password_expires_at: Carbon,
+ *     last_login_at: Carbon,
+ *     failed_login_attempts: int,
+ *     locked_until: Carbon|null,
+ * }
  */
 function authBizUserData(): array
 {
@@ -38,7 +50,14 @@ function authBizUserData(): array
 }
 
 /**
- * @return array<string, mixed>
+ * @return array{
+ *     id: int,
+ *     name: string,
+ *     user_id: int,
+ *     personal_team: bool,
+ *     is_active: bool,
+ *     settings: array{timezone: string, language: string, notification_preferences: list<string>},
+ * }
  */
 function authBizTeamData(): array
 {
@@ -100,7 +119,16 @@ function authBizOauthData(): array
 }
 
 /**
- * @return array<string, mixed>
+ * @return array{
+ *     id: int,
+ *     user_id: int,
+ *     device_name: string,
+ *     device_type: string,
+ *     device_id: string,
+ *     push_token: string,
+ *     last_active: Carbon,
+ *     is_trusted: bool,
+ * }
  */
 function authBizDeviceData(): array
 {
@@ -128,7 +156,7 @@ describe('Authentication Business Logic', function (): void {
 
         it('validates email format and verification', function (): void {
             $user = authBizUserData();
-            $email = SafeStringCastAction::cast($user['email']);
+            $email = $user['email'];
             $verifiedAt = $user['email_verified_at'];
             Assert::assertInstanceOf(Carbon::class, $verifiedAt);
 
@@ -138,7 +166,7 @@ describe('Authentication Business Logic', function (): void {
 
         it('handles password security requirements', function (): void {
             $user = authBizUserData();
-            $password = SafeStringCastAction::cast($user['password']);
+            $password = $user['password'];
             $expiresAt = $user['password_expires_at'];
             Assert::assertInstanceOf(Carbon::class, $expiresAt);
 
@@ -152,7 +180,7 @@ describe('Authentication Business Logic', function (): void {
             $maxAttempts = 5;
             $lockoutMinutes = 30;
 
-            Assert::assertLessThan($maxAttempts, SafeIntCastAction::cast($user['failed_login_attempts']));
+            Assert::assertLessThan($maxAttempts, $user['failed_login_attempts']);
             Assert::assertNull($user['locked_until']);
 
             $userLocked = array_merge(authBizUserData(), [
@@ -168,7 +196,7 @@ describe('Authentication Business Logic', function (): void {
 
         it('manages session and remember tokens', function (): void {
             $user = authBizUserData();
-            $rememberToken = SafeStringCastAction::cast($user['remember_token']);
+            $rememberToken = $user['remember_token'];
 
             Assert::assertGreaterThan(10, strlen($rememberToken));
             Assert::assertInstanceOf(Carbon::class, $user['last_login_at']);
@@ -177,20 +205,20 @@ describe('Authentication Business Logic', function (): void {
         it('validates profile completeness', function (): void {
             $user = authBizUserData();
 
-            Assert::assertNotSame('', SafeStringCastAction::cast($user['name']));
-            Assert::assertNotSame('', SafeStringCastAction::cast($user['email']));
+            Assert::assertNotSame('', $user['name']);
+            Assert::assertNotSame('', $user['email']);
 
             $profileScore = 0;
-            if ('' !== $user['name']) {
+            if ($user['name'] !== '') {
                 $profileScore += 25;
             }
-            if ('' !== $user['email']) {
+            if ($user['email'] !== '') {
                 $profileScore += 25;
             }
             if ($user['email_verified_at'] instanceof Carbon) {
                 $profileScore += 25;
             }
-            if ('' !== $user['profile_photo_path']) {
+            if ($user['profile_photo_path'] !== '') {
                 $profileScore += 25;
             }
 
@@ -212,7 +240,7 @@ describe('Authentication Business Logic', function (): void {
             $team = authBizTeamData();
 
             Assert::assertFalse((bool) $team['personal_team']);
-            Assert::assertStringNotContainsString('Personal', SafeStringCastAction::cast($team['name']));
+            Assert::assertStringNotContainsString('Personal', $team['name']);
 
             $personalTeam = [
                 'name' => 'Mario Rossi (Personal)',
@@ -221,7 +249,7 @@ describe('Authentication Business Logic', function (): void {
             ];
 
             Assert::assertNotSame($team['personal_team'], $personalTeam['personal_team']);
-            Assert::assertStringContainsString('Personal', (string) $personalTeam['name']);
+            Assert::assertStringContainsString('Personal', $personalTeam['name']);
         });
 
         it('validates team settings and preferences', function (): void {
@@ -367,8 +395,8 @@ describe('Authentication Business Logic', function (): void {
         it('validates push notification setup', function (): void {
             $device = authBizDeviceData();
 
-            if ('mobile' === $device['device_type']) {
-                $pushToken = SafeStringCastAction::cast($device['push_token']);
+            if ($device['device_type'] === 'mobile') {
+                $pushToken = $device['push_token'];
                 Assert::assertGreaterThan(20, strlen($pushToken));
             }
         });

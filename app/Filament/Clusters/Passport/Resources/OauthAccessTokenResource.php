@@ -30,7 +30,6 @@ use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\OauthAccessToken;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 use function Safe\json_encode;
@@ -58,7 +57,7 @@ class OauthAccessTokenResource extends XotBaseResource
                             return null;
                         }
                         $user = $record->user;
-                        if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+                        if ($user !== null && method_exists($user, 'exists') && $user->exists) {
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -77,7 +76,7 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('scopes')
                     ->limit(30)
                     ->tooltip(function (mixed $state): ?string {
-                        if (null === $state) {
+                        if ($state === null) {
                             return null;
                         }
                         if (is_array($state)) {
@@ -130,8 +129,7 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->action(function (mixed $record): void {
                         if ($record instanceof Model) {
                             $key = $record->getKey();
-                            $keyString = is_string($key) ? $key : SafeStringCastAction::cast($key);
-                            if (app(RevokeTokenAction::class)->execute($keyString)) {
+                            if ((is_int($key) || is_string($key)) && app(RevokeTokenAction::class)->execute((string) $key)) {
                                 Notification::make()
                                     ->title(static::trans('actions.revoke.success'))
                                     ->success()
@@ -184,7 +182,7 @@ class OauthAccessTokenResource extends XotBaseResource
                         return null;
                     }
                     $user = $record->user;
-                    if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+                    if ($user !== null && method_exists($user, 'exists') && $user->exists) {
                         return UserResource::getUrl('view', ['record' => $user]);
                     }
 
@@ -203,7 +201,7 @@ class OauthAccessTokenResource extends XotBaseResource
             'scopes' => TextColumn::make('scopes')
                 ->limit(30)
                 ->tooltip(function (mixed $state): ?string {
-                    if (null === $state) {
+                    if ($state === null) {
                         return null;
                     }
                     if (is_array($state)) {
@@ -269,7 +267,8 @@ class OauthAccessTokenResource extends XotBaseResource
                 ->requiresConfirmation()
                 ->action(function (mixed $record): void {
                     if ($record instanceof Model) {
-                        if (app(RevokeTokenAction::class)->execute(SafeStringCastAction::cast($record->getKey()))) {
+                        $key = $record->getKey();
+                        if ((is_int($key) || is_string($key)) && app(RevokeTokenAction::class)->execute((string) $key)) {
                             Notification::make()
                                 ->title(static::trans('actions.revoke.success'))
                                 ->success()
@@ -310,11 +309,10 @@ class OauthAccessTokenResource extends XotBaseResource
     }
 
     /**
-     * Schema legacy del form: la sorgente di verità è OauthAccessTokenForm::getFormSchema().
-     *
      * @return array<string, Component>
      */
-    public static function getFormSchemaOld(): array
+    #[\Override]
+    public static function getFormSchema(): array
     {
         return [
             'oauth_access_token_info' => Section::make('OAuth Access Token Information')
