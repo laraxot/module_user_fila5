@@ -15,7 +15,7 @@ use Modules\User\Tests\TestCase;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
+    /* @var TestCase $this */
     config(['activitylog.enabled' => false]);
 
     if (! Schema::connection('user')->hasTable('users')) {
@@ -25,7 +25,6 @@ beforeEach(function (): void {
 
 describe('RegisterWidget FO', function (): void {
     test('register page loads with livewire widget', function (): void {
-        /** @var TestCase $this */
         $this->get('/it/auth/register')->assertSuccessful();
 
         Livewire::test(RegisterWidget::class)->assertSuccessful();

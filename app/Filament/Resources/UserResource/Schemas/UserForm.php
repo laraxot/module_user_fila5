@@ -49,7 +49,7 @@ class UserForm extends XotBaseResourceForm
                 ->columnSpan(8),
             'section02' => Section::make()
                 ->schema([
-                    TextEntry::make('created_at')->html()->state(static function ($record) {
+                    TextEntry::make('created_at')->state(static function ($record) {
                         if (! $record instanceof Model) {
                             return new HtmlString('&mdash;');
                         }

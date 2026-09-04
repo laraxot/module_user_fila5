@@ -5,9 +5,6 @@ tags: [analysis]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "analysis user module analysis"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -99,5 +96,3 @@ Modules/User/
 * [analysis.md](../../../../themes/one/project_docs/analysis.md)
 ### Versione Incoming
 ---
-
-```

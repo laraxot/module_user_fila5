@@ -5,9 +5,6 @@ tags: [session, management]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "session-management gestione delle sessioni"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -98,8 +95,6 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Documentazione Volt](./volt-blade-implementation-3.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
-- [Indice del Modulo Utente](./index.md)
-
 - [Indice del Modulo Utente](./INDEX.md)
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)

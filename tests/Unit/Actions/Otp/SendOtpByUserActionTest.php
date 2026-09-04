@@ -14,7 +14,7 @@ use Modules\User\Notifications\Auth\Otp;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('user-db');
+uses(TestCase::class);
 
 describe('SendOtpByUserAction', function () {
     it('generates and sends an OTP to the user', function () {

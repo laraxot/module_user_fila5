@@ -10,29 +10,26 @@ use Modules\Xot\Contracts\ProfileContract;
 use Webmozart\Assert\Assert;
 
 /**
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $updater
- *
- * @method static Builder<static>|PermissionRole newModelQuery()
- * @method static Builder<static>|PermissionRole newQuery()
- * @method static Builder<static>|PermissionRole query()
- *
- * @property string $id
- * @property string $permission_id
- * @property string $role_id
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @method static Builder|PermissionRole newModelQuery()
+ * @method static Builder|PermissionRole newQuery()
+ * @method static Builder|PermissionRole query()
+ * @property string      $id
+ * @property string|null $permission_id
+ * @property string|null $role_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- *
- * @method static Builder<static>|PermissionRole whereCreatedAt($value)
- * @method static Builder<static>|PermissionRole whereCreatedBy($value)
- * @method static Builder<static>|PermissionRole whereId($value)
- * @method static Builder<static>|PermissionRole wherePermissionId($value)
- * @method static Builder<static>|PermissionRole whereRoleId($value)
- * @method static Builder<static>|PermissionRole whereUpdatedAt($value)
- * @method static Builder<static>|PermissionRole whereUpdatedBy($value)
- *
+ * @method static Builder|PermissionRole whereCreatedAt($value)
+ * @method static Builder|PermissionRole whereCreatedBy($value)
+ * @method static Builder|PermissionRole whereId($value)
+ * @method static Builder|PermissionRole wherePermissionId($value)
+ * @method static Builder|PermissionRole whereRoleId($value)
+ * @method static Builder|PermissionRole whereUpdatedAt($value)
+ * @method static Builder|PermissionRole whereUpdatedBy($value)
+ * @property ProfileContract|null $deleter
  * @mixin \Eloquent
  */
 class PermissionRole extends BasePivot

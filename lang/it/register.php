@@ -11,9 +11,12 @@ return [
         'email' => ['label' => 'Email', 'placeholder' => 'Inserisci la tua email', 'help' => 'Indirizzo email valido', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'password' => ['label' => 'Password', 'placeholder' => 'Crea una password sicura', 'help' => 'Minimo 8 caratteri', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'password_confirmation' => ['label' => 'Conferma Password', 'placeholder' => 'Ripeti la password', 'help' => 'Ripeti la password per conferma', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+        'passwordConfirmation' => ['label' => 'passwordConfirmation', 'placeholder' => 'passwordConfirmation', 'helper_text' => 'passwordConfirmation', 'description' => 'passwordConfirmation'],
     ],
     'actions' => [
         'register' => ['label' => 'Registrati', 'tooltip' => 'Crea un nuovo account', 'icon' => 'register'],
+        'showPassword' => ['label' => 'showPassword', 'icon' => 'showPassword', 'tooltip' => 'showPassword'],
+        'hidePassword' => ['label' => 'hidePassword', 'icon' => 'hidePassword', 'tooltip' => 'hidePassword'],
     ],
     'messages' => ['registered' => 'Registrazione completata con successo', 'error' => 'Errore durante la registrazione'],
 ];

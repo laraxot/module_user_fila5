@@ -8,6 +8,7 @@ use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+use Filament\Schemas\Components\Component;
 use Modules\User\Filament\Clusters\Socialite;
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource\Pages\CreateSocialProvider;
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource\Pages\EditSocialProvider;
@@ -27,10 +28,10 @@ class SocialProviderResource extends XotBaseResource
     protected static ?string $model = SocialProvider::class;
 
     /**
-     * @return array<string, mixed>
+     * @return array<string, Component>
      */
-    // #[\Override]
-    public static function getFormSchemaOld(): array
+    #[\Override]
+    public static function getFormSchema(): array
     {
         return [
             'name' => TextInput::make('name')

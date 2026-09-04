@@ -75,7 +75,7 @@ class RegistrationWidget extends XotBaseSchemaWidget
         }
 
         $rememberToken = $user->getAttribute('remember_token');
-        if (is_string($token) && $token !== '') {
+        if (is_string($token) && '' !== $token) {
             $user->setAttribute('remember_token', $token);
             $user->save();
             $this->record = $user;

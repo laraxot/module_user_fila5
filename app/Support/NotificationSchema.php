@@ -17,7 +17,7 @@ final class NotificationSchema
         $model = new Notification();
 
         $connection = $model->getConnectionName();
-        if (! is_string($connection) || $connection === '') {
+        if (! is_string($connection) || '' === $connection) {
             $default = config('database.default');
             $connection = is_string($default) ? $default : 'mysql';
         }

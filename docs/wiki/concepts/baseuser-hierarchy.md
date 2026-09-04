@@ -36,8 +36,6 @@ Modules\User\Models\BaseUser (abstract - this module)
     ↑
 Modules\User\Models\User (concrete - default)
     ↑ (modules can extend)
-Modules\<nome progetto>\Models\User (concrete with comments)
-
 Modules\Fixcity\Models\User (concrete with comments)
 ```
 
@@ -76,11 +74,6 @@ Downstream modules may need to:
 - Implement contracts from other modules
 - Override behavior for domain-specific needs
 
-### Example: <nome progetto> Extension
-
-```php
-namespace Modules\<nome progetto>\Models;
-
 ### Example: Fixcity Extension
 
 ```php
@@ -94,8 +87,6 @@ class User extends BaseUser implements CanComment
 {
     use InteractsWithComments;
     
-    // <nome progetto>-specific configuration
-
     // Fixcity-specific configuration
     protected $childTypes = [
         'master_admin' => self::class,
@@ -158,8 +149,6 @@ protected $keyType = 'string';
 ```
 
 ## Related Documentation
-
-- <nome progetto> User Architecture: `laravel/Modules/<nome progetto>/docs/wiki/concepts/user-model-architecture.md`
 
 - Fixcity User Architecture: `laravel/Modules/Fixcity/docs/wiki/concepts/user-model-architecture.md`
 - Comment Contract: `laravel/Modules/Comment/docs/wiki/concepts/can-comment-contract-owner.md`

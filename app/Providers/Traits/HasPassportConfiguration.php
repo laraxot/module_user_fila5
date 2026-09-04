@@ -51,32 +51,34 @@ trait HasPassportConfiguration
     {
         $config = Config::get('user.passport.tokens', []);
         Assert::isArray($config);
-        /** @var array<string, mixed> $config */
+
         Passport::tokensExpireIn(
-            CarbonInterval::days(self::tokenLifetime($config, 'access_token', 15))
+            CarbonInterval::days(self::toIntOrDefault($config['access_token'] ?? null, 15))
         );
         Passport::refreshTokensExpireIn(
-            CarbonInterval::days(self::tokenLifetime($config, 'refresh_token', 30))
+            CarbonInterval::days(self::toIntOrDefault($config['refresh_token'] ?? null, 30))
         );
         Passport::personalAccessTokensExpireIn(
-            CarbonInterval::months(self::tokenLifetime($config, 'personal_access_token', 6))
+            CarbonInterval::months(self::toIntOrDefault($config['personal_access_token'] ?? null, 6))
         );
     }
 
     /**
-     * Durata dichiarata in `user.passport.tokens`, o il default se la voce manca o non è numerica.
-     *
-     * I valori di configurazione sono `mixed`: la scelta va fatta qui una volta sola, non
-     * castata a ogni chiamata. Una voce non numerica è un errore di configurazione e ricade
-     * sul default invece di diventare `0`, che scadrebbe i token immediatamente.
-     *
-     * @param  array<string, mixed>  $config
+     * Narrows an untyped config value (mixed, from an `array<mixed>` config
+     * entry) to a real int, without a blind cast. Falls back to $default when
+     * the value is neither an int nor a numeric string/float.
      */
-    private static function tokenLifetime(array $config, string $key, int $default): int
+    private static function toIntOrDefault(mixed $value, int $default): int
     {
-        $value = $config[$key] ?? null;
+        if (\is_int($value)) {
+            return $value;
+        }
 
-        return is_numeric($value) ? (int) $value : $default;
+        if (\is_numeric($value)) {
+            return (int) $value;
+        }
+
+        return $default;
     }
 
     /**

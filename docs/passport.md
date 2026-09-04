@@ -14,14 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-Modules.md
-
-
-## Appendice — contenuto migrato
-
----
-module: theme
-topic: passport
-canonical: ../../../Themes/docs/shared-components/passport.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/passport.txt

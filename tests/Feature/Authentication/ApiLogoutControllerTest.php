@@ -11,37 +11,41 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\DeviceUser;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use Webmozart\Assert\Assert as WebmozartAssert;
 
-final class ApiLogoutControllerTest extends TestCase
-{
-    protected function setUp(): void
-    {
-        parent::setUp();
-        skipUnlessUserTable('device_user');
-        skipUnlessUserTable('devices');
+uses(TestCase::class);
 
-        Config::set('app.key', config('app.key') ?: 'base64:'.base64_encode(random_bytes(32)));
+beforeEach(function (): void {
+    /* @var TestCase $this */
+    TestCase::skipUnlessUserTable('device_user');
+    TestCase::skipUnlessUserTable('devices');
 
-        $this->user = UserFactory::new()->createOne([
-            'email' => 'api-logout-'.uniqid('', true).'@example.com',
-            'email_verified_at' => now(),
-            'is_active' => true,
-        ]);
+    Config::set('app.key', config('app.key') ?: 'base64:'.base64_encode(random_bytes(32)));
 
-        $this->device = DeviceFactory::new()->createOne();
+    TestCase::$user = UserFactory::new()->createOne([
+        'email' => 'api-logout-'.uniqid('', true).'@example.com',
+        'email_verified_at' => now(),
+        'is_active' => true,
+    ]);
 
-        DeviceUser::query()->create([
-            'user_id' => (string) WebmozartAssert::scalar($this->requireUser()->getKey()),
-            'device_id' => (string) WebmozartAssert::scalar($this->requireDevice()->getKey()),
-            'login_at' => now()->subHour(),
-            'logout_at' => null,
-        ]);
-    }
+    TestCase::$device = DeviceFactory::new()->createOne();
 
-    public function test_api_logout_revokes_current_personal_access_token_and_marks_device_logout_time(): void
-    {
-        $user = $this->requireUser();
+    $userKey = TestCase::requireUser()->getKey();
+    $deviceKey = TestCase::requireDevice()->getKey();
+
+    DeviceUser::query()->create([
+        'user_id' => (is_int($userKey) || is_string($userKey)) ? (string) $userKey : '',
+        'device_id' => (is_int($deviceKey) || is_string($deviceKey)) ? (string) $deviceKey : '',
+        'login_at' => now()->subHour(),
+        'logout_at' => null,
+    ]);
+});
+
+describe('Api Logout Controller', function (): void {
+    test('api logout revokes current personal access token and marks device logout time', function (): void {
+        /** @var TestCase $this */
+        $user = TestCase::requireUser();
+        $userKey = $user->getKey();
+        $userKeyString = (is_int($userKey) || is_string($userKey)) ? (string) $userKey : '';
         $privateKey = storage_path('oauth-private.key');
         $publicKey = storage_path('oauth-public.key');
 
@@ -52,6 +56,7 @@ final class ApiLogoutControllerTest extends TestCase
         ensurePersonalAccessClient();
 
         $personalAccessToken = null;
+        $personalAccessToken = null;
         try {
             $personalAccessToken = $user->createToken('Api Logout Test');
         } catch (\Exception $exception) {
@@ -59,21 +64,20 @@ final class ApiLogoutControllerTest extends TestCase
         }
 
         $tokenResult = $personalAccessToken;
-        $userId = (string) WebmozartAssert::scalar($user->getKey());
 
         $accessTokenModel = $user->tokens()->latest('id')->first();
         Assert::assertNotNull($accessTokenModel);
 
         Assert::assertTrue(DB::connection('user')->table('oauth_access_tokens')->where('id', $accessTokenModel->getKey())->exists());
-        Assert::assertTrue(DeviceUser::query()->where('user_id', $userId)->whereNull('logout_at')->exists());
+        Assert::assertTrue(DeviceUser::query()->where('user_id', $userKeyString)->whereNull('logout_at')->exists());
         $response = $this->withHeader('Authorization', 'Bearer '.$tokenResult->accessToken)
             ->getJson('/api/v2/logout');
 
         $response->assertOk()
             ->assertJsonPath('message', 'Successfully logged out.')
-            ->assertJsonPath('data.user_id', $userId);
+            ->assertJsonPath('data.user_id', $userKeyString);
 
         Assert::assertSame(1, DB::connection('user')->table('oauth_access_tokens')->where('id', $accessTokenModel->getKey())->value('revoked'));
-        Assert::assertTrue(DeviceUser::query()->where('user_id', $userId)->whereNotNull('logout_at')->exists());
-    }
-}
+        Assert::assertTrue(DeviceUser::query()->where('user_id', $userKeyString)->whereNotNull('logout_at')->exists());
+    });
+});

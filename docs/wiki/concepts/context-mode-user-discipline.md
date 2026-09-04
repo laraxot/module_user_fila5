@@ -25,11 +25,6 @@ related:
 laravel/Modules/User/docs/wiki/
 ├── index.md                           # ≤30 righe
 ├── rules/
-│   ├── index.md                       # ≤20 righe → root trigger map
-│   └── filament-user-labels.md        # ≤150 righe
-├── skills/
-│   ├── index.md                       # ≤20 righe
-
 │   ├── INDEX.md                       # ≤20 righe → root trigger map
 │   └── filament-user-labels.md        # ≤150 righe
 ├── skills/

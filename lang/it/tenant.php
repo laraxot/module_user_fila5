@@ -62,6 +62,6 @@ return [
     ],
     'messages' => ['created' => 'Tenant creato con successo', 'updated' => 'Tenant aggiornato con successo', 'deleted' => 'Tenant eliminato con successo'],
     'sections' => [
-        'empty' => ['label' => 'empty', 'heading' => 'empty'],
+        'empty' => ['label' => '', 'heading' => ''],
     ],
 ];

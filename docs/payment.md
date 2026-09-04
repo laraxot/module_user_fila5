@@ -14,14 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/payment.md
-
-
-## Appendice — contenuto migrato
-
----
-module: theme
-topic: payment
-canonical: ../../../Themes/docs/shared-components/payment.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/payment.txt

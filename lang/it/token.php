@@ -27,10 +27,10 @@ return [
     ],
     'actions' => [
         'reorderRecords' => ['tooltip' => 'reorderRecords', 'icon' => 'reorderRecords'],
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'revoke' => ['label' => 'revoke', 'icon' => 'revoke', 'tooltip' => 'revoke'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
     ],
     'label' => 'Token',

@@ -123,8 +123,8 @@ class EditUserWidget extends XotBaseSchemaWidget
     {
         $schema = $this->resource::getFormSchemaWidget();
         Assert::isArray($schema, 'Schema must be array');
-        Assert::allIsInstanceOf($schema, Component::class);
 
+        /* @var array<int|string, Component> $result */
         return self::normalizeFormSchema($schema);
     }
 
@@ -203,14 +203,20 @@ class EditUserWidget extends XotBaseSchemaWidget
     }
 
     /**
-     * @param  array<int|string, Component>  $schema
      * @return array<int|string, Component>
      */
-    private static function normalizeFormSchema(array $schema): array
+    private static function normalizeFormSchema(mixed $schema): array
     {
-        $normalized = [];
+        if (! \is_array($schema)) {
+            return [];
+        }
 
+        $normalized = [];
         foreach ($schema as $key => $component) {
+            if (! $component instanceof Component) {
+                return [];
+            }
+
             $normalized[$key] = $component;
         }
 

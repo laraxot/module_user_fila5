@@ -5,9 +5,6 @@ tags: [overview, extended]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "overview-extended user module - authentication & authorization"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -1059,8 +1056,6 @@ test('user can switch teams', function () {
 - **Added**: Enhanced authentication logging
 - **Fixed**: File locking pattern implementation
 - **Improved**: Security alert widgets
-
-See [changelog.md](./CHANGELOG.md) for full history.
 
 See [CHANGELOG.md](./CHANGELOG.md) for full history.
 

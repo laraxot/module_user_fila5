@@ -16,45 +16,12 @@ return [
     'label' => 'Permission',
     'plural_label' => 'Permission (Plurale)',
     'actions' => [
-        'create' => [
-            'label' => 'Crea Permission',
-            'icon' => 'create',
-            'tooltip' => 'create',
-        ],
-        'edit' => [
-            'label' => 'Modifica Permission',
-            'icon' => 'edit',
-            'tooltip' => 'edit',
-        ],
-        'delete' => [
-            'label' => 'Elimina Permission',
-            'icon' => 'delete',
-            'tooltip' => 'delete',
-        ],
-        'view' => [
-            'label' => 'view',
-            'icon' => 'view',
-            'tooltip' => 'view',
-        ],
-        'createAnother' => [
-            'label' => 'createAnother',
-            'icon' => 'createAnother',
-            'tooltip' => 'createAnother',
-        ],
-        'save' => [
-            'label' => 'save',
-            'icon' => 'save',
-            'tooltip' => 'save',
-        ],
-        'Attach Role' => [
-            'label' => 'Attach Role',
-            'icon' => 'Attach Role',
-            'tooltip' => 'Attach Role',
-        ],
-        'logout' => [
-            'tooltip' => 'logout',
-            'icon' => 'logout',
-            'label' => 'logout',
-        ],
+        'create' => ['label' => 'Crea Permission', 'icon' => 'create', 'tooltip' => 'create'],
+        'edit' => ['label' => 'Modifica Permission', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'delete' => ['label' => 'Elimina Permission', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'Attach Role' => ['label' => 'Attach Role', 'icon' => 'Attach Role', 'tooltip' => 'Attach Role'],
+        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
 ];

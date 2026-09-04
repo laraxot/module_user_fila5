@@ -17,11 +17,11 @@ return [
         ],
     ],
     'actions' => [
-        'revoke' => ['label' => 'Revoca', 'tooltip' => 'Revoca il token', 'helper_text' => 'Revoca questo refresh token', 'description' => 'Azione per revocare', 'success' => 'Refresh token revocato con successo'],
+        'revoke' => ['label' => 'Revoca', 'tooltip' => 'Revoca il token', 'helper_text' => 'Revoca questo refresh token', 'description' => 'Azione per revocare', 'success' => 'Refresh token revocato con successo', 'icon' => 'revoke'],
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
-        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
     ],
     'messages' => ['revoked' => 'Refresh token revocato con successo'],
     'sections' => [

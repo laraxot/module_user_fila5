@@ -14,22 +14,22 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
-    $this->widget = new LoginWidget();
+    /* @var TestCase $this */
+    $this->widget = new LoginWidget;
 });
 
 describe('Login Widget', function (): void {
     test('it can render widget', function (): void {
-        $widget = new LoginWidget();
+        $widget = new LoginWidget;
 
         $reflection = new \ReflectionClass($widget);
         $property = $reflection->getProperty('view');
         $property->setAccessible(true);
         $view = $property->getValue($widget);
-        if (! is_string($view)) {
-            Assert::fail('LoginWidget::$view is not a string.');
-        }
 
+        if (! is_string($view)) {
+            Assert::fail('Expected $view to be a string.');
+        }
         Assert::assertStringContainsString('pub_theme::filament.widgets.auth.login', $view);
     });
 

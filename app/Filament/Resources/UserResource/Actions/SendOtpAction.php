@@ -7,7 +7,6 @@ namespace Modules\User\Filament\Resources\UserResource\Actions;
 use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Models\User;
 use Modules\Xot\Filament\Actions\XotBaseAction;
-use RuntimeException;
 
 /**
  * Azione Filament per l'invio di un OTP all'utente.
@@ -24,7 +23,7 @@ class SendOtpAction extends XotBaseAction
                 // User already implements UserContract, no need for assertion
                 $action = app(SendOtpByUserAction::class);
                 if ($action === null) {
-                    throw new RuntimeException('Impossibile istanziare SendOtpByUserAction');
+                    throw new \RuntimeException('Impossibile istanziare SendOtpByUserAction');
                 }
                 // PHPStan Level 10: User extends BaseUser which implements UserContract
                 $action->execute($record);

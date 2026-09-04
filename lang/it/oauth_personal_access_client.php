@@ -20,13 +20,13 @@ return [
         'edit' => ['label' => 'Modifica Personal Access Client', 'tooltip' => 'Modifica il personal access client', 'helper_text' => 'Modifica il personal access client', 'description' => 'Azione per modificare', 'success' => 'Personal Access Client aggiornato con successo', 'error' => 'Errore durante l\'aggiornamento del Personal Access Client', 'icon' => 'edit'],
         'delete' => ['label' => 'Elimina Personal Access Client', 'tooltip' => 'Elimina il personal access client', 'helper_text' => 'Elimina il personal access client', 'description' => 'Azione per eliminare', 'success' => 'Personal Access Client eliminato con successo', 'error' => 'Errore durante l\'eliminazione del Personal Access Client', 'confirmation' => 'Sei sicuro di voler eliminare questo Personal Access Client?', 'icon' => 'delete'],
         'logout' => ['label' => 'Logout', 'tooltip' => 'Disconnettiti', 'helper_text' => 'Esci dall\'account', 'description' => 'Azione di logout', 'icon' => 'heroicon-o-arrow-right-on-rectangle'],
-        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
     ],
     'messages' => ['created' => 'Personal Access Client creato con successo', 'updated' => 'Personal Access Client aggiornato con successo', 'deleted' => 'Personal Access Client eliminato con successo'],
     'sections' => [
         'OAuth Personal Access Client Information' => ['label' => 'OAuth Personal Access Client Information', 'heading' => 'OAuth Personal Access Client Information'],
-        'empty' => ['label' => 'empty', 'heading' => 'empty'],
+        'empty' => ['label' => '', 'heading' => ''],
     ],
 ];

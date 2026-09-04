@@ -4,18 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Traits;
 
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Modules\User\Models\Device;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class)->group('user-db');
+uses(TestCase::class);
 
 it('exposes a belongsToMany devices relation on the user model', function (): void {
     $user = TestCase::createTestUser();
 
-    $relation = $user->devices();
-
-    expect($relation->getRelated()::class)->toBe(Device::class);
-    expect($relation->getRelationName())->toBe('devices');
+    expect(($user->devices())::class)->toBe(BelongsToMany::class);
+    expect(($user->devices()->getRelated())::class)->toBe(Device::class);
 });
 
 it('attaches and retrieves devices for a user', function (): void {

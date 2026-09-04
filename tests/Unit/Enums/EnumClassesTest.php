@@ -36,24 +36,24 @@ test('UserType getDefaultGuard method works', function (): void {
 });
 
 test('UserType getLabel method returns translation keys', function (): void {
-    Assert::assertSame('Master admin', UserType::MasterAdmin->getLabel());
-    Assert::assertSame('Backoffice', UserType::BoUser->getLabel());
-    Assert::assertSame('Customer', UserType::CustomerUser->getLabel());
-    Assert::assertSame('System', UserType::System->getLabel());
-    Assert::assertSame('Technician', UserType::Technician->getLabel());
+    Assert::assertSame('user::user_type.values.master_admin.label', UserType::MasterAdmin->getLabel());
+    Assert::assertSame('user::user_type.values.backoffice_user.label', UserType::BoUser->getLabel());
+    Assert::assertSame('user::user_type.values.customer_user.label', UserType::CustomerUser->getLabel());
+    Assert::assertSame('user::user_type.values.system.label', UserType::System->getLabel());
+    Assert::assertSame('user::user_type.values.technician.label', UserType::Technician->getLabel());
 });
 
 test('UserType getColor method returns translation keys', function (): void {
-    Assert::assertSame('danger', UserType::MasterAdmin->getColor());
-    Assert::assertSame('warning', UserType::BoUser->getColor());
-    Assert::assertSame('success', UserType::CustomerUser->getColor());
-    Assert::assertSame('gray', UserType::System->getColor());
-    Assert::assertSame('info', UserType::Technician->getColor());
+    Assert::assertSame('user::user_type.values.master_admin.color', UserType::MasterAdmin->getColor());
+    Assert::assertSame('user::user_type.values.backoffice_user.color', UserType::BoUser->getColor());
+    Assert::assertSame('user::user_type.values.customer_user.color', UserType::CustomerUser->getColor());
+    Assert::assertSame('user::user_type.values.system.color', UserType::System->getColor());
+    Assert::assertSame('user::user_type.values.technician.color', UserType::Technician->getColor());
 });
 
 test('UserType getIcon method returns translation keys', function (): void {
-    Assert::assertSame('heroicon-o-shield-check', UserType::MasterAdmin->getIcon());
-    Assert::assertSame('heroicon-o-briefcase', UserType::BoUser->getIcon());
+    Assert::assertSame('user::user_type.values.master_admin.icon', UserType::MasterAdmin->getIcon());
+    Assert::assertSame('user::user_type.values.backoffice_user.icon', UserType::BoUser->getIcon());
 });
 
 test('SystemRole enum can be instantiated', function (): void {

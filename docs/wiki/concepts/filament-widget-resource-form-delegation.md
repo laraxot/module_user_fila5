@@ -72,8 +72,6 @@ class RegisterWidget extends XotBaseSchemaWidget
 
 1. **DRY** — Un solo posto per regole password, unique email, autocomplete, validazione
 2. **KISS** — Il widget resta orchestrazione Livewire (submit, redirect, log)
-3. **Allineamento Filament v5** — `XotBaseResourceForm` + pattern <nome progetto> `TicketForm`
-
 3. **Allineamento Filament v5** — `XotBaseResourceForm` + pattern Fixcity `TicketForm`
 4. **Scalabilità** — Quando una regola di validazione cambia, si aggiorna IN UN SOLO POSTO
 

@@ -24,7 +24,6 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rules\Password as PasswordRule;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Http\Controllers\XotBaseController;
@@ -55,7 +54,11 @@ class RegisterController extends XotBaseController
 
         /** @var array<string, mixed> $input */
         $input = $request->all();
-        $input['password'] = bcrypt(SafeStringCastAction::cast($input['password'] ?? null));
+        $password = $input['password'] ?? null;
+        if (! \is_string($password)) {
+            return $this->sendError('Validation Error.', ['password' => ['The password must be a string.']]);
+        }
+        $input['password'] = bcrypt($password);
         $user_class = XotData::make()->getUserClass();
         /** @var UserContract */
         $user = $user_class::create($input);

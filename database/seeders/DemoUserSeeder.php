@@ -13,7 +13,7 @@ use Modules\User\Models\User;
 use Modules\Xot\Datas\XotData;
 
 /**
- * Utenti demo deterministici per FO <nome progetto> (login + owner ticket).
+ * Utenti demo deterministici per FO Fixcity (login + owner ticket).
  *
  * Idempotente: updateOrCreate su email.
  */
@@ -26,8 +26,8 @@ class DemoUserSeeder extends Seeder
         $userClass = XotData::make()->getUserClass();
         \assert(is_subclass_of($userClass, User::class));
 
-        $userTable = (new $userClass())->getTable();
-        $userConnection = (new $userClass())->getConnectionName() ?? 'user';
+        $userTable = (new $userClass)->getTable();
+        $userConnection = (new $userClass)->getConnectionName() ?? 'user';
 
         DB::connection($userConnection)
             ->table($userTable)
@@ -43,7 +43,7 @@ class DemoUserSeeder extends Seeder
                 'role' => 'super-admin',
             ],
             [
-                'email' => 'cittadino@<nome progetto>.demo',
+                'email' => 'cittadino@fixcity.demo',
                 'name' => 'Cittadino Demo',
                 'password' => 'password123',
                 'type' => 'customer_user',

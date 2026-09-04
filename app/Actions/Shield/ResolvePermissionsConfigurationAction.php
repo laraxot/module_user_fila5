@@ -69,7 +69,10 @@ class ResolvePermissionsConfigurationAction
             return [];
         }
 
-        return array_values(array_filter($res, 'is_string'));
+        return array_values(array_map(
+            static fn (mixed $item): string => is_string($item) ? $item : '',
+            $res
+        ));
     }
 
     private function getPagePermissionPrefix(): string
@@ -173,6 +176,9 @@ class ResolvePermissionsConfigurationAction
             return [];
         }
 
-        return array_values(array_filter($res, 'is_string'));
+        return array_values(array_map(
+            static fn (mixed $item): string => is_string($item) ? $item : '',
+            $res
+        ));
     }
 }

@@ -26,7 +26,8 @@ class ResolveFilamentUserConfigurationAction
      */
     public function execute(): array
     {
-        $filamentUserConfig = FilamentShieldData::make()->filament_user;
+        $shieldData = FilamentShieldData::make();
+        $filamentUserConfig = $shieldData->filament_user;
 
         return [
             'enabled' => $filamentUserConfig->enabled,

@@ -11,7 +11,7 @@ return [
         'input_border_color' => ['label' => 'input_border_color', 'placeholder' => 'input_border_color', 'helper_text' => 'input_border_color', 'description' => 'input_border_color', 'tooltip' => ''],
     ],
     'actions' => [
-        'updateAction' => ['label' => 'updateAction', 'icon' => 'updateAction', 'tooltip' => 'updateAction'],
+        'updateAction' => ['label' => 'updateAction'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'navigation' => [

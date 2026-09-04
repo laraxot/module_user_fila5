@@ -8,7 +8,7 @@ use Modules\User\Actions\Socialite\IsUserAllowedAction;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-user-db');
+uses(TestCase::class);
 
 describe('IsUserAllowedAction', function (): void {
     beforeEach(function (): void {

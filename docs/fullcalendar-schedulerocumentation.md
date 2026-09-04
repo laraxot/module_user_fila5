@@ -5,9 +5,6 @@ tags: [fullcalendar, schedulerocumentation]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "fullcalendar-schedulerocumentation fullcalendar scheduler - documentazione completa"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -331,5 +328,3 @@ Questa documentazione fornisce una copertura completa per tutti gli aspetti dell
 4. **Configurazione produzione**: Best practices nel troubleshooting
 
 La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di <nome progetto>.
-
-```

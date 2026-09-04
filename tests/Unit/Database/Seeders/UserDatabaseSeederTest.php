@@ -8,13 +8,13 @@ use Modules\User\Models\Role;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('user-db');
+uses(TestCase::class);
 
 /*
  * @covers \Modules\User\Database\Seeders\UserDatabaseSeeder
  */
 it('runs UserDatabaseSeeder successfully', function (): void {
-    $seeder = new UserDatabaseSeeder();
+    $seeder = new UserDatabaseSeeder;
     $seeder->setContainer(app());
 
     $seeder->run();
@@ -26,7 +26,7 @@ it('runs UserDatabaseSeeder successfully', function (): void {
 });
 
 it('gives super-admin role all permissions after seeding', function (): void {
-    $seeder = new UserDatabaseSeeder();
+    $seeder = new UserDatabaseSeeder;
     $seeder->setContainer(app());
 
     $seeder->run();

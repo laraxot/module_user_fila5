@@ -13,6 +13,7 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\PageRegistration;
+use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\IconColumn;
@@ -35,10 +36,10 @@ class OauthRefreshTokenResource extends XotBaseResource
     /**
      * Get the form schema for the resource.
      *
-     * @return array<string, mixed>
+     * @return array<string, Component>
      */
-    // #[\Override]
-    public static function getFormSchemaOld(): array
+    #[\Override]
+    public static function getFormSchema(): array
     {
         return [
             'oauth_refresh_token_info' => Section::make(static::trans('label'))
@@ -87,15 +88,15 @@ class OauthRefreshTokenResource extends XotBaseResource
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
                     ->requiresConfirmation()
-                    ->action(function (OauthRefreshToken $record): void {
-                        if (app(RevokeRefreshTokenAction::class)->execute($record)) {
+                    ->action(function (mixed $record): void {
+                        if ($record instanceof OauthRefreshToken && app(RevokeRefreshTokenAction::class)->execute($record)) {
                             Notification::make()
                                 ->title(static::trans('actions.revoke.success'))
                                 ->success()
                                 ->send();
                         }
                     })
-                    ->visible(fn (OauthRefreshToken $record): bool => ! (bool) $record->getAttribute('revoked')),
+                    ->visible(fn (mixed $record) => $record instanceof OauthRefreshToken && ! (bool) $record->getAttribute('revoked')),
                 DeleteAction::make(),
             ])
             ->toolbarActions([

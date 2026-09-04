@@ -39,11 +39,8 @@ class OauthRefreshTokenResource extends XotBaseResource
      *
      * @return array<string, Select|TextInput>
      */
-    // #[\Override]
-    /**
-     * @return array<string, mixed>
-     */
-    public static function getFormSchemaOld(): array
+    #[\Override]
+    public static function getFormSchema(): array
     {
         return [
             'access_token_id' => Select::make('access_token_id')

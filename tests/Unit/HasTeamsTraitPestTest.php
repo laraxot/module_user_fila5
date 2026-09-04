@@ -17,7 +17,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
-uses(TestCase::class)->group('user-db');
+uses(TestCase::class);
 
 /**
  * @param  array<string, mixed>  $attributes
@@ -233,7 +233,7 @@ test('it correctly manages team permissions', function (): void {
 
 test('it handles edge cases', function (): void {
     ['user' => $user] = pestHasTeamsBootstrapFixture();
-    $newUser = new User();
+    $newUser = new User;
 
     Assert::assertFalse($newUser->belongsToTeams());
 

@@ -13,7 +13,7 @@ use Modules\User\Actions\User\UpdateUserAction;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-user-db');
+uses(TestCase::class);
 
 test('RegisterSocialiteUserAction can be instantiated', function () {
     try {

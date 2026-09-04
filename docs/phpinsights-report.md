@@ -14,14 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-report.md
-
-
-## Appendice — contenuto migrato
-
----
-module: theme
-topic: phpinsights-report
-canonical: ../../../Themes/docs/shared-components/.gitkeep
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

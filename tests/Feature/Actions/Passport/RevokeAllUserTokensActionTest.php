@@ -16,7 +16,7 @@ describe('RevokeAllUserTokensAction', function (): void {
         $user = UserFactory::new()->createOne();
 
         $clientId = (string) Str::uuid();
-        DB::connection('user')->table('oauth_clients')->insert(TestCase::oauthClientColumnsOnly([
+        DB::connection('user')->table('oauth_clients')->insert([
             'id' => $clientId,
             'user_id' => (string) $user->id,
             'name' => 'Test Client',
@@ -30,7 +30,7 @@ describe('RevokeAllUserTokensAction', function (): void {
             'revoked' => 0,
             'created_at' => now(),
             'updated_at' => now(),
-        ]));
+        ]);
 
         DB::connection('user')->table('oauth_access_tokens')->insert([
             [
@@ -74,7 +74,7 @@ describe('RevokeAllUserTokensAction', function (): void {
         $user = UserFactory::new()->createOne();
 
         $clientId = (string) Str::uuid();
-        DB::connection('user')->table('oauth_clients')->insert(TestCase::oauthClientColumnsOnly([
+        DB::connection('user')->table('oauth_clients')->insert([
             'id' => $clientId,
             'user_id' => (string) $user->id,
             'name' => 'Test Client',
@@ -88,7 +88,7 @@ describe('RevokeAllUserTokensAction', function (): void {
             'revoked' => 0,
             'created_at' => now(),
             'updated_at' => now(),
-        ]));
+        ]);
 
         DB::connection('user')->table('oauth_access_tokens')->insert([
             [
@@ -112,7 +112,7 @@ describe('RevokeAllUserTokensAction', function (): void {
         $user = UserFactory::new()->createOne();
 
         $clientId = (string) Str::uuid();
-        DB::connection('user')->table('oauth_clients')->insert(TestCase::oauthClientColumnsOnly([
+        DB::connection('user')->table('oauth_clients')->insert([
             'id' => $clientId,
             'user_id' => (string) $user->id,
             'name' => 'Test Client',
@@ -126,7 +126,7 @@ describe('RevokeAllUserTokensAction', function (): void {
             'revoked' => 0,
             'created_at' => now(),
             'updated_at' => now(),
-        ]));
+        ]);
 
         DB::connection('user')->table('oauth_access_tokens')->insert([
             [
@@ -161,7 +161,7 @@ describe('RevokeAllUserTokensAction', function (): void {
         $user = UserFactory::new()->createOne();
 
         $clientId = (string) Str::uuid();
-        DB::connection('user')->table('oauth_clients')->insert(TestCase::oauthClientColumnsOnly([
+        DB::connection('user')->table('oauth_clients')->insert([
             'id' => $clientId,
             'user_id' => (string) $user->id,
             'name' => 'Test Client',
@@ -175,7 +175,7 @@ describe('RevokeAllUserTokensAction', function (): void {
             'revoked' => 0,
             'created_at' => now(),
             'updated_at' => now(),
-        ]));
+        ]);
 
         $tokenCount = 5;
         $tokens = [];
@@ -204,7 +204,7 @@ describe('RevokeAllUserTokensAction', function (): void {
         $user2 = UserFactory::new()->createOne();
 
         $clientId = (string) Str::uuid();
-        DB::connection('user')->table('oauth_clients')->insert(TestCase::oauthClientColumnsOnly([
+        DB::connection('user')->table('oauth_clients')->insert([
             'id' => $clientId,
             'user_id' => (string) $user1->id,
             'name' => 'Test Client',
@@ -218,7 +218,7 @@ describe('RevokeAllUserTokensAction', function (): void {
             'revoked' => 0,
             'created_at' => now(),
             'updated_at' => now(),
-        ]));
+        ]);
 
         DB::connection('user')->table('oauth_access_tokens')->insert([
             [
@@ -253,7 +253,7 @@ describe('RevokeAllUserTokensAction', function (): void {
         $user = UserFactory::new()->createOne();
 
         $clientId = (string) Str::uuid();
-        DB::connection('user')->table('oauth_clients')->insert(TestCase::oauthClientColumnsOnly([
+        DB::connection('user')->table('oauth_clients')->insert([
             'id' => $clientId,
             'user_id' => (string) $user->id,
             'name' => 'Test Client',
@@ -267,7 +267,7 @@ describe('RevokeAllUserTokensAction', function (): void {
             'revoked' => 0,
             'created_at' => now(),
             'updated_at' => now(),
-        ]));
+        ]);
 
         DB::connection('user')->table('oauth_access_tokens')->insert([
             [

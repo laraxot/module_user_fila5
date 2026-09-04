@@ -28,8 +28,8 @@ describe('User Business Logic', function (): void {
         $weakUser = createTestUser(['password' => Hash::make($weakPassword)]);
         $strongUser = createTestUser(['password' => Hash::make($strongPassword)]);
 
-        Assert::assertNotSame($weakPassword, $weakUser->password);
-        Assert::assertNotSame($strongPassword, $strongUser->password);
+        $this->assertNotSame($weakPassword, $weakUser->password);
+        $this->assertNotSame($strongPassword, $strongUser->password);
         Assert::assertTrue(Hash::check($weakPassword, (string) $weakUser->password));
         Assert::assertTrue(Hash::check($strongPassword, (string) $strongUser->password));
     });
@@ -41,7 +41,8 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces username uniqueness when required', function (): void {
-        if (! userTableHasColumn('users', 'username')) {
+        /* @var TestCase $this */
+        if (! TestCase::userTableHasColumn('users', 'username')) {
             $email = 'alias-'.uniqid('', true).'@example.com';
             createTestUser(['email' => $email]);
 
@@ -87,13 +88,13 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces age restrictions for certain operations', function (): void {
-        /** @var TestCase $this */
-        if (! Schema::connection('<nome progetto>')->hasColumn('profiles', 'uuid')) {
-            Assert::markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
+        /* @var TestCase $this */
+        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+            $this->skipTest('profiles.uuid column missing — Profile model requires uuid.');
         }
 
-        if (! Schema::connection('<nome progetto>')->hasColumn('profiles', 'birth_date')) {
-            Assert::markTestSkipped('profiles.birth_date column missing on <nome progetto> connection.');
+        if (! Schema::connection('fixcity')->hasColumn('profiles', 'birth_date')) {
+            $this->skipTest('profiles.birth_date column missing on fixcity connection.');
         }
 
         $underageBirthDate = now()->subYears(16)->toDateString();
@@ -110,8 +111,8 @@ describe('User Business Logic', function (): void {
         Assert::assertInstanceOf(Profile::class, $underageProfile);
         Assert::assertInstanceOf(Profile::class, $adultProfile);
 
-        $underageAge = now()->diffInYears($underageBirthDate);
-        $adultAge = now()->diffInYears($adultBirthDate);
+        $underageAge = now()->diffInYears($underageProfile->birth_date);
+        $adultAge = now()->diffInYears($adultProfile->birth_date);
 
         Assert::assertLessThan(18, $underageAge);
         Assert::assertGreaterThan(17, $adultAge);
@@ -133,29 +134,31 @@ describe('User Business Logic', function (): void {
 
         $firstTeam = $teams->first();
         Assert::assertInstanceOf(Team::class, $firstTeam);
-        Assert::assertTrue(teamMemberExists($firstTeam, $user));
+        Assert::assertTrue(TestCase::teamMemberExists($firstTeam, $user));
     });
 
     test('enforces team role hierarchy', function (): void {
+        /** @var TestCase $this */
         $user = createTestUser();
         $team = TeamFactory::new()->createOne();
 
-        attachTeamMember($team, $user, ['role' => 'member']);
+        TestCase::attachTeamMember($team, $user, ['role' => 'member']);
 
-        Assert::assertTrue(DB::connection('user')->table('team_user')
-            ->where('team_id', $team->id)
-            ->where('user_id', $user->id)
-            ->where('role', 'member')
-            ->exists());
+        $this->assertDatabaseHasRow('team_user', [
+            'team_id' => $team->id,
+            'user_id' => $user->id,
+            'role' => 'member',
+        ], 'user');
     });
 
     test('enforces team ownership rules', function (): void {
+        /** @var TestCase $this */
         $owner = createTestUser();
         $member = createTestUser();
         $team = TeamFactory::new()->createOne(['user_id' => $owner->id]);
 
         Assert::assertSame($owner->id, $team->user_id);
-        attachTeamMember($team, $member, ['role' => 'member']);
+        TestCase::attachTeamMember($team, $member, ['role' => 'member']);
 
         $freshTeam = $team->fresh();
         Assert::assertNotNull($freshTeam);
@@ -176,7 +179,10 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces permission conflicts', function (): void {
-        skipUnlessUserTable('model_has_permission', 'model_has_permission table missing on user connection.');
+        /* @var TestCase $this */
+        if (! TestCase::userTableExists('model_has_permission')) {
+            $this->skipTest('model_has_permission table missing on user connection.');
+        }
 
         $user = createTestUser();
         $uid = uniqid();
@@ -218,9 +224,9 @@ describe('User Business Logic', function (): void {
     });
 
     test('enforces referential integrity for user relationships', function (): void {
-        /** @var TestCase $this */
-        if (! Schema::connection('<nome progetto>')->hasColumn('profiles', 'uuid')) {
-            Assert::markTestSkipped('profiles.uuid column missing — Profile model requires uuid.');
+        /* @var TestCase $this */
+        if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+            $this->skipTest('profiles.uuid column missing — Profile model requires uuid.');
         }
 
         $user = createTestUser();
@@ -271,7 +277,7 @@ describe('User Business Logic', function (): void {
         $user->refresh();
         Assert::assertNotNull($user->updated_at);
         Assert::assertTrue($user->updated_at->greaterThanOrEqualTo($originalUpdatedAt));
-        Assert::assertNotSame($originalEmail, $user->email);
+        $this->assertNotSame($originalEmail, $user->email);
     });
 
     test('enforces password expiration policies', function (): void {

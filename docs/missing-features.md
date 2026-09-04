@@ -5,9 +5,6 @@ tags: [missing, features]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "missing-features analisi funzionalità mancanti - modulo user"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -180,8 +177,6 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 
 - [Modulo ExternalProject](../<nome progetto>/docs/readme.md)
 - [Modulo Limesurvey](../limesurvey/docs/readme.md)
-- [User README](./README.md)
-
 - [User README](./readme.md)
 
 ---

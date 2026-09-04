@@ -5,9 +5,6 @@ tags: [xotbasepage, inheritance]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "xotbasepage-inheritance xotbasepage inheritance architecture"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -70,8 +67,6 @@ class SocialiteProviderSettingsPage extends XotBasePage
 ## Files Affected
 - `laravel/Modules/User/app/Filament/Pages/SocialiteProviderSettingsPage.php` - Corrected implementation
 - `laravel/Modules/User/docs/wiki/concepts/xotbasepage-inheritance.md` - This documentation
-- `docs/wiki/rules/` — regole agenti (junction verso `bashscripts/ai/wiki/rules`)
-
 - `bashscripts/ai/.claude/rules/xotbasepage-inheritance.md` - Rule reference
 
 ## Migration Guide
@@ -86,10 +81,6 @@ class SocialiteProviderSettingsPage extends XotBasePage
 - Verify navigation works correctly
 
 ## Related Documentation
-- [Filament template conventions](../../../Notify/docs/filament-template-conventions.md)
-- [Translation key prototype](../../translation-key-prototype.md)
-- [Xot Module Architecture](../../../Xot/docs/wiki/concepts/xotbasepage.md)
-
 - [Filament Widget + Template as Dress Rule](../../../bashscripts/ai/.claude/rules/filament-template-as-dress.md)
 - [Translation 5-Element Rule](../../../bashscripts/ai/.claude/rules/translation-5-elements.md)
 - [Xot Module Architecture](../../Xot/docs/wiki/concepts/xotbasepage.md)

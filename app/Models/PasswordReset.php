@@ -11,31 +11,31 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Modules\User\Models\PasswordReset.
  *
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $updater
- *
- * @method static Builder<static>|PasswordReset newModelQuery()
- * @method static Builder<static>|PasswordReset newQuery()
- * @method static Builder<static>|PasswordReset query()
- *
- * @property int $id
- * @property string|null $uuid
- * @property string $email
- * @property string $token
+ * @property int         $id
+ * @property string      $email
+ * @property string      $token
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
+ * @property string|null $user_id
  * @property string|null $updated_by
  * @property string|null $created_by
- *
- * @method static Builder<static>|PasswordReset whereCreatedAt($value)
- * @method static Builder<static>|PasswordReset whereCreatedBy($value)
- * @method static Builder<static>|PasswordReset whereEmail($value)
- * @method static Builder<static>|PasswordReset whereId($value)
- * @method static Builder<static>|PasswordReset whereToken($value)
- * @method static Builder<static>|PasswordReset whereUpdatedAt($value)
- * @method static Builder<static>|PasswordReset whereUpdatedBy($value)
+ * @method static Builder|PasswordReset newModelQuery()
+ * @method static Builder|PasswordReset newQuery()
+ * @method static Builder|PasswordReset query()
+ * @method static Builder|PasswordReset whereCreatedAt($value)
+ * @method static Builder|PasswordReset whereCreatedBy($value)
+ * @method static Builder|PasswordReset whereEmail($value)
+ * @method static Builder|PasswordReset whereId($value)
+ * @method static Builder|PasswordReset whereToken($value)
+ * @method static Builder|PasswordReset whereUpdatedAt($value)
+ * @method static Builder|PasswordReset whereUpdatedBy($value)
+ * @method static Builder|PasswordReset whereUserId($value)
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @property string|null          $uuid
  * @method static Builder<static>|PasswordReset whereUuid($value)
- *
+ * @property ProfileContract|null $deleter
+ * @method static \Modules\User\Database\Factories\PasswordResetFactory factory($count = null, $state = [])
  * @mixin \Eloquent
  */
 class PasswordReset extends BaseModel

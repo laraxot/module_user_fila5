@@ -5,14 +5,6 @@ tags: [assign, module, command]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "assign-module-command assignmodulecommand - gestione moduli utente"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-related:
-  - "./change-password-command.md"
-  - "./console-commands-philosophy-1-1.md"
-  - "./console-commands-philosophy-1.md"
-  - "./console-commands-philosophy-2.md"
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -58,7 +50,7 @@ Current modules for admin@example.com: User, Xot, UI
 
 Select modules (checked = assigned, unchecked = will be revoked):
  ◉ User
- ◉ Xot
+ ◉ Xot  
  ◉ UI
  ◯ Performance
  ◯ Patient
@@ -80,12 +72,12 @@ class AssignModuleCommand extends Command
 {
     protected $name = 'user:assign-module';
     protected $description = 'Assign or revoke modules to/from user';
-
+    
     public function handle(): void
     {
         // Implementazione del flusso
     }
-
+    
     private function getUserModuleRoles(UserContract $user): array
     {
         // Estrazione ruoli modulo dell'utente
@@ -96,7 +88,7 @@ class AssignModuleCommand extends Command
 ### Logica di Assegnazione
 1. **Recupero Moduli Disponibili**: `Module::all()` per tutti i moduli
 2. **Estrazione Ruoli Correnti**: Filtra ruoli con pattern `{module}::admin`
-3. **Calcolo Differenze**:
+3. **Calcolo Differenze**: 
    - `$modulesToAssign = array_diff($selectedModules, $currentModules)`
    - `$modulesToRevoke = array_diff($currentModules, $selectedModules)`
 4. **Assegnazione**: `$user->assignRole($role)` per nuovi moduli
@@ -116,7 +108,7 @@ class AssignModuleCommand extends Command
 
 ### Messaggi di Feedback
 - **Info**: Operazioni di assegnazione completate
-- **Warn**: Operazioni di revoca completate
+- **Warn**: Operazioni di revoca completate  
 - **Error**: Errori critici (utente non trovato)
 
 ## Best Practices
@@ -163,7 +155,7 @@ Result: ✓ Assigned Performance, ✓ Assigned Patient
 
 ### Scenario 2: Revoca Moduli
 ```
-Input: admin@example.com
+Input: admin@example.com  
 Current: User, Xot, Performance, Patient
 Selected: User, Xot
 Result: ✗ Revoked Performance, ✗ Revoked Patient
@@ -181,8 +173,6 @@ Result: No changes made to user modules.
 - [Console Commands Philosophy](console-commands-philosophy.md)
 - [User Models](models/readme.md)
 - [Role Management](models/role-management.md)
-- [README.md](../README.md)
-
 - [README.md](../readme.md)
 
 ## Aggiornamenti

@@ -5,9 +5,6 @@ tags: [file, naming, rules]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "file-naming-rules regole di naming per file"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -59,8 +56,6 @@ Su filesystem case-insensitive (Windows, macOS default), file con nomi che diffe
 ✅ CORRETTO:
 - README.md (maiuscolo - convenzione universale)
 - ROADMAP.md (maiuscolo - convenzione universale)
-- changelog.md (maiuscolo - convenzione universale)
-
 - CHANGELOG.md (maiuscolo - convenzione universale)
 - LICENSE.md (maiuscolo - convenzione universale)
 - CONTRIBUTING.md (maiuscolo - convenzione universale)

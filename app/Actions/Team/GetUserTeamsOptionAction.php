@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Team;
 
 use Modules\User\Models\TeamUser;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 class GetUserTeamsOptionAction
@@ -29,8 +28,11 @@ class GetUserTeamsOptionAction
             }
 
             $key = $team->getKey();
-            $name = $team->getAttribute('name');
-            $options[is_string($key) ? $key : SafeStringCastAction::cast($key)] = SafeStringCastAction::cast($name);
+            if (! \is_int($key) && ! \is_string($key)) {
+                continue;
+            }
+
+            $options[(string) $key] = $team->name;
         }
 
         return $options;

@@ -14,14 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/two-factor-2.md
-
-
-## Appendice — contenuto migrato
-
----
-module: theme
-topic: two-factor
-canonical: ../../../Themes/docs/shared-components/two_factor.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/two_factor.txt

@@ -5,9 +5,6 @@ tags: [filament]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "filament filament nel modulo user"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -90,14 +87,3 @@ related:
 - RegisterWidget: Migrato al sistema Schema
 - ResetPasswordWidget: Migrato al sistema Schema
 - PasswordExpiredWidget: Migrato al sistema Schema 
-
-
-## Appendice — contenuto migrato
-
----
-module: theme
-topic: filament
-canonical: ../../../Themes/docs/shared-components/filament.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/filament.txt

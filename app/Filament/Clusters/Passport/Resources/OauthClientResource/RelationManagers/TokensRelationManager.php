@@ -16,7 +16,6 @@ use Illuminate\Support\Carbon;
 use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource;
 use Modules\User\Models\OauthToken;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 use function Safe\json_encode;
@@ -56,10 +55,10 @@ class TokensRelationManager extends XotBaseRelationManager
                 })
                 ->formatStateUsing(function (mixed $state): string {
                     if (is_array($state)) {
-                        return implode(', ', array_map(fn (mixed $s): string => SafeStringCastAction::cast($s), $state));
+                        return implode(', ', array_map(fn (mixed $s): string => is_scalar($s) ? (string) $s : '', $state));
                     }
 
-                    return SafeStringCastAction::cast($state);
+                    return is_scalar($state) ? (string) $state : '';
                 }),
             'revoked' => IconColumn::make('revoked')
                 ->boolean()

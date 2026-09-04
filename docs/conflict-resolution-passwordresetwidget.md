@@ -5,9 +5,6 @@ tags: [conflict, resolution, passwordresetwidget]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "conflict-resolution-passwordresetwidget risoluzione conflitti passwordresetwidget.php"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -80,8 +77,6 @@ Verificare che:
 - Il styling Tailwind sia disponibile nel contesto Filament
 - Altri widget di autenticazione abbiano componenti simili per coerenza
 ## Collegamenti
-- [User Module Documentation](README.md)
-
 - [User Module Documentation](readme.md)
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
@@ -178,8 +173,6 @@ Verificare che:
 - Altri widget di autenticazione abbiano componenti simili per coerenza
 
 ## Collegamenti
-- [User Module Documentation](README.md)
-
 - [User Module Documentation](readme.md)
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)

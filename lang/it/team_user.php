@@ -29,11 +29,11 @@ return [
         'create' => ['label' => 'Crea Team User', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Team User', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Team User', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
     ],
     'sections' => [
-        'empty' => ['label' => 'empty', 'heading' => 'empty'],
+        'empty' => ['label' => '', 'heading' => ''],
     ],
 ];

@@ -5,9 +5,6 @@ tags: [sso]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "sso 🔑 single sign-on (sso) - guida implementazione"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -29,8 +26,6 @@ related:
 ---
 
 ## 🎯 OVERVIEW
-
-Implementazione Single Sign-On (SSO) per <nome progetto> con supporto SAML 2.0 e OpenID Connect (OIDC), permettendo l'integrazione con provider enterprise come Azure AD, Google Workspace, Okta.
 
 Implementazione Single Sign-On (SSO) per FixCity con supporto SAML 2.0 e OpenID Connect (OIDC), permettendo l'integrazione con provider enterprise come Azure AD, Google Workspace, Okta.
 
@@ -750,14 +745,3 @@ class SsoTest extends TestCase
 
 **Status**: Pianificato Q1 2026  
 **Priority**: MEDIUM  
-
-
-## Appendice — contenuto migrato
-
----
-module: theme
-topic: sso
-canonical: ../../../Themes/docs/shared-components/sso.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/sso.txt

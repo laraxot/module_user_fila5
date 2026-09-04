@@ -12,34 +12,33 @@ use Webmozart\Assert\Assert;
 /**
  * Modules\User\Models\ModelHasRole.
  *
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $updater
- *
- * @method static \Modules\User\Database\Factories\ModelRoleFactory factory($count = null, $state = [])
- * @method static Builder<static>|ModelRole newModelQuery()
- * @method static Builder<static>|ModelRole newQuery()
- * @method static Builder<static>|ModelRole query()
- *
- * @property string $id
- * @property int|null $role_id
- * @property string $model_type
- * @property string $model_id
- * @property int|null $team_id
+ * @property string      $id
+ * @property string      $role_id
+ * @property string      $model_type
+ * @property string      $model_id
+ * @property int|null    $team_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
- *
- * @method static Builder<static>|ModelRole whereCreatedAt($value)
- * @method static Builder<static>|ModelRole whereCreatedBy($value)
- * @method static Builder<static>|ModelRole whereId($value)
- * @method static Builder<static>|ModelRole whereModelId($value)
- * @method static Builder<static>|ModelRole whereModelType($value)
- * @method static Builder<static>|ModelRole whereRoleId($value)
- * @method static Builder<static>|ModelRole whereTeamId($value)
- * @method static Builder<static>|ModelRole whereUpdatedAt($value)
- * @method static Builder<static>|ModelRole whereUpdatedBy($value)
- *
+ * @method static Builder|ModelHasRole newModelQuery()
+ * @method static Builder|ModelHasRole newQuery()
+ * @method static Builder|ModelHasRole query()
+ * @method static Builder|ModelHasRole whereCreatedAt($value)
+ * @method static Builder|ModelHasRole whereCreatedBy($value)
+ * @method static Builder|ModelHasRole whereId($value)
+ * @method static Builder|ModelHasRole whereModelId($value)
+ * @method static Builder|ModelHasRole whereModelType($value)
+ * @method static Builder|ModelHasRole whereRoleId($value)
+ * @method static Builder|ModelHasRole whereTeamId($value)
+ * @method static Builder|ModelHasRole whereUpdatedAt($value)
+ * @method static Builder|ModelHasRole whereUpdatedBy($value)
+ * @property string $uuid (DC2Type:guid)
+ * @method static Builder|ModelHasRole whereUuid($value)
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @property ProfileContract|null $deleter
+ * @method static \Modules\User\Database\Factories\ModelRoleFactory factory($count = null, $state = [])
  * @mixin \Eloquent
  */
 class ModelRole extends BaseMorphPivot

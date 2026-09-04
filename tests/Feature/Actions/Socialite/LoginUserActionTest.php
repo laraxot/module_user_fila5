@@ -18,7 +18,7 @@ uses(TestCase::class);
 describe('Login User Action', function (): void {
     test('authenticates connected socialite user and dispatches event', function (): void {
         /* @var \Modules\User\Tests\TestCase $this */
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         Event::fake([SocialiteUserConnected::class]);
 
         $user = UserFactory::new()->createOne();

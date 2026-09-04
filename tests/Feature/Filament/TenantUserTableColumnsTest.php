@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Modules\User\Filament\Resources\TenantUserResource;
 use Modules\User\Filament\Resources\TenantUserResource\Pages\ListTenantUsers;
+use Modules\User\Filament\Resources\TenantUserResource\Tables\TenantUsersTable;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
@@ -25,7 +25,7 @@ describe('colonne elenco tenant user', function (): void {
     });
 
     it('prende le colonne dalla classe Table della Resource', function (): void {
-        $table = app(TenantUserResource::getTableClass());
+        $table = app(TenantUsersTable::class);
         Assert::isInstanceOf($table, XotBaseResourceTable::class);
 
         expect($table->getTableColumns())->not->toBeEmpty();

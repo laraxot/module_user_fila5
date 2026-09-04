@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Livewire\Auth\Passwords;
 
-use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Livewire\Component;
 use Modules\Xot\Actions\File\ViewCopyAction;
-use Webmozart\Assert\Assert;
 
 class Confirm extends Component
 {
@@ -25,7 +23,7 @@ class Confirm extends Component
         return redirect()->intended(route('home'));
     }
 
-    public function render(): View
+    public function render(): mixed
     {
         app(ViewCopyAction::class)
             ->execute('user::livewire.auth.passwords.confirm', 'pub_theme::livewire.auth.passwords.confirm');
@@ -37,11 +35,6 @@ class Confirm extends Component
          */
         $view = 'pub_theme::livewire.auth.passwords.confirm';
 
-        // `extends()` passa da __call sul factory: il tipo va riportato a View
-        // con un'asserzione runtime, come in Verify::render().
-        $result = view($view)->extends('pub_theme::layouts.auth');
-        Assert::isInstanceOf($result, View::class);
-
-        return $result;
+        return view($view)->extends('pub_theme::layouts.auth');
     }
 }

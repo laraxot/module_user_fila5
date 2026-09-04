@@ -1,15 +1,9 @@
 ---
-title: "Widget Translation Rules - <nome progetto> Project"
-
 title: "Widget Translation Rules - FixCity Project"
 type: rule
 tags: [widget, translation, rules]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "widget-translation-rules widget translation rules - <nome progetto> project"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 qmd: "widget-translation-rules widget translation rules - fixcity project"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -23,8 +17,6 @@ related:
   - "./component-verification.md"
   - "./dependency-rules.md"
 ---
-
-# Widget Translation Rules - <nome progetto> Project
 
 # Widget Translation Rules - FixCity Project
 
@@ -175,8 +167,4 @@ This document serves as a reference for:
 - Translation implementation patterns
 - Code quality requirements
 - Documentation standards
-All widget development should follow these rules to maintain consistency and quality across the <nome progetto> project.
-
-```
-
 All widget development should follow these rules to maintain consistency and quality across the FixCity project.

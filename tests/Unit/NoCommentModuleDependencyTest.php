@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit;
 
-use PHPUnit\Framework\Assert;
-
 use function Safe\file_get_contents;
 
 test('it does not reference the comment module anywhere under user app', function (): void {
@@ -26,9 +24,10 @@ test('it does not reference the comment module anywhere under user app', functio
 
         $contents = file_get_contents($file->getPathname());
 
-        Assert::assertStringNotContainsString('Modules\\Comment\\', $contents);
-        Assert::assertStringNotContainsString('InteractsWithComments', $contents);
-        Assert::assertStringNotContainsString('HasCommentatorRelations', $contents);
+        expect($contents)
+            ->not()->toContain('Modules\\Comment\\')
+            ->not()->toContain('InteractsWithComments')
+            ->not()->toContain('HasCommentatorRelations');
     }
 });
 
@@ -36,7 +35,8 @@ test('base user model does not use comment traits', function (): void {
     $baseUserPath = dirname(__DIR__, 2).'/app/Models/BaseUser.php';
     $contents = file_get_contents($baseUserPath);
 
-    Assert::assertStringNotContainsString('HasCommentatorRelations', $contents);
-    Assert::assertStringNotContainsString('CanComment', $contents);
-    Assert::assertStringNotContainsString('InteractsWithComments', $contents);
+    expect($contents)
+        ->not()->toContain('HasCommentatorRelations')
+        ->not()->toContain('CanComment')
+        ->not()->toContain('InteractsWithComments');
 });

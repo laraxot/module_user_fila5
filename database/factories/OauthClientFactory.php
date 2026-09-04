@@ -34,18 +34,15 @@ class OauthClientFactory extends Factory
      */
     public function definition(): array
     {
-        // Colonne di Passport 12: `owner_type`/`owner_id` al posto di `user_id`,
-        // `redirect_uris` al posto di `redirect`, e i flag booleani
-        // `personal_access_client`/`password_client` assorbiti in `grant_types`.
-        // La factory ne mescolava le due generazioni e scriveva colonne inesistenti.
         return [
             'id' => $this->faker->uuid(),
-            'owner_type' => User::class,
-            'owner_id' => User::factory(),
+            'user_id' => User::factory(),
             'name' => $this->faker->company(),
             'secret' => $this->faker->sha256(),
             'provider' => $this->faker->optional()->randomElement(['users', null]),
-            'redirect_uris' => [$this->faker->url()],
+            'redirect' => $this->faker->url(),
+            'personal_access_client' => $this->faker->boolean(20),
+            'password_client' => $this->faker->boolean(30),
             'revoked' => $this->faker->boolean(5),
             'grant_types' => $this->faker->randomElements(
                 ['authorization_code', 'client_credentials', 'password', 'refresh_token'],
@@ -64,7 +61,8 @@ class OauthClientFactory extends Factory
     public function personalAccess(): static
     {
         return $this->state(fn (): array => [
-            'grant_types' => ['personal_access'],
+            'personal_access_client' => true,
+            'password_client' => false,
             'name' => 'Personal Access Client',
         ]);
     }
@@ -75,7 +73,8 @@ class OauthClientFactory extends Factory
     public function password(): static
     {
         return $this->state(fn (): array => [
-            'grant_types' => ['password', 'refresh_token'],
+            'password_client' => true,
+            'personal_access_client' => false,
             'name' => 'Password Grant Client',
         ]);
     }
@@ -106,8 +105,7 @@ class OauthClientFactory extends Factory
     public function forUser(User $user): static
     {
         return $this->state(fn (): array => [
-            'owner_type' => $user::class,
-            'owner_id' => $user->id,
+            'user_id' => $user->id,
         ]);
     }
 
@@ -117,7 +115,7 @@ class OauthClientFactory extends Factory
     public function withRedirectUri(string $redirectUri): static
     {
         return $this->state(fn (): array => [
-            'redirect_uris' => [$redirectUri],
+            'redirect' => $redirectUri,
         ]);
     }
 

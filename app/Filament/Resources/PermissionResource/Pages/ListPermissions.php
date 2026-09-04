@@ -110,11 +110,8 @@ class ListPermissions extends XotBaseListRecords
                         /** @var Builder<Role> $query */
                         $query = $roleModel::query();
 
-                        /** @var \Illuminate\Support\Collection<int|string, string|int> $names */
-                        $names = $query->pluck('name', 'id');
-
-                        return $names
-                            ->mapWithKeys(static fn (string|int $name, int|string $id): array => [(string) $id => (string) $name])
+                        return $query->pluck('name', 'id')
+                            ->mapWithKeys(static fn (mixed $name, mixed $id): array => is_string($name) || is_int($name) ? [(string) $id => (string) $name] : [])
                             ->all();
                     })->required(),
                 ])

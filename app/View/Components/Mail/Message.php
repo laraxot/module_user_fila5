@@ -26,10 +26,10 @@ class Message extends Component
     {
         $metatag = MetatagData::make();
         $view = 'user::components.mail.html.message';
-        $viewParams = [
-            'logo' => $metatag->getBrandLogo(),
+        $view_params = [
+            'logo' => asset($metatag->getBrandLogo()),
         ];
 
-        return view($view, $viewParams);
+        return view($view, $view_params);
     }
 }

@@ -39,11 +39,8 @@ abstract class BaseUserResource extends XotBaseResource
     //    static::$extendFormCallback = $callback;
     // }
 
-    // #[\Override]
-    /**
-     * @return array<string, mixed>
-     */
-    public static function getFormSchemaOld(): array
+    #[\Override]
+    public static function getFormSchema(): array
     {
         return [
             'section01' => Section::make([
@@ -61,7 +58,7 @@ abstract class BaseUserResource extends XotBaseResource
                     ->required(fn ($livewire) => $livewire instanceof CreateUser),
             ])->columnSpan(8),
             'section02' => Section::make([
-                'created_at' => TextEntry::make('created_at')->html()->state(static function ($record) {
+                'created_at' => TextEntry::make('created_at')->state(static function ($record) {
                     if ($record === null || ! $record instanceof Model) {
                         return new HtmlString('&mdash;');
                     }

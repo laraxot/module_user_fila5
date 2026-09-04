@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use DateInterval;
 use Modules\User\Datas\DeviceData;
 use Modules\User\Datas\FilamentShieldData;
 use Modules\User\Datas\FilamentUserData;
@@ -18,7 +17,7 @@ use Modules\User\Datas\SuperAdminData;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-user-db');
+uses(TestCase::class);
 
 test('PermissionData can be instantiated', function () {
     $permissionData = PermissionData::from([

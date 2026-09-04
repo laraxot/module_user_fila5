@@ -10,6 +10,7 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\PageRegistration;
+use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\IconColumn;
@@ -37,10 +38,10 @@ class OauthDeviceCodeResource extends XotBaseResource
     /**
      * Get the form schema for the resource.
      *
-     * @return array<string, mixed>
+     * @return array<string, Component>
      */
-    // #[\Override]
-    public static function getFormSchemaOld(): array
+    #[\Override]
+    public static function getFormSchema(): array
     {
         return [
             'oauth_device_code_info' => Section::make(static::trans('label'))
@@ -127,15 +128,17 @@ class OauthDeviceCodeResource extends XotBaseResource
                     ->color('danger')
                     ->requiresConfirmation()
                     ->modalHeading(static::trans('actions.revoke.label'))
-                    ->action(function (OauthDeviceCode $record): void {
-                        $record->revoked = true;
-                        $record->save();
-                        Notification::make()
-                            ->title(static::trans('actions.revoke.success'))
-                            ->success()
-                            ->send();
+                    ->action(function (mixed $record): void {
+                        if ($record instanceof OauthDeviceCode) {
+                            $record->revoked = true;
+                            $record->save();
+                            Notification::make()
+                                ->title(static::trans('actions.revoke.success'))
+                                ->success()
+                                ->send();
+                        }
                     })
-                    ->visible(fn (OauthDeviceCode $record): bool => ! $record->revoked),
+                    ->visible(fn (mixed $record) => $record instanceof OauthDeviceCode && ! $record->revoked),
                 DeleteAction::make(),
             ])
             ->defaultSort('expires_at', 'desc');

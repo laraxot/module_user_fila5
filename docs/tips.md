@@ -14,14 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/tips.md
-
-
-## Appendice — contenuto migrato
-
----
-module: theme
-topic: tips
-canonical: ../../../Themes/docs/shared-components/tips-Modules.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/tips-Modules.txt

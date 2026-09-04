@@ -14,14 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/json.md
-
-
-## Appendice — contenuto migrato
-
----
-module: theme
-topic: json
-canonical: ../../../Themes/docs/shared-components/json.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/json.txt

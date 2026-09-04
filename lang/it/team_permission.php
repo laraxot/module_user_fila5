@@ -23,13 +23,13 @@ return [
         'create' => ['label' => 'Crea Permesso Team', 'success' => 'Permesso team creato con successo', 'error' => 'Errore durante la creazione del permesso team', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Permesso Team', 'success' => 'Permesso team aggiornato con successo', 'error' => 'Errore durante l\'aggiornamento del permesso team', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Permesso Team', 'success' => 'Permesso team eliminato con successo', 'error' => 'Errore durante l\'eliminazione del permesso team', 'confirmation' => 'Sei sicuro di voler eliminare questo permesso team?', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
     ],
     'label' => 'Team Permission',
     'plural_label' => 'Team Permission (Plurale)',
     'sections' => [
-        'empty' => ['label' => 'empty', 'heading' => 'empty'],
+        'empty' => ['label' => '', 'heading' => ''],
     ],
 ];

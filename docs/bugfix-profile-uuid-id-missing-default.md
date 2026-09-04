@@ -1,12 +1,3 @@
----
-title: "Bugfix — Profile `firstOrCreate()` fatal: 'Field 'id' doesn't have a default value'"
-module: user
-type: integration
-tags: [integrations, modules, user]
-created: 2026-08-24
-updated: 2026-08-24
----
-
 # Bugfix — Profile `firstOrCreate()` fatal: "Field 'id' doesn't have a default value"
 
 ## Sintomo (produzione, 2026-07-27)

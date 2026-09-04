@@ -31,12 +31,12 @@ return [
         'create' => ['label' => 'Crea Tenant User', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Tenant User', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Tenant User', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
     ],
     'sections' => [
         'Tenant User Information' => ['label' => 'Tenant User Information', 'heading' => 'Tenant User Information'],
-        'empty' => ['label' => 'empty', 'heading' => 'empty'],
+        'empty' => ['label' => '', 'heading' => ''],
     ],
 ];

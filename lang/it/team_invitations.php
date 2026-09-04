@@ -20,8 +20,7 @@ return [
     ],
     'actions' => [
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
-    'navigation' => ['label' => 'team invitations.navigation', 'icon' => 'team invitations.navigation'],
 ];

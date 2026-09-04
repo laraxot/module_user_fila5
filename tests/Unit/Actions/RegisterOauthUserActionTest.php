@@ -11,7 +11,7 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('user-db');
+uses(TestCase::class);
 
 describe('RegisterOauthUserAction', function (): void {
     /**

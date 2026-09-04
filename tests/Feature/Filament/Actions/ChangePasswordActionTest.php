@@ -14,7 +14,7 @@ use function Safe\file_get_contents;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
+    /* @var TestCase $this */
     $this->setupFilamentAdminPanel();
 
     $this->action = ChangePasswordAction::make();

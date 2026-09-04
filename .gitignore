@@ -1,28 +1,3 @@
-
-# MODULE ROOT FORBIDDEN DIRS
-_docs
-archive/
-docs/**/*-[0-9].md
-docs/img/*.jpg
-docs/img/*.png
-docs/screenshots/*.png
-legacy/
-phpmd.ruleset.xml
-phpmd.ruleset.xml.bak
-phpstan*
-resources/favicon.png
-resources/img/*.png
-resources/img/screenshots
-workbench
-
-# Root quality tool configs forbidden in module root
-rector.php
-phpmd*
-graphify-out/
-
-# Cartelle di configurazione IDE: non stanno nella root di un modulo o di un tema.
-# Sono impostazioni personali di chi sviluppa, non contratto del modulo, e su un
-# repository condiviso fra basi diverse producono conflitti a ogni sync (XOT-5.38).
 # Auto-generated forbidden paths — do not edit manually
 # Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
 
@@ -31,6 +6,7 @@ _bmad-output
 .circleci
 .claude-audit
 .devcontainer
+_docs
 docs/archive
 docs/archived
 docs/legacy
@@ -170,3 +146,4 @@ resources/views/node_modules
 # Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
 phpinsights.php
 rector.php
+tests/Unit/graphify-out/

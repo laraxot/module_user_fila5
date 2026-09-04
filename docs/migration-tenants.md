@@ -5,9 +5,6 @@ tags: [migration, tenants]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "migration-tenants 🔧 migration fix: create_tenants_table"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -233,8 +230,6 @@ done
 ### This Analysis
 
 - [Migration Violations](./migration-violations-tenants.md) - Detailed analysis
-- [User Module README](./README.md)
-
 - [User Module README](./readme.md)
 
 ---

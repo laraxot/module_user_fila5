@@ -16,9 +16,9 @@ class UpgradeController extends Controller
 {
     public function __invoke(Request $_request): void
     {
-        $user_class = XotData::make()->getUserClass();
-        $users = $user_class::get();
         /* da id a uuid
+         * $user_class = XotData::make()->getUserClass();
+         * $users = $user_class::get();
          * foreach ($users as $user) {
          * if (strlen(is_string($user) ? $user : (string) $user->) >= 32) { // gia' convertito
          * continue;

@@ -5,9 +5,6 @@ tags: [repos]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "repos repos"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -26,14 +23,3 @@ related:
 <!-- Contenuto migrato da _docs/repos.txt -->
 
 https://github.com/solutionforest/filament-access-management
-
-
-## Appendice — contenuto migrato
-
----
-module: theme
-topic: repos
-canonical: ../../../Themes/docs/shared-components/repos.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/repos.txt

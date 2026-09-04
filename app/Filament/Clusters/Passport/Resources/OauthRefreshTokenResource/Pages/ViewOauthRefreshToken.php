@@ -12,7 +12,6 @@ use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthRefreshTokenResource;
-use Modules\User\Models\OauthRefreshToken;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 
@@ -33,7 +32,11 @@ class ViewOauthRefreshToken extends XotBaseViewRecord
                         ->schema([
                             'id' => TextEntry::make('id'),
                             'access_token_id' => TextEntry::make('accessToken.id')
-                                ->url(function (OauthRefreshToken $record): ?string {
+                                ->url(function (?Model $record): ?string {
+                                    if (! $record instanceof Model) {
+                                        return null;
+                                    }
+
                                     $accessToken = $record->getRelationValue('accessToken');
                                     if (($accessToken instanceof Model) && $accessToken->exists) {
                                         return OauthAccessTokenResource::getUrl('view', ['record' => $accessToken]);

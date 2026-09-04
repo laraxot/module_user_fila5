@@ -14,14 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/tailwind.md
-
-
-## Appendice — contenuto migrato
-
----
-module: theme
-topic: tailwind
-canonical: ../../../Themes/docs/shared-components/tailwind.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/tailwind.txt

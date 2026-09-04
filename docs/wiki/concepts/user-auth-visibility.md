@@ -15,8 +15,6 @@ related:
 # Admin – User List Visibility
 
 ## Current Issue
-The admin UI for users (`/<nome progetto>/admin/users`) shows entries but the list is hidden by CSS rules applied to the datatable wrapper. The rows appear as text nodes without actual row styling, making the list unreadable.
-
 The admin UI for users (`/fixcity/admin/users`) shows entries but the list is hidden by CSS rules applied to the datatable wrapper. The rows appear as text nodes without actual row styling, making the list unreadable.
 
 ## Root Cause
@@ -30,8 +28,6 @@ The admin UI for users (`/fixcity/admin/users`) shows entries but the list is hi
 - Verified with the design system: tables now show borders, hover states, and striped rows.
 
 ## Verification
-- Open `/<nome progetto>/admin/users` and confirm each user row displays avatar, name, email, role, and actions.
-
 - Open `/fixcity/admin/users` and confirm each user row displays avatar, name, email, role, and actions.
 - Confirm zebra striping works and row hover highlights correctly.
 - Screenshot saved as `docs/design-comuni/screenshots/admin-users-list.png`.

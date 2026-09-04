@@ -5,9 +5,6 @@ tags: [volt, folio, logout]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "volt-folio-logout implementazione corretta del logout con volt e folio"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -24,8 +21,6 @@ related:
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
-
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-2.md)
 - [Analisi Logout Blade](./logout-blade-analysis-3.md)
@@ -210,8 +205,6 @@ Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . 
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
-
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-2.md)
 - [Analisi Logout Blade](./logout-blade-analysis-3.md)

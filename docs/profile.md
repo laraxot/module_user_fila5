@@ -14,14 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/profile.md
-
-
-## Appendice — contenuto migrato
-
----
-module: theme
-topic: profile
-canonical: ../../../Themes/docs/shared-components/profile.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/profile.txt

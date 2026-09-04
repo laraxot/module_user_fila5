@@ -5,9 +5,6 @@ tags: [log]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "log user activity log"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -25,8 +22,6 @@ related:
 
 ## [2026-04-15] maintenance | Initial wiki setup
 - Created: llm-wiki/ directory structure
-- Created: agents.md (agent instructions)
-
 - Created: AGENTS.md (agent instructions)
 - Created: index.md (content catalog)
 - Created: log.md (this file)

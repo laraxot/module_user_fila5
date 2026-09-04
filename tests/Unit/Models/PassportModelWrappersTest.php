@@ -16,7 +16,7 @@ use Modules\User\Models\OauthToken;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-user-db');
+uses(TestCase::class);
 
 /**
  * @param  class-string  $wrapperClass
@@ -37,7 +37,7 @@ function passportWrapperConnectionName(string $wrapperClass): ?string
         }
     }
 
-    $instance = new $wrapperClass();
+    $instance = new $wrapperClass;
 
     if (! $instance instanceof Model) {
         return null;

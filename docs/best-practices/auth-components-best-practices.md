@@ -5,9 +5,6 @@ tags: [auth, components, best, practices]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "auth-components-best-practices best practices per i componenti di autenticazione"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -25,8 +22,6 @@ related:
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation-keys-best-practices.md)
-
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)

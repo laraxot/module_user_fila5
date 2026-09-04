@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
+use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -15,44 +16,43 @@ use Modules\Xot\Datas\XotData;
 /**
  * Modules\User\Models\TeamInvitation.
  *
- * @property string|null $email
- * @property string|null $role
- * @property int|string|null $user_id
- * @property-read ProfileContract|null $creator
- * @property-read Team|null $team
- * @property-read ProfileContract|null $updater
- *
- * @method static Builder<static>|TeamInvitation newModelQuery()
- * @method static Builder<static>|TeamInvitation newQuery()
- * @method static Builder<static>|TeamInvitation query()
- *
- * @property int $id
- * @property string $uuid
- * @property string|null $team_id
- * @property Carbon|null $accepted_at
- * @property Carbon|null $declined_at
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
+ * @property int               $id
+ * @property string|null       $team_id
+ * @property string            $email
+ * @property string|null       $role
+ * @property Carbon|null       $created_at
+ * @property Carbon|null       $updated_at
+ * @property Team|null         $team
+ * @property TeamContract|null $team
+ * @method static Builder|TeamInvitation newModelQuery()
+ * @method static Builder|TeamInvitation newQuery()
+ * @method static Builder|TeamInvitation query()
+ * @method static Builder|TeamInvitation whereCreatedAt($value)
+ * @method static Builder|TeamInvitation whereEmail($value)
+ * @method static Builder|TeamInvitation whereId($value)
+ * @method static Builder|TeamInvitation whereRole($value)
+ * @method static Builder|TeamInvitation whereTeamId($value)
+ * @method static Builder|TeamInvitation whereUpdatedAt($value)
+ * @property string      $uuid
  * @property string|null $updated_by
  * @property string|null $created_by
- * @property string|null $deleted_at
+ * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
- *
- * @method static Builder<static>|TeamInvitation whereAcceptedAt($value)
- * @method static Builder<static>|TeamInvitation whereCreatedAt($value)
- * @method static Builder<static>|TeamInvitation whereCreatedBy($value)
- * @method static Builder<static>|TeamInvitation whereDeclinedAt($value)
- * @method static Builder<static>|TeamInvitation whereDeletedAt($value)
- * @method static Builder<static>|TeamInvitation whereDeletedBy($value)
- * @method static Builder<static>|TeamInvitation whereEmail($value)
- * @method static Builder<static>|TeamInvitation whereId($value)
- * @method static Builder<static>|TeamInvitation whereRole($value)
- * @method static Builder<static>|TeamInvitation whereTeamId($value)
- * @method static Builder<static>|TeamInvitation whereUpdatedAt($value)
- * @method static Builder<static>|TeamInvitation whereUpdatedBy($value)
- * @method static Builder<static>|TeamInvitation whereUserId($value)
- * @method static Builder<static>|TeamInvitation whereUuid($value)
- *
+ * @method static Builder|TeamInvitation whereCreatedBy($value)
+ * @method static Builder|TeamInvitation whereDeletedAt($value)
+ * @method static Builder|TeamInvitation whereDeletedBy($value)
+ * @method static Builder|TeamInvitation whereUpdatedBy($value)
+ * @method static Builder|TeamInvitation whereUuid($value)
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @property ProfileContract|null $deleter
+ * @property Carbon|null          $accepted_at
+ * @property Carbon|null          $declined_at
+ * @property string|null          $user_id
+ * @method static \Modules\User\Database\Factories\TeamInvitationFactory factory($count = null, $state = [])
+ * @method static Builder<static>|TeamInvitation                         whereAcceptedAt($value)
+ * @method static Builder<static>|TeamInvitation                         whereDeclinedAt($value)
+ * @method static Builder<static>|TeamInvitation                         whereUserId($value)
  * @mixin \Eloquent
  */
 class TeamInvitation extends BaseModel

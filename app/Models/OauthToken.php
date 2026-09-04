@@ -11,27 +11,23 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
 /**
  * @property bool $revoked
  * @property int|string|null $user_id
- * @property-read OauthClient|null $client
- * @property-read OauthRefreshToken|null $refreshToken
- * @property-read User|null $user
- *
- * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken existsIn(array<int, mixed> $haystack)
- * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken query()
- *
  * @property string $id
  * @property string $client_id
  * @property string|null $name
  * @property array<array-key, mixed>|null $scopes
- * @property Carbon|null $expires_at
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
+ * @property Carbon|null $expires_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
- *
+ * @property OauthClient|null $client
+ * @property OauthRefreshToken|null $refreshToken
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken existsIn(array<int, string> $haystack)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken query()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereClientId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereCreatedBy($value)
@@ -45,7 +41,7 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUserId($value)
- *
+ * @property-read \Modules\Xot\Contracts\UserContract|null $user
  * @mixin \Eloquent
  */
 class OauthToken extends PassportToken

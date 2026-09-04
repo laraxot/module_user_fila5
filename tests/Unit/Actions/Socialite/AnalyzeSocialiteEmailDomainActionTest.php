@@ -9,7 +9,7 @@ use Modules\User\Actions\Socialite\AnalyzeSocialiteEmailDomainAction;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-user-db');
+uses(TestCase::class);
 
 function createMockSocialiteUserForDomain(?string $email): SocialiteUser
 {

@@ -5,9 +5,6 @@ tags: [fullcalendar, scheduler, quick, reference]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "fullcalendar-scheduler-quick-reference fullcalendar scheduler - riferimento rapido"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -52,8 +49,6 @@ schedulerLicenseKey: 'XXXXXXXXXX-XXX-XXXXXXXXXX'
 3. Downgrade versione FullCalendar
 ### ❌ Banner Rosso "LICENSE NEEDED"
 **Causa:** Nessuna licenza configurata
-```
-
 ```php
 // ✅ SOLUZIONE Laravel
 // .env
@@ -70,8 +65,6 @@ schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives'
 schedulerLicenseKey: 'GPL-My-Project-Is-Open-Source'
 ## ⚙️ Configurazione Laravel/Filament
 ### .env
-```
-
 ```env
 FULLCALENDAR_SCHEDULER_LICENSE_KEY=XXXXXXXXXX-XXX-XXXXXXXXXX
 ### config/fullcalendar.php
@@ -99,8 +92,6 @@ private function getFullCalendarPlugin(): FilamentFullCalendarPlugin
 }
 ## 🧪 Testing e Debug
 ### Verifica Configurazione
-```
-
 ```bash
 php artisan config:show fullcalendar
 php artisan tinker

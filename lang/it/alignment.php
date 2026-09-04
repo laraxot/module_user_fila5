@@ -10,7 +10,7 @@ return [
         'overlay_opacity' => ['label' => 'overlay_opacity', 'placeholder' => 'overlay_opacity', 'helper_text' => 'overlay_opacity', 'description' => 'overlay_opacity', 'tooltip' => ''],
     ],
     'actions' => [
-        'updateAction' => ['label' => 'updateAction', 'icon' => 'updateAction', 'tooltip' => 'updateAction'],
+        'updateAction' => ['label' => 'updateAction'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'navigation' => [

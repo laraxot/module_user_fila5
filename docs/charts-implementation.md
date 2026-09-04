@@ -5,9 +5,6 @@ tags: [charts, implementation]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "charts-implementation user module - charts implementation"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -573,8 +570,6 @@ class UsersChartWidgetTest extends TestCase
 ### Documentazione Correlata
 - [Filament Charts Complete Guide](../../xot/docs/filament-charts-complete-guide.md)
 - [Chart Export Guide](../../xot/docs/chart-export-guide.md)
-- [User Module README](./README.md)
-
 - [User Module README](./readme.md)
 
 ### Chart.js

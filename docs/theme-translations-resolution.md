@@ -5,9 +5,6 @@ tags: [theme, translations, resolution]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "theme-translations-resolution risoluzione conflitti traduzioni tema two - modulo user"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -215,8 +212,6 @@ I file di traduzione del tema Two presentavano conflitti Git che coinvolgevano s
 - Aggiunto `declare(strict_types=1);` dove mancante
 
 **Struttura Corretta**:
-```
-
 ```php
 <?php
 

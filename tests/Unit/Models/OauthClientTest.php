@@ -9,16 +9,15 @@ use Laravel\Passport\Client;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\OauthClient;
 use Modules\User\Tests\TestCase;
-use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
-uses(TestCase::class)->group('user-db');
+uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
-    /** @var TestCase $this */
+    /* @var TestCase $this */
     config(['passport.connection' => 'user']);
 
     if (! Schema::connection('user')->hasTable('oauth_clients')) {
@@ -29,14 +28,14 @@ beforeEach(function (): void {
 describe('Oauth Client', function (): void {
     test('oauth client can be instantiated', function (): void {
         /** @var TestCase $this */
-        $client = new OauthClient();
+        $client = new OauthClient;
 
         Assert::assertInstanceOf(OauthClient::class, $client);
         Assert::assertInstanceOf(Client::class, $client);
     });
 
     test('oauth client has connection user', function (): void {
-        $client = new OauthClient();
+        $client = new OauthClient;
 
         Assert::assertSame('user', $client->getConnectionName());
     });
@@ -44,7 +43,9 @@ describe('Oauth Client', function (): void {
     test('oauth client user relation uses xot data', function (): void {
         /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
-        $client = $this->oauthClientTestPersistedClient(['user_id' => (string) XotBasePest::assertModelKey($user->getKey())]);
+        $userKey = $user->getKey();
+        $userKeyString = (is_int($userKey) || is_string($userKey)) ? (string) $userKey : '';
+        $client = TestCase::oauthClientTestPersistedClient(['user_id' => $userKeyString]);
 
         Assert::assertNotNull($client->user);
         Assert::assertSame($user->getKey(), $client->user->getKey());
@@ -52,21 +53,21 @@ describe('Oauth Client', function (): void {
 
     test('oauth client is confidential when secret is present', function (): void {
         /** @var TestCase $this */
-        $client = $this->oauthClientTestPersistedClient(['secret' => 'hashed-secret']);
+        $client = TestCase::oauthClientTestPersistedClient(['secret' => 'hashed-secret']);
 
         Assert::assertTrue($client->confidential());
     });
 
     test('oauth client is not confidential when secret is empty', function (): void {
         /** @var TestCase $this */
-        $client = $this->oauthClientTestPersistedClient(['secret' => null]);
+        $client = TestCase::oauthClientTestPersistedClient(['secret' => null]);
 
         Assert::assertFalse($client->confidential());
     });
 
     test('oauth client has grant type check', function (): void {
         /** @var TestCase $this */
-        $client = $this->oauthClientTestPersistedClient([
+        $client = TestCase::oauthClientTestPersistedClient([
             'grant_types' => json_encode(['authorization_code', 'refresh_token']),
         ]);
 
@@ -76,7 +77,7 @@ describe('Oauth Client', function (): void {
 
     test('oauth client has scope check', function (): void {
         /** @var TestCase $this */
-        $client = $this->oauthClientTestPersistedClient();
+        $client = TestCase::oauthClientTestPersistedClient();
 
         Assert::assertTrue($client->hasScope('read'));
     });

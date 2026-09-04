@@ -11,33 +11,35 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Modules\User\Models\TenantUser.
  *
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $updater
- *
- * @method static Builder<static>|TenantUser newModelQuery()
- * @method static Builder<static>|TenantUser newQuery()
- * @method static Builder<static>|TenantUser query()
- *
- * @property string $id
- * @property int $tenant_id
+ * @method static Builder|TeamUser newModelQuery()
+ * @method static Builder|TeamUser newQuery()
+ * @method static Builder|TeamUser query()
+ * @property int         $id
+ * @property string|null $tenant_id
  * @property string|null $user_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property string|null $updated_by
  * @property string|null $created_by
- * @property Carbon|null $deleted_at
+ * @property string|null $updated_by
+ * @method static Builder|TeamUser whereCreatedAt($value)
+ * @method static Builder|TeamUser whereCreatedBy($value)
+ * @method static Builder|TeamUser whereCustomerId($value)
+ * @method static Builder|TeamUser whereId($value)
+ * @method static Builder|TeamUser whereRole($value)
+ * @method static Builder|TeamUser whereTeamId($value)
+ * @method static Builder|TeamUser whereUpdatedAt($value)
+ * @method static Builder|TeamUser whereUpdatedBy($value)
+ * @method static Builder|TeamUser whereUserId($value)
+ * @method static Builder|TeamUser whereUuid($value)
+ * @property string|null $deleted_at
  * @property string|null $deleted_by
- *
- * @method static Builder<static>|TenantUser whereCreatedAt($value)
- * @method static Builder<static>|TenantUser whereCreatedBy($value)
- * @method static Builder<static>|TenantUser whereDeletedAt($value)
- * @method static Builder<static>|TenantUser whereDeletedBy($value)
- * @method static Builder<static>|TenantUser whereId($value)
- * @method static Builder<static>|TenantUser whereTenantId($value)
- * @method static Builder<static>|TenantUser whereUpdatedAt($value)
- * @method static Builder<static>|TenantUser whereUpdatedBy($value)
- * @method static Builder<static>|TenantUser whereUserId($value)
- *
+ * @method static Builder|TenantUser whereDeletedAt($value)
+ * @method static Builder|TenantUser whereDeletedBy($value)
+ * @method static Builder|TenantUser whereTenantId($value)
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $deleter
+ * @property ProfileContract|null $updater
+ * @method static \Modules\User\Database\Factories\TenantUserFactory factory($count = null, $state = [])
  * @mixin \Eloquent
  */
 class TenantUser extends BasePivot

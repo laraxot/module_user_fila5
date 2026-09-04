@@ -6,7 +6,6 @@ namespace Modules\User\Models\Traits;
 
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Modules\User\Models\SocialiteUser;
-use Webmozart\Assert\Assert;
 
 trait HasSocialite
 {
@@ -26,9 +25,12 @@ trait HasSocialite
         }
 
         $res = $socialiteUser->{$field};
-        Assert::string($res);
 
-        return $res;
+        if (\is_scalar($res) || $res instanceof \Stringable) {
+            return (string) $res;
+        }
+
+        throw new \Exception(\sprintf('SocialiteUser field "%s" is not stringable', $field));
     }
 
     public function canAccessSocialite(): bool

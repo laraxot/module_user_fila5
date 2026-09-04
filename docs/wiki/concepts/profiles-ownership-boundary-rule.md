@@ -5,9 +5,6 @@ tags: [profiles, ownership, boundary, rule]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "profiles-ownership-boundary-rule profiles ownership boundary rule"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -24,8 +21,6 @@ related:
 # Profiles ownership boundary rule
 
 ## Regola
-
-Nel contesto Laraxot di questo repository, il contratto schema di `profiles` e' owner del modulo <nome progetto>.
 
 Nel contesto Laraxot di questo repository, il contratto schema di `profiles` e' owner del modulo Fixcity.
 
@@ -44,6 +39,4 @@ Nel contesto Laraxot di questo repository, il contratto schema di `profiles` e' 
 ## Riferimenti
 
 - [profiles uuid single migration rule](../../../../../docs/wiki/concepts/profiles-uuid-single-migration-rule.md)
-- [<nome progetto> profiles uuid contract](../../../../<nome progetto>/docs/wiki/concepts/profiles-uuid-contract.md)
-
 - [fixcity profiles uuid contract](../../../../Fixcity/docs/wiki/concepts/profiles-uuid-contract.md)

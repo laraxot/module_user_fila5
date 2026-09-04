@@ -5,9 +5,6 @@ tags: [label, hardcoded, prevention]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "label-hardcoded-prevention prevenzione ->label() hardcoded - modulo user"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

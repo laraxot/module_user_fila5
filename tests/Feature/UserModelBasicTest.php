@@ -13,20 +13,20 @@ uses(TestCase::class);
 describe('User Model Basic', function (): void {
     test('user model can be created', function (): void {
         /** @var TestCase $this */
-        $user = new User();
+        $user = new User;
 
         Assert::assertInstanceOf(User::class, $user);
     });
 
     test('user model can access connection', function (): void {
-        $user = new User();
+        $user = new User;
 
         Assert::assertSame('user', $user->getConnectionName());
     });
 
     test('user model can create basic record', function (): void {
-        /** @var TestCase $this */
-        $this->skipUnlessUsersTableReady();
+        /* @var TestCase $this */
+        TestCase::skipUnlessUsersTableReady();
 
         $user = createTestUser([
             'name' => 'Test User',
@@ -44,8 +44,8 @@ describe('User Model Basic', function (): void {
     });
 
     test('user model can query records', function (): void {
-        /** @var TestCase $this */
-        $this->skipUnlessUsersTableReady();
+        /* @var TestCase $this */
+        TestCase::skipUnlessUsersTableReady();
 
         $user1 = createTestUser(['name' => 'User 1']);
         $user2 = createTestUser(['name' => 'User 2']);
@@ -56,8 +56,8 @@ describe('User Model Basic', function (): void {
     });
 
     test('user model can filter records', function (): void {
-        /** @var TestCase $this */
-        $this->skipUnlessUsersTableReady();
+        /* @var TestCase $this */
+        TestCase::skipUnlessUsersTableReady();
 
         $activeUser = createTestUser([
             'name' => 'Active User',
@@ -78,8 +78,8 @@ describe('User Model Basic', function (): void {
     });
 
     test('user model can update records', function (): void {
-        /** @var TestCase $this */
-        $this->skipUnlessUsersTableReady();
+        /* @var TestCase $this */
+        TestCase::skipUnlessUsersTableReady();
 
         $user = createTestUser(['name' => 'Original Name']);
 

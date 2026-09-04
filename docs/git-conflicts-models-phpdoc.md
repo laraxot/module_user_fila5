@@ -5,9 +5,6 @@ tags: [git, conflicts, models, phpdoc]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "git-conflicts-models-phpdoc risoluzione conflitti git: phpdoc modelli user"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -42,8 +39,6 @@ Conflitti Git nei blocchi PHPDoc di 25+ modelli del modulo User, causati da merg
 1. **ProfileContract vs Meetup\Profile**: mantenuto `ProfileContract` (modulo User generico, non dipende da Meetup)
 2. **Formattazione**: preferita versione compatta (da38c10) senza righe vuote ridondanti
 3. **property-read**: usato dove appropriato per proprietà di sola lettura (Passport Client)
-5. **Resource Filament**: import `Field` inutilizzato rimosso; commento Override con spazio (`// #[\Override]`); riga vuota dopo l'ultimo `use`
-
 4. **Factory**: mantenuto riferimento a factory del modulo User
 
 ## Riferimenti

@@ -5,9 +5,6 @@ tags: [2fa, guide]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "2fa-guide 🔐 two-factor authentication (2fa) - guida implementazione"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -30,8 +27,6 @@ related:
 ---
 
 ## 🎯 OVERVIEW
-
-Implementazione completa del sistema di autenticazione a due fattori (2FA) per <nome progetto> utilizzando TOTP (Time-based One-Time Password) con supporto per recovery codes.
 
 Implementazione completa del sistema di autenticazione a due fattori (2FA) per FixCity utilizzando TOTP (Time-based One-Time Password) con supporto per recovery codes.
 

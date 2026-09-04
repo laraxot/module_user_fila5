@@ -7,13 +7,12 @@ use Modules\User\Console\Commands\ChangeTypeCommand;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
-use ReflectionNamedType;
 
-uses(TestCase::class)->group('no-user-db');
+uses(TestCase::class);
 
 function changeTypeCommandInstance(): ChangeTypeCommand
 {
-    return new ChangeTypeCommand();
+    return new ChangeTypeCommand;
 }
 
 test('change type command can be instantiated', function (): void {

@@ -28,20 +28,6 @@ related:
 - 2026-06-10: notifications-folio-page + notifications-folio-route — `route('notifications')`, vietato `area-personale.notifiche`
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
-- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
-- GitHub: [#272](https://github.com/laraxot/<nome repitory>/issues/272) / [D#273](https://github.com/laraxot/<nome repitory>/discussions/273)
-
-# User Wiki Log
-
-## [2026-06-05] arch | profiles schema — owner <nome progetto>, non User
-- migrazioni `create_profiles_table` User archiviate in `database/migrations/_bak/*.merged`
-- concept aggiornato: `concepts/profile-migration-uuid-contract.md` punta a migrazione <nome progetto>
-- riferimento: `docs/wiki/bmad/architecture-one-migration-per-model.md`
-
-## [2026-06-04] bugfix | profiles.uuid su connection <nome progetto> (sqlite locale)
-- errore: `table profiles has no column named uuid` in `XotData::getProfileModelByUserId()` dopo login/registrazione
-- causa: tabella `profiles` legacy su `<nome progetto>_data.sqlite` senza colonna `uuid`, mentre `BaseProfile::booted()` la valorizza in insert
-
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
 
@@ -82,8 +68,6 @@ related:
 - formalizzata regola DRY+KISS: `after()` vietato in `tableCreate()`, ammesso solo in `tableUpdate()`.
 - aggiunte sezioni operative: best practices, bad practices, false friends, checklist e link ufficiali verificati.
 - aggiornato `index.md` con il nuovo concetto.
-- ingest eseguito in QMD index `<nome progetto>` (collection `wiki` aggiornata).
-
 - ingest eseguito in QMD index `fixcity` (collection `wiki` aggiornata).
 
 ## [2026-04-28] bugfix | profiles create migration MariaDB `after()` syntax error
@@ -93,8 +77,6 @@ related:
 - fix applicato: rimosso `after()` dal create; `after()` resta nel `tableUpdate()`
   idempotente (ALTER path).
 - verifica:
-  ~~`migrate ... --force`~~ — **vietato**; owner `profiles` ora <nome progetto>; usare `php artisan migrate` senza `--force` ([dati sacri](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
-
   ~~`migrate ... --force`~~ — **vietato**; owner `profiles` ora Fixcity; usare `php artisan migrate` senza `--force` ([dati sacri](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
   eseguito con esito `DONE`.
 - docs aggiornati: `concepts/profile-migration-uuid-contract.md`.
@@ -112,8 +94,6 @@ related:
 ## [2026-04-27] governance | remove invalid additive migration on profiles
 - rimosso `database/migrations/2026_04_27_000000_add_credits_to_profiles_table.php`
   per violazione regola "1 modello = 1 migrazione owner".
-- chiarito boundary: il contratto `profiles` e' owner <nome progetto>; User non deve patchare schema `profiles`.
-
 - chiarito boundary: il contratto `profiles` e' owner Fixcity; User non deve patchare schema `profiles`.
 - nuova pagina: `concepts/profiles-ownership-boundary-rule.md`.
 
@@ -151,8 +131,6 @@ related:
 - Struttura wiki/log.md inizializzata.
 - Layer raw: tutti i file in `docs/` (eccetto `wiki/`).
 - Layer wiki: `docs/wiki/` — LLM-maintained, sintesi ad alto riuso.
-- Schema: `docs/.schema/wiki-schema.md`
-
 - Schema: `docs/.schema/WIKI_SCHEMA.md`
 - Adozione moduli: `docs/project/llm-wiki-module-adoption.md`
 
@@ -178,8 +156,6 @@ related:
 - Notifiche: runtime User, schema Notify; `NotificationSchema::isReadable()` per guard FO
 - Folio: `name('notifications')`; vietato `area-personale.notifiche`
 - `user:super-admin`: `--email` + ask + fallback WSL (no Laravel Prompts)
-- Profiles: owner <nome progetto> `2026_06_10_123000_create_profiles_table` — vedi profile-migration-uuid-contract
-
 - Profiles: owner Fixcity `2026_06_10_123000_create_profiles_table` — vedi profile-migration-uuid-contract
 
 ## 2026-06-10 — Folio owner pattern docs

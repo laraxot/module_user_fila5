@@ -62,7 +62,7 @@ return [
             'columns' => ['name' => 'Nome area', 'parent_name' => 'Nome area livello superiore'],
         ],
         'change_password' => 'Cambio password',
-        'updateDataAction' => ['label' => 'updateDataAction', 'icon' => 'updateDataAction', 'tooltip' => 'updateDataAction'],
+        'updateDataAction' => ['label' => 'updateDataAction'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'label' => 'Password',

@@ -16,7 +16,7 @@ use Modules\User\Datas\SuperAdminData;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-user-db');
+uses(TestCase::class);
 
 test('PermissionTableNamesData can be instantiated', function () {
     try {

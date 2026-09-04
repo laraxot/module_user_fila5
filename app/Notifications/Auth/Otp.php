@@ -30,11 +30,10 @@ class Otp extends Notification implements ShouldQueue
     /**
      * Get the notification's delivery channels.
      *
-     * @param  AnonymousNotifiable  $_notifiable  L'entità da notificare: la notifica è inviata
-     *                                            on-demand da SendOtpByUserAction
+     * @param  mixed  $_notifiable  L'entità da notificare
      * @return array<int, string>
      */
-    public function via(AnonymousNotifiable $_notifiable): array
+    public function via(mixed $_notifiable): array
     {
         return ['mail']; // Puoi aggiungere anche 'database', 'slack', ecc. se vuoi supportare altri canali.
     }
@@ -47,7 +46,7 @@ class Otp extends Notification implements ShouldQueue
         $pwd = PasswordData::make();
         $app_name = SafeStringCastAction::cast(config('app.name'));
 
-        $mailMessage = new MailMessage();
+        $mailMessage = new MailMessage;
         $mailMessage = $mailMessage->template('user::notifications.email');
         $mailMessage = $mailMessage->subject(SafeStringCastAction::cast(__('user::otp.mail.subject')));
         $mailMessage = $mailMessage->greeting(SafeStringCastAction::cast(__('user::otp.mail.greeting')));

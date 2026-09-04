@@ -5,9 +5,6 @@ tags: [2025, roadmap]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "2025-q4-roadmap user module roadmap (2025 q4)"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:

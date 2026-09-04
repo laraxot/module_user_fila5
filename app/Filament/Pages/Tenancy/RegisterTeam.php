@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Pages\Tenancy;
 
 use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Schema;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Datas\XotData;
@@ -16,11 +15,6 @@ class RegisterTeam extends XotBaseRegisterTenant
     public static function getLabel(): string
     {
         return 'Register team';
-    }
-
-    public function form(Schema $schema): Schema
-    {
-        return $schema->components($this->getFormSchema());
     }
 
     /**

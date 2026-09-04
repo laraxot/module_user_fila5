@@ -5,9 +5,6 @@ tags: [social, auth, architecture]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "social-auth-architecture social authentication architecture"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -24,8 +21,6 @@ related:
 # Social Authentication Architecture
 
 ## Overview
-This document describes the implementation of social login (Google, Microsoft, GitHub) in the <nome progetto> User module using Laravel Socialite and Filament, without adding provider‑specific columns to the `users` table.
-
 This document describes the implementation of social login (Google, Microsoft, GitHub) in the Fixcity User module using Laravel Socialite and Filament, without adding provider‑specific columns to the `users` table.
 
 ## Models

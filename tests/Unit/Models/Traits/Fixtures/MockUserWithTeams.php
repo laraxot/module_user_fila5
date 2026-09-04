@@ -47,13 +47,10 @@ class MockUserWithTeams extends Model
     {
         $id = $this->attributes['id'] ?? 'mock-user-1';
 
-        return \is_string($id) ? $id : 'mock-user-1';
+        return is_scalar($id) ? (string) $id : 'mock-user-1';
     }
 
-    /**
-     * @param  string|int|Permission  $permission
-     */
-    public function hasPermissionTo($permission, ?string $guardName = null): bool
+    public function hasPermissionTo(string|int|Permission $permission, ?string $guardName = null): bool
     {
         return false;
     }
@@ -61,7 +58,7 @@ class MockUserWithTeams extends Model
     /**
      * @param  string|int|array<array-key, string|int>|Role|\BackedEnum  $roles
      */
-    public function hasRole($roles, ?string $guard = null): bool
+    public function hasRole(string|int|array|Role|\BackedEnum $roles, ?string $guard = null): bool
     {
         return false;
     }

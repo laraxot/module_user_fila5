@@ -16,10 +16,9 @@ use Modules\User\Events\InvalidState;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('user-db');
+uses(TestCase::class);
 
 test('builds user attributes from oauth user', function (): void {
     $oauthUser = configureMock(SocialiteUserContract::class, function (MockInterface $mock): void {
@@ -91,7 +90,7 @@ test('retrieves oauth user from socialite driver', function (): void {
 });
 
 test('returns null and dispatches invalid state event when socialite state is invalid', function (): void {
-    $exception = new InvalidStateException();
+    $exception = new InvalidStateException;
 
     $driver = new class($exception)
     {
@@ -135,7 +134,8 @@ test('creates socialite user model with normalized attributes', function (): voi
     $result = app(CreateSocialiteUserAction::class)->execute('github', $oauthUser, $user);
 
     Assert::assertInstanceOf(SocialiteUser::class, $result);
-    Assert::assertSame((string) $result->user_id, (string) XotBasePest::assertModelKey($user->getKey()));
+    $userKey = $user->getKey();
+    Assert::assertSame($result->user_id, (is_int($userKey) || is_string($userKey)) ? (string) $userKey : '');
     Assert::assertSame('github', $result->provider);
     Assert::assertSame('provider-user-1', $result->provider_id);
 });

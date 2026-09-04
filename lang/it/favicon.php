@@ -17,7 +17,6 @@ return [
         'reset' => ['label' => 'Reimposta', 'tooltip' => 'Reimposta ai valori predefiniti'],
         'upload' => ['label' => 'Carica', 'tooltip' => 'Carica un\'immagina'],
         'remove' => ['label' => 'Rimuovi', 'tooltip' => 'Rimuovi l\'immagina caricata'],
-        'updateAction' => ['label' => 'updateAction', 'icon' => 'updateAction', 'tooltip' => 'updateAction'],
     ],
     'messages' => ['saved' => 'Favicon salvato con successo', 'reset' => 'Impostazioni reimpostate', 'uploaded' => 'Immagine caricata con successo', 'removed' => 'Immagine rimossa con successo', 'error' => 'Si è verificato un errore'],
     'validation' => ['background_color_invalid' => 'Il colore di sfondo non è valido', 'overlay_color_invalid' => 'Il colore overlay non è valido', 'overlay_opacity_invalid' => 'L\'opacità deve essere un numero tra 0 e 100', 'image_required' => 'L\'immagina è obbligatoria', 'image_invalid' => 'L\'immagina non è valida'],

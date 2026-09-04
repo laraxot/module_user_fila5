@@ -17,49 +17,17 @@ return [
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
-        'email' => ['placeholder' => 'email'],
-        'token' => ['placeholder' => 'token'],
+        'email' => ['label' => 'email', 'placeholder' => 'email', 'helper_text' => 'email', 'description' => 'email'],
+        'token' => ['label' => 'token', 'placeholder' => 'token', 'helper_text' => 'token', 'description' => 'token'],
     ],
     'actions' => [
-        'create' => [
-            'label' => 'Crea Password Reset',
-            'icon' => 'create',
-            'tooltip' => 'create',
-        ],
-        'edit' => [
-            'label' => 'Modifica Password Reset',
-            'icon' => 'edit',
-            'tooltip' => 'edit',
-        ],
-        'delete' => [
-            'label' => 'Elimina Password Reset',
-            'icon' => 'delete',
-            'tooltip' => 'delete',
-        ],
-        'view' => [
-            'label' => 'view',
-            'icon' => 'view',
-            'tooltip' => 'view',
-        ],
-        'logout' => [
-            'tooltip' => 'logout',
-            'icon' => 'logout',
-            'label' => 'logout',
-        ],
-        'reorderRecords' => [
-            'tooltip' => 'reorderRecords',
-            'icon' => 'reorderRecords',
-            'label' => 'reorderRecords',
-        ],
+        'create' => ['label' => 'Crea Password Reset', 'icon' => 'create', 'tooltip' => 'create'],
+        'edit' => ['label' => 'Modifica Password Reset', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'delete' => ['label' => 'Elimina Password Reset', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
     ],
     'sections' => [
-        'Password Reset Information' => [
-            'label' => 'Password Reset Information',
-            'heading' => 'Password Reset Information',
-        ],
-        'Timestamps' => [
-            'label' => 'Timestamps',
-            'heading' => 'Timestamps',
-        ],
+        'Password Reset Information' => ['label' => 'Password Reset Information', 'heading' => 'Password Reset Information'],
+        'Timestamps' => ['label' => 'Timestamps', 'heading' => 'Timestamps'],
     ],
 ];

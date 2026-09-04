@@ -27,13 +27,13 @@ use Illuminate\Support\Str;
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
 use Modules\User\Contracts\HasAuthentications;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 use Modules\User\Models\Traits\HasDevices;
 use Modules\User\Models\Traits\HasModules;
 use Modules\User\Models\Traits\HasSocialite;
 use Modules\User\Models\Traits\HasSpatiePermission;
 use Modules\User\Models\Traits\HasTeams;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -50,6 +50,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * functionality for the application. It extends Laravel's Authenticatable class
  * and implements the required interfaces for Filament and multi-tenancy.
  *
+ * @property string $id
  * @property Collection<int, OauthClient> $clients
  * @property int|null $clients_count
  * @property Team|null $currentTeam
@@ -142,7 +143,9 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         HasTeams::teams as membershipTeams;
     }
     use HasUuids;
+
     use HasXotFactory;
+
     use InteractsWithMedia;
     use Notifiable;
 
@@ -151,8 +154,6 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     use XotTraits\RelationX;
 
     public $incrementing = false;
-
-    public ?Pivot $pivot = null;
 
     protected $connection = 'user';
 
@@ -230,16 +231,20 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function getProviderName(): string
     {
-        $providerVal = $this->getAttribute('provider') ?? config('auth.guards.api.provider', 'users');
-        $provider = SafeStringCastAction::cast($providerVal);
+        $provider = $this->getAttribute('provider');
+        if (\is_string($provider) && '' !== $provider) {
+            return $provider;
+        }
 
-        return $provider;
+        $configured = config('auth.guards.api.provider', 'users');
+
+        return \is_string($configured) ? $configured : 'users';
     }
 
     /*
     public function canAccessFilament(?Panel $panel = null): bool
     {
-         throw new \RuntimeException('Removed debug dddx');
+         dddx($panel->getId());
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;
         return true;
     }
@@ -249,20 +254,15 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
      */
     public function getFilamentName(): string
     {
-        $nameVal = $this->getAttribute('name') ?? '';
-        $firstNameVal = $this->getAttribute('first_name') ?? '';
-        $lastNameVal = $this->getAttribute('last_name') ?? '';
-
-        $name = SafeStringCastAction::cast($nameVal);
-        $firstName = SafeStringCastAction::cast($firstNameVal);
-        $lastName = SafeStringCastAction::cast($lastNameVal);
+        $name = $this->name ?? '';
+        $firstName = $this->first_name ?? '';
+        $lastName = $this->last_name ?? '';
 
         $fullName = trim(\sprintf('%s %s %s', $name, $firstName, $lastName));
 
         // Ensure we always return a non-empty string
         if (empty($fullName)) {
-            $emailVal = $this->getAttribute('email') ?? '';
-            $email = SafeStringCastAction::cast($emailVal);
+            $email = $this->email ?? '';
 
             return ! empty($email) ? $email : 'User';
         }
@@ -321,11 +321,19 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function canAccessPanel(Panel $panel): bool
     {
+        // $panel->default('admin');
         if ($panel->getId() !== 'admin') {
-            return $this->hasRole($panel->getId());
+            $role = $panel->getId();
+
+            // App\Support\AccountFeatures non e' mai esistita (ne' la classe ne'
+            // config/account_features.php): riferimento morto fin dal commit
+            // iniziale del modulo, causava un Error fatale a runtime su ogni
+            // pannello diverso da "admin". hasRole($role) resta l'unico controllo
+            // reale, come gia' documentato qui sopra come fallback.
+            return $this->hasRole($role);
         }
 
-        return $this->isSuperAdmin() || $this->hasRole(['admin', 'super-admin']);
+        return true; // str_ends_with($this->email, '@yourdomain.com') && $this->hasVerifiedEmail();
     }
 
     public function detach(Model $model): void
@@ -351,7 +359,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
      */
     public function treeSons(): Collection
     {
-        return $this->membershipTeams ?? new Collection();
+        return $this->membershipTeams ?? new Collection;
     }
 
     /**
@@ -452,15 +460,12 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
             return;
         }
-
-        // Bcrypt/argon già hashati (~60 char): non ri-hashare. Passphrase lunghe in chiaro: hash.
-        if (Hash::isHashed($value)) {
-            $this->attributes['password'] = $value;
+        if (\strlen($value) < 32) {
+            $this->attributes['password'] = Hash::make($value);
 
             return;
         }
-
-        $this->attributes['password'] = Hash::make($value);
+        $this->attributes['password'] = $value;
     }
 
     /**

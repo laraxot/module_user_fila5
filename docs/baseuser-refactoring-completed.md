@@ -5,9 +5,6 @@ tags: [baseuser, refactoring, completed]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "baseuser-refactoring-completed baseuser refactoring - completato"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -261,8 +258,6 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
 - [Roles & Permissions](./roles-permissions.md)
-- [User Module README](./README.md)
-
 - [User Module README](./readme.md)
 
 ### Root Progetto

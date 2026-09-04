@@ -45,7 +45,7 @@ describe('User Resource', function (): void {
 
     test('user resource has correct form schema', function (): void {
         /** @var TestCase $this */
-        $form = UserResource::getFormSchemaOld();
+        $form = UserResource::getFormSchema();
 
         Assert::assertArrayHasKey('section01', $form);
         Assert::assertArrayHasKey('section02', $form);
@@ -70,19 +70,19 @@ describe('User Resource', function (): void {
     });
 
     test('user resource has combined relation manager tabs', function (): void {
-        $resource = new UserResource();
+        $resource = new UserResource;
 
         Assert::assertTrue($resource->hasCombinedRelationManagerTabsWithContent());
     });
 
     test('user resource extends correct base class', function (): void {
-        $resource = new UserResource();
+        $resource = new UserResource;
 
         Assert::assertInstanceOf(XotBaseResource::class, $resource);
     });
 
     test('user resource form schema has correct column spans', function (): void {
-        $form = UserResource::getFormSchemaOld();
+        $form = UserResource::getFormSchema();
 
         $section01 = $form['section01'];
         $section02 = $form['section02'];
@@ -93,7 +93,7 @@ describe('User Resource', function (): void {
 
     test('user resource name field is required', function (): void {
         /** @var TestCase $this */
-        $form = UserResource::getFormSchemaOld();
+        $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -108,7 +108,7 @@ describe('User Resource', function (): void {
 
     test('user resource email field is required', function (): void {
         /** @var TestCase $this */
-        $form = UserResource::getFormSchemaOld();
+        $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -123,7 +123,7 @@ describe('User Resource', function (): void {
 
     test('user resource password field is required only on create', function (): void {
         /** @var TestCase $this */
-        $form = UserResource::getFormSchemaOld();
+        $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -138,7 +138,7 @@ describe('User Resource', function (): void {
 
     test('user resource password field has correct type', function (): void {
         /** @var TestCase $this */
-        $form = UserResource::getFormSchemaOld();
+        $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -151,7 +151,7 @@ describe('User Resource', function (): void {
 
     test('user resource email field has unique validation', function (): void {
         /** @var TestCase $this */
-        $form = UserResource::getFormSchemaOld();
+        $form = UserResource::getFormSchema();
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -166,7 +166,7 @@ describe('User Resource', function (): void {
 
     test('user resource created at field shows diff for humans', function (): void {
         /** @var TestCase $this */
-        $form = UserResource::getFormSchemaOld();
+        $form = UserResource::getFormSchema();
         $section02 = $form['section02'];
         $section02Schema = userResourceSectionComponents($this, $section02);
 
@@ -180,13 +180,13 @@ describe('User Resource', function (): void {
     });
 
     test('user resource can be instantiated', function (): void {
-        $resource = new UserResource();
+        $resource = new UserResource;
 
         Assert::assertInstanceOf(UserResource::class, $resource);
     });
 
     test('user resource has correct model', function (): void {
-        $resource = new UserResource();
+        $resource = new UserResource;
 
         Assert::assertInstanceOf(UserResource::class, $resource);
     });

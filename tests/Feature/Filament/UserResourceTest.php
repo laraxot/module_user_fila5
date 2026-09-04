@@ -14,20 +14,20 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
+    /* @var TestCase $this */
     $this->setupFilamentAdminPanel();
 
-    $this->admin = UserFactory::new()->createOne([
+    TestCase::$admin = UserFactory::new()->createOne([
         'type' => UserType::MasterAdmin,
         'name' => 'Admin Test',
         'email' => 'admin-'.uniqid('', true).'@example.com',
     ]);
-    $this->user = UserFactory::new()->createOne([
+    TestCase::$user = UserFactory::new()->createOne([
         'name' => 'User Test',
         'email' => 'user-'.uniqid('', true).'@example.com',
     ]);
 
-    $this->actingAs($this->requireAdmin());
+    $this->actingAs(TestCase::requireAdmin());
 });
 
 describe('User Resource', function (): void {
@@ -50,32 +50,32 @@ describe('User Resource', function (): void {
     });
 
     test('list users page covered by dedicated test', function (): void {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         $this->skipTest('Livewire table UserResource richiede panel admin completo — coperto da Feature/Filament/Pages/ListUsersTest');
     });
 
     test('create user page covered by dedicated test', function (): void {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         $this->skipTest('Livewire create UserResource richiede panel admin completo — coperto da Feature/Filament/Pages/CreateUserTest');
     });
 
     test('edit user page covered by dedicated test', function (): void {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         $this->skipTest('Livewire edit UserResource richiede panel admin completo + policy');
     });
 
     test('view user page covered by dedicated test', function (): void {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         $this->skipTest('Livewire view UserResource richiede panel admin completo + policy');
     });
 
     test('bulk actions requires full admin panel', function (): void {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         $this->skipTest('Bulk actions UserResource richiedono panel admin completo + azioni registrate');
     });
 
     test('security covered by create user test', function (): void {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         $this->skipTest('Security Livewire UserResource richiede panel admin completo — validazione coperta da CreateUserTest');
     });
 });

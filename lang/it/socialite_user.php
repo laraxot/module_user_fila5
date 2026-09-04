@@ -34,8 +34,8 @@ return [
         'create' => ['label' => 'Crea Socialite User', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Socialite User', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Socialite User', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
     ],
     'sections' => [
         'User Information' => ['label' => 'User Information', 'heading' => 'User Information'],

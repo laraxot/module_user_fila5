@@ -5,9 +5,6 @@ tags: [navigation, translations, fixes, january]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "navigation-translations-fixes-january correzioni traduzioni navigation - gennaio 2026"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -211,8 +208,6 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 - [Documentazione Modulo User](./README.md)
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../xot/docs/translation-standards.md)
-- [Documentazione Modulo User](./README.md)
-
 - [Documentazione Modulo User](./readme.md)
 
 ## Note Tecniche

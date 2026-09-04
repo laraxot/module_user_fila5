@@ -5,9 +5,6 @@ tags: [factory, audit, lessons, learned]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "factory-audit-lessons-learned factory audit lessons learned - user module"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -124,8 +121,6 @@ class DeviceProfileFactory extends DeviceUserFactory
 
 - [Factory Lessons Learned CRITICAL](../../../../docs/project/factory-lessons-learned-critical.md)
 - [Factory Creation Status](./factory-creation-status.md)
-- [User Module README](./README.md)
-
 - [User Module README](./readme.md)
 
 ## ⚠️ REGOLE DA NON DIMENTICARE MAI

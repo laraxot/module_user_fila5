@@ -5,9 +5,6 @@ tags: [volt, blade, implementation]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "volt-blade-implementation implementazione dei form con widget filament"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -24,8 +21,6 @@ related:
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
-
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-2.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
@@ -313,8 +308,6 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
-
 - [README modulo User](./readme.md)
 - [Convenzioni Path](./path-conventions-2.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)

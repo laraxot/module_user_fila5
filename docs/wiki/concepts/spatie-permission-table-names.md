@@ -5,8 +5,6 @@ module: User
 tags: [spatie, permission, config, migration, model_has_role, immutable]
 updated: 2026-07-27
 issues:
-  - "https://github.com/laraxot/<nome repository>/issues/7"
-
   - "https://github.com/laraxot/base_workorder_fila5/issues/7"
 related:
   - ../../bugfix-permission-table-names-singular.md

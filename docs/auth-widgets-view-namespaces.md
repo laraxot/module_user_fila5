@@ -5,9 +5,6 @@ tags: [auth, widgets, view, namespaces]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "auth-widgets-view-namespaces widget di autenticazione: namespace delle view"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -141,8 +138,6 @@ I widget di autenticazione sono parte dell'**interfaccia utente del tema** e dev
 ## Pattern Corretto vs Errato
 
 ### ✅ **CORRETTO**
-```
-
 ```php
 namespace Modules\User\Filament\Widgets\Auth;
 

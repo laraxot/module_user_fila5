@@ -5,9 +5,6 @@ tags: [profiles, uuid, policy]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "profiles-id-uuid-policy profiles id/uuid policy"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -49,8 +46,6 @@ When fixing an existing installation:
 3. backfill `uuid` for old rows where it is null.
 
 ## 2026-03-12 Incident
-
-In `<nome repository>`, the runtime failed with:
 
 In `base_predict_fila5`, the runtime failed with:
 

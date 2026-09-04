@@ -8,14 +8,14 @@ use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
-uses(TestCase::class)->group('user-db');
+uses(TestCase::class);
 
 /**
  * @param  array<string, mixed>  $attributes
  */
 function makeAuthenticationLogFor(User $user, array $attributes = []): AuthenticationLog
 {
-    $log = new AuthenticationLog();
+    $log = new AuthenticationLog;
     $log->forceFill(array_merge([
         'authenticatable_type' => $user->getMorphClass(),
         'authenticatable_id' => $user->getKey(),

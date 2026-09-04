@@ -12,7 +12,7 @@ use Modules\User\Enums\LanguageEnum;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-user-db');
+uses(TestCase::class);
 
 describe('User Datas And Enums Coverage', function (): void {
     test('creates socialite user attributes data with expected values', function (): void {
@@ -31,7 +31,7 @@ describe('User Datas And Enums Coverage', function (): void {
     });
 
     test('builds permission data from permission config', function (): void {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         config([
             'permission' => [
                 'models' => [
@@ -73,7 +73,7 @@ describe('User Datas And Enums Coverage', function (): void {
     });
 
     test('builds filament shield data from filament shield config', function (): void {
-        /** @var TestCase $this */
+        /* @var TestCase $this */
         config([
             'filament-shield' => [
                 'shield_resource' => [
@@ -104,8 +104,8 @@ describe('User Datas And Enums Coverage', function (): void {
     });
 
     test('returns labels for both language enums', function (): void {
-        /** @var TestCase $this */
-        /** @var TestCase $this */
+        /* @var TestCase $this */
+        /* @var TestCase $this */
         app()->setLocale('it');
 
         $italianLabel = LanguageEnum::ITALIAN->getLabel();

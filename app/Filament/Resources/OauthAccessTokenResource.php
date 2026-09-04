@@ -9,6 +9,7 @@ use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\IconColumn;
@@ -59,7 +60,10 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('user.name')
                     ->searchable()
                     ->sortable()
-                    ->url(function (OauthAccessToken $record): ?string {
+                    ->url(function (mixed $record): ?string {
+                        if (! $record instanceof OauthAccessToken) {
+                            return null;
+                        }
                         $user = $record->user;
                         if ($user !== null && method_exists($user, 'exists') && $user->exists) {
                             return UserResource::getUrl('view', ['record' => $user]);
@@ -145,9 +149,9 @@ class OauthAccessTokenResource extends XotBaseResource
     }
 
     /**
-     * @return array<string, mixed>
+     * @return array<string, Component>
      */
-    public static function getFormSchemaOld(): array
+    public static function getFormSchema(): array
     {
         return [
             'oauth_access_token_info' => Section::make('OAuth Access Token Information')

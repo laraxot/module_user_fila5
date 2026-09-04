@@ -13,13 +13,13 @@ use Modules\User\Tests\Unit\Traits\Fixtures\HasUserTestCaseFixture;
 use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesMockableFixture;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('no-user-db');
+uses(TestCase::class);
 
 test('phpstan fixtures reference dormant traits', function (): void {
-    Assert::assertInstanceOf(PasswordValidationRulesMockableFixture::class, new PasswordValidationRulesMockableFixture());
-    Assert::assertInstanceOf(HasRolesTraitFixture::class, new HasRolesTraitFixture());
-    Assert::assertInstanceOf(HasPasswordExpiryFixture::class, new HasPasswordExpiryFixture());
+    Assert::assertInstanceOf(PasswordValidationRulesMockableFixture::class, new PasswordValidationRulesMockableFixture);
+    Assert::assertInstanceOf(HasRolesTraitFixture::class, new HasRolesTraitFixture);
+    Assert::assertInstanceOf(HasPasswordExpiryFixture::class, new HasPasswordExpiryFixture);
     Assert::assertTrue(class_exists(HasPassportConfigurationFixture::class));
-    Assert::assertInstanceOf(CreatesApplicationFixture::class, new CreatesApplicationFixture());
-    Assert::assertInstanceOf(HasUserTestCaseFixture::class, new HasUserTestCaseFixture());
+    Assert::assertInstanceOf(CreatesApplicationFixture::class, new CreatesApplicationFixture);
+    Assert::assertInstanceOf(HasUserTestCaseFixture::class, new HasUserTestCaseFixture);
 });

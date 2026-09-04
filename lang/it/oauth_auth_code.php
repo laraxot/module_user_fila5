@@ -22,11 +22,11 @@ return [
         'created_at' => ['label' => 'created_at'],
     ],
     'actions' => [
-        'revoke' => ['label' => 'Revoca', 'tooltip' => 'Revoca il codice', 'helper_text' => 'Revoca questo codice', 'description' => 'Azione per revocare il codice', 'success' => 'Codice di autorizzazione revocato con successo'],
+        'revoke' => ['label' => 'Revoca', 'tooltip' => 'Revoca il codice', 'helper_text' => 'Revoca questo codice', 'description' => 'Azione per revocare il codice', 'success' => 'Codice di autorizzazione revocato con successo', 'icon' => 'revoke'],
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
-        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
     ],
     'messages' => ['revoked' => 'Codice revocato con successo'],
     'sections' => [

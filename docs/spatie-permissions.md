@@ -14,14 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/spatie-permissions-2.md
-
-
-## Appendice — contenuto migrato
-
----
-module: theme
-topic: spatie-permissions
-canonical: ../../../Themes/docs/shared-components/spatie_permissions.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/spatie_permissions.txt

@@ -28,11 +28,11 @@ return [
         'create' => ['label' => 'Crea Sso Provider', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Sso Provider', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Sso Provider', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
     ],
     'sections' => [
-        'empty' => ['label' => 'empty', 'heading' => 'empty'],
+        'empty' => ['label' => '', 'heading' => ''],
     ],
 ];

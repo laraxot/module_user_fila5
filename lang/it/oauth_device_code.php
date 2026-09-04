@@ -16,14 +16,16 @@ return [
         'user_approved_at' => ['label' => 'Approvato il', 'tooltip' => 'Data e ora di approvazione', 'placeholder' => 'Data approvazione', 'helper_text' => 'Quando l\'utente ha approvato il dispositivo', 'description' => 'Data approvazione'],
         'last_polled_at' => ['label' => 'Ultimo polling', 'tooltip' => 'Ultima richiesta di verifica', 'placeholder' => 'Data ultimo polling', 'helper_text' => 'Ultima volta che il client ha verificato lo stato', 'description' => 'Data ultimo polling'],
         'expires_at' => ['label' => 'Scade il', 'tooltip' => 'Data di scadenza', 'placeholder' => 'Seleziona la data', 'helper_text' => 'Data e ora di scadenza del codice', 'description' => 'Data di scadenza'],
+        'expired' => ['label' => 'expired'],
+        'valid' => ['label' => 'valid'],
     ],
     'filters' => ['revoked' => 'Revocati', 'expired' => 'Scaduti', 'valid' => 'Validi'],
     'actions' => [
-        'revoke' => ['label' => 'Revoca', 'tooltip' => 'Revoca il codice dispositivo', 'helper_text' => 'Revoca questo codice dispositivo', 'description' => 'Azione per revocare il codice', 'success' => 'Codice dispositivo revocato con successo'],
+        'revoke' => ['label' => 'Revoca', 'tooltip' => 'Revoca il codice dispositivo', 'helper_text' => 'Revoca questo codice dispositivo', 'description' => 'Azione per revocare il codice', 'success' => 'Codice dispositivo revocato con successo', 'icon' => 'revoke'],
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
-        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
     ],
     'messages' => ['revoked' => 'Codice dispositivo revocato con successo'],
     'sections' => [

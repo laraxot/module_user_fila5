@@ -23,7 +23,7 @@ use Modules\User\Tests\Unit\Actions\Socialite\Fixtures\DeletableAccessTokenFixtu
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('user-db');
+uses(TestCase::class);
 
 describe('Socialite utility actions', function (): void {
     it('returns allow list when configured as string', function (): void {
@@ -125,7 +125,7 @@ describe('Socialite utility actions', function (): void {
     });
 
     it('logs out user token and device sessions', function (): void {
-        $accessToken = new DeletableAccessTokenFixture();
+        $accessToken = new DeletableAccessTokenFixture;
         $refreshTokenId = 'rtok-'.uniqid();
         $deviceId = 'dev-'.uniqid();
         $userId = 'user-'.uniqid();

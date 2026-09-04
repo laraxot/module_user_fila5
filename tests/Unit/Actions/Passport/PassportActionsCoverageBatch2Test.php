@@ -18,7 +18,7 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class)->group('user-db');
+uses(TestCase::class);
 
 beforeEach(function (): void {
     config(['passport.connection' => 'user']);
@@ -89,7 +89,7 @@ test('creates generic oauth client with explicit flags and provider', function (
 test('regenerates client secret from model instance and client id', function (): void {
     $clientId = (string) Str::uuid();
 
-    DB::connection('user')->table('oauth_clients')->insert(TestCase::oauthClientColumnsOnly([
+    DB::connection('user')->table('oauth_clients')->insert([
         'id' => $clientId,
         'user_id' => null,
         'name' => 'Client To Regenerate',
@@ -103,7 +103,7 @@ test('regenerates client secret from model instance and client id', function ():
         'revoked' => 0,
         'created_at' => now(),
         'updated_at' => now(),
-    ]));
+    ]);
 
     $action = app(RegenerateClientSecretAction::class);
 
@@ -116,12 +116,9 @@ test('regenerates client secret from model instance and client id', function ():
     Assert::assertNotSame($secretFromModel, $secretFromId);
     Assert::assertNotSame('old-secret-value', $secretFromModel);
     $storedSecret = DB::connection('user')->table('oauth_clients')->where('id', $clientId)->value('secret');
-    if (! is_string($storedSecret)) {
-        Assert::fail('oauth_clients.secret is not a string.');
-    }
 
     Assert::assertNotSame($secretFromId, $storedSecret);
-    Assert::assertTrue(Hash::check($secretFromId, $storedSecret));
+    Assert::assertTrue(Hash::check($secretFromId, is_string($storedSecret) ? $storedSecret : ''));
 });
 
 test('revokes refresh token and returns false for missing token', function (): void {
@@ -129,7 +126,7 @@ test('revokes refresh token and returns false for missing token', function (): v
     $tokenId = (string) Str::uuid();
     $refreshId = hash('sha256', (string) Str::uuid());
 
-    DB::connection('user')->table('oauth_clients')->insert(TestCase::oauthClientColumnsOnly([
+    DB::connection('user')->table('oauth_clients')->insert([
         'id' => $clientId,
         'user_id' => null,
         'name' => 'Refresh Client',
@@ -143,7 +140,7 @@ test('revokes refresh token and returns false for missing token', function (): v
         'revoked' => 0,
         'created_at' => now(),
         'updated_at' => now(),
-    ]));
+    ]);
 
     DB::connection('user')->table('oauth_access_tokens')->insert([
         'id' => $tokenId,
@@ -176,7 +173,7 @@ test('revokes access token and associated refresh token', function (): void {
     $tokenId = (string) Str::uuid();
     $refreshId = hash('sha256', (string) Str::uuid());
 
-    DB::connection('user')->table('oauth_clients')->insert(TestCase::oauthClientColumnsOnly([
+    DB::connection('user')->table('oauth_clients')->insert([
         'id' => $clientId,
         'user_id' => null,
         'name' => 'Token Client',
@@ -190,7 +187,7 @@ test('revokes access token and associated refresh token', function (): void {
         'revoked' => 0,
         'created_at' => now(),
         'updated_at' => now(),
-    ]));
+    ]);
 
     DB::connection('user')->table('oauth_access_tokens')->insert([
         'id' => $tokenId,
@@ -225,7 +222,7 @@ test('revokes client with and without associated tokens', function (): void {
     $clientWithoutTokenRevokeId = (string) Str::uuid();
     $tokenNoRevokeId = (string) Str::uuid();
 
-    $clientRows = [
+    DB::connection('user')->table('oauth_clients')->insert([
         [
             'id' => $clientWithTokenId,
             'user_id' => null,
@@ -256,11 +253,7 @@ test('revokes client with and without associated tokens', function (): void {
             'created_at' => now(),
             'updated_at' => now(),
         ],
-    ];
-    DB::connection('user')->table('oauth_clients')->insert(array_map(
-        static fn (array $row): array => TestCase::oauthClientColumnsOnly($row),
-        $clientRows
-    ));
+    ]);
 
     DB::connection('user')->table('oauth_access_tokens')->insert([
         [

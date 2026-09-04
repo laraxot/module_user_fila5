@@ -12,7 +12,6 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
@@ -116,18 +115,16 @@ class LoginWidget extends XotBaseSchemaWidget
             $this->form->saveRelationships();
             // $this->form->callAfter();
 
-            // `ValidationException::errors()` è dichiarato `array` senza generics, quindi i
-            // valori sono davvero `mixed`: la normalizzazione serve. Va però costruita, non
-            // annotata — l'`@var` inline che c'era prima descriveva la variabile *prima*
-            // della riassegnazione, quindi non vincolava niente, e `array_map()` con una
-            // callable-stringa degradava comunque il tipo ad `array`.
             foreach ($e->errors() as $field => $messages) {
-                $texts = [];
-                foreach (is_array($messages) ? $messages : [$messages] as $message) {
-                    $texts[] = SafeStringCastAction::cast($message);
+                // PHPStan Level 10: Ensure messages is array of strings
+                if (! is_array($messages)) {
+                    $messages = [$messages];
                 }
 
-                $this->addError(SafeStringCastAction::cast($field), implode(' ', $texts));
+                $this->addError($field, implode(' ', array_map(
+                    static fn (mixed $v): string => \is_scalar($v) || $v instanceof \Stringable ? (string) $v : '',
+                    $messages
+                )));
             }
         } catch (\Exception $e) {
             report($e);

@@ -8,7 +8,6 @@ use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use PHPUnit\Framework\Assert;
 
 /**
@@ -121,12 +120,16 @@ function skipUnlessUserTable(string $table, string $reason = ''): void
 
 function permissionRolePivotTable(): string
 {
-    return SafeStringCastAction::cast(config('permission.table_names.model_has_roles', 'model_has_role'));
+    $value = config('permission.table_names.model_has_roles', 'model_has_role');
+
+    return is_string($value) ? $value : 'model_has_role';
 }
 
 function permissionPivotTable(): string
 {
-    return SafeStringCastAction::cast(config('permission.table_names.model_has_permissions', 'model_has_permission'));
+    $value = config('permission.table_names.model_has_permissions', 'model_has_permission');
+
+    return is_string($value) ? $value : 'model_has_permission';
 }
 
 function skipUnlessUsersTableReady(string $reason = ''): void

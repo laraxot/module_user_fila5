@@ -5,9 +5,6 @@ tags: [filament, widgets]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "filament-widgets best practices per widget filament"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -140,8 +137,6 @@ use Filament\Widgets\Concerns\CanPoll;
 - [Lang - Filament Translations](../../../lang/project_docs/filament-translations.md) - Traduzioni in Filament
 - [UI - Form Filament Widgets](../../../ui/project_docs/form_filament_widgets.md) - Widget per form Filament
 ### Documentazione Interna
-- [README del modulo User](../README.md) - Indice principale del modulo User
-
 - [README del modulo User](../readme.md) - Indice principale del modulo User
 - [Filament Best Practices](../filament_best_practices.md) - Best practices generali per Filament
 ## Risorse Utili

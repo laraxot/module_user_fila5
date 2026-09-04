@@ -7,7 +7,6 @@ namespace Modules\User\Tests\Unit;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 
 use function Safe\glob;
 
@@ -27,7 +26,7 @@ function userBoostClasses(string $pattern): array
         $relative = str_replace($root.'/', '', $file);
         $candidate = 'Modules\\User\\'.str_replace(['/', '.php'], ['\\', ''], $relative);
         if (class_exists($candidate) || enum_exists($candidate)) {
-            /** @var class-string $candidate */
+            /* @var class-string $candidate */
             $classes[] = $candidate;
         }
     }
@@ -59,14 +58,14 @@ describe('User coverage boost', function (): void {
 
     test('actions resolve or instantiate with strict types', function (): void {
         foreach (userBoostClasses('Actions/**/*.php') as $class) {
-            $ref = new ReflectionClass($class);
+            $ref = new \ReflectionClass($class);
             if ($ref->isAbstract() || $ref->isInterface()) {
                 continue;
             }
             try {
                 Assert::assertInstanceOf($class, app($class));
             } catch (\Throwable) {
-                Assert::assertInstanceOf($class, new $class());
+                Assert::assertInstanceOf($class, new $class);
             }
             Assert::assertStringContainsString('declare(strict_types=1);', XotBasePest::reflectionSource($class));
         }
@@ -74,7 +73,7 @@ describe('User coverage boost', function (): void {
 
     test('policies declare crud methods', function (): void {
         foreach (userBoostClasses('Models/Policies/*.php') as $class) {
-            $ref = new ReflectionClass($class);
+            $ref = new \ReflectionClass($class);
             if ($ref->isAbstract()) {
                 continue;
             }
@@ -86,7 +85,7 @@ describe('User coverage boost', function (): void {
         $checked = 0;
         // Safe\glob non espande sempre **; Datas User è piatto sotto app/Datas.
         foreach (userBoostClasses('Datas/*.php') as $class) {
-            $ref = new ReflectionClass($class);
+            $ref = new \ReflectionClass($class);
             if ($ref->isAbstract()) {
                 continue;
             }

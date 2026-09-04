@@ -23,7 +23,7 @@ function createPassportClient(): array
 
     $client = $repository->createClientCredentialsGrantClient('Flow Test Client');
 
-    $secret = $client->plainSecret ?? app(SafeStringCastAction::class)->execute($client->getAttribute('secret'));
+    $secret = $client->plainSecret ?? SafeStringCastAction::cast($client->getAttribute('secret'));
 
     return [
         'client' => $client,
@@ -55,7 +55,7 @@ test('client credentials can be associated to a specific user', function (): voi
     $client->owner()->associate($user);
     $client->forceFill([
         'user_id' => $user->getKey(),
-        'owner_id' => app(SafeStringCastAction::class)->execute($user->getKey()),
+        'owner_id' => SafeStringCastAction::cast($user->getKey()),
         'owner_type' => User::class,
     ]);
     $client->save();

@@ -29,6 +29,6 @@ class TermsOfService extends Component
 
     public function testfunction(): void
     {
-        throw new \RuntimeException('Removed debug dddx');
+        dddx('wip');
     }
 }

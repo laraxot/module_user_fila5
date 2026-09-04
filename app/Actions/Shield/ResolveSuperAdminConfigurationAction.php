@@ -29,7 +29,8 @@ class ResolveSuperAdminConfigurationAction
      */
     public function execute(): array
     {
-        $superAdminConfig = FilamentShieldData::make()->super_admin;
+        $shieldData = FilamentShieldData::make();
+        $superAdminConfig = $shieldData->super_admin;
 
         return [
             'enabled' => $superAdminConfig->enabled,

@@ -19,9 +19,9 @@ use function Pest\Laravel\actingAs;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    /** @var TestCase $this */
-    $this->skipUnlessUsersTableReady();
-    $this->skipUnlessUserColumn('profiles', 'uuid', 'profiles.uuid column is not available in the test database.');
+    /* @var TestCase $this */
+    TestCase::skipUnlessUsersTableReady();
+    TestCase::skipUnlessUserColumn('profiles', 'uuid', 'profiles.uuid column is not available in the test database.');
 
     app()->register(AdminPanelProvider::class);
     app()->register(SchemasServiceProvider::class);
@@ -45,7 +45,7 @@ describe('Change Profile Password', function (): void {
             ->call('updatePassword')
             ->assertHasNoFormErrors();
 
-        Assert::assertTrue(Hash::check('new_password', $user->fresh()->password ?? ''));
+        Assert::assertTrue(Hash::check('new_password', (string) $user->fresh()?->password));
     });
 
     test('cannot change password with wrong current password', function (): void {
@@ -69,12 +69,12 @@ describe('Change Profile Password', function (): void {
         Assert::assertIsArray($errors);
         $hasCurrentPasswordError = false;
         foreach (array_keys($errors) as $errorKey) {
-            if (str_contains($errorKey, 'current_password')) {
+            if (str_contains((string) $errorKey, 'current_password')) {
                 $hasCurrentPasswordError = true;
                 break;
             }
         }
         Assert::assertTrue($hasCurrentPasswordError);
-        Assert::assertTrue(Hash::check('old_password', $user->fresh()->password ?? ''));
+        Assert::assertTrue(Hash::check('old_password', (string) $user->fresh()?->password));
     });
 });

@@ -17,7 +17,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
-uses(TestCase::class)->group('user-db');
+uses(TestCase::class);
 
 /**
  * @param  array<string, mixed>  $attributes
@@ -246,7 +246,7 @@ test('it provides utility methods', function (): void {
 
 test('it handles edge cases correctly', function (): void {
     ['user' => $user] = hasTeamsBootstrapFixture();
-    $newUser = new User();
+    $newUser = new User;
 
     Assert::assertFalse($newUser->belongsToTeams());
 

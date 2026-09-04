@@ -5,9 +5,6 @@ tags: [registration, widget]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "registration-widget registrationwidget: widget generico per la registrazione utente"
-issues: ["https://github.com/provtv/<nome repository>/issues/124"]
-discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
-
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -216,5 +213,3 @@ public function resetPassword()
 - **Widget Auth**: Specifici, logica autenticazione interna sicura
 - **Entrambi**: Stesso pattern XotBaseWidget + form schema + view convention
 ## Collegamenti aggiornati
-
-```

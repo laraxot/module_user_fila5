@@ -52,8 +52,6 @@ trait HasTeams
      * Get all teams the user belongs to.
      *
      * @return Collection<int, TeamContract>
-     *
-     * @phpstan-return Collection<int, TeamContract>
      */
     public function allTeams(): Collection
     {
@@ -159,18 +157,14 @@ trait HasTeams
      * Get all of the team's users including its owner.
      *
      * @return Collection<int, User>
-     *
-     * @phpstan-return Collection<int, User>
      */
     public function getAllTeamUsersAttribute(): Collection
     {
         // teamUsers are Membership objects, we need to extract the User models
         /** @var Collection<int, User> $users */
-        $users = $this->teamUsers->map(static function ($membership) {
+        $users = $this->teamUsers->map(static function (TeamUser $membership): ?User {
             // Membership always extends Model, check only if user attribute exists
-            $user = $membership->getAttribute('user');
-
-            return $user !== null ? $user : null;
+            return $membership->user;
         })->filter();
 
         $owner = $this->owner;
@@ -185,19 +179,16 @@ trait HasTeams
      * Get all of the team's users including its owner.
      *
      * @return Collection<int, User>
-     *
-     * @phpstan-return Collection<int, User>
      */
-    public function allTeamUsers(): Collection
-    {
-        /** @var Collection<int, TeamContract> $teams */
-        $teams = $this->membershipTeams;
+    public function allTeamUsers(): Collection // @phpstan-ignore return.type
+    {/** @var Collection<int, mixed> $teams */
+            $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
         /** @var Collection<int, User> $result */
-        $result = $teams->flatMap(
-            /** @return array<int, User> */
-            static function (TeamContract $team): array {
-                /** @var array<int, User> $users */
-                $users = (array) ($team->users ?? []);
+        $result = $teams->flatMap( // @phpstan-ignore argument.type
+            /** @param mixed $team @return array<int,User>|Collection<int,User> */
+            static function (mixed $team): array { // @phpstan-ignore return.type
+                /** @var array<int,User> $users */
+                $users = (array) ($team->users ?? []); // @phpstan-ignore property.nonObject
 
                 return $users;
             })->unique('id');
@@ -211,9 +202,9 @@ trait HasTeams
     public function hasTeamMember(XotUserContract $user): bool
     {
         // Check if user is in teamUsers (checking by key since Membership != UserContract)
-        $userFound = $this->teamUsers->first(static function ($membership) use ($user) {
+        $userFound = $this->teamUsers->first(static function (TeamUser $membership) use ($user): bool {
             // Membership always extends Model
-            $memberUser = $membership->getAttribute('user');
+            $memberUser = $membership->user;
             if ($memberUser instanceof Model) {
                 $memberUserKey = $memberUser->getKey();
 
@@ -283,8 +274,6 @@ trait HasTeams
      * Get the current team of the user's context.
      *
      * @return BelongsTo<Model&TeamContract, $this>
-     *
-     * @phpstan-return BelongsTo<Model&TeamContract, $this>
      */
     public function currentTeam(): BelongsTo
     {
@@ -298,8 +287,6 @@ trait HasTeams
      * Get the teams owned by the user.
      *
      * @return HasMany<Model&TeamContract, $this>
-     *
-     * @phpstan-return HasMany<Model&TeamContract, $this>
      */
     public function ownedTeams(): HasMany
     {
@@ -313,8 +300,6 @@ trait HasTeams
      * Get all team users.
      *
      * @return HasMany<TeamUser, $this>
-     *
-     * @phpstan-return HasMany<TeamUser, $this>
      */
     public function teamUsers(): HasMany
     {
@@ -354,8 +339,6 @@ trait HasTeams
      * Get permissions for a specific team.
      *
      * @return array<int, string>
-     *
-     * @phpstan-return array<int, string>
      */
     public function teamPermissions(TeamContract $team): array
     {
@@ -367,10 +350,8 @@ trait HasTeams
         if ($role !== null && $role->permissions) {
             /** @var \Illuminate\Database\Eloquent\Collection<int, Permission> $permissionsCollection */
             $permissionsCollection = $role->permissions;
-            /** @var list<string> $rolePermissionNames */
-            $rolePermissionNames = array_values($permissionsCollection->map(
-                static fn (Permission $permission): string => $permission->name,
-            )->all());
+            /** @var array<string> $rolePermissionNames */
+            $rolePermissionNames = $permissionsCollection->pluck('name')->toArray();
 
             $permissions = array_values(array_filter(
                 $rolePermissionNames,
@@ -488,8 +469,6 @@ trait HasTeams
      * Su {@see BaseUser} esposto come {@see membershipTeams()} — {@see HasRoles::teams()} resta Spatie.
      *
      * @return BelongsToMany<Model&TeamContract, Model&static, Pivot, 'pivot'>
-     *
-     * @phpstan-return BelongsToMany<Model&TeamContract, Model&static, Pivot, 'pivot'>
      */
     public function teams(): BelongsToMany
     {
@@ -570,8 +549,6 @@ trait HasTeams
      * Get all admins of the team.
      *
      * @return Collection<int, Model>
-     *
-     * @phpstan-return Collection<int, Model>
      */
     public function getTeamAdmins(TeamContract $team): Collection
     {
@@ -585,8 +562,6 @@ trait HasTeams
      * Get all members of the team.
      *
      * @return Collection<int, Model>
-     *
-     * @phpstan-return Collection<int, Model>
      */
     public function getTeamMembers(TeamContract $team): Collection
     {
