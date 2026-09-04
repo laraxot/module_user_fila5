@@ -89,59 +89,18 @@ significativo: DB di test `10.100.200.53` irraggiungibile da questo ambiente
 **Fuori scope**: 15 file della lista originale non richiedevano piu' modifiche
 (gia' risolti dal commit `5ec97b13` prima dell'inizio di questo lavoro).
 
-## 2026-09-03 — bug reale in ProfileEditVoltComponent.php, non solo phpstan
+## PHPStan (level max) — ProfileEditVoltComponent instanceof reale 2026-09-04
 
-`phpstan analyse` (root, tutto il monorepo) segnalava 4 errori mixed-type in
-`app/View/Pages/ProfileEditVoltComponent.php` (righe 142/348/353/362).
-Investigando la causa reale (`\PHPStan\dumpType()`, non assunta): il file
-importava `Modules\User\Models\User` e faceva
-`Assert::isInstanceOf($user, User::class, ...)` su `Auth::user()` — ma
-`config/auth.php` configura **`Modules\Quaeris\Models\User`** come modello di
-autenticazione reale (`Modules\User\Models\User` e' commentato sopra). Le due
-classi sono **sibling**, entrambe estendono `Modules\User\Models\BaseUser`,
-non l'una l'altra: l'`instanceof` era sempre falso a runtime
-(`\PHPStan\dumpType($user)` dopo il narrowing confermava `*NEVER*`).
-
-**Impatto reale**: `mount()`, `updateProfile()` e `updatePassword()` avevano
-lo stesso pattern ma erano "silenziati" da un `/** @var User $user */` inline
-prima della chiamata — esattamente la pratica che le istruzioni di PHPStan
-vietano esplicitamente ("Do not use inline @var PHPDoc tag to override
-PHPStan's inferred type"), motivo per cui PHPStan non li segnalava. A runtime
-pero' l'`Assert::isInstanceOf` falliva comunque: ogni tentativo reale di
-aggiornare profilo, password o cancellare l'account finiva nel blocco
-`catch`, con un messaggio d'errore generico all'utente. Componente
-verosimilmente non funzionante in produzione per nessun utente autenticato,
-non solo un difetto di tipo.
-
-**Fix**: sostituito il controllo con `instanceof BaseUser` (l'antenato comune
-reale) in tutti e 4 i metodi, rimossi gli `@var` che mascheravano il problema,
-sostituita la query statica `User::where(...)` con `$user::where(...)` (late
-static binding sull'istanza narrowed, non piu' legata a una sottoclasse
-concreta hardcoded). Aggiunta `@property string $id` mancante su `BaseUser`
-(presente solo sulla sottoclasse `Modules\User\Models\User`, non
-sull'antenato) e corrette 5 annotazioni `@property \DateTime|null` →
-`Carbon|null` (Eloquent castava gia' a `Carbon` a runtime; il docblock era
-disallineato, causava `Call to an undefined method DateTime::toDateTimeString()`
-su un campo che in realta' e' sempre un `Carbon`). Per `$user->password`
-(`string|null` dopo il fix, `Hash::check()` vuole `string`):
-`Assert::stringNotEmpty()` **non narrowa per PHPStan** in questo progetto
-(webmozart/assert dichiara solo `@psalm-assert`, non `@phpstan-assert`, e non
-c'e' il bridge `phpstan/phpstan-webmozart-assert` installato — verificato in
-`vendor/webmozart/assert/src/Assert.php` e `composer.json`) — usato invece un
-narrowing reale, `if (null === $hashedPassword) { throw new RuntimeException(...); }`,
-in `updatePassword()` e `deleteAccount()`.
-
-**Verifica incompleta — bloccata da lavoro concorrente non mio**:
-`Modules/User/app/Models/User.php` e' modificato e non committato da
-un'altra sessione in questo momento, con `protected $childTypes` senza tipo
-mentre `BaseUser::$childTypes` e' tipizzato `array` — PHP lo rifiuta con un
-fatal (`Type of ... must be array (as in class BaseUser)`) che impedisce il
-bootstrap dell'app, quindi ogni `phpstan analyse`/Pest su questo modulo in
-questo momento fallisce per una causa esterna a questo fix (non ho toccato
-`User.php`, segnalato in `docs/chat/xot-blade-component-bootstrap-crash-wip.md`).
-Verificato invece: `php -l` pulito su entrambi i file; la diagnosi del bug
-originale (`\PHPStan\dumpType($user)` → `*NEVER*` dopo il narrowing errato)
-era stata fatta PRIMA che questo blocco comparisse, quindi resta valida.
-`tools/phpinsights.sh` non eseguibile (assente dal progetto). Da ri-verificare
-con `phpstan analyse` (root) appena l'altra sessione chiude o annulla il suo
-lavoro su `User.php`.
+Vedi story completa: `docs/stories/user-profile-volt-instanceof-wrong-user-class.md`.
+In sintesi: 4 errori PHPStan (`cast.string`/`argument.type`/`method.nonObject`) su
+`ProfileEditVoltComponent.php` erano il sintomo di un bug reale — `instanceof`
+verificato contro `Modules\User\Models\User`, sorella (non antenato) del vero
+model di auth `Modules\Quaeris\Models\User` (`config/auth.php`). Fix: narrowing
+contro `BaseUser` nei 4 metodi, niente piu' `@var` per zittire PHPStan.
+`BaseUser.php`: aggiunta `@property string $id`, 5x `\DateTime|null` ->
+`Carbon|null`. `phpstan analyse Modules/User` pulito. `phpmd` sui 2 file toccati:
+solo debito preesistente (camelCase su colonne DB snake_case, complessita' gia'
+sopra soglia prima di questo fix) — nessuna regressione imputabile a questo
+diff. Pest non verificabile in modo significativo in questa sessione: vedi
+memoria second-brain `env-sqlite-manca-suite-non-eseguibile.md` (396/813 test
+falliscono gia' da soli su file mai toccati, causa non diagnosticata).

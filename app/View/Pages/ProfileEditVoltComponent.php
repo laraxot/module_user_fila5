@@ -8,6 +8,8 @@ use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
@@ -16,7 +18,6 @@ use Livewire\Attributes\Locked;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
 use Modules\User\Models\BaseUser;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use RuntimeException;
 use Webmozart\Assert\Assert;
 use Webmozart\Assert\InvalidArgumentException;
@@ -81,6 +82,7 @@ final class ProfileEditVoltComponent extends Component
                 throw new RuntimeException('User must be authenticated and an instance of BaseUser model');
             }
 
+            // Type-safe property initialization
             $this->first_name = (string) ($user->first_name ?? '');
             $this->last_name = (string) ($user->last_name ?? '');
             $this->email = (string) ($user->email ?? '');
@@ -90,10 +92,27 @@ final class ProfileEditVoltComponent extends Component
             Assert::stringNotEmpty($this->last_name, 'User last name cannot be empty');
             Assert::stringNotEmpty($this->email, 'User email cannot be empty');
             Assert::stringNotEmpty($this->user_id, 'User ID cannot be empty');
+
+            // Validate email format
             Assert::true(false !== filter_var($this->email, FILTER_VALIDATE_EMAIL), 'User email must be valid');
-        } catch (InvalidArgumentException) {
+        } catch (InvalidArgumentException $e) {
+            Log::error('Profile mount validation failed', [
+                'error' => $e->getMessage(),
+                'user_id' => Auth::id(),
+                'trace' => $e->getTraceAsString(),
+            ]);
+
+            // Redirect to login if user data is corrupted
             redirect()->route('login')->with('error', 'Invalid user session. Please log in again.');
-        } catch (\Exception) {
+        } catch (\Exception $e) {
+            Log::error('Profile mount failed', [
+                'error' => $e->getMessage(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+                'user_id' => Auth::id(),
+                'trace' => $e->getTraceAsString(),
+            ]);
+
             redirect()->route('dashboard')->with('error', 'Unable to load profile data.');
         }
     }
@@ -122,60 +141,102 @@ final class ProfileEditVoltComponent extends Component
             if (! $user instanceof BaseUser) {
                 throw new RuntimeException('User must be authenticated and an instance of BaseUser model for profile update');
             }
-            Assert::same($this->user_id, SafeStringCastAction::cast($user->id), 'User ID mismatch detected');
+            Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
+            // Check if email has changed for additional validation
             $emailChanged = $user->email !== $validated['email'];
 
             if ($emailChanged) {
-                // $user::where(), non User::where(): il modello di autenticazione reale e'
-                // configurato in config/auth.php e puo' essere una sottoclasse concreta
-                // diversa da Modules\User\Models\User (qui Modules\Quaeris\Models\User);
-                // $user:: usa late static binding sull'istanza narrowed sopra.
+                // Additional email validation for changes (late static binding: query the
+                // concrete auth model, non e' detto sia Modules\User\Models\User)
                 Assert::false(
                     $user::where('email', $validated['email'])->where('id', '!=', $this->user_id)->exists(),
                     'Email is already in use by another user',
                 );
             }
 
+            // Update user data with type casting
             $user->fill([
                 'first_name' => trim($validated['first_name']),
                 'last_name' => trim($validated['last_name']),
                 'email' => strtolower(trim($validated['email'])),
             ]);
 
+            // Reset email verification
             if ($emailChanged && $user->hasVerifiedEmail()) {
                 $user->email_verified_at = null;
             }
 
+            // Log before saving to capture original values
+            Log::debug('Updating user profile', [
+                'user_id' => $user->id,
+                'old_first_name' => $user->first_name,
+                'new_first_name' => $validated['first_name'],
+                'old_last_name' => $user->last_name,
+                'new_last_name' => $validated['last_name'],
+                'old_email' => $user->email,
+                'new_email' => $validated['email'],
+                'email_changed' => $emailChanged,
+                'ip_address' => request()->ip(),
+                'user_agent' => request()->userAgent(),
+            ]);
+
             $success = $user->save();
             Assert::true($success, 'Failed to save user profile');
 
-            activity()
-                ->causedBy($user)
-                ->performedOn($user)
-                ->withProperties([
-                    'changes' => $user->getChanges(),
-                    'email_changed' => $emailChanged,
-                    'ip_address' => request()->ip(),
-                ])
-                ->log('User profile updated');
+            // Log successful profile update for audit trail
+            /** @var array<string, mixed> $changes */
+            $changes = $user->getChanges();
 
+            Log::debug('Profile updated', [
+                'user_id' => $user->id,
+                'changes' => $changes,
+                'ip_address' => request()->ip(),
+                'user_agent' => request()->userAgent(),
+            ]);
+
+            // Clear password field for security
             $this->reset('current_password');
 
+            // Show success message
             $message = $emailChanged
                 ? 'Profile updated successfully. Please verify your new email address.'
                 : 'Profile updated successfully.';
 
             session()->flash('status', $message);
 
+            // Send email verification if email changed
             if ($emailChanged && null === $user->email_verified_at) {
                 $user->sendEmailVerificationNotification();
             }
         } catch (ValidationException $e) {
+            // Re-throw validation exceptions to display form errors
+            Log::warning('Profile update validation failed', [
+                'errors' => $e->errors(),
+                'user_id' => $this->user_id,
+                'email' => $this->email,
+            ]);
             throw $e;
         } catch (InvalidArgumentException $e) {
+            Log::error('Profile update assertion failed', [
+                'error' => $e->getMessage(),
+                'user_id' => $this->user_id,
+                'first_name' => $this->first_name,
+                'last_name' => $this->last_name,
+                'email' => $this->email,
+                'trace' => $e->getTraceAsString(),
+            ]);
+
             session()->flash('error', 'Profile update failed: '.$e->getMessage());
-        } catch (\Exception) {
+        } catch (\Exception $e) {
+            Log::error('Profile update failed with unexpected error', [
+                'error' => $e->getMessage(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+                'user_id' => $this->user_id,
+                'trace' => $e->getTraceAsString(),
+            ]);
+
             session()->flash('error', 'An unexpected error occurred while updating your profile.');
         }
     }
@@ -198,38 +259,46 @@ final class ProfileEditVoltComponent extends Component
             }
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
+            // Validate password strength and format
             Assert::stringNotEmpty($this->current_password, 'Current password cannot be empty');
             Assert::stringNotEmpty($this->password, 'New password cannot be empty');
             Assert::stringNotEmpty($this->password_confirmation, 'Password confirmation cannot be empty');
             Assert::same($this->password, $this->password_confirmation, 'Password confirmation does not match');
             Assert::greaterThanEq(strlen($this->password), 8, 'Password must be at least 8 characters long');
 
-            $hashedPassword = $user->password;
-            if (null === $hashedPassword) {
-                throw new RuntimeException('Stored password hash is missing');
+            $currentHash = $user->password;
+            if (null === $currentHash) {
+                throw new RuntimeException('User has no password hash set');
             }
-            Assert::true(Hash::check($this->current_password, $hashedPassword), 'Current password is incorrect');
+
+            // Verify current password
+            Assert::true(Hash::check($this->current_password, $currentHash), 'Current password is incorrect');
+
+            // Ensure new password is different from current
             Assert::false(
-                Hash::check($this->password, $hashedPassword),
+                Hash::check($this->password, $currentHash),
                 'New password must be different from current password',
             );
 
+            // Update password with secure hash
             $user->update([
                 'password' => Hash::make($this->password),
-                'remember_token' => Str::random(60),
+                'remember_token' => Str::random(60), // Invalidate existing sessions
             ]);
 
+            // Dispatch password reset event for logging
             event(new PasswordReset($user));
 
-            activity()
-                ->causedBy($user)
-                ->performedOn($user)
-                ->withProperties([
-                    'ip_address' => request()->ip(),
-                    'user_agent' => request()->userAgent(),
-                ])
-                ->log('User password updated');
+            // Log successful password update for audit trail
+            Log::debug('User password updated successfully', [
+                'user_id' => $user->id,
+                'email' => $user->email,
+                'ip_address' => request()->ip(),
+                'user_agent' => request()->userAgent(),
+                'password_length' => strlen($this->password),
+            ]);
 
+            // Clear password fields for security
             $this->reset(['current_password', 'password', 'password_confirmation']);
 
             session()->flash(
@@ -237,11 +306,32 @@ final class ProfileEditVoltComponent extends Component
                 'Password updated successfully. You have been logged out of other devices for security.',
             );
         } catch (ValidationException $e) {
+            // Re-throw validation exceptions to display form errors
+            Log::warning('Password update validation failed', [
+                'errors' => $e->errors(),
+                'user_id' => $this->user_id,
+            ]);
             throw $e;
         } catch (InvalidArgumentException $e) {
+            Log::error('Password update assertion failed', [
+                'error' => $e->getMessage(),
+                'user_id' => $this->user_id,
+                'trace' => $e->getTraceAsString(),
+            ]);
+
+            // Clear password fields for security
             $this->reset(['current_password', 'password', 'password_confirmation']);
             session()->flash('error', 'Password update failed: '.$e->getMessage());
-        } catch (\Exception) {
+        } catch (\Exception $e) {
+            Log::error('Password update failed with unexpected error', [
+                'error' => $e->getMessage(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+                'user_id' => $this->user_id,
+                'trace' => $e->getTraceAsString(),
+            ]);
+
+            // Clear password fields for security
             $this->reset(['current_password', 'password', 'password_confirmation']);
             session()->flash('error', 'An unexpected error occurred while updating your password.');
         }
@@ -261,53 +351,78 @@ final class ProfileEditVoltComponent extends Component
             if (! $user instanceof BaseUser) {
                 throw new RuntimeException('User must be authenticated and an instance of BaseUser model for account deletion');
             }
-            Assert::same($this->user_id, SafeStringCastAction::cast($user->id), 'User ID mismatch detected');
+            Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
+            // Validate deletion password
             Assert::stringNotEmpty($this->delete_password, 'Password cannot be empty for account deletion');
-            $hashedPassword = $user->password;
-            if (null === $hashedPassword) {
-                throw new RuntimeException('Stored password hash is missing');
+            $currentHash = $user->password;
+            if (null === $currentHash) {
+                throw new RuntimeException('User has no password hash set');
             }
             Assert::true(
-                Hash::check($this->delete_password, $hashedPassword),
+                Hash::check($this->delete_password, $currentHash),
                 'Password is incorrect for account deletion',
             );
 
-            $createdAt = $user->created_at;
-
+            // Store user data for logging before deletion
             $userData = [
                 'id' => $user->id,
                 'email' => $user->email,
                 'name' => $user->name,
-                'created_at' => $createdAt instanceof \DateTimeInterface
-                    ? $createdAt->format('Y-m-d H:i:s')
-                    : null,
+                'created_at' => $user->created_at?->toDateTimeString(),
                 'ip_address' => request()->ip(),
                 'user_agent' => request()->userAgent(),
                 'deletion_timestamp' => now()->toDateTimeString(),
             ];
 
-            activity()
-                ->causedBy($user)
-                ->withProperties($userData)
-                ->log('User account deletion initiated');
+            // Log account deletion for audit trail (before deletion)
+            Log::debug('User account deletion initiated', $userData);
 
+            // Logout user before deletion
             Auth::logout();
+
+            // Invalidate session
             request()->session()->invalidate();
             request()->session()->regenerateToken();
 
+            // Delete the user account
             $deleted = $user->delete();
             Assert::true($deleted, 'Failed to delete user account');
 
+            // Log successful deletion
+            Log::debug('User account deleted successfully', $userData);
+
+            // Redirect to home with success message
             return Redirect::to('/')->with('status', 'Your account has been deleted successfully.');
         } catch (ValidationException $e) {
+            // Re-throw validation exceptions to display form errors
+            Log::warning('Account deletion validation failed', [
+                'errors' => $e->errors(),
+                'user_id' => $this->user_id,
+            ]);
             throw $e;
         } catch (InvalidArgumentException $e) {
+            Log::error('Account deletion assertion failed', [
+                'error' => $e->getMessage(),
+                'user_id' => $this->user_id,
+                'trace' => $e->getTraceAsString(),
+            ]);
+
+            // Clear password field for security
             $this->reset('delete_password');
             session()->flash('error', 'Account deletion failed: '.$e->getMessage());
 
             return Redirect::back();
-        } catch (\Exception) {
+        } catch (\Exception $e) {
+            Log::error('Account deletion failed with unexpected error', [
+                'error' => $e->getMessage(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+                'user_id' => $this->user_id,
+                'trace' => $e->getTraceAsString(),
+            ]);
+
+            // Clear password field for security
             $this->reset('delete_password');
             session()->flash('error', 'An unexpected error occurred while deleting your account.');
 
