@@ -187,12 +187,19 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     }
     // use SoftDeletes;
 
+    public $incrementing = false;
+
+    protected $keyType = 'string';
+
     /**
      * The "booted" method of the model.
      */
     protected static function booted(): void
     {
         static::creating(static function (self $model): void {
+            if (empty($model->id)) {
+                $model->id = (string) Str::uuid();
+            }
             if (empty($model->uuid)) {
                 $model->uuid = (string) Str::uuid();
             }
@@ -204,7 +211,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     protected function casts(): array
     {
         return [
-            'id' => 'integer',
+            'id' => 'string',
             'uuid' => 'string',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
