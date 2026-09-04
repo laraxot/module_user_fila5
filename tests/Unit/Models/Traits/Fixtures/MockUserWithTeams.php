@@ -16,6 +16,7 @@ use Modules\Xot\Contracts\UserContract as XotUserContract;
 use Modules\Xot\Models\Traits\RelationX;
 use Spatie\Permission\Contracts\Permission;
 use Spatie\Permission\Contracts\Role;
+use Modules\User\Models\User;
 
 /**
  * Stub model for HasTeams trait unit tests; satisfies PHPStan in-context analysis.

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit\Models\Fixtures;
 
 use Modules\User\Models\BaseUser;
+use Modules\User\Models\User;
 
 /**
  * Concrete BaseUser stub for unit tests (PHPStan-safe, no anonymous classes).

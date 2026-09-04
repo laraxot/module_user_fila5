@@ -10,6 +10,7 @@ use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 uses(TestCase::class);
 

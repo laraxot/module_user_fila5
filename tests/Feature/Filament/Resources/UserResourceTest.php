@@ -19,6 +19,7 @@ use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 uses(TestCase::class);
 

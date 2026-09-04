@@ -9,6 +9,7 @@ use Modules\Xot\Tests\FilamentSchemaCoverage;
 use PHPUnit\Framework\Assert;
 
 use function Safe\glob;
+use Modules\User\Models\User;
 
 uses(TestCase::class)->group('no-user-db');
 

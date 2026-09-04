@@ -23,7 +23,7 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
 
 /**
- * @property int                                                       $id
+ * @property int|string                                                $id
  * @property string                                                    $uuid
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes         $extra
  * @property string                                                    $avatar
@@ -197,6 +197,9 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     protected static function booted(): void
     {
         static::creating(static function (self $model): void {
+            if (empty($model->id)) {
+                $model->id = (string) Str::uuid();
+            }
             if (empty($model->uuid)) {
                 $model->uuid = (string) Str::uuid();
             }

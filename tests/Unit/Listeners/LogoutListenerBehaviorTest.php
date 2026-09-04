@@ -14,6 +14,7 @@ use Modules\User\Models\BaseUser;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Models\Fixtures\TestBaseUser;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 uses(TestCase::class)->group('no-user-db');
 

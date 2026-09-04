@@ -15,6 +15,7 @@ use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
+use Modules\User\Models\User;
 
 uses(TestCase::class);
 

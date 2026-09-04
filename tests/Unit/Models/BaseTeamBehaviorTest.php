@@ -14,6 +14,7 @@ use Modules\User\Tests\Unit\Models\Fixtures\TestBaseUser;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 uses(TestCase::class)->group('no-user-db');
 

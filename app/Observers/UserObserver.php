@@ -7,6 +7,7 @@ namespace Modules\User\Observers;
 use Illuminate\Support\Facades\Log;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Webmozart\Assert\Assert;
 
 /**
@@ -48,7 +49,13 @@ class UserObserver
 
             // Imposta come current team
             $teamId = $personalTeam->id;
-            $user->current_team_id = is_numeric($teamId) ? (int) $teamId : null;
+            if (is_int($teamId)) {
+                $user->current_team_id = $teamId;
+            } elseif (is_string($teamId) && is_numeric($teamId)) {
+                $user->current_team_id = (int) $teamId;
+            } else {
+                $user->current_team_id = null;
+            }
             $user->saveQuietly(); // Evita di triggerare eventi ricorsivi
         } catch (\Throwable $e) {
             // Log dell'errore ma non bloccare la creazione dell'utente

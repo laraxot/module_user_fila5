@@ -56,10 +56,11 @@ final class ChangePasswordHeaderAction extends XotBaseAction
                         ->placeholder(__('user::fields.confirm_password.placeholder'))
                         ->rule(
                             'required',
-                            /**
-                             * @param callable(string): mixed $get
-                             */
-                            static fn (callable $get): bool => (bool) $get('new_password')
+                            static function (callable $get): bool {
+                                $newPassword = $get('new_password');
+                                /** @var string|null $newPassword */
+                                return (bool) $newPassword;
+                            }
                         )
                         ->same('new_password'),
                 ];

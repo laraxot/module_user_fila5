@@ -20,6 +20,7 @@ use PHPUnit\Framework\Assert;
 use function Pest\Laravel\actingAs;
 use function Safe\file_get_contents;
 use function Safe\glob;
+use Modules\User\Models\User;
 
 uses(TestCase::class);
 
