@@ -530,7 +530,7 @@ return [
 
 #### Via Code
 ```php
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 // Create a user
 $user = User::create([

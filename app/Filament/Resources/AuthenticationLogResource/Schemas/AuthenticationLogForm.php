@@ -10,7 +10,7 @@ use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Component as SchemaComponent;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class AuthenticationLogForm extends XotBaseResourceForm

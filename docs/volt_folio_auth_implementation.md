@@ -341,7 +341,7 @@ use function Laravel\Folio\{middleware, name};
 use function Livewire\Volt\{state};
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 middleware(['guest']);
 name('register');

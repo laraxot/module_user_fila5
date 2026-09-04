@@ -47,7 +47,7 @@ SaluteOra utilizza il package `spatie/laravel-queueable-action` per le Actions, 
 namespace Modules\User\Actions\User;
 
 use Spatie\QueueableAction\QueueableAction;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 class DeleteUserAction
 {

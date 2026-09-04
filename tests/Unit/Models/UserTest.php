@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Enums\UserType;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

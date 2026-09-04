@@ -88,14 +88,14 @@ Sostituire `belongsToManyX` con relazioni `belongsToMany` esplicite per cross-da
 
 ### Test 1: Verifica Relazione Base
 ```php
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 $user = User::find('0199690d-481a-7101-ac17-7518b3959314');
 $tenants = $user->tenants; // Dovrebbe funzionare senza errori
 ```
 
 ### Test 2: Verifica Cross-Database Query
 ```php
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\<nome progetto>\Models\Customer;
 $user = User::with('tenants')->find('0199690d-481a-7101-ac17-7518b3959314');
 // Verifica che la query sia corretta
@@ -128,7 +128,7 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 ```bash
 # Test HasTenants trait
 php artisan tinker --execute="
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 \$user = User::find('0199690d-481a-7101-ac17-7518b3959314');
 \$tenants = \$user->tenants; // ✅ Funziona
 echo 'HasTenants works! Count: ' . \$tenants->count();
@@ -136,7 +136,7 @@ echo 'HasTenants works! Count: ' . \$tenants->count();
 
 # Test getTenants method
 php artisan tinker --execute="
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 \$user = User::find('0199690d-481a-7101-ac17-7518b3959314');
 \$tenants = \$user->getTenants(app('filament')->getPanel('<nome progetto>::admin'));
 echo 'getTenants works! Count: ' . count(\$tenants); // ✅ Funziona

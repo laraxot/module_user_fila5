@@ -7,7 +7,7 @@ use Illuminate\Support\Collection;
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Team;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Models\Traits\Fixtures\MockUserWithTeams;
 use PHPUnit\Framework\Assert;

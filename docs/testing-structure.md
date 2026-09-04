@@ -180,7 +180,7 @@ declare(strict_types=1);
 namespace Tests\Unit\Modules\User\Models;
 
 use Tests\TestCase;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 
 class UserTest extends TestCase

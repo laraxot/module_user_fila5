@@ -85,7 +85,7 @@ echo "✅ Backup completato: $(ls -la *backup*)"
 namespace Tests\Migration;
 
 use Tests\TestCase;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Illuminate\Support\Facades\Hash;
 
 class UserBaselineTest extends TestCase
@@ -371,7 +371,7 @@ abstract class UserBaseResource extends XotBaseResource
 
 namespace Modules\User\Filament\Resources;
 
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Filament\Schema\Schema;
 use Filament\Forms\Components\{Wizard, Section, Tabs, Alert};
 use Filament\Tables\Actions\{BulkActionGroup, DeleteBulkAction, Action};
@@ -583,7 +583,7 @@ class UserResource extends UserBaseResource
 
 namespace Modules\User\Filament\Resources;
 
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Filament\Resources\Resource;
 use Filament\Schema\Schema;
 use Filament\Forms\Components\{Section, TextInput, Toggle, QrCode, Placeholder};
@@ -741,7 +741,7 @@ class TwoFactorAuthResource extends Resource
 namespace Modules\User\Filament\Widgets;
 
 use Filament\Widgets\ChartWidget;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 class TwoFactorStatsWidget extends ChartWidget
 {
@@ -1180,7 +1180,7 @@ return new class extends Migration
 namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Illuminate\Support\Facades\Hash;
 
 class MigrateUserDataToFilament4Command extends Command
@@ -1472,7 +1472,7 @@ class UserResourceFilament4Test extends TestCase
 namespace Tests\Performance\User;
 
 use Tests\TestCase;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 class AuthenticationPerformanceTest extends TestCase
 {
@@ -1618,7 +1618,7 @@ echo "🔑 Maintenance key: filament4-deploy"
 namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Illuminate\Support\Facades\{DB, Cache, Hash};
 
 class UserHealthCheckCommand extends Command

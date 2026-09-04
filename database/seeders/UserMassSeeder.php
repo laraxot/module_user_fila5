@@ -21,7 +21,7 @@ use Modules\User\Models\Profile;
 use Modules\User\Models\Role;
 use Modules\User\Models\SocialProvider;
 use Modules\User\Models\Team;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 /**
  * Seeder per creare grandi quantità di dati per il modulo User.

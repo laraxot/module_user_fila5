@@ -10,7 +10,7 @@ use Modules\User\Database\Factories\TeamPermissionFactory;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\TeamUser;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

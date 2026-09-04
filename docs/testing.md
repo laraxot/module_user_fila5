@@ -151,7 +151,7 @@ Base test case for User module tests:
 namespace Modules\User\Tests;
 
 use Modules\Xot\Tests\XotBaseTestCase;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 abstract class UserBaseTestCase extends XotBaseTestCase
 {
@@ -283,7 +283,7 @@ public function test_team_creation()
 namespace Modules\User\Database\Factories;
 
 use Modules\Xot\Database\Factories\XotBaseFactory;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 class UserFactory extends XotBaseFactory
 {

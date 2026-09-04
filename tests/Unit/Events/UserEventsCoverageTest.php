@@ -36,7 +36,7 @@ use Modules\User\Events\TwoFactorAuthenticationEnabled;
 use Modules\User\Events\UserNotAllowed;
 use Modules\User\Events\UserRegistered;
 use Modules\User\Models\SocialiteUser;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

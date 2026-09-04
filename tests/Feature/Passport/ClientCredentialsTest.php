@@ -7,7 +7,7 @@ namespace Modules\User\Tests\Feature\Passport;
 use Laravel\Passport\Client;
 use Laravel\Passport\ClientRepository;
 use Modules\User\Database\Factories\UserFactory;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

@@ -7,7 +7,7 @@ namespace Modules\User\Tests\Feature\Filament\Widgets;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Widgets\LoginWidget;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

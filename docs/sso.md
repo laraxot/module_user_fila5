@@ -227,7 +227,7 @@ declare(strict_types=1);
 namespace Modules\User\Services;
 
 use Aacotroneo\Saml2\Saml2Auth;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\User\Models\SsoProvider;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
@@ -466,7 +466,7 @@ declare(strict_types=1);
 namespace Modules\User\Services;
 
 use Laravel\Socialite\Facades\Socialite;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\User\Models\SsoProvider;
 
 class OidcService
@@ -594,7 +594,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Services;
 
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Illuminate\Support\Facades\DB;
 
 class SsoSessionService

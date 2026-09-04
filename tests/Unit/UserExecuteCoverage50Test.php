@@ -44,7 +44,7 @@ use Modules\User\Models\Role;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamUser;
 use Modules\User\Models\Tenant;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\User\Notifications\Auth\Otp;
 use Modules\User\Notifications\Auth\ResetPassword;
 use Modules\User\Notifications\Auth\VerifyEmail;

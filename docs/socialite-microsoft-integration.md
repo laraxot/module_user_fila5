@@ -428,7 +428,7 @@ return new class extends XotBaseMigration
 
 namespace Modules\User\Services;
 
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Spatie\Permission\Models\Role;
 
 class MicrosoftRoleMappingService
@@ -502,7 +502,7 @@ class MicrosoftRoleMappingService
 namespace Modules\Activity\App\Actions;
 
 use Modules\Activity\App\Actions\ActivityLogger;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 class LogOAuthLoginAction
 {
@@ -608,7 +608,7 @@ Obiettivo: **100% coverage** per OAuth functionality.
 // In Modules/User/tests/Feature/OAuth/MicrosoftAuthenticationTest.php
 
 use Modules\User\Tests\TestCase;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Laravel\Socialite\Facades\Socialite;
 
 uses(TestCase::class);

@@ -36,7 +36,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 use Modules\Xot\Filament\Widgets\XotBaseChartWidget;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 class UserRegistrationTrendChartWidget extends XotBaseChartWidget
 {
@@ -125,7 +125,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 use Modules\Xot\Filament\Widgets\XotBaseChartWidget;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Spatie\Permission\Models\Role;
 
 class UserRoleDistributionChartWidget extends XotBaseChartWidget
@@ -211,7 +211,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 use Modules\Xot\Filament\Widgets\XotBaseChartWidget;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 class UserActivityByWeekdayChartWidget extends XotBaseChartWidget
 {
@@ -547,7 +547,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 use Modules\Xot\Filament\Widgets\XotBaseChartWidget;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 class OptimizedUserStatsChartWidget extends XotBaseChartWidget
 {

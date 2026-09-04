@@ -106,7 +106,7 @@ Establish User as the **central authentication and authorization** module for La
 
 ### Create a New User
 ```php
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 $user = User::create([
     'name' => 'John Doe',
