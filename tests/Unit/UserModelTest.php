@@ -8,7 +8,7 @@ use Carbon\Carbon;
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit\Traits;
 
 use Modules\User\Models\AuthenticationLog;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
 uses(TestCase::class);

@@ -177,7 +177,7 @@ laravel/Themes/One/resources/views/pages/auth/
     use Illuminate\Support\Facades\Auth;
     use Illuminate\Support\Facades\Hash;
     use Illuminate\Auth\Events\Registered;
-    use Modules\Xot\Contracts\UserContract;
+    use Modules\User\Models\User;
     use function Livewire\Volt\{state, rules, mount};
 
     state([
@@ -640,7 +640,7 @@ laravel/Themes/One/resources/views/pages/auth/
     use Illuminate\Support\Facades\Auth;
     use Illuminate\Support\Facades\Hash;
     use Illuminate\Auth\Events\Registered;
-    use Modules\Xot\Contracts\UserContract;
+    use Modules\User\Models\User;
     use function Livewire\Volt\{state, rules, mount};
 
     state([

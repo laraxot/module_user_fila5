@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use Modules\User\Actions\User\DeleteUserAction;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

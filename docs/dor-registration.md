@@ -31,7 +31,7 @@ Il sistema utilizza il pattern "parental" di tighten per gestire i diversi tipi 
 namespace Modules\Patient\Models;
 
 use Tightenco\Parental\HasParent;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 
 class Doctor extends User
 {

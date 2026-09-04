@@ -143,7 +143,7 @@ class UsersChartWidget extends ChartWidget
 namespace Modules\User\Filament\Widgets;
 
 use Filament\Widgets\ChartWidget;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Illuminate\Support\Facades\DB;
 
 class UserTypeRegistrationsChartWidget extends ChartWidget
@@ -511,7 +511,7 @@ namespace Tests\Feature\Widgets;
 
 use Tests\TestCase;
 use Modules\User\Filament\Widgets\UsersChartWidget;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\User\Models\AuthenticationLog;
 
 class UsersChartWidgetTest extends TestCase

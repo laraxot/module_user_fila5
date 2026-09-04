@@ -210,7 +210,7 @@ use BaconQrCode\Renderer\ImageRenderer;
 use BaconQrCode\Renderer\Image\SvgImageBackEnd;
 use BaconQrCode\Renderer\RendererStyle\RendererStyle;
 use BaconQrCode\Writer;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 
 class TwoFactorService
 {
@@ -634,7 +634,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Policies;
 
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\Tenant\Models\Tenant;
 
 class TwoFactorPolicy
@@ -678,7 +678,7 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Feature;
 
 use Tests\TestCase;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\User\Services\TwoFactorService;
 
 class TwoFactorTest extends TestCase

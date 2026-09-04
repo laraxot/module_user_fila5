@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Traits\Fixtures;
 
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\User\Tests\Traits\HasUserTestCase;
 
 final class HasUserTestCaseFixture

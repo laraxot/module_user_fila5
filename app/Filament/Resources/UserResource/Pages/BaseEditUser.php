@@ -13,7 +13,7 @@ use Filament\Actions\DeleteAction;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Filament\Actions\Header\ChangePasswordHeaderAction;
 use Modules\User\Filament\Resources\UserResource;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord as EditRecord;
 use Webmozart\Assert\Assert;
 

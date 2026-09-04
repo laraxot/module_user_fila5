@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Auth\Events\Login;
 use Livewire\Attributes\Validate;

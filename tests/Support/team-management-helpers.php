@@ -9,7 +9,7 @@ use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 
 use function Safe\json_encode;
 

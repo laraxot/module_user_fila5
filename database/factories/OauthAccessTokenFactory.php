@@ -7,7 +7,7 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\OauthAccessToken;
 use Modules\User\Models\OauthClient;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 
 /**
  * OauthAccessToken Factory.

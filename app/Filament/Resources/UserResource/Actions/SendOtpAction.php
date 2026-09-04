@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\Actions;
 
 use Modules\User\Actions\Otp\SendOtpByUserAction;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 
 /**

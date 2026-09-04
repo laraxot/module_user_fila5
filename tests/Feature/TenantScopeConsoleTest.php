@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Artisan;
 use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Database\Factories\UserFactory;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

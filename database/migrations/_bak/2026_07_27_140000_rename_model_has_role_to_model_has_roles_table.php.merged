@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*

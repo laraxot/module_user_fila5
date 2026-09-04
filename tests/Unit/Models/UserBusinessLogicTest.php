@@ -5,7 +5,7 @@ declare(strict_types=1);
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\BaseUser;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

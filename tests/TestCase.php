@@ -28,7 +28,7 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\Tenant;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;

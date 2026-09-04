@@ -6,7 +6,7 @@ namespace Modules\User\Actions\User;
 
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Hashing\Hasher;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
 
 class DeleteUserAction

@@ -237,7 +237,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Modules\User\Models\Tenant;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 
 class CreateTenantUserCommand extends Command
 {

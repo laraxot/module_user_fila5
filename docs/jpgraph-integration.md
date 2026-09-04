@@ -65,7 +65,7 @@ Il servizio `UserChartService` fornisce metodi per la generazione di grafici spe
 
 namespace Modules\User\Services;
 
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\User\Models\Activity;
 use Modules\User\Models\Team;
 use Amenadiel\JpGraph\Graph\Graph;

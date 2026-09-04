@@ -6,7 +6,7 @@ namespace Modules\User\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 
 /**
  * Event fired when a new user is registered.

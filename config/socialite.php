@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 
 // config for DutchCodingCompany/FilamentSocialite
 return [

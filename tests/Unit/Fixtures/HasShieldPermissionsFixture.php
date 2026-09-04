@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit\Fixtures;
 
 use Modules\User\Contracts\HasShieldPermissions;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 
 /**
  * Resource stub per test ShieldUtilsAction senza classi anonime.

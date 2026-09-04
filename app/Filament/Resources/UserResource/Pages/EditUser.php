@@ -12,7 +12,7 @@ namespace Modules\User\Filament\Resources\UserResource\Pages;
 use Filament\Actions\DeleteAction;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Filament\Resources\UserResource;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 use Webmozart\Assert\Assert;
 

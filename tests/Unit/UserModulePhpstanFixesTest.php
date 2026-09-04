@@ -12,7 +12,7 @@ use Modules\User\Events\Login;
 use Modules\User\Events\Registered;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

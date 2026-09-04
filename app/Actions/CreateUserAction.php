@@ -6,7 +6,7 @@ namespace Modules\User\Actions;
 
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
 
 /**

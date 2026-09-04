@@ -8,7 +8,7 @@ use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Illuminate\Support\Facades\Hash;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 /**

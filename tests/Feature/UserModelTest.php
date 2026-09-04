@@ -14,7 +14,7 @@ use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Database\Factories\UserFactory;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 

@@ -67,7 +67,7 @@ Questa differenza è definita nel file `composer.json` di ogni modulo, che mappa
 namespace Modules\User\Actions\User;
 
 use Spatie\QueueableAction\QueueableAction;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 
 class DeleteUserAction
 {
@@ -144,7 +144,7 @@ Questa differenza è definita nel file `composer.json` di ogni modulo, che mappa
 namespace Modules\User\Actions\User;
 
 use Spatie\QueueableAction\QueueableAction;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 
 class DeleteUserAction
 {

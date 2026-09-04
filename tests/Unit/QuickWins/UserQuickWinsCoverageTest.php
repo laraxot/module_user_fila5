@@ -9,7 +9,7 @@ use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Exceptions\ProviderNotConfigured;
 use Modules\User\Facades\FilamentShield;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\QuickWins\Fixtures\FilamentShieldStubFixture;
 use PHPUnit\Framework\Assert;

@@ -6,7 +6,7 @@ namespace Modules\User\Rules;
 
 use Illuminate\Contracts\Validation\ValidationRule;
 use Modules\User\Datas\PasswordData;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 /**

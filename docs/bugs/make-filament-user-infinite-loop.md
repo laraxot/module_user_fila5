@@ -167,7 +167,7 @@ Creare un Observer per gestire automaticamente la creazione del personal team:
 // File: Modules/User/app/Observers/UserObserver.php
 namespace Modules\User\Observers;
 
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\User\Models\Team;
 
 class UserObserver

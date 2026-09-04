@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\actions;
 
 use Illuminate\Support\Facades\Hash;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 

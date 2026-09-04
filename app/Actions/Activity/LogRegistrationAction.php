@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\Activity;
 
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Spatie\QueueableAction\QueueableAction;
 
 class LogRegistrationAction

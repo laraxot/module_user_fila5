@@ -8,7 +8,8 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use Modules\User\Actions\User\DeleteUserAction;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Contracts\UserContract;
+use Modules\User\Models\User;
 
 class DeleteAccount extends Component
 {

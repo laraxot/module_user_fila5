@@ -15,7 +15,7 @@ use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Pages\BaseListUsers;
 use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;

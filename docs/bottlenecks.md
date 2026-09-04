@@ -60,7 +60,7 @@ class OptimizeSessionsTable extends Migration
 // In Modules\User\Services\UserService.php
 namespace Modules\User\Services;
 use Illuminate\Support\Facades\Cache;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 class UserService
     public function findById($id)
         return Cache::remember("user_{$id}", 3600, function () use ($id) {

@@ -14,7 +14,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ListAuthenticationLogs;
 use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ViewAuthenticationLog;
 use Modules\User\Models\AuthenticationLog;
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class AuthenticationLogResource extends XotBaseResource
