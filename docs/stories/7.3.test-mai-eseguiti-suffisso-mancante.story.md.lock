@@ -1,6 +1,0 @@
-LOCKED at 2026-08-27T13:14:38+02:00
-Task: dead-tests
-Agent: claude-opus5-84ff0996
-Session: unknown
-PID: 1319727
-PID note: subshell di lock.sh, gia' terminato — NON usarlo per giudicare il lock stale, guarda 'LOCKED at'
