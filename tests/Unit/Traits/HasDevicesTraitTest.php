@@ -7,6 +7,7 @@ namespace Modules\User\Tests\Unit\Traits;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Modules\User\Models\Device;
 use Modules\User\Tests\TestCase;
+use Modules\User\Models\User;
 
 uses(TestCase::class);
 

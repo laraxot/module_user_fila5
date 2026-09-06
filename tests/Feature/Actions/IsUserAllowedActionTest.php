@@ -6,6 +6,7 @@ namespace Modules\User\Tests\Feature\Actions;
 
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert as PHPUnitAssert;
+use Modules\User\Models\User;
 
 uses(TestCase::class);
 

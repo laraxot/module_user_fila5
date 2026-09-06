@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Auth\User;
 use Illuminate\Notifications\Notifiable;
 use Modules\User\Models\BaseUser;
+use Modules\User\Models\User as DomainUser;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Models\Fixtures\TestBaseUser;
 use PHPUnit\Framework\Assert;
@@ -38,7 +38,7 @@ describe('Base User', function (): void {
 
     test('base user has authentication traits', function (): void {
         $baseUser = new TestBaseUser;
-        Assert::assertInstanceOf(User::class, $baseUser);
+        Assert::assertInstanceOf(DomainUser::class, $baseUser);
         $traits = \class_uses_recursive($baseUser);
 
         Assert::assertContains(Notifiable::class, $traits);

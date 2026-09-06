@@ -78,7 +78,7 @@ class SetCurrentTeamCommand extends Command
         }
 
         try {
-            $user->current_team_id = (string) $team_id;
+            $user->current_team_id = (int) $team_id;
             $user->save();
             $this->info('OK');
         } catch (\Exception $e) {

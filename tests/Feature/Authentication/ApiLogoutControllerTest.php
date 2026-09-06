@@ -11,6 +11,7 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\DeviceUser;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 uses(TestCase::class);
 

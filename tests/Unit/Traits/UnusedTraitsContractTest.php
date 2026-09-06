@@ -12,6 +12,7 @@ use Modules\User\Tests\Unit\Traits\Fixtures\HasRolesTraitFixture;
 use Modules\User\Tests\Unit\Traits\Fixtures\HasUserTestCaseFixture;
 use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesMockableFixture;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 uses(TestCase::class);
 

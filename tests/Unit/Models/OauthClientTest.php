@@ -12,6 +12,7 @@ use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
+use Modules\User\Models\User;
 
 uses(TestCase::class);
 

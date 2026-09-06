@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Feature;
 
 use Modules\User\Tests\TestCase;
+use Modules\User\Models\User;
 
 uses(TestCase::class);
 

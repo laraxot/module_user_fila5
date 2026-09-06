@@ -8,6 +8,7 @@ use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Models\Tenant;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 uses(TestCase::class);
 
