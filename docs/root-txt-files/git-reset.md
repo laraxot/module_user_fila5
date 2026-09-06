@@ -5,7 +5,7 @@ type: reference
 slug: git-reset
 description: 'git submodule add -f $url $path done'
 tags: [migrato-da-txt, user]
-converted_from: git-reset.txt
+converted_from: git_reset.txt
 created: 2026-08-24
 updated: 2026-08-24
 ---

@@ -4,7 +4,7 @@ type: concept
 tags: [phpstan, furious, debate]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "phpstan-furious-debate il grande dibattito furioso: phpstan level 10 - la verità assoluta"
+qmd: "phpstan-furious-debate- il grande dibattito furioso: phpstan level 10 - la verità assoluta"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -183,7 +183,7 @@ Ogni modulo corretto è un traguardo.
 
 - [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
-- [DRY/KISS Principles](../../../docs/architecture/dry-kiss-principles.md)
+- [DRY/KISS Principles](../../../../docs/architecture/dry-kiss-principles.md)
 
 ---
 
