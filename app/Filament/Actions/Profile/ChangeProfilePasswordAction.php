@@ -69,10 +69,11 @@ final class ChangeProfilePasswordAction extends XotBaseAction
                         ->password()
                         ->rule(
                             'required',
-                            /**
-                             * @param callable(string): mixed $get
-                             */
-                            static fn (callable $get): bool => (bool) $get('new_password')
+                            static function (callable $get): bool {
+                                $newPassword = $get('new_password');
+                                /** @var string|null $newPassword */
+                                return (bool) $newPassword;
+                            }
                         )
                         ->same('new_password'),
                 ];

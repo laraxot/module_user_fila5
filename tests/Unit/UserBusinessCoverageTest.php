@@ -6,6 +6,7 @@ namespace Modules\User\Tests\Unit;
 
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Tests\ModuleBusinessCoverage;
+use Modules\User\Models\User;
 
 uses(TestCase::class)->group('no-user-db');
 

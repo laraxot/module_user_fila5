@@ -41,7 +41,7 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUserId($value)
- * @property-read \Modules\Quaeris\Models\User|null $user
+ * @property-read \Modules\Xot\Contracts\UserContract|null $user
  * @mixin \Eloquent
  */
 class OauthToken extends PassportToken

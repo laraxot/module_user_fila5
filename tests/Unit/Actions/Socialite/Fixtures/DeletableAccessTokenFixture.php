@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Actions\Socialite\Fixtures;
 
+use Modules\User\Models\User;
 /**
  * Minimal access-token stub for logout action tests.
  */

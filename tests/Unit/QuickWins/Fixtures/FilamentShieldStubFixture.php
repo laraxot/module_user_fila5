@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\QuickWins\Fixtures;
 
+use Modules\User\Models\User;
 /**
  * Minimal Filament Shield service stub for facade tests.
  */

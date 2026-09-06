@@ -7,6 +7,7 @@ namespace Modules\User\Tests\Unit\Models\Traits;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\Traits\HasTeams;
 use Modules\Xot\Models\Traits\RelationX;
+use Modules\User\Models\User;
 
 /**
  * Modello di supporto per i test del trait HasTeams.

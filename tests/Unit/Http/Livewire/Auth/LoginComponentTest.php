@@ -18,6 +18,7 @@ use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
 use Spatie\Permission\Models\Role;
+use Modules\User\Models\User;
 
 uses(TestCase::class)->group('no-user-db');
 

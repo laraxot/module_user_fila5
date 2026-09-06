@@ -10,6 +10,7 @@ use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 
 use function Safe\json_decode;
+use Modules\User\Models\User;
 
 uses(TestCase::class);
 

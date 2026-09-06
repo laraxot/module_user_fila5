@@ -9,6 +9,7 @@ use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesFixture;
 use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesMockableFixture;
 use Modules\User\Traits\PasswordValidationRules;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 uses(TestCase::class);
 
