@@ -47,6 +47,7 @@ return [
             'period' => '.',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         'privacy_policy_label' => 'J\'ai lu et compris la politique de confidentialité de LaravelPizza.com et j\'accepte le traitement de mes données personnelles tel que décrit dans la politique.',
         'privacy_policy_required' => 'Vous devez accepter la politique de confidentialité pour continuer l\'inscription.',
         'privacy_policy_hint' => 'Avis complet conformément aux articles 13 et 14 du règlement (UE) 2016/679 (RGPD)',
@@ -58,6 +59,8 @@ return [
         'data_processing_hint' => 'Base juridique : Exécution du contrat (art. 6(1)(b) RGPD)',
         'marketing_label' => 'J\'accepte de recevoir des communications marketing et promotionnelles de LaravelPizza.com par email, concernant les événements meetup, nouvelles fonctionnalités et offres spéciales.',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'privacy_policy_label' => 'J\'ai lu et compris la politique de confidentialité de <nome progetto>.com et j\'accepte le traitement de mes données personnelles tel que décrit dans la politique.',
         'privacy_policy_required' => 'Vous devez accepter la politique de confidentialité pour continuer l\'inscription.',
         'privacy_policy_hint' => 'Avis complet conformément aux articles 13 et 14 du règlement (UE) 2016/679 (RGPD)',
@@ -68,7 +71,10 @@ return [
         'data_processing_required' => 'Vous devez accepter le traitement des données personnelles pour continuer l\'inscription.',
         'data_processing_hint' => 'Base juridique : Exécution du contrat (art. 6(1)(b) RGPD)',
         'marketing_label' => 'J\'accepte de recevoir des communications marketing et promotionnelles de <nome progetto>.com par email, concernant les événements meetup, nouvelles fonctionnalités et offres spéciales.',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'marketing_hint' => 'Ce consentement est facultatif et vous pouvez le retirer à tout moment sans conséquences.',
         'cookie_policy_label' => 'J\'accepte l\'utilisation de cookies techniques, analytiques et marketing pour améliorer l\'expérience utilisateur.',
         'cookie_policy_hint' => 'Pour plus d\'informations, veuillez consulter notre politique de cookies.',

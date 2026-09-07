@@ -6,21 +6,28 @@ return [
     'fields' => [
         'email' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'label' => 'Email',
             'placeholder' => 'Enter your email',
             'help' => 'Enter the email address you used to register',
             'description' => 'Email address for login',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'label' => 'Email address',
             'placeholder' => 'name@example.com',
             'helper_text' => 'Email used to register for online services',
             'tooltip' => 'Enter your account email',
             'description' => 'Email field for authentication',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Enter your password',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'help' => 'Enter your account password',
             'description' => 'Password for login',
@@ -50,6 +57,8 @@ return [
         'errors_title' => 'Some errors occurred',
     ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'helper_text' => '',
             'tooltip' => 'Account password',
             'description' => 'Password field for authentication',
@@ -74,5 +83,8 @@ return [
             'icon' => 'showPassword',
         ],
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

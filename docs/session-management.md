@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Gestione delle Sessioni"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Gestione delle Sessioni
 
 ## Panoramica
@@ -91,6 +97,7 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 
 ## Collegamenti a Documentazione Correlata
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Indice del Modulo Utente](./INDEX.md)
 - [Modello BaseUser](./BaseUser.md)
 - [Implementazione delle Pagine di Autenticazione](./AUTH_PAGES_IMPLEMENTATION.md)
@@ -100,6 +107,8 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Documentazione Volt](./VOLT_BLADE_IMPLEMENTATION.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Indice del Modulo Utente](./index.md)
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)
@@ -115,5 +124,9 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Best Practices per il Routing](./routing-best-practices.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Documentazione Volt](./volt-blade-implementation.md)
+<<<<<<< HEAD
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 >>>>>>> 2024e2e7 (.)
+=======
+- [Tema One Documentation](../../Themes/One/docs/README.md) 
+>>>>>>> f589f9b2 (.)

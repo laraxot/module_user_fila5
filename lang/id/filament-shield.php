@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
      * | Table Columns
@@ -12,11 +13,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'column.name' => 'Nama',
     'column.guard_name' => 'Nama Penjaga',
     'column.roles' => 'Peran',
     'column.permissions' => 'Izin',
     'column.updated_at' => 'Dirubah',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -26,11 +30,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'field.name' => 'Nama',
     'field.guard_name' => 'Nama Penjaga',
     'field.permissions' => 'Izin',
     'field.select_all.name' => 'Pilih Semua',
     'field.select_all.message' => 'Aktifkan semua izin yang <span class="text-primary font-medium">Tersedia</span> untuk Peran ini.',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -40,11 +47,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'nav.group' => 'Pelindung',
     'nav.role.label' => 'Peran',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Peran',
     'resource.label.roles' => 'Peran',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -54,11 +64,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'section' => 'Entitas',
     'resources' => 'Sumber Daya',
     'widgets' => 'Widget',
     'pages' => 'Halaman',
     'custom' => 'Izin Kustom',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -87,6 +100,8 @@ return [
     //     'restore_any' => 'Restore Any',
     // ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'forbidden' => 'Kamu tidak punya izin akses',
     'navigation' => [
         'label' => 'Missing Navigation Label',
@@ -101,5 +116,8 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

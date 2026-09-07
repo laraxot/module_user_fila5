@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "PHPStan Compliance - User Module"
 type: concept
@@ -20,15 +23,21 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # PHPStan Compliance - User Module
 
 ## Status: ✅ FULLY COMPLIANT
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Analysis Date:** September 22, 2025
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 **PHPStan Level:** 9 (Maximum)
 **Files Analyzed:** 772
 **Errors Found:** 0

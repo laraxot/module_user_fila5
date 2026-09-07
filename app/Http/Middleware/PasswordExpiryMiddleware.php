@@ -5,10 +5,13 @@ declare(strict_types=1);
 namespace Modules\User\Http\Middleware;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Closure;
 use Filament\Facades\Filament;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -17,13 +20,19 @@ use Illuminate\Support\Facades\Auth;
 class PasswordExpiryMiddleware
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function handle(Request $request, Closure $next): Response|RedirectResponse
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * @param \Closure(Request):((Response|RedirectResponse)) $next
      */
     public function handle(Request $request, \Closure $next): Response|RedirectResponse
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     {
         if ($request->routeIs('password.change') || $request->routeIs('password.update')) {
             return $next($request);
@@ -61,10 +70,14 @@ class PasswordExpiryMiddleware
     {
         $user = Auth::user();
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!$user) {
 =======
         if (! $user) {
 >>>>>>> 2024e2e7 (.)
+=======
+        if (! $user) {
+>>>>>>> f589f9b2 (.)
             return false;
         }
 

@@ -7,18 +7,25 @@ return [
         'name' => 'Token',
         'plural' => 'Tokens',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
         'group' => [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione dei token di accesso',
         ],
+<<<<<<< HEAD
 =======
         'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione dei token di accesso'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'label' => 'token',
         'sort' => 29,
         'icon' => 'user-user-token',
     ],
     'fields' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
         'name' => [
             'label' => 'name',
@@ -64,4 +71,51 @@ return [
     'label' => 'Token',
     'plural_label' => 'Token (Plurale)',
 >>>>>>> 2024e2e7 (.)
+=======
+        'name' => [
+            'label' => 'name',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'create' => [
+            'label' => 'create',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'edit' => [
+            'label' => 'edit',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'delete' => [
+            'label' => 'delete',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'actions' => [
+        'reorderRecords' => [
+            'tooltip' => 'reorderRecords',
+            'icon' => 'reorderRecords',
+        ],
+    ],
+    'label' => 'Token',
+    'plural_label' => 'Token (Plurale)',
+>>>>>>> f589f9b2 (.)
 ];

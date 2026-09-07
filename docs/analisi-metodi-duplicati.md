@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Analisi Metodi Duplicati - Modulo User"
 type: concept
@@ -20,16 +23,23 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Analisi Metodi Duplicati - Modulo User
 
 ## Riferimento Principale
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 📚 **Documento Completo:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
 =======
 📚 **Documento Completo:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
 >>>>>>> 2024e2e7 (.)
+=======
+📚 **Documento Completo:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
+>>>>>>> f589f9b2 (.)
 
 ## Stato del Modulo User
 
@@ -168,10 +178,14 @@ protected function registerObservers(): void
 ## Link Correlati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
 =======
 - 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
+>>>>>>> f589f9b2 (.)
 - 📖 [Modulo Xot - Classi Base](../../xot/docs/analisi-metodi-duplicati.md)
 - 📖 [Architettura User](./core/architecture.md)
 - 📖 [Regole Business Logic](./business-logic-deep-dive.md)

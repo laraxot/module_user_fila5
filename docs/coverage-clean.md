@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Coverage Clean"
 type: concept
@@ -20,6 +23,9 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
   at Modules/User/tests/Feature/AuthComponentsTest.php:16
   1   Modules/User/tests/Feature/AuthComponentsTest.php:16

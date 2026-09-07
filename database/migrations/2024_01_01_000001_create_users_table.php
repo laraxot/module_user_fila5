@@ -4,20 +4,29 @@ declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Illuminate\Support\Facades\Schema;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Support\Facades\Schema;
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
  * Class CreateLiveuserUsersTable.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration {
 =======
 return new class extends XotBaseMigration
 {
 >>>>>>> 2024e2e7 (.)
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> f589f9b2 (.)
     /**
      * Run the migrations.
      */
@@ -41,25 +50,34 @@ return new class extends XotBaseMigration
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (!$this->hasColumn('first_name')) {
 =======
             if (! $this->hasColumn('first_name')) {
 >>>>>>> 2024e2e7 (.)
+=======
+            if (! $this->hasColumn('first_name')) {
+>>>>>>> f589f9b2 (.)
                 $table->string('first_name')->after('name')->nullable();
             } else {
                 $table->string('first_name')->nullable()->change();
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (!$this->hasColumn('last_name')) {
 =======
             if (! $this->hasColumn('last_name')) {
 >>>>>>> 2024e2e7 (.)
+=======
+            if (! $this->hasColumn('last_name')) {
+>>>>>>> f589f9b2 (.)
                 $table->string('last_name')->after('name')->nullable();
             } else {
                 $table->string('last_name')->nullable()->change();
             }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             if (!$this->hasColumn('current_team_id')) {
                 $table->foreignId('current_team_id')->nullable();
@@ -83,6 +101,8 @@ return new class extends XotBaseMigration
 
             if (!$this->hasColumn('password_expires_at')) {
 =======
+=======
+>>>>>>> f589f9b2 (.)
             if (! $this->hasColumn('current_team_id')) {
                 $table->foreignId('current_team_id')->nullable();
             }
@@ -104,7 +124,10 @@ return new class extends XotBaseMigration
             }
 
             if (! $this->hasColumn('password_expires_at')) {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                 $table->timestamp('password_expires_at')->nullable();
             }
             if ($this->hasColumn('password')) {

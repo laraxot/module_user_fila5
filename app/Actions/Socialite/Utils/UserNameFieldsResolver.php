@@ -5,11 +5,14 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite\Utils;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use InvalidArgumentException;
 use ReflectionClass;
 use ReflectionException;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Str;
 use Illuminate\Support\Stringable;
 use Laravel\Socialite\Contracts\User;
@@ -19,6 +22,7 @@ use Laravel\Socialite\Contracts\User;
  */
 final readonly class UserNameFieldsResolver
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     private const NAME_SEARCH = 'before';
 
@@ -30,6 +34,8 @@ final readonly class UserNameFieldsResolver
 
     public  null|string $last_name;
 =======
+=======
+>>>>>>> f589f9b2 (.)
     private const string NAME_SEARCH = 'before';
 
     private const string SURNAME_SEARCH = 'after';
@@ -39,11 +45,15 @@ final readonly class UserNameFieldsResolver
     public ?string $firstName;
 
     public ?string $lastName;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
     public function __construct(User $user)
     {
         $this->name = $this->resolveName($user);
+<<<<<<< HEAD
 <<<<<<< HEAD
         $this->first_name = $this->resolveName($user);
         $this->last_name = $this->resolveSurname($user);
@@ -51,6 +61,10 @@ final readonly class UserNameFieldsResolver
         $this->firstName = $this->resolveName($user);
         $this->lastName = $this->resolveSurname($user);
 >>>>>>> 2024e2e7 (.)
+=======
+        $this->firstName = $this->resolveName($user);
+        $this->lastName = $this->resolveSurname($user);
+>>>>>>> f589f9b2 (.)
     }
 
     public static function make(User $user): self
@@ -69,6 +83,7 @@ final readonly class UserNameFieldsResolver
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @param  string $searchMethod  use self constants (NAME_SEARCH, SURNAME_SEARCH)
      */
@@ -94,6 +109,8 @@ final readonly class UserNameFieldsResolver
         try {
             $reflection = new ReflectionClass($idpUser);
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * @param  string  $searchMethod  use self constants (NAME_SEARCH, SURNAME_SEARCH)
      */
     private function resolveNameFields(User $idpUser, string $searchMethod): string
@@ -168,12 +185,16 @@ final readonly class UserNameFieldsResolver
         $raw = [];
         try {
             $reflection = new \ReflectionClass($idpUser);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             if ($reflection->hasMethod('getRaw')) {
                 $method = $reflection->getMethod('getRaw');
                 $method->setAccessible(true);
                 $rawValue = $method->invoke($idpUser);
                 if (is_array($rawValue)) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                     $raw = $rawValue;
 =======
@@ -181,12 +202,18 @@ final readonly class UserNameFieldsResolver
                         $raw[(string) $key] = $value;
                     }
 >>>>>>> 2024e2e7 (.)
+=======
+                    foreach ($rawValue as $key => $value) {
+                        $raw[(string) $key] = $value;
+                    }
+>>>>>>> f589f9b2 (.)
                 }
             } elseif ($reflection->hasProperty('user')) {
                 $property = $reflection->getProperty('user');
                 $property->setAccessible(true);
                 $userData = $property->getValue($idpUser);
                 if (is_array($userData)) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                     $raw = $userData;
                 }
@@ -242,6 +269,8 @@ final readonly class UserNameFieldsResolver
 
         return $nameSection->toString();
 =======
+=======
+>>>>>>> f589f9b2 (.)
                     foreach ($userData as $key => $value) {
                         $raw[(string) $key] = $value;
                     }
@@ -252,7 +281,10 @@ final readonly class UserNameFieldsResolver
         }
 
         return $raw;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     private function resolveNameFieldByNameAttributeAnalysis(string $nameField, string $searchMethod): Stringable
@@ -262,12 +294,17 @@ final readonly class UserNameFieldsResolver
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!in_array($searchMethod, [self::NAME_SEARCH, self::SURNAME_SEARCH], strict: true)) {
             throw new InvalidArgumentException('Metodo di ricerca non valido');
 =======
         if (! in_array($searchMethod, [self::NAME_SEARCH, self::SURNAME_SEARCH], strict: true)) {
             throw new \InvalidArgumentException('Metodo di ricerca non valido');
 >>>>>>> 2024e2e7 (.)
+=======
+        if (! in_array($searchMethod, [self::NAME_SEARCH, self::SURNAME_SEARCH], strict: true)) {
+            throw new \InvalidArgumentException('Metodo di ricerca non valido');
+>>>>>>> f589f9b2 (.)
         }
 
         return Str::of($nameField)

@@ -9,9 +9,12 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Exception;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Arr;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -19,6 +22,7 @@ class GetDomainAllowListAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Execute the action.
@@ -36,6 +40,8 @@ class GetDomainAllowListAction
 
         throw new Exception('check config filament-socialite.domain_allowlist');
 =======
+=======
+>>>>>>> f589f9b2 (.)
     public function __construct(
         private readonly Arr $arrHelper,
     ) {}
@@ -60,6 +66,9 @@ class GetDomainAllowListAction
         }
 
         return [];
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

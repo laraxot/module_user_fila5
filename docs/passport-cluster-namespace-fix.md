@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Passport Cluster - Namespace Fix
 
 **Data**: 2026-01-08
@@ -239,6 +240,8 @@ find Modules/User/app/Filament/Clusters/Passport/Resources -name "*.php" -type f
 **Metodologia**: DRY + KISS + SOLID + PSR-4 Compliance
 **Status**: 📝 Documented - Ready for Implementation
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: passport-cluster-namespace-fix
@@ -255,4 +258,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-namespace-fix.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

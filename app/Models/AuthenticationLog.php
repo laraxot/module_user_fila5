@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Override;
 use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Model;
@@ -37,6 +38,8 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
  * @property ProfileContract|null $updater
  * @method static AuthenticationLogFactory factory($count = null, $state = [])
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
@@ -62,7 +65,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null      $creator
  * @property ProfileContract|null      $updater
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @method static Builder|AuthenticationLog newModelQuery()
  * @method static Builder|AuthenticationLog newQuery()
  * @method static Builder|AuthenticationLog query()
@@ -81,14 +87,20 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|AuthenticationLog whereUpdatedBy($value)
  * @method static Builder|AuthenticationLog whereUserAgent($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @mixin IdeHelperAuthenticationLog
 =======
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @property ProfileContract|null $deleter
  *
  * @method static \Modules\User\Database\Factories\AuthenticationLogFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 class AuthenticationLog extends BaseModel
@@ -108,6 +120,7 @@ class AuthenticationLog extends BaseModel
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @return array<string, string> */
     #[Override]
     protected function casts(): array
@@ -123,6 +136,8 @@ class AuthenticationLog extends BaseModel
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     // public function __construct(array $attributes = [])
     // {
     // if (! isset($this->connection)) {
@@ -138,17 +153,26 @@ class AuthenticationLog extends BaseModel
     // }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /**
      * @return MorphTo<Model, $this>
      */
 >>>>>>> 2024e2e7 (.)
+=======
+    /**
+     * @return MorphTo<Model, $this>
+     */
+>>>>>>> f589f9b2 (.)
     public function authenticatable(): MorphTo
     {
         return $this->morphTo();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
     /** @return array<string, string> */
     #[\Override]
@@ -162,5 +186,8 @@ class AuthenticationLog extends BaseModel
             'logout_at' => 'datetime',
         ];
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

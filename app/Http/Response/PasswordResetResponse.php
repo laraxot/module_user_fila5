@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Http\Response;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Facades\Filament;
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\RedirectResponse;
@@ -15,6 +16,11 @@ use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Redirector;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Contracts\Support\Responsable;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Routing\Redirector;
+>>>>>>> f589f9b2 (.)
 
 class PasswordResetResponse implements Responsable
 {

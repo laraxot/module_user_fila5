@@ -12,10 +12,14 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\PassportHasApiTokensContract;
 =======
 use Modules\User\Models\BaseUser;
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\User\Models\BaseUser;
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Http\Controllers\XotBaseController;
 use Webmozart\Assert\Assert;
 
@@ -27,6 +31,7 @@ class LoginController extends XotBaseController
     public function __invoke(Request $request): JsonResponse
     {
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+<<<<<<< HEAD
 <<<<<<< HEAD
             Assert::notNull($user = Auth::user(), '[' . __LINE__ . '][' . class_basename($this) . ']');
 
@@ -41,6 +46,11 @@ class LoginController extends XotBaseController
 
             Assert::isInstanceOf($user, BaseUser::class, '['.__LINE__.']['.class_basename($this).']');
 >>>>>>> 2024e2e7 (.)
+=======
+            Assert::notNull($user = Auth::user(), '['.__LINE__.']['.class_basename($this).']');
+
+            Assert::isInstanceOf($user, BaseUser::class, '['.__LINE__.']['.class_basename($this).']');
+>>>>>>> f589f9b2 (.)
 
             $success = [];
             $success['token'] = $user->createToken('MyApp')->accessToken;

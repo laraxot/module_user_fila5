@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Gerarchia delle Classi Base - Modulo User"
 type: concept
@@ -18,7 +21,10 @@ related:
   - "./xotbasepivot-migration.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Gerarchia delle Classi Base - Modulo User
 
 **Data:** 15 Ottobre 2025  
@@ -392,9 +398,12 @@ Quando crei un nuovo modello nel modulo User:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Ultimo aggiornamento:** 15 Ottobre 2025  
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 **Autore:** AI Assistant + Team Laraxot  
 **Versione:** 2.0 - Correzione gerarchia modelli  
 **Status:** ✅ Production Ready

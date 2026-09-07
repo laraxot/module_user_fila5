@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Filosofia e Politica: Implementazione del Cluster Passport"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Filosofia e Politica: Implementazione del Cluster Passport
 
 ## Logica e Business Logic

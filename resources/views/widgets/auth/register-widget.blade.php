@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
@@ -40,6 +41,8 @@ declare(strict_types=1);
     </form>
 </div>
 =======
+=======
+>>>>>>> f589f9b2 (.)
 <div>
     <form wire:submit="save">
         {{ $this->form }}
@@ -56,5 +59,9 @@ declare(strict_types=1);
             </button>
         </div>
     </form>
+<<<<<<< HEAD
 </div>
 >>>>>>> 2024e2e7 (.)
+=======
+</div>
+>>>>>>> f589f9b2 (.)

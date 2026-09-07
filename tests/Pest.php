@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 use Modules\User\Models\Team;
 use Modules\User\Models\Profile;
@@ -69,6 +70,8 @@ function createProfile(array $attributes = []): Profile
     return Profile::factory()->create($attributes);
 }
 =======
+=======
+>>>>>>> f589f9b2 (.)
 /*
  * Bootstrap Pest — modulo User.
  * Helper globali: tests/Support/helpers.php (composer autoload-dev files).
@@ -76,4 +79,7 @@ function createProfile(array $attributes = []): Profile
  */
 
 // Vietato expect()->extend() qui (PHPStan method.internalClass su PestExpectation).
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

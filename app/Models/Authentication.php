@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
@@ -31,6 +32,8 @@ use Modules\User\Database\Factories\AuthenticationFactory;
  * @property Carbon|null $updated_at When the record was last updated
  * @property-read Model|\Eloquent $authenticatable The authenticatable model instance
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
@@ -53,7 +56,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string      $authenticatable_id   The ID of the authenticatable model
  * @property Carbon|null $created_at           When the record was created
  * @property Carbon|null $updated_at           When the record was last updated
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @method static Builder<static>|Authentication newModelQuery()
  * @method static Builder<static>|Authentication newQuery()
@@ -72,6 +78,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Authentication whereAuthenticatableId($value)
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @mixin IdeHelperAuthentication
  * @mixin \Eloquent
  */
@@ -88,6 +95,8 @@ class Authentication extends Model
     }
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property Model|\Eloquent      $authenticatable
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
@@ -107,7 +116,10 @@ class Authentication extends Model
  */
 class Authentication extends BaseModel
 {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * The attributes that are mass assignable.
      *
@@ -127,7 +139,10 @@ class Authentication extends BaseModel
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * @return MorphTo<Model, $this>
      */
     public function authenticatable(): MorphTo
@@ -136,7 +151,10 @@ class Authentication extends BaseModel
     }
 
     /**
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      * The attributes that should be cast.
      *
      * @return array<string, string>
@@ -150,6 +168,7 @@ class Authentication extends BaseModel
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     public function authenticatable(): MorphTo
     {
@@ -157,4 +176,6 @@ class Authentication extends BaseModel
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

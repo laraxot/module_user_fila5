@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # User Module - XotBasePivot Migration
 
 ## 📊 Overview
@@ -463,6 +464,8 @@ protected $fillable = [
 *Effort: 45 minuti*
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: xotbasepivot-migration
@@ -477,4 +480,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/xotbaivot-migration.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

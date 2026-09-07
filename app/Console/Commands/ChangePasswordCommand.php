@@ -5,9 +5,12 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Exception;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Datas\PasswordData;
@@ -15,6 +18,7 @@ use Modules\User\Events\NewPasswordSet;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 use function Laravel\Prompts\password;
 
@@ -26,11 +30,17 @@ class ChangePasswordCommand extends Command
 {
     protected $signature = 'user:change-password {--email= : Email dell\'utente}';
 >>>>>>> 2024e2e7 (.)
+=======
+class ChangePasswordCommand extends Command
+{
+    protected $signature = 'user:change-password {--email= : Email dell\'utente}';
+>>>>>>> f589f9b2 (.)
 
     protected $description = 'Change user password';
 
     public function handle(): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         Assert::string($email = $this->ask('Enter the user email:'));
         try {
@@ -38,6 +48,8 @@ class ChangePasswordCommand extends Command
         } catch (Exception $e) {
             $this->error($e->getMessage());
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $emailInput = $this->option('email') ?? $this->ask('Enter the user email:');
         Assert::string($emailInput);
 
@@ -45,11 +57,15 @@ class ChangePasswordCommand extends Command
 
         if (! filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $this->error('Email non valida: '.$emailInput);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
             return;
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         // Ensure we fetched a persisted user and not a transient instance to avoid accidental insert
         if (!$user->exists()) {
@@ -59,11 +75,16 @@ class ChangePasswordCommand extends Command
             );
             $this->error('User not found or not persisted. Please create the user first (name, email, type, etc.).');
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $user = XotData::make()->findUserByEmail($email);
 
         if (null === $user) {
             $this->error("Utente non trovato per email: {$email}");
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
             return;
         }
@@ -77,6 +98,7 @@ class ChangePasswordCommand extends Command
             return;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         $pwd_data = PasswordData::make();
         $passwordExpiryDateTime = now()->addDays($pwd_data->expires_in);
         /*
@@ -85,11 +107,16 @@ class ChangePasswordCommand extends Command
          * $user->save();
          */
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
         $pwdData = PasswordData::make();
         $passwordExpiryDateTime = now()->addDays($pwdData->expires_in);
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $user = tap($user)->update([
             'password_expires_at' => $passwordExpiryDateTime,
             'is_otp' => false,

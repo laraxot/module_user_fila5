@@ -74,10 +74,14 @@ return [
             ],
             'is_otp' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'label' => 'Autenticazione a Due Fattori (OTP)',
 =======
                 'label' => 'Autenticazione a Due Fattori (OTP]',
 >>>>>>> 2024e2e7 (.)
+=======
+                'label' => 'Autenticazione a Due Fattori (OTP]',
+>>>>>>> f589f9b2 (.)
                 'help' => 'Abilita l\'autenticazione a due fattori per maggiore sicurezza',
             ],
             'password_expires_at' => [
@@ -176,7 +180,10 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'name' => 'Widgets',
         'plural' => 'Widgets',
@@ -225,5 +232,8 @@ return [
         'heading' => 'Log Accessi',
         'label' => 'Numero di accessi eseguiti',
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

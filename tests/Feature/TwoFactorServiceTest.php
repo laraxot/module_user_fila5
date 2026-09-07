@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
 use Modules\User\Models\User;
 use Modules\User\Services\TwoFactorService;
@@ -198,6 +199,8 @@ test('confirm sets confirmed_at timestamp', function (): void {
     expect($this->user->fresh()->two_factor_confirmed_at)->not->toBeNull();
     expect($this->user->fresh()->two_factor_confirmed_at)->toBeInstanceOf(Carbon::class);
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Support\Carbon;
@@ -486,5 +489,8 @@ describe('Two Factor Service', function (): void {
         Assert::assertNotNull($confirmedAt);
         Assert::assertInstanceOf(Carbon::class, Carbon::parse((string) $confirmedAt));
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

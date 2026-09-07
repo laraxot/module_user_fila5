@@ -3,18 +3,24 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(Modules\User\Tests\TestCase::class);
 
 =======
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Mockery\MockInterface;
 >>>>>>> 2024e2e7 (.)
+=======
+use Laravel\Socialite\Contracts\User as SocialiteUserContract;
+use Mockery\MockInterface;
+>>>>>>> f589f9b2 (.)
 use Modules\User\Events\Login;
 use Modules\User\Events\Registered;
 use Modules\User\Events\TeamCreated;
 use Modules\User\Events\TeamMemberAdded;
 use Modules\User\Events\TwoFactorAuthenticationEnabled;
 use Modules\User\Events\UserNotAllowed;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 test('Login event can be instantiated', function () {
@@ -89,6 +95,8 @@ test('UserNotAllowed event can be instantiated', function () {
         expect(true)->toBeTrue(); // Pass if class exists
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
@@ -152,5 +160,8 @@ test('UserNotAllowed event can be instantiated', function () {
     $event = new UserNotAllowed($oauthUser);
 
     Assert::assertInstanceOf(UserNotAllowed::class, $event);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

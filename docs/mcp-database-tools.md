@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # MCP (Management Control Panel) Tools for Database Analysis
 
 ## Overview
 MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the quaeris_survey database used in the Limesurvey integration.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "MCP (Management Control Panel) Tools for Database Analysis"
 type: concept
@@ -28,7 +31,10 @@ related:
 
 ## Overview
 MCP (Model Context Protocol) tools provide enhanced capabilities for database analysis, including access to the survey database used in the Limesurvey integration.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ## Available MCP Tools for Database Work
 
@@ -40,19 +46,27 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
   "command": "node",
   "args": [
 <<<<<<< HEAD
+<<<<<<< HEAD
     "/var/www/_bases/base_techplanner_fila4_mono/bashscripts/mcp/mysql-db-connector.js"
 =======
     "/var/www/_bases/base_techplanner_fila5_mono/bashscripts/mcp/mysql-db-connector.js"
 >>>>>>> 2024e2e7 (.)
+=======
+    "/var/www/_bases/base_techplanner_fila5_mono/bashscripts/mcp/mysql-db-connector.js"
+>>>>>>> f589f9b2 (.)
   ]
 }
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Use Cases for quaeris_survey Database**:
 =======
 **Use Cases for survey Database**:
 >>>>>>> 2024e2e7 (.)
+=======
+**Use Cases for survey Database**:
+>>>>>>> f589f9b2 (.)
 - Query Limesurvey tables directly
 - Analyze survey responses in `lime_survey_{sid}` tables
 - Examine question structures in `lime_questions`
@@ -87,10 +101,14 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 ### Direct Database Queries (using MySQL MCP)
 ```sql
 <<<<<<< HEAD
+<<<<<<< HEAD
 -- List all survey tables in quaeris_survey database
 =======
 -- List all survey tables in app_survey database
 >>>>>>> 2024e2e7 (.)
+=======
+-- List all survey tables in app_survey database
+>>>>>>> f589f9b2 (.)
 SHOW TABLES LIKE 'lime_survey_%';
 
 -- Analyze question structure
@@ -133,19 +151,27 @@ Ensure database connections are properly configured in:
 Location: `~/.cursor/mcp.json`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the quaeris_survey database without additional configuration.
 =======
 Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the app_survey database without additional configuration.
 >>>>>>> 2024e2e7 (.)
+=======
+Current configuration includes MySQL access that automatically uses Laravel's .env credentials, making it ideal for accessing the app_survey database without additional configuration.
+>>>>>>> f589f9b2 (.)
 
 ## Best Practices for Database Analysis
 
 1. **Always verify survey IDs** before querying dynamic tables like `lime_survey_{id}`
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **Use proper connection** (`limesurvey` connection for quaeris_survey database)
 =======
 2. **Use proper connection** (`limesurvey` connection for app_survey database)
 >>>>>>> 2024e2e7 (.)
+=======
+2. **Use proper connection** (`limesurvey` connection for app_survey database)
+>>>>>>> f589f9b2 (.)
 3. **Limit result sets** when exploring large survey response tables
 4. **Check table existence** before querying survey-specific tables
 5. **Respect data privacy** when handling survey responses

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Colli di Bottiglia e Soluzioni - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Colli di Bottiglia e Soluzioni - Modulo User
 
 ## Panoramica
@@ -433,6 +439,7 @@ Implementando queste soluzioni, il modulo User potrà superare i principali coll
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Filament](./filament_best_practices.md)
 - [Best Practices Widget](./best-practices/filament-widgets.md)
 - [Struttura Moduli](../xot/docs/module_structure.md)
@@ -441,6 +448,11 @@ Implementando queste soluzioni, il modulo User potrà superare i principali coll
 - [Best Practices Widget](./best-practices/filament-widgets.md)
 - [Struttura Moduli](../xot/docs/module-structure-2.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Best Practices Filament](./filament-best-practices.md)
+- [Best Practices Widget](./best-practices/filament-widgets.md)
+- [Struttura Moduli](../xot/docs/module-structure-2.md)
+>>>>>>> f589f9b2 (.)
 ## Collegamenti tra versioni di BOTTLENECKS.md
 * [BOTTLENECKS.md](../../../xot/docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../user/docs/bottlenecks.md)
@@ -468,10 +480,14 @@ Implementando queste soluzioni, il modulo User potrà superare i principali coll
 * [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../cms/docs/bottlenecks.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Struttura Moduli](../xot/project_docs/module_structure.md)
 =======
 - [Struttura Moduli](../xot/project_docs/module-structure-2.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Struttura Moduli](../xot/project_docs/module-structure-2.md)
+>>>>>>> f589f9b2 (.)
 * [BOTTLENECKS.md](../../../xot/project_docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../user/project_docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../media/project_docs/bottlenecks.md)

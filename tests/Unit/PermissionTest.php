@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Tests\TestCase;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
@@ -196,6 +197,8 @@ test('permission can be synced with roles', function (): void {
     expect($this->permission->hasRole($role2))->toBeTrue();
     expect($this->permission->hasRole($role3))->toBeTrue();
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Facades\DB;
 use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\RoleFactory;
@@ -452,5 +455,8 @@ test('permission handles null metadata values', function (): void {
 
     Assert::assertNull($permission->created_by);
     Assert::assertNull($permission->updated_by);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

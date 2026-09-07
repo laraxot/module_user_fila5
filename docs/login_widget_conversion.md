@@ -90,6 +90,7 @@ class LoginWidget extends XotBaseWidget
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [WIDGETS_STRUCTURE.md](../widgets_structure.md) — Regole di struttura per i widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse e widget Filament.
 - [login-improvements.md](../../../themes/twentyone/docs/login-improvements.md) — Analisi e miglioramenti della pagina di login nel tema TwentyOne.
@@ -98,3 +99,8 @@ class LoginWidget extends XotBaseWidget
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse e widget Filament.
 - [login-improvements.md](../../../Themes/TwentyOne/docs/login-improvements.md) — Analisi e miglioramenti della pagina di login nel tema TwentyOne.
 >>>>>>> 2024e2e7 (.)
+=======
+- [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md) — Regole di struttura per i widget Filament nel modulo User.
+- [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse e widget Filament.
+- [login-improvements.md](../../../Themes/TwentyOne/docs/login-improvements.md) — Analisi e miglioramenti della pagina di login nel tema TwentyOne.
+>>>>>>> f589f9b2 (.)

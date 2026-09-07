@@ -9,15 +9,21 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Laravel\Socialite\Facades\Socialite;
 // use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Contracts\Events\Dispatcher;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 // use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
 use Laravel\Socialite\Facades\Socialite;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Laravel\Socialite\Two\InvalidStateException;
 use Modules\User\Events\InvalidState;
 use Spatie\QueueableAction\QueueableAction;
@@ -27,11 +33,14 @@ class RetrieveOauthUserAction
     use QueueableAction;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * Execute the action.
      */
     public function execute(string $provider): null|SocialiteUserContract
 =======
+=======
+>>>>>>> f589f9b2 (.)
     public function __construct(
         private readonly Dispatcher $eventDispatcher,
     ) {
@@ -41,12 +50,16 @@ class RetrieveOauthUserAction
      * Execute the action.
      */
     public function execute(string $provider): ?SocialiteUserContract
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     {
         try {
             return Socialite::driver($provider)->user();
 
             // SocialiteProviders\Manager\OAuth2\User
+<<<<<<< HEAD
 <<<<<<< HEAD
         } catch (InvalidStateException $invalidStateException) {
             InvalidState::dispatch($invalidStateException);
@@ -54,18 +67,28 @@ class RetrieveOauthUserAction
         } catch (InvalidStateException $e) {
             $this->handleInvalidStateException($e);
 >>>>>>> 2024e2e7 (.)
+=======
+        } catch (InvalidStateException $e) {
+            $this->handleInvalidStateException($e);
+>>>>>>> f589f9b2 (.)
         }
 
         return null;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
     private function handleInvalidStateException(InvalidStateException $exception): void
     {
         $this->eventDispatcher->dispatch(new InvalidState($exception));
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }
 
 /*

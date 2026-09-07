@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'password_confirm' => [
         'heading' => 'Confirm password',
@@ -107,6 +110,7 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'avatar' => 'Avatar',
         'email' => 'Email',
         'login' => 'Login',
@@ -123,6 +127,8 @@ return [
         'created' => 'Created',
         'expires' => 'Expires',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -213,7 +219,10 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     ],
     'or' => 'Or',
     'cancel' => 'Cancel',
@@ -253,7 +262,10 @@ return [
         'request_another' => 'clicca qui per richiederla di nuovo',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -265,5 +277,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 return [
     'fields' => [
@@ -17,6 +18,8 @@ return [
         ],
     ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'navigation' => [
         'label' => 'Cambia Password',
@@ -70,5 +73,8 @@ return [
         'current_password_wrong' => 'La password attuale non è corretta',
         'error' => 'Si è verificato un errore',
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

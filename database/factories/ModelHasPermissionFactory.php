@@ -6,30 +6,40 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\ModelHasPermission;
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\ModelHasPermission;
 
 /**
  * @extends Factory<ModelHasPermission>
  */
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 class ModelHasPermissionFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @var class-string<Model>
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected $model = ModelHasPermission::class;
 
     /**
      * Define the model's default state.
+<<<<<<< HEAD
 <<<<<<< HEAD
      *
      * @psalm-return array<never, never>
@@ -38,6 +48,11 @@ class ModelHasPermissionFactory extends Factory
     /**
      * @return array<string, mixed>
 >>>>>>> 2024e2e7 (.)
+=======
+     */
+    /**
+     * @return array<string, mixed>
+>>>>>>> f589f9b2 (.)
      */
     public function definition(): array
     {

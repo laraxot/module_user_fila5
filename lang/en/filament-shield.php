@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'column.name' => 'Name',
     'column.guard_name' => 'Guard Name',
@@ -17,10 +20,14 @@ return [
     'field.permissions' => 'Permissions',
     'field.select_all.name' => 'Select All',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'field.select_all.message' => 'Enable all Permissions currently <span class=\"text-primary font-medium\">Enabled</span> for this role',
 =======
     'field.select_all.message' => 'Enable all Permissions currently <span class=\\"text-primary font-medium\\">Enabled</span> for this role',
 >>>>>>> 2024e2e7 (.)
+=======
+    'field.select_all.message' => 'Enable all Permissions currently <span class=\\"text-primary font-medium\\">Enabled</span> for this role',
+>>>>>>> f589f9b2 (.)
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Roles',
     'nav.role.icon' => 'heroicon-o-shield-check',
@@ -47,7 +54,10 @@ return [
         'replicate' => 'Replicate',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -61,5 +71,8 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

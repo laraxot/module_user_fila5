@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "user module code and documentation optimization analysis"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # user module code and documentation optimization analysis
 
 ## comprehensive analysis
@@ -52,10 +58,14 @@ docs/
 ├── user_management/
 │   ├── crud_operations.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 │   ├── profile_management.md
 =======
 │   ├── profile-management-2.md
 >>>>>>> 2024e2e7 (.)
+=======
+│   ├── profile-management-2.md
+>>>>>>> f589f9b2 (.)
 │   ├── role_permissions.md
 │   └── team_management.md
 ├── filament_integration/
@@ -67,12 +77,17 @@ docs/
 │   ├── socialite.md
 │   ├── passport.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 │   ├── spatie_permissions.md
 │   └── two_factor.md
 =======
 │   ├── spatie-permissions-2.md
 │   └── two-factor-2.md
 >>>>>>> 2024e2e7 (.)
+=======
+│   ├── spatie-permissions-2.md
+│   └── two-factor-2.md
+>>>>>>> f589f9b2 (.)
 ├── api/
 │   ├── rest_api.md
 │   ├── graphql_api.md

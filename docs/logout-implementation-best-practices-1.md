@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Best Practices per l'Implementazione del Logout
 
 ## Collegamenti correlati
@@ -241,6 +242,8 @@ $this->redirect(LaravelLocalization::getLocalizedURL($locale, route('home')));
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: logout-implementation-best-practices-1
@@ -257,4 +260,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-best-practices-1.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

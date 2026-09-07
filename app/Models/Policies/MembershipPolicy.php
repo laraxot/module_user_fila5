@@ -23,6 +23,7 @@ class MembershipPolicy extends UserBasePolicy
     public function view(UserContract $user, Membership $membership): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return (
             $user->hasPermissionTo('membership.view') ||
             $user->id === $membership->user_id ||
@@ -33,6 +34,11 @@ class MembershipPolicy extends UserBasePolicy
             || $user->id === $membership->user_id
             || $user->hasRole('super-admin');
 >>>>>>> 2024e2e7 (.)
+=======
+        return $user->hasPermissionTo('membership.view')
+            || $user->id === $membership->user_id
+            || $user->hasRole('super-admin');
+>>>>>>> f589f9b2 (.)
     }
 
     /**

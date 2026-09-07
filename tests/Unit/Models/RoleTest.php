@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\User\Tests\Unit\Models;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -215,6 +216,8 @@ class RoleTest extends TestCase
     }
 }
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Facades\DB;
 use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\TeamFactory;
@@ -381,4 +384,7 @@ test('role can be deleted from database', function (): void {
 
     Assert::assertNull(Role::query()->find($roleId));
 });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

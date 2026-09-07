@@ -127,6 +127,7 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'email' => 'Email',
         'login' => 'Login',
         'name' => 'Nazwa użytkownika',
@@ -144,6 +145,8 @@ return [
     'or' => 'Lub',
     'cancel' => 'Anuluj',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'email' => [
             'label' => 'Email',
             'tooltip' => '',
@@ -236,5 +239,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

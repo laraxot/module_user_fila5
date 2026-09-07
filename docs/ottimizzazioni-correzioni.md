@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # User Module - Ottimizzazioni e Correzioni
 
 ## Panoramica
@@ -665,6 +666,8 @@ Il modulo User è il fondamento di sicurezza dell'applicazione. I file test rimo
 
 **Priorità assoluta:** Ripristinare test coverage e verificare integrità delle funzionalità di autenticazione/autorizzazione.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: ottimizzazioni-correzioni
@@ -681,4 +684,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-correzioni.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

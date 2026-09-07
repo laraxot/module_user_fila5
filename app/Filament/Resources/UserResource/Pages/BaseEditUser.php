@@ -10,6 +10,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use InvalidArgumentException;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
@@ -20,13 +21,18 @@ use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Actions\DeleteAction;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Filament\Actions\Header\ChangePasswordHeaderAction;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord as EditRecord;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Webmozart\Assert\Assert;
 
 /**
@@ -40,12 +46,17 @@ abstract class BaseEditUser extends EditRecord
     protected function mutateFormDataBeforeSave(array $data): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::isArray($data);
         if (!array_key_exists('new_password', $data) || !filled($data['new_password'])) {
 =======
         // PHPStan Level 10: $data is already typed as array, no need for assertion
         if (! array_key_exists('new_password', $data) || ! filled($data['new_password'])) {
 >>>>>>> 2024e2e7 (.)
+=======
+        // PHPStan Level 10: $data is already typed as array, no need for assertion
+        if (! array_key_exists('new_password', $data) || ! filled($data['new_password'])) {
+>>>>>>> f589f9b2 (.)
             return $data;
         }
 
@@ -58,6 +69,7 @@ abstract class BaseEditUser extends EditRecord
 
         // Verifichiamo il tipo e convertiamo in modo sicuro
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!is_string($newPassword)) {
             if (!is_scalar($newPassword)) {
                 throw new InvalidArgumentException('La password deve essere una stringa');
@@ -66,15 +78,24 @@ abstract class BaseEditUser extends EditRecord
             if (! is_scalar($newPassword)) {
                 throw new \InvalidArgumentException('La password deve essere una stringa');
 >>>>>>> 2024e2e7 (.)
+=======
+        if (! is_string($newPassword)) {
+            if (! is_scalar($newPassword)) {
+                throw new \InvalidArgumentException('La password deve essere una stringa');
+>>>>>>> f589f9b2 (.)
             }
             $newPassword = (string) $newPassword;
         }
 
         $this->record->update(['password' => Hash::make($newPassword)]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
         return $data;
     }
 
@@ -82,12 +103,17 @@ abstract class BaseEditUser extends EditRecord
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             DeleteAction::make(),
             ChangePasswordHeaderAction::make('change-password'),
 =======
             'delete' => DeleteAction::make(),
             'change-password' => ChangePasswordHeaderAction::make('change-password'),
 >>>>>>> 2024e2e7 (.)
+=======
+            'delete' => DeleteAction::make(),
+            'change-password' => ChangePasswordHeaderAction::make('change-password'),
+>>>>>>> f589f9b2 (.)
         ];
     }
 }

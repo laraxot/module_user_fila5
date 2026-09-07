@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # TenantFactory Fix - Reasoning
 
 ## Problem
@@ -68,6 +69,8 @@ $tenant = Tenant::factory()->withName('Test Tenant')->create();
 
 **Fix the factory, not the tests.** The factory is generating incorrect data. The model's `HasSlug` trait should handle slug generation automatically.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: tenantfactory
@@ -80,4 +83,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/tenantfactory-fix.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

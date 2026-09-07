@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "ChangePasswordCommand"
 type: concept
@@ -19,7 +22,10 @@ related:
   - "./readme.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # ChangePasswordCommand
 
 ## Panoramica
@@ -387,6 +393,7 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - ✅ **Eventi**: Dispatched NewPasswordSet
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-27*
 
 
@@ -394,4 +401,6 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 

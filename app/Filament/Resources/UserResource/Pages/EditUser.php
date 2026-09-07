@@ -10,6 +10,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use InvalidArgumentException;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
@@ -18,17 +19,23 @@ use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Actions\DeleteAction;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Webmozart\Assert\Assert;
 
 /**
  * Pagina per la modifica degli utenti con particolare gestione della password.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 class EditUser extends EditRecord
 {
@@ -37,10 +44,15 @@ class EditUser extends EditRecord
 class EditUser extends XotBaseEditRecord
 {
 >>>>>>> 2024e2e7 (.)
+=======
+class EditUser extends XotBaseEditRecord
+{
+>>>>>>> f589f9b2 (.)
     protected static string $resource = UserResource::class;
 
     protected function mutateFormDataBeforeSave(array $data): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         Assert::isArray($data);
         if (!array_key_exists('new_password', $data) || !filled($data['new_password'])) {
@@ -48,6 +60,10 @@ class EditUser extends XotBaseEditRecord
         // PHPStan Level 10: $data is already typed as array, no need for assertion
         if (! array_key_exists('new_password', $data) || ! filled($data['new_password'])) {
 >>>>>>> 2024e2e7 (.)
+=======
+        // PHPStan Level 10: $data is already typed as array, no need for assertion
+        if (! array_key_exists('new_password', $data) || ! filled($data['new_password'])) {
+>>>>>>> f589f9b2 (.)
             return $data;
         }
 
@@ -60,6 +76,7 @@ class EditUser extends XotBaseEditRecord
 
         // Verifichiamo il tipo e convertiamo in modo sicuro
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!is_string($newPassword)) {
             if (!is_scalar($newPassword)) {
                 throw new InvalidArgumentException('La password deve essere una stringa');
@@ -68,15 +85,24 @@ class EditUser extends XotBaseEditRecord
             if (! is_scalar($newPassword)) {
                 throw new \InvalidArgumentException('La password deve essere una stringa');
 >>>>>>> 2024e2e7 (.)
+=======
+        if (! is_string($newPassword)) {
+            if (! is_scalar($newPassword)) {
+                throw new \InvalidArgumentException('La password deve essere una stringa');
+>>>>>>> f589f9b2 (.)
             }
             $newPassword = (string) $newPassword;
         }
 
         $this->record->update(['password' => Hash::make($newPassword)]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
         return $data;
     }
 
@@ -84,10 +110,14 @@ class EditUser extends XotBaseEditRecord
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             DeleteAction::make(),
 =======
             'delete' => DeleteAction::make(),
 >>>>>>> 2024e2e7 (.)
+=======
+            'delete' => DeleteAction::make(),
+>>>>>>> f589f9b2 (.)
         ];
     }
 }

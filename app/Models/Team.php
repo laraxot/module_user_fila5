@@ -5,22 +5,29 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Illuminate\Database\Eloquent\Collection;
 use Modules\User\Database\Factories\TeamFactory;
 use Illuminate\Database\Eloquent\Builder;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 /**
  * Class Modules\User\Models\Team.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property string $id
  * @property string $user_id (DC2Type:guid)
@@ -44,6 +51,8 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property int|null $users_count
  * @method static TeamFactory factory($count = null, $state = [])
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property string                          $id
  * @property string                          $user_id                (DC2Type:guid)
  * @property string                          $name
@@ -65,7 +74,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property Collection<int, User>           $users
  * @property int|null                        $users_count
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @method static Builder|Team newModelQuery()
  * @method static Builder|Team newQuery()
  * @method static Builder|Team query()
@@ -80,6 +92,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|Team whereUpdatedBy($value)
  * @method static Builder|Team whereUserId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string|null $code
  * @method static Builder|Team whereCode($value)
  * @property string|null $uuid
@@ -88,6 +101,8 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Team whereOwnerId($value)
  * @mixin IdeHelperTeam
 =======
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @property string|null $code
  *
@@ -122,13 +137,19 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Team whereSettings($value)
  * @method static Builder<static>|Team whereSlug($value)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 class Team extends BaseTeam
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
     // use SoftDeletes;
 
     protected $fillable = [
@@ -161,5 +182,8 @@ class Team extends BaseTeam
             'settings' => 'array',
         ];
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

@@ -8,9 +8,13 @@ declare(strict_types=1);
  * @return RedirectResponse
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;

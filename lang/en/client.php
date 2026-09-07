@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'navigation' => [
         'name' => 'Client',
@@ -20,6 +23,7 @@ return [
     ],
     'fields' => [
         'name' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
             'label' => 'name',
         ],
@@ -47,6 +51,8 @@ return [
         'openFilters' => [
             'label' => 'openFilters',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'label' => 'Name',
             'tooltip' => '',
             'helper_text' => '',
@@ -108,7 +114,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'plural' => [
@@ -117,10 +126,16 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

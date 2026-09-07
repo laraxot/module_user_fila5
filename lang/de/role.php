@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'navigation' => [
         'name' => 'Ruoli',
@@ -22,6 +25,7 @@ return [
         'name' => [
             'label' => 'Nome Ruolo',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => 'Il nome identificativo del ruolo, es. \"Admin\".',
             'placeholder' => 'Nome del ruolo',
         ],
@@ -30,6 +34,8 @@ return [
             'tooltip' => 'Il nome della guardia per questo ruolo, es. \"web\".',
             'placeholder' => 'Nome della guardia',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => 'Il nome identificativo del ruolo, es. \\"Admin\\".',
             'placeholder' => 'Nome del ruolo',
             'helper_text' => '',
@@ -41,51 +47,75 @@ return [
             'placeholder' => 'Nome della guardia',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'permissions' => [
             'label' => 'Permessi',
             'tooltip' => 'Seleziona i permessi associati a questo ruolo.',
             'placeholder' => 'Seleziona permessi',
 <<<<<<< HEAD
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
-        ],
-        'users_count' => [
-            'label' => 'Numero Utenti',
-            'tooltip' => 'Il numero di utenti assegnati a questo ruolo.',
 <<<<<<< HEAD
 =======
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
+        ],
+        'users_count' => [
+            'label' => 'Numero Utenti',
+            'tooltip' => 'Il numero di utenti assegnati a questo ruolo.',
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'tooltip' => 'La data in cui il ruolo è stato creato.',
             'placeholder' => 'Data di creazione',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'tooltip' => 'La data dell\'ultima modifica del ruolo.',
             'placeholder' => 'Ultima modifica',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Una descrizione del ruolo e delle sue funzioni.',
             'placeholder' => 'Descrizione del ruolo',
+<<<<<<< HEAD
 <<<<<<< HEAD
         ],
         'applyFilters' => [
@@ -97,6 +127,8 @@ return [
         'reorderRecords' => [
             'label' => 'reorderRecords',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'helper_text' => '',
             'description' => '',
         ],
@@ -117,7 +149,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'team_id' => [
             'description' => 'team_id',
@@ -125,6 +160,7 @@ return [
             'placeholder' => 'team_id',
             'label' => 'team_id',
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
         'detach' => [
             'label' => 'detach',
@@ -141,6 +177,8 @@ return [
         'attach' => [
             'label' => 'attach',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
         ],
         'detach' => [
@@ -172,7 +210,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'recordId' => [
             'description' => 'recordId',
@@ -180,10 +221,13 @@ return [
             'placeholder' => 'recordId',
             'label' => 'recordId',
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
         'id' => [
             'label' => 'id',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
         ],
         'id' => [
@@ -191,7 +235,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'roles' => [
@@ -256,8 +303,13 @@ return [
         'reports' => 'Report',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 >>>>>>> 2024e2e7 (.)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> f589f9b2 (.)
 ];

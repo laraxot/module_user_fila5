@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Override;
 use Exception;
 use BackedEnum;
@@ -30,6 +31,8 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
@@ -38,7 +41,10 @@ use Illuminate\Support\Str;
 use Livewire\Features\SupportRedirects\Redirector;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Webmozart\Assert\Assert;
 
 /**
@@ -49,6 +55,7 @@ use Webmozart\Assert\Assert;
  * - Determina dinamicamente la risorsa, il modello e l'action da eseguire
  * - Delega la logica di salvataggio a una UpdateAction specifica del modulo
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  * Il widget è completamente generico e riutilizzabile per qualsiasi tipo di utente.
  *
@@ -97,6 +104,8 @@ class EditUserWidget extends XotBaseWidget
 
         $record = $this->getFormModel($userId);
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property string $type
  * @property string $resource
  * @property string $model
@@ -140,12 +149,16 @@ class EditUserWidget extends XotBaseSchemaWidget
 
         $record = $this->getFormModel($userId);
         $this->record = $record;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $data = $this->getFormFill();
 
         $this->form->fill($data);
         $this->form->model($record);
         $this->data = $data;
+<<<<<<< HEAD
 <<<<<<< HEAD
         $this->record = $record;
     }
@@ -183,6 +196,8 @@ class EditUserWidget extends XotBaseSchemaWidget
         return app($this->model);
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     /**
@@ -190,6 +205,7 @@ class EditUserWidget extends XotBaseSchemaWidget
      *
      * @return array<string, mixed>
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
     #[Override]
     public function getFormFill(): array
@@ -221,6 +237,8 @@ class EditUserWidget extends XotBaseSchemaWidget
 
         return array_fill_keys($fields, null);
 =======
+=======
+>>>>>>> f589f9b2 (.)
     public function getFormFill(): array
     {
         $model = $this->record;
@@ -255,7 +273,10 @@ class EditUserWidget extends XotBaseSchemaWidget
         $result = array_fill_keys($fields, null);
 
         return $result;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     /**
@@ -264,11 +285,14 @@ class EditUserWidget extends XotBaseSchemaWidget
      * @return array<int|string, Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
     public function getFormSchema(): array
     {
         return $this->resource::getFormSchemaWidget();
 =======
+=======
+>>>>>>> f589f9b2 (.)
     public function getFormSchema(): array
     {
         $schema = $this->resource::getFormSchemaWidget();
@@ -276,7 +300,10 @@ class EditUserWidget extends XotBaseSchemaWidget
 
         /* @var array<int|string, Component> $result */
         return self::normalizeFormSchema($schema);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     /**
@@ -284,15 +311,19 @@ class EditUserWidget extends XotBaseSchemaWidget
      *
      * @see https://filamentphp.com/docs/3.x/forms/adding-a-form-to-a-livewire-component
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return RedirectResponse|Redirector
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     public function updateUser(): RedirectResponse|Redirector
     {
         $data = $this->form->getState();
         $record = $this->record;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         // Delega l'aggiornamento all'action specifica
@@ -304,13 +335,18 @@ class EditUserWidget extends XotBaseSchemaWidget
         // Aggiorna il form con i nuovi dati
         $this->form->fill($this->getFormFill());
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $actionInstance = app($this->action);
         if (! is_object($actionInstance) || ! method_exists($actionInstance, 'execute')) {
             throw new \RuntimeException(sprintf('Update action [%s] must expose execute().', $this->action));
         }
 
         \call_user_func([$actionInstance, 'execute'], $record, $data);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
         return redirect()->back();
     }
@@ -318,15 +354,19 @@ class EditUserWidget extends XotBaseSchemaWidget
     /**
      * Controlla se l'utente può modificare il record corrente.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return bool
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     public function canEdit(): bool
     {
         $currentUser = Auth::user();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         // L'utente può modificare solo il proprio profilo
         return (
@@ -339,6 +379,8 @@ class EditUserWidget extends XotBaseSchemaWidget
             )
         );
 =======
+=======
+>>>>>>> f589f9b2 (.)
         return $currentUser
             && (($currentUser->id ?? null) !== null
                         && ($this->record->id ?? null) !== null
@@ -406,6 +448,9 @@ class EditUserWidget extends XotBaseSchemaWidget
         }
 
         return $normalized;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 use Illuminate\Support\Collection;
 use Illuminate\Console\Command;
@@ -14,40 +15,57 @@ use Symfony\Component\Console\Input\InputOption;
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Console\Command;
+use Illuminate\Support\Collection;
+>>>>>>> f589f9b2 (.)
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+
+>>>>>>> f589f9b2 (.)
 class AssignTenantCommand extends Command
 {
     /**
      * The name and signature of the console command.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @var string
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected $name = 'user:assign-tenant';
 
     /**
      * The console command description.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @var string
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected $description = 'Assign a tenant to user';
 
     /**
      * Create a new command instance.
+<<<<<<< HEAD
 <<<<<<< HEAD
      *
      * @return void
@@ -56,6 +74,9 @@ class AssignTenantCommand extends Command
 =======
      */
 >>>>>>> 2024e2e7 (.)
+=======
+     */
+>>>>>>> f589f9b2 (.)
 
     /**
      * Execute the console command.
@@ -78,18 +99,24 @@ class AssignTenantCommand extends Command
             required: true,
             scroll: 10,
 <<<<<<< HEAD
+<<<<<<< HEAD
         // validate: function (array $values) {
         //  return ! \in_array(\count($values), [1, 2], false)
         //    ? 'A maximum of two'
         //  : null;
         // }
 =======
+=======
+>>>>>>> f589f9b2 (.)
             // validate: function (array $values) {
             //  return ! \in_array(\count($values), [1, 2], false)
             //    ? 'A maximum of two'
             //  : null;
             // }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         );
 
         $user->tenants()->sync($rows);
@@ -99,6 +126,7 @@ class AssignTenantCommand extends Command
          * $user->assignRole($role);
          * }
          */
+<<<<<<< HEAD
 <<<<<<< HEAD
         $this->info(implode(', ', $rows) . ' assigned to ' . $email);
     }
@@ -113,6 +141,8 @@ class AssignTenantCommand extends Command
         ];
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $this->info(implode(', ', $rows).' assigned to '.$email);
     }
 
@@ -125,5 +155,8 @@ class AssignTenantCommand extends Command
     //     ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
     // }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

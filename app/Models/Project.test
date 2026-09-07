@@ -17,10 +17,14 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     use HasFactory;
 =======
     use \Modules\Xot\Models\Traits\HasXotFactory;
 >>>>>>> 2024e2e7 (.)
+=======
+    use \Modules\Xot\Models\Traits\HasXotFactory;
+>>>>>>> f589f9b2 (.)
 
     protected $fillable = [
         'name',

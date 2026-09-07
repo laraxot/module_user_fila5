@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Case-Insensitive File Conflicts
 
 Nel modulo `User` sono presenti i seguenti file duplicati per sola differenza di maiuscole/minuscole:
@@ -10,6 +11,8 @@ Nel modulo `User` sono presenti i seguenti file duplicati per sola differenza di
 
 Correggere mantenendo una sola variante coerente con le convenzioni del progetto e aggiornare gli eventuali riferimenti.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: cases
@@ -26,4 +29,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/case-conflicts.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

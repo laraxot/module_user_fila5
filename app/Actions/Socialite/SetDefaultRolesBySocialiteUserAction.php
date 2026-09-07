@@ -18,6 +18,7 @@ class SetDefaultRolesBySocialiteUserAction
     use QueueableAction;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private readonly EmailDomainAnalyzer $domainAnalyzer;
 
     private readonly string $defaultUserGuard;
@@ -36,6 +37,8 @@ class SetDefaultRolesBySocialiteUserAction
     {
         $this->domainAnalyzer->setUser($oauthUser);
 =======
+=======
+>>>>>>> f589f9b2 (.)
     public function execute(string $provider, UserContract $userModel, SocialiteUserContract $oauthUser): void
     {
         $domainAnalyzer = app(EmailDomainAnalyzer::class, [
@@ -48,7 +51,10 @@ class SetDefaultRolesBySocialiteUserAction
         $defaultUserGuard = $permissionGuard->getDefaultName($xotData->getUserClass());
 
         $domainAnalyzer->setUser($oauthUser);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
         // Do nothing if users already have some roles
         // bound to them: in this way we can update all
@@ -62,6 +68,7 @@ class SetDefaultRolesBySocialiteUserAction
         // to the user as a specific set of permissions cannot
         // be automatically inferred
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($this->domainAnalyzer->hasUnrecognizedDomain()) {
             return;
         }
@@ -70,6 +77,8 @@ class SetDefaultRolesBySocialiteUserAction
             ? ((array) config(sprintf('services.%s.email_domains.first_party.role_names_search', $this->provider)))
             : ((array) config(sprintf('services.%s.email_domains.client.role_names_search', $this->provider)));
 =======
+=======
+>>>>>>> f589f9b2 (.)
         if ($domainAnalyzer->hasUnrecognizedDomain()) {
             return;
         }
@@ -77,7 +86,10 @@ class SetDefaultRolesBySocialiteUserAction
         $defaultRoleNames = $domainAnalyzer->hasFirstPartyDomain()
             ? ((array) config(sprintf('services.%s.email_domains.first_party.role_names_search', $provider)))
             : ((array) config(sprintf('services.%s.email_domains.client.role_names_search', $provider)));
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
         $rolesToSet = Role::query()
             ->where(static function (Builder $query) use ($defaultRoleNames): void {
@@ -86,10 +98,14 @@ class SetDefaultRolesBySocialiteUserAction
                 }
             })
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->where('guard_name', '=', $this->defaultUserGuard)
 =======
             ->where('guard_name', '=', $defaultUserGuard)
 >>>>>>> 2024e2e7 (.)
+=======
+            ->where('guard_name', '=', $defaultUserGuard)
+>>>>>>> f589f9b2 (.)
             ->get();
 
         // 73     Parameter #1 $roles of method Modules\Xot\Contracts\UserContract::assignRole() expects array, Illuminate\Database\Eloquent\Collection<int, Modules\User\Models\Role> given.

@@ -9,6 +9,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Actions\Header\AttachRoleAction;
 use Modules\Xot\Datas\XotData;
@@ -18,6 +19,10 @@ use Override;
 use Modules\User\Filament\Actions\Header\AttachRoleAction;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\User\Filament\Actions\Header\AttachRoleAction;
+use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+>>>>>>> f589f9b2 (.)
 
 class RolesRelationManager extends XotBaseRelationManager
 {
@@ -30,10 +35,14 @@ class RolesRelationManager extends XotBaseRelationManager
     // {
     // }
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function getFormSchema(): array
     {
         return [
@@ -47,6 +56,7 @@ class RolesRelationManager extends XotBaseRelationManager
      * @return array<string, Column>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
     public function getTableColumns(): array
     {
@@ -55,6 +65,8 @@ class RolesRelationManager extends XotBaseRelationManager
             TextColumn::make('name'),
             TextColumn::make('team_id'),
 =======
+=======
+>>>>>>> f589f9b2 (.)
     #[\Override]
     public function getTableColumns(): array
     {
@@ -62,13 +74,17 @@ class RolesRelationManager extends XotBaseRelationManager
             'id' => TextColumn::make('id'),
             'name' => TextColumn::make('name'),
             'team_id' => TextColumn::make('team_id'),
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ];
     }
 
     /**
      * @return array<string, Action>
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
     #[Override]
     public function getTableHeaderActions(): array
@@ -82,6 +98,8 @@ class RolesRelationManager extends XotBaseRelationManager
 
         ];
 =======
+=======
+>>>>>>> f589f9b2 (.)
     #[\Override]
     public function getTableHeaderActions(): array
     {
@@ -94,6 +112,9 @@ class RolesRelationManager extends XotBaseRelationManager
                 'attach' => AttachRoleAction::make(),
             ]
         );
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

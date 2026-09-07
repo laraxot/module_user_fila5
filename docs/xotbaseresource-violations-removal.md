@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Rimozione Proprietà/Metodi Vietati da XotBaseResource - [DATE]"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Rimozione Proprietà/Metodi Vietati da XotBaseResource - [DATE]
 
 **Status**: ✅ Completato  
@@ -60,10 +66,14 @@ related:
    - ❌ Rimosso: `protected static ?string $recordTitleAttribute = 'name'`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Modulo Quaeris
 =======
 ### Modulo ExternalProject
 >>>>>>> 2024e2e7 (.)
+=======
+### Modulo ExternalProject
+>>>>>>> f589f9b2 (.)
 
 6. **ContactResource**
    - ❌ Rimosso: `protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-user-circle'`

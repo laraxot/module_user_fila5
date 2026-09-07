@@ -11,18 +11,24 @@ return [
     'two_factor' => [
         'heading' => 'Authentification à deux facteurs',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'description' => "Veuillez confirmer l'accès à votre compte en saisissant le code d'authentification fourni par votre application d'authentification.",
         'code_placeholder' => 'XXX-XXX',
         'recovery' => [
             'heading' => 'Authentification à deux facteurs',
             'description' => "Veuillez confirmer l'accès à votre compte en entrant l'un de vos codes de récupération d'urgence.",
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'description' => 'Veuillez confirmer l\'accès à votre compte en saisissant le code d\'authentification fourni par votre application d\'authentification.',
         'code_placeholder' => 'XXX-XXX',
         'recovery' => [
             'heading' => 'Authentification à deux facteurs',
             'description' => 'Veuillez confirmer l\'accès à votre compte en entrant l\'un de vos codes de récupération d\'urgence.',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'recovery_code_placeholder' => 'abcdef-98765',
         'recovery_code_text' => 'Appareil perdu ?',
@@ -53,10 +59,14 @@ return [
         '2fa' => [
             'title' => 'Authentification à deux facteurs',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => "Gérez l'authentification à deux facteurs pour votre compte (recommandé).",
 =======
             'description' => 'Gérez l\'authentification à deux facteurs pour votre compte (recommandé).',
 >>>>>>> 2024e2e7 (.)
+=======
+            'description' => 'Gérez l\'authentification à deux facteurs pour votre compte (recommandé).',
+>>>>>>> f589f9b2 (.)
             'actions' => [
                 'enable' => 'Activer',
                 'regenerate_codes' => 'Régénérer les codes de récupération',
@@ -65,6 +75,7 @@ return [
                 'cancel_setup' => 'Annuler la configuration',
             ],
             'setup_key' => 'Clé de configuration',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'must_enable' => "Vous devez activer l'authentification à deux facteurs pour utiliser cette application.",
             'not_enabled' => [
@@ -84,6 +95,8 @@ return [
             'disabling' => [
                 'notify' => "L'authentification à deux facteurs a été désactivée.",
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'must_enable' => 'Vous devez activer l\'authentification à deux facteurs pour utiliser cette application.',
             'not_enabled' => [
                 'title' => 'Vous n\'avez pas activé l\'authentification à deux facteurs.',
@@ -101,13 +114,17 @@ return [
             ],
             'disabling' => [
                 'notify' => 'L\'authentification à deux facteurs a été désactivée.',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             ],
             'regenerate_codes' => [
                 'notify' => 'De nouveaux codes de récupération ont été générés.',
             ],
             'confirmation' => [
                 'success_notification' => 'Code vérifié. Authentification à deux facteurs activée.',
+<<<<<<< HEAD
 <<<<<<< HEAD
                 'invalid_code' => "Le code que vous avez saisi n'est pas valide.",
             ],
@@ -119,6 +136,8 @@ return [
                 'notify' => 'Jeton créé avec succès !',
                 'message' => "Votre jeton ne sera visile qu'une seule fois après sa création. Si vous perdez votre rejetez, vous devrez le supprimer puis en créer un nouveau.",
 =======
+=======
+>>>>>>> f589f9b2 (.)
                 'invalid_code' => 'Le code que vous avez saisi n\'est pas valide.',
             ],
         ],
@@ -128,7 +147,10 @@ return [
             'create' => [
                 'notify' => 'Jeton créé avec succès !',
                 'message' => 'Votre jeton ne sera visile qu\'une seule fois après sa création. Si vous perdez votre rejetez, vous devrez le supprimer puis en créer un nouveau.',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                 'submit' => [
                     'label' => 'Créer',
                 ],
@@ -138,10 +160,14 @@ return [
             ],
             'copied' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'label' => "J'ai copié mon jeton",
 =======
                 'label' => 'J\'ai copié mon jeton',
 >>>>>>> 2024e2e7 (.)
+=======
+                'label' => 'J\'ai copié mon jeton',
+>>>>>>> f589f9b2 (.)
             ],
         ],
     ],
@@ -150,6 +176,7 @@ return [
         'tooltip' => 'Copié !',
     ],
     'fields' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
         'avatar' => 'Avatar',
         'email' => 'E-mail',
@@ -171,6 +198,8 @@ return [
     'cancel' => 'Annuler',
     // //
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -264,7 +293,10 @@ return [
     ],
     'or' => 'Ou',
     'cancel' => 'Annuler',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'login' => [
         'username_or_email' => 'Identifiant ou E-mail',
         'forgot_password_link' => 'Mot de passe oublié ?',
@@ -272,16 +304,22 @@ return [
     ],
     'registration' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'title' => "S'inscrire",
         'heading' => 'Créer un nouveau compte',
         'submit' => [
             'label' => "S'inscrire",
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'title' => 'S\'inscrire',
         'heading' => 'Créer un nouveau compte',
         'submit' => [
             'label' => 'S\'inscrire',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'notification_unique' => 'Un compte avec cet email existe déjà. Veuillez vous connecter.',
     ],
@@ -298,14 +336,19 @@ return [
     'verification' => [
         'title' => 'Vérifier les courriels',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'heading' => "Vérification de l'e-mail requise",
 =======
         'heading' => 'Vérification de l\'e-mail requise',
 >>>>>>> 2024e2e7 (.)
+=======
+        'heading' => 'Vérification de l\'e-mail requise',
+>>>>>>> f589f9b2 (.)
         'submit' => [
             'label' => 'Déconnexion',
         ],
         'notification_success' => 'Vérifiez votre boîte de réception pour les instructions !',
+<<<<<<< HEAD
 <<<<<<< HEAD
         'notification_resend' => "L'e-mail de vérification a été renvoyé.",
         'before_proceeding' => 'Avant de continuer, veuillez vérifier votre e-mail pour un lien de vérification.',
@@ -313,6 +356,8 @@ return [
         'request_another' => 'Cliquez ici pour en demander un autre.',
     ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'notification_resend' => 'L\'e-mail de vérification a été renvoyé.',
         'before_proceeding' => 'Avant de continuer, veuillez vérifier votre e-mail pour un lien de vérification.',
         'not_receive' => 'Si vous n\'avez pas reçu l\'e-mail,',
@@ -329,5 +374,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

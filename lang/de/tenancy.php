@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 return [
     'navigation' => [
@@ -20,6 +21,8 @@ return [
         ],
     ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'navigation' => [
         'register' => 'Shop registrieren',
@@ -52,5 +55,8 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

@@ -1,10 +1,13 @@
 # Changelog
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 =======
+=======
+>>>>>>> f589f9b2 (.)
 Tutte le modifiche notevoli a questo modulo saranno documentate in questo file.
 
 Il formato è basato su [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -45,4 +48,7 @@ e questo progetto aderisce al [Semantic Versioning](https://semver.org/spec/v2.0
 - Widget per il login e la registrazione
 - Gestione delle autenticazioni
 - Documentazione base del modulo
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

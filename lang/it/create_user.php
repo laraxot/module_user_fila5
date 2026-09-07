@@ -7,6 +7,7 @@ return [
         'name' => [
             'label' => 'name',
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
         'email' => [
             'label' => 'email',
@@ -14,6 +15,8 @@ return [
         'password' => [
             'label' => 'password',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -29,7 +32,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'actions' => [
@@ -42,9 +48,12 @@ return [
         'cancel' => [
             'label' => 'cancel',
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
     ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'icon' => 'cancel',
         ],
         'logout' => [
@@ -64,5 +73,8 @@ return [
     ],
     'label' => 'Create User',
     'plural_label' => 'Create User (Plurale)',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

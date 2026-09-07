@@ -26,9 +26,14 @@ abstract class TeamEvent
          */
         public TeamContract $teamContract,
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> 2024e2e7 (.)
+=======
+    ) {
+    }
+>>>>>>> f589f9b2 (.)
 }

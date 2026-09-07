@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Risoluzione Conflitti Traduzioni Tema Two - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Risoluzione Conflitti Traduzioni Tema Two - Modulo User
 
 ## Data: [DATE]
@@ -418,18 +424,24 @@ php artisan lang:missing --locale=it,en,de
 ### Collegamenti Interni
 - [User States](user_states.mdc)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Moderation Strategy](user_moderation_strategy.md)
 - [Filament Best Practices](filament_best_practices.md)
 
 ### Collegamenti Esterni
 - [Translation Standards](../../../project_docs/translation-standards.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Moderation Strategy](user-moderation-strategy-3.md)
 - [Filament Best Practices](filament_best_practices.md)
 
 ### Collegamenti Esterni
 - [Translation Standards](../../../../docs/project/translation-standards.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 - [Theme Documentation](../../../themes/two/project_docs/readme.md)
 
 ## Note per Sviluppatori

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ==============================================
 # LARAXOT MODULE USER - .GITIGNORE
 # ==============================================
@@ -33,6 +34,8 @@ cache/*
 # CACHE & TEMPORARY FILES
 # ==============================================
 =======
+=======
+>>>>>>> f589f9b2 (.)
 # Auto-generated forbidden paths — do not edit manually
 # Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
 
@@ -69,7 +72,10 @@ cache/*
 docs/cache/
 docs/phpstan/
 # --- Cache & temporary ---
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 *.cache
 *.lock
 *.phar
@@ -83,6 +89,7 @@ docs/phpstan/
 v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 # ==============================================
@@ -100,6 +107,8 @@ lerna-debug.log*
 # ==============================================
 bootstrap/compiled.php
 =======
+=======
+>>>>>>> f589f9b2 (.)
 # --- Logs ---
 *.log
 error_log
@@ -107,13 +116,17 @@ npm-debug.log*
 yarn-error.log*
 lerna-debug.log*
 # --- Laravel runtime ---
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 app/storage/
 public/storage
 public/hot
 public_html/storage
 public_html/hot
 storage/*.key
+<<<<<<< HEAD
 <<<<<<< HEAD
 .env
 .env.*
@@ -123,6 +136,8 @@ storage/*.key
 # ENVIRONMENT & CONFIGURATION
 # ==============================================
 =======
+=======
+>>>>>>> f589f9b2 (.)
 storage/framework/cache/
 storage/framework/sessions/
 storage/framework/views/
@@ -130,12 +145,16 @@ storage/framework/views/
 .env.*
 !.env.example
 # --- Environment & IDE ---
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 Homestead.yaml
 Homestead.json
 /.vagrant
 /.idea
 .phpintel
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 # ==============================================
@@ -149,6 +168,8 @@ Homestead.json
 # SYSTEM FILES
 # ==============================================
 =======
+=======
+>>>>>>> f589f9b2 (.)
 .phpstorm.meta.php
 .windsurf/
 .cursor/
@@ -164,7 +185,10 @@ Homestead.json
 *.orig
 *.rej
 # --- System files ---
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 .DS_Store
 .DS_Store?
 ._*
@@ -172,6 +196,7 @@ Homestead.json
 .Trashes
 ehthumbs.db
 Thumbs.db
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 # ==============================================
@@ -181,11 +206,16 @@ Thumbs.db
 agentdb.rvf
 # --- Backup / old files ---
 >>>>>>> 2024e2e7 (.)
+=======
+agentdb.rvf
+# --- Backup / old files ---
+>>>>>>> f589f9b2 (.)
 *.old
 *.old1
 *.old2
 *.backup
 *.backup.*
+<<<<<<< HEAD
 <<<<<<< HEAD
 *.bak
 *.bakcup
@@ -244,6 +274,8 @@ user_test_data.csv
 laravel
 public_html
 =======
+=======
+>>>>>>> f589f9b2 (.)
 *.backup-*
 *.backup_*
 *.bak
@@ -290,4 +322,7 @@ resources/views/node_modules
 phpinsights.php
 rector.php
 tests/Unit/graphify-out/
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

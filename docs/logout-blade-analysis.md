@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Analisi del File logout.blade.php
 
 ## Collegamenti correlati
@@ -442,6 +443,8 @@ La versione migliorata proposta risolve tutti i problemi identificati e offre un
 - [Documentazione Livewire](https://livewire.laravel.com/docs)
 - [Documentazione Filament](https://filamentphp.com/docs)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: logout-blade-analysis
@@ -458,4 +461,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-analysis.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

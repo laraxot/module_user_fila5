@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
@@ -19,6 +20,8 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits\RelationX;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -27,11 +30,15 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Spatie\Permission\Models\Permission as SpatiePermission;
 use Webmozart\Assert\Assert;
 
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
  * Class Permission.
  *
@@ -68,6 +75,8 @@ use Webmozart\Assert\Assert;
  * @mixin IdeHelperPermission
  * @method static PermissionFactory factory($count = null, $state = [])
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property int                         $id
  * @property string                      $name
  * @property string                      $guard_name
@@ -111,11 +120,15 @@ use Webmozart\Assert\Assert;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission team($teams, bool $without = false)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission withoutTeam($teams)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 class Permission extends SpatiePermission
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     use HasFactory;
     use RelationX;
@@ -151,6 +164,8 @@ class Permission extends SpatiePermission
     }
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
     use HasXotFactory;
 
     use RelationX;
@@ -158,7 +173,10 @@ class Permission extends SpatiePermission
 
     protected $connection = 'user';
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public function getTable(): string
     {
         Assert::string($table = config('permission.table_names.permissions'));
@@ -166,6 +184,7 @@ class Permission extends SpatiePermission
         return $table;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * The roles associated with the permission.
@@ -196,6 +215,8 @@ class Permission extends SpatiePermission
         return app(GetFactoryAction::class)->execute(static::class);
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /** @var list<string> */
     protected $fillable = [
         'name',
@@ -205,5 +226,8 @@ class Permission extends SpatiePermission
         'created_by',
         'updated_by',
     ];
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

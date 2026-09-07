@@ -5,18 +5,24 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Schemas\Components\Component;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\TeamUser;
 use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\TeamUser;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 /**
  * Class TeamUserResource.
@@ -27,6 +33,9 @@ final class TeamUserResource extends XotBaseResource
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
      * @return array<string, Component>
      */
     #[\Override]
@@ -63,6 +72,7 @@ final class TeamUserResource extends XotBaseResource
     /**
      * Configure the model query.
      */
+<<<<<<< HEAD
 =======
      * Configure the model query.
      *
@@ -75,6 +85,8 @@ final class TeamUserResource extends XotBaseResource
      */
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['team', 'user']);

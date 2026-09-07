@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Correzioni PHPStan nel Modulo User"
 type: concept
@@ -19,7 +22,10 @@ related:
   - "./phpstanes.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Correzioni PHPStan nel Modulo User
 
 ## Team.php
@@ -59,15 +65,21 @@ Il modello `Team` accede direttamente a proprietà che potrebbero non essere dis
 - [Interfacce e Contratti](/docs/modules/xot/contracts.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Collegamenti tra versioni di phpstan_fixes.md
 * [phpstan_fixes.md](../../../xot/docs/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../user/docs/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../user/docs/fixes/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../activity/docs/phpstan_fixes.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ## Collegamenti tra versioni di phpstan-fixes-8.md
 * [phpstan-fixes-8.md](../../../xot/docs/phpstan-fixes-8.md)
 * [phpstan-fixes-8.md](../../../user/docs/phpstan-fixes-8.md)
 * [phpstan-fixes-8.md](../../../user/docs/fixes/phpstan-fixes-8.md)
 * [phpstan-fixes-8.md](../../../activity/docs/phpstan-fixes-8.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

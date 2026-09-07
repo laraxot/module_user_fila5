@@ -4,11 +4,14 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'role' => 'Ruolo',
     'active_users' => 'Utenti attivi',
     'created_from' => 'creati dal',
     'created_until' => 'creati al',
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Filtro',
         'plural_label' => 'Filtri',
@@ -238,5 +241,8 @@ return [
             'placeholder' => 'Cerca...',
         ],
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

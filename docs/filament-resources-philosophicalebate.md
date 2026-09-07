@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Filament Resources: Furious Philosophical Debate"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Filament Resources: Furious Philosophical Debate
 
 ## Data: [DATE]
@@ -235,8 +241,12 @@ vs
 
 - [Filament Resources Coverage Analysis](./filament-resources-coverage-analysis.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filosofia Modulo User](./filosofia_modulo_user.md)
 =======
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Filosofia Modulo User](./filosofia-modulo-user.md)
+>>>>>>> f589f9b2 (.)
 - [Filament Best Practices](./filament-best-practices.md)

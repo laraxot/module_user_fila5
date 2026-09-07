@@ -3,21 +3,28 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\User\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 use Illuminate\Validation\Rules\Password;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Validation\Rules\Password;
 use Modules\User\Database\Factories\SocialiteUserFactory;
 use Modules\User\Database\Factories\UserFactory;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Datas\PasswordData;
 use Modules\User\Events\AddingTeam;
 use Modules\User\Events\Login;
 use Modules\User\Events\Registered;
 use Modules\User\Events\SocialiteUserConnected;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 class UserModulePhpstanFixesTest extends TestCase
@@ -169,6 +176,8 @@ class UserModulePhpstanFixesTest extends TestCase
     }
 }
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
@@ -177,7 +186,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 it('password data can be instantiated', function (): void {
+<<<<<<< HEAD
     $passwordData = new PasswordData();
+=======
+    $passwordData = new PasswordData;
+>>>>>>> f589f9b2 (.)
 
     Assert::assertInstanceOf(PasswordData::class, $passwordData);
     Assert::assertSame(5, $passwordData->otp_expiration_minutes);
@@ -255,7 +268,11 @@ it('password data get helper text works', function (): void {
 });
 
 it('password data get form components returns array', function (): void {
+<<<<<<< HEAD
     $passwordData = new PasswordData();
+=======
+    $passwordData = new PasswordData;
+>>>>>>> f589f9b2 (.)
 
     // Smoke tests: methods should be callable without throwing.
     $passwordData->getPasswordFormComponent('password');
@@ -317,12 +334,21 @@ it('password data static make method exists', function (): void {
 });
 
 it('password data get validation messages method exists', function (): void {
+<<<<<<< HEAD
     $passwordData = new PasswordData();
+=======
+    $passwordData = new PasswordData;
+>>>>>>> f589f9b2 (.)
 
     $passwordData->getValidationMessages();
 });
 
 it('password data get form schema method exists', function (): void {
+<<<<<<< HEAD
     PasswordData::make()->getFormSchema();
 });
 >>>>>>> 2024e2e7 (.)
+=======
+    PasswordData::getFormSchema();
+});
+>>>>>>> f589f9b2 (.)

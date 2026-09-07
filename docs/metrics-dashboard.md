@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # User Module Metrics Dashboard
 
 ## Overview
@@ -144,6 +145,8 @@ gantt
 3. Develop user analytics
 4. Enhance audit logging
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: metrics-dashboard
@@ -160,4 +163,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/metrics-dashboard.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

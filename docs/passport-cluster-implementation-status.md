@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Passport Cluster - Implementation Status
 
 **Data**: 2026-01-08
@@ -176,6 +177,8 @@ cd laravel
 **Filosofia**: DRY + KISS + SOLID + Robust + Laraxot
 **Status**: ✅ COMPLETED - Quality checks passed (PHPStan Level 10: 0 errors)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: passport-cluster-implementation-status
@@ -192,4 +195,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-implementation-status.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

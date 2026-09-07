@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # payment
 
 <!-- Contenuto migrato da _docs/payment.txt -->
 
 https://bunhere.medium.com/whats-a-laravel-saas-boilerplate-bd05fe616433
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: payment
@@ -21,4 +24,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/payment.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

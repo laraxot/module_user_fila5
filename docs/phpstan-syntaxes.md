@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "PHPStan Syntax Fixes - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # PHPStan Syntax Fixes - Modulo User
 
 **Versione PHPStan**: 1.12.x  
@@ -165,10 +171,14 @@ use App\Models\User;
 ## 🔗 Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Generale PHPStan](../../../project_docs/quality/phpstan-analysis.md)
 =======
 - [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
+>>>>>>> f589f9b2 (.)
 - [PSR-12 Extended Coding Style](https://www.php-fig.org/psr/psr-12/)
 - [CLAUDE.md - Quality Guidelines](../../../claude.md)
 

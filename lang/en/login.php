@@ -11,9 +11,13 @@ return [
             'description' => 'email',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'password' => [
             'label' => 'Password',
@@ -22,9 +26,13 @@ return [
             'description' => 'password',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'remember' => [
             'label' => 'Remember me',
@@ -33,49 +41,73 @@ return [
             'description' => 'remember',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'name' => [
             'label' => 'Full name',
             'placeholder' => 'Enter your full name',
             'help' => 'Your complete name for registration',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'password_confirmation' => [
             'label' => 'Confirm password',
             'placeholder' => 'Repeat your password',
             'help' => 'Repeat the password for confirmation',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'actions' => [
         'login' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'label' => 'Sign in',
 =======
             'label' => 'Login',
 >>>>>>> 2024e2e7 (.)
+=======
+            'label' => 'Login',
+>>>>>>> f589f9b2 (.)
             'success' => 'Successfully logged in',
             'error' => 'Invalid credentials',
         ],
         'register' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'label' => 'Sign up',
 =======
             'label' => 'Register',
 >>>>>>> 2024e2e7 (.)
+=======
+            'label' => 'Register',
+>>>>>>> f589f9b2 (.)
             'success' => 'Registration completed successfully',
             'error' => 'Unable to complete registration',
         ],
@@ -90,7 +122,10 @@ return [
             'error' => 'Unable to reset password',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'showPassword' => [
             'label' => 'showPassword',
             'icon' => 'showPassword',
@@ -101,7 +136,10 @@ return [
             'icon' => 'hidePassword',
             'tooltip' => 'hidePassword',
         ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     ],
     'messages' => [
         'logout_success' => 'Successfully logged out',
@@ -113,7 +151,10 @@ return [
         'unauthorized' => 'You do not have the necessary permissions for this operation.',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'title' => 'Sign in to your account',
     'subtitle_start' => 'Or',
     'subtitle_link' => 'create a new account',
@@ -145,5 +186,8 @@ return [
         'microsoft' => 'Sign in with Microsoft',
         'github' => 'Sign in with GitHub',
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

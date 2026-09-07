@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
      * | Table Columns
@@ -12,11 +13,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'column.name' => 'Tên',
     'column.guard_name' => 'Tên guard',
     'column.roles' => 'Vai trò',
     'column.permissions' => 'Quyền',
     'column.updated_at' => 'Cập nhật lúc',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -26,11 +30,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'field.name' => 'Tên',
     'field.guard_name' => 'Tên guard',
     'field.permissions' => 'Quyền',
     'field.select_all.name' => 'Chọn tất cả',
     'field.select_all.message' => 'Bật tất cả Quyền hiện tại <span class="text-primary font-medium">Đã bật</span> cho vai trò này',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -40,11 +47,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Vai trò',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Vai trò',
     'resource.label.roles' => 'Vai trò',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -54,11 +64,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'section' => 'Thực thể',
     'resources' => 'Tài nguyên',
     'widgets' => 'Widget',
     'pages' => 'Trang',
     'custom' => 'Quyền tùy chỉnh',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -76,6 +89,9 @@ return [
 =======
     'forbidden' => 'Bạn không có quyền để truy cập.',
 >>>>>>> 2024e2e7 (.)
+=======
+    'forbidden' => 'Bạn không có quyền để truy cập.',
+>>>>>>> f589f9b2 (.)
     'resource_permission_prefixes_labels' => [
         'view' => 'Xem',
         'view_any' => 'Xem bất kỳ',
@@ -91,7 +107,10 @@ return [
         'replicate' => 'Nhân bản',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -105,5 +124,8 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "User Module - PHPStan Fixes Session [DATE]"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # User Module - PHPStan Fixes Session [DATE]
 
 ## ⚠️ Stato: IN PROGRESS - 95 errori rimanenti
@@ -228,6 +234,7 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 
 - [← User Module README](./readme.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [← PHPStan Session Report](../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Final Report](../../../docs/phpstan/final-report-session-[date].md)
 - [← Root Documentation](../../../docs/index.md)
@@ -236,6 +243,11 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 - [← Final Report](../../../../docs/phpstan/final-report-session-[date].md)
 - [← Root Documentation](../../../../docs/index.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
+- [← Final Report](../../../../docs/phpstan/final-report-session-[date].md)
+- [← Root Documentation](../../../../docs/index.md)
+>>>>>>> f589f9b2 (.)
 
 ---
 

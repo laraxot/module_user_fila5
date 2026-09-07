@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # User Module - PHPStan Error Resolution Roadmap
 
 This document outlines the steps to resolve the PHPStan errors found in the User module.
@@ -43,6 +44,8 @@ I will address these errors by correcting the code and type hints in each file.
 
 After each fix, I will run `phpstan analyse Modules/User` to ensure the error is resolved.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: todo
@@ -59,4 +62,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/todo.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Level Max Errors Roadmap - User Module
 
 **Date**: 2026-01-12
@@ -220,6 +221,8 @@
 **Priorità**: Media (13 errori, alcuni richiedono verifica modelli)  
 **Tempo stimato**: 45 minuti
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpstan-errors-roadmap
@@ -236,4 +239,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-roadmap.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

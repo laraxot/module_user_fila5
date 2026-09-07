@@ -18,6 +18,7 @@ name('password.reset');
 new class extends Component {
     #[Validate('required')]
 <<<<<<< HEAD
+<<<<<<< HEAD
     public $token;
 
     #[Validate('required|email')]
@@ -34,6 +35,8 @@ new class extends Component {
     }
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
     public string $token = '';
 
     #[Validate('required|email')]
@@ -55,7 +58,10 @@ new class extends Component {
     /**
      * @return \Illuminate\Http\RedirectResponse|null
      */
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public function resetPassword()
     {
         $this->validate();
@@ -67,11 +73,16 @@ new class extends Component {
                 'password' => $this->password,
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             function ($user, $password) {
 =======
             function ($user, string $password) {
                 /** @var \Modules\User\Models\User $user */
 >>>>>>> 2024e2e7 (.)
+=======
+            function ($user, string $password) {
+                /** @var \Modules\User\Models\User $user */
+>>>>>>> f589f9b2 (.)
                 $user->password = Hash::make($password);
 
                 $user->setRememberToken(Str::random(60));
@@ -85,24 +96,34 @@ new class extends Component {
         );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($response === Password::PASSWORD_RESET) {
 =======
         if (\is_string($response) && $response === Password::PASSWORD_RESET) {
 >>>>>>> 2024e2e7 (.)
+=======
+        if (\is_string($response) && $response === Password::PASSWORD_RESET) {
+>>>>>>> f589f9b2 (.)
             session()->flash(trans($response));
 
             return redirect('/');
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->addError('email', trans($response));
 =======
+=======
+>>>>>>> f589f9b2 (.)
         if (\is_string($response)) {
             $this->addError('email', trans($response));
         }
 
         return null;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 };
 

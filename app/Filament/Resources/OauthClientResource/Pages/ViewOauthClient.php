@@ -6,20 +6,27 @@ namespace Modules\User\Filament\Resources\OauthClientResource\Pages;
 
 use Filament\Actions\Action;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 =======
 use Filament\Actions\ActionGroup;
 >>>>>>> 2024e2e7 (.)
+=======
+use Filament\Actions\ActionGroup;
+>>>>>>> f589f9b2 (.)
 use Modules\User\Actions\Passport\RevokeClientAction;
 use Modules\User\Filament\Resources\OauthClientResource;
 use Modules\User\Models\OauthClient;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 /**
  * View OAuth Client page.
@@ -32,10 +39,14 @@ class ViewOauthClient extends XotBaseViewRecord
      * Get the header actions.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, Action|\Filament\Actions\ActionGroup>
 =======
      * @return array<string, Action|ActionGroup>
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return array<string, Action|ActionGroup>
+>>>>>>> f589f9b2 (.)
      */
     protected function getHeaderActions(): array
     {
@@ -65,6 +76,7 @@ class ViewOauthClient extends XotBaseViewRecord
         return $actions;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     /**
      * Schema dell'infolist per la visualizzazione dei dettagli.
@@ -91,4 +103,6 @@ class ViewOauthClient extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

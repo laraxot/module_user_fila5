@@ -976,7 +976,11 @@ public function getUsersWithTeams(): Collection
 // PRIMA: Configurazione ripetuta in ogni componente
 class UserResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> f589f9b2 (.)
     {
         return [
             TextInput::make('name')
@@ -1019,7 +1023,11 @@ class UserFormComponents
 // Utilizzo semplificato
 class UserResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> f589f9b2 (.)
     {
         return [
             UserFormComponents::name(),

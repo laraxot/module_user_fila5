@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Section;
 use Tests\TestCase;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
@@ -17,6 +18,8 @@ use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Filament\Resources\UserResource\Pages\EditUser;
 use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Feature\Filament\Resources;
 
 use Filament\Actions\Action;
@@ -34,12 +37,16 @@ use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 use Modules\User\Models\User;
+=======
+>>>>>>> f589f9b2 (.)
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
     $this->user = User::factory()->create([
         'type' => UserType::MasterAdmin,
@@ -210,6 +217,8 @@ test('user resource has correct model', function (): void {
     // The resource should work with the default model resolution
     expect($resource)->toBeInstanceOf(UserResource::class);
 =======
+=======
+>>>>>>> f589f9b2 (.)
     UserFactory::new()
         ->create([
             'type' => UserType::MasterAdmin,
@@ -377,5 +386,8 @@ describe('User Resource', function (): void {
 
         Assert::assertInstanceOf(UserResource::class, $resource);
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

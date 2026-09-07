@@ -14,7 +14,11 @@ class ClientForm extends XotBaseResourceForm
     /**
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> f589f9b2 (.)
     {
         return [
             'name' => TextInput::make('name')

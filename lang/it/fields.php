@@ -24,7 +24,10 @@ return [
         'placeholder' => 'Conferma la tua nuova password',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'name' => 'Fields',
         'plural' => 'Fields',
@@ -58,5 +61,8 @@ return [
             'description' => '',
         ],
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

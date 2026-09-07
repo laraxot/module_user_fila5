@@ -103,6 +103,7 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'avatar' => 'آواتار',
         'email' => 'ایمیل',
         'login' => 'ورود',
@@ -122,6 +123,8 @@ return [
     'or' => 'یا',
     'cancel' => 'لغو',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'avatar' => [
             'label' => 'آواتار',
             'tooltip' => '',
@@ -226,5 +229,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

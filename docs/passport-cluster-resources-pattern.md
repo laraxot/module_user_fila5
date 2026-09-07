@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Passport Cluster Resources Pattern
 
 **Data**: 2025-01-22
@@ -146,6 +147,8 @@ class ListOauthClients extends XotBaseListRecords
 **Versione**: 1.0.1
 **Status**: ✅ Pattern implementato, verificato e completato
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: passport-cluster-resources-pattern
@@ -162,4 +165,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-resources-pattern.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

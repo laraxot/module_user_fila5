@@ -76,12 +76,17 @@ Rimuovere il file `2025_05_16_221811_add_owner_id_to_teams_table.php` dopo aver 
 
 - [Filosofia Migrazioni Laraxot](./laraxot-migration-philosophy.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Principi Migrazioni UUID e Polimorfismo](../../geo/docs_project/archive/principi_migrazioni_laraxot_uuid_polimorfismo.md)
 - [Regole Aggiornamento Migrazioni](../../xot/docs/migration-update-rules.md)
 =======
 - [Principi Migrazioni UUID e Polimorfismo](../../Geo/docs_project/archive/principi_migrazioni_laraxot_uuid_polimorfismo.md)
 - [Regole Aggiornamento Migrazioni](../../Xot/docs/migration-update-rules.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Principi Migrazioni UUID e Polimorfismo](../../Geo/docs_project/archive/principi_migrazioni_laraxot_uuid_polimorfismo.md)
+- [Regole Aggiornamento Migrazioni](../../Xot/docs/migration-update-rules.md)
+>>>>>>> f589f9b2 (.)
 
 ## Checklist Correzione
 

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Progress Report - Modulo User
 
 **Data**: 2025-01-22
@@ -56,6 +57,8 @@
 
 *Ultimo aggiornamento: 2025-01-22*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpstan-progress-report
@@ -72,4 +75,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-progress-report.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

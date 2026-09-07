@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Correzioni Ridondanze - Gennaio 2026"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Correzioni Ridondanze - Gennaio 2026
 
 ## Problema Identificato
@@ -130,11 +136,14 @@ Prima di committare, verifica:
 
 - [Redundancy Rules](../../xot/docs/filament/redundancy-rules.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Service Provider Architecture](./service_provider_architecture.md)
 - [XotBaseRelationManager Documentation](../../xot/docs/filament/relation-managers.md)
 
 *Ultimo aggiornamento: Gennaio 2026*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [XotBaseRelationManager Documentation](../../xot/docs/filament/relation-managers.md)
 
@@ -143,5 +152,9 @@ Prima di committare, verifica:
 - [XotBaseRelationManager Documentation](../../Xot/docs/filament/relation-managers.md)
 
 *Ultimo aggiornamento: Gennaio 2026*
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2026*
 >>>>>>> 2024e2e7 (.)
+=======
+*Ultimo aggiornamento: Gennaio 2026*
+>>>>>>> f589f9b2 (.)

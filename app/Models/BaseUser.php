@@ -5,11 +5,15 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use DateTime;
 use Exception;
 =======
 use Filament\Models\Contracts\FilamentUser;
 >>>>>>> 2024e2e7 (.)
+=======
+use Filament\Models\Contracts\FilamentUser;
+>>>>>>> f589f9b2 (.)
 use Filament\Models\Contracts\HasName;
 use Filament\Models\Contracts\HasTenants;
 use Filament\Panel;
@@ -17,6 +21,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -26,6 +31,9 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 =======
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
@@ -36,6 +44,7 @@ use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Laravel\Passport\HasApiTokens;
 use Modules\TechPlanner\Models\Profile;
@@ -58,6 +67,8 @@ use Throwable;
 /**
  * Base User Model
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Laravel\Passport\Contracts\OAuthenticatable;
 use Laravel\Passport\HasApiTokens;
 use Modules\User\Contracts\HasAuthentications;
@@ -79,7 +90,10 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 
 /**
  * Base User Model.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  *
  * This is the base user model that provides the core authentication and authorization
  * functionality for the application. It extends Laravel's Authenticatable class
@@ -101,18 +115,24 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @property Collection<int, Role> $roles
  * @property int|null $roles_count
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property Collection<int, Team> $teams
  * @property int|null $teams_count
  * @property Collection<int, Tenant> $tenants
  * @property int|null $tenants_count
  * @property Collection<int, OauthAccessToken> $tokens
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property Collection<int, Team> $membershipTeams
  * @property int|null $membership_teams_count
  * @property Collection<int, Tenant> $tenants
  * @property int|null $tenants_count
  * @property Collection<int, OauthToken> $tokens
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @property int|null $tokens_count
  * @property string $last_name
  * @property string|null $facebook_id
@@ -129,6 +149,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @property bool|null $is_otp
  * @property string|null $type
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property DateTime|null $password_expires_at
  * @property DateTime|null $email_verified_at
  * @property string|null $remember_token
@@ -136,13 +157,18 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @property DateTime|null $updated_at
  * @property DateTime|null $deleted_at
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property \DateTime|null $password_expires_at
  * @property \DateTime|null $email_verified_at
  * @property string|null $remember_token
  * @property \DateTime|null $created_at
  * @property \DateTime|null $updated_at
  * @property \DateTime|null $deleted_at
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property string|null $deleted_by
@@ -150,9 +176,12 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @property Pivot|null $pivot
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static UserFactory factory($count = null, $state = [])
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @method static Builder|User newModelQuery()
  * @method static Builder|User newQuery()
  * @method static Builder|User permission($permissions, $without = false)
@@ -186,14 +215,19 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @mixin \Eloquent
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 abstract class BaseUser extends Authenticatable implements HasMedia, HasName, HasTenants, MustVerifyEmail, UserContract
 =======
 abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
 >>>>>>> 2024e2e7 (.)
+=======
+abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
+>>>>>>> f589f9b2 (.)
 {
     use HasApiTokens;
     use HasAuthenticationLogTrait;
     use HasChildren;
+<<<<<<< HEAD
 <<<<<<< HEAD
     use HasFactory;
     use HasPermissions;
@@ -223,6 +257,8 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     protected $fillable = [
         'id',
 =======
+=======
+>>>>>>> f589f9b2 (.)
     use HasDevices;
     use HasModules;
     use HasSocialite;
@@ -255,7 +291,10 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         'id',
         // 'ente',
         // 'matr',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'name',
         'first_name',
         'last_name',
@@ -267,12 +306,18 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         'is_otp', // is One Time Password
         'password_expires_at',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'type',
 =======
         'email_verified_at',
         'type',
         'state',
 >>>>>>> 2024e2e7 (.)
+=======
+        'email_verified_at',
+        'type',
+        'state',
+>>>>>>> f589f9b2 (.)
     ];
 
     /** @var list<string> */
@@ -297,6 +342,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     protected $childTypes = [];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var array<string, mixed> */
     protected $attributes = [
         // 'state' => Pending::class,
@@ -305,11 +351,15 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 =======
     protected $attributes = [
 >>>>>>> 2024e2e7 (.)
+=======
+    protected $attributes = [
+>>>>>>> f589f9b2 (.)
         'is_active' => true,
     ];
 
     /**
      * Guard coerente con Spatie/Permission: deve essere 'web'.
+<<<<<<< HEAD
 <<<<<<< HEAD
      *
      * @var string
@@ -322,6 +372,10 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
      */
     protected string $guard_name = 'web';
 >>>>>>> 2024e2e7 (.)
+=======
+     */
+    protected string $guard_name = 'web';
+>>>>>>> f589f9b2 (.)
 
     public function __construct(array $attributes = [])
     {
@@ -330,6 +384,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         try {
             $this->fillable = array_values(array_merge(parent::getFillable(), $this->getFillable()));
             parent::__construct($attributes);
+<<<<<<< HEAD
 <<<<<<< HEAD
         } catch (Throwable $e) {
             // Fallback in case database connection is not available (e.g., during testing)
@@ -346,6 +401,8 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     }
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
         } catch (\Throwable $e) {
             // Fallback in case database connection is not available (e.g., during testing)
             $this->fillable = array_values($this->getFillable());
@@ -376,12 +433,16 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         return true;
     }
     */
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * Get the user's name for Filament.
      */
     public function getFilamentName(): string
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         $name = (string) ($this->getAttribute('name') ?? '');
         $firstName = (string) ($this->getAttribute('first_name') ?? '');
@@ -393,6 +454,8 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         if (empty($fullName)) {
             $email = (string) ($this->getAttribute('email') ?? '');
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $name = $this->name ?? '';
         $firstName = $this->first_name ?? '';
         $lastName = $this->last_name ?? '';
@@ -402,7 +465,10 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         // Ensure we always return a non-empty string
         if (empty($fullName)) {
             $email = $this->email ?? '';
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
             return ! empty($email) ? $email : 'User';
         }
@@ -410,6 +476,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         return $fullName;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     #[Override]
     public function profile(): HasOne
@@ -432,6 +499,8 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
             return $this->hasOne(Model::class);
         }
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * @return HasOne<Model&ProfileContract, Model&static>
      *
@@ -462,17 +531,24 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         $relation = $this->hasOne(static::class, 'id', 'id')->whereRaw('1=0');
 
         return $relation;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     /**
      * Verifica se l'utente ha il ruolo di super-admin.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return bool True se l'utente è super-admin, altrimenti false
 =======
      * @return bool True se l'utente Ã¨ super-admin, altrimenti false
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return bool True se l'utente Ã¨ super-admin, altrimenti false
+>>>>>>> f589f9b2 (.)
      */
     public function isSuperAdmin(): bool
     {
@@ -492,6 +568,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         if ($panel->getId() !== 'admin') {
             $role = $panel->getId();
 <<<<<<< HEAD
+<<<<<<< HEAD
             /*
              * $xot = XotData::make();
              * if ($xot->super_admin === $this->email) {
@@ -501,19 +578,25 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
              */
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
             // App\Support\AccountFeatures non e' mai esistita (ne' la classe ne'
             // config/account_features.php): riferimento morto fin dal commit
             // iniziale del modulo, causava un Error fatale a runtime su ogni
             // pannello diverso da "admin". hasRole($role) resta l'unico controllo
             // reale, come gia' documentato qui sopra come fallback.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             return $this->hasRole($role);
         }
 
         return true; // str_ends_with($this->email, '@yourdomain.com') && $this->hasVerifiedEmail();
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function canAccessSocialite(): bool
     {
@@ -532,10 +615,16 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     {
         $this->membershipTeams()->detach($model);
 >>>>>>> 2024e2e7 (.)
+=======
+    public function detach(Model $model): void
+    {
+        $this->membershipTeams()->detach($model);
+>>>>>>> f589f9b2 (.)
     }
 
     public function attach(Model $model): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         // @phpstan-ignore function.alreadyNarrowedType
         if (method_exists($this, 'teams')) {
@@ -545,10 +634,14 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 =======
         $this->membershipTeams()->attach($model);
 >>>>>>> 2024e2e7 (.)
+=======
+        $this->membershipTeams()->attach($model);
+>>>>>>> f589f9b2 (.)
     }
 
     public function treeLabel(): string
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         return strval($this->name ?? $this->email);
     }
@@ -589,6 +682,8 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
         return (string) $res;
 =======
+=======
+>>>>>>> f589f9b2 (.)
         return (string) ($this->name ?? $this->email);
     }
 
@@ -601,12 +696,16 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     public function treeSons(): Collection
     {
         return $this->membershipTeams ?? new Collection;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     /**
      * Get the entity's notifications.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return MorphMany<Notification, static|$this>
      */
@@ -614,11 +713,16 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     {
         // @phpstan-ignore return.type
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * @return MorphMany<Notification, $this>
      */
     public function notifications(): MorphMany
     {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         return $this->morphMany(Notification::class, 'notifiable');
     }
 
@@ -626,17 +730,23 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
      * Get the user's latest authentication log.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return MorphOne<AuthenticationLog, static>
      */
     public function latestAuthentication(): MorphOne
     {
         // @phpstan-ignore return.type
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * @return MorphOne<AuthenticationLog, $this>
      */
     public function latestAuthentication(): MorphOne
     {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         return $this->morphOne(AuthenticationLog::class, 'authenticatable')->latestOfMany();
     }
 
@@ -667,20 +777,28 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
         // During unit tests, avoid any DB interaction.
 <<<<<<< HEAD
+<<<<<<< HEAD
         $isTesting = (function (): bool {
 =======
         $isTesting = (static function (): bool {
 >>>>>>> 2024e2e7 (.)
+=======
+        $isTesting = (static function (): bool {
+>>>>>>> f589f9b2 (.)
             $app = app();
             if (method_exists($app, 'environment') && $app->environment('testing')) {
                 return true;
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             return PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
 =======
             return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
 >>>>>>> 2024e2e7 (.)
+=======
+            return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
+>>>>>>> f589f9b2 (.)
         })();
         if ($isTesting) {
             // Do not call update() here to avoid hitting the database.
@@ -699,10 +817,14 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
             return $value;
 <<<<<<< HEAD
+<<<<<<< HEAD
         } catch (Throwable $e) {
 =======
         } catch (\Throwable $e) {
 >>>>>>> 2024e2e7 (.)
+=======
+        } catch (\Throwable $e) {
+>>>>>>> f589f9b2 (.)
             // If any issue occurs (e.g., missing connection/table), fall back without DB.
             $this->attributes['name'] = $candidate;
 
@@ -710,6 +832,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
         }
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Create a new factory instance for the model.
@@ -720,6 +843,8 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     {
         return app(GetFactoryAction::class)->execute(static::class);
 =======
+=======
+>>>>>>> f589f9b2 (.)
     // public function authentications(): MorphMany
     // {
     //    return $this->morphMany(\Modules\User\Models\Authentication::class, 'authenticatable');
@@ -772,7 +897,10 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     public function validateForPassportPasswordGrant(string $password): bool
     {
         return Hash::check($password, (string) $this->password);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     /** @return array<string, string> */
@@ -797,6 +925,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
             'deleted_by' => 'string',
         ];
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     // public function authentications(): MorphMany
@@ -855,4 +984,6 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

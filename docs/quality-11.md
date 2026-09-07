@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # User Module - Quality Status (November 2025)
 
 ## 🎯 Overview
@@ -324,6 +325,8 @@ After fixes:
 *Status: IN PROGRESS*
 *Priority: CRITICAL*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: quality-11
@@ -340,4 +343,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-1.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

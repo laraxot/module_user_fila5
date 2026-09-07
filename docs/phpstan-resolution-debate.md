@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Dibattito Filosofico: Risoluzione Errori PHPStan
 
 **Data Creazione**: 2025-01-22
@@ -179,6 +180,8 @@ Ogni bug futuro è un costo.
 
 *"La type safety non è un lusso, è una necessità."*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpstan-resolution-debate
@@ -195,4 +198,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-resolution-debate.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

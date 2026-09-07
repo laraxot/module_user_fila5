@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
     'sections' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
         'Profile Information' => [
             'label' => 'Profile Information',
             'heading' => 'Profile Information',
@@ -67,6 +70,7 @@ return [
             'icon' => 'updatePasswordAction',
             'tooltip' => 'updatePasswordAction',
         ],
+<<<<<<< HEAD
 =======
         'Profile Information' => ['label' => 'Profile Information', 'heading' => 'Profile Information'],
         'Update Password' => ['label' => 'Update Password', 'heading' => 'Update Password'],
@@ -84,18 +88,26 @@ return [
         'updatePasswordAction' => ['label' => 'updatePasswordAction', 'icon' => 'updatePasswordAction', 'tooltip' => 'updatePasswordAction'],
         'Update' => ['label' => 'Update', 'icon' => 'Update', 'tooltip' => 'Update'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     ],
     'navigation' => [
         'name' => 'My Profile',
         'plural' => 'My Profile',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
         'group' => [
             'name' => 'General',
             'description' => 'General Settings',
         ],
+<<<<<<< HEAD
 =======
         'group' => ['name' => 'General', 'description' => 'General Settings'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'label' => 'My Profile',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',

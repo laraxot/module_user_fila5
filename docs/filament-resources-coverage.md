@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Filament Resources Coverage Analysis - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Filament Resources Coverage Analysis - Modulo User
 
 ## Data: [DATE]
@@ -231,7 +237,11 @@ Questi modelli sono pivot tables e NON devono avere Resources standalone:
 - [Filament Resources Organization](./filament-resources-organization.md)
 - [Filament Best Practices](./filament-best-practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filosofia Modulo User](./filosofia_modulo_user.md)
 =======
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Filosofia Modulo User](./filosofia-modulo-user.md)
+>>>>>>> f589f9b2 (.)

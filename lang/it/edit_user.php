@@ -1,10 +1,15 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 declare(strict_types=1);
 
 >>>>>>> 2024e2e7 (.)
+=======
+declare(strict_types=1);
+
+>>>>>>> f589f9b2 (.)
 return [
     'actions' => [
         'delete' => [
@@ -32,6 +37,7 @@ return [
         'password' => [
             'label' => 'password',
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
         'email' => [
             'label' => 'email',
@@ -41,6 +47,8 @@ return [
         ],
     ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -71,5 +79,8 @@ return [
     ],
     'label' => 'Edit User',
     'plural_label' => 'Edit User (Plurale)',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

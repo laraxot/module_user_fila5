@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Fix: UserCommandIntegrationTest - Application and Config Issues"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Fix: UserCommandIntegrationTest - Application and Config Issues
 
 **Problema**: Test fallisce con "Too few arguments" e "Target class [config] does not exist"

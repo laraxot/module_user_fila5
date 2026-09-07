@@ -9,14 +9,18 @@ declare(strict_types=1);
 namespace Modules\User\Http\Controllers\Socialite;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Exception;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Request;
 use Laravel\Socialite\Facades\Socialite;
 use Modules\User\Actions\Socialite\GetProviderScopesAction;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\User\Actions\Socialite\IsProviderConfiguredAction;
 use Modules\User\Actions\Socialite\ValidateProviderAction;
@@ -24,6 +28,9 @@ use Modules\User\Exceptions\ProviderNotConfigured;
 =======
 use Modules\User\Actions\Socialite\ValidateProviderAction;
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\User\Actions\Socialite\ValidateProviderAction;
+>>>>>>> f589f9b2 (.)
 
 class RedirectToProviderController extends Controller
 {
@@ -38,6 +45,7 @@ class RedirectToProviderController extends Controller
         app(ValidateProviderAction::class)->execute($provider);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $scopes = App(GetProviderScopesAction::class)->execute($provider);
         $socialiteProvider = Socialite::with($provider);
         if (!is_object($socialiteProvider)) {
@@ -50,6 +58,8 @@ class RedirectToProviderController extends Controller
 
         return $socialiteProvider->scopes($scopes)->redirect();
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $scopes = app(GetProviderScopesAction::class)->execute($provider);
         $socialiteProvider = Socialite::with($provider);
         if (! is_object($socialiteProvider)) {
@@ -74,6 +84,9 @@ class RedirectToProviderController extends Controller
         }
 
         return $redirectResult;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

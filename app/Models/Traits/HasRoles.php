@@ -5,12 +5,15 @@ declare(strict_types=1);
 namespace Modules\User\Models\Traits;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Modules\User\Models\Role;
 use Spatie\Permission\Traits\HasRoles as SpatieHasRoles;
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Modules\User\Models\Role;
@@ -18,7 +21,10 @@ use Spatie\Permission\Traits\HasRoles as SpatieHasRoles;
 use Webmozart\Assert\Assert;
 
 /** @phpstan-ignore trait.unused */
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 trait HasRoles
 {
     use SpatieHasRoles;
@@ -26,11 +32,14 @@ trait HasRoles
     /**
      * A user may have multiple roles.
 <<<<<<< HEAD
+<<<<<<< HEAD
      */
     public function roles(): BelongsToMany
     {
         return $this->belongsToMany(Role::class, 'model_has_roles', 'model_id', 'role_id')->where(
 =======
+=======
+>>>>>>> f589f9b2 (.)
      *
      * @return BelongsToMany<Role, $this, Pivot, 'pivot'>
      */
@@ -39,11 +48,15 @@ trait HasRoles
         Assert::string($pivotTable = config('permission.table_names.model_has_roles'));
 
         return $this->belongsToManyX(Role::class, $pivotTable, 'model_id', 'role_id')->where(
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'model_type',
             self::class,
         );
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -75,4 +88,6 @@ trait HasRoles
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

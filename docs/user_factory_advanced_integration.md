@@ -293,7 +293,11 @@ public function run(): void
 ### Root Documentation  
 - [UserFactory SaluteOra Integration](../../../../docs/userfactory_saluteora_integration.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Testing Standards](../../../../docs/testing_standards.md) 
 =======
 - [Testing Standards](../../../../docs/testing_standards.md) 
 >>>>>>> 2024e2e7 (.)
+=======
+- [Testing Standards](../../../../docs/testing_standards.md) 
+>>>>>>> f589f9b2 (.)

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "🏛️ FILOSOFIA SPATIE PERMISSION IN LARAXOT"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # 🏛️ FILOSOFIA SPATIE PERMISSION IN LARAXOT
 
 ## 📋 CONTESTO E ANALISI
@@ -242,10 +248,14 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 - [Class Responsibility Separation](../xot/docs/critical-architecture-rules.md)
 - [Spatie Permission Methods](spatie-permissions-methods.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Roles and Permissions](roles_permissions.md)
 =======
 - [Roles and Permissions](roles-permissions-3.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Roles and Permissions](roles-permissions-3.md)
+>>>>>>> f589f9b2 (.)
 
 ## ✅ **VERIFICA STATO ATTUALE**
 

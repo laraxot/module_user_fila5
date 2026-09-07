@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\User\Tests\Unit\Models;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -324,6 +325,8 @@ class ProfileTest extends TestCase
     }
 }
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Modules\User\Models\Profile;
@@ -591,4 +594,7 @@ test('profile has factory', function (): void {
     Assert::assertNotEmpty($profile->email);
     Assert::assertInstanceOf(Profile::class, $profile);
 });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

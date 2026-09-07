@@ -1,4 +1,27 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+---
+title: "User - Filosofia Completa: Logica, Religione, Politica, Zen"
+type: concept
+tags: [philosophy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "philosophy user - filosofia completa: logica, religione, politica, zen"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> f589f9b2 (.)
 # User - Filosofia Completa: Logica, Religione, Politica, Zen
 
 **Data Creazione**: [DATE]
@@ -89,6 +112,7 @@ class Doctor extends User
 {
     use HasParent;
     // Type-specific logic
+<<<<<<< HEAD
 =======
 # User Module: Philosophy, Architecture & Zen
 
@@ -398,12 +422,17 @@ Route::middleware(['auth', 'verified'])->group(function () {
 class UserResource extends XotBaseResource {
     // ...
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }
 ```
 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
 ## 📜 Religione (Religion)
 
 ### Comandamenti Sacri
@@ -570,6 +599,7 @@ class DoctorScope implements Scope
 ---
 
 **Filosofia**: STI Unity, RBAC Standard, Multi-Tenant Isolation, Identity Foundation
+<<<<<<< HEAD
 =======
 ## 8. Summary Card
 
@@ -590,3 +620,5 @@ class DoctorScope implements Scope
 ```
 
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

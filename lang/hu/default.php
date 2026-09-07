@@ -127,6 +127,7 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'email' => 'E-mail cím',
         'login' => 'Bejelentkezés',
         'name' => 'Név',
@@ -144,6 +145,8 @@ return [
     'or' => 'Vagy',
     'cancel' => 'Mégsem',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'email' => [
             'label' => 'E-mail cím',
             'tooltip' => '',
@@ -236,5 +239,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

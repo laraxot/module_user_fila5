@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Fix: team_user Composite Primary Key Implementation"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Fix: team_user Composite Primary Key Implementation
 
 ## Data Intervento
@@ -262,10 +268,14 @@ $membership = Membership::where('team_id', $team->id)
 - [HasTeams Trait](../../app/Models/Traits/HasTeams.php)
 - [TeamsRelationManager](../../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Pivot Tables](../../../docs/pivot-tables-best-practices.md)
 =======
 - [Documentazione Pivot Tables](../../../../docs/pivot-tables-best-practices.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Documentazione Pivot Tables](../../../../docs/pivot-tables-best-practices.md)
+>>>>>>> f589f9b2 (.)
 
 ## Note Tecniche
 
@@ -287,7 +297,10 @@ $membership = Membership::where('team_id', $team->id)
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: novembre 2025*
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 *Status: IMPLEMENTATO E VALIDATO*

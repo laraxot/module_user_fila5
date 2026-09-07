@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modelli User e Profile: Analisi delle Scelte di Progettazione
 
 ## Approccio 1: Modello User Unificato
@@ -994,6 +995,8 @@ class UserRepository
    }
    ```
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: user-profile-models
@@ -1010,4 +1013,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-profile-models.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

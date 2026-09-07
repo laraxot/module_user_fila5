@@ -20,9 +20,14 @@ class RecoveryCodeReplaced
         public Authenticatable $user,
         public string $code,
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> 2024e2e7 (.)
+=======
+    ) {
+    }
+>>>>>>> f589f9b2 (.)
 }

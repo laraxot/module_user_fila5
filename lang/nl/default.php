@@ -128,6 +128,7 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'name' => 'Naam',
         'email' => 'E-mailadres',
         'password' => 'Wachtwoord',
@@ -144,6 +145,8 @@ return [
     'or' => 'Of',
     'cancel' => 'Annuleren',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'name' => [
             'label' => 'Naam',
             'tooltip' => '',
@@ -230,5 +233,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

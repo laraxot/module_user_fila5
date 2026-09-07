@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Implementazione del Selettore di Lingua con Bandiere SVG"
 type: concept
@@ -20,11 +23,15 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Convenzioni Path](./path_conventions.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
@@ -34,6 +41,11 @@ related:
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Convenzioni Path](./path-conventions-2.md)
+- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
+- [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
+>>>>>>> f589f9b2 (.)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -216,6 +228,7 @@ return [
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni Path](./path_conventions.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar_implementation.md)
@@ -224,6 +237,11 @@ return [
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Convenzioni Path](./path-conventions-2.md)
+- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
+- [Implementazione Header](/laravel/modules/user/docs/header_language_avatar-implementation.md)
+>>>>>>> f589f9b2 (.)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica

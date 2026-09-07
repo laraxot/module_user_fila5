@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Database Issues in User Module"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Database Issues in User Module
 
 ## Missing `doctor_team` Table
@@ -45,7 +51,11 @@ related:
 - [BaseUser Model](./baseuser.md)
 - [Database Structure](../database_structure.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Migration Guidelines](../../../../docs/collegamenti-documentazione.md)
 =======
 - [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
+>>>>>>> f589f9b2 (.)

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Prevenzione ->label() Hardcoded - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Prevenzione ->label() Hardcoded - Modulo User
 
 ## 🚨 **REGOLA ASSOLUTA**
@@ -100,10 +106,14 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class ExampleResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> 2024e2e7 (.)
+=======
+    public static function getFormSchema(): array
+>>>>>>> f589f9b2 (.)
     {
         return [
             'name' => TextInput::make('name')
@@ -214,6 +224,7 @@ return [
 ## 🔗 **Collegamenti**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Translation Standards](../../docs/translation-standards.md)
 - [PHPStan Fixes](../../docs/phpstan_level10_fixes.md)
 - [Best Practices](../../docs/best-practices.md)
@@ -222,6 +233,11 @@ return [
 - [PHPStan Fixes](../../../docs/phpstan_level10_fixes.md)
 - [Best Practices](../../../docs/best-practices.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Translation Standards](../../../docs/translation-standards.md)
+- [PHPStan Fixes](../../../docs/phpstan_level10_fixes.md)
+- [Best Practices](../../../docs/best-practices.md)
+>>>>>>> f589f9b2 (.)
 
 ---
 
@@ -229,7 +245,11 @@ return [
 **📦 Versione**: 3.1.0  
 **🎯 Obiettivo**: Zero ->label() hardcoded  
 <<<<<<< HEAD
+<<<<<<< HEAD
 **✅ Status**: Prevenzione attiva e monitorata
 =======
 **✅ Status**: Prevenzione attiva e monitorata
 >>>>>>> 2024e2e7 (.)
+=======
+**✅ Status**: Prevenzione attiva e monitorata
+>>>>>>> f589f9b2 (.)

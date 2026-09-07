@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'resources' => 'Risorse',
     'pages' => 'Pagine',
@@ -22,6 +25,7 @@ return [
         'icon' => 'user-user-feature',
     ],
     'fields' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
         'name' => 'Nome',
         'guard_name' => 'Guard',
@@ -51,6 +55,8 @@ return [
         'openFilters' => [
             'label' => 'openFilters',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -130,7 +136,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'actions' => [
@@ -151,8 +160,13 @@ return [
         'label' => 'feature.model',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 >>>>>>> 2024e2e7 (.)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> f589f9b2 (.)
 ];

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Correzioni File di Traduzione User Module
 
 ## Problemi Identificati e Risolti
@@ -100,6 +101,8 @@ Il file ora segue la struttura espansa obbligatoria per le regole Laraxot:
 
 *Ultimo aggiornamento: 2025-01-06*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: translation-fixes
@@ -116,4 +119,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-fixes.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration {
@@ -12,13 +13,18 @@ return new class extends XotBaseMigration {
      */
     protected string $table_name = 'tenants';
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\Tenant;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
     protected ?string $model_class = Tenant::class;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
     /**
      * Run the migrations.
@@ -43,6 +49,7 @@ return new class extends XotBaseMigration
                 $table->json('settings')->nullable();
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             $this->updateTimestamps(
                 table: $table,
                 hasSoftDeletes: true,
@@ -50,6 +57,9 @@ return new class extends XotBaseMigration
 =======
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
 >>>>>>> 2024e2e7 (.)
+=======
+            $this->updateTimestamps(table: $table, hasSoftDeletes: true);
+>>>>>>> f589f9b2 (.)
         });
     }
 };

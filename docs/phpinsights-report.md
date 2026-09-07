@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # phpinsights report
 
 ## stato 2025-11-12 (sessione corrente)
@@ -39,6 +40,8 @@
 
 > Nota: mantenere l'analisi focalizzata sul codice di produzione (`Modules/User/app`). Estendere ai test solo dopo aver stabilizzato le convenzioni.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpinsights-report
@@ -55,4 +58,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-report.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

@@ -10,10 +10,14 @@ use Modules\User\Models\OauthPersonalAccessClient;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * OauthPersonalAccessClient Factory
 =======
  * OauthPersonalAccessClient Factory.
 >>>>>>> 2024e2e7 (.)
+=======
+ * OauthPersonalAccessClient Factory.
+>>>>>>> f589f9b2 (.)
  *
  * @extends Factory<OauthPersonalAccessClient>
  */
@@ -22,11 +26,14 @@ class OauthPersonalAccessClientFactory extends Factory
     protected $model = OauthPersonalAccessClient::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function definition(): array
     {
         return [
             'client_id' => OauthClient::factory()->personalAccess(),
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * @return array<string, mixed>
      */
@@ -34,7 +41,10 @@ class OauthPersonalAccessClientFactory extends Factory
     {
         return [
             'client_id' => OauthClient::factory()->asPersonalAccessTokenClient()->create()->id,
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ];
     }
 }

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Fixes Complete - Gennaio 2025
 
 ## Riepilogo
@@ -120,6 +121,8 @@ La correzione completa di tutti gli errori PHPStan ha portato il progetto a un l
 **27 Gennaio 2025** - Correzione completa di tutti gli errori PHPStan
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpstan-fixes-gennaio-2025-complete
@@ -136,4 +139,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-2025-complete.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

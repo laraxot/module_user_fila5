@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets\Auth;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
 use Override;
 use Filament\Forms\Components\TextInput;
@@ -74,6 +75,8 @@ class PasswordResetWidget extends XotBaseWidget
     {
         // try {
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Password;
@@ -109,7 +112,10 @@ class PasswordResetWidget extends XotBaseSchemaWidget
 
     public function sendResetPasswordLink(): void
     {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $data = $this->form->getState();
         $password_broker = Password::broker();
 
@@ -128,6 +134,7 @@ class PasswordResetWidget extends XotBaseSchemaWidget
                 ->send();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             // Clear the form
             $this->form->fill();
         } else {
@@ -137,12 +144,18 @@ class PasswordResetWidget extends XotBaseSchemaWidget
         } else {
             Session::flash('error', trans('user::errors.'.$response.'.label'));
 >>>>>>> 2024e2e7 (.)
+=======
+            $this->form->fill();
+        } else {
+            Session::flash('error', trans('user::errors.'.$response.'.label'));
+>>>>>>> f589f9b2 (.)
             Notification::make()
                 ->title(__('user::auth.password_reset.email_failed.title'))
                 ->body(trans($response))
                 ->danger()
                 ->send();
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         /*} catch (\Exception $e) {
@@ -162,6 +175,10 @@ class PasswordResetWidget extends XotBaseSchemaWidget
     }
 
 >>>>>>> 2024e2e7 (.)
+=======
+    }
+
+>>>>>>> f589f9b2 (.)
     public function resetForm(): void
     {
         $this->emailSent = false;
@@ -169,17 +186,21 @@ class PasswordResetWidget extends XotBaseSchemaWidget
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * Send another reset link.
      */
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public function sendAnotherLink(): void
     {
         $this->emailSent = false;
         $this->form->fill(['email' => '']);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Check email status (for compatibility with old view).
@@ -191,6 +212,10 @@ class PasswordResetWidget extends XotBaseSchemaWidget
     public function checkEmailStatus(): void
     {
 >>>>>>> 2024e2e7 (.)
+=======
+    public function checkEmailStatus(): void
+    {
+>>>>>>> f589f9b2 (.)
         $this->redirect(route('login'));
     }
 }

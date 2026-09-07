@@ -12,7 +12,10 @@ return [
         'body' => 'Tabella Mancante',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'name' => 'Notifications',
         'plural' => 'Notifications',
@@ -57,5 +60,8 @@ return [
             'label' => 'Elimina Notifications',
         ],
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

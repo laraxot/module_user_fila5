@@ -16,12 +16,20 @@ class ClientInfolist extends XotBaseResourceInfolist
      *
      * Campi basati sul Model Passport\Client.php -> id, user_id, name, secret, provider, redirect, personal_access_client, password_client, revoked
      */
+<<<<<<< HEAD
     public function getInfolistSchema(): array
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> f589f9b2 (.)
     {
         return [
             'id' => TextEntry::make('id'),
             'user_id' => TextEntry::make('user_id'),
             'name' => TextEntry::make('name'),
+<<<<<<< HEAD
+=======
+            'user' => TextEntry::make('user.name'),
+>>>>>>> f589f9b2 (.)
             'provider' => TextEntry::make('provider'),
             'redirect' => TextEntry::make('redirect'),
             'personal_access_client' => TextEntry::make('personal_access_client')

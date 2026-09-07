@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🤜 Furious Litigation: The Passport Cluster Debate
 
 ## The Contenders
@@ -37,6 +38,8 @@
 **🔄 Zen Status**: Refined
 **🐄 Methodology**: Super Mucca ✅
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: passport-cluster-litigation
@@ -53,4 +56,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-litigation.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

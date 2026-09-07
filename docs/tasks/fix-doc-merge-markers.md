@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Task: Fix Documentation Merge Markers (User Module)"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./tasks-index.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Task: Fix Documentation Merge Markers (User Module)
 
 ## 📋 Obiettivo
@@ -42,7 +48,11 @@ Rimuovere residui di conflitti Git (`<<<<<<<`, `=======`, `>>>>>>>`) da tutti i 
 
 ## 🔗 Riferimenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Roadmap User](../roadmap.md)
 =======
 - [Roadmap User](../roadmap.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Roadmap User](../roadmap.md)
+>>>>>>> f589f9b2 (.)

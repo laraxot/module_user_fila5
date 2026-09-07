@@ -8,15 +8,21 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Modules\User\Models\OauthClient as Client;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /**
  * @property \Modules\User\Models\User|null $owner
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\User;
 
 /**
  * @property User|null $owner
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @mixin Client
  */
@@ -31,6 +37,7 @@ final class ClientResource extends JsonResource
     public function toArray(Request $request): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return [
             'id' => $this->id,
             'name' => $this->name,
@@ -38,6 +45,8 @@ final class ClientResource extends JsonResource
                 isset($this->owner),
                 fn (): OwnerResource => new OwnerResource($this->owner)
 =======
+=======
+>>>>>>> f589f9b2 (.)
         /** @var Client $client */
         $client = $this->resource;
 
@@ -47,7 +56,10 @@ final class ClientResource extends JsonResource
             'owner' => $this->when(
                 null !== $client->owner,
                 fn (): OwnerResource => new OwnerResource($client->owner)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             ),
         ];
     }

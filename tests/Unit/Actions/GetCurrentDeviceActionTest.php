@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\User\Tests\Unit\Actions;
 
 use InvalidArgumentException;
@@ -477,6 +478,8 @@ class GetCurrentDeviceActionTest extends TestCase
     }
 }
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Jenssegers\Agent\Agent;
 use Modules\User\Actions\GetCurrentDeviceAction;
 use Modules\User\Models\Device;
@@ -741,4 +744,7 @@ it('handles unknown browser versions', function (): void {
         'version' => 'unknown',
     ]);
 });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

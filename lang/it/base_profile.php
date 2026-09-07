@@ -18,7 +18,10 @@ return [
         'icon' => 'user-user-permission',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'label' => 'Base Profile',
     'plural_label' => 'Base Profile (Plurale)',
     'fields' => [
@@ -52,5 +55,8 @@ return [
             'label' => 'Elimina Base Profile',
         ],
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

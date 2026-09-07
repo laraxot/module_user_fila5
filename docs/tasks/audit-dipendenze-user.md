@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Task: Audit Completo Dipendenze User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./tasks-index.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Task: Audit Completo Dipendenze User
 
 **Modulo**: User  

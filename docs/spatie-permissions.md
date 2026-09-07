@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # spatie_permissions
 
 <!-- Contenuto migrato da _docs/spatie_permissions.txt -->
 
 https://jaydeepamethiya.medium.com/spatie-roles-and-permissions-in-laravel-10-a-comprehensive-guide-536d099d40ae
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: spatie-permissions
@@ -21,4 +24,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/spatie-permissions-2.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

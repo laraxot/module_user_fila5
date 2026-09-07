@@ -8,25 +8,34 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 use Filament\Tables\Table;
 =======
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ListOauthAuthCodes;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ViewOauthAuthCode;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Filament\Resources\OauthAuthCodeResource\Pages;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\OauthAuthCode;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -43,6 +52,9 @@ class OauthAuthCodeResource extends XotBaseResource
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
      * Get the form schema for the resource.
      *
      * @return array<string, Select|TextInput>
@@ -66,16 +78,22 @@ class OauthAuthCodeResource extends XotBaseResource
     }
 
     /**
+<<<<<<< HEAD
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      * Extend table callback for the resource.
      *
      * @return array<string, mixed>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public static function extendTableCallback(): array
     {
         return [
@@ -103,10 +121,14 @@ class OauthAuthCodeResource extends XotBaseResource
                     ->tooltip(function (TextColumn $column): ?string {
                         $state = $column->getState();
 <<<<<<< HEAD
+<<<<<<< HEAD
                         if (null === $state) {
 =======
                         if ($state === null) {
 >>>>>>> 2024e2e7 (.)
+=======
+                        if ($state === null) {
+>>>>>>> f589f9b2 (.)
                             return null;
                         }
                         if (is_array($state)) {

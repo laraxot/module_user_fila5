@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Indice task - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./spostamento-widget-violante.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Indice task - Modulo User
 
 Lista dei task del modulo con link ai file .md separati. Ogni task è un file nella cartella `tasks/`.
@@ -49,7 +55,11 @@ Lista dei task del modulo con link ai file .md separati. Ogni task è un file ne
 - [Roadmap User](../roadmap.md)
 - [README User](../readme.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Scopo moduli progetto](../../../../docs/moduli-scopo.md)
 =======
 - [Scopo moduli progetto](../../../../../docs/moduli-scopo.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Scopo moduli progetto](../../../../../docs/moduli-scopo.md)
+>>>>>>> f589f9b2 (.)

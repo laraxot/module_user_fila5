@@ -16,7 +16,11 @@ class FeatureInfolist extends XotBaseResourceInfolist
      *
      * Campi basati sul Model Feature.php -> id, name, scope, value
      */
+<<<<<<< HEAD
     public function getInfolistSchema(): array
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> f589f9b2 (.)
     {
         return [
             'id' => TextEntry::make('id'),

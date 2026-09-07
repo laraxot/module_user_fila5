@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Analisi metodi duplicati in HasTeams (trait)"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Analisi metodi duplicati in HasTeams (trait)
 
 ## Introduzione
@@ -96,18 +102,24 @@ Nel trait `HasTeams` sono presenti diversi metodi con lo stesso nome ma implemen
 
 ## Collegamenti correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Indice documentazione User](./INDEX.md)
 - [Modello User](./Models/User.md)
 - [Best practices trait](./best-practices-traits.md)
 - [Refactor checklist](./refactor-checklist.md)
 - [XotData helper](../../Xot/docs/standards/README.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Indice documentazione User](./index.md)
 - [Modello User](./models/user.md)
 - [Best practices trait](./best-practices-traits.md)
 - [Refactor checklist](./refactor-checklist.md)
 - [XotData helper](../../xot/docs/standards/readme.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ---
 

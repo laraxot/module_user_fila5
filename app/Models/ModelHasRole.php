@@ -5,21 +5,28 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Override;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Xot\Contracts\ProfileContract;
 use Illuminate\Support\Carbon;
 use Modules\User\Database\Factories\ModelHasRoleFactory;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Webmozart\Assert\Assert;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 /**
  * Modules\User\Models\ModelHasRole.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property string $id
  * @property string $role_id
@@ -27,21 +34,30 @@ use Webmozart\Assert\Assert;
  * @property string $model_id
  * @property int|null $team_id
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property string      $id
  * @property string      $role_id
  * @property string      $model_type
  * @property string      $model_id
  * @property int|null    $team_id
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static ModelHasRoleFactory factory($count = null, $state = [])
 =======
  *
 >>>>>>> 2024e2e7 (.)
+=======
+ *
+>>>>>>> f589f9b2 (.)
  * @method static Builder|ModelHasRole newModelQuery()
  * @method static Builder|ModelHasRole newQuery()
  * @method static Builder|ModelHasRole query()
@@ -55,12 +71,15 @@ use Webmozart\Assert\Assert;
  * @method static Builder|ModelHasRole whereUpdatedAt($value)
  * @method static Builder|ModelHasRole whereUpdatedBy($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string $uuid (DC2Type:guid)
  * @method static Builder|ModelHasRole whereUuid($value)
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @mixin IdeHelperModelHasRole
 =======
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @property string $uuid (DC2Type:guid)
  *
@@ -72,11 +91,15 @@ use Webmozart\Assert\Assert;
  *
  * @method static \Modules\User\Database\Factories\ModelHasRoleFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 class ModelHasRole extends BaseMorphPivot
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     /** @var string */
     protected $table = 'model_has_role';
@@ -90,6 +113,11 @@ class ModelHasRole extends BaseMorphPivot
     protected $fillable = [
         'id',
 >>>>>>> 2024e2e7 (.)
+=======
+    /** @var list<string> */
+    protected $fillable = [
+        'id',
+>>>>>>> f589f9b2 (.)
         'role_id',
         'model_type',
         'model_id',
@@ -97,6 +125,7 @@ class ModelHasRole extends BaseMorphPivot
     ];
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Create a new instance and dynamically assign table name from config.
      *
@@ -114,6 +143,8 @@ class ModelHasRole extends BaseMorphPivot
     /** @return array<string, string> */
     #[Override]
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * Nome tabella da config Spatie — mai `$table` hardcoded (può cambiare per tenant/overlay).
      */
     #[\Override]
@@ -126,7 +157,10 @@ class ModelHasRole extends BaseMorphPivot
 
     /** @return array<string, string> */
     #[\Override]
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     protected function casts(): array
     {
         return [
@@ -136,9 +170,12 @@ class ModelHasRole extends BaseMorphPivot
             'model_id' => 'string',
             'team_id' => 'string',
 <<<<<<< HEAD
+<<<<<<< HEAD
             // 'uuid' => 'string',
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
             'created_at' => 'datetime',
             'updated_at' => 'datetime',

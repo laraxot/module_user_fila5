@@ -222,7 +222,11 @@ $logout = function () {
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./SESSION_MANAGEMENT.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 =======
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 >>>>>>> 2024e2e7 (.)
+=======
+- [Tema One Documentation](../../Themes/One/docs/README.md) 
+>>>>>>> f589f9b2 (.)

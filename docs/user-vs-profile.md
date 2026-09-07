@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "User vs Profile Models: Guida Completa"
 type: concept
@@ -20,16 +23,23 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # User vs Profile Models: Guida Completa
 
 ## Panoramica
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento analizza quando usare il modello **User** rispetto al modello **Profile** nel progetto LaravelPizza, basandosi su best practice di settore e architettura specifica del progetto.
 =======
 Questo documento analizza quando usare il modello **User** rispetto al modello **Profile** nel progetto <nome progetto>, basandosi su best practice di settore e architettura specifica del progetto.
 >>>>>>> 2024e2e7 (.)
+=======
+Questo documento analizza quando usare il modello **User** rispetto al modello **Profile** nel progetto <nome progetto>, basandosi su best practice di settore e architettura specifica del progetto.
+>>>>>>> f589f9b2 (.)
 
 ---
 
@@ -162,20 +172,28 @@ class Profile extends BaseProfile
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 3. Analisi nel Contesto LaravelPizza
 =======
 ## 3. Analisi nel Contesto <nome progetto>
 >>>>>>> 2024e2e7 (.)
+=======
+## 3. Analisi nel Contesto <nome progetto>
+>>>>>>> f589f9b2 (.)
 
 ### 3.1 Architettura Attuale
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
 <<<<<<< HEAD
+<<<<<<< HEAD
 │                        LARAVELPIZZA                              │
 =======
 │                        <nome progetto>                              │
 >>>>>>> 2024e2e7 (.)
+=======
+│                        <nome progetto>                              │
+>>>>>>> f589f9b2 (.)
 ├──────────────────────────────────────────────────────────────────┤
 │                                                                   │
 │  ┌─────────────────┐         ┌─────────────────┐              │
@@ -222,6 +240,7 @@ CURRENT STATE:
 ### 3.3 Soluzione Raccomandata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Opzione A: Consolidare in User (Simple) - CONSIGLIATA PER LARAVELPIZZA**
 
 Per un progetto community come LaravelPizza dove:
@@ -230,6 +249,11 @@ Per un progetto community come LaravelPizza dove:
 
 Per un progetto community come <nome progetto> dove:
 >>>>>>> 2024e2e7 (.)
+=======
+**Opzione A: Consolidare in User (Simple) - CONSIGLIATA PER <nome progetto>**
+
+Per un progetto community come <nome progetto> dove:
+>>>>>>> f589f9b2 (.)
 - Gli utenti sono principalmente "attendees" agli eventi
 - Non servono profili multipli
 - L'avatar è l'unico dato profilo essenziale
@@ -559,8 +583,12 @@ class User extends Authenticatable
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Documento generato per LaravelPizza - Progetto Community Laravel*
 *Ultimo aggiornamento: Febbraio 2026*
 =======
 *Documento generato per <nome progetto> - Progetto Community Laravel*
 >>>>>>> 2024e2e7 (.)
+=======
+*Documento generato per <nome progetto> - Progetto Community Laravel*
+>>>>>>> f589f9b2 (.)

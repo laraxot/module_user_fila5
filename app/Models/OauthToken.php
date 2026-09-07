@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Laravel\Passport\Token as PassportToken;
@@ -47,6 +48,8 @@ use Modules\Xot\Contracts\UserContract;
  * @method static Builder|OauthAccessToken whereDeletedBy($value)
  * @method static Builder|OauthAccessToken whereUpdatedBy($value)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Carbon;
 use Laravel\Passport\Token as PassportToken;
 use Modules\User\Traits\ResolvesPassportTokenUserRelation;
@@ -85,17 +88,25 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUserId($value)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @mixin \Eloquent
  */
 class OauthToken extends PassportToken
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var string */
 =======
     use ResolvesPassportTokenUserRelation;
 
 >>>>>>> 2024e2e7 (.)
+=======
+    use ResolvesPassportTokenUserRelation;
+
+>>>>>>> f589f9b2 (.)
     protected $connection = 'user';
 }

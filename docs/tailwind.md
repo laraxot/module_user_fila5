@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # tailwind
 
 <!-- Contenuto migrato da _docs/tailwind.txt -->
 
 https://tailwindflex.com/@sophia-baker/responsive-registration-form
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: tailwind
@@ -21,4 +24,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/tailwind.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

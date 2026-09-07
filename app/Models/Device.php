@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Override;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
@@ -14,6 +15,8 @@ use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Modules\User\Database\Factories\DeviceFactory;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
@@ -22,7 +25,10 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Support\Carbon;
 use Modules\User\Database\Factories\DeviceFactory;
 use Modules\Xot\Contracts\ProfileContract;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 
@@ -31,12 +37,17 @@ use Modules\Xot\Datas\XotData;
  *
  * @property EloquentCollection<int, Model&UserContract> $users
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property int|null $users_count
  * @method static DeviceFactory factory($count = null, $state = [])
 =======
  * @property int|null                                    $users_count
  *
 >>>>>>> 2024e2e7 (.)
+=======
+ * @property int|null                                    $users_count
+ *
+>>>>>>> f589f9b2 (.)
  * @method static Builder|Device newModelQuery()
  * @method static Builder|Device newQuery()
  * @method static Builder|Device query()
@@ -57,6 +68,7 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|Device whereUpdatedAt($value)
  * @method static Builder|Device whereUpdatedBy($value)
  * @method static Builder|Device whereVersion($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property DeviceUser $pivot
  * @property ProfileContract|null $creator
@@ -82,6 +94,8 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder<static>|Device whereUuid($value)
  * @mixin IdeHelperDevice
 =======
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @property DeviceUser              $pivot
  * @property ProfileContract|null    $creator
@@ -117,7 +131,10 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder<static>|Device whereName($value)
  * @method static Builder<static>|Device whereType($value)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 class Device extends BaseModel
@@ -142,10 +159,13 @@ class Device extends BaseModel
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Define the many-to-many relationship between devices and users.
      *
      * return BelongsToMany<UserContract, Device>
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * Create a new factory instance for the model, typed for static analysis.
      */
     protected static function newFactory(): DeviceFactory
@@ -155,20 +175,29 @@ class Device extends BaseModel
 
     /**
      * @return BelongsToMany<Model&UserContract, $this, Pivot, 'pivot'>
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     public function users(): BelongsToMany
     {
         $userClass = XotData::make()->getUserClass();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->belongsToManyX($userClass);
 =======
+=======
+>>>>>>> f589f9b2 (.)
         /** @var BelongsToMany<Model&UserContract, $this, Pivot, 'pivot'> $relation */
         $relation = $this->belongsToManyX($userClass);
 
         return $relation;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     /**
@@ -177,10 +206,14 @@ class Device extends BaseModel
      * @return array<string, string>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     protected function casts(): array
     {
         return [

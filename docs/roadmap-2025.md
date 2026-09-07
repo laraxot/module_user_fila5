@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "👥 USER MODULE - ROADMAP 2025"
 type: concept
@@ -20,17 +23,24 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # 👥 USER MODULE - ROADMAP 2025
 
 **Modulo**: User (Authentication & Authorization)  
 **Status**: 90% COMPLETATO  
 **Priority**: HIGH  
 <<<<<<< HEAD
+<<<<<<< HEAD
 **PHPStan**: ✅ Level 9 (0 errori)  
 =======
 **PHPStan**: ✅ Level 10 (0 errori)  
 >>>>>>> 2024e2e7 (.)
+=======
+**PHPStan**: ✅ Level 10 (0 errori)  
+>>>>>>> f589f9b2 (.)
 **Filament**: ✅ 4.x Compatibile  
 
 ---
@@ -110,10 +120,14 @@ User Module
 
 ### 🔧 Technical Excellence
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] **PHPStan Level 9**: 0 errori
 =======
 - [x] **PHPStan Level 10**: 0 errori
 >>>>>>> 2024e2e7 (.)
+=======
+- [x] **PHPStan Level 10**: 0 errori
+>>>>>>> f589f9b2 (.)
 - [x] **Filament 4.x**: Compatibilità completa
 - [x] **Type Safety**: Type hints completi
 - [x] **Error Handling**: Gestione errori robusta
@@ -281,10 +295,14 @@ User Module
 
 #### ✅ Completed
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] PHPStan Level 9 compliance
 =======
 - [x] PHPStan Level 10 compliance
 >>>>>>> 2024e2e7 (.)
+=======
+- [x] PHPStan Level 10 compliance
+>>>>>>> f589f9b2 (.)
 - [x] Type safety implementation
 - [x] Error handling improvement
 - [x] Code documentation
@@ -344,10 +362,14 @@ User Module
 
 ### 📊 Technical Metrics
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] **PHPStan Level 9**: 0 errori ✅
 =======
 - [x] **PHPStan Level 10**: 0 errori ✅
 >>>>>>> 2024e2e7 (.)
+=======
+- [x] **PHPStan Level 10**: 0 errori ✅
+>>>>>>> f589f9b2 (.)
 - [x] **Filament 4.x**: Compatibile ✅
 - [ ] **Test Coverage**: 80% (target)
 - [ ] **Response Time**: < 200ms
@@ -512,10 +534,13 @@ User Module
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Last Updated**: 2025-10-01
 **Next Review**: 2025-11-01
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 **Status**: 🚧 ACTIVE DEVELOPMENT  
 **Confidence Level**: 98%  
 

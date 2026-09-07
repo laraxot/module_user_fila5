@@ -7,6 +7,7 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\Notification;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 
 /**
@@ -18,6 +19,10 @@ use Modules\User\Models\User;
 
 /**
 >>>>>>> 2024e2e7 (.)
+=======
+
+/**
+>>>>>>> f589f9b2 (.)
  * @extends Factory<Notification>
  */
 class NotificationFactory extends Factory
@@ -25,25 +30,34 @@ class NotificationFactory extends Factory
     /**
      * The name of the factory's corresponding model.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @var class-string<Notification>
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected $model = Notification::class;
 
     /**
      * Define the model's default state.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
      */
     /**
 >>>>>>> 2024e2e7 (.)
+=======
+     */
+    /**
+>>>>>>> f589f9b2 (.)
      * @return array<string, mixed>
      */
     public function definition(): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         return [
             'id' => $this->faker->uuid(),
@@ -141,5 +155,8 @@ class NotificationFactory extends Factory
 =======
         return [];
 >>>>>>> 2024e2e7 (.)
+=======
+        return [];
+>>>>>>> f589f9b2 (.)
     }
 }

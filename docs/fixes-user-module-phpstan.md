@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Correzioni PHPStan per il Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Correzioni PHPStan per il Modulo User
 
 ## Panoramica
@@ -177,10 +183,14 @@ Gli errori rimanenti (94) sono principalmente:
 - [Test di Validazione](../../tests/Unit/UserModulePhpstanFixesTest.php)
 - [Configurazione Password](../../config/password.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Root](../../../docs/user-module-phpstan-fixes.md)
 =======
 - [Documentazione Root](../../../../docs/user-module-phpstan-fixes.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Documentazione Root](../../../../docs/user-module-phpstan-fixes.md)
+>>>>>>> f589f9b2 (.)
 
 ## Note per il Futuro
 
@@ -190,8 +200,11 @@ Gli errori rimanenti (94) sono principalmente:
 4. **Test**: Creare sempre test di validazione per le correzioni PHPStan
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: dicembre 2024*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ## Aggiornamento verificato (2026-07-06, sessione pomeridiana)
 
 Ri-verificato con `phpstan analyse Modules/User --memory-limit=-1` (cache pulita): **0 errori**. Fix applicati in questa sessione oltre a quanto sopra:
@@ -203,4 +216,7 @@ Ri-verificato con `phpstan analyse Modules/User --memory-limit=-1` (cache pulita
 
 Dettagli completi: `docs/chat/phpstan-modules-progress-2026-07-06-pm.md` (root del repo) e `docs/wiki/second-brain/phpstan-journey.md`.
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

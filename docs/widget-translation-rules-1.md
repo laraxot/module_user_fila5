@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Widget Translation Rules - <nome progetto> Project
 
 ## Core Principles
@@ -199,6 +200,8 @@ This document serves as a reference for:
 
 All widget development should follow these rules to maintain consistency and quality across the <nome progetto> project.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: widget-translation-rules-1
@@ -215,4 +218,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/widget-translation-rules-1.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Debug: Perché logout.blade.php non funziona (Volt + Folio)
 
 ## Analisi del problema
@@ -146,6 +147,8 @@ Se vuoi mostrare una conferma, usa un pulsante con `wire:click="logout"` che ric
 - Serve una vera Volt Page o un componente Livewire che esegua il logout su mount o su evento.
 - Aggiorna la pagina Blade per richiamare il componente Livewire/Volt.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: volt-folio-logout-debug
@@ -162,4 +165,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-debug.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # UserFactory Advanced Implementation - COMPLETE ✅
 
 ## 🎉 Mission Accomplished
@@ -598,6 +599,8 @@ $gdprTests = [
 
 **🎉 MISSION ACCOMPLISHED - UserFactory Advanced Implementation Complete! 🎉**
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: userfactory-advanced-implementation-complete
@@ -614,4 +617,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/userfactory-advanced-implementation-complete.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

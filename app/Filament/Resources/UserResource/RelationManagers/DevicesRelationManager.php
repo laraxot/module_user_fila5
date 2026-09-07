@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Override;
 use Filament\Forms\Components\TextInput;
@@ -13,17 +14,23 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Modules\User\Filament\Resources\DeviceResource;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class DevicesRelationManager extends XotBaseRelationManager
 {
     protected static string $relationship = 'devices';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public static function extendTableCallback(): array
     {
@@ -38,11 +45,16 @@ class DevicesRelationManager extends XotBaseRelationManager
      */
     #[Override]
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * @return array<string, Component>
      */
     #[\Override]
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public function getFormSchema(): array
     {
         return [
@@ -50,6 +62,7 @@ class DevicesRelationManager extends XotBaseRelationManager
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     #[Override]
     public function table(Table $table): Table
@@ -62,6 +75,8 @@ class DevicesRelationManager extends XotBaseRelationManager
 
         return $table;
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * @return array<string, Column>
      */
@@ -78,6 +93,9 @@ class DevicesRelationManager extends XotBaseRelationManager
             'login_at' => TextColumn::make('login_at'),
             'logout_at' => TextColumn::make('logout_at'),
         ];
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

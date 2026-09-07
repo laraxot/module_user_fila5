@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole di Naming per File
 
 ## 🎯 Regola Fondamentale: NO Duplicati Case-Insensitive
@@ -120,6 +121,8 @@ Se entrambi i file contengono contenuto diverso:
 - Filament Best Practices
 - Git Case Sensitivity Issues
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: file-naming-rules
@@ -136,4 +139,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/file-naming-rules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

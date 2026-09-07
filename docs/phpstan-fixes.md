@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Fixes and Type System Improvements
 
 ## Overview
@@ -184,6 +185,8 @@ After applying fixes:
 - All Filament components should extend XotBase classes for consistency
 - Type system improvements enhance code reliability and maintainability 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "PHPStan Compliance — User Module"
 type: concept
@@ -302,4 +305,7 @@ it('test name', function (): void {
 
 - [Pest Scope Type Hints](../../docs/wiki/skills/pest-scope-type-hints.md)
 - [PHPStan Sacred Configuration](../../docs/wiki/rules/phpstan-neon-sacred.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

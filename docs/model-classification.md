@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # User Module - Model Classification
 
 ## Business-Relevant Models (Require Factories/Seeders)
@@ -84,6 +85,8 @@
 - Evaluate if all infrastructure models are actually used
 - Consider removing unused OAuth models if not using OAuth
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: model-classification
@@ -100,4 +103,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/model-classification-Modules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

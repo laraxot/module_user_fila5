@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto
@@ -347,6 +348,8 @@ Per evitare simili problemi in futuro:
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: registration-widget-fileupload
@@ -363,4 +366,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/registration-widget-fileupload-fix.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

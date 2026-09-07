@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Implementazione del Logout con Volt
 
 ## Il Problema
@@ -220,6 +221,8 @@ public function test_logout_clears_session()
 - [Best Practices Filament](./FILAMENT_BEST_PRACTICES.md)
 - [Routing Best Practices](./ROUTING_BEST_PRACTICES.md) 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: volt-logout
@@ -236,4 +239,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-logout.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

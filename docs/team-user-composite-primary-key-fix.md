@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Fix: team_user Composite Primary Key Implementation
 
 ## Data Intervento
@@ -263,6 +264,8 @@ $membership = Membership::where('team_id', $team->id)
 *Ultimo aggiornamento: novembre 2025*
 *Status: IMPLEMENTATO E VALIDATO*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: team-user-composite-primary-key-fix
@@ -279,4 +282,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/team-user-composite-primary-key-fix.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

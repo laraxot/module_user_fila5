@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "AssignModuleCommand - Gestione Moduli Utente"
 type: concept
@@ -16,7 +19,10 @@ related:
   - "./readme.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # AssignModuleCommand - Gestione Moduli Utente
 
 ## Descrizione
@@ -174,10 +180,14 @@ Result: No changes made to user modules.
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Console Commands Philosophy](console_commands_philosophy.md)
 =======
 - [Console Commands Philosophy](console-commands-philosophy.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Console Commands Philosophy](console-commands-philosophy.md)
+>>>>>>> f589f9b2 (.)
 - [User Models](models/readme.md)
 - [Role Management](models/role-management.md)
 - [README.md](../readme.md)
@@ -192,6 +202,9 @@ Result: No changes made to user modules.
 - ✅ **Documentazione**: Documentazione completa con esempi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-27* 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

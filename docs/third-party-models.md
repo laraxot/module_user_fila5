@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # User Module - Third-Party Model Patterns
 
 ## Spatie Permission Package Integration
@@ -235,6 +236,8 @@ $this->tableCreate(function (Blueprint $table) {
 **Maintenance**: Low - leverages package maintenance
 **Security**: High - benefits from package security updates
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: third-party-models
@@ -251,4 +254,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/third-party-model-patterns.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

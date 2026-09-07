@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'fields' => [
         'password' => [
@@ -18,11 +21,17 @@ return [
                 'max' => 'La password non può superare i 255 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
@@ -35,7 +44,10 @@ return [
                 'same' => 'Le password non coincidono',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -63,7 +75,10 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Password Data',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
     ],
 ];

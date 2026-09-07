@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Codici Autorizzazione OAuth',
         'plural_label' => 'Codici Autorizzazione OAuth',
@@ -67,6 +70,7 @@ return [
     'messages' => [
         'revoked' => 'Codice revocato con successo',
     ],
+<<<<<<< HEAD
 =======
     'navigation' => ['label' => 'Codici Autorizzazione OAuth', 'plural_label' => 'Codici Autorizzazione OAuth', 'group' => 'OAuth', 'icon' => 'heroicon-o-code-bracket', 'sort' => 31],
     'label' => 'Codice Autorizzazione OAuth',
@@ -95,4 +99,6 @@ return [
     ],
     'messages' => ['revoked' => 'Codice revocato con successo'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

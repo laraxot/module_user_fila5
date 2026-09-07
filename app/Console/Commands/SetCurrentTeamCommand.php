@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Exception;
 use Illuminate\Console\Command;
@@ -15,15 +16,24 @@ use Symfony\Component\Console\Input\InputOption;
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Console\Command;
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> f589f9b2 (.)
 
 use function Laravel\Prompts\select;
 use function Laravel\Prompts\text;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\Xot\Datas\XotData;
 
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\Xot\Datas\XotData;
+
+>>>>>>> f589f9b2 (.)
 /**
  * Comando per impostare il team corrente per un utente.
  */
@@ -32,20 +42,26 @@ class SetCurrentTeamCommand extends Command
     /**
      * The name and signature of the console command.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @var string
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected $name = 'user:set-current-team';
 
     /**
      * The console command description.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @var string
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected $description = 'Assign current team to user';
 
@@ -58,15 +74,20 @@ class SetCurrentTeamCommand extends Command
         if (empty($email)) {
             $this->error('Email non valida!');
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
             return;
         }
 
         $xot = XotData::make();
         $user = $xot->getUserByEmail($email);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         if (!($user instanceof Model)) {
             $this->error('Utente non trovato o non valido!');
@@ -75,10 +96,16 @@ class SetCurrentTeamCommand extends Command
             $this->error('Utente non trovato o non valido!');
 
 >>>>>>> 2024e2e7 (.)
+=======
+        if (! $user instanceof Model) {
+            $this->error('Utente non trovato o non valido!');
+
+>>>>>>> f589f9b2 (.)
             return;
         }
 
         $teamClass = $xot->getTeamClass();
+<<<<<<< HEAD
 <<<<<<< HEAD
         if (!class_exists($teamClass)) {
             $this->error('Classe team non trovata!');
@@ -87,6 +114,11 @@ class SetCurrentTeamCommand extends Command
             $this->error('Classe team non trovata!');
 
 >>>>>>> 2024e2e7 (.)
+=======
+        if (! class_exists($teamClass)) {
+            $this->error('Classe team non trovata!');
+
+>>>>>>> f589f9b2 (.)
             return;
         }
 
@@ -96,9 +128,13 @@ class SetCurrentTeamCommand extends Command
         if (empty($opts)) {
             $this->error('Nessun team disponibile!');
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
             return;
         }
 
@@ -110,6 +146,7 @@ class SetCurrentTeamCommand extends Command
         );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!is_numeric($team_id)) {
             $this->error('ID team non valido!');
 =======
@@ -117,10 +154,16 @@ class SetCurrentTeamCommand extends Command
             $this->error('ID team non valido!');
 
 >>>>>>> 2024e2e7 (.)
+=======
+        if (! is_numeric($team_id)) {
+            $this->error('ID team non valido!');
+
+>>>>>>> f589f9b2 (.)
             return;
         }
 
         try {
+<<<<<<< HEAD
 <<<<<<< HEAD
             $user->current_team_id = (int) $team_id;
             $user->save();
@@ -140,6 +183,8 @@ class SetCurrentTeamCommand extends Command
         ];
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
             $user->current_team_id = (string) $team_id;
             $user->save();
             $this->info('OK');
@@ -157,5 +202,8 @@ class SetCurrentTeamCommand extends Command
     //        ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
     // }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

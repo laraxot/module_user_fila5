@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Passport Complete Management - Internal Debate & Decision
 
 > **Data**: 2026-01-27  
@@ -227,6 +228,8 @@ app/Policies/OauthClientPolicy.php
 
 **Decisione Finale**: Approccio 3 (Laraxot) - Implementazione pragmatica e manutenibile che rispetta DRY e KISS.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: passport-complete-management-debate
@@ -243,4 +246,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-complete-management-debate.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

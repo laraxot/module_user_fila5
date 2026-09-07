@@ -23,6 +23,7 @@ class OauthAccessTokenPolicy extends UserBasePolicy
     public function view(UserContract $user, OauthAccessToken $oauthAccessToken): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return (
             $user->hasPermissionTo('oauth-access-token.view') ||
             $user->id === $oauthAccessToken->user_id ||
@@ -33,6 +34,11 @@ class OauthAccessTokenPolicy extends UserBasePolicy
             || $user->id === $oauthAccessToken->user_id
             || $user->hasRole('super-admin');
 >>>>>>> 2024e2e7 (.)
+=======
+        return $user->hasPermissionTo('oauth-access-token.view')
+            || $user->id === $oauthAccessToken->user_id
+            || $user->hasRole('super-admin');
+>>>>>>> f589f9b2 (.)
     }
 
     /**
@@ -57,6 +63,7 @@ class OauthAccessTokenPolicy extends UserBasePolicy
     public function delete(UserContract $user, OauthAccessToken $oauthAccessToken): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return (
             $user->hasPermissionTo('oauth-access-token.delete') ||
             $user->id === $oauthAccessToken->user_id ||
@@ -67,6 +74,11 @@ class OauthAccessTokenPolicy extends UserBasePolicy
             || $user->id === $oauthAccessToken->user_id
             || $user->hasRole('super-admin');
 >>>>>>> 2024e2e7 (.)
+=======
+        return $user->hasPermissionTo('oauth-access-token.delete')
+            || $user->id === $oauthAccessToken->user_id
+            || $user->hasRole('super-admin');
+>>>>>>> f589f9b2 (.)
     }
 
     /**

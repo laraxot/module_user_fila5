@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🐌 user module - performance issues
 
 > analisi sprechi memoria, query inefficienti, bottlenecks auth/authorization
@@ -238,6 +239,8 @@ composer require predis/predis
 **effort totale**: ~8 ore
 **impatto**: -70% query, -60% memory
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: performances
@@ -254,4 +257,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/performance-issues.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

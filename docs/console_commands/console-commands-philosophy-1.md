@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Filosofia dei Comandi Console - Modulo User"
 type: concept
@@ -19,7 +22,10 @@ related:
   - "./readme.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali

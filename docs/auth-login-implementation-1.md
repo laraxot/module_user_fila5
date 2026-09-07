@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Implementazione Corretta della Pagina di Login"
 type: concept
@@ -20,12 +23,16 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Implementazione Corretta della Pagina di Login
 
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation_keys_rules.md)
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth_pages_implementation.md)
@@ -35,6 +42,11 @@ related:
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
 - [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
+- [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
+- [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
+>>>>>>> f589f9b2 (.)
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login

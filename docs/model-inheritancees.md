@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Correzioni Ereditarietà Modelli - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Correzioni Ereditarietà Modelli - Modulo User
 
 ## Data Implementazione
@@ -211,10 +217,14 @@ cd Modules/User
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Completa](./model_inheritance_analysis.md)
 =======
 - [Analisi Completa](./model-inheritance-analysis-5.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Analisi Completa](./model-inheritance-analysis-5.md)
+>>>>>>> f589f9b2 (.)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -409,10 +419,14 @@ cd Modules/User
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Completa](./model_inheritance_analysis.md)
 =======
 - [Analisi Completa](./model-inheritance-analysis-5.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Analisi Completa](./model-inheritance-analysis-5.md)
+>>>>>>> f589f9b2 (.)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -607,10 +621,14 @@ cd Modules/User
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Completa](./model_inheritance_analysis.md)
 =======
 - [Analisi Completa](./model-inheritance-analysis-5.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Analisi Completa](./model-inheritance-analysis-5.md)
+>>>>>>> f589f9b2 (.)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)

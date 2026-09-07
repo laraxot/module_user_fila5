@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Actions\User;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
@@ -21,6 +22,8 @@ use Spatie\QueueableAction\QueueableAction;
  * Può essere estesa dai moduli specifici per aggiungere logica personalizzata.
  */
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Contracts\Hashing\Hasher;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\Model;
@@ -29,7 +32,10 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Psr\Log\LoggerInterface;
 use Spatie\QueueableAction\QueueableAction;
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 class UpdateUserAction
 {
     use QueueableAction;
@@ -37,6 +43,7 @@ class UpdateUserAction
     /**
      * Esegue l'aggiornamento dell'utente.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @param Model $user L'utente da aggiornare
      * @param array<string, mixed> $data I dati da aggiornare
@@ -55,6 +62,8 @@ class UpdateUserAction
             // Valida i dati specifici per l'aggiornamento
             $this->validateUpdateData($user, $updateData);
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * @param Model                $user L'utente da aggiornare
      * @param array<string, mixed> $data I dati da aggiornare
      *
@@ -78,7 +87,10 @@ class UpdateUserAction
 
             // Valida i dati specifici per l'aggiornamento
             $this->validateUpdateData($user, $updateData, $validationException);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
             // Aggiorna l'utente
             $user->fill($updateData);
@@ -88,6 +100,7 @@ class UpdateUserAction
             $this->afterUpdate($user, $updateData);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             DB::commit();
 
             Log::info('Utente aggiornato con successo', [
@@ -96,11 +109,17 @@ class UpdateUserAction
 
             $logger->info('Utente aggiornato con successo', [
 >>>>>>> 2024e2e7 (.)
+=======
+            $dbManager->commit();
+
+            $logger->info('Utente aggiornato con successo', [
+>>>>>>> f589f9b2 (.)
                 'user_id' => $user->getKey(),
                 'updated_fields' => array_keys($updateData),
             ]);
 
             $updatedUser = $user->fresh();
+<<<<<<< HEAD
 <<<<<<< HEAD
             if (!($updatedUser instanceof Model)) {
                 throw new Exception('Failed to refresh user model after update');
@@ -112,6 +131,8 @@ class UpdateUserAction
 
             Log::error("Errore nell'aggiornamento utente", [
 =======
+=======
+>>>>>>> f589f9b2 (.)
             if (! $updatedUser instanceof Model) {
                 throw new \Exception('Failed to refresh user model after update');
             }
@@ -121,7 +142,10 @@ class UpdateUserAction
             $dbManager->rollBack();
 
             $logger->error("Errore nell'aggiornamento utente", [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                 'user_id' => $user->getKey(),
                 'error' => $e->getMessage(),
                 'data' => $updateData ?? [],
@@ -136,15 +160,21 @@ class UpdateUserAction
      *
      * @param array<string, mixed> $data
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, mixed>
      */
     protected function prepareUpdateData(array $data): array
 =======
+=======
+>>>>>>> f589f9b2 (.)
      *
      * @return array<string, mixed>
      */
     protected function prepareUpdateData(array $data, Hasher $hasher, SafeStringCastAction $safeStringCast): array
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     {
         // Rimuovi campi che non dovrebbero essere aggiornati direttamente
         $excludeFields = [
@@ -163,25 +193,35 @@ class UpdateUserAction
                 // Se la password è vuota, rimuovila dai dati di aggiornamento
                 unset($updateData['password']);
 <<<<<<< HEAD
+<<<<<<< HEAD
             } else {
                 // Hash della password se presente
                 $updateData['password'] = Hash::make(SafeStringCastAction::cast($updateData['password']));
 =======
+=======
+>>>>>>> f589f9b2 (.)
             }
             // Hash della password se presente, e se non è stata rimossa perché vuota
             if (isset($updateData['password'])) {
                 $updateData['password'] = $hasher->make($safeStringCast->execute($updateData['password']));
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             }
         }
 
         // Gestione dell'email per evitare duplicati
         if (isset($updateData['email'])) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $email = SafeStringCastAction::cast($updateData['email']);
 =======
             $email = $safeStringCast->execute($updateData['email']);
 >>>>>>> 2024e2e7 (.)
+=======
+            $email = $safeStringCast->execute($updateData['email']);
+>>>>>>> f589f9b2 (.)
             $updateData['email'] = strtolower($email);
         }
 
@@ -192,6 +232,7 @@ class UpdateUserAction
      * Valida i dati di aggiornamento.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param Model $user
      * @param array<string, mixed> $data
      * @return void
@@ -200,12 +241,17 @@ class UpdateUserAction
      */
     protected function validateUpdateData(Model $user, array $data): void
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * @param array<string, mixed> $data
      *
      * @throws ValidationException
      */
     protected function validateUpdateData(Model $user, array $data, ValidationException $validationException): void
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     {
         // Validazione email univoca
         if (isset($data['email'])) {
@@ -217,12 +263,16 @@ class UpdateUserAction
 
             if ($existingUser) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 throw ValidationException::withMessages([
                     'email' => __('user::validation.email_already_taken'),
                 ]);
 =======
                 throw $validationException->withMessages(['email' => __('user::validation.email_already_taken')]);
 >>>>>>> 2024e2e7 (.)
+=======
+                throw $validationException->withMessages(['email' => __('user::validation.email_already_taken')]);
+>>>>>>> f589f9b2 (.)
             }
         }
 
@@ -235,12 +285,16 @@ class UpdateUserAction
      * Può essere sovrascritto dalle classi che estendono questa action.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param Model $user
      * @param array<string, mixed> $data
      * @return void
 =======
      * @param array<string, mixed> $data
 >>>>>>> 2024e2e7 (.)
+=======
+     * @param array<string, mixed> $data
+>>>>>>> f589f9b2 (.)
      */
     protected function afterUpdate(Model $user, array $data): void
     {
@@ -251,9 +305,14 @@ class UpdateUserAction
         // - Registrare log di audit
         // - Gestire relazioni
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // Mark parameters as unused to satisfy PHPMD
         unset($user, $data);
 >>>>>>> 2024e2e7 (.)
+=======
+        // Mark parameters as unused to satisfy PHPMD
+        unset($user, $data);
+>>>>>>> f589f9b2 (.)
     }
 }

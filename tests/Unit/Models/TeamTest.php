@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\User\Tests\Unit\Models;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -251,6 +252,8 @@ class TeamTest extends TestCase
     }
 }
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Modules\User\Database\Factories\TeamFactory;
@@ -487,4 +490,7 @@ test('can find teams by multiple criteria', function (): void {
     Assert::assertSame($devName, $first->name);
     Assert::assertFalse((bool) $first->personal_team);
 });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

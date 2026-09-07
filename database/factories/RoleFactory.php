@@ -9,26 +9,34 @@ use Modules\User\Models\Role;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Factory per il modello Role del modulo User.
  *
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @extends Factory<Role>
  */
 class RoleFactory extends Factory
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Il nome del modello corrispondente alla factory.
 =======
      * The name of the factory's corresponding model.
 >>>>>>> 2024e2e7 (.)
+=======
+     * The name of the factory's corresponding model.
+>>>>>>> f589f9b2 (.)
      *
      * @var class-string<Role>
      */
     protected $model = Role::class;
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Definisce lo stato di default del modello.
      *
@@ -107,6 +115,8 @@ class RoleFactory extends Factory
         ]);
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * Define the model's default state.
      *
      * @return array<string, mixed>
@@ -122,5 +132,8 @@ class RoleFactory extends Factory
             'team_id' => null,
         ];
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

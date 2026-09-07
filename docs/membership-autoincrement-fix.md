@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Fix: Duplicate Entry Error in team_user Table - Conversione UUID a Autoincrement
 
 ## Data Intervento
@@ -218,6 +219,8 @@ Quando si crea un modello pivot che usa autoincrement come PRIMARY KEY:
 
 *Ultimo aggiornamento: gennaio 2025*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: membership-autoincrement-fix
@@ -234,4 +237,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/membership-autoincrement-fix.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

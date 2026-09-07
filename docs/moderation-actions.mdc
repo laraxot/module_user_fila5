@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description:
 globs:
 alwaysApply: false
@@ -51,10 +52,15 @@ class ApproveUserAction
 - [Configurazione Stati Utente](mdc:USER_STATES.mdc)
 - [Notifiche Moderazione](mdc:MODERATION_NOTIFICATIONS.mdc)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 module: theme
 topic: moderation-actions
 canonical: ../../../Themes/docs/shared-components/moderation-actions.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/moderation-actions.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

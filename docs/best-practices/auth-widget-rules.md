@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Regole per Widget di Autenticazione"
 type: rule
@@ -20,7 +23,10 @@ related:
   - "./dependency.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Regole per Widget di Autenticazione
 
 ## ERRORE CRITICO DA NON RIPETERE MAI
@@ -166,10 +172,14 @@ tests/Feature/Filament/Widgets/
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Widget Structure](widgets_structure.md)
 =======
 - [Widget Structure](widgets-structure-2.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Widget Structure](widgets-structure-2.md)
+>>>>>>> f589f9b2 (.)
 - [Filament Best Practices](filament_best_practices.md)
 - [Authentication Architecture](authentication.md)
 - [Security Guidelines](security_guidelines.md)

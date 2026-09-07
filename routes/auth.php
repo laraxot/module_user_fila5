@@ -3,11 +3,14 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 use Modules\User\Http\Controllers\Auth\VerifyEmailController;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 /*
 Route::prefix('{lang}')->group(function () {
     Route::middleware('guest')->group(function () {
@@ -31,7 +34,11 @@ Route::prefix('{lang}')->group(function () {
     });
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 */
 =======
 */
 >>>>>>> 2024e2e7 (.)
+=======
+*/
+>>>>>>> f589f9b2 (.)

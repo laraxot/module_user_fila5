@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "User Module Policies Documentation"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # User Module Policies Documentation
 
 ## Overview
@@ -306,10 +312,14 @@ Test policy integration with Filament resources and controllers.
 ## Related Documentation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Main Policies Documentation](../../../docs/policies_implementation.md)
 =======
 - [Main Policies Documentation](../../../../docs/policies_implementation.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Main Policies Documentation](../../../../docs/policies_implementation.md)
+>>>>>>> f589f9b2 (.)
 - [User Authentication](./authentication.md)
 - [Permissions and Roles](./permissions.md)
 - [Team Management](./teams.md)

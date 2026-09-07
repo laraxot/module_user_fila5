@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'column.guard_name' => 'Guard-Name',
     'column.name' => 'Name',
@@ -16,10 +19,14 @@ return [
     'field.name' => 'Name',
     'field.permissions' => 'Berechtigungen',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'field.select_all.message' => 'Aktivierung aller Berechtigungen, die derzeit für diese Rolle <span class=\"text-primary font-medium\">aktiviert</span> sind',
 =======
     'field.select_all.message' => 'Aktivierung aller Berechtigungen, die derzeit für diese Rolle <span class=\\"text-primary font-medium\\">aktiviert</span> sind',
 >>>>>>> 2024e2e7 (.)
+=======
+    'field.select_all.message' => 'Aktivierung aller Berechtigungen, die derzeit für diese Rolle <span class=\\"text-primary font-medium\\">aktiviert</span> sind',
+>>>>>>> f589f9b2 (.)
     'field.select_all.name' => 'Alle auswählen',
     'nav.group' => 'Filament Shield',
     'nav.role.icon' => 'heroicon-o-shield-check',
@@ -45,7 +52,10 @@ return [
         'restore_any' => 'Alle wiederherstellen',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -59,5 +69,8 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

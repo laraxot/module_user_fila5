@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Http\Livewire\Auth;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Livewire\Component;
 use Filament\Schemas\Schema;
 use Webmozart\Assert\Assert;
@@ -21,6 +22,8 @@ use Livewire\Features\SupportRedirects\Redirector;
 use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Illuminate\Validation\Rules\Password as PasswordRule;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
@@ -37,7 +40,10 @@ use Modules\Xot\Actions\File\ViewCopyAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 /**
  * @property Schema $form
@@ -52,10 +58,14 @@ class Register extends Component implements HasSchemas
      * @var array<string, mixed>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public array $data = [];
 =======
     public $data = [];
 >>>>>>> 2024e2e7 (.)
+=======
+    public $data = [];
+>>>>>>> f589f9b2 (.)
 
     /**
      * Mount the component.
@@ -75,38 +85,50 @@ class Register extends Component implements HasSchemas
                 TextInput::make('name')
                     ->required()
 <<<<<<< HEAD
+<<<<<<< HEAD
                     ->label(__('Name'))
                     ->placeholder(__('Enter your name'))
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                     ->autofocus(),
                 TextInput::make('email')
                     ->email()
                     ->required()
 <<<<<<< HEAD
+<<<<<<< HEAD
                     ->label(__('Email'))
                     ->placeholder(__('Enter your email'))
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                     ->unique('users', 'email'),
                 TextInput::make('password')
                     ->password()
                     ->required()
 <<<<<<< HEAD
+<<<<<<< HEAD
                     ->label(__('Password'))
                     ->placeholder(__('Enter your password'))
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                     ->rules([PasswordRule::defaults()])
                     ->revealable(),
                 TextInput::make('password_confirmation')
                     ->password()
                     ->required()
 <<<<<<< HEAD
+<<<<<<< HEAD
                     ->label(__('Confirm Password'))
                     ->placeholder(__('Confirm your password'))
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                     ->same('password')
                     ->revealable(),
             ])
@@ -124,10 +146,14 @@ class Register extends Component implements HasSchemas
         Assert::string($data['password']);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var UserContract */
 =======
         /** @var UserContract $user */
 >>>>>>> 2024e2e7 (.)
+=======
+        /** @var UserContract $user */
+>>>>>>> f589f9b2 (.)
         $user = $user_class::create([
             'email' => $data['email'],
             'name' => $data['name'],
@@ -135,12 +161,17 @@ class Register extends Component implements HasSchemas
         ]);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         event(new Registered($user));
 
 =======
         Assert::isInstanceOf($user, Authenticatable::class);
         event(new Registered($user));
 >>>>>>> 2024e2e7 (.)
+=======
+        Assert::isInstanceOf($user, Authenticatable::class);
+        event(new Registered($user));
+>>>>>>> f589f9b2 (.)
         Auth::login($user, true);
 
         return redirect()->intended(route('home'));

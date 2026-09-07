@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Level 10 - Successo Completo
 
 ## 🎉 Risultato Finale
@@ -58,6 +59,8 @@ Tutte le correzioni seguono rigorosamente:
 - [PHPStan Progress Report](./phpstan-progress-report.md)
 - [PHPStan Corrections Summary](./phpstan-corrections-summary-2025.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpstan-complete-success
@@ -74,4 +77,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-complete-success.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

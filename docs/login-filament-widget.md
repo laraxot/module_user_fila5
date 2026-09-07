@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Risoluzione Errori LoginWidget Filament
 
 ## Introduzione
@@ -175,6 +176,8 @@ Seguendo queste linee guida, dovresti essere in grado di risolvere la maggior pa
 
 Ricorda: **I problemi di vista dovrebbero essere risolti a livello di componente, non modificando i ServiceProvider di base.**
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: login-filament-widget
@@ -191,4 +194,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/login-filament-widget-error.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

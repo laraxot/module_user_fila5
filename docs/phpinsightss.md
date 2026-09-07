@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -365,6 +366,8 @@ Traits ......................................................... 2.9 %
 
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpinsightss
@@ -381,4 +384,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-errors.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

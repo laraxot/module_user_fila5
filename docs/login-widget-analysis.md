@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Analisi Dettagliata di LoginWidget"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Analisi Dettagliata di LoginWidget
 
 **File**: `Modules/User/app/Filament/Widgets/LoginWidget.php`
@@ -37,10 +43,14 @@ related:
 
 ## Metodo getFormSchema()
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Inizialmente definito come `public static function getFormSchema(): array`.
 =======
 - Inizialmente definito come `public function getFormSchema(): array`.
 >>>>>>> 2024e2e7 (.)
+=======
+- Inizialmente definito come `public static function getFormSchema(): array`.
+>>>>>>> f589f9b2 (.)
   - **Issue**: firma statica non compatibile con l’astrazione di `XotBaseWidget`, che richiede un metodo d’istanza `public function getFormSchema(): array`.
   - Motivo: PHP non permette di sovrascrivere un metodo di istanza con uno statico.
 - Restituisce array associativo con componenti.
@@ -96,11 +106,16 @@ related:
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [WIDGETS_STRUCTURE.md](../widgets_structure.md) — Regole di struttura per widget Filament nel modulo User.
 =======
 - [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md) — Regole di struttura per widget Filament nel modulo User.
 - [WIDGETS_STRUCTURE.md](../widgets-structure-2.md) — Regole di struttura per widget Filament nel modulo User.
 >>>>>>> 2024e2e7 (.)
+=======
+- [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md) — Regole di struttura per widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../widgets-structure-2.md) — Regole di struttura per widget Filament nel modulo User.
+>>>>>>> f589f9b2 (.)
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
 - [login-widget-conversion.md](login-widget-conversion.md) — Conversione del componente Livewire a LoginWidget.
 # Analisi Dettagliata di LoginWidget
@@ -119,10 +134,14 @@ related:
 
 ## Metodo getFormSchema()
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Inizialmente definito come `public static function getFormSchema(): array`.
 =======
 - Inizialmente definito come `public function getFormSchema(): array`.
 >>>>>>> 2024e2e7 (.)
+=======
+- Inizialmente definito come `public static function getFormSchema(): array`.
+>>>>>>> f589f9b2 (.)
   - **Issue**: firma statica non compatibile con l’astrazione di `XotBaseWidget`, che richiede un metodo d’istanza `public function getFormSchema(): array`.
   - Motivo: PHP non permette di sovrascrivere un metodo di istanza con uno statico.
 - Restituisce array associativo con componenti.
@@ -178,6 +197,7 @@ related:
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [WIDGETS_STRUCTURE.md](../widgets_structure.md) — Regole di struttura per widget Filament nel modulo User.
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
 - [login-widget-conversion.md](login-widget-conversion.md) — Conversione del componente Livewire a LoginWidget.
@@ -187,3 +207,9 @@ related:
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
 - [login-widget-conversion.md](login-widget-conversion.md) — Conversione del componente Livewire a LoginWidget.
 >>>>>>> 2024e2e7 (.)
+=======
+- [WIDGETS_STRUCTURE.md](../WIDGETS_STRUCTURE.md) — Regole di struttura per widget Filament nel modulo User.
+- [WIDGETS_STRUCTURE.md](../widgets-structure-2.md) — Regole di struttura per widget Filament nel modulo User.
+- [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse Filament.
+- [login-widget-conversion.md](login-widget-conversion.md) — Conversione del componente Livewire a LoginWidget.
+>>>>>>> f589f9b2 (.)

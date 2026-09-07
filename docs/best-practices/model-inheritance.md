@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Regole di Ereditarietà dei Modelli - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./dependency-rules.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Regole di Ereditarietà dei Modelli - Modulo User
 
 **Contesto**: Refactoring per garantire la corretta gerarchia di ereditarietà dei modelli
@@ -301,9 +307,12 @@ Il comando dovrebbe restituire solo:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 15 ottobre 2025*
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 *Autore: Refactoring automatico con Claude Code*
 
 ## Aggiornamento 2025-11

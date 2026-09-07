@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Ottimizzazioni Super DRY + KISS - Modulo User
 
 ## 🎯 Panoramica
@@ -363,6 +364,8 @@ class User extends Model
 **Stato:** In Analisi
 **Priorità:** CRITICA
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: ottimizzazioni-superry-kiss
@@ -379,4 +382,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-super-dry-kiss-Modules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

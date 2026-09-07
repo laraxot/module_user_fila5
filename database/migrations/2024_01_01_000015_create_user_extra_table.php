@@ -11,10 +11,14 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  */
 return new class extends XotBaseMigration {
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected null|string $model_class = Extra::class;
 =======
     protected ?string $model_class = Extra::class;
 >>>>>>> 2024e2e7 (.)
+=======
+    protected ?string $model_class = Extra::class;
+>>>>>>> f589f9b2 (.)
 
     /**
      * Run the migrations.
@@ -31,6 +35,7 @@ return new class extends XotBaseMigration {
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
             // if (! $this->hasColumn('name')) {
             //    $table->string('name')->nullable();
             // }
@@ -42,6 +47,8 @@ return new class extends XotBaseMigration {
             if ($this->hasColumn('model_id') && $this->getColumnType('model_id') === 'bigint') {
                 $table->string('model_id', 36)->index()->change();
 =======
+=======
+>>>>>>> f589f9b2 (.)
             // if (! $this->hasColumn('name'))
             //    $table->string('name')->nullable();
             // }
@@ -52,7 +59,10 @@ return new class extends XotBaseMigration {
                 if (! $this->hasIndex('model_id')) {
                     $table->index('model_id');
                 }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             }
         });
     }

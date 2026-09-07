@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "BaseUser - Analisi Violazione Principio DRY"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # BaseUser - Analisi Violazione Principio DRY
 
 **Data**: 15 Ottobre 2025  
@@ -456,12 +462,17 @@ test('hasRole works with guard parameter', function () {
 
 ### Root Progetto
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [DRY Violations](../../../docs/dry-violations-analysis.md)
 - [Code Quality](../../../docs/code-quality-analysis.md)
 =======
 - [DRY Violations](../../../../docs/dry-violations-analysis.md)
 - [Code Quality](../../../../docs/code-quality-analysis.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [DRY Violations](../../../../docs/dry-violations-analysis.md)
+- [Code Quality](../../../../docs/code-quality-analysis.md)
+>>>>>>> f589f9b2 (.)
 
 ## Conclusioni
 

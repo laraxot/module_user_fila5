@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Override;
 use Illuminate\Database\Eloquent\Model;
@@ -36,6 +37,8 @@ use Modules\Xot\Filament\Traits\TransTrait;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Webmozart\Assert\Assert;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Facades\Filament;
@@ -52,11 +55,15 @@ use Modules\User\Rules\CheckOtpExpiredRule;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Traits\TransTrait;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 /**
  * Widget for handling expired password reset.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property \Filament\Schemas\Schema $form
  * @property string|null $current_password
@@ -79,6 +86,8 @@ class PasswordExpiredWidget extends XotBaseWidget implements HasForms
     /**
      * @var view-string
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property Schema                    $form
  * @property string|null               $current_password
  * @property string|null               $password
@@ -101,7 +110,10 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
 
     /**
      * The view for this widget.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected string $view = 'user::filament.widgets.password-expired';
 
@@ -110,6 +122,7 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
     /**
      * Get the form schema for password reset.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return array<int, \Filament\Schemas\Components\Component>
      */
@@ -121,6 +134,8 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
             ...PasswordData::make()->getPasswordFormComponents('password'),
         ];
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * @return array<int, Component>
      */
     public function getFormSchema(): array
@@ -133,16 +148,22 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
         // Ensure list type for PHPStan Level 10
         /* @var array<int, Component> $schema */
         return array_values($schema);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     /**
      * Get the reset password form action.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return Action
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     public function getResetPasswordFormAction(): Action
     {
@@ -152,10 +173,13 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
     /**
      * Check if the widget should display a logo.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return bool
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     public function hasLogo(): bool
     {
@@ -165,6 +189,7 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
     /**
      * Reset the user's password.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return PasswordResetResponse|null
      */
@@ -173,10 +198,15 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
      */
     public function resetPassword(): ?PasswordResetResponse
 >>>>>>> 2024e2e7 (.)
+=======
+     */
+    public function resetPassword(): ?PasswordResetResponse
+>>>>>>> f589f9b2 (.)
     {
         $this->validate();
 
         $user = Auth::user();
+<<<<<<< HEAD
 <<<<<<< HEAD
         if (!$user || !($user instanceof Model)) {
             $this->addError('current_password', __('user::auth.user_not_found'));
@@ -185,6 +215,11 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
             $this->addError('current_password', __('user::auth.user_not_found'));
 
 >>>>>>> 2024e2e7 (.)
+=======
+        if (! $user || ! ($user instanceof Model)) {
+            $this->addError('current_password', __('user::auth.user_not_found'));
+
+>>>>>>> f589f9b2 (.)
             return null;
         }
 
@@ -196,9 +231,13 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
         if (empty($currentPassword) || empty($newPassword)) {
             $this->addError('current_password', __('user::auth.password_fields_required'));
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
             return null;
         }
 
@@ -207,6 +246,7 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
         $userPasswordString = $userPassword;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!Hash::check($currentPassword, $userPasswordString)) {
             $this->addError('current_password', __('user::auth.password_current_incorrect'));
 =======
@@ -214,6 +254,11 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
             $this->addError('current_password', __('user::auth.password_current_incorrect'));
 
 >>>>>>> 2024e2e7 (.)
+=======
+        if (! Hash::check($currentPassword, $userPasswordString)) {
+            $this->addError('current_password', __('user::auth.password_current_incorrect'));
+
+>>>>>>> f589f9b2 (.)
             return null;
         }
 
@@ -226,10 +271,13 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
     /**
      * Get the current password form component.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return \Filament\Schemas\Components\Component
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected function getCurrentPasswordFormComponent(): Component
     {
@@ -285,9 +333,12 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
      * @return array<int, Action|ActionGroup>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     protected function getFormActions(): array
     {
         return [

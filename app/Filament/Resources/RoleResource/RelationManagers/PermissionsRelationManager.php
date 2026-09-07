@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\RoleResource\RelationManagers;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Override;
 use Filament\Forms\Components\TextInput;
@@ -18,6 +19,8 @@ use Filament\Schemas\Schema;
 use Filament\Tables;
 use Filament\Tables\Table;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Actions\Action;
 use Filament\Actions\BulkAction;
 use Filament\Actions\CreateAction;
@@ -28,7 +31,10 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class PermissionsRelationManager extends XotBaseRelationManager
@@ -36,35 +42,49 @@ class PermissionsRelationManager extends XotBaseRelationManager
     protected static string $relationship = 'permissions';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     protected static ?string $recordTitleAttribute = 'name';
 
 >>>>>>> 2024e2e7 (.)
+=======
+    protected static ?string $recordTitleAttribute = 'name';
+
+>>>>>>> f589f9b2 (.)
     /**
      * Configura lo schema del form per la gestione dei permessi.
      *
      * @return array<string, Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function getFormSchema(): array
     {
         return [
             'name' => TextInput::make('name')
                 ->required()
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->maxLength(255)
                 ->placeholder(__('Inserisci il nome del permesso')),
 =======
                 ->maxLength(255),
 >>>>>>> 2024e2e7 (.)
+=======
+                ->maxLength(255),
+>>>>>>> f589f9b2 (.)
         ];
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Configura la tabella per la visualizzazione e la gestione dei permessi.
      */
@@ -88,6 +108,8 @@ class PermissionsRelationManager extends XotBaseRelationManager
                 DeleteBulkAction::make()->tooltip(__('Elimina i permessi selezionati')),
             ]);
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * @return array<string, Column>
      */
     #[\Override]
@@ -130,6 +152,9 @@ class PermissionsRelationManager extends XotBaseRelationManager
         return [
             'delete' => DeleteBulkAction::make(),
         ];
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

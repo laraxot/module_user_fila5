@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'name' => 'Login',
     'fields' => [
@@ -14,29 +17,44 @@ return [
             'placeholder' => 'Enter your email',
             'helper_text' => 'Email address to login',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Enter your password',
             'helper_text' => 'Login password',
 <<<<<<< HEAD
-=======
-            'tooltip' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
-        ],
-        'remember' => [
-            'label' => 'Remember me',
-            'helper_text' => 'Keep session active',
 <<<<<<< HEAD
 =======
             'tooltip' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
+        ],
+        'remember' => [
+            'label' => 'Remember me',
+            'helper_text' => 'Keep session active',
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'actions' => [
@@ -64,7 +82,10 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -74,5 +95,8 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

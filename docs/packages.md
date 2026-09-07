@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Pacchetti del Modulo User
 
 ## Pacchetti Utilizzati
@@ -70,6 +71,8 @@
 ### Versione Incoming
 ---
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: packages
@@ -86,4 +89,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/packages.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

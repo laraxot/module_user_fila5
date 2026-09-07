@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Passport Cluster - Status Completamento
 
 **Data**: 2025-01-22
@@ -199,6 +200,8 @@ Alcune risorse non hanno tutte le pages standard:
 **Versione**: 1.0.0
 **Status**: ✅ Completato e verificato
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: passport-cluster-completion-status
@@ -215,4 +218,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-completion-status.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

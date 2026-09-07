@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Guida agli Stili, Tabelle e Immagini
 
 Questa guida illustra come applicare stili CSS, creare layout con tabelle e gestire le immagini nei PDF generati con Html2Pdf.
@@ -139,6 +140,8 @@ $src = 'data:image/png;base64,' . $imageData;
 return view('pdf.template', compact('src'));
 ```
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: styling
@@ -152,4 +155,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/styling.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

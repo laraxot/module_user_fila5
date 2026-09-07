@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Notifications\Auth;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Notifications\AnonymousNotifiable;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -12,6 +13,8 @@ use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Modules\User\Datas\PasswordData;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\AnonymousNotifiable;
@@ -19,7 +22,10 @@ use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Contracts\UserContract;
 
 class Otp extends Notification implements ShouldQueue
@@ -40,10 +46,14 @@ class Otp extends Notification implements ShouldQueue
      * Get the notification's delivery channels.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  mixed  $_notifiable L'entità da notificare
 =======
      * @param  mixed  $_notifiable  L'entità da notificare
 >>>>>>> 2024e2e7 (.)
+=======
+     * @param  mixed  $_notifiable  L'entità da notificare
+>>>>>>> f589f9b2 (.)
      * @return array<int, string>
      */
     public function via(mixed $_notifiable): array
@@ -53,6 +63,7 @@ class Otp extends Notification implements ShouldQueue
 
     /**
      * Get the mail representation of the notification.
+<<<<<<< HEAD
 <<<<<<< HEAD
      *
      * @param AnonymousNotifiable $notifiable
@@ -74,6 +85,8 @@ class Otp extends Notification implements ShouldQueue
             ->action('vai', url('/'))
             ->salutation(__('user::otp.mail.salutation', ['app_name' => $app_name]));
 =======
+=======
+>>>>>>> f589f9b2 (.)
      */
     public function toMail(AnonymousNotifiable $notifiable): MailMessage
     {
@@ -91,12 +104,16 @@ class Otp extends Notification implements ShouldQueue
 
         return $mailMessage
             ->salutation(SafeStringCastAction::cast(__('user::otp.mail.salutation', ['app_name' => $app_name])));
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     /**
      * Get the array representation of the notification.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return array
      */
@@ -106,6 +123,11 @@ class Otp extends Notification implements ShouldQueue
      */
     public function toArray(UserContract $notifiable): array
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return array<string, mixed>
+     */
+    public function toArray(UserContract $notifiable): array
+>>>>>>> f589f9b2 (.)
     {
         return [];
     }

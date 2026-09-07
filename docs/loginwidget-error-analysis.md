@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Analisi Errore LoginWidget: Problema Logico e Soluzione"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Analisi Errore LoginWidget: Problema Logico e Soluzione
 
 ## Problema Identificato
@@ -200,8 +206,12 @@ class LoginWidget extends XotBaseWidget
 
 - [XotBaseWidget](Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Widget Structure](modules/user/widgets_structure.md)
 =======
 - [Documentazione Widget Structure](modules/user/widgets-structure-2.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Documentazione Widget Structure](modules/user/widgets-structure-2.md)
+>>>>>>> f589f9b2 (.)
 - [Best Practices Widget Filament](modules/user/best-practices/filament-widgets.md) 

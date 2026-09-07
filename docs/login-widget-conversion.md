@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Conversione Livewire Auth/Login a Filament LoginWidget
 
 ## Analisi del componente Livewire
@@ -165,6 +166,8 @@ class LoginWidget extends XotBaseWidget
 - [filament_best_practices.md](filament_best_practices.md) — Best practices per risorse e widget Filament.
 - [login-improvements.md](../../../themes/twentyone/docs/login-improvements.md) — Analisi e miglioramenti della pagina di login nel tema TwentyOne.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: login-widget-conversion
@@ -181,4 +184,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/login-widget-conversion.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

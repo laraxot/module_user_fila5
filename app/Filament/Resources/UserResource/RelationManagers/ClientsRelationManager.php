@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Override;
 use Filament\Actions\CreateAction;
@@ -17,6 +18,8 @@ use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Actions\Action;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
@@ -26,13 +29,17 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Foundation\Auth\User as AuthUser;
 use Modules\User\Models\OauthClient;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class ClientsRelationManager extends XotBaseRelationManager
 {
     protected static string $relationship = 'clients';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * @return array<string, Component>
@@ -70,6 +77,8 @@ class ClientsRelationManager extends XotBaseRelationManager
                 // {{ tableEmptyStateActions }}
             ]);
 =======
+=======
+>>>>>>> f589f9b2 (.)
     protected static ?string $recordTitleAttribute = 'name';
 
     /**
@@ -182,6 +191,9 @@ class ClientsRelationManager extends XotBaseRelationManager
             });
 
         return $actions;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

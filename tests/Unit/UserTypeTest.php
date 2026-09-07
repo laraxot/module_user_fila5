@@ -3,22 +3,31 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Tests\TestCase;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Modules\User\Enums\UserType;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+>>>>>>> f589f9b2 (.)
 
 uses(TestCase::class);
 
 test('user type enum has correct cases', function (): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
     expect(UserType::cases())->toHaveCount(5);
 
@@ -28,18 +37,24 @@ test('user type enum has correct cases', function (): void {
     expect(UserType::System->value)->toBe('system');
     expect(UserType::Technician->value)->toBe('technician');
 =======
+=======
+>>>>>>> f589f9b2 (.)
     Assert::assertCount(5, UserType::cases());
     Assert::assertSame('master_admin', UserType::MasterAdmin->value);
     Assert::assertSame('backoffice_user', UserType::BoUser->value);
     Assert::assertSame('customer_user', UserType::CustomerUser->value);
     Assert::assertSame('system', UserType::System->value);
     Assert::assertSame('technician', UserType::Technician->value);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });
 
 test('user type enum implements required interfaces', function (): void {
     $reflection = new ReflectionClass(UserType::class);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     expect($reflection->implementsInterface(HasColor::class))->toBeTrue();
     expect($reflection->implementsInterface(HasIcon::class))->toBeTrue();
@@ -98,6 +113,8 @@ test('user type enum can be compared', function (): void {
 test('user type enum can be used in match statements', function (): void {
     $getMatchResult = function (UserType $type): string {
 =======
+=======
+>>>>>>> f589f9b2 (.)
     Assert::assertTrue($reflection->implementsInterface(HasColor::class));
     Assert::assertTrue($reflection->implementsInterface(HasIcon::class));
     Assert::assertTrue($reflection->implementsInterface(HasLabel::class));
@@ -142,7 +159,10 @@ test('user type enum can be compared', function (): void {
 
 test('user type enum can be used in match statements', function (): void {
     $getMatchResult = static function (UserType $type): string {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         return match ($type) {
             UserType::MasterAdmin => 'admin',
             UserType::BoUser => 'backoffice',
@@ -152,6 +172,7 @@ test('user type enum can be used in match statements', function (): void {
         };
     };
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     expect($getMatchResult(UserType::MasterAdmin))->toBe('admin');
     expect($getMatchResult(UserType::BoUser))->toBe('backoffice');
@@ -180,6 +201,8 @@ test('user type enum has correct string representation', function (): void {
     expect(UserType::System->value)->toBe('system');
     expect(UserType::Technician->value)->toBe('technician');
 =======
+=======
+>>>>>>> f589f9b2 (.)
     Assert::assertSame('admin', $getMatchResult(UserType::MasterAdmin));
     Assert::assertSame('backoffice', $getMatchResult(UserType::BoUser));
     Assert::assertSame('customer', $getMatchResult(UserType::CustomerUser));
@@ -199,5 +222,8 @@ test('user type enum can be unserialized', function (): void {
 
     Assert::assertInstanceOf(UserType::class, $unserialized);
     Assert::assertSame(UserType::MasterAdmin, $unserialized);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

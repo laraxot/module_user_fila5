@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "User Module - Roadmap, Issues & Optimization"
 type: concept
@@ -20,17 +23,24 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # User Module - Roadmap, Issues & Optimization
 
 **Modulo**: User (Authentication, Authorization, Profiles)  
 **Data Analisi**: 1 Ottobre 2025  
 **Maintainer**: Team FixCity  
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status PHPStan**: ⚠️ 95 errori (Level 9)
 =======
 **Status PHPStan**: ⚠️ 95 errori (Level 10)
 >>>>>>> 2024e2e7 (.)
+=======
+**Status PHPStan**: ⚠️ 95 errori (Level 10)
+>>>>>>> f589f9b2 (.)
 
 ---
 
@@ -51,10 +61,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔴 ERRORI PHPSTAN DA CORREGGERE (95)
 =======
 ## 🔴 COMPLETED PHPSTAN DA CORREGGERE (95)
 >>>>>>> 2024e2e7 (.)
+=======
+## 🔴 COMPLETED PHPSTAN DA CORREGGERE (95)
+>>>>>>> f589f9b2 (.)
 
 ### Categorizzazione Errori
 
@@ -279,10 +293,14 @@ php artisan queue:prune-failed --hours=48
 
 **Totale**: ~6 ore  
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Risultato**: ✅ 0 errori PHPStan Level 9
 =======
 **Risultato**: ✅ 0 errori PHPStan Level 10
 >>>>>>> 2024e2e7 (.)
+=======
+**Risultato**: ✅ 0 errori PHPStan Level 10
+>>>>>>> f589f9b2 (.)
 
 ---
 
@@ -349,10 +367,14 @@ php artisan queue:prune-failed --hours=48
   - Activity metrics
   - Engagement tracking
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Churn prediction
 =======
   - Churn <nome progetto>ion
 >>>>>>> 2024e2e7 (.)
+=======
+  - Churn <nome progetto>ion
+>>>>>>> f589f9b2 (.)
 
 ---
 
@@ -410,20 +432,28 @@ php artisan queue:prune-failed --hours=48
 
 - [← User Module README](./readme.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [← PHPStan Fixes 2025-10-01](./phpstan-fixes-2025-10-01.md)
 =======
 - [← PHPStan Fixes 2025-10-01](./phpstan-fixes.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [← PHPStan Fixes 2025-10-01](./phpstan-fixes.md)
+>>>>>>> f589f9b2 (.)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
 - [← Root Documentation](../../../docs/index.md)
 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: ⚠️ 95 ERRORI DA CORREGGERE  
 =======
 **Status**: ⚠️ 95 COMPLETED DA CORREGGERE  
 >>>>>>> 2024e2e7 (.)
+=======
+**Status**: ⚠️ 95 COMPLETED DA CORREGGERE  
+>>>>>>> f589f9b2 (.)
 **Priorità**: 🟡 ALTA  
 **Timeline**: 2 Ottobre 2025  
 **Effort**: ~6 ore → 100% CLEAN

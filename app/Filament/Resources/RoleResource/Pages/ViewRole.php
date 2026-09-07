@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\RoleResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Component;
 use Override;
@@ -12,12 +13,15 @@ use Filament\Infolists\Components\TextEntry;
 use Filament\Pages\Actions\EditAction;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Filament\Resources\RoleResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewRole extends XotBaseViewRecord
 {
     protected static string $resource = RoleResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -40,4 +44,6 @@ class ViewRole extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

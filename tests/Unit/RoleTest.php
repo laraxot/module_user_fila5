@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Tests\TestCase;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
@@ -163,6 +164,8 @@ test('role can check if it has all permissions', function (): void {
     expect($this->role->hasAllPermissions([$permission1]))->toBeTrue();
     expect($this->role->hasAllPermissions([$permission1, $permission2, 'non-existent']))->toBeFalse();
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\TeamFactory;
@@ -378,5 +381,8 @@ test('role handles null metadata values', function (): void {
     Assert::assertNull($role->team_id);
     Assert::assertNull($role->created_by);
     Assert::assertNull($role->updated_by);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

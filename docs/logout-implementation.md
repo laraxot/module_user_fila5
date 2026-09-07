@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Analisi dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati
@@ -71,6 +72,8 @@ L'errore principale nell'implementazione attuale è l'utilizzo di un approccio n
 
 La documentazione è stata aggiornata per riflettere queste raccomandazioni e per fornire esempi di implementazione corretta.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: logout-implementation
@@ -87,4 +90,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-error-3.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

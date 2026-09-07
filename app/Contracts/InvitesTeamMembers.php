@@ -19,9 +19,13 @@ interface InvitesTeamMembers
         TeamContract $teamContract,
         string $email,
 <<<<<<< HEAD
+<<<<<<< HEAD
         null|string $role = null,
 =======
         ?string $role = null,
 >>>>>>> 2024e2e7 (.)
+=======
+        ?string $role = null,
+>>>>>>> f589f9b2 (.)
     ): void;
 }

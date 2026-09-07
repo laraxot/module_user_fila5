@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Override;
 use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\TextInput;
@@ -16,15 +17,21 @@ use Modules\User\Filament\Resources\DeviceResource\RelationManagers\UsersRelatio
 use Modules\User\Models\Device;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Modules\User\Models\Device;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class DeviceResource extends XotBaseResource
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected static null|string $model = Device::class;
 
@@ -38,6 +45,18 @@ class DeviceResource extends XotBaseResource
                 ->maxLength(255),
             'languages' => TagsInput::make('languages')
                 ->label(__('user::device.fields.languages.label'))
+=======
+    protected static ?string $model = Device::class;
+
+    #[\Override]
+    public static function getFormSchema(): array
+    {
+        return [
+            'uuid' => TextInput::make('uuid')->maxLength(255),
+            'mobile_id' => TextInput::make('mobile_id')
+                ->maxLength(255),
+            'languages' => TagsInput::make('languages')
+>>>>>>> f589f9b2 (.)
                 ->suggestions([
                     'it' => 'Italiano',
                     'en' => 'English',
@@ -45,6 +64,7 @@ class DeviceResource extends XotBaseResource
                     'fr' => 'Français',
                     'de' => 'Deutsch',
                 ])
+<<<<<<< HEAD
                 ->placeholder(__('user::device.fields.languages.placeholder'))
                 ->helperText(__('user::device.fields.languages.help'))
                 ->separator(',')
@@ -70,4 +90,22 @@ class DeviceResource extends XotBaseResource
     
 
 >>>>>>> 2024e2e7 (.)
+=======
+                ->separator(',')
+                ->reorderable(),
+            'device' => TextInput::make('device')->maxLength(255),
+            'platform' => TextInput::make('platform')->maxLength(255),
+            'browser' => TextInput::make('browser')->maxLength(255),
+            'version' => TextInput::make('version')->maxLength(255),
+            'is_robot' => Toggle::make('is_robot'),
+            'robot' => TextInput::make('robot')
+                ->maxLength(255)
+                ->visible(fn (callable $get) => $get('is_robot')),
+            'is_desktop' => Toggle::make('is_desktop'),
+            'is_mobile' => Toggle::make('is_mobile'),
+            'is_tablet' => Toggle::make('is_tablet'),
+            'is_phone' => Toggle::make('is_phone'),
+        ];
+    }
+>>>>>>> f589f9b2 (.)
 }

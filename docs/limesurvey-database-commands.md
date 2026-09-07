@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Database Analysis Commands and Tools for quaeris_survey
 
 ## Essential Database Queries
@@ -232,6 +233,8 @@ WHERE s.active = 'Y';
 
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: limesurvey-database-commands
@@ -248,4 +251,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/limesurvey-database-commands.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

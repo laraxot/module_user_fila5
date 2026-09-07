@@ -8,13 +8,19 @@ return [
         'plural' => 'Reset Password',
         'label' => 'Reset Password',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
         'group' => [
             'name' => 'Sicurezza',
             'description' => 'Gestione dei reset password e recupero credenziali',
         ],
+<<<<<<< HEAD
 =======
         'group' => ['name' => 'Sicurezza', 'description' => 'Gestione dei reset password e recupero credenziali'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'sort' => 4,
         'icon' => 'heroicon-o-key',
     ],
@@ -22,6 +28,9 @@ return [
     'plural_label' => 'Password Reset (Plurale)',
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
@@ -51,6 +60,7 @@ return [
         'delete' => [
             'label' => 'Elimina Password Reset',
         ],
+<<<<<<< HEAD
 =======
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -62,5 +72,7 @@ return [
         'delete' => ['label' => 'Elimina Password Reset', 'icon' => 'delete', 'tooltip' => 'delete'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     ],
 ];

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Laravel\Passport\PersonalAccessClient as PassportPersonalAccessClient;
@@ -44,6 +45,8 @@ class OauthPersonalAccessClient extends PassportPersonalAccessClient
 
     // protected $fillable = ['id', 'client_id'];
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 
@@ -88,5 +91,8 @@ class OauthPersonalAccessClient extends BaseModel
     {
         return $this->belongsTo(OauthClient::class, 'client_id');
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

@@ -28,9 +28,12 @@ declare(strict_types=1);
         <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // @phpstan-ignore variable.undefined
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $color = match ($level) {
             'success', 'error' => $level,
             default => 'primary',

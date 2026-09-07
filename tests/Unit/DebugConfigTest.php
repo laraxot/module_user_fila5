@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\User\Tests\Unit;
 
 use Illuminate\Support\Facades\DB;
@@ -12,10 +13,16 @@ use Illuminate\Support\Facades\DB;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Support\Facades\DB;
+use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+>>>>>>> f589f9b2 (.)
 
 uses(TestCase::class);
 
 test('verify database connections config', function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
     $mysql = config('database.connections.mysql.database');
     $user = config('database.connections.user.database');
@@ -48,6 +55,8 @@ test('verify database connections config', function () {
     expect($profilesExists)->toBeTrue();
     expect($tenantsExists)->toBeTrue();
 =======
+=======
+>>>>>>> f589f9b2 (.)
     $userDatabase = config('database.connections.user.database');
     $defaultDriver = config('database.connections.mysql.driver');
     $userDriver = config('database.connections.user.driver');
@@ -65,5 +74,8 @@ test('verify database connections config', function () {
 
     Assert::assertTrue($profilesExists);
     Assert::assertTrue($tenantsExists);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

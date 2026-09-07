@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole per le Chiavi di Traduzione
 
 ## Principi Fondamentali
@@ -117,6 +118,8 @@ return [
 - [Struttura del Modulo](module_structure.md)
 - [Convenzioni di Codice](code_conventions.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: translation-keys
@@ -133,4 +136,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-keys-rules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

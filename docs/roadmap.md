@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # User Module Roadmap
 
 "Proteggere l'identità: il fondamento della fiducia."
@@ -36,6 +37,8 @@ Diventare un identity provider completo (IdP) che supporta standard moderni come
 **Maintainer**: User Module Team
 **Status**: 🚧 In Development (70% completo)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Product Roadmap - User Module"
 type: concept
@@ -76,4 +79,7 @@ Provide a secure, highly-scalable authentication and authorization system for th
 ## 📂 Backlog / Future Ideas
 - Passkey (WebAuthn) support.
 - Centralized Auth across multiple Laraxot instances.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

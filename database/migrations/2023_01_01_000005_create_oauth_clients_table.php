@@ -7,11 +7,16 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration {
 =======
 return new class extends XotBaseMigration
 {
 >>>>>>> 2024e2e7 (.)
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> f589f9b2 (.)
     public function up(): void
     {
         $this->tableCreate(static function (Blueprint $table): void {
@@ -31,16 +36,22 @@ return new class extends XotBaseMigration
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ('string' !== $this->getColumnType('id')) {
                 $table->uuid('id')->change(); // is  just primary
             }
             if (! $this->hasColumn('owner_id') && ! $this->hasColumn('owner_type')) {
 =======
+=======
+>>>>>>> f589f9b2 (.)
             if ($this->getColumnType('id') !== 'string') {
                 $table->uuid('id')->change(); // is  just primary
             }
             if (! $this->hasColumn('owner_id')) {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                 $table->nullableMorphs('owner');
             }
             if (! $this->hasColumn('name')) {

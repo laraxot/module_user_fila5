@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'navigation' => [
         'name' => 'Dispositivo',
@@ -19,6 +22,7 @@ return [
         'icon' => 'user-device',
     ],
     'fields' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
         'first_name' => 'Nome',
         'last_name' => 'Cognome',
@@ -79,6 +83,8 @@ return [
         'login_at' => [
             'label' => 'login_at',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -204,7 +210,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'actions' => [
@@ -225,8 +234,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 >>>>>>> 2024e2e7 (.)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> f589f9b2 (.)
 ];

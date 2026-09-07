@@ -11,6 +11,7 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         /**
          * @var array $tableNames
          */
@@ -45,6 +46,8 @@ return new class extends XotBaseMigration {
          * @var string $cache_key
          */
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $tableNames = config('permission.table_names');
         $columnNames = config('permission.column_names');
         $teams = config('permission.teams');
@@ -62,11 +65,15 @@ return new class extends XotBaseMigration {
         $cache_store = config('permission.cache.store');
         $store = is_string($cache_store) && 'default' !== $cache_store ? $cache_store : null;
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $cache_key = config('permission.cache.key');
 
         try {
             // Verifica se l'applicazione è completamente inizializzata
+<<<<<<< HEAD
 <<<<<<< HEAD
             if (app()->bound('cache')) {
                 app('cache')->store($cache_store !== 'default' ? $cache_store : null)->forget($cache_key);
@@ -74,6 +81,10 @@ return new class extends XotBaseMigration {
             if (app()->bound('cache') && is_string($cache_key)) {
                 app('cache')->store($store)->forget($cache_key);
 >>>>>>> 2024e2e7 (.)
+=======
+            if (app()->bound('cache') && is_string($cache_key)) {
+                app('cache')->store($store)->forget($cache_key);
+>>>>>>> f589f9b2 (.)
             }
         } catch (Exception $e) {
             // Silently ignore cache errors during package discovery

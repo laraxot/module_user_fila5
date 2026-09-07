@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Aggiornamento relativo a DoctorResource.php"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Aggiornamento relativo a DoctorResource.php
 
 ## Nota del 2025-05-15
@@ -37,10 +43,14 @@ Ho aggiornato ulteriormente la documentazione per riflettere un cambiamento nell
 - [Documentazione Doctor Model](../modules/patient/project_docs/doctor-model-update.md)
 - [Documentazione DoctorResource](../modules/patient/docs/doctor-resource-update.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione principale](../docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
 =======
 - [Documentazione principale](../../docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Documentazione principale](../../docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
+>>>>>>> f589f9b2 (.)
 - [Documentazione Doctor Model](../modules/patient/docs/doctor-model-update.md)
 # Aggiornamento relativo a DoctorResource.php
 
@@ -62,8 +72,12 @@ Ho aggiornato ulteriormente la documentazione per riflettere un cambiamento nell
 **Collegamenti correlati**:
 - [Documentazione DoctorResource](../modules/patient/docs/doctor-resource-update.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione principale](../docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
 =======
 - [Documentazione principale](../../docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Documentazione principale](../../docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
+>>>>>>> f589f9b2 (.)
 - [Documentazione Doctor Model](../modules/patient/docs/doctor-model-update.md)

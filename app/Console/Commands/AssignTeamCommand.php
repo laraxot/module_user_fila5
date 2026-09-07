@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 use Illuminate\Support\Collection;
 use Illuminate\Console\Command;
@@ -14,41 +15,57 @@ use Webmozart\Assert\Assert;
 =======
 use Illuminate\Console\Command;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Console\Command;
+>>>>>>> f589f9b2 (.)
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\BaseUser;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 class AssignTeamCommand extends Command
 {
     /**
      * The name and signature of the console command.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @var string
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected $name = 'user:assign-team';
 
     /**
      * The console command description.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @var string
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected $description = 'Assign a team to user';
 
     /**
      * Create a new command instance.
+<<<<<<< HEAD
 <<<<<<< HEAD
      *
      * @return void
@@ -57,6 +74,9 @@ class AssignTeamCommand extends Command
 =======
      */
 >>>>>>> 2024e2e7 (.)
+=======
+     */
+>>>>>>> f589f9b2 (.)
 
     /**
      * Execute the console command.
@@ -66,6 +86,7 @@ class AssignTeamCommand extends Command
         $xot = XotData::make();
         $email = text('email ?');
 <<<<<<< HEAD
+<<<<<<< HEAD
         $user_class = $xot->getUserClass();
         /** @var UserContract */
         $user = XotData::make()->getUserByEmail($email);
@@ -74,13 +95,18 @@ class AssignTeamCommand extends Command
 
         /** @var array<int|string, string>|Collection<int|string, string> */
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $user = XotData::make()->getUserByEmail($email);
         Assert::isInstanceOf($user, BaseUser::class);
 
         $teamClass = $xot->getTeamClass();
 
         /** @var array<int|string, string> $opts */
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $opts = $teamClass::pluck('name', 'id')->toArray();
 
         $rows = multiselect(
@@ -88,6 +114,7 @@ class AssignTeamCommand extends Command
             options: $opts,
             required: true,
             scroll: 10,
+<<<<<<< HEAD
 <<<<<<< HEAD
         // validate: function (array $values) {
         //  return ! \in_array(\count($values), [1, 2], false)
@@ -98,6 +125,8 @@ class AssignTeamCommand extends Command
 
         $user->teams()->sync($rows);
 =======
+=======
+>>>>>>> f589f9b2 (.)
             // validate: function (array $values) {
             //  return ! \in_array(\count($values), [1, 2], false)
             //    ? 'A maximum of two'
@@ -106,13 +135,17 @@ class AssignTeamCommand extends Command
         );
 
         $user->membershipTeams()->sync($rows);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         /*
          * foreach ($rows as $row) {
          * $role = Role::firstOrCreate(['name' => $row]);
          * $user->assignRole($role);
          * }
          */
+<<<<<<< HEAD
 <<<<<<< HEAD
         $this->info('Teams :' . implode(', ', $rows) . ' assigned to ' . $email);
 
@@ -122,6 +155,11 @@ class AssignTeamCommand extends Command
 
         $rows = $user->membershipTeams()->get()->toArray();
 >>>>>>> 2024e2e7 (.)
+=======
+        $this->info('Teams :'.implode(', ', $rows).' assigned to '.$email);
+
+        $rows = $user->membershipTeams()->get()->toArray();
+>>>>>>> f589f9b2 (.)
 
         if (\count($rows) > 0) {
             Assert::isArray($rows[0]);
@@ -133,14 +171,19 @@ class AssignTeamCommand extends Command
         } else {
             $this->newLine();
 <<<<<<< HEAD
+<<<<<<< HEAD
             $this->warn('⚡ No teams [' . $teamClass . ']');
 =======
             $this->warn('⚡ No teams ['.$teamClass.']');
 >>>>>>> 2024e2e7 (.)
+=======
+            $this->warn('⚡ No teams ['.$teamClass.']');
+>>>>>>> f589f9b2 (.)
             $this->newLine();
         }
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Get the console command options.
@@ -152,6 +195,8 @@ class AssignTeamCommand extends Command
         ];
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /*
      * Get the console command options.
      */
@@ -161,5 +206,8 @@ class AssignTeamCommand extends Command
     //        ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
     // }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

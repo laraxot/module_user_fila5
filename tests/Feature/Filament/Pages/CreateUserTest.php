@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Tests\TestCase;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 use Modules\User\Enums\UserType;
@@ -10,6 +11,8 @@ use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Models\User;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Feature\Filament\Pages;
 
 use Filament\Facades\Filament;
@@ -22,11 +25,15 @@ use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
     $this->createUserPage = new CreateUser();
 });
@@ -126,6 +133,8 @@ test('create user page follows filament conventions', function (): void {
     expect($this->createUserPage->getResource())->toBe(UserResource::class);
     expect($this->createUserPage->getModel())->toBe(User::class);
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /* @var TestCase $this */
     try {
         $panel = Filament::getPanel('user::admin');
@@ -228,5 +237,8 @@ describe('Create User', function (): void {
         Assert::assertSame(UserResource::class, $createUserPage->getResource());
         Assert::assertSame(XotData::make()->getUserClass(), $createUserPage->getModel());
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

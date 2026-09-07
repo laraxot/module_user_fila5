@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Sicurezza nel Processo di Logout"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Sicurezza nel Processo di Logout
 
 ## Analisi della Sicurezza
@@ -194,11 +200,14 @@ Log::channel('auth')->info('Logout effettuato', [
 
 ## Collegamenti Correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./SESSION_MANAGEMENT.md)
 - [Documentazione Volt](./VOLT_BLADE_IMPLEMENTATION.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management-2.md)
 - [Documentazione Volt](./volt-blade-implementation-3.md)
@@ -206,5 +215,9 @@ Log::channel('auth')->info('Logout effettuato', [
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session-management.md)
 - [Documentazione Volt](./volt-blade-implementation.md)
+<<<<<<< HEAD
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 >>>>>>> 2024e2e7 (.)
+=======
+- [Tema One Documentation](../../Themes/One/docs/README.md) 
+>>>>>>> f589f9b2 (.)

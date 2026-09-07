@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Database\Factories;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\Extra;
@@ -30,6 +31,8 @@ class ExtraFactory extends Factory
         ];
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\Extra;
 use Modules\Xot\Database\Factories\BaseExtraFactory;
 
@@ -44,5 +47,8 @@ class ExtraFactory extends BaseExtraFactory
 {
     /** @var class-string<Extra> */
     protected $model = Extra::class;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPMD e PHP Insights Corrections - 2025-01-22
 
 ## Obiettivo
@@ -103,6 +104,8 @@ I seguenti warning sono accettabili e non richiedono correzione immediata:
 - [Quality Tools Report](./quality-tools-report.md)
 - [PHPStan Complete Success](./phpstan-complete-success.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpmd-phpinsights-corrections-
@@ -119,4 +122,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpmd-phpinsights-corrections-.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

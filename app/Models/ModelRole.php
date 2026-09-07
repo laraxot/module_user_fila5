@@ -8,9 +8,13 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Webmozart\Assert\Assert;
 >>>>>>> 2024e2e7 (.)
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> f589f9b2 (.)
 
 /**
  * Modules\User\Models\ModelHasRole.
@@ -45,25 +49,34 @@ use Webmozart\Assert\Assert;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
  * @mixin IdeHelperModelHasRole
  *
  * @property ProfileContract|null $deleter
  *
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property ProfileContract|null $deleter
  *
  * @method static \Modules\User\Database\Factories\ModelRoleFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 class ModelRole extends BaseMorphPivot
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var string */
     protected $table = 'model_has_role';
 =======
+=======
+>>>>>>> f589f9b2 (.)
     #[\Override]
     public function getTable(): string
     {
@@ -71,5 +84,8 @@ class ModelRole extends BaseMorphPivot
 
         return $table;
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

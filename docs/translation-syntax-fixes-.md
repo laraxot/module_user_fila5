@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Correzioni Errori di Sintassi nei File di Traduzione - 2025
 
 ## Data
@@ -128,6 +129,8 @@ find Modules/User/lang -name "*.php" -exec php -l {} \;
 **Versione**: 1.0
 **Stato**: Completato
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: translation-syntax-fixes-
@@ -144,4 +147,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-syntax-fixes.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

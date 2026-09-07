@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Analisi Approfondita del Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Analisi Approfondita del Modulo User
 
 > **Generato**: 2025-12-24
@@ -497,8 +503,12 @@ BaseUser implements:
 - [Spatie Permission Documentation](https://spatie.be/docs/laravel-permission)
 - [Laravel Passport Documentation](https://laravel.com/docs/passport)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md)
 =======
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [business-logic-deep-dive-4.md](./business-logic-deep-dive.md)
+>>>>>>> f589f9b2 (.)
 - [docs/_integration/spatie-permissions.md](./_integration/spatie-permissions.md)

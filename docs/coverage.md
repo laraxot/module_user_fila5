@@ -88,6 +88,7 @@ significativo: DB di test `10.100.200.53` irraggiungibile da questo ambiente
 
 **Fuori scope**: 15 file della lista originale non richiedevano piu' modifiche
 (gia' risolti dal commit `5ec97b13` prima dell'inizio di questo lavoro).
+<<<<<<< HEAD
 
 ## PHPStan (level max) — swarm fix 2026-09-07 (sessione pomeriggio)
 
@@ -172,3 +173,5 @@ del working tree non e' stato toccato ne' committato.
   esistente in test non toccati, tabella `users` mancante sul DB di test —
   stesso pattern gia' documentato in second brain
   "Test DB missing migrations blocks Feature tests").
+=======
+>>>>>>> f589f9b2 (.)

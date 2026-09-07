@@ -7,52 +7,98 @@ return [
         'label' => 'Profilo',
         'plural' => 'Profili',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
         'group' => [
             'label' => 'Gestione Utenti',
             'description' => 'Gestione dei profili utente',
         ],
+<<<<<<< HEAD
 =======
         'group' => ['label' => 'Gestione Utenti', 'description' => 'Gestione dei profili utente'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'icon' => 'user-profile-animated',
         'sort' => 73,
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
         'first_name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
             'help' => 'Nome dell\'utente',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'last_name' => [
             'label' => 'Cognome',
             'placeholder' => 'Inserisci il cognome',
             'help' => 'Cognome dell\'utente',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci l\'email',
             'help' => 'Indirizzo email dell\'utente',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'phone' => [
             'label' => 'Telefono',
             'placeholder' => 'Inserisci il numero di telefono',
             'help' => 'Numero di telefono dell\'utente',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'birth_date' => [
             'label' => 'Data di Nascita',
             'placeholder' => 'Seleziona la data di nascita',
             'help' => 'Data di nascita dell\'utente',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'gender' => [
             'label' => 'Genere',
             'male' => 'Maschio',
             'female' => 'Femmina',
             'other' => 'Altro',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'help' => 'Stato attivo del profilo',
+<<<<<<< HEAD
         ],
         'id' => [
             'label' => 'ID',
@@ -64,6 +110,36 @@ return [
             'label' => 'Matricola',
         ],
         // ... altri campi ...
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'id' => [
+            'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'ente' => [
+            'label' => 'Ente',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'matr' => [
+            'label' => 'Matricola',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'photo' => [
+            'label' => 'photo',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+>>>>>>> f589f9b2 (.)
     ],
     'actions' => [
         'edit' => [
@@ -75,12 +151,28 @@ return [
             'label' => 'Elimina',
             'success' => 'Profilo eliminato con successo!',
             'error' => 'Errore durante l\'eliminazione del profilo',
+<<<<<<< HEAD
+=======
+            'tooltip' => 'delete',
+            'icon' => 'delete',
+        ],
+        'layout' => [
+            'tooltip' => 'layout',
+            'icon' => 'layout',
+            'label' => 'layout',
+        ],
+        'create' => [
+            'tooltip' => 'create',
+            'icon' => 'create',
+            'label' => 'create',
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'messages' => [
         'update_success' => 'Profilo aggiornato con successo!',
         'no_permission' => 'Non hai i permessi per modificare questo profilo.',
     ],
+<<<<<<< HEAD
 =======
         'first_name' => ['label' => 'Nome', 'placeholder' => 'Inserisci il nome', 'help' => 'Nome dell\'utente', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'last_name' => ['label' => 'Cognome', 'placeholder' => 'Inserisci il cognome', 'help' => 'Cognome dell\'utente', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -122,4 +214,8 @@ return [
     'label' => 'Profile',
     'plural_label' => 'Profile (Plurale)',
 >>>>>>> 2024e2e7 (.)
+=======
+    'label' => 'Profile',
+    'plural_label' => 'Profile (Plurale)',
+>>>>>>> f589f9b2 (.)
 ];

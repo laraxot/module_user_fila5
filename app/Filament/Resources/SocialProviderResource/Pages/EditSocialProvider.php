@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\SocialProviderResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 use Filament\Actions\ViewAction;
 use Filament\Actions\DeleteAction;
@@ -12,11 +13,16 @@ use Filament\Actions;
 use Modules\User\Filament\Resources\SocialProviderResource;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
 use Modules\User\Filament\Resources\SocialProviderResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 class EditSocialProvider extends XotBaseEditRecord
 {
@@ -26,12 +32,17 @@ class EditSocialProvider extends XotBaseEditRecord
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             ViewAction::make(),
             DeleteAction::make(),
 =======
             'view' => ViewAction::make(),
             'delete' => DeleteAction::make(),
 >>>>>>> 2024e2e7 (.)
+=======
+            'view' => ViewAction::make(),
+            'delete' => DeleteAction::make(),
+>>>>>>> f589f9b2 (.)
         ];
     }
 }

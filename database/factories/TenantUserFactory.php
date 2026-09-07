@@ -6,6 +6,7 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\Tenant;
 use Modules\User\Models\TenantUser;
 use Modules\User\Models\User;
@@ -20,6 +21,11 @@ use Modules\User\Models\TenantUser;
 
 /**
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\User\Models\TenantUser;
+
+/**
+>>>>>>> f589f9b2 (.)
  * @extends Factory<TenantUser>
  */
 class TenantUserFactory extends Factory
@@ -36,6 +42,7 @@ class TenantUserFactory extends Factory
      *
      * @return array<string, mixed>
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function definition(): array
     {
@@ -71,6 +78,8 @@ class TenantUserFactory extends Factory
         ]);
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * @return array<string, mixed>
      */
@@ -81,5 +90,8 @@ class TenantUserFactory extends Factory
             'user_id' => fake()->uuid(),
         ];
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

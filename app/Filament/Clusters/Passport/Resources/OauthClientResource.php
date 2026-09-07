@@ -11,9 +11,13 @@ use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Str;
 use Laravel\Passport\Passport as LaravelPassport;
 use Modules\User\Filament\Clusters\Passport;
@@ -22,9 +26,13 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Pages\
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Pages\ListOauthClients;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Pages\ViewOauthClient;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Models\OauthClient;
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\User\Models\OauthClient;
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Webmozart\Assert\Assert;
 
@@ -33,6 +41,9 @@ class OauthClientResource extends XotBaseResource
     protected static ?string $cluster = Passport::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
     // use HasResourceFormComponents;
 
     /**
@@ -86,6 +97,7 @@ class OauthClientResource extends XotBaseResource
     /**
      * Get the model class for the resource from Passport.
      *
+<<<<<<< HEAD
      * @return class-string<\Illuminate\Database\Eloquent\Model>
 =======
     /**
@@ -93,10 +105,14 @@ class OauthClientResource extends XotBaseResource
      *
      * @return class-string<Model>
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return class-string<Model>
+>>>>>>> f589f9b2 (.)
      */
     public static function getModel(): string
     {
         $model = LaravelPassport::clientModel();
+<<<<<<< HEAD
 <<<<<<< HEAD
         // @phpstan-ignore-next-line
         if (! class_exists($model)) {
@@ -107,6 +123,8 @@ class OauthClientResource extends XotBaseResource
 
         /* @var class-string<\Illuminate\Database\Eloquent\Model> $model */
 =======
+=======
+>>>>>>> f589f9b2 (.)
         if (! class_exists($model)) {
             return OauthClient::class;
         }
@@ -114,7 +132,10 @@ class OauthClientResource extends XotBaseResource
         Assert::subclassOf($model, Model::class);
 
         /* @var class-string<Model> $model */
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         return $model;
     }
 
@@ -139,10 +160,15 @@ class OauthClientResource extends XotBaseResource
     /**
      * Get resource form components.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @return array<int, never>
 >>>>>>> 2024e2e7 (.)
+=======
+     *
+     * @return array<int, never>
+>>>>>>> f589f9b2 (.)
      */
     protected static function getResourceFormComponents(): array
     {

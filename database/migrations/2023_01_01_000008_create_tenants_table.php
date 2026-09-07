@@ -7,11 +7,16 @@ use Modules\User\Models\Tenant;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration {
 =======
 return new class extends XotBaseMigration
 {
 >>>>>>> 2024e2e7 (.)
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> f589f9b2 (.)
     protected ?string $model_class = Tenant::class;
 
     /**

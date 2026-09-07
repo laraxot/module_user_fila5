@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
@@ -287,6 +288,8 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 - [Gestione Sessione](./session_management.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: volt-blade-implementation-1
@@ -303,4 +306,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-implementation-1.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

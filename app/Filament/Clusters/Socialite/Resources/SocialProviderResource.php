@@ -28,6 +28,9 @@ class SocialProviderResource extends XotBaseResource
     protected static ?string $model = SocialProvider::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * @return array<string, Component>
      */
@@ -37,6 +40,7 @@ class SocialProviderResource extends XotBaseResource
         return [
             'name' => TextInput::make('name')
                 ->required()
+<<<<<<< HEAD
                 ->maxLength(255)
                 ->placeholder(__('fields.name.placeholder'))
                 ->helperText(__('fields.name.helper_text')),
@@ -75,6 +79,30 @@ class SocialProviderResource extends XotBaseResource
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+                ->maxLength(255),
+            'scopes' => KeyValue::make('scopes'),
+            'client_id' => TextInput::make('client_id')
+                ->required()
+                ->maxLength(255),
+            'client_secret' => TextInput::make('client_secret')
+                ->required()
+                ->maxLength(1024),
+            'redirect' => TextInput::make('redirect')
+                ->required()
+                ->maxLength(255),
+            'parameters' => KeyValue::make('parameters'),
+            'additional_params' => Textarea::make('additional_params'),
+            'stateless' => Toggle::make('stateless'),
+            'active' => Toggle::make('active'),
+            'socialite' => Toggle::make('socialite'),
+            'enabled' => Toggle::make('enabled'),
+            'svg' => Textarea::make('svg')
+                ->columnSpanFull(),
+        ];
+    }
+
+>>>>>>> f589f9b2 (.)
     #[\Override]
     public static function getRelations(): array
     {

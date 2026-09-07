@@ -7,9 +7,13 @@ namespace Modules\User\Filament\Resources\TeamUserResource\Pages;
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Filament\Resources\TeamUserResource;
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\User\Filament\Resources\TeamUserResource;
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 /**
@@ -18,10 +22,14 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListTeamUsers extends XotBaseListRecords
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static string $resource = \Modules\User\Filament\Resources\TeamUserResource::class;
 =======
     protected static string $resource = TeamUserResource::class;
 >>>>>>> 2024e2e7 (.)
+=======
+    protected static string $resource = TeamUserResource::class;
+>>>>>>> f589f9b2 (.)
 
     /**
      * @return array<string, Action>

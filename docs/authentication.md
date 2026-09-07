@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Autenticazione in Predict
 
 ## Panoramica
 Il sistema di autenticazione in Predict è basato su Laravel Volt e supporta sia l'autenticazione tradizionale che quella sociale.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Autenticazione in <nome progetto>"
 type: concept
@@ -28,7 +31,10 @@ related:
 
 ## Panoramica
 Il sistema di autenticazione in <nome progetto> è basato su Laravel Volt e supporta sia l'autenticazione tradizionale che quella sociale.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ## Configurazione
 
@@ -156,7 +162,11 @@ Route::middleware('guest')->group(function () {
 
 ### Logout con Volt e Folio
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/modules/user/project_docs/volt_folio_logout_error.md). 
 =======
 Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/modules/user/project_docs/volt-folio-logout-error-3.md). 
 >>>>>>> 2024e2e7 (.)
+=======
+Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/modules/user/project_docs/volt-folio-logout-error-3.md). 
+>>>>>>> f589f9b2 (.)

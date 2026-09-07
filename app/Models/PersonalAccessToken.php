@@ -5,17 +5,24 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 =======
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Carbon;
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
  * Modules\User\Models\PersonalAccessToken.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property int                             $id
  * @property string                          $tokenable_type
@@ -28,6 +35,8 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property int $id
  * @property string $tokenable_type
  * @property int $tokenable_id
@@ -53,7 +62,10 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereTokenableType($value)
  *
  * @mixin \Eloquent
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  */
 class PersonalAccessToken extends Model
 {

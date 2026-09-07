@@ -3,10 +3,13 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(Modules\User\Tests\TestCase::class);
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\Policies\AuthenticationLogPolicy;
 use Modules\User\Models\Policies\AuthenticationPolicy;
 use Modules\User\Models\Policies\DevicePolicy;
@@ -23,6 +26,7 @@ use Modules\User\Models\Policies\SocialiteUserPolicy;
 use Modules\User\Models\Policies\SocialProviderPolicy;
 use Modules\User\Models\Policies\TeamInvitationPolicy;
 use Modules\User\Models\Policies\TeamPermissionPolicy;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 test('OauthClientPolicy can be instantiated', function () {
@@ -104,6 +108,8 @@ test('NotificationPolicy can be instantiated', function () {
     $policy = new NotificationPolicy();
     expect($policy)->toBeInstanceOf(NotificationPolicy::class);
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -187,5 +193,8 @@ test('ExtraPolicy can be instantiated', function () {
 test('NotificationPolicy can be instantiated', function () {
     $policy = new NotificationPolicy;
     Assert::assertInstanceOf(NotificationPolicy::class, $policy);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

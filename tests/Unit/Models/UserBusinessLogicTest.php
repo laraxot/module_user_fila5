@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\BaseUser;
 use Modules\User\Models\User;
 
@@ -23,6 +24,8 @@ describe('User Business Logic', function () {
     test('user can have name components', function () {
         $user = new User();
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\BaseUser;
@@ -48,11 +51,15 @@ describe('User Business Logic', function () {
 
     test('user can have name components', function () {
         $user = new User;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $user->first_name = 'Mario';
         $user->last_name = 'Rossi';
         $user->name = 'Mario Rossi';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         expect($user->first_name)->toBe('Mario');
         expect($user->last_name)->toBe('Rossi');
@@ -114,6 +121,8 @@ describe('User Business Logic', function () {
 
         expect($user->remember_token)->toBe('abc123def456');
 =======
+=======
+>>>>>>> f589f9b2 (.)
         Assert::assertSame('Mario', $user->first_name);
         Assert::assertSame('Rossi', $user->last_name);
         Assert::assertSame('Mario Rossi', $user->name);
@@ -177,6 +186,9 @@ describe('User Business Logic', function () {
         $user->remember_token = 'abc123def456';
 
         Assert::assertSame('abc123def456', $user->remember_token);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     });
 });

@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Implementazione del Logout 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Implementazione del Logout"
 type: concept
@@ -22,7 +25,10 @@ related:
 ---
 
 # Implementazione del Logout
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ## Indice
 - [Panoramica](#panoramica)
@@ -59,14 +65,19 @@ mount(function() {
         // Dispatch dell'evento prima del logout
         Event::dispatch('auth.logout.attempting', [Auth::user()]);
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
         // Esegui il logout
         Auth::logout();
         session()->invalidate();
         session()->regenerateToken();
+<<<<<<< HEAD
 <<<<<<< HEAD
         
         // Dispatch dell'evento dopo il logout
@@ -74,12 +85,17 @@ mount(function() {
     }
     
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
         // Dispatch dell'evento dopo il logout
         Event::dispatch('auth.logout.successful');
     }
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     // Reindirizza l'utente alla home page localizzata
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
@@ -100,10 +116,14 @@ $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCur
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di SaluteOra per la gestione della localizzazione.
 =======
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
 >>>>>>> 2024e2e7 (.)
+=======
+Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
+>>>>>>> f589f9b2 (.)
 
 ## Componenti Filament
 
@@ -132,10 +152,14 @@ Il template Blade per il logout deve utilizzare i componenti Filament per garant
 ## Chiavi di Traduzione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di SaluteOra:
 =======
 Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di <nome progetto>:
 >>>>>>> 2024e2e7 (.)
+=======
+Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di <nome progetto>:
+>>>>>>> f589f9b2 (.)
 
 ```php
 'logout' => [
@@ -193,10 +217,14 @@ mount(function() {
     session()->invalidate();
     session()->regenerateToken();
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
 ?>
@@ -239,20 +267,27 @@ mount(function() {
     if (Auth::check()) {
         $user = Auth::user();
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         // Evento pre-logout
         Event::dispatch('auth.logout.attempting', [$user]);
         
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
         // Evento pre-logout
         Event::dispatch('auth.logout.attempting', [$user]);
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         // Logout
         Auth::logout();
         session()->invalidate();
         session()->regenerateToken();
+<<<<<<< HEAD
 <<<<<<< HEAD
         
         // Evento post-logout
@@ -260,6 +295,8 @@ mount(function() {
     }
     
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
         // Evento post-logout
         Event::dispatch('auth.logout.successful');
@@ -492,7 +529,10 @@ mount(function() {
         Event::dispatch('auth.logout.successful');
     }
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
 ?>

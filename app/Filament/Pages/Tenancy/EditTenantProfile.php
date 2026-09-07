@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Pages\Tenancy;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Pages\Tenancy\EditTenantProfile as BaseEditTenantProfile;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
@@ -12,13 +13,18 @@ use Filament\Schemas\Schema;
 
 class EditTenantProfile extends BaseEditTenantProfile
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Schemas\Schema;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Pages\Tenancy\XotBaseEditTenantProfile;
 use Webmozart\Assert\Assert;
 
 class EditTenantProfile extends XotBaseEditTenantProfile
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 {
     public static function getLabel(): string
     {
@@ -26,18 +32,24 @@ class EditTenantProfile extends XotBaseEditTenantProfile
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function form(Schema $schema): Schema
     {
         $resource = XotData::make()->getTenantResourceClass();
 
         Assert::isInstanceOf($res = $resource::form($schema), Schema::class);
 =======
+=======
+>>>>>>> f589f9b2 (.)
     public function schema(Schema $schema): Schema
     {
         $resource = XotData::make()->getTenantResourceClass();
 
         Assert::isInstanceOf($res = $resource::schema($schema), Schema::class);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
         return $res;
 

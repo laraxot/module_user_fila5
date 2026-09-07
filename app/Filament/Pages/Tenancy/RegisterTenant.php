@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Pages\Tenancy;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
 use Filament\Forms\Components\TextInput;
 use Filament\Pages\Tenancy\RegisterTenant as BaseRegisterTenant;
@@ -22,6 +23,8 @@ class RegisterTenant extends BaseRegisterTenant
 
     public string $resource;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Illuminate\Database\Eloquent\Model;
@@ -41,7 +44,10 @@ class RegisterTenant extends XotBaseRegisterTenant
      * @var class-string|null
      */
     private ?string $resourceClass = null;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
     public static function getLabel(): string
     {
@@ -50,6 +56,7 @@ class RegisterTenant extends XotBaseRegisterTenant
         if (Str::startsWith($func, 'get_')) {
             $func = Str::of($func)->after('get_')->toString();
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
         $key = Str::of(class_basename(__CLASS__))
             ->snake()
@@ -80,6 +87,8 @@ class RegisterTenant extends XotBaseRegisterTenant
     /**
      * @param  array<string, mixed>  $data
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $key = Str::of(class_basename(self::class))
             ->snake()
             ->prepend('actions.')
@@ -117,7 +126,10 @@ class RegisterTenant extends XotBaseRegisterTenant
 
     /**
      * @param  array<string, string|int|bool|null>  $data
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected function handleRegistration(array $data): Model
     {
@@ -126,12 +138,15 @@ class RegisterTenant extends XotBaseRegisterTenant
         $tenant = $tenantClass::create($data);
         Assert::implementsInterface($tenant, TenantContract::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         $tenant->users()->attach(auth()->user());
 
         return $tenant;
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
         Assert::isInstanceOf($tenant, BaseTenant::class);
 
         return $tenant;
@@ -160,5 +175,8 @@ class RegisterTenant extends XotBaseRegisterTenant
 
         return $resolved;
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

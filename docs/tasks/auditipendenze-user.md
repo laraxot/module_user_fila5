@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Task: Audit Completo Dipendenze User
 
 **Modulo**: User  
@@ -28,6 +29,8 @@ Task spostamento widget violante completato.
 - [Indice task User](tasks-index.md)
 - [ARCHITECTURAL_VIOLATION_FIX_PLAN](../../cms/docs/architectural_violation_fix_plan.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: auditipendenze-user
@@ -44,4 +47,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/audit-dipendenze-user.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

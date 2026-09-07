@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return array (
   'actions' => 
   array (
@@ -51,6 +52,8 @@ return array (
   ),
 );
 =======
+=======
+>>>>>>> f589f9b2 (.)
 declare(strict_types=1);
 
 return [
@@ -107,4 +110,7 @@ return [
     'label' => 'View User',
     'plural_label' => 'View User (Plurale)',
 ];
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

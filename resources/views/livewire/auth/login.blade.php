@@ -52,6 +52,7 @@ declare(strict_types=1);
                 <div class="flex items-center justify-between">
                     <div class="flex items-center">
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <input wire:model="remember" id="remember" type="checkbox" 
                             class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
                         <label for="remember" class="ml-2 block text-sm text-gray-900">
@@ -60,15 +61,22 @@ declare(strict_types=1);
 =======
                         <!-- Il campo remember è incluso nello schema del form e gestito da Filament -->
 >>>>>>> 2024e2e7 (.)
+=======
+                        <!-- Il campo remember è incluso nello schema del form e gestito da Filament -->
+>>>>>>> f589f9b2 (.)
                     </div>
 
                     @if (Route::has('password.request'))
                         <div class="text-sm">
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <a href="{{ route('password.request') }}" class="font-medium text-blue-600 hover:text-blue-500">
 =======
                             <a href="{{ route('password.request') }}" class="font-medium text-green-600 hover:text-green-500">
 >>>>>>> 2024e2e7 (.)
+=======
+                            <a href="{{ route('password.request') }}" class="font-medium text-green-600 hover:text-green-500">
+>>>>>>> f589f9b2 (.)
                                 {{ __('pub_theme::auth.login.forgot_password') }}
                             </a>
                         </div>

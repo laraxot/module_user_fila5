@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Models Analysis - User Module
 
 ## Factory e Seeder Status
@@ -61,6 +62,8 @@ All business models have factories. Infrastructure correctly excluded.
 - **Modern Architecture**: Multi-tenancy, teams, social auth
 - **Healthcare Ready**: Role-based access for medical data
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: models
@@ -77,4 +80,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/models-analysis.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

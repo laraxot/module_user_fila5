@@ -10,11 +10,16 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Class CreateRolesTable.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration {
 =======
 return new class extends XotBaseMigration
 {
 >>>>>>> 2024e2e7 (.)
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> f589f9b2 (.)
     /**
      * Run the migrations.
      */
@@ -30,16 +35,22 @@ return new class extends XotBaseMigration
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (!$this->hasColumn('id')) {
                 $table->id();
             }
             if (!$this->hasColumn('team_id')) {
 =======
+=======
+>>>>>>> f589f9b2 (.)
             if (! $this->hasColumn('id')) {
                 $table->id();
             }
             if (! $this->hasColumn('team_id')) {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                 $table->foreignId('team_id')->nullable()->index();
             }
             $this->updateTimestamps($table);

@@ -3,8 +3,11 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\View;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Support\Facades\Schema;
@@ -12,7 +15,10 @@ use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
@@ -39,9 +45,12 @@ describe('Auth Components Tests', function (): void {
         // Test that login page loads correctly
         $response = get('/it/auth/login');
 <<<<<<< HEAD
+<<<<<<< HEAD
         /* @phpstan-ignore-next-line method.nonObject */
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $response->assertStatus(200);
     });
 
@@ -49,14 +58,18 @@ describe('Auth Components Tests', function (): void {
         // Test that register page loads correctly
         $response = get('/it/auth/register');
 <<<<<<< HEAD
+<<<<<<< HEAD
         /* @phpstan-ignore-next-line method.nonObject */
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $response->assertStatus(200);
     });
 
     test('auth-session-status component renders correctly', function (): void {
         // Test the existing auth-session-status component rendering
+<<<<<<< HEAD
 <<<<<<< HEAD
         $html = view('components.auth-session-status', ['status' => 'Test status'])->render();
 
@@ -66,6 +79,11 @@ describe('Auth Components Tests', function (): void {
 
         expect(strlen($html))->toBeGreaterThanOrEqual(0);
 >>>>>>> 2024e2e7 (.)
+=======
+        $html = View::make('components.auth-session-status', ['status' => 'Test status'])->render();
+
+        expect(strlen($html))->toBeGreaterThanOrEqual(0);
+>>>>>>> f589f9b2 (.)
         expect($html)->not->toBeEmpty();
     });
 
@@ -74,10 +92,14 @@ describe('Auth Components Tests', function (): void {
         expect(View::exists('components.auth-header'))->toBeTrue();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $html = view('components.auth-header', [
 =======
         $html = View::make('components.auth-header', [
 >>>>>>> 2024e2e7 (.)
+=======
+        $html = View::make('components.auth-header', [
+>>>>>>> f589f9b2 (.)
             'title' => 'Login Test',
             'description' => 'Test description',
         ])->render();
@@ -91,6 +113,7 @@ describe('Authentication Flow with Reorganized Components', function (): void {
     test('login form components work after reorganization', function (): void {
         // Visit login page and ensure all reorganized components render
         $response = get('/it/auth/login');
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         /* @phpstan-ignore-next-line method.nonObject */
@@ -109,11 +132,15 @@ describe('Authentication Flow with Reorganized Components', function (): void {
 =======
         $response->assertStatus(200);
 >>>>>>> 2024e2e7 (.)
+=======
+        $response->assertStatus(200);
+>>>>>>> f589f9b2 (.)
     });
 });
 
 describe('User Profile Components Tests', function (): void {
     test('profile pages use reorganized components correctly', function (): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
         $user = User::factory()->create();
 
@@ -136,6 +163,8 @@ describe('User Profile Components Tests', function (): void {
 
         $response->assertStatus(200);
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $user = UserFactory::new()->createOne();
         \assert($user instanceof User);
 
@@ -168,6 +197,9 @@ describe('User Profile Components Tests', function (): void {
         } catch (\Throwable $e) {
             expect($e->getMessage())->not->toBe('');
         }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     });
 });

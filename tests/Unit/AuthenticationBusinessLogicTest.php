@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\User\Tests\Unit;
 
 use Carbon\Carbon;
@@ -177,6 +178,8 @@ describe('Authentication Business Logic', function () {
             // Personal team would be:
             $personalTeam = (object) [
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Carbon\Carbon;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -418,12 +421,16 @@ describe('Authentication Business Logic', function (): void {
             Assert::assertStringNotContainsString('Personal', $team['name']);
 
             $personalTeam = [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                 'name' => 'Mario Rossi (Personal)',
                 'personal_team' => true,
                 'user_id' => 1001,
             ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             expect($personalTeam->personal_team)->toBeTrue();
             expect($personalTeam->name)->toContain('Personal');
@@ -502,6 +509,8 @@ describe('Authentication Business Logic', function (): void {
 
         it('handles permission inheritance and hierarchy', function () {
 =======
+=======
+>>>>>>> f589f9b2 (.)
             Assert::assertNotSame($team['personal_team'], $personalTeam['personal_team']);
             Assert::assertStringContainsString('Personal', $personalTeam['name']);
         });
@@ -557,7 +566,10 @@ describe('Authentication Business Logic', function (): void {
         });
 
         it('handles permission inheritance and hierarchy', function (): void {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             $roles = [
                 (object) ['name' => 'admin', 'level' => 1, 'permissions' => ['*']],
                 (object) ['name' => 'doctor', 'level' => 2, 'permissions' => ['view_patients', 'create_appointments']],
@@ -565,6 +577,7 @@ describe('Authentication Business Logic', function (): void {
                 (object) ['name' => 'receptionist', 'level' => 4, 'permissions' => ['view_appointments']],
             ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             // Business Logic: Higher level roles have more permissions
             usort($roles, fn($a, $b) => $a->level <=> $b->level);
@@ -633,6 +646,8 @@ describe('Authentication Business Logic', function (): void {
 
         it('handles OAuth provider fallbacks', function () {
 =======
+=======
+>>>>>>> f589f9b2 (.)
             usort($roles, static fn (object $a, object $b): int => $a->level <=> $b->level);
 
             Assert::assertSame('admin', $roles[0]->name);
@@ -685,11 +700,15 @@ describe('Authentication Business Logic', function (): void {
         });
 
         it('handles OAuth provider fallbacks', function (): void {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             $primaryProvider = 'google';
             $fallbackProviders = ['azure', 'facebook'];
             $allProviders = array_merge([$primaryProvider], $fallbackProviders);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             // Business Logic: Must have fallback options
             expect(count($allProviders))->toBeGreaterThan(1);
@@ -732,6 +751,8 @@ describe('Authentication Business Logic', function (): void {
 
         it('handles device limit enforcement', function () {
 =======
+=======
+>>>>>>> f589f9b2 (.)
             Assert::assertGreaterThan(1, count($allProviders));
             Assert::assertSame($primaryProvider, $allProviders[0]);
         });
@@ -768,7 +789,10 @@ describe('Authentication Business Logic', function (): void {
         });
 
         it('handles device limit enforcement', function (): void {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             $userDevices = [
                 ['type' => 'mobile', 'name' => 'iPhone 14'],
                 ['type' => 'desktop', 'name' => 'MacBook Pro'],
@@ -776,6 +800,7 @@ describe('Authentication Business Logic', function (): void {
                 ['type' => 'web', 'name' => 'Chrome Browser'],
             ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             $maxDevices = 5;
             $currentDeviceCount = count($userDevices);
@@ -806,6 +831,8 @@ describe('Authentication Business Logic', function (): void {
 
         it('handles concurrent session limits', function () {
 =======
+=======
+>>>>>>> f589f9b2 (.)
             Assert::assertLessThanOrEqual(5, count($userDevices));
         });
     });
@@ -827,12 +854,16 @@ describe('Authentication Business Logic', function (): void {
         });
 
         it('handles concurrent session limits', function (): void {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             $userActiveSessions = [
                 ['id' => 'sess_1', 'device' => 'mobile', 'started' => Carbon::now()->subHour()],
                 ['id' => 'sess_2', 'device' => 'desktop', 'started' => Carbon::now()->subMinutes(30)],
             ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             $maxConcurrentSessions = 3;
 
@@ -855,6 +886,8 @@ describe('Authentication Business Logic', function (): void {
             expect($attempt->is_suspicious)->toBeFalse();
             expect($attempt->country)->toBe('Italy'); // Expected for Italian users
 =======
+=======
+>>>>>>> f589f9b2 (.)
             Assert::assertLessThanOrEqual(3, count($userActiveSessions));
         });
 
@@ -870,7 +903,10 @@ describe('Authentication Business Logic', function (): void {
             Assert::assertMatchesRegularExpression('/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/', $attempt['ip_address']);
             Assert::assertSame('Italy', $attempt['country']);
             Assert::assertFalse($isSuspicious);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         });
     });
 });

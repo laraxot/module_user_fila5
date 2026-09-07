@@ -7,9 +7,12 @@ namespace Modules\User\Http\Volt;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Volt\Routing\Attribute\Post;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 /*
  * Attribute class Volt\Routing\Attribute\Post does not exist.

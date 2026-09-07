@@ -5,10 +5,14 @@ declare(strict_types=1);
 return [
     'login' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'username_or_email' => "Ім'я користувача або електронна пошта",
 =======
         'username_or_email' => 'Ім\'я користувача або електронна пошта',
 >>>>>>> 2024e2e7 (.)
+=======
+        'username_or_email' => 'Ім\'я користувача або електронна пошта',
+>>>>>>> f589f9b2 (.)
         'forgot_password_link' => 'Забули пароль?',
         'create_an_account' => 'Створити акаунт',
     ],
@@ -112,6 +116,7 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'avatar' => 'Аватар',
         'email' => 'E-mail',
         'login' => 'Логін',
@@ -131,6 +136,8 @@ return [
     'or' => 'Або',
     'cancel' => 'Скасувати',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'avatar' => [
             'label' => 'Аватар',
             'tooltip' => '',
@@ -235,5 +242,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

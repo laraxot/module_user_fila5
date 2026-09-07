@@ -531,7 +531,11 @@ trait HasTeams
 - [Modules/Xot/docs/RELATION_X.md](../../Xot/docs/RELATION_X.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025* 
 =======
 *Ultimo aggiornamento: gennaio 2025* 
 >>>>>>> 2024e2e7 (.)
+=======
+*Ultimo aggiornamento: gennaio 2025* 
+>>>>>>> f589f9b2 (.)

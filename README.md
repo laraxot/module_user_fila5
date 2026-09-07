@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 👥 User - Il SISTEMA di GESTIONE UTENTI più AVANZATO! 🔐
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
@@ -444,6 +445,8 @@ Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICE
 </div>
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 # 👤 User — chi sei, cosa puoi fare, per conto di chi
 
 <<<<<<< .merge_file_2p2dHQ
@@ -565,4 +568,7 @@ PHPInsights. Finché non sono misurate, non compaiono come badge.
 =======
 **Modulo** `user` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
 >>>>>>> .merge_file_feUxsu
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

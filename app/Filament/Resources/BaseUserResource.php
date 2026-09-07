@@ -10,6 +10,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Section;
 use Override;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
@@ -19,6 +20,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\HtmlString;
 use Modules\User\Filament\Resources\UserResource\Pages;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Carbon\CarbonInterface;
 use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
@@ -27,7 +30,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\HtmlString;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -36,10 +42,13 @@ abstract class BaseUserResource extends XotBaseResource
     // protected static ?string $model = \Modules\Xot\Datas\XotData::make()->getUserClass();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-users';
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     // Static property Modules\User\Filament\Resources\UserResource::$enablePasswordUpdates is never read, only written.
     // private static bool|\Closure $enablePasswordUpdates = true;
 
@@ -56,7 +65,11 @@ abstract class BaseUserResource extends XotBaseResource
     // }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public static function getFormSchema(): array
     {
         return [
@@ -65,6 +78,7 @@ abstract class BaseUserResource extends XotBaseResource
                 'email' => TextInput::make('email')->required()->unique(ignoreRecord: true),
                 'password' => TextInput::make('password')
                     ->password()
+<<<<<<< HEAD
                     ->dehydrateStateUsing(fn($state) => !empty($state) ? Hash::make($state) : null)
                     ->required(fn($livewire) => $livewire instanceof CreateUser),
             ])->columnSpan(8),
@@ -75,13 +89,40 @@ abstract class BaseUserResource extends XotBaseResource
                     }
 
                     return $record->created_at->diffForHumans();
+=======
+                    ->dehydrateStateUsing(function ($state) {
+                        if (empty($state)) {
+                            return;
+                        }
+
+                        return is_string($state) ? Hash::make($state) : null;
+                    })
+                    ->required(fn ($livewire) => $livewire instanceof CreateUser),
+            ])->columnSpan(8),
+            'section02' => Section::make([
+                'created_at' => TextEntry::make('created_at')->state(static function ($record) {
+                    if ($record === null || ! $record instanceof Model) {
+                        return new HtmlString('&mdash;');
+                    }
+
+                    if (! isset($record->created_at) || ! ($record->created_at instanceof \DateTimeInterface)) {
+                        return new HtmlString('&mdash;');
+                    }
+
+                    $createdAt = $record->created_at;
+
+                    return $createdAt instanceof CarbonInterface ? $createdAt->diffForHumans() : $createdAt->format('Y-m-d H:i:s');
+>>>>>>> f589f9b2 (.)
                 }),
             ])->columnSpan(4),
         ];
     }
+<<<<<<< HEAD
 =======
     
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {
@@ -96,10 +137,14 @@ abstract class BaseUserResource extends XotBaseResource
      */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function hasCombinedRelationManagerTabsWithContent(): bool
     {
         return true;

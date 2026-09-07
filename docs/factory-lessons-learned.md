@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Lezioni Apprese dall'Errore Gravissimo delle Factory"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Lezioni Apprese dall'Errore Gravissimo delle Factory
 
 ## L'Errore Gravissimo
@@ -169,16 +175,22 @@ done
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Factory Audit Root](../../../project_docs/factory-audit-2025.md)
 - [Missing Factories Audit](./missing-factories-audit.md)
 - [Geo Factory Audit](../../geo/project_docs/missing-factories-audit.md)
 - [Laravel Factory Best Practices](../../../project_docs/laravel-factory-best-practices.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Factory Audit Root](../../../../docs/project/factory-audit-2025.md)
 - [Missing Factories Audit](./missing-factories-audit.md)
 - [Geo Factory Audit](../../geo/project_docs/missing-factories-audit.md)
 - [Laravel Factory Best Practices](../../../../docs/project/laravel-factory-best-practices.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ---
 
@@ -187,6 +199,9 @@ done
 Ogni model DEVE avere la sua factory. È obbligatorio per il corretto funzionamento del sistema.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

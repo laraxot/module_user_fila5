@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Struttura dei Tests del Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Struttura dei Tests del Modulo User
 
 ## Panoramica
@@ -310,19 +316,26 @@ dump($variable);
 
 - [README Modulo User](../readme.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Testing](../../../project_docs/testing-best-practices.md)
 =======
 - [Best Practices Testing](../../../../docs/project/testing-best-practices.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Best Practices Testing](../../../../docs/project/testing-best-practices.md)
+>>>>>>> f589f9b2 (.)
 - [Architettura Modulo User](../architecture/readme.md)
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 
 

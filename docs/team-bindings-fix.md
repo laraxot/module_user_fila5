@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Fix Binding Team Models nel Modulo User
 
 ## Panoramica
@@ -297,6 +298,8 @@ $this->assertTrue($user->belongsToTeam($team));
 **Data**: Gennaio 2025
 **Versione**: 1.0
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: team-bindings-fix
@@ -313,4 +316,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/team-bindings-fix.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

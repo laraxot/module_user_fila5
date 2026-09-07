@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Override;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Forms\Components\TextInput;
@@ -17,6 +18,10 @@ use Modules\User\Filament\Resources\TeamResource\RelationManagers\UsersRelationM
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 2024e2e7 (.)
+=======
+use Filament\Forms\Components\TextInput;
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -28,20 +33,32 @@ class TeamResource extends XotBaseResource
      * @return class-string<Model>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public static function getModel(): string
     {
         $xot = XotData::make();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         /** @var class-string<Model> */
         return $xot->getTeamClass();
     }
 
     #[Override]
+=======
+        /* @var class-string<Model> */
+        return $xot->getTeamClass();
+    }
+
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public static function getFormSchema(): array
     {
         return [
@@ -50,6 +67,7 @@ class TeamResource extends XotBaseResource
             'description' => TextInput::make('description')->maxLength(255),
         ];
     }
+<<<<<<< HEAD
 =======
         /* @var class-string<Model> */
         return $xot->getTeamClass();
@@ -58,4 +76,6 @@ class TeamResource extends XotBaseResource
     
 
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

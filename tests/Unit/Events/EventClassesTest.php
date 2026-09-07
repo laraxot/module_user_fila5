@@ -3,14 +3,20 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(Modules\User\Tests\TestCase::class);
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Unit\Events;
 
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Database\Factories\UserFactory;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Events\AddingTeam;
 use Modules\User\Events\AddingTeamMember;
 use Modules\User\Events\RecoveryCodeReplaced;
@@ -21,6 +27,7 @@ use Modules\User\Events\TeamMemberUpdated;
 use Modules\User\Events\TeamSwitched;
 use Modules\User\Events\TwoFactorAuthenticationDisabled;
 use Modules\User\Events\TwoFactorAuthenticationEnabled;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\User\Models\User;
 
@@ -110,6 +117,8 @@ test('TeamSwitched event can be instantiated', function () {
 
     expect($event)->toBeInstanceOf(TeamSwitched::class);
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -196,5 +205,8 @@ describe('Event Classes', function (): void {
 
         Assert::assertInstanceOf(TeamSwitched::class, $event);
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

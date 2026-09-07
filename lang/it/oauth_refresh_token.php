@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Refresh Token OAuth',
         'plural_label' => 'Refresh Token OAuth',
@@ -59,6 +62,7 @@ return [
     'messages' => [
         'revoked' => 'Refresh token revocato con successo',
     ],
+<<<<<<< HEAD
 =======
     'navigation' => ['label' => 'Refresh Token OAuth', 'plural_label' => 'Refresh Token OAuth', 'group' => 'OAuth', 'icon' => 'heroicon-o-arrow-path', 'sort' => 27],
     'label' => 'Refresh Token OAuth',
@@ -82,4 +86,6 @@ return [
     ],
     'messages' => ['revoked' => 'Refresh token revocato con successo'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

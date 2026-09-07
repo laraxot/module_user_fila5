@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Database Issues in User Module"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Database Issues in User Module
 
 ## Missing `doctor_team` Table
@@ -41,12 +47,15 @@ related:
 
 **Related Documentation**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Overview](../INDEX.md)
 - [Team Management](./TEAM_MANAGEMENT.md)
 - [BaseUser Model](./BaseUser.md)
 - [Database Structure](../DATABASE_STRUCTURE.md)
 - [Migration Guidelines](../../../../docs/collegamenti-documentazione.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [User Module Overview](../index.md)
 - [Team Management](./team_management.md)
 - [BaseUser Model](./baseuser.md)
@@ -56,5 +65,9 @@ related:
 - [BaseUser Model](./baseuser.md)
 - [Database Structure](../DATABASE_STRUCTURE.md)
 - [Migration Guidelines](../../../../docs/collegamenti-documentazione.md)
+<<<<<<< HEAD
 - [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
+>>>>>>> f589f9b2 (.)

@@ -7,6 +7,7 @@ use Modules\User\Models\Profile;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\file_put_contents;
 
 return new class extends XotBaseMigration {
@@ -14,6 +15,10 @@ return new class extends XotBaseMigration {
 return new class extends XotBaseMigration
 {
 >>>>>>> 2024e2e7 (.)
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> f589f9b2 (.)
     protected ?string $model_class = Profile::class;
 
     /**
@@ -21,6 +26,7 @@ return new class extends XotBaseMigration
      */
     public function up(): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         $conn = $this->model->getConnectionName();
         $db = $this->getConn()->getConnection()->getDatabaseName();
@@ -31,11 +37,16 @@ return new class extends XotBaseMigration
         $this->tableCreate(static function (Blueprint $table): void {
             $table->uuid('id')->primary();
 =======
+=======
+>>>>>>> f589f9b2 (.)
         // -- CREATE --
         $this->tableCreate(static function (Blueprint $table): void {
             $table->uuid('id')->primary();
             $table->string('uuid', 36)->index()->nullable();
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             $table->string('user_id', 36)->index()->nullable();
             $table->string('type')->index()->nullable();
             $table->string('first_name')->nullable();
@@ -65,15 +76,21 @@ return new class extends XotBaseMigration
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (! $this->hasColumn('user_id')) {
                 $table->string('user_id', 36)->index()->nullable()->after('id');
 =======
+=======
+>>>>>>> f589f9b2 (.)
             if (! $this->hasColumn('uuid')) {
                 $table->string('uuid', 36)->index()->nullable()->after('id');
             }
             if (! $this->hasColumn('user_id')) {
                 $table->string('user_id', 36)->index()->nullable()->after('uuid');
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             }
             if (! $this->hasColumn('email')) {
                 $table->string('email')->nullable()->after('last_name');
@@ -82,6 +99,7 @@ return new class extends XotBaseMigration
                 $table->string('phone')->nullable()->after('email');
             }
             if (! $this->hasColumn('avatar')) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                 $table->string('avatar')->nullable();
             }
@@ -97,6 +115,8 @@ return new class extends XotBaseMigration
             if (! $this->hasColumn('status')) {
                 $table->string('status')->nullable();
 =======
+=======
+>>>>>>> f589f9b2 (.)
                 $table->string('avatar')->nullable()->after('bio');
             }
             if (! $this->hasColumn('timezone')) {
@@ -113,7 +133,10 @@ return new class extends XotBaseMigration
             }
             if (! $this->hasColumn('extra')) {
                 $table->json('extra')->nullable()->after('status');
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             }
         });
     }

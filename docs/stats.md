@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # stats
 
 <!-- Contenuto migrato da _docs/stats.txt -->
 
 https://github.com/spatie/filament-simple-stats/blob/main/src/SimpleStat.php
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: stats
@@ -21,4 +24,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/stats.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

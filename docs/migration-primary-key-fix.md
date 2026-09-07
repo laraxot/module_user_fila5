@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Fix Primary Key Constraint - team_user Table
 
 ## Data
@@ -127,6 +128,8 @@ $this->tableCreate(static function (Blueprint $table): void {
 
 *Ultimo aggiornamento: 2025-01-15*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: migration-primary-key-fix
@@ -143,4 +146,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-primary-key-fix.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Architectural Rules & Guidelines"
 type: rule
@@ -20,13 +23,17 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Architectural Rules & Guidelines
 
 This module adheres to the **Laraxot Architecture** and **Super Cow Methodology**.
 
 For strict coding standards, Filament extension rules, and PHPStan guidelines, please refer to the central documentation in the **Xot Module**:
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 -   [Super Cow Methodology](../../xot/docs/super_cow_methodology.md)
 -   [PHP Quality Guide](../../xot/docs/php_quality_guide.md)
@@ -38,6 +45,8 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 3.  **XotBase**: Always extend `XotBase` classes, never Filament classes directly.
 4.  **Translations**: Use `LangServiceProvider` for automatic label resolution.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Super Cow Methodology](../../Xot/docs/super_cow_methodology.md)
 - [PHP Quality Guide](../../Xot/docs/php_quality_guide.md)
 - [Filament Extension Rules](../../Xot/docs/filament_extension_rules.md)
@@ -96,4 +105,7 @@ User/
 ---
 
 *Last updated: June 2026*
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

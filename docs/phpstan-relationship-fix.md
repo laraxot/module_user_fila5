@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Correzione PHPStan - Relationship Type Hints"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Correzione PHPStan - Relationship Type Hints
 
 ## 🚨 Errore PHPStan Risolto
@@ -101,7 +107,11 @@ Per **tutte le relazioni Eloquent** in trait e modelli:
 - [Eloquent Relationships](https://laravel.com/project_docs/12.x/eloquent-relationships)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025*
 =======
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> 2024e2e7 (.)
+=======
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> f589f9b2 (.)

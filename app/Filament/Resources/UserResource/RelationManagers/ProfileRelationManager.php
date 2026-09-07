@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Override;
 use Filament\Actions\CreateAction;
@@ -17,6 +18,8 @@ use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Actions\Action;
 use Filament\Actions\BulkAction;
 use Filament\Actions\CreateAction;
@@ -28,7 +31,10 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class ProfileRelationManager extends XotBaseRelationManager
@@ -36,19 +42,27 @@ class ProfileRelationManager extends XotBaseRelationManager
     protected static string $relationship = 'profile';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static null|string $recordTitleAttribute = 'first_name';
 =======
     protected static ?string $recordTitleAttribute = 'first_name';
 >>>>>>> 2024e2e7 (.)
+=======
+    protected static ?string $recordTitleAttribute = 'first_name';
+>>>>>>> f589f9b2 (.)
 
     /**
      * @return array<string, Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function getFormSchema(): array
     {
         return [
@@ -59,6 +73,7 @@ class ProfileRelationManager extends XotBaseRelationManager
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     #[Override]
     public function table(Table $table): Table
@@ -84,6 +99,8 @@ class ProfileRelationManager extends XotBaseRelationManager
                 DeleteBulkAction::make(),
             ]);
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * @return array<string, Column>
      */
@@ -132,6 +149,9 @@ class ProfileRelationManager extends XotBaseRelationManager
         return [
             'delete' => DeleteBulkAction::make(),
         ];
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

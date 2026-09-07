@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Tests\TestCase;
 use Modules\User\Filament\Resources\UserResource\Pages\BaseListUsers;
 use Filament\Tables\Columns\TextColumn;
@@ -18,6 +19,8 @@ use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\User\Models\User;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Feature\Filament\Pages;
 
 use Filament\Facades\Filament;
@@ -35,17 +38,23 @@ use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
     $this->listUsersPage = new ListUsers();
 
     // Create some test users
     $this->users = User::factory()
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /* @var TestCase $this */
     try {
         $panel = Filament::getPanel('user::admin');
@@ -59,11 +68,15 @@ beforeEach(function (): void {
     TestCase::$listUsersPage = new ListUsers;
 
     $users = UserFactory::new()
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ->count(3)
         ->create([
             'type' => UserType::MasterAdmin,
         ]);
+<<<<<<< HEAD
 <<<<<<< HEAD
 });
 
@@ -260,6 +273,8 @@ test('list users page can handle table records per page', function (): void {
     // Should have records per page options
     expect($recordsPerPage)->toBeArray();
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
     TestCase::$users = new Collection($users->all());
 });
@@ -378,5 +393,8 @@ describe('List Users', function (): void {
         Assert::assertTrue($nameColumn->isSearchable());
         Assert::assertTrue($emailColumn->isSearchable());
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

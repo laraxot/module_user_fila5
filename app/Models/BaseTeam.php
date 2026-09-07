@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Override;
 use Illuminate\Support\Carbon;
 use Modules\User\Database\Factories\TeamFactory;
@@ -13,11 +14,15 @@ use Modules\Xot\Contracts\ProfileContract;
 =======
 use Illuminate\Database\Eloquent\Builder;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Illuminate\Support\Collection;
 use Modules\User\Contracts\TeamContract;
@@ -25,17 +30,23 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits\HasExtraTrait;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 /**
  * Modules\User\Models\Team.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property int $id
  * @property int $user_id
@@ -53,6 +64,8 @@ use Modules\Xot\Datas\XotData;
  *
  * @method static TeamFactory factory($count = null, $state = [])
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property int                                         $id
  * @property int                                         $user_id
  * @property string                                      $name
@@ -67,7 +80,10 @@ use Modules\Xot\Datas\XotData;
  * @property EloquentCollection<int, Model&UserContract> $users
  * @property int|null                                    $users_count
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @method static Builder|Team newModelQuery()
  * @method static Builder|Team newQuery()
  * @method static Builder|Team query()
@@ -89,16 +105,22 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|Team whereUpdatedBy($value)
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property Membership $membership
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @property string $uuid
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property Membership           $membership
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @property string               $uuid
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @method static Builder|Team whereUuid($value)
  *
@@ -124,6 +146,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get the owner of the team.
      */
     #[Override]
@@ -132,6 +155,11 @@ abstract class BaseTeam extends BaseModel implements TeamContract
      */
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return BelongsTo<Model&UserContract, Model>
+     */
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function owner(): BelongsTo
     {
         $xotData = XotData::make();
@@ -139,17 +167,24 @@ abstract class BaseTeam extends BaseModel implements TeamContract
         $user_class = $xotData->getUserClass();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->belongsTo($user_class, 'user_id');
 =======
+=======
+>>>>>>> f589f9b2 (.)
         /** @var BelongsTo<Model&UserContract, Model> $relation */
         $relation = $this->belongsTo($user_class, 'user_id');
 
         return $relation;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     /**
      * Get all of the team's users including its owner.
+<<<<<<< HEAD
 <<<<<<< HEAD
      */
     #[Override]
@@ -157,6 +192,8 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     {
         if (!($this->owner instanceof User)) {
 =======
+=======
+>>>>>>> f589f9b2 (.)
      *
      * @return Collection<int, Model&UserContract>
      */
@@ -164,7 +201,10 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     public function allUsers(): Collection
     {
         if (! $this->owner instanceof User) {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             return $this->users;
         }
 
@@ -172,6 +212,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Get all of the users that belong to the team.
      */
@@ -181,12 +222,18 @@ abstract class BaseTeam extends BaseModel implements TeamContract
      */
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'>
+     */
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function users(): BelongsToMany
     {
         $xotData = XotData::make();
         /** @var class-string<Model> */
         $userClass = $xotData->getUserClass();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         return $this->belongsToManyX($userClass);
     }
@@ -198,6 +245,8 @@ abstract class BaseTeam extends BaseModel implements TeamContract
      */
     #[Override]
 =======
+=======
+>>>>>>> f589f9b2 (.)
         /** @var BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'> $relation */
         $relation = $this->belongsToManyX($userClass)
             ->using(TeamUser::class)
@@ -220,7 +269,10 @@ abstract class BaseTeam extends BaseModel implements TeamContract
      * @return BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'>
      */
     #[\Override]
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public function members(): BelongsToMany
     {
         return $this->users();
@@ -231,15 +283,21 @@ abstract class BaseTeam extends BaseModel implements TeamContract
      *
      * @param UserContract $user L'utente da verificare
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return bool True se l'utente appartiene al team, false altrimenti
      */
     #[Override]
 =======
+=======
+>>>>>>> f589f9b2 (.)
      *
      * @return bool True se l'utente appartiene al team, false altrimenti
      */
     #[\Override]
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public function hasUser(UserContract $user): bool
     {
         // Corretto l'errore di tipo per il metodo contains
@@ -256,6 +314,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
      *
      * @param string $email Indirizzo email da verificare
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return bool True se un utente con quell'email appartiene al team, false altrimenti
      */
     #[Override]
@@ -263,6 +322,8 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     {
         return $this->allUsers()->contains(static fn($user): bool => $user->email === $email);
 =======
+=======
+>>>>>>> f589f9b2 (.)
      *
      * @return bool True se un utente con quell'email appartiene al team, false altrimenti
      */
@@ -272,7 +333,10 @@ abstract class BaseTeam extends BaseModel implements TeamContract
         return $this->allUsers()->contains(static function (Model&UserContract $user) use ($email): bool {
             return ($user->email ?? null) === $email;
         });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     /**
@@ -280,23 +344,30 @@ abstract class BaseTeam extends BaseModel implements TeamContract
      *
      * @param UserContract $userContract L'utente da verificare
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string $permission Il permesso da controllare
      * @return bool True se l'utente ha il permesso, false altrimenti
      */
     #[Override]
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * @param string       $permission   Il permesso da controllare
      *
      * @return bool True se l'utente ha il permesso, false altrimenti
      */
     #[\Override]
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public function userHasPermission(UserContract $userContract, string $permission): bool
     {
         return $userContract->hasTeamPermission($this, $permission);
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Ottiene tutti gli inviti utente pendenti per il team.
      *
@@ -308,6 +379,8 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     {
         return $this->hasMany(TeamInvitation::class);
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * @return HasMany<TeamInvitation, Model>
      */
     #[\Override]
@@ -317,13 +390,17 @@ abstract class BaseTeam extends BaseModel implements TeamContract
         $relation = $this->hasMany(TeamInvitation::class);
 
         return $relation;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     /**
      * Rimuove l'utente specificato dal team.
      *
      * @param UserContract $userContract L'utente da rimuovere dal team
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return void
      */
@@ -332,6 +409,10 @@ abstract class BaseTeam extends BaseModel implements TeamContract
      */
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+     */
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function removeUser(UserContract $userContract): void
     {
         if ($userContract->current_team_id === $this->id) {
@@ -346,6 +427,7 @@ abstract class BaseTeam extends BaseModel implements TeamContract
     /**
      * Rimuove tutte le risorse del team.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return void
      */
@@ -354,6 +436,10 @@ abstract class BaseTeam extends BaseModel implements TeamContract
      */
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+     */
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function purge(): void
     {
         $this->owner()->where('current_team_id', $this->id)->update(['current_team_id' => null]);
@@ -365,7 +451,10 @@ abstract class BaseTeam extends BaseModel implements TeamContract
         $this->delete();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
     /**
      * Get the attributes that should be cast.
@@ -383,5 +472,8 @@ abstract class BaseTeam extends BaseModel implements TeamContract
             'deleted_at' => 'datetime',
         ];
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

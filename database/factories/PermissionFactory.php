@@ -7,6 +7,7 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\Permission;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 /**
@@ -16,6 +17,10 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 /**
 >>>>>>> 2024e2e7 (.)
+=======
+
+/**
+>>>>>>> f589f9b2 (.)
  * @extends Factory<Permission>
  */
 class PermissionFactory extends Factory
@@ -28,6 +33,7 @@ class PermissionFactory extends Factory
     protected $model = Permission::class;
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Definisce lo stato di default del modello.
      *
@@ -143,6 +149,8 @@ class PermissionFactory extends Factory
         ]);
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * Define the model's default state.
      *
      * @return array<string, mixed>
@@ -157,5 +165,8 @@ class PermissionFactory extends Factory
             'guard_name' => 'web',
         ];
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

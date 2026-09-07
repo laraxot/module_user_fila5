@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Analisi dell'Errore negli Eventi di Logout"
 type: concept
@@ -33,7 +36,10 @@ related:
 - [Analisi Errore Logout](logout-blade-error-analysis-3.md)
 - [Widget Filament Corretto](logout-filament-widget-corrected-3.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
@@ -45,10 +51,14 @@ related:
 ## Errore Identificato
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
 =======
 L'implementazione attuale del file `Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
 >>>>>>> 2024e2e7 (.)
+=======
+L'implementazione attuale del file `Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
+>>>>>>> f589f9b2 (.)
 
 ```
 Call to a member function getAuthIdentifier() on null
@@ -101,31 +111,43 @@ try {
     // Ottieni l'utente prima del logout
     $user = Auth::user();
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     // Dispatch dell'evento prima del logout
     Event::dispatch('auth.logout.attempting', [$user]);
     
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
     // Dispatch dell'evento prima del logout
     Event::dispatch('auth.logout.attempting', [$user]);
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     // Esegui il logout
     Auth::logout();
     request()->session()->invalidate();
     request()->session()->regenerateToken();
+<<<<<<< HEAD
 <<<<<<< HEAD
     
     // Dispatch dell'evento dopo il logout, passando l'utente salvato
     Event::dispatch('auth.logout.successful', [$user]);
     
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
     // Dispatch dell'evento dopo il logout, passando l'utente salvato
     Event::dispatch('auth.logout.successful', [$user]);
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     // Reindirizzamento con localizzazione
     $locale = app()->getLocale();
     return redirect()->to('/' . $locale)
@@ -134,10 +156,14 @@ try {
     // Log dell'errore
     Log::error('Errore durante il logout: ' . $e->getMessage());
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
     // Reindirizzamento con messaggio di errore
     $locale = app()->getLocale();
     return redirect()->to('/' . $locale)
@@ -180,10 +206,14 @@ public function handle(Logout $event): void
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
         // Resto del codice...
     } catch (\Exception $e) {
         Log::error('Errore durante la gestione dell\'evento di logout', [
@@ -203,7 +233,10 @@ Si raccomanda di implementare l'**Opzione 1** perché:
 
 Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati
@@ -355,5 +388,9 @@ Si raccomanda di implementare l'**Opzione 1** perché:
 2. Evita di modificare il `LogoutListener` che potrebbe essere utilizzato da altre parti dell'applicazione
 3. Garantisce che gli eventi di logout abbiano sempre accesso all'utente che si è disconnesso
 
+<<<<<<< HEAD
 Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
 >>>>>>> 2024e2e7 (.)
+=======
+Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
+>>>>>>> f589f9b2 (.)

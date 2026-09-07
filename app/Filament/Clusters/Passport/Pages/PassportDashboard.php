@@ -6,9 +6,13 @@ namespace Modules\User\Filament\Clusters\Passport\Pages;
 
 use Filament\Actions\Action;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Clusters\Cluster;
 >>>>>>> 2024e2e7 (.)
+=======
+use Filament\Clusters\Cluster;
+>>>>>>> f589f9b2 (.)
 use Filament\Notifications\Notification;
 use Livewire\Attributes\On;
 use Modules\User\Filament\Clusters\Passport;
@@ -18,16 +22,20 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 class PassportDashboard extends XotBasePage
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static ?string $cluster = Passport::class;
 
     protected string $view = 'user::filament.pages.passport-dashboard';
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public bool $hasPublicKey = false;
 
     public bool $hasPrivateKey = false;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public array $output = [];
 
@@ -38,10 +46,16 @@ class PassportDashboard extends XotBasePage
     public array $output = [];
 
 >>>>>>> 2024e2e7 (.)
+=======
+    /** @var list<string> */
+    public array $output = [];
+
+>>>>>>> f589f9b2 (.)
     public string $status = '';
 
     public bool $isRunning = false;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /** @var array<string, string> */
     protected $listeners = [
@@ -53,6 +67,8 @@ class PassportDashboard extends XotBasePage
         'artisan-command.error' => 'handleCommandError',
     ];
 =======
+=======
+>>>>>>> f589f9b2 (.)
     public string $currentCommand = '';
 
     /**
@@ -61,7 +77,10 @@ class PassportDashboard extends XotBasePage
     protected static ?string $cluster = Passport::class;
 
     protected string $view = 'user::filament.pages.passport-dashboard';
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
     public function executeCommand(string $command): void
     {
@@ -165,11 +184,15 @@ class PassportDashboard extends XotBasePage
     {
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             Action::make('passport_install')
                 ->label(static::trans('actions.install.label'))
 =======
             'passport_install' => Action::make('passport_install')
 >>>>>>> 2024e2e7 (.)
+=======
+            'passport_install' => Action::make('passport_install')
+>>>>>>> f589f9b2 (.)
                 ->icon('heroicon-o-arrow-down-tray')
                 ->color('success')
                 ->disabled(fn () => $this->isRunning)
@@ -178,11 +201,15 @@ class PassportDashboard extends XotBasePage
                 ->action(fn () => $this->executeCommand('passport:install --uuids')),
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             Action::make('passport_keys')
                 ->label(static::trans('actions.generate_keys.label'))
 =======
             'passport_keys' => Action::make('passport_keys')
 >>>>>>> 2024e2e7 (.)
+=======
+            'passport_keys' => Action::make('passport_keys')
+>>>>>>> f589f9b2 (.)
                 ->icon('heroicon-o-key')
                 ->color('primary')
                 ->disabled(fn () => $this->isRunning)
@@ -190,11 +217,15 @@ class PassportDashboard extends XotBasePage
                 ->action(fn () => $this->executeCommand('passport:keys')),
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             Action::make('passport_purge')
                 ->label(static::trans('actions.purge_tokens.label'))
 =======
             'passport_purge' => Action::make('passport_purge')
 >>>>>>> 2024e2e7 (.)
+=======
+            'passport_purge' => Action::make('passport_purge')
+>>>>>>> f589f9b2 (.)
                 ->icon('heroicon-o-trash')
                 ->color('warning')
                 ->disabled(fn () => $this->isRunning)
@@ -203,11 +234,15 @@ class PassportDashboard extends XotBasePage
                 ->action(fn () => $this->executeCommand('passport:purge')),
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             Action::make('passport_hash')
                 ->label(static::trans('actions.hash_secrets.label'))
 =======
             'passport_hash' => Action::make('passport_hash')
 >>>>>>> 2024e2e7 (.)
+=======
+            'passport_hash' => Action::make('passport_hash')
+>>>>>>> f589f9b2 (.)
                 ->icon('heroicon-o-lock-closed')
                 ->color('danger')
                 ->disabled(fn () => $this->isRunning)

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 return [
     'role' => 'Ruolo',
@@ -10,6 +11,8 @@ return [
     'created_from' => 'creati dal',
     'created_until' => 'creati al',
 =======
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'navigation' => [
         'label' => 'Filter',
@@ -240,5 +243,8 @@ return [
             'placeholder' => 'Search...',
         ],
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

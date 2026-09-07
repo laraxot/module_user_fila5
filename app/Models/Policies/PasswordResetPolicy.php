@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models\Policies;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\PasswordReset;
 use Modules\Xot\Contracts\UserContract;
 
@@ -73,4 +74,8 @@ class PasswordResetPolicy extends UserBasePolicy
 class PasswordResetPolicy extends UserBasePolicy
 {
 >>>>>>> 2024e2e7 (.)
+=======
+class PasswordResetPolicy extends UserBasePolicy
+{
+>>>>>>> f589f9b2 (.)
 }

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Error Analysis and Resolution Roadmap - User Module
 
 ## Summary
@@ -52,6 +53,8 @@ This document outlines the roadmap for resolving PHPStan errors in the User modu
 - Application functions properly
 - All tests pass
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpstan-error-roadmap
@@ -68,4 +71,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-error-roadmap.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Regole per le Chiavi di Traduzione"
 type: rule
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Regole per le Chiavi di Traduzione
 
 ## Principi Fondamentali
@@ -139,8 +145,14 @@ return [
 - [Struttura del Modulo](MODULE_STRUCTURE.md)
 - [Convenzioni di Codice](CODE_CONVENTIONS.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Best Practices per le Traduzioni](translation-best-practices-2.md)
 - [Struttura del Modulo](module-structure-2.md)
 - [Convenzioni di Codice](code-conventions.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Best Practices per le Traduzioni](translation-best-practices-2.md)
+- [Struttura del Modulo](module-structure-2.md)
+- [Convenzioni di Codice](code-conventions.md)
+>>>>>>> f589f9b2 (.)

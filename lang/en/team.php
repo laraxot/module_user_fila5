@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'navigation' => [
         'name' => 'Team',
@@ -19,6 +22,7 @@ return [
         'icon' => 'user-team',
     ],
     'fields' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
         'first_name' => 'Nome',
         'last_name' => 'Cognome',
@@ -64,6 +68,8 @@ return [
         'name' => [
             'label' => 'name',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -159,7 +165,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'recordId' => [
             'label' => 'recordId',
@@ -167,10 +176,13 @@ return [
             'helper_text' => 'recordId',
             'placeholder' => 'recordId',
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
         'personal_team' => [
             'label' => 'personal_team',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
         ],
         'personal_team' => [
@@ -178,7 +190,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'role' => [
             'label' => 'role',
@@ -186,19 +201,28 @@ return [
             'helper_text' => 'role',
             'placeholder' => 'role',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'description' => [
             'description' => 'description',
             'helper_text' => 'description',
             'placeholder' => 'description',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'label' => '',
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'label' => '',
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'actions' => [
@@ -227,8 +251,13 @@ return [
         'label' => 'team.model',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 >>>>>>> 2024e2e7 (.)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> f589f9b2 (.)
 ];

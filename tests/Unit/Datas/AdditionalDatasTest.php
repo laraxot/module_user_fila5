@@ -3,10 +3,13 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(Modules\User\Tests\TestCase::class);
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Datas\DeviceData;
 use Modules\User\Datas\FilamentShieldData;
 use Modules\User\Datas\FilamentUserData;
@@ -19,6 +22,7 @@ use Modules\User\Datas\ShieldResourceData;
 use Modules\User\Datas\SocialProviderData;
 use Modules\User\Datas\SuperAdminData;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 test('PermissionTableNamesData can be instantiated', function () {
     expect(class_exists(PermissionTableNamesData::class))->toBeTrue();
@@ -29,6 +33,8 @@ test('PermissionTableNamesData can be instantiated', function () {
     } catch (Exception $e) {
         expect(true)->toBeTrue(); // Pass if class exists
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -40,11 +46,15 @@ test('PermissionTableNamesData can be instantiated', function () {
         Assert::assertInstanceOf(PermissionTableNamesData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 });
 
 test('ShieldResourceData can be instantiated', function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
     expect(class_exists(ShieldResourceData::class))->toBeTrue();
 
@@ -54,16 +64,22 @@ test('ShieldResourceData can be instantiated', function () {
     } catch (Exception $e) {
         expect(true)->toBeTrue(); // Pass if class exists
 =======
+=======
+>>>>>>> f589f9b2 (.)
     try {
         $data = ShieldResourceData::from([]);
         Assert::assertInstanceOf(ShieldResourceData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 });
 
 test('FilamentUserData can be instantiated', function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
     expect(class_exists(FilamentUserData::class))->toBeTrue();
 
@@ -73,16 +89,22 @@ test('FilamentUserData can be instantiated', function () {
     } catch (Exception $e) {
         expect(true)->toBeTrue(); // Pass if class exists
 =======
+=======
+>>>>>>> f589f9b2 (.)
     try {
         $data = FilamentUserData::from([]);
         Assert::assertInstanceOf(FilamentUserData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 });
 
 test('SuperAdminData can be instantiated', function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
     expect(class_exists(SuperAdminData::class))->toBeTrue();
 
@@ -92,16 +114,22 @@ test('SuperAdminData can be instantiated', function () {
     } catch (Exception $e) {
         expect(true)->toBeTrue(); // Pass if class exists
 =======
+=======
+>>>>>>> f589f9b2 (.)
     try {
         $data = SuperAdminData::from([]);
         Assert::assertInstanceOf(SuperAdminData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 });
 
 test('PermissionData can be instantiated', function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
     expect(class_exists(PermissionData::class))->toBeTrue();
 
@@ -111,16 +139,22 @@ test('PermissionData can be instantiated', function () {
     } catch (Exception $e) {
         expect(true)->toBeTrue(); // Pass if class exists
 =======
+=======
+>>>>>>> f589f9b2 (.)
     try {
         $data = PermissionData::from([]);
         Assert::assertInstanceOf(PermissionData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 });
 
 test('PermissionColumnNamesData can be instantiated', function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
     expect(class_exists(PermissionColumnNamesData::class))->toBeTrue();
 
@@ -130,16 +164,22 @@ test('PermissionColumnNamesData can be instantiated', function () {
     } catch (Exception $e) {
         expect(true)->toBeTrue(); // Pass if class exists
 =======
+=======
+>>>>>>> f589f9b2 (.)
     try {
         $data = PermissionColumnNamesData::from([]);
         Assert::assertInstanceOf(PermissionColumnNamesData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 });
 
 test('PermissionCacheData can be instantiated', function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
     expect(class_exists(PermissionCacheData::class))->toBeTrue();
 
@@ -149,16 +189,22 @@ test('PermissionCacheData can be instantiated', function () {
     } catch (Exception $e) {
         expect(true)->toBeTrue(); // Pass if class exists
 =======
+=======
+>>>>>>> f589f9b2 (.)
     try {
         $data = PermissionCacheData::from([]);
         Assert::assertInstanceOf(PermissionCacheData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 });
 
 test('DeviceData can be instantiated', function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
     expect(class_exists(DeviceData::class))->toBeTrue();
 
@@ -168,16 +214,22 @@ test('DeviceData can be instantiated', function () {
     } catch (Exception $e) {
         expect(true)->toBeTrue(); // Pass if class exists
 =======
+=======
+>>>>>>> f589f9b2 (.)
     try {
         $data = DeviceData::from([]);
         Assert::assertInstanceOf(DeviceData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 });
 
 test('SocialProviderData can be instantiated', function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
     expect(class_exists(SocialProviderData::class))->toBeTrue();
 
@@ -187,16 +239,22 @@ test('SocialProviderData can be instantiated', function () {
     } catch (Exception $e) {
         expect(true)->toBeTrue(); // Pass if class exists
 =======
+=======
+>>>>>>> f589f9b2 (.)
     try {
         $data = SocialProviderData::from([]);
         Assert::assertInstanceOf(SocialProviderData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 });
 
 test('FilamentShieldData can be instantiated', function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
     expect(class_exists(FilamentShieldData::class))->toBeTrue();
 
@@ -206,16 +264,22 @@ test('FilamentShieldData can be instantiated', function () {
     } catch (Exception $e) {
         expect(true)->toBeTrue(); // Pass if class exists
 =======
+=======
+>>>>>>> f589f9b2 (.)
     try {
         $data = FilamentShieldData::from([]);
         Assert::assertInstanceOf(FilamentShieldData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 });
 
 test('PermissionModelsData can be instantiated', function () {
+<<<<<<< HEAD
 <<<<<<< HEAD
     expect(class_exists(PermissionModelsData::class))->toBeTrue();
 
@@ -225,11 +289,16 @@ test('PermissionModelsData can be instantiated', function () {
     } catch (Exception $e) {
         expect(true)->toBeTrue(); // Pass if class exists
 =======
+=======
+>>>>>>> f589f9b2 (.)
     try {
         $data = PermissionModelsData::from([]);
         Assert::assertInstanceOf(PermissionModelsData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 });

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use Modules\Xot\Contracts\UserContract;
@@ -56,6 +57,8 @@ use Laravel\Passport\Client as PassportClient;
  * @method static Builder|OauthClient whereUpdatedBy($value)
  * @mixin IdeHelperOauthClient
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Carbon;
 use Laravel\Passport\Client as PassportClient;
@@ -109,11 +112,15 @@ use Laravel\Passport\Client as PassportClient;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient whereUserId($value)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 class OauthClient extends PassportClient
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     use HasUuids;
 
@@ -129,4 +136,7 @@ class OauthClient extends PassportClient
 =======
     protected $connection = 'user';
 >>>>>>> 2024e2e7 (.)
+=======
+    protected $connection = 'user';
+>>>>>>> f589f9b2 (.)
 }

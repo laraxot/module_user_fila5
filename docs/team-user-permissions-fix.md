@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Team User Permissions Column Fix - Laraxot Philosophy Compliant
 
 **Date**: 2026-01-12  
@@ -110,6 +111,8 @@ php artisan optimize:clear
 Added to permanent memory:
 > **Laraxot Migration Philosophy**: NEVER create multiple migration files for the same table. Always update the existing migration and rename it with the current date. Use XotBaseMigration pattern with `tableCreate()` and `tableUpdate()` blocks. Check `hasColumn()` before adding columns in UPDATE block.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: team-user-permissions-fix
@@ -126,4 +129,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/team-user-permissions-fix.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

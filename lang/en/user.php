@@ -37,15 +37,20 @@ return [
             'description' => 'name',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci l\'email',
             'description' => 'email',
             'helper_text' => '',
+<<<<<<< HEAD
 <<<<<<< HEAD
         ],
         'created_at' => [
@@ -61,6 +66,8 @@ return [
         'id' => [
             'label' => 'ID',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
         ],
         'created_at' => [
@@ -92,7 +99,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'password' => [
             'label' => 'Password',
@@ -100,18 +110,25 @@ return [
             'description' => 'password',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
             'placeholder' => 'Conferma la password',
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
         'email_verified_at' => [
             'label' => 'Email Verificata il',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -121,11 +138,15 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'current_password' => [
             'label' => 'Password Attuale',
             'placeholder' => 'Inserisci la password attuale',
+<<<<<<< HEAD
 <<<<<<< HEAD
         ],
         'roles' => [
@@ -134,6 +155,8 @@ return [
         'permissions' => [
             'label' => 'Permessi',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -149,7 +172,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'status' => [
             'label' => 'Stato',
@@ -159,6 +185,7 @@ return [
                 'blocked' => 'Bloccato',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
         'last_login' => [
             'label' => 'Ultimo Accesso',
@@ -223,6 +250,8 @@ return [
         'changePassword' => [
             'label' => 'changePassword',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -352,7 +381,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'filters' => [
@@ -377,9 +409,12 @@ return [
         'email_verified' => 'Email verificata con successo',
         'impersonating' => 'Stai impersonando l\'utente :name',
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Added for LoginWidget
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'login_success' => 'Login successful',
         'validation_error' => 'Validation error',
         'login_error' => 'An error occurred during login. Please try again later.',
@@ -468,10 +503,13 @@ return [
         'manage_roles' => 'Gestisci ruoli',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'model' => [
         'label' => 'Utente',
     ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'auth' => [
         'register' => [
             'title' => [
@@ -516,5 +554,8 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets\Auth;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Schema;
@@ -114,6 +115,8 @@ class RegisterWidget extends XotBaseWidget
             ]),
         ];
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Notifications\Notification;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -171,11 +174,15 @@ class RegisterWidget extends XotBaseSchemaWidget
     public function save(): void
     {
         $this->submit();
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     public function submit(): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         try {
             $validatedData = $this->validateForm();
@@ -253,6 +260,8 @@ class RegisterWidget extends XotBaseSchemaWidget
     {
         if (config('auth.must_verify_email')) {
 =======
+=======
+>>>>>>> f589f9b2 (.)
         /** @var array<string, mixed> $data */
         $data = $this->form->getState();
 
@@ -291,13 +300,17 @@ class RegisterWidget extends XotBaseSchemaWidget
     protected function handleSuccessfulRegistration(Authenticatable $user): void
     {
         if (config('auth.must_verify_email') && $user instanceof MustVerifyEmail) {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             $user->sendEmailVerificationNotification();
         }
 
         Auth::login($user);
 
         Notification::make()
+<<<<<<< HEAD
 <<<<<<< HEAD
             ->title(__('user::auth.registration.success'))
             ->success()
@@ -317,6 +330,8 @@ class RegisterWidget extends XotBaseSchemaWidget
 
         throw new RuntimeException(__('user::auth.registration.error_occurred'));
 =======
+=======
+>>>>>>> f589f9b2 (.)
             ->title(__('user::auth.register.success.text'))
             ->success()
             ->send();
@@ -326,6 +341,9 @@ class RegisterWidget extends XotBaseSchemaWidget
             : url('/'.app()->getLocale());
 
         $this->redirect($redirectUrl);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

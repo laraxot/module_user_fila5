@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Ottimizzazioni Approfondite Modulo User - DRY + KISS
 
 ## Panoramica
@@ -296,6 +297,8 @@ php artisan test --testsuite=User
 **Responsabile:** Team User
 **Data:** 2025-01-XX
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: ottimizzazioni-approfondite-modulo-user
@@ -312,4 +315,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

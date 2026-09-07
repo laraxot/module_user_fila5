@@ -10,15 +10,21 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration {
     /**
      * Run the migrations.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 return new class extends XotBaseMigration
 {
     /**
      * Esegue la migrazione.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     public function up(): void
     {
@@ -46,6 +52,7 @@ return new class extends XotBaseMigration
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (!$this->hasColumn('code')) {
                 $table->string('code', 36)->nullable()->index();
             }
@@ -53,6 +60,8 @@ return new class extends XotBaseMigration
 
             // $this->updateUser($table);
 =======
+=======
+>>>>>>> f589f9b2 (.)
             if (! $this->hasColumn('code')) {
                 $table->string('code', 36)->nullable()->index();
             }
@@ -62,7 +71,10 @@ return new class extends XotBaseMigration
             }
 
             $this->updateTimestamps($table, true);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         });
     }
 };

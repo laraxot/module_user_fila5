@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # User Module - PHPStan Level 10 Analysis
 
 ## 📊 Current Status
@@ -254,6 +255,8 @@ These fixes are **local to User module** and won't affect other modules.
 **Complexity**: ⭐⭐ Simple  
 **Priority**: 🟡 Medium
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpstan-level10-analysis
@@ -270,4 +273,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level10-analysis.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

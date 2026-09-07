@@ -3,13 +3,17 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'fields' => [
         'deactivate' => [
             'label' => 'deactivate',
+<<<<<<< HEAD
 <<<<<<< HEAD
         ],
         'unverified' => [
@@ -27,6 +31,8 @@ return [
         'changePassword' => [
             'label' => 'changePassword',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -84,7 +90,10 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Base List Users',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
     ],
 ];

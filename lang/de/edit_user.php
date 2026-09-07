@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'actions' => [
         'delete' => [
@@ -22,6 +25,7 @@ return [
         'password' => [
             'label' => 'password',
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
         'email' => [
             'label' => 'email',
@@ -31,6 +35,8 @@ return [
         ],
     ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -57,5 +63,8 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

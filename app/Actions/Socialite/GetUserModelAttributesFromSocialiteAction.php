@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use InvalidArgumentException;
 use RuntimeException;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
@@ -14,12 +15,18 @@ use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Actions\Socialite\Utils\UserNameFieldsResolver;
 use Modules\User\Datas\SocialiteUserAttributesData;
 >>>>>>> 2024e2e7 (.)
+=======
+use Laravel\Socialite\Contracts\User as SocialiteUserContract;
+use Modules\User\Actions\Socialite\Utils\UserNameFieldsResolver;
+use Modules\User\Datas\SocialiteUserAttributesData;
+>>>>>>> f589f9b2 (.)
 use Spatie\QueueableAction\QueueableAction;
 
 class GetUserModelAttributesFromSocialiteAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public readonly string $name;
 
@@ -64,6 +71,8 @@ class GetUserModelAttributesFromSocialiteAction
     {
         return $this->provider;
 =======
+=======
+>>>>>>> f589f9b2 (.)
     public function execute(string $provider, SocialiteUserContract $oauthUser): SocialiteUserAttributesData
     {
         if (empty($provider)) {
@@ -94,6 +103,9 @@ class GetUserModelAttributesFromSocialiteAction
             email: $email,
             provider: $provider,
         );
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

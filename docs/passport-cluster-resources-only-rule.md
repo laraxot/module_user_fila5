@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Regola Critica: Cluster Passport - Solo Risorse OAuth/Passport"
 type: rule
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Regola Critica: Cluster Passport - Solo Risorse OAuth/Passport
 
 **Data**: 2025-01-22

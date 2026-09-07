@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Contracts;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\Permission\Contracts\Role;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Collection;
@@ -116,10 +117,15 @@ interface UserContract extends Authenticatable
      */
     public function allTeams(): Collection;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 /**
  * Alias tipizzato verso il contratto utente cross-modulo (SSoT: Xot).
  */
 interface UserContract extends \Modules\Xot\Contracts\UserContract
 {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

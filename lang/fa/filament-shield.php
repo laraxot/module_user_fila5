@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
      * | Table Columns
@@ -12,11 +13,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'column.name' => 'نام',
     'column.guard_name' => 'نام گارد',
     'column.roles' => 'نقش‌ها',
     'column.permissions' => 'دسترسی‌ها',
     'column.updated_at' => 'به‌روزشده در',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -26,11 +30,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'field.name' => 'نام',
     'field.guard_name' => 'نام گارد',
     'field.permissions' => 'دسترسی‌ها',
     'field.select_all.name' => 'انتخاب همه',
     'field.select_all.message' => 'تمام دسترسی‌های <span class="text-primary font-medium">فعال</span> فعلی را برای این نقش فعال کن.',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -40,11 +47,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'نقش‌ها',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'نقش',
     'resource.label.roles' => 'نقش‌ها',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -54,11 +64,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'section' => 'موجودیت‌ها',
     'resources' => 'منابع',
     'widgets' => 'ویجت‌ها',
     'pages' => 'صفحات',
     'custom' => 'دسترسی‌های سفارشی',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -76,6 +89,9 @@ return [
 =======
     'forbidden' => 'شما اجازه دسترسی ندارید.',
 >>>>>>> 2024e2e7 (.)
+=======
+    'forbidden' => 'شما اجازه دسترسی ندارید.',
+>>>>>>> f589f9b2 (.)
     'resource_permission_prefixes_labels' => [
         'view' => 'نمایش',
         'view_any' => 'نمایش همه',
@@ -91,7 +107,10 @@ return [
         'restore_any' => 'بازیابی همه',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -105,5 +124,8 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
 use InvalidArgumentException;
 use RuntimeException;
@@ -16,6 +17,8 @@ use ReflectionClass;
 use ReflectionException;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Models\SocialiteUser;
 use Spatie\QueueableAction\QueueableAction;
@@ -28,6 +31,7 @@ class RetrieveSocialiteUserAction
      * Execute the action.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function execute(string $provider, SocialiteUserContract $user): null|SocialiteUser
     {
         if (empty($provider)) {
@@ -38,6 +42,8 @@ class RetrieveSocialiteUserAction
         if (!is_string($providerId) && !is_int($providerId)) {
             throw new RuntimeException('L\'ID del provider deve essere una stringa o un intero');
 =======
+=======
+>>>>>>> f589f9b2 (.)
     public function execute(string $provider, SocialiteUserContract $user): ?SocialiteUser
     {
         if (empty($provider)) {
@@ -47,7 +53,10 @@ class RetrieveSocialiteUserAction
         $providerId = $user->getId();
         if (! is_string($providerId) && ! is_int($providerId)) {
             throw new \RuntimeException('L\'ID del provider deve essere una stringa o un intero');
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         }
 
         $res = SocialiteUser::query()
@@ -57,10 +66,14 @@ class RetrieveSocialiteUserAction
             ->first();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($res === null) {
 =======
         if (null === $res) {
 >>>>>>> 2024e2e7 (.)
+=======
+        if (null === $res) {
+>>>>>>> f589f9b2 (.)
             return null;
         }
 
@@ -70,10 +83,14 @@ class RetrieveSocialiteUserAction
         // Utilizzo ReflectionClass per accedere in modo sicuro alle proprietà/metodi
         try {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $reflection = new ReflectionClass($user);
 =======
             $reflection = new \ReflectionClass($user);
 >>>>>>> 2024e2e7 (.)
+=======
+            $reflection = new \ReflectionClass($user);
+>>>>>>> f589f9b2 (.)
 
             // Prova prima i metodi standard
             if ($reflection->hasMethod('getToken')) {
@@ -101,20 +118,28 @@ class RetrieveSocialiteUserAction
                 $token = $user->token;
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
         } catch (ReflectionException $e) {
 =======
         } catch (\ReflectionException $e) {
 >>>>>>> 2024e2e7 (.)
+=======
+        } catch (\ReflectionException $e) {
+>>>>>>> f589f9b2 (.)
             // Fallback silenzioso
         }
 
         if (empty($token)) {
             // Se non riusciamo a ottenere un token valido, utilizziamo un valore predefinito
 <<<<<<< HEAD
+<<<<<<< HEAD
             $token = 'no_token_' . time();
 =======
             $token = 'no_token_'.time();
 >>>>>>> 2024e2e7 (.)
+=======
+            $token = 'no_token_'.time();
+>>>>>>> f589f9b2 (.)
         }
 
         $res->update([

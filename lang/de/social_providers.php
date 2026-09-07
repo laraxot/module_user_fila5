@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 return [
     'fields' => [
@@ -25,6 +26,8 @@ return [
         'svg.placeholder' => 'Inserisci il codice SVG dell\'icona',
         'svg.helper_text' => 'L\'icona SVG del provider social',
 =======
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'fields' => [
         'name' => [
@@ -146,6 +149,9 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     ],
 ];

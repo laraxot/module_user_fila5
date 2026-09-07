@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Analisi Corretta del File logout.blade.php
 
 ## Collegamenti correlati
@@ -228,6 +229,8 @@ return redirect()->to('/' . $locale);
 - [Documentazione Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Filament](https://filamentphp.com/docs)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: logout-blade-corrected
@@ -244,4 +247,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-corrected-analysis-3.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

@@ -5,12 +5,15 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Clusters\Cluster;
 
 class Appearance extends Cluster
 {
     protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-squares-2x2';
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Filament\Clusters\XotBaseCluster;
 
 /**
@@ -23,5 +26,8 @@ use Modules\Xot\Filament\Clusters\XotBaseCluster;
  */
 class Appearance extends XotBaseCluster
 {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

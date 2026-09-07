@@ -3,7 +3,10 @@ description:
 globs:
 alwaysApply: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -13,7 +16,10 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ---
 # Relazione utenti-team: tabella pivot `doctor_team`
 
@@ -26,16 +32,22 @@ Questa documentazione descrive la relazione many-to-many tra utenti e team nel m
 ## Soluzione
 - Creata la migrazione per la tabella `doctor_team` estendendo `XotBaseMigration`.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Seguite le best practice documentate in [docs/database-migrations.md](mdc:../../../docs/database-migrations.md).
 
 ## Collegamenti
 - [Documentazione generale sulle migrazioni](mdc:../../../docs/database-migrations.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - Seguite le best practice documentate in [docs/database-migrations.md](mdc:../../../../docs/database-migrations.md).
 
 ## Collegamenti
 - [Documentazione generale sulle migrazioni](mdc:../../../../docs/database-migrations.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 - [Best practice XotBaseMigration](mdc:../../xot/docs/migrations.md)
 
 ---

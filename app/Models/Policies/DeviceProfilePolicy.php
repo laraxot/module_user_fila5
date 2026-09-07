@@ -23,6 +23,7 @@ class DeviceProfilePolicy extends UserBasePolicy
     public function view(UserContract $user, DeviceProfile $deviceProfile): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return (
             $user->hasPermissionTo('device-profile.view') ||
             $user->id === $deviceProfile->user_id ||
@@ -33,6 +34,11 @@ class DeviceProfilePolicy extends UserBasePolicy
             || $user->id === $deviceProfile->user_id
             || $user->hasRole('super-admin');
 >>>>>>> 2024e2e7 (.)
+=======
+        return $user->hasPermissionTo('device-profile.view')
+            || $user->id === $deviceProfile->user_id
+            || $user->hasRole('super-admin');
+>>>>>>> f589f9b2 (.)
     }
 
     /**

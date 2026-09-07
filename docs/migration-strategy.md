@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Laraxot Migration Philosophy & Strategy
 
 ## Core Principles
@@ -94,6 +95,8 @@ return new class extends Migration {
 
 This philosophy ensures maintainable, consistent, and DRY database schema management across the Laraxot framework.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: migration-strategy
@@ -110,4 +113,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-philosophy-strategy.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

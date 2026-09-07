@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Bug Fix: Crash durante creazione utenti con make:filament-user"
 type: concept
@@ -19,7 +22,10 @@ related:
   - "./parse-orphan-methods.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Bug Fix: Crash durante creazione utenti con make:filament-user
 
 ## 🐛 Problema Identificato
@@ -296,12 +302,17 @@ class CreateTenantUserCommand extends Command
 ### Documentazione Root Progetto
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [../../../docs/modules/user/README.md](../../../docs/modules/user/readme.md) - Panoramica modulo User
 - [../../../docs/architecture/multi-tenancy.md](../../../docs/architecture/multi-tenancy.md) - Architettura globale
 =======
 - [../../../../docs/modules/user/README.md](../../../../docs/modules/user/readme.md) - Panoramica modulo User
 - [../../../../docs/architecture/multi-tenancy.md](../../../../docs/architecture/multi-tenancy.md) - Architettura globale
 >>>>>>> 2024e2e7 (.)
+=======
+- [../../../../docs/modules/user/README.md](../../../../docs/modules/user/readme.md) - Panoramica modulo User
+- [../../../../docs/architecture/multi-tenancy.md](../../../../docs/architecture/multi-tenancy.md) - Architettura globale
+>>>>>>> f589f9b2 (.)
 
 ## 🎓 Lezioni Apprese
 

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Riepilogo Correzioni PHPStan - Modulo User
 
 **Data**: 2025-01-22
@@ -114,6 +115,8 @@ return $this->hasAnyPermission($permissions);
 
 *Progresso: 6.8% completato (15/221 errori corretti)*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpstan-corrections-summary
@@ -130,4 +133,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-corrections-summary-Modules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

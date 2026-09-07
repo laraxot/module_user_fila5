@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
 use Filament\Actions\Action;
 use Filament\Forms;
@@ -21,6 +22,8 @@ use Modules\User\Datas\PasswordData;
 use Modules\Xot\Filament\Traits\TransTrait;
 use Filament\Forms\Components\Section;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -31,13 +34,17 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Tenant\Actions\Config\SaveTenantConfigAction;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Filament\Pages\XotBasePage;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 /**
  * Pagina per la gestione delle impostazioni delle password.
  *
  * @property Schema $form
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 class Password extends Page implements HasForms
 {
@@ -48,11 +55,16 @@ class Password extends Page implements HasForms
 class Password extends XotBasePage
 {
 >>>>>>> 2024e2e7 (.)
+=======
+class Password extends XotBasePage
+{
+>>>>>>> f589f9b2 (.)
     /**
      * Dati del form per la gestione delle password.
      *
      * @var array<string, mixed>|null
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
     public null|array $formData = [];
 
@@ -68,15 +80,21 @@ class Password extends XotBasePage
      *
      * @var string
 =======
+=======
+>>>>>>> f589f9b2 (.)
     public ?array $formData = [];
 
     /**
      * Vista per la pagina.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected string $view = 'user::filament.pages.password';
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Ordinamento nella navigazione.
      *
@@ -87,6 +105,8 @@ class Password extends XotBasePage
     /**
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      * Inizializza la pagina.
      */
     public function mount(): void
@@ -96,6 +116,7 @@ class Password extends XotBasePage
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Definisce la struttura del form.
      *
      * @param Schema $schema Il form da configurare
@@ -103,13 +124,18 @@ class Password extends XotBasePage
      */
     public function form(Schema $schema): Schema
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * Definisce la struttura dello schema.
      *
      * @param  Schema  $schema  Lo schema da configurare
      * @return Schema Lo schema configurato
      */
     public function schema(Schema $schema): Schema
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     {
         return $schema
             ->components([
@@ -141,10 +167,13 @@ class Password extends XotBasePage
     /**
      * Aggiorna i dati delle impostazioni delle password.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return void
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     public function updateData(): void
     {
@@ -152,10 +181,14 @@ class Password extends XotBasePage
             /** @var array<string, mixed> $data */
             $data = $this->form->getState();
 <<<<<<< HEAD
+<<<<<<< HEAD
             TenantService::saveConfig('password', $data);
 =======
             app(SaveTenantConfigAction::class)->execute('password', $data);
 >>>>>>> 2024e2e7 (.)
+=======
+            app(SaveTenantConfigAction::class)->execute('password', $data);
+>>>>>>> f589f9b2 (.)
 
             // $this->handleRecordUpdate($this->getUser(), $data);
         } catch (Halt $exception) {
@@ -172,17 +205,23 @@ class Password extends XotBasePage
     /**
      * Riempie i form con i dati esistenti.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return void
      */
     protected function fillForms(): void
     {
 =======
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected function fillForms(): void
     {
         /** @var array<string, mixed> $data */
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $data = PasswordData::make()->toArray();
 
         $this->form->fill($data);
@@ -204,12 +243,17 @@ class Password extends XotBasePage
      * Gestisce l'aggiornamento del record.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param Model $record Il record da aggiornare
      * @param array<string, mixed> $data I dati per l'aggiornamento
 =======
      * @param  Model  $record  Il record da aggiornare
      * @param  array<string, mixed>  $data  I dati per l'aggiornamento
 >>>>>>> 2024e2e7 (.)
+=======
+     * @param  Model  $record  Il record da aggiornare
+     * @param  array<string, mixed>  $data  I dati per l'aggiornamento
+>>>>>>> f589f9b2 (.)
      * @return Model Il record aggiornato
      */
     protected function handleRecordUpdate(Model $record, array $data): Model

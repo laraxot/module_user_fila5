@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(Modules\User\Tests\TestCase::class);
 
 use Modules\User\Mail\TeamInvitation;
@@ -40,6 +41,8 @@ test('TeamInvitation has expected methods', function () {
         expect(true)->toBeTrue();
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Mail\TeamInvitation;
 use Modules\User\Models\TeamInvitation as TeamInvitationModel;
 use Modules\User\Tests\TestCase;
@@ -64,5 +67,8 @@ test('TeamInvitation mail can be instantiated', function () {
 
 test('TeamInvitation has expected methods', function () {
     Assert::assertTrue(class_exists(TeamInvitation::class));
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

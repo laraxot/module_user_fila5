@@ -5,14 +5,20 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Forms\Components\Select;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\TenantUser;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -25,6 +31,9 @@ final class TenantUserResource extends XotBaseResource
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
      * @return array<string, Component>
      */
     #[\Override]
@@ -62,6 +71,7 @@ final class TenantUserResource extends XotBaseResource
     /**
      * Configure the model query.
      */
+<<<<<<< HEAD
 =======
      * Configure the model query.
      *
@@ -74,6 +84,8 @@ final class TenantUserResource extends XotBaseResource
      */
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['tenant', 'user']);

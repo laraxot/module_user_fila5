@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Two-Factor Authentication - 70% Completato"
 type: concept
@@ -13,7 +16,10 @@ related:
   - "./bottlenecks.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Two-Factor Authentication - 70% Completato
 
 ## Descrizione

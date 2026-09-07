@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'fields' => [
         'new_password_confirmation' => [
             'label' => 'Conferma nuova password',
@@ -12,6 +13,8 @@ return [
             'description' => 'Digita nuovamente la nuova password per conferma',
             'tooltip' => 'Ripeti la nuova password per sicurezza',
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Azione Cambia Password',
         'plural_label' => 'Azione Cambia Password',
@@ -28,13 +31,19 @@ return [
             'placeholder' => 'Reinserisci la nuova password',
             'helper_text' => 'Devi inserire la stessa password per conferma',
             'description' => 'Digita nuovamente la nuova password per conferma',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'icon' => 'heroicon-o-lock-closed',
             'color' => 'warning',
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'actions' => [
         'create' => [
             'label' => 'Crea Azione',
@@ -53,5 +62,8 @@ return [
         'executed' => 'Password cambiata con successo',
         'error' => 'Si è verificato un errore',
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

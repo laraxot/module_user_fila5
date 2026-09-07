@@ -9,10 +9,13 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'name' => 'Nome',
         'phone' => 'Telefono',
         'email' => 'Email',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -31,7 +34,10 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     ],
     'actions' => [
         'register_tenant' => [
@@ -39,8 +45,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'label' => 'Tenancy',
     'plural_label' => 'Tenancy (Plurale)',
 >>>>>>> 2024e2e7 (.)
+=======
+    'label' => 'Tenancy',
+    'plural_label' => 'Tenancy (Plurale)',
+>>>>>>> f589f9b2 (.)
 ];

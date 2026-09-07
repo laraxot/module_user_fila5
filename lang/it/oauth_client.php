@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Client OAuth',
         'plural_label' => 'Client OAuth',
@@ -81,6 +84,7 @@ return [
         'updated' => 'Client aggiornato con successo',
         'deleted' => 'Client eliminato con successo',
     ],
+<<<<<<< HEAD
 =======
     'navigation' => ['label' => 'Client OAuth', 'plural_label' => 'Client OAuth', 'group' => 'OAuth', 'icon' => 'heroicon-o-key', 'sort' => 89],
     'label' => 'Client OAuth',
@@ -107,4 +111,6 @@ return [
     ],
     'messages' => ['created' => 'Client creato con successo', 'updated' => 'Client aggiornato con successo', 'deleted' => 'Client eliminato con successo'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

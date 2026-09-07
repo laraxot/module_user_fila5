@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Database\Migrations;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -27,6 +28,8 @@ return new class extends Migration {
             if (Schema::connection('user')->hasColumn('teams', 'owner_id')) {
                 $table->dropColumn('owner_id');
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Team;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -40,7 +43,10 @@ return new class extends XotBaseMigration
         $this->tableUpdate(function (Blueprint $table): void {
             if (! $this->hasColumn('owner_id')) {
                 $table->uuid('owner_id')->nullable()->after('id');
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             }
         });
     }

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Laraxot Migration Philosophy
 
 ## Core Principle: One Migration Per Table Per Module
@@ -89,6 +90,8 @@ Modules/User/database/migrations/
 
 **Remember**: In Laraxot philosophy, simplicity and clarity trump flexibility. One table, one migration, no exceptions.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: migration
@@ -105,4 +108,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-philosophy.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

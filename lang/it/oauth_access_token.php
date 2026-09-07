@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Token Accesso OAuth',
         'plural_label' => 'Token Accesso OAuth',
@@ -68,6 +71,7 @@ return [
                 'helper_text' => 'Nome dell\'utente proprietario',
                 'description' => 'Nome utente',
             ],
+<<<<<<< HEAD
 =======
     'navigation' => ['label' => 'Token Accesso OAuth', 'plural_label' => 'Token Accesso OAuth', 'group' => 'OAuth', 'icon' => 'heroicon-o-key', 'sort' => 33],
     'label' => 'Token Accesso OAuth',
@@ -83,6 +87,8 @@ return [
         'user' => [
             'name' => ['label' => 'Nome Utente', 'tooltip' => 'Nome dell\'utente', 'helper_text' => 'Nome dell\'utente proprietario', 'description' => 'Nome utente'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -90,21 +96,30 @@ return [
         ],
         'client' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
             'name' => [
                 'label' => 'Nome Client',
                 'tooltip' => 'Nome del client',
                 'helper_text' => 'Nome del client OAuth',
                 'description' => 'Nome client',
             ],
+<<<<<<< HEAD
 =======
             'name' => ['label' => 'Nome Client', 'tooltip' => 'Nome del client', 'helper_text' => 'Nome del client OAuth', 'description' => 'Nome client'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
         'created_at' => [
             'label' => 'Creato il',
             'tooltip' => 'Data di creazione',
@@ -171,6 +186,7 @@ return [
         'revoked' => 'Token revocato con successo',
         'deleted' => 'Token eliminato con successo',
     ],
+<<<<<<< HEAD
 =======
         'created_at' => ['label' => 'Creato il', 'tooltip' => 'Data di creazione', 'helper_text' => 'Data e ora di creazione del token', 'description' => 'Data di creazione'],
         'expired' => ['label' => 'Scaduto', 'tooltip' => 'Stato di scadenza', 'helper_text' => 'Indica se il token è scaduto', 'description' => 'Stato di scadenza'],
@@ -190,4 +206,6 @@ return [
     ],
     'messages' => ['created' => 'Token creato con successo', 'revoked' => 'Token revocato con successo', 'deleted' => 'Token eliminato con successo'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

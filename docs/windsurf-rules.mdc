@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description:
 globs:
 alwaysApply: false
@@ -35,10 +36,15 @@ if (! $this->hasColumn('state')) {
 - [Linee guida Activitylog](mdc:activitylog.mdc)
 - [Documentazione centrale](mdc:../../../../docs/INDEX.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 module: theme
 topic: windsurf-rules
 canonical: ../../../Themes/docs/shared-components/windsurf-rules.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/windsurf-rules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

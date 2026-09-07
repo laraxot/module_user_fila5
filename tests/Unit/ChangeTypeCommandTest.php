@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Illuminate\Console\Command;
 use Modules\User\Console\Commands\ChangeTypeCommand;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 
@@ -148,6 +149,8 @@ describe('ChangeTypeCommand', function () {
         expect($docComment)->toBeString()->and($docComment)->toContain('Command to change user type');
     });
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
@@ -217,5 +220,8 @@ test('change type command docblock documents purpose', function (): void {
 
     Assert::assertIsString($docComment);
     Assert::assertStringContainsString('Command to change user type', $docComment);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Tests\TestCase;
 use Spatie\LaravelData\Data;
 use Illuminate\Validation\Rules\Password;
@@ -13,6 +14,8 @@ uses(TestCase::class);
 beforeEach(function (): void {
     $this->passwordData = new PasswordData(
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Datas\PasswordData;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -25,7 +28,10 @@ uses(TestCase::class);
 function samplePasswordData(): PasswordData
 {
     return new PasswordData(
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         otp_expiration_minutes: 10,
         otp_length: 8,
         expires_in: 120,
@@ -38,6 +44,7 @@ function samplePasswordData(): PasswordData
         compromisedThreshold: 5,
         failMessage: 'Password non valida',
     );
+<<<<<<< HEAD
 <<<<<<< HEAD
 });
 
@@ -75,6 +82,8 @@ test('password data has default values', function (): void {
 test('password data extends spatie data class', function (): void {
     expect($this->passwordData)->toBeInstanceOf(Data::class);
 =======
+=======
+>>>>>>> f589f9b2 (.)
 }
 
 test('password data can be created with custom parameters', function (): void {
@@ -112,11 +121,15 @@ test('password data has default values', function (): void {
 
 test('password data extends spatie data class', function (): void {
     Assert::assertInstanceOf(Data::class, samplePasswordData());
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });
 
 test('password data has correct properties', function (): void {
     $reflection = new ReflectionClass(PasswordData::class);
+<<<<<<< HEAD
 <<<<<<< HEAD
     $properties = $reflection->getProperties();
 
@@ -134,6 +147,8 @@ test('password data has correct properties', function (): void {
     expect($propertyNames)->toContain('compromisedThreshold');
     expect($propertyNames)->toContain('failMessage');
 =======
+=======
+>>>>>>> f589f9b2 (.)
     $propertyNames = array_map(
         static fn (ReflectionProperty $prop): string => $prop->getName(),
         $reflection->getProperties(),
@@ -154,12 +169,16 @@ test('password data has correct properties', function (): void {
     ] as $expected) {
         Assert::assertContains($expected, $propertyNames);
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });
 
 test('password data has correct types', function (): void {
     $reflection = new ReflectionClass(PasswordData::class);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     $otpExpirationProperty = $reflection->getProperty('otp_expiration_minutes');
     $otpLengthProperty = $reflection->getProperty('otp_length');
@@ -186,6 +205,8 @@ test('password data has correct types', function (): void {
     expect($failMessageProperty->getType()->getName())->toBe('string');
     expect($failMessageProperty->getType()->allowsNull())->toBeTrue();
 =======
+=======
+>>>>>>> f589f9b2 (.)
     $typeExpectations = [
         'otp_expiration_minutes' => 'int',
         'otp_length' => 'int',
@@ -210,13 +231,17 @@ test('password data has correct types', function (): void {
     $failMessageType = $reflection->getProperty('failMessage')->getType();
     Assert::assertInstanceOf(ReflectionNamedType::class, $failMessageType);
     Assert::assertTrue($failMessageType->allowsNull());
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });
 
 test('password data has correct constructor parameters', function (): void {
     $reflection = new ReflectionClass(PasswordData::class);
     $constructor = $reflection->getConstructor();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     expect($constructor)->not->toBeNull();
 
@@ -238,6 +263,8 @@ test('password data has correct constructor parameters', function (): void {
 test('password data has correct namespace', function (): void {
     expect(PasswordData::class)->toContain('Modules\User\Datas');
 =======
+=======
+>>>>>>> f589f9b2 (.)
     Assert::assertNotNull($constructor);
 
     $parameters = $constructor->getParameters();
@@ -260,12 +287,16 @@ test('password data has correct namespace', function (): void {
 
 test('password data has correct namespace', function (): void {
     Assert::assertStringContainsString('Modules\User\Datas', PasswordData::class);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });
 
 test('password data has correct strict types declaration', function (): void {
     $reflection = new ReflectionClass(PasswordData::class);
     $filename = $reflection->getFileName();
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     if ($filename) {
@@ -273,9 +304,14 @@ test('password data has correct strict types declaration', function (): void {
         expect($content)->toContain('declare(strict_types=1);');
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
     Assert::assertIsString($filename);
 
     $content = file_get_contents($filename);
     Assert::assertStringContainsString('declare(strict_types=1)', $content);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

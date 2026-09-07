@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Contracts;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 /**
@@ -20,6 +21,8 @@ interface HasAuthentications
     public function authentications(): MorphMany;
 }
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Contracts\Auth\Authenticatable;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 
@@ -27,4 +30,7 @@ use Modules\User\Models\Traits\HasAuthenticationLogTrait;
  * Marker: il modello usa {@see HasAuthenticationLogTrait}.
  */
 interface HasAuthentications extends Authenticatable {}
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

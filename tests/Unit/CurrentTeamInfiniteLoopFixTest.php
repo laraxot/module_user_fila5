@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
@@ -85,6 +86,8 @@ test('initializeCurrentTeam sets personal team correctly', function (): void {
     $personalTeam = Team::factory()->create([
         'user_id' => $user->id,
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
@@ -154,11 +157,15 @@ test('current team getter does not trigger save operations', function () {
 test('initialize current team sets personal team correctly', function () {
     $user = currentTeamFixCreateUser(['current_team_id' => null]);
     $personalTeam = currentTeamFixCreateTeam($user, [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'name' => 'Personal Team',
         'personal_team' => true,
     ]);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     // Act: Inizializza il current team
     $user->initializeCurrentTeam();
@@ -209,6 +216,8 @@ test('initializeCurrentTeam sets first available team if no personal team', func
     $team = Team::factory()->create([
         'user_id' => $user->id,
 =======
+=======
+>>>>>>> f589f9b2 (.)
     $user->initializeCurrentTeam();
     $user->refresh();
 
@@ -232,11 +241,15 @@ test('initialize current team does not override existing current team id', funct
 test('initialize current team sets first available team if no personal team', function () {
     $user = currentTeamFixCreateUser(['current_team_id' => null]);
     $team = currentTeamFixCreateTeam($user, [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'name' => 'Regular Team',
         'personal_team' => false,
     ]);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     // Act: Inizializza il current team
     $user->initializeCurrentTeam();
@@ -355,6 +368,8 @@ test('multiple users can be created without issues', function (): void {
         $relation = $user->currentTeam;
         expect($relation)->toBeInstanceOf(BelongsTo::class);
 =======
+=======
+>>>>>>> f589f9b2 (.)
     $user->initializeCurrentTeam();
     $user->refresh();
 
@@ -424,6 +439,9 @@ test('multiple users can be created without issues', function () {
         Assert::assertNotNull($user->id);
         Assert::assertNull($user->currentTeam);
         Assert::assertInstanceOf(BelongsTo::class, $user->currentTeam());
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 });

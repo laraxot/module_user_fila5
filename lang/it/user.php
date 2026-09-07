@@ -7,6 +7,7 @@ return [
         'name' => 'Utenti',
         'plural' => 'Utenti',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'group' => [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione degli utenti e dei loro permessi',
@@ -14,11 +15,15 @@ return [
 =======
         'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione degli utenti e dei loro permessi'],
 >>>>>>> 2024e2e7 (.)
+=======
+        'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione degli utenti e dei loro permessi'],
+>>>>>>> f589f9b2 (.)
         'label' => 'Utenti',
         'sort' => 26,
         'icon' => 'ui-user-main',
     ],
     'fields' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
         'id' => [
             'label' => 'ID',
@@ -107,6 +112,8 @@ return [
             'helper_text' => '',
         ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'id' => ['label' => 'ID', 'help' => 'Identificativo univoco dell\'utente', 'tooltip' => 'ID utente', 'helper_text' => '', 'description' => ''],
         'name' => ['label' => 'Nome', 'placeholder' => 'Inserisci il nome completo', 'help' => 'Nome completo dell\'utente', 'tooltip' => 'Nome e cognome dell\'utente', 'helper_text' => '', 'description' => 'name'],
         'first_name' => ['label' => 'Nome', 'placeholder' => 'Inserisci il nome', 'help' => 'Nome dell\'utente', 'tooltip' => 'Nome dell\'utente', 'helper_text' => '', 'description' => ''],
@@ -119,13 +126,17 @@ return [
         'role' => ['label' => 'Ruolo', 'placeholder' => 'Seleziona il ruolo', 'help' => 'Ruolo dell\'utente nel sistema', 'tooltip' => 'Ruolo e permessi', 'helper_text' => '', 'description' => ''],
         'roles' => ['label' => 'Ruoli', 'placeholder' => 'Seleziona i ruoli', 'help' => 'Ruoli assegnati all\'utente', 'tooltip' => 'Ruoli multipli', 'helper_text' => '', 'description' => ''],
         'permissions' => ['label' => 'Permessi', 'placeholder' => 'Seleziona i permessi', 'help' => 'Permessi specifici dell\'utente', 'tooltip' => 'Permessi diretti', 'helper_text' => '', 'description' => ''],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'status' => [
             'label' => 'Stato',
             'placeholder' => 'Seleziona lo stato',
             'help' => 'Stato dell\'account utente',
             'tooltip' => 'Stato dell\'utente',
             'helper_text' => '',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'options' => [
                 'active' => 'Attivo',
@@ -138,6 +149,10 @@ return [
             'options' => ['active' => 'Attivo', 'inactive' => 'Inattivo', 'blocked' => 'Bloccato', 'pending' => 'In Attesa', 'suspended' => 'Sospeso'],
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'options' => ['active' => 'Attivo', 'inactive' => 'Inattivo', 'blocked' => 'Bloccato', 'pending' => 'In Attesa', 'suspended' => 'Sospeso'],
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'type' => [
             'label' => 'Tipo',
@@ -145,6 +160,7 @@ return [
             'help' => 'Tipo di utente',
             'tooltip' => 'Tipo di account',
             'helper_text' => '',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'options' => [
                 'admin' => 'Amministratore',
@@ -180,6 +196,8 @@ return [
             'helper_text' => '',
         ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'options' => ['admin' => 'Amministratore', 'user' => 'Utente', 'doctor' => 'Medico', 'patient' => 'Paziente', 'staff' => 'Personale'],
             'description' => '',
         ],
@@ -187,13 +205,17 @@ return [
         'created_at' => ['label' => 'Data Creazione', 'help' => 'Data di creazione dell\'account', 'tooltip' => 'Quando è stato creato', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'help' => 'Data dell\'ultimo aggiornamento', 'tooltip' => 'Ultimo aggiornamento', 'helper_text' => '', 'description' => ''],
         'avatar' => ['label' => 'Avatar', 'placeholder' => 'Carica un\'immagine', 'help' => 'Immagine del profilo', 'tooltip' => 'Foto profilo', 'helper_text' => '', 'description' => ''],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'language' => [
             'label' => 'Lingua',
             'placeholder' => 'Seleziona la lingua',
             'help' => 'Lingua preferita dell\'utente',
             'tooltip' => 'Lingua interfaccia',
             'helper_text' => '',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'options' => [
                 'it' => 'Italiano',
@@ -497,6 +519,8 @@ return [
         'create_roles' => 'Crea ruoli',
         'edit_roles' => 'Modifica ruoli',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'options' => ['it' => 'Italiano', 'en' => 'English', 'es' => 'Español', 'fr' => 'Français', 'de' => 'Deutsch'],
             'description' => '',
         ],
@@ -504,7 +528,11 @@ return [
         'password_expires_at' => ['label' => 'Scadenza Password', 'help' => 'Data di scadenza della password', 'tooltip' => 'Scadenza password', 'helper_text' => '', 'description' => ''],
         'verified' => ['label' => 'Verificato', 'help' => 'Indica se l\'email è verificata', 'tooltip' => 'Email verificata', 'helper_text' => '', 'description' => ''],
         'unverified' => ['label' => 'Non Verificato', 'help' => 'Indica se l\'email non è verificata', 'tooltip' => 'Email non verificata', 'helper_text' => '', 'description' => ''],
+<<<<<<< HEAD
         'email_verified_at' => ['label' => 'Email Verificata il', 'help' => 'Data di verifica dell\'email', 'tooltip' => 'Data verifica email', 'helper_text' => '', 'description' => '', 'placeholder' => 'email_verified_at'],
+=======
+        'email_verified_at' => ['label' => 'Email Verificata il', 'help' => 'Data di verifica dell\'email', 'tooltip' => 'Data verifica email', 'helper_text' => '', 'description' => ''],
+>>>>>>> f589f9b2 (.)
         'provider' => ['label' => 'Provider', 'placeholder' => 'Inserisci il nome del provider', 'help' => 'Provider di autenticazione (es. Google, Facebook]', 'tooltip' => 'Provider OAuth', 'helper_text' => '', 'description' => ''],
         'provider_id' => ['label' => 'ID Provider', 'placeholder' => 'Inserisci l\'ID del provider', 'help' => 'ID utente nel provider esterno', 'tooltip' => 'ID provider esterno', 'helper_text' => '', 'description' => ''],
         'provider_name' => ['label' => 'Nome Provider', 'placeholder' => 'Inserisci il nome associato al provider', 'help' => 'Nome dell\'utente nel provider', 'tooltip' => 'Nome nel provider', 'helper_text' => '', 'description' => ''],
@@ -523,10 +551,13 @@ return [
         'matr' => ['description' => 'matr', 'label' => 'matr', 'placeholder' => 'matr', 'helper_text' => 'matr'],
         'ente' => ['label' => 'ente', 'placeholder' => 'ente', 'helper_text' => 'ente', 'description' => 'ente'],
         'state' => ['label' => 'state'],
+<<<<<<< HEAD
         'device' => ['label' => 'device', 'placeholder' => 'device', 'helper_text' => 'device', 'description' => 'device'],
         'created_from' => ['label' => 'created_from', 'placeholder' => 'created_from', 'helper_text' => 'created_from', 'description' => 'created_from'],
         'created_until' => ['label' => 'created_until', 'placeholder' => 'created_until', 'helper_text' => 'created_until', 'description' => 'created_until'],
         'user' => ['label' => 'user'],
+=======
+>>>>>>> f589f9b2 (.)
     ],
     'actions' => [
         'create' => ['label' => 'Crea Utente', 'icon' => 'heroicon-o-plus', 'tooltip' => 'Crea un nuovo utente'],
@@ -572,7 +603,10 @@ return [
     ],
     'permissions' => [
         'view_users' => 'Visualizza utenti', 'create_users' => 'Crea utenti', 'edit_users' => 'Modifica utenti', 'delete_users' => 'Elimina utenti', 'impersonate_users' => 'Impersona utenti', 'manage_roles' => 'Gestisci ruoli', 'manage_permissions' => 'Gestisci permessi', 'view_roles' => 'Visualizza ruoli', 'create_roles' => 'Crea ruoli', 'edit_roles' => 'Modifica ruoli',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'delete_roles' => 'Elimina ruoli',
     ],
     'auth' => [
@@ -580,6 +614,7 @@ return [
             'title' => 'Accedi',
             'subtitle' => 'Accedi al tuo account',
             'button' => 'Accedi',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'fields' => [
                 'email' => 'Email',
@@ -622,6 +657,8 @@ return [
             'confirmation' => 'Sei sicuro di voler uscire?',
         ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'fields' => ['email' => 'Email', 'password' => 'Password', 'remember' => 'Ricordami'],
             'help' => ['email' => 'Inserisci la tua email registrata', 'password' => 'Inserisci la tua password'],
             'validation' => [
@@ -648,12 +685,16 @@ return [
             'error_occurred' => 'Si è verificato un errore durante la registrazione',
         ],
         'logout' => ['title' => 'Logout', 'button' => 'Esci', 'success' => 'Logout effettuato con successo', 'error' => 'Errore durante il logout', 'confirmation' => 'Sei sicuro di voler uscire?'],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'password_reset' => [
             'title' => 'Reset Password',
             'subtitle' => 'Reimposta la tua password',
             'button' => 'Invia Link Reset',
             'confirm_button' => 'Reimposta Password',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'email_sent' => [
                 'title' => 'Email inviata',
@@ -675,11 +716,16 @@ return [
                 'title' => 'Errore reset password',
             ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'email_sent' => ['title' => 'Email inviata', 'message' => 'Ti abbiamo inviato un link per reimpostare la password'],
             'email_failed' => ['title' => 'Errore invio email', 'message' => 'Impossibile inviare l\'email di reset', 'generic' => 'Si è verificato un errore'],
             'success' => ['title' => 'Password reimpostata', 'message' => 'La tua password è stata reimpostata con successo'],
             'errors' => ['invalid_token' => 'Token non valido', 'invalid_user' => 'Utente non trovato', 'generic' => 'Si è verificato un errore', 'title' => 'Errore reset password'],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'user_not_found' => 'Utente non trovato',
         'password_fields_required' => 'Tutti i campi password sono obbligatori',
@@ -689,6 +735,7 @@ return [
         'logout_title' => 'Conferma Logout',
         'logout_confirmation' => 'Sei sicuro di voler uscire?',
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
     'profile' => [
         'profile' => 'Profilo',
@@ -803,6 +850,8 @@ return [
         ],
     ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'profile' => ['profile' => 'Profilo', 'my_profile' => 'Il Mio Profilo', 'subheading' => 'Gestisci le informazioni del tuo profilo', 'edit_profile' => 'Modifica Profilo', 'change_password' => 'Cambia Password', 'personal_info' => 'Informazioni Personali', 'security' => 'Sicurezza', 'notifications' => 'Notifiche', 'preferences' => 'Preferenze'],
     'tenancy' => [
         'navigation' => ['edit' => 'Modifica Profilo Team'],
@@ -838,5 +887,8 @@ return [
         'worker' => ['label' => 'worker', 'heading' => 'worker'],
     ],
     'plural_label' => 'User (Plurale)',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

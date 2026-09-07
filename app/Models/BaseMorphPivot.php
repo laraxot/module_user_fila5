@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\MorphPivot;
@@ -13,10 +14,14 @@ use Modules\Xot\Traits\Updater;
 =======
 use Modules\Xot\Models\XotBaseMorphPivot;
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\Xot\Models\XotBaseMorphPivot;
+>>>>>>> f589f9b2 (.)
 
 /**
  * Class BaseMorphPivot.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 abstract class BaseMorphPivot extends MorphPivot
 {
@@ -61,12 +66,17 @@ abstract class BaseMorphPivot extends MorphPivot
 
     /** @var list<string> */
 =======
+=======
+>>>>>>> f589f9b2 (.)
 abstract class BaseMorphPivot extends XotBaseMorphPivot
 {
     protected $connection = 'user';
 
     /** @var list<string> */
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     protected $fillable = [
         'id',
         'post_id',
@@ -76,6 +86,7 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
         'note',
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Create a new factory instance for the model.
@@ -90,6 +101,8 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     /** @return array<string, string> */
     protected function casts(): array
     {

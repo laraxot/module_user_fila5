@@ -5,11 +5,14 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthPersonalAccessClientResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Filament\Clusters\Passport\Resources\OauthPersonalAccessClientResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -19,6 +22,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 class ViewOauthPersonalAccessClient extends XotBaseViewRecord
 {
     protected static string $resource = OauthPersonalAccessClientResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -38,4 +42,6 @@ class ViewOauthPersonalAccessClient extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

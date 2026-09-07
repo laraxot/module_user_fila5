@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "User Analytics"
 type: concept
@@ -19,7 +22,10 @@ related:
   - "./user-traits.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # User Analytics
 
 ## Overview
@@ -66,10 +72,14 @@ Sistema di analisi e monitoraggio degli utenti, inclusi pattern di utilizzo, met
 ### Pending
 - Real-time monitoring
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Predictive analytics
 =======
 - <nome progetto>ive analytics
 >>>>>>> 2024e2e7 (.)
+=======
+- <nome progetto>ive analytics
+>>>>>>> f589f9b2 (.)
 - Custom metrics
 - Export system
 

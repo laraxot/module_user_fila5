@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite\Utils;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use InvalidArgumentException;
 use RuntimeException;
 use Illuminate\Support\Str;
@@ -15,6 +16,11 @@ use Illuminate\Support\Str;
 use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Support\Str;
+use InvalidArgumentException;
+use Laravel\Socialite\Contracts\User;
+>>>>>>> f589f9b2 (.)
 
 final class EmailDomainAnalyzer
 {
@@ -25,41 +31,56 @@ final class EmailDomainAnalyzer
     ) {
         if (empty($ssoProvider)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             throw new InvalidArgumentException('Il provider SSO non può essere vuoto');
 =======
             throw new \InvalidArgumentException('Il provider SSO non può essere vuoto');
 >>>>>>> 2024e2e7 (.)
+=======
+            throw new \InvalidArgumentException('Il provider SSO non può essere vuoto');
+>>>>>>> f589f9b2 (.)
         }
     }
 
     public function setUser(User $ssoUser): self
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         //if ($ssoUser === null) {
         //    throw new \InvalidArgumentException('L\'utente SSO non può essere null');
         //}
         $this->ssoUser = $ssoUser;
 =======
+=======
+>>>>>>> f589f9b2 (.)
         // if ($ssoUser === null) {
         //    throw new InvalidArgumentException('L\'utente SSO non può essere null');
         // }
         $this->ssoUser = $ssoUser;
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         return $this;
     }
 
     public function hasUnrecognizedDomain(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return !$this->hasFirstPartyDomain() && !$this->hasClientDomain();
 =======
         return ! $this->hasFirstPartyDomain() && ! $this->hasClientDomain();
 >>>>>>> 2024e2e7 (.)
+=======
+        return ! $this->hasFirstPartyDomain() && ! $this->hasClientDomain();
+>>>>>>> f589f9b2 (.)
     }
 
     public function hasFirstPartyDomain(): bool
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         if (!isset($this->ssoUser)) {
             throw new RuntimeException(
@@ -70,22 +91,31 @@ final class EmailDomainAnalyzer
         $email = $this->ssoUser->getEmail();
         if (!is_string($email) || empty($email)) {
 =======
+=======
+>>>>>>> f589f9b2 (.)
         if (! isset($this->ssoUser)) {
             throw new \RuntimeException('L\'utente SSO non è stato impostato. Utilizzare setUser() prima di chiamare questo metodo.');
         }
 
         $email = $this->ssoUser->getEmail();
         if (! is_string($email) || empty($email)) {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             return false;
         }
 
         $domain = $this->firstPartyDomain();
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($domain === null || empty($domain)) {
 =======
         if (null === $domain || empty($domain)) {
 >>>>>>> 2024e2e7 (.)
+=======
+        if (null === $domain || empty($domain)) {
+>>>>>>> f589f9b2 (.)
             return false;
         }
 
@@ -98,6 +128,7 @@ final class EmailDomainAnalyzer
     public function hasClientDomain(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!isset($this->ssoUser)) {
             throw new RuntimeException(
                 'L\'utente SSO non è stato impostato. Utilizzare setUser() prima di chiamare questo metodo.',
@@ -107,22 +138,31 @@ final class EmailDomainAnalyzer
         $email = $this->ssoUser->getEmail();
         if (!is_string($email) || empty($email)) {
 =======
+=======
+>>>>>>> f589f9b2 (.)
         if (! isset($this->ssoUser)) {
             throw new \RuntimeException('L\'utente SSO non è stato impostato. Utilizzare setUser() prima di chiamare questo metodo.');
         }
 
         $email = $this->ssoUser->getEmail();
         if (! is_string($email) || empty($email)) {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             return false;
         }
 
         $clientEmailDomain = $this->clientDomain();
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($clientEmailDomain === null || empty($clientEmailDomain)) {
 =======
         if (null === $clientEmailDomain || empty($clientEmailDomain)) {
 >>>>>>> 2024e2e7 (.)
+=======
+        if (null === $clientEmailDomain || empty($clientEmailDomain)) {
+>>>>>>> f589f9b2 (.)
             return false;
         }
 
@@ -132,6 +172,7 @@ final class EmailDomainAnalyzer
         return $emailDomain === $configDomain;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     private function firstPartyDomain(): null|string
     {
@@ -149,6 +190,8 @@ final class EmailDomainAnalyzer
             return null;
         }
 =======
+=======
+>>>>>>> f589f9b2 (.)
     private function firstPartyDomain(): ?string
     {
         $res = config(sprintf('services.%s.email_domains.first_party.tld', $this->ssoProvider));
@@ -166,7 +209,10 @@ final class EmailDomainAnalyzer
             return null;
         }
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         return $domain;
     }
 }

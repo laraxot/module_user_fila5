@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 use Override;
@@ -15,6 +16,8 @@ use Illuminate\Database\Eloquent\Builder;
 use Modules\Media\Models\Media;
 use Modules\Xot\Contracts\ProfileContract;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Notifications\DatabaseNotificationCollection;
@@ -22,11 +25,15 @@ use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 /**
  * Class Modules\User\Models\User.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property string $id
  * @property string|null $name
@@ -118,6 +125,8 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null $certifications
  * @property string|null $type
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property string                                            $id
  * @property string|null                                       $name
  * @property string|null                                       $first_name
@@ -210,7 +219,10 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null                    $certifications
  * @property string|null                    $type
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @method static Builder<static>|User whereAddress($value)
  * @method static Builder<static>|User whereCertifications($value)
  * @method static Builder<static>|User whereCity($value)
@@ -223,8 +235,11 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|User whereStatus($value)
  * @method static Builder<static>|User whereType($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @mixin IdeHelperUser
 =======
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @property string|null $facebook_id
  *
@@ -258,11 +273,15 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|User team($teams, bool $without = false)
  * @method static Builder<static>|User withoutTeam($teams)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 class User extends BaseUser
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * The connection name for the model.
@@ -273,6 +292,8 @@ class User extends BaseUser
 
     #[Override]
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /** @var array<string, class-string> */
     protected $childTypes = [
         'master_admin' => self::class,
@@ -283,7 +304,10 @@ class User extends BaseUser
     ];
 
     #[\Override]
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public function canAccessSocialite(): bool
     {
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;

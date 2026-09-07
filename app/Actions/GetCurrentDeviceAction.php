@@ -9,11 +9,14 @@ declare(strict_types=1);
 namespace Modules\User\Actions;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
 use InvalidArgumentException;
 use RuntimeException;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Jenssegers\Agent\Agent;
 use Modules\User\Models\Device;
 use Spatie\QueueableAction\QueueableAction;
@@ -22,6 +25,7 @@ class GetCurrentDeviceAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Execute the action.
@@ -61,6 +65,8 @@ class GetCurrentDeviceAction
             }
             $device->update([...$data, ...$up]);
 =======
+=======
+>>>>>>> f589f9b2 (.)
     public function __construct(
         private readonly Agent $agent,
         private readonly Device $deviceModel,
@@ -85,11 +91,15 @@ class GetCurrentDeviceAction
                 throw new \RuntimeException('Impossibile creare o trovare il dispositivo');
             }
             $device->update([...$deviceInfo, ...$browserInfo]);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
             return $device;
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         $device = Device::firstOrCreate($data);
         if ($device === null) {
@@ -100,6 +110,8 @@ class GetCurrentDeviceAction
         return $device;
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $device = $this->deviceModel->firstOrCreate($deviceInfo);
         if (null === $device) {
             throw new \RuntimeException('Impossibile creare o trovare il dispositivo');
@@ -147,5 +159,8 @@ class GetCurrentDeviceAction
             'robot' => is_string($this->agent->robot()) ? $this->agent->robot() : 'unknown',
         ];
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

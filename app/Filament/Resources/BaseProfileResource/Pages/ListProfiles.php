@@ -5,16 +5,20 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\BaseProfileResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Filters\BaseFilter;
 use Override;
 use Exception;
 use Modules\Xot\Contracts\UserContract;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Tables;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Tables\Filters\TernaryFilter;
 use Illuminate\Database\Eloquent\Builder;
@@ -24,6 +28,11 @@ use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Illuminate\Database\Eloquent\Builder;
 >>>>>>> 2024e2e7 (.)
+=======
+use Filament\Tables\Filters\BaseFilter;
+use Filament\Tables\Filters\TernaryFilter;
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> f589f9b2 (.)
 use Modules\User\Filament\Resources\BaseProfileResource;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -39,10 +48,14 @@ class ListProfiles extends XotBaseListRecords
      * @return array<string, Tables\Columns\Column>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function getTableColumns(): array
     {
         return [
@@ -50,6 +63,7 @@ class ListProfiles extends XotBaseListRecords
                 ->sortable()
                 ->searchable()
                 ->default(function ($record) {
+<<<<<<< HEAD
 <<<<<<< HEAD
                     $user = $record->user;
                     $user_class = XotData::make()->getUserClass();
@@ -74,6 +88,8 @@ class ListProfiles extends XotBaseListRecords
 
                     return $user->name;
 =======
+=======
+>>>>>>> f589f9b2 (.)
                     if (! is_object($record)) {
                         return '--';
                     }
@@ -116,7 +132,10 @@ class ListProfiles extends XotBaseListRecords
                     $userName = $userValue->name ?? '--';
 
                     return is_string($userName) ? $userName : '--';
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                 }),
             'first_name' => TextColumn::make('first_name')->sortable()->searchable(),
             'last_name' => TextColumn::make('last_name')->sortable()->searchable(),
@@ -130,10 +149,14 @@ class ListProfiles extends XotBaseListRecords
      * @return array<string, BaseFilter>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function getTableFilters(): array
     {
         return [
@@ -143,12 +166,17 @@ class ListProfiles extends XotBaseListRecords
                 ->falseLabel(static::trans('filters.is_active.inactive'))
                 ->queries(
 <<<<<<< HEAD
+<<<<<<< HEAD
                     true: static fn(Builder $query) => $query->where('is_active', '=', true),
                     false: static fn(Builder $query) => $query->where('is_active', '=', false),
 =======
                     true: static fn (Builder $query) => $query->where('is_active', '=', true),
                     false: static fn (Builder $query) => $query->where('is_active', '=', false),
 >>>>>>> 2024e2e7 (.)
+=======
+                    true: static fn (Builder $query) => $query->where('is_active', '=', true),
+                    false: static fn (Builder $query) => $query->where('is_active', '=', false),
+>>>>>>> f589f9b2 (.)
                 ),
         ];
     }

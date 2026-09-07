@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Separazione dei Modelli User e Profile: Analisi e Raccomandazioni
 
 ## Introduzione
@@ -199,6 +200,8 @@ Per mitigare gli svantaggi dell'approccio separato:
 
 La separazione dei modelli User e Profile rappresenta la scelta architetturale più adatta per il progetto, offrendo il giusto equilibrio tra manutenibilità, sicurezza e scalabilità. Nonostante la maggiore complessità iniziale, i benefici a lungo termine in termini di flessibilità e conformità normativa superano ampiamente gli svantaggi, specialmente in un contesto sanitario dove la protezione dei dati personali è fondamentale.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: user-profile-aration
@@ -215,4 +218,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-profile-separation.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

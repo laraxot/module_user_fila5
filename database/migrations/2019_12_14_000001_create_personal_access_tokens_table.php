@@ -9,6 +9,7 @@ return new class extends XotBaseMigration {
     /**
      * Run the migrations.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return void
      */
@@ -17,6 +18,10 @@ return new class extends XotBaseMigration {
      */
     public function up(): void
 >>>>>>> 2024e2e7 (.)
+=======
+     */
+    public function up(): void
+>>>>>>> f589f9b2 (.)
     {
         // -- CREATE --
         $this->tableCreate(
@@ -34,10 +39,14 @@ return new class extends XotBaseMigration {
         $this->tableUpdate(
             function (Blueprint $table) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 // if (! $this->hasColumn('email')) {
 =======
                 // if (! $this->hasColumn('email'
 >>>>>>> 2024e2e7 (.)
+=======
+                // if (! $this->hasColumn('email'
+>>>>>>> f589f9b2 (.)
                 //    $table->string('email')->nullable();
                 // }
             }

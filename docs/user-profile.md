@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "User vs Profile: Guida Completa alla Progettazione"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # User vs Profile: Guida Completa alla Progettazione
 
 ## Sommario
@@ -29,10 +35,14 @@ related:
 3. [Best Practice Raccolte](#best-practice-raccolte)
 4. [Casi d'Uso con Percentuali](#casi-duso-con-percentuali)
 <<<<<<< HEAD
+<<<<<<< HEAD
 5. [Raccomandazioni per LaravelPizza](#raccomandazioni-per-laravelpizza)
 =======
 5. [Raccomandazioni per <nome progetto>](#raccomandazioni-per-<nome progetto>)
 >>>>>>> 2024e2e7 (.)
+=======
+5. [Raccomandazioni per <nome progetto>](#raccomandazioni-per-<nome progetto>)
+>>>>>>> f589f9b2 (.)
 6. [Schema Decisionale](#schema-decisionale)
 
 ---
@@ -46,10 +56,14 @@ La separazione tra **User** (tabella per autenticazione) e **Profile** (tabella 
 ## Analisi del Codice Attuale
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Struttura Attuale LaravelPizza
 =======
 ### Struttura Attuale <nome progetto>
 >>>>>>> 2024e2e7 (.)
+=======
+### Struttura Attuale <nome progetto>
+>>>>>>> f589f9b2 (.)
 
 ```
 User (connection: user)
@@ -71,6 +85,7 @@ User (connection: user)
 └── SoftDeletes
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Profile (connection: meetup)
 ├── id (UUID)
 =======
@@ -78,6 +93,11 @@ Profile (connection: user)
 ├── id (bigint autoincrement)
 ├── uuid (char 36 unique, per Android/Postgres/API)
 >>>>>>> 2024e2e7 (.)
+=======
+Profile (connection: user)
+├── id (bigint autoincrement)
+├── uuid (char 36 unique, per Android/Postgres/API)
+>>>>>>> f589f9b2 (.)
 ├── user_id (UUID)
 ├── first_name
 ├── last_name
@@ -163,10 +183,14 @@ public function profile(): HasOne
 ## Casi d'Uso con Percentuali
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Caso 1: Community Platform (es. LaravelPizza)
 =======
 ### Caso 1: Community Platform (es. <nome progetto>)
 >>>>>>> 2024e2e7 (.)
+=======
+### Caso 1: Community Platform (es. <nome progetto>)
+>>>>>>> f589f9b2 (.)
 ```
 User: 60% dei dati necessari
 - id, email, password, name, lang, type, state
@@ -272,10 +296,14 @@ START
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Raccomandazioni per LaravelPizza
 =======
 ## Raccomandazioni per <nome progetto>
 >>>>>>> 2024e2e7 (.)
+=======
+## Raccomandazioni per <nome progetto>
+>>>>>>> f589f9b2 (.)
 
 ### Attuale (CORRETTO)
 
@@ -351,10 +379,14 @@ Profile: Tutti i dati applicativi
 | Scenario | Usa | Note |
 |----------|-----|------|
 <<<<<<< HEAD
+<<<<<<< HEAD
 | LaravelPizza attuale | User + Profile | Profile in meetup DB |
 =======
 | <nome progetto> attuale | User + Profile | Profile in meetup DB |
 >>>>>>> 2024e2e7 (.)
+=======
+| <nome progetto> attuale | User + Profile | Profile in meetup DB |
+>>>>>>> f589f9b2 (.)
 | MVP semplice | Solo User | Tutto in una tabella |
 | SaaS multi-tenant | User + Profile | Profile per tenant |
 | Social network | User + Profile | Profile ricco |
@@ -365,10 +397,14 @@ Profile: Tutti i dati applicativi
 ## Conclusione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per **LaravelPizza** la separazione attuale ha senso perché:
 =======
 Per **<nome progetto>** la separazione attuale ha senso perché:
 >>>>>>> 2024e2e7 (.)
+=======
+Per **<nome progetto>** la separazione attuale ha senso perché:
+>>>>>>> f589f9b2 (.)
 - ✅ Profile è in connection separata (meetup)
 - ✅ Meetup module ha dati specifici
 - ✅ Possibile estensione futura (altri moduli)
@@ -380,8 +416,12 @@ Per **<nome progetto>** la separazione attuale ha senso perché:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Documento generato per LaravelPizza - Analisi User vs Profile Pattern*
 =======
 *Documento generato per <nome progetto> - Analisi User vs Profile Pattern*
 >>>>>>> 2024e2e7 (.)
+=======
+*Documento generato per <nome progetto> - Analisi User vs Profile Pattern*
+>>>>>>> f589f9b2 (.)
 *Data: [DATE]*

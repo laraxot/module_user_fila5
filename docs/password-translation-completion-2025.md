@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Completamento Traduzioni Password - 2025
 
 ## Problema Identificato
@@ -119,6 +120,8 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 *Ultimo aggiornamento: 2025-01-06*
 *Autore: Sistema di Audit Traduzioni*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: password-translation-completion-2025
@@ -135,4 +138,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/password-translation-completion-2025.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

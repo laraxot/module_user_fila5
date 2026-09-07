@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\Permission;
@@ -350,6 +351,8 @@ describe('User Business Logic Integration', function () {
             expect($user->last_activity_at->diffInMinutes(now()))->toBeLessThan(1);
         });
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Database\Eloquent\Collection;
@@ -672,6 +675,9 @@ describe('User Business Logic', function (): void {
         $user->refresh();
 
         Assert::assertTrue($user->updated_at?->greaterThan($staleTimestamp) ?? false);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     });
 });

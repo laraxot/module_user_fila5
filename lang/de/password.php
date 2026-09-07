@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'navigation' => [
         'name' => 'Password',
@@ -15,6 +18,7 @@ return [
         ],
     ],
     'fields' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
         'first_name' => 'Nome',
         'last_name' => 'Cognome',
@@ -39,6 +43,8 @@ return [
         'numbers' => [
             'help' => 'la password richiede almeno un numero',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -99,7 +105,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'symbols' => [
             'help' => 'la password richiede almeno un simbolo',
@@ -107,11 +116,17 @@ return [
                 'help' => 'la password richiede almeno un simbolo',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'uncompromised' => [
             'help' => 'Se la password non deve essere stata compromessa in data leaks',
@@ -119,11 +134,17 @@ return [
                 'help' => 'Se la password non deve essere stata compromessa in data leaks',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'compromisedThreshold' => [
             'help' => 'Il numero di volte che una password può apparire in data leaks prima di essere considerata compromessa',
@@ -131,11 +152,17 @@ return [
                 'help' => 'Il numero di volte che una password può apparire in data leaks prima di essere considerata compromessa',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'new_password' => [
             'label' => 'new_password',
@@ -146,9 +173,13 @@ return [
             'helper_text' => 'new_password',
             'placeholder' => 'new_password',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'actions' => [
@@ -170,8 +201,13 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 >>>>>>> 2024e2e7 (.)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> f589f9b2 (.)
 ];

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Tests\TestCase;
 
 uses(TestCase::class);
@@ -14,10 +15,16 @@ namespace Modules\User\Tests\Unit;
 
 use Carbon\Carbon;
 >>>>>>> 2024e2e7 (.)
+=======
+namespace Modules\User\Tests\Unit;
+
+use Carbon\Carbon;
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 // In-memory helper: build a User without touching DB
@@ -68,6 +75,8 @@ describe('User Model', function () {
 
     it('supports mass-assignment of expected attributes (behavior)', function () {
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -83,7 +92,10 @@ describe('User Model', function (): void {
     });
 
     test('supports mass assignment of expected attributes behavior', function (): void {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $data = [
             'first_name' => 'Jane',
             'last_name' => 'Roe',
@@ -94,6 +106,7 @@ describe('User Model', function (): void {
             'is_otp' => true,
         ];
         $user = new User($data);
+<<<<<<< HEAD
 <<<<<<< HEAD
         expect($user->first_name)
             ->toBe('Jane')
@@ -116,6 +129,8 @@ describe('User Model', function (): void {
 
     it('casts attributes correctly', function () {
 =======
+=======
+>>>>>>> f589f9b2 (.)
         Assert::assertSame('Jane', $user->first_name);
         Assert::assertSame('Roe', $user->last_name);
         Assert::assertSame('jane.roe@example.test', $user->email);
@@ -132,7 +147,10 @@ describe('User Model', function (): void {
     });
 
     test('casts attributes correctly', function (): void {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $user = stubUser([
             'email_verified_at' => Carbon::now(),
             'created_at' => Carbon::now(),
@@ -140,6 +158,7 @@ describe('User Model', function (): void {
             'is_otp' => false,
         ]);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         expect($user->email_verified_at)
             ->toBeInstanceOf(Carbon::class)
@@ -301,6 +320,8 @@ describe('User Model', function (): void {
             expect($user->ownedTeams)->toHaveCount(1);
         });
 =======
+=======
+>>>>>>> f589f9b2 (.)
         Assert::assertInstanceOf(Carbon::class, $user->email_verified_at);
 
         Assert::assertInstanceOf(Carbon::class, $user->created_at);
@@ -433,6 +454,9 @@ describe('User Model', function (): void {
         $user->setRelation('ownedTeams', collect([$team]));
 
         Assert::assertCount(1, $user->ownedTeams);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     });
 });

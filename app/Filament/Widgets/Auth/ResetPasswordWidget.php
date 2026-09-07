@@ -6,11 +6,14 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Schemas\Schema;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Component;
 use Filament\Forms\Components\TextInput;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
@@ -18,6 +21,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Override;
@@ -73,6 +77,8 @@ class ResetPasswordWidget extends XotBaseWidget
      * Mount the widget and initialize the form.
      */
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
@@ -100,13 +106,17 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
         return 'getResetPasswordFormSchema';
     }
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public function mount(): void
     {
         $this->form->fill();
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Configure the form for this widget.
      */
@@ -119,6 +129,8 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
      *
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      * @return RedirectResponse|void
      */
     public function resetPassword()
@@ -128,19 +140,26 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
         $reset_data = Arr::only($data, ['email', 'password', 'password_confirmation', 'token']);
         $status = Password::reset($reset_data, function (Authenticatable $user, string $password): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
             /** @var Model&Authenticatable $user */
 =======
+=======
+>>>>>>> f589f9b2 (.)
             if (! $user instanceof Model) {
                 return;
             }
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             $user->forceFill([
                 'password' => Hash::make($password),
                 'remember_token' => Str::random(60),
             ])->save();
         });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         if ($status === Password::PASSWORD_RESET) {
             session()->flash('status', __($status));
@@ -151,12 +170,17 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
             $this->addError('email', __($status));
         }
 =======
+=======
+>>>>>>> f589f9b2 (.)
         if (Password::PASSWORD_RESET === $status) {
             session()->flash('status', __($status));
 
             return redirect()->route('login');
         }
         $this->addError('email', __(is_string($status) ? $status : 'passwords.generic_error'));
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

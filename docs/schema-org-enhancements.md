@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🧠 Schema.org Model Enhancement Analysis
 
 ## Observation
@@ -38,6 +39,8 @@ By aligning with Schema.org, we don't just "add fields"; we enable the applicati
 **🔄 Zen Status**: Expanding
 **🐄 Methodology**: Super Mucca ✅
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: schema-org-enhancements
@@ -54,4 +57,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/schema-org-enhancements.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

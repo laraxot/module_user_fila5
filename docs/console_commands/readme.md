@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Comandi Console - Modulo User"
 type: concept
@@ -19,7 +22,10 @@ related:
   - "./console-commands.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Comandi Console - Modulo User
 
 ## Panoramica
@@ -228,10 +234,14 @@ Modules/User/
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Console Commands Philosophy](console_commands_philosophy.md)
 =======
 - [Console Commands Philosophy](console-commands-philosophy.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Console Commands Philosophy](console-commands-philosophy.md)
+>>>>>>> f589f9b2 (.)
 - [User Models](../models/readme.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
@@ -270,6 +280,9 @@ Modules/User/
 - [ ] Metriche di utilizzo
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-27*
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

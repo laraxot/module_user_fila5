@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 use App\Models\User;
 use Filament\Forms\Components\Checkbox;
@@ -21,6 +22,8 @@ use Livewire\Volt\Component;
 use function Laravel\Folio\middleware;
 use function Laravel\Folio\name;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use function Laravel\Folio\{middleware, name};
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -30,11 +33,15 @@ if (in_array($locale, ['it', 'en', 'es', 'de', 'fr', 'ru'], true)) {
     LaravelLocalization::setLocale($locale);
     app()->setLocale($locale);
 }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 middleware(['guest']);
 name('register');
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 new class extends Component {
     #[Validate('required')]
@@ -106,6 +113,8 @@ new class extends Component {
         </div>
     </div>
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ?>
 
 <x-layouts.app>
@@ -206,5 +215,8 @@ new class extends Component {
             </div>
         </div>
     </section>
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 </x-layouts.app>

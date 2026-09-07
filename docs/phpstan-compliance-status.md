@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2025-12-10
@@ -14,6 +15,8 @@ The User module is already compliant with PHPStan Level 10 analysis. No errors w
 ```
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "PHPStan Level 10 Compliance Status"
 type: concept
@@ -77,7 +80,10 @@ The recovery removed residual static-analysis drift in:
 - `RegisterWidget` now imports the `Log` facade explicitly
 - Refresh token revoke logic now uses attribute APIs instead of fragile direct dynamic property access where PHPStan could not infer the field safely
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ## Module Overview
 
 The User module provides:
@@ -123,18 +129,24 @@ The module follows strict patterns for user management:
 
 To maintain PHPStan compliance:
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Continue following established type safety patterns
 2. Test all authentication flows
 3. Verify permission system works correctly
 4. Run PHPStan before committing changes
 5. Ensure all new user features maintain type safety
 =======
+=======
+>>>>>>> f589f9b2 (.)
 1. Keep `PassportServiceProvider` and all OAuth consumers aligned to the actual vendor Eloquent models exposed by `laravel/passport`
 2. Distinguish strictly between vendor Passport Eloquent wrappers and local application OAuth models
 3. Prefer typed local variables over property access on `JsonResource` and similar proxy objects
 4. Run `./vendor/bin/phpstan analyse Modules/User --error-format=raw` after each Passport/OAuth batch
 5. Re-run `./vendor/bin/phpstan analyse Modules` before considering the work complete
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ## Related Documentation
 - [User Management Guide](user-management.md)
@@ -142,7 +154,10 @@ To maintain PHPStan compliance:
 - [Role and Permissions](role-permissions.md)
 - [Team Management](team-management.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
 ## Aggiornamento 2026-07-06
 
@@ -153,4 +168,7 @@ nella root del repo). Stato finale stabile: interfaccia con
 `@phpstan-ignore generics.notSubtype` (stesso pattern di `tenants()`),
 trait con `// @phpstan-ignore return.type` sulla riga di `return` in
 `HasTeams::teams()`. Ri-verificato a zero errori su tutto `Modules/`.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

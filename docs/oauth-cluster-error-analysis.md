@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # OAuth Cluster - Analisi Errore e Correzione
 
 **Data**: 2025-01-22
@@ -124,6 +125,8 @@ class Passport extends XotBaseCluster
 **Versione**: 1.0.1
 **Status**: ✅ Errore corretto e verificato
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: oauth-cluster-error-analysis
@@ -140,4 +143,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/oauth-cluster-error-analysis.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Passport / API',
         'plural_label' => 'Passport / API',
@@ -30,6 +33,12 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
+=======
+        'force' => [
+            'description' => 'force',
+        ],
+>>>>>>> f589f9b2 (.)
     ],
     'actions' => [
         'create' => [
@@ -40,10 +49,35 @@ return [
             'label' => 'Revoca',
             'tooltip' => 'Revoca l\'accesso',
         ],
+<<<<<<< HEAD
+=======
+        'install' => [
+            'label' => 'Installa Passport',
+            'modal_description' => 'Questo comando installerà Passport e creerà le chiavi di crittografia necessarie.',
+        ],
+        'generate_keys' => [
+            'label' => 'Genera Chiavi',
+        ],
+        'purge_tokens' => [
+            'label' => 'Pulisci Token',
+            'modal_description' => 'Elimina tutti i token scaduti o revocati.',
+        ],
+        'hash_secrets' => [
+            'label' => 'Hash Secret',
+            'modal_description' => 'Applica l\'hashing a tutti i client secret esistenti.',
+        ],
+    ],
+    'status' => [
+        'public_key' => 'Chiave Pubblica',
+        'private_key' => 'Chiave Privata',
+        'present' => 'Presente',
+        'missing' => 'Mancante',
+>>>>>>> f589f9b2 (.)
     ],
     'messages' => [
         'client_created' => 'Client creato con successo',
         'client_revoked' => 'Client revocato con successo',
+<<<<<<< HEAD
     ],
 =======
     'navigation' => ['label' => 'Passport / API', 'plural_label' => 'Passport / API', 'group' => 'Sistema', 'icon' => 'heroicon-o-key', 'sort' => 95],
@@ -70,4 +104,11 @@ return [
     'status' => ['public_key' => 'Chiave Pubblica', 'private_key' => 'Chiave Privata', 'present' => 'Presente', 'missing' => 'Mancante'],
     'messages' => ['client_created' => 'Client creato con successo', 'client_revoked' => 'Client revocato con successo', 'command_started' => 'Comando avviato...', 'command_completed' => 'Comando completato con successo', 'command_failed' => 'Esecuzione comando fallita', 'command_error' => 'Errore durante l\'esecuzione del comando'],
 >>>>>>> 2024e2e7 (.)
+=======
+        'command_started' => 'Comando avviato...',
+        'command_completed' => 'Comando completato con successo',
+        'command_failed' => 'Esecuzione comando fallita',
+        'command_error' => 'Errore durante l\'esecuzione del comando',
+    ],
+>>>>>>> f589f9b2 (.)
 ];

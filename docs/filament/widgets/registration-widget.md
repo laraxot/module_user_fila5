@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "RegistrationWidget: Widget generico per la registrazione utente"
 type: concept
@@ -16,7 +19,10 @@ related:
   - "./registration-widget-fileupload.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # RegistrationWidget: Widget generico per la registrazione utente
 
 ## Scopo e filosofia
@@ -52,10 +58,14 @@ Queste Action devono occuparsi di:
 - [Esempio di Action di registrazione Doctor](../../../../Patient/app/Actions/Doctor/RegisterAction.php)
 - [Esempio di Action di registrazione Patient](../../../../Patient/app/Actions/Patient/RegisterAction.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione generale: Registrazione Odontoiatra](../../../../../docs/doctor-registration.md)
 =======
 - [Documentazione generale: Registrazione Odontoiatra](../../../../../../docs/doctor-registration.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Documentazione generale: Registrazione Odontoiatra](../../../../../../docs/doctor-registration.md)
+>>>>>>> f589f9b2 (.)
 - [Documentazione Xot sulla proprietà $data](../../../xot/project_docs/filament/widgets/data-property.md)
 - [Documentazione generale: Registrazione Odontoiatra](../../../../../project_docs/doctor-registration.md)
 ---

@@ -6,31 +6,54 @@ return [
     'name' => 'Teams',
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome del team',
             'helper_text' => 'Nome identificativo del team',
             'description' => 'Il nome che identifica questo team',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'personal_team' => [
             'label' => 'Team Personale',
             'helper_text' => 'Indica se questo è un team personale',
             'description' => 'Un team personale è associato a un singolo utente',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'owner' => [
             'label' => 'Proprietario',
             'helper_text' => 'Utente proprietario del team',
             'description' => 'L\'utente che ha creato e gestisce questo team',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'helper_text' => 'Data di creazione del team',
             'description' => 'Data e ora in cui è stato creato il team',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'helper_text' => 'Data dell\'ultima modifica',
             'description' => 'Data e ora dell\'ultima modifica al team',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'actions' => [
@@ -76,6 +99,7 @@ return [
             'description' => 'Utente che ha creato questo team',
         ],
     ],
+<<<<<<< HEAD
 =======
         'name' => ['label' => 'Nome', 'placeholder' => 'Inserisci il nome del team', 'helper_text' => 'Nome identificativo del team', 'description' => 'Il nome che identifica questo team', 'tooltip' => ''],
         'personal_team' => ['label' => 'Team Personale', 'helper_text' => 'Indica se questo è un team personale', 'description' => 'Un team personale è associato a un singolo utente', 'tooltip' => ''],
@@ -107,11 +131,23 @@ return [
         'name' => 'Teams',
         'plural' => 'Teams',
         'group' => ['name' => 'General', 'description' => 'General Settings'],
+=======
+    'navigation' => [
+        'name' => 'Teams',
+        'plural' => 'Teams',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+>>>>>>> f589f9b2 (.)
         'label' => 'Teams',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
     'label' => 'Teams',
     'plural_label' => 'Teams (Plurale)',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

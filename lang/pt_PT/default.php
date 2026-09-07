@@ -103,6 +103,7 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'avatar' => 'Avatar',
         'email' => 'E-mail',
         'login' => 'Iniciar sessão',
@@ -122,6 +123,8 @@ return [
     'or' => 'Ou',
     'cancel' => 'Cancelar',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -226,5 +229,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

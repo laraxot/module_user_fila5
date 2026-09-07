@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
@@ -12,12 +13,15 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Forms\Components\DatePicker;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Support\Components\Component;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
@@ -28,6 +32,9 @@ use Illuminate\Support\Str;
 =======
 use Illuminate\Database\Eloquent\Builder;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> f589f9b2 (.)
 use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ListAuthenticationLogs;
 use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ViewAuthenticationLog;
 use Modules\User\Models\AuthenticationLog;
@@ -38,6 +45,7 @@ class AuthenticationLogResource extends XotBaseResource
 {
     protected static ?string $model = AuthenticationLog::class;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public static function table(Table $table): Table
     {
@@ -170,6 +178,8 @@ class AuthenticationLogResource extends XotBaseResource
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public static function getPages(): array
     {
         return [
@@ -179,6 +189,9 @@ class AuthenticationLogResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * @return array<string, Component>
      */
@@ -190,7 +203,10 @@ class AuthenticationLogResource extends XotBaseResource
                     Grid::make(2)
                         ->schema([
                             Select::make('authenticatable_type')
+<<<<<<< HEAD
                                 ->label('Authenticatable Type')
+=======
+>>>>>>> f589f9b2 (.)
                                 ->options([
                                     User::class => 'User',
                                     // Add other authenticatable types as needed
@@ -199,7 +215,10 @@ class AuthenticationLogResource extends XotBaseResource
                                 ->searchable(),
 
                             TextInput::make('authenticatable_id')
+<<<<<<< HEAD
                                 ->label('Authenticatable ID')
+=======
+>>>>>>> f589f9b2 (.)
                                 ->required()
                                 ->numeric(),
                         ]),
@@ -207,6 +226,7 @@ class AuthenticationLogResource extends XotBaseResource
                     Grid::make(2)
                         ->schema([
                             TextInput::make('ip_address')
+<<<<<<< HEAD
                                 ->label('IP Address')
                                 ->maxLength(45)
                                 ->placeholder('e.g., 192.168.1.1'),
@@ -215,11 +235,18 @@ class AuthenticationLogResource extends XotBaseResource
                                 ->label('User Agent')
                                 ->maxLength(500)
                                 ->placeholder('User agent string'),
+=======
+                                ->maxLength(45),
+
+                            TextInput::make('user_agent')
+                                ->maxLength(500),
+>>>>>>> f589f9b2 (.)
                         ]),
 
                     Grid::make(3)
                         ->schema([
                             Toggle::make('login_successful')
+<<<<<<< HEAD
                                 ->label('Login Successful')
                                 ->inline(false),
 
@@ -234,13 +261,26 @@ class AuthenticationLogResource extends XotBaseResource
 
                     Toggle::make('cleared_by_user')
                         ->label('Cleared by User')
+=======
+                                ->inline(false),
+
+                            TextInput::make('login_at'),
+
+                            TextInput::make('logout_at'),
+                        ]),
+
+                    Toggle::make('cleared_by_user')
+>>>>>>> f589f9b2 (.)
                         ->inline(false),
                 ]),
         ];
     }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['authenticatable']);

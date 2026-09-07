@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Validation\Rules\Password;
 
  Password::defaults(function () {
@@ -26,6 +27,8 @@ https://laracasts.com/discuss/channels/laravel/complex-password-rules-for-passwo
 
 https://njoguamos.me.ke/posts/create-and-test-a-custom-laravel-validation-rule !!!!
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: password
@@ -42,4 +45,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/password.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

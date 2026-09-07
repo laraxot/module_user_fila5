@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "name": "laraxot/module_user_fila3",
     "description": "user module for user management",
     "keywords": [
@@ -85,6 +86,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true
 =======
+=======
+>>>>>>> f589f9b2 (.)
   "name": "laraxot/module_user_fila5",
   "description": "User management module for the Laraxot ecosystem: authentication, roles, teams, tenants, and OAuth.",
   "keywords": [
@@ -181,5 +184,8 @@
   },
   "minimum-stability": "dev",
   "prefer-stable": true
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

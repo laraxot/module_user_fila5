@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "🏛️ PATTERN ESTENSIONE CLASSI VENDOR IN LARAXOT"
 type: pattern
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # 🏛️ PATTERN ESTENSIONE CLASSI VENDOR IN LARAXOT
 
 ## 📋 PRINCIPIO FONDAMENTALE
@@ -233,11 +239,17 @@ class CustomModel extends VendorModelAlias
 
 - [Spatie Permission Philosophy](spatie-permission-philosophy.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [BaseModel Philosophy](../Xot/docs/basemodel-philosophy.md)
 - [External Package Integration](../Xot/docs/external-packages.md)
 - [Class Responsibility Separation](../Xot/docs/class-responsibility.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [BaseModel Philosophy](../Xot/docs/basemodel-philosophy.md)
+- [External Package Integration](../Xot/docs/external-packages.md)
+- [Class Responsibility Separation](../Xot/docs/class-responsibility.md)
+>>>>>>> f589f9b2 (.)
 - [BaseModel Philosophy](../xot/docs/basemodel-philosophy.md)
 - [External Package Integration](../xot/docs/external-packages.md)
 - [Class Responsibility Separation](../xot/docs/class-responsibility.md)
@@ -245,8 +257,12 @@ class CustomModel extends VendorModelAlias
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Questa è la Via Laraxot: Rispettare la natura di ogni cosa, non forzarla in forme innaturali.*
 
 =======
 *Questa è la Via Laraxot: Rispettare la natura di ogni cosa, non forzarla in forme innaturali.*
 >>>>>>> 2024e2e7 (.)
+=======
+*Questa è la Via Laraxot: Rispettare la natura di ogni cosa, non forzarla in forme innaturali.*
+>>>>>>> f589f9b2 (.)

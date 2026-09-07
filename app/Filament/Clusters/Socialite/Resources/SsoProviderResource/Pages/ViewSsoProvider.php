@@ -5,17 +5,21 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewSsoProvider extends XotBaseViewRecord
 {
     protected static string $resource = SsoProviderResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -41,4 +45,6 @@ class ViewSsoProvider extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Terms Conditions"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 https://julienboyer.re/en/posts/how-to-add-terms-and-conditions-checkbox-on-filament-registration-page
 
 ### Versione HEAD
@@ -28,12 +34,17 @@ https://julienboyer.re/en/posts/how-to-add-terms-and-conditions-checkbox-on-fila
 
 ## Collegamenti tra versioni di terms_conditions.md
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [terms_conditions.md](../../../Gdpr/docs/terms_conditions.md)
 * [terms_conditions.md](../../../User/docs/terms_conditions.md)
 =======
 * [terms_conditions.md](../../../gdpr/docs/terms_conditions.md)
 * [terms_conditions.md](../../../user/docs/terms_conditions.md)
 >>>>>>> 2024e2e7 (.)
+=======
+* [terms_conditions.md](../../../gdpr/docs/terms_conditions.md)
+* [terms_conditions.md](../../../user/docs/terms_conditions.md)
+>>>>>>> f589f9b2 (.)
 
 
 ### Versione Incoming

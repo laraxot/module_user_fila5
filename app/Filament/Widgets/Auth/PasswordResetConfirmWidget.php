@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets\Auth;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Exception;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
@@ -13,6 +14,10 @@ use Filament\Notifications\Notification;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 >>>>>>> 2024e2e7 (.)
+=======
+use Filament\Notifications\Notification;
+use Filament\Schemas\Schema;
+>>>>>>> f589f9b2 (.)
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -20,6 +25,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -36,6 +42,8 @@ use Webmozart\Assert\Assert;
  */
 class PasswordResetConfirmWidget extends XotBaseWidget
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -50,7 +58,10 @@ use Webmozart\Assert\Assert;
  * @property Schema $form
  */
 class PasswordResetConfirmWidget extends XotBaseSchemaWidget
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 {
     public ?array $data = [];
 
@@ -59,14 +70,19 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
     public ?string $email = null;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public string $currentState = 'form'; // form, success, error, expired
 =======
     public string $currentState = 'form';
 >>>>>>> 2024e2e7 (.)
+=======
+    public string $currentState = 'form';
+>>>>>>> f589f9b2 (.)
 
     public ?string $errorMessage = null;
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @phpstan-ignore-next-line
      */
@@ -82,6 +98,8 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 
         // Pre-fill the form if email is provided
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * @return class-string<UserForm>
      */
     protected static function formClass(): string
@@ -100,12 +118,16 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
         $this->token = $token;
         $this->email = $email;
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         if ($this->email) {
             $this->form->fill(['email' => $this->email]);
         }
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Get the form schema for password reset confirmation.
@@ -153,6 +175,11 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
     {
         if ('form' !== $this->currentState) {
 >>>>>>> 2024e2e7 (.)
+=======
+    public function confirmPasswordReset(): void
+    {
+        if ('form' !== $this->currentState) {
+>>>>>>> f589f9b2 (.)
             return;
         }
 
@@ -168,6 +195,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
                     'password' => $data['password'],
                 ],
 <<<<<<< HEAD
+<<<<<<< HEAD
                 function (Authenticatable $user, string $password): void {
                     // Use setAttribute to set password safely
                     /** @var Model&Authenticatable $user */
@@ -175,6 +203,10 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
                 static function (Authenticatable $user, string $password): void {
                     /* @var Model&Authenticatable $user */
 >>>>>>> 2024e2e7 (.)
+=======
+                static function (Authenticatable $user, string $password): void {
+                    /* @var Model&Authenticatable $user */
+>>>>>>> f589f9b2 (.)
                     $user->setAttribute('password', Hash::make($password));
                     $user->setRememberToken(Str::random(60));
                     $user->save();
@@ -184,10 +216,14 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
             );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($response === Password::PASSWORD_RESET) {
 =======
             if (Password::PASSWORD_RESET === $response) {
 >>>>>>> 2024e2e7 (.)
+=======
+            if (Password::PASSWORD_RESET === $response) {
+>>>>>>> f589f9b2 (.)
                 $this->currentState = 'success';
 
                 Notification::make()
@@ -197,6 +233,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
                     ->duration(8000)
                     ->send();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
                 // Auto-login the user after successful password reset
                 // $user = \Modules\Xot\Datas\XotData::make()->getUserClass()::where('email', $data['email'])->first();
@@ -214,6 +251,8 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
             }
         } catch (Exception $e) {
 =======
+=======
+>>>>>>> f589f9b2 (.)
                 Assert::string($email = $data['email'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
                 /** @var UserContract $user */
                 $user = XotData::make()->getUserByEmail($email);
@@ -225,16 +264,22 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
                 $this->handleResetError(is_string($response) ? $response : 'passwords.generic_error');
             }
         } catch (\Exception $e) {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             $this->handleResetError('passwords.generic_error');
         }
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * Handle password reset errors.
      */
 =======
+=======
+>>>>>>> f589f9b2 (.)
     public function resetForm(): void
     {
         $this->currentState = 'form';
@@ -272,15 +317,21 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
         return 'error' === $this->currentState;
     }
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     protected function handleResetError(string $response): void
     {
         $this->currentState = 'error';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Map Laravel password reset responses to user-friendly messages
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $errorMessages = [
             Password::INVALID_TOKEN => __('user::auth.password_reset.errors.invalid_token'),
             Password::INVALID_USER => __('user::auth.password_reset.errors.invalid_user'),
@@ -296,6 +347,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
             ->duration(10000)
             ->send();
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -357,4 +409,6 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

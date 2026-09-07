@@ -8,6 +8,7 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 use Modules\User\Models\Role;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
@@ -72,6 +73,8 @@ class SuperAdminCommand extends Command
             ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
         ];
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
 use Webmozart\Assert\Assert;
@@ -157,6 +160,9 @@ class SuperAdminCommand extends Command
 
             return strtolower(trim($line));
         }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Missing Filament Resources Analysis - User Module
 
 ## 📋 Executive Summary
@@ -214,6 +215,8 @@ Motivo: nel modulo `User` molte classi in `Models/` sono basi (`Base*`), pivot/j
 
 This analysis provides a comprehensive roadmap for implementing missing Filament resources in the User module following DRY and KISS principles while maintaining consistency with the Laraxot architecture.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: missing-filament-resources
@@ -230,4 +233,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/missing-filament-resources-analysis.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

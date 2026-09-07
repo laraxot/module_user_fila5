@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Implementazione del Selettore di Lingua e Avatar Utente nell'Header"
 type: concept
@@ -20,11 +23,15 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Convenzioni Path](./path_conventions.md)
 - [Volt Folio Logout](./volt_folio_logout.md)
@@ -34,6 +41,11 @@ related:
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Convenzioni Path](./path-conventions-2.md)
+- [Volt Folio Logout](./volt-folio-logout-2.md)
+- [Implementazione Logout](./logout-blade-implementation-2.md)
+>>>>>>> f589f9b2 (.)
 
 ## Panoramica
 

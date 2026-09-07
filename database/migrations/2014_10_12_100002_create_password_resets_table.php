@@ -18,15 +18,20 @@ return new class extends XotBaseMigration {
             $table->string('email')->index();
             $table->string('token');
 <<<<<<< HEAD
+<<<<<<< HEAD
             // $table->timestamp('created_at')->nullable();
             $this->timestamps($table);
 =======
             // ponytail: timestamps solo in tableUpdate via updateTimestamps() (regola XotBaseMigration)
 >>>>>>> 2024e2e7 (.)
+=======
+            // ponytail: timestamps solo in tableUpdate via updateTimestamps() (regola XotBaseMigration)
+>>>>>>> f589f9b2 (.)
         });
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
             // if (! $this->hasColumn('email')) {
             //    $table->string('email')->nullable();
@@ -37,6 +42,8 @@ return new class extends XotBaseMigration {
             }
             if (!$this->hasColumn('id')) {
 =======
+=======
+>>>>>>> f589f9b2 (.)
             $this->updateTimestamps($table);
             // if (! $this->hasColumn('email'))
             //    $table->string('email')->nullable();
@@ -46,7 +53,10 @@ return new class extends XotBaseMigration {
                 $table->dropColumn('id');
             }
             if (! $this->hasColumn('id')) {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                 $table->id();
             }
         });

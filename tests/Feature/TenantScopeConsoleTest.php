@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Facades\Filament;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Foundation\Console\Kernel;
@@ -228,6 +229,8 @@ describe('InteractsWithTenant Trait Behavior', function (): void {
         expect($user->exists)->toBeTrue()
             ->and($user->name)->toBe('Creating Event Test');
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Feature;
 
 use Filament\Facades\Filament;
@@ -457,6 +460,9 @@ describe('Tenant Scope Console', function (): void {
 
         Assert::assertTrue($user->exists);
         Assert::assertSame('Creating Event Test', $user->name);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     });
 });

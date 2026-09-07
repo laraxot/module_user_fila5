@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "User Module Roadmap (2025 Q4)"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./03-later.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # User Module Roadmap (2025 Q4)
 
 ## Vision & Scope

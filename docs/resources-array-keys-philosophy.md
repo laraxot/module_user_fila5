@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Resources Array Keys Philosophy: String Keys Always
 
 ## Data: 2025-01-22
@@ -192,6 +193,8 @@ public static function getTableColumns(): array
 - [Critical Filament Rule: getInfolistSchema String Keys](./critical-filament-rule-getinfolistschema-string-keys.md)
 - [Filament Best Practices](./filament-best-practices.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: resources-array-keys-philosophy
@@ -208,4 +211,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/resources-array-keys-philosophy.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

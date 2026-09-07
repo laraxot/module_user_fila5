@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "User Module - UUID Trait Conflict Resolution"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # User Module - UUID Trait Conflict Resolution
 
 **Status**: Critical System Error Resolution
@@ -217,10 +223,14 @@ $token = $user->createToken('test');
 ### **Phase 3: System Verification (Next)**
 - [ ] Test LimeSurvey integration with UUIDs
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Verify Quaeris contact token generation
 =======
 - [ ] Verify ExternalProject contact token generation
 >>>>>>> 2024e2e7 (.)
+=======
+- [ ] Verify ExternalProject contact token generation
+>>>>>>> f589f9b2 (.)
 - [ ] Test all authentication flows
 - [ ] Performance testing
 
@@ -294,10 +304,14 @@ $token = $user->createToken('test');
 - [ ] API authentication works
 - [ ] LimeSurvey integration functional
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Quaeris survey workflows operational
 =======
 - [ ] ExternalProject survey workflows operational
 >>>>>>> 2024e2e7 (.)
+=======
+- [ ] ExternalProject survey workflows operational
+>>>>>>> f589f9b2 (.)
 
 ### **Philosophical Success** (Super Mucca)
 - [ ] Code is DRY (no duplicate UUID logic)

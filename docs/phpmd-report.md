@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Phpmd Report"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 Modules/User/app/Actions/GetCurrentDeviceAction.php:23                                         CyclomaticComplexity      The method execute() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
 Modules/User/app/Actions/GetCurrentDeviceAction.php:23                                         NPathComplexity           The method execute() has an NPath complexity of 320. The configured NPath complexity threshold is 200.
 Modules/User/app/Actions/GetCurrentDeviceAction.php:42                                         ShortVariable             Avoid variables with short names like $up. Configured minimum length is 3.

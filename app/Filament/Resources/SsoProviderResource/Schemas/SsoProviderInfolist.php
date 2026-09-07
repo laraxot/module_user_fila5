@@ -16,7 +16,11 @@ class SsoProviderInfolist extends XotBaseResourceInfolist
      *
      * Campi basati sul Model SsoProvider.php -> id, name, display_name, type, entity_id, client_id, redirect_url, metadata_url, scopes, is_active, settings
      */
+<<<<<<< HEAD
     public function getInfolistSchema(): array
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> f589f9b2 (.)
     {
         return [
             'id' => TextEntry::make('id'),

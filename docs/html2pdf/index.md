@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Html2Pdf - Panoramica e Installazione
 
 Questa sezione fornisce una panoramica generale della libreria Html2Pdf, le novità dell'ultima versione, le istruzioni per l'installazione e l'architettura di integrazione nel progetto.
@@ -100,6 +101,8 @@ enum PdfEngineEnum
 }
 ```
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: index
@@ -113,4 +116,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/index.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

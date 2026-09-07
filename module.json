@@ -7,12 +7,15 @@
     "providers": [
         "Modules\\User\\Providers\\UserServiceProvider",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "Modules\\User\\Providers\\Filament\\AdminPanelProvider"
     ],
     "migration": {
         "seeds": [
             "Modules\\User\\Database\\Seeders\\RolesSeeder"
 =======
+=======
+>>>>>>> f589f9b2 (.)
         "Modules\\User\\Providers\\Filament\\AdminPanelProvider",
         "Modules\\User\\Providers\\PassportServiceProvider",
         "Modules\\User\\Providers\\SocialiteServiceProvider"
@@ -20,7 +23,10 @@
     "migration": {
         "seeds": [
             "Modules\\User\\Database\\Seeders\\RoleSeeder"
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ]
     },
     "files": []

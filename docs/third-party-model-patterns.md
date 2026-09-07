@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "User Module - Third-Party Model Patterns"
 type: pattern
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # User Module - Third-Party Model Patterns
 
 ## Spatie Permission Package Integration
@@ -249,10 +255,15 @@ $this->tableCreate(function (Blueprint $table) {
 
 ### Laraxot Philosophy
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Third-Party Model Inheritance](../Xot/docs/third-party-model-inheritance-philosophy.md)
 - [Model Architecture](../Xot/docs/models/MODEL_ARCHITECTURE.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Third-Party Model Inheritance](../Xot/docs/third-party-model-inheritance-philosophy.md)
+- [Model Architecture](../Xot/docs/models/MODEL_ARCHITECTURE.md)
+>>>>>>> f589f9b2 (.)
 - [Third-Party Model Inheritance](../xot/docs/third-party-model-inheritance-philosophy.md)
 - [Model Architecture](../xot/docs/models/model_architecture.md)
 
@@ -261,7 +272,11 @@ $this->tableCreate(function (Blueprint $table) {
 **Integration Status**: ✅ Fully compatible with Spatie package architecture
 **Maintenance**: Low - leverages package maintenance
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Security**: High - benefits from package security updates
 =======
 **Security**: High - benefits from package security updates
 >>>>>>> 2024e2e7 (.)
+=======
+**Security**: High - benefits from package security updates
+>>>>>>> f589f9b2 (.)

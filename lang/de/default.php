@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'login' => [
         'username_or_email' => 'Benutzername oder E-Mail',
@@ -144,6 +147,7 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'email' => 'E-Mail',
         'login' => 'Einloggen',
         'name' => 'Benutzername',
@@ -164,6 +168,8 @@ return [
     'or' => 'Oder',
     'cancel' => 'Abbrechen',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'email' => [
             'label' => 'E-Mail',
             'tooltip' => '',
@@ -274,5 +280,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

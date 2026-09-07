@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -471,6 +472,8 @@ it('can handle user info', function () {
         'lang' => 'it',
     ])->exists())->toBeTrue();
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Database\QueryException;
@@ -873,5 +876,8 @@ describe('User Management Business Logic', function (): void {
             'lang' => 'it',
         ])->exists());
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Pages\Tenancy;
 
 use Filament\Forms\Components\TextInput;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
 use Filament\Pages\Tenancy\RegisterTenant;
 use Illuminate\Database\Eloquent\Model;
@@ -14,13 +15,18 @@ use Modules\Xot\Datas\XotData;
 
 class RegisterTeam extends RegisterTenant
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Pages\Tenancy\XotBaseRegisterTenant;
 
 class RegisterTeam extends XotBaseRegisterTenant
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 {
     public static function getLabel(): string
     {
@@ -28,11 +34,17 @@ class RegisterTeam extends XotBaseRegisterTenant
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /**
      * @return array<int, TextInput>
      */
 >>>>>>> 2024e2e7 (.)
+=======
+    /**
+     * @return array<int, TextInput>
+     */
+>>>>>>> f589f9b2 (.)
     public function getFormSchema(): array
     {
         return [

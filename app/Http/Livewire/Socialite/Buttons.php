@@ -22,6 +22,7 @@ class Buttons extends Component
 
         // If the providers configuration is not an array, initialize it as an empty array.
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!is_array($providers)) {
             $providers = [];
         }
@@ -29,6 +30,8 @@ class Buttons extends Component
         // Return the view with the list of providers.
         return view('user::livewire.socialite.buttons', [
 =======
+=======
+>>>>>>> f589f9b2 (.)
         if (! is_array($providers)) {
             $providers = [];
         }
@@ -38,7 +41,10 @@ class Buttons extends Component
 
         // Return the view with the list of providers.
         return view($viewName, [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'providers' => $providers,
         ]);
     }

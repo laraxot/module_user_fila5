@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Testing Rules Summary"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test
@@ -125,7 +131,10 @@ Ogni modulo e tema deve documentare:
 
 I file di documentazione vanno nelle cartelle `docs/` dentro ogni modulo/tema.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 # User Module Testing
 
 ## Overview
@@ -482,5 +491,9 @@ jobs:
 ---
 
 *User Module Testing - Ensuring reliable and secure user management functionality*
+<<<<<<< HEAD
 *Testing del Modulo User: DRY + KISS + SOLID + ROBUST + LARAXOT*
 >>>>>>> 2024e2e7 (.)
+=======
+*Testing del Modulo User: DRY + KISS + SOLID + ROBUST + LARAXOT*
+>>>>>>> f589f9b2 (.)

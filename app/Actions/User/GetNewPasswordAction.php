@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Actions\User;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
@@ -17,6 +18,11 @@ use Illuminate\Contracts\Hashing\Hasher;
 use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
 use Modules\Xot\Contracts\UserContract;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Contracts\Hashing\Hasher;
+use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
+use Modules\Xot\Contracts\UserContract;
+>>>>>>> f589f9b2 (.)
 use Spatie\QueueableAction\QueueableAction;
 
 class GetNewPasswordAction
@@ -25,6 +31,7 @@ class GetNewPasswordAction
 
     public function execute(UserContract $record): string
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         //$user = XotData::make()->getUserByEmail($record->email);
         $user = $record;
@@ -51,6 +58,8 @@ class GetNewPasswordAction
 
         return $password;
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $user = $record;
 
         return once(function () use ($user) {
@@ -65,6 +74,9 @@ class GetNewPasswordAction
 
             return $plainPassword;
         });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

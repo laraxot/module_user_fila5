@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Raccomandazioni di Ottimizzazione - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -295,17 +301,23 @@ php artisan user:benchmark  # Target: < 100ms
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Moduli Globale](../../../project_docs/modules_analysis_and_optimization.md)
 - [Linee Guida Riusabilità](../../../project_docs/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
 
 *Ultimo aggiornamento: gennaio 2025*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Analisi Moduli Globale](../../../../docs/project/modules_analysis_and_optimization.md)
 - [Linee Guida Riusabilità](../../../../docs/project/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -580,14 +592,20 @@ php artisan user:benchmark  # Target: < 100ms
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
 - [Linee Guida Riusabilità](../../../docs/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
 
 *Ultimo aggiornamento: gennaio 2025*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [Linee Guida Riusabilità](../../../../docs/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

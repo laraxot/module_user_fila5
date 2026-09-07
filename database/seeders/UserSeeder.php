@@ -8,9 +8,13 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Database\Factories\TeamFactory;
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\User\Database\Factories\TeamFactory;
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
@@ -35,10 +39,14 @@ class UserSeeder extends Seeder
 
         // Disabilita i controlli di foreign key (solo per MySQL)
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (DB::getDriverName() !== 'sqlite') {
 =======
         if ('sqlite' !== DB::getDriverName()) {
 >>>>>>> 2024e2e7 (.)
+=======
+        if ('sqlite' !== DB::getDriverName()) {
+>>>>>>> f589f9b2 (.)
             DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         }
 
@@ -50,10 +58,14 @@ class UserSeeder extends Seeder
         } finally {
             // Riabilita i controlli di foreign key (solo per MySQL)
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (DB::getDriverName() !== 'sqlite') {
 =======
             if ('sqlite' !== DB::getDriverName()) {
 >>>>>>> 2024e2e7 (.)
+=======
+            if ('sqlite' !== DB::getDriverName()) {
+>>>>>>> f589f9b2 (.)
                 DB::statement('SET FOREIGN_KEY_CHECKS=1;');
             }
         }
@@ -170,10 +182,14 @@ class UserSeeder extends Seeder
         ]);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->command->info('   ✓ Creati ' . count($systemPermissions) . ' permessi di sistema');
 =======
         $this->command->info('   ✓ Creati '.count($systemPermissions));
 >>>>>>> 2024e2e7 (.)
+=======
+        $this->command->info('   ✓ Creati '.count($systemPermissions));
+>>>>>>> f589f9b2 (.)
         $this->command->info('   ✓ Creati 4 ruoli di sistema (super-admin, system-admin, moderator, user)');
     }
 
@@ -184,6 +200,7 @@ class UserSeeder extends Seeder
     {
         $this->command->info('👥 Creazione team di sistema...');
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         // Team di amministrazione
         $adminTeam = Team::factory()->create([
@@ -218,6 +235,8 @@ class UserSeeder extends Seeder
         $this->command->info('   ✓ Creati 5 team di sistema');
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $adminTeam = $this->createTeam('Amministratori');
         $devTeam = $this->createTeam('Sviluppatori');
         $supportTeam = $this->createTeam('Supporto Clienti');
@@ -238,5 +257,8 @@ class UserSeeder extends Seeder
 
         return $team;
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

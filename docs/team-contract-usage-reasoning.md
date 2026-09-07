@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # TeamContract Usage Reasoning
 
 ## Overview
@@ -23,6 +24,8 @@ The shift to using `TeamContract` over `Team` in the `HasTeams` trait aligns wit
 
 *Last Updated: 16 May 2025*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: team-contract-usage-reasoning
@@ -39,4 +42,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/team-contract-usage-reasoning-2.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

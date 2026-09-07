@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Best Practices per Risorse Filament nel Modulo User
 
 Questo documento descrive le best practices da seguire quando si creano o modificano risorse Filament nel modulo User.
@@ -79,6 +80,8 @@ Method Resource::getFormSchema() should return array<string, Filament\Forms\Comp
 
 Seguendo queste best practices si assicura che il codice passi i controlli statici di PHPStan e sia più facile da mantenere. 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: filament-best-practices
@@ -95,4 +98,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/filament-best-practices.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

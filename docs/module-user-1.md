@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Modulo User
 
 ## Informazioni Generali
@@ -150,6 +151,8 @@ Le modifiche vengono tracciate nel repository GitHub.
 
 ---
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: module-user-1
@@ -166,4 +169,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/module-user-1.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

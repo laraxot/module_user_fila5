@@ -6,11 +6,16 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration {
 =======
 return new class extends XotBaseMigration
 {
 >>>>>>> 2024e2e7 (.)
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> f589f9b2 (.)
     /**
      * Run the migrations.
      */
@@ -37,10 +42,14 @@ return new class extends XotBaseMigration
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
             // if (! $this->hasColumn('email')) {
 =======
             // if (! $this->hasColumn('email'))
 >>>>>>> 2024e2e7 (.)
+=======
+            // if (! $this->hasColumn('email'))
+>>>>>>> f589f9b2 (.)
             //    $table->string('email')->nullable();
             // }
             $this->updateTimestamps($table);

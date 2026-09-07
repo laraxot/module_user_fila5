@@ -3,10 +3,13 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 return [
     'login' => 'Accedi',
 =======
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'login' => [
         'title' => 'Accedi al tuo account',
@@ -28,7 +31,10 @@ return [
         'no_account' => 'Non hai un account?',
         'create_account' => 'Crea account',
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'register' => 'Registrati',
     'logout' => 'Esci',
     'logout_success' => 'Logout effettuato con successo',
@@ -43,7 +49,10 @@ return [
     'already_registered' => 'Già registrato?',
     'not_registered' => 'Non sei registrato?',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -64,5 +73,8 @@ return [
         'context' => 'login_form.credentials',
         'placeholder' => '',
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Colli di Bottiglia - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./03-later.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Colli di Bottiglia - Modulo User
 
 ## 1. Autenticazione 2FA [70%]

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\DatabaseNotification;
@@ -18,6 +19,8 @@ use Modules\User\Database\Factories\ProfileFactory;
 use Modules\User\Models\Pivots\DeviceProfile;
 use Modules\User\Models\Pivots\ProfileTeam;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -27,12 +30,16 @@ use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 use Modules\User\Contracts\UserContract;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 use Spatie\Permission\Traits\HasRoles;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttributes;
 
@@ -83,6 +90,8 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property-read string|null $user_name
  * @method static ProfileFactory factory($count = null, $state = [])
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttributes;
 
@@ -132,7 +141,10 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @property UserContract|null                                         $user
  * @property string|null                                               $user_name
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @method static Builder<static>|Profile newModelQuery()
  * @method static Builder<static>|Profile newQuery()
  * @method static Builder<static>|Profile permission($permissions, $without = false)
@@ -142,8 +154,11 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @method static Builder<static>|Profile withoutPermission($permissions)
  * @method static Builder<static>|Profile withoutRole($roles, $guard = null)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @mixin IdeHelperProfile
 =======
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @property string|null          $user_id
  * @property Carbon|null          $created_at
@@ -257,12 +272,16 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait as HasSchemalessAttrib
  * @method static Builder<static>|Profile team($teams, bool $without = false)
  * @method static Builder<static>|Profile withoutTeam($teams)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 class Profile extends BaseProfile implements HasMedia
 {
     use HasRoles;
+<<<<<<< HEAD
 <<<<<<< HEAD
     use InteractsWithMedia;
     use HasSchemalessAttributes;
@@ -283,6 +302,8 @@ class Profile extends BaseProfile implements HasMedia
      */
     protected $table = 'profiles';
 =======
+=======
+>>>>>>> f589f9b2 (.)
     use HasSchemalessAttributes;
     use InteractsWithMedia;
 
@@ -347,5 +368,8 @@ class Profile extends BaseProfile implements HasMedia
             'url' => url('/profile/'.$this->user_name),
         ];
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

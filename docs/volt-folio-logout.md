@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
@@ -10,6 +11,8 @@
 ## Panoramica
 Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di SaluteOra.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Implementazione Corretta del Logout con Volt e Folio"
 type: concept
@@ -40,7 +43,10 @@ related:
 
 ## Panoramica
 Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di <nome progetto>.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ## Percorso Corretto
 Il file di logout deve essere posizionato in:
@@ -51,10 +57,14 @@ Themes/One/resources/views/pages/auth/logout.blade.php
 ## Approcci Raccomandati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto SaluteOra, si raccomandano i seguenti approcci per l'implementazione del logout.
 =======
 In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto <nome progetto>, si raccomandano i seguenti approcci per l'implementazione del logout.
 >>>>>>> 2024e2e7 (.)
+=======
+In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto <nome progetto>, si raccomandano i seguenti approcci per l'implementazione del logout.
+>>>>>>> f589f9b2 (.)
 
 ### 1. Approccio Folio con PHP puro (Raccomandato)
 
@@ -146,10 +156,14 @@ mount(function() {
         session()->regenerateToken();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
     // Reindirizza alla home page localizzata
     $this->redirect('/' . app()->getLocale());
 });
@@ -205,8 +219,11 @@ mount(function() {
 ## Implementazione con Componenti Filament
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per seguire le best practices di SaluteOra, utilizzare sempre i componenti Blade nativi di Filament:
 =======
+=======
+>>>>>>> f589f9b2 (.)
 Per seguire le best practices di <nome progetto>, utilizzare sempre i componenti Blade nativi di Filament:
 
 ```php
@@ -392,7 +409,10 @@ mount(function() {
 ## Implementazione con Componenti Filament
 
 Per seguire le best practices di <nome progetto>, utilizzare sempre i componenti Blade nativi di Filament:
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ```php
 <x-filament::button tag="a" href="{{ url('/' . $locale) }}" color="primary" class="w-full">

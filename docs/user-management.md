@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Gestione degli Utenti in <nome progetto>
 
 ## Panoramica
@@ -111,6 +112,8 @@ $request->validate([
 - [Gestione dei File Upload in Filament](/docs/filament-file-uploads.md)
 - [Migrazioni del Database](/docs/database-migrations.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: user-management
@@ -127,4 +130,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-management.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

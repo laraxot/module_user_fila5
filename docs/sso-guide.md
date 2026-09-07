@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🔑 SINGLE SIGN-ON (SSO) - GUIDA IMPLEMENTAZIONE
 
 **Versione**: 1.0  
@@ -728,6 +729,8 @@ class SsoTest extends TestCase
 **Status**: Pianificato Q1 2026  
 **Priority**: MEDIUM  
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: sso-guide
@@ -744,4 +747,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/sso-guide.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

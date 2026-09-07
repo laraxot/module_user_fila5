@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 use Illuminate\Support\Arr;
 use Illuminate\Console\Command;
@@ -173,6 +174,8 @@ describe('User Command Integration', function () {
     it('validates array operations', function () {
         // Test array operations used in the command
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Console\Command;
@@ -301,11 +304,15 @@ describe('User Command Integration', function (): void {
     });
 
     test('validates array operations', function (): void {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $testArray = ['key1' => 'value1', 'key2' => 'value2'];
 
         $mapped = [];
         foreach ($testArray as $key => $value) {
+<<<<<<< HEAD
 <<<<<<< HEAD
             $mapped[$key . '_suffix'] = $value . '_modified';
         }
@@ -384,6 +391,8 @@ describe('User Command Integration', function (): void {
             ->and(property_exists($testObject, 'nonExistentProperty'))
             ->toBeFalse();
 =======
+=======
+>>>>>>> f589f9b2 (.)
             $mapped[$key.'_suffix'] = $value.'_modified';
         }
         Assert::assertSame('value1_modified', $mapped['key1_suffix']);
@@ -442,6 +451,9 @@ describe('User Command Integration', function (): void {
         Assert::assertTrue(array_key_exists('testProperty', $objectData));
 
         Assert::assertFalse(array_key_exists('nonExistentProperty', $objectData));
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     });
 });

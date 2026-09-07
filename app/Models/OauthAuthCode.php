@@ -5,13 +5,17 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Carbon;
 use Laravel\Passport\AuthCode as PassportAuthCode;
 
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
  * Modules\User\Models\OauthAuthCode.
  *
@@ -33,6 +37,8 @@ use Laravel\Passport\AuthCode as PassportAuthCode;
  * @method static Builder|OauthAuthCode whereUserId($value)
  * @mixin IdeHelperOauthAuthCode
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property string           $id
  * @property string           $user_id    (DC2Type:guid)
  * @property string           $client_id
@@ -51,11 +57,15 @@ use Laravel\Passport\AuthCode as PassportAuthCode;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAuthCode whereScopes($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAuthCode whereUserId($value)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 class OauthAuthCode extends PassportAuthCode
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     /** @var string */
     protected $connection = 'user';
@@ -64,4 +74,7 @@ class OauthAuthCode extends PassportAuthCode
 =======
     protected $connection = 'user';
 >>>>>>> 2024e2e7 (.)
+=======
+    protected $connection = 'user';
+>>>>>>> f589f9b2 (.)
 }

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Resources Corrections Summary - 2025-01-22
 
 ## Obiettivo
@@ -157,6 +158,8 @@ use Filament\Tables\Actions\ViewAction; // Namespace sbagliato
 - [Filament Resources Philosophical Debate](./filament-resources-philosophical-debate.md)
 - [Filament Best Practices](./filament-best-practices.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: resources-corrections-summary-
@@ -173,4 +176,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/resources-corrections-summary-.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Coverage Full"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
    FAIL  Modules\User\tests\Feature\AuthComponentsTest
   ⨯ Auth Components Tests → auth components exist and work correctly     0.41s  
@@ -901,6 +907,7 @@ Failed asserting that 500 is identical to 200.
 The following exception occurred during the last request:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: /var/www/_bases/base_quaeris_fila4_mono/public_html/build/manifest.json in /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
 Stack trace:
 #0 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php(384): Illuminate\Foundation\Vite->manifest()
@@ -1258,6 +1265,8 @@ Stack trace:
 #105 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #106 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/bin/pest(119): include('...')
 =======
+=======
+>>>>>>> f589f9b2 (.)
 Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
 Stack trace:
 #0 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php(384): Illuminate\Foundation\Vite->manifest()
@@ -1614,16 +1623,23 @@ Stack trace:
 #104 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #105 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #106 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 #107 {main}
 
 ----------------------------------------------------------------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vite manifest not found at: /var/www/_bases/base_quaeris_fila4_mono/public_html/build/manifest.json (View: /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
 =======
 Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
 >>>>>>> 2024e2e7 (.)
+=======
+Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
+>>>>>>> f589f9b2 (.)
 
   at Modules/User/tests/Feature/AuthComponentsTest.php:31
      27▕     test('login page loads correctly', function (): void {
@@ -1643,6 +1659,7 @@ Failed asserting that 500 is identical to 200.
 
 The following exception occurred during the last request:
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Illuminate\Contracts\Container\BindingResolutionException: Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget in /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:198
 Stack trace:
@@ -1886,6 +1903,8 @@ Stack trace:
 #107 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #108 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/bin/pest(119): include('...')
 =======
+=======
+>>>>>>> f589f9b2 (.)
 Illuminate\Contracts\Container\BindingResolutionException: Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php:198
 Stack trace:
 #0 /var/www/_bases/base_app_fila5_mono/laravel/vendor/livewire/livewire/src/ImplicitlyBoundMethod.php(21): Illuminate\Container\BoundMethod::addDependencyForCallParameter()
@@ -2127,16 +2146,23 @@ Stack trace:
 #106 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #107 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #108 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 #109 {main}
 
 ----------------------------------------------------------------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget (View: /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User/resources/views/pages/auth/register.blade.php)
 =======
 Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/resources/views/pages/auth/register.blade.php)
 >>>>>>> 2024e2e7 (.)
+=======
+Unable to resolve dependency [Parameter #0 [ <required> string $type ]] in class Modules\User\Filament\Widgets\RegistrationWidget (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/resources/views/pages/auth/register.blade.php)
+>>>>>>> f589f9b2 (.)
 
   at Modules/User/tests/Feature/AuthComponentsTest.php:38
      34▕     test('register page loads correctly', function (): void {
@@ -2191,6 +2217,7 @@ Failed asserting that 500 is identical to 200.
 
 The following exception occurred during the last request:
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: /var/www/_bases/base_quaeris_fila4_mono/public_html/build/manifest.json in /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
 Stack trace:
@@ -2549,6 +2576,8 @@ Stack trace:
 #105 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #106 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/bin/pest(119): include('...')
 =======
+=======
+>>>>>>> f589f9b2 (.)
 Illuminate\Foundation\ViteManifestNotFoundException: Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php:946
 Stack trace:
 #0 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Foundation/Vite.php(384): Illuminate\Foundation\Vite->manifest()
@@ -2905,16 +2934,23 @@ Stack trace:
 #104 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #105 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #106 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 #107 {main}
 
 ----------------------------------------------------------------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vite manifest not found at: /var/www/_bases/base_quaeris_fila4_mono/public_html/build/manifest.json (View: /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
 =======
 Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
 >>>>>>> 2024e2e7 (.)
+=======
+Vite manifest not found at: /var/www/_bases/base_app_fila5_mono/public_html/build/manifest.json (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/UI/resources/views/components/layouts/main.blade.php)
+>>>>>>> f589f9b2 (.)
 
   at Modules/User/tests/Feature/AuthComponentsTest.php:69
      65▕         // Visit login page and ensure all reorganized components render
@@ -2934,6 +2970,7 @@ Failed asserting that 500 is identical to 200.
 
 The following exception occurred during the last request:
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 InvalidArgumentException: Database connection [quaeris] not configured. in /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php:221
 Stack trace:
@@ -3040,6 +3077,8 @@ Stack trace:
 #100 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #101 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/bin/pest(119): include('...')
 =======
+=======
+>>>>>>> f589f9b2 (.)
 InvalidArgumentException: Database connection [<nome progetto>] not configured. in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php:221
 Stack trace:
 #0 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(187): Illuminate\Database\DatabaseManager->configuration()
@@ -3144,16 +3183,23 @@ Stack trace:
 #99 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #100 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #101 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 #102 {main}
 
 ----------------------------------------------------------------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Database connection [quaeris] not configured.
 =======
 Database connection [ptvx] not configured.
 >>>>>>> 2024e2e7 (.)
+=======
+Database connection [ptvx] not configured.
+>>>>>>> f589f9b2 (.)
 
   at Modules/User/tests/Feature/AuthComponentsTest.php:80
      76▕         $user = User/* @phpstan-ignore-line */ ::factory()->create();
@@ -3173,6 +3219,7 @@ Failed asserting that 500 is identical to 200.
 
 The following exception occurred during the last request:
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 InvalidArgumentException: Database connection [quaeris] not configured. in /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php:221
 Stack trace:
@@ -3281,6 +3328,8 @@ Stack trace:
 #102 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #103 /var/www/_bases/base_quaeris_fila4_mono/laravel/vendor/bin/pest(119): include('...')
 =======
+=======
+>>>>>>> f589f9b2 (.)
 InvalidArgumentException: Database connection [<nome progetto>] not configured. in /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php:221
 Stack trace:
 #0 /var/www/_bases/base_app_fila5_mono/laravel/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(187): Illuminate\Database\DatabaseManager->configuration()
@@ -3387,16 +3436,23 @@ Stack trace:
 #101 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(184): Pest\Kernel->handle()
 #102 /var/www/_bases/base_app_fila5_mono/laravel/vendor/pestphp/pest/bin/pest(192): {closure}()
 #103 /var/www/_bases/base_app_fila5_mono/laravel/vendor/bin/pest(119): include('...')
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 #104 {main}
 
 ----------------------------------------------------------------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Database connection [quaeris] not configured.
 =======
 Database connection [ptvx] not configured.
 >>>>>>> 2024e2e7 (.)
+=======
+Database connection [ptvx] not configured.
+>>>>>>> f589f9b2 (.)
 
   at Modules/User/tests/Feature/AuthComponentsTest.php:92
      88▕ 
@@ -3411,10 +3467,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\Au…  UniqueConstraintViolationException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'edit posts-web' for key 'permissions.permissions_name_guard_name_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `permissions` (`name`, `guard_name`, `updated_at`, `created_at`) values (edit posts, web, [DATE] 17:58:02, [DATE] 17:58:02))
 =======
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'edit posts-web' for key 'permissions.permissions_name_guard_name_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `permissions` (`name`, `guard_name`, `updated_at`, `created_at`) values (edit posts, web, [DATE] 17:58:02, [DATE] 17:58:02))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'edit posts-web' for key 'permissions.permissions_name_guard_name_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `permissions` (`name`, `guard_name`, `updated_at`, `created_at`) values (edit posts, web, [DATE] 17:58:02, [DATE] 17:58:02))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:53
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
@@ -3433,10 +3493,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\Au…  UniqueConstraintViolationException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'edit posts-web' for key 'permissions.permissions_name_guard_name_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `permissions` (`name`, `guard_name`, `updated_at`, `created_at`) values (edit posts, web, [DATE] 17:58:03, [DATE] 17:58:03))
 =======
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'edit posts-web' for key 'permissions.permissions_name_guard_name_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `permissions` (`name`, `guard_name`, `updated_at`, `created_at`) values (edit posts, web, [DATE] 17:58:03, [DATE] 17:58:03))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'edit posts-web' for key 'permissions.permissions_name_guard_name_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `permissions` (`name`, `guard_name`, `updated_at`, `created_at`) values (edit posts, web, [DATE] 17:58:03, [DATE] 17:58:03))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:53
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
@@ -3455,10 +3519,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\Au…  UniqueConstraintViolationException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'edit posts-web' for key 'permissions.permissions_name_guard_name_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `permissions` (`name`, `guard_name`, `updated_at`, `created_at`) values (edit posts, web, [DATE] 17:58:03, [DATE] 17:58:03))
 =======
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'edit posts-web' for key 'permissions.permissions_name_guard_name_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `permissions` (`name`, `guard_name`, `updated_at`, `created_at`) values (edit posts, web, [DATE] 17:58:03, [DATE] 17:58:03))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'edit posts-web' for key 'permissions.permissions_name_guard_name_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `permissions` (`name`, `guard_name`, `updated_at`, `created_at`) values (edit posts, web, [DATE] 17:58:03, [DATE] 17:58:03))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:53
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
@@ -3477,10 +3545,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\Au…  UniqueConstraintViolationException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'edit posts-web' for key 'permissions.permissions_name_guard_name_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `permissions` (`name`, `guard_name`, `updated_at`, `created_at`) values (edit posts, web, [DATE] 17:58:03, [DATE] 17:58:03))
 =======
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'edit posts-web' for key 'permissions.permissions_name_guard_name_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `permissions` (`name`, `guard_name`, `updated_at`, `created_at`) values (edit posts, web, [DATE] 17:58:03, [DATE] 17:58:03))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'edit posts-web' for key 'permissions.permissions_name_guard_name_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `permissions` (`name`, `guard_name`, `updated_at`, `created_at`) values (edit posts, web, [DATE] 17:58:03, [DATE] 17:58:03))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:53
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
@@ -3499,10 +3571,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\ChangeProfil…  InvalidArgumentException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   Database connection [quaeris] not configured.
 =======
   Database connection [ptvx] not configured.
 >>>>>>> 2024e2e7 (.)
+=======
+  Database connection [ptvx] not configured.
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php:221
     217▕ 
@@ -3522,10 +3598,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\ChangeProfil…  InvalidArgumentException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   Database connection [quaeris] not configured.
 =======
   Database connection [ptvx] not configured.
 >>>>>>> 2024e2e7 (.)
+=======
+  Database connection [ptvx] not configured.
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php:221
     217▕ 
@@ -3707,10 +3787,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\Fi…  UniqueConstraintViolationException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test4300@mail.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `type`, `id`, `updated_at`, `created_at`) values (1, Antonio, Russo, Giuseppe Bianchi, test4300@mail.com, [DATE] 17:58:18, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, UHHUcJpAfX, de, 0, [DATE] 17:58:18, master_admin, 019bcce4-b04c-7166-a8a4-a96175a7258d, [DATE] 17:58:18, [DATE] 17:58:18))
 =======
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test4300@mail.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `type`, `id`, `updated_at`, `created_at`) values (1, Antonio, Russo, Giuseppe Bianchi, test4300@mail.com, [DATE] 17:58:18, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, UHHUcJpAfX, de, 0, [DATE] 17:58:18, master_admin, 019bcce4-b04c-7166-a8a4-a96175a7258d, [DATE] 17:58:18, [DATE] 17:58:18))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test4300@mail.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `type`, `id`, `updated_at`, `created_at`) values (1, Antonio, Russo, Giuseppe Bianchi, test4300@mail.com, [DATE] 17:58:18, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, UHHUcJpAfX, de, 0, [DATE] 17:58:18, master_admin, 019bcce4-b04c-7166-a8a4-a96175a7258d, [DATE] 17:58:18, [DATE] 17:58:18))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:53
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
@@ -4429,10 +4513,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\PasswordDataLabelsTest…   ViewException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   Route [social.redirect] not defined. (View: /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User/resources/views/livewire/auth/login.blade.php) (View: /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User/resources/views/livewire/auth/login.blade.php)
 =======
   Route [social.redirect] not defined. (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/resources/views/livewire/auth/login.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/resources/views/livewire/auth/login.blade.php)
 >>>>>>> 2024e2e7 (.)
+=======
+  Route [social.redirect] not defined. (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/resources/views/livewire/auth/login.blade.php) (View: /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/resources/views/livewire/auth/login.blade.php)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:526
     522▕             ! is_null($url = call_user_func($this->missingNamedRouteResolver, $name, $parameters, $absolute))) {
@@ -4572,10 +4660,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\TeamManagementBusiness…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.teams' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: select exists(select * from `teams` where (`id` = 1583)) as `exists`)
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.teams' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `teams` where (`id` = 1583)) as `exists`)
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.teams' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `teams` where (`id` = 1583)) as `exists`)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:420
     416▕             // For select statements, we'll simply execute the query and return an array
@@ -4694,10 +4786,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\TenantScopeConsoleTest…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tenant_id' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `tenant_id`, `id`, `updated_at`, `created_at`) values (1, Giuseppe, Bianchi, Tenant 1 User, test3265@mail.com, [DATE] 17:58:49, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, 1PnJXVEEXb, it, 0, [DATE] 17:58:49, f155f975-d42e-380a-9585-db9a377cdf64, 019bcce5-2cb9-724b-aea3-38e8064d0b55, [DATE] 17:58:49, [DATE] 17:58:49))
 =======
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tenant_id' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `tenant_id`, `id`, `updated_at`, `created_at`) values (1, Giuseppe, Bianchi, Tenant 1 User, test3265@mail.com, [DATE] 17:58:49, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, 1PnJXVEEXb, it, 0, [DATE] 17:58:49, f155f975-d42e-380a-9585-db9a377cdf64, 019bcce5-2cb9-724b-aea3-38e8064d0b55, [DATE] 17:58:49, [DATE] 17:58:49))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tenant_id' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `tenant_id`, `id`, `updated_at`, `created_at`) values (1, Giuseppe, Bianchi, Tenant 1 User, test3265@mail.com, [DATE] 17:58:49, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, 1PnJXVEEXb, it, 0, [DATE] 17:58:49, f155f975-d42e-380a-9585-db9a377cdf64, 019bcce5-2cb9-724b-aea3-38e8064d0b55, [DATE] 17:58:49, [DATE] 17:58:49))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:47
      43▕             if ($this->pretending()) {
@@ -4716,10 +4812,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\TenantScopeConsoleTest…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tenant_id' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `tenant_id`, `id`, `updated_at`, `created_at`) values (1, Antonio, Verdi, Tenant 1 User Only, tenant1-only@example.com, [DATE] 17:58:50, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, Lf1zQzoOS9, it, 0, [DATE] 17:58:50, 1c1b4150-dbf4-3c1d-9501-94d513d1661e, 019bcce5-2f22-736d-92cd-e4bca2c7ae52, [DATE] 17:58:50, [DATE] 17:58:50))
 =======
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tenant_id' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `tenant_id`, `id`, `updated_at`, `created_at`) values (1, Antonio, Verdi, Tenant 1 User Only, tenant1-only@example.com, [DATE] 17:58:50, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, Lf1zQzoOS9, it, 0, [DATE] 17:58:50, 1c1b4150-dbf4-3c1d-9501-94d513d1661e, 019bcce5-2f22-736d-92cd-e4bca2c7ae52, [DATE] 17:58:50, [DATE] 17:58:50))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tenant_id' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `tenant_id`, `id`, `updated_at`, `created_at`) values (1, Antonio, Verdi, Tenant 1 User Only, tenant1-only@example.com, [DATE] 17:58:50, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, Lf1zQzoOS9, it, 0, [DATE] 17:58:50, 1c1b4150-dbf4-3c1d-9501-94d513d1661e, 019bcce5-2f22-736d-92cd-e4bca2c7ae52, [DATE] 17:58:50, [DATE] 17:58:50))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:47
      43▕             if ($this->pretending()) {
@@ -4755,10 +4855,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Feature\TenantScopeConsoleTest…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tenant_id' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `tenant_id`, `id`, `updated_at`, `created_at`) values (1, Marco, Ferrari, Antonio Russo, test9838@mail.com, [DATE] 17:58:51, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, SLhugy5yyz, de, 0, ?, a8354996-2df0-3272-9403-7ccec040e6c9, 019bcce5-341e-731a-8e7b-bffbb6d51790, [DATE] 17:58:51, [DATE] 17:58:51))
 =======
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tenant_id' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `tenant_id`, `id`, `updated_at`, `created_at`) values (1, Marco, Ferrari, Antonio Russo, test9838@mail.com, [DATE] 17:58:51, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, SLhugy5yyz, de, 0, ?, a8354996-2df0-3272-9403-7ccec040e6c9, 019bcce5-341e-731a-8e7b-bffbb6d51790, [DATE] 17:58:51, [DATE] 17:58:51))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tenant_id' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `tenant_id`, `id`, `updated_at`, `created_at`) values (1, Marco, Ferrari, Antonio Russo, test9838@mail.com, [DATE] 17:58:51, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, SLhugy5yyz, de, 0, ?, a8354996-2df0-3272-9403-7ccec040e6c9, 019bcce5-341e-731a-8e7b-bffbb6d51790, [DATE] 17:58:51, [DATE] 17:58:51))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:47
      43▕             if ($this->pretending()) {
@@ -6579,10 +6683,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\HasTe…  UniqueConstraintViolationException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Mario, Esposito, Test User, test@example.com, [DATE] 17:59:19, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, tHO8AKhFZ2, en, 0, [DATE] 17:59:19, 019bcce5-a145-7045-8605-8842a49f8843, [DATE] 17:59:19, [DATE] 17:59:19))
 =======
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Mario, Esposito, Test User, test@example.com, [DATE] 17:59:19, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, tHO8AKhFZ2, en, 0, [DATE] 17:59:19, 019bcce5-a145-7045-8605-8842a49f8843, [DATE] 17:59:19, [DATE] 17:59:19))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Mario, Esposito, Test User, test@example.com, [DATE] 17:59:19, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, tHO8AKhFZ2, en, 0, [DATE] 17:59:19, 019bcce5-a145-7045-8605-8842a49f8843, [DATE] 17:59:19, [DATE] 17:59:19))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:53
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
@@ -6601,10 +6709,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\HasTe…  UniqueConstraintViolationException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `current_team_id`, `id`, `updated_at`, `created_at`) values (1, Francesco, Verdi, Test User, test@example.com, [DATE] 17:59:20, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, sDIEheCJak, en, 0, [DATE] 17:59:20, ?, 019bcce5-a2eb-71b0-9f98-263293ad011a, [DATE] 17:59:20, [DATE] 17:59:20))
 =======
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `current_team_id`, `id`, `updated_at`, `created_at`) values (1, Francesco, Verdi, Test User, test@example.com, [DATE] 17:59:20, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, sDIEheCJak, en, 0, [DATE] 17:59:20, ?, 019bcce5-a2eb-71b0-9f98-263293ad011a, [DATE] 17:59:20, [DATE] 17:59:20))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `current_team_id`, `id`, `updated_at`, `created_at`) values (1, Francesco, Verdi, Test User, test@example.com, [DATE] 17:59:20, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, sDIEheCJak, en, 0, [DATE] 17:59:20, ?, 019bcce5-a2eb-71b0-9f98-263293ad011a, [DATE] 17:59:20, [DATE] 17:59:20))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:53
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
@@ -6623,10 +6735,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\HasTe…  UniqueConstraintViolationException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Marco, Esposito, Test User, test@example.com, [DATE] 17:59:20, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, lK9eSR9rRi, en, 0, [DATE] 17:59:20, 019bcce5-a3e9-70f8-a476-6b489a1d3b70, [DATE] 17:59:20, [DATE] 17:59:20))
 =======
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Marco, Esposito, Test User, test@example.com, [DATE] 17:59:20, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, lK9eSR9rRi, en, 0, [DATE] 17:59:20, 019bcce5-a3e9-70f8-a476-6b489a1d3b70, [DATE] 17:59:20, [DATE] 17:59:20))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Marco, Esposito, Test User, test@example.com, [DATE] 17:59:20, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, lK9eSR9rRi, en, 0, [DATE] 17:59:20, 019bcce5-a3e9-70f8-a476-6b489a1d3b70, [DATE] 17:59:20, [DATE] 17:59:20))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:53
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
@@ -6645,10 +6761,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\HasTe…  UniqueConstraintViolationException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Giuseppe, Esposito, Test User, test@example.com, [DATE] 17:59:20, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, 197iwHzcQ0, en, 0, ?, 019bcce5-a4d7-7282-a045-a3166c5d5b84, [DATE] 17:59:20, [DATE] 17:59:20))
 =======
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Giuseppe, Esposito, Test User, test@example.com, [DATE] 17:59:20, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, 197iwHzcQ0, en, 0, ?, 019bcce5-a4d7-7282-a045-a3166c5d5b84, [DATE] 17:59:20, [DATE] 17:59:20))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Giuseppe, Esposito, Test User, test@example.com, [DATE] 17:59:20, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, 197iwHzcQ0, en, 0, ?, 019bcce5-a4d7-7282-a045-a3166c5d5b84, [DATE] 17:59:20, [DATE] 17:59:20))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:53
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
@@ -6667,10 +6787,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\HasTe…  UniqueConstraintViolationException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Luigi, Verdi, Test User, test@example.com, [DATE] 17:59:20, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, eG0coFuldH, de, 0, [DATE] 17:59:20, 019bcce5-a5c1-71fd-bbff-b034a72026bf, [DATE] 17:59:20, [DATE] 17:59:20))
 =======
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Luigi, Verdi, Test User, test@example.com, [DATE] 17:59:20, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, eG0coFuldH, de, 0, [DATE] 17:59:20, 019bcce5-a5c1-71fd-bbff-b034a72026bf, [DATE] 17:59:20, [DATE] 17:59:20))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Luigi, Verdi, Test User, test@example.com, [DATE] 17:59:20, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, eG0coFuldH, de, 0, [DATE] 17:59:20, 019bcce5-a5c1-71fd-bbff-b034a72026bf, [DATE] 17:59:20, [DATE] 17:59:20))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:53
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
@@ -6689,10 +6813,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\HasTe…  UniqueConstraintViolationException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Mario, Verdi, Test User, test@example.com, [DATE] 17:59:21, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, EjRr2WlkUu, it, 0, ?, 019bcce5-a6be-717d-98f3-63faa77b28d9, [DATE] 17:59:21, [DATE] 17:59:21))
 =======
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Mario, Verdi, Test User, test@example.com, [DATE] 17:59:21, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, EjRr2WlkUu, it, 0, ?, 019bcce5-a6be-717d-98f3-63faa77b28d9, [DATE] 17:59:21, [DATE] 17:59:21))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Mario, Verdi, Test User, test@example.com, [DATE] 17:59:21, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, EjRr2WlkUu, it, 0, ?, 019bcce5-a6be-717d-98f3-63faa77b28d9, [DATE] 17:59:21, [DATE] 17:59:21))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:53
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
@@ -6834,10 +6962,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\HasTe…  UniqueConstraintViolationException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'user5628@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Giuseppe, Ferrari, Giuseppe Bianchi, user5628@example.com, [DATE] 17:59:25, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, 27dKGLooLd, de, 0, [DATE] 17:59:25, 019bcce5-b5e2-73cd-aacb-430670e5d517, [DATE] 17:59:25, [DATE] 17:59:25))
 =======
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'user5628@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Giuseppe, Ferrari, Giuseppe Bianchi, user5628@example.com, [DATE] 17:59:25, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, 27dKGLooLd, de, 0, [DATE] 17:59:25, 019bcce5-b5e2-73cd-aacb-430670e5d517, [DATE] 17:59:25, [DATE] 17:59:25))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'user5628@example.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Giuseppe, Ferrari, Giuseppe Bianchi, user5628@example.com, [DATE] 17:59:25, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, 27dKGLooLd, de, 0, [DATE] 17:59:25, 019bcce5-b5e2-73cd-aacb-430670e5d517, [DATE] 17:59:25, [DATE] 17:59:25))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:53
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
@@ -6873,10 +7005,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\HasTeamsTraitTest > it correct…  TypeError   
 <<<<<<< HEAD
+<<<<<<< HEAD
   Modules\User\Models\BaseUser::switchTeam(): Argument #1 ($team) must be of type Modules\User\Contracts\TeamContract, null given, called in /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User/tests/Unit/HasTeamsTraitTest.php on line 95
 =======
   Modules\User\Models\BaseUser::switchTeam(): Argument #1 ($team) must be of type Modules\User\Contracts\TeamContract, null given, called in /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/tests/Unit/HasTeamsTraitTest.php on line 95
 >>>>>>> 2024e2e7 (.)
+=======
+  Modules\User\Models\BaseUser::switchTeam(): Argument #1 ($team) must be of type Modules\User\Contracts\TeamContract, null given, called in /var/www/_bases/base_app_fila5_mono/laravel/Modules/User/tests/Unit/HasTeamsTraitTest.php on line 95
+>>>>>>> f589f9b2 (.)
 
   at Modules/User/app/Models/Traits/HasTeams.php:420
     416▕ 
@@ -6929,10 +7065,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\HasTe…  UniqueConstraintViolationException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test6586@mail.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Antonio, Bianchi, Luigi Verdi, test6586@mail.com, [DATE] 17:59:28, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, LZdItmpkhS, en, 0, [DATE] 17:59:28, 019bcce5-c2ed-7191-9238-df255da041e4, [DATE] 17:59:28, [DATE] 17:59:28))
 =======
   SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test6586@mail.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Antonio, Bianchi, Luigi Verdi, test6586@mail.com, [DATE] 17:59:28, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, LZdItmpkhS, en, 0, [DATE] 17:59:28, 019bcce5-c2ed-7191-9238-df255da041e4, [DATE] 17:59:28, [DATE] 17:59:28))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test6586@mail.com' for key 'users.users_email_unique' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `users` (`is_active`, `first_name`, `last_name`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `lang`, `is_otp`, `password_expires_at`, `id`, `updated_at`, `created_at`) values (1, Antonio, Bianchi, Luigi Verdi, test6586@mail.com, [DATE] 17:59:28, $2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi, LZdItmpkhS, en, 0, [DATE] 17:59:28, 019bcce5-c2ed-7191-9238-df255da041e4, [DATE] 17:59:28, [DATE] 17:59:28))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:53
      49▕             $this->bindValues($statement, $this->prepareBindings($bindings));
@@ -7021,10 +7161,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\DeviceTest > can c…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.devices' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: select exists(select * from `devices` where (`id` = 481 and `device` = iPhone and `platform` = iOS)) as `exists`)
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.devices' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `devices` where (`id` = 481 and `device` = iPhone and `platform` = iOS)) as `exists`)
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.devices' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `devices` where (`id` = 481 and `device` = iPhone and `platform` = iOS)) as `exists`)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:420
     416▕             // For select statements, we'll simply execute the query and return an array
@@ -7043,10 +7187,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\DeviceTest > can c…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.devices' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: select exists(select * from `devices` where (`id` = 482 and `uuid` = 550e8400-e29b-41d4-a716-446655440000 and `mobile_id` = mobile123 and `device` = iPhone 13 and `platform` = iOS and `browser` = Safari and `version` = 15.0 and `is_robot` = 0 and `is_desktop` = 0 and `is_mobile` = 1 and `is_tablet` = 0 and `is_phone` = 1)) as `exists`)
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.devices' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `devices` where (`id` = 482 and `uuid` = 550e8400-e29b-41d4-a716-446655440000 and `mobile_id` = mobile123 and `device` = iPhone 13 and `platform` = iOS and `browser` = Safari and `version` = 15.0 and `is_robot` = 0 and `is_desktop` = 0 and `is_mobile` = 1 and `is_tablet` = 0 and `is_phone` = 1)) as `exists`)
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.devices' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `devices` where (`id` = 482 and `uuid` = 550e8400-e29b-41d4-a716-446655440000 and `mobile_id` = mobile123 and `device` = iPhone 13 and `platform` = iOS and `browser` = Safari and `version` = 15.0 and `is_robot` = 0 and `is_desktop` = 0 and `is_mobile` = 1 and `is_tablet` = 0 and `is_phone` = 1)) as `exists`)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:420
     416▕             // For select statements, we'll simply execute the query and return an array
@@ -7065,10 +7213,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\DeviceTest > devic…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.devices' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: select exists(select * from `devices` where (`id` = 483) and `deleted_at` is not null) as `exists`)
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.devices' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `devices` where (`id` = 483) and `deleted_at` is not null) as `exists`)
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.devices' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `devices` where (`id` = 483) and `deleted_at` is not null) as `exists`)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:420
     416▕             // For select statements, we'll simply execute the query and return an array
@@ -7104,10 +7256,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\DeviceTest > can u…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.devices' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: select exists(select * from `devices` where (`id` = 515 and `device` = New Device)) as `exists`)
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.devices' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `devices` where (`id` = 515 and `device` = New Device)) as `exists`)
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.devices' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `devices` where (`id` = 515 and `device` = New Device)) as `exists`)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:420
     416▕             // For select statements, we'll simply execute the query and return an array
@@ -7126,10 +7282,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\DeviceTest > can h…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.devices' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: select exists(select * from `devices` where (`id` = 516 and `mobile_id` is null and `browser` is null and `version` is null and `robot` is null)) as `exists`)
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.devices' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `devices` where (`id` = 516 and `mobile_id` is null and `browser` is null and `version` is null and `robot` is null)) as `exists`)
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.devices' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `devices` where (`id` = 516 and `mobile_id` is null and `browser` is null and `version` is null and `robot` is null)) as `exists`)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:420
     416▕             // For select statements, we'll simply execute the query and return an array
@@ -7148,10 +7308,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\PermissionTest > c…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7170,10 +7334,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\PermissionTest > c…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7260,10 +7428,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\PermissionTest > c…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7282,10 +7454,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\PermissionTest > c…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7304,10 +7480,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\PermissionTest > c…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7326,10 +7506,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\PermissionTest > c…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7348,10 +7532,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\PermissionTest > c…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7370,10 +7558,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\PermissionTest > c…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7392,10 +7584,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\PermissionTest > c…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7414,10 +7610,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\PermissionTest > c…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7436,10 +7636,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\PermissionTest > p…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7458,10 +7662,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\PermissionTest > p…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7480,10 +7688,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\PermissionTest > p…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7502,10 +7714,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\PermissionTest > p…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7524,10 +7740,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\PermissionTest > p…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7546,10 +7766,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\ProfileTest > can…   QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.profiles' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: select exists(select * from `profiles` where (`id` = 019bcce6-083e-7111-8d71-69c9baaab179 and `first_name` = John and `last_name` = Doe and `user_name` = johndoe and `email` = john@example.com)) as `exists`)
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.profiles' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `profiles` where (`id` = 019bcce6-083e-7111-8d71-69c9baaab179 and `first_name` = John and `last_name` = Doe and `user_name` = johndoe and `email` = john@example.com)) as `exists`)
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.profiles' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `profiles` where (`id` = 019bcce6-083e-7111-8d71-69c9baaab179 and `first_name` = John and `last_name` = Doe and `user_name` = johndoe and `email` = john@example.com)) as `exists`)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:420
     416▕             // For select statements, we'll simply execute the query and return an array
@@ -7568,10 +7792,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\ProfileTest > can…   QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.profiles' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: select exists(select * from `profiles` where (`id` = 019bcce6-092e-717b-954e-153a94327246 and `first_name` = Jane and `last_name` = Smith and `user_name` = janesmith and `email` = jane@example.com and `phone` = +1234567890 and `bio` = Software Developer and `avatar` = avatar.jpg and `timezone` = UTC and `locale` = en and `status` = active)) as `exists`)
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.profiles' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `profiles` where (`id` = 019bcce6-092e-717b-954e-153a94327246 and `first_name` = Jane and `last_name` = Smith and `user_name` = janesmith and `email` = jane@example.com and `phone` = +1234567890 and `bio` = Software Developer and `avatar` = avatar.jpg and `timezone` = UTC and `locale` = en and `status` = active)) as `exists`)
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.profiles' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `profiles` where (`id` = 019bcce6-092e-717b-954e-153a94327246 and `first_name` = Jane and `last_name` = Smith and `user_name` = janesmith and `email` = jane@example.com and `phone` = +1234567890 and `bio` = Software Developer and `avatar` = avatar.jpg and `timezone` = UTC and `locale` = en and `status` = active)) as `exists`)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:420
     416▕             // For select statements, we'll simply execute the query and return an array
@@ -7590,10 +7818,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\ProfileTest > can…   QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.profiles' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: select exists(select * from `profiles` where (`id` = 019bcce6-15be-738e-9399-ca158d96a12b and `first_name` = New Name)) as `exists`)
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.profiles' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `profiles` where (`id` = 019bcce6-15be-738e-9399-ca158d96a12b and `first_name` = New Name)) as `exists`)
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.profiles' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `profiles` where (`id` = 019bcce6-15be-738e-9399-ca158d96a12b and `first_name` = New Name)) as `exists`)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:420
     416▕             // For select statements, we'll simply execute the query and return an array
@@ -7612,10 +7844,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\ProfileTest > can…   QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.profiles' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: select exists(select * from `profiles` where (`id` = 019bcce6-16cb-72c8-a28e-9f3dbc351c67 and `phone` is null and `bio` is null and `avatar` is null and `timezone` is null and `locale` is null)) as `exists`)
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.profiles' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `profiles` where (`id` = 019bcce6-16cb-72c8-a28e-9f3dbc351c67 and `phone` is null and `bio` is null and `avatar` is null and `timezone` is null and `locale` is null)) as `exists`)
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.profiles' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `profiles` where (`id` = 019bcce6-16cb-72c8-a28e-9f3dbc351c67 and `phone` is null and `bio` is null and `avatar` is null and `timezone` is null and `locale` is null)) as `exists`)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:420
     416▕             // For select statements, we'll simply execute the query and return an array
@@ -7634,10 +7870,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\RoleTest > can cre…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7656,10 +7896,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\RoleTest > can cre…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'uuid' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `roles` (`name`, `guard_name`, `team_id`, `uuid`, `updated_at`, `created_at`) values (Full Role, web, 1692, 550e8400-e29b-41d4-a716-446655440000, [DATE] 17:59:52, [DATE] 17:59:52))
 =======
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'uuid' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `roles` (`name`, `guard_name`, `team_id`, `uuid`, `updated_at`, `created_at`) values (Full Role, web, 1692, 550e8400-e29b-41d4-a716-446655440000, [DATE] 17:59:52, [DATE] 17:59:52))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S22]: Column not found: 1054 Unknown column 'uuid' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `roles` (`name`, `guard_name`, `team_id`, `uuid`, `updated_at`, `created_at`) values (Full Role, web, 1692, 550e8400-e29b-41d4-a716-446655440000, [DATE] 17:59:52, [DATE] 17:59:52))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:47
      43▕             if ($this->pretending()) {
@@ -7712,10 +7956,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\RoleTest > can fin…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7734,10 +7982,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\RoleTest > can fin…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7756,10 +8008,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\RoleTest > can fin…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7778,10 +8034,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\RoleTest > can fin…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'uuid' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `roles` (`name`, `guard_name`, `uuid`, `updated_at`, `created_at`) values (contributor, web, 550e8400-e29b-41d4-a716-446655440000, [DATE] 17:59:54, [DATE] 17:59:54))
 =======
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'uuid' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `roles` (`name`, `guard_name`, `uuid`, `updated_at`, `created_at`) values (contributor, web, 550e8400-e29b-41d4-a716-446655440000, [DATE] 17:59:54, [DATE] 17:59:54))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S22]: Column not found: 1054 Unknown column 'uuid' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `roles` (`name`, `guard_name`, `uuid`, `updated_at`, `created_at`) values (contributor, web, 550e8400-e29b-41d4-a716-446655440000, [DATE] 17:59:54, [DATE] 17:59:54))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:47
      43▕             if ($this->pretending()) {
@@ -7800,10 +8060,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\RoleTest > can fin…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7822,10 +8086,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\RoleTest > can upd…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7844,10 +8112,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\RoleTest > can han…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'uuid' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `roles` (`name`, `guard_name`, `team_id`, `uuid`, `updated_at`, `created_at`) values (Test Role, web, ?, ?, [DATE] 17:59:55, [DATE] 17:59:55))
 =======
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'uuid' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `roles` (`name`, `guard_name`, `team_id`, `uuid`, `updated_at`, `created_at`) values (Test Role, web, ?, ?, [DATE] 17:59:55, [DATE] 17:59:55))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S22]: Column not found: 1054 Unknown column 'uuid' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `roles` (`name`, `guard_name`, `team_id`, `uuid`, `updated_at`, `created_at`) values (Test Role, web, ?, ?, [DATE] 17:59:55, [DATE] 17:59:55))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:47
      43▕             if ($this->pretending()) {
@@ -7866,10 +8138,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\RoleTest > can fin…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7888,10 +8164,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\RoleTest > role ha…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7910,10 +8190,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\RoleTest > role ha…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7932,10 +8216,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\RoleTest > role ha…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7954,10 +8242,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\RoleTest > role ca…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -7976,10 +8268,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\RoleTest > role ca…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8047,10 +8343,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\TenantTest > it ca…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.tenants' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: select exists(select * from `tenants` where (`id` = 077820da-868e-3a65-92ce-2a372f370d46 and `name` = Test Tenant)) as `exists`)
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.tenants' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `tenants` where (`id` = 077820da-868e-3a65-92ce-2a372f370d46 and `name` = Test Tenant)) as `exists`)
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.tenants' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `tenants` where (`id` = 077820da-868e-3a65-92ce-2a372f370d46 and `name` = Test Tenant)) as `exists`)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:420
     416▕             // For select statements, we'll simply execute the query and return an array
@@ -8069,10 +8369,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\TenantTest > it ca…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'settings' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `tenants` (`id`, `name`, `domain`, `database`, `is_active`, `slug`, `settings`, `trial_ends_at`, `updated_at`, `created_at`) values (e636089a-9a19-38b2-b3e9-6d316cb60920, Full Tenant, fulltenant.com, fulltenant_db, 1, full-tenant, ?, [DATE] 18:00:00, [DATE] 18:00:00, [DATE] 18:00:00))
 =======
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'settings' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `tenants` (`id`, `name`, `domain`, `database`, `is_active`, `slug`, `settings`, `trial_ends_at`, `updated_at`, `created_at`) values (e636089a-9a19-38b2-b3e9-6d316cb60920, Full Tenant, fulltenant.com, fulltenant_db, 1, full-tenant, ?, [DATE] 18:00:00, [DATE] 18:00:00, [DATE] 18:00:00))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S22]: Column not found: 1054 Unknown column 'settings' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `tenants` (`id`, `name`, `domain`, `database`, `is_active`, `slug`, `settings`, `trial_ends_at`, `updated_at`, `created_at`) values (e636089a-9a19-38b2-b3e9-6d316cb60920, Full Tenant, fulltenant.com, fulltenant_db, 1, full-tenant, ?, [DATE] 18:00:00, [DATE] 18:00:00, [DATE] 18:00:00))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:47
      43▕             if ($this->pretending()) {
@@ -8091,10 +8395,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\TenantTest > it te…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_user_test.media' doesn't exist (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: select * from `media` where `media`.`model_type` = Modules\User\Models\Tenant and `media`.`model_id` = 644ffd11-3103-39a5-ad70-59b9f890c869 and `media`.`model_id` is not null)
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_user_test.media' doesn't exist (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: select * from `media` where `media`.`model_type` = Modules\User\Models\Tenant and `media`.`model_id` = 644ffd11-3103-39a5-ad70-59b9f890c869 and `media`.`model_id` is not null)
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_user_test.media' doesn't exist (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: select * from `media` where `media`.`model_type` = Modules\User\Models\Tenant and `media`.`model_id` = 644ffd11-3103-39a5-ad70-59b9f890c869 and `media`.`model_id` is not null)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:483
     479▕             // First we will create a statement for the query. Then, we will set the fetch
@@ -8244,10 +8552,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\TenantTest > it ca…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.tenants' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: select exists(select * from `tenants` where (`id` = f26f2687-0d18-3e07-bdeb-67be1941b6fd and `name` = New Name)) as `exists`)
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.tenants' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `tenants` where (`id` = f26f2687-0d18-3e07-bdeb-67be1941b6fd and `name` = New Name)) as `exists`)
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.tenants' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `tenants` where (`id` = f26f2687-0d18-3e07-bdeb-67be1941b6fd and `name` = New Name)) as `exists`)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:420
     416▕             // For select statements, we'll simply execute the query and return an array
@@ -8266,10 +8578,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\TenantTest > it ca…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.tenants' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: select exists(select * from `tenants` where (`id` = 1405478d-d29f-3e98-8a34-9c24629bcc94 and `slug` is null and `domain` is null and `database` is null)) as `exists`)
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.tenants' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `tenants` where (`id` = 1405478d-d29f-3e98-8a34-9c24629bcc94 and `slug` is null and `domain` is null and `database` is null)) as `exists`)
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.tenants' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: select exists(select * from `tenants` where (`id` = 1405478d-d29f-3e98-8a34-9c24629bcc94 and `slug` is null and `domain` is null and `database` is null)) as `exists`)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:420
     416▕             // For select statements, we'll simply execute the query and return an array
@@ -8305,10 +8621,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\TenantTest > it ca…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'trial_ends_at' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `tenants` (`id`, `name`, `domain`, `database`, `is_active`, `trial_ends_at`, `slug`, `updated_at`, `created_at`) values (a1c99ef4-046d-3122-b725-fed77e663d53, Vitali SPA, longo.it, in, 1, [DATE] 18:00:04, vitali-spa, [DATE] 18:00:04, [DATE] 18:00:04))
 =======
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'trial_ends_at' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `tenants` (`id`, `name`, `domain`, `database`, `is_active`, `trial_ends_at`, `slug`, `updated_at`, `created_at`) values (a1c99ef4-046d-3122-b725-fed77e663d53, Vitali SPA, longo.it, in, 1, [DATE] 18:00:04, vitali-spa, [DATE] 18:00:04, [DATE] 18:00:04))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S22]: Column not found: 1054 Unknown column 'trial_ends_at' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `tenants` (`id`, `name`, `domain`, `database`, `is_active`, `trial_ends_at`, `slug`, `updated_at`, `created_at`) values (a1c99ef4-046d-3122-b725-fed77e663d53, Vitali SPA, longo.it, in, 1, [DATE] 18:00:04, vitali-spa, [DATE] 18:00:04, [DATE] 18:00:04))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:47
      43▕             if ($this->pretending()) {
@@ -8327,10 +8647,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\Models\TenantTest > it ca…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'settings' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: insert into `tenants` (`id`, `name`, `domain`, `database`, `is_active`, `settings`, `slug`, `updated_at`, `created_at`) values (ff4d2720-9c20-3347-bb1e-ec2d28f97bb1, Fabbri, Amato e Romano Group, neri.net, atque, 0, ?, fabbri-amato-e-romano-group, [DATE] 18:00:04, [DATE] 18:00:04))
 =======
   SQLSTATE[42S22]: Column not found: 1054 Unknown column 'settings' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `tenants` (`id`, `name`, `domain`, `database`, `is_active`, `settings`, `slug`, `updated_at`, `created_at`) values (ff4d2720-9c20-3347-bb1e-ec2d28f97bb1, Fabbri, Amato e Romano Group, neri.net, atque, 0, ?, fabbri-amato-e-romano-group, [DATE] 18:00:04, [DATE] 18:00:04))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S22]: Column not found: 1054 Unknown column 'settings' in 'field list' (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: insert into `tenants` (`id`, `name`, `domain`, `database`, `is_active`, `settings`, `slug`, `updated_at`, `created_at`) values (ff4d2720-9c20-3347-bb1e-ec2d28f97bb1, Fabbri, Amato e Romano Group, neri.net, atque, 0, ?, fabbri-amato-e-romano-group, [DATE] 18:00:04, [DATE] 18:00:04))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:47
      43▕             if ($this->pretending()) {
@@ -8558,10 +8882,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8580,10 +8908,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8602,10 +8934,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8624,10 +8960,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8646,10 +8986,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8668,10 +9012,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8690,10 +9038,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8712,10 +9064,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8734,10 +9090,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8756,10 +9116,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8778,10 +9142,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8800,10 +9168,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8822,10 +9194,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8844,10 +9220,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8866,10 +9246,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8888,10 +9272,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8910,10 +9298,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8932,10 +9324,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8954,10 +9350,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8976,10 +9376,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -8998,10 +9402,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\PermissionTest > permissi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9020,10 +9428,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role can be cr…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9042,10 +9454,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role has corre…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9064,10 +9480,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role has corre…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9086,10 +9506,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role has corre…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9108,10 +9532,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role can be up…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9130,10 +9558,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role can be de…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9152,10 +9584,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role can have…   QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9174,10 +9610,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role can have…   QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9196,10 +9636,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role can revok…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9218,10 +9662,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role can be fo…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9240,10 +9688,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role can be fo…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9262,10 +9714,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role has times…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9284,10 +9740,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role can be cr…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9306,10 +9766,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role can be cr…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9328,10 +9792,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role can check…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9350,10 +9818,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role can check…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9372,10 +9844,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role can be fi…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9394,10 +9870,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\RoleTest > role handles n…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: quaeris_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_data_test.cache' doesn't exist (Connection: mysql, Host: 127.0.0.1, Port: 3306, Database: app_data_test, SQL: delete from `cache` where `key` in (laravel_cache_spatie.permission.cache, laravel_cache_illuminate:cache:flexible:created:spatie.permission.cache))
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:605
     601▕ 
@@ -9416,10 +9896,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\TenantTest > tenant has f…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_user_test.media' doesn't exist (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: select * from `media` where `media`.`model_id` in (ce551e05-712f-4234-a3c1-45acae098386) and `media`.`model_type` = Modules\User\Models\Tenant)
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_user_test.media' doesn't exist (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: select * from `media` where `media`.`model_id` in (ce551e05-712f-4234-a3c1-45acae098386) and `media`.`model_type` = Modules\User\Models\Tenant)
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_user_test.media' doesn't exist (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: select * from `media` where `media`.`model_id` in (ce551e05-712f-4234-a3c1-45acae098386) and `media`.`model_type` = Modules\User\Models\Tenant)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:420
     416▕             // For select statements, we'll simply execute the query and return an array
@@ -9439,10 +9923,14 @@ Database connection [ptvx] not configured.
   ────────────────────────────────────────────────────────────────────────────  
    FAILED  Modules\User\tests\Unit\TenantTest > tenant can b…  QueryException   
 <<<<<<< HEAD
+<<<<<<< HEAD
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quaeris_user_test.media' doesn't exist (Connection: user, Host: 127.0.0.1, Port: 3306, Database: quaeris_user_test, SQL: select * from `media` where `media`.`model_type` = Modules\User\Models\Tenant and `media`.`model_id` = 5f58b2a4-e769-4b49-a43d-22170079b6de and `media`.`model_id` is not null)
 =======
   SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_user_test.media' doesn't exist (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: select * from `media` where `media`.`model_type` = Modules\User\Models\Tenant and `media`.`model_id` = 5f58b2a4-e769-4b49-a43d-22170079b6de and `media`.`model_id` is not null)
 >>>>>>> 2024e2e7 (.)
+=======
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'app_user_test.media' doesn't exist (Connection: user, Host: 127.0.0.1, Port: 3306, Database: app_user_test, SQL: select * from `media` where `media`.`model_type` = Modules\User\Models\Tenant and `media`.`model_id` = 5f58b2a4-e769-4b49-a43d-22170079b6de and `media`.`model_id` is not null)
+>>>>>>> f589f9b2 (.)
 
   at vendor/laravel/framework/src/Illuminate/Database/Connection.php:483
     479▕             // First we will create a statement for the query. Then, we will set the fetch

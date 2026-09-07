@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Convenzioni Path nei Moduli Laravel
 
 ## Collegamenti correlati
@@ -290,6 +291,8 @@ namespace Modules\User\Http\Controllers;
 - Dimenticare di aggiornare la documentazione dopo lo spostamento
 - Creare migration duplicate in più moduli 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: path-conventions
@@ -306,4 +309,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/path-conventions.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

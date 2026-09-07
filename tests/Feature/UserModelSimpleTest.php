@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
@@ -45,6 +46,8 @@ test('user model can create basic record', function () {
     // Clean up
     $user->delete();
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Feature;
 
 use Modules\User\Models\User;
@@ -81,5 +84,8 @@ describe('User Model Simple', function (): void {
 
         Assert::assertInstanceOf(User::class, $user);
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

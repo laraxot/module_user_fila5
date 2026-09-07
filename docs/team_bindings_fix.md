@@ -166,10 +166,14 @@ $this->assertTrue($user->belongsToTeam($team));
 - [TeamInvitation Model](../app/Models/TeamInvitation.php)
 - [UserServiceProvider](../app/Providers/UserServiceProvider.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Critical Errors Documentation](../../saluteora/docs/critical-errors-resolved.md)
 =======
 - [Critical Errors Documentation](../../SaluteOra/docs/critical-errors-resolved.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Critical Errors Documentation](../../SaluteOra/docs/critical-errors-resolved.md)
+>>>>>>> f589f9b2 (.)
 
 ---
 

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Forms\Components;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Modules\User\Models\Role;
 
@@ -27,6 +28,8 @@ class SingleRoleSelect extends Select
     // */
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
 
@@ -49,11 +52,15 @@ class SingleRoleSelect extends XotBaseSelect
             ->placeholder('Select a role');
     }
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public function getOptionValueProperty(): string
     {
         return $this->optionValueProperty;
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /*
@@ -68,4 +75,6 @@ class SingleRoleSelect extends XotBaseSelect
      */
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

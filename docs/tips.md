@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # tips
 
 <!-- Contenuto migrato da _docs/tips.txt -->
 
 https://medium.com/@prevailexcellent/deep-dive-into-eloquent-40-rarely-used-eloquent-orm-methods-every-laravel-developer-must-know-9c75b58f456b
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: tips
@@ -21,4 +24,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/tips.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

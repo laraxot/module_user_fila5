@@ -6,6 +6,7 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
@@ -14,28 +15,38 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
  * Factory per il modello Team del modulo User.
  *
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Str;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 
 /**
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @extends Factory<Team>
  */
 class TeamFactory extends Factory
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Il nome del modello corrispondente alla factory.
 =======
      * The name of the factory's corresponding model.
 >>>>>>> 2024e2e7 (.)
+=======
+     * The name of the factory's corresponding model.
+>>>>>>> f589f9b2 (.)
      *
      * @var class-string<Team>
      */
     protected $model = Team::class;
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Definisce lo stato di default del modello.
      *
@@ -44,10 +55,16 @@ class TeamFactory extends Factory
      */
     /**
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return array<string, mixed>
+     */
+    /**
+>>>>>>> f589f9b2 (.)
      * @return array<string, mixed>
      */
     public function definition(): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         $teamTypes = [
             'Amministrazione',
@@ -108,6 +125,8 @@ class TeamFactory extends Factory
         ]);
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
         return [
             'name' => fake()->unique()->company(),
             'personal_team' => 0,
@@ -115,5 +134,8 @@ class TeamFactory extends Factory
             'uuid' => (string) Str::uuid(),
         ];
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

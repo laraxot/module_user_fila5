@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models\Policies;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\OauthClient;
 use Modules\Xot\Contracts\UserContract;
 
@@ -73,4 +74,8 @@ class OauthClientPolicy extends UserBasePolicy
 class OauthClientPolicy extends UserBasePolicy
 {
 >>>>>>> 2024e2e7 (.)
+=======
+class OauthClientPolicy extends UserBasePolicy
+{
+>>>>>>> f589f9b2 (.)
 }

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Risoluzione Conflitti Git - Modulo User ([DATE])
 
 ## Data
@@ -310,6 +311,8 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 
 ---
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: gits-resolution
@@ -326,4 +329,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/gits-resolution-06cb77.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

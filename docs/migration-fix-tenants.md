@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🔧 Migration Fix: create_tenants_table
 
 **File**: `database/migrations/2023_01_01_000008_create_tenants_table.php`
@@ -234,6 +235,8 @@ Fix is complete when:
 **Verification**: PHPStan pending (after apply)
 **Priority**: 🔴 CRITICAL - Filosofia violation!
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: migration-fix-tenants
@@ -250,4 +253,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-fix-tenants.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

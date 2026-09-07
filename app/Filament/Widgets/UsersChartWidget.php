@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\Contracts\HasActions;
 use Exception;
 use Filament\Actions\Action;
@@ -22,6 +23,8 @@ use Webmozart\Assert\Assert;
 
 class UsersChartWidget extends ChartWidget implements HasForms, HasActions
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Actions\Action;
 use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
@@ -35,12 +38,16 @@ use Modules\Xot\Filament\Widgets\XotBaseChartWidget;
 use Webmozart\Assert\Assert;
 
 class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForms
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 {
     use InteractsWithActions;
     use InteractsWithForms;
     // use InteractsWithPageFilters; // Temporaneamente commentato per evitare conflitti trait in Filament 4.x
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public string $chart_id = '';
 
@@ -52,6 +59,8 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
     {
         return 'Authentication Log';
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * @var array<string, mixed>|null
      */
@@ -66,7 +75,10 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
     public function getHeading(): ?string
     {
         return __('user::widgets.users_chart.heading');
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     /**
@@ -77,12 +89,17 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
         return Action::make('test')
             ->requiresConfirmation()
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->action(function (array $arguments) {
                 dd('Test action called', $arguments);
 =======
             ->action(function (array $arguments): void {
                 // Test action - no logging
 >>>>>>> 2024e2e7 (.)
+=======
+            ->action(function (array $arguments): void {
+                // Test action - no logging
+>>>>>>> f589f9b2 (.)
             });
     }
 
@@ -102,6 +119,7 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
 
         try {
 <<<<<<< HEAD
+<<<<<<< HEAD
             Assert::nullOrString($startDate = $this->pageFilters['startDate'] ?? null);
             Assert::nullOrString($endDate = $this->pageFilters['endDate'] ?? null);
             if ($endDate === null) {
@@ -109,6 +127,8 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
             }
             if ($startDate === null) {
 =======
+=======
+>>>>>>> f589f9b2 (.)
             // Type narrowing for PHPStan Level 10
             $pageFilters = isset($this->pageFilters) && is_array($this->pageFilters) ? $this->pageFilters : null;
 
@@ -121,7 +141,10 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
                 $endDate = Carbon::now()->format('Y-m-d H:i:s');
             }
             if (null === $startDate) {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                 $startDate = Carbon::now()->subMonth()->format('Y-m-d H:i:s');
             }
             Assert::notNull($startDate = Carbon::createFromFormat('Y-m-d H:i:s', $startDate));
@@ -132,10 +155,14 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
                 $startDate = $endDate->copy()->subDays(90);
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
         } catch (Exception $e) {
 =======
         } catch (\Exception $e) {
 >>>>>>> 2024e2e7 (.)
+=======
+        } catch (\Exception $e) {
+>>>>>>> f589f9b2 (.)
             return [];
         }
 
@@ -171,10 +198,14 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
             'datasets' => [
                 [
 <<<<<<< HEAD
+<<<<<<< HEAD
                     'label' => 'Number of logins executed',
 =======
                     'label' => __('user::widgets.users_chart.label'),
 >>>>>>> 2024e2e7 (.)
+=======
+                    'label' => __('user::widgets.users_chart.label'),
+>>>>>>> f589f9b2 (.)
                     'data' => $chartData,
                 ],
             ],

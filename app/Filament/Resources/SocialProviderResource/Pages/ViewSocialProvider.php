@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\SocialProviderResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Component;
 use Override;
@@ -55,4 +56,12 @@ class ViewSocialProvider extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\User\Filament\Resources\SocialProviderResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+
+class ViewSocialProvider extends XotBaseViewRecord
+{
+    protected static string $resource = SocialProviderResource::class;
+>>>>>>> f589f9b2 (.)
 }

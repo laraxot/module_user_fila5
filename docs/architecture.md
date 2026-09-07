@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Architectural Rules & Guidelines
 
 This module adheres to the **Laraxot Architecture** and **Super Cow Methodology**.
@@ -15,6 +16,8 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 3.  **XotBase**: Always extend `XotBase` classes, never Filament classes directly.
 4.  **Translations**: Use `LangServiceProvider` for automatic label resolution.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: architecture
@@ -31,4 +34,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/architecture-rules-Modules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

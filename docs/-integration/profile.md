@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "profile"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./phpstan.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # profile
 
 <!-- Contenuto migrato da _docs/profile.txt -->

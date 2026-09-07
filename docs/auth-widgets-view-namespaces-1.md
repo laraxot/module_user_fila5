@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Widget di Autenticazione: Namespace delle View"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Widget di Autenticazione: Namespace delle View
 
 ## ⚠️ **Regola Critica**
@@ -164,12 +170,17 @@ Per ogni nuovo widget di autenticazione:
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Root: Widget View Namespaces](../../../docs/frontend/widget-view-namespaces.md)
 - [Struttura Temi](../../../docs/tecnico/themes/theme-structure.md)
 =======
 - [Documentazione Root: Widget View Namespaces](../../../../docs/frontend/widget-view-namespaces.md)
 - [Struttura Temi](../../../../docs/tecnico/themes/theme-structure.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Documentazione Root: Widget View Namespaces](../../../../docs/frontend/widget-view-namespaces.md)
+- [Struttura Temi](../../../../docs/tecnico/themes/theme-structure.md)
+>>>>>>> f589f9b2 (.)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
 
 *Ultimo aggiornamento: Dicembre 2024*

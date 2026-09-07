@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -916,6 +917,8 @@ private function getPasswordLegacy(): string
 
 *Ultimo aggiornamento: 2025-01-27*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: console-commands
@@ -931,4 +934,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/console-commands-philosophy.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

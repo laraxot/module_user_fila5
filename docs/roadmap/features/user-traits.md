@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "User Traits Implementation"
 type: concept
@@ -19,7 +22,10 @@ related:
   - "./user-analytics.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # User Traits Implementation
 
 ## Overview
@@ -85,10 +91,14 @@ trait PasswordValidationRules
    - Test database operations
 ## Links
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Back to Roadmap](../../docs/roadmap.md)
 =======
 - [Back to Roadmap](../../../docs/roadmap.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Back to Roadmap](../../../docs/roadmap.md)
+>>>>>>> f589f9b2 (.)
 - [Back to Roadmap](../../project_docs/roadmap.md)
 - Related: [PHPStan Level 7 Compliance](./phpstan-level7-compliance.md)
 - Related: [Authentication Log Enhancement](./auth-log-enhancement.md)

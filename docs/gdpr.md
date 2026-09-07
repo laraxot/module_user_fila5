@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Laravel Cookies Consent Plugin - Make your Laravel app compliant with the EU GDPR cookie law
 https://github.com/scify/laravel-cookies-consent
 
@@ -68,6 +69,8 @@ https://github.com/the42coders/eu-cookie-consent
 
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: gdpr
@@ -84,4 +87,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/gdpr.txt
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

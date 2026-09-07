@@ -6,22 +6,29 @@ namespace Modules\User\Enums;
 
 use Filament\Support\Contracts\HasLabel;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 enum LanguageEnum: string implements HasLabel
 {
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Traits\EnumTrait;
 
 enum LanguageEnum: string implements HasLabel
 {
     use EnumTrait;
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     case ITALIAN = 'it';
     case ENGLISH = 'en';
     case FRENCH = 'fr';
     case GERMAN = 'de';
     case SPANISH = 'es';
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     public function getLabel(): string
@@ -36,4 +43,6 @@ enum LanguageEnum: string implements HasLabel
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

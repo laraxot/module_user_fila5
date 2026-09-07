@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Implementazione Corretta delle Pagine Auth
 
 ## Collegamenti correlati
@@ -10,6 +11,8 @@
 - [Volt Folio Logout](./volt_folio_logout.md)
 - [Volt Logout Action](./volt_logout_action.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Implementazione Corretta delle Pagine Auth"
 type: concept
@@ -40,7 +43,10 @@ related:
 - [Volt Errors](./volt-errors-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Volt Logout Action](./volt-logout-action-2.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ## Introduzione
 

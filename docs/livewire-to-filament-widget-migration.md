@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ERRORE ARCHITETTURALE CRITICO: Uso Diretto di Componenti Livewire nei Login-Card
 
 ## Problema Identificato
@@ -138,6 +139,8 @@ class LoginWidget extends XotBaseWidget
 **QUESTA È UNA REGOLA ASSOLUTA E INVIOLABILE**
 *Ultimo aggiornamento: agosto 2025*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: livewire-to-filament-widget-migration
@@ -154,4 +157,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/livewire-to-filament-widget-migration.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

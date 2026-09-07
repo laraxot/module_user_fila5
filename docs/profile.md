@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # profile
 
 <!-- Contenuto migrato da _docs/profile.txt -->
 
 https://learn.userfrosting.com/recipes/extending-the-user-model
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: profile
@@ -21,4 +24,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/profile.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

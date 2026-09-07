@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # UserFactory Integration - Modulo User e <nome progetto>
 
 ## Overview
@@ -357,6 +358,8 @@ public function test_bulk_sti_creation()
 **Maintainer**: Development Team
 **Review Status**: Ready for implementation
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: user-factory-integration-1
@@ -373,4 +376,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-factory-integration-1.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

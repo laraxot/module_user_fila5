@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Roadmap - User Module
 
 > **Date**: 2026-01-14
@@ -23,6 +24,8 @@ The **User** module is fully compliant with PHPStan Level 10. No errors were rep
 - Clean up legacy documentation files to reduce clutter.
 - Maintain 0 errors.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpstan-roadmap
@@ -39,4 +42,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-roadmap-Modules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

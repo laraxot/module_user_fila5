@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Git Conflict Resolution - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Git Conflict Resolution - Modulo User
 
 ## Data
@@ -49,6 +55,9 @@ related:
 - PHPStan blocca per seeder legacy; verrà affrontato in step successivi.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Ultimo aggiornamento: 2025-01-06
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Fix della Migration Roles - Allineamento con la Filosofia Laraxot
 
 ## Problema Identificato
@@ -44,6 +45,8 @@ La migration è stata modificata per:
 
 La migration ora rispetta pienamente la filosofia Laraxot integrandosi in modo sicuro ed efficace con il sistema di permessi Spatie esistente, estendendolo con funzionalità specifiche del business senza duplicare o sovrascrivere la logica esistente.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: roles-migration
@@ -60,4 +63,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/roles-migration-philosophy-fix.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

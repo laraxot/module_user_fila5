@@ -9,9 +9,12 @@ use Illuminate\Auth\Events\Login;
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Auth\Events\OtherDeviceLogout;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Listeners\FailedLoginListener;
 use Modules\User\Listeners\LoginListener;
 use Modules\User\Listeners\LogoutListener;
@@ -24,15 +27,21 @@ class EventServiceProvider extends XotBaseEventServiceProvider
 {
     public string $name = 'User';
 <<<<<<< HEAD
+<<<<<<< HEAD
     public string $nameLower = 'user';
     protected string $module_dir = __DIR__;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
     public string $nameLower = 'user';
 
     protected string $module_dir = __DIR__;
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     protected string $module_ns = __NAMESPACE__;
 
     /**
@@ -59,11 +68,17 @@ class EventServiceProvider extends XotBaseEventServiceProvider
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /**
      * @var array<int, class-string>
      */
 >>>>>>> 2024e2e7 (.)
+=======
+    /**
+     * @var array<int, class-string>
+     */
+>>>>>>> f589f9b2 (.)
     protected $subscribe = [
         // Aggiungi qui i subscriber specifici del modulo
     ];

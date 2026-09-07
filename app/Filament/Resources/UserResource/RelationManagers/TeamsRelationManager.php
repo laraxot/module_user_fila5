@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\AttachAction;
 use Filament\Actions\DetachAction;
 use Filament\Actions\DetachBulkAction;
@@ -43,6 +44,8 @@ class TeamsRelationManager extends RelationManager
                     $user = $livewire->getOwnerRecord();
                     $team_id = $record->getKey();
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Actions\Action;
 use Filament\Actions\AttachAction;
 use Filament\Actions\BulkAction;
@@ -119,11 +122,15 @@ class TeamsRelationManager extends XotBaseRelationManager
                         return;
                     }
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                     $user->update([
                         'current_team_id' => null,
                     ]);
                 }),
+<<<<<<< HEAD
 <<<<<<< HEAD
             ])
             ->toolbarActions([
@@ -138,6 +145,8 @@ class TeamsRelationManager extends XotBaseRelationManager
             TextColumn::make('personal_team')->sortable(),
             TextColumn::make('created_at')->dateTime()->sortable(),
 =======
+=======
+>>>>>>> f589f9b2 (.)
         ];
     }
 
@@ -149,7 +158,10 @@ class TeamsRelationManager extends XotBaseRelationManager
     {
         return [
             'detach' => DetachBulkAction::make(),
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ];
     }
 }

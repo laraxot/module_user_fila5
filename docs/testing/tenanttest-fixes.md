@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # TenantTest Fixes - Reasoning
 
 ## Problem Analysis
@@ -76,6 +77,8 @@ $this->assertTrue(method_exists($this->tenant, 'users'));
 
 All fixes follow DRY, KISS, SOLID principles and maintain test quality.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: tenanttest-fixes
@@ -88,4 +91,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/tenant-test-fixes.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

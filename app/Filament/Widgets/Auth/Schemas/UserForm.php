@@ -29,6 +29,7 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
  */
 class UserForm extends XotBaseResourceForm
 {
+<<<<<<< HEAD
 
 
  /**
@@ -53,6 +54,8 @@ class UserForm extends XotBaseResourceForm
                 ->extraInputAttributes(['class' => 'fo-auth-input']),
         ];
     }
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * FO auth login — SSoT campi per `LoginWidget`.
      *

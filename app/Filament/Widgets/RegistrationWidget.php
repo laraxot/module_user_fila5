@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Override;
 use Illuminate\Http\RedirectResponse;
 use Livewire\Features\SupportRedirects\Redirector;
@@ -54,6 +55,8 @@ class RegistrationWidget extends XotBaseWidget
         $this->resource = XotData::make()->getUserResourceClassByType($type);
         $this->model = $this->resource::getModel();
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Schemas\Components\Component;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
@@ -95,13 +98,17 @@ class RegistrationWidget extends XotBaseSchemaWidget
         Assert::subclassOf($modelClass, Model::class);
         $this->model = $modelClass;
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $this->action = Str::of($this->model)
             ->replace('\\Models\\', '\\Actions\\')
             ->append('\\RegisterAction')
             ->toString();
         $record = $this->getFormModel();
         $data = $this->getFormFill();
+<<<<<<< HEAD
 <<<<<<< HEAD
         $this->data = $data;
         $this->form->fill($data);
@@ -110,20 +117,29 @@ class RegistrationWidget extends XotBaseSchemaWidget
         $this->data = $data;
         $this->form->fill($this->data);
 >>>>>>> 2024e2e7 (.)
+=======
+
+        $this->data = $data;
+        $this->form->fill($this->data);
+>>>>>>> f589f9b2 (.)
         $this->form->model($record);
         $this->record = $record;
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public function getFormModel(): Model
     {
         $data = request()->all();
         $email = Arr::get($data, 'email');
         $token = Arr::get($data, 'token');
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         $user = $this->model::firstWhere('email', $email);
         if ($user === null) {
@@ -149,6 +165,8 @@ class RegistrationWidget extends XotBaseSchemaWidget
     {
         $data = parent::getFormFill();
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $user = is_string($email)
             ? $this->model::firstWhere('email', $email)
             : null;
@@ -188,30 +206,40 @@ class RegistrationWidget extends XotBaseSchemaWidget
     {
         /** @var array<string, mixed> $data */
         $data = SafeArrayCastAction::cast(parent::getFormFill());
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $data['type'] = $this->type;
 
         return $data;
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
     public function getFormSchema(): array
     {
         return $this->resource::getFormSchemaWidget();
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * @return array<int|string, Component>
      */
     public function getFormSchema(): array
     {
         return self::normalizeFormSchema($this->resource::getFormSchemaWidget());
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     /**
      * @see https://filamentphp.com/docs/3.x/forms/adding-a-form-to-a-livewire-component
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
     public function register(): RedirectResponse|Redirector
     {
@@ -232,6 +260,8 @@ class RegistrationWidget extends XotBaseSchemaWidget
         return redirect($route);
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
     // @override
     public function register(): RedirectResponse|Redirector
     {
@@ -275,5 +305,8 @@ class RegistrationWidget extends XotBaseSchemaWidget
 
         return $normalized;
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

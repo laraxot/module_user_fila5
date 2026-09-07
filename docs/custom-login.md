@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Implementazione Login Personalizzato"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 https://ajaxray.com/blog/lets-beautify-filament-3-login-page/
 
 https://www.codef.site/blog/laravel/how-to-customize-laravel-filament-login-page
@@ -37,10 +43,14 @@ https://v2.filamentphp.com/tricks/customizing-filament-breezy-registration-profi
 > - [Socialite Integration](socialite.txt) - Integrazione con provider social
 > - [Two Factor Authentication](two_factor.txt) - Autenticazione a due fattori
 <<<<<<< HEAD
+<<<<<<< HEAD
 > - [Filament Best Practices](FILAMENT_BEST_PRACTICES.md) - Best practices Filament
 =======
 > - [Filament Best Practices](filament_best_practices.md) - Best practices Filament
 >>>>>>> 2024e2e7 (.)
+=======
+> - [Filament Best Practices](filament_best_practices.md) - Best practices Filament
+>>>>>>> f589f9b2 (.)
 > - [User Profile Models](user_profile_models.md) - Modelli del profilo utente
 
 ## Implementazione con Filament
@@ -105,10 +115,14 @@ class LoginWidget extends XotBaseWidget
 
 - [Documentazione Filament](https://filamentphp.com/docs)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Filament](FILAMENT_BEST_PRACTICES.md)
 =======
 - [Best Practices Filament](filament_best_practices.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Best Practices Filament](filament_best_practices.md)
+>>>>>>> f589f9b2 (.)
 - [User Profile Models](user_profile_models.md)
 
 

@@ -8,11 +8,15 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 use Filament\Tables\Table; // Already there, but explicitly for boolean()
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages;
@@ -23,6 +27,10 @@ use Filament\Tables\Columns\TextColumn;
 // Already there, but explicitly for boolean()
 use Illuminate\Database\Eloquent\Builder;
 >>>>>>> 2024e2e7 (.)
+=======
+// Already there, but explicitly for boolean()
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> f589f9b2 (.)
 use Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages\ListOauthRefreshTokens;
 use Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages\ViewOauthRefreshToken;
 use Modules\User\Models\OauthRefreshToken;
@@ -45,6 +53,9 @@ class OauthRefreshTokenResource extends XotBaseResource
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
      * Get the form schema for the resource.
      *
      * @return array<string, Select|TextInput>
@@ -65,16 +76,22 @@ class OauthRefreshTokenResource extends XotBaseResource
     }
 
     /**
+<<<<<<< HEAD
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      * Extend table callback for the resource.
      *
      * @return array<string, mixed>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public static function extendTableCallback(): array
     {
         return [

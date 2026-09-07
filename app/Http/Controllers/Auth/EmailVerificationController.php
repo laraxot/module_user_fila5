@@ -10,6 +10,7 @@
  * successful, it marks the email as verified and dispatches a Verified event.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @param  string $id  the ID of the user to be verified
  * @param  string $hash  the hash of the user's email address
  * @return RedirectResponse a redirect response to the home page
@@ -17,6 +18,8 @@
  * @throws AuthorizationException if the verification fails
  */
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @param string $id   the ID of the user to be verified
  * @param string $hash the hash of the user's email address
  *
@@ -25,11 +28,15 @@
  * @return RedirectResponse a redirect response to the home page
  */
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 declare(strict_types=1);
 
 namespace Modules\User\Http\Controllers\Auth;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use InvalidArgumentException;
@@ -40,6 +47,11 @@ use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Auth\Events\Verified;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+>>>>>>> f589f9b2 (.)
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Modules\User\Http\Controllers\Controller;
@@ -49,6 +61,7 @@ class EmailVerificationController extends Controller
     public function __invoke(string $id, string $hash): RedirectResponse
     {
         $user = Auth::user();
+<<<<<<< HEAD
 <<<<<<< HEAD
         if ($user === null) {
             throw new AuthorizationException();
@@ -60,6 +73,8 @@ class EmailVerificationController extends Controller
 
         if (!hash_equals($hash, sha1($user->getEmailForVerification()))) {
 =======
+=======
+>>>>>>> f589f9b2 (.)
         if (null === $user) {
             throw new AuthorizationException();
         }
@@ -69,7 +84,10 @@ class EmailVerificationController extends Controller
         }
 
         if (! hash_equals($hash, sha1($user->getEmailForVerification()))) {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             throw new AuthorizationException();
         }
 
@@ -81,12 +99,17 @@ class EmailVerificationController extends Controller
 
         // Verificare che l'utente implementi l'interfaccia MustVerifyEmail
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!($user instanceof MustVerifyEmail)) {
             throw new InvalidArgumentException('L\'utente deve implementare l\'interfaccia MustVerifyEmail');
 =======
         if (! $user instanceof MustVerifyEmail) {
             throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia MustVerifyEmail');
 >>>>>>> 2024e2e7 (.)
+=======
+        if (! $user instanceof MustVerifyEmail) {
+            throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia MustVerifyEmail');
+>>>>>>> f589f9b2 (.)
         }
 
         event(new Verified($user));

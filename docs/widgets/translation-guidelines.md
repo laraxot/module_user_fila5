@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Widget Translation Guidelines"
 type: guide
@@ -16,7 +19,10 @@ related:
   - "./translationlines.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Widget Translation Guidelines
 
 ## Overview
@@ -112,12 +118,15 @@ return [
 ],
 ## Widget Implementation Rules
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Never Use Direct Labels
 // ❌ WRONG - Never use ->label() in widgets
 TextInput::make('name')->label('Name')
 // ✅ CORRECT - Let LangServiceProvider handle translations
 TextInput::make('name')
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ### Never Use ->label(), ->placeholder(), ->helperText()
 
 **Regola critica**: Mai usare `->label()`, `->placeholder()` o `->helperText()` nei componenti Filament. Il LangServiceProvider risolve automaticamente da `modulo::risorsa.fields.campo.*` (es. `user::login_widget.fields.email.label`).
@@ -128,7 +137,10 @@ TextInput::make('name')->label('Name')->placeholder('Enter name')
 // ✅ CORRECT - Let LangServiceProvider handle translations
 TextInput::make('name')
 ```
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ### Translation Key Usage
 // ✅ CORRECT - Use translation keys for options
 Select::make('lang')
@@ -178,10 +190,14 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 4. Document any breaking changes
 ## Related Documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Widget Structure](../widgets_structure.md)
 =======
 - [User Module Widget Structure](../widgets-structure-2.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [User Module Widget Structure](../widgets-structure-2.md)
+>>>>>>> f589f9b2 (.)
 - [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 - [Translation System Overview](../../xot/docs/translations.md)
 - [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)

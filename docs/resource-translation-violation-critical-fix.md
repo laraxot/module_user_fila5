@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CRITICAL VIOLATION: Hardcoded Labels in XotBaseResource Extensions
 
 **Data**: 2026-01-09
@@ -705,6 +706,8 @@ return [
 
 **Next**: Remove hardcoded methods and create proper translation files
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: resource-translation-violation-critical-fix
@@ -721,4 +724,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/resource-translation-violation-critical-fix.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

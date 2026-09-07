@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\DeviceResource\RelationManagers;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Override;
 use Filament\Forms\Components\TextInput;
@@ -12,11 +13,16 @@ use Filament\Schemas\Schema;
 use Filament\Tables\Table;
 use Modules\User\Filament\Resources\UserResource;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class UsersRelationManager extends XotBaseRelationManager
@@ -27,10 +33,14 @@ class UsersRelationManager extends XotBaseRelationManager
      * @return array<string, Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function getFormSchema(): array
     {
         return [
@@ -39,6 +49,7 @@ class UsersRelationManager extends XotBaseRelationManager
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
     public function table(Table $table): Table
     {
@@ -46,6 +57,8 @@ class UsersRelationManager extends XotBaseRelationManager
 
         return $table;
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * @return array<string, Column>
      */
@@ -56,6 +69,9 @@ class UsersRelationManager extends XotBaseRelationManager
             'name' => TextColumn::make('name')->searchable()->sortable(),
             'email' => TextColumn::make('email')->searchable()->sortable(),
         ];
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

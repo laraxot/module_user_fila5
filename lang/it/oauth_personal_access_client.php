@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Personal Access Client',
         'plural_label' => 'Personal Access Client',
@@ -79,6 +82,7 @@ return [
         'updated' => 'Personal Access Client aggiornato con successo',
         'deleted' => 'Personal Access Client eliminato con successo',
     ],
+<<<<<<< HEAD
 =======
     'navigation' => ['label' => 'Personal Access Client', 'plural_label' => 'Personal Access Client', 'group' => 'OAuth', 'icon' => 'heroicon-o-key', 'sort' => 6],
     'label' => 'Personal Access Client',
@@ -103,4 +107,6 @@ return [
     ],
     'messages' => ['created' => 'Personal Access Client creato con successo', 'updated' => 'Personal Access Client aggiornato con successo', 'deleted' => 'Personal Access Client eliminato con successo'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

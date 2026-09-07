@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(Modules\User\Tests\TestCase::class);
 
 use Modules\User\Models\User;
@@ -22,6 +23,8 @@ test('CheckOtpExpiredRule has validate and message methods', function () {
     expect(method_exists($rule, 'validate'))->toBeTrue()
         ->and(method_exists($rule, 'message'))->toBeTrue();
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Rules\CheckOtpExpiredRule;
 use Modules\User\Tests\TestCase;
@@ -39,5 +42,8 @@ test('CheckOtpExpiredRule can be instantiated', function () {
 test('CheckOtpExpiredRule has validate and message methods', function () {
     $user = UserFactory::new()->makeOne();
     $rule = new CheckOtpExpiredRule($user);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

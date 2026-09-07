@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "🔧 PHPStan Fixes - Modulo User - Gennaio 2025"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # 🔧 PHPStan Fixes - Modulo User - Gennaio 2025
 
 **Data**: 27 Gennaio 2025
@@ -251,7 +257,11 @@ $subject = Lang::get('user::email.password_reset_subject');
 **🌐 Translation Standards**: IT/EN complete ✅
 **🚀 Performance**: 95/100 score
 <<<<<<< HEAD
+<<<<<<< HEAD
 **✨ Test Coverage**: 85% ✅
 =======
 **✨ Test Coverage**: 85% ✅
 >>>>>>> 2024e2e7 (.)
+=======
+**✨ Test Coverage**: 85% ✅
+>>>>>>> f589f9b2 (.)

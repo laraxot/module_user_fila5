@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
      * | Table Columns
@@ -12,11 +13,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'column.name' => 'Ad',
     'column.guard_name' => 'Koruma Adı',
     'column.roles' => 'Roller',
     'column.permissions' => 'İzinler',
     'column.updated_at' => 'Güncellenme Tarihi',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -26,11 +30,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'field.name' => 'Ad',
     'field.guard_name' => 'Koruma Adı',
     'field.permissions' => 'İzinler',
     'field.select_all.name' => 'Tümünü Seç',
     'field.select_all.message' => 'Bu rol için şu anda <span class="text-primary font-medium">Etkin</span> olan tüm İzinleri etkinleştirin',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -40,11 +47,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'nav.group' => 'Filament Kalkan',
     'nav.role.label' => 'Roller',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Rol',
     'resource.label.roles' => 'Roller',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -54,11 +64,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'section' => 'Varlıklar',
     'resources' => 'Kaynaklar',
     'widgets' => 'Araçlar',
     'pages' => 'Sayfalar',
     'custom' => 'Özel İzinler',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -87,6 +100,8 @@ return [
     //     'replicate' => 'Replicate',
     // ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'forbidden' => 'Erişim izniniz yok',
     'navigation' => [
         'label' => 'Missing Navigation Label',
@@ -101,5 +116,8 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Appearance\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
 use Filament\Actions\Action;
 use Filament\Forms;
@@ -35,6 +36,8 @@ class Alignment extends Page implements HasForms
 
     protected static null|int $navigationSort = 4;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Actions\Action;
 use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\FileUpload;
@@ -62,7 +65,10 @@ class Alignment extends XotBasePage
     protected static ?string $cluster = Appearance::class;
 
     protected static ?int $navigationSort = 4;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
     public function mount(): void
     {
@@ -85,10 +91,14 @@ class Alignment extends XotBasePage
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function form(Schema $schema): Schema
 =======
     public function schema(Schema $schema): Schema
 >>>>>>> 2024e2e7 (.)
+=======
+    public function schema(Schema $schema): Schema
+>>>>>>> f589f9b2 (.)
     {
         return $schema
             ->components([
@@ -132,11 +142,17 @@ class Alignment extends XotBasePage
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /**
      * @return array<Action>
      */
 >>>>>>> 2024e2e7 (.)
+=======
+    /**
+     * @return array<Action>
+     */
+>>>>>>> f589f9b2 (.)
     protected function getUpdateFormActions(): array
     {
         return [

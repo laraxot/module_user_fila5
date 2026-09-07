@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Struttura Navigazione
 
 ## Overview
@@ -144,6 +145,8 @@ Event::dispatch('user.action', [
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Session Management](./SESSION_MANAGEMENT.md) 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: navigation-structure
@@ -160,4 +163,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/navigation-structure.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

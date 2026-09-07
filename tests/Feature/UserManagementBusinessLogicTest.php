@@ -6,6 +6,7 @@ namespace Modules\User\Tests\Feature;
 
 use Illuminate\Database\QueryException;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Validation\ValidationException;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Hash;
@@ -24,6 +25,8 @@ class UserManagementBusinessLogicTest extends TestCase
     {
         // Arrange
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Database\Factories\PermissionFactory;
@@ -39,7 +42,10 @@ uses(TestCase::class);
 
 describe('User Management Business Logic', function (): void {
     test('can create user with profile', function (): void {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $userData = [
             'name' => 'Mario Rossi',
             'email' => 'mario.rossi@example.com',
@@ -55,6 +61,7 @@ describe('User Management Business Logic', function (): void {
         ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Act
         $user = User::create($userData);
         $profile = $user->profile()->create($profileData);
@@ -68,6 +75,8 @@ describe('User Management Business Logic', function (): void {
 
         $this->assertDatabaseHas('profiles', [
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $user = User::create($userData);
         $createdProfile = $user->profile()->create($profileData);
         Assert::assertInstanceOf(Profile::class, $createdProfile);
@@ -79,11 +88,15 @@ describe('User Management Business Logic', function (): void {
             'email' => 'mario.rossi@example.com',
         ])->exists());
         Assert::assertTrue(DB::table('profiles')->where([
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'id' => $profile->id,
             'user_id' => $user->id,
             'phone' => '+39 123 456 7890',
             'address' => 'Via Roma 123, Milano',
+<<<<<<< HEAD
 <<<<<<< HEAD
         ]);
 
@@ -172,6 +185,8 @@ describe('User Management Business Logic', function (): void {
         $role = Role::factory()->create(['name' => 'doctor']);
         $permission = Permission::factory()->create(['name' => 'patients.read']);
 =======
+=======
+>>>>>>> f589f9b2 (.)
         ])->exists());
         Assert::assertInstanceOf(Profile::class, $user->profile);
         Assert::assertSame($user->id, $profile->user_id);
@@ -234,11 +249,15 @@ describe('User Management Business Logic', function (): void {
         $user = UserFactory::new()->createOne();
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
         $permission = PermissionFactory::new()->createOne(['name' => 'patients.read']);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
         $role->givePermissionTo($permission);
         $user->assignRole($role);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         // Act & Assert
         $this->assertTrue($user->hasPermissionTo('patients.read'));
@@ -319,6 +338,8 @@ describe('User Management Business Logic', function (): void {
         $permission1 = Permission::factory()->create(['name' => 'patients.read']);
         $permission2 = Permission::factory()->create(['name' => 'patients.write']);
 =======
+=======
+>>>>>>> f589f9b2 (.)
         Assert::assertTrue($user->hasPermissionTo('patients.read'));
         Assert::assertTrue($user->hasPermissionTo($permission));
         Assert::assertTrue($user->can('patients.read'));
@@ -375,11 +396,15 @@ describe('User Management Business Logic', function (): void {
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
         $permission1 = PermissionFactory::new()->createOne(['name' => 'patients.read']);
         $permission2 = PermissionFactory::new()->createOne(['name' => 'patients.write']);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
         $role->givePermissionTo([$permission1, $permission2]);
         $user->assignRole($role);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         // Act
         $permissions = $user->getAllPermissions();
@@ -475,6 +500,8 @@ describe('User Management Business Logic', function (): void {
             'address' => 'Via Roma 123, Milano',
         ]);
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $permissions = $user->getAllPermissions();
 
         Assert::assertCount(2, $permissions);
@@ -515,7 +542,10 @@ describe('User Management Business Logic', function (): void {
         ]);
         Assert::assertInstanceOf(Profile::class, $createdProfile);
         $profile = $createdProfile;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
         $updatedData = [
             'phone' => '+39 987 654 3210',
@@ -523,6 +553,7 @@ describe('User Management Business Logic', function (): void {
             'birth_date' => '1985-10-20',
         ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         // Act
         $profile->update($updatedData);
@@ -534,10 +565,16 @@ describe('User Management Business Logic', function (): void {
 
         Assert::assertTrue(DB::table('profiles')->where([
 >>>>>>> 2024e2e7 (.)
+=======
+        $profile->update($updatedData);
+
+        Assert::assertTrue(DB::table('profiles')->where([
+>>>>>>> f589f9b2 (.)
             'id' => $profile->id,
             'phone' => '+39 987 654 3210',
             'address' => 'Via Milano 456, Roma',
             'birth_date' => '1985-10-20',
+<<<<<<< HEAD
 <<<<<<< HEAD
         ]);
     }
@@ -652,6 +689,8 @@ describe('User Management Business Logic', function (): void {
         $user2 = User::factory()->create();
         $user3 = User::factory()->create();
 =======
+=======
+>>>>>>> f589f9b2 (.)
         ])->exists());
     });
 
@@ -730,12 +769,16 @@ describe('User Management Business Logic', function (): void {
         $user1 = UserFactory::new()->createOne();
         $user2 = UserFactory::new()->createOne();
         $user3 = UserFactory::new()->createOne();
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
         $user1->assignRole($doctorRole);
         $user2->assignRole($nurseRole);
         $user3->assignRole($doctorRole);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         // Act
         $doctors = User::role('doctor')->get();
@@ -920,6 +963,8 @@ describe('User Management Business Logic', function (): void {
     }
 }
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $doctors = User::role('doctor')->get();
 
         Assert::assertCount(2, $doctors);
@@ -1016,4 +1061,7 @@ describe('User Management Business Logic', function (): void {
         ])->exists());
     });
 });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

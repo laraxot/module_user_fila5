@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "socialite"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./phpstan.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # socialite
 
 <!-- Contenuto migrato da _docs/socialite.txt -->

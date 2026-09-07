@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Pattern di Ereditarietà per Pacchetti Esterni"
 type: pattern
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Pattern di Ereditarietà per Pacchetti Esterni
 
 ## 📋 Panoramica
@@ -163,17 +169,26 @@ use RelationX;  // ✅ OK - Enhancement Laraxot
 
 - [Filosofia Spatie Permission](./spatie-permission-philosophy.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Architettura Modelli](../Xot/docs/models/model-architecture.md)
 - [Regole Critiche Architettura](../Xot/docs/critical-architecture-rules.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Architettura Modelli](../Xot/docs/models/model-architecture.md)
+- [Regole Critiche Architettura](../Xot/docs/critical-architecture-rules.md)
+>>>>>>> f589f9b2 (.)
 - [Architettura Modelli](../xot/docs/models/model-architecture.md)
 - [Regole Critiche Architettura](../xot/docs/critical-architecture-rules.md)
 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Pattern verificato e documentato: 2025-01-XX*
 =======
 *Pattern verificato e documentato: 2025-01-XX*
 >>>>>>> 2024e2e7 (.)
+=======
+*Pattern verificato e documentato: 2025-01-XX*
+>>>>>>> f589f9b2 (.)

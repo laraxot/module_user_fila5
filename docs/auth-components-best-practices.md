@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Best Practices per i Componenti di Autenticazione 
 
 ## Collegamenti correlati
@@ -6,6 +7,8 @@
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Best Practices per i Componenti di Autenticazione"
 type: concept
@@ -32,7 +35,10 @@ related:
 - [README modulo User](./readme.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -179,10 +185,14 @@ Prima di utilizzare una chiave di traduzione, assicurarsi che i file di traduzio
 - `/laravel/Modules/Lang/lang/en/auth.php`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Componenti di Autenticazione 
 =======
 ## Componenti di Autenticazione
 >>>>>>> 2024e2e7 (.)
+=======
+## Componenti di Autenticazione
+>>>>>>> f589f9b2 (.)
 
 ### 1. Pagine di Autenticazione
 
@@ -217,8 +227,11 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 1. Che tutte le chiavi di traduzione siano definite in tutti i file di lingua supportati
 2. Che i componenti funzionino correttamente con la localizzazione delle URL
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. Che i componenti rispettino le best practices di SaluteOra per le chiavi di traduzione
 =======
+=======
+>>>>>>> f589f9b2 (.)
 3. Che i componenti rispettino le best practices di <nome progetto> per le chiavi di traduzione
 
 ## Riferimenti
@@ -413,7 +426,10 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 1. Che tutte le chiavi di traduzione siano definite in tutti i file di lingua supportati
 2. Che i componenti funzionino correttamente con la localizzazione delle URL
 3. Che i componenti rispettino le best practices di <nome progetto> per le chiavi di traduzione
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ## Riferimenti
 

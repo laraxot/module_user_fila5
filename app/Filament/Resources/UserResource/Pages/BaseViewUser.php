@@ -5,10 +5,13 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Override;
 use Filament\Infolists\Components\TextEntry;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Filament\Resources\UserResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -22,6 +25,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 abstract class BaseViewUser extends XotBaseViewRecord
 {
     protected static string $resource = UserResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -45,4 +49,6 @@ abstract class BaseViewUser extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

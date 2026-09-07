@@ -16,11 +16,17 @@ class ListSsoProviders extends XotBaseListRecords
 
     #[\Override]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /**
      * @return array<string, mixed>
      */
 >>>>>>> 2024e2e7 (.)
+=======
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> f589f9b2 (.)
     public function getTableColumns(): array
     {
         return [

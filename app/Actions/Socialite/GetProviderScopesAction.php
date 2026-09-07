@@ -9,9 +9,12 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use ArrayAccess;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Arr;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -21,6 +24,7 @@ class GetProviderScopesAction
 
     /**
      * Execute the action.
+<<<<<<< HEAD
 <<<<<<< HEAD
      */
     public function execute(string $provider): array
@@ -36,6 +40,8 @@ class GetProviderScopesAction
 
         return $scopes;
 =======
+=======
+>>>>>>> f589f9b2 (.)
      *
      * @return array<int, string>
      */
@@ -55,6 +61,9 @@ class GetProviderScopesAction
             static fn (mixed $scope): ?string => \is_scalar($scope) || $scope instanceof \Stringable ? (string) $scope : null,
             $scopes
         ), static fn (?string $scope): bool => null !== $scope));
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

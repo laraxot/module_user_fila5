@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Migration Violations Analysis - User Module
 
 ## Executive Summary
@@ -143,6 +144,8 @@ These violations directly contravene the Laraxot migration philosophy:
 
 The violations demonstrate a clear gap in understanding and implementation of the core Laraxot migration philosophy that emphasizes: **ONE TABLE, ONE MIGRATION, ONE MODULE**.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: migration-violations
@@ -159,4 +162,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-violations-analysis.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

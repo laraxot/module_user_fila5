@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Struttura del Logout Blade nel Theme One
 
 ## Posizione Corretta
@@ -118,6 +119,8 @@ class LogoutPage
 - [Best Practices Routing](./ROUTING_BEST_PRACTICES.md)
 - [Struttura Directory](./DIRECTORY_STRUCTURE_CHECKLIST.md) 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: logout-blade-structure
@@ -134,4 +137,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-structure.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

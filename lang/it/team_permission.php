@@ -8,18 +8,27 @@ return [
         'plural' => 'Permessi Team',
         'label' => 'Permessi Team',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
         'group' => [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione permessi specifici per team',
         ],
+<<<<<<< HEAD
 =======
         'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione permessi specifici per team'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'sort' => 15,
         'icon' => 'heroicon-o-shield-check',
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
         'team_id' => [
             'label' => 'Team',
             'placeholder' => 'Seleziona un team',
@@ -83,6 +92,7 @@ return [
             'error' => 'Errore durante l\'eliminazione del permesso team',
             'confirmation' => 'Sei sicuro di voler eliminare questo permesso team?',
         ],
+<<<<<<< HEAD
 =======
         'team_id' => ['label' => 'Team', 'placeholder' => 'Seleziona un team', 'help' => 'Il team a cui appartiene questo permesso', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'user_id' => ['label' => 'Utente', 'placeholder' => 'Seleziona un utente', 'help' => 'L\'utente a cui è assegnato questo permesso', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -99,6 +109,8 @@ return [
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     ],
     'label' => 'Team Permission',
     'plural_label' => 'Team Permission (Plurale)',

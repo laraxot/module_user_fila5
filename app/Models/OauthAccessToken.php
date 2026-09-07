@@ -5,21 +5,28 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // use Laravel\Passport\AccessToken as PassportAccessToken;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\UserContract;
 use Illuminate\Database\Eloquent\Builder;
 use Laravel\Passport\Token as PassportToken;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Laravel\Passport\Token as PassportToken;
 use Modules\User\Traits\ResolvesPassportTokenUserRelation;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 /**
  * Modules\User\Models\OauthAccessToken.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property string $id
  * @property string|null $user_id
@@ -33,6 +40,8 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @property OauthClient|null $client
  * @property UserContract|null $user
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property string            $id
  * @property string|null       $user_id
  * @property string            $client_id
@@ -45,7 +54,10 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @property OauthClient|null  $client
  * @property User|null         $user
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @method static Builder|OauthAccessToken newModelQuery()
  * @method static Builder|OauthAccessToken newQuery()
  * @method static Builder|OauthAccessToken query()
@@ -59,6 +71,7 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @method static Builder|OauthAccessToken whereUpdatedAt($value)
  * @method static Builder|OauthAccessToken whereUserId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property OauthRefreshToken|null $refreshToken
  * @property string|null $updated_by
  * @property string|null $created_by
@@ -70,6 +83,8 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @method static Builder<static>|OauthAccessToken whereUpdatedBy($value)
  * @mixin IdeHelperOauthAccessToken
 =======
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @property OauthRefreshToken|null $refreshToken
  * @property string|null            $updated_by
@@ -86,11 +101,15 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @method static static                                                         updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAccessToken existsIn(array<int, string> $haystack)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 class OauthAccessToken extends PassportToken
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     /** @var string */
     protected $connection = 'user';
@@ -101,4 +120,9 @@ class OauthAccessToken extends PassportToken
 
     protected $connection = 'user';
 >>>>>>> 2024e2e7 (.)
+=======
+    use ResolvesPassportTokenUserRelation;
+
+    protected $connection = 'user';
+>>>>>>> f589f9b2 (.)
 }

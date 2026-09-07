@@ -3,18 +3,25 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'error' => 'Ops!',
     'greeting' => 'Ciao!',
     'regards' => 'Saluti,',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'trouble_clicking_button' => 'Se hai problemi a cliccare il pulsante \":actionText\", copia e incolla l\'URL qui sotto nel tuo browser:',
 =======
     'trouble_clicking_button' => 'Se hai problemi a cliccare il pulsante \\":actionText\\", copia e incolla l\'URL qui sotto nel tuo browser:',
 >>>>>>> 2024e2e7 (.)
+=======
+    'trouble_clicking_button' => 'Se hai problemi a cliccare il pulsante \\":actionText\\", copia e incolla l\'URL qui sotto nel tuo browser:',
+>>>>>>> f589f9b2 (.)
     'thank_you_for_using_app' => 'Grazie per aver utilizzato la nostra applicazione!',
     'password_reset_subject' => 'Il tuo link per il reset della password',
     'password_cause_of_email' => 'Hai ricevuto questa email perché abbiamo ricevuto una richiesta di reset della password per il tuo account.',
@@ -23,7 +30,10 @@ return [
     'click_to_confirm' => 'Clicca qui per confermare il tuo account:',
     'password_reset_expiration' => 'Questo link per il reset della password scadrà tra :count minuti.',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -37,5 +47,8 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

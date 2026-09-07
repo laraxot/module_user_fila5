@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE
 
 ## Stato Implementazione ✅ COMPLETATO
@@ -414,6 +415,8 @@ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key
 - **teamRoleName() helper**: AGGIUNTO - per ottenere stringa del ruolo
 - **Compatibilità**: MANTENUTA - sia oggetti Role che stringhe supportati
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "User Module Traits"
 type: concept
@@ -479,4 +482,7 @@ class User extends Authenticatable
 
 - [Modulo User](./README.md)
 - [Xot Traits](../../Xot/docs/)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

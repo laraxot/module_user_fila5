@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # User Module - Nested Resource Implementation Guide
 
 ## Overview
@@ -204,6 +205,8 @@ Following the documented approach in `Modules/UI/docs/filament/nested-resource.m
 - User behavior tracking across nested resources
 - Performance monitoring for nested operations
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: nested-resources
@@ -220,4 +223,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/nested-resources.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

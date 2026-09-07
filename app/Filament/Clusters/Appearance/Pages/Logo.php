@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Appearance\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
 use Filament\Actions\Action;
 use Filament\Forms;
@@ -17,6 +18,8 @@ use Filament\Support\Exceptions\Halt;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Clusters\Appearance;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Actions\Action;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
@@ -25,11 +28,15 @@ use Filament\Support\Exceptions\Halt;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Clusters\Appearance;
 use Modules\Xot\Filament\Pages\XotBasePage;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 /**
  * @property Schema $form
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 class Logo extends Page implements HasForms
 {
@@ -45,6 +52,8 @@ class Logo extends Page implements HasForms
 
     protected static null|int $navigationSort = 1;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 class Logo extends XotBasePage
 {
     /** @var array<string, mixed>|null */
@@ -55,7 +64,10 @@ class Logo extends XotBasePage
     protected static ?string $cluster = Appearance::class;
 
     protected static ?int $navigationSort = 1;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
     public function mount(): void
     {
@@ -70,10 +82,14 @@ class Logo extends XotBasePage
     // }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function form(Schema $schema): Schema
 =======
     public function schema(Schema $schema): Schema
 >>>>>>> 2024e2e7 (.)
+=======
+    public function schema(Schema $schema): Schema
+>>>>>>> f589f9b2 (.)
     {
         return $schema
             ->components([
@@ -113,11 +129,17 @@ class Logo extends XotBasePage
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /**
      * @return array<Action>
      */
 >>>>>>> 2024e2e7 (.)
+=======
+    /**
+     * @return array<Action>
+     */
+>>>>>>> f589f9b2 (.)
     protected function getUpdateLogoFormActions(): array
     {
         return [

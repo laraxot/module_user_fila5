@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
@@ -15,6 +16,8 @@ use Modules\Xot\Models\Extra as XotBaseExtra;
 /**
  * @property SchemalessAttributes $extra_attributes
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
@@ -24,21 +27,30 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 /**
  * @property SchemalessAttributes $extra_attributes
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @method static Builder|Extra newModelQuery()
  * @method static Builder|Extra newQuery()
  * @method static Builder|Extra query()
  * @method static Builder|Extra withExtraAttributes()
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property int $id
  * @property string $model_type
  * @property string $model_id
 =======
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @property int         $id
  * @property string      $model_type
  * @property string      $model_id
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -46,9 +58,13 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 2024e2e7 (.)
+=======
+ *
+>>>>>>> f589f9b2 (.)
  * @method static Builder|Extra whereCreatedAt($value)
  * @method static Builder|Extra whereCreatedBy($value)
  * @method static Builder|Extra whereDeletedAt($value)
@@ -59,6 +75,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder|Extra whereModelType($value)
  * @method static Builder|Extra whereUpdatedAt($value)
  * @method static Builder|Extra whereUpdatedBy($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
@@ -71,6 +88,8 @@ class Extra extends XotBaseExtra
     /** @var string */
     protected $connection = 'user';
 =======
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
@@ -86,5 +105,8 @@ final class Extra extends BaseExtra
     {
         return 'user';
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\AuthenticationLog;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 
 describe('User Authentication', function () {
@@ -13,6 +14,8 @@ describe('User Authentication', function () {
         $user = createUser([
             'email' => 'test@example.com',
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -24,12 +27,16 @@ describe('User Authentication', function () {
 
         $user = createTestUser([
             'email' => $email,
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'password' => Hash::make('password123'),
             'is_active' => true,
         ]);
 
         $authenticated = Auth::attempt([
+<<<<<<< HEAD
 <<<<<<< HEAD
             'email' => 'test@example.com',
             'password' => 'password123',
@@ -42,6 +49,8 @@ describe('User Authentication', function () {
         createUser([
             'email' => 'inactive@example.com',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'email' => $email,
             'password' => 'password123',
         ]);
@@ -55,12 +64,16 @@ describe('User Authentication', function () {
 
         createTestUser([
             'email' => $email,
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'password' => Hash::make('password123'),
             'is_active' => false,
         ]);
 
         $authenticated = Auth::attempt([
+<<<<<<< HEAD
 <<<<<<< HEAD
             'email' => 'inactive@example.com',
             'password' => 'password123',
@@ -73,6 +86,8 @@ describe('User Authentication', function () {
         $user = createUser([
             'email' => 'test@example.com',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'email' => $email,
             'password' => 'password123',
         ]);
@@ -89,12 +104,16 @@ describe('User Authentication', function () {
 
         $user = createTestUser([
             'email' => $email,
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'password' => Hash::make('password123'),
             'is_active' => true,
         ]);
 
         Auth::attempt([
+<<<<<<< HEAD
 <<<<<<< HEAD
             'email' => 'test@example.com',
             'password' => 'password123',
@@ -119,6 +138,8 @@ describe('User Authentication', function () {
 
         expect($user->is_otp)->toBeTrue();
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'email' => $email,
             'password' => 'password123',
         ]);
@@ -146,6 +167,9 @@ describe('User Authentication', function () {
         $user = createTestUser(['is_otp' => true]);
 
         Assert::assertTrue($user->is_otp);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     });
 });

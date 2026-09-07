@@ -17,11 +17,14 @@ render(function (View $view) {
 
     // Recupero le pagine con paginazione (12 per pagina)
 <<<<<<< HEAD
+<<<<<<< HEAD
     $pages = Page::when(request()->has('q'), fn($query) => $query->where(
         'title',
         'like',
         '%' . request()->get('q') . '%',
 =======
+=======
+>>>>>>> f589f9b2 (.)
     $searchQuery = request()->query('q');
     $searchTerm = is_string($searchQuery) ? $searchQuery : '';
 
@@ -29,7 +32,10 @@ render(function (View $view) {
         'title',
         'like',
         '%' . $searchTerm . '%',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     ));
 
     // Applichiamo il filtro per categoria solo se la colonna esiste

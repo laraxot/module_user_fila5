@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Errori Comuni in Volt e Soluzioni"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Errori Comuni in Volt e Soluzioni
 
 ## VoltDirectiveMissingException
@@ -209,6 +215,10 @@ class LogoutPage
 - [Best Practices Filament](../filament_best_practices.md)
 - [Routing Best Practices](../ROUTING_BEST_PRACTICES.md) 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Routing Best Practices](../routing-best-practices-2.md) 
 >>>>>>> 2024e2e7 (.)
+=======
+- [Routing Best Practices](../routing-best-practices-2.md) 
+>>>>>>> f589f9b2 (.)

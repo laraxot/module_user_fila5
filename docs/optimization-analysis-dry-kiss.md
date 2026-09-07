@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Analisi Ottimizzazioni Modulo User - DRY + KISS
 
 ## 🎯 Obiettivo Analisi
@@ -207,6 +208,8 @@ trait HasStandardTranslationsTrait
 *Analisi completata con principi DRY + KISS | Data: $(date)*
 *Modulo: User | Priorità: CRITICA per Policy, ALTA per Authentication*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: optimization-analysis-dry-kiss
@@ -223,4 +226,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/optimization-analysis-dry-kiss.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

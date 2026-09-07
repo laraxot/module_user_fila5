@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Quality Improvements Summary - PHPStan, PHPMD, PHP Insights
 
 ## Data: 2025-01-02
@@ -68,6 +69,8 @@
 3. Analizzare e migliorare architecture score
 4. Applicare style corrections sistematicamente
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: quality-improvements-summary
@@ -84,4 +87,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-improvements-summary.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

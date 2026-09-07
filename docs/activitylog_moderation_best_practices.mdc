@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description:
 globs:
 alwaysApply: false
@@ -70,10 +71,15 @@ class ApproveUserAction
 - [spatie/laravel-model-states](mdc:https:/spatie.be/docs/laravel-model-states/v2/working-with-states/01-configuring-states)
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 module: theme
 topic: activitylog_moderation_best_practices
 canonical: ../../../Themes/docs/shared-components/activitylog-moderation-best-practices.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/activitylog-moderation-best-practices.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

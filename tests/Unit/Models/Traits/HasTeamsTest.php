@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -393,6 +394,8 @@ describe('HasTeams Trait Performance', function () {
         expect($teamNames)->toContain('Team 1', 'Team 50', 'Team 100');
     });
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Collection;
 use Modules\User\Database\Factories\TeamFactory;
@@ -519,5 +522,8 @@ test('has teams trait belongsToTeams is false without teams', function (): void 
     $user = UserFactory::new()->createOne(['email' => 'no-teams-'.uniqid('', true).'@example.com']);
 
     Assert::assertFalse($user->belongsToTeams());
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

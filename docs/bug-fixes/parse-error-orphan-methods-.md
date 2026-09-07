@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Bug Fix: ParseError - Metodi Orfani Fuori dalla Classe"
 type: concept
@@ -19,7 +22,10 @@ related:
   - "./parse-orphan-methods.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Bug Fix: ParseError - Metodi Orfani Fuori dalla Classe
 
 ## Data
@@ -151,12 +157,17 @@ protected function orphanMethod(): array
 ## Collegamenti
 - [Widget Auth Best Practices](../filament/widgets/registration-widget.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Git Conflicts Resolution](../git-conflicts-resolution-2025-01-27.md)
 - [Bug Fix Guidelines](../../../../docs/bug-fixing-guidelines.md)
 =======
 - [Git Conflicts Resolution](../git-conflicts-resolution-.md.md)
 - [Bug Fix Guidelines](../../../../../docs/bug-fixing-guidelines.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Git Conflicts Resolution](../git-conflicts-resolution-.md.md)
+- [Bug Fix Guidelines](../../../../../docs/bug-fixing-guidelines.md)
+>>>>>>> f589f9b2 (.)
 
 ## Status
 ✅ **RISOLTO** - RegisterWidget funziona correttamente con tutte le migliorie di qualità implementate

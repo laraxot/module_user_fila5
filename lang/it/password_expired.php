@@ -8,16 +8,37 @@ return [
     'sub_heading' => 'La tua password è scaduta, per favore crea una nuova password',
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'current_password' => [
             'label' => 'Current Password',
             'validation_attribute' => 'current_password',
+=======
+        'current_password' => [
+            'label' => 'Current Password',
+            'validation_attribute' => 'current_password',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'password' => [
             'label' => 'Password',
             'validation_attribute' => 'password',
+<<<<<<< HEAD
         ],
         'password_confirmation' => [
             'label' => 'Confirm Password',
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'password_confirmation' => [
+            'label' => 'Confirm Password',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'form' => [
@@ -32,6 +53,7 @@ return [
         'password_confirmation' => [
             'label' => 'Confirm Password',
         ],
+<<<<<<< HEAD
 =======
         'current_password' => ['label' => 'Current Password', 'validation_attribute' => 'current_password', 'tooltip' => '', 'helper_text' => '', 'description' => '', 'placeholder' => 'current_password'],
         'password' => ['label' => 'Password', 'validation_attribute' => 'password', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -52,11 +74,24 @@ return [
         'hidePassword' => ['label' => 'hidePassword', 'icon' => 'hidePassword', 'tooltip' => 'hidePassword'],
         'resetPassword' => ['label' => 'resetPassword', 'icon' => 'resetPassword', 'tooltip' => 'resetPassword'],
 >>>>>>> 2024e2e7 (.)
+=======
+    ],
+    'actions' => [
+        'reset_password' => [
+            'label' => 'Reset Password',
+        ],
+        'cancel' => [
+            'label' => 'Cancel',
+        ],
+>>>>>>> f589f9b2 (.)
     ],
     'reset_password' => 'Reset Password',
     'password_reset' => 'Password Reset',
     'notifications' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
         'wrong_password' => [
             'title' => 'Wrong Password',
             'body' => 'The current password you entered is incorrect.',
@@ -76,6 +111,7 @@ return [
     'exceptions' => [
         'column_not_found' => 'Either the column ":column_name" or the password column ":password_column_name" was not found in the ":table_name" table. Please publish migrations and run them, if the error still persists, publish the config file and update the table_name, column_name, and password_column_name values.',
     ],
+<<<<<<< HEAD
 =======
         'wrong_password' => ['title' => 'Wrong Password', 'body' => 'The current password you entered is incorrect.'],
         'column_not_found' => ['title' => 'Column Not Found', 'body' => 'Either the column ":column_name" or the password column ":password_column_name" was not found in the :table_name table.'],
@@ -87,11 +123,23 @@ return [
         'name' => 'Password Expired',
         'plural' => 'Password Expired',
         'group' => ['name' => 'General', 'description' => 'General Settings'],
+=======
+    'navigation' => [
+        'name' => 'Password Expired',
+        'plural' => 'Password Expired',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+>>>>>>> f589f9b2 (.)
         'label' => 'Password Expired',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
     'label' => 'Password Expired',
     'plural_label' => 'Password Expired (Plurale)',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

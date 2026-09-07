@@ -6,10 +6,14 @@ return [
     'password_confirm' => [
         'heading' => '비밀번호 확인',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'description' => '이 작업을 완료하려면 암호를 확인하십시오', // Please confirm your password to complete this action.
 =======
         'description' => '이 작업을 완료하려면 암호를 확인하십시오',
 >>>>>>> 2024e2e7 (.)
+=======
+        'description' => '이 작업을 완료하려면 암호를 확인하십시오',
+>>>>>>> f589f9b2 (.)
         'current_password' => '현재 비밀번호',
     ],
     'two_factor' => [
@@ -107,6 +111,7 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'avatar' => '아바타',
         'email' => '이메일',
         'login' => '로그인',
@@ -124,6 +129,8 @@ return [
     'or' => '또는',
     'cancel' => '취소',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'avatar' => [
             'label' => '아바타',
             'tooltip' => '',
@@ -216,5 +223,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

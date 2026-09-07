@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # UserFactory Advanced Integration - Modulo User & SaluteOra
 
 ## Post Deep-Study Analysis 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "UserFactory Advanced Integration - Modulo User & <nome progetto>"
 type: concept
@@ -26,7 +29,10 @@ related:
 # UserFactory Advanced Integration - Modulo User & <nome progetto>
 
 ## Post Deep-Study Analysis
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integrazione UserFactory ha raggiunto un livello di eccellenza enterprise-grade con supporto completo per:
 
@@ -36,6 +42,7 @@ Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integr
 ```
 BaseUser (User Module)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── User (SaluteOra) - STI Base + Business Logic  
     ├── Patient (HasParent) - Healthcare Consumer
     ├── Doctor (HasParent) - Healthcare Provider  
@@ -44,16 +51,25 @@ BaseUser (User Module)
     ├── Patient (HasParent) - Healthcare Consumer
     ├── Doctor (HasParent) - Healthcare Provider
 >>>>>>> 2024e2e7 (.)
+=======
+├── User (<nome progetto>) - STI Base + Business Logic
+    ├── Patient (HasParent) - Healthcare Consumer
+    ├── Doctor (HasParent) - Healthcare Provider
+>>>>>>> f589f9b2 (.)
     └── Admin (HasParent) - System Administrator
 ```
 
 ### Cross-Module Compatibility Matrix
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 | BaseUser Field | SaluteOra User | Business Logic | Factory Support |
 =======
 | BaseUser Field | <nome progetto> User | Business Logic | Factory Support |
 >>>>>>> 2024e2e7 (.)
+=======
+| BaseUser Field | <nome progetto> User | Business Logic | Factory Support |
+>>>>>>> f589f9b2 (.)
 |----------------|----------------|----------------|-----------------|
 | `name` | `name` | Full name concat | ✅ Complete |
 | `email` | `email` | Authentication | ✅ Complete |
@@ -84,10 +100,14 @@ User::factory()->patient()->pregnant()->create();
 User::factory()->patient()->lowIncome()->create();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Doctor scenarios  
 =======
 // Doctor scenarios
 >>>>>>> 2024e2e7 (.)
+=======
+// Doctor scenarios
+>>>>>>> f589f9b2 (.)
 User::factory()->doctor()->withStudio()->create();
 User::factory()->doctor()->withWorkflow()->create();
 User::factory()->doctor()->specialist()->create();
@@ -108,10 +128,14 @@ User::factory()->gdprCompliant()->create();
 ### Italian Healthcare System
 - **Codice Fiscale**: Realistic generation algorithm
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **ISEE Integration**: Low-income eligibility logic  
 =======
 - **ISEE Integration**: Low-income eligibility logic
 >>>>>>> 2024e2e7 (.)
+=======
+- **ISEE Integration**: Low-income eligibility logic
+>>>>>>> f589f9b2 (.)
 - **Pregnancy Services**: Special healthcare pathways
 - **Professional Credentials**: Realistic doctor certifications
 
@@ -126,6 +150,7 @@ User::factory()->gdprCompliant()->create();
 ### Connection Strategy Perfezionata
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // BaseUser (User Module) 
 protected $connection = 'user';
 
@@ -135,6 +160,8 @@ protected $connection = 'salute_ora';
 // Factory automatically handles connection switching
 User::factory()->create(); // Uses 'salute_ora' connection
 =======
+=======
+>>>>>>> f589f9b2 (.)
 // BaseUser (User Module)
 protected $connection = 'user';
 
@@ -143,7 +170,10 @@ protected $connection = '<nome progetto>';
 
 // Factory automatically handles connection switching
 User::factory()->create(); // Uses '<nome progetto>' connection
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ```
 
 ### Morph Relations Support
@@ -165,6 +195,7 @@ public function test_cross_module_compatibility()
 {
     $user = User::factory()->create();
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     // BaseUser contracts respected
     expect($user)->toHaveProperty('email');
@@ -173,6 +204,8 @@ public function test_cross_module_compatibility()
     
     // SaluteOra domain contracts
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
     // BaseUser contracts respected
     expect($user)->toHaveProperty('email');
@@ -180,16 +213,23 @@ public function test_cross_module_compatibility()
     expect($user->email_verified_at)->toBeInstanceOf(Carbon::class);
 
     // <nome progetto> domain contracts
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     expect($user->type)->toBeInstanceOf(UserTypeEnum::class);
     expect($user->state)->toBeInstanceOf(UserState::class);
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Business logic testing  
 =======
 // Business logic testing
 >>>>>>> 2024e2e7 (.)
+=======
+// Business logic testing
+>>>>>>> f589f9b2 (.)
 public function test_healthcare_workflows()
 {
     // Patient registration workflow
@@ -197,10 +237,14 @@ public function test_healthcare_workflows()
     $patient->requestIntegration();
     expect($patient->isIntegrationRequested())->toBeTrue();
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
     // Doctor onboarding workflow
     $doctor = User::factory()->doctorWithWorkflow()->create();
     expect($doctor->workflow)->toBeInstanceOf(DoctorRegistrationWorkflow::class);
@@ -218,18 +262,24 @@ public function test_bulk_sti_performance()
         ...User::factory()->admin()->count(5)->make(),
     ]);
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     User::insert($users->toArray()); // Single query
     
     expect(Patient::count())->toBe(100);
     expect(Doctor::count())->toBe(30); 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
     User::insert($users->toArray()); // Single query
 
     expect(Patient::count())->toBe(100);
     expect(Doctor::count())->toBe(30);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     expect(Admin::count())->toBe(5);
 }
 ```
@@ -271,18 +321,24 @@ public function run(): void
     User::factory()->patient()->pregnant()->count(50)->create();
     User::factory()->patient()->eligibleForFreeServices()->count(200)->create();
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     // Professional doctor network
     User::factory()->doctorWithStudio()->count(50)->create();
     User::factory()->doctor()->specialist()->count(20)->create();
     
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
     // Professional doctor network
     User::factory()->doctorWithStudio()->count(50)->create();
     User::factory()->doctor()->specialist()->count(20)->create();
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     // Administrative structure
     User::factory()->admin()->count(5)->create();
 }
@@ -308,10 +364,14 @@ public function run(): void
 - **Single Table Inheritance**: Optimal queries
 - **Eager Loading**: Relationship optimization
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Connection Pooling**: Cross-database efficiency  
 =======
 - **Connection Pooling**: Cross-database efficiency
 >>>>>>> 2024e2e7 (.)
+=======
+- **Connection Pooling**: Cross-database efficiency
+>>>>>>> f589f9b2 (.)
 - **Index Strategy**: Query performance
 
 ### Memory Management
@@ -339,10 +399,14 @@ public function run(): void
 ### Phase 2 Roadmap
 - **Media Library Integration**: Real file attachments
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **API Testing Support**: RESTful endpoint testing  
 =======
 - **API Testing Support**: RESTful endpoint testing
 >>>>>>> 2024e2e7 (.)
+=======
+- **API Testing Support**: RESTful endpoint testing
+>>>>>>> f589f9b2 (.)
 - **Multi-Language**: Internationalization support
 - **Advanced Workflows**: Complex business processes
 
@@ -359,10 +423,14 @@ public function run(): void
 - **Testability**: Comprehensive user scenario testing
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### For SaluteOra Module  
 =======
 ### For <nome progetto> Module
 >>>>>>> 2024e2e7 (.)
+=======
+### For <nome progetto> Module
+>>>>>>> f589f9b2 (.)
 - **Domain Focus**: Healthcare-specific data generation
 - **Business Logic**: Real-world scenario testing
 - **Compliance**: GDPR and healthcare regulation support
@@ -375,6 +443,7 @@ public function run(): void
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: ✅ **PRODUCTION READY**  
 **Last Updated**: Gennaio 2025  
 **Maintenance**: Active development  
@@ -383,10 +452,16 @@ public function run(): void
 **Last Updated**: Gennaio 2025
 **Maintenance**: Active development
 >>>>>>> 2024e2e7 (.)
+=======
+**Status**: ✅ **PRODUCTION READY**
+**Last Updated**: Gennaio 2025
+**Maintenance**: Active development
+>>>>>>> f589f9b2 (.)
 **Support**: Enterprise-grade
 
 ## Link Documentazione
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ### SaluteOra Module
 - [Advanced Improvements Analysis](../../SaluteOra/docs/factories/UserFactory-advanced-improvements-analysis.md)
@@ -402,6 +477,8 @@ public function run(): void
 - [UserFactory SaluteOra Integration](../../../../docs/userfactory_saluteora_integration.md)
 - [Testing Standards](../../../../docs/testing_standards.md) 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ### <nome progetto> Module
 - [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
 - [Implementation Completed](../../<nome progetto>/docs/factories/userfactory_implementation_completed.md)
@@ -710,4 +787,7 @@ public function run(): void
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
 - [Testing Standards](../../../../../docs/testing_standards.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

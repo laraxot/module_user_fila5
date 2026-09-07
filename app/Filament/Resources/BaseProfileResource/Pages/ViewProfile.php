@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\BaseProfileResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Override;
 use Filament\Infolists\Infolist;
 use Filament\Actions\DeleteAction;
@@ -24,10 +25,15 @@ use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 use Modules\User\Filament\Resources\BaseProfileResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\User\Filament\Resources\BaseProfileResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+>>>>>>> f589f9b2 (.)
 
 class ViewProfile extends XotBaseViewRecord
 {
     protected static string $resource = BaseProfileResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -74,4 +80,6 @@ class ViewProfile extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

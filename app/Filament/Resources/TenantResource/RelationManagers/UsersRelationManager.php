@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\TenantResource\RelationManagers;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Override;
@@ -24,6 +25,8 @@ class UsersRelationManager extends XotBaseRelationManager
 
     protected static null|string $recordTitleAttribute = 'name';
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
@@ -36,16 +39,23 @@ class UsersRelationManager extends XotBaseRelationManager
     protected static string $relationship = 'users';
 
     protected static ?string $recordTitleAttribute = 'name';
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
     /**
      * @return array<Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function getFormSchema(): array
     {
         return [
@@ -59,10 +69,14 @@ class UsersRelationManager extends XotBaseRelationManager
             TextInput::make('password')
                 ->password()
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->required(fn($context) => $context === 'create')
 =======
                 ->required(fn ($context) => 'create' === $context)
 >>>>>>> 2024e2e7 (.)
+=======
+                ->required(fn ($context) => 'create' === $context)
+>>>>>>> f589f9b2 (.)
                 ->minLength(8)
                 ->same('password_confirmation')
                 ->dehydrated(filled(...))
@@ -70,10 +84,14 @@ class UsersRelationManager extends XotBaseRelationManager
             TextInput::make('password_confirmation')
                 ->password()
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->required(fn($context) => $context === 'create')
 =======
                 ->required(fn ($context) => 'create' === $context)
 >>>>>>> 2024e2e7 (.)
+=======
+                ->required(fn ($context) => 'create' === $context)
+>>>>>>> f589f9b2 (.)
                 ->minLength(8),
         ];
     }
@@ -82,10 +100,14 @@ class UsersRelationManager extends XotBaseRelationManager
      * @return array<string, Column>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function getTableColumns(): array
     {
         return [

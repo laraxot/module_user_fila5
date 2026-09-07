@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # AVVERTENZA: Modifiche ai ServiceProvider Base
 
 ## Introduzione
@@ -274,6 +275,8 @@ Le modifiche ai ServiceProvider possono sembrare una soluzione rapida per proble
 - [XotBaseServiceProvider.md](modules/xot/docs/providers/xotbaseserviceprovider.md)
 - [SERVICE-PROVIDER-BEST-PRACTICES.md](modules/xot/docs/service-provider-best-practices.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: service-provider-warning
@@ -290,4 +293,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/service-provider-warning.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

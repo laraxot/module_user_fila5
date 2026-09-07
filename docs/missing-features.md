@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Analisi Funzionalità Mancanti - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Analisi Funzionalità Mancanti - Modulo User
 
 **Data Analisi**: [DATE]  
@@ -131,10 +137,14 @@ Il modulo **User** fornisce:
 
 2. **LimeParticipant** - Partecipanti survey
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Integrazione con Contact model Quaeris
 =======
    - Integrazione con Contact model ExternalProject
 >>>>>>> 2024e2e7 (.)
+=======
+   - Integrazione con Contact model ExternalProject
+>>>>>>> f589f9b2 (.)
    - Gestione partecipanti centralizzata
    - Attributi personalizzati
 
@@ -183,10 +193,14 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Modulo Quaeris](../quaeris/docs/readme.md)
 =======
 - [Modulo ExternalProject](../<nome progetto>/docs/readme.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Modulo ExternalProject](../<nome progetto>/docs/readme.md)
+>>>>>>> f589f9b2 (.)
 - [Modulo Limesurvey](../limesurvey/docs/readme.md)
 - [User README](./readme.md)
 

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "🔧 Migration Fix: create_tenants_table"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # 🔧 Migration Fix: create_tenants_table
 
 **File**: `database/migrations/2023_01_01_000008_create_tenants_table.php`
@@ -228,12 +234,17 @@ done
 ### Root Documentation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Database Migrations](../../../../docs/database-migrations.md)
 - [Laraxot Philosophy](../../../../docs/architettura_filosofia_religione_politica_zen.md)
 =======
 - [Database Migrations](../../../../../docs/database-migrations.md)
 - [Laraxot Philosophy](../../../../../docs/architettura_filosofia_religione_politica_zen.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Database Migrations](../../../../../docs/database-migrations.md)
+- [Laraxot Philosophy](../../../../../docs/architettura_filosofia_religione_politica_zen.md)
+>>>>>>> f589f9b2 (.)
 
 ### This Analysis
 

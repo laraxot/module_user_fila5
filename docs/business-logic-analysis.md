@@ -132,10 +132,14 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 ```php
 // Advanced user form with Filament 4
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> 2024e2e7 (.)
+=======
+public static function getFormSchema(): array
+>>>>>>> f589f9b2 (.)
 {
     return [
         Forms\Components\Tabs::make('User Information')

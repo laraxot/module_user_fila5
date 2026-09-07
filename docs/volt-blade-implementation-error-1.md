@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Analisi dell'Errore di Implementazione Volt/Blade
 
 ## Collegamenti correlati
@@ -93,6 +94,8 @@ Come correttamente indicato, per i form è preferibile utilizzare un widget Fila
 
 Questo approccio sarà documentato in dettaglio nel file `VOLT_BLADE_IMPLEMENTATION.md`.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: volt-blade-implementation-error-1
@@ -109,4 +112,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-blade-implementation-error-1.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

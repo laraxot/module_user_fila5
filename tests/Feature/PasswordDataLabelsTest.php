@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Feature;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Livewire\Livewire;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Http\Livewire\Auth\Login;
@@ -57,6 +58,8 @@ test('login form labels are translated', function (): void {
     expect($remember)->not->toBeNull();
     expect($remember->getLabel())->toBe('Ricordami');
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Datas\PasswordData;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -81,5 +84,8 @@ describe('Password Data Labels', function (): void {
         /* @var TestCase $this */
         $this->skipTest('Login Livewire form labels — coperto da widget Filament LoginWidgetTest');
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

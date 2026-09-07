@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Ottimizzazioni Super DRY + KISS - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Ottimizzazioni Super DRY + KISS - Modulo User
 
 ## 🎯 Panoramica
@@ -374,16 +380,22 @@ class User extends Model
 ## 🔗 Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Core](../../../docs/core/)
 - [Best Practices Filament](../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../docs/core/conventions.md)
 - [Template Modulo](../../../docs/templates/module-template.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Documentazione Core](../../../../docs/core/)
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ---
 
@@ -391,7 +403,11 @@ class User extends Model
 **Data:** 2025-01-XX
 **Stato:** In Analisi
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Priorità:** CRITICA
 =======
 **Priorità:** CRITICA
 >>>>>>> 2024e2e7 (.)
+=======
+**Priorità:** CRITICA
+>>>>>>> f589f9b2 (.)

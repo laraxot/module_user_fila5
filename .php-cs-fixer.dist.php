@@ -12,10 +12,14 @@ $finder = PhpCsFixer\Finder::create()
     ->notName('*.blade.php')
     ->ignoreDotFiles(true)
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->ignoreVCS(true)
 =======
     ->ignoreVCS(true);
 >>>>>>> 2024e2e7 (.)
+=======
+    ->ignoreVCS(true);
+>>>>>>> f589f9b2 (.)
 
 $config = new PhpCsFixer\Config();
 
@@ -43,9 +47,13 @@ $config
         'elseif' => true,
     ])
 <<<<<<< HEAD
+<<<<<<< HEAD
     ->setFinder($finder)
 =======
     ->setFinder($finder);
 >>>>>>> 2024e2e7 (.)
+=======
+    ->setFinder($finder);
+>>>>>>> f589f9b2 (.)
 
 return $config;

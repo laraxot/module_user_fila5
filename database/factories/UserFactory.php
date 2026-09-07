@@ -6,6 +6,7 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
 use Modules\User\Models\User;
@@ -23,6 +24,8 @@ class UserFactory extends Factory
      * Define the model's default state.
      *
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Modules\User\Models\User;
@@ -38,12 +41,16 @@ class UserFactory extends Factory
      * @return array<string, mixed>
      */
     /**
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      * @return array<string, mixed>
      */
     public function definition(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
             'first_name' => fake()->firstName(),
             'last_name' => fake()->lastName(),
@@ -66,6 +73,8 @@ class UserFactory extends Factory
     {
         return $this->state(fn(array $_attributes) => [
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'id' => (string) Str::uuid(),
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
@@ -82,11 +91,15 @@ class UserFactory extends Factory
     public function active(): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'is_active' => true,
         ]);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Indicate that the user should be inactive.
@@ -99,10 +112,16 @@ class UserFactory extends Factory
     {
         return $this->state(fn (): array => [
 >>>>>>> 2024e2e7 (.)
+=======
+    public function inactive(): static
+    {
+        return $this->state(fn (): array => [
+>>>>>>> f589f9b2 (.)
             'is_active' => false,
         ]);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * Indicate that the user's email address should be unverified.
@@ -111,6 +130,8 @@ class UserFactory extends Factory
     {
         return $this->state(fn(array $_attributes) => [
 =======
+=======
+>>>>>>> f589f9b2 (.)
     public function verified(): static
     {
         return $this->state(fn (): array => [
@@ -121,7 +142,10 @@ class UserFactory extends Factory
     public function unverified(): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'email_verified_at' => null,
         ]);
     }

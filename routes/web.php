@@ -13,11 +13,14 @@ use Modules\Xot\Datas\XotData;
 require 'socialite.php';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 if (XotData::make()->register_pub_theme) {
     // require 'web_tall.php';
 } else {
     Route::get('/login', static fn() => redirect('/admin/login'))->name('login');
 =======
+=======
+>>>>>>> f589f9b2 (.)
 try {
     if (class_exists(XotData::class)) {
         $xotData = XotData::make();
@@ -31,13 +34,20 @@ try {
     }
 } catch (Throwable $e) {
     Route::get('/login', static fn () => redirect('/admin/login'))->name('login');
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }
 
 Route::post('/logout', LogoutController::class)->name('logout');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 //Route::get('/upgrade', 'UpgradeController');
 =======
 // Route::get('/upgrade', 'UpgradeController');
 >>>>>>> 2024e2e7 (.)
+=======
+// Route::get('/upgrade', 'UpgradeController');
+>>>>>>> f589f9b2 (.)

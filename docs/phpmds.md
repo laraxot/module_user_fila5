@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Modules/User/app/Actions/GetCurrentDeviceAction.php:23                                                              CyclomaticComplexity    The method execute() has a Cyclomatic Complexity of 11. The configured cyclomatic complexity threshold is 10.
 Modules/User/app/Actions/GetCurrentDeviceAction.php:23                                                              NPathComplexity         The method execute() has an NPath complexity of 640. The configured NPath complexity threshold is 200.
 Modules/User/app/Actions/GetCurrentDeviceAction.php:23                                                              CamelCaseParameterName  The parameter $mobile_id is not named in camelCase.
@@ -500,6 +501,8 @@ Modules/User/app/Rules/CheckOtpExpiredRule.php:35                               
 Modules/User/app/Rules/CheckOtpExpiredRule.php:37                                                                   CamelCaseVariableName   The variable $otp_expires_at is not named in camelCase.
 Modules/User/app/View/Components/Mail/Message.php:30                                                                CamelCaseVariableName   The variable $view_params is not named in camelCase.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpmds
@@ -516,4 +519,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpmd-errors.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

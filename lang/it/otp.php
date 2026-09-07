@@ -25,20 +25,29 @@ return [
             'label' => 'Password Attuale',
             'validation_attribute' => 'password_attuale',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'password' => [
             'label' => 'Nuova Password',
             'validation_attribute' => 'password',
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -48,7 +57,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'reset_password' => 'Reimposta Password',
@@ -102,10 +114,13 @@ return [
         'yes_send_otp' => 'Si, Invia Codice OTP',
         'confirm_otp' => 'Sei sicuro di voler inviare una password temporanea a questo utente? Sarà richiesto di cambiarla al primo accesso.',
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Are you sure you want to send a temporary password to this user? They will be required to change it upon first login.
         // Temporary password sent successfully.
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'send_otp_success' => 'Password temporanea inviata con successo.',
     ],
     'navigation' => [
@@ -120,8 +135,13 @@ return [
         'icon' => 'user-user-otp',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'label' => 'Otp',
     'plural_label' => 'Otp (Plurale)',
 >>>>>>> 2024e2e7 (.)
+=======
+    'label' => 'Otp',
+    'plural_label' => 'Otp (Plurale)',
+>>>>>>> f589f9b2 (.)
 ];

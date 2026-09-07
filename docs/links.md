@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://packagist.org/packages/althinect/filament-spatie-roles-permissions
 
 
@@ -21,6 +22,8 @@ https://codebrisk.com/blog/easily-add-face-authentication-to-your-laravel-applic
 ----- molti pacchetti interessanti --
 https://codebrisk.com/blog/categories/laravel-packages
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: links
@@ -37,4 +40,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/links-Modules.txt
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

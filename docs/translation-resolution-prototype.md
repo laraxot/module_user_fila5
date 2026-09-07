@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Translation Conflict Resolution Prototype
 
 ## Overview
@@ -26,6 +27,8 @@ This document describes the prototype for resolving Git conflicts in Laravel tra
 
 ### Step 1: Parse Conflict Markers
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: translation-resolution-prototype
@@ -42,4 +45,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-conflict-resolution-prototype.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

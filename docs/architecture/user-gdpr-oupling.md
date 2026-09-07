@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Decoupling User-GDPR via Event/Listener Pattern
 
 ## Overview
@@ -98,6 +99,8 @@ The same pattern can be used for:
 **Date**: 2026-02-09
 **Architectural Decision**: ADR-001
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: user-gdpr-oupling
@@ -114,4 +117,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/user-gdpr-decoupling.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

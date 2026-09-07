@@ -6,10 +6,13 @@ namespace Modules\User\Providers;
 
 use Carbon\CarbonInterval;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Passport\Passport;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\ServiceProvider;
 use Laravel\Passport\AuthCode;
 use Laravel\Passport\Client;
@@ -17,7 +20,10 @@ use Laravel\Passport\DeviceCode;
 use Laravel\Passport\Passport;
 use Laravel\Passport\RefreshToken;
 use Laravel\Passport\Token;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\OauthAuthCode;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthDeviceCode;
@@ -83,6 +89,7 @@ class PassportServiceProvider extends ServiceProvider
         Assert::isArray($tokens);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         Passport::tokensExpireIn(
             CarbonInterval::days((int) ($tokens['access_token'] ?? 15))
         );
@@ -94,6 +101,8 @@ class PassportServiceProvider extends ServiceProvider
         Passport::personalAccessTokensExpireIn(
             CarbonInterval::months((int) ($tokens['personal_access_token'] ?? 6))
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $accessToken = $tokens['access_token'] ?? 15;
         Assert::integer($accessToken);
         $refreshToken = $tokens['refresh_token'] ?? 30;
@@ -111,7 +120,10 @@ class PassportServiceProvider extends ServiceProvider
 
         Passport::personalAccessTokensExpireIn(
             CarbonInterval::months($personalAccessToken)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         );
     }
 
@@ -129,6 +141,7 @@ class PassportServiceProvider extends ServiceProvider
         $tokenModel = $models['token'] ?? OauthToken::class;
         Assert::stringNotEmpty($tokenModel);
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::subclassOf($tokenModel, \Laravel\Passport\Token::class);
 
         $refreshTokenModel = $models['refresh_token'] ?? OauthRefreshToken::class;
@@ -143,6 +156,8 @@ class PassportServiceProvider extends ServiceProvider
         Assert::stringNotEmpty($clientModel);
         Assert::subclassOf($clientModel, \Laravel\Passport\Client::class);
 =======
+=======
+>>>>>>> f589f9b2 (.)
         Assert::subclassOf($tokenModel, Token::class);
 
         $refreshTokenModel = $models['refresh_token'] ?? OauthRefreshToken::class;
@@ -156,13 +171,17 @@ class PassportServiceProvider extends ServiceProvider
         $clientModel = config('user.passport.client_model', OauthClient::class);
         Assert::stringNotEmpty($clientModel);
         Assert::subclassOf($clientModel, Client::class);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
         Passport::useTokenModel($tokenModel);
         Passport::useRefreshTokenModel($refreshTokenModel);
         Passport::useAuthCodeModel($authCodeModel);
         Passport::useClientModel($clientModel);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         // @phpstan-ignore-next-line - method_exists check kept for backward compatibility with older Passport versions
         if (method_exists(Passport::class, 'useDeviceCodeModel')) {
@@ -172,11 +191,16 @@ class PassportServiceProvider extends ServiceProvider
             Passport::useDeviceCodeModel($deviceCodeModel);
         }
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $deviceCodeModel = $models['device_code'] ?? OauthDeviceCode::class;
         Assert::stringNotEmpty($deviceCodeModel);
         Assert::subclassOf($deviceCodeModel, DeviceCode::class);
         Passport::useDeviceCodeModel($deviceCodeModel);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     /**
@@ -204,6 +228,7 @@ class PassportServiceProvider extends ServiceProvider
 
         if (! empty($scopes)) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             // PHPStan: dopo i controlli Assert, l'array è garantito essere array<string, string>
             /** @var array<string, string> $typedScopes */
             $typedScopes = $scopes;
@@ -211,6 +236,9 @@ class PassportServiceProvider extends ServiceProvider
 =======
             Passport::tokensCan($scopes);
 >>>>>>> 2024e2e7 (.)
+=======
+            Passport::tokensCan($scopes);
+>>>>>>> f589f9b2 (.)
         }
     }
 

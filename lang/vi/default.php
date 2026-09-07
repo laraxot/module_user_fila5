@@ -127,6 +127,7 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'email' => 'Email',
         'login' => 'Đăng nhập',
         'name' => 'Tên',
@@ -144,6 +145,8 @@ return [
     'or' => 'Hoặc',
     'cancel' => 'Hủy',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'email' => [
             'label' => 'Email',
             'tooltip' => '',
@@ -236,5 +239,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

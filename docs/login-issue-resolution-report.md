@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Risoluzione Problema Login - Report Finale (Aggiornato)
 
 ## Prologo: La Sfida degli Agenti
@@ -47,6 +48,8 @@ Dopo un'analisi approfondita su oltre 120 widget nel progetto, è emerso che def
 ## Mantra Zen
 "Il form deve essere preparato prima di essere servito. La mancanza di inizializzazione è il vuoto che impedisce alla sostanza di manifestarsi."
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: login-issue-resolution-report
@@ -63,4 +66,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/login-issue-resolution-report.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

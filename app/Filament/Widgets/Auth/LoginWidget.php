@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets\Auth;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Support\Facades\Auth;
@@ -44,6 +45,8 @@ class LoginWidget extends XotBaseWidget
             Checkbox::make('remember'),
         ];
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -75,15 +78,22 @@ class LoginWidget extends XotBaseSchemaWidget
     protected static function schemaMethod(): string
     {
         return 'getLoginFormSchema';
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     public function login(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         /** @var array<string, mixed> $data */
 >>>>>>> 2024e2e7 (.)
+=======
+        /** @var array<string, mixed> $data */
+>>>>>>> f589f9b2 (.)
         $data = $this->form->getState();
 
         $credentials = [
@@ -92,6 +102,7 @@ class LoginWidget extends XotBaseSchemaWidget
         ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (Auth::attempt($credentials)) {
             session()->regenerate();
             redirect()->intended('/');
@@ -99,6 +110,8 @@ class LoginWidget extends XotBaseSchemaWidget
 
         $this->addError('email', __('auth.failed'));
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $remember = isset($data['remember']) && $data['remember'] === true;
 
         if (Auth::attempt($credentials, $remember)) {
@@ -118,6 +131,9 @@ class LoginWidget extends XotBaseSchemaWidget
     public function save(): void
     {
         $this->login();
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

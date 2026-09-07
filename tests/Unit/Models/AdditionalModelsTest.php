@@ -3,10 +3,13 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(Modules\User\Tests\TestCase::class);
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\Authentication;
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Device;
@@ -28,6 +31,7 @@ use Modules\User\Models\SocialProvider;
 use Modules\User\Models\SsoProvider;
 use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\TeamPermission;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 test('Notification model can be instantiated', function () {
@@ -134,6 +138,8 @@ test('PasswordReset model can be instantiated', function () {
     $model = new PasswordReset();
     expect($model)->toBeInstanceOf(PasswordReset::class);
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -242,5 +248,8 @@ test('DeviceUser model can be instantiated', function () {
 test('PasswordReset model can be instantiated', function () {
     $model = new PasswordReset;
     Assert::assertInstanceOf(PasswordReset::class, $model);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Model;
@@ -43,6 +44,8 @@ test('base user has authentication traits', function () {
     expect($traits)->toContain(User::class);
     expect($traits)->toContain(Notifiable::class);
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Notifications\Notifiable;
@@ -82,5 +85,8 @@ describe('Base User', function (): void {
 
         Assert::assertContains(Notifiable::class, $traits);
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

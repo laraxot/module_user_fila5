@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'navigation' => [
         'name' => 'Permessi',
@@ -22,18 +25,25 @@ return [
         'name' => [
             'label' => 'Nome Permesso',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => 'Inserisci il nome del permesso, ad esempio \"Accesso Admin\".',
             'placeholder' => 'Nome del permesso',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => 'Inserisci il nome del permesso, ad esempio \\"Accesso Admin\\".',
             'placeholder' => 'Nome del permesso',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Specifica la guardia associata al permesso.',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'placeholder' => 'Nome della guardia, es. \"web\"',
 =======
@@ -41,56 +51,84 @@ return [
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'placeholder' => 'Nome della guardia, es. \\"web\\"',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'roles' => [
             'label' => 'Ruoli',
             'tooltip' => 'Seleziona i ruoli a cui assegnare il permesso.',
             'placeholder' => 'Seleziona uno o più ruoli',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'users' => [
             'label' => 'Utenti',
             'tooltip' => 'Seleziona gli utenti a cui assegnare il permesso.',
             'placeholder' => 'Seleziona uno o più utenti',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'tooltip' => 'La data in cui il permesso è stato creato.',
             'placeholder' => 'Data di creazione',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'tooltip' => 'La data dell\'ultima modifica al permesso.',
             'placeholder' => 'Ultima modifica',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Fornisci una breve descrizione del permesso.',
             'placeholder' => 'Descrizione del permesso',
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
         'applyFilters' => [
             'label' => 'applyFilters',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'helper_text' => '',
             'description' => '',
         ],
@@ -99,7 +137,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'actions' => [
@@ -183,8 +224,13 @@ return [
         'full' => 'Accesso Completo',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 >>>>>>> 2024e2e7 (.)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> f589f9b2 (.)
 ];

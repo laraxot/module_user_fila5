@@ -57,10 +57,14 @@ return [
             'not_enabled' => [
                 'title' => 'Nuk keni aktivizuar autentifikimin me dy faktorë.',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'description' => "Kur aktivizohet autentifikimi me dy faktorë, do t'ju kërkohet një kod i sigurt dhe e rastësishme gjatë vërtetimit. Ju mund ta merrni këtë kod nga aplikacioni Google Authenticator në telefonin tuaj.",
 =======
                 'description' => 'Kur aktivizohet autentifikimi me dy faktorë, do t\'ju kërkohet një kod i sigurt dhe e rastësishme gjatë vërtetimit. Ju mund ta merrni këtë kod nga aplikacioni Google Authenticator në telefonin tuaj.',
 >>>>>>> 2024e2e7 (.)
+=======
+                'description' => 'Kur aktivizohet autentifikimi me dy faktorë, do t\'ju kërkohet një kod i sigurt dhe e rastësishme gjatë vërtetimit. Ju mund ta merrni këtë kod nga aplikacioni Google Authenticator në telefonin tuaj.',
+>>>>>>> f589f9b2 (.)
             ],
             'finish_enabling' => [
                 'title' => 'Përfundo aktivizimin e autentifikimit me dy faktorë.',
@@ -107,6 +111,7 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'avatar' => 'Avatar',
         'email' => 'Email',
         'login' => 'Identifikohu',
@@ -126,6 +131,8 @@ return [
     'or' => 'Ose',
     'cancel' => 'Anullo',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -230,5 +237,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

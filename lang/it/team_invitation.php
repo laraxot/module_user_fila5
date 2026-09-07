@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Team Invitations',
         'group' => 'Teams',
@@ -42,6 +45,7 @@ return [
         'delete' => [
             'label' => 'Elimina Team Invitation',
         ],
+<<<<<<< HEAD
 =======
     'navigation' => ['label' => 'Team Invitations', 'group' => 'Teams', 'icon' => 'heroicon-o-envelope', 'sort' => 34],
     'label' => 'Team Invitation',
@@ -60,5 +64,7 @@ return [
         'delete' => ['label' => 'Elimina Team Invitation', 'icon' => 'delete', 'tooltip' => 'delete'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     ],
 ];

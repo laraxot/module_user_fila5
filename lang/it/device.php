@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     // NAVIGATION & STRUCTURE
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Dispositivi',
         'plural_label' => 'Dispositivi',
@@ -12,24 +15,33 @@ return [
             'name' => 'Sicurezza',
             'description' => 'Gestione dispositivi e sicurezza',
         ],
+<<<<<<< HEAD
 =======
     'navigation' => [
         'label' => 'Dispositivi',
         'plural_label' => 'Dispositivi',
         'group' => ['name' => 'Sicurezza', 'description' => 'Gestione dispositivi e sicurezza'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'sort' => 50,
         'icon' => 'heroicon-o-device-phone-mobile',
         'badge' => 'Gestione dispositivi utente',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     // MODEL INFORMATION
+=======
+>>>>>>> f589f9b2 (.)
     'model' => [
         'label' => 'Dispositivo',
         'plural' => 'Dispositivi',
         'description' => 'Gestione e monitoraggio dei dispositivi degli utenti',
     ],
+<<<<<<< HEAD
     // FIELDS - STRUTTURA ESPANSA OBBLIGATORIA
+=======
+>>>>>>> f589f9b2 (.)
     'fields' => [
         'uuid' => [
             'label' => 'UUID',
@@ -37,6 +49,10 @@ return [
             'tooltip' => 'Identificativo univoco universale',
             'helper_text' => 'Codice alfanumerico che identifica in modo univoco il dispositivo nel sistema',
             'help' => 'Identificativo univoco del dispositivo',
+<<<<<<< HEAD
+=======
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'mobile_id' => [
             'label' => 'Mobile ID',
@@ -44,13 +60,23 @@ return [
             'tooltip' => 'Identificativo specifico per dispositivi mobili',
             'helper_text' => 'Codice utilizzato per identificare il dispositivo nelle applicazioni mobile',
             'help' => 'Identificativo mobile del dispositivo',
+<<<<<<< HEAD
+=======
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'languages' => [
             'label' => 'Lingue',
             'placeholder' => 'Aggiungi una lingua',
             'tooltip' => 'Lingue supportate dal dispositivo',
+<<<<<<< HEAD
             'helper_text' => 'Elenco delle lingue configurate o supportate dal dispositivo (formato: it, en, es)',
             'help' => 'Seleziona o digita i codici delle lingue (es. it, en, es)',
+=======
+            'helper_text' => 'Elenco delle lingue configurate o supportate dal dispositivo (formato: it, en, es]',
+            'help' => 'Seleziona o digita i codici delle lingue (es. it, en, es]',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'device' => [
             'label' => 'Nome Dispositivo',
@@ -58,20 +84,34 @@ return [
             'tooltip' => 'Nome identificativo del dispositivo',
             'helper_text' => 'Nome descrittivo o modello del dispositivo utilizzato dall\'utente',
             'help' => 'Nome del dispositivo',
+<<<<<<< HEAD
+=======
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'platform' => [
             'label' => 'Piattaforma',
             'placeholder' => 'Inserisci la piattaforma',
             'tooltip' => 'Sistema operativo del dispositivo',
             'helper_text' => 'Sistema operativo o piattaforma su cui funziona il dispositivo',
+<<<<<<< HEAD
             'help' => 'Piattaforma del dispositivo (iOS, Android, Windows, Linux, macOS)',
+=======
+            'help' => 'Piattaforma del dispositivo (iOS, Android, Windows, Linux, macOS]',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'browser' => [
             'label' => 'Browser',
             'placeholder' => 'Inserisci il browser',
             'tooltip' => 'Browser web utilizzato',
             'helper_text' => 'Applicazione browser utilizzata per navigare su internet',
+<<<<<<< HEAD
             'help' => 'Browser utilizzato (Chrome, Firefox, Safari, Edge)',
+=======
+            'help' => 'Browser utilizzato (Chrome, Firefox, Safari, Edge]',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'version' => [
             'label' => 'Versione',
@@ -79,6 +119,10 @@ return [
             'tooltip' => 'Versione del software',
             'helper_text' => 'Numero di versione del browser o del sistema operativo',
             'help' => 'Versione del browser o sistema operativo',
+<<<<<<< HEAD
+=======
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'is_robot' => [
             'label' => 'È Robot',
@@ -86,13 +130,22 @@ return [
             'tooltip' => 'Indica se è un bot automatizzato',
             'helper_text' => 'Specifica se il dispositivo è utilizzato da un robot o sistema automatizzato',
             'help' => 'Indica se il dispositivo è un robot o bot automatizzato',
+<<<<<<< HEAD
+=======
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'robot' => [
             'label' => 'Robot',
             'placeholder' => 'Inserisci il tipo di robot',
             'tooltip' => 'Tipo specifico di robot',
             'helper_text' => 'Nome o tipo del robot/crawler se il dispositivo è automatizzato',
+<<<<<<< HEAD
             'help' => 'Tipo di robot se applicabile (Googlebot, Bingbot, etc.)',
+=======
+            'help' => 'Tipo di robot se applicabile (Googlebot, Bingbot, etc.]',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'is_desktop' => [
             'label' => 'È Desktop',
@@ -100,13 +153,23 @@ return [
             'tooltip' => 'Dispositivo desktop o computer fisso',
             'helper_text' => 'Indica se si tratta di un computer desktop o workstation fissa',
             'help' => 'Indica se è un dispositivo desktop o computer fisso',
+<<<<<<< HEAD
+=======
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'is_mobile' => [
             'label' => 'È Mobile',
             'placeholder' => 'Seleziona se è mobile',
             'tooltip' => 'Dispositivo mobile portatile',
+<<<<<<< HEAD
             'helper_text' => 'Specifica se il dispositivo è mobile (smartphone, tablet o dispositivo portatile)',
             'help' => 'Indica se è un dispositivo mobile (smartphone o tablet)',
+=======
+            'helper_text' => 'Specifica se il dispositivo è mobile (smartphone, tablet o dispositivo portatile]',
+            'help' => 'Indica se è un dispositivo mobile (smartphone o tablet]',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'is_tablet' => [
             'label' => 'È Tablet',
@@ -114,6 +177,10 @@ return [
             'tooltip' => 'Dispositivo tablet con schermo touch',
             'helper_text' => 'Indica se si tratta di un tablet o dispositivo con schermo di medie dimensioni',
             'help' => 'Indica se è un tablet o dispositivo con schermo di medie dimensioni',
+<<<<<<< HEAD
+=======
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'is_phone' => [
             'label' => 'È Telefono',
@@ -121,6 +188,7 @@ return [
             'tooltip' => 'Smartphone o telefono cellulare',
             'helper_text' => 'Specifica se il dispositivo è uno smartphone o telefono cellulare',
             'help' => 'Indica se è uno smartphone o telefono cellulare',
+<<<<<<< HEAD
         ],
     ],
     // ACTIONS - STRUTTURA ESPANSA OBBLIGATORIA
@@ -145,6 +213,11 @@ return [
         'logout_at' => ['label' => 'logout_at'],
     ],
 >>>>>>> 2024e2e7 (.)
+=======
+            'description' => '',
+        ],
+    ],
+>>>>>>> f589f9b2 (.)
     'actions' => [
         'create' => [
             'label' => 'Crea Dispositivo',
@@ -152,6 +225,9 @@ return [
             'color' => 'primary',
             'tooltip' => 'Aggiungi un nuovo dispositivo al sistema',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
             'modal' => [
                 'heading' => 'Crea Nuovo Dispositivo',
                 'description' => 'Inserisci i dettagli del nuovo dispositivo da aggiungere',
@@ -162,10 +238,13 @@ return [
                 'success' => 'Dispositivo creato con successo',
                 'error' => 'Si è verificato un errore durante la creazione del dispositivo',
             ],
+<<<<<<< HEAD
 =======
             'modal' => ['heading' => 'Crea Nuovo Dispositivo', 'description' => 'Inserisci i dettagli del nuovo dispositivo da aggiungere', 'confirm' => 'Crea', 'cancel' => 'Annulla'],
             'messages' => ['success' => 'Dispositivo creato con successo', 'error' => 'Si è verificato un errore durante la creazione del dispositivo'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'edit' => [
             'label' => 'Modifica Dispositivo',
@@ -173,6 +252,9 @@ return [
             'color' => 'warning',
             'tooltip' => 'Modifica i dettagli del dispositivo selezionato',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
             'modal' => [
                 'heading' => 'Modifica Dispositivo',
                 'description' => 'Aggiorna le informazioni del dispositivo',
@@ -183,10 +265,13 @@ return [
                 'success' => 'Dispositivo modificato con successo',
                 'error' => 'Si è verificato un errore durante la modifica del dispositivo',
             ],
+<<<<<<< HEAD
 =======
             'modal' => ['heading' => 'Modifica Dispositivo', 'description' => 'Aggiorna le informazioni del dispositivo', 'confirm' => 'Salva modifiche', 'cancel' => 'Annulla'],
             'messages' => ['success' => 'Dispositivo modificato con successo', 'error' => 'Si è verificato un errore durante la modifica del dispositivo'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'delete' => [
             'label' => 'Elimina Dispositivo',
@@ -194,6 +279,9 @@ return [
             'color' => 'danger',
             'tooltip' => 'Elimina definitivamente il dispositivo dal sistema',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
             'modal' => [
                 'heading' => 'Elimina Dispositivo',
                 'description' => 'Sei sicuro di voler eliminare questo dispositivo? Questa azione è irreversibile.',
@@ -211,18 +299,24 @@ return [
             'color' => 'secondary',
             'tooltip' => 'Visualizza i dettagli del dispositivo',
         ],
+<<<<<<< HEAD
 =======
             'modal' => ['heading' => 'Elimina Dispositivo', 'description' => 'Sei sicuro di voler eliminare questo dispositivo? Questa azione è irreversibile.', 'confirm' => 'Elimina', 'cancel' => 'Annulla'],
             'messages' => ['success' => 'Dispositivo eliminato con successo', 'error' => 'Si è verificato un errore durante l\'eliminazione del dispositivo'],
         ],
         'view' => ['label' => 'Visualizza Dispositivo', 'icon' => 'heroicon-o-eye', 'color' => 'secondary', 'tooltip' => 'Visualizza i dettagli del dispositivo'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'bulk_delete' => [
             'label' => 'Elimina Selezionati',
             'icon' => 'heroicon-o-trash',
             'color' => 'danger',
             'tooltip' => 'Elimina tutti i dispositivi selezionati',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
             'modal' => [
                 'heading' => 'Elimina Dispositivi Selezionati',
                 'description' => 'Sei sicuro di voler eliminare tutti i dispositivi selezionati? Questa azione è irreversibile.',
@@ -235,7 +329,10 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     // SECTIONS - ORGANIZZAZIONE FORM
+=======
+>>>>>>> f589f9b2 (.)
     'sections' => [
         'device_info' => [
             'label' => 'Informazioni Dispositivo',
@@ -248,6 +345,7 @@ return [
         'browser_info' => [
             'label' => 'Informazioni Browser',
             'description' => 'Dettagli del browser utilizzato',
+<<<<<<< HEAD
             // FILTERS - RICERCA E FILTRI
         ],
 =======
@@ -263,11 +361,17 @@ return [
         'device_type' => ['label' => 'Tipo Dispositivo', 'description' => 'Categoria e classificazione del dispositivo'],
         'browser_info' => ['label' => 'Informazioni Browser', 'description' => 'Dettagli del browser utilizzato'],
 >>>>>>> 2024e2e7 (.)
+=======
+        ],
+>>>>>>> f589f9b2 (.)
     ],
     'filters' => [
         'platform' => [
             'label' => 'Piattaforma',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
             'options' => [
                 'ios' => 'iOS',
                 'android' => 'Android',
@@ -293,6 +397,7 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     // MESSAGES - FEEDBACK UTENTE
 =======
             'options' => ['ios' => 'iOS', 'android' => 'Android', 'windows' => 'Windows', 'linux' => 'Linux', 'macos' => 'macOS'],
@@ -307,12 +412,17 @@ return [
         ],
     ],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'messages' => [
         'empty_state' => 'Nessun dispositivo trovato',
         'search_placeholder' => 'Cerca dispositivi...',
         'loading' => 'Caricamento dispositivi in corso...',
 <<<<<<< HEAD
+<<<<<<< HEAD
         // VALIDATION - MESSAGGI DI VALIDAZIONE
+=======
+>>>>>>> f589f9b2 (.)
         'validation' => [
             'uuid_required' => 'L\'UUID è obbligatorio',
             'uuid_unique' => 'Questo UUID è già in uso',
@@ -320,7 +430,10 @@ return [
             'device_required' => 'Il nome del dispositivo è obbligatorio',
             'languages_array' => 'Le lingue devono essere un array',
         ],
+<<<<<<< HEAD
         // OPTIONS - OPZIONI E VALORI PREDEFINITI
+=======
+>>>>>>> f589f9b2 (.)
         'options' => [
             'platforms' => [
                 'ios' => 'iOS',
@@ -342,6 +455,7 @@ return [
         ],
         'total_devices' => 'Totale dispositivi: :count',
     ],
+<<<<<<< HEAD
 =======
         'validation' => ['uuid_required' => 'L\'UUID è obbligatorio', 'uuid_unique' => 'Questo UUID è già in uso', 'platform_required' => 'La piattaforma è obbligatoria', 'device_required' => 'Il nome del dispositivo è obbligatorio', 'languages_array' => 'Le lingue devono essere un array'],
         'options' => [
@@ -354,4 +468,8 @@ return [
     'label' => 'Device',
     'plural_label' => 'Device (Plurale)',
 >>>>>>> 2024e2e7 (.)
+=======
+    'label' => 'Device',
+    'plural_label' => 'Device (Plurale)',
+>>>>>>> f589f9b2 (.)
 ];

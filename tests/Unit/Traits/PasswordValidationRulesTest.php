@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(Modules\User\Tests\TestCase::class);
 
 use Modules\User\Traits\PasswordValidationRules;
@@ -41,6 +42,8 @@ test('PasswordValidationRules trait provides passwordRules method', function () 
     expect($rules)->toBeArray()
         ->and($rules)->toHaveCount(3);
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Unit\Traits;
 
 use Modules\User\Tests\TestCase;
@@ -72,5 +75,8 @@ describe('Password Validation Rules', function (): void {
         Assert::assertSame('string', $rules[1]);
         Assert::assertSame('confirmed', $rules[3]);
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

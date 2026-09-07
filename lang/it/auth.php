@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Messaggi generali di autenticazione
     'failed' => 'Credenziali non valide.',
     'password' => 'La password inserita non è corretta.',
@@ -26,6 +27,8 @@ return [
     'Sign in' => 'Accedi',
     'login-in' => 'Accedi',
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'failed' => [
         'key' => 'user::auth.messages.failed',
         'text' => 'Credenziali non valide.',
@@ -153,7 +156,10 @@ return [
         'context' => 'login_form',
         'placeholder' => '',
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'sign-up' => 'Registrati',
     'password_expired' => [
         'title' => 'Password Scaduta, Reimposta Password',
@@ -201,6 +207,7 @@ return [
     'name' => 'Nome',
     'confirm_password' => 'Conferma Password',
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Messaggi di stato
     'logout_success' => 'Logout effettuato con successo.',
     'logout_error' => 'Si è verificato un errore durante il logout.',
@@ -218,6 +225,8 @@ return [
         'subtitle' => 'Inserisci le tue credenziali per accedere',
         'email' => 'Indirizzo email',
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'logout_success' => [
         'key' => 'user::auth.logout-success',
         'text' => 'Logout effettuato con successo.',
@@ -360,15 +369,22 @@ return [
             'placeholder' => '',
         ],
         'email' => 'Email',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'email_placeholder' => 'esempio@email.com',
         'password' => 'Password',
         'password_placeholder' => '••••••••',
         'remember' => 'Ricordami',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         'remember_me' => 'Ricordami',
 >>>>>>> 2024e2e7 (.)
+=======
+        'remember_me' => 'Ricordami',
+>>>>>>> f589f9b2 (.)
         'email_structured' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci la tua email',
@@ -380,6 +396,7 @@ return [
         'remember_structured' => [
             'label' => 'Ricordami',
         ],
+<<<<<<< HEAD
 <<<<<<< HEAD
         'submit' => 'Accedi',
         'forgot_password' => 'Password dimenticata?',
@@ -393,6 +410,8 @@ return [
         'login-failed' => 'Login fallito, riprova.',
         'user-not-allowed' => 'La tua email non è autorizzata.',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'submit' => [
             'key' => 'user::auth.login.submit',
             'text' => 'Accedi',
@@ -476,7 +495,10 @@ return [
             'context' => 'login_form',
             'placeholder' => '',
         ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'login-in' => 'Accedi',
         'Sign in' => 'Accedi',
         'Sign in to your account' => 'Accedi al tuo account',
@@ -487,6 +509,7 @@ return [
         'Remember me' => 'Ricordami',
         'Remember' => 'Ricordami',
         'Forgot your password?' => 'Password dimenticata?',
+<<<<<<< HEAD
 <<<<<<< HEAD
     ],
     // Registrazione
@@ -508,6 +531,8 @@ return [
         'login' => 'Accedi',
         // Structured version
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'page' => [
             'meta_title' => [
                 'label' => 'Accedi ai servizi',
@@ -711,7 +736,10 @@ return [
             'context' => 'registration_form',
             'placeholder' => '',
         ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'name_structured' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il tuo nome completo',
@@ -730,6 +758,7 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Password dimenticata
     'forgot_password' => [
         'title' => 'Password dimenticata?',
@@ -742,6 +771,8 @@ return [
         'back_to_login' => 'Torna al login',
         // Structured version
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'forgot_password' => [
         'title' => [
             'key' => 'user::auth.forgot-password-title',
@@ -792,12 +823,16 @@ return [
             'context' => 'forgot_password',
             'placeholder' => '',
         ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'email_structured' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci la tua email',
         ],
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
     // Reset password
     'reset_password' => [
@@ -825,6 +860,8 @@ return [
         ],
         // Structured version
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'reset_password' => [
         'title' => [
             'key' => 'user::auth.reset-password-title',
@@ -935,7 +972,10 @@ return [
                 'placeholder' => '',
             ],
         ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'email_structured' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci la tua email',
@@ -949,6 +989,7 @@ return [
             'placeholder' => 'Conferma la nuova password',
         ],
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
     // Verifica Email
     'verification' => [
@@ -977,6 +1018,8 @@ return [
     ],
     // Password Reset Widget - specific translations
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'verification' => [
         'title' => [
             'key' => 'user::auth.verification-title',
@@ -1102,7 +1145,10 @@ return [
             'placeholder' => '',
         ],
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'password_reset' => [
         'email_placeholder' => 'Inserisci il tuo indirizzo email',
         'send_button' => 'Invia link di reset',
@@ -1143,16 +1189,21 @@ return [
             'possible_causes' => 'Possibili cause:',
             'causes' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'expired_token' => 'Il link di reset è scaduto (valido per 60 minuti)',
 =======
                 'expired_token' => 'Il link di reset è scaduto (valido per 60 minuti]',
 >>>>>>> 2024e2e7 (.)
+=======
+                'expired_token' => 'Il link di reset è scaduto (valido per 60 minuti]',
+>>>>>>> f589f9b2 (.)
                 'invalid_email' => 'L\'indirizzo email non corrisponde a nessun account',
                 'already_used' => 'Il link di reset è già stato utilizzato',
             ],
             'try_again' => 'Riprova',
         ],
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
     // Reset Password
     'passwords' => [
@@ -1162,6 +1213,8 @@ return [
         'token' => 'Il token di reset password non è valido.',
         'user' => 'Non riusciamo a trovare un utente con questo indirizzo email.',
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'passwords' => [
         'reset' => [
             'key' => 'user::auth.passwords.reset',
@@ -1303,6 +1356,9 @@ return [
         'profile' => 'Il mio profilo',
         'dashboard' => 'Dashboard',
         'personal_area' => 'Accedi all\'area personale',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     ],
 ];

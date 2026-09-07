@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
 
 use Filament\Schemas\Components\Component;
@@ -20,6 +21,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Notifications\Notification;
@@ -29,13 +32,17 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 /**
  * LoginWidget: Widget di login conforme alle regole Windsurf/Xot.
  * - Estende XotBaseWidget
  * - Usa solo componenti Filament importati
  * - Validazione e sicurezza integrate
+<<<<<<< HEAD
 <<<<<<< HEAD
  * - Facilmente estendibile (2FA, captcha, login social)
  *
@@ -59,6 +66,8 @@ class LoginWidget extends XotBaseWidget
      *
      * @return void
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * - Facilmente estendibile (2FA, captcha, login social).
  *
  * @property array<string, mixed>|null $data
@@ -81,7 +90,10 @@ class LoginWidget extends XotBaseSchemaWidget
 
     /**
      * Inizializza il widget quando viene montato.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     public function mount(): void
     {
@@ -94,9 +106,12 @@ class LoginWidget extends XotBaseSchemaWidget
      * @return array<int, Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public function getFormSchema(): array
     {
         return [
@@ -114,6 +129,7 @@ class LoginWidget extends XotBaseSchemaWidget
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get the form model.
      *
      * @return Model|null
@@ -127,14 +143,19 @@ class LoginWidget extends XotBaseSchemaWidget
     /**
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      * Get the form fill data.
      *
      * @return array<string, mixed>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public function getFormFill(): array
     {
         return [
@@ -146,6 +167,7 @@ class LoginWidget extends XotBaseSchemaWidget
     /**
      * Handle login form submission.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return void
      */
@@ -153,6 +175,9 @@ class LoginWidget extends XotBaseSchemaWidget
 =======
      */
 >>>>>>> 2024e2e7 (.)
+=======
+     */
+>>>>>>> f589f9b2 (.)
     public function save(): void
     {
         try {
@@ -163,6 +188,7 @@ class LoginWidget extends XotBaseSchemaWidget
             $attempt_data = Arr::only($data, ['email', 'password']);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (!Auth::attempt($attempt_data, $remember)) {
                 throw ValidationException::withMessages([
                     'email' => [__('user::messages.credentials_incorrect')],
@@ -171,6 +197,10 @@ class LoginWidget extends XotBaseSchemaWidget
             if (! Auth::attempt($attempt_data, $remember)) {
                 throw ValidationException::withMessages(['email' => [__('user::messages.failed')]]);
 >>>>>>> 2024e2e7 (.)
+=======
+            if (! Auth::attempt($attempt_data, $remember)) {
+                throw ValidationException::withMessages(['email' => [__('user::messages.failed')]]);
+>>>>>>> f589f9b2 (.)
             }
 
             session()->regenerate();
@@ -191,6 +221,7 @@ class LoginWidget extends XotBaseSchemaWidget
             $this->form->fill();
             $this->form->saveRelationships();
 <<<<<<< HEAD
+<<<<<<< HEAD
             //$this->form->callAfter();
 
             foreach ($e->errors() as $field => $messages) {
@@ -199,6 +230,8 @@ class LoginWidget extends XotBaseSchemaWidget
             }
         } catch (Exception $e) {
 =======
+=======
+>>>>>>> f589f9b2 (.)
             // $this->form->callAfter();
 
             foreach ($e->errors() as $field => $messages) {
@@ -213,7 +246,10 @@ class LoginWidget extends XotBaseSchemaWidget
                 )));
             }
         } catch (\Exception $e) {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             report($e);
 
             Notification::make()
@@ -225,16 +261,23 @@ class LoginWidget extends XotBaseSchemaWidget
             $this->form->fill();
             $this->form->saveRelationships();
 <<<<<<< HEAD
+<<<<<<< HEAD
             //$this->form->callAfter();
 =======
             // $this->form->callAfter();
 >>>>>>> 2024e2e7 (.)
+=======
+            // $this->form->callAfter();
+>>>>>>> f589f9b2 (.)
 
             $this->addError('email', __('user::messages.login_error'));
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
     /**
      * Get the form model.
@@ -243,5 +286,8 @@ class LoginWidget extends XotBaseSchemaWidget
     {
         return null;
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

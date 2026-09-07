@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'navigation' => [
         'label' => 'Registrazione Studio',
@@ -30,10 +33,14 @@ return [
         'name' => [
             'label' => 'Nome Studio Medico',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi)',
 =======
             'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi]',
 >>>>>>> 2024e2e7 (.)
+=======
+            'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi]',
+>>>>>>> f589f9b2 (.)
             'help' => 'Nome ufficiale dello studio medico come registrato in camera di commercio',
             'validation' => [
                 'required' => 'Il nome dello studio è obbligatorio',
@@ -41,11 +48,14 @@ return [
                 'max' => 'Il nome non può superare i 100 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
         'phone' => [
             'label' => 'Numero di Telefono Studio',
             'placeholder' => 'Inserisci numero telefonico principale (es. +39 06 1234567)',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -53,7 +63,10 @@ return [
         'phone' => [
             'label' => 'Numero di Telefono Studio',
             'placeholder' => 'Inserisci numero telefonico principale (es. +39 06 1234567]',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'help' => 'Numero di telefono principale dello studio per contatti diretti e urgenze',
             'validation' => [
                 'required' => 'Il numero di telefono è obbligatorio',
@@ -61,11 +74,14 @@ return [
                 'min' => 'Il numero deve contenere almeno 10 cifre',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
         'email' => [
             'label' => 'Email Ufficiale Studio',
             'placeholder' => 'Inserisci email istituzionale (es. info@studiodentistico.it)',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -73,7 +89,10 @@ return [
         'email' => [
             'label' => 'Email Ufficiale Studio',
             'placeholder' => 'Inserisci email istituzionale (es. info@studiodentistico.it]',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'help' => 'Indirizzo email ufficiale dello studio per comunicazioni istituzionali',
             'validation' => [
                 'required' => 'L\'indirizzo email è obbligatorio',
@@ -82,11 +101,14 @@ return [
                 'max' => 'L\'indirizzo email non può superare i 255 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
         'address' => [
             'label' => 'Indirizzo Completo Studio',
             'placeholder' => 'Via/Piazza Nome Strada, Numero Civico, CAP Città (Provincia)',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -94,7 +116,10 @@ return [
         'address' => [
             'label' => 'Indirizzo Completo Studio',
             'placeholder' => 'Via/Piazza Nome Strada, Numero Civico, CAP Città (Provincia]',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'help' => 'Indirizzo fisico completo dello studio medico comprensivo di CAP e provincia',
             'validation' => [
                 'required' => 'L\'indirizzo dello studio è obbligatorio',
@@ -102,11 +127,17 @@ return [
                 'max' => 'L\'indirizzo non può superare i 300 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'director_name' => [
             'label' => 'Nome Direttore Sanitario',
@@ -118,11 +149,17 @@ return [
                 'max' => 'Il nome non può superare i 100 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'director_registration' => [
             'label' => 'Numero Iscrizione Albo Medico',
@@ -134,11 +171,14 @@ return [
                 'min' => 'Il numero di iscrizione deve contenere almeno 3 cifre',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
         'vat_number' => [
             'label' => 'Partita IVA Studio',
             'placeholder' => 'Inserisci partita IVA (11 cifre)',
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -146,7 +186,10 @@ return [
         'vat_number' => [
             'label' => 'Partita IVA Studio',
             'placeholder' => 'Inserisci partita IVA (11 cifre]',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'help' => 'Partita IVA dello studio medico registrata presso l\'Agenzia delle Entrate',
             'validation' => [
                 'required' => 'La partita IVA è obbligatoria',
@@ -154,11 +197,17 @@ return [
                 'unique' => 'Questa partita IVA è già registrata per un altro studio',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'specialization' => [
             'label' => 'Specializzazioni Mediche',
@@ -181,6 +230,7 @@ return [
                 'altro' => 'Altra Specializzazione',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
         'website' => [
             'label' => 'Sito Web Studio',
@@ -190,6 +240,8 @@ return [
                 'url' => 'Inserisci un URL valido che inizi con http:// o https://',
             ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -204,7 +256,10 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'staff_count' => [
             'label' => 'Numero Operatori',
@@ -217,11 +272,17 @@ return [
                 'max' => 'Il numero massimo consentito è 100 operatori',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'privacy_acceptance' => [
             'label' => 'Consenso Trattamento Dati',
@@ -231,11 +292,17 @@ return [
                 'accepted' => 'È obbligatorio accettare l\'informativa sulla privacy per procedere',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'terms_acceptance' => [
             'label' => 'Accettazione Termini di Servizio',
@@ -245,11 +312,17 @@ return [
                 'accepted' => 'È obbligatorio accettare i termini e condizioni per procedere',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'actions' => [
@@ -287,7 +360,10 @@ return [
         'register' => [
             'label' => 'register',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => 'register',
             'icon' => 'register',
         ],
@@ -300,7 +376,10 @@ return [
             'tooltip' => 'profile',
             'icon' => 'profile',
             'label' => 'profile',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'steps' => [
@@ -356,8 +435,13 @@ return [
         'data_protection' => 'Tutti i dati sono protetti secondo le normative europee GDPR',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'label' => 'Register Tenant',
     'plural_label' => 'Register Tenant (Plurale)',
 >>>>>>> 2024e2e7 (.)
+=======
+    'label' => 'Register Tenant',
+    'plural_label' => 'Register Tenant (Plurale)',
+>>>>>>> f589f9b2 (.)
 ];

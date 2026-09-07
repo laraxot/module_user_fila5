@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
@@ -55,6 +56,8 @@ describe('HasTeams Trait CurrentTeam', function () {
         $personalTeam = Team::factory()->create([
             'user_id' => $user->id,
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\User\Models\Team;
 use Modules\User\Tests\TestCase;
@@ -90,11 +93,15 @@ describe('Has Teams Trait Current Team', function (): void {
     test('has teams current team can access personal team when available', function (): void {
         $user = hasTeamsCurrentCreateUser();
         $personalTeam = hasTeamsCurrentCreateTeam($user, [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'name' => 'Personal Team',
             'personal_team' => true,
         ]);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         // Act: Imposta manualmente il current_team_id e accedi a currentTeam
         $user->current_team_id = $personalTeam->id;
@@ -197,6 +204,8 @@ describe('Has Teams Trait Current Team', function (): void {
         expect($currentTeam1)->not->toBeNull();
         expect($currentTeam2)->not->toBeNull();
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $user->current_team_id = (int) $personalTeam->id;
         $user->save();
         $user->refresh();
@@ -250,6 +259,9 @@ describe('Has Teams Trait Current Team', function (): void {
         Assert::assertInstanceOf(Team::class, $currentTeam2);
         Assert::assertSame($team->id, $currentTeam1->id);
         Assert::assertSame($team->id, $currentTeam2->id);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     });
 });

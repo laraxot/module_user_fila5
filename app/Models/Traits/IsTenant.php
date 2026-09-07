@@ -7,9 +7,13 @@ namespace Modules\User\Models\Traits;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Relations\Pivot;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Database\Eloquent\Relations\Pivot;
+>>>>>>> f589f9b2 (.)
 use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -25,10 +29,14 @@ trait IsTenant
      * Get all users associated with this tenant.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return BelongsToMany<Model&UserContract, static>
 =======
      * @return BelongsToMany<Model&UserContract, $this, Pivot, 'pivot'>
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return BelongsToMany<Model&UserContract, $this, Pivot, 'pivot'>
+>>>>>>> f589f9b2 (.)
      */
     public function users(): BelongsToMany
     {
@@ -37,14 +45,19 @@ trait IsTenant
 
         // $this->setConnection('mysql');
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var class-string<Model&UserContract> $userClass */
 =======
         /* @var class-string<Model&UserContract> $userClass */
 >>>>>>> 2024e2e7 (.)
+=======
+        /* @var class-string<Model&UserContract> $userClass */
+>>>>>>> f589f9b2 (.)
         return $this->belongsToManyX($userClass, null, 'tenant_id', 'user_id');
 
         // ->as('membership')
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /*
@@ -76,4 +89,6 @@ trait IsTenant
      */
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

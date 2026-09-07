@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # User Moderation Strategy
 
 ## Overview
@@ -165,6 +166,8 @@ Integrating a unified moderation strategy within the `User` module aligns with t
 
 **Documented on**: 2025-05-16
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: user-moderation-strategy-1
@@ -181,4 +184,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-moderation-strategy-1.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

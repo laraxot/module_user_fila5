@@ -25,6 +25,9 @@ class SocialiteUserResource extends XotBaseResource
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
      * Get the form schema for the resource.
      *
      * @return array<string, Select|TextInput>
@@ -64,8 +67,11 @@ class SocialiteUserResource extends XotBaseResource
     }
 
     /**
+<<<<<<< HEAD
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      * Get the pages available for the resource.
      *
      * @return array<string, PageRegistration>

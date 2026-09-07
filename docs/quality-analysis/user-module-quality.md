@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Analisi Qualità - Modulo User
 
 **Data Analisi**: 2025-01-22
@@ -86,6 +87,8 @@
 - PHPInsights: Da eseguire per score completo
 - Documentazione esistente: Molto completa, ben strutturata
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: user-module-quality
@@ -95,4 +98,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/user-module-quality-report.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

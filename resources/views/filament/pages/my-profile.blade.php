@@ -5,6 +5,7 @@ declare(strict_types=1);
 ?>
 <x-filament-panels::page>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <x-filament-schemas::form wire:submit="updateProfile">
         {{ $this->editProfileForm }}
 
@@ -17,6 +18,8 @@ declare(strict_types=1);
         <x-filament::actions :actions="$this->getUpdatePasswordFormActions()" />
     </x-filament-schemas::form>
 =======
+=======
+>>>>>>> f589f9b2 (.)
     <form wire:submit="updateProfile">
         {{ $this->editProfileForm }}
 
@@ -28,5 +31,8 @@ declare(strict_types=1);
 
         <x-filament::actions :actions="$this->getUpdatePasswordFormActions()" />
     </form>
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 </x-filament-panels::page>

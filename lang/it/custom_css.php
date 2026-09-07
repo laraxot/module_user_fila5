@@ -3,7 +3,10 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'fields' => [
         'background_color' => [
@@ -11,24 +14,40 @@ return [
             'placeholder' => 'background_color',
             'helper_text' => 'background_color',
             'description' => 'background_color',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'background' => [
             'label' => 'background',
             'placeholder' => 'background',
             'helper_text' => 'background',
             'description' => 'background',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'overlay_color' => [
             'label' => 'overlay_color',
             'placeholder' => 'overlay_color',
             'helper_text' => 'overlay_color',
             'description' => 'overlay_color',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'overlay_opacity' => [
             'label' => 'overlay_opacity',
             'placeholder' => 'overlay_opacity',
             'helper_text' => 'overlay_opacity',
             'description' => 'overlay_opacity',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'actions' => [
@@ -36,6 +55,7 @@ return [
             'label' => 'updateAction',
         ],
     ],
+<<<<<<< HEAD
 =======
 return [
     'fields' => [
@@ -52,11 +72,23 @@ return [
         'name' => 'CSS Personalizzato',
         'plural' => 'CSS Personalizzati',
         'group' => ['name' => 'Aspetto', 'description' => 'Personalizzazione CSS del tema'],
+=======
+    'navigation' => [
+        'name' => 'CSS Personalizzato',
+        'plural' => 'CSS Personalizzati',
+        'group' => [
+            'name' => 'Aspetto',
+            'description' => 'Personalizzazione CSS del tema',
+        ],
+>>>>>>> f589f9b2 (.)
         'label' => 'CSS Personalizzato',
         'sort' => 15,
         'icon' => 'heroicon-o-code-bracket',
     ],
     'label' => 'Custom Css',
     'plural_label' => 'Custom Css (Plurale)',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

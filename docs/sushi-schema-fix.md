@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # User Module - Sushi Schema Fix (`SocialProvider` Model)
 
 This document details the resolution of an SQL syntax error encountered during the analysis of the `SocialProvider` model, which utilizes the `calebporzio/sushi` package.
@@ -66,6 +67,8 @@ class SocialProvider extends BaseModel
 
 This resolution ensures that the `SocialProvider` model can be properly analyzed by static analysis tools and functions as intended within the application.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: sushi-schema-fix
@@ -82,4 +85,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/sushi-schema-fix.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Code Quality Analysis - User Module"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Code Quality Analysis - User Module
 
 ## 🚨 Critical Issues Identified
@@ -328,10 +334,14 @@ public function getTableColumns(): array
 ## 📚 Related Documentation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md](./performance/authentication_performance_optimization.md)
 =======
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-3.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-3.md)
+>>>>>>> f589f9b2 (.)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 

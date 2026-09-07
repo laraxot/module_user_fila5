@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
@@ -85,6 +86,8 @@ test('user model can update records', function () {
 
     expect($user->name)->toBe('Updated Name');
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Feature;
 
 use Modules\User\Models\User;
@@ -171,5 +174,8 @@ describe('User Model Basic', function (): void {
 
         Assert::assertSame('Updated Name', $user->name);
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

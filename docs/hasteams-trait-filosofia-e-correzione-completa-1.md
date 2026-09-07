@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa
 
 ## 🧠 LA FILOSOFIA LARAXOT: Perché `belongsToManyX` invece di `belongsToMany`
@@ -280,10 +286,14 @@ Creare test per verificare:
 ### 3. **Documentazione Collegamenti**
 Aggiornare:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [docs/USER_MODULE.md](../../../docs/user_module.md)
 =======
 - [docs/USER_MODULE.md](../../../../docs/user_module.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [docs/USER_MODULE.md](../../../../docs/user_module.md)
+>>>>>>> f589f9b2 (.)
 - [Modules/User/docs/traits.md](traits.md)
 - File .mdc per Cursor e Windsurf
 
@@ -302,16 +312,22 @@ Il trait `HasTeams` ora è:
 
 ### **📚 Documentazione Root**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [docs/laraxot_conventions.md](../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
 - [docs/USER_MODULE.md](../../../docs/user_module.md) - Documentazione generale modulo User
 - [docs/phpstan_fixes.md](../../../docs/phpstan_fixes.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../docs/trait_best_practices.md) - Best practices per trait
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [docs/laraxot_conventions.md](../../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
 - [docs/USER_MODULE.md](../../../../docs/user_module.md) - Documentazione generale modulo User
 - [docs/phpstan-fixes-8.md](../../../../docs/phpstan-fixes-8.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../../docs/trait_best_practices.md) - Best practices per trait
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ### **📁 Documentazione Modulo User**
 - [traits.md](traits.md) - Documentazione completa trait modulo User

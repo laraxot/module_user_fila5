@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "MIGRATION_BEST_PRACTICES - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./dependency-rules.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # MIGRATION_BEST_PRACTICES - Modulo User
 
 ## Scopo

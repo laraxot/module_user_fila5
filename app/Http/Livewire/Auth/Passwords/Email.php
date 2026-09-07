@@ -6,28 +6,38 @@ namespace Modules\User\Http\Livewire\Auth\Passwords;
 
 use Illuminate\Contracts\Auth\PasswordBroker;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Contracts\View\View;
 use Illuminate\Contracts\View\Factory;
 use Modules\Xot\Actions\File\ViewCopyAction;
 use Illuminate\Support\Facades\Password;
 use Livewire\Component;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Password;
 use Livewire\Component;
 use Modules\Xot\Actions\File\ViewCopyAction;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 class Email extends Component
 {
     public string $email = '';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public null|string $emailSentMessage = null;
 =======
     public ?string $emailSentMessage = null;
 >>>>>>> 2024e2e7 (.)
+=======
+    public ?string $emailSentMessage = null;
+>>>>>>> f589f9b2 (.)
 
     /**
      * Invia il link per il reset della password.
@@ -42,6 +52,7 @@ class Email extends Component
         $response = $broker->sendResetLink(['email' => $this->email]);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($response === Password::RESET_LINK_SENT) {
             $this->emailSentMessage = trans('user::' . $response);
             return;
@@ -49,6 +60,8 @@ class Email extends Component
 
         $this->addError('email', trans('user::' . $response));
 =======
+=======
+>>>>>>> f589f9b2 (.)
         if (Password::RESET_LINK_SENT === $response) {
             $this->emailSentMessage = trans('user::'.$response);
 
@@ -56,7 +69,10 @@ class Email extends Component
         }
 
         $this->addError('email', trans('user::'.$response));
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     /**

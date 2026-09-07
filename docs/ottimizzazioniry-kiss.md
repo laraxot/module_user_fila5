@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Ottimizzazioni DRY + KISS - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Ottimizzazioni DRY + KISS - Modulo User
 
 ## Panoramica del Modulo
@@ -41,6 +47,7 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 ```
 ❌ DUPLICAZIONI CRITICHE:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── logout_blade_analysis.md (14KB)
 ├── logout_blade_conclusions.md (4.1KB)
 ├── logout_blade_corrected_analysis.md (7.4KB)
@@ -58,6 +65,8 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 ├── logout_page_implementation.md (3.2KB)
 └── logout_security.md (4.1KB)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ├── logout-blade-analysis-3.md (14KB)
 ├── logout-blade-conclusions-2.md (4.1KB)
 ├── logout-blade-corrected-analysis-3.md (7.4KB)
@@ -74,7 +83,10 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 ├── logout-page-fix-2.md (1.3KB)
 ├── logout-page-implementation-3.md (3.2KB)
 └── logout-security-2.md (4.1KB)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 PROBLEMA: 16 file per una singola funzionalità!
 CONTENUTO: Stesse informazioni ripetute con variazioni minime
@@ -85,16 +97,22 @@ IMPATTO: -80% efficienza ricerca, +90% confusione sviluppatori
 ```
 ❌ DUPLICAZIONI CRITICHE:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── userfactory_advanced_implementation_complete.md (11KB)
 ├── user_factory_advanced_integration.md (9.1KB)
 ├── user_factory_complete_ecosystem_integration.md (14KB)
 └── user_factory_integration.md (9.8KB)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ├── userfactory-advanced-implementation-complete-2.md (11KB)
 ├── user-factory-advanced-integration-3.md (9.1KB)
 ├── user-factory-complete-ecosystem-integration-2.md (14KB)
 └── user-factory-integration-2.md (9.8KB)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 PROBLEMA: Stessa funzionalità documentata 4 volte
 CONTENUTO: Implementazioni simili con variazioni minime
@@ -105,19 +123,27 @@ IMPATTO: -70% manutenibilità, +60% confusione
 ```
 ❌ DUPLICAZIONI CRITICHE:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── phpstan_fixes_2025.md (4.4KB)
 =======
 ├── phpstan-fixes-2025-1.md (4.4KB)
 >>>>>>> 2024e2e7 (.)
+=======
+├── phpstan-fixes-2025-1.md (4.4KB)
+>>>>>>> f589f9b2 (.)
 ├── phpstan_generic_types.md (3.1KB)
 ├── phpstan_level10_fixes.md (7.8KB)
 ├── phpstan_level9_fixes.md (1.1KB)
 ├── phpstan.md (1.3KB)
 <<<<<<< HEAD
+<<<<<<< HEAD
 └── phpstan_fixes.md (2.5KB)
 =======
 └── phpstan-fixes-8.md (2.5KB)
 >>>>>>> 2024e2e7 (.)
+=======
+└── phpstan-fixes-8.md (2.5KB)
+>>>>>>> f589f9b2 (.)
 
 PROBLEMA: Fix PHPStan sparsi in 6 file diversi
 CONTENUTO: Correzioni simili ripetute
@@ -127,6 +153,7 @@ IMPATTO: -60% efficienza correzione, +50% duplicazioni
 ##### D. **Volt Implementation (8+ file duplicati)**
 ```
 ❌ DUPLICAZIONI CRITICHE:
+<<<<<<< HEAD
 <<<<<<< HEAD
 ├── volt_blade_implementation.md (9.2KB)
 ├── volt_blade_implementation_error.md (3.8KB)
@@ -138,6 +165,8 @@ IMPATTO: -60% efficienza correzione, +50% duplicazioni
 ├── volt_folio_logout_error.md (3.7KB)
 └── volt_logout.md (5.2KB)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ├── volt-blade-implementation-3.md (9.2KB)
 ├── volt-blade-implementation-error-3.md (3.8KB)
 ├── volt-errors-2.md (5.6KB)
@@ -147,7 +176,10 @@ IMPATTO: -60% efficienza correzione, +50% duplicazioni
 ├── volt-folio-logout-debug-2.md (3.0KB)
 ├── volt-folio-logout-error-3.md (3.7KB)
 └── volt-logout-2.md (5.2KB)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 PROBLEMA: Implementazioni Volt frammentate e duplicate
 CONTENUTO: Errori e implementazioni simili ripetute
@@ -477,10 +509,14 @@ public function getUsersWithTeams(): Collection
 class UserResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> 2024e2e7 (.)
+=======
+    public static function getFormSchema(): array
+>>>>>>> f589f9b2 (.)
     {
         return [
             TextInput::make('name')
@@ -524,10 +560,14 @@ class UserFormComponents
 class UserResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> 2024e2e7 (.)
+=======
+    public static function getFormSchema(): array
+>>>>>>> f589f9b2 (.)
     {
         return [
             UserFormComponents::name(),
@@ -609,6 +649,7 @@ class UserResource extends XotBaseResource
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Template Standardizzato](../../docs/template-modulo-standardizzato.md)
 - [Ottimizzazioni Master](../../docs/ottimizzazioni-modulari-master.md)
 - [Modulo Xot](../xot/docs/ottimizzazioni-dry-kiss.md)
@@ -617,9 +658,15 @@ class UserResource extends XotBaseResource
 
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS User Module*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Template Standardizzato](../../../docs/template-modulo-standardizzato.md)
 - [Ottimizzazioni Master](../../../docs/ottimizzazioni-modulari-master.md)
 - [Modulo Xot](../xot/docs/ottimizzazioni-dry-kiss.md)
 
+<<<<<<< HEAD
 ---
 >>>>>>> 2024e2e7 (.)
+=======
+---
+>>>>>>> f589f9b2 (.)

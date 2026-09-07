@@ -1,8 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
  [OK] No errors        
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpstan-report-initial
@@ -19,4 +22,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan_report.txt
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

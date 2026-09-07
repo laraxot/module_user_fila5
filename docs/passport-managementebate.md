@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Passport Complete Management - Internal Debate & Decision"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Passport Complete Management - Internal Debate & Decision
 
 > **Data**: [DATE]  
@@ -243,12 +249,17 @@ app/Policies/OauthClientPolicy.php
 
 - [passport.md](./passport.md) - Documentazione completa Passport
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia modulo User
 - [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md) - Business logic approfondita
 =======
 - [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia modulo User
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md) - Business logic approfondita
 >>>>>>> 2024e2e7 (.)
+=======
+- [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia modulo User
+- [business-logic-deep-dive-4.md](./business-logic-deep-dive.md) - Business logic approfondita
+>>>>>>> f589f9b2 (.)
 
 ---
 

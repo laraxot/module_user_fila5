@@ -3,9 +3,12 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'fields' => [
         'email' => [
@@ -14,9 +17,13 @@ return [
             'helper_text' => '',
             'placeholder' => 'email',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'password' => [
             'label' => 'password',
@@ -24,9 +31,13 @@ return [
             'helper_text' => '',
             'placeholder' => 'password',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
+=======
+            'tooltip' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'remember' => [
             'label' => 'remember',
@@ -34,9 +45,12 @@ return [
             'helper_text' => '',
             'placeholder' => 'remember',
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
     ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'tooltip' => '',
         ],
     ],
@@ -79,5 +93,8 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

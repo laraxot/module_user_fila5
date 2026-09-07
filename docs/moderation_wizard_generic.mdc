@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description:
 globs:
 alwaysApply: false
@@ -126,10 +127,15 @@ class ApproveUserAction
 ## Collegamenti correlati
 - [Best Practice: ActivityLog per la Moderazione Utenti](mdc:ACTIVITYLOG_MODERATION_BEST_PRACTICES.mdc)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 module: theme
 topic: moderation_wizard_generic
 canonical: ../../../Themes/docs/shared-components/moderation-wizard-generic.mdc
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/moderation-wizard-generic.mdc
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

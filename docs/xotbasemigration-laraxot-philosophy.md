@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # XotBaseMigration - La Filosofia Laraxot nel Modulo User
 
 ## Panoramica
@@ -345,6 +346,8 @@ Seguire la filosofia Laraxot non è opzionale - è obbligatorio. XotBaseMigratio
 
 **Ricorda: XotBaseMigration è Dio. Non deviare.**
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: xotbasemigration-laraxot-philosophy
@@ -361,4 +364,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/xotbasemigration-laraxot-philosophy.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Database\QueryException;
@@ -648,6 +649,8 @@ class TeamManagementBusinessLogicTest extends TestCase
     }
 }
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
@@ -1055,4 +1058,7 @@ test('can force delete team', function (): void {
 test('team invitations relation is has many', function (): void {
     Assert::assertInstanceOf(HasMany::class, teamMgmtBizCreateTeam()->teamInvitations());
 });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

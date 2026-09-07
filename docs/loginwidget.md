@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Analisi Errore LoginWidget: Problema Logico e Soluzione
 
 ## Problema Identificato
@@ -180,6 +181,8 @@ class LoginWidget extends XotBaseWidget
 - [Documentazione Widget Structure](modules/user/widgets_structure.md)
 - [Best Practices Widget Filament](modules/user/best-practices/filament-widgets.md) 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: loginwidget
@@ -196,4 +199,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/loginwidget-error-analysis.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

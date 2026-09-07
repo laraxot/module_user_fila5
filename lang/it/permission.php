@@ -3,31 +3,64 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'fields' => [
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome del permesso',
             'help' => 'Nome univoco del permesso',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'guard_name' => [
             'label' => 'Guard Name',
             'placeholder' => 'Inserisci il nome del guard',
             'help' => 'Nome del guard per il permesso',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'active' => [
             'label' => 'Attivo',
             'placeholder' => 'Seleziona lo stato',
             'help' => 'Indica se il permesso è attivo',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'placeholder' => 'Data di creazione',
             'help' => 'Data di creazione del permesso',
+<<<<<<< HEAD
         ],
         'applyFilters' => [
             'label' => 'applyFilters',
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> f589f9b2 (.)
         ],
     ],
     'common' => [
@@ -39,6 +72,7 @@ return [
         'label' => 'Permessi',
         'group' => 'Sicurezza',
         'icon' => 'heroicon-o-shield-check',
+<<<<<<< HEAD
 =======
 return [
     'fields' => [
@@ -62,5 +96,20 @@ return [
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'Attach Role' => ['label' => 'Attach Role', 'icon' => 'Attach Role', 'tooltip' => 'Attach Role'],
 >>>>>>> 2024e2e7 (.)
+=======
+    ],
+    'label' => 'Permission',
+    'plural_label' => 'Permission (Plurale)',
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Permission',
+        ],
+        'edit' => [
+            'label' => 'Modifica Permission',
+        ],
+        'delete' => [
+            'label' => 'Elimina Permission',
+        ],
+>>>>>>> f589f9b2 (.)
     ],
 ];

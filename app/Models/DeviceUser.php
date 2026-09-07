@@ -5,12 +5,16 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Override;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 =======
 use Illuminate\Database\Eloquent\Builder;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
@@ -23,6 +27,7 @@ use Modules\Xot\Datas\XotData;
  *
  * @property Device|null $device
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static Builder|DeviceUser newModelQuery()
  * @method static Builder|DeviceUser newQuery()
  * @method static Builder|DeviceUser query()
@@ -34,6 +39,8 @@ use Modules\Xot\Datas\XotData;
  * @property string|null $push_notifications_token
  * @property bool|null $push_notifications_enabled
 =======
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @method static Builder|DeviceUser newModelQuery()
  * @method static Builder|DeviceUser newQuery()
@@ -46,15 +53,22 @@ use Modules\Xot\Datas\XotData;
  * @property Carbon|null $logout_at
  * @property string|null $push_notifications_token
  * @property bool|null   $push_notifications_enabled
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 2024e2e7 (.)
+=======
+ *
+>>>>>>> f589f9b2 (.)
  * @method static Builder|DeviceUser whereCreatedAt($value)
  * @method static Builder|DeviceUser whereCreatedBy($value)
  * @method static Builder|DeviceUser whereDeviceId($value)
@@ -67,12 +81,15 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|DeviceUser whereUpdatedBy($value)
  * @method static Builder|DeviceUser whereUserId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property ProfileContract|null $profile
  * @property UserContract|null $user
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @mixin IdeHelperDeviceUser
 =======
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @property ProfileContract|null $profile
  * @property UserContract|null    $user
@@ -82,16 +99,22 @@ use Modules\Xot\Datas\XotData;
  *
  * @method static \Modules\User\Database\Factories\DeviceUserFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 class DeviceUser extends BasePivot
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     use HasFactory;
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     /** @var list<string> */
     protected $fillable = [
         'id',
@@ -105,10 +128,14 @@ class DeviceUser extends BasePivot
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * old_return BelongsTo<Device, DeviceUser>.
 =======
      * @return BelongsTo<Device, $this>
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return BelongsTo<Device, $this>
+>>>>>>> f589f9b2 (.)
      */
     public function device(): BelongsTo
     {
@@ -117,10 +144,14 @@ class DeviceUser extends BasePivot
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * old_return BelongsTo<Model&UserContract, DeviceUser>.
 =======
      * @return BelongsTo<Model, $this>
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return BelongsTo<Model, $this>
+>>>>>>> f589f9b2 (.)
      */
     public function user(): BelongsTo
     {
@@ -132,18 +163,24 @@ class DeviceUser extends BasePivot
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * old_return BelongsTo<Model&ProfileContract, DeviceUser>.
      */
     public function profile(): BelongsTo
     {
         /* @var class-string<Model> */
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * @return BelongsTo<Model, $this>
      */
     public function profile(): BelongsTo
     {
         /** @var class-string<Model> */
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $profileClass = XotData::make()->getProfileClass();
 
         return $this->belongsTo($profileClass, 'user_id', 'user_id');
@@ -151,10 +188,14 @@ class DeviceUser extends BasePivot
 
     /** @return array<string, string> */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     protected function casts(): array
     {
         return [

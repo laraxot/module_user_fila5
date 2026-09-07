@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 return [
     'resources' => 'Risorse',
@@ -56,6 +57,8 @@ return [
             'label' => 'social provider.plural.model',
         ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'navigation' => [
         'label' => 'Social Providers',
@@ -119,6 +122,9 @@ return [
         'created' => 'Provider created successfully',
         'updated' => 'Provider updated successfully',
         'deleted' => 'Provider deleted successfully',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     ],
 ];

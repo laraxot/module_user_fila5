@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Task: User Filament v5 Alignment (Clusters)"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./spostamento-widget-violante.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Task: User Filament v5 Alignment (Clusters)
 
 ## 📋 Obiettivo

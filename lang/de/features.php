@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 return [
     'fields' => [
@@ -16,6 +17,8 @@ return [
         'value.placeholder' => 'Inserisci il valore della feature',
         'value.helper_text' => 'Il valore o la configurazione della feature',
 =======
+=======
+>>>>>>> f589f9b2 (.)
 return [
     'fields' => [
         'name' => [
@@ -83,6 +86,9 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     ],
 ];

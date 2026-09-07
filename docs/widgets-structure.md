@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Struttura Widget Filament nel Modulo User
 
 ## Introduzione
@@ -458,6 +459,8 @@ class LoginWidget extends XotBaseWidget
 - Import componenti Filament: riuso, chiarezza, aggiornabilità.
 - Validazione e sicurezza: ispirazione da Laravel UI/Livewire, ma implementazione idiomatica Filament/Xot.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: widgets-structure
@@ -474,4 +477,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/widgets-structure.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

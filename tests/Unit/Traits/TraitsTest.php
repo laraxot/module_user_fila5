@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 uses(Modules\User\Tests\TestCase::class);
 
 use Modules\User\Traits\PasswordValidationRules;
@@ -43,6 +44,8 @@ test('PasswordValidationRules has expected methods', function () {
         expect(true)->toBeTrue();
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Tests\TestCase;
 use Modules\User\Traits\PasswordValidationRules;
 use PHPUnit\Framework\Assert;
@@ -60,5 +63,8 @@ test('PasswordValidationRules has expected methods', function (): void {
     $reflection = new ReflectionClass(PasswordValidationRules::class);
 
     Assert::assertTrue($reflection->getMethod('passwordRules')->isProtected());
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

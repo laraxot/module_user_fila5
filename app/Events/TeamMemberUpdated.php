@@ -27,9 +27,14 @@ class TeamMemberUpdated
          */
         public UserContract $userContract,
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> 2024e2e7 (.)
+=======
+    ) {
+    }
+>>>>>>> f589f9b2 (.)
 }

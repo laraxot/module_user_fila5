@@ -11,10 +11,14 @@ use Modules\User\Models\User;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * OauthAccessToken Factory
 =======
  * OauthAccessToken Factory.
 >>>>>>> 2024e2e7 (.)
+=======
+ * OauthAccessToken Factory.
+>>>>>>> f589f9b2 (.)
  *
  * Factory for creating OauthAccessToken model instances for testing and seeding.
  *
@@ -23,6 +27,7 @@ use Modules\User\Models\User;
 class OauthAccessTokenFactory extends Factory
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * The name of the factory's corresponding model.
      *
@@ -30,6 +35,8 @@ class OauthAccessTokenFactory extends Factory
      */
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     protected $model = OauthAccessToken::class;
 
     /**
@@ -38,11 +45,17 @@ class OauthAccessTokenFactory extends Factory
      * @return array<string, mixed>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /**
      * @return array<string, mixed>
      */
 >>>>>>> 2024e2e7 (.)
+=======
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> f589f9b2 (.)
     public function definition(): array
     {
         return [
@@ -50,6 +63,7 @@ class OauthAccessTokenFactory extends Factory
             'user_id' => User::factory(),
             'client_id' => OauthClient::factory(),
             'name' => $this->faker->optional()->words(2, true),
+<<<<<<< HEAD
 <<<<<<< HEAD
             'scopes' => $this->faker->optional()->randomElements(
                 [
@@ -62,12 +76,17 @@ class OauthAccessTokenFactory extends Factory
             ),
             'revoked' => $this->faker->boolean(10), // 10% revoked
 =======
+=======
+>>>>>>> f589f9b2 (.)
             'scopes' => $this->faker->randomElements(
                 ['read', 'write', 'admin', 'user'],
                 $this->faker->numberBetween(1, 3),
             ),
             'revoked' => $this->faker->boolean(10),
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'expires_at' => $this->faker->dateTimeBetween('now', '+1 year'),
         ];
     }
@@ -75,6 +94,7 @@ class OauthAccessTokenFactory extends Factory
     /**
      * Create a revoked token.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return static
      */
@@ -82,17 +102,23 @@ class OauthAccessTokenFactory extends Factory
     {
         return $this->state(fn(array $_attributes): array => [
 =======
+=======
+>>>>>>> f589f9b2 (.)
      */
     public function revoked(): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'revoked' => true,
         ]);
     }
 
     /**
      * Create an active token.
+<<<<<<< HEAD
 <<<<<<< HEAD
      *
      * @return static
@@ -101,11 +127,16 @@ class OauthAccessTokenFactory extends Factory
     {
         return $this->state(fn(array $_attributes): array => [
 =======
+=======
+>>>>>>> f589f9b2 (.)
      */
     public function active(): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'revoked' => false,
             'expires_at' => $this->faker->dateTimeBetween('+1 day', '+1 year'),
         ]);
@@ -113,6 +144,7 @@ class OauthAccessTokenFactory extends Factory
 
     /**
      * Create token for a specific user.
+<<<<<<< HEAD
 <<<<<<< HEAD
      *
      * @param User $user
@@ -122,17 +154,23 @@ class OauthAccessTokenFactory extends Factory
     {
         return $this->state(fn(array $_attributes): array => [
 =======
+=======
+>>>>>>> f589f9b2 (.)
      */
     public function forUser(User $user): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'user_id' => $user->id,
         ]);
     }
 
     /**
      * Create token for a specific client.
+<<<<<<< HEAD
 <<<<<<< HEAD
      *
      * @param OauthClient $client
@@ -142,11 +180,16 @@ class OauthAccessTokenFactory extends Factory
     {
         return $this->state(fn(array $_attributes): array => [
 =======
+=======
+>>>>>>> f589f9b2 (.)
      */
     public function forClient(OauthClient $client): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'client_id' => $client->id,
         ]);
     }
@@ -155,6 +198,7 @@ class OauthAccessTokenFactory extends Factory
      * Create token with specific scopes.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string> $scopes
      * @return static
      */
@@ -162,12 +206,17 @@ class OauthAccessTokenFactory extends Factory
     {
         return $this->state(fn(array $_attributes): array => [
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * @param list<string> $scopes
      */
     public function withScopes(array $scopes): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'scopes' => $scopes,
         ]);
     }

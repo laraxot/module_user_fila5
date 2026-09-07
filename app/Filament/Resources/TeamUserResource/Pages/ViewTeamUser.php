@@ -5,12 +5,16 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\TeamUserResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 =======
 use Modules\User\Filament\Resources\TeamUserResource;
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\User\Filament\Resources\TeamUserResource;
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 /**
@@ -18,6 +22,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
  */
 class ViewTeamUser extends XotBaseViewRecord
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected static string $resource = \Modules\User\Filament\Resources\TeamUserResource::class;
 
@@ -41,4 +46,7 @@ class ViewTeamUser extends XotBaseViewRecord
 =======
     protected static string $resource = TeamUserResource::class;
 >>>>>>> 2024e2e7 (.)
+=======
+    protected static string $resource = TeamUserResource::class;
+>>>>>>> f589f9b2 (.)
 }

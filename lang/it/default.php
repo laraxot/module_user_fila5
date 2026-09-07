@@ -16,18 +16,24 @@ return [
     'two_factor' => [
         'heading' => 'Autenticazione a due fattori',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'description' => "Conferma l'accesso al tuo account inserendo il codice che trovi sulla tua app di autenticazione.",
         'code_placeholder' => 'XXX-XXX',
         'recovery' => [
             'heading' => 'Autenticazione a due fattori',
             'description' => "Conferma l'accesso al tuo account inserendo uno dei tuoi codice di emergenza.",
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'description' => 'Conferma l\'accesso al tuo account inserendo il codice che trovi sulla tua app di autenticazione.',
         'code_placeholder' => 'XXX-XXX',
         'recovery' => [
             'heading' => 'Autenticazione a due fattori',
             'description' => 'Conferma l\'accesso al tuo account inserendo uno dei tuoi codice di emergenza.',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         ],
         'recovery_code_placeholder' => 'abcdef-98765',
         'recovery_code_text' => 'Dispositivo smarrito?',
@@ -55,10 +61,14 @@ return [
     'verification' => [
         'title' => 'Verifica email',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'heading' => "Necessaria verifica dell'indirizzo Email",
 =======
         'heading' => 'Necessaria verifica dell\'indirizzo Email',
 >>>>>>> 2024e2e7 (.)
+=======
+        'heading' => 'Necessaria verifica dell\'indirizzo Email',
+>>>>>>> f589f9b2 (.)
         'submit' => [
             'label' => 'Log out',
         ],
@@ -66,10 +76,14 @@ return [
         'notification_resend' => 'È stata inviata una email di verifica.',
         'before_proceeding' => 'Prima di procedere, controlla la tua casella di posta per verificare la tua email.',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'not_receive' => "Se non hai ricevuto l'email di verifica,",
 =======
         'not_receive' => 'Se non hai ricevuto l\'email di verifica,',
 >>>>>>> 2024e2e7 (.)
+=======
+        'not_receive' => 'Se non hai ricevuto l\'email di verifica,',
+>>>>>>> f589f9b2 (.)
         'request_another' => 'clicca qui per richiederla di nuovo',
     ],
     'profile' => [
@@ -96,10 +110,14 @@ return [
         '2fa' => [
             'title' => 'Autenticazione a due Fattori',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => "Gestisci l'autenticazione a due fattori per il tuo account (raccomandato).",
 =======
             'description' => 'Gestisci l\'autenticazione a due fattori per il tuo account (raccomandato].',
 >>>>>>> 2024e2e7 (.)
+=======
+            'description' => 'Gestisci l\'autenticazione a due fattori per il tuo account (raccomandato].',
+>>>>>>> f589f9b2 (.)
             'actions' => [
                 'enable' => 'Abilita',
                 'regenerate_codes' => 'Rigenera Codici',
@@ -110,6 +128,7 @@ return [
             'setup_key' => 'Chiave di Setup',
             'must_enable' => 'Per utilizzare questa applicazione devi abilitare la 2FA.',
             'not_enabled' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
                 'title' => "Non hai abilitato l'autenticazione a due fattori.",
                 'description' => "Quando l'autenticazione a due fattori è attivata, durante l'autenticazione, ti verrà richiesto un token casuale. Potrai recuperare questo toke tramite l'app mobile di Google Authenticator",
@@ -124,6 +143,8 @@ return [
                 'description' => "L'autenticazione a due fattori adesso è abilitata. Questo permette di rendere più sicuro il tuo account.",
                 'store_codes' => "Salva questi codice di ripristino in un luogo sicuro. Possono essere utilizzati per ripristinare l'accesso al tuo account se il dispositivo che utilizzi viene smarrito",
 =======
+=======
+>>>>>>> f589f9b2 (.)
                 'title' => 'Non hai abilitato l\'autenticazione a due fattori.',
                 'description' => 'Quando l\'autenticazione a due fattori è attivata, durante l\'autenticazione, ti verrà richiesto un token casuale. Potrai recuperare questo toke tramite l\'app mobile di Google Authenticator',
             ],
@@ -136,7 +157,10 @@ return [
                 'title' => 'Hai abilitato l\'autenticazione a due fattori!',
                 'description' => 'L\'autenticazione a due fattori adesso è abilitata. Questo permette di rendere più sicuro il tuo account.',
                 'store_codes' => 'Salva questi codice di ripristino in un luogo sicuro. Possono essere utilizzati per ripristinare l\'accesso al tuo account se il dispositivo che utilizzi viene smarrito',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             ],
             'disabling' => [
                 'notify' => 'L\'autenticazione a due fattori è stata disabilitata.',
@@ -152,10 +176,14 @@ return [
         'sanctum' => [
             'title' => 'Token API ',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => "Gestisci i token API che permettono l'accesso a questa applicazione a servizi di terze parti. NOTA: il tuo token viene mostrato dopo la creazione. Se perdi il token, dovrai cancellarlo e crearlo nuovamente.",
 =======
             'description' => 'Gestisci i token API che permettono l\'accesso a questa applicazione a servizi di terze parti. NOTA: il tuo token viene mostrato dopo la creazione. Se perdi il token, dovrai cancellarlo e crearlo nuovamente.',
 >>>>>>> 2024e2e7 (.)
+=======
+            'description' => 'Gestisci i token API che permettono l\'accesso a questa applicazione a servizi di terze parti. NOTA: il tuo token viene mostrato dopo la creazione. Se perdi il token, dovrai cancellarlo e crearlo nuovamente.',
+>>>>>>> f589f9b2 (.)
             'create' => [
                 'notify' => 'Token creato correttamente!',
                 'message' => 'Il tuo token viene mostrato solo una volta. Se perdi il token, dovrai cancellarlo e crearne uno nuovo.',
@@ -177,6 +205,7 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'avatar' => 'Avatar',
         'email' => 'Email',
         'login' => 'Login',
@@ -196,6 +225,8 @@ return [
     'or' => 'O',
     'cancel' => 'Annulla',
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -313,5 +344,8 @@ return [
             'label' => 'Elimina Default',
         ],
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

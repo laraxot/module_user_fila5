@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Errori Comuni in Volt e Soluzioni
 
 ## VoltDirectiveMissingException
@@ -187,6 +188,8 @@ class LogoutPage
 - [Best Practices Filament](../filament_best_practices.md)
 - [Routing Best Practices](../routing_best_practices.md) 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: volts
@@ -203,4 +206,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-errors.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

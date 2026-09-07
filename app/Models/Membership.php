@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\ProfileContract;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Support\Carbon;
@@ -13,11 +14,16 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Support\Carbon;
+use Modules\Xot\Contracts\ProfileContract;
+>>>>>>> f589f9b2 (.)
 
 /**
  * Modules\User\Models\Membership.
  *
  * @property string $role
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @method static Builder|Membership newModelQuery()
  * @method static Builder|Membership newQuery()
@@ -25,13 +31,18 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property int $id
  * @property string $uuid
 =======
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @method static Builder|Membership newModelQuery()
  * @method static Builder|Membership newQuery()
  * @method static Builder|Membership query()
  *
  * @property int         $id
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @property string|null $team_id
  * @property string|null $user_id
  * @property Carbon|null $created_at
@@ -40,21 +51,28 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $updated_by
  * @property string|null $customer_id
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @method static Builder|Membership whereCreatedAt($value)
  * @method static Builder|Membership whereCreatedBy($value)
  * @method static Builder|Membership whereCustomerId($value)
  * @method static Builder|Membership whereId($value)
 =======
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @method static Builder|Membership whereCreatedAt($value)
  * @method static Builder|Membership whereCreatedBy($value)
  * @method static Builder|Membership whereCustomerId($value)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @method static Builder|Membership whereRole($value)
  * @method static Builder|Membership whereTeamId($value)
  * @method static Builder|Membership whereUpdatedAt($value)
  * @method static Builder|Membership whereUpdatedBy($value)
  * @method static Builder|Membership whereUserId($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @method static Builder|Membership whereUuid($value)
  * @property Carbon|null $deleted_at
@@ -65,6 +83,8 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null $updater
  * @mixin IdeHelperMembership
 =======
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
@@ -88,11 +108,15 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static Builder<static>|Membership whereUuid($value)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 class Membership extends BasePivot
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     use HasFactory;
 
@@ -105,6 +129,8 @@ class Membership extends BasePivot
     /** @var string */
     protected $table = 'team_user';
 =======
+=======
+>>>>>>> f589f9b2 (.)
     protected $connection = 'user';
 
     protected $table = 'team_user';
@@ -128,5 +154,8 @@ class Membership extends BasePivot
             'permissions' => 'array',
         ];
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

@@ -8,19 +8,25 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;
 use Livewire\Component;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Tenant\Services\TenantService;
 use Webmozart\Assert\Assert;
 
 use function Safe\file_get_contents;
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Tenant\Actions\Markdown\GetLocalizedMarkdownPathAction;
 
 use function Safe\file_get_contents;
 
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 class PrivacyPolicy extends Component
 {
     /**
@@ -29,14 +35,20 @@ class PrivacyPolicy extends Component
     public function render(): View
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::string($policyFile = TenantService::localizedMarkdownPath('policy.md'), 'wip');
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $policyFile = app(GetLocalizedMarkdownPathAction::class)->execute('policy.md');
         Assert::string($policyFile, 'Policy file path must be a string');
         if ('' === $policyFile || '#' === $policyFile) {
             throw new \RuntimeException('Policy file path is empty or invalid');
         }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         /**
          * @phpstan-var view-string
          */

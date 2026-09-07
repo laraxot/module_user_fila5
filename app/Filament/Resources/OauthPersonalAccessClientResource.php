@@ -5,10 +5,15 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 >>>>>>> 2024e2e7 (.)
+=======
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+>>>>>>> f589f9b2 (.)
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
@@ -43,6 +48,9 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
      * @return array<string, Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
     #[\Override]
     public static function getFormSchema(): array
     {
@@ -61,6 +69,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     }
 
     /**
+<<<<<<< HEAD
      * Define the table for the resource.
      */
     public static function table(Table $table): Table
@@ -76,15 +85,21 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
 =======
 >>>>>>> 2024e2e7 (.)
     /**
+=======
+>>>>>>> f589f9b2 (.)
      * Get the table columns for the resource.
      *
      * @return array<string, Tables\Columns\Column>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getTableColumns(): array
 =======
     public function getTableColumns(): array
 >>>>>>> 2024e2e7 (.)
+=======
+    public function getTableColumns(): array
+>>>>>>> f589f9b2 (.)
     {
         return [
             'id' => Tables\Columns\TextColumn::make('id')
@@ -124,10 +139,14 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
      * Get the table actions for the resource.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, \Filament\Actions\Action>
 =======
      * @return array<string, Action>
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return array<string, Action>
+>>>>>>> f589f9b2 (.)
      */
     public static function getTableActions(): array
     {
@@ -141,10 +160,14 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
      * Get the table bulk actions for the resource.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
 =======
      * @return array<string, Action|ActionGroup>
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return array<string, Action|ActionGroup>
+>>>>>>> f589f9b2 (.)
      */
     public static function getTableBulkActions(): array
     {

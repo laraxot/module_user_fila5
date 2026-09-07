@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Factory Mancanti - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Factory Mancanti - Modulo User
 
 ## Situazione Critica Identificata
@@ -158,15 +164,22 @@ related:
 
 - [README Modulo User](./readme.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Factory Audit Root](../../../project_docs/factory-audit-2025.md)
 =======
 - [Factory Audit Root](../../../../docs/project/factory-audit-2025.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Factory Audit Root](../../../../docs/project/factory-audit-2025.md)
+>>>>>>> f589f9b2 (.)
 - [Models Documentation](./models/readme.md)
 
 ---
 **Errore gravissimo da non ripetere mai più**  
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: [DATE]*
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

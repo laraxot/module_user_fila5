@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Convenzione Metodo getTableColumns per Filament Table"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./widgets-responsive-layout.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Convenzione Metodo getTableColumns per Filament Table
 
 ## Motivazione della Modifica
@@ -55,6 +61,7 @@ public function getTableColumns(): array
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regola Generale - Modulo Xot](../../../xot/docs/filament_table_columns.md)
 - [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
 
@@ -62,11 +69,16 @@ public function getTableColumns(): array
 
 **Ultimo aggiornamento:** 2025-05-13
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Regola Generale - Modulo Xot](../../../xot/docs/filament-table-columns-2.md)
 - [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
 
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs di Xot per riferimenti e cross-link.

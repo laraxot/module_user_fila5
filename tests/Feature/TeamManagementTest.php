@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
@@ -333,6 +334,8 @@ describe('Team Events and Notifications', function () {
         expect($this->team->users)->toContain($this->member);
     });
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
@@ -784,5 +787,8 @@ test('can log team activities via membership', function (): void {
     teamMgmtAttachMember($team, $member, ['role' => 'member']);
 
     Assert::assertTrue(teamMgmtMemberExists($team, $member));
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 📋 RISOLUZIONE COMPLETA DUPLICATI MIGRATION ROLES
 
 ## 🚨 PROBLEMA IDENTIFICATO
@@ -163,6 +164,8 @@ find Modules/User/database/migrations/ -name "*create_*_table.php" | \
 
 *VIOLAZIONE SISTEMICA RISOLTA - Ordine ripristinato, filosofia Laraxot pienamente rispettata*.*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: migration-duplicate-resolution
@@ -179,4 +182,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-duplicate-resolution.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Proposta: Implementazione di Laravel Passport in un Filament Cluster
 
 **Status**: ✅ **IMPLEMENTATO** - Vedi [passport-cluster-summary.md](./passport-cluster-summary.md)
@@ -129,6 +130,8 @@ public function toSchemaOrg(): array
 
 L'implementazione di un cluster Passport migliorerebbe significativamente l'organizzazione dell'interfaccia admin per tutto ciò che riguarda l'autenticazione OAuth. Allo stesso tempo, l'estensione dei modelli con campi ispirati a schema.org aumenterebbe la conformità semantica del sistema e la sua interoperabilità con altri sistemi.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: passport-cluster-proposal
@@ -145,4 +148,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-proposal.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

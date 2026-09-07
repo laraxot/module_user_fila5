@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Quality Tools Report - PHPStan, PHPMD, PHP Insights
 
 ## Data: 2025-01-02
@@ -163,6 +164,8 @@ cd laravel
 
 *Ultimo aggiornamento: 2025-01-02*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: quality-tools-report
@@ -179,4 +182,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-tools-report.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

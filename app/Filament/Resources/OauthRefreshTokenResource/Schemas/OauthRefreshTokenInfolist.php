@@ -16,7 +16,11 @@ class OauthRefreshTokenInfolist extends XotBaseResourceInfolist
      *
      * Campi basati sul Model OauthRefreshToken.php -> id, access_token_id, revoked, expires_at
      */
+<<<<<<< HEAD
     public function getInfolistSchema(): array
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> f589f9b2 (.)
     {
         return [
             'id' => TextEntry::make('id'),
@@ -25,6 +29,11 @@ class OauthRefreshTokenInfolist extends XotBaseResourceInfolist
                 ->badge(),
             'expires_at' => TextEntry::make('expires_at')
                 ->dateTime(),
+<<<<<<< HEAD
+=======
+            'created_at' => TextEntry::make('created_at')
+                ->dateTime(),
+>>>>>>> f589f9b2 (.)
         ];
     }
 }

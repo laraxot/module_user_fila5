@@ -8,13 +8,19 @@ return [
         'plural' => 'Utenti Tenant',
         'label' => 'Utenti Tenant',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
         'group' => [
             'name' => 'Tenants',
             'description' => 'Gestione degli utenti associati ai tenant',
         ],
+<<<<<<< HEAD
 =======
         'group' => ['name' => 'Tenants', 'description' => 'Gestione degli utenti associati ai tenant'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'sort' => 87,
         'icon' => 'heroicon-o-building-office',
     ],
@@ -22,6 +28,9 @@ return [
     'plural_label' => 'Tenant User (Plurale)',
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
@@ -51,6 +60,7 @@ return [
         'delete' => [
             'label' => 'Elimina Tenant User',
         ],
+<<<<<<< HEAD
 =======
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -64,5 +74,7 @@ return [
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     ],
 ];

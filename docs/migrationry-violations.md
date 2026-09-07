@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # User Module Migration Policy - DRY Violations Report
 
 ## Issue Summary
@@ -64,6 +65,8 @@ The following tables have multiple creation migrations in `/Modules/User/databas
 - Use standard Migration with `hasColumn()` checks for specific column additions
 - Always check for existence before creating/modifying
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: migrationry-violations
@@ -80,4 +83,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-dry-violations-report.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

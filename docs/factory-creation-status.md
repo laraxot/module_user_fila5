@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Factory Creation Status - User Module"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Factory Creation Status - User Module
 
 ## ERRORE GRAVISSIMO IDENTIFICATO E RISOLUZIONE IN CORSO
@@ -120,10 +126,14 @@ Questo errore è **GRAVISSIMO** perché:
 ## COLLEGAMENTI
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Factory Audit Complete Analysis](../../../project_docs/factory-audit-complete-analysis.md)
 =======
 - [Factory Audit Complete Analysis](../../../../docs/project/factory-audit-complete-analysis.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Factory Audit Complete Analysis](../../../../docs/project/factory-audit-complete-analysis.md)
+>>>>>>> f589f9b2 (.)
 - [User Module README](./readme.md)
 - [Factory PHPStan Fixes](./phpstan/factory-fixes.md)
 - [Database Documentation](./database/readme.md)
@@ -138,6 +148,9 @@ Questo errore è **GRAVISSIMO** perché:
 
 *Creato: 2025-01-06*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

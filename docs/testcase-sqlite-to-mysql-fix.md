@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # TestCase SQLite to MySQL Fix - User Module
 
 ## Problema Identificato
@@ -189,6 +190,8 @@ Sostituire il contenuto con il pattern corretto.
 **Righe:** 102 → ~35 (-66%)
 **Funzioni Custom:** Non più necessarie con MySQL ✅
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: testcase-sqlite-to-mysql-fix
@@ -205,4 +208,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/testcase-sqlite-to-mysql-fix.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

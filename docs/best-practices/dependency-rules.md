@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "dependency-rules"
 type: rule
@@ -20,7 +23,10 @@ related:
   - "./dependency.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # dependency-rules
 
 ## Principle (MANDATORY)

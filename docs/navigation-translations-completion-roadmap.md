@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Navigation Translations Completion Roadmap - User Module
 
 **Data**: 2026-01-09  
@@ -176,6 +177,8 @@ I file usano chiavi di traduzione nidificate che rimandano a chiavi principali:
 
 **Ultimo aggiornamento**: 2026-01-09
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: navigation-translations-completion-roadmap
@@ -192,4 +195,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/navigation-translations-completion-roadmap.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

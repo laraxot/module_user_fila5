@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "LoginWidget Translation Audit - Gennaio 2025"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo
@@ -88,10 +94,14 @@ return [
 ## Collegamenti
 - [Widget Translation Rules](widget-translation-rules.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Root Translation Guidelines](../../../../project_docs/translation-standards.md)
 =======
 - [Root Translation Guidelines](../../../../../docs/project/translation-standards.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Root Translation Guidelines](../../../../../docs/project/translation-standards.md)
+>>>>>>> f589f9b2 (.)
 ### 2. Struttura Completa delle Traduzioni
 Ogni file `messages.php` include categorie complete di messaggi:
 

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Risoluzione dei Conflitti nei File JavaScript del Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Risoluzione dei Conflitti nei File JavaScript del Modulo User
 
 ## Problema
@@ -122,9 +128,14 @@ Dopo la risoluzione, sono state eseguite le seguenti verifiche:
 
 - [Documentazione Modulo User](module_user.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices per la Gestione dei Conflitti Git](../../../../docs/risoluzione_conflitti_git.md)
 - [Alpine.js](https://alpinejs.dev/) 
 =======
 - [Best Practices per la Gestione dei Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md)
 - [Alpine.js](https://alpinejs.dev/) 
 >>>>>>> 2024e2e7 (.)
+=======
+- [Best Practices per la Gestione dei Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md)
+- [Alpine.js](https://alpinejs.dev/) 
+>>>>>>> f589f9b2 (.)

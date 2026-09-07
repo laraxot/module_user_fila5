@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "BaseUser Refactoring - Completato"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # BaseUser Refactoring - Completato
 
 **Data**: 15 Ottobre 2025  
@@ -257,10 +263,14 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 ### Analisi Pre-Refactoring
 - [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Refactoring Plan](../../docs/baseuser-dry-violation-2025-10-15.md) - Piano esecutivo
 =======
 - [Refactoring Plan](../../../docs/baseuser-dry-violation-2025-10-15.md) - Piano esecutivo
 >>>>>>> 2024e2e7 (.)
+=======
+- [Refactoring Plan](../../../docs/baseuser-dry-violation-2025-10-15.md) - Piano esecutivo
+>>>>>>> f589f9b2 (.)
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
@@ -269,12 +279,17 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 
 ### Root Progetto
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Code Quality](../../docs/code-quality-analysis.md)
 - [DRY Violations](../../docs/dry-violations-analysis.md)
 =======
 - [Code Quality](../../../docs/code-quality-analysis.md)
 - [DRY Violations](../../../docs/dry-violations-analysis.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Code Quality](../../../docs/code-quality-analysis.md)
+- [DRY Violations](../../../docs/dry-violations-analysis.md)
+>>>>>>> f589f9b2 (.)
 
 ### Spatie Documentation
 - [Laravel Permission](https://spatie.be/docs/laravel-permission/v6/introduction)

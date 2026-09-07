@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Collection;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
@@ -204,6 +205,8 @@ test('it handles edge cases', function () {
     $nonExistentTeam = new Team(['id' => 9999]);
     expect($this->user->belongsToTeam($nonExistentTeam))->toBeFalse();
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Contracts\TeamContract;
@@ -442,5 +445,8 @@ test('it handles edge cases', function (): void {
 
     $nonExistentTeam = new Team(['id' => 9999]);
     Assert::assertFalse($user->belongsToTeam($nonExistentTeam));
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

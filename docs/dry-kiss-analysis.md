@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🐄✨ DRY & KISS Analysis - Modulo User
 
 **Data Analisi:** 2025-10-15  
@@ -106,6 +107,8 @@ abstract class BaseModel extends XotBaseModel
     
     protected $connection = 'user';
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "DRY & KISS Analysis - Modulo User"
 type: concept
@@ -142,11 +145,15 @@ related:
 abstract class BaseModel extends XotBaseModel
 {
     protected $connection = 'user';  // SOLO questa proprietà!
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
+<<<<<<< HEAD
 <<<<<<< HEAD
             'id' => 'string',
             'uuid' => 'string',
@@ -154,11 +161,15 @@ abstract class BaseModel extends XotBaseModel
 =======
             'verified_at' => 'datetime',  // Domain-specific
 >>>>>>> 2024e2e7 (.)
+=======
+            'verified_at' => 'datetime',  // Domain-specific
+>>>>>>> f589f9b2 (.)
         ]);
     }
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 **OSSERVAZIONE:**
 - ✅ Ridotto da 74 → 40 LOC
@@ -409,6 +420,8 @@ find docs/ -name "*old*" -o -name "*backup*" -o -name "*deprecated*"
 
 🐄 **MU-UU-UU!** 🐄
 =======
+=======
+>>>>>>> f589f9b2 (.)
 **Righe:** 12  
 **DRY Level:** ✅ 98%
 
@@ -504,5 +517,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 ---
 
 **Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 

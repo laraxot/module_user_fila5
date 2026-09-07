@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Registrazione Odontoiatra (Doctor)"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Registrazione Odontoiatra (Doctor)
 
 ## Panoramica
@@ -71,10 +77,14 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class DoctorResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchemaWidget(): array
 =======
     public function getFormSchemaWidget(): array
 >>>>>>> 2024e2e7 (.)
+=======
+    public static function getFormSchemaWidget(): array
+>>>>>>> f589f9b2 (.)
     {
         return [
             // Schema del form
@@ -133,10 +143,14 @@ class User extends Authenticatable
 ```php
 // /laravel/Modules/Patient/app/Filament/Resources/DoctorResource.php
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchemaWidget(): array
 =======
 public function getFormSchemaWidget(): array
 >>>>>>> 2024e2e7 (.)
+=======
+public static function getFormSchemaWidget(): array
+>>>>>>> f589f9b2 (.)
 {
     return [
         Forms\Components\TextInput::make('name')

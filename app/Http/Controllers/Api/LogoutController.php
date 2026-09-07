@@ -5,17 +5,23 @@ declare(strict_types=1);
 namespace Modules\User\Http\Controllers\Api;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 use InvalidArgumentException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Modules\User\Actions\Socialite\LogoutUserAction;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Modules\User\Actions\Socialite\LogoutUserAction;
 use Modules\Xot\Contracts\UserContract;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Datas\JsonResponseData;
 use Modules\Xot\Http\Controllers\XotBaseController;
 use Webmozart\Assert\Assert;
@@ -34,15 +40,21 @@ class LogoutController extends XotBaseController
      * handling any necessary cleanup tasks related to tokens and sessions.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  Request  $request  the incoming request containing the authenticated user
 =======
      * @param Request $request the incoming request containing the authenticated user
      *
 >>>>>>> 2024e2e7 (.)
+=======
+     * @param Request $request the incoming request containing the authenticated user
+     *
+>>>>>>> f589f9b2 (.)
      * @return JsonResponse a JSON response indicating the success of the logout operation
      */
     public function __invoke(Request $request): JsonResponse
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         Assert::notNull($user = $request->user(), '[' . __LINE__ . '][' . class_basename($this) . ']');
 
@@ -50,12 +62,17 @@ class LogoutController extends XotBaseController
         if (!($user instanceof UserContract)) {
             throw new InvalidArgumentException('L\'utente deve implementare l\'interfaccia UserContract');
 =======
+=======
+>>>>>>> f589f9b2 (.)
         Assert::notNull($user = $request->user(), '['.__LINE__.']['.class_basename($this).']');
 
         // Verificare che l'utente implementi l'interfaccia UserContract
         if (! $user instanceof UserContract) {
             throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia UserContract');
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         }
 
         app(LogoutUserAction::class)->execute($user);

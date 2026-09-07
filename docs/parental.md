@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Guida Approfondita a Tighten/Parental nel Modulo User
 
 ## Indice
@@ -188,6 +189,8 @@ $users = User::with('specialties')->get(); // Funziona solo se la relazione è d
 - [Laravel Documentation - Eloquent ORM](https://laravel.com/project_docs/10.x/eloquent)
 - [Single Table Inheritance Pattern](https://martinfowler.com/eaaCatalog/singleTableInheritance.html) di Martin Fowler
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: parental
@@ -204,4 +207,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/parental.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

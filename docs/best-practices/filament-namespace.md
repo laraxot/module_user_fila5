@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Regole per i Namespace Filament
 
 ## Regola 1: Namespace Modulare
@@ -45,6 +46,8 @@ class Dashboard extends Page
 - [Regole Generali Xot](../../xot/docs/readme.md)
 - [Best Practices Filament](../../cms/docs/best-practices/filament.md) 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: filament-namespace
@@ -61,4 +64,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/filament-namespace-rules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

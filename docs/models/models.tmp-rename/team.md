@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Team
 
 Il modello `Team` rappresenta un team nel sistema, implementando l'interfaccia `TeamContract`.
@@ -55,6 +56,8 @@ Quando si sviluppano trait, metodi condivisi o interfacce che devono funzionare 
 - [[TeamPermission]]
 - [[HasTeamsContract]] 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: team
@@ -63,4 +66,7 @@ related:
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/team.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

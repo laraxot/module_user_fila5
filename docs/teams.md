@@ -3,7 +3,10 @@ description:
 globs:
 alwaysApply: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -13,7 +16,10 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ---
 # Relazione utenti-team: tabella pivot `doctor_team`
 
@@ -34,18 +40,24 @@ La migrazione estende `XotBaseMigration` e utilizza i metodi helper per garantir
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Migrazioni del database](mdc:../../../docs/database-migrations.md)
 - [Relazioni generali tra moduli](mdc:../../Xot/docs/relazioni.mdc)
 - [Pattern di ereditarietà dei modelli](mdc:../../../docs/model-inheritance-patterns.md)
 - [Gestione degli utenti](mdc:../../../docs/user-management.md)
 - [Gestione delle traduzioni](mdc:../../../docs/translation-management.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Migrazioni del database](mdc:../../../../docs/database-migrations.md)
 - [Relazioni generali tra moduli](mdc:../../Xot/docs/relazioni.mdc)
 - [Pattern di ereditarietà dei modelli](mdc:../../../../docs/model-inheritance-patterns.md)
 - [Gestione degli utenti](mdc:../../../../docs/user-management.md)
 - [Gestione delle traduzioni](mdc:../../../../docs/translation-management.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ---
 

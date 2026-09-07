@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Widget Translation Guidelines"
 type: concept
@@ -16,7 +19,10 @@ related:
   - "./translation-guidelines.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Widget Translation Guidelines
 
 ## Overview
@@ -165,10 +171,14 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 4. Document any breaking changes
 ## Related Documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Widget Structure](../widgets_structure.md)
 =======
 - [User Module Widget Structure](../widgets-structure-2.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [User Module Widget Structure](../widgets-structure-2.md)
+>>>>>>> f589f9b2 (.)
 - [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 - [Translation System Overview](../../xot/docs/translations.md)
 - [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)

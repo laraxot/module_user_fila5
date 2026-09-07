@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Refactor Completo Campi "Città" - Modulo User
 
 ## Riepilogo Intervento
@@ -182,6 +183,8 @@ Utilizzare la documentazione centrale [`translation-field-structure-complete.md`
 
 *Intervento eseguito seguendo rigorosamente i principi DRY + KISS e gli standard Laraxot <main module>*
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: translation-city-field-refactor-conflict
@@ -198,4 +201,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-city-field-refactor-conflict.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

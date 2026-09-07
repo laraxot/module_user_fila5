@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Best Practices per le Traduzioni"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Best Practices per le Traduzioni
 
 ## Principi Generali
@@ -166,9 +172,15 @@ Seguire queste best practices aiuta a mantenere un sistema di traduzioni efficie
 - [Documentazione Laravel Localization](https://laravel.com/docs/localization)
 - [Best Practices di Codice](./CODE_BEST_PRACTICES.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Struttura Moduli](./MODULE_STRUCTURE.md) 
 =======
 - [Struttura Moduli](./module-structure.md) 
 - [Best Practices di Codice](./code_best_practices.md)
 - [Struttura Moduli](./module-structure-2.md) 
 >>>>>>> 2024e2e7 (.)
+=======
+- [Struttura Moduli](./module-structure.md) 
+- [Best Practices di Codice](./code_best_practices.md)
+- [Struttura Moduli](./module-structure-2.md) 
+>>>>>>> f589f9b2 (.)

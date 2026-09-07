@@ -49,6 +49,9 @@ class OauthAccessTokenResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
     public static function table(Table $table): Table
     {
         return $table
@@ -66,7 +69,11 @@ class OauthAccessTokenResource extends XotBaseResource
                             return null;
                         }
                         $user = $record->user;
+<<<<<<< HEAD
                         if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+=======
+                        if ($user !== null && method_exists($user, 'exists') && $user->exists) {
+>>>>>>> f589f9b2 (.)
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -85,7 +92,11 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('scopes')
                     ->limit(30)
                     ->tooltip(function (mixed $state): ?string {
+<<<<<<< HEAD
                         if (null === $state) {
+=======
+                        if ($state === null) {
+>>>>>>> f589f9b2 (.)
                             return null;
                         }
                         if (is_array($state)) {
@@ -141,8 +152,11 @@ class OauthAccessTokenResource extends XotBaseResource
             ->defaultSort('created_at', 'desc');
     }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public static function getPages(): array
     {
         return [
@@ -152,6 +166,9 @@ class OauthAccessTokenResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * @return array<string, Component>
      */
@@ -181,8 +198,11 @@ class OauthAccessTokenResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['user', 'client']);

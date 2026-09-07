@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Tests\TestCase;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Auth;
@@ -13,6 +14,8 @@ use Modules\User\Models\User;
 
 use function Pest\Laravel\assertAuthenticatedAs;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Feature\Filament\Widgets;
 
 use Illuminate\Support\Facades\Hash;
@@ -21,11 +24,15 @@ use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
     $this->widget = new LoginWidget();
 });
@@ -110,6 +117,8 @@ test('it requires email and password', function (): void {
     expect($errorMessages)->toContain('email');
     expect($errorMessages)->toContain('password');
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /* @var TestCase $this */
     $this->widget = new LoginWidget;
 });
@@ -170,5 +179,8 @@ describe('Login Widget', function (): void {
 
         $this->assertAuthenticatedAs($user);
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

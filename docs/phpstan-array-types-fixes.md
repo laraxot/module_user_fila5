@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Array Types Fixes - Modulo User
 
 ## 🚨 REGOLA CRITICA RISPETTATA 🚨
@@ -235,6 +236,8 @@ array<string, mixed> $attributes
 **phpstan.neon**: ✅ INTOCCATO  
 **Stato**: 📋 Analisi Completata - Pronto per Correzioni
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpstan-array-types-fixes
@@ -251,4 +254,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-array-types-fixes-Modules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

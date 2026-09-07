@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "PHPStan Level 10 Fixes - User Module"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # PHPStan Level 10 Fixes - User Module
 
 ## 📋 Riepilogo Intervento
@@ -338,9 +344,13 @@ Il modulo User è ora **completamente compliant** con PHPStan Level 10. I patter
 
 - **Xot Module**: Vedi `Modules/Xot/docs/phpstan-level10-xot-fixes.md` per pattern di base
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Quaeris Module**: Vedi `Modules/Quaeris/docs/phpstan-level10-quaeris-fixes.md` per pattern simili
 =======
 - **ExternalProject Module**: Vedi `Modules/ExternalProject/docs/phpstan-level10-app-fixes.md` per pattern simili
 >>>>>>> 2024e2e7 (.)
+=======
+- **ExternalProject Module**: Vedi `Modules/ExternalProject/docs/phpstan-level10-app-fixes.md` per pattern simili
+>>>>>>> f589f9b2 (.)
 
 **Status**: ✅ **COMPLETATO** - Pronto per production con type safety massima.

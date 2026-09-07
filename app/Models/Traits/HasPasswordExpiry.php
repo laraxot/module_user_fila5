@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models\Traits;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Actions\Model\HasColumnAction;
 
@@ -31,6 +32,8 @@ trait HasPasswordExpiry
             if ($model->isDirty('password') && filled($model->password)) {
                 $model->password_expires_at = now()->addDays($pwd->expires_in);
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Datas\PasswordData;
 
@@ -50,7 +53,10 @@ trait HasPasswordExpiry
         static::updating(static function (Model $model) use ($pwd): void {
             if ($model->isDirty('password') && filled($model->getAttribute('password'))) {
                 $model->setAttribute('password_expires_at', now()->addDays($pwd->expires_in));
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             }
         });
     }

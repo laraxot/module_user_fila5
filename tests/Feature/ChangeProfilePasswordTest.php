@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Tests\TestCase;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -88,6 +89,8 @@ test('cannot change password with wrong current password', function (): void {
     // Verifica che la password non sia stata cambiata
     expect(Hash::check('old_password', $user->fresh()?->password))->toBeTrue();
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Feature;
 
 use Filament\Facades\Filament;
@@ -163,5 +166,8 @@ describe('Change Profile Password', function (): void {
         Assert::assertTrue($hasCurrentPasswordError);
         Assert::assertTrue(Hash::check('old_password', (string) $user->fresh()?->password));
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

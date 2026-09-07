@@ -7,9 +7,12 @@ namespace Modules\User\Notifications\Auth;
 use Illuminate\Auth\Notifications\ResetPassword as BaseNotification;
 use Illuminate\Notifications\Messages\MailMessage;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Notifications\Notification;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Facades\Lang;
 use Webmozart\Assert\Assert;
 
@@ -24,6 +27,7 @@ class ResetPassword extends BaseNotification
 
     /**
      * Get the reset password notification mail message for the given URL.
+<<<<<<< HEAD
 <<<<<<< HEAD
      *
      * @param  string $url
@@ -41,6 +45,8 @@ class ResetPassword extends BaseNotification
             // ->line(Lang::get('user::email.password_reset_expiration', ['count' => config('auth.passwords.'.config('auth.defaults.passwords').'.expire')]))
             ->line(Lang::get('user::email.password_if_not_requested'));
 =======
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected function buildMailMessage($url): MailMessage
     {
@@ -55,6 +61,9 @@ class ResetPassword extends BaseNotification
 
         // $mailMessage = $mailMessage->line(Lang::get('user::email.password_reset_expiration', ['count' => config('auth.passwords.'.config('auth.defaults.passwords').'.expire')]));
         return $mailMessage->line(Lang::get('user::email.password_if_not_requested'));
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 }

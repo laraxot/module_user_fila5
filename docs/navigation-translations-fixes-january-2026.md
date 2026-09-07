@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Correzioni Traduzioni Navigation - Gennaio 2026"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Correzioni Traduzioni Navigation - Gennaio 2026
 
 ## Data Intervento
@@ -207,11 +213,17 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 - [Filosofia Traduzioni Laraxot](../../Xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../Xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./README.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Filosofia Traduzioni Laraxot](../../Xot/docs/translation-philosophy.md)
+- [Standard Traduzioni](../../Xot/docs/translation-standards.md)
+- [Documentazione Modulo User](./README.md)
+>>>>>>> f589f9b2 (.)
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./readme.md)
@@ -226,7 +238,11 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 
 *Intervento completato il: 2026-01-22*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Conforme alle regole DRY + KISS*
 =======
 *Conforme alle regole DRY + KISS*
 >>>>>>> 2024e2e7 (.)
+=======
+*Conforme alle regole DRY + KISS*
+>>>>>>> f589f9b2 (.)

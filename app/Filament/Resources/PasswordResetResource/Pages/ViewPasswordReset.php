@@ -5,18 +5,22 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\PasswordResetResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Filament\Resources\PasswordResetResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewPasswordReset extends XotBaseViewRecord
 {
     protected static string $resource = PasswordResetResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -54,4 +58,6 @@ class ViewPasswordReset extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

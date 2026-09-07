@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Implementazione Corretta delle Pagine Auth 
 
 ## Collegamenti correlati
@@ -14,6 +15,8 @@
 
 Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di SaluteOra, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Implementazione Corretta delle Pagine Auth"
 type: concept
@@ -48,7 +51,10 @@ related:
 ## Introduzione
 
 Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di <nome progetto>, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ## Struttura delle Directory
 
@@ -101,10 +107,14 @@ laravel/Themes/One/resources/views/pages/auth/
         if (Auth::attempt(['email' => $this->email, 'password' => $this->password], $this->remember)) {
             session()->regenerate();
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
             // Reindirizza alla home page localizzata
             return redirect()->to('/' . app()->getLocale());
         }
@@ -169,10 +179,14 @@ laravel/Themes/One/resources/views/pages/auth/
 
                 <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <x-filament::button 
 =======
                     <x-filament::button
 >>>>>>> 2024e2e7 (.)
+=======
+                    <x-filament::button
+>>>>>>> f589f9b2 (.)
                         type="submit"
                         size="lg"
                         color="primary"
@@ -308,10 +322,14 @@ laravel/Themes/One/resources/views/pages/auth/
 
                 <div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <x-filament::button 
 =======
                     <x-filament::button
 >>>>>>> 2024e2e7 (.)
+=======
+                    <x-filament::button
+>>>>>>> f589f9b2 (.)
                         type="submit"
                         size="lg"
                         color="primary"
@@ -419,10 +437,14 @@ Quindi nel form:
             session()->regenerateToken();
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
         // Reindirizza alla home page localizzata
         $this->redirect('/' . app()->getLocale());
     });
@@ -471,8 +493,11 @@ Utilizzare sempre i componenti Blade nativi di Filament:
 
 ```blade
 <<<<<<< HEAD
+<<<<<<< HEAD
 <x-filament::button 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 <x-filament::button
     type="submit"
     size="lg"
@@ -937,7 +962,10 @@ Utilizzare sempre i componenti Blade nativi di Filament:
 
 ```blade
 <x-filament::button
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     type="submit"
     size="lg"
     color="primary"

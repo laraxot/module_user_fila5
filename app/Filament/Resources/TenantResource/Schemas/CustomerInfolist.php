@@ -16,7 +16,11 @@ class CustomerInfolist extends XotBaseResourceInfolist
      *
      * Campi basati su Model Tenant.php -> id, name, slug, email_address, phone, mobile, address, primary_color, secondary_color, domain, database, is_active, trial_ends_at, settings
      */
+<<<<<<< HEAD
     public function getInfolistSchema(): array
+=======
+    public static function getInfolistSchema(): array
+>>>>>>> f589f9b2 (.)
     {
         return [
             'id' => TextEntry::make('id'),

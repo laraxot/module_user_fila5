@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Laravel\Passport\RefreshToken as PassportRefreshToken;
@@ -26,6 +27,8 @@ use Laravel\Passport\RefreshToken as PassportRefreshToken;
  * @method static Builder|OauthRefreshToken whereRevoked($value)
  * @mixin IdeHelperOauthRefreshToken
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Laravel\Passport\RefreshToken as PassportRefreshToken;
 
 /**
@@ -43,11 +46,15 @@ use Laravel\Passport\RefreshToken as PassportRefreshToken;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken whereRevoked($value)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 class OauthRefreshToken extends PassportRefreshToken
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * @var string
@@ -58,4 +65,7 @@ class OauthRefreshToken extends PassportRefreshToken
 =======
     protected $connection = 'user';
 >>>>>>> 2024e2e7 (.)
+=======
+    protected $connection = 'user';
+>>>>>>> f589f9b2 (.)
 }

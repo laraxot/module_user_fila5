@@ -10,6 +10,7 @@ declare(strict_types=1);
 namespace Modules\User\Models\Policies;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -30,9 +31,14 @@ abstract class UserBasePolicy
         return null;
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Models\Policies\XotBasePolicy;
 
 abstract class UserBasePolicy extends XotBasePolicy
 {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

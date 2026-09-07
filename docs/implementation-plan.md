@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Piano di Implementazione Componenti Header"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Piano di Implementazione Componenti Header
 
 ## Fase 1: Setup Struttura
@@ -187,17 +193,23 @@ class NavigationTest extends TestCase
 
 ### 7.1 Aggiornare
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Header Components](./HEADER_COMPONENTS.md)
 - [Navigation Structure](./NAVIGATION_STRUCTURE.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Header Components](./header-components.md)
 - [Navigation Structure](./navigation-structure.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
 - [Header Components](./header-components.md)
 - [Navigation Structure](./navigation-structure-2.md)
 - [Security Best Practices](./security_best_practices.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ## Timeline
 
@@ -225,14 +237,21 @@ class NavigationTest extends TestCase
 
 ## Collegamenti Correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Header Components](./HEADER_COMPONENTS.md)
 - [Navigation Structure](./NAVIGATION_STRUCTURE.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md) 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Header Components](./header-components.md)
 - [Navigation Structure](./navigation-structure.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md) 
 - [Header Components](./header-components.md)
 - [Navigation Structure](./navigation-structure-2.md)
+<<<<<<< HEAD
 - [Security Best Practices](./security_best_practices.md) 
 >>>>>>> 2024e2e7 (.)
+=======
+- [Security Best Practices](./security_best_practices.md) 
+>>>>>>> f589f9b2 (.)

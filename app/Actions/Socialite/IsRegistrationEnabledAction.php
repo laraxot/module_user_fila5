@@ -10,9 +10,12 @@ namespace Modules\User\Actions\Socialite;
 
 use Spatie\QueueableAction\QueueableAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 class IsRegistrationEnabledAction
 {
@@ -24,11 +27,15 @@ class IsRegistrationEnabledAction
     public function execute(): bool
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::boolean($res = config('filament-socialite.registration'));
 
         return $res;
 =======
         return (bool) config('socialite.registration', true);
 >>>>>>> 2024e2e7 (.)
+=======
+        return (bool) config('socialite.registration', true);
+>>>>>>> f589f9b2 (.)
     }
 }

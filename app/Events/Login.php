@@ -21,9 +21,14 @@ class Login
     public function __construct(
         public SocialiteUser $socialiteUser,
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {}
 =======
     ) {
     }
 >>>>>>> 2024e2e7 (.)
+=======
+    ) {
+    }
+>>>>>>> f589f9b2 (.)
 }

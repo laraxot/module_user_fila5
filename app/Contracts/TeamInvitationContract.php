@@ -12,6 +12,7 @@ use Illuminate\Support\Carbon;
  * Modules\User\Contracts\TeamInvitationContract.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property int $id
  * @property int $team_id
  * @property string $email
@@ -30,6 +31,8 @@ use Illuminate\Support\Carbon;
  * @method static Builder|TeamInvitationContract whereTeamId($value)
  * @method static Builder|TeamInvitationContract whereUpdatedAt($value)
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property int          $id
  * @property int          $team_id
  * @property string       $email
@@ -47,7 +50,10 @@ use Illuminate\Support\Carbon;
  * @method static Builder<Model>|TeamInvitationContract whereRole($value)
  * @method static Builder<Model>|TeamInvitationContract whereTeamId($value)
  * @method static Builder<Model>|TeamInvitationContract whereUpdatedAt($value)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @phpstan-require-extends Model
  *

@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Schemas\Schema;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Component;
 use Override;
@@ -19,6 +20,8 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  */
 class ForgotPasswordWidget extends XotBaseWidget
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Support\Facades\Password;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
@@ -31,11 +34,15 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  * @property Schema $form
  */
 class ForgotPasswordWidget extends XotBaseSchemaWidget
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 {
     protected string $view = 'user::widgets.auth.forgot-password-widget';
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Get the form schema for this widget.
      *
@@ -51,6 +58,8 @@ class ForgotPasswordWidget extends XotBaseSchemaWidget
                 ->maxLength(255),
         ];
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * @return class-string<UserForm>
      */
     protected static function formClass(): string
@@ -61,7 +70,10 @@ class ForgotPasswordWidget extends XotBaseSchemaWidget
     protected static function schemaMethod(): string
     {
         return 'getForgotPasswordFormSchema';
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     }
 
     public function sendResetLink(): void
@@ -71,10 +83,14 @@ class ForgotPasswordWidget extends XotBaseSchemaWidget
         $status = Password::sendResetLink(['email' => $data['email']]);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($status === Password::RESET_LINK_SENT) {
 =======
         if (Password::RESET_LINK_SENT === $status) {
 >>>>>>> 2024e2e7 (.)
+=======
+        if (Password::RESET_LINK_SENT === $status) {
+>>>>>>> f589f9b2 (.)
             session()->flash('status', __($status));
         } else {
             $this->addError('email', __($status));

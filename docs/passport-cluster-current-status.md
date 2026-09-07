@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Passport Cluster - Status Attuale e Lavoro Necessario
 
 **Data**: 2025-01-22
@@ -103,6 +104,8 @@ Modules/User/app/Filament/Clusters/Passport/
 **Versione**: 1.0.0
 **Status**: 🔴 IN LAVORO
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: passport-cluster-current-status
@@ -119,4 +122,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-current-status.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

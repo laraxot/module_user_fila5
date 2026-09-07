@@ -27,6 +27,7 @@ class ListOauthClients extends XotBaseListRecords
                 ->label(static::trans('actions.create_personal.label'))
                 ->icon('heroicon-o-key')
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->form([
                     TextInput::make('name')
                         ->default((string) config('app.name').' '.static::trans('actions.create_personal.label'))
@@ -46,6 +47,8 @@ class ListOauthClients extends XotBaseListRecords
                         ->send();
                 }),
 =======
+=======
+>>>>>>> f589f9b2 (.)
                 ->schema([
                     TextInput::make('name')
                         ->default(self::configString('app.name').' '.static::trans('actions.create_personal.label'))
@@ -67,11 +70,15 @@ class ListOauthClients extends XotBaseListRecords
                             ->send();
                     }
                 ),
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
             'create_password_grant_client' => Action::make('create_password_grant_client')
                 ->label(static::trans('actions.create_password.label'))
                 ->icon('heroicon-o-lock-closed')
+<<<<<<< HEAD
 <<<<<<< HEAD
                 ->form([
                     TextInput::make('name')
@@ -81,6 +88,11 @@ class ListOauthClients extends XotBaseListRecords
                     TextInput::make('name')
                         ->default(self::configString('app.name').' '.static::trans('actions.create_password.label'))
 >>>>>>> 2024e2e7 (.)
+=======
+                ->schema([
+                    TextInput::make('name')
+                        ->default(self::configString('app.name').' '.static::trans('actions.create_password.label'))
+>>>>>>> f589f9b2 (.)
                         ->required()
                         ->maxLength(255),
                     TextInput::make('provider')
@@ -88,6 +100,7 @@ class ListOauthClients extends XotBaseListRecords
                         ->required()
                         ->maxLength(255),
                 ])
+<<<<<<< HEAD
 <<<<<<< HEAD
                 ->action(function (array $data) {
                     app(CreatePasswordClientAction::class)->execute(
@@ -102,6 +115,8 @@ class ListOauthClients extends XotBaseListRecords
                         ->send();
                 }),
 =======
+=======
+>>>>>>> f589f9b2 (.)
                 ->action(
                     /** @param array<string, mixed> $data */
                     function (array $data): void {
@@ -117,11 +132,15 @@ class ListOauthClients extends XotBaseListRecords
                             ->send();
                     }
                 ),
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
             'create_client_credentials_client' => Action::make('create_client_credentials_client')
                 ->label(static::trans('actions.create_client_credentials.label'))
                 ->icon('heroicon-o-server')
+<<<<<<< HEAD
 <<<<<<< HEAD
                 ->form([
                     TextInput::make('name')
@@ -146,6 +165,8 @@ class ListOauthClients extends XotBaseListRecords
         ];
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
                 ->schema([
                     TextInput::make('name')
                         ->default(self::configString('app.name').' '.static::trans('actions.create_client_credentials.label'))
@@ -188,5 +209,8 @@ class ListOauthClients extends XotBaseListRecords
 
         return is_string($value) ? $value : $default;
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

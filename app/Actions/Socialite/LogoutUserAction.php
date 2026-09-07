@@ -25,10 +25,14 @@ class LogoutUserAction
     public function execute(UserContract $user): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::notNull($accessToken = $user->token(), '[' . __FILE__ . '][' . __LINE__ . ']');
 =======
         Assert::notNull($accessToken = $user->token(), '['.__FILE__.']['.__LINE__.']');
 >>>>>>> 2024e2e7 (.)
+=======
+        Assert::notNull($accessToken = $user->token(), '['.__FILE__.']['.__LINE__.']');
+>>>>>>> f589f9b2 (.)
         /*
          * DB::table('oauth_refresh_tokens')
          * ->where('access_token_id', $accessToken->)

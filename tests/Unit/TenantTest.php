@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Tests\TestCase;
 use Modules\User\Models\BaseTenant;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -18,6 +19,8 @@ beforeEach(function (): void {
     $this->tenant = Tenant::factory()->create([
         'name' => 'Test Tenant',
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Models\Contracts\HasAvatar;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Facades\DB;
@@ -46,13 +49,17 @@ function createPersistedTenant(array $overrides = []): Tenant
     $tenant->fill(array_merge([
         'id' => (string) Str::uuid(),
         'name' => 'Test Tenant '.uniqid(),
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         'email_address' => 'test@tenant.com',
         'phone' => '+39 123 456 789',
         'mobile' => '+39 987 654 321',
         'address' => 'Via Roma 123',
         'primary_color' => '#FF0000',
         'secondary_color' => '#00FF00',
+<<<<<<< HEAD
 <<<<<<< HEAD
     ]);
 });
@@ -111,6 +118,8 @@ test('tenant has members relationship', function (): void {
     $members = $this->tenant->members();
     expect($members)->toBeInstanceOf(BelongsToMany::class);
 =======
+=======
+>>>>>>> f589f9b2 (.)
     ], $overrides));
     $tenant->save();
 
@@ -166,12 +175,16 @@ test('tenant has members relationship', function (): void {
     $tenant = createPersistedTenant();
 
     Assert::assertInstanceOf(BelongsToMany::class, $tenant->members());
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });
 
 test('tenant implements required interfaces', function (): void {
     $reflection = new ReflectionClass(Tenant::class);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     expect($reflection->implementsInterface(HasAvatar::class))->toBeTrue();
     expect($reflection->implementsInterface(HasMedia::class))->toBeTrue();
@@ -232,6 +245,8 @@ test('tenant can be deleted', function (): void {
 
     expect(Tenant::find($tenantId))->toBeNull();
 =======
+=======
+>>>>>>> f589f9b2 (.)
     Assert::assertTrue($reflection->implementsInterface(HasAvatar::class));
     Assert::assertTrue($reflection->implementsInterface(HasMedia::class));
     Assert::assertTrue($reflection->implementsInterface(TenantContract::class));
@@ -335,5 +350,8 @@ test('can find tenants by name pattern', function (): void {
     $companyTenants = Tenant::where('name', 'like', '%'.$baseName.'%')->get();
 
     Assert::assertGreaterThanOrEqual(2, $companyTenants->count());
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

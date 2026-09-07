@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\Widgets;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Widgets\Widget;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
@@ -15,6 +16,8 @@ class UserOverview extends Widget
 
     protected string $view = 'user::filament.resources.user-resource.widgets.user-overview';
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Schemas\Components\Component;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -32,5 +35,8 @@ class UserOverview extends XotBaseWidget
     {
         return [];
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

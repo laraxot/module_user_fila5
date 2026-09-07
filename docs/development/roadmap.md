@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Versione HEAD
 
 # Roadmap Modulo User
@@ -438,6 +439,8 @@ Overall Module Completion: 82%
 ---
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "roadmap — puntatore"
 type: reference
@@ -450,4 +453,7 @@ related:
 Contenuto in wiki di progetto — non duplicare nei moduli ([#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
 
 → [docs/wiki/rules/00-TRIGGER_MAP.md](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

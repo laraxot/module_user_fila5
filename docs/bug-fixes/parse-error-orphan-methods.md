@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Bug Fix: ParseError - Metodi Orfani Fuori dalla Classe
 
 ## Data
@@ -144,6 +145,8 @@ Questo bug fix ha permesso di completare il miglioramento della qualità del cod
 - Notifiche utente
 - Verifica email
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: parse-error-orphan-methods
@@ -159,4 +162,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/parse-error-orphan-methods.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

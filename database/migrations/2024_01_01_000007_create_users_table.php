@@ -10,11 +10,16 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Class CreateLiveuserUsersTable.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration {
 =======
 return new class extends XotBaseMigration
 {
 >>>>>>> 2024e2e7 (.)
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> f589f9b2 (.)
     /**
      * Run the migrations.
      */
@@ -25,10 +30,14 @@ return new class extends XotBaseMigration
             // $table->uuid('id')->primary();
             $table->string('id', 36)->primary();
 <<<<<<< HEAD
+<<<<<<< HEAD
             $table->string('name')->nullable();
 =======
             $table->string('name');
 >>>>>>> 2024e2e7 (.)
+=======
+            $table->string('name');
+>>>>>>> f589f9b2 (.)
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('email')->unique();
@@ -70,6 +79,7 @@ return new class extends XotBaseMigration
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (! $this->hasColumn('type')) {
                 $table->string('type')->default('customer_user')->after('is_active');
             }
@@ -80,6 +90,8 @@ return new class extends XotBaseMigration
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             if (! $this->hasColumn('is_otp')) {
                 $table->boolean('is_otp')->default(false);
             }
@@ -92,10 +104,14 @@ return new class extends XotBaseMigration
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ('uuid' === $this->getColumnType('id')) {
 =======
             if ($this->getColumnType('id') === 'uuid') {
 >>>>>>> 2024e2e7 (.)
+=======
+            if ($this->getColumnType('id') === 'uuid') {
+>>>>>>> f589f9b2 (.)
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);

@@ -1,9 +1,12 @@
 import { defineConfig } from 'vite'
 import laravel from 'laravel-vite-plugin'
 <<<<<<< HEAD
+<<<<<<< HEAD
 import tailwindcss from "@tailwindcss/vite";
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 export default defineConfig({
     build: {

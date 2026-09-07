@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Profile Management in Laravel Modules"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Profile Management in Laravel Modules
 
 ## Overview
@@ -88,12 +94,15 @@ This document outlines the best practices for managing user profiles within a La
 
 ## Links to Related Documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Index](./INDEX.md)
 - [BaseUser Model](./BaseUser.md)
 - [Authentication Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Routing Best Practices](./ROUTING_BEST_PRACTICES.md)
 - [Session Management](./SESSION_MANAGEMENT.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [User Module Index](./index.md)
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
@@ -103,5 +112,9 @@ This document outlines the best practices for managing user profiles within a La
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 - [Routing Best Practices](./routing-best-practices.md)
+<<<<<<< HEAD
 - [Session Management](./session-management.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Session Management](./session-management.md)
+>>>>>>> f589f9b2 (.)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati
@@ -145,6 +146,8 @@ Si raccomanda di implementare l'**Opzione 1** perché:
 
 Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: logout-event-error-1
@@ -161,4 +164,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-event-error-1.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

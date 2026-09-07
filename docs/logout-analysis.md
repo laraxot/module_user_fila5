@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Analisi del File Logout.blade.php"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Analisi del File Logout.blade.php
 
 ## Analisi Attuale
@@ -242,11 +248,14 @@ $logout = function () {
 
 ## Collegamenti Correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Volt](./VOLT_BLADE_IMPLEMENTATION.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./SESSION_MANAGEMENT.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Documentazione Volt](./volt-blade-implementation.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session-management.md)
@@ -254,5 +263,9 @@ $logout = function () {
 - [Documentazione Volt](./volt-blade-implementation-3.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management-2.md)
+<<<<<<< HEAD
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
 >>>>>>> 2024e2e7 (.)
+=======
+- [Tema One Documentation](../../themes/one/docs/readme.md) 
+>>>>>>> f589f9b2 (.)

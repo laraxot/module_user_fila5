@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo
@@ -203,6 +204,8 @@ Il pattern può essere applicato a tutti i widget del sistema per garantire cons
 **Translation keys aggiunte**: 60+ per lingua  
 **LoginWidget status**: ✅ Fully functional in all languages
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: login-widget-translation
@@ -219,4 +222,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/login-widget-translation-audit.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

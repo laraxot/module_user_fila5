@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\PermissionResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
@@ -18,6 +19,8 @@ use Filament\Actions\BulkAction;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Actions\CreateAction;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
@@ -26,17 +29,23 @@ use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Forms\Components\Select;
 use Filament\Tables;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Illuminate\Database\Eloquent\Collection;
 use Modules\User\Filament\Resources\PermissionResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\SelectFilter;
 use Illuminate\Database\Eloquent\Builder;
@@ -46,7 +55,10 @@ use Modules\User\Filament\Resources\PermissionResource;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Webmozart\Assert\Assert;
 
 class ListPermissions extends XotBaseListRecords
@@ -57,10 +69,14 @@ class ListPermissions extends XotBaseListRecords
      * @return array<string, Tables\Columns\Column>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function getTableColumns(): array
     {
         return [
@@ -75,10 +91,14 @@ class ListPermissions extends XotBaseListRecords
      * @return array<string, BaseFilter>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function getTableFilters(): array
     {
         return [
@@ -96,10 +116,14 @@ class ListPermissions extends XotBaseListRecords
      * @return array<string, Action|ActionGroup>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function getTableActions(): array
     {
         return [
@@ -110,6 +134,7 @@ class ListPermissions extends XotBaseListRecords
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return array<string, Action>
      */
@@ -130,6 +155,11 @@ class ListPermissions extends XotBaseListRecords
      */
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return array<string, BulkAction>
+     */
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function getTableBulkActions(): array
     {
         Assert::classExists($roleModel = config('permission.models.role'));
@@ -140,6 +170,7 @@ class ListPermissions extends XotBaseListRecords
                 ->action(static function (Collection $collection, array $data): void {
                     foreach ($collection as $record) {
                         // Verifichiamo che $record sia un'istanza di Model prima di procedere
+<<<<<<< HEAD
 <<<<<<< HEAD
                         Assert::isInstanceOf(
                             $record,
@@ -152,6 +183,8 @@ class ListPermissions extends XotBaseListRecords
                             $record->roles()->sync($data['role']);
                             $record->save();
 =======
+=======
+>>>>>>> f589f9b2 (.)
                         // This check is redundant as $record is already an instance of Model
                         // Assert::isInstanceOf($record, Model::class, '['.__LINE__.']['.__CLASS__.']');
 
@@ -165,14 +198,20 @@ class ListPermissions extends XotBaseListRecords
                                 $rolesRelation->sync($syncData);
                                 $record->save();
                             }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                         }
                     }
                 })
                 ->schema([
 <<<<<<< HEAD
+<<<<<<< HEAD
                     Select::make('role')->options($roleModel::query()->pluck('name', 'id'))->required(),
 =======
+=======
+>>>>>>> f589f9b2 (.)
                     Select::make('role')->options(function () use ($roleModel): array {
                         /** @var Builder<Role> $query */
                         $query = $roleModel::query();
@@ -181,13 +220,19 @@ class ListPermissions extends XotBaseListRecords
                             ->mapWithKeys(static fn (mixed $name, mixed $id): array => is_string($name) || is_int($name) ? [(string) $id => (string) $name] : [])
                             ->all();
                     })->required(),
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                 ])
                 ->deselectRecordsAfterCompletion(),
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
     /**
      * @return array<string, Action>
@@ -199,5 +244,8 @@ class ListPermissions extends XotBaseListRecords
             'create' => CreateAction::make(),
         ];
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

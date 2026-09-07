@@ -5,9 +5,12 @@ declare(strict_types=1);
 namespace Modules\User\Livewire;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Exception;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
@@ -27,10 +30,14 @@ class Logout extends Component
      * Handle user logout process.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function logout(): null|RedirectResponse
 =======
     public function logout(): ?RedirectResponse
 >>>>>>> 2024e2e7 (.)
+=======
+    public function logout(): ?RedirectResponse
+>>>>>>> f589f9b2 (.)
     {
         $this->processing = true;
 
@@ -41,15 +48,21 @@ class Logout extends Component
 
             return redirect()->route('home');
 <<<<<<< HEAD
+<<<<<<< HEAD
         } catch (Exception $e) {
             $this->processing = false;
             session()->flash('error', __('Errore durante il logout. Riprova.'));
 =======
+=======
+>>>>>>> f589f9b2 (.)
         } catch (\Exception $e) {
             $this->processing = false;
             session()->flash('error', __('Errore durante il logout. Riprova.'));
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             return null;
         }
     }

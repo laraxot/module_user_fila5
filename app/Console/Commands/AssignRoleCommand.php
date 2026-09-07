@@ -6,47 +6,63 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Symfony\Component\Console\Input\InputOption;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 class AssignRoleCommand extends Command
 {
     /**
      * The name and signature of the console command.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @var string
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected $name = 'user:assign-role';
 
     /**
      * The console command description.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @var string
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected $description = 'Assign a module to user';
 
     /**
      * Create a new command instance.
+<<<<<<< HEAD
 <<<<<<< HEAD
      *
      * @return void
@@ -55,6 +71,9 @@ class AssignRoleCommand extends Command
 =======
      */
 >>>>>>> 2024e2e7 (.)
+=======
+     */
+>>>>>>> f589f9b2 (.)
 
     /**
      * Execute the console command.
@@ -76,18 +95,24 @@ class AssignRoleCommand extends Command
             required: true,
             scroll: 10,
 <<<<<<< HEAD
+<<<<<<< HEAD
         // validate: function (array $values) {
         //  return ! \in_array(\count($values), [1, 2], false)
         //    ? 'A maximum of two'
         //  : null;
         // }
 =======
+=======
+>>>>>>> f589f9b2 (.)
             // validate: function (array $values) {
             //  return ! \in_array(\count($values), [1, 2], false)
             //    ? 'A maximum of two'
             //  : null;
             // }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         );
 
         foreach ($rows as $row) {
@@ -95,6 +120,7 @@ class AssignRoleCommand extends Command
             $user->assignRole($role);
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         $this->info(implode(', ', $rows) . ' assigned to ' . $email);
     }
@@ -109,6 +135,8 @@ class AssignRoleCommand extends Command
         ];
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $this->info(implode(', ', $rows).' assigned to '.$email);
     }
 
@@ -121,5 +149,8 @@ class AssignRoleCommand extends Command
     //        ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
     // }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

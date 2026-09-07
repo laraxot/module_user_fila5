@@ -24,6 +24,9 @@ class OauthClientResource extends XotBaseResource
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
      * Schema del form per la risorsa.
      *
      * @return array<string, Field>
@@ -54,8 +57,11 @@ class OauthClientResource extends XotBaseResource
     }
 
     /**
+<<<<<<< HEAD
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      * Configure the model query.
      */
     public static function getEloquentQuery(): Builder

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
      * | Table Columns
@@ -12,11 +13,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'column.name' => 'Nome',
     'column.guard_name' => 'Nome Guard',
     'column.roles' => 'Ruoli',
     'column.permissions' => 'Permessi',
     'column.updated_at' => 'Aggiornato a',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -26,11 +30,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'field.name' => 'Nome',
     'field.guard_name' => 'Nome Guard',
     'field.permissions' => 'Permessi',
     'field.select_all.name' => 'Seleziona Tutto',
     'field.select_all.message' => 'Abilita tutti i Permessi attualmente <span class="text-primary font-medium">Abilitati</span> per questo ruolo',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -40,11 +47,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Ruoli',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Ruolo',
     'resource.label.roles' => 'Ruoli',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -54,11 +64,14 @@ return [
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     'section' => 'Entities',
     'resources' => 'Resources',
     'widgets' => 'Widgets',
     'pages' => 'Pages',
     'custom' => 'Permessi Personalizzati',
+<<<<<<< HEAD
 <<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
@@ -87,6 +100,8 @@ return [
     //     'restore_any' => 'Restore Any',
     // ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'forbidden' => 'Non hai i permessi di accesso',
     'navigation' => [
         'name' => 'Filament Shield',
@@ -132,5 +147,8 @@ return [
             'label' => 'Elimina Filament Shield',
         ],
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

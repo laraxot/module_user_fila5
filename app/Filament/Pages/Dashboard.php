@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Filament\Widgets\UsersChartWidget;
 use Modules\User\Filament\Widgets\RecentLoginsWidget;
 use Override;
@@ -22,20 +23,28 @@ use Filament\Widgets\Widget;
 use Filament\Widgets\WidgetConfiguration;
 use Modules\User\Filament\Widgets;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Widgets\Widget;
 use Filament\Widgets\WidgetConfiguration;
 use Modules\User\Filament\Widgets\RecentLoginsWidget;
 use Modules\User\Filament\Widgets\UsersChartWidget;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Filament\Pages\XotBaseDashboard;
 
 class Dashboard extends XotBaseDashboard
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-home';
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     // protected static string $routePath = 'finance';
     // protected static ?string $title = 'Finance dashboard';
     // protected static ?int $navigationSort = 15;
@@ -54,6 +63,7 @@ class Dashboard extends XotBaseDashboard
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     #[Override]
     public function getFiltersFormSchema(): array
@@ -68,4 +78,6 @@ class Dashboard extends XotBaseDashboard
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -22,6 +23,8 @@ beforeEach(function () {
 describe('User Model Creation', function () {
     it('can be created with valid data', function () {
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Database\Eloquent\Collection;
@@ -49,21 +52,29 @@ beforeEach(function (): void {
 
 describe('User Model', function (): void {
     test('can be created with valid data', function (): void {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $userData = [
             'name' => 'Test User',
             'first_name' => 'Test',
             'last_name' => 'User',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'email' => 'test@example.com',
 =======
             'email' => 'test-'.uniqid().'@example.com',
 >>>>>>> 2024e2e7 (.)
+=======
+            'email' => 'test-'.uniqid().'@example.com',
+>>>>>>> f589f9b2 (.)
             'password' => bcrypt('password'),
             'lang' => 'it',
             'is_active' => true,
         ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         $user = User::factory()->create($userData);
 
@@ -99,6 +110,8 @@ describe('User Model Attributes', function () {
     it('has full name accessor', function () {
         $user = User::factory()->create([
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $user = UserFactory::new()->createOne($userData);
 
         Assert::assertInstanceOf(User::class, $user);
@@ -128,11 +141,15 @@ describe('User Model Attributes', function () {
 
     test('has full name accessor', function (): void {
         $user = UserFactory::new()->createOne([
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'first_name' => 'John',
             'last_name' => 'Doe',
         ]);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         expect($user->full_name)->toBe('John Doe');
     });
@@ -338,6 +355,8 @@ describe('User Scopes and Queries', function () {
         User::factory()->create(['is_active' => true]);
         User::factory()->create(['is_active' => false]);
 =======
+=======
+>>>>>>> f589f9b2 (.)
         Assert::assertSame('John Doe', $user->full_name);
     });
 
@@ -594,11 +613,15 @@ describe('User Scopes and Queries', function () {
     test('can filter by active users', function (): void {
         UserFactory::new()->createOne(['is_active' => true]);
         UserFactory::new()->createOne(['is_active' => false]);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
         $activeUsers = User::where('is_active', true)->get();
         $inactiveUsers = User::where('is_active', false)->get();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         expect($activeUsers->every(fn($user) => $user->is_active))->toBe(true);
         expect($inactiveUsers->every(fn($user) => !$user->is_active))->toBe(true);
@@ -608,6 +631,8 @@ describe('User Scopes and Queries', function () {
         User::factory()->create(['email_verified_at' => now()]);
         User::factory()->create(['email_verified_at' => null]);
 =======
+=======
+>>>>>>> f589f9b2 (.)
         Assert::assertSame(true, $activeUsers->every(fn (User $user) => $user->is_active));
         Assert::assertSame(true, $inactiveUsers->every(fn (User $user) => ! $user->is_active));
     });
@@ -615,11 +640,15 @@ describe('User Scopes and Queries', function () {
     test('can filter by email verified', function (): void {
         UserFactory::new()->createOne(['email_verified_at' => now()]);
         UserFactory::new()->createOne(['email_verified_at' => null]);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
         $verifiedUsers = User::whereNotNull('email_verified_at')->get();
         $unverifiedUsers = User::whereNull('email_verified_at')->get();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         expect($verifiedUsers->every(fn($user) => $user->email_verified_at !== null))->toBe(true);
         expect($unverifiedUsers->every(fn($user) => $user->email_verified_at === null))->toBe(true);
@@ -629,6 +658,8 @@ describe('User Scopes and Queries', function () {
         User::factory()->create(['lang' => 'it']);
         User::factory()->create(['lang' => 'en']);
 =======
+=======
+>>>>>>> f589f9b2 (.)
         Assert::assertSame(true, $verifiedUsers->every(fn (User $user) => $user->email_verified_at !== null));
         Assert::assertSame(true, $unverifiedUsers->every(fn (User $user) => $user->email_verified_at === null));
     });
@@ -636,11 +667,15 @@ describe('User Scopes and Queries', function () {
     test('can filter by language', function (): void {
         UserFactory::new()->createOne(['lang' => 'it']);
         UserFactory::new()->createOne(['lang' => 'en']);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
         $italianUsers = User::where('lang', 'it')->get();
         $englishUsers = User::where('lang', 'en')->get();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         expect($italianUsers->every(fn($user) => $user->lang === 'it'))->toBe(true);
         expect($englishUsers->every(fn($user) => $user->lang === 'en'))->toBe(true);
@@ -674,5 +709,9 @@ describe('User Soft Deletes', function () {
         Assert::assertSame(true, $italianUsers->every(fn (User $user) => $user->lang === 'it'));
         Assert::assertSame(true, $englishUsers->every(fn (User $user) => $user->lang === 'en'));
 >>>>>>> 2024e2e7 (.)
+=======
+        Assert::assertSame(true, $italianUsers->every(fn (User $user) => $user->lang === 'it'));
+        Assert::assertSame(true, $englishUsers->every(fn (User $user) => $user->lang === 'en'));
+>>>>>>> f589f9b2 (.)
     });
 });

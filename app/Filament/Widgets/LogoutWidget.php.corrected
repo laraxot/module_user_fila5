@@ -6,10 +6,14 @@ namespace Modules\User\Filament\Widgets;
 
 use Filament\Forms\Components\Actions\Action;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\Component;
 =======
 use Filament\Schemas\Components\Component;
 >>>>>>> 2024e2e7 (.)
+=======
+use Filament\Schemas\Components\Component;
+>>>>>>> f589f9b2 (.)
 use Filament\Forms\Components\View;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Event;

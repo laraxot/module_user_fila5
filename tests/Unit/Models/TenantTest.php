@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\User\Models\Tenant;
 use Tests\TestCase;
@@ -28,6 +29,8 @@ class TenantTest extends TestCase
     public function test_can_create_tenant_with_all_fields(): void
     {
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Models\Tenant;
 use Modules\User\Tests\TestCase;
@@ -59,7 +62,10 @@ describe('Tenant', function (): void {
         TestCase::skipUnlessTenantColumn('settings');
         TestCase::skipUnlessTenantColumn('trial_ends_at');
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $tenantData = [
             'name' => 'Full Tenant',
             'slug' => 'full-tenant',
@@ -71,6 +77,7 @@ describe('Tenant', function (): void {
         ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $tenant = Tenant::factory()->create($tenantData);
 
         $this->assertDatabaseHas('tenants', [
@@ -79,6 +86,11 @@ describe('Tenant', function (): void {
 
         $this->assertDatabaseHasRow('tenants', [
 >>>>>>> 2024e2e7 (.)
+=======
+        $tenant = TenantFactory::new()->createOne($tenantData);
+
+        $this->assertDatabaseHasRow('tenants', [
+>>>>>>> f589f9b2 (.)
             'id' => $tenant->id,
             'name' => 'Full Tenant',
             'slug' => 'full-tenant',
@@ -87,6 +99,7 @@ describe('Tenant', function (): void {
             'is_active' => true,
         ]);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         // Verifica campi JSON
         static::assertSame(['theme' => 'dark', 'features' => ['chat', 'analytics']], $tenant->settings);
@@ -218,6 +231,8 @@ describe('Tenant', function (): void {
             'name' => 'Test Tenant',
             'slug' => null,
 =======
+=======
+>>>>>>> f589f9b2 (.)
         Assert::assertSame(['theme' => 'dark', 'features' => ['chat', 'analytics']], $tenant->settings);
     });
 
@@ -328,11 +343,15 @@ describe('Tenant', function (): void {
     test('can handle null values', function (): void {
         $tenant = TenantFactory::new()->createOne([
             'name' => 'Test Tenant',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
             'domain' => null,
             'database' => null,
         ]);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         $this->assertDatabaseHas('tenants', [
             'id' => $tenant->id,
@@ -425,6 +444,8 @@ describe('Tenant', function (): void {
     }
 }
 =======
+=======
+>>>>>>> f589f9b2 (.)
         Assert::assertNull($tenant->domain);
         Assert::assertNull($tenant->database);
     });
@@ -532,4 +553,7 @@ describe('Tenant', function (): void {
         Assert::assertSame('dark', $settings['theme'] ?? null);
     });
 });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

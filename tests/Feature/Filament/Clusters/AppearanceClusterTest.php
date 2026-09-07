@@ -3,11 +3,17 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 namespace Modules\User\Tests\Feature\Filament\Clusters;
 
 use Modules\User\Database\Factories\UserFactory;
 >>>>>>> 2024e2e7 (.)
+=======
+namespace Modules\User\Tests\Feature\Filament\Clusters;
+
+use Modules\User\Database\Factories\UserFactory;
+>>>>>>> f589f9b2 (.)
 use Modules\User\Filament\Clusters\Appearance;
 use Modules\User\Filament\Clusters\Appearance\Pages\Alignment;
 use Modules\User\Filament\Clusters\Appearance\Pages\Background;
@@ -16,6 +22,7 @@ use Modules\User\Filament\Clusters\Appearance\Pages\CustomCss;
 use Modules\User\Filament\Clusters\Appearance\Pages\Favicon;
 use Modules\User\Filament\Clusters\Appearance\Pages\Logo;
 use Modules\User\Tests\TestCase;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Clusters\XotBaseCluster;
@@ -116,6 +123,8 @@ test('cluster pages are accessible', function () {
             ->toBeTrue("Page {$pageClass} deve esistere");
     }
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Filament\Clusters\XotBaseCluster;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use PHPUnit\Framework\Assert;
@@ -214,5 +223,8 @@ describe('Appearance Cluster', function (): void {
             Assert::assertTrue(class_exists($pageClass));
         }
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

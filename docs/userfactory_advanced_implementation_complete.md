@@ -297,7 +297,11 @@ $gdprTests = [
 - [Cross-Module Relations](../laravel/Modules/SaluteOra/docs/models/doctor-studio-relationship.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **🎉 MISSION ACCOMPLISHED - UserFactory Advanced Implementation Complete! 🎉** 
 =======
 **🎉 MISSION ACCOMPLISHED - UserFactory Advanced Implementation Complete! 🎉** 
 >>>>>>> 2024e2e7 (.)
+=======
+**🎉 MISSION ACCOMPLISHED - UserFactory Advanced Implementation Complete! 🎉** 
+>>>>>>> f589f9b2 (.)

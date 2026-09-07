@@ -6,9 +6,13 @@ namespace Modules\User\Filament\Resources\TeamResource\RelationManagers;
 
 use Filament\Actions\Action;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Actions\BulkAction;
 >>>>>>> 2024e2e7 (.)
+=======
+use Filament\Actions\BulkAction;
+>>>>>>> f589f9b2 (.)
 use Filament\Actions\CreateAction;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
@@ -62,10 +66,14 @@ class TeamInvitationsRelationManager extends XotBaseRelationManager
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, \Filament\Actions\BulkAction>
 =======
      * @return array<string, BulkAction>
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return array<string, BulkAction>
+>>>>>>> f589f9b2 (.)
      */
     #[\Override]
     public function getTableBulkActions(): array

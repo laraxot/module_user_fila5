@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'login_at' => [
             'label' => 'login_at',
         ],
@@ -30,11 +31,32 @@ return [
         'updated_at' => ['label' => 'updated_at'],
         'updated_by' => ['label' => 'updated_by'],
         'created_by' => ['label' => 'created_by'],
+=======
+        'login_at' => [
+            'label' => 'login_at',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'logout_at' => [
+            'label' => 'logout_at',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+>>>>>>> f589f9b2 (.)
     ],
     'navigation' => [
         'name' => 'Devices',
         'plural' => 'Devices',
+<<<<<<< HEAD
         'group' => ['name' => 'General', 'description' => 'General Settings'],
+=======
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+>>>>>>> f589f9b2 (.)
         'label' => 'Devices',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
@@ -42,9 +64,21 @@ return [
     'label' => 'Devices',
     'plural_label' => 'Devices (Plurale)',
     'actions' => [
+<<<<<<< HEAD
         'create' => ['label' => 'Crea Devices', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Devices'],
         'delete' => ['label' => 'Elimina Devices'],
 >>>>>>> 2024e2e7 (.)
+=======
+        'create' => [
+            'label' => 'Crea Devices',
+        ],
+        'edit' => [
+            'label' => 'Modifica Devices',
+        ],
+        'delete' => [
+            'label' => 'Elimina Devices',
+        ],
+>>>>>>> f589f9b2 (.)
     ],
 ];

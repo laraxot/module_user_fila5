@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'attach_user' => 'Collega Utente',
     'associate_user' => 'Associa Utente',
     'user_actions' => 'Azioni Utente',
@@ -20,6 +21,8 @@ return [
     'success_detached' => 'Utente scollegato con successo',
     'success_deleted' => 'Utenti eliminati con successo',
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Azioni',
         'plural_label' => 'Azioni',
@@ -165,5 +168,8 @@ return [
         'success' => 'Operazione completata con successo',
         'error' => 'Si è verificato un errore',
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

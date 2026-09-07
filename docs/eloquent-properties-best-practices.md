@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🛡️ Best Practices per Proprietà Eloquent
 
 ## ⚠️ Regola Critica: property_exists() VIETATO
@@ -183,6 +184,8 @@ if (is_string($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
 **Stato**: ✅ Best Practices Implementate
 **Verificato con**: PHPStan Level 10
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: eloquent-properties-best-practices
@@ -199,4 +202,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/eloquent-properties-best-practices.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

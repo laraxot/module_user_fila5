@@ -14,9 +14,13 @@ use Modules\User\Models\OauthRefreshToken;
 use Webmozart\Assert\Assert;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 /** @phpstan-ignore trait.unused */
 >>>>>>> 2024e2e7 (.)
+=======
+/** @phpstan-ignore trait.unused */
+>>>>>>> f589f9b2 (.)
 trait HasPassportConfiguration
 {
     /**
@@ -57,6 +61,7 @@ trait HasPassportConfiguration
 
         Passport::tokensExpireIn(
 <<<<<<< HEAD
+<<<<<<< HEAD
             CarbonInterval::days((int) ($config['access_token'] ?? 15))
         );
         Passport::refreshTokensExpireIn(
@@ -65,6 +70,8 @@ trait HasPassportConfiguration
         Passport::personalAccessTokensExpireIn(
             CarbonInterval::months((int) ($config['personal_access_token'] ?? 6))
 =======
+=======
+>>>>>>> f589f9b2 (.)
             CarbonInterval::days(self::toIntOrDefault($config['access_token'] ?? null, 15))
         );
         Passport::refreshTokensExpireIn(
@@ -72,13 +79,19 @@ trait HasPassportConfiguration
         );
         Passport::personalAccessTokensExpireIn(
             CarbonInterval::months(self::toIntOrDefault($config['personal_access_token'] ?? null, 6))
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         );
     }
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
      * Narrows an untyped config value (mixed, from an `array<mixed>` config
      * entry) to a real int, without a blind cast. Falls back to $default when
      * the value is neither an int nor a numeric string/float.
@@ -97,7 +110,10 @@ trait HasPassportConfiguration
     }
 
     /**
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      * Configurazione degli scope OAuth.
      */
     protected function configureScopes(): void

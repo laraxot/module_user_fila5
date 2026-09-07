@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # terms_and_conditions
 
 <!-- Contenuto migrato da _docs/terms_and_conditions.txt -->
@@ -12,6 +13,8 @@ https://dev.to/filamentmastery/adding-terms-and-conditions-acceptance-to-filamen
 
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: terms-and-conditions
@@ -27,5 +30,9 @@ related:
   - "./phpstan.md"
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../../Themes/docs/shared-components/terms-and-conditions-2.md
 >>>>>>> 2024e2e7 (.)
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/terms-and-conditions-2.md
+>>>>>>> f589f9b2 (.)

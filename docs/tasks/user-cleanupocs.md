@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Task: User Docs Cleanup
 
 ## 📋 Obiettivo
@@ -18,6 +19,8 @@ Riorganizzare la mastodontica cartella docs del modulo User (550+ file) che cont
 ## 🔗 Riferimenti
 - [Index Documentazione](../00-index.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: user-cleanupocs
@@ -34,4 +37,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/user-cleanup-docs.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

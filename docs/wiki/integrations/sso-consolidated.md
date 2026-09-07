@@ -1916,7 +1916,11 @@ class SsoProviderResource extends XotBaseResource
     protected static ?string $navigationIcon = 'heroicon-o-key';
     protected static ?string $navigationGroup = 'Security';
 
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> f589f9b2 (.)
     {
         return [
             'name' => Forms\Components\TextInput::make('name')

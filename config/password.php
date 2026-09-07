@@ -19,9 +19,12 @@ return [
 
 /*
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * $inputs = [
  * 'email'    => 'foo',
  * 'password' => 'bar',
@@ -46,7 +49,10 @@ return [
  * print_r( $validation->errors()->all() );
  * }
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  */

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Type Safety Improvements - User Module
 
 ## Overview
@@ -230,6 +231,8 @@ public function test_safe_string_cast_handles_various_types(): void
 - Security is improved through safe handling of sensitive data
 - Documentation is updated to reflect all changes
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: type-safety-improvements
@@ -246,4 +249,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/type-safety-improvements.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Tests\TestCase;
 use Filament\Widgets\Widget;
 use Illuminate\Database\Eloquent\Model;
@@ -10,6 +11,8 @@ use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\User\Models\User;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Feature\Filament\Widgets;
 
 use Filament\Widgets\Widget;
@@ -20,11 +23,15 @@ use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
     $this->widget = new UserOverview();
     $this->user = User::factory()->create([
@@ -90,6 +97,8 @@ test('user overview widget view path is correct', function (): void {
     expect($viewPath)->toContain('user::');
     expect($viewPath)->toContain('widgets.user-overview');
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /* @var TestCase $this */
     $this->widget = new UserOverview;
     TestCase::$user = UserFactory::new()->createOne([
@@ -172,5 +181,8 @@ describe('User Overview', function (): void {
         Assert::assertStringContainsString('user::', $viewPath);
         Assert::assertStringContainsString('widgets.user-overview', $viewPath);
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

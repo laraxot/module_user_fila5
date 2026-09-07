@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://jsonplaceholder.typicode.com/users
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: placeholder
@@ -17,4 +20,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/placeholder.txt
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

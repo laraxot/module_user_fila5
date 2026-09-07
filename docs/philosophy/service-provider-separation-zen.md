@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Lo Zen della Separazione dei ServiceProviders: Filosofia della Responsabilità Unica
 
 ## La Storia
@@ -426,6 +427,8 @@ class PassportServiceProvider extends ServiceProvider
 **Pattern:** Modular Monolith con ServiceProvider separation
 **Filosofia:** "Un provider, una missione. module.json è il maestro che coordina."
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: service-provider-separation-zen
@@ -435,4 +438,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/service-provider-aration-zen.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

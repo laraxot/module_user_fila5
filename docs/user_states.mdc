@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description:
 globs:
 alwaysApply: false
@@ -50,10 +51,15 @@ class Rejected extends UserState {}
 - [Moderazione e Wizard Generici](mdc:MODERATION_WIZARD_GENERIC.mdc)
 - [Notifiche Moderazione](mdc:MODERATION_NOTIFICATIONS.mdc)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 module: theme
 topic: user_states
 canonical: ../../../Themes/docs/shared-components/user-states.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-states.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Tests\TestCase;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Enums\UserType;
@@ -111,6 +112,8 @@ test('user soft delete functionality', function (): void {
     // Skip this test as User model does not implement SoftDeletes trait
     $this->markTestSkipped('User model does not implement SoftDeletes trait');
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -303,5 +306,8 @@ describe('User', function (): void {
         /* @var TestCase $this */
         $this->skipTest('User model does not implement SoftDeletes trait');
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

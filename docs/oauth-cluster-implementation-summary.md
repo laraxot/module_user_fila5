@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # OAuth Cluster Implementation Summary
 
 **Data**: 2025-01-22
@@ -173,6 +174,8 @@ Se in futuro serve centralizzare configurazione OAuth:
 **Versione**: 1.0.0
 **Status**: ✅ Implementazione completata e verificata
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: oauth-cluster-implementation-summary
@@ -189,4 +192,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/oauth-cluster-implementation-summary.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

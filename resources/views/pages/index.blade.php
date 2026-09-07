@@ -10,9 +10,12 @@ use Filament\Support\Enums\Alignment;
 use Filament\Support\Enums\VerticalAlignment;
 use Livewire\Volt\Component;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Tenant\Services\TenantService;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 use function Laravel\Folio\middleware;
 use function Laravel\Folio\name;

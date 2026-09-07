@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Messaggi di autenticazione per LoginWidget
     'credentials_incorrect' => 'Le credenziali inserite non sono corrette.',
     'login_success' => 'Accesso effettuato con successo.',
@@ -50,6 +51,8 @@ return [
     'value_too_long' => 'Il valore è troppo lungo.',
     'value_too_short' => 'Il valore è troppo corto.',
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'credentials_incorrect' => [
         'key' => 'user::messages.credentials_incorrect',
         'text' => 'Le credenziali inserite non sono corrette.',
@@ -359,5 +362,8 @@ return [
             'placeholder' => '',
         ],
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

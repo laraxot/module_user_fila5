@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Laravel Passport Integration - Architettura Completa"
 type: concept
@@ -20,16 +23,23 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Laravel Passport Integration - Architettura Completa
 
 > **Generato**: [DATE]
 > **Filosofia**: L'Architetto Laraxot (Vincitore del Dibattito Interno)
 <<<<<<< HEAD
+<<<<<<< HEAD
 > **PHPStan Status**: ✅ Level MAX Compliant (Zero Errori)
 =======
 > **PHPStan Status**: ✅ Modulo `User` verificato pulito il 2026-03-10
 >>>>>>> 2024e2e7 (.)
+=======
+> **PHPStan Status**: ✅ Modulo `User` verificato pulito il 2026-03-10
+>>>>>>> f589f9b2 (.)
 
 ---
 
@@ -66,6 +76,7 @@ laravel/Modules/User/app/Models/
 ├── BaseUser.php              # Implements OAuthenticatable + HasApiTokens
 ├── OauthClient.php          # Extends Laravel\Passport\Client
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── OauthAccessToken.php     # Extends Laravel\Passport\Token
 ├── OauthRefreshToken.php    # Extends Laravel\Passport\RefreshToken
 ├── OauthAuthCode.php        # Extends Laravel\Passport\AuthCode
@@ -73,6 +84,8 @@ laravel/Modules/User/app/Models/
 ```
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ├── OauthToken.php           # Extends Laravel\Passport\Token
 ├── OauthAccessToken.php     # Local alias/model used by app consumers when needed
 ├── OauthRefreshToken.php    # Extends Laravel\Passport\RefreshToken
@@ -86,7 +99,10 @@ laravel/Modules/User/app/Models/
 - `Laravel\Passport\PersonalAccessClient` non e un model Eloquent vendor disponibile come wrapper 1:1 nel progetto
 - `OauthPersonalAccessClient` resta quindi un model locale del modulo `User`, non un mirror diretto del vendor
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ### BaseUser + Passport
 
 ```php
@@ -240,10 +256,14 @@ final class OauthClientResource extends XotBaseResource
     // ❌ NON implementare table(), getPages() (gestiti da XotBaseResource)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> 2024e2e7 (.)
+=======
+    public static function getFormSchema(): array
+>>>>>>> f589f9b2 (.)
     {
         return [
             'oauth_client' => Section::make('OAuth Client Information')
@@ -366,10 +386,14 @@ class OauthClient extends PassportClient
 final class OauthClientResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array { /* ... */ }
 =======
     public function getFormSchema(): array { /* ... */ }
 >>>>>>> 2024e2e7 (.)
+=======
+    public static function getFormSchema(): array { /* ... */ }
+>>>>>>> f589f9b2 (.)
 }
 ```
 
@@ -544,6 +568,7 @@ $ ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 
 ### Documentazione Correlata
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia generale
 - [README.md](./readme.md) - Overview modulo
 - [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md) - Business logic completa
@@ -552,6 +577,11 @@ $ ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 - [README.md](./readme.md) - Overview modulo
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md) - Business logic completa
 >>>>>>> 2024e2e7 (.)
+=======
+- [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale
+- [README.md](./readme.md) - Overview modulo
+- [business-logic-deep-dive-4.md](./business-logic-deep-dive.md) - Business logic completa
+>>>>>>> f589f9b2 (.)
 
 ### Documentazione Esterna
 - [Laravel Passport Official](https://laravel.com/docs/passport)

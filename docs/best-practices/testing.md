@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test
@@ -103,6 +104,8 @@ Ogni modulo e tema deve documentare:
 
 I file di documentazione vanno nelle cartelle `docs/` dentro ogni modulo/tema.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: testing
@@ -119,4 +122,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/testing-rules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

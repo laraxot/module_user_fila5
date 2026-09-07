@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Problema di Binding nei Componenti Livewire con statePath('data')
 
 ## Descrizione del Problema
@@ -32,6 +33,8 @@ public function form(Schema $schema): Schema
 3. Gestire correttamente `statePath()` quando si usano form annidati
 4. Verificare che i nomi dei campi corrispondano tra schema e validazione
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: livewire-form-statepath-issue
@@ -48,4 +51,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/livewire-form-statepath-issue.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

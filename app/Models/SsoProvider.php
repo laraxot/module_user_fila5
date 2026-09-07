@@ -10,13 +10,17 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Models\Traits\HasXotFactory;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 /**
  * Modules\User\Models\SsoProvider.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property int         $id
  * @property string      $name
@@ -42,6 +46,8 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property Collection<int, User> $users
  * @property int|null              $users_count
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property int                        $id
  * @property string                     $name
  * @property string                     $display_name
@@ -62,7 +68,10 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property string|null                $updated_by
  * @property Collection<int, User>      $users
  * @property int|null                   $users_count
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @method static Builder<static>|SsoProvider newModelQuery()
  * @method static Builder<static>|SsoProvider newQuery()
@@ -91,19 +100,27 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property ProfileContract|null $updater
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @method static \Modules\User\Database\Factories\SsoProviderFactory factory($count = null, $state = [])
  *
 >>>>>>> 2024e2e7 (.)
+=======
+ * @method static \Modules\User\Database\Factories\SsoProviderFactory factory($count = null, $state = [])
+ *
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 class SsoProvider extends BaseModel
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     use HasXotFactory;
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     /**
      * The attributes that are mass assignable.
      *
@@ -127,10 +144,14 @@ class SsoProvider extends BaseModel
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get all users associated with this SSO provider.
 =======
      * @return HasMany<User, $this>
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return HasMany<User, $this>
+>>>>>>> f589f9b2 (.)
      */
     public function users(): HasMany
     {

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\RoleResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Actions\CreateAction;
@@ -25,6 +26,8 @@ use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class ManageRolePermissions extends ManageRelatedRecords
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Actions\AssociateAction;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\CreateAction;
@@ -40,12 +43,16 @@ use Modules\User\Filament\Resources\RoleResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseManageRelatedRecords;
 
 class ManageRolePermissions extends XotBaseManageRelatedRecords
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 {
     protected static string $resource = RoleResource::class;
 
     protected static string $relationship = 'permissions';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -59,6 +66,11 @@ class ManageRolePermissions extends XotBaseManageRelatedRecords
      * @return array<int, TextInput>
      */
 >>>>>>> 2024e2e7 (.)
+=======
+    /**
+     * @return array<int, TextInput>
+     */
+>>>>>>> f589f9b2 (.)
     public function getFormSchema(): array
     {
         return [

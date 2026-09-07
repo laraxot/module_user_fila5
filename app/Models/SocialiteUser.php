@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\UserContract;
 use Illuminate\Database\Eloquent\Builder;
@@ -17,18 +18,24 @@ use Modules\User\Database\Factories\SocialiteUserFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Datas\XotData;
 
 /**
  * Modules\User\Models\SocialiteUser.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property int $id
  * @property string $user_id
@@ -44,6 +51,8 @@ use Modules\Xot\Datas\XotData;
  * @property string|null $created_by
  * @property UserContract|null $user
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @property int               $id
  * @property string            $user_id
  * @property string            $provider
@@ -58,7 +67,10 @@ use Modules\Xot\Datas\XotData;
  * @property string|null       $created_by
  * @property UserContract|null $user
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @method static Builder|SocialiteUser newModelQuery()
  * @method static Builder|SocialiteUser newQuery()
  * @method static Builder|SocialiteUser query()
@@ -75,6 +87,7 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|SocialiteUser whereUpdatedBy($value)
  * @method static Builder|SocialiteUser whereUserId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string $uuid (DC2Type:guid)
  * @method static Builder|SocialiteUser whereUuid($value)
  * @property ProfileContract|null $creator
@@ -82,6 +95,8 @@ use Modules\Xot\Datas\XotData;
  * @mixin IdeHelperSocialiteUser
  * @method static SocialiteUserFactory factory($count = null, $state = [])
 =======
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @property string $uuid (DC2Type:guid)
  *
@@ -93,7 +108,10 @@ use Modules\Xot\Datas\XotData;
  *
  * @method static \Modules\User\Database\Factories\SocialiteUserFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 class SocialiteUser extends BaseModel
@@ -111,11 +129,17 @@ class SocialiteUser extends BaseModel
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /**
      * @return BelongsTo<Model, $this>
      */
 >>>>>>> 2024e2e7 (.)
+=======
+    /**
+     * @return BelongsTo<Model, $this>
+     */
+>>>>>>> f589f9b2 (.)
     public function user(): BelongsTo
     {
         /** @var class-string<Model> */

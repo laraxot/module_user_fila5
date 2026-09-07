@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Final Summary - User Module Passport Integration & Architecture Refactoring"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Final Summary - User Module Passport Integration & Architecture Refactoring
 
 > **Date**: [DATE]
@@ -301,6 +307,7 @@ public function getHeaderActions(): array
 
 ### Internal Documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Passport Integration](./passport_integration.md)
 - [Service Provider Architecture](./service_provider_architecture.md)
 - [Filosofia Modulo User](./filosofia_modulo_user.md)
@@ -309,6 +316,11 @@ public function getHeaderActions(): array
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Passport Integration](./passport-integration.md)
+- [Service Provider Architecture](./service-provider-architecture.md)
+- [Filosofia Modulo User](./filosofia-modulo-user.md)
+>>>>>>> f589f9b2 (.)
 - [README](./readme.md)
 
 ### External Documentation

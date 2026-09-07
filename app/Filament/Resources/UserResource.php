@@ -10,6 +10,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Section;
 use Override;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
@@ -20,15 +21,21 @@ use Illuminate\Support\HtmlString;
 use Modules\User\Filament\Resources\UserResource\Pages;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class UserResource extends XotBaseResource
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     // protected static ?string $model = \Modules\Xot\Datas\XotData::make()->getUserClass();
 
@@ -39,6 +46,8 @@ class UserResource extends XotBaseResource
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public static function getWidgets(): array
     {
         return [
@@ -51,6 +60,7 @@ class UserResource extends XotBaseResource
     //    static::$extendFormCallback = $callback;
     // }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     #[Override]
     public static function getFormSchema(): array
@@ -78,6 +88,13 @@ class UserResource extends XotBaseResource
 =======
     
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+    public static function getFormSchema(): array
+    {
+        return UserForm::getFormSchema();
+    }
+>>>>>>> f589f9b2 (.)
 
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {
@@ -92,16 +109,23 @@ class UserResource extends XotBaseResource
      */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[Override]
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+>>>>>>> f589f9b2 (.)
     public function hasCombinedRelationManagerTabsWithContent(): bool
     {
         return true;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
     /**
      * @return class-string<Model>
@@ -111,5 +135,8 @@ class UserResource extends XotBaseResource
     {
         return XotData::make()->getUserClass();
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

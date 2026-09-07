@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Tests\TestCase;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Modules\User\Models\Role;
@@ -231,6 +232,8 @@ test('it handles edge cases correctly', function (): void {
 test('it validates assertions correctly', function (): void {
     expect(fn() => $this->user->ownsTeam(null))->toThrow(InvalidArgumentException::class, 'Team cannot be null');
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
@@ -488,5 +491,8 @@ test('it validates assertions correctly', function (): void {
     ['user' => $user] = hasTeamsBootstrapFixture();
 
     Assert::assertFalse($user->ownsTeam(null));
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });

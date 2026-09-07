@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Convenzione dei Percorsi per le Actions"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-structure-1.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Convenzione dei Percorsi per le Actions
 
 ## Regola Fondamentale
@@ -85,6 +91,7 @@ fi
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni Path nei Moduli Laravel](./path_conventions.md)
 - [Checklist per la Struttura delle Directory](./directory_structure_checklist.md)
 - [Analisi Errore: Gestione Percorsi](../../../docs/error_analysis/path_management.md)
@@ -93,3 +100,8 @@ fi
 - [Checklist per la Struttura delle Directory](./directory-structure-checklist.md)
 - [Analisi Errore: Gestione Percorsi](../../../../docs/error_analysis/path_management.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Convenzioni Path nei Moduli Laravel](./path-conventions-2.md)
+- [Checklist per la Struttura delle Directory](./directory-structure-checklist.md)
+- [Analisi Errore: Gestione Percorsi](../../../../docs/error_analysis/path_management.md)
+>>>>>>> f589f9b2 (.)

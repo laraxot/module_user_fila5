@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Registrazione',
         'plural_label' => 'Registrazione',
@@ -99,6 +100,8 @@ return [
         'error' => 'Si è verificato un errore',
     ],
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => ['label' => 'Registrazione', 'plural_label' => 'Registrazione', 'group' => 'Autenticazione', 'icon' => 'heroicon-o-user-plus', 'sort' => 2],
     'label' => 'Registrazione',
     'plural_label' => 'Registrazione',
@@ -121,8 +124,13 @@ return [
         'create' => ['label' => 'Registrati', 'tooltip' => 'Crea un nuovo account', 'helper_text' => 'Registrati al sistema', 'description' => 'Azione di registrazione'],
         'hidePassword' => ['tooltip' => 'hidePassword', 'icon' => 'hidePassword', 'label' => 'hidePassword'],
         'showPassword' => ['tooltip' => 'showPassword', 'icon' => 'showPassword', 'label' => 'showPassword'],
+<<<<<<< HEAD
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'messages' => ['success' => 'Registrazione completata con successo', 'error' => 'Si è verificato un errore'],
 >>>>>>> 2024e2e7 (.)
+=======
+    ],
+    'messages' => ['success' => 'Registrazione completata con successo', 'error' => 'Si è verificato un errore'],
+>>>>>>> f589f9b2 (.)
 ];

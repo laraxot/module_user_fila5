@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Troubleshooting
 
 ## Common Issues
 
 For general troubleshooting, please refer to the [Xot Troubleshooting Guide](../../xot/docs/troubleshooting.md).
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: troubleshooting
@@ -21,4 +24,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/troubleshooting.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

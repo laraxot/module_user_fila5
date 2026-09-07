@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Syntax Errors da Fixare - Modulo User
 
 ## 🚨 File con Errori Attivi
@@ -136,6 +137,8 @@ try {
 **Strategia fix**: Deduplica righe consecutive identiche, mantieni versione più moderna
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: syntaxs-to
@@ -152,4 +155,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/syntax-errors-to-fix.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

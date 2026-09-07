@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Struttura del Modulo User
 
 ## Panoramica
@@ -590,6 +591,8 @@ chmod -R 755 laravel/Modules/*/app/
 chmod -R 644 laravel/Modules/*/resources/
 ```
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: module-structure
@@ -606,4 +609,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/module-structure.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

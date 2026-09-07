@@ -6,16 +6,20 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use function Safe\file_put_contents;
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 return new class extends XotBaseMigration {
     /**
      * Run the migrations.
      */
     public function up(): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         $conn = $this->getConn()->getConnection()->getName();
         $db = $this->getConn()->getConnection()->getDatabaseName();
@@ -24,6 +28,8 @@ return new class extends XotBaseMigration {
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         // -- CREATE --
         $this->tableCreate(static function (Blueprint $table): void {
             // $table->uuid('id')->primary();
@@ -39,6 +45,7 @@ return new class extends XotBaseMigration {
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
             $this->updateTimestamps(
                 table: $table,
                 hasSoftDeletes: true,
@@ -46,6 +53,9 @@ return new class extends XotBaseMigration {
 =======
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
 >>>>>>> 2024e2e7 (.)
+=======
+            $this->updateTimestamps(table: $table, hasSoftDeletes: true);
+>>>>>>> f589f9b2 (.)
         });
     }
 };

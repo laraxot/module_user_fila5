@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Analysis - User Module
 
 ## 📊 Status
@@ -134,6 +135,8 @@ $client = Client::factory()->create([
 **Status**: ⚠️ 1 Error Remaining (99% Complete)
 **Documentation Status**: ⚠️ Basic - Needs documentation of fixes
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpstan-analysis-user
@@ -150,4 +153,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-analysis-user.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

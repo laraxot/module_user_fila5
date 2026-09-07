@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # NestedSet Migration Best Practices - User Module
 
 ## Overview
@@ -465,6 +466,8 @@ return new class extends XotBaseMigration
 - [User Module Architecture](/docs/architecture/user-module.md)
 - [AddressItemEnum Integration](/docs/address-item-enum-integration.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: nestedset-migration-best-practices
@@ -481,4 +484,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/nestedset-migration-best-practices-Modules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

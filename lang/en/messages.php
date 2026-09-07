@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
     // Authentication messages for LoginWidget
     'credentials_incorrect' => 'The provided credentials are incorrect.',
     'login_success' => 'Login successful.',
@@ -50,6 +51,8 @@ return [
     'value_too_long' => 'Value is too long.',
     'value_too_short' => 'Value is too short.',
 =======
+=======
+>>>>>>> f589f9b2 (.)
     'failed' => [
         'key' => 'user::messages.failed',
         'text' => 'Invalid credentials.',
@@ -338,5 +341,8 @@ return [
             'label' => 'Delete Message',
         ],
     ],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ];

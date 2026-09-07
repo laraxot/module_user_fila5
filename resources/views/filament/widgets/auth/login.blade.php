@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 
 declare(strict_types=1);
@@ -36,6 +37,8 @@ declare(strict_types=1);
         @endif
     </div>
 =======
+=======
+>>>>>>> f589f9b2 (.)
 {{--
     View: user::filament.widgets.auth.login
     Enhanced UX/UI with modern 2026 design trends
@@ -146,5 +149,8 @@ declare(strict_types=1);
             </p>
         </div>
     @endif
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 </div>

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Widget Translation Rules - FixCity Project
 
 ## Core Principles
@@ -150,6 +151,8 @@ This document serves as a reference for:
 - Documentation standards
 All widget development should follow these rules to maintain consistency and quality across the FixCity project.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: widget-translation
@@ -166,4 +169,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/widget-translation-rules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

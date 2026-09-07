@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Migration Philosophy Violations in User Module
 
 ## Overview
@@ -90,6 +91,8 @@ return new class extends XotBaseMigration {
 - Follows DRY principles
 - Improves maintainability
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: migration-philosophy-violations
@@ -106,4 +109,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-philosophy-violations.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

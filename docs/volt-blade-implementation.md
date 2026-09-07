@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Implementazione dei Form con Widget Filament
 
 ## Collegamenti correlati
@@ -7,6 +8,8 @@
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
 - [Analisi dell'Errore di Implementazione](./VOLT_BLADE_IMPLEMENTATION_ERROR.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Implementazione dei Form con Widget Filament"
 type: concept
@@ -34,7 +37,10 @@ related:
 - [Convenzioni Path](./path-conventions-2.md)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ## Introduzione
 
@@ -54,10 +60,14 @@ Per i form complessi , l'approccio raccomandato è utilizzare i widget Filament 
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 /var/www/html/saluteora/laravel/
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
 ├── Modules/
 │   └── User/
 │       └── app/
@@ -93,20 +103,28 @@ Per i form complessi , l'approccio raccomandato è utilizzare i widget Filament 
     <form wire:submit="login">
         {{ $this->form }}
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
         <div class="mt-4">
             <x-filament::button type="submit" class="w-full">
                 {{ __('auth.login.submit_button') }}
             </x-filament::button>
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
         @if ($errors->any())
             <div class="mt-4 p-4 bg-red-50 text-red-700 rounded-lg">
                 <ul class="list-disc pl-5">
@@ -127,20 +145,28 @@ Per i form complessi , l'approccio raccomandato è utilizzare i widget Filament 
     <form wire:submit="register">
         {{ $this->form }}
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
         <div class="mt-4">
             <x-filament::button type="submit" class="w-full">
                 {{ __('auth.register.submit_button') }}
             </x-filament::button>
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
         @if ($errors->any())
             <div class="mt-4 p-4 bg-red-50 text-red-700 rounded-lg">
                 <ul class="list-disc pl-5">
@@ -192,6 +218,7 @@ class LoginFormWidget extends XotBaseWidget
 
     protected static string $view = 'user::livewire.widgets.login-form-widget';
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     public ?array $data = [];
     
@@ -200,15 +227,24 @@ class LoginFormWidget extends XotBaseWidget
     public ?array $data = [];
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+    public ?array $data = [];
+
+>>>>>>> f589f9b2 (.)
     public function mount(): void
     {
         $this->form->fill();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
     public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
     {
         return $form
@@ -223,6 +259,7 @@ class LoginFormWidget extends XotBaseWidget
             ])
             ->statePath('data');
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
     
     public function login(): void
@@ -240,6 +277,8 @@ class LoginFormWidget extends XotBaseWidget
         }
         
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
     public function login(): void
     {
@@ -255,7 +294,10 @@ class LoginFormWidget extends XotBaseWidget
             redirect('/' . $locale . '/dashboard');
         }
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $this->addError('email', __('auth.failed'));
     }
 }
@@ -282,6 +324,7 @@ class RegisterFormWidget extends XotBaseWidget
 
     protected static string $view = 'user::livewire.widgets.register-form-widget';
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     public ?array $data = [];
     
@@ -290,15 +333,24 @@ class RegisterFormWidget extends XotBaseWidget
     public ?array $data = [];
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+    public ?array $data = [];
+
+>>>>>>> f589f9b2 (.)
     public function mount(): void
     {
         $this->form->fill();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> f589f9b2 (.)
     public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
     {
         return $form
@@ -323,24 +375,31 @@ class RegisterFormWidget extends XotBaseWidget
             ->statePath('data');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     public function register(): void
     {
         $data = $this->form->getState();
         
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
     public function register(): void
     {
         $data = $this->form->getState();
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $user = User::create([
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+<<<<<<< HEAD
 <<<<<<< HEAD
         
         Auth::login($user);
@@ -350,6 +409,11 @@ class RegisterFormWidget extends XotBaseWidget
         Auth::login($user);
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+        Auth::login($user);
+
+>>>>>>> f589f9b2 (.)
         $locale = app()->getLocale();
         redirect('/' . $locale . '/dashboard');
     }
@@ -385,10 +449,13 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./SESSION_MANAGEMENT.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management-2.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md)
@@ -679,4 +746,7 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management-2.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

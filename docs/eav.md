@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 https://laraveldaily.com/post/laravel-custom-fields-json-eav-model-same-table 
 
 
@@ -25,6 +26,8 @@ https://learn.userfrosting.com/recipes/extending-the-user-model
 
 
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: eav
@@ -41,4 +44,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/eav.txt
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

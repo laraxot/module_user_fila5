@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 description:
 globs:
 alwaysApply: false
@@ -35,10 +36,15 @@ interface ModeratableUser
 - [Configurazione Stati Utente](mdc:USER_STATES.mdc)
 - [Notifiche Moderazione](mdc:MODERATION_NOTIFICATIONS.mdc)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 module: theme
 topic: moderation-contracts
 canonical: ../../../Themes/docs/shared-components/moderation-contracts.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/moderation-contracts.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

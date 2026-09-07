@@ -14,20 +14,26 @@ class ShowTenantListCommand extends Command
     /**
      * The name and signature of the console command.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @var string
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected $signature = 'user:tenant-list';
 
     /**
      * The console command description.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @var string
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected $description = 'Visualizza lista tenant';
 
@@ -39,10 +45,14 @@ class ShowTenantListCommand extends Command
         $modelClass = XotData::make()->getTenantClass();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $map = static fn(Model $row) => $row->toArray();
 =======
         $map = static fn (Model $row) => $row->toArray();
 >>>>>>> 2024e2e7 (.)
+=======
+        $map = static fn (Model $row) => $row->toArray();
+>>>>>>> f589f9b2 (.)
 
         $rows = $modelClass::get()->map($map);
 
@@ -57,10 +67,14 @@ class ShowTenantListCommand extends Command
         } else {
             $this->newLine();
 <<<<<<< HEAD
+<<<<<<< HEAD
             $this->warn('⚡ No Tenants [' . $modelClass . ']');
 =======
             $this->warn('⚡ No Tenants ['.$modelClass.']');
 >>>>>>> 2024e2e7 (.)
+=======
+            $this->warn('⚡ No Tenants ['.$modelClass.']');
+>>>>>>> f589f9b2 (.)
             $this->newLine();
         }
     }

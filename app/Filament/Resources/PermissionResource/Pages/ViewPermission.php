@@ -5,17 +5,21 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\PermissionResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Support\Components\Component;
 use Override;
 use Filament\Infolists\Components\TextEntry;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Modules\User\Filament\Resources\PermissionResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewPermission extends XotBaseViewRecord
 {
     protected static string $resource = PermissionResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -37,4 +41,6 @@ class ViewPermission extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

@@ -13,33 +13,47 @@
  * If the validation fails, an error response is returned with the validation errors.
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @param Request $request The incoming request
  * @return JsonResponse The JSON response
  */
 =======
+=======
+>>>>>>> f589f9b2 (.)
  * @param  Request  $request  The incoming request
  * @return JsonResponse The JSON response
  */
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 declare(strict_types=1);
 
 namespace Modules\User\Http\Controllers\Api;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Contracts\UserContract;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rules\Password as PasswordRule;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+>>>>>>> f589f9b2 (.)
 use Modules\Xot\Http\Controllers\XotBaseController;
 
 class RegisterController extends XotBaseController
@@ -64,32 +78,46 @@ class RegisterController extends XotBaseController
         );
         if ($validator->fails()) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             return $this->sendError('Validation Error.', $validator->errors()->all());
 =======
             return $this->sendError('Validation Error.', $validator->errors()->toArray());
 >>>>>>> 2024e2e7 (.)
+=======
+            return $this->sendError('Validation Error.', $validator->errors()->toArray());
+>>>>>>> f589f9b2 (.)
         }
 
         /** @var array<string, mixed> $input */
         $input = $request->all();
 <<<<<<< HEAD
+<<<<<<< HEAD
         $input['password'] = bcrypt((string) $input['password']);
 =======
+=======
+>>>>>>> f589f9b2 (.)
         $password = $input['password'] ?? null;
         if (! \is_string($password)) {
             return $this->sendError('Validation Error.', ['password' => ['The password must be a string.']]);
         }
         $input['password'] = bcrypt($password);
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
         $user_class = XotData::make()->getUserClass();
         /** @var UserContract */
         $user = $user_class::create($input);
         $success['token'] = $user->createToken('MyApp')->accessToken;
 <<<<<<< HEAD
+<<<<<<< HEAD
         $success['name'] = $user->name;
 =======
         $success['name'] = $user->name ?? '';
 >>>>>>> 2024e2e7 (.)
+=======
+        $success['name'] = $user->name ?? '';
+>>>>>>> f589f9b2 (.)
 
         return $this->sendResponse('User register successfully.', $success);
     }

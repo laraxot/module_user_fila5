@@ -11,10 +11,14 @@ namespace Modules\User\Listeners;
 use Illuminate\Auth\Events\Failed;
 use Illuminate\Http\Request;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Contracts\HasAuthentications;
 =======
 use Modules\User\Models\BaseUser;
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\User\Models\BaseUser;
+>>>>>>> f589f9b2 (.)
 
 // use Rappasoft\LaravelAuthenticationLog\Notifications\FailedLogin;
 // use Rappasoft\LaravelAuthenticationLog\Traits\AuthenticationLoggable;
@@ -24,11 +28,14 @@ class FailedLoginListener
     protected Request $request;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @param Request $request
      */
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     public function __construct(Request $request)
     {
         $this->request = $request;
@@ -40,10 +47,14 @@ class FailedLoginListener
     public function handle(Failed $event): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($event->user && $event->user instanceof HasAuthentications) {
 =======
         if ($event->user instanceof BaseUser) {
 >>>>>>> 2024e2e7 (.)
+=======
+        if ($event->user instanceof BaseUser) {
+>>>>>>> f589f9b2 (.)
             $ip = $this->request->ip();
             $userAgent = $this->request->userAgent();
             // $location = optional(geoip()->getLocation($ip))->toArray();

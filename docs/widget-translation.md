@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Widget Translation Rules - FixCity Project"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Widget Translation Rules - FixCity Project
 
 ## Core Principles
@@ -157,18 +163,24 @@ protected static string $view = 'user::widgets.edit-user';
 - Validate form submission and error handling
 ## Related Documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Widget Structure](../modules/user/project_docs/widgets_structure.md)
 - [EditUserWidget Documentation](../modules/user/project_docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/project_docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/project_docs/filament-widgets.md)
 - [User Module Widget Structure](../modules/user/docs/widgets_structure.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [User Module Widget Structure](../modules/user/project_docs/widgets-structure-2.md)
 - [EditUserWidget Documentation](../modules/user/project_docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/project_docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/project_docs/filament-widgets.md)
 - [User Module Widget Structure](../modules/user/docs/widgets-structure-2.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
@@ -365,10 +377,14 @@ protected static string $view = 'user::widgets.edit-user';
 ## Related Documentation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Widget Structure](../modules/user/docs/widgets_structure.md)
 =======
 - [User Module Widget Structure](../modules/user/docs/widgets-structure-2.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [User Module Widget Structure](../modules/user/docs/widgets-structure-2.md)
+>>>>>>> f589f9b2 (.)
 - [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
 - [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)

@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Actions\Header;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
@@ -19,6 +20,8 @@ use Modules\Xot\Contracts\UserContract;
 
 class ChangePasswordHeaderAction extends Action
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Auth;
@@ -29,7 +32,10 @@ use Modules\Xot\Filament\Actions\XotBaseAction;
 use Webmozart\Assert\Assert;
 
 final class ChangePasswordHeaderAction extends XotBaseAction
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 {
     protected function setUp(): void
     {
@@ -37,11 +43,14 @@ final class ChangePasswordHeaderAction extends XotBaseAction
         $this->translateLabel()
             ->icon('heroicon-o-key')
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->action(function (UserContract $record, array $data): void {
                 $old_password = $record->getAttribute('password');
                 $res = tap($record)->update([
                     'password' => Hash::make($data['new_password']),
 =======
+=======
+>>>>>>> f589f9b2 (.)
             ->action(function (array $data): void {
                 $record = Auth::user();
                 Assert::isInstanceOf($record, UserContract::class);
@@ -50,12 +59,16 @@ final class ChangePasswordHeaderAction extends XotBaseAction
 
                 $record->update([
                     'password' => Hash::make($newPassword),
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
                 ]);
 
                 Notification::make()
                     ->success()
                     ->title(__('user::notifications.password_changed_successfully.title'))
+<<<<<<< HEAD
 <<<<<<< HEAD
                     ->body(__('user::notifications.password_changed_successfully.message'));
             })
@@ -79,6 +92,8 @@ final class ChangePasswordHeaderAction extends XotBaseAction
 
     public static function getDefaultName(): null|string
 =======
+=======
+>>>>>>> f589f9b2 (.)
                     ->body(__('user::notifications.password_changed_successfully.message'))
                     ->send();
             })
@@ -109,7 +124,10 @@ final class ChangePasswordHeaderAction extends XotBaseAction
     }
 
     public static function getDefaultName(): string
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     {
         return 'changePassword';
     }

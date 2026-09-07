@@ -6,6 +6,7 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamUser;
 use Modules\User\Models\User;
@@ -20,6 +21,11 @@ use Modules\User\Models\TeamUser;
 
 /**
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\User\Models\TeamUser;
+
+/**
+>>>>>>> f589f9b2 (.)
  * @extends Factory<TeamUser>
  */
 class TeamUserFactory extends Factory
@@ -27,25 +33,34 @@ class TeamUserFactory extends Factory
     /**
      * The name of the factory's corresponding model.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @var class-string<TeamUser>
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected $model = TeamUser::class;
 
     /**
      * Define the model's default state.
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
      */
     /**
 >>>>>>> 2024e2e7 (.)
+=======
+     */
+    /**
+>>>>>>> f589f9b2 (.)
      * @return array<string, mixed>
      */
     public function definition(): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         return [
             'team_id' => Team::factory(),
@@ -117,5 +132,8 @@ class TeamUserFactory extends Factory
 =======
         return [];
 >>>>>>> 2024e2e7 (.)
+=======
+        return [];
+>>>>>>> f589f9b2 (.)
     }
 }

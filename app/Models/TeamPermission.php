@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use DateTime;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
@@ -36,6 +37,8 @@ class TeamPermission extends Model
      *
      * @var string
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
@@ -86,7 +89,10 @@ class TeamPermission extends BaseModel
 {
     /**
      * The database connection that should be used by the model.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
      */
     protected $connection = 'user';
 
@@ -103,10 +109,14 @@ class TeamPermission extends BaseModel
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get the team that owns the permission.
 =======
      * @return BelongsTo<Team, $this>
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return BelongsTo<Team, $this>
+>>>>>>> f589f9b2 (.)
      */
     public function team(): BelongsTo
     {
@@ -115,10 +125,14 @@ class TeamPermission extends BaseModel
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get the user that owns the permission.
 =======
      * @return BelongsTo<User, $this>
 >>>>>>> 2024e2e7 (.)
+=======
+     * @return BelongsTo<User, $this>
+>>>>>>> f589f9b2 (.)
      */
     public function user(): BelongsTo
     {

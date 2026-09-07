@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 title: "Risoluzione Conflitti Git - Modulo User"
 type: concept
@@ -20,7 +23,10 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 # Risoluzione Conflitti Git - Modulo User
 
 ## Data Risoluzione
@@ -59,10 +65,14 @@ related:
 - `docs/baseuser.md` - Documentazione BaseUser
 - `docs/registration-widget.md` - Widget registrazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `docs/phpstan_fixes.md` - Fix PHPStan
 =======
 - `docs/phpstan-fixes-8.md` - Fix PHPStan
 >>>>>>> 2024e2e7 (.)
+=======
+- `docs/phpstan-fixes-8.md` - Fix PHPStan
+>>>>>>> f589f9b2 (.)
 - `docs/filament/widgets/registration-widget.md` - Widget Filament
 
 ## Modifiche Applicate
@@ -129,16 +139,22 @@ Funzionalità team includono:
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Root User](../../../project_docs/modules/user.md)
 - [BaseUser Documentation](./baseuser.md)
 - [Registration Widget](./registration-widget.md)
 - [PHPStan Fixes](./phpstan_fixes.md)
 =======
+=======
+>>>>>>> f589f9b2 (.)
 - [Documentazione Root User](../../../../docs/project/modules/user.md)
 - [BaseUser Documentation](./baseuser.md)
 - [Registration Widget](./registration-widget.md)
 - [PHPStan Fixes](./phpstan-fixes-8.md)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 ---
 *Aggiornato automaticamente dopo risoluzione conflitti Git*

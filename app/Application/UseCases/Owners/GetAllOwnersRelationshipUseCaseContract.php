@@ -11,10 +11,15 @@ interface GetAllOwnersRelationshipUseCaseContract
     /**
      * Execute the use case to get all owners for relationship.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @return Collection<int, mixed>
 >>>>>>> 2024e2e7 (.)
+=======
+     *
+     * @return Collection<int, mixed>
+>>>>>>> f589f9b2 (.)
      */
     public function execute(): Collection;
 }

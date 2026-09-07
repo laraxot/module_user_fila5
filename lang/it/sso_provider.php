@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
     'navigation' => [
         'label' => 'Provider SSO',
         'group' => 'Authentication',
@@ -42,6 +45,7 @@ return [
         'delete' => [
             'label' => 'Elimina Sso Provider',
         ],
+<<<<<<< HEAD
 =======
     'navigation' => ['label' => 'Provider SSO', 'group' => 'Authentication', 'icon' => 'heroicon-o-identification', 'sort' => 3],
     'label' => 'Provider SSO',
@@ -63,5 +67,7 @@ return [
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     ],
 ];

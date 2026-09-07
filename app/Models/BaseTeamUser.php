@@ -6,9 +6,12 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\ProfileContract;
 use Illuminate\Support\Carbon;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
@@ -16,7 +19,10 @@ use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 use Parental\HasChildren;
 
 /**
@@ -26,6 +32,7 @@ use Parental\HasChildren;
  * @method static Builder|TeamUser newQuery()
  * @method static Builder|TeamUser query()
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property int $id
  * @property string $uuid
 =======
@@ -33,6 +40,11 @@ use Parental\HasChildren;
  * @property int         $id
  * @property string      $uuid
 >>>>>>> 2024e2e7 (.)
+=======
+ *
+ * @property int         $id
+ * @property string      $uuid
+>>>>>>> f589f9b2 (.)
  * @property string|null $team_id
  * @property string|null $user_id
  * @property string|null $role
@@ -42,9 +54,13 @@ use Parental\HasChildren;
  * @property string|null $updated_by
  * @property string|null $customer_id
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 2024e2e7 (.)
+=======
+ *
+>>>>>>> f589f9b2 (.)
  * @method static Builder|TeamUser whereCreatedAt($value)
  * @method static Builder|TeamUser whereCreatedBy($value)
  * @method static Builder|TeamUser whereCustomerId($value)
@@ -56,6 +72,7 @@ use Parental\HasChildren;
  * @method static Builder|TeamUser whereUserId($value)
  * @method static Builder|TeamUser whereUuid($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder|TeamUser whereDeletedAt($value)
@@ -63,6 +80,8 @@ use Parental\HasChildren;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
 =======
+=======
+>>>>>>> f589f9b2 (.)
  *
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
@@ -73,7 +92,10 @@ use Parental\HasChildren;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
  * @mixin \Eloquent
  */
 abstract class BaseTeamUser extends BasePivot
@@ -82,8 +104,11 @@ abstract class BaseTeamUser extends BasePivot
 
     protected $connection = 'user';
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $table = 'team_user';
 =======
+=======
+>>>>>>> f589f9b2 (.)
 
     protected $table = 'team_user';
 
@@ -112,5 +137,8 @@ abstract class BaseTeamUser extends BasePivot
         /* @var BelongsTo<Model&TeamContract, $this> */
         return $this->belongsTo($teamClass);
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 }

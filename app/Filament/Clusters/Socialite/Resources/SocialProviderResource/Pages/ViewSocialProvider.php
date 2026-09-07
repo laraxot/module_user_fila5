@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
@@ -55,4 +56,12 @@ class ViewSocialProvider extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+
+class ViewSocialProvider extends XotBaseViewRecord
+{
+    protected static string $resource = SocialProviderResource::class;
+>>>>>>> f589f9b2 (.)
 }

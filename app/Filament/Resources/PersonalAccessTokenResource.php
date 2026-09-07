@@ -20,6 +20,9 @@ final class PersonalAccessTokenResource extends XotBaseResource
      */
     #[\Override]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f589f9b2 (.)
     public static function getFormSchema(): array
     {
         return [
@@ -28,8 +31,11 @@ final class PersonalAccessTokenResource extends XotBaseResource
                 ->maxLength(255),
         ];
     }
+<<<<<<< HEAD
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
     public static function getPages(): array
     {

@@ -3,7 +3,10 @@ description:
 globs:
 alwaysApply: false
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -13,7 +16,10 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 ---
 # Regola Windsurf: Migrazioni XotBaseMigration
 
@@ -45,7 +51,11 @@ if (! $this->hasColumn('state')) {
 - [Linee guida Actions](mdc:actions.mdc)
 - [Linee guida Activitylog](mdc:activitylog.mdc)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione centrale](mdc:../../../../docs/index.md)
 =======
 - [Documentazione centrale](mdc:../../../../../docs/index.md)
 >>>>>>> 2024e2e7 (.)
+=======
+- [Documentazione centrale](mdc:../../../../../docs/index.md)
+>>>>>>> f589f9b2 (.)

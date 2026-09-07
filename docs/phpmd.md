@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Modules/User/app/Actions/GetCurrentDeviceAction.php:23                                         CyclomaticComplexity      The method execute() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
 Modules/User/app/Actions/GetCurrentDeviceAction.php:23                                         NPathComplexity           The method execute() has an NPath complexity of 320. The configured NPath complexity threshold is 200.
 Modules/User/app/Actions/GetCurrentDeviceAction.php:42                                         ShortVariable             Avoid variables with short names like $up. Configured minimum length is 3.
@@ -301,6 +302,8 @@ Modules/User/tests/Unit/Models/TenantTest.php:248                               
 Modules/User/tests/Unit/UserModelTest.php:36                                                   ShortVariable             Avoid variables with short names like $u. Configured minimum length is 3.
 Modules/User/tests/Unit/UserModulePhpstanFixesTest.php:125                                     LongVariable              Avoid excessively long variable names like $socialiteUserConnected. Keep variable name length under 20.
 =======
+=======
+>>>>>>> f589f9b2 (.)
 ---
 module: theme
 topic: phpmd
@@ -317,4 +320,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpmd-report.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)

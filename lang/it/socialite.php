@@ -48,15 +48,22 @@ return [
             'tooltip' => 'Disconnetti account social',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         'save' => 'Salva configurazione',
 >>>>>>> 2024e2e7 (.)
+=======
+        'save' => 'Salva configurazione',
+>>>>>>> f589f9b2 (.)
     ],
     'messages' => [
         'connected' => 'Account social connesso con successo',
         'disconnected' => 'Account social disconnesso con successo',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f589f9b2 (.)
         'config_saved' => 'Configurazione OAuth salvata con successo. Effettua il logout e rientra per applicare le modifiche.',
     ],
     'page' => [
@@ -100,6 +107,9 @@ return [
     'security' => [
         'title' => 'Sicurezza',
         'description' => 'Le credenziali OAuth sono salvate in un file protetto (storage/app/private/socialite-config.php) con permessi restrictivi. Non vengono mai mostrate completamente nell\'interfaccia e non vengono incluse nei backup o nel codice sorgente.',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
     ],
 ];

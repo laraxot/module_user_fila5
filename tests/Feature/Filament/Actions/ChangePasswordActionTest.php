@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Tests\TestCase;
 use Filament\Actions\Action;
 use Illuminate\Support\Facades\Hash;
@@ -12,6 +13,8 @@ use Modules\User\Enums\UserType;
 use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\User\Models\User;
 =======
+=======
+>>>>>>> f589f9b2 (.)
 namespace Modules\User\Tests\Feature\Filament\Actions;
 
 use Filament\Actions\Action;
@@ -20,11 +23,15 @@ use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
     // Use in-memory model to avoid DB constraints between tests
     $this->user = User::factory()->make([
@@ -106,6 +113,8 @@ test('change password action has correct setup method', function (): void {
     // The action should have a setUp method that configures the action
     expect($this->action)->toBeInstanceOf(Action::class);
 =======
+=======
+>>>>>>> f589f9b2 (.)
     /* @var TestCase $this */
     $this->setupFilamentAdminPanel();
 
@@ -187,5 +196,8 @@ describe('Change Password Action', function (): void {
         Assert::assertTrue($reflection->hasMethod('setUp'));
         Assert::assertTrue($reflection->getMethod('setUp')->isProtected());
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> f589f9b2 (.)
 });
