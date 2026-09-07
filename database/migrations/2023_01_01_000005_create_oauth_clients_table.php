@@ -6,7 +6,12 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
+<<<<<<< HEAD
 return new class extends XotBaseMigration {
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> 2024e2e7 (.)
     public function up(): void
     {
         $this->tableCreate(static function (Blueprint $table): void {
@@ -25,10 +30,17 @@ return new class extends XotBaseMigration {
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+<<<<<<< HEAD
             if ('string' !== $this->getColumnType('id')) {
                 $table->uuid('id')->change(); // is  just primary
             }
             if (! $this->hasColumn('owner_id') && ! $this->hasColumn('owner_type')) {
+=======
+            if ($this->getColumnType('id') !== 'string') {
+                $table->uuid('id')->change(); // is  just primary
+            }
+            if (! $this->hasColumn('owner_id')) {
+>>>>>>> 2024e2e7 (.)
                 $table->nullableMorphs('owner');
             }
             if (! $this->hasColumn('name')) {

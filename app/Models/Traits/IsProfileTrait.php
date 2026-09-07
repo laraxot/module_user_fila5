@@ -3,7 +3,11 @@
 declare(strict_types=1);
 
 /**
+<<<<<<< HEAD
  * Modulo User - Trait per il profilo utente
+=======
+ * Modulo User - Trait per il profilo utente.
+>>>>>>> 2024e2e7 (.)
  *
  * Questo trait implementa funzionalità comuni per i modelli di profilo utente nell'applicazione,
  * tra cui relazioni con utenti, dispositivi e team, gestione dei ruoli, e accessori per attributi
@@ -20,10 +24,16 @@ declare(strict_types=1);
 
 namespace Modules\User\Models\Traits;
 
+<<<<<<< HEAD
 use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Filament\Notifications\Notification;
 use Illuminate\Database\Eloquent\Casts\Attribute;
+=======
+use Filament\Notifications\Notification;
+use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> 2024e2e7 (.)
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -31,10 +41,18 @@ use Illuminate\Support\Collection;
 use Modules\User\Models\Device;
 use Modules\User\Models\DeviceUser;
 use Modules\User\Models\Role;
+<<<<<<< HEAD
+=======
+use Modules\User\Models\User;
+>>>>>>> 2024e2e7 (.)
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\Permission\Exceptions\RoleDoesNotExist;
+<<<<<<< HEAD
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> 2024e2e7 (.)
 
 /**
  * Trait per aggiungere funzionalità di profilo ai modelli utente.
@@ -49,15 +67,26 @@ trait IsProfileTrait
     /**
      * Relazione con l'utente a cui appartiene il profilo.
      *
+<<<<<<< HEAD
      * @return BelongsTo<Model&UserContract, static>
+=======
+     * @return BelongsTo<Model&UserContract, Model>
+>>>>>>> 2024e2e7 (.)
      */
     public function user(): BelongsTo
     {
         /** @var class-string<Model&UserContract> $userClass */
         $userClass = XotData::make()->getUserClass();
 
+<<<<<<< HEAD
         // @phpstan-ignore return.type
         return $this->belongsTo($userClass);
+=======
+        /** @var BelongsTo<Model&UserContract, Model> $relation */
+        $relation = $this->belongsTo($userClass);
+
+        return $relation;
+>>>>>>> 2024e2e7 (.)
     }
 
     /**
@@ -68,13 +97,20 @@ trait IsProfileTrait
      *
      * @return string|null Il nome completo dell'utente
      */
+<<<<<<< HEAD
     public function getFullNameAttribute(null|string $value): null|string
     {
         if ($value !== null) {
+=======
+    public function getFullNameAttribute(?string $value): ?string
+    {
+        if (null !== $value) {
+>>>>>>> 2024e2e7 (.)
             return $value;
         }
 
         $user = $this->user;
+<<<<<<< HEAD
         if ($user === null) {
             return null;
         }
@@ -85,6 +121,21 @@ trait IsProfileTrait
         }
 
         return $user->name;
+=======
+        if (null === $user) {
+            return null;
+        }
+        Assert::isInstanceOf($user, User::class);
+
+        $res = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
+        if ('' !== $res) {
+            return $res;
+        }
+
+        $userName = $user->getAttribute('name');
+
+        return \is_string($userName) && '' !== $userName ? $userName : null;
+>>>>>>> 2024e2e7 (.)
     }
 
     /**
@@ -95,13 +146,20 @@ trait IsProfileTrait
      *
      * @return string|null Il nome dell'utente
      */
+<<<<<<< HEAD
     public function getFirstNameAttribute(null|string $value): null|string
     {
         if ($value !== null) {
+=======
+    public function getFirstNameAttribute(?string $value): ?string
+    {
+        if (null !== $value) {
+>>>>>>> 2024e2e7 (.)
             return $value;
         }
 
         $user = $this->user;
+<<<<<<< HEAD
         if ($user === null) {
             return null;
         }
@@ -113,6 +171,21 @@ trait IsProfileTrait
         $this->update(['first_name' => $value]);
 
         return $value;
+=======
+        if (null === $user) {
+            return null;
+        }
+        Assert::isInstanceOf($user, User::class);
+
+        $firstName = $user->getAttribute('first_name');
+        if (! \is_string($firstName) || '' === $firstName) {
+            return null;
+        }
+
+        $this->update(['first_name' => $firstName]);
+
+        return $firstName;
+>>>>>>> 2024e2e7 (.)
     }
 
     /**
@@ -123,13 +196,20 @@ trait IsProfileTrait
      *
      * @return string|null Il cognome dell'utente
      */
+<<<<<<< HEAD
     public function getLastNameAttribute(null|string $value): null|string
     {
         if ($value !== null) {
+=======
+    public function getLastNameAttribute(?string $value): ?string
+    {
+        if (null !== $value) {
+>>>>>>> 2024e2e7 (.)
             return $value;
         }
 
         $user = $this->user;
+<<<<<<< HEAD
         if ($user === null) {
             return null;
         }
@@ -141,6 +221,21 @@ trait IsProfileTrait
         $this->update(['last_name' => $value]);
 
         return $value;
+=======
+        if (null === $user) {
+            return null;
+        }
+        Assert::isInstanceOf($user, User::class);
+
+        $lastName = $user->getAttribute('last_name');
+        if (! \is_string($lastName) || '' === $lastName) {
+            return null;
+        }
+
+        $this->update(['last_name' => $lastName]);
+
+        return $lastName;
+>>>>>>> 2024e2e7 (.)
     }
 
     /**
@@ -150,7 +245,11 @@ trait IsProfileTrait
      */
     public function isSuperAdmin(): bool
     {
+<<<<<<< HEAD
         if ($this->user === null) {
+=======
+        if (null === $this->user) {
+>>>>>>> 2024e2e7 (.)
             return false;
         }
 
@@ -164,7 +263,11 @@ trait IsProfileTrait
      */
     public function isNegateSuperAdmin(): bool
     {
+<<<<<<< HEAD
         if ($this->user === null) {
+=======
+        if (null === $this->user) {
+>>>>>>> 2024e2e7 (.)
             return false;
         }
 
@@ -176,16 +279,27 @@ trait IsProfileTrait
      * Se l'utente è super-admin, rimuove questo ruolo e assegna negate-super-admin.
      * Se l'utente non è super-admin, assegna super-admin e rimuove negate-super-admin.
      *
+<<<<<<< HEAD
      * @throws Exception Se l'utente non è disponibile
      *
      * @return void
+=======
+     * @throws \Exception Se l'utente non è disponibile
+>>>>>>> 2024e2e7 (.)
      */
     public function toggleSuperAdmin(): void
     {
         $user = $this->user;
+<<<<<<< HEAD
         if ($user === null) {
             throw new Exception('[' . __LINE__ . '][' . class_basename($this) . ']');
         }
+=======
+        if (null === $user) {
+            throw new \Exception('['.__LINE__.']['.class_basename($this).']');
+        }
+        Assert::isInstanceOf($user, User::class);
+>>>>>>> 2024e2e7 (.)
         $to_assign = 'super-admin';
         $to_remove = 'negate-super-admin';
         if ($this->isSuperAdmin()) {
@@ -201,7 +315,11 @@ trait IsProfileTrait
             $role_remove = Role::updateOrCreate(['name' => $to_remove], ['team_id' => null]);
             $user->roles()->attach($role_assign);
             $user->roles()->detach($role_remove);
+<<<<<<< HEAD
         } catch (Exception $e) {
+=======
+        } catch (\Exception $e) {
+>>>>>>> 2024e2e7 (.)
             Notification::make()
                 ->title('Exception !')
                 ->danger()
@@ -214,6 +332,7 @@ trait IsProfileTrait
     /**
      * Relazione con i dispositivi mobili associati al profilo.
      *
+<<<<<<< HEAD
      * @return BelongsToMany<Device, static>
      */
     public function mobileDevices(): BelongsToMany
@@ -222,12 +341,23 @@ trait IsProfileTrait
         return $this->belongsToMany(Device::class, 'mobile_device_users', 'profile_id', 'device_id')
             ->withPivot('token')
             ->withTimestamps();
+=======
+     * @return BelongsToMany<Device, $this>
+     */
+    public function mobileDevices(): BelongsToMany
+    {
+        return $this->belongsToManyX(Device::class);
+>>>>>>> 2024e2e7 (.)
     }
 
     /**
      * Relazione con tutti i dispositivi associati al profilo.
      *
+<<<<<<< HEAD
      * @return BelongsToMany<Device, static>
+=======
+     * @return BelongsToMany<Device, $this>
+>>>>>>> 2024e2e7 (.)
      */
     public function devices(): BelongsToMany
     {
@@ -237,28 +367,43 @@ trait IsProfileTrait
     /**
      * Relazione con gli utenti di dispositivi mobili.
      *
+<<<<<<< HEAD
      * @return HasMany<DeviceUser, static>
      */
     public function mobileDeviceUsers(): HasMany
     {
         // @phpstan-ignore return.type
+=======
+     * @return HasMany<DeviceUser, $this>
+     */
+    public function mobileDeviceUsers(): HasMany
+    {
+>>>>>>> 2024e2e7 (.)
         return $this->hasMany(DeviceUser::class, 'profile_id')->where('type', 'mobile');
     }
 
     /**
      * Relazione con gli utenti di dispositivi generici.
      *
+<<<<<<< HEAD
      * @return HasMany<DeviceUser, static>
      */
     public function deviceUsers(): HasMany
     {
         // @phpstan-ignore return.type
+=======
+     * @return HasMany<DeviceUser, $this>
+     */
+    public function deviceUsers(): HasMany
+    {
+>>>>>>> 2024e2e7 (.)
         return $this->hasMany(DeviceUser::class, 'profile_id');
     }
 
     /**
      * Ottiene i token dei dispositivi mobili.
      *
+<<<<<<< HEAD
      * @return Collection<int|string, string>
      */
     public function getMobileDeviceTokens(): Collection
@@ -269,12 +414,25 @@ trait IsProfileTrait
             ->filter(fn($value) => $value !== null && is_string($value));
 
         /** @var Collection<int|string, string> */
+=======
+     * @return Collection<int|string, non-empty-string>
+     */
+    public function getMobileDeviceTokens(): Collection
+    {
+        $tokens = $this->mobileDeviceUsers()
+            ->pluck('token')
+            ->filter(static fn (mixed $value): bool => is_string($value) && '' !== $value)
+            ->map(static fn (mixed $value): string => (string) $value);
+
+        /* @var Collection<int|string, non-empty-string> $tokens */
+>>>>>>> 2024e2e7 (.)
         return $tokens;
     }
 
     /**
      * Get the user's user_name.
      * Ottiene il nome utente dal modello utente collegato.
+<<<<<<< HEAD
      *
      * @return Attribute<string|null, never>
      */
@@ -287,11 +445,31 @@ trait IsProfileTrait
             }
             return $user->name;
         });
+=======
+     */
+    /** @return Attribute<?string, never> */
+    protected function userName(): Attribute
+    {
+        return Attribute::make(
+            get: function (): ?string {
+                $user = $this->user;
+                if (null === $user) {
+                    return null;
+                }
+                Assert::isInstanceOf($user, User::class);
+
+                $name = $user->getAttribute('name');
+
+                return \is_string($name) && '' !== $name ? $name : null;
+            }
+        );
+>>>>>>> 2024e2e7 (.)
     }
 
     /**
      * Get the user's avatar URL.
      * Recupera l'URL dell'avatar dell'utente dalla MediaLibrary.
+<<<<<<< HEAD
      *
      * @return Attribute<string, never>
      */
@@ -301,6 +479,14 @@ trait IsProfileTrait
             $value = $this->getFirstMediaUrl('avatar');
 
             return $value;
+=======
+     */
+    /** @return Attribute<string, never> */
+    protected function avatar(): Attribute
+    {
+        return Attribute::make(get: function (): string {
+            return $this->getFirstMediaUrl('avatar');
+>>>>>>> 2024e2e7 (.)
         });
     }
 }

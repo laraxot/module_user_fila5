@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2024e2e7 (.)
 return [
     'navigation' => [
         'name' => 'Client',
@@ -18,6 +21,7 @@ return [
     'fields' => [
         'name' => [
             'label' => 'name',
+<<<<<<< HEAD
         ],
         'create' => [
             'label' => 'create',
@@ -42,6 +46,59 @@ return [
         ],
         'openFilters' => [
             'label' => 'openFilters',
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'create' => [
+            'label' => 'create',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'edit' => [
+            'label' => 'edit',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'delete' => [
+            'label' => 'delete',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
     ],
     'plural' => [
@@ -49,4 +106,11 @@ return [
             'label' => 'client.plural.model',
         ],
     ],
+<<<<<<< HEAD
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'actions' => [
+    ],
+>>>>>>> 2024e2e7 (.)
 ];

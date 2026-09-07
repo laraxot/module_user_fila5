@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # EditUserWidget Implementation Summary
 
 ## Project Status: COMPLETED ✅
@@ -151,3 +152,17 @@ The implementation serves as a reference pattern for future widget development i
 - `Modules/User/project_docs/widgets_structure.md`
 - `Modules/Xot/project_docs/filament-widgets.md`
 - `Modules/Xot/project_docs/translations.md`
+=======
+---
+module: theme
+topic: implementation
+canonical: ../../../../Themes/docs/shared-components/implementation-summary-Modules.md
+related:
+  - "./edit-user-widget.md"
+  - "./implementation-summary.md"
+  - "./translation-guidelines.md"
+  - "./translationlines.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/implementation-summary-Modules.md
+>>>>>>> 2024e2e7 (.)

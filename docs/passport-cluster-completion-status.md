@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Passport Cluster - Status Completamento
 
 **Data**: 2025-01-22
@@ -197,3 +198,21 @@ Alcune risorse non hanno tutte le pages standard:
 **Ultimo aggiornamento**: 2025-01-22
 **Versione**: 1.0.0
 **Status**: ✅ Completato e verificato
+=======
+---
+module: theme
+topic: passport-cluster-completion-status
+canonical: ../../../Themes/docs/shared-components/passport-cluster-completion-status.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-completion-status.md
+>>>>>>> 2024e2e7 (.)

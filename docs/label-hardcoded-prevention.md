@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Prevenzione ->label() Hardcoded - Modulo User"
+type: concept
+tags: [label, hardcoded, prevention]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "label-hardcoded-prevention prevenzione ->label() hardcoded - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Prevenzione ->label() Hardcoded - Modulo User
 
 ## 🚨 **REGOLA ASSOLUTA**
@@ -76,7 +99,11 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class ExampleResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> 2024e2e7 (.)
     {
         return [
             'name' => TextInput::make('name')
@@ -186,13 +213,23 @@ return [
 
 ## 🔗 **Collegamenti**
 
+<<<<<<< HEAD
 - [Translation Standards](../../docs/translation-standards.md)
 - [PHPStan Fixes](../../docs/phpstan_level10_fixes.md)
 - [Best Practices](../../docs/best-practices.md)
+=======
+- [Translation Standards](../../../docs/translation-standards.md)
+- [PHPStan Fixes](../../../docs/phpstan_level10_fixes.md)
+- [Best Practices](../../../docs/best-practices.md)
+>>>>>>> 2024e2e7 (.)
 
 ---
 
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025  
 **📦 Versione**: 3.1.0  
 **🎯 Obiettivo**: Zero ->label() hardcoded  
+<<<<<<< HEAD
 **✅ Status**: Prevenzione attiva e monitorata
+=======
+**✅ Status**: Prevenzione attiva e monitorata
+>>>>>>> 2024e2e7 (.)

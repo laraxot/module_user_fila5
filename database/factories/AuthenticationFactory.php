@@ -6,6 +6,7 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\Authentication;
+<<<<<<< HEAD
 use Modules\User\Models\User;
 
 /**
@@ -13,24 +14,37 @@ use Modules\User\Models\User;
  *
  * Factory for creating Authentication model instances for testing and seeding.
  *
+=======
+
+/**
+>>>>>>> 2024e2e7 (.)
  * @extends Factory<Authentication>
  */
 class AuthenticationFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
+<<<<<<< HEAD
      *
      * @var class-string<Authentication>
+=======
+>>>>>>> 2024e2e7 (.)
      */
     protected $model = Authentication::class;
 
     /**
      * Define the model's default state.
+<<<<<<< HEAD
      *
+=======
+     */
+    /**
+>>>>>>> 2024e2e7 (.)
      * @return array<string, mixed>
      */
     public function definition(): array
     {
+<<<<<<< HEAD
         $loginSuccessful = $this->faker->boolean(85); // 85% success rate
         $loginAt = $this->faker->dateTimeBetween('-1 year', 'now');
 
@@ -100,5 +114,8 @@ class AuthenticationFactory extends Factory
             'authenticatable_type' => User::class,
             'authenticatable_id' => $user->id,
         ]);
+=======
+        return [];
+>>>>>>> 2024e2e7 (.)
     }
 }

@@ -4,12 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
+<<<<<<< HEAD
 use Filament\Widgets\Widget;
 use Illuminate\Support\Facades\Auth;
 
 abstract class BaseAuthWidget extends Widget
 {
     public null|array $data = [];
+=======
+use Illuminate\Support\Facades\Auth;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+
+abstract class BaseAuthWidget extends XotBaseWidget
+{
+    /** @var array<string, mixed>|null */
+    public ?array $data = [];
+>>>>>>> 2024e2e7 (.)
 
     public function mount(): void
     {
@@ -21,6 +31,10 @@ abstract class BaseAuthWidget extends Widget
     /**
      * Restituisce i dati per la view.
      * In Filament v3/Xot, il form va gestito tramite getFormSchema().
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 2024e2e7 (.)
      * @return array<string, mixed>
      */
     protected function getViewData(): array
@@ -29,6 +43,7 @@ abstract class BaseAuthWidget extends Widget
             'form' => $this->getFormSchema(),
         ];
     }
+<<<<<<< HEAD
 
     /**
      * Restituisce lo schema del form per l'autenticazione.
@@ -37,4 +52,6 @@ abstract class BaseAuthWidget extends Widget
      * @return array<mixed>
      */
     abstract protected function getFormSchema(): array;
+=======
+>>>>>>> 2024e2e7 (.)
 }

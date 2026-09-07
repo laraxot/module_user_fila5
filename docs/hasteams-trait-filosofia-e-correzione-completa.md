@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa"
+type: concept
+tags: [hasteams, trait, filosofia, correzione]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "hasteams-trait-filosofia-e-correzione-completa hasteams trait - filosofia laraxot e strategia di correzione completa"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa
 
 ## 🧠 LA FILOSOFIA LARAXOT: Perché `belongsToManyX` invece di `belongsToMany`
@@ -256,7 +279,11 @@ Creare test per verificare:
 
 ### 3. **Documentazione Collegamenti**
 Aggiornare:
+<<<<<<< HEAD
 - [docs/USER_MODULE.md](../../../docs/user_module.md)
+=======
+- [docs/USER_MODULE.md](../../../../docs/user_module.md)
+>>>>>>> 2024e2e7 (.)
 - [Modules/User/docs/traits.md](traits.md)
 - File .mdc per Cursor e Windsurf
 
@@ -274,10 +301,17 @@ Il trait `HasTeams` ora è:
 ## 🔗 **Collegamenti Bidirezionali**
 
 ### **📚 Documentazione Root**
+<<<<<<< HEAD
 - [docs/laraxot_conventions.md](../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
 - [docs/USER_MODULE.md](../../../docs/user_module.md) - Documentazione generale modulo User
 - [docs/phpstan_fixes.md](../../../docs/phpstan_fixes.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../docs/trait_best_practices.md) - Best practices per trait
+=======
+- [docs/laraxot_conventions.md](../../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
+- [docs/USER_MODULE.md](../../../../docs/user_module.md) - Documentazione generale modulo User
+- [docs/phpstan-fixes-8.md](../../../../docs/phpstan-fixes-8.md) - Guide PHPStan
+- [docs/TRAIT_BEST_PRACTICES.md](../../../../docs/trait_best_practices.md) - Best practices per trait
+>>>>>>> 2024e2e7 (.)
 
 ### **📁 Documentazione Modulo User**
 - [traits.md](traits.md) - Documentazione completa trait modulo User

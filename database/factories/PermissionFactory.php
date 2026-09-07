@@ -6,11 +6,16 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\Permission;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 /**
  * Factory per il modello Permission del modulo User.
  *
+=======
+
+/**
+>>>>>>> 2024e2e7 (.)
  * @extends Factory<Permission>
  */
 class PermissionFactory extends Factory
@@ -23,6 +28,7 @@ class PermissionFactory extends Factory
     protected $model = Permission::class;
 
     /**
+<<<<<<< HEAD
      * Definisce lo stato di default del modello.
      *
      * @return array<string, mixed>
@@ -136,4 +142,20 @@ class PermissionFactory extends Factory
             'guard_name' => $guard,
         ]);
     }
+=======
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    /**
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'name' => fake()->unique()->word(),
+            'guard_name' => 'web',
+        ];
+    }
+>>>>>>> 2024e2e7 (.)
 }

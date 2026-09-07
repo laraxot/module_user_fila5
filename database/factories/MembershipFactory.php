@@ -10,7 +10,11 @@ use Modules\User\Models\Team;
 use Modules\User\Models\User;
 
 /**
+<<<<<<< HEAD
  * Membership Factory
+=======
+ * Membership Factory.
+>>>>>>> 2024e2e7 (.)
  *
  * Factory for creating Membership model instances for testing and seeding.
  *
@@ -30,18 +34,30 @@ class MembershipFactory extends Factory
      *
      * @return array<string, mixed>
      */
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> 2024e2e7 (.)
     public function definition(): array
     {
         return [
             'team_id' => Team::factory(),
             'user_id' => User::factory(),
+<<<<<<< HEAD
             'role' => $this->faker->randomElement(['admin', 'editor', 'member', 'viewer']),
             'customer_id' => $this->faker->optional(0.3)->uuid(),
+=======
+            'role' => fake()->randomElement(['admin', 'editor', 'member', 'viewer']),
+            'customer_id' => fake()->optional(0.3)->uuid(),
+>>>>>>> 2024e2e7 (.)
         ];
     }
 
     /**
      * Create membership for a specific team.
+<<<<<<< HEAD
      *
      * @param Team $team
      * @return static
@@ -49,12 +65,19 @@ class MembershipFactory extends Factory
     public function forTeam(Team $team): static
     {
         return $this->state(fn(array $_attributes): array => [
+=======
+     */
+    public function forTeam(Team $team): static
+    {
+        return $this->state(fn (array $_attributes): array => [
+>>>>>>> 2024e2e7 (.)
             'team_id' => $team->id,
         ]);
     }
 
     /**
      * Create membership for a specific user.
+<<<<<<< HEAD
      *
      * @param User $user
      * @return static
@@ -62,54 +85,88 @@ class MembershipFactory extends Factory
     public function forUser(User $user): static
     {
         return $this->state(fn(array $_attributes): array => [
+=======
+     */
+    public function forUser(User $user): static
+    {
+        return $this->state(fn (array $_attributes): array => [
+>>>>>>> 2024e2e7 (.)
             'user_id' => $user->id,
         ]);
     }
 
     /**
      * Set the role to admin.
+<<<<<<< HEAD
      *
      * @return static
      */
     public function admin(): static
     {
         return $this->state(fn(array $_attributes): array => [
+=======
+     */
+    public function admin(): static
+    {
+        return $this->state(fn (array $_attributes): array => [
+>>>>>>> 2024e2e7 (.)
             'role' => 'admin',
         ]);
     }
 
     /**
      * Set the role to editor.
+<<<<<<< HEAD
      *
      * @return static
      */
     public function editor(): static
     {
         return $this->state(fn(array $_attributes): array => [
+=======
+     */
+    public function editor(): static
+    {
+        return $this->state(fn (array $_attributes): array => [
+>>>>>>> 2024e2e7 (.)
             'role' => 'editor',
         ]);
     }
 
     /**
      * Set the role to member.
+<<<<<<< HEAD
      *
      * @return static
      */
     public function member(): static
     {
         return $this->state(fn(array $_attributes): array => [
+=======
+     */
+    public function member(): static
+    {
+        return $this->state(fn (array $_attributes): array => [
+>>>>>>> 2024e2e7 (.)
             'role' => 'member',
         ]);
     }
 
     /**
      * Set the role to viewer.
+<<<<<<< HEAD
      *
      * @return static
      */
     public function viewer(): static
     {
         return $this->state(fn(array $_attributes): array => [
+=======
+     */
+    public function viewer(): static
+    {
+        return $this->state(fn (array $_attributes): array => [
+>>>>>>> 2024e2e7 (.)
             'role' => 'viewer',
         ]);
     }

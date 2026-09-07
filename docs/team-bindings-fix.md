@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fix Binding Team Models nel Modulo User
 
 ## Panoramica
@@ -295,3 +296,21 @@ $this->assertTrue($user->belongsToTeam($team));
 **Autore**: AI Assistant
 **Data**: Gennaio 2025
 **Versione**: 1.0
+=======
+---
+module: theme
+topic: team-bindings-fix
+canonical: ../../../Themes/docs/shared-components/team-bindings-fix.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/team-bindings-fix.md
+>>>>>>> 2024e2e7 (.)

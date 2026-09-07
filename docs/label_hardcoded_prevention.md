@@ -76,7 +76,11 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class ExampleResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> 2024e2e7 (.)
     {
         return [
             'name' => TextInput::make('name')

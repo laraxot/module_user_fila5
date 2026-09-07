@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+=======
+---
+title: "Utilizzo dei componenti Blade di Filament"
+type: concept
+tags: [using, filament, components]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "using-filament-components utilizzo dei componenti blade di filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+---
+
+>>>>>>> 2024e2e7 (.)
 # Utilizzo dei componenti Blade di Filament
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo User.

@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+=======
+---
+title: "Filosofia dei Comandi Console - Modulo User"
+type: concept
+tags: [console, commands]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "console-commands filosofia dei comandi console - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./assign-module-command.md"
+  - "./change-password-command.md"
+  - "./console-commands-philosophy.md"
+  - "./readme.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -455,9 +474,12 @@ private function getPasswordLegacy(): string
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-27*
 
 
 
 
+=======
+>>>>>>> 2024e2e7 (.)
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏛️ FILOSOFIA SPATIE PERMISSION IN LARAXOT
 
 ## 📋 CONTESTO E ANALISI
@@ -233,3 +234,21 @@ use Spatie\Permission\Models\Permission;  // Confuso se si estende
 ---
 
 *Questa è la Via Laraxot: Rispettare la natura di ogni cosa, non forzarla in forme innaturali.*
+=======
+---
+module: theme
+topic: spatie-permission-philosophy
+canonical: ../../../Themes/docs/shared-components/spatie-permission-philosophy.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/spatie-permission-philosophy.md
+>>>>>>> 2024e2e7 (.)

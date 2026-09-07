@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+=======
+---
+title: "Dashboard Filters Integration per Widget Filament"
+type: concept
+tags: [dashboard, filters, integration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "dashboard-filters-integration dashboard filters integration per widget filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./edit-user-widget.md"
+  - "./registration-widget-fileupload-fix.md"
+  - "./registration-widget-fileupload.md"
+  - "./registration-widget.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Dashboard Filters Integration per Widget Filament
 
 ## Problema Risolto
@@ -146,4 +165,7 @@ protected function getFooterWidgets(): array
 - **Problema**: Widget non riceveva filtri Dashboard
 - **Soluzione**: Accesso sicuro con fallback appropriati
 - **Impatto**: Risolto per tutti i widget che usano lo stesso pattern
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
+=======
+>>>>>>> 2024e2e7 (.)

@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Risoluzione Conflitti Traduzioni Tema Two - Modulo User"
+type: concept
+tags: [theme, translations, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "theme-translations-resolution risoluzione conflitti traduzioni tema two - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Risoluzione Conflitti Traduzioni Tema Two - Modulo User
 
 ## Data: [DATE]
@@ -394,11 +417,19 @@ php artisan lang:missing --locale=it,en,de
 
 ### Collegamenti Interni
 - [User States](user_states.mdc)
+<<<<<<< HEAD
 - [Moderation Strategy](user_moderation_strategy.md)
 - [Filament Best Practices](filament_best_practices.md)
 
 ### Collegamenti Esterni
 - [Translation Standards](../../../project_docs/translation-standards.md)
+=======
+- [Moderation Strategy](user-moderation-strategy-3.md)
+- [Filament Best Practices](filament_best_practices.md)
+
+### Collegamenti Esterni
+- [Translation Standards](../../../../docs/project/translation-standards.md)
+>>>>>>> 2024e2e7 (.)
 - [Theme Documentation](../../../themes/two/project_docs/readme.md)
 
 ## Note per Sviluppatori

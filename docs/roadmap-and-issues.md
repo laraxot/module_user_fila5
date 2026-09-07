@@ -1,9 +1,36 @@
+<<<<<<< HEAD
+=======
+---
+title: "User Module - Roadmap, Issues & Optimization"
+type: concept
+tags: [roadmap, issues]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "roadmap-and-issues user module - roadmap, issues & optimization"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # User Module - Roadmap, Issues & Optimization
 
 **Modulo**: User (Authentication, Authorization, Profiles)  
 **Data Analisi**: 1 Ottobre 2025  
 **Maintainer**: Team FixCity  
+<<<<<<< HEAD
 **Status PHPStan**: ⚠️ 95 errori (Level 9)
+=======
+**Status PHPStan**: ⚠️ 95 errori (Level 10)
+>>>>>>> 2024e2e7 (.)
 
 ---
 
@@ -23,7 +50,11 @@
 
 ---
 
+<<<<<<< HEAD
 ## 🔴 ERRORI PHPSTAN DA CORREGGERE (95)
+=======
+## 🔴 COMPLETED PHPSTAN DA CORREGGERE (95)
+>>>>>>> 2024e2e7 (.)
 
 ### Categorizzazione Errori
 
@@ -247,7 +278,11 @@ php artisan queue:prune-failed --hours=48
 - [ ] Cleanup PHPStan suppressions
 
 **Totale**: ~6 ore  
+<<<<<<< HEAD
 **Risultato**: ✅ 0 errori PHPStan Level 9
+=======
+**Risultato**: ✅ 0 errori PHPStan Level 10
+>>>>>>> 2024e2e7 (.)
 
 ---
 
@@ -313,7 +348,11 @@ php artisan queue:prune-failed --hours=48
 - [ ] **User Analytics**
   - Activity metrics
   - Engagement tracking
+<<<<<<< HEAD
   - Churn prediction
+=======
+  - Churn <nome progetto>ion
+>>>>>>> 2024e2e7 (.)
 
 ---
 
@@ -370,13 +409,21 @@ php artisan queue:prune-failed --hours=48
 ## 🔗 Collegamenti
 
 - [← User Module README](./readme.md)
+<<<<<<< HEAD
 - [← PHPStan Fixes 2025-10-01](./phpstan-fixes-2025-10-01.md)
+=======
+- [← PHPStan Fixes 2025-10-01](./phpstan-fixes.md)
+>>>>>>> 2024e2e7 (.)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
 - [← Root Documentation](../../../docs/index.md)
 
 ---
 
+<<<<<<< HEAD
 **Status**: ⚠️ 95 ERRORI DA CORREGGERE  
+=======
+**Status**: ⚠️ 95 COMPLETED DA CORREGGERE  
+>>>>>>> 2024e2e7 (.)
 **Priorità**: 🟡 ALTA  
 **Timeline**: 2 Ottobre 2025  
 **Effort**: ~6 ore → 100% CLEAN

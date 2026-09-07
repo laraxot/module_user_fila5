@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Aggiornamento relativo a DoctorResource.php"
+type: concept
+tags: [registration, widget, update]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "registration-widget-update aggiornamento relativo a doctorresource.php"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Aggiornamento relativo a DoctorResource.php
 
 ## Nota del 2025-05-15
@@ -13,7 +36,11 @@ Ho aggiornato ulteriormente la documentazione per riflettere un cambiamento nell
 - [Documentazione principale](../project_docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
 - [Documentazione Doctor Model](../modules/patient/project_docs/doctor-model-update.md)
 - [Documentazione DoctorResource](../modules/patient/docs/doctor-resource-update.md)
+<<<<<<< HEAD
 - [Documentazione principale](../docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
+=======
+- [Documentazione principale](../../docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
+>>>>>>> 2024e2e7 (.)
 - [Documentazione Doctor Model](../modules/patient/docs/doctor-model-update.md)
 # Aggiornamento relativo a DoctorResource.php
 
@@ -34,5 +61,9 @@ Ho aggiornato ulteriormente la documentazione per riflettere un cambiamento nell
 
 **Collegamenti correlati**:
 - [Documentazione DoctorResource](../modules/patient/docs/doctor-resource-update.md)
+<<<<<<< HEAD
 - [Documentazione principale](../docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
+=======
+- [Documentazione principale](../../docs/roadmap_frontoffice/08-registrazione-odontoiatra.md)
+>>>>>>> 2024e2e7 (.)
 - [Documentazione Doctor Model](../modules/patient/docs/doctor-model-update.md)

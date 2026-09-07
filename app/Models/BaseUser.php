@@ -4,8 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use DateTime;
 use Exception;
+=======
+use Filament\Models\Contracts\FilamentUser;
+>>>>>>> 2024e2e7 (.)
 use Filament\Models\Contracts\HasName;
 use Filament\Models\Contracts\HasTenants;
 use Filament\Panel;
@@ -13,11 +17,15 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> 2024e2e7 (.)
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
@@ -28,6 +36,7 @@ use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 use Laravel\Passport\HasApiTokens;
 use Modules\TechPlanner\Models\Profile;
 use Modules\User\Database\Factories\UserFactory;
@@ -48,6 +57,29 @@ use Throwable;
 
 /**
  * Base User Model
+=======
+use Laravel\Passport\Contracts\OAuthenticatable;
+use Laravel\Passport\HasApiTokens;
+use Modules\User\Contracts\HasAuthentications;
+use Modules\User\Database\Factories\UserFactory;
+use Modules\User\Models\Traits\HasAuthenticationLogTrait;
+use Modules\User\Models\Traits\HasDevices;
+use Modules\User\Models\Traits\HasModules;
+use Modules\User\Models\Traits\HasSocialite;
+use Modules\User\Models\Traits\HasSpatiePermission;
+use Modules\User\Models\Traits\HasTeams;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+use Modules\Xot\Models\Traits as XotTraits;
+use Modules\Xot\Models\Traits\HasXotFactory;
+use Parental\HasChildren;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
+
+/**
+ * Base User Model.
+>>>>>>> 2024e2e7 (.)
  *
  * This is the base user model that provides the core authentication and authorization
  * functionality for the application. It extends Laravel's Authenticatable class
@@ -68,11 +100,19 @@ use Throwable;
  * @property ProfileContract|null $profile
  * @property Collection<int, Role> $roles
  * @property int|null $roles_count
+<<<<<<< HEAD
  * @property Collection<int, Team> $teams
  * @property int|null $teams_count
  * @property Collection<int, Tenant> $tenants
  * @property int|null $tenants_count
  * @property Collection<int, OauthAccessToken> $tokens
+=======
+ * @property Collection<int, Team> $membershipTeams
+ * @property int|null $membership_teams_count
+ * @property Collection<int, Tenant> $tenants
+ * @property int|null $tenants_count
+ * @property Collection<int, OauthToken> $tokens
+>>>>>>> 2024e2e7 (.)
  * @property int|null $tokens_count
  * @property string $last_name
  * @property string|null $facebook_id
@@ -88,19 +128,31 @@ use Throwable;
  * @property bool|null $is_active
  * @property bool|null $is_otp
  * @property string|null $type
+<<<<<<< HEAD
  * @property DateTime|null $password_expires_at
  * @property DateTime|null $email_verified_at
  * @property string|null $remember_token
  * @property DateTime|null $created_at
  * @property DateTime|null $updated_at
  * @property DateTime|null $deleted_at
+=======
+ * @property \DateTime|null $password_expires_at
+ * @property \DateTime|null $email_verified_at
+ * @property string|null $remember_token
+ * @property \DateTime|null $created_at
+ * @property \DateTime|null $updated_at
+ * @property \DateTime|null $deleted_at
+>>>>>>> 2024e2e7 (.)
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property string|null $deleted_by
  * @property string|null $profile_photo_path
  * @property Pivot|null $pivot
  *
+<<<<<<< HEAD
  * @method static UserFactory factory($count = null, $state = [])
+=======
+>>>>>>> 2024e2e7 (.)
  * @method static Builder|User newModelQuery()
  * @method static Builder|User newQuery()
  * @method static Builder|User permission($permissions, $without = false)
@@ -133,11 +185,16 @@ use Throwable;
  *
  * @mixin \Eloquent
  */
+<<<<<<< HEAD
 abstract class BaseUser extends Authenticatable implements HasMedia, HasName, HasTenants, MustVerifyEmail, UserContract
+=======
+abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract
+>>>>>>> 2024e2e7 (.)
 {
     use HasApiTokens;
     use HasAuthenticationLogTrait;
     use HasChildren;
+<<<<<<< HEAD
     use HasFactory;
     use HasPermissions;
     use HasRoles;
@@ -165,6 +222,40 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     /** @var list<string> */
     protected $fillable = [
         'id',
+=======
+    use HasDevices;
+    use HasModules;
+    use HasSocialite;
+    use HasSpatiePermission, HasTeams {
+        HasSpatiePermission::teams insteadof HasTeams;
+        HasTeams::teams as membershipTeams;
+    }
+    use HasUuids;
+
+    use HasXotFactory;
+
+    use InteractsWithMedia;
+    use Notifiable;
+
+    // use SoftDeletes;
+    use Traits\HasTenants;
+    use XotTraits\RelationX;
+
+    public $incrementing = false;
+
+    protected $connection = 'user';
+
+    protected $primaryKey = 'id';
+
+    protected $keyType = 'string';
+
+    protected string $childColumn = 'type';
+
+    protected $fillable = [
+        'id',
+        // 'ente',
+        // 'matr',
+>>>>>>> 2024e2e7 (.)
         'name',
         'first_name',
         'last_name',
@@ -175,7 +266,13 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         'is_active',
         'is_otp', // is One Time Password
         'password_expires_at',
+<<<<<<< HEAD
         'type',
+=======
+        'email_verified_at',
+        'type',
+        'state',
+>>>>>>> 2024e2e7 (.)
     ];
 
     /** @var list<string> */
@@ -199,16 +296,21 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     /** @var array<string, class-string> */
     protected $childTypes = [];
 
+<<<<<<< HEAD
     /** @var array<string, mixed> */
     protected $attributes = [
         // 'state' => Pending::class,
         // 'state' => 'pending',
         'is_otp' => false,
+=======
+    protected $attributes = [
+>>>>>>> 2024e2e7 (.)
         'is_active' => true,
     ];
 
     /**
      * Guard coerente con Spatie/Permission: deve essere 'web'.
+<<<<<<< HEAD
      *
      * @var string
      */
@@ -216,6 +318,10 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
 
     /** @var Pivot|null */
     public $pivot;
+=======
+     */
+    protected string $guard_name = 'web';
+>>>>>>> 2024e2e7 (.)
 
     public function __construct(array $attributes = [])
     {
@@ -224,6 +330,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         try {
             $this->fillable = array_values(array_merge(parent::getFillable(), $this->getFillable()));
             parent::__construct($attributes);
+<<<<<<< HEAD
         } catch (Throwable $e) {
             // Fallback in case database connection is not available (e.g., during testing)
             $this->fillable = array_values($this->getFillable());
@@ -238,11 +345,44 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return true;
     }
 
+=======
+        } catch (\Throwable $e) {
+            // Fallback in case database connection is not available (e.g., during testing)
+            $this->fillable = array_values($this->getFillable());
+            // Avoid calling parent constructor if database is not available
+            foreach ($attributes as $key => $value) {
+                $this->setAttribute($key, $value);
+            }
+        }
+    }
+
+    public function getProviderName(): string
+    {
+        $provider = $this->getAttribute('provider');
+        if (\is_string($provider) && '' !== $provider) {
+            return $provider;
+        }
+
+        $configured = config('auth.guards.api.provider', 'users');
+
+        return \is_string($configured) ? $configured : 'users';
+    }
+
+    /*
+    public function canAccessFilament(?Panel $panel = null): bool
+    {
+         dddx($panel->getId());
+        // return $this->role_id === Role::ROLE_ADMINISTRATOR;
+        return true;
+    }
+    */
+>>>>>>> 2024e2e7 (.)
     /**
      * Get the user's name for Filament.
      */
     public function getFilamentName(): string
     {
+<<<<<<< HEAD
         $name = (string) ($this->getAttribute('name') ?? '');
         $firstName = (string) ($this->getAttribute('first_name') ?? '');
         $lastName = (string) ($this->getAttribute('last_name') ?? '');
@@ -252,6 +392,17 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         // Ensure we always return a non-empty string
         if (empty($fullName)) {
             $email = (string) ($this->getAttribute('email') ?? '');
+=======
+        $name = $this->name ?? '';
+        $firstName = $this->first_name ?? '';
+        $lastName = $this->last_name ?? '';
+
+        $fullName = trim(\sprintf('%s %s %s', $name, $firstName, $lastName));
+
+        // Ensure we always return a non-empty string
+        if (empty($fullName)) {
+            $email = $this->email ?? '';
+>>>>>>> 2024e2e7 (.)
 
             return ! empty($email) ? $email : 'User';
         }
@@ -259,6 +410,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         return $fullName;
     }
 
+<<<<<<< HEAD
     #[Override]
     public function profile(): HasOne
     {
@@ -279,12 +431,48 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
             // Utilizziamo una classe che sicuramente esiste nel sistema
             return $this->hasOne(Model::class);
         }
+=======
+    /**
+     * @return HasOne<Model&ProfileContract, Model&static>
+     *
+     * @phpstan-return HasOne<Model&ProfileContract, Model&static>
+     */
+    #[\Override]
+    public function profile(): HasOne
+    {
+        $profileClass = XotData::make()->getProfileClass();
+        if (class_exists($profileClass)) {
+            /** @var HasOne<Model&ProfileContract, Model&static> $relation */
+            $relation = $this->hasOne($profileClass);
+
+            return $relation;
+        }
+
+        // Try direct module class if XotData failed
+        $directClass = 'Modules\User\Models\Profile';
+        if (class_exists($directClass)) {
+            /** @var HasOne<Model&ProfileContract, Model&static> $relation */
+            $relation = $this->hasOne($directClass);
+
+            return $relation;
+        }
+
+        // Fallback: stay on current model if nothing found
+        /** @var HasOne<Model&ProfileContract, Model&static> $relation */
+        $relation = $this->hasOne(static::class, 'id', 'id')->whereRaw('1=0');
+
+        return $relation;
+>>>>>>> 2024e2e7 (.)
     }
 
     /**
      * Verifica se l'utente ha il ruolo di super-admin.
      *
+<<<<<<< HEAD
      * @return bool True se l'utente è super-admin, altrimenti false
+=======
+     * @return bool True se l'utente Ã¨ super-admin, altrimenti false
+>>>>>>> 2024e2e7 (.)
      */
     public function isSuperAdmin(): bool
     {
@@ -303,6 +491,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         // $panel->default('admin');
         if ($panel->getId() !== 'admin') {
             $role = $panel->getId();
+<<<<<<< HEAD
             /*
              * $xot = XotData::make();
              * if ($xot->super_admin === $this->email) {
@@ -311,12 +500,21 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
              * }
              */
 
+=======
+
+            // App\Support\AccountFeatures non e' mai esistita (ne' la classe ne'
+            // config/account_features.php): riferimento morto fin dal commit
+            // iniziale del modulo, causava un Error fatale a runtime su ogni
+            // pannello diverso da "admin". hasRole($role) resta l'unico controllo
+            // reale, come gia' documentato qui sopra come fallback.
+>>>>>>> 2024e2e7 (.)
             return $this->hasRole($role);
         }
 
         return true; // str_ends_with($this->email, '@yourdomain.com') && $this->hasVerifiedEmail();
     }
 
+<<<<<<< HEAD
     public function canAccessSocialite(): bool
     {
         return true;
@@ -329,19 +527,29 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
             // @phpstan-ignore function.alreadyNarrowedType
             $this->teams()->detach($model);
         }
+=======
+    public function detach(Model $model): void
+    {
+        $this->membershipTeams()->detach($model);
+>>>>>>> 2024e2e7 (.)
     }
 
     public function attach(Model $model): void
     {
+<<<<<<< HEAD
         // @phpstan-ignore function.alreadyNarrowedType
         if (method_exists($this, 'teams')) {
             // @phpstan-ignore function.alreadyNarrowedType
             $this->teams()->attach($model);
         }
+=======
+        $this->membershipTeams()->attach($model);
+>>>>>>> 2024e2e7 (.)
     }
 
     public function treeLabel(): string
     {
+<<<<<<< HEAD
         return strval($this->name ?? $this->email);
     }
 
@@ -380,27 +588,55 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         $res = $socialiteUser->{$field};
 
         return (string) $res;
+=======
+        return (string) ($this->name ?? $this->email);
+    }
+
+    /**
+     * @return Collection<int, Team>
+     */
+    /**
+     * @return Collection<int, Team>
+     */
+    public function treeSons(): Collection
+    {
+        return $this->membershipTeams ?? new Collection;
+>>>>>>> 2024e2e7 (.)
     }
 
     /**
      * Get the entity's notifications.
      *
+<<<<<<< HEAD
      * @return MorphMany<Notification, static|$this>
      */
     public function notifications()
     {
         // @phpstan-ignore return.type
+=======
+     * @return MorphMany<Notification, $this>
+     */
+    public function notifications(): MorphMany
+    {
+>>>>>>> 2024e2e7 (.)
         return $this->morphMany(Notification::class, 'notifiable');
     }
 
     /**
      * Get the user's latest authentication log.
      *
+<<<<<<< HEAD
      * @return MorphOne<AuthenticationLog, static>
      */
     public function latestAuthentication(): MorphOne
     {
         // @phpstan-ignore return.type
+=======
+     * @return MorphOne<AuthenticationLog, $this>
+     */
+    public function latestAuthentication(): MorphOne
+    {
+>>>>>>> 2024e2e7 (.)
         return $this->morphOne(AuthenticationLog::class, 'authenticatable')->latestOfMany();
     }
 
@@ -430,13 +666,21 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         $candidate = $name.'-'.$i;
 
         // During unit tests, avoid any DB interaction.
+<<<<<<< HEAD
         $isTesting = (function (): bool {
+=======
+        $isTesting = (static function (): bool {
+>>>>>>> 2024e2e7 (.)
             $app = app();
             if (method_exists($app, 'environment') && $app->environment('testing')) {
                 return true;
             }
 
+<<<<<<< HEAD
             return PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
+=======
+            return \PHP_SAPI === 'cli' && (getenv('APP_ENV') === 'testing' || getenv('ENV') === 'testing');
+>>>>>>> 2024e2e7 (.)
         })();
         if ($isTesting) {
             // Do not call update() here to avoid hitting the database.
@@ -454,7 +698,11 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
             $this->update(['name' => $value]);
 
             return $value;
+<<<<<<< HEAD
         } catch (Throwable $e) {
+=======
+        } catch (\Throwable $e) {
+>>>>>>> 2024e2e7 (.)
             // If any issue occurs (e.g., missing connection/table), fall back without DB.
             $this->attributes['name'] = $candidate;
 
@@ -462,6 +710,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         }
     }
 
+<<<<<<< HEAD
     /**
      * Create a new factory instance for the model.
      *
@@ -470,6 +719,60 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
     protected static function newFactory()
     {
         return app(GetFactoryAction::class)->execute(static::class);
+=======
+    // public function authentications(): MorphMany
+    // {
+    //    return $this->morphMany(\Modules\User\Models\Authentication::class, 'authenticatable');
+    // }
+
+    /**
+     * Check if the user has a specific role.
+     *
+     * NOTE: This method has been moved to trait HasSpatiePermission.
+     * If you need role checking functionality, use the trait method instead.
+     *
+     * @see HasSpatiePermission::hasRole()
+     */
+    public function setPasswordAttribute(?string $value): void
+    {
+        if (empty($value)) {
+            unset($this->attributes['password']);
+
+            return;
+        }
+        if (\strlen($value) < 32) {
+            $this->attributes['password'] = Hash::make($value);
+
+            return;
+        }
+        $this->attributes['password'] = $value;
+    }
+
+    /**
+     * User possiede molti Clients OAuth (per autenticazione API).
+     *
+     * @return MorphMany<OauthClient, $this>
+     */
+    public function clients(): MorphMany
+    {
+        return $this->morphMany(OauthClient::class, 'owner');
+    }
+
+    /**
+     * Find the user instance for the given username.
+     */
+    public static function findForPassport(string $username): ?self
+    {
+        return static::where('email', $username)->first();
+    }
+
+    /**
+     * Validate the password of the user for the given password.
+     */
+    public function validateForPassportPasswordGrant(string $password): bool
+    {
+        return Hash::check($password, (string) $this->password);
+>>>>>>> 2024e2e7 (.)
     }
 
     /** @return array<string, string> */
@@ -494,6 +797,7 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
             'deleted_by' => 'string',
         ];
     }
+<<<<<<< HEAD
 
     // public function authentications(): MorphMany
     // {
@@ -549,4 +853,6 @@ abstract class BaseUser extends Authenticatable implements HasMedia, HasName, Ha
         }
         $this->attributes['password'] = $value;
     }
+=======
+>>>>>>> 2024e2e7 (.)
 }

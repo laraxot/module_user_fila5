@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Risoluzione Problemi di Tipi Generici con PHPStan
 
 ## Problema: Template Type Covariance nelle Relazioni Eloquent
@@ -84,3 +85,21 @@ public function devices(): BelongsToMany
 - [PHPStan Blog: What's Up With Template Covariant](https://phpstan.org/blog/whats-up-with-template-covariant)
 - [Documentazione PHPStan sui tipi generici](https://phpstan.org/blog/generics-in-php-using-phpdocs)
 - [Laravel PHPStan extension](https://github.com/larastan/larastan)
+=======
+---
+module: theme
+topic: phpstan-generic-types
+canonical: ../../../Themes/docs/shared-components/phpstan-generic-types.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-generic-types.md
+>>>>>>> 2024e2e7 (.)

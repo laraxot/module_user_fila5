@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+=======
+---
+title: "Multiple Bugs Resolution - 16 Dicembre 2025"
+type: concept
+tags: [multiple, bugs, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "multiple-bugs-resolution multiple bugs resolution - 16 dicembre 2025"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./deviceuser-hasxotfactory-fix.md"
+  - "./deviceuser-hasxotfactory.md"
+  - "./git-conflicts-resolution.md"
+  - "./gits-resolution.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Multiple Bugs Resolution - 16 Dicembre 2025
 
 **Data Fix**: 16 Dicembre 2025
@@ -204,7 +223,11 @@ public function render(): View
 
 - [Priority Decision Rules](../../xot/docs/priority-decision-rules.md)
 - [Super Mucca Workflow](../../xot/docs/super-mucca-workflow.md)
+<<<<<<< HEAD
 - [Git Conflict Resolution](./git-conflicts-resolution-2025-12-16.md)
+=======
+- [Git Conflict Resolution](./git-conflicts-resolution.md)
+>>>>>>> 2024e2e7 (.)
 - [TenantService Actions](../../tenant/docs/configuration.md)
 
 ---

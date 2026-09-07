@@ -2,9 +2,33 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
 return [
     'login' => 'Accedi',
+=======
+return [
+    'login' => [
+        'title' => 'Accedi al tuo account',
+        'welcome_back' => 'Bentornato',
+        'welcome_message' => 'Inserisci le tue credenziali per accedere.',
+        'google' => 'Google',
+        'github' => 'GitHub',
+        'with_google' => 'Continua con Google',
+        'with_github' => 'Continua con GitHub',
+        'or_continue_with' => 'oppure',
+        'email' => 'Email',
+        'email_placeholder' => 'esempio@email.com',
+        'password' => 'Password',
+        'password_placeholder' => '••••••••',
+        'remember_me' => 'Ricordami',
+        'forgot_password' => 'Password dimenticata?',
+        'submit' => 'Accedi',
+        'logging_in' => 'Accesso in corso…',
+        'no_account' => 'Non hai un account?',
+        'create_account' => 'Crea account',
+    ],
+>>>>>>> 2024e2e7 (.)
     'register' => 'Registrati',
     'logout' => 'Esci',
     'logout_success' => 'Logout effettuato con successo',
@@ -18,4 +42,27 @@ return [
     'name' => 'Nome',
     'already_registered' => 'Già registrato?',
     'not_registered' => 'Non sei registrato?',
+<<<<<<< HEAD
+=======
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+    'actions' => [
+    ],
+    'credentials_incorrect' => [
+        'key' => 'user::auth.credentials_incorrect',
+        'text' => 'Verifica i tuoi dati di accesso',
+        'description' => 'Messaggio di errore quando le credenziali sono errate',
+        'context' => 'login_form.credentials',
+        'placeholder' => '',
+    ],
+>>>>>>> 2024e2e7 (.)
 ];

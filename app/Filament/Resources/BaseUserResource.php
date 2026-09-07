@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Schemas\Components\Section;
 use Override;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
@@ -17,6 +18,16 @@ use Filament\Forms\Components\TextInput;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\HtmlString;
 use Modules\User\Filament\Resources\UserResource\Pages;
+=======
+use Carbon\CarbonInterface;
+use Filament\Forms\Components\TextInput;
+use Filament\Infolists\Components\TextEntry;
+use Filament\Schemas\Components\Section;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\HtmlString;
+use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
+>>>>>>> 2024e2e7 (.)
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -24,8 +35,11 @@ abstract class BaseUserResource extends XotBaseResource
 {
     // protected static ?string $model = \Modules\Xot\Datas\XotData::make()->getUserClass();
 
+<<<<<<< HEAD
     protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-users';
 
+=======
+>>>>>>> 2024e2e7 (.)
     // Static property Modules\User\Filament\Resources\UserResource::$enablePasswordUpdates is never read, only written.
     // private static bool|\Closure $enablePasswordUpdates = true;
 
@@ -41,6 +55,7 @@ abstract class BaseUserResource extends XotBaseResource
     //    static::$extendFormCallback = $callback;
     // }
 
+<<<<<<< HEAD
     #[Override]
     public static function getFormSchema(): array
     {
@@ -64,6 +79,9 @@ abstract class BaseUserResource extends XotBaseResource
             ])->columnSpan(4),
         ];
     }
+=======
+    
+>>>>>>> 2024e2e7 (.)
 
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {
@@ -77,7 +95,11 @@ abstract class BaseUserResource extends XotBaseResource
      * }
      */
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> 2024e2e7 (.)
     public function hasCombinedRelationManagerTabsWithContent(): bool
     {
         return true;

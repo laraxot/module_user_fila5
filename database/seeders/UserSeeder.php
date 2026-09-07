@@ -7,6 +7,10 @@ namespace Modules\User\Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+<<<<<<< HEAD
+=======
+use Modules\User\Database\Factories\TeamFactory;
+>>>>>>> 2024e2e7 (.)
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
@@ -30,7 +34,11 @@ class UserSeeder extends Seeder
         $this->command->info('👤 Inizializzazione seeding User...');
 
         // Disabilita i controlli di foreign key (solo per MySQL)
+<<<<<<< HEAD
         if (DB::getDriverName() !== 'sqlite') {
+=======
+        if ('sqlite' !== DB::getDriverName()) {
+>>>>>>> 2024e2e7 (.)
             DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         }
 
@@ -41,7 +49,11 @@ class UserSeeder extends Seeder
             $this->command->info('✅ Seeding User completato con successo!');
         } finally {
             // Riabilita i controlli di foreign key (solo per MySQL)
+<<<<<<< HEAD
             if (DB::getDriverName() !== 'sqlite') {
+=======
+            if ('sqlite' !== DB::getDriverName()) {
+>>>>>>> 2024e2e7 (.)
                 DB::statement('SET FOREIGN_KEY_CHECKS=1;');
             }
         }
@@ -157,7 +169,11 @@ class UserSeeder extends Seeder
             'leave teams',
         ]);
 
+<<<<<<< HEAD
         $this->command->info('   ✓ Creati ' . count($systemPermissions) . ' permessi di sistema');
+=======
+        $this->command->info('   ✓ Creati '.count($systemPermissions));
+>>>>>>> 2024e2e7 (.)
         $this->command->info('   ✓ Creati 4 ruoli di sistema (super-admin, system-admin, moderator, user)');
     }
 
@@ -168,6 +184,7 @@ class UserSeeder extends Seeder
     {
         $this->command->info('👥 Creazione team di sistema...');
 
+<<<<<<< HEAD
         // Team di amministrazione
         $adminTeam = Team::factory()->create([
             'name' => 'Amministratori',
@@ -200,4 +217,26 @@ class UserSeeder extends Seeder
 
         $this->command->info('   ✓ Creati 5 team di sistema');
     }
+=======
+        $adminTeam = $this->createTeam('Amministratori');
+        $devTeam = $this->createTeam('Sviluppatori');
+        $supportTeam = $this->createTeam('Supporto Clienti');
+        $marketingTeam = $this->createTeam('Marketing');
+        $generalTeam = $this->createTeam('Team Generale');
+
+        $this->command->info('   ✓ Creati 5 team di sistema');
+    }
+
+    private function createTeam(string $name): Team
+    {
+        $factory = TeamFactory::new();
+        /** @var Team $team */
+        $team = $factory->create([
+            'name' => $name,
+            'personal_team' => false,
+        ]);
+
+        return $team;
+    }
+>>>>>>> 2024e2e7 (.)
 }

@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Database Issues in User Module"
+type: concept
+tags: [database, issues]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "database-issues-1 database issues in user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Database Issues in User Module
 
 ## Missing `doctor_team` Table
@@ -21,4 +44,8 @@
 - [Team Management](./team_management.md)
 - [BaseUser Model](./baseuser.md)
 - [Database Structure](../database_structure.md)
+<<<<<<< HEAD
 - [Migration Guidelines](../../../../docs/collegamenti-documentazione.md)
+=======
+- [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
+>>>>>>> 2024e2e7 (.)

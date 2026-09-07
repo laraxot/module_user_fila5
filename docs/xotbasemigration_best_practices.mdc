@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 description:
 globs:
 alwaysApply: false
@@ -52,3 +53,11 @@ if (!Schema::hasColumn('users', 'state')) {
 - [Contratti e Interfacce Moderazione](mdc:MODERATION_CONTRACTS.mdc)
 - [Configurazione Stati Utente](mdc:USER_STATES.mdc)
 - [Best Practice: ActivityLog per la Moderazione Utenti](mdc:ACTIVITYLOG_MODERATION_BEST_PRACTICES.mdc)
+=======
+module: theme
+topic: xotbasemigration_best_practices
+canonical: ../../../Themes/docs/shared-components/xotbasemigration-best-practices.mdc
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/xotbasemigration-best-practices.mdc
+>>>>>>> 2024e2e7 (.)

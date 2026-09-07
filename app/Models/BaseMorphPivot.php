@@ -4,15 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\MorphPivot;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Modules\Xot\Traits\Updater;
+=======
+use Modules\Xot\Models\XotBaseMorphPivot;
+>>>>>>> 2024e2e7 (.)
 
 /**
  * Class BaseMorphPivot.
  */
+<<<<<<< HEAD
 abstract class BaseMorphPivot extends MorphPivot
 {
     use HasFactory;
@@ -55,6 +60,13 @@ abstract class BaseMorphPivot extends MorphPivot
     protected $keyType = 'string';
 
     /** @var list<string> */
+=======
+abstract class BaseMorphPivot extends XotBaseMorphPivot
+{
+    protected $connection = 'user';
+
+    /** @var list<string> */
+>>>>>>> 2024e2e7 (.)
     protected $fillable = [
         'id',
         'post_id',
@@ -64,6 +76,7 @@ abstract class BaseMorphPivot extends MorphPivot
         'note',
     ];
 
+<<<<<<< HEAD
     /**
      * Create a new factory instance for the model.
      *
@@ -75,6 +88,8 @@ abstract class BaseMorphPivot extends MorphPivot
         return app(GetFactoryAction::class)->execute(static::class);
     }
 
+=======
+>>>>>>> 2024e2e7 (.)
     /** @return array<string, string> */
     protected function casts(): array
     {

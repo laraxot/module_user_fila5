@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Roadmap - User Module
 
 > **Date**: 2026-01-14
@@ -21,3 +22,21 @@ The **User** module is fully compliant with PHPStan Level 10. No errors were rep
 ## Future Goals
 - Clean up legacy documentation files to reduce clutter.
 - Maintain 0 errors.
+=======
+---
+module: theme
+topic: phpstan-roadmap
+canonical: ../../../Themes/docs/shared-components/phpstan-roadmap-Modules.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-roadmap-Modules.md
+>>>>>>> 2024e2e7 (.)

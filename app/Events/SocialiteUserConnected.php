@@ -20,5 +20,10 @@ class SocialiteUserConnected
      */
     public function __construct(
         public SocialiteUser $socialiteUser,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 2024e2e7 (.)
 }

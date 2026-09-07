@@ -5,19 +5,25 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< HEAD
 use function Safe\file_put_contents;
 
+=======
+>>>>>>> 2024e2e7 (.)
 return new class extends XotBaseMigration {
     /**
      * Run the migrations.
      */
     public function up(): void
     {
+<<<<<<< HEAD
         $conn = $this->getConn()->getConnection()->getName();
         $db = $this->getConn()->getConnection()->getDatabaseName();
         $exists = $this->tableExists();
         file_put_contents(base_path('migration_debug.log'), "MIGRATING tenant_user | CONN: $conn | DB: $db | EXISTS: ".($exists ? 'YES' : 'NO')."\n", FILE_APPEND);
 
+=======
+>>>>>>> 2024e2e7 (.)
         // -- CREATE --
         $this->tableCreate(static function (Blueprint $table): void {
             // $table->uuid('id')->primary();
@@ -32,10 +38,14 @@ return new class extends XotBaseMigration {
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+<<<<<<< HEAD
             $this->updateTimestamps(
                 table: $table,
                 hasSoftDeletes: true,
             );
+=======
+            $this->updateTimestamps(table: $table, hasSoftDeletes: true);
+>>>>>>> 2024e2e7 (.)
         });
     }
 };

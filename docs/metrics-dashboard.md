@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Module Metrics Dashboard
 
 ## Overview
@@ -142,3 +143,21 @@ gantt
 2. Implement security enhancements
 3. Develop user analytics
 4. Enhance audit logging
+=======
+---
+module: theme
+topic: metrics-dashboard
+canonical: ../../../Themes/docs/shared-components/metrics-dashboard.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/metrics-dashboard.md
+>>>>>>> 2024e2e7 (.)

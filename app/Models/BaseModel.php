@@ -4,16 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Modules\Xot\Actions\Factory\GetFactoryAction;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
+=======
+use Modules\Xot\Models\XotBaseModel;
+>>>>>>> 2024e2e7 (.)
 
 /**
  * Class BaseModel.
  */
+<<<<<<< HEAD
 abstract class BaseModel extends Model
 {
     use HasFactory;
@@ -66,11 +71,22 @@ abstract class BaseModel extends Model
         return app(GetFactoryAction::class)->execute(static::class);
     }
 
+=======
+abstract class BaseModel extends XotBaseModel
+{
+    /** @var string */
+    protected $connection = 'user';
+
+>>>>>>> 2024e2e7 (.)
     /** @return array<string, string> */
     protected function casts(): array
     {
         return [
+<<<<<<< HEAD
             'id' => 'string',
+=======
+            // 'id' => 'string',
+>>>>>>> 2024e2e7 (.)
             'uuid' => 'string',
             'published_at' => 'datetime',
             'verified_at' => 'datetime',

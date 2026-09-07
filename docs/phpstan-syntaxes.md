@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "PHPStan Syntax Fixes - Modulo User"
+type: concept
+tags: [phpstan, syntaxes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-syntaxes phpstan syntax fixes - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # PHPStan Syntax Fixes - Modulo User
 
 **Versione PHPStan**: 1.12.x  
@@ -141,7 +164,11 @@ use App\Models\User;
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [Analisi Generale PHPStan](../../../project_docs/quality/phpstan-analysis.md)
+=======
+- [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
+>>>>>>> 2024e2e7 (.)
 - [PSR-12 Extended Coding Style](https://www.php-fig.org/psr/psr-12/)
 - [CLAUDE.md - Quality Guidelines](../../../claude.md)
 

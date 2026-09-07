@@ -4,25 +4,40 @@ declare(strict_types=1);
 
 namespace Modules\User\Console\Commands;
 
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
+=======
+use Illuminate\Console\Command;
+use Illuminate\Support\Carbon;
+use Modules\Xot\Contracts\UserContract;
+>>>>>>> 2024e2e7 (.)
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
 class FetchUserApiTokenCommand extends Command
 {
+<<<<<<< HEAD
     private const INVALID_ENV = 1;
 
     private const USER_NOT_FOUND = 2;
+=======
+    private const int INVALID_ENV = 1;
+
+    private const int USER_NOT_FOUND = 2;
+>>>>>>> 2024e2e7 (.)
 
     protected $signature = 'passport:fetch-user-token
                             {email : The email of the user to impersonate}';
 
     protected $description = 'Fetches an OAuth Token to be able to test APIs';
 
+<<<<<<< HEAD
     
 
+=======
+>>>>>>> 2024e2e7 (.)
     public function handle(): int
     {
         if (app()->isProduction()) {
@@ -56,7 +71,11 @@ class FetchUserApiTokenCommand extends Command
 
         $this->info("Access token for `{$userEmail}`:");
         $this->comment($token->accessToken);
+<<<<<<< HEAD
         $this->info('Scopes included: ' . implode(', ', $oauthScopes));
+=======
+        $this->info('Scopes included: '.implode(', ', $oauthScopes));
+>>>>>>> 2024e2e7 (.)
 
         return self::SUCCESS;
     }

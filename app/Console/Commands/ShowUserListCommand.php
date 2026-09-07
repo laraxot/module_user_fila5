@@ -13,15 +13,21 @@ class ShowUserListCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> 2024e2e7 (.)
      */
     protected $signature = 'user:user-list';
 
     /**
      * The console command description.
+<<<<<<< HEAD
      *
      * @var string
+=======
+>>>>>>> 2024e2e7 (.)
      */
     protected $description = 'Visualizza lista users';
 
@@ -32,7 +38,11 @@ class ShowUserListCommand extends Command
     {
         $modelClass = XotData::make()->getUserClass();
 
+<<<<<<< HEAD
         $map = static fn(Model $row) => $row->toArray();
+=======
+        $map = static fn (Model $row) => $row->toArray();
+>>>>>>> 2024e2e7 (.)
 
         $rows = $modelClass::get()->map($map);
 
@@ -45,7 +55,11 @@ class ShowUserListCommand extends Command
             $this->newLine();
         } else {
             $this->newLine();
+<<<<<<< HEAD
             $this->warn('⚡ No Tenants [' . $modelClass . ']');
+=======
+            $this->warn('⚡ No Tenants ['.$modelClass.']');
+>>>>>>> 2024e2e7 (.)
             $this->newLine();
         }
     }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Errori Comuni in Volt e Soluzioni
 
 ## VoltDirectiveMissingException
@@ -185,3 +186,21 @@ class LogoutPage
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Best Practices Filament](../filament_best_practices.md)
 - [Routing Best Practices](../routing_best_practices.md) 
+=======
+---
+module: theme
+topic: volts
+canonical: ../../../Themes/docs/shared-components/volt-errors.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/volt-errors.md
+>>>>>>> 2024e2e7 (.)

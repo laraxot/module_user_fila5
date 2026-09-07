@@ -205,4 +205,8 @@ Assicurati che i nomi dei parametri nel database corrispondano a quelli attesi d
 
 Per assistenza tecnica, contattare:
 - Email: support@<nome progetto>.com
+<<<<<<< HEAD
 - Documentazione: https://docs.<nome progetto>.com 
+=======
+- Documentazione: https://docs.<nome progetto>.com
+>>>>>>> 2024e2e7 (.)

@@ -4,19 +4,32 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\RoleResource\Pages;
 
+<<<<<<< HEAD
 use Override;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Modules\User\Filament\Resources\RoleResource;
 use Modules\User\Models\Role;
+=======
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\SelectFilter;
+use Modules\User\Filament\Resources\RoleResource;
+>>>>>>> 2024e2e7 (.)
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListRoles extends XotBaseListRecords
 {
     protected static string $resource = RoleResource::class;
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> 2024e2e7 (.)
     public function getTableColumns(): array
     {
         return [
@@ -28,7 +41,11 @@ class ListRoles extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> 2024e2e7 (.)
     public function getTableFilters(): array
     {
         return [

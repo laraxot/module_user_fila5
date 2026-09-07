@@ -5,14 +5,23 @@ declare(strict_types=1);
 return [
     'fields' => [
         'email' => [
+<<<<<<< HEAD
             'label' => 'Email',
             'placeholder' => 'Enter your email',
             'help' => 'Enter the email address you used to register',
             'description' => 'Email address for login',
+=======
+            'label' => 'Email address',
+            'placeholder' => 'name@example.com',
+            'helper_text' => 'Email used to register for online services',
+            'tooltip' => 'Enter your account email',
+            'description' => 'Email field for authentication',
+>>>>>>> 2024e2e7 (.)
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Enter your password',
+<<<<<<< HEAD
             'help' => 'Enter your account password',
             'description' => 'Password for login',
         ],
@@ -40,4 +49,30 @@ return [
         'forgot_password' => 'Forgot password?',
         'errors_title' => 'Some errors occurred',
     ],
+=======
+            'helper_text' => '',
+            'tooltip' => 'Account password',
+            'description' => 'Password field for authentication',
+        ],
+        'remember' => [
+            'label' => 'Remember me',
+            'placeholder' => '',
+            'helper_text' => 'Keep me signed in on this device',
+            'tooltip' => 'Extended session',
+            'description' => 'Remember login option',
+        ],
+    ],
+    'actions' => [
+        'hidePassword' => [
+            'label' => 'Hide password',
+            'tooltip' => 'Hide password',
+            'icon' => 'hidePassword',
+        ],
+        'showPassword' => [
+            'label' => 'Show password',
+            'tooltip' => 'Show password',
+            'icon' => 'showPassword',
+        ],
+    ],
+>>>>>>> 2024e2e7 (.)
 ];

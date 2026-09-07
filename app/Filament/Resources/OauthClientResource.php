@@ -23,6 +23,7 @@ class OauthClientResource extends XotBaseResource
     protected static ?string $model = Client::class;
 
     /**
+<<<<<<< HEAD
      * Schema del form per la risorsa.
      *
      * @return array<string, Field>
@@ -53,6 +54,8 @@ class OauthClientResource extends XotBaseResource
     }
 
     /**
+=======
+>>>>>>> 2024e2e7 (.)
      * Configure the model query.
      */
     public static function getEloquentQuery(): Builder

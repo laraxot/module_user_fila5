@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\User\Models\User;
 use Modules\User\Models\Team;
 use Modules\User\Models\Profile;
@@ -67,3 +68,12 @@ function createProfile(array $attributes = []): Profile
 {
     return Profile::factory()->create($attributes);
 }
+=======
+/*
+ * Bootstrap Pest — modulo User.
+ * Helper globali: tests/Support/helpers.php (composer autoload-dev files).
+ * Ogni file Pest dichiara uses(\Modules\User\Tests\TestCase::class).
+ */
+
+// Vietato expect()->extend() qui (PHPStan method.internalClass su PestExpectation).
+>>>>>>> 2024e2e7 (.)

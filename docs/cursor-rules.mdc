@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 description:
 globs:
 alwaysApply: false
@@ -34,3 +35,11 @@ if (! $this->hasColumn('state')) {
 - [Linee guida Activitylog](mdc:activitylog.mdc)
 - [Documentazione centrale](mdc:../../../../docs/INDEX.md)
 
+=======
+module: theme
+topic: cursor-rules
+canonical: ../../../Themes/docs/shared-components/cursor-rules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/cursor-rules.md
+>>>>>>> 2024e2e7 (.)

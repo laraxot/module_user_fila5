@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Completa Modulo User - Factory, Seeder e Test
 
 ## 📊 Panoramica Generale
@@ -284,3 +285,21 @@ Il modulo User è il cuore del sistema di autenticazione e gestione utenti di <n
 **Responsabile**: Team Sviluppo <nome progetto>
 **Prossima Revisione**: Gennaio 2025
 
+=======
+---
+module: theme
+topic: module-analysis-complete
+canonical: ../../../Themes/docs/shared-components/module-analysis-complete.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/module-analysis-complete.md
+>>>>>>> 2024e2e7 (.)

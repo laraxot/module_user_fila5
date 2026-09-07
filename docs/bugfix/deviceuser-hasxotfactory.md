@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+=======
+---
+title: "Bugfix: DeviceUser e HasXotFactory"
+type: concept
+tags: [deviceuser, hasxotfactory]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deviceuser-hasxotfactory bugfix: deviceuser e hasxotfactory"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./deviceuser-hasxotfactory-fix.md"
+  - "./git-conflicts-resolution.md"
+  - "./gits-resolution.md"
+  - "./multiple-bugs-resolution.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Bugfix: DeviceUser e HasXotFactory
 
 ## Contesto

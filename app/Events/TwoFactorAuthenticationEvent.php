@@ -21,5 +21,10 @@ abstract class TwoFactorAuthenticationEvent
          * The team member being added.
          */
         public UserContract $userContract,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 2024e2e7 (.)
 }

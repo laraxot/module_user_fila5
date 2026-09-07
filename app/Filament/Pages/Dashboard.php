@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Pages;
 
+<<<<<<< HEAD
 use Modules\User\Filament\Widgets\UsersChartWidget;
 use Modules\User\Filament\Widgets\RecentLoginsWidget;
 use Override;
@@ -20,12 +21,21 @@ use Filament\Pages\Dashboard\Concerns\HasFiltersForm;
 use Filament\Widgets\Widget;
 use Filament\Widgets\WidgetConfiguration;
 use Modules\User\Filament\Widgets;
+=======
+use Filament\Widgets\Widget;
+use Filament\Widgets\WidgetConfiguration;
+use Modules\User\Filament\Widgets\RecentLoginsWidget;
+use Modules\User\Filament\Widgets\UsersChartWidget;
+>>>>>>> 2024e2e7 (.)
 use Modules\Xot\Filament\Pages\XotBaseDashboard;
 
 class Dashboard extends XotBaseDashboard
 {
+<<<<<<< HEAD
     protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-home';
 
+=======
+>>>>>>> 2024e2e7 (.)
     // protected static string $routePath = 'finance';
     // protected static ?string $title = 'Finance dashboard';
     // protected static ?int $navigationSort = 15;
@@ -43,6 +53,7 @@ class Dashboard extends XotBaseDashboard
             RecentLoginsWidget::class,
         ];
     }
+<<<<<<< HEAD
 
     #[Override]
     public function getFiltersFormSchema(): array
@@ -55,4 +66,6 @@ class Dashboard extends XotBaseDashboard
             // ->maxDate(now()),
         ];
     }
+=======
+>>>>>>> 2024e2e7 (.)
 }

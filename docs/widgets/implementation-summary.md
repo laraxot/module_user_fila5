@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+=======
+---
+title: "EditUserWidget Implementation Summary"
+type: concept
+tags: [implementation, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "implementation-summary edituserwidget implementation summary"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./edit-user-widget.md"
+  - "./implementation.md"
+  - "./translation-guidelines.md"
+  - "./translationlines.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # EditUserWidget Implementation Summary
 
 ## Project Status: COMPLETED ✅
@@ -141,13 +160,21 @@ The implementation serves as a reference pattern for future widget development i
 - `Modules/User/docs/widget-translation-rules.md`
 - `Modules/User/docs/widgets/implementation-summary.md` (this file)
 ### Related Documentation
+<<<<<<< HEAD
 - `Modules/User/docs/widgets_structure.md`
+=======
+- `Modules/User/docs/widgets-structure-2.md`
+>>>>>>> 2024e2e7 (.)
 - `Modules/Xot/docs/filament-widgets.md`
 - `Modules/Xot/docs/translations.md`
 - `Modules/User/project_docs/widgets/edit-user-widget.md`
 - `Modules/User/project_docs/widgets/translation-guidelines.md`
 - `Modules/User/project_docs/widget-translation-rules.md`
 - `Modules/User/project_docs/widgets/implementation-summary.md` (this file)
+<<<<<<< HEAD
 - `Modules/User/project_docs/widgets_structure.md`
+=======
+- `Modules/User/project_docs/widgets-structure-2.md`
+>>>>>>> 2024e2e7 (.)
 - `Modules/Xot/project_docs/filament-widgets.md`
 - `Modules/Xot/project_docs/translations.md`

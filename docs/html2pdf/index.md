@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Html2Pdf - Panoramica e Installazione
 
 Questa sezione fornisce una panoramica generale della libreria Html2Pdf, le novità dell'ultima versione, le istruzioni per l'installazione e l'architettura di integrazione nel progetto.
@@ -98,3 +99,18 @@ enum PdfEngineEnum
     case SPATIE;   // spatie/laravel-pdf (alternative)
 }
 ```
+=======
+---
+module: theme
+topic: index
+canonical: ../../../../Themes/docs/shared-components/index.md
+related:
+  - "./advanced.md"
+  - "./laravel.md"
+  - "./security.md"
+  - "./styling.md"
+  - "./usage.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/index.md
+>>>>>>> 2024e2e7 (.)

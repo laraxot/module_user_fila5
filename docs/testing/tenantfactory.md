@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TenantFactory Fix - Reasoning
 
 ## Problem
@@ -66,3 +67,17 @@ $tenant = Tenant::factory()->withName('Test Tenant')->create();
 ## Conclusion
 
 **Fix the factory, not the tests.** The factory is generating incorrect data. The model's `HasSlug` trait should handle slug generation automatically.
+=======
+---
+module: theme
+topic: tenantfactory
+canonical: ../../../../Themes/docs/shared-components/tenantfactory-fix.md
+related:
+  - "./remaining-tenant-failures.md"
+  - "./tenant-test-fixes.md"
+  - "./tenantfactory-fix.md"
+  - "./tenanttest-fixes.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/tenantfactory-fix.md
+>>>>>>> 2024e2e7 (.)

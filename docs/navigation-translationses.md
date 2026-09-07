@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Correzioni Traduzioni Navigation - Modulo User"
+type: concept
+tags: [navigation, translationses]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "navigation-translationses correzioni traduzioni navigation - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Correzioni Traduzioni Navigation - Modulo User
 
 ## Data Intervento
@@ -75,7 +98,11 @@
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Audit Generale Traduzioni Navigation](../../docs/navigation-translations-audit.md)
+=======
+- [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
+>>>>>>> 2024e2e7 (.)
 - [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../<nome progetto>/docs/translation-quality-standards.md)
 - [Documentazione Modulo User](readme.md)

@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Dentist Moderation Approach in User Module"
+type: concept
+tags: [dentist, moderation, approach]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "dentist-moderation-approach dentist moderation approach in user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Dentist Moderation Approach in User Module
 
 ## Overview
@@ -35,7 +58,11 @@ This document outlines the strategy for implementing dentist moderation within t
   {
       protected static ?string $model = User::class;
 
+<<<<<<< HEAD
       public static function getFormSchema(): array
+=======
+      public function getFormSchema(): array
+>>>>>>> 2024e2e7 (.)
       {
           return [
               'moderation_status' => Forms\Components\Select::make('moderation_status')

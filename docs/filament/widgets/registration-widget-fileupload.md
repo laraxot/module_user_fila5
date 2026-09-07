@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RegistrationWidget FileUpload Error Fix
 
 ## Problema Identificato
@@ -143,3 +144,17 @@ Questo pattern può essere riutilizzato in altri widget che:
 **Tipo**: Bug Fix Documentation
 **Priorità**: Critica (blocca registrazione paziente)
 **Status**: ✅ **RISOLTO**
+=======
+---
+module: theme
+topic: registration-widget-fileupload
+canonical: ../../../../../Themes/docs/shared-components/registration-widget-fileupload-fix-Modules.md
+related:
+  - "./dashboard-filters-integration.md"
+  - "./edit-user-widget.md"
+  - "./registration-widget-fileupload-fix.md"
+  - "./registration-widget.md"
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/registration-widget-fileupload-fix-Modules.md
+>>>>>>> 2024e2e7 (.)

@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "User Module Policies Documentation"
+type: concept
+tags: [policies]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "policies user module policies documentation"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # User Module Policies Documentation
 
 ## Overview
@@ -282,7 +305,11 @@ Test policy integration with Filament resources and controllers.
 
 ## Related Documentation
 
+<<<<<<< HEAD
 - [Main Policies Documentation](../../../docs/policies_implementation.md)
+=======
+- [Main Policies Documentation](../../../../docs/policies_implementation.md)
+>>>>>>> 2024e2e7 (.)
 - [User Authentication](./authentication.md)
 - [Permissions and Roles](./permissions.md)
 - [Team Management](./teams.md)

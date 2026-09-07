@@ -26,5 +26,10 @@ class TeamSwitched
          * The team member that was updated.
          */
         public UserContract $userContract,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 2024e2e7 (.)
 }

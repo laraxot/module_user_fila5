@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "🗺️ ROADMAP COMPLETA - Modulo User"
+type: concept
+tags: [roadmap, complete]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "roadmap-complete 🗺️ roadmap completa - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # 🗺️ ROADMAP COMPLETA - Modulo User
 
 ## 📊 Business Logic
@@ -417,7 +440,11 @@ La cartella `docs/` contiene ~300+ file con molti duplicati:
 ---
 
 **Versione**: 1.0.0  
+<<<<<<< HEAD
 **Ultimo Aggiornamento**: 2025-01-01  
+=======
+**
+>>>>>>> 2024e2e7 (.)
 **Maintainer**: User Module Team  
 **Status**: 🚧 In Development (70% completo)  
 **Prossima Revisione**: 2025-02-01

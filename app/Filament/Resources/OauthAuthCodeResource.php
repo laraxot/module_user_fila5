@@ -7,17 +7,26 @@ namespace Modules\User\Filament\Resources;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+=======
+use Filament\Resources\Pages\PageRegistration;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+>>>>>>> 2024e2e7 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ListOauthAuthCodes;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ViewOauthAuthCode;
+<<<<<<< HEAD
 use Modules\User\Filament\Resources\OauthAuthCodeResource\Pages;
+=======
+>>>>>>> 2024e2e7 (.)
 use Modules\User\Models\OauthAuthCode;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -33,6 +42,7 @@ class OauthAuthCodeResource extends XotBaseResource
     protected static ?string $recordTitleAttribute = 'id';
 
     /**
+<<<<<<< HEAD
      * Get the form schema for the resource.
      *
      * @return array<string, Select|TextInput>
@@ -56,10 +66,16 @@ class OauthAuthCodeResource extends XotBaseResource
     }
 
     /**
+=======
+>>>>>>> 2024e2e7 (.)
      * Extend table callback for the resource.
      *
      * @return array<string, mixed>
      */
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> 2024e2e7 (.)
     public static function extendTableCallback(): array
     {
         return [
@@ -86,7 +102,11 @@ class OauthAuthCodeResource extends XotBaseResource
                     ->limit(30)
                     ->tooltip(function (TextColumn $column): ?string {
                         $state = $column->getState();
+<<<<<<< HEAD
                         if (null === $state) {
+=======
+                        if ($state === null) {
+>>>>>>> 2024e2e7 (.)
                             return null;
                         }
                         if (is_array($state)) {

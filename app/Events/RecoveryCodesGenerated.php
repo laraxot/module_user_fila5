@@ -18,5 +18,10 @@ class RecoveryCodesGenerated
      */
     public function __construct(
         public UserContract $userContract,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 2024e2e7 (.)
 }

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
@@ -11,12 +12,15 @@ use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Resources\OauthAccessTokenResource;
+=======
+>>>>>>> 2024e2e7 (.)
 use Modules\User\Filament\Resources\OauthRefreshTokenResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewOauthRefreshToken extends XotBaseViewRecord
 {
     protected static string $resource = OauthRefreshTokenResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, Component>
@@ -66,4 +70,6 @@ class ViewOauthRefreshToken extends XotBaseViewRecord
                 ])->columns(1),
         ];
     }
+=======
+>>>>>>> 2024e2e7 (.)
 }

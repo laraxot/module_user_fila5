@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> 2024e2e7 (.)
 return [
     'actions' => [
         'delete' => [
@@ -26,6 +31,7 @@ return [
     'fields' => [
         'password' => [
             'label' => 'password',
+<<<<<<< HEAD
         ],
         'email' => [
             'label' => 'email',
@@ -34,4 +40,36 @@ return [
             'label' => 'name',
         ],
     ],
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'email' => [
+            'label' => 'email',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'name' => [
+            'label' => 'name',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'navigation' => [
+        'name' => 'Edit User',
+        'plural' => 'Edit User',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Edit User',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Edit User',
+    'plural_label' => 'Edit User (Plurale)',
+>>>>>>> 2024e2e7 (.)
 ];

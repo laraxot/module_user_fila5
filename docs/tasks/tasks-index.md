@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Indice task - Modulo User"
+type: concept
+tags: [tasks, index]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "tasks-index indice task - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./001-user-management-system.md"
+  - "./audit-dipendenze-user.md"
+  - "./auditipendenze-user.md"
+  - "./aumentare-copertura-test-user.md"
+  - "./fix-doc-merge-markers.md"
+  - "./fixoc-merge-kers.md"
+  - "./query-optimization-user.md"
+  - "./spostamento-widget-violante.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Indice task - Modulo User
 
 Lista dei task del modulo con link ai file .md separati. Ogni task è un file nella cartella `tasks/`.
@@ -25,4 +48,8 @@ Lista dei task del modulo con link ai file .md separati. Ogni task è un file ne
 
 - [Roadmap User](../roadmap.md)
 - [README User](../readme.md)
+<<<<<<< HEAD
 - [Scopo moduli progetto](../../../../docs/moduli-scopo.md)
+=======
+- [Scopo moduli progetto](../../../../../docs/moduli-scopo.md)
+>>>>>>> 2024e2e7 (.)

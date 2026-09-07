@@ -7,6 +7,7 @@ namespace Modules\User\Tests\Traits;
 use Modules\User\Models\User;
 
 /**
+<<<<<<< HEAD
  * Trait HasUserTestCase.
  *
  * Provides type-safe $user property for Pest test cases.
@@ -36,5 +37,11 @@ trait HasUserTestCase
      *
      * Typically initialized in beforeEach() with User::factory()->create()
      */
+=======
+ * Type-safe $user property for Pest / PHPUnit test cases.
+ */
+trait HasUserTestCase
+{
+>>>>>>> 2024e2e7 (.)
     protected User $user;
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Internal Analysis: Approaches to ViewClient Infolist Implementation
 
 ## 🥊 Philosophical Battle: Two Approaches Clash
@@ -85,3 +86,21 @@ The `XotBaseViewRecord` class defines:
 - This pattern ensures consistent infolist implementation across all view pages
 
 This approach ensures that the ViewClient page follows the fundamental Laraxot principle: **"Always extend XotBase* classes, never extend Filament classes directly"** and the critical rule: **"getInfolistSchema must return array with string keys"**.
+=======
+---
+module: theme
+topic: viewclient-infolist-implementation
+canonical: ../../../Themes/docs/shared-components/viewclient-infolist-implementation-philosophy.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/viewclient-infolist-implementation-philosophy.md
+>>>>>>> 2024e2e7 (.)

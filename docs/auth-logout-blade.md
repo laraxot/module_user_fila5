@@ -1,12 +1,47 @@
+<<<<<<< HEAD
+=======
+---
+title: "Implementazione Corretta di logout.blade.php"
+type: concept
+tags: [auth, logout, blade]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "auth-logout-blade implementazione corretta di logout.blade.php"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
 - [Documentazione centrale](../../../docs/README.md)
 - [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./README.md)
+<<<<<<< HEAD
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./LOGOUT_PAGE_FIX.md)
+=======
+- [Convenzioni Path](./path-conventions.md)
+- [Struttura moduli](../../../docs/architecture/modules-structure.md)
+- [Logout Page Fix](./logout-page-fix.md)
+- [Documentazione centrale](../../../../docs/readme.md)
+- [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
+- [README modulo User](./readme.md)
+- [Convenzioni Path](./path-conventions-2.md)
+- [Struttura moduli](../../../../docs/architecture/modules-structure.md)
+- [Logout Page Fix](./logout-page-fix-2.md)
+>>>>>>> 2024e2e7 (.)
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:
@@ -100,4 +135,8 @@ laravel/Themes/One/resources/views/pages/auth/logout.blade.php
 
 - Il file `logout.blade.php` è una pagina Folio e non richiede configurazioni aggiuntive in `routes/web.php`.
 - La pagina è accessibile all'URL `/{locale}/auth/logout`.
+<<<<<<< HEAD
 - Per maggiori informazioni sulla gestione dell'autenticazione, consultare la documentazione Laravel ufficiale.
+=======
+- Per maggiori informazioni sulla gestione dell'autenticazione, consultare la documentazione Laravel ufficiale.
+>>>>>>> 2024e2e7 (.)

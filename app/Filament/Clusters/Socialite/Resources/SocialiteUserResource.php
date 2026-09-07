@@ -24,6 +24,7 @@ class SocialiteUserResource extends XotBaseResource
     protected static ?string $model = SocialiteUser::class;
 
     /**
+<<<<<<< HEAD
      * Get the form schema for the resource.
      *
      * @return array<string, Select|TextInput>
@@ -63,6 +64,8 @@ class SocialiteUserResource extends XotBaseResource
     }
 
     /**
+=======
+>>>>>>> 2024e2e7 (.)
      * Get the pages available for the resource.
      *
      * @return array<string, PageRegistration>

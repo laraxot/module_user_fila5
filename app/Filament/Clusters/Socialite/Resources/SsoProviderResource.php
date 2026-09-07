@@ -15,6 +15,10 @@ use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Resources\Pages\PageRegistration;
+<<<<<<< HEAD
+=======
+use Filament\Resources\RelationManagers\RelationManager;
+>>>>>>> 2024e2e7 (.)
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Modules\User\Filament\Clusters\Socialite;
@@ -30,6 +34,7 @@ class SsoProviderResource extends XotBaseResource
     protected static ?string $model = SsoProvider::class;
 
     /**
+<<<<<<< HEAD
      * @return array<string, Field>
      */
     #[\Override]
@@ -72,6 +77,11 @@ class SsoProviderResource extends XotBaseResource
      * @return array<string, TextColumn|IconColumn>
      */
     public static function getTableColumns(): array
+=======
+     * @return array<string, TextColumn|IconColumn>
+     */
+    public function getTableColumns(): array
+>>>>>>> 2024e2e7 (.)
     {
         return [
             'name' => TextColumn::make('name')
@@ -119,7 +129,11 @@ class SsoProviderResource extends XotBaseResource
     }
 
     /**
+<<<<<<< HEAD
      * @return array<string, class-string<\Filament\Resources\RelationManagers\RelationManager>>
+=======
+     * @return array<string, class-string<RelationManager>>
+>>>>>>> 2024e2e7 (.)
      */
     #[\Override]
     public static function getRelations(): array

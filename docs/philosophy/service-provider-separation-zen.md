@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lo Zen della Separazione dei ServiceProviders: Filosofia della Responsabilità Unica
 
 ## La Storia
@@ -424,3 +425,14 @@ class PassportServiceProvider extends ServiceProvider
 **Principio:** Single Responsibility Principle (SOLID)
 **Pattern:** Modular Monolith con ServiceProvider separation
 **Filosofia:** "Un provider, una missione. module.json è il maestro che coordina."
+=======
+---
+module: theme
+topic: service-provider-separation-zen
+canonical: ../../../../Themes/docs/shared-components/service-provider-aration-zen.md
+related:
+  - "./service-provider-aration-zen.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/service-provider-aration-zen.md
+>>>>>>> 2024e2e7 (.)

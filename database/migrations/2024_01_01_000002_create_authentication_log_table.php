@@ -27,7 +27,11 @@ return new class extends XotBaseMigration {
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+<<<<<<< HEAD
             // if (! $this->hasColumn('email')) {
+=======
+            // if (! $this->hasColumn('email'))
+>>>>>>> 2024e2e7 (.)
             //    $table->string('email')->nullable();
             // }
             $this->updateTimestamps($table);

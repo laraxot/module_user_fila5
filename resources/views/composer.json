@@ -16,7 +16,12 @@
         }
     },
     "require": {
+<<<<<<< HEAD
         "filament/filament": "^3.4",
         "filament/tables": "^3.4"
+=======
+        "filament/filament": "*",
+        "filament/tables": "*"
+>>>>>>> 2024e2e7 (.)
     }
 }

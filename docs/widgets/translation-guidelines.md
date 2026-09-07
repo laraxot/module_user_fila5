@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+=======
+---
+title: "Widget Translation Guidelines"
+type: guide
+tags: [translation, guidelines]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "translation-guidelines widget translation guidelines"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./edit-user-widget.md"
+  - "./implementation-summary.md"
+  - "./implementation.md"
+  - "./translationlines.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Widget Translation Guidelines
 
 ## Overview
@@ -92,11 +111,24 @@ return [
         'required' => 'This field is required',
 ],
 ## Widget Implementation Rules
+<<<<<<< HEAD
 ### Never Use Direct Labels
 // ❌ WRONG - Never use ->label() in widgets
 TextInput::make('name')->label('Name')
 // ✅ CORRECT - Let LangServiceProvider handle translations
 TextInput::make('name')
+=======
+### Never Use ->label(), ->placeholder(), ->helperText()
+
+**Regola critica**: Mai usare `->label()`, `->placeholder()` o `->helperText()` nei componenti Filament. Il LangServiceProvider risolve automaticamente da `modulo::risorsa.fields.campo.*` (es. `user::login_widget.fields.email.label`).
+
+```php
+// ❌ WRONG - Never use ->label(), ->placeholder(), ->helperText()
+TextInput::make('name')->label('Name')->placeholder('Enter name')
+// ✅ CORRECT - Let LangServiceProvider handle translations
+TextInput::make('name')
+```
+>>>>>>> 2024e2e7 (.)
 ### Translation Key Usage
 // ✅ CORRECT - Use translation keys for options
 Select::make('lang')
@@ -145,7 +177,11 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 3. Test changes across all supported locales
 4. Document any breaking changes
 ## Related Documentation
+<<<<<<< HEAD
 - [User Module Widget Structure](../widgets_structure.md)
+=======
+- [User Module Widget Structure](../widgets-structure-2.md)
+>>>>>>> 2024e2e7 (.)
 - [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 - [Translation System Overview](../../xot/docs/translations.md)
 - [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)

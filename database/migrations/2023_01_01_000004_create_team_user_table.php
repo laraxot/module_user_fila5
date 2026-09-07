@@ -5,7 +5,12 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< HEAD
 return new class extends XotBaseMigration {
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> 2024e2e7 (.)
     /**
      * Run the migrations.
      */
@@ -25,10 +30,14 @@ return new class extends XotBaseMigration {
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+<<<<<<< HEAD
             $this->updateTimestamps(
                 table: $table,
                 hasSoftDeletes: true,
             );
+=======
+            $this->updateTimestamps(table: $table, hasSoftDeletes: true);
+>>>>>>> 2024e2e7 (.)
 
             // $this->updateUser($table);
         });

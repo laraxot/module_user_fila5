@@ -32,11 +32,21 @@ class SuperAdmin extends Component
 
     public function render(): View
     {
+<<<<<<< HEAD
         $view = 'user::livewire.profile.super-admin';
         $view_params = [
             'view' => $view,
         ];
 
         return view($view, $view_params);
+=======
+        /** @var view-string $viewName */
+        $viewName = 'user::livewire.profile.super-admin';
+        $view_params = [
+            'view' => $viewName,
+        ];
+
+        return view($viewName, $view_params);
+>>>>>>> 2024e2e7 (.)
     }
 }

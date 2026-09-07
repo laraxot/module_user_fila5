@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Module - Quality Status (November 2025)
 
 ## 🎯 Overview
@@ -160,3 +161,21 @@ After fixes:
 *PHPStan: IMPROVED (13 → ~5 errors)*
 *Status: IN PROGRESS*
 *Priority: CRITICAL*
+=======
+---
+module: theme
+topic: quality-status
+canonical: ../../../Themes/docs/shared-components/quality-status.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/quality-status.md
+>>>>>>> 2024e2e7 (.)

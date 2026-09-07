@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+=======
+---
+title: "Architettura Modulo User"
+type: concept
+tags: [architecture]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "architecture architettura modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+---
+
+>>>>>>> 2024e2e7 (.)
 # Architettura Modulo User
 
 ## 🏗️ Panoramica Architetturale
@@ -288,12 +303,21 @@ return [
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [Best Practices Sistema](../../../docs/core/best-practices.md)
 - [Convenzioni Sistema](../../../docs/core/conventions.md)
 - [Template Modulo](../../../docs/templates/module-template.md)
+=======
+- [Best Practices Sistema](../../../../docs/core/best-practices.md)
+- [Convenzioni Sistema](../../../../docs/core/conventions.md)
+- [Template Modulo](../../../../docs/templates/module-template.md)
+>>>>>>> 2024e2e7 (.)
 - [PHPStan Guide](../development/phpstan-guide.md)
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento:** Gennaio 2025  
+=======
+>>>>>>> 2024e2e7 (.)
 **Versione:** 2.0 - Consolidata DRY + KISS

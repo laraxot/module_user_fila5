@@ -5,10 +5,14 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 // //use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Modules\Xot\Actions\Factory\GetFactoryAction;
+=======
+// //use Laravel\Scout\Searchable;
+>>>>>>> 2024e2e7 (.)
 use Modules\Xot\Models\XotBaseUuidModel;
 use Modules\Xot\Traits\Updater;
 
@@ -17,16 +21,24 @@ use Modules\Xot\Traits\Updater;
  */
 abstract class BaseUuidModel extends XotBaseUuidModel
 {
+<<<<<<< HEAD
     // use Searchable;
     // //use Cachable;
     use HasFactory;
     use HasUuids;
+=======
+    use HasUuids;
+
+    // use Searchable;
+    // //use Cachable;
+>>>>>>> 2024e2e7 (.)
     use Updater;
 
     /**
      * Indicates whether attributes are snake cased on arrays.
      *
      * @see https://laravel-news.com/6-eloquent-secrets
+<<<<<<< HEAD
      *
      * @var bool
      */
@@ -48,6 +60,21 @@ abstract class BaseUuidModel extends XotBaseUuidModel
     protected $perPage = 30;
 
     /** @var string */
+=======
+     */
+    public static $snakeAttributes = true;
+
+    public $incrementing = false;
+
+    public $timestamps = true;
+
+    protected $keyType = 'string';
+
+    protected $primaryKey = 'id';
+
+    protected $perPage = 30;
+
+>>>>>>> 2024e2e7 (.)
     protected $connection = 'user';
 
     /** @var list<string> */
@@ -58,6 +85,7 @@ abstract class BaseUuidModel extends XotBaseUuidModel
         // 'password'
     ];
 
+<<<<<<< HEAD
     /**
      * Create a new factory instance for the model.
      *
@@ -69,6 +97,8 @@ abstract class BaseUuidModel extends XotBaseUuidModel
         return app(GetFactoryAction::class)->execute(static::class);
     }
 
+=======
+>>>>>>> 2024e2e7 (.)
     /** @return array<string, string> */
     protected function casts(): array
     {

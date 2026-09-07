@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Regole per la Verifica dei Componenti Blade"
+type: rule
+tags: [component, verification, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "component-verification-rules regole per la verifica dei componenti blade"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./auth-components-best-practices.md"
+  - "./auth-widget-rules.md"
+  - "./auth-widget.md"
+  - "./case-sensitivity-rules.md"
+  - "./case-sensitivity.md"
+  - "./component-verification.md"
+  - "./dependency-rules.md"
+  - "./dependency.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Regole per la Verifica dei Componenti Blade
 
 ## ERRORE CRITICO DA NON RIPETERE MAI

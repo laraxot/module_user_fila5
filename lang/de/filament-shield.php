@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2024e2e7 (.)
 return [
     'column.guard_name' => 'Guard-Name',
     'column.name' => 'Name',
@@ -12,7 +15,11 @@ return [
     'field.guard_name' => 'Guard-Name',
     'field.name' => 'Name',
     'field.permissions' => 'Berechtigungen',
+<<<<<<< HEAD
     'field.select_all.message' => 'Aktivierung aller Berechtigungen, die derzeit für diese Rolle <span class=\"text-primary font-medium\">aktiviert</span> sind',
+=======
+    'field.select_all.message' => 'Aktivierung aller Berechtigungen, die derzeit für diese Rolle <span class=\\"text-primary font-medium\\">aktiviert</span> sind',
+>>>>>>> 2024e2e7 (.)
     'field.select_all.name' => 'Alle auswählen',
     'nav.group' => 'Filament Shield',
     'nav.role.icon' => 'heroicon-o-shield-check',
@@ -37,4 +44,20 @@ return [
         'restore' => 'Wiederherstellen',
         'restore_any' => 'Alle wiederherstellen',
     ],
+<<<<<<< HEAD
+=======
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+    'actions' => [
+    ],
+>>>>>>> 2024e2e7 (.)
 ];

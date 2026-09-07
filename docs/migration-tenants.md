@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "🔧 Migration Fix: create_tenants_table"
+type: concept
+tags: [migration, tenants]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration-tenants 🔧 migration fix: create_tenants_table"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # 🔧 Migration Fix: create_tenants_table
 
 **File**: `database/migrations/2023_01_01_000008_create_tenants_table.php`
@@ -204,8 +227,13 @@ done
 
 ### Root Documentation
 
+<<<<<<< HEAD
 - [Database Migrations](../../../../docs/database-migrations.md)
 - [Laraxot Philosophy](../../../../docs/architettura_filosofia_religione_politica_zen.md)
+=======
+- [Database Migrations](../../../../../docs/database-migrations.md)
+- [Laraxot Philosophy](../../../../../docs/architettura_filosofia_religione_politica_zen.md)
+>>>>>>> 2024e2e7 (.)
 
 ### This Analysis
 

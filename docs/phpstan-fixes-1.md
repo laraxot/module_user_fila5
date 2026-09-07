@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzioni PHPStan Livello 7 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo User e le relative soluzioni implementate.
@@ -48,3 +49,21 @@ Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` ut
 Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` utilizzando il namespace completo `\Illuminate\Database\Eloquent\Builder`.
 
 ---
+=======
+---
+module: theme
+topic: phpstan-fixes-1
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-1-Modules.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-1-Modules.md
+>>>>>>> 2024e2e7 (.)

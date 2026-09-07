@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bug Fix: ParseError - Metodi Orfani Fuori dalla Classe
 
 ## Data
@@ -142,3 +143,20 @@ Questo bug fix ha permesso di completare il miglioramento della qualità del cod
 - Transazioni database
 - Notifiche utente
 - Verifica email
+=======
+---
+module: theme
+topic: parse-error-orphan-methods
+canonical: ../../../../Themes/docs/shared-components/parse-error-orphan-methods.md
+related:
+  - "./make-filament-user-crash-loop.md"
+  - "./parse-error-orphan-methods-.md"
+  - "./parse-error-orphan-methods-1-1.md"
+  - "./parse-error-orphan-methods-1.md"
+  - "./parse-error-orphan-methods-2.md"
+  - "./parse-error-orphan-methods-3.md"
+  - "./parse-orphan-methods.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/parse-error-orphan-methods.md
+>>>>>>> 2024e2e7 (.)

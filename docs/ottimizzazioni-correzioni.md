@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Module - Ottimizzazioni e Correzioni
 
 ## Panoramica
@@ -663,3 +664,21 @@ class UserManagementTest extends TestCase
 Il modulo User è il fondamento di sicurezza dell'applicazione. I file test rimossi rappresentano un rischio significativo che deve essere affrontato immediatamente. La rimozione di LanguageEnum potrebbe indicare refactoring in corso che richiede verifica e possibile ripristino.
 
 **Priorità assoluta:** Ripristinare test coverage e verificare integrità delle funzionalità di autenticazione/autorizzazione.
+=======
+---
+module: theme
+topic: ottimizzazioni-correzioni
+canonical: ../../../Themes/docs/shared-components/ottimizzazioni-correzioni.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-correzioni.md
+>>>>>>> 2024e2e7 (.)

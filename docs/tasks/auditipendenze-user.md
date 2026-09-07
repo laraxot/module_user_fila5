@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Task: Audit Completo Dipendenze User
 
 **Modulo**: User  
@@ -26,3 +27,21 @@ Task spostamento widget violante completato.
 - [Roadmap User](../roadmap.md)
 - [Indice task User](tasks-index.md)
 - [ARCHITECTURAL_VIOLATION_FIX_PLAN](../../cms/docs/architectural_violation_fix_plan.md)
+=======
+---
+module: theme
+topic: auditipendenze-user
+canonical: ../../../../Themes/docs/shared-components/audit-dipendenze-user.md
+related:
+  - "./001-user-management-system.md"
+  - "./audit-dipendenze-user.md"
+  - "./aumentare-copertura-test-user.md"
+  - "./fix-doc-merge-markers.md"
+  - "./fixoc-merge-kers.md"
+  - "./query-optimization-user.md"
+  - "./spostamento-widget-violante.md"
+  - "./tasks-index.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/audit-dipendenze-user.md
+>>>>>>> 2024e2e7 (.)

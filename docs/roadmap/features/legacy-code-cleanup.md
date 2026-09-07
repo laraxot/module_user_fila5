@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+=======
+---
+title: "Legacy Code Cleanup"
+type: concept
+tags: [legacy, code, cleanup]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "legacy-code-cleanup legacy code cleanup"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./audit-logging.md"
+  - "./autenticazione.md"
+  - "./autorizzazione.md"
+  - "./gestione-teams.md"
+  - "./gestione-utenti.md"
+  - "./user-analytics.md"
+  - "./user-traits.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Legacy Code Cleanup
 
 ## Overview
@@ -56,7 +78,11 @@ Clean up and modernize the User module codebase by removing legacy code and upda
    - Run full test suite
    - Performance testing
 ## Links
+<<<<<<< HEAD
 - [Back to Roadmap](../../docs/roadmap.md)
+=======
+- [Back to Roadmap](../../../docs/roadmap.md)
+>>>>>>> 2024e2e7 (.)
 - [Back to Roadmap](../../project_docs/roadmap.md)
 - Related: [Documentation Enhancement](./documentation-enhancement.md)
 - Related: [PHPStan Level 7 Compliance](./phpstan-level7-compliance.md)

@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "BaseUser Refactoring - Completato"
+type: concept
+tags: [baseuser, refactoring, completed]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "baseuser-refactoring-completed- baseuser refactoring - completato"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # BaseUser Refactoring - Completato
 
 **Data**: 15 Ottobre 2025
@@ -233,7 +256,11 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 
 ### Analisi Pre-Refactoring
 - [DRY Violation Analysis](./baseuser-dry-violation-analysis.md) - Analisi completa del problema
+<<<<<<< HEAD
 - [Refactoring Plan](../../docs/baseuser-dry-violation-2025-10-15.md) - Piano esecutivo
+=======
+- [Refactoring Plan](../../../docs/baseuser-dry-violation-2025-10-15.md) - Piano esecutivo
+>>>>>>> 2024e2e7 (.)
 
 ### Modulo User
 - [BaseUser Model](./models/baseuser.md)
@@ -241,8 +268,13 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 - [User Module README](./readme.md)
 
 ### Root Progetto
+<<<<<<< HEAD
 - [Code Quality](../../docs/code-quality-analysis.md)
 - [DRY Violations](../../docs/dry-violations-analysis.md)
+=======
+- [Code Quality](../../../docs/code-quality-analysis.md)
+- [DRY Violations](../../../docs/dry-violations-analysis.md)
+>>>>>>> 2024e2e7 (.)
 
 ### Spatie Documentation
 - [Laravel Permission](https://spatie.be/docs/laravel-permission/v6/introduction)

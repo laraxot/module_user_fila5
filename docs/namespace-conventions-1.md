@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Convenzioni di Namespace nel Modulo User
 
 ## Principi Fondamentali
@@ -195,3 +196,21 @@ Se l'override del tema non funziona:
 
 *Documento creato: Dicembre 2024*
 *Ultimo aggiornamento: Dicembre 2024*
+=======
+---
+module: theme
+topic: namespace-conventions-1
+canonical: ../../../Themes/docs/shared-components/namespace-conventions-1.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/namespace-conventions-1.md
+>>>>>>> 2024e2e7 (.)

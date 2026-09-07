@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
@@ -16,10 +17,15 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
+=======
+use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+>>>>>>> 2024e2e7 (.)
 
 class ViewOauthAuthCode extends XotBaseViewRecord
 {
     protected static string $resource = OauthAuthCodeResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, Component>
@@ -101,4 +107,6 @@ class ViewOauthAuthCode extends XotBaseViewRecord
                 ])->columns(1),
         ];
     }
+=======
+>>>>>>> 2024e2e7 (.)
 }

@@ -1,3 +1,24 @@
+<<<<<<< HEAD
+=======
+---
+title: "Gerarchia delle Classi Base - Modulo User"
+type: concept
+tags: [base, classes, hierarchy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "base-classes-hierarchy gerarchia delle classi base - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./baseuser.md"
+  - "./readme.md"
+  - "./team.md"
+  - "./teampermission.md"
+  - "./xotbaivot-migration.md"
+  - "./xotbasepivot-migration.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Gerarchia delle Classi Base - Modulo User
 
 **Data:** 15 Ottobre 2025  
@@ -370,7 +391,10 @@ Quando crei un nuovo modello nel modulo User:
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento:** 15 Ottobre 2025  
+=======
+>>>>>>> 2024e2e7 (.)
 **Autore:** AI Assistant + Team Laraxot  
 **Versione:** 2.0 - Correzione gerarchia modelli  
 **Status:** ✅ Production Ready

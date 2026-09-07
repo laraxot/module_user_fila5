@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+=======
+---
+title: "Widget Translation Guidelines"
+type: concept
+tags: [translationlines]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "translationlines widget translation guidelines"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./edit-user-widget.md"
+  - "./implementation-summary.md"
+  - "./implementation.md"
+  - "./translation-guidelines.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Widget Translation Guidelines
 
 ## Overview
@@ -145,7 +164,11 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 3. Test changes across all supported locales
 4. Document any breaking changes
 ## Related Documentation
+<<<<<<< HEAD
 - [User Module Widget Structure](../widgets_structure.md)
+=======
+- [User Module Widget Structure](../widgets-structure-2.md)
+>>>>>>> 2024e2e7 (.)
 - [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 - [Translation System Overview](../../xot/docs/translations.md)
 - [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Architectural Rules & Guidelines
 
 This module adheres to the **Laraxot Architecture** and **Super Cow Methodology**.
@@ -13,3 +14,21 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 2.  **Zero Errors**: PHPStan Level 10 compliance is mandatory.
 3.  **XotBase**: Always extend `XotBase` classes, never Filament classes directly.
 4.  **Translations**: Use `LangServiceProvider` for automatic label resolution.
+=======
+---
+module: theme
+topic: architecture
+canonical: ../../../Themes/docs/shared-components/architecture-rules-Modules.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/architecture-rules-Modules.md
+>>>>>>> 2024e2e7 (.)

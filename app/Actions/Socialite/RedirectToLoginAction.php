@@ -18,28 +18,48 @@ class RedirectToLoginAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     /**
      * Execute the action.
      */
+=======
+>>>>>>> 2024e2e7 (.)
     public function execute(string $message): RedirectResponse
     {
         // Assert::string($route_name = config('filament-socialite.login_page_route', 'filament.admin.auth.login'));
         // Route [filament.auth.login] not defined.
+<<<<<<< HEAD
         $route_name = 'login';
         Assert::string($message = __('user::' . $message));
         Notification::make()
             ->title($message)
+=======
+        $routeName = 'login';
+        $translated = __('user::'.$message);
+        if (is_array($translated)) {
+            $translated = $translated['text'] ?? $message;
+        }
+        Assert::string($translated);
+        Notification::make()
+            ->title($translated)
+>>>>>>> 2024e2e7 (.)
             ->danger()
             ->persistent()
             ->send();
 
         // Redirect back to the login route with an error message attached
         return redirect()
+<<<<<<< HEAD
             ->route($route_name)
             ->withErrors([
                 'email' => [
                     __($message),
                 ],
+=======
+            ->route($routeName)
+            ->withErrors([
+                'email' => [$translated],
+>>>>>>> 2024e2e7 (.)
             ]);
     }
 }

@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+=======
+---
+title: "Incompatibilità tra metodi statici e di istanza in Filament"
+type: concept
+tags: [static, instance, method, incompatibility]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "static-instance-method-incompatibility incompatibilità tra metodi statici e di istanza in filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+---
+
+>>>>>>> 2024e2e7 (.)
 # Incompatibilità tra metodi statici e di istanza in Filament
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo User.
@@ -24,7 +39,11 @@ public static function getTableColumns(): array
 // CORRETTO ✅
 public function getTableColumns(): array
 ### 2. Per Widget
+<<<<<<< HEAD
 public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> 2024e2e7 (.)
 public function getFormSchema(): array
 ### 3. Per tutte le classi
 Rimuovere le chiamate a `->label()` per utilizzare il sistema di traduzione automatica:

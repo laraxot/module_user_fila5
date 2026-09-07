@@ -4,23 +4,30 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Forms\Components\DatePicker;
+=======
+>>>>>>> 2024e2e7 (.)
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Support\Components\Component;
+<<<<<<< HEAD
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
+=======
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> 2024e2e7 (.)
 use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ListAuthenticationLogs;
 use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ViewAuthenticationLog;
 use Modules\User\Models\AuthenticationLog;
@@ -31,6 +38,7 @@ class AuthenticationLogResource extends XotBaseResource
 {
     protected static ?string $model = AuthenticationLog::class;
 
+<<<<<<< HEAD
     public static function table(Table $table): Table
     {
         return $table
@@ -160,6 +168,8 @@ class AuthenticationLogResource extends XotBaseResource
             ->defaultSort('login_at', 'desc');
     }
 
+=======
+>>>>>>> 2024e2e7 (.)
     public static function getPages(): array
     {
         return [
@@ -168,6 +178,7 @@ class AuthenticationLogResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     /**
      * @return array<string, Component>
      */
@@ -228,6 +239,8 @@ class AuthenticationLogResource extends XotBaseResource
         ];
     }
 
+=======
+>>>>>>> 2024e2e7 (.)
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['authenticatable']);

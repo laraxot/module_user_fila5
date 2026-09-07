@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Analisi Corretta del Trait HasTeams - Filosofia Laraxot"
+type: concept
+tags: [traits, hasteams, analysis, corrected]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "traits-hasteams-analysis-corrected analisi corretta del trait hasteams - filosofia laraxot"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Analisi Corretta del Trait HasTeams - Filosofia Laraxot
 
 ## Comprensione della Filosofia `belongsToManyX`
@@ -525,7 +548,13 @@ trait HasTeams
 
 ## Backlink e Riferimenti
 
+<<<<<<< HEAD
 - [docs/USER_MODULE.md](../../../project_docs/user_module.md)
 - [Modules/User/project_docs/traits.md](traits.md)
 - [docs/phpstan_fixes.md](../../../project_docs/phpstan_fixes.md)
+=======
+- [docs/USER_MODULE.md](../../../../docs/project/user_module.md)
+- [Modules/User/project_docs/traits.md](traits.md)
+- [docs/phpstan-fixes-8.md](../../../../docs/project/phpstan-fixes-8.md)
+>>>>>>> 2024e2e7 (.)
 - [Modules/Xot/project_docs/RELATION_X.md](../../xot/project_docs/relation_x.md)

@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2024e2e7 (.)
 return [
     'name' => 'Login',
     'fields' => [
@@ -10,15 +13,30 @@ return [
             'label' => 'Email',
             'placeholder' => 'Enter your email',
             'helper_text' => 'Email address to login',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Enter your password',
             'helper_text' => 'Login password',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'remember' => [
             'label' => 'Remember me',
             'helper_text' => 'Keep session active',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
     ],
     'actions' => [
@@ -45,4 +63,16 @@ return [
             'too_many_attempts' => 'Too many attempts, please try again later',
         ],
     ],
+<<<<<<< HEAD
+=======
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> 2024e2e7 (.)
 ];

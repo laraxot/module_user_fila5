@@ -8,20 +8,28 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\Role;
 
 /**
+<<<<<<< HEAD
  * Factory per il modello Role del modulo User.
  *
+=======
+>>>>>>> 2024e2e7 (.)
  * @extends Factory<Role>
  */
 class RoleFactory extends Factory
 {
     /**
+<<<<<<< HEAD
      * Il nome del modello corrispondente alla factory.
+=======
+     * The name of the factory's corresponding model.
+>>>>>>> 2024e2e7 (.)
      *
      * @var class-string<Role>
      */
     protected $model = Role::class;
 
     /**
+<<<<<<< HEAD
      * Definisce lo stato di default del modello.
      *
      * @return array<string, mixed>
@@ -98,4 +106,21 @@ class RoleFactory extends Factory
             'guard_name' => $guard,
         ]);
     }
+=======
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    /**
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'name' => fake()->unique()->word(),
+            'guard_name' => 'web',
+            'team_id' => null,
+        ];
+    }
+>>>>>>> 2024e2e7 (.)
 }

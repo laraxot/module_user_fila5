@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
+<<<<<<< HEAD
 use Override;
 use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Model;
@@ -35,6 +36,33 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @method static AuthenticationLogFactory factory($count = null, $state = [])
+=======
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Carbon;
+use Modules\Xot\Contracts\ProfileContract;
+
+/**
+ * @property int                       $id
+ * @property string                    $authenticatable_type
+ * @property int                       $authenticatable_id
+ * @property string|null               $ip_address
+ * @property string|null               $user_agent
+ * @property Carbon|null               $login_at
+ * @property bool                      $login_successful
+ * @property Carbon|null               $logout_at
+ * @property bool                      $cleared_by_user
+ * @property array<string, mixed>|null $location
+ * @property Carbon|null               $created_at
+ * @property Carbon|null               $updated_at
+ * @property string|null               $updated_by
+ * @property string|null               $created_by
+ * @property Model|\Eloquent           $authenticatable
+ * @property ProfileContract|null      $creator
+ * @property ProfileContract|null      $updater
+ *
+>>>>>>> 2024e2e7 (.)
  * @method static Builder|AuthenticationLog newModelQuery()
  * @method static Builder|AuthenticationLog newQuery()
  * @method static Builder|AuthenticationLog query()
@@ -52,7 +80,15 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
  * @method static Builder|AuthenticationLog whereUpdatedAt($value)
  * @method static Builder|AuthenticationLog whereUpdatedBy($value)
  * @method static Builder|AuthenticationLog whereUserAgent($value)
+<<<<<<< HEAD
  * @mixin IdeHelperAuthenticationLog
+=======
+ *
+ * @property ProfileContract|null $deleter
+ *
+ * @method static \Modules\User\Database\Factories\AuthenticationLogFactory factory($count = null, $state = [])
+ *
+>>>>>>> 2024e2e7 (.)
  * @mixin \Eloquent
  */
 class AuthenticationLog extends BaseModel
@@ -71,6 +107,7 @@ class AuthenticationLog extends BaseModel
         'location',
     ];
 
+<<<<<<< HEAD
     /** @return array<string, string> */
     #[Override]
     protected function casts(): array
@@ -84,6 +121,8 @@ class AuthenticationLog extends BaseModel
         ];
     }
 
+=======
+>>>>>>> 2024e2e7 (.)
     // public function __construct(array $attributes = [])
     // {
     // if (! isset($this->connection)) {
@@ -98,8 +137,30 @@ class AuthenticationLog extends BaseModel
     //    return config('authentication-log.table_name', parent::getTable());
     // }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return MorphTo<Model, $this>
+     */
+>>>>>>> 2024e2e7 (.)
     public function authenticatable(): MorphTo
     {
         return $this->morphTo();
     }
+<<<<<<< HEAD
+=======
+
+    /** @return array<string, string> */
+    #[\Override]
+    protected function casts(): array
+    {
+        return [
+            'cleared_by_user' => 'boolean',
+            'location' => 'array',
+            'login_successful' => 'boolean',
+            'login_at' => 'datetime',
+            'logout_at' => 'datetime',
+        ];
+    }
+>>>>>>> 2024e2e7 (.)
 }

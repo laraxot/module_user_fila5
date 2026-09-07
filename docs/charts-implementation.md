@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "User Module - Charts Implementation"
+type: concept
+tags: [charts, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "charts-implementation user module - charts implementation"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # User Module - Charts Implementation
 
 ## 📋 Panoramica
@@ -561,7 +584,10 @@ class UsersChartWidgetTest extends TestCase
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento:** Dicembre 2025
+=======
+>>>>>>> 2024e2e7 (.)
 **Modulo:** User
 **Framework:** Laraxot/PTVX
 **Filament:** 4.x

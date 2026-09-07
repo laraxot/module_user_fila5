@@ -2,6 +2,18 @@
 description:
 globs:
 alwaysApply: false
+<<<<<<< HEAD
+=======
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+>>>>>>> 2024e2e7 (.)
 ---
 # Linee guida per l'uso di Spatie Activitylog
 
@@ -51,5 +63,9 @@ $logs = $user->activities()->where('log_name', 'user_moderation')->get();
 - [Best Practices](mdc:best-practices.md)
 - [Filament Best Practices](mdc:filament-best-practices.md)
 - [Testing](mdc:testing.md)
+<<<<<<< HEAD
 - [Documentazione centrale](mdc:../../../../docs/index.md)
+=======
+- [Documentazione centrale](mdc:../../../../../docs/index.md)
+>>>>>>> 2024e2e7 (.)
 

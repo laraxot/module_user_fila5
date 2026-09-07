@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+=======
+---
+title: "Analisi Qualità - Modulo User"
+type: concept
+tags: [user, module, quality, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user-module-quality-report analisi qualità - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./user-module-quality.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Analisi Qualità - Modulo User
 
 **Data Analisi**: 2025-01-22
@@ -37,7 +53,11 @@
 #### OtherDeviceLogoutListener - N+1 Updates
 **File**: `Listeners/OtherDeviceLogoutListener.php:42`
 **Problema**: Loop con update individuali (50+ query)
+<<<<<<< HEAD
 **Soluzione**: Bulk update (già documentata in `code_quality_analysis.md`)
+=======
+**Soluzione**: Bulk update (già documentata in `code-quality-analysis.md`)
+>>>>>>> 2024e2e7 (.)
 
 ### 2. Code Duplication (MEDIUM Priority)
 
@@ -73,9 +93,15 @@
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [Code Quality Analysis](./code_quality_analysis.md)
 - [Optimization Analysis](./optimization-analysis.md)
 - [Business Logic Deep Dive](./business_logic_deep_dive.md)
+=======
+- [Code Quality Analysis](./code-quality-analysis.md)
+- [Optimization Analysis](./optimization-analysis.md)
+- [Business Logic Deep Dive](./business-logic-deep-dive.md)
+>>>>>>> 2024e2e7 (.)
 - [Xot Quality Analysis](../xot/docs/quality-analysis/current-status.md)
 
 ## 📝 Note

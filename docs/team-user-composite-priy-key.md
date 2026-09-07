@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Fix: team_user Composite Primary Key Implementation"
+type: concept
+tags: [team, user, composite, priy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "team-user-composite-priy-key fix: team_user composite primary key implementation"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Fix: team_user Composite Primary Key Implementation
 
 ## Data Intervento
@@ -238,7 +261,11 @@ $membership = Membership::where('team_id', $team->id)
 - [Membership Model](../../app/Models/Membership.php)
 - [HasTeams Trait](../../app/Models/Traits/HasTeams.php)
 - [TeamsRelationManager](../../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
+<<<<<<< HEAD
 - [Documentazione Pivot Tables](../../../docs/pivot-tables-best-practices.md)
+=======
+- [Documentazione Pivot Tables](../../../../docs/pivot-tables-best-practices.md)
+>>>>>>> 2024e2e7 (.)
 
 ## Note Tecniche
 
@@ -259,5 +286,8 @@ $membership = Membership::where('team_id', $team->id)
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: novembre 2025*
+=======
+>>>>>>> 2024e2e7 (.)
 *Status: IMPLEMENTATO E VALIDATO*

@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Risoluzione Conflitti PasswordResetWidget.php"
+type: concept
+tags: [conflict, resolution, passwordresetwidget]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conflict-resolution-passwordresetwidget risoluzione conflitti passwordresetwidget.php"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto
@@ -60,9 +83,14 @@ Verificare che:
 - [User Module Documentation](readme.md)
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
+<<<<<<< HEAD
 - [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
 - [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
 *Ultimo aggiornamento: giugno 2025*
+=======
+- [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
+- [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
+>>>>>>> 2024e2e7 (.)
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto
@@ -157,6 +185,11 @@ Verificare che:
 - [User Module Documentation](readme.md)
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
+<<<<<<< HEAD
 - [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
+=======
+- [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
+
+>>>>>>> 2024e2e7 (.)

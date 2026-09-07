@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "RegistrationWidget FileUpload Fix"
+type: concept
+tags: [registration, widget, fileupload, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "registration-widget-fileupload-fix registrationwidget fileupload fix"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto
@@ -119,12 +142,20 @@ Per evitare simili problemi in futuro:
 3. **Type Checking**: Usare type checking difensivo nei callback
 4. **Documentation**: Documentare i tipi di dati attesi per ogni campo
 ## Riferimenti
+<<<<<<< HEAD
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../project_docs/fileupload-foreach-error-fix.md)
 - [Correzione XotBaseResource: Modules/Xot/project_docs/fileupload-components.md](../../xot/project_docs/fileupload-components.md)
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)
 *Ultimo aggiornamento: 2025-01-03*
+=======
+- [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/project/fileupload-foreach-error-fix.md)
+- [Correzione XotBaseResource: Modules/Xot/project_docs/fileupload-components.md](../../xot/project_docs/fileupload-components.md)
+- [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
+- [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
+- [Registration Widget base: registration-widget.md](./registration-widget.md)
+>>>>>>> 2024e2e7 (.)
 # RegistrationWidget FileUpload Fix
 
 ## Problema Risolto
@@ -342,6 +373,10 @@ Per evitare simili problemi in futuro:
 
 ## Riferimenti
 
+<<<<<<< HEAD
 - [Problema principale: docs/fileupload-foreach-error-fix.md](../../../docs/fileupload-foreach-error-fix.md)
+=======
+- [Problema principale: docs/fileupload-foreach-error-fix.md](../../../../docs/fileupload-foreach-error-fix.md)
+>>>>>>> 2024e2e7 (.)
 - [Correzione XotBaseResource: Modules/Xot/docs/fileupload-components.md](../../xot/docs/fileupload-components.md)
 - [Registration Widget base: registration-widget.md](./registration-widget.md)

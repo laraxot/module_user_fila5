@@ -4,15 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\PermissionResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Support\Components\Component;
 use Override;
 use Filament\Infolists\Components\TextEntry;
+=======
+>>>>>>> 2024e2e7 (.)
 use Modules\User\Filament\Resources\PermissionResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewPermission extends XotBaseViewRecord
 {
     protected static string $resource = PermissionResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<int, Component>
@@ -31,4 +35,6 @@ class ViewPermission extends XotBaseViewRecord
                 ->dateTime(),
         ];
     }
+=======
+>>>>>>> 2024e2e7 (.)
 }

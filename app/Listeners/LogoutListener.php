@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Listeners;
 
+<<<<<<< HEAD
 use Exception;
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Http\Request;
@@ -17,6 +18,15 @@ use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\DeviceUser;
 use Modules\User\Traits\HasAuthentications as HasAuthenticationsTrait;
+=======
+use Illuminate\Auth\Events\Logout;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Modules\User\Actions\Authentication\GetAuthenticationLogQueryForAuthenticatableAction;
+use Modules\User\Actions\GetCurrentDeviceAction;
+use Modules\User\Models\BaseUser;
+use Modules\User\Models\DeviceUser;
+>>>>>>> 2024e2e7 (.)
 
 class LogoutListener
 {
@@ -39,8 +49,14 @@ class LogoutListener
     {
         try {
             // Verifica se l'utente esiste prima di procedere
+<<<<<<< HEAD
             if (!$event->user) {
                 Log::warning('Tentativo di logout per un utente non autenticato');
+=======
+            if (! $event->user) {
+                Log::warning('Tentativo di logout per un utente non autenticato');
+
+>>>>>>> 2024e2e7 (.)
                 return;
             }
 
@@ -54,7 +70,11 @@ class LogoutListener
                         'device_id' => $device->id,
                     ]);
                     $pivot->update(['logout_at' => now()]);
+<<<<<<< HEAD
                 } catch (Exception $e) {
+=======
+                } catch (\Exception $e) {
+>>>>>>> 2024e2e7 (.)
                     Log::error('Errore durante l\'aggiornamento del pivot device-user', [
                         'error' => $e->getMessage(),
                         'user_id' => $event->user->getAuthIdentifier(),
@@ -64,7 +84,11 @@ class LogoutListener
             }
 
             // Gestione delle autenticazioni
+<<<<<<< HEAD
             if ($event->user instanceof HasAuthentications) {
+=======
+            if ($event->user instanceof BaseUser) {
+>>>>>>> 2024e2e7 (.)
                 try {
                     $event
                         ->user
@@ -74,7 +98,11 @@ class LogoutListener
                             'ip_address' => request()->ip(),
                             'user_agent' => request()->userAgent(),
                         ]);
+<<<<<<< HEAD
                 } catch (Exception $e) {
+=======
+                } catch (\Exception $e) {
+>>>>>>> 2024e2e7 (.)
                     Log::error('Errore durante la creazione del log di autenticazione', [
                         'error' => $e->getMessage(),
                         'user_id' => $event->user->getAuthIdentifier(),
@@ -83,12 +111,20 @@ class LogoutListener
             }
 
             // Log dell'evento
+<<<<<<< HEAD
             Log::info('Logout effettuato', [
+=======
+            Log::debug('Logout effettuato', [
+>>>>>>> 2024e2e7 (.)
                 'user_id' => $event->user->getAuthIdentifier(),
                 'device_id' => $device->id,
                 'timestamp' => now(),
             ]);
+<<<<<<< HEAD
         } catch (Exception $e) {
+=======
+        } catch (\Exception $e) {
+>>>>>>> 2024e2e7 (.)
             Log::error('Errore durante il logout', [
                 'error' => $e->getMessage(),
                 'trace' => $e->getTraceAsString(),
@@ -102,16 +138,26 @@ class LogoutListener
      */
     public function forgetRememberTokens(Logout $event): void
     {
+<<<<<<< HEAD
         if ($event->user && $event->user instanceof HasAuthentications) {
             try {
                 $event
                     ->user
                     ->authentications()
+=======
+        if ($event->user instanceof BaseUser) {
+            try {
+                app(GetAuthenticationLogQueryForAuthenticatableAction::class)->execute($event->user)
+>>>>>>> 2024e2e7 (.)
                     ->whereNotNull('remember_token')
                     ->update([
                         'remember_token' => null,
                     ]);
+<<<<<<< HEAD
             } catch (Exception $e) {
+=======
+            } catch (\Exception $e) {
+>>>>>>> 2024e2e7 (.)
                 Log::error('Errore durante la rimozione dei remember tokens', [
                     'error' => $e->getMessage(),
                     'user_id' => $event->user->getAuthIdentifier(),

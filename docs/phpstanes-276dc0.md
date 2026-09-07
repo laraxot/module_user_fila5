@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "User Module - PHPStan Fixes Session [DATE]"
+type: concept
+tags: [phpstanes, 276dc0]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstanes-276dc0 user module - phpstan fixes session [date]"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # User Module - PHPStan Fixes Session [DATE]
 
 ## ⚠️ Stato: IN PROGRESS - 95 errori rimanenti
@@ -204,9 +227,15 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 ## 🔗 Collegamenti
 
 - [← User Module README](./readme.md)
+<<<<<<< HEAD
 - [← PHPStan Session Report](../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Final Report](../../../docs/phpstan/final-report-session-[date].md)
 - [← Root Documentation](../../../docs/index.md)
+=======
+- [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
+- [← Final Report](../../../../docs/phpstan/final-report-session-[date].md)
+- [← Root Documentation](../../../../docs/index.md)
+>>>>>>> 2024e2e7 (.)
 
 ---
 

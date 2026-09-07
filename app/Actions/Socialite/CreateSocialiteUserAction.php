@@ -18,6 +18,14 @@ class CreateSocialiteUserAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
+=======
+    public function __construct(
+        private readonly SocialiteUser $socialiteUserModel,
+    ) {
+    }
+
+>>>>>>> 2024e2e7 (.)
     /**
      * Execute the action.
      */
@@ -33,6 +41,10 @@ class CreateSocialiteUserAction
             'avatar' => $oauthUser->getAvatar(),
         ];
 
+<<<<<<< HEAD
         return SocialiteUser::create(attributes: $attributes);
+=======
+        return $this->socialiteUserModel->create(attributes: $attributes);
+>>>>>>> 2024e2e7 (.)
     }
 }

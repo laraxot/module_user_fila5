@@ -3,49 +3,62 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
      * | Table Columns
      * |--------------------------------------------------------------------------
      */
 
+=======
+>>>>>>> 2024e2e7 (.)
     'column.name' => 'Nome',
     'column.guard_name' => 'Guard',
     'column.roles' => 'Funções',
     'column.permissions' => 'Permissões',
     'column.updated_at' => 'Alterado em',
+<<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
      * | Form Fields
      * |--------------------------------------------------------------------------
      */
 
+=======
+>>>>>>> 2024e2e7 (.)
     'field.name' => 'Nome',
     'field.guard_name' => 'Guard',
     'field.permissions' => 'Permissões',
     'field.select_all.name' => 'Selecionar todos',
     'field.select_all.message' => 'Habilitar todas as permissões para essa função',
+<<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
      * | Navigation & Resource
      * |--------------------------------------------------------------------------
      */
 
+=======
+>>>>>>> 2024e2e7 (.)
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Funções',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Função',
     'resource.label.roles' => 'Funções',
+<<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
      * | Section & Tabs
      * |--------------------------------------------------------------------------
      */
+=======
+>>>>>>> 2024e2e7 (.)
     'section' => 'Entidades',
     'resources' => 'Recursos',
     'widgets' => 'Widgets',
     'pages' => 'Páginas',
     'custom' => 'Permissões customizadas',
+<<<<<<< HEAD
     /*
      * |--------------------------------------------------------------------------
      * | Messages
@@ -72,4 +85,20 @@ return [
     //     'restore_any' => 'Restore Any',
     //     'replicate' => 'Replicate',
     // ],
+=======
+    'forbidden' => 'Você não tem permissão para acessar',
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'fields' => [
+    ],
+    'actions' => [
+    ],
+>>>>>>> 2024e2e7 (.)
 ];

@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Filament 5.x Nested Resources - Opportunità di Applicazione"
+type: concept
+tags: [filament, nesting, opportunities]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-nesting-opportunities filament 5.x nested resources - opportunità di applicazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Filament 5.x Nested Resources - Opportunità di Applicazione
 
 **Data Analisi**: [DATE]  
@@ -56,7 +79,11 @@ class TeamInvitationResource extends XotBaseResource
 {
     protected static ?string $parentResource = TeamResource::class;
     
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> 2024e2e7 (.)
     {
         return [
             'email' => TextInput::make('email')
@@ -162,7 +189,11 @@ class TeamInvitationResource extends XotBaseResource
 {
     protected static ?string $parentResource = TeamResource::class;
     
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    public function getFormSchema(): array
+>>>>>>> 2024e2e7 (.)
     {
         return [
             'email' => TextInput::make('email')

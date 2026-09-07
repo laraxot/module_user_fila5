@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "User Module - PHPStan Level 10 Analysis"
+type: concept
+tags: [phpstan, level10]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-level10 user module - phpstan level 10 analysis"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # User Module - PHPStan Level 10 Analysis
 
 ## 📊 Current Status
@@ -242,9 +265,15 @@ These fixes are **local to User module** and won't affect other modules.
 
 ## 🔗 Related Files
 
+<<<<<<< HEAD
 - [BaseUser.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/User/app/Models/BaseUser.php) - Already fixed
 - [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php) - Fixed in Xot
 - [Passport Documentation](file:///var/www/_bases/base_ptvx_fila4_mono/laravel/modules/user/docs/passport.md)
+=======
+- [BaseUser.php](file:///var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/User/app/Models/BaseUser.php) - Already fixed
+- [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php) - Fixed in Xot
+- [Passport Documentation](file:///var/www/_bases/base_ptvx_fila5_mono/laravel/modules/user/docs/passport.md)
+>>>>>>> 2024e2e7 (.)
 
 ---
 

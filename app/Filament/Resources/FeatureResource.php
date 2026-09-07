@@ -4,14 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Override;
+=======
+>>>>>>> 2024e2e7 (.)
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Modules\User\Filament\Resources\FeatureResource\Pages\CreateFeature;
 use Modules\User\Filament\Resources\FeatureResource\Pages\EditFeature;
 use Modules\User\Filament\Resources\FeatureResource\Pages\ListFeatures;
 use Modules\User\Models\Feature;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+=======
+>>>>>>> 2024e2e7 (.)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 /**
@@ -19,6 +25,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
  */
 class FeatureResource extends XotBaseResource
 {
+<<<<<<< HEAD
     protected static null|string $model = Feature::class;
 
     #[Override]
@@ -32,12 +39,21 @@ class FeatureResource extends XotBaseResource
     }
 
     #[Override]
+=======
+    protected static ?string $model = Feature::class;
+
+    #[\Override]
+>>>>>>> 2024e2e7 (.)
     public static function getRelations(): array
     {
         return [];
     }
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> 2024e2e7 (.)
     public static function getPages(): array
     {
         return [

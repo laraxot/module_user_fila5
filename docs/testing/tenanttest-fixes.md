@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TenantTest Fixes - Reasoning
 
 ## Problem Analysis
@@ -74,3 +75,17 @@ $this->assertTrue(method_exists($this->tenant, 'users'));
 4. Removed assertions that expect specific factory-generated values
 
 All fixes follow DRY, KISS, SOLID principles and maintain test quality.
+=======
+---
+module: theme
+topic: tenanttest-fixes
+canonical: ../../../../Themes/docs/shared-components/tenant-test-fixes.md
+related:
+  - "./remaining-tenant-failures.md"
+  - "./tenant-test-fixes.md"
+  - "./tenantfactory-fix.md"
+  - "./tenantfactory.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/tenant-test-fixes.md
+>>>>>>> 2024e2e7 (.)

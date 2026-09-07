@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Factory Mancanti - Modulo User"
+type: concept
+tags: [missing, factories, audit]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "missing-factories-audit factory mancanti - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Factory Mancanti - Modulo User
 
 ## Situazione Critica Identificata
@@ -134,9 +157,16 @@
 ## Collegamenti
 
 - [README Modulo User](./readme.md)
+<<<<<<< HEAD
 - [Factory Audit Root](../../../project_docs/factory-audit-2025.md)
+=======
+- [Factory Audit Root](../../../../docs/project/factory-audit-2025.md)
+>>>>>>> 2024e2e7 (.)
 - [Models Documentation](./models/readme.md)
 
 ---
 **Errore gravissimo da non ripetere mai più**  
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
+=======
+>>>>>>> 2024e2e7 (.)

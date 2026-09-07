@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets;
 
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
 
 use Filament\Schemas\Components\Component;
@@ -18,12 +19,24 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
+=======
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Toggle;
+use Filament\Notifications\Notification;
+use Filament\Schemas\Components\Component;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\ValidationException;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+>>>>>>> 2024e2e7 (.)
 
 /**
  * LoginWidget: Widget di login conforme alle regole Windsurf/Xot.
  * - Estende XotBaseWidget
  * - Usa solo componenti Filament importati
  * - Validazione e sicurezza integrate
+<<<<<<< HEAD
  * - Facilmente estendibile (2FA, captcha, login social)
  *
  * @property array<string, mixed>|null $data
@@ -45,6 +58,30 @@ class LoginWidget extends XotBaseWidget
      * Inizializza il widget quando viene montato.
      *
      * @return void
+=======
+ * - Facilmente estendibile (2FA, captcha, login social).
+ *
+ * @property array<string, mixed>|null $data
+ */
+class LoginWidget extends XotBaseSchemaWidget
+{
+    /**
+     * @var view-string
+     */
+    protected string $view;
+
+    public function __construct()
+    {
+        /** @var view-string $view */
+        $view = 'pub_theme::filament.widgets.auth.login';
+        $this->view = $view;
+
+        parent::__construct();
+    }
+
+    /**
+     * Inizializza il widget quando viene montato.
+>>>>>>> 2024e2e7 (.)
      */
     public function mount(): void
     {
@@ -56,7 +93,10 @@ class LoginWidget extends XotBaseWidget
      *
      * @return array<int, Component>
      */
+<<<<<<< HEAD
     #[Override]
+=======
+>>>>>>> 2024e2e7 (.)
     public function getFormSchema(): array
     {
         return [
@@ -73,6 +113,7 @@ class LoginWidget extends XotBaseWidget
     }
 
     /**
+<<<<<<< HEAD
      * Get the form model.
      *
      * @return Model|null
@@ -84,11 +125,16 @@ class LoginWidget extends XotBaseWidget
     }
 
     /**
+=======
+>>>>>>> 2024e2e7 (.)
      * Get the form fill data.
      *
      * @return array<string, mixed>
      */
+<<<<<<< HEAD
     #[Override]
+=======
+>>>>>>> 2024e2e7 (.)
     public function getFormFill(): array
     {
         return [
@@ -99,10 +145,14 @@ class LoginWidget extends XotBaseWidget
 
     /**
      * Handle login form submission.
+<<<<<<< HEAD
      *
      * @return void
      */
     #[Override]
+=======
+     */
+>>>>>>> 2024e2e7 (.)
     public function save(): void
     {
         try {
@@ -112,10 +162,15 @@ class LoginWidget extends XotBaseWidget
             $remember = (bool) ($data['remember'] ?? false);
             $attempt_data = Arr::only($data, ['email', 'password']);
 
+<<<<<<< HEAD
             if (!Auth::attempt($attempt_data, $remember)) {
                 throw ValidationException::withMessages([
                     'email' => [__('user::messages.credentials_incorrect')],
                 ]);
+=======
+            if (! Auth::attempt($attempt_data, $remember)) {
+                throw ValidationException::withMessages(['email' => [__('user::messages.failed')]]);
+>>>>>>> 2024e2e7 (.)
             }
 
             session()->regenerate();
@@ -135,6 +190,7 @@ class LoginWidget extends XotBaseWidget
 
             $this->form->fill();
             $this->form->saveRelationships();
+<<<<<<< HEAD
             //$this->form->callAfter();
 
             foreach ($e->errors() as $field => $messages) {
@@ -142,6 +198,22 @@ class LoginWidget extends XotBaseWidget
                 $this->addError($field, implode(' ', $messages));
             }
         } catch (Exception $e) {
+=======
+            // $this->form->callAfter();
+
+            foreach ($e->errors() as $field => $messages) {
+                // PHPStan Level 10: Ensure messages is array of strings
+                if (! is_array($messages)) {
+                    $messages = [$messages];
+                }
+
+                $this->addError($field, implode(' ', array_map(
+                    static fn (mixed $v): string => \is_scalar($v) || $v instanceof \Stringable ? (string) $v : '',
+                    $messages
+                )));
+            }
+        } catch (\Exception $e) {
+>>>>>>> 2024e2e7 (.)
             report($e);
 
             Notification::make()
@@ -152,9 +224,24 @@ class LoginWidget extends XotBaseWidget
 
             $this->form->fill();
             $this->form->saveRelationships();
+<<<<<<< HEAD
             //$this->form->callAfter();
+=======
+            // $this->form->callAfter();
+>>>>>>> 2024e2e7 (.)
 
             $this->addError('email', __('user::messages.login_error'));
         }
     }
+<<<<<<< HEAD
+=======
+
+    /**
+     * Get the form model.
+     */
+    protected function getFormModel(): ?Model
+    {
+        return null;
+    }
+>>>>>>> 2024e2e7 (.)
 }

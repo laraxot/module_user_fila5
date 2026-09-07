@@ -3,21 +3,29 @@
 /**
  * --.
  */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2024e2e7 (.)
 declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Component;
 use Override;
 use Filament\Actions;
 use Filament\Infolists\Components\TextEntry;
+=======
+>>>>>>> 2024e2e7 (.)
 use Modules\User\Filament\Resources\TenantResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewTenant extends XotBaseViewRecord
 {
     protected static string $resource = TenantResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, Component>
@@ -35,4 +43,6 @@ class ViewTenant extends XotBaseViewRecord
             ]),
         ];
     }
+=======
+>>>>>>> 2024e2e7 (.)
 }

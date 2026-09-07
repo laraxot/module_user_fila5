@@ -23,4 +23,40 @@ return [
         'label' => 'Conferma Password',
         'placeholder' => 'Conferma la tua nuova password',
     ],
+<<<<<<< HEAD
+=======
+    'navigation' => [
+        'name' => 'Fields',
+        'plural' => 'Fields',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
+        'label' => 'Fields',
+        'sort' => 1,
+        'icon' => 'heroicon-o-collection',
+    ],
+    'label' => 'Fields',
+    'plural_label' => 'Fields (Plurale)',
+    'fields' => [
+        'id' => [
+            'label' => 'Identificativo',
+            'tooltip' => 'Identificativo univoco del record',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+>>>>>>> 2024e2e7 (.)
 ];

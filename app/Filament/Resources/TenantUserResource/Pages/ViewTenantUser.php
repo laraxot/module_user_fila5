@@ -4,9 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantUserResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
+=======
+use Modules\User\Filament\Resources\TenantUserResource;
+>>>>>>> 2024e2e7 (.)
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 /**
@@ -14,6 +18,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
  */
 class ViewTenantUser extends XotBaseViewRecord
 {
+<<<<<<< HEAD
     protected static string $resource = \Modules\User\Filament\Resources\TenantUserResource::class;
 
     /**
@@ -33,4 +38,7 @@ class ViewTenantUser extends XotBaseViewRecord
             ]),
         ];
     }
+=======
+    protected static string $resource = TenantUserResource::class;
+>>>>>>> 2024e2e7 (.)
 }

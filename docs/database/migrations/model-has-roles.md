@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+=======
+---
+title: "Model Has Roles Migration Documentation"
+type: concept
+tags: [model, has, roles]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "model-has-roles model has roles migration documentation"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+---
+
+>>>>>>> 2024e2e7 (.)
 # Model Has Roles Migration Documentation
 
 ## Overview

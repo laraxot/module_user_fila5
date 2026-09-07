@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+=======
+---
+title: "RegistrationWidget: Widget generico per la registrazione utente"
+type: concept
+tags: [registration, widget]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "registration-widget registrationwidget: widget generico per la registrazione utente"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./dashboard-filters-integration.md"
+  - "./edit-user-widget.md"
+  - "./registration-widget-fileupload-fix.md"
+  - "./registration-widget-fileupload.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # RegistrationWidget: Widget generico per la registrazione utente
 
 ## Scopo e filosofia
@@ -32,7 +51,11 @@ Queste Action devono occuparsi di:
 - [Documentazione Xot sulla proprietà $data](../../../xot/docs/filament/widgets/data-property.md)
 - [Esempio di Action di registrazione Doctor](../../../../Patient/app/Actions/Doctor/RegisterAction.php)
 - [Esempio di Action di registrazione Patient](../../../../Patient/app/Actions/Patient/RegisterAction.php)
+<<<<<<< HEAD
 - [Documentazione generale: Registrazione Odontoiatra](../../../../../docs/doctor-registration.md)
+=======
+- [Documentazione generale: Registrazione Odontoiatra](../../../../../../docs/doctor-registration.md)
+>>>>>>> 2024e2e7 (.)
 - [Documentazione Xot sulla proprietà $data](../../../xot/project_docs/filament/widgets/data-property.md)
 - [Documentazione generale: Registrazione Odontoiatra](../../../../../project_docs/doctor-registration.md)
 ---

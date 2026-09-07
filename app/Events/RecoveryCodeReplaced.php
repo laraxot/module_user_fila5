@@ -19,5 +19,10 @@ class RecoveryCodeReplaced
     public function __construct(
         public Authenticatable $user,
         public string $code,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 2024e2e7 (.)
 }

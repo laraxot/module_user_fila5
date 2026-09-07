@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Exceptions;
 
+<<<<<<< HEAD
 use LogicException;
 
 final class ProviderNotConfigured extends LogicException
@@ -14,6 +15,16 @@ final class ProviderNotConfigured extends LogicException
             $provider .
             '" is not configured. tips: add ' .
             $provider .
+=======
+final class ProviderNotConfigured extends \LogicException
+{
+    public static function make(string $provider): static
+    {
+        return new self('Provider "'.
+            $provider.
+            '" is not configured. tips: add '.
+            $provider.
+>>>>>>> 2024e2e7 (.)
             ' to config/services.php');
     }
 }

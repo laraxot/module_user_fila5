@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+<<<<<<< HEAD
 use Modules\User\Models\Device;
 use Modules\User\Models\DeviceUser;
 use Modules\User\Models\User;
@@ -14,24 +15,38 @@ use Modules\User\Models\User;
  *
  * Factory for creating DeviceUser model instances for testing and seeding.
  *
+=======
+use Modules\User\Models\DeviceUser;
+
+/**
+>>>>>>> 2024e2e7 (.)
  * @extends Factory<DeviceUser>
  */
 class DeviceUserFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
+<<<<<<< HEAD
      *
      * @var class-string<DeviceUser>
+=======
+>>>>>>> 2024e2e7 (.)
      */
     protected $model = DeviceUser::class;
 
     /**
      * Define the model's default state.
+<<<<<<< HEAD
      *
+=======
+     */
+    /**
+>>>>>>> 2024e2e7 (.)
      * @return array<string, mixed>
      */
     public function definition(): array
     {
+<<<<<<< HEAD
         $loginAt = $this->faker->optional(0.8)->dateTimeBetween('-1 year', 'now');
 
         return [
@@ -96,5 +111,8 @@ class DeviceUserFactory extends Factory
             'login_at' => $loginAt,
             'logout_at' => $this->faker->dateTimeBetween($loginAt, 'now'),
         ]);
+=======
+        return [];
+>>>>>>> 2024e2e7 (.)
     }
 }

@@ -15,12 +15,16 @@ return new class extends XotBaseMigration {
      */
     public function up(): void
     {
+<<<<<<< HEAD
         // -- CREATE --
+=======
+>>>>>>> 2024e2e7 (.)
         $this->tableCreate(static function (Blueprint $table): void {
             $table->id();
             $table->string('name');
             $table->string('scope');
             $table->text('value');
+<<<<<<< HEAD
 
             $table->unique(['name', 'scope']);
         });
@@ -30,6 +34,11 @@ return new class extends XotBaseMigration {
                 table: $table,
                 hasSoftDeletes: true,
             );
+=======
+            $table->unique(['name', 'scope']);
+            $table->timestamps();
+            $table->softDeletes();
+>>>>>>> 2024e2e7 (.)
         });
     }
 };

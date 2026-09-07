@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Schemas\Components\Section;
 use Override;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
@@ -18,10 +19,17 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\HtmlString;
 use Modules\User\Filament\Resources\UserResource\Pages;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
+=======
+use Illuminate\Database\Eloquent\Model;
+use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
+use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
+use Modules\Xot\Datas\XotData;
+>>>>>>> 2024e2e7 (.)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class UserResource extends XotBaseResource
 {
+<<<<<<< HEAD
     // protected static ?string $model = \Modules\Xot\Datas\XotData::make()->getUserClass();
 
     protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-users';
@@ -29,6 +37,8 @@ class UserResource extends XotBaseResource
     // Static property Modules\User\Filament\Resources\UserResource::$enablePasswordUpdates is never read, only written.
     // private static bool|\Closure $enablePasswordUpdates = true;
 
+=======
+>>>>>>> 2024e2e7 (.)
     public static function getWidgets(): array
     {
         return [
@@ -41,6 +51,7 @@ class UserResource extends XotBaseResource
     //    static::$extendFormCallback = $callback;
     // }
 
+<<<<<<< HEAD
     #[Override]
     public static function getFormSchema(): array
     {
@@ -64,6 +75,9 @@ class UserResource extends XotBaseResource
             ])->columnSpan(4),
         ];
     }
+=======
+    
+>>>>>>> 2024e2e7 (.)
 
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {
@@ -77,9 +91,25 @@ class UserResource extends XotBaseResource
      * }
      */
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> 2024e2e7 (.)
     public function hasCombinedRelationManagerTabsWithContent(): bool
     {
         return true;
     }
+<<<<<<< HEAD
+=======
+
+    /**
+     * @return class-string<Model>
+     */
+    #[\Override]
+    public static function getModel(): string
+    {
+        return XotData::make()->getUserClass();
+    }
+>>>>>>> 2024e2e7 (.)
 }

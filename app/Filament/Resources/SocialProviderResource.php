@@ -4,17 +4,29 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Override;
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\ListSocialProviders;
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\CreateSocialProvider;
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\ViewSocialProvider;
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\EditSocialProvider;
+=======
+>>>>>>> 2024e2e7 (.)
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+<<<<<<< HEAD
 use Modules\User\Filament\Resources\SocialProviderResource\Pages;
+=======
+use Filament\Infolists\Components\TextEntry;
+use Filament\Schemas\Components\Component;
+use Modules\User\Filament\Resources\SocialProviderResource\Pages\CreateSocialProvider;
+use Modules\User\Filament\Resources\SocialProviderResource\Pages\EditSocialProvider;
+use Modules\User\Filament\Resources\SocialProviderResource\Pages\ListSocialProviders;
+use Modules\User\Filament\Resources\SocialProviderResource\Pages\ViewSocialProvider;
+>>>>>>> 2024e2e7 (.)
 use Modules\User\Models\SocialProvider;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -24,11 +36,16 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
  */
 class SocialProviderResource extends XotBaseResource
 {
+<<<<<<< HEAD
     protected static null|string $model = SocialProvider::class;
+=======
+    protected static ?string $model = SocialProvider::class;
+>>>>>>> 2024e2e7 (.)
 
     /**
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     #[Override]
     public static function getFormSchema(): array
     {
@@ -72,12 +89,19 @@ class SocialProviderResource extends XotBaseResource
     }
 
     #[Override]
+=======
+    #[\Override]
+>>>>>>> 2024e2e7 (.)
     public static function getRelations(): array
     {
         return [];
     }
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> 2024e2e7 (.)
     public static function getPages(): array
     {
         return [

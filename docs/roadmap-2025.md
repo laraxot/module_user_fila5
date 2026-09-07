@@ -1,9 +1,36 @@
+<<<<<<< HEAD
+=======
+---
+title: "👥 USER MODULE - ROADMAP 2025"
+type: concept
+tags: [roadmap, 2025]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "roadmap-2025 👥 user module - roadmap 2025"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # 👥 USER MODULE - ROADMAP 2025
 
 **Modulo**: User (Authentication & Authorization)  
 **Status**: 90% COMPLETATO  
 **Priority**: HIGH  
+<<<<<<< HEAD
 **PHPStan**: ✅ Level 9 (0 errori)  
+=======
+**PHPStan**: ✅ Level 10 (0 errori)  
+>>>>>>> 2024e2e7 (.)
 **Filament**: ✅ 4.x Compatibile  
 
 ---
@@ -82,7 +109,11 @@ User Module
 - [x] **Notification System**: User notifications
 
 ### 🔧 Technical Excellence
+<<<<<<< HEAD
 - [x] **PHPStan Level 9**: 0 errori
+=======
+- [x] **PHPStan Level 10**: 0 errori
+>>>>>>> 2024e2e7 (.)
 - [x] **Filament 4.x**: Compatibilità completa
 - [x] **Type Safety**: Type hints completi
 - [x] **Error Handling**: Gestione errori robusta
@@ -249,7 +280,11 @@ User Module
 **Status**: 95% COMPLETATO
 
 #### ✅ Completed
+<<<<<<< HEAD
 - [x] PHPStan Level 9 compliance
+=======
+- [x] PHPStan Level 10 compliance
+>>>>>>> 2024e2e7 (.)
 - [x] Type safety implementation
 - [x] Error handling improvement
 - [x] Code documentation
@@ -308,7 +343,11 @@ User Module
 ## 🎯 SUCCESS METRICS
 
 ### 📊 Technical Metrics
+<<<<<<< HEAD
 - [x] **PHPStan Level 9**: 0 errori ✅
+=======
+- [x] **PHPStan Level 10**: 0 errori ✅
+>>>>>>> 2024e2e7 (.)
 - [x] **Filament 4.x**: Compatibile ✅
 - [ ] **Test Coverage**: 80% (target)
 - [ ] **Response Time**: < 200ms
@@ -472,8 +511,11 @@ User Module
 
 ---
 
+<<<<<<< HEAD
 **Last Updated**: 2025-10-01
 **Next Review**: 2025-11-01
+=======
+>>>>>>> 2024e2e7 (.)
 **Status**: 🚧 ACTIVE DEVELOPMENT  
 **Confidence Level**: 98%  
 

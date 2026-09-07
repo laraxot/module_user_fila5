@@ -9,3 +9,14 @@
 -e 
 # PHPStan documentation
 docs/phpstan/
+<<<<<<< HEAD
+=======
+_docs/
+
+# Backup files
+*.backup
+*.backup.*
+*.backup-*
+*.backup_*
+agentdb.rvf
+>>>>>>> 2024e2e7 (.)

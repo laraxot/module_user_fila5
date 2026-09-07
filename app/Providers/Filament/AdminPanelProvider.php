@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Providers\Filament;
 
+<<<<<<< HEAD
 use Override;
 use Filament\Navigation\MenuItem;
 use Filament\Panel;
@@ -15,18 +16,31 @@ use Filament\Support\Facades\FilamentView;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\View;
 use Modules\User\Filament\Pages\MyProfilePage;
+=======
+use Filament\Panel;
+use Filament\Support\Facades\FilamentView;
+use Illuminate\Support\Facades\Blade;
+>>>>>>> 2024e2e7 (.)
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
 {
     protected string $module = 'User';
 
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> 2024e2e7 (.)
     public function panel(Panel $panel): Panel
     {
         $panel = parent::panel($panel);
 
+<<<<<<< HEAD
         FilamentView::registerRenderHook('panels::auth.login.form.after', static fn(): string => Blade::render(
+=======
+        FilamentView::registerRenderHook('panels::auth.login.form.after', static fn (): string => Blade::render(
+>>>>>>> 2024e2e7 (.)
             "@livewire('socialite.buttons')",
         ));
 
@@ -45,14 +59,22 @@ class AdminPanelProvider extends XotBasePanelProvider
          * );
          * //*/
 
+<<<<<<< HEAD
         FilamentView::registerRenderHook('panels::user-menu.before', static fn(): string => Blade::render(
+=======
+        FilamentView::registerRenderHook('panels::user-menu.before', static fn (): string => Blade::render(
+>>>>>>> 2024e2e7 (.)
             "@livewire('team.change')",
         ));
 
         FilamentView::registerRenderHook(
             'panels::user-menu.before',
             // static fn (): string => View::make('user::badges.super-admin')->render(),
+<<<<<<< HEAD
             static fn(): string => Blade::render("@livewire('profile.super-admin')"),
+=======
+            static fn (): string => Blade::render("@livewire('profile.super-admin')"),
+>>>>>>> 2024e2e7 (.)
         );
 
         /*
@@ -72,12 +94,19 @@ class AdminPanelProvider extends XotBasePanelProvider
         // $panel->userMenuItems([
         //     // 'account' => MenuItem::make()->url($profile_url),
         //     MenuItem::make()
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 2024e2e7 (.)
         //         ->url(fn (): string => '#')
         //         ->icon('heroicon-m-cog-8-tooth'),
         // ]);
 
         return $panel;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2024e2e7 (.)
 }

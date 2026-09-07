@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Actions\Profile;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Modules\Xot\Contracts\UserContract;
 use Filament\Forms\Components\TextInput;
@@ -18,11 +19,27 @@ use Illuminate\Validation\Rules\Password;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Datas\XotData;
+=======
+use Filament\Forms\Components\TextInput;
+use Filament\Notifications\Notification;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Hash;
+use Modules\User\Datas\PasswordData;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+use Modules\Xot\Filament\Actions\XotBaseAction;
+>>>>>>> 2024e2e7 (.)
 
 /**
  * ---.
  */
+<<<<<<< HEAD
 class ChangeProfilePasswordAction extends Action
+=======
+final class ChangeProfilePasswordAction extends XotBaseAction
+>>>>>>> 2024e2e7 (.)
 {
     protected function setUp(): void
     {
@@ -32,13 +49,19 @@ class ChangeProfilePasswordAction extends Action
             ->icon('heroicon-o-key')
             ->action(static function (ProfileContract $record, array $data): void {
                 $user = $record->user;
+<<<<<<< HEAD
                 $profile_data = Arr::except($record->toArray(), ['id']);
                 if ($user === null) {
                     $user_class = XotData::make()->getUserClass();
+=======
+                $profileData = Arr::except($record->toArray(), ['id']);
+                if (null === $user) {
+>>>>>>> 2024e2e7 (.)
                     /** @var UserContract */
                     $user = XotData::make()->getUserByEmail($record->email);
                 }
 
+<<<<<<< HEAD
                 if ($user === null) {
                     $user = $record->user()->create($profile_data);
                 }
@@ -65,6 +88,50 @@ class ChangeProfilePasswordAction extends Action
     }
 
     public static function getDefaultName(): null|string
+=======
+                if (null === $user) {
+                    /** @var array<string, mixed> $profileData */
+                    $user = $record->user()->create($profileData);
+                }
+
+                if ($user instanceof UserContract && $record instanceof Model) {
+                    $user->profile()->save($record);
+                }
+
+                $newPassword = is_string($data['new_password'] ?? null) ? $data['new_password'] : '';
+                /*
+                 * @var ProfileContract $record
+                 */
+                $record->update([
+                    'password' => Hash::make($newPassword),
+                ]);
+                Notification::make()->success()->title('Password changed successfully.')->send();
+            })
+            ->schema(function (): array {
+                return [
+                    /*
+                     * TextInput::make('new_password')
+                     * ->password()
+                     * ->required()
+                     * ->rule(Password::default()),
+                     */
+                    PasswordData::make()->getPasswordFormComponent('new_password'),
+                    TextInput::make('new_password_confirmation')
+                        ->password()
+                        ->rule(
+                            'required',
+                            /**
+                             * @param callable(string): mixed $get
+                             */
+                            static fn (callable $get): bool => (bool) $get('new_password')
+                        )
+                        ->same('new_password'),
+                ];
+            });
+    }
+
+    public static function getDefaultName(): string
+>>>>>>> 2024e2e7 (.)
     {
         return 'changePassword';
     }

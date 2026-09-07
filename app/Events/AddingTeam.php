@@ -21,5 +21,10 @@ class AddingTeam
          * The team owner.
          */
         public UserContract $owner,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 2024e2e7 (.)
 }

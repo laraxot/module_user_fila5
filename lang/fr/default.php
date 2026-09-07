@@ -10,11 +10,19 @@ return [
     ],
     'two_factor' => [
         'heading' => 'Authentification à deux facteurs',
+<<<<<<< HEAD
         'description' => "Veuillez confirmer l'accès à votre compte en saisissant le code d'authentification fourni par votre application d'authentification.",
         'code_placeholder' => 'XXX-XXX',
         'recovery' => [
             'heading' => 'Authentification à deux facteurs',
             'description' => "Veuillez confirmer l'accès à votre compte en entrant l'un de vos codes de récupération d'urgence.",
+=======
+        'description' => 'Veuillez confirmer l\'accès à votre compte en saisissant le code d\'authentification fourni par votre application d\'authentification.',
+        'code_placeholder' => 'XXX-XXX',
+        'recovery' => [
+            'heading' => 'Authentification à deux facteurs',
+            'description' => 'Veuillez confirmer l\'accès à votre compte en entrant l\'un de vos codes de récupération d\'urgence.',
+>>>>>>> 2024e2e7 (.)
         ],
         'recovery_code_placeholder' => 'abcdef-98765',
         'recovery_code_text' => 'Appareil perdu ?',
@@ -44,7 +52,11 @@ return [
         ],
         '2fa' => [
             'title' => 'Authentification à deux facteurs',
+<<<<<<< HEAD
             'description' => "Gérez l'authentification à deux facteurs pour votre compte (recommandé).",
+=======
+            'description' => 'Gérez l\'authentification à deux facteurs pour votre compte (recommandé).',
+>>>>>>> 2024e2e7 (.)
             'actions' => [
                 'enable' => 'Activer',
                 'regenerate_codes' => 'Régénérer les codes de récupération',
@@ -53,6 +65,7 @@ return [
                 'cancel_setup' => 'Annuler la configuration',
             ],
             'setup_key' => 'Clé de configuration',
+<<<<<<< HEAD
             'must_enable' => "Vous devez activer l'authentification à deux facteurs pour utiliser cette application.",
             'not_enabled' => [
                 'title' => "Vous n'avez pas activé l'authentification à deux facteurs.",
@@ -70,12 +83,32 @@ return [
             ],
             'disabling' => [
                 'notify' => "L'authentification à deux facteurs a été désactivée.",
+=======
+            'must_enable' => 'Vous devez activer l\'authentification à deux facteurs pour utiliser cette application.',
+            'not_enabled' => [
+                'title' => 'Vous n\'avez pas activé l\'authentification à deux facteurs.',
+                'description' => 'Lorsque l\'authentification à deux facteurs est activée, un jeton sécurisé et aléatoire vous sera demandé lors de l\'authentification. Vous pouvez récupérer ce jeton à partir de l\'application Google Authenticator de votre téléphone.',
+            ],
+            'finish_enabling' => [
+                'title' => 'Terminez l\'activation de l\'authentification à deux facteurs.',
+                'description' => 'Pour terminer l\'activation de l\'authentification à deux facteurs, scannez le code QR suivant à l\'aide de l\'application d\'authentification de votre téléphone ou entrez la clé de configuration et fournissez le code OTP généré.',
+            ],
+            'enabled' => [
+                'notify' => 'Authentification à deux facteurs activée.',
+                'title' => 'Vous avez activé l\'authentification à deux facteurs !',
+                'description' => 'L\'authentification à deux facteurs est maintenant activée. Scannez le code QR suivant en utilisant l\'application d\'authentification de votre téléphone ou entrez la clé de configuration.',
+                'store_codes' => 'Conservez ces codes de récupération dans un gestionnaire de mots de passe sécurisé. Ils peuvent être utilisés pour récupérer l\'accès à votre compte si votre dispositif d\'authentification à deux facteurs est perdu.',
+            ],
+            'disabling' => [
+                'notify' => 'L\'authentification à deux facteurs a été désactivée.',
+>>>>>>> 2024e2e7 (.)
             ],
             'regenerate_codes' => [
                 'notify' => 'De nouveaux codes de récupération ont été générés.',
             ],
             'confirmation' => [
                 'success_notification' => 'Code vérifié. Authentification à deux facteurs activée.',
+<<<<<<< HEAD
                 'invalid_code' => "Le code que vous avez saisi n'est pas valide.",
             ],
         ],
@@ -85,6 +118,17 @@ return [
             'create' => [
                 'notify' => 'Jeton créé avec succès !',
                 'message' => "Votre jeton ne sera visile qu'une seule fois après sa création. Si vous perdez votre rejetez, vous devrez le supprimer puis en créer un nouveau.",
+=======
+                'invalid_code' => 'Le code que vous avez saisi n\'est pas valide.',
+            ],
+        ],
+        'sanctum' => [
+            'title' => 'Jetons d\'API',
+            'description' => 'Gérez les jetons d\'API qui permettent aux services tiers d\'accéder à cette application en votre nom. REMARQUE : votre jeton est affiché une fois lors de sa création. Si vous perdez votre jeton, vous devrez le supprimer et en créer un nouveau.',
+            'create' => [
+                'notify' => 'Jeton créé avec succès !',
+                'message' => 'Votre jeton ne sera visile qu\'une seule fois après sa création. Si vous perdez votre rejetez, vous devrez le supprimer puis en créer un nouveau.',
+>>>>>>> 2024e2e7 (.)
                 'submit' => [
                     'label' => 'Créer',
                 ],
@@ -93,7 +137,11 @@ return [
                 'notify' => 'Jeton mis à jour avec succès !',
             ],
             'copied' => [
+<<<<<<< HEAD
                 'label' => "J'ai copié mon jeton",
+=======
+                'label' => 'J\'ai copié mon jeton',
+>>>>>>> 2024e2e7 (.)
             ],
         ],
     ],
@@ -102,6 +150,7 @@ return [
         'tooltip' => 'Copié !',
     ],
     'fields' => [
+<<<<<<< HEAD
         'avatar' => 'Avatar',
         'email' => 'E-mail',
         'login' => 'Identifiant',
@@ -121,16 +170,118 @@ return [
     'or' => 'Ou',
     'cancel' => 'Annuler',
     // //
+=======
+        'avatar' => [
+            'label' => 'Avatar',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'email' => [
+            'label' => 'E-mail',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'login' => [
+            'label' => 'Identifiant',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'name' => [
+            'label' => 'Nom',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'password' => [
+            'label' => 'Mot de passe',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'password_confirm' => [
+            'label' => 'Confirmer le mot de passe',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'new_password' => [
+            'label' => 'Nouveau mot de passe',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'new_password_confirmation' => [
+            'label' => 'Confirmez le mot de passe',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'token_name' => [
+            'label' => 'Nom du jeton',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'token_expiry' => [
+            'label' => 'Expiration du jeton',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'abilities' => [
+            'label' => 'Aptitudes',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        '2fa_code' => [
+            'label' => 'Code',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        '2fa_recovery_code' => [
+            'label' => 'Code de récupération',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created' => [
+            'label' => 'Créé',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'expires' => [
+            'label' => 'Expire',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'or' => 'Ou',
+    'cancel' => 'Annuler',
+>>>>>>> 2024e2e7 (.)
     'login' => [
         'username_or_email' => 'Identifiant ou E-mail',
         'forgot_password_link' => 'Mot de passe oublié ?',
         'create_an_account' => 'Créer un compte',
     ],
     'registration' => [
+<<<<<<< HEAD
         'title' => "S'inscrire",
         'heading' => 'Créer un nouveau compte',
         'submit' => [
             'label' => "S'inscrire",
+=======
+        'title' => 'S\'inscrire',
+        'heading' => 'Créer un nouveau compte',
+        'submit' => [
+            'label' => 'S\'inscrire',
+>>>>>>> 2024e2e7 (.)
         ],
         'notification_unique' => 'Un compte avec cet email existe déjà. Veuillez vous connecter.',
     ],
@@ -146,14 +297,37 @@ return [
     ],
     'verification' => [
         'title' => 'Vérifier les courriels',
+<<<<<<< HEAD
         'heading' => "Vérification de l'e-mail requise",
+=======
+        'heading' => 'Vérification de l\'e-mail requise',
+>>>>>>> 2024e2e7 (.)
         'submit' => [
             'label' => 'Déconnexion',
         ],
         'notification_success' => 'Vérifiez votre boîte de réception pour les instructions !',
+<<<<<<< HEAD
         'notification_resend' => "L'e-mail de vérification a été renvoyé.",
         'before_proceeding' => 'Avant de continuer, veuillez vérifier votre e-mail pour un lien de vérification.',
         'not_receive' => "Si vous n'avez pas reçu l'e-mail,",
         'request_another' => 'Cliquez ici pour en demander un autre.',
     ],
+=======
+        'notification_resend' => 'L\'e-mail de vérification a été renvoyé.',
+        'before_proceeding' => 'Avant de continuer, veuillez vérifier votre e-mail pour un lien de vérification.',
+        'not_receive' => 'Si vous n\'avez pas reçu l\'e-mail,',
+        'request_another' => 'Cliquez ici pour en demander un autre.',
+    ],
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'actions' => [
+    ],
+>>>>>>> 2024e2e7 (.)
 ];

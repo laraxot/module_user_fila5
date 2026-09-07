@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
+=======
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+>>>>>>> 2024e2e7 (.)
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
@@ -37,6 +42,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     #[\Override]
     public static function getFormSchema(): array
     {
@@ -67,12 +73,18 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
             ->defaultSort('created_at', 'desc');
     }
 
+=======
+>>>>>>> 2024e2e7 (.)
     /**
      * Get the table columns for the resource.
      *
      * @return array<string, Tables\Columns\Column>
      */
+<<<<<<< HEAD
     public static function getTableColumns(): array
+=======
+    public function getTableColumns(): array
+>>>>>>> 2024e2e7 (.)
     {
         return [
             'id' => Tables\Columns\TextColumn::make('id')
@@ -111,7 +123,11 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Get the table actions for the resource.
      *
+<<<<<<< HEAD
      * @return array<string, \Filament\Actions\Action>
+=======
+     * @return array<string, Action>
+>>>>>>> 2024e2e7 (.)
      */
     public static function getTableActions(): array
     {
@@ -124,7 +140,11 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
      * Get the table bulk actions for the resource.
      *
+<<<<<<< HEAD
      * @return array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
+=======
+     * @return array<string, Action|ActionGroup>
+>>>>>>> 2024e2e7 (.)
      */
     public static function getTableBulkActions(): array
     {

@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2024e2e7 (.)
 return [
     'navigation' => [
         'name' => 'Token',
@@ -18,6 +21,7 @@ return [
     'fields' => [
         'name' => [
             'label' => 'name',
+<<<<<<< HEAD
         ],
         'create' => [
             'label' => 'create',
@@ -35,4 +39,45 @@ return [
             'label' => 'reorderRecords',
         ],
     ],
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'create' => [
+            'label' => 'create',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'edit' => [
+            'label' => 'edit',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'delete' => [
+            'label' => 'delete',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'actions' => [
+    ],
+>>>>>>> 2024e2e7 (.)
 ];

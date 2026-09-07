@@ -27,6 +27,7 @@ class SocialProviderResource extends XotBaseResource
 
     protected static ?string $model = SocialProvider::class;
 
+<<<<<<< HEAD
     /**
      * @return array<string, Component>
      */
@@ -72,6 +73,8 @@ class SocialProviderResource extends XotBaseResource
         ];
     }
 
+=======
+>>>>>>> 2024e2e7 (.)
     #[\Override]
     public static function getRelations(): array
     {

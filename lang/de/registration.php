@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2024e2e7 (.)
 return [
     'navigation' => [
         'label' => 'Registrazione',
@@ -89,36 +92,78 @@ return [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il tuo nome',
             'help' => 'Il tuo nome di battesimo',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'last_name' => [
             'label' => 'Cognome',
             'placeholder' => 'Inserisci il tuo cognome',
             'help' => 'Il tuo cognome di famiglia',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci il tuo indirizzo email',
             'help' => 'Indirizzo email valido che utilizzerai per accedere',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Inserisci una password sicura',
             'help' => 'Minimo 8 caratteri con lettere, numeri e simboli',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
             'placeholder' => 'Ripeti la password',
             'help' => 'Inserisci nuovamente la password per confermarla',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'phone' => [
             'label' => 'Telefono',
             'placeholder' => 'Inserisci il numero di telefono',
             'help' => 'Numero di telefono per essere contattato',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'address' => [
             'label' => 'Indirizzo',
             'placeholder' => 'Inserisci il tuo indirizzo completo',
             'help' => 'Via/Piazza e numero civico di residenza',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'city' => [
             'label' => 'Stadt',
@@ -142,21 +187,45 @@ return [
             'label' => 'CAP',
             'placeholder' => 'Inserisci il CAP',
             'help' => 'Codice di avviamento postale',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'country' => [
             'label' => 'Paese',
             'placeholder' => 'Seleziona il paese',
             'help' => 'Paese di residenza',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'fiscal_code' => [
             'label' => 'Codice Fiscale',
             'placeholder' => 'Inserisci il codice fiscale',
             'help' => 'Codice fiscale italiano (16 caratteri)',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'birth_date' => [
             'label' => 'Data di Nascita',
             'placeholder' => 'Seleziona la data di nascita',
             'help' => 'La tua data di nascita nel formato gg/mm/aaaa',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'birth_place' => [
             'label' => 'Geburtsort',
@@ -166,91 +235,197 @@ return [
             'description' => 'Geburtsort für demografische Dokumentation',
             'icon' => 'heroicon-o-map-pin',
             'color' => 'primary',
+<<<<<<< HEAD
+=======
+            'helper_text' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'gender' => [
             'label' => 'Genere',
             'placeholder' => 'Seleziona il genere',
             'help' => 'Genere anagrafico',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'nationality' => [
             'label' => 'Nazionalità',
             'placeholder' => 'Inserisci la nazionalità',
             'help' => 'Nazionalità secondo il documento d\'identità',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'document_type' => [
             'label' => 'Tipo Documento',
             'placeholder' => 'Seleziona il tipo di documento',
             'help' => 'Carta d\'identità, patente, passaporto',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'document_number' => [
             'label' => 'Numero Documento',
             'placeholder' => 'Inserisci il numero del documento',
             'help' => 'Numero identificativo del documento',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'document_issue_date' => [
             'label' => 'Data Rilascio',
             'placeholder' => 'Seleziona la data di rilascio',
             'help' => 'Data in cui il documento è stato rilasciato',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'document_expiry_date' => [
             'label' => 'Data Scadenza',
             'placeholder' => 'Seleziona la data di scadenza',
             'help' => 'Data di scadenza del documento',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'document_issuing_authority' => [
             'label' => 'Autorità Rilascio',
             'placeholder' => 'Inserisci l\'autorità che ha rilasciato il documento',
             'help' => 'Comune, questura o altro ente che ha rilasciato il documento',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'document_file' => [
             'label' => 'File Documento',
             'placeholder' => 'Carica una scansione del documento',
             'help' => 'Scansione fronte/retro del documento in formato PDF o JPG',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'photo' => [
             'label' => 'Foto Profilo',
             'placeholder' => 'Carica una foto profilo',
             'help' => 'Foto recente per il profilo, formato quadrato consigliato',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'cv' => [
             'label' => 'Curriculum Vitae',
             'placeholder' => 'Carica il tuo CV',
             'help' => 'Curriculum vitae aggiornato in formato PDF',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'bio' => [
             'label' => 'Biografia',
             'placeholder' => 'Scrivi una breve biografia',
             'help' => 'Descrizione di te stesso e delle tue competenze',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'professional_title' => [
             'label' => 'Titolo Professionale',
             'placeholder' => 'Inserisci il tuo titolo professionale',
             'help' => 'La tua qualifica o posizione professionale principale',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'terms' => [
             'label' => 'Termini e Condizioni',
             'placeholder' => 'Accetta i termini e condizioni',
             'help' => 'Devi accettare i termini e condizioni per procedere',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'privacy' => [
             'label' => 'Informativa Privacy',
             'placeholder' => 'Accetta l\'informativa sulla privacy',
             'help' => 'Erforderliche Zustimmung zur Verarbeitung personenbezogener Daten',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'marketing' => [
             'label' => 'Comunicazioni Marketing',
             'placeholder' => 'Accetta di ricevere comunicazioni promozionali',
             'help' => 'Consenso facoltativo per ricevere newsletter e promozioni',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'moderation_status' => [
             'label' => 'Stato Moderazione',
             'placeholder' => 'Stato attuale della moderazione',
             'help' => 'Lo stato di verifica del profilo da parte degli amministratori',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'moderation_notes' => [
             'label' => 'Note Moderazione',
             'placeholder' => 'Note del moderatore',
             'help' => 'Eventuali annotazioni del team di moderazione',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
     ],
     'actions' => [
@@ -294,4 +469,9 @@ return [
             'step' => 'Passaggio completato correttamente',
         ],
     ],
+<<<<<<< HEAD
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> 2024e2e7 (.)
 ];

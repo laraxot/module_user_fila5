@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Fix Primary Key Constraint - team_user Table"
+type: concept
+tags: [migration, priy, key]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration-priy-key fix primary key constraint - team_user table"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Fix Primary Key Constraint - team_user Table
 
 ## Data
@@ -114,9 +137,15 @@ $this->tableCreate(static function (Blueprint $table): void {
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Teams Migration Compliance](./teams-migration-laraxot-compliance.md)
 - [Migration Best Practices](../../xot/docs/migration-standards.md)
 - [Primary Key Rules](../../../docs/development/migration_fixes_summary.md)
+=======
+- [Teams owner_id fix](./migration-teams-owner-id-fix.md)
+- [Migration Best Practices](../../xot/docs/migration-standards.md)
+- [Primary Key Rules](../../../../docs/development/migration_fixes_summary.md)
+>>>>>>> 2024e2e7 (.)
 
 ## Status
 
@@ -124,4 +153,7 @@ $this->tableCreate(static function (Blueprint $table): void {
 ✅ **Migrazione funzionante**
 ✅ **Documentazione aggiornata**
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: [DATE]*
+=======
+>>>>>>> 2024e2e7 (.)

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+<<<<<<< HEAD
 use Modules\User\Models\Tenant;
 use Modules\User\Models\TenantUser;
 use Modules\User\Models\User;
@@ -14,6 +15,11 @@ use Modules\User\Models\User;
  *
  * Factory for creating TenantUser model instances for testing and seeding.
  *
+=======
+use Modules\User\Models\TenantUser;
+
+/**
+>>>>>>> 2024e2e7 (.)
  * @extends Factory<TenantUser>
  */
 class TenantUserFactory extends Factory
@@ -30,6 +36,7 @@ class TenantUserFactory extends Factory
      *
      * @return array<string, mixed>
      */
+<<<<<<< HEAD
     public function definition(): array
     {
         return [
@@ -63,4 +70,16 @@ class TenantUserFactory extends Factory
             'user_id' => $user->id,
         ]);
     }
+=======
+    /**
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'tenant_id' => fake()->uuid(),
+            'user_id' => fake()->uuid(),
+        ];
+    }
+>>>>>>> 2024e2e7 (.)
 }

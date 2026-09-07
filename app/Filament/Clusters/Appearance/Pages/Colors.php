@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Appearance\Pages;
 
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
 use Filament\Actions\Action;
 use Filament\Forms;
@@ -31,6 +32,34 @@ class Colors extends Page implements HasForms
     protected static null|string $cluster = Appearance::class;
 
     protected static null|int $navigationSort = 3;
+=======
+use Filament\Actions\Action;
+use Filament\Forms\Components\ColorPicker;
+use Filament\Schemas\Schema;
+use Filament\Support\Exceptions\Halt;
+use Illuminate\Database\Eloquent\Model;
+use Modules\User\Filament\Clusters\Appearance;
+use Modules\Xot\Filament\Pages\XotBasePage;
+
+/**
+ * Pagina Colors nel Cluster Appearance.
+ *
+ * ⚠️ IMPORTANTE: Estende XotBasePage (Standalone), MAI Filament\Pages\Page!
+ *
+ * @property Schema $form
+ *
+ * @see XotBasePage
+ * @see \Modules\User\docs\errori\class-page-not-found.md
+ */
+class Colors extends XotBasePage
+{
+    // $data è già definita in XotBasePage, non ridichiarare!
+    protected string $view = 'user::filament.clusters.appearance.pages.colors';
+
+    protected static ?string $cluster = Appearance::class;
+
+    protected static ?int $navigationSort = 3;
+>>>>>>> 2024e2e7 (.)
 
     public function mount(): void
     {
@@ -44,7 +73,11 @@ class Colors extends Page implements HasForms
     //    ];
     // }
 
+<<<<<<< HEAD
     public function form(Schema $schema): Schema
+=======
+    public function schema(Schema $schema): Schema
+>>>>>>> 2024e2e7 (.)
     {
         return $schema
             ->components([
@@ -85,6 +118,12 @@ class Colors extends Page implements HasForms
         $this->form->fill($data);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return array<Action>
+     */
+>>>>>>> 2024e2e7 (.)
     protected function getUpdateFormActions(): array
     {
         return [

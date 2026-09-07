@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+=======
+---
+title: "User Analytics"
+type: concept
+tags: [user, analytics]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user-analytics user analytics"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./audit-logging.md"
+  - "./autenticazione.md"
+  - "./autorizzazione.md"
+  - "./gestione-teams.md"
+  - "./gestione-utenti.md"
+  - "./legacy-code-cleanup.md"
+  - "./user-traits.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # User Analytics
 
 ## Overview
@@ -43,7 +65,11 @@ Sistema di analisi e monitoraggio degli utenti, inclusi pattern di utilizzo, met
 
 ### Pending
 - Real-time monitoring
+<<<<<<< HEAD
 - Predictive analytics
+=======
+- <nome progetto>ive analytics
+>>>>>>> 2024e2e7 (.)
 - Custom metrics
 - Export system
 

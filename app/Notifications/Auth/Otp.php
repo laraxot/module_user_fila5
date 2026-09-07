@@ -4,12 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\User\Notifications\Auth;
 
+<<<<<<< HEAD
 use Illuminate\Notifications\AnonymousNotifiable;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Modules\User\Datas\PasswordData;
+=======
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Notifications\AnonymousNotifiable;
+use Illuminate\Notifications\Messages\MailMessage;
+use Illuminate\Notifications\Notification;
+use Modules\User\Datas\PasswordData;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+>>>>>>> 2024e2e7 (.)
 use Modules\Xot\Contracts\UserContract;
 
 class Otp extends Notification implements ShouldQueue
@@ -29,7 +39,11 @@ class Otp extends Notification implements ShouldQueue
     /**
      * Get the notification's delivery channels.
      *
+<<<<<<< HEAD
      * @param  mixed  $_notifiable L'entità da notificare
+=======
+     * @param  mixed  $_notifiable  L'entità da notificare
+>>>>>>> 2024e2e7 (.)
      * @return array<int, string>
      */
     public function via(mixed $_notifiable): array
@@ -39,6 +53,7 @@ class Otp extends Notification implements ShouldQueue
 
     /**
      * Get the mail representation of the notification.
+<<<<<<< HEAD
      *
      * @param AnonymousNotifiable $notifiable
      * @return MailMessage
@@ -58,14 +73,39 @@ class Otp extends Notification implements ShouldQueue
             ->line(__('user::otp.mail.line3'))
             ->action('vai', url('/'))
             ->salutation(__('user::otp.mail.salutation', ['app_name' => $app_name]));
+=======
+     */
+    public function toMail(AnonymousNotifiable $notifiable): MailMessage
+    {
+        $pwd = PasswordData::make();
+        $app_name = SafeStringCastAction::cast(config('app.name'));
+
+        $mailMessage = new MailMessage;
+        $mailMessage = $mailMessage->template('user::notifications.email');
+        $mailMessage = $mailMessage->subject(SafeStringCastAction::cast(__('user::otp.mail.subject')));
+        $mailMessage = $mailMessage->greeting(SafeStringCastAction::cast(__('user::otp.mail.greeting')));
+        $mailMessage = $mailMessage->line(SafeStringCastAction::cast(__('user::otp.mail.line1', ['code' => $this->code])));
+        $mailMessage = $mailMessage->line(SafeStringCastAction::cast(__('user::otp.mail.line2', ['minutes' => $pwd->otp_expiration_minutes])));
+        $mailMessage = $mailMessage->line(SafeStringCastAction::cast(__('user::otp.mail.line3')));
+        $mailMessage = $mailMessage->action('vai', url('/'));
+
+        return $mailMessage
+            ->salutation(SafeStringCastAction::cast(__('user::otp.mail.salutation', ['app_name' => $app_name])));
+>>>>>>> 2024e2e7 (.)
     }
 
     /**
      * Get the array representation of the notification.
      *
+<<<<<<< HEAD
      * @return array
      */
     public function toArray(UserContract $notifiable)
+=======
+     * @return array<string, mixed>
+     */
+    public function toArray(UserContract $notifiable): array
+>>>>>>> 2024e2e7 (.)
     {
         return [];
     }

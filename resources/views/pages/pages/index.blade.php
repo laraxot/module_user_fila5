@@ -16,10 +16,20 @@ render(function (View $view) {
     $hasCategory = \Schema::hasColumn('pages', 'category');
 
     // Recupero le pagine con paginazione (12 per pagina)
+<<<<<<< HEAD
     $pages = Page::when(request()->has('q'), fn($query) => $query->where(
         'title',
         'like',
         '%' . request()->get('q') . '%',
+=======
+    $searchQuery = request()->query('q');
+    $searchTerm = is_string($searchQuery) ? $searchQuery : '';
+
+    $pages = Page::when(request()->has('q'), fn($query) => $query->where(
+        'title',
+        'like',
+        '%' . $searchTerm . '%',
+>>>>>>> 2024e2e7 (.)
     ));
 
     // Applichiamo il filtro per categoria solo se la colonna esiste

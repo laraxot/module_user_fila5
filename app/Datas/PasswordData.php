@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Datas;
 
+<<<<<<< HEAD
 use RuntimeException;
 use InvalidArgumentException;
 use Filament\Schemas\Components\Component;
@@ -19,6 +20,13 @@ use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\HtmlString;
 use Illuminate\Validation\Rules\Password;
 use Modules\Tenant\Services\TenantService;
+=======
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\TextInput as FormsTextInput;
+use Illuminate\Validation\Rules\Password;
+use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
+use Modules\User\Traits\PasswordValidationRules;
+>>>>>>> 2024e2e7 (.)
 use Spatie\LaravelData\Data;
 
 /**
@@ -26,6 +34,13 @@ use Spatie\LaravelData\Data;
  */
 class PasswordData extends Data
 {
+<<<<<<< HEAD
+=======
+    use PasswordValidationRules;
+
+    private static ?self $instance = null;
+
+>>>>>>> 2024e2e7 (.)
     public function __construct(
         public int $otp_expiration_minutes = 5,
         public int $otp_length = 6,
@@ -37,6 +52,7 @@ class PasswordData extends Data
         public bool $symbols = true,
         public bool $uncompromised = true,
         public int $compromisedThreshold = 0,
+<<<<<<< HEAD
         public null|string $failMessage = null,
         private null|string $field_name = null,
     ) {}
@@ -53,6 +69,20 @@ class PasswordData extends Data
         if (!self::$instance) {
             /** @var array<string, mixed> $data */
             $data = TenantService::getConfig('password');
+=======
+        public ?string $failMessage = null,
+        private ?string $field_name = null,
+    ) {
+    }
+
+    /**
+     * Crea un'istanza della classe PasswordData.
+     */
+    public static function make(): self
+    {
+        if (! self::$instance) {
+            $data = app(GetTenantConfigArrayAction::class)->execute('password');
+>>>>>>> 2024e2e7 (.)
             self::$instance = self::from($data);
         }
 
@@ -103,7 +133,11 @@ class PasswordData extends Data
      */
     public function getHelperText(): string
     {
+<<<<<<< HEAD
         $msg = 'La password deve essere composta da minimo ' . $this->min . ' caratteri';
+=======
+        $msg = 'La password deve essere composta da minimo '.$this->min.' caratteri';
+>>>>>>> 2024e2e7 (.)
 
         if ($this->mixedCase) {
             $msg .= ', contenere almeno una lettera maiuscola e una minuscola';
@@ -134,12 +168,17 @@ class PasswordData extends Data
     public function setFieldName(string $field_name): self
     {
         $this->field_name = $field_name;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2024e2e7 (.)
         return $this;
     }
 
     /**
      * Get the password form component.
      */
+<<<<<<< HEAD
     public function getPasswordFormComponent(string $field_name): TextInput
     {
         return TextInput::make($field_name)
@@ -147,6 +186,13 @@ class PasswordData extends Data
             ->required()
             ->label(__('Password'))
             ->placeholder(__('Inserisci la tua password'))
+=======
+    public function getPasswordFormComponent(string $field_name): FormsTextInput
+    {
+        return FormsTextInput::make($field_name)
+            ->password()
+            ->required()
+>>>>>>> 2024e2e7 (.)
             ->validationMessages($this->getValidationMessages())
             ->helperText($this->getHelperText());
     }
@@ -154,6 +200,7 @@ class PasswordData extends Data
     /**
      * Get the password confirmation form component.
      */
+<<<<<<< HEAD
     public function getPasswordConfirmationFormComponent(): TextInput
     {
         if ($this->field_name === null) {
@@ -167,6 +214,17 @@ class PasswordData extends Data
             ->required()
             ->label(__('Conferma Password'))
             ->placeholder(__('Conferma la tua password'))
+=======
+    public function getPasswordConfirmationFormComponent(): FormsTextInput
+    {
+        if (null === $this->field_name) {
+            throw new \RuntimeException('Il nome del campo password non è stato impostato. Utilizzare setFieldName() prima di chiamare questo metodo.');
+        }
+
+        return FormsTextInput::make('password_confirmation')
+            ->password()
+            ->required()
+>>>>>>> 2024e2e7 (.)
             ->same($this->field_name)
             ->validationMessages($this->getValidationMessages());
     }
@@ -179,7 +237,11 @@ class PasswordData extends Data
     public function getPasswordFormComponents(string $field_name): array
     {
         if (empty($field_name)) {
+<<<<<<< HEAD
             throw new InvalidArgumentException('Il nome del campo password non può essere vuoto');
+=======
+            throw new \InvalidArgumentException('Il nome del campo password non può essere vuoto');
+>>>>>>> 2024e2e7 (.)
         }
 
         $this->setFieldName($field_name);
@@ -190,7 +252,14 @@ class PasswordData extends Data
         ];
     }
 
+<<<<<<< HEAD
     public static function getFormSchema(): array
+=======
+    /**
+     * @return array<string, FormsTextInput>
+     */
+    public function getFormSchema(): array
+>>>>>>> 2024e2e7 (.)
     {
         return [
             'password' => FormsTextInput::make('password')

@@ -5,11 +5,14 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\FeatureResource\Pages;
 
 use Filament\Tables\Columns\Column;
+<<<<<<< HEAD
 use Override;
 use Filament\Actions\CreateAction;
 use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\ViewAction;
+=======
+>>>>>>> 2024e2e7 (.)
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Modules\User\Filament\Resources\FeatureResource;
@@ -22,7 +25,11 @@ class ListFeatures extends XotBaseListRecords
     /**
      * @return array<string, Column>
      */
+<<<<<<< HEAD
     #[Override]
+=======
+    #[\Override]
+>>>>>>> 2024e2e7 (.)
     public function getTableColumns(): array
     {
         return [

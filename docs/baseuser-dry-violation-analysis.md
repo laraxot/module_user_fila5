@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "BaseUser - Analisi Violazione Principio DRY"
+type: concept
+tags: [baseuser, dry, violation, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "baseuser-dry-violation-analysis baseuser - analisi violazione principio dry"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # BaseUser - Analisi Violazione Principio DRY
 
 **Data**: 15 Ottobre 2025  
@@ -432,8 +455,13 @@ test('hasRole works with guard parameter', function () {
 - [API Reference](https://github.com/spatie/laravel-permission/blob/main/src/Traits/HasRoles.php)
 
 ### Root Progetto
+<<<<<<< HEAD
 - [DRY Violations](../../../docs/dry-violations-analysis.md)
 - [Code Quality](../../../docs/code-quality-analysis.md)
+=======
+- [DRY Violations](../../../../docs/dry-violations-analysis.md)
+- [Code Quality](../../../../docs/code-quality-analysis.md)
+>>>>>>> 2024e2e7 (.)
 
 ## Conclusioni
 

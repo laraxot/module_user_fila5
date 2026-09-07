@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models\Policies;
 
+<<<<<<< HEAD
 use Modules\User\Models\PasswordReset;
 use Modules\Xot\Contracts\UserContract;
 
@@ -68,4 +69,8 @@ class PasswordResetPolicy extends UserBasePolicy
     {
         return $user->hasPermissionTo('password-reset.force-delete') || $user->hasRole('super-admin');
     }
+=======
+class PasswordResetPolicy extends UserBasePolicy
+{
+>>>>>>> 2024e2e7 (.)
 }

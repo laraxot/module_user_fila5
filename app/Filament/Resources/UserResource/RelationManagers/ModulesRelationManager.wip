@@ -28,7 +28,11 @@ class ModulesRelationManager extends XotBaseRelationManager
     protected static string $relationship = 'modules';
 
     /**
+<<<<<<< HEAD
      * @return array<string, \Filament\Forms\Components\Component>
+=======
+     * @return array<string, \Filament\Schemas\Components\Component>
+>>>>>>> 2024e2e7 (.)
      */
     public function getFormSchema(): array
     {

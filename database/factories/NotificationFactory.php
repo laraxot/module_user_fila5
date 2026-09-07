@@ -6,6 +6,7 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\Notification;
+<<<<<<< HEAD
 use Modules\User\Models\User;
 
 /**
@@ -13,24 +14,37 @@ use Modules\User\Models\User;
  *
  * Factory for creating Notification model instances for testing and seeding.
  *
+=======
+
+/**
+>>>>>>> 2024e2e7 (.)
  * @extends Factory<Notification>
  */
 class NotificationFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
+<<<<<<< HEAD
      *
      * @var class-string<Notification>
+=======
+>>>>>>> 2024e2e7 (.)
      */
     protected $model = Notification::class;
 
     /**
      * Define the model's default state.
+<<<<<<< HEAD
      *
+=======
+     */
+    /**
+>>>>>>> 2024e2e7 (.)
      * @return array<string, mixed>
      */
     public function definition(): array
     {
+<<<<<<< HEAD
         return [
             'id' => $this->faker->uuid(),
             'type' => $this->faker->randomElement([
@@ -124,5 +138,8 @@ class NotificationFactory extends Factory
         return $this->state(fn(array $_attributes): array => [
             'type' => $type,
         ]);
+=======
+        return [];
+>>>>>>> 2024e2e7 (.)
     }
 }

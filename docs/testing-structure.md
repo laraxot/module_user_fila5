@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Struttura dei Tests del Modulo User"
+type: concept
+tags: [testing, structure]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing-structure struttura dei tests del modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Struttura dei Tests del Modulo User
 
 ## Panoramica
@@ -286,13 +309,20 @@ dump($variable);
 ## Collegamenti
 
 - [README Modulo User](../readme.md)
+<<<<<<< HEAD
 - [Best Practices Testing](../../../project_docs/testing-best-practices.md)
+=======
+- [Best Practices Testing](../../../../docs/project/testing-best-practices.md)
+>>>>>>> 2024e2e7 (.)
 - [Architettura Modulo User](../architecture/readme.md)
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
 ---
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
+=======
+>>>>>>> 2024e2e7 (.)
 
 
 

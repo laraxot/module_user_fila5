@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "LoginWidget Translation Audit - Gennaio 2025"
+type: concept
+tags: [login, widget, translation, audit]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "login-widget-translation-audit loginwidget translation audit - gennaio 2025"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo
@@ -64,7 +87,11 @@ return [
 
 ## Collegamenti
 - [Widget Translation Rules](widget-translation-rules.md)
+<<<<<<< HEAD
 - [Root Translation Guidelines](../../../../project_docs/translation-standards.md)
+=======
+- [Root Translation Guidelines](../../../../../docs/project/translation-standards.md)
+>>>>>>> 2024e2e7 (.)
 ### 2. Struttura Completa delle Traduzioni
 Ogni file `messages.php` include categorie complete di messaggi:
 

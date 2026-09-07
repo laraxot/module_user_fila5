@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Registrazione Odontoiatra (Doctor)"
+type: concept
+tags: [dor, registration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "dor-registration registrazione odontoiatra (doctor)"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Registrazione Odontoiatra (Doctor)
 
 ## Panoramica
@@ -47,7 +70,11 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class DoctorResource extends XotBaseResource
 {
+<<<<<<< HEAD
     public static function getFormSchemaWidget(): array
+=======
+    public function getFormSchemaWidget(): array
+>>>>>>> 2024e2e7 (.)
     {
         return [
             // Schema del form
@@ -105,7 +132,11 @@ class User extends Authenticatable
 ### Form Schema
 ```php
 // /laravel/Modules/Patient/app/Filament/Resources/DoctorResource.php
+<<<<<<< HEAD
 public static function getFormSchemaWidget(): array
+=======
+public function getFormSchemaWidget(): array
+>>>>>>> 2024e2e7 (.)
 {
     return [
         Forms\Components\TextInput::make('name')

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fix Primary Key Constraint - team_user Table
 
 ## Data
@@ -125,3 +126,21 @@ $this->tableCreate(static function (Blueprint $table): void {
 ✅ **Documentazione aggiornata**
 
 *Ultimo aggiornamento: 2025-01-15*
+=======
+---
+module: theme
+topic: migration-primary-key-fix
+canonical: ../../../Themes/docs/shared-components/migration-primary-key-fix.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/migration-primary-key-fix.md
+>>>>>>> 2024e2e7 (.)

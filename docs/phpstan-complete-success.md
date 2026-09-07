@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPStan Level 10 - Successo Completo
 
 ## 🎉 Risultato Finale
@@ -56,3 +57,21 @@ Tutte le correzioni seguono rigorosamente:
 - [Filament Class Extension Rules](../../../../.cursor/rules/filament-class-extension-rules.mdc)
 - [PHPStan Progress Report](./phpstan-progress-report.md)
 - [PHPStan Corrections Summary](./phpstan-corrections-summary-2025.md)
+=======
+---
+module: theme
+topic: phpstan-complete-success
+canonical: ../../../Themes/docs/shared-components/phpstan-complete-success.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-complete-success.md
+>>>>>>> 2024e2e7 (.)

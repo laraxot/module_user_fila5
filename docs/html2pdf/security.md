@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Configurazione della Sicurezza
 
 A partire dalla versione 5.3, `Html2Pdf` ha introdotto un `Security Service` per controllare l'accesso a risorse esterne (immagini, fogli di stile, etc.) e prevenire vulnerabilità.
@@ -153,3 +154,18 @@ public function isUriValid(string $uri): bool
     return true;
 }
 ```
+=======
+---
+module: theme
+topic: security
+canonical: ../../../../Themes/docs/shared-components/security-Modules.md
+related:
+  - "./advanced.md"
+  - "./index.md"
+  - "./laravel.md"
+  - "./styling.md"
+  - "./usage.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/security-Modules.md
+>>>>>>> 2024e2e7 (.)

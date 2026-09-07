@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+=======
+---
+title: "ChangePasswordCommand"
+type: concept
+tags: [change, password, command]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "change-password-command changepasswordcommand"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./assign-module-command.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands.md"
+  - "./readme.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # ChangePasswordCommand
 
 ## Panoramica
@@ -364,5 +383,8 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - ✅ **Gestione Password**: Hash e scadenza
 - ✅ **Eventi**: Dispatched NewPasswordSet
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-27*
+=======
+>>>>>>> 2024e2e7 (.)
 

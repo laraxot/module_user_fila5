@@ -1,8 +1,35 @@
+<<<<<<< HEAD
+=======
+---
+title: "GDPR Compliance - User Registration Module"
+type: concept
+tags: [gdpr, compliance]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "gdpr-compliance gdpr compliance - user registration module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # GDPR Compliance - User Registration Module
 
 ## Overview
 
+<<<<<<< HEAD
 Questo documento definisce i requisiti GDPR (General Data Protection Regulation - Regolamento UE 2016/679) per il sistema di registrazione utenti nel modulo User di LaravelPizza.com, implementato secondo D.Lgs. 101/2018 (adeguamento italiano al GDPR) e le best practices AGID.
+=======
+Questo documento definisce i requisiti GDPR (General Data Protection Regulation - Regolamento UE 2016/679) per il sistema di registrazione utenti nel modulo User di <nome progetto>.com, implementato secondo D.Lgs. 101/2018 (adeguamento italiano al GDPR) e le best practices AGID.
+>>>>>>> 2024e2e7 (.)
 
 ## Legal Framework
 
@@ -162,7 +189,11 @@ L'AGID fornisce linee guida per l'implementazione della privacy nei servizi digi
 
 ### Dati Personali Raccolti
 
+<<<<<<< HEAD
 Il modulo User di LaravelPizza.com raccoglie i seguenti dati personali durante la registrazione:
+=======
+Il modulo User di <nome progetto>.com raccoglie i seguenti dati personali durante la registrazione:
+>>>>>>> 2024e2e7 (.)
 
 | Campo | Tipo | Base Giuridica | Obbligatorio | Conservazione |
 |-------|------|----------------|--------------|---------------|
@@ -179,7 +210,11 @@ Il modulo User di LaravelPizza.com raccoglie i seguenti dati personali durante l
 Per la registrazione utenti, la base giuridica principale è:
 
 **Articolo 6(1)(b) GDPR - Esecuzione di un contratto**
+<<<<<<< HEAD
 - Il trattamento dei dati è necessario per l'esecuzione del contratto di servizio tra l'utente e LaravelPizza.com
+=======
+- Il trattamento dei dati è necessario per l'esecuzione del contratto di servizio tra l'utente e <nome progetto>.com
+>>>>>>> 2024e2e7 (.)
 - Senza questi dati, non è possibile creare un account e fornire i servizi
 
 **Articolo 6(1)(f) GDPR - Legittimo interesse**
@@ -200,13 +235,21 @@ Il modulo User richiede i seguenti consensi durante la registrazione:
 
 #### 1. Privacy Policy (Obbligatorio)
 
+<<<<<<< HEAD
 **Descrizione**: Accettazione della privacy policy di LaravelPizza.com
+=======
+**Descrizione**: Accettazione della privacy policy di <nome progetto>.com
+>>>>>>> 2024e2e7 (.)
 
 **Base Giuridica**: Articolo 13 GDPR - Obbligo di informazione
 
 **Testo**: 
 ```
+<<<<<<< HEAD
 Ho letto e compreso l'Informativa Privacy di LaravelPizza.com e accetto il 
+=======
+Ho letto e compreso l'Informativa Privacy di <nome progetto>.com e accetto il 
+>>>>>>> 2024e2e7 (.)
 trattamento dei miei dati personali come descritto nella policy.
 ```
 
@@ -224,7 +267,11 @@ trattamento dei miei dati personali come descritto nella policy.
 
 **Testo**:
 ```
+<<<<<<< HEAD
 Ho letto e accetto i Termini e Condizioni d'uso di LaravelPizza.com.
+=======
+Ho letto e accetto i Termini e Condizioni d'uso di <nome progetto>.com.
+>>>>>>> 2024e2e7 (.)
 ```
 
 **Dettagli**:
@@ -242,7 +289,11 @@ Ho letto e accetto i Termini e Condizioni d'uso di LaravelPizza.com.
 **Testo**:
 ```
 Acconsento al trattamento dei miei dati personali (nome, cognome, email) 
+<<<<<<< HEAD
 per le finalità di creazione e gestione del mio account utente su LaravelPizza.com, 
+=======
+per le finalità di creazione e gestione del mio account utente su <nome progetto>.com, 
+>>>>>>> 2024e2e7 (.)
 necessarie per l'erogazione dei servizi richiesti.
 ```
 
@@ -262,7 +313,11 @@ necessarie per l'erogazione dei servizi richiesti.
 **Testo**:
 ```
 Acconsento a ricevere comunicazioni marketing e promozionali da parte di 
+<<<<<<< HEAD
 LaravelPizza.com via email, relative a eventi meetup, nuove funzionalità 
+=======
+<nome progetto>.com via email, relative a eventi meetup, nuove funzionalità 
+>>>>>>> 2024e2e7 (.)
 e offerte speciali. Il consenso è facoltativo e posso revocarlo in qualsiasi momento.
 ```
 
@@ -605,7 +660,11 @@ Il form di registrazione deve seguire questi principi UX/GDPR:
 
 **Esempio di Banner**:
 ```
+<<<<<<< HEAD
 LaravelPizza.com utilizza cookie tecnici per garantire il funzionamento del sito 
+=======
+<nome progetto>.com utilizza cookie tecnici per garantire il funzionamento del sito 
+>>>>>>> 2024e2e7 (.)
 e cookie analitici e marketing per migliorare l'esperienza utente. 
 
 [Accetta tutto] [Rifiuta tutto] [Gestisci preferenze]
@@ -623,9 +682,15 @@ Secondo l'Articolo 13 GDPR, la privacy policy deve contenere:
 
 ```
 TITOLARE DEL TRATTAMENTO
+<<<<<<< HEAD
 LaravelPizza.com
 Email: privacy@laravelpizza.com
 PEC: privacy@laravelpizza.pec.it
+=======
+<nome progetto>.com
+Email: privacy@<nome progetto>.com
+PEC: privacy@<nome progetto>.pec.it
+>>>>>>> 2024e2e7 (.)
 Indirizzo: [Indirizzo completo]
 Telefono: [Numero di telefono]
 ```
@@ -673,7 +738,11 @@ Durante la registrazione raccogliamo i seguenti dati:
 ```
 DESTINATARI DEI DATI
 I dati personali possono essere comunicati a:
+<<<<<<< HEAD
 - Personale autorizzato di LaravelPizza.com
+=======
+- Personale autorizzato di <nome progetto>.com
+>>>>>>> 2024e2e7 (.)
 - Fornitori di servizi tecnici (hosting, email, backup)
 - Autorità competenti su richiesta
 ```
@@ -730,7 +799,11 @@ previste dal GDPR (Standard Contractual Clauses, Decisioni di adeguatezza).
 
 ```
 MODIFICHE ALLA PRIVACY POLICY
+<<<<<<< HEAD
 LaravelPizza.com si riserva il diritto di modificare la presente privacy 
+=======
+<nome progetto>.com si riserva il diritto di modificare la presente privacy 
+>>>>>>> 2024e2e7 (.)
 policy per adeguarla alla normativa vigente. Le modifiche saranno comunicate 
 tramite notifica sul sito e, quando necessario, via email.
 ```

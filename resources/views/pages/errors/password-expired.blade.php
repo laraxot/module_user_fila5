@@ -14,7 +14,10 @@ use function Laravel\Folio\withTrashed;
 middleware(['auth']);
 name('errors.password-expired');
 //Expression "new class extends \Livewire\Volt\Component…" on a separate line does not do anything.
+<<<<<<< HEAD
 // @phpstan-ignore expr.resultUnused
+=======
+>>>>>>> 2024e2e7 (.)
 new class() extends Component {};
 
 ?>

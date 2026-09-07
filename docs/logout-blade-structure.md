@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura del Logout Blade nel Theme One
 
 ## Posizione Corretta
@@ -116,3 +117,21 @@ class LogoutPage
 - [Documentazione Volt](./VOLT_LOGOUT.md)
 - [Best Practices Routing](./ROUTING_BEST_PRACTICES.md)
 - [Struttura Directory](./DIRECTORY_STRUCTURE_CHECKLIST.md) 
+=======
+---
+module: theme
+topic: logout-blade-structure
+canonical: ../../../Themes/docs/shared-components/logout-blade-structure.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-structure.md
+>>>>>>> 2024e2e7 (.)

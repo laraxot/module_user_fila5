@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Corretta del Trait HasTeams - Filosofia Laraxot
 
 ## Comprensione della Filosofia `belongsToManyX`
@@ -530,3 +531,21 @@ trait HasTeams
 - [docs/phpstan_fixes.md](../../../docs/phpstan_fixes.md)
 - [Modules/Xot/docs/RELATION_X.md](../../xot/docs/relation_x.md)
 
+=======
+---
+module: theme
+topic: traits-hasteams-analisi-corretta
+canonical: ../../../Themes/docs/shared-components/traits-hasteams-analisi-corretta.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/traits-hasteams-analisi-corretta.md
+>>>>>>> 2024e2e7 (.)

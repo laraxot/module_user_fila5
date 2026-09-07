@@ -1,9 +1,36 @@
+<<<<<<< HEAD
+=======
+---
+title: "Case Sensitivity Rules - User Module"
+type: rule
+tags: [case, sensitivity, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "case-sensitivity-rules case sensitivity rules - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./auth-components-best-practices.md"
+  - "./auth-widget-rules.md"
+  - "./auth-widget.md"
+  - "./case-sensitivity.md"
+  - "./component-verification-rules.md"
+  - "./component-verification.md"
+  - "./dependency-rules.md"
+  - "./dependency.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Case Sensitivity Rules - User Module
 
 ## Problema / Problem
 
 **NON possono esistere file con lo stesso nome che differiscono solo per maiuscole/minuscole nella stessa directory.**
 
+<<<<<<< HEAD
+=======
+Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-sensitivity-rules.md)
+>>>>>>> 2024e2e7 (.)
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../xot/docs/case-sensitivity-rules.md)
 
 ## File/Directory Rimossi da User Module
@@ -167,4 +194,8 @@ grep -r "Database/seeders" .
   - 29 factory files
   - 23 migration files
   - 5 seeder files
+<<<<<<< HEAD
   - Total: 57 duplicate files eliminated
+=======
+  - Total: 57 duplicate files eliminated
+>>>>>>> 2024e2e7 (.)

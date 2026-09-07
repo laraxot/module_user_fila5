@@ -7,7 +7,10 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use Modules\Xot\Datas\XotData;
+=======
+>>>>>>> 2024e2e7 (.)
 
 Route::namespace('Socialite')
     ->name('socialite.')
@@ -17,5 +20,13 @@ Route::namespace('Socialite')
             // 'LoginController@redirectToProvider',
             'RedirectToProviderController',
         )->name('oauth.redirect');
+<<<<<<< HEAD
+=======
+        // Route pubblica FO cittadini (senza prefisso /admin)
+        Route::get(
+            '/auth/social/{provider}',
+            'RedirectToProviderController',
+        )->name('oauth.fo.redirect');
+>>>>>>> 2024e2e7 (.)
         Route::get('/sso/{provider}/callback', 'ProcessCallbackController')->name('oauth.callback');
     });

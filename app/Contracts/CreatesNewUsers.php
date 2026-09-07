@@ -14,6 +14,11 @@ interface CreatesNewUsers
 {
     /**
      * Create a newly registered user.
+<<<<<<< HEAD
+=======
+     *
+     * @param array<string, mixed> $input
+>>>>>>> 2024e2e7 (.)
      */
     public function create(array $input): UserContract;
 }

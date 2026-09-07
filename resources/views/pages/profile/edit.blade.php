@@ -2,6 +2,13 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+/**
+ * ---.
+ */
+
+>>>>>>> 2024e2e7 (.)
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -17,11 +24,22 @@ use Livewire\Volt\Component;
 use Modules\User\Models\User;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
+=======
+use function Livewire\Volt\layout;
+>>>>>>> 2024e2e7 (.)
 use function Laravel\Folio\middleware;
 use function Laravel\Folio\name;
 
 name('profile.edit');
+<<<<<<< HEAD
 middleware(['auth', 'verified']);
+=======
+layout('x-layouts.app');
+middleware(['auth', 'verified']);
+// middleware(['web']); // redundant if auth is used, but safe to add if needed.
+// Actually, FolioVoltServiceProvider adds web to everything now.
+>>>>>>> 2024e2e7 (.)
 
 /**
  * Profile edit component for managing user profile, password updates, and account deletion.
@@ -62,10 +80,17 @@ $component = new class extends Component {
     /**
      * User ID (locked to prevent tampering).
      *
+<<<<<<< HEAD
      * @var int
      */
     #[Locked]
     public int $user_id = 0;
+=======
+     * @var string
+     */
+    #[Locked]
+    public string $user_id = '';
+>>>>>>> 2024e2e7 (.)
 
     /**
      * Current password for verification.
@@ -106,6 +131,10 @@ $component = new class extends Component {
     public function mount(): void
     {
         try {
+<<<<<<< HEAD
+=======
+            /** @var User|null $user */
+>>>>>>> 2024e2e7 (.)
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated');
             Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
@@ -114,12 +143,20 @@ $component = new class extends Component {
             $this->first_name = (string) ($user->first_name ?? '');
             $this->last_name = (string) ($user->last_name ?? '');
             $this->email = (string) ($user->email ?? '');
+<<<<<<< HEAD
             $this->user_id = (int) ($user->id ?? 0);
+=======
+            $this->user_id = (string) ($user->id ?? '');
+>>>>>>> 2024e2e7 (.)
 
             Assert::stringNotEmpty($this->first_name, 'User first name cannot be empty');
             Assert::stringNotEmpty($this->last_name, 'User last name cannot be empty');
             Assert::stringNotEmpty($this->email, 'User email cannot be empty');
+<<<<<<< HEAD
             Assert::greaterThan($this->user_id, 0, 'User ID must be positive');
+=======
+            Assert::stringNotEmpty($this->user_id, 'User ID cannot be empty');
+>>>>>>> 2024e2e7 (.)
 
             // Validate email format
             Assert::true(filter_var($this->email, FILTER_VALIDATE_EMAIL) !== false, 'User email must be valid');
@@ -173,7 +210,11 @@ $component = new class extends Component {
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for profile update');
             Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+<<<<<<< HEAD
             Assert::same($this->user_id, (int) $user->id, 'User ID mismatch detected');
+=======
+            Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
+>>>>>>> 2024e2e7 (.)
 
             // Check if email has changed for additional validation
             $emailChanged = $user->email !== $validated['email'];
@@ -187,19 +228,32 @@ $component = new class extends Component {
             }
 
             // Update user data with type casting
+<<<<<<< HEAD
+=======
+            /** @var User $user */
+>>>>>>> 2024e2e7 (.)
             $user->fill([
                 'first_name' => trim($validated['first_name']),
                 'last_name' => trim($validated['last_name']),
                 'email' => strtolower(trim($validated['email'])),
             ]);
 
+<<<<<<< HEAD
             // Reset email verification if email changed
+=======
+            // Reset email verification
+            /** @var User $user */
+>>>>>>> 2024e2e7 (.)
             if ($emailChanged && $user->hasVerifiedEmail()) {
                 $user->email_verified_at = null;
             }
 
             // Log before saving to capture original values
+<<<<<<< HEAD
             Log::info('Updating user profile', [
+=======
+            Log::debug('Updating user profile', [
+>>>>>>> 2024e2e7 (.)
                 'user_id' => $user->id,
                 'old_first_name' => $user->first_name,
                 'new_first_name' => $validated['first_name'],
@@ -212,13 +266,26 @@ $component = new class extends Component {
                 'user_agent' => request()->userAgent(),
             ]);
 
+<<<<<<< HEAD
+=======
+            /** @var User $user */
+>>>>>>> 2024e2e7 (.)
             $success = $user->save();
             Assert::true($success, 'Failed to save user profile');
 
             // Log successful profile update for audit trail
+<<<<<<< HEAD
             Log::info('User profile updated successfully', [
                 'user_id' => $user->id,
                 'changes' => $user->getChanges(),
+=======
+            /** @var array<string, mixed> $changes */
+            $changes = $user->getChanges();
+
+            Log::debug('Profile updated', [
+                'user_id' => $user->id,
+                'changes' => $changes,
+>>>>>>> 2024e2e7 (.)
                 'ip_address' => request()->ip(),
                 'user_agent' => request()->userAgent(),
             ]);
@@ -234,7 +301,11 @@ $component = new class extends Component {
             session()->flash('status', $message);
 
             // Send email verification if email changed
+<<<<<<< HEAD
             if ($emailChanged) {
+=======
+            if ($emailChanged && null === $user->email_verified_at && $user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail) {
+>>>>>>> 2024e2e7 (.)
                 $user->sendEmailVerificationNotification();
             }
         } catch (\Illuminate\Validation\ValidationException $e) {
@@ -282,10 +353,18 @@ $component = new class extends Component {
                 'password_confirmation' => ['required'],
             ]);
 
+<<<<<<< HEAD
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for password update');
             Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
             Assert::same($this->user_id, (int) $user->id, 'User ID mismatch detected');
+=======
+            /** @var User $user */
+            $user = Auth::user();
+            Assert::notNull($user, 'User must be authenticated for password update');
+            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+            Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
+>>>>>>> 2024e2e7 (.)
 
             // Validate password strength and format
             Assert::stringNotEmpty($this->current_password, 'Current password cannot be empty');
@@ -313,7 +392,11 @@ $component = new class extends Component {
             event(new PasswordReset($user));
 
             // Log successful password update for audit trail
+<<<<<<< HEAD
             Log::info('User password updated successfully', [
+=======
+            Log::debug('User password updated successfully', [
+>>>>>>> 2024e2e7 (.)
                 'user_id' => $user->id,
                 'email' => $user->email,
                 'ip_address' => request()->ip(),
@@ -375,7 +458,11 @@ $component = new class extends Component {
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for account deletion');
             Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+<<<<<<< HEAD
             Assert::same($this->user_id, (int) $user->id, 'User ID mismatch detected');
+=======
+            Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
+>>>>>>> 2024e2e7 (.)
 
             // Validate deletion password
             Assert::stringNotEmpty($this->delete_password, 'Password cannot be empty for account deletion');
@@ -396,7 +483,11 @@ $component = new class extends Component {
             ];
 
             // Log account deletion for audit trail (before deletion)
+<<<<<<< HEAD
             Log::info('User account deletion initiated', $userData);
+=======
+            Log::debug('User account deletion initiated', $userData);
+>>>>>>> 2024e2e7 (.)
 
             // Logout user before deletion
             Auth::logout();
@@ -406,11 +497,19 @@ $component = new class extends Component {
             request()->session()->regenerateToken();
 
             // Delete the user account
+<<<<<<< HEAD
+=======
+            /** @var User $user */
+>>>>>>> 2024e2e7 (.)
             $deleted = $user->delete();
             Assert::true($deleted, 'Failed to delete user account');
 
             // Log successful deletion
+<<<<<<< HEAD
             Log::info('User account deleted successfully', $userData);
+=======
+            Log::debug('User account deleted successfully', $userData);
+>>>>>>> 2024e2e7 (.)
 
             // Redirect to home with success message
             return Redirect::to('/')->with('status', 'Your account has been deleted successfully.');

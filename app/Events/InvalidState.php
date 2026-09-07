@@ -20,5 +20,10 @@ class InvalidState
      */
     public function __construct(
         public InvalidStateException $exception,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 2024e2e7 (.)
 }

@@ -3,10 +3,15 @@
 /**
  * --.
  */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2024e2e7 (.)
 declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\RelationManagers;
 
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Override;
 use Filament\Forms\Components\TextInput;
@@ -20,6 +25,18 @@ use Filament\Forms;
 use Filament\Schemas\Schema;
 use Filament\Tables;
 use Filament\Tables\Table;
+=======
+use Filament\Actions\Action;
+use Filament\Actions\BulkAction;
+use Filament\Actions\CreateAction;
+use Filament\Actions\DeleteAction;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\EditAction;
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Component;
+use Filament\Tables\Columns\Column;
+use Filament\Tables\Columns\TextColumn;
+>>>>>>> 2024e2e7 (.)
 use Illuminate\Support\Str;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
@@ -27,21 +44,35 @@ class DomainsRelationManager extends XotBaseRelationManager
 {
     protected static string $relationship = 'domains';
 
+<<<<<<< HEAD
     /**
      * @return array<string, Component>
      */
     #[Override]
+=======
+    protected static ?string $recordTitleAttribute = 'domain';
+
+    /**
+     * @return array<string, Component>
+     */
+    #[\Override]
+>>>>>>> 2024e2e7 (.)
     public function getFormSchema(): array
     {
         return [
             'domain' => TextInput::make('domain')
                 ->required()
                 ->prefix('http(s)://')
+<<<<<<< HEAD
                 ->suffix('.' . request()->getHost())
+=======
+                ->suffix('.'.request()->getHost())
+>>>>>>> 2024e2e7 (.)
                 ->maxLength(255),
         ];
     }
 
+<<<<<<< HEAD
     #[Override]
     public function table(Table $table): Table
     {
@@ -66,5 +97,54 @@ class DomainsRelationManager extends XotBaseRelationManager
                     DeleteBulkAction::make(),
                 ]),
             ]);
+=======
+    /**
+     * @return array<string, Column>
+     */
+    #[\Override]
+    public function getTableColumns(): array
+    {
+        return [
+            'domain' => TextColumn::make('domain'),
+            'full-domain' => TextColumn::make('full-domain')->getStateUsing(
+                static fn ($record) => is_object($record) && isset($record->domain) && is_string($record->domain) ?
+                    Str::of($record->domain)->append('.')->append(request()->getHost()) : '',
+            ),
+        ];
+    }
+
+    /**
+     * @return array<string, Action>
+     */
+    #[\Override]
+    public function getTableHeaderActions(): array
+    {
+        return [
+            'create' => CreateAction::make(),
+        ];
+    }
+
+    /**
+     * @return array<string, Action>
+     */
+    #[\Override]
+    public function getTableActions(): array
+    {
+        return [
+            'edit' => EditAction::make(),
+            'delete' => DeleteAction::make(),
+        ];
+    }
+
+    /**
+     * @return array<string, BulkAction>
+     */
+    #[\Override]
+    public function getTableBulkActions(): array
+    {
+        return [
+            'delete' => DeleteBulkAction::make(),
+        ];
+>>>>>>> 2024e2e7 (.)
     }
 }

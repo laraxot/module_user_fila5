@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
+<<<<<<< HEAD
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration {
@@ -10,6 +11,13 @@ return new class extends XotBaseMigration {
      * Nome della tabella gestita dalla migrazione.
      */
     protected string $table_name = 'profile_team';
+=======
+use Modules\User\Models\ProfileTeam;
+use Modules\Xot\Database\Migrations\XotBaseMigration;
+
+return new class extends XotBaseMigration {
+    protected ?string $model_class = ProfileTeam::class;
+>>>>>>> 2024e2e7 (.)
 
     /**
      * Esegue la migrazione.
@@ -31,10 +39,14 @@ return new class extends XotBaseMigration {
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
             // Aggiorniamo i timestamp e soft deletes
+<<<<<<< HEAD
             $this->updateTimestamps(
                 table: $table,
                 hasSoftDeletes: true,
             );
+=======
+            $this->updateTimestamps(table: $table, hasSoftDeletes: true);
+>>>>>>> 2024e2e7 (.)
         });
     }
 };

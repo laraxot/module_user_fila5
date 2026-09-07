@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 description:
 globs:
 alwaysApply: false
@@ -68,3 +69,11 @@ class ApproveUserAction
 - [spatie/laravel-queueable-action](mdc:https:/github.com/spatie/laravel-queueable-action)
 - [spatie/laravel-model-states](mdc:https:/spatie.be/docs/laravel-model-states/v2/working-with-states/01-configuring-states)
 
+=======
+module: theme
+topic: activitylog_moderation_best_practices
+canonical: ../../../Themes/docs/shared-components/activitylog-moderation-best-practices.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/activitylog-moderation-best-practices.md
+>>>>>>> 2024e2e7 (.)

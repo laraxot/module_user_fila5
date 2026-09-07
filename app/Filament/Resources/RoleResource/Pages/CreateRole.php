@@ -9,11 +9,18 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use Modules\User\Filament\Resources\RoleResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class CreateRole extends XotBaseCreateRecord
 {
     // //
+=======
+
+class CreateRole extends XotBaseCreateRecord
+{
+    /** @var Collection<int, string> */
+>>>>>>> 2024e2e7 (.)
     public Collection $permissions;
 
     protected static string $resource = RoleResource::class;
@@ -22,6 +29,7 @@ class CreateRole extends XotBaseCreateRecord
     {
         $this->permissions = collect($data)
             ->filter(
+<<<<<<< HEAD
                 static fn($_permission, $key): bool => (
                     !in_array($key, ['name', 'guard_name', 'select_all'], false) && Str::contains($key, '_')
                 ),
@@ -30,6 +38,15 @@ class CreateRole extends XotBaseCreateRecord
 
         $res = Arr::only($data, ['name', 'guard_name', 'team_id']);
         if (!isset($res['team_id'])) {
+=======
+                static fn ($_permission, $key): bool => ! in_array($key, ['name', 'guard_name', 'select_all'], false) && Str::contains($key, '_'),
+            )
+            ->keys();
+
+        /** @var array<string, mixed> $res */
+        $res = Arr::only($data, ['name', 'guard_name', 'team_id']);
+        if (! isset($res['team_id'])) {
+>>>>>>> 2024e2e7 (.)
             $res['team_id'] = null;
         }
 

@@ -2,6 +2,18 @@
 description:
 globs:
 alwaysApply: false
+<<<<<<< HEAD
+=======
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+>>>>>>> 2024e2e7 (.)
 ---
 # Best Practices Migrazioni XotBaseMigration
 
@@ -59,7 +71,11 @@ public function addMember(Team $team, User $user)
 - [Linee guida Actions](mdc:actions.mdc)
 - [Linee guida Activitylog](mdc:activitylog.mdc)
 - [Testing](mdc:testing.md)
+<<<<<<< HEAD
 - [Documentazione centrale](mdc:../../../../docs/index.md)
+=======
+- [Documentazione centrale](mdc:../../../../../docs/index.md)
+>>>>>>> 2024e2e7 (.)
 
 ## Migration modulari: path corretto obbligatorio
 
@@ -84,4 +100,8 @@ public function addMember(Team $team, User $user)
 
 - Tutte le migration devono essere nella cartella `database/migrations` del modulo di riferimento.
 - Mai mettere migration custom in `laravel/database/migrations`.
+<<<<<<< HEAD
 - Vedi motivazione e checklist in [PATH_CONVENTIONS.md](./path_conventions.md).
+=======
+- Vedi motivazione e checklist in [PATH_CONVENTIONS.md](./path-conventions-2.md).
+>>>>>>> 2024e2e7 (.)

@@ -5,8 +5,18 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\ProfileContract;
 use Illuminate\Support\Carbon;
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Carbon;
+use Modules\User\Contracts\TeamContract;
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+>>>>>>> 2024e2e7 (.)
 use Parental\HasChildren;
 
 /**
@@ -15,8 +25,14 @@ use Parental\HasChildren;
  * @method static Builder|TeamUser newModelQuery()
  * @method static Builder|TeamUser newQuery()
  * @method static Builder|TeamUser query()
+<<<<<<< HEAD
  * @property int $id
  * @property string $uuid
+=======
+ *
+ * @property int         $id
+ * @property string      $uuid
+>>>>>>> 2024e2e7 (.)
  * @property string|null $team_id
  * @property string|null $user_id
  * @property string|null $role
@@ -25,6 +41,10 @@ use Parental\HasChildren;
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property string|null $customer_id
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 2024e2e7 (.)
  * @method static Builder|TeamUser whereCreatedAt($value)
  * @method static Builder|TeamUser whereCreatedBy($value)
  * @method static Builder|TeamUser whereCustomerId($value)
@@ -35,12 +55,25 @@ use Parental\HasChildren;
  * @method static Builder|TeamUser whereUpdatedBy($value)
  * @method static Builder|TeamUser whereUserId($value)
  * @method static Builder|TeamUser whereUuid($value)
+<<<<<<< HEAD
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @method static Builder|TeamUser whereDeletedAt($value)
  * @method static Builder|TeamUser whereDeletedBy($value)
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+=======
+ *
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ *
+ * @method static Builder|TeamUser whereDeletedAt($value)
+ * @method static Builder|TeamUser whereDeletedBy($value)
+ *
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ *
+>>>>>>> 2024e2e7 (.)
  * @mixin \Eloquent
  */
 abstract class BaseTeamUser extends BasePivot
@@ -48,5 +81,36 @@ abstract class BaseTeamUser extends BasePivot
     use HasChildren;
 
     protected $connection = 'user';
+<<<<<<< HEAD
     protected $table = 'team_user';
+=======
+
+    protected $table = 'team_user';
+
+    /**
+     * Relazione con User.
+     *
+     * @return BelongsTo<Model&UserContract, $this>
+     */
+    public function user(): BelongsTo
+    {
+        $userClass = XotData::make()->getUserClass();
+
+        /* @var BelongsTo<Model&UserContract, $this> */
+        return $this->belongsTo($userClass);
+    }
+
+    /**
+     * Relazione con Team.
+     *
+     * @return BelongsTo<Model&TeamContract, $this>
+     */
+    public function team(): BelongsTo
+    {
+        $teamClass = XotData::make()->getTeamClass();
+
+        /* @var BelongsTo<Model&TeamContract, $this> */
+        return $this->belongsTo($teamClass);
+    }
+>>>>>>> 2024e2e7 (.)
 }

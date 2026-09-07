@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+=======
+---
+title: "User Traits Implementation"
+type: concept
+tags: [user, traits]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user-traits user traits implementation"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./audit-logging.md"
+  - "./autenticazione.md"
+  - "./autorizzazione.md"
+  - "./gestione-teams.md"
+  - "./gestione-utenti.md"
+  - "./legacy-code-cleanup.md"
+  - "./user-analytics.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # User Traits Implementation
 
 ## Overview
@@ -62,7 +84,11 @@ trait PasswordValidationRules
    - Test with actual models
    - Test database operations
 ## Links
+<<<<<<< HEAD
 - [Back to Roadmap](../../docs/roadmap.md)
+=======
+- [Back to Roadmap](../../../docs/roadmap.md)
+>>>>>>> 2024e2e7 (.)
 - [Back to Roadmap](../../project_docs/roadmap.md)
 - Related: [PHPStan Level 7 Compliance](./phpstan-level7-compliance.md)
 - Related: [Authentication Log Enhancement](./auth-log-enhancement.md)

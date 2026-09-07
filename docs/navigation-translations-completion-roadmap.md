@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Navigation Translations Completion Roadmap - User Module
 
 **Data**: 2026-01-09  
@@ -174,3 +175,21 @@ I file usano chiavi di traduzione nidificate che rimandano a chiavi principali:
 **Status**: 📝 **ROADMAP CREATA - PRONTA PER IMPLEMENTAZIONE**
 
 **Ultimo aggiornamento**: 2026-01-09
+=======
+---
+module: theme
+topic: navigation-translations-completion-roadmap
+canonical: ../../../Themes/docs/shared-components/navigation-translations-completion-roadmap.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/navigation-translations-completion-roadmap.md
+>>>>>>> 2024e2e7 (.)

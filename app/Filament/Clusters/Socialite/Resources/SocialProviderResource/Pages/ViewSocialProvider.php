@@ -4,9 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
+=======
+>>>>>>> 2024e2e7 (.)
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -15,6 +18,7 @@ use function Safe\json_encode;
 class ViewSocialProvider extends XotBaseViewRecord
 {
     protected static string $resource = SocialProviderResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, Component>
@@ -49,4 +53,6 @@ class ViewSocialProvider extends XotBaseViewRecord
             ]),
         ];
     }
+=======
+>>>>>>> 2024e2e7 (.)
 }

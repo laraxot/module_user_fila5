@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Modulo User"
+type: concept
+tags: [structure]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "structure modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Modulo User
 
 Data: 2025-04-23 19:09:56
@@ -5,7 +28,11 @@ Data: 2025-04-23 19:09:56
 - **Namespace principale**: Modules\\User
 Modules\\User\\Database\\Factories
 Modules\\User\\Database\\Seeders
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_user_fila3
+=======
+- **Pacchetto Composer**: laraxot/module_user_fila5
+>>>>>>> 2024e2e7 (.)
 Marco Sottana
 - **Dipendenze**: flowframe/laravel-trend * jenssegers/agent * laravel/passport * socialiteproviders/auth0 * spatie/laravel-personal-data-export * repositories type path url ../Xot type path url ../Tenant type path url ../UI
 - **Totale file PHP**: 673

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Correzione PHPStan - Relationship Type Hints
 
 ## 🚨 Errore PHPStan Risolto
@@ -78,3 +79,21 @@ Per **tutte le relazioni Eloquent** in trait e modelli:
 - [Eloquent Relationships](https://laravel.com/project_docs/12.x/eloquent-relationships)
 
 *Ultimo aggiornamento: gennaio 2025*
+=======
+---
+module: theme
+topic: phpstan-relationship
+canonical: ../../../Themes/docs/shared-components/phpstan-relationship-fix.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-relationship-fix.md
+>>>>>>> 2024e2e7 (.)

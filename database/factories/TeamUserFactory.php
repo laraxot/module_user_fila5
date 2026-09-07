@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+<<<<<<< HEAD
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamUser;
 use Modules\User\Models\User;
@@ -14,24 +15,38 @@ use Modules\User\Models\User;
  *
  * Factory for creating TeamUser model instances for testing and seeding.
  *
+=======
+use Modules\User\Models\TeamUser;
+
+/**
+>>>>>>> 2024e2e7 (.)
  * @extends Factory<TeamUser>
  */
 class TeamUserFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
+<<<<<<< HEAD
      *
      * @var class-string<TeamUser>
+=======
+>>>>>>> 2024e2e7 (.)
      */
     protected $model = TeamUser::class;
 
     /**
      * Define the model's default state.
+<<<<<<< HEAD
      *
+=======
+     */
+    /**
+>>>>>>> 2024e2e7 (.)
      * @return array<string, mixed>
      */
     public function definition(): array
     {
+<<<<<<< HEAD
         return [
             'team_id' => Team::factory(),
             'user_id' => User::factory(),
@@ -99,5 +114,8 @@ class TeamUserFactory extends Factory
         return $this->state(fn(array $_attributes): array => [
             'role' => 'member',
         ]);
+=======
+        return [];
+>>>>>>> 2024e2e7 (.)
     }
 }

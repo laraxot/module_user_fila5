@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fix: Duplicate Entry Error in team_user Table (DEPRECATO)
 
 > ⚠️ **DEPRECATO**: Questa soluzione è stata sostituita dalla conversione UUID → autoincrement.
@@ -150,3 +151,21 @@ Quando si crea un modello pivot che usa UUID come PRIMARY KEY:
 - [HasTeams Trait](../../app/Models/Traits/HasTeams.php)
 
 *Ultimo aggiornamento: gennaio 2025*
+=======
+---
+module: theme
+topic: membership-uuid-fix
+canonical: ../../../Themes/docs/shared-components/membership-uuid-fix.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/membership-uuid-fix.md
+>>>>>>> 2024e2e7 (.)

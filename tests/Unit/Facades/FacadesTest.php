@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 uses(Modules\User\Tests\TestCase::class);
 
 use Modules\User\Facades\FilamentShield;
@@ -15,13 +16,27 @@ test('FilamentShield facade can be accessed', function () {
     } catch (Exception $e) {
         expect(true)->toBeTrue(); // Pass if class exists
     }
+=======
+use Modules\User\Facades\FilamentShield;
+use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
+
+test('FilamentShield facade can be accessed', function () {
+    Assert::assertTrue(class_exists(FilamentShield::class));
+>>>>>>> 2024e2e7 (.)
 });
 
 test('FilamentShield facade has expected methods', function () {
     if (class_exists(FilamentShield::class)) {
         // Check if static methods exist (these would be the facade methods)
+<<<<<<< HEAD
         expect(true)->toBeTrue(); // Just confirm class exists
     } else {
         expect(true)->toBeTrue();
+=======
+        // assertTrue(true) removed — tautology // Just confirm class exists
+>>>>>>> 2024e2e7 (.)
     }
 });

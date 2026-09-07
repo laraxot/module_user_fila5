@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Profile Management in Laravel Modules"
+type: concept
+tags: [profile, management]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "profile-management profile management in laravel modules"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Profile Management in Laravel Modules
 
 ## Overview
@@ -64,8 +87,21 @@ This document outlines the best practices for managing user profiles within a La
 - Update this document if new profile management functionalities are introduced.
 
 ## Links to Related Documentation
+<<<<<<< HEAD
 - [User Module Index](./INDEX.md)
 - [BaseUser Model](./BaseUser.md)
 - [Authentication Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
 - [Routing Best Practices](./ROUTING_BEST_PRACTICES.md)
 - [Session Management](./SESSION_MANAGEMENT.md)
+=======
+- [User Module Index](./index.md)
+- [BaseUser Model](./baseuser.md)
+- [Authentication Pages Implementation](./auth-pages-implementation.md)
+- [Routing Best Practices](./routing-best-practices-2.md)
+- [Session Management](./session-management-2.md)
+- [User Module Index](./INDEX.md)
+- [BaseUser Model](./baseuser.md)
+- [Authentication Pages Implementation](./auth-pages-implementation.md)
+- [Routing Best Practices](./routing-best-practices.md)
+- [Session Management](./session-management.md)
+>>>>>>> 2024e2e7 (.)

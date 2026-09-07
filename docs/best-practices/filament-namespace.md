@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Regole per i Namespace Filament
 
 ## Regola 1: Namespace Modulare
@@ -43,3 +44,21 @@ class Dashboard extends Page
 - [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md)
 - [Regole Generali Xot](../../xot/docs/readme.md)
 - [Best Practices Filament](../../cms/docs/best-practices/filament.md) 
+=======
+---
+module: theme
+topic: filament-namespace
+canonical: ../../../../Themes/docs/shared-components/filament-namespace-rules.md
+related:
+  - "./auth-components-best-practices.md"
+  - "./auth-widget-rules.md"
+  - "./auth-widget.md"
+  - "./case-sensitivity-rules.md"
+  - "./case-sensitivity.md"
+  - "./component-verification-rules.md"
+  - "./component-verification.md"
+  - "./dependency-rules.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/filament-namespace-rules.md
+>>>>>>> 2024e2e7 (.)

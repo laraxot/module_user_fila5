@@ -18,7 +18,10 @@ return [
 ];
 
 /*
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 2024e2e7 (.)
  * $inputs = [
  * 'email'    => 'foo',
  * 'password' => 'bar',
@@ -42,5 +45,8 @@ return [
  * if ( $validation->fails() ) {
  * print_r( $validation->errors()->all() );
  * }
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 2024e2e7 (.)
  */

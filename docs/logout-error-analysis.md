@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Errore Logout
 
 ## Problema Identificato
@@ -123,3 +124,21 @@ class LogoutWidget extends XotBaseWidget
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./SESSION_MANAGEMENT.md)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade) 
+=======
+---
+module: theme
+topic: logout-error-analysis
+canonical: ../../../Themes/docs/shared-components/logout-error-analysis.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-error-analysis.md
+>>>>>>> 2024e2e7 (.)

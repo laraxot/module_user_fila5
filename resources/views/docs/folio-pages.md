@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Struttura delle Pagine con Laravel Folio
 
 ## Introduzione
@@ -149,3 +150,12 @@ Per creare una nuova pagina nel tema One:
 - Verificare che il modello `Page` contenga lo slug corretto
 - Controllare i logs per eventuali errori
 - Se i link non funzionano, assicurarsi che includano la locale corrente (ad es. `/it/pages/pagina`)
+=======
+---
+module: theme
+topic: folio-pages
+canonical: ../../../../../Themes/docs/shared-components/folio-pages-1.md
+---
+
+See canonical documentation: ../../../../../Themes/docs/shared-components/folio-pages-1.md
+>>>>>>> 2024e2e7 (.)

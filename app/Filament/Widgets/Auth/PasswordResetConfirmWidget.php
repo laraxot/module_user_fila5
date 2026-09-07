@@ -4,10 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
+<<<<<<< HEAD
 use Exception;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
 use Filament\Notifications\Notification;
+=======
+use Filament\Notifications\Notification;
+use Filament\Schemas\Schema;
+>>>>>>> 2024e2e7 (.)
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -15,6 +20,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Override;
@@ -29,6 +35,22 @@ use Webmozart\Assert\Assert;
  * @property Schema $form
  */
 class PasswordResetConfirmWidget extends XotBaseWidget
+=======
+use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+use Webmozart\Assert\Assert;
+
+/**
+ * PasswordResetConfirmWidget — conferma reset con token via URL.
+ *
+ * Schema da `Schemas\UserForm::getPasswordResetConfirmFormSchema()` — SSoT.
+ *
+ * @property Schema $form
+ */
+class PasswordResetConfirmWidget extends XotBaseSchemaWidget
+>>>>>>> 2024e2e7 (.)
 {
     public ?array $data = [];
 
@@ -36,11 +58,16 @@ class PasswordResetConfirmWidget extends XotBaseWidget
 
     public ?string $email = null;
 
+<<<<<<< HEAD
     public string $currentState = 'form'; // form, success, error, expired
+=======
+    public string $currentState = 'form';
+>>>>>>> 2024e2e7 (.)
 
     public ?string $errorMessage = null;
 
     /**
+<<<<<<< HEAD
      * @phpstan-ignore-next-line
      */
     protected string $view = 'pub_theme::filament.widgets.auth.password.reset-confirm';
@@ -54,11 +81,32 @@ class PasswordResetConfirmWidget extends XotBaseWidget
         $this->email = $email;
 
         // Pre-fill the form if email is provided
+=======
+     * @return class-string<UserForm>
+     */
+    protected static function formClass(): string
+    {
+        return UserForm::class;
+    }
+
+    protected static function schemaMethod(): string
+    {
+        return 'getPasswordResetConfirmFormSchema';
+    }
+
+    public function mount(?string $token = null, ?string $email = null): void
+    {
+        parent::mount();
+        $this->token = $token;
+        $this->email = $email;
+
+>>>>>>> 2024e2e7 (.)
         if ($this->email) {
             $this->form->fill(['email' => $this->email]);
         }
     }
 
+<<<<<<< HEAD
     /**
      * Get the form schema for password reset confirmation.
      *
@@ -100,6 +148,11 @@ class PasswordResetConfirmWidget extends XotBaseWidget
     public function confirmPasswordReset(): void
     {
         if ($this->currentState !== 'form') {
+=======
+    public function confirmPasswordReset(): void
+    {
+        if ('form' !== $this->currentState) {
+>>>>>>> 2024e2e7 (.)
             return;
         }
 
@@ -114,9 +167,14 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                     'email' => $data['email'],
                     'password' => $data['password'],
                 ],
+<<<<<<< HEAD
                 function (Authenticatable $user, string $password): void {
                     // Use setAttribute to set password safely
                     /** @var Model&Authenticatable $user */
+=======
+                static function (Authenticatable $user, string $password): void {
+                    /* @var Model&Authenticatable $user */
+>>>>>>> 2024e2e7 (.)
                     $user->setAttribute('password', Hash::make($password));
                     $user->setRememberToken(Str::random(60));
                     $user->save();
@@ -125,7 +183,11 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 },
             );
 
+<<<<<<< HEAD
             if ($response === Password::PASSWORD_RESET) {
+=======
+            if (Password::PASSWORD_RESET === $response) {
+>>>>>>> 2024e2e7 (.)
                 $this->currentState = 'success';
 
                 Notification::make()
@@ -135,6 +197,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                     ->duration(8000)
                     ->send();
 
+<<<<<<< HEAD
                 // Auto-login the user after successful password reset
                 // $user = \Modules\Xot\Datas\XotData::make()->getUserClass()::where('email', $data['email'])->first();
                 Assert::string($email = $data['email'], __FILE__.':'.__LINE__.' - '.class_basename(__CLASS__));
@@ -150,18 +213,74 @@ class PasswordResetConfirmWidget extends XotBaseWidget
                 $this->handleResetError($response);
             }
         } catch (Exception $e) {
+=======
+                Assert::string($email = $data['email'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
+                /** @var UserContract $user */
+                $user = XotData::make()->getUserByEmail($email);
+                Assert::isInstanceOf($user, Authenticatable::class);
+                Auth::guard()->login($user);
+
+                $this->js('setTimeout(() => { window.location.href = "'.route('login').'"; }, 3000);');
+            } else {
+                $this->handleResetError(is_string($response) ? $response : 'passwords.generic_error');
+            }
+        } catch (\Exception $e) {
+>>>>>>> 2024e2e7 (.)
             $this->handleResetError('passwords.generic_error');
         }
     }
 
+<<<<<<< HEAD
     /**
      * Handle password reset errors.
      */
+=======
+    public function resetForm(): void
+    {
+        $this->currentState = 'form';
+        $this->errorMessage = null;
+        $this->form->fill(['email' => $this->email ?? '']);
+    }
+
+    public function getCurrentState(): string
+    {
+        return $this->currentState;
+    }
+
+    public function getErrorMessage(): ?string
+    {
+        return $this->errorMessage;
+    }
+
+    public function shouldShowForm(): bool
+    {
+        return \in_array($this->currentState, ['form', 'loading'], strict: true);
+    }
+
+    public function isLoading(): bool
+    {
+        return 'loading' === $this->currentState;
+    }
+
+    public function isSuccess(): bool
+    {
+        return 'success' === $this->currentState;
+    }
+
+    public function hasError(): bool
+    {
+        return 'error' === $this->currentState;
+    }
+
+>>>>>>> 2024e2e7 (.)
     protected function handleResetError(string $response): void
     {
         $this->currentState = 'error';
 
+<<<<<<< HEAD
         // Map Laravel password reset responses to user-friendly messages
+=======
+>>>>>>> 2024e2e7 (.)
         $errorMessages = [
             Password::INVALID_TOKEN => __('user::auth.password_reset.errors.invalid_token'),
             Password::INVALID_USER => __('user::auth.password_reset.errors.invalid_user'),
@@ -177,6 +296,7 @@ class PasswordResetConfirmWidget extends XotBaseWidget
             ->duration(10000)
             ->send();
     }
+<<<<<<< HEAD
 
     /**
      * Reset the widget to allow another attempt.
@@ -235,4 +355,6 @@ class PasswordResetConfirmWidget extends XotBaseWidget
     {
         return $this->currentState === 'error';
     }
+=======
+>>>>>>> 2024e2e7 (.)
 }

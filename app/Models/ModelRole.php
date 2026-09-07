@@ -7,6 +7,10 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
+<<<<<<< HEAD
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> 2024e2e7 (.)
 
 /**
  * Modules\User\Models\ModelHasRole.
@@ -40,15 +44,32 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
  *
  * @mixin IdeHelperModelHasRole
  *
  * @property ProfileContract|null $deleter
  *
+=======
+ * @property ProfileContract|null $deleter
+ *
+ * @method static \Modules\User\Database\Factories\ModelRoleFactory factory($count = null, $state = [])
+ *
+>>>>>>> 2024e2e7 (.)
  * @mixin \Eloquent
  */
 class ModelRole extends BaseMorphPivot
 {
+<<<<<<< HEAD
     /** @var string */
     protected $table = 'model_has_role';
+=======
+    #[\Override]
+    public function getTable(): string
+    {
+        Assert::string($table = config('permission.table_names.model_has_roles'));
+
+        return $table;
+    }
+>>>>>>> 2024e2e7 (.)
 }

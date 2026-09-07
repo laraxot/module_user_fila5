@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+=======
+---
+title: "Bug Fix: Crash durante creazione utenti con make:filament-user"
+type: concept
+tags: [make, filament, user, crash]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "make-filament-user-crash-loop bug fix: crash durante creazione utenti con make:filament-user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./parse-error-orphan-methods-.md"
+  - "./parse-error-orphan-methods-1-1.md"
+  - "./parse-error-orphan-methods-1.md"
+  - "./parse-error-orphan-methods-2.md"
+  - "./parse-error-orphan-methods-3.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-orphan-methods.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Bug Fix: Crash durante creazione utenti con make:filament-user
 
 ## 🐛 Problema Identificato
@@ -273,8 +295,13 @@ class CreateTenantUserCommand extends Command
 
 ### Documentazione Root Progetto
 
+<<<<<<< HEAD
 - [../../../docs/modules/user/README.md](../../../docs/modules/user/readme.md) - Panoramica modulo User
 - [../../../docs/architecture/multi-tenancy.md](../../../docs/architecture/multi-tenancy.md) - Architettura globale
+=======
+- [../../../../docs/modules/user/README.md](../../../../docs/modules/user/readme.md) - Panoramica modulo User
+- [../../../../docs/architecture/multi-tenancy.md](../../../../docs/architecture/multi-tenancy.md) - Architettura globale
+>>>>>>> 2024e2e7 (.)
 
 ## 🎓 Lezioni Apprese
 

@@ -8,7 +8,12 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Class CreateModelHasRolesTable.
  */
+<<<<<<< HEAD
 return new class extends XotBaseMigration {
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> 2024e2e7 (.)
     /**
      * Run the migrations.
      */

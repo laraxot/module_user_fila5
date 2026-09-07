@@ -19,7 +19,11 @@ trait HasModules
         $modules = ModuleFacade::getOrdered();
 
         /** @var array<string, Module> $filteredModules */
+<<<<<<< HEAD
         $filteredModules = Arr::where($modules, function ($module, $key) {
+=======
+        $filteredModules = Arr::where($modules, function (mixed $module, int|string $key): bool {
+>>>>>>> 2024e2e7 (.)
             // $name = $module->getName();
             $name = is_string($key) ? $key : (string) $key;
             $role_name = Str::of($name)->lower()->append('::admin')->toString();

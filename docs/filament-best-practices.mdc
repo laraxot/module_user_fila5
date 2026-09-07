@@ -52,3 +52,36 @@ class UserResource extends XotBaseResource {
     // Personalizzazioni solo tramite metodi/trait previsti
 }
 ```
+<<<<<<< HEAD
+=======
+
+# Regola: Filament Pages che estendono XotBasePage
+
+## When
+- Stai creando o modificando una Filament Page che estende `Modules\Xot\Filament\Pages\XotBasePage`
+
+## Then
+- **NON** aggiungere `implements HasForms` alla classe figlia
+- **NON** importare/usare `InteractsWithForms` nella classe figlia
+
+## Because
+- `XotBasePage` implementa già `HasForms` e include già `InteractsWithForms`, quindi la ripetizione è ridondante e aumenta il rumore/risks di incoerenza.
+
+## Esempio ERRATO
+```php
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Forms\Contracts\HasForms;
+
+class PasswordExpired extends XotBasePage implements HasForms
+{
+    use InteractsWithForms;
+}
+```
+
+## Esempio CORRETTO
+```php
+class PasswordExpired extends XotBasePage
+{
+}
+```
+>>>>>>> 2024e2e7 (.)

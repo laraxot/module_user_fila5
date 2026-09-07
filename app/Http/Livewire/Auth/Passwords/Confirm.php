@@ -4,11 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Livewire\Auth\Passwords;
 
+<<<<<<< HEAD
 use Illuminate\Contracts\View\View;
 use Illuminate\Contracts\View\Factory;
 use Modules\Xot\Actions\File\ViewCopyAction;
 use Illuminate\Http\RedirectResponse;
 use Livewire\Component;
+=======
+use Illuminate\Http\RedirectResponse;
+use Livewire\Component;
+use Modules\Xot\Actions\File\ViewCopyAction;
+>>>>>>> 2024e2e7 (.)
 
 class Confirm extends Component
 {
@@ -25,7 +31,11 @@ class Confirm extends Component
         return redirect()->intended(route('home'));
     }
 
+<<<<<<< HEAD
     public function render(): View|Factory
+=======
+    public function render(): mixed
+>>>>>>> 2024e2e7 (.)
     {
         app(ViewCopyAction::class)
             ->execute('user::livewire.auth.passwords.confirm', 'pub_theme::livewire.auth.passwords.confirm');

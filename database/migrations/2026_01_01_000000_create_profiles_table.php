@@ -6,9 +6,14 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Profile;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< HEAD
 use function Safe\file_put_contents;
 
 return new class extends XotBaseMigration {
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> 2024e2e7 (.)
     protected ?string $model_class = Profile::class;
 
     /**
@@ -16,6 +21,7 @@ return new class extends XotBaseMigration {
      */
     public function up(): void
     {
+<<<<<<< HEAD
         $conn = $this->model->getConnectionName();
         $db = $this->getConn()->getConnection()->getDatabaseName();
         $exists = $this->tableExists();
@@ -24,6 +30,12 @@ return new class extends XotBaseMigration {
         // -- CREATE --
         $this->tableCreate(static function (Blueprint $table): void {
             $table->uuid('id')->primary();
+=======
+        // -- CREATE --
+        $this->tableCreate(static function (Blueprint $table): void {
+            $table->uuid('id')->primary();
+            $table->string('uuid', 36)->index()->nullable();
+>>>>>>> 2024e2e7 (.)
             $table->string('user_id', 36)->index()->nullable();
             $table->string('type')->index()->nullable();
             $table->string('first_name')->nullable();
@@ -52,8 +64,16 @@ return new class extends XotBaseMigration {
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+<<<<<<< HEAD
             if (! $this->hasColumn('user_id')) {
                 $table->string('user_id', 36)->index()->nullable()->after('id');
+=======
+            if (! $this->hasColumn('uuid')) {
+                $table->string('uuid', 36)->index()->nullable()->after('id');
+            }
+            if (! $this->hasColumn('user_id')) {
+                $table->string('user_id', 36)->index()->nullable()->after('uuid');
+>>>>>>> 2024e2e7 (.)
             }
             if (! $this->hasColumn('email')) {
                 $table->string('email')->nullable()->after('last_name');
@@ -62,6 +82,7 @@ return new class extends XotBaseMigration {
                 $table->string('phone')->nullable()->after('email');
             }
             if (! $this->hasColumn('avatar')) {
+<<<<<<< HEAD
                 $table->string('avatar')->nullable();
             }
             if (! $this->hasColumn('timezone')) {
@@ -75,6 +96,24 @@ return new class extends XotBaseMigration {
             }
             if (! $this->hasColumn('status')) {
                 $table->string('status')->nullable();
+=======
+                $table->string('avatar')->nullable()->after('bio');
+            }
+            if (! $this->hasColumn('timezone')) {
+                $table->string('timezone')->nullable()->after('avatar');
+            }
+            if (! $this->hasColumn('locale')) {
+                $table->string('locale')->nullable()->after('timezone');
+            }
+            if (! $this->hasColumn('preferences')) {
+                $table->json('preferences')->nullable()->after('locale');
+            }
+            if (! $this->hasColumn('status')) {
+                $table->string('status')->nullable()->after('preferences');
+            }
+            if (! $this->hasColumn('extra')) {
+                $table->json('extra')->nullable()->after('status');
+>>>>>>> 2024e2e7 (.)
             }
         });
     }

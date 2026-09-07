@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "Checklist per la Struttura delle Directory nei Moduli Windsurf/Xot"
+type: concept
+tags: [directory, structure, checklist]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "directory-structure-checklist checklist per la struttura delle directory nei moduli windsurf/xot"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # Checklist per la Struttura delle Directory nei Moduli Windsurf/Xot
 
 ## Panoramica
@@ -46,6 +69,13 @@ Questo documento fornisce una checklist per verificare la corretta struttura del
 
 - ❌ `Modules/User/Resources/views/auth/login.blade.php` (case errata!)
 - ❌ `Modules/User/Actions/DeleteUserAction.php` (manca app/)
+<<<<<<< HEAD
+=======
+- ❌ `Modules/User/Application/UseCases/...` (manca app/)
+- ❌ `Modules/User/Database/Migrations/...` (PascalCase — usare `database/migrations/`)
+- ❌ `Modules/User/Events/UserRegistered.php` (manca app/)
+- ❌ `Modules/User/Listeners/AssignFreeCreditsListener.php` (manca app/)
+>>>>>>> 2024e2e7 (.)
 - ❌ `Modules/User/Http/Controllers/UserController.php` (manca app/)
 - ❌ `Modules/User/App/Http/Controllers/UserController.php` (App maiuscolo errato!)
 - ❌ Migration custom fuori dalla cartella del modulo (es: in laravel/database/migrations)
@@ -69,4 +99,10 @@ find Modules/User -type d -name "Resources" -o -name "Lang" -o -name "Config" -o
 ```
 
 ## Per saperne di più
+<<<<<<< HEAD
 Consultare il documento completo: `/Modules/Xot/docs/DIRECTORY-STRUCTURE-GUIDE.md`
+=======
+- [module-root-folder-violations.md](./wiki/concepts/module-root-folder-violations.md) — violazioni attuali nel modulo User
+- [module-root-php-folders-forbidden.md](../../../../docs/wiki/rules/module-root-php-folders-forbidden.md) — regola wiki canonica
+- Consultare: `laravel/Modules/Xot/docs/module-directory-structure-rule.md`
+>>>>>>> 2024e2e7 (.)

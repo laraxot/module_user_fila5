@@ -2,7 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2024e2e7 (.)
 return [
     'otp_code' => 'Codice OTP',
     'title' => 'Password Scaduta, Reimposta Password',
@@ -25,13 +28,31 @@ return [
         'current_password' => [
             'label' => 'Password Attuale',
             'validation_attribute' => 'password_attuale',
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
         'password' => [
             'label' => 'Nuova Password',
             'validation_attribute' => 'password',
+<<<<<<< HEAD
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'password_confirmation' => [
+            'label' => 'Conferma Password',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
         ],
     ],
     'reset_password' => 'Reimposta Password',
@@ -59,7 +80,11 @@ return [
         ],
         'column_not_found' => [
             'title' => 'Colonna Non Trovata',
+<<<<<<< HEAD
             'body' => 'La colonna \":column_name\" o la colonna della password \":password_column_name\" non è stata trovata nella tabella :table_name.',
+=======
+            'body' => 'La colonna \\":column_name\\" o la colonna della password \\":password_column_name\\" non è stata trovata nella tabella :table_name.',
+>>>>>>> 2024e2e7 (.)
         ],
         'password_reset' => [
             'success' => 'Password Reimpostata con Successo',
@@ -74,7 +99,11 @@ return [
         ],
     ],
     'exceptions' => [
+<<<<<<< HEAD
         'column_not_found' => 'La colonna \":column_name\" o la colonna della password \":password_column_name\" non è stata trovata nella tabella \":table_name\". Pubblica le migrazioni e eseguile, se l\'errore persiste, pubblica il file di configurazione e aggiorna i valori di table_name, column_name, e password_column_name.',
+=======
+        'column_not_found' => 'La colonna \\":column_name\\" o la colonna della password \\":password_column_name\\" non è stata trovata nella tabella \\":table_name\\". Pubblica le migrazioni e eseguile, se l\'errore persiste, pubblica il file di configurazione e aggiorna i valori di table_name, column_name, e password_column_name.',
+>>>>>>> 2024e2e7 (.)
     ],
     'validation' => [
         'invalid_code' => 'Il codice inserito non è valido.',
@@ -97,4 +126,9 @@ return [
         'sort' => '31',
         'icon' => 'user-user-otp',
     ],
+<<<<<<< HEAD
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> 2024e2e7 (.)
 ];

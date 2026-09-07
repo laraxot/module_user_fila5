@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+---
+title: "PHPStan Level 10 Patterns - User Module"
+type: pattern
+tags: [phpstan, patterns]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-patterns phpstan level 10 patterns - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> 2024e2e7 (.)
 # PHPStan Level 10 Patterns - User Module
 
 **Last Updated**: 2026-02-16  
@@ -160,9 +183,15 @@ When fixing PHPStan errors:
 
 ## Related Files
 
+<<<<<<< HEAD
 - [`RevokeClientAction.php`](file:///var/www/_bases/base_laravelpizza/laravel/Modules/User/app/Actions/Passport/RevokeClientAction.php)
 - [`UserNameFieldsResolver.php`](file:///var/www/_bases/base_laravelpizza/laravel/Modules/User/app/Actions/Socialite/Utils/UserNameFieldsResolver.php)
 - [`AssignModuleCommand.php`](file:///var/www/_bases/base_laravelpizza/laravel/Modules/User/app/Console/Commands/AssignModuleCommand.php)
+=======
+- [`RevokeClientAction.php`](file:///var/www/_bases/base_<nome progetto>/laravel/Modules/User/app/Actions/Passport/RevokeClientAction.php)
+- [`UserNameFieldsResolver.php`](file:///var/www/_bases/base_<nome progetto>/laravel/Modules/User/app/Actions/Socialite/Utils/UserNameFieldsResolver.php)
+- [`AssignModuleCommand.php`](file:///var/www/_bases/base_<nome progetto>/laravel/Modules/User/app/Console/Commands/AssignModuleCommand.php)
+>>>>>>> 2024e2e7 (.)
 
 ---
 

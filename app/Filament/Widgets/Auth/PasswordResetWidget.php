@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
 use Override;
 use Filament\Forms\Components\TextInput;
@@ -72,6 +73,43 @@ class PasswordResetWidget extends XotBaseWidget
     public function sendResetPasswordLink(): void
     {
         // try {
+=======
+use Filament\Notifications\Notification;
+use Filament\Schemas\Schema;
+use Illuminate\Support\Facades\Password;
+use Illuminate\Support\Facades\Session;
+use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+
+/**
+ * PasswordResetWidget — schermata di invio link reset (post-login, opzionale).
+ *
+ * Schema da `Schemas\UserForm::getPasswordResetFormSchema()` — SSoT.
+ *
+ * @property Schema $form
+ */
+class PasswordResetWidget extends XotBaseSchemaWidget
+{
+    public ?array $data = [];
+
+    public bool $emailSent = false;
+
+    /**
+     * @return class-string<UserForm>
+     */
+    protected static function formClass(): string
+    {
+        return UserForm::class;
+    }
+
+    protected static function schemaMethod(): string
+    {
+        return 'getPasswordResetFormSchema';
+    }
+
+    public function sendResetPasswordLink(): void
+    {
+>>>>>>> 2024e2e7 (.)
         $data = $this->form->getState();
         $password_broker = Password::broker();
 
@@ -89,16 +127,23 @@ class PasswordResetWidget extends XotBaseWidget
                 ->duration(10000)
                 ->send();
 
+<<<<<<< HEAD
             // Clear the form
             $this->form->fill();
         } else {
             Session::flash('error', trans('user::errors.' . $response . '.label'));
+=======
+            $this->form->fill();
+        } else {
+            Session::flash('error', trans('user::errors.'.$response.'.label'));
+>>>>>>> 2024e2e7 (.)
             Notification::make()
                 ->title(__('user::auth.password_reset.email_failed.title'))
                 ->body(trans($response))
                 ->danger()
                 ->send();
         }
+<<<<<<< HEAD
 
         /*} catch (\Exception $e) {
          * Notification::make()
@@ -113,27 +158,39 @@ class PasswordResetWidget extends XotBaseWidget
     /**
      * Reset the widget state to show form again.
      */
+=======
+    }
+
+>>>>>>> 2024e2e7 (.)
     public function resetForm(): void
     {
         $this->emailSent = false;
         $this->form->fill();
     }
 
+<<<<<<< HEAD
     /**
      * Send another reset link.
      */
+=======
+>>>>>>> 2024e2e7 (.)
     public function sendAnotherLink(): void
     {
         $this->emailSent = false;
         $this->form->fill(['email' => '']);
     }
 
+<<<<<<< HEAD
     /**
      * Check email status (for compatibility with old view).
      */
     public function checkEmailStatus(): void
     {
         // This method is kept for compatibility but redirects to login
+=======
+    public function checkEmailStatus(): void
+    {
+>>>>>>> 2024e2e7 (.)
         $this->redirect(route('login'));
     }
 }

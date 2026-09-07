@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Analisi Qualità - Modulo User
 
 **Data Analisi**: 2025-01-22
@@ -84,3 +85,14 @@
 - PHPMD: Warnings accettabili (Facades Laravel)
 - PHPInsights: Da eseguire per score completo
 - Documentazione esistente: Molto completa, ben strutturata
+=======
+---
+module: theme
+topic: user-module-quality
+canonical: ../../../../Themes/docs/shared-components/user-module-quality-report.md
+related:
+  - "./user-module-quality-report.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/user-module-quality-report.md
+>>>>>>> 2024e2e7 (.)

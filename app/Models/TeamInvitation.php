@@ -5,17 +5,26 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\ProfileContract;
+=======
+>>>>>>> 2024e2e7 (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Modules\User\Contracts\TeamContract;
+<<<<<<< HEAD
 use Modules\User\Database\Factories\TeamInvitationFactory;
+=======
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Contracts\UserContract;
+>>>>>>> 2024e2e7 (.)
 use Modules\Xot\Datas\XotData;
 
 /**
  * Modules\User\Models\TeamInvitation.
  *
+<<<<<<< HEAD
  * @property int $id
  * @property string|null $team_id
  * @property string $email
@@ -25,6 +34,17 @@ use Modules\Xot\Datas\XotData;
  * @property Team|null $team
  * @property TeamContract|null $team
  * @method static TeamInvitationFactory factory($count = null, $state = [])
+=======
+ * @property int               $id
+ * @property string|null       $team_id
+ * @property string            $email
+ * @property string|null       $role
+ * @property Carbon|null       $created_at
+ * @property Carbon|null       $updated_at
+ * @property Team|null         $team
+ * @property TeamContract|null $team
+ *
+>>>>>>> 2024e2e7 (.)
  * @method static Builder|TeamInvitation newModelQuery()
  * @method static Builder|TeamInvitation newQuery()
  * @method static Builder|TeamInvitation query()
@@ -34,36 +54,74 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|TeamInvitation whereRole($value)
  * @method static Builder|TeamInvitation whereTeamId($value)
  * @method static Builder|TeamInvitation whereUpdatedAt($value)
+<<<<<<< HEAD
  * @property string $uuid
+=======
+ *
+ * @property string      $uuid
+>>>>>>> 2024e2e7 (.)
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 2024e2e7 (.)
  * @method static Builder|TeamInvitation whereCreatedBy($value)
  * @method static Builder|TeamInvitation whereDeletedAt($value)
  * @method static Builder|TeamInvitation whereDeletedBy($value)
  * @method static Builder|TeamInvitation whereUpdatedBy($value)
  * @method static Builder|TeamInvitation whereUuid($value)
+<<<<<<< HEAD
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @mixin IdeHelperTeamInvitation
+=======
+ *
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @property ProfileContract|null $deleter
+ * @property Carbon|null          $accepted_at
+ * @property Carbon|null          $declined_at
+ * @property string|null          $user_id
+ *
+ * @method static \Modules\User\Database\Factories\TeamInvitationFactory factory($count = null, $state = [])
+ * @method static Builder<static>|TeamInvitation                         whereAcceptedAt($value)
+ * @method static Builder<static>|TeamInvitation                         whereDeclinedAt($value)
+ * @method static Builder<static>|TeamInvitation                         whereUserId($value)
+ *
+>>>>>>> 2024e2e7 (.)
  * @mixin \Eloquent
  */
 class TeamInvitation extends BaseModel
 {
+<<<<<<< HEAD
     /** @var string */
+=======
+>>>>>>> 2024e2e7 (.)
     protected $connection = 'user';
 
     /** @var list<string> */
     protected $fillable = [
         'email',
         'role',
+<<<<<<< HEAD
     ];
 
     /**
      * Get the team that the invitation belongs to.
      *  BelongsTo<the related model, the current model>
      * -return BelongsTo<TeamContract, TeamInvitation> No TeamContract ..
+=======
+        'accepted_at',
+        'declined_at',
+        'user_id',
+    ];
+
+    /**
+     * @return BelongsTo<Model, $this>
+>>>>>>> 2024e2e7 (.)
      */
     public function team(): BelongsTo
     {
@@ -73,4 +131,40 @@ class TeamInvitation extends BaseModel
 
         return $this->belongsTo($team_class);
     }
+<<<<<<< HEAD
+=======
+
+    /**
+     * Accept the invitation.
+     */
+    public function accept(UserContract $user): void
+    {
+        if ($this->team) {
+            $this->team->users()->attach($user->getKey(), ['role' => $this->role]);
+        }
+        $this->delete();
+    }
+
+    /**
+     * Decline the invitation.
+     */
+    public function decline(): void
+    {
+        $this->delete();
+    }
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'id' => 'integer',
+            'accepted_at' => 'datetime',
+            'declined_at' => 'datetime',
+        ];
+    }
+>>>>>>> 2024e2e7 (.)
 }

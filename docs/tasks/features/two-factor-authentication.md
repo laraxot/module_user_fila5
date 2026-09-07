@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+=======
+---
+title: "Two-Factor Authentication (2FA) - User"
+type: concept
+tags: [two, factor, authentication]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "two-factor-authentication two-factor authentication (2fa) - user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+---
+
+>>>>>>> 2024e2e7 (.)
 # Two-Factor Authentication (2FA) - User
 
 **Task ID**: USER-FEATURE-001

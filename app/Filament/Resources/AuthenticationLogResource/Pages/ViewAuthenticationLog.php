@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\AuthenticationLogResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
@@ -13,6 +14,9 @@ use Illuminate\Support\Str;
 use Modules\User\Filament\Resources\AuthenticationLogResource;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\AuthenticationLog;
+=======
+use Modules\User\Filament\Resources\AuthenticationLogResource;
+>>>>>>> 2024e2e7 (.)
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 use function Safe\json_encode;
@@ -20,6 +24,7 @@ use function Safe\json_encode;
 class ViewAuthenticationLog extends XotBaseViewRecord
 {
     protected static string $resource = AuthenticationLogResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, Component>
@@ -105,4 +110,6 @@ class ViewAuthenticationLog extends XotBaseViewRecord
                 ])->collapsible(),
         ];
     }
+=======
+>>>>>>> 2024e2e7 (.)
 }

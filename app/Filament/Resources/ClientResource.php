@@ -6,6 +6,10 @@ namespace Modules\User\Filament\Resources;
 
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\TextInput;
+<<<<<<< HEAD
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> 2024e2e7 (.)
 use Laravel\Passport\Client;
 use Laravel\Passport\Passport;
 use Modules\User\Filament\Resources\ClientResource\Pages\CreateClient;
@@ -19,6 +23,7 @@ use Webmozart\Assert\Assert;
 class ClientResource extends XotBaseResource
 {
     protected static string $resource = ClientResource::class;
+<<<<<<< HEAD
     // use HasResourceFormComponents;
 
     /**
@@ -56,14 +61,23 @@ class ClientResource extends XotBaseResource
         /* @var array<string, \Filament\Forms\Components\Field> $components */
         return $components;
     }
+=======
+>>>>>>> 2024e2e7 (.)
 
     /**
      * Get the model class for the resource from Passport.
      *
+<<<<<<< HEAD
      * @return class-string<\Illuminate\Database\Eloquent\Model>
      */
     /**
      * @return class-string<\Illuminate\Database\Eloquent\Model>
+=======
+     * @return class-string<Model>
+     */
+    /**
+     * @return class-string<Model>
+>>>>>>> 2024e2e7 (.)
      */
     public static function getModel(): string
     {
@@ -72,9 +86,15 @@ class ClientResource extends XotBaseResource
             return Client::class;
         }
 
+<<<<<<< HEAD
         Assert::subclassOf($model, \Illuminate\Database\Eloquent\Model::class);
 
         /* @var class-string<\Illuminate\Database\Eloquent\Model> $model */
+=======
+        Assert::subclassOf($model, Model::class);
+
+        /* @var class-string<Model> $model */
+>>>>>>> 2024e2e7 (.)
         return $model;
     }
 
@@ -98,6 +118,11 @@ class ClientResource extends XotBaseResource
 
     /**
      * Get resource form components.
+<<<<<<< HEAD
+=======
+     *
+     * @return array<int, never>
+>>>>>>> 2024e2e7 (.)
      */
     protected static function getResourceFormComponents(): array
     {

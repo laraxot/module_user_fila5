@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fix: team_user Composite Primary Key Implementation
 
 ## Data Intervento
@@ -261,3 +262,21 @@ $membership = Membership::where('team_id', $team->id)
 
 *Ultimo aggiornamento: novembre 2025*
 *Status: IMPLEMENTATO E VALIDATO*
+=======
+---
+module: theme
+topic: team-user-composite-primary-key-fix
+canonical: ../../../Themes/docs/shared-components/team-user-composite-primary-key-fix.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/team-user-composite-primary-key-fix.md
+>>>>>>> 2024e2e7 (.)

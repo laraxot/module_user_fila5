@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏛️ PATTERN ESTENSIONE CLASSI VENDOR IN LARAXOT
 
 ## 📋 PRINCIPIO FONDAMENTALE
@@ -217,3 +218,21 @@ class CustomModel extends VendorModelAlias
 
 *Questa è la Via Laraxot: Rispettare la natura di ogni cosa, non forzarla in forme innaturali.*
 
+=======
+---
+module: theme
+topic: vendor-extension
+canonical: ../../../Themes/docs/shared-components/vendor-extension-pattern.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/vendor-extension-pattern.md
+>>>>>>> 2024e2e7 (.)

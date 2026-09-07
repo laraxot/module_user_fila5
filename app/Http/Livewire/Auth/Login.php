@@ -4,20 +4,36 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Livewire\Auth;
 
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
 use Exception;
+=======
+>>>>>>> 2024e2e7 (.)
 use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
+<<<<<<< HEAD
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use Modules\Xot\Actions\File\ViewCopyAction;
+=======
+use Filament\Schemas\Schema;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Auth;
+use Livewire\Component;
+use Modules\Xot\Contracts\UserContract;
+use Spatie\Permission\Models\Role;
+use Webmozart\Assert\Assert;
+>>>>>>> 2024e2e7 (.)
 
 /**
  * Componente Livewire per la gestione del login.
@@ -34,7 +50,11 @@ class Login extends Component implements HasActions, HasForms
      *
      * @var array<string, mixed>
      */
+<<<<<<< HEAD
     public array $data = [];
+=======
+    public $data = [];
+>>>>>>> 2024e2e7 (.)
 
     /**
      * Inizializza il componente.
@@ -45,6 +65,7 @@ class Login extends Component implements HasActions, HasForms
     }
 
     /**
+<<<<<<< HEAD
      * Definisce lo schema del form.
      *
      * @return array<TextInput|Checkbox>
@@ -80,6 +101,8 @@ class Login extends Component implements HasActions, HasForms
     }
 
     /**
+=======
+>>>>>>> 2024e2e7 (.)
      * Crea il form schema.
      */
     public function form(Schema $schema): Schema
@@ -114,13 +137,18 @@ class Login extends Component implements HasActions, HasForms
             }
 
             $this->addError('data.email', __('Le credenziali fornite non sono corrette..'));
+<<<<<<< HEAD
         } catch (Exception $e) {
+=======
+        } catch (\Exception $e) {
+>>>>>>> 2024e2e7 (.)
             $this->addError('data.email', __('Si è verificato un errore durante il login. Riprova più tardi.'));
             report($e);
         }
     }
 
     /**
+<<<<<<< HEAD
      * Determina l'URL di redirect appropriato per l'utente autenticato.
      */
     protected function getRedirectUrl(): RedirectResponse
@@ -152,11 +180,86 @@ class Login extends Component implements HasActions, HasForms
     }
 
     /**
+=======
+>>>>>>> 2024e2e7 (.)
      * Renderizza il componente.
      */
     public function render(): View|Factory
     {
+<<<<<<< HEAD
         // app(ViewCopyAction::class)->execute('user::livewire.auth.login', 'pub_theme::livewire.auth.login');
         return view('user::livewire.auth.login');
+=======
+        /** @var view-string $viewName */
+        $viewName = 'user::livewire.auth.login';
+
+        // app(ViewCopyAction::class)->execute('user::livewire.auth.login', 'pub_theme::livewire.auth.login');
+        return view($viewName);
+    }
+
+    /**
+     * Definisce lo schema del form.
+     *
+     * @return array<TextInput|Checkbox>
+     */
+    protected function getFormSchema(): array
+    {
+        return [
+            TextInput::make('email')
+                ->email()
+                ->required()
+                ->suffixIcon('heroicon-m-envelope')
+                ->autofocus()
+                ->live()
+                ->afterStateUpdated(fn (mixed $_state) => $this->validateOnly('email'))
+                ->dehydrated(),
+
+            TextInput::make('password')
+                ->password()
+                ->required()
+                ->suffixIcon('heroicon-m-key')
+                ->revealable()
+                ->minLength(8)
+                ->maxLength(255)
+                ->dehydrated(),
+            Checkbox::make('remember')
+                ->default(false)
+                ->dehydrated(),
+        ];
+    }
+
+    /**
+     * Determina l'URL di redirect appropriato per l'utente autenticato.
+     */
+    protected function getRedirectUrl(): RedirectResponse
+    {
+        /** @var UserContract|null $user */
+        $user = Auth::user();
+        if (! $user instanceof UserContract) {
+            return redirect()->to('/');
+        }
+
+        /** @var Collection<int, Role> $roles */
+        $roles = $user->roles()->get();
+        $adminRoles = $roles->filter(
+            static fn (Role $role): bool => str_ends_with($role->name, '::admin')
+        );
+
+        $adminCount = $adminRoles->count();
+        if (1 === $adminCount) {
+            $role = $adminRoles->first();
+            Assert::isInstanceOf($role, Role::class);
+            $moduleName = str_replace('::admin', '', $role->name);
+
+            return redirect()->to("/{$moduleName}/admin");
+        }
+
+        if ($adminCount > 1) {
+            return redirect()->to('/admin');
+        }
+
+        // Utente senza ruoli admin - redirect alla homepage
+        return redirect()->to('/'.app()->getLocale());
+>>>>>>> 2024e2e7 (.)
     }
 }
