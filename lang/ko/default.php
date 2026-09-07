@@ -6,10 +6,17 @@ return [
     'password_confirm' => [
         'heading' => '비밀번호 확인',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'description' => '이 작업을 완료하려면 암호를 확인하십시오',
 =======
         'description' => '이 작업을 완료하려면 암호를 확인하십시오', // Please confirm your password to complete this action.
 >>>>>>> f548be94 (.)
+=======
+        'description' => '이 작업을 완료하려면 암호를 확인하십시오', // Please confirm your password to complete this action.
+=======
+        'description' => '이 작업을 완료하려면 암호를 확인하십시오',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         'current_password' => '현재 비밀번호',
     ],
     'two_factor' => [
@@ -107,6 +114,7 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'avatar' => [
             'label' => '아바타',
             'tooltip' => '',
@@ -200,6 +208,8 @@ return [
     'actions' => [
     ],
 =======
+=======
+>>>>>>> 87273113 (.)
         'avatar' => '아바타',
         'email' => '이메일',
         'login' => '로그인',
@@ -216,5 +226,102 @@ return [
     ],
     'or' => '또는',
     'cancel' => '취소',
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+        'avatar' => [
+            'label' => '아바타',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'email' => [
+            'label' => '이메일',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'login' => [
+            'label' => '로그인',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'name' => [
+            'label' => '이름',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'password' => [
+            'label' => '비밀번호',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'password_confirm' => [
+            'label' => '비밀번호 확인',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'new_password' => [
+            'label' => '신규 비밀번호',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'new_password_confirmation' => [
+            'label' => '신규 비밀번호 확인',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'token_name' => [
+            'label' => '토큰 이름',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'token_expiry' => [
+            'label' => '토큰 만료일',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'abilities' => [
+            'label' => '능력',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        '2fa_code' => [
+            'label' => '코드',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        '2fa_recovery_code' => [
+            'label' => '복구 코드',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'or' => '또는',
+    'cancel' => '취소',
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'actions' => [
+    ],
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 ];

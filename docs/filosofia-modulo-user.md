@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Analisi Approfondita del Modulo User"
 type: concept
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Analisi Approfondita del Modulo User
 
 > **Generato**: 2025-12-24
@@ -497,8 +505,15 @@ BaseUser implements:
 - [Spatie Permission Documentation](https://spatie.be/docs/laravel-permission)
 - [Laravel Passport Documentation](https://laravel.com/docs/passport)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md)
 =======
 - [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md)
+=======
+- [business-logic-deep-dive-4.md](./business-logic-deep-dive.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [docs/_integration/spatie-permissions.md](./_integration/spatie-permissions.md)

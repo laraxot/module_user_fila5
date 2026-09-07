@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "DRY & KISS Analysis - Modulo User"
 type: concept
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # DRY & KISS Analysis - Modulo User
 
 **Data:** 15 Ottobre 2025
@@ -136,6 +144,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 - [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
@@ -144,6 +153,16 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../docs/dry_kiss_analysis_2025-10-15.md)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [Base Classes Corrections](./fixes/base-classes-corrections-2025-10-15.md)
+- [Architecture](./core/architecture.md)
+- [DRY/KISS Global](../../docs/dry_kiss_analysis_2025-10-15.md)
+=======
+- [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
+- [Architecture](./core/architecture.md)
+- [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
 ---
 

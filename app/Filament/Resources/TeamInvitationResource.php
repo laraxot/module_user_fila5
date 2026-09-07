@@ -4,10 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Support\Components\Component;
+=======
+use Filament\Resources\Pages\PageRegistration;
+>>>>>>> 2024e2e7 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Resources\TeamInvitationResource\Pages\EditTeamInvitations;
 use Modules\User\Filament\Resources\TeamInvitationResource\Pages\ListTeamInvitations;
@@ -22,6 +26,7 @@ class TeamInvitationResource extends XotBaseResource
     protected static ?string $model = TeamInvitation::class;
 
     /**
+<<<<<<< HEAD
      * Get the form schema for the resource.
      *
      * @return array<string, Component>
@@ -51,6 +56,8 @@ class TeamInvitationResource extends XotBaseResource
     }
 
     /**
+=======
+>>>>>>> 2024e2e7 (.)
      * Get the pages available for the resource.
      *
      * @return array<string, PageRegistration>

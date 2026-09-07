@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -18,6 +19,8 @@ return [
     ],
 ];
 =======
+=======
+>>>>>>> 87273113 (.)
 return array (
   'fields' => 
   array (
@@ -58,4 +61,25 @@ return array (
     ),
   ),
 );
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+declare(strict_types=1);
+
+return [
+    'actions' => [
+        'profile' => [
+            'label' => 'profile',
+            'icon' => 'profile',
+            'tooltip' => 'profile',
+        ],
+        'logout' => [
+            'label' => 'logout',
+            'icon' => 'logout',
+            'tooltip' => 'logout',
+        ],
+    ],
+];
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

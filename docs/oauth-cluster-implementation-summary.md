@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: oauth-cluster-implementation-summary
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/oauth-cluster-implementation-summary.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # OAuth Cluster Implementation Summary
 
 **Data**: 2025-01-22
@@ -189,4 +192,25 @@ Se in futuro serve centralizzare configurazione OAuth:
 **Ultimo aggiornamento**: 2025-01-22
 **Versione**: 1.0.0
 **Status**: ✅ Implementazione completata e verificata
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: oauth-cluster-implementation-summary
+canonical: ../../../Themes/docs/shared-components/oauth-cluster-implementation-summary.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/oauth-cluster-implementation-summary.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

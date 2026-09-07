@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Analisi di Ottimizzazione - Modulo User"
 type: concept
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Analisi di Ottimizzazione - Modulo User
 
 ## 🎯 Principi Applicati: DRY + KISS + SOLID + ROBUST + Laraxot
@@ -749,12 +757,21 @@ class SecurityAlertService
 - [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
 - [Laravel Authentication](https://laravel.com/project_docs/authentication)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Multi-tenancy Best Practices](../../../../docs/project/multi-tenancy-best-practices.md)
 - [Security Guidelines](../../../../docs/project/security-guidelines.md)
 =======
 - [Multi-tenancy Best Practices](../../../project_docs/multi-tenancy-best-practices.md)
 - [Security Guidelines](../../../project_docs/security-guidelines.md)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [Multi-tenancy Best Practices](../../../project_docs/multi-tenancy-best-practices.md)
+- [Security Guidelines](../../../project_docs/security-guidelines.md)
+=======
+- [Multi-tenancy Best Practices](../../../../docs/project/multi-tenancy-best-practices.md)
+- [Security Guidelines](../../../../docs/project/security-guidelines.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
 ---
 

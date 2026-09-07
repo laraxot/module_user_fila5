@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UserFactory Advanced Implementation - COMPLETE ✅
 
 ## 🎉 Mission Accomplished
@@ -658,4 +659,25 @@ $gdprTests = [
 - [Cross-Module Relations](../laravel/modules/<nome progetto>/docs/models/doctor-studio-relationship.md)
 
 **🎉 MISSION ACCOMPLISHED - UserFactory Advanced Implementation Complete! 🎉**
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: userfactory-advanced-implementation-complete
+canonical: ../../../Themes/docs/shared-components/userfactory-advanced-implementation-complete.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/userfactory-advanced-implementation-complete.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

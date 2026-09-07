@@ -24,6 +24,10 @@ return [
         'placeholder' => 'Conferma la tua nuova password',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
     'navigation' => [
         'name' => 'Fields',
         'plural' => 'Fields',
@@ -57,6 +61,10 @@ return [
             'description' => '',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 ];

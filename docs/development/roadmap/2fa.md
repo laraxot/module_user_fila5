@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Two-Factor Authentication - 70% Completato"
 type: concept
@@ -12,8 +16,12 @@ related:
   - "./bottlenecks.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Two-Factor Authentication - 70% Completato
 
 ## Descrizione

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: migration-unicity-rule
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-unicity-rule.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # 🚨 REGOLA FONDAMENTALE - UNICITÀ MIGRATION
 
 ## 🏛️ Filosofia Laraxot: Una Tabela, Una Migration
@@ -106,4 +109,25 @@ php artisan make:migration add_fields_to_roles_table --module=User
 ---
 
 *Questa regola è FONDAMENTALE e non può essere violata. È un comandamento della religione Laraxot.*
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: migration-unicity-rule
+canonical: ../../../Themes/docs/shared-components/migration-unicity-rule.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/migration-unicity-rule.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 module: theme
 topic: xotbasemigration_best_practices
 canonical: ../../../Themes/docs/shared-components/xotbasemigration-best-practices.mdc
@@ -7,6 +8,8 @@ canonical: ../../../Themes/docs/shared-components/xotbasemigration-best-practice
 
 See canonical documentation: ../../../Themes/docs/shared-components/xotbasemigration-best-practices.mdc
 =======
+=======
+>>>>>>> 87273113 (.)
 description:
 globs:
 alwaysApply: false
@@ -60,4 +63,15 @@ if (!Schema::hasColumn('users', 'state')) {
 - [Contratti e Interfacce Moderazione](mdc:MODERATION_CONTRACTS.mdc)
 - [Configurazione Stati Utente](mdc:USER_STATES.mdc)
 - [Best Practice: ActivityLog per la Moderazione Utenti](mdc:ACTIVITYLOG_MODERATION_BEST_PRACTICES.mdc)
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+module: theme
+topic: xotbasemigration_best_practices
+canonical: ../../../Themes/docs/shared-components/xotbasemigration-best-practices.mdc
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/xotbasemigration-best-practices.mdc
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

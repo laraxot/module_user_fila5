@@ -10,29 +10,50 @@ return [
             'placeholder' => 'Inserisci la tua email',
             'helper_text' => 'Indirizzo email per accedere',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Inserisci la tua password',
             'helper_text' => 'Password di accesso',
 <<<<<<< HEAD
-            'tooltip' => '',
-            'description' => '',
-=======
->>>>>>> f548be94 (.)
-        ],
-        'remember' => [
-            'label' => 'Ricordami',
-            'helper_text' => 'Mantieni la sessione attiva',
 <<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
+        ],
+        'remember' => [
+            'label' => 'Ricordami',
+            'helper_text' => 'Mantieni la sessione attiva',
+<<<<<<< HEAD
+<<<<<<< HEAD
+            'tooltip' => '',
+            'description' => '',
+=======
+>>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
     ],
     'actions' => [
@@ -60,6 +81,10 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
     'navigation' => [
         'name' => 'Login Widget',
         'plural' => 'Login Widget',
@@ -73,6 +98,10 @@ return [
     ],
     'label' => 'Login Widget',
     'plural_label' => 'Login Widget (Plurale)',
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 ];

@@ -6,11 +6,19 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 use Filament\Schemas\Schema;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Component;
 use Filament\Forms\Components\TextInput;
 >>>>>>> f548be94 (.)
+=======
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Components\Component;
+use Filament\Forms\Components\TextInput;
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
@@ -18,6 +26,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
@@ -47,6 +56,8 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
     }
 
 =======
+=======
+>>>>>>> 87273113 (.)
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Override;
 
@@ -100,7 +111,39 @@ class ResetPasswordWidget extends XotBaseWidget
     /**
      * Mount the widget and initialize the form.
      */
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+
+/**
+ * ResetPasswordWidget — token + nuova password (click sul link email).
+ *
+ * Schema da `Schemas\UserForm::getResetPasswordFormSchema()` — SSoT.
+ *
+ * @property Schema $form
+ */
+class ResetPasswordWidget extends XotBaseSchemaWidget
+{
+    protected string $view = 'user::widgets.auth.reset-password-widget';
+
+    /**
+     * @return class-string<UserForm>
+     */
+    protected static function formClass(): string
+    {
+        return UserForm::class;
+    }
+
+    protected static function schemaMethod(): string
+    {
+        return 'getResetPasswordFormSchema';
+    }
+
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     public function mount(): void
     {
         $this->form->fill();
@@ -108,7 +151,10 @@ class ResetPasswordWidget extends XotBaseWidget
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 87273113 (.)
      * Configure the form for this widget.
      */
 
@@ -118,7 +164,12 @@ class ResetPasswordWidget extends XotBaseWidget
      * Implements Laravel's password reset functionality with explicit
      * type casting for security and proper error feedback.
      *
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
      * @return RedirectResponse|void
      */
     public function resetPassword()
@@ -128,6 +179,7 @@ class ResetPasswordWidget extends XotBaseWidget
         $reset_data = Arr::only($data, ['email', 'password', 'password_confirmation', 'token']);
         $status = Password::reset($reset_data, function (Authenticatable $user, string $password): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (! $user instanceof Model) {
                 return;
             }
@@ -135,12 +187,22 @@ class ResetPasswordWidget extends XotBaseWidget
 =======
             /** @var Model&Authenticatable $user */
 >>>>>>> f548be94 (.)
+=======
+            /** @var Model&Authenticatable $user */
+=======
+            if (! $user instanceof Model) {
+                return;
+            }
+
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
             $user->forceFill([
                 'password' => Hash::make($password),
                 'remember_token' => Str::random(60),
             ])->save();
         });
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         if (Password::PASSWORD_RESET === $status) {
             session()->flash('status', __($status));
@@ -149,6 +211,8 @@ class ResetPasswordWidget extends XotBaseWidget
         }
         $this->addError('email', __(is_string($status) ? $status : 'passwords.generic_error'));
 =======
+=======
+>>>>>>> 87273113 (.)
         if ($status === Password::PASSWORD_RESET) {
             session()->flash('status', __($status));
 
@@ -157,6 +221,17 @@ class ResetPasswordWidget extends XotBaseWidget
             /** @phpstan-ignore-next-line */
             $this->addError('email', __($status));
         }
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+        if (Password::PASSWORD_RESET === $status) {
+            session()->flash('status', __($status));
+
+            return redirect()->route('login');
+        }
+        $this->addError('email', __(is_string($status) ? $status : 'passwords.generic_error'));
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     }
 }

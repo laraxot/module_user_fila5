@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: translation-resolution-prototype
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-conflict-resolution-prototype.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Translation Conflict Resolution Prototype
 
 ## Overview
@@ -42,4 +45,25 @@ This document describes the prototype for resolving Git conflicts in Laravel tra
 ## Resolution Algorithm
 
 ### Step 1: Parse Conflict Markers
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: translation-resolution-prototype
+canonical: ../../../Themes/docs/shared-components/translation-conflict-resolution-prototype.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/translation-conflict-resolution-prototype.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

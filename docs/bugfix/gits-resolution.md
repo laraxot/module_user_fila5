@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: gits-resolution
@@ -12,6 +13,8 @@ related:
 
 See canonical documentation: ../../../../Themes/docs/shared-components/git-conflicts-resolution.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Git Conflicts Resolution - 16 Dicembre 2025
 
 **Data Fix**: 16 Dicembre 2025
@@ -142,4 +145,21 @@ git status --porcelain | grep "^UU\|^AA\|^DD"
 ---
 
 *"Un conflitto risolto è come una ferita guarita - il codice può finalmente respirare."* - Super Mucca Zen
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: gits-resolution
+canonical: ../../../../Themes/docs/shared-components/git-conflicts-resolution.md
+related:
+  - "./deviceuser-hasxotfactory-fix.md"
+  - "./deviceuser-hasxotfactory.md"
+  - "./git-conflicts-resolution.md"
+  - "./multiple-bugs-resolution.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/git-conflicts-resolution.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

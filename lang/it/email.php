@@ -15,6 +15,10 @@ return [
     'click_to_confirm' => 'Clicca qui per confermare il tuo account:',
     'password_reset_expiration' => 'Questo link per il reset della password scadrà tra :count minuti.',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
     'navigation' => [
         'name' => 'Email',
         'plural' => 'Email',
@@ -59,6 +63,10 @@ return [
             'label' => 'Elimina Email',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 ];

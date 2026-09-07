@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Filosofia dei Comandi Console - Modulo User"
 type: concept
@@ -15,8 +19,12 @@ related:
   - "./readme.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -475,11 +483,19 @@ private function getPasswordLegacy(): string
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 87273113 (.)
 *Ultimo aggiornamento: 2025-01-27*
 
 
 
 
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 

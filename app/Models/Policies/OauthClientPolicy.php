@@ -5,9 +5,12 @@ declare(strict_types=1);
 namespace Modules\User\Models\Policies;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 class OauthClientPolicy extends UserBasePolicy
 {
 =======
+=======
+>>>>>>> 87273113 (.)
 use Modules\User\Models\OauthClient;
 use Modules\Xot\Contracts\UserContract;
 
@@ -72,5 +75,12 @@ class OauthClientPolicy extends UserBasePolicy
     {
         return $user->hasPermissionTo('oauth-client.force-delete') || $user->hasRole('super-admin');
     }
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+class OauthClientPolicy extends UserBasePolicy
+{
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 }

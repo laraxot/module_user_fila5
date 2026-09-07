@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 return [
     'fields' => [
         'background_color' => ['label' => 'background_color', 'placeholder' => 'background_color', 'helper_text' => 'background_color', 'description' => 'background_color', 'tooltip' => ''],
@@ -25,6 +26,8 @@ return [
     'label' => 'Alignment',
     'plural_label' => 'Alignment (Plurale)',
 =======
+=======
+>>>>>>> 87273113 (.)
 
 return [
     'fields' => [
@@ -58,5 +61,31 @@ return [
             'label' => 'updateAction',
         ],
     ],
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+return [
+    'fields' => [
+        'background_color' => ['label' => 'background_color', 'placeholder' => 'background_color', 'helper_text' => 'background_color', 'description' => 'background_color', 'tooltip' => ''],
+        'background' => ['label' => 'background', 'placeholder' => 'background', 'helper_text' => 'background', 'description' => 'background', 'tooltip' => ''],
+        'overlay_color' => ['label' => 'overlay_color', 'placeholder' => 'overlay_color', 'helper_text' => 'overlay_color', 'description' => 'overlay_color', 'tooltip' => ''],
+        'overlay_opacity' => ['label' => 'overlay_opacity', 'placeholder' => 'overlay_opacity', 'helper_text' => 'overlay_opacity', 'description' => 'overlay_opacity', 'tooltip' => ''],
+    ],
+    'actions' => [
+        'updateAction' => ['label' => 'updateAction'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+    ],
+    'navigation' => [
+        'name' => 'Allineamento',
+        'plural' => 'Allineamenti',
+        'group' => ['name' => 'Aspetto', 'description' => 'Personalizzazione dell\'aspetto del sistema'],
+        'label' => 'Allineamento',
+        'sort' => 16,
+        'icon' => 'heroicon-o-adjustments-horizontal',
+    ],
+    'label' => 'Alignment',
+    'plural_label' => 'Alignment (Plurale)',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 ];

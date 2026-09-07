@@ -6,10 +6,13 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\TenantUser;
 
 /**
 =======
+=======
+>>>>>>> 87273113 (.)
 use Modules\User\Models\Tenant;
 use Modules\User\Models\TenantUser;
 use Modules\User\Models\User;
@@ -19,7 +22,15 @@ use Modules\User\Models\User;
  *
  * Factory for creating TenantUser model instances for testing and seeding.
  *
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+use Modules\User\Models\TenantUser;
+
+/**
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
  * @extends Factory<TenantUser>
  */
 class TenantUserFactory extends Factory
@@ -37,6 +48,7 @@ class TenantUserFactory extends Factory
      * @return array<string, mixed>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
@@ -48,6 +60,8 @@ class TenantUserFactory extends Factory
         ];
     }
 =======
+=======
+>>>>>>> 87273113 (.)
     public function definition(): array
     {
         return [
@@ -81,5 +95,20 @@ class TenantUserFactory extends Factory
             'user_id' => $user->id,
         ]);
     }
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+    /**
+     * @return array<string, mixed>
+     */
+    public function definition(): array
+    {
+        return [
+            'tenant_id' => fake()->uuid(),
+            'user_id' => fake()->uuid(),
+        ];
+    }
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 }

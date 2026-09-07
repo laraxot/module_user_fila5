@@ -1,6 +1,7 @@
 includes:
     - ./phpstan-baseline.neon
 <<<<<<< HEAD
+<<<<<<< HEAD
     - ../../vendor/larastan/larastan/extension.neon
     - ../../vendor/nesbot/carbon/extension.neon
     - ../../vendor/pestphp/pest/extension.neon
@@ -8,6 +9,15 @@ includes:
 =======
     - ./../../vendor/larastan/larastan/extension.neon
 >>>>>>> f548be94 (.)
+=======
+    - ./../../vendor/larastan/larastan/extension.neon
+=======
+    - ../../vendor/larastan/larastan/extension.neon
+    - ../../vendor/nesbot/carbon/extension.neon
+    - ../../vendor/pestphp/pest/extension.neon
+    #- ./../../vendor/larastan/larastan/extension.neon
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     #- ./../../vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
     #- ./vendor/symplify/phpstan-rules/config/code-complexity-rules.neon
     #- ./vendor/symplify/phpstan-rules/config/collector-rules.neon
@@ -21,6 +31,7 @@ parameters:
 
     paths:
 <<<<<<< HEAD
+<<<<<<< HEAD
         - ./app
         - ./config
         - ./database
@@ -31,6 +42,18 @@ parameters:
 =======
         - .
 >>>>>>> f548be94 (.)
+=======
+        - .
+=======
+        - ./app
+        - ./config
+        - ./database
+        - ./lang
+        - ./resources
+        - ./routes
+        - ./tests
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     
           
 
@@ -40,10 +63,17 @@ parameters:
         - identifier: missingType.iterableValue
         - identifier: missingType.generics
 <<<<<<< HEAD
+<<<<<<< HEAD
         - '#Cannot cast mixed to (string|float|double|int|bool|boolean).#'
         - identifier: theCodingMachineSafe.function
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+        - '#Cannot cast mixed to (string|float|double|int|bool|boolean).#'
+        - identifier: theCodingMachineSafe.function
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
     excludePaths:
         - ./vendor/*
@@ -53,9 +83,15 @@ parameters:
         - ./*/vendor/*
         - ./*/docs/*
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         - ./*/Tests/*
 >>>>>>> f548be94 (.)
+=======
+        - ./*/Tests/*
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         - ./*/_ide_helper.php
 
     bootstrapFiles:
@@ -64,10 +100,17 @@ parameters:
 
     scanFiles:
 <<<<<<< HEAD
+<<<<<<< HEAD
     #    - ./helpers/Helper.php
 =======
     #    - ./Helpers/Helper.php
 >>>>>>> f548be94 (.)
+=======
+    #    - ./Helpers/Helper.php
+=======
+    #    - ./helpers/Helper.php
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     #    - ./vendor/amenadiel/jpgraph/src/config.inc.php
     #    - ../../vendor/autoload.php
     
@@ -78,9 +121,12 @@ parameters:
 
     tmpDir: ./build/phpstan
 <<<<<<< HEAD
+<<<<<<< HEAD
     treatPhpDocTypesAsCertain: false
     reportUnmatchedIgnoredErrors: false
 =======
+=======
+>>>>>>> 87273113 (.)
     checkUnusedViews: false
     # checkMissingIterableValueType: false
     # checkGenericClassInNonGenericObjectType: false
@@ -88,5 +134,12 @@ parameters:
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: false
     checkModelProperties: false
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+    treatPhpDocTypesAsCertain: false
+    reportUnmatchedIgnoredErrors: false
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 

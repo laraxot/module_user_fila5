@@ -7,6 +7,7 @@ return [
         'name' => [
             'label' => 'name',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -23,13 +24,35 @@ return [
             'helper_text' => '',
             'description' => '',
 =======
+=======
+>>>>>>> 87273113 (.)
         ],
         'email' => [
             'label' => 'email',
         ],
         'password' => [
             'label' => 'password',
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'email' => [
+            'label' => 'email',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'password' => [
+            'label' => 'password',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
     ],
     'actions' => [
@@ -42,12 +65,24 @@ return [
         'cancel' => [
             'label' => 'cancel',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'icon' => 'cancel',
         ],
         'logout' => [
             'icon' => 'logout',
         ],
     ],
+=======
+        ],
+    ],
+=======
+            'icon' => 'cancel',
+        ],
+        'logout' => [
+            'icon' => 'logout',
+        ],
+    ],
+>>>>>>> 87273113 (.)
     'navigation' => [
         'name' => 'Create User',
         'plural' => 'Create User',
@@ -61,8 +96,12 @@ return [
     ],
     'label' => 'Create User',
     'plural_label' => 'Create User (Plurale)',
+<<<<<<< HEAD
 =======
         ],
     ],
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 ];

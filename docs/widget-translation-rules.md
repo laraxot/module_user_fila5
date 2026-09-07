@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Widget Translation Rules - SaluteOra Project
 =======
+=======
+>>>>>>> 87273113 (.)
 # Widget Translation Rules - FixCity Project
 
 ## Core Principles
@@ -371,4 +374,25 @@ This document serves as a reference for:
 All widget development should follow these rules to maintain consistency and quality across the SaluteOra project.
 =======
 All widget development should follow these rules to maintain consistency and quality across the <nome progetto> project.
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: widget-translation-rules
+canonical: ../../../Themes/docs/shared-components/widget-translation-rules-Modules.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/widget-translation-rules-Modules.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

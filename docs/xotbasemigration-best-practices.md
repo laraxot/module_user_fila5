@@ -3,6 +3,10 @@ description:
 globs:
 alwaysApply: false
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -12,8 +16,12 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 ---
 # Best Practice: XotBaseMigration
 
@@ -60,10 +68,17 @@ if (!Schema::hasColumn('users', 'state')) {
 
 ## Collegamenti correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Migrazioni del Database](mdc:../../../../docs/database-migrations.md)
 =======
 - [Migrazioni del Database](mdc:../../../docs/database-migrations.md)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [Migrazioni del Database](mdc:../../../docs/database-migrations.md)
+=======
+- [Migrazioni del Database](mdc:../../../../docs/database-migrations.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [Moderazione e Wizard Generici](mdc:MODERATION_WIZARD_GENERIC.mdc)
 - [Contratti e Interfacce Moderazione](mdc:MODERATION_CONTRACTS.mdc)
 - [Configurazione Stati Utente](mdc:USER_STATES.mdc)

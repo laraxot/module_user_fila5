@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: phpstan-errors-roadmap
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-roadmap.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # PHPStan Level Max Errors Roadmap - User Module
 
 **Date**: 2026-01-12
@@ -236,4 +239,25 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpstan-erro
 **Approccio**: Analisi approfondita - errori diversi richiedono comprensione business logic  
 **Priorità**: Media (13 errori, alcuni richiedono verifica modelli)  
 **Tempo stimato**: 45 minuti
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: phpstan-errors-roadmap
+canonical: ../../../Themes/docs/shared-components/phpstan-errors-roadmap.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-roadmap.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

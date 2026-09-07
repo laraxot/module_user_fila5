@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Analisi Errore Logout"
 type: concept
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Analisi Errore Logout
 
 ## Problema Identificato
@@ -145,10 +153,17 @@ class LogoutWidget extends XotBaseWidget
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Gestione Sessione](./session-management-2.md)
 =======
 - [Gestione Sessione](./session_management.md)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [Gestione Sessione](./session_management.md)
+=======
+- [Gestione Sessione](./session-management-2.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)
 # Analisi Errore Logout
 
@@ -274,8 +289,15 @@ class LogoutWidget extends XotBaseWidget
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Gestione Sessione](./session-management-2.md)
 =======
 - [Gestione Sessione](./session_management.md)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [Gestione Sessione](./session_management.md)
+=======
+- [Gestione Sessione](./session-management-2.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)

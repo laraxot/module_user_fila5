@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: missing-filament-resources
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/missing-filament-resources-analysis.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Missing Filament Resources Analysis - User Module
 
 ## 📋 Executive Summary
@@ -230,4 +233,25 @@ Motivo: nel modulo `User` molte classi in `Models/` sono basi (`Base*`), pivot/j
 3. **Custom Actions**: Add bulk operations for token management
 
 This analysis provides a comprehensive roadmap for implementing missing Filament resources in the User module following DRY and KISS principles while maintaining consistency with the Laraxot architecture.
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: missing-filament-resources
+canonical: ../../../Themes/docs/shared-components/missing-filament-resources-analysis.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/missing-filament-resources-analysis.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

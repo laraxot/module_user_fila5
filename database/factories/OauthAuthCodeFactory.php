@@ -11,10 +11,17 @@ use Modules\User\Models\User;
 
 /**
 <<<<<<< HEAD
+<<<<<<< HEAD
  * OauthAuthCode Factory.
 =======
  * OauthAuthCode Factory
 >>>>>>> f548be94 (.)
+=======
+ * OauthAuthCode Factory
+=======
+ * OauthAuthCode Factory.
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
  *
  * @extends Factory<OauthAuthCode>
  */
@@ -23,11 +30,19 @@ class OauthAuthCodeFactory extends Factory
     protected $model = OauthAuthCode::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     public function definition(): array
     {
         return [
@@ -43,12 +58,21 @@ class OauthAuthCodeFactory extends Factory
     public function expired(): static
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->state([
             'expires_at' => $this->faker->dateTimeBetween('-1 hour', 'now'),
         ]);
 =======
         return $this->state(['expires_at' => $this->faker->dateTimeBetween('-1 hour', 'now')]);
 >>>>>>> f548be94 (.)
+=======
+        return $this->state(['expires_at' => $this->faker->dateTimeBetween('-1 hour', 'now')]);
+=======
+        return $this->state([
+            'expires_at' => $this->faker->dateTimeBetween('-1 hour', 'now'),
+        ]);
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     }
 
     public function revoked(): static

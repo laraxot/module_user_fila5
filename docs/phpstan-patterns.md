@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "PHPStan Level 10 Patterns - User Module"
 type: pattern
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # PHPStan Level 10 Patterns - User Module
 
 **Last Updated**: 2026-02-16  
@@ -184,6 +192,7 @@ When fixing PHPStan errors:
 ## Related Files
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [`RevokeClientAction.php`](file:///var/www/_bases/base_<nome progetto>/laravel/Modules/User/app/Actions/Passport/RevokeClientAction.php)
 - [`UserNameFieldsResolver.php`](file:///var/www/_bases/base_<nome progetto>/laravel/Modules/User/app/Actions/Socialite/Utils/UserNameFieldsResolver.php)
 - [`AssignModuleCommand.php`](file:///var/www/_bases/base_<nome progetto>/laravel/Modules/User/app/Console/Commands/AssignModuleCommand.php)
@@ -192,6 +201,16 @@ When fixing PHPStan errors:
 - [`UserNameFieldsResolver.php`](file:///var/www/_bases/base_laravelpizza/laravel/Modules/User/app/Actions/Socialite/Utils/UserNameFieldsResolver.php)
 - [`AssignModuleCommand.php`](file:///var/www/_bases/base_laravelpizza/laravel/Modules/User/app/Console/Commands/AssignModuleCommand.php)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [`RevokeClientAction.php`](file:///var/www/_bases/base_laravelpizza/laravel/Modules/User/app/Actions/Passport/RevokeClientAction.php)
+- [`UserNameFieldsResolver.php`](file:///var/www/_bases/base_laravelpizza/laravel/Modules/User/app/Actions/Socialite/Utils/UserNameFieldsResolver.php)
+- [`AssignModuleCommand.php`](file:///var/www/_bases/base_laravelpizza/laravel/Modules/User/app/Console/Commands/AssignModuleCommand.php)
+=======
+- [`RevokeClientAction.php`](file:///var/www/_bases/base_<nome progetto>/laravel/Modules/User/app/Actions/Passport/RevokeClientAction.php)
+- [`UserNameFieldsResolver.php`](file:///var/www/_bases/base_<nome progetto>/laravel/Modules/User/app/Actions/Socialite/Utils/UserNameFieldsResolver.php)
+- [`AssignModuleCommand.php`](file:///var/www/_bases/base_<nome progetto>/laravel/Modules/User/app/Console/Commands/AssignModuleCommand.php)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
 ---
 

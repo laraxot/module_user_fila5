@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: testing-user-command-integration-fix
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/testing-user-command-integration-fix.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Fix: UserCommandIntegrationTest - Application and Config Issues
 
 **Data**: 2025-01-22
@@ -93,4 +96,25 @@ it('can be registered with Laravel artisan', function () {
 
 **Status**: Completed
 **Risultato**: Test UserCommandIntegrationTest ora verifica il comando direttamente senza creare Application
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: testing-user-command-integration-fix
+canonical: ../../../Themes/docs/shared-components/testing-user-command-integration-fix.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/testing-user-command-integration-fix.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

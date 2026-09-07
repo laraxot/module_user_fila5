@@ -304,12 +304,19 @@ public function getTableColumns(): array
 
 ## 📚 Related Documentation
 
+<<<<<<< HEAD
 - [AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md](./performance/authentication_performance_optimization.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 - [AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md](./performance/AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md)
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+- [AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md](./performance/AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 

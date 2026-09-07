@@ -6,10 +6,13 @@ namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\TeamUser;
 
 /**
 =======
+=======
+>>>>>>> 87273113 (.)
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamUser;
 use Modules\User\Models\User;
@@ -19,7 +22,15 @@ use Modules\User\Models\User;
  *
  * Factory for creating TeamUser model instances for testing and seeding.
  *
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+use Modules\User\Models\TeamUser;
+
+/**
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
  * @extends Factory<TeamUser>
  */
 class TeamUserFactory extends Factory
@@ -27,28 +38,46 @@ class TeamUserFactory extends Factory
     /**
      * The name of the factory's corresponding model.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var class-string<TeamUser>
 >>>>>>> f548be94 (.)
+=======
+     *
+     * @var class-string<TeamUser>
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
      */
     protected $model = TeamUser::class;
 
     /**
      * Define the model's default state.
 <<<<<<< HEAD
+<<<<<<< HEAD
      */
     /**
 =======
      *
 >>>>>>> f548be94 (.)
+=======
+     *
+=======
+     */
+    /**
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
      * @return array<string, mixed>
      */
     public function definition(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return [];
 =======
+=======
+>>>>>>> 87273113 (.)
         return [
             'team_id' => Team::factory(),
             'user_id' => User::factory(),
@@ -116,6 +145,12 @@ class TeamUserFactory extends Factory
         return $this->state(fn(array $_attributes): array => [
             'role' => 'member',
         ]);
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+        return [];
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     }
 }

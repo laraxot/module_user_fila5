@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 87273113 (.)
     /*
      * |--------------------------------------------------------------------------
      * | Messaggi di validazione
@@ -17,7 +20,12 @@ return [
      * |
      */
 
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     'accepted' => 'Il campo :attribute deve essere accettato.',
     'active_url' => 'Il campo :attribute non è un URL valido.',
     'after' => 'Il campo :attribute deve essere una data successiva a :date.',
@@ -135,7 +143,10 @@ return [
     'url' => 'Il formato del campo :attribute non è valido.',
     'uuid' => 'Il campo :attribute deve essere un UUID valido.',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 87273113 (.)
     /*
      * |--------------------------------------------------------------------------
      * | Personalizzazione degli attributi
@@ -147,7 +158,12 @@ return [
      * |
      */
 
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     'attributes' => [
         'data.password' => 'zu',
     ],
@@ -161,6 +177,10 @@ return [
     'phone_format' => 'Il numero di telefono deve avere un formato valido.',
     'birth_date_before' => 'La data di nascita deve essere precedente ad oggi.',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
     'navigation' => [
         'name' => 'Validation',
         'plural' => 'Validation',
@@ -205,6 +225,10 @@ return [
             'label' => 'Elimina Validation',
         ],
     ],
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 ];

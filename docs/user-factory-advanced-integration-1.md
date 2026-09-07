@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: user-factory-advanced-integration-1
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-factory-advanced-integration-1.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # UserFactory Advanced Integration - Modulo User & <nome progetto>
 
 ## Post Deep-Study Analysis
@@ -311,4 +314,25 @@ public function run(): void
 ### Root Documentation
 - [UserFactory <nome progetto> Integration](../../../../docs/userfactory_<nome progetto>_integration.md)
 - [Testing Standards](../../../../docs/testing_standards.md)
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: user-factory-advanced-integration-1
+canonical: ../../../Themes/docs/shared-components/user-factory-advanced-integration-1.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/user-factory-advanced-integration-1.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

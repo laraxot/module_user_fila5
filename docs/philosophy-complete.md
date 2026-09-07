@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: philosophy-complete
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/philosophy-complete.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # User - Filosofia Completa: Logica, Religione, Politica, Zen
 
 **Data Creazione**: 2025-12-23
@@ -277,4 +280,25 @@ class DoctorScope implements Scope
 ---
 
 **Filosofia**: STI Unity, RBAC Standard, Multi-Tenant Isolation, Identity Foundation
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: philosophy-complete
+canonical: ../../../Themes/docs/shared-components/philosophy-complete.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/philosophy-complete.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

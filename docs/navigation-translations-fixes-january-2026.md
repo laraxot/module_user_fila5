@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Correzioni Traduzioni Navigation - Gennaio 2026"
 type: concept
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Correzioni Traduzioni Navigation - Gennaio 2026
 
 ## Data Intervento
@@ -207,11 +215,19 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filosofia Traduzioni Laraxot](../../Xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../Xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./README.md)
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+- [Filosofia Traduzioni Laraxot](../../Xot/docs/translation-philosophy.md)
+- [Standard Traduzioni](../../Xot/docs/translation-standards.md)
+- [Documentazione Modulo User](./README.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./readme.md)
@@ -229,4 +245,8 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 *Conforme alle regole DRY + KISS*
 =======
 *Conforme alle regole DRY + KISS*
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

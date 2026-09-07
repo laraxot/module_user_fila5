@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Xot\Contracts\ProfileContract;
 =======
@@ -12,10 +13,20 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\User\Database\Factories\PermissionUserFactory;
 use Illuminate\Database\Eloquent\Builder;
 >>>>>>> f548be94 (.)
+=======
+use Modules\Xot\Contracts\ProfileContract;
+use Modules\User\Database\Factories\PermissionUserFactory;
+use Illuminate\Database\Eloquent\Builder;
+=======
+use Illuminate\Database\Eloquent\Builder;
+use Modules\Xot\Contracts\ProfileContract;
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
 /**
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @method static Builder<static>|PermissionUser newModelQuery()
  * @method static Builder<static>|PermissionUser newQuery()
@@ -44,6 +55,8 @@ use Illuminate\Database\Eloquent\Builder;
  */
 class PermissionUser extends ModelHasPermission {}
 =======
+=======
+>>>>>>> 87273113 (.)
  * @method static PermissionUserFactory factory($count = null, $state = [])
  * @method static Builder<static>|PermissionUser newModelQuery()
  * @method static Builder<static>|PermissionUser newQuery()
@@ -54,4 +67,21 @@ class PermissionUser extends ModelHasPermission {}
 class PermissionUser extends ModelHasPermission
 {
 }
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+ *
+ * @method static Builder<static>|PermissionUser newModelQuery()
+ * @method static Builder<static>|PermissionUser newQuery()
+ * @method static Builder<static>|PermissionUser query()
+ *
+ * @property ProfileContract|null $deleter
+ *
+ * @method static \Modules\User\Database\Factories\PermissionUserFactory factory($count = null, $state = [])
+ *
+ * @mixin \Eloquent
+ */
+class PermissionUser extends ModelHasPermission {}
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

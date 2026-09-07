@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: packages
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/packages.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Pacchetti del Modulo User
 
 ## Pacchetti Utilizzati
@@ -86,4 +89,25 @@ See canonical documentation: ../../../Themes/docs/shared-components/packages.md
 * [packages.md](../../../tenant/project_docs/packages.md)
 ### Versione Incoming
 ---
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: packages
+canonical: ../../../Themes/docs/shared-components/packages.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/packages.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

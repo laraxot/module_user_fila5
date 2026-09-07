@@ -8,19 +8,29 @@ return [
         'plural' => 'Utenti Tenant',
         'label' => 'Utenti Tenant',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'group' => ['name' => 'Tenants', 'description' => 'Gestione degli utenti associati ai tenant'],
 =======
+=======
+>>>>>>> 87273113 (.)
         'group' => [
             'name' => 'Tenants',
             'description' => 'Gestione degli utenti associati ai tenant',
         ],
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+        'group' => ['name' => 'Tenants', 'description' => 'Gestione degli utenti associati ai tenant'],
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         'sort' => 87,
         'icon' => 'heroicon-o-building-office',
     ],
     'label' => 'Tenant User',
     'plural_label' => 'Tenant User (Plurale)',
     'fields' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -47,6 +57,8 @@ return [
         'Tenant User Information' => ['label' => 'Tenant User Information', 'heading' => 'Tenant User Information'],
         'empty' => ['label' => '', 'heading' => ''],
 =======
+=======
+>>>>>>> 87273113 (.)
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
@@ -76,6 +88,22 @@ return [
         'delete' => [
             'label' => 'Elimina Tenant User',
         ],
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+        'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
+        'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+        'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+    ],
+    'actions' => [
+        'create' => ['label' => 'Crea Tenant User', 'icon' => 'create', 'tooltip' => 'create'],
+        'edit' => ['label' => 'Modifica Tenant User', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'delete' => ['label' => 'Elimina Tenant User', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     ],
 ];

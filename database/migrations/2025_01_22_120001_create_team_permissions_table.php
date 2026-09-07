@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\TeamPermission;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
@@ -11,6 +12,8 @@ return new class extends XotBaseMigration
 {
     protected ?string $model_class = TeamPermission::class;
 =======
+=======
+>>>>>>> 87273113 (.)
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration {
@@ -18,7 +21,18 @@ return new class extends XotBaseMigration {
      * Nome della tabella gestita dalla migrazione.
      */
     protected string $table_name = 'team_permissions';
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+use Modules\User\Models\TeamPermission;
+use Modules\Xot\Database\Migrations\XotBaseMigration;
+
+return new class extends XotBaseMigration
+{
+    protected ?string $model_class = TeamPermission::class;
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
     /**
      * Esegue la migrazione.
@@ -46,13 +60,22 @@ return new class extends XotBaseMigration {
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
 =======
+=======
+>>>>>>> 87273113 (.)
             $this->updateTimestamps(
                 table: $table,
                 hasSoftDeletes: true,
             );
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+            $this->updateTimestamps(table: $table, hasSoftDeletes: true);
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         });
     }
 };

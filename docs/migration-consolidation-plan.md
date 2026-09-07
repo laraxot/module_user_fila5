@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: migration-consolidation-plan
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-consolidation-plan.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Migration Consolidation Plan - User Module
 
 ## Philosophy & Approach
@@ -182,4 +185,25 @@ This consolidation plan aligns with Laraxot philosophy:
 - ✅ Clear schema definition
 
 The plan ensures that every table in the User module will have exactly one authoritative creation migration, supporting the fundamental Laraxot principle: **ONE TABLE, ONE MIGRATION, ONE MODULE**.
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: migration-consolidation-plan
+canonical: ../../../Themes/docs/shared-components/migration-consolidation-plan.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/migration-consolidation-plan.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

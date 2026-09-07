@@ -22,9 +22,17 @@ class RegistrationNotEnabled
         public string $provider,
         public SocialiteUserContract $oauthUser,
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {
     }
 =======
     ) {}
 >>>>>>> f548be94 (.)
+=======
+    ) {}
+=======
+    ) {
+    }
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 }

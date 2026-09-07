@@ -4,16 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\ClientResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Modules\User\Filament\Resources\ClientResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
+=======
+use Modules\User\Filament\Resources\ClientResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+>>>>>>> 2024e2e7 (.)
 
 class ViewClient extends XotBaseViewRecord
 {
     protected static string $resource = ClientResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, Component>
@@ -33,4 +39,6 @@ class ViewClient extends XotBaseViewRecord
                 ]),
         ];
     }
+=======
+>>>>>>> 2024e2e7 (.)
 }

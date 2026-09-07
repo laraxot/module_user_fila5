@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: folio-volt-best-practices
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../../Themes/docs/shared-components/folio-volt-best-practices-Modules.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Laravel Folio + Volt - Best Practices and Patterns Analysis
 
 ## Overview
@@ -119,4 +122,25 @@ middleware(['auth', 'verified']);
 
 ## Date
 2025-11-29
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: folio-volt-best-practices
+canonical: ../../../../Themes/docs/shared-components/folio-volt-best-practices-Modules.md
+related:
+  - "./auth-components-best-practices.md"
+  - "./auth-widget-rules.md"
+  - "./auth-widget.md"
+  - "./case-sensitivity-rules.md"
+  - "./case-sensitivity.md"
+  - "./component-verification-rules.md"
+  - "./component-verification.md"
+  - "./dependency-rules.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/folio-volt-best-practices-Modules.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

@@ -5,11 +5,14 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Modules\User\Models\Device;
 =======
+=======
+>>>>>>> 87273113 (.)
 use Override;
 use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\TextInput;
@@ -20,11 +23,21 @@ use Modules\User\Filament\Resources\DeviceResource\Pages\ListDevices;
 use Modules\User\Filament\Resources\DeviceResource\RelationManagers\UsersRelationManager;
 use Modules\User\Models\Device;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+use Filament\Forms\Components\TagsInput;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Toggle;
+use Modules\User\Models\Device;
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class DeviceResource extends XotBaseResource
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     protected static ?string $model = Device::class;
 
@@ -37,6 +50,8 @@ class DeviceResource extends XotBaseResource
                 ->maxLength(255),
             'languages' => TagsInput::make('languages')
 =======
+=======
+>>>>>>> 87273113 (.)
     protected static null|string $model = Device::class;
 
     #[Override]
@@ -93,4 +108,10 @@ class DeviceResource extends XotBaseResource
 >>>>>>> f548be94 (.)
         ];
     }
+=======
+    protected static ?string $model = Device::class;
+
+    
+
+>>>>>>> 2024e2e7 (.)
 }

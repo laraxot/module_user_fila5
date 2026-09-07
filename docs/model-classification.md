@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: model-classification
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/model-classification-Modules.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # User Module - Model Classification
 
 ## Business-Relevant Models (Require Factories/Seeders)
@@ -100,4 +103,25 @@ See canonical documentation: ../../../Themes/docs/shared-components/model-classi
 - OAuth models only need factories if using OAuth authentication
 - Evaluate if all infrastructure models are actually used
 - Consider removing unused OAuth models if not using OAuth
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: model-classification
+canonical: ../../../Themes/docs/shared-components/model-classification-Modules.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/model-classification-Modules.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

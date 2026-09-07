@@ -3,9 +3,15 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f548be94 (.)
+=======
+
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 return [
     'navigation' => [
         'label' => 'Registrazione Studio',
@@ -37,11 +43,19 @@ return [
                 'max' => 'Il nome non può superare i 100 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'phone' => [
             'label' => 'Numero di Telefono Studio',
@@ -53,11 +67,19 @@ return [
                 'min' => 'Il numero deve contenere almeno 10 cifre',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'email' => [
             'label' => 'Email Ufficiale Studio',
@@ -70,11 +92,19 @@ return [
                 'max' => 'L\'indirizzo email non può superare i 255 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'address' => [
             'label' => 'Complete Practice Address',
@@ -90,9 +120,15 @@ return [
                 'max' => 'Address cannot exceed 300 characters',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'helper_text' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'director_name' => [
             'label' => 'Nome Direttore Sanitario',
@@ -104,11 +140,19 @@ return [
                 'max' => 'Il nome non può superare i 100 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'director_registration' => [
             'label' => 'Numero Iscrizione Albo Medico',
@@ -120,11 +164,19 @@ return [
                 'min' => 'Il numero di iscrizione deve contenere almeno 3 cifre',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'vat_number' => [
             'label' => 'Partita IVA Studio',
@@ -136,11 +188,19 @@ return [
                 'unique' => 'Questa partita IVA è già registrata per un altro studio',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'specialization' => [
             'label' => 'Specializzazioni Mediche',
@@ -163,11 +223,19 @@ return [
                 'altro' => 'Altra Specializzazione',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'website' => [
             'label' => 'Sito Web Studio',
@@ -177,11 +245,19 @@ return [
                 'url' => 'Inserisci un URL valido che inizi con http:// o https://',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'staff_count' => [
             'label' => 'Numero Operatori',
@@ -194,11 +270,19 @@ return [
                 'max' => 'Il numero massimo consentito è 100 operatori',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'privacy_acceptance' => [
             'label' => 'Consenso Trattamento Dati',
@@ -208,11 +292,19 @@ return [
                 'accepted' => 'You must accept the privacy policy to continue',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'terms_acceptance' => [
             'label' => 'Accettazione Termini di Servizio',
@@ -222,11 +314,19 @@ return [
                 'accepted' => 'You must accept the terms and conditions to continue',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
     ],
     'actions' => [
@@ -315,8 +415,15 @@ return [
         'data_protection' => 'Tutti i dati sono protetti secondo le normative europee GDPR',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 ];

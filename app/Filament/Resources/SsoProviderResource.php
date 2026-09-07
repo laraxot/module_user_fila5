@@ -11,10 +11,17 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Resources\Pages\PageRegistration;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Support\Components\Component;
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+use Filament\Resources\RelationManagers\RelationManager;
+use Filament\Support\Components\Component;
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 use Modules\User\Filament\Resources\SsoProviderResource\Pages;
 use Modules\User\Filament\Resources\SsoProviderResource\RelationManagers\UsersRelationManager;
 use Modules\User\Models\SsoProvider;
@@ -24,6 +31,7 @@ class SsoProviderResource extends XotBaseResource
 {
     protected static ?string $model = SsoProvider::class;
 
+<<<<<<< HEAD
     /**
 <<<<<<< HEAD
      * @return array<string, Component>
@@ -72,7 +80,16 @@ class SsoProviderResource extends XotBaseResource
      * @return array<string, class-string<RelationManager>>
 =======
      * @return array<string, class-string<\Filament\Resources\RelationManagers\RelationManager>>
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+    
+
+    /**
+     * @return array<string, class-string<RelationManager>>
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
      */
     #[\Override]
     public static function getRelations(): array

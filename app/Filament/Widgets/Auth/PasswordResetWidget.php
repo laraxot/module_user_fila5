@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets\Auth;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Password;
@@ -41,6 +42,8 @@ class PasswordResetWidget extends XotBaseSchemaWidget
     public function sendResetPasswordLink(): void
     {
 =======
+=======
+>>>>>>> 87273113 (.)
 use Filament\Schemas\Schema;
 use Override;
 use Filament\Forms\Components\TextInput;
@@ -109,7 +112,47 @@ class PasswordResetWidget extends XotBaseWidget
     public function sendResetPasswordLink(): void
     {
         // try {
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+use Filament\Notifications\Notification;
+use Filament\Schemas\Schema;
+use Illuminate\Support\Facades\Password;
+use Illuminate\Support\Facades\Session;
+use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+
+/**
+ * PasswordResetWidget — schermata di invio link reset (post-login, opzionale).
+ *
+ * Schema da `Schemas\UserForm::getPasswordResetFormSchema()` — SSoT.
+ *
+ * @property Schema $form
+ */
+class PasswordResetWidget extends XotBaseSchemaWidget
+{
+    public ?array $data = [];
+
+    public bool $emailSent = false;
+
+    /**
+     * @return class-string<UserForm>
+     */
+    protected static function formClass(): string
+    {
+        return UserForm::class;
+    }
+
+    protected static function schemaMethod(): string
+    {
+        return 'getPasswordResetFormSchema';
+    }
+
+    public function sendResetPasswordLink(): void
+    {
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         $data = $this->form->getState();
         $password_broker = Password::broker();
 
@@ -128,15 +171,26 @@ class PasswordResetWidget extends XotBaseWidget
                 ->send();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             $this->form->fill();
         } else {
             Session::flash('error', trans('user::errors.'.$response.'.label'));
 =======
+=======
+>>>>>>> 87273113 (.)
             // Clear the form
             $this->form->fill();
         } else {
             Session::flash('error', trans('user::errors.' . $response . '.label'));
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+            $this->form->fill();
+        } else {
+            Session::flash('error', trans('user::errors.'.$response.'.label'));
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
             Notification::make()
                 ->title(__('user::auth.password_reset.email_failed.title'))
                 ->body(trans($response))
@@ -144,9 +198,12 @@ class PasswordResetWidget extends XotBaseWidget
                 ->send();
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
     }
 
 =======
+=======
+>>>>>>> 87273113 (.)
 
         /*} catch (\Exception $e) {
          * Notification::make()
@@ -161,7 +218,14 @@ class PasswordResetWidget extends XotBaseWidget
     /**
      * Reset the widget state to show form again.
      */
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+    }
+
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     public function resetForm(): void
     {
         $this->emailSent = false;
@@ -169,11 +233,19 @@ class PasswordResetWidget extends XotBaseWidget
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /**
      * Send another reset link.
      */
 >>>>>>> f548be94 (.)
+=======
+    /**
+     * Send another reset link.
+     */
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     public function sendAnotherLink(): void
     {
         $this->emailSent = false;
@@ -181,16 +253,26 @@ class PasswordResetWidget extends XotBaseWidget
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function checkEmailStatus(): void
     {
 =======
+=======
+>>>>>>> 87273113 (.)
     /**
      * Check email status (for compatibility with old view).
      */
     public function checkEmailStatus(): void
     {
         // This method is kept for compatibility but redirects to login
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+    public function checkEmailStatus(): void
+    {
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         $this->redirect(route('login'));
     }
 }

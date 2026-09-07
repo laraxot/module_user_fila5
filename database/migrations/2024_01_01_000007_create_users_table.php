@@ -10,11 +10,19 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Class CreateLiveuserUsersTable.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
 =======
 return new class extends XotBaseMigration {
 >>>>>>> 60a2c9a9 (.)
+=======
+return new class extends XotBaseMigration {
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     /**
      * Run the migrations.
      */
@@ -25,10 +33,17 @@ return new class extends XotBaseMigration {
             // $table->uuid('id')->primary();
             $table->string('id', 36)->primary();
 <<<<<<< HEAD
+<<<<<<< HEAD
             $table->string('name');
 =======
             $table->string('name')->nullable();
 >>>>>>> 60a2c9a9 (.)
+=======
+            $table->string('name')->nullable();
+=======
+            $table->string('name');
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('email')->unique();
@@ -70,7 +85,10 @@ return new class extends XotBaseMigration {
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 87273113 (.)
             if (! $this->hasColumn('type')) {
                 $table->string('type')->default('customer_user')->after('is_active');
             }
@@ -79,7 +97,12 @@ return new class extends XotBaseMigration {
                 $table->string('state')->default('active')->after('type');
             }
 
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
             if (! $this->hasColumn('is_otp')) {
                 $table->boolean('is_otp')->default(false);
             }
@@ -92,10 +115,17 @@ return new class extends XotBaseMigration {
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($this->getColumnType('id') === 'uuid') {
 =======
             if ('uuid' === $this->getColumnType('id')) {
 >>>>>>> 60a2c9a9 (.)
+=======
+            if ('uuid' === $this->getColumnType('id')) {
+=======
+            if ($this->getColumnType('id') === 'uuid') {
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);

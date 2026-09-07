@@ -20,6 +20,7 @@ abstract class BasePivot extends Pivot
      *
      * @see https://laravel-news.com/6-eloquent-secrets
 <<<<<<< HEAD
+<<<<<<< HEAD
      */
     public static $snakeAttributes = true;
 
@@ -28,6 +29,8 @@ abstract class BasePivot extends Pivot
     protected $perPage = 30;
 
 =======
+=======
+>>>>>>> 87273113 (.)
      *
      * @var bool
      */
@@ -40,7 +43,19 @@ abstract class BasePivot extends Pivot
     protected $perPage = 30;
 
     /** @var string */
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+     */
+    public static $snakeAttributes = true;
+
+    public $incrementing = true;
+
+    protected $perPage = 30;
+
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     protected $connection = 'user';
 
     /** @var list<string> */
@@ -50,14 +65,24 @@ abstract class BasePivot extends Pivot
      * Undocumented variable.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $primaryKey = 'id';
 
 =======
+=======
+>>>>>>> 87273113 (.)
     /** @var string */
     protected $primaryKey = 'id';
 
     /** @var string */
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+    protected $primaryKey = 'id';
+
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     protected $keyType = 'string';
 
     /** @return array<string, string> */

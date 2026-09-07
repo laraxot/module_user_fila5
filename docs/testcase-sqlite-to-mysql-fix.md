@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: testcase-sqlite-to-mysql-fix
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/testcase-sqlite-to-mysql-fix.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # TestCase SQLite to MySQL Fix - User Module
 
 ## Problema Identificato
@@ -205,4 +208,25 @@ Sostituire il contenuto con il pattern corretto.
 **Stato:** Pronto per implementazione
 **Righe:** 102 → ~35 (-66%)
 **Funzioni Custom:** Non più necessarie con MySQL ✅
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: testcase-sqlite-to-mysql-fix
+canonical: ../../../Themes/docs/shared-components/testcase-sqlite-to-mysql-fix.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/testcase-sqlite-to-mysql-fix.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

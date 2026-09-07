@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: migration-philosophy-violations
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-philosophy-violations.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Migration Philosophy Violations in User Module
 
 ## Overview
@@ -106,4 +109,25 @@ return new class extends XotBaseMigration {
 - Maintains single source of truth for table schemas
 - Follows DRY principles
 - Improves maintainability
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: migration-philosophy-violations
+canonical: ../../../Themes/docs/shared-components/migration-philosophy-violations.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/migration-philosophy-violations.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

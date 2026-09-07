@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "ANALISI METODI DUPLICATI - SUPER MUCCA EDITION"
 module: user
@@ -10,6 +11,8 @@ updated: 2026-08-24
 
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 87273113 (.)
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨  
@@ -564,11 +567,15 @@ public function getTableFilters(): array
 
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ---
 
 <!-- Merged from METODI_DUPLICATI_ANALISI.md, which collided with this file on case-insensitive filesystems. -->
 
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 module: User
 topic: METODI_DUPLICATI_ANALISI
@@ -2782,5 +2789,9 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 ---
 _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

@@ -3,9 +3,15 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f548be94 (.)
+=======
+
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 return [
     'navigation' => [
         'label' => 'Registrazione Studio',
@@ -30,16 +36,24 @@ return [
         'name' => [
             'label' => 'Nome Studio Medico',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi]',
 =======
             'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi)',
 >>>>>>> f548be94 (.)
+=======
+            'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi)',
+=======
+            'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi]',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
             'help' => 'Nome ufficiale dello studio medico come registrato in camera di commercio',
             'validation' => [
                 'required' => 'Il nome dello studio è obbligatorio',
                 'min' => 'Il nome deve contenere almeno 3 caratteri',
                 'max' => 'Il nome non può superare i 100 caratteri',
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
@@ -49,17 +63,32 @@ return [
             'label' => 'Numero di Telefono Studio',
             'placeholder' => 'Inserisci numero telefonico principale (es. +39 06 1234567]',
 =======
+=======
+>>>>>>> 87273113 (.)
         ],
         'phone' => [
             'label' => 'Numero di Telefono Studio',
             'placeholder' => 'Inserisci numero telefonico principale (es. +39 06 1234567)',
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'phone' => [
+            'label' => 'Numero di Telefono Studio',
+            'placeholder' => 'Inserisci numero telefonico principale (es. +39 06 1234567]',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
             'help' => 'Numero di telefono principale dello studio per contatti diretti e urgenze',
             'validation' => [
                 'required' => 'Il numero di telefono è obbligatorio',
                 'regex' => 'Inserisci un numero di telefono italiano valido',
                 'min' => 'Il numero deve contenere almeno 10 cifre',
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
@@ -69,11 +98,25 @@ return [
             'label' => 'Email Ufficiale Studio',
             'placeholder' => 'Inserisci email istituzionale (es. info@studiodentistico.it]',
 =======
+=======
+>>>>>>> 87273113 (.)
         ],
         'email' => [
             'label' => 'Email Ufficiale Studio',
             'placeholder' => 'Inserisci email istituzionale (es. info@studiodentistico.it)',
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'email' => [
+            'label' => 'Email Ufficiale Studio',
+            'placeholder' => 'Inserisci email istituzionale (es. info@studiodentistico.it]',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
             'help' => 'Indirizzo email ufficiale dello studio per comunicazioni istituzionali',
             'validation' => [
                 'required' => 'L\'indirizzo email è obbligatorio',
@@ -81,6 +124,7 @@ return [
                 'unique' => 'Questo indirizzo email è già registrato per un altro studio',
                 'max' => 'L\'indirizzo email non può superare i 255 caratteri',
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
@@ -90,11 +134,25 @@ return [
             'label' => 'Indirizzo Completo Studio',
             'placeholder' => 'Via/Piazza Nome Strada, Numero Civico, CAP Città (Provincia]',
 =======
+=======
+>>>>>>> 87273113 (.)
         ],
         'address' => [
             'label' => 'Indirizzo Completo Studio',
             'placeholder' => 'Via/Piazza Nome Strada, Numero Civico, CAP Città (Provincia)',
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'address' => [
+            'label' => 'Indirizzo Completo Studio',
+            'placeholder' => 'Via/Piazza Nome Strada, Numero Civico, CAP Città (Provincia]',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
             'help' => 'Indirizzo fisico completo dello studio medico comprensivo di CAP e provincia',
             'validation' => [
                 'required' => 'L\'indirizzo dello studio è obbligatorio',
@@ -102,11 +160,19 @@ return [
                 'max' => 'L\'indirizzo non può superare i 300 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'director_name' => [
             'label' => 'Nome Direttore Sanitario',
@@ -118,11 +184,19 @@ return [
                 'max' => 'Il nome non può superare i 100 caratteri',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'director_registration' => [
             'label' => 'Numero Iscrizione Albo Medico',
@@ -134,6 +208,7 @@ return [
                 'min' => 'Il numero di iscrizione deve contenere almeno 3 cifre',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -142,11 +217,25 @@ return [
             'label' => 'Partita IVA Studio',
             'placeholder' => 'Inserisci partita IVA (11 cifre]',
 =======
+=======
+>>>>>>> 87273113 (.)
         ],
         'vat_number' => [
             'label' => 'Partita IVA Studio',
             'placeholder' => 'Inserisci partita IVA (11 cifre)',
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'vat_number' => [
+            'label' => 'Partita IVA Studio',
+            'placeholder' => 'Inserisci partita IVA (11 cifre]',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
             'help' => 'Partita IVA dello studio medico registrata presso l\'Agenzia delle Entrate',
             'validation' => [
                 'required' => 'La partita IVA è obbligatoria',
@@ -154,11 +243,19 @@ return [
                 'unique' => 'Questa partita IVA è già registrata per un altro studio',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'specialization' => [
             'label' => 'Specializzazioni Mediche',
@@ -181,6 +278,7 @@ return [
                 'altro' => 'Altra Specializzazione',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -196,6 +294,8 @@ return [
             'helper_text' => '',
             'description' => '',
 =======
+=======
+>>>>>>> 87273113 (.)
         ],
         'website' => [
             'label' => 'Sito Web Studio',
@@ -204,7 +304,26 @@ return [
             'validation' => [
                 'url' => 'Inserisci un URL valido che inizi con http:// o https://',
             ],
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'website' => [
+            'label' => 'Sito Web Studio',
+            'placeholder' => 'https://www.tuostudio.it (opzionale]',
+            'help' => 'Sito web ufficiale dello studio medico (campo facoltativo]',
+            'validation' => [
+                'url' => 'Inserisci un URL valido che inizi con http:// o https://',
+            ],
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'staff_count' => [
             'label' => 'Numero Operatori',
@@ -217,11 +336,19 @@ return [
                 'max' => 'Il numero massimo consentito è 100 operatori',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'privacy_acceptance' => [
             'label' => 'Consenso Trattamento Dati',
@@ -231,11 +358,19 @@ return [
                 'accepted' => 'È obbligatorio accettare l\'informativa sulla privacy per procedere',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'terms_acceptance' => [
             'label' => 'Accettazione Termini di Servizio',
@@ -245,11 +380,19 @@ return [
                 'accepted' => 'È obbligatorio accettare i termini e condizioni per procedere',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
     ],
     'actions' => [
@@ -287,6 +430,10 @@ return [
         'register' => [
             'label' => 'register',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
             'tooltip' => 'register',
             'icon' => 'register',
         ],
@@ -299,8 +446,12 @@ return [
             'tooltip' => 'profile',
             'icon' => 'profile',
             'label' => 'profile',
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
     ],
     'steps' => [
@@ -356,8 +507,15 @@ return [
         'data_protection' => 'Tutti i dati sono protetti secondo le normative europee GDPR',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Register Tenant',
     'plural_label' => 'Register Tenant (Plurale)',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+    'label' => 'Register Tenant',
+    'plural_label' => 'Register Tenant (Plurale)',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 ];

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
@@ -16,10 +17,15 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
+=======
+use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+>>>>>>> 87273113 (.)
 
 class ViewOauthDeviceCode extends XotBaseViewRecord
 {
     protected static string $resource = OauthDeviceCodeResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, Component>
@@ -104,4 +110,6 @@ class ViewOauthDeviceCode extends XotBaseViewRecord
                 ])->columns(1),
         ];
     }
+=======
+>>>>>>> 87273113 (.)
 }

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Refactor Completo Campi "Città" - Modulo User"
 type: concept
@@ -21,6 +22,8 @@ related:
 
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 87273113 (.)
 # Refactor Completo Campi "Città" - Modulo User
 
 ## Riepilogo Intervento
@@ -213,3 +216,21 @@ Utilizzare la documentazione centrale [`translation-field-structure-complete.md`
 2025-08-08 - Refactor completo campi "Città" modulo User ✅ COMPLETATO
 
 *Intervento eseguito seguendo rigorosamente i principi DRY + KISS e gli standard Laraxot <nome progetto>*
+=======
+---
+module: theme
+topic: translation-city-field-refactor
+canonical: ../../../Themes/docs/shared-components/translation-city-field-refactor.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/translation-city-field-refactor.md
+>>>>>>> 2024e2e7 (.)

@@ -12,19 +12,32 @@ use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Traits\EnumTrait;
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+use Modules\Xot\Traits\EnumTrait;
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
 // use Datomatic\LaravelEnumHelper\LaravelEnumHelper;
 
 enum UserType: string implements HasColor, HasIcon, HasLabel
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     use EnumTrait;
 
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+    use EnumTrait;
+
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     // //use LaravelEnumHelper;
 
     case MasterAdmin = 'master_admin';
@@ -34,6 +47,7 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
     case Technician = 'technician';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private const string API = 'api';
 
     private const string WEB = 'web';
@@ -42,6 +56,16 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
 
     private const WEB = 'web';
 >>>>>>> f548be94 (.)
+=======
+    private const API = 'api';
+
+    private const WEB = 'web';
+=======
+    private const string API = 'api';
+
+    private const string WEB = 'web';
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
     public function getDefaultGuard(): string
     {
@@ -51,7 +75,10 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
         };
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 87273113 (.)
 
     public function getLabel(): string
     {
@@ -85,5 +112,10 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
             self::Technician => 'heroicon-m-pencil',
         };
     }
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 }

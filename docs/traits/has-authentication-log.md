@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Trait HasAuthenticationLogTrait"
 type: concept
@@ -13,8 +17,12 @@ related:
   - "./has-tenants.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Trait HasAuthenticationLogTrait
 
 ## Descrizione

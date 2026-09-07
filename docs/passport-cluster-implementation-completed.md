@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: passport-cluster-implementation-completed
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-implementation-completed.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Passport Cluster - Implementazione Completata
 
 **Data**: 2025-01-22
@@ -204,4 +207,25 @@ Modules/User/app/Filament/Clusters/Passport/
 **Ultimo aggiornamento**: 2025-01-22
 **Versione**: 1.0.0
 **Status**: ✅ Completato e verificato (PHPStan L10)
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: passport-cluster-implementation-completed
+canonical: ../../../Themes/docs/shared-components/passport-cluster-implementation-completed.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/passport-cluster-implementation-completed.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "User Module Traits"
 type: concept
@@ -65,6 +66,8 @@ class User extends Authenticatable
 - [Modulo User](./README.md)
 - [Xot Traits](../../Xot/docs/)
 =======
+=======
+>>>>>>> 87273113 (.)
 # Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE
 
 ## Stato Implementazione ✅ COMPLETATO
@@ -479,4 +482,74 @@ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key
 - **teamRole() contratto**: CORRETTO - ora restituisce `?Role` invece di `?string`
 - **teamRoleName() helper**: AGGIUNTO - per ottenere stringa del ruolo
 - **Compatibilità**: MANTENUTA - sia oggetti Role che stringhe supportati
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+title: "User Module Traits"
+type: concept
+tags: [traits]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "traits user module traits"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+# User Module Traits
+
+## HasTeams
+
+Gestisce l'appartenenza a team multipli.
+
+```php
+use Modules\User\Models\Traits\HasTeams;
+
+class User extends Authenticatable
+{
+    use HasTeams;
+}
+```
+
+## HasTenants
+
+Gestione multi-tenant Filament.
+
+```php
+use Modules\User\Models\Traits\HasTenants;
+
+class User extends Authenticatable
+{
+    use HasTenants;
+}
+```
+
+## HasAuthenticationLogTrait
+
+Logging autenticazioni.
+
+```php
+use Modules\User\Models\Traits\HasAuthenticationLogTrait;
+
+class User extends Authenticatable
+{
+    use HasAuthenticationLogTrait;
+}
+```
+
+## Collegamenti
+
+- [Modulo User](./README.md)
+- [Xot Traits](../../Xot/docs/)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: team
@@ -14,6 +15,8 @@ related:
 
 See canonical documentation: ../../../../Themes/docs/shared-components/team-Modules.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Team
 
 Il modello `Team` rappresenta un team nel sistema, implementando l'interfaccia `TeamContract`.
@@ -69,4 +72,23 @@ Quando si sviluppano trait, metodi condivisi o interfacce che devono funzionare 
 - [[User]]
 - [[TeamPermission]]
 - [[HasTeamsContract]]
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: team
+canonical: ../../../../Themes/docs/shared-components/team-Modules.md
+related:
+  - "./base-classes-hierarchy.md"
+  - "./baseuser.md"
+  - "./readme.md"
+  - "./teampermission.md"
+  - "./xotbaivot-migration.md"
+  - "./xotbasepivot-migration.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/team-Modules.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

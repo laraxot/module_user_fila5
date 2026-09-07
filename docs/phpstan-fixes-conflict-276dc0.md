@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: phpstan-fixes-conflict-276dc0
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-conflict-276dc0.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # User Module - PHPStan Fixes Session 2025-10-01
 
 ## ⚠️ Stato: IN PROGRESS - 95 errori rimanenti
@@ -248,4 +251,25 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 **PHPStan Level**: 9
 **Prossima sessione**: 2 Ottobre 2025
 **Obiettivo**: 0 errori User + Xot
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: phpstan-fixes-conflict-276dc0
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-conflict-276dc0.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-conflict-276dc0.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

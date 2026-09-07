@@ -7,6 +7,7 @@ namespace Modules\User\Listeners;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Http\Request;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Actions\GetCurrentDeviceAction;
 use Modules\User\Models\BaseUser;
@@ -14,6 +15,15 @@ use Modules\User\Models\BaseUser;
 use Modules\User\Actions\GetCurrentDeviceAction;
 use Modules\User\Contracts\HasAuthentications;
 >>>>>>> f548be94 (.)
+=======
+use Modules\User\Actions\GetCurrentDeviceAction;
+use Modules\User\Contracts\HasAuthentications;
+=======
+use Illuminate\Support\Facades\Schema;
+use Modules\User\Actions\GetCurrentDeviceAction;
+use Modules\User\Models\BaseUser;
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 use Modules\User\Models\DeviceUser;
 
 class LoginListener
@@ -42,6 +52,7 @@ class LoginListener
         // $res= $user->devices()->syncWithPivotValues($device->,['login_at'=>now(),'logout_at'=>null]);
         $pivot = DeviceUser::firstOrCreate(['user_id' => $user->getAuthIdentifier(), 'device_id' => $device->id]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         $updates = [];
         if (Schema::connection($pivot->getConnectionName())->hasColumn($pivot->getTable(), 'login_at')) {
@@ -64,6 +75,8 @@ class LoginListener
 
             $user->authentications()->create([
 =======
+=======
+>>>>>>> 87273113 (.)
         $pivot->update(['login_at' => now(), 'logout_at' => null]);
 
         // -----
@@ -71,6 +84,26 @@ class LoginListener
             $ip = $this->request->ip();
             $userAgent = $this->request->userAgent();
             //$location = optional(geoip()->getLocation($ip))->toArray();
+=======
+
+        $updates = [];
+        if (Schema::connection($pivot->getConnectionName())->hasColumn($pivot->getTable(), 'login_at')) {
+            $updates['login_at'] = now();
+        }
+        if (Schema::connection($pivot->getConnectionName())->hasColumn($pivot->getTable(), 'logout_at')) {
+            $updates['logout_at'] = null;
+        }
+
+        if ([] !== $updates) {
+            $pivot->update($updates);
+        }
+
+        // -----
+        if ($user instanceof BaseUser) {
+            $ip = $this->request->ip();
+            $userAgent = $this->request->userAgent();
+            // $location = optional(geoip()->getLocation($ip))->toArray();
+>>>>>>> 2024e2e7 (.)
             $location = [];
 
             $log = $user->authentications()->create([

@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Regole di Ereditarietà dei Modelli - Modulo User"
 type: rule
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Regole di Ereditarietà dei Modelli - Modulo User
 
 **Data**: 2025-10-15
@@ -279,9 +287,15 @@ Il comando dovrebbe restituire solo:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 15 ottobre 2025*
 >>>>>>> 60a2c9a9 (.)
+=======
+*Ultimo aggiornamento: 15 ottobre 2025*
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 *Autore: Refactoring automatico con Claude Code*
 
 ## Aggiornamento 2025-11

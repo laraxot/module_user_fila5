@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: translation-fixes
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-fixes.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Correzioni File di Traduzione User Module
 
 ## Problemi Identificati e Risolti
@@ -116,4 +119,25 @@ Il file ora segue la struttura espansa obbligatoria per le regole Laraxot:
 ---
 
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: translation-fixes
+canonical: ../../../Themes/docs/shared-components/translation-fixes.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/translation-fixes.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

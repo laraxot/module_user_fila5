@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: quality-tools-report
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-tools-report.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Quality Tools Report - PHPStan, PHPMD, PHP Insights
 
 ## Data: 2025-01-02
@@ -179,4 +182,25 @@ cd laravel
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
 
 *Ultimo aggiornamento: 2025-01-02*
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: quality-tools-report
+canonical: ../../../Themes/docs/shared-components/quality-tools-report.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/quality-tools-report.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

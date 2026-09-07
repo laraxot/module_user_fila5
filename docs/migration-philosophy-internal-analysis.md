@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: migration-philosophy-internal-analysis
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-philosophy-internal-analysis.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Internal Analysis: Migration Philosophy Approaches
 
 ## 🥊 Philosophical Battle: Two Approaches Clash
@@ -77,4 +80,25 @@ Sometimes the initial analysis shows theoretical problems that have already been
 - Focus on what actually needs fixing, not what was reported
 
 This approach ensures that we maintain the core Laraxot migration philosophy of "ONE TABLE, ONE MIGRATION, ONE MODULE" while being practical and efficient about implementation.
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: migration-philosophy-internal-analysis
+canonical: ../../../Themes/docs/shared-components/migration-philosophy-internal-analysis.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/migration-philosophy-internal-analysis.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

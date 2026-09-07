@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: performances
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/performance-issues.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # 🐌 user module - performance issues
 
 > analisi sprechi memoria, query inefficienti, bottlenecks auth/authorization
@@ -254,4 +257,25 @@ composer require predis/predis
 
 **effort totale**: ~8 ore
 **impatto**: -70% query, -60% memory
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: performances
+canonical: ../../../Themes/docs/shared-components/performance-issues.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/performance-issues.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

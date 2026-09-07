@@ -19,13 +19,21 @@ class CreateSocialiteUserAction
     use QueueableAction;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
     public function __construct(
         private readonly SocialiteUser $socialiteUserModel,
     ) {
     }
 
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     /**
      * Execute the action.
      */
@@ -42,9 +50,16 @@ class CreateSocialiteUserAction
         ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->socialiteUserModel->create(attributes: $attributes);
 =======
         return SocialiteUser::create(attributes: $attributes);
 >>>>>>> f548be94 (.)
+=======
+        return SocialiteUser::create(attributes: $attributes);
+=======
+        return $this->socialiteUserModel->create(attributes: $attributes);
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     }
 }

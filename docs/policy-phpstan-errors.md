@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Errori PHPStan nelle Policy del Modulo User"
 type: concept
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Errori PHPStan nelle Policy del Modulo User
 
 ## Problema Identificato (2025-01-06)
@@ -117,14 +125,26 @@ Definire il comportamento tramite trait che implementa il metodo.
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Root - Errori PHPStan](../../../../docs/project/troubleshooting/phpstan-errors.md)
 - [Contratti Xot](../../xot/project_docs/contracts.md)
 - [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
 
 =======
+=======
+>>>>>>> 87273113 (.)
 - [Documentazione Root - Errori PHPStan](../../../project_docs/troubleshooting/phpstan-errors.md)
 - [Contratti Xot](../../xot/project_docs/contracts.md)
 - [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
 
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+- [Documentazione Root - Errori PHPStan](../../../../docs/project/troubleshooting/phpstan-errors.md)
+- [Contratti Xot](../../xot/project_docs/contracts.md)
+- [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
+
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

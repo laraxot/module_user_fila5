@@ -3,9 +3,15 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f548be94 (.)
+=======
+
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 return [
     'title' => 'Password Scaduta, Reimposta Password',
     'heading' => 'Crea una Nuova Password',
@@ -15,15 +21,24 @@ return [
             'label' => 'Current Password',
             'validation_attribute' => 'current_password',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'password' => [
             'label' => 'Password',
             'validation_attribute' => 'password',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
@@ -39,6 +54,22 @@ return [
         'password_confirmation' => [
             'label' => 'Confirm Password',
 >>>>>>> f548be94 (.)
+=======
+        ],
+        'password_confirmation' => [
+            'label' => 'Confirm Password',
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'password_confirmation' => [
+            'label' => 'Confirm Password',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
     ],
     'form' => [
@@ -72,10 +103,17 @@ return [
         'column_not_found' => [
             'title' => 'Column Not Found',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'body' => 'Either the column \\":column_name\\" or the password column \\":password_column_name\\" was not found in the :table_name table.',
 =======
             'body' => 'Either the column \":column_name\" or the password column \":password_column_name\" was not found in the :table_name table.',
 >>>>>>> f548be94 (.)
+=======
+            'body' => 'Either the column \":column_name\" or the password column \":password_column_name\" was not found in the :table_name table.',
+=======
+            'body' => 'Either the column \\":column_name\\" or the password column \\":password_column_name\\" was not found in the :table_name table.',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'password_reset' => [
             'success' => 'Password Reset Successful',
@@ -86,6 +124,7 @@ return [
         ],
     ],
     'exceptions' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
         'column_not_found' => 'Either the column \\":column_name\\" or the password column \\":password_column_name\\" was not found in the \\":table_name\\" table. Please publish migrations and run them, if the error still persists, publish the config file and update the table_name, column_name, and password_column_name values.',
     ],
@@ -102,4 +141,21 @@ return [
         'column_not_found' => 'Either the column \":column_name\" or the password column \":password_column_name\" was not found in the \":table_name\" table. Please publish migrations and run them, if the error still persists, publish the config file and update the table_name, column_name, and password_column_name values.',
     ],
 >>>>>>> f548be94 (.)
+=======
+        'column_not_found' => 'Either the column \":column_name\" or the password column \":password_column_name\" was not found in the \":table_name\" table. Please publish migrations and run them, if the error still persists, publish the config file and update the table_name, column_name, and password_column_name values.',
+    ],
+=======
+        'column_not_found' => 'Either the column \\":column_name\\" or the password column \\":password_column_name\\" was not found in the \\":table_name\\" table. Please publish migrations and run them, if the error still persists, publish the config file and update the table_name, column_name, and password_column_name values.',
+    ],
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 ];

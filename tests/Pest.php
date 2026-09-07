@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*
  * Bootstrap Pest — modulo User.
  * Helper globali: tests/Support/helpers.php (composer autoload-dev files).
@@ -11,6 +12,8 @@ declare(strict_types=1);
 
 // Vietato expect()->extend() qui (PHPStan method.internalClass su PestExpectation).
 =======
+=======
+>>>>>>> 87273113 (.)
 use Modules\User\Models\User;
 use Modules\User\Models\Team;
 use Modules\User\Models\Profile;
@@ -76,4 +79,16 @@ function createProfile(array $attributes = []): Profile
 {
     return Profile::factory()->create($attributes);
 }
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+/*
+ * Bootstrap Pest — modulo User.
+ * Helper globali: tests/Support/helpers.php (composer autoload-dev files).
+ * Ogni file Pest dichiara uses(\Modules\User\Tests\TestCase::class).
+ */
+
+// Vietato expect()->extend() qui (PHPStan method.internalClass su PestExpectation).
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

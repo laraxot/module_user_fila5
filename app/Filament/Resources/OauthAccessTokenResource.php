@@ -48,6 +48,7 @@ class OauthAccessTokenResource extends XotBaseResource
         return __('OAuth Access Token');
     }
 
+<<<<<<< HEAD
     public static function table(Table $table): Table
     {
         return $table
@@ -148,6 +149,8 @@ class OauthAccessTokenResource extends XotBaseResource
             ->defaultSort('created_at', 'desc');
     }
 
+=======
+>>>>>>> 2024e2e7 (.)
     public static function getPages(): array
     {
         return [
@@ -156,6 +159,7 @@ class OauthAccessTokenResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     /**
      * @return array<string, Component>
      */
@@ -185,6 +189,8 @@ class OauthAccessTokenResource extends XotBaseResource
         ];
     }
 
+=======
+>>>>>>> 2024e2e7 (.)
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['user', 'client']);

@@ -7,6 +7,7 @@ namespace Modules\User\Filament\Resources;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
@@ -15,15 +16,29 @@ use Filament\Tables\Columns\TextColumn;
 <<<<<<< HEAD
 =======
 use Filament\Tables\Table;
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+use Filament\Resources\Pages\PageRegistration;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ListOauthAuthCodes;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ViewOauthAuthCode;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Filament\Resources\OauthAuthCodeResource\Pages;
 >>>>>>> 60a2c9a9 (.)
+=======
+use Modules\User\Filament\Resources\OauthAuthCodeResource\Pages;
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 use Modules\User\Models\OauthAuthCode;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -39,6 +54,7 @@ class OauthAuthCodeResource extends XotBaseResource
     protected static ?string $recordTitleAttribute = 'id';
 
     /**
+<<<<<<< HEAD
      * Get the form schema for the resource.
      *
      * @return array<string, Select|TextInput>
@@ -62,10 +78,16 @@ class OauthAuthCodeResource extends XotBaseResource
     }
 
     /**
+=======
+>>>>>>> 2024e2e7 (.)
      * Extend table callback for the resource.
      *
      * @return array<string, mixed>
      */
+<<<<<<< HEAD
+=======
+    #[\Override]
+>>>>>>> 2024e2e7 (.)
     public static function extendTableCallback(): array
     {
         return [
@@ -93,10 +115,17 @@ class OauthAuthCodeResource extends XotBaseResource
                     ->tooltip(function (TextColumn $column): ?string {
                         $state = $column->getState();
 <<<<<<< HEAD
+<<<<<<< HEAD
                         if ($state === null) {
 =======
                         if (null === $state) {
 >>>>>>> 60a2c9a9 (.)
+=======
+                        if (null === $state) {
+=======
+                        if ($state === null) {
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
                             return null;
                         }
                         if (is_array($state)) {

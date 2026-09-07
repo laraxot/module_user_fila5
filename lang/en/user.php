@@ -37,15 +37,22 @@ return [
             'description' => 'name',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci l\'email',
             'description' => 'email',
             'helper_text' => '',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => '',
         ],
@@ -79,6 +86,8 @@ return [
             'helper_text' => '',
             'description' => '',
 =======
+=======
+>>>>>>> 87273113 (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
@@ -92,7 +101,43 @@ return [
         'active' => 'Active',
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'role' => [
+            'label' => 'Ruolo',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'active' => [
+            'label' => 'Active',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'id' => [
+            'label' => 'ID',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'password' => [
             'label' => 'Password',
@@ -100,14 +145,21 @@ return [
             'description' => 'password',
             'helper_text' => '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
             'placeholder' => 'Conferma la password',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -122,10 +174,27 @@ return [
         'email_verified_at' => [
             'label' => 'Email Verificata il',
 >>>>>>> f548be94 (.)
+=======
+        ],
+        'email_verified_at' => [
+            'label' => 'Email Verificata il',
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'email_verified_at' => [
+            'label' => 'Email Verificata il',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'current_password' => [
             'label' => 'Password Attuale',
             'placeholder' => 'Inserisci la password attuale',
+<<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
@@ -143,13 +212,35 @@ return [
             'helper_text' => '',
             'description' => '',
 =======
+=======
+>>>>>>> 87273113 (.)
         ],
         'roles' => [
             'label' => 'Ruoli',
         ],
         'permissions' => [
             'label' => 'Permessi',
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'roles' => [
+            'label' => 'Ruoli',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'permissions' => [
+            'label' => 'Permessi',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'status' => [
             'label' => 'Stato',
@@ -159,6 +250,7 @@ return [
                 'blocked' => 'Bloccato',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -289,6 +381,8 @@ return [
             'helper_text' => '',
             'description' => '',
 =======
+=======
+>>>>>>> 87273113 (.)
         ],
         'last_login' => [
             'label' => 'Ultimo Accesso',
@@ -352,7 +446,141 @@ return [
         ],
         'changePassword' => [
             'label' => 'changePassword',
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'last_login' => [
+            'label' => 'Ultimo Accesso',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'avatar' => [
+            'label' => 'Avatar',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'language' => [
+            'label' => 'Lingua',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'timezone' => [
+            'label' => 'Fuso Orario',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'password_expires_at' => [
+            'label' => 'Scadenza Password',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'verified' => [
+            'label' => 'Verificato',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'unverified' => [
+            'label' => 'Non Verificato',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'isActive' => [
+            'label' => 'isActive',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'deactivate' => [
+            'label' => 'deactivate',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'delete' => [
+            'label' => 'delete',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'edit' => [
+            'label' => 'edit',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'view' => [
+            'label' => 'view',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'create' => [
+            'label' => 'create',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'detach' => [
+            'label' => 'detach',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'attach' => [
+            'label' => 'attach',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'changePassword' => [
+            'label' => 'changePassword',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
     ],
     'filters' => [
@@ -377,9 +605,15 @@ return [
         'email_verified' => 'Email verificata con successo',
         'impersonating' => 'Stai impersonando l\'utente :name',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // Added for LoginWidget
 >>>>>>> f548be94 (.)
+=======
+        // Added for LoginWidget
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         'login_success' => 'Login successful',
         'validation_error' => 'Validation error',
         'login_error' => 'An error occurred during login. Please try again later.',
@@ -468,6 +702,7 @@ return [
         'manage_roles' => 'Gestisci ruoli',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     'auth' => [
         'register' => [
             'title' => [
@@ -517,4 +752,55 @@ return [
         'label' => 'Utente',
     ],
 >>>>>>> f548be94 (.)
+=======
+    'model' => [
+        'label' => 'Utente',
+    ],
+=======
+    'auth' => [
+        'register' => [
+            'title' => [
+                'text' => 'Register',
+            ],
+            'subtitle' => [
+                'text' => 'Create a new account',
+            ],
+            'description' => [
+                'text' => 'Enter your details to complete registration',
+            ],
+            'button' => [
+                'text' => 'Register',
+            ],
+            'login' => [
+                'text' => 'Login',
+            ],
+            'already_have_account' => [
+                'text' => 'Already have an account?',
+            ],
+            'submit' => [
+                'text' => 'Register',
+            ],
+            'sidebar' => [
+                'support_title' => [
+                    'text' => 'Need help?',
+                ],
+                'help_email' => [
+                    'text' => 'Contact support via email',
+                ],
+                'help_password' => [
+                    'text' => 'Forgot password? Recover access',
+                ],
+                'help_support' => [
+                    'text' => 'Guide and support',
+                ],
+            ],
+        ],
+    ],
+    'model' => [
+        'label' => 'Utente',
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 ];

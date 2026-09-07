@@ -5,16 +5,24 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\SocialProviderResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 =======
+=======
+>>>>>>> 87273113 (.)
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Component;
 use Override;
 use Filament\Actions;
 use Filament\Infolists\Components\TextEntry;
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 use Modules\User\Filament\Resources\SocialProviderResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -23,6 +31,7 @@ use function Safe\json_encode;
 class ViewSocialProvider extends XotBaseViewRecord
 {
     protected static string $resource = SocialProviderResource::class;
+<<<<<<< HEAD
 
     /**
 <<<<<<< HEAD
@@ -87,4 +96,6 @@ class ViewSocialProvider extends XotBaseViewRecord
             ]),
         ];
     }
+=======
+>>>>>>> 2024e2e7 (.)
 }

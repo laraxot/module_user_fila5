@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: xotbasepivot-migration
@@ -14,6 +15,8 @@ related:
 
 See canonical documentation: ../../../../Themes/docs/shared-components/xotbaivot-migration.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # User Module - XotBasePivot Migration
 
 ## 📊 Overview
@@ -477,4 +480,23 @@ protected $fillable = [
 *Priority: 🔴 HIGH (più Pivot concreti)*  
 *Effort: 45 minuti*
 
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: xotbasepivot-migration
+canonical: ../../../../Themes/docs/shared-components/xotbaivot-migration.md
+related:
+  - "./base-classes-hierarchy.md"
+  - "./baseuser.md"
+  - "./readme.md"
+  - "./team.md"
+  - "./teampermission.md"
+  - "./xotbaivot-migration.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/xotbaivot-migration.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

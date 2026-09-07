@@ -27,9 +27,17 @@ class TeamSwitched
          */
         public UserContract $userContract,
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {
     }
 =======
     ) {}
 >>>>>>> f548be94 (.)
+=======
+    ) {}
+=======
+    ) {
+    }
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 }

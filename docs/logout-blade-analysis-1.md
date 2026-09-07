@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: logout-blade-analysis-1
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-analysis-1.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Analisi del File logout.blade.php
 
 ## Collegamenti correlati
@@ -458,4 +461,25 @@ La versione migliorata proposta risolve tutti i problemi identificati e offre un
 - [Documentazione Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Livewire](https://livewire.laravel.com/docs)
 - [Documentazione Filament](https://filamentphp.com/docs)
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: logout-blade-analysis-1
+canonical: ../../../Themes/docs/shared-components/logout-blade-analysis-1.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-analysis-1.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

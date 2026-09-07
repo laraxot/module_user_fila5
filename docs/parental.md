@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: parental
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/parental.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Guida Approfondita a Tighten/Parental nel Modulo User
 
 ## Indice
@@ -204,4 +207,25 @@ $users = User::with('specialties')->get(); // Funziona solo se la relazione è d
 - [Laravel Documentation - Eloquent ORM](https://laravel.com/docs/10.x/eloquent)
 - [Laravel Documentation - Eloquent ORM](https://laravel.com/project_docs/10.x/eloquent)
 - [Single Table Inheritance Pattern](https://martinfowler.com/eaaCatalog/singleTableInheritance.html) di Martin Fowler
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: parental
+canonical: ../../../Themes/docs/shared-components/parental.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/parental.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

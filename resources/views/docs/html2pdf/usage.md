@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: usage
@@ -7,6 +8,8 @@ canonical: ../../../../../../Themes/docs/shared-components/usage.md
 
 See canonical documentation: ../../../../../../Themes/docs/shared-components/usage.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Utilizzo Base e Layout
 
 Questa sezione descrive l'utilizzo di base della libreria, come istanziare la classe `Html2Pdf` e come gestire il layout delle pagine con i tag speciali.
@@ -128,4 +131,16 @@ Il contenuto all'interno di questo tag non verrà spezzato tra due pagine.
     </table>
 </nobreak>
 ```
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: usage
+canonical: ../../../../../../Themes/docs/shared-components/usage.md
+---
+
+See canonical documentation: ../../../../../../Themes/docs/shared-components/usage.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

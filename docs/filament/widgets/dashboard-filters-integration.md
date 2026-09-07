@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Dashboard Filters Integration per Widget Filament"
 type: concept
@@ -15,8 +19,12 @@ related:
   - "./registration-widget.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Dashboard Filters Integration per Widget Filament
 
 ## Problema Risolto
@@ -166,6 +174,12 @@ protected function getFooterWidgets(): array
 - **Soluzione**: Accesso sicuro con fallback appropriati
 - **Impatto**: Risolto per tutti i widget che usano lo stesso pattern
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Gennaio 2025*
 >>>>>>> 60a2c9a9 (.)
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

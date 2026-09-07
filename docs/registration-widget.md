@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Registration Widget Documentation"
 type: concept
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Registration Widget Documentation
 
 ## Overview
@@ -65,6 +73,7 @@ protected function getConfirmationRoute(): string
 ```
 ## References
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Namespace Issues](../../../../docs/project/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../modules/xot/project_docs/rules/filament-resource-guidelines.md)
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
@@ -73,6 +82,16 @@ protected function getConfirmationRoute(): string
 - [Filament Resource Guidelines](../../../modules/xot/project_docs/rules/filament-resource-guidelines.md)
 - [Namespace Issues](../../../docs/references/namespace-issues.md)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [Namespace Issues](../../../project_docs/references/namespace-issues.md)
+- [Filament Resource Guidelines](../../../modules/xot/project_docs/rules/filament-resource-guidelines.md)
+- [Namespace Issues](../../../docs/references/namespace-issues.md)
+=======
+- [Namespace Issues](../../../../docs/project/references/namespace-issues.md)
+- [Filament Resource Guidelines](../../../modules/xot/project_docs/rules/filament-resource-guidelines.md)
+- [Namespace Issues](../../../../docs/references/namespace-issues.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)
 # Registration Widget Documentation
 
@@ -138,8 +157,15 @@ protected function getConfirmationRoute(): string
 ## References
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
 =======
 - [Namespace Issues](../../../docs/references/namespace-issues.md)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [Namespace Issues](../../../docs/references/namespace-issues.md)
+=======
+- [Namespace Issues](../../../../docs/references/namespace-issues.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)

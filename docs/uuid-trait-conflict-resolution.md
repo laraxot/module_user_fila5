@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: uuid-trait-conflict-resolution
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/uuid-trait-conflict-resolution.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # User Module - UUID Trait Conflict Resolution
 
 **Generated**: 2026-01-02
@@ -300,4 +303,25 @@ $token = $user->createToken('test');
 
 **"The best UUID is the one that works everywhere and conflicts nowhere."**
 *- Super Mucca Methodology*
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: uuid-trait-conflict-resolution
+canonical: ../../../Themes/docs/shared-components/uuid-trait-conflict-resolution.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/uuid-trait-conflict-resolution.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

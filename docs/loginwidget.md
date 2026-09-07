@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: loginwidget
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/loginwidget-error-analysis.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Analisi Errore LoginWidget: Problema Logico e Soluzione
 
 ## Problema Identificato
@@ -196,4 +199,25 @@ class LoginWidget extends XotBaseWidget
 - [XotBaseWidget](Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
 - [Documentazione Widget Structure](modules/user/widgets_structure.md)
 - [Best Practices Widget Filament](modules/user/best-practices/filament-widgets.md) 
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: loginwidget
+canonical: ../../../Themes/docs/shared-components/loginwidget-error-analysis.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/loginwidget-error-analysis.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

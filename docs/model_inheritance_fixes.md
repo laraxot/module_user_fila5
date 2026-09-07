@@ -187,12 +187,19 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Analisi Completa](./model_inheritance_analysis.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 - [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+- [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)

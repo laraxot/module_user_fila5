@@ -11,11 +11,14 @@ namespace Modules\User\Filament\Forms\Components;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Grid;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 
 class UserSection extends XotBaseSection
 {
 =======
+=======
+>>>>>>> 87273113 (.)
 use Filament\Schemas\Components\Section;
 
 class UserSection extends Section
@@ -25,7 +28,16 @@ class UserSection extends Section
         return 'user';
     }
 
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
+
+class UserSection extends XotBaseSection
+{
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     protected function setUp(): void
     {
         parent::setUp();
@@ -41,11 +53,19 @@ class UserSection extends Section
         ]);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 
     public static function getDefaultName(): ?string
     {
         return 'user';
     }
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 }

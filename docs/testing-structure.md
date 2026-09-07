@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Struttura dei Tests del Modulo User"
 type: concept
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Struttura dei Tests del Modulo User
 
 ## Panoramica
@@ -310,19 +318,32 @@ dump($variable);
 
 - [README Modulo User](../readme.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Testing](../../../../docs/project/testing-best-practices.md)
 =======
 - [Best Practices Testing](../../../project_docs/testing-best-practices.md)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [Best Practices Testing](../../../project_docs/testing-best-practices.md)
+=======
+- [Best Practices Testing](../../../../docs/project/testing-best-practices.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [Architettura Modulo User](../architecture/readme.md)
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 60a2c9a9 (.)
+=======
+*Ultimo aggiornamento: 2025-01-06*
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
 
 

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: traits-hasteams-analisi-corretta-1
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/traits-hasteams-analisi-corretta-1.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Analisi Corretta del Trait HasTeams - Filosofia Laraxot
 
 ## Comprensione della Filosofia `belongsToManyX`
@@ -549,4 +552,25 @@ trait HasTeams
 - [Modules/Xot/docs/RELATION_X.md](../../xot/docs/relation_x.md)
 
 *Ultimo aggiornamento: gennaio 2025*
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: traits-hasteams-analisi-corretta-1
+canonical: ../../../Themes/docs/shared-components/traits-hasteams-analisi-corretta-1.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/traits-hasteams-analisi-corretta-1.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

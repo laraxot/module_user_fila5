@@ -23,11 +23,19 @@ class NewPasswordSet
     public function __construct(
         public UserContract $authObject,
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {
     }
 =======
     ) {}
 >>>>>>> f548be94 (.)
+=======
+    ) {}
+=======
+    ) {
+    }
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
     /**
      * Get the channels the event should broadcast on.

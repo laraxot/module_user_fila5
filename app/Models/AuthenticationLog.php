@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
@@ -34,6 +35,8 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null      $creator
  * @property ProfileContract|null      $updater
 =======
+=======
+>>>>>>> 87273113 (.)
 use Override;
 use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Model;
@@ -61,7 +64,37 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  * @method static AuthenticationLogFactory factory($count = null, $state = [])
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Carbon;
+use Modules\Xot\Contracts\ProfileContract;
+
+/**
+ * @property int                       $id
+ * @property string                    $authenticatable_type
+ * @property int                       $authenticatable_id
+ * @property string|null               $ip_address
+ * @property string|null               $user_agent
+ * @property Carbon|null               $login_at
+ * @property bool                      $login_successful
+ * @property Carbon|null               $logout_at
+ * @property bool                      $cleared_by_user
+ * @property array<string, mixed>|null $location
+ * @property Carbon|null               $created_at
+ * @property Carbon|null               $updated_at
+ * @property string|null               $updated_by
+ * @property string|null               $created_by
+ * @property Model|\Eloquent           $authenticatable
+ * @property ProfileContract|null      $creator
+ * @property ProfileContract|null      $updater
+ *
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
  * @method static Builder|AuthenticationLog newModelQuery()
  * @method static Builder|AuthenticationLog newQuery()
  * @method static Builder|AuthenticationLog query()
@@ -80,11 +113,22 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
  * @method static Builder|AuthenticationLog whereUpdatedBy($value)
  * @method static Builder|AuthenticationLog whereUserAgent($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property ProfileContract|null $deleter
  * @method static \Modules\User\Database\Factories\AuthenticationLogFactory factory($count = null, $state = [])
 =======
  * @mixin IdeHelperAuthenticationLog
 >>>>>>> f548be94 (.)
+=======
+ * @mixin IdeHelperAuthenticationLog
+=======
+ *
+ * @property ProfileContract|null $deleter
+ *
+ * @method static \Modules\User\Database\Factories\AuthenticationLogFactory factory($count = null, $state = [])
+ *
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
  * @mixin \Eloquent
  */
 class AuthenticationLog extends BaseModel
@@ -104,7 +148,10 @@ class AuthenticationLog extends BaseModel
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 87273113 (.)
     /** @return array<string, string> */
     #[Override]
     protected function casts(): array
@@ -118,7 +165,12 @@ class AuthenticationLog extends BaseModel
         ];
     }
 
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     // public function __construct(array $attributes = [])
     // {
     // if (! isset($this->connection)) {
@@ -134,16 +186,28 @@ class AuthenticationLog extends BaseModel
     // }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return MorphTo<Model, $this>
      */
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+    /**
+     * @return MorphTo<Model, $this>
+     */
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     public function authenticatable(): MorphTo
     {
         return $this->morphTo();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 
     /** @return array<string, string> */
     #[\Override]
@@ -157,6 +221,10 @@ class AuthenticationLog extends BaseModel
             'logout_at' => 'datetime',
         ];
     }
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 }

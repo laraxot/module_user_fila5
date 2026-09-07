@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: ottimizzazioni-approfondite-modulo-user
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Ottimizzazioni Approfondite Modulo User - DRY + KISS
 
 ## Panoramica
@@ -312,4 +315,25 @@ php artisan test --testsuite=User
 **Stato:** In attesa implementazione
 **Responsabile:** Team User
 **Data:** 2025-01-XX
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+---
+module: theme
+topic: ottimizzazioni-approfondite-modulo-user
+canonical: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-approfondite-modulo-user.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

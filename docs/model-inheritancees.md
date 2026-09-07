@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Correzioni Ereditarietà Modelli - Modulo User"
 type: concept
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Correzioni Ereditarietà Modelli - Modulo User
 
 ## Data Implementazione
@@ -211,10 +219,17 @@ cd Modules/User
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Completa](./model-inheritance-analysis-5.md)
 =======
 - [Analisi Completa](./model_inheritance_analysis.md)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [Analisi Completa](./model_inheritance_analysis.md)
+=======
+- [Analisi Completa](./model-inheritance-analysis-5.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -409,10 +424,17 @@ cd Modules/User
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Completa](./model-inheritance-analysis-5.md)
 =======
 - [Analisi Completa](./model_inheritance_analysis.md)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [Analisi Completa](./model_inheritance_analysis.md)
+=======
+- [Analisi Completa](./model-inheritance-analysis-5.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
@@ -607,10 +629,17 @@ cd Modules/User
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Completa](./model-inheritance-analysis-5.md)
 =======
 - [Analisi Completa](./model_inheritance_analysis.md)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [Analisi Completa](./model_inheritance_analysis.md)
+=======
+- [Analisi Completa](./model-inheritance-analysis-5.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)

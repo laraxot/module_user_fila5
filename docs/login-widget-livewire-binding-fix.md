@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: login-widget-livewire-binding-fix
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/login-widget-livewire-binding-fix.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # LoginWidget Livewire wire:model Binding Fix
 
 **Data**: 2025-12-18  
@@ -115,4 +118,25 @@ Tutti i widget senza modello devono:
 - [Xot Widgets Initialization](../../xot/docs/widgets-initialization.md)
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
 - [Login Widget Fix](./login-widget-fix.md)
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: login-widget-livewire-binding-fix
+canonical: ../../../Themes/docs/shared-components/login-widget-livewire-binding-fix.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/login-widget-livewire-binding-fix.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

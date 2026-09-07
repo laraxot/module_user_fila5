@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: quality-improvements-summary
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-improvements-summary.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Quality Improvements Summary - PHPStan, PHPMD, PHP Insights
 
 ## Data: 2025-01-02
@@ -84,4 +87,25 @@ See canonical documentation: ../../../Themes/docs/shared-components/quality-impr
 2. Continuare rimozione variabili inutilizzate
 3. Analizzare e migliorare architecture score
 4. Applicare style corrections sistematicamente
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: quality-improvements-summary
+canonical: ../../../Themes/docs/shared-components/quality-improvements-summary.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/quality-improvements-summary.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

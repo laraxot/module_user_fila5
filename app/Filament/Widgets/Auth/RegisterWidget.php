@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets\Auth;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Notifications\Notification;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -63,6 +64,8 @@ class RegisterWidget extends XotBaseSchemaWidget
     {
         $this->submit();
 =======
+=======
+>>>>>>> 87273113 (.)
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Schema;
@@ -171,11 +174,74 @@ class RegisterWidget extends XotBaseWidget
                 ]),
             ]),
         ];
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+use Filament\Notifications\Notification;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Route;
+use Modules\Activity\Actions\Schema\IsActivityLogSchemaWritableAction;
+use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
+use Modules\Xot\Datas\XotData;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+use Webmozart\Assert\Assert;
+
+/**
+ * Register FO — schema SSoT in `Schemas\UserForm::getRegisterFormSchema()`.
+ *
+ * Religione R1 (form-fields-self-validate): NIENTE `validateForm()`, NIENTE
+ *  `Hash::make`, NIENTE `SafeStringCast` qui dentro. Il form ha già
+ *  `->dehydrateStateUsing(Hash::make)` sul campo `password`, quindi
+ *  `$this->form->getState()` ritorna la password GIÀ hashata.
+ *
+ * Religione R3 (no wrapper Action): `$user = $userClass::create($data + defaults)`
+ *  direttamente. Non creare `RegisterFoUserAction` per wrapping un create().
+ *
+ * Widget è il direttore d'orchestra sottile: lifecycle (mount, submit),
+ *  side effects (activity log opzionale, email verify, Auth::login, redirect).
+ *
+ * NOTA GDPR: per conformità Garante Italiano, usare `Modules\Gdpr\Filament\Widgets\Auth\RegisterWidget`
+ *  (con `privacy_accepted`/`terms_accepted`/`marketing_consent`). Questo widget
+ *  è un fallback non-GDPR (es. dev locale senza modulo Gdpr attivo).
+ */
+class RegisterWidget extends XotBaseSchemaWidget
+{
+    protected static ?int $sort = 2;
+
+    protected static ?string $maxHeight = '600px';
+
+    protected static function formClass(): string
+    {
+        return UserForm::class;
+    }
+
+    protected static function schemaMethod(): string
+    {
+        return 'getRegisterFormSchema';
+    }
+
+    public static function canView(): bool
+    {
+        return ! Auth::check();
+    }
+
+    /**
+     * Compat: il template tema usa `wire:submit="save"`.
+     */
+    public function save(): void
+    {
+        $this->submit();
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     }
 
     public function submit(): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
         /** @var array<string, mixed> $data */
         $data = $this->form->getState();
@@ -216,6 +282,8 @@ class RegisterWidget extends XotBaseWidget
     {
         if (config('auth.must_verify_email') && $user instanceof MustVerifyEmail) {
 =======
+=======
+>>>>>>> 87273113 (.)
         try {
             $validatedData = $this->validateForm();
             $this->logRegistrationAttempt($validatedData);
@@ -291,13 +359,57 @@ class RegisterWidget extends XotBaseWidget
     protected function handleSuccessfulRegistration(User $user): void
     {
         if (config('auth.must_verify_email')) {
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+        /** @var array<string, mixed> $data */
+        $data = $this->form->getState();
+
+        $userClass = XotData::make()->getUserClass();
+
+        $user = DB::transaction(function () use ($data, $userClass): Authenticatable {
+            $firstName = is_string($data['first_name'] ?? null) ? trim($data['first_name']) : '';
+            $lastName = is_string($data['last_name'] ?? null) ? trim($data['last_name']) : '';
+            $name = trim($firstName.' '.$lastName);
+            $email = is_string($data['email'] ?? null) ? trim($data['email']) : '';
+
+            $user = $userClass::create(array_merge($data, [
+                'name' => $name !== '' ? $name : $email,
+                'email_verified_at' => null,
+            ]));
+
+            if (app(IsActivityLogSchemaWritableAction::class)->execute()) {
+                activity()
+                    ->causedBy($user)
+                    ->performedOn($user)
+                    ->withProperties([
+                        'ip_address' => request()->ip(),
+                        'user_agent' => request()->userAgent(),
+                    ])
+                    ->log('User registered via RegisterWidget');
+            }
+
+            Assert::isInstanceOf($user, Authenticatable::class);
+
+            return $user;
+        });
+
+        $this->handleSuccessfulRegistration($user);
+    }
+
+    protected function handleSuccessfulRegistration(Authenticatable $user): void
+    {
+        if (config('auth.must_verify_email') && $user instanceof MustVerifyEmail) {
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
             $user->sendEmailVerificationNotification();
         }
 
         Auth::login($user);
 
         Notification::make()
+<<<<<<< HEAD
 <<<<<<< HEAD
             ->title(__('user::auth.register.success.text'))
             ->success()
@@ -309,6 +421,8 @@ class RegisterWidget extends XotBaseWidget
 
         $this->redirect($redirectUrl);
 =======
+=======
+>>>>>>> 87273113 (.)
             ->title(__('user::auth.registration.success'))
             ->success()
             ->send();
@@ -326,6 +440,20 @@ class RegisterWidget extends XotBaseWidget
         ]);
 
         throw new RuntimeException(__('user::auth.registration.error_occurred'));
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+            ->title(__('user::auth.register.success.text'))
+            ->success()
+            ->send();
+
+        $redirectUrl = Route::has('dashboard')
+            ? route('dashboard')
+            : url('/'.app()->getLocale());
+
+        $this->redirect($redirectUrl);
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     }
 }

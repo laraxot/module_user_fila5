@@ -5,13 +5,21 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 87273113 (.)
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Forms\Components\DatePicker;
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -19,15 +27,24 @@ use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 use Filament\Support\Components\Component;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 =======
+=======
+>>>>>>> 87273113 (.)
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ListAuthenticationLogs;
 use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ViewAuthenticationLog;
 use Modules\User\Models\AuthenticationLog;
@@ -39,7 +56,10 @@ class AuthenticationLogResource extends XotBaseResource
     protected static ?string $model = AuthenticationLog::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 87273113 (.)
     public static function table(Table $table): Table
     {
         return $table
@@ -169,7 +189,12 @@ class AuthenticationLogResource extends XotBaseResource
             ->defaultSort('login_at', 'desc');
     }
 
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     public static function getPages(): array
     {
         return [
@@ -178,6 +203,7 @@ class AuthenticationLogResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     /**
      * @return array<string, Component>
      */
@@ -262,6 +288,8 @@ class AuthenticationLogResource extends XotBaseResource
         ];
     }
 
+=======
+>>>>>>> 2024e2e7 (.)
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['authenticatable']);

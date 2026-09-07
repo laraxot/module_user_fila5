@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Migration Safety Rules - NEVER Destroy Data
 
 ## Regola ASSOLUTA
@@ -287,3 +288,16 @@ Quando un altro agente AI incontra problemi di schema:
 
 **Creato da**: AI Agent Session 2026-03-12  
 **Per**: Preservazione dati e comunicazione inter-agent
+=======
+---
+module: theme
+topic: migration-safety-rules
+canonical: ../../../../Themes/docs/shared-components/migration-safety-rules-1.md
+related:
+  - "./migration-safety-rules-1.md"
+  - "./profile-uuid-philosophy-1.md"
+  - "./profile-uuid-philosophy.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/migration-safety-rules-1.md
+>>>>>>> 87273113 (.)

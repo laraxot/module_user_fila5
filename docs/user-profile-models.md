@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: user-profile-models
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-profile-models.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Modelli User e Profile: Analisi delle Scelte di Progettazione
 
 ## Approccio 1: Modello User Unificato
@@ -1010,4 +1013,25 @@ class UserRepository
        }
    }
    ```
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+---
+module: theme
+topic: user-profile-models
+canonical: ../../../Themes/docs/shared-components/user-profile-models.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/user-profile-models.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

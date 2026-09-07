@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Filament\Forms\Components\Select;
@@ -17,13 +18,31 @@ use Filament\Schemas\Components\Section;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 =======
+=======
+>>>>>>> 87273113 (.)
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+use Filament\Actions\Action;
+use Filament\Actions\DeleteAction;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TextInput;
+use Filament\Notifications\Notification;
+use Filament\Resources\Pages\PageRegistration;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Grid;
+use Filament\Schemas\Components\Section;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Clusters\Passport;
@@ -42,6 +61,7 @@ class OauthAuthCodeResource extends XotBaseResource
     protected static ?string $model = OauthAuthCode::class;
 
     /**
+<<<<<<< HEAD
      * Get the form schema for the resource.
      *
      * @return array<string, Component>
@@ -164,7 +184,13 @@ class OauthAuthCodeResource extends XotBaseResource
      * @return array<string, PageRegistration>
 =======
      * @return array<string, \Filament\Resources\Pages\PageRegistration>
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+     * @return array<string, PageRegistration>
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
      */
     #[\Override]
     public static function getPages(): array

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Appearance\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\FileUpload;
@@ -15,6 +16,8 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Clusters\Appearance;
 use Modules\Xot\Filament\Pages\XotBasePage;
 =======
+=======
+>>>>>>> 87273113 (.)
 use Filament\Schemas\Schema;
 use Filament\Actions\Action;
 use Filament\Forms;
@@ -27,11 +30,26 @@ use Filament\Pages\Page;
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Clusters\Appearance;
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+use Filament\Actions\Action;
+use Filament\Forms\Components\ColorPicker;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Schema;
+use Filament\Support\Exceptions\Halt;
+use Illuminate\Database\Eloquent\Model;
+use Modules\User\Filament\Clusters\Appearance;
+use Modules\Xot\Filament\Pages\XotBasePage;
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
 /**
  * @property Schema $form
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 class Favicon extends XotBasePage
 {
@@ -41,6 +59,8 @@ class Favicon extends XotBasePage
 
     protected static ?int $navigationSort = 5;
 =======
+=======
+>>>>>>> 87273113 (.)
 class Favicon extends Page implements HasForms
 {
     use InteractsWithForms;
@@ -54,7 +74,19 @@ class Favicon extends Page implements HasForms
     protected static null|string $cluster = Appearance::class;
 
     protected static null|int $navigationSort = 5;
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+class Favicon extends XotBasePage
+{
+    protected string $view = 'user::filament.clusters.appearance.pages.favicon';
+
+    protected static ?string $cluster = Appearance::class;
+
+    protected static ?int $navigationSort = 5;
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
     public function mount(): void
     {
@@ -69,10 +101,17 @@ class Favicon extends Page implements HasForms
     // }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function schema(Schema $schema): Schema
 =======
     public function form(Schema $schema): Schema
 >>>>>>> f548be94 (.)
+=======
+    public function form(Schema $schema): Schema
+=======
+    public function schema(Schema $schema): Schema
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     {
         return $schema
             ->components([
@@ -116,11 +155,19 @@ class Favicon extends Page implements HasForms
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<Action>
      */
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+    /**
+     * @return array<Action>
+     */
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     protected function getUpdateFormActions(): array
     {
         return [

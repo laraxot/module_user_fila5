@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: phpstan-level9-fixes
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level9-fixes-Modules.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Correzione conflitto e miglioramento PHPStan livello 9 in Filament/Resources/UserResource.php
 
 **Data:** 2025-04-16
@@ -44,4 +47,25 @@ Sono stati rilevati conflitti Git non risolti nel file `app/Filament/Resources/U
 
 **Vedi anche:**
 - [module_user.md](module_user.md)
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+---
+module: theme
+topic: phpstan-level9-fixes
+canonical: ../../../Themes/docs/shared-components/phpstan-level9-fixes-Modules.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level9-fixes-Modules.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

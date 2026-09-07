@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Legacy Code Cleanup"
 type: concept
@@ -18,8 +22,12 @@ related:
   - "./user-traits.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Legacy Code Cleanup
 
 ## Overview
@@ -79,10 +87,17 @@ Clean up and modernize the User module codebase by removing legacy code and upda
    - Performance testing
 ## Links
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Back to Roadmap](../../../docs/roadmap.md)
 =======
 - [Back to Roadmap](../../docs/roadmap.md)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [Back to Roadmap](../../docs/roadmap.md)
+=======
+- [Back to Roadmap](../../../docs/roadmap.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [Back to Roadmap](../../project_docs/roadmap.md)
 - Related: [Documentation Enhancement](./documentation-enhancement.md)
 - Related: [PHPStan Level 7 Compliance](./phpstan-level7-compliance.md)

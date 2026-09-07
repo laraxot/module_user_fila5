@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Fix: team_user Composite Primary Key Implementation"
 type: concept
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Fix: team_user Composite Primary Key Implementation
 
 ## Data Intervento
@@ -262,10 +270,17 @@ $membership = Membership::where('team_id', $team->id)
 - [HasTeams Trait](../../app/Models/Traits/HasTeams.php)
 - [TeamsRelationManager](../../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Pivot Tables](../../../../docs/pivot-tables-best-practices.md)
 =======
 - [Documentazione Pivot Tables](../../../docs/pivot-tables-best-practices.md)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [Documentazione Pivot Tables](../../../docs/pivot-tables-best-practices.md)
+=======
+- [Documentazione Pivot Tables](../../../../docs/pivot-tables-best-practices.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
 ## Note Tecniche
 
@@ -287,7 +302,13 @@ $membership = Membership::where('team_id', $team->id)
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: novembre 2025*
 >>>>>>> 60a2c9a9 (.)
+=======
+*Ultimo aggiornamento: novembre 2025*
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 *Status: IMPLEMENTATO E VALIDATO*

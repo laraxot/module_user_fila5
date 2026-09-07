@@ -7,9 +7,12 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\Authentication;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /**
 =======
+=======
+>>>>>>> 87273113 (.)
 use Modules\User\Models\User;
 
 /**
@@ -17,7 +20,14 @@ use Modules\User\Models\User;
  *
  * Factory for creating Authentication model instances for testing and seeding.
  *
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+
+/**
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
  * @extends Factory<Authentication>
  */
 class AuthenticationFactory extends Factory
@@ -25,28 +35,46 @@ class AuthenticationFactory extends Factory
     /**
      * The name of the factory's corresponding model.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var class-string<Authentication>
 >>>>>>> f548be94 (.)
+=======
+     *
+     * @var class-string<Authentication>
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
      */
     protected $model = Authentication::class;
 
     /**
      * Define the model's default state.
 <<<<<<< HEAD
+<<<<<<< HEAD
      */
     /**
 =======
      *
 >>>>>>> f548be94 (.)
+=======
+     *
+=======
+     */
+    /**
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
      * @return array<string, mixed>
      */
     public function definition(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return [];
 =======
+=======
+>>>>>>> 87273113 (.)
         $loginSuccessful = $this->faker->boolean(85); // 85% success rate
         $loginAt = $this->faker->dateTimeBetween('-1 year', 'now');
 
@@ -116,6 +144,12 @@ class AuthenticationFactory extends Factory
             'authenticatable_type' => User::class,
             'authenticatable_id' => $user->id,
         ]);
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+        return [];
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     }
 }

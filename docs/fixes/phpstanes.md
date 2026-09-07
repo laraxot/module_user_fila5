@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: phpstanes
@@ -15,6 +16,8 @@ related:
 
 See canonical documentation: ../../../../Themes/docs/shared-components/phpstan-fixes-Modules.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Correzioni PHPStan nel Modulo User
 
 ## Team.php
@@ -59,4 +62,24 @@ Il modello `Team` accede direttamente a proprietà che potrebbero non essere dis
 * [phpstan_fixes.md](../../../user/docs/fixes/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../activity/docs/phpstan_fixes.md)
 
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: phpstanes
+canonical: ../../../../Themes/docs/shared-components/phpstan-fixes-Modules.md
+related:
+  - "./base-classes-corrections-.md"
+  - "./base-classes-corrections-1.md"
+  - "./base-classes-corrections-2.md"
+  - "./base-classes-corrections-3.md"
+  - "./base-classes-corrections.md"
+  - "./phpstan-fixes-1.md"
+  - "./phpstan-fixes.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/phpstan-fixes-Modules.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

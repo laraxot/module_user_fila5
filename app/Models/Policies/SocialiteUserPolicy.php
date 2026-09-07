@@ -5,9 +5,12 @@ declare(strict_types=1);
 namespace Modules\User\Models\Policies;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 class SocialiteUserPolicy extends UserBasePolicy
 {
 =======
+=======
+>>>>>>> 87273113 (.)
 use Modules\User\Models\SocialiteUser;
 use Modules\Xot\Contracts\UserContract;
 
@@ -80,5 +83,12 @@ class SocialiteUserPolicy extends UserBasePolicy
     {
         return $user->hasPermissionTo('socialite-user.force-delete') || $user->hasRole('super-admin');
     }
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+class SocialiteUserPolicy extends UserBasePolicy
+{
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 }

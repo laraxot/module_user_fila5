@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: oauth-cluster-error-analysis
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/oauth-cluster-error-analysis.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # OAuth Cluster - Analisi Errore e Correzione
 
 **Data**: 2025-01-22
@@ -140,4 +143,25 @@ class Passport extends XotBaseCluster
 **Ultimo aggiornamento**: 2025-01-22
 **Versione**: 1.0.1
 **Status**: ✅ Errore corretto e verificato
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: oauth-cluster-error-analysis
+canonical: ../../../Themes/docs/shared-components/oauth-cluster-error-analysis.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/oauth-cluster-error-analysis.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

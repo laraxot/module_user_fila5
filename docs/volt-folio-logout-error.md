@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Errore nel Logout con Volt e Folio
 
 ## Il Problema
@@ -119,6 +120,8 @@ final class LogoutAction
 - [Best Practices Volt](./VOLT_BEST_PRACTICES.md)
 - [Gestione Sessione](./SESSION_MANAGEMENT.md) 
 =======
+=======
+>>>>>>> 87273113 (.)
 # Errore Volt/Folio: `VoltDirectiveMissingException` su logout
 
 ## Descrizione dell'errore
@@ -166,4 +169,25 @@ use function Livewire\Volt\{state, mount};
 
 **Errore risolto: aggiungi `@volt` come prima riga!**
 =======
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: volt-folio-logout-error
+canonical: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

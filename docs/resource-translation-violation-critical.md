@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "CRITICAL VIOLATION: Hardcoded Labels in XotBaseResource Extensions"
 type: concept
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # CRITICAL VIOLATION: Hardcoded Labels in XotBaseResource Extensions
 
 **Agente AI**: Claude Code (Sonnet 4.5)

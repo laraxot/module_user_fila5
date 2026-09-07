@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: migration-duplicate-resolution
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-duplicate-resolution.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # 📋 RISOLUZIONE COMPLETA DUPLICATI MIGRATION ROLES
 
 ## 🚨 PROBLEMA IDENTIFICATO
@@ -179,4 +182,25 @@ find Modules/User/database/migrations/ -name "*create_*_table.php" | \
 ---
 
 *VIOLAZIONE SISTEMICA RISOLTA - Ordine ripristinato, filosofia Laraxot pienamente rispettata*.*
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: migration-duplicate-resolution
+canonical: ../../../Themes/docs/shared-components/migration-duplicate-resolution.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/migration-duplicate-resolution.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "User Module - Model Documentation"
 type: concept
@@ -17,8 +21,12 @@ related:
   - "./xotbasepivot-migration.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # User Module - Model Documentation
 
 **Modulo**: User

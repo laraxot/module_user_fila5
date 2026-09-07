@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PHPMD e PHP Insights Corrections - 2025-01-22
 
 ## Obiettivo
@@ -101,3 +102,21 @@ I seguenti warning sono accettabili e non richiedono correzione immediata:
 - [Resources Corrections Summary](./resources-corrections-summary-2025-01-22.md)
 - [Quality Tools Report](./quality-tools-report.md)
 - [PHPStan Complete Success](./phpstan-complete-success.md)
+=======
+---
+module: theme
+topic: phpmd-phpinsights-corrections-
+canonical: ../../../Themes/docs/shared-components/phpmd-phpinsights-corrections-.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpmd-phpinsights-corrections-.md
+>>>>>>> 2024e2e7 (.)

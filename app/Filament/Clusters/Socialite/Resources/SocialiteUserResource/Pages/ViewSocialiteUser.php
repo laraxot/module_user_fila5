@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Socialite\Resources\SocialiteUserResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
@@ -13,11 +14,15 @@ use Illuminate\Support\Str;
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialiteUserResource;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\SocialiteUser;
+=======
+use Modules\User\Filament\Clusters\Socialite\Resources\SocialiteUserResource;
+>>>>>>> 2024e2e7 (.)
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewSocialiteUser extends XotBaseViewRecord
 {
     protected static string $resource = SocialiteUserResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, Component>
@@ -89,4 +94,6 @@ class ViewSocialiteUser extends XotBaseViewRecord
                 ])->columns(1),
         ];
     }
+=======
+>>>>>>> 2024e2e7 (.)
 }

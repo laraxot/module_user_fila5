@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: logout-blade-conclusions-1
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-conclusions-1.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Conclusioni e Raccomandazioni per logout.blade.php
 
 ## Collegamenti correlati
@@ -106,4 +109,25 @@ Se si desidera mantenere un'interazione utente durante il processo di logout, si
 ## Conclusione
 
 L'implementazione raccomandata rappresenta la soluzione più semplice, efficiente e coerente con le convenzioni del progetto <nome progetto> per il logout degli utenti. Questa implementazione garantisce una buona esperienza utente e mantiene tutte le necessarie misure di sicurezza.
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: logout-blade-conclusions-1
+canonical: ../../../Themes/docs/shared-components/logout-blade-conclusions-1.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-conclusions-1.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

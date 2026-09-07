@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: ottimizzazioni-modulo-user
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-modulo-user.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Ottimizzazioni Modulo User - DRY + KISS
 
 ## Panoramica
@@ -371,4 +374,25 @@ echo "✅ Consolidamento completato!"
 **Stato:** In implementazione
 **Responsabile:** Team Sviluppo User
 **Priorità:** ALTA (duplicazioni massive identificate)
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+---
+module: theme
+topic: ottimizzazioni-modulo-user
+canonical: ../../../Themes/docs/shared-components/ottimizzazioni-modulo-user.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/ottimizzazioni-modulo-user.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

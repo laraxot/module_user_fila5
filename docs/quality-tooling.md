@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: quality-tooling
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-tooling.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Code Quality Tooling (User Module)
 
 ## Goals
@@ -128,4 +131,25 @@ If not installed locally, use CI job with `rhysd/actionlint` Docker.
 ## Maintenance
 - Keep this document updated with new rules, exceptions, and module-specific patterns.
 - Document every non-trivial refactor driven by PHPMD in `Modules/User/docs/` (what and why).
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: quality-tooling
+canonical: ../../../Themes/docs/shared-components/quality-tooling.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/quality-tooling.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

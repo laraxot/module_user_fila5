@@ -25,6 +25,7 @@ class PasswordResetResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
     /**
      * @return array<string, Component>
      */
@@ -45,6 +46,8 @@ class PasswordResetResource extends XotBaseResource
         ];
     }
 
+=======
+>>>>>>> 2024e2e7 (.)
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery();

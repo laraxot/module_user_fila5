@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: phpstan-errors-philosophy
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-philosophy.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Filosofia Laraxot: Risoluzione Errori PHPStan
 
 **Data Creazione**: 2025-01-22
@@ -255,4 +258,25 @@ public function getTableBulkActions()
 ---
 
 *Ricorda: La type safety è sacra. Non profanarla mai.*
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: phpstan-errors-philosophy
+canonical: ../../../Themes/docs/shared-components/phpstan-errors-philosophy.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-philosophy.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

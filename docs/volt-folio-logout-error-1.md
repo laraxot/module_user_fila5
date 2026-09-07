@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: volt-folio-logout-error-1
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-error-1.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Errore nel Logout con Volt e Folio
 
 ## Il Problema
@@ -135,4 +138,25 @@ final class LogoutAction
 - [Best Practices Folio](./routing_best_practices.md)
 - [Best Practices Volt](./volt_best_practices.md)
 - [Gestione Sessione](./session_management.md)
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: volt-folio-logout-error-1
+canonical: ../../../Themes/docs/shared-components/volt-folio-logout-error-1.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-error-1.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

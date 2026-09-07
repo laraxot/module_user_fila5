@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: service-provider-warning
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/service-provider-warning.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # AVVERTENZA: Modifiche ai ServiceProvider Base
 
 ## Introduzione
@@ -290,4 +293,25 @@ Le modifiche ai ServiceProvider possono sembrare una soluzione rapida per proble
 ## Collegamenti
 - [XotBaseServiceProvider.md](modules/xot/docs/providers/xotbaseserviceprovider.md)
 - [SERVICE-PROVIDER-BEST-PRACTICES.md](modules/xot/docs/service-provider-best-practices.md)
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: service-provider-warning
+canonical: ../../../Themes/docs/shared-components/service-provider-warning.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/service-provider-warning.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

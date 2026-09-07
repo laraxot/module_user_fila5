@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "PHPStan Level 10 Errors Resolution Roadmap - User Module"
 type: concept
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # PHPStan Level 10 Errors Resolution Roadmap - User Module
 
 **Modulo**: User  
@@ -212,6 +220,12 @@ Tutti gli errori sono stati corretti:
 4. ✅ **PassportServiceProvider.php linea 158**: Aggiunto cast esplicito `@var array<string, string>` per `Passport::tokensCan()`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: [DATE]*
 >>>>>>> 60a2c9a9 (.)
+=======
+*Ultimo aggiornamento: [DATE]*
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

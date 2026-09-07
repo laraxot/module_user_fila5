@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+=======
+>>>>>>> 2024e2e7 (.)
 use Filament\Resources\Pages\PageRegistration;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Resources\SocialiteUserResource\Pages\EditSocialiteUser;
@@ -21,6 +24,7 @@ class SocialiteUserResource extends XotBaseResource
     protected static ?string $model = SocialiteUser::class;
 
     /**
+<<<<<<< HEAD
      * Get the form schema for the resource.
      *
      * @return array<string, Select|TextInput>
@@ -60,6 +64,8 @@ class SocialiteUserResource extends XotBaseResource
     }
 
     /**
+=======
+>>>>>>> 2024e2e7 (.)
      * Get the pages available for the resource.
      *
      * @return array<string, PageRegistration>

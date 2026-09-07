@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Models\SocialiteUser;
@@ -16,11 +17,15 @@ use ReflectionClass;
 use ReflectionException;
 use RuntimeException;
 =======
+=======
+>>>>>>> 87273113 (.)
 // use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
 use InvalidArgumentException;
 use RuntimeException;
 use ReflectionClass;
 use ReflectionException;
+=======
+>>>>>>> 2024e2e7 (.)
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Models\SocialiteUser;
 >>>>>>> f548be94 (.)
@@ -34,8 +39,11 @@ class RetrieveSocialiteUserAction
      * Execute the action.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function execute(string $provider, SocialiteUserContract $user): ?SocialiteUser
 =======
+=======
+>>>>>>> 87273113 (.)
     public function execute(string $provider, SocialiteUserContract $user): null|SocialiteUser
 >>>>>>> f548be94 (.)
     {
@@ -50,6 +58,17 @@ class RetrieveSocialiteUserAction
         if (!is_string($providerId) && !is_int($providerId)) {
 >>>>>>> f548be94 (.)
             throw new RuntimeException('L\'ID del provider deve essere una stringa o un intero');
+=======
+    public function execute(string $provider, SocialiteUserContract $user): ?SocialiteUser
+    {
+        if (empty($provider)) {
+            throw new \InvalidArgumentException('Il provider non può essere vuoto');
+        }
+
+        $providerId = $user->getId();
+        if (! is_string($providerId) && ! is_int($providerId)) {
+            throw new \RuntimeException('L\'ID del provider deve essere una stringa o un intero');
+>>>>>>> 2024e2e7 (.)
         }
 
         $res = SocialiteUser::query()
@@ -58,6 +77,7 @@ class RetrieveSocialiteUserAction
             ->where('provider_id', $providerId)
             ->first();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         if (null === $res) {
             return null;
@@ -80,7 +100,12 @@ class RetrieveSocialiteUserAction
         $token = '';
 
 =======
+=======
+>>>>>>> 87273113 (.)
         if ($res === null) {
+=======
+        if (null === $res) {
+>>>>>>> 2024e2e7 (.)
             return null;
         }
 
@@ -90,7 +115,11 @@ class RetrieveSocialiteUserAction
         // Utilizzo ReflectionClass per accedere in modo sicuro alle proprietà/metodi
 >>>>>>> f548be94 (.)
         try {
+<<<<<<< HEAD
             $reflection = new ReflectionClass($user);
+=======
+            $reflection = new \ReflectionClass($user);
+>>>>>>> 2024e2e7 (.)
 
             // Prova prima i metodi standard
             if ($reflection->hasMethod('getToken')) {
@@ -117,19 +146,29 @@ class RetrieveSocialiteUserAction
             } elseif (isset($user->token) && is_string($user->token)) { // Fallback su accesso diretto con var_export
                 $token = $user->token;
             }
+<<<<<<< HEAD
         } catch (ReflectionException $e) {
+=======
+        } catch (\ReflectionException $e) {
+>>>>>>> 2024e2e7 (.)
             // Fallback silenzioso
         }
 
         if (empty($token)) {
             // Se non riusciamo a ottenere un token valido, utilizziamo un valore predefinito
 <<<<<<< HEAD
+<<<<<<< HEAD
             $token = 'no_token_'.time();
         }
 
         return $token;
 =======
+=======
+>>>>>>> 87273113 (.)
             $token = 'no_token_' . time();
+=======
+            $token = 'no_token_'.time();
+>>>>>>> 2024e2e7 (.)
         }
 
         $res->update([

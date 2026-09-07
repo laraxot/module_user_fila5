@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: phpstan-analysis-user
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-analysis-user.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # PHPStan Analysis - User Module
 
 ## 📊 Status
@@ -150,4 +153,25 @@ $client = Client::factory()->create([
 **Laravel Version**: 12.31.1
 **Status**: ⚠️ 1 Error Remaining (99% Complete)
 **Documentation Status**: ⚠️ Basic - Needs documentation of fixes
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: phpstan-analysis-user
+canonical: ../../../Themes/docs/shared-components/phpstan-analysis-user.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-analysis-user.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

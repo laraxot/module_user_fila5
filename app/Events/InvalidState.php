@@ -21,9 +21,17 @@ class InvalidState
     public function __construct(
         public InvalidStateException $exception,
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {
     }
 =======
     ) {}
 >>>>>>> f548be94 (.)
+=======
+    ) {}
+=======
+    ) {
+    }
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 }

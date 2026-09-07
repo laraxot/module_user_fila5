@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: phpstanes-passport
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-passport.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # PHPStan Fixes and Architectural Decisions for Passport/Socialite Configuration
 
 This document outlines the rationale behind the architectural decision to move from a trait-based configuration approach to dedicated Service Providers for Laravel Passport and Socialite within the `Modules/User` module. It also details the PHPStan issues encountered during this process and their resolutions.
@@ -65,4 +68,25 @@ The project will now proceed with creating and implementing dedicated `PassportS
 *   Easier maintainability and scalability.
 
 This change is documented in `passport.md` as well.
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: phpstanes-passport
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-passport.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-passport.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

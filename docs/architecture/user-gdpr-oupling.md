@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: user-gdpr-oupling
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../../Themes/docs/shared-components/user-gdpr-decoupling.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Decoupling User-GDPR via Event/Listener Pattern
 
 ## Overview
@@ -114,4 +117,25 @@ The same pattern can be used for:
 
 **Date**: 2026-02-09
 **Architectural Decision**: ADR-001
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: user-gdpr-oupling
+canonical: ../../../../Themes/docs/shared-components/user-gdpr-decoupling.md
+related:
+  - "./architecture-rules.md"
+  - "./architecture.md"
+  - "./auth-blade-structure.md"
+  - "./component-registration.md"
+  - "./readme.md"
+  - "./structure.md"
+  - "./testing-structure.md"
+  - "./user-gdpr-decoupling.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/user-gdpr-decoupling.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

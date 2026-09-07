@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: phpinsights-report
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-report.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # phpinsights report
 
 ## stato 2025-11-12 (sessione corrente)
@@ -55,4 +58,25 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-
    - integrare controlli con `phpstan` livello 10
 
 > Nota: mantenere l'analisi focalizzata sul codice di produzione (`Modules/User/app`). Estendere ai test solo dopo aver stabilizzato le convenzioni.
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: phpinsights-report
+canonical: ../../../Themes/docs/shared-components/phpinsights-report.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpinsights-report.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

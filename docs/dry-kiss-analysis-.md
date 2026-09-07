@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "DRY & KISS Analysis - Modulo User"
 type: concept
@@ -6,9 +10,12 @@ tags: [dry, kiss, analysis]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "dry-kiss-analysis- dry & kiss analysis - modulo user"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 
+=======
+>>>>>>> 87273113 (.)
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -22,8 +29,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # DRY & KISS Analysis - Modulo User
 
 **Data:** 15 Ottobre 2025
@@ -139,11 +150,14 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 - [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 - [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
 =======
+=======
+>>>>>>> 87273113 (.)
 - [Base Classes Corrections](./fixes/base-classes-corrections-2025-10-15.md)
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../docs/dry_kiss_analysis_2025-10-15.md)
@@ -152,3 +166,13 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 ---
 
 **Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
+=======
+- [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
+- [Architecture](./core/architecture.md)
+- [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+- [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
+
+---
+
+**Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
+>>>>>>> 2024e2e7 (.)

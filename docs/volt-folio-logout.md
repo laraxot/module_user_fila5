@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Implementazione Corretta del Logout con Volt e Folio"
 type: concept
@@ -30,6 +31,8 @@ related:
 ## Panoramica
 Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di <nome progetto>.
 =======
+=======
+>>>>>>> 87273113 (.)
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
@@ -40,7 +43,42 @@ Questo documento descrive l'implementazione corretta del logout utilizzando Lara
 
 ## Panoramica
 Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di SaluteOra.
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+---
+title: "Implementazione Corretta del Logout con Volt e Folio"
+type: concept
+tags: [volt, folio, logout]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "volt-folio-logout implementazione corretta del logout con volt e folio"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+# Implementazione Corretta del Logout con Volt e Folio
+
+## Collegamenti correlati
+- [README modulo User](./readme.md)
+- [Convenzioni Path](./path-conventions-2.md)
+- [Analisi Logout Blade](./logout-blade-analysis-3.md)
+- [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
+
+## Panoramica
+Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di <nome progetto>.
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
 ## Percorso Corretto
 Il file di logout deve essere posizionato in:
@@ -51,10 +89,17 @@ Themes/One/resources/views/pages/auth/logout.blade.php
 ## Approcci Raccomandati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto <nome progetto>, si raccomandano i seguenti approcci per l'implementazione del logout.
 =======
 In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto SaluteOra, si raccomandano i seguenti approcci per l'implementazione del logout.
 >>>>>>> f548be94 (.)
+=======
+In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto SaluteOra, si raccomandano i seguenti approcci per l'implementazione del logout.
+=======
+In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto <nome progetto>, si raccomandano i seguenti approcci per l'implementazione del logout.
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
 ### 1. Approccio Folio con PHP puro (Raccomandato)
 
@@ -146,10 +191,17 @@ mount(function() {
         session()->regenerateToken();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> f548be94 (.)
+=======
+    
+=======
+
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     // Reindirizza alla home page localizzata
     $this->redirect('/' . app()->getLocale());
 });
@@ -205,6 +257,11 @@ mount(function() {
 ## Implementazione con Componenti Filament
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+Per seguire le best practices di SaluteOra, utilizzare sempre i componenti Blade nativi di Filament:
+=======
+>>>>>>> 87273113 (.)
 Per seguire le best practices di <nome progetto>, utilizzare sempre i componenti Blade nativi di Filament:
 
 ```php
@@ -390,9 +447,13 @@ mount(function() {
 ## Implementazione con Componenti Filament
 
 Per seguire le best practices di <nome progetto>, utilizzare sempre i componenti Blade nativi di Filament:
+<<<<<<< HEAD
 =======
 Per seguire le best practices di SaluteOra, utilizzare sempre i componenti Blade nativi di Filament:
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
 ```php
 <x-filament::button tag="a" href="{{ url('/' . $locale) }}" color="primary" class="w-full">

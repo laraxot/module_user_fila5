@@ -36,6 +36,7 @@ class OauthDeviceCodeResource extends XotBaseResource
     protected static ?string $model = OauthDeviceCode::class;
 
     /**
+<<<<<<< HEAD
      * Get the form schema for the resource.
      *
      * @return array<string, Component>
@@ -145,6 +146,8 @@ class OauthDeviceCodeResource extends XotBaseResource
     }
 
     /**
+=======
+>>>>>>> 87273113 (.)
      * @return array<string, PageRegistration>
      */
     #[\Override]

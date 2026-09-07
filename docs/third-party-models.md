@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: third-party-models
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/third-party-model-patterns.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # User Module - Third-Party Model Patterns
 
 ## Spatie Permission Package Integration
@@ -251,4 +254,25 @@ $this->tableCreate(function (Blueprint $table) {
 **Integration Status**: ✅ Fully compatible with Spatie package architecture
 **Maintenance**: Low - leverages package maintenance
 **Security**: High - benefits from package security updates
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: third-party-models
+canonical: ../../../Themes/docs/shared-components/third-party-model-patterns.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/third-party-model-patterns.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

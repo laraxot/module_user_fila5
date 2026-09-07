@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: logout-implementation-best-practices-1
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-best-practices-1.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Best Practices per l'Implementazione del Logout
 
 ## Collegamenti correlati
@@ -257,4 +260,25 @@ $this->redirect(LaravelLocalization::getLocalizedURL($locale, route('home')));
 - [Documentazione Livewire Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: logout-implementation-best-practices-1
+canonical: ../../../Themes/docs/shared-components/logout-implementation-best-practices-1.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-implementation-best-practices-1.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

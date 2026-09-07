@@ -7,9 +7,12 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\Notification;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /**
 =======
+=======
+>>>>>>> 87273113 (.)
 use Modules\User\Models\User;
 
 /**
@@ -17,7 +20,14 @@ use Modules\User\Models\User;
  *
  * Factory for creating Notification model instances for testing and seeding.
  *
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+
+/**
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
  * @extends Factory<Notification>
  */
 class NotificationFactory extends Factory
@@ -25,28 +35,46 @@ class NotificationFactory extends Factory
     /**
      * The name of the factory's corresponding model.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var class-string<Notification>
 >>>>>>> f548be94 (.)
+=======
+     *
+     * @var class-string<Notification>
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
      */
     protected $model = Notification::class;
 
     /**
      * Define the model's default state.
 <<<<<<< HEAD
+<<<<<<< HEAD
      */
     /**
 =======
      *
 >>>>>>> f548be94 (.)
+=======
+     *
+=======
+     */
+    /**
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
      * @return array<string, mixed>
      */
     public function definition(): array
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return [];
 =======
+=======
+>>>>>>> 87273113 (.)
         return [
             'id' => $this->faker->uuid(),
             'type' => $this->faker->randomElement([
@@ -140,6 +168,12 @@ class NotificationFactory extends Factory
         return $this->state(fn(array $_attributes): array => [
             'type' => $type,
         ]);
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+        return [];
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     }
 }

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: logout-filament-widget-1
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-filament-widget-1.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Implementazione del Logout con Widget Filament
 
 ## Collegamenti correlati
@@ -250,4 +253,25 @@ Se non è necessaria una conferma per il logout, è preferibile utilizzare l'app
 ## Conclusione
 
 L'implementazione del logout con un widget Filament offre un approccio flessibile e riutilizzabile, particolarmente utile quando si desidera mantenere una pagina di conferma. Tuttavia, per un'esperienza utente più fluida, è generalmente preferibile l'approccio di logout immediato con Folio e PHP puro.
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: logout-filament-widget-1
+canonical: ../../../Themes/docs/shared-components/logout-filament-widget-1.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/logout-filament-widget-1.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

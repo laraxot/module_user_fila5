@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: oauth-cluster-decision-making
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/oauth-cluster-decision-making.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # OAuth Cluster - Processo Decisionale
 
 **Data**: 2025-01-22
@@ -202,4 +205,25 @@ Se in futuro serve Settings page:
 **Ultimo aggiornamento**: 2025-01-22
 **Versione**: 1.0.0
 **Status**: Decisione consolidata - da implementare
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: oauth-cluster-decision-making
+canonical: ../../../Themes/docs/shared-components/oauth-cluster-decision-making.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/oauth-cluster-decision-making.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

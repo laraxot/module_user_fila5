@@ -10,9 +10,15 @@ return [
             'helper_text' => '',
             'description' => 'email',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'password' => [
             'label' => 'password',
@@ -20,9 +26,15 @@ return [
             'helper_text' => '',
             'description' => 'password',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+            'tooltip' => '',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         ],
         'password_confirmation' => [
             'label' => 'password_confirmation',
@@ -30,9 +42,18 @@ return [
             'helper_text' => '',
             'description' => 'password_confirmation',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
+=======
+        ],
+    ],
+=======
+            'tooltip' => '',
+        ],
+    ],
+>>>>>>> 87273113 (.)
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -44,8 +65,12 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
         ],
     ],
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 ];

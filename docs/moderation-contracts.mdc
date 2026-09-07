@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 module: theme
 topic: moderation-contracts
 canonical: ../../../Themes/docs/shared-components/moderation-contracts.md
@@ -7,6 +8,8 @@ canonical: ../../../Themes/docs/shared-components/moderation-contracts.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/moderation-contracts.md
 =======
+=======
+>>>>>>> 87273113 (.)
 description:
 globs:
 alwaysApply: false
@@ -41,4 +44,15 @@ interface ModeratableUser
 - [Azioni di Moderazione](mdc:MODERATION_ACTIONS.mdc)
 - [Configurazione Stati Utente](mdc:USER_STATES.mdc)
 - [Notifiche Moderazione](mdc:MODERATION_NOTIFICATIONS.mdc)
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+module: theme
+topic: moderation-contracts
+canonical: ../../../Themes/docs/shared-components/moderation-contracts.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/moderation-contracts.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

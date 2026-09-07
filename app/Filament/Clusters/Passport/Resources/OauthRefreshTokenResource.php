@@ -5,16 +5,25 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
+<<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Schemas\Components\Component;
@@ -28,6 +37,20 @@ use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 >>>>>>> 60a2c9a9 (.)
+=======
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Grid;
+use Filament\Schemas\Components\Section;
+=======
+use Filament\Resources\Pages\PageRegistration;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Grid;
+use Filament\Schemas\Components\Section;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Actions\Passport\RevokeRefreshTokenAction;
 use Modules\User\Filament\Clusters\Passport;
@@ -43,6 +66,7 @@ class OauthRefreshTokenResource extends XotBaseResource
     protected static ?string $model = OauthRefreshToken::class;
 
     /**
+<<<<<<< HEAD
      * Get the form schema for the resource.
      *
      * @return array<string, Component>
@@ -160,7 +184,13 @@ class OauthRefreshTokenResource extends XotBaseResource
      * @return array<string, PageRegistration>
 =======
      * @return array<string, \Filament\Resources\Pages\PageRegistration>
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+     * @return array<string, PageRegistration>
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
      */
     #[\Override]
     public static function getPages(): array

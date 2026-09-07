@@ -166,10 +166,17 @@ Per verificare che non ci siano più modelli che estendono direttamente `Model`:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 =======
 cd Modules/User
 >>>>>>> 60a2c9a9 (.)
+=======
+cd Modules/User
+=======
+cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|BasePivot\|BaseMorphPivot"
 ```
 
@@ -179,10 +186,17 @@ Dopo le modifiche, eseguire:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 =======
 cd Modules/User
 >>>>>>> 60a2c9a9 (.)
+=======
+cd Modules/User
+=======
+cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 ./vendor/bin/phpstan analyse --memory-limit=2G
 ```
 
@@ -195,9 +209,12 @@ cd Modules/User
 
 ## Collegamenti
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
 =======
+=======
+>>>>>>> 87273113 (.)
 - [Analisi Completa](./model_inheritance_analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
@@ -587,7 +604,13 @@ cd Modules/User
 ## Collegamenti
 
 - [Analisi Completa](./model_inheritance_analysis.md)
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+- [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)

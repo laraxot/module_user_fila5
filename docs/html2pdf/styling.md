@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: styling
@@ -13,6 +14,8 @@ related:
 
 See canonical documentation: ../../../../Themes/docs/shared-components/styling.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # Guida agli Stili, Tabelle e Immagini
 
 Questa guida illustra come applicare stili CSS, creare layout con tabelle e gestire le immagini nei PDF generati con Html2Pdf.
@@ -152,4 +155,22 @@ $src = 'data:image/png;base64,' . $imageData;
 // Passa la stringa $src alla view
 return view('pdf.template', compact('src'));
 ```
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: styling
+canonical: ../../../../Themes/docs/shared-components/styling.md
+related:
+  - "./advanced.md"
+  - "./index.md"
+  - "./laravel.md"
+  - "./security.md"
+  - "./usage.md"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/styling.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

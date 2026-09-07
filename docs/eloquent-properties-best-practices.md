@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: eloquent-properties-best-practices
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/eloquent-properties-best-practices.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # 🛡️ Best Practices per Proprietà Eloquent
 
 ## ⚠️ Regola Critica: property_exists() VIETATO
@@ -199,4 +202,25 @@ if (is_string($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
 **Ultimo aggiornamento**: 2025-11-05
 **Stato**: ✅ Best Practices Implementate
 **Verificato con**: PHPStan Level 10
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: eloquent-properties-best-practices
+canonical: ../../../Themes/docs/shared-components/eloquent-properties-best-practices.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/eloquent-properties-best-practices.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

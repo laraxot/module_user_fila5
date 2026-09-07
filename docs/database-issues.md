@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Database Issues in User Module"
 type: concept
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Database Issues in User Module
 
 ## Missing `doctor_team` Table
@@ -41,6 +49,7 @@ related:
 
 **Related Documentation**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Overview](../index.md)
 - [Team Management](./team_management.md)
 - [BaseUser Model](./baseuser.md)
@@ -52,9 +61,26 @@ related:
 - [Migration Guidelines](../../../../docs/collegamenti-documentazione.md)
 - [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
 =======
+=======
+>>>>>>> 87273113 (.)
 - [User Module Overview](../INDEX.md)
 - [Team Management](./TEAM_MANAGEMENT.md)
 - [BaseUser Model](./BaseUser.md)
 - [Database Structure](../DATABASE_STRUCTURE.md)
 - [Migration Guidelines](../../../../docs/collegamenti-documentazione.md)
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+- [User Module Overview](../index.md)
+- [Team Management](./team_management.md)
+- [BaseUser Model](./baseuser.md)
+- [Database Structure](../database_structure.md)
+- [User Module Overview](../INDEX.md)
+- [Team Management](./TEAM_MANAGEMENT.md)
+- [BaseUser Model](./baseuser.md)
+- [Database Structure](../DATABASE_STRUCTURE.md)
+- [Migration Guidelines](../../../../docs/collegamenti-documentazione.md)
+- [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

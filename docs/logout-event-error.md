@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Analisi dell'Errore negli Eventi di Logout"
 type: concept
@@ -22,6 +23,35 @@ related:
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati
+=======
+# Analisi dell'Errore negli Eventi di Logout
+
+## Collegamenti correlati
+=======
+---
+title: "Analisi dell'Errore negli Eventi di Logout"
+type: concept
+tags: [logout, event, error]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logout-event-error analisi dell'errore negli eventi di logout"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+# Analisi dell'Errore negli Eventi di Logout
+
+## Collegamenti correlati
+>>>>>>> 87273113 (.)
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
@@ -29,11 +59,15 @@ related:
 - [Analisi Errore Logout](logout-blade-error-analysis-3.md)
 - [Widget Filament Corretto](logout-filament-widget-corrected-3.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
+<<<<<<< HEAD
 =======
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
@@ -44,11 +78,18 @@ related:
 
 ## Errore Identificato
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 L'implementazione attuale del file `Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
 =======
 L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
 >>>>>>> f548be94 (.)
+=======
+L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
+=======
+L'implementazione attuale del file `Themes/One/resources/views/pages/auth/logout.blade.php` causa un errore quando viene eseguito il logout:
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 
 ```
 Call to a member function getAuthIdentifier() on null
@@ -101,31 +142,55 @@ try {
     // Ottieni l'utente prima del logout
     $user = Auth::user();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     // Dispatch dell'evento prima del logout
     Event::dispatch('auth.logout.attempting', [$user]);
 
 =======
+=======
+>>>>>>> 87273113 (.)
     
     // Dispatch dell'evento prima del logout
     Event::dispatch('auth.logout.attempting', [$user]);
     
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+
+    // Dispatch dell'evento prima del logout
+    Event::dispatch('auth.logout.attempting', [$user]);
+
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     // Esegui il logout
     Auth::logout();
     request()->session()->invalidate();
     request()->session()->regenerateToken();
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     // Dispatch dell'evento dopo il logout, passando l'utente salvato
     Event::dispatch('auth.logout.successful', [$user]);
 
 =======
+=======
+>>>>>>> 87273113 (.)
     
     // Dispatch dell'evento dopo il logout, passando l'utente salvato
     Event::dispatch('auth.logout.successful', [$user]);
     
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+
+    // Dispatch dell'evento dopo il logout, passando l'utente salvato
+    Event::dispatch('auth.logout.successful', [$user]);
+
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     // Reindirizzamento con localizzazione
     $locale = app()->getLocale();
     return redirect()->to('/' . $locale)
@@ -134,10 +199,17 @@ try {
     // Log dell'errore
     Log::error('Errore durante il logout: ' . $e->getMessage());
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> f548be94 (.)
+=======
+    
+=======
+
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     // Reindirizzamento con messaggio di errore
     $locale = app()->getLocale();
     return redirect()->to('/' . $locale)
@@ -180,10 +252,17 @@ public function handle(Logout $event): void
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
 >>>>>>> f548be94 (.)
+=======
+        
+=======
+
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         // Resto del codice...
     } catch (\Exception $e) {
         Log::error('Errore durante la gestione dell\'evento di logout', [
@@ -203,6 +282,10 @@ Si raccomanda di implementare l'**Opzione 1** perché:
 
 Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati
@@ -355,5 +438,9 @@ Si raccomanda di implementare l'**Opzione 1** perché:
 3. Garantisce che gli eventi di logout abbiano sempre accesso all'utente che si è disconnesso
 
 Questa modifica risolverà l'errore `Call to a member function getAuthIdentifier() on null` e garantirà un corretto funzionamento del processo di logout.
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

@@ -5,10 +5,17 @@ declare(strict_types=1);
 return [
     'login' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'username_or_email' => 'Ім\'я користувача або електронна пошта',
 =======
         'username_or_email' => "Ім'я користувача або електронна пошта",
 >>>>>>> f548be94 (.)
+=======
+        'username_or_email' => "Ім'я користувача або електронна пошта",
+=======
+        'username_or_email' => 'Ім\'я користувача або електронна пошта',
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         'forgot_password_link' => 'Забули пароль?',
         'create_an_account' => 'Створити акаунт',
     ],
@@ -111,6 +118,7 @@ return [
         'tooltip' => 'Скопійовано!',
     ],
     'fields' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
         'avatar' => [
             'label' => 'Аватар',
@@ -217,6 +225,8 @@ return [
     'actions' => [
     ],
 =======
+=======
+>>>>>>> 87273113 (.)
         'avatar' => 'Аватар',
         'email' => 'E-mail',
         'login' => 'Логін',
@@ -235,5 +245,114 @@ return [
     ],
     'or' => 'Або',
     'cancel' => 'Скасувати',
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+        'avatar' => [
+            'label' => 'Аватар',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'email' => [
+            'label' => 'E-mail',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'login' => [
+            'label' => 'Логін',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'name' => [
+            'label' => 'Ім\'я',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'password' => [
+            'label' => 'Пароль',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'password_confirm' => [
+            'label' => 'Підтвердження пароля',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'new_password' => [
+            'label' => 'Новий пароль',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'new_password_confirmation' => [
+            'label' => 'Підтвердження пароля',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'token_name' => [
+            'label' => 'Назва токена',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'token_expiry' => [
+            'label' => 'Термін дії токена',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'abilities' => [
+            'label' => 'Доступ',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        '2fa_code' => [
+            'label' => 'Код',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        '2fa_recovery_code' => [
+            'label' => 'Код відновлення',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created' => [
+            'label' => 'Створено',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'expires' => [
+            'label' => 'Закінчується',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+    ],
+    'or' => 'Або',
+    'cancel' => 'Скасувати',
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+    'actions' => [
+    ],
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 ];

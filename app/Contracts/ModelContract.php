@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Modules\User\Contracts;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*
  * Interfaccia ModelContract deprecata.
  *
@@ -18,6 +19,8 @@ namespace Modules\User\Contracts;
  * Utilizzare direttamente i metodi di Eloquent Model invece di questa interfaccia.
  */
 =======
+=======
+>>>>>>> 87273113 (.)
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -97,4 +100,17 @@ interface ModelContract
      * public function firstOrFail($columns = ['*']);
      */
 }
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+/*
+ * Interfaccia ModelContract deprecata.
+ *
+ * Questa interfaccia causava conflitti con Illuminate\Database\Eloquent\Model
+ * ed è stata rimossa per risolvere problemi di compatibilità.
+ *
+ * Utilizzare direttamente i metodi di Eloquent Model invece di questa interfaccia.
+ */
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

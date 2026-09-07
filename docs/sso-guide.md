@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: sso-guide
@@ -16,6 +17,8 @@ related:
 
 See canonical documentation: ../../../Themes/docs/shared-components/sso-guide.md
 =======
+=======
+>>>>>>> 87273113 (.)
 # 🔑 SINGLE SIGN-ON (SSO) - GUIDA IMPLEMENTAZIONE
 
 **Versione**: 1.0  
@@ -744,4 +747,25 @@ class SsoTest extends TestCase
 **Last Updated**: 2025-10-01  
 **Status**: Pianificato Q1 2026  
 **Priority**: MEDIUM  
+<<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
+=======
+=======
+---
+module: theme
+topic: sso-guide
+canonical: ../../../Themes/docs/shared-components/sso-guide.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/sso-guide.md
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

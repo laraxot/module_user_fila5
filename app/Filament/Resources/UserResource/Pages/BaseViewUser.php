@@ -5,12 +5,19 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 =======
 use Override;
 use Filament\Infolists\Components\TextEntry;
 >>>>>>> f548be94 (.)
+=======
+use Override;
+use Filament\Infolists\Components\TextEntry;
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 use Modules\User\Filament\Resources\UserResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -24,6 +31,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 abstract class BaseViewUser extends XotBaseViewRecord
 {
     protected static string $resource = UserResource::class;
+<<<<<<< HEAD
 
     /**
      * Define the infolist schema for the view.
@@ -50,4 +58,6 @@ abstract class BaseViewUser extends XotBaseViewRecord
                 ->dateTime(),
         ];
     }
+=======
+>>>>>>> 2024e2e7 (.)
 }

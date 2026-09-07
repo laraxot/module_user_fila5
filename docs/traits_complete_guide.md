@@ -420,4 +420,8 @@ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key
 - **Compatibilità**: MANTENUTA - sia oggetti Role che stringhe supportati
 =======
 - **Compatibilità**: MANTENUTA - sia oggetti Role che stringhe supportati
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

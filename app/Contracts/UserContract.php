@@ -5,12 +5,15 @@ declare(strict_types=1);
 namespace Modules\User\Contracts;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * Alias tipizzato verso il contratto utente cross-modulo (SSoT: Xot).
  */
 interface UserContract extends \Modules\Xot\Contracts\UserContract
 {
 =======
+=======
+>>>>>>> 87273113 (.)
 use Spatie\Permission\Contracts\Role;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Collection;
@@ -121,5 +124,15 @@ interface UserContract extends Authenticatable
      * Get all of the teams the user owns or belongs to.
      */
     public function allTeams(): Collection;
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+/**
+ * Alias tipizzato verso il contratto utente cross-modulo (SSoT: Xot).
+ */
+interface UserContract extends \Modules\Xot\Contracts\UserContract
+{
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 }

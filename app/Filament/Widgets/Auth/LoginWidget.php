@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets\Auth;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -37,6 +38,8 @@ class LoginWidget extends XotBaseSchemaWidget
     {
         return 'getLoginFormSchema';
 =======
+=======
+>>>>>>> 87273113 (.)
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Support\Facades\Auth;
@@ -75,15 +78,57 @@ class LoginWidget extends XotBaseWidget
             TextInput::make('password')->password()->required(),
             Checkbox::make('remember'),
         ];
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+use Filament\Schemas\Schema;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+
+/**
+ * LoginWidget: widget login con form Filament e "vestito" demandato al template tema.
+ *
+ * Religione Schema!=Widget: schema da `UserForm::getLoginFormSchema()` (SSoT).
+ * Submit: `$this->form->getState()` — no `validateForm()`.
+ * il widget resta "thin": solo orchestrazione submit + Auth::attempt.
+ *
+ * MAI: ->label(), ->placeholder(), ->helperText() — traduzioni automatiche
+ * da LangServiceProvider tramite `user::login_widget` (lang/it/login_widget.php).
+ *
+ * @property Schema $form
+ */
+class LoginWidget extends XotBaseSchemaWidget
+{
+    /**
+     * @return class-string<UserForm>
+     */
+    protected static function formClass(): string
+    {
+        return UserForm::class;
+    }
+
+    protected static function schemaMethod(): string
+    {
+        return 'getLoginFormSchema';
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     }
 
     public function login(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var array<string, mixed> $data */
 =======
 >>>>>>> f548be94 (.)
+=======
+=======
+        /** @var array<string, mixed> $data */
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
         $data = $this->form->getState();
 
         $credentials = [
@@ -91,6 +136,7 @@ class LoginWidget extends XotBaseWidget
             'password' => is_string($data['password'] ?? null) ? $data['password'] : '',
         ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         $remember = isset($data['remember']) && $data['remember'] === true;
 
@@ -112,12 +158,38 @@ class LoginWidget extends XotBaseWidget
     {
         $this->login();
 =======
+=======
+>>>>>>> 87273113 (.)
         if (Auth::attempt($credentials)) {
             session()->regenerate();
             redirect()->intended('/');
         }
 
         $this->addError('email', __('auth.failed'));
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+=======
+        $remember = isset($data['remember']) && $data['remember'] === true;
+
+        if (Auth::attempt($credentials, $remember)) {
+            session()->regenerate();
+            $redirectUrl = Route::has('dashboard')
+                ? route('dashboard')
+                : url('/'.app()->getLocale());
+            $this->redirect($redirectUrl);
+        }
+
+        $this->addError('data.email', __('user::login.actions.login.error'));
+    }
+
+    /**
+     * Compat: il template tema usa `wire:submit.prevent="save"`.
+     */
+    public function save(): void
+    {
+        $this->login();
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     }
 }

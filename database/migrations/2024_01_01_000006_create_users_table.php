@@ -10,11 +10,19 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Class CreateLiveuserUsersTable.
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
 =======
 return new class extends XotBaseMigration {
 >>>>>>> 60a2c9a9 (.)
+=======
+return new class extends XotBaseMigration {
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
     /**
      * Run the migrations.
      */
@@ -77,10 +85,17 @@ return new class extends XotBaseMigration {
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($this->getColumnType('id') === 'uuid') {
 =======
             if ('uuid' === $this->getColumnType('id')) {
 >>>>>>> 60a2c9a9 (.)
+=======
+            if ('uuid' === $this->getColumnType('id')) {
+=======
+            if ($this->getColumnType('id') === 'uuid') {
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);

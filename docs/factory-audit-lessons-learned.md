@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "Factory Audit Lessons Learned - User Module"
 type: concept
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # Factory Audit Lessons Learned - User Module
 
 ## ERRORE GRAVISSIMO RISOLTO NEL MODULO USER
@@ -123,10 +131,17 @@ class DeviceProfileFactory extends DeviceUserFactory
 ## 🔗 COLLEGAMENTI
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Factory Lessons Learned CRITICAL](../../../../docs/project/factory-lessons-learned-critical.md)
 =======
 - [Factory Lessons Learned CRITICAL](../../../project_docs/factory-lessons-learned-critical.md)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [Factory Lessons Learned CRITICAL](../../../project_docs/factory-lessons-learned-critical.md)
+=======
+- [Factory Lessons Learned CRITICAL](../../../../docs/project/factory-lessons-learned-critical.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [Factory Creation Status](./factory-creation-status.md)
 - [User Module README](./readme.md)
 

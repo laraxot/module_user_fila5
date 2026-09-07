@@ -210,6 +210,7 @@ Modules/User/
 
 ## Collegamenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Console Commands Philosophy](console-commands-philosophy.md)
 - [User Models](../models/README.md)
 - [Role Management](../models/role-management.md)
@@ -489,6 +490,12 @@ Modules/User/
 =======
 - [Console Commands Philosophy](console_commands_philosophy.md)
 >>>>>>> 60a2c9a9 (.)
+=======
+- [Console Commands Philosophy](console_commands_philosophy.md)
+=======
+- [Console Commands Philosophy](console-commands-philosophy.md)
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 - [User Models](../models/readme.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)

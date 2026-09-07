@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Pages\Auth;
 
 use Filament\Pages\Concerns\HasRoutes;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\Auth\XotBaseLogin;
 
 class Login extends XotBaseLogin
@@ -13,6 +14,15 @@ class Login extends XotBaseLogin
 
 class Login extends \Filament\Auth\Pages\Login
 >>>>>>> f548be94 (.)
+=======
+
+class Login extends \Filament\Auth\Pages\Login
+=======
+use Modules\Xot\Filament\Pages\Auth\XotBaseLogin;
+
+class Login extends XotBaseLogin
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 {
     use HasRoutes;
 

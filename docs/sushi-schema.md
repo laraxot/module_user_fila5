@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 87273113 (.)
 ---
 title: "User Module - Sushi Schema Fix (`SocialProvider` Model)"
 type: concept
@@ -19,8 +23,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 # User Module - Sushi Schema Fix (`SocialProvider` Model)
 
 This document details the resolution of an SQL syntax error encountered during the analysis of the `SocialProvider` model, which utilizes the `calebporzio/sushi` package.
@@ -85,6 +93,7 @@ class SocialProvider extends BaseModel
 
 - **Eliminating Redundancy:** Providing an explicit `$schema` gives Sushi a single source of truth for the in-memory table definition.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Clarity and Correctness:** The fix improves correctness, ensuring that the model's behavior with `Sushi` is <nome progetto>able and free from runtime errors during schema inference.
 
 This resolution ensures that the `SocialProvider` model can be properly analyzed by static analysis tools and functions as intended within the application.
@@ -93,3 +102,13 @@ This resolution ensures that the `SocialProvider` model can be properly analyzed
 
 This resolution ensures that the `SocialProvider` model can be properly analyzed by static analysis tools and functions as intended within the application.
 >>>>>>> 60a2c9a9 (.)
+=======
+- **Clarity and Correctness:** The fix improves correctness, ensuring that the model's behavior with `Sushi` is predictable and free from runtime errors during schema inference.
+
+This resolution ensures that the `SocialProvider` model can be properly analyzed by static analysis tools and functions as intended within the application.
+=======
+- **Clarity and Correctness:** The fix improves correctness, ensuring that the model's behavior with `Sushi` is <nome progetto>able and free from runtime errors during schema inference.
+
+This resolution ensures that the `SocialProvider` model can be properly analyzed by static analysis tools and functions as intended within the application.
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)

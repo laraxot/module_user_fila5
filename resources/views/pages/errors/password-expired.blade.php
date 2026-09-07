@@ -15,9 +15,15 @@ middleware(['auth']);
 name('errors.password-expired');
 //Expression "new class extends \Livewire\Volt\Component…" on a separate line does not do anything.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // @phpstan-ignore expr.resultUnused
 >>>>>>> f548be94 (.)
+=======
+// @phpstan-ignore expr.resultUnused
+=======
+>>>>>>> 2024e2e7 (.)
+>>>>>>> 87273113 (.)
 new class() extends Component {};
 
 ?>
