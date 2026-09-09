@@ -1,0 +1,37 @@
+---
+title: "Directory Structure Rules"
+type: rule
+tags: [directory, structure, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "directory-structure-rules directory structure rules"
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+# Directory Structure Rules
+
+Per il modulo User valgono queste regole:
+
+- `lang/lang/` non deve esistere;
+- `_docs/` non deve esistere;
+- le traduzioni ufficiali stanno in `lang/<locale>/`;
+- la documentazione ufficiale sta in `docs/`.
+
+La vecchia cartella duplicata individuata era `User/docs/_docs`.
+
+Regola canonica: [no-lang-lang-and-no-underscore-docs-rule](../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md).

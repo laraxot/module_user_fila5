@@ -1,0 +1,33 @@
+---
+title: "Registration Widget 3"
+type: concept
+tags: [registration, widget]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "registration-widget-3 registration widget 3"
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+- [Filament Resource Guidelines](../../../Modules/Xot/docs/rules/filament-resource-guidelines.md)
+---
+module: theme
+topic: registration_widget
+canonical: ../../../Themes/docs/shared-components/registration-widget-3.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/registration-widget-3.md

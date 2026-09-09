@@ -1,0 +1,57 @@
+---
+title: "Errore VoltDirectiveMissingException"
+type: concept
+tags: [volt, missing, directive]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "volt-missing-directive-1 errore voltdirectivemissingexception"
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+# Errore VoltDirectiveMissingException
+
+## Descrizione
+In una pagina Folio con componenti Volt anonimi, è obbligatorio includere la direttiva `@volt` all'inizio del file Blade. L'assenza di questo directive genera:
+
+```
+Livewire\Volt\Exceptions\VoltDirectiveMissingException
+The [@volt] directive is required when using Volt anonymous components in Folio pages.
+```
+
+## Dove correggere
+File: `Themes/TwentyOne/resources/views/pages/auth/logout.blade.php`
+
+## Soluzione
+Aggiungere la direttiva `@volt` in testa al file, prima di qualsiasi codice Blade o HTML:
+
+```blade
+@volt
+@php
+    // ... logout logic
+@endphp
+<x-layout>
+    <!-- contenuto pagina logout -->
+</x-layout>
+```
+
+## Pulizia cache
+Dopo la modifica, rigenerare la cache delle viste:
+
+```bash
+php artisan view:clear && php artisan route:clear
+```

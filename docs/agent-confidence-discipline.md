@@ -1,0 +1,28 @@
+---
+title: "Disciplina agenti per massimizzare la confidenza"
+type: rule
+status: approved
+tags: [agent, confidence, verification]
+created: "2026-05-26"
+updated: "2026-05-26"
+<<<<<<< HEAD
+issue: "https://github.com/provtv/<repo progetto>/issues/152"
+=======
+issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/152"
+>>>>>>> laraxot/dev
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+# Disciplina agenti per massimizzare la confidenza
+
+Regola canonica: [../../Xot/docs/wiki/concepts/agent-confidence-discipline.md](../../Xot/docs/wiki/concepts/agent-confidence-discipline.md).
+
+Sintesi: verificare prima di affermare; riprodurre prima di correggere; documentare prove, dubbi e rischio residuo; rispondere in italiano sintetico.

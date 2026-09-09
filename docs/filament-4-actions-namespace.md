@@ -1,0 +1,293 @@
+---
+<<<<<<< HEAD
+title: "Filament 5: Namespace Actions - Filosofia Laraxot"
+=======
+title: "Filament 4: Namespace Actions - Filosofia Laraxot"
+>>>>>>> laraxot/dev
+type: concept
+tags: [filament, actions, namespace]
+created: 2026-07-14
+updated: 2026-07-14
+<<<<<<< HEAD
+qmd: "Filament-5-actions-namespace Filament 5: namespace actions - filosofia laraxot"
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+qmd: "filament-4-actions-namespace filament 4: namespace actions - filosofia laraxot"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+<<<<<<< HEAD
+# Filament 5: Namespace Actions - Filosofia Laraxot
+=======
+# Filament 4: Namespace Actions - Filosofia Laraxot
+>>>>>>> laraxot/dev
+
+**Data Creazione**: 2025-01-22
+**Status**: Documentazione Completa
+**Versione**: 1.0.0
+
+<<<<<<< HEAD
+## 🏛️ Comandamento Sacro: Namespace Filament 5
+
+### Principio Fondamentale
+
+**"In Filament 5, tutte le Actions sono in `Filament\Actions\*`, NON in `Filament\Tables\Actions\*`"**
+=======
+## 🏛️ Comandamento Sacro: Namespace Filament 4
+
+### Principio Fondamentale
+
+**"In Filament 4, tutte le Actions sono in `Filament\Actions\*`, NON in `Filament\Tables\Actions\*`"**
+>>>>>>> laraxot/dev
+
+Questo non è un suggerimento, è un **COMANDAMENTO** della religione Laraxot.
+
+## 🧠 Logica (Logic)
+
+### Perché il Cambiamento
+
+<<<<<<< HEAD
+Filament 5 ha unificato il namespace delle Actions per:
+=======
+Filament 4 ha unificato il namespace delle Actions per:
+>>>>>>> laraxot/dev
+1. **Semplicità**: Un solo namespace per tutte le actions
+2. **Coerenza**: Actions usabili ovunque (tables, forms, pages)
+3. **Manutenibilità**: Codice più pulito e organizzato
+
+### Manifestazione nel Codice
+
+```php
+<<<<<<< HEAD
+// ✅ CORRETTO - Filament 5
+=======
+// ✅ CORRETTO - Filament 4
+>>>>>>> laraxot/dev
+use Filament\Actions\AttachAction;
+use Filament\Actions\DetachAction;
+use Filament\Actions\DetachBulkAction;
+use Filament\Actions\EditAction;
+use Filament\Actions\DeleteAction;
+
+// ❌ SBAGLIATO - Filament 3 (deprecato)
+use Filament\Tables\Actions\AttachAction;
+use Filament\Tables\Actions\DetachAction;
+use Filament\Tables\Actions\DetachBulkAction;
+```
+
+## 🕉️ Religione (Religion)
+
+### Namespace Sacri
+
+<<<<<<< HEAD
+In Filament 5, la gerarchia dei namespace è:
+=======
+In Filament 4, la gerarchia dei namespace è:
+>>>>>>> laraxot/dev
+
+```
+Filament\Actions\*
+├── Action (base)
+├── AttachAction
+├── DetachAction
+├── DetachBulkAction
+├── EditAction
+├── DeleteAction
+├── BulkAction (base)
+└── ...
+```
+
+**Violare questo ordine** crea caos:
+- Classi non trovate
+- Errori PHPStan
+- Comportamenti imprevedibili
+
+## 🏛️ Politica (Politics)
+
+### Governance Namespace
+
+La regola del namespace è una politica di governance del codice:
+
+1. **Controllo**: Ogni import deve essere corretto
+2. **Prevenzione**: Elimina errori a compile-time
+3. **Trasparenza**: Codice chiaro e leggibile
+4. **Responsabilità**: Ogni sviluppatore garantisce namespace corretti
+
+### Consequenze della Violazione
+
+1. **Caos Runtime**: Errori "Class not found"
+2. **Debito Tecnico**: Codice non funzionante
+3. **Perdita di Fiducia**: Team non può più fidarsi del codice
+4. **Esilio dal Repository**: Code rifiutate in code review
+
+## 🧘 Zen (Zen)
+
+### Semplicità e Chiarezza
+
+Il namespace unificato è un'espressione del principio Zen di semplicità:
+
+- **Una cosa, un posto**: Tutte le actions in un solo namespace
+- **Chiarezza**: Nessuna ambiguità su dove trovare le actions
+<<<<<<< HEAD
+- **Armonia**: Codice in equilibrio con Filament 5
+=======
+- **Armonia**: Codice in equilibrio con Filament 4
+>>>>>>> laraxot/dev
+
+## 📋 Pattern Corretto Laraxot
+
+### RelationManager Actions
+
+```php
+<<<<<<< HEAD
+// ✅ CORRETTO - Filament 5
+=======
+// ✅ CORRETTO - Filament 4
+>>>>>>> laraxot/dev
+use Filament\Actions\AttachAction;
+use Filament\Actions\DetachAction;
+use Filament\Actions\DetachBulkAction;
+
+class TeamsRelationManager extends XotBaseRelationManager
+{
+    /**
+     * @return array<string, \Filament\Actions\Action>
+     */
+    public function getTableHeaderActions(): array
+    {
+        return [
+            'attach' => AttachAction::make(),
+        ];
+    }
+
+    /**
+     * @return array<string, \Filament\Actions\Action>
+     */
+    public function getTableActions(): array
+    {
+        return [
+            'detach' => DetachAction::make(),
+        ];
+    }
+
+    /**
+     * @return array<string, \Filament\Actions\BulkAction>
+     */
+    public function getTableBulkActions(): array
+    {
+        return [
+            'detach' => DetachBulkAction::make(),
+        ];
+    }
+}
+```
+
+### Resource Actions
+
+```php
+<<<<<<< HEAD
+// ✅ CORRETTO - Filament 5
+=======
+// ✅ CORRETTO - Filament 4
+>>>>>>> laraxot/dev
+use Filament\Actions\CreateAction;
+use Filament\Actions\EditAction;
+use Filament\Actions\DeleteAction;
+
+class UserResource extends XotBaseResource
+{
+    /**
+     * @return array<string, \Filament\Actions\Action>
+     */
+    public static function getHeaderActions(): array
+    {
+        return [
+            'create' => CreateAction::make(),
+        ];
+    }
+}
+```
+
+## 🔍 Identificazione Errori
+
+### Segnali di Allarme
+
+- Errori PHPStan: "Class not found"
+- Import da `Filament\Tables\Actions\*`
+- Errori runtime: "Class does not exist"
+
+### Processo di Identificazione
+
+```bash
+# Trova import errati
+grep -r "Filament\\\\Tables\\\\Actions" laravel/Modules/*/app/
+
+# Verifica namespace corretti
+grep -r "Filament\\\\Actions" laravel/Modules/*/app/
+```
+
+## 🛠️ Processo di Correzione
+
+### Fase 1: Analisi
+
+1. Identificare tutti gli import errati
+2. Categorizzare per tipo (Attach, Detach, Edit, Delete)
+3. Determinare il namespace corretto
+
+### Fase 2: Correzione
+
+1. Sostituire `Filament\Tables\Actions\*` con `Filament\Actions\*`
+2. Aggiornare PHPDoc return types
+3. Verificare con PHPStan
+
+### Fase 3: Verifica
+
+1. Eseguire PHPStan Level 10
+2. Verificare zero errori
+3. Testare funzionalità
+4. Documentare correzioni
+
+## 📊 Stato Correzione Modulo User
+
+### RelationManagers Corretti
+
+- ✅ `TeamsRelationManager` - Namespace corretto, zero errori PHPStan
+- ⚠️ Altri RelationManagers da verificare
+
+### Pattern Applicato
+
+1. Import corretto: `Filament\Actions\*`
+2. PHPDoc aggiornato: `array<string, \Filament\Actions\Action>`
+3. Type hints espliciti: `self $livewire`
+
+## 🎯 Obiettivo Finale
+
+**Zero import errati** - Tutti gli import devono usare `Filament\Actions\*`.
+
+## 📚 Riferimenti
+
+<<<<<<< HEAD
+- [Filament 5 Migration Guide](../../xot/docs/Filament-5-migration-guide.md)
+- [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
+- [Filament 5 Documentation](https://filamentphp.com/docs/4.x)
+=======
+- [Filament 4 Migration Guide](../../xot/docs/filament-4-migration-guide.md)
+- [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
+- [Filament 4 Documentation](https://filamentphp.com/docs/4.x)
+>>>>>>> laraxot/dev
+
+---
+
+*Ricorda: Il namespace è sacro. Non profanarlo mai.*
