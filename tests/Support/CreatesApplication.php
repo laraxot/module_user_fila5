@@ -6,9 +6,9 @@ namespace Modules\User\Tests\Support;
 
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Foundation\Application;
+use Modules\User\Models\User;
 
 use function Safe\realpath;
-use Modules\User\Models\User;
 
 /**
  * PHPStan-visible CreatesApplication trait for User test support.

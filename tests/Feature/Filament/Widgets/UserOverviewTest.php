@@ -12,13 +12,12 @@ use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use Modules\User\Models\User;
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var TestCase $this */
-    $this->widget = new UserOverview;
+    $this->widget = new UserOverview();
     TestCase::$user = UserFactory::new()->createOne([
         'type' => UserType::MasterAdmin,
         'email' => 'admin-'.Str::lower(Str::random(10)).'@example.com',

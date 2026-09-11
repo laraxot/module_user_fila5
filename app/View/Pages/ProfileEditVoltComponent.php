@@ -18,7 +18,6 @@ use Livewire\Attributes\Locked;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
 use Modules\User\Models\BaseUser;
-use RuntimeException;
 use Webmozart\Assert\Assert;
 use Webmozart\Assert\InvalidArgumentException;
 
@@ -79,7 +78,7 @@ final class ProfileEditVoltComponent extends Component
         try {
             $user = Auth::user();
             if (! $user instanceof BaseUser) {
-                throw new RuntimeException('User must be authenticated and an instance of BaseUser model');
+                throw new \RuntimeException('User must be authenticated and an instance of BaseUser model');
             }
 
             // Type-safe property initialization
@@ -139,7 +138,7 @@ final class ProfileEditVoltComponent extends Component
 
             $user = Auth::user();
             if (! $user instanceof BaseUser) {
-                throw new RuntimeException('User must be authenticated and an instance of BaseUser model for profile update');
+                throw new \RuntimeException('User must be authenticated and an instance of BaseUser model for profile update');
             }
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
@@ -255,7 +254,7 @@ final class ProfileEditVoltComponent extends Component
 
             $user = Auth::user();
             if (! $user instanceof BaseUser) {
-                throw new RuntimeException('User must be authenticated and an instance of BaseUser model for password update');
+                throw new \RuntimeException('User must be authenticated and an instance of BaseUser model for password update');
             }
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
@@ -268,7 +267,7 @@ final class ProfileEditVoltComponent extends Component
 
             $currentHash = $user->password;
             if (null === $currentHash) {
-                throw new RuntimeException('User has no password hash set');
+                throw new \RuntimeException('User has no password hash set');
             }
 
             // Verify current password
@@ -349,7 +348,7 @@ final class ProfileEditVoltComponent extends Component
 
             $user = Auth::user();
             if (! $user instanceof BaseUser) {
-                throw new RuntimeException('User must be authenticated and an instance of BaseUser model for account deletion');
+                throw new \RuntimeException('User must be authenticated and an instance of BaseUser model for account deletion');
             }
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
@@ -357,7 +356,7 @@ final class ProfileEditVoltComponent extends Component
             Assert::stringNotEmpty($this->delete_password, 'Password cannot be empty for account deletion');
             $currentHash = $user->password;
             if (null === $currentHash) {
-                throw new RuntimeException('User has no password hash set');
+                throw new \RuntimeException('User has no password hash set');
             }
             Assert::true(
                 Hash::check($this->delete_password, $currentHash),

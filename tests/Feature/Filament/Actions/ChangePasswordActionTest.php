@@ -10,7 +10,6 @@ use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
-use Modules\User\Models\User;
 
 uses(TestCase::class);
 

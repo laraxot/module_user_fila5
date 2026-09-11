@@ -9,7 +9,6 @@ use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesFixture;
 use Modules\User\Tests\Unit\Traits\Fixtures\PasswordValidationRulesMockableFixture;
 use Modules\User\Traits\PasswordValidationRules;
 use PHPUnit\Framework\Assert;
-use Modules\User\Models\User;
 
 uses(TestCase::class);
 
@@ -18,7 +17,7 @@ describe('Password Validation Rules', function (): void {
         Assert::assertTrue(trait_exists(PasswordValidationRules::class));
         Assert::assertInstanceOf(
             PasswordValidationRulesFixture::class,
-            new PasswordValidationRulesFixture,
+            new PasswordValidationRulesFixture(),
         );
     });
 
@@ -26,7 +25,7 @@ describe('Password Validation Rules', function (): void {
         $reflection = new \ReflectionClass(PasswordValidationRules::class);
 
         Assert::assertTrue($reflection->hasMethod('passwordRules'));
-        $fixture = new PasswordValidationRulesMockableFixture;
+        $fixture = new PasswordValidationRulesMockableFixture();
         $rules = $fixture->getPasswordRules();
 
         Assert::assertCount(4, $rules);

@@ -10,7 +10,6 @@ use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 
 use function Safe\json_decode;
-use Modules\User\Models\User;
 
 uses(TestCase::class);
 
@@ -22,7 +21,7 @@ beforeEach(function (): void {
     TestCase::skipUnlessUserColumn('users', 'two_factor_confirmed_at');
 
     TestCase::$user = TestCase::createTestUser();
-    TestCase::$google2fa = new Google2FA;
+    TestCase::$google2fa = new Google2FA();
 });
 
 describe('Two Factor Service', function (): void {

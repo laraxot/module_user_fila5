@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit;
 
+use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 use function Safe\glob;
-use Modules\User\Models\User;
 
 uses(TestCase::class)->group('no-user-db');
 
@@ -66,7 +66,7 @@ describe('User coverage boost', function (): void {
             try {
                 Assert::assertInstanceOf($class, app($class));
             } catch (\Throwable) {
-                Assert::assertInstanceOf($class, new $class);
+                Assert::assertInstanceOf($class, new $class());
             }
             Assert::assertStringContainsString('declare(strict_types=1);', XotBasePest::reflectionSource($class));
         }
@@ -90,7 +90,7 @@ describe('User coverage boost', function (): void {
             if ($ref->isAbstract()) {
                 continue;
             }
-            $checked++;
+            ++$checked;
             if (method_exists($class, 'from')) {
                 Assert::assertTrue($ref->hasMethod('from'));
             }

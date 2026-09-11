@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit;
 
 use function Safe\file_get_contents;
-use Modules\User\Models\User;
 
 test('it does not reference the comment module anywhere under user app', function (): void {
     $appPath = dirname(__DIR__, 2).'/app';
@@ -15,7 +14,7 @@ test('it does not reference the comment module anywhere under user app', functio
 
     /** @var \SplFileInfo $file */
     foreach ($iterator as $file) {
-        if (! $file->isFile() || $file->getExtension() !== 'php') {
+        if (! $file->isFile() || 'php' !== $file->getExtension()) {
             continue;
         }
 

@@ -14,7 +14,6 @@ use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 use PHPUnit\Framework\Assert;
-use Modules\User\Models\User;
 
 uses(TestCase::class);
 
@@ -29,7 +28,7 @@ beforeEach(function (): void {
     }
     Filament::setCurrentPanel($panel);
 
-    TestCase::$createUserPage = new CreateUser;
+    TestCase::$createUserPage = new CreateUser();
 });
 
 describe('Create User', function (): void {

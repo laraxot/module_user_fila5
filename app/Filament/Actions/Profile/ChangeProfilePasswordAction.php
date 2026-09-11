@@ -71,7 +71,8 @@ final class ChangeProfilePasswordAction extends XotBaseAction
                             'required',
                             static function (callable $get): bool {
                                 $newPassword = $get('new_password');
-                                /** @var string|null $newPassword */
+
+                                /* @var string|null $newPassword */
                                 return (bool) $newPassword;
                             }
                         )

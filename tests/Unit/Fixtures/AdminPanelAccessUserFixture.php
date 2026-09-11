@@ -6,7 +6,6 @@ namespace Modules\User\Tests\Unit\Fixtures;
 
 use Illuminate\Support\Collection;
 use Modules\User\Models\BaseUser;
-use Modules\User\Models\User;
 
 /**
  * BaseUser stub con flag per canAccessPanel senza classi anonime.
@@ -23,7 +22,7 @@ final class AdminPanelAccessUserFixture extends BaseUser
     }
 
     /**
-     * @param  array<int, string>|Collection<int, string>  $roles
+     * @param array<int, string>|Collection<int, string> $roles
      */
     public function hasRole($roles, ?string $guard = null): bool
     {

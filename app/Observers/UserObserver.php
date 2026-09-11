@@ -7,7 +7,6 @@ namespace Modules\User\Observers;
 use Illuminate\Support\Facades\Log;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
-use Modules\Xot\Contracts\UserContract;
 use Webmozart\Assert\Assert;
 
 /**

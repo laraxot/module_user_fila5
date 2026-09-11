@@ -9,7 +9,6 @@ use Modules\Xot\Tests\FilamentSchemaCoverage;
 use PHPUnit\Framework\Assert;
 
 use function Safe\glob;
-use Modules\User\Models\User;
 
 uses(TestCase::class)->group('no-user-db');
 
@@ -67,7 +66,7 @@ describe('User enum and provider coverage', function (): void {
                     Assert::assertIsString($case->getLabel());
                 }
             }
-            $seen++;
+            ++$seen;
         }
         Assert::assertGreaterThanOrEqual(0, $seen);
     });
@@ -91,7 +90,7 @@ describe('User enum and provider coverage', function (): void {
             if (property_exists($provider, 'name')) {
                 Assert::assertSame('User', $provider->name);
             }
-            $seen++;
+            ++$seen;
         }
         Assert::assertGreaterThan(0, $seen, 'User deve scoprire almeno un service provider concreto');
     });

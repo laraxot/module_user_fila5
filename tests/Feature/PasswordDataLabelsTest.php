@@ -7,7 +7,6 @@ namespace Modules\User\Tests\Feature;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use Modules\User\Models\User;
 
 uses(TestCase::class);
 
