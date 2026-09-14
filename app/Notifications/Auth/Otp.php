@@ -25,22 +25,14 @@ class Otp extends Notification implements ShouldQueue
     public function __construct(
         public UserContract $user,
         public string $code,
-<<<<<<< HEAD
-    ) {}
-=======
     ) {
     }
->>>>>>> laraxot/dev
 
     /**
      * Get the notification's delivery channels.
      *
-<<<<<<< HEAD
-     * @param  mixed  $_notifiable  L'entità da notificare
-=======
      * @param mixed $_notifiable L'entità da notificare
      *
->>>>>>> laraxot/dev
      * @return array<int, string>
      */
     public function via(mixed $_notifiable): array
@@ -56,11 +48,7 @@ class Otp extends Notification implements ShouldQueue
         $pwd = PasswordData::make();
         $app_name = SafeStringCastAction::cast(config('app.name'));
 
-<<<<<<< HEAD
-        $mailMessage = new MailMessage;
-=======
         $mailMessage = new MailMessage();
->>>>>>> laraxot/dev
         $mailMessage = $mailMessage->template('user::notifications.email');
         $mailMessage = $mailMessage->subject(SafeStringCastAction::cast(__('user::otp.mail.subject')));
         $mailMessage = $mailMessage->greeting(SafeStringCastAction::cast(__('user::otp.mail.greeting')));

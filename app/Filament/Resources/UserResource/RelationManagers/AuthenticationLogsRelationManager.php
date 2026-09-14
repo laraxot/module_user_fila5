@@ -54,11 +54,7 @@ class AuthenticationLogsRelationManager extends XotBaseRelationManager
                             ->join(', ');
                     }
 
-<<<<<<< HEAD
-                    if ($state === null) {
-=======
                     if (null === $state) {
->>>>>>> laraxot/dev
                         return 'N/A';
                     }
 

@@ -117,11 +117,7 @@ describe('User Password Management', function () {
         ]);
         \assert($user instanceof User);
         $passwordExpiresAt = $user->password_expires_at;
-<<<<<<< HEAD
-        \assert($passwordExpiresAt !== null);
-=======
         \assert(null !== $passwordExpiresAt);
->>>>>>> laraxot/dev
 
         expect($passwordExpiresAt->isPast())->toBe(true);
     });
@@ -133,11 +129,7 @@ describe('User Password Management', function () {
         ]);
 
         $passwordExpiresAt = TestCase::requireFreshUser(TestCase::requireUser())->password_expires_at;
-<<<<<<< HEAD
-        \assert($passwordExpiresAt !== null);
-=======
         \assert(null !== $passwordExpiresAt);
->>>>>>> laraxot/dev
 
         expect($passwordExpiresAt->toDateString())
             ->toBe($expirationDate->toDateString());
@@ -177,11 +169,7 @@ describe('User Email Verification', function () {
         $user->markEmailAsVerified();
 
         $fresh = $user->fresh();
-<<<<<<< HEAD
-        \assert($fresh !== null);
-=======
         \assert(null !== $fresh);
->>>>>>> laraxot/dev
 
         expect($fresh->email_verified_at)->not->toBeNull();
     });

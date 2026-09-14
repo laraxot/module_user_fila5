@@ -5,16 +5,11 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< HEAD
-use Laravel\Passport\Client;
-use Modules\Xot\Filament\Resources\XotBaseResource;
-=======
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Passport\Client;
 use Laravel\Passport\Passport;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Webmozart\Assert\Assert;
->>>>>>> laraxot/dev
 
 /**
  * OAuth Client Resource.
@@ -25,9 +20,6 @@ use Webmozart\Assert\Assert;
  */
 class OauthClientResource extends XotBaseResource
 {
-<<<<<<< HEAD
-    protected static ?string $model = Client::class;
-=======
     /**
      * Get the model class for the resource from Passport.
      *
@@ -51,7 +43,6 @@ class OauthClientResource extends XotBaseResource
         /* @var class-string<Model> $model */
         return $model;
     }
->>>>>>> laraxot/dev
 
     /**
      * Configure the model query.

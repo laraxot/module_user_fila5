@@ -23,11 +23,7 @@ class GetUserTeamsOptionAction
 
         foreach ($teams as $teamUser) {
             $team = $teamUser->team;
-<<<<<<< HEAD
-            if ($team === null) {
-=======
             if (null === $team) {
->>>>>>> laraxot/dev
                 continue;
             }
 
