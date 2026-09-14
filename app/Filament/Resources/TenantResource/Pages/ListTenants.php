@@ -8,15 +8,20 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Str;
 use Modules\User\Filament\Resources\TenantResource;
 use Modules\User\Models\Tenant;
+=======
+use Modules\User\Filament\Resources\TenantResource;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListTenants extends XotBaseListRecords
 {
     protected static string $resource = TenantResource::class;
+<<<<<<< HEAD
 
     /**
      * Definisce le colonne della tabella per la lista tenant.
@@ -49,4 +54,6 @@ class ListTenants extends XotBaseListRecords
                 ->sortable(),
         ];
     }
+=======
+>>>>>>> laraxot/dev
 }

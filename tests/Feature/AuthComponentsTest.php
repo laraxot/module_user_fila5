@@ -45,7 +45,13 @@ describe('Auth Components Tests', function (): void {
 
     test('auth-session-status component renders correctly', function (): void {
         // Test the existing auth-session-status component rendering
+<<<<<<< HEAD
         $html = View::make('components.auth-session-status', ['status' => 'Test status'])->render();
+=======
+        /** @var view-string $view */
+        $view = 'components.auth-session-status';
+        $html = View::make($view, ['status' => 'Test status'])->render();
+>>>>>>> laraxot/dev
 
         expect(strlen($html))->toBeGreaterThanOrEqual(0);
         expect($html)->not->toBeEmpty();
@@ -55,7 +61,13 @@ describe('Auth Components Tests', function (): void {
         // Test the auth header component that exists
         expect(View::exists('components.auth-header'))->toBeTrue();
 
+<<<<<<< HEAD
         $html = View::make('components.auth-header', [
+=======
+        /** @var view-string $view */
+        $view = 'components.auth-header';
+        $html = View::make($view, [
+>>>>>>> laraxot/dev
             'title' => 'Login Test',
             'description' => 'Test description',
         ])->render();

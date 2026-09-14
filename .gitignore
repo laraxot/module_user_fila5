@@ -148,3 +148,10 @@ phpinsights.php
 rector.php
 tests/Unit/graphify-out/
 docs/_archive
+<<<<<<< HEAD
+=======
+Application/
+Database/
+tools/
+app/Models/Models
+>>>>>>> laraxot/dev

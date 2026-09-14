@@ -28,7 +28,11 @@ beforeEach(function (): void {
     }
     Filament::setCurrentPanel($panel);
 
+<<<<<<< HEAD
     TestCase::$createUserPage = new CreateUser;
+=======
+    TestCase::$createUserPage = new CreateUser();
+>>>>>>> laraxot/dev
 });
 
 describe('Create User', function (): void {
