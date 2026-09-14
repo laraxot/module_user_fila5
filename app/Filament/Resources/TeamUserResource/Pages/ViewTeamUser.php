@@ -4,12 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TeamUserResource\Pages;
 
-<<<<<<< HEAD
-=======
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
->>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\TeamUserResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -19,8 +16,6 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 class ViewTeamUser extends XotBaseViewRecord
 {
     protected static string $resource = TeamUserResource::class;
-<<<<<<< HEAD
-=======
 
     /**
      * @return array<string, Component>
@@ -38,5 +33,4 @@ class ViewTeamUser extends XotBaseViewRecord
             ]),
         ];
     }
->>>>>>> laraxot/dev
 }

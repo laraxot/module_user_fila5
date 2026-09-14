@@ -14,11 +14,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
-<<<<<<< HEAD
- * @param  array<string, mixed>  $attributes
-=======
  * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
  */
 function modelsUserCreate(array $attributes = []): User
 {
