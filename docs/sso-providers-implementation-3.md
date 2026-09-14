@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "sso-providers-implementation-3 user module - sso providers implementation"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -112,7 +117,11 @@ ALTER TABLE users ADD CONSTRAINT fk_sso_provider
   "client_secret": "your-client-secret",
   "scopes": "openid email profile",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "redirect_url": "https://app.<nome progetto>.it/auth/callback/google"
+=======
+  "redirect_url": "https://app.fixcity.it/auth/callback/google"
+>>>>>>> laraxot/dev
 =======
   "redirect_url": "https://app.fixcity.it/auth/callback/google"
 >>>>>>> laraxot/dev
@@ -127,9 +136,15 @@ ALTER TABLE users ADD CONSTRAINT fk_sso_provider
 {
   "type": "saml",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "entity_id": "https://app.<nome progetto>.it",
   "metadata_url": "https://idp.provider.it/metadata.xml",
   "redirect_url": "https://app.<nome progetto>.it/auth/callback/spid"
+=======
+  "entity_id": "https://app.fixcity.it",
+  "metadata_url": "https://idp.provider.it/metadata.xml",
+  "redirect_url": "https://app.fixcity.it/auth/callback/spid"
+>>>>>>> laraxot/dev
 =======
   "entity_id": "https://app.fixcity.it",
   "metadata_url": "https://idp.provider.it/metadata.xml",
@@ -146,7 +161,11 @@ ALTER TABLE users ADD CONSTRAINT fk_sso_provider
 {
   "type": "oidc",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "client_id": "<nome progetto>-app",
+=======
+  "client_id": "fixcity-app",
+>>>>>>> laraxot/dev
 =======
   "client_id": "fixcity-app",
 >>>>>>> laraxot/dev
@@ -167,7 +186,11 @@ $spidProvider = SsoProvider::create([
     'display_name' => 'SPID',
     'type' => 'saml',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'entity_id' => 'https://app.<nome progetto>.it',
+=======
+    'entity_id' => 'https://app.fixcity.it',
+>>>>>>> laraxot/dev
 =======
     'entity_id' => 'https://app.fixcity.it',
 >>>>>>> laraxot/dev

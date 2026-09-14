@@ -31,7 +31,11 @@ related:
 3. Clicca **+ Crea credenziali** → **ID client OAuth**
 4. Tipo applicazione: **Applicazione web**
 <<<<<<< HEAD
+<<<<<<< HEAD
 5. Nome: `<nome progetto> Production` (o simile)
+=======
+5. Nome: `Fixcity Production` (o simile)
+>>>>>>> laraxot/dev
 =======
 5. Nome: `Fixcity Production` (o simile)
 >>>>>>> laraxot/dev

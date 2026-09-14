@@ -13,7 +13,11 @@ attributi/relazioni Eloquent — vale per `pivot` come per le colonne.
 ## Fix suite test User in locale (2026-08-30)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - TestCase: `prepareShared<nome progetto>SqliteForTesting()` in setUp (ambiente senza
+=======
+- TestCase: `prepareSharedFixcitySqliteForTesting()` in setUp (ambiente senza
+>>>>>>> laraxot/dev
 =======
 - TestCase: `prepareSharedFixcitySqliteForTesting()` in setUp (ambiente senza
 >>>>>>> laraxot/dev

@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\TeamUser;
 use Modules\Xot\Filament\Resources\XotBaseResource;

@@ -20,7 +20,11 @@ related:
   - ../../../../config/permission.php
   - ../../app/Models/Traits/HasRoles.php
 <<<<<<< HEAD
+<<<<<<< HEAD
   - ../../../<nome progetto>/docs/stories/19-15-retire-legacy-top-level-question-chart-resource.md
+=======
+  - ../../../Quaeris/docs/stories/19-15-retire-legacy-top-level-question-chart-resource.md
+>>>>>>> laraxot/dev
 =======
   - ../../../Quaeris/docs/stories/19-15-retire-legacy-top-level-question-chart-resource.md
 >>>>>>> laraxot/dev
@@ -144,7 +148,11 @@ Due conseguenze, opposte fra loro:
   `model_type` e' corretto: non e' quello il difetto.
 - Il difetto e' emerso durante la verifica di un guard `hasRole('super-admin')` su
 <<<<<<< HEAD
+<<<<<<< HEAD
   un widget Filament del modulo <nome progetto> (vedi story correlata): il guard funziona
+=======
+  un widget Filament del modulo Quaeris (vedi story correlata): il guard funziona
+>>>>>>> laraxot/dev
 =======
   un widget Filament del modulo Quaeris (vedi story correlata): il guard funziona
 >>>>>>> laraxot/dev
@@ -186,7 +194,11 @@ Due conseguenze, opposte fra loro:
 
 - Trovato il 2026-08-07 durante la verifica adversarial di un fix su
 <<<<<<< HEAD
+<<<<<<< HEAD
   `Modules/<nome progetto>`. Non e' un difetto di <nome progetto>: e' del layer di autorizzazione,
+=======
+  `Modules/Quaeris`. Non e' un difetto di Quaeris: e' del layer di autorizzazione,
+>>>>>>> laraxot/dev
 =======
   `Modules/Quaeris`. Non e' un difetto di Quaeris: e' del layer di autorizzazione,
 >>>>>>> laraxot/dev

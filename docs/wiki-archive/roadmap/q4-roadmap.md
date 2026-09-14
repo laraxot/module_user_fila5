@@ -23,7 +23,11 @@ related:
 ## Vision & Scope
 - Ensure `Modules/User/` is the canonical identity, auth, roles/permissions, teams, and profile layer.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Full compliance with Laraxot rules (Xot base classes, Filament 5 patterns, translations, strict types).
+=======
+- Full compliance with Laraxot rules (Xot base classes, Filament 4 patterns, translations, strict types).
+>>>>>>> laraxot/dev
 =======
 - Full compliance with Laraxot rules (Xot base classes, Filament 4 patterns, translations, strict types).
 >>>>>>> laraxot/dev
@@ -66,7 +70,11 @@ related:
 ## Vision & Scope
 - Ensure `Modules/User/` is the canonical identity, auth, roles/permissions, teams, and profile layer.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Full compliance with Laraxot rules (Xot base classes, Filament 5 patterns, translations, strict types).
+=======
+- Full compliance with Laraxot rules (Xot base classes, Filament 4 patterns, translations, strict types).
+>>>>>>> laraxot/dev
 =======
 - Full compliance with Laraxot rules (Xot base classes, Filament 4 patterns, translations, strict types).
 >>>>>>> laraxot/dev

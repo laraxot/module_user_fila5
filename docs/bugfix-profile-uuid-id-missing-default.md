@@ -13,7 +13,11 @@ chiamato da `XotComposer` su ogni pagina (view composer globale).
 ## Causa
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 La tabella `profiles` (connection `user`, db `<nome progetto>_user`) aveva `id` come
+=======
+La tabella `profiles` (connection `user`, db `workorder_user`) aveva `id` come
+>>>>>>> laraxot/dev
 =======
 La tabella `profiles` (connection `user`, db `workorder_user`) aveva `id` come
 >>>>>>> laraxot/dev

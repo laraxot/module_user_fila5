@@ -20,7 +20,11 @@ use function Safe\json_encode;
 uses(TestCase::class);
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function pestHasTeamsCreateTestUser(array $attributes = []): User
 {
@@ -50,7 +54,11 @@ function pestHasTeamsBootstrapFixture(): array
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $pivot
+=======
+ * @param array<string, mixed> $pivot
+>>>>>>> laraxot/dev
  */
 function pestHasTeamsAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -233,7 +241,11 @@ test('it correctly manages team permissions', function (): void {
 
 test('it handles edge cases', function (): void {
     ['user' => $user] = pestHasTeamsBootstrapFixture();
+<<<<<<< HEAD
     $newUser = new User;
+=======
+    $newUser = new User();
+>>>>>>> laraxot/dev
 
     Assert::assertFalse($newUser->belongsToTeams());
 

@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "spatie-permission-teams-laravel-13 spatie permission teams on laravel 13"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -35,7 +40,11 @@ Local package facts checked on 2026-05-05:
 - package requirement: PHP `^8.3`;
 - Laravel compatibility: `illuminate/* ^12.0|^13.0`;
 <<<<<<< HEAD
+<<<<<<< HEAD
 - official Spatie prerequisite table maps Laravel 13/13 to package `^7.0`.
+=======
+- official Spatie prerequisite table maps Laravel 12/13 to package `^7.0`.
+>>>>>>> laraxot/dev
 =======
 - official Spatie prerequisite table maps Laravel 12/13 to package `^7.0`.
 >>>>>>> laraxot/dev

@@ -165,7 +165,11 @@ To provide the most secure, flexible, and user-friendly authentication and autho
 
 ### Compatibility
 <<<<<<< HEAD
+<<<<<<< HEAD
 **NFR-016**: Must be compatible with Laravel 13.x
+=======
+**NFR-016**: Must be compatible with Laravel 12.x
+>>>>>>> laraxot/dev
 =======
 **NFR-016**: Must be compatible with Laravel 12.x
 >>>>>>> laraxot/dev
@@ -235,7 +239,11 @@ To provide the most secure, flexible, and user-friendly authentication and autho
 
 ### Compatibility
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Must work with Laravel 13.x
+=======
+1. Must work with Laravel 12.x
+>>>>>>> laraxot/dev
 =======
 1. Must work with Laravel 12.x
 >>>>>>> laraxot/dev

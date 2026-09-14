@@ -7,8 +7,11 @@ namespace Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResou
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
+<<<<<<< HEAD
 use function Safe\json_encode;
 
+=======
+>>>>>>> laraxot/dev
 class ViewSocialProvider extends XotBaseViewRecord
 {
     protected static string $resource = SocialProviderResource::class;

@@ -17,7 +17,11 @@ Il login dovrebbe apparire come in https://docs.italia.it/accounts/login/ - desi
 
 1. **Design Conforme**: Seguire le linee guida Bootstrap Italia / Design Comuni
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **Widget Filament 5**: Incorporare correttamente il widget Filament
+=======
+2. **Widget Filament 4**: Incorporare correttamente il widget Filament
+>>>>>>> laraxot/dev
 =======
 2. **Widget Filament 4**: Incorporare correttamente il widget Filament
 >>>>>>> laraxot/dev
@@ -67,7 +71,11 @@ Questa è la vista che deve renderizzare il form.
 ### Causa Root: Form Non Renderizzato
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il widget Filament 5 richiede che il **form venga esplicitamente renderizzato** nella vista Blade del widget.
+=======
+Il widget Filament 4 richiede che il **form venga esplicitamente renderizzato** nella vista Blade del widget.
+>>>>>>> laraxot/dev
 =======
 Il widget Filament 4 richiede che il **form venga esplicitamente renderizzato** nella vista Blade del widget.
 >>>>>>> laraxot/dev
@@ -107,7 +115,11 @@ Il widget Filament 4 richiede che il **form venga esplicitamente renderizzato** 
 ## 📐 Soluzione Architetturale
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Architettura Corretta Filament 5 Widgets
+=======
+### Architettura Corretta Filament 4 Widgets
+>>>>>>> laraxot/dev
 =======
 ### Architettura Corretta Filament 4 Widgets
 >>>>>>> laraxot/dev
@@ -406,7 +418,11 @@ return [
 **Problema**: Il form appare senza stile
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Soluzione**: Filament 5 usa Tailwind CSS. Verifica che il tema abbia:
+=======
+**Soluzione**: Filament 4 usa Tailwind CSS. Verifica che il tema abbia:
+>>>>>>> laraxot/dev
 =======
 **Soluzione**: Filament 4 usa Tailwind CSS. Verifica che il tema abbia:
 >>>>>>> laraxot/dev
@@ -417,7 +433,11 @@ return [
 ## 📚 Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament 5 Widgets Documentation](https://filamentphp.com/docs/4.x/widgets)
+=======
+- [Filament 4 Widgets Documentation](https://filamentphp.com/docs/4.x/widgets)
+>>>>>>> laraxot/dev
 =======
 - [Filament 4 Widgets Documentation](https://filamentphp.com/docs/4.x/widgets)
 >>>>>>> laraxot/dev

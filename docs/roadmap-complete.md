@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "roadmap-complete 🗺️ roadmap completa - modulo user"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -29,7 +34,11 @@ related:
 
 ### Scopo Principale
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il modulo **User** è il cuore dell'autenticazione, autorizzazione e gestione utenti della piattaforma <nome progetto>. Gestisce cittadini, operatori, amministratori con permessi granulari e profili personalizzabili.
+=======
+Il modulo **User** è il cuore dell'autenticazione, autorizzazione e gestione utenti della piattaforma FixCity. Gestisce cittadini, operatori, amministratori con permessi granulari e profili personalizzabili.
+>>>>>>> laraxot/dev
 =======
 Il modulo **User** è il cuore dell'autenticazione, autorizzazione e gestione utenti della piattaforma FixCity. Gestisce cittadini, operatori, amministratori con permessi granulari e profili personalizzabili.
 >>>>>>> laraxot/dev
@@ -435,7 +444,11 @@ La cartella `docs/` contiene ~300+ file con molti duplicati:
 ### Documentazione Correlata
 - [Roadmap Progetto](../../../docs/roadmap_project.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Modulo <nome progetto>](../../<nome progetto>/docs/roadmap.md)
+=======
+- [Modulo Fixcity](../../fixcity/docs/roadmap.md)
+>>>>>>> laraxot/dev
 =======
 - [Modulo Fixcity](../../fixcity/docs/roadmap.md)
 >>>>>>> laraxot/dev

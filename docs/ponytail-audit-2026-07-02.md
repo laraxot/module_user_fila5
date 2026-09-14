@@ -32,8 +32,13 @@ drafts provides no value over deletion.
   nothing references the `.to_xot` file by path or string.
 - `find Modules -name "*.to_xot"` — three other unrelated `.to_xot` files exist
 <<<<<<< HEAD
+<<<<<<< HEAD
   (`Modules/<nome progetto>/database/factories/ExtraFactory.to_xot`,
   `Modules/<nome progetto>/app/Models/Extra.to_xot`,
+=======
+  (`Modules/Quaeris/database/factories/ExtraFactory.to_xot`,
+  `Modules/Quaeris/app/Models/Extra.to_xot`,
+>>>>>>> laraxot/dev
 =======
   (`Modules/Quaeris/database/factories/ExtraFactory.to_xot`,
   `Modules/Quaeris/app/Models/Extra.to_xot`,

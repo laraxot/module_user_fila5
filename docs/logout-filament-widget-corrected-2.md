@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "logout-filament-widget-corrected-2 implementazione corretta del logout con widget filament"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -37,7 +42,11 @@ related:
 ## Introduzione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento descrive l'implementazione corretta del logout utilizzando un widget Filament, rispettando le convenzioni di <nome progetto> e la struttura di `XotBaseWidget`. L'approccio con widget Filament è particolarmente utile quando si desidera mantenere una pagina di conferma per il logout.
+=======
+Questo documento descrive l'implementazione corretta del logout utilizzando un widget Filament, rispettando le convenzioni di Quaeris e la struttura di `XotBaseWidget`. L'approccio con widget Filament è particolarmente utile quando si desidera mantenere una pagina di conferma per il logout.
+>>>>>>> laraxot/dev
 =======
 Questo documento descrive l'implementazione corretta del logout utilizzando un widget Filament, rispettando le convenzioni di Quaeris e la struttura di `XotBaseWidget`. L'approccio con widget Filament è particolarmente utile quando si desidera mantenere una pagina di conferma per il logout.
 >>>>>>> laraxot/dev
@@ -260,7 +269,11 @@ name('logout');
    - Utilizzare correttamente i componenti Filament
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **Convenzioni di <nome progetto> per i Widget**:
+=======
+2. **Convenzioni di Quaeris per i Widget**:
+>>>>>>> laraxot/dev
 =======
 2. **Convenzioni di Quaeris per i Widget**:
 >>>>>>> laraxot/dev
@@ -283,7 +296,11 @@ name('logout');
 3. **Manutenibilità**: Separa chiaramente la logica dalla presentazione.
 4. **Estensibilità**: Facilmente estensibile per aggiungere funzionalità aggiuntive.
 <<<<<<< HEAD
+<<<<<<< HEAD
 5. **Conformità alle convenzioni**: Segue le convenzioni di <nome progetto> per i widget Filament.
+=======
+5. **Conformità alle convenzioni**: Segue le convenzioni di Quaeris per i widget Filament.
+>>>>>>> laraxot/dev
 =======
 5. **Conformità alle convenzioni**: Segue le convenzioni di Quaeris per i widget Filament.
 >>>>>>> laraxot/dev

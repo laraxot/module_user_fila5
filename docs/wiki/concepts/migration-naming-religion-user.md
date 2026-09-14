@@ -8,9 +8,15 @@ updated: 2026-07-27
 qmd: "user module migration naming create table snake case one model no connection xotbase"
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/7"
 discussions:
   - "https://github.com/laraxot/<repo progetto>/discussions/8"
+=======
+  - "https://github.com/laraxot/base_workorder_fila5/issues/7"
+discussions:
+  - "https://github.com/laraxot/base_workorder_fila5/discussions/8"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_workorder_fila5/issues/7"
 discussions:

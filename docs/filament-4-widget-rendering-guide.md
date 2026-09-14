@@ -1,6 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "Guida Rendering Widget Filament 5 - Modulo User"
+=======
+title: "Guida Rendering Widget Filament 4 - Modulo User"
+>>>>>>> laraxot/dev
 =======
 title: "Guida Rendering Widget Filament 4 - Modulo User"
 >>>>>>> laraxot/dev
@@ -9,9 +13,15 @@ tags: [filament, widget, rendering, guide]
 created: 2026-07-14
 updated: 2026-07-14
 <<<<<<< HEAD
+<<<<<<< HEAD
 qmd: "Filament-5-widget-rendering-guide guida rendering widget Filament 5 - modulo user"
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+qmd: "filament-4-widget-rendering-guide guida rendering widget filament 4 - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 qmd: "filament-4-widget-rendering-guide guida rendering widget filament 4 - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
@@ -29,6 +39,7 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Guida Rendering Widget Filament 5 - Modulo User
 
 **Data**: 14 Ottobre 2025  
@@ -39,6 +50,8 @@ related:
 
 Questa guida spiega **PERCHÉ** e **COME** renderizzare correttamente i widget Filament 5 nelle view Blade, con focus sul LoginWidget.
 =======
+=======
+>>>>>>> laraxot/dev
 # Guida Rendering Widget Filament 4 - Modulo User
 
 **Data**: 14 Ottobre 2025  
@@ -48,6 +61,9 @@ Questa guida spiega **PERCHÉ** e **COME** renderizzare correttamente i widget F
 ## 🎯 Obiettivo
 
 Questa guida spiega **PERCHÉ** e **COME** renderizzare correttamente i widget Filament 4 nelle view Blade, con focus sul LoginWidget.
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## 📊 Il Problema
@@ -62,9 +78,15 @@ Il widget viene caricato ma **il form non appare**.
 ### Causa Root
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Filament 5 ha cambiato l'architettura dei widget rispetto a Filament 3:
 
 1. **Widget ≠ Livewire Component Standalone**: Un widget Filament 5 NON è un semplice componente Livewire
+=======
+Filament 4 ha cambiato l'architettura dei widget rispetto a Filament 3:
+
+1. **Widget ≠ Livewire Component Standalone**: Un widget Filament 4 NON è un semplice componente Livewire
+>>>>>>> laraxot/dev
 =======
 Filament 4 ha cambiato l'architettura dei widget rispetto a Filament 3:
 
@@ -167,7 +189,11 @@ class LoginWidget extends XotBaseWidget
 ### Perché `<x-filament-widgets::widget>`?
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Filament 5 Architecture**:
+=======
+**Filament 4 Architecture**:
+>>>>>>> laraxot/dev
 =======
 **Filament 4 Architecture**:
 >>>>>>> laraxot/dev
@@ -190,7 +216,11 @@ Senza il wrapper:
 ### Perché `{{ $this->form }}`?
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Filament 5 Form Rendering**:
+=======
+**Filament 4 Form Rendering**:
+>>>>>>> laraxot/dev
 =======
 **Filament 4 Form Rendering**:
 >>>>>>> laraxot/dev
@@ -433,8 +463,13 @@ class LoginWidget extends XotBaseWidget
 ## 📚 Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament 5 Widgets](https://filamentphp.com/docs/4.x/widgets)
 - [Filament 5 Forms](https://filamentphp.com/docs/4.x/forms)
+=======
+- [Filament 4 Widgets](https://filamentphp.com/docs/4.x/widgets)
+- [Filament 4 Forms](https://filamentphp.com/docs/4.x/forms)
+>>>>>>> laraxot/dev
 =======
 - [Filament 4 Widgets](https://filamentphp.com/docs/4.x/widgets)
 - [Filament 4 Forms](https://filamentphp.com/docs/4.x/forms)
@@ -445,7 +480,11 @@ class LoginWidget extends XotBaseWidget
 ## 🎯 Conclusione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Regola d'Oro**: Un widget Filament 5 è un componente complesso che richiede:
+=======
+**Regola d'Oro**: Un widget Filament 4 è un componente complesso che richiede:
+>>>>>>> laraxot/dev
 =======
 **Regola d'Oro**: Un widget Filament 4 è un componente complesso che richiede:
 >>>>>>> laraxot/dev

@@ -1,6 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "🔄 Migrazione da Filament 3 a Filament 5"
+=======
+title: "🔄 Migrazione da Filament 3 a Filament 4"
+>>>>>>> laraxot/dev
 =======
 title: "🔄 Migrazione da Filament 3 a Filament 4"
 >>>>>>> laraxot/dev
@@ -9,9 +13,15 @@ tags: [filament4, migration]
 created: 2026-07-14
 updated: 2026-07-14
 <<<<<<< HEAD
+<<<<<<< HEAD
 qmd: "filament4-migration 🔄 migrazione da filament 3 a Filament 5"
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+qmd: "filament4-migration 🔄 migrazione da filament 3 a filament 4"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 qmd: "filament4-migration 🔄 migrazione da filament 3 a filament 4"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
@@ -29,17 +39,23 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🔄 Migrazione da Filament 3 a Filament 5
 
 ## Panoramica
 
 Questo documento descrive le modifiche apportate durante la migrazione da Filament 3 a Filament 5, con particolare attenzione ai problemi di layout e visualizzazione.
 =======
+=======
+>>>>>>> laraxot/dev
 # 🔄 Migrazione da Filament 3 a Filament 4
 
 ## Panoramica
 
 Questo documento descrive le modifiche apportate durante la migrazione da Filament 3 a Filament 4, con particolare attenzione ai problemi di layout e visualizzazione.
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## 🚨 Problemi Risolti
@@ -50,9 +66,15 @@ Questo documento descrive le modifiche apportate durante la migrazione da Filame
 
 **Causa**: 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Filament 5 ha cambiato la struttura delle pagine di autenticazione
 - Il sistema aveva sia il logo nativo di Filament che un logo personalizzato
 - La configurazione del pannello non era aggiornata per Filament 5
+=======
+- Filament 4 ha cambiato la struttura delle pagine di autenticazione
+- Il sistema aveva sia il logo nativo di Filament che un logo personalizzato
+- La configurazione del pannello non era aggiornata per Filament 4
+>>>>>>> laraxot/dev
 =======
 - Filament 4 ha cambiato la struttura delle pagine di autenticazione
 - Il sistema aveva sia il logo nativo di Filament che un logo personalizzato
@@ -71,17 +93,23 @@ Questo documento descrive le modifiche apportate durante la migrazione da Filame
 **Causa**: 
 - Stili CSS non compatibili tra Filament 3 e 4
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Struttura HTML cambiata in Filament 5
 
 **Soluzione**:
 - Aggiornata la view personalizzata con gli stili corretti per Filament 5
 - Utilizzati i componenti nativi di Filament 5 per i form
 =======
+=======
+>>>>>>> laraxot/dev
 - Struttura HTML cambiata in Filament 4
 
 **Soluzione**:
 - Aggiornata la view personalizzata con gli stili corretti per Filament 4
 - Utilizzati i componenti nativi di Filament 4 per i form
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## 🔧 Modifiche Implementate
@@ -113,7 +141,11 @@ Questo documento descrive le modifiche apportate durante la migrazione da Filame
         <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-md">
             <div class="bg-white px-6 py-8 shadow sm:rounded-lg sm:px-10">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 {{-- Form di login Filament 5 --}}
+=======
+                {{-- Form di login Filament 4 --}}
+>>>>>>> laraxot/dev
 =======
                 {{-- Form di login Filament 4 --}}
 >>>>>>> laraxot/dev
@@ -169,7 +201,11 @@ if (! Module::has('Cms')) {
 ### Struttura Pagine di Autenticazione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Aspetto | Filament 3 | Filament 5 |
+=======
+| Aspetto | Filament 3 | Filament 4 |
+>>>>>>> laraxot/dev
 =======
 | Aspetto | Filament 3 | Filament 4 |
 >>>>>>> laraxot/dev
@@ -182,7 +218,11 @@ if (! Module::has('Cms')) {
 ### Configurazione Pannello
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Aspetto | Filament 3 | Filament 5 |
+=======
+| Aspetto | Filament 3 | Filament 4 |
+>>>>>>> laraxot/dev
 =======
 | Aspetto | Filament 3 | Filament 4 |
 >>>>>>> laraxot/dev
@@ -192,7 +232,11 @@ if (! Module::has('Cms')) {
 | **Componenti** | `filament::` | `filament-panels::` |
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🚀 Best Practices per Filament 5
+=======
+## 🚀 Best Practices per Filament 4
+>>>>>>> laraxot/dev
 =======
 ## 🚀 Best Practices per Filament 4
 >>>>>>> laraxot/dev
@@ -201,7 +245,11 @@ if (! Module::has('Cms')) {
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // ✅ Corretto - Filament 5
+=======
+// ✅ Corretto - Filament 4
+>>>>>>> laraxot/dev
 =======
 // ✅ Corretto - Filament 4
 >>>>>>> laraxot/dev
@@ -221,7 +269,11 @@ class Login extends \Filament\Auth\Pages\Login
 
 ```blade
 <<<<<<< HEAD
+<<<<<<< HEAD
 {{-- ✅ Corretto - Filament 5 --}}
+=======
+{{-- ✅ Corretto - Filament 4 --}}
+>>>>>>> laraxot/dev
 =======
 {{-- ✅ Corretto - Filament 4 --}}
 >>>>>>> laraxot/dev
@@ -239,7 +291,11 @@ class Login extends \Filament\Auth\Pages\Login
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // ✅ Corretto - Filament 5
+=======
+// ✅ Corretto - Filament 4
+>>>>>>> laraxot/dev
 =======
 // ✅ Corretto - Filament 4
 >>>>>>> laraxot/dev
@@ -273,7 +329,11 @@ php artisan route:list --name=filament
 ## 📚 Risorse Utili
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Filament 5](https://filamentphp.com/docs/4.x)
+=======
+- [Documentazione Filament 4](https://filamentphp.com/docs/4.x)
+>>>>>>> laraxot/dev
 =======
 - [Documentazione Filament 4](https://filamentphp.com/docs/4.x)
 >>>>>>> laraxot/dev
@@ -287,7 +347,11 @@ Dopo la migrazione:
 - ✅ Input sono visibili e funzionanti
 - ✅ Layout è responsive e moderno
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ Compatibilità completa con Filament 5
+=======
+- ✅ Compatibilità completa con Filament 4
+>>>>>>> laraxot/dev
 =======
 - ✅ Compatibilità completa con Filament 4
 >>>>>>> laraxot/dev

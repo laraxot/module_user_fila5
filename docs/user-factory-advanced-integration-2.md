@@ -1,6 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "UserFactory Advanced Integration - Modulo User & <nome progetto>"
+=======
+title: "UserFactory Advanced Integration - Modulo User & Quaeris"
+>>>>>>> laraxot/dev
 =======
 title: "UserFactory Advanced Integration - Modulo User & Quaeris"
 >>>>>>> laraxot/dev
@@ -9,9 +13,15 @@ tags: [user, factory, advanced, integration]
 created: 2026-07-14
 updated: 2026-07-14
 <<<<<<< HEAD
+<<<<<<< HEAD
 qmd: "user-factory-advanced-integration-2 userfactory advanced integration - modulo user & <nome progetto>"
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+qmd: "user-factory-advanced-integration-2 userfactory advanced integration - modulo user & quaeris"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 qmd: "user-factory-advanced-integration-2 userfactory advanced integration - modulo user & quaeris"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
@@ -29,7 +39,11 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # UserFactory Advanced Integration - Modulo User & <nome progetto>
+=======
+# UserFactory Advanced Integration - Modulo User & Quaeris
+>>>>>>> laraxot/dev
 =======
 # UserFactory Advanced Integration - Modulo User & Quaeris
 >>>>>>> laraxot/dev
@@ -44,7 +58,11 @@ Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integr
 ```
 BaseUser (User Module)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── User (<nome progetto>) - STI Base + Business Logic
+=======
+├── User (Quaeris) - STI Base + Business Logic
+>>>>>>> laraxot/dev
 =======
 ├── User (Quaeris) - STI Base + Business Logic
 >>>>>>> laraxot/dev
@@ -56,7 +74,11 @@ BaseUser (User Module)
 ### Cross-Module Compatibility Matrix
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 | BaseUser Field | <nome progetto> User | Business Logic | Factory Support |
+=======
+| BaseUser Field | Quaeris User | Business Logic | Factory Support |
+>>>>>>> laraxot/dev
 =======
 | BaseUser Field | Quaeris User | Business Logic | Factory Support |
 >>>>>>> laraxot/dev
@@ -127,7 +149,11 @@ User::factory()->gdprCompliant()->create();
 protected $connection = 'user';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // <nome progetto> User (Healthcare Domain)
+=======
+// Quaeris User (Healthcare Domain)
+>>>>>>> laraxot/dev
 =======
 // Quaeris User (Healthcare Domain)
 >>>>>>> laraxot/dev
@@ -162,7 +188,11 @@ public function test_cross_module_compatibility()
     expect($user->email_verified_at)->toBeInstanceOf(Carbon::class);
     
 <<<<<<< HEAD
+<<<<<<< HEAD
 // <nome progetto> domain contracts
+=======
+// Quaeris domain contracts
+>>>>>>> laraxot/dev
 =======
 // Quaeris domain contracts
 >>>>>>> laraxot/dev
@@ -312,7 +342,11 @@ public function run(): void
 - **Testability**: Comprehensive user scenario testing
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### For <nome progetto> Module
+=======
+### For Quaeris Module
+>>>>>>> laraxot/dev
 =======
 ### For Quaeris Module
 >>>>>>> laraxot/dev
@@ -335,15 +369,21 @@ public function run(): void
 ## Link Documentazione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### <nome progetto> Module
 - [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
 - [Implementation Completed](../../<nome progetto>/docs/factories/userfactory_implementation_completed.md)
 - [Model States](../../<nome progetto>/docs/models/states.md)
 =======
+=======
+>>>>>>> laraxot/dev
 ### Quaeris Module
 - [Advanced Improvements Analysis](../../Quaeris/docs/factories/userfactory-advanced-improvements-analysis.md)
 - [Implementation Completed](../../Quaeris/docs/factories/userfactory_implementation_completed.md)
 - [Model States](../../Quaeris/docs/models/states.md)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ### User Module
@@ -353,7 +393,11 @@ public function run(): void
 
 ### Root Documentation  
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
+=======
+- [UserFactory Quaeris Integration](../../../../../docs/userfactory_Quaeris_integration.md)
+>>>>>>> laraxot/dev
 =======
 - [UserFactory Quaeris Integration](../../../../../docs/userfactory_Quaeris_integration.md)
 >>>>>>> laraxot/dev

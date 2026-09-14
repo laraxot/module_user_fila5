@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "spatie-permission-team-model-not-configured spatie permission team model not configured"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -52,15 +57,21 @@ Aggiunta la voce `models.team` in tutti i profili config attivi, per evitare dri
 - `../../../../../config/permission.php`
 - `../../../../../config/localhost/permission.php`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `../../../../../config/local/<nome progetto>/permission.php`
 - `../../../../../config/local/<nome progetto>am/permission.php`
 - `../../../../../config/eu/<nome progetto>/permission.php`
 - `../../../../../config/test/<nome progetto>/permission.php`
 =======
+=======
+>>>>>>> laraxot/dev
 - `../../../../../config/local/fixcity/permission.php`
 - `../../../../../config/local/fixcityam/permission.php`
 - `../../../../../config/eu/fixcity/permission.php`
 - `../../../../../config/test/fixcity/permission.php`
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 Valore impostato:

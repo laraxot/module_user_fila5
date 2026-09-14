@@ -2,7 +2,11 @@
 
 ## Bootstrap
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Repo: `/var/www/_bases/<repo progetto>/laravel`
+=======
+- Repo: `/var/www/_bases/base_restaurant_fila5/laravel`
+>>>>>>> laraxot/dev
 =======
 - Repo: `/var/www/_bases/base_restaurant_fila5/laravel`
 >>>>>>> laraxot/dev
@@ -12,7 +16,11 @@
 
 ## Diagnose
 <<<<<<< HEAD
+<<<<<<< HEAD
 - PHPStan 485 errori: 309 `class.notFound` (test `User`, `Profile`, `<nome progetto>`), duplicati import
+=======
+- PHPStan 485 errori: 309 `class.notFound` (test `User`, `Profile`, `Quaeris`), duplicati import
+>>>>>>> laraxot/dev
 =======
 - PHPStan 485 errori: 309 `class.notFound` (test `User`, `Profile`, `Quaeris`), duplicati import
 >>>>>>> laraxot/dev
@@ -30,7 +38,11 @@
 - `BaseProfile.php`: `$incrementing=false`, `$keyType='string'`, UUID `id` in `booted()`
 - Test batch: `use Modules\User\Models\User;` in 8 file `tests/`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `<nome progetto>` → `User` sostituito nel codice
+=======
+- `Quaeris` → `User` sostituito nel codice
+>>>>>>> laraxot/dev
 =======
 - `Quaeris` → `User` sostituito nel codice
 >>>>>>> laraxot/dev

@@ -56,7 +56,11 @@ describe('SendOtpByUserAction', function () {
 
                 return ($routes['mail'] ?? null) === $user->email
                     && $notification->user->id === $user->id
+<<<<<<< HEAD
                     && $notification->code === 'random-otp-12';
+=======
+                    && 'random-otp-12' === $notification->code;
+>>>>>>> laraxot/dev
             }
         );
 

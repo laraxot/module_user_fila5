@@ -107,7 +107,11 @@ The User module provides comprehensive authentication, authorization, roles, per
 - **Performance**: Reduce API response time by 30%
 - **Documentation**: 100% API coverage
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Compatibility**: Support Laravel 13+ and PHP 8.3+
+=======
+- **Compatibility**: Support Laravel 12+ and PHP 8.3+
+>>>>>>> laraxot/dev
 =======
 - **Compatibility**: Support Laravel 12+ and PHP 8.3+
 >>>>>>> laraxot/dev
@@ -116,7 +120,11 @@ The User module provides comprehensive authentication, authorization, roles, per
 - **Required**: None (core module)
 - **Dependent Modules**: All other modules
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **External Dependencies**: Laravel 13, PHP 8.3+
+=======
+- **External Dependencies**: Laravel 12, PHP 8.3+
+>>>>>>> laraxot/dev
 =======
 - **External Dependencies**: Laravel 12, PHP 8.3+
 >>>>>>> laraxot/dev

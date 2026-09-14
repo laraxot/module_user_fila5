@@ -115,7 +115,11 @@ Segue rigorosamente Laraxot:
 - [[../../../../../../laravel/Modules/Xot/docs/wiki/overviews/xot-module|Xot Module]] — XotBaseModel base
 - [[../../../../../../laravel/Modules/Lang/docs/wiki/overviews/lang-module|Lang Module]] — LangBase per traduzioni
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [[../../../../../../laravel/Modules/<nome progetto>/docs/wiki/index|<nome progetto> Module]] — usa User per owner_id ticket
+=======
+- [[../../../../../../laravel/Modules/Fixcity/docs/wiki/index|Fixcity Module]] — usa User per owner_id ticket
+>>>>>>> laraxot/dev
 =======
 - [[../../../../../../laravel/Modules/Fixcity/docs/wiki/index|Fixcity Module]] — usa User per owner_id ticket
 >>>>>>> laraxot/dev

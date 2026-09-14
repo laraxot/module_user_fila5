@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "duplicate-methods analisi metodi duplicati - modulo user"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -124,6 +129,7 @@ public function team(): BelongsTo
 - `Article::user` - [Modules/Blog/app/Models/Article.php:393](Modules/Blog/app/Models/Article.php) (Modulo: Blog)
 - `Comment::user` - [Modules/Blog/app/Models/Comment.php:102](Modules/Blog/app/Models/Comment.php) (Modulo: Blog)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Activity::user` - [Modules/<nome progetto>/app/Models/Activity.php:58](Modules/<nome progetto>/app/Models/Activity.php) (Modulo: <nome progetto>)
 - `PushSubscription::user` - [Modules/<nome progetto>/app/Models/PushSubscription.php:64](Modules/<nome progetto>/app/Models/PushSubscription.php) (Modulo: <nome progetto>)
 - `Ticket::user` - [Modules/<nome progetto>/app/Models/Ticket.php:572](Modules/<nome progetto>/app/Models/Ticket.php) (Modulo: <nome progetto>)
@@ -132,6 +138,8 @@ public function team(): BelongsTo
 - `TicketHour::user` - [Modules/<nome progetto>/app/Models/TicketHour.php:62](Modules/<nome progetto>/app/Models/TicketHour.php) (Modulo: <nome progetto>)
 - `TicketSubscriber::user` - [Modules/<nome progetto>/app/Models/TicketSubscriber.php:51](Modules/<nome progetto>/app/Models/TicketSubscriber.php) (Modulo: <nome progetto>)
 =======
+=======
+>>>>>>> laraxot/dev
 - `Activity::user` - [Modules/Fixcity/app/Models/Activity.php:58](Modules/Fixcity/app/Models/Activity.php) (Modulo: Fixcity)
 - `PushSubscription::user` - [Modules/Fixcity/app/Models/PushSubscription.php:64](Modules/Fixcity/app/Models/PushSubscription.php) (Modulo: Fixcity)
 - `Ticket::user` - [Modules/Fixcity/app/Models/Ticket.php:572](Modules/Fixcity/app/Models/Ticket.php) (Modulo: Fixcity)
@@ -139,6 +147,9 @@ public function team(): BelongsTo
 - `TicketComment::user` - [Modules/Fixcity/app/Models/TicketComment.php:68](Modules/Fixcity/app/Models/TicketComment.php) (Modulo: Fixcity)
 - `TicketHour::user` - [Modules/Fixcity/app/Models/TicketHour.php:62](Modules/Fixcity/app/Models/TicketHour.php) (Modulo: Fixcity)
 - `TicketSubscriber::user` - [Modules/Fixcity/app/Models/TicketSubscriber.php:51](Modules/Fixcity/app/Models/TicketSubscriber.php) (Modulo: Fixcity)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - `TaskComment::user` - [Modules/Job/app/Models/TaskComment.php:70](Modules/Job/app/Models/TaskComment.php) (Modulo: Job)
 - `RatingMorph::user` - [Modules/Rating/app/Models/RatingMorph.php:104](Modules/Rating/app/Models/RatingMorph.php) (Modulo: Rating)
@@ -224,7 +235,11 @@ public function getAvatarUrl(): string
 **Trovato in  file2 file**:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Category::getFullNameAttribute` - [Modules/<nome progetto>/app/Models/Category.php:174](Modules/<nome progetto>/app/Models/Category.php) (Modulo: <nome progetto>)
+=======
+- `Category::getFullNameAttribute` - [Modules/Fixcity/app/Models/Category.php:174](Modules/Fixcity/app/Models/Category.php) (Modulo: Fixcity)
+>>>>>>> laraxot/dev
 =======
 - `Category::getFullNameAttribute` - [Modules/Fixcity/app/Models/Category.php:174](Modules/Fixcity/app/Models/Category.php) (Modulo: Fixcity)
 >>>>>>> laraxot/dev
@@ -263,7 +278,11 @@ public function getFullNameAttribute(): string
 **Trovato in  file4 file**:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Ticket::getSlugOptions` - [Modules/<nome progetto>/app/Models/Ticket.php:234](Modules/<nome progetto>/app/Models/Ticket.php) (Modulo: <nome progetto>)
+=======
+- `Ticket::getSlugOptions` - [Modules/Fixcity/app/Models/Ticket.php:234](Modules/Fixcity/app/Models/Ticket.php) (Modulo: Fixcity)
+>>>>>>> laraxot/dev
 =======
 - `Ticket::getSlugOptions` - [Modules/Fixcity/app/Models/Ticket.php:234](Modules/Fixcity/app/Models/Ticket.php) (Modulo: Fixcity)
 >>>>>>> laraxot/dev
@@ -304,7 +323,11 @@ public function getSlugOptions(): SlugOptions
 **Trovato in  file2 file**:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Ticket::owner` - [Modules/<nome progetto>/app/Models/Ticket.php:313](Modules/<nome progetto>/app/Models/Ticket.php) (Modulo: <nome progetto>)
+=======
+- `Ticket::owner` - [Modules/Fixcity/app/Models/Ticket.php:313](Modules/Fixcity/app/Models/Ticket.php) (Modulo: Fixcity)
+>>>>>>> laraxot/dev
 =======
 - `Ticket::owner` - [Modules/Fixcity/app/Models/Ticket.php:313](Modules/Fixcity/app/Models/Ticket.php) (Modulo: Fixcity)
 >>>>>>> laraxot/dev
@@ -565,6 +588,7 @@ public function getRows(): array
 - `BaseMorphPivot::casts` - [Modules/Comment/app/Models/BaseMorphPivot.php:54](Modules/Comment/app/Models/BaseMorphPivot.php) (Modulo: Comment)
 - `BasePivot::casts` - [Modules/Comment/app/Models/BasePivot.php:41](Modules/Comment/app/Models/BasePivot.php) (Modulo: Comment)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Activity::casts` - [Modules/<nome progetto>/app/Models/Activity.php:50](Modules/<nome progetto>/app/Models/Activity.php) (Modulo: <nome progetto>)
 - `BaseModel::casts` - [Modules/<nome progetto>/app/Models/BaseModel.php:47](Modules/<nome progetto>/app/Models/BaseModel.php) (Modulo: <nome progetto>)
 - `BasePivot::casts` - [Modules/<nome progetto>/app/Models/BasePivot.php:49](Modules/<nome progetto>/app/Models/BasePivot.php) (Modulo: <nome progetto>)
@@ -575,6 +599,8 @@ public function getRows(): array
 - `Ticket::casts` - [Modules/<nome progetto>/app/Models/Ticket.php:188](Modules/<nome progetto>/app/Models/Ticket.php) (Modulo: <nome progetto>)
 - `TicketCategory::casts` - [Modules/<nome progetto>/app/Models/TicketCategory.php:51](Modules/<nome progetto>/app/Models/TicketCategory.php) (Modulo: <nome progetto>)
 =======
+=======
+>>>>>>> laraxot/dev
 - `Activity::casts` - [Modules/Fixcity/app/Models/Activity.php:50](Modules/Fixcity/app/Models/Activity.php) (Modulo: Fixcity)
 - `BaseModel::casts` - [Modules/Fixcity/app/Models/BaseModel.php:47](Modules/Fixcity/app/Models/BaseModel.php) (Modulo: Fixcity)
 - `BasePivot::casts` - [Modules/Fixcity/app/Models/BasePivot.php:49](Modules/Fixcity/app/Models/BasePivot.php) (Modulo: Fixcity)
@@ -584,6 +610,9 @@ public function getRows(): array
 - `PushSubscription::casts` - [Modules/Fixcity/app/Models/PushSubscription.php:58](Modules/Fixcity/app/Models/PushSubscription.php) (Modulo: Fixcity)
 - `Ticket::casts` - [Modules/Fixcity/app/Models/Ticket.php:188](Modules/Fixcity/app/Models/Ticket.php) (Modulo: Fixcity)
 - `TicketCategory::casts` - [Modules/Fixcity/app/Models/TicketCategory.php:51](Modules/Fixcity/app/Models/TicketCategory.php) (Modulo: Fixcity)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - `BaseModel::casts` - [Modules/Gdpr/app/Models/BaseModel.php:58](Modules/Gdpr/app/Models/BaseModel.php) (Modulo: Gdpr)
 - `BaseMorphPivot::casts` - [Modules/Gdpr/app/Models/BaseMorphPivot.php:67](Modules/Gdpr/app/Models/BaseMorphPivot.php) (Modulo: Gdpr)
@@ -767,7 +796,11 @@ public function scopeWithExtraAttributes(Builder $query): Builder
 **Trovato in  file4 file**:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Ticket::profile` - [Modules/<nome progetto>/app/Models/Ticket.php:562](Modules/<nome progetto>/app/Models/Ticket.php) (Modulo: <nome progetto>)
+=======
+- `Ticket::profile` - [Modules/Fixcity/app/Models/Ticket.php:562](Modules/Fixcity/app/Models/Ticket.php) (Modulo: Fixcity)
+>>>>>>> laraxot/dev
 =======
 - `Ticket::profile` - [Modules/Fixcity/app/Models/Ticket.php:562](Modules/Fixcity/app/Models/Ticket.php) (Modulo: Fixcity)
 >>>>>>> laraxot/dev
@@ -862,8 +895,13 @@ public function users(): HasMany
 - `SaveFooterConfigAction::execute` - [Modules/Cms/app/Actions/SaveFooterConfigAction.php:14](Modules/Cms/app/Actions/SaveFooterConfigAction.php) (Modulo: Cms)
 - `SaveHeadernavConfigAction::execute` - [Modules/Cms/app/Actions/SaveHeadernavConfigAction.php:12](Modules/Cms/app/Actions/SaveHeadernavConfigAction.php) (Modulo: Cms)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `ChangeStatus::execute` - [Modules/<nome progetto>/app/Actions/ChangeStatus.php:12](Modules/<nome progetto>/app/Actions/ChangeStatus.php) (Modulo: <nome progetto>)
 - `GenerateTicketsAction::execute` - [Modules/<nome progetto>/app/Actions/GenerateTicketsAction.php:24](Modules/<nome progetto>/app/Actions/GenerateTicketsAction.php) (Modulo: <nome progetto>)
+=======
+- `ChangeStatus::execute` - [Modules/Fixcity/app/Actions/ChangeStatus.php:12](Modules/Fixcity/app/Actions/ChangeStatus.php) (Modulo: Fixcity)
+- `GenerateTicketsAction::execute` - [Modules/Fixcity/app/Actions/GenerateTicketsAction.php:24](Modules/Fixcity/app/Actions/GenerateTicketsAction.php) (Modulo: Fixcity)
+>>>>>>> laraxot/dev
 =======
 - `ChangeStatus::execute` - [Modules/Fixcity/app/Actions/ChangeStatus.php:12](Modules/Fixcity/app/Actions/ChangeStatus.php) (Modulo: Fixcity)
 - `GenerateTicketsAction::execute` - [Modules/Fixcity/app/Actions/GenerateTicketsAction.php:24](Modules/Fixcity/app/Actions/GenerateTicketsAction.php) (Modulo: Fixcity)

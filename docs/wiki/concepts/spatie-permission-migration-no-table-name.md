@@ -6,7 +6,11 @@ tags: [spatie, migration, xot-base-migration, model-has-role, config]
 updated: 2026-07-27
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/7"
+=======
+  - "https://github.com/laraxot/base_workorder_fila5/issues/7"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_workorder_fila5/issues/7"
 >>>>>>> laraxot/dev

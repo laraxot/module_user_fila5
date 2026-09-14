@@ -16,7 +16,11 @@ related:
 
 ## Current Issue
 <<<<<<< HEAD
+<<<<<<< HEAD
 The admin UI for users (`/<nome progetto>/admin/users`) shows entries but the list is hidden by CSS rules applied to the datatable wrapper. The rows appear as text nodes without actual row styling, making the list unreadable.
+=======
+The admin UI for users (`/fixcity/admin/users`) shows entries but the list is hidden by CSS rules applied to the datatable wrapper. The rows appear as text nodes without actual row styling, making the list unreadable.
+>>>>>>> laraxot/dev
 =======
 The admin UI for users (`/fixcity/admin/users`) shows entries but the list is hidden by CSS rules applied to the datatable wrapper. The rows appear as text nodes without actual row styling, making the list unreadable.
 >>>>>>> laraxot/dev
@@ -33,7 +37,11 @@ The admin UI for users (`/fixcity/admin/users`) shows entries but the list is hi
 
 ## Verification
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Open `/<nome progetto>/admin/users` and confirm each user row displays avatar, name, email, role, and actions.
+=======
+- Open `/fixcity/admin/users` and confirm each user row displays avatar, name, email, role, and actions.
+>>>>>>> laraxot/dev
 =======
 - Open `/fixcity/admin/users` and confirm each user row displays avatar, name, email, role, and actions.
 >>>>>>> laraxot/dev

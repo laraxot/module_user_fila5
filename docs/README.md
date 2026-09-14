@@ -69,6 +69,7 @@ Per evitare crash dei parallel workers su analisi massive, usare sempre:
 `php -d memory_limit=-1 ./vendor/bin/phpstan analyse [target] --memory-limit=-1`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Profiles migration governance (<nome progetto>)
 
 **Owner schema = <nome progetto>** (`main_module`), non User:
@@ -77,6 +78,8 @@ Per evitare crash dei parallel workers su analisi massive, usare sempre:
 - [wiki/concepts/profile-migration-uuid-contract.md](./wiki/concepts/profile-migration-uuid-contract.md)
 - Migrazione canonica: `<nome progetto>/database/migrations/2026_07_27_111500_create_profiles_table.php`
 =======
+=======
+>>>>>>> laraxot/dev
 ### Profiles migration governance (workorder)
 
 **Owner schema = WorkOrder** (`main_module`), non User:
@@ -84,6 +87,9 @@ Per evitare crash dei parallel workers su analisi massive, usare sempre:
 - [profile-schema-ownership.md](../WorkOrder/docs/profile-schema-ownership.md)
 - [wiki/concepts/profile-migration-uuid-contract.md](./wiki/concepts/profile-migration-uuid-contract.md)
 - Migrazione canonica: `WorkOrder/database/migrations/2026_07_27_111500_create_profiles_table.php`
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - Duplicati User archiviati in `database/migrations/_bak/*.merged`
 

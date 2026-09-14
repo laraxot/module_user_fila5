@@ -119,9 +119,13 @@ This document outlines a comprehensive strategy for implementing a generic moder
       protected static ?string $model = User::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       public static function getFormSchema(): array
 =======
       public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+      public static function getFormSchema(): array
 >>>>>>> laraxot/dev
       {
           return [

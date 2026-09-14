@@ -736,7 +736,11 @@ $membership = Membership::where('team_id', $team->id)
 ### Compatibilità
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ Laravel 13.x
+=======
+- ✅ Laravel 12.x
+>>>>>>> laraxot/dev
 =======
 - ✅ Laravel 12.x
 >>>>>>> laraxot/dev

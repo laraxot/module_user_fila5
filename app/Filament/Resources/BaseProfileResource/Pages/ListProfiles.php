@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\BaseProfileResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
@@ -13,6 +14,9 @@ use Filament\Tables\Filters\TernaryFilter;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Resources\BaseProfileResource;
 use Modules\Xot\Datas\XotData;
+=======
+use Modules\User\Filament\Resources\BaseProfileResource;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 /**
@@ -21,6 +25,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListProfiles extends XotBaseListRecords
 {
     protected static string $resource = BaseProfileResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, Tables\Columns\Column>
@@ -101,4 +106,6 @@ class ListProfiles extends XotBaseListRecords
                 ),
         ];
     }
+=======
+>>>>>>> laraxot/dev
 }

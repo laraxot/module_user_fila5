@@ -29,6 +29,7 @@ related:
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
 - GitHub: [#272](https://github.com/laraxot/<repo progetto>/issues/272) / [D#273](https://github.com/laraxot/<repo progetto>/discussions/273)
 
@@ -43,6 +44,8 @@ related:
 - errore: `table profiles has no column named uuid` in `XotData::getProfileModelByUserId()` dopo login/registrazione
 - causa: tabella `profiles` legacy su `<nome progetto>_data.sqlite` senza colonna `uuid`, mentre `BaseProfile::booted()` la valorizza in insert
 =======
+=======
+>>>>>>> laraxot/dev
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
 
@@ -56,6 +59,9 @@ related:
 ## [2026-06-04] bugfix | profiles.uuid su connection fixcity (sqlite locale)
 - errore: `table profiles has no column named uuid` in `XotData::getProfileModelByUserId()` dopo login/registrazione
 - causa: tabella `profiles` legacy su `fixcity_data.sqlite` senza colonna `uuid`, mentre `BaseProfile::booted()` la valorizza in insert
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 - ~~fix operativo con `--path`~~ **storico — vietato oggi**; canonico: `php artisan migrate` ([dati sacri](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
 - verifica: `getProfileModelByUserId()` crea profilo con `uuid`; schema sqlite include indice `profiles_uuid_index`
@@ -85,7 +91,11 @@ related:
 - aggiunte sezioni operative: best practices, bad practices, false friends, checklist e link ufficiali verificati.
 - aggiornato `index.md` con il nuovo concetto.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ingest eseguito in QMD index `<nome progetto>` (collection `wiki` aggiornata).
+=======
+- ingest eseguito in QMD index `fixcity` (collection `wiki` aggiornata).
+>>>>>>> laraxot/dev
 =======
 - ingest eseguito in QMD index `fixcity` (collection `wiki` aggiornata).
 >>>>>>> laraxot/dev
@@ -98,7 +108,11 @@ related:
   idempotente (ALTER path).
 - verifica:
 <<<<<<< HEAD
+<<<<<<< HEAD
   ~~`migrate ... --force`~~ — **vietato**; owner `profiles` ora <nome progetto>; usare `php artisan migrate` senza `--force` ([dati sacri](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
+=======
+  ~~`migrate ... --force`~~ — **vietato**; owner `profiles` ora Fixcity; usare `php artisan migrate` senza `--force` ([dati sacri](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
+>>>>>>> laraxot/dev
 =======
   ~~`migrate ... --force`~~ — **vietato**; owner `profiles` ora Fixcity; usare `php artisan migrate` senza `--force` ([dati sacri](../../../../docs/wiki/rules/data-sacred-no-destructive-db.md))
 >>>>>>> laraxot/dev
@@ -119,7 +133,11 @@ related:
 - rimosso `database/migrations/2026_04_27_000000_add_credits_to_profiles_table.php`
   per violazione regola "1 modello = 1 migrazione owner".
 <<<<<<< HEAD
+<<<<<<< HEAD
 - chiarito boundary: il contratto `profiles` e' owner <nome progetto>; User non deve patchare schema `profiles`.
+=======
+- chiarito boundary: il contratto `profiles` e' owner Fixcity; User non deve patchare schema `profiles`.
+>>>>>>> laraxot/dev
 =======
 - chiarito boundary: il contratto `profiles` e' owner Fixcity; User non deve patchare schema `profiles`.
 >>>>>>> laraxot/dev
@@ -185,7 +203,11 @@ related:
 - Folio: `name('notifications')`; vietato `area-personale.notifiche`
 - `user:super-admin`: `--email` + ask + fallback WSL (no Laravel Prompts)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Profiles: owner <nome progetto> `2026_06_10_123000_create_profiles_table` — vedi profile-migration-uuid-contract
+=======
+- Profiles: owner Fixcity `2026_06_10_123000_create_profiles_table` — vedi profile-migration-uuid-contract
+>>>>>>> laraxot/dev
 =======
 - Profiles: owner Fixcity `2026_06_10_123000_create_profiles_table` — vedi profile-migration-uuid-contract
 >>>>>>> laraxot/dev

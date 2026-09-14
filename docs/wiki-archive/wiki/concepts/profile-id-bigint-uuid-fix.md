@@ -32,7 +32,11 @@ insert into profiles (user_id, uuid, ...) — senza id
 ## Fix (2026-07-27)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Owner **<nome progetto>** (`main_module`): `2026_07_27_111500_create_profiles_table.php`
+=======
+Owner **WorkOrder** (`main_module`): `2026_07_27_111500_create_profiles_table.php`
+>>>>>>> laraxot/dev
 =======
 Owner **WorkOrder** (`main_module`): `2026_07_27_111500_create_profiles_table.php`
 >>>>>>> laraxot/dev
@@ -43,7 +47,11 @@ Owner **WorkOrder** (`main_module`): `2026_07_27_111500_create_profiles_table.ph
 - Duplicati User in `_bak/*.merged`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Vedi [<nome progetto> profile-schema-ownership](../../../<nome progetto>/docs/profile-schema-ownership.md).
+=======
+Vedi [WorkOrder profile-schema-ownership](../../../WorkOrder/docs/profile-schema-ownership.md).
+>>>>>>> laraxot/dev
 =======
 Vedi [WorkOrder profile-schema-ownership](../../../WorkOrder/docs/profile-schema-ownership.md).
 >>>>>>> laraxot/dev

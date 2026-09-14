@@ -9,7 +9,11 @@ issues:
   - "https://github.com/provtv/module_user_fila5/issues/16"
 discussions:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/provtv/<repo progetto>/discussions/204"
+=======
+  - "https://github.com/provtv/base_ptv_fila5/discussions/204"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/provtv/base_ptv_fila5/discussions/204"
 >>>>>>> laraxot/dev
@@ -31,9 +35,15 @@ Un tree dirty o un remote dietro/avanti **non** è sincronizzato, anche se l’a
 |------|-----|
 | Issue owner | https://github.com/provtv/module_user_fila5/issues/16 |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Discussion | https://github.com/provtv/<repo progetto>/discussions/204 |
 | Hub base issue | https://github.com/provtv/<repo progetto>/issues/203 |
 | Hub base discussion | https://github.com/provtv/<repo progetto>/discussions/204 |
+=======
+| Discussion | https://github.com/provtv/base_ptv_fila5/discussions/204 |
+| Hub base issue | https://github.com/provtv/base_ptv_fila5/issues/203 |
+| Hub base discussion | https://github.com/provtv/base_ptv_fila5/discussions/204 |
+>>>>>>> laraxot/dev
 =======
 | Discussion | https://github.com/provtv/base_ptv_fila5/discussions/204 |
 | Hub base issue | https://github.com/provtv/base_ptv_fila5/issues/203 |

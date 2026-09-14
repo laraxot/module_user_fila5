@@ -1,6 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "User Module - Migrazione a Filament 5"
+=======
+title: "User Module - Migrazione a Filament 4"
+>>>>>>> laraxot/dev
 =======
 title: "User Module - Migrazione a Filament 4"
 >>>>>>> laraxot/dev
@@ -9,9 +13,15 @@ tags: [migration, filament]
 created: 2026-07-14
 updated: 2026-07-14
 <<<<<<< HEAD
+<<<<<<< HEAD
 qmd: "migration-Filament-5 user module - migrazione a Filament 5"
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+qmd: "migration-filament-4 user module - migrazione a filament 4"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 qmd: "migration-filament-4 user module - migrazione a filament 4"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
@@ -29,15 +39,21 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # User Module - Migrazione a Filament 5
 
 ## Panoramica User Module
 Il modulo User è **critico** per sicurezza, autenticazione e autorizzazione. La migrazione a Filament 5 deve essere gestita con **massima cautela** per non compromettere l'accesso al sistema.
 =======
+=======
+>>>>>>> laraxot/dev
 # User Module - Migrazione a Filament 4
 
 ## Panoramica User Module
 Il modulo User è **critico** per sicurezza, autenticazione e autorizzazione. La migrazione a Filament 4 deve essere gestita con **massima cautela** per non compromettere l'accesso al sistema.
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## 🔄 Modifiche Richieste per la Migrazione
@@ -46,7 +62,11 @@ Il modulo User è **critico** per sicurezza, autenticazione e autorizzazione. La
 **Problemi attuali**: LanguageEnum rimosso, test coverage perduti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Filament 5 - Enhanced UserResource:**
+=======
+**Filament 4 - Enhanced UserResource:**
+>>>>>>> laraxot/dev
 =======
 **Filament 4 - Enhanced UserResource:**
 >>>>>>> laraxot/dev
@@ -416,7 +436,11 @@ class UserResource extends Resource
 
 ### 2. Team Management con Nested Resources
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Filament 5 - Team/User relationship management:**
+=======
+**Filament 4 - Team/User relationship management:**
+>>>>>>> laraxot/dev
 =======
 **Filament 4 - Team/User relationship management:**
 >>>>>>> laraxot/dev
@@ -464,7 +488,11 @@ class TeamUserResource extends Resource
 
 ### 3. Enhanced Security Dashboard
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Filament 5 - Static Table Data per security monitoring:**
+=======
+**Filament 4 - Static Table Data per security monitoring:**
+>>>>>>> laraxot/dev
 =======
 **Filament 4 - Static Table Data per security monitoring:**
 >>>>>>> laraxot/dev
@@ -777,7 +805,11 @@ class UserAnalyticsService
 **Raccomandazione**: **POSTICIPARE** finché:
 1. ✅ Altri moduli migrati con successo
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. ✅ Team ha esperienza completa con Filament 5
+=======
+2. ✅ Team ha esperienza completa con Filament 4
+>>>>>>> laraxot/dev
 =======
 2. ✅ Team ha esperienza completa con Filament 4
 >>>>>>> laraxot/dev

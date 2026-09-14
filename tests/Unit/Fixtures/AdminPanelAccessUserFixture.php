@@ -22,7 +22,11 @@ final class AdminPanelAccessUserFixture extends BaseUser
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<int, string>|Collection<int, string>  $roles
+=======
+     * @param array<int, string>|Collection<int, string> $roles
+>>>>>>> laraxot/dev
      */
     public function hasRole($roles, ?string $guard = null): bool
     {

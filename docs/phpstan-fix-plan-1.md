@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan-fix-plan-1 phpstan analysis - user module (jan 2026)"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -52,7 +57,11 @@ This confirms that the project is using a version of Filament where Forms seem t
 - *Self*: "Maybe `XotBaseSection` expects `Filament\Schemas\Components\Component`?"
 - *Counter*: "Yes, `XotBaseSection` extends `Filament\Schemas\Components\Section`. So children should probably be `Schemas` components if we are building a Schema, not a Form."
 <<<<<<< HEAD
+<<<<<<< HEAD
 - *Hypothesis*: In Filament 5 (Laraxot version), `Forms` might be merged into `Schemas` or distinct. `XotBaseResource` works with `Filament\Schemas\Schema`.
+=======
+- *Hypothesis*: In Filament 4 (Laraxot version), `Forms` might be merged into `Schemas` or distinct. `XotBaseResource` works with `Filament\Schemas\Schema`.
+>>>>>>> laraxot/dev
 =======
 - *Hypothesis*: In Filament 4 (Laraxot version), `Forms` might be merged into `Schemas` or distinct. `XotBaseResource` works with `Filament\Schemas\Schema`.
 >>>>>>> laraxot/dev

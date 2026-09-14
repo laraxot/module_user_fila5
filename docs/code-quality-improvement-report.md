@@ -9,9 +9,15 @@ qmd: "code quality baseline PHPStan Pest strict types Laraxot User"
 story: STORY-001
 issues:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - "https://github.com/laraxot/<repo progetto>/issues/46"
 discussions:
   - "https://github.com/laraxot/<repo progetto>/discussions/47"
+=======
+  - "https://github.com/laraxot/base_techplanner_fila5/issues/46"
+discussions:
+  - "https://github.com/laraxot/base_techplanner_fila5/discussions/47"
+>>>>>>> laraxot/dev
 =======
   - "https://github.com/laraxot/base_techplanner_fila5/issues/46"
 discussions:

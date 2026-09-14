@@ -26,7 +26,11 @@ related:
 | **Canon** | [Xot second-brain-local-discipline.md](../../../../Xot/docs/wiki/concepts/second-brain-local-discipline.md) |
 | **Harness moduli** | [ai-harness-module-discipline.md](../../../../docs/wiki/concepts/ai-harness-module-discipline.md) |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | **Tips 001–022** | [hackernoon map](../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-<nome progetto>-map.md) |
+=======
+| **Tips 001–022** | [hackernoon map](../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) |
+>>>>>>> laraxot/dev
 =======
 | **Tips 001–022** | [hackernoon map](../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md) |
 >>>>>>> laraxot/dev

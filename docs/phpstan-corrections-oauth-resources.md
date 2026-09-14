@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan-corrections-oauth-resources phpstan corrections - oauth resources"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -34,7 +39,11 @@ related:
 ### OauthAccessTokenResource.php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### Correzioni Namespace Filament 5
+=======
+#### Correzioni Namespace Filament 4
+>>>>>>> laraxot/dev
 =======
 #### Correzioni Namespace Filament 4
 >>>>>>> laraxot/dev
@@ -51,7 +60,11 @@ related:
 ### OauthAuthCodeResource.php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### Correzioni Namespace Filament 5
+=======
+#### Correzioni Namespace Filament 4
+>>>>>>> laraxot/dev
 =======
 #### Correzioni Namespace Filament 4
 >>>>>>> laraxot/dev
@@ -65,7 +78,11 @@ related:
 ### OauthRefreshTokenResource.php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### Correzioni Namespace Filament 5
+=======
+#### Correzioni Namespace Filament 4
+>>>>>>> laraxot/dev
 =======
 #### Correzioni Namespace Filament 4
 >>>>>>> laraxot/dev
@@ -77,9 +94,15 @@ related:
 
 #### Correzione Type di `$navigationIcon`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Problema: PHP 8.3 richiede che il tipo di `$navigationIcon` nella resource sia compatibile con `Filament\Resources\Resource`, che in Filament 5 usa `BackedEnum|string|null`.
 - Correzione prevista: aggiornare la property in `OauthClientResource` per usare il tipo `BackedEnum|string|null`, mantenendo il valore stringa esistente (`'heroicon-o-key'`).
 - Motivazione: allineare la firma al contratto Filament 5 e garantire compatibilità futura con possibili enum di icone, senza cambiare la UI.
+=======
+- Problema: PHP 8.3 richiede che il tipo di `$navigationIcon` nella resource sia compatibile con `Filament\Resources\Resource`, che in Filament 4 usa `BackedEnum|string|null`.
+- Correzione prevista: aggiornare la property in `OauthClientResource` per usare il tipo `BackedEnum|string|null`, mantenendo il valore stringa esistente (`'heroicon-o-key'`).
+- Motivazione: allineare la firma al contratto Filament 4 e garantire compatibilità futura con possibili enum di icone, senza cambiare la UI.
+>>>>>>> laraxot/dev
 =======
 - Problema: PHP 8.3 richiede che il tipo di `$navigationIcon` nella resource sia compatibile con `Filament\Resources\Resource`, che in Filament 4 usa `BackedEnum|string|null`.
 - Correzione prevista: aggiornare la property in `OauthClientResource` per usare il tipo `BackedEnum|string|null`, mantenendo il valore stringa esistente (`'heroicon-o-key'`).
@@ -108,7 +131,11 @@ protected function getHeaderActions(): array
 ## 🎯 Pattern Applicati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Pattern 1: Namespace Filament 5
+=======
+### Pattern 1: Namespace Filament 4
+>>>>>>> laraxot/dev
 =======
 ### Pattern 1: Namespace Filament 4
 >>>>>>> laraxot/dev
@@ -118,7 +145,11 @@ use Filament\Forms\Components\Section;
 use Filament\Tables\Actions\DeleteAction;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // ✅ CORRETTO - Filament 5
+=======
+// ✅ CORRETTO - Filament 4
+>>>>>>> laraxot/dev
 =======
 // ✅ CORRETTO - Filament 4
 >>>>>>> laraxot/dev
@@ -154,9 +185,15 @@ TextColumn::make('name')
 ## 📚 Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament 5 Migration Guide](../../xot/docs/Filament-5-migration-guide.md)
 - [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
 - [Filament 5 Actions Namespace](./Filament-5-actions-namespace.md)
+=======
+- [Filament 4 Migration Guide](../../xot/docs/filament-4-migration-guide.md)
+- [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
+- [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
+>>>>>>> laraxot/dev
 =======
 - [Filament 4 Migration Guide](../../xot/docs/filament-4-migration-guide.md)
 - [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)

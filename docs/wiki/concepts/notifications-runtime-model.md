@@ -25,7 +25,11 @@ related:
 `Modules\User\Models\Notification` estende `Illuminate\Notifications\DatabaseNotification`.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Connessione: `user` (`<nome progetto>_user`)
+=======
+- Connessione: `user` (`fixcity_user`)
+>>>>>>> laraxot/dev
 =======
 - Connessione: `user` (`fixcity_user`)
 >>>>>>> laraxot/dev

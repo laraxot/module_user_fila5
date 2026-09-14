@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "profiles-ownership-boundary-rule profiles ownership boundary rule"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -28,7 +33,11 @@ related:
 ## Regola
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Nel contesto Laraxot di questo repository, il contratto schema di `profiles` e' owner del modulo <nome progetto>.
+=======
+Nel contesto Laraxot di questo repository, il contratto schema di `profiles` e' owner del modulo Fixcity.
+>>>>>>> laraxot/dev
 =======
 Nel contesto Laraxot di questo repository, il contratto schema di `profiles` e' owner del modulo Fixcity.
 >>>>>>> laraxot/dev
@@ -49,7 +58,11 @@ Nel contesto Laraxot di questo repository, il contratto schema di `profiles` e' 
 
 - [profiles uuid single migration rule](../../../../../docs/wiki/concepts/profiles-uuid-single-migration-rule.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [<nome progetto> profiles uuid contract](../../../../<nome progetto>/docs/wiki/concepts/profiles-uuid-contract.md)
+=======
+- [fixcity profiles uuid contract](../../../../Fixcity/docs/wiki/concepts/profiles-uuid-contract.md)
+>>>>>>> laraxot/dev
 =======
 - [fixcity profiles uuid contract](../../../../Fixcity/docs/wiki/concepts/profiles-uuid-contract.md)
 >>>>>>> laraxot/dev

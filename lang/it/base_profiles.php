@@ -7,6 +7,17 @@ return [
         'id' => ['label' => 'id'],
         'name' => ['label' => 'name'],
         'created_at' => ['label' => 'created_at'],
+<<<<<<< HEAD
+=======
+        'user' => [
+            'name' => ['label' => 'user.name'],
+        ],
+        'first_name' => ['label' => 'first_name'],
+        'last_name' => ['label' => 'last_name'],
+        'email' => ['label' => 'email'],
+        'is_active' => ['label' => 'is_active'],
+        'photo' => ['label' => 'photo'],
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],

@@ -61,7 +61,11 @@ Il widget `LoginWidget` (e più in generale la classe base `XotBaseWidget`) pres
 
 ### Analisi Tecnica
 <<<<<<< HEAD
+<<<<<<< HEAD
 In Filament 5 (e v3), i componenti che usano `InteractsWithForms` necessitano di una chiamata a `$this->form->fill()` durante la fase di `mount()`. 
+=======
+In Filament 4 (e v3), i componenti che usano `InteractsWithForms` necessitano di una chiamata a `$this->form->fill()` durante la fase di `mount()`. 
+>>>>>>> laraxot/dev
 =======
 In Filament 4 (e v3), i componenti che usano `InteractsWithForms` necessitano di una chiamata a `$this->form->fill()` durante la fase di `mount()`. 
 >>>>>>> laraxot/dev

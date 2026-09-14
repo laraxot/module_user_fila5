@@ -717,7 +717,11 @@ public function authenticate(array $credentials): bool
 **Solution**: Use guard clauses and early returns
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔧 Filament 5 Compliance Issues
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
 =======
 ## 🔧 Filament 4 Compliance Issues
 >>>>>>> laraxot/dev
@@ -1058,7 +1062,11 @@ public function authenticate(array $credentials): bool
 **Solution**: Use guard clauses and early returns
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔧 Filament 5 Compliance Issues
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
 =======
 ## 🔧 Filament 4 Compliance Issues
 >>>>>>> laraxot/dev
@@ -1399,7 +1407,11 @@ public function authenticate(array $credentials): bool
 **Solution**: Use guard clauses and early returns
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔧 Filament 5 Compliance Issues
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
 =======
 ## 🔧 Filament 4 Compliance Issues
 >>>>>>> laraxot/dev
@@ -1740,7 +1752,11 @@ public function authenticate(array $credentials): bool
 **Solution**: Use guard clauses and early returns
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔧 Filament 5 Compliance Issues
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
 =======
 ## 🔧 Filament 4 Compliance Issues
 >>>>>>> laraxot/dev
@@ -2311,7 +2327,11 @@ public function authenticate(array $credentials): bool
 **Solution**: Use guard clauses and early returns
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔧 Filament 5 Compliance Issues
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
 =======
 ## 🔧 Filament 4 Compliance Issues
 >>>>>>> laraxot/dev
@@ -2811,7 +2831,11 @@ public function authenticate(array $credentials): bool
 **Solution**: Use guard clauses and early returns
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔧 Filament 5 Compliance Issues
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
 =======
 ## 🔧 Filament 4 Compliance Issues
 >>>>>>> laraxot/dev

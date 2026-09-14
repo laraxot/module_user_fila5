@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "model-inheritance-fixes-4 correzioni ereditarietà modelli - modulo user"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -191,7 +196,11 @@ Per verificare che non ci siano più modelli che estendono direttamente `Model`:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd /var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/User
+=======
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
 =======
 cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 >>>>>>> laraxot/dev
@@ -204,7 +213,11 @@ Dopo le modifiche, eseguire:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd /var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/User
+=======
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
 =======
 cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 >>>>>>> laraxot/dev
