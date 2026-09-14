@@ -12,6 +12,8 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 /**
  * Modules\User\Models\PersonalAccessToken.
  *
+ * @use HasXotFactory<\Modules\User\Database\Factories\PersonalAccessTokenFactory>
+ *
  * @property int         $id
  * @property string      $tokenable_type
  * @property int         $tokenable_id
@@ -40,7 +42,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class PersonalAccessToken extends Model
 {
-    /** @use HasXotFactory<Illuminate\Database\Eloquent\Factories\Factory<static>> */
+    /** @use HasXotFactory<\Modules\User\Database\Factories\PersonalAccessTokenFactory> */
     use HasXotFactory;
 
     protected $connection = 'user';

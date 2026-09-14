@@ -28,6 +28,8 @@ use Webmozart\Assert\Assert;
 /**
  * Modules\User\Models\Role.
  *
+ * @use HasXotFactory<\Modules\User\Database\Factories\RoleFactory>
+ *
  * @property int                                 $id
  * @property string                              $uuid
  * @property string|null                         $team_id

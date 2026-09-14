@@ -11,6 +11,7 @@ use Filament\Panel;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
@@ -47,6 +48,8 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * This is the base user model that provides the core authentication and authorization
  * functionality for the application. It extends Laravel's Authenticatable class
  * and implements the required interfaces for Filament and multi-tenancy.
+ *
+ * @use HasXotFactory<\Modules\User\Database\Factories\UserFactory>
  *
  * @property Collection<int, OauthClient>                              $clients
  * @property int|null                                                  $clients_count
@@ -141,7 +144,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     }
     use HasUuids;
 
-    /** @use HasXotFactory<Factory<static>> */
+    /** @use HasXotFactory<\Modules\User\Database\Factories\UserFactory> */
     use HasXotFactory;
 
     use InteractsWithMedia;
