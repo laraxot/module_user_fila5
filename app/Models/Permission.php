@@ -16,9 +16,10 @@ use Spatie\Permission\Models\Permission as SpatiePermission;
 use Webmozart\Assert\Assert;
 
 /**
- * @property int                         $id
+ * @property int $id
  *
  * @use HasXotFactory<\Modules\User\Database\Factories\PermissionFactory>
+ *
  * @property string                      $name
  * @property string                      $guard_name
  * @property Carbon|null                 $created_at
