@@ -37,7 +37,11 @@ describe('GetNewPasswordAction', function (): void {
         $firstHash = (string) $freshModel0->password;
 
         $refreshedUser = $user->fresh();
+<<<<<<< HEAD
         if ($refreshedUser === null) {
+=======
+        if (null === $refreshedUser) {
+>>>>>>> laraxot/dev
             Assert::fail('User refresh failed.');
         }
         $secondPlain = app(GetNewPasswordAction::class)->execute($refreshedUser);

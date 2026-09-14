@@ -1,6 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "Compatibilità Filament 5.x - Modulo User"
+=======
+title: "Compatibilità Filament 4.x - Modulo User"
+>>>>>>> laraxot/dev
 =======
 title: "Compatibilità Filament 4.x - Modulo User"
 >>>>>>> laraxot/dev
@@ -9,9 +13,15 @@ tags: [filament, compatibility]
 created: 2026-07-14
 updated: 2026-07-14
 <<<<<<< HEAD
+<<<<<<< HEAD
 qmd: "Filament-5x-compatibility compatibilità Filament 5.x - modulo user"
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+qmd: "filament-4x-compatibility compatibilità filament 4.x - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 qmd: "filament-4x-compatibility compatibilità filament 4.x - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
@@ -29,7 +39,11 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Compatibilità Filament 5.x - Modulo User
+=======
+# Compatibilità Filament 4.x - Modulo User
+>>>>>>> laraxot/dev
 =======
 # Compatibilità Filament 4.x - Modulo User
 >>>>>>> laraxot/dev
@@ -50,7 +64,11 @@ related:
 
 ##### 1.1 Metodi Astratti Mancanti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **File**: `Modules\<nome progetto>\Models\Profile`
+=======
+- **File**: `Modules\Fixcity\Models\Profile`
+>>>>>>> laraxot/dev
 =======
 - **File**: `Modules\Fixcity\Models\Profile`
 >>>>>>> laraxot/dev
@@ -172,7 +190,11 @@ if (is_object($notifiable)) {
 - **Livello PHPStan**: 9 (pulito)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔄 Breaking Changes Filament 5.x
+=======
+## 🔄 Breaking Changes Filament 4.x
+>>>>>>> laraxot/dev
 =======
 ## 🔄 Breaking Changes Filament 4.x
 >>>>>>> laraxot/dev
@@ -189,7 +211,11 @@ if (is_object($notifiable)) {
 
 ### 3. External Dependencies
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Cambio**: Pacchetti esterni devono essere compatibili con Filament 5
+=======
+- **Cambio**: Pacchetti esterni devono essere compatibili con Filament 4
+>>>>>>> laraxot/dev
 =======
 - **Cambio**: Pacchetti esterni devono essere compatibili con Filament 4
 >>>>>>> laraxot/dev
@@ -201,7 +227,11 @@ if (is_object($notifiable)) {
 ### Moduli Testati
 - ✅ **User**: Autenticazione, profili, ruoli
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ **<nome progetto>**: Ticket management, workflow
+=======
+- ✅ **Fixcity**: Ticket management, workflow
+>>>>>>> laraxot/dev
 =======
 - ✅ **Fixcity**: Ticket management, workflow
 >>>>>>> laraxot/dev
@@ -223,7 +253,11 @@ if (is_object($notifiable)) {
 - [x] Implementazione controlli di sicurezza
 - [x] Aggiornamento documentazione
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] Test di compatibilità Filament 5.x
+=======
+- [x] Test di compatibilità Filament 4.x
+>>>>>>> laraxot/dev
 =======
 - [x] Test di compatibilità Filament 4.x
 >>>>>>> laraxot/dev
@@ -233,7 +267,11 @@ if (is_object($notifiable)) {
 ## 🔗 Collegamenti Utili
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Guida Ufficiale Filament 5.x](https://filamentphp.com/docs/4.x/upgrade-guide)
+=======
+- [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
+>>>>>>> laraxot/dev
 =======
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 >>>>>>> laraxot/dev
@@ -268,7 +306,11 @@ if (is_object($notifiable)) {
 
 *Ultimo aggiornamento: 2025-01-27*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Completato con successo - Filament 5.0.20 operativo*
+=======
+*Completato con successo - Filament 4.0.20 operativo*
+>>>>>>> laraxot/dev
 =======
 *Completato con successo - Filament 4.0.20 operativo*
 >>>>>>> laraxot/dev

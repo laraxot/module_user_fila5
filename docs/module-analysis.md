@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "module-analysis user module - comprehensive analysis"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -30,7 +35,11 @@ related:
 **Type**: Authentication & Authorization Module  
 **Status**: ✅ Active  
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Framework**: Laravel 13.x + Filament 5.x  
+=======
+**Framework**: Laravel 12.x + Filament 4.x  
+>>>>>>> laraxot/dev
 =======
 **Framework**: Laravel 12.x + Filament 4.x  
 >>>>>>> laraxot/dev
@@ -87,7 +96,11 @@ User module integrates with LimeSurvey through:
 - Xot module (for base classes)
 - Spatie/laravel-permission for authorization
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Filament 5.x for admin interface
+=======
+- Filament 4.x for admin interface
+>>>>>>> laraxot/dev
 =======
 - Filament 4.x for admin interface
 >>>>>>> laraxot/dev

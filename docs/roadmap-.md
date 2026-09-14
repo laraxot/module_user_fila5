@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "roadmap- user module - complete roadmap 2026"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -170,7 +175,11 @@ requiresPasswordChange()   // Security policy enforcement
 
 ### **Issue #1: UUID Trait Conflict** ✅ RESOLVED
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Resolution**: Temporarily disabled HasApiTokens, implemented Laravel 13 native UUID
+=======
+**Resolution**: Temporarily disabled HasApiTokens, implemented Laravel 12 native UUID
+>>>>>>> laraxot/dev
 =======
 **Resolution**: Temporarily disabled HasApiTokens, implemented Laravel 12 native UUID
 >>>>>>> laraxot/dev
@@ -204,7 +213,11 @@ requiresPasswordChange()   // Security policy enforcement
 
 // In BaseUser.php:
 <<<<<<< HEAD
+<<<<<<< HEAD
 use HasUuids;  // Laravel 13 native
+=======
+use HasUuids;  // Laravel 12 native
+>>>>>>> laraxot/dev
 =======
 use HasUuids;  // Laravel 12 native
 >>>>>>> laraxot/dev
@@ -218,7 +231,11 @@ trait HasPassportTokens {
     public function initializeHasUniqueStringIds(): void
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Bridge to Laravel 13 UUID system
+=======
+        // Bridge to Laravel 12 UUID system
+>>>>>>> laraxot/dev
 =======
         // Bridge to Laravel 12 UUID system
 >>>>>>> laraxot/dev
@@ -444,7 +461,11 @@ public function redirectToProvider(string $provider)
 ### **UUID Strategy Decision** ✅
 **Date**: 2026-01-02
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Decision**: Use Laravel 13 native UUID with custom Passport bridge
+=======
+**Decision**: Use Laravel 12 native UUID with custom Passport bridge
+>>>>>>> laraxot/dev
 =======
 **Decision**: Use Laravel 12 native UUID with custom Passport bridge
 >>>>>>> laraxot/dev
@@ -611,7 +632,11 @@ User Module
 ### 🔧 Technical Excellence
 - [x] **PHPStan Level 10**: 0 errori
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] **Filament 5.x**: Compatibilità completa
+=======
+- [x] **Filament 4.x**: Compatibilità completa
+>>>>>>> laraxot/dev
 =======
 - [x] **Filament 4.x**: Compatibilità completa
 >>>>>>> laraxot/dev
@@ -785,7 +810,11 @@ User Module
 - [x] Error handling improvement
 - [x] Code documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] Filament 5.x compatibility
+=======
+- [x] Filament 4.x compatibility
+>>>>>>> laraxot/dev
 =======
 - [x] Filament 4.x compatibility
 >>>>>>> laraxot/dev
@@ -845,7 +874,11 @@ User Module
 ### 📊 Technical Metrics
 - [x] **PHPStan Level 10**: 0 errori ✅
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] **Filament 5.x**: Compatibile ✅
+=======
+- [x] **Filament 4.x**: Compatibile ✅
+>>>>>>> laraxot/dev
 =======
 - [x] **Filament 4.x**: Compatibile ✅
 >>>>>>> laraxot/dev
@@ -986,7 +1019,11 @@ User Module
 ## 🔗 INTEGRATION POINTS
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 🎫 <nome progetto> Module
+=======
+### 🎫 Fixcity Module
+>>>>>>> laraxot/dev
 =======
 ### 🎫 Fixcity Module
 >>>>>>> laraxot/dev

@@ -5,9 +5,15 @@ tags: [filament, compatibility]
 created: 2026-07-14
 updated: 2026-07-14
 <<<<<<< HEAD
+<<<<<<< HEAD
 qmd: "Filament-5x-compatibility-2 filament resources - user"
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+qmd: "filament-4x-compatibility-2 filament resources - user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 qmd: "filament-4x-compatibility-2 filament resources - user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]

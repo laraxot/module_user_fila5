@@ -1,6 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "User — provision MySQL locale marco + database <nome progetto>_user"
+=======
+title: "User — provision MySQL locale marco + database fixcity_user"
+>>>>>>> laraxot/dev
 =======
 title: "User — provision MySQL locale marco + database fixcity_user"
 >>>>>>> laraxot/dev
@@ -9,7 +13,11 @@ tags: [user, mysql, local, env, database]
 created: 2026-06-12
 updated: 2026-06-12
 <<<<<<< HEAD
+<<<<<<< HEAD
 qmd: "User module local mysql marco <nome progetto>_user provision migrate login"
+=======
+qmd: "User module local mysql marco fixcity_user provision migrate login"
+>>>>>>> laraxot/dev
 =======
 qmd: "User module local mysql marco fixcity_user provision migrate login"
 >>>>>>> laraxot/dev
@@ -33,7 +41,11 @@ related:
 `Access denied for user 'marco'@'localhost'` sulla connessione `user` → credenziali/host MySQL.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 `Table '<nome progetto>_user.users' doesn't exist` → migrazioni non eseguite su `--database=user`.
+=======
+`Table 'fixcity_user.users' doesn't exist` → migrazioni non eseguite su `--database=user`.
+>>>>>>> laraxot/dev
 =======
 `Table 'fixcity_user.users' doesn't exist` → migrazioni non eseguite su `--database=user`.
 >>>>>>> laraxot/dev
@@ -49,6 +61,7 @@ cd laravel && php artisan migrate --database=user
 ## Variabili `.env`
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Chiave | Esempio <nome progetto> |
 |--------|-----------------|
 | `DB_DATABASE_USER` | `<nome progetto>_user` |
@@ -61,6 +74,8 @@ La connessione Laravel `user` è mappata da `config/local/<nome progetto>/databa
 
 Dopo migrate, creare l'utente FO (email da `<nome progetto>_ADMIN_EMAIL`) con password nota per dev — es. via factory/`XotData::getUserClass()`.
 =======
+=======
+>>>>>>> laraxot/dev
 | Chiave | Esempio Fixcity |
 |--------|-----------------|
 | `DB_DATABASE_USER` | `fixcity_user` |
@@ -72,6 +87,9 @@ La connessione Laravel `user` è mappata da `config/local/fixcity/database.php` 
 ## Utente applicativo
 
 Dopo migrate, creare l'utente FO (email da `FIXCITY_ADMIN_EMAIL`) con password nota per dev — es. via factory/`XotData::getUserClass()`.
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 ## Canon

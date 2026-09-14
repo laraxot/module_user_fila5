@@ -87,7 +87,11 @@ ALTER TABLE users ADD CONSTRAINT fk_sso_provider
   "client_secret": "your-client-secret",
   "scopes": "openid email profile",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "redirect_url": "https://app.<nome progetto>.it/auth/callback/google"
+=======
+  "redirect_url": "https://app.fixcity.it/auth/callback/google"
+>>>>>>> laraxot/dev
 =======
   "redirect_url": "https://app.fixcity.it/auth/callback/google"
 >>>>>>> laraxot/dev
@@ -102,9 +106,15 @@ ALTER TABLE users ADD CONSTRAINT fk_sso_provider
 {
   "type": "saml",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "entity_id": "https://app.<nome progetto>.it",
   "metadata_url": "https://idp.provider.it/metadata.xml",
   "redirect_url": "https://app.<nome progetto>.it/auth/callback/spid"
+=======
+  "entity_id": "https://app.fixcity.it",
+  "metadata_url": "https://idp.provider.it/metadata.xml",
+  "redirect_url": "https://app.fixcity.it/auth/callback/spid"
+>>>>>>> laraxot/dev
 =======
   "entity_id": "https://app.fixcity.it",
   "metadata_url": "https://idp.provider.it/metadata.xml",
@@ -121,7 +131,11 @@ ALTER TABLE users ADD CONSTRAINT fk_sso_provider
 {
   "type": "oidc",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "client_id": "<nome progetto>-app",
+=======
+  "client_id": "fixcity-app",
+>>>>>>> laraxot/dev
 =======
   "client_id": "fixcity-app",
 >>>>>>> laraxot/dev
@@ -142,7 +156,11 @@ $spidProvider = SsoProvider::create([
     'display_name' => 'SPID',
     'type' => 'saml',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'entity_id' => 'https://app.<nome progetto>.it',
+=======
+    'entity_id' => 'https://app.fixcity.it',
+>>>>>>> laraxot/dev
 =======
     'entity_id' => 'https://app.fixcity.it',
 >>>>>>> laraxot/dev

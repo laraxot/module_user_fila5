@@ -172,7 +172,11 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Filament 5 Improvements
+=======
+## Filament 4 Improvements
+>>>>>>> laraxot/dev
 =======
 ## Filament 4 Improvements
 >>>>>>> laraxot/dev
@@ -188,7 +192,11 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 #### 1. Enhanced User Management
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Advanced user form with Filament 5
+=======
+// Advanced user form with Filament 4
+>>>>>>> laraxot/dev
 =======
 // Advanced user form with Filament 4
 >>>>>>> laraxot/dev
@@ -506,7 +514,11 @@ class ApiRateLimitingMiddleware
 1. **Performance Optimization**: Fix N+1 queries and add caching
 2. **Security Hardening**: Implement comprehensive security measures
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Filament Interface**: Upgrade to advanced Filament 5 features
+=======
+3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
 =======
 3. **Filament Interface**: Upgrade to advanced Filament 4 features
 >>>>>>> laraxot/dev
@@ -684,7 +696,11 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Filament 5 Improvements
+=======
+## Filament 4 Improvements
+>>>>>>> laraxot/dev
 =======
 ## Filament 4 Improvements
 >>>>>>> laraxot/dev
@@ -700,7 +716,11 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 #### 1. Enhanced User Management
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Advanced user form with Filament 5
+=======
+// Advanced user form with Filament 4
+>>>>>>> laraxot/dev
 =======
 // Advanced user form with Filament 4
 >>>>>>> laraxot/dev
@@ -1018,7 +1038,11 @@ class ApiRateLimitingMiddleware
 1. **Performance Optimization**: Fix N+1 queries and add caching
 2. **Security Hardening**: Implement comprehensive security measures
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Filament Interface**: Upgrade to advanced Filament 5 features
+=======
+3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
 =======
 3. **Filament Interface**: Upgrade to advanced Filament 4 features
 >>>>>>> laraxot/dev
@@ -1196,7 +1220,11 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Filament 5 Improvements
+=======
+## Filament 4 Improvements
+>>>>>>> laraxot/dev
 =======
 ## Filament 4 Improvements
 >>>>>>> laraxot/dev
@@ -1212,7 +1240,11 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 #### 1. Enhanced User Management
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Advanced user form with Filament 5
+=======
+// Advanced user form with Filament 4
+>>>>>>> laraxot/dev
 =======
 // Advanced user form with Filament 4
 >>>>>>> laraxot/dev
@@ -1530,7 +1562,11 @@ class ApiRateLimitingMiddleware
 1. **Performance Optimization**: Fix N+1 queries and add caching
 2. **Security Hardening**: Implement comprehensive security measures
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Filament Interface**: Upgrade to advanced Filament 5 features
+=======
+3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
 =======
 3. **Filament Interface**: Upgrade to advanced Filament 4 features
 >>>>>>> laraxot/dev
@@ -1708,7 +1744,11 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Filament 5 Improvements
+=======
+## Filament 4 Improvements
+>>>>>>> laraxot/dev
 =======
 ## Filament 4 Improvements
 >>>>>>> laraxot/dev
@@ -1724,7 +1764,11 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 #### 1. Enhanced User Management
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Advanced user form with Filament 5
+=======
+// Advanced user form with Filament 4
+>>>>>>> laraxot/dev
 =======
 // Advanced user form with Filament 4
 >>>>>>> laraxot/dev
@@ -2042,7 +2086,11 @@ class ApiRateLimitingMiddleware
 1. **Performance Optimization**: Fix N+1 queries and add caching
 2. **Security Hardening**: Implement comprehensive security measures
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Filament Interface**: Upgrade to advanced Filament 5 features
+=======
+3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
 =======
 3. **Filament Interface**: Upgrade to advanced Filament 4 features
 >>>>>>> laraxot/dev
@@ -2757,7 +2805,11 @@ class OptimizedUserQueries
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🚀 Modern Laravel 13 + PHP 8.3 Patterns
+=======
+## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
 =======
 ## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
 >>>>>>> laraxot/dev
@@ -3563,7 +3615,11 @@ class OptimizedUserQueries
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🚀 Modern Laravel 13 + PHP 8.3 Patterns
+=======
+## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
 =======
 ## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
 >>>>>>> laraxot/dev
@@ -4369,7 +4425,11 @@ class OptimizedUserQueries
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🚀 Modern Laravel 13 + PHP 8.3 Patterns
+=======
+## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
 =======
 ## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
 >>>>>>> laraxot/dev
@@ -5175,7 +5235,11 @@ class OptimizedUserQueries
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🚀 Modern Laravel 13 + PHP 8.3 Patterns
+=======
+## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
 =======
 ## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
 >>>>>>> laraxot/dev
@@ -5444,7 +5508,11 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Filament 5 Improvements
+=======
+## Filament 4 Improvements
+>>>>>>> laraxot/dev
 =======
 ## Filament 4 Improvements
 >>>>>>> laraxot/dev
@@ -5460,7 +5528,11 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 #### 1. Enhanced User Management
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Advanced user form with Filament 5
+=======
+// Advanced user form with Filament 4
+>>>>>>> laraxot/dev
 =======
 // Advanced user form with Filament 4
 >>>>>>> laraxot/dev
@@ -5778,7 +5850,11 @@ class ApiRateLimitingMiddleware
 1. **Performance Optimization**: Fix N+1 queries and add caching
 2. **Security Hardening**: Implement comprehensive security measures
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Filament Interface**: Upgrade to advanced Filament 5 features
+=======
+3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
 =======
 3. **Filament Interface**: Upgrade to advanced Filament 4 features
 >>>>>>> laraxot/dev
@@ -6493,7 +6569,11 @@ class OptimizedUserQueries
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🚀 Modern Laravel 13 + PHP 8.3 Patterns
+=======
+## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
 =======
 ## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
 >>>>>>> laraxot/dev
@@ -6625,7 +6705,11 @@ Il modulo User rappresenta la spina dorsale dell'applicazione e richiede particu
 
 ## Overview
 <<<<<<< HEAD
+<<<<<<< HEAD
 The User module provides comprehensive user management, authentication, authorization, and team-based access control for the <nome progetto> platform. It serves as the foundation for all user-related operations across the entire application.
+=======
+The User module provides comprehensive user management, authentication, authorization, and team-based access control for the Quaeris platform. It serves as the foundation for all user-related operations across the entire application.
+>>>>>>> laraxot/dev
 =======
 The User module provides comprehensive user management, authentication, authorization, and team-based access control for the Quaeris platform. It serves as the foundation for all user-related operations across the entire application.
 >>>>>>> laraxot/dev
@@ -6746,7 +6830,11 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Filament 5 Improvements
+=======
+## Filament 4 Improvements
+>>>>>>> laraxot/dev
 =======
 ## Filament 4 Improvements
 >>>>>>> laraxot/dev
@@ -6762,7 +6850,11 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 #### 1. Enhanced User Management
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Advanced user form with Filament 5
+=======
+// Advanced user form with Filament 4
+>>>>>>> laraxot/dev
 =======
 // Advanced user form with Filament 4
 >>>>>>> laraxot/dev
@@ -7080,7 +7172,11 @@ class ApiRateLimitingMiddleware
 1. **Performance Optimization**: Fix N+1 queries and add caching
 2. **Security Hardening**: Implement comprehensive security measures
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Filament Interface**: Upgrade to advanced Filament 5 features
+=======
+3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
 =======
 3. **Filament Interface**: Upgrade to advanced Filament 4 features
 >>>>>>> laraxot/dev
@@ -7776,7 +7872,11 @@ class OptimizedUserQueries
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🚀 Modern Laravel 13 + PHP 8.3 Patterns
+=======
+## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
 =======
 ## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
 >>>>>>> laraxot/dev

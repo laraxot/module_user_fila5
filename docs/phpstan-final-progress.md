@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan-final-progress phpstan level 10 - progresso finale"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -42,7 +47,11 @@ related:
 ## ✅ Correzioni Applicate
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Categoria 1: Namespace Filament 5
+=======
+### Categoria 1: Namespace Filament 4
+>>>>>>> laraxot/dev
 =======
 ### Categoria 1: Namespace Filament 4
 >>>>>>> laraxot/dev
@@ -78,7 +87,11 @@ Da identificare e correggere sistematicamente.
 - [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
 - [PHPStan Furious Debate](./phpstan-furious-debate-2025.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament 5 Actions Namespace](./Filament-5-actions-namespace.md)
+=======
+- [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
+>>>>>>> laraxot/dev
 =======
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
 >>>>>>> laraxot/dev

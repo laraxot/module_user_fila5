@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "filament filament nel modulo user"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -28,7 +33,11 @@ related:
 ## Documentazione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. [Migrazione Filament 5](filament4-migration.md) - Guida completa alla migrazione da v3 a v4
+=======
+1. [Migrazione Filament 4](filament4-migration.md) - Guida completa alla migrazione da v3 a v4
+>>>>>>> laraxot/dev
 =======
 1. [Migrazione Filament 4](filament4-migration.md) - Guida completa alla migrazione da v3 a v4
 >>>>>>> laraxot/dev
@@ -85,7 +94,11 @@ related:
 - Schema System: Nuovo sistema unificato per componenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Modifiche Filament 5
+=======
+## Modifiche Filament 4
+>>>>>>> laraxot/dev
 =======
 ## Modifiche Filament 4
 >>>>>>> laraxot/dev

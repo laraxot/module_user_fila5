@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "userfactory-advanced-implementation-complete-1 userfactory advanced implementation - complete ✅"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -28,7 +33,11 @@ related:
 ## 🎉 Mission Accomplished
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 L'implementazione **avanzata** della UserFactory del modulo <nome progetto> è stata **completata con successo**, elevando la factory da ottima a **eccellenza enterprise-grade**.
+=======
+L'implementazione **avanzata** della UserFactory del modulo Quaeris è stata **completata con successo**, elevando la factory da ottima a **eccellenza enterprise-grade**.
+>>>>>>> laraxot/dev
 =======
 L'implementazione **avanzata** della UserFactory del modulo Quaeris è stata **completata con successo**, elevando la factory da ottima a **eccellenza enterprise-grade**.
 >>>>>>> laraxot/dev
@@ -189,7 +198,11 @@ $gdprTests = [
 - **Session Management**: Cross-module state persistence
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### <nome progetto> Domain Specialization
+=======
+### Quaeris Domain Specialization
+>>>>>>> laraxot/dev
 =======
 ### Quaeris Domain Specialization
 >>>>>>> laraxot/dev
@@ -321,6 +334,7 @@ $gdprTests = [
 
 ### Primary Documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md)
 - [User Module Integration](../laravel/modules/user/docs/user-factory-advanced-integration-3.md)
 - [Advanced Analysis](../laravel/modules/<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
@@ -330,6 +344,8 @@ $gdprTests = [
 - [State Management](../laravel/modules/<nome progetto>/docs/models/states.md)
 - [Cross-Module Relations](../laravel/modules/<nome progetto>/docs/models/doctor-studio-relationship.md)
 =======
+=======
+>>>>>>> laraxot/dev
 - [Quaeris Factory Implementation](../laravel/modules/Quaeris/docs/factories/userfactory-implementation-final.md)
 - [User Module Integration](../laravel/modules/user/docs/user-factory-advanced-integration-3.md)
 - [Advanced Analysis](../laravel/modules/Quaeris/docs/factories/userfactory-advanced-improvements-analysis.md)
@@ -338,6 +354,9 @@ $gdprTests = [
 - [Model Architecture](../laravel/modules/Quaeris/docs/models/single-table-inheritance.md)
 - [State Management](../laravel/modules/Quaeris/docs/models/states.md)
 - [Cross-Module Relations](../laravel/modules/Quaeris/docs/models/doctor-studio-relationship.md)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 **🎉 MISSION ACCOMPLISHED - UserFactory Advanced Implementation Complete! 🎉** 

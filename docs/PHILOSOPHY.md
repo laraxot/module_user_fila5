@@ -12,7 +12,11 @@ qmd: "user philosophy identity foundation authentication authorization sti multi
 # User — Philosophy: The Identity Foundation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **The Grand Vision**: User is not a user management system. It is the identity spine of <nome progetto> — the answer to three questions and only three: **who are you, what are you allowed to do, and for which organization.** Everything else belongs elsewhere.
+=======
+**The Grand Vision**: User is not a user management system. It is the identity spine of FixCity — the answer to three questions and only three: **who are you, what are you allowed to do, and for which organization.** Everything else belongs elsewhere.
+>>>>>>> laraxot/dev
 =======
 **The Grand Vision**: User is not a user management system. It is the identity spine of FixCity — the answer to three questions and only three: **who are you, what are you allowed to do, and for which organization.** Everything else belongs elsewhere.
 >>>>>>> laraxot/dev
@@ -96,7 +100,11 @@ Passport is chosen for OAuth compliance. The full token flow (authorization code
 - Gradual mobile adoption (tokens don't need user interaction for refresh)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Sanctum is lighter and sufficient for SPA + API on the same origin. Passport is heavier but necessary if <nome progetto> grows to accept external applications. The code is here, the infrastructure is paid for. Use it.
+=======
+Sanctum is lighter and sufficient for SPA + API on the same origin. Passport is heavier but necessary if FixCity grows to accept external applications. The code is here, the infrastructure is paid for. Use it.
+>>>>>>> laraxot/dev
 =======
 Sanctum is lighter and sufficient for SPA + API on the same origin. Passport is heavier but necessary if FixCity grows to accept external applications. The code is here, the infrastructure is paid for. Use it.
 >>>>>>> laraxot/dev
@@ -181,9 +189,15 @@ When a Doctor logs in, `Filament::getTenant()` returns their Clinic. All queries
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## SCOPO — What Problem It Solves in <nome progetto>
 
 <nome progetto> is a city administration platform. Its identity needs are:
+=======
+## SCOPO — What Problem It Solves in FixCity
+
+FixCity is a city administration platform. Its identity needs are:
+>>>>>>> laraxot/dev
 =======
 ## SCOPO — What Problem It Solves in FixCity
 
@@ -239,7 +253,11 @@ The developer does not think about JWT, token refresh, tenant scoping, or policy
 ### The Empty User
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Zen teaches: the container is more important than the thing contained. User is the container for identity in <nome progetto>. It does not impose a shape; it accepts any shape (via STI). A Doctor is not a User with extra fields; a Doctor IS a User, just with a different `type`.
+=======
+Zen teaches: the container is more important than the thing contained. User is the container for identity in FixCity. It does not impose a shape; it accepts any shape (via STI). A Doctor is not a User with extra fields; a Doctor IS a User, just with a different `type`.
+>>>>>>> laraxot/dev
 =======
 Zen teaches: the container is more important than the thing contained. User is the container for identity in FixCity. It does not impose a shape; it accepts any shape (via STI). A Doctor is not a User with extra fields; a Doctor IS a User, just with a different `type`.
 >>>>>>> laraxot/dev
@@ -321,7 +339,11 @@ Beyond these two, the system is elegantly simple.
 - [ ] **Tenant invitation workflow**: Invite external users to join a tenant.
 - [ ] **Role inheritance hierarchy**: Super-admin > admin > user (not just a naming convention).
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] **OAuth provider**: Make <nome progetto> an OAuth provider for partner apps.
+=======
+- [ ] **OAuth provider**: Make FixCity an OAuth provider for partner apps.
+>>>>>>> laraxot/dev
 =======
 - [ ] **OAuth provider**: Make FixCity an OAuth provider for partner apps.
 >>>>>>> laraxot/dev
@@ -335,9 +357,15 @@ Beyond these two, the system is elegantly simple.
 **Breeze** is a quick-start scaffolding (login, register, profile, password reset). **Jetstream** adds teams and 2FA. Both define User shape and are meant for new projects.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Difference**: User is for an existing platform with complex identity needs (STI, multi-tenancy, OAuth, extensive RBAC). You would not use Breeze for <nome progetto> because you would inherit their User structure, which does not fit.
 
 **Lesson**: Breeze and Jetstream are starting points. User is a production system. If <nome progetto> started from Jetstream, migration to this User would be painful. Better to accept the extra complexity upfront.
+=======
+**Difference**: User is for an existing platform with complex identity needs (STI, multi-tenancy, OAuth, extensive RBAC). You would not use Breeze for FixCity because you would inherit their User structure, which does not fit.
+
+**Lesson**: Breeze and Jetstream are starting points. User is a production system. If FixCity started from Jetstream, migration to this User would be painful. Better to accept the extra complexity upfront.
+>>>>>>> laraxot/dev
 =======
 **Difference**: User is for an existing platform with complex identity needs (STI, multi-tenancy, OAuth, extensive RBAC). You would not use Breeze for FixCity because you would inherit their User structure, which does not fit.
 
@@ -364,7 +392,11 @@ Beyond these two, the system is elegantly simple.
 **JWT** (stateless): Tokens do not require server lookup. Good for microservices, bad for revocation.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Decision**: Passport for <nome progetto> because external integrations (third-party complaint systems) may need to authenticate. Sanctum could be used for the SPA layer on top of Passport; they are not mutually exclusive.
+=======
+**Decision**: Passport for FixCity because external integrations (third-party complaint systems) may need to authenticate. Sanctum could be used for the SPA layer on top of Passport; they are not mutually exclusive.
+>>>>>>> laraxot/dev
 =======
 **Decision**: Passport for FixCity because external integrations (third-party complaint systems) may need to authenticate. Sanctum could be used for the SPA layer on top of Passport; they are not mutually exclusive.
 >>>>>>> laraxot/dev
@@ -378,7 +410,11 @@ Beyond these two, the system is elegantly simple.
 **Custom** is the old way: build your own admin UI.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Decision**: Filament is the right choice for <nome progetto>. It is free, extensible, and modern. User's 350 Filament classes show deep integration; switching would be catastrophic.
+=======
+**Decision**: Filament is the right choice for FixCity. It is free, extensible, and modern. User's 350 Filament classes show deep integration; switching would be catastrophic.
+>>>>>>> laraxot/dev
 =======
 **Decision**: Filament is the right choice for FixCity. It is free, extensible, and modern. User's 350 Filament classes show deep integration; switching would be catastrophic.
 >>>>>>> laraxot/dev
@@ -812,7 +848,11 @@ This creates:
 ```env
 # .env
 <<<<<<< HEAD
+<<<<<<< HEAD
 MAIL_FROM_ADDRESS=noreply@<nome progetto>.com
+=======
+MAIL_FROM_ADDRESS=noreply@fixcity.com
+>>>>>>> laraxot/dev
 =======
 MAIL_FROM_ADDRESS=noreply@fixcity.com
 >>>>>>> laraxot/dev
@@ -967,7 +1007,11 @@ test('expired token is rejected')
 ## Conclusion: The Identity as Foundation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 User is not a feature module; it is the **foundation** of <nome progetto>. Every other module depends on it. Every user action passes through it. Every access control decision rests on it.
+=======
+User is not a feature module; it is the **foundation** of FixCity. Every other module depends on it. Every user action passes through it. Every access control decision rests on it.
+>>>>>>> laraxot/dev
 =======
 User is not a feature module; it is the **foundation** of FixCity. Every other module depends on it. Every user action passes through it. Every access control decision rests on it.
 >>>>>>> laraxot/dev

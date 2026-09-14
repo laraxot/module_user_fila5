@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "metodi-duplicati-analisi-2 🐄⚡ analisi metodi duplicati - super mucca edition"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -133,7 +138,11 @@ abstract class BaseModel extends \Modules\Xot\Models\XotBaseModel
 ### Pattern 1: getTableColumns() - ESEMPIO REALE
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### <nome progetto>/TicketResource/ListTickets.php (ECCELLENTE)
+=======
+#### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
+>>>>>>> laraxot/dev
 =======
 #### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
 >>>>>>> laraxot/dev
@@ -498,7 +507,11 @@ public function getTableFilters(): array
 - Code review
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Settimana 2**: Moduli Business (<nome progetto>, Blog, Geo)
+=======
+**Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
+>>>>>>> laraxot/dev
 =======
 **Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
 >>>>>>> laraxot/dev
@@ -540,7 +553,11 @@ public function getTableFilters(): array
 
 #### ⭐⭐⭐⭐ PRIORITÀ ALTA
 <<<<<<< HEAD
+<<<<<<< HEAD
 4. Refactoring moduli business (<nome progetto>, Blog, Geo)
+=======
+4. Refactoring moduli business (Fixcity, Blog, Geo)
+>>>>>>> laraxot/dev
 =======
 4. Refactoring moduli business (Fixcity, Blog, Geo)
 >>>>>>> laraxot/dev

@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan-fixes-roadmap phpstan level 10 fixes roadmap - modulo user"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -92,7 +97,11 @@ public static function getTableActions(): array
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Alternativa**: Verificare il namespace corretto delle Actions in Filament 5
+=======
+**Alternativa**: Verificare il namespace corretto delle Actions in Filament 4
+>>>>>>> laraxot/dev
 =======
 **Alternativa**: Verificare il namespace corretto delle Actions in Filament 4
 >>>>>>> laraxot/dev
@@ -130,7 +139,11 @@ public static function getTableActions(): array
 - **Regola Critica**: `getFormSchema()` deve restituire `array<string, Field>` senza Section/Grid
 - **Regola Critica**: Mai usare `->label()`, `->placeholder()`, `->helperText()` - le traduzioni sono automatiche
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Verificare namespace corretti per Filament 5/Laraxot
+=======
+- Verificare namespace corretti per Filament 4/Laraxot
+>>>>>>> laraxot/dev
 =======
 - Verificare namespace corretti per Filament 4/Laraxot
 >>>>>>> laraxot/dev

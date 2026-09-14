@@ -17,7 +17,12 @@ class GetDomainAllowListAction
 
     public function __construct(
         private readonly Arr $arrHelper,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 
     /**
      * Execute the action.

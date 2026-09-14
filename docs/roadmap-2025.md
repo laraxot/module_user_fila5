@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "roadmap-2025 👥 user module - roadmap 2025"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -109,7 +114,11 @@ User Module
 ### 🔧 Technical Excellence
 - [x] **PHPStan Level 10**: 0 errori
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] **Filament 5.x**: Compatibilità completa
+=======
+- [x] **Filament 4.x**: Compatibilità completa
+>>>>>>> laraxot/dev
 =======
 - [x] **Filament 4.x**: Compatibilità completa
 >>>>>>> laraxot/dev
@@ -283,7 +292,11 @@ User Module
 - [x] Error handling improvement
 - [x] Code documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] Filament 5.x compatibility
+=======
+- [x] Filament 4.x compatibility
+>>>>>>> laraxot/dev
 =======
 - [x] Filament 4.x compatibility
 >>>>>>> laraxot/dev
@@ -343,7 +356,11 @@ User Module
 ### 📊 Technical Metrics
 - [x] **PHPStan Level 10**: 0 errori ✅
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] **Filament 5.x**: Compatibile ✅
+=======
+- [x] **Filament 4.x**: Compatibile ✅
+>>>>>>> laraxot/dev
 =======
 - [x] **Filament 4.x**: Compatibile ✅
 >>>>>>> laraxot/dev
@@ -484,7 +501,11 @@ User Module
 ## 🔗 INTEGRATION POINTS
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 🎫 <nome progetto> Module
+=======
+### 🎫 Fixcity Module
+>>>>>>> laraxot/dev
 =======
 ### 🎫 Fixcity Module
 >>>>>>> laraxot/dev

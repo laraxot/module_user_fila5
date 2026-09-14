@@ -10,7 +10,11 @@ issues:
 related:
   - ../../../config/permission.php
 <<<<<<< HEAD
+<<<<<<< HEAD
   - ./config/local/<nome progetto>/permission.php
+=======
+  - ./config/local/workorder/permission.php
+>>>>>>> laraxot/dev
 =======
   - ./config/local/workorder/permission.php
 >>>>>>> laraxot/dev
@@ -44,7 +48,11 @@ role_has_permissions   => role_has_permission     (singolare)
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Tabelle fisiche live (connection `user`, DB `<nome progetto>_user`) allineate a questi valori:
+=======
+Tabelle fisiche live (connection `user`, DB `workorder_user`) allineate a questi valori:
+>>>>>>> laraxot/dev
 =======
 Tabelle fisiche live (connection `user`, DB `workorder_user`) allineate a questi valori:
 >>>>>>> laraxot/dev

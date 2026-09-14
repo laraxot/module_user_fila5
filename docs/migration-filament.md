@@ -2,7 +2,11 @@
 module: theme
 topic: migration-filament
 <<<<<<< HEAD
+<<<<<<< HEAD
 canonical: ../../../Themes/docs/shared-components/migrazione-Filament-5.md
+=======
+canonical: ../../../Themes/docs/shared-components/migrazione-filament-4.md
+>>>>>>> laraxot/dev
 =======
 canonical: ../../../Themes/docs/shared-components/migrazione-filament-4.md
 >>>>>>> laraxot/dev
@@ -18,7 +22,11 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/migrazione-Filament-5.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/migrazione-filament-4.md
+>>>>>>> laraxot/dev
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/migrazione-filament-4.md
 >>>>>>> laraxot/dev

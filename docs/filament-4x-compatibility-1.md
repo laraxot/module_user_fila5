@@ -1,6 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "Compatibilità Filament 5.x - Modulo User"
+=======
+title: "Compatibilità Filament 4.x - Modulo User"
+>>>>>>> laraxot/dev
 =======
 title: "Compatibilità Filament 4.x - Modulo User"
 >>>>>>> laraxot/dev
@@ -9,9 +13,15 @@ tags: [filament, compatibility]
 created: 2026-07-14
 updated: 2026-07-14
 <<<<<<< HEAD
+<<<<<<< HEAD
 qmd: "Filament-5x-compatibility-1 compatibilità Filament 5.x - modulo user"
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+qmd: "filament-4x-compatibility-1 compatibilità filament 4.x - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 qmd: "filament-4x-compatibility-1 compatibilità filament 4.x - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
@@ -29,7 +39,11 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Compatibilità Filament 5.x - Modulo User
+=======
+# Compatibilità Filament 4.x - Modulo User
+>>>>>>> laraxot/dev
 =======
 # Compatibilità Filament 4.x - Modulo User
 >>>>>>> laraxot/dev
@@ -111,7 +125,11 @@ public function getFilamentName(): string
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 📋 Modifiche Filament 5.x
+=======
+## 📋 Modifiche Filament 4.x
+>>>>>>> laraxot/dev
 =======
 ## 📋 Modifiche Filament 4.x
 >>>>>>> laraxot/dev
@@ -170,8 +188,13 @@ $this->info("Current user type: " . $typeLabelString);
 ## 🔗 Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Rapporto Aggiornamento Filament 5.x](../../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 5.x](https://filamentphp.com/docs/4.x/upgrade-guide)
+=======
+- [Rapporto Aggiornamento Filament 4.x](../../../docs/filament_4x_upgrade_report.md)
+- [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
+>>>>>>> laraxot/dev
 =======
 - [Rapporto Aggiornamento Filament 4.x](../../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)

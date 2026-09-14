@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "missing-features-analysis analisi funzionalità mancanti - modulo user"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -133,7 +138,11 @@ Il modulo **User** fornisce:
 
 2. **LimeParticipant** - Partecipanti survey
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Integrazione con Contact model <nome progetto>
+=======
+   - Integrazione con Contact model Quaeris
+>>>>>>> laraxot/dev
 =======
    - Integrazione con Contact model Quaeris
 >>>>>>> laraxot/dev
@@ -185,7 +194,11 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Modulo <nome progetto>](../<nome progetto>/docs/README.md)
+=======
+- [Modulo Quaeris](../Quaeris/docs/README.md)
+>>>>>>> laraxot/dev
 =======
 - [Modulo Quaeris](../Quaeris/docs/README.md)
 >>>>>>> laraxot/dev

@@ -21,6 +21,7 @@ related:
 `BaseProfile` genera `uuid` in `creating`. Il contratto richiede colonna `uuid` nella tabella `profiles` del DB usato dal modello concreto.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Owner schema (<nome progetto> — connessione `user`)
 
 **Owner migrazione = modulo <nome progetto>** (`main_module`):
@@ -28,12 +29,17 @@ related:
 - [profile-schema-ownership](../../../<nome progetto>/docs/profile-schema-ownership.md)
 - `laravel/Modules/<nome progetto>/database/migrations/2026_07_27_111500_create_profiles_table.php`
 =======
+=======
+>>>>>>> laraxot/dev
 ## Owner schema (workorder — connessione `user`)
 
 **Owner migrazione = modulo WorkOrder** (`main_module`):
 
 - [profile-schema-ownership](../../../WorkOrder/docs/profile-schema-ownership.md)
 - `laravel/Modules/WorkOrder/database/migrations/2026_07_27_111500_create_profiles_table.php`
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 
 Duplicati User in `database/migrations/_bak/*.merged` (violazione 1 modello = 1 migrazione owner).
@@ -81,7 +87,11 @@ La prima domanda corretta e':
 
 - `laravel/Modules/User/app/Models/BaseProfile.php`
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `laravel/Modules/<nome progetto>/database/migrations/2026_07_27_111500_create_profiles_table.php`
+=======
+- `laravel/Modules/WorkOrder/database/migrations/2026_07_27_111500_create_profiles_table.php`
+>>>>>>> laraxot/dev
 =======
 - `laravel/Modules/WorkOrder/database/migrations/2026_07_27_111500_create_profiles_table.php`
 >>>>>>> laraxot/dev

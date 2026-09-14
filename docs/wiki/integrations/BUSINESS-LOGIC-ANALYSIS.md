@@ -128,7 +128,11 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Filament 5 Improvements
+=======
+## Filament 4 Improvements
+>>>>>>> laraxot/dev
 =======
 ## Filament 4 Improvements
 >>>>>>> laraxot/dev
@@ -144,7 +148,11 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 #### 1. Enhanced User Management
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Advanced user form with Filament 5
+=======
+// Advanced user form with Filament 4
+>>>>>>> laraxot/dev
 =======
 // Advanced user form with Filament 4
 >>>>>>> laraxot/dev
@@ -462,7 +470,11 @@ class ApiRateLimitingMiddleware
 1. **Performance Optimization**: Fix N+1 queries and add caching
 2. **Security Hardening**: Implement comprehensive security measures
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Filament Interface**: Upgrade to advanced Filament 5 features
+=======
+3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
 =======
 3. **Filament Interface**: Upgrade to advanced Filament 4 features
 >>>>>>> laraxot/dev

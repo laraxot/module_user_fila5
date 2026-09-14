@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "login-resolution risoluzione problema login - report finale (aggiornato)"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -33,7 +38,11 @@ Il widget `LoginWidget` (e più in generale la classe base `XotBaseWidget`) pres
 
 ### Analisi Tecnica
 <<<<<<< HEAD
+<<<<<<< HEAD
 In Filament 5 (e v3), i componenti che usano `InteractsWithForms` necessitano di una chiamata a `$this->form->fill()` durante la fase di `mount()`. 
+=======
+In Filament 4 (e v3), i componenti che usano `InteractsWithForms` necessitano di una chiamata a `$this->form->fill()` durante la fase di `mount()`. 
+>>>>>>> laraxot/dev
 =======
 In Filament 4 (e v3), i componenti che usano `InteractsWithForms` necessitano di una chiamata a `$this->form->fill()` durante la fase di `mount()`. 
 >>>>>>> laraxot/dev

@@ -62,7 +62,11 @@ Examples:
 | Level | Name | Description | Example |
 |-------|------|-------------|---------|
 <<<<<<< HEAD
+<<<<<<< HEAD
 | 1 | **Namespace** | Module name | `user::`, `geo::`, `<nome progetto>::` |
+=======
+| 1 | **Namespace** | Module name | `user::`, `geo::`, `fixcity::` |
+>>>>>>> laraxot/dev
 =======
 | 1 | **Namespace** | Module name | `user::`, `geo::`, `fixcity::` |
 >>>>>>> laraxot/dev

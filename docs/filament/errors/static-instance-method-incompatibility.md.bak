@@ -25,9 +25,13 @@ public static function getTableColumns(): array
 public function getTableColumns(): array
 ### 2. Per Widget
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 =======
 public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
 >>>>>>> laraxot/dev
 public function getFormSchema(): array
 ### 3. Per tutte le classi

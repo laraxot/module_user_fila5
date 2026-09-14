@@ -1,6 +1,10 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "Guida Migrazione Step-by-Step: Modulo User - Filament 5"
+=======
+title: "Guida Migrazione Step-by-Step: Modulo User - Filament 4"
+>>>>>>> laraxot/dev
 =======
 title: "Guida Migrazione Step-by-Step: Modulo User - Filament 4"
 >>>>>>> laraxot/dev
@@ -9,9 +13,15 @@ tags: [guida, migrazione, step, step]
 created: 2026-07-14
 updated: 2026-07-14
 <<<<<<< HEAD
+<<<<<<< HEAD
 qmd: "guida-migrazione-step-by-step guida migrazione step-by-step: modulo user - Filament 5"
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+qmd: "guida-migrazione-step-by-step guida migrazione step-by-step: modulo user - filament 4"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 qmd: "guida-migrazione-step-by-step guida migrazione step-by-step: modulo user - filament 4"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
@@ -29,7 +39,11 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Guida Migrazione Step-by-Step: Modulo User - Filament 5
+=======
+# Guida Migrazione Step-by-Step: Modulo User - Filament 4
+>>>>>>> laraxot/dev
 =======
 # Guida Migrazione Step-by-Step: Modulo User - Filament 4
 >>>>>>> laraxot/dev
@@ -379,7 +393,11 @@ abstract class UserBaseResource extends XotBaseResource
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2.2 UserResource con Filament 5
+=======
+### 2.2 UserResource con Filament 4
+>>>>>>> laraxot/dev
 =======
 ### 2.2 UserResource con Filament 4
 >>>>>>> laraxot/dev
@@ -595,7 +613,11 @@ class UserResource extends UserBaseResource
 ## Fase 3: Sistema MFA Integrato (Giorni 9-15)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 3.1 MFA Resource con Filament 5
+=======
+### 3.1 MFA Resource con Filament 4
+>>>>>>> laraxot/dev
 =======
 ### 3.1 MFA Resource con Filament 4
 >>>>>>> laraxot/dev
@@ -813,7 +835,11 @@ class TwoFactorStatsWidget extends ChartWidget
 ## Fase 4: Team e Multi-Tenancy (Giorni 16-22)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 4.1 TeamResource con Filament 5
+=======
+### 4.1 TeamResource con Filament 4
+>>>>>>> laraxot/dev
 =======
 ### 4.1 TeamResource con Filament 4
 >>>>>>> laraxot/dev
@@ -1087,7 +1113,11 @@ class TenantResource extends UserBaseResource
 ## Fase 5: Migration Database Critica (Giorni 23-28)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 5.1 Migration Complessa per Filament 5
+=======
+### 5.1 Migration Complessa per Filament 4
+>>>>>>> laraxot/dev
 =======
 ### 5.1 Migration Complessa per Filament 4
 >>>>>>> laraxot/dev
@@ -1121,7 +1151,11 @@ return new class extends Migration
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Nuove colonne per Filament 5
+=======
+        // Nuove colonne per Filament 4
+>>>>>>> laraxot/dev
 =======
         // Nuove colonne per Filament 4
 >>>>>>> laraxot/dev
@@ -1221,7 +1255,11 @@ class MigrateUserDataToFilament4Command extends Command
 {
     protected $signature = 'user:migrate-filament4 {--chunk=100} {--dry-run}';
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected $description = 'Migra dati utenti per Filament 5';
+=======
+    protected $description = 'Migra dati utenti per Filament 4';
+>>>>>>> laraxot/dev
 =======
     protected $description = 'Migra dati utenti per Filament 4';
 >>>>>>> laraxot/dev
@@ -1232,7 +1270,11 @@ class MigrateUserDataToFilament4Command extends Command
         $dryRun = $this->option('dry-run');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->info('Inizio migrazione dati utenti per Filament 5...');
+=======
+        $this->info('Inizio migrazione dati utenti per Filament 4...');
+>>>>>>> laraxot/dev
 =======
         $this->info('Inizio migrazione dati utenti per Filament 4...');
 >>>>>>> laraxot/dev
@@ -1572,7 +1614,11 @@ class AuthenticationPerformanceTest extends TestCase
 set -e # Esci su qualsiasi errore
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 echo "🚨 DEPLOY CRITICO: Modulo User - Filament 5"
+=======
+echo "🚨 DEPLOY CRITICO: Modulo User - Filament 4"
+>>>>>>> laraxot/dev
 =======
 echo "🚨 DEPLOY CRITICO: Modulo User - Filament 4"
 >>>>>>> laraxot/dev
@@ -1675,7 +1721,11 @@ class UserHealthCheckCommand extends Command
     public function handle()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->info('🔍 Health Check Sistema Utenti - Filament 5');
+=======
+        $this->info('🔍 Health Check Sistema Utenti - Filament 4');
+>>>>>>> laraxot/dev
 =======
         $this->info('🔍 Health Check Sistema Utenti - Filament 4');
 >>>>>>> laraxot/dev
@@ -1881,7 +1931,11 @@ return [
 ### 8.2 Guida Training per Team
 ```markdown
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Training Guide: User Module - Filament 5
+=======
+# Training Guide: User Module - Filament 4
+>>>>>>> laraxot/dev
 =======
 # Training Guide: User Module - Filament 4
 >>>>>>> laraxot/dev

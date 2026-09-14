@@ -262,7 +262,11 @@ User/
 1. **Mai `table_names` modificabili in `config/permission.php`** - pivot singolari (model_has_role)
 2. **No Log calls** in Actions/Models/Services - Laravel gestisce
 <<<<<<< HEAD
+<<<<<<< HEAD
 3. **Profiles migration owner = <nome progetto>**, non User
+=======
+3. **Profiles migration owner = WorkOrder**, non User
+>>>>>>> laraxot/dev
 =======
 3. **Profiles migration owner = WorkOrder**, non User
 >>>>>>> laraxot/dev

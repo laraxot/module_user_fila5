@@ -27,7 +27,11 @@ related:
 - [ ] Rimozione definitiva dei 550+ file obsoleti
 - [ ] Implementazione del **Security Cluster** in Filament v5
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Supporto completo per **Laravel 13 Authentication Features**
+=======
+- [ ] Supporto completo per **Laravel 12 Authentication Features**
+>>>>>>> laraxot/dev
 =======
 - [ ] Supporto completo per **Laravel 12 Authentication Features**
 >>>>>>> laraxot/dev

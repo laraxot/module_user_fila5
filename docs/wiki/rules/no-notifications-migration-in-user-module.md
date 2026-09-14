@@ -47,7 +47,11 @@ return new class extends Migration { ... };
 Contratto: [notifications-database-contract](../../../Notify/docs/wiki/concepts/notifications-database-contract.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Se manca tabella su `<nome progetto>_user`
+=======
+## Se manca tabella su `fixcity_user`
+>>>>>>> laraxot/dev
 =======
 ## Se manca tabella su `fixcity_user`
 >>>>>>> laraxot/dev
@@ -59,7 +63,11 @@ Contratto: [notifications-database-contract](../../../Notify/docs/wiki/concepts/
 
 - [notifications-runtime-model](../concepts/notifications-runtime-model.md)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [main-module-profiles-ownership](../../../<nome progetto>/docs/wiki/concepts/main-module-profiles-ownership.md) (stesso pattern boundary)
+=======
+- [main-module-profiles-ownership](../../../Fixcity/docs/wiki/concepts/main-module-profiles-ownership.md) (stesso pattern boundary)
+>>>>>>> laraxot/dev
 =======
 - [main-module-profiles-ownership](../../../Fixcity/docs/wiki/concepts/main-module-profiles-ownership.md) (stesso pattern boundary)
 >>>>>>> laraxot/dev

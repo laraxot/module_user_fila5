@@ -166,7 +166,11 @@ Per verificare che non ci siano più modelli che estendono direttamente `Model`:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd /var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/User
+=======
+cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
 =======
 cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 >>>>>>> laraxot/dev
@@ -179,7 +183,11 @@ Dopo le modifiche, eseguire:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 cd /var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/User
+=======
+cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
 =======
 cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 >>>>>>> laraxot/dev

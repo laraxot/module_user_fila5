@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "ponytail-audit-2026-07-02.deprecated ponytail-audit 2026-07-02: user module findings"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -57,8 +62,13 @@ drafts provides no value over deletion.
   nothing references the `.to_xot` file by path or string.
 - `find Modules -name "*.to_xot"` — three other unrelated `.to_xot` files exist
 <<<<<<< HEAD
+<<<<<<< HEAD
   (`Modules/<nome progetto>/database/factories/ExtraFactory.to_xot`,
   `Modules/<nome progetto>/app/Models/Extra.to_xot`,
+=======
+  (`Modules/Quaeris/database/factories/ExtraFactory.to_xot`,
+  `Modules/Quaeris/app/Models/Extra.to_xot`,
+>>>>>>> laraxot/dev
 =======
   (`Modules/Quaeris/database/factories/ExtraFactory.to_xot`,
   `Modules/Quaeris/app/Models/Extra.to_xot`,

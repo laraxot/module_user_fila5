@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "critical-filament-rule-getinfolistschema-string-keys critical filament rule: getinfolistschema string keys"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -65,6 +70,7 @@ protected function getInfolistSchema(): array
 ```
 
 ## Architecture Context
+<<<<<<< HEAD
 Nel percorso Resource, lo schema appartiene alla classe dedicata
 `Schemas/{Model}Infolist`, che estende `XotBaseResourceInfolist` e implementa
 `public function getInfolistSchema(): array`. Le chiavi stringa restano la
@@ -79,6 +85,12 @@ Esempio verificato nella story [XOT-5.44](../../Xot/docs/stories/5.44.quality-ga
 [ViewTeamUser](../app/Filament/Resources/TeamUserResource/Pages/ViewTeamUser.php)
 dichiara solo la Resource; i campi visualizzati restano definiti in
 [TeamUserInfolist](../app/Filament/Resources/TeamUserResource/Schemas/TeamUserInfolist.php).
+=======
+This rule applies to all `getInfolistSchema()` implementations throughout the Laraxot architecture, including:
+- XotBaseViewRecord implementations
+- Resource classes that define infolist schemas
+- Any custom infolist schema methods
+>>>>>>> laraxot/dev
 
 ## Impact
 Following this rule ensures:

@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan-compliance phpstan compliance - user module"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -39,7 +44,11 @@ The User module is fully compliant with PHPStan level 9 analysis, demonstrating:
 - ✅ Proper null handling
 - ✅ Correct array structure definitions
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ✅ Filament 5.x compatibility
+=======
+- ✅ Filament 4.x compatibility
+>>>>>>> laraxot/dev
 =======
 - ✅ Filament 4.x compatibility
 >>>>>>> laraxot/dev
@@ -69,9 +78,15 @@ This module provides comprehensive user management including:
 - **BaseUser Model**: Core user functionality
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Filament 5.x Compatibility
 
 All Filament components verified for Filament 5.x:
+=======
+## Filament 4.x Compatibility
+
+All Filament components verified for Filament 4.x:
+>>>>>>> laraxot/dev
 =======
 ## Filament 4.x Compatibility
 

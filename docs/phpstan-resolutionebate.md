@@ -6,8 +6,13 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan-resolutionebate dibattito filosofico: risoluzione errori phpstan"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
 discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 =======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -87,7 +92,11 @@ related:
 
 **Pattern di Correzione**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Namespace Filament 5: `Filament\Tables\Actions\*` → `Filament\Actions\*`
+=======
+- Namespace Filament 4: `Filament\Tables\Actions\*` → `Filament\Actions\*`
+>>>>>>> laraxot/dev
 =======
 - Namespace Filament 4: `Filament\Tables\Actions\*` → `Filament\Actions\*`
 >>>>>>> laraxot/dev
@@ -98,9 +107,15 @@ related:
 ## 📋 Errori Identificati e Strategia
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Categoria 1: Namespace Filament 5 (Alta Priorità)
 
 **Errore**: `Filament\Tables\Actions\*` non esiste in Filament 5
+=======
+### Categoria 1: Namespace Filament 4 (Alta Priorità)
+
+**Errore**: `Filament\Tables\Actions\*` non esiste in Filament 4
+>>>>>>> laraxot/dev
 =======
 ### Categoria 1: Namespace Filament 4 (Alta Priorità)
 

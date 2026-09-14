@@ -17,7 +17,10 @@ use Modules\User\Models\Team;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 /**
  * Nome della connessione su cui vive il model Profile.
  *
@@ -28,9 +31,15 @@ use PHPUnit\Framework\Assert;
 function profileConnectionName(): string
 {
     $profileClass = \Modules\Xot\Datas\XotData::make()->getProfileClass();
+<<<<<<< HEAD
     $connection = (new $profileClass)->getConnectionName();
 
     if (is_string($connection) && $connection !== '') {
+=======
+    $connection = (new $profileClass())->getConnectionName();
+
+    if (is_string($connection) && '' !== $connection) {
+>>>>>>> laraxot/dev
         return $connection;
     }
 
