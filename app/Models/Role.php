@@ -75,6 +75,7 @@ use Webmozart\Assert\Assert;
  */
 class Role extends SpatieRole
 {
+    /** @use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     use RelationX;
