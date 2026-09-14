@@ -6,11 +6,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Tenant;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-<<<<<<< HEAD
-/**
-=======
 /*
->>>>>>> laraxot/dev
  * Owner migration `User::tenants` (consolidamento 2026-09-01).
  */
 return new class extends XotBaseMigration {

@@ -155,11 +155,7 @@ describe('User gap attack — highest miss files', function (): void {
                 }
             }
 
-<<<<<<< HEAD
-            $eventClass = $class === OtherDeviceLogoutListener::class
-=======
             $eventClass = OtherDeviceLogoutListener::class === $class
->>>>>>> laraxot/dev
                 ? OtherDeviceLogout::class
                 : Logout::class;
             /** @var Authenticatable&MockInterface $authUser */
@@ -204,11 +200,7 @@ describe('User gap attack — highest miss files', function (): void {
         Hash::shouldReceive('check')->andReturn(true);
         Hash::shouldReceive('needsRehash')->andReturn(false);
 
-<<<<<<< HEAD
-        $user = new UserGapBaseUserProbe;
-=======
         $user = new UserGapBaseUserProbe();
->>>>>>> laraxot/dev
         $user->setRawAttributes([
             'id' => 1,
             'name' => 'Test',
@@ -219,13 +211,8 @@ describe('User gap attack — highest miss files', function (): void {
 
         $ref = new \ReflectionClass($user);
         foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
-<<<<<<< HEAD
-            if ($method->getDeclaringClass()->getName() !== UserGapBaseUserProbe::class
-                && $method->getDeclaringClass()->getName() !== BaseUser::class) {
-=======
             if (UserGapBaseUserProbe::class !== $method->getDeclaringClass()->getName()
                 && BaseUser::class !== $method->getDeclaringClass()->getName()) {
->>>>>>> laraxot/dev
                 continue;
             }
             if (str_starts_with($method->getName(), '__')) {

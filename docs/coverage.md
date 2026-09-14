@@ -88,8 +88,6 @@ significativo: DB di test `10.100.200.53` irraggiungibile da questo ambiente
 
 **Fuori scope**: 15 file della lista originale non richiedevano piu' modifiche
 (gia' risolti dal commit `5ec97b13` prima dell'inizio di questo lavoro).
-<<<<<<< HEAD
-=======
 
 ## Follow-up audit `$model`/colonne — swarm 2026-09-11
 
@@ -157,4 +155,3 @@ toccati in questo giro (`OauthClientResource.php`,
 `OauthClientResource/Tables/OauthClientsTable.php`,
 `Models/OauthDeviceCode.php`, le 6 cancellazioni dead-code). Regressione: **no**
 (verificato per confronto diretto degli stack trace, non per assunzione).
->>>>>>> laraxot/dev

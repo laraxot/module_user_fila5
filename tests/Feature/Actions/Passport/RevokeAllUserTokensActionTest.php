@@ -179,11 +179,7 @@ describe('RevokeAllUserTokensAction', function (): void {
 
         $tokenCount = 5;
         $tokens = [];
-<<<<<<< HEAD
-        for ($i = 0; $i < $tokenCount; $i++) {
-=======
         for ($i = 0; $i < $tokenCount; ++$i) {
->>>>>>> laraxot/dev
             $tokens[] = [
                 'id' => (string) Str::uuid(),
                 'user_id' => (string) $user->id,

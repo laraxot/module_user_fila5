@@ -48,12 +48,7 @@ class DeviceData extends Data
     {
         $headers = collect(request()->header())->mapWithKeys(
             /**
-             * <<<<<<< HEAD.
-             *
              * @param array<int, string|null> $item
-             *                                      =======
-             * @param array<int, string|null> $item
-             *                                      >>>>>>> laraxot/dev
              */
             static function (array $item, string $key): array {
                 if (Str::startsWith($key, 'X-')) {

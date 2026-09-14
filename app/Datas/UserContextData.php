@@ -14,34 +14,22 @@ use Spatie\LaravelData\Data;
 class UserContextData extends Data
 {
     /**
-<<<<<<< HEAD
-     * @param  array<int, string>  $roles
-=======
      * @param array<int, string> $roles
->>>>>>> laraxot/dev
      */
     public function __construct(
         public readonly ?string $userId = null,
         public readonly string $email = '',
         public readonly bool $isAdministrator = false,
         public readonly array $roles = [],
-<<<<<<< HEAD
-    ) {}
-=======
     ) {
     }
->>>>>>> laraxot/dev
 
     public static function fromUserModel(object $userModel): self
     {
         // property_exists() è sempre false sugli attributi Eloquent (magic, in $attributes):
         // isset() passa da __isset() e vede l'attributo davvero valorizzato.
         $rawId = $userModel->id ?? null;
-<<<<<<< HEAD
-        $userId = $rawId !== null ? SafeStringCastAction::cast($rawId) : null;
-=======
         $userId = null !== $rawId ? SafeStringCastAction::cast($rawId) : null;
->>>>>>> laraxot/dev
 
         $roles = array_values(array_map(
             static fn (mixed $role): string => SafeStringCastAction::cast($role),
@@ -52,11 +40,7 @@ class UserContextData extends Data
         $email = SafeStringCastAction::cast($rawEmail);
 
         $rawRole = $userModel->role ?? '';
-<<<<<<< HEAD
-        $isAdmin = ! empty($rawRole) && strtolower(SafeStringCastAction::cast($rawRole)) === 'admin';
-=======
         $isAdmin = ! empty($rawRole) && 'admin' === strtolower(SafeStringCastAction::cast($rawRole));
->>>>>>> laraxot/dev
 
         return new self(
             userId: $userId,
