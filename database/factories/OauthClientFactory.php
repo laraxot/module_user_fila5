@@ -122,11 +122,12 @@ class OauthClientFactory extends Factory
     /**
      * Create client with specific scopes.
      *
-<<<<<<< HEAD
-     * @param  array<string>  $scopes
-=======
+     * <<<<<<< HEAD
+     *
      * @param array<string> $scopes
->>>>>>> laraxot/dev
+     *                              =======
+     * @param array<string> $scopes
+     *                              >>>>>>> laraxot/dev
      */
     public function withScopes(array $scopes): static
     {

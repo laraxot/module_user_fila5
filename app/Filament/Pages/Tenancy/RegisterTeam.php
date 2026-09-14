@@ -29,11 +29,12 @@ class RegisterTeam extends XotBaseRegisterTenant
     }
 
     /**
-<<<<<<< HEAD
-     * @param  array<string, mixed>  $data
-=======
+     * <<<<<<< HEAD.
+     *
      * @param array<string, mixed> $data
->>>>>>> laraxot/dev
+     *                                   =======
+     * @param array<string, mixed> $data
+     *                                   >>>>>>> laraxot/dev
      */
     protected function handleRegistration(array $data): Model
     {
