@@ -14,8 +14,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 /**
  * @property Model|\Eloquent $notifiable
  *
- * @use HasXotFactory<\Modules\User\Database\Factories\NotificationFactory>
- *
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  * @method static Builder|Notification                                 newModelQuery()
@@ -33,7 +31,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class Notification extends BaseNotification
 {
-    /** @use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     protected $connection = 'user';
