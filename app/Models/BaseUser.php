@@ -48,8 +48,6 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * functionality for the application. It extends Laravel's Authenticatable class
  * and implements the required interfaces for Filament and multi-tenancy.
  *
- * @use HasXotFactory<\Modules\User\Database\Factories\UserFactory>
- *
  * @property Collection<int, OauthClient>                              $clients
  * @property int|null                                                  $clients_count
  * @property Team|null                                                 $currentTeam
@@ -143,7 +141,6 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     }
     use HasUuids;
 
-    /** @use HasXotFactory<\Modules\User\Database\Factories\UserFactory> */
     use HasXotFactory;
 
     use InteractsWithMedia;
