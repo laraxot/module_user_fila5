@@ -12,7 +12,11 @@ uses(TestCase::class);
 
 function changeTypeCommandInstance(): ChangeTypeCommand
 {
+<<<<<<< HEAD
     return new ChangeTypeCommand;
+=======
+    return new ChangeTypeCommand();
+>>>>>>> laraxot/dev
 }
 
 test('change type command can be instantiated', function (): void {

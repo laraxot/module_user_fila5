@@ -6,7 +6,10 @@ namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
+=======
+>>>>>>> laraxot/dev
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Modules\User\Filament\Actions\ChangePasswordAction;
@@ -21,6 +24,7 @@ abstract class BaseListUsers extends XotBaseListRecords
     /**
      * Get table columns for user records.
      *
+<<<<<<< HEAD
      * @return array<string, Column>
      */
     #[\Override]
@@ -33,6 +37,16 @@ abstract class BaseListUsers extends XotBaseListRecords
     }
 
     /**
+=======
+     * {
+     * return [
+     * 'name' => TextColumn::make('name')->searchable(),
+     * 'email' => TextColumn::make('email')->searchable(),
+     * ];
+     * }
+     *
+     * /**
+>>>>>>> laraxot/dev
      * Get table filters for user records.
      *
      * @return array<BaseFilter>

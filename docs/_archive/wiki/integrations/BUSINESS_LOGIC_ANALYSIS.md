@@ -127,7 +127,11 @@ ALTER TABLE team_user ADD CONSTRAINT fk_team_user_team
 CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 ```
 
+<<<<<<< HEAD
 ## Filament 5 Improvements
+=======
+## Filament 4 Improvements
+>>>>>>> laraxot/dev
 
 ### Current Implementation Issues
 1. **Basic User Forms**: Limited field validation and UX
@@ -139,9 +143,14 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 
 #### 1. Enhanced User Management
 ```php
+<<<<<<< HEAD
 // Advanced user form with Filament 5
 public static function getFormSchema(): array
 public function getFormSchema(): array
+=======
+// Advanced user form with Filament 4
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 {
     return [
         Forms\Components\Tabs::make('User Information')
@@ -454,7 +463,11 @@ class ApiRateLimitingMiddleware
 ### High Priority
 1. **Performance Optimization**: Fix N+1 queries and add caching
 2. **Security Hardening**: Implement comprehensive security measures
+<<<<<<< HEAD
 3. **Filament Interface**: Upgrade to advanced Filament 5 features
+=======
+3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
 4. **Authorization Cleanup**: Consolidate and optimize authorization logic
 
 ### Medium Priority

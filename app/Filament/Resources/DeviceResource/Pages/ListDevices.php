@@ -4,15 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\DeviceResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\DeviceResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListDevices extends XotBaseListRecords
 {
     protected static string $resource = DeviceResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, Column>
@@ -35,4 +39,6 @@ class ListDevices extends XotBaseListRecords
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
         ];
     }
+=======
+>>>>>>> laraxot/dev
 }

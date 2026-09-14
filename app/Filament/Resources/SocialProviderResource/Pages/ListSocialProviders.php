@@ -4,8 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\SocialProviderResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+=======
+>>>>>>> laraxot/dev
 use Filament\Tables\Filters\SelectFilter;
 use Modules\User\Filament\Resources\SocialProviderResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -18,6 +21,7 @@ class ListSocialProviders extends XotBaseListRecords
     protected static string $resource = SocialProviderResource::class;
 
     #[\Override]
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
@@ -39,6 +43,8 @@ class ListSocialProviders extends XotBaseListRecords
     }
 
     #[\Override]
+=======
+>>>>>>> laraxot/dev
     public function getTableFilters(): array
     {
         return [
