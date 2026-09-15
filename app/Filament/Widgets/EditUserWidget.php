@@ -27,15 +27,15 @@ use Webmozart\Assert\Assert;
  * @property string $resource
  * @property string $model
  * @property string $action
-<<<<<<< HEAD
+ *                            <<<<<<< HEAD
  * @property Model  $record
-=======
+ *                            =======
  *                            <<<<<<< HEAD
  * @property Model  $record
  *                            =======
  * @property Model  $record
  *                            >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+ *                            >>>>>>> laraxot/dev
  */
 class EditUserWidget extends XotBaseSchemaWidget
 {

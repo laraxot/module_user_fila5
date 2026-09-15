@@ -12,18 +12,19 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 /**
  * Modules\User\Models\PersonalAccessToken.
  *
-<<<<<<< HEAD
-=======
+ * <<<<<<< HEAD
+ * =======
  * <<<<<<< HEAD
  *
->>>>>>> laraxot/dev
+ * >>>>>>> laraxot/dev
+ *
  * @property int         $id
  * @property string      $tokenable_type
  * @property int         $tokenable_id
  * @property string      $name
  * @property string      $token
-<<<<<<< HEAD
-=======
+ *                                       <<<<<<< HEAD
+ *                                       =======
  *                                       =======
  * @property int         $id
  * @property string      $tokenable_type
@@ -31,23 +32,23 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property string      $name
  * @property string      $token
  *                                       >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+ *                                       >>>>>>> laraxot/dev
  * @property string|null $abilities
  * @property Carbon|null $last_used_at
  * @property Carbon|null $expires_at
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  *
-<<<<<<< HEAD
- * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory       factory($count = null, $state = [])
-=======
  * <<<<<<< HEAD
  *
  * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory       factory($count = null, $state = [])
  *                                                                                                                      =======
+ *                                                                                                                      <<<<<<< HEAD
+ * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory       factory($count = null, $state = [])
+ *                                                                                                                      =======
  * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory       factory($count = null, $state = [])
  *                                                                                                                      >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+ *                                                                                                                      >>>>>>> laraxot/dev
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken query()

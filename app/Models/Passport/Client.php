@@ -11,15 +11,15 @@ use Modules\User\Models\OauthAuthCode;
 use Modules\User\Models\OauthToken;
 
 /**
-<<<<<<< HEAD
+ * <<<<<<< HEAD
  * Custom Passport Client model to fix compatibility issues with Laravel 12.
-=======
+ * =======
  * <<<<<<< HEAD
  * Custom Passport Client model to fix compatibility issues with Laravel 13.
  * =======
  * Custom Passport Client model to fix compatibility issues with Laravel 12.
  * >>>>>>> laraxot/dev.
->>>>>>> laraxot/dev
+ * >>>>>>> laraxot/dev.
  *
  * @property Collection<int, OauthAuthCode> $authCodes
  * @property int|null                       $auth_codes_count
@@ -44,15 +44,15 @@ class Client extends PassportClient
 {
     /**
      * Initialize the trait.
-<<<<<<< HEAD
+     * <<<<<<< HEAD
      * Overriding to match Laravel 12 HasUuids trait signature (removing : void).
-=======
+     * =======
      * <<<<<<< HEAD
      * Overriding to match Laravel 13 HasUuids trait signature (removing : void).
      * =======
      * Overriding to match Laravel 12 HasUuids trait signature (removing : void).
      * >>>>>>> laraxot/dev.
->>>>>>> laraxot/dev
+     * >>>>>>> laraxot/dev.
      */
     public function initializeHasUniqueStringIds(): void
     {

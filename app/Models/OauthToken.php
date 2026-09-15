@@ -9,11 +9,12 @@ use Laravel\Passport\Token as PassportToken;
 use Modules\User\Traits\ResolvesPassportTokenUserRelation;
 
 /**
-<<<<<<< HEAD
-=======
+ * <<<<<<< HEAD
+ * =======
  * <<<<<<< HEAD.
  *
->>>>>>> laraxot/dev
+ * >>>>>>> laraxot/dev
+ *
  * @property bool                         $revoked
  * @property int|string|null              $user_id
  * @property string                       $id
@@ -29,8 +30,8 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @property string|null                  $deleted_by
  * @property OauthClient|null             $client
  * @property OauthRefreshToken|null       $refreshToken
-<<<<<<< HEAD
-=======
+ *                                                      <<<<<<< HEAD
+ *                                                      =======
  *                                                      =======
  * @property bool                         $revoked
  * @property int|string|null              $user_id
@@ -48,7 +49,7 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @property OauthClient|null             $client
  * @property OauthRefreshToken|null       $refreshToken
  *                                                      >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+ *                                                      >>>>>>> laraxot/dev
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken existsIn(array<int, string> $haystack)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken newModelQuery()

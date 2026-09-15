@@ -14,11 +14,12 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 /**
  * @property Model|\Eloquent $notifiable
  *
-<<<<<<< HEAD
-=======
+ * <<<<<<< HEAD
+ * =======
  * <<<<<<< HEAD
  *
->>>>>>> laraxot/dev
+ * >>>>>>> laraxot/dev
+ *
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  * @method static Builder|Notification                                 newModelQuery()
@@ -30,8 +31,8 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
-<<<<<<< HEAD
-=======
+ *                                                                                                         <<<<<<< HEAD
+ *                                                                                                         =======
  *                                                                                                         =======
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
@@ -45,7 +46,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  *                                                                                                         >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+ *                                                                                                         >>>>>>> laraxot/dev
  * @method static \Modules\User\Database\Factories\NotificationFactory factory($count = null, $state = [])
  *
  * @mixin \Eloquent
