@@ -25,6 +25,7 @@ describe('EmailDomainAnalyzer', function () {
         Config::set('services.google.email_domains.client.tld', null);
     });
 
+    /** @phpstan-ignore-next-line method.nonObject, function.void (Pest it()->todo() chain: pest-plugin-phpstan extension is disabled in root phpstan.neon, so PHPStan does not know it() returns a bindable TestCall) */
     it('throws for empty provider')->todo();
 
     it('detects first party domain', function () {
