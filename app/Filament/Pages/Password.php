@@ -151,7 +151,6 @@ class Password extends XotBasePage
      * >>>>>>> laraxot/dev
      * >>>>>>> laraxot/dev
      *
-     *
      * @return Model Il record aggiornato
      */
     protected function handleRecordUpdate(Model $record, array $data): Model

@@ -8,14 +8,15 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 
 /**
-<<<<<<< .merge_file_rPO7Jf
-  *
-=======
+ * <<<<<<< .merge_file_rPO7Jf.
+ *
+ * =======
  * <<<<<<< HEAD
  * =======
  * <<<<<<< HEAD.
  *
->>>>>>> .merge_file_utfxwg
+ * >>>>>>> .merge_file_utfxwg
+ *
  * @property string           $id
  * @property string           $client_id
  * @property OauthClient|null $client
@@ -25,14 +26,15 @@ use Illuminate\Support\Carbon;
  * @property string|null      $created_by
  *
  * @method static \Modules\User\Database\Factories\OauthPersonalAccessClientFactory factory($count = null, $state = [])
-<<<<<<< .merge_file_rPO7Jf
+ *                                                                                                                      <<<<<<< .merge_file_rPO7Jf
  *                                                                                                                      *
-=======
+ *                                                                                                                      =======
  *                                                                                                                      =======
  *
  * >>>>>>> laraxot/dev
  *
->>>>>>> .merge_file_utfxwg
+ * >>>>>>> .merge_file_utfxwg
+ *
  * @property string           $id
  * @property string           $client_id
  * @property OauthClient|null $client

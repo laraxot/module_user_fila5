@@ -14,9 +14,9 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 /**
  * @property Model|\Eloquent $notifiable
  *
-<<<<<<< .merge_file_BgADkR
-  *
-=======
+ * <<<<<<< .merge_file_BgADkR
+ *
+ * =======
  * <<<<<<< HEAD
  * =======
  * <<<<<<< HEAD
@@ -37,7 +37,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  *                                                                                                         <<<<<<< HEAD
  *                                                                                                         =======
  *                                                                                                         =======
->>>>>>> .merge_file_1rAdsF
+ *                                                                                                         >>>>>>> .merge_file_1rAdsF
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  * @method static Builder|Notification                                 newModelQuery()
@@ -49,8 +49,8 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
-<<<<<<< .merge_file_BgADkR
-  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
+ *                                                                                                         <<<<<<< .merge_file_BgADkR
+ * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  * @method static Builder|Notification                                 newModelQuery()
  * @method static Builder|Notification                                 newQuery()
@@ -61,9 +61,9 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
-=======
+ *                                                                                                         =======
  *                                                                                                         >>>>>>> laraxot/dev
->>>>>>> .merge_file_1rAdsF
+ *                                                                                                         >>>>>>> .merge_file_1rAdsF
  *                                                                                                         >>>>>>> laraxot/dev
  * @method static \Modules\User\Database\Factories\NotificationFactory factory($count = null, $state = [])
  *
