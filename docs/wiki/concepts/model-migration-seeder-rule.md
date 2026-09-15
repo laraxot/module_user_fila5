@@ -5,8 +5,18 @@ tags: [model, migration, seeder, rule]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "model-migration-seeder-rule regola: 1 modello = 1 migrazione + 1 seeder"
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"

@@ -29,12 +29,21 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
  */
 class UserForm extends XotBaseResourceForm
 {
+<<<<<<< HEAD
+
+/**
+=======
     /**
+>>>>>>> laraxot/dev
      * FO auth login — SSoT campi per `LoginWidget`.
      *
      * @return array<string, Component>
      */
+<<<<<<< HEAD
+    public  function getFormSchema(): array
+=======
     public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'email' => TextInput::make('email')
@@ -54,7 +63,10 @@ class UserForm extends XotBaseResourceForm
                 ->extraInputAttributes(['class' => 'fo-auth-checkbox']),
         ];
     }
+<<<<<<< HEAD
+=======
 
+>>>>>>> laraxot/dev
     /**
      * FO auth login — SSoT campi per `LoginWidget`.
      *
@@ -137,7 +149,11 @@ class UserForm extends XotBaseResourceForm
                 ->autocomplete('new-password')
                 ->confirmed()
                 ->dehydrateStateUsing(static function (?string $state): ?string {
+<<<<<<< HEAD
+                    if ($state === null || $state === '') {
+=======
                     if (null === $state || '' === $state) {
+>>>>>>> laraxot/dev
                         return null;
                     }
 
@@ -217,7 +233,11 @@ class UserForm extends XotBaseResourceForm
                 ->same('password_confirmation')
                 ->autocomplete('new-password')
                 ->dehydrateStateUsing(static function (?string $state): ?string {
+<<<<<<< HEAD
+                    if ($state === null || $state === '') {
+=======
                     if (null === $state || '' === $state) {
+>>>>>>> laraxot/dev
                         return null;
                     }
 
@@ -257,7 +277,11 @@ class UserForm extends XotBaseResourceForm
                 ->minLength(8)
                 ->suffixIcon('heroicon-o-key')
                 ->dehydrateStateUsing(static function (?string $state): ?string {
+<<<<<<< HEAD
+                    if ($state === null || $state === '') {
+=======
                     if (null === $state || '' === $state) {
+>>>>>>> laraxot/dev
                         return null;
                     }
 

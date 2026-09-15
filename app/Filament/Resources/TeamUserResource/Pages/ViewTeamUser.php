@@ -4,9 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TeamUserResource\Pages;
 
+<<<<<<< .merge_file_jhrR1L
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
+=======
+<<<<<<< HEAD
+=======
+use Filament\Infolists\Components\TextEntry;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Section;
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_E5MPvQ
 use Modules\User\Filament\Resources\TeamUserResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -16,6 +25,11 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 class ViewTeamUser extends XotBaseViewRecord
 {
     protected static string $resource = TeamUserResource::class;
+<<<<<<< .merge_file_jhrR1L
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_E5MPvQ
 
     /**
      * @return array<string, Component>
@@ -33,4 +47,8 @@ class ViewTeamUser extends XotBaseViewRecord
             ]),
         ];
     }
+<<<<<<< .merge_file_jhrR1L
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_E5MPvQ
 }

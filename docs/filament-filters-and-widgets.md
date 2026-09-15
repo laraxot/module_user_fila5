@@ -1,12 +1,32 @@
 ---
+<<<<<<< HEAD
+<<<<<<< HEAD
+title: "Filament 5 — filtri pagina e widget (lezioni apprese)"
+=======
 title: "Filament 4 — filtri pagina e widget (lezioni apprese)"
+>>>>>>> laraxot/dev
+=======
+title: "Filament 4 — filtri pagina e widget (lezioni apprese)"
+>>>>>>> laraxot/dev
 type: concept
 tags: [filament, filters, widgets]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< HEAD
+<<<<<<< HEAD
+qmd: "filament-filters-and-widgets Filament 5 — filtri pagina e widget (lezioni apprese)"
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
 qmd: "filament-filters-and-widgets filament 4 — filtri pagina e widget (lezioni apprese)"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+qmd: "filament-filters-and-widgets filament 4 — filtri pagina e widget (lezioni apprese)"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -18,11 +38,25 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Filament 5 — filtri pagina e widget (lezioni apprese)
+
+- Pagina: usare `HasFiltersForm` e renderizzare lo schema in Blade con `{{ $this->getFiltersForm() }}`.
+- Widget: usare `InteractsWithPageFilters` e impostare `protected static bool $isLazy = false`.
+- Proprietà `$view` del Widget: NON statica in Filament 5 (il parent ha `$view` non static).
+=======
+=======
+>>>>>>> laraxot/dev
 # Filament 4 — filtri pagina e widget (lezioni apprese)
 
 - Pagina: usare `HasFiltersForm` e renderizzare lo schema in Blade con `{{ $this->getFiltersForm() }}`.
 - Widget: usare `InteractsWithPageFilters` e impostare `protected static bool $isLazy = false`.
 - Proprietà `$view` del Widget: NON statica in Filament 4 (il parent ha `$view` non static).
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 - In Blade del widget leggere i valori con `data_get($this->pageFilters, 'startDate')` e `data_get($this->pageFilters, 'endDate')`.
 - Evitare `HasFiltersSchema` in questo caso (serve ai chart widget), e niente `->label()` / `->helperText()`.
 

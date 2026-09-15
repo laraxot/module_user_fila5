@@ -5,8 +5,23 @@ tags: [model, inheritance, fixes]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "model-inheritance-fixes-4 correzioni ereditarietà modelli - modulo user"
+<<<<<<< .merge_file_8Ii4Zc
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_qmtK7e
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -185,7 +200,19 @@ Illuminate\Database\Eloquent\Relations\MorphPivot
 Per verificare che non ci siano più modelli che estendono direttamente `Model`:
 
 ```bash
+<<<<<<< .merge_file_8Ii4Zc
 cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+cd /var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/User
+=======
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
+=======
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_qmtK7e
 grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|BasePivot\|BaseMorphPivot"
 ```
 
@@ -194,7 +221,19 @@ grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|Base
 Dopo le modifiche, eseguire:
 
 ```bash
+<<<<<<< .merge_file_8Ii4Zc
 cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+cd /var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/User
+=======
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
+=======
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_qmtK7e
 ./vendor/bin/phpstan analyse --memory-limit=2G
 ```
 

@@ -5,8 +5,23 @@ tags: [fullcalendar, scheduler, documentation, summary]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "fullcalendar-scheduler-documentation-summary-3 fullcalendar scheduler - documentazione completa"
+<<<<<<< .merge_file_vJWwJJ
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_6L1fJ5
 related:
   - "./00-index-1.md"
   - "./00-index.md"

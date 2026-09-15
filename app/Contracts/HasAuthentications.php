@@ -10,6 +10,16 @@ use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 /**
  * Marker: il modello usa {@see HasAuthenticationLogTrait}.
  */
+<<<<<<< .merge_file_PQqq0y
 interface HasAuthentications extends Authenticatable
 {
 }
+=======
+<<<<<<< HEAD
+interface HasAuthentications extends Authenticatable {}
+=======
+interface HasAuthentications extends Authenticatable
+{
+}
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_vKFgbJ

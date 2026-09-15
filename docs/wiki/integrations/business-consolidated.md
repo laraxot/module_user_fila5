@@ -171,7 +171,15 @@ ALTER TABLE team_user ADD CONSTRAINT fk_team_user_team
 CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## Filament 5 Improvements
+=======
 ## Filament 4 Improvements
+>>>>>>> laraxot/dev
+=======
+## Filament 4 Improvements
+>>>>>>> laraxot/dev
 
 ### Current Implementation Issues
 1. **Basic User Forms**: Limited field validation and UX
@@ -183,7 +191,15 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 
 #### 1. Enhanced User Management
 ```php
+<<<<<<< HEAD
+<<<<<<< HEAD
+// Advanced user form with Filament 5
+=======
 // Advanced user form with Filament 4
+>>>>>>> laraxot/dev
+=======
+// Advanced user form with Filament 4
+>>>>>>> laraxot/dev
 public static function getFormSchema(): array
 {
     return [
@@ -497,7 +513,15 @@ class ApiRateLimitingMiddleware
 ### High Priority
 1. **Performance Optimization**: Fix N+1 queries and add caching
 2. **Security Hardening**: Implement comprehensive security measures
+<<<<<<< HEAD
+<<<<<<< HEAD
+3. **Filament Interface**: Upgrade to advanced Filament 5 features
+=======
 3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
+=======
+3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
 4. **Authorization Cleanup**: Consolidate and optimize authorization logic
 
 ### Medium Priority
@@ -671,7 +695,15 @@ ALTER TABLE team_user ADD CONSTRAINT fk_team_user_team
 CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## Filament 5 Improvements
+=======
 ## Filament 4 Improvements
+>>>>>>> laraxot/dev
+=======
+## Filament 4 Improvements
+>>>>>>> laraxot/dev
 
 ### Current Implementation Issues
 1. **Basic User Forms**: Limited field validation and UX
@@ -683,7 +715,15 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 
 #### 1. Enhanced User Management
 ```php
+<<<<<<< HEAD
+<<<<<<< HEAD
+// Advanced user form with Filament 5
+=======
 // Advanced user form with Filament 4
+>>>>>>> laraxot/dev
+=======
+// Advanced user form with Filament 4
+>>>>>>> laraxot/dev
 public static function getFormSchema(): array
 {
     return [
@@ -997,7 +1037,15 @@ class ApiRateLimitingMiddleware
 ### High Priority
 1. **Performance Optimization**: Fix N+1 queries and add caching
 2. **Security Hardening**: Implement comprehensive security measures
+<<<<<<< HEAD
+<<<<<<< HEAD
+3. **Filament Interface**: Upgrade to advanced Filament 5 features
+=======
 3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
+=======
+3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
 4. **Authorization Cleanup**: Consolidate and optimize authorization logic
 
 ### Medium Priority
@@ -1171,7 +1219,15 @@ ALTER TABLE team_user ADD CONSTRAINT fk_team_user_team
 CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## Filament 5 Improvements
+=======
 ## Filament 4 Improvements
+>>>>>>> laraxot/dev
+=======
+## Filament 4 Improvements
+>>>>>>> laraxot/dev
 
 ### Current Implementation Issues
 1. **Basic User Forms**: Limited field validation and UX
@@ -1183,7 +1239,15 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 
 #### 1. Enhanced User Management
 ```php
+<<<<<<< HEAD
+<<<<<<< HEAD
+// Advanced user form with Filament 5
+=======
 // Advanced user form with Filament 4
+>>>>>>> laraxot/dev
+=======
+// Advanced user form with Filament 4
+>>>>>>> laraxot/dev
 public static function getFormSchema(): array
 {
     return [
@@ -1497,7 +1561,15 @@ class ApiRateLimitingMiddleware
 ### High Priority
 1. **Performance Optimization**: Fix N+1 queries and add caching
 2. **Security Hardening**: Implement comprehensive security measures
+<<<<<<< HEAD
+<<<<<<< HEAD
+3. **Filament Interface**: Upgrade to advanced Filament 5 features
+=======
 3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
+=======
+3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
 4. **Authorization Cleanup**: Consolidate and optimize authorization logic
 
 ### Medium Priority
@@ -1671,7 +1743,15 @@ ALTER TABLE team_user ADD CONSTRAINT fk_team_user_team
 CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## Filament 5 Improvements
+=======
 ## Filament 4 Improvements
+>>>>>>> laraxot/dev
+=======
+## Filament 4 Improvements
+>>>>>>> laraxot/dev
 
 ### Current Implementation Issues
 1. **Basic User Forms**: Limited field validation and UX
@@ -1683,7 +1763,15 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 
 #### 1. Enhanced User Management
 ```php
+<<<<<<< HEAD
+<<<<<<< HEAD
+// Advanced user form with Filament 5
+=======
 // Advanced user form with Filament 4
+>>>>>>> laraxot/dev
+=======
+// Advanced user form with Filament 4
+>>>>>>> laraxot/dev
 public static function getFormSchema(): array
 {
     return [
@@ -1997,7 +2085,15 @@ class ApiRateLimitingMiddleware
 ### High Priority
 1. **Performance Optimization**: Fix N+1 queries and add caching
 2. **Security Hardening**: Implement comprehensive security measures
+<<<<<<< HEAD
+<<<<<<< HEAD
+3. **Filament Interface**: Upgrade to advanced Filament 5 features
+=======
 3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
+=======
+3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
 4. **Authorization Cleanup**: Consolidate and optimize authorization logic
 
 ### Medium Priority
@@ -2708,7 +2804,15 @@ class OptimizedUserQueries
 }
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🚀 Modern Laravel 13 + PHP 8.3 Patterns
+=======
 ## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
+=======
+## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
 
 ### 1. Enum Integration
 ```php
@@ -3510,7 +3614,15 @@ class OptimizedUserQueries
 }
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🚀 Modern Laravel 13 + PHP 8.3 Patterns
+=======
 ## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
+=======
+## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
 
 ### 1. Enum Integration
 ```php
@@ -4312,7 +4424,15 @@ class OptimizedUserQueries
 }
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🚀 Modern Laravel 13 + PHP 8.3 Patterns
+=======
 ## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
+=======
+## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
 
 ### 1. Enum Integration
 ```php
@@ -5114,7 +5234,15 @@ class OptimizedUserQueries
 }
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🚀 Modern Laravel 13 + PHP 8.3 Patterns
+=======
 ## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
+=======
+## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
 
 ### 1. Enum Integration
 ```php
@@ -5379,7 +5507,15 @@ ALTER TABLE team_user ADD CONSTRAINT fk_team_user_team
 CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## Filament 5 Improvements
+=======
 ## Filament 4 Improvements
+>>>>>>> laraxot/dev
+=======
+## Filament 4 Improvements
+>>>>>>> laraxot/dev
 
 ### Current Implementation Issues
 1. **Basic User Forms**: Limited field validation and UX
@@ -5391,7 +5527,15 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 
 #### 1. Enhanced User Management
 ```php
+<<<<<<< HEAD
+<<<<<<< HEAD
+// Advanced user form with Filament 5
+=======
 // Advanced user form with Filament 4
+>>>>>>> laraxot/dev
+=======
+// Advanced user form with Filament 4
+>>>>>>> laraxot/dev
 public static function getFormSchema(): array
 {
     return [
@@ -5705,7 +5849,15 @@ class ApiRateLimitingMiddleware
 ### High Priority
 1. **Performance Optimization**: Fix N+1 queries and add caching
 2. **Security Hardening**: Implement comprehensive security measures
+<<<<<<< HEAD
+<<<<<<< HEAD
+3. **Filament Interface**: Upgrade to advanced Filament 5 features
+=======
 3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
+=======
+3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
 4. **Authorization Cleanup**: Consolidate and optimize authorization logic
 
 ### Medium Priority
@@ -6416,7 +6568,15 @@ class OptimizedUserQueries
 }
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🚀 Modern Laravel 13 + PHP 8.3 Patterns
+=======
 ## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
+=======
+## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
 
 ### 1. Enum Integration
 ```php
@@ -6544,7 +6704,15 @@ Il modulo User rappresenta la spina dorsale dell'applicazione e richiede particu
 
 
 ## Overview
+<<<<<<< HEAD
+<<<<<<< HEAD
+The User module provides comprehensive user management, authentication, authorization, and team-based access control for the <nome progetto> platform. It serves as the foundation for all user-related operations across the entire application.
+=======
 The User module provides comprehensive user management, authentication, authorization, and team-based access control for the Quaeris platform. It serves as the foundation for all user-related operations across the entire application.
+>>>>>>> laraxot/dev
+=======
+The User module provides comprehensive user management, authentication, authorization, and team-based access control for the Quaeris platform. It serves as the foundation for all user-related operations across the entire application.
+>>>>>>> laraxot/dev
 
 ## Business Purpose
 - **Authentication**: Secure user authentication with multiple options
@@ -6661,7 +6829,15 @@ ALTER TABLE team_user ADD CONSTRAINT fk_team_user_team
 CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## Filament 5 Improvements
+=======
 ## Filament 4 Improvements
+>>>>>>> laraxot/dev
+=======
+## Filament 4 Improvements
+>>>>>>> laraxot/dev
 
 ### Current Implementation Issues
 1. **Basic User Forms**: Limited field validation and UX
@@ -6673,7 +6849,15 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 
 #### 1. Enhanced User Management
 ```php
+<<<<<<< HEAD
+<<<<<<< HEAD
+// Advanced user form with Filament 5
+=======
 // Advanced user form with Filament 4
+>>>>>>> laraxot/dev
+=======
+// Advanced user form with Filament 4
+>>>>>>> laraxot/dev
 public static function getFormSchema(): array
 {
     return [
@@ -6987,7 +7171,15 @@ class ApiRateLimitingMiddleware
 ### High Priority
 1. **Performance Optimization**: Fix N+1 queries and add caching
 2. **Security Hardening**: Implement comprehensive security measures
+<<<<<<< HEAD
+<<<<<<< HEAD
+3. **Filament Interface**: Upgrade to advanced Filament 5 features
+=======
 3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
+=======
+3. **Filament Interface**: Upgrade to advanced Filament 4 features
+>>>>>>> laraxot/dev
 4. **Authorization Cleanup**: Consolidate and optimize authorization logic
 
 ### Medium Priority
@@ -7679,7 +7871,15 @@ class OptimizedUserQueries
 }
 ```
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🚀 Modern Laravel 13 + PHP 8.3 Patterns
+=======
 ## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
+=======
+## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
+>>>>>>> laraxot/dev
 
 ### 1. Enum Integration
 ```php

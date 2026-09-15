@@ -118,7 +118,19 @@ This document outlines a comprehensive strategy for implementing a generic moder
   {
       protected static ?string $model = User::class;
 
+<<<<<<< .merge_file_KEYfhi
       public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      public static function getFormSchema(): array
+=======
+      public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+      public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_iYQJNw
       {
           return [
               'type' => Forms\Components\TextInput::make('type')

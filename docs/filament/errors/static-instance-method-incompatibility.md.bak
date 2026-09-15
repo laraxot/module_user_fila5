@@ -24,7 +24,19 @@ public static function getTableColumns(): array
 // CORRETTO ✅
 public function getTableColumns(): array
 ### 2. Per Widget
+<<<<<<< .merge_file_0JpyPr
 public static function getFormSchema(): array
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+public static function getFormSchema(): array
+=======
+public function getFormSchema(): array
+>>>>>>> laraxot/dev
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_CUvRsb
 public function getFormSchema(): array
 ### 3. Per tutte le classi
 Rimuovere le chiamate a `->label()` per utilizzare il sistema di traduzione automatica:

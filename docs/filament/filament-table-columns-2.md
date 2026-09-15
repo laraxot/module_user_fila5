@@ -5,8 +5,23 @@ tags: [filament, table, columns]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "filament-table-columns-2 convenzione metodo gettablecolumns per filament table"
+<<<<<<< .merge_file_BAkJLM
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_aS9Ln7
 related:
   - "./filament-table-columns-1.md"
   - "./filament-table-columns-3.md"

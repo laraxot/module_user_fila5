@@ -107,10 +107,23 @@
 - [dry-kiss-analysis.deprecated.md](./archive/dry-kiss-analysis.deprecated.md)
 - [dry-kiss-analysis.md](./archive/dry-kiss-analysis.md)
 - [error-handling.md](./archive/error-handling.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Filament-5-actions-namespace.md](./archive/Filament-5-actions-namespace.md)
+- [Filament-5-widget-rendering-guide.md](./archive/Filament-5-widget-rendering-guide.md)
+- [Filament-5-widget-rendering.md](./archive/Filament-5-widget-rendering.md)
+- [Filament-5x-compatibility.md](./archive/Filament-5x-compatibility.md)
+=======
+=======
+>>>>>>> laraxot/dev
 - [filament-4-actions-namespace.md](./archive/filament-4-actions-namespace.md)
 - [filament-4-widget-rendering-guide.md](./archive/filament-4-widget-rendering-guide.md)
 - [filament-4-widget-rendering.md](./archive/filament-4-widget-rendering.md)
 - [filament-4x-compatibility.md](./archive/filament-4x-compatibility.md)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 - [filament-components-reference.md](./archive/filament-components-reference.md)
 - [filament-errors.md](./archive/filament-errors.md)
 - [filament-namespace-rules-1.md](./archive/filament-namespace-rules-1.md)
@@ -195,8 +208,18 @@
 - [metodi-duplicati-analisi.md](./archive/metodi-duplicati-analisi.md)
 - [metrics-dashboard.md](./archive/metrics-dashboard.md)
 - [migration-duplicate-resolution.md](./archive/migration-duplicate-resolution.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [migration-Filament-5.md](./archive/migration-Filament-5.md)
+- [migrazione-Filament-5.md](./archive/migrazione-Filament-5.md)
+=======
 - [migration-filament-4.md](./archive/migration-filament-4.md)
 - [migrazione-filament-4.md](./archive/migrazione-filament-4.md)
+>>>>>>> laraxot/dev
+=======
+- [migration-filament-4.md](./archive/migration-filament-4.md)
+- [migrazione-filament-4.md](./archive/migrazione-filament-4.md)
+>>>>>>> laraxot/dev
 - [model-inheritance-analysis.md](./archive/model-inheritance-analysis.md)
 - [model-inheritance-fixes.md](./archive/model-inheritance-fixes.md)
 - [modelli-factory-seeder-analisi.md](./archive/modelli-factory-seeder-analisi.md)
@@ -377,11 +400,25 @@
 - [factory-creation-status.md](./archive/historical/factory-creation-status.md)
 - [factory-lessons-learned.md](./archive/historical/factory-lessons-learned.md)
 - [features.md](./archive/historical/features.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Filament-5-actions-namespace.md](./archive/historical/Filament-5-actions-namespace.md)
+- [Filament-5-widget-rendering-guide.md](./archive/historical/Filament-5-widget-rendering-guide.md)
+- [Filament-5x-compatibility-1.md](./archive/historical/Filament-5x-compatibility-1.md)
+- [Filament-5x-compatibility-conflict.md](./archive/historical/Filament-5x-compatibility-conflict.md)
+- [Filament-5x-compatibility.md](./archive/historical/Filament-5x-compatibility.md)
+=======
+=======
+>>>>>>> laraxot/dev
 - [filament-4-actions-namespace.md](./archive/historical/filament-4-actions-namespace.md)
 - [filament-4-widget-rendering-guide.md](./archive/historical/filament-4-widget-rendering-guide.md)
 - [filament-4x-compatibility-1.md](./archive/historical/filament-4x-compatibility-1.md)
 - [filament-4x-compatibility-conflict.md](./archive/historical/filament-4x-compatibility-conflict.md)
 - [filament-4x-compatibility.md](./archive/historical/filament-4x-compatibility.md)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 - [filament-auth-pages-exceptions.md](./archive/historical/filament-auth-pages-exceptions.md)
 - [filament-best-practices.md](./archive/historical/filament-best-practices.md)
 - [filament-charts-implementation.md](./archive/historical/filament-charts-implementation.md)
@@ -517,7 +554,15 @@
 - [migration-unicity-rule.md](./archive/historical/migration-unicity-rule.md)
 - [migration-violations-analysis.md](./archive/historical/migration-violations-analysis.md)
 - [migration-violations-current-status.md](./archive/historical/migration-violations-current-status.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [migrazione-Filament-5.md](./archive/historical/migrazione-Filament-5.md)
+=======
 - [migrazione-filament-4.md](./archive/historical/migrazione-filament-4.md)
+>>>>>>> laraxot/dev
+=======
+- [migrazione-filament-4.md](./archive/historical/migrazione-filament-4.md)
+>>>>>>> laraxot/dev
 - [missing-factories-audit.md](./archive/historical/missing-factories-audit.md)
 - [missing-features-analysis.md](./archive/historical/missing-features-analysis.md)
 - [missing-filament-resources-analysis.md](./archive/historical/missing-filament-resources-analysis.md)
@@ -1119,10 +1164,23 @@
 - [dry-kiss-analysis.deprecated.md](./legacy/dry-kiss-analysis.deprecated.md)
 - [dry-kiss-analysis.md](./legacy/dry-kiss-analysis.md)
 - [error-handling.md](./legacy/error-handling.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Filament-5-actions-namespace.md](./legacy/Filament-5-actions-namespace.md)
+- [Filament-5-widget-rendering-guide.md](./legacy/Filament-5-widget-rendering-guide.md)
+- [Filament-5-widget-rendering.md](./legacy/Filament-5-widget-rendering.md)
+- [Filament-5x-compatibility.md](./legacy/Filament-5x-compatibility.md)
+=======
+=======
+>>>>>>> laraxot/dev
 - [filament-4-actions-namespace.md](./legacy/filament-4-actions-namespace.md)
 - [filament-4-widget-rendering-guide.md](./legacy/filament-4-widget-rendering-guide.md)
 - [filament-4-widget-rendering.md](./legacy/filament-4-widget-rendering.md)
 - [filament-4x-compatibility.md](./legacy/filament-4x-compatibility.md)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 - [filament-components-reference.md](./legacy/filament-components-reference.md)
 - [filament-errors.md](./legacy/filament-errors.md)
 - [filament-namespace-rules-1.md](./legacy/filament-namespace-rules-1.md)
@@ -1207,8 +1265,18 @@
 - [metodi-duplicati-analisi.md](./legacy/metodi-duplicati-analisi.md)
 - [metrics-dashboard.md](./legacy/metrics-dashboard.md)
 - [migration-duplicate-resolution.md](./legacy/migration-duplicate-resolution.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [migration-Filament-5.md](./legacy/migration-Filament-5.md)
+- [migrazione-Filament-5.md](./legacy/migrazione-Filament-5.md)
+=======
 - [migration-filament-4.md](./legacy/migration-filament-4.md)
 - [migrazione-filament-4.md](./legacy/migrazione-filament-4.md)
+>>>>>>> laraxot/dev
+=======
+- [migration-filament-4.md](./legacy/migration-filament-4.md)
+- [migrazione-filament-4.md](./legacy/migrazione-filament-4.md)
+>>>>>>> laraxot/dev
 - [model-inheritance-analysis.md](./legacy/model-inheritance-analysis.md)
 - [model-inheritance-fixes.md](./legacy/model-inheritance-fixes.md)
 - [modelli-factory-seeder-analisi.md](./legacy/modelli-factory-seeder-analisi.md)
@@ -1389,11 +1457,25 @@
 - [factory-creation-status.md](./legacy/historical/factory-creation-status.md)
 - [factory-lessons-learned.md](./legacy/historical/factory-lessons-learned.md)
 - [features.md](./legacy/historical/features.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Filament-5-actions-namespace.md](./legacy/historical/Filament-5-actions-namespace.md)
+- [Filament-5-widget-rendering-guide.md](./legacy/historical/Filament-5-widget-rendering-guide.md)
+- [Filament-5x-compatibility-1.md](./legacy/historical/Filament-5x-compatibility-1.md)
+- [Filament-5x-compatibility-conflict.md](./legacy/historical/Filament-5x-compatibility-conflict.md)
+- [Filament-5x-compatibility.md](./legacy/historical/Filament-5x-compatibility.md)
+=======
+=======
+>>>>>>> laraxot/dev
 - [filament-4-actions-namespace.md](./legacy/historical/filament-4-actions-namespace.md)
 - [filament-4-widget-rendering-guide.md](./legacy/historical/filament-4-widget-rendering-guide.md)
 - [filament-4x-compatibility-1.md](./legacy/historical/filament-4x-compatibility-1.md)
 - [filament-4x-compatibility-conflict.md](./legacy/historical/filament-4x-compatibility-conflict.md)
 - [filament-4x-compatibility.md](./legacy/historical/filament-4x-compatibility.md)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 - [filament-auth-pages-exceptions.md](./legacy/historical/filament-auth-pages-exceptions.md)
 - [filament-best-practices.md](./legacy/historical/filament-best-practices.md)
 - [filament-charts-implementation.md](./legacy/historical/filament-charts-implementation.md)
@@ -1529,7 +1611,15 @@
 - [migration-unicity-rule.md](./legacy/historical/migration-unicity-rule.md)
 - [migration-violations-analysis.md](./legacy/historical/migration-violations-analysis.md)
 - [migration-violations-current-status.md](./legacy/historical/migration-violations-current-status.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [migrazione-Filament-5.md](./legacy/historical/migrazione-Filament-5.md)
+=======
 - [migrazione-filament-4.md](./legacy/historical/migrazione-filament-4.md)
+>>>>>>> laraxot/dev
+=======
+- [migrazione-filament-4.md](./legacy/historical/migrazione-filament-4.md)
+>>>>>>> laraxot/dev
 - [missing-factories-audit.md](./legacy/historical/missing-factories-audit.md)
 - [missing-features-analysis.md](./legacy/historical/missing-features-analysis.md)
 - [missing-filament-resources-analysis.md](./legacy/historical/missing-filament-resources-analysis.md)
@@ -2229,6 +2319,19 @@
 - [factory-creation.md](./factory-creation.md)
 - [factory-lessons-learned.md](./factory-lessons-learned.md)
 - [features.md](./features.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Filament-5-actions-namespace.md](./Filament-5-actions-namespace.md)
+- [Filament-5-widget-rendering-guide.md](./Filament-5-widget-rendering-guide.md)
+- [Filament-5-widget-rendering.md](./Filament-5-widget-rendering.md)
+- [Filament-5x-compatibility-1-1.md](./Filament-5x-compatibility-1-1.md)
+- [Filament-5x-compatibility-1.md](./Filament-5x-compatibility-1.md)
+- [Filament-5x-compatibility-2.md](./Filament-5x-compatibility-2.md)
+- [Filament-5x-compatibility-conflict.md](./Filament-5x-compatibility-conflict.md)
+- [Filament-5x-compatibility.md](./Filament-5x-compatibility.md)
+=======
+=======
+>>>>>>> laraxot/dev
 - [filament-4-actions-namespace.md](./filament-4-actions-namespace.md)
 - [filament-4-widget-rendering-guide.md](./filament-4-widget-rendering-guide.md)
 - [filament-4-widget-rendering.md](./filament-4-widget-rendering.md)
@@ -2237,6 +2340,10 @@
 - [filament-4x-compatibility-2.md](./filament-4x-compatibility-2.md)
 - [filament-4x-compatibility-conflict.md](./filament-4x-compatibility-conflict.md)
 - [filament-4x-compatibility.md](./filament-4x-compatibility.md)
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 - [filament-5-panel-governance-rule.md](./filament-5-panel-governance-rule.md)
 - [filament-5x-compatibility.md](./filament-5x-compatibility.md)
 - [filament-auth-pages-exceptions.md](./filament-auth-pages-exceptions.md)
@@ -2545,7 +2652,15 @@
 - [migration-dry-violations-report.md](./migration-dry-violations-report.md)
 - [migration-duplicate-resolution.md](./migration-duplicate-resolution.md)
 - [migration-execution-safety.md](./migration-execution-safety.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [migration-Filament-5.md](./migration-Filament-5.md)
+=======
 - [migration-filament-4.md](./migration-filament-4.md)
+>>>>>>> laraxot/dev
+=======
+- [migration-filament-4.md](./migration-filament-4.md)
+>>>>>>> laraxot/dev
 - [migration-filament.md](./migration-filament.md)
 - [migration-fix-tenants.md](./migration-fix-tenants.md)
 - [migration-internal.md](./migration-internal.md)
@@ -2569,7 +2684,15 @@
 - [migrationry-violations.md](./migrationry-violations.md)
 - [migrations.md](./migrations.md)
 - [migrationuplicate-resolution.md](./migrationuplicate-resolution.md)
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [migrazione-Filament-5.md](./migrazione-Filament-5.md)
+=======
 - [migrazione-filament-4.md](./migrazione-filament-4.md)
+>>>>>>> laraxot/dev
+=======
+- [migrazione-filament-4.md](./migrazione-filament-4.md)
+>>>>>>> laraxot/dev
 - [migrazione-filament.md](./migrazione-filament.md)
 - [missing-factories-audit.md](./missing-factories-audit.md)
 - [missing-factories.md](./missing-factories.md)

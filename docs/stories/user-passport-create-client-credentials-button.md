@@ -20,8 +20,18 @@ related:
   - ../../laravel/Modules/User/app/Filament/Clusters/Passport/Resources/OauthClientResource.php
   - ../../laravel/Modules/User/app/Filament/Clusters/Passport/Resources/OauthClientResource/Pages/CreateOauthClient.php
   - ../../laravel/Modules/Xot/app/Actions/ExecuteArtisanCommandAction.php
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - ../../laravel/Modules/<nome progetto>/app/Console/Commands/AssociatePassportClientToUser.php
+  - ../../laravel/Modules/<nome progetto>/docs/stories/<nome progetto>-bulk-invite-job-resilience.md
+=======
   - ../../laravel/Modules/Quaeris/app/Console/Commands/AssociatePassportClientToUser.php
   - ../../laravel/Modules/Quaeris/docs/stories/quaeris-bulk-invite-job-resilience.md
+>>>>>>> laraxot/dev
+=======
+  - ../../laravel/Modules/Quaeris/app/Console/Commands/AssociatePassportClientToUser.php
+  - ../../laravel/Modules/Quaeris/docs/stories/quaeris-bulk-invite-job-resilience.md
+>>>>>>> laraxot/dev
 github:
   repository: https://github.com/laraxot/module_user_fila5
   issues: https://github.com/laraxot/module_user_fila5/issues
@@ -34,7 +44,15 @@ github:
 
 Emerso durante il ripristino del servizio invii automatici dopo il trasloco
 server (vedi
+<<<<<<< HEAD
+<<<<<<< HEAD
+[<nome progetto>-bulk-invite-job-resilience.md](../../laravel/Modules/<nome progetto>/docs/stories/<nome progetto>-bulk-invite-job-resilience.md)):
+=======
 [quaeris-bulk-invite-job-resilience.md](../../laravel/Modules/Quaeris/docs/stories/quaeris-bulk-invite-job-resilience.md)):
+>>>>>>> laraxot/dev
+=======
+[quaeris-bulk-invite-job-resilience.md](../../laravel/Modules/Quaeris/docs/stories/quaeris-bulk-invite-job-resilience.md)):
+>>>>>>> laraxot/dev
 l'amministratore di questo server **non ha accesso SSH**. Onboardare un
 nuovo cliente (es. un quinto cliente oltre ad ATS/Clara/Smat/Vivaservizi)
 richiede oggi 3 passi, di cui uno bloccato:
@@ -114,7 +132,15 @@ subito.
   `super-admin`** (pattern esistente nel progetto,
   `hasRole('super-admin')` — vedi `SurveyPdfPolicy.php`,
   `RegenImg2.php`, e la story
+<<<<<<< HEAD
+<<<<<<< HEAD
+  `<nome progetto>-question-chart-edit-button.md`).
+=======
   `quaeris-question-chart-edit-button.md`).
+>>>>>>> laraxot/dev
+=======
+  `quaeris-question-chart-edit-button.md`).
+>>>>>>> laraxot/dev
 - AC5: nessun comando shell eseguito — verificabile leggendo il codice
   dell'azione, nessuna chiamata a `Process::`/`Artisan::call` con un
   nome interpolato.
@@ -148,17 +174,38 @@ subito.
       valorizzato correttamente sull'utente scelto). **Non ancora
       verificato**: una vera richiesta a `/oauth/token` con quelle
       credenziali — bloccato dall'assenza delle chiavi Passport in locale
+<<<<<<< HEAD
+<<<<<<< HEAD
+      (story `<nome progetto>-bulk-invite-job-resilience.md`, stesso problema
+=======
       (story `quaeris-bulk-invite-job-resilience.md`, stesso problema
+>>>>>>> laraxot/dev
+=======
+      (story `quaeris-bulk-invite-job-resilience.md`, stesso problema
+>>>>>>> laraxot/dev
       noto). Da chiudere quando le chiavi saranno disponibili (locale o
       produzione).
 
 ## Dev Notes
 
 - **Blocco test preesistente, scoperto durante Task 4**: la tabella
+<<<<<<< HEAD
+<<<<<<< HEAD
+  `profiles` nel DB di test (`geek_<nome progetto>_backup_server_23_10_2025_test`,
+  uno snapshot di ottobre 2025) non ha la colonna `uuid`, aggiunta da
+  migration successive (2026-04-28 modulo User, 2026-08-06 modulo
+  <nome progetto>) mai applicate a quel DB. Il mount di una pagina Filament crea
+=======
+=======
+>>>>>>> laraxot/dev
   `profiles` nel DB di test (`geek_quaeris_backup_server_23_10_2025_test`,
   uno snapshot di ottobre 2025) non ha la colonna `uuid`, aggiunta da
   migration successive (2026-04-28 modulo User, 2026-08-06 modulo
   Quaeris) mai applicate a quel DB. Il mount di una pagina Filament crea
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
   un `Profile` per l'utente autenticato e fallisce con `Unknown column
   'uuid' in field list`. Verificato che le migration dichiarano
   davvero la colonna — il DB di test è semplicemente indietro, non un
@@ -190,7 +237,15 @@ subito.
   `createClientCredentialsGrantClient(string $name): Client`
 - [Source: laravel/Modules/Xot/app/Actions/ExecuteArtisanCommandAction.php]
   whitelist esistente, perché non è la via giusta per questo caso
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Source: laravel/Modules/<nome progetto>/app/Console/Commands/AssociatePassportClientToUser.php]
+=======
 - [Source: laravel/Modules/Quaeris/app/Console/Commands/AssociatePassportClientToUser.php]
+>>>>>>> laraxot/dev
+=======
+- [Source: laravel/Modules/Quaeris/app/Console/Commands/AssociatePassportClientToUser.php]
+>>>>>>> laraxot/dev
   passo 3 (associazione utente), già possibile via UI oggi
 
 ## Dev Agent Record
@@ -258,4 +313,12 @@ Repository del modulo, letto con `cd laravel/Modules/User && git remote -v`:
 | Risorsa | Stato | Link |
 |---|---|---|
 | Issue (modulo) | aperta | https://github.com/laraxot/module_user_fila5/issues/85 |
+<<<<<<< HEAD
+<<<<<<< HEAD
+| Issue (root, mirror) | aperta | https://github.com/laraxot/<repo progetto>/issues/181 |
+=======
 | Issue (root, mirror) | aperta | https://github.com/laraxot/base_quaeris_fila5/issues/181 |
+>>>>>>> laraxot/dev
+=======
+| Issue (root, mirror) | aperta | https://github.com/laraxot/base_quaeris_fila5/issues/181 |
+>>>>>>> laraxot/dev

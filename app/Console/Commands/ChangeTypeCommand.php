@@ -7,15 +7,24 @@ namespace Modules\User\Console\Commands;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Support\Htmlable;
+<<<<<<< HEAD
+=======
 
 use function Laravel\Prompts\select;
 use function Laravel\Prompts\text;
 
+>>>>>>> laraxot/dev
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
+use function Laravel\Prompts\select;
+use function Laravel\Prompts\text;
+
+=======
+>>>>>>> laraxot/dev
 /**
  * Command to change user type based on project configuration.
  *
@@ -101,7 +110,11 @@ class ChangeTypeCommand extends Command
         $newType = select('Select new user type:', $options);
 
         $newTypeEnum = $typeClass::tryFrom($newType);
+<<<<<<< HEAD
+        if ($newTypeEnum === null) {
+=======
         if (null === $newTypeEnum) {
+>>>>>>> laraxot/dev
             throw new \InvalidArgumentException('Invalid user type selected.');
         }
         Assert::isInstanceOf($newTypeEnum, HasLabel::class);

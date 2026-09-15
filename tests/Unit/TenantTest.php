@@ -19,11 +19,27 @@ use Spatie\Sluggable\SlugOptions;
 uses(TestCase::class);
 
 /**
+<<<<<<< .merge_file_hHXHf0
  * @param array<string, mixed> $overrides
  */
 function createPersistedTenant(array $overrides = []): Tenant
 {
     $tenant = new Tenant();
+=======
+<<<<<<< HEAD
+ * @param  array<string, mixed>  $overrides
+ */
+function createPersistedTenant(array $overrides = []): Tenant
+{
+    $tenant = new Tenant;
+=======
+ * @param array<string, mixed> $overrides
+ */
+function createPersistedTenant(array $overrides = []): Tenant
+{
+    $tenant = new Tenant();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_yQBiqP
     $tenant->incrementing = false;
     $tenant->setKeyType('string');
 

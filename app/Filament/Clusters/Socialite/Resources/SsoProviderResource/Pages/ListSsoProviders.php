@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource\Pages;
 
+<<<<<<< HEAD
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+=======
+>>>>>>> laraxot/dev
 use Filament\Tables\Filters\SelectFilter;
 use Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -13,6 +18,25 @@ class ListSsoProviders extends XotBaseListRecords
     protected static string $resource = SsoProviderResource::class;
 
     #[\Override]
+<<<<<<< HEAD
+    /**
+     * @return array<string, mixed>
+     */
+    public function getTableColumns(): array
+    {
+        return [
+            'name' => TextColumn::make('name')->searchable()->sortable()->wrap(),
+            'display_name' => TextColumn::make('display_name')->searchable()->sortable()->wrap(),
+            'type' => TextColumn::make('type')->searchable()->sortable(),
+            'is_active' => IconColumn::make('is_active')->boolean()->sortable(),
+            'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
+            'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable(),
+        ];
+    }
+
+    #[\Override]
+=======
+>>>>>>> laraxot/dev
     public function getTableFilters(): array
     {
         return [

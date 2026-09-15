@@ -17,8 +17,17 @@ class GetDomainAllowListAction
 
     public function __construct(
         private readonly Arr $arrHelper,
+<<<<<<< .merge_file_k59uvF
     ) {
     }
+=======
+<<<<<<< HEAD
+    ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_MB4M2N
 
     /**
      * Execute the action.

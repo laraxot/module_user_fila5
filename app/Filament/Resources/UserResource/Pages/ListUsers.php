@@ -8,6 +8,13 @@ use Filament\Actions\Action;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\ExportBulkAction;
+<<<<<<< .merge_file_xOlOg4
+=======
+<<<<<<< HEAD
+use Filament\Tables\Columns\TextColumn;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_hwnxUa
 use Filament\Tables\Filters\BaseFilter;
 use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\User\Filament\Resources\UserResource;
@@ -18,6 +25,26 @@ class ListUsers extends BaseListUsers
 {
     protected static string $resource = UserResource::class;
 
+<<<<<<< .merge_file_xOlOg4
+=======
+<<<<<<< HEAD
+    #[\Override]
+    public function getTableColumns(): array
+    {
+        return [
+            // 'id' => TextColumn::make('id'),
+            'name' => TextColumn::make('name')->searchable(),
+            'email' => TextColumn::make('email')->searchable(),
+            // 'email_verified_at' => TextColumn::make('email_verified_at')
+            //    ->dateTime(),
+            // 'created_at' => TextColumn::make('created_at')
+            //    ->dateTime(),
+        ];
+    }
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_hwnxUa
     /**
      * @return array<BaseFilter>
      */

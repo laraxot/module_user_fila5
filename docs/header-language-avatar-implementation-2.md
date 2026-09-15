@@ -5,8 +5,18 @@ tags: [header, language, avatar, implementation]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "header-language-avatar-implementation-2 implementazione del selettore di lingua e avatar utente nell'header"
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -28,15 +38,35 @@ related:
 
 ## Panoramica
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+Questo documento descrive come implementare nell'header di <nome progetto>:
+=======
 Questo documento descrive come implementare nell'header di Quaeris:
+>>>>>>> laraxot/dev
+=======
+Questo documento descrive come implementare nell'header di Quaeris:
+>>>>>>> laraxot/dev
 1. Un selettore di lingua
 2. Un dropdown con l'avatar dell'utente contenente il link di logout
 
 ## Struttura Attuale dell'Header
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+L'header di <nome progetto> è gestito tramite:
+- **Componente Blade**: `/Themes/One/resources/views/components/sections/header.blade.php`
+- **Configurazione JSON**: `/config/local/<nome progetto>/database/content/sections/1.json`
+=======
 L'header di Quaeris è gestito tramite:
 - **Componente Blade**: `/Themes/One/resources/views/components/sections/header.blade.php`
 - **Configurazione JSON**: `/config/local/Quaeris/database/content/sections/1.json`
+>>>>>>> laraxot/dev
+=======
+L'header di Quaeris è gestito tramite:
+- **Componente Blade**: `/Themes/One/resources/views/components/sections/header.blade.php`
+- **Configurazione JSON**: `/config/local/Quaeris/database/content/sections/1.json`
+>>>>>>> laraxot/dev
 
 Il componente header legge i blocchi dal file JSON e li renderizza in base alla lingua corrente. Attualmente l'header contiene:
 - Un logo
@@ -226,7 +256,15 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
                 "data": {
                     "view": "pub_theme::components.blocks.logo",
                     "src": "patient::images/logo.svg",
+<<<<<<< HEAD
+<<<<<<< HEAD
+"alt": "Logo <nome progetto>",
+=======
 "alt": "Logo Quaeris",
+>>>>>>> laraxot/dev
+=======
+"alt": "Logo Quaeris",
+>>>>>>> laraxot/dev
                     "width": 150,
                     "height": 32
                 }
@@ -300,7 +338,15 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
                 "data": {
                     "view": "pub_theme::components.blocks.logo",
                     "src": "patient::images/logo.svg",
+<<<<<<< HEAD
+<<<<<<< HEAD
+"alt": "<nome progetto> Logo",
+=======
 "alt": "Quaeris Logo",
+>>>>>>> laraxot/dev
+=======
+"alt": "Quaeris Logo",
+>>>>>>> laraxot/dev
                     "width": 150,
                     "height": 32
                 }

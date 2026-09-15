@@ -5,8 +5,18 @@ tags: [optimization, recommendations]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "optimization-recommendations-1 raccomandazioni di ottimizzazione - modulo user"
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -31,7 +41,15 @@ related:
 - **Struttura**: Informazioni sparse senza organizzazione logica
 
 #### 2. Riusabilità Compromessa  
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **141+ occorrenze hardcoded** di "<nome progetto>"
+=======
 - **141+ occorrenze hardcoded** di "Quaeris"
+>>>>>>> laraxot/dev
+=======
+- **141+ occorrenze hardcoded** di "Quaeris"
+>>>>>>> laraxot/dev
 - **210+ occorrenze** di `User::` senza XotData
 - **Import diretti** da moduli project-specific
 - **Path hardcoded** in documentazione
@@ -145,7 +163,15 @@ User/docs/
 #### Pattern di Correzione per Test
 ```php
 // ❌ PROBLEMI ATTUALI
+<<<<<<< HEAD
+<<<<<<< HEAD
+use Modules\<nome progetto>\Models\User;
+=======
 use Modules\Quaeris\Models\User;
+>>>>>>> laraxot/dev
+=======
+use Modules\Quaeris\Models\User;
+>>>>>>> laraxot/dev
 $user = User::factory()->create();
 
 // ✅ SOLUZIONI RICHIESTE
@@ -164,7 +190,15 @@ protected function createTestUser(): mixed
 #### File Prioritari da Correggere
 1. **Widget Auth**: Tutti i widget in `app/Filament/Widgets/Auth/`
 2. **Test Files**: Tutti i test che usano User diretto
+<<<<<<< HEAD
+<<<<<<< HEAD
+3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/<nome progetto>/`
+=======
 3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/Quaeris/`
+>>>>>>> laraxot/dev
+=======
+3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/Quaeris/`
+>>>>>>> laraxot/dev
 
 ### 3. Trait e STI Optimization (IMPORTANTE - 1 giorno)
 
@@ -232,7 +266,15 @@ class UserServiceProvider extends XotBaseServiceProvider
 - [ ] **Collegamenti** ridotti a essenziali (max 20)
 
 ### Riusabilità
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [ ] **0 occorrenze** hardcoded "<nome progetto>"
+=======
 - [ ] **0 occorrenze** hardcoded "Quaeris"
+>>>>>>> laraxot/dev
+=======
+- [ ] **0 occorrenze** hardcoded "Quaeris"
+>>>>>>> laraxot/dev
 - [ ] **0 utilizzi** User:: senza XotData
 - [ ] **100% pattern** dinamici nei test
 - [ ] **Script check** passa senza errori
@@ -267,7 +309,15 @@ class UserServiceProvider extends XotBaseServiceProvider
 find Modules/User/docs -name "*.md" | wc -l
 
 # Verifica riusabilità
+<<<<<<< HEAD
+<<<<<<< HEAD
+grep -r -i "<nome progetto>" Modules/User/ --include="*.php" | wc -l
+=======
 grep -r -i "Quaeris" Modules/User/ --include="*.php" | wc -l
+>>>>>>> laraxot/dev
+=======
+grep -r -i "Quaeris" Modules/User/ --include="*.php" | wc -l
+>>>>>>> laraxot/dev
 ```
 
 ### Post-Implementazione

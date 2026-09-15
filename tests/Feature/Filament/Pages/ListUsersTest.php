@@ -33,7 +33,15 @@ beforeEach(function (): void {
     }
     Filament::setCurrentPanel($panel);
 
+<<<<<<< .merge_file_6o8MOi
     TestCase::$listUsersPage = new ListUsers();
+=======
+<<<<<<< HEAD
+    TestCase::$listUsersPage = new ListUsers;
+=======
+    TestCase::$listUsersPage = new ListUsers();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JtQQ4t
 
     $users = UserFactory::new()
         ->count(3)

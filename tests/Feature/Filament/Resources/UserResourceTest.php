@@ -70,13 +70,29 @@ describe('User Resource', function (): void {
     });
 
     test('user resource has combined relation manager tabs', function (): void {
+<<<<<<< .merge_file_w68QLS
         $resource = new UserResource();
+=======
+<<<<<<< HEAD
+        $resource = new UserResource;
+=======
+        $resource = new UserResource();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_zGFgy8
 
         Assert::assertTrue($resource->hasCombinedRelationManagerTabsWithContent());
     });
 
     test('user resource extends correct base class', function (): void {
+<<<<<<< .merge_file_w68QLS
         $resource = new UserResource();
+=======
+<<<<<<< HEAD
+        $resource = new UserResource;
+=======
+        $resource = new UserResource();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_zGFgy8
 
         Assert::assertInstanceOf(XotBaseResource::class, $resource);
     });
@@ -99,7 +115,15 @@ describe('User Resource', function (): void {
 
         $nameField = userResourceFindComponentByName($section01Schema, 'name');
 
+<<<<<<< .merge_file_w68QLS
         if (null === $nameField) {
+=======
+<<<<<<< HEAD
+        if ($nameField === null) {
+=======
+        if (null === $nameField) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_zGFgy8
             $this->skipTest('name field not found in section01 schema');
         }
 
@@ -114,7 +138,15 @@ describe('User Resource', function (): void {
 
         $emailField = userResourceFindComponentByName($section01Schema, 'email');
 
+<<<<<<< .merge_file_w68QLS
         if (null === $emailField) {
+=======
+<<<<<<< HEAD
+        if ($emailField === null) {
+=======
+        if (null === $emailField) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_zGFgy8
             $this->skipTest('email field not found in section01 schema');
         }
 
@@ -129,7 +161,15 @@ describe('User Resource', function (): void {
 
         $passwordField = userResourceFindComponentByName($section01Schema, 'password');
 
+<<<<<<< .merge_file_w68QLS
         if (null === $passwordField) {
+=======
+<<<<<<< HEAD
+        if ($passwordField === null) {
+=======
+        if (null === $passwordField) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_zGFgy8
             $this->skipTest('password field not found in section01 schema');
         }
 
@@ -157,7 +197,15 @@ describe('User Resource', function (): void {
 
         $emailField = userResourceFindComponentByName($section01Schema, 'email');
 
+<<<<<<< .merge_file_w68QLS
         if (null === $emailField) {
+=======
+<<<<<<< HEAD
+        if ($emailField === null) {
+=======
+        if (null === $emailField) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_zGFgy8
             $this->skipTest('email field not found in section01 schema');
         }
 
@@ -172,7 +220,15 @@ describe('User Resource', function (): void {
 
         $createdAtField = userResourceFindComponentByName($section02Schema, 'created_at');
 
+<<<<<<< .merge_file_w68QLS
         if (null === $createdAtField) {
+=======
+<<<<<<< HEAD
+        if ($createdAtField === null) {
+=======
+        if (null === $createdAtField) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_zGFgy8
             $this->skipTest('created_at field not found in section02 schema');
         }
 
@@ -180,13 +236,29 @@ describe('User Resource', function (): void {
     });
 
     test('user resource can be instantiated', function (): void {
+<<<<<<< .merge_file_w68QLS
         $resource = new UserResource();
+=======
+<<<<<<< HEAD
+        $resource = new UserResource;
+=======
+        $resource = new UserResource();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_zGFgy8
 
         Assert::assertInstanceOf(UserResource::class, $resource);
     });
 
     test('user resource has correct model', function (): void {
+<<<<<<< .merge_file_w68QLS
         $resource = new UserResource();
+=======
+<<<<<<< HEAD
+        $resource = new UserResource;
+=======
+        $resource = new UserResource();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_zGFgy8
 
         Assert::assertInstanceOf(UserResource::class, $resource);
     });

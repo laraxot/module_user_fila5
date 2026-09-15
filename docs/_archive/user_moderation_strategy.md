@@ -100,6 +100,10 @@ Instead of traditional service classes, we'll use [@spatie/laravel-queueable-act
       protected static ?string $model = User::class;
       protected static ?string $navigationIcon = 'heroicon-o-check-circle';
       public static function getFormSchema(): array {
+<<<<<<< HEAD
+      public function getFormSchema(): array {
+=======
+>>>>>>> laraxot/dev
           return [
               'type' => Forms\Components\Select::make('type')
                   ->options(UserType::all()),

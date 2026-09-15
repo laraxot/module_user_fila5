@@ -5,10 +5,17 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\ClientResource\Schemas;
 
 use Filament\Forms\Components\Field;
+<<<<<<< HEAD
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Toggle;
+use Filament\Schemas\Components\Component as SchemaComponent;
+use Filament\Forms\Components\Select;
+=======
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Component as SchemaComponent;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class OauthClientForm extends XotBaseResourceForm

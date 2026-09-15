@@ -25,9 +25,15 @@ return [
     'plural_label' => 'Roles (Plurale)',
     'actions' => [
         'create' => ['label' => 'Crea Roles', 'icon' => 'create', 'tooltip' => 'create'],
+<<<<<<< HEAD
+        'edit' => ['label' => 'Modifica Roles'],
+        'delete' => ['label' => 'Elimina Roles', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+=======
         'edit' => ['label' => 'Modifica Roles', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Roles', 'icon' => 'delete', 'tooltip' => 'delete'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+>>>>>>> laraxot/dev
     ],
 ];

@@ -21,5 +21,8 @@ use Laravel\Passport\DeviceCode as PassportDeviceCode;
  */
 class OauthDeviceCode extends PassportDeviceCode
 {
+<<<<<<< HEAD
+=======
     protected $connection = 'user';
+>>>>>>> laraxot/dev
 }
