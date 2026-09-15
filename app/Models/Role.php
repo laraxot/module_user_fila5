@@ -28,8 +28,7 @@ use Webmozart\Assert\Assert;
 /**
  * Modules\User\Models\Role.
  *
- * <<<<<<< HEAD
- *
+  *
  * @property int                                 $id
  * @property string                              $uuid
  * @property string|null                         $team_id
@@ -82,24 +81,18 @@ use Webmozart\Assert\Assert;
  * @method static Builder|Role withoutPermission($permissions)
  * @method static Builder|Role whereDescription($value)
  * @method static Builder|Role whereDisplayName($value)
- *                                                                                                                 <<<<<<< HEAD
+ *                                                                                                                 * @method static static       firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static       updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static       firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static       updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
- *                                                                                                                 =======
- * @method static static       firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
- * @method static static       updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
- *                                                                                                                 >>>>>>> laraxot/dev
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  *
  * @method static \Modules\User\Database\Factories\RoleFactory factory($count = null, $state = [])
- *                                                                                                 <<<<<<< HEAD
  * @method static Builder<static>|Role                         whereUuid($value)
- *                                                                                                 =======
  * @method static Builder<static>|Role                         whereUuid($value)
- *                                                                                                 >>>>>>> laraxot/dev
  *
  * @mixin \Eloquent
  */

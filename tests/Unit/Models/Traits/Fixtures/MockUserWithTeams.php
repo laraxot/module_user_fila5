@@ -22,8 +22,7 @@ use Spatie\Permission\Contracts\Role;
  *
  * <<<<<<< .merge_file_NQf79z
  * =======
- * <<<<<<< HEAD
- *
+  *
  * @property string                            $id
  * @property int|null                          $current_team_id
  * @property TeamContract|null                 $currentTeam
@@ -74,16 +73,10 @@ class MockUserWithTeams extends Model
     }
 
     /**
-     * <<<<<<< .merge_file_NQf79z.
      *
      * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
-     *                                                                        =======
-     *                                                                        <<<<<<< HEAD
      * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
-     *                                                                        =======
      * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
-     *                                                                        >>>>>>> laraxot/dev
-     *                                                                        >>>>>>> .merge_file_enP1wL
      */
     public function hasRole(string|int|array|Role|\BackedEnum $roles, ?string $guard = null): bool
     {

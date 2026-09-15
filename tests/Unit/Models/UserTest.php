@@ -17,13 +17,8 @@ uses(TestCase::class);
  * <<<<<<< .merge_file_XTEc1X.
  *
  * @param array<string, mixed> $attributes
- *                                         =======
- *                                         <<<<<<< HEAD
  * @param array<string, mixed> $attributes
- *                                         =======
- * @param array<string, mixed> $attributes
- *                                         >>>>>>> laraxot/dev
- *                                         >>>>>>> .merge_file_EJldfA
+  * @param array<string, mixed> $attributes
  */
 function modelsUserCreate(array $attributes = []): User
 {

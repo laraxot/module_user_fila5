@@ -14,8 +14,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 /**
  * @property Model|\Eloquent $notifiable
  *
- * <<<<<<< HEAD
- *
+  *
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  * @method static Builder|Notification                                 newModelQuery()
@@ -27,8 +26,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
- *                                                                                                         =======
- * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
+  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  * @method static Builder|Notification                                 newModelQuery()
  * @method static Builder|Notification                                 newQuery()

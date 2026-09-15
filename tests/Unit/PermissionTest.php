@@ -13,16 +13,10 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
- * <<<<<<< .merge_file_8qtlKe.
  *
  * @param array<string, mixed> $attributes
- *                                         =======
- *                                         <<<<<<< HEAD
  * @param array<string, mixed> $attributes
- *                                         =======
- * @param array<string, mixed> $attributes
- *                                         >>>>>>> laraxot/dev
- *                                         >>>>>>> .merge_file_EKlgpQ
+  * @param array<string, mixed> $attributes
  */
 function createTestPermission(array $attributes = []): Permission
 {
@@ -33,16 +27,10 @@ function createTestPermission(array $attributes = []): Permission
 }
 
 /**
- * <<<<<<< .merge_file_8qtlKe.
  *
  * @param array<string, mixed> $attributes
- *                                         =======
- *                                         <<<<<<< HEAD
  * @param array<string, mixed> $attributes
- *                                         =======
- * @param array<string, mixed> $attributes
- *                                         >>>>>>> laraxot/dev
- *                                         >>>>>>> .merge_file_EKlgpQ
+  * @param array<string, mixed> $attributes
  */
 function createTestRoleForPermission(array $attributes = []): Role
 {

@@ -91,12 +91,7 @@ class CustomCss extends XotBasePage
     }
 
     /**
-     * <<<<<<< HEAD.
-     *
      * @param array<string, mixed> $data
-     *                                   =======
-     * @param array<string, mixed> $data
-     *                                   >>>>>>> laraxot/dev
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {

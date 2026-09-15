@@ -12,8 +12,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 /**
  * Modules\User\Models\PersonalAccessToken.
  *
- * <<<<<<< HEAD
- *
+  *
  * @property int         $id
  * @property string      $tokenable_type
  * @property int         $tokenable_id
@@ -32,8 +31,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  *
- * <<<<<<< HEAD
- *
+  *
  * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory       factory($count = null, $state = [])
  *                                                                                                                      =======
  * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory       factory($count = null, $state = [])

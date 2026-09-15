@@ -15,13 +15,10 @@ uses(TestCase::class);
 
 describe('RegisterOauthUserAction', function (): void {
     /**
-     * <<<<<<< HEAD.
-     *
+          *
      * @param array<string, mixed> $attributes
-     *                                         =======
-     * @param array<string, mixed> $attributes
-     *                                         >>>>>>> laraxot/dev
-     */
+          * @param array<string, mixed> $attributes
+          */
     $getMockUser = function (array $attributes = []): SocialiteUserContract {
         /** @var array<string, mixed> $normalizedAttributes */
         $normalizedAttributes = $attributes;

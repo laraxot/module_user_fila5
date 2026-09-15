@@ -22,8 +22,7 @@ final class AdminPanelAccessUserFixture extends BaseUser
     }
 
     /**
-     * <<<<<<< HEAD.
-     *
+          *
      * @param array<int, string>|Collection<int, string> $roles
      *                                                          =======
      * @param array<int, string>|Collection<int, string> $roles

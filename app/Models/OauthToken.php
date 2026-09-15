@@ -9,8 +9,7 @@ use Laravel\Passport\Token as PassportToken;
 use Modules\User\Traits\ResolvesPassportTokenUserRelation;
 
 /**
- * <<<<<<< HEAD.
- *
+  *
  * @property bool                         $revoked
  * @property int|string|null              $user_id
  * @property string                       $id
