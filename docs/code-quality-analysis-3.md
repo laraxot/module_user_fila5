@@ -5,8 +5,28 @@ tags: [code, quality, analysis]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "code-quality-analysis-3 code quality analysis - user module"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< .merge_file_trHtY8
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_BRaoFm
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -271,7 +291,23 @@ public function authenticate(array $credentials): bool
 **Problem**: Nested permission logic
 **Solution**: Use guard clauses and early returns
 
+<<<<<<< HEAD
 ## 🔧 Filament 4 Compliance Issues
+=======
+<<<<<<< .merge_file_trHtY8
+## 🔧 Filament 4 Compliance Issues
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🔧 Filament 5 Compliance Issues
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_BRaoFm
+>>>>>>> laraxot/dev
 
 ### 1. Static Method Violations
 **Problem**: Making non-static methods static

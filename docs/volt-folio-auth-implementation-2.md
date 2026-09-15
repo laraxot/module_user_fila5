@@ -5,8 +5,23 @@ tags: [volt, folio, auth, implementation]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "volt-folio-auth-implementation-2 implementazione corretta delle pagine di autenticazione con volt e folio"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -504,7 +519,19 @@ new class extends Component {
 3. **Struttura del Codice**
    - Separa la logica PHP dal template Blade
    - Usa l'approccio funzionale o la classe anonima in base alla complessità
+<<<<<<< HEAD
 - Segui le convenzioni di naming e struttura di Quaeris
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Segui le convenzioni di naming e struttura di <nome progetto>
+=======
+- Segui le convenzioni di naming e struttura di Quaeris
+>>>>>>> laraxot/dev
+=======
+- Segui le convenzioni di naming e struttura di Quaeris
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 4. **Sicurezza**
    - Invalida e rigenera sempre la sessione dopo il logout
@@ -548,7 +575,19 @@ new class extends Component {
 
 ## Conclusione
 
+<<<<<<< HEAD
 Seguendo queste linee guida per l'implementazione delle pagine di autenticazione con Volt e Folio, garantirai che il tuo codice sia conforme alle convenzioni di Quaeris, sia facile da mantenere e sfrutti al meglio le capacità di Laravel, Livewire, Volt e Folio.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Seguendo queste linee guida per l'implementazione delle pagine di autenticazione con Volt e Folio, garantirai che il tuo codice sia conforme alle convenzioni di <nome progetto>, sia facile da mantenere e sfrutti al meglio le capacità di Laravel, Livewire, Volt e Folio.
+=======
+Seguendo queste linee guida per l'implementazione delle pagine di autenticazione con Volt e Folio, garantirai che il tuo codice sia conforme alle convenzioni di Quaeris, sia facile da mantenere e sfrutti al meglio le capacità di Laravel, Livewire, Volt e Folio.
+>>>>>>> laraxot/dev
+=======
+Seguendo queste linee guida per l'implementazione delle pagine di autenticazione con Volt e Folio, garantirai che il tuo codice sia conforme alle convenzioni di Quaeris, sia facile da mantenere e sfrutti al meglio le capacità di Laravel, Livewire, Volt e Folio.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Riferimenti
 

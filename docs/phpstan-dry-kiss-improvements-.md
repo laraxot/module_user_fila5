@@ -5,8 +5,23 @@ tags: [phpstan, dry, kiss, improvements]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan-dry-kiss-improvements- phpstan level 10 + dry/kiss improvements - user module"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -42,7 +57,19 @@ Il modulo User è stato analizzato e migliorato per conformità PHPStan Level 10
 **Before**:
 ```php
 /**
+<<<<<<< HEAD
  * @property-read \Modules\Fixcity\Models\Profile|null $creator
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+ * @property-read \Modules\<nome progetto>\Models\Profile|null $creator
+=======
+ * @property-read \Modules\Fixcity\Models\Profile|null $creator
+>>>>>>> laraxot/dev
+=======
+ * @property-read \Modules\Fixcity\Models\Profile|null $creator
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
  */
 ```
 
@@ -199,10 +226,29 @@ class Permission extends SpatiePermission
    }
    ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+2. **Don't use <nome progetto> references**:
+   ```php
+   /**
+    * @property-read \Modules\<nome progetto>\Models\Profile|null $creator // ❌ Class doesn't exist!
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 2. **Don't use Fixcity references**:
    ```php
    /**
     * @property-read \Modules\Fixcity\Models\Profile|null $creator // ❌ Class doesn't exist!
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     */
    ```
 

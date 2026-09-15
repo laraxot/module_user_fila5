@@ -28,14 +28,30 @@ beforeEach(function (): void {
 describe('Oauth Client', function (): void {
     test('oauth client can be instantiated', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $client = new OauthClient();
+=======
+<<<<<<< HEAD
+        $client = new OauthClient;
+=======
+        $client = new OauthClient();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(OauthClient::class, $client);
         Assert::assertInstanceOf(Client::class, $client);
     });
 
     test('oauth client has connection user', function (): void {
+<<<<<<< HEAD
         $client = new OauthClient();
+=======
+<<<<<<< HEAD
+        $client = new OauthClient;
+=======
+        $client = new OauthClient();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
         Assert::assertSame('user', $client->getConnectionName());
     });

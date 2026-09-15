@@ -16,10 +16,25 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('phpstan fixtures reference dormant traits', function (): void {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    Assert::assertInstanceOf(PasswordValidationRulesMockableFixture::class, new PasswordValidationRulesMockableFixture);
+    Assert::assertInstanceOf(HasRolesTraitFixture::class, new HasRolesTraitFixture);
+    Assert::assertInstanceOf(HasPasswordExpiryFixture::class, new HasPasswordExpiryFixture);
+    Assert::assertTrue(class_exists(HasPassportConfigurationFixture::class));
+    Assert::assertInstanceOf(CreatesApplicationFixture::class, new CreatesApplicationFixture);
+    Assert::assertInstanceOf(HasUserTestCaseFixture::class, new HasUserTestCaseFixture);
+=======
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(PasswordValidationRulesMockableFixture::class, new PasswordValidationRulesMockableFixture());
     Assert::assertInstanceOf(HasRolesTraitFixture::class, new HasRolesTraitFixture());
     Assert::assertInstanceOf(HasPasswordExpiryFixture::class, new HasPasswordExpiryFixture());
     Assert::assertTrue(class_exists(HasPassportConfigurationFixture::class));
     Assert::assertInstanceOf(CreatesApplicationFixture::class, new CreatesApplicationFixture());
     Assert::assertInstanceOf(HasUserTestCaseFixture::class, new HasUserTestCaseFixture());
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 });

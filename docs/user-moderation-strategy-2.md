@@ -5,8 +5,23 @@ tags: [user, moderation, strategy]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "user-moderation-strategy-2 user moderation strategy"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -21,7 +36,19 @@ related:
 # User Moderation Strategy
 
 ## Overview
+<<<<<<< HEAD
 In the Quaeris system, and across various projects utilizing the `User` module, users can have different roles or types, each potentially requiring specific verification or moderation processes before full access to platform functionalities is granted. This document analyzes the integration of a unified moderation strategy within the `User` module, ensuring it remains generic and applicable to all user types, mirroring the approach of a unified registration wizard.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+In the <nome progetto> system, and across various projects utilizing the `User` module, users can have different roles or types, each potentially requiring specific verification or moderation processes before full access to platform functionalities is granted. This document analyzes the integration of a unified moderation strategy within the `User` module, ensuring it remains generic and applicable to all user types, mirroring the approach of a unified registration wizard.
+=======
+In the Quaeris system, and across various projects utilizing the `User` module, users can have different roles or types, each potentially requiring specific verification or moderation processes before full access to platform functionalities is granted. This document analyzes the integration of a unified moderation strategy within the `User` module, ensuring it remains generic and applicable to all user types, mirroring the approach of a unified registration wizard.
+>>>>>>> laraxot/dev
+=======
+In the Quaeris system, and across various projects utilizing the `User` module, users can have different roles or types, each potentially requiring specific verification or moderation processes before full access to platform functionalities is granted. This document analyzes the integration of a unified moderation strategy within the `User` module, ensuring it remains generic and applicable to all user types, mirroring the approach of a unified registration wizard.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Rationale for Moderation within User Module
 Given that the `User` module serves as the central hub for user management across multiple projects, it is logical to embed moderation functionalities within this module. This approach ensures:

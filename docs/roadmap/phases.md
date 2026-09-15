@@ -5,8 +5,23 @@ tags: [phases]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "phases fasi di sviluppo - user module"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -26,7 +41,19 @@ related:
 - [x] Standardizzazione del pattern ID (autoincrement) e UUID per i profili
 - [ ] Rimozione definitiva dei 550+ file obsoleti
 - [ ] Implementazione del **Security Cluster** in Filament v5
+<<<<<<< HEAD
 - [ ] Supporto completo per **Laravel 12 Authentication Features**
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [ ] Supporto completo per **Laravel 13 Authentication Features**
+=======
+- [ ] Supporto completo per **Laravel 12 Authentication Features**
+>>>>>>> laraxot/dev
+=======
+- [ ] Supporto completo per **Laravel 12 Authentication Features**
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Fase 2: Modern Identity (Planned)
 

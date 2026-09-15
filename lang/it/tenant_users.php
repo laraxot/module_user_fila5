@@ -21,7 +21,15 @@ return [
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+<<<<<<< HEAD
         'edit' => ['tooltip' => 'edit', 'label' => 'edit', 'icon' => 'edit'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+=======
+<<<<<<< HEAD
+=======
+        'edit' => ['tooltip' => 'edit', 'label' => 'edit', 'icon' => 'edit'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     ],
 ];

@@ -209,7 +209,23 @@ This story addresses the critical and high-severity findings via a structured, p
 **Requires**:
 - Knowledge of Laraxot migration patterns
 - Understanding of Spatie Laravel Permissions
+<<<<<<< HEAD
 - Familiarity with Filament 4 architecture
+=======
+<<<<<<< .merge_file_aRakyR
+- Familiarity with Filament 4 architecture
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Familiarity with Filament 5 architecture
+=======
+- Familiarity with Filament 4 architecture
+>>>>>>> laraxot/dev
+=======
+- Familiarity with Filament 4 architecture
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_esHeH6
+>>>>>>> laraxot/dev
 
 ---
 

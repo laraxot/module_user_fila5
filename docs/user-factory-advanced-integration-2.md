@@ -1,12 +1,42 @@
 ---
+<<<<<<< HEAD
 title: "UserFactory Advanced Integration - Modulo User & Quaeris"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+title: "UserFactory Advanced Integration - Modulo User & <nome progetto>"
+=======
+title: "UserFactory Advanced Integration - Modulo User & Quaeris"
+>>>>>>> laraxot/dev
+=======
+title: "UserFactory Advanced Integration - Modulo User & Quaeris"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 type: concept
 tags: [user, factory, advanced, integration]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< HEAD
 qmd: "user-factory-advanced-integration-2 userfactory advanced integration - modulo user & quaeris"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+qmd: "user-factory-advanced-integration-2 userfactory advanced integration - modulo user & <nome progetto>"
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+qmd: "user-factory-advanced-integration-2 userfactory advanced integration - modulo user & quaeris"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+qmd: "user-factory-advanced-integration-2 userfactory advanced integration - modulo user & quaeris"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -18,7 +48,19 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 # UserFactory Advanced Integration - Modulo User & Quaeris
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# UserFactory Advanced Integration - Modulo User & <nome progetto>
+=======
+# UserFactory Advanced Integration - Modulo User & Quaeris
+>>>>>>> laraxot/dev
+=======
+# UserFactory Advanced Integration - Modulo User & Quaeris
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Post Deep-Study Analysis 
 
@@ -29,7 +71,19 @@ Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integr
 ### Hierarchy Mapping
 ```
 BaseUser (User Module)
+<<<<<<< HEAD
 ├── User (Quaeris) - STI Base + Business Logic
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+├── User (<nome progetto>) - STI Base + Business Logic
+=======
+├── User (Quaeris) - STI Base + Business Logic
+>>>>>>> laraxot/dev
+=======
+├── User (Quaeris) - STI Base + Business Logic
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     ├── Patient (HasParent) - Healthcare Consumer
     ├── Doctor (HasParent) - Healthcare Provider  
     └── Admin (HasParent) - System Administrator
@@ -37,7 +91,19 @@ BaseUser (User Module)
 
 ### Cross-Module Compatibility Matrix
 
+<<<<<<< HEAD
 | BaseUser Field | Quaeris User | Business Logic | Factory Support |
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+| BaseUser Field | <nome progetto> User | Business Logic | Factory Support |
+=======
+| BaseUser Field | Quaeris User | Business Logic | Factory Support |
+>>>>>>> laraxot/dev
+=======
+| BaseUser Field | Quaeris User | Business Logic | Factory Support |
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 |----------------|----------------|----------------|-----------------|
 | `name` | `name` | Full name concat | ✅ Complete |
 | `email` | `email` | Authentication | ✅ Complete |
@@ -104,7 +170,19 @@ User::factory()->gdprCompliant()->create();
 // BaseUser (User Module) 
 protected $connection = 'user';
 
+<<<<<<< HEAD
 // Quaeris User (Healthcare Domain)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+// <nome progetto> User (Healthcare Domain)
+=======
+// Quaeris User (Healthcare Domain)
+>>>>>>> laraxot/dev
+=======
+// Quaeris User (Healthcare Domain)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 protected $connection = 'salute_ora';
 
 // Factory automatically handles connection switching
@@ -135,7 +213,19 @@ public function test_cross_module_compatibility()
     expect($user)->toHaveProperty('password'); 
     expect($user->email_verified_at)->toBeInstanceOf(Carbon::class);
     
+<<<<<<< HEAD
 // Quaeris domain contracts
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+// <nome progetto> domain contracts
+=======
+// Quaeris domain contracts
+>>>>>>> laraxot/dev
+=======
+// Quaeris domain contracts
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     expect($user->type)->toBeInstanceOf(UserTypeEnum::class);
     expect($user->state)->toBeInstanceOf(UserState::class);
 }
@@ -281,7 +371,19 @@ public function run(): void
 - **Reusability**: Base authentication contracts preserved
 - **Testability**: Comprehensive user scenario testing
 
+<<<<<<< HEAD
 ### For Quaeris Module
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### For <nome progetto> Module
+=======
+### For Quaeris Module
+>>>>>>> laraxot/dev
+=======
+### For Quaeris Module
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Domain Focus**: Healthcare-specific data generation
 - **Business Logic**: Real-world scenario testing
 - **Compliance**: GDPR and healthcare regulation support
@@ -300,10 +402,29 @@ public function run(): void
 
 ## Link Documentazione
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### <nome progetto> Module
+- [Advanced Improvements Analysis](../../<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
+- [Implementation Completed](../../<nome progetto>/docs/factories/userfactory_implementation_completed.md)
+- [Model States](../../<nome progetto>/docs/models/states.md)
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ### Quaeris Module
 - [Advanced Improvements Analysis](../../Quaeris/docs/factories/userfactory-advanced-improvements-analysis.md)
 - [Implementation Completed](../../Quaeris/docs/factories/userfactory_implementation_completed.md)
 - [Model States](../../Quaeris/docs/models/states.md)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### User Module
 - [User Factory Integration](./user-factory-integration-2.md)
@@ -311,5 +432,17 @@ public function run(): void
 - [BaseUser Architecture](./parental-inheritance.md)
 
 ### Root Documentation  
+<<<<<<< HEAD
 - [UserFactory Quaeris Integration](../../../../../docs/userfactory_Quaeris_integration.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [UserFactory <nome progetto> Integration](../../../../../docs/userfactory_<nome progetto>_integration.md)
+=======
+- [UserFactory Quaeris Integration](../../../../../docs/userfactory_Quaeris_integration.md)
+>>>>>>> laraxot/dev
+=======
+- [UserFactory Quaeris Integration](../../../../../docs/userfactory_Quaeris_integration.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [Testing Standards](../../../../../docs/testing_standards.md) 

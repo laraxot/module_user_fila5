@@ -35,7 +35,19 @@ Concetti specifici del modulo User. Carica on-demand via `qmd search` o consulta
 
 - [notifications-runtime-model.md](notifications-runtime-model.md) — runtime + `NotificationSchema`
 - [notifications-folio-page.md](notifications-folio-page.md) — `route('notifications')`
+<<<<<<< HEAD
 - [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner Fixcity
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner <nome progetto>
+=======
+- [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner Fixcity
+>>>>>>> laraxot/dev
+=======
+- [profiles-ownership-boundary-rule.md](profiles-ownership-boundary-rule.md) — owner Fixcity
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [no-notifications-migration-in-user-module](../rules/no-notifications-migration-in-user-module.md)
 
 ## Folio FO

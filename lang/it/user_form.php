@@ -10,10 +10,17 @@ return [
         'password' => ['label' => 'Password', 'placeholder' => 'Inserisci una password sicura', 'helper_text' => 'Minimo 12 caratteri, una maiuscola, un numero e un simbolo.', 'description' => 'Password di accesso'],
         'password_confirmation' => ['label' => 'Conferma password', 'placeholder' => 'Ripeti la password', 'helper_text' => 'Deve corrispondere alla password inserita sopra.', 'description' => 'Conferma password'],
         'remember' => ['label' => 'Ricordami', 'description' => 'Mantieni la sessione attiva su questo dispositivo', 'helper_text' => 'Sessione prolungata su dispositivo attendibile', 'placeholder' => 'remember'],
+<<<<<<< HEAD
         'state' => ['description' => 'state', 'label' => 'state', 'placeholder' => 'state', 'helper_text' => ''],
         'type' => ['label' => 'type', 'placeholder' => 'type', 'helper_text' => '', 'description' => 'type'],
         'created_at' => ['label' => 'created_at'],
         'name' => ['label' => 'name', 'placeholder' => 'name', 'helper_text' => '', 'description' => 'name'],
+=======
+        'state' => ['description' => 'state', 'label' => 'state', 'placeholder' => 'state', 'helper_text' => 'state'],
+        'type' => ['label' => 'type', 'placeholder' => 'type', 'helper_text' => 'type', 'description' => 'type'],
+        'created_at' => ['label' => 'created_at'],
+        'name' => ['label' => 'name', 'placeholder' => 'name', 'helper_text' => 'name', 'description' => 'name'],
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'showPassword' => ['label' => 'Mostra password', 'icon' => 'heroicon-o-eye', 'tooltip' => 'Mostra password'],

@@ -5,8 +5,23 @@ tags: [phpstan, fixes]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan-fixes- user module - phpstan fixes session 2025-10-01"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -627,7 +642,19 @@ public string $currentState = 'default';
 1. **NavigationIcon**: Gestito automaticamente da `NavigationLabelTrait` tramite traduzioni
 2. **Form Schema**: Usare sempre `getFormSchema()` invece di `form()`
 3. **Table Columns**: Gestite nella pagina ListRecords tramite `getTableColumns()`
+<<<<<<< HEAD
 4. **Grid Component**: In Filament 4, Grid è in `Filament\Schemas\Components\Grid`, non in `Filament\Forms\Components\Grid`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+4. **Grid Component**: In Filament 5, Grid è in `Filament\Schemas\Components\Grid`, non in `Filament\Forms\Components\Grid`
+=======
+4. **Grid Component**: In Filament 4, Grid è in `Filament\Schemas\Components\Grid`, non in `Filament\Forms\Components\Grid`
+>>>>>>> laraxot/dev
+=======
+4. **Grid Component**: In Filament 4, Grid è in `Filament\Schemas\Components\Grid`, non in `Filament\Forms\Components\Grid`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 

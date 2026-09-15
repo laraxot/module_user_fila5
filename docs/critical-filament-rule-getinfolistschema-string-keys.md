@@ -5,8 +5,23 @@ tags: [critical, filament, rule, getinfolistschema]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "critical-filament-rule-getinfolistschema-string-keys critical filament rule: getinfolistschema string keys"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -60,10 +75,33 @@ protected function getInfolistSchema(): array
 ```
 
 ## Architecture Context
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+Nel percorso Resource, lo schema appartiene alla classe dedicata
+`Schemas/{Model}Infolist`, che estende `XotBaseResourceInfolist` e implementa
+`public function getInfolistSchema(): array`. Le chiavi stringa restano la
+convenzione del progetto per identificare i componenti.
+
+Le pagine che estendono `XotBaseViewRecord` non devono dichiarare quel metodo:
+`Filament\Resources\Pages\ViewRecord::infolist()` delega alla Resource, che
+risolve la classe dedicata tramite `XotBaseResource::getInfolistClass()`.
+Un override sulla pagina non modifica lo schema visualizzato.
+
+Esempio verificato nella story [XOT-5.44](../../Xot/docs/stories/5.44.quality-gates-prompt-exec.story.md):
+[ViewTeamUser](../app/Filament/Resources/TeamUserResource/Pages/ViewTeamUser.php)
+dichiara solo la Resource; i campi visualizzati restano definiti in
+[TeamUserInfolist](../app/Filament/Resources/TeamUserResource/Schemas/TeamUserInfolist.php).
+=======
+>>>>>>> laraxot/dev
 This rule applies to all `getInfolistSchema()` implementations throughout the Laraxot architecture, including:
 - XotBaseViewRecord implementations
 - Resource classes that define infolist schemas
 - Any custom infolist schema methods
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Impact
 Following this rule ensures:

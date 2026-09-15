@@ -4,7 +4,19 @@ type: concept
 sources: []
 confidence: high
 created: 2026-05-07
+<<<<<<< HEAD
 updated: 2026-09-10
+=======
+<<<<<<< .merge_file_NpI19g
+updated: 2026-09-10
+=======
+<<<<<<< HEAD
+updated: 2026-05-07
+=======
+updated: 2026-09-10
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_R0TJUR
+>>>>>>> laraxot/dev
 tags: [xotbase, filament, tables, enforcement]
 related:
   - "./ai-harness-user-discipline.md"
@@ -19,15 +31,41 @@ related:
 
 # User Module: XotBaseResourceTable Columns
 
+<<<<<<< HEAD
 39 Table files reviewed against User module models, local migrations and installed Passport schemas.
+=======
+<<<<<<< .merge_file_NpI19g
+39 Table files reviewed against User module models, local migrations and installed Passport schemas.
+=======
+<<<<<<< HEAD
+24 Table files populated with columns derived from User module Models and Passport migrations.
+=======
+39 Table files reviewed against User module models, local migrations and installed Passport schemas.
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_R0TJUR
+>>>>>>> laraxot/dev
 
 Resources: AuthenticationLog, Client, Device, Feature, OauthAccessToken, OauthAuthCode, OauthClient, OauthPersonalAccessClient, OauthRefreshToken, PasswordReset, Permission, PersonalAccessToken, Profile, Role, SocialProvider, SocialiteUser, SsoProvider, TeamInvitation, TeamPermission, Team, TeamUser, Tenant, TenantUser, User
 
 Key conventions applied:
 - Models use `BaseModel` / `BasePivot` casts (id as string, uuid, datetime)
 - SoftDeletes models include `deleted_at` (toggleable)
+<<<<<<< HEAD
 - Boolean columns use `IconColumn::boolean()`
 - Passport models follow standard Laravel Passport schema
+=======
+<<<<<<< .merge_file_NpI19g
+- Boolean columns use `IconColumn::boolean()`
+- Passport models follow standard Laravel Passport schema
+=======
+<<<<<<< HEAD
+- Boolean columns use `->badge()`
+- Passport models follow standard Laravel Passport schema
+=======
+- Boolean columns use `IconColumn::boolean()`
+- Passport models follow standard Laravel Passport schema
+>>>>>>> .merge_file_R0TJUR
+>>>>>>> laraxot/dev
 
 
 ## Revisione UI e schema — 2026-09-10
@@ -64,3 +102,10 @@ Verifica: 39 file superano PHP lint e PHPStan con configurazione esistente; PHPM
 con `Modules/User/phpmd.ruleset.xml` passa. Bootstrap Laravel e istanziazione delle
 39 classi: chiavi stringa uguali al nome della colonna, nessuna colonna credenziale.
 PHPInsights indisponibile (binario assente e comando artisan insights non definito).
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_NpI19g
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_R0TJUR
+>>>>>>> laraxot/dev

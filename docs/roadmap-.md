@@ -5,8 +5,23 @@ tags: [roadmap]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "roadmap- user module - complete roadmap 2026"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -164,7 +179,19 @@ requiresPasswordChange()   // Security policy enforcement
 ## 🚨 **CURRENT CRITICAL ISSUES**
 
 ### **Issue #1: UUID Trait Conflict** ✅ RESOLVED
+<<<<<<< HEAD
 **Resolution**: Temporarily disabled HasApiTokens, implemented Laravel 12 native UUID
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Resolution**: Temporarily disabled HasApiTokens, implemented Laravel 13 native UUID
+=======
+**Resolution**: Temporarily disabled HasApiTokens, implemented Laravel 12 native UUID
+>>>>>>> laraxot/dev
+=======
+**Resolution**: Temporarily disabled HasApiTokens, implemented Laravel 12 native UUID
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Impact**: Prevented system startup failures, maintained UUID functionality
 
 ### **Issue #2: Spatie Permission Caching**
@@ -194,7 +221,19 @@ requiresPasswordChange()   // Security policy enforcement
 // Solution: Custom HasPassportTokens trait
 
 // In BaseUser.php:
+<<<<<<< HEAD
 use HasUuids;  // Laravel 12 native
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+use HasUuids;  // Laravel 13 native
+=======
+use HasUuids;  // Laravel 12 native
+>>>>>>> laraxot/dev
+=======
+use HasUuids;  // Laravel 12 native
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use HasPassportTokens; // Custom bridge trait
 
 trait HasPassportTokens {
@@ -204,7 +243,19 @@ trait HasPassportTokens {
 
     public function initializeHasUniqueStringIds(): void
     {
+<<<<<<< HEAD
         // Bridge to Laravel 12 UUID system
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        // Bridge to Laravel 13 UUID system
+=======
+        // Bridge to Laravel 12 UUID system
+>>>>>>> laraxot/dev
+=======
+        // Bridge to Laravel 12 UUID system
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         if (method_exists($this, 'initializeHasUuids')) {
             $this->initializeHasUuids();
         }
@@ -426,7 +477,19 @@ public function redirectToProvider(string $provider)
 
 ### **UUID Strategy Decision** ✅
 **Date**: 2026-01-02
+<<<<<<< HEAD
 **Decision**: Use Laravel 12 native UUID with custom Passport bridge
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Decision**: Use Laravel 13 native UUID with custom Passport bridge
+=======
+**Decision**: Use Laravel 12 native UUID with custom Passport bridge
+>>>>>>> laraxot/dev
+=======
+**Decision**: Use Laravel 12 native UUID with custom Passport bridge
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 **Rationale**: Future-proof, consistent, maintainable approach
 
 ### **Permission Caching Decision**
@@ -589,7 +652,19 @@ User Module
 
 ### 🔧 Technical Excellence
 - [x] **PHPStan Level 10**: 0 errori
+<<<<<<< HEAD
 - [x] **Filament 4.x**: Compatibilità completa
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [x] **Filament 5.x**: Compatibilità completa
+=======
+- [x] **Filament 4.x**: Compatibilità completa
+>>>>>>> laraxot/dev
+=======
+- [x] **Filament 4.x**: Compatibilità completa
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [x] **Type Safety**: Type hints completi
 - [x] **Error Handling**: Gestione errori robusta
 - [x] **Testing Setup**: Configurazione test
@@ -759,7 +834,19 @@ User Module
 - [x] Type safety implementation
 - [x] Error handling improvement
 - [x] Code documentation
+<<<<<<< HEAD
 - [x] Filament 4.x compatibility
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [x] Filament 5.x compatibility
+=======
+- [x] Filament 4.x compatibility
+>>>>>>> laraxot/dev
+=======
+- [x] Filament 4.x compatibility
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 #### 🚧 In Progress
 - [ ] **Testing Coverage** (Priority: HIGH)
@@ -815,7 +902,19 @@ User Module
 
 ### 📊 Technical Metrics
 - [x] **PHPStan Level 10**: 0 errori ✅
+<<<<<<< HEAD
 - [x] **Filament 4.x**: Compatibile ✅
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [x] **Filament 5.x**: Compatibile ✅
+=======
+- [x] **Filament 4.x**: Compatibile ✅
+>>>>>>> laraxot/dev
+=======
+- [x] **Filament 4.x**: Compatibile ✅
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [ ] **Test Coverage**: 80% (target)
 - [ ] **Response Time**: < 200ms
 - [ ] **Memory Usage**: < 50MB
@@ -952,7 +1051,19 @@ User Module
 
 ## 🔗 INTEGRATION POINTS
 
+<<<<<<< HEAD
 ### 🎫 Fixcity Module
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### 🎫 <nome progetto> Module
+=======
+### 🎫 Fixcity Module
+>>>>>>> laraxot/dev
+=======
+### 🎫 Fixcity Module
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - [ ] User-ticket relationships
 - [ ] Profile-ticket associations
 - [ ] Role-based ticket access

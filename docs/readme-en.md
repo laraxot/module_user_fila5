@@ -5,8 +5,23 @@ tags: [readme]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "readme-en 👤 user — english presentation"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -21,14 +36,38 @@ related:
 # 👤 User — English presentation
 
 [![Domain-Auth](https://img.shields.io/badge/Domain-Auth%20%26%20Teams-1565C0.svg)](#)
+<<<<<<< HEAD
 [![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+[![Laravel 13](https://img.shields.io/badge/Laravel-13-red.svg)](https://laravel.com/)
+=======
+[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
+>>>>>>> laraxot/dev
+=======
+[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 [![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
 [![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
 [![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
 [![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
 [![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
+<<<<<<< HEAD
 [![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+[![<nome progetto> Platform](https://img.shields.io/badge/Platform-<nome progetto>-008758.svg)](#)
+=======
+[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
+>>>>>>> laraxot/dev
+=======
+[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 > **Who signs in, what they can do, which team.** AGID-ready auth, Spatie roles, profiles — security first.
 
@@ -57,7 +96,19 @@ Identity and authorization for citizens, operators, and multi-tenant setups.
 
 ## Join the team
 
+<<<<<<< HEAD
 Security-minded? This module defines **who is allowed** on FixCity.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Security-minded? This module defines **who is allowed** on <nome progetto>.
+=======
+Security-minded? This module defines **who is allowed** on FixCity.
+>>>>>>> laraxot/dev
+=======
+Security-minded? This module defines **who is allowed** on FixCity.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
 
@@ -73,4 +124,16 @@ Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ---
 
+<<<<<<< HEAD
 **Module** `user` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Module** `user` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5
+=======
+**Module** `user` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+>>>>>>> laraxot/dev
+=======
+**Module** `user` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev

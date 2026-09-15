@@ -39,7 +39,15 @@ class CustomerForm extends XotBaseResourceForm
                         ->helperText('Inserisci il nome del tenant'),
                     TextInput::make('slug')
                         ->required()
+<<<<<<< HEAD
                         ->disabled(fn ($context) => 'create' !== $context)
+=======
+<<<<<<< HEAD
+                        ->disabled(fn ($context) => $context !== 'create')
+=======
+                        ->disabled(fn ($context) => 'create' !== $context)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
                         ->unique(
                             table: 'tenants',
                             ignoreRecord: true,
@@ -47,7 +55,15 @@ class CustomerForm extends XotBaseResourceForm
                         ->helperText('Lo slug verrà generato automaticamente dal nome'),
                     TextInput::make('domain')
                         ->required()
+<<<<<<< HEAD
                         ->visible(fn ($context) => 'create' === $context)
+=======
+<<<<<<< HEAD
+                        ->visible(fn ($context) => $context === 'create')
+=======
+                        ->visible(fn ($context) => 'create' === $context)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
                         ->unique(
                             table: 'domains',
                             ignoreRecord: true,

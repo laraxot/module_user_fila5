@@ -56,7 +56,19 @@ la dipendenza.
 
 ### 1. Il README dichiara cose false, e questa e' la prima cosa da sistemare
 
+<<<<<<< HEAD
 Oggi `README.md` mostra badge "Laravel 12", "PHP 8.4+", "PHPStan Level 10" e contiene
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Oggi `README.md` mostra badge "Laravel 13", "PHP 8.4+", "PHPStan Level 10" e contiene
+=======
+Oggi `README.md` mostra badge "Laravel 12", "PHP 8.4+", "PHPStan Level 10" e contiene
+>>>>>>> laraxot/dev
+=======
+Oggi `README.md` mostra badge "Laravel 12", "PHP 8.4+", "PHPStan Level 10" e contiene
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 il placeholder mai sostituito `<nome progetto>`. La verita' misurata:
 Laravel `^13.0`, PHP `^8.3`, PHPStan `level: max` (il progetto vieta esplicitamente di
 passare `--level`).

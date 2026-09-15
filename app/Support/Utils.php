@@ -9,15 +9,33 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\User\Contracts\HasShieldPermissions;
 use Modules\User\Datas\FilamentShieldData;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 use function Safe\class_implements;
 use function Safe\class_uses;
 
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Traits\HasRoles;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+use function Safe\class_implements;
+use function Safe\class_uses;
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 /**
  * ---.
  */
@@ -38,7 +56,15 @@ class Utils
             '/',
         ));
 
+<<<<<<< HEAD
         $filesystem = new Filesystem();
+=======
+<<<<<<< HEAD
+        $filesystem = new Filesystem;
+=======
+        $filesystem = new Filesystem();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
         return $filesystem->exists($roleResourcePath);
     }

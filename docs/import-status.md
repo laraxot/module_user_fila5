@@ -12,7 +12,19 @@ attributi/relazioni Eloquent — vale per `pivot` come per le colonne.
 
 ## Fix suite test User in locale (2026-08-30)
 
+<<<<<<< HEAD
 - TestCase: `prepareSharedFixcitySqliteForTesting()` in setUp (ambiente senza
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- TestCase: `prepareShared<nome progetto>SqliteForTesting()` in setUp (ambiente senza
+=======
+- TestCase: `prepareSharedFixcitySqliteForTesting()` in setUp (ambiente senza
+>>>>>>> laraxot/dev
+=======
+- TestCase: `prepareSharedFixcitySqliteForTesting()` in setUp (ambiente senza
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
   MariaDB dedicato) + `connectionsToTransact = ['user']` quando default sqlite.
   Da 1059 crash PDO → ~70 failure reali (874 pass).
 - `config/permission.php`: `teams => true` ma `models.team` assente →

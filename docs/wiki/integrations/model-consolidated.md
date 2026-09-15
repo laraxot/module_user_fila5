@@ -950,7 +950,19 @@ Illuminate\Database\Eloquent\Relations\MorphPivot
 Per verificare che non ci siano più modelli che estendono direttamente `Model`:
 
 ```bash
+<<<<<<< HEAD
 cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+cd /var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/User
+=======
+cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
+=======
+cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|BasePivot\|BaseMorphPivot"
 ```
 
@@ -959,7 +971,19 @@ grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|Base
 Dopo le modifiche, eseguire:
 
 ```bash
+<<<<<<< HEAD
 cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+cd /var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/User
+=======
+cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
+=======
+cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ./vendor/bin/phpstan analyse --memory-limit=2G
 ```
 
@@ -1170,7 +1194,19 @@ Illuminate\Database\Eloquent\Relations\MorphPivot
 Per verificare che non ci siano più modelli che estendono direttamente `Model`:
 
 ```bash
+<<<<<<< HEAD
 cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+cd /var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/User
+=======
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
+=======
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|BasePivot\|BaseMorphPivot"
 ```
 
@@ -1179,7 +1215,19 @@ grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|Base
 Dopo le modifiche, eseguire:
 
 ```bash
+<<<<<<< HEAD
 cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+cd /var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/User
+=======
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
+=======
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ./vendor/bin/phpstan analyse --memory-limit=2G
 ```
 
@@ -2660,7 +2708,19 @@ Illuminate\Database\Eloquent\Relations\MorphPivot
 Per verificare che non ci siano più modelli che estendono direttamente `Model`:
 
 ```bash
+<<<<<<< HEAD
 cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+cd /var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/User
+=======
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
+=======
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|BasePivot\|BaseMorphPivot"
 ```
 
@@ -2669,7 +2729,19 @@ grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|Base
 Dopo le modifiche, eseguire:
 
 ```bash
+<<<<<<< HEAD
 cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+cd /var/www/_bases/base_<nome progetto>_fila5/laravel/Modules/User
+=======
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
+=======
+cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ./vendor/bin/phpstan analyse --memory-limit=2G
 ```
 

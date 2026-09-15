@@ -20,7 +20,19 @@ use function Safe\json_encode;
 uses(TestCase::class);
 
 /**
+<<<<<<< HEAD
  * @param array<string, mixed> $attributes
+=======
+<<<<<<< .merge_file_yLsLzl
+ * @param array<string, mixed> $attributes
+=======
+<<<<<<< HEAD
+ * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JKNM5b
+>>>>>>> laraxot/dev
  */
 function pestHasTeamsCreateTestUser(array $attributes = []): User
 {
@@ -50,7 +62,19 @@ function pestHasTeamsBootstrapFixture(): array
 }
 
 /**
+<<<<<<< HEAD
  * @param array<string, mixed> $pivot
+=======
+<<<<<<< .merge_file_yLsLzl
+ * @param array<string, mixed> $pivot
+=======
+<<<<<<< HEAD
+ * @param  array<string, mixed>  $pivot
+=======
+ * @param array<string, mixed> $pivot
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JKNM5b
+>>>>>>> laraxot/dev
  */
 function pestHasTeamsAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -233,7 +257,19 @@ test('it correctly manages team permissions', function (): void {
 
 test('it handles edge cases', function (): void {
     ['user' => $user] = pestHasTeamsBootstrapFixture();
+<<<<<<< HEAD
     $newUser = new User();
+=======
+<<<<<<< .merge_file_yLsLzl
+    $newUser = new User();
+=======
+<<<<<<< HEAD
+    $newUser = new User;
+=======
+    $newUser = new User();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JKNM5b
+>>>>>>> laraxot/dev
 
     Assert::assertFalse($newUser->belongsToTeams());
 

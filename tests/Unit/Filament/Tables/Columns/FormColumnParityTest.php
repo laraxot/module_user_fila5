@@ -11,7 +11,15 @@ use function Safe\preg_replace;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 /*
+=======
+<<<<<<< HEAD
+/**
+=======
+/*
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
  * Regola: ogni componente in Forms/Components ha gemello in Tables/Columns.
  *
  * @see Modules/User/docs/form-column-parity.md

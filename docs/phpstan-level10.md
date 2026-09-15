@@ -5,8 +5,23 @@ tags: [phpstan, level10]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan-level10 user module - phpstan level 10 analysis"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -262,9 +277,27 @@ These fixes are **local to User module** and won't affect other modules.
 
 ## 🔗 Related Files
 
+<<<<<<< HEAD
 - [BaseUser.php](file:///var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/User/app/Models/BaseUser.php) - Already fixed
 - [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php) - Fixed in Xot
 - [Passport Documentation](file:///var/www/_bases/base_ptvx_fila5_mono/laravel/modules/user/docs/passport.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [BaseUser.php](file:///var/www/_bases/<repo progetto>/laravel/Modules/User/app/Models/BaseUser.php) - Already fixed
+- [PassportHasApiTokensContract.php](file:///var/www/_bases/<repo progetto>/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php) - Fixed in Xot
+- [Passport Documentation](file:///var/www/_bases/<repo progetto>/laravel/modules/user/docs/passport.md)
+=======
+- [BaseUser.php](file:///var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/User/app/Models/BaseUser.php) - Already fixed
+- [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php) - Fixed in Xot
+- [Passport Documentation](file:///var/www/_bases/base_ptvx_fila5_mono/laravel/modules/user/docs/passport.md)
+>>>>>>> laraxot/dev
+=======
+- [BaseUser.php](file:///var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/User/app/Models/BaseUser.php) - Already fixed
+- [PassportHasApiTokensContract.php](file:///var/www/_bases/base_ptvx_fila5_mono/laravel/Modules/Xot/app/Contracts/PassportHasApiTokensContract.php) - Fixed in Xot
+- [Passport Documentation](file:///var/www/_bases/base_ptvx_fila5_mono/laravel/modules/user/docs/passport.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 

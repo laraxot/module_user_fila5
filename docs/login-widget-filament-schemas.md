@@ -5,8 +5,23 @@ tags: [login, widget, filament, schemas]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "login-widget-filament-schemas loginwidget filament schema javascript errors - roadmap"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -63,7 +78,19 @@ Uncaught ReferenceError: $dispatch is not defined
 ## 🔍 Analisi del Problema
 
 ### Widget Structure
+<<<<<<< HEAD
 Il `LoginWidget` estende `XotBaseWidget` che usa `Filament\Schemas\Schema` (Filament 4).
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Il `LoginWidget` estende `XotBaseWidget` che usa `Filament\Schemas\Schema` (Filament 5).
+=======
+Il `LoginWidget` estende `XotBaseWidget` che usa `Filament\Schemas\Schema` (Filament 4).
+>>>>>>> laraxot/dev
+=======
+Il `LoginWidget` estende `XotBaseWidget` che usa `Filament\Schemas\Schema` (Filament 4).
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Problema Principale**:
 - `XotBaseWidget::form()` usa `Schema` che richiede JavaScript `filamentSchema` e `filamentSchemaComponent`
@@ -177,7 +204,19 @@ private function getDefaultFormData(): array
 
 - [Widgets Initialization](./../xot/docs/widgets-initialization.md)
 - [Login Widget Fix](./login-widget-fix.md)
+<<<<<<< HEAD
 - [Filament 4 Widget Rendering Guide](./filament-4-widget-rendering-guide.md)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [Filament 5 Widget Rendering Guide](./Filament-5-widget-rendering-guide.md)
+=======
+- [Filament 4 Widget Rendering Guide](./filament-4-widget-rendering-guide.md)
+>>>>>>> laraxot/dev
+=======
+- [Filament 4 Widget Rendering Guide](./filament-4-widget-rendering-guide.md)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 

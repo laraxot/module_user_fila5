@@ -13,19 +13,31 @@ return [
         'tenant_id' => [
             'label' => 'tenant_id',
             'placeholder' => 'tenant_id',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'tenant_id',
+>>>>>>> laraxot/dev
             'description' => 'tenant_id',
         ],
         'user_id' => [
             'label' => 'user_id',
             'placeholder' => 'user_id',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'user_id',
+>>>>>>> laraxot/dev
             'description' => 'user_id',
         ],
         'role' => [
             'label' => 'role',
             'placeholder' => 'role',
+<<<<<<< HEAD
             'helper_text' => '',
+=======
+            'helper_text' => 'role',
+>>>>>>> laraxot/dev
             'description' => 'role',
         ],
     ],

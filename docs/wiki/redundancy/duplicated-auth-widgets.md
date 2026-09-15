@@ -38,4 +38,16 @@ Due path per lo stesso widget nel modulo User:
 
 ## Tracker
 
+<<<<<<< HEAD
 Issue [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90).
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Issue [#90](https://github.com/laraxot/<repo progetto>/issues/90).
+=======
+Issue [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90).
+>>>>>>> laraxot/dev
+=======
+Issue [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90).
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
