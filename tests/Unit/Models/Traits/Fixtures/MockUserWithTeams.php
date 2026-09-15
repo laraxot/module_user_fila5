@@ -20,6 +20,10 @@ use Spatie\Permission\Contracts\Role;
 /**
  * Stub model for HasTeams trait unit tests; satisfies PHPStan in-context analysis.
  *
+<<<<<<< .merge_file_NQf79z
+=======
+ * <<<<<<< HEAD
+ *
  * @property string                            $id
  * @property int|null                          $current_team_id
  * @property TeamContract|null                 $currentTeam
@@ -28,6 +32,20 @@ use Spatie\Permission\Contracts\Role;
  * @property EloquentCollection<int, TeamUser> $teamUsers
  * @property XotUserContract|null              $owner
  * @property int                               $total_members
+ *                                                              =======
+>>>>>>> .merge_file_enP1wL
+ * @property string                            $id
+ * @property int|null                          $current_team_id
+ * @property TeamContract|null                 $currentTeam
+ * @property EloquentCollection<int, Team>     $membershipTeams
+ * @property EloquentCollection<int, Team>     $ownedTeams
+ * @property EloquentCollection<int, TeamUser> $teamUsers
+ * @property XotUserContract|null              $owner
+ * @property int                               $total_members
+<<<<<<< .merge_file_NQf79z
+=======
+ *                                                              >>>>>>> laraxot/dev
+>>>>>>> .merge_file_enP1wL
  */
 class MockUserWithTeams extends Model
 {
@@ -56,7 +74,16 @@ class MockUserWithTeams extends Model
     }
 
     /**
+<<<<<<< .merge_file_NQf79z
      * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
+=======
+     * <<<<<<< HEAD.
+     *
+     * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
+     *                                                                        =======
+     * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
+     *                                                                        >>>>>>> laraxot/dev
+>>>>>>> .merge_file_enP1wL
      */
     public function hasRole(string|int|array|Role|\BackedEnum $roles, ?string $guard = null): bool
     {

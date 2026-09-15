@@ -6,6 +6,13 @@ namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
+<<<<<<< .merge_file_TltFUn
+=======
+<<<<<<< HEAD
+use Filament\Tables\Columns\Column;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ELoZNz
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Modules\User\Filament\Actions\ChangePasswordAction;
@@ -20,6 +27,23 @@ abstract class BaseListUsers extends XotBaseListRecords
     /**
      * Get table columns for user records.
      *
+<<<<<<< .merge_file_TltFUn
+=======
+<<<<<<< HEAD
+     * @return array<string, Column>
+     */
+    #[\Override]
+    public function getTableColumns(): array
+    {
+        return [
+            'name' => TextColumn::make('name')->searchable(),
+            'email' => TextColumn::make('email')->searchable(),
+        ];
+    }
+
+    /**
+=======
+>>>>>>> .merge_file_ELoZNz
      * {
      * return [
      * 'name' => TextColumn::make('name')->searchable(),
@@ -28,6 +52,10 @@ abstract class BaseListUsers extends XotBaseListRecords
      * }
      *
      * /**
+<<<<<<< .merge_file_TltFUn
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ELoZNz
      * Get table filters for user records.
      *
      * @return array<BaseFilter>

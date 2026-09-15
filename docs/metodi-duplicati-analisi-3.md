@@ -5,8 +5,23 @@ tags: [metodi, duplicati, analisi]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "metodi-duplicati-analisi-3 🐄⚡ analisi metodi duplicati - super mucca edition"
+<<<<<<< .merge_file_G9tkTW
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_t6wlex
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -127,7 +142,19 @@ abstract class BaseModel extends \Modules\Xot\Models\XotBaseModel
 
 ### Pattern 1: getTableColumns() - ESEMPIO REALE
 
+<<<<<<< .merge_file_G9tkTW
 #### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+#### <nome progetto>/TicketResource/ListTickets.php (ECCELLENTE)
+=======
+#### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
+>>>>>>> laraxot/dev
+=======
+#### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_t6wlex
 ```php
 protected function getTableColumns(): array
 {
@@ -488,7 +515,19 @@ public function getTableFilters(): array
 - Test dopo ogni modulo
 - Code review
 
+<<<<<<< .merge_file_G9tkTW
 **Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Settimana 2**: Moduli Business (<nome progetto>, Blog, Geo)
+=======
+**Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
+>>>>>>> laraxot/dev
+=======
+**Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_t6wlex
 - 20 List files
 - Test integrazione
 - Performance check
@@ -526,7 +565,19 @@ public function getTableFilters(): array
 3. Refactoring moduli core (Xot, User, Cms)
 
 #### ⭐⭐⭐⭐ PRIORITÀ ALTA
+<<<<<<< .merge_file_G9tkTW
 4. Refactoring moduli business (Fixcity, Blog, Geo)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+4. Refactoring moduli business (<nome progetto>, Blog, Geo)
+=======
+4. Refactoring moduli business (Fixcity, Blog, Geo)
+>>>>>>> laraxot/dev
+=======
+4. Refactoring moduli business (Fixcity, Blog, Geo)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_t6wlex
 5. ActionPresets per CRUD
 6. Documentazione completa
 

@@ -5,8 +5,18 @@ tags: [troubleshooting, login, component]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "troubleshooting-login-component troubleshooting: login component not found"
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -57,7 +67,15 @@ The POST method is not supported for route it/auth/login. Supported methods: GET
 **Errore:** `Livewire\Exceptions\ComponentNotFoundException: Unable to find component: [filament.auth.pages.login]`
 
 **Contesto:**
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Laravel 13.30.1
+=======
 - Laravel 12.30.1
+>>>>>>> laraxot/dev
+=======
+- Laravel 12.30.1
+>>>>>>> laraxot/dev
 - PHP 8.3.25
 - Filament 3.x
 - Livewire 3.x

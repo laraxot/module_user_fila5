@@ -403,7 +403,15 @@ public function assignAdminRole(User $user): void
 ### Setup Test User
 
 ```php
+<<<<<<< HEAD
+<<<<<<< HEAD
+use Modules\<nome progetto>\Models\User;
+=======
 use Modules\Fixcity\Models\User;
+>>>>>>> laraxot/dev
+=======
+use Modules\Fixcity\Models\User;
+>>>>>>> laraxot/dev
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 

@@ -16,12 +16,19 @@ return [
     'label' => 'Permission',
     'plural_label' => 'Permission (Plurale)',
     'actions' => [
+<<<<<<< HEAD
+        'create' => ['label' => 'Crea Permission'],
+=======
         'create' => ['label' => 'Crea Permission', 'icon' => 'create', 'tooltip' => 'create'],
+>>>>>>> laraxot/dev
         'edit' => ['label' => 'Modifica Permission', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Permission', 'icon' => 'delete', 'tooltip' => 'delete'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'Attach Role' => ['label' => 'Attach Role', 'icon' => 'Attach Role', 'tooltip' => 'Attach Role'],
+<<<<<<< HEAD
+=======
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+>>>>>>> laraxot/dev
     ],
 ];

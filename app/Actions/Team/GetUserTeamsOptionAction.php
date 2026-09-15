@@ -23,7 +23,15 @@ class GetUserTeamsOptionAction
 
         foreach ($teams as $teamUser) {
             $team = $teamUser->team;
+<<<<<<< .merge_file_28aF65
             if (null === $team) {
+=======
+<<<<<<< HEAD
+            if ($team === null) {
+=======
+            if (null === $team) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_2EaYdq
                 continue;
             }
 

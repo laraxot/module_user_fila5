@@ -9,7 +9,19 @@ issues:
   - "https://github.com/laraxot/module_user_fila5/issues/73"
 related:
   - ../../../config/permission.php
+<<<<<<< .merge_file_48Po5y
   - ./config/local/workorder/permission.php
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  - ./config/local/<nome progetto>/permission.php
+=======
+  - ./config/local/workorder/permission.php
+>>>>>>> laraxot/dev
+=======
+  - ./config/local/workorder/permission.php
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_T5CI2n
 ---
 
 # spatie/laravel-permission — `table_names` è la fonte di verità fissa, mai la schema
@@ -39,7 +51,19 @@ model_has_roles        => model_has_role          (singolare)
 role_has_permissions   => role_has_permission     (singolare)
 ```
 
+<<<<<<< .merge_file_48Po5y
 Tabelle fisiche live (connection `user`, DB `workorder_user`) allineate a questi valori:
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Tabelle fisiche live (connection `user`, DB `<nome progetto>_user`) allineate a questi valori:
+=======
+Tabelle fisiche live (connection `user`, DB `workorder_user`) allineate a questi valori:
+>>>>>>> laraxot/dev
+=======
+Tabelle fisiche live (connection `user`, DB `workorder_user`) allineate a questi valori:
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_T5CI2n
 `model_has_permission`, `model_has_role`, `role_has_permission` — tutte singolari, tutte
 esistenti, dati reali preservati (`model_has_role`: 41 righe). Verificato end-to-end:
 `$user->roles` restituisce correttamente le righe.

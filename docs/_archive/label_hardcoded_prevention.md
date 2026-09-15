@@ -77,6 +77,10 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class ExampleResource extends XotBaseResource
 {
     public static function getFormSchema(): array
+<<<<<<< HEAD
+    public function getFormSchema(): array
+=======
+>>>>>>> laraxot/dev
     {
         return [
             'name' => TextInput::make('name')

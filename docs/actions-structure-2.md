@@ -5,8 +5,18 @@ tags: [actions, structure]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "actions-structure-2 actions structure"
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -59,7 +69,15 @@ Questa differenza è definita nel file `composer.json` di ogni modulo, che mappa
 
 ## Pattern di Implementazione
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<nome progetto> utilizza il package `spatie/laravel-queueable-action` per le Actions, NON il pattern Service:
+=======
 Quaeris utilizza il package `spatie/laravel-queueable-action` per le Actions, NON il pattern Service:
+>>>>>>> laraxot/dev
+=======
+Quaeris utilizza il package `spatie/laravel-queueable-action` per le Actions, NON il pattern Service:
+>>>>>>> laraxot/dev
 
 ```php
 <?php

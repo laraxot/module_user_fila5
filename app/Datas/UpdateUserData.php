@@ -35,6 +35,10 @@ class UpdateUserData extends Data
         public string|Optional $password_expires_at,
         public string|Optional $type,
         public string|Optional $state,
+<<<<<<< HEAD
+    ) {}
+=======
     ) {
     }
+>>>>>>> laraxot/dev
 }

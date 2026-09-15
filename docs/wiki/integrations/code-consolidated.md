@@ -716,7 +716,15 @@ public function authenticate(array $credentials): bool
 **Problem**: Nested permission logic
 **Solution**: Use guard clauses and early returns
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🔧 Filament 5 Compliance Issues
+=======
 ## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
 
 ### 1. Static Method Violations
 **Problem**: Making non-static methods static
@@ -1053,7 +1061,15 @@ public function authenticate(array $credentials): bool
 **Problem**: Nested permission logic
 **Solution**: Use guard clauses and early returns
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🔧 Filament 5 Compliance Issues
+=======
 ## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
 
 ### 1. Static Method Violations
 **Problem**: Making non-static methods static
@@ -1390,7 +1406,15 @@ public function authenticate(array $credentials): bool
 **Problem**: Nested permission logic
 **Solution**: Use guard clauses and early returns
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🔧 Filament 5 Compliance Issues
+=======
 ## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
 
 ### 1. Static Method Violations
 **Problem**: Making non-static methods static
@@ -1727,7 +1751,15 @@ public function authenticate(array $credentials): bool
 **Problem**: Nested permission logic
 **Solution**: Use guard clauses and early returns
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🔧 Filament 5 Compliance Issues
+=======
 ## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
 
 ### 1. Static Method Violations
 **Problem**: Making non-static methods static
@@ -2294,7 +2326,15 @@ public function authenticate(array $credentials): bool
 **Problem**: Nested permission logic
 **Solution**: Use guard clauses and early returns
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🔧 Filament 5 Compliance Issues
+=======
 ## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
 
 ### 1. Static Method Violations
 **Problem**: Making non-static methods static
@@ -2790,7 +2830,15 @@ public function authenticate(array $credentials): bool
 **Problem**: Nested permission logic
 **Solution**: Use guard clauses and early returns
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+## 🔧 Filament 5 Compliance Issues
+=======
 ## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
+=======
+## 🔧 Filament 4 Compliance Issues
+>>>>>>> laraxot/dev
 
 ### 1. Static Method Violations
 **Problem**: Making non-static methods static

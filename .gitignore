@@ -148,8 +148,17 @@ phpinsights.php
 rector.php
 tests/Unit/graphify-out/
 docs/_archive
+<<<<<<< HEAD
 tests/coverage-*
+<<<<<<< .merge_file_2QziXx
+=======
+=======
+>>>>>>> .merge_file_lpp3nZ
 Application/
 Database/
 tools/
 app/Models/Models
+<<<<<<< .merge_file_2QziXx
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_lpp3nZ

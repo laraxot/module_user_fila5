@@ -12,7 +12,15 @@ uses(TestCase::class);
 
 function changeTypeCommandInstance(): ChangeTypeCommand
 {
+<<<<<<< .merge_file_bYmbmu
     return new ChangeTypeCommand();
+=======
+<<<<<<< HEAD
+    return new ChangeTypeCommand;
+=======
+    return new ChangeTypeCommand();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_BnYgFg
 }
 
 test('change type command can be instantiated', function (): void {

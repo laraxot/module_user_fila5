@@ -31,8 +31,18 @@ drafts provides no value over deletion.
   `Modules\Xot\Contracts\UserContract`) and its ~900 legitimate repo-wide references;
   nothing references the `.to_xot` file by path or string.
 - `find Modules -name "*.to_xot"` — three other unrelated `.to_xot` files exist
+<<<<<<< HEAD
+<<<<<<< HEAD
+  (`Modules/<nome progetto>/database/factories/ExtraFactory.to_xot`,
+  `Modules/<nome progetto>/app/Models/Extra.to_xot`,
+=======
   (`Modules/Quaeris/database/factories/ExtraFactory.to_xot`,
   `Modules/Quaeris/app/Models/Extra.to_xot`,
+>>>>>>> laraxot/dev
+=======
+  (`Modules/Quaeris/database/factories/ExtraFactory.to_xot`,
+  `Modules/Quaeris/app/Models/Extra.to_xot`,
+>>>>>>> laraxot/dev
   `Modules/Media/app/Actions/Image/SvgExistsAction.to_xot`) in different modules;
   out of scope for this module's repo and left untouched.
 - `git status` in `Modules/User` was clean before the delete and showed exactly one

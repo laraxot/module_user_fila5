@@ -16,7 +16,15 @@ uses(TestCase::class);
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
     /* @var TestCase $this */
+<<<<<<< .merge_file_AvolEW
     TestCase::$command = new ChangeTypeCommand();
+=======
+<<<<<<< HEAD
+    TestCase::$command = new ChangeTypeCommand;
+=======
+    TestCase::$command = new ChangeTypeCommand();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JOGgJL
 });
 
 describe('User Command Integration', function (): void {
@@ -105,7 +113,15 @@ describe('User Command Integration', function (): void {
     });
 
     test('can work with type checking utilities', function (): void {
+<<<<<<< .merge_file_AvolEW
         $testObject = new \stdClass();
+=======
+<<<<<<< HEAD
+        $testObject = new \stdClass;
+=======
+        $testObject = new \stdClass();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JOGgJL
         $testObject->value = 'test';
         $testObject->getLabel = fn () => 'Test Label';
 
@@ -184,7 +200,15 @@ describe('User Command Integration', function (): void {
     });
 
     test('can handle object property access safely', function (): void {
+<<<<<<< .merge_file_AvolEW
         $testObject = new \stdClass();
+=======
+<<<<<<< HEAD
+        $testObject = new \stdClass;
+=======
+        $testObject = new \stdClass();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_JOGgJL
         $testObject->testProperty = 'test_value';
 
         $objectData = (array) $testObject;

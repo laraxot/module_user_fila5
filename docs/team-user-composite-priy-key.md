@@ -5,8 +5,18 @@ tags: [team, user, composite, priy]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "team-user-composite-priy-key fix: team_user composite primary key implementation"
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -271,7 +281,15 @@ $membership = Membership::where('team_id', $team->id)
 
 ### Compatibilità
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+- ✅ Laravel 13.x
+=======
 - ✅ Laravel 12.x
+>>>>>>> laraxot/dev
+=======
+- ✅ Laravel 12.x
+>>>>>>> laraxot/dev
 - ✅ Filament 3.x
 - ✅ PHP 8.3+
 - ✅ MySQL 8.0+

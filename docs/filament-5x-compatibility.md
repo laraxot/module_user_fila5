@@ -5,8 +5,18 @@ tags: [filament, compatibility]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "filament-5x-compatibility filament 5.x compatibility - modulo user"
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -24,11 +34,25 @@ related:
 
 ## Stato compatibilità
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+Il modulo User è **compatibile** con Filament 5.x. Nessun breaking change funzionale rispetto a Filament 5.x.
+
+## Note specifiche modulo
+
+- I fix PHPStan per type safety (abstract methods, type comparisons, traits) da Filament 5.x restano validi
+=======
+=======
+>>>>>>> laraxot/dev
 Il modulo User è **compatibile** con Filament 5.x. Nessun breaking change funzionale rispetto a Filament 4.x.
 
 ## Note specifiche modulo
 
 - I fix PHPStan per type safety (abstract methods, type comparisons, traits) da Filament 4.x restano validi
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
 - `RegisterWidget` e `LoginWidget` seguono i pattern Livewire/Volt e non dipendono direttamente da API Filament modificate
 - Il `BaseUser Model` con alias di estensione resta compatibile
 
@@ -60,7 +84,15 @@ Questo evita errori di `ComponentNotFoundException` nelle architetture modulari.
 ## Checklist modulo
 
 - [x] Nessun import diretto da `Filament\*` base classes
+<<<<<<< HEAD
+<<<<<<< HEAD
+- [x] Fix PHPStan type safety (da Filament 5.x) confermati compatibili
+=======
 - [x] Fix PHPStan type safety (da Filament 4.x) confermati compatibili
+>>>>>>> laraxot/dev
+=======
+- [x] Fix PHPStan type safety (da Filament 4.x) confermati compatibili
+>>>>>>> laraxot/dev
 - [ ] Verificare `RegisterWidget` con Livewire 4.x dopo upgrade
 - [ ] Verificare `LoginWidget` con Livewire 4.x dopo upgrade
 - [ ] Verificare Tailwind CSS 4.1+ dopo upgrade

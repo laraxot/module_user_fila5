@@ -1,7 +1,19 @@
 ---
 module: theme
 topic: migration-filament
+<<<<<<< .merge_file_ToUzQb
 canonical: ../../../Themes/docs/shared-components/migrazione-filament-4.md
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+canonical: ../../../Themes/docs/shared-components/migrazione-Filament-5.md
+=======
+canonical: ../../../Themes/docs/shared-components/migrazione-filament-4.md
+>>>>>>> laraxot/dev
+=======
+canonical: ../../../Themes/docs/shared-components/migrazione-filament-4.md
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fdUyzd
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -13,4 +25,16 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< .merge_file_ToUzQb
 See canonical documentation: ../../../Themes/docs/shared-components/migrazione-filament-4.md
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+See canonical documentation: ../../../Themes/docs/shared-components/migrazione-Filament-5.md
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/migrazione-filament-4.md
+>>>>>>> laraxot/dev
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/migrazione-filament-4.md
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_fdUyzd

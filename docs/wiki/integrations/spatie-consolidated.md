@@ -106,7 +106,15 @@ Local package facts checked on 2026-05-05:
 - installed package: `spatie/laravel-permission 7.4.1`;
 - package requirement: PHP `^8.3`;
 - Laravel compatibility: `illuminate/* ^12.0|^13.0`;
+<<<<<<< HEAD
+<<<<<<< HEAD
+- official Spatie prerequisite table maps Laravel 13/13 to package `^7.0`.
+=======
 - official Spatie prerequisite table maps Laravel 12/13 to package `^7.0`.
+>>>>>>> laraxot/dev
+=======
+- official Spatie prerequisite table maps Laravel 12/13 to package `^7.0`.
+>>>>>>> laraxot/dev
 
 If `models.team` is missing, Spatie throws:
 
@@ -273,7 +281,15 @@ Local package facts checked on 2026-05-05:
 - installed package: `spatie/laravel-permission 7.4.1`;
 - package requirement: PHP `^8.3`;
 - Laravel compatibility: `illuminate/* ^12.0|^13.0`;
+<<<<<<< HEAD
+<<<<<<< HEAD
+- official Spatie prerequisite table maps Laravel 13/13 to package `^7.0`.
+=======
 - official Spatie prerequisite table maps Laravel 12/13 to package `^7.0`.
+>>>>>>> laraxot/dev
+=======
+- official Spatie prerequisite table maps Laravel 12/13 to package `^7.0`.
+>>>>>>> laraxot/dev
 
 If `models.team` is missing, Spatie throws:
 

@@ -29,9 +29,15 @@ return [
     'plural_label' => 'Socialite Users (Plurale)',
     'actions' => [
         'create' => ['label' => 'Crea Socialite Users', 'icon' => 'create', 'tooltip' => 'create'],
+<<<<<<< HEAD
+        'edit' => ['label' => 'Modifica Socialite Users'],
+        'delete' => ['label' => 'Elimina Socialite Users', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+=======
         'edit' => ['label' => 'Modifica Socialite Users', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Socialite Users', 'icon' => 'delete', 'tooltip' => 'delete'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+>>>>>>> laraxot/dev
     ],
 ];

@@ -4,6 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TeamResource\Pages;
 
+<<<<<<< .merge_file_0rYlsY
+=======
+<<<<<<< HEAD
+use Filament\Tables\Columns\TextColumn;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5WBN8P
 use Modules\User\Filament\Resources\TeamResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
@@ -11,4 +18,30 @@ class ListTeams extends XotBaseListRecords
 {
     // //
     protected static string $resource = TeamResource::class;
+<<<<<<< .merge_file_0rYlsY
+=======
+<<<<<<< HEAD
+
+    #[\Override]
+    /**
+     * @return array<string, mixed>
+     */
+    public function getTableColumns(): array
+    {
+        return [
+            'name' => TextColumn::make('name')
+                ->searchable()
+                ->sortable()
+                ->wrap(),
+            'users_count' => TextColumn::make('users_count')
+                ->counts('users')
+                ->numeric()
+                ->sortable(),
+            'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
+            'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable(),
+        ];
+    }
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5WBN8P
 }

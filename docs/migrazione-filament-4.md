@@ -1,12 +1,42 @@
 ---
+<<<<<<< .merge_file_xqGx2O
 title: "User Module - Migrazione a Filament 4"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+title: "User Module - Migrazione a Filament 5"
+=======
+title: "User Module - Migrazione a Filament 4"
+>>>>>>> laraxot/dev
+=======
+title: "User Module - Migrazione a Filament 4"
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5XnAsX
 type: concept
 tags: [migrazione, filament]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< .merge_file_xqGx2O
 qmd: "migrazione-filament-4 user module - migrazione a filament 4"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+qmd: "migrazione-Filament-5 user module - migrazione a Filament 5"
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+qmd: "migrazione-filament-4 user module - migrazione a filament 4"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+qmd: "migrazione-filament-4 user module - migrazione a filament 4"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5XnAsX
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -18,17 +48,48 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< .merge_file_xqGx2O
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+# User Module - Migrazione a Filament 5
+
+## Panoramica User Module
+Il modulo User è **critico** per sicurezza, autenticazione e autorizzazione. La migrazione a Filament 5 deve essere gestita con **massima cautela** per non compromettere l'accesso al sistema.
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5XnAsX
 # User Module - Migrazione a Filament 4
 
 ## Panoramica User Module
 Il modulo User è **critico** per sicurezza, autenticazione e autorizzazione. La migrazione a Filament 4 deve essere gestita con **massima cautela** per non compromettere l'accesso al sistema.
+<<<<<<< .merge_file_xqGx2O
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5XnAsX
 
 ## 🔄 Modifiche Richieste per la Migrazione
 
 ### 1. UserResource - Schema Unificato con Security Focus
 **Problemi attuali**: LanguageEnum rimosso, test coverage perduti
 
+<<<<<<< .merge_file_xqGx2O
 **Filament 4 - Enhanced UserResource:**
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Filament 5 - Enhanced UserResource:**
+=======
+**Filament 4 - Enhanced UserResource:**
+>>>>>>> laraxot/dev
+=======
+**Filament 4 - Enhanced UserResource:**
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5XnAsX
 
 ```php
 <?php
@@ -394,7 +455,19 @@ class UserResource extends Resource
 ```
 
 ### 2. Team Management con Nested Resources
+<<<<<<< .merge_file_xqGx2O
 **Filament 4 - Team/User relationship management:**
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Filament 5 - Team/User relationship management:**
+=======
+**Filament 4 - Team/User relationship management:**
+>>>>>>> laraxot/dev
+=======
+**Filament 4 - Team/User relationship management:**
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5XnAsX
 ```php
 // User -> Teams relationship
 class UserTeamResource extends Resource
@@ -438,7 +511,19 @@ class TeamUserResource extends Resource
 ```
 
 ### 3. Enhanced Security Dashboard
+<<<<<<< .merge_file_xqGx2O
 **Filament 4 - Static Table Data per security monitoring:**
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Filament 5 - Static Table Data per security monitoring:**
+=======
+**Filament 4 - Static Table Data per security monitoring:**
+>>>>>>> laraxot/dev
+=======
+**Filament 4 - Static Table Data per security monitoring:**
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5XnAsX
 ```php
 class SecurityDashboardWidget extends Widget
 {
@@ -747,7 +832,19 @@ class UserAnalyticsService
 
 **Raccomandazione**: **POSTICIPARE** finché:
 1. ✅ Altri moduli migrati con successo
+<<<<<<< .merge_file_xqGx2O
 2. ✅ Team ha esperienza completa con Filament 4
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+2. ✅ Team ha esperienza completa con Filament 5
+=======
+2. ✅ Team ha esperienza completa con Filament 4
+>>>>>>> laraxot/dev
+=======
+2. ✅ Team ha esperienza completa con Filament 4
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_5XnAsX
 3. ✅ Rollback procedures tested multiple times
 4. ✅ Extended maintenance window available
 5. ✅ Emergency response team ready
