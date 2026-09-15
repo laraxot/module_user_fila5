@@ -5,23 +5,8 @@ tags: [class, page, not, found]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "class-page-not-found errore: class page not found in cluster pages"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
 ---
 
@@ -151,19 +136,7 @@ class Appearance extends XotBaseCluster  // ✅ Corretto!
 }
 ```
 
-<<<<<<< HEAD
 ## Cosa Sono i Clusters Filament 4
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Cosa Sono i Clusters Filament 5
-=======
-## Cosa Sono i Clusters Filament 4
->>>>>>> laraxot/dev
-=======
-## Cosa Sono i Clusters Filament 4
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Business Logic
 

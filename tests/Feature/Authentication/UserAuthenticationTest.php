@@ -117,19 +117,7 @@ describe('User Password Management', function () {
         ]);
         \assert($user instanceof User);
         $passwordExpiresAt = $user->password_expires_at;
-<<<<<<< HEAD
         \assert(null !== $passwordExpiresAt);
-=======
-<<<<<<< .merge_file_S28000
-        \assert(null !== $passwordExpiresAt);
-=======
-<<<<<<< HEAD
-        \assert($passwordExpiresAt !== null);
-=======
-        \assert(null !== $passwordExpiresAt);
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TCFq0b
->>>>>>> laraxot/dev
 
         expect($passwordExpiresAt->isPast())->toBe(true);
     });
@@ -141,19 +129,7 @@ describe('User Password Management', function () {
         ]);
 
         $passwordExpiresAt = TestCase::requireFreshUser(TestCase::requireUser())->password_expires_at;
-<<<<<<< HEAD
         \assert(null !== $passwordExpiresAt);
-=======
-<<<<<<< .merge_file_S28000
-        \assert(null !== $passwordExpiresAt);
-=======
-<<<<<<< HEAD
-        \assert($passwordExpiresAt !== null);
-=======
-        \assert(null !== $passwordExpiresAt);
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TCFq0b
->>>>>>> laraxot/dev
 
         expect($passwordExpiresAt->toDateString())
             ->toBe($expirationDate->toDateString());
@@ -193,19 +169,7 @@ describe('User Email Verification', function () {
         $user->markEmailAsVerified();
 
         $fresh = $user->fresh();
-<<<<<<< HEAD
         \assert(null !== $fresh);
-=======
-<<<<<<< .merge_file_S28000
-        \assert(null !== $fresh);
-=======
-<<<<<<< HEAD
-        \assert($fresh !== null);
-=======
-        \assert(null !== $fresh);
->>>>>>> laraxot/dev
->>>>>>> .merge_file_TCFq0b
->>>>>>> laraxot/dev
 
         expect($fresh->email_verified_at)->not->toBeNull();
     });

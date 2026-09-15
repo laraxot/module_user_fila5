@@ -5,23 +5,8 @@ tags: [missing, features, analysis]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "missing-features-analysis analisi funzionalità mancanti - modulo user"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -142,19 +127,7 @@ Il modulo **User** fornisce:
    - Mapping permessi
 
 2. **LimeParticipant** - Partecipanti survey
-<<<<<<< HEAD
    - Integrazione con Contact model Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-   - Integrazione con Contact model <nome progetto>
-=======
-   - Integrazione con Contact model Quaeris
->>>>>>> laraxot/dev
-=======
-   - Integrazione con Contact model Quaeris
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
    - Gestione partecipanti centralizzata
    - Attributi personalizzati
 
@@ -202,19 +175,7 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Modulo Quaeris](../Quaeris/docs/README.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Modulo <nome progetto>](../<nome progetto>/docs/README.md)
-=======
-- [Modulo Quaeris](../Quaeris/docs/README.md)
->>>>>>> laraxot/dev
-=======
-- [Modulo Quaeris](../Quaeris/docs/README.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Modulo Limesurvey](../Limesurvey/docs/README.md)
 - [User README](./README.md)
 

@@ -5,23 +5,8 @@ tags: [fullcalendar, scheduler, documentation, summary]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "fullcalendar-scheduler-documentation-summary-2 fullcalendar scheduler - documentazione completa"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -37,19 +22,7 @@ related:
 
 ## Panoramica
 
-<<<<<<< HEAD
 Questa documentazione fornisce una guida completa per la gestione delle licenze FullCalendar Scheduler nel progetto Quaeris, basata sulla ricerca approfondita della documentazione ufficiale e dei problemi comuni riscontrati nella community.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Questa documentazione fornisce una guida completa per la gestione delle licenze FullCalendar Scheduler nel progetto <nome progetto>, basata sulla ricerca approfondita della documentazione ufficiale e dei problemi comuni riscontrati nella community.
-=======
-Questa documentazione fornisce una guida completa per la gestione delle licenze FullCalendar Scheduler nel progetto Quaeris, basata sulla ricerca approfondita della documentazione ufficiale e dei problemi comuni riscontrati nella community.
->>>>>>> laraxot/dev
-=======
-Questa documentazione fornisce una guida completa per la gestione delle licenze FullCalendar Scheduler nel progetto Quaeris, basata sulla ricerca approfondita della documentazione ufficiale e dei problemi comuni riscontrati nella community.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Documenti Disponibili
 
@@ -60,19 +33,7 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 - Tipi di licenza disponibili (Commerciale, Non-Profit, GPLv3)
 - Problemi comuni e soluzioni dettagliate
 - Configurazione completa per Laravel/Filament
-<<<<<<< HEAD
 - Best practices per Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Best practices per <nome progetto>
-=======
-- Best practices per Quaeris
->>>>>>> laraxot/dev
-=======
-- Best practices per Quaeris
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Testing e debugging avanzato
 - Sicurezza e gestione ambienti
 
@@ -88,19 +49,7 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 #### 3. [FullCalendar Scheduler License](./fullcalendar-scheduler-license.md)
 Documentazione base esistente per:
 - Panoramica generale licenze
-<<<<<<< HEAD
 - Configurazione di base in Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Configurazione di base in <nome progetto>
-=======
-- Configurazione di base in Quaeris
->>>>>>> laraxot/dev
-=======
-- Configurazione di base in Quaeris
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Problemi comuni basilari
 
 #### 4. [Scheduler License Key](./scheduler-license-key-2.md)
@@ -133,19 +82,7 @@ La documentazione è basata su ricerca approfondita di:
    - Problema: BASE_OPTION_DEFAULTS non esportato
    - Soluzione: Workaround con ignore directives
 
-<<<<<<< HEAD
 ### 🎯 Soluzioni Specifiche Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### 🎯 Soluzioni Specifiche <nome progetto>
-=======
-### 🎯 Soluzioni Specifiche Quaeris
->>>>>>> laraxot/dev
-=======
-### 🎯 Soluzioni Specifiche Quaeris
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 La documentazione include configurazioni specifiche per:
 - **Multi-tenancy**: Isolamento dati per studio
@@ -159,19 +96,7 @@ La documentazione include configurazioni specifiche per:
 ### 🏗️ Architettura
 
 ```
-<<<<<<< HEAD
 Quaeris FullCalendar Implementation
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<nome progetto> FullCalendar Implementation
-=======
-Quaeris FullCalendar Implementation
->>>>>>> laraxot/dev
-=======
-Quaeris FullCalendar Implementation
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ├── AdminPanelProvider.php (Configurazione centrale)
 ├── config/fullcalendar.php (Configurazioni avanzate)
 ├── .env (Variabili licenza)
@@ -218,57 +143,21 @@ La documentazione è aggiornata per:
 - **FullCalendar v6.1.17** (latest)
 - **Filament v3.x**
 - **Laravel 11.x/12.x**
-<<<<<<< HEAD
 - **Quaeris current architecture**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **<nome progetto> current architecture**
-=======
-- **Quaeris current architecture**
->>>>>>> laraxot/dev
-=======
-- **Quaeris current architecture**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### 🔄 Aggiornamenti Futuri
 
 Quando aggiornare la documentazione:
 - Nuove versioni FullCalendar con breaking changes
 - Nuovi bug noti nella community
-<<<<<<< HEAD
 - Modifiche architettura Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Modifiche architettura <nome progetto>
-=======
-- Modifiche architettura Quaeris
->>>>>>> laraxot/dev
-=======
-- Modifiche architettura Quaeris
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Nuovi requisiti sanitari/legali
 
 ### 📝 Contributi
 
 Per aggiornare la documentazione:
 1. Verificare issue GitHub FullCalendar
-<<<<<<< HEAD
 2. Testare soluzioni in ambiente Quaeris
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-2. Testare soluzioni in ambiente <nome progetto>
-=======
-2. Testare soluzioni in ambiente Quaeris
->>>>>>> laraxot/dev
-=======
-2. Testare soluzioni in ambiente Quaeris
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 3. Aggiornare documenti pertinenti
 4. Aggiornare questo summary
 
@@ -291,19 +180,7 @@ Per aggiornare la documentazione:
 
 ## Conclusioni
 
-<<<<<<< HEAD
 Questa documentazione fornisce una copertura completa per tutti gli aspetti delle licenze FullCalendar Scheduler in Quaeris, dalla configurazione iniziale al troubleshooting avanzato. La combinazione di guida dettagliata e riferimento rapido garantisce supporto sia per sviluppatori esperti che per nuovi team members.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Questa documentazione fornisce una copertura completa per tutti gli aspetti delle licenze FullCalendar Scheduler in <nome progetto>, dalla configurazione iniziale al troubleshooting avanzato. La combinazione di guida dettagliata e riferimento rapido garantisce supporto sia per sviluppatori esperti che per nuovi team members.
-=======
-Questa documentazione fornisce una copertura completa per tutti gli aspetti delle licenze FullCalendar Scheduler in Quaeris, dalla configurazione iniziale al troubleshooting avanzato. La combinazione di guida dettagliata e riferimento rapido garantisce supporto sia per sviluppatori esperti che per nuovi team members.
->>>>>>> laraxot/dev
-=======
-Questa documentazione fornisce una copertura completa per tutti gli aspetti delle licenze FullCalendar Scheduler in Quaeris, dalla configurazione iniziale al troubleshooting avanzato. La combinazione di guida dettagliata e riferimento rapido garantisce supporto sia per sviluppatori esperti che per nuovi team members.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Documenti chiave da consultare:**
 1. **Setup iniziale**: Quick Reference
@@ -311,16 +188,4 @@ Questa documentazione fornisce una copertura completa per tutti gli aspetti dell
 3. **Riferimento quotidiano**: Quick Reference checklist
 4. **Configurazione produzione**: Best practices nel troubleshooting
 
-<<<<<<< HEAD
 La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di Quaeris.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di <nome progetto>.
-=======
-La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di Quaeris.
->>>>>>> laraxot/dev
-=======
-La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di Quaeris.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

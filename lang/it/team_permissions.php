@@ -14,30 +14,14 @@ return [
         'updated_by' => ['label' => 'updated_by'],
         'created_by' => ['label' => 'created_by'],
         'deleted_by' => ['label' => 'deleted_by'],
-<<<<<<< HEAD
         'name' => ['label' => 'name'],
         'permission' => ['label' => 'permission'],
-=======
-<<<<<<< HEAD
-=======
-        'name' => ['label' => 'name'],
-        'permission' => ['label' => 'permission'],
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
-<<<<<<< HEAD
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
-=======
-<<<<<<< HEAD
-=======
-        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
-        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     ],
 ];

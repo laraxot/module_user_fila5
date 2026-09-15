@@ -30,28 +30,16 @@ class FailedLoginListener
     public function handle(Failed $event): void
     {
         if ($event->user instanceof BaseUser) {
-<<<<<<< HEAD
-            $ipAddress = $this->request->ip();
-=======
             $ip = $this->request->ip();
->>>>>>> laraxot/dev
             $userAgent = $this->request->userAgent();
             // $location = optional(geoip()->getLocation($ip))->toArray();
             $location = [];
 
-<<<<<<< HEAD
-            $event
-                ->user
-                ->authentications()
-                ->create([
-                    'ip_address' => $ipAddress,
-=======
             $log = $event
                 ->user
                 ->authentications()
                 ->create([
                     'ip_address' => $ip,
->>>>>>> laraxot/dev
                     'user_agent' => $userAgent,
                     'login_at' => now(),
                     'login_successful' => false,

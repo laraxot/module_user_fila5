@@ -44,15 +44,7 @@ class TokensRelationManager extends XotBaseRelationManager
             'scopes' => TextColumn::make('scopes')
                 ->limit(30)
                 ->tooltip(function (mixed $state): ?string {
-<<<<<<< HEAD
                     if (null === $state) {
-=======
-<<<<<<< HEAD
-                    if ($state === null) {
-=======
-                    if (null === $state) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                         return null;
                     }
                     if (is_array($state)) {

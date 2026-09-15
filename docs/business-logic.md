@@ -5,23 +5,8 @@ tags: [business, logic]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "business-logic user module - business logic analysis"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -153,19 +138,7 @@ ALTER TABLE team_user ADD CONSTRAINT fk_team_user_team
 CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 ```
 
-<<<<<<< HEAD
 ## Filament 4 Improvements
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Filament 5 Improvements
-=======
-## Filament 4 Improvements
->>>>>>> laraxot/dev
-=======
-## Filament 4 Improvements
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Current Implementation Issues
 1. **Basic User Forms**: Limited field validation and UX
@@ -177,19 +150,7 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 
 #### 1. Enhanced User Management
 ```php
-<<<<<<< HEAD
 // Advanced user form with Filament 4
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// Advanced user form with Filament 5
-=======
-// Advanced user form with Filament 4
->>>>>>> laraxot/dev
-=======
-// Advanced user form with Filament 4
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 public static function getFormSchema(): array
 {
     return [
@@ -503,19 +464,7 @@ class ApiRateLimitingMiddleware
 ### High Priority
 1. **Performance Optimization**: Fix N+1 queries and add caching
 2. **Security Hardening**: Implement comprehensive security measures
-<<<<<<< HEAD
 3. **Filament Interface**: Upgrade to advanced Filament 4 features
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-3. **Filament Interface**: Upgrade to advanced Filament 5 features
-=======
-3. **Filament Interface**: Upgrade to advanced Filament 4 features
->>>>>>> laraxot/dev
-=======
-3. **Filament Interface**: Upgrade to advanced Filament 4 features
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 4. **Authorization Cleanup**: Consolidate and optimize authorization logic
 
 ### Medium Priority

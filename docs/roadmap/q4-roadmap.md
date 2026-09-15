@@ -5,23 +5,8 @@ tags: [roadmap]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "q4-roadmap user module roadmap (2025 q4)"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -37,19 +22,7 @@ related:
 
 ## Vision & Scope
 - Ensure `Modules/User/` is the canonical identity, auth, roles/permissions, teams, and profile layer.
-<<<<<<< HEAD
 - Full compliance with Laraxot rules (Xot base classes, Filament 4 patterns, translations, strict types).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Full compliance with Laraxot rules (Xot base classes, Filament 5 patterns, translations, strict types).
-=======
-- Full compliance with Laraxot rules (Xot base classes, Filament 4 patterns, translations, strict types).
->>>>>>> laraxot/dev
-=======
-- Full compliance with Laraxot rules (Xot base classes, Filament 4 patterns, translations, strict types).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Key Outcomes
 - PHPStan 0 errors for `Modules/User/`.
@@ -88,19 +61,7 @@ related:
 
 ## Vision & Scope
 - Ensure `Modules/User/` is the canonical identity, auth, roles/permissions, teams, and profile layer.
-<<<<<<< HEAD
 - Full compliance with Laraxot rules (Xot base classes, Filament 4 patterns, translations, strict types).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Full compliance with Laraxot rules (Xot base classes, Filament 5 patterns, translations, strict types).
-=======
-- Full compliance with Laraxot rules (Xot base classes, Filament 4 patterns, translations, strict types).
->>>>>>> laraxot/dev
-=======
-- Full compliance with Laraxot rules (Xot base classes, Filament 4 patterns, translations, strict types).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Key Outcomes
 - PHPStan 0 errors for `Modules/User/`.

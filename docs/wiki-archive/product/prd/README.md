@@ -164,23 +164,7 @@ To provide the most secure, flexible, and user-friendly authentication and autho
 **NFR-015**: Backup and restore must be automated
 
 ### Compatibility
-<<<<<<< HEAD
 **NFR-016**: Must be compatible with Laravel 12.x
-=======
-<<<<<<< .merge_file_RXncnF
-**NFR-016**: Must be compatible with Laravel 12.x
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**NFR-016**: Must be compatible with Laravel 13.x
-=======
-**NFR-016**: Must be compatible with Laravel 12.x
->>>>>>> laraxot/dev
-=======
-**NFR-016**: Must be compatible with Laravel 12.x
->>>>>>> laraxot/dev
->>>>>>> .merge_file_5uuSZV
->>>>>>> laraxot/dev
 **NFR-017**: Must support PHP 8.3+
 **NFR-018**: Must work with major database systems
 **NFR-019**: Must not conflict with existing packages
@@ -246,23 +230,7 @@ To provide the most secure, flexible, and user-friendly authentication and autho
 5. Load testing must pass
 
 ### Compatibility
-<<<<<<< HEAD
 1. Must work with Laravel 12.x
-=======
-<<<<<<< .merge_file_RXncnF
-1. Must work with Laravel 12.x
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. Must work with Laravel 13.x
-=======
-1. Must work with Laravel 12.x
->>>>>>> laraxot/dev
-=======
-1. Must work with Laravel 12.x
->>>>>>> laraxot/dev
->>>>>>> .merge_file_5uuSZV
->>>>>>> laraxot/dev
 2. Must support PHP 8.3+
 3. Must not conflict with existing packages
 4. Must work with major databases

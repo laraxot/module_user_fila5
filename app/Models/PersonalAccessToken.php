@@ -12,63 +12,18 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 /**
  * Modules\User\Models\PersonalAccessToken.
  *
-<<<<<<< .merge_file_phIfFe
-  *
-=======
- * <<<<<<< HEAD
- * =======
- * <<<<<<< HEAD
- *
- * >>>>>>> laraxot/dev
- *
  * @property int         $id
  * @property string      $tokenable_type
  * @property int         $tokenable_id
  * @property string      $name
  * @property string      $token
- *                                       <<<<<<< HEAD
- *                                       =======
- *                                       =======
->>>>>>> .merge_file_EIz2KS
- * @property int         $id
- * @property string      $tokenable_type
- * @property int         $tokenable_id
- * @property string      $name
- * @property string      $token
-<<<<<<< .merge_file_phIfFe
- *                                       =======
- * @property int         $id
- * @property string      $tokenable_type
- * @property int         $tokenable_id
- * @property string      $name
- * @property string      $token
-=======
- *                                       >>>>>>> laraxot/dev
->>>>>>> .merge_file_EIz2KS
- *                                       >>>>>>> laraxot/dev
  * @property string|null $abilities
  * @property Carbon|null $last_used_at
  * @property Carbon|null $expires_at
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  *
-<<<<<<< .merge_file_phIfFe
-  *
-=======
- * <<<<<<< HEAD
- *
  * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory       factory($count = null, $state = [])
- *                                                                                                                      =======
- *                                                                                                                      <<<<<<< HEAD
->>>>>>> .merge_file_EIz2KS
- * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory       factory($count = null, $state = [])
- *                                                                                                                      =======
- * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory       factory($count = null, $state = [])
- *                                                                                                                      >>>>>>> laraxot/dev
-<<<<<<< .merge_file_phIfFe
-=======
- *                                                                                                                      >>>>>>> laraxot/dev
->>>>>>> .merge_file_EIz2KS
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken query()

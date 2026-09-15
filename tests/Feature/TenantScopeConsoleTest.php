@@ -13,32 +13,11 @@ use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_VEaL28
->>>>>>> laraxot/dev
 
 use function Pest\Laravel\actingAs;
 
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-use PHPUnit\Framework\Assert;
-
-use function Pest\Laravel\actingAs;
-
-=======
-
-use function Pest\Laravel\actingAs;
-
-use PHPUnit\Framework\Assert;
-
->>>>>>> laraxot/dev
->>>>>>> .merge_file_asdxtn
->>>>>>> laraxot/dev
 uses(TestCase::class);
 
 beforeEach(function (): void {

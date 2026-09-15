@@ -31,15 +31,7 @@ use function Safe\json_decode;
 use function Safe\json_encode;
 
 /**
-<<<<<<< HEAD
  * @param array<string, mixed> $pivot
-=======
-<<<<<<< HEAD
- * @param  array<string, mixed>  $pivot
-=======
- * @param array<string, mixed> $pivot
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  */
 function attachTeamMember(Team $team, User $user, array $pivot = []): void
 {
@@ -95,15 +87,7 @@ function teamUsesSoftDeletes(): bool
 }
 
 /**
-<<<<<<< HEAD
  * @param array<string, mixed> $attributes
-=======
-<<<<<<< HEAD
- * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  */
 function createProfile(array $attributes = []): Profile
 {
@@ -132,15 +116,7 @@ function setupFilamentAdminPanel(): void
 }
 
 /**
-<<<<<<< HEAD
  * @param array<mixed> $attributes
-=======
-<<<<<<< HEAD
- * @param  array<mixed>  $attributes
-=======
- * @param array<mixed> $attributes
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  */
 function mockSocialiteOauthUser(array $attributes = []): Laravel\Socialite\Contracts\User
 {
@@ -169,17 +145,8 @@ if (! function_exists('typedMock')) {
     /**
      * @template T of object
      *
-<<<<<<< HEAD
      * @param class-string<T> $class
      *
-=======
-<<<<<<< HEAD
-     * @param  class-string<T>  $class
-=======
-     * @param class-string<T> $class
-     *
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
      * @return T&MockInterface
      */
     function typedMock(string $class): MockInterface
@@ -194,20 +161,9 @@ if (! function_exists('typedMock')) {
 /**
  * @template T of object
  *
-<<<<<<< HEAD
  * @param class-string<T>                 $class
  * @param callable(T&MockInterface): void $configure
  *
-=======
-<<<<<<< HEAD
- * @param  class-string<T>  $class
- * @param  callable(T&MockInterface): void  $configure
-=======
- * @param class-string<T>                 $class
- * @param callable(T&MockInterface): void $configure
- *
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  * @return T&MockInterface
  */
 function configureMock(string $class, callable $configure): MockInterface
@@ -228,15 +184,7 @@ function fakeSocialiteUser(string $email): Laravel\Socialite\Contracts\User
 
 function makeIsUserAllowedAction(): IsUserAllowedAction
 {
-<<<<<<< HEAD
     return new IsUserAllowedAction();
-=======
-<<<<<<< HEAD
-    return new IsUserAllowedAction;
-=======
-    return new IsUserAllowedAction();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 }
 
 /**
@@ -291,15 +239,7 @@ function userResourceSectionComponents(TestCase $testCase, Component $section): 
 }
 
 /**
-<<<<<<< HEAD
  * @param array<int, Component|Action|ActionGroup> $components
-=======
-<<<<<<< HEAD
- * @param  array<int, Component|Action|ActionGroup>  $components
-=======
- * @param array<int, Component|Action|ActionGroup> $components
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  */
 function userResourceFindComponentByName(array $components, string $name): ?Component
 {
@@ -317,15 +257,7 @@ function userResourceFindComponentByName(array $components, string $name): ?Comp
 }
 
 /**
-<<<<<<< HEAD
  * @param array<string, mixed> $attributes
-=======
-<<<<<<< HEAD
- * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  */
 function stubUser(array $attributes = []): User
 {
@@ -333,15 +265,7 @@ function stubUser(array $attributes = []): User
 }
 
 /**
-<<<<<<< HEAD
  * @param array<string, mixed> $attributes
-=======
-<<<<<<< HEAD
- * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  */
 function hasTeamsCurrentCreateUser(array $attributes = []): User
 {
@@ -349,15 +273,7 @@ function hasTeamsCurrentCreateUser(array $attributes = []): User
 }
 
 /**
-<<<<<<< HEAD
  * @param array<string, mixed> $attributes
-=======
-<<<<<<< HEAD
- * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  */
 function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 {
@@ -368,17 +284,8 @@ function hasTeamsCurrentCreateTeam(User $user, array $attributes = []): Team
 }
 
 /**
-<<<<<<< HEAD
  * @param array<string, mixed> $attributes
  *
-=======
-<<<<<<< HEAD
- * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
- *
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  * @return array{secret: string, qr_code: string, recovery_codes: array<int, string>}
  */
 function enableTwoFactorForUser(User $user, Google2FA $google2fa, array $attributes = []): array
@@ -424,15 +331,7 @@ function verifyTwoFactorCode(User $user, Google2FA $google2fa, string $code): bo
     $decrypted = decrypt($user->two_factor_secret);
     $secret = is_string($decrypted) ? $decrypted : '';
 
-<<<<<<< HEAD
     return false !== $google2fa->verifyKey($secret, $code);
-=======
-<<<<<<< HEAD
-    return $google2fa->verifyKey($secret, $code) !== false;
-=======
-    return false !== $google2fa->verifyKey($secret, $code);
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 }
 
 function disableTwoFactorForUser(User $user): void

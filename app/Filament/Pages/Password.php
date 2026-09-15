@@ -45,17 +45,7 @@ class Password extends XotBasePage
     /**
      * Definisce la struttura dello schema.
      *
-     * <<<<<<< HEAD
-     *
      * @param Schema $schema Lo schema da configurare
-     *                       =======
-     *                       <<<<<<< HEAD
-     * @param Schema $schema Lo schema da configurare
-     *                       =======
-     * @param Schema $schema Lo schema da configurare
-     *
-     * >>>>>>> laraxot/dev
-     * >>>>>>> laraxot/dev
      *
      * @return Schema Lo schema configurato
      */
@@ -136,21 +126,8 @@ class Password extends XotBasePage
     /**
      * Gestisce l'aggiornamento del record.
      *
-     * <<<<<<< HEAD
-     *
      * @param Model                $record Il record da aggiornare
      * @param array<string, mixed> $data   I dati per l'aggiornamento
-     *                                     =======
-     *                                     <<<<<<< HEAD
-     * @param Model                $record Il record da aggiornare
-     * @param array<string, mixed> $data   I dati per l'aggiornamento
-     *                                     =======
-     * @param Model                $record Il record da aggiornare
-     * @param array<string, mixed> $data   I dati per l'aggiornamento
-     *
-     * >>>>>>> laraxot/dev
-     * >>>>>>> laraxot/dev
-     *
      *
      * @return Model Il record aggiornato
      */

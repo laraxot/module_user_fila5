@@ -15,24 +15,8 @@ uses(TestCase::class);
 
 describe('RegisterOauthUserAction', function (): void {
     /**
-<<<<<<< .merge_file_nYKa6s
-          *
      * @param array<string, mixed> $attributes
-          * @param array<string, mixed> $attributes
-          */
-=======
-     * <<<<<<< HEAD.
-     *
-     * @param array<string, mixed> $attributes
-     *                                         =======
-     *                                         <<<<<<< HEAD
-     * @param array<string, mixed> $attributes
-     *                                         =======
-     * @param array<string, mixed> $attributes
-     *                                         >>>>>>> laraxot/dev
-     *                                         >>>>>>> laraxot/dev
      */
->>>>>>> .merge_file_XX75by
     $getMockUser = static function (array $attributes = []): SocialiteUserContract {
         /** @var array<string, mixed> $normalizedAttributes */
         $normalizedAttributes = $attributes;

@@ -43,21 +43,9 @@ return [
     'plural_label' => 'Social Providers (Plurale)',
     'actions' => [
         'create' => ['label' => 'Crea Social Providers', 'icon' => 'create', 'tooltip' => 'create'],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        'edit' => ['label' => 'Modifica Social Providers'],
-        'delete' => ['label' => 'Elimina Social Providers', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
-=======
->>>>>>> laraxot/dev
         'edit' => ['label' => 'Modifica Social Providers', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Social Providers', 'icon' => 'delete', 'tooltip' => 'delete'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     ],
 ];

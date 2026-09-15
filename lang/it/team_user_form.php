@@ -7,14 +7,8 @@ return [
         'Team User Information' => ['label' => 'Team User Information', 'heading' => 'Team User Information'],
     ],
     'fields' => [
-<<<<<<< HEAD
-        'team_id' => ['label' => 'team_id', 'placeholder' => 'team_id', 'helper_text' => '', 'description' => 'team_id'],
-        'user_id' => ['label' => 'user_id', 'placeholder' => 'user_id', 'helper_text' => '', 'description' => 'user_id'],
-        'role' => ['label' => 'role', 'placeholder' => 'role', 'helper_text' => '', 'description' => 'role'],
-=======
         'team_id' => ['label' => 'team_id', 'placeholder' => 'team_id', 'helper_text' => 'team_id', 'description' => 'team_id'],
         'user_id' => ['label' => 'user_id', 'placeholder' => 'user_id', 'helper_text' => 'user_id', 'description' => 'user_id'],
         'role' => ['label' => 'role', 'placeholder' => 'role', 'helper_text' => 'role', 'description' => 'role'],
->>>>>>> laraxot/dev
     ],
 ];

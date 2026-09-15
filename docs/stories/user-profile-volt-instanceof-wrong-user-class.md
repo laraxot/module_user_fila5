@@ -2,19 +2,7 @@
 id: story-user-profile-volt-instanceof-wrong-user-class
 slug: story-user-profile-volt-instanceof-wrong-user-class
 title: "STORY — ProfileEditVoltComponent controllava instanceof contro la classe User sbagliata"
-<<<<<<< HEAD
 description: "config/auth.php configura Modules\\Quaeris\\Models\\User come auth model reale, non Modules\\User\\Models\\User (commentato sopra). Le due classi sono sorelle, entrambe figlie di Modules\\User\\Models\\BaseUser, non genitore/figlio. ProfileEditVoltComponent.php controllava instanceof Modules\\User\\Models\\User in tutti e 4 i metodi: sempre falso a runtime per l'utente autenticato reale."
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-description: "config/auth.php configura Modules\\<nome progetto>\\Models\\User come auth model reale, non Modules\\User\\Models\\User (commentato sopra). Le due classi sono sorelle, entrambe figlie di Modules\\User\\Models\\BaseUser, non genitore/figlio. ProfileEditVoltComponent.php controllava instanceof Modules\\User\\Models\\User in tutti e 4 i metodi: sempre falso a runtime per l'utente autenticato reale."
-=======
-description: "config/auth.php configura Modules\\Quaeris\\Models\\User come auth model reale, non Modules\\User\\Models\\User (commentato sopra). Le due classi sono sorelle, entrambe figlie di Modules\\User\\Models\\BaseUser, non genitore/figlio. ProfileEditVoltComponent.php controllava instanceof Modules\\User\\Models\\User in tutti e 4 i metodi: sempre falso a runtime per l'utente autenticato reale."
->>>>>>> laraxot/dev
-=======
-description: "config/auth.php configura Modules\\Quaeris\\Models\\User come auth model reale, non Modules\\User\\Models\\User (commentato sopra). Le due classi sono sorelle, entrambe figlie di Modules\\User\\Models\\BaseUser, non genitore/figlio. ProfileEditVoltComponent.php controllava instanceof Modules\\User\\Models\\User in tutti e 4 i metodi: sempre falso a runtime per l'utente autenticato reale."
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 document_type: story
 category: bmad
 scope: module:User
@@ -30,19 +18,7 @@ related:
   - ../../laravel/Modules/User/app/View/Pages/ProfileEditVoltComponent.php
   - ../../laravel/Modules/User/app/Models/BaseUser.php
   - ../../laravel/Modules/User/app/Models/User.php
-<<<<<<< HEAD
   - ../../laravel/Modules/Quaeris/app/Models/User.php
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - ../../laravel/Modules/<nome progetto>/app/Models/User.php
-=======
-  - ../../laravel/Modules/Quaeris/app/Models/User.php
->>>>>>> laraxot/dev
-=======
-  - ../../laravel/Modules/Quaeris/app/Models/User.php
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 github:
   repository: https://github.com/laraxot/module_user_fila5
   issues: https://github.com/laraxot/module_user_fila5/issues
@@ -63,29 +39,10 @@ errori `cast.string` / `argument.type` / `method.nonObject` su
 
 ```php
 //'model' => env('AUTH_MODEL', Modules\User\Models\User::class),
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-'model' => Modules\<nome progetto>\Models\User::class,
-```
-
-Il model di auth reale e' `Modules\<nome progetto>\Models\User`, non
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 'model' => Modules\Quaeris\Models\User::class,
 ```
 
 Il model di auth reale e' `Modules\Quaeris\Models\User`, non
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 `Modules\User\Models\User`. Le due classi sono **sorelle**, entrambe
 `extends Modules\User\Models\BaseUser` — non genitore/figlio.
 
@@ -146,19 +103,7 @@ presente:
   (non `\DateTime|null`) per i campi data.
 - AC5 (non verificato in questa sessione — DB di test con nota separata,
   vedi [[env-sqlite-manca-suite-non-eseguibile]]): un test Pest end-to-end
-<<<<<<< HEAD
   che autentica un utente reale (`Modules\Quaeris\Models\User`) e chiama
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  che autentica un utente reale (`Modules\<nome progetto>\Models\User`) e chiama
-=======
-  che autentica un utente reale (`Modules\Quaeris\Models\User`) e chiama
->>>>>>> laraxot/dev
-=======
-  che autentica un utente reale (`Modules\Quaeris\Models\User`) e chiama
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
   `updateProfile()`/`updatePassword()`/`deleteAccount()` deve passare senza
   finire nel catch generico.
 
@@ -196,19 +141,7 @@ presente:
 ### References
 
 - [Source: laravel/config/auth.php#L71-L72] — model di auth reale
-<<<<<<< HEAD
 - [Source: laravel/Modules/Quaeris/app/Models/User.php] — `class User
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Source: laravel/Modules/<nome progetto>/app/Models/User.php] — `class User
-=======
-- [Source: laravel/Modules/Quaeris/app/Models/User.php] — `class User
->>>>>>> laraxot/dev
-=======
-- [Source: laravel/Modules/Quaeris/app/Models/User.php] — `class User
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
   extends BaseUser` (sorella, non figlia, di `Modules\User\Models\User`)
 - [Source: module_user_fila5@d4647f7e] — fix indipendente della stessa
   sessione gemella, stessa diagnosi, versione del file piu' snella
@@ -240,11 +173,6 @@ Claude Sonnet 5
 - `laravel/Modules/User/app/View/Pages/ProfileEditVoltComponent.php` (fix)
 - `laravel/Modules/User/app/Models/BaseUser.php` (fix docblock: `$id` +
   `Carbon|null`)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
 ## Aggiornamento 2026-09-10 (subagent-quaeris-user, terza occorrenza indipendente)
 
@@ -293,7 +221,3 @@ Modules/User/app/View/Pages/ProfileEditVoltComponent.php --no-progress
 
 File toccati in questo aggiornamento: solo
 `laravel/Modules/User/app/View/Pages/ProfileEditVoltComponent.php`.
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

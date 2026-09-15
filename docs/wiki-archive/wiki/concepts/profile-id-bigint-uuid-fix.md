@@ -31,38 +31,14 @@ insert into profiles (user_id, uuid, ...) — senza id
 
 ## Fix (2026-07-27)
 
-<<<<<<< HEAD
 Owner **WorkOrder** (`main_module`): `2026_07_27_111500_create_profiles_table.php`
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Owner **<nome progetto>** (`main_module`): `2026_07_27_111500_create_profiles_table.php`
-=======
-Owner **WorkOrder** (`main_module`): `2026_07_27_111500_create_profiles_table.php`
->>>>>>> laraxot/dev
-=======
-Owner **WorkOrder** (`main_module`): `2026_07_27_111500_create_profiles_table.php`
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 - `tableCreate`: `id()` + `uuid` + colonne dominio
 - `convertIdFromUuidToBigintIfNeeded()` per legacy UUID PK
 - `tableUpdate`: colonne additive + `updateTimestamps`
 - Duplicati User in `_bak/*.merged`
 
-<<<<<<< HEAD
 Vedi [WorkOrder profile-schema-ownership](../../../WorkOrder/docs/profile-schema-ownership.md).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Vedi [<nome progetto> profile-schema-ownership](../../../<nome progetto>/docs/profile-schema-ownership.md).
-=======
-Vedi [WorkOrder profile-schema-ownership](../../../WorkOrder/docs/profile-schema-ownership.md).
->>>>>>> laraxot/dev
-=======
-Vedi [WorkOrder profile-schema-ownership](../../../WorkOrder/docs/profile-schema-ownership.md).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Contratto
 

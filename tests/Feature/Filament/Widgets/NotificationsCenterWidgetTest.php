@@ -4,24 +4,11 @@ declare(strict_types=1);
 
 use Modules\User\Filament\Widgets\Auth\NotificationsCenterWidget;
 use Modules\User\Tests\TestCase;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-use PHPUnit\Framework\Assert;
-
-use function Pest\Laravel\get;
-
-=======
->>>>>>> laraxot/dev
 
 use function Pest\Laravel\get;
 
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 uses(TestCase::class);
 
 it('redirects guests from notifiche page', function (): void {
@@ -31,15 +18,7 @@ it('redirects guests from notifiche page', function (): void {
 });
 
 it('uses notifications center widget view', function (): void {
-<<<<<<< HEAD
     $widget = new NotificationsCenterWidget();
-=======
-<<<<<<< HEAD
-    $widget = new NotificationsCenterWidget;
-=======
-    $widget = new NotificationsCenterWidget();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     $reflection = new ReflectionClass($widget);
     $property = $reflection->getProperty('view');
     $property->setAccessible(true);

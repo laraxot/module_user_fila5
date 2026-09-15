@@ -17,11 +17,7 @@ use Webmozart\Assert\Assert;
  * @method static Builder|PermissionRole newQuery()
  * @method static Builder|PermissionRole query()
  *
-<<<<<<< HEAD
- * @property string $id
-=======
  * @property string      $id
->>>>>>> laraxot/dev
  * @property string|null $permission_id
  * @property string|null $role_id
  * @property Carbon|null $created_at
@@ -62,19 +58,11 @@ class PermissionRole extends BasePivot
     protected function casts(): array
     {
         $parent = parent::casts();
-<<<<<<< HEAD
-        $permissionRoleCasts = [
-=======
         $up = [
->>>>>>> laraxot/dev
             'permission_id' => 'string',
             'role_id' => 'string',
         ];
 
-<<<<<<< HEAD
-        return array_merge($parent, $permissionRoleCasts);
-=======
         return array_merge($parent, $up);
->>>>>>> laraxot/dev
     }
 }

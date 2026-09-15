@@ -15,12 +15,8 @@ class ValidateProviderAction
     {
         $hasConfig = config()->has('services.'.$provider);
         if (! $hasConfig) {
-<<<<<<< HEAD
-            throw (new ProviderNotConfigured)->make($provider);
-=======
             $ex = new ProviderNotConfigured();
             throw $ex->make($provider);
->>>>>>> laraxot/dev
         }
     }
 }

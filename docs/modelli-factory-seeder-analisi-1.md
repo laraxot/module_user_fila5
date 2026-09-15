@@ -5,23 +5,8 @@ tags: [modelli, factory, seeder, analisi]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "modelli-factory-seeder-analisi-1 analisi modelli, factory e seeder - modulo user"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -217,19 +202,7 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Jetstream Integration](./jetstream_integration.md)
 
 ### Moduli Collegati
-<<<<<<< HEAD
 - [Quaeris Module](../../Quaeris/docs/modelli-factory-seeder-analisi-2.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [<nome progetto> Module](../../<nome progetto>/docs/modelli-factory-seeder-analisi-2.md)
-=======
-- [Quaeris Module](../../Quaeris/docs/modelli-factory-seeder-analisi-2.md)
->>>>>>> laraxot/dev
-=======
-- [Quaeris Module](../../Quaeris/docs/modelli-factory-seeder-analisi-2.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Tenant Module](../../tenant/docs/modelli-factory-seeder-analisi-2.md)
 - [Notify Module](../../notify/docs/modelli-factory-seeder-analisi-2.md)
 

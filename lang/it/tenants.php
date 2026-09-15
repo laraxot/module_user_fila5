@@ -32,14 +32,7 @@ return [
         'is_active' => ['label' => 'is_active'],
         'created_at' => ['label' => 'created_at'],
         'updated_at' => ['label' => 'updated_at'],
-<<<<<<< HEAD
         'trial_ends_at' => ['label' => 'trial_ends_at'],
-=======
-<<<<<<< HEAD
-=======
-        'trial_ends_at' => ['label' => 'trial_ends_at'],
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     ],
     'navigation' => [
         'name' => 'Tenants',
@@ -53,21 +46,9 @@ return [
     'plural_label' => 'Tenants (Plurale)',
     'actions' => [
         'create' => ['label' => 'Crea Tenants', 'icon' => 'create', 'tooltip' => 'create'],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        'edit' => ['label' => 'Modifica Tenants'],
-        'delete' => ['label' => 'Elimina Tenants', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
-=======
->>>>>>> laraxot/dev
         'edit' => ['label' => 'Modifica Tenants', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Tenants', 'icon' => 'delete', 'tooltip' => 'delete'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     ],
 ];

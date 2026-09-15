@@ -5,23 +5,8 @@ tags: [phpstan, furiousebate]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan-furiousebate il grande dibattito furioso: phpstan level 10 - la verità assoluta"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -196,19 +181,7 @@ Ogni modulo corretto è un traguardo.
 ## 📚 Riferimenti
 
 - [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
-<<<<<<< HEAD
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Filament 5 Actions Namespace](./Filament-5-actions-namespace.md)
-=======
-- [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
->>>>>>> laraxot/dev
-=======
-- [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [DRY/KISS Principles](../../../../docs/architecture/dry-kiss-principles.md)
 
 ---

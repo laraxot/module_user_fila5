@@ -91,16 +91,7 @@ class Favicon extends XotBasePage
     }
 
     /**
-     * <<<<<<< HEAD.
-     *
      * @param array<string, mixed> $data
-     *                                   =======
-     *                                   <<<<<<< HEAD
-     * @param array<string, mixed> $data
-     *                                   =======
-     * @param array<string, mixed> $data
-     *                                   >>>>>>> laraxot/dev
-     *                                   >>>>>>> laraxot/dev
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {

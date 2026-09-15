@@ -13,21 +13,13 @@ return [
         'email' => [
             'label' => 'email',
             'placeholder' => 'email',
-<<<<<<< HEAD
-            'helper_text' => '',
-=======
             'helper_text' => 'email',
->>>>>>> laraxot/dev
             'description' => 'email',
         ],
         'token' => [
             'label' => 'token',
             'placeholder' => 'token',
-<<<<<<< HEAD
-            'helper_text' => '',
-=======
             'helper_text' => 'token',
->>>>>>> laraxot/dev
             'description' => 'token',
         ],
     ],

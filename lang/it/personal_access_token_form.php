@@ -7,11 +7,7 @@ return [
         'name' => [
             'label' => 'name',
             'placeholder' => 'name',
-<<<<<<< HEAD
-            'helper_text' => '',
-=======
             'helper_text' => 'name',
->>>>>>> laraxot/dev
             'description' => 'name',
         ],
     ],
