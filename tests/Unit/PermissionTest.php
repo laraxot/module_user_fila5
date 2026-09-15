@@ -13,7 +13,30 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
+<<<<<<< .merge_file_A2F1Eo
  * @param array<string, mixed> $attributes
+=======
+ * <<<<<<< .merge_file_7qdN1W.
+ *
+ * @param array<string, mixed> $attributes
+ * @param array<string, mixed> $attributes
+ * @param array<string, mixed> $attributes
+ *                                         =======
+ *                                         <<<<<<< HEAD
+ * @param array<string, mixed> $attributes
+ *                                         =======
+ *                                         <<<<<<< .merge_file_8qtlKe.
+ * @param array<string, mixed> $attributes
+ *                                         =======
+ *                                         <<<<<<< HEAD
+ * @param array<string, mixed> $attributes
+ *                                         =======
+ * @param array<string, mixed> $attributes
+ *                                         >>>>>>> laraxot/dev
+ *                                         >>>>>>> .merge_file_EKlgpQ
+ *                                         >>>>>>> laraxot/dev
+ *                                         >>>>>>> .merge_file_KQdcSh
+>>>>>>> .merge_file_cKvlkR
  */
 function createTestPermission(array $attributes = []): Permission
 {
@@ -24,7 +47,30 @@ function createTestPermission(array $attributes = []): Permission
 }
 
 /**
+<<<<<<< .merge_file_A2F1Eo
  * @param array<string, mixed> $attributes
+=======
+ * <<<<<<< .merge_file_7qdN1W.
+ *
+ * @param array<string, mixed> $attributes
+ * @param array<string, mixed> $attributes
+ * @param array<string, mixed> $attributes
+ *                                         =======
+ *                                         <<<<<<< HEAD
+ * @param array<string, mixed> $attributes
+ *                                         =======
+ *                                         <<<<<<< .merge_file_8qtlKe.
+ * @param array<string, mixed> $attributes
+ *                                         =======
+ *                                         <<<<<<< HEAD
+ * @param array<string, mixed> $attributes
+ *                                         =======
+ * @param array<string, mixed> $attributes
+ *                                         >>>>>>> laraxot/dev
+ *                                         >>>>>>> .merge_file_EKlgpQ
+ *                                         >>>>>>> laraxot/dev
+ *                                         >>>>>>> .merge_file_KQdcSh
+>>>>>>> .merge_file_cKvlkR
  */
 function createTestRoleForPermission(array $attributes = []): Role
 {

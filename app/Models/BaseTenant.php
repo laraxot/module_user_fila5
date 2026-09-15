@@ -30,6 +30,26 @@ use Spatie\Sluggable\SlugOptions;
  * @property int|null                                    $members_count
  * @property ProfileContract|null                        $creator
  * @property ProfileContract|null                        $updater
+<<<<<<< .merge_file_37NoDx
+=======
+ *                                                                      <<<<<<< .merge_file_Z41DQU
+ * @property int|null                                    $members_count
+ * @property ProfileContract|null                        $creator
+ * @property ProfileContract|null                        $updater
+ *                                                                      =======
+ *                                                                      =======
+ *                                                                      <<<<<<< HEAD
+ * @property int|null                                    $members_count
+ * @property ProfileContract|null                        $creator
+ * @property ProfileContract|null                        $updater
+ *                                                                      =======
+ * @property int|null                                    $members_count
+ * @property ProfileContract|null                        $creator
+ * @property ProfileContract|null                        $updater
+ *                                                                      >>>>>>> laraxot/dev
+ *                                                                      >>>>>>> laraxot/dev
+ *                                                                      >>>>>>> .merge_file_QGYa3j
+>>>>>>> .merge_file_6bhc8G
  *
  * @mixin \Eloquent
  */
