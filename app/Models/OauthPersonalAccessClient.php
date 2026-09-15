@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 
 /**
-<<<<<<< HEAD
-=======
+ * <<<<<<< HEAD
+ * =======
  * <<<<<<< HEAD.
  *
  * @property string           $id
@@ -23,7 +23,8 @@ use Illuminate\Support\Carbon;
  * @method static \Modules\User\Database\Factories\OauthPersonalAccessClientFactory factory($count = null, $state = [])
  *                                                                                                                      =======
  *
->>>>>>> laraxot/dev
+ * >>>>>>> laraxot/dev
+ *
  * @property string           $id
  * @property string           $client_id
  * @property OauthClient|null $client
@@ -33,10 +34,10 @@ use Illuminate\Support\Carbon;
  * @property string|null      $created_by
  *
  * @method static \Modules\User\Database\Factories\OauthPersonalAccessClientFactory       factory($count = null, $state = [])
-<<<<<<< HEAD
-=======
+ *                                                                                                                            <<<<<<< HEAD
+ *                                                                                                                            =======
  *                                                                                                                            >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+ *                                                                                                                            >>>>>>> laraxot/dev
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient query()

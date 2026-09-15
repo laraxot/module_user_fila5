@@ -28,11 +28,12 @@ use Webmozart\Assert\Assert;
 /**
  * Modules\User\Models\Role.
  *
-<<<<<<< HEAD
-=======
+ * <<<<<<< HEAD
+ * =======
  * <<<<<<< HEAD
  *
->>>>>>> laraxot/dev
+ * >>>>>>> laraxot/dev
+ *
  * @property int                                 $id
  * @property string                              $uuid
  * @property string|null                         $team_id
@@ -50,8 +51,8 @@ use Webmozart\Assert\Assert;
  * @property Collection<int, Model&UserContract> $users
  * @property int|null                            $users_count
  * @property PermissionRole|null                 $pivot
-<<<<<<< HEAD
-=======
+ *                                                                  <<<<<<< HEAD
+ *                                                                  =======
  *                                                                  =======
  * @property int                                 $id
  * @property string                              $uuid
@@ -71,7 +72,7 @@ use Webmozart\Assert\Assert;
  * @property int|null                            $users_count
  * @property PermissionRole|null                 $pivot
  *                                                                  >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+ *                                                                  >>>>>>> laraxot/dev
  *
  * @method static Builder|Role newModelQuery()
  * @method static Builder|Role newQuery()
@@ -88,10 +89,10 @@ use Webmozart\Assert\Assert;
  * @method static Builder|Role withoutPermission($permissions)
  * @method static Builder|Role whereDescription($value)
  * @method static Builder|Role whereDisplayName($value)
-<<<<<<< HEAD
+ *                                                                                                                 <<<<<<< HEAD
  * @method static static       firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static       updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
-=======
+ *                                                                                                                 =======
  *                                                                                                                 <<<<<<< HEAD
  * @method static static       firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static       updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
@@ -99,22 +100,22 @@ use Webmozart\Assert\Assert;
  * @method static static       firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static       updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  *                                                                                                                 >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+ *                                                                                                                 >>>>>>> laraxot/dev
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  *
  * @method static \Modules\User\Database\Factories\RoleFactory factory($count = null, $state = [])
-<<<<<<< HEAD
+ *                                                                                                 <<<<<<< HEAD
  * @method static Builder<static>|Role                         whereUuid($value)
-=======
+ *                                                                                                 =======
  *                                                                                                 <<<<<<< HEAD
  * @method static Builder<static>|Role                         whereUuid($value)
  *                                                                                                 =======
  * @method static Builder<static>|Role                         whereUuid($value)
  *                                                                                                 >>>>>>> laraxot/dev
->>>>>>> laraxot/dev
+ *                                                                                                 >>>>>>> laraxot/dev
  *
  * @mixin \Eloquent
  */

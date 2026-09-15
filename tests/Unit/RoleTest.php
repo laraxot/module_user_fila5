@@ -13,11 +13,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
-<<<<<<< HEAD
- * @param array<string, mixed> $attributes
-=======
- * <<<<<<< .merge_file_vLLtVh.
+ * <<<<<<< HEAD.
  *
+ * @param array<string, mixed> $attributes
+ *                                         =======
+ *                                         <<<<<<< .merge_file_vLLtVh.
  * @param array<string, mixed> $attributes
  *                                         =======
  *                                         <<<<<<< HEAD
@@ -26,7 +26,7 @@ uses(TestCase::class);
  * @param array<string, mixed> $attributes
  *                                         >>>>>>> laraxot/dev
  *                                         >>>>>>> .merge_file_XEZ2Ge
->>>>>>> laraxot/dev
+ *                                         >>>>>>> laraxot/dev
  */
 function createTestRole(array $attributes = []): Role
 {
@@ -37,11 +37,11 @@ function createTestRole(array $attributes = []): Role
 }
 
 /**
-<<<<<<< HEAD
- * @param array<string, mixed> $attributes
-=======
- * <<<<<<< .merge_file_vLLtVh.
+ * <<<<<<< HEAD.
  *
+ * @param array<string, mixed> $attributes
+ *                                         =======
+ *                                         <<<<<<< .merge_file_vLLtVh.
  * @param array<string, mixed> $attributes
  *                                         =======
  *                                         <<<<<<< HEAD
@@ -50,7 +50,7 @@ function createTestRole(array $attributes = []): Role
  * @param array<string, mixed> $attributes
  *                                         >>>>>>> laraxot/dev
  *                                         >>>>>>> .merge_file_XEZ2Ge
->>>>>>> laraxot/dev
+ *                                         >>>>>>> laraxot/dev
  */
 function createTestPermissionForRole(array $attributes = []): Permission
 {
