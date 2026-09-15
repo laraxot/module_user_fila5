@@ -26,18 +26,8 @@ class DemoUserSeeder extends Seeder
         $userClass = XotData::make()->getUserClass();
         \assert(is_subclass_of($userClass, User::class));
 
-<<<<<<< HEAD
         $userTable = (new $userClass())->getTable();
         $userConnection = (new $userClass())->getConnectionName() ?? 'user';
-=======
-<<<<<<< HEAD
-        $userTable = (new $userClass)->getTable();
-        $userConnection = (new $userClass)->getConnectionName() ?? 'user';
-=======
-        $userTable = (new $userClass())->getTable();
-        $userConnection = (new $userClass())->getConnectionName() ?? 'user';
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
         DB::connection($userConnection)
             ->table($userTable)
@@ -80,28 +70,12 @@ class DemoUserSeeder extends Seeder
             );
 
             $role = Role::query()->where('name', $roleName)->where('guard_name', 'web')->first();
-<<<<<<< HEAD
             if (null !== $role && ! $user->hasRole($roleName)) {
-=======
-<<<<<<< HEAD
-            if ($role !== null && ! $user->hasRole($roleName)) {
-=======
-            if (null !== $role && ! $user->hasRole($roleName)) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 $user->assignRole($role);
             }
         }
 
-<<<<<<< HEAD
         if (null !== $this->command) {
-=======
-<<<<<<< HEAD
-        if ($this->command !== null) {
-=======
-        if (null !== $this->command) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             $this->command->info('DemoUserSeeder: '.count($demoUsers).' utenti demo pronti.');
         }
     }

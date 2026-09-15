@@ -68,15 +68,7 @@ use function Safe\glob;
 uses(TestCase::class)->group('no-user-db');
 
 afterEach(function (): void {
-<<<<<<< HEAD
     \Mockery::close();
-=======
-<<<<<<< HEAD
-    Mockery::close();
-=======
-    \Mockery::close();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 });
 
 /**
@@ -94,15 +86,7 @@ function userExecuteContext(): array
  * Le eccezioni applicative sono tollerate — questi test girano senza database.
  * La sonda non deve contenere asserzioni: verrebbero inghiottite dal catch.
  *
-<<<<<<< HEAD
  * @param \Closure(): void $probe
-=======
-<<<<<<< HEAD
- * @param  \Closure(): void  $probe
-=======
- * @param \Closure(): void $probe
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  */
 function userCaptureFatal(\Closure $probe): ?\Error
 {
@@ -127,15 +111,7 @@ function userInvoke(object $target, string $method, mixed ...$args): mixed
 
 function userMockWithTeams(string $id = 'owner-1'): User
 {
-<<<<<<< HEAD
     $user = new User();
-=======
-<<<<<<< HEAD
-    $user = new User;
-=======
-    $user = new User();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     $user->forceFill(['id' => $id, 'current_team_id' => null, 'total_members' => 0]);
 
     return $user;
@@ -143,15 +119,7 @@ function userMockWithTeams(string $id = 'owner-1'): User
 
 function userTeamFixture(string $ownerId, int $teamId = 1, bool $personal = false): Team
 {
-<<<<<<< HEAD
     $team = new Team();
-=======
-<<<<<<< HEAD
-    $team = new Team;
-=======
-    $team = new Team();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     $team->forceFill([
         'id' => $teamId,
         'user_id' => $ownerId,
@@ -168,17 +136,8 @@ function userTeamFixture(string $ownerId, int $teamId = 1, bool $personal = fals
  * `Illuminate\Contracts\Validation\ValidationRule::validate()`: il test esercita
  * il contratto reale della regola, non una closure di comodo.
  *
-<<<<<<< HEAD
  * @param bool $flag alzato quando la regola invoca `$fail`
  *
-=======
-<<<<<<< HEAD
- * @param  bool  $flag  alzato quando la regola invoca `$fail`
-=======
- * @param bool $flag alzato quando la regola invoca `$fail`
- *
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  * @return \Closure(string, string|null=): PotentiallyTranslatedString
  */
 function userFailClosure(bool &$flag): \Closure
@@ -259,15 +218,7 @@ function userSectionChildren(Section $section): array
 }
 
 /**
-<<<<<<< HEAD
  * @param array<int|string, SchemaComponent> $schema
-=======
-<<<<<<< HEAD
- * @param  array<int|string, SchemaComponent>  $schema
-=======
- * @param array<int|string, SchemaComponent> $schema
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  */
 function userFindNamedComponent(array $schema, string $name): ?SchemaComponent
 {
@@ -296,15 +247,7 @@ function userFindNamedComponent(array $schema, string $name): ?SchemaComponent
 function userProfileMock(string $password = 'Secret123!'): User
 {
     /** @var Mockery\MockInterface&User $user */
-<<<<<<< HEAD
     $user = \Mockery::mock(User::class)->makePartial();
-=======
-<<<<<<< HEAD
-    $user = Mockery::mock(User::class)->makePartial();
-=======
-    $user = \Mockery::mock(User::class)->makePartial();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     $user->forceFill([
         'id' => 'profile-user-1',
         'first_name' => 'Mario',
@@ -352,15 +295,7 @@ describe('User execute coverage floor 50', function (): void {
             foreach ($class::cases() as $case) {
                 if (method_exists($case, 'getLabel')) {
                     $case->getLabel();
-<<<<<<< HEAD
                     ++$labels;
-=======
-<<<<<<< HEAD
-                    $labels++;
-=======
-                    ++$labels;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 }
             }
         }
@@ -402,15 +337,7 @@ describe('User execute coverage floor 50', function (): void {
             'services.microsoft.scopes' => ['User.Read'],
         ]);
 
-<<<<<<< HEAD
         $page = new SocialiteProviderSettingsPage();
-=======
-<<<<<<< HEAD
-        $page = new SocialiteProviderSettingsPage;
-=======
-        $page = new SocialiteProviderSettingsPage();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $page->mount();
 
         Assert::assertTrue($page->google['enabled']);
@@ -442,15 +369,7 @@ describe('User execute coverage floor 50', function (): void {
         Assert::assertNotEmpty(OauthAccessTokenResource::getTableBulkActions());
         Assert::assertNotEmpty(app(OauthAccessTokenResource::class)->getFormSchema());
 
-<<<<<<< HEAD
         $resource = new OauthAccessTokenResource();
-=======
-<<<<<<< HEAD
-        $resource = new OauthAccessTokenResource;
-=======
-        $resource = new OauthAccessTokenResource();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $columns = $resource->getTableColumns();
 
         Assert::assertArrayHasKey('id', $columns);
@@ -534,15 +453,7 @@ describe('User execute coverage floor 50', function (): void {
     });
 
     test('profile edit volt component mount inizializza stato utente', function (): void {
-<<<<<<< HEAD
         $user = new User();
-=======
-<<<<<<< HEAD
-        $user = new User;
-=======
-        $user = new User();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $user->forceFill([
             'id' => 'user-1',
             'first_name' => 'Mario',
@@ -552,15 +463,7 @@ describe('User execute coverage floor 50', function (): void {
 
         Auth::shouldReceive('user')->once()->andReturn($user);
 
-<<<<<<< HEAD
         $component = new ProfileEditVoltComponent();
-=======
-<<<<<<< HEAD
-        $component = new ProfileEditVoltComponent;
-=======
-        $component = new ProfileEditVoltComponent();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $component->mount();
 
         Assert::assertSame('Mario', $component->first_name);
@@ -627,15 +530,7 @@ describe('User execute coverage — HasTeams trait mock', function (): void {
         $team = userTeamFixture('owner-4', 401);
         $memberUser = userMockWithTeams('member-4');
 
-<<<<<<< HEAD
         $members = \Mockery::mock(BelongsToMany::class);
-=======
-<<<<<<< HEAD
-        $members = Mockery::mock(BelongsToMany::class);
-=======
-        $members = \Mockery::mock(BelongsToMany::class);
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         mockeryExpect($members->shouldReceive('attach'))->once()->andReturn(true);
         mockeryExpect($members->shouldReceive('detach'))->once()->andReturn(true);
         mockeryExpect($members->shouldReceive('updateExistingPivot'))->twice()->andReturn(true);
@@ -643,15 +538,7 @@ describe('User execute coverage — HasTeams trait mock', function (): void {
         mockeryExpect($members->shouldReceive('wherePivot'))->with('role', 'member')->andReturnSelf();
         mockeryExpect($members->shouldReceive('get'))->andReturn(collect([$memberUser]));
 
-<<<<<<< HEAD
         $teamMock = \Mockery::mock($team)->makePartial();
-=======
-<<<<<<< HEAD
-        $teamMock = Mockery::mock($team)->makePartial();
-=======
-        $teamMock = \Mockery::mock($team)->makePartial();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         mockeryExpect($teamMock->shouldReceive('members'))->andReturn($members);
         // Il partial mock di un Team resta un TeamContract: la guardia lo dichiara
         // a PHPStan e verifica davvero che Mockery non abbia perso il contratto.
@@ -665,15 +552,7 @@ describe('User execute coverage — HasTeams trait mock', function (): void {
         Assert::assertCount(1, $owner->getTeamAdmins($teamMock));
         Assert::assertCount(1, $owner->getTeamMembers($teamMock));
 
-<<<<<<< HEAD
         $membership = new TeamUser();
-=======
-<<<<<<< HEAD
-        $membership = new TeamUser;
-=======
-        $membership = new TeamUser();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $membership->forceFill(['user' => $memberUser]);
         $owner->setRelation('teamUsers', collect([$membership]));
         $owner->setRelation('owner', $owner);
@@ -697,15 +576,7 @@ describe('User execute coverage — ProfileEditVoltComponent', function (): void
         Auth::shouldReceive('id')->andReturn('profile-user-1');
         Auth::shouldReceive('logout')->andReturnNull();
 
-<<<<<<< HEAD
         $component = new ProfileEditVoltComponent();
-=======
-<<<<<<< HEAD
-        $component = new ProfileEditVoltComponent;
-=======
-        $component = new ProfileEditVoltComponent();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $component->user_id = 'profile-user-1';
         $component->first_name = 'Mario';
         $component->last_name = 'Rossi';
@@ -735,15 +606,7 @@ describe('User execute coverage — ProfileEditVoltComponent', function (): void
     test('mount gestisce dati utente invalidi', function (): void {
         Log::shouldReceive('error')->atLeast()->once();
 
-<<<<<<< HEAD
         $badUser = new User();
-=======
-<<<<<<< HEAD
-        $badUser = new User;
-=======
-        $badUser = new User();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $badUser->forceFill([
             'id' => 'bad-1',
             'first_name' => '',
@@ -754,15 +617,7 @@ describe('User execute coverage — ProfileEditVoltComponent', function (): void
         Auth::shouldReceive('user')->andReturn($badUser);
         Auth::shouldReceive('id')->andReturn('bad-1');
 
-<<<<<<< HEAD
         $component = new ProfileEditVoltComponent();
-=======
-<<<<<<< HEAD
-        $component = new ProfileEditVoltComponent;
-=======
-        $component = new ProfileEditVoltComponent();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $component->mount();
 
         // `mount()` idrata le quattro proprietà e solo dopo verifica gli invarianti:
@@ -783,15 +638,7 @@ describe('User execute coverage — Socialite settings e OAuth resource', functi
 
         Artisan::shouldReceive('call')->once()->with('config:clear');
 
-<<<<<<< HEAD
         $page = new SocialiteProviderSettingsPage();
-=======
-<<<<<<< HEAD
-        $page = new SocialiteProviderSettingsPage;
-=======
-        $page = new SocialiteProviderSettingsPage();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $page->mount();
         $page->data = [
             'google' => [
@@ -840,15 +687,7 @@ describe('User execute coverage — Socialite settings e OAuth resource', functi
     });
 
     test('oauth access token resource callbacks e azioni revoke', function (): void {
-<<<<<<< HEAD
         $resource = new OauthAccessTokenResource();
-=======
-<<<<<<< HEAD
-        $resource = new OauthAccessTokenResource;
-=======
-        $resource = new OauthAccessTokenResource();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $columns = $resource->getTableColumns();
 
         $expiresAt = $columns['expires_at'];
@@ -868,15 +707,7 @@ describe('User execute coverage — Socialite settings e OAuth resource', functi
         Assert::assertSame('read', $scopes->getTooltip('read'));
 
         $user = userProfileMock();
-<<<<<<< HEAD
         $token = new OauthAccessToken();
-=======
-<<<<<<< HEAD
-        $token = new OauthAccessToken;
-=======
-        $token = new OauthAccessToken();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $token->forceFill([
             'id' => 'token-1',
             'user_id' => $user->id,
@@ -890,23 +721,6 @@ describe('User execute coverage — Socialite settings e OAuth resource', functi
         $userName->getUrl($token);
         $userName->formatState(null);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        app()->instance(RevokeTokenAction::class, new class
-        {
-            public function execute(string $id): bool
-            {
-                return $id === 'token-1';
-            }
-        });
-        app()->instance(RevokeAllUserTokensAction::class, new class
-        {
-            public function execute(string $userId): bool
-            {
-                return $userId === 'profile-user-1';
-=======
->>>>>>> laraxot/dev
         app()->instance(RevokeTokenAction::class, new class {
             public function execute(string $id): bool
             {
@@ -917,10 +731,6 @@ describe('User execute coverage — Socialite settings e OAuth resource', functi
             public function execute(string $userId): bool
             {
                 return 'profile-user-1' === $userId;
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             }
         });
 
@@ -951,36 +761,15 @@ describe('User execute coverage — UserResource form schemas', function (): voi
         $createdAt = userFindNamedComponent($schema, 'created_at');
         Assert::assertNotNull($createdAt);
 
-<<<<<<< HEAD
         $model = new User();
-=======
-<<<<<<< HEAD
-        $model = new User;
-=======
-        $model = new User();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $model->forceFill(['created_at' => Carbon::parse('2024-06-01 12:00:00')]);
         $human = userInvokeStateClosure($createdAt, $model);
         Assert::assertIsString($human);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        $missing = userInvokeStateClosure($createdAt, new User);
-        Assert::assertNotNull($missing);
-
-        $badRecord = userInvokeStateClosure($createdAt, new Team);
-=======
->>>>>>> laraxot/dev
         $missing = userInvokeStateClosure($createdAt, new User());
         Assert::assertNotNull($missing);
 
         $badRecord = userInvokeStateClosure($createdAt, new Team());
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         Assert::assertNotNull($badRecord);
     });
 
@@ -1008,15 +797,7 @@ describe('User execute coverage — notifications rules observer helpers', funct
         \module_helper_placeholder();
 
         $user = userProfileMock();
-<<<<<<< HEAD
         $notifiable = new AnonymousNotifiable();
-=======
-<<<<<<< HEAD
-        $notifiable = new AnonymousNotifiable;
-=======
-        $notifiable = new AnonymousNotifiable();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
         $otp = new Otp($user, '123456');
         Assert::assertSame(['mail'], $otp->via($notifiable));
@@ -1028,28 +809,12 @@ describe('User execute coverage — notifications rules observer helpers', funct
         $mail = (new \ReflectionMethod($reset, 'buildMailMessage'))->invoke($reset, $reset->url);
         Assert::assertInstanceOf(MailMessage::class, $mail);
 
-<<<<<<< HEAD
         $verify = new VerifyEmail();
-=======
-<<<<<<< HEAD
-        $verify = new VerifyEmail;
-=======
-        $verify = new VerifyEmail();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $verify->url = 'https://example.test/verify';
         $verifyUrl = (new \ReflectionMethod($verify, 'verificationUrl'))->invoke($verify, $user);
         Assert::assertSame($verify->url, $verifyUrl);
 
-<<<<<<< HEAD
         $freshUser = new User();
-=======
-<<<<<<< HEAD
-        $freshUser = new User;
-=======
-        $freshUser = new User();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $freshUser->forceFill(['updated_at' => now()]);
         $rule = new CheckOtpExpiredRule($freshUser);
         $failed = false;
@@ -1057,15 +822,7 @@ describe('User execute coverage — notifications rules observer helpers', funct
         Assert::assertFalse($failed);
         Assert::assertNotSame('', $rule->message());
 
-<<<<<<< HEAD
         $expiredUser = new User();
-=======
-<<<<<<< HEAD
-        $expiredUser = new User;
-=======
-        $expiredUser = new User();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $expiredUser->forceFill(['updated_at' => now()->subMinutes(30)]);
         $expiredRule = new CheckOtpExpiredRule($expiredUser);
         $expired = false;
@@ -1075,15 +832,7 @@ describe('User execute coverage — notifications rules observer helpers', funct
 
     test('user observer e passport token user relation', function (): void {
         config(['user.create_personal_team' => false]);
-<<<<<<< HEAD
         $observer = new UserObserver();
-=======
-<<<<<<< HEAD
-        $observer = new UserObserver;
-=======
-        $observer = new UserObserver();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $user = userProfileMock();
         mockeryExpect($user->shouldReceive('personalTeam'))->andReturn(null);
         $observer->created($user);
@@ -1098,15 +847,7 @@ describe('User execute coverage — notifications rules observer helpers', funct
             $observer->created($owner);
         }));
 
-<<<<<<< HEAD
         $token = new OauthAccessToken();
-=======
-<<<<<<< HEAD
-        $token = new OauthAccessToken;
-=======
-        $token = new OauthAccessToken();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $token->forceFill(['user_id' => $owner->id]);
         $token->setRelation('client', new OauthClient(['provider' => 'users']));
         // `Token::user()` è deprecato in Passport: si esercita la relazione
@@ -1150,21 +891,9 @@ describe('User execute coverage — Filament pages sweep', function (): void {
             if ($instance instanceof SocialiteProviderSettingsPage) {
                 try {
                     $instance->mount();
-<<<<<<< HEAD
                     ++$executed;
                 } catch (\Throwable) {
                     ++$executed;
-=======
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 }
             }
 
@@ -1178,21 +907,9 @@ describe('User execute coverage — Filament pages sweep', function (): void {
                         continue;
                     }
                     $refMethod->invoke($instance);
-<<<<<<< HEAD
                     ++$executed;
                 } catch (\Throwable) {
                     ++$executed;
-=======
-<<<<<<< HEAD
-                    $executed++;
-                } catch (\Throwable) {
-                    $executed++;
-=======
-                    ++$executed;
-                } catch (\Throwable) {
-                    ++$executed;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 }
             }
         }
@@ -1205,39 +922,17 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
     test('notification schema auth log mail message socialite provider', function (): void {
         // `isReadable()` promette una cosa sola: rispondere quanto lo schema
         // della connection del model Notification dice della sua tabella.
-<<<<<<< HEAD
         $notification = new Notification();
-=======
-<<<<<<< HEAD
-        $notification = new Notification;
-=======
-        $notification = new Notification();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         Assert::assertSame(
             Schema::connection($notification->getConnectionName())->hasTable($notification->getTable()),
             NotificationSchema::isReadable()
         );
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        $user = new User;
-        $user->forceFill(['id' => 'auth-log-1']);
-        Assert::assertInstanceOf(Builder::class, AuthenticationLogQuery::forAuthenticatable($user));
-
-        $mail = new Message;
-=======
->>>>>>> laraxot/dev
         $user = new User();
         $user->forceFill(['id' => 'auth-log-1']);
         Assert::assertInstanceOf(Builder::class, AuthenticationLogQuery::forAuthenticatable($user));
 
         $mail = new Message();
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $rendered = null;
         $renderError = null;
         try {
@@ -1246,15 +941,7 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
             $renderError = $throwable;
         }
         Assert::assertNotInstanceOf(\Error::class, $renderError);
-<<<<<<< HEAD
         if (null !== $rendered) {
-=======
-<<<<<<< HEAD
-        if ($rendered !== null) {
-=======
-        if (null !== $rendered) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             Assert::assertInstanceOf(View::class, $rendered);
         }
 
@@ -1268,16 +955,7 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
         }));
         File::delete($configPath);
 
-<<<<<<< HEAD
         $passport = new class(app()) extends ServiceProvider {
-=======
-<<<<<<< HEAD
-        $passport = new class(app()) extends ServiceProvider
-        {
-=======
-        $passport = new class(app()) extends ServiceProvider {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
             use HasPassportConfiguration;
 
             public function runConfigure(): void
@@ -1297,27 +975,12 @@ describe('User execute coverage — remaining 0% helpers', function (): void {
     });
 
     test('tenant traits espongono relazioni in memoria', function (): void {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        $user = new User;
-        $tenant = new Tenant;
-        $tenant->forceFill(['id' => 1, 'name' => 'T1']);
-        $user->setRelation('tenants', collect([$tenant]));
-
-        $panel = Mockery::mock(Panel::class);
-=======
->>>>>>> laraxot/dev
         $user = new User();
         $tenant = new Tenant();
         $tenant->forceFill(['id' => 1, 'name' => 'T1']);
         $user->setRelation('tenants', collect([$tenant]));
 
         $panel = \Mockery::mock(Panel::class);
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         Assert::assertInstanceOf(Panel::class, $panel);
         Assert::assertCount(1, $user->getTenants($panel));
         Assert::assertInstanceOf(BelongsToMany::class, $user->tenants());

@@ -20,13 +20,10 @@ use Spatie\Permission\Contracts\Role;
 /**
  * Stub model for HasTeams trait unit tests; satisfies PHPStan in-context analysis.
  *
-<<<<<<< HEAD
-=======
  * <<<<<<< .merge_file_NQf79z
  * =======
  * <<<<<<< HEAD
  *
->>>>>>> laraxot/dev
  * @property string                            $id
  * @property int|null                          $current_team_id
  * @property TeamContract|null                 $currentTeam
@@ -35,8 +32,6 @@ use Spatie\Permission\Contracts\Role;
  * @property EloquentCollection<int, TeamUser> $teamUsers
  * @property XotUserContract|null              $owner
  * @property int                               $total_members
-<<<<<<< HEAD
-=======
  *                                                              =======
  *                                                              >>>>>>> .merge_file_enP1wL
  * @property string                            $id
@@ -51,7 +46,6 @@ use Spatie\Permission\Contracts\Role;
  *                                                              =======
  *                                                              >>>>>>> laraxot/dev
  *                                                              >>>>>>> .merge_file_enP1wL
->>>>>>> laraxot/dev
  */
 class MockUserWithTeams extends Model
 {
@@ -80,9 +74,6 @@ class MockUserWithTeams extends Model
     }
 
     /**
-<<<<<<< HEAD
-     * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
-=======
      * <<<<<<< .merge_file_NQf79z.
      *
      * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
@@ -93,7 +84,6 @@ class MockUserWithTeams extends Model
      * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
      *                                                                        >>>>>>> laraxot/dev
      *                                                                        >>>>>>> .merge_file_enP1wL
->>>>>>> laraxot/dev
      */
     public function hasRole(string|int|array|Role|\BackedEnum $roles, ?string $guard = null): bool
     {

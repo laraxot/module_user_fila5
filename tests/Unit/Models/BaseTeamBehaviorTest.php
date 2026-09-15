@@ -25,27 +25,12 @@ describe('BaseTeam in-memory behavior', function (): void {
     test('allUsers merges owner when owner is User instance', function (): void {
         /** @var class-string<Model> $userClass */
         $userClass = XotData::make()->getUserClass();
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        $owner = new $userClass;
-        $owner->forceFill(['id' => 'owner-1', 'email' => 'owner@test.it']);
-        $member = new $userClass;
-        $member->forceFill(['id' => 'member-1', 'email' => 'member@test.it']);
-
-        $team = new TestBaseTeam;
-=======
->>>>>>> laraxot/dev
         $owner = new $userClass();
         $owner->forceFill(['id' => 'owner-1', 'email' => 'owner@test.it']);
         $member = new $userClass();
         $member->forceFill(['id' => 'member-1', 'email' => 'member@test.it']);
 
         $team = new TestBaseTeam();
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $team->forceFill(['id' => 1, 'user_id' => 'owner-1', 'name' => 'Team A']);
         $team->setRelation('owner', $owner);
         $team->setRelation('users', collect([$member]));
@@ -58,23 +43,10 @@ describe('BaseTeam in-memory behavior', function (): void {
     });
 
     test('hasUser returns true when user is in members collection', function (): void {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        $member = new TestBaseUser;
-        $member->forceFill(['id' => 'member-2']);
-
-        $team = new TestBaseTeam;
-=======
->>>>>>> laraxot/dev
         $member = new TestBaseUser();
         $member->forceFill(['id' => 'member-2']);
 
         $team = new TestBaseTeam();
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $team->forceFill(['id' => 2]);
         $team->setRelation('users', collect([$member]));
 
@@ -84,23 +56,10 @@ describe('BaseTeam in-memory behavior', function (): void {
     test('hasUserWithEmail matches by email in allUsers', function (): void {
         /** @var class-string<Model> $userClass */
         $userClass = XotData::make()->getUserClass();
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        $owner = new $userClass;
-        $owner->forceFill(['id' => 'o-3', 'email' => 'team.owner@test.it']);
-
-        $team = new TestBaseTeam;
-=======
->>>>>>> laraxot/dev
         $owner = new $userClass();
         $owner->forceFill(['id' => 'o-3', 'email' => 'team.owner@test.it']);
 
         $team = new TestBaseTeam();
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $team->forceFill(['id' => 3, 'user_id' => 'o-3']);
         $team->setRelation('owner', $owner);
         $team->setRelation('users', collect([]));
@@ -110,15 +69,7 @@ describe('BaseTeam in-memory behavior', function (): void {
     });
 
     test('userHasPermission delegates to user contract', function (): void {
-<<<<<<< HEAD
         $team = new TestBaseTeam();
-=======
-<<<<<<< HEAD
-        $team = new TestBaseTeam;
-=======
-        $team = new TestBaseTeam();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $team->forceFill(['id' => 4]);
 
         /** @var UserContract&MockInterface $user */
@@ -131,15 +82,7 @@ describe('BaseTeam in-memory behavior', function (): void {
     });
 
     test('casts define expected attribute types', function (): void {
-<<<<<<< HEAD
         $team = new TestBaseTeam();
-=======
-<<<<<<< HEAD
-        $team = new TestBaseTeam;
-=======
-        $team = new TestBaseTeam();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         $method = new \ReflectionMethod(BaseTeam::class, 'casts');
         $method->setAccessible(true);
         /** @var array<string, string> $casts */

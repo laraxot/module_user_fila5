@@ -337,11 +337,7 @@ return [
     ],
     'startDate' => [
         'description' => 'startDate',
-<<<<<<< HEAD
-        'helper_text' => '',
-=======
         'helper_text' => 'startDate',
->>>>>>> laraxot/dev
         'placeholder' => 'startDate',
         'label' => 'startDate',
         'tooltip' => '',
@@ -350,20 +346,12 @@ return [
         'description' => 'matr',
         'label' => 'matr',
         'placeholder' => 'matr',
-<<<<<<< HEAD
-        'helper_text' => '',
-=======
         'helper_text' => 'matr',
->>>>>>> laraxot/dev
     ],
     'ente' => [
         'label' => 'ente',
         'placeholder' => 'ente',
-<<<<<<< HEAD
-        'helper_text' => '',
-=======
         'helper_text' => 'ente',
->>>>>>> laraxot/dev
         'description' => 'ente',
     ],
 ];

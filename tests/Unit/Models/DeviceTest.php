@@ -13,15 +13,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
-<<<<<<< HEAD
  * @param array<string, mixed> $attributes
-=======
-<<<<<<< HEAD
- * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  */
 function modelsDeviceCreate(array $attributes = []): Device
 {
@@ -29,15 +21,7 @@ function modelsDeviceCreate(array $attributes = []): Device
 }
 
 /**
-<<<<<<< HEAD
  * @param array<string, mixed> $where
-=======
-<<<<<<< HEAD
- * @param  array<string, mixed>  $where
-=======
- * @param array<string, mixed> $where
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  */
 function modelsDeviceAssertInDatabase(string $id, array $where): void
 {
@@ -312,15 +296,7 @@ test('device has factory', function (): void {
 });
 
 test('device has fillable attributes', function (): void {
-<<<<<<< HEAD
     $fillable = (new Device())->getFillable();
-=======
-<<<<<<< HEAD
-    $fillable = (new Device)->getFillable();
-=======
-    $fillable = (new Device())->getFillable();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
     foreach ([
         'id', 'uuid', 'mobile_id', 'languages', 'device', 'platform', 'browser', 'version',
@@ -331,15 +307,7 @@ test('device has fillable attributes', function (): void {
 });
 
 test('device has casts', function (): void {
-<<<<<<< HEAD
     $casts = (new Device())->getCasts();
-=======
-<<<<<<< HEAD
-    $casts = (new Device)->getCasts();
-=======
-    $casts = (new Device())->getCasts();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
     Assert::assertSame('array', $casts['languages']);
     Assert::assertSame('boolean', $casts['is_robot']);

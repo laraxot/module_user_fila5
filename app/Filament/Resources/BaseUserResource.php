@@ -31,13 +31,6 @@ abstract class BaseUserResource extends XotBaseResource
     // {
     //    static::$extendFormCallback = $callback;
     // }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {
     //     static::$enablePasswordUpdates = $condition;
@@ -49,14 +42,6 @@ abstract class BaseUserResource extends XotBaseResource
      * return config('filament-user-resource.model');
      * }
      */
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-    #[\Override]
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     public function hasCombinedRelationManagerTabsWithContent(): bool
     {
         return true;

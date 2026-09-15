@@ -9,15 +9,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Class CreateRolesTable.
  */
-<<<<<<< HEAD
 /*
-=======
-<<<<<<< HEAD
-/**
-=======
-/*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  * Owner migration `User::roles` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: nessuna.
  */
