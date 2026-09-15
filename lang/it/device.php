@@ -27,8 +27,16 @@ return [
         'is_tablet' => ['label' => 'È Tablet', 'placeholder' => 'Seleziona se è tablet', 'tooltip' => 'Dispositivo tablet con schermo touch', 'helper_text' => 'Indica se si tratta di un tablet o dispositivo con schermo di medie dimensioni', 'help' => 'Indica se è un tablet o dispositivo con schermo di medie dimensioni', 'description' => ''],
         'is_phone' => ['label' => 'È Telefono', 'placeholder' => 'Seleziona se è telefono', 'tooltip' => 'Smartphone o telefono cellulare', 'helper_text' => 'Specifica se il dispositivo è uno smartphone o telefono cellulare', 'help' => 'Indica se è uno smartphone o telefono cellulare', 'description' => ''],
         'created_at' => ['label' => 'created_at'],
+<<<<<<< HEAD
         'login_at' => ['label' => 'login_at'],
         'logout_at' => ['label' => 'logout_at'],
+=======
+<<<<<<< HEAD
+=======
+        'login_at' => ['label' => 'login_at'],
+        'logout_at' => ['label' => 'logout_at'],
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => [
@@ -64,10 +72,19 @@ return [
             'modal' => ['heading' => 'Elimina Dispositivi Selezionati', 'description' => 'Sei sicuro di voler eliminare tutti i dispositivi selezionati? Questa azione è irreversibile.', 'confirm' => 'Elimina tutti', 'cancel' => 'Annulla'],
             'messages' => ['success' => 'Dispositivi eliminati con successo', 'error' => 'Si è verificato un errore durante l\'eliminazione dei dispositivi'],
         ],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'attach' => ['label' => 'attach', 'icon' => 'attach', 'tooltip' => 'attach'],
         'detach' => ['label' => 'detach', 'icon' => 'detach', 'tooltip' => 'detach'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     ],
     'sections' => [
         'device_info' => ['label' => 'Informazioni Dispositivo', 'description' => 'Dettagli tecnici del dispositivo'],

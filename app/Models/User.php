@@ -157,11 +157,23 @@ class User extends BaseUser
 {
     /** @var array<string, class-string> */
     protected $childTypes = [
+<<<<<<< .merge_file_Byef9w
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_uJDhVv
         'master_admin' => self::class,
         'backoffice_user' => self::class,
         'customer_user' => self::class,
         'system' => self::class,
         'technician' => self::class,
+<<<<<<< .merge_file_Byef9w
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_uJDhVv
     ];
 
     #[\Override]

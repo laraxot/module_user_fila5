@@ -17,7 +17,19 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var TestCase $this */
+<<<<<<< HEAD
     $this->widget = new UserOverview();
+=======
+<<<<<<< .merge_file_QXoeFM
+    $this->widget = new UserOverview();
+=======
+<<<<<<< HEAD
+    $this->widget = new UserOverview;
+=======
+    $this->widget = new UserOverview();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_8UpsXx
+>>>>>>> laraxot/dev
     TestCase::$user = UserFactory::new()->createOne([
         'type' => UserType::MasterAdmin,
         'email' => 'admin-'.Str::lower(Str::random(10)).'@example.com',

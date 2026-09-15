@@ -4,10 +4,23 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TeamUserResource\Schemas;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+use Filament\Schemas\Components\Component as SchemaComponent;
+use Filament\Forms\Components\Select;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
+use Filament\Schemas\Components\Section;
+=======
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\Select;
 use Filament\Schemas\Components\Component as SchemaComponent;
 use Filament\Schemas\Components\Section;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 class TeamUserForm extends XotBaseResourceForm
 {

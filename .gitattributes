@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 # Prototype: laravel/Modules/* e laravel/Themes/*
 # Canon: docs/wiki/rules/no-git-lfs.md
 # Sync: bash bashscripts/templates/sync-gitattributes-modules.sh

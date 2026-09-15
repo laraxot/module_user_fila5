@@ -13,13 +13,29 @@ uses(TestCase::class);
 describe('User Model Basic', function (): void {
     test('user model can be created', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $user = new User();
+=======
+<<<<<<< HEAD
+        $user = new User;
+=======
+        $user = new User();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(User::class, $user);
     });
 
     test('user model can access connection', function (): void {
+<<<<<<< HEAD
         $user = new User();
+=======
+<<<<<<< HEAD
+        $user = new User;
+=======
+        $user = new User();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
         Assert::assertSame('user', $user->getConnectionName());
     });

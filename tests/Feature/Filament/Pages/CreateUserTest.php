@@ -28,7 +28,19 @@ beforeEach(function (): void {
     }
     Filament::setCurrentPanel($panel);
 
+<<<<<<< HEAD
     TestCase::$createUserPage = new CreateUser();
+=======
+<<<<<<< .merge_file_tD4LS1
+    TestCase::$createUserPage = new CreateUser();
+=======
+<<<<<<< HEAD
+    TestCase::$createUserPage = new CreateUser;
+=======
+    TestCase::$createUserPage = new CreateUser();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_2effnA
+>>>>>>> laraxot/dev
 });
 
 describe('Create User', function (): void {

@@ -11,11 +11,25 @@ use Modules\User\Tests\TestCase;
 uses(TestCase::class);
 
 /**
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+ * @param  array<string, mixed>  $attributes
+ */
+function makeAuthenticationLogFor(User $user, array $attributes = []): AuthenticationLog
+{
+    $log = new AuthenticationLog;
+=======
+>>>>>>> laraxot/dev
  * @param array<string, mixed> $attributes
  */
 function makeAuthenticationLogFor(User $user, array $attributes = []): AuthenticationLog
 {
     $log = new AuthenticationLog();
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     $log->forceFill(array_merge([
         'authenticatable_type' => $user->getMorphClass(),
         'authenticatable_id' => $user->getKey(),

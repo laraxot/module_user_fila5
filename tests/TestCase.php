@@ -45,6 +45,26 @@ use function Safe\json_encode;
  * Migrations must be run ONCE externally: php artisan migrate --env=testing
  * DatabaseTransactions handles rollback between tests.
  *
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+ * @property User|null $user
+ * @property User|null $owner
+ * @property User|null $member
+ * @property User|null $admin
+ * @property User|null $baseUser
+ * @property Team|null $team
+ * @property Tenant|null $tenant1
+ * @property Tenant|null $tenant2
+ * @property Google2FA|null $google2fa
+ * @property Command|null $command
+ * @property ListUsers|null $listUsersPage
+ * @property CreateUser|null $createUserPage
+ * @property Device|null $device
+ * @property Action|null $action
+ * @property Widget|null $widget
+=======
+>>>>>>> laraxot/dev
  * @property User|null                  $user
  * @property User|null                  $owner
  * @property User|null                  $member
@@ -60,6 +80,10 @@ use function Safe\json_encode;
  * @property Device|null                $device
  * @property Action|null                $action
  * @property Widget|null                $widget
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
  * @property Collection<int, User>|null $users
  */
 abstract class TestCase extends XotBaseTestCase
@@ -73,7 +97,15 @@ abstract class TestCase extends XotBaseTestCase
         // scattare gli skipUnless* già previsti da questa TestCase.
         $this->prepareSharedSqliteForTesting();
 
+<<<<<<< HEAD
         if ('sqlite' === config('database.default')) {
+=======
+<<<<<<< HEAD
+        if (config('database.default') === 'sqlite') {
+=======
+        if ('sqlite' === config('database.default')) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             $this->connectionsToTransact = ['user'];
         }
 
@@ -143,7 +175,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function freshUser(User $user): User
     {
         $fresh = $user->fresh();
+<<<<<<< HEAD
         if (null === $fresh) {
+=======
+<<<<<<< HEAD
+        if ($fresh === null) {
+=======
+        if (null === $fresh) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::fail('User model could not be refreshed.');
         }
 
@@ -153,7 +193,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function requireUser(): User
     {
         $user = self::$user;
+<<<<<<< HEAD
         if (null === $user) {
+=======
+<<<<<<< HEAD
+        if ($user === null) {
+=======
+        if (null === $user) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::fail('User test property is not initialized.');
         }
 
@@ -163,7 +211,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function requireOwner(): User
     {
         $owner = self::$owner;
+<<<<<<< HEAD
         if (null === $owner) {
+=======
+<<<<<<< HEAD
+        if ($owner === null) {
+=======
+        if (null === $owner) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::fail('Owner test property is not initialized.');
         }
 
@@ -173,7 +229,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function requireMember(): User
     {
         $member = self::$member;
+<<<<<<< HEAD
         if (null === $member) {
+=======
+<<<<<<< HEAD
+        if ($member === null) {
+=======
+        if (null === $member) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::fail('Member test property is not initialized.');
         }
 
@@ -183,7 +247,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function requireAdmin(): User
     {
         $admin = self::$admin;
+<<<<<<< HEAD
         if (null === $admin) {
+=======
+<<<<<<< HEAD
+        if ($admin === null) {
+=======
+        if (null === $admin) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::fail('Admin test property is not initialized.');
         }
 
@@ -193,7 +265,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function requireBaseUser(): User
     {
         $baseUser = self::$baseUser;
+<<<<<<< HEAD
         if (null === $baseUser) {
+=======
+<<<<<<< HEAD
+        if ($baseUser === null) {
+=======
+        if (null === $baseUser) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::fail('BaseUser test property is not initialized.');
         }
 
@@ -203,7 +283,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function requireTeam(): Team
     {
         $team = self::$team;
+<<<<<<< HEAD
         if (null === $team) {
+=======
+<<<<<<< HEAD
+        if ($team === null) {
+=======
+        if (null === $team) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::fail('Team test property is not initialized.');
         }
 
@@ -213,7 +301,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function requireTenant1(): Tenant
     {
         $tenant1 = self::$tenant1;
+<<<<<<< HEAD
         if (null === $tenant1) {
+=======
+<<<<<<< HEAD
+        if ($tenant1 === null) {
+=======
+        if (null === $tenant1) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::fail('Tenant1 test property is not initialized.');
         }
 
@@ -223,7 +319,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function requireTenant2(): Tenant
     {
         $tenant2 = self::$tenant2;
+<<<<<<< HEAD
         if (null === $tenant2) {
+=======
+<<<<<<< HEAD
+        if ($tenant2 === null) {
+=======
+        if (null === $tenant2) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::fail('Tenant2 test property is not initialized.');
         }
 
@@ -233,7 +337,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function requireGoogle2fa(): Google2FA
     {
         $google2fa = self::$google2fa;
+<<<<<<< HEAD
         if (null === $google2fa) {
+=======
+<<<<<<< HEAD
+        if ($google2fa === null) {
+=======
+        if (null === $google2fa) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::fail('Google2FA test property is not initialized.');
         }
 
@@ -243,7 +355,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function requireDevice(): Device
     {
         $device = self::$device;
+<<<<<<< HEAD
         if (null === $device) {
+=======
+<<<<<<< HEAD
+        if ($device === null) {
+=======
+        if (null === $device) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::fail('Device test property is not initialized.');
         }
 
@@ -253,7 +373,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function requireCommand(): Command
     {
         $command = self::$command;
+<<<<<<< HEAD
         if (null === $command) {
+=======
+<<<<<<< HEAD
+        if ($command === null) {
+=======
+        if (null === $command) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::fail('Command test property is not initialized.');
         }
 
@@ -263,7 +391,15 @@ abstract class TestCase extends XotBaseTestCase
     public function requireAction(): Action
     {
         $action = $this->action;
+<<<<<<< HEAD
         if (null === $action) {
+=======
+<<<<<<< HEAD
+        if ($action === null) {
+=======
+        if (null === $action) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             $this->fail('Action test property is not initialized.');
         }
 
@@ -272,7 +408,15 @@ abstract class TestCase extends XotBaseTestCase
 
     public function requireWidget(): Widget
     {
+<<<<<<< HEAD
         if (null === $this->widget) {
+=======
+<<<<<<< HEAD
+        if ($this->widget === null) {
+=======
+        if (null === $this->widget) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             $this->fail('Widget test property is not initialized.');
         }
 
@@ -290,7 +434,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function requireCreateUserPage(): CreateUser
     {
         $createUserPage = self::$createUserPage;
+<<<<<<< HEAD
         if (null === $createUserPage) {
+=======
+<<<<<<< HEAD
+        if ($createUserPage === null) {
+=======
+        if (null === $createUserPage) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::fail('CreateUser page test property is not initialized.');
         }
 
@@ -300,7 +452,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function requireListUsersPage(): ListUsers
     {
         $listUsersPage = self::$listUsersPage;
+<<<<<<< HEAD
         if (null === $listUsersPage) {
+=======
+<<<<<<< HEAD
+        if ($listUsersPage === null) {
+=======
+        if (null === $listUsersPage) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::fail('ListUsers page test property is not initialized.');
         }
 
@@ -313,7 +473,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function requireUsers(): Collection
     {
         $users = self::$users;
+<<<<<<< HEAD
         if (null === $users) {
+=======
+<<<<<<< HEAD
+        if ($users === null) {
+=======
+        if (null === $users) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::fail('Users test property is not initialized.');
         }
 
@@ -328,7 +496,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function skipUnlessUserColumn(string $table, string $column, string $reason = ''): void
     {
         if (! self::userTableHasColumn($table, $column)) {
+<<<<<<< HEAD
             Assert::markTestSkipped('' !== $reason ? $reason : "Column {$table}.{$column} missing on user connection.");
+=======
+<<<<<<< HEAD
+            Assert::markTestSkipped($reason !== '' ? $reason : "Column {$table}.{$column} missing on user connection.");
+=======
+            Assert::markTestSkipped('' !== $reason ? $reason : "Column {$table}.{$column} missing on user connection.");
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         }
     }
 
@@ -340,7 +516,15 @@ abstract class TestCase extends XotBaseTestCase
     public static function skipUnlessUserTable(string $table, string $reason = ''): void
     {
         if (! self::userTableExists($table)) {
+<<<<<<< HEAD
             Assert::markTestSkipped('' !== $reason ? $reason : "Table {$table} missing on user connection.");
+=======
+<<<<<<< HEAD
+            Assert::markTestSkipped($reason !== '' ? $reason : "Table {$table} missing on user connection.");
+=======
+            Assert::markTestSkipped('' !== $reason ? $reason : "Table {$table} missing on user connection.");
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         }
     }
 
@@ -351,19 +535,43 @@ abstract class TestCase extends XotBaseTestCase
 
     public static function skipUnlessUsersTableReady(string $reason = ''): void
     {
+<<<<<<< HEAD
         self::skipUnlessUserTable('users', '' !== $reason ? $reason : 'users table missing on user connection.');
+=======
+<<<<<<< HEAD
+        self::skipUnlessUserTable('users', $reason !== '' ? $reason : 'users table missing on user connection.');
+=======
+        self::skipUnlessUserTable('users', '' !== $reason ? $reason : 'users table missing on user connection.');
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     }
 
     public static function skipUnlessRoleAssignmentSupported(string $reason = ''): void
     {
         $table = self::permissionRolePivotTable();
+<<<<<<< HEAD
         self::skipUnlessUserTable($table, '' !== $reason ? $reason : "Role pivot table {$table} missing on user connection.");
+=======
+<<<<<<< HEAD
+        self::skipUnlessUserTable($table, $reason !== '' ? $reason : "Role pivot table {$table} missing on user connection.");
+=======
+        self::skipUnlessUserTable($table, '' !== $reason ? $reason : "Role pivot table {$table} missing on user connection.");
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     }
 
     public static function skipUnlessDirectPermissionSupported(string $reason = ''): void
     {
         $table = self::permissionPivotTable();
+<<<<<<< HEAD
         self::skipUnlessUserTable($table, '' !== $reason ? $reason : "Permission pivot table {$table} missing on user connection.");
+=======
+<<<<<<< HEAD
+        self::skipUnlessUserTable($table, $reason !== '' ? $reason : "Permission pivot table {$table} missing on user connection.");
+=======
+        self::skipUnlessUserTable($table, '' !== $reason ? $reason : "Permission pivot table {$table} missing on user connection.");
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     }
 
     public static function skipUnlessUserSoftDeletes(string $reason = ''): void
@@ -373,7 +581,15 @@ abstract class TestCase extends XotBaseTestCase
             \class_uses_recursive(User::class),
             true
         )) {
+<<<<<<< HEAD
             Assert::markTestSkipped('' !== $reason ? $reason : 'User model does not use SoftDeletes.');
+=======
+<<<<<<< HEAD
+            Assert::markTestSkipped($reason !== '' ? $reason : 'User model does not use SoftDeletes.');
+=======
+            Assert::markTestSkipped('' !== $reason ? $reason : 'User model does not use SoftDeletes.');
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         }
     }
 
@@ -409,7 +625,15 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $attributes
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $attributes
+=======
+     * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
      */
     public static function createTestUser(array $attributes = []): User
     {
@@ -431,7 +655,15 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $overrides
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $overrides
+=======
+     * @param array<string, mixed> $overrides
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
      */
     public static function oauthClientTestPersistedClient(array $overrides = []): OauthClient
     {
@@ -465,7 +697,15 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $pivot
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $pivot
+=======
+     * @param array<string, mixed> $pivot
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
      */
     public static function attachTeamMember(Team $team, User $user, array $pivot = []): void
     {
@@ -509,7 +749,15 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $data
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $data
+=======
+     * @param array<string, mixed> $data
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
      */
     public function assertDatabaseHasRow(string $table, array $data, ?string $connection = 'user'): void
     {
@@ -517,7 +765,15 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $data
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $data
+=======
+     * @param array<string, mixed> $data
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
      */
     public function assertDatabaseMissingRow(string $table, array $data, ?string $connection = 'user'): void
     {
@@ -559,7 +815,15 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
+<<<<<<< HEAD
      * @param array<string, mixed> $attributes
+=======
+<<<<<<< HEAD
+     * @param  array<string, mixed>  $attributes
+=======
+     * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
      */
     public static function createTeamInvitationRecord(Team $team, array $attributes = []): TeamInvitation
     {
@@ -570,7 +834,15 @@ abstract class TestCase extends XotBaseTestCase
             'role' => 'member',
         ], $attributes);
 
+<<<<<<< HEAD
         $invitation = new TeamInvitation();
+=======
+<<<<<<< HEAD
+        $invitation = new TeamInvitation;
+=======
+        $invitation = new TeamInvitation();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         $invitation->forceFill($payload);
         $invitation->save();
 

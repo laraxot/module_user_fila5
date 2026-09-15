@@ -40,14 +40,30 @@ function loginFormSchema(Login $component): array
 }
 
 /**
+<<<<<<< HEAD
  * @param list<string> $roleNames
+=======
+<<<<<<< HEAD
+ * @param  list<string>  $roleNames
+=======
+ * @param list<string> $roleNames
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
  */
 function loginRedirectForRoles(array $roleNames): string
 {
     app()->setLocale('it');
     /** @var class-string<Model> $userClass */
     $userClass = XotData::make()->getUserClass();
+<<<<<<< HEAD
     $user = new $userClass();
+=======
+<<<<<<< HEAD
+    $user = new $userClass;
+=======
+    $user = new $userClass();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     $user->forceFill(['id' => 'redirect-user']);
 
     /** @var Collection<int, Role> $roles */
@@ -68,7 +84,15 @@ function loginRedirectForRoles(array $roleNames): string
 
     Auth::shouldReceive('user')->andReturn($userMock);
 
+<<<<<<< HEAD
     $component = new Login();
+=======
+<<<<<<< HEAD
+    $component = new Login;
+=======
+    $component = new Login();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     $method = new \ReflectionMethod($component, 'getRedirectUrl');
     $method->setAccessible(true);
 
@@ -80,14 +104,30 @@ function loginRedirectForRoles(array $roleNames): string
 
 describe('Login Livewire component', function (): void {
     test('mount initializes component without throwing', function (): void {
+<<<<<<< HEAD
         $component = new Login();
+=======
+<<<<<<< HEAD
+        $component = new Login;
+=======
+        $component = new Login();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         $component->mount();
 
         Assert::assertIsArray($component->data);
     });
 
     test('form schema exposes email password remember fields', function (): void {
+<<<<<<< HEAD
         $schema = loginFormSchema(new Login());
+=======
+<<<<<<< HEAD
+        $schema = loginFormSchema(new Login);
+=======
+        $schema = loginFormSchema(new Login());
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
         Assert::assertCount(3, $schema);
         Assert::assertInstanceOf(TextInput::class, $schema[0]);
@@ -97,7 +137,15 @@ describe('Login Livewire component', function (): void {
     });
 
     test('render returns login view', function (): void {
+<<<<<<< HEAD
         $view = (new Login())->render();
+=======
+<<<<<<< HEAD
+        $view = (new Login)->render();
+=======
+        $view = (new Login())->render();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(View::class, $view);
         Assert::assertSame('user::livewire.auth.login', $view->name());

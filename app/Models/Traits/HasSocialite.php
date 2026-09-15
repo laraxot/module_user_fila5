@@ -20,7 +20,15 @@ trait HasSocialite
     public function getProviderField(string $provider, string $field): string
     {
         $socialiteUser = $this->socialiteUsers()->firstWhere(['provider' => $provider]);
+<<<<<<< HEAD
         if (null === $socialiteUser) {
+=======
+<<<<<<< HEAD
+        if ($socialiteUser === null) {
+=======
+        if (null === $socialiteUser) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             throw new \Exception('SocialiteUser not found');
         }
 

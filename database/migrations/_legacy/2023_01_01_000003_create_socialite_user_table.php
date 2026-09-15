@@ -6,7 +6,16 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
+<<<<<<< HEAD
 return new class extends XotBaseMigration {
+=======
+<<<<<<< HEAD
+return new class extends XotBaseMigration
+{
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -39,7 +48,15 @@ return new class extends XotBaseMigration {
             // if (! $this->hasColumn('email')) {
             //    $table->string('email')->nullable();
             // }
+<<<<<<< HEAD
             if ('varchar' === $this->getColumnType('token')) {
+=======
+<<<<<<< HEAD
+            if ($this->getColumnType('token') === 'varchar') {
+=======
+            if ('varchar' === $this->getColumnType('token')) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
                 $table->text('token')->nullable()->change();
             }
             $this->updateTimestamps($table);

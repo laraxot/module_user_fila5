@@ -13,6 +13,14 @@ final class HasUserTestCaseFixture
 
     public function __construct()
     {
+<<<<<<< HEAD
         $this->user = new User();
+=======
+<<<<<<< HEAD
+        $this->user = new User;
+=======
+        $this->user = new User();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     }
 }

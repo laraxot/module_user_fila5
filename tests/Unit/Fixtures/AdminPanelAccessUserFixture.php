@@ -22,10 +22,22 @@ final class AdminPanelAccessUserFixture extends BaseUser
     }
 
     /**
+<<<<<<< .merge_file_mV0RZQ
           *
      * @param array<int, string>|Collection<int, string> $roles
      *                                                          =======
      * @param array<int, string>|Collection<int, string> $roles
+=======
+     * <<<<<<< HEAD.
+     *
+     * @param array<int, string>|Collection<int, string> $roles
+     *                                                          =======
+     *                                                          <<<<<<< HEAD
+     * @param array<int, string>|Collection<int, string> $roles
+     *                                                          =======
+     * @param array<int, string>|Collection<int, string> $roles
+     *                                                          >>>>>>> laraxot/dev
+>>>>>>> .merge_file_qtl3FX
      *                                                          >>>>>>> laraxot/dev
      */
     public function hasRole($roles, ?string $guard = null): bool
