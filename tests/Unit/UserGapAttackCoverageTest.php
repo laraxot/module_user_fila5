@@ -156,7 +156,7 @@ describe('User gap attack — highest miss files', function (): void {
                 }
             }
 
-            $eventClass = OtherDeviceLogoutListener::class === $class
+            $eventClass = $class === OtherDeviceLogoutListener::class
                 ? OtherDeviceLogout::class
                 : Logout::class;
             /** @var Authenticatable&MockInterface $authUser */
@@ -201,7 +201,7 @@ describe('User gap attack — highest miss files', function (): void {
         Hash::shouldReceive('check')->andReturn(true);
         Hash::shouldReceive('needsRehash')->andReturn(false);
 
-        $user = new UserGapBaseUserProbe();
+        $user = new UserGapBaseUserProbe;
         $user->setRawAttributes([
             'id' => 1,
             'name' => 'Test',
@@ -212,8 +212,8 @@ describe('User gap attack — highest miss files', function (): void {
 
         $ref = new \ReflectionClass($user);
         foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
-            if (UserGapBaseUserProbe::class !== $method->getDeclaringClass()->getName()
-                && BaseUser::class !== $method->getDeclaringClass()->getName()) {
+            if ($method->getDeclaringClass()->getName() !== UserGapBaseUserProbe::class
+                && $method->getDeclaringClass()->getName() !== BaseUser::class) {
                 continue;
             }
             if (str_starts_with($method->getName(), '__')) {
