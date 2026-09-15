@@ -6,16 +6,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
-<<<<<<< HEAD
 return new class extends XotBaseMigration {
-=======
-<<<<<<< HEAD
-return new class extends XotBaseMigration
-{
-=======
-return new class extends XotBaseMigration {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     public function up(): void
     {
         $this->tableCreate(static function (Blueprint $table): void {
@@ -34,15 +25,7 @@ return new class extends XotBaseMigration {
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-<<<<<<< HEAD
             if ('string' !== $this->getColumnType('id')) {
-=======
-<<<<<<< HEAD
-            if ($this->getColumnType('id') !== 'string') {
-=======
-            if ('string' !== $this->getColumnType('id')) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 $table->uuid('id')->change(); // is  just primary
             }
             $this->updateTimestamps($table, false);

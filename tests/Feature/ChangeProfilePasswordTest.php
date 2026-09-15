@@ -12,24 +12,11 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Pages\MyProfilePage;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-use PHPUnit\Framework\Assert;
-
-use function Pest\Laravel\actingAs;
-
-=======
->>>>>>> laraxot/dev
 
 use function Pest\Laravel\actingAs;
 
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 uses(TestCase::class);
 
 beforeEach(function (): void {
@@ -77,15 +64,7 @@ describe('Change Profile Password', function (): void {
             ])
             ->call('updatePassword');
 
-<<<<<<< HEAD
         $testable->assertHasErrors(['passwordData.current_password']);
-=======
-<<<<<<< HEAD
-        $testable->assertHasErrors();
-=======
-        $testable->assertHasErrors(['passwordData.current_password']);
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
         $errors = $testable->errors();
         Assert::assertIsArray($errors);

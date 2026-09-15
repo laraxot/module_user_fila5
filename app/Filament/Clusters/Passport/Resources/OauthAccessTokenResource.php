@@ -52,15 +52,7 @@ class OauthAccessTokenResource extends XotBaseResource
                             return null;
                         }
                         $user = $record->user;
-<<<<<<< HEAD
-                        if ($user !== null && method_exists($user, 'exists') && $user->exists) {
-=======
-<<<<<<< HEAD
-                        if ($user !== null && method_exists($user, 'exists') && $user->exists) {
-=======
                         if (null !== $user && method_exists($user, 'exists') && $user->exists) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -79,15 +71,7 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('scopes')
                     ->limit(30)
                     ->tooltip(function (mixed $state): ?string {
-<<<<<<< HEAD
-                        if ($state === null) {
-=======
-<<<<<<< HEAD
-                        if ($state === null) {
-=======
                         if (null === $state) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                             return null;
                         }
                         if (is_array($state)) {
@@ -158,16 +142,10 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->requiresConfirmation()
                     ->action(function (Collection $records): void {
                         $users = $records->pluck('user_id')->unique();
-<<<<<<< HEAD
-                        foreach ($users as $userId) {
-                            if (is_string($userId) || is_int($userId)) {
-                                app(RevokeAllUserTokensAction::class)->execute((string) $userId);
-=======
                         $count = 0;
                         foreach ($users as $userId) {
                             if (is_string($userId) || is_int($userId)) {
                                 $count += app(RevokeAllUserTokensAction::class)->execute((string) $userId);
->>>>>>> laraxot/dev
                             }
                         }
                         Notification::make()
@@ -199,15 +177,7 @@ class OauthAccessTokenResource extends XotBaseResource
                         return null;
                     }
                     $user = $record->user;
-<<<<<<< HEAD
-                    if ($user !== null && method_exists($user, 'exists') && $user->exists) {
-=======
-<<<<<<< HEAD
-                    if ($user !== null && method_exists($user, 'exists') && $user->exists) {
-=======
                     if (null !== $user && method_exists($user, 'exists') && $user->exists) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                         return UserResource::getUrl('view', ['record' => $user]);
                     }
 
@@ -226,15 +196,7 @@ class OauthAccessTokenResource extends XotBaseResource
             'scopes' => TextColumn::make('scopes')
                 ->limit(30)
                 ->tooltip(function (mixed $state): ?string {
-<<<<<<< HEAD
-                    if ($state === null) {
-=======
-<<<<<<< HEAD
-                    if ($state === null) {
-=======
                     if (null === $state) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                         return null;
                     }
                     if (is_array($state)) {
@@ -326,16 +288,10 @@ class OauthAccessTokenResource extends XotBaseResource
                 ->requiresConfirmation()
                 ->action(function (Collection $records): void {
                     $users = $records->pluck('user_id')->unique();
-<<<<<<< HEAD
-                    foreach ($users as $userId) {
-                        if (is_string($userId) || is_int($userId)) {
-                            app(RevokeAllUserTokensAction::class)->execute((string) $userId);
-=======
                     $count = 0;
                     foreach ($users as $userId) {
                         if (is_string($userId) || is_int($userId)) {
                             $count += app(RevokeAllUserTokensAction::class)->execute((string) $userId);
->>>>>>> laraxot/dev
                         }
                     }
                     Notification::make()

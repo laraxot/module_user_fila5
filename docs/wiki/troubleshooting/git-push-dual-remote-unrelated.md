@@ -9,19 +9,7 @@ qmd: "User module_user_fila5 push unrelated histories laraxot provtv no merge fo
 issues:
   - https://github.com/provtv/module_user_fila5/issues/16
 discussions:
-<<<<<<< HEAD
   - https://github.com/provtv/base_ptv_fila5/discussions/204
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - https://github.com/provtv/<repo progetto>/discussions/204
-=======
-  - https://github.com/provtv/base_ptv_fila5/discussions/204
->>>>>>> laraxot/dev
-=======
-  - https://github.com/provtv/base_ptv_fila5/discussions/204
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./git-push-lfs-missing-objects.md"
   - "../../multi-org-sync-laraxot-provtv.md"

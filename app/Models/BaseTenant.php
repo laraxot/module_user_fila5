@@ -27,27 +27,9 @@ use Spatie\Sluggable\SlugOptions;
  * @method static Builder|Tenant query()
  *
  * @property EloquentCollection<int, Model&UserContract> $members
- *                                                                      <<<<<<< HEAD
  * @property int|null                                    $members_count
  * @property ProfileContract|null                        $creator
  * @property ProfileContract|null                        $updater
-<<<<<<< .merge_file_Z41DQU
- * @property int|null                                    $members_count
- * @property ProfileContract|null                        $creator
- * @property ProfileContract|null                        $updater
-=======
- *                                                                      =======
- *                                                                      <<<<<<< HEAD
- * @property int|null                                    $members_count
- * @property ProfileContract|null                        $creator
- * @property ProfileContract|null                        $updater
- *                                                                      =======
- * @property int|null                                    $members_count
- * @property ProfileContract|null                        $creator
- * @property ProfileContract|null                        $updater
- *                                                                      >>>>>>> laraxot/dev
- *                                                                      >>>>>>> laraxot/dev
->>>>>>> .merge_file_QGYa3j
  *
  * @mixin \Eloquent
  */

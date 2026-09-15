@@ -73,23 +73,10 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
 
             Assert::nullOrString($startDate = $startDateValue);
             Assert::nullOrString($endDate = $endDateValue);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            if ($endDate === null) {
-                $endDate = Carbon::now()->format('Y-m-d H:i:s');
-            }
-            if ($startDate === null) {
-=======
->>>>>>> laraxot/dev
             if (null === $endDate) {
                 $endDate = Carbon::now()->format('Y-m-d H:i:s');
             }
             if (null === $startDate) {
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 $startDate = Carbon::now()->subMonth()->format('Y-m-d H:i:s');
             }
             Assert::notNull($startDate = Carbon::createFromFormat('Y-m-d H:i:s', $startDate));

@@ -7,14 +7,6 @@ return [
         'id' => ['label' => 'id'],
         'name' => ['label' => 'name'],
         'created_at' => ['label' => 'created_at'],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    ],
-    'actions' => [
-        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
-=======
->>>>>>> laraxot/dev
         'user_id' => ['label' => 'user_id'],
         'client_id' => ['label' => 'client_id'],
         'revoked' => ['label' => 'revoked'],
@@ -29,9 +21,5 @@ return [
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     ],
 ];

@@ -14,27 +14,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
-<<<<<<< .merge_file_tI4j9b
- *
  * @param array<string, mixed> $attributes
- * @param array<string, mixed> $attributes
-  * @param array<string, mixed> $attributes
-=======
- * <<<<<<< HEAD.
- *
- * @param array<string, mixed> $attributes
- *                                         =======
- *                                         <<<<<<< .merge_file_Fxdz5Z.
- * @param array<string, mixed> $attributes
- *                                         =======
- *                                         <<<<<<< HEAD
- * @param array<string, mixed> $attributes
- *                                         =======
- * @param array<string, mixed> $attributes
- *                                         >>>>>>> laraxot/dev
- *                                         >>>>>>> .merge_file_dEXkKQ
- *                                         >>>>>>> laraxot/dev
->>>>>>> .merge_file_E0hE9d
  */
 function modelsTeamCreateUser(array $attributes = []): User
 {

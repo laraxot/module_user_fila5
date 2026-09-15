@@ -76,19 +76,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class ExampleResource extends XotBaseResource
 {
-<<<<<<< .merge_file_wuK3nd
     public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_OWY4ti
     {
         return [
             'name' => TextInput::make('name')

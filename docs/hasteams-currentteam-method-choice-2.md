@@ -5,23 +5,8 @@ tags: [hasteams, currentteam, method, choice]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "hasteams-currentteam-method-choice-2 choice of currentteam() method in hasteams trait"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -61,16 +46,4 @@ This decision ensures the codebase remains maintainable, scalable, and consisten
 
 ## Note on Migration File Path Error
 
-<<<<<<< HEAD
 - An error was made in assuming the path for the migration file related to team ownership (`add_owner_id_to_teams_table.php`). Initially, the path was assumed to be in the main Laravel migrations directory (`/var/www/html/Quaeris/laravel/database/migrations/`), whereas the correct path is within the User module's migrations directory (`/var/www/html/Quaeris/laravel/Modules/User/database/migrations/`). This highlights the importance of verifying module-specific directory structures as per project guidelines to avoid such mistakes in the future.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- An error was made in assuming the path for the migration file related to team ownership (`add_owner_id_to_teams_table.php`). Initially, the path was assumed to be in the main Laravel migrations directory (`/var/www/html/<nome progetto>/laravel/database/migrations/`), whereas the correct path is within the User module's migrations directory (`/var/www/html/<nome progetto>/laravel/Modules/User/database/migrations/`). This highlights the importance of verifying module-specific directory structures as per project guidelines to avoid such mistakes in the future.
-=======
-- An error was made in assuming the path for the migration file related to team ownership (`add_owner_id_to_teams_table.php`). Initially, the path was assumed to be in the main Laravel migrations directory (`/var/www/html/Quaeris/laravel/database/migrations/`), whereas the correct path is within the User module's migrations directory (`/var/www/html/Quaeris/laravel/Modules/User/database/migrations/`). This highlights the importance of verifying module-specific directory structures as per project guidelines to avoid such mistakes in the future.
->>>>>>> laraxot/dev
-=======
-- An error was made in assuming the path for the migration file related to team ownership (`add_owner_id_to_teams_table.php`). Initially, the path was assumed to be in the main Laravel migrations directory (`/var/www/html/Quaeris/laravel/database/migrations/`), whereas the correct path is within the User module's migrations directory (`/var/www/html/Quaeris/laravel/Modules/User/database/migrations/`). This highlights the importance of verifying module-specific directory structures as per project guidelines to avoid such mistakes in the future.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev

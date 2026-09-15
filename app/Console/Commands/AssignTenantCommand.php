@@ -6,21 +6,13 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
-<<<<<<< HEAD
-use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
-=======
->>>>>>> laraxot/dev
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
-<<<<<<< HEAD
-=======
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 
->>>>>>> laraxot/dev
 class AssignTenantCommand extends Command
 {
     /**
@@ -43,10 +35,7 @@ class AssignTenantCommand extends Command
     public function handle(): void
     {
         $email = text('email ?');
-<<<<<<< HEAD
-=======
         $user_class = XotData::make()->getUserClass();
->>>>>>> laraxot/dev
         /** @var UserContract */
         $user = XotData::make()->getUserByEmail($email);
         $xot = XotData::make();

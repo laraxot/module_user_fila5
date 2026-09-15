@@ -35,21 +35,9 @@ return [
     'plural_label' => 'Features (Plurale)',
     'actions' => [
         'create' => ['label' => 'Crea Features', 'icon' => 'create', 'tooltip' => 'create'],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-        'edit' => ['label' => 'Modifica Features'],
-        'delete' => ['label' => 'Elimina Features', 'icon' => 'delete', 'tooltip' => 'delete'],
-        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
-=======
->>>>>>> laraxot/dev
         'edit' => ['label' => 'Modifica Features', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Features', 'icon' => 'delete', 'tooltip' => 'delete'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     ],
 ];

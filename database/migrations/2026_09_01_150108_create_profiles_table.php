@@ -19,15 +19,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * The `id` is NEVER exposed in APIs or URLs; `uuid` is used for all external
  * references. XotBaseModel::casts() already handles both.
  */
-<<<<<<< HEAD
 /*
-=======
-<<<<<<< HEAD
-/**
-=======
-/*
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  * Owner migration `User::profiles` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: ['id'].
  */

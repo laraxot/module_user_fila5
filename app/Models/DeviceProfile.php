@@ -14,32 +14,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * Extends the base DeviceUser model to add specific functionality.
  *
  * @property ProfileContract|null $creator
- *                                         <<<<<<< HEAD
- *                                         =======
- *                                         <<<<<<< HEAD
- *                                         >>>>>>> laraxot/dev
  * @property Device|null          $device
  * @property ProfileContract|null $profile
  * @property ProfileContract|null $updater
  * @property User|null            $user
-<<<<<<< .merge_file_aA4oiD
-  * @property Device|null          $device
- * @property ProfileContract|null $profile
- * @property ProfileContract|null $updater
- * @property User|null            $user
-  *
-=======
- *                                         <<<<<<< HEAD
- *                                         =======
- *                                         =======
- * @property Device|null          $device
- * @property ProfileContract|null $profile
- * @property ProfileContract|null $updater
- * @property User|null            $user
- *                                         >>>>>>> laraxot/dev
- *                                         >>>>>>> laraxot/dev
  *
->>>>>>> .merge_file_wPsORe
  * @method static Builder<static>|DeviceProfile newModelQuery()
  * @method static Builder<static>|DeviceProfile newQuery()
  * @method static Builder<static>|DeviceProfile query()
@@ -55,24 +34,8 @@ class DeviceProfile extends DeviceUser
     /**
      * Create a new model instance.
      *
-<<<<<<< .merge_file_aA4oiD
-     *
      * @param array<string, mixed> $attributes
-          * @param array<string, mixed> $attributes
-          */
-=======
-     * <<<<<<< HEAD
-     *
-     * @param array<string, mixed> $attributes
-     *                                         =======
-     *                                         <<<<<<< HEAD
-     * @param array<string, mixed> $attributes
-     *                                         =======
-     * @param array<string, mixed> $attributes
-     *                                         >>>>>>> laraxot/dev
-     *                                         >>>>>>> laraxot/dev
      */
->>>>>>> .merge_file_wPsORe
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);

@@ -14,19 +14,10 @@ return [
         'revoked' => ['label' => 'revoked'],
         'created_at' => ['label' => 'created_at'],
         'updated_at' => ['label' => 'updated_at'],
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         'grant_types' => ['label' => 'grant_types'],
         'redirect_uris' => ['label' => 'redirect_uris'],
         'owner_id' => ['label' => 'owner_id'],
         'owner_type' => ['label' => 'owner_type'],
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     ],
     'navigation' => [
         'name' => 'Clients',

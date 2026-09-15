@@ -5,19 +5,7 @@ status: approved
 tags: [agent, confidence, verification]
 created: "2026-05-26"
 updated: "2026-05-26"
-<<<<<<< HEAD
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/152"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-issue: "https://github.com/provtv/<repo progetto>/issues/152"
-=======
-issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/152"
->>>>>>> laraxot/dev
-=======
-issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/152"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"

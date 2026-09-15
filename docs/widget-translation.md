@@ -1,42 +1,12 @@
 ---
-<<<<<<< HEAD
 title: "Widget Translation Rules - FixCity Project"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-title: "Widget Translation Rules - <nome progetto> Project"
-=======
-title: "Widget Translation Rules - FixCity Project"
->>>>>>> laraxot/dev
-=======
-title: "Widget Translation Rules - FixCity Project"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 type: concept
 tags: [widget, translation]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< HEAD
 qmd: "widget-translation widget translation rules - fixcity project"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-qmd: "widget-translation widget translation rules - <nome progetto> project"
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
-qmd: "widget-translation widget translation rules - fixcity project"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-qmd: "widget-translation widget translation rules - fixcity project"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -48,19 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
 # Widget Translation Rules - FixCity Project
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Widget Translation Rules - <nome progetto> Project
-=======
-# Widget Translation Rules - FixCity Project
->>>>>>> laraxot/dev
-=======
-# Widget Translation Rules - FixCity Project
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Core Principles
 ### Translation File Structure
@@ -209,19 +167,7 @@ This document serves as a reference for:
 - Translation implementation patterns
 - Code quality requirements
 - Documentation standards
-<<<<<<< HEAD
 All widget development should follow these rules to maintain consistency and quality across the FixCity project.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-All widget development should follow these rules to maintain consistency and quality across the <nome progetto> project.
-=======
-All widget development should follow these rules to maintain consistency and quality across the FixCity project.
->>>>>>> laraxot/dev
-=======
-All widget development should follow these rules to maintain consistency and quality across the FixCity project.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 # Widget Translation Rules - <nome progetto> Project
 
 ## Core Principles

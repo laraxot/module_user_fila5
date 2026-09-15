@@ -5,23 +5,8 @@ tags: [logout, page, implementation]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "logout-page-implementation-2 implementazione della pagina di logout nel tema one"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -41,19 +26,7 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 
 ### 1. Posizione del File
 ```
-<<<<<<< HEAD
 /var/www/html/Quaeris/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
-=======
-/var/www/html/Quaeris/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
->>>>>>> laraxot/dev
-=======
-/var/www/html/Quaeris/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 ### 2. Implementazione Corretta

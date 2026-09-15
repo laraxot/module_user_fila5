@@ -1,42 +1,12 @@
 ---
-<<<<<<< HEAD
 title: "Filament 4: Namespace Actions - Filosofia Laraxot"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-title: "Filament 5: Namespace Actions - Filosofia Laraxot"
-=======
-title: "Filament 4: Namespace Actions - Filosofia Laraxot"
->>>>>>> laraxot/dev
-=======
-title: "Filament 4: Namespace Actions - Filosofia Laraxot"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 type: concept
 tags: [filament, actions, namespace]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< HEAD
 qmd: "filament-4-actions-namespace filament 4: namespace actions - filosofia laraxot"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-qmd: "Filament-5-actions-namespace Filament 5: namespace actions - filosofia laraxot"
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
-qmd: "filament-4-actions-namespace filament 4: namespace actions - filosofia laraxot"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-qmd: "filament-4-actions-namespace filament 4: namespace actions - filosofia laraxot"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -48,49 +18,17 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
 # Filament 4: Namespace Actions - Filosofia Laraxot
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Filament 5: Namespace Actions - Filosofia Laraxot
-=======
-# Filament 4: Namespace Actions - Filosofia Laraxot
->>>>>>> laraxot/dev
-=======
-# Filament 4: Namespace Actions - Filosofia Laraxot
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Data Creazione**: 2025-01-22
 **Status**: Documentazione Completa
 **Versione**: 1.0.0
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-## 🏛️ Comandamento Sacro: Namespace Filament 5
-
-### Principio Fondamentale
-
-**"In Filament 5, tutte le Actions sono in `Filament\Actions\*`, NON in `Filament\Tables\Actions\*`"**
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ## 🏛️ Comandamento Sacro: Namespace Filament 4
 
 ### Principio Fondamentale
 
 **"In Filament 4, tutte le Actions sono in `Filament\Actions\*`, NON in `Filament\Tables\Actions\*`"**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 Questo non è un suggerimento, è un **COMANDAMENTO** della religione Laraxot.
 
@@ -98,19 +36,7 @@ Questo non è un suggerimento, è un **COMANDAMENTO** della religione Laraxot.
 
 ### Perché il Cambiamento
 
-<<<<<<< HEAD
 Filament 4 ha unificato il namespace delle Actions per:
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Filament 5 ha unificato il namespace delle Actions per:
-=======
-Filament 4 ha unificato il namespace delle Actions per:
->>>>>>> laraxot/dev
-=======
-Filament 4 ha unificato il namespace delle Actions per:
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 1. **Semplicità**: Un solo namespace per tutte le actions
 2. **Coerenza**: Actions usabili ovunque (tables, forms, pages)
 3. **Manutenibilità**: Codice più pulito e organizzato
@@ -118,19 +44,7 @@ Filament 4 ha unificato il namespace delle Actions per:
 ### Manifestazione nel Codice
 
 ```php
-<<<<<<< HEAD
 // ✅ CORRETTO - Filament 4
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// ✅ CORRETTO - Filament 5
-=======
-// ✅ CORRETTO - Filament 4
->>>>>>> laraxot/dev
-=======
-// ✅ CORRETTO - Filament 4
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 use Filament\Actions\AttachAction;
 use Filament\Actions\DetachAction;
 use Filament\Actions\DetachBulkAction;
@@ -147,19 +61,7 @@ use Filament\Tables\Actions\DetachBulkAction;
 
 ### Namespace Sacri
 
-<<<<<<< HEAD
 In Filament 4, la gerarchia dei namespace è:
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-In Filament 5, la gerarchia dei namespace è:
-=======
-In Filament 4, la gerarchia dei namespace è:
->>>>>>> laraxot/dev
-=======
-In Filament 4, la gerarchia dei namespace è:
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ```
 Filament\Actions\*
@@ -204,38 +106,14 @@ Il namespace unificato è un'espressione del principio Zen di semplicità:
 
 - **Una cosa, un posto**: Tutte le actions in un solo namespace
 - **Chiarezza**: Nessuna ambiguità su dove trovare le actions
-<<<<<<< HEAD
 - **Armonia**: Codice in equilibrio con Filament 4
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Armonia**: Codice in equilibrio con Filament 5
-=======
-- **Armonia**: Codice in equilibrio con Filament 4
->>>>>>> laraxot/dev
-=======
-- **Armonia**: Codice in equilibrio con Filament 4
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## 📋 Pattern Corretto Laraxot
 
 ### RelationManager Actions
 
 ```php
-<<<<<<< HEAD
 // ✅ CORRETTO - Filament 4
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// ✅ CORRETTO - Filament 5
-=======
-// ✅ CORRETTO - Filament 4
->>>>>>> laraxot/dev
-=======
-// ✅ CORRETTO - Filament 4
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 use Filament\Actions\AttachAction;
 use Filament\Actions\DetachAction;
 use Filament\Actions\DetachBulkAction;
@@ -277,19 +155,7 @@ class TeamsRelationManager extends XotBaseRelationManager
 ### Resource Actions
 
 ```php
-<<<<<<< HEAD
 // ✅ CORRETTO - Filament 4
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// ✅ CORRETTO - Filament 5
-=======
-// ✅ CORRETTO - Filament 4
->>>>>>> laraxot/dev
-=======
-// ✅ CORRETTO - Filament 4
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 use Filament\Actions\CreateAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\DeleteAction;
@@ -366,27 +232,9 @@ grep -r "Filament\\\\Actions" laravel/Modules/*/app/
 
 ## 📚 Riferimenti
 
-<<<<<<< HEAD
 - [Filament 4 Migration Guide](../../xot/docs/filament-4-migration-guide.md)
 - [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
 - [Filament 4 Documentation](https://filamentphp.com/docs/4.x)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Filament 5 Migration Guide](../../xot/docs/Filament-5-migration-guide.md)
-- [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
-- [Filament 5 Documentation](https://filamentphp.com/docs/4.x)
-=======
-- [Filament 4 Migration Guide](../../xot/docs/filament-4-migration-guide.md)
-- [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
-- [Filament 4 Documentation](https://filamentphp.com/docs/4.x)
->>>>>>> laraxot/dev
-=======
-- [Filament 4 Migration Guide](../../xot/docs/filament-4-migration-guide.md)
-- [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
-- [Filament 4 Documentation](https://filamentphp.com/docs/4.x)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 

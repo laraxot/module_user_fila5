@@ -12,15 +12,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
-<<<<<<< HEAD
  * @param array<string, mixed> $expected
-=======
-<<<<<<< HEAD
- * @param  array<string, mixed>  $expected
-=======
- * @param array<string, mixed> $expected
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  */
 function assertDeviceMatches(Device $device, array $expected): void
 {
@@ -35,15 +27,7 @@ function bindFakeAgent(FakeAgent $agent): void
 }
 
 it('creates device with valid agent data', function (): void {
-<<<<<<< HEAD
     $agent = new FakeAgent();
-=======
-<<<<<<< HEAD
-    $agent = new FakeAgent;
-=======
-    $agent = new FakeAgent();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     $agent->fakeDevice = 'iPhone';
     $agent->fakePlatform = 'iOS';
     $agent->fakeBrowser = 'Safari';
@@ -72,15 +56,7 @@ it('creates device with valid agent data', function (): void {
 
 it('creates device with mobile id', function (): void {
     $mobileId = 'unique-mobile-identifier-123';
-<<<<<<< HEAD
     $agent = new FakeAgent();
-=======
-<<<<<<< HEAD
-    $agent = new FakeAgent;
-=======
-    $agent = new FakeAgent();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     $agent->fakeDevice = 'Android Phone';
     $agent->fakePlatform = 'Android';
     $agent->fakeBrowser = 'Chrome';
@@ -102,15 +78,7 @@ it('creates device with mobile id', function (): void {
 });
 
 it('handles empty mobile id', function (): void {
-<<<<<<< HEAD
     bindFakeAgent(new FakeAgent());
-=======
-<<<<<<< HEAD
-    bindFakeAgent(new FakeAgent);
-=======
-    bindFakeAgent(new FakeAgent());
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
     try {
         app(GetCurrentDeviceAction::class)->execute('');
@@ -121,15 +89,7 @@ it('handles empty mobile id', function (): void {
 });
 
 it('handles null mobile id', function (): void {
-<<<<<<< HEAD
     $agent = new FakeAgent();
-=======
-<<<<<<< HEAD
-    $agent = new FakeAgent;
-=======
-    $agent = new FakeAgent();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     $agent->fakeDevice = 'Desktop';
     $agent->fakePlatform = 'Windows';
     $agent->fakeBrowser = 'Chrome';
@@ -150,15 +110,7 @@ it('handles null mobile id', function (): void {
 });
 
 it('handles unknown device types', function (): void {
-<<<<<<< HEAD
     bindFakeAgent(new FakeAgent());
-=======
-<<<<<<< HEAD
-    bindFakeAgent(new FakeAgent);
-=======
-    bindFakeAgent(new FakeAgent());
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
     $result = app(GetCurrentDeviceAction::class)->execute();
 
@@ -173,15 +125,7 @@ it('handles unknown device types', function (): void {
 });
 
 it('handles robot detection', function (): void {
-<<<<<<< HEAD
     $agent = new FakeAgent();
-=======
-<<<<<<< HEAD
-    $agent = new FakeAgent;
-=======
-    $agent = new FakeAgent();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     $agent->fakeDevice = 'Robot';
     $agent->fakePlatform = 'Unknown';
     $agent->fakeBrowser = 'Robot';
@@ -198,15 +142,7 @@ it('handles robot detection', function (): void {
 });
 
 it('handles tablet detection', function (): void {
-<<<<<<< HEAD
     $agent = new FakeAgent();
-=======
-<<<<<<< HEAD
-    $agent = new FakeAgent;
-=======
-    $agent = new FakeAgent();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     $agent->fakeDevice = 'iPad';
     $agent->fakePlatform = 'iOS';
     $agent->fakeBrowser = 'Safari';
@@ -228,15 +164,7 @@ it('handles tablet detection', function (): void {
 });
 
 it('handles desktop detection', function (): void {
-<<<<<<< HEAD
     $agent = new FakeAgent();
-=======
-<<<<<<< HEAD
-    $agent = new FakeAgent;
-=======
-    $agent = new FakeAgent();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     $agent->fakeDevice = 'Desktop';
     $agent->fakePlatform = 'macOS';
     $agent->fakeBrowser = 'Firefox';
@@ -259,15 +187,7 @@ it('handles desktop detection', function (): void {
 });
 
 it('handles mobile phone detection', function (): void {
-<<<<<<< HEAD
     $agent = new FakeAgent();
-=======
-<<<<<<< HEAD
-    $agent = new FakeAgent;
-=======
-    $agent = new FakeAgent();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     $agent->fakeDevice = 'Samsung Galaxy';
     $agent->fakePlatform = 'Android';
     $agent->fakeBrowser = 'Chrome Mobile';
@@ -290,15 +210,7 @@ it('handles mobile phone detection', function (): void {
 });
 
 it('handles edge case platforms', function (): void {
-<<<<<<< HEAD
     $agent = new FakeAgent();
-=======
-<<<<<<< HEAD
-    $agent = new FakeAgent;
-=======
-    $agent = new FakeAgent();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     $agent->fakeDevice = 'Smart TV';
     $agent->fakePlatform = 'Tizen';
     $agent->fakeBrowser = 'Samsung Internet';
@@ -318,15 +230,7 @@ it('handles edge case platforms', function (): void {
 });
 
 it('handles legacy browsers', function (): void {
-<<<<<<< HEAD
     $agent = new FakeAgent();
-=======
-<<<<<<< HEAD
-    $agent = new FakeAgent;
-=======
-    $agent = new FakeAgent();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     $agent->fakeDevice = 'Desktop';
     $agent->fakePlatform = 'Windows';
     $agent->fakeBrowser = 'Internet Explorer';
@@ -345,15 +249,7 @@ it('handles legacy browsers', function (): void {
 });
 
 it('handles unknown browser versions', function (): void {
-<<<<<<< HEAD
     $agent = new FakeAgent();
-=======
-<<<<<<< HEAD
-    $agent = new FakeAgent;
-=======
-    $agent = new FakeAgent();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     $agent->fakeDevice = 'Desktop';
     $agent->fakePlatform = 'Linux';
     $agent->fakeBrowser = 'Unknown Browser';

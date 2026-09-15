@@ -1,19 +1,7 @@
 ---
 id: phpstan-user-fix
 slug: phpstan-user
-<<<<<<< HEAD
 scope: [module:User, project:base_workorder_fila5]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-scope: [module:User, project:<repo progetto>]
-=======
-scope: [module:User, project:base_workorder_fila5]
->>>>>>> laraxot/dev
-=======
-scope: [module:User, project:base_workorder_fila5]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 status: Superseded
 priority: High
 created: 2026-09-06

@@ -9,21 +9,9 @@ use Livewire\Livewire;
 use Modules\User\Filament\Clusters\Passport\Pages\PassportDashboard;
 use Modules\User\Models\BaseUser;
 use Modules\User\Models\OauthClient;
-<<<<<<< HEAD
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-=======
-<<<<<<< HEAD
-use Modules\User\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-use Modules\User\Models\User;
-=======
-use Modules\User\Models\User;
-use Modules\User\Tests\TestCase;
-use PHPUnit\Framework\Assert;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 uses(TestCase::class);
 
@@ -38,21 +26,6 @@ uses(TestCase::class);
  */
 function makeMockUser(bool $isSuper): BaseUser
 {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    return new class($isSuper) extends BaseUser
-    {
-        public function __construct(private readonly bool $isSuper) {}
-
-        /**
-         * @param  array<int, string>|\Illuminate\Support\Collection<int, string>|string  $roles
-         */
-        public function hasRole($roles, ?string $guard = null): bool
-        {
-            if ($roles === 'super-admin') {
-=======
->>>>>>> laraxot/dev
     return new class($isSuper) extends BaseUser {
         public function __construct(private readonly bool $isSuper)
         {
@@ -64,10 +37,6 @@ function makeMockUser(bool $isSuper): BaseUser
         public function hasRole($roles, ?string $guard = null): bool
         {
             if ('super-admin' === $roles) {
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 return $this->isSuper;
             }
 
@@ -82,15 +51,7 @@ function makeMockUser(bool $isSuper): BaseUser
 it('creates a real client_credentials grant client with a hashed secret via ClientRepository', function (): void {
     $client = app(ClientRepository::class)->createClientCredentialsGrantClient('Test Client AC7a');
 
-<<<<<<< HEAD
     /* @var OauthClient $client */
-=======
-<<<<<<< HEAD
-    /** @var OauthClient $client */
-=======
-    /* @var OauthClient $client */
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     Assert::assertInstanceOf(OauthClient::class, $client);
     Assert::assertTrue(in_array('client_credentials', $client->grant_types, true));
     Assert::assertNotNull($client->secret);

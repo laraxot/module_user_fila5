@@ -5,23 +5,8 @@ tags: [logout, implementation, laravel, localization]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "logout-implementation-with-laravel-localization-2 implementazione del logout con laravellocalization"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -94,19 +79,7 @@ mount(function() {
 
 ## Utilizzo Corretto di LaravelLocalization
 
-<<<<<<< HEAD
 Per garantire la compatibilità con il sistema di localizzazione di Quaeris, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Per garantire la compatibilità con il sistema di localizzazione di <nome progetto>, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
-=======
-Per garantire la compatibilità con il sistema di localizzazione di Quaeris, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
->>>>>>> laraxot/dev
-=======
-Per garantire la compatibilità con il sistema di localizzazione di Quaeris, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ```php
 // ERRATO
@@ -118,19 +91,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 ```
 
-<<<<<<< HEAD
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di Quaeris per la gestione della localizzazione.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
-=======
-Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di Quaeris per la gestione della localizzazione.
->>>>>>> laraxot/dev
-=======
-Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di Quaeris per la gestione della localizzazione.
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Template Blade con Componenti Filament
 
@@ -162,19 +123,7 @@ Il template Blade per il logout dovrebbe utilizzare i componenti Filament e most
 2. **Feedback Visivo**: L'utente riceve un feedback chiaro durante il processo di logout
 3. **Gestione Errori Robusta**: Gli errori vengono catturati e gestiti appropriatamente
 4. **Esperienza Utente Migliorata**: L'interfaccia è più intuitiva e reattiva
-<<<<<<< HEAD
 5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di Quaeris per la localizzazione
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di <nome progetto> per la localizzazione
-=======
-5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di Quaeris per la localizzazione
->>>>>>> laraxot/dev
-=======
-5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di Quaeris per la localizzazione
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ## Chiavi di Traduzione per il Logout
 

@@ -5,23 +5,8 @@ tags: [phpstan, fixes, january, complete]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan-fixes-january-complete phpstan fixes complete - gennaio 2025"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -124,23 +109,8 @@ Correzione completa di tutti gli errori PHPStan livello max nel progetto Laraxot
 - **Sicurezza**: Gestione corretta dei tipi e accessi
 
 ### Compatibilità
-<<<<<<< HEAD
 - ✅ Laravel 12.x
 - ✅ Filament 4.x
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- ✅ Laravel 13.x
-- ✅ Filament 5.x
-=======
-- ✅ Laravel 12.x
-- ✅ Filament 4.x
->>>>>>> laraxot/dev
-=======
-- ✅ Laravel 12.x
-- ✅ Filament 4.x
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - ✅ PHP 8.3
 - ✅ Architettura Laraxot
 

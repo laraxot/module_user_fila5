@@ -1,42 +1,12 @@
 ---
-<<<<<<< HEAD
 title: "Compatibilità Filament 4.x - Modulo User"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-title: "Compatibilità Filament 5.x - Modulo User"
-=======
-title: "Compatibilità Filament 4.x - Modulo User"
->>>>>>> laraxot/dev
-=======
-title: "Compatibilità Filament 4.x - Modulo User"
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 type: concept
 tags: [filament, compatibility]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< HEAD
 qmd: "filament-4x-compatibility-1 compatibilità filament 4.x - modulo user"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-qmd: "Filament-5x-compatibility-1 compatibilità Filament 5.x - modulo user"
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
-qmd: "filament-4x-compatibility-1 compatibilità filament 4.x - modulo user"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-qmd: "filament-4x-compatibility-1 compatibilità filament 4.x - modulo user"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -48,19 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
 # Compatibilità Filament 4.x - Modulo User
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Compatibilità Filament 5.x - Modulo User
-=======
-# Compatibilità Filament 4.x - Modulo User
->>>>>>> laraxot/dev
-=======
-# Compatibilità Filament 4.x - Modulo User
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Data**: 2025-01-27
 **Status**: ✅ COMPLETATO
@@ -138,19 +96,7 @@ public function getFilamentName(): string
 }
 ```
 
-<<<<<<< HEAD
 ## 📋 Modifiche Filament 4.x
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-## 📋 Modifiche Filament 5.x
-=======
-## 📋 Modifiche Filament 4.x
->>>>>>> laraxot/dev
-=======
-## 📋 Modifiche Filament 4.x
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### Breaking Changes Applicati
 1. **Type Safety**: Controlli più rigorosi sui tipi di ritorno
@@ -205,23 +151,8 @@ $this->info("Current user type: " . $typeLabelString);
 
 ## 🔗 Collegamenti
 
-<<<<<<< HEAD
 - [Rapporto Aggiornamento Filament 4.x](../../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Rapporto Aggiornamento Filament 5.x](../../../docs/filament_4x_upgrade_report.md)
-- [Guida Ufficiale Filament 5.x](https://filamentphp.com/docs/4.x/upgrade-guide)
-=======
-- [Rapporto Aggiornamento Filament 4.x](../../../docs/filament_4x_upgrade_report.md)
-- [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
->>>>>>> laraxot/dev
-=======
-- [Rapporto Aggiornamento Filament 4.x](../../../docs/filament_4x_upgrade_report.md)
-- [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [Documentazione Autenticazione](https://filamentphp.com/docs/panels/authentication)
 
 *Ultimo aggiornamento: 2025-01-27*

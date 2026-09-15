@@ -47,15 +47,7 @@ class LoginWidget extends XotBaseSchemaWidget
             'password' => is_string($data['password'] ?? null) ? $data['password'] : '',
         ];
 
-<<<<<<< HEAD
         $remember = isset($data['remember']) && true === $data['remember'];
-=======
-<<<<<<< HEAD
-        $remember = isset($data['remember']) && $data['remember'] === true;
-=======
-        $remember = isset($data['remember']) && true === $data['remember'];
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
         if (Auth::attempt($credentials, $remember)) {
             session()->regenerate();

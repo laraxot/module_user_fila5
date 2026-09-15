@@ -5,23 +5,8 @@ tags: [roadmap, conflict]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "roadmap-conflict 👥 user module - roadmap 2025"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -118,19 +103,7 @@ User Module
 
 ### 🔧 Technical Excellence
 - [x] **PHPStan level 10**: 0 errori
-<<<<<<< HEAD
 - [x] **Filament 4.x**: Compatibilità completa
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [x] **Filament 5.x**: Compatibilità completa
-=======
-- [x] **Filament 4.x**: Compatibilità completa
->>>>>>> laraxot/dev
-=======
-- [x] **Filament 4.x**: Compatibilità completa
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [x] **Type Safety**: Type hints completi
 - [x] **Error Handling**: Gestione errori robusta
 - [x] **Testing Setup**: Configurazione test
@@ -300,19 +273,7 @@ User Module
 - [x] Type safety implementation
 - [x] Error handling improvement
 - [x] Code documentation
-<<<<<<< HEAD
 - [x] Filament 4.x compatibility
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [x] Filament 5.x compatibility
-=======
-- [x] Filament 4.x compatibility
->>>>>>> laraxot/dev
-=======
-- [x] Filament 4.x compatibility
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 #### 🚧 In Progress
 - [ ] **Testing Coverage** (Priority: HIGH)
@@ -368,19 +329,7 @@ User Module
 
 ### 📊 Technical Metrics
 - [x] **PHPStan level 10**: 0 errori ✅
-<<<<<<< HEAD
 - [x] **Filament 4.x**: Compatibile ✅
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [x] **Filament 5.x**: Compatibile ✅
-=======
-- [x] **Filament 4.x**: Compatibile ✅
->>>>>>> laraxot/dev
-=======
-- [x] **Filament 4.x**: Compatibile ✅
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [ ] **Test Coverage**: 80% (target)
 - [ ] **Response Time**: < 200ms
 - [ ] **Memory Usage**: < 50MB
@@ -517,19 +466,7 @@ User Module
 
 ## 🔗 INTEGRATION POINTS
 
-<<<<<<< HEAD
 ### 🎫 Fixcity Module
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### 🎫 <nome progetto> Module
-=======
-### 🎫 Fixcity Module
->>>>>>> laraxot/dev
-=======
-### 🎫 Fixcity Module
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [ ] User-ticket relationships
 - [ ] Profile-ticket associations
 - [ ] Role-based ticket access

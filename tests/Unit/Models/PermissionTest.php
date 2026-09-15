@@ -11,15 +11,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
-<<<<<<< HEAD
  * @param array<string, mixed> $attributes
-=======
-<<<<<<< HEAD
- * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  */
 function modelsPermissionCreate(array $attributes = []): Permission
 {
@@ -58,40 +50,18 @@ test('can create permission with all fields', function (): void {
 });
 
 test('permission has connection attribute', function (): void {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    Assert::assertSame('user', (new Permission)->getConnectionName());
-});
-
-test('permission has fillable attributes', function (): void {
-    $fillable = (new Permission)->getFillable();
-=======
->>>>>>> laraxot/dev
     Assert::assertSame('user', (new Permission())->getConnectionName());
 });
 
 test('permission has fillable attributes', function (): void {
     $fillable = (new Permission())->getFillable();
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
     Assert::assertContains('name', $fillable);
     Assert::assertContains('guard_name', $fillable);
 });
 
 test('permission has casts', function (): void {
-<<<<<<< HEAD
     $casts = (new Permission())->getCasts();
-=======
-<<<<<<< HEAD
-    $casts = (new Permission)->getCasts();
-=======
-    $casts = (new Permission())->getCasts();
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
     Assert::assertArrayHasKey('id', $casts);
     Assert::assertSame('int', $casts['id']);
@@ -223,15 +193,7 @@ test('can find permissions by multiple criteria', function (): void {
 });
 
 test('permission has table name', function (): void {
-<<<<<<< HEAD
     Assert::assertNotSame('', (new Permission())->getTable());
-=======
-<<<<<<< HEAD
-    Assert::assertNotSame('', (new Permission)->getTable());
-=======
-    Assert::assertNotSame('', (new Permission())->getTable());
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 });
 
 test('permission can be deleted from database', function (): void {

@@ -28,16 +28,6 @@ use Webmozart\Assert\Assert;
 /**
  * Modules\User\Models\Role.
  *
-<<<<<<< .merge_file_mMx37C
-  *
-=======
- * <<<<<<< HEAD
- * =======
- * <<<<<<< HEAD
- *
- * >>>>>>> laraxot/dev
- *
->>>>>>> .merge_file_FHClPx
  * @property int                                 $id
  * @property string                              $uuid
  * @property string|null                         $team_id
@@ -55,34 +45,6 @@ use Webmozart\Assert\Assert;
  * @property Collection<int, Model&UserContract> $users
  * @property int|null                            $users_count
  * @property PermissionRole|null                 $pivot
-<<<<<<< .merge_file_mMx37C
-=======
- *                                                                  <<<<<<< HEAD
- *                                                                  =======
->>>>>>> .merge_file_FHClPx
- *                                                                  =======
- * @property int                                 $id
- * @property string                              $uuid
- * @property string|null                         $team_id
- * @property string                              $name
- * @property string                              $guard_name
- * @property string|null                         $display_name
- * @property string|null                         $description
- * @property Carbon|null                         $created_at
- * @property Carbon|null                         $updated_at
- * @property string|null                         $updated_by
- * @property string|null                         $created_by
- * @property Collection<int, Permission>         $permissions
- * @property int|null                            $permissions_count
- * @property Team|null                           $team
- * @property Collection<int, Model&UserContract> $users
- * @property int|null                            $users_count
- * @property PermissionRole|null                 $pivot
- *                                                                  >>>>>>> laraxot/dev
-<<<<<<< .merge_file_mMx37C
-=======
- *                                                                  >>>>>>> laraxot/dev
->>>>>>> .merge_file_FHClPx
  *
  * @method static Builder|Role newModelQuery()
  * @method static Builder|Role newQuery()
@@ -99,42 +61,15 @@ use Webmozart\Assert\Assert;
  * @method static Builder|Role withoutPermission($permissions)
  * @method static Builder|Role whereDescription($value)
  * @method static Builder|Role whereDisplayName($value)
-<<<<<<< .merge_file_mMx37C
- *                                                                                                                 * @method static static       firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
- * @method static static       updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
-=======
- *                                                                                                                 <<<<<<< HEAD
->>>>>>> .merge_file_FHClPx
  * @method static static       firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static       updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
- *                                                                                                                 =======
- *                                                                                                                 <<<<<<< HEAD
- * @method static static       firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
- * @method static static       updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
- *                                                                                                                 =======
- * @method static static       firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
- * @method static static       updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
- *                                                                                                                 >>>>>>> laraxot/dev
- *                                                                                                                 >>>>>>> laraxot/dev
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  *
  * @method static \Modules\User\Database\Factories\RoleFactory factory($count = null, $state = [])
- *                                                                                                 <<<<<<< HEAD
  * @method static Builder<static>|Role                         whereUuid($value)
- *                                                                                                 =======
- *                                                                                                 <<<<<<< HEAD
- * @method static Builder<static>|Role                         whereUuid($value)
- *                                                                                                 =======
- * @method static Builder<static>|Role                         whereUuid($value)
-<<<<<<< .merge_file_mMx37C
- * @method static Builder<static>|Role                         whereUuid($value)
-=======
- *                                                                                                 >>>>>>> laraxot/dev
- *                                                                                                 >>>>>>> laraxot/dev
->>>>>>> .merge_file_FHClPx
  *
  * @mixin \Eloquent
  */

@@ -47,19 +47,7 @@ Le risorse Filament richiedono che il metodo `getFormSchema()` restituisca un ar
 ### Esempio corretto:
 
 ```php
-<<<<<<< .merge_file_TsXSVs
 public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_Y4Pbxj
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -71,19 +59,7 @@ public static function getFormSchema(): array
 ### Esempio errato:
 
 ```php
-<<<<<<< .merge_file_TsXSVs
 public static function getFormSchema(): array
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-public static function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
->>>>>>> .merge_file_Y4Pbxj
 {
     return [
         TextInput::make('name')->required(),

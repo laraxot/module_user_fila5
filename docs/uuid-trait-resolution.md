@@ -5,23 +5,8 @@ tags: [uuid, trait, resolution]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "uuid-trait-resolution user module - uuid trait conflict resolution"
-<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -54,29 +39,10 @@ must be compatible with Laravel\Passport\Client::initializeHasUniqueStringIds():
 In `BaseUser.php` (lines 132-134):
 ```php
 use HasApiTokens;     // Laravel Passport - provides initializeHasUniqueStringIds()
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-use HasUuids;         // Laravel 13     - provides initializeHasUniqueStringIds(): void
-```
-
-**The Issue**: Laravel 13 changed the signature of `initializeHasUniqueStringIds()` to return `void`, but Passport still uses the old signature.
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 use HasUuids;         // Laravel 12     - provides initializeHasUniqueStringIds(): void
 ```
 
 **The Issue**: Laravel 12 changed the signature of `initializeHasUniqueStringIds()` to return `void`, but Passport still uses the old signature.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ---
 
@@ -110,46 +76,16 @@ use HasUuids;         // Laravel 12     - provides initializeHasUniqueStringIds(
 
 ### **The Three-Path Solution**
 
-<<<<<<< HEAD
 #### **Path 1: Laravel 12 Native (RECOMMENDED)**
 ```php
 // Remove HasApiTokens, use Laravel 12 native UUID with Passport compatibility
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-#### **Path 1: Laravel 13 Native (RECOMMENDED)**
-```php
-// Remove HasApiTokens, use Laravel 13 native UUID with Passport compatibility
-=======
-#### **Path 1: Laravel 12 Native (RECOMMENDED)**
-```php
-// Remove HasApiTokens, use Laravel 12 native UUID with Passport compatibility
->>>>>>> laraxot/dev
-=======
-#### **Path 1: Laravel 12 Native (RECOMMENDED)**
-```php
-// Remove HasApiTokens, use Laravel 12 native UUID with Passport compatibility
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 use HasUuids;
 // Custom implementation for Passport compatibility
 ```
 
 #### **Path 2: Passport Override (COMPATIBILITY)**
 ```php
-<<<<<<< HEAD
 // Keep HasApiTokens, override Laravel 12 UUID methods
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// Keep HasApiTokens, override Laravel 13 UUID methods
-=======
-// Keep HasApiTokens, override Laravel 12 UUID methods
->>>>>>> laraxot/dev
-=======
-// Keep HasApiTokens, override Laravel 12 UUID methods
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 use HasApiTokens;
 // Custom UUID implementation that satisfies both
 ```
@@ -162,41 +98,14 @@ use HasUnifiedUuids;
 
 ---
 
-<<<<<<< HEAD
 ## ⚡ **IMMEDIATE IMPLEMENTATION: Path 1 (Laravel 12 Native)**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-## ⚡ **IMMEDIATE IMPLEMENTATION: Path 1 (Laravel 13 Native)**
-=======
-## ⚡ **IMMEDIATE IMPLEMENTATION: Path 1 (Laravel 12 Native)**
->>>>>>> laraxot/dev
-=======
-## ⚡ **IMMEDIATE IMPLEMENTATION: Path 1 (Laravel 12 Native)**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### **Why This Path?**
 
 **Super Mucca Logic**:
 - **DRY**: Use one UUID system, not two conflicting ones
-<<<<<<< HEAD
 - **KISS**: Laravel 12 native is simpler and more future-proof
 - **Deep Understanding**: Passport can work with Laravel 12 UUIDs through proper model binding
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **KISS**: Laravel 13 native is simpler and more future-proof
-- **Deep Understanding**: Passport can work with Laravel 13 UUIDs through proper model binding
-=======
-- **KISS**: Laravel 12 native is simpler and more future-proof
-- **Deep Understanding**: Passport can work with Laravel 12 UUIDs through proper model binding
->>>>>>> laraxot/dev
-=======
-- **KISS**: Laravel 12 native is simpler and more future-proof
-- **Deep Understanding**: Passport can work with Laravel 12 UUIDs through proper model binding
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 ### **Implementation Steps**
 
@@ -209,19 +118,7 @@ First, understand what Passport actually needs:
 // 2. Non-incrementing
 // 3. Unique string ID generation
 
-<<<<<<< HEAD
 // Laravel 12 HasUuids provides all of this!
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-// Laravel 13 HasUuids provides all of this!
-=======
-// Laravel 12 HasUuids provides all of this!
->>>>>>> laraxot/dev
-=======
-// Laravel 12 HasUuids provides all of this!
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ```
 
 #### **Step 2: Update BaseUser.php**
@@ -229,19 +126,7 @@ First, understand what Passport actually needs:
 ```php
 abstract class BaseUser extends Authenticatable implements HasMedia, HasName, HasTenants, MustVerifyEmail, UserContract
 {
-<<<<<<< HEAD
     // Keep Laravel 12 native UUID
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    // Keep Laravel 13 native UUID
-=======
-    // Keep Laravel 12 native UUID
->>>>>>> laraxot/dev
-=======
-    // Keep Laravel 12 native UUID
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     use HasUuids;
 
     // Remove HasApiTokens temporarily, add back after testing
@@ -270,29 +155,10 @@ trait HasPassportTokens
         initializeHasUniqueStringIds as initializePassportIds;
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    // Bridge to Laravel 13 UUID system
-    public function initializeHasUniqueStringIds(): void
-    {
-        // Let Laravel 13 handle UUID initialization
-=======
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     // Bridge to Laravel 12 UUID system
     public function initializeHasUniqueStringIds(): void
     {
         // Let Laravel 12 handle UUID initialization
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         if (method_exists($this, 'initializeHasUuids')) {
             $this->initializeHasUuids();
         }
@@ -334,19 +200,7 @@ $token = $user->createToken('test');
 ## 🚀 **IMPLEMENTATION ROADMAP**
 
 ### **Phase 1: Critical Fix (Today)**
-<<<<<<< HEAD
 - [ ] Implement Laravel 12 native UUID solution
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [ ] Implement Laravel 13 native UUID solution
-=======
-- [ ] Implement Laravel 12 native UUID solution
->>>>>>> laraxot/dev
-=======
-- [ ] Implement Laravel 12 native UUID solution
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - [ ] Remove HasApiTokens temporarily
 - [ ] Test basic user creation and authentication
 - [ ] Verify multi-tenant functionality
@@ -399,36 +253,12 @@ $token = $user->createToken('test');
 
 ## 📝 **DECISION LOG**
 
-<<<<<<< HEAD
 ### **Why Laravel 12 Native UUID?**
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### **Why Laravel 13 Native UUID?**
-=======
-### **Why Laravel 12 Native UUID?**
->>>>>>> laraxot/dev
-=======
-### **Why Laravel 12 Native UUID?**
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **Technical Reasons**:
 - Future-proof with Laravel framework evolution
 - Better performance (native implementation)
-<<<<<<< HEAD
 - Consistent with Laravel 12 conventions
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Consistent with Laravel 13 conventions
-=======
-- Consistent with Laravel 12 conventions
->>>>>>> laraxot/dev
-=======
-- Consistent with Laravel 12 conventions
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 - Simpler maintenance
 
 **Business Reasons**:
@@ -467,19 +297,7 @@ $token = $user->createToken('test');
 ---
 
 **Status**: 🎯 Strategy Defined - Ready for Implementation
-<<<<<<< HEAD
 **Next**: Implement Laravel 12 native UUID solution with Passport compatibility layer
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Next**: Implement Laravel 13 native UUID solution with Passport compatibility layer
-=======
-**Next**: Implement Laravel 12 native UUID solution with Passport compatibility layer
->>>>>>> laraxot/dev
-=======
-**Next**: Implement Laravel 12 native UUID solution with Passport compatibility layer
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 **"The best UUID is the one that works everywhere and conflicts nowhere."**
 *- Super Mucca Methodology*

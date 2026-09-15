@@ -12,15 +12,7 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
-<<<<<<< HEAD
  * @param array<string, mixed> $attributes
-=======
-<<<<<<< HEAD
- * @param  array<string, mixed>  $attributes
-=======
- * @param array<string, mixed> $attributes
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
  */
 function modelsRoleCreate(array $attributes = []): Role
 {
@@ -56,15 +48,7 @@ test('can create role with all fields', function (): void {
 });
 
 test('role has connection attribute', function (): void {
-<<<<<<< HEAD
     Assert::assertSame('user', (new Role())->getConnectionName());
-=======
-<<<<<<< HEAD
-    Assert::assertSame('user', (new Role)->getConnectionName());
-=======
-    Assert::assertSame('user', (new Role())->getConnectionName());
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 });
 
 test('role constants are defined', function (): void {
@@ -173,15 +157,7 @@ test('can find roles by multiple criteria', function (): void {
 });
 
 test('role has table name', function (): void {
-<<<<<<< HEAD
     Assert::assertNotSame('', (new Role())->getTable());
-=======
-<<<<<<< HEAD
-    Assert::assertNotSame('', (new Role)->getTable());
-=======
-    Assert::assertNotSame('', (new Role())->getTable());
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 });
 
 test('role can be deleted from database', function (): void {

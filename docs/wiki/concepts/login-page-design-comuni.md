@@ -100,19 +100,7 @@ laravel/Modules/User/
 ```
 ┌─────────────────────────────────────────────────┐
 │                                                 │
-<<<<<<< HEAD
 │              [FIXCITY LOGO]                     │
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-│              [<nome progetto> LOGO]                     │
-=======
-│              [FIXCITY LOGO]                     │
->>>>>>> laraxot/dev
-=======
-│              [FIXCITY LOGO]                     │
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 │                                                 │
 │         ┌───────────────────┐ ┌─────────────┐  │
 │         │                   │ │  Supporto   │  │

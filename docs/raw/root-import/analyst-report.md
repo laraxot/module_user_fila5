@@ -228,23 +228,7 @@ Extract services:
 
 ---
 
-<<<<<<< HEAD
 ### 8. [LOW] Inconsistent Type Hints — Filament 4 Compliance
-=======
-<<<<<<< .merge_file_8foiat
-### 8. [LOW] Inconsistent Type Hints — Filament 4 Compliance
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-### 8. [LOW] Inconsistent Type Hints — Filament 5 Compliance
-=======
-### 8. [LOW] Inconsistent Type Hints — Filament 4 Compliance
->>>>>>> laraxot/dev
-=======
-### 8. [LOW] Inconsistent Type Hints — Filament 4 Compliance
->>>>>>> laraxot/dev
->>>>>>> .merge_file_PkrGOp
->>>>>>> laraxot/dev
 
 **Severity**: LOW | **Category**: Type Safety  
 **Problem**: Missing return type hints and parameter types  

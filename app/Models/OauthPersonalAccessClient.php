@@ -8,31 +8,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 
 /**
-<<<<<<< .merge_file_rPO7Jf
-  *
-=======
- * <<<<<<< HEAD
- * =======
- * <<<<<<< HEAD.
- *
->>>>>>> .merge_file_utfxwg
- * @property string           $id
- * @property string           $client_id
- * @property OauthClient|null $client
- * @property Carbon|null      $created_at
- * @property Carbon|null      $updated_at
- * @property string|null      $updated_by
- * @property string|null      $created_by
- *
- * @method static \Modules\User\Database\Factories\OauthPersonalAccessClientFactory factory($count = null, $state = [])
-<<<<<<< .merge_file_rPO7Jf
- *                                                                                                                      *
-=======
- *                                                                                                                      =======
- *
- * >>>>>>> laraxot/dev
- *
->>>>>>> .merge_file_utfxwg
  * @property string           $id
  * @property string           $client_id
  * @property OauthClient|null $client
@@ -42,10 +17,6 @@ use Illuminate\Support\Carbon;
  * @property string|null      $created_by
  *
  * @method static \Modules\User\Database\Factories\OauthPersonalAccessClientFactory       factory($count = null, $state = [])
- *                                                                                                                            <<<<<<< HEAD
- *                                                                                                                            =======
- *                                                                                                                            >>>>>>> laraxot/dev
- *                                                                                                                            >>>>>>> laraxot/dev
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient query()

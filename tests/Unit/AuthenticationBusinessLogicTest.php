@@ -209,37 +209,16 @@ describe('Authentication Business Logic', function (): void {
             Assert::assertNotSame('', $user['email']);
 
             $profileScore = 0;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            if ($user['name'] !== '') {
-                $profileScore += 25;
-            }
-            if ($user['email'] !== '') {
-=======
->>>>>>> laraxot/dev
             if ('' !== $user['name']) {
                 $profileScore += 25;
             }
             if ('' !== $user['email']) {
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 $profileScore += 25;
             }
             if ($user['email_verified_at'] instanceof Carbon) {
                 $profileScore += 25;
             }
-<<<<<<< HEAD
             if ('' !== $user['profile_photo_path']) {
-=======
-<<<<<<< HEAD
-            if ($user['profile_photo_path'] !== '') {
-=======
-            if ('' !== $user['profile_photo_path']) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 $profileScore += 25;
             }
 
@@ -416,15 +395,7 @@ describe('Authentication Business Logic', function (): void {
         it('validates push notification setup', function (): void {
             $device = authBizDeviceData();
 
-<<<<<<< HEAD
             if ('mobile' === $device['device_type']) {
-=======
-<<<<<<< HEAD
-            if ($device['device_type'] === 'mobile') {
-=======
-            if ('mobile' === $device['device_type']) {
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
                 $pushToken = $device['push_token'];
                 Assert::assertGreaterThan(20, strlen($pushToken));
             }

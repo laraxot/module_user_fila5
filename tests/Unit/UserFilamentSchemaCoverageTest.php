@@ -66,15 +66,7 @@ describe('User enum and provider coverage', function (): void {
                     Assert::assertIsString($case->getLabel());
                 }
             }
-<<<<<<< HEAD
             ++$seen;
-=======
-<<<<<<< HEAD
-            $seen++;
-=======
-            ++$seen;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         }
         Assert::assertGreaterThanOrEqual(0, $seen);
     });
@@ -98,15 +90,7 @@ describe('User enum and provider coverage', function (): void {
             if (property_exists($provider, 'name')) {
                 Assert::assertSame('User', $provider->name);
             }
-<<<<<<< HEAD
             ++$seen;
-=======
-<<<<<<< HEAD
-            $seen++;
-=======
-            ++$seen;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         }
         Assert::assertGreaterThan(0, $seen, 'User deve scoprire almeno un service provider concreto');
     });

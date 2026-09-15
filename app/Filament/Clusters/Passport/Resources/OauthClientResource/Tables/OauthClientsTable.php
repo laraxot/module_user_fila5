@@ -5,51 +5,24 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Tables;
 
 use Filament\Tables\Columns\Column;
-<<<<<<< HEAD
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Modules\User\Models\OauthClient;
-=======
-<<<<<<< HEAD
-use Filament\Tables\Columns\TextColumn;
-=======
-use Filament\Tables\Columns\IconColumn;
-use Filament\Tables\Columns\TextColumn;
-use Modules\User\Models\OauthClient;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class OauthClientsTable extends XotBaseResourceTable
 {
     /**
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
      * @var class-string<OauthClient>
      */
     protected static string $model = OauthClient::class;
 
     /**
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
      * @return array<string, Column>
      */
     public function getTableColumns(): array
     {
         return [
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-            'id' => TextColumn::make('id')->sortable(),
-            'name' => TextColumn::make('name')->searchable(),
-            'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
-=======
->>>>>>> laraxot/dev
             'name' => TextColumn::make('name')->searchable()->sortable(),
             'provider' => TextColumn::make('provider')->searchable()->sortable(),
             'grant_types' => TextColumn::make('grant_types')->badge(),
@@ -60,10 +33,6 @@ class OauthClientsTable extends XotBaseResourceTable
             'id' => TextColumn::make('id')->sortable()->copyable()->toggleable(isToggledHiddenByDefault: true),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable()->placeholder('—'),
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->placeholder('—')->toggleable(isToggledHiddenByDefault: true),
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
         ];
     }
 }

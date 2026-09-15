@@ -15,18 +15,6 @@ related:
 
 # Policy globale (puntatore)
 
-<<<<<<< HEAD
 Contenuto in wiki di progetto — non duplicare nei moduli ([#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-Contenuto in wiki di progetto — non duplicare nei moduli ([#124](https://github.com/provtv/<repo progetto>/issues/124)).
-=======
-Contenuto in wiki di progetto — non duplicare nei moduli ([#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
->>>>>>> laraxot/dev
-=======
-Contenuto in wiki di progetto — non duplicare nei moduli ([#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 → [docs/wiki/rules/00-TRIGGER_MAP.md](../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
