@@ -128,8 +128,8 @@ class Password extends XotBasePage
      *
      * @param Model                $record Il record da aggiornare
      * @param array<string, mixed> $data   I dati per l'aggiornamento
-<<<<<<< .merge_file_ZM3dwM
-=======
+     *                                     <<<<<<< .merge_file_ZM3dwM
+     *                                     =======
      *                                     =======
      *                                     <<<<<<< HEAD
      * @param Model                $record Il record da aggiornare
@@ -140,7 +140,7 @@ class Password extends XotBasePage
      *
      * >>>>>>> laraxot/dev
      * >>>>>>> laraxot/dev
->>>>>>> .merge_file_uRbZKo
+     * >>>>>>> .merge_file_uRbZKo
      *
      * @return Model Il record aggiornato
      */

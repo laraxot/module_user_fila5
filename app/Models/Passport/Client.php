@@ -11,9 +11,9 @@ use Modules\User\Models\OauthAuthCode;
 use Modules\User\Models\OauthToken;
 
 /**
-<<<<<<< .merge_file_JCb1S8
+ * <<<<<<< .merge_file_JCb1S8
  * Custom Passport Client model to fix compatibility issues with Laravel 12.
-=======
+ * =======
  * <<<<<<< .merge_file_TADr81
  * Custom Passport Client model to fix compatibility issues with Laravel 13.
  * =======
@@ -29,7 +29,7 @@ use Modules\User\Models\OauthToken;
  * >>>>>>> laraxot/dev.
  * >>>>>>> .merge_file_pI7Tr8
  * >>>>>>> laraxot/dev.
->>>>>>> .merge_file_GfS3cn
+ * >>>>>>> .merge_file_GfS3cn.
  *
  * @property Collection<int, OauthAuthCode> $authCodes
  * @property int|null                       $auth_codes_count
@@ -54,9 +54,9 @@ class Client extends PassportClient
 {
     /**
      * Initialize the trait.
-<<<<<<< .merge_file_JCb1S8
+     * <<<<<<< .merge_file_JCb1S8
      * Overriding to match Laravel 12 HasUuids trait signature (removing : void).
-=======
+     * =======
      * <<<<<<< .merge_file_TADr81
      * Overriding to match Laravel 13 HasUuids trait signature (removing : void).
      * =======
@@ -73,7 +73,7 @@ class Client extends PassportClient
      * >>>>>>> laraxot/dev.
      * >>>>>>> laraxot/dev.
      * >>>>>>> .merge_file_pI7Tr8.
->>>>>>> .merge_file_GfS3cn
+     * >>>>>>> .merge_file_GfS3cn.
      */
     public function initializeHasUniqueStringIds(): void
     {

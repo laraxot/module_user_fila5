@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 
 /**
-<<<<<<< .merge_file_sE4Sb2
-=======
+ * <<<<<<< .merge_file_sE4Sb2
+ * =======
  * <<<<<<< .merge_file_rPO7Jf.
  *
  * =======
@@ -37,7 +37,8 @@ use Illuminate\Support\Carbon;
  *
  * >>>>>>> .merge_file_utfxwg
  *
->>>>>>> .merge_file_4YIuF9
+ * >>>>>>> .merge_file_4YIuF9
+ *
  * @property string           $id
  * @property string           $client_id
  * @property OauthClient|null $client

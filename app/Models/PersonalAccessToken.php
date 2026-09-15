@@ -12,8 +12,8 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 /**
  * Modules\User\Models\PersonalAccessToken.
  *
-<<<<<<< .merge_file_tyyoE7
-=======
+ * <<<<<<< .merge_file_tyyoE7
+ * =======
  * <<<<<<< .merge_file_phIfFe
  *
  * =======
@@ -32,14 +32,14 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  *                                       =======
  *                                       =======
  *                                       >>>>>>> .merge_file_EIz2KS
->>>>>>> .merge_file_prFyhz
+ *                                       >>>>>>> .merge_file_prFyhz
  * @property int         $id
  * @property string      $tokenable_type
  * @property int         $tokenable_id
  * @property string      $name
  * @property string      $token
-<<<<<<< .merge_file_tyyoE7
-=======
+ *                                       <<<<<<< .merge_file_tyyoE7
+ *                                       =======
  *                                       <<<<<<< .merge_file_phIfFe
  *                                       =======
  * @property int         $id
@@ -51,21 +51,21 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  *                                       >>>>>>> laraxot/dev
  *                                       >>>>>>> .merge_file_EIz2KS
  *                                       >>>>>>> laraxot/dev
->>>>>>> .merge_file_prFyhz
+ *                                       >>>>>>> .merge_file_prFyhz
  * @property string|null $abilities
  * @property Carbon|null $last_used_at
  * @property Carbon|null $expires_at
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  *
-<<<<<<< .merge_file_tyyoE7
- * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory       factory($count = null, $state = [])
-=======
- * <<<<<<< .merge_file_phIfFe
+ * <<<<<<< .merge_file_tyyoE7
+ *
+ * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory factory($count = null, $state = [])
+ *                                                                                                                =======
+ *                                                                                                                <<<<<<< .merge_file_phIfFe
  *
  * =======
  * <<<<<<< HEAD
- *
  * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory       factory($count = null, $state = [])
  *                                                                                                                      =======
  *                                                                                                                      <<<<<<< HEAD
@@ -78,7 +78,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  *                                                                                                                      =======
  *                                                                                                                      >>>>>>> laraxot/dev
  *                                                                                                                      >>>>>>> .merge_file_EIz2KS
->>>>>>> .merge_file_prFyhz
+ *                                                                                                                      >>>>>>> .merge_file_prFyhz
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken query()
