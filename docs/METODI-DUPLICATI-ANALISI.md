@@ -107,15 +107,7 @@ abstract class BaseModel extends \Modules\Xot\Models\XotBaseModel
 
 ### Pattern 1: getTableColumns() - ESEMPIO REALE
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-#### <nome progetto>/TicketResource/ListTickets.php (ECCELLENTE)
-=======
 #### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
->>>>>>> laraxot/dev
-=======
-#### Fixcity/TicketResource/ListTickets.php (ECCELLENTE)
->>>>>>> laraxot/dev
 ```php
 protected function getTableColumns(): array
 {
@@ -476,15 +468,7 @@ public function getTableFilters(): array
 - Test dopo ogni modulo
 - Code review
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Settimana 2**: Moduli Business (<nome progetto>, Blog, Geo)
-=======
 **Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
->>>>>>> laraxot/dev
-=======
-**Settimana 2**: Moduli Business (Fixcity, Blog, Geo)
->>>>>>> laraxot/dev
 - 20 List files
 - Test integrazione
 - Performance check
@@ -522,15 +506,7 @@ public function getTableFilters(): array
 3. Refactoring moduli core (Xot, User, Cms)
 
 #### ⭐⭐⭐⭐ PRIORITÀ ALTA
-<<<<<<< HEAD
-<<<<<<< HEAD
-4. Refactoring moduli business (<nome progetto>, Blog, Geo)
-=======
 4. Refactoring moduli business (Fixcity, Blog, Geo)
->>>>>>> laraxot/dev
-=======
-4. Refactoring moduli business (Fixcity, Blog, Geo)
->>>>>>> laraxot/dev
 5. ActionPresets per CRUD
 6. Documentazione completa
 

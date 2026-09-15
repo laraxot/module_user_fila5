@@ -5,18 +5,8 @@ tags: [spatie, permissions, methods]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "spatie-permissions-methods-5 user module - spatie permission methods reference"
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -433,15 +423,7 @@ public function assignAdminRole(User $user): void
 ### Setup Test User
 
 ```php
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Modules\<nome progetto>\Models\User;
-=======
 use Modules\Fixcity\Models\User;
->>>>>>> laraxot/dev
-=======
-use Modules\Fixcity\Models\User;
->>>>>>> laraxot/dev
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 

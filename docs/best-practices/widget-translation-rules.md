@@ -1,32 +1,12 @@
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-title: "Widget Translation Rules - <nome progetto> Project"
-=======
 title: "Widget Translation Rules - FixCity Project"
->>>>>>> laraxot/dev
-=======
-title: "Widget Translation Rules - FixCity Project"
->>>>>>> laraxot/dev
 type: rule
 tags: [widget, translation, rules]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< HEAD
-<<<<<<< HEAD
-qmd: "widget-translation-rules widget translation rules - <nome progetto> project"
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
 qmd: "widget-translation-rules widget translation rules - fixcity project"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-qmd: "widget-translation-rules widget translation rules - fixcity project"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./auth-components-best-practices.md"
   - "./auth-widget-rules.md"
@@ -38,15 +18,7 @@ related:
   - "./dependency-rules.md"
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Widget Translation Rules - <nome progetto> Project
-=======
 # Widget Translation Rules - FixCity Project
->>>>>>> laraxot/dev
-=======
-# Widget Translation Rules - FixCity Project
->>>>>>> laraxot/dev
 
 ## Core Principles
 ### Translation File Structure
@@ -195,12 +167,4 @@ This document serves as a reference for:
 - Translation implementation patterns
 - Code quality requirements
 - Documentation standards
-<<<<<<< HEAD
-<<<<<<< HEAD
-All widget development should follow these rules to maintain consistency and quality across the <nome progetto> project.
-=======
 All widget development should follow these rules to maintain consistency and quality across the FixCity project.
->>>>>>> laraxot/dev
-=======
-All widget development should follow these rules to maintain consistency and quality across the FixCity project.
->>>>>>> laraxot/dev

@@ -5,18 +5,8 @@ tags: [widget, rendering, analysis]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "widget-rendering-analysis-1 🔍 analisi rendering loginwidget - docs.italia.it style"
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -37,15 +27,7 @@ Il login dovrebbe apparire come in https://docs.italia.it/accounts/login/ - desi
 ### 🎯 Requisiti
 
 1. **Design Conforme**: Seguire le linee guida Bootstrap Italia / Design Comuni
-<<<<<<< HEAD
-<<<<<<< HEAD
-2. **Widget Filament 5**: Incorporare correttamente il widget Filament
-=======
 2. **Widget Filament 4**: Incorporare correttamente il widget Filament
->>>>>>> laraxot/dev
-=======
-2. **Widget Filament 4**: Incorporare correttamente il widget Filament
->>>>>>> laraxot/dev
 3. **Form Rendering**: Il form deve renderizzarsi dentro il widget
 
 ## 🔍 Analisi Architetturale
@@ -91,15 +73,7 @@ Questa è la vista che deve renderizzare il form.
 
 ### Causa Root: Form Non Renderizzato
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Il widget Filament 5 richiede che il **form venga esplicitamente renderizzato** nella vista Blade del widget.
-=======
 Il widget Filament 4 richiede che il **form venga esplicitamente renderizzato** nella vista Blade del widget.
->>>>>>> laraxot/dev
-=======
-Il widget Filament 4 richiede che il **form venga esplicitamente renderizzato** nella vista Blade del widget.
->>>>>>> laraxot/dev
 
 #### ❌ Vista Errata (Form non appare)
 
@@ -135,15 +109,7 @@ Il widget Filament 4 richiede che il **form venga esplicitamente renderizzato** 
 
 ## 📐 Soluzione Architetturale
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Architettura Corretta Filament 5 Widgets
-=======
 ### Architettura Corretta Filament 4 Widgets
->>>>>>> laraxot/dev
-=======
-### Architettura Corretta Filament 4 Widgets
->>>>>>> laraxot/dev
 
 ```
 ┌─────────────────────────────────────────┐
@@ -438,30 +404,14 @@ return [
 
 **Problema**: Il form appare senza stile
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Soluzione**: Filament 5 usa Tailwind CSS. Verifica che il tema abbia:
-=======
 **Soluzione**: Filament 4 usa Tailwind CSS. Verifica che il tema abbia:
->>>>>>> laraxot/dev
-=======
-**Soluzione**: Filament 4 usa Tailwind CSS. Verifica che il tema abbia:
->>>>>>> laraxot/dev
 ```html
 <link rel="stylesheet" href="{{ asset('css/filament/app.css') }}">
 ```
 
 ## 📚 Riferimenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Filament 5 Widgets Documentation](https://filamentphp.com/docs/4.x/widgets)
-=======
 - [Filament 4 Widgets Documentation](https://filamentphp.com/docs/4.x/widgets)
->>>>>>> laraxot/dev
-=======
-- [Filament 4 Widgets Documentation](https://filamentphp.com/docs/4.x/widgets)
->>>>>>> laraxot/dev
 - [Filament Forms Documentation](https://filamentphp.com/docs/4.x/forms)
 - [Bootstrap Italia Design System](https://italia.github.io/bootstrap-italia/)
 - [Design Comuni Guidelines](https://designers.italia.it/modello/comuni/)

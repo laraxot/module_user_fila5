@@ -5,18 +5,8 @@ tags: [coverage]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "coverage code coverage: user"
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -98,8 +88,6 @@ significativo: DB di test `10.100.200.53` irraggiungibile da questo ambiente
 
 **Fuori scope**: 15 file della lista originale non richiedevano piu' modifiche
 (gia' risolti dal commit `5ec97b13` prima dell'inizio di questo lavoro).
-<<<<<<< HEAD
-=======
 
 ## Follow-up audit `$model`/colonne — swarm 2026-09-11
 
@@ -167,4 +155,3 @@ toccati in questo giro (`OauthClientResource.php`,
 `OauthClientResource/Tables/OauthClientsTable.php`,
 `Models/OauthDeviceCode.php`, le 6 cancellazioni dead-code). Regressione: **no**
 (verificato per confronto diretto degli stack trace, non per assunzione).
->>>>>>> laraxot/dev

@@ -5,18 +5,8 @@ tags: [business, logic, deep, dive]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "business-logic-deep-dive-1 user module - business logic deep dive"
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -685,15 +675,7 @@ class OptimizedUserQueries
 }
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## 🚀 Modern Laravel 13 + PHP 8.3 Patterns
-=======
 ## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
->>>>>>> laraxot/dev
-=======
-## 🚀 Modern Laravel 12 + PHP 8.3 Patterns
->>>>>>> laraxot/dev
 
 ### 1. Enum Integration
 ```php

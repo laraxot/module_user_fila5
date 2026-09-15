@@ -6,15 +6,7 @@ tags: [code-audit, redundancy, dry, second-brain, module]
 created: "2026-05-26"
 updated: "2026-05-26"
 owner: "User"
-<<<<<<< HEAD
-<<<<<<< HEAD
-issue: "https://github.com/provtv/<repo progetto>/issues/150"
-=======
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/150"
->>>>>>> laraxot/dev
-=======
-issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/150"
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"

@@ -1,32 +1,12 @@
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
-title: "Guida Migrazione Step-by-Step: Modulo User - Filament 5"
-=======
 title: "Guida Migrazione Step-by-Step: Modulo User - Filament 4"
->>>>>>> laraxot/dev
-=======
-title: "Guida Migrazione Step-by-Step: Modulo User - Filament 4"
->>>>>>> laraxot/dev
 type: concept
 tags: [guida, migrazione, step, step]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< HEAD
-<<<<<<< HEAD
-qmd: "guida-migrazione-step-by-step guida migrazione step-by-step: modulo user - Filament 5"
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
 qmd: "guida-migrazione-step-by-step guida migrazione step-by-step: modulo user - filament 4"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-qmd: "guida-migrazione-step-by-step guida migrazione step-by-step: modulo user - filament 4"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -38,15 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Guida Migrazione Step-by-Step: Modulo User - Filament 5
-=======
 # Guida Migrazione Step-by-Step: Modulo User - Filament 4
->>>>>>> laraxot/dev
-=======
-# Guida Migrazione Step-by-Step: Modulo User - Filament 4
->>>>>>> laraxot/dev
 
 ## Panoramica Migrazione
 **Modulo**: User (Modulo Critico)
@@ -392,15 +364,7 @@ abstract class UserBaseResource extends XotBaseResource
 }
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### 2.2 UserResource con Filament 5
-=======
 ### 2.2 UserResource con Filament 4
->>>>>>> laraxot/dev
-=======
-### 2.2 UserResource con Filament 4
->>>>>>> laraxot/dev
 ```php
 // app/Filament/Resources/UserResource.php
 <?php
@@ -612,15 +576,7 @@ class UserResource extends UserBaseResource
 
 ## Fase 3: Sistema MFA Integrato (Giorni 9-15)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### 3.1 MFA Resource con Filament 5
-=======
 ### 3.1 MFA Resource con Filament 4
->>>>>>> laraxot/dev
-=======
-### 3.1 MFA Resource con Filament 4
->>>>>>> laraxot/dev
 ```php
 // app/Filament/Resources/TwoFactorAuthResource.php
 <?php
@@ -834,15 +790,7 @@ class TwoFactorStatsWidget extends ChartWidget
 
 ## Fase 4: Team e Multi-Tenancy (Giorni 16-22)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### 4.1 TeamResource con Filament 5
-=======
 ### 4.1 TeamResource con Filament 4
->>>>>>> laraxot/dev
-=======
-### 4.1 TeamResource con Filament 4
->>>>>>> laraxot/dev
 ```php
 // app/Filament/Resources/TeamResource.php
 <?php
@@ -1112,15 +1060,7 @@ class TenantResource extends UserBaseResource
 
 ## Fase 5: Migration Database Critica (Giorni 23-28)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### 5.1 Migration Complessa per Filament 5
-=======
 ### 5.1 Migration Complessa per Filament 4
->>>>>>> laraxot/dev
-=======
-### 5.1 Migration Complessa per Filament 4
->>>>>>> laraxot/dev
 ```php
 // database/migrations/2025_01_xx_migrate_user_to_filament4.php
 <?php
@@ -1150,15 +1090,7 @@ return new class extends Migration
             ]);
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        // Nuove colonne per Filament 5
-=======
         // Nuove colonne per Filament 4
->>>>>>> laraxot/dev
-=======
-        // Nuove colonne per Filament 4
->>>>>>> laraxot/dev
         Schema::table('users', function (Blueprint $table) {
             $table->boolean('is_active')->default(true);
             $table->timestamp('last_login_at')->nullable();
@@ -1254,30 +1186,14 @@ use Illuminate\Support\Facades\Hash;
 class MigrateUserDataToFilament4Command extends Command
 {
     protected $signature = 'user:migrate-filament4 {--chunk=100} {--dry-run}';
-<<<<<<< HEAD
-<<<<<<< HEAD
-    protected $description = 'Migra dati utenti per Filament 5';
-=======
     protected $description = 'Migra dati utenti per Filament 4';
->>>>>>> laraxot/dev
-=======
-    protected $description = 'Migra dati utenti per Filament 4';
->>>>>>> laraxot/dev
 
     public function handle()
     {
         $chunkSize = $this->option('chunk');
         $dryRun = $this->option('dry-run');
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $this->info('Inizio migrazione dati utenti per Filament 5...');
-=======
         $this->info('Inizio migrazione dati utenti per Filament 4...');
->>>>>>> laraxot/dev
-=======
-        $this->info('Inizio migrazione dati utenti per Filament 4...');
->>>>>>> laraxot/dev
 
         $totalUsers = User::count();
         $this->info("Totale utenti da migrare: {$totalUsers}");
@@ -1613,15 +1529,7 @@ class AuthenticationPerformanceTest extends TestCase
 
 set -e # Esci su qualsiasi errore
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-echo "🚨 DEPLOY CRITICO: Modulo User - Filament 5"
-=======
 echo "🚨 DEPLOY CRITICO: Modulo User - Filament 4"
->>>>>>> laraxot/dev
-=======
-echo "🚨 DEPLOY CRITICO: Modulo User - Filament 4"
->>>>>>> laraxot/dev
 echo "⚠️  Questo deploy influenzerà l'autenticazione di sistema"
 
 # Conferma finale
@@ -1720,15 +1628,7 @@ class UserHealthCheckCommand extends Command
 
     public function handle()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $this->info('🔍 Health Check Sistema Utenti - Filament 5');
-=======
         $this->info('🔍 Health Check Sistema Utenti - Filament 4');
->>>>>>> laraxot/dev
-=======
-        $this->info('🔍 Health Check Sistema Utenti - Filament 4');
->>>>>>> laraxot/dev
 
         $issues = [];
 
@@ -1930,15 +1830,7 @@ return [
 
 ### 8.2 Guida Training per Team
 ```markdown
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Training Guide: User Module - Filament 5
-=======
 # Training Guide: User Module - Filament 4
->>>>>>> laraxot/dev
-=======
-# Training Guide: User Module - Filament 4
->>>>>>> laraxot/dev
 
 ## Nuove Funzionalità
 

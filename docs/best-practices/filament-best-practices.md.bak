@@ -47,15 +47,7 @@ Le risorse Filament richiedono che il metodo `getFormSchema()` restituisca un ar
 ### Esempio corretto:
 
 ```php
-<<<<<<< HEAD
-<<<<<<< HEAD
 public static function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         'name' => TextInput::make('name')->required(),
@@ -67,15 +59,7 @@ public static function getFormSchema(): array
 ### Esempio errato:
 
 ```php
-<<<<<<< HEAD
-<<<<<<< HEAD
 public static function getFormSchema(): array
-=======
-public function getFormSchema(): array
->>>>>>> laraxot/dev
-=======
-public static function getFormSchema(): array
->>>>>>> laraxot/dev
 {
     return [
         TextInput::make('name')->required(),

@@ -5,18 +5,8 @@ tags: [filament]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "filament filament nel modulo user"
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -32,15 +22,7 @@ related:
 
 ## Documentazione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. [Migrazione Filament 5](filament4-migration.md) - Guida completa alla migrazione da v3 a v4
-=======
 1. [Migrazione Filament 4](filament4-migration.md) - Guida completa alla migrazione da v3 a v4
->>>>>>> laraxot/dev
-=======
-1. [Migrazione Filament 4](filament4-migration.md) - Guida completa alla migrazione da v3 a v4
->>>>>>> laraxot/dev
 2. [Errori Comuni](filament-errors.md) - Documentazione degli errori comuni e delle loro soluzioni
 3. [Struttura delle Risorse](structure.md#filament-resources) - Come sono strutturate le risorse Filament
 4. [Best Practices](filament-errors.md#best-practices) - Best practices per lo sviluppo con Filament
@@ -93,15 +75,7 @@ related:
 - Compatibilità: Laravel 11.x/12.x
 - Schema System: Nuovo sistema unificato per componenti
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Modifiche Filament 5
-=======
 ## Modifiche Filament 4
->>>>>>> laraxot/dev
-=======
-## Modifiche Filament 4
->>>>>>> laraxot/dev
 
 ### Sistema Schema
 - Implementazione obbligatoria di `HasSchemas` interface

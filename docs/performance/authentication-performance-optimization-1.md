@@ -5,18 +5,8 @@ tags: [authentication, performance, optimization]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "authentication-performance-optimization-1 authentication performance optimization - user module"
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./authentication-performance-optimization-2.md"
   - "./authentication-performance-optimization-3.md"

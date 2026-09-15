@@ -5,18 +5,8 @@ tags: [mcp, database, tools]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "mcp-database-tools mcp (management control panel) tools for database analysis"
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -42,15 +32,7 @@ MCP (Model Context Protocol) tools provide enhanced capabilities for database an
 {
   "command": "node",
   "args": [
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "/var/www/_bases/<repo progetto>/bashscripts/mcp/mysql-db-connector.js"
-=======
     "/var/www/_bases/base_techplanner_fila5_mono/bashscripts/mcp/mysql-db-connector.js"
->>>>>>> laraxot/dev
-=======
-    "/var/www/_bases/base_techplanner_fila5_mono/bashscripts/mcp/mysql-db-connector.js"
->>>>>>> laraxot/dev
   ]
 }
 ```

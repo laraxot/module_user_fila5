@@ -5,18 +5,8 @@ tags: [readme]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "readme user module - authentication & authorization"
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -1056,18 +1046,8 @@ test('user can switch teams', function () {
 ## 🔄 Recent Updates
 
 ### v2.5.0 - 2025-12-05
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Added**: Laravel 13 compatibility
-- **Added**: Filament 5 support
-=======
 - **Added**: Laravel 12 compatibility
 - **Added**: Filament 4 support
->>>>>>> laraxot/dev
-=======
-- **Added**: Laravel 12 compatibility
-- **Added**: Filament 4 support
->>>>>>> laraxot/dev
 - **Fixed**: Merge conflicts in EditProfile and PasswordResetConfirmWidget
 - **Improved**: PHPStan Level 10 compliance
 
@@ -1122,15 +1102,7 @@ See [ROADMAP.md](./roadmap.md) for details.
 
 **Module**: User (Authentication & Authorization)
 **Version**: 2.5.0
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Framework**: Laravel 13 + Filament 5
-=======
 **Framework**: Laravel 12 + Filament 4
->>>>>>> laraxot/dev
-=======
-**Framework**: Laravel 12 + Filament 4
->>>>>>> laraxot/dev
 **PHPStan**: Level 10 ✅
 **Test Coverage**: 88%+ ✅
 **Security**: OWASP Compliant ✅

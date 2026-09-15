@@ -191,15 +191,7 @@ User provides Laravel developers with the most comprehensive and secure authenti
 - **Security**: Security analysis and protection
 
 ### Technology Stack
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Framework**: Laravel 13.x
-=======
 - **Framework**: Laravel 12.x
->>>>>>> laraxot/dev
-=======
-- **Framework**: Laravel 12.x
->>>>>>> laraxot/dev
 - **Database**: MySQL, PostgreSQL, SQLite
 - **Frontend**: Tailwind CSS, Alpine.js
 - **Testing**: PHPUnit, Pest

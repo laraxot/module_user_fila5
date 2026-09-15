@@ -36,15 +36,7 @@ Modules\User\Models\BaseUser (abstract - this module)
     ↑
 Modules\User\Models\User (concrete - default)
     ↑ (modules can extend)
-<<<<<<< HEAD
-<<<<<<< HEAD
-Modules\<nome progetto>\Models\User (concrete with comments)
-=======
 Modules\Fixcity\Models\User (concrete with comments)
->>>>>>> laraxot/dev
-=======
-Modules\Fixcity\Models\User (concrete with comments)
->>>>>>> laraxot/dev
 ```
 
 ## BaseUser Responsibilities
@@ -82,23 +74,10 @@ Downstream modules may need to:
 - Implement contracts from other modules
 - Override behavior for domain-specific needs
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Example: <nome progetto> Extension
-
-```php
-namespace Modules\<nome progetto>\Models;
-=======
-=======
->>>>>>> laraxot/dev
 ### Example: Fixcity Extension
 
 ```php
 namespace Modules\Fixcity\Models;
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 
 use Modules\User\Models\BaseUser;
 use Modules\Comment\Models\Contracts\CanComment;
@@ -108,15 +87,7 @@ class User extends BaseUser implements CanComment
 {
     use InteractsWithComments;
     
-<<<<<<< HEAD
-<<<<<<< HEAD
-    // <nome progetto>-specific configuration
-=======
     // Fixcity-specific configuration
->>>>>>> laraxot/dev
-=======
-    // Fixcity-specific configuration
->>>>>>> laraxot/dev
     protected $childTypes = [
         'master_admin' => self::class,
         'backoffice_user' => self::class,
@@ -179,14 +150,6 @@ protected $keyType = 'string';
 
 ## Related Documentation
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-- <nome progetto> User Architecture: `laravel/Modules/<nome progetto>/docs/wiki/concepts/user-model-architecture.md`
-=======
 - Fixcity User Architecture: `laravel/Modules/Fixcity/docs/wiki/concepts/user-model-architecture.md`
->>>>>>> laraxot/dev
-=======
-- Fixcity User Architecture: `laravel/Modules/Fixcity/docs/wiki/concepts/user-model-architecture.md`
->>>>>>> laraxot/dev
 - Comment Contract: `laravel/Modules/Comment/docs/wiki/concepts/can-comment-contract-owner.md`
 - Xot Patterns: `laravel/Modules/Xot/docs/wiki/concepts/`

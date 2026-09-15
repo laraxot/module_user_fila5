@@ -7,15 +7,7 @@ created: 2026-07-27
 updated: 2026-07-27
 qmd: "user profiles id bigint uuid convertIdFromUuidToBigintIfNeeded field id default value 1364"
 issues:
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - "https://github.com/laraxot/<repo progetto>/issues/7"
-=======
   - "https://github.com/laraxot/base_workorder_fila5/issues/7"
->>>>>>> laraxot/dev
-=======
-  - "https://github.com/laraxot/base_workorder_fila5/issues/7"
->>>>>>> laraxot/dev
 related:
   - ./profile-migration-uuid-contract.md
   - ./migration-naming-religion-user.md
@@ -39,30 +31,14 @@ insert into profiles (user_id, uuid, ...) — senza id
 
 ## Fix (2026-07-27)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Owner **<nome progetto>** (`main_module`): `2026_07_27_111500_create_profiles_table.php`
-=======
 Owner **WorkOrder** (`main_module`): `2026_07_27_111500_create_profiles_table.php`
->>>>>>> laraxot/dev
-=======
-Owner **WorkOrder** (`main_module`): `2026_07_27_111500_create_profiles_table.php`
->>>>>>> laraxot/dev
 
 - `tableCreate`: `id()` + `uuid` + colonne dominio
 - `convertIdFromUuidToBigintIfNeeded()` per legacy UUID PK
 - `tableUpdate`: colonne additive + `updateTimestamps`
 - Duplicati User in `_bak/*.merged`
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Vedi [<nome progetto> profile-schema-ownership](../../../<nome progetto>/docs/profile-schema-ownership.md).
-=======
 Vedi [WorkOrder profile-schema-ownership](../../../WorkOrder/docs/profile-schema-ownership.md).
->>>>>>> laraxot/dev
-=======
-Vedi [WorkOrder profile-schema-ownership](../../../WorkOrder/docs/profile-schema-ownership.md).
->>>>>>> laraxot/dev
 
 ## Contratto
 

@@ -5,18 +5,8 @@ tags: [phpstans]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstans filosofia laraxot: risoluzione errori phpstan"
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -77,23 +67,10 @@ Questo non è un suggerimento, è un **COMANDAMENTO** della religione Laraxot.
 
 ### Namespace Sacri
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-In Filament 5, i namespace sono cambiati:
-
-```
-Filament 3 → Filament 5
-=======
-=======
->>>>>>> laraxot/dev
 In Filament 4, i namespace sono cambiati:
 
 ```
 Filament 3 → Filament 4
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 Filament\Tables\Actions\* → Filament\Actions\*
 ```
 
@@ -151,23 +128,10 @@ Il processo di correzione segue il cammino Zen:
 
 ## 📋 Pattern Corretto Laraxot
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### Namespace Filament 5
-
-```php
-// ✅ CORRETTO - Filament 5
-=======
-=======
->>>>>>> laraxot/dev
 ### Namespace Filament 4
 
 ```php
 // ✅ CORRETTO - Filament 4
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 use Filament\Actions\DetachBulkAction;
 use Filament\Actions\AttachAction;
 use Filament\Actions\DetachAction;
@@ -247,15 +211,7 @@ public function getTableBulkActions()
 
 ### Fase 2: Correzione
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. Correggere namespace Filament 5
-=======
 1. Correggere namespace Filament 4
->>>>>>> laraxot/dev
-=======
-1. Correggere namespace Filament 4
->>>>>>> laraxot/dev
 2. Aggiungere type hints espliciti
 3. Aggiornare PHPDoc
 4. Verificare con PHPStan
@@ -295,15 +251,7 @@ public function getTableBulkActions()
 ## 📚 Riferimenti
 
 - [PHPStan Documentation](https://phpstan.org/)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- [Filament 5 Migration Guide](../../xot/docs/Filament-5-migration-guide.md)
-=======
 - [Filament 4 Migration Guide](../../xot/docs/filament-4-migration-guide.md)
->>>>>>> laraxot/dev
-=======
-- [Filament 4 Migration Guide](../../xot/docs/filament-4-migration-guide.md)
->>>>>>> laraxot/dev
 - [Type Safety Best Practices](../../xot/docs/type-safety-best-practices.md)
 
 ---

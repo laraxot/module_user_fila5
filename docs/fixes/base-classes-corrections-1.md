@@ -5,18 +5,8 @@ tags: [base, classes, corrections]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "base-classes-corrections-1 correzione estensioni classi base - modulo user"
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./base-classes-corrections-.md"
   - "./base-classes-corrections-2.md"
@@ -322,15 +312,7 @@ e
 ## Applicazione ad Altri Moduli
 
 Questo pattern di correzione può essere applicato a:
-<<<<<<< HEAD
-<<<<<<< HEAD
-- **Modulo <nome progetto>**: Verificare QuestionChart, SurveyPdf, Contact
-=======
 - **Modulo Quaeris**: Verificare QuestionChart, SurveyPdf, Contact
->>>>>>> laraxot/dev
-=======
-- **Modulo Quaeris**: Verificare QuestionChart, SurveyPdf, Contact
->>>>>>> laraxot/dev
 - **Modulo Blog**: Verificare Post, Category, Tag
 - **Modulo Dental**: Verificare Visit, Treatment, Patient
 - **Tutti gli altri moduli**: Audit sistematico

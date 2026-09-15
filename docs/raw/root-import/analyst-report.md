@@ -228,15 +228,7 @@ Extract services:
 
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-### 8. [LOW] Inconsistent Type Hints — Filament 5 Compliance
-=======
 ### 8. [LOW] Inconsistent Type Hints — Filament 4 Compliance
->>>>>>> laraxot/dev
-=======
-### 8. [LOW] Inconsistent Type Hints — Filament 4 Compliance
->>>>>>> laraxot/dev
 
 **Severity**: LOW | **Category**: Type Safety  
 **Problem**: Missing return type hints and parameter types  

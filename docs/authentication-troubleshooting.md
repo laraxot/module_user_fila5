@@ -5,18 +5,8 @@ tags: [authentication, troubleshooting]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "authentication-troubleshooting debug autenticazione - login widget"
-<<<<<<< HEAD
-<<<<<<< HEAD
-issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
-discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
-=======
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
-=======
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
->>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -56,15 +46,7 @@ Mentre la pagina standard è usata nelle rotte amministrative o in layout sempli
 ### 3. Namespace components
 **Sintomo**: Errori di rendering.
 **Causa**: Uso di componenti `Filament\Forms` dentro uno `Schema` che si aspetta componenti compatibili o viceversa.
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Soluzione**: In Filament 5, verificare sempre le importazioni (`use Filament\Forms\Components\...`).
-=======
 **Soluzione**: In Filament 4, verificare sempre le importazioni (`use Filament\Forms\Components\...`).
->>>>>>> laraxot/dev
-=======
-**Soluzione**: In Filament 4, verificare sempre le importazioni (`use Filament\Forms\Components\...`).
->>>>>>> laraxot/dev
 
 ## Checklist di Troubleshooting
 - [ ] Il componente estende `XotBaseWidget`?
