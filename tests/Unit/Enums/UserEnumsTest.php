@@ -38,5 +38,4 @@ test('LanguageEnum enum has expected cases', function (): void {
     Assert::assertContains('en', $values);
 });
 
-/** @phpstan-ignore-next-line method.nonObject, function.void (Pest it()->todo() chain: pest-plugin-phpstan extension is disabled in root phpstan.neon, so PHPStan does not know it() returns a bindable TestCall) */
 it('UserType has getLabel method')->todo();

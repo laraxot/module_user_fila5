@@ -28,7 +28,6 @@ use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
-/** @phpstan-ignore-next-line method.nonObject, function.void (Pest uses()->group() chain: pest-plugin-phpstan extension is disabled in root phpstan.neon, so PHPStan does not know uses() returns a bindable TestCase call) */
 uses(TestCase::class)->group('no-user-db');
 
 afterEach(function (): void {
@@ -156,7 +155,7 @@ describe('User gap attack — highest miss files', function (): void {
                 }
             }
 
-            $eventClass = $class === OtherDeviceLogoutListener::class
+            $eventClass = OtherDeviceLogoutListener::class === $class
                 ? OtherDeviceLogout::class
                 : Logout::class;
             /** @var Authenticatable&MockInterface $authUser */
@@ -201,7 +200,7 @@ describe('User gap attack — highest miss files', function (): void {
         Hash::shouldReceive('check')->andReturn(true);
         Hash::shouldReceive('needsRehash')->andReturn(false);
 
-        $user = new UserGapBaseUserProbe;
+        $user = new UserGapBaseUserProbe();
         $user->setRawAttributes([
             'id' => 1,
             'name' => 'Test',
@@ -212,8 +211,8 @@ describe('User gap attack — highest miss files', function (): void {
 
         $ref = new \ReflectionClass($user);
         foreach ($ref->getMethods(\ReflectionMethod::IS_PUBLIC) as $method) {
-            if ($method->getDeclaringClass()->getName() !== UserGapBaseUserProbe::class
-                && $method->getDeclaringClass()->getName() !== BaseUser::class) {
+            if (UserGapBaseUserProbe::class !== $method->getDeclaringClass()->getName()
+                && BaseUser::class !== $method->getDeclaringClass()->getName()) {
                 continue;
             }
             if (str_starts_with($method->getName(), '__')) {

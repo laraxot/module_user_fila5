@@ -15,7 +15,6 @@ use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Models\Fixtures\TestBaseUser;
 use PHPUnit\Framework\Assert;
 
-/** @phpstan-ignore-next-line method.nonObject, function.void (Pest uses()->group() chain: pest-plugin-phpstan extension is disabled in root phpstan.neon, so PHPStan does not know uses() returns a bindable TestCase call) */
 uses(TestCase::class)->group('no-user-db');
 
 afterEach(function (): void {
@@ -31,7 +30,7 @@ function logoutEvent(?Authenticatable $user): Logout
     /** @var Authenticatable&MockInterface $placeholder */
     $placeholder = \Mockery::mock(Authenticatable::class);
     $event = new Logout('web', $placeholder);
-    if ($user === null) {
+    if (null === $user) {
         $prop = (new \ReflectionClass($event))->getProperty('user');
         $prop->setAccessible(true);
         $prop->setValue($event, null);
@@ -64,7 +63,7 @@ describe('LogoutListener behavior', function (): void {
     test('forgetRememberTokens catches errors for BaseUser without DB', function (): void {
         Log::shouldReceive('error')->atLeast()->once();
 
-        $user = new TestBaseUser;
+        $user = new TestBaseUser();
         $user->forceFill(['id' => 'logout-user-1']);
 
         $listener = new LogoutListener(Request::create('/'));

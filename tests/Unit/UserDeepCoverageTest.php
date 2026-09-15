@@ -7,7 +7,6 @@ namespace Modules\User\Tests\Unit;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Tests\ModuleDeepCoverage;
 
-/** @phpstan-ignore-next-line method.nonObject, function.void (Pest uses()->group() chain: pest-plugin-phpstan extension is disabled in root phpstan.neon, so PHPStan does not know uses() returns a bindable TestCase call) */
 uses(TestCase::class)->group('no-user-db');
 
 /** @return array{string, string} */
