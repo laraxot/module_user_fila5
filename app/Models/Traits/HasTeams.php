@@ -24,12 +24,29 @@ use Spatie\Permission\Models\Permission;
  * Provides team functionality for User models implementing team-based organization.
  * This trait handles team ownership, membership, permissions, and relationships.
  *
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_kLSBpP
+>>>>>>> laraxot/dev
  * @property TeamContract                  $currentTeam
  * @property int|null                      $current_team_id
  * @property Collection<int, TeamContract> $membershipTeams
  * @property Collection<int, TeamContract> $ownedTeams
  * @property Collection<int, TeamUser>     $teamUsers
  * @property XotUserContract|null          $owner
+<<<<<<< .merge_file_2JpDaI
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+ * @property TeamContract $currentTeam
+ * @property int|null $current_team_id
+ * @property Collection<int, TeamContract> $membershipTeams
+ * @property Collection<int, TeamContract> $ownedTeams
+ * @property Collection<int, TeamUser> $teamUsers
+ * @property XotUserContract|null $owner
+>>>>>>> .merge_file_ZojtcL
 =======
  * @property TeamContract                  $currentTeam
  * @property int|null                      $current_team_id
@@ -37,6 +54,12 @@ use Spatie\Permission\Models\Permission;
  * @property Collection<int, TeamContract> $ownedTeams
  * @property Collection<int, TeamUser>     $teamUsers
  * @property XotUserContract|null          $owner
+<<<<<<< .merge_file_2JpDaI
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_ZojtcL
  */
 trait HasTeams
 {
@@ -81,7 +104,19 @@ trait HasTeams
      */
     public function belongsToTeam(?TeamContract $team): bool
     {
+<<<<<<< HEAD
         if (null === $team) {
+=======
+<<<<<<< .merge_file_kLSBpP
+        if (null === $team) {
+=======
+<<<<<<< HEAD
+        if ($team === null) {
+=======
+        if (null === $team) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
             return false;
         }
 
@@ -175,7 +210,19 @@ trait HasTeams
         })->filter();
 
         $owner = $this->owner;
+<<<<<<< HEAD
         if (null !== $owner && $owner instanceof User) {
+=======
+<<<<<<< .merge_file_kLSBpP
+        if (null !== $owner && $owner instanceof User) {
+=======
+<<<<<<< HEAD
+        if ($owner !== null && $owner instanceof User) {
+=======
+        if (null !== $owner && $owner instanceof User) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
             return $users->merge([$owner]);
         }
 
@@ -189,7 +236,19 @@ trait HasTeams
      */
     public function allTeamUsers(): Collection // @phpstan-ignore return.type
     {/** @var Collection<int, mixed> $teams */
+<<<<<<< HEAD
+                                                                                $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
+=======
+<<<<<<< .merge_file_kLSBpP
                                                                                     $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
+=======
+<<<<<<< HEAD
+            $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
+=======
+                                                                                    $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
         /** @var Collection<int, User> $result */
         $result = $teams->flatMap( // @phpstan-ignore argument.type
             /** @param mixed $team @return array<int,User>|Collection<int,User> */
@@ -215,13 +274,37 @@ trait HasTeams
             if ($memberUser instanceof Model) {
                 $memberUserKey = $memberUser->getKey();
 
+<<<<<<< HEAD
                 return null !== $memberUserKey && $memberUserKey === $user->getKey();
+=======
+<<<<<<< .merge_file_kLSBpP
+                return null !== $memberUserKey && $memberUserKey === $user->getKey();
+=======
+<<<<<<< HEAD
+                return $memberUserKey !== null && $memberUserKey === $user->getKey();
+=======
+                return null !== $memberUserKey && $memberUserKey === $user->getKey();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
             }
 
             return false;
         });
 
+<<<<<<< HEAD
         if (null !== $userFound) {
+=======
+<<<<<<< .merge_file_kLSBpP
+        if (null !== $userFound) {
+=======
+<<<<<<< HEAD
+        if ($userFound !== null) {
+=======
+        if (null !== $userFound) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
             return true;
         }
 
@@ -260,7 +343,19 @@ trait HasTeams
 
         $teamRole = $this->teamRole($team);
 
+<<<<<<< HEAD
         return null !== $teamRole && $teamRole->name === $role;
+=======
+<<<<<<< .merge_file_kLSBpP
+        return null !== $teamRole && $teamRole->name === $role;
+=======
+<<<<<<< HEAD
+        return $teamRole !== null && $teamRole->name === $role;
+=======
+        return null !== $teamRole && $teamRole->name === $role;
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -270,7 +365,19 @@ trait HasTeams
     {
         $role = $this->teamRole($team);
 
+<<<<<<< HEAD
         if (null === $role) {
+=======
+<<<<<<< .merge_file_kLSBpP
+        if (null === $role) {
+=======
+<<<<<<< HEAD
+        if ($role === null) {
+=======
+        if (null === $role) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
             return 'Unknown';
         }
 
@@ -325,7 +432,19 @@ trait HasTeams
         /** @var Model|Pivot|null $teamUser */
         $teamUser = $this->teamUsers()->where('team_id', $team->id)->first();
 
+<<<<<<< HEAD
         if (null === $teamUser) {
+=======
+<<<<<<< .merge_file_kLSBpP
+        if (null === $teamUser) {
+=======
+<<<<<<< HEAD
+        if ($teamUser === null) {
+=======
+        if (null === $teamUser) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
             return null;
         }
 
@@ -354,7 +473,19 @@ trait HasTeams
 
         // Permissions from Role
         $role = $this->teamRole($team);
+<<<<<<< HEAD
         if (null !== $role && $role->permissions) {
+=======
+<<<<<<< .merge_file_kLSBpP
+        if (null !== $role && $role->permissions) {
+=======
+<<<<<<< HEAD
+        if ($role !== null && $role->permissions) {
+=======
+        if (null !== $role && $role->permissions) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
             /** @var \Illuminate\Database\Eloquent\Collection<int, Permission> $permissionsCollection */
             $permissionsCollection = $role->permissions;
             /** @var array<string> $rolePermissionNames */
@@ -362,14 +493,38 @@ trait HasTeams
 
             $permissions = array_values(array_filter(
                 $rolePermissionNames,
+<<<<<<< HEAD
                 static fn (string $value): bool => '' !== $value
+=======
+<<<<<<< .merge_file_kLSBpP
+                static fn (string $value): bool => '' !== $value
+=======
+<<<<<<< HEAD
+                static fn (string $value): bool => $value !== ''
+=======
+                static fn (string $value): bool => '' !== $value
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
             ));
         }
 
         // Permissions from Pivot
         /** @var Model|Pivot|null $teamUser */
         $teamUser = $this->teamUsers()->where('team_id', (string) $team->id)->first();
+<<<<<<< HEAD
         if (null !== $teamUser) {
+=======
+<<<<<<< .merge_file_kLSBpP
+        if (null !== $teamUser) {
+=======
+<<<<<<< HEAD
+        if ($teamUser !== null) {
+=======
+        if (null !== $teamUser) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
             $pivotPermissions = $teamUser->getAttribute('permissions');
             if (is_array($pivotPermissions)) {
                 $pivotPermissionNames = array_keys(array_filter($pivotPermissions));
@@ -378,7 +533,19 @@ trait HasTeams
                     $permissions,
                     array_values(array_filter(
                         $pivotPermissionNames,
+<<<<<<< HEAD
                         static fn (string $value): bool => '' !== $value
+=======
+<<<<<<< .merge_file_kLSBpP
+                        static fn (string $value): bool => '' !== $value
+=======
+<<<<<<< HEAD
+                        static fn (string $value): bool => $value !== ''
+=======
+                        static fn (string $value): bool => '' !== $value
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
                     ))
                 );
             }
@@ -414,19 +581,55 @@ trait HasTeams
      */
     public function initializeCurrentTeam(): void
     {
+<<<<<<< HEAD
         if (null !== $this->current_team_id) {
+=======
+<<<<<<< .merge_file_kLSBpP
+        if (null !== $this->current_team_id) {
+=======
+<<<<<<< HEAD
+        if ($this->current_team_id !== null) {
+=======
+        if (null !== $this->current_team_id) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
             return;
         }
 
         $team = $this->personalTeam();
+<<<<<<< HEAD
         if (null === $team) {
+=======
+<<<<<<< .merge_file_kLSBpP
+        if (null === $team) {
+=======
+<<<<<<< HEAD
+        if ($team === null) {
+=======
+        if (null === $team) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
             $teamCandidate = $this->allTeams()->first();
             if ($teamCandidate instanceof TeamContract) {
                 $team = $teamCandidate;
             }
         }
 
+<<<<<<< HEAD
         if (null !== $team) {
+=======
+<<<<<<< .merge_file_kLSBpP
+        if (null !== $team) {
+=======
+<<<<<<< HEAD
+        if ($team !== null) {
+=======
+        if (null !== $team) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
             $this->switchTeam($team);
         }
     }
@@ -452,7 +655,19 @@ trait HasTeams
      */
     public function isCurrentTeam(TeamContract $team): bool
     {
+<<<<<<< HEAD
         if (null === $this->currentTeam) {
+=======
+<<<<<<< .merge_file_kLSBpP
+        if (null === $this->currentTeam) {
+=======
+<<<<<<< HEAD
+        if ($this->currentTeam === null) {
+=======
+        if (null === $this->currentTeam) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
             return false;
         }
 
@@ -464,7 +679,19 @@ trait HasTeams
      */
     public function ownsTeam(?TeamContract $team): bool
     {
+<<<<<<< HEAD
         if (null === $team) {
+=======
+<<<<<<< .merge_file_kLSBpP
+        if (null === $team) {
+=======
+<<<<<<< HEAD
+        if ($team === null) {
+=======
+        if (null === $team) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_DqquNe
+>>>>>>> laraxot/dev
             return false;
         }
 

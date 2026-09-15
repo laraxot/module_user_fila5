@@ -21,7 +21,11 @@ return [
             'description' => 'client_id',
             'label' => 'client_id',
             'placeholder' => 'client_id',
+<<<<<<< HEAD
+            'helper_text' => '',
+=======
             'helper_text' => 'client_id',
+>>>>>>> laraxot/dev
             'tooltip' => '',
         ],
         'plain_secret' => [
@@ -45,7 +49,11 @@ return [
         'recordId' => [
             'description' => 'recordId',
             'placeholder' => 'recordId',
+<<<<<<< HEAD
+            'helper_text' => '',
+=======
             'helper_text' => 'recordId',
+>>>>>>> laraxot/dev
             'label' => '',
             'tooltip' => '',
         ],

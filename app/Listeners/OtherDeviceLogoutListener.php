@@ -28,19 +28,31 @@ class OtherDeviceLogoutListener
     {
         if ($event->user instanceof Model && $event->user instanceof HasAuthentications) {
             $user = $event->user;
+<<<<<<< HEAD
+            $ipAddress = $this->request->ip();
+=======
             $ip = $this->request->ip();
+>>>>>>> laraxot/dev
             $userAgent = $this->request->userAgent();
 
             $logQuery = app(GetAuthenticationLogQueryForAuthenticatableAction::class)->execute($user);
 
             $authenticationLog = $logQuery
+<<<<<<< HEAD
+                ->where('ip_address', $ipAddress)
+=======
                 ->where('ip_address', $ip)
+>>>>>>> laraxot/dev
                 ->where('user_agent', $userAgent)
                 ->first();
 
             if (! $authenticationLog instanceof AuthenticationLog) {
                 $authenticationLog = new AuthenticationLog([
+<<<<<<< HEAD
+                    'ip_address' => $ipAddress,
+=======
                     'ip_address' => $ip,
+>>>>>>> laraxot/dev
                     'user_agent' => $userAgent,
                 ]);
             }

@@ -8,9 +8,16 @@ return [
         'empty' => ['label' => 'empty', 'heading' => 'empty'],
     ],
     'fields' => [
+<<<<<<< HEAD
+        'user_id' => ['label' => 'user_id', 'placeholder' => 'user_id', 'helper_text' => '', 'description' => 'user_id'],
+        'client_id' => ['label' => 'client_id', 'placeholder' => 'client_id', 'helper_text' => '', 'description' => 'client_id'],
+        'name' => ['label' => 'name', 'placeholder' => 'name', 'helper_text' => '', 'description' => 'name'],
+        'scopes' => ['label' => 'scopes', 'placeholder' => 'scopes', 'helper_text' => '', 'description' => 'scopes'],
+=======
         'user_id' => ['label' => 'user_id', 'placeholder' => 'user_id', 'helper_text' => 'user_id', 'description' => 'user_id'],
         'client_id' => ['label' => 'client_id', 'placeholder' => 'client_id', 'helper_text' => 'client_id', 'description' => 'client_id'],
         'name' => ['label' => 'name', 'placeholder' => 'name', 'helper_text' => 'name', 'description' => 'name'],
         'scopes' => ['label' => 'scopes', 'placeholder' => 'scopes', 'helper_text' => 'scopes', 'description' => 'scopes'],
+>>>>>>> laraxot/dev
     ],
 ];

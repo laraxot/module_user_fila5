@@ -7,6 +7,14 @@ namespace Modules\User\Filament\Resources;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TextInput;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;

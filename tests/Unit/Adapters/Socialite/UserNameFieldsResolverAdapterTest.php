@@ -15,7 +15,15 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class)->group('no-user-db');
 
 /**
+<<<<<<< HEAD
  * @param array<string, mixed> $raw
+=======
+<<<<<<< HEAD
+ * @param  array<string, mixed>  $raw
+=======
+ * @param array<string, mixed> $raw
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
  */
 function adapterSocialiteUserMock(?string $name, ?string $email, array $raw = []): SocialiteUser
 {
@@ -24,7 +32,15 @@ function adapterSocialiteUserMock(?string $name, ?string $email, array $raw = []
             'getName' => $name,
             'getEmail' => $email,
         ]);
+<<<<<<< HEAD
         if ([] !== $raw) {
+=======
+<<<<<<< HEAD
+        if ($raw !== []) {
+=======
+        if ([] !== $raw) {
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             $expectation = $mock->allows('getRaw');
             \assert($expectation instanceof Expectation);
             $expectation->andReturn($raw);

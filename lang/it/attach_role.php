@@ -7,14 +7,22 @@ return [
         'recordId' => [
             'label' => 'recordId',
             'placeholder' => 'recordId',
+<<<<<<< HEAD
+            'helper_text' => '',
+=======
             'helper_text' => 'recordId',
+>>>>>>> laraxot/dev
             'description' => 'recordId',
             'tooltip' => '',
         ],
         'team_id' => [
             'label' => 'team_id',
             'placeholder' => 'team_id',
+<<<<<<< HEAD
+            'helper_text' => '',
+=======
             'helper_text' => 'team_id',
+>>>>>>> laraxot/dev
             'description' => 'team_id',
             'tooltip' => '',
         ],

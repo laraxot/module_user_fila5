@@ -8,6 +8,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Http\Controllers;
 
+<<<<<<< HEAD
+use Illuminate\Routing\Controller;
+
+class UpgradeController extends Controller
+{
+    public function __invoke(): void
+    {
+=======
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Modules\Xot\Datas\XotData;
@@ -18,6 +26,7 @@ class UpgradeController extends Controller
     {
         $user_class = XotData::make()->getUserClass();
         $users = $user_class::get();
+>>>>>>> laraxot/dev
         /* da id a uuid
          * foreach ($users as $user) {
          * if (strlen(is_string($user) ? $user : (string) $user->) >= 32) { // gia' convertito
