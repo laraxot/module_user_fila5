@@ -1,0 +1,20 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'sections' => [
+        'empty' => ['label' => 'empty', 'heading' => 'empty'],
+    ],
+    'fields' => [
+        'name' => ['label' => 'name', 'placeholder' => 'name', 'helper_text' => '', 'description' => 'name'],
+        'slug' => ['label' => 'slug', 'placeholder' => 'slug', 'helper_text' => '', 'description' => 'slug'],
+        'domain' => ['label' => 'domain', 'placeholder' => 'domain', 'helper_text' => '', 'description' => 'domain'],
+        'email_address' => ['label' => 'email_address', 'placeholder' => 'email_address', 'helper_text' => '', 'description' => 'email_address'],
+        'phone' => ['label' => 'phone', 'placeholder' => 'phone', 'helper_text' => '', 'description' => 'phone'],
+        'mobile' => ['label' => 'mobile', 'placeholder' => 'mobile', 'helper_text' => '', 'description' => 'mobile'],
+        'address' => ['label' => 'address', 'placeholder' => 'address', 'helper_text' => '', 'description' => 'address'],
+        'primary_color' => ['label' => 'primary_color', 'placeholder' => 'primary_color', 'helper_text' => '', 'description' => 'primary_color'],
+        'secondary_color' => ['label' => 'secondary_color', 'placeholder' => 'secondary_color', 'helper_text' => '', 'description' => 'secondary_color'],
+    ],
+];
