@@ -5,8 +5,28 @@ tags: [git, reset]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "git-reset-1 git reset 1"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< .merge_file_31cwhZ
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_QeFFEo
+>>>>>>> laraxot/dev
 related:
   - "./changelog-1.md"
   - "./changelog-2.md"

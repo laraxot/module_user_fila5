@@ -106,12 +106,44 @@ The User module provides comprehensive authentication, authorization, roles, per
 - **Security Score**: Target 95%+ security rating
 - **Performance**: Reduce API response time by 30%
 - **Documentation**: 100% API coverage
+<<<<<<< HEAD
 - **Compatibility**: Support Laravel 12+ and PHP 8.3+
+=======
+<<<<<<< .merge_file_YXy4G5
+- **Compatibility**: Support Laravel 12+ and PHP 8.3+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **Compatibility**: Support Laravel 13+ and PHP 8.3+
+=======
+- **Compatibility**: Support Laravel 12+ and PHP 8.3+
+>>>>>>> laraxot/dev
+=======
+- **Compatibility**: Support Laravel 12+ and PHP 8.3+
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_YhDFUF
+>>>>>>> laraxot/dev
 
 ## Dependencies
 - **Required**: None (core module)
 - **Dependent Modules**: All other modules
+<<<<<<< HEAD
 - **External Dependencies**: Laravel 12, PHP 8.3+
+=======
+<<<<<<< .merge_file_YXy4G5
+- **External Dependencies**: Laravel 12, PHP 8.3+
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **External Dependencies**: Laravel 13, PHP 8.3+
+=======
+- **External Dependencies**: Laravel 12, PHP 8.3+
+>>>>>>> laraxot/dev
+=======
+- **External Dependencies**: Laravel 12, PHP 8.3+
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_YhDFUF
+>>>>>>> laraxot/dev
 
 ## Success Criteria
 - All security features properly implemented and tested

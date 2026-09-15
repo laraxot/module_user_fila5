@@ -5,8 +5,23 @@ tags: [phpstan, fix, plan]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan-fix-plan-5 user module - phpstan level 10 fix plan"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -57,17 +72,50 @@ This is the **highest priority fix** and will be addressed in the Xot module. On
 
 **File**: `app/Models/User.php:112`
 
+<<<<<<< HEAD
 **Issue**: Interface `UserContract` requires implementing class to extend `Modules\Xot\Contracts\Model`, but `Modules\Fixcity\Models\User` does not
 
 **Root Cause**: Fixcity's User model doesn't extend the required base class
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Issue**: Interface `UserContract` requires implementing class to extend `Modules\Xot\Contracts\Model`, but `Modules\<nome progetto>\Models\User` does not
+
+**Root Cause**: <nome progetto>'s User model doesn't extend the required base class
+=======
+**Issue**: Interface `UserContract` requires implementing class to extend `Modules\Xot\Contracts\Model`, but `Modules\Fixcity\Models\User` does not
+
+**Root Cause**: Fixcity's User model doesn't extend the required base class
+>>>>>>> laraxot/dev
+=======
+**Issue**: Interface `UserContract` requires implementing class to extend `Modules\Xot\Contracts\Model`, but `Modules\Fixcity\Models\User` does not
+
+**Root Cause**: Fixcity's User model doesn't extend the required base class
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Fix Strategy**:
 
 Check the base class hierarchy:
 
 ```php
+<<<<<<< HEAD
 // Current Fixcity User
 namespace Modules\Fixcity\Models;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+// Current <nome progetto> User
+namespace Modules\<nome progetto>\Models;
+=======
+// Current Fixcity User
+namespace Modules\Fixcity\Models;
+>>>>>>> laraxot/dev
+=======
+// Current Fixcity User
+namespace Modules\Fixcity\Models;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 class User extends \Modules\User\Models\User
 {
@@ -116,8 +164,23 @@ abstract class XotBaseModel extends \Illuminate\Database\Eloquent\Model implemen
 If the inheritance chain is correct, the error might be a false positive. However, ensure the fix:
 
 ```php
+<<<<<<< HEAD
 // In Modules/Fixcity/Models/User.php
 namespace Modules\Fixcity\Models;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+// In Modules/<nome progetto>/Models/User.php
+namespace Modules\<nome progetto>\Models;
+=======
+// In Modules/Fixcity/Models/User.php
+namespace Modules\Fixcity\Models;
+>>>>>>> laraxot/dev
+=======
+// In Modules/Fixcity/Models/User.php
+namespace Modules\Fixcity\Models;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 use Modules\User\Models\User as BaseUser;
 
@@ -473,8 +536,23 @@ The UserContract interface must be updated first in the Xot module.
 ### Step 2: Verify BaseUser and BaseTeam
 Ensure both base models have all required properties and methods.
 
+<<<<<<< HEAD
 ### Step 3: Verify Fixcity User
 Ensure Fixcity's User model extends the correct base class.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### Step 3: Verify <nome progetto> User
+Ensure <nome progetto>'s User model extends the correct base class.
+=======
+### Step 3: Verify Fixcity User
+Ensure Fixcity's User model extends the correct base class.
+>>>>>>> laraxot/dev
+=======
+### Step 3: Verify Fixcity User
+Ensure Fixcity's User model extends the correct base class.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ### Step 4: Update Policy Classes
 Verify all policies have proper type annotations.
@@ -567,7 +645,19 @@ Modules/User/
 
 ✅ All UserContract-related errors resolved
 ✅ BaseUser and BaseTeam have all required properties
+<<<<<<< HEAD
 ✅ Fixcity User extends correct base class
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+✅ <nome progetto> User extends correct base class
+=======
+✅ Fixcity User extends correct base class
+>>>>>>> laraxot/dev
+=======
+✅ Fixcity User extends correct base class
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 ✅ All policies have proper type annotations
 ✅ All commands have proper type annotations
 ✅ All actions have proper type annotations
@@ -578,7 +668,19 @@ Modules/User/
 
 - **Day 1**: Wait for UserContract update in Xot module
 - **Day 2**: Verify BaseUser and BaseTeam
+<<<<<<< HEAD
 - **Day 3**: Verify Fixcity User inheritance
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- **Day 3**: Verify <nome progetto> User inheritance
+=======
+- **Day 3**: Verify Fixcity User inheritance
+>>>>>>> laraxot/dev
+=======
+- **Day 3**: Verify Fixcity User inheritance
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - **Day 4**: Verify policies, commands, and actions
 - **Day 5**: Update tests and documentation
 
@@ -594,6 +696,18 @@ Modules/User/
 
 This fix plan depends on:
 1. **Xot Module - UserContract Update** (Highest Priority)
+<<<<<<< HEAD
 2. **Fixcity Module - User Model Inheritance** (Medium Priority)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+2. **<nome progetto> Module - User Model Inheritance** (Medium Priority)
+=======
+2. **Fixcity Module - User Model Inheritance** (Medium Priority)
+>>>>>>> laraxot/dev
+=======
+2. **Fixcity Module - User Model Inheritance** (Medium Priority)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 Without the UserContract update, most errors in the User module cannot be resolved.

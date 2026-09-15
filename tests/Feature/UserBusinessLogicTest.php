@@ -17,6 +17,16 @@ use Modules\User\Models\Team;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_RWggbK
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_YvRBgJ
+>>>>>>> laraxot/dev
 /**
  * Nome della connessione su cui vive il model Profile.
  *
@@ -27,9 +37,27 @@ use PHPUnit\Framework\Assert;
 function profileConnectionName(): string
 {
     $profileClass = \Modules\Xot\Datas\XotData::make()->getProfileClass();
+<<<<<<< HEAD
     $connection = (new $profileClass())->getConnectionName();
 
     if (is_string($connection) && '' !== $connection) {
+=======
+<<<<<<< .merge_file_RWggbK
+    $connection = (new $profileClass())->getConnectionName();
+
+    if (is_string($connection) && '' !== $connection) {
+=======
+<<<<<<< HEAD
+    $connection = (new $profileClass)->getConnectionName();
+
+    if (is_string($connection) && $connection !== '') {
+=======
+    $connection = (new $profileClass())->getConnectionName();
+
+    if (is_string($connection) && '' !== $connection) {
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_YvRBgJ
+>>>>>>> laraxot/dev
         return $connection;
     }
 

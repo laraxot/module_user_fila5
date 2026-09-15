@@ -5,8 +5,23 @@ tags: [sso]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "sso 🔑 single sign-on (sso) - guida implementazione"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -27,7 +42,19 @@ related:
 
 ## 🎯 OVERVIEW
 
+<<<<<<< HEAD
 Implementazione Single Sign-On (SSO) per FixCity con supporto SAML 2.0 e OpenID Connect (OIDC), permettendo l'integrazione con provider enterprise come Azure AD, Google Workspace, Okta.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Implementazione Single Sign-On (SSO) per <nome progetto> con supporto SAML 2.0 e OpenID Connect (OIDC), permettendo l'integrazione con provider enterprise come Azure AD, Google Workspace, Okta.
+=======
+Implementazione Single Sign-On (SSO) per FixCity con supporto SAML 2.0 e OpenID Connect (OIDC), permettendo l'integrazione con provider enterprise come Azure AD, Google Workspace, Okta.
+>>>>>>> laraxot/dev
+=======
+Implementazione Single Sign-On (SSO) per FixCity con supporto SAML 2.0 e OpenID Connect (OIDC), permettendo l'integrazione con provider enterprise come Azure AD, Google Workspace, Okta.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ---
 

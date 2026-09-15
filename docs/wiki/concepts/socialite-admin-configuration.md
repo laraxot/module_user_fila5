@@ -58,7 +58,19 @@ GOOGLE_CLIENT_SECRET=GOCSPX-xxx
 │  │  Client ID:     [xxx.apps.googleusercontent.com]    │  │
 │  │  Client Secret: [••••••••••••••••xxxx]             │  │
 │  │  Scopes:        [openid] [email] [profile]          │  │
+<<<<<<< HEAD
 │  │  Redirect URL:  http://fixcity.local/auth/google/...│  │
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+│  │  Redirect URL:  http://<nome progetto>.local/auth/google/...│  │
+=======
+│  │  Redirect URL:  http://fixcity.local/auth/google/...│  │
+>>>>>>> laraxot/dev
+=======
+│  │  Redirect URL:  http://fixcity.local/auth/google/...│  │
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 │  │                                                       │  │
 │  │  [💾 Salva Configurazione]                           │  │
 │  └───────────────────────────────────────────────────────┘  │
@@ -350,7 +362,19 @@ return array (
     'enabled' => true,
     'client_id' => '123456.apps.googleusercontent.com',
     'client_secret' => 'GOCSPX-xxx',
+<<<<<<< HEAD
     'redirect' => 'https://fixcity.local/auth/google/callback',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    'redirect' => 'https://<nome progetto>.local/auth/google/callback',
+=======
+    'redirect' => 'https://fixcity.local/auth/google/callback',
+>>>>>>> laraxot/dev
+=======
+    'redirect' => 'https://fixcity.local/auth/google/callback',
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     'scopes' => 
     array (
       0 => 'openid',
@@ -363,7 +387,19 @@ return array (
     'enabled' => false,
     'client_id' => '',
     'client_secret' => '',
+<<<<<<< HEAD
     'redirect' => 'https://fixcity.local/auth/github/callback',
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    'redirect' => 'https://<nome progetto>.local/auth/github/callback',
+=======
+    'redirect' => 'https://fixcity.local/auth/github/callback',
+>>>>>>> laraxot/dev
+=======
+    'redirect' => 'https://fixcity.local/auth/github/callback',
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
   ),
 );
 ```
@@ -421,16 +457,46 @@ Activity::create([
 ### Step 1: Create Google Cloud Project
 
 1. Go to [Google Cloud Console](https://console.cloud.google.com/)
+<<<<<<< HEAD
 2. Create new project: "FixCity OAuth"
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+2. Create new project: "<nome progetto> OAuth"
+=======
+2. Create new project: "FixCity OAuth"
+>>>>>>> laraxot/dev
+=======
+2. Create new project: "FixCity OAuth"
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 3. Enable **Google+ API** or **People API**
 
 ### Step 2: Configure OAuth Consent Screen
 
 1. APIs & Services → OAuth consent screen
 2. User Type: **External**
+<<<<<<< HEAD
 3. App name: "FixCity"
 4. User support email: support@fixcity.local
 5. Developer contact: dev@fixcity.local
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+3. App name: "<nome progetto>"
+4. User support email: support@<nome progetto>.local
+5. Developer contact: dev@<nome progetto>.local
+=======
+3. App name: "FixCity"
+4. User support email: support@fixcity.local
+5. Developer contact: dev@fixcity.local
+>>>>>>> laraxot/dev
+=======
+3. App name: "FixCity"
+4. User support email: support@fixcity.local
+5. Developer contact: dev@fixcity.local
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 6. Scopes: `openid`, `email`, `profile`
 7. Test users: Add your email
 
@@ -439,6 +505,23 @@ Activity::create([
 1. APIs & Services → Credentials
 2. Create Credentials → OAuth client ID
 3. Application type: **Web application**
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+4. Name: "<nome progetto> Web"
+5. Authorized JavaScript origins: `https://<nome progetto>.local`
+6. Authorized redirect URIs: `https://<nome progetto>.local/auth/google/callback`
+7. Click **Create**
+8. Copy **Client ID** and **Client Secret**
+
+### Step 4: Configure in <nome progetto> Admin
+
+1. Login to <nome progetto> admin: `/admin`
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 4. Name: "FixCity Web"
 5. Authorized JavaScript origins: `https://fixcity.local`
 6. Authorized redirect URIs: `https://fixcity.local/auth/google/callback`
@@ -448,6 +531,13 @@ Activity::create([
 ### Step 4: Configure in FixCity Admin
 
 1. Login to FixCity admin: `/admin`
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 2. Navigate to: **User Management → OAuth Providers**
 3. Find **Google OAuth** section
 4. Enable: **☑ Attiva login con Google**
@@ -458,7 +548,19 @@ Activity::create([
 
 ### Step 5: Test
 
+<<<<<<< HEAD
 1. Logout from FixCity
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+1. Logout from <nome progetto>
+=======
+1. Logout from FixCity
+>>>>>>> laraxot/dev
+=======
+1. Logout from FixCity
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 2. Go to login page: `/auth/login`
 3. Click **🔵 Accedi con Google**
 4. Complete Google consent
@@ -470,7 +572,19 @@ Activity::create([
 
 ### "redirect_uri_mismatch" Error
 
+<<<<<<< HEAD
 **Cause**: Redirect URL in Google Console doesn't match FixCity config.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+**Cause**: Redirect URL in Google Console doesn't match <nome progetto> config.
+=======
+**Cause**: Redirect URL in Google Console doesn't match FixCity config.
+>>>>>>> laraxot/dev
+=======
+**Cause**: Redirect URL in Google Console doesn't match FixCity config.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Solution**:
 1. Check exact redirect URL in admin panel

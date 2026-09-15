@@ -27,9 +27,18 @@ return [
         ],
         'applyFilters' => ['label' => 'Applica Filtri', 'tooltip' => 'Applica i filtri', 'helper_text' => 'Applica i filtri selezionati', 'description' => 'Azione per applicare i filtri'],
         'created_at' => ['label' => 'created_at'],
+<<<<<<< HEAD
         'active' => ['label' => 'active'],
         'google' => ['label' => 'google', 'placeholder' => 'google', 'helper_text' => '', 'description' => 'google'],
         'auth0' => ['label' => 'auth0', 'placeholder' => 'auth0', 'helper_text' => '', 'description' => 'auth0'],
+=======
+<<<<<<< HEAD
+=======
+        'active' => ['label' => 'active'],
+        'google' => ['label' => 'google', 'placeholder' => 'google', 'helper_text' => 'google', 'description' => 'google'],
+        'auth0' => ['label' => 'auth0', 'placeholder' => 'auth0', 'helper_text' => 'auth0', 'description' => 'auth0'],
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'import' => [
@@ -53,10 +62,19 @@ return [
             ],
         ],
         'create' => ['label' => 'Crea', 'tooltip' => 'Crea nuovo elemento', 'helper_text' => 'Crea un nuovo elemento', 'description' => 'Azione per creare', 'icon' => 'heroicon-o-plus'],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     ],
     'messages' => ['created' => 'Provider creato con successo', 'updated' => 'Provider aggiornato con successo', 'deleted' => 'Provider eliminato con successo'],
 ];

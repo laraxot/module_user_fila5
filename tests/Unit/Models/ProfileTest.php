@@ -11,7 +11,15 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
+<<<<<<< HEAD
  * @param array<string, mixed> $attributes
+=======
+<<<<<<< HEAD
+ * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
  */
 function modelsProfileCreate(array $attributes = []): Profile
 {
@@ -26,7 +34,15 @@ function modelsProfileCreate(array $attributes = []): Profile
 
     /** @var Profile $created */
     $created = Profile::withoutEvents(static function () use ($payload): Profile {
+<<<<<<< HEAD
         $profile = new Profile();
+=======
+<<<<<<< HEAD
+        $profile = new Profile;
+=======
+        $profile = new Profile();
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         $profile->forceFill($payload);
         $profile->save();
 
@@ -39,7 +55,15 @@ function modelsProfileCreate(array $attributes = []): Profile
 }
 
 /**
+<<<<<<< HEAD
  * @param array<string, mixed> $where
+=======
+<<<<<<< HEAD
+ * @param  array<string, mixed>  $where
+=======
+ * @param array<string, mixed> $where
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
  */
 function modelsProfileAssertInDatabase(array $where): void
 {
@@ -95,11 +119,25 @@ test('can create profile with all fields', function (): void {
 });
 
 test('profile has schemaless attributes', function (): void {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    Assert::assertSame(['extra'], (new Profile)->getSchemalessAttributes());
+});
+
+test('profile has table name', function (): void {
+    Assert::assertSame('profiles', (new Profile)->getTable());
+=======
+>>>>>>> laraxot/dev
     Assert::assertSame(['extra'], (new Profile())->getSchemalessAttributes());
 });
 
 test('profile has table name', function (): void {
     Assert::assertSame('profiles', (new Profile())->getTable());
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 });
 
 test('can find profile by email', function (): void {

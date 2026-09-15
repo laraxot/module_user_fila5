@@ -24,7 +24,19 @@ related:
 
 `Modules\User\Models\Notification` estende `Illuminate\Notifications\DatabaseNotification`.
 
+<<<<<<< HEAD
 - Connessione: `user` (`fixcity_user`)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Connessione: `user` (`<nome progetto>_user`)
+=======
+- Connessione: `user` (`fixcity_user`)
+>>>>>>> laraxot/dev
+=======
+- Connessione: `user` (`fixcity_user`)
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Usato da `BaseUser::notifications()` e `unreadNotifications()` nel FO/header
 
 ## Schema owner (non qui)

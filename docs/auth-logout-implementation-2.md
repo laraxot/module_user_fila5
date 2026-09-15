@@ -5,8 +5,23 @@ tags: [auth, logout, implementation]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "auth-logout-implementation-2 implementazione del logout"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -83,7 +98,19 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 ```
 
+<<<<<<< HEAD
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di Quaeris per la gestione della localizzazione.
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
+=======
+Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di Quaeris per la gestione della localizzazione.
+>>>>>>> laraxot/dev
+=======
+Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di Quaeris per la gestione della localizzazione.
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Componenti Filament
 
@@ -111,7 +138,19 @@ Il template Blade per il logout deve utilizzare i componenti Filament per garant
 
 ## Chiavi di Traduzione
 
+<<<<<<< HEAD
 Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di Quaeris:
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di <nome progetto>:
+=======
+Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di Quaeris:
+>>>>>>> laraxot/dev
+=======
+Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di Quaeris:
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ```php
 'logout' => [

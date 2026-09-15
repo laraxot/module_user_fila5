@@ -13,11 +13,33 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
 use Filament\Forms\Components\Select;
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_Dj89XY
+=======
+<<<<<<< HEAD
+use Filament\Tables;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_LI4Wkr
+>>>>>>> laraxot/dev
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\SelectFilter;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_Dj89XY
+=======
+<<<<<<< HEAD
+use Modules\User\Filament\Resources\PermissionResource;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_LI4Wkr
+>>>>>>> laraxot/dev
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -25,6 +47,31 @@ use Webmozart\Assert\Assert;
 
 class ListPermissions extends XotBaseListRecords
 {
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_Dj89XY
+=======
+<<<<<<< HEAD
+    protected static string $resource = PermissionResource::class;
+
+    /**
+     * @return array<string, Tables\Columns\Column>
+     */
+    #[\Override]
+    public function getTableColumns(): array
+    {
+        return [
+            'name' => TextColumn::make('name')->searchable()->sortable(),
+            'guard_name' => TextColumn::make('guard_name')->searchable()->sortable(),
+            'active' => IconColumn::make('active')->boolean(),
+            'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
+        ];
+    }
+
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_LI4Wkr
+>>>>>>> laraxot/dev
     /**
      * @return array<string, BaseFilter>
      */

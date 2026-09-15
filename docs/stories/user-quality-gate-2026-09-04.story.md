@@ -96,6 +96,7 @@ rispecchiano colonne DB snake_case), `ExcessiveParameterList` su DTO Spatie Lara
 - `app/Actions/Socialite/RetrieveSocialiteUserAction.php`
 - `docs/coverage.md`
 - `docs/stories/user-quality-gate-2026-09-04.story.md` (questo file)
+<<<<<<< HEAD
 
 ## Follow-up BMAD — PHPMD cleanup (2026-09-15)
 
@@ -124,3 +125,5 @@ rispecchiano colonne DB snake_case), `ExcessiveParameterList` su DTO Spatie Lara
 ### Riferimenti
 - `/tmp/user-phpmd.txt` — rilievi PHPMD di partenza.
 - `gitmodules.ini` — URL canonico della repository User.
+=======
+>>>>>>> laraxot/dev

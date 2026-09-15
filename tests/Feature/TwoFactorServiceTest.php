@@ -21,7 +21,19 @@ beforeEach(function (): void {
     TestCase::skipUnlessUserColumn('users', 'two_factor_confirmed_at');
 
     TestCase::$user = TestCase::createTestUser();
+<<<<<<< HEAD
     TestCase::$google2fa = new Google2FA();
+=======
+<<<<<<< .merge_file_flAIMf
+    TestCase::$google2fa = new Google2FA();
+=======
+<<<<<<< HEAD
+    TestCase::$google2fa = new Google2FA;
+=======
+    TestCase::$google2fa = new Google2FA();
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_yhK2jx
+>>>>>>> laraxot/dev
 });
 
 describe('Two Factor Service', function (): void {

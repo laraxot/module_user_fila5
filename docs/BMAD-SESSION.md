@@ -1,13 +1,37 @@
 # BMAD + Second Brain — Session Summary (2026-09-04)
 
 ## Bootstrap
+<<<<<<< HEAD
 - Repo: `/var/www/_bases/base_restaurant_fila5/laravel`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Repo: `/var/www/_bases/<repo progetto>/laravel`
+=======
+- Repo: `/var/www/_bases/base_restaurant_fila5/laravel`
+>>>>>>> laraxot/dev
+=======
+- Repo: `/var/www/_bases/base_restaurant_fila5/laravel`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Stack: Laravel 13.30.1 + PHP 8.4 + MariaDB 10.11
 - Moduli attivi: User, Gdpr, Xot, Activity, Cms, Geo, UI, Restaurant
 - SSoT contratti: `Modules\Xot\Contracts\UserContract`, `ProfileContract`
 
 ## Diagnose
+<<<<<<< HEAD
 - PHPStan 485 errori: 309 `class.notFound` (test `User`, `Profile`, `Quaeris`), duplicati import
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- PHPStan 485 errori: 309 `class.notFound` (test `User`, `Profile`, `<nome progetto>`), duplicati import
+=======
+- PHPStan 485 errori: 309 `class.notFound` (test `User`, `Profile`, `Quaeris`), duplicati import
+>>>>>>> laraxot/dev
+=======
+- PHPStan 485 errori: 309 `class.notFound` (test `User`, `Profile`, `Quaeris`), duplicati import
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - `XotData::getProfileClass()`: `main_module=''` → `InvalidArgumentException`
 - `Profile.php`: `@property-read User|null $user` (non esistente)
 - `IsProfileTrait.php`: `use UserContract` duplicato
@@ -21,7 +45,19 @@
 - Gdpr actions: `UserContract $user`
 - `BaseProfile.php`: `$incrementing=false`, `$keyType='string'`, UUID `id` in `booted()`
 - Test batch: `use Modules\User\Models\User;` in 8 file `tests/`
+<<<<<<< HEAD
 - `Quaeris` → `User` sostituito nel codice
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- `<nome progetto>` → `User` sostituito nel codice
+=======
+- `Quaeris` → `User` sostituito nel codice
+>>>>>>> laraxot/dev
+=======
+- `Quaeris` → `User` sostituito nel codice
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 ## Verify
 - `Profile::firstOrCreate()` → `id` UUID generato (len=36) ✅

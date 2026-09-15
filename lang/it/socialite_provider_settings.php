@@ -3,6 +3,13 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    'navigation' => [
+        'group' => 'socialite provider settings.navigation',
+=======
+>>>>>>> laraxot/dev
     'navigation' => ['group' => 'Impostazioni provider socialite'],
     'sections' => [
         'Google OAuth' => ['label' => 'Google OAuth', 'heading' => 'Google OAuth'],
@@ -37,5 +44,9 @@ return [
         'hidePassword' => ['label' => 'hidePassword', 'icon' => 'hidePassword', 'tooltip' => 'hidePassword'],
         'copy' => ['label' => 'copy', 'icon' => 'copy', 'tooltip' => 'copy'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     ],
 ];

@@ -65,7 +65,15 @@ describe('User coverage boost', function (): void {
             try {
                 Assert::assertInstanceOf($class, app($class));
             } catch (\Throwable) {
+<<<<<<< HEAD
                 Assert::assertInstanceOf($class, new $class());
+=======
+<<<<<<< HEAD
+                Assert::assertInstanceOf($class, new $class);
+=======
+                Assert::assertInstanceOf($class, new $class());
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             }
             Assert::assertStringContainsString('declare(strict_types=1);', XotBasePest::reflectionSource($class));
         }
@@ -89,7 +97,15 @@ describe('User coverage boost', function (): void {
             if ($ref->isAbstract()) {
                 continue;
             }
+<<<<<<< HEAD
             ++$checked;
+=======
+<<<<<<< HEAD
+            $checked++;
+=======
+            ++$checked;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             if (method_exists($class, 'from')) {
                 Assert::assertTrue($ref->hasMethod('from'));
             }

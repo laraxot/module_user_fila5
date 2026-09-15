@@ -5,8 +5,23 @@ tags: [phpstan, resolutionebate]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan-resolutionebate dibattito filosofico: risoluzione errori phpstan"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -81,16 +96,46 @@ related:
 4. Verificare con PHPStan dopo ogni correzione
 
 **Pattern di Correzione**:
+<<<<<<< HEAD
 - Namespace Filament 4: `Filament\Tables\Actions\*` → `Filament\Actions\*`
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- Namespace Filament 5: `Filament\Tables\Actions\*` → `Filament\Actions\*`
+=======
+- Namespace Filament 4: `Filament\Tables\Actions\*` → `Filament\Actions\*`
+>>>>>>> laraxot/dev
+=======
+- Namespace Filament 4: `Filament\Tables\Actions\*` → `Filament\Actions\*`
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - Type hints: Aggiungere sempre tipi espliciti
 - PHPDoc: Aggiornare per generics e union types
 - Livewire: Tipizzare `$livewire` come `self`
 
 ## 📋 Errori Identificati e Strategia
 
+<<<<<<< HEAD
 ### Categoria 1: Namespace Filament 4 (Alta Priorità)
 
 **Errore**: `Filament\Tables\Actions\*` non esiste in Filament 4
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+### Categoria 1: Namespace Filament 5 (Alta Priorità)
+
+**Errore**: `Filament\Tables\Actions\*` non esiste in Filament 5
+=======
+### Categoria 1: Namespace Filament 4 (Alta Priorità)
+
+**Errore**: `Filament\Tables\Actions\*` non esiste in Filament 4
+>>>>>>> laraxot/dev
+=======
+### Categoria 1: Namespace Filament 4 (Alta Priorità)
+
+**Errore**: `Filament\Tables\Actions\*` non esiste in Filament 4
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 **Correzione**:
 ```php

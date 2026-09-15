@@ -17,7 +17,15 @@ use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Locked;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
+<<<<<<< HEAD
 use Modules\User\Models\BaseUser;
+=======
+<<<<<<< HEAD
+use Modules\User\Models\User;
+=======
+use Modules\User\Models\BaseUser;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 use Webmozart\Assert\InvalidArgumentException;
 
@@ -76,11 +84,24 @@ final class ProfileEditVoltComponent extends Component
     public function mount(): void
     {
         try {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            /** @var User|null $user */
+            $user = Auth::user();
+            Assert::notNull($user, 'User must be authenticated');
+            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+=======
+>>>>>>> laraxot/dev
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated');
             if (! $user instanceof BaseUser) {
                 throw new InvalidArgumentException('User must be an instance of BaseUser');
             }
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
             // Type-safe property initialization
             $this->first_name = (string) ($user->first_name ?? '');
@@ -139,9 +160,19 @@ final class ProfileEditVoltComponent extends Component
 
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for profile update');
+<<<<<<< HEAD
             if (! $user instanceof BaseUser) {
                 throw new InvalidArgumentException('User must be an instance of BaseUser');
             }
+=======
+<<<<<<< HEAD
+            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+=======
+            if (! $user instanceof BaseUser) {
+                throw new InvalidArgumentException('User must be an instance of BaseUser');
+            }
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
             // Check if email has changed for additional validation
@@ -150,12 +181,27 @@ final class ProfileEditVoltComponent extends Component
             if ($emailChanged) {
                 // Additional email validation for changes
                 Assert::false(
+<<<<<<< HEAD
                     $user::where('email', $validated['email'])->where('id', '!=', $this->user_id)->exists(),
+=======
+<<<<<<< HEAD
+                    User::where('email', $validated['email'])->where('id', '!=', $this->user_id)->exists(),
+=======
+                    $user::where('email', $validated['email'])->where('id', '!=', $this->user_id)->exists(),
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
                     'Email is already in use by another user',
                 );
             }
 
             // Update user data with type casting
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            /* @var User $user */
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             $user->fill([
                 'first_name' => trim($validated['first_name']),
                 'last_name' => trim($validated['last_name']),
@@ -163,6 +209,13 @@ final class ProfileEditVoltComponent extends Component
             ]);
 
             // Reset email verification
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            /** @var User $user */
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             if ($emailChanged && $user->hasVerifiedEmail()) {
                 $user->email_verified_at = null;
             }
@@ -181,6 +234,13 @@ final class ProfileEditVoltComponent extends Component
                 'user_agent' => request()->userAgent(),
             ]);
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            /** @var User $user */
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             $success = $user->save();
             Assert::true($success, 'Failed to save user profile');
 
@@ -253,11 +313,24 @@ final class ProfileEditVoltComponent extends Component
                 'password_confirmation' => ['required'],
             ]);
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            /** @var User $user */
+            $user = Auth::user();
+            Assert::notNull($user, 'User must be authenticated for password update');
+            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+=======
+>>>>>>> laraxot/dev
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for password update');
             if (! $user instanceof BaseUser) {
                 throw new InvalidArgumentException('User must be an instance of BaseUser');
             }
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
             // Validate password strength and format
@@ -267,6 +340,17 @@ final class ProfileEditVoltComponent extends Component
             Assert::same($this->password, $this->password_confirmation, 'Password confirmation does not match');
             Assert::greaterThanEq(strlen($this->password), 8, 'Password must be at least 8 characters long');
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            // Verify current password
+            Assert::true(Hash::check($this->current_password, $user->password), 'Current password is incorrect');
+
+            // Ensure new password is different from current
+            Assert::false(
+                Hash::check($this->password, $user->password),
+=======
+>>>>>>> laraxot/dev
             // Not every user has a password hash (e.g. social login accounts): treat a
             // missing hash as "current password incorrect" instead of casting mixed/null.
             $currentPasswordHash = $user->password;
@@ -280,6 +364,10 @@ final class ProfileEditVoltComponent extends Component
             // Ensure new password is different from current
             Assert::false(
                 Hash::check($this->password, $currentPasswordHash),
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
                 'New password must be different from current password',
             );
 
@@ -352,13 +440,30 @@ final class ProfileEditVoltComponent extends Component
 
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for account deletion');
+<<<<<<< HEAD
             if (! $user instanceof BaseUser) {
                 throw new InvalidArgumentException('User must be an instance of BaseUser');
             }
+=======
+<<<<<<< HEAD
+            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+=======
+            if (! $user instanceof BaseUser) {
+                throw new InvalidArgumentException('User must be an instance of BaseUser');
+            }
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
             // Validate deletion password
             Assert::stringNotEmpty($this->delete_password, 'Password cannot be empty for account deletion');
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            Assert::true(
+                Hash::check($this->delete_password, $user->password),
+=======
+>>>>>>> laraxot/dev
 
             // Not every user has a password hash (e.g. social login accounts): treat a
             // missing hash as "password incorrect" instead of casting mixed/null.
@@ -368,6 +473,10 @@ final class ProfileEditVoltComponent extends Component
             }
             Assert::true(
                 Hash::check($this->delete_password, $currentPasswordHash),
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
                 'Password is incorrect for account deletion',
             );
 
@@ -393,6 +502,13 @@ final class ProfileEditVoltComponent extends Component
             request()->session()->regenerateToken();
 
             // Delete the user account
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            /** @var User $user */
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
             $deleted = $user->delete();
             Assert::true($deleted, 'Failed to delete user account');
 

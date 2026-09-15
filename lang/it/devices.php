@@ -35,9 +35,21 @@ return [
     'plural_label' => 'Devices (Plurale)',
     'actions' => [
         'create' => ['label' => 'Crea Devices', 'icon' => 'create', 'tooltip' => 'create'],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        'edit' => ['label' => 'Modifica Devices'],
+        'delete' => ['label' => 'Elimina Devices', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+=======
+>>>>>>> laraxot/dev
         'edit' => ['label' => 'Modifica Devices', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Devices', 'icon' => 'delete', 'tooltip' => 'delete'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     ],
 ];

@@ -5,8 +5,23 @@ tags: [phpstan, compliance]
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan-compliance phpstan compliance - user module"
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+issues: ["https://github.com/provtv/<repo progetto>/issues/124"]
+discussions: ["https://github.com/provtv/<repo progetto>/discussions/1"]
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+=======
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -33,7 +48,19 @@ The User module is fully compliant with PHPStan level 9 analysis, demonstrating:
 - ✅ Rigorous type hints implementation
 - ✅ Proper null handling
 - ✅ Correct array structure definitions
+<<<<<<< HEAD
 - ✅ Filament 4.x compatibility
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- ✅ Filament 5.x compatibility
+=======
+- ✅ Filament 4.x compatibility
+>>>>>>> laraxot/dev
+=======
+- ✅ Filament 4.x compatibility
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - ✅ Safe function usage
 - ✅ Strict types declaration
 
@@ -59,9 +86,27 @@ This module provides comprehensive user management including:
 - **Relation Managers**: Complex relationships
 - **BaseUser Model**: Core user functionality
 
+<<<<<<< HEAD
 ## Filament 4.x Compatibility
 
 All Filament components verified for Filament 4.x:
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+## Filament 5.x Compatibility
+
+All Filament components verified for Filament 5.x:
+=======
+## Filament 4.x Compatibility
+
+All Filament components verified for Filament 4.x:
+>>>>>>> laraxot/dev
+=======
+## Filament 4.x Compatibility
+
+All Filament components verified for Filament 4.x:
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 - All resource classes follow new conventions
 - Relation managers properly structured
 - Authentication widgets are current

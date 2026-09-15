@@ -19,19 +19,46 @@ return [
         'gender' => ['label' => 'Genere', 'male' => 'Maschio', 'female' => 'Femmina', 'other' => 'Altro', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'is_active' => ['label' => 'Attivo', 'help' => 'Stato attivo del profilo', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'id' => ['label' => 'ID', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+<<<<<<< HEAD
         'ente' => ['label' => 'Ente', 'tooltip' => '', 'helper_text' => '', 'description' => '', 'placeholder' => 'ente'],
         'matr' => ['label' => 'Matricola', 'tooltip' => '', 'helper_text' => '', 'description' => '', 'placeholder' => 'matr'],
+=======
+<<<<<<< HEAD
+        'ente' => ['label' => 'Ente', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+        'matr' => ['label' => 'Matricola', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+=======
+        'ente' => ['label' => 'Ente', 'tooltip' => '', 'helper_text' => '', 'description' => '', 'placeholder' => 'ente'],
+        'matr' => ['label' => 'Matricola', 'tooltip' => '', 'helper_text' => '', 'description' => '', 'placeholder' => 'matr'],
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
         'photo' => ['label' => 'photo', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'user' => [
             'name' => ['label' => 'user.name'],
         ],
         'created_at' => ['label' => 'created_at'],
+<<<<<<< HEAD
         'name' => ['label' => 'name', 'placeholder' => 'name', 'helper_text' => '', 'description' => 'name'],
         'password' => ['label' => 'password', 'placeholder' => 'password', 'helper_text' => '', 'description' => 'password'],
         'passwordConfirmation' => ['label' => 'passwordConfirmation', 'placeholder' => 'passwordConfirmation', 'helper_text' => '', 'description' => 'passwordConfirmation'],
         'currentPassword' => ['label' => 'currentPassword', 'placeholder' => 'currentPassword', 'helper_text' => '', 'description' => 'currentPassword'],
         'email_verified_at' => ['label' => 'email_verified_at', 'placeholder' => 'email_verified_at', 'helper_text' => '', 'description' => 'email_verified_at'],
         'password_confirmation' => ['label' => 'password_confirmation', 'placeholder' => 'password_confirmation', 'helper_text' => '', 'description' => 'password_confirmation'],
+=======
+<<<<<<< HEAD
+    ],
+    'actions' => [
+        'edit' => ['label' => 'Modifica', 'success' => 'Profilo aggiornato con successo!', 'error' => 'Errore durante l\'aggiornamento del profilo'],
+        'delete' => ['label' => 'Elimina', 'success' => 'Profilo eliminato con successo!', 'error' => 'Errore durante l\'eliminazione del profilo', 'tooltip' => 'delete', 'icon' => 'delete'],
+        'layout' => ['tooltip' => 'layout', 'icon' => 'layout', 'label' => 'layout'],
+        'create' => ['tooltip' => 'create', 'icon' => 'create', 'label' => 'create'],
+=======
+        'name' => ['label' => 'name', 'placeholder' => 'name', 'helper_text' => 'name', 'description' => 'name'],
+        'password' => ['label' => 'password', 'placeholder' => 'password', 'helper_text' => 'password', 'description' => 'password'],
+        'passwordConfirmation' => ['label' => 'passwordConfirmation', 'placeholder' => 'passwordConfirmation', 'helper_text' => 'passwordConfirmation', 'description' => 'passwordConfirmation'],
+        'currentPassword' => ['label' => 'currentPassword', 'placeholder' => 'currentPassword', 'helper_text' => 'currentPassword', 'description' => 'currentPassword'],
+        'email_verified_at' => ['label' => 'email_verified_at', 'placeholder' => 'email_verified_at', 'helper_text' => 'email_verified_at', 'description' => 'email_verified_at'],
+        'password_confirmation' => ['label' => 'password_confirmation', 'placeholder' => 'password_confirmation', 'helper_text' => 'password_confirmation', 'description' => 'password_confirmation'],
+>>>>>>> laraxot/dev
         'updated_at' => ['label' => 'updated_at'],
     ],
     'actions' => [
@@ -47,6 +74,10 @@ return [
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'back' => ['label' => 'back', 'icon' => 'back', 'tooltip' => 'back'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     ],
     'messages' => ['update_success' => 'Profilo aggiornato con successo!', 'no_permission' => 'Non hai i permessi per modificare questo profilo.'],
     'label' => 'Profile',
