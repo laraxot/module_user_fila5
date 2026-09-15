@@ -14,12 +14,6 @@
  *
  * @param Request $request The incoming request
  *
-<<<<<<< .merge_file_2EiSsY
-=======
- * >>>>>>> laraxot/dev
- * >>>>>>> laraxot/dev
- *
->>>>>>> .merge_file_LAyITU
  * @return JsonResponse The JSON response
  */
 
