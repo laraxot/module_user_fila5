@@ -14,11 +14,12 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 /**
  * @property Model|\Eloquent $notifiable
  *
-<<<<<<< .merge_file_OVmrHF
- * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
- * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
-=======
- * <<<<<<< .merge_file_BgADkR
+ * <<<<<<< .merge_file_OVmrHF
+ *
+ * @method static DatabaseNotificationCollection<int, static> all($columns = ['*'])
+ * @method static DatabaseNotificationCollection<int, static> get($columns = ['*'])
+ *                                                                                  =======
+ *                                                                                  <<<<<<< .merge_file_BgADkR
  *
  * =======
  * <<<<<<< HEAD
@@ -26,7 +27,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * <<<<<<< HEAD
  *
  * >>>>>>> laraxot/dev
- *
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  * @method static Builder|Notification                                 newModelQuery()
@@ -56,7 +56,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  *                                                                                                         <<<<<<< .merge_file_BgADkR
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
->>>>>>> .merge_file_M8qljT
+ *                                                                                                         >>>>>>> .merge_file_M8qljT
  * @method static Builder|Notification                                 newModelQuery()
  * @method static Builder|Notification                                 newQuery()
  * @method static Builder|Notification                                 query()
@@ -66,13 +66,13 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
-<<<<<<< .merge_file_OVmrHF
-=======
+ *                                                                                                         <<<<<<< .merge_file_OVmrHF
+ *                                                                                                         =======
  *                                                                                                         =======
  *                                                                                                         >>>>>>> laraxot/dev
  *                                                                                                         >>>>>>> .merge_file_1rAdsF
  *                                                                                                         >>>>>>> laraxot/dev
->>>>>>> .merge_file_M8qljT
+ *                                                                                                         >>>>>>> .merge_file_M8qljT
  * @method static \Modules\User\Database\Factories\NotificationFactory factory($count = null, $state = [])
  *
  * @mixin \Eloquent

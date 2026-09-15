@@ -14,12 +14,12 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
-<<<<<<< .merge_file_q1ttZU
- * @param array<string, mixed> $attributes
-=======
- * <<<<<<< .merge_file_m8ZH5y
- * <<<<<<< .merge_file_XTEc1X.
+ * <<<<<<< .merge_file_q1ttZU.
  *
+ * @param array<string, mixed> $attributes
+ *                                         =======
+ *                                         <<<<<<< .merge_file_m8ZH5y
+ *                                         <<<<<<< .merge_file_XTEc1X.
  * @param array<string, mixed> $attributes
  * @param array<string, mixed> $attributes
  * @param array<string, mixed> $attributes
@@ -38,7 +38,7 @@ uses(TestCase::class);
  *                                         >>>>>>> .merge_file_EJldfA
  *                                         >>>>>>> laraxot/dev
  *                                         >>>>>>> .merge_file_FdbeAt
->>>>>>> .merge_file_mdYQOu
+ *                                         >>>>>>> .merge_file_mdYQOu
  */
 function modelsUserCreate(array $attributes = []): User
 {
