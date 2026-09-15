@@ -24,7 +24,6 @@
  * >>>>>>> laraxot/dev
  * >>>>>>> laraxot/dev
  *
- *
  * @return JsonResponse The JSON response
  */
 

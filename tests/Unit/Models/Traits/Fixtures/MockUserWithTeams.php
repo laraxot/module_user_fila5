@@ -20,11 +20,11 @@ use Spatie\Permission\Contracts\Role;
 /**
  * Stub model for HasTeams trait unit tests; satisfies PHPStan in-context analysis.
  *
-<<<<<<< .merge_file_yh3ZbZ
+ * <<<<<<< .merge_file_yh3ZbZ
  * <<<<<<< .merge_file_NQf79z
  * =======
-  *
-=======
+ *
+ * =======
  * <<<<<<< HEAD
  * =======
  * <<<<<<< .merge_file_NQf79z
@@ -33,7 +33,8 @@ use Spatie\Permission\Contracts\Role;
  *
  * >>>>>>> laraxot/dev
  *
->>>>>>> .merge_file_wqORz1
+ * >>>>>>> .merge_file_wqORz1
+ *
  * @property string                            $id
  * @property int|null                          $current_team_id
  * @property TeamContract|null                 $currentTeam
@@ -42,11 +43,11 @@ use Spatie\Permission\Contracts\Role;
  * @property EloquentCollection<int, TeamUser> $teamUsers
  * @property XotUserContract|null              $owner
  * @property int                               $total_members
-<<<<<<< .merge_file_yh3ZbZ
-=======
+ *                                                              <<<<<<< .merge_file_yh3ZbZ
+ *                                                              =======
  *                                                              <<<<<<< HEAD
  *                                                              =======
->>>>>>> .merge_file_wqORz1
+ *                                                              >>>>>>> .merge_file_wqORz1
  *                                                              =======
  *                                                              >>>>>>> .merge_file_enP1wL
  * @property string                            $id
@@ -61,10 +62,10 @@ use Spatie\Permission\Contracts\Role;
  *                                                              =======
  *                                                              >>>>>>> laraxot/dev
  *                                                              >>>>>>> .merge_file_enP1wL
-<<<<<<< .merge_file_yh3ZbZ
-=======
+ *                                                              <<<<<<< .merge_file_yh3ZbZ
+ *                                                              =======
  *                                                              >>>>>>> laraxot/dev
->>>>>>> .merge_file_wqORz1
+ *                                                              >>>>>>> .merge_file_wqORz1
  */
 class MockUserWithTeams extends Model
 {
@@ -93,13 +94,12 @@ class MockUserWithTeams extends Model
     }
 
     /**
-<<<<<<< .merge_file_yh3ZbZ
+     * <<<<<<< .merge_file_yh3ZbZ.
      *
      * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
      * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
-=======
-     * <<<<<<< HEAD.
-     *
+     *                                                                        =======
+     *                                                                        <<<<<<< HEAD
      * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
      *                                                                        =======
      *                                                                        <<<<<<< .merge_file_NQf79z.
@@ -108,7 +108,7 @@ class MockUserWithTeams extends Model
      *                                                                        <<<<<<< HEAD
      * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
      *                                                                        =======
->>>>>>> .merge_file_wqORz1
+     *                                                                        >>>>>>> .merge_file_wqORz1
      * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
      *                                                                        >>>>>>> laraxot/dev
      *                                                                        >>>>>>> .merge_file_enP1wL

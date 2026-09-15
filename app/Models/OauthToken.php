@@ -9,9 +9,9 @@ use Laravel\Passport\Token as PassportToken;
 use Modules\User\Traits\ResolvesPassportTokenUserRelation;
 
 /**
-<<<<<<< .merge_file_VRiN7E
-  *
-=======
+ * <<<<<<< .merge_file_VRiN7E.
+ *
+ * =======
  * <<<<<<< HEAD
  * =======
  * <<<<<<< HEAD.
@@ -36,7 +36,7 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  *                                                      <<<<<<< HEAD
  *                                                      =======
  *                                                      =======
->>>>>>> .merge_file_cjtrpq
+ *                                                      >>>>>>> .merge_file_cjtrpq
  * @property bool                         $revoked
  * @property int|string|null              $user_id
  * @property string                       $id
@@ -52,7 +52,7 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @property string|null                  $deleted_by
  * @property OauthClient|null             $client
  * @property OauthRefreshToken|null       $refreshToken
-<<<<<<< .merge_file_VRiN7E
+ *                                                      <<<<<<< .merge_file_VRiN7E
  *                                                      =======
  * @property bool                         $revoked
  * @property int|string|null              $user_id
@@ -69,9 +69,9 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @property string|null                  $deleted_by
  * @property OauthClient|null             $client
  * @property OauthRefreshToken|null       $refreshToken
-=======
+ *                                                      =======
  *                                                      >>>>>>> laraxot/dev
->>>>>>> .merge_file_cjtrpq
+ *                                                      >>>>>>> .merge_file_cjtrpq
  *                                                      >>>>>>> laraxot/dev
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken existsIn(array<int, string> $haystack)
