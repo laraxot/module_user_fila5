@@ -23,6 +23,8 @@ return [
         'passport_purge' => ['label' => 'passport_purge', 'icon' => 'passport_purge', 'tooltip' => 'passport_purge'],
         'passport_hash' => ['label' => 'passport_hash', 'icon' => 'passport_hash', 'tooltip' => 'passport_hash'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'profile' => ['label' => 'profile', 'icon' => 'profile', 'tooltip' => 'profile'],
+        'logout' => ['label' => 'logout', 'icon' => 'logout', 'tooltip' => 'logout'],
     ],
     'status' => ['public_key' => 'Chiave Pubblica', 'private_key' => 'Chiave Privata', 'present' => 'Presente', 'missing' => 'Mancante'],
     'messages' => ['client_created' => 'Client creato con successo', 'client_revoked' => 'Client revocato con successo', 'command_started' => 'Comando avviato...', 'command_completed' => 'Comando completato con successo', 'command_failed' => 'Esecuzione comando fallita', 'command_error' => 'Errore durante l\'esecuzione del comando'],
