@@ -14,6 +14,7 @@ return [
         'client' => [
             'name' => ['label' => 'client.name'],
         ],
+        'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => 'value', 'description' => 'value'],
     ],
     'actions' => [
         'create' => ['label' => 'Crea Personal Access Client', 'tooltip' => 'Crea un nuovo personal access client', 'helper_text' => 'Crea un nuovo personal access client', 'description' => 'Azione per creare', 'success' => 'Personal Access Client creato con successo', 'error' => 'Errore durante la creazione del Personal Access Client', 'icon' => 'create'],
@@ -22,6 +23,14 @@ return [
         'logout' => ['label' => 'Logout', 'tooltip' => 'Disconnettiti', 'helper_text' => 'Esci dall\'account', 'description' => 'Azione di logout', 'icon' => 'heroicon-o-arrow-right-on-rectangle'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'applyFilters' => ['label' => 'applyFilters', 'icon' => 'applyFilters', 'tooltip' => 'applyFilters'],
+        'openFilters' => ['label' => 'openFilters', 'icon' => 'openFilters', 'tooltip' => 'openFilters'],
+        'resetFilters' => ['label' => 'resetFilters', 'icon' => 'resetFilters', 'tooltip' => 'resetFilters'],
+        'applyTableColumnManager' => ['label' => 'applyTableColumnManager', 'icon' => 'applyTableColumnManager', 'tooltip' => 'applyTableColumnManager'],
+        'openColumnManager' => ['label' => 'openColumnManager', 'icon' => 'openColumnManager', 'tooltip' => 'openColumnManager'],
+        'resetColumnManager' => ['label' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'tooltip' => 'resetColumnManager'],
+        'reorderRecords' => ['label' => 'reorderRecords', 'icon' => 'reorderRecords', 'tooltip' => 'reorderRecords'],
+        'profile' => ['label' => 'profile', 'icon' => 'profile', 'tooltip' => 'profile'],
     ],
     'messages' => ['created' => 'Personal Access Client creato con successo', 'updated' => 'Personal Access Client aggiornato con successo', 'deleted' => 'Personal Access Client eliminato con successo'],
 ];

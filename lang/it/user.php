@@ -115,6 +115,7 @@ return [
         'submit' => ['tooltip' => 'submit'],
         'createAnother' => ['tooltip' => 'createAnother', 'icon' => 'createAnother', 'label' => 'createAnother'],
         'resetColumnManager' => ['tooltip' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'label' => 'resetColumnManager'],
+        'removeAllFilters' => ['label' => 'removeAllFilters', 'icon' => 'removeAllFilters', 'tooltip' => 'removeAllFilters'],
     ],
     'messages' => [
         'created' => 'Utente creato con successo', 'updated' => 'Utente aggiornato con successo', 'deleted' => 'Utente eliminato con successo', 'blocked' => 'Utente bloccato con successo', 'unblocked' => 'Utente sbloccato con successo', 'activated' => 'Utente attivato con successo', 'deactivated' => 'Utente disattivato con successo', 'reset_link_sent' => 'Link per il reset della password inviato', 'email_verified' => 'Email verificata con successo', 'impersonating' => 'Stai impersonando l\'utente :name',

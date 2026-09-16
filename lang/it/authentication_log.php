@@ -16,7 +16,7 @@ return [
         'openFilters' => ['label' => 'openFilters', 'icon' => 'openFilters', 'tooltip' => 'openFilters'],
         'resetFilters' => ['label' => 'resetFilters', 'icon' => 'resetFilters', 'tooltip' => 'resetFilters'],
         'applyTableColumnManager' => ['label' => 'applyTableColumnManager', 'icon' => 'applyTableColumnManager', 'tooltip' => 'applyTableColumnManager'],
-        'resetColumnManager' => ['tooltip' => 'resetColumnManager', 'icon' => 'resetColumnManager'],
+        'resetColumnManager' => ['tooltip' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'label' => 'resetColumnManager'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'label' => 'Authentication Log',

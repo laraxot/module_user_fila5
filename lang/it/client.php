@@ -57,6 +57,8 @@ return [
         'submit' => ['tooltip' => 'submit', 'icon' => 'submit', 'label' => 'submit'],
         'associateExistingClient' => ['tooltip' => 'associateExistingClient', 'icon' => 'associateExistingClient', 'label' => 'associateExistingClient'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'resetColumnManager' => ['label' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'tooltip' => 'resetColumnManager'],
+        'dissociateClient' => ['label' => 'dissociateClient', 'icon' => 'dissociateClient', 'tooltip' => 'dissociateClient'],
     ],
     'sections' => [
         'empty' => ['heading' => 'empty'],
