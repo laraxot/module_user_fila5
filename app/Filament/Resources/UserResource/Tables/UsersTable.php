@@ -4,9 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\UserResource\Tables;
 
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+use Modules\User\Filament\Resources\UserResource\Actions\VerifyEmailAction;
 use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
@@ -16,6 +19,18 @@ class UsersTable extends XotBaseResourceTable
      * @var class-string<User>
      */
     protected static string $model = User::class;
+
+    /**
+     * @return array<int|string, Action|ActionGroup>
+     */
+    #[\Override]
+    public function getTableActions(): array
+    {
+        return [
+            'verify_email' => VerifyEmailAction::make()->iconButton(),
+            ...parent::getTableActions(),
+        ];
+    }
 
     /**
      * @return array<string, Column>
