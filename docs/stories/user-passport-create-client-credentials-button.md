@@ -13,7 +13,7 @@ language: it-IT
 ecosystem: Laraxot
 priority: medium
 created_at: '2026-09-03'
-updated_at: '2026-09-03'
+updated_at: '2026-09-17'
 tags: [bmad, story, user, passport, oauth, admin, super-admin, invii]
 related:
   - ../../laravel/Modules/User/app/Filament/Clusters/Passport/Pages/PassportDashboard.php
@@ -317,15 +317,28 @@ Claude Sonnet 5
      sull'azione non trovata). PHPStan pulito, nessun residuo nel DB.
      Con questo, tutti e 3 i punti dell'issue module_user_fila5#97 sono
      risolti (creare, leggere, rimuovere l'associazione).
-  7. **[APERTO 2026-09-15]** Verificati due strascichi non ancora risolti,
-     entrambi confermati concretamente (non ipotesi):
-     - `Modules/Quaeris/app/Console/Commands/AssociatePassportClientToUser.php`
-       (il comando CLI `quaeris:associate-client-user`) ha ancora lo stesso
-       difetto già corretto nel bottone Filament: scrive solo `user_id`
-       (`$client->forceFill(['user_id' => $user->getKey()]);`), mai
-       `owner_id`/`owner_type`. Chi usa questo comando invece del bottone
-       ricade nello stesso blocco su `SurveyController::createContacts`.
-       Non ancora corretto.
+  7. **[APERTO 2026-09-15, primo punto CORRETTO 2026-09-17]** Verificati due
+     strascichi, entrambi confermati concretamente (non ipotesi):
+     - **[CORRETTO 2026-09-17]**
+       `Modules/Quaeris/app/Console/Commands/AssociatePassportClientToUser.php`
+       (il comando CLI `quaeris:associate-client-user`) aveva lo stesso
+       difetto già corretto nel bottone Filament: scriveva solo `user_id`,
+       mai `owner_id`/`owner_type` — chi usava questo comando invece del
+       bottone ricadeva nello stesso blocco su
+       `SurveyController::createContacts`. Fix identico:
+       `$client->owner()->associate($user);` prima del `save()`. Verificato
+       end-to-end: comando reale lanciato via CLI (non solo test) su un
+       client/utente veri, `owner_id`/`owner_type`/`user_id` tutti corretti,
+       `$client->owner` risolve al vero `User`. 2 nuovi test Pest in
+       `Modules/Quaeris/tests/Feature/Console/Commands/
+       AssociatePassportClientToUserTest.php` (controprova `git stash` →
+       fallisce esattamente sull'assert `owner_id`, non un falso positivo).
+       PHPStan pulito. Nota tecnica: l'helper `artisan()`/`PendingCommand`
+       di Pest non persiste le scritture del comando in questo bootstrap
+       Testbench a livello di modulo (anche `user_id`, pre-esistente, non
+       passava) — usato `Illuminate\Support\Facades\Artisan::call()`
+       diretto, che funziona correttamente (stesso pattern verificato a
+       mano via tinker).
      - `Modules/Quaeris/tests/Feature/Http/Controllers/Api/
        AddContactMultiControllerOwnerResolutionTest.php` — il test che ha
        fatto partire questa intera indagine (Task 8 di
