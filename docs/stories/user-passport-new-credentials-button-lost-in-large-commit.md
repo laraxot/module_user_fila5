@@ -104,32 +104,97 @@ passed, 2 skipped) — ma non protegge da questa regressione:
   per costruzione: l'unico controllo automatico capace di accorgersene era
   già disattivato.
 
+## Correzione 2026-09-17 — i commit citati sopra non appartengono al repository vero del modulo
+
+Verificato con `git log --all -S "new_credentials"` **dentro
+`Modules/User` come repository a sé** (non dal mono-repo): i commit
+`78575b2c8`/`9d2362d94` **non esistono in questa storia**. Appartengono
+solo alla "fotografia" separata che il mono-repo teneva di questo stesso
+contenuto (vedi `docs/wiki/log.md`, voce sulla scoperta della doppia
+tracciatura). La feature non è stata "persa da un commit successivo" nel
+repository reale del modulo: **non vi era mai arrivata**, perché
+implementata e pushata solo nella copia del mono-repo, mai confluita in
+`laraxot/module_user_fila5`. Il file di test
+(`PassportDashboardNewCredentialsTest.php`) invece esiste davvero nella
+storia del modulo — è arrivato per una via diversa.
+
+Questo non cambia la sostanza per l'utente (il bottone non c'era ed è
+stato ripristinato), ma cambia a chi va posta la domanda "accidentale o
+voluto?": non necessariamente all'autore di `9d2362d94` (che ha toccato
+solo la fotografia del mono-repo, un artefatto derivato), ma a chi ha
+gestito la sincronizzazione tra mono-repo e repository dei singoli
+moduli in quel periodo.
+
+## Ripristino 2026-09-17
+
+Codice ridato a `PassportDashboard.php` re-implementando
+`newCredentialsAction()` (stessa logica: `ClientRepository::
+createClientCredentialsGrantClient()`, gate super-admin, notifica
+persistente con client_id/secret) e le chiavi di traduzione mancanti
+(`actions.new_credentials.label`, `fields.client_name.label`,
+`messages.credentials_created`) in `Modules/User/lang/{it,en}/
+passport_dashboard.php`. Commit fatto per davvero questa volta
+**nel repository reale del modulo** (`laraxot/module_user_fila5`), non
+solo nella fotografia del mono-repo — non dovrebbe poter sparire di
+nuovo per lo stesso motivo.
+
+Verificato:
+- PHPStan pulito
+- Test esistente `PassportDashboardNewCredentialsTest.php`: il test reale
+  (AC7a) passa; i 2 test skippati restano skippati per il blocco
+  preesistente e non correlato del DB di test (`profiles.uuid`) — non
+  riguarda questo ripristino
+- Verifica diretta (reflection su `getHeaderActions()`, senza passare dal
+  DB di test bloccato): tutte e 5 le azioni sono registrate,
+  `new_credentials` risolve all'etichetta corretta "Nuove credenziali"
+
 ## Cosa NON è stato fatto
 
-Nessun ripristino del codice. L'utente vuole prima verificare con il team
-leader (o comunque con l'autore del commit `9d2362d94`) se questa
-cancellazione sia stata **accidentale** (collaterale a un merge/refactor più
-ampio, come suggerisce la scala del commit) o **intenzionale** (una
-decisione di rimuovere la feature, mai comunicata/documentata altrove).
+Non ancora chiarito con il team se la mancata propagazione al repository
+del modulo sia stata accidentale o voluta (vedi correzione sopra) — resta
+da chiedere, ma non blocca più il ripristino del bottone, già fatto.
+
+## Bug correlato scoperto e corretto 2026-09-17 (non su questa action)
+
+Testando altre azioni della stessa pagina (`passport_install`,
+`passport_keys`, `passport_purge`, `passport_hash`, tutte basate su
+`executeCommand()`), scoperto lo stesso difetto già isolato su
+`ArtisanCommandsManager` (modulo Xot): `ExecuteArtisanCommandAction`
+segnalava l'esito tramite `Event::dispatch()` (Laravel, server-side), che
+`PassportDashboard` intercettava via `#[On(...)]` (bus eventi di Livewire,
+un canale diverso che non riceve mai eventi Laravel) — nessun listener
+riceveva mai davvero questi eventi, quindi `isRunning`/`status`/`output`
+restavano bloccati sui valori iniziali anche a comando riuscito. La
+`newCredentialsAction()` di questa story **non è interessata** (è
+un'azione a chiusura diretta, non passa da `executeCommand()`).
+
+Corretto: `executeCommand()` ora legge direttamente il valore di ritorno
+di `execute()` invece di aspettare l'evento. Dettagli completi, causa
+radice e verifica: story
+`Modules/Xot/docs/stories/xot-artisan-commands-manager-stuck-running-state.md`,
+issue https://github.com/laraxot/module_xot_fila5/issues/131.
 
 ## Acceptance Criteria
 
-1. Verificato con il team/l'autore del commit `9d2362d94` se la rimozione
-   del bottone "Nuove credenziali" sia stata voluta o accidentale.
-2. Se accidentale: il bottone viene ripristinato (in modo forward-only, un
-   nuovo commit che re-implementa il codice — mai un revert del commit
-   altrui) e riverificato dal vivo come il 2026-09-03.
-3. Se intenzionale: la story `user-passport-create-client-credentials-button.md`
-   viene aggiornata per riflettere la decisione (stato "superseded"/"non più
-   applicabile"), invece di restare apparentemente "review"/completata su
-   una feature che non esiste più.
-4. I due test skippati in `PassportDashboardNewCredentialsTest.php` vengono
-   quantomeno riconsiderati: se il blocco DB (`profiles.uuid`) è ancora
-   presente, va segnalato come rischio strutturale (una feature UI intera
-   può sparire senza che nessun test se ne accorga).
+1. **[RISOLTO 2026-09-17]** Il bottone "Nuove credenziali" è di nuovo
+   presente e funzionante, verificato dal vivo (reflection su
+   `getHeaderActions()`, test AC7a verde).
+2. **[APERTO]** Verificato con il team se la mancata propagazione al
+   repository del modulo (vedi correzione sopra) sia stata accidentale o
+   voluta — non blocca più il ripristino, ma resta utile capirlo per
+   evitare che si ripeta con altre feature.
+3. N/A — non era mai stata rimossa dalla storia del modulo, quindi non
+   c'è nessuna decisione "intenzionale" da riflettere in
+   `user-passport-create-client-credentials-button.md`.
+4. **[APERTO]** I due test skippati in `PassportDashboardNewCredentialsTest.php`
+   restano skippati per il blocco preesistente del DB di test
+   (`profiles.uuid`) — non risolto da questa story, resta un rischio
+   strutturale (una feature UI intera può sparire senza che nessun test
+   se ne accorga, come successo qui).
 5. (Opzionale, fuori scope stretto ma segnalato) — valutare se altre
-   funzionalità siano state perse dallo stesso commit `9d2362d94`, data la
-   sua scala anomala (7495 file).
+   funzionalità siano rimaste "solo nella fotografia" del mono-repo senza
+   mai confluire nei repository reali dei moduli, dato quanto scoperto
+   sulla doppia tracciatura.
 
 ## Tasks/Subtasks
 
