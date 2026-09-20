@@ -24,40 +24,13 @@ return [
         'current_password' => [
             'label' => 'Password Attuale',
             'validation_attribute' => 'password_attuale',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
         ],
         'password' => [
             'label' => 'Nuova Password',
             'validation_attribute' => 'password',
-<<<<<<< HEAD
-<<<<<<< HEAD
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'password_confirmation' => [
-            'label' => 'Conferma Password',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 60a2c9a9 (.)
-=======
-        ],
-        'password_confirmation' => [
-            'label' => 'Conferma Password',
->>>>>>> laraxot/dev
         ],
     ],
     'reset_password' => 'Reimposta Password',
@@ -110,28 +83,8 @@ return [
         'send_otp' => 'Invia Codice OTP',
         'yes_send_otp' => 'Si, Invia Codice OTP',
         'confirm_otp' => 'Sei sicuro di voler inviare una password temporanea a questo utente? Sarà richiesto di cambiarla al primo accesso.',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         // Are you sure you want to send a temporary password to this user? They will be required to change it upon first login.
         // Temporary password sent successfully.
         'send_otp_success' => 'Password temporanea inviata con successo.',
     ],
-<<<<<<< HEAD
-=======
-        'send_otp_success' => 'Password temporanea inviata con successo.',
-    ],
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
 ];

@@ -56,15 +56,7 @@ return [
             'must_enable' => 'Duhet të aktivizoni autentifikimin me dy faktorë për të përdorur këtë faqe.',
             'not_enabled' => [
                 'title' => 'Nuk keni aktivizuar autentifikimin me dy faktorë.',
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'description' => "Kur aktivizohet autentifikimi me dy faktorë, do t'ju kërkohet një kod i sigurt dhe e rastësishme gjatë vërtetimit. Ju mund ta merrni këtë kod nga aplikacioni Google Authenticator në telefonin tuaj.",
-=======
-                'description' => 'Kur aktivizohet autentifikimi me dy faktorë, do t\'ju kërkohet një kod i sigurt dhe e rastësishme gjatë vërtetimit. Ju mund ta merrni këtë kod nga aplikacioni Google Authenticator në telefonin tuaj.',
->>>>>>> 60a2c9a9 (.)
-=======
-                'description' => "Kur aktivizohet autentifikimi me dy faktorë, do t'ju kërkohet një kod i sigurt dhe e rastësishme gjatë vërtetimit. Ju mund ta merrni këtë kod nga aplikacioni Google Authenticator në telefonin tuaj.",
->>>>>>> laraxot/dev
             ],
             'finish_enabling' => [
                 'title' => 'Përfundo aktivizimin e autentifikimit me dy faktorë.',
@@ -110,10 +102,6 @@ return [
         'tooltip' => 'Kopjuar!',
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         'avatar' => 'Avatar',
         'email' => 'Email',
         'login' => 'Identifikohu',
@@ -132,113 +120,4 @@ return [
     ],
     'or' => 'Ose',
     'cancel' => 'Anullo',
-<<<<<<< HEAD
-=======
-        'avatar' => [
-            'label' => 'Avatar',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'email' => [
-            'label' => 'Email',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'login' => [
-            'label' => 'Identifikohu',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'name' => [
-            'label' => 'Emri',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'fjalëkalim' => [
-            'label' => 'Fjalëkalimi',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'password_confirm' => [
-            'label' => 'Konfirmo fjalëkalimin',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'new_password' => [
-            'label' => 'Fjalëkalim i ri',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'new_password_confirmation' => [
-            'label' => 'Konfirmo fjalëkalimin',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'token_name' => [
-            'label' => 'Emri i Kodit për API',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'token_expiry' => [
-            'label' => 'Data e skadimit te kodit API',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'abilities' => [
-            'label' => 'Aftësitë',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        '2fa_code' => [
-            'label' => 'Kodi',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        '2fa_recovery_code' => [
-            'label' => 'Kodi i rikuperimit',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'created' => [
-            'label' => 'Krijuar',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'expires' => [
-            'label' => 'Skadon',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-    ],
-    'or' => 'Ose',
-    'cancel' => 'Anullo',
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'actions' => [
-    ],
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
 ];

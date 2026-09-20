@@ -8,37 +8,11 @@ use Filament\Facades\Filament;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Scope;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 
 /**
  * Scope che limita le query ai record associati al tenant corrente.
  *
  * @implements Scope<Model>
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-use Modules\User\Models\Tenant;
-
-/**
- * Scope che limita le query ai record associati al tenant corrente.
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-
-/**
- * Scope che limita le query ai record associati al tenant corrente.
- *
- * @implements Scope<Model>
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
  */
 class TenantScope implements Scope
 {
@@ -48,22 +22,7 @@ class TenantScope implements Scope
     public function apply(Builder $builder, Model $_model): void
     {
         $tenant_id = Filament::getTenant()?->getKey();
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         if (null !== $tenant_id) {
-=======
-        if ($tenant_id !== null) {
->>>>>>> f548be94 (.)
-=======
-        if ($tenant_id !== null) {
-=======
-        if (null !== $tenant_id) {
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-        if (null !== $tenant_id) {
->>>>>>> laraxot/dev
             $builder->where('tenant_id', '=', $tenant_id);
         }
     }
