@@ -6,19 +6,6 @@ namespace Modules\User\Actions\Otp;
 
 use Filament\Notifications\Notification as FilamentNotification;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Illuminate\Support\Facades\Hash;
->>>>>>> f548be94 (.)
-=======
-use Illuminate\Support\Facades\Hash;
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
 use Modules\User\Datas\PasswordData;
@@ -35,60 +22,17 @@ class SendOtpByUserAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
     public function __construct(
         private readonly PasswordData $passwordData,
         private readonly Str $stringHelper,
         private readonly Hasher $hasher,
     ) {
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-    private PasswordData $passwordData;
-
-    public function __construct()
-    {
-        // Initialize PasswordData instance, relying on dependency injection if required.
-        $this->passwordData = PasswordData::make();
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-    public function __construct(
-        private readonly PasswordData $passwordData,
-        private readonly Str $stringHelper,
-        private readonly Hasher $hasher,
-    ) {
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
     }
 
     /**
      * Execute the action: Generate and send an OTP to the specified user.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param UserContract $user user to receive the OTP
-=======
-     * @param  UserContract  $user  user to receive the OTP
->>>>>>> f548be94 (.)
-=======
-     * @param  UserContract  $user  user to receive the OTP
-=======
-     * @param UserContract $user user to receive the OTP
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-     * @param UserContract $user user to receive the OTP
->>>>>>> laraxot/dev
      */
     public function execute(UserContract $user): void
     {
@@ -107,22 +51,7 @@ class SendOtpByUserAction
      */
     private function generateTemporaryPassword(): string
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         return $this->stringHelper->random(12);
-=======
-        return Str::random(12);
->>>>>>> f548be94 (.)
-=======
-        return Str::random(12);
-=======
-        return $this->stringHelper->random(12);
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-        return $this->stringHelper->random(12);
->>>>>>> laraxot/dev
     }
 
     /**
@@ -138,52 +67,14 @@ class SendOtpByUserAction
     /**
      * Update user's password with a hashed temporary OTP and set expiration properties.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param UserContract $user              user to update
      * @param string       $temporaryPassword generated temporary password
      * @param Carbon       $expirationTime    expiration time for the OTP
-=======
-     * @param  UserContract  $user  user to update
-     * @param  string $temporaryPassword  generated temporary password
-     * @param  Carbon  $expirationTime  expiration time for the OTP
->>>>>>> f548be94 (.)
-=======
-     * @param  UserContract  $user  user to update
-     * @param  string $temporaryPassword  generated temporary password
-     * @param  Carbon  $expirationTime  expiration time for the OTP
-=======
-     * @param UserContract $user              user to update
-     * @param string       $temporaryPassword generated temporary password
-     * @param Carbon       $expirationTime    expiration time for the OTP
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-     * @param UserContract $user              user to update
-     * @param string       $temporaryPassword generated temporary password
-     * @param Carbon       $expirationTime    expiration time for the OTP
->>>>>>> laraxot/dev
      */
     private function updateUserWithOtp(UserContract $user, string $temporaryPassword, Carbon $expirationTime): void
     {
         $user->update([
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'password' => $this->hasher->make($temporaryPassword),
-=======
-            'password' => Hash::make($temporaryPassword),
->>>>>>> f548be94 (.)
-=======
-            'password' => Hash::make($temporaryPassword),
-=======
-            'password' => $this->hasher->make($temporaryPassword),
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'password' => $this->hasher->make($temporaryPassword),
->>>>>>> laraxot/dev
             'is_otp' => true,
             'password_expires_at' => $expirationTime,
         ]);
@@ -192,27 +83,8 @@ class SendOtpByUserAction
     /**
      * Send OTP notification to user's email.
      *
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @param UserContract $user              user to notify
      * @param string       $temporaryPassword temporary password to include in notification
-=======
-     * @param  UserContract  $user  user to notify
-     * @param  string $temporaryPassword  temporary password to include in notification
->>>>>>> f548be94 (.)
-=======
-     * @param  UserContract  $user  user to notify
-     * @param  string $temporaryPassword  temporary password to include in notification
-=======
-     * @param UserContract $user              user to notify
-     * @param string       $temporaryPassword temporary password to include in notification
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-     * @param UserContract $user              user to notify
-     * @param string       $temporaryPassword temporary password to include in notification
->>>>>>> laraxot/dev
      */
     private function dispatchOtpNotification(UserContract $user, string $temporaryPassword): void
     {

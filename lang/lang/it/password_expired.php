@@ -10,40 +10,13 @@ return [
         'current_password' => [
             'label' => 'Current Password',
             'validation_attribute' => 'current_password',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
         ],
         'password' => [
             'label' => 'Password',
             'validation_attribute' => 'password',
-<<<<<<< HEAD
-<<<<<<< HEAD
         ],
         'password_confirmation' => [
             'label' => 'Confirm Password',
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'password_confirmation' => [
-            'label' => 'Confirm Password',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 60a2c9a9 (.)
-=======
-        ],
-        'password_confirmation' => [
-            'label' => 'Confirm Password',
->>>>>>> laraxot/dev
         ],
     ],
     'form' => [
@@ -60,22 +33,8 @@ return [
         ],
     ],
     'actions' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
         'reset_password' => ['label' => 'Reset Password'],
         'cancel' => ['label' => 'Cancel'],
-=======
-        'reset_password' => [
-            'label' => 'Reset Password',
-        ],
-        'cancel' => [
-            'label' => 'Cancel',
-        ],
->>>>>>> 60a2c9a9 (.)
-=======
-        'reset_password' => ['label' => 'Reset Password'],
-        'cancel' => ['label' => 'Cancel'],
->>>>>>> laraxot/dev
     ],
     'reset_password' => 'Reset Password',
     'password_reset' => 'Password Reset',
@@ -99,19 +58,4 @@ return [
     'exceptions' => [
         'column_not_found' => 'Either the column ":column_name" or the password column ":password_column_name" was not found in the ":table_name" table. Please publish migrations and run them, if the error still persists, publish the config file and update the table_name, column_name, and password_column_name values.',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
 ];

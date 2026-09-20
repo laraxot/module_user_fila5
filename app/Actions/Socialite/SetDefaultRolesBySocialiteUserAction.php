@@ -17,11 +17,6 @@ class SetDefaultRolesBySocialiteUserAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
     public function execute(string $provider, UserContract $userModel, SocialiteUserContract $oauthUser): void
     {
         $domainAnalyzer = app(EmailDomainAnalyzer::class, [
@@ -34,47 +29,6 @@ class SetDefaultRolesBySocialiteUserAction
         $defaultUserGuard = $permissionGuard->getDefaultName($xotData->getUserClass());
 
         $domainAnalyzer->setUser($oauthUser);
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-    private readonly EmailDomainAnalyzer $domainAnalyzer;
-
-    private readonly string $defaultUserGuard;
-
-    public function __construct(
-        private readonly string $provider,
-    ) {
-        $this->domainAnalyzer = app(EmailDomainAnalyzer::class, [
-            'ssoProvider' => $this->provider,
-        ]);
-
-        $this->defaultUserGuard = Guard::getDefaultName(XotData::make()->getUserClass());
-    }
-
-    public function execute(UserContract $userModel, SocialiteUserContract $oauthUser): void
-    {
-        $this->domainAnalyzer->setUser($oauthUser);
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-    public function execute(string $provider, UserContract $userModel, SocialiteUserContract $oauthUser): void
-    {
-        $domainAnalyzer = app(EmailDomainAnalyzer::class, [
-            'ssoProvider' => $provider,
-        ]);
-        /** @var Guard $permissionGuard */
-        $permissionGuard = app(Guard::class);
-        $xotData = XotData::make();
-
-        $defaultUserGuard = $permissionGuard->getDefaultName($xotData->getUserClass());
-
-        $domainAnalyzer->setUser($oauthUser);
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 
         // Do nothing if users already have some roles
         // bound to them: in this way we can update all
@@ -87,11 +41,6 @@ class SetDefaultRolesBySocialiteUserAction
         // Unrecognized domain: someone will have to set a role
         // to the user as a specific set of permissions cannot
         // be automatically inferred
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         if ($domainAnalyzer->hasUnrecognizedDomain()) {
             return;
         }
@@ -99,32 +48,6 @@ class SetDefaultRolesBySocialiteUserAction
         $defaultRoleNames = $domainAnalyzer->hasFirstPartyDomain()
             ? ((array) config(sprintf('services.%s.email_domains.first_party.role_names_search', $provider)))
             : ((array) config(sprintf('services.%s.email_domains.client.role_names_search', $provider)));
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-        if ($this->domainAnalyzer->hasUnrecognizedDomain()) {
-            return;
-        }
-
-        $defaultRoleNames = $this->domainAnalyzer->hasFirstPartyDomain()
-            ? ((array) config(sprintf('services.%s.email_domains.first_party.role_names_search', $this->provider)))
-            : ((array) config(sprintf('services.%s.email_domains.client.role_names_search', $this->provider)));
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-        if ($domainAnalyzer->hasUnrecognizedDomain()) {
-            return;
-        }
-
-        $defaultRoleNames = $domainAnalyzer->hasFirstPartyDomain()
-            ? ((array) config(sprintf('services.%s.email_domains.first_party.role_names_search', $provider)))
-            : ((array) config(sprintf('services.%s.email_domains.client.role_names_search', $provider)));
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 
         $rolesToSet = Role::query()
             ->where(static function (Builder $query) use ($defaultRoleNames): void {
@@ -132,22 +55,7 @@ class SetDefaultRolesBySocialiteUserAction
                     $query->orWhere('name', 'LIKE', $roleName);
                 }
             })
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             ->where('guard_name', '=', $defaultUserGuard)
-=======
-            ->where('guard_name', '=', $this->defaultUserGuard)
->>>>>>> f548be94 (.)
-=======
-            ->where('guard_name', '=', $this->defaultUserGuard)
-=======
-            ->where('guard_name', '=', $defaultUserGuard)
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            ->where('guard_name', '=', $defaultUserGuard)
->>>>>>> laraxot/dev
             ->get();
 
         // 73     Parameter #1 $roles of method Modules\Xot\Contracts\UserContract::assignRole() expects array, Illuminate\Database\Eloquent\Collection<int, Modules\User\Models\Role> given.

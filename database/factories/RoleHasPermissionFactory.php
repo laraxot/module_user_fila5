@@ -10,22 +10,7 @@ use Modules\User\Models\Role;
 use Modules\User\Models\RoleHasPermission;
 
 /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
  * RoleHasPermission Factory.
-=======
- * RoleHasPermission Factory
->>>>>>> f548be94 (.)
-=======
- * RoleHasPermission Factory
-=======
- * RoleHasPermission Factory.
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
- * RoleHasPermission Factory.
->>>>>>> laraxot/dev
  *
  * @extends Factory<RoleHasPermission>
  */
@@ -33,11 +18,6 @@ class RoleHasPermissionFactory extends Factory
 {
     protected $model = RoleHasPermission::class;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
     /**
      * @return array<string, mixed>
      */
@@ -49,37 +29,6 @@ class RoleHasPermissionFactory extends Factory
                 'guard_name' => 'web',
             ])->id,
             'role_id' => fn () => Role::create([
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-    public function definition(): array
-    {
-        return [
-            'permission_id' => fn() => Permission::create([
-                'name' => fake()->unique()->slug(),
-                'guard_name' => 'web',
-            ])->id,
-            'role_id' => fn() => Role::create([
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-    /**
-     * @return array<string, mixed>
-     */
-    public function definition(): array
-    {
-        return [
-            'permission_id' => fn () => Permission::create([
-                'name' => fake()->unique()->slug(),
-                'guard_name' => 'web',
-            ])->id,
-            'role_id' => fn () => Role::create([
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
                 'name' => fake()->unique()->slug(),
                 'guard_name' => 'web',
             ])->id,

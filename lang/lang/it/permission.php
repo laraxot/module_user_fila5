@@ -11,10 +11,6 @@ return [
         ],
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         'name' => 'Nome',
         'guard_name' => 'Guard',
         'permissions' => 'Permessi',
@@ -24,58 +20,6 @@ return [
         'last_name' => 'Cognome',
         'role' => [
             'label' => 'role',
-<<<<<<< HEAD
-=======
-        'name' => [
-            'label' => 'Nome',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'guard_name' => [
-            'label' => 'Guard',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'permissions' => [
-            'label' => 'Permessi',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'roles' => [
-            'label' => 'Ruoli',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'updated_at' => [
-            'label' => 'Aggiornato il',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'first_name' => [
-            'label' => 'Nome',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'last_name' => [
-            'label' => 'Cognome',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'role' => [
-            'label' => 'role',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -92,12 +36,4 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
 ];

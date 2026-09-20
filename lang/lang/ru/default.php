@@ -126,10 +126,6 @@ return [
         'tooltip' => 'Скопировано!',
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         'email' => 'E-mail',
         'login' => 'Имя пользователя',
         'name' => 'Имя',
@@ -146,101 +142,4 @@ return [
     ],
     'or' => 'или',
     'cancel' => 'Отмена',
-<<<<<<< HEAD
-=======
-        'email' => [
-            'label' => 'E-mail',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'login' => [
-            'label' => 'Имя пользователя',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'name' => [
-            'label' => 'Имя',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'password' => [
-            'label' => 'Пароль',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'password_confirm' => [
-            'label' => 'Подтверждение пароля',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'new_password' => [
-            'label' => 'Новый пароль',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'new_password_confirmation' => [
-            'label' => 'Подтверждение пароля',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'token_name' => [
-            'label' => 'Имя токена',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'abilities' => [
-            'label' => 'Доступ',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        '2fa_code' => [
-            'label' => 'Код',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        '2fa_recovery_code' => [
-            'label' => 'Код восстановления',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'created' => [
-            'label' => 'Создано',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'expires' => [
-            'label' => 'Истекает',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-    ],
-    'or' => 'или',
-    'cancel' => 'Отмена',
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'actions' => [
-    ],
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
 ];

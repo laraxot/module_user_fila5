@@ -10,15 +10,7 @@ return [
     ],
     'two_factor' => [
         'heading' => 'المصادقة الثنائية',
-<<<<<<< HEAD
-<<<<<<< HEAD
         'description' => "'الرجاء تأكيد الدخول إلى حسابك عبر إدخال رمز المصادقة الموضح في تطبيق التوثيق الخاص بك.",
-=======
-        'description' => '\'الرجاء تأكيد الدخول إلى حسابك عبر إدخال رمز المصادقة الموضح في تطبيق التوثيق الخاص بك.',
->>>>>>> 60a2c9a9 (.)
-=======
-        'description' => "'الرجاء تأكيد الدخول إلى حسابك عبر إدخال رمز المصادقة الموضح في تطبيق التوثيق الخاص بك.",
->>>>>>> laraxot/dev
         'code_placeholder' => 'XXX-XXX',
         'recovery' => [
             'heading' => 'المصادقة الثنائية',
@@ -110,10 +102,6 @@ return [
         'tooltip' => 'تم النسخ!',
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         'avatar' => 'الصورة الرمزية',
         'email' => 'البريد الإليكتروني',
         'login' => 'تسجيل الدخول',
@@ -132,113 +120,4 @@ return [
     ],
     'or' => 'أو',
     'cancel' => 'إلغاء',
-<<<<<<< HEAD
-=======
-        'avatar' => [
-            'label' => 'الصورة الرمزية',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'email' => [
-            'label' => 'البريد الإليكتروني',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'login' => [
-            'label' => 'تسجيل الدخول',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'name' => [
-            'label' => 'الإسم',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'password' => [
-            'label' => 'كلمة المرور',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'password_confirm' => [
-            'label' => 'تأكيد كلمة المرور',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'new_password' => [
-            'label' => 'كلمة مرور جديدة',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'new_password_confirmation' => [
-            'label' => 'تأكيد كلمة المرور',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'token_name' => [
-            'label' => 'اسم الرمز',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'token_expiry' => [
-            'label' => 'انتهاء صلاحية الرمز',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'abilities' => [
-            'label' => 'الصلاحيات',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        '2fa_code' => [
-            'label' => 'الرمز',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        '2fa_recovery_code' => [
-            'label' => 'رمز الاستعادة',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'created' => [
-            'label' => 'تاريخ الإنشاء',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'expires' => [
-            'label' => 'تاريخ الإنتهاء',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-    ],
-    'or' => 'أو',
-    'cancel' => 'إلغاء',
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'actions' => [
-    ],
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
 ];

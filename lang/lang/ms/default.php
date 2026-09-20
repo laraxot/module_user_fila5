@@ -126,10 +126,6 @@ return [
         'tooltip' => 'Disalin!',
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         'email' => 'E-mel',
         'login' => 'Log masuk',
         'name' => 'Nama',
@@ -146,101 +142,4 @@ return [
     ],
     'or' => 'Atau',
     'cancel' => 'Batal',
-<<<<<<< HEAD
-=======
-        'email' => [
-            'label' => 'E-mel',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'login' => [
-            'label' => 'Log masuk',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'name' => [
-            'label' => 'Nama',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'password' => [
-            'label' => 'Kata laluan',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'password_confirm' => [
-            'label' => 'Pengesahan kata laluan',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'new_password' => [
-            'label' => 'Kata laluan baharu',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'new_password_confirmation' => [
-            'label' => 'Sahkan kata laluan',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'token_name' => [
-            'label' => 'Nama token',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'abilities' => [
-            'label' => 'Kebolehan',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        '2fa_code' => [
-            'label' => 'Kod',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        '2fa_recovery_code' => [
-            'label' => 'Kod Pemulihan',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'created' => [
-            'label' => 'Dicipta',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'expires' => [
-            'label' => 'Tamat tempoh',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-    ],
-    'or' => 'Atau',
-    'cancel' => 'Batal',
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'actions' => [
-    ],
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
 ];

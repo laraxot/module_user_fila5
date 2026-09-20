@@ -1,22 +1,7 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 declare(strict_types=1);
 
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-declare(strict_types=1);
-
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
 return [
     'actions' => [
         'delete' => [
@@ -43,11 +28,6 @@ return [
     'fields' => [
         'password' => [
             'label' => 'password',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -78,54 +58,4 @@ return [
     ],
     'label' => 'Edit User',
     'plural_label' => 'Edit User (Plurale)',
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-        ],
-        'email' => [
-            'label' => 'email',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-    ],
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'email' => [
-            'label' => 'email',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'name' => [
-            'label' => 'name',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-    ],
-    'navigation' => [
-        'name' => 'Edit User',
-        'plural' => 'Edit User',
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Edit User',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
-    ],
-    'label' => 'Edit User',
-    'plural_label' => 'Edit User (Plurale)',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 ];

@@ -10,22 +10,7 @@ use Modules\User\Models\PermissionRole;
 use Modules\User\Models\Role;
 
 /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
  * PermissionRole Factory.
-=======
- * PermissionRole Factory
->>>>>>> f548be94 (.)
-=======
- * PermissionRole Factory
-=======
- * PermissionRole Factory.
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
- * PermissionRole Factory.
->>>>>>> laraxot/dev
  *
  * Factory for creating PermissionRole model instances for testing and seeding.
  *
@@ -45,11 +30,6 @@ class PermissionRoleFactory extends Factory
      *
      * @return array<string, mixed>
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
     /**
      * @return array<string, mixed>
      */
@@ -61,37 +41,6 @@ class PermissionRoleFactory extends Factory
                 'guard_name' => 'web',
             ])->id,
             'role_id' => fn () => Role::create([
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-    public function definition(): array
-    {
-        return [
-            'permission_id' => fn() => Permission::create([
-                'name' => fake()->unique()->slug(),
-                'guard_name' => 'web',
-            ])->id,
-            'role_id' => fn() => Role::create([
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-    /**
-     * @return array<string, mixed>
-     */
-    public function definition(): array
-    {
-        return [
-            'permission_id' => fn () => Permission::create([
-                'name' => fake()->unique()->slug(),
-                'guard_name' => 'web',
-            ])->id,
-            'role_id' => fn () => Role::create([
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
                 'name' => fake()->unique()->slug(),
                 'guard_name' => 'web',
             ])->id,
@@ -100,76 +49,20 @@ class PermissionRoleFactory extends Factory
 
     /**
      * Create permission-role relationship for a specific permission.
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
      */
     public function forPermission(Permission $permission): static
     {
         return $this->state(fn (array $_attributes): array => [
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-     *
-     * @param Permission $permission
-     * @return static
-     */
-    public function forPermission(Permission $permission): static
-    {
-        return $this->state(fn(array $_attributes): array => [
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-     */
-    public function forPermission(Permission $permission): static
-    {
-        return $this->state(fn (array $_attributes): array => [
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
             'permission_id' => $permission->id,
         ]);
     }
 
     /**
      * Create permission-role relationship for a specific role.
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
      */
     public function forRole(Role $role): static
     {
         return $this->state(fn (array $_attributes): array => [
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-     *
-     * @param Role $role
-     * @return static
-     */
-    public function forRole(Role $role): static
-    {
-        return $this->state(fn(array $_attributes): array => [
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-     */
-    public function forRole(Role $role): static
-    {
-        return $this->state(fn (array $_attributes): array => [
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
             'role_id' => $role->id,
         ]);
     }

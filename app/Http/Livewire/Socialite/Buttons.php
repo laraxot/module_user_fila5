@@ -21,11 +21,6 @@ class Buttons extends Component
         $providers = config('filament-socialite.providers');
 
         // If the providers configuration is not an array, initialize it as an empty array.
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         if (! is_array($providers)) {
             $providers = [];
         }
@@ -35,33 +30,6 @@ class Buttons extends Component
 
         // Return the view with the list of providers.
         return view($viewName, [
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-        if (!is_array($providers)) {
-            $providers = [];
-        }
-
-        // Return the view with the list of providers.
-        return view('user::livewire.socialite.buttons', [
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-        if (! is_array($providers)) {
-            $providers = [];
-        }
-
-        /** @var view-string $viewName */
-        $viewName = 'user::livewire.socialite.buttons';
-
-        // Return the view with the list of providers.
-        return view($viewName, [
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
             'providers' => $providers,
         ]);
     }
