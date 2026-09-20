@@ -11,6 +11,7 @@ return [
             'description' => 'email',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -22,6 +23,11 @@ return [
         ],
     ],
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+        ],
+    ],
+>>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -34,6 +40,7 @@ return [
     'actions' => [
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         ],
     ],
@@ -41,4 +48,6 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

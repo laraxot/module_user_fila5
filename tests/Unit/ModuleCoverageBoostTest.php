@@ -10,9 +10,12 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\glob;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 uses(TestCase::class)->group('no-user-db');
 
@@ -69,7 +72,11 @@ describe('User coverage boost', function (): void {
             try {
                 Assert::assertInstanceOf($class, app($class));
             } catch (\Throwable) {
+<<<<<<< HEAD
                 Assert::assertInstanceOf($class, new $class);
+=======
+                Assert::assertInstanceOf($class, new $class());
+>>>>>>> laraxot/dev
             }
             Assert::assertStringContainsString('declare(strict_types=1);', XotBasePest::reflectionSource($class));
         }
@@ -93,7 +100,11 @@ describe('User coverage boost', function (): void {
             if ($ref->isAbstract()) {
                 continue;
             }
+<<<<<<< HEAD
             $checked++;
+=======
+            ++$checked;
+>>>>>>> laraxot/dev
             if (method_exists($class, 'from')) {
                 Assert::assertTrue($ref->hasMethod('from'));
             }

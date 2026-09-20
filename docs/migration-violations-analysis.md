@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Migration Violations Analysis - User Module"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Migration Violations Analysis - User Module
 
 ## Executive Summary
@@ -168,6 +174,7 @@ These violations directly contravene the Laraxot migration philosophy:
 - ❌ Single source of truth principle
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - ❌ <nome progetto>able migration order
 =======
 - ❌ Predictable migration order
@@ -178,11 +185,15 @@ These violations directly contravene the Laraxot migration philosophy:
 - ❌ <nome progetto>able migration order
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- ❌ <nome progetto>able migration order
+>>>>>>> laraxot/dev
 - ❌ DRY principle
 - ❌ Maintenance simplicity
 - ❌ Clear schema definition
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 The violations demonstrate a clear gap in understanding and implementation of the core Laraxot migration philosophy that emphasizes: **ONE TABLE, ONE MIGRATION, ONE MODULE**.
 =======
 The violations demonstrate a clear gap in understanding and implementation of the core Laraxot migration philosophy that emphasizes: **ONE TABLE, ONE MIGRATION, ONE MODULE**.
@@ -191,3 +202,6 @@ The violations demonstrate a clear gap in understanding and implementation of th
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+The violations demonstrate a clear gap in understanding and implementation of the core Laraxot migration philosophy that emphasizes: **ONE TABLE, ONE MIGRATION, ONE MODULE**.
+>>>>>>> laraxot/dev

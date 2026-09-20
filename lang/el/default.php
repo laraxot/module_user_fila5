@@ -91,11 +91,15 @@ return [
                 'title' => 'You have not enabled two factor authentication.',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 'description' => 'When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone\'s Google Authenticator application.',
             ],
             'finish_enabling' => [
                 'title' => 'Finish enabling two factor authentication.',
                 'description' => 'To finish enabling two factor authentication, scan the following QR code using your phone\'s authenticator application or enter the setup key and provide the generated OTP code.',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -115,6 +119,8 @@ return [
                 'description' => 'To finish enabling two factor authentication, scan the following QR code using your phone\'s authenticator application or enter the setup key and provide the generated OTP code.',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             ],
             'enabled' => [
                 'title' => 'You have enabled two factor authentication!',
@@ -145,6 +151,7 @@ return [
     'clipboard' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // 'link' => 'In die Zwischenablage kopieren',
 >>>>>>> f548be94 (.)
@@ -153,12 +160,17 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'link' => 'Αντιγραφή στο πρόχειρο',
         'tooltip' => 'Αντιγράφηκε!',
     ],
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'email' => [
             'label' => 'Email',
             'tooltip' => '',
@@ -251,6 +263,7 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -368,4 +381,6 @@ return [
     ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Risoluzione Conflitti Git - Modulo User"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - Modulo User
 
 ## Data Risoluzione
@@ -68,6 +74,7 @@ related:
 - `docs/registration-widget.md` - Widget registrazione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `docs/phpstan-fixes-8.md` - Fix PHPStan
 =======
 - `docs/phpstan_fixes.md` - Fix PHPStan
@@ -78,6 +85,9 @@ related:
 - `docs/phpstan-fixes-8.md` - Fix PHPStan
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- `docs/phpstan-fixes-8.md` - Fix PHPStan
+>>>>>>> laraxot/dev
 - `docs/filament/widgets/registration-widget.md` - Widget Filament
 
 ## Modifiche Applicate
@@ -145,10 +155,14 @@ Funzionalità team includono:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Documentazione Root User](../../../../docs/project/modules/user.md)
 - [BaseUser Documentation](./baseuser.md)
 - [Registration Widget](./registration-widget.md)
 - [PHPStan Fixes](./phpstan-fixes-8.md)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -166,6 +180,8 @@ Funzionalità team includono:
 - [PHPStan Fixes](./phpstan-fixes-8.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 ---
 *Aggiornato automaticamente dopo risoluzione conflitti Git*

@@ -6,6 +6,7 @@ namespace Modules\User\Models\Traits;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Relations\Pivot;
 >>>>>>> f548be94 (.)
@@ -14,12 +15,17 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Support\Collection;
 use Modules\User\Contracts\TeamContract;
@@ -32,6 +38,7 @@ use Spatie\Permission\Models\Permission;
 
 /**
  * Trait HasTeams.
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -66,10 +73,13 @@ use Spatie\Permission\Models\Permission;
  * Trait HasTeams.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  *
  * Provides team functionality for User models implementing team-based organization.
  * This trait handles team ownership, membership, permissions, and relationships.
  *
+<<<<<<< HEAD
  * @property TeamContract $currentTeam
  * @property int|null $current_team_id
 <<<<<<< HEAD
@@ -95,11 +105,20 @@ use Spatie\Permission\Models\Permission;
  * @property XotUserContract|null $owner
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ * @property TeamContract                  $currentTeam
+ * @property int|null                      $current_team_id
+ * @property Collection<int, TeamContract> $membershipTeams
+ * @property Collection<int, TeamContract> $ownedTeams
+ * @property Collection<int, TeamUser>     $teamUsers
+ * @property XotUserContract|null          $owner
+>>>>>>> laraxot/dev
  */
 trait HasTeams
 {
     /**
      * Add a user to the team.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      */
@@ -121,6 +140,10 @@ trait HasTeams
     public function addTeamMember(Model $user, ?Model $role = null): Model
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     */
+    public function addTeamMember(Model $user, ?Model $role = null): Model
+>>>>>>> laraxot/dev
     {
         $teamUser = $this->teamUsers()->create([
             'user_id' => $user->getKey(),
@@ -137,6 +160,9 @@ trait HasTeams
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @return Collection<int, TeamContract>
      */
     public function allTeams(): Collection
@@ -145,6 +171,7 @@ trait HasTeams
         $teams = $this->ownedTeams->merge($this->membershipTeams)->sortBy('name');
 
         return $teams;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -167,6 +194,8 @@ trait HasTeams
         return $teams;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -174,6 +203,7 @@ trait HasTeams
      */
     public function belongsToTeams(): bool
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         return $this->allTeams()->isNotEmpty();
@@ -186,6 +216,9 @@ trait HasTeams
         return $this->allTeams()->isNotEmpty();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return $this->allTeams()->isNotEmpty();
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -193,13 +226,20 @@ trait HasTeams
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function belongsToTeam(?TeamContract $team): bool
     {
         if ($team === null) {
+=======
+    public function belongsToTeam(?TeamContract $team): bool
+    {
+        if (null === $team) {
+>>>>>>> laraxot/dev
             return false;
         }
 
         return $this->ownsTeam($team) || $this->membershipTeams->contains('id', (string) $team->id);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -239,6 +279,8 @@ trait HasTeams
         return $this->ownsTeam($team) || $this->membershipTeams->contains('id', (string) $team->id);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -256,6 +298,7 @@ trait HasTeams
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->hasPermissionTo('create team'); // @phpstan-ignore method.notFound, return.type
 =======
         return $this->hasPermissionTo('create team');
@@ -266,6 +309,9 @@ trait HasTeams
         return $this->hasPermissionTo('create team'); // @phpstan-ignore method.notFound, return.type
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return $this->hasPermissionTo('create team'); // @phpstan-ignore method.notFound, return.type
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -283,6 +329,7 @@ trait HasTeams
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->belongsToTeam($team) && ! $this->ownsTeam($team);
 =======
         return $this->belongsToTeam($team) && !$this->ownsTeam($team);
@@ -293,6 +340,9 @@ trait HasTeams
         return $this->belongsToTeam($team) && ! $this->ownsTeam($team);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return $this->belongsToTeam($team) && ! $this->ownsTeam($team);
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -308,6 +358,7 @@ trait HasTeams
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function canRemoveTeamMember(TeamContract $team, XotUserContract $_user): bool
 =======
     public function canRemoveTeamMember(TeamContract $team, UserContract $_user): bool
@@ -318,6 +369,9 @@ trait HasTeams
     public function canRemoveTeamMember(TeamContract $team, XotUserContract $_user): bool
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function canRemoveTeamMember(TeamContract $team, XotUserContract $_user): bool
+>>>>>>> laraxot/dev
     {
         return $this->ownsTeam($team) || $this->hasTeamPermission($team, 'remove team member');
     }
@@ -335,6 +389,7 @@ trait HasTeams
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function canUpdateTeamMember(TeamContract $team, XotUserContract $_user): bool
 =======
     public function canUpdateTeamMember(TeamContract $team, UserContract $_user): bool
@@ -345,6 +400,9 @@ trait HasTeams
     public function canUpdateTeamMember(TeamContract $team, XotUserContract $_user): bool
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function canUpdateTeamMember(TeamContract $team, XotUserContract $_user): bool
+>>>>>>> laraxot/dev
     {
         return $this->ownsTeam($team) || $this->hasTeamPermission($team, 'update team member');
     }
@@ -362,6 +420,9 @@ trait HasTeams
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @return Collection<int, User>
      */
     public function getAllTeamUsersAttribute(): Collection
@@ -374,7 +435,11 @@ trait HasTeams
         })->filter();
 
         $owner = $this->owner;
+<<<<<<< HEAD
         if ($owner !== null && $owner instanceof User) {
+=======
+        if (null !== $owner && $owner instanceof User) {
+>>>>>>> laraxot/dev
             return $users->merge([$owner]);
         }
 
@@ -388,7 +453,11 @@ trait HasTeams
      */
     public function allTeamUsers(): Collection // @phpstan-ignore return.type
     {/** @var Collection<int, mixed> $teams */
+<<<<<<< HEAD
             $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
+=======
+        $teams = $this->membershipTeams; // @phpstan-ignore property.nonObject
+>>>>>>> laraxot/dev
         /** @var Collection<int, User> $result */
         $result = $teams->flatMap( // @phpstan-ignore argument.type
             /** @param mixed $team @return array<int,User>|Collection<int,User> */
@@ -400,6 +469,7 @@ trait HasTeams
             })->unique('id');
 
         return $result;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -456,12 +526,17 @@ trait HasTeams
         return $result;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
      * Determine if the given user is on the team.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function hasTeamMember(XotUserContract $user): bool
     {
@@ -472,12 +547,17 @@ trait HasTeams
             if ($memberUser instanceof Model) {
                 $memberUserKey = $memberUser->getKey();
 
+<<<<<<< HEAD
                 return $memberUserKey !== null && $memberUserKey === $user->getKey();
+=======
+                return null !== $memberUserKey && $memberUserKey === $user->getKey();
+>>>>>>> laraxot/dev
             }
 
             return false;
         });
 
+<<<<<<< HEAD
         if ($userFound !== null) {
 =======
 =======
@@ -512,6 +592,9 @@ trait HasTeams
         if ($userFound !== null) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null !== $userFound) {
+>>>>>>> laraxot/dev
             return true;
         }
 
@@ -530,6 +613,7 @@ trait HasTeams
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->allTeams()->isNotEmpty();
 =======
         return true;
@@ -540,6 +624,9 @@ trait HasTeams
         return $this->allTeams()->isNotEmpty();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return $this->allTeams()->isNotEmpty();
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -549,6 +636,7 @@ trait HasTeams
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->ownsTeam($team) || \in_array($permission, $this->teamPermissions($team), true);
 =======
         return $this->ownsTeam($team) || in_array($permission, $this->teamPermissions($team), strict: true);
@@ -559,6 +647,9 @@ trait HasTeams
         return $this->ownsTeam($team) || \in_array($permission, $this->teamPermissions($team), true);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return $this->ownsTeam($team) || \in_array($permission, $this->teamPermissions($team), true);
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -573,8 +664,13 @@ trait HasTeams
         $teamRole = $this->teamRole($team);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         return $teamRole !== null && $teamRole->name === $role;
+=======
+
+        return null !== $teamRole && $teamRole->name === $role;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -584,11 +680,16 @@ trait HasTeams
     {
         $role = $this->teamRole($team);
 
+<<<<<<< HEAD
         if ($role === null) {
+=======
+        if (null === $role) {
+>>>>>>> laraxot/dev
             return 'Unknown';
         }
 
         return $role->name;
+<<<<<<< HEAD
 =======
         return $teamRole !== null && isset($teamRole->name) && $teamRole->name === $role;
 >>>>>>> f548be94 (.)
@@ -613,6 +714,8 @@ trait HasTeams
         return $role->name;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -623,6 +726,7 @@ trait HasTeams
     public function currentTeam(): BelongsTo
     {
         $xot = XotData::make();
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -643,6 +747,8 @@ trait HasTeams
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $teamClass = $xot->getTeamClass();
 
         return $this->belongsTo($teamClass, 'current_team_id');
@@ -666,11 +772,15 @@ trait HasTeams
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @return HasMany<TeamUser, $this>
      */
     public function teamUsers(): HasMany
     {
         return $this->hasMany(TeamUser::class, 'user_id');
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -692,6 +802,8 @@ trait HasTeams
         return $this->hasMany(TeamUser::class, 'user_id');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -699,12 +811,16 @@ trait HasTeams
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function teamRole(TeamContract $team): ?Role
     {
         if ($this->ownsTeam($team)) {
             return Role::where('name', 'owner')->first() ?? new Role(['name' => 'owner']);
         }
 
+<<<<<<< HEAD
 =======
     public function teamRole(TeamContract $team): null|Role
     {
@@ -730,6 +846,15 @@ trait HasTeams
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+        /** @var Model|Pivot|null $teamUser */
+        $teamUser = $this->teamUsers()->where('team_id', $team->id)->first();
+
+        if (null === $teamUser) {
+            return null;
+        }
+
+>>>>>>> laraxot/dev
         $roleValue = $teamUser->getAttribute('role');
 
         if ($roleValue instanceof Role) {
@@ -741,6 +866,7 @@ trait HasTeams
         }
 
         return null;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -765,11 +891,14 @@ trait HasTeams
         return null;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
      * Get permissions for a specific team.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -780,18 +909,27 @@ trait HasTeams
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      * @return array<int, string>
      */
     public function teamPermissions(TeamContract $team): array
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         /** @var array<int, string> $permissions */
         $permissions = [];
 
         // Permissions from Role
         $role = $this->teamRole($team);
+<<<<<<< HEAD
         if ($role !== null && $role->permissions) {
+=======
+        if (null !== $role && $role->permissions) {
+>>>>>>> laraxot/dev
             /** @var \Illuminate\Database\Eloquent\Collection<int, Permission> $permissionsCollection */
             $permissionsCollection = $role->permissions;
             /** @var array<string> $rolePermissionNames */
@@ -799,14 +937,22 @@ trait HasTeams
 
             $permissions = array_values(array_filter(
                 $rolePermissionNames,
+<<<<<<< HEAD
                 static fn (string $value): bool => $value !== ''
+=======
+                static fn (string $value): bool => '' !== $value
+>>>>>>> laraxot/dev
             ));
         }
 
         // Permissions from Pivot
         /** @var Model|Pivot|null $teamUser */
         $teamUser = $this->teamUsers()->where('team_id', (string) $team->id)->first();
+<<<<<<< HEAD
         if ($teamUser !== null) {
+=======
+        if (null !== $teamUser) {
+>>>>>>> laraxot/dev
             $pivotPermissions = $teamUser->getAttribute('permissions');
             if (is_array($pivotPermissions)) {
                 $pivotPermissionNames = array_keys(array_filter($pivotPermissions));
@@ -815,7 +961,11 @@ trait HasTeams
                     $permissions,
                     array_values(array_filter(
                         $pivotPermissionNames,
+<<<<<<< HEAD
                         static fn (string $value): bool => $value !== ''
+=======
+                        static fn (string $value): bool => '' !== $value
+>>>>>>> laraxot/dev
                     ))
                 );
             }
@@ -825,6 +975,7 @@ trait HasTeams
         $result = array_values(array_unique($permissions));
 
         return $result;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -881,10 +1032,13 @@ trait HasTeams
         return $result;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
      * Remove a user from the team.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      */
@@ -905,6 +1059,10 @@ trait HasTeams
     public function removeTeamMember(Model $user): void
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     */
+    public function removeTeamMember(Model $user): void
+>>>>>>> laraxot/dev
     {
         $this->teamUsers()->where('user_id', $user->getKey())->delete();
 
@@ -915,6 +1073,9 @@ trait HasTeams
      * Get the user's personal team.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function personalTeam(): ?TeamContract
     {
@@ -927,18 +1088,27 @@ trait HasTeams
      */
     public function initializeCurrentTeam(): void
     {
+<<<<<<< HEAD
         if ($this->current_team_id !== null) {
+=======
+        if (null !== $this->current_team_id) {
+>>>>>>> laraxot/dev
             return;
         }
 
         $team = $this->personalTeam();
+<<<<<<< HEAD
         if ($team === null) {
+=======
+        if (null === $team) {
+>>>>>>> laraxot/dev
             $teamCandidate = $this->allTeams()->first();
             if ($teamCandidate instanceof TeamContract) {
                 $team = $teamCandidate;
             }
         }
 
+<<<<<<< HEAD
         if ($team !== null) {
             $this->switchTeam($team);
         }
@@ -987,12 +1157,20 @@ trait HasTeams
         }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null !== $team) {
+            $this->switchTeam($team);
+        }
+>>>>>>> laraxot/dev
     }
 
     /**
      * Switch the user's context to the given team.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function switchTeam(TeamContract $team): bool
     {
@@ -1005,6 +1183,7 @@ trait HasTeams
         ]);
 
         return $this->save();
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1043,6 +1222,8 @@ trait HasTeams
         return $this->save();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -1050,7 +1231,11 @@ trait HasTeams
      */
     public function isCurrentTeam(TeamContract $team): bool
     {
+<<<<<<< HEAD
         if ($this->currentTeam === null) {
+=======
+        if (null === $this->currentTeam) {
+>>>>>>> laraxot/dev
             return false;
         }
 
@@ -1061,10 +1246,17 @@ trait HasTeams
      * Determine if the user owns the given team.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      */
     public function ownsTeam(?TeamContract $team): bool
     {
         if ($team === null) {
+=======
+     */
+    public function ownsTeam(?TeamContract $team): bool
+    {
+        if (null === $team) {
+>>>>>>> laraxot/dev
             return false;
         }
 
@@ -1076,6 +1268,7 @@ trait HasTeams
      * Su {@see BaseUser} esposto come {@see membershipTeams()} — {@see HasRoles::teams()} resta Spatie.
      *
      * @return BelongsToMany<Model&TeamContract, Model&static, Pivot, 'pivot'>
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1115,6 +1308,8 @@ trait HasTeams
      * @return BelongsToMany<Model&TeamContract, Model&static, Pivot, 'pivot'>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     public function teams(): BelongsToMany
     {
@@ -1123,6 +1318,7 @@ trait HasTeams
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var BelongsToMany<Model&TeamContract, Model&static, Pivot, 'pivot'> $relation */
         $relation = $this->belongsToManyX($teamClass);
 =======
@@ -1137,6 +1333,10 @@ trait HasTeams
         $relation = $this->belongsToManyX($teamClass);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        /** @var BelongsToMany<Model&TeamContract, Model&static, Pivot, 'pivot'> $relation */
+        $relation = $this->belongsToManyX($teamClass);
+>>>>>>> laraxot/dev
 
         return $relation;
     }
@@ -1144,6 +1344,7 @@ trait HasTeams
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * Get all of the teams that the user owns.
      */
     public function inviteToTeam(XotUserContract $user, TeamContract $team): bool
@@ -1162,6 +1363,11 @@ trait HasTeams
     public function inviteToTeam(XotUserContract $user, TeamContract $team): bool
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * Get all of the teams that the user owns.
+     */
+    public function inviteToTeam(XotUserContract $user, TeamContract $team): bool
+>>>>>>> laraxot/dev
     {
         if ($this->ownsTeam($team)) {
             $team->members()->attach($user->id, ['role' => 'member']);
@@ -1177,6 +1383,7 @@ trait HasTeams
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function removeFromTeam(XotUserContract $user, TeamContract $team): bool
 =======
     public function removeFromTeam(UserContract $user, TeamContract $team): bool
@@ -1187,6 +1394,9 @@ trait HasTeams
     public function removeFromTeam(XotUserContract $user, TeamContract $team): bool
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function removeFromTeam(XotUserContract $user, TeamContract $team): bool
+>>>>>>> laraxot/dev
     {
         if ($this->ownsTeam($team)) {
             $team->members()->detach($user->id);
@@ -1210,6 +1420,7 @@ trait HasTeams
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function promoteToAdmin(XotUserContract $user, TeamContract $team): bool
 =======
     public function promoteToAdmin(UserContract $user, TeamContract $team): bool
@@ -1220,6 +1431,9 @@ trait HasTeams
     public function promoteToAdmin(XotUserContract $user, TeamContract $team): bool
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function promoteToAdmin(XotUserContract $user, TeamContract $team): bool
+>>>>>>> laraxot/dev
     {
         if ($this->ownsTeam($team)) {
             $team->members()->updateExistingPivot($user->id, ['role' => 'admin']);
@@ -1235,6 +1449,7 @@ trait HasTeams
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function demoteFromAdmin(XotUserContract $user, TeamContract $team): bool
 =======
     public function demoteFromAdmin(UserContract $user, TeamContract $team): bool
@@ -1245,6 +1460,9 @@ trait HasTeams
     public function demoteFromAdmin(XotUserContract $user, TeamContract $team): bool
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function demoteFromAdmin(XotUserContract $user, TeamContract $team): bool
+>>>>>>> laraxot/dev
     {
         if ($this->ownsTeam($team)) {
             $team->members()->updateExistingPivot($user->id, ['role' => 'member']);
@@ -1259,6 +1477,9 @@ trait HasTeams
      * Get all admins of the team.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @return Collection<int, Model>
      */
@@ -1268,6 +1489,7 @@ trait HasTeams
         $admins = $team->members()->wherePivot('role', 'admin')->get();
 
         return $admins;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1290,12 +1512,17 @@ trait HasTeams
         return $admins;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
      * Get all members of the team.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @return Collection<int, Model>
      */
@@ -1305,6 +1532,7 @@ trait HasTeams
         $members = $team->members()->wherePivot('role', 'member')->get();
 
         return $members;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1327,10 +1555,13 @@ trait HasTeams
         return $members;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
      * Determine if the user owns the given team.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1343,6 +1574,8 @@ trait HasTeams
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     public function checkTeamOwnership(TeamContract $team): bool
     {
@@ -1350,9 +1583,12 @@ trait HasTeams
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     /**
      * Boot the HasTeams trait.
@@ -1367,9 +1603,12 @@ trait HasTeams
          */
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

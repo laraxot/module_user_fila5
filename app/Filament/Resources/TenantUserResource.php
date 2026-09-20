@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
@@ -13,6 +14,9 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> laraxot/dev
 use Modules\User\Models\TenantUser;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -23,6 +27,7 @@ final class TenantUserResource extends XotBaseResource
 {
     protected static ?string $model = TenantUser::class;
 
+<<<<<<< HEAD
     /**
 <<<<<<< HEAD
      * @return array<string, Component>
@@ -74,6 +79,12 @@ final class TenantUserResource extends XotBaseResource
      */
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+    /**
+     * Configure the model query.
+     */
+>>>>>>> laraxot/dev
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['tenant', 'user']);

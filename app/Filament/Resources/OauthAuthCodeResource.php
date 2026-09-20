@@ -8,6 +8,7 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
@@ -25,10 +26,16 @@ use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Filament\Resources\Pages\PageRegistration;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ListOauthAuthCodes;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ViewOauthAuthCode;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -39,6 +46,8 @@ use Modules\User\Filament\Resources\OauthAuthCodeResource\Pages;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\OauthAuthCode;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -54,6 +63,7 @@ class OauthAuthCodeResource extends XotBaseResource
     protected static ?string $recordTitleAttribute = 'id';
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Get the form schema for the resource.
      *
@@ -80,14 +90,19 @@ class OauthAuthCodeResource extends XotBaseResource
     /**
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
      * Extend table callback for the resource.
      *
      * @return array<string, mixed>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
     public static function extendTableCallback(): array
     {
         return [
@@ -116,6 +131,7 @@ class OauthAuthCodeResource extends XotBaseResource
                         $state = $column->getState();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         if ($state === null) {
 =======
                         if (null === $state) {
@@ -126,6 +142,9 @@ class OauthAuthCodeResource extends XotBaseResource
                         if ($state === null) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                        if (null === $state) {
+>>>>>>> laraxot/dev
                             return null;
                         }
                         if (is_array($state)) {

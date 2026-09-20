@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\BaseProfileResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -45,6 +46,9 @@ use Illuminate\Database\Eloquent\Builder;
 >>>>>>> 87273113 (.)
 use Modules\User\Filament\Resources\BaseProfileResource;
 use Modules\Xot\Datas\XotData;
+=======
+use Modules\User\Filament\Resources\BaseProfileResource;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 /**
@@ -53,6 +57,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListProfiles extends XotBaseListRecords
 {
     protected static string $resource = BaseProfileResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, Tables\Columns\Column>
@@ -244,4 +249,6 @@ class ListProfiles extends XotBaseListRecords
                 ),
         ];
     }
+=======
+>>>>>>> laraxot/dev
 }

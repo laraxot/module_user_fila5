@@ -2,6 +2,9 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 declare(strict_types=1);
 
 return [
@@ -33,6 +36,7 @@ return [
     'forgot_password_text' => 'Hai dimenticato la tua password?',
     'reset_it' => 'Reimpostala qui',
 ];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -110,3 +114,5 @@ return [
 ];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

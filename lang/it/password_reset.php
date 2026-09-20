@@ -9,6 +9,7 @@ return [
         'label' => 'Reset Password',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'group' => ['name' => 'Sicurezza', 'description' => 'Gestione dei reset password e recupero credenziali'],
 =======
 =======
@@ -24,12 +25,16 @@ return [
         'group' => ['name' => 'Sicurezza', 'description' => 'Gestione dei reset password e recupero credenziali'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'group' => ['name' => 'Sicurezza', 'description' => 'Gestione dei reset password e recupero credenziali'],
+>>>>>>> laraxot/dev
         'sort' => 4,
         'icon' => 'heroicon-o-key',
     ],
     'label' => 'Password Reset',
     'plural_label' => 'Password Reset (Plurale)',
     'fields' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
@@ -83,16 +88,23 @@ return [
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
     ],
     'actions' => [
         'create' => ['label' => 'Crea Password Reset', 'icon' => 'create', 'tooltip' => 'create'],
+<<<<<<< HEAD
         'edit' => ['label' => 'Modifica Password Reset', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Password Reset', 'icon' => 'delete', 'tooltip' => 'delete'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'edit' => ['label' => 'Modifica Password Reset'],
+        'delete' => ['label' => 'Elimina Password Reset'],
+>>>>>>> laraxot/dev
     ],
 ];

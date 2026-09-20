@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature;
 
 use Filament\Facades\Filament;
@@ -15,10 +18,18 @@ use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+<<<<<<< HEAD
 use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
 
+=======
+
+use function Pest\Laravel\actingAs;
+
+use PHPUnit\Framework\Assert;
+
+>>>>>>> laraxot/dev
 uses(TestCase::class);
 
 beforeEach(function (): void {
@@ -233,6 +244,7 @@ describe('Tenant Scope Console', function (): void {
 
         Assert::assertTrue($user->exists);
         Assert::assertSame('Creating Event Test', $user->name);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -695,5 +707,7 @@ describe('Tenant Scope Console', function (): void {
         Assert::assertSame('Creating Event Test', $user->name);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     });
 });

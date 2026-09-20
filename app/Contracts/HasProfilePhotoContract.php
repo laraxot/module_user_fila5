@@ -15,6 +15,7 @@ interface HasProfilePhotoContract
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFilamentAvatarUrl(): ?string;
 =======
     public function getFilamentAvatarUrl(): null|string;
@@ -25,12 +26,16 @@ interface HasProfilePhotoContract
     public function getFilamentAvatarUrl(): ?string;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function getFilamentAvatarUrl(): ?string;
+>>>>>>> laraxot/dev
 
     /**
      * Update the user's profile photo.
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function updateProfilePhoto(?string $photo): void;
 =======
     public function updateProfilePhoto(null|string $photo): void;
@@ -41,6 +46,9 @@ interface HasProfilePhotoContract
     public function updateProfilePhoto(?string $photo): void;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function updateProfilePhoto(?string $photo): void;
+>>>>>>> laraxot/dev
 
     /**
      * Delete the user's profile photo.

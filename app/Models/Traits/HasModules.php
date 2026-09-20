@@ -21,6 +21,7 @@ trait HasModules
         /** @var array<string, Module> $filteredModules */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $filteredModules = Arr::where($modules, function (mixed $module, int|string $key): bool {
 =======
         $filteredModules = Arr::where($modules, function ($module, $key) {
@@ -31,6 +32,9 @@ trait HasModules
         $filteredModules = Arr::where($modules, function (mixed $module, int|string $key): bool {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $filteredModules = Arr::where($modules, function (mixed $module, int|string $key): bool {
+>>>>>>> laraxot/dev
             // $name = $module->getName();
             $name = is_string($key) ? $key : (string) $key;
             $role_name = Str::of($name)->lower()->append('::admin')->toString();

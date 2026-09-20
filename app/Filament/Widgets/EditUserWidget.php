@@ -7,6 +7,9 @@ namespace Modules\User\Filament\Widgets;
 use Filament\Schemas\Components\Component;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
@@ -15,6 +18,7 @@ use Illuminate\Support\Str;
 use Livewire\Features\SupportRedirects\Redirector;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -55,6 +59,8 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 /**
@@ -67,11 +73,18 @@ use Webmozart\Assert\Assert;
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * @property string $type
  * @property string $resource
  * @property string $model
  * @property string $action
+<<<<<<< HEAD
  * @property Model $record
+=======
+ * @property Model  $record
+>>>>>>> laraxot/dev
  */
 class EditUserWidget extends XotBaseSchemaWidget
 {
@@ -110,6 +123,7 @@ class EditUserWidget extends XotBaseSchemaWidget
 
         $record = $this->getFormModel($userId);
         $this->record = $record;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -208,11 +222,14 @@ class EditUserWidget extends XotBaseSchemaWidget
         $this->record = $record;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $data = $this->getFormFill();
 
         $this->form->fill($data);
         $this->form->model($record);
         $this->data = $data;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -258,6 +275,8 @@ class EditUserWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -267,6 +286,9 @@ class EditUserWidget extends XotBaseSchemaWidget
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function getFormFill(): array
     {
         $model = $this->record;
@@ -301,6 +323,7 @@ class EditUserWidget extends XotBaseSchemaWidget
         $result = array_fill_keys($fields, null);
 
         return $result;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -373,6 +396,8 @@ class EditUserWidget extends XotBaseSchemaWidget
         return $result;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -382,6 +407,9 @@ class EditUserWidget extends XotBaseSchemaWidget
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
     {
         $schema = $this->resource::getFormSchemaWidget();
@@ -389,6 +417,7 @@ class EditUserWidget extends XotBaseSchemaWidget
 
         /* @var array<int|string, Component> $result */
         return self::normalizeFormSchema($schema);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -409,12 +438,15 @@ class EditUserWidget extends XotBaseSchemaWidget
         return self::normalizeFormSchema($schema);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
      * Gestisce il salvataggio delle modifiche delegando all'action specifica.
      *
      * @see https://filamentphp.com/docs/3.x/forms/adding-a-form-to-a-livewire-component
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -427,6 +459,8 @@ class EditUserWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     public function updateUser(): RedirectResponse|Redirector
     {
@@ -434,12 +468,16 @@ class EditUserWidget extends XotBaseSchemaWidget
         $record = $this->record;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $actionInstance = app($this->action);
         if (! is_object($actionInstance) || ! method_exists($actionInstance, 'execute')) {
             throw new \RuntimeException(sprintf('Update action [%s] must expose execute().', $this->action));
         }
 
         \call_user_func([$actionInstance, 'execute'], $record, $data);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -464,12 +502,15 @@ class EditUserWidget extends XotBaseSchemaWidget
         \call_user_func([$actionInstance, 'execute'], $record, $data);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         return redirect()->back();
     }
 
     /**
      * Controlla se l'utente può modificare il record corrente.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -482,6 +523,8 @@ class EditUserWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     public function canEdit(): bool
     {
@@ -489,6 +532,9 @@ class EditUserWidget extends XotBaseSchemaWidget
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         return $currentUser
             && (($currentUser->id ?? null) !== null
                         && ($this->record->id ?? null) !== null
@@ -556,6 +602,7 @@ class EditUserWidget extends XotBaseSchemaWidget
         }
 
         return $normalized;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -642,5 +689,7 @@ class EditUserWidget extends XotBaseSchemaWidget
         return $normalized;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

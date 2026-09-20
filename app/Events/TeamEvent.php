@@ -27,6 +27,7 @@ abstract class TeamEvent
         public TeamContract $teamContract,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {
     }
 =======
@@ -39,4 +40,8 @@ abstract class TeamEvent
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 }

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Implementazione del Selettore di Lingua e Avatar Utente nell'Header"
 type: concept
@@ -24,17 +27,21 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)
@@ -53,6 +60,11 @@ related:
 - [Implementazione Logout](./logout-blade-implementation-2.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Convenzioni Path](./path-conventions-2.md)
+- [Volt Folio Logout](./volt-folio-logout-2.md)
+- [Implementazione Logout](./logout-blade-implementation-2.md)
+>>>>>>> laraxot/dev
 
 ## Panoramica
 
@@ -430,6 +442,7 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
 - [README modulo User](./readme.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)
@@ -448,6 +461,11 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
 - [Implementazione Logout](./logout-blade-implementation-2.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Convenzioni Path](./path-conventions-2.md)
+- [Volt Folio Logout](./volt-folio-logout-2.md)
+- [Implementazione Logout](./logout-blade-implementation-2.md)
+>>>>>>> laraxot/dev
 
 ## Panoramica
 

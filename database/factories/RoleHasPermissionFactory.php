@@ -12,6 +12,7 @@ use Modules\User\Models\RoleHasPermission;
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * RoleHasPermission Factory.
 =======
  * RoleHasPermission Factory
@@ -22,6 +23,9 @@ use Modules\User\Models\RoleHasPermission;
  * RoleHasPermission Factory.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ * RoleHasPermission Factory.
+>>>>>>> laraxot/dev
  *
  * @extends Factory<RoleHasPermission>
  */
@@ -31,6 +35,9 @@ class RoleHasPermissionFactory extends Factory
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<string, mixed>
      */
@@ -42,6 +49,7 @@ class RoleHasPermissionFactory extends Factory
                 'guard_name' => 'web',
             ])->id,
             'role_id' => fn () => Role::create([
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -70,6 +78,8 @@ class RoleHasPermissionFactory extends Factory
             'role_id' => fn () => Role::create([
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 'name' => fake()->unique()->slug(),
                 'guard_name' => 'web',
             ])->id,

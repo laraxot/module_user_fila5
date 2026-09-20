@@ -456,9 +456,12 @@ private function getPasswordLegacy(): string
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-27*
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 
 
 

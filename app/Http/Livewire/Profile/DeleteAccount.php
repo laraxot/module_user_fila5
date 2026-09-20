@@ -6,6 +6,7 @@ namespace Modules\User\Http\Livewire\Profile;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Models\User;
 >>>>>>> f548be94 (.)
@@ -14,6 +15,8 @@ use Modules\User\Models\User;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
@@ -21,6 +24,7 @@ use Modules\User\Actions\User\DeleteUserAction;
 use Modules\User\Contracts\UserContract;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 =======
 >>>>>>> f548be94 (.)
@@ -29,6 +33,9 @@ use Modules\User\Models\User;
 use Modules\User\Models\User;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 
 class DeleteAccount extends Component
 {
@@ -38,10 +45,14 @@ class DeleteAccount extends Component
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         /** @var view-string $viewName */
         $viewName = 'user::livewire.profile.delete-account';
 
         return view($viewName);
+<<<<<<< HEAD
 =======
         return view('user::livewire.profile.delete-account');
 >>>>>>> f548be94 (.)
@@ -54,6 +65,8 @@ class DeleteAccount extends Component
         return view($viewName);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     public function destroy(): void
@@ -62,6 +75,7 @@ class DeleteAccount extends Component
         $user = Auth::user();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $user) {
 =======
         if (!$user) {
@@ -72,12 +86,16 @@ class DeleteAccount extends Component
         if (! $user) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! $user) {
+>>>>>>> laraxot/dev
             $this->dispatch('toast', [
                 'message' => 'Utente non trovato',
                 'type' => 'error',
             ]);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f548be94 (.)
@@ -86,12 +104,16 @@ class DeleteAccount extends Component
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
             return;
         }
 
         // Assicuriamoci che sia del tipo corretto per l'action
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $user instanceof UserContract) {
 =======
         if (!($user instanceof UserContract)) {
@@ -102,12 +124,16 @@ class DeleteAccount extends Component
         if (! $user instanceof UserContract) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! $user instanceof UserContract) {
+>>>>>>> laraxot/dev
             $this->dispatch('toast', [
                 'message' => 'Tipo di utente non supportato',
                 'type' => 'error',
             ]);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f548be94 (.)
@@ -116,6 +142,9 @@ class DeleteAccount extends Component
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
             return;
         }
 
@@ -123,6 +152,7 @@ class DeleteAccount extends Component
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $result['success']) {
 =======
         if (!$result['success']) {
@@ -133,6 +163,9 @@ class DeleteAccount extends Component
         if (! $result['success']) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! $result['success']) {
+>>>>>>> laraxot/dev
             $this->dispatch('toast', [
                 'message' => $result['message'],
                 'type' => 'error',
@@ -140,6 +173,7 @@ class DeleteAccount extends Component
             $this->reset(['delete_confirm_password']);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f548be94 (.)
@@ -148,6 +182,9 @@ class DeleteAccount extends Component
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
             return;
         }
 

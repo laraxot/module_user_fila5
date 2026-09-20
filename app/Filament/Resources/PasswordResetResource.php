@@ -4,9 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Resources\PasswordResetResource\Pages\ListPasswordResets;
 use Modules\User\Filament\Resources\PasswordResetResource\Pages\ViewPasswordReset;
@@ -25,6 +28,7 @@ class PasswordResetResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * @return array<string, Component>
@@ -48,6 +52,8 @@ class PasswordResetResource extends XotBaseResource
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery();

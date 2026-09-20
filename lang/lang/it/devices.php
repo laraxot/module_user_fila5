@@ -7,11 +7,15 @@ return [
         'login_at' => [
             'label' => 'login_at',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         ],
         'logout_at' => [
             'label' => 'logout_at',
         ],
     ],
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
@@ -36,4 +40,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

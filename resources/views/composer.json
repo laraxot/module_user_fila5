@@ -18,6 +18,7 @@
     "require": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "filament/filament": "*",
         "filament/tables": "*"
 =======
@@ -32,5 +33,9 @@
         "filament/tables": "*"
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        "filament/filament": "*",
+        "filament/tables": "*"
+>>>>>>> laraxot/dev
     }
 }

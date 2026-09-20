@@ -6,11 +6,15 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Carbon;
 use Laravel\Passport\Token as PassportToken;
 use Modules\User\Traits\ResolvesPassportTokenUserRelation;
 
 /**
+<<<<<<< HEAD
  * @property bool $revoked
  * @property int|string|null $user_id
  * @property string $id
@@ -109,6 +113,23 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @property string|null $deleted_by
  * @property OauthClient|null $client
  * @property OauthRefreshToken|null $refreshToken
+=======
+ * @property bool                         $revoked
+ * @property int|string|null              $user_id
+ * @property string                       $id
+ * @property string                       $client_id
+ * @property string|null                  $name
+ * @property array<array-key, mixed>|null $scopes
+ * @property Carbon|null                  $created_at
+ * @property Carbon|null                  $updated_at
+ * @property Carbon|null                  $expires_at
+ * @property string|null                  $updated_by
+ * @property string|null                  $created_by
+ * @property string|null                  $deleted_at
+ * @property string|null                  $deleted_by
+ * @property OauthClient|null             $client
+ * @property OauthRefreshToken|null       $refreshToken
+>>>>>>> laraxot/dev
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken existsIn(array<int, string> $haystack)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken newModelQuery()
@@ -127,13 +148,18 @@ use Modules\User\Traits\ResolvesPassportTokenUserRelation;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthToken whereUserId($value)
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
  *
 >>>>>>> 60a2c9a9 (.)
+=======
+ *
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class OauthToken extends PassportToken
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     use ResolvesPassportTokenUserRelation;
@@ -148,5 +174,9 @@ class OauthToken extends PassportToken
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    use ResolvesPassportTokenUserRelation;
+
+>>>>>>> laraxot/dev
     protected $connection = 'user';
 }

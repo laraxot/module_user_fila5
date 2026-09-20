@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 use Modules\User\Database\Factories\TeamFactory;
@@ -16,7 +19,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function modelsTeamCreateUser(array $attributes = []): User
 {
@@ -240,6 +247,7 @@ test('can find teams by multiple criteria', function (): void {
     Assert::assertSame($devName, $first->name);
     Assert::assertFalse((bool) $first->personal_team);
 });
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -732,3 +740,5 @@ test('can find teams by multiple criteria', function (): void {
 });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

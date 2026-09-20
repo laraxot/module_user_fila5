@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Clusters\Passport\Resources;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Filament\Forms\Components\Select;
@@ -44,6 +45,9 @@ use Filament\Tables\Columns\TextColumn;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
 use Filament\Tables\Table;
+=======
+use Filament\Resources\Pages\PageRegistration;
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Clusters\Passport;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ListOauthAuthCodes;
@@ -61,6 +65,7 @@ class OauthAuthCodeResource extends XotBaseResource
     protected static ?string $model = OauthAuthCode::class;
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Get the form schema for the resource.
      *
@@ -191,6 +196,9 @@ class OauthAuthCodeResource extends XotBaseResource
      * @return array<string, PageRegistration>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return array<string, PageRegistration>
+>>>>>>> laraxot/dev
      */
     #[\Override]
     public static function getPages(): array

@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
 type: concept
 tags: [git, conflicts, resolution]
@@ -13,6 +14,11 @@ module: theme
 topic: git-conflicts-resolution-1
 canonical: ../../../Themes/docs/shared-components/git-conflicts-resolution-.md
 >>>>>>> 87273113 (.)
+=======
+module: theme
+topic: git-conflicts-resolution-1
+canonical: ../../../Themes/docs/shared-components/git-conflicts-resolution-.md
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -24,6 +30,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
 
@@ -338,3 +345,6 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 =======
 See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-resolution-.md
 >>>>>>> 87273113 (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-resolution-.md
+>>>>>>> laraxot/dev

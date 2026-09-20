@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Refactor Completo Campi "Città" - Modulo User"
 type: concept
@@ -217,6 +218,8 @@ Utilizzare la documentazione centrale [`translation-field-structure-complete.md`
 
 *Intervento eseguito seguendo rigorosamente i principi DRY + KISS e gli standard Laraxot <nome progetto>*
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: translation-city-field-refactor
@@ -233,4 +236,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-city-field-refactor.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Analisi di Ottimizzazione - Modulo User"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Analisi di Ottimizzazione - Modulo User
 
 ## 🎯 Principi Applicati: DRY + KISS + SOLID + ROBUST + Laraxot
@@ -758,6 +764,7 @@ class SecurityAlertService
 - [Laravel Authentication](https://laravel.com/project_docs/authentication)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Multi-tenancy Best Practices](../../../../docs/project/multi-tenancy-best-practices.md)
 - [Security Guidelines](../../../../docs/project/security-guidelines.md)
 =======
@@ -772,6 +779,10 @@ class SecurityAlertService
 - [Security Guidelines](../../../../docs/project/security-guidelines.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Multi-tenancy Best Practices](../../../../docs/project/multi-tenancy-best-practices.md)
+- [Security Guidelines](../../../../docs/project/security-guidelines.md)
+>>>>>>> laraxot/dev
 
 ---
 

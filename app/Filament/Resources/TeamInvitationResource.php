@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
@@ -12,6 +13,9 @@ use Filament\Support\Components\Component;
 =======
 use Filament\Resources\Pages\PageRegistration;
 >>>>>>> 2024e2e7 (.)
+=======
+use Filament\Resources\Pages\PageRegistration;
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Resources\TeamInvitationResource\Pages\EditTeamInvitations;
 use Modules\User\Filament\Resources\TeamInvitationResource\Pages\ListTeamInvitations;
@@ -26,6 +30,7 @@ class TeamInvitationResource extends XotBaseResource
     protected static ?string $model = TeamInvitation::class;
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Get the form schema for the resource.
      *
@@ -58,6 +63,8 @@ class TeamInvitationResource extends XotBaseResource
     /**
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
      * Get the pages available for the resource.
      *
      * @return array<string, PageRegistration>

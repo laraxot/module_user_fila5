@@ -21,6 +21,7 @@ class IsProviderConfiguredAction
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return config()->has('services.'.$provider);
 =======
         return config()->has('services.' . $provider);
@@ -31,5 +32,8 @@ class IsProviderConfiguredAction
         return config()->has('services.'.$provider);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return config()->has('services.'.$provider);
+>>>>>>> laraxot/dev
     }
 }

@@ -10,6 +10,9 @@ namespace Modules\User\Contracts;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 /*
  * Interfaccia ModelContract deprecata.
  *
@@ -18,6 +21,7 @@ namespace Modules\User\Contracts;
  *
  * Utilizzare direttamente i metodi di Eloquent Model invece di questa interfaccia.
  */
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -114,3 +118,5 @@ interface ModelContract
  */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

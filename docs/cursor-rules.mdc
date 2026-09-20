@@ -1,12 +1,16 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 module: theme
 topic: cursor-rules
 canonical: ../../../Themes/docs/shared-components/cursor-rules.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/cursor-rules.md
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -57,3 +61,5 @@ canonical: ../../../Themes/docs/shared-components/cursor-rules.md
 See canonical documentation: ../../../Themes/docs/shared-components/cursor-rules.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

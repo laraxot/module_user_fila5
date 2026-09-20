@@ -10,6 +10,7 @@ return [
             'tooltip' => 'Enter your first name',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -20,6 +21,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'last_name' => [
             'label' => 'Last Name',
@@ -28,6 +33,7 @@ return [
             'help' => 'Your family name',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -38,6 +44,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'email' => [
             'label' => 'Email',
@@ -46,6 +56,7 @@ return [
             'help' => 'Valid email address you will use to sign in',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -56,6 +67,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'phone' => [
             'label' => 'Phone',
@@ -64,6 +79,7 @@ return [
             'help' => 'Phone number to be contacted',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -74,6 +90,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'address' => [
             'label' => 'Address',
@@ -82,6 +102,7 @@ return [
             'help' => 'Street and house number of residence',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -92,6 +113,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'city' => [
             'label' => 'City',
@@ -108,6 +133,7 @@ return [
             'tooltip' => 'Enter your postal code',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -118,6 +144,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'province' => [
             'label' => 'Province',
@@ -136,6 +166,7 @@ return [
             'help' => 'Country of residence',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -146,6 +177,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'password' => [
             'label' => 'Password',
@@ -154,6 +189,7 @@ return [
             'help' => 'At least 8 characters with letters, numbers, and symbols',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -164,6 +200,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'password_confirmation' => [
             'label' => 'Confirm Password',
@@ -172,6 +212,7 @@ return [
             'help' => 'Re-enter the password to confirm it',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -182,6 +223,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'terms' => [
             'label' => 'I accept the terms and conditions',
@@ -190,6 +235,7 @@ return [
             'help' => 'You must accept the terms and conditions to continue',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -200,12 +246,17 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'newsletter' => [
             'label' => 'Subscribe to newsletter',
             'tooltip' => 'Receive updates and news via email',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -216,6 +267,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'name' => [
             'label' => 'Name',
@@ -223,6 +278,7 @@ return [
             'help' => 'Your given name',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -235,6 +291,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'state' => [
             'label' => 'Province/State',
@@ -246,6 +307,7 @@ return [
             'color' => 'primary',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -254,6 +316,9 @@ return [
             'helper_text' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+>>>>>>> laraxot/dev
         ],
         'zip' => [
             'label' => 'ZIP Code',
@@ -261,6 +326,7 @@ return [
             'help' => 'Postal code',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -273,6 +339,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'fiscal_code' => [
             'label' => 'Tax Code',
@@ -280,6 +351,7 @@ return [
             'help' => 'Italian tax code (16 characters)',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -292,6 +364,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'birth_date' => [
             'label' => 'Date of Birth',
@@ -299,6 +376,7 @@ return [
             'help' => 'Your date of birth in dd/mm/yyyy format',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -311,6 +389,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'birth_place' => [
             'label' => 'Place of Birth',
@@ -322,6 +405,7 @@ return [
             'color' => 'primary',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -330,6 +414,9 @@ return [
             'helper_text' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+>>>>>>> laraxot/dev
         ],
         'gender' => [
             'label' => 'Gender',
@@ -337,6 +424,7 @@ return [
             'help' => 'Demographic gender',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -349,6 +437,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'nationality' => [
             'label' => 'Nationality',
@@ -356,6 +449,7 @@ return [
             'help' => 'Nationality as per your identity document',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -368,6 +462,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'document_type' => [
             'label' => 'Document Type',
@@ -375,6 +474,7 @@ return [
             'help' => 'Identity card, driver\'s license, passport',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -387,6 +487,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'document_number' => [
             'label' => 'Document Number',
@@ -394,6 +499,7 @@ return [
             'help' => 'Document unique identifier',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -406,6 +512,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'document_issue_date' => [
             'label' => 'Issue Date',
@@ -413,6 +524,7 @@ return [
             'help' => 'Date when the document was issued',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -425,6 +537,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'document_expiry_date' => [
             'label' => 'Expiry Date',
@@ -432,6 +549,7 @@ return [
             'help' => 'Document expiration date',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -444,6 +562,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'document_issuing_authority' => [
             'label' => 'Issuing Authority',
@@ -451,6 +574,7 @@ return [
             'help' => 'Municipality, police headquarters, or other issuing body',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -463,6 +587,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'document_file' => [
             'label' => 'Document File',
@@ -470,6 +599,7 @@ return [
             'help' => 'Front/back scan in PDF or JPG format',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -482,6 +612,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'photo' => [
             'label' => 'Profile Photo',
@@ -489,6 +624,7 @@ return [
             'help' => 'Recent photo; square format recommended',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -501,6 +637,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'cv' => [
             'label' => 'Curriculum Vitae',
@@ -508,6 +649,7 @@ return [
             'help' => 'Updated CV in PDF format',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -520,6 +662,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'bio' => [
             'label' => 'Biography',
@@ -527,6 +674,7 @@ return [
             'help' => 'Describe yourself and your skills',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -539,6 +687,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'professional_title' => [
             'label' => 'Professional Title',
@@ -546,6 +699,7 @@ return [
             'help' => 'Your main qualification or position',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -558,6 +712,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'privacy' => [
             'label' => 'Privacy Policy',
@@ -565,6 +724,7 @@ return [
             'help' => 'Required consent for personal data processing',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -577,6 +737,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'marketing' => [
             'label' => 'Marketing Communications',
@@ -584,6 +749,7 @@ return [
             'help' => 'Optional consent to receive newsletters and promotions',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -596,6 +762,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'moderation_status' => [
             'label' => 'Moderation Status',
@@ -603,6 +774,7 @@ return [
             'help' => 'Profile verification status by administrators',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -615,6 +787,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'moderation_notes' => [
             'label' => 'Moderation Notes',
@@ -622,6 +799,7 @@ return [
             'help' => 'Any notes by the moderation team',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -634,6 +812,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
     ],
     'buttons' => [
@@ -780,6 +963,7 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
@@ -790,4 +974,8 @@ return [
     'plural_label' => 'Missing Plural label',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> laraxot/dev
 ];

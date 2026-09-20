@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Logging Performance Optimization"
 module: user
@@ -10,6 +11,8 @@ updated: 2026-08-24
 
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Logging Performance Optimization
 
 ## Rule: NEVER USE Log::info()
@@ -87,6 +90,7 @@ Metrics::increment('tickets.created');
 - [ ] All logs are errors or warnings
 - [ ] Audit trails use database tables
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Monitoring uses Telescope/Pulse
 
 
@@ -100,3 +104,6 @@ Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, 
 =======
 - [ ] Monitoring uses Telescope/Pulse
 >>>>>>> 87273113 (.)
+=======
+- [ ] Monitoring uses Telescope/Pulse
+>>>>>>> laraxot/dev

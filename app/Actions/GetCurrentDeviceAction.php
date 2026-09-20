@@ -10,6 +10,7 @@ namespace Modules\User\Actions;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
 use InvalidArgumentException;
@@ -22,6 +23,8 @@ use RuntimeException;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Jenssegers\Agent\Agent;
 use Modules\User\Models\Device;
 use Spatie\QueueableAction\QueueableAction;
@@ -32,6 +35,9 @@ class GetCurrentDeviceAction
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function __construct(
         private readonly Agent $agent,
         private readonly Device $deviceModel,
@@ -56,6 +62,7 @@ class GetCurrentDeviceAction
                 throw new \RuntimeException('Impossibile creare o trovare il dispositivo');
             }
             $device->update([...$deviceInfo, ...$browserInfo]);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -126,12 +133,17 @@ class GetCurrentDeviceAction
             $device->update([...$deviceInfo, ...$browserInfo]);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
             return $device;
         }
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $device = $this->deviceModel->firstOrCreate($deviceInfo);
         if (null === $device) {
             throw new \RuntimeException('Impossibile creare o trovare il dispositivo');
@@ -179,6 +191,7 @@ class GetCurrentDeviceAction
             'robot' => is_string($this->agent->robot()) ? $this->agent->robot() : 'unknown',
         ];
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -243,4 +256,6 @@ class GetCurrentDeviceAction
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

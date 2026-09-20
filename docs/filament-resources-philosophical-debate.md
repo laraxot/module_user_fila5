@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Filament Resources: Furious Philosophical Debate"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Filament Resources: Furious Philosophical Debate
 
 ## Data: 2025-01-02
@@ -244,6 +250,7 @@ vs
 - [Filament Resources Coverage Analysis](./filament-resources-coverage-analysis.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
 =======
 - [Filosofia Modulo User](./filosofia_modulo_user.md)
@@ -254,4 +261,7 @@ vs
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Filosofia Modulo User](./filosofia-modulo-user.md)
+>>>>>>> laraxot/dev
 - [Filament Best Practices](./filament-best-practices.md)

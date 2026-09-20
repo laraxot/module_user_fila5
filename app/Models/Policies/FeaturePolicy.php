@@ -16,6 +16,7 @@ class FeaturePolicy extends UserBasePolicy
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // return $user->hasPermissionTo('feature.view.any');
         return false;
 =======
@@ -28,6 +29,10 @@ class FeaturePolicy extends UserBasePolicy
         return false;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        // return $user->hasPermissionTo('feature.view.any');
+        return false;
+>>>>>>> laraxot/dev
     }
 
     /**

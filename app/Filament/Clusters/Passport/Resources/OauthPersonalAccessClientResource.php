@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Clusters\Passport\Resources;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 =======
@@ -16,10 +17,15 @@ use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+>>>>>>> laraxot/dev
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -33,6 +39,9 @@ use Filament\Resources\Pages\PageRegistration;
 >>>>>>> 87273113 (.)
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
+=======
+use Filament\Resources\Pages\PageRegistration;
+>>>>>>> laraxot/dev
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
@@ -55,6 +64,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, Component>
      */
     #[\Override]
@@ -75,6 +85,8 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     }
 
     /**
+=======
+>>>>>>> laraxot/dev
      * Define the table for the resource.
      */
     public static function table(Table $table): Table
@@ -83,18 +95,26 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
             ->columns(self::getTableColumns())
             ->filters(self::getTableFilters())
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->recordActions(self::getTableActions())
             ->toolbarActions(self::getTableBulkActions())
 =======
             ->actions(self::getTableActions())
             ->bulkActions(self::getTableBulkActions())
 >>>>>>> 60a2c9a9 (.)
+=======
+            ->recordActions(self::getTableActions())
+            ->toolbarActions(self::getTableBulkActions())
+>>>>>>> laraxot/dev
             ->defaultSort('created_at', 'desc');
     }
 
     /**
+<<<<<<< HEAD
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
      * Get the table columns for the resource.
      *
      * @return array<string, Tables\Columns\Column>
@@ -140,6 +160,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, Action>
 =======
      * @return array<string, \Filament\Actions\Action>
@@ -150,6 +171,9 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
      * @return array<string, Action>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return array<string, Action>
+>>>>>>> laraxot/dev
      */
     public static function getTableActions(): array
     {
@@ -164,6 +188,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, Action|ActionGroup>
 =======
      * @return array<string, \Filament\Actions\Action|\Filament\Actions\ActionGroup>
@@ -174,6 +199,9 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
      * @return array<string, Action|ActionGroup>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return array<string, Action|ActionGroup>
+>>>>>>> laraxot/dev
      */
     public static function getTableBulkActions(): array
     {
@@ -187,6 +215,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, PageRegistration>
 =======
      * @return array<string, \Filament\Resources\Pages\PageRegistration>
@@ -197,6 +226,9 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
      * @return array<string, PageRegistration>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return array<string, PageRegistration>
+>>>>>>> laraxot/dev
      */
     #[\Override]
     public static function getPages(): array

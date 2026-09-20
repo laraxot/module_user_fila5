@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Analisi Errore Logout"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Analisi Errore Logout
 
 ## Problema Identificato
@@ -154,6 +160,7 @@ class LogoutWidget extends XotBaseWidget
 - [Best Practices di Sicurezza](./security_best_practices.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Gestione Sessione](./session-management-2.md)
 =======
 - [Gestione Sessione](./session_management.md)
@@ -164,6 +171,9 @@ class LogoutWidget extends XotBaseWidget
 - [Gestione Sessione](./session-management-2.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Gestione Sessione](./session-management-2.md)
+>>>>>>> laraxot/dev
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)
 # Analisi Errore Logout
 
@@ -290,6 +300,7 @@ class LogoutWidget extends XotBaseWidget
 - [Best Practices di Sicurezza](./security_best_practices.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Gestione Sessione](./session-management-2.md)
 =======
 - [Gestione Sessione](./session_management.md)
@@ -300,4 +311,7 @@ class LogoutWidget extends XotBaseWidget
 - [Gestione Sessione](./session-management-2.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Gestione Sessione](./session-management-2.md)
+>>>>>>> laraxot/dev
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade)

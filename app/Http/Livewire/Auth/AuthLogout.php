@@ -7,6 +7,7 @@ namespace Modules\User\Http\Livewire\Auth;
 use Illuminate\Contracts\View\View;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Exception;
 >>>>>>> f548be94 (.)
@@ -15,6 +16,8 @@ use Exception;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
@@ -29,10 +32,14 @@ class AuthLogout extends Component
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         /** @var view-string $viewName */
         $viewName = 'user::livewire.auth.logout';
 
         return view($viewName);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -53,5 +60,7 @@ class AuthLogout extends Component
         return view($viewName);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

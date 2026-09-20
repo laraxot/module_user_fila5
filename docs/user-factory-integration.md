@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 title: "UserFactory Integration - Modulo User e <nome progetto>"
 type: concept
@@ -25,6 +28,7 @@ related:
 ## Overview
 
 Questo documento descrive l'integrazione tra la `UserFactory` del modulo <nome progetto> e la base `BaseUser` del modulo User, evidenziando l'architettura Single Table Inheritance (STI) implementata con Parental.
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -64,6 +68,8 @@ related:
 Questo documento descrive l'integrazione tra la `UserFactory` del modulo <nome progetto> e la base `BaseUser` del modulo User, evidenziando l'architettura Single Table Inheritance (STI) implementata con Parental.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 ## Architettura STI
 
@@ -73,10 +79,14 @@ Questo documento descrive l'integrazione tra la `UserFactory` del modulo <nome p
 BaseUser (Modules\User\Models\BaseUser)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ├── User (Modules\<nome progetto>\Models\User) - Base for STI
     ├── Patient (Modules\<nome progetto>\Models\Patient) - uses HasParent
     ├── Doctor (Modules\<nome progetto>\Models\Doctor) - uses HasParent
     └── Admin (Modules\<nome progetto>\Models\Admin) - uses HasParent
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -94,6 +104,8 @@ BaseUser (Modules\User\Models\BaseUser)
     └── Admin (Modules\<nome progetto>\Models\Admin) - uses HasParent
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ```
 
 ### Database Connection Strategy
@@ -102,6 +114,7 @@ BaseUser (Modules\User\Models\BaseUser)
 // BaseUser (Modulo User)
 protected $connection = 'user'; // Default connection
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 // User (Modulo <nome progetto>)
@@ -118,6 +131,10 @@ protected $connection = 'salute_ora'; // Override for healthcare domain
 protected $connection = '<nome progetto>'; // Override for healthcare domain
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+// User (Modulo <nome progetto>)
+protected $connection = '<nome progetto>'; // Override for healthcare domain
+>>>>>>> laraxot/dev
 ```
 
 ## Trait Distribution
@@ -137,11 +154,15 @@ use HasAuthenticationLogTrait; // Authentication logging
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ### Modulo <nome progetto> (User)
 Aggiunge trait specifici per il dominio sanitario:
 
 ```php
 // In <nome progetto>\Models\User
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -161,6 +182,8 @@ Aggiunge trait specifici per il dominio sanitario:
 // In <nome progetto>\Models\User
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use LogsActivity;        // Spatie Activity Log
 use HasStates;           // Spatie Model States
 use HasGdpr;             // GDPR compliance
@@ -182,12 +205,16 @@ use HasParent;           // Parental STI support
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 La `UserFactory` è implementata **nel modulo <nome progetto>** perché:
 
 1. **Domain Specificity**: I dati sono specifici del dominio sanitario
 2. **Enum Integration**: Usa `UserTypeEnum` e `UserState` del modulo <nome progetto>
 3. **Business Logic**: Gestisce logica sanitaria (ISEE, pregnancy, certifications)
 4. **Connection Override**: Usa database '<nome progetto>'
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -209,12 +236,17 @@ La `UserFactory` è implementata **nel modulo <nome progetto>** perché:
 4. **Connection Override**: Usa database '<nome progetto>'
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 ### Integration Pattern
 
 ```php
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 // Factory nel modulo <nome progetto>
 namespace Modules\<nome progetto>\Database\Factories;
 
@@ -222,6 +254,7 @@ class UserFactory extends Factory
 {
     protected $model = \Modules\<nome progetto>\Models\User::class;
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -245,6 +278,8 @@ class UserFactory extends Factory
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     // Genera dati compatibili con tutti i modelli della gerarchia
     public function definition(): array
     {
@@ -255,12 +290,16 @@ class UserFactory extends Factory
             'password' => Hash::make('password'),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
             // Campi User <nome progetto> (specifici dominio)
             'type' => UserTypeEnum::PATIENT,
             'state' => Pending::class,
             'is_active' => true,
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -282,6 +321,8 @@ class UserFactory extends Factory
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             // Campi sanitari specifici
             'date_of_birth' => $this->faker->dateTimeBetween('-80 years', '-18 years'),
             'gender' => $this->faker->randomElement(['M', 'F', 'Other']),
@@ -302,6 +343,9 @@ public function patient(): static
         'type' => UserTypeEnum::PATIENT,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
         // Dati anagrafici
         'fiscal_code' => $this->generateItalianFiscalCode(),
@@ -311,6 +355,7 @@ public function patient(): static
         'dental_problems' => $this->faker->optional()->sentence(),
         'last_dental_visit' => $this->faker->optional()->dateTimeBetween('-2 years'),
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -338,6 +383,8 @@ public function patient(): static
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         // Dati socio-economici
         'family_members' => $this->faker->numberBetween(1, 6),
         'children_count' => $this->faker->numberBetween(0, 4),
@@ -355,11 +402,15 @@ public function doctor(): static
         'type' => UserTypeEnum::DOCTOR,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
         // Dati professionali
         'registration_number' => 'OMD' . $this->faker->unique()->numberBetween(10000, 99999),
         'status' => 'active',
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -379,6 +430,8 @@ public function doctor(): static
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         // Specializzazioni odontoiatriche
         'certifications' => [
             'odontoiatria_generale' => true,
@@ -408,6 +461,7 @@ public function admin(): static
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 | BaseUser (User Module) | <nome progetto> User | Usage |
 =======
 | BaseUser (User Module) | SaluteOra User | Usage |
@@ -418,6 +472,9 @@ public function admin(): static
 | BaseUser (User Module) | <nome progetto> User | Usage |
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+| BaseUser (User Module) | <nome progetto> User | Usage |
+>>>>>>> laraxot/dev
 |------------------------|----------------|-------|
 | `name` | `name` | Full name compatibility |
 | `email` | `email` | Authentication |
@@ -443,6 +500,7 @@ protected function casts(): array
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // <nome progetto> User - Domain-specific casts
 =======
 // SaluteOra User - Domain-specific casts
@@ -453,6 +511,9 @@ protected function casts(): array
 // <nome progetto> User - Domain-specific casts
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+// <nome progetto> User - Domain-specific casts
+>>>>>>> laraxot/dev
 protected function casts(): array
 {
     return array_merge(parent::casts(), [
@@ -517,6 +578,7 @@ expect($user->isActive())->toBeTrue();
 - **BaseUser**: Campi generici per autenticazione e autorizzazione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **<nome progetto> User**: Campi specifici del dominio sanitario
 =======
 - **SaluteOra User**: Campi specifici del dominio sanitario
@@ -527,12 +589,16 @@ expect($user->isActive())->toBeTrue();
 - **<nome progetto> User**: Campi specifici del dominio sanitario
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- **<nome progetto> User**: Campi specifici del dominio sanitario
+>>>>>>> laraxot/dev
 - **STI Children**: Campi altamente specializzati per tipo
 
 ### 2. Factory Responsibility
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **UserFactory in <nome progetto>**: Genera dati completi per testing del dominio
 =======
 - **UserFactory in SaluteOra**: Genera dati completi per testing del dominio
@@ -543,6 +609,9 @@ expect($user->isActive())->toBeTrue();
 - **UserFactory in <nome progetto>**: Genera dati completi per testing del dominio
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- **UserFactory in <nome progetto>**: Genera dati completi per testing del dominio
+>>>>>>> laraxot/dev
 - **Compatibility**: Rispetta i vincoli del BaseUser del modulo User
 - **Extensibility**: Facilmente estendibile per nuovi tipi di utente
 
@@ -555,6 +624,7 @@ public function test_base_user_compatibility()
     $user = User::factory()->create();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
@@ -565,6 +635,9 @@ public function test_base_user_compatibility()
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
     // Test authentication contracts
     expect($user->email)->toBeString();
     expect($user->password)->toBeString();
@@ -578,6 +651,7 @@ public function test_sti_functionality()
     $doctor = User::factory()->doctor()->create();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
@@ -588,6 +662,9 @@ public function test_sti_functionality()
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
     expect($patient)->toBeInstanceOf(Patient::class);
     expect($doctor)->toBeInstanceOf(Doctor::class);
     expect($patient->type)->toBe(UserTypeEnum::PATIENT);
@@ -609,6 +686,7 @@ public function test_bulk_sti_creation()
     ]);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     User::insert($users->toArray());
 
@@ -627,6 +705,11 @@ public function test_bulk_sti_creation()
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+    User::insert($users->toArray());
+
+>>>>>>> laraxot/dev
     expect(User::count())->toBe(75);
     expect(Patient::count())->toBe(50);
     expect(Doctor::count())->toBe(20);
@@ -645,6 +728,7 @@ public function test_bulk_sti_creation()
 - Modulo User: Generics per autenticazione/autorizzazione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Modulo <nome progetto>: Specifics per dominio sanitario
 =======
 - Modulo SaluteOra: Specifics per dominio sanitario
@@ -655,12 +739,16 @@ public function test_bulk_sti_creation()
 - Modulo <nome progetto>: Specifics per dominio sanitario
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- Modulo <nome progetto>: Specifics per dominio sanitario
+>>>>>>> laraxot/dev
 - Clear boundaries e responsibilities
 
 ### 3. Testing Flexibility
 - Test generici nel modulo User
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Test specifici sanitari nel modulo <nome progetto>
 =======
 - Test specifici sanitari nel modulo SaluteOra
@@ -671,12 +759,16 @@ public function test_bulk_sti_creation()
 - Test specifici sanitari nel modulo <nome progetto>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- Test specifici sanitari nel modulo <nome progetto>
+>>>>>>> laraxot/dev
 - Factory supporta entrambi i livelli
 
 ### 4. Maintenance
 - Changes al BaseUser automaticamente ereditati
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Healthcare-specific changes isolati nel modulo <nome progetto>
 =======
 - Healthcare-specific changes isolati nel modulo SaluteOra
@@ -687,12 +779,18 @@ public function test_bulk_sti_creation()
 - Healthcare-specific changes isolati nel modulo <nome progetto>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- Healthcare-specific changes isolati nel modulo <nome progetto>
+>>>>>>> laraxot/dev
 - Factory evolution indipendente
 
 ## Links to Documentation
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ### <nome progetto> Module
 - [UserFactory Improvements Analysis](../<nome progetto>/docs/factories/userfactory-improvements-analysis.md)
 - [Model Architecture](../<nome progetto>/docs/model-architecture.md)
@@ -1066,6 +1164,7 @@ public function test_bulk_sti_creation()
 **Purpose**: Document cross-module factory integration
 **Maintainer**: Development Team
 **Review Status**: Ready for implementation
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1464,3 +1563,5 @@ public function test_bulk_sti_creation()
 **Review Status**: Ready for implementation
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

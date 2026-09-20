@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Incompatibilità tra metodi statici e di istanza in Filament"
 type: concept
@@ -16,11 +19,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Incompatibilità tra metodi statici e di istanza in Filament
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo User.
@@ -48,10 +54,14 @@ public static function getTableColumns(): array
 public function getTableColumns(): array
 ### 2. Per Widget
 <<<<<<< HEAD
+<<<<<<< HEAD
 public static function getFormSchema(): array
 =======
 public function getFormSchema(): array
 >>>>>>> 2024e2e7 (.)
+=======
+public static function getFormSchema(): array
+>>>>>>> laraxot/dev
 public function getFormSchema(): array
 ### 3. Per tutte le classi
 Rimuovere le chiamate a `->label()` per utilizzare il sistema di traduzione automatica:

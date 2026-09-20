@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 {{--
     View: user::filament.widgets.auth.login
     Enhanced UX/UI with modern 2026 design trends
@@ -110,6 +113,7 @@
             </p>
         </div>
     @endif
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -265,4 +269,6 @@ declare(strict_types=1);
     @endif
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 </div>

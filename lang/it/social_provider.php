@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 return [
     'navigation' => ['label' => 'Provider Social', 'plural_label' => 'Provider Social', 'group' => 'Gestione Utenti', 'icon' => 'heroicon-o-share', 'sort' => 93],
     'label' => 'Provider Social',
@@ -28,6 +31,7 @@ return [
             'description' => '',
         ],
         'applyFilters' => ['label' => 'Applica Filtri', 'tooltip' => 'Applica i filtri', 'helper_text' => 'Applica i filtri selezionati', 'description' => 'Azione per applicare i filtri'],
+<<<<<<< HEAD
         'scopes' => ['label' => 'scopes', 'placeholder' => 'scopes', 'helper_text' => 'scopes', 'description' => 'scopes'],
         'client_id' => ['label' => 'client_id', 'placeholder' => 'client_id', 'helper_text' => 'client_id', 'description' => 'client_id'],
         'client_secret' => ['label' => 'client_secret', 'placeholder' => 'client_secret', 'helper_text' => 'client_secret', 'description' => 'client_secret'],
@@ -41,6 +45,10 @@ return [
         'svg' => ['label' => 'svg', 'placeholder' => 'svg', 'helper_text' => 'svg', 'description' => 'svg'],
         'created_at' => ['label' => 'created_at'],
         'id' => ['label' => 'id'],
+=======
+        'created_at' => ['label' => 'created_at'],
+        'active' => ['label' => 'active'],
+>>>>>>> laraxot/dev
         'google' => ['label' => 'google', 'placeholder' => 'google', 'helper_text' => 'google', 'description' => 'google'],
         'auth0' => ['label' => 'auth0', 'placeholder' => 'auth0', 'helper_text' => 'auth0', 'description' => 'auth0'],
     ],
@@ -70,6 +78,7 @@ return [
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+<<<<<<< HEAD
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
     ],
     'messages' => ['created' => 'Provider creato con successo', 'updated' => 'Provider aggiornato con successo', 'deleted' => 'Provider eliminato con successo'],
@@ -191,4 +200,8 @@ return [
     ],
     'messages' => ['created' => 'Provider creato con successo', 'updated' => 'Provider aggiornato con successo', 'deleted' => 'Provider eliminato con successo'],
 >>>>>>> 2024e2e7 (.)
+=======
+    ],
+    'messages' => ['created' => 'Provider creato con successo', 'updated' => 'Provider aggiornato con successo', 'deleted' => 'Provider eliminato con successo'],
+>>>>>>> laraxot/dev
 ];

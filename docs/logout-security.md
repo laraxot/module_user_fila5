@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Sicurezza nel Processo di Logout"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Sicurezza nel Processo di Logout
 
 ## Analisi della Sicurezza
@@ -203,6 +209,9 @@ Log::channel('auth')->info('Logout effettuato', [
 ## Collegamenti Correlati
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management-2.md)
 - [Documentazione Volt](./volt-blade-implementation-3.md)
@@ -210,6 +219,7 @@ Log::channel('auth')->info('Logout effettuato', [
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session-management.md)
 - [Documentazione Volt](./volt-blade-implementation.md)
+<<<<<<< HEAD
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 =======
 =======
@@ -232,3 +242,6 @@ Log::channel('auth')->info('Logout effettuato', [
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Tema One Documentation](../../Themes/One/docs/README.md) 
+>>>>>>> laraxot/dev

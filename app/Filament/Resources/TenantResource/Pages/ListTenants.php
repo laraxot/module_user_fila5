@@ -5,6 +5,7 @@
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f548be94 (.)
@@ -13,10 +14,14 @@
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
 declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
@@ -44,10 +49,15 @@ use Modules\User\Models\Tenant;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Filament\Resources\TenantResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+>>>>>>> laraxot/dev
 
 class ListTenants extends XotBaseListRecords
 {
     protected static string $resource = TenantResource::class;
+<<<<<<< HEAD
 
     /**
      * Definisce le colonne della tabella per la lista tenant.
@@ -121,4 +131,6 @@ class ListTenants extends XotBaseListRecords
                 ->sortable(),
         ];
     }
+=======
+>>>>>>> laraxot/dev
 }

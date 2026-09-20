@@ -12,6 +12,7 @@ use Modules\User\Models\Role;
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * PermissionRole Factory.
 =======
  * PermissionRole Factory
@@ -22,6 +23,9 @@ use Modules\User\Models\Role;
  * PermissionRole Factory.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ * PermissionRole Factory.
+>>>>>>> laraxot/dev
  *
  * Factory for creating PermissionRole model instances for testing and seeding.
  *
@@ -43,6 +47,9 @@ class PermissionRoleFactory extends Factory
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<string, mixed>
      */
@@ -54,6 +61,7 @@ class PermissionRoleFactory extends Factory
                 'guard_name' => 'web',
             ])->id,
             'role_id' => fn () => Role::create([
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -82,6 +90,8 @@ class PermissionRoleFactory extends Factory
             'role_id' => fn () => Role::create([
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 'name' => fake()->unique()->slug(),
                 'guard_name' => 'web',
             ])->id,
@@ -92,10 +102,14 @@ class PermissionRoleFactory extends Factory
      * Create permission-role relationship for a specific permission.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function forPermission(Permission $permission): static
     {
         return $this->state(fn (array $_attributes): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -116,6 +130,8 @@ class PermissionRoleFactory extends Factory
         return $this->state(fn (array $_attributes): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'permission_id' => $permission->id,
         ]);
     }
@@ -124,10 +140,14 @@ class PermissionRoleFactory extends Factory
      * Create permission-role relationship for a specific role.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function forRole(Role $role): static
     {
         return $this->state(fn (array $_attributes): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -148,6 +168,8 @@ class PermissionRoleFactory extends Factory
         return $this->state(fn (array $_attributes): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'role_id' => $role->id,
         ]);
     }

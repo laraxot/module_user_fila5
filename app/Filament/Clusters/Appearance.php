@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Clusters;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Clusters\XotBaseCluster;
 
 /**
@@ -18,6 +21,7 @@ use Modules\Xot\Filament\Clusters\XotBaseCluster;
  */
 class Appearance extends XotBaseCluster
 {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -44,4 +48,6 @@ class Appearance extends XotBaseCluster
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

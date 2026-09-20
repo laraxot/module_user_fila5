@@ -6,6 +6,9 @@ use Illuminate\Console\Command;
 use Modules\User\Console\Commands\ChangeTypeCommand;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
@@ -14,7 +17,11 @@ uses(TestCase::class);
 
 function changeTypeCommandInstance(): ChangeTypeCommand
 {
+<<<<<<< HEAD
     return new ChangeTypeCommand;
+=======
+    return new ChangeTypeCommand();
+>>>>>>> laraxot/dev
 }
 
 test('change type command can be instantiated', function (): void {
@@ -75,6 +82,7 @@ test('change type command docblock documents purpose', function (): void {
 
     Assert::assertIsString($docComment);
     Assert::assertStringContainsString('Command to change user type', $docComment);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -295,4 +303,6 @@ test('change type command docblock documents purpose', function (): void {
     Assert::assertStringContainsString('Command to change user type', $docComment);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature\Filament\Resources;
 
 use Filament\Actions\Action;
@@ -21,6 +24,7 @@ use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -61,12 +65,17 @@ use PHPUnit\Framework\Assert;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
 use Modules\User\Models\User;
+=======
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     UserFactory::new()
         ->create([
             'type' => UserType::MasterAdmin,
@@ -89,7 +98,11 @@ describe('User Resource', function (): void {
 
     test('user resource has correct form schema', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $form = UserResource::getFormSchema();
+=======
+        $form = app(UserResource::class)->getFormSchema();
+>>>>>>> laraxot/dev
 
         Assert::assertArrayHasKey('section01', $form);
         Assert::assertArrayHasKey('section02', $form);
@@ -114,19 +127,31 @@ describe('User Resource', function (): void {
     });
 
     test('user resource has combined relation manager tabs', function (): void {
+<<<<<<< HEAD
         $resource = new UserResource;
+=======
+        $resource = new UserResource();
+>>>>>>> laraxot/dev
 
         Assert::assertTrue($resource->hasCombinedRelationManagerTabsWithContent());
     });
 
     test('user resource extends correct base class', function (): void {
+<<<<<<< HEAD
         $resource = new UserResource;
+=======
+        $resource = new UserResource();
+>>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(XotBaseResource::class, $resource);
     });
 
     test('user resource form schema has correct column spans', function (): void {
+<<<<<<< HEAD
         $form = UserResource::getFormSchema();
+=======
+        $form = app(UserResource::class)->getFormSchema();
+>>>>>>> laraxot/dev
 
         $section01 = $form['section01'];
         $section02 = $form['section02'];
@@ -137,13 +162,21 @@ describe('User Resource', function (): void {
 
     test('user resource name field is required', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $form = UserResource::getFormSchema();
+=======
+        $form = app(UserResource::class)->getFormSchema();
+>>>>>>> laraxot/dev
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $nameField = userResourceFindComponentByName($section01Schema, 'name');
 
+<<<<<<< HEAD
         if ($nameField === null) {
+=======
+        if (null === $nameField) {
+>>>>>>> laraxot/dev
             $this->skipTest('name field not found in section01 schema');
         }
 
@@ -152,13 +185,21 @@ describe('User Resource', function (): void {
 
     test('user resource email field is required', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $form = UserResource::getFormSchema();
+=======
+        $form = app(UserResource::class)->getFormSchema();
+>>>>>>> laraxot/dev
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $emailField = userResourceFindComponentByName($section01Schema, 'email');
 
+<<<<<<< HEAD
         if ($emailField === null) {
+=======
+        if (null === $emailField) {
+>>>>>>> laraxot/dev
             $this->skipTest('email field not found in section01 schema');
         }
 
@@ -167,13 +208,21 @@ describe('User Resource', function (): void {
 
     test('user resource password field is required only on create', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $form = UserResource::getFormSchema();
+=======
+        $form = app(UserResource::class)->getFormSchema();
+>>>>>>> laraxot/dev
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $passwordField = userResourceFindComponentByName($section01Schema, 'password');
 
+<<<<<<< HEAD
         if ($passwordField === null) {
+=======
+        if (null === $passwordField) {
+>>>>>>> laraxot/dev
             $this->skipTest('password field not found in section01 schema');
         }
 
@@ -182,7 +231,11 @@ describe('User Resource', function (): void {
 
     test('user resource password field has correct type', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $form = UserResource::getFormSchema();
+=======
+        $form = app(UserResource::class)->getFormSchema();
+>>>>>>> laraxot/dev
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
@@ -195,13 +248,21 @@ describe('User Resource', function (): void {
 
     test('user resource email field has unique validation', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $form = UserResource::getFormSchema();
+=======
+        $form = app(UserResource::class)->getFormSchema();
+>>>>>>> laraxot/dev
         $section01 = $form['section01'];
         $section01Schema = userResourceSectionComponents($this, $section01);
 
         $emailField = userResourceFindComponentByName($section01Schema, 'email');
 
+<<<<<<< HEAD
         if ($emailField === null) {
+=======
+        if (null === $emailField) {
+>>>>>>> laraxot/dev
             $this->skipTest('email field not found in section01 schema');
         }
 
@@ -210,13 +271,21 @@ describe('User Resource', function (): void {
 
     test('user resource created at field shows diff for humans', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $form = UserResource::getFormSchema();
+=======
+        $form = app(UserResource::class)->getFormSchema();
+>>>>>>> laraxot/dev
         $section02 = $form['section02'];
         $section02Schema = userResourceSectionComponents($this, $section02);
 
         $createdAtField = userResourceFindComponentByName($section02Schema, 'created_at');
 
+<<<<<<< HEAD
         if ($createdAtField === null) {
+=======
+        if (null === $createdAtField) {
+>>>>>>> laraxot/dev
             $this->skipTest('created_at field not found in section02 schema');
         }
 
@@ -224,12 +293,17 @@ describe('User Resource', function (): void {
     });
 
     test('user resource can be instantiated', function (): void {
+<<<<<<< HEAD
         $resource = new UserResource;
+=======
+        $resource = new UserResource();
+>>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(UserResource::class, $resource);
     });
 
     test('user resource has correct model', function (): void {
+<<<<<<< HEAD
         $resource = new UserResource;
 
         Assert::assertInstanceOf(UserResource::class, $resource);
@@ -578,4 +652,10 @@ describe('User Resource', function (): void {
     });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $resource = new UserResource();
+
+        Assert::assertInstanceOf(UserResource::class, $resource);
+    });
+>>>>>>> laraxot/dev
 });

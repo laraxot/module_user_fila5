@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Widgets;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Schemas\Components\Component;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
@@ -47,6 +50,7 @@ class RegistrationWidget extends XotBaseSchemaWidget
         Assert::subclassOf($modelClass, Model::class);
         $this->model = $modelClass;
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -145,6 +149,8 @@ class RegistrationWidget extends XotBaseSchemaWidget
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $this->action = Str::of($this->model)
             ->replace('\\Models\\', '\\Actions\\')
             ->append('\\RegisterAction')
@@ -153,6 +159,7 @@ class RegistrationWidget extends XotBaseSchemaWidget
         $data = $this->getFormFill();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         $this->data = $data;
         $this->form->fill($this->data);
@@ -169,12 +176,18 @@ class RegistrationWidget extends XotBaseSchemaWidget
         $this->form->fill($this->data);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+        $this->data = $data;
+        $this->form->fill($this->data);
+>>>>>>> laraxot/dev
         $this->form->model($record);
         $this->record = $record;
     }
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     #[Override]
 >>>>>>> f548be94 (.)
@@ -183,6 +196,8 @@ class RegistrationWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public function getFormModel(): Model
     {
         $data = request()->all();
@@ -191,6 +206,9 @@ class RegistrationWidget extends XotBaseSchemaWidget
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $user = is_string($email)
             ? $this->model::firstWhere('email', $email)
             : null;
@@ -230,6 +248,7 @@ class RegistrationWidget extends XotBaseSchemaWidget
     {
         /** @var array<string, mixed> $data */
         $data = SafeArrayCastAction::cast(parent::getFormFill());
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -301,6 +320,8 @@ class RegistrationWidget extends XotBaseSchemaWidget
         $data = SafeArrayCastAction::cast(parent::getFormFill());
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $data['type'] = $this->type;
 
         return $data;
@@ -308,12 +329,16 @@ class RegistrationWidget extends XotBaseSchemaWidget
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<int|string, Component>
      */
     public function getFormSchema(): array
     {
         return self::normalizeFormSchema($this->resource::getFormSchemaWidget());
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -333,6 +358,8 @@ class RegistrationWidget extends XotBaseSchemaWidget
         return self::normalizeFormSchema($this->resource::getFormSchemaWidget());
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -340,6 +367,9 @@ class RegistrationWidget extends XotBaseSchemaWidget
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     // @override
     public function register(): RedirectResponse|Redirector
     {
@@ -383,6 +413,7 @@ class RegistrationWidget extends XotBaseSchemaWidget
 
         return $normalized;
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -453,4 +484,6 @@ class RegistrationWidget extends XotBaseSchemaWidget
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

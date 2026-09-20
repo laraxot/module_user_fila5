@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -49,12 +50,19 @@ use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ListAuthenti
 use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ViewAuthenticationLog;
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\User;
+=======
+use Illuminate\Database\Eloquent\Builder;
+use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ListAuthenticationLogs;
+use Modules\User\Filament\Resources\AuthenticationLogResource\Pages\ViewAuthenticationLog;
+use Modules\User\Models\AuthenticationLog;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class AuthenticationLogResource extends XotBaseResource
 {
     protected static ?string $model = AuthenticationLog::class;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -195,6 +203,8 @@ class AuthenticationLogResource extends XotBaseResource
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public static function getPages(): array
     {
         return [
@@ -203,6 +213,7 @@ class AuthenticationLogResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * @return array<string, Component>
@@ -290,6 +301,8 @@ class AuthenticationLogResource extends XotBaseResource
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['authenticatable']);

@@ -11,12 +11,16 @@ namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\DeleteAction;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Filament\Actions\Header\ChangePasswordHeaderAction;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord as EditRecord;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -41,6 +45,8 @@ use Modules\User\Models\User;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord as EditRecord;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 /**
@@ -55,6 +61,7 @@ abstract class BaseEditUser extends EditRecord
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // PHPStan Level 10: $data is already typed as array, no need for assertion
         if (! array_key_exists('new_password', $data) || ! filled($data['new_password'])) {
 =======
@@ -69,6 +76,10 @@ abstract class BaseEditUser extends EditRecord
         if (! array_key_exists('new_password', $data) || ! filled($data['new_password'])) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        // PHPStan Level 10: $data is already typed as array, no need for assertion
+        if (! array_key_exists('new_password', $data) || ! filled($data['new_password'])) {
+>>>>>>> laraxot/dev
             return $data;
         }
 
@@ -82,6 +93,7 @@ abstract class BaseEditUser extends EditRecord
         // Verifichiamo il tipo e convertiamo in modo sicuro
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! is_string($newPassword)) {
             if (! is_scalar($newPassword)) {
                 throw new \InvalidArgumentException('La password deve essere una stringa');
@@ -100,6 +112,11 @@ abstract class BaseEditUser extends EditRecord
                 throw new \InvalidArgumentException('La password deve essere una stringa');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! is_string($newPassword)) {
+            if (! is_scalar($newPassword)) {
+                throw new \InvalidArgumentException('La password deve essere una stringa');
+>>>>>>> laraxot/dev
             }
             $newPassword = (string) $newPassword;
         }
@@ -107,6 +124,7 @@ abstract class BaseEditUser extends EditRecord
         $this->record->update(['password' => Hash::make($newPassword)]);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f548be94 (.)
@@ -115,6 +133,9 @@ abstract class BaseEditUser extends EditRecord
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
         return $data;
     }
 
@@ -123,6 +144,7 @@ abstract class BaseEditUser extends EditRecord
         return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'delete' => DeleteAction::make(),
             'change-password' => ChangePasswordHeaderAction::make('change-password'),
 =======
@@ -137,6 +159,10 @@ abstract class BaseEditUser extends EditRecord
             'change-password' => ChangePasswordHeaderAction::make('change-password'),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'delete' => DeleteAction::make(),
+            'change-password' => ChangePasswordHeaderAction::make('change-password'),
+>>>>>>> laraxot/dev
         ];
     }
 }

@@ -16,5 +16,12 @@ return [
     ],
     'actions' => [
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+<<<<<<< HEAD
+=======
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'edit' => ['tooltip' => 'edit', 'icon' => 'edit', 'label' => 'edit'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+>>>>>>> laraxot/dev
     ],
 ];

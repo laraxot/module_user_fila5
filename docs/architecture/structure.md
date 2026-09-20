@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Modulo User"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Modulo User
 
 Data: 2025-04-23 19:09:56
@@ -40,6 +46,7 @@ Modules\\User\\Database\\Factories
 Modules\\User\\Database\\Seeders
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_user_fila5
 =======
 - **Pacchetto Composer**: laraxot/module_user_fila3
@@ -50,6 +57,9 @@ Modules\\User\\Database\\Seeders
 - **Pacchetto Composer**: laraxot/module_user_fila5
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- **Pacchetto Composer**: laraxot/module_user_fila5
+>>>>>>> laraxot/dev
 Marco Sottana
 - **Dipendenze**: flowframe/laravel-trend * jenssegers/agent * laravel/passport * socialiteproviders/auth0 * spatie/laravel-personal-data-export * repositories type path url ../Xot type path url ../Tenant type path url ../UI 
 - **Totale file PHP**: 673

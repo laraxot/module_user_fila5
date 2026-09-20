@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Pages\Auth;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Schemas\Components\Component;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Filament\Pages\Auth\XotBaseEditProfile;
@@ -18,6 +21,7 @@ class EditProfile extends XotBaseEditProfile
      * Costruisce il form schema per la pagina di modifica profilo.
      *
      * @return array<int|string, Component>
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -48,6 +52,8 @@ class EditProfile extends XotBaseEditProfile
      * @return array<int|string, Component>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     public function getFormSchema(): array
     {

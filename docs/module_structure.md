@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "module_structure - User"
 module: user
@@ -10,6 +11,8 @@ updated: 2026-08-24
 
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # module_structure - User
 
 ## Overview

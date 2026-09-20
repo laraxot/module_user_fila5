@@ -127,6 +127,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'email' => 'Email',
         'login' => 'Login',
         'name' => 'Nazwa użytkownika',
@@ -143,6 +146,7 @@ return [
     ],
     'or' => 'Lub',
     'cancel' => 'Anuluj',
+<<<<<<< HEAD
 =======
         'email' => [
             'label' => 'Email',
@@ -237,4 +241,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

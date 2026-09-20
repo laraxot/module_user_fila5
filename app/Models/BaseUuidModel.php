@@ -7,6 +7,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // //use Laravel\Scout\Searchable;
 =======
 =======
@@ -22,6 +23,9 @@ use Modules\Xot\Actions\Factory\GetFactoryAction;
 // //use Laravel\Scout\Searchable;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+// //use Laravel\Scout\Searchable;
+>>>>>>> laraxot/dev
 use Modules\Xot\Models\XotBaseUuidModel;
 use Modules\Xot\Traits\Updater;
 
@@ -32,10 +36,14 @@ abstract class BaseUuidModel extends XotBaseUuidModel
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     use HasUuids;
 
     // use Searchable;
     // //use Cachable;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -53,6 +61,8 @@ abstract class BaseUuidModel extends XotBaseUuidModel
     // //use Cachable;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     use Updater;
 
     /**
@@ -61,6 +71,9 @@ abstract class BaseUuidModel extends XotBaseUuidModel
      * @see https://laravel-news.com/6-eloquent-secrets
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public static $snakeAttributes = true;
 
@@ -74,6 +87,7 @@ abstract class BaseUuidModel extends XotBaseUuidModel
 
     protected $perPage = 30;
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -117,6 +131,8 @@ abstract class BaseUuidModel extends XotBaseUuidModel
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected $connection = 'user';
 
     /** @var list<string> */
@@ -127,6 +143,7 @@ abstract class BaseUuidModel extends XotBaseUuidModel
         // 'password'
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -149,6 +166,8 @@ abstract class BaseUuidModel extends XotBaseUuidModel
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     /** @return array<string, string> */
     protected function casts(): array
     {

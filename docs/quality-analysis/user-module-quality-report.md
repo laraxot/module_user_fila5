@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Analisi Qualità - Modulo User"
 type: concept
@@ -17,11 +20,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Analisi Qualità - Modulo User
 
 **Data Analisi**: 2025-01-22
@@ -63,6 +69,7 @@ related:
 **Problema**: Loop con update individuali (50+ query)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Soluzione**: Bulk update (già documentata in `code-quality-analysis.md`)
 =======
 **Soluzione**: Bulk update (già documentata in `code_quality_analysis.md`)
@@ -73,6 +80,9 @@ related:
 **Soluzione**: Bulk update (già documentata in `code-quality-analysis.md`)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+**Soluzione**: Bulk update (già documentata in `code-quality-analysis.md`)
+>>>>>>> laraxot/dev
 
 ### 2. Code Duplication (MEDIUM Priority)
 
@@ -110,6 +120,7 @@ related:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Code Quality Analysis](./code-quality-analysis.md)
 - [Optimization Analysis](./optimization-analysis.md)
 - [Business Logic Deep Dive](./business-logic-deep-dive.md)
@@ -128,6 +139,11 @@ related:
 - [Business Logic Deep Dive](./business-logic-deep-dive.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Code Quality Analysis](./code-quality-analysis.md)
+- [Optimization Analysis](./optimization-analysis.md)
+- [Business Logic Deep Dive](./business-logic-deep-dive.md)
+>>>>>>> laraxot/dev
 - [Xot Quality Analysis](../xot/docs/quality-analysis/current-status.md)
 
 ## 📝 Note

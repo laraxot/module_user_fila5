@@ -4,10 +4,14 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Unit\Events;
 
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Database\Factories\UserFactory;
+<<<<<<< HEAD
 =======
 uses(Modules\User\Tests\TestCase::class);
 
@@ -22,6 +26,8 @@ use Modules\User\Contracts\TeamContract;
 use Modules\User\Database\Factories\UserFactory;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Events\AddingTeam;
 use Modules\User\Events\AddingTeamMember;
 use Modules\User\Events\RecoveryCodeReplaced;
@@ -32,6 +38,7 @@ use Modules\User\Events\TeamMemberUpdated;
 use Modules\User\Events\TeamSwitched;
 use Modules\User\Events\TwoFactorAuthenticationDisabled;
 use Modules\User\Events\TwoFactorAuthenticationEnabled;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\User\Tests\TestCase;
@@ -215,6 +222,8 @@ test('TeamSwitched event can be instantiated', function () {
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -301,6 +310,9 @@ describe('Event Classes', function (): void {
 
         Assert::assertInstanceOf(TeamSwitched::class, $event);
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

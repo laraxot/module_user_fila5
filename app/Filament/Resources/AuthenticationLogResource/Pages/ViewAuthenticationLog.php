@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\AuthenticationLogResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
@@ -124,4 +125,17 @@ class ViewAuthenticationLog extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+use Filament\Schemas\Components\Component;
+use Modules\User\Filament\Resources\AuthenticationLogResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+
+class ViewAuthenticationLog extends XotBaseViewRecord
+{
+    protected static string $resource = AuthenticationLogResource::class;
+
+    /*
+     * @return array<string, Component>
+     */
+>>>>>>> laraxot/dev
 }

@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -20,11 +21,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'column.name' => 'نام',
     'column.guard_name' => 'نام گارد',
     'column.roles' => 'نقش‌ها',
     'column.permissions' => 'دسترسی‌ها',
     'column.updated_at' => 'به‌روزشده در',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -42,11 +46,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'field.name' => 'نام',
     'field.guard_name' => 'نام گارد',
     'field.permissions' => 'دسترسی‌ها',
     'field.select_all.name' => 'انتخاب همه',
     'field.select_all.message' => 'تمام دسترسی‌های <span class="text-primary font-medium">فعال</span> فعلی را برای این نقش فعال کن.',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -64,11 +71,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'نقش‌ها',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'نقش',
     'resource.label.roles' => 'نقش‌ها',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -86,11 +96,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'section' => 'موجودیت‌ها',
     'resources' => 'منابع',
     'widgets' => 'ویجت‌ها',
     'pages' => 'صفحات',
     'custom' => 'دسترسی‌های سفارشی',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     'forbidden' => 'شما اجازه دسترسی ندارید.',
@@ -117,6 +130,9 @@ return [
     'forbidden' => 'شما اجازه دسترسی ندارید.',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    'forbidden' => 'شما اجازه دسترسی ندارید.',
+>>>>>>> laraxot/dev
     'resource_permission_prefixes_labels' => [
         'view' => 'نمایش',
         'view_any' => 'نمایش همه',
@@ -133,9 +149,12 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -150,9 +169,12 @@ return [
     'actions' => [
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

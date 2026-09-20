@@ -6,11 +6,15 @@ namespace Modules\User\Database\Seeders;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Console\Command;
 use Illuminate\Database\Seeder;
 use Modules\User\Models\Role;
 
 final class RolesSeeder extends Seeder
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -31,6 +35,8 @@ use Modules\User\Models\Role;
 final class RolesSeeder extends Seeder
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 {
     /**
      * Table headers for output display.
@@ -50,6 +56,9 @@ final class RolesSeeder extends Seeder
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $roles = [
             ['name' => 'super-admin', 'guard_name' => 'web'],
             ['name' => 'admin', 'guard_name' => 'web'],
@@ -66,6 +75,7 @@ final class RolesSeeder extends Seeder
 
         // Display results in a table format
         $this->displayResults($createdRoles);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -95,6 +105,8 @@ final class RolesSeeder extends Seeder
         $this->displayResults($createdRoles);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -106,12 +118,16 @@ final class RolesSeeder extends Seeder
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $command = $this->getConsoleCommand();
         $command->info('Roles seeded successfully:');
         $command->table(
             self::$OUTPUT_TABLE_HEADERS,
             collect($roles)
                 ->map(static fn (Role $role, int $index) => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -132,6 +148,8 @@ final class RolesSeeder extends Seeder
                 ->map(static fn (Role $role, int $index) => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                     $index + 1,
                     $role->name,
                     $role->guard_name,
@@ -141,18 +159,24 @@ final class RolesSeeder extends Seeder
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     private function getConsoleCommand(): Command
     {
         return $this->command;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
@@ -15,6 +18,7 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Foundation\Auth\User as AuthUser;
 use Modules\User\Models\OauthClient;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -44,6 +48,8 @@ use Illuminate\Foundation\Auth\User as AuthUser;
 use Modules\User\Models\OauthClient;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class ClientsRelationManager extends XotBaseRelationManager
@@ -52,6 +58,9 @@ class ClientsRelationManager extends XotBaseRelationManager
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     protected static ?string $recordTitleAttribute = 'name';
 
     /**
@@ -89,6 +98,50 @@ class ClientsRelationManager extends XotBaseRelationManager
     }
 
     /**
+<<<<<<< HEAD
+=======
+     * Issue module_user_fila5#97 (2026-09-15): `detach` (ereditato da
+     * `XotBaseRelationManager::getTableActions()`) chiama
+     * `$relationship->detach($record)` — metodo che esiste solo su
+     * `BelongsToMany` (`Filament\Actions\DetachAction`, letto nel sorgente
+     * vendor). `clients()` è una `MorphMany`: cliccare "detach" avrebbe
+     * lanciato `Call to undefined method MorphMany::detach()`. Sostituita
+     * con un'azione simmetrica ad "associateExistingClient": azzera sia
+     * `owner_id`/`owner_type` (letti da questa stessa tab) sia `user_id`
+     * (letto da `AssociatePassportClientToUser.php`) — altrimenti un futuro
+     * `php artisan user:backfill-oauth-client-owner` ripristinerebbe
+     * l'associazione appena rimossa, trovando ancora `user_id` valorizzato.
+     *
+     * @return array<string, Action>
+     */
+    #[\Override]
+    public function getTableActions(): array
+    {
+        $actions = parent::getTableActions();
+        unset($actions['detach']);
+
+        $actions['dissociateClient'] = Action::make('dissociateClient')
+            ->label('Rimuovi associazione')
+            ->icon('heroicon-o-link-slash')
+            ->color('danger')
+            ->iconButton()
+            ->requiresConfirmation()
+            ->action(function (OauthClient $record): void {
+                $record->owner()->dissociate();
+                $record->forceFill(['user_id' => null]);
+                $record->save();
+
+                Notification::make()
+                    ->title('Associazione rimossa.')
+                    ->success()
+                    ->send();
+            });
+
+        return $actions;
+    }
+
+    /**
+>>>>>>> laraxot/dev
      * @return array<string, Action>
      */
     #[\Override]
@@ -152,6 +205,19 @@ class ClientsRelationManager extends XotBaseRelationManager
                     return;
                 }
 
+<<<<<<< HEAD
+=======
+                // Issue module_user_fila5#97 (2026-09-15): scrivere solo user_id
+                // lasciava owner_id/owner_type vuoti — questa stessa tab legge da
+                // clients() (BaseUser::clients(), morphMany su 'owner'), quindi il
+                // client appena associato non ricompariva mai in questa lista, e
+                // restava bloccato su SurveyController::createContacts (l'endpoint
+                // reale usato dagli script clienti), che legge solo $client->owner.
+                // owner()->associate() valorizza owner_id/owner_type correttamente;
+                // user_id resta impostato per compatibilità con gli altri punti del
+                // codice che lo leggono ancora (es. AssociatePassportClientToUser).
+                $client->owner()->associate($owner);
+>>>>>>> laraxot/dev
                 $client->forceFill([
                     'user_id' => $owner->getKey(),
                 ]);
@@ -164,6 +230,7 @@ class ClientsRelationManager extends XotBaseRelationManager
             });
 
         return $actions;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -320,5 +387,7 @@ class ClientsRelationManager extends XotBaseRelationManager
         return $actions;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

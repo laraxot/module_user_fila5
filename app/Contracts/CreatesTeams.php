@@ -14,6 +14,7 @@ interface CreatesTeams
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @param array<string, mixed> $input
      */
@@ -26,5 +27,10 @@ interface CreatesTeams
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @param array<string, mixed> $input
+     */
+>>>>>>> laraxot/dev
     public function create(UserContract $userContract, array $input): TeamContract;
 }

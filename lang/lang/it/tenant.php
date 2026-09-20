@@ -12,6 +12,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'first_name' => 'Nome',
         'last_name' => 'Cognome',
         'secondary_color' => [
@@ -25,6 +28,7 @@ return [
         ],
         'id' => [
             'label' => 'id',
+<<<<<<< HEAD
 =======
         'first_name' => [
             'label' => 'Nome',
@@ -62,6 +66,8 @@ return [
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -80,8 +86,11 @@ return [
         'change_password' => 'Cambio password',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

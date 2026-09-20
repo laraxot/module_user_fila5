@@ -9,6 +9,9 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'current_password' => ['label' => 'Current Password', 'validation_attribute' => 'current_password', 'tooltip' => '', 'helper_text' => '', 'description' => '', 'placeholder' => 'current_password'],
         'password' => ['label' => 'Password', 'validation_attribute' => 'password', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'password_confirmation' => ['label' => 'Confirm Password', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -17,6 +20,7 @@ return [
         'current_password' => ['label' => 'Current Password', 'validation_attribute' => 'current_password'],
         'password' => ['label' => 'Password', 'validation_attribute' => 'password'],
         'password_confirmation' => ['label' => 'Confirm Password'],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -58,12 +62,15 @@ return [
         'password_confirmation' => ['label' => 'Confirm Password'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'reset_password' => ['label' => 'Reset Password'],
         'cancel' => ['label' => 'Cancel'],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'showPassword' => ['label' => 'showPassword', 'icon' => 'showPassword', 'tooltip' => 'showPassword'],
         'hidePassword' => ['label' => 'hidePassword', 'icon' => 'hidePassword', 'tooltip' => 'hidePassword'],
         'resetPassword' => ['label' => 'resetPassword', 'icon' => 'resetPassword', 'tooltip' => 'resetPassword'],
@@ -76,12 +83,20 @@ return [
         'resetPassword' => ['label' => 'resetPassword', 'icon' => 'resetPassword', 'tooltip' => 'resetPassword'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'showPassword' => ['label' => 'showPassword', 'icon' => 'showPassword', 'tooltip' => 'showPassword'],
+        'hidePassword' => ['label' => 'hidePassword', 'icon' => 'hidePassword', 'tooltip' => 'hidePassword'],
+        'resetPassword' => ['label' => 'resetPassword', 'icon' => 'resetPassword', 'tooltip' => 'resetPassword'],
+>>>>>>> laraxot/dev
     ],
     'reset_password' => 'Reset Password',
     'password_reset' => 'Password Reset',
     'notifications' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'wrong_password' => ['title' => 'Wrong Password', 'body' => 'The current password you entered is incorrect.'],
         'column_not_found' => ['title' => 'Column Not Found', 'body' => 'Either the column ":column_name" or the password column ":password_column_name" was not found in the :table_name table.'],
         'password_reset' => ['success' => 'Password Reset Successful'],
@@ -98,6 +113,7 @@ return [
     ],
     'label' => 'Password Expired',
     'plural_label' => 'Password Expired (Plurale)',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -142,4 +158,6 @@ return [
     'plural_label' => 'Password Expired (Plurale)',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

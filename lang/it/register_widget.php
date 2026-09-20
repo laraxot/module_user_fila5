@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'navigation' => ['label' => 'Registrazione', 'plural_label' => 'Registrazione', 'group' => 'Autenticazione', 'icon' => 'heroicon-o-user-plus', 'sort' => 2],
     'label' => 'Registrazione',
     'plural_label' => 'Registrazione',
@@ -30,6 +33,7 @@ return [
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'messages' => ['success' => 'Registrazione completata con successo', 'error' => 'Si è verificato un errore'],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -158,4 +162,6 @@ return [
     'messages' => ['success' => 'Registrazione completata con successo', 'error' => 'Si è verificato un errore'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

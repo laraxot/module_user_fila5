@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Fix: team_user Composite Primary Key Implementation"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Fix: team_user Composite Primary Key Implementation
 
 ## Data Intervento
@@ -271,6 +277,7 @@ $membership = Membership::where('team_id', $team->id)
 - [TeamsRelationManager](../../app/Filament/Resources/UserResource/RelationManagers/TeamsRelationManager.php)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Pivot Tables](../../../../docs/pivot-tables-best-practices.md)
 =======
 - [Documentazione Pivot Tables](../../../docs/pivot-tables-best-practices.md)
@@ -281,6 +288,9 @@ $membership = Membership::where('team_id', $team->id)
 - [Documentazione Pivot Tables](../../../../docs/pivot-tables-best-practices.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Documentazione Pivot Tables](../../../../docs/pivot-tables-best-practices.md)
+>>>>>>> laraxot/dev
 
 ## Note Tecniche
 
@@ -303,6 +313,7 @@ $membership = Membership::where('team_id', $team->id)
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: novembre 2025*
 >>>>>>> 60a2c9a9 (.)
@@ -311,4 +322,6 @@ $membership = Membership::where('team_id', $team->id)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 *Status: IMPLEMENTATO E VALIDATO*

@@ -12,6 +12,7 @@ use Modules\Xot\Datas\XotData;
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
 =======
@@ -24,6 +25,9 @@ return new class extends XotBaseMigration
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -40,6 +44,7 @@ return new class extends XotBaseMigration
             $team_class = XotData::make()->getTeamClass();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (! $this->hasColumn('team_id')) {
 =======
             if (!$this->hasColumn('team_id')) {
@@ -53,6 +58,12 @@ return new class extends XotBaseMigration
                 $table->foreignIdFor($team_class, 'team_id')->nullable();
             }
             if ($this->getColumnType('model_id') === 'uuid') {
+=======
+            if (! $this->hasColumn('team_id')) {
+                $table->foreignIdFor($team_class, 'team_id')->nullable();
+            }
+            if ('uuid' === $this->getColumnType('model_id')) {
+>>>>>>> laraxot/dev
                 $table->string('model_id', 36)->index()->change();
             }
             $this->updateTimestamps($table);

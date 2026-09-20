@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 title: "User Module Traits"
 type: concept
@@ -65,6 +68,7 @@ class User extends Authenticatable
 
 - [Modulo User](./README.md)
 - [Xot Traits](../../Xot/docs/)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -553,3 +557,5 @@ class User extends Authenticatable
 - [Xot Traits](../../Xot/docs/)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

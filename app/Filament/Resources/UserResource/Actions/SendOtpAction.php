@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\UserResource\Actions;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Models\User;
 use Modules\Xot\Filament\Actions\XotBaseAction;
@@ -27,10 +28,16 @@ use Modules\User\Models\User;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Actions\Otp\SendOtpByUserAction;
+use Modules\User\Models\User;
+use Modules\Xot\Filament\Actions\XotBaseAction;
+>>>>>>> laraxot/dev
 
 /**
  * Azione Filament per l'invio di un OTP all'utente.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 class SendOtpAction extends XotBaseAction
@@ -43,6 +50,9 @@ class SendOtpAction extends Action
 class SendOtpAction extends XotBaseAction
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+class SendOtpAction extends XotBaseAction
+>>>>>>> laraxot/dev
 {
     protected function setUp(): void
     {
@@ -50,6 +60,7 @@ class SendOtpAction extends XotBaseAction
 
         $this->tooltip(trans('user::otp.actions.send_otp'))
             ->icon('heroicon-o-key')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             ->action(function (User $record): void {
@@ -83,10 +94,20 @@ class SendOtpAction extends XotBaseAction
                 // PHPStan Level 10: User extends BaseUser which implements UserContract
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            ->action(function (User $record): void {
+                // User already implements UserContract, no need for assertion
+                $action = app(SendOtpByUserAction::class);
+                if (null === $action) {
+                    throw new \RuntimeException('Impossibile istanziare SendOtpByUserAction');
+                }
+                // PHPStan Level 10: User extends BaseUser which implements UserContract
+>>>>>>> laraxot/dev
                 $action->execute($record);
             })
             ->requiresConfirmation()
             ->modalHeading(trans('user::otp.actions.send_otp'))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             ->modalDescription(trans('user::otp.actions.confirm_otp'))
@@ -103,6 +124,10 @@ class SendOtpAction extends XotBaseAction
             ->modalSubmitActionLabel(trans('user::otp.actions.yes_send_otp'));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            ->modalDescription(trans('user::otp.actions.confirm_otp'))
+            ->modalSubmitActionLabel(trans('user::otp.actions.yes_send_otp'));
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -110,6 +135,7 @@ class SendOtpAction extends XotBaseAction
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getDefaultName(): ?string
 =======
     public static function getDefaultName(): null|string
@@ -120,6 +146,9 @@ class SendOtpAction extends XotBaseAction
     public static function getDefaultName(): ?string
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public static function getDefaultName(): ?string
+>>>>>>> laraxot/dev
     {
         return 'send_otp';
     }

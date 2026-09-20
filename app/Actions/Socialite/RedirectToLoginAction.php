@@ -20,6 +20,7 @@ class RedirectToLoginAction
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /**
      * Execute the action.
@@ -32,12 +33,17 @@ class RedirectToLoginAction
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public function execute(string $message): RedirectResponse
     {
         // Assert::string($route_name = config('filament-socialite.login_page_route', 'filament.admin.auth.login'));
         // Route [filament.auth.login] not defined.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $routeName = 'login';
         $translated = __('user::'.$message);
         if (is_array($translated)) {
@@ -46,6 +52,7 @@ class RedirectToLoginAction
         Assert::string($translated);
         Notification::make()
             ->title($translated)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -67,12 +74,15 @@ class RedirectToLoginAction
             ->title($translated)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             ->danger()
             ->persistent()
             ->send();
 
         // Redirect back to the login route with an error message attached
         return redirect()
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             ->route($routeName)
@@ -95,6 +105,11 @@ class RedirectToLoginAction
                 'email' => [$translated],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            ->route($routeName)
+            ->withErrors([
+                'email' => [$translated],
+>>>>>>> laraxot/dev
             ]);
     }
 }

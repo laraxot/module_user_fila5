@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Tests\TestCase;
 use Modules\User\Traits\PasswordValidationRules;
 use PHPUnit\Framework\Assert;
@@ -21,6 +24,7 @@ test('PasswordValidationRules has expected methods', function (): void {
     $reflection = new ReflectionClass(PasswordValidationRules::class);
 
     Assert::assertTrue($reflection->getMethod('passwordRules')->isProtected());
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -86,4 +90,6 @@ test('PasswordValidationRules has expected methods', function (): void {
     Assert::assertTrue($reflection->getMethod('passwordRules')->isProtected());
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

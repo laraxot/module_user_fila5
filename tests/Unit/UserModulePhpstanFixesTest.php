@@ -4,10 +4,14 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Validation\Rules\Password;
 use Modules\User\Database\Factories\SocialiteUserFactory;
 use Modules\User\Database\Factories\UserFactory;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -25,11 +29,14 @@ use Modules\User\Database\Factories\SocialiteUserFactory;
 use Modules\User\Database\Factories\UserFactory;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Datas\PasswordData;
 use Modules\User\Events\AddingTeam;
 use Modules\User\Events\Login;
 use Modules\User\Events\Registered;
 use Modules\User\Events\SocialiteUserConnected;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\User\Models\SocialiteUser;
@@ -344,6 +351,8 @@ class UserModulePhpstanFixesTest extends TestCase
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
@@ -498,7 +507,12 @@ it('password data get validation messages method exists', function (): void {
 });
 
 it('password data get form schema method exists', function (): void {
+<<<<<<< HEAD
     PasswordData::make()->getFormSchema();
 });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    app(PasswordData::class)->getFormSchema();
+});
+>>>>>>> laraxot/dev

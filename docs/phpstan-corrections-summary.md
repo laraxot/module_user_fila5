@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "PHPStan Corrections Summary - Modulo User"
 type: concept
@@ -295,6 +296,8 @@ return $this->hasAnyPermission($permissions);
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: phpstan-corrections-summary
@@ -311,5 +314,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-corrections-summary-Modules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

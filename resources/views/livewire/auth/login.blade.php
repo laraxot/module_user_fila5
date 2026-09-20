@@ -53,6 +53,7 @@ declare(strict_types=1);
                     <div class="flex items-center">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <!-- Il campo remember è incluso nello schema del form e gestito da Filament -->
 =======
 =======
@@ -69,10 +70,14 @@ declare(strict_types=1);
                         <!-- Il campo remember è incluso nello schema del form e gestito da Filament -->
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                        <!-- Il campo remember è incluso nello schema del form e gestito da Filament -->
+>>>>>>> laraxot/dev
                     </div>
 
                     @if (Route::has('password.request'))
                         <div class="text-sm">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                             <a href="{{ route('password.request') }}" class="font-medium text-green-600 hover:text-green-500">
@@ -85,6 +90,9 @@ declare(strict_types=1);
                             <a href="{{ route('password.request') }}" class="font-medium text-green-600 hover:text-green-500">
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                            <a href="{{ route('password.request') }}" class="font-medium text-green-600 hover:text-green-500">
+>>>>>>> laraxot/dev
                                 {{ __('pub_theme::auth.login.forgot_password') }}
                             </a>
                         </div>

@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature\Authentication;
 
 use Illuminate\Auth\Notifications\VerifyEmail;
@@ -24,6 +27,7 @@ uses(TestCase::class);
 
 beforeEach(function () {
     $user = UserFactory::new()->createOne([
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -65,10 +69,13 @@ beforeEach(function () {
     $user = UserFactory::new()->createOne([
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'password' => Hash::make('password123'),
         'is_active' => true,
         'email_verified_at' => now(),
     ]);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     \assert($user instanceof User);
@@ -81,6 +88,10 @@ beforeEach(function () {
     TestCase::$user = $user;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    \assert($user instanceof User);
+    TestCase::$user = $user;
+>>>>>>> laraxot/dev
 });
 
 describe('User Authentication', function () {
@@ -88,6 +99,7 @@ describe('User Authentication', function () {
         $result = Auth::attempt([
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'email' => TestCase::requireUser()->email,
 =======
             'email' => $this->user->email,
@@ -98,12 +110,16 @@ describe('User Authentication', function () {
             'email' => TestCase::requireUser()->email,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'email' => TestCase::requireUser()->email,
+>>>>>>> laraxot/dev
             'password' => 'password123',
         ]);
 
         expect($result)->toBe(true);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         expect(Auth::user()?->id)->toBe(TestCase::requireUser()->id);
 =======
         expect(Auth::user()?->id)->toBe($this->user->id);
@@ -114,12 +130,16 @@ describe('User Authentication', function () {
         expect(Auth::user()?->id)->toBe(TestCase::requireUser()->id);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        expect(Auth::user()?->id)->toBe(TestCase::requireUser()->id);
+>>>>>>> laraxot/dev
     });
 
     it('cannot authenticate with invalid password', function () {
         $result = Auth::attempt([
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'email' => TestCase::requireUser()->email,
 =======
             'email' => $this->user->email,
@@ -130,6 +150,9 @@ describe('User Authentication', function () {
             'email' => TestCase::requireUser()->email,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'email' => TestCase::requireUser()->email,
+>>>>>>> laraxot/dev
             'password' => 'wrongpassword',
         ]);
 
@@ -150,6 +173,9 @@ describe('User Authentication', function () {
     it('cannot authenticate inactive user', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         /** @var User $inactiveUser */
         /** @var User $inactiveUser */
         $inactiveUser = UserFactory::new()->createOne([
@@ -157,6 +183,7 @@ describe('User Authentication', function () {
             'is_active' => false,
         ]);
         \assert($inactiveUser instanceof User);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -177,10 +204,13 @@ describe('User Authentication', function () {
         \assert($inactiveUser instanceof User);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         $result = Auth::attempt([
             'email' => $inactiveUser->email,
             'password' => 'password123',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'is_active' => true,
@@ -191,6 +221,9 @@ describe('User Authentication', function () {
             'is_active' => true,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'is_active' => true,
+>>>>>>> laraxot/dev
         ]);
 
         expect($result)->toBe(false);
@@ -199,6 +232,7 @@ describe('User Authentication', function () {
     it('can logout user', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Auth::login(TestCase::requireUser());
 =======
         Auth::login($this->user);
@@ -209,6 +243,9 @@ describe('User Authentication', function () {
         Auth::login(TestCase::requireUser());
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        Auth::login(TestCase::requireUser());
+>>>>>>> laraxot/dev
         expect(Auth::check())->toBe(true);
 
         Auth::logout();
@@ -220,12 +257,16 @@ describe('User Password Management', function () {
     it('can hash password on creation', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         /** @var User $user */
         /** @var User $user */
         $user = UserFactory::new()->createOne([
             'password' => Hash::make('testpassword'),
         ]);
         \assert($user instanceof User);
+<<<<<<< HEAD
 =======
         $user = User::factory()->create([
             'password' => Hash::make('testpassword'),
@@ -244,6 +285,8 @@ describe('User Password Management', function () {
         \assert($user instanceof User);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         expect(Hash::check('testpassword', $user->password))->toBe(true);
     });
@@ -252,6 +295,9 @@ describe('User Password Management', function () {
         $newPassword = 'newpassword123';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         TestCase::requireUser()->update([
             'password' => Hash::make($newPassword),
         ]);
@@ -267,6 +313,7 @@ describe('User Password Management', function () {
         ]);
         \assert($user instanceof User);
         $passwordExpiresAt = $user->password_expires_at;
+<<<<<<< HEAD
         \assert($passwordExpiresAt !== null);
 
         expect($passwordExpiresAt->isPast())->toBe(true);
@@ -311,17 +358,26 @@ describe('User Password Management', function () {
         expect($passwordExpiresAt->isPast())->toBe(true);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        \assert(null !== $passwordExpiresAt);
+
+        expect($passwordExpiresAt->isPast())->toBe(true);
+>>>>>>> laraxot/dev
     });
 
     it('can set password expiration', function () {
         $expirationDate = now()->addDays(90);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         TestCase::requireUser()->update([
             'password_expires_at' => $expirationDate,
         ]);
 
         $passwordExpiresAt = TestCase::requireFreshUser(TestCase::requireUser())->password_expires_at;
+<<<<<<< HEAD
         \assert($passwordExpiresAt !== null);
 
         expect($passwordExpiresAt->toDateString())
@@ -351,6 +407,11 @@ describe('User Password Management', function () {
         expect($passwordExpiresAt->toDateString())
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        \assert(null !== $passwordExpiresAt);
+
+        expect($passwordExpiresAt->toDateString())
+>>>>>>> laraxot/dev
             ->toBe($expirationDate->toDateString());
     });
 });
@@ -358,6 +419,7 @@ describe('User Password Management', function () {
 describe('User Remember Token', function () {
     it('can generate remember token', function () {
         $token = Str::random(60);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         TestCase::requireUser()->forceFill(['remember_token' => $token])->save();
@@ -378,12 +440,20 @@ describe('User Remember Token', function () {
         expect(TestCase::requireFreshUser(TestCase::requireUser())->remember_token)->toBe($token);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        TestCase::requireUser()->forceFill(['remember_token' => $token])->save();
+
+        expect(TestCase::requireFreshUser(TestCase::requireUser())->remember_token)->toBe($token);
+>>>>>>> laraxot/dev
     });
 
     it('can authenticate using remember token', function () {
         $token = Str::random(60);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         TestCase::requireUser()->forceFill(['remember_token' => $token])->save();
 
         $user = User::where('email', TestCase::requireUser()->email)->where('remember_token', $token)->first();
@@ -391,6 +461,7 @@ describe('User Remember Token', function () {
         expect($user)->not->toBeNull();
         \assert($user instanceof User);
         expect($user->id)->toBe(TestCase::requireUser()->id);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -413,6 +484,8 @@ describe('User Remember Token', function () {
         expect($user->id)->toBe(TestCase::requireUser()->id);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     });
 });
 
@@ -420,11 +493,15 @@ describe('User Email Verification', function () {
     it('can mark email as verified', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         /** @var User $user */
         $user = UserFactory::new()->createOne([
             'email_verified_at' => null,
         ]);
         \assert($user instanceof User);
+<<<<<<< HEAD
 =======
         $user = User::factory()->create([
             'email_verified_at' => null,
@@ -442,6 +519,8 @@ describe('User Email Verification', function () {
         \assert($user instanceof User);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         expect($user->email_verified_at)->toBeNull();
 
@@ -449,8 +528,13 @@ describe('User Email Verification', function () {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $fresh = $user->fresh();
         \assert($fresh !== null);
+=======
+        $fresh = $user->fresh();
+        \assert(null !== $fresh);
+>>>>>>> laraxot/dev
 
         expect($fresh->email_verified_at)->not->toBeNull();
     });
@@ -467,6 +551,7 @@ describe('User Email Verification', function () {
             'email_verified_at' => null,
         ]);
         \assert($unverifiedUser instanceof User);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -505,6 +590,8 @@ describe('User Email Verification', function () {
         \assert($unverifiedUser instanceof User);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         expect($verifiedUser->hasVerifiedEmail())->toBe(true);
         expect($unverifiedUser->hasVerifiedEmail())->toBe(false);
@@ -513,11 +600,15 @@ describe('User Email Verification', function () {
     it('can send email verification notification', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         /** @var User $user */
         $user = UserFactory::new()->createOne([
             'email_verified_at' => null,
         ]);
         \assert($user instanceof User);
+<<<<<<< HEAD
 =======
         $user = User::factory()->create([
             'email_verified_at' => null,
@@ -535,6 +626,8 @@ describe('User Email Verification', function () {
         \assert($user instanceof User);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         Notification::fake();
 
@@ -548,6 +641,9 @@ describe('User Authorization', function () {
     it('can assign and check roles', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $adminRole = RoleFactory::new()->createOne(['name' => 'admin']);
         $editorRole = RoleFactory::new()->createOne(['name' => 'editor']);
 
@@ -604,6 +700,7 @@ describe('User Authorization', function () {
 
         expect(TestCase::requireUser()->hasRole('editor'))->toBe(false);
         expect(TestCase::requireUser()->hasPermissionTo('edit posts'))->toBe(false);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -725,6 +822,8 @@ describe('User Authorization', function () {
         expect(TestCase::requireUser()->hasPermissionTo('edit posts'))->toBe(false);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     });
 });
 
@@ -732,6 +831,9 @@ describe('User OAuth Authentication', function () {
     it('can have oauth clients', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         expect((TestCase::requireUser()->clients())::class)->toBe(MorphMany::class);
     });
 
@@ -749,6 +851,7 @@ describe('User OAuth Authentication', function () {
 
     it('can validate password for passport', function () {
         $isValid = TestCase::requireUser()->validateForPassportPasswordGrant('password123');
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -795,6 +898,8 @@ describe('User OAuth Authentication', function () {
         $isValid = TestCase::requireUser()->validateForPassportPasswordGrant('password123');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         expect($isValid)->toBe(true);
     });
@@ -804,11 +909,15 @@ describe('User Authentication Logging', function () {
     it('can log authentication attempts', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         expect((TestCase::requireUser()->authentications())::class)->toBe(MorphMany::class);
     });
 
     it('can get latest authentication log', function () {
         expect((TestCase::requireUser()->latestAuthentication())::class)->toBe(MorphOne::class);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -829,6 +938,8 @@ describe('User Authentication Logging', function () {
         expect((TestCase::requireUser()->latestAuthentication())::class)->toBe(MorphOne::class);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     });
 });
 
@@ -836,6 +947,9 @@ describe('User Session Management', function () {
     it('can store user in session', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         Auth::login(TestCase::requireUser());
 
         expect(Auth::check())->toBe(true);
@@ -850,6 +964,7 @@ describe('User Session Management', function () {
 
     it('can clear user session on logout', function () {
         Auth::login(TestCase::requireUser());
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -887,10 +1002,13 @@ describe('User Session Management', function () {
         Auth::login(TestCase::requireUser());
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         expect(Auth::check())->toBe(true);
 
         Auth::logout();
         expect(Auth::check())->toBe(false);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -901,6 +1019,8 @@ describe('User Session Management', function () {
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     });
 });
 
@@ -908,6 +1028,9 @@ describe('User Two Factor Authentication', function () {
     it('can enable two factor authentication', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         TestCase::requireUser()->update(['is_otp' => true]);
 
         expect(TestCase::requireFreshUser(TestCase::requireUser())->is_otp)->toBe(true);
@@ -926,6 +1049,7 @@ describe('User Two Factor Authentication', function () {
             'password' => Hash::make('password123'),
         ]);
         \assert($user instanceof User);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -969,6 +1093,8 @@ describe('User Two Factor Authentication', function () {
         \assert($user instanceof User);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         // First step: password authentication
         $result = Auth::attempt([

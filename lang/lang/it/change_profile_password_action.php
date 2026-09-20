@@ -7,6 +7,7 @@ return [
         'new_password_confirmation' => [
             'fields' => 'new_password_confirmation',
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
     ],
 =======
@@ -28,4 +29,8 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+        ],
+    ],
+>>>>>>> laraxot/dev
 ];

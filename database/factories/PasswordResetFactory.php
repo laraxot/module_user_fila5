@@ -6,12 +6,16 @@ namespace Modules\User\Database\Factories;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\PasswordReset;
 
 /**
  * @extends Factory<PasswordReset>
  */
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -32,10 +36,13 @@ use Modules\User\Models\PasswordReset;
  */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 class PasswordResetFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -48,6 +55,8 @@ class PasswordResetFactory extends Factory
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $model = PasswordReset::class;
 
@@ -55,6 +64,9 @@ class PasswordResetFactory extends Factory
      * Define the model's default state.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     /**
      * @return array<string, mixed>
@@ -62,6 +74,7 @@ class PasswordResetFactory extends Factory
     public function definition(): array
     {
         return [];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -90,5 +103,7 @@ class PasswordResetFactory extends Factory
         return [];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

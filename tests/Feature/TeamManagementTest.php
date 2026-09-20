@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\DB;
@@ -455,6 +458,7 @@ test('can log team activities via membership', function (): void {
     teamMgmtAttachMember($team, $member, ['role' => 'member']);
 
     Assert::assertTrue(teamMgmtMemberExists($team, $member));
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1244,4 +1248,6 @@ test('can log team activities via membership', function (): void {
     Assert::assertTrue(teamMgmtMemberExists($team, $member));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

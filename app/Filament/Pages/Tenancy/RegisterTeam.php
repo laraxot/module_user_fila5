@@ -7,12 +7,16 @@ namespace Modules\User\Filament\Pages\Tenancy;
 use Filament\Forms\Components\TextInput;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Pages\Tenancy\XotBaseRegisterTenant;
 
 class RegisterTeam extends XotBaseRegisterTenant
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -35,12 +39,15 @@ use Modules\Xot\Filament\Pages\Tenancy\XotBaseRegisterTenant;
 class RegisterTeam extends XotBaseRegisterTenant
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 {
     public static function getLabel(): string
     {
         return 'Register team';
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     /**
@@ -55,6 +62,11 @@ class RegisterTeam extends XotBaseRegisterTenant
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return array<int, TextInput>
+     */
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
     {
         return [
@@ -64,7 +76,11 @@ class RegisterTeam extends XotBaseRegisterTenant
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data
+=======
+     * @param array<string, mixed> $data
+>>>>>>> laraxot/dev
      */
     protected function handleRegistration(array $data): Model
     {

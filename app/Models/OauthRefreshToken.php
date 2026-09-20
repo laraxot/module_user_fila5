@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Laravel\Passport\RefreshToken as PassportRefreshToken;
 
 /**
@@ -48,6 +49,8 @@ use Laravel\Passport\RefreshToken as PassportRefreshToken;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 use Laravel\Passport\RefreshToken as PassportRefreshToken;
 
 /**
@@ -65,12 +68,16 @@ use Laravel\Passport\RefreshToken as PassportRefreshToken;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken whereId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken whereRevoked($value)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class OauthRefreshToken extends PassportRefreshToken
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected $connection = 'user';
@@ -90,4 +97,7 @@ class OauthRefreshToken extends PassportRefreshToken
     protected $connection = 'user';
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    protected $connection = 'user';
+>>>>>>> laraxot/dev
 }

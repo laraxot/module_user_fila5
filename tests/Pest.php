@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 /*
  * Bootstrap Pest — modulo User.
  * Helper globali: tests/Support/helpers.php (composer autoload-dev files).
@@ -11,6 +14,7 @@ declare(strict_types=1);
  */
 
 // Vietato expect()->extend() qui (PHPStan method.internalClass su PestExpectation).
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -92,3 +96,5 @@ function createProfile(array $attributes = []): Profile
 // Vietato expect()->extend() qui (PHPStan method.internalClass su PestExpectation).
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

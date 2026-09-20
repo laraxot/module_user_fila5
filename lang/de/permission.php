@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f548be94 (.)
@@ -12,6 +13,8 @@ declare(strict_types=1);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 return [
     'navigation' => [
         'name' => 'Permessi',
@@ -29,10 +32,14 @@ return [
             'label' => 'Nome Permesso',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => 'Inserisci il nome del permesso, ad esempio \\"Accesso Admin\\".',
             'placeholder' => 'Nome del permesso',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
             'tooltip' => 'Inserisci il nome del permesso, ad esempio \"Accesso Admin\".',
             'placeholder' => 'Nome del permesso',
@@ -47,12 +54,15 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Specifica la guardia associata al permesso.',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'placeholder' => 'Nome della guardia, es. \\"web\\"',
             'helper_text' => '',
             'description' => '',
@@ -67,6 +77,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'placeholder' => 'Nome della guardia, es. \\"web\\"',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'roles' => [
             'label' => 'Ruoli',
@@ -74,6 +89,7 @@ return [
             'placeholder' => 'Seleziona uno o più ruoli',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -84,6 +100,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'users' => [
             'label' => 'Utenti',
@@ -91,6 +111,7 @@ return [
             'placeholder' => 'Seleziona uno o più utenti',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -101,6 +122,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'created_at' => [
             'label' => 'Data Creazione',
@@ -108,6 +133,7 @@ return [
             'placeholder' => 'Data di creazione',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -118,6 +144,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
@@ -125,6 +155,7 @@ return [
             'placeholder' => 'Ultima modifica',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -135,6 +166,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'description' => [
             'label' => 'Descrizione',
@@ -142,6 +177,9 @@ return [
             'placeholder' => 'Descrizione del permesso',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'helper_text' => '',
             'description' => '',
         ],
@@ -150,6 +188,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'applyFilters' => [
@@ -170,6 +209,8 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -254,6 +295,7 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
@@ -264,4 +306,8 @@ return [
     'plural_label' => 'Missing Plural label',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> laraxot/dev
 ];

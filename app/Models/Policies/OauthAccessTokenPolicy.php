@@ -24,6 +24,7 @@ class OauthAccessTokenPolicy extends UserBasePolicy
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $user->hasPermissionTo('oauth-access-token.view')
             || $user->id === $oauthAccessToken->user_id
             || $user->hasRole('super-admin');
@@ -44,6 +45,11 @@ class OauthAccessTokenPolicy extends UserBasePolicy
             || $user->hasRole('super-admin');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return $user->hasPermissionTo('oauth-access-token.view')
+            || $user->id === $oauthAccessToken->user_id
+            || $user->hasRole('super-admin');
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -69,6 +75,7 @@ class OauthAccessTokenPolicy extends UserBasePolicy
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $user->hasPermissionTo('oauth-access-token.delete')
             || $user->id === $oauthAccessToken->user_id
             || $user->hasRole('super-admin');
@@ -89,6 +96,11 @@ class OauthAccessTokenPolicy extends UserBasePolicy
             || $user->hasRole('super-admin');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return $user->hasPermissionTo('oauth-access-token.delete')
+            || $user->id === $oauthAccessToken->user_id
+            || $user->hasRole('super-admin');
+>>>>>>> laraxot/dev
     }
 
     /**

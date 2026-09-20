@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\TenantUserResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Filament\Resources\TenantUserResource;
 =======
 >>>>>>> 60a2c9a9 (.)
@@ -14,6 +15,9 @@ use Modules\User\Filament\Resources\TenantUserResource;
 use Modules\User\Filament\Resources\TenantUserResource;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Filament\Resources\TenantUserResource;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
 /**
@@ -23,6 +27,7 @@ class CreateTenantUser extends XotBaseCreateRecord
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static string $resource = TenantUserResource::class;
 =======
     protected static string $resource = \Modules\User\Filament\Resources\TenantUserResource::class;
@@ -33,4 +38,7 @@ class CreateTenantUser extends XotBaseCreateRecord
     protected static string $resource = TenantUserResource::class;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    protected static string $resource = TenantUserResource::class;
+>>>>>>> laraxot/dev
 }

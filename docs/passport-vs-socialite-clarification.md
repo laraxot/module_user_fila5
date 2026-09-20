@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Passport vs Socialite - Distinzione Critica"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Passport vs Socialite - Distinzione Critica
 
 **Data**: 2025-01-22
@@ -121,6 +127,7 @@ find Modules/User/app/Filament/Resources -name "SocialProviderResource.php"
 - [Passport Cluster Resources Only Rule](./passport-cluster-resources-only-rule.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
 =======
 - [Filosofia Modulo User](./filosofia_modulo_user.md)
@@ -131,6 +138,9 @@ find Modules/User/app/Filament/Resources -name "SocialProviderResource.php"
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Filosofia Modulo User](./filosofia-modulo-user.md)
+>>>>>>> laraxot/dev
 - [Laravel Passport Documentation](https://laravel.com/docs/passport)
 - [Laravel Socialite Documentation](https://laravel.com/docs/socialite)
 

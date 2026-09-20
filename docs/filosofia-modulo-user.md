@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Analisi Approfondita del Modulo User"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Analisi Approfondita del Modulo User
 
 > **Generato**: 2025-12-24
@@ -506,6 +512,7 @@ BaseUser implements:
 - [Laravel Passport Documentation](https://laravel.com/docs/passport)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md)
 =======
 - [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md)
@@ -516,4 +523,7 @@ BaseUser implements:
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [business-logic-deep-dive-4.md](./business-logic-deep-dive.md)
+>>>>>>> laraxot/dev
 - [docs/_integration/spatie-permissions.md](./_integration/spatie-permissions.md)

@@ -8,6 +8,7 @@ return [
         'plural' => 'Utenti',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione degli utenti e dei loro permessi'],
 =======
 =======
@@ -23,6 +24,9 @@ return [
         'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione degli utenti e dei loro permessi'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione degli utenti e dei loro permessi'],
+>>>>>>> laraxot/dev
         'label' => 'Utenti',
         'sort' => 26,
         'icon' => 'ui-user-main',
@@ -30,6 +34,9 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'id' => ['label' => 'ID', 'help' => 'Identificativo univoco dell\'utente', 'tooltip' => 'ID utente', 'helper_text' => '', 'description' => ''],
         'name' => ['label' => 'Nome', 'placeholder' => 'Inserisci il nome completo', 'help' => 'Nome completo dell\'utente', 'tooltip' => 'Nome e cognome dell\'utente', 'helper_text' => '', 'description' => 'name'],
         'first_name' => ['label' => 'Nome', 'placeholder' => 'Inserisci il nome', 'help' => 'Nome dell\'utente', 'tooltip' => 'Nome dell\'utente', 'helper_text' => '', 'description' => ''],
@@ -42,6 +49,7 @@ return [
         'role' => ['label' => 'Ruolo', 'placeholder' => 'Seleziona il ruolo', 'help' => 'Ruolo dell\'utente nel sistema', 'tooltip' => 'Ruolo e permessi', 'helper_text' => '', 'description' => ''],
         'roles' => ['label' => 'Ruoli', 'placeholder' => 'Seleziona i ruoli', 'help' => 'Ruoli assegnati all\'utente', 'tooltip' => 'Ruoli multipli', 'helper_text' => '', 'description' => ''],
         'permissions' => ['label' => 'Permessi', 'placeholder' => 'Seleziona i permessi', 'help' => 'Permessi specifici dell\'utente', 'tooltip' => 'Permessi diretti', 'helper_text' => '', 'description' => ''],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -149,12 +157,15 @@ return [
         'permissions' => ['label' => 'Permessi', 'placeholder' => 'Seleziona i permessi', 'help' => 'Permessi specifici dell\'utente', 'tooltip' => 'Permessi diretti', 'helper_text' => '', 'description' => ''],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'status' => [
             'label' => 'Stato',
             'placeholder' => 'Seleziona lo stato',
             'help' => 'Stato dell\'account utente',
             'tooltip' => 'Stato dell\'utente',
             'helper_text' => '',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'options' => ['active' => 'Attivo', 'inactive' => 'Inattivo', 'blocked' => 'Bloccato', 'pending' => 'In Attesa', 'suspended' => 'Sospeso'],
@@ -177,6 +188,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'options' => ['active' => 'Attivo', 'inactive' => 'Inattivo', 'blocked' => 'Bloccato', 'pending' => 'In Attesa', 'suspended' => 'Sospeso'],
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'type' => [
             'label' => 'Tipo',
@@ -186,6 +201,9 @@ return [
             'helper_text' => '',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'options' => ['admin' => 'Amministratore', 'user' => 'Utente', 'doctor' => 'Medico', 'patient' => 'Paziente', 'staff' => 'Personale'],
             'description' => '',
         ],
@@ -193,6 +211,7 @@ return [
         'created_at' => ['label' => 'Data Creazione', 'help' => 'Data di creazione dell\'account', 'tooltip' => 'Quando è stato creato', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'help' => 'Data dell\'ultimo aggiornamento', 'tooltip' => 'Ultimo aggiornamento', 'helper_text' => '', 'description' => ''],
         'avatar' => ['label' => 'Avatar', 'placeholder' => 'Carica un\'immagine', 'help' => 'Immagine del profilo', 'tooltip' => 'Foto profilo', 'helper_text' => '', 'description' => ''],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -242,6 +261,8 @@ return [
         'avatar' => ['label' => 'Avatar', 'placeholder' => 'Carica un\'immagine', 'help' => 'Immagine del profilo', 'tooltip' => 'Foto profilo', 'helper_text' => '', 'description' => ''],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'language' => [
             'label' => 'Lingua',
             'placeholder' => 'Seleziona la lingua',
@@ -250,6 +271,9 @@ return [
             'helper_text' => '',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'options' => ['it' => 'Italiano', 'en' => 'English', 'es' => 'Español', 'fr' => 'Français', 'de' => 'Deutsch'],
             'description' => '',
         ],
@@ -313,6 +337,10 @@ return [
         'submit' => ['tooltip' => 'submit'],
         'createAnother' => ['tooltip' => 'createAnother', 'icon' => 'createAnother', 'label' => 'createAnother'],
         'resetColumnManager' => ['tooltip' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'label' => 'resetColumnManager'],
+<<<<<<< HEAD
+=======
+        'removeAllFilters' => ['label' => 'removeAllFilters', 'icon' => 'removeAllFilters', 'tooltip' => 'removeAllFilters'],
+>>>>>>> laraxot/dev
     ],
     'messages' => [
         'created' => 'Utente creato con successo', 'updated' => 'Utente aggiornato con successo', 'deleted' => 'Utente eliminato con successo', 'blocked' => 'Utente bloccato con successo', 'unblocked' => 'Utente sbloccato con successo', 'activated' => 'Utente attivato con successo', 'deactivated' => 'Utente disattivato con successo', 'reset_link_sent' => 'Link per il reset della password inviato', 'email_verified' => 'Email verificata con successo', 'impersonating' => 'Stai impersonando l\'utente :name',
@@ -325,6 +353,7 @@ return [
     ],
     'permissions' => [
         'view_users' => 'Visualizza utenti', 'create_users' => 'Crea utenti', 'edit_users' => 'Modifica utenti', 'delete_users' => 'Elimina utenti', 'impersonate_users' => 'Impersona utenti', 'manage_roles' => 'Gestisci ruoli', 'manage_permissions' => 'Gestisci permessi', 'view_roles' => 'Visualizza ruoli', 'create_roles' => 'Crea ruoli', 'edit_roles' => 'Modifica ruoli',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -710,6 +739,8 @@ return [
         'view_users' => 'Visualizza utenti', 'create_users' => 'Crea utenti', 'edit_users' => 'Modifica utenti', 'delete_users' => 'Elimina utenti', 'impersonate_users' => 'Impersona utenti', 'manage_roles' => 'Gestisci ruoli', 'manage_permissions' => 'Gestisci permessi', 'view_roles' => 'Visualizza ruoli', 'create_roles' => 'Crea ruoli', 'edit_roles' => 'Modifica ruoli',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'delete_roles' => 'Elimina ruoli',
     ],
     'auth' => [
@@ -719,6 +750,9 @@ return [
             'button' => 'Accedi',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'fields' => ['email' => 'Email', 'password' => 'Password', 'remember' => 'Ricordami'],
             'help' => ['email' => 'Inserisci la tua email registrata', 'password' => 'Inserisci la tua password'],
             'validation' => [
@@ -745,6 +779,7 @@ return [
             'error_occurred' => 'Si è verificato un errore durante la registrazione',
         ],
         'logout' => ['title' => 'Logout', 'button' => 'Esci', 'success' => 'Logout effettuato con successo', 'error' => 'Errore durante il logout', 'confirmation' => 'Sei sicuro di voler uscire?'],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -820,6 +855,8 @@ return [
         'logout' => ['title' => 'Logout', 'button' => 'Esci', 'success' => 'Logout effettuato con successo', 'error' => 'Errore durante il logout', 'confirmation' => 'Sei sicuro di voler uscire?'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'password_reset' => [
             'title' => 'Reset Password',
             'subtitle' => 'Reimposta la tua password',
@@ -827,10 +864,14 @@ return [
             'confirm_button' => 'Reimposta Password',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'email_sent' => ['title' => 'Email inviata', 'message' => 'Ti abbiamo inviato un link per reimpostare la password'],
             'email_failed' => ['title' => 'Errore invio email', 'message' => 'Impossibile inviare l\'email di reset', 'generic' => 'Si è verificato un errore'],
             'success' => ['title' => 'Password reimpostata', 'message' => 'La tua password è stata reimpostata con successo'],
             'errors' => ['invalid_token' => 'Token non valido', 'invalid_user' => 'Utente non trovato', 'generic' => 'Si è verificato un errore', 'title' => 'Errore reset password'],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -863,6 +904,8 @@ return [
             'errors' => ['invalid_token' => 'Token non valido', 'invalid_user' => 'Utente non trovato', 'generic' => 'Si è verificato un errore', 'title' => 'Errore reset password'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'user_not_found' => 'Utente non trovato',
         'password_fields_required' => 'Tutti i campi password sono obbligatori',
@@ -874,6 +917,9 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'profile' => ['profile' => 'Profilo', 'my_profile' => 'Il Mio Profilo', 'subheading' => 'Gestisci le informazioni del tuo profilo', 'edit_profile' => 'Modifica Profilo', 'change_password' => 'Cambia Password', 'personal_info' => 'Informazioni Personali', 'security' => 'Sicurezza', 'notifications' => 'Notifiche', 'preferences' => 'Preferenze'],
     'tenancy' => [
         'navigation' => ['edit' => 'Modifica Profilo Team'],
@@ -909,6 +955,7 @@ return [
         'worker' => ['label' => 'worker', 'heading' => 'worker'],
     ],
     'plural_label' => 'User (Plurale)',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1065,4 +1112,6 @@ return [
     'plural_label' => 'User (Plurale)',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

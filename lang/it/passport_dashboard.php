@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => ['label' => 'Passport / API', 'plural_label' => 'Passport / API', 'group' => 'Sistema', 'icon' => 'heroicon-o-key', 'sort' => 95],
     'label' => 'Passport / API',
     'plural_label' => 'Passport / API',
@@ -31,6 +32,8 @@ return [
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Passport / API',
         'plural_label' => 'Passport / API',
@@ -57,8 +60,30 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
     ],
     'actions' => [
+=======
+        'client_name' => [
+            'label' => 'Nome cliente',
+        ],
+        'force' => [
+            'description' => 'force',
+        ],
+        'name' => [
+            'label' => 'name',
+            'placeholder' => 'name',
+            'helper_text' => 'name',
+            'description' => 'name',
+        ],
+    ],
+    'actions' => [
+        'new_credentials' => [
+            'label' => 'Nuove credenziali',
+            'icon' => 'new_credentials',
+            'tooltip' => 'new_credentials',
+        ],
+>>>>>>> laraxot/dev
         'create' => [
             'label' => 'Crea Client',
             'tooltip' => 'Crea un nuovo client OAuth',
@@ -67,10 +92,80 @@ return [
             'label' => 'Revoca',
             'tooltip' => 'Revoca l\'accesso',
         ],
+<<<<<<< HEAD
+=======
+        'install' => [
+            'label' => 'Installa Passport',
+            'modal_description' => 'Questo comando installerà Passport e creerà le chiavi di crittografia necessarie.',
+        ],
+        'generate_keys' => [
+            'label' => 'Genera Chiavi',
+        ],
+        'purge_tokens' => [
+            'label' => 'Pulisci Token',
+            'modal_description' => 'Elimina tutti i token scaduti o revocati.',
+        ],
+        'hash_secrets' => [
+            'label' => 'Hash Secret',
+            'modal_description' => 'Applica l\'hashing a tutti i client secret esistenti.',
+        ],
+        'passport_install' => [
+            'label' => 'passport_install',
+            'icon' => 'passport_install',
+            'tooltip' => 'passport_install',
+        ],
+        'passport_keys' => [
+            'label' => 'passport_keys',
+            'icon' => 'passport_keys',
+            'tooltip' => 'passport_keys',
+        ],
+        'passport_purge' => [
+            'label' => 'passport_purge',
+            'icon' => 'passport_purge',
+            'tooltip' => 'passport_purge',
+        ],
+        'passport_hash' => [
+            'label' => 'passport_hash',
+            'icon' => 'passport_hash',
+            'tooltip' => 'passport_hash',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
+        ],
+        'profile' => [
+            'label' => 'profile',
+            'icon' => 'profile',
+            'tooltip' => 'profile',
+        ],
+        'logout' => [
+            'label' => 'logout',
+            'icon' => 'logout',
+            'tooltip' => 'logout',
+        ],
+        'submit' => [
+            'label' => 'submit',
+            'icon' => 'submit',
+            'tooltip' => 'submit',
+        ],
+        'cancel' => [
+            'label' => 'cancel',
+            'icon' => 'cancel',
+            'tooltip' => 'cancel',
+        ],
+    ],
+    'status' => [
+        'public_key' => 'Chiave Pubblica',
+        'private_key' => 'Chiave Privata',
+        'present' => 'Presente',
+        'missing' => 'Mancante',
+>>>>>>> laraxot/dev
     ],
     'messages' => [
         'client_created' => 'Client creato con successo',
         'client_revoked' => 'Client revocato con successo',
+<<<<<<< HEAD
     ],
 <<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
@@ -101,4 +196,12 @@ return [
     'messages' => ['client_created' => 'Client creato con successo', 'client_revoked' => 'Client revocato con successo', 'command_started' => 'Comando avviato...', 'command_completed' => 'Comando completato con successo', 'command_failed' => 'Esecuzione comando fallita', 'command_error' => 'Errore durante l\'esecuzione del comando'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'command_started' => 'Comando avviato...',
+        'command_completed' => 'Comando completato con successo',
+        'command_failed' => 'Esecuzione comando fallita',
+        'command_error' => 'Errore durante l\'esecuzione del comando',
+        'credentials_created' => 'Credenziali create con successo',
+    ],
+>>>>>>> laraxot/dev
 ];

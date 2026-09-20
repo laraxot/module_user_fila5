@@ -6,6 +6,7 @@ namespace Modules\User\Http\Response;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Redirector;
@@ -26,6 +27,11 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Redirector;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Contracts\Support\Responsable;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Routing\Redirector;
+>>>>>>> laraxot/dev
 
 class PasswordResetResponse implements Responsable
 {

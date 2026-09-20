@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "AssignModuleCommand - Gestione Moduli Utente"
 type: concept
@@ -23,11 +26,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # AssignModuleCommand - Gestione Moduli Utente
 
 ## Descrizione
@@ -186,6 +192,7 @@ Result: No changes made to user modules.
 ## Collegamenti
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Console Commands Philosophy](console-commands-philosophy.md)
 =======
 - [Console Commands Philosophy](console_commands_philosophy.md)
@@ -196,6 +203,9 @@ Result: No changes made to user modules.
 - [Console Commands Philosophy](console-commands-philosophy.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Console Commands Philosophy](console-commands-philosophy.md)
+>>>>>>> laraxot/dev
 - [User Models](models/readme.md)
 - [Role Management](models/role-management.md)
 - [README.md](../readme.md)
@@ -211,6 +221,7 @@ Result: No changes made to user modules.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-27*
 >>>>>>> 60a2c9a9 (.)
@@ -219,3 +230,5 @@ Result: No changes made to user modules.
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

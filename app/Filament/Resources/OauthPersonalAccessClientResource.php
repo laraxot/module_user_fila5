@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 =======
@@ -25,6 +26,8 @@ use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Filament\Tables;
 use Filament\Tables\Table;
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\OauthPersonalAccessClient;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -47,6 +50,7 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     protected static \BackedEnum|string|null $navigationIcon = 'heroicon-o-key';
 
     /**
+<<<<<<< HEAD
      * @return array<string, Component>
      */
 <<<<<<< HEAD
@@ -187,6 +191,8 @@ final class OauthPersonalAccessClientResource extends XotBaseResource
     }
 
     /**
+=======
+>>>>>>> laraxot/dev
      * Configure the model query.
      */
     public static function getEloquentQuery(): Builder

@@ -7,11 +7,15 @@ namespace Modules\User\Http\Livewire\Auth\Passwords;
 use Illuminate\Contracts\Auth\PasswordBroker;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Password;
 use Livewire\Component;
 use Modules\Xot\Actions\File\ViewCopyAction;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -31,6 +35,8 @@ use Livewire\Component;
 use Modules\Xot\Actions\File\ViewCopyAction;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 class Email extends Component
 {
@@ -38,6 +44,7 @@ class Email extends Component
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public ?string $emailSentMessage = null;
 =======
     public null|string $emailSentMessage = null;
@@ -48,6 +55,9 @@ class Email extends Component
     public ?string $emailSentMessage = null;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public ?string $emailSentMessage = null;
+>>>>>>> laraxot/dev
 
     /**
      * Invia il link per il reset della password.
@@ -63,6 +73,9 @@ class Email extends Component
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (Password::RESET_LINK_SENT === $response) {
             $this->emailSentMessage = trans('user::'.$response);
 
@@ -70,6 +83,7 @@ class Email extends Component
         }
 
         $this->addError('email', trans('user::'.$response));
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -92,6 +106,8 @@ class Email extends Component
         $this->addError('email', trans('user::'.$response));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**

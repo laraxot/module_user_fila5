@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "user module code and documentation optimization analysis"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # user module code and documentation optimization analysis
 
 ## comprehensive analysis
@@ -61,6 +67,7 @@ docs/
 │   ├── crud_operations.md
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 │   ├── profile-management-2.md
 =======
 │   ├── profile_management.md
@@ -71,6 +78,9 @@ docs/
 │   ├── profile-management-2.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+│   ├── profile-management-2.md
+>>>>>>> laraxot/dev
 │   ├── role_permissions.md
 │   └── team_management.md
 ├── filament_integration/
@@ -83,6 +93,7 @@ docs/
 │   ├── passport.md
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 │   ├── spatie-permissions-2.md
 │   └── two-factor-2.md
 =======
@@ -97,6 +108,10 @@ docs/
 │   └── two-factor-2.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+│   ├── spatie-permissions-2.md
+│   └── two-factor-2.md
+>>>>>>> laraxot/dev
 ├── api/
 │   ├── rest_api.md
 │   ├── graphql_api.md

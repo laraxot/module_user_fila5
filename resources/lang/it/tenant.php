@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f548be94 (.)
@@ -12,6 +13,8 @@ declare(strict_types=1);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 return [
     'fields' => [
         'name' => [
@@ -20,6 +23,7 @@ return [
             'helper_text' => 'Inserisci il nome del tenant',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
@@ -30,6 +34,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'slug' => [
             'label' => 'Slug',
@@ -37,6 +45,7 @@ return [
             'helper_text' => 'Lo slug verrà generato automaticamente dal nome',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
@@ -47,6 +56,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'domain' => [
             'label' => 'Dominio',
@@ -54,6 +67,7 @@ return [
             'helper_text' => 'Il dominio del tenant',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
@@ -64,6 +78,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'email' => [
             'label' => 'Email',
@@ -71,6 +89,7 @@ return [
             'helper_text' => 'Indirizzo email del tenant',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
@@ -81,6 +100,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'phone' => [
             'label' => 'Telefono',
@@ -88,6 +111,7 @@ return [
             'helper_text' => 'Numero di telefono del tenant',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
@@ -98,6 +122,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'mobile' => [
             'label' => 'Cellulare',
@@ -105,6 +133,7 @@ return [
             'helper_text' => 'Numero di cellulare del tenant',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
 =======
@@ -115,6 +144,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'address' => [
             'label' => 'Indirizzo',
@@ -122,6 +155,9 @@ return [
             'helper_text' => 'Indirizzo del tenant',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'description' => '',
         ],
@@ -130,6 +166,7 @@ return [
             'helper_text' => 'Colore primario del tenant',
             'tooltip' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -151,10 +188,13 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'secondary_color' => [
             'label' => 'Colore Secondario',
             'helper_text' => 'Colore secondario del tenant',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => '',
@@ -167,6 +207,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -187,6 +231,9 @@ return [
         ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'reorderRecords' => [
             'tooltip' => 'reorderRecords',
         ],
@@ -200,6 +247,7 @@ return [
             'tooltip' => 'detach',
         ],
     ],
+<<<<<<< HEAD
 =======
     ],
 =======
@@ -217,6 +265,8 @@ return [
         ],
     ],
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -227,10 +277,13 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     ],
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

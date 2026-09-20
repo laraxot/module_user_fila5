@@ -21,6 +21,7 @@ class RecoveryCodeReplaced
         public string $code,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {
     }
 =======
@@ -33,4 +34,8 @@ class RecoveryCodeReplaced
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 }

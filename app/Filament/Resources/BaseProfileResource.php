@@ -7,6 +7,7 @@ namespace Modules\User\Filament\Resources;
 // // use LaraZeus\SpatieTranslatable\Resources\Concerns\Translatable; // Temporaneamente commentato per compatibilità Filament 4.x
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\TextInput;
 use Modules\User\Filament\Resources\BaseProfileResource\Pages\ListProfiles;
@@ -33,12 +34,17 @@ use Modules\User\Filament\Resources\BaseProfileResource\Pages\ListProfiles;
 use Modules\User\Models\BaseProfile;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Filament\Resources\BaseProfileResource\Pages\ListProfiles;
+use Modules\User\Models\BaseProfile;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 abstract class BaseProfileResource extends XotBaseResource
 {
     // // use Translatable; // Temporaneamente commentato per compatibilità Filament 4.x // Temporaneamente commentato per compatibilità Filament 4.x
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected static ?string $model = BaseProfile::class;
@@ -97,6 +103,11 @@ abstract class BaseProfileResource extends XotBaseResource
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    protected static ?string $model = BaseProfile::class;
+
+    #[\Override]
+>>>>>>> laraxot/dev
     public static function getPages(): array
     {
         return [

@@ -6,6 +6,7 @@ return [
     'login' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'username_or_email' => 'Ім\'я користувача або електронна пошта',
 =======
         'username_or_email' => "Ім'я користувача або електронна пошта",
@@ -16,6 +17,9 @@ return [
         'username_or_email' => 'Ім\'я користувача або електронна пошта',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'username_or_email' => 'Ім\'я користувача або електронна пошта',
+>>>>>>> laraxot/dev
         'forgot_password_link' => 'Забули пароль?',
         'create_an_account' => 'Створити акаунт',
     ],
@@ -120,6 +124,9 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'avatar' => [
             'label' => 'Аватар',
             'tooltip' => '',
@@ -224,6 +231,7 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -355,4 +363,6 @@ return [
     ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

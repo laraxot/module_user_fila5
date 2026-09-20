@@ -12,6 +12,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 return new class extends XotBaseMigration {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected ?string $model_class = Extra::class;
 =======
     protected null|string $model_class = Extra::class;
@@ -22,6 +23,9 @@ return new class extends XotBaseMigration {
     protected ?string $model_class = Extra::class;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    protected ?string $model_class = Extra::class;
+>>>>>>> laraxot/dev
 
     /**
      * Run the migrations.
@@ -39,6 +43,9 @@ return new class extends XotBaseMigration {
         $this->tableUpdate(function (Blueprint $table): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             // if (! $this->hasColumn('name'))
             //    $table->string('name')->nullable();
             // }
@@ -49,6 +56,7 @@ return new class extends XotBaseMigration {
                 if (! $this->hasIndex('model_id')) {
                     $table->index('model_id');
                 }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -78,6 +86,8 @@ return new class extends XotBaseMigration {
                 }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             }
         });
     }

@@ -22,6 +22,7 @@ class UserNotAllowed
         public SocialiteUserContract $oauthUser,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {
     }
 =======
@@ -34,4 +35,8 @@ class UserNotAllowed
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 }

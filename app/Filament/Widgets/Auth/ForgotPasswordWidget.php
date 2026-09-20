@@ -7,6 +7,9 @@ namespace Modules\User\Filament\Widgets\Auth;
 use Filament\Schemas\Schema;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Password;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
@@ -19,6 +22,7 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  * @property Schema $form
  */
 class ForgotPasswordWidget extends XotBaseSchemaWidget
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -52,12 +56,17 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 class ForgotPasswordWidget extends XotBaseSchemaWidget
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 {
     protected string $view = 'user::widgets.auth.forgot-password-widget';
 
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @return class-string<UserForm>
      */
     protected static function formClass(): string
@@ -68,6 +77,7 @@ class ForgotPasswordWidget extends XotBaseSchemaWidget
     protected static function schemaMethod(): string
     {
         return 'getForgotPasswordFormSchema';
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -100,6 +110,8 @@ class ForgotPasswordWidget extends XotBaseSchemaWidget
         return 'getForgotPasswordFormSchema';
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     public function sendResetLink(): void
@@ -108,6 +120,7 @@ class ForgotPasswordWidget extends XotBaseSchemaWidget
 
         $status = Password::sendResetLink(['email' => $data['email']]);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (Password::RESET_LINK_SENT === $status) {
@@ -120,6 +133,9 @@ class ForgotPasswordWidget extends XotBaseSchemaWidget
         if (Password::RESET_LINK_SENT === $status) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (Password::RESET_LINK_SENT === $status) {
+>>>>>>> laraxot/dev
             session()->flash('status', __($status));
         } else {
             $this->addError('email', __($status));

@@ -10,6 +10,7 @@ namespace Modules\User\Actions\Socialite;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use ArrayAccess;
 >>>>>>> f548be94 (.)
@@ -18,6 +19,8 @@ use ArrayAccess;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Arr;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -29,6 +32,9 @@ class GetProviderScopesAction
      * Execute the action.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @return array<int, string>
      */
@@ -48,6 +54,7 @@ class GetProviderScopesAction
             static fn (mixed $scope): ?string => \is_scalar($scope) || $scope instanceof \Stringable ? (string) $scope : null,
             $scopes
         ), static fn (?string $scope): bool => null !== $scope));
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -89,5 +96,7 @@ class GetProviderScopesAction
         ), static fn (?string $scope): bool => null !== $scope));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

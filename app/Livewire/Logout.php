@@ -6,6 +6,7 @@ namespace Modules\User\Livewire;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Exception;
 >>>>>>> f548be94 (.)
@@ -14,6 +15,8 @@ use Exception;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
@@ -34,6 +37,7 @@ class Logout extends Component
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function logout(): ?RedirectResponse
 =======
     public function logout(): null|RedirectResponse
@@ -44,6 +48,9 @@ class Logout extends Component
     public function logout(): ?RedirectResponse
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function logout(): ?RedirectResponse
+>>>>>>> laraxot/dev
     {
         $this->processing = true;
 
@@ -55,10 +62,14 @@ class Logout extends Component
             return redirect()->route('home');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         } catch (\Exception $e) {
             $this->processing = false;
             session()->flash('error', __('Errore durante il logout. Riprova.'));
 
+<<<<<<< HEAD
 =======
         } catch (Exception $e) {
             $this->processing = false;
@@ -75,6 +86,8 @@ class Logout extends Component
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             return null;
         }
     }

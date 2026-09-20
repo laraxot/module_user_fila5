@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 =======
@@ -23,6 +24,10 @@ use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Filament\Notifications\Notification;
+use Filament\Schemas\Schema;
+>>>>>>> laraxot/dev
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -32,6 +37,9 @@ use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Str;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -46,6 +54,7 @@ use Webmozart\Assert\Assert;
  * @property Schema $form
  */
 class PasswordResetConfirmWidget extends XotBaseSchemaWidget
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -83,6 +92,8 @@ use Webmozart\Assert\Assert;
 class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 {
     public ?array $data = [];
 
@@ -90,6 +101,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 
     public ?string $email = null;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public string $currentState = 'form';
@@ -102,12 +114,18 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
     public string $currentState = 'form';
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public string $currentState = 'form';
+>>>>>>> laraxot/dev
 
     public ?string $errorMessage = null;
 
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @return class-string<UserForm>
      */
     protected static function formClass(): string
@@ -126,6 +144,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
         $this->token = $token;
         $this->email = $email;
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -166,11 +185,14 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         if ($this->email) {
             $this->form->fill(['email' => $this->email]);
         }
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function confirmPasswordReset(): void
@@ -229,6 +251,11 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
         if ('form' !== $this->currentState) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function confirmPasswordReset(): void
+    {
+        if ('form' !== $this->currentState) {
+>>>>>>> laraxot/dev
             return;
         }
 
@@ -245,6 +272,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
                 ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 static function (Authenticatable $user, string $password): void {
                     /* @var Model&Authenticatable $user */
 =======
@@ -261,6 +289,10 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
                     /* @var Model&Authenticatable $user */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                static function (Authenticatable $user, string $password): void {
+                    /* @var Model&Authenticatable $user */
+>>>>>>> laraxot/dev
                     $user->setAttribute('password', Hash::make($password));
                     $user->setRememberToken(Str::random(60));
                     $user->save();
@@ -271,6 +303,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (Password::PASSWORD_RESET === $response) {
 =======
             if ($response === Password::PASSWORD_RESET) {
@@ -281,6 +314,9 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
             if (Password::PASSWORD_RESET === $response) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            if (Password::PASSWORD_RESET === $response) {
+>>>>>>> laraxot/dev
                 $this->currentState = 'success';
 
                 Notification::make()
@@ -292,6 +328,9 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 Assert::string($email = $data['email'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
                 /** @var UserContract $user */
                 $user = XotData::make()->getUserByEmail($email);
@@ -303,6 +342,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
                 $this->handleResetError(is_string($response) ? $response : 'passwords.generic_error');
             }
         } catch (\Exception $e) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -338,12 +378,17 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
         } catch (\Exception $e) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             $this->handleResetError('passwords.generic_error');
         }
     }
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function resetForm(): void
     {
         $this->currentState = 'form';
@@ -381,6 +426,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
         return 'error' === $this->currentState;
     }
 
+<<<<<<< HEAD
 =======
     /**
      * Handle password reset errors.
@@ -430,12 +476,15 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected function handleResetError(string $response): void
     {
         $this->currentState = 'error';
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // Map Laravel password reset responses to user-friendly messages
 >>>>>>> f548be94 (.)
@@ -444,6 +493,8 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $errorMessages = [
             Password::INVALID_TOKEN => __('user::auth.password_reset.errors.invalid_token'),
             Password::INVALID_USER => __('user::auth.password_reset.errors.invalid_user'),
@@ -459,6 +510,7 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
             ->duration(10000)
             ->send();
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -528,4 +580,6 @@ class PasswordResetConfirmWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

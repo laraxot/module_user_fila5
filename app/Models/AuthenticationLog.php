@@ -10,6 +10,7 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
@@ -68,6 +69,8 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
@@ -93,8 +96,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null      $creator
  * @property ProfileContract|null      $updater
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @method static Builder|AuthenticationLog newModelQuery()
  * @method static Builder|AuthenticationLog newQuery()
  * @method static Builder|AuthenticationLog query()
@@ -114,6 +120,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|AuthenticationLog whereUserAgent($value)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property ProfileContract|null $deleter
  * @method static \Modules\User\Database\Factories\AuthenticationLogFactory factory($count = null, $state = [])
 =======
@@ -122,13 +129,18 @@ use Modules\Xot\Contracts\ProfileContract;
 =======
  * @mixin IdeHelperAuthenticationLog
 =======
+=======
+>>>>>>> laraxot/dev
  *
  * @property ProfileContract|null $deleter
  *
  * @method static \Modules\User\Database\Factories\AuthenticationLogFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class AuthenticationLog extends BaseModel
@@ -147,6 +159,7 @@ class AuthenticationLog extends BaseModel
         'location',
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -171,6 +184,8 @@ class AuthenticationLog extends BaseModel
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     // public function __construct(array $attributes = [])
     // {
     // if (! isset($this->connection)) {
@@ -187,6 +202,7 @@ class AuthenticationLog extends BaseModel
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return MorphTo<Model, $this>
      */
@@ -199,15 +215,23 @@ class AuthenticationLog extends BaseModel
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return MorphTo<Model, $this>
+     */
+>>>>>>> laraxot/dev
     public function authenticatable(): MorphTo
     {
         return $this->morphTo();
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     /** @return array<string, string> */
     #[\Override]
@@ -222,9 +246,12 @@ class AuthenticationLog extends BaseModel
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

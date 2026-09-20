@@ -9,10 +9,14 @@ use Modules\User\Models\User;
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * Type-safe $user property for Pest / PHPUnit test cases.
  */
 trait HasUserTestCase
 {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -55,5 +59,7 @@ trait HasUserTestCase
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected User $user;
 }

@@ -7,8 +7,24 @@ return [
         'id' => ['label' => 'id'],
         'name' => ['label' => 'name'],
         'created_at' => ['label' => 'created_at'],
+<<<<<<< HEAD
     ],
     'actions' => [
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+=======
+        'user' => [
+            'name' => ['label' => 'user.name'],
+        ],
+        'first_name' => ['label' => 'first_name'],
+        'last_name' => ['label' => 'last_name'],
+        'email' => ['label' => 'email'],
+        'is_active' => ['label' => 'is_active'],
+        'photo' => ['label' => 'photo'],
+    ],
+    'actions' => [
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+>>>>>>> laraxot/dev
     ],
 ];

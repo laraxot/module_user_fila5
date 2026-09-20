@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "User Module - Roadmap, Issues & Optimization"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # User Module - Roadmap, Issues & Optimization
 
 **Modulo**: User (Authentication, Authorization, Profiles)  
@@ -36,6 +42,7 @@ related:
 **Maintainer**: Team FixCity  
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status PHPStan**: ⚠️ 95 errori (Level 10)
 =======
 **Status PHPStan**: ⚠️ 95 errori (Level 9)
@@ -46,6 +53,9 @@ related:
 **Status PHPStan**: ⚠️ 95 errori (Level 10)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+**Status PHPStan**: ⚠️ 95 errori (Level 10)
+>>>>>>> laraxot/dev
 
 ---
 
@@ -67,6 +77,7 @@ related:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 🔴 COMPLETED PHPSTAN DA CORREGGERE (95)
 =======
 ## 🔴 ERRORI PHPSTAN DA CORREGGERE (95)
@@ -77,6 +88,9 @@ related:
 ## 🔴 COMPLETED PHPSTAN DA CORREGGERE (95)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+## 🔴 COMPLETED PHPSTAN DA CORREGGERE (95)
+>>>>>>> laraxot/dev
 
 ### Categorizzazione Errori
 
@@ -302,6 +316,7 @@ php artisan queue:prune-failed --hours=48
 **Totale**: ~6 ore  
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Risultato**: ✅ 0 errori PHPStan Level 10
 =======
 **Risultato**: ✅ 0 errori PHPStan Level 9
@@ -312,6 +327,9 @@ php artisan queue:prune-failed --hours=48
 **Risultato**: ✅ 0 errori PHPStan Level 10
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+**Risultato**: ✅ 0 errori PHPStan Level 10
+>>>>>>> laraxot/dev
 
 ---
 
@@ -379,6 +397,7 @@ php artisan queue:prune-failed --hours=48
   - Engagement tracking
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Churn <nome progetto>ion
 =======
   - Churn prediction
@@ -389,6 +408,9 @@ php artisan queue:prune-failed --hours=48
   - Churn <nome progetto>ion
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+  - Churn <nome progetto>ion
+>>>>>>> laraxot/dev
 
 ---
 
@@ -453,6 +475,7 @@ php artisan queue:prune-failed --hours=48
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Status**: ⚠️ 95 COMPLETED DA CORREGGERE  
 =======
 **Status**: ⚠️ 95 ERRORI DA CORREGGERE  
@@ -463,6 +486,9 @@ php artisan queue:prune-failed --hours=48
 **Status**: ⚠️ 95 COMPLETED DA CORREGGERE  
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+**Status**: ⚠️ 95 COMPLETED DA CORREGGERE  
+>>>>>>> laraxot/dev
 **Priorità**: 🟡 ALTA  
 **Timeline**: 2 Ottobre 2025  
 **Effort**: ~6 ore → 100% CLEAN

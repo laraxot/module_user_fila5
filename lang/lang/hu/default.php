@@ -127,6 +127,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'email' => 'E-mail cím',
         'login' => 'Bejelentkezés',
         'name' => 'Név',
@@ -143,6 +146,7 @@ return [
     ],
     'or' => 'Vagy',
     'cancel' => 'Mégsem',
+<<<<<<< HEAD
 =======
         'email' => [
             'label' => 'E-mail cím',
@@ -237,4 +241,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

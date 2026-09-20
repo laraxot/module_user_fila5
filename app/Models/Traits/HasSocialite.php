@@ -12,6 +12,7 @@ trait HasSocialite
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * Get the socialite users associated with the user.
      *
@@ -22,6 +23,8 @@ trait HasSocialite
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      * @return HasMany<SocialiteUser, $this>
      */
     public function socialiteUsers(): HasMany
@@ -34,6 +37,7 @@ trait HasSocialite
         $socialiteUser = $this->socialiteUsers()->firstWhere(['provider' => $provider]);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($socialiteUser === null) {
 =======
         if (null === $socialiteUser) {
@@ -44,6 +48,9 @@ trait HasSocialite
         if ($socialiteUser === null) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null === $socialiteUser) {
+>>>>>>> laraxot/dev
             throw new \Exception('SocialiteUser not found');
         }
 
@@ -51,11 +58,15 @@ trait HasSocialite
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (\is_scalar($res) || $res instanceof \Stringable) {
             return (string) $res;
         }
 
         throw new \Exception(\sprintf('SocialiteUser field "%s" is not stringable', $field));
+<<<<<<< HEAD
 =======
         return (string) $res;
 >>>>>>> 60a2c9a9 (.)
@@ -69,6 +80,8 @@ trait HasSocialite
         throw new \Exception(\sprintf('SocialiteUser field "%s" is not stringable', $field));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     public function canAccessSocialite(): bool

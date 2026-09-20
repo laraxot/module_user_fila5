@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "👥 USER MODULE - ROADMAP 2025"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # 👥 USER MODULE - ROADMAP 2025
 
 **Modulo**: User (Authentication & Authorization)  
@@ -36,6 +42,7 @@ related:
 **Priority**: HIGH  
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **PHPStan**: ✅ Level 10 (0 errori)  
 =======
 **PHPStan**: ✅ Level 9 (0 errori)  
@@ -46,6 +53,9 @@ related:
 **PHPStan**: ✅ Level 10 (0 errori)  
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+**PHPStan**: ✅ Level 10 (0 errori)  
+>>>>>>> laraxot/dev
 **Filament**: ✅ 4.x Compatibile  
 
 ---
@@ -126,6 +136,7 @@ User Module
 ### 🔧 Technical Excellence
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] **PHPStan Level 10**: 0 errori
 =======
 - [x] **PHPStan Level 9**: 0 errori
@@ -136,6 +147,9 @@ User Module
 - [x] **PHPStan Level 10**: 0 errori
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [x] **PHPStan Level 10**: 0 errori
+>>>>>>> laraxot/dev
 - [x] **Filament 4.x**: Compatibilità completa
 - [x] **Type Safety**: Type hints completi
 - [x] **Error Handling**: Gestione errori robusta
@@ -304,6 +318,7 @@ User Module
 #### ✅ Completed
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] PHPStan Level 10 compliance
 =======
 - [x] PHPStan Level 9 compliance
@@ -314,6 +329,9 @@ User Module
 - [x] PHPStan Level 10 compliance
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [x] PHPStan Level 10 compliance
+>>>>>>> laraxot/dev
 - [x] Type safety implementation
 - [x] Error handling improvement
 - [x] Code documentation
@@ -374,6 +392,7 @@ User Module
 ### 📊 Technical Metrics
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [x] **PHPStan Level 10**: 0 errori ✅
 =======
 - [x] **PHPStan Level 9**: 0 errori ✅
@@ -384,6 +403,9 @@ User Module
 - [x] **PHPStan Level 10**: 0 errori ✅
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [x] **PHPStan Level 10**: 0 errori ✅
+>>>>>>> laraxot/dev
 - [x] **Filament 4.x**: Compatibile ✅
 - [ ] **Test Coverage**: 80% (target)
 - [ ] **Response Time**: < 200ms
@@ -549,6 +571,7 @@ User Module
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Last Updated**: 2025-10-01
 **Next Review**: 2025-11-01
@@ -559,6 +582,8 @@ User Module
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 **Status**: 🚧 ACTIVE DEVELOPMENT  
 **Confidence Level**: 98%  
 

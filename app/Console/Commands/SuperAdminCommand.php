@@ -9,6 +9,9 @@ use Illuminate\Support\Str;
 use Modules\User\Models\Role;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
 use Webmozart\Assert\Assert;
@@ -94,6 +97,7 @@ class SuperAdminCommand extends Command
 
             return strtolower(trim($line));
         }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -251,5 +255,7 @@ class SuperAdminCommand extends Command
         }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

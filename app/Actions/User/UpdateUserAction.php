@@ -6,6 +6,9 @@ namespace Modules\User\Actions\User;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Contracts\Hashing\Hasher;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\Model;
@@ -14,6 +17,7 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Psr\Log\LoggerInterface;
 use Spatie\QueueableAction\QueueableAction;
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -46,6 +50,8 @@ use Spatie\QueueableAction\QueueableAction;
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 class UpdateUserAction
 {
     use QueueableAction;
@@ -55,6 +61,9 @@ class UpdateUserAction
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @param Model                $user L'utente da aggiornare
      * @param array<string, mixed> $data I dati da aggiornare
      *
@@ -78,6 +87,7 @@ class UpdateUserAction
 
             // Valida i dati specifici per l'aggiornamento
             $this->validateUpdateData($user, $updateData, $validationException);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -126,6 +136,8 @@ class UpdateUserAction
             $this->validateUpdateData($user, $updateData, $validationException);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
             // Aggiorna l'utente
             $user->fill($updateData);
@@ -134,6 +146,7 @@ class UpdateUserAction
             // Esegue operazioni post-aggiornamento se necessarie
             $this->afterUpdate($user, $updateData);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             $dbManager->commit();
@@ -154,6 +167,11 @@ class UpdateUserAction
             $logger->info('Utente aggiornato con successo', [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            $dbManager->commit();
+
+            $logger->info('Utente aggiornato con successo', [
+>>>>>>> laraxot/dev
                 'user_id' => $user->getKey(),
                 'updated_fields' => array_keys($updateData),
             ]);
@@ -161,6 +179,9 @@ class UpdateUserAction
             $updatedUser = $user->fresh();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             if (! $updatedUser instanceof Model) {
                 throw new \Exception('Failed to refresh user model after update');
             }
@@ -170,6 +191,7 @@ class UpdateUserAction
             $dbManager->rollBack();
 
             $logger->error("Errore nell'aggiornamento utente", [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -197,6 +219,8 @@ class UpdateUserAction
             $logger->error("Errore nell'aggiornamento utente", [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 'user_id' => $user->getKey(),
                 'error' => $e->getMessage(),
                 'data' => $updateData ?? [],
@@ -212,10 +236,14 @@ class UpdateUserAction
      * @param array<string, mixed> $data
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @return array<string, mixed>
      */
     protected function prepareUpdateData(array $data, Hasher $hasher, SafeStringCastAction $safeStringCast): array
+<<<<<<< HEAD
 =======
      * @return array<string, mixed>
      */
@@ -232,6 +260,8 @@ class UpdateUserAction
     protected function prepareUpdateData(array $data, Hasher $hasher, SafeStringCastAction $safeStringCast): array
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     {
         // Rimuovi campi che non dovrebbero essere aggiornati direttamente
         $excludeFields = [
@@ -251,10 +281,14 @@ class UpdateUserAction
                 unset($updateData['password']);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             }
             // Hash della password se presente, e se non è stata rimossa perché vuota
             if (isset($updateData['password'])) {
                 $updateData['password'] = $hasher->make($safeStringCast->execute($updateData['password']));
+<<<<<<< HEAD
 =======
             } else {
                 // Hash della password se presente
@@ -271,6 +305,8 @@ class UpdateUserAction
                 $updateData['password'] = $hasher->make($safeStringCast->execute($updateData['password']));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             }
         }
 
@@ -278,6 +314,7 @@ class UpdateUserAction
         if (isset($updateData['email'])) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $email = $safeStringCast->execute($updateData['email']);
 =======
             $email = SafeStringCastAction::cast($updateData['email']);
@@ -288,6 +325,9 @@ class UpdateUserAction
             $email = $safeStringCast->execute($updateData['email']);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            $email = $safeStringCast->execute($updateData['email']);
+>>>>>>> laraxot/dev
             $updateData['email'] = strtolower($email);
         }
 
@@ -299,11 +339,15 @@ class UpdateUserAction
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @param array<string, mixed> $data
      *
      * @throws ValidationException
      */
     protected function validateUpdateData(Model $user, array $data, ValidationException $validationException): void
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -325,6 +369,8 @@ class UpdateUserAction
     protected function validateUpdateData(Model $user, array $data, ValidationException $validationException): void
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     {
         // Validazione email univoca
         if (isset($data['email'])) {
@@ -335,6 +381,7 @@ class UpdateUserAction
                 ->first();
 
             if ($existingUser) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 throw $validationException->withMessages(['email' => __('user::validation.email_already_taken')]);
@@ -351,6 +398,9 @@ class UpdateUserAction
                 throw $validationException->withMessages(['email' => __('user::validation.email_already_taken')]);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                throw $validationException->withMessages(['email' => __('user::validation.email_already_taken')]);
+>>>>>>> laraxot/dev
             }
         }
 
@@ -364,6 +414,7 @@ class UpdateUserAction
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param array<string, mixed> $data
 =======
      * @param Model $user
@@ -378,6 +429,9 @@ class UpdateUserAction
      * @param array<string, mixed> $data
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @param array<string, mixed> $data
+>>>>>>> laraxot/dev
      */
     protected function afterUpdate(Model $user, array $data): void
     {
@@ -389,6 +443,7 @@ class UpdateUserAction
         // - Gestire relazioni
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Mark parameters as unused to satisfy PHPMD
         unset($user, $data);
 =======
@@ -399,5 +454,9 @@ class UpdateUserAction
         unset($user, $data);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        // Mark parameters as unused to satisfy PHPMD
+        unset($user, $data);
+>>>>>>> laraxot/dev
     }
 }

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Case Sensitivity Rules - User Module"
 type: rule
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Case Sensitivity Rules - User Module
 
 ## Problema / Problem
@@ -37,6 +43,7 @@ related:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-sensitivity-rules.md)
 =======
 >>>>>>> 60a2c9a9 (.)
@@ -45,6 +52,9 @@ Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-se
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-sensitivity-rules.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-sensitivity-rules.md)
+>>>>>>> laraxot/dev
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../xot/docs/case-sensitivity-rules.md)
 
 ## File/Directory Rimossi da User Module
@@ -209,6 +219,7 @@ grep -r "Database/seeders" .
   - 23 migration files
   - 5 seeder files
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Total: 57 duplicate files eliminated
 =======
   - Total: 57 duplicate files eliminated
@@ -217,3 +228,6 @@ grep -r "Database/seeders" .
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+  - Total: 57 duplicate files eliminated
+>>>>>>> laraxot/dev

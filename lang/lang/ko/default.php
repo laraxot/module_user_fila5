@@ -6,10 +6,14 @@ return [
     'password_confirm' => [
         'heading' => '비밀번호 확인',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'description' => '이 작업을 완료하려면 암호를 확인하십시오', // Please confirm your password to complete this action.
 =======
         'description' => '이 작업을 완료하려면 암호를 확인하십시오',
 >>>>>>> 60a2c9a9 (.)
+=======
+        'description' => '이 작업을 완료하려면 암호를 확인하십시오', // Please confirm your password to complete this action.
+>>>>>>> laraxot/dev
         'current_password' => '현재 비밀번호',
     ],
     'two_factor' => [
@@ -107,6 +111,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'avatar' => '아바타',
         'email' => '이메일',
         'login' => '로그인',
@@ -123,6 +130,7 @@ return [
     ],
     'or' => '또는',
     'cancel' => '취소',
+<<<<<<< HEAD
 =======
         'avatar' => [
             'label' => '아바타',
@@ -217,4 +225,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

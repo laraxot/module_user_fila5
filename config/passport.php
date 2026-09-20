@@ -3,6 +3,9 @@
 declare(strict_types=1);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\OauthAuthCode;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthDeviceCode;
@@ -11,6 +14,7 @@ use Modules\User\Models\OauthRefreshToken;
 use Modules\User\Models\OauthToken;
 
 /*
+<<<<<<< HEAD
 =======
 
 /**
@@ -29,6 +33,8 @@ use Modules\User\Models\OauthToken;
 /*
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * Configurazione Laravel Passport per il modulo User.
  *
  * Questa configurazione centralizza tutte le impostazioni di Passport,
@@ -47,6 +53,7 @@ return [
     'tokens' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'access_token' => 15,
         'refresh_token' => 30,
         'personal_access_token' => 6,
@@ -65,6 +72,11 @@ return [
         'personal_access_token' => 6,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'access_token' => 15,
+        'refresh_token' => 30,
+        'personal_access_token' => 6,
+>>>>>>> laraxot/dev
     ],
 
     /*
@@ -92,6 +104,7 @@ return [
     */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'enable_password_grant' => true,
 =======
     'enable_password_grant' => env('PASSPORT_ENABLE_PASSWORD_GRANT', true),
@@ -102,6 +115,9 @@ return [
     'enable_password_grant' => true,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    'enable_password_grant' => true,
+>>>>>>> laraxot/dev
 
     /*
     |--------------------------------------------------------------------------
@@ -114,6 +130,7 @@ return [
     */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'register_routes' => true,
 =======
     'register_routes' => env('PASSPORT_REGISTER_ROUTES', true),
@@ -124,6 +141,9 @@ return [
     'register_routes' => true,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    'register_routes' => true,
+>>>>>>> laraxot/dev
 
     /*
     |--------------------------------------------------------------------------
@@ -135,6 +155,7 @@ return [
     */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'client_model' => OauthClient::class,
 =======
     'client_model' => Modules\User\Models\OauthClient::class,
@@ -145,6 +166,9 @@ return [
     'client_model' => OauthClient::class,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    'client_model' => OauthClient::class,
+>>>>>>> laraxot/dev
 
     /*
     |--------------------------------------------------------------------------
@@ -157,11 +181,15 @@ return [
     'models' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'token' => OauthToken::class,
         'refresh_token' => OauthRefreshToken::class,
         'auth_code' => OauthAuthCode::class,
         'personal_access_client' => OauthPersonalAccessClient::class,
         'device_code' => OauthDeviceCode::class,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -181,5 +209,7 @@ return [
         'device_code' => OauthDeviceCode::class,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     ],
 ];

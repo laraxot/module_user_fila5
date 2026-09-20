@@ -149,6 +149,7 @@ Dopo le modifiche, eseguire:
 - [XotBasePivot](../../Xot/app/Models/XotBasePivot.php)
 - [XotBaseMorphPivot](../../Xot/app/Models/XotBaseMorphPivot.php)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 ---
@@ -160,3 +161,5 @@ Dopo le modifiche, eseguire:
 Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, in violazione della regola no-case-only-variations. Il contenuto canonico si trova in [model_inheritance_analysis.md](./model_inheritance_analysis.md).
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev

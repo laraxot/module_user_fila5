@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "FullCalendar Scheduler - Documentazione Completa"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # FullCalendar Scheduler - Documentazione Completa
 
 ## Panoramica
@@ -65,6 +71,7 @@ Documentazione base esistente per:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### 4. [Scheduler License Key](./scheduler-license-key-2.md)
 =======
 #### 4. [Scheduler License Key](./scheduler_license_key.md)
@@ -75,6 +82,9 @@ Documentazione base esistente per:
 #### 4. [Scheduler License Key](./scheduler-license-key-2.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+#### 4. [Scheduler License Key](./scheduler-license-key-2.md)
+>>>>>>> laraxot/dev
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi

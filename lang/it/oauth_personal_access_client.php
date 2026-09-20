@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'navigation' => ['label' => 'Personal Access Client', 'plural_label' => 'Personal Access Client', 'group' => 'OAuth', 'icon' => 'heroicon-o-key', 'sort' => 6],
     'label' => 'Personal Access Client',
     'plural_label' => 'Personal Access Client',
@@ -16,6 +19,10 @@ return [
         'client' => [
             'name' => ['label' => 'client.name'],
         ],
+<<<<<<< HEAD
+=======
+        'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => 'value', 'description' => 'value'],
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => ['label' => 'Crea Personal Access Client', 'tooltip' => 'Crea un nuovo personal access client', 'helper_text' => 'Crea un nuovo personal access client', 'description' => 'Azione per creare', 'success' => 'Personal Access Client creato con successo', 'error' => 'Errore durante la creazione del Personal Access Client', 'icon' => 'create'],
@@ -24,6 +31,7 @@ return [
         'logout' => ['label' => 'Logout', 'tooltip' => 'Disconnettiti', 'helper_text' => 'Esci dall\'account', 'description' => 'Azione di logout', 'icon' => 'heroicon-o-arrow-right-on-rectangle'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+<<<<<<< HEAD
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
     ],
     'messages' => ['created' => 'Personal Access Client creato con successo', 'updated' => 'Personal Access Client aggiornato con successo', 'deleted' => 'Personal Access Client eliminato con successo'],
@@ -133,4 +141,16 @@ return [
     ],
     'messages' => ['created' => 'Personal Access Client creato con successo', 'updated' => 'Personal Access Client aggiornato con successo', 'deleted' => 'Personal Access Client eliminato con successo'],
 >>>>>>> 2024e2e7 (.)
+=======
+        'applyFilters' => ['label' => 'applyFilters', 'icon' => 'applyFilters', 'tooltip' => 'applyFilters'],
+        'openFilters' => ['label' => 'openFilters', 'icon' => 'openFilters', 'tooltip' => 'openFilters'],
+        'resetFilters' => ['label' => 'resetFilters', 'icon' => 'resetFilters', 'tooltip' => 'resetFilters'],
+        'applyTableColumnManager' => ['label' => 'applyTableColumnManager', 'icon' => 'applyTableColumnManager', 'tooltip' => 'applyTableColumnManager'],
+        'openColumnManager' => ['label' => 'openColumnManager', 'icon' => 'openColumnManager', 'tooltip' => 'openColumnManager'],
+        'resetColumnManager' => ['label' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'tooltip' => 'resetColumnManager'],
+        'reorderRecords' => ['label' => 'reorderRecords', 'icon' => 'reorderRecords', 'tooltip' => 'reorderRecords'],
+        'profile' => ['label' => 'profile', 'icon' => 'profile', 'tooltip' => 'profile'],
+    ],
+    'messages' => ['created' => 'Personal Access Client creato con successo', 'updated' => 'Personal Access Client aggiornato con successo', 'deleted' => 'Personal Access Client eliminato con successo'],
+>>>>>>> laraxot/dev
 ];

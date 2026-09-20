@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Pages\Auth;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Forms\Components\TextInput;
@@ -13,6 +16,7 @@ use Filament\Notifications\Notification;
 use Filament\Pages\Concerns\InteractsWithFormActions;
 use Filament\Schemas\Schema;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -41,17 +45,23 @@ use Filament\Schemas\Schema;
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Schema as DatabaseSchema;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Datas\PasswordData;
 use Modules\User\Events\NewPasswordSet;
 use Modules\User\Http\Response\PasswordResetResponse;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Pages\XotBasePage;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -70,17 +80,23 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Pages\XotBasePage;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Traits\NavigationPageLabelTrait;
 use Webmozart\Assert\Assert;
 
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * @property Schema $form
  * @property Schema $editProfileForm
  * @property Schema $editPasswordForm
  */
 class PasswordExpired extends XotBasePage
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -100,10 +116,13 @@ class PasswordExpired extends Page implements HasForms
 class PasswordExpired extends XotBasePage
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 {
     use InteractsWithFormActions;
     use NavigationPageLabelTrait;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -124,12 +143,17 @@ class PasswordExpired extends XotBasePage
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected string $view = 'user::filament.auth.pages.password-expired';
 
     protected static bool $shouldRegisterNavigation = false;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<int, TextInput>
      */
@@ -139,6 +163,7 @@ class PasswordExpired extends XotBasePage
             $this->getCurrentPasswordFormComponent(),
             PasswordData::make()->getPasswordFormComponents('password'),
         ));
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -163,6 +188,8 @@ class PasswordExpired extends XotBasePage
         ));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     public function getResetPasswordFormAction(): Action
@@ -177,6 +204,9 @@ class PasswordExpired extends XotBasePage
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function resetPassword(): ?PasswordResetResponse
     {
         $pwd = PasswordData::make();
@@ -185,6 +215,7 @@ class PasswordExpired extends XotBasePage
         Assert::string($password = Arr::get($data, 'password'));
         $user = Auth::user();
         if (null === $user) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -210,10 +241,13 @@ class PasswordExpired extends XotBasePage
         if (null === $user) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             return null;
         }
 
         // check if current password is correct
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (null === $user->password || ! Hash::check($currentPassword, $user->password)) {
@@ -226,6 +260,9 @@ class PasswordExpired extends XotBasePage
         if (null === $user->password || ! Hash::check($currentPassword, $user->password)) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null === $user->password || ! Hash::check($currentPassword, $user->password)) {
+>>>>>>> laraxot/dev
             Notification::make()
                 ->title(__('user::otp.notifications.wrong_password.title'))
                 ->body(__('user::otp.notifications.wrong_password.body'))
@@ -238,6 +275,7 @@ class PasswordExpired extends XotBasePage
         // check if new password is different from the current password
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (Hash::check($password, $user->password)) {
 =======
         if ($user->password !== null && Hash::check($password, $user->password)) {
@@ -248,6 +286,9 @@ class PasswordExpired extends XotBasePage
         if (Hash::check($password, $user->password)) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (Hash::check($password, $user->password)) {
+>>>>>>> laraxot/dev
             Notification::make()
                 ->title(__('user::otp.notifications.same_password.title'))
                 ->body(__('user::otp.notifications.same_password.body'))
@@ -260,6 +301,7 @@ class PasswordExpired extends XotBasePage
         // check if both required columns exist in the database
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! DatabaseSchema::hasColumn('users', 'password_expires_at')) {
 =======
         if (!DatabaseSchema::hasColumn('users', 'password_expires_at')) {
@@ -270,6 +312,9 @@ class PasswordExpired extends XotBasePage
         if (! DatabaseSchema::hasColumn('users', 'password_expires_at')) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! DatabaseSchema::hasColumn('users', 'password_expires_at')) {
+>>>>>>> laraxot/dev
             Notification::make()
                 ->title(__('user::otp.notifications.column_not_found.title'))
                 ->body(__('user::otp.notifications.column_not_found.body', [
@@ -289,6 +334,7 @@ class PasswordExpired extends XotBasePage
         // Verificare che l'utente esistante e che sia un modello Eloquent
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $user instanceof Model) {
             throw new \InvalidArgumentException('L\'utente deve essere un modello Eloquent con il metodo update');
 =======
@@ -303,6 +349,10 @@ class PasswordExpired extends XotBasePage
             throw new \InvalidArgumentException('L\'utente deve essere un modello Eloquent con il metodo update');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! $user instanceof Model) {
+            throw new \InvalidArgumentException('L\'utente deve essere un modello Eloquent con il metodo update');
+>>>>>>> laraxot/dev
         }
 
         // set password expiry date and time
@@ -315,6 +365,7 @@ class PasswordExpired extends XotBasePage
         // Verificare che l'utente implementi l'interfaccia UserContract prima di passarlo all'evento
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $user instanceof UserContract) {
             throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia UserContract');
 =======
@@ -329,6 +380,10 @@ class PasswordExpired extends XotBasePage
             throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia UserContract');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! $user instanceof UserContract) {
+            throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia UserContract');
+>>>>>>> laraxot/dev
         }
 
         event(new NewPasswordSet($user));
@@ -343,6 +398,9 @@ class PasswordExpired extends XotBasePage
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<int, TextInput>
      */
@@ -355,6 +413,7 @@ class PasswordExpired extends XotBasePage
                 ->required()
                 ->validationAttribute(static::trans('fields.current_password.validation_attribute')),
         ];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -383,6 +442,8 @@ class PasswordExpired extends XotBasePage
         ];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**

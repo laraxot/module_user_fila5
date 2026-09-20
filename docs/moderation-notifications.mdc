@@ -1,12 +1,16 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 module: theme
 topic: moderation-notifications
 canonical: ../../../Themes/docs/shared-components/moderation-notifications.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/moderation-notifications.md
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -68,3 +72,5 @@ canonical: ../../../Themes/docs/shared-components/moderation-notifications.md
 See canonical documentation: ../../../Themes/docs/shared-components/moderation-notifications.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

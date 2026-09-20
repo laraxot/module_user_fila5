@@ -8,6 +8,7 @@ return [
         'plural' => 'Tokens',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione dei token di accesso'],
 =======
 =======
@@ -23,6 +24,9 @@ return [
         'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione dei token di accesso'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione dei token di accesso'],
+>>>>>>> laraxot/dev
         'label' => 'token',
         'sort' => 29,
         'icon' => 'user-user-token',
@@ -30,6 +34,9 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'name' => ['label' => 'name', 'tooltip' => '', 'helper_text' => '', 'description' => '', 'placeholder' => 'name'],
         'create' => ['label' => 'create', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'edit' => ['label' => 'edit', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -49,10 +56,15 @@ return [
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'revoke' => ['label' => 'revoke', 'icon' => 'revoke', 'tooltip' => 'revoke'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+<<<<<<< HEAD
+=======
+        'detach' => ['label' => 'detach', 'icon' => 'detach', 'tooltip' => 'detach'],
+>>>>>>> laraxot/dev
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
     ],
     'label' => 'Token',
     'plural_label' => 'Token (Plurale)',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -104,4 +116,6 @@ return [
     'plural_label' => 'Token (Plurale)',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

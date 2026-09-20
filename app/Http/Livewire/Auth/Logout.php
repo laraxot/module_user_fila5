@@ -6,6 +6,7 @@ namespace Modules\User\Http\Livewire\Auth;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Exception;
 >>>>>>> f548be94 (.)
@@ -14,6 +15,8 @@ use Exception;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use DanHarrin\LivewireRateLimiting\WithRateLimiting;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
@@ -39,6 +42,7 @@ class Logout extends Component
      * Esegui logout, invalidazione sessione e redirect.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      */
     public function mount(): ?RedirectResponse
 =======
@@ -55,6 +59,10 @@ class Logout extends Component
     public function mount(): ?RedirectResponse
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     */
+    public function mount(): ?RedirectResponse
+>>>>>>> laraxot/dev
     {
         try {
             // Rate limit
@@ -80,6 +88,7 @@ class Logout extends Component
             if ($user) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 Log::debug('User logged out successfully', [
 =======
                 Log::info('User logged out successfully', [
@@ -90,6 +99,9 @@ class Logout extends Component
                 Log::debug('User logged out successfully', [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                Log::debug('User logged out successfully', [
+>>>>>>> laraxot/dev
                     'user_id' => $user->id,
                     'email' => $user->email,
                 ]);
@@ -99,6 +111,7 @@ class Logout extends Component
             return redirect()->route('login');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         } catch (\Exception $e) {
 =======
         } catch (Exception $e) {
@@ -109,6 +122,9 @@ class Logout extends Component
         } catch (\Exception $e) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        } catch (\Exception $e) {
+>>>>>>> laraxot/dev
             Log::error('Logout failed', [
                 'error' => $e->getMessage(),
                 'user_id' => Auth::id(),
@@ -117,6 +133,7 @@ class Logout extends Component
             session()->flash('error', __('Si è verificato un errore durante il logout'));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f548be94 (.)
@@ -125,6 +142,9 @@ class Logout extends Component
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
             return redirect()->back();
         }
     }
@@ -133,6 +153,9 @@ class Logout extends Component
      * Renderizza il componente.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function render(): View
     {
@@ -140,6 +163,7 @@ class Logout extends Component
         $viewName = 'user::livewire.auth.logout';
 
         return view($viewName);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -162,5 +186,7 @@ class Logout extends Component
         return view($viewName);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

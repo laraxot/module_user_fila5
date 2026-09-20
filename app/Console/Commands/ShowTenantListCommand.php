@@ -15,6 +15,7 @@ class ShowTenantListCommand extends Command
      * The name and signature of the console command.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -25,6 +26,8 @@ class ShowTenantListCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $signature = 'user:tenant-list';
 
@@ -32,6 +35,7 @@ class ShowTenantListCommand extends Command
      * The console command description.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -42,6 +46,8 @@ class ShowTenantListCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $description = 'Visualizza lista tenant';
 
@@ -54,6 +60,7 @@ class ShowTenantListCommand extends Command
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $map = static fn (Model $row) => $row->toArray();
 =======
         $map = static fn(Model $row) => $row->toArray();
@@ -64,6 +71,9 @@ class ShowTenantListCommand extends Command
         $map = static fn (Model $row) => $row->toArray();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $map = static fn (Model $row) => $row->toArray();
+>>>>>>> laraxot/dev
 
         $rows = $modelClass::get()->map($map);
 
@@ -79,6 +89,7 @@ class ShowTenantListCommand extends Command
             $this->newLine();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $this->warn('⚡ No Tenants ['.$modelClass.']');
 =======
             $this->warn('⚡ No Tenants [' . $modelClass . ']');
@@ -89,6 +100,9 @@ class ShowTenantListCommand extends Command
             $this->warn('⚡ No Tenants ['.$modelClass.']');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            $this->warn('⚡ No Tenants ['.$modelClass.']');
+>>>>>>> laraxot/dev
             $this->newLine();
         }
     }

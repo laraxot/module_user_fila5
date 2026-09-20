@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Model;
 =======
@@ -27,6 +28,9 @@ use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> laraxot/dev
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -39,6 +43,7 @@ class TeamResource extends XotBaseResource
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[\Override]
 =======
     #[Override]
@@ -49,10 +54,14 @@ class TeamResource extends XotBaseResource
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public static function getModel(): string
     {
         $xot = XotData::make();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         /* @var class-string<Model> */
@@ -85,4 +94,9 @@ class TeamResource extends XotBaseResource
     
 
 >>>>>>> 2024e2e7 (.)
+=======
+        /* @var class-string<Model> */
+        return $xot->getTeamClass();
+    }
+>>>>>>> laraxot/dev
 }

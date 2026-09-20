@@ -12,10 +12,14 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Grid;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 
 class UserSection extends XotBaseSection
 {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -38,6 +42,8 @@ class UserSection extends XotBaseSection
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected function setUp(): void
     {
         parent::setUp();
@@ -54,18 +60,24 @@ class UserSection extends XotBaseSection
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     public static function getDefaultName(): ?string
     {
         return 'user';
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

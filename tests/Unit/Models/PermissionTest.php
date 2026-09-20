@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\DB;
 use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Models\Permission;
@@ -13,7 +16,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function modelsPermissionCreate(array $attributes = []): Permission
 {
@@ -52,18 +59,30 @@ test('can create permission with all fields', function (): void {
 });
 
 test('permission has connection attribute', function (): void {
+<<<<<<< HEAD
     Assert::assertSame('user', (new Permission)->getConnectionName());
 });
 
 test('permission has fillable attributes', function (): void {
     $fillable = (new Permission)->getFillable();
+=======
+    Assert::assertSame('user', (new Permission())->getConnectionName());
+});
+
+test('permission has fillable attributes', function (): void {
+    $fillable = (new Permission())->getFillable();
+>>>>>>> laraxot/dev
 
     Assert::assertContains('name', $fillable);
     Assert::assertContains('guard_name', $fillable);
 });
 
 test('permission has casts', function (): void {
+<<<<<<< HEAD
     $casts = (new Permission)->getCasts();
+=======
+    $casts = (new Permission())->getCasts();
+>>>>>>> laraxot/dev
 
     Assert::assertArrayHasKey('id', $casts);
     Assert::assertSame('int', $casts['id']);
@@ -195,7 +214,11 @@ test('can find permissions by multiple criteria', function (): void {
 });
 
 test('permission has table name', function (): void {
+<<<<<<< HEAD
     Assert::assertNotSame('', (new Permission)->getTable());
+=======
+    Assert::assertNotSame('', (new Permission())->getTable());
+>>>>>>> laraxot/dev
 });
 
 test('permission can be deleted from database', function (): void {
@@ -206,6 +229,7 @@ test('permission can be deleted from database', function (): void {
 
     Assert::assertNull(Permission::query()->find($permissionId));
 });
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -663,3 +687,5 @@ test('permission can be deleted from database', function (): void {
 });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

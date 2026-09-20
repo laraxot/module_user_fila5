@@ -1,12 +1,16 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 module: theme
 topic: moderation_actions
 canonical: ../../../Themes/docs/shared-components/moderation-actions.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/moderation-actions.md
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -72,3 +76,5 @@ canonical: ../../../Themes/docs/shared-components/moderation-actions.md
 See canonical documentation: ../../../Themes/docs/shared-components/moderation-actions.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Database Analysis Commands and Tools for app_survey"
 type: concept
@@ -21,6 +24,7 @@ related:
 ---
 
 # Database Analysis Commands and Tools for app_survey
+<<<<<<< HEAD
 =======
 # Database Analysis Commands and Tools for quaeris_survey
 >>>>>>> 60a2c9a9 (.)
@@ -50,6 +54,8 @@ related:
 # Database Analysis Commands and Tools for app_survey
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 ## Essential Database Queries
 
@@ -122,10 +128,14 @@ WHERE t.completed = 'N' AND s.id IS NOT NULL;
 # Connect to specific database
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 mcp mysql --database=txaesfry_app_survey
 
 # Execute complex queries
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_app_survey' AND table_name LIKE 'lime_survey_%'"
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -143,6 +153,8 @@ mcp mysql --database=txaesfry_app_survey
 mcp mysql --query="SELECT table_name FROM information_schema.tables WHERE table_schema = 'txaesfry_app_survey' AND table_name LIKE 'lime_survey_%'"
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 # Export survey data
 mcp mysql --export --table=lime_survey_139982 --format=csv
@@ -181,6 +193,7 @@ php artisan tinker --execute="
     'limesurvey' => DB::connection('limesurvey')->getPdo() ? 'OK' : 'ERROR',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'ptvx' => DB::connection('ptvx')->getPdo() ? 'OK' : 'ERROR',
 =======
     'quaeris' => DB::connection('quaeris')->getPdo() ? 'OK' : 'ERROR',
@@ -191,6 +204,9 @@ php artisan tinker --execute="
     'ptvx' => DB::connection('ptvx')->getPdo() ? 'OK' : 'ERROR',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    'ptvx' => DB::connection('ptvx')->getPdo() ? 'OK' : 'ERROR',
+>>>>>>> laraxot/dev
     'mysql' => DB::connection('mysql')->getPdo() ? 'OK' : 'ERROR'
 ]
 "
@@ -252,10 +268,14 @@ WHERE q.qid IS NULL;
 # Backup specific survey data
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 mysqldump -u[user] -p[pass] txaesfry_app_survey lime_survey_[SURVEY_ID] > survey_[SURVEY_ID].sql
 
 # Backup question structure
 mysqldump -u[user] -p[pass] txaesfry_app_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -273,6 +293,8 @@ mysqldump -u[user] -p[pass] txaesfry_app_survey lime_survey_[SURVEY_ID] > survey
 mysqldump -u[user] -p[pass] txaesfry_app_survey lime_questions lime_question_l10ns --where="sid=[SURVEY_ID]" > survey_[SURVEY_ID]_structure.sql
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ```
 
 ### 2. Data Validation Script
@@ -318,6 +340,7 @@ LEFT JOIN (
     WHERE table_name LIKE 'lime_survey_%'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     AND table_schema = 'txaesfry_app_survey'
 =======
     AND table_schema = 'txaesfry_quaeris_survey'
@@ -328,6 +351,9 @@ LEFT JOIN (
     AND table_schema = 'txaesfry_app_survey'
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    AND table_schema = 'txaesfry_app_survey'
+>>>>>>> laraxot/dev
 ) r ON s.sid = r.sid
 LEFT JOIN (
     SELECT 
@@ -337,6 +363,7 @@ LEFT JOIN (
     WHERE table_name LIKE 'lime_tokens_%'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     AND table_schema = 'txaesfry_app_survey'
 =======
     AND table_schema = 'txaesfry_quaeris_survey'
@@ -347,12 +374,16 @@ LEFT JOIN (
     AND table_schema = 'txaesfry_app_survey'
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    AND table_schema = 'txaesfry_app_survey'
+>>>>>>> laraxot/dev
 ) t ON s.sid = t.sid
 WHERE s.active = 'Y';
 ```
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the app_survey database used by the Limesurvey integration.
 =======
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the quaeris_survey database used by the Limesurvey integration.
@@ -363,3 +394,6 @@ These commands and tools provide comprehensive access to analyze, maintain, and 
 These commands and tools provide comprehensive access to analyze, maintain, and optimize the app_survey database used by the Limesurvey integration.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+These commands and tools provide comprehensive access to analyze, maintain, and optimize the app_survey database used by the Limesurvey integration.
+>>>>>>> laraxot/dev

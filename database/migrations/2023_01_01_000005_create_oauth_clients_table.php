@@ -8,6 +8,7 @@ use Modules\Xot\Datas\XotData;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
 =======
@@ -20,6 +21,9 @@ return new class extends XotBaseMigration
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
     public function up(): void
     {
         $this->tableCreate(static function (Blueprint $table): void {
@@ -38,6 +42,7 @@ return new class extends XotBaseMigration
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             if ($this->getColumnType('id') !== 'string') {
@@ -61,6 +66,12 @@ return new class extends XotBaseMigration
             if (! $this->hasColumn('owner_id')) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            if ('string' !== $this->getColumnType('id')) {
+                $table->uuid('id')->change(); // is  just primary
+            }
+            if (! $this->hasColumn('owner_id')) {
+>>>>>>> laraxot/dev
                 $table->nullableMorphs('owner');
             }
             if (! $this->hasColumn('name')) {

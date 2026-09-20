@@ -7,6 +7,7 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\TenantUser;
 
 /**
@@ -31,6 +32,11 @@ use Modules\User\Models\TenantUser;
 /**
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Models\TenantUser;
+
+/**
+>>>>>>> laraxot/dev
  * @extends Factory<TenantUser>
  */
 class TenantUserFactory extends Factory
@@ -49,6 +55,9 @@ class TenantUserFactory extends Factory
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<string, mixed>
      */
@@ -59,6 +68,7 @@ class TenantUserFactory extends Factory
             'user_id' => fake()->uuid(),
         ];
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -111,4 +121,6 @@ class TenantUserFactory extends Factory
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

@@ -9,6 +9,9 @@ use Filament\Actions\ActionGroup;
 use Filament\Tables\Columns\TextColumn;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\AuthenticationLog;
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
@@ -16,6 +19,7 @@ use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 final class RecentLoginsWidget extends XotBaseTableWidget
 {
     protected static ?string $heading = 'Recent Logins'; // Rendi static la proprietà
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -41,10 +45,13 @@ final class RecentLoginsWidget extends XotBaseTableWidget
     protected static ?string $heading = 'Recent Logins'; // Rendi static la proprietà
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     protected int|string|array $columnSpan = 'full';
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -67,6 +74,20 @@ final class RecentLoginsWidget extends XotBaseTableWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * Convenzione documentata in
+     * Modules/Xot/docs/wiki/concepts/has-relationship-model-class.md:
+     * per i widget, HasXotTable::getModelClass() risolve il model tramite
+     * getModel(): string — senza questo metodo lancia "No model found",
+     * riprodotto dal vivo aprendo la dashboard del modulo User.
+     */
+    public function getModel(): string
+    {
+        return AuthenticationLog::class;
+    }
+
+    /**
+>>>>>>> laraxot/dev
      * Define the columns to display in the table.
      */
     public function getTableColumns(): array
@@ -74,10 +95,14 @@ final class RecentLoginsWidget extends XotBaseTableWidget
         return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'user' => TextColumn::make('user'),
             'login_at' => TextColumn::make('login_at'),
             'ip_address' => TextColumn::make('ip_address'),
             'user_agent' => TextColumn::make('user_agent'),
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -95,6 +120,8 @@ final class RecentLoginsWidget extends XotBaseTableWidget
             'user_agent' => TextColumn::make('user_agent'),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ];
     }
 
@@ -109,9 +136,12 @@ final class RecentLoginsWidget extends XotBaseTableWidget
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     /**
      * Define the query to fetch recent logins.
@@ -126,9 +156,12 @@ final class RecentLoginsWidget extends XotBaseTableWidget
             ->limit(10);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Testing Rules Summary"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test
@@ -134,9 +140,12 @@ Ogni modulo e tema deve documentare:
 I file di documentazione vanno nelle cartelle `docs/` dentro ogni modulo/tema.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # User Module Testing
 
 ## Overview
@@ -493,6 +502,7 @@ jobs:
 ---
 
 *User Module Testing - Ensuring reliable and secure user management functionality*
+<<<<<<< HEAD
 *Testing del Modulo User: DRY + KISS + SOLID + ROBUST + LARAXOT*
 <<<<<<< HEAD
 =======
@@ -500,3 +510,6 @@ jobs:
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+*Testing del Modulo User: DRY + KISS + SOLID + ROBUST + LARAXOT*
+>>>>>>> laraxot/dev

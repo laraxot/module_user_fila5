@@ -6,15 +6,21 @@ namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Tables\Columns\Column;
+=======
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+>>>>>>> laraxot/dev
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
 use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\Xot\Filament\Actions\Header\ExportXlsAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -49,6 +55,8 @@ use Modules\Xot\Filament\Actions\Header\ExportXlsAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 abstract class BaseListUsers extends XotBaseListRecords
 {
@@ -57,6 +65,7 @@ abstract class BaseListUsers extends XotBaseListRecords
     /**
      * Get table columns for user records.
      *
+<<<<<<< HEAD
      * @return array<string, Column>
      */
 <<<<<<< HEAD
@@ -104,10 +113,21 @@ abstract class BaseListUsers extends XotBaseListRecords
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * {
+     * return [
+     * 'name' => TextColumn::make('name')->searchable(),
+     * 'email' => TextColumn::make('email')->searchable(),
+     * ];
+     * }
+     *
+     * /**
+>>>>>>> laraxot/dev
      * Get table filters for user records.
      *
      * @return array<BaseFilter>
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     #[\Override]
@@ -120,6 +140,9 @@ abstract class BaseListUsers extends XotBaseListRecords
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public function getTableFilters(): array
     {
         return [
@@ -136,6 +159,7 @@ abstract class BaseListUsers extends XotBaseListRecords
     /**
      * Get table actions for user records.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @return array<string, Action|ActionGroup>
@@ -158,6 +182,11 @@ abstract class BaseListUsers extends XotBaseListRecords
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return array<string, Action|ActionGroup>
+     */
+    #[\Override]
+>>>>>>> laraxot/dev
     public function getTableActions(): array
     {
         $actions = [
@@ -168,11 +197,15 @@ abstract class BaseListUsers extends XotBaseListRecords
         $parentActions = parent::getTableActions();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
         /** @var array<string, Action|ActionGroup> $result */
         $result = array_merge($actions, $parentActions);
 
         return $result;
+<<<<<<< HEAD
 =======
         $actions = array_merge($actions, $parentActions);
 >>>>>>> f548be94 (.)
@@ -186,6 +219,8 @@ abstract class BaseListUsers extends XotBaseListRecords
         return $result;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         /*
          * // Add deactivate action
@@ -197,6 +232,9 @@ abstract class BaseListUsers extends XotBaseListRecords
          */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -210,6 +248,7 @@ abstract class BaseListUsers extends XotBaseListRecords
         return [
             'export_xls' => ExportXlsAction::make('export_xls'),
         ];
+<<<<<<< HEAD
 =======
         /** @phpstan-ignore-next-line */
         return $actions;
@@ -233,6 +272,8 @@ abstract class BaseListUsers extends XotBaseListRecords
         ];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -245,6 +286,7 @@ abstract class BaseListUsers extends XotBaseListRecords
         return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // UserOverview::class
 =======
             //UserOverview::class
@@ -255,6 +297,9 @@ abstract class BaseListUsers extends XotBaseListRecords
             // UserOverview::class
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            // UserOverview::class
+>>>>>>> laraxot/dev
         ];
     }
 }

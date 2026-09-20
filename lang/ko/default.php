@@ -7,6 +7,7 @@ return [
         'heading' => '비밀번호 확인',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'description' => '이 작업을 완료하려면 암호를 확인하십시오',
 =======
         'description' => '이 작업을 완료하려면 암호를 확인하십시오', // Please confirm your password to complete this action.
@@ -17,6 +18,9 @@ return [
         'description' => '이 작업을 완료하려면 암호를 확인하십시오',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'description' => '이 작업을 완료하려면 암호를 확인하십시오',
+>>>>>>> laraxot/dev
         'current_password' => '현재 비밀번호',
     ],
     'two_factor' => [
@@ -115,6 +119,9 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'avatar' => [
             'label' => '아바타',
             'tooltip' => '',
@@ -207,6 +214,7 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -324,4 +332,6 @@ return [
     ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

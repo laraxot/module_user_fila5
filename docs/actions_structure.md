@@ -48,10 +48,14 @@ namespace Modules\User\Actions\User;
 
 use Spatie\QueueableAction\QueueableAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 =======
 use Modules\User\Models\User;
 >>>>>>> f548be94 (.)
+=======
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 
 class DeleteUserAction
 {

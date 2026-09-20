@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "User Module - UUID Trait Conflict Resolution"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # User Module - UUID Trait Conflict Resolution
 
 **Status**: Critical System Error Resolution
@@ -226,6 +232,7 @@ $token = $user->createToken('test');
 - [ ] Test LimeSurvey integration with UUIDs
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Verify ExternalProject contact token generation
 =======
 - [ ] Verify Quaeris contact token generation
@@ -236,6 +243,9 @@ $token = $user->createToken('test');
 - [ ] Verify ExternalProject contact token generation
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [ ] Verify ExternalProject contact token generation
+>>>>>>> laraxot/dev
 - [ ] Test all authentication flows
 - [ ] Performance testing
 
@@ -310,6 +320,7 @@ $token = $user->createToken('test');
 - [ ] LimeSurvey integration functional
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] ExternalProject survey workflows operational
 =======
 - [ ] Quaeris survey workflows operational
@@ -320,6 +331,9 @@ $token = $user->createToken('test');
 - [ ] ExternalProject survey workflows operational
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [ ] ExternalProject survey workflows operational
+>>>>>>> laraxot/dev
 
 ### **Philosophical Success** (Super Mucca)
 - [ ] Code is DRY (no duplicate UUID logic)

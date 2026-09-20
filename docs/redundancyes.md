@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Correzioni Ridondanze - Gennaio 2026"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Correzioni Ridondanze - Gennaio 2026
 
 ## Problema Identificato
@@ -139,6 +145,7 @@ Prima di committare, verifica:
 - [Redundancy Rules](../../xot/docs/filament/redundancy-rules.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [XotBaseRelationManager Documentation](../../xot/docs/filament/relation-managers.md)
 
@@ -158,3 +165,8 @@ Prima di committare, verifica:
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Service Provider Architecture](./service-provider-architecture.md)
+- [XotBaseRelationManager Documentation](../../xot/docs/filament/relation-managers.md)
+
+>>>>>>> laraxot/dev

@@ -6,6 +6,7 @@ namespace Modules\User\Http\Middleware;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Closure;
 use Filament\Facades\Filament;
@@ -16,6 +17,8 @@ use Filament\Facades\Filament;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -25,10 +28,14 @@ class PasswordExpiryMiddleware
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @param \Closure(Request):((Response|RedirectResponse)) $next
      */
     public function handle(Request $request, \Closure $next): Response|RedirectResponse
+<<<<<<< HEAD
 =======
     public function handle(Request $request, Closure $next): Response|RedirectResponse
 >>>>>>> f548be94 (.)
@@ -41,6 +48,8 @@ class PasswordExpiryMiddleware
     public function handle(Request $request, \Closure $next): Response|RedirectResponse
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     {
         if ($request->routeIs('password.change') || $request->routeIs('password.update')) {
             return $next($request);
@@ -79,6 +88,7 @@ class PasswordExpiryMiddleware
         $user = Auth::user();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $user) {
 =======
         if (!$user) {
@@ -89,6 +99,9 @@ class PasswordExpiryMiddleware
         if (! $user) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! $user) {
+>>>>>>> laraxot/dev
             return false;
         }
 

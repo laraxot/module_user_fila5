@@ -188,6 +188,7 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 ## Collegamenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Analisi Completa](./model_inheritance_analysis.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -200,10 +201,14 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 - [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
+>>>>>>> laraxot/dev
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)
 - [BaseMorphPivot](../app/Models/BaseMorphPivot.php)
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -216,3 +221,5 @@ cd /var/www/_bases/base_quaeris_fila4_mono/laravel/Modules/User
 Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, in violazione della regola no-case-only-variations. Il contenuto canonico si trova in [model_inheritance_fixes.md](./model_inheritance_fixes.md).
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev

@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 return [
     'fields' => [
         'background_color' => ['label' => 'background_color', 'placeholder' => 'background_color', 'helper_text' => 'background_color', 'description' => 'background_color', 'tooltip' => ''],
@@ -25,6 +28,7 @@ return [
     ],
     'label' => 'Custom Css',
     'plural_label' => 'Custom Css (Plurale)',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -88,4 +92,6 @@ return [
     'plural_label' => 'Custom Css (Plurale)',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

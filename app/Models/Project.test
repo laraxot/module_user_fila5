@@ -18,6 +18,7 @@ class Project extends Model
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     use \Modules\Xot\Models\Traits\HasXotFactory;
 =======
     use HasFactory;
@@ -28,6 +29,9 @@ class Project extends Model
     use \Modules\Xot\Models\Traits\HasXotFactory;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    use \Modules\Xot\Models\Traits\HasXotFactory;
+>>>>>>> laraxot/dev
 
     protected $fillable = [
         'name',

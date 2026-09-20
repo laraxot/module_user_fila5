@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\User\Tests\Feature\Filament\Clusters;
 
 use Modules\User\Database\Factories\UserFactory;
@@ -16,6 +17,11 @@ namespace Modules\User\Tests\Feature\Filament\Clusters;
 use Modules\User\Database\Factories\UserFactory;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+namespace Modules\User\Tests\Feature\Filament\Clusters;
+
+use Modules\User\Database\Factories\UserFactory;
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Clusters\Appearance;
 use Modules\User\Filament\Clusters\Appearance\Pages\Alignment;
 use Modules\User\Filament\Clusters\Appearance\Pages\Background;
@@ -24,6 +30,7 @@ use Modules\User\Filament\Clusters\Appearance\Pages\CustomCss;
 use Modules\User\Filament\Clusters\Appearance\Pages\Favicon;
 use Modules\User\Filament\Clusters\Appearance\Pages\Logo;
 use Modules\User\Tests\TestCase;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\Xot\Filament\Clusters\XotBaseCluster;
@@ -235,6 +242,15 @@ use Modules\Xot\Filament\Pages\XotBasePage;
 use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
+=======
+use Modules\Xot\Filament\Clusters\XotBaseCluster;
+use Modules\Xot\Filament\Pages\XotBasePage;
+
+use function Pest\Laravel\actingAs;
+
+use PHPUnit\Framework\Assert;
+
+>>>>>>> laraxot/dev
 use function Safe\file_get_contents;
 use function Safe\glob;
 
@@ -283,7 +299,11 @@ describe('Appearance Cluster', function (): void {
         /** @var TestCase $this */
         $files = glob(base_path('Modules/User/app/Filament/Clusters/Appearance/Pages/*.php'));
 
+<<<<<<< HEAD
         if ($files === []) {
+=======
+        if ([] === $files) {
+>>>>>>> laraxot/dev
             $this->skipTest('Appearance cluster pages directory not found.');
         }
 
@@ -328,6 +348,9 @@ describe('Appearance Cluster', function (): void {
             Assert::assertTrue(class_exists($pageClass));
         }
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

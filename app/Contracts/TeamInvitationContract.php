@@ -13,6 +13,9 @@ use Illuminate\Support\Carbon;
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * @property int          $id
  * @property int          $team_id
  * @property string       $email
@@ -30,6 +33,7 @@ use Illuminate\Support\Carbon;
  * @method static Builder<Model>|TeamInvitationContract whereRole($value)
  * @method static Builder<Model>|TeamInvitationContract whereTeamId($value)
  * @method static Builder<Model>|TeamInvitationContract whereUpdatedAt($value)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -73,6 +77,8 @@ use Illuminate\Support\Carbon;
  * @method static Builder<Model>|TeamInvitationContract whereUpdatedAt($value)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  *
  * @phpstan-require-extends Model
  *

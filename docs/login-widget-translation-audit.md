@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "LoginWidget Translation Audit - Gennaio 2025"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo
@@ -97,6 +103,7 @@ return [
 - [Widget Translation Rules](widget-translation-rules.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Root Translation Guidelines](../../../../../docs/project/translation-standards.md)
 =======
 - [Root Translation Guidelines](../../../../project_docs/translation-standards.md)
@@ -107,6 +114,9 @@ return [
 - [Root Translation Guidelines](../../../../../docs/project/translation-standards.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Root Translation Guidelines](../../../../../docs/project/translation-standards.md)
+>>>>>>> laraxot/dev
 ### 2. Struttura Completa delle Traduzioni
 Ogni file `messages.php` include categorie complete di messaggi:
 

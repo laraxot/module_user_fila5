@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\TeamUser;
@@ -17,6 +18,11 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\TeamUser;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Database\Eloquent\Builder;
+use Modules\User\Models\TeamUser;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+>>>>>>> laraxot/dev
 
 /**
  * Class TeamUserResource.
@@ -25,6 +31,7 @@ final class TeamUserResource extends XotBaseResource
 {
     protected static ?string $model = TeamUser::class;
 
+<<<<<<< HEAD
     /**
 <<<<<<< HEAD
      * @return array<string, Component>
@@ -75,6 +82,12 @@ final class TeamUserResource extends XotBaseResource
      */
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+    #[\Override]
+    /**
+     * Configure the model query.
+     */
+>>>>>>> laraxot/dev
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['team', 'user']);

@@ -6,6 +6,9 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'name' => ['label' => 'Nome', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'name.placeholder' => ['label' => 'Inserisci il nome della feature', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'name.helper_text' => ['label' => 'Il nome della feature', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -37,6 +40,7 @@ return [
     'plural_label' => 'Features (Plurale)',
     'actions' => [
         'create' => ['label' => 'Crea Features', 'icon' => 'create', 'tooltip' => 'create'],
+<<<<<<< HEAD
         'edit' => ['label' => 'Modifica Features'],
         'delete' => ['label' => 'Elimina Features'],
 =======
@@ -90,5 +94,11 @@ return [
         'delete' => ['label' => 'Elimina Features'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'edit' => ['label' => 'Modifica Features', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'delete' => ['label' => 'Elimina Features', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+>>>>>>> laraxot/dev
     ],
 ];

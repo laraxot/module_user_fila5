@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php 
 =======
 <?php
@@ -6,6 +7,9 @@
 declare(strict_types=1);
 
 >>>>>>> 60a2c9a9 (.)
+=======
+<?php 
+>>>>>>> laraxot/dev
 return array (
   'fields' => 
   array (
@@ -13,15 +17,19 @@ return array (
     array (
       'label' => 'startDate',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       'tooltip' => '',
       'helper_text' => '',
       'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     ),
     'endDate' => 
     array (
       'label' => 'endDate',
+<<<<<<< HEAD
 <<<<<<< HEAD
     ),
   ),
@@ -45,4 +53,8 @@ return array (
   array (
   ),
 >>>>>>> 60a2c9a9 (.)
+=======
+    ),
+  ),
+>>>>>>> laraxot/dev
 );

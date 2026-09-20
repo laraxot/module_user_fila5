@@ -11,6 +11,9 @@ namespace Modules\User\Filament\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Filament\Forms\Components\TextInput;
@@ -19,6 +22,7 @@ use Filament\Schemas\Components\Section;
 use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
 use Filament\Schemas\Schema;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -48,12 +52,17 @@ use Filament\Schemas\Contracts\HasSchemas;
 use Filament\Schemas\Schema;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Filament\Pages\XotBasePage;
 
@@ -71,6 +80,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
 
     /** @var array<string, mixed>|null */
     public ?array $passwordData = [];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -115,6 +125,8 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     public ?array $passwordData = [];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     protected string $view = 'user::filament.pages.my-profile';
 
@@ -125,6 +137,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     //     return filament('filament-breezy')->slug();
     // }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -141,6 +154,8 @@ class MyProfilePage extends XotBasePage implements HasSchemas
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public function mount(): void
     {
         $this->fillForms();
@@ -175,6 +190,9 @@ class MyProfilePage extends XotBasePage implements HasSchemas
                     ->schema([
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                         TextInput::make('current_password')
                             ->password()
                             ->required()
@@ -187,6 +205,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
                             ->dehydrateStateUsing(fn (string $state): string => Hash::make($state))
                             ->live(debounce: 500),
                         // ->same('password_confirmation')
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -217,6 +236,8 @@ class MyProfilePage extends XotBasePage implements HasSchemas
                         // ->same('password_confirmation')
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                         /*
                          * Forms\Components\TextInput::make('password')
                          * ->password()
@@ -225,6 +246,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
                          * ->autocomplete('new-password')
                          * ->dehydrateStateUsing(fn ($state): string => Hash::make($state))
                          * ->live(debounce: 500)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                          * ->same('password_confirmation'),
@@ -245,6 +267,11 @@ class MyProfilePage extends XotBasePage implements HasSchemas
                         TextInput::make('password_confirmation')
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                         * ->same('password_confirmation'),
+                         */
+                        TextInput::make('password_confirmation')
+>>>>>>> laraxot/dev
                             ->password()
                             ->required()
                             ->dehydrated(false)
@@ -259,6 +286,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     {
         $user = Filament::auth()->user();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (! $user instanceof Model) {
@@ -278,6 +306,10 @@ class MyProfilePage extends XotBasePage implements HasSchemas
             throw new \Exception('The authenticated user object must be an Eloquent model to allow the profile page to update it.');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! $user instanceof Model) {
+            throw new \Exception('The authenticated user object must be an Eloquent model to allow the profile page to update it.');
+>>>>>>> laraxot/dev
         }
 
         return $user;
@@ -293,6 +325,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         return __('user::profile.my_profile');
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getSubheading(): ?string
@@ -313,6 +346,11 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         return __('user::profile.subheading');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function getSubheading(): ?string
+    {
+        return __('user::profile.subheading');
+>>>>>>> laraxot/dev
     }
 
     // public static function shouldRegisterNavigation(): bool
@@ -361,9 +399,12 @@ class MyProfilePage extends XotBasePage implements HasSchemas
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             if (isset($data['new_password'])) {
                 $data['password'] = $data['new_password'];
                 unset($data['new_password']);
@@ -374,11 +415,14 @@ class MyProfilePage extends XotBasePage implements HasSchemas
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             $this->handleRecordUpdate($this->getUser(), $data);
         } catch (Halt $exception) {
             return;
@@ -390,6 +434,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
                 ->put([
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     'password_hash_'.Filament::getAuthGuard() => $data['password'],
 =======
                     'password_hash_' . Filament::getAuthGuard() => $data['password'],
@@ -400,6 +445,9 @@ class MyProfilePage extends XotBasePage implements HasSchemas
                     'password_hash_'.Filament::getAuthGuard() => $data['password'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                    'password_hash_'.Filament::getAuthGuard() => $data['password'],
+>>>>>>> laraxot/dev
                 ]);
         }
 
@@ -420,6 +468,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var array<string, mixed> $data */
 =======
 >>>>>>> f548be94 (.)
@@ -428,6 +477,9 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         /** @var array<string, mixed> $data */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        /** @var array<string, mixed> $data */
+>>>>>>> laraxot/dev
         $data = $this->getUser()->attributesToArray();
 
         $this->editProfileForm->fill($data);
@@ -457,6 +509,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<Action>
      */
@@ -469,6 +522,11 @@ class MyProfilePage extends XotBasePage implements HasSchemas
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return array<Action>
+     */
+>>>>>>> laraxot/dev
     protected function getUpdateProfileFormActions(): array
     {
         return [
@@ -478,6 +536,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<Action>
      */
@@ -490,6 +549,11 @@ class MyProfilePage extends XotBasePage implements HasSchemas
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return array<Action>
+     */
+>>>>>>> laraxot/dev
     protected function getUpdatePasswordFormActions(): array
     {
         return [
@@ -501,6 +565,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @param array<string, mixed> $data
      */
@@ -513,6 +578,11 @@ class MyProfilePage extends XotBasePage implements HasSchemas
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @param array<string, mixed> $data
+     */
+>>>>>>> laraxot/dev
     protected function handleRecordUpdate(Model $record, array $data): Model
     {
         $record->update($data);

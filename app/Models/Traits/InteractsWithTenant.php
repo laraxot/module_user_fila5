@@ -6,6 +6,7 @@ namespace Modules\User\Models\Traits;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Throwable;
 >>>>>>> f548be94 (.)
@@ -14,6 +15,8 @@ use Throwable;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Filament\Facades\Filament;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -22,6 +25,7 @@ use Modules\User\Models\Scopes\TenantScope;
 use Modules\User\Models\Tenant;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\Xot\Datas\XotData;
 >>>>>>> f548be94 (.)
@@ -30,6 +34,8 @@ use Modules\Xot\Datas\XotData;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * @property TeamContract $currentTeam
@@ -38,6 +44,7 @@ trait InteractsWithTenant
 {
     /**
      * Tenant corrente.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      */
@@ -57,11 +64,16 @@ trait InteractsWithTenant
     protected ?Model $currentTenant = null;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     */
+    protected ?Model $currentTenant = null;
+>>>>>>> laraxot/dev
 
     /**
      * Relazione con il tenant a cui appartiene il modello.
      *
      * @return BelongsTo<Model, self>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      *
@@ -72,12 +84,19 @@ trait InteractsWithTenant
      *
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+>>>>>>> laraxot/dev
      * @phpstan-return BelongsTo<Model, $this>
      */
     public function tenant(): BelongsTo
     {
         $tenant = $this->getTenant();
+<<<<<<< HEAD
         if ($tenant === null) {
+=======
+        if (null === $tenant) {
+>>>>>>> laraxot/dev
             $this->loadTenantFromSession();
             $tenant = $this->getTenant();
         }
@@ -86,6 +105,7 @@ trait InteractsWithTenant
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // @phpstan-ignore-next-line
 =======
         // @phpstan-ignore argument.type, argument.templateType
@@ -96,11 +116,15 @@ trait InteractsWithTenant
         // @phpstan-ignore-next-line
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        // @phpstan-ignore-next-line
+>>>>>>> laraxot/dev
         return $this->belongsTo($tenantClass, 'tenant_id');
     }
 
     /**
      * Ottiene il tenant corrente.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      */
@@ -120,6 +144,10 @@ trait InteractsWithTenant
     protected function getTenant(): ?Model
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     */
+    protected function getTenant(): ?Model
+>>>>>>> laraxot/dev
     {
         return $this->currentTenant;
     }
@@ -128,6 +156,7 @@ trait InteractsWithTenant
      * Carica il tenant dalla sessione.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @return void
@@ -138,6 +167,8 @@ trait InteractsWithTenant
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected function loadTenantFromSession(): void
     {
@@ -145,6 +176,7 @@ trait InteractsWithTenant
             $this->currentTenant = Filament::getTenant();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         } catch (\Throwable $e) {
 =======
         } catch (Throwable $e) {
@@ -155,6 +187,9 @@ trait InteractsWithTenant
         } catch (\Throwable $e) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        } catch (\Throwable $e) {
+>>>>>>> laraxot/dev
             // Se Filament non è disponibile, lascia il tenant come null
             $this->currentTenant = null;
         }
@@ -165,6 +200,7 @@ trait InteractsWithTenant
      */
     protected static function bootInteractsWithTenant(): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         static::addGlobalScope(new TenantScope);
@@ -203,6 +239,18 @@ trait InteractsWithTenant
                     $model->setAttribute('tenant_id', $tenant->getKey());
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        static::addGlobalScope(new TenantScope());
+
+        static::creating(static function (mixed $model): void {
+            // PHPStan Level 10: Verifica se il modello ha tenant_id
+            // Uso isFillable() invece di property_exists() per Eloquent magic properties
+            if (null !== $model && $model instanceof Model && $model->isFillable('tenant_id')) {
+                $tenant = Filament::getTenant();
+                if (null !== $tenant) {
+                    // Usa setAttribute() invece di assegnazione diretta per PHPStan
+                    $model->setAttribute('tenant_id', $tenant->getKey());
+>>>>>>> laraxot/dev
                 }
             }
         });
@@ -211,6 +259,7 @@ trait InteractsWithTenant
     /**
      * Interact with the user's first name.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected function setTenantIdAttribute(?int $value): void
@@ -226,13 +275,23 @@ trait InteractsWithTenant
     {
         $tenant = Filament::getTenant();
         if ($value === null && $tenant !== null) {
+=======
+    protected function setTenantIdAttribute(?int $value): void
+    {
+        $tenant = Filament::getTenant();
+        if (null === $value && null !== $tenant) {
+>>>>>>> laraxot/dev
             $tenantId = $tenant->getKey();
             if (is_int($tenantId)) {
                 $value = $tenantId;
             }
         }
 
+<<<<<<< HEAD
         if ($value !== null) {
+=======
+        if (null !== $value) {
+>>>>>>> laraxot/dev
             $this->attributes['tenant_id'] = $value;
         }
     }
@@ -243,11 +302,16 @@ trait InteractsWithTenant
     protected function applyTenantScope(): void
     {
         $tenant = $this->getTenant();
+<<<<<<< HEAD
         if ($tenant === null) {
+=======
+        if (null === $tenant) {
+>>>>>>> laraxot/dev
             $this->loadTenantFromSession();
             $tenant = $this->getTenant();
         }
 
+<<<<<<< HEAD
         if ($tenant !== null) {
             $tenantId = $tenant->getKey();
             if ($tenantId !== null) {
@@ -263,6 +327,12 @@ trait InteractsWithTenant
                 static::addGlobalScope(new TenantScope);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null !== $tenant) {
+            $tenantId = $tenant->getKey();
+            if (null !== $tenantId) {
+                static::addGlobalScope(new TenantScope());
+>>>>>>> laraxot/dev
             }
         }
     }

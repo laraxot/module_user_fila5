@@ -7,6 +7,7 @@ namespace Modules\User\Filament\Widgets\Auth;
 use Filament\Schemas\Schema;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Component;
@@ -19,6 +20,8 @@ use Filament\Forms\Components\TextInput;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
@@ -28,6 +31,9 @@ use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Str;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
@@ -55,6 +61,7 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
         return 'getResetPasswordFormSchema';
     }
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -144,12 +151,15 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public function mount(): void
     {
         $this->form->fill();
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -170,6 +180,8 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      * @return RedirectResponse|void
      */
     public function resetPassword()
@@ -180,10 +192,14 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
         $status = Password::reset($reset_data, function (Authenticatable $user, string $password): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             if (! $user instanceof Model) {
                 return;
             }
 
+<<<<<<< HEAD
 =======
             /** @var Model&Authenticatable $user */
 >>>>>>> f548be94 (.)
@@ -196,6 +212,8 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             $user->forceFill([
                 'password' => Hash::make($password),
                 'remember_token' => Str::random(60),
@@ -204,12 +222,16 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (Password::PASSWORD_RESET === $status) {
             session()->flash('status', __($status));
 
             return redirect()->route('login');
         }
         $this->addError('email', __(is_string($status) ? $status : 'passwords.generic_error'));
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -233,5 +255,7 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
         $this->addError('email', __(is_string($status) ? $status : 'passwords.generic_error'));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

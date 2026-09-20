@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Correzioni PHPStan per il Modulo User"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Correzioni PHPStan per il Modulo User
 
 ## Panoramica
@@ -186,6 +192,7 @@ Gli errori rimanenti (94) sono principalmente:
 - [Configurazione Password](../../config/password.php)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Root](../../../../docs/user-module-phpstan-fixes.md)
 =======
 - [Documentazione Root](../../../docs/user-module-phpstan-fixes.md)
@@ -196,6 +203,9 @@ Gli errori rimanenti (94) sono principalmente:
 - [Documentazione Root](../../../../docs/user-module-phpstan-fixes.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Documentazione Root](../../../../docs/user-module-phpstan-fixes.md)
+>>>>>>> laraxot/dev
 
 ## Note per il Futuro
 
@@ -206,6 +216,9 @@ Gli errori rimanenti (94) sono principalmente:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ## Aggiornamento verificato (2026-07-06, sessione pomeridiana)
 
 Ri-verificato con `phpstan analyse Modules/User --memory-limit=-1` (cache pulita): **0 errori**. Fix applicati in questa sessione oltre a quanto sopra:
@@ -217,6 +230,7 @@ Ri-verificato con `phpstan analyse Modules/User --memory-limit=-1` (cache pulita
 
 Dettagli completi: `docs/chat/phpstan-modules-progress-2026-07-06-pm.md` (root del repo) e `docs/wiki/second-brain/phpstan-journey.md`.
 
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: dicembre 2024*
 >>>>>>> f548be94 (.)
@@ -236,3 +250,5 @@ Dettagli completi: `docs/chat/phpstan-modules-progress-2026-07-06-pm.md` (root d
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

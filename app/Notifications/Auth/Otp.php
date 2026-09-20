@@ -6,6 +6,9 @@ namespace Modules\User\Notifications\Auth;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\AnonymousNotifiable;
@@ -13,6 +16,7 @@ use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -35,6 +39,8 @@ use Modules\User\Datas\PasswordData;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Contracts\UserContract;
 
 class Otp extends Notification implements ShouldQueue
@@ -49,11 +55,17 @@ class Otp extends Notification implements ShouldQueue
     public function __construct(
         public UserContract $user,
         public string $code,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 
     /**
      * Get the notification's delivery channels.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  mixed  $_notifiable  L'entità da notificare
@@ -66,6 +78,10 @@ class Otp extends Notification implements ShouldQueue
      * @param  mixed  $_notifiable  L'entità da notificare
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @param mixed $_notifiable L'entità da notificare
+     *
+>>>>>>> laraxot/dev
      * @return array<int, string>
      */
     public function via(mixed $_notifiable): array
@@ -77,13 +93,20 @@ class Otp extends Notification implements ShouldQueue
      * Get the mail representation of the notification.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function toMail(AnonymousNotifiable $notifiable): MailMessage
     {
         $pwd = PasswordData::make();
         $app_name = SafeStringCastAction::cast(config('app.name'));
 
+<<<<<<< HEAD
         $mailMessage = new MailMessage;
+=======
+        $mailMessage = new MailMessage();
+>>>>>>> laraxot/dev
         $mailMessage = $mailMessage->template('user::notifications.email');
         $mailMessage = $mailMessage->subject(SafeStringCastAction::cast(__('user::otp.mail.subject')));
         $mailMessage = $mailMessage->greeting(SafeStringCastAction::cast(__('user::otp.mail.greeting')));
@@ -94,6 +117,7 @@ class Otp extends Notification implements ShouldQueue
 
         return $mailMessage
             ->salutation(SafeStringCastAction::cast(__('user::otp.mail.salutation', ['app_name' => $app_name])));
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -139,11 +163,14 @@ class Otp extends Notification implements ShouldQueue
             ->salutation(SafeStringCastAction::cast(__('user::otp.mail.salutation', ['app_name' => $app_name])));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
      * Get the array representation of the notification.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @return array<string, mixed>
@@ -164,6 +191,11 @@ class Otp extends Notification implements ShouldQueue
     public function toArray(UserContract $notifiable): array
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return array<string, mixed>
+     */
+    public function toArray(UserContract $notifiable): array
+>>>>>>> laraxot/dev
     {
         return [];
     }

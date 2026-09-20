@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
@@ -21,10 +22,15 @@ use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+>>>>>>> laraxot/dev
 
 class ViewOauthDeviceCode extends XotBaseViewRecord
 {
     protected static string $resource = OauthDeviceCodeResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -112,4 +118,6 @@ class ViewOauthDeviceCode extends XotBaseViewRecord
     }
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

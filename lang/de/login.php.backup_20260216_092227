@@ -45,10 +45,14 @@ return [
     'subtitle_link' => 'neues Konto erstellen',
     'page' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'title' => 'Willkommen bei <nome progetto>! 🍕',
 =======
         'title' => 'Willkommen bei LaravelPizza! 🍕',
 >>>>>>> 60a2c9a9 (.)
+=======
+        'title' => 'Willkommen bei <nome progetto>! 🍕',
+>>>>>>> laraxot/dev
         'subtitle' => 'Treten Sie der Community von Entwicklern und Pizza-Liebhabern bei',
     ],
     'already_registered' => 'Noch kein Konto?',

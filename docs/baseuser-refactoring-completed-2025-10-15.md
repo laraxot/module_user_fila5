@@ -240,6 +240,7 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 - [Roles & Permissions](./roles-permissions.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module README](./README.md)
 =======
 - [User Module README](./readme.md)
@@ -250,6 +251,9 @@ $user->hasRole('admin', 'api'); // ✅ Ora funziona correttamente
 - [User Module README](./README.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [User Module README](./README.md)
+>>>>>>> laraxot/dev
 
 ### Root Progetto
 - [Code Quality](../../docs/code-quality-analysis.md)

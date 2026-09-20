@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Unit;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -196,6 +199,7 @@ describe('User', function (): void {
         /* @var TestCase $this */
         $this->skipTest('User model does not implement SoftDeletes trait');
     });
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -504,4 +508,6 @@ describe('User', function (): void {
     });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

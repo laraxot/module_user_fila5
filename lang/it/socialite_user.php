@@ -6,6 +6,7 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'provider' => ['label' => 'provider', 'tooltip' => '', 'helper_text' => '', 'description' => '', 'placeholder' => 'provider'],
         'provider_id' => ['label' => 'provider_id', 'tooltip' => '', 'helper_text' => '', 'description' => '', 'placeholder' => 'provider_id'],
         'name' => ['label' => 'name', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -87,6 +88,8 @@ return [
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
         'provider' => ['label' => 'provider', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'provider_id' => ['label' => 'provider_id', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'name' => ['label' => 'name', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -109,9 +112,15 @@ return [
         'create' => ['label' => 'Crea Socialite User', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Socialite User', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Socialite User', 'icon' => 'delete', 'tooltip' => 'delete'],
+<<<<<<< HEAD
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'attach' => ['label' => 'attach', 'icon' => 'attach', 'tooltip' => 'attach'],
+        'detach' => ['label' => 'detach', 'icon' => 'detach', 'tooltip' => 'detach'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+>>>>>>> laraxot/dev
     ],
 ];

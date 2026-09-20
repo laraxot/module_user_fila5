@@ -6,6 +6,9 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'name' => ['label' => 'name', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'id' => ['label' => 'id'],
         'user_id' => ['label' => 'user_id'],
@@ -16,6 +19,13 @@ return [
         'revoked' => ['label' => 'revoked'],
         'created_at' => ['label' => 'created_at'],
         'updated_at' => ['label' => 'updated_at'],
+<<<<<<< HEAD
+=======
+        'grant_types' => ['label' => 'grant_types'],
+        'redirect_uris' => ['label' => 'redirect_uris'],
+        'owner_id' => ['label' => 'owner_id'],
+        'owner_type' => ['label' => 'owner_type'],
+>>>>>>> laraxot/dev
     ],
     'navigation' => [
         'name' => 'Clients',
@@ -30,6 +40,7 @@ return [
     'actions' => [
         'create' => ['label' => 'Crea Clients', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Clients'],
+<<<<<<< HEAD
         'delete' => ['label' => 'Elimina Clients'],
 =======
         'name' => [
@@ -68,5 +79,9 @@ return [
         'delete' => ['label' => 'Elimina Clients'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'delete' => ['label' => 'Elimina Clients', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+>>>>>>> laraxot/dev
     ],
 ];

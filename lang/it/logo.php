@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 return [
     'fields' => [
         'logo' => ['label' => 'logo', 'placeholder' => 'logo', 'helper_text' => 'logo', 'description' => 'logo', 'tooltip' => ''],
@@ -24,6 +27,7 @@ return [
     ],
     'label' => 'Logo',
     'plural_label' => 'Logo (Plurale)',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -80,4 +84,6 @@ return [
     'plural_label' => 'Logo (Plurale)',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

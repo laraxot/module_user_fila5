@@ -6,6 +6,7 @@ namespace Modules\User\Datas;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use DateInterval;
 >>>>>>> f548be94 (.)
@@ -14,6 +15,8 @@ use DateInterval;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Spatie\LaravelData\Data;
 
 /**
@@ -23,6 +26,7 @@ class PermissionCacheData extends Data
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public \DateInterval $expiration_time;
 =======
     public DateInterval $expiration_time;
@@ -33,6 +37,9 @@ class PermissionCacheData extends Data
     public \DateInterval $expiration_time;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public \DateInterval $expiration_time;
+>>>>>>> laraxot/dev
 
     // => \DateInterval::createFromDateString('24 hours'),
     public string $key;

@@ -9,6 +9,7 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'name' => 'Nome',
         'phone' => 'Telefono',
         'email' => 'Email',
@@ -36,5 +37,10 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
 >>>>>>> 60a2c9a9 (.)
+=======
+        'name' => 'Nome',
+        'phone' => 'Telefono',
+        'email' => 'Email',
+>>>>>>> laraxot/dev
     ],
 ];

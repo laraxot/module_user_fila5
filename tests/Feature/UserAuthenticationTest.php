@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\AuthenticationLog;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -18,6 +21,7 @@ describe('User Authentication', function () {
 
         $user = createTestUser([
             'email' => $email,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -44,6 +48,8 @@ describe('User Authentication', function () {
             'email' => $email,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'password' => Hash::make('password123'),
             'is_active' => true,
         ]);
@@ -51,6 +57,9 @@ describe('User Authentication', function () {
         $authenticated = Auth::attempt([
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'email' => $email,
             'password' => 'password123',
         ]);
@@ -64,6 +73,7 @@ describe('User Authentication', function () {
 
         createTestUser([
             'email' => $email,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -96,6 +106,8 @@ describe('User Authentication', function () {
             'email' => $email,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'password' => Hash::make('password123'),
             'is_active' => false,
         ]);
@@ -103,6 +115,9 @@ describe('User Authentication', function () {
         $authenticated = Auth::attempt([
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'email' => $email,
             'password' => 'password123',
         ]);
@@ -119,6 +134,7 @@ describe('User Authentication', function () {
 
         $user = createTestUser([
             'email' => $email,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -154,6 +170,8 @@ describe('User Authentication', function () {
             'email' => $email,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'password' => Hash::make('password123'),
             'is_active' => true,
         ]);
@@ -161,6 +179,9 @@ describe('User Authentication', function () {
         Auth::attempt([
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'email' => $email,
             'password' => 'password123',
         ]);
@@ -188,6 +209,7 @@ describe('User Authentication', function () {
         $user = createTestUser(['is_otp' => true]);
 
         Assert::assertTrue($user->is_otp);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -246,5 +268,7 @@ describe('User Authentication', function () {
         Assert::assertTrue($user->is_otp);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     });
 });

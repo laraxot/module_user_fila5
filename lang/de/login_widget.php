@@ -11,6 +11,7 @@ return [
             'description' => 'E-Mail-Adresse für die Anmeldung',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
@@ -21,6 +22,10 @@ return [
             'helper_text' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> laraxot/dev
         ],
         'password' => [
             'label' => 'Passwort',
@@ -29,6 +34,7 @@ return [
             'description' => 'Passwort für die Anmeldung',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
@@ -39,6 +45,10 @@ return [
             'helper_text' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> laraxot/dev
         ],
         'remember' => [
             'label' => 'Angemeldet bleiben',
@@ -47,6 +57,7 @@ return [
             'description' => 'Option zum Merken der Anmeldung',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
 =======
@@ -57,6 +68,10 @@ return [
             'helper_text' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+>>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -66,9 +81,12 @@ return [
         ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'hidePassword' => [
             'tooltip' => 'hidePassword',
             'label' => 'hidePassword',
@@ -80,11 +98,14 @@ return [
             'tooltip' => 'showPassword',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     ],
     'messages' => [
         'login_success' => 'Anmeldung erfolgreich',
@@ -99,9 +120,12 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -112,9 +136,12 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

@@ -10,6 +10,7 @@ namespace Modules\User\Http\Controllers\Socialite;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\Xot\Contracts\UserContract;
 >>>>>>> f548be94 (.)
@@ -18,12 +19,15 @@ use Modules\Xot\Contracts\UserContract;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Request;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Actions\Socialite\IsProviderConfiguredAction;
 >>>>>>> f548be94 (.)
@@ -32,6 +36,8 @@ use Modules\User\Actions\Socialite\IsProviderConfiguredAction;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Actions\Socialite\IsRegistrationEnabledAction;
 use Modules\User\Actions\Socialite\IsUserAllowedAction;
 use Modules\User\Actions\Socialite\LoginUserAction;
@@ -46,6 +52,7 @@ use Modules\User\Events\RegistrationNotEnabled;
 use Modules\User\Events\UserNotAllowed;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 =======
 use Modules\User\Exceptions\ProviderNotConfigured;
@@ -56,6 +63,9 @@ use Modules\User\Exceptions\ProviderNotConfigured;
 use Modules\Xot\Contracts\UserContract;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\Xot\Contracts\UserContract;
+>>>>>>> laraxot/dev
 use Modules\Xot\Datas\XotData;
 
 class ProcessCallbackController extends Controller
@@ -75,6 +85,7 @@ class ProcessCallbackController extends Controller
         $oauthUser = app(RetrieveOauthUserAction::class)->execute($provider);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null === $oauthUser) {
 =======
         if ($oauthUser === null) {
@@ -85,12 +96,16 @@ class ProcessCallbackController extends Controller
         if (null === $oauthUser) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null === $oauthUser) {
+>>>>>>> laraxot/dev
             return app(RedirectToLoginAction::class)->execute('auth.login-failed');
         }
 
         // Verify if user is allowed
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! app(IsUserAllowedAction::class)->execute($oauthUser)) {
 =======
         if (!app(IsUserAllowedAction::class)->execute($oauthUser)) {
@@ -101,6 +116,9 @@ class ProcessCallbackController extends Controller
         if (! app(IsUserAllowedAction::class)->execute($oauthUser)) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! app(IsUserAllowedAction::class)->execute($oauthUser)) {
+>>>>>>> laraxot/dev
             UserNotAllowed::dispatch($oauthUser);
 
             return app(RedirectToLoginAction::class)->execute('auth.user-not-allowed');
@@ -112,11 +130,15 @@ class ProcessCallbackController extends Controller
             $socialiteUserObj = $socialiteUser->user;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             if (null === $socialiteUserObj || ! $socialiteUserObj->canAccessSocialite()) {
                 return app(RedirectToLoginAction::class)->execute('auth.user-not-allowed');
             }
             // Associate default roles to the existing "real" user, if needed
             app(SetDefaultRolesBySocialiteUserAction::class)->execute($provider, $socialiteUserObj, $oauthUser);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -138,11 +160,14 @@ class ProcessCallbackController extends Controller
             app(SetDefaultRolesBySocialiteUserAction::class)->execute($provider, $socialiteUserObj, $oauthUser);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
             return app(LoginUserAction::class)->execute($socialiteUser);
         }
 
         // See if registration is allowed
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (! app(IsRegistrationEnabledAction::class)->execute()) {
@@ -155,6 +180,9 @@ class ProcessCallbackController extends Controller
         if (! app(IsRegistrationEnabledAction::class)->execute()) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! app(IsRegistrationEnabledAction::class)->execute()) {
+>>>>>>> laraxot/dev
             RegistrationNotEnabled::dispatch($provider, $oauthUser);
 
             return app(RedirectToLoginAction::class)->execute('auth.registration-not-enabled');
@@ -169,6 +197,7 @@ class ProcessCallbackController extends Controller
         // Handle registration
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null !== $user) {
 =======
         if ($user !== null) {
@@ -179,6 +208,9 @@ class ProcessCallbackController extends Controller
         if (null !== $user) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null !== $user) {
+>>>>>>> laraxot/dev
             $socialiteUser = app(RegisterSocialiteUserAction::class)->execute($provider, $oauthUser, $user);
         } else {
             $socialiteUser = app(RegisterOauthUserAction::class)->execute($provider, $oauthUser);
@@ -187,6 +219,7 @@ class ProcessCallbackController extends Controller
         $socialiteUserObj = $socialiteUser->user;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null === $socialiteUserObj || ! $socialiteUserObj->canAccessSocialite()) {
 =======
         if ($socialiteUserObj === null || !$socialiteUserObj->canAccessSocialite()) {
@@ -197,6 +230,9 @@ class ProcessCallbackController extends Controller
         if (null === $socialiteUserObj || ! $socialiteUserObj->canAccessSocialite()) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null === $socialiteUserObj || ! $socialiteUserObj->canAccessSocialite()) {
+>>>>>>> laraxot/dev
             return app(RedirectToLoginAction::class)->execute('auth.user-not-allowed');
         }
 
@@ -205,6 +241,7 @@ class ProcessCallbackController extends Controller
         $authUser = Auth::user();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null !== $authUser && method_exists($authUser, 'canAccessSocialite') && ! $authUser->canAccessSocialite()) {
 =======
         if ($authUser !== null && method_exists($authUser, 'canAccessSocialite') && !$authUser->canAccessSocialite()) {
@@ -215,6 +252,9 @@ class ProcessCallbackController extends Controller
         if (null !== $authUser && method_exists($authUser, 'canAccessSocialite') && ! $authUser->canAccessSocialite()) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null !== $authUser && method_exists($authUser, 'canAccessSocialite') && ! $authUser->canAccessSocialite()) {
+>>>>>>> laraxot/dev
             return redirect()->route(
                 optional(Auth::check()) ? 'filament.user.pages.dashboard' : 'filament.user.auth.login',
             );

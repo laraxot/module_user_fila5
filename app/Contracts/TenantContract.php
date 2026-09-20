@@ -7,6 +7,7 @@ namespace Modules\User\Contracts;
 use Illuminate\Database\Eloquent\Collection;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Contracts\ProfileContract;
 =======
@@ -23,12 +24,19 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Database\Eloquent\Model;
+use Modules\Xot\Contracts\ProfileContract;
+>>>>>>> laraxot/dev
 use Modules\Xot\Contracts\UserContract;
 
 /**
  * @property Collection<int, Model&UserContract> $members
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * @property int|null                            $members_count
  * @property ProfileContract|null                $creator
  * @property ProfileContract|null                $updater
@@ -36,6 +44,7 @@ use Modules\Xot\Contracts\UserContract;
  * @phpstan-require-extends Model
  */
 interface TenantContract
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -59,6 +68,8 @@ interface TenantContract extends ModelContract
 interface TenantContract
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 {
     // belongstomany or hasmany ?
     // public function users(): HasMany;

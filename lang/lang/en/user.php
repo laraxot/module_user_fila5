@@ -26,6 +26,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'name' => 'Name',
         'email' => 'Email',
         'created_at' => 'Created At',
@@ -36,6 +39,7 @@ return [
         'password' => 'Password',
         'password_confirmation' => 'Confirm Password',
         'email_verified_at' => 'Email Verified At',
+<<<<<<< HEAD
 =======
         'name' => [
             'label' => 'Name',
@@ -98,6 +102,8 @@ return [
             'description' => '',
         ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     ],
     'filters' => [
         'active_users' => 'Active Users',
@@ -171,6 +177,7 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'navigation' => [
         'label' => 'Missing Navigation Label',
@@ -182,4 +189,6 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

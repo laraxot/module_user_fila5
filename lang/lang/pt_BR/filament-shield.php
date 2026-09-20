@@ -4,61 +4,88 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * |--------------------------------------------------------------------------
      * | Table Columns
      * |--------------------------------------------------------------------------
      */
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     'column.name' => 'Nome',
     'column.guard_name' => 'Guard',
     'column.roles' => 'Funções',
     'column.permissions' => 'Permissões',
     'column.updated_at' => 'Alterado em',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * |--------------------------------------------------------------------------
      * | Form Fields
      * |--------------------------------------------------------------------------
      */
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     'field.name' => 'Nome',
     'field.guard_name' => 'Guard',
     'field.permissions' => 'Permissões',
     'field.select_all.name' => 'Selecionar todos',
     'field.select_all.message' => 'Habilitar todas as permissões para essa função',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * |--------------------------------------------------------------------------
      * | Navigation & Resource
      * |--------------------------------------------------------------------------
      */
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Funções',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Função',
     'resource.label.roles' => 'Funções',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * |--------------------------------------------------------------------------
      * | Section & Tabs
      * |--------------------------------------------------------------------------
      */
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     'section' => 'Entidades',
     'resources' => 'Recursos',
     'widgets' => 'Widgets',
     'pages' => 'Páginas',
     'custom' => 'Permissões customizadas',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * |--------------------------------------------------------------------------
      * | Messages
@@ -85,6 +112,7 @@ return [
     //     'restore_any' => 'Restore Any',
     //     'replicate' => 'Replicate',
     // ],
+<<<<<<< HEAD
 =======
     'forbidden' => 'Você não tem permissão para acessar',
     'navigation' => [
@@ -101,4 +129,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

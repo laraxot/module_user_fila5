@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "MIGRATION_BEST_PRACTICES - Modulo User"
 module: user
@@ -290,6 +291,8 @@ per garantire che:
 
 Se una delle risposte è "no", la migration **non rispetta la filosofia Laraxot** e va corretta prima di eseguire `composer go` / `php artisan migrate`.
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: migration-best-practices
@@ -306,4 +309,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/migration-best-practices-Modules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev

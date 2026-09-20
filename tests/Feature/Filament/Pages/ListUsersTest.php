@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature\Filament\Pages;
 
 use Filament\Facades\Filament;
@@ -21,6 +24,7 @@ use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -61,12 +65,17 @@ use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /* @var TestCase $this */
     try {
         $panel = Filament::getPanel('user::admin');
@@ -77,6 +86,7 @@ beforeEach(function (): void {
     }
     Filament::setCurrentPanel($panel);
 
+<<<<<<< HEAD
     TestCase::$listUsersPage = new ListUsers;
 
     $users = UserFactory::new()
@@ -106,12 +116,20 @@ beforeEach(function (): void {
     $users = UserFactory::new()
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    TestCase::$listUsersPage = new ListUsers();
+
+    $users = UserFactory::new()
+>>>>>>> laraxot/dev
         ->count(3)
         ->create([
             'type' => UserType::MasterAdmin,
         ]);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     TestCase::$users = new Collection($users->all());
 });
@@ -230,6 +248,7 @@ describe('List Users', function (): void {
         Assert::assertTrue($nameColumn->isSearchable());
         Assert::assertTrue($emailColumn->isSearchable());
     });
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -551,4 +570,6 @@ describe('List Users', function (): void {
     });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

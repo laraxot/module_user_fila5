@@ -6,6 +6,7 @@ namespace Modules\User\Console\Commands;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Exception;
 >>>>>>> f548be94 (.)
@@ -14,6 +15,8 @@ use Exception;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Datas\PasswordData;
@@ -21,6 +24,7 @@ use Modules\User\Events\NewPasswordSet;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 class ChangePasswordCommand extends Command
@@ -43,6 +47,11 @@ class ChangePasswordCommand extends Command
     protected $signature = 'user:change-password {--email= : Email dell\'utente}';
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+class ChangePasswordCommand extends Command
+{
+    protected $signature = 'user:change-password {--email= : Email dell\'utente}';
+>>>>>>> laraxot/dev
 
     protected $description = 'Change user password';
 
@@ -50,6 +59,9 @@ class ChangePasswordCommand extends Command
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $emailInput = $this->option('email') ?? $this->ask('Enter the user email:');
         Assert::string($emailInput);
 
@@ -57,6 +69,7 @@ class ChangePasswordCommand extends Command
 
         if (! filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $this->error('Email non valida: '.$emailInput);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -78,16 +91,22 @@ class ChangePasswordCommand extends Command
             $this->error('Email non valida: '.$emailInput);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
             return;
         }
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $user = XotData::make()->findUserByEmail($email);
 
         if (null === $user) {
             $this->error("Utente non trovato per email: {$email}");
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -108,6 +127,8 @@ class ChangePasswordCommand extends Command
             $this->error("Utente non trovato per email: {$email}");
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
             return;
         }
@@ -122,10 +143,14 @@ class ChangePasswordCommand extends Command
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
         $pwdData = PasswordData::make();
         $passwordExpiryDateTime = now()->addDays($pwdData->expires_in);
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -146,6 +171,8 @@ class ChangePasswordCommand extends Command
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $user = tap($user)->update([
             'password_expires_at' => $passwordExpiryDateTime,
             'is_otp' => false,

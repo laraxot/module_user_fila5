@@ -7,11 +7,15 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\Device;
 
 /**
  * @extends Factory<Device>
  */
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\Device;
@@ -29,6 +33,8 @@ use Modules\User\Models\Device;
  */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 class DeviceFactory extends Factory
 {
     /**
@@ -36,6 +42,7 @@ class DeviceFactory extends Factory
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @var class-string<Device>
 =======
      * @var class-string<Model>
@@ -46,6 +53,9 @@ class DeviceFactory extends Factory
      * @var class-string<Device>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @var class-string<Device>
+>>>>>>> laraxot/dev
      */
     protected $model = Device::class;
 
@@ -53,26 +63,35 @@ class DeviceFactory extends Factory
      * Define the model's default state.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      *
      * @return array<string, mixed>
      */
     /**
      * @return array<string, mixed>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     public function definition(): array
     {
         return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'uuid' => fake()->uuid(),
             'mobile_id' => fake()->uuid(),
             'languages' => [fake()->languageCode(), fake()->languageCode()],
@@ -86,6 +105,7 @@ class DeviceFactory extends Factory
             'is_mobile' => true,
             'is_tablet' => false,
             'is_phone' => true,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -120,6 +140,8 @@ class DeviceFactory extends Factory
             'is_phone' => true,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ];
     }
 }

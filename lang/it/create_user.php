@@ -8,6 +8,9 @@ return [
             'label' => 'name',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -23,6 +26,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -53,6 +57,8 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -66,12 +72,16 @@ return [
             'label' => 'cancel',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'icon' => 'cancel',
         ],
         'logout' => [
             'icon' => 'logout',
         ],
     ],
+<<<<<<< HEAD
 =======
         ],
     ],
@@ -83,6 +93,8 @@ return [
         ],
     ],
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'navigation' => [
         'name' => 'Create User',
         'plural' => 'Create User',
@@ -97,6 +109,7 @@ return [
     'label' => 'Create User',
     'plural_label' => 'Create User (Plurale)',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         ],
     ],
@@ -104,4 +117,6 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

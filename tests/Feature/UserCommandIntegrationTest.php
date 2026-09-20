@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Console\Command;
@@ -12,14 +15,21 @@ use Modules\User\Console\Commands\ChangeTypeCommand;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
     /* @var TestCase $this */
+<<<<<<< HEAD
     TestCase::$command = new ChangeTypeCommand;
+=======
+    TestCase::$command = new ChangeTypeCommand();
+>>>>>>> laraxot/dev
 });
 
 describe('User Command Integration', function (): void {
@@ -108,7 +118,11 @@ describe('User Command Integration', function (): void {
     });
 
     test('can work with type checking utilities', function (): void {
+<<<<<<< HEAD
         $testObject = new \stdClass;
+=======
+        $testObject = new \stdClass();
+>>>>>>> laraxot/dev
         $testObject->value = 'test';
         $testObject->getLabel = fn () => 'Test Label';
 
@@ -133,6 +147,7 @@ describe('User Command Integration', function (): void {
     });
 
     test('validates array operations', function (): void {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -439,12 +454,17 @@ describe('User Command Integration', function (): void {
     test('validates array operations', function (): void {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $testArray = ['key1' => 'value1', 'key2' => 'value2'];
 
         $mapped = [];
         foreach ($testArray as $key => $value) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             $mapped[$key.'_suffix'] = $value.'_modified';
         }
         Assert::assertSame('value1_modified', $mapped['key1_suffix']);
@@ -495,7 +515,11 @@ describe('User Command Integration', function (): void {
     });
 
     test('can handle object property access safely', function (): void {
+<<<<<<< HEAD
         $testObject = new \stdClass;
+=======
+        $testObject = new \stdClass();
+>>>>>>> laraxot/dev
         $testObject->testProperty = 'test_value';
 
         $objectData = (array) $testObject;
@@ -503,6 +527,7 @@ describe('User Command Integration', function (): void {
         Assert::assertTrue(array_key_exists('testProperty', $objectData));
 
         Assert::assertFalse(array_key_exists('nonExistentProperty', $objectData));
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -646,5 +671,7 @@ describe('User Command Integration', function (): void {
         Assert::assertFalse(array_key_exists('nonExistentProperty', $objectData));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     });
 });

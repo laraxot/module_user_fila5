@@ -10,10 +10,14 @@ namespace Modules\User\Filament\Resources\PermissionResource\RelationManager;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -33,6 +37,8 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class RoleRelationManager extends XotBaseRelationManager
@@ -41,6 +47,7 @@ class RoleRelationManager extends XotBaseRelationManager
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static ?string $recordTitleAttribute = 'name';
 =======
     protected static null|string $recordTitleAttribute = 'name';
@@ -51,12 +58,16 @@ class RoleRelationManager extends XotBaseRelationManager
     protected static ?string $recordTitleAttribute = 'name';
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    protected static ?string $recordTitleAttribute = 'name';
+>>>>>>> laraxot/dev
 
     /**
      * @return array<string, Component>
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[\Override]
 =======
     #[Override]
@@ -67,6 +78,9 @@ class RoleRelationManager extends XotBaseRelationManager
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
     {
         return [
@@ -77,6 +91,9 @@ class RoleRelationManager extends XotBaseRelationManager
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<string, Column>
      */
@@ -90,6 +107,7 @@ class RoleRelationManager extends XotBaseRelationManager
     }
 
     protected static function getModelLabel(): ?string
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -122,6 +140,8 @@ class RoleRelationManager extends XotBaseRelationManager
     protected static function getModelLabel(): ?string
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     {
         // return __('filament-spatie-roles-permissions::filament-spatie.section.role');
         return __('filament-spatie-roles-permissions::filament-spatie.section.role');

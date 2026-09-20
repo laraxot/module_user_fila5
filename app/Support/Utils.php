@@ -9,14 +9,24 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\User\Contracts\HasShieldPermissions;
 use Modules\User\Datas\FilamentShieldData;
+<<<<<<< HEAD
+=======
+
+use function Safe\class_implements;
+use function Safe\class_uses;
+
+>>>>>>> laraxot/dev
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Traits\HasRoles;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 use function Safe\class_implements;
 use function Safe\class_uses;
 
+=======
+>>>>>>> laraxot/dev
 /**
  * ---.
  */
@@ -39,6 +49,7 @@ class Utils
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $filesystem = new Filesystem;
 =======
         $filesystem = new Filesystem();
@@ -49,6 +60,9 @@ class Utils
         $filesystem = new Filesystem;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $filesystem = new Filesystem();
+>>>>>>> laraxot/dev
 
         return $filesystem->exists($roleResourcePath);
     }
@@ -102,11 +116,15 @@ class Utils
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         return in_array(
             "BezhanSalleh\FilamentShield\Traits\HasFilamentShield",
             class_uses(static::getAuthProviderFQCN()),
             strict: true
         ) || in_array(HasRoles::class, class_uses(static::getAuthProviderFQCN()), strict: true);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -127,6 +145,8 @@ class Utils
         ) || in_array(HasRoles::class, class_uses(static::getAuthProviderFQCN()), strict: true);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     public static function isSuperAdminEnabled(): bool
@@ -167,6 +187,7 @@ class Utils
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return list<string>
      */
@@ -179,16 +200,25 @@ class Utils
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return list<string>
+     */
+>>>>>>> laraxot/dev
     public static function getGeneralResourcePermissionPrefixes(): array
     {
         Assert::isArray($res = config('filament-shield.permission_prefixes.resource'), 'wip');
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         return array_values(array_map(
             static fn (mixed $item): string => Assert::string($item),
             $res
         ));
+<<<<<<< HEAD
 =======
         return $res;
 >>>>>>> f548be94 (.)
@@ -201,6 +231,8 @@ class Utils
         ));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     public static function getPagePermissionPrefix(): string
@@ -274,6 +306,7 @@ class Utils
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return list<string>
      */
@@ -286,12 +319,20 @@ class Utils
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return list<string>
+     */
+>>>>>>> laraxot/dev
     public static function getExcludedResouces(): array
     {
         Assert::isArray($res = config('filament-shield.exclude.resources'));
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         return array_values(array_map(
             static fn (mixed $item): string => Assert::string($item),
             $res
@@ -301,6 +342,7 @@ class Utils
     /**
      * @return list<string>
      */
+<<<<<<< HEAD
 =======
         return $res;
     }
@@ -322,12 +364,17 @@ class Utils
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public static function getExcludedPages(): array
     {
         Assert::isArray($res = config('filament-shield.exclude.pages'));
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         return array_values(array_map(
             static fn (mixed $item): string => Assert::string($item),
             $res
@@ -337,6 +384,7 @@ class Utils
     /**
      * @return list<string>
      */
+<<<<<<< HEAD
 =======
         return $res;
     }
@@ -358,16 +406,22 @@ class Utils
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public static function getExcludedWidgets(): array
     {
         Assert::isArray($res = config('filament-shield.exclude.widgets'));
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         return array_values(array_map(
             static fn (mixed $item): string => Assert::string($item),
             $res
         ));
+<<<<<<< HEAD
 =======
         return $res;
 >>>>>>> f548be94 (.)
@@ -380,6 +434,8 @@ class Utils
         ));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     public static function isRolePolicyRegistered(): bool
@@ -403,6 +459,9 @@ class Utils
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $modelClass = $resourceFQCN::getModel();
         Assert::string($modelClass);
 
@@ -418,6 +477,7 @@ class Utils
     /**
      * @return list<string>
      */
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -447,6 +507,8 @@ class Utils
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public static function getResourcePermissionPrefixes(string $resourceFQCN): array
     {
         $res = static::doesResourceHaveCustomPermissions($resourceFQCN)
@@ -456,10 +518,14 @@ class Utils
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         return array_values(array_map(
             static fn (mixed $item): string => Assert::string($item),
             $res
         ));
+<<<<<<< HEAD
 =======
         return $res;
 >>>>>>> f548be94 (.)
@@ -472,6 +538,8 @@ class Utils
         ));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     public static function getRoleModel(): string
@@ -496,6 +564,7 @@ class Utils
         $roleResourcePath = base_path('Modules/User/app/Filament/Resources/RoleResource.php');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f548be94 (.)
@@ -504,6 +573,9 @@ class Utils
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
         return File::exists($roleResourcePath);
     }
 }

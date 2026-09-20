@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Implementazione Corretta delle Pagine Auth"
 type: concept
@@ -34,6 +37,7 @@ related:
 ## Introduzione
 
 Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di <nome progetto>, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -91,6 +95,8 @@ related:
 Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di <nome progetto>, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 ## Struttura delle Directory
 
@@ -144,6 +150,7 @@ laravel/Themes/One/resources/views/pages/auth/
             session()->regenerate();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
             
@@ -154,6 +161,9 @@ laravel/Themes/One/resources/views/pages/auth/
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
             // Reindirizza alla home page localizzata
             return redirect()->to('/' . app()->getLocale());
         }
@@ -219,6 +229,7 @@ laravel/Themes/One/resources/views/pages/auth/
                 <div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <x-filament::button
 =======
                     <x-filament::button 
@@ -229,6 +240,9 @@ laravel/Themes/One/resources/views/pages/auth/
                     <x-filament::button
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                    <x-filament::button
+>>>>>>> laraxot/dev
                         type="submit"
                         size="lg"
                         color="primary"
@@ -365,6 +379,7 @@ laravel/Themes/One/resources/views/pages/auth/
                 <div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <x-filament::button
 =======
                     <x-filament::button 
@@ -375,6 +390,9 @@ laravel/Themes/One/resources/views/pages/auth/
                     <x-filament::button
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                    <x-filament::button
+>>>>>>> laraxot/dev
                         type="submit"
                         size="lg"
                         color="primary"
@@ -483,6 +501,7 @@ Quindi nel form:
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
@@ -493,6 +512,9 @@ Quindi nel form:
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
         // Reindirizza alla home page localizzata
         $this->redirect('/' . app()->getLocale());
     });
@@ -542,10 +564,13 @@ Utilizzare sempre i componenti Blade nativi di Filament:
 ```blade
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <x-filament::button 
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 <x-filament::button
     type="submit"
     size="lg"
@@ -1011,12 +1036,15 @@ Utilizzare sempre i componenti Blade nativi di Filament:
 ```blade
 <x-filament::button
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <x-filament::button 
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     type="submit"
     size="lg"
     color="primary"

@@ -24,6 +24,7 @@ class DeviceProfilePolicy extends UserBasePolicy
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $user->hasPermissionTo('device-profile.view')
             || $user->id === $deviceProfile->user_id
             || $user->hasRole('super-admin');
@@ -44,6 +45,11 @@ class DeviceProfilePolicy extends UserBasePolicy
             || $user->hasRole('super-admin');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return $user->hasPermissionTo('device-profile.view')
+            || $user->id === $deviceProfile->user_id
+            || $user->hasRole('super-admin');
+>>>>>>> laraxot/dev
     }
 
     /**

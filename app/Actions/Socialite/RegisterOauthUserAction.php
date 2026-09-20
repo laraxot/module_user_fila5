@@ -10,6 +10,7 @@ namespace Modules\User\Actions\Socialite;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Database\DatabaseManager;
 =======
@@ -22,6 +23,10 @@ use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Database\DatabaseManager;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Contracts\Events\Dispatcher;
+use Illuminate\Database\DatabaseManager;
+>>>>>>> laraxot/dev
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Events\Registered;
 use Modules\User\Models\SocialiteUser;
@@ -35,6 +40,7 @@ class RegisterOauthUserAction
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var SocialiteUser $socialiteUser */
         $socialiteUser = app(DatabaseManager::class)->transaction(static function () use ($provider, $oauthUser): SocialiteUser {
 =======
@@ -47,6 +53,10 @@ class RegisterOauthUserAction
         $socialiteUser = app(DatabaseManager::class)->transaction(static function () use ($provider, $oauthUser): SocialiteUser {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        /** @var SocialiteUser $socialiteUser */
+        $socialiteUser = app(DatabaseManager::class)->transaction(static function () use ($provider, $oauthUser): SocialiteUser {
+>>>>>>> laraxot/dev
             // Create a user
             $user = app(CreateUserAction::class)->execute(
                 provider: $provider,
@@ -63,6 +73,7 @@ class RegisterOauthUserAction
         // Dispatch the registered event
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         app(Dispatcher::class)->dispatch(new Registered($socialiteUser));
 =======
         Registered::dispatch($socialiteUser);
@@ -73,6 +84,9 @@ class RegisterOauthUserAction
         app(Dispatcher::class)->dispatch(new Registered($socialiteUser));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        app(Dispatcher::class)->dispatch(new Registered($socialiteUser));
+>>>>>>> laraxot/dev
 
         // Login the user
         // return app(LoginUserAction::class)->execute($socialiteUser);

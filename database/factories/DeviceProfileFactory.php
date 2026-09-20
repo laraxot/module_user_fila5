@@ -6,6 +6,9 @@ namespace Modules\User\Database\Factories;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\DeviceProfile;
 
@@ -16,6 +19,7 @@ class DeviceProfileFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -51,6 +55,8 @@ class DeviceProfileFactory extends Factory
      * The name of the factory's corresponding model.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $model = DeviceProfile::class;
 
@@ -58,6 +64,9 @@ class DeviceProfileFactory extends Factory
      * Define the model's default state.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     /**
      * @return array<string, mixed>
@@ -65,6 +74,7 @@ class DeviceProfileFactory extends Factory
     public function definition(): array
     {
         return [];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -94,5 +104,7 @@ class DeviceProfileFactory extends Factory
         return [];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

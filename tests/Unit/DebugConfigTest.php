@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\DB;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -23,12 +24,20 @@ use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Support\Facades\DB;
+use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 
 test('verify database connections config', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     $userDatabase = config('database.connections.user.database');
     $defaultDriver = config('database.connections.mysql.driver');
     $userDriver = config('database.connections.user.driver');
@@ -46,6 +55,7 @@ test('verify database connections config', function () {
 
     Assert::assertTrue($profilesExists);
     Assert::assertTrue($tenantsExists);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -102,4 +112,6 @@ test('verify database connections config', function () {
     Assert::assertTrue($tenantsExists);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

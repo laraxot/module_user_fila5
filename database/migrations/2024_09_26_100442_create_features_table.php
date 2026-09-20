@@ -17,6 +17,7 @@ return new class extends XotBaseMigration {
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // -- CREATE --
 >>>>>>> f548be94 (.)
@@ -25,11 +26,14 @@ return new class extends XotBaseMigration {
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $this->tableCreate(static function (Blueprint $table): void {
             $table->id();
             $table->string('name');
             $table->string('scope');
             $table->text('value');
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             $table->unique(['name', 'scope']);
@@ -56,6 +60,11 @@ return new class extends XotBaseMigration {
             $table->softDeletes();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            $table->unique(['name', 'scope']);
+            $table->timestamps();
+            $table->softDeletes();
+>>>>>>> laraxot/dev
         });
     }
 };

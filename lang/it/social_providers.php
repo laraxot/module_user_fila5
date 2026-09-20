@@ -6,6 +6,9 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'name' => ['label' => 'Nome', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'name.placeholder' => ['label' => 'Inserisci il nome del provider', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'name.helper_text' => ['label' => 'Il nome del provider social (es. Facebook, Google]', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -25,10 +28,17 @@ return [
         'svg.placeholder' => ['label' => 'Inserisci il codice SVG dell\'icona', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'svg.helper_text' => ['label' => 'L\'icona SVG del provider social', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'id' => ['label' => 'id'],
+<<<<<<< HEAD
         'created_at' => ['label' => 'created_at'],
         'uuid' => ['label' => 'uuid'],
         'slug' => ['label' => 'slug'],
         'provider' => ['label' => 'provider'],
+=======
+        'uuid' => ['label' => 'uuid'],
+        'slug' => ['label' => 'slug'],
+        'provider' => ['label' => 'provider'],
+        'created_at' => ['label' => 'created_at'],
+>>>>>>> laraxot/dev
         'updated_at' => ['label' => 'updated_at'],
         'updated_by' => ['label' => 'updated_by'],
         'created_by' => ['label' => 'created_by'],
@@ -45,6 +55,7 @@ return [
     'plural_label' => 'Social Providers (Plurale)',
     'actions' => [
         'create' => ['label' => 'Crea Social Providers', 'icon' => 'create', 'tooltip' => 'create'],
+<<<<<<< HEAD
         'edit' => ['label' => 'Modifica Social Providers'],
         'delete' => ['label' => 'Elimina Social Providers'],
 =======
@@ -115,5 +126,11 @@ return [
         'delete' => ['label' => 'Elimina Social Providers'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'edit' => ['label' => 'Modifica Social Providers', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'delete' => ['label' => 'Elimina Social Providers', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+>>>>>>> laraxot/dev
     ],
 ];

@@ -6,6 +6,9 @@ namespace Modules\User\Database\Seeders;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Seeder;
 
 /**
@@ -62,6 +65,7 @@ class UserDatabaseSeeder extends Seeder
         if (null !== $this->command) {
             $this->command->info('UserDatabaseSeeder: completato.');
         }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -140,5 +144,7 @@ class UserDatabaseSeeder extends Seeder
         }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

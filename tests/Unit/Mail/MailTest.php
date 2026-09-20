@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Mail\TeamInvitation;
 use Modules\User\Models\TeamInvitation as TeamInvitationModel;
 use Modules\User\Tests\TestCase;
@@ -14,12 +17,20 @@ uses(TestCase::class);
 test('TeamInvitation mail can be instantiated', function () {
     Assert::assertTrue(class_exists(TeamInvitation::class));
 
+<<<<<<< HEAD
     $model = new TeamInvitationModel;
+=======
+    $model = new TeamInvitationModel();
+>>>>>>> laraxot/dev
     $model->forceFill([
         'email' => 'test@example.com',
     ]);
 
+<<<<<<< HEAD
     $mail = new TeamInvitation;
+=======
+    $mail = new TeamInvitation();
+>>>>>>> laraxot/dev
     $mail->invitation = $model;
 
     Assert::assertInstanceOf(TeamInvitation::class, $mail);
@@ -28,6 +39,7 @@ test('TeamInvitation mail can be instantiated', function () {
 
 test('TeamInvitation has expected methods', function () {
     Assert::assertTrue(class_exists(TeamInvitation::class));
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -97,4 +109,6 @@ test('TeamInvitation has expected methods', function () {
     Assert::assertTrue(class_exists(TeamInvitation::class));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

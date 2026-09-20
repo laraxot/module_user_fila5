@@ -8,6 +8,7 @@ return [
         'plural' => 'Teams',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione dei team e delle loro autorizzazioni'],
 =======
 =======
@@ -23,11 +24,15 @@ return [
         'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione dei team e delle loro autorizzazioni'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione dei team e delle loro autorizzazioni'],
+>>>>>>> laraxot/dev
         'label' => 'team',
         'sort' => 18,
         'icon' => 'ui-user-team',
     ],
     'fields' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         'first_name' => ['label' => 'Nome', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -196,6 +201,8 @@ return [
 >>>>>>> f548be94 (.)
     ],
 =======
+=======
+>>>>>>> laraxot/dev
         'first_name' => ['label' => 'Nome', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'last_name' => ['label' => 'Cognome', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'detach' => ['label' => 'detach', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -242,10 +249,16 @@ return [
         'submit' => ['label' => 'submit', 'icon' => 'submit', 'tooltip' => 'submit'],
         'profile' => ['tooltip' => 'profile', 'icon' => 'profile', 'label' => 'profile'],
         'delete' => ['tooltip' => 'delete', 'icon' => 'delete', 'label' => 'delete'],
+<<<<<<< HEAD
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
+=======
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+>>>>>>> laraxot/dev
     ],
     'plural' => [
         'model' => ['label' => 'team.plural.model'],
@@ -253,5 +266,8 @@ return [
     'model' => ['label' => 'team.model'],
     'label' => 'team',
     'plural_label' => 'Team (Plurale)',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
 ];

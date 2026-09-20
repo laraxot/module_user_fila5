@@ -6,12 +6,16 @@ namespace Modules\User\Enums;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Traits\EnumTrait;
 
 enum SystemRole: string
 {
     use EnumTrait;
 
+<<<<<<< HEAD
 =======
 enum SystemRole: string
 {
@@ -28,5 +32,7 @@ enum SystemRole: string
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     case SuperAdmin = '%';
 }

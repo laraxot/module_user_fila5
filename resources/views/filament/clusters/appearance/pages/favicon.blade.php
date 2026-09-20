@@ -7,6 +7,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <form wire:submit="updateData">
 =======
     <x-filament-schemas::form wire:submit="updateData">
@@ -17,6 +18,9 @@ declare(strict_types=1);
     <form wire:submit="updateData">
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    <form wire:submit="updateData">
+>>>>>>> laraxot/dev
         {{ $this->form }}
 
         <x-filament::actions
@@ -25,6 +29,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     </form>
 =======
     </x-filament-schemas::form>
@@ -35,5 +40,8 @@ declare(strict_types=1);
     </form>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    </form>
+>>>>>>> laraxot/dev
 
 </x-filament-panels::page>

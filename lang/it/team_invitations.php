@@ -19,6 +19,7 @@ return [
         'deleted_by' => ['label' => 'deleted_by'],
     ],
     'actions' => [
+<<<<<<< HEAD
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
 <<<<<<< HEAD
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
@@ -27,5 +28,13 @@ return [
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
 >>>>>>> 87273113 (.)
+=======
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+>>>>>>> laraxot/dev
     ],
 ];

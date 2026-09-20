@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 uses(Modules\User\Tests\TestCase::class);
 
@@ -14,6 +15,8 @@ uses(Modules\User\Tests\TestCase::class);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\Authentication;
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Device;
@@ -37,12 +40,16 @@ use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\TeamPermission;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 test('Notification model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new Notification;
     Assert::assertInstanceOf(Notification::class, $model);
 });
@@ -152,10 +159,15 @@ test('PasswordReset model can be instantiated', function () {
 test('Notification model can be instantiated', function () {
     $model = new Notification();
     expect($model)->toBeInstanceOf(Notification::class);
+=======
+    $model = new Notification();
+    Assert::assertInstanceOf(Notification::class, $model);
+>>>>>>> laraxot/dev
 });
 
 test('OauthAccessToken model can be instantiated', function () {
     $model = new OauthAccessToken();
+<<<<<<< HEAD
     expect($model)->toBeInstanceOf(OauthAccessToken::class);
 });
 
@@ -268,102 +280,181 @@ test('Notification model can be instantiated', function () {
 
 test('OauthAccessToken model can be instantiated', function () {
     $model = new OauthAccessToken;
+=======
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(OauthAccessToken::class, $model);
 });
 
 test('OauthClient model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new OauthClient;
+=======
+    $model = new OauthClient();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(OauthClient::class, $model);
 });
 
 test('OauthAuthCode model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new OauthAuthCode;
+=======
+    $model = new OauthAuthCode();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(OauthAuthCode::class, $model);
 });
 
 test('OauthRefreshToken model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new OauthRefreshToken;
+=======
+    $model = new OauthRefreshToken();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(OauthRefreshToken::class, $model);
 });
 
 test('OauthPersonalAccessClient model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new OauthPersonalAccessClient;
+=======
+    $model = new OauthPersonalAccessClient();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(OauthPersonalAccessClient::class, $model);
 });
 
 test('OauthToken model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new OauthToken;
+=======
+    $model = new OauthToken();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(OauthToken::class, $model);
 });
 
 test('OauthDeviceCode model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new OauthDeviceCode;
+=======
+    $model = new OauthDeviceCode();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(OauthDeviceCode::class, $model);
 });
 
 test('TeamPermission model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new TeamPermission;
+=======
+    $model = new TeamPermission();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(TeamPermission::class, $model);
 });
 
 test('TeamInvitation model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new TeamInvitation;
+=======
+    $model = new TeamInvitation();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(TeamInvitation::class, $model);
 });
 
 test('AuthenticationLog model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new AuthenticationLog;
+=======
+    $model = new AuthenticationLog();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(AuthenticationLog::class, $model);
 });
 
 test('Authentication model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new Authentication;
+=======
+    $model = new Authentication();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(Authentication::class, $model);
 });
 
 test('SocialiteUser model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new SocialiteUser;
+=======
+    $model = new SocialiteUser();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(SocialiteUser::class, $model);
 });
 
 test('SocialProvider model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new SocialProvider;
+=======
+    $model = new SocialProvider();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(SocialProvider::class, $model);
 });
 
 test('SsoProvider model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new SsoProvider;
+=======
+    $model = new SsoProvider();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(SsoProvider::class, $model);
 });
 
 test('Feature model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new Feature;
+=======
+    $model = new Feature();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(Feature::class, $model);
 });
 
 test('Extra model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new Extra;
+=======
+    $model = new Extra();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(Extra::class, $model);
 });
 
 test('Device model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new Device;
+=======
+    $model = new Device();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(Device::class, $model);
 });
 
 test('DeviceProfile model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new DeviceProfile;
+=======
+    $model = new DeviceProfile();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(DeviceProfile::class, $model);
 });
 
 test('DeviceUser model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new DeviceUser;
+=======
+    $model = new DeviceUser();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(DeviceUser::class, $model);
 });
 
 test('PasswordReset model can be instantiated', function () {
+<<<<<<< HEAD
     $model = new PasswordReset;
     Assert::assertInstanceOf(PasswordReset::class, $model);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    $model = new PasswordReset();
+    Assert::assertInstanceOf(PasswordReset::class, $model);
+>>>>>>> laraxot/dev
 });

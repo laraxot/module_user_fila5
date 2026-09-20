@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\TextInput;
 <<<<<<< HEAD
@@ -16,19 +17,26 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> laraxot/dev
 use Laravel\Passport\Client;
 use Laravel\Passport\Passport;
 use Modules\User\Filament\Resources\ClientResource\Pages\CreateClient;
 use Modules\User\Filament\Resources\ClientResource\Pages\EditClient;
 use Modules\User\Filament\Resources\ClientResource\Pages\ListClients;
 use Modules\User\Filament\Resources\ClientResource\Pages\ViewClient;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Webmozart\Assert\Assert;
 
 class ClientResource extends XotBaseResource
 {
     protected static string $resource = ClientResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
     // use HasResourceFormComponents;
 
@@ -79,10 +87,18 @@ class ClientResource extends XotBaseResource
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+    // use HasResourceFormComponents;
+
+    /**
+     * Get the model class for the resource from Passport.
+     *
+>>>>>>> laraxot/dev
      * @return class-string<Model>
      */
     /**
      * @return class-string<Model>
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -100,6 +116,8 @@ class ClientResource extends XotBaseResource
      * @return class-string<Model>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     public static function getModel(): string
     {
@@ -110,6 +128,7 @@ class ClientResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::subclassOf($model, Model::class);
 
         /* @var class-string<Model> $model */
@@ -128,6 +147,11 @@ class ClientResource extends XotBaseResource
         /* @var class-string<Model> $model */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        Assert::subclassOf($model, Model::class);
+
+        /* @var class-string<Model> $model */
+>>>>>>> laraxot/dev
         return $model;
     }
 
@@ -153,6 +177,7 @@ class ClientResource extends XotBaseResource
      * Get resource form components.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return array<int, never>
 =======
@@ -163,6 +188,10 @@ class ClientResource extends XotBaseResource
      * @return array<int, never>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+     * @return array<int, never>
+>>>>>>> laraxot/dev
      */
     protected static function getResourceFormComponents(): array
     {

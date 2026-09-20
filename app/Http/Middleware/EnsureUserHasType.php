@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\User\Http\Middleware;
 
 =======
@@ -22,6 +23,10 @@ namespace Modules\User\Http\Middleware;
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+namespace Modules\User\Http\Middleware;
+
+>>>>>>> laraxot/dev
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -31,6 +36,7 @@ use Symfony\Component\HttpFoundation\Response;
  * })->middleware(EnsureUserHasRole::class.':editor');
  * Route::put('/post/{id}', function (string $id) {
  *     // ...
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  *})->middleware(EnsureUserHasRole::class.':editor,publisher');.
@@ -49,6 +55,10 @@ use Symfony\Component\HttpFoundation\Response;
  */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ *})->middleware(EnsureUserHasRole::class.':editor,publisher');.
+ */
+>>>>>>> laraxot/dev
 class EnsureUserHasType
 {
     /**
@@ -56,6 +66,9 @@ class EnsureUserHasType
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @param \Closure(Request):Response $next
      */
     public function handle(Request $request, \Closure $next, string $type): Response
@@ -63,6 +76,7 @@ class EnsureUserHasType
         $userType = $request->user()?->type;
 
         if ($userType instanceof \BackedEnum && $userType->value === $type) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -86,6 +100,8 @@ class EnsureUserHasType
         if ($userType instanceof \BackedEnum && $userType->value === $type) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             return $next($request);
         }
 

@@ -6,6 +6,9 @@ namespace Modules\User\Models\Traits;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Datas\PasswordData;
 
@@ -25,6 +28,7 @@ trait HasPasswordExpiry
         static::updating(static function (Model $model) use ($pwd): void {
             if ($model->isDirty('password') && filled($model->getAttribute('password'))) {
                 $model->setAttribute('password_expires_at', now()->addDays($pwd->expires_in));
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -78,6 +82,8 @@ trait HasPasswordExpiry
                 $model->setAttribute('password_expires_at', now()->addDays($pwd->expires_in));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             }
         });
     }

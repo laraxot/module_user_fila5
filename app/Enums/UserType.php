@@ -13,6 +13,7 @@ use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Traits\EnumTrait;
 =======
 >>>>>>> f548be94 (.)
@@ -21,6 +22,9 @@ use Modules\Xot\Traits\EnumTrait;
 use Modules\Xot\Traits\EnumTrait;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\Xot\Traits\EnumTrait;
+>>>>>>> laraxot/dev
 
 // use Datomatic\LaravelEnumHelper\LaravelEnumHelper;
 
@@ -28,6 +32,7 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     use EnumTrait;
 
 =======
@@ -38,6 +43,10 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    use EnumTrait;
+
+>>>>>>> laraxot/dev
     // //use LaravelEnumHelper;
 
     case MasterAdmin = 'master_admin';
@@ -48,6 +57,7 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     private const string API = 'api';
 
     private const string WEB = 'web';
@@ -66,6 +76,11 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
     private const string WEB = 'web';
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    private const string API = 'api';
+
+    private const string WEB = 'web';
+>>>>>>> laraxot/dev
 
     public function getDefaultGuard(): string
     {
@@ -74,6 +89,7 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
             self::Technician => self::API,
         };
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -118,4 +134,6 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

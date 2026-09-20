@@ -17,6 +17,7 @@ use Laravel\Passport\TransientToken;
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * @propery \Laravel\Passport\Token|\Laravel\Passport\TransientToken|null $accessToken;
  *
@@ -27,6 +28,8 @@ use Laravel\Passport\TransientToken;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @phpstan-require-extends Model
  */
 interface PassportHasApiTokensContract
@@ -35,6 +38,7 @@ interface PassportHasApiTokensContract
      * Get all of the user's registered OAuth clients.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return HasMany<Model, Model>
 =======
@@ -45,6 +49,10 @@ interface PassportHasApiTokensContract
      * @return HasMany<Model, Model>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+     * @return HasMany<Model, Model>
+>>>>>>> laraxot/dev
      */
     public function clients(): HasMany;
 
@@ -52,6 +60,7 @@ interface PassportHasApiTokensContract
      * Get all of the access tokens for the user.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return HasMany<Model, Model>
 =======
@@ -62,6 +71,10 @@ interface PassportHasApiTokensContract
      * @return HasMany<Model, Model>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+     * @return HasMany<Model, Model>
+>>>>>>> laraxot/dev
      */
     public function tokens(): HasMany;
 
@@ -79,24 +92,31 @@ interface PassportHasApiTokensContract
      * Create a new personal access token for the user.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      *
      * @param array<int, string> $scopes
      *
      * @return PersonalAccessTokenResult<Token>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;
 
     /**
      * Set the current access token for the user.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      */
@@ -116,4 +136,8 @@ interface PassportHasApiTokensContract
     public function withAccessToken(Token|TransientToken|null $accessToken): static;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     */
+    public function withAccessToken(Token|TransientToken|null $accessToken): static;
+>>>>>>> laraxot/dev
 }

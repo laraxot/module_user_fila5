@@ -11,10 +11,14 @@ namespace Modules\User\Models\Policies;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Models\Policies\XotBasePolicy;
 
 abstract class UserBasePolicy extends XotBasePolicy
 {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -47,4 +51,6 @@ abstract class UserBasePolicy extends XotBasePolicy
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

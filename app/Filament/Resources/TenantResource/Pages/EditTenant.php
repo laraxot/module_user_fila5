@@ -5,6 +5,7 @@
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f548be94 (.)
@@ -13,16 +14,23 @@
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
 declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
 use Modules\User\Filament\Resources\TenantResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -42,6 +50,8 @@ use Modules\User\Filament\Resources\TenantResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 class EditTenant extends XotBaseEditRecord
 {
@@ -50,6 +60,7 @@ class EditTenant extends XotBaseEditRecord
     protected function getHeaderActions(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'view' => ViewAction::make(),
@@ -66,6 +77,10 @@ class EditTenant extends XotBaseEditRecord
             'delete' => DeleteAction::make(),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'view' => ViewAction::make(),
+            'delete' => DeleteAction::make(),
+>>>>>>> laraxot/dev
         ];
     }
 }

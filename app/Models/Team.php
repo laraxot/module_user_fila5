@@ -6,11 +6,15 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -30,10 +34,13 @@ use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * Class Modules\User\Models\Team.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property string                          $id
@@ -84,6 +91,8 @@ use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  * @property string                          $id
  * @property string                          $user_id                (DC2Type:guid)
  * @property string                          $name
@@ -105,8 +114,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property Collection<int, User>           $users
  * @property int|null                        $users_count
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @method static Builder|Team newModelQuery()
  * @method static Builder|Team newQuery()
  * @method static Builder|Team query()
@@ -120,6 +132,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|Team whereUpdatedAt($value)
  * @method static Builder|Team whereUpdatedBy($value)
  * @method static Builder|Team whereUserId($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property string|null $code
  * @method static Builder|Team whereCode($value)
@@ -151,6 +164,8 @@ use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  *
  * @property string|null $code
  *
@@ -185,17 +200,23 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Team whereSettings($value)
  * @method static Builder<static>|Team whereSlug($value)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class Team extends BaseTeam
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     // use SoftDeletes;
 
     protected $fillable = [
@@ -229,9 +250,12 @@ class Team extends BaseTeam
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

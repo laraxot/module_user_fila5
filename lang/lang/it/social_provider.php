@@ -15,6 +15,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'name' => 'Nome',
         'guard_name' => 'Guard',
         'permissions' => 'Permessi',
@@ -24,6 +27,7 @@ return [
         'select_all' => [
             'name' => 'Seleziona Tutti',
             'message' => '',
+<<<<<<< HEAD
 =======
         'name' => [
             'label' => 'Nome',
@@ -69,6 +73,8 @@ return [
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -89,8 +95,11 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

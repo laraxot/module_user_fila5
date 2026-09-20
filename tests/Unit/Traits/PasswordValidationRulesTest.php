@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\User\Tests\Unit\Traits;
 
 use Modules\User\Tests\TestCase;
@@ -80,6 +81,8 @@ test('PasswordValidationRules trait provides passwordRules method', function () 
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Unit\Traits;
 
 use Modules\User\Tests\TestCase;
@@ -95,7 +98,11 @@ describe('Password Validation Rules', function (): void {
         Assert::assertTrue(trait_exists(PasswordValidationRules::class));
         Assert::assertInstanceOf(
             PasswordValidationRulesFixture::class,
+<<<<<<< HEAD
             new PasswordValidationRulesFixture,
+=======
+            new PasswordValidationRulesFixture(),
+>>>>>>> laraxot/dev
         );
     });
 
@@ -103,7 +110,11 @@ describe('Password Validation Rules', function (): void {
         $reflection = new \ReflectionClass(PasswordValidationRules::class);
 
         Assert::assertTrue($reflection->hasMethod('passwordRules'));
+<<<<<<< HEAD
         $fixture = new PasswordValidationRulesMockableFixture;
+=======
+        $fixture = new PasswordValidationRulesMockableFixture();
+>>>>>>> laraxot/dev
         $rules = $fixture->getPasswordRules();
 
         Assert::assertCount(4, $rules);
@@ -111,6 +122,9 @@ describe('Password Validation Rules', function (): void {
         Assert::assertSame('string', $rules[1]);
         Assert::assertSame('confirmed', $rules[3]);
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

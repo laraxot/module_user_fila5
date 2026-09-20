@@ -24,6 +24,7 @@ class DeviceUserPolicy extends UserBasePolicy
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $user->hasPermissionTo('device-user.view')
             || $user->id === $deviceUser->user_id
             || $user->hasRole('super-admin');
@@ -44,6 +45,11 @@ class DeviceUserPolicy extends UserBasePolicy
             || $user->hasRole('super-admin');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return $user->hasPermissionTo('device-user.view')
+            || $user->id === $deviceUser->user_id
+            || $user->hasRole('super-admin');
+>>>>>>> laraxot/dev
     }
 
     /**

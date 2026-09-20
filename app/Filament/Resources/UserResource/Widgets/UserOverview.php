@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Resources\UserResource\Widgets;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Schemas\Components\Component;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
@@ -23,6 +26,7 @@ class UserOverview extends XotBaseWidget
     {
         return [];
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -58,4 +62,6 @@ class UserOverview extends XotBaseWidget
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

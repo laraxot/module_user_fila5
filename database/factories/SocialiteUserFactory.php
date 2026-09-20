@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\SocialiteUser;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /**
 =======
@@ -26,12 +27,19 @@ use Modules\User\Models\User;
 /**
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+/**
+>>>>>>> laraxot/dev
  * @extends Factory<SocialiteUser>
  */
 class SocialiteUserFactory extends Factory
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * The name of the factory's corresponding model.
      */
@@ -46,6 +54,7 @@ class SocialiteUserFactory extends Factory
     public function definition(): array
     {
         return [];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -103,5 +112,7 @@ class SocialiteUserFactory extends Factory
         return [];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

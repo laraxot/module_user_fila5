@@ -19,6 +19,9 @@ new class extends Component {
     #[Validate('required')]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public string $token = '';
 
     #[Validate('required|email')]
@@ -40,6 +43,7 @@ new class extends Component {
     /**
      * @return \Illuminate\Http\RedirectResponse|null
      */
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -85,6 +89,8 @@ new class extends Component {
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public function resetPassword()
     {
         $this->validate();
@@ -95,6 +101,7 @@ new class extends Component {
                 'email' => $this->email,
                 'password' => $this->password,
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             function ($user, string $password) {
@@ -109,6 +116,10 @@ new class extends Component {
                 /** @var \Modules\User\Models\User $user */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            function ($user, string $password) {
+                /** @var \Modules\User\Models\User $user */
+>>>>>>> laraxot/dev
                 $user->password = Hash::make($password);
 
                 $user->setRememberToken(Str::random(60));
@@ -123,6 +134,7 @@ new class extends Component {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (\is_string($response) && $response === Password::PASSWORD_RESET) {
 =======
         if ($response === Password::PASSWORD_RESET) {
@@ -133,6 +145,9 @@ new class extends Component {
         if (\is_string($response) && $response === Password::PASSWORD_RESET) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (\is_string($response) && $response === Password::PASSWORD_RESET) {
+>>>>>>> laraxot/dev
             session()->flash(trans($response));
 
             return redirect('/');
@@ -140,11 +155,15 @@ new class extends Component {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (\is_string($response)) {
             $this->addError('email', trans($response));
         }
 
         return null;
+<<<<<<< HEAD
 =======
         $this->addError('email', trans($response));
 >>>>>>> f548be94 (.)
@@ -158,6 +177,8 @@ new class extends Component {
         return null;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 };
 

@@ -87,10 +87,13 @@ ALTER TABLE users ADD CONSTRAINT fk_sso_provider
   "client_secret": "your-client-secret",
   "scopes": "openid email profile",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "redirect_url": "https://app.<nome progetto>.it/auth/callback/google"
 
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
   "redirect_url": "https://app.fixcity.it/auth/callback/google"
 }
 ```
@@ -103,12 +106,15 @@ ALTER TABLE users ADD CONSTRAINT fk_sso_provider
 {
   "type": "saml",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "entity_id": "https://app.<nome progetto>.it",
   "metadata_url": "https://idp.provider.it/metadata.xml",
   "redirect_url": "https://app.<nome progetto>.it/auth/callback/spid"
 
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
   "entity_id": "https://app.fixcity.it",
   "metadata_url": "https://idp.provider.it/metadata.xml",
   "redirect_url": "https://app.fixcity.it/auth/callback/spid"
@@ -123,10 +129,13 @@ ALTER TABLE users ADD CONSTRAINT fk_sso_provider
 {
   "type": "oidc",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "client_id": "<nome progetto>-app",
 
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
   "client_id": "fixcity-app",
   "discovery_url": "https://auth.provider.it/.well-known/openid-configuration",
   "scopes": "openid email profile roles"
@@ -145,10 +154,13 @@ $spidProvider = SsoProvider::create([
     'display_name' => 'SPID',
     'type' => 'saml',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'entity_id' => 'https://app.<nome progetto>.it',
 
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     'entity_id' => 'https://app.fixcity.it',
     'metadata_url' => 'https://registry.spid.gov.it/metadata/idp/spid-idp-metadata.xml',
     'redirect_url' => route('auth.spid.callback'),
@@ -195,10 +207,14 @@ $activeProviders = SsoProvider::where('is_active', true)->get();
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 =======
 use Modules\User\Models\User;
 >>>>>>> 60a2c9a9 (.)
+=======
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 use Modules\User\Models\SsoProvider;
 
 $provider = SsoProvider::where('name', 'spid')->firstOrFail();
@@ -330,6 +346,7 @@ test('can login user via SSO', function () {
 **Versione**: 1.0.0
 **Laravel**: 12.34.0
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 ---
@@ -341,3 +358,5 @@ test('can login user via SSO', function () {
 Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, in violazione della regola no-case-only-variations. Il contenuto canonico si trova in [sso_providers_implementation.md](./sso_providers_implementation.md).
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
