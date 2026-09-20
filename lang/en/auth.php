@@ -8,51 +8,17 @@ return [
             'label' => 'Email',
             'placeholder' => 'Enter your email',
             'help' => 'Your email address for authentication',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Enter your password',
             'help' => 'Your account password',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -68,11 +34,6 @@ return [
         ],
     ],
     'messages' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         'failed' => [
             'key' => 'user::auth.messages.failed',
             'text' => 'Invalid credentials.',
@@ -83,33 +44,6 @@ return [
         'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
         'unauthorized' => 'You are not authorized to access this resource.',
     ],
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-        'failed' => 'These credentials do not match our records.',
-        'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-        'unauthorized' => 'You are not authorized to access this resource.',
-    ],
-    // Password Reset Widget - specific translations
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-        'failed' => [
-            'key' => 'user::auth.messages.failed',
-            'text' => 'Invalid credentials.',
-            'description' => 'Error message shown when login credentials are invalid',
-            'context' => 'login_form',
-            'placeholder' => '',
-        ],
-        'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-        'unauthorized' => 'You are not authorized to access this resource.',
-    ],
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
     'password_reset' => [
         'email_placeholder' => 'Enter your email address',
         'send_button' => 'Send reset link',
@@ -156,14 +90,6 @@ return [
             'try_again' => 'Try again',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -270,13 +196,4 @@ return [
             'personal_area' => 'Access personal area',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f548be94 (.)
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 ];

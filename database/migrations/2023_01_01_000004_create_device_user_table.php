@@ -7,24 +7,8 @@ use Modules\User\Models\Device;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
-=======
-return new class extends XotBaseMigration {
->>>>>>> f548be94 (.)
-=======
-return new class extends XotBaseMigration {
-=======
-return new class extends XotBaseMigration
-{
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-return new class extends XotBaseMigration {
->>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -41,62 +25,19 @@ return new class extends XotBaseMigration {
         });
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
             if (! $this->hasColumn('push_notifications_token')) {
                 $table->string('push_notifications_token')->nullable();
             }
 
             if (! $this->hasColumn('push_notifications_enabled')) {
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-            if (!$this->hasColumn('push_notifications_token')) {
-                $table->string('push_notifications_token')->nullable();
-            }
-
-            if (!$this->hasColumn('push_notifications_enabled')) {
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-            if (! $this->hasColumn('push_notifications_token')) {
-                $table->string('push_notifications_token')->nullable();
-            }
-
-            if (! $this->hasColumn('push_notifications_enabled')) {
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
                 $table->boolean('push_notifications_enabled')->nullable();
             }
             // -- change
             if ($this->hasColumn('device_id')) {
                 $table->string('device_id', 36)->nullable()->change();
             }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             // dddx($getColumnType('device_id');//varchar)
-=======
-            // dddx($this->getColumnType('device_id'));//varchar
->>>>>>> f548be94 (.)
-=======
-            // dddx($this->getColumnType('device_id'));//varchar
-=======
-            // dddx($getColumnType('device_id');//varchar)
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
             if ($this->getColumnType('user_id') === 'uuid') {
-=======
-            // dddx($getColumnType('device_id');//varchar)
-            if ('uuid' === $this->getColumnType('user_id')) {
->>>>>>> laraxot/dev
                 $table->string('user_id', 36)->nullable()->change();
             }
 

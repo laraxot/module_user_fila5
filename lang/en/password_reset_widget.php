@@ -9,25 +9,9 @@ return [
             'placeholder' => 'email',
             'helper_text' => '',
             'description' => 'email',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
-=======
-        ],
-    ],
-=======
-            'tooltip' => '',
-        ],
-    ],
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
-        ],
-    ],
->>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -39,15 +23,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        ],
-    ],
->>>>>>> f548be94 (.)
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 ];

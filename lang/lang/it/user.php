@@ -11,10 +11,6 @@ return [
         ],
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         'first_name' => 'Nome',
         'last_name' => 'Cognome',
         'name' => [
@@ -28,55 +24,11 @@ return [
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
-<<<<<<< HEAD
-=======
-        'first_name' => [
-            'label' => 'Nome',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'last_name' => [
-            'label' => 'Cognome',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'name' => [
-            'label' => 'Nome',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'email' => [
-            'label' => 'Email',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'created_at' => [
-            'label' => 'Data di Creazione',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
         ],
         'role' => [
             'name' => [
                 'label' => 'Ruolo',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         ],
         'active' => 'Attivo',
         'id' => [
@@ -86,69 +38,16 @@ return [
         'password_confirmation' => 'Conferma Password',
         'email_verified_at' => [
             'label' => 'Email Verificata',
-<<<<<<< HEAD
-=======
-            'label' => '',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'active' => [
-            'label' => 'Attivo',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'id' => [
-            'label' => 'ID',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'password' => [
-            'label' => 'Password',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'password_confirmation' => [
-            'label' => 'Conferma Password',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'email_verified_at' => [
-            'label' => 'Email Verificata',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
         ],
         'teams' => [
             'name' => [
                 'label' => 'Nome Team',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-            'label' => '',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
         ],
         'roles' => [
             'name' => [
                 'label' => 'Nome Ruolo',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         ],
         'password_expires_at' => [
             'label' => 'Scadenza Password',
@@ -164,45 +63,6 @@ return [
         ],
         'changePassword' => [
             'label' => 'changePassword',
-<<<<<<< HEAD
-=======
-            'label' => '',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'password_expires_at' => [
-            'label' => 'Scadenza Password',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'verified' => [
-            'label' => 'Verificato',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'unverified' => [
-            'label' => 'Non Verificato',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'deactivate' => [
-            'label' => 'deactivate',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'changePassword' => [
-            'label' => 'changePassword',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
         ],
     ],
     'filters' => [
@@ -219,15 +79,7 @@ return [
         'search' => 'Cerca utenti...',
     ],
     'actions' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
         'toggle_layout' => 'Cambia Layout!!!!!',
-=======
-        'toggle_layout' => 'Cambia Layout',
->>>>>>> 60a2c9a9 (.)
-=======
-        'toggle_layout' => 'Cambia Layout!!!!!',
->>>>>>> laraxot/dev
         'create' => [
             'label' => 'Crea Utente',
         ],
@@ -312,12 +164,4 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
 ];

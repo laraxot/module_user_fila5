@@ -33,17 +33,6 @@ class ResolveSuperAdminConfigurationAction
         $superAdminConfig = $shieldData->super_admin;
 
         return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-            'enabled' => $superAdminConfig->enabled,
-            'name' => $superAdminConfig->name,
-            'defined_via_gate' => $superAdminConfig->define_via_gate,
-            'gate_interception_status' => $superAdminConfig->intercept_gate,
-        ];
-    }
-=======
-=======
->>>>>>> laraxot/dev
             'enabled' => $this->toBoolean($superAdminConfig->enabled ?? false),
             'name' => $this->toString($superAdminConfig->name ?? 'Super Admin'),
             'defined_via_gate' => $this->toBoolean($superAdminConfig->define_via_gate ?? false),
@@ -60,8 +49,4 @@ class ResolveSuperAdminConfigurationAction
     {
         return is_string($value) ? $value : '';
     }
-<<<<<<< HEAD
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 }

@@ -16,10 +16,6 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         ],
         'guard_name' => [
             'label' => 'Guard',
@@ -31,67 +27,11 @@ return [
         'select_all' => [
             'name' => 'Seleziona Tutti',
             'message' => '',
-<<<<<<< HEAD
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'guard_name' => [
-            'label' => 'Guard',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'permissions' => [
-            'label' => 'Permessi',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'updated_at' => [
-            'label' => 'Aggiornato il',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'first_name' => [
-            'label' => 'Nome',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'last_name' => [
-            'label' => 'Cognome',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'select_all' => [
-            'name' => 'Seleziona Tutti',
-            'message' => '',
-            'label' => '',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
         ],
         'team' => [
             'name' => [
                 'label' => 'team.name',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-            'label' => '',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -108,12 +48,4 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
 ];

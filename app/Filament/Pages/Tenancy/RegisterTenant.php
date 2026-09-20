@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Pages\Tenancy;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Illuminate\Database\Eloquent\Model;
@@ -28,53 +23,6 @@ class RegisterTenant extends XotBaseRegisterTenant
      * @var class-string|null
      */
     private ?string $resourceClass = null;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-use Filament\Schemas\Schema;
-use Filament\Forms\Components\TextInput;
-use Filament\Pages\Tenancy\RegisterTenant as BaseRegisterTenant;
-use Filament\Support\Enums\MaxWidth;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Str;
-use Modules\User\Contracts\TenantContract;
-use Modules\Xot\Datas\XotData;
-use Modules\Xot\Filament\Traits\TransTrait;
-use Webmozart\Assert\Assert;
-
-class RegisterTenant extends BaseRegisterTenant
-{
-    use TransTrait;
-
-    public string $resource;
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-use Filament\Schemas\Components\Component;
-use Filament\Schemas\Schema;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Str;
-use Modules\User\Contracts\TenantContract;
-use Modules\User\Models\BaseTenant;
-use Modules\Xot\Datas\XotData;
-use Modules\Xot\Filament\Pages\Tenancy\XotBaseRegisterTenant;
-use Modules\Xot\Filament\Traits\TransTrait;
-use Webmozart\Assert\Assert;
-
-class RegisterTenant extends XotBaseRegisterTenant
-{
-    use TransTrait;
-
-    /**
-     * @var class-string|null
-     */
-    private ?string $resourceClass = null;
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 
     public static function getLabel(): string
     {
@@ -83,84 +31,6 @@ class RegisterTenant extends XotBaseRegisterTenant
         if (Str::startsWith($func, 'get_')) {
             $func = Str::of($func)->after('get_')->toString();
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $key = Str::of(class_basename(self::class))
-            ->snake()
-            ->prepend('actions.')
-            ->append('.'.$func)
-            ->toString();
-
-        return static::transClass($tenantClass, $key);
-    }
-
-    public function schema(Schema $schema): Schema
-    {
-        /** @var array<Component> $components */
-        $components = $this->getFormSchema();
-
-        return $schema->components($components);
-    }
-
-    /**
-     * @return array<int|string, Component>
-     */
-    public function getFormSchema(): array
-    {
-        $resourceClass = $this->resolveResourceClass();
-        $schema = $resourceClass::getFormSchema();
-        Assert::isArray($schema);
-
-        $components = [];
-        foreach ($schema as $key => $component) {
-            Assert::isInstanceOf($component, Component::class);
-            $components[$key] = $component;
-        }
-
-        return $components;
-    }
-
-    /**
-<<<<<<< HEAD
-     * @param  array<string, string|int|bool|null>  $data
-=======
-=======
->>>>>>> 87273113 (.)
-        $key = Str::of(class_basename(__CLASS__))
-            ->snake()
-            ->prepend('actions.')
-            ->append('.' . $func)
-            ->toString();
-        $str = static::transClass($tenantClass, $key);
-
-        return $str;
-    }
-
-    public function form(Schema $schema): Schema
-    {
-        $tenantClass = XotData::make()->getTenantClass();
-        $resource = Str::of($tenantClass)
-            ->replace('\Models\\', '\Filament\Resources\\')
-            ->append('Resource')
-            ->toString();
-        $this->resource = $resource;
-        return $schema->components($this->getFormSchema());
-    }
-
-    public function getFormSchema(): array
-    {
-        return $this->resource::getFormSchema();
-    }
-
-    /**
-     * @param  array<string, mixed>  $data
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
         $key = Str::of(class_basename(self::class))
             ->snake()
             ->prepend('actions.')
@@ -198,11 +68,6 @@ class RegisterTenant extends XotBaseRegisterTenant
 
     /**
      * @param  array<string, string|int|bool|null>  $data
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-     * @param array<string, string|int|bool|null> $data
->>>>>>> laraxot/dev
      */
     protected function handleRegistration(array $data): Model
     {
@@ -210,56 +75,6 @@ class RegisterTenant extends XotBaseRegisterTenant
 
         $tenant = $tenantClass::create($data);
         Assert::implementsInterface($tenant, TenantContract::class);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        Assert::isInstanceOf($tenant, BaseTenant::class);
-
-        return $tenant;
-    }
-
-    /**
-     * @return class-string
-     */
-    private function resolveResourceClass(): string
-    {
-<<<<<<< HEAD
-        if ($this->resourceClass !== null) {
-=======
-        if (null !== $this->resourceClass) {
->>>>>>> laraxot/dev
-            return $this->resourceClass;
-        }
-
-        $tenantClass = XotData::make()->getTenantClass();
-        $resourceClass = Str::of($tenantClass)
-            ->replace('\\Models\\', '\\Filament\\Resources\\')
-            ->append('Resource')
-            ->toString();
-
-        Assert::classExists($resourceClass);
-
-        /** @var class-string $resolved */
-        $resolved = $resourceClass;
-        $this->resourceClass = $resolved;
-
-        return $resolved;
-    }
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-
-        $tenant->users()->attach(auth()->user());
-
-        return $tenant;
-    }
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
         Assert::isInstanceOf($tenant, BaseTenant::class);
 
         return $tenant;
@@ -288,8 +103,4 @@ class RegisterTenant extends XotBaseRegisterTenant
 
         return $resolved;
     }
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 }

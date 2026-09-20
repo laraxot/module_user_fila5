@@ -11,10 +11,6 @@ return [
         ],
     ],
     'fields' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         'first_name' => 'Nome',
         'last_name' => 'Cognome',
         'id' => [
@@ -52,94 +48,6 @@ return [
         ],
         'is_phone' => [
             'label' => 'is_phone',
-<<<<<<< HEAD
-=======
-        'first_name' => [
-            'label' => 'Nome',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'last_name' => [
-            'label' => 'Cognome',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'id' => [
-            'label' => 'id',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'mobile_id' => [
-            'label' => 'mobile_id',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'device' => [
-            'label' => 'device',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'platform' => [
-            'label' => 'platform',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'browser' => [
-            'label' => 'browser',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'version' => [
-            'label' => 'version',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'is_robot' => [
-            'label' => 'is_robot',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'robot' => [
-            'label' => 'robot',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'is_desktop' => [
-            'label' => 'is_desktop',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'is_mobile' => [
-            'label' => 'is_mobile',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'is_tablet' => [
-            'label' => 'is_tablet',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'is_phone' => [
-            'label' => 'is_phone',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -159,12 +67,4 @@ return [
             'label' => 'create',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
 ];
