@@ -12,6 +12,7 @@ use Modules\User\Models\User;
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Membership Factory.
 =======
  * Membership Factory
@@ -22,6 +23,9 @@ use Modules\User\Models\User;
  * Membership Factory.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ * Membership Factory.
+>>>>>>> laraxot/dev
  *
  * Factory for creating Membership model instances for testing and seeding.
  *
@@ -43,6 +47,7 @@ class MembershipFactory extends Factory
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
@@ -55,6 +60,11 @@ class MembershipFactory extends Factory
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> laraxot/dev
     public function definition(): array
     {
         return [
@@ -62,6 +72,7 @@ class MembershipFactory extends Factory
             'user_id' => User::factory(),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'role' => fake()->randomElement(['admin', 'editor', 'member', 'viewer']),
             'customer_id' => fake()->optional(0.3)->uuid(),
 =======
@@ -76,6 +87,10 @@ class MembershipFactory extends Factory
             'customer_id' => fake()->optional(0.3)->uuid(),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'role' => fake()->randomElement(['admin', 'editor', 'member', 'viewer']),
+            'customer_id' => fake()->optional(0.3)->uuid(),
+>>>>>>> laraxot/dev
         ];
     }
 
@@ -83,10 +98,14 @@ class MembershipFactory extends Factory
      * Create membership for a specific team.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function forTeam(Team $team): static
     {
         return $this->state(fn (array $_attributes): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -107,6 +126,8 @@ class MembershipFactory extends Factory
         return $this->state(fn (array $_attributes): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'team_id' => $team->id,
         ]);
     }
@@ -115,10 +136,14 @@ class MembershipFactory extends Factory
      * Create membership for a specific user.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function forUser(User $user): static
     {
         return $this->state(fn (array $_attributes): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -139,6 +164,8 @@ class MembershipFactory extends Factory
         return $this->state(fn (array $_attributes): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'user_id' => $user->id,
         ]);
     }
@@ -147,10 +174,14 @@ class MembershipFactory extends Factory
      * Set the role to admin.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function admin(): static
     {
         return $this->state(fn (array $_attributes): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -170,6 +201,8 @@ class MembershipFactory extends Factory
         return $this->state(fn (array $_attributes): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'role' => 'admin',
         ]);
     }
@@ -178,10 +211,14 @@ class MembershipFactory extends Factory
      * Set the role to editor.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function editor(): static
     {
         return $this->state(fn (array $_attributes): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -201,6 +238,8 @@ class MembershipFactory extends Factory
         return $this->state(fn (array $_attributes): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'role' => 'editor',
         ]);
     }
@@ -209,10 +248,14 @@ class MembershipFactory extends Factory
      * Set the role to member.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function member(): static
     {
         return $this->state(fn (array $_attributes): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -232,6 +275,8 @@ class MembershipFactory extends Factory
         return $this->state(fn (array $_attributes): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'role' => 'member',
         ]);
     }
@@ -240,10 +285,14 @@ class MembershipFactory extends Factory
      * Set the role to viewer.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function viewer(): static
     {
         return $this->state(fn (array $_attributes): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -263,6 +312,8 @@ class MembershipFactory extends Factory
         return $this->state(fn (array $_attributes): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'role' => 'viewer',
         ]);
     }

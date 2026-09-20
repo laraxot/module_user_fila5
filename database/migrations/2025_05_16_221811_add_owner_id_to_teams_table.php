@@ -6,12 +6,19 @@ namespace Modules\User\Database\Migrations;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Team;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
     protected ?string $model_class = Team::class;
 
     public function up(): void
@@ -19,6 +26,7 @@ return new class extends XotBaseMigration
         $this->tableUpdate(function (Blueprint $table): void {
             if (! $this->hasColumn('owner_id')) {
                 $table->uuid('owner_id')->nullable()->after('id');
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -62,6 +70,8 @@ return new class extends XotBaseMigration
                 $table->uuid('owner_id')->nullable()->after('id');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             }
         });
     }

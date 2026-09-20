@@ -2,6 +2,9 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 declare(strict_types=1);
 
 return [
@@ -55,10 +58,19 @@ return [
         'createAnother' => ['tooltip' => 'createAnother', 'label' => 'createAnother', 'icon' => 'createAnother'],
         'attachAnother' => ['tooltip' => 'attachAnother'],
         'profile' => ['tooltip' => 'profile', 'icon' => 'profile', 'label' => 'profile'],
+<<<<<<< HEAD
         'view' => ['tooltip' => 'view', 'icon' => 'view', 'label' => 'view'],
         'submit' => ['tooltip' => 'submit', 'icon' => 'submit', 'label' => 'submit'],
         'associateExistingClient' => ['tooltip' => 'associateExistingClient', 'icon' => 'associateExistingClient', 'label' => 'associateExistingClient'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+=======
+        'view' => ['tooltip' => 'view', 'icon' => 'view'],
+        'submit' => ['tooltip' => 'submit', 'icon' => 'submit', 'label' => 'submit'],
+        'associateExistingClient' => ['tooltip' => 'associateExistingClient', 'icon' => 'associateExistingClient', 'label' => 'associateExistingClient'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'resetColumnManager' => ['label' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'tooltip' => 'resetColumnManager'],
+        'dissociateClient' => ['label' => 'dissociateClient', 'icon' => 'dissociateClient', 'tooltip' => 'dissociateClient'],
+>>>>>>> laraxot/dev
     ],
     'sections' => [
         'empty' => ['heading' => 'empty'],
@@ -66,6 +78,7 @@ return [
     'label' => 'Client',
     'plural_label' => 'Client (Plurale)',
 ];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -227,3 +240,5 @@ return [
 ];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

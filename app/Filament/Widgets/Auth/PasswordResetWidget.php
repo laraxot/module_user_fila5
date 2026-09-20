@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Password;
@@ -41,6 +44,7 @@ class PasswordResetWidget extends XotBaseSchemaWidget
 
     public function sendResetPasswordLink(): void
     {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -153,6 +157,8 @@ class PasswordResetWidget extends XotBaseSchemaWidget
     {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $data = $this->form->getState();
         $password_broker = Password::broker();
 
@@ -170,6 +176,7 @@ class PasswordResetWidget extends XotBaseSchemaWidget
                 ->duration(10000)
                 ->send();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             $this->form->fill();
@@ -191,12 +198,18 @@ class PasswordResetWidget extends XotBaseSchemaWidget
             Session::flash('error', trans('user::errors.'.$response.'.label'));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            $this->form->fill();
+        } else {
+            Session::flash('error', trans('user::errors.'.$response.'.label'));
+>>>>>>> laraxot/dev
             Notification::make()
                 ->title(__('user::auth.password_reset.email_failed.title'))
                 ->body(trans($response))
                 ->danger()
                 ->send();
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     }
@@ -226,12 +239,17 @@ class PasswordResetWidget extends XotBaseSchemaWidget
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    }
+
+>>>>>>> laraxot/dev
     public function resetForm(): void
     {
         $this->emailSent = false;
         $this->form->fill();
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -246,12 +264,15 @@ class PasswordResetWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public function sendAnotherLink(): void
     {
         $this->emailSent = false;
         $this->form->fill(['email' => '']);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function checkEmailStatus(): void
@@ -273,6 +294,10 @@ class PasswordResetWidget extends XotBaseSchemaWidget
     {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function checkEmailStatus(): void
+    {
+>>>>>>> laraxot/dev
         $this->redirect(route('login'));
     }
 }

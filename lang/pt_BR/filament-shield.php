@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -20,11 +21,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'column.name' => 'Nome',
     'column.guard_name' => 'Guard',
     'column.roles' => 'Funções',
     'column.permissions' => 'Permissões',
     'column.updated_at' => 'Alterado em',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -42,11 +46,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'field.name' => 'Nome',
     'field.guard_name' => 'Guard',
     'field.permissions' => 'Permissões',
     'field.select_all.name' => 'Selecionar todos',
     'field.select_all.message' => 'Habilitar todas as permissões para essa função',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -64,11 +71,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Funções',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Função',
     'resource.label.roles' => 'Funções',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -85,6 +95,8 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'section' => 'Entidades',
     'resources' => 'Recursos',
     'widgets' => 'Widgets',
@@ -92,6 +104,9 @@ return [
     'custom' => 'Permissões customizadas',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'forbidden' => 'Você não tem permissão para acessar',
     'navigation' => [
         'label' => 'Missing Navigation Label',
@@ -106,6 +121,7 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -155,4 +171,6 @@ return [
     ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

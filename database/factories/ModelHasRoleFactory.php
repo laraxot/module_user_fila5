@@ -7,11 +7,15 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\ModelHasRole;
 
 /**
  * @extends Factory<ModelHasRole>
  */
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\ModelHasRole;
@@ -29,12 +33,15 @@ use Modules\User\Models\ModelHasRole;
  */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 class ModelHasRoleFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var class-string<Model>
@@ -45,6 +52,8 @@ class ModelHasRoleFactory extends Factory
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $model = ModelHasRole::class;
 
@@ -52,6 +61,9 @@ class ModelHasRoleFactory extends Factory
      * Define the model's default state.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     /**
      * @return array<string, mixed>
@@ -59,6 +71,7 @@ class ModelHasRoleFactory extends Factory
     public function definition(): array
     {
         return [];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -87,5 +100,7 @@ class ModelHasRoleFactory extends Factory
         return [];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

@@ -4,9 +4,12 @@ globs:
 alwaysApply: false
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -17,11 +20,14 @@ related:
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 # Linee guida per l'uso di Spatie Activitylog
 
@@ -73,6 +79,7 @@ $logs = $user->activities()->where('log_name', 'user_moderation')->get();
 - [Testing](mdc:testing.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione centrale](mdc:../../../../../docs/index.md)
 =======
 - [Documentazione centrale](mdc:../../../../docs/index.md)
@@ -83,4 +90,7 @@ $logs = $user->activities()->where('log_name', 'user_moderation')->get();
 - [Documentazione centrale](mdc:../../../../../docs/index.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Documentazione centrale](mdc:../../../../../docs/index.md)
+>>>>>>> laraxot/dev
 

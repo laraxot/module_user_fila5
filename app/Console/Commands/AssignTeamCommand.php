@@ -6,6 +6,7 @@ namespace Modules\User\Console\Commands;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Console\Command;
 =======
 =======
@@ -23,31 +24,41 @@ use Webmozart\Assert\Assert;
 use Illuminate\Console\Command;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Console\Command;
+>>>>>>> laraxot/dev
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\BaseUser;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 class AssignTeamCommand extends Command
 {
     /**
      * The name and signature of the console command.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -58,6 +69,8 @@ class AssignTeamCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $name = 'user:assign-team';
 
@@ -65,6 +78,7 @@ class AssignTeamCommand extends Command
      * The console command description.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -75,11 +89,14 @@ class AssignTeamCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $description = 'Assign a team to user';
 
     /**
      * Create a new command instance.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      */
@@ -97,6 +114,9 @@ class AssignTeamCommand extends Command
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     */
+>>>>>>> laraxot/dev
 
     /**
      * Execute the console command.
@@ -107,12 +127,16 @@ class AssignTeamCommand extends Command
         $email = text('email ?');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $user = XotData::make()->getUserByEmail($email);
         Assert::isInstanceOf($user, BaseUser::class);
 
         $teamClass = $xot->getTeamClass();
 
         /** @var array<int|string, string> $opts */
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -135,6 +159,8 @@ class AssignTeamCommand extends Command
         /** @var array<int|string, string> $opts */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $opts = $teamClass::pluck('name', 'id')->toArray();
 
         $rows = multiselect(
@@ -144,6 +170,9 @@ class AssignTeamCommand extends Command
             scroll: 10,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             // validate: function (array $values) {
             //  return ! \in_array(\count($values), [1, 2], false)
             //    ? 'A maximum of two'
@@ -152,6 +181,7 @@ class AssignTeamCommand extends Command
         );
 
         $user->membershipTeams()->sync($rows);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -177,12 +207,15 @@ class AssignTeamCommand extends Command
         $user->membershipTeams()->sync($rows);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         /*
          * foreach ($rows as $row) {
          * $role = Role::firstOrCreate(['name' => $row]);
          * $user->assignRole($role);
          * }
          */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $this->info('Teams :'.implode(', ', $rows).' assigned to '.$email);
@@ -203,6 +236,11 @@ class AssignTeamCommand extends Command
         $rows = $user->membershipTeams()->get()->toArray();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $this->info('Teams :'.implode(', ', $rows).' assigned to '.$email);
+
+        $rows = $user->membershipTeams()->get()->toArray();
+>>>>>>> laraxot/dev
 
         if (\count($rows) > 0) {
             Assert::isArray($rows[0]);
@@ -215,6 +253,7 @@ class AssignTeamCommand extends Command
             $this->newLine();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $this->warn('⚡ No teams ['.$teamClass.']');
 =======
             $this->warn('⚡ No teams [' . $teamClass . ']');
@@ -225,12 +264,18 @@ class AssignTeamCommand extends Command
             $this->warn('⚡ No teams ['.$teamClass.']');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            $this->warn('⚡ No teams ['.$teamClass.']');
+>>>>>>> laraxot/dev
             $this->newLine();
         }
     }
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * Get the console command options.
      */
@@ -240,6 +285,7 @@ class AssignTeamCommand extends Command
     //        ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
     // }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -267,4 +313,6 @@ class AssignTeamCommand extends Command
     // }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

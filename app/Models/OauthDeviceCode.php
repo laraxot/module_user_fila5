@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Laravel\Passport\DeviceCode as PassportDeviceCode;
 
 /**
@@ -41,6 +42,8 @@ use Laravel\Passport\DeviceCode as PassportDeviceCode;
  * @method static Builder|OauthDeviceCode newQuery()
  * @method static Builder|OauthDeviceCode query()
 =======
+=======
+>>>>>>> laraxot/dev
 use Laravel\Passport\DeviceCode as PassportDeviceCode;
 
 /**
@@ -53,13 +56,18 @@ use Laravel\Passport\DeviceCode as PassportDeviceCode;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthDeviceCode newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthDeviceCode newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthDeviceCode query()
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
  *
 >>>>>>> 60a2c9a9 (.)
+=======
+ *
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class OauthDeviceCode extends PassportDeviceCode
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -80,4 +88,7 @@ class OauthDeviceCode extends PassportDeviceCode
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    protected $connection = 'user';
+>>>>>>> laraxot/dev
 }

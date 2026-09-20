@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\User\Http\Middleware;
 
 =======
@@ -21,6 +22,10 @@ namespace Modules\User\Http\Middleware;
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+namespace Modules\User\Http\Middleware;
+
+>>>>>>> laraxot/dev
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -30,6 +35,7 @@ use Symfony\Component\HttpFoundation\Response;
  * })->middleware(EnsureUserHasRole::class.':editor');
  * Route::put('/post/{id}', function (string $id) {
  *     // ...
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  *})->middleware(EnsureUserHasRole::class.':editor,publisher');.
@@ -48,6 +54,10 @@ use Symfony\Component\HttpFoundation\Response;
  */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ *})->middleware(EnsureUserHasRole::class.':editor,publisher');.
+ */
+>>>>>>> laraxot/dev
 class EnsureUserHasRole
 {
     /**
@@ -55,6 +65,9 @@ class EnsureUserHasRole
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @param \Closure(Request):Response $next
      */
     public function handle(Request $request, \Closure $next, string $role): Response
@@ -62,6 +75,7 @@ class EnsureUserHasRole
         $user = $request->user();
         // Check if user has role using Spatie Permission's hasRole method
         if (! $user || ! method_exists($user, 'hasRole') || ! $user->hasRole($role)) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -85,6 +99,8 @@ class EnsureUserHasRole
         if (! $user || ! method_exists($user, 'hasRole') || ! $user->hasRole($role)) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             // Redirect...
             return redirect()->route('home');
         }

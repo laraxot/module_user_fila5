@@ -6,12 +6,16 @@ namespace Modules\User\Database\Factories;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\AuthenticationLog;
 
 /**
  * @extends Factory<AuthenticationLog>
  */
+<<<<<<< HEAD
 =======
 use Modules\User\Models\AuthenticationLog;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -30,6 +34,8 @@ use Modules\User\Models\AuthenticationLog;
  */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 class AuthenticationLogFactory extends Factory
 {
     /**
@@ -42,6 +48,7 @@ class AuthenticationLogFactory extends Factory
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
@@ -54,6 +61,11 @@ class AuthenticationLogFactory extends Factory
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> laraxot/dev
     public function definition(): array
     {
         return [];

@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
@@ -25,10 +26,16 @@ use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
+use Modules\Xot\Contracts\ProfileContract;
+>>>>>>> laraxot/dev
 
 /**
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @method static Builder|Feature newModelQuery()
@@ -53,6 +60,8 @@ use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  *
  * @method static Builder|Feature newModelQuery()
  * @method static Builder|Feature newQuery()
@@ -62,8 +71,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string      $name
  * @property string      $scope
  * @property string      $value
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -71,9 +83,13 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 2024e2e7 (.)
+=======
+ *
+>>>>>>> laraxot/dev
  * @method static Builder|Feature whereCreatedAt($value)
  * @method static Builder|Feature whereCreatedBy($value)
  * @method static Builder|Feature whereDeletedAt($value)
@@ -86,6 +102,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|Feature whereValue($value)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property ProfileContract|null $deleter
  * @method static \Modules\User\Database\Factories\FeatureFactory factory($count = null, $state = [])
 =======
@@ -94,13 +111,18 @@ use Modules\Xot\Contracts\ProfileContract;
 =======
  * @mixin IdeHelperFeature
 =======
+=======
+>>>>>>> laraxot/dev
  *
  * @property ProfileContract|null $deleter
  *
  * @method static \Modules\User\Database\Factories\FeatureFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class Feature extends BaseModel

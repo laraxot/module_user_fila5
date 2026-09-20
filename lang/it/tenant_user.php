@@ -9,6 +9,7 @@ return [
         'label' => 'Utenti Tenant',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'group' => ['name' => 'Tenants', 'description' => 'Gestione degli utenti associati ai tenant'],
 =======
 =======
@@ -24,12 +25,16 @@ return [
         'group' => ['name' => 'Tenants', 'description' => 'Gestione degli utenti associati ai tenant'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'group' => ['name' => 'Tenants', 'description' => 'Gestione degli utenti associati ai tenant'],
+>>>>>>> laraxot/dev
         'sort' => 87,
         'icon' => 'heroicon-o-building-office',
     ],
     'label' => 'Tenant User',
     'plural_label' => 'Tenant User (Plurale)',
     'fields' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
@@ -92,12 +97,15 @@ return [
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
     ],
     'actions' => [
         'create' => ['label' => 'Crea Tenant User', 'icon' => 'create', 'tooltip' => 'create'],
+<<<<<<< HEAD
         'edit' => ['label' => 'Modifica Tenant User', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Tenant User', 'icon' => 'delete', 'tooltip' => 'delete'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
@@ -105,5 +113,17 @@ return [
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'edit' => ['label' => 'Modifica Tenant User'],
+        'delete' => ['label' => 'Elimina Tenant User', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'resetColumnManager' => ['tooltip' => 'resetColumnManager', 'label' => 'resetColumnManager', 'icon' => 'resetColumnManager'],
+        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'applyFilters' => ['label' => 'applyFilters', 'icon' => 'applyFilters', 'tooltip' => 'applyFilters'],
+        'openFilters' => ['label' => 'openFilters', 'icon' => 'openFilters', 'tooltip' => 'openFilters'],
+        'resetFilters' => ['label' => 'resetFilters', 'icon' => 'resetFilters', 'tooltip' => 'resetFilters'],
+        'applyTableColumnManager' => ['label' => 'applyTableColumnManager', 'icon' => 'applyTableColumnManager', 'tooltip' => 'applyTableColumnManager'],
+        'openColumnManager' => ['label' => 'openColumnManager', 'icon' => 'openColumnManager', 'tooltip' => 'openColumnManager'],
+>>>>>>> laraxot/dev
     ],
 ];

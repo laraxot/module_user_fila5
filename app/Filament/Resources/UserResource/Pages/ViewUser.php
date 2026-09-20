@@ -11,11 +11,15 @@ namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\DatePicker;
 use Filament\Pages\Dashboard\Concerns\HasFiltersForm;
 use Filament\Schemas\Schema;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserWidget;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -44,6 +48,8 @@ use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserWidget;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * Pagina per la modifica degli utenti con particolare gestione della password.
@@ -53,11 +59,15 @@ class ViewUser extends BaseViewUser
     use HasFiltersForm;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     protected static string $resource = UserResource::class;
 
     protected string $view = 'user::filament.resources.user.pages.view-user';
 
+<<<<<<< HEAD
 =======
     protected static string $resource = UserResource::class;
     protected string $view = 'user::filament.resources.user.pages.view-user';
@@ -73,6 +83,8 @@ class ViewUser extends BaseViewUser
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected bool $persistsFiltersInSession = true;
 
     public function filtersForm(Schema $schema): Schema
@@ -80,6 +92,7 @@ class ViewUser extends BaseViewUser
         return $schema
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             ->components([
 =======
             ->schema([
@@ -90,12 +103,18 @@ class ViewUser extends BaseViewUser
             ->components([
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            ->components([
+>>>>>>> laraxot/dev
                 DatePicker::make('startDate'),
                 DatePicker::make('endDate'),
             ])->columns(2);
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     public function getFooterWidgets(): array
     {
@@ -103,6 +122,7 @@ class ViewUser extends BaseViewUser
             UserWidget::class,
         ];
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -127,4 +147,6 @@ class ViewUser extends BaseViewUser
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

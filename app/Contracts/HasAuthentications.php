@@ -6,12 +6,16 @@ namespace Modules\User\Contracts;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Contracts\Auth\Authenticatable;
 use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 
 /**
  * Marker: il modello usa {@see HasAuthenticationLogTrait}.
  */
+<<<<<<< HEAD
 interface HasAuthentications extends Authenticatable {}
 =======
 =======
@@ -43,3 +47,8 @@ use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 interface HasAuthentications extends Authenticatable {}
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+interface HasAuthentications extends Authenticatable
+{
+}
+>>>>>>> laraxot/dev

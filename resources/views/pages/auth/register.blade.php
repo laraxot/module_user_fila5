@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use function Laravel\Folio\{middleware, name};
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -13,6 +16,7 @@ if (in_array($locale, ['it', 'en', 'es', 'de', 'fr', 'ru'], true)) {
     LaravelLocalization::setLocale($locale);
     app()->setLocale($locale);
 }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -48,12 +52,17 @@ if (in_array($locale, ['it', 'en', 'es', 'de', 'fr', 'ru'], true)) {
 }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 middleware(['guest']);
 name('register');
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ?>
 
 <x-layouts.app>
@@ -154,6 +163,7 @@ name('register');
             </div>
         </div>
     </section>
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -332,4 +342,6 @@ new class extends Component {
     </section>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 </x-layouts.app>

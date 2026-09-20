@@ -9,6 +9,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\ColorPicker;
 use Filament\Forms\Components\TextInput;
 <<<<<<< HEAD
@@ -25,18 +26,25 @@ use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\RelationManagers\RelationManagerConfiguration;
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 2024e2e7 (.)
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\TenantResource\Pages\CreateTenant;
 use Modules\User\Filament\Resources\TenantResource\Pages\EditTenant;
 use Modules\User\Filament\Resources\TenantResource\Pages\ListTenants;
 use Modules\User\Filament\Resources\TenantResource\Pages\ViewTenant;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\TenantResource\RelationManagers\UsersRelationManager;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class TenantResource extends XotBaseResource
 {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -62,11 +70,14 @@ class TenantResource extends XotBaseResource
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     /**
      * Get the model class name for this resource.
      *
      * @return class-string<Model>
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     #[\Override]
@@ -170,6 +181,8 @@ class TenantResource extends XotBaseResource
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
     #[\Override]
     public static function getModel(): string
     {
@@ -178,12 +191,16 @@ class TenantResource extends XotBaseResource
         return $xot->getTenantClass();
     }
 
+<<<<<<< HEAD
     /**
      * @return array<int, class-string<RelationManager>|RelationGroup|RelationManagerConfiguration>
      */
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [
@@ -192,6 +209,7 @@ class TenantResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     #[\Override]
@@ -204,6 +222,9 @@ class TenantResource extends XotBaseResource
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public static function getPages(): array
     {
         return [

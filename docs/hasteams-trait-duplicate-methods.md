@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Analisi metodi duplicati in HasTeams (trait)"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Analisi metodi duplicati in HasTeams (trait)
 
 ## Introduzione
@@ -105,11 +111,15 @@ Nel trait `HasTeams` sono presenti diversi metodi con lo stesso nome ma implemen
 ## Collegamenti correlati
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Indice documentazione User](./index.md)
 - [Modello User](./models/user.md)
 - [Best practices trait](./best-practices-traits.md)
 - [Refactor checklist](./refactor-checklist.md)
 - [XotData helper](../../xot/docs/standards/readme.md)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -129,6 +139,8 @@ Nel trait `HasTeams` sono presenti diversi metodi con lo stesso nome ma implemen
 - [XotData helper](../../xot/docs/standards/readme.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 ---
 

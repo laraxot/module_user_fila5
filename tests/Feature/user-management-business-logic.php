@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Database\QueryException;
@@ -406,6 +409,7 @@ describe('User Management Business Logic', function (): void {
             'lang' => 'it',
         ])->exists());
     });
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1284,4 +1288,6 @@ describe('User Management Business Logic', function (): void {
     });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

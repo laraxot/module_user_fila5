@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\Authentication;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /**
 =======
@@ -28,6 +29,10 @@ use Modules\User\Models\User;
 /**
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+/**
+>>>>>>> laraxot/dev
  * @extends Factory<Authentication>
  */
 class AuthenticationFactory extends Factory
@@ -36,6 +41,7 @@ class AuthenticationFactory extends Factory
      * The name of the factory's corresponding model.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var class-string<Authentication>
@@ -46,6 +52,8 @@ class AuthenticationFactory extends Factory
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $model = Authentication::class;
 
@@ -53,6 +61,7 @@ class AuthenticationFactory extends Factory
      * Define the model's default state.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      */
     /**
 =======
@@ -65,10 +74,15 @@ class AuthenticationFactory extends Factory
     /**
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     */
+    /**
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     public function definition(): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         return [];
@@ -151,5 +165,8 @@ class AuthenticationFactory extends Factory
         return [];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return [];
+>>>>>>> laraxot/dev
     }
 }

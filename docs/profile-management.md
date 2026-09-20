@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Profile Management in Laravel Modules"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Profile Management in Laravel Modules
 
 ## Overview
@@ -97,6 +103,9 @@ This document outlines the best practices for managing user profiles within a La
 ## Links to Related Documentation
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [User Module Index](./index.md)
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
@@ -106,6 +115,7 @@ This document outlines the best practices for managing user profiles within a La
 - [BaseUser Model](./baseuser.md)
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 - [Routing Best Practices](./routing-best-practices.md)
+<<<<<<< HEAD
 - [Session Management](./session-management.md)
 =======
 =======
@@ -131,3 +141,6 @@ This document outlines the best practices for managing user profiles within a La
 - [Session Management](./session-management.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Session Management](./session-management.md)
+>>>>>>> laraxot/dev

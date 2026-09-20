@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 use Illuminate\Support\Facades\Auth;
 =======
@@ -18,6 +19,10 @@ use Modules\User\Models\User;
 use Illuminate\Support\Facades\Auth;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Models\User;
+use Illuminate\Support\Facades\Auth;
+>>>>>>> laraxot/dev
 use Illuminate\Auth\Events\Login;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
@@ -44,6 +49,7 @@ new class extends Component {
         if (!Auth::attempt(['email' => $this->email, 'password' => $this->password], $this->remember)) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $this->addError('email', trans('user::login.actions.login.error'));
 =======
             $this->addError('email', trans('auth.failed'));
@@ -54,6 +60,9 @@ new class extends Component {
             $this->addError('email', trans('user::login.actions.login.error'));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            $this->addError('email', trans('user::login.actions.login.error'));
+>>>>>>> laraxot/dev
 
             return;
         }
@@ -68,6 +77,9 @@ new class extends Component {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 <x-layouts.guest>
     <x-slot name="title">
         {{ __('user::login.title') }}
@@ -115,6 +127,7 @@ new class extends Component {
     @endvolt
 
 </x-layouts.guest>
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -210,3 +223,5 @@ new class extends Component {
 </x-layouts.guest>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

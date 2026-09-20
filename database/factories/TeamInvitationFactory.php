@@ -7,11 +7,15 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\TeamInvitation;
 
 /**
  * @extends Factory<TeamInvitation>
  */
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\TeamInvitation;
@@ -29,12 +33,15 @@ use Modules\User\Models\TeamInvitation;
  */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 class TeamInvitationFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var class-string<Model>
@@ -45,6 +52,8 @@ class TeamInvitationFactory extends Factory
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $model = TeamInvitation::class;
 
@@ -53,12 +62,16 @@ class TeamInvitationFactory extends Factory
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<string, mixed>
      */
     public function definition(): array
     {
         return [];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -80,5 +93,7 @@ class TeamInvitationFactory extends Factory
         return [];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

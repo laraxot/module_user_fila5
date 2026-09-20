@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "DRY & KISS Analysis - Modulo User"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # DRY & KISS Analysis - Modulo User
 
 **Data:** 15 Ottobre 2025
@@ -147,6 +153,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 - [Architecture](./core/architecture.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [DRY/KISS Global](../../../docs/dry_kiss_analysis_[date].md)
 =======
 - [DRY/KISS Global](../../docs/dry_kiss_analysis_[date].md)
@@ -157,6 +164,9 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 - [DRY/KISS Global](../../../docs/dry_kiss_analysis_[date].md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [DRY/KISS Global](../../../docs/dry_kiss_analysis_[date].md)
+>>>>>>> laraxot/dev
 
 ---
 

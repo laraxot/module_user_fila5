@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Conversione Livewire Auth/Login a Filament LoginWidget
 
 ## Analisi del componente Livewire
@@ -176,6 +177,8 @@ class LoginWidget extends XotBaseWidget
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: login-widget-conversion
@@ -192,5 +195,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/login-widget-conversion.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

@@ -6,6 +6,7 @@ namespace Modules\User\Actions\Socialite\Utils;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User;
@@ -26,6 +27,11 @@ use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Support\Str;
+use InvalidArgumentException;
+use Laravel\Socialite\Contracts\User;
+>>>>>>> laraxot/dev
 
 final class EmailDomainAnalyzer
 {
@@ -35,6 +41,7 @@ final class EmailDomainAnalyzer
         private readonly string $ssoProvider,
     ) {
         if (empty($ssoProvider)) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             throw new \InvalidArgumentException('Il provider SSO non può essere vuoto');
@@ -47,6 +54,9 @@ final class EmailDomainAnalyzer
             throw new \InvalidArgumentException('Il provider SSO non può essere vuoto');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            throw new \InvalidArgumentException('Il provider SSO non può essere vuoto');
+>>>>>>> laraxot/dev
         }
     }
 
@@ -54,11 +64,15 @@ final class EmailDomainAnalyzer
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         // if ($ssoUser === null) {
         //    throw new InvalidArgumentException('L\'utente SSO non può essere null');
         // }
         $this->ssoUser = $ssoUser;
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -77,11 +91,14 @@ final class EmailDomainAnalyzer
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         return $this;
     }
 
     public function hasUnrecognizedDomain(): bool
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         return ! $this->hasFirstPartyDomain() && ! $this->hasClientDomain();
@@ -94,18 +111,25 @@ final class EmailDomainAnalyzer
         return ! $this->hasFirstPartyDomain() && ! $this->hasClientDomain();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return ! $this->hasFirstPartyDomain() && ! $this->hasClientDomain();
+>>>>>>> laraxot/dev
     }
 
     public function hasFirstPartyDomain(): bool
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (! isset($this->ssoUser)) {
             throw new \RuntimeException('L\'utente SSO non è stato impostato. Utilizzare setUser() prima di chiamare questo metodo.');
         }
 
         $email = $this->ssoUser->getEmail();
         if (! is_string($email) || empty($email)) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -129,10 +153,13 @@ final class EmailDomainAnalyzer
         if (! is_string($email) || empty($email)) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             return false;
         }
 
         $domain = $this->firstPartyDomain();
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (null === $domain || empty($domain)) {
@@ -145,6 +172,9 @@ final class EmailDomainAnalyzer
         if (null === $domain || empty($domain)) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null === $domain || empty($domain)) {
+>>>>>>> laraxot/dev
             return false;
         }
 
@@ -158,12 +188,16 @@ final class EmailDomainAnalyzer
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (! isset($this->ssoUser)) {
             throw new \RuntimeException('L\'utente SSO non è stato impostato. Utilizzare setUser() prima di chiamare questo metodo.');
         }
 
         $email = $this->ssoUser->getEmail();
         if (! is_string($email) || empty($email)) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -187,10 +221,13 @@ final class EmailDomainAnalyzer
         if (! is_string($email) || empty($email)) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             return false;
         }
 
         $clientEmailDomain = $this->clientDomain();
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (null === $clientEmailDomain || empty($clientEmailDomain)) {
@@ -203,6 +240,9 @@ final class EmailDomainAnalyzer
         if (null === $clientEmailDomain || empty($clientEmailDomain)) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null === $clientEmailDomain || empty($clientEmailDomain)) {
+>>>>>>> laraxot/dev
             return false;
         }
 
@@ -214,6 +254,9 @@ final class EmailDomainAnalyzer
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     private function firstPartyDomain(): ?string
     {
         $res = config(sprintf('services.%s.email_domains.first_party.tld', $this->ssoProvider));
@@ -231,6 +274,7 @@ final class EmailDomainAnalyzer
             return null;
         }
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -272,6 +316,8 @@ final class EmailDomainAnalyzer
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         return $domain;
     }
 }

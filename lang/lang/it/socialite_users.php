@@ -7,6 +7,9 @@ return [
         'provider' => [
             'label' => 'provider',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         ],
         'provider_id' => [
             'label' => 'provider_id',
@@ -21,6 +24,7 @@ return [
             'label' => 'avatar',
         ],
     ],
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
@@ -63,4 +67,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

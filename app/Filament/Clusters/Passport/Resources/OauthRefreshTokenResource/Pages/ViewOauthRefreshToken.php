@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthRefreshTokenResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\IconEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
@@ -19,10 +20,15 @@ use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthRefreshTokenResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\User\Filament\Clusters\Passport\Resources\OauthRefreshTokenResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+>>>>>>> laraxot/dev
 
 class ViewOauthRefreshToken extends XotBaseViewRecord
 {
     protected static string $resource = OauthRefreshTokenResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -79,4 +85,6 @@ class ViewOauthRefreshToken extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
 }

@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Widgets;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
@@ -19,6 +22,7 @@ use Modules\Xot\Filament\Widgets\XotBaseChartWidget;
 use Webmozart\Assert\Assert;
 
 class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForms
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -57,6 +61,8 @@ use Webmozart\Assert\Assert;
 class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForms
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 {
     use InteractsWithActions;
     use InteractsWithForms;
@@ -64,6 +70,9 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @var array<string, mixed>|null
      */
@@ -78,6 +87,7 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
     public function getHeading(): ?string
     {
         return __('user::widgets.users_chart.heading');
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -110,6 +120,8 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
         return __('user::widgets.users_chart.heading');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -119,6 +131,7 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
     {
         return Action::make('test')
             ->requiresConfirmation()
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             ->action(function (array $arguments): void {
@@ -135,6 +148,10 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
                 // Test action - no logging
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            ->action(function (array $arguments): void {
+                // Test action - no logging
+>>>>>>> laraxot/dev
             });
     }
 
@@ -155,6 +172,9 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
         try {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             // Type narrowing for PHPStan Level 10
             $pageFilters = isset($this->pageFilters) && is_array($this->pageFilters) ? $this->pageFilters : null;
 
@@ -167,6 +187,7 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
                 $endDate = Carbon::now()->format('Y-m-d H:i:s');
             }
             if (null === $startDate) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -194,6 +215,8 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
             if (null === $startDate) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 $startDate = Carbon::now()->subMonth()->format('Y-m-d H:i:s');
             }
             Assert::notNull($startDate = Carbon::createFromFormat('Y-m-d H:i:s', $startDate));
@@ -203,6 +226,7 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
             if ($startDate->diffInDays($endDate, true) > 90) {
                 $startDate = $endDate->copy()->subDays(90);
             }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         } catch (\Exception $e) {
@@ -215,6 +239,9 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
         } catch (\Exception $e) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        } catch (\Exception $e) {
+>>>>>>> laraxot/dev
             return [];
         }
 
@@ -251,6 +278,7 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
                 [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     'label' => __('user::widgets.users_chart.label'),
 =======
                     'label' => 'Number of logins executed',
@@ -261,6 +289,9 @@ class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForm
                     'label' => __('user::widgets.users_chart.label'),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                    'label' => __('user::widgets.users_chart.label'),
+>>>>>>> laraxot/dev
                     'data' => $chartData,
                 ],
             ],

@@ -29,11 +29,14 @@ return [
             'placeholder' => 'Identificativo univoco',
             'help' => 'Identificativo univoco dell\'utente nel sistema',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'type' => [
             'label' => 'Tipo',
@@ -46,11 +49,14 @@ return [
                 'guest' => 'Ospite',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'user' => [
             'name' => [
@@ -69,100 +75,127 @@ return [
                 'help' => 'Numero di telefono per contatti',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'photo' => [
             'label' => 'Foto',
             'placeholder' => 'Carica una foto profilo',
             'help' => 'Immagine del profilo utente (formato JPG, PNG)',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'ente' => [
             'label' => 'Ente',
             'placeholder' => 'Seleziona l\'ente',
             'help' => 'Ente di appartenenza dell\'utente',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'matr' => [
             'label' => 'Matricola',
             'placeholder' => 'Inserisci la matricola',
             'help' => 'Numero di matricola dell\'utente',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'first_name' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
             'help' => 'Nome di battesimo dell\'utente',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'last_name' => [
             'label' => 'Cognome',
             'placeholder' => 'Inserisci il cognome',
             'help' => 'Cognome dell\'utente',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'utente@email.com',
             'help' => 'Indirizzo email principale',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'is_active' => [
             'label' => 'Attivo',
             'placeholder' => 'Stato di attivazione',
             'help' => 'Indica se l\'utente è attivo nel sistema',
 <<<<<<< HEAD
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 60a2c9a9 (.)
-        ],
-        'birth_date' => [
-            'label' => 'Data di Nascita',
-            'placeholder' => 'Seleziona la data di nascita',
-            'help' => 'Data di nascita dell\'utente',
 <<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
+        ],
+        'birth_date' => [
+            'label' => 'Data di Nascita',
+            'placeholder' => 'Seleziona la data di nascita',
+            'help' => 'Data di nascita dell\'utente',
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'gender' => [
             'label' => 'Genere',
@@ -175,88 +208,112 @@ return [
                 'prefer_not_to_say' => 'Preferisco non dirlo',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'address' => [
             'label' => 'Indirizzo',
             'placeholder' => 'Via Roma, 123',
             'help' => 'Indirizzo di residenza',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'city' => [
             'label' => 'Città',
             'placeholder' => 'Inserisci la città',
             'help' => 'Città di residenza',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'postal_code' => [
             'label' => 'Codice Postale',
             'placeholder' => '00100',
             'help' => 'Codice postale della città',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'country' => [
             'label' => 'Paese',
             'placeholder' => 'Seleziona il paese',
             'help' => 'Paese di residenza',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'bio' => [
             'label' => 'Biografia',
             'placeholder' => 'Scrivi una breve biografia',
             'help' => 'Descrizione personale o professionale',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'website' => [
             'label' => 'Sito Web',
             'placeholder' => 'https://tuosito.com',
             'help' => 'Sito web personale o professionale',
 <<<<<<< HEAD
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 60a2c9a9 (.)
-        ],
-        'social_links' => [
-            'label' => 'Link Social',
-            'placeholder' => 'Collegamenti ai social media',
-            'help' => 'Link ai tuoi profili social media',
 <<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
+        ],
+        'social_links' => [
+            'label' => 'Link Social',
+            'placeholder' => 'Collegamenti ai social media',
+            'help' => 'Link ai tuoi profili social media',
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'language' => [
             'label' => 'Lingua',
@@ -270,44 +327,56 @@ return [
                 'es' => 'Spagnolo',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'timezone' => [
             'label' => 'Fuso Orario',
             'placeholder' => 'Seleziona il fuso orario',
             'help' => 'Fuso orario di riferimento',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'placeholder' => 'Data di registrazione',
             'help' => 'Data di registrazione dell\'account',
 <<<<<<< HEAD
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 60a2c9a9 (.)
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-            'placeholder' => 'Data ultima modifica',
-            'help' => 'Data dell\'ultimo aggiornamento del profilo',
 <<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+            'placeholder' => 'Data ultima modifica',
+            'help' => 'Data dell\'ultimo aggiornamento del profilo',
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
     ],
     'personal_info' => [
@@ -473,6 +542,7 @@ return [
         'no_changes' => 'Nessuna modifica da salvare',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'navigation' => [
         'label' => 'Missing Navigation Label',
@@ -484,4 +554,6 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

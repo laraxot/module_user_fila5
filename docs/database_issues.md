@@ -18,10 +18,13 @@
 
 **Related Documentation**:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Overview](../index.md)
 
 =======
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> laraxot/dev
 - [User Module Overview](../INDEX.md)
 - [Team Management](./TEAM_MANAGEMENT.md)
 - [BaseUser Model](./BaseUser.md)

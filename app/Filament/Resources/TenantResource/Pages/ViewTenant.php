@@ -5,6 +5,7 @@
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f548be94 (.)
@@ -13,10 +14,14 @@
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
 declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
@@ -36,12 +41,15 @@ use Filament\Infolists\Components\TextEntry;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\TenantResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewTenant extends XotBaseViewRecord
 {
     protected static string $resource = TenantResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -74,4 +82,6 @@ class ViewTenant extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
 }

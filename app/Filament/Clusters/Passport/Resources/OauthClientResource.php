@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
 use Filament\Actions\DeleteBulkAction;
+<<<<<<< HEAD
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
@@ -20,6 +21,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> laraxot/dev
 use Illuminate\Support\Str;
 use Laravel\Passport\Passport as LaravelPassport;
 use Modules\User\Filament\Clusters\Passport;
@@ -27,6 +33,7 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Pages\
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Pages\EditOauthClient;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Pages\ListOauthClients;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\Pages\ViewOauthClient;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\User\Models\OauthClient;
@@ -37,6 +44,9 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthClient;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Models\OauthClient;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Webmozart\Assert\Assert;
 
@@ -44,6 +54,7 @@ class OauthClientResource extends XotBaseResource
 {
     protected static ?string $cluster = Passport::class;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     // use HasResourceFormComponents;
 
@@ -74,6 +85,11 @@ class OauthClientResource extends XotBaseResource
     }
 
     /**
+=======
+    // use HasResourceFormComponents;
+
+    /**
+>>>>>>> laraxot/dev
      * Build the table for the resource.
      */
     public static function table(Table $table): Table
@@ -99,6 +115,7 @@ class OauthClientResource extends XotBaseResource
      * Get the model class for the resource from Passport.
      *
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return class-string<Model>
 =======
      * @return class-string<\Illuminate\Database\Eloquent\Model>
@@ -112,12 +129,18 @@ class OauthClientResource extends XotBaseResource
      * @return class-string<Model>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return class-string<Model>
+>>>>>>> laraxot/dev
      */
     public static function getModel(): string
     {
         $model = LaravelPassport::clientModel();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (! class_exists($model)) {
             return OauthClient::class;
         }
@@ -125,6 +148,7 @@ class OauthClientResource extends XotBaseResource
         Assert::subclassOf($model, Model::class);
 
         /* @var class-string<Model> $model */
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -149,6 +173,8 @@ class OauthClientResource extends XotBaseResource
         /* @var class-string<Model> $model */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         return $model;
     }
 
@@ -174,6 +200,7 @@ class OauthClientResource extends XotBaseResource
      * Get resource form components.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return array<int, never>
 =======
@@ -184,6 +211,10 @@ class OauthClientResource extends XotBaseResource
      * @return array<int, never>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+     * @return array<int, never>
+>>>>>>> laraxot/dev
      */
     protected static function getResourceFormComponents(): array
     {

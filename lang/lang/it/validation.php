@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * |--------------------------------------------------------------------------
      * | Messaggi di validazione
@@ -16,8 +19,11 @@ return [
      * |
      */
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     'accepted' => 'Il campo :attribute deve essere accettato.',
     'active_url' => 'Il campo :attribute non è un URL valido.',
     'after' => 'Il campo :attribute deve essere una data successiva a :date.',
@@ -135,6 +141,9 @@ return [
     'url' => 'Il formato del campo :attribute non è valido.',
     'uuid' => 'Il campo :attribute deve essere un UUID valido.',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * |--------------------------------------------------------------------------
      * | Personalizzazione degli attributi
@@ -149,6 +158,7 @@ return [
     'attributes' => [
         'data.password' => 'zu',
     ],
+<<<<<<< HEAD
 =======
     'attributes' => [
         'data.password' => 'zu',
@@ -167,4 +177,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

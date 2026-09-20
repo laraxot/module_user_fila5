@@ -6,16 +6,23 @@ namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\ExportBulkAction;
+<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
+=======
+>>>>>>> laraxot/dev
 use Filament\Tables\Filters\BaseFilter;
 use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Contracts\UserContract;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -52,11 +59,14 @@ use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Contracts\UserContract;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 class ListUsers extends BaseListUsers
 {
     protected static string $resource = UserResource::class;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     #[\Override]
@@ -117,6 +127,12 @@ class ListUsers extends BaseListUsers
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return array<BaseFilter>
+     */
+    #[\Override]
+>>>>>>> laraxot/dev
     public function getTableFilters(): array
     {
         return [
@@ -129,6 +145,7 @@ class ListUsers extends BaseListUsers
         ];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     #[\Override]
@@ -153,6 +170,11 @@ class ListUsers extends BaseListUsers
     {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+    public function getTableActions(): array
+    {
+>>>>>>> laraxot/dev
         return [
             'change_password' => ChangePasswordAction::make()->tooltip('Cambio Password')->iconButton(),
             ...parent::getTableActions(),
@@ -160,6 +182,7 @@ class ListUsers extends BaseListUsers
                 ->tooltip(__('filament-actions::delete.single.label'))
                 ->color('danger')
                 ->icon('heroicon-o-trash')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 ->action(static fn (UserContract $user) => $user->delete()),
@@ -182,12 +205,16 @@ class ListUsers extends BaseListUsers
                 ->action(static fn (UserContract $user) => $user->delete()),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                ->action(static fn (UserContract $user) => $user->delete()),
+>>>>>>> laraxot/dev
         ];
     }
 
     /**
      * @return array<string, BulkAction>
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     #[\Override]
@@ -200,6 +227,9 @@ class ListUsers extends BaseListUsers
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public function getTableBulkActions(): array
     {
         return [
@@ -209,9 +239,12 @@ class ListUsers extends BaseListUsers
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     #[\Override]
     protected function getHeaderWidgets(): array
@@ -221,9 +254,12 @@ class ListUsers extends BaseListUsers
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

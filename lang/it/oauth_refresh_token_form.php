@@ -11,5 +11,9 @@ return [
     ],
     'sections' => [
         'empty' => ['label' => 'empty', 'heading' => 'empty'],
+<<<<<<< HEAD
+=======
+        'Refresh Token OAuth' => ['label' => 'Refresh Token OAuth', 'heading' => 'Refresh Token OAuth'],
+>>>>>>> laraxot/dev
     ],
 ];

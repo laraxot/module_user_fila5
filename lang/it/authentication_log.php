@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'navigation' => ['label' => 'Authentication Logs', 'group' => 'Authentication', 'icon' => 'heroicon-o-shield-check', 'sort' => 5],
     'actions' => [
         'reorderRecords' => ['tooltip' => 'reorderRecords', 'icon' => 'reorderRecords', 'label' => 'reorderRecords'],
@@ -18,6 +21,7 @@ return [
         'openFilters' => ['label' => 'openFilters', 'icon' => 'openFilters', 'tooltip' => 'openFilters'],
         'resetFilters' => ['label' => 'resetFilters', 'icon' => 'resetFilters', 'tooltip' => 'resetFilters'],
         'applyTableColumnManager' => ['label' => 'applyTableColumnManager', 'icon' => 'applyTableColumnManager', 'tooltip' => 'applyTableColumnManager'],
+<<<<<<< HEAD
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
 =======
@@ -106,10 +110,15 @@ return [
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'resetColumnManager' => ['tooltip' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'label' => 'resetColumnManager'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+>>>>>>> laraxot/dev
     ],
     'label' => 'Authentication Log',
     'plural_label' => 'Authentication Log (Plurale)',
     'fields' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
@@ -176,6 +185,8 @@ return [
             'label' => 'location',
         ],
 =======
+=======
+>>>>>>> laraxot/dev
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -185,7 +196,11 @@ return [
         'login_at' => ['label' => 'login_at'],
         'logout_at' => ['label' => 'logout_at'],
         'location' => ['label' => 'location'],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+    ],
+>>>>>>> laraxot/dev
 ];

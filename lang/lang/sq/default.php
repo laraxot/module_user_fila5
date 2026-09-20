@@ -57,10 +57,14 @@ return [
             'not_enabled' => [
                 'title' => 'Nuk keni aktivizuar autentifikimin me dy faktorë.',
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'description' => "Kur aktivizohet autentifikimi me dy faktorë, do t'ju kërkohet një kod i sigurt dhe e rastësishme gjatë vërtetimit. Ju mund ta merrni këtë kod nga aplikacioni Google Authenticator në telefonin tuaj.",
 =======
                 'description' => 'Kur aktivizohet autentifikimi me dy faktorë, do t\'ju kërkohet një kod i sigurt dhe e rastësishme gjatë vërtetimit. Ju mund ta merrni këtë kod nga aplikacioni Google Authenticator në telefonin tuaj.',
 >>>>>>> 60a2c9a9 (.)
+=======
+                'description' => "Kur aktivizohet autentifikimi me dy faktorë, do t'ju kërkohet një kod i sigurt dhe e rastësishme gjatë vërtetimit. Ju mund ta merrni këtë kod nga aplikacioni Google Authenticator në telefonin tuaj.",
+>>>>>>> laraxot/dev
             ],
             'finish_enabling' => [
                 'title' => 'Përfundo aktivizimin e autentifikimit me dy faktorë.',
@@ -107,6 +111,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'avatar' => 'Avatar',
         'email' => 'Email',
         'login' => 'Identifikohu',
@@ -125,6 +132,7 @@ return [
     ],
     'or' => 'Ose',
     'cancel' => 'Anullo',
+<<<<<<< HEAD
 =======
         'avatar' => [
             'label' => 'Avatar',
@@ -231,4 +239,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

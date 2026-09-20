@@ -20,6 +20,7 @@ interface AddsTeamMembers
         string $email,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         ?string $role = null,
 =======
         null|string $role = null,
@@ -30,5 +31,8 @@ interface AddsTeamMembers
         ?string $role = null,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        ?string $role = null,
+>>>>>>> laraxot/dev
     ): void;
 }

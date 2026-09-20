@@ -7,11 +7,15 @@ return [
         'email' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'label' => 'Email address',
             'placeholder' => 'name@example.com',
             'helper_text' => 'Email used to register for online services',
             'tooltip' => 'Enter your account email',
             'description' => 'Email field for authentication',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -30,12 +34,17 @@ return [
             'description' => 'Email field for authentication',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Enter your password',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'helper_text' => '',
             'tooltip' => 'Account password',
             'description' => 'Password field for authentication',
@@ -60,6 +69,7 @@ return [
             'icon' => 'showPassword',
         ],
     ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -120,4 +130,6 @@ return [
     ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

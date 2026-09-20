@@ -7,11 +7,15 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\Feature;
 
 /**
  * @extends Factory<Feature>
  */
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\Feature;
@@ -29,12 +33,15 @@ use Modules\User\Models\Feature;
  */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 class FeatureFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var class-string<Model>
@@ -45,6 +52,8 @@ class FeatureFactory extends Factory
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $model = Feature::class;
 
@@ -53,12 +62,16 @@ class FeatureFactory extends Factory
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<string, mixed>
      */
     public function definition(): array
     {
         return [];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -81,5 +94,7 @@ class FeatureFactory extends Factory
         return [];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

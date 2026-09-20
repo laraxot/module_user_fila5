@@ -17,6 +17,7 @@ declare(strict_types=1);
     
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <form wire:submit="resetPassword">
 =======
     <x-filament-schemas::form wire:submit="resetPassword">
@@ -27,6 +28,9 @@ declare(strict_types=1);
     <form wire:submit="resetPassword">
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    <form wire:submit="resetPassword">
+>>>>>>> laraxot/dev
         {{ $this->form }}
         
         <x-filament::button type="submit" class="mt-4">
@@ -34,6 +38,7 @@ declare(strict_types=1);
         </x-filament::button>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     </form>
 =======
     </x-filament-schemas::form>
@@ -44,4 +49,7 @@ declare(strict_types=1);
     </form>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    </form>
+>>>>>>> laraxot/dev
 </x-filament-widgets::widget>

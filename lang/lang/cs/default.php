@@ -103,6 +103,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'avatar' => 'Avatar',
         'email' => 'Email',
         'login' => 'Přihlášení',
@@ -121,6 +124,7 @@ return [
     ],
     'or' => 'nebo',
     'cancel' => 'Zrušit',
+<<<<<<< HEAD
 =======
         'avatar' => [
             'label' => 'Avatar',
@@ -227,4 +231,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

@@ -16,6 +16,7 @@ name('errors.password-expired');
 //Expression "new class extends \Livewire\Volt\Component…" on a separate line does not do anything.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // @phpstan-ignore expr.resultUnused
 >>>>>>> f548be94 (.)
@@ -24,6 +25,8 @@ name('errors.password-expired');
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 new class() extends Component {};
 
 ?>

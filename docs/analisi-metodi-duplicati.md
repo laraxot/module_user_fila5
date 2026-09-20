@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Analisi Metodi Duplicati - Modulo User"
 type: concept
@@ -24,17 +27,21 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Analisi Metodi Duplicati - Modulo User
 
 ## Riferimento Principale
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 📚 **Documento Completo:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
 =======
 📚 **Documento Completo:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
@@ -45,6 +52,9 @@ related:
 📚 **Documento Completo:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+📚 **Documento Completo:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
+>>>>>>> laraxot/dev
 
 ## Stato del Modulo User
 
@@ -184,6 +194,7 @@ protected function registerObservers(): void
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
 =======
 - 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
@@ -194,6 +205,9 @@ protected function registerObservers(): void
 - 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
+>>>>>>> laraxot/dev
 - 📖 [Modulo Xot - Classi Base](../../xot/docs/analisi-metodi-duplicati.md)
 - 📖 [Architettura User](./core/architecture.md)
 - 📖 [Regole Business Logic](./business-logic-deep-dive.md)

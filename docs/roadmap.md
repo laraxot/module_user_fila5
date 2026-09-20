@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "User Module - Complete Roadmap 2026"
 type: concept
@@ -1029,6 +1030,8 @@ Diventare un identity provider completo (IdP) che supporta standard moderni come
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Product Roadmap - User Module"
 type: concept
@@ -1069,5 +1072,8 @@ Provide a secure, highly-scalable authentication and authorization system for th
 ## 📂 Backlog / Future Ideas
 - Passkey (WebAuthn) support.
 - Centralized Auth across multiple Laraxot instances.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

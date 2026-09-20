@@ -8,6 +8,9 @@
         "Modules\\User\\Providers\\UserServiceProvider",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         "Modules\\User\\Providers\\Filament\\AdminPanelProvider",
         "Modules\\User\\Providers\\PassportServiceProvider",
         "Modules\\User\\Providers\\SocialiteServiceProvider"
@@ -15,6 +18,7 @@
     "migration": {
         "seeds": [
             "Modules\\User\\Database\\Seeders\\RoleSeeder"
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -36,6 +40,8 @@
             "Modules\\User\\Database\\Seeders\\RoleSeeder"
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ]
     },
     "files": []

@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\DeviceResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\DeleteAction;
 use Modules\User\Filament\Resources\DeviceResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
@@ -25,6 +26,11 @@ use Modules\User\Filament\Resources\DeviceResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Filament\Actions\DeleteAction;
+use Modules\User\Filament\Resources\DeviceResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
+>>>>>>> laraxot/dev
 
 class EditDevice extends XotBaseEditRecord
 {
@@ -33,6 +39,7 @@ class EditDevice extends XotBaseEditRecord
     protected function getHeaderActions(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'delete' => DeleteAction::make(),
@@ -45,6 +52,9 @@ class EditDevice extends XotBaseEditRecord
             'delete' => DeleteAction::make(),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'delete' => DeleteAction::make(),
+>>>>>>> laraxot/dev
         ];
     }
 }

@@ -5,10 +5,17 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\ClientResource\Schemas;
 
 use Filament\Forms\Components\Field;
+<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Component as SchemaComponent;
 use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
+=======
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Toggle;
+use Filament\Schemas\Components\Component as SchemaComponent;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class OauthClientForm extends XotBaseResourceForm
@@ -17,17 +24,25 @@ class OauthClientForm extends XotBaseResourceForm
      * @return array<int|string, SchemaComponent>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> 87273113 (.)
+=======
+    public function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         $components = [
             'name' => TextInput::make('name')
                 ->unique('clients', 'name')
                 ->required()
                 ->maxLength(255),
+<<<<<<< HEAD
             'user_id' => XotBaseSelect::make('user_id')
+=======
+            'user_id' => Select::make('user_id')
+>>>>>>> laraxot/dev
                 ->relationship('user', 'name')
                 ->searchable()
                 ->required(),

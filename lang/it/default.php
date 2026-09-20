@@ -17,11 +17,15 @@ return [
         'heading' => 'Autenticazione a due fattori',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'description' => 'Conferma l\'accesso al tuo account inserendo il codice che trovi sulla tua app di autenticazione.',
         'code_placeholder' => 'XXX-XXX',
         'recovery' => [
             'heading' => 'Autenticazione a due fattori',
             'description' => 'Conferma l\'accesso al tuo account inserendo uno dei tuoi codice di emergenza.',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -41,6 +45,8 @@ return [
             'description' => 'Conferma l\'accesso al tuo account inserendo uno dei tuoi codice di emergenza.',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'recovery_code_placeholder' => 'abcdef-98765',
         'recovery_code_text' => 'Dispositivo smarrito?',
@@ -69,6 +75,7 @@ return [
         'title' => 'Verifica email',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'heading' => 'Necessaria verifica dell\'indirizzo Email',
 =======
         'heading' => "Necessaria verifica dell'indirizzo Email",
@@ -79,6 +86,9 @@ return [
         'heading' => 'Necessaria verifica dell\'indirizzo Email',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'heading' => 'Necessaria verifica dell\'indirizzo Email',
+>>>>>>> laraxot/dev
         'submit' => [
             'label' => 'Log out',
         ],
@@ -87,6 +97,7 @@ return [
         'before_proceeding' => 'Prima di procedere, controlla la tua casella di posta per verificare la tua email.',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'not_receive' => 'Se non hai ricevuto l\'email di verifica,',
 =======
         'not_receive' => "Se non hai ricevuto l'email di verifica,",
@@ -97,6 +108,9 @@ return [
         'not_receive' => 'Se non hai ricevuto l\'email di verifica,',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'not_receive' => 'Se non hai ricevuto l\'email di verifica,',
+>>>>>>> laraxot/dev
         'request_another' => 'clicca qui per richiederla di nuovo',
     ],
     'profile' => [
@@ -124,6 +138,7 @@ return [
             'title' => 'Autenticazione a due Fattori',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => 'Gestisci l\'autenticazione a due fattori per il tuo account (raccomandato].',
 =======
             'description' => "Gestisci l'autenticazione a due fattori per il tuo account (raccomandato).",
@@ -134,6 +149,9 @@ return [
             'description' => 'Gestisci l\'autenticazione a due fattori per il tuo account (raccomandato].',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'description' => 'Gestisci l\'autenticazione a due fattori per il tuo account (raccomandato].',
+>>>>>>> laraxot/dev
             'actions' => [
                 'enable' => 'Abilita',
                 'regenerate_codes' => 'Rigenera Codici',
@@ -146,6 +164,9 @@ return [
             'not_enabled' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 'title' => 'Non hai abilitato l\'autenticazione a due fattori.',
                 'description' => 'Quando l\'autenticazione a due fattori è attivata, durante l\'autenticazione, ti verrà richiesto un token casuale. Potrai recuperare questo toke tramite l\'app mobile di Google Authenticator',
             ],
@@ -158,6 +179,7 @@ return [
                 'title' => 'Hai abilitato l\'autenticazione a due fattori!',
                 'description' => 'L\'autenticazione a due fattori adesso è abilitata. Questo permette di rendere più sicuro il tuo account.',
                 'store_codes' => 'Salva questi codice di ripristino in un luogo sicuro. Possono essere utilizzati per ripristinare l\'accesso al tuo account se il dispositivo che utilizzi viene smarrito',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -191,6 +213,8 @@ return [
                 'store_codes' => 'Salva questi codice di ripristino in un luogo sicuro. Possono essere utilizzati per ripristinare l\'accesso al tuo account se il dispositivo che utilizzi viene smarrito',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             ],
             'disabling' => [
                 'notify' => 'L\'autenticazione a due fattori è stata disabilitata.',
@@ -207,6 +231,7 @@ return [
             'title' => 'Token API ',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => 'Gestisci i token API che permettono l\'accesso a questa applicazione a servizi di terze parti. NOTA: il tuo token viene mostrato dopo la creazione. Se perdi il token, dovrai cancellarlo e crearlo nuovamente.',
 =======
             'description' => "Gestisci i token API che permettono l'accesso a questa applicazione a servizi di terze parti. NOTA: il tuo token viene mostrato dopo la creazione. Se perdi il token, dovrai cancellarlo e crearlo nuovamente.",
@@ -217,6 +242,9 @@ return [
             'description' => 'Gestisci i token API che permettono l\'accesso a questa applicazione a servizi di terze parti. NOTA: il tuo token viene mostrato dopo la creazione. Se perdi il token, dovrai cancellarlo e crearlo nuovamente.',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'description' => 'Gestisci i token API che permettono l\'accesso a questa applicazione a servizi di terze parti. NOTA: il tuo token viene mostrato dopo la creazione. Se perdi il token, dovrai cancellarlo e crearlo nuovamente.',
+>>>>>>> laraxot/dev
             'create' => [
                 'notify' => 'Token creato correttamente!',
                 'message' => 'Il tuo token viene mostrato solo una volta. Se perdi il token, dovrai cancellarlo e crearne uno nuovo.',
@@ -239,6 +267,9 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -356,6 +387,7 @@ return [
             'label' => 'Elimina Default',
         ],
     ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -500,4 +532,6 @@ return [
     ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

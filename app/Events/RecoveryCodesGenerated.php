@@ -20,6 +20,7 @@ class RecoveryCodesGenerated
         public UserContract $userContract,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {
     }
 =======
@@ -32,4 +33,8 @@ class RecoveryCodesGenerated
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 }

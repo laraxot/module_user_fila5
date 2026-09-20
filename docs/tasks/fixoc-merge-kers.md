@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: fixoc-merge-kers
@@ -16,6 +19,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/fix-doc-merge-markers.md
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -62,3 +66,5 @@ related:
 See canonical documentation: ../../../../Themes/docs/shared-components/fix-doc-merge-markers.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

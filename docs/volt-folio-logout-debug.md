@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Debug: Perché logout.blade.php non funziona (Volt + Folio)
 
 ## Analisi del problema
@@ -151,6 +152,8 @@ Se vuoi mostrare una conferma, usa un pulsante con `wire:click="logout"` che ric
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: volt-folio-logout-debug
@@ -167,5 +170,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-debug.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

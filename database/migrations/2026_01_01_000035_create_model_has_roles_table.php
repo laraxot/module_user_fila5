@@ -12,6 +12,7 @@ use Modules\Xot\Datas\XotData;
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
 =======
@@ -24,6 +25,9 @@ return new class extends XotBaseMigration
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -45,6 +49,7 @@ return new class extends XotBaseMigration
             }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($this->getColumnType('model_id') === 'uuid') {
                 $table->string('model_id', 36)->index()->change();
             }
@@ -52,10 +57,13 @@ return new class extends XotBaseMigration
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             if ('uuid' === $this->getColumnType('model_id')) {
                 $table->string('model_id', 36)->index()->change();
             }
             if ('uuid' === $this->getColumnType('role_id')) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 60a2c9a9 (.)
 =======
@@ -66,6 +74,8 @@ return new class extends XotBaseMigration
             if ($this->getColumnType('role_id') === 'uuid') {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 $table->integer('role_id')->index()->change();
             }
             $this->updateTimestamps($table);

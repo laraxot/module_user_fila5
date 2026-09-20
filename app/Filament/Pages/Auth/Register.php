@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Pages\Auth;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\Auth\XotBaseRegister;
 
 class Register extends XotBaseRegister
@@ -20,6 +21,11 @@ use Modules\Xot\Filament\Pages\Auth\XotBaseRegister;
 class Register extends XotBaseRegister
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\Xot\Filament\Pages\Auth\XotBaseRegister;
+
+class Register extends XotBaseRegister
+>>>>>>> laraxot/dev
 {
     /* var view-string */
     // protected static string $view = 'filament-panels::pages.auth.register';

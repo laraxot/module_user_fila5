@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Gestione degli Errori nelle Blade di Autenticazione"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Gestione degli Errori nelle Blade di Autenticazione
 
 ## Introduzione
@@ -197,11 +203,15 @@ public function register()
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Documentazione Volt](./volt-logout.md)
 - [Best Practices Routing](./routing-best-practices.md)
 - [Struttura Directory](./directory-structure-checklist.md) 
 - [Documentazione Volt](./volt-logout-2.md)
 - [Best Practices Routing](./routing-best-practices-2.md)
+<<<<<<< HEAD
 - [Struttura Directory](./directory-structure-checklist.md) 
 =======
 - [Documentazione Volt](./VOLT_LOGOUT.md)
@@ -221,3 +231,6 @@ public function register()
 - [Struttura Directory](./directory-structure-checklist.md) 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Struttura Directory](./directory-structure-checklist.md) 
+>>>>>>> laraxot/dev

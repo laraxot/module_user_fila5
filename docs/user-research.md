@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: "User Module - User Research"
 module: user
 type: integration
@@ -97,6 +98,8 @@ Users want data control.
 
 *Last Updated: March 12, 2026*
 =======
+=======
+>>>>>>> laraxot/dev
 title: "User Research: User Module"
 type: concept
 tags: [user, research]
@@ -128,4 +131,7 @@ Identify common friction points in the registration and profile management flows
 ## ✅ Actionable Insights / Next Steps
 - Add tooltips to MFA setup.
 - Create a "Permission Audit" widget for the UserResource.
+<<<<<<< HEAD
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

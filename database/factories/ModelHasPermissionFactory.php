@@ -7,11 +7,15 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\ModelHasPermission;
 
 /**
  * @extends Factory<ModelHasPermission>
  */
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\ModelHasPermission;
@@ -29,12 +33,15 @@ use Modules\User\Models\ModelHasPermission;
  */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 class ModelHasPermissionFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var class-string<Model>
@@ -45,6 +52,8 @@ class ModelHasPermissionFactory extends Factory
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $model = ModelHasPermission::class;
 
@@ -52,6 +61,7 @@ class ModelHasPermissionFactory extends Factory
      * Define the model's default state.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      */
     /**
      * @return array<string, mixed>
@@ -68,6 +78,11 @@ class ModelHasPermissionFactory extends Factory
      * @return array<string, mixed>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     */
+    /**
+     * @return array<string, mixed>
+>>>>>>> laraxot/dev
      */
     public function definition(): array
     {

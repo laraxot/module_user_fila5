@@ -6,11 +6,15 @@ namespace Modules\User\Contracts;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 /**
  * Alias tipizzato verso il contratto utente cross-modulo (SSoT: Xot).
  */
 interface UserContract extends \Modules\Xot\Contracts\UserContract
 {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -135,4 +139,6 @@ interface UserContract extends \Modules\Xot\Contracts\UserContract
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

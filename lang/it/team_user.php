@@ -9,6 +9,7 @@ return [
         'label' => 'Utenti Team',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'group' => ['name' => 'Teams', 'description' => 'Gestione degli utenti associati ai team'],
 =======
 =======
@@ -24,6 +25,9 @@ return [
         'group' => ['name' => 'Teams', 'description' => 'Gestione degli utenti associati ai team'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'group' => ['name' => 'Teams', 'description' => 'Gestione degli utenti associati ai team'],
+>>>>>>> laraxot/dev
         'sort' => 65,
         'icon' => 'heroicon-o-user-group',
     ],
@@ -32,6 +36,9 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'id' => ['label' => 'Identificativo', 'tooltip' => 'Identificativo univoco del record', 'helper_text' => '', 'description' => ''],
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -45,6 +52,7 @@ return [
     ],
     'actions' => [
         'create' => ['label' => 'Crea Team User', 'icon' => 'create', 'tooltip' => 'create'],
+<<<<<<< HEAD
         'edit' => ['label' => 'Modifica Team User', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Team User', 'icon' => 'delete', 'tooltip' => 'delete'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
@@ -102,5 +110,23 @@ return [
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'edit' => ['label' => 'Modifica Team User'],
+        'delete' => ['label' => 'Elimina Team User', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'logout' => ['tooltip' => 'logout', 'icon' => 'logout', 'label' => 'logout'],
+        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'applyFilters' => ['label' => 'applyFilters', 'icon' => 'applyFilters', 'tooltip' => 'applyFilters'],
+        'openFilters' => ['label' => 'openFilters', 'icon' => 'openFilters', 'tooltip' => 'openFilters'],
+        'resetFilters' => ['label' => 'resetFilters', 'icon' => 'resetFilters', 'tooltip' => 'resetFilters'],
+        'applyTableColumnManager' => ['label' => 'applyTableColumnManager', 'icon' => 'applyTableColumnManager', 'tooltip' => 'applyTableColumnManager'],
+        'openColumnManager' => ['label' => 'openColumnManager', 'icon' => 'openColumnManager', 'tooltip' => 'openColumnManager'],
+        'resetColumnManager' => ['label' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'tooltip' => 'resetColumnManager'],
+        'reorderRecords' => ['label' => 'reorderRecords', 'icon' => 'reorderRecords', 'tooltip' => 'reorderRecords'],
+        'profile' => ['label' => 'profile', 'icon' => 'profile', 'tooltip' => 'profile'],
+    ],
+    'sections' => [
+        'empty' => ['label' => '', 'heading' => ''],
+>>>>>>> laraxot/dev
     ],
 ];

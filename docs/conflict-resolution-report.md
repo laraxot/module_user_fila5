@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Risoluzione dei Conflitti Git nel Modulo User"
 type: concept
@@ -24,17 +27,21 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Risoluzione dei Conflitti Git nel Modulo User
 
 ## Panoramica
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/documentation_philosophy.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/conflict_resolution.md).
 =======
 Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](/var/www/html/_bases/base_predict_fila3_mono/docs/DOCUMENTATION_PHILOSOPHY.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](/var/www/html/_bases/base_predict_fila3_mono/docs/CONFLICT_RESOLUTION.md).
@@ -45,6 +52,9 @@ Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni
 Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/documentation_philosophy.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/conflict_resolution.md).
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/documentation_philosophy.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/conflict_resolution.md).
+>>>>>>> laraxot/dev
 
 ## Conflitti Risolti
 
@@ -83,6 +93,7 @@ Abbiamo adottato la struttura migliorata della versione aurmich/dev, ma con le s
 #### Motivazione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa soluzione allinea il widget alle [best practices di Filament](modules/user/docs/filament_best_practices.md) e alle [regole di traduzione](docs/translations_rules.md) del progetto.
 =======
 Questa soluzione allinea il widget alle [best practices di Filament](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/User/docs/FILAMENT_BEST_PRACTICES.md) e alle [regole di traduzione](/var/www/html/_bases/base_predict_fila3_mono/docs/TRANSLATIONS_RULES.md) del progetto.
@@ -93,6 +104,9 @@ Questa soluzione allinea il widget alle [best practices di Filament](/var/www/ht
 Questa soluzione allinea il widget alle [best practices di Filament](modules/user/docs/filament_best_practices.md) e alle [regole di traduzione](docs/translations_rules.md) del progetto.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+Questa soluzione allinea il widget alle [best practices di Filament](modules/user/docs/filament_best_practices.md) e alle [regole di traduzione](docs/translations_rules.md) del progetto.
+>>>>>>> laraxot/dev
 
 ### 3. Dichiarazione strict_types
 
@@ -105,6 +119,7 @@ Abbiamo aggiunto o corretto la dichiarazione `declare(strict_types=1);` in tutti
 #### Motivazione
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa soluzione è conforme alle [regole di PHPStan livello 9](docs/phpstan/phpstan_livello9_linee_guida.md) e alle convenzioni del progetto.
 =======
 Questa soluzione è conforme alle [regole di PHPStan livello 9](/var/www/html/_bases/base_predict_fila3_mono/docs/phpstan/PHPSTAN_LIVELLO9_LINEE_GUIDA.md) e alle convenzioni del progetto.
@@ -115,6 +130,9 @@ Questa soluzione è conforme alle [regole di PHPStan livello 9](/var/www/html/_b
 Questa soluzione è conforme alle [regole di PHPStan livello 9](docs/phpstan/phpstan_livello9_linee_guida.md) e alle convenzioni del progetto.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+Questa soluzione è conforme alle [regole di PHPStan livello 9](docs/phpstan/phpstan_livello9_linee_guida.md) e alle convenzioni del progetto.
+>>>>>>> laraxot/dev
 
 ## Impatto delle Modifiche
 
@@ -128,6 +146,9 @@ Le modifiche apportate garantiscono:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Filosofia della Documentazione](docs/documentation_philosophy.md)
 - [Risoluzione dei Conflitti](docs/conflict_resolution.md)
 - [Best Practices Filament](modules/user/docs/filament_best_practices.md)
@@ -206,6 +227,7 @@ Le modifiche apportate garantiscono:
 - [PHPStan Livello 9](docs/phpstan/phpstan_livello9_linee_guida.md)
 - [Implementazione Login](modules/user/docs/auth-login-implementation.md)
 - [Implementazione Logout](modules/user/docs/auth-logout-implementation.md)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -300,3 +322,5 @@ Le modifiche apportate garantiscono:
 - [Implementazione Logout](modules/user/docs/auth-logout-implementation.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

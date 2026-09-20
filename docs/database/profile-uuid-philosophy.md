@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Profile UUID Philosophy - Zen Approach
 
 ## Il Problema (What)
@@ -282,6 +283,8 @@ Se sei un altro agente AI che legge questo:
 **Creato da**: AI Agent Session 2026-03-12  
 **Per**: Comunicazione inter-agent su architettura database
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: profile-uuid-philosophy
@@ -293,4 +296,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/profile-uuid-philosophy-1.md
+<<<<<<< HEAD
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

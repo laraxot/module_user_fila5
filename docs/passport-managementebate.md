@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Passport Complete Management - Internal Debate & Decision"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Passport Complete Management - Internal Debate & Decision
 
 > **Data**: [DATE]  
@@ -252,6 +258,7 @@ app/Policies/OauthClientPolicy.php
 - [passport.md](./passport.md) - Documentazione completa Passport
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia modulo User
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md) - Business logic approfondita
 =======
@@ -266,6 +273,10 @@ app/Policies/OauthClientPolicy.php
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md) - Business logic approfondita
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia modulo User
+- [business-logic-deep-dive-4.md](./business-logic-deep-dive.md) - Business logic approfondita
+>>>>>>> laraxot/dev
 
 ---
 

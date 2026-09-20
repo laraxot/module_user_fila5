@@ -14,6 +14,9 @@ require 'socialite.php';
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 try {
     if (class_exists(XotData::class)) {
         $xotData = XotData::make();
@@ -27,6 +30,7 @@ try {
     }
 } catch (Throwable $e) {
     Route::get('/login', static fn () => redirect('/admin/login'))->name('login');
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -53,10 +57,13 @@ try {
     Route::get('/login', static fn () => redirect('/admin/login'))->name('login');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }
 
 Route::post('/logout', LogoutController::class)->name('logout');
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 // Route::get('/upgrade', 'UpgradeController');
@@ -69,3 +76,6 @@ Route::post('/logout', LogoutController::class)->name('logout');
 // Route::get('/upgrade', 'UpgradeController');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+// Route::get('/upgrade', 'UpgradeController');
+>>>>>>> laraxot/dev

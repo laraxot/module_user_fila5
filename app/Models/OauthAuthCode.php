@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Builder;
 >>>>>>> f548be94 (.)
@@ -14,10 +15,13 @@ use Illuminate\Database\Eloquent\Builder;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Carbon;
 use Laravel\Passport\AuthCode as PassportAuthCode;
 
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property string           $id
@@ -62,6 +66,8 @@ use Laravel\Passport\AuthCode as PassportAuthCode;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  * @property string           $id
  * @property string           $user_id    (DC2Type:guid)
  * @property string           $client_id
@@ -80,12 +86,16 @@ use Laravel\Passport\AuthCode as PassportAuthCode;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAuthCode whereScopes($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthAuthCode whereUserId($value)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class OauthAuthCode extends PassportAuthCode
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected $connection = 'user';
@@ -103,4 +113,7 @@ class OauthAuthCode extends PassportAuthCode
     protected $connection = 'user';
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    protected $connection = 'user';
+>>>>>>> laraxot/dev
 }

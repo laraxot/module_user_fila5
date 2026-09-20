@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Generic User Moderation Strategy in User Module"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Generic User Moderation Strategy in User Module
 
 ## Overview
@@ -150,10 +156,14 @@ This document outlines a comprehensive strategy for implementing a generic moder
       protected static ?string $model = User::class;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
       public static function getFormSchema(): array
 =======
       public function getFormSchema(): array
 >>>>>>> 2024e2e7 (.)
+=======
+      public static function getFormSchema(): array
+>>>>>>> laraxot/dev
       {
           return [
               'type' => Forms\Components\TextInput::make('type')

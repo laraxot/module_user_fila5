@@ -6,10 +6,14 @@ namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -30,6 +34,8 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
 class DevicesRelationManager extends XotBaseRelationManager
@@ -38,10 +44,14 @@ class DevicesRelationManager extends XotBaseRelationManager
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<string, Component>
      */
     #[\Override]
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -67,6 +77,8 @@ class DevicesRelationManager extends XotBaseRelationManager
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
     {
         return [
@@ -76,6 +88,9 @@ class DevicesRelationManager extends XotBaseRelationManager
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<string, Column>
      */
@@ -92,6 +107,7 @@ class DevicesRelationManager extends XotBaseRelationManager
             'login_at' => TextColumn::make('login_at'),
             'logout_at' => TextColumn::make('logout_at'),
         ];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -127,5 +143,7 @@ class DevicesRelationManager extends XotBaseRelationManager
         ];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

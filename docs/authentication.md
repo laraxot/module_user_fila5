@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Autenticazione in <nome progetto>"
 type: concept
@@ -24,6 +27,7 @@ related:
 
 ## Panoramica
 Il sistema di autenticazione in <nome progetto> è basato su Laravel Volt e supporta sia l'autenticazione tradizionale che quella sociale.
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -61,6 +65,8 @@ related:
 Il sistema di autenticazione in <nome progetto> è basato su Laravel Volt e supporta sia l'autenticazione tradizionale che quella sociale.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 ## Configurazione
 
@@ -189,6 +195,7 @@ Route::middleware('guest')->group(function () {
 ### Logout con Volt e Folio
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/modules/user/project_docs/volt-folio-logout-error-3.md). 
 =======
 Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/modules/user/project_docs/volt_folio_logout_error.md). 
@@ -199,3 +206,6 @@ Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultar
 Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/modules/user/project_docs/volt-folio-logout-error-3.md). 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/modules/user/project_docs/volt-folio-logout-error-3.md). 
+>>>>>>> laraxot/dev

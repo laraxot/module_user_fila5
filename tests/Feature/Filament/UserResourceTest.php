@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\User\Tests\Feature\Filament;
 
 use Modules\User\Database\Factories\UserFactory;
@@ -554,6 +555,8 @@ describe('UserResource Security', function () {
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature\Filament;
 
 use Modules\User\Database\Factories\UserFactory;
@@ -629,7 +632,10 @@ describe('User Resource', function (): void {
     test('security covered by create user test', function (): void {
         /* @var TestCase $this */
         $this->skipTest('Security Livewire UserResource richiede panel admin completo — validazione coperta da CreateUserTest');
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     });
 });

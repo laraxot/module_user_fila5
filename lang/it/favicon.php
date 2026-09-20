@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 return [
     'navigation' => ['label' => 'Favicon', 'plural_label' => 'Favicon', 'group' => 'Aspetto', 'icon' => 'heroicon-o-photo', 'sort' => 5],
     'label' => 'Favicon',
@@ -22,6 +25,7 @@ return [
     ],
     'messages' => ['saved' => 'Favicon salvato con successo', 'reset' => 'Impostazioni reimpostate', 'uploaded' => 'Immagine caricata con successo', 'removed' => 'Immagine rimossa con successo', 'error' => 'Si è verificato un errore'],
     'validation' => ['background_color_invalid' => 'Il colore di sfondo non è valido', 'overlay_color_invalid' => 'Il colore overlay non è valido', 'overlay_opacity_invalid' => 'L\'opacità deve essere un numero tra 0 e 100', 'image_required' => 'L\'immagina è obbligatoria', 'image_invalid' => 'L\'immagina non è valida'],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -82,4 +86,6 @@ return [
     'validation' => ['background_color_invalid' => 'Il colore di sfondo non è valido', 'overlay_color_invalid' => 'Il colore overlay non è valido', 'overlay_opacity_invalid' => 'L\'opacità deve essere un numero tra 0 e 100', 'image_required' => 'L\'immagina è obbligatoria', 'image_invalid' => 'L\'immagina non è valida'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

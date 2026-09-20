@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Password Profilo',
         'plural_label' => 'Password Profilo',
@@ -35,6 +38,7 @@ return [
             'placeholder' => 'Conferma la tua nuova password',
             'helper_text' => 'Devi inserire la stessa password per conferma',
             'description' => 'Inserisci nuovamente la nuova password per confermarla',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -81,15 +85,20 @@ return [
             'description' => 'Inserisci nuovamente la nuova password per confermarla',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'icon' => 'heroicon-o-lock-closed',
             'color' => 'warning',
         ],
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'actions' => [
         'save' => [
             'label' => 'Salva Password',
@@ -110,9 +119,12 @@ return [
         'error' => 'Si è verificato un errore',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

@@ -294,10 +294,14 @@ e
 
 Questo pattern di correzione può essere applicato a:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Modulo ExternalProject**: Verificare QuestionChart, SurveyPdf, Contact
 =======
 - **Modulo Quaeris**: Verificare QuestionChart, SurveyPdf, Contact
 >>>>>>> 60a2c9a9 (.)
+=======
+- **Modulo ExternalProject**: Verificare QuestionChart, SurveyPdf, Contact
+>>>>>>> laraxot/dev
 - **Modulo Blog**: Verificare Post, Category, Tag
 - **Modulo Dental**: Verificare Visit, Treatment, Patient
 - **Tutti gli altri moduli**: Audit sistematico

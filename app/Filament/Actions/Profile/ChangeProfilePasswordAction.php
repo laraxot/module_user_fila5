@@ -10,6 +10,9 @@ namespace Modules\User\Filament\Actions\Profile;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Illuminate\Database\Eloquent\Model;
@@ -20,6 +23,7 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Actions\XotBaseAction;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -49,10 +53,13 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Actions\XotBaseAction;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * ---.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 final class ChangeProfilePasswordAction extends XotBaseAction
@@ -65,6 +72,9 @@ class ChangeProfilePasswordAction extends Action
 final class ChangeProfilePasswordAction extends XotBaseAction
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+final class ChangeProfilePasswordAction extends XotBaseAction
+>>>>>>> laraxot/dev
 {
     protected function setUp(): void
     {
@@ -76,6 +86,7 @@ final class ChangeProfilePasswordAction extends XotBaseAction
                 $user = $record->user;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 $profileData = Arr::except($record->toArray(), ['id']);
                 if (null === $user) {
 =======
@@ -92,10 +103,15 @@ final class ChangeProfilePasswordAction extends XotBaseAction
                 if (null === $user) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                $profileData = Arr::except($record->toArray(), ['id']);
+                if (null === $user) {
+>>>>>>> laraxot/dev
                     /** @var UserContract */
                     $user = XotData::make()->getUserByEmail($record->email);
                 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 if (null === $user) {
@@ -174,6 +190,8 @@ final class ChangeProfilePasswordAction extends XotBaseAction
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
                 if (null === $user) {
                     /** @var array<string, mixed> $profileData */
                     $user = $record->user()->create($profileData);
@@ -216,8 +234,11 @@ final class ChangeProfilePasswordAction extends XotBaseAction
     }
 
     public static function getDefaultName(): string
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     {
         return 'changePassword';
     }

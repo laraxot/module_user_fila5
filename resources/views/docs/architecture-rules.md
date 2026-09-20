@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: architecture-rules
@@ -7,6 +10,7 @@ canonical: ../../../../../Themes/docs/shared-components/architecture-rules-Modul
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/architecture-rules-Modules.md
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -38,3 +42,5 @@ canonical: ../../../../../Themes/docs/shared-components/architecture-rules-Modul
 See canonical documentation: ../../../../../Themes/docs/shared-components/architecture-rules-Modules.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

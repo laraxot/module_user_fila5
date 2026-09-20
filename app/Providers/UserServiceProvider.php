@@ -10,6 +10,9 @@ namespace Modules\User\Providers;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Auth\Notifications\ResetPassword;
 use Illuminate\Auth\Notifications\VerifyEmail;
 use Illuminate\Database\Eloquent\Model;
@@ -29,6 +32,7 @@ use Modules\User\Filament\Widgets\Auth\ResetPasswordWidget;
 use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Providers\XotBaseServiceProvider;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -81,6 +85,8 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 class UserServiceProvider extends XotBaseServiceProvider
@@ -88,6 +94,9 @@ class UserServiceProvider extends XotBaseServiceProvider
     public string $name = 'User';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     protected string $module_dir = __DIR__;
 
@@ -151,6 +160,7 @@ class UserServiceProvider extends XotBaseServiceProvider
                 Config::set("user.social-providers.{$provider}.client_secret", $clientSecret);
             }
         }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -252,6 +262,8 @@ class UserServiceProvider extends XotBaseServiceProvider
         }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     public function registerMailsNotification(): void
@@ -259,11 +271,15 @@ class UserServiceProvider extends XotBaseServiceProvider
         $app_name = config('app.name');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (! is_string($app_name)) {
             $app_name = '';
         }
 
         ResetPassword::toMailUsing(function (mixed $notifiable, string $token): SpatieEmail {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -283,6 +299,8 @@ class UserServiceProvider extends XotBaseServiceProvider
         ResetPassword::toMailUsing(function (mixed $notifiable, string $token): SpatieEmail {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             /*
              * return (new MailMessage)
              * ->template('user::notifications.email')
@@ -304,6 +322,9 @@ class UserServiceProvider extends XotBaseServiceProvider
             if (method_exists($notifiable, 'getEmailForPasswordReset')) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 $emailAddress = $notifiable->getEmailForPasswordReset();
                 if (is_string($emailAddress)) {
                     $email->to($emailAddress);
@@ -321,6 +342,7 @@ class UserServiceProvider extends XotBaseServiceProvider
                 // Fallback per debug
                 Log::error('SpatieEmail: Destinatario email non trovato', [
                     'notifiable_class' => $notifiable::class,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -354,6 +376,8 @@ class UserServiceProvider extends XotBaseServiceProvider
                     'notifiable_class' => $notifiable::class,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                     'notifiable_id' => $notifiable->id ?? 'unknown',
                 ]);
             }
@@ -376,6 +400,7 @@ class UserServiceProvider extends XotBaseServiceProvider
          */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         VerifyEmail::toMailUsing(function (mixed $notifiable, string $url): SpatieEmail {
 =======
         VerifyEmail::toMailUsing(function ($notifiable, string $url): SpatieEmail {
@@ -386,6 +411,9 @@ class UserServiceProvider extends XotBaseServiceProvider
         VerifyEmail::toMailUsing(function (mixed $notifiable, string $url): SpatieEmail {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        VerifyEmail::toMailUsing(function (mixed $notifiable, string $url): SpatieEmail {
+>>>>>>> laraxot/dev
             Assert::isInstanceOf($notifiable, Model::class);
             $email = new SpatieEmail($notifiable, 'verify-email');
             $email->mergeData([
@@ -394,6 +422,9 @@ class UserServiceProvider extends XotBaseServiceProvider
             if (method_exists($notifiable, 'getEmailForPasswordReset')) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 $emailAddress = $notifiable->getEmailForPasswordReset();
                 if (is_string($emailAddress)) {
                     $email->to($emailAddress);
@@ -409,6 +440,7 @@ class UserServiceProvider extends XotBaseServiceProvider
                 }
             }
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -437,6 +469,8 @@ class UserServiceProvider extends XotBaseServiceProvider
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             return $email;
         });
     }
@@ -446,6 +480,7 @@ class UserServiceProvider extends XotBaseServiceProvider
         Config::set('pulse.path', 'pulse/admin');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Gate::define('viewPulse', fn (UserContract $user): bool => $user->hasRole('super-admin'));
 =======
         Gate::define('viewPulse', fn(UserContract $user): bool => $user->hasRole('super-admin'));
@@ -456,6 +491,9 @@ class UserServiceProvider extends XotBaseServiceProvider
         Gate::define('viewPulse', fn (UserContract $user): bool => $user->hasRole('super-admin'));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        Gate::define('viewPulse', fn (UserContract $user): bool => $user->hasRole('super-admin'));
+>>>>>>> laraxot/dev
     }
 
     public function registerPasswordRules(): void
@@ -464,6 +502,7 @@ class UserServiceProvider extends XotBaseServiceProvider
             $pwd = PasswordData::make();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f548be94 (.)
@@ -472,12 +511,18 @@ class UserServiceProvider extends XotBaseServiceProvider
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
             return $pwd->getPasswordRule();
         });
     }
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * Registra i widget Livewire auth per le viste Blade/Folio.
      * In Livewire v4, resolveClassComponentClassName con namespace '::' cerca SOLO in classNamespaces
@@ -508,6 +553,7 @@ class UserServiceProvider extends XotBaseServiceProvider
     {
         // OAuth policies are handled by PassportServiceProvider
         // Register other policies here if needed
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -576,5 +622,7 @@ class UserServiceProvider extends XotBaseServiceProvider
         // Register other policies here if needed
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

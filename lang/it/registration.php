@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'navigation' => ['label' => 'Registrazione', 'group' => 'Gestione Utenti', 'icon' => 'heroicon-o-user-plus', 'sort' => 50],
     'pages' => [
         'registration' => ['title' => 'Registrazione Utente', 'subtitle' => 'Completa la registrazione seguendo tutti i passaggi', 'description' => 'Inserisci tutte le informazioni richieste per completare la tua registrazione'],
@@ -61,6 +64,7 @@ return [
         'next' => ['label' => 'Successivo', 'tooltip' => 'Procedi al passaggio successivo'],
         'save_draft' => ['label' => 'Salva Bozza', 'tooltip' => 'Salva i dati inseriti come bozza', 'success' => 'Bozza salvata con successo', 'error' => 'Errore durante il salvataggio della bozza'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -386,6 +390,8 @@ return [
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     ],
     'messages' => [
         'welcome' => 'Benvenuto nella procedura di registrazione',
@@ -396,11 +402,15 @@ return [
         'save_progress' => 'I tuoi progressi sono stati salvati automaticamente',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'errors' => ['general' => 'Si è verificato un errore durante la registrazione', 'email_exists' => 'Questo indirizzo email è già registrato', 'validation' => 'Alcuni campi contengono errori, controllali e riprova'],
         'success' => ['registration' => 'Registrazione completata con successo! Riceverai una email di conferma', 'step' => 'Passaggio completato correttamente'],
     ],
     'label' => 'Registration',
     'plural_label' => 'Registration (Plurale)',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -425,4 +435,6 @@ return [
     'plural_label' => 'Registration (Plurale)',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

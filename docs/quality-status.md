@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "User Module Quality Status"
 type: "quality-report"
@@ -227,6 +228,8 @@ After fixes:
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: quality-status
@@ -243,5 +246,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/quality-status.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

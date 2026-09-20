@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -33,10 +34,14 @@ use Filament\Forms\Components\Toggle;
 use Modules\User\Models\Device;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Models\Device;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class DeviceResource extends XotBaseResource
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected static ?string $model = Device::class;
@@ -114,4 +119,7 @@ class DeviceResource extends XotBaseResource
     
 
 >>>>>>> 2024e2e7 (.)
+=======
+    protected static ?string $model = Device::class;
+>>>>>>> laraxot/dev
 }

@@ -1,12 +1,16 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 module: theme
 topic: xotbasemigration_best_practices
 canonical: ../../../Themes/docs/shared-components/xotbasemigration-best-practices.mdc
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/xotbasemigration-best-practices.mdc
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -75,3 +79,5 @@ canonical: ../../../Themes/docs/shared-components/xotbasemigration-best-practice
 See canonical documentation: ../../../Themes/docs/shared-components/xotbasemigration-best-practices.mdc
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

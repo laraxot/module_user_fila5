@@ -11,11 +11,15 @@ return [
     'two_factor' => [
         'heading' => 'Authentification à deux facteurs',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'description' => "Veuillez confirmer l'accès à votre compte en saisissant le code d'authentification fourni par votre application d'authentification.",
         'code_placeholder' => 'XXX-XXX',
         'recovery' => [
             'heading' => 'Authentification à deux facteurs',
             'description' => "Veuillez confirmer l'accès à votre compte en entrant l'un de vos codes de récupération d'urgence.",
+<<<<<<< HEAD
 =======
         'description' => 'Veuillez confirmer l\'accès à votre compte en saisissant le code d\'authentification fourni par votre application d\'authentification.',
         'code_placeholder' => 'XXX-XXX',
@@ -23,6 +27,8 @@ return [
             'heading' => 'Authentification à deux facteurs',
             'description' => 'Veuillez confirmer l\'accès à votre compte en entrant l\'un de vos codes de récupération d\'urgence.',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'recovery_code_placeholder' => 'abcdef-98765',
         'recovery_code_text' => 'Appareil perdu ?',
@@ -53,10 +59,14 @@ return [
         '2fa' => [
             'title' => 'Authentification à deux facteurs',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'description' => "Gérez l'authentification à deux facteurs pour votre compte (recommandé).",
 =======
             'description' => 'Gérez l\'authentification à deux facteurs pour votre compte (recommandé).',
 >>>>>>> 60a2c9a9 (.)
+=======
+            'description' => "Gérez l'authentification à deux facteurs pour votre compte (recommandé).",
+>>>>>>> laraxot/dev
             'actions' => [
                 'enable' => 'Activer',
                 'regenerate_codes' => 'Régénérer les codes de récupération',
@@ -66,6 +76,9 @@ return [
             ],
             'setup_key' => 'Clé de configuration',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'must_enable' => "Vous devez activer l'authentification à deux facteurs pour utiliser cette application.",
             'not_enabled' => [
                 'title' => "Vous n'avez pas activé l'authentification à deux facteurs.",
@@ -83,6 +96,7 @@ return [
             ],
             'disabling' => [
                 'notify' => "L'authentification à deux facteurs a été désactivée.",
+<<<<<<< HEAD
 =======
             'must_enable' => 'Vous devez activer l\'authentification à deux facteurs pour utiliser cette application.',
             'not_enabled' => [
@@ -102,6 +116,8 @@ return [
             'disabling' => [
                 'notify' => 'L\'authentification à deux facteurs a été désactivée.',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
             ],
             'regenerate_codes' => [
                 'notify' => 'De nouveaux codes de récupération ont été générés.',
@@ -109,6 +125,9 @@ return [
             'confirmation' => [
                 'success_notification' => 'Code vérifié. Authentification à deux facteurs activée.',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 'invalid_code' => "Le code que vous avez saisi n'est pas valide.",
             ],
         ],
@@ -118,6 +137,7 @@ return [
             'create' => [
                 'notify' => 'Jeton créé avec succès !',
                 'message' => "Votre jeton ne sera visile qu'une seule fois après sa création. Si vous perdez votre rejetez, vous devrez le supprimer puis en créer un nouveau.",
+<<<<<<< HEAD
 =======
                 'invalid_code' => 'Le code que vous avez saisi n\'est pas valide.',
             ],
@@ -129,6 +149,8 @@ return [
                 'notify' => 'Jeton créé avec succès !',
                 'message' => 'Votre jeton ne sera visile qu\'une seule fois après sa création. Si vous perdez votre rejetez, vous devrez le supprimer puis en créer un nouveau.',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
                 'submit' => [
                     'label' => 'Créer',
                 ],
@@ -138,10 +160,14 @@ return [
             ],
             'copied' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'label' => "J'ai copié mon jeton",
 =======
                 'label' => 'J\'ai copié mon jeton',
 >>>>>>> 60a2c9a9 (.)
+=======
+                'label' => "J'ai copié mon jeton",
+>>>>>>> laraxot/dev
             ],
         ],
     ],
@@ -151,6 +177,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'avatar' => 'Avatar',
         'email' => 'E-mail',
         'login' => 'Identifiant',
@@ -170,6 +199,7 @@ return [
     'or' => 'Ou',
     'cancel' => 'Annuler',
     // //
+<<<<<<< HEAD
 =======
         'avatar' => [
             'label' => 'Avatar',
@@ -265,6 +295,8 @@ return [
     'or' => 'Ou',
     'cancel' => 'Annuler',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     'login' => [
         'username_or_email' => 'Identifiant ou E-mail',
         'forgot_password_link' => 'Mot de passe oublié ?',
@@ -272,16 +304,22 @@ return [
     ],
     'registration' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'title' => "S'inscrire",
         'heading' => 'Créer un nouveau compte',
         'submit' => [
             'label' => "S'inscrire",
+<<<<<<< HEAD
 =======
         'title' => 'S\'inscrire',
         'heading' => 'Créer un nouveau compte',
         'submit' => [
             'label' => 'S\'inscrire',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'notification_unique' => 'Un compte avec cet email existe déjà. Veuillez vous connecter.',
     ],
@@ -298,20 +336,28 @@ return [
     'verification' => [
         'title' => 'Vérifier les courriels',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'heading' => "Vérification de l'e-mail requise",
 =======
         'heading' => 'Vérification de l\'e-mail requise',
 >>>>>>> 60a2c9a9 (.)
+=======
+        'heading' => "Vérification de l'e-mail requise",
+>>>>>>> laraxot/dev
         'submit' => [
             'label' => 'Déconnexion',
         ],
         'notification_success' => 'Vérifiez votre boîte de réception pour les instructions !',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'notification_resend' => "L'e-mail de vérification a été renvoyé.",
         'before_proceeding' => 'Avant de continuer, veuillez vérifier votre e-mail pour un lien de vérification.',
         'not_receive' => "Si vous n'avez pas reçu l'e-mail,",
         'request_another' => 'Cliquez ici pour en demander un autre.',
     ],
+<<<<<<< HEAD
 =======
         'notification_resend' => 'L\'e-mail de vérification a été renvoyé.',
         'before_proceeding' => 'Avant de continuer, veuillez vérifier votre e-mail pour un lien de vérification.',
@@ -330,4 +376,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

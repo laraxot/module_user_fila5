@@ -6,10 +6,14 @@ namespace Modules\User\Filament\Widgets;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\View;
 use Illuminate\Contracts\Auth\Authenticatable;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -31,11 +35,14 @@ use Filament\Schemas\Components\View;
 use Illuminate\Contracts\Auth\Authenticatable;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
@@ -50,6 +57,9 @@ use Throwable;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+>>>>>>> laraxot/dev
 
 /**
  * Provides a widget for user logout functionality within Filament admin panels.
@@ -59,6 +69,9 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * @method void                     mount()          Initialize the widget and form state.
  * @method array<string, Component> getFormSchema()  Define the form schema for the logout confirmation.
  * @method void                     logout()         Handle the user logout process.
@@ -71,6 +84,7 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 class LogoutWidget extends XotBaseSchemaWidget
 {
     /**
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -116,6 +130,8 @@ class LogoutWidget extends XotBaseSchemaWidget
     /**
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      * Widget data array.
      *
      * CRITICAL: This property is managed by XotBaseWidget.
@@ -125,10 +141,14 @@ class LogoutWidget extends XotBaseSchemaWidget
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public ?array $data = [];
 
     /**
      * Indicates if the logout process is in progress.
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -148,11 +168,14 @@ class LogoutWidget extends XotBaseSchemaWidget
      * Indicates if the logout process is in progress.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     public bool $isLoggingOut = false;
 
     /**
      * Mount the widget and initialize the form.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -165,6 +188,8 @@ class LogoutWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     public function mount(): void
     {
@@ -181,10 +206,14 @@ class LogoutWidget extends XotBaseSchemaWidget
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
     {
         return [
             'message' => View::make('user::filament.widgets.auth.logout-message')->columnSpanFull(),
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -208,6 +237,8 @@ class LogoutWidget extends XotBaseSchemaWidget
             'message' => View::make('user::filament.widgets.auth.logout-message')->columnSpanFull(),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ];
     }
 
@@ -225,6 +256,7 @@ class LogoutWidget extends XotBaseSchemaWidget
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @throws \RuntimeException If the logout process fails
 =======
      * @return void
@@ -239,6 +271,9 @@ class LogoutWidget extends XotBaseSchemaWidget
      * @throws \RuntimeException If the logout process fails
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @throws \RuntimeException If the logout process fails
+>>>>>>> laraxot/dev
      */
     public function logout(): void
     {
@@ -249,6 +284,7 @@ class LogoutWidget extends XotBaseSchemaWidget
             $user = $this->getAuthenticatedUser();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (null === $user) {
                 $this->handleNoUserScenario();
 
@@ -265,6 +301,11 @@ class LogoutWidget extends XotBaseSchemaWidget
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            if (null === $user) {
+                $this->handleNoUserScenario();
+
+>>>>>>> laraxot/dev
                 return;
             }
 
@@ -275,6 +316,7 @@ class LogoutWidget extends XotBaseSchemaWidget
             $this->redirectAfterLogout();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         } catch (\Throwable $e) {
 =======
         } catch (Throwable $e) {
@@ -285,6 +327,9 @@ class LogoutWidget extends XotBaseSchemaWidget
         } catch (\Throwable $e) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        } catch (\Throwable $e) {
+>>>>>>> laraxot/dev
             $this->handleLogoutError($e);
         }
     }
@@ -296,6 +341,7 @@ class LogoutWidget extends XotBaseSchemaWidget
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     #[Override]
 >>>>>>> f548be94 (.)
@@ -304,6 +350,8 @@ class LogoutWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public function getFormActions(): array
     {
         return [
@@ -316,6 +364,7 @@ class LogoutWidget extends XotBaseSchemaWidget
      * Get the logout action configuration.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @return Action
@@ -326,6 +375,8 @@ class LogoutWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected function getLogoutAction(): Action
     {
@@ -341,6 +392,7 @@ class LogoutWidget extends XotBaseSchemaWidget
      * Get the cancel action configuration.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @return Action
@@ -351,6 +403,8 @@ class LogoutWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected function getCancelAction(): Action
     {
@@ -366,6 +420,7 @@ class LogoutWidget extends XotBaseSchemaWidget
      * Get localized home URL based on current locale.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @return string
@@ -376,12 +431,15 @@ class LogoutWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected function getLocalizedHomeUrl(): string
     {
         $locale = App::getLocale();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         return '/'.ltrim($locale, '/');
 =======
@@ -394,10 +452,15 @@ class LogoutWidget extends XotBaseSchemaWidget
         return '/'.ltrim($locale, '/');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+        return '/'.ltrim($locale, '/');
+>>>>>>> laraxot/dev
     }
 
     /**
      * Get the authenticated user instance.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      */
@@ -417,12 +480,17 @@ class LogoutWidget extends XotBaseSchemaWidget
     protected function getAuthenticatedUser(): ?Authenticatable
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     */
+    protected function getAuthenticatedUser(): ?Authenticatable
+>>>>>>> laraxot/dev
     {
         return Auth::user();
     }
 
     /**
      * Handle scenario when no user is authenticated.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -435,6 +503,8 @@ class LogoutWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected function handleNoUserScenario(): void
     {
@@ -446,6 +516,7 @@ class LogoutWidget extends XotBaseSchemaWidget
      * Dispatch pre-logout events.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @param Authenticatable $user
@@ -458,6 +529,8 @@ class LogoutWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected function dispatchPreLogoutEvent(Authenticatable $user): void
     {
@@ -468,6 +541,7 @@ class LogoutWidget extends XotBaseSchemaWidget
      * Perform the actual logout operations.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @return void
@@ -478,6 +552,8 @@ class LogoutWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected function performLogout(): void
     {
@@ -490,6 +566,7 @@ class LogoutWidget extends XotBaseSchemaWidget
      * Dispatch post-logout events.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @return void
@@ -500,6 +577,8 @@ class LogoutWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected function dispatchPostLogoutEvent(): void
     {
@@ -510,10 +589,14 @@ class LogoutWidget extends XotBaseSchemaWidget
      * Log successful logout operation.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     protected function logLogoutSuccess(Authenticatable $user): void
     {
         Log::debug('User logged out', [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -534,6 +617,8 @@ class LogoutWidget extends XotBaseSchemaWidget
         Log::debug('User logged out', [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'user_id' => $user->getAuthIdentifier(),
             'timestamp' => now()->toDateTimeString(),
         ]);
@@ -543,6 +628,7 @@ class LogoutWidget extends XotBaseSchemaWidget
      * Handle redirect after successful logout.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @return void
@@ -553,6 +639,8 @@ class LogoutWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected function redirectAfterLogout(): void
     {
@@ -561,6 +649,7 @@ class LogoutWidget extends XotBaseSchemaWidget
         $redirect->send();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         exit;
 =======
         exit();
@@ -571,6 +660,9 @@ class LogoutWidget extends XotBaseSchemaWidget
         exit;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        exit;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -578,12 +670,16 @@ class LogoutWidget extends XotBaseSchemaWidget
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @throws \RuntimeException
      */
     protected function handleLogoutError(\Throwable $e): void
     {
         Log::error('Logout error: '.$e->getMessage(), [
             'exception' => $e::class,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -608,6 +704,8 @@ class LogoutWidget extends XotBaseSchemaWidget
             'exception' => $e::class,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'trace' => $e->getTraceAsString(),
         ]);
 

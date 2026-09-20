@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Testing Rules & Strategy
 
 ## Strict Guidelines (Super Mucca / Laraxot)
@@ -150,6 +151,8 @@ I file di documentazione vanno nelle cartelle `docs/` dentro ogni modulo/tema.
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: testing-rules
@@ -166,5 +169,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/testing-rules-Modules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

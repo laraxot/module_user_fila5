@@ -11,7 +11,11 @@ use Modules\Xot\Datas\XotData;
 /*
  * Class CreateModelHasRolesTable.
  */
+<<<<<<< HEAD
 /**
+=======
+/*
+>>>>>>> laraxot/dev
  * Owner migration `User::model_has_roles` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: nessuna.
  */

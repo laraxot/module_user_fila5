@@ -14,6 +14,7 @@ return [
     'reset_password' => 'Clicca qui per reimpostare la tua password',
     'click_to_confirm' => 'Clicca qui per confermare il tuo account:',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'navigation' => [
         'label' => 'Missing Navigation Label',
@@ -29,4 +30,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

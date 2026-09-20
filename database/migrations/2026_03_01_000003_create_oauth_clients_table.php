@@ -30,10 +30,14 @@ return new class extends XotBaseMigration {
             }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             if (! $this->hasColumn('owner_id')) {
                 $table->nullableMorphs('owner');
             }
             if ($this->hasColumn('owner_id')) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -51,6 +55,8 @@ return new class extends XotBaseMigration {
             if ($this->hasColumn('owner_id')) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 $table->string('owner_id', 36)->nullable()->change();
             }
             if (! $this->hasColumn('name')) {

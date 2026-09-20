@@ -10,6 +10,7 @@ namespace Modules\User\Datas;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 =======
 >>>>>>> f548be94 (.)
@@ -18,6 +19,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> laraxot/dev
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
 use Spatie\LaravelData\Data;
@@ -38,6 +42,9 @@ class DeviceData extends Data
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public ?string $appVersion = null;
 
     // = 'X-App-Version';
@@ -59,7 +66,11 @@ class DeviceData extends Data
     {
         $headers = collect(request()->header())->mapWithKeys(
             /**
+<<<<<<< HEAD
              * @param  array<int, string|null>  $item
+=======
+             * @param array<int, string|null> $item
+>>>>>>> laraxot/dev
              */
             static function (array $item, string $key): array {
                 if (Str::startsWith($key, 'X-')) {
@@ -72,6 +83,7 @@ class DeviceData extends Data
                 return [$key => $item];
             }
         )->all();
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -144,6 +156,8 @@ class DeviceData extends Data
         )->all();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         return self::from($headers);
     }
@@ -157,6 +171,7 @@ class DeviceData extends Data
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null !== $this->synchronizationId) {
 =======
         if ($this->synchronizationId !== null) {
@@ -167,12 +182,16 @@ class DeviceData extends Data
         if (null !== $this->synchronizationId) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null !== $this->synchronizationId) {
+>>>>>>> laraxot/dev
             return $this->synchronizationId;
         }
 
         $synchronizationClass = config('morph_map.synchronization');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null === $synchronizationClass) {
 =======
         if ($synchronizationClass === null) {
@@ -183,6 +202,9 @@ class DeviceData extends Data
         if (null === $synchronizationClass) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null === $synchronizationClass) {
+>>>>>>> laraxot/dev
             $synchronizationClass = '\Modules\Egea\Models\Synchronization';
         }
 
@@ -191,6 +213,7 @@ class DeviceData extends Data
         // $synchronization = Synchronization::create([
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var class-string<Model> $synchronizationClass */
         /** @var Model $synchronization */
 =======
@@ -207,6 +230,10 @@ class DeviceData extends Data
         /** @var Model $synchronization */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        /** @var class-string<Model> $synchronizationClass */
+        /** @var Model $synchronization */
+>>>>>>> laraxot/dev
         $synchronization = $synchronizationClass::create([
             // $synchronization = Synchronization::create([
             'user_id' => auth()->id(),
@@ -219,11 +246,15 @@ class DeviceData extends Data
         ]);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         Assert::object($synchronization);
 
         $syncId = $synchronization->getAttribute('id');
         Assert::string($syncId, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
         $this->synchronizationId = $syncId;
+<<<<<<< HEAD
 =======
         Assert::string($synchronizationId = $synchronization->id, __FILE__ . ':' . __LINE__ . ' - ' . class_basename(__CLASS__));
         $this->synchronizationId = $synchronizationId;
@@ -239,6 +270,8 @@ class DeviceData extends Data
         $this->synchronizationId = $syncId;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         return $this->synchronizationId;
     }

@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'credentials_incorrect' => [
         'key' => 'user::messages.credentials_incorrect',
         'text' => 'Le credenziali inserite non sono corrette.',
@@ -314,6 +317,7 @@ return [
             'placeholder' => '',
         ],
     ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -677,4 +681,6 @@ return [
     ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

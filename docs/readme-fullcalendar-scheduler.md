@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # FullCalendar Scheduler Documentation - README
 
 ## 🎯 Obiettivo
@@ -512,6 +513,8 @@ Log::info('FullCalendar configured', [
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: readme-fullcalendar-scheduler
@@ -528,5 +531,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/readme-fullcalendar-scheduler.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

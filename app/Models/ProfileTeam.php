@@ -6,12 +6,16 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * ProfileTeam Model.
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -33,11 +37,14 @@ use Modules\Xot\Contracts\ProfileContract;
  * ProfileTeam Model.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  *
  * Represents the relationship between a profile and a team, including the user's role.
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property string               $id
@@ -67,6 +74,8 @@ use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  * @property string               $id
  * @property int                  $team_id
  * @property string|null          $user_id
@@ -78,8 +87,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property Carbon|null          $deleted_at
  * @property string|null          $deleted_by
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @method static Builder<static>|ProfileTeam newModelQuery()
  * @method static Builder<static>|ProfileTeam newQuery()
  * @method static Builder<static>|ProfileTeam query()
@@ -95,6 +107,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|ProfileTeam whereUserId($value)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property ProfileContract|null         $deleter
  * @property Team|null                    $team
  * @property User|null                    $user
@@ -111,6 +124,8 @@ use Modules\Xot\Contracts\ProfileContract;
 =======
  * @mixin IdeHelperProfileTeam
 =======
+=======
+>>>>>>> laraxot/dev
  *
  * @property ProfileContract|null         $deleter
  * @property Team|null                    $team
@@ -124,8 +139,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|ProfileTeam                         wherePermissions($value)
  * @method static Builder<static>|ProfileTeam                         whereProfileId($value)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class ProfileTeam extends TeamUser
@@ -134,6 +152,7 @@ class ProfileTeam extends TeamUser
      * The table associated with the model.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -144,6 +163,8 @@ class ProfileTeam extends TeamUser
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $table = 'profile_team';
 }

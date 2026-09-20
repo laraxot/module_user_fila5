@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "User vs Profile Models: Guida Completa"
 type: concept
@@ -24,17 +27,21 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # User vs Profile Models: Guida Completa
 
 ## Panoramica
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento analizza quando usare il modello **User** rispetto al modello **Profile** nel progetto <nome progetto>, basandosi su best practice di settore e architettura specifica del progetto.
 =======
 Questo documento analizza quando usare il modello **User** rispetto al modello **Profile** nel progetto LaravelPizza, basandosi su best practice di settore e architettura specifica del progetto.
@@ -45,6 +52,9 @@ Questo documento analizza quando usare il modello **User** rispetto al modello *
 Questo documento analizza quando usare il modello **User** rispetto al modello **Profile** nel progetto <nome progetto>, basandosi su best practice di settore e architettura specifica del progetto.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+Questo documento analizza quando usare il modello **User** rispetto al modello **Profile** nel progetto <nome progetto>, basandosi su best practice di settore e architettura specifica del progetto.
+>>>>>>> laraxot/dev
 
 ---
 
@@ -178,6 +188,7 @@ class Profile extends BaseProfile
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## 3. Analisi nel Contesto <nome progetto>
 =======
 ## 3. Analisi nel Contesto LaravelPizza
@@ -188,6 +199,9 @@ class Profile extends BaseProfile
 ## 3. Analisi nel Contesto <nome progetto>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+## 3. Analisi nel Contesto <nome progetto>
+>>>>>>> laraxot/dev
 
 ### 3.1 Architettura Attuale
 
@@ -195,6 +209,7 @@ class Profile extends BaseProfile
 ┌──────────────────────────────────────────────────────────────────┐
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 │                        <nome progetto>                              │
 =======
 │                        LARAVELPIZZA                              │
@@ -205,6 +220,9 @@ class Profile extends BaseProfile
 │                        <nome progetto>                              │
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+│                        <nome progetto>                              │
+>>>>>>> laraxot/dev
 ├──────────────────────────────────────────────────────────────────┤
 │                                                                   │
 │  ┌─────────────────┐         ┌─────────────────┐              │
@@ -252,6 +270,7 @@ CURRENT STATE:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Opzione A: Consolidare in User (Simple) - CONSIGLIATA PER <nome progetto>**
 
 Per un progetto community come <nome progetto> dove:
@@ -270,6 +289,11 @@ Per un progetto community come LaravelPizza dove:
 Per un progetto community come <nome progetto> dove:
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+**Opzione A: Consolidare in User (Simple) - CONSIGLIATA PER <nome progetto>**
+
+Per un progetto community come <nome progetto> dove:
+>>>>>>> laraxot/dev
 - Gli utenti sono principalmente "attendees" agli eventi
 - Non servono profili multipli
 - L'avatar è l'unico dato profilo essenziale
@@ -600,6 +624,7 @@ class User extends Authenticatable
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Documento generato per <nome progetto> - Progetto Community Laravel*
 =======
 *Documento generato per LaravelPizza - Progetto Community Laravel*
@@ -612,3 +637,6 @@ class User extends Authenticatable
 *Documento generato per <nome progetto> - Progetto Community Laravel*
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+*Documento generato per <nome progetto> - Progetto Community Laravel*
+>>>>>>> laraxot/dev

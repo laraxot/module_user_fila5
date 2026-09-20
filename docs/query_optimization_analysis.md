@@ -475,6 +475,7 @@ class UserServiceProvider extends ServiceProvider
 4. **Low** (Week 3): Implement background cleanup and monitoring
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This optimization plan will transform the User module from a performance bottleneck into a highly efficient authentication and authorization system.
 
 
@@ -488,3 +489,6 @@ Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, 
 =======
 This optimization plan will transform the User module from a performance bottleneck into a highly efficient authentication and authorization system.
 >>>>>>> 60a2c9a9 (.)
+=======
+This optimization plan will transform the User module from a performance bottleneck into a highly efficient authentication and authorization system.
+>>>>>>> laraxot/dev

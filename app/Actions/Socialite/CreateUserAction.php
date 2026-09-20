@@ -27,6 +27,7 @@ class CreateUserAction
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param string                $provider  The socialite provider name (e.g., 'github', 'google')
      * @param SocialiteUserContract $oauthUser The socialite user instance
      *
@@ -43,11 +44,17 @@ class CreateUserAction
      *
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @param string                $provider  The socialite provider name (e.g., 'github', 'google')
+     * @param SocialiteUserContract $oauthUser The socialite user instance
+     *
+>>>>>>> laraxot/dev
      * @return UserContract The created user instance
      */
     public function execute(string $provider, SocialiteUserContract $oauthUser): UserContract
     {
         // Resolve user attributes from the identity provider
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $userAttributes = app(GetUserModelAttributesFromSocialiteAction::class)->execute($provider, $oauthUser);
@@ -65,6 +72,9 @@ class CreateUserAction
         $userAttributes = app(GetUserModelAttributesFromSocialiteAction::class)->execute($provider, $oauthUser);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $userAttributes = app(GetUserModelAttributesFromSocialiteAction::class)->execute($provider, $oauthUser);
+>>>>>>> laraxot/dev
 
         // Get the user class from Xot configuration
         $userClass = XotData::make()->getUserClass();
@@ -73,6 +83,7 @@ class CreateUserAction
         $newlyCreatedUser = $userClass::create([
             'name' => $userAttributes->name,
             'first_name' => $userAttributes->name,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'last_name' => $userAttributes->lastName,
@@ -85,6 +96,9 @@ class CreateUserAction
             'last_name' => $userAttributes->lastName,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'last_name' => $userAttributes->lastName,
+>>>>>>> laraxot/dev
             'email' => $userAttributes->email,
         ]);
 
@@ -93,6 +107,7 @@ class CreateUserAction
         Assert::isInstanceOf($newlyCreatedUser, UserContract::class);
 
         // Assign default roles to the new user
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         app(SetDefaultRolesBySocialiteUserAction::class)->execute(
@@ -112,6 +127,10 @@ class CreateUserAction
             provider: $provider,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        app(SetDefaultRolesBySocialiteUserAction::class)->execute(
+            provider: $provider,
+>>>>>>> laraxot/dev
             userModel: $newlyCreatedUser,
             oauthUser: $oauthUser,
         );

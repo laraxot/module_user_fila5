@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Fix Primary Key Constraint - team_user Table"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Fix Primary Key Constraint - team_user Table
 
 ## Data
@@ -147,6 +153,7 @@ $this->tableCreate(static function (Blueprint $table): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Teams owner_id fix](./migration-teams-owner-id-fix.md)
 - [Migration Best Practices](../../xot/docs/migration-standards.md)
 - [Primary Key Rules](../../../../docs/development/migration_fixes_summary.md)
@@ -165,6 +172,11 @@ $this->tableCreate(static function (Blueprint $table): void {
 - [Primary Key Rules](../../../../docs/development/migration_fixes_summary.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Teams owner_id fix](./migration-teams-owner-id-fix.md)
+- [Migration Best Practices](../../xot/docs/migration-standards.md)
+- [Primary Key Rules](../../../../docs/development/migration_fixes_summary.md)
+>>>>>>> laraxot/dev
 
 ## Status
 
@@ -174,6 +186,7 @@ $this->tableCreate(static function (Blueprint $table): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: [DATE]*
 >>>>>>> 60a2c9a9 (.)
@@ -182,3 +195,5 @@ $this->tableCreate(static function (Blueprint $table): void {
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

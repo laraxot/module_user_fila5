@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return [
     'navigation' => ['label' => 'Feature', 'plural_label' => 'Features', 'group' => 'Gestione Utenti', 'icon' => 'heroicon-o-star', 'sort' => 75],
     'label' => 'Feature',
@@ -133,6 +134,8 @@ return [
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 return [
     'navigation' => ['label' => 'Feature', 'plural_label' => 'Features', 'group' => 'Gestione Utenti', 'icon' => 'heroicon-o-star', 'sort' => 75],
     'label' => 'Feature',
@@ -184,6 +187,7 @@ return [
             ],
         ],
         'logout' => ['label' => 'Logout', 'tooltip' => 'Disconnettiti', 'helper_text' => 'Esci dall\'account', 'description' => 'Azione di logout', 'icon' => 'heroicon-o-arrow-right-on-rectangle'],
+<<<<<<< HEAD
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
@@ -194,4 +198,12 @@ return [
     'messages' => ['created' => 'Feature creata con successo', 'updated' => 'Feature aggiornata con successo', 'deleted' => 'Feature eliminata con successo', 'imported' => 'Importazione completata', 'exported' => 'Esportazione completata'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+    ],
+    'messages' => ['created' => 'Feature creata con successo', 'updated' => 'Feature aggiornata con successo', 'deleted' => 'Feature eliminata con successo', 'imported' => 'Importazione completata', 'exported' => 'Esportazione completata'],
+>>>>>>> laraxot/dev
 ];

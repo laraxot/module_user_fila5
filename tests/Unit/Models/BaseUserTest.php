@@ -6,6 +6,7 @@ namespace Modules\User\Tests\Unit\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Modules\User\Models\BaseUser;
@@ -89,6 +90,8 @@ test('base user has authentication traits', function () {
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Notifications\Notifiable;
@@ -101,33 +104,56 @@ uses(TestCase::class);
 
 describe('Base User', function (): void {
     test('base user extends eloquent model', function (): void {
+<<<<<<< HEAD
         $baseUser = new TestBaseUser;
+=======
+        $baseUser = new TestBaseUser();
+>>>>>>> laraxot/dev
         Assert::assertInstanceOf(Model::class, $baseUser);
     });
 
     test('base user has correct table name', function (): void {
+<<<<<<< HEAD
         $baseUser = new TestBaseUser;
+=======
+        $baseUser = new TestBaseUser();
+>>>>>>> laraxot/dev
         Assert::assertSame('test_users', $baseUser->getTable());
     });
 
     test('base user can be instantiated', function (): void {
+<<<<<<< HEAD
         $baseUser = new TestBaseUser;
+=======
+        $baseUser = new TestBaseUser();
+>>>>>>> laraxot/dev
         Assert::assertInstanceOf(BaseUser::class, $baseUser);
     });
 
     test('base user has proper inheritance chain', function (): void {
+<<<<<<< HEAD
         $baseUser = new TestBaseUser;
+=======
+        $baseUser = new TestBaseUser();
+>>>>>>> laraxot/dev
         Assert::assertInstanceOf(BaseUser::class, $baseUser);
         Assert::assertInstanceOf(Model::class, $baseUser);
     });
 
     test('base user has authentication traits', function (): void {
+<<<<<<< HEAD
         $baseUser = new TestBaseUser;
+=======
+        $baseUser = new TestBaseUser();
+>>>>>>> laraxot/dev
         Assert::assertInstanceOf(User::class, $baseUser);
         $traits = \class_uses_recursive($baseUser);
 
         Assert::assertContains(Notifiable::class, $traits);
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

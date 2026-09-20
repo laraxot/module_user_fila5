@@ -10,6 +10,7 @@ namespace Modules\User\Actions\Socialite;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use InvalidArgumentException;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Models\SocialiteUser;
@@ -29,6 +30,10 @@ use ReflectionException;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Models\SocialiteUser;
 >>>>>>> f548be94 (.)
+=======
+use Laravel\Socialite\Contracts\User as SocialiteUserContract;
+use Modules\User\Models\SocialiteUser;
+>>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 
 class RetrieveSocialiteUserAction
@@ -38,6 +43,7 @@ class RetrieveSocialiteUserAction
     /**
      * Execute the action.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function execute(string $provider, SocialiteUserContract $user): ?SocialiteUser
@@ -59,6 +65,8 @@ class RetrieveSocialiteUserAction
 >>>>>>> f548be94 (.)
             throw new RuntimeException('L\'ID del provider deve essere una stringa o un intero');
 =======
+=======
+>>>>>>> laraxot/dev
     public function execute(string $provider, SocialiteUserContract $user): ?SocialiteUser
     {
         if (empty($provider)) {
@@ -68,7 +76,10 @@ class RetrieveSocialiteUserAction
         $providerId = $user->getId();
         if (! is_string($providerId) && ! is_int($providerId)) {
             throw new \RuntimeException('L\'ID del provider deve essere una stringa o un intero');
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
         }
 
         $res = SocialiteUser::query()
@@ -79,10 +90,14 @@ class RetrieveSocialiteUserAction
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (null === $res) {
             return null;
         }
 
+<<<<<<< HEAD
         $res->update([
             'token' => $this->extractToken($user),
         ]);
@@ -109,10 +124,13 @@ class RetrieveSocialiteUserAction
             return null;
         }
 
+=======
+>>>>>>> laraxot/dev
         // Accesso sicuro alla proprietà token in modo type-safe
         $token = '';
 
         // Utilizzo ReflectionClass per accedere in modo sicuro alle proprietà/metodi
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
         try {
 <<<<<<< HEAD
@@ -120,6 +138,10 @@ class RetrieveSocialiteUserAction
 =======
             $reflection = new \ReflectionClass($user);
 >>>>>>> 2024e2e7 (.)
+=======
+        try {
+            $reflection = new \ReflectionClass($user);
+>>>>>>> laraxot/dev
 
             // Prova prima i metodi standard
             if ($reflection->hasMethod('getToken')) {
@@ -147,15 +169,20 @@ class RetrieveSocialiteUserAction
                 $token = $user->token;
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
         } catch (ReflectionException $e) {
 =======
         } catch (\ReflectionException $e) {
 >>>>>>> 2024e2e7 (.)
+=======
+        } catch (\ReflectionException $e) {
+>>>>>>> laraxot/dev
             // Fallback silenzioso
         }
 
         if (empty($token)) {
             // Se non riusciamo a ottenere un token valido, utilizziamo un valore predefinito
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             $token = 'no_token_'.time();
@@ -171,11 +198,19 @@ class RetrieveSocialiteUserAction
 >>>>>>> 2024e2e7 (.)
         }
 
+=======
+            $token = 'no_token_'.time();
+        }
+
+>>>>>>> laraxot/dev
         $res->update([
             'token' => $token,
         ]);
 
         return $res;
+<<<<<<< HEAD
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

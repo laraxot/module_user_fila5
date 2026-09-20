@@ -6,12 +6,16 @@ namespace Modules\User\Database\Factories;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\SocialProvider;
 
 /**
  * @extends Factory<SocialProvider>
  */
+<<<<<<< HEAD
 =======
 use Modules\User\Models\SocialProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -30,6 +34,8 @@ use Modules\User\Models\SocialProvider;
  */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 class SocialProviderFactory extends Factory
 {
     /**
@@ -42,6 +48,7 @@ class SocialProviderFactory extends Factory
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
@@ -54,6 +61,11 @@ class SocialProviderFactory extends Factory
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> laraxot/dev
     public function definition(): array
     {
         return [];

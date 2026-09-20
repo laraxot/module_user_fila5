@@ -4,16 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\TeamPermission;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class TeamPermissionResource extends XotBaseResource
 {
     protected static ?string $model = TeamPermission::class;
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     /**
@@ -45,4 +49,6 @@ class TeamPermissionResource extends XotBaseResource
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
 }

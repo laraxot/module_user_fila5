@@ -11,6 +11,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
     /**
@@ -31,6 +32,11 @@ return new class extends XotBaseMigration
      * Esegue la migrazione.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+return new class extends XotBaseMigration {
+    /**
+     * Esegue la migrazione.
+>>>>>>> laraxot/dev
      */
     public function up(): void
     {
@@ -59,6 +65,9 @@ return new class extends XotBaseMigration
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             if (! $this->hasColumn('code')) {
                 $table->string('code', 36)->nullable()->index();
             }
@@ -68,6 +77,7 @@ return new class extends XotBaseMigration
             }
 
             $this->updateTimestamps($table, true);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -92,6 +102,8 @@ return new class extends XotBaseMigration
             $this->updateTimestamps($table, true);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         });
     }
 };

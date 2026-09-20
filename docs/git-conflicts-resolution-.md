@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
 type: concept
@@ -11,11 +14,14 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "git-conflicts-resolution- risoluzione conflitti git - modulo user (2025-01-27)"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -30,11 +36,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Conflitti Git - Modulo User (2025-01-27)
 
 ## Data
@@ -48,6 +57,7 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [README User](/laravel/modules/user/docs/readme.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 =======
@@ -62,6 +72,10 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
+- [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
+>>>>>>> laraxot/dev
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
 
 ## File Risolti
@@ -348,10 +362,14 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 ### **Documentazione Aggiornata:**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
 - [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -369,6 +387,8 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel
@@ -391,6 +411,7 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [README User](/laravel/modules/user/docs/readme.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 =======
@@ -405,6 +426,10 @@ Documentazione della risoluzione dei conflitti Git nel modulo User, inclusi i fi
 - [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Auth Components Best Practices](/laravel/modules/user/docs/auth-components-best-practices.md)
+- [Filament Widgets Structure](/laravel/modules/user/docs/widgets-structure-2.md)
+>>>>>>> laraxot/dev
 - [BaseUser Documentation](/laravel/modules/user/docs/baseuser.md)
 
 ## File Risolti
@@ -691,10 +716,14 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 ### **Documentazione Aggiornata:**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [widgets-structure-2.md](./widgets-structure-2.md) - Regole per widget structure
 - [widget-translation-rules.md](./widget-translation-rules.md) - Pattern traduzioni
 - [path-conventions-2.md](./path-conventions-2.md) - Convenzioni percorsi
 - [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -712,6 +741,8 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [volt-blade-implementation-3.md](./volt-blade-implementation-3.md) - View patterns
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 ### **Post-Risoluzione TODO:**
 - [ ] Verificare funzionamento widget in contesto Filament panel

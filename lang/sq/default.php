@@ -58,6 +58,7 @@ return [
                 'title' => 'Nuk keni aktivizuar autentifikimin me dy faktorë.',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'description' => 'Kur aktivizohet autentifikimi me dy faktorë, do t\'ju kërkohet një kod i sigurt dhe e rastësishme gjatë vërtetimit. Ju mund ta merrni këtë kod nga aplikacioni Google Authenticator në telefonin tuaj.',
 =======
                 'description' => "Kur aktivizohet autentifikimi me dy faktorë, do t'ju kërkohet një kod i sigurt dhe e rastësishme gjatë vërtetimit. Ju mund ta merrni këtë kod nga aplikacioni Google Authenticator në telefonin tuaj.",
@@ -68,6 +69,9 @@ return [
                 'description' => 'Kur aktivizohet autentifikimi me dy faktorë, do t\'ju kërkohet një kod i sigurt dhe e rastësishme gjatë vërtetimit. Ju mund ta merrni këtë kod nga aplikacioni Google Authenticator në telefonin tuaj.',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                'description' => 'Kur aktivizohet autentifikimi me dy faktorë, do t\'ju kërkohet një kod i sigurt dhe e rastësishme gjatë vërtetimit. Ju mund ta merrni këtë kod nga aplikacioni Google Authenticator në telefonin tuaj.',
+>>>>>>> laraxot/dev
             ],
             'finish_enabling' => [
                 'title' => 'Përfundo aktivizimin e autentifikimit me dy faktorë.',
@@ -115,6 +119,9 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -219,6 +226,7 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -350,4 +358,6 @@ return [
     ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

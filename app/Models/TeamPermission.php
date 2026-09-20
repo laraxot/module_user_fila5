@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
@@ -89,6 +90,8 @@ class TeamPermission extends Model
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
@@ -139,8 +142,11 @@ class TeamPermission extends BaseModel
 {
     /**
      * The database connection that should be used by the model.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $connection = 'user';
 
@@ -158,6 +164,7 @@ class TeamPermission extends BaseModel
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return BelongsTo<Team, $this>
 =======
      * Get the team that owns the permission.
@@ -168,6 +175,9 @@ class TeamPermission extends BaseModel
      * @return BelongsTo<Team, $this>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return BelongsTo<Team, $this>
+>>>>>>> laraxot/dev
      */
     public function team(): BelongsTo
     {
@@ -177,6 +187,7 @@ class TeamPermission extends BaseModel
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return BelongsTo<User, $this>
 =======
      * Get the user that owns the permission.
@@ -187,6 +198,9 @@ class TeamPermission extends BaseModel
      * @return BelongsTo<User, $this>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return BelongsTo<User, $this>
+>>>>>>> laraxot/dev
      */
     public function user(): BelongsTo
     {

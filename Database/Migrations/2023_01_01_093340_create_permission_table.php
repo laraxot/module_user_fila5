@@ -11,6 +11,7 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         /**
+<<<<<<< HEAD
          * @var array $tableNames
          */
         $tableNames = config('permission.table_names');
@@ -20,6 +21,17 @@ return new class extends XotBaseMigration {
         $columnNames = config('permission.column_names');
         /**
          * @var array $teams
+=======
+         * @var array<string, mixed> $tableNames
+         */
+        $tableNames = config('permission.table_names');
+        /**
+         * @var array<string, mixed> $columnNames
+         */
+        $columnNames = config('permission.column_names');
+        /**
+         * @var bool $teams
+>>>>>>> laraxot/dev
          */
         $teams = config('permission.teams');
 

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Analisi del File Logout.blade.php"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Analisi del File Logout.blade.php
 
 ## Analisi Attuale
@@ -251,6 +257,9 @@ $logout = function () {
 ## Collegamenti Correlati
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Documentazione Volt](./volt-blade-implementation.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session-management.md)
@@ -258,6 +267,7 @@ $logout = function () {
 - [Documentazione Volt](./volt-blade-implementation-3.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management-2.md)
+<<<<<<< HEAD
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
 =======
 =======
@@ -280,3 +290,6 @@ $logout = function () {
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Tema One Documentation](../../themes/one/docs/readme.md) 
+>>>>>>> laraxot/dev

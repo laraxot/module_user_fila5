@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Errore nel Logout con Volt e Folio
 
 ## Il Problema
@@ -173,6 +174,8 @@ use function Livewire\Volt\{state, mount};
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: volt-folio-logout-error
@@ -189,5 +192,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

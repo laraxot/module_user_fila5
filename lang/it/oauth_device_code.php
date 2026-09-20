@@ -13,7 +13,11 @@ return [
         'client_id' => ['label' => 'Client', 'tooltip' => 'Client OAuth', 'placeholder' => 'Seleziona il client', 'helper_text' => 'Client che ha richiesto l\'autorizzazione', 'description' => 'ID del client OAuth'],
         'scopes' => ['label' => 'Ambiti', 'tooltip' => 'Permessi richiesti', 'placeholder' => 'Ambiti', 'helper_text' => 'Ambiti di permesso richiesti', 'description' => 'Permessi associati'],
 <<<<<<< HEAD
+<<<<<<< HEAD
         'revoked' => ['label' => 'Revocato', 'tooltip' => 'Stato di revoca', 'helper_text' => 'Indica se il codice è stato revocato', 'description' => 'Stato di revoca', 'placeholder' => 'revoked'],
+=======
+        'revoked' => ['label' => 'Revocato', 'tooltip' => 'Stato di revoca', 'helper_text' => 'Indica se il codice è stato revocato', 'description' => 'Stato di revoca'],
+>>>>>>> laraxot/dev
         'user_approved_at' => ['label' => 'Approvato il', 'tooltip' => 'Data e ora di approvazione', 'placeholder' => 'Data approvazione', 'helper_text' => 'Quando l\'utente ha approvato il dispositivo', 'description' => 'Data approvazione'],
         'last_polled_at' => ['label' => 'Ultimo polling', 'tooltip' => 'Ultima richiesta di verifica', 'placeholder' => 'Data ultimo polling', 'helper_text' => 'Ultima volta che il client ha verificato lo stato', 'description' => 'Data ultimo polling'],
         'expires_at' => ['label' => 'Scade il', 'tooltip' => 'Data di scadenza', 'placeholder' => 'Seleziona la data', 'helper_text' => 'Data e ora di scadenza del codice', 'description' => 'Data di scadenza'],
@@ -25,6 +29,7 @@ return [
         'revoke' => ['label' => 'Revoca', 'tooltip' => 'Revoca il codice dispositivo', 'helper_text' => 'Revoca questo codice dispositivo', 'description' => 'Azione per revocare il codice', 'success' => 'Codice dispositivo revocato con successo', 'icon' => 'revoke'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+<<<<<<< HEAD
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
     ],
@@ -48,4 +53,8 @@ return [
     ],
     'messages' => ['revoked' => 'Codice dispositivo revocato con successo'],
 >>>>>>> 87273113 (.)
+=======
+    ],
+    'messages' => ['revoked' => 'Codice dispositivo revocato con successo'],
+>>>>>>> laraxot/dev
 ];

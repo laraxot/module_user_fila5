@@ -11,10 +11,14 @@ class ClientHeader extends XotBaseWidget
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public Client $client;
 
     protected string $view = 'user::filament.resources.client-resource.widgets.client-header';
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -32,6 +36,8 @@ class ClientHeader extends XotBaseWidget
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected int|string|array $columnSpan = 'full';
 
     public function mount(Client $record): void

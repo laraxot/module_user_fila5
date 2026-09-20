@@ -23,6 +23,7 @@ class RegistrationNotEnabled
         public SocialiteUserContract $oauthUser,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {
     }
 =======
@@ -35,4 +36,8 @@ class RegistrationNotEnabled
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 }

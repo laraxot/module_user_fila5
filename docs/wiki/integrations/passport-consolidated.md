@@ -622,10 +622,14 @@ class OauthClientResource extends XotBaseResource
      * @return array<string, Component>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> 87273113 (.)
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             // Schema components
@@ -2960,10 +2964,14 @@ final class OauthClientResource extends XotBaseResource
     // ❌ NON implementare table(), getPages() (gestiti da XotBaseResource)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> 87273113 (.)
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'oauth_client' => Section::make('OAuth Client Information')
@@ -3086,10 +3094,14 @@ class OauthClient extends PassportClient
 final class OauthClientResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array { /* ... */ }
 =======
     public function getFormSchema(): array { /* ... */ }
 >>>>>>> 87273113 (.)
+=======
+    public static function getFormSchema(): array { /* ... */ }
+>>>>>>> laraxot/dev
 }
 ```
 

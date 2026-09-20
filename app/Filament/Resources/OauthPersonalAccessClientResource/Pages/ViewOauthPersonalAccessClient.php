@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\OauthPersonalAccessClientResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
@@ -18,6 +19,9 @@ use Modules\User\Filament\Resources\OauthPersonalAccessClientResource;
 use Modules\User\Filament\Resources\OauthPersonalAccessClientResource;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Filament\Resources\OauthPersonalAccessClientResource;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 /**
@@ -25,6 +29,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
  */
 class ViewOauthPersonalAccessClient extends XotBaseViewRecord
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected static string $resource = OauthPersonalAccessClientResource::class;
@@ -52,4 +57,7 @@ class ViewOauthPersonalAccessClient extends XotBaseViewRecord
 =======
     protected static string $resource = OauthPersonalAccessClientResource::class;
 >>>>>>> 2024e2e7 (.)
+=======
+    protected static string $resource = OauthPersonalAccessClientResource::class;
+>>>>>>> laraxot/dev
 }

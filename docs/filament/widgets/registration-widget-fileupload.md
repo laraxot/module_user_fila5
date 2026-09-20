@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: registration-widget-fileupload
@@ -12,6 +15,7 @@ related:
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/registration-widget-fileupload-fix-Modules.md
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -178,3 +182,5 @@ related:
 See canonical documentation: ../../../../../Themes/docs/shared-components/registration-widget-fileupload-fix-Modules.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

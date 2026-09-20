@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Database\Eloquent\Collection;
@@ -18,7 +21,31 @@ use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+
+/**
+ * Nome della connessione su cui vive il model Profile.
+ *
+ * I moduli sono condivisi fra progetti: il nome della connessione lo dichiara il model,
+ * non il test. Cablarlo qui rende il test verde in un progetto e cieco in tutti gli altri
+ * — `Schema::connection('<nome di un altro progetto>')` non esiste e il ramo non gira mai.
+ */
+function profileConnectionName(): string
+{
+    $profileClass = \Modules\Xot\Datas\XotData::make()->getProfileClass();
+    $connection = (new $profileClass())->getConnectionName();
+
+    if (is_string($connection) && '' !== $connection) {
+        return $connection;
+    }
+
+    $default = config('database.default');
+
+    return is_string($default) ? $default : 'sqlite';
+}
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 
@@ -92,12 +119,21 @@ describe('User Business Logic', function (): void {
 
     test('enforces age restrictions for certain operations', function (): void {
         /* @var TestCase $this */
+<<<<<<< HEAD
         if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
             $this->skipTest('profiles.uuid column missing — Profile model requires uuid.');
         }
 
         if (! Schema::connection('fixcity')->hasColumn('profiles', 'birth_date')) {
             $this->skipTest('profiles.birth_date column missing on fixcity connection.');
+=======
+        if (! Schema::connection(profileConnectionName())->hasColumn('profiles', 'uuid')) {
+            $this->skipTest('profiles.uuid column missing — Profile model requires uuid.');
+        }
+
+        if (! Schema::connection(profileConnectionName())->hasColumn('profiles', 'birth_date')) {
+            $this->skipTest('profiles.birth_date column missing on the profile connection.');
+>>>>>>> laraxot/dev
         }
 
         $underageBirthDate = now()->subYears(16)->toDateString();
@@ -228,7 +264,11 @@ describe('User Business Logic', function (): void {
 
     test('enforces referential integrity for user relationships', function (): void {
         /* @var TestCase $this */
+<<<<<<< HEAD
         if (! Schema::connection('fixcity')->hasColumn('profiles', 'uuid')) {
+=======
+        if (! Schema::connection(profileConnectionName())->hasColumn('profiles', 'uuid')) {
+>>>>>>> laraxot/dev
             $this->skipTest('profiles.uuid column missing — Profile model requires uuid.');
         }
 
@@ -327,6 +367,7 @@ describe('User Business Logic', function (): void {
         $user->refresh();
 
         Assert::assertTrue($user->updated_at?->greaterThan($staleTimestamp) ?? false);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1004,5 +1045,7 @@ describe('User Business Logic', function (): void {
         Assert::assertTrue($user->updated_at?->greaterThan($staleTimestamp) ?? false);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     });
 });

@@ -7,6 +7,7 @@ namespace Modules\User\Filament\Pages\Tenancy;
 use Filament\Forms\Components\TextInput;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\Tenancy\XotBaseEditTenantProfile;
 
 class EditTeamProfile extends XotBaseEditTenantProfile
@@ -26,12 +27,18 @@ use Modules\Xot\Filament\Pages\Tenancy\XotBaseEditTenantProfile;
 class EditTeamProfile extends XotBaseEditTenantProfile
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\Xot\Filament\Pages\Tenancy\XotBaseEditTenantProfile;
+
+class EditTeamProfile extends XotBaseEditTenantProfile
+>>>>>>> laraxot/dev
 {
     public static function getLabel(): string
     {
         return 'Team profile';
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     /**
@@ -46,6 +53,11 @@ class EditTeamProfile extends XotBaseEditTenantProfile
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return array<int, TextInput>
+     */
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
     {
         return [

@@ -16,6 +16,7 @@ class TenantPolicy extends UserBasePolicy
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // return $user->hasPermissionTo('tenant.view.any');
         return false;
 =======
@@ -28,6 +29,10 @@ class TenantPolicy extends UserBasePolicy
         return false;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        // return $user->hasPermissionTo('tenant.view.any');
+        return false;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -35,6 +40,7 @@ class TenantPolicy extends UserBasePolicy
      */
     public function view(UserContract $user, Tenant $tenant): bool
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         return $user->hasPermissionTo('tenant.view')
@@ -57,6 +63,11 @@ class TenantPolicy extends UserBasePolicy
             || $user->hasRole('super-admin');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return $user->hasPermissionTo('tenant.view')
+            || $user->tenants->contains($tenant->id)
+            || $user->hasRole('super-admin');
+>>>>>>> laraxot/dev
     }
 
     /**

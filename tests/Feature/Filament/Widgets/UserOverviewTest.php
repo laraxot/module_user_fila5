@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature\Filament\Widgets;
 
 use Filament\Widgets\Widget;
@@ -14,6 +17,7 @@ use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -36,10 +40,13 @@ use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     /* @var TestCase $this */
@@ -196,6 +203,10 @@ test('user overview widget view path is correct', function (): void {
 =======
     /* @var TestCase $this */
     $this->widget = new UserOverview;
+=======
+    /* @var TestCase $this */
+    $this->widget = new UserOverview();
+>>>>>>> laraxot/dev
     TestCase::$user = UserFactory::new()->createOne([
         'type' => UserType::MasterAdmin,
         'email' => 'admin-'.Str::lower(Str::random(10)).'@example.com',
@@ -276,6 +287,9 @@ describe('User Overview', function (): void {
         Assert::assertStringContainsString('user::', $viewPath);
         Assert::assertStringContainsString('widgets.user-overview', $viewPath);
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

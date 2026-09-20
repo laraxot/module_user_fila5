@@ -6,6 +6,9 @@ namespace Modules\User\Models\Traits;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Modules\User\Models\Role;
@@ -13,6 +16,7 @@ use Spatie\Permission\Traits\HasRoles as SpatieHasRoles;
 use Webmozart\Assert\Assert;
 
 /** @phpstan-ignore trait.unused */
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -34,6 +38,8 @@ use Webmozart\Assert\Assert;
 /** @phpstan-ignore trait.unused */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 trait HasRoles
 {
     use SpatieHasRoles;
@@ -42,6 +48,9 @@ trait HasRoles
      * A user may have multiple roles.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @return BelongsToMany<Role, $this, Pivot, 'pivot'>
      */
@@ -50,6 +59,7 @@ trait HasRoles
         Assert::string($pivotTable = config('permission.table_names.model_has_roles'));
 
         return $this->belongsToManyX(Role::class, $pivotTable, 'model_id', 'role_id')->where(
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -71,10 +81,13 @@ trait HasRoles
         return $this->belongsToManyX(Role::class, $pivotTable, 'model_id', 'role_id')->where(
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'model_type',
             self::class,
         );
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -114,4 +127,6 @@ trait HasRoles
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

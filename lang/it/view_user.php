@@ -2,6 +2,9 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 declare(strict_types=1);
 
 return [
@@ -58,6 +61,7 @@ return [
     'label' => 'View User',
     'plural_label' => 'View User (Plurale)',
 ];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -172,3 +176,5 @@ return [
 ];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

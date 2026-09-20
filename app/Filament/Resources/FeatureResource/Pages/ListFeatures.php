@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\FeatureResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -23,12 +24,15 @@ use Filament\Tables\Actions\ViewAction;
 >>>>>>> 87273113 (.)
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\FeatureResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListFeatures extends XotBaseListRecords
 {
     protected static string $resource = FeatureResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, Column>
@@ -54,4 +58,6 @@ class ListFeatures extends XotBaseListRecords
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
         ];
     }
+=======
+>>>>>>> laraxot/dev
 }

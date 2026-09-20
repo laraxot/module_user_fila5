@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\TeamPermission;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
@@ -33,6 +34,13 @@ return new class extends XotBaseMigration
     protected ?string $model_class = TeamPermission::class;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Models\TeamPermission;
+use Modules\Xot\Database\Migrations\XotBaseMigration;
+
+return new class extends XotBaseMigration {
+    protected ?string $model_class = TeamPermission::class;
+>>>>>>> laraxot/dev
 
     /**
      * Esegue la migrazione.
@@ -61,6 +69,7 @@ return new class extends XotBaseMigration
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
 =======
 =======
@@ -76,6 +85,9 @@ return new class extends XotBaseMigration
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            $this->updateTimestamps(table: $table, hasSoftDeletes: true);
+>>>>>>> laraxot/dev
         });
     }
 };

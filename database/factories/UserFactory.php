@@ -7,6 +7,9 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Modules\User\Models\User;
@@ -22,6 +25,7 @@ class UserFactory extends Factory
      * @return array<string, mixed>
      */
     /**
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -62,6 +66,8 @@ class UserFactory extends Factory
     /**
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     public function definition(): array
@@ -69,6 +75,9 @@ class UserFactory extends Factory
         return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'id' => (string) Str::uuid(),
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
@@ -85,6 +94,7 @@ class UserFactory extends Factory
     public function active(): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -130,10 +140,13 @@ class UserFactory extends Factory
         return $this->state(fn (): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'is_active' => true,
         ]);
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function inactive(): static
@@ -157,12 +170,20 @@ class UserFactory extends Factory
         return $this->state(fn (): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function inactive(): static
+    {
+        return $this->state(fn (): array => [
+>>>>>>> laraxot/dev
             'is_active' => false,
         ]);
     }
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function verified(): static
     {
         return $this->state(fn (): array => [
@@ -173,6 +194,7 @@ class UserFactory extends Factory
     public function unverified(): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -198,6 +220,8 @@ class UserFactory extends Factory
         return $this->state(fn (): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'email_verified_at' => null,
         ]);
     }

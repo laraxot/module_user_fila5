@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 uses(Modules\User\Tests\TestCase::class);
 
@@ -14,6 +15,8 @@ uses(Modules\User\Tests\TestCase::class);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Actions\Otp\SendOtpByUserAction;
 use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Actions\Socialite\CreateUserAction;
@@ -24,6 +27,9 @@ use Modules\User\Actions\User\DeleteUserAction;
 use Modules\User\Actions\User\UpdateUserAction;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -35,6 +41,7 @@ test('RegisterSocialiteUserAction can be instantiated', function () {
         Assert::assertInstanceOf(RegisterSocialiteUserAction::class, $action);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -64,17 +71,23 @@ test('RegisterSocialiteUserAction can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
 test('LoginUserAction can be instantiated', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     try {
         $action = app(LoginUserAction::class);
         Assert::assertInstanceOf(LoginUserAction::class, $action);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -96,17 +109,23 @@ test('LoginUserAction can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
 test('CreateUserAction can be instantiated', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     try {
         $action = app(CreateUserAction::class);
         Assert::assertInstanceOf(CreateUserAction::class, $action);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -128,12 +147,17 @@ test('CreateUserAction can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
 test('IsUserAllowedAction can be instantiated', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     $action = app(IsUserAllowedAction::class);
     Assert::assertInstanceOf(IsUserAllowedAction::class, $action);
 });
@@ -144,6 +168,7 @@ test('DeleteUserAction can be instantiated', function () {
         Assert::assertInstanceOf(DeleteUserAction::class, $action);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -181,17 +206,23 @@ test('DeleteUserAction can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
 test('UpdateUserAction can be instantiated', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     try {
         $action = app(UpdateUserAction::class);
         Assert::assertInstanceOf(UpdateUserAction::class, $action);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -213,17 +244,23 @@ test('UpdateUserAction can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
 test('SendOtpByUserAction can be instantiated', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     try {
         $action = app(SendOtpByUserAction::class);
         Assert::assertInstanceOf(SendOtpByUserAction::class, $action);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -245,17 +282,23 @@ test('SendOtpByUserAction can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
 test('RevokeTokenAction can be instantiated', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     try {
         $action = app(RevokeTokenAction::class);
         Assert::assertInstanceOf(RevokeTokenAction::class, $action);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -277,5 +320,7 @@ test('RevokeTokenAction can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });

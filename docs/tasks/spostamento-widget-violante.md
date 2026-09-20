@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Task: Spostamento Widget Violante"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Task: Spostamento Widget Violante
 
 **Modulo**: User  
@@ -40,6 +46,7 @@ related:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Spostare `UserTypeRegistrationsChartWidget` dal modulo User al modulo appropriato (es. ExternalProject). User non può dipendere da moduli business specifici.
 =======
 Spostare `UserTypeRegistrationsChartWidget` dal modulo User al modulo appropriato (es. Quaeris). User non può dipendere da moduli business specifici.
@@ -50,12 +57,16 @@ Spostare `UserTypeRegistrationsChartWidget` dal modulo User al modulo appropriat
 Spostare `UserTypeRegistrationsChartWidget` dal modulo User al modulo appropriato (es. ExternalProject). User non può dipendere da moduli business specifici.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+Spostare `UserTypeRegistrationsChartWidget` dal modulo User al modulo appropriato (es. ExternalProject). User non può dipendere da moduli business specifici.
+>>>>>>> laraxot/dev
 
 ## Sottotask
 
 - [ ] Identificare widget `UserTypeRegistrationsChartWidget` e sue dipendenze
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [ ] Analizzare dove collocarlo (ExternalProject o altro modulo)
 =======
 - [ ] Analizzare dove collocarlo (Quaeris o altro modulo)
@@ -66,6 +77,9 @@ Spostare `UserTypeRegistrationsChartWidget` dal modulo User al modulo appropriat
 - [ ] Analizzare dove collocarlo (ExternalProject o altro modulo)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [ ] Analizzare dove collocarlo (ExternalProject o altro modulo)
+>>>>>>> laraxot/dev
 - [ ] Spostare widget e aggiornare namespace
 - [ ] Rimuovere file originale da User
 - [ ] Verificare con script controllo dipendenze

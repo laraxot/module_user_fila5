@@ -7,6 +7,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 =======
@@ -23,6 +24,10 @@ use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Support\Carbon;
+use Modules\Xot\Contracts\ProfileContract;
+>>>>>>> laraxot/dev
 
 /**
  * Modules\User\Models\TeamUser.
@@ -32,6 +37,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|TeamUser query()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property int         $id
  * @property string      $uuid
 =======
@@ -47,6 +53,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string      $uuid
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ *
+ * @property int         $id
+ * @property string      $uuid
+>>>>>>> laraxot/dev
  * @property string|null $team_id
  * @property string|null $user_id
  * @property string|null $role
@@ -56,9 +67,13 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $updated_by
  * @property string|null $customer_id
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 2024e2e7 (.)
+=======
+ *
+>>>>>>> laraxot/dev
  * @method static Builder|TeamUser whereCreatedAt($value)
  * @method static Builder|TeamUser whereCreatedBy($value)
  * @method static Builder|TeamUser whereCustomerId($value)
@@ -69,6 +84,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|TeamUser whereUpdatedBy($value)
  * @method static Builder|TeamUser whereUserId($value)
  * @method static Builder|TeamUser whereUuid($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
@@ -95,6 +111,8 @@ use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  *
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
@@ -116,14 +134,20 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|TeamUser                         whereJoinedAt($value)
  * @method static Builder<static>|TeamUser                         wherePermissions($value)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class TeamUser extends BaseTeamUser
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     protected $connection = 'user';
 
     /**
@@ -138,6 +162,7 @@ class TeamUser extends BaseTeamUser
             'permissions' => 'array',
         ];
     }
+<<<<<<< HEAD
 =======
     use HasFactory;
 
@@ -164,4 +189,6 @@ class TeamUser extends BaseTeamUser
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Resources\RoleResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
 use Illuminate\Support\Arr;
@@ -15,6 +18,7 @@ use Modules\User\Actions\Shield\GetPermissionModelAction;
 use Modules\User\Filament\Resources\RoleResource;
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -43,10 +47,13 @@ use Modules\User\Models\Role;
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 class EditRole extends XotBaseEditRecord
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     /** @var Collection<int, string> */
@@ -59,6 +66,9 @@ class EditRole extends XotBaseEditRecord
     /** @var Collection<int, string> */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /** @var Collection<int, string> */
+>>>>>>> laraxot/dev
     public Collection $permissions;
 
     // public Role $record;
@@ -74,6 +84,7 @@ class EditRole extends XotBaseEditRecord
         $this->permissions->each(static function ($permission) use ($permissionModels, $data): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $permissionModels->push(app(GetPermissionModelAction::class)->execute()::firstOrCreate([
 =======
             $permissionModels->push(Utils::getPermissionModel()::firstOrCreate([
@@ -84,12 +95,16 @@ class EditRole extends XotBaseEditRecord
             $permissionModels->push(app(GetPermissionModelAction::class)->execute()::firstOrCreate([
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            $permissionModels->push(app(GetPermissionModelAction::class)->execute()::firstOrCreate([
+>>>>>>> laraxot/dev
                 'name' => $permission,
                 'guard_name' => $data['guard_name'] ?? 'web',
             ]));
         });
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::isInstanceOf($this->record, Role::class, '['.__LINE__.']['.class_basename($this).']');
 =======
         Assert::isInstanceOf($this->record, Role::class, '[' . __LINE__ . '][' . class_basename($this) . ']');
@@ -100,6 +115,9 @@ class EditRole extends XotBaseEditRecord
         Assert::isInstanceOf($this->record, Role::class, '['.__LINE__.']['.class_basename($this).']');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        Assert::isInstanceOf($this->record, Role::class, '['.__LINE__.']['.class_basename($this).']');
+>>>>>>> laraxot/dev
         $this->record->syncPermissions($permissionModels);
     }
 
@@ -108,6 +126,7 @@ class EditRole extends XotBaseEditRecord
         return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'view' => ViewAction::make(),
             'delete' => DeleteAction::make(),
 =======
@@ -122,6 +141,10 @@ class EditRole extends XotBaseEditRecord
             'delete' => DeleteAction::make(),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'view' => ViewAction::make(),
+            'delete' => DeleteAction::make(),
+>>>>>>> laraxot/dev
         ];
     }
 
@@ -131,6 +154,9 @@ class EditRole extends XotBaseEditRecord
             ->filter(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 static fn ($_permission, $key): bool => ! \in_array($key, ['name', 'guard_name', 'select_all'], false) && Str::contains($key, '_'),
             )
             ->keys();
@@ -139,6 +165,7 @@ class EditRole extends XotBaseEditRecord
         $result = Arr::only($data, ['name', 'guard_name']);
 
         return $result;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -163,5 +190,7 @@ class EditRole extends XotBaseEditRecord
         return $result;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

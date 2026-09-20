@@ -4,48 +4,69 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * |--------------------------------------------------------------------------
      * | Table Columns
      * |--------------------------------------------------------------------------
      */
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     'column.name' => 'Naam',
     'column.guard_name' => 'Guard Naam',
     'column.roles' => 'Rollen',
     'column.permissions' => 'Permissies',
     'column.updated_at' => 'Aangepast op',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * |--------------------------------------------------------------------------
      * | Form Fields
      * |--------------------------------------------------------------------------
      */
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     'field.name' => 'Naam',
     'field.guard_name' => 'Guard Naam',
     'field.permissions' => 'Permissies',
     'field.select_all.name' => 'Selecteer alles',
     'field.select_all.message' => 'Zet alle permissies aan, die momenteel <span class="text-primary font-medium">aangevinkt</span> staan voor deze rol.',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * |--------------------------------------------------------------------------
      * | Navigation & Resource
      * |--------------------------------------------------------------------------
      */
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Rollen',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Rol',
     'resource.label.roles' => 'Rollen',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * |--------------------------------------------------------------------------
      * | Section & Tabs
@@ -70,6 +91,7 @@ return [
      * |--------------------------------------------------------------------------
      */
 
+<<<<<<< HEAD
 =======
     'section' => 'Entiteiten',
     'resources' => 'Resources',
@@ -78,6 +100,8 @@ return [
     'custom' => 'Andere permissies',
     'forbidden' => 'Je hebt geen toegang',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     'resource_permission_prefixes_labels' => [
         'view' => 'Bekijken',
         'view_any' => 'Bekijk elke',
@@ -90,6 +114,7 @@ return [
         'restore' => 'Herstellen',
         'restore_any' => 'Herstel elke',
         'replicate' => 'Repliceren',
+<<<<<<< HEAD
 <<<<<<< HEAD
         // 'reorder' => 'Reorder',
 =======
@@ -107,5 +132,8 @@ return [
     ],
     'actions' => [
 >>>>>>> 60a2c9a9 (.)
+=======
+        // 'reorder' => 'Reorder',
+>>>>>>> laraxot/dev
     ],
 ];

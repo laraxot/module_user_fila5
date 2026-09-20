@@ -7,6 +7,9 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
@@ -29,6 +32,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string      $authenticatable_id   The ID of the authenticatable model
  * @property Carbon|null $created_at           When the record was created
  * @property Carbon|null $updated_at           When the record was last updated
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -82,6 +86,9 @@ use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> 2024e2e7 (.)
  *
 >>>>>>> f548be94 (.)
+=======
+ *
+>>>>>>> laraxot/dev
  * @method static Builder<static>|Authentication newModelQuery()
  * @method static Builder<static>|Authentication newQuery()
  * @method static Builder<static>|Authentication query()
@@ -97,6 +104,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Authentication whereLoginSuccessful($value)
  * @method static Builder<static>|Authentication whereAuthenticatableType($value)
  * @method static Builder<static>|Authentication whereAuthenticatableId($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property Model|\Eloquent      $authenticatable
  * @property ProfileContract|null $creator
@@ -137,6 +145,9 @@ class Authentication extends Model
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+ *
+>>>>>>> laraxot/dev
  * @property Model|\Eloquent      $authenticatable
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
@@ -156,8 +167,11 @@ class Authentication extends Model
  */
 class Authentication extends BaseModel
 {
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     /**
      * The attributes that are mass assignable.
      *
@@ -178,9 +192,12 @@ class Authentication extends BaseModel
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      * @return MorphTo<Model, $this>
      */
     public function authenticatable(): MorphTo
@@ -190,11 +207,14 @@ class Authentication extends BaseModel
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      * The attributes that should be cast.
      *
      * @return array<string, string>
@@ -209,6 +229,7 @@ class Authentication extends BaseModel
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -223,4 +244,6 @@ class Authentication extends BaseModel
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

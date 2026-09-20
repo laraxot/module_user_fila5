@@ -207,6 +207,7 @@ Per assistenza tecnica, contattare:
 - Email: support@<nome progetto>.com
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Documentazione: https://docs.<nome progetto>.com
 =======
 - Documentazione: https://docs.<nome progetto>.com 
@@ -217,3 +218,6 @@ Per assistenza tecnica, contattare:
 - Documentazione: https://docs.<nome progetto>.com
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- Documentazione: https://docs.<nome progetto>.com
+>>>>>>> laraxot/dev

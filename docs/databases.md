@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Database Errors in User Module"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Database Errors in User Module
 
 ## Missing `doctor_team` Table
@@ -62,6 +68,7 @@ related:
 - [Migration File](../database/migrations/2025_05_17_000001_create_doctor_team_table.php)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
 =======
 - [Root Documentation](../../../docs/collegamenti-documentazione.md)
@@ -72,4 +79,7 @@ related:
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Root Documentation](../../../../docs/collegamenti-documentazione.md)
+>>>>>>> laraxot/dev
 - [Xot Module Database Guidelines](../../../modules/xot/docs/database_guidelines.md)

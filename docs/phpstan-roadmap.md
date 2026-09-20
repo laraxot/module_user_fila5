@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # PHPStan Roadmap: User Module
 
 **Date**: 2026-01-12
@@ -65,6 +66,8 @@ The **User** module is fully compliant with PHPStan Level 10. No errors were rep
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: phpstan-roadmap
@@ -81,5 +84,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-roadmap-Modules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

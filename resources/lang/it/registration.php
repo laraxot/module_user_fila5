@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f548be94 (.)
@@ -12,6 +13,8 @@ declare(strict_types=1);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 return [
     'fields' => [
         'first_name' => [
@@ -20,6 +23,7 @@ return [
             'tooltip' => 'Inserisci il tuo nome',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -30,6 +34,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'last_name' => [
             'label' => 'Cognome',
@@ -37,6 +45,7 @@ return [
             'tooltip' => 'Inserisci il tuo cognome',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -47,6 +56,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'email' => [
             'label' => 'Email',
@@ -54,6 +67,7 @@ return [
             'tooltip' => 'Inserisci un indirizzo email valido',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -64,6 +78,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'phone' => [
             'label' => 'Telefono',
@@ -71,6 +89,7 @@ return [
             'tooltip' => 'Inserisci un numero di telefono valido',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -81,6 +100,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'address' => [
             'label' => 'Indirizzo',
@@ -88,6 +111,7 @@ return [
             'tooltip' => 'Inserisci il tuo indirizzo di residenza',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -98,6 +122,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'city' => [
             'label' => 'Città',
@@ -105,6 +133,7 @@ return [
             'tooltip' => 'Inserisci la città di residenza',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -115,6 +144,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'postal_code' => [
             'label' => 'CAP',
@@ -122,6 +155,7 @@ return [
             'tooltip' => 'Inserisci il Codice di Avviamento Postale',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -132,6 +166,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'province' => [
             'label' => 'Provincia',
@@ -139,6 +177,7 @@ return [
             'tooltip' => 'Inserisci la provincia di residenza',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -149,6 +188,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'country' => [
             'label' => 'Paese',
@@ -157,6 +200,7 @@ return [
             'default' => 'Italia',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -167,6 +211,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'password' => [
             'label' => 'Password',
@@ -174,6 +222,7 @@ return [
             'tooltip' => 'La password deve essere di almeno 8 caratteri',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -184,6 +233,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
@@ -191,6 +244,7 @@ return [
             'tooltip' => 'Inserisci nuovamente la password per conferma',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -201,12 +255,17 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'terms' => [
             'label' => 'Accetto i termini e le condizioni',
             'tooltip' => 'Devi accettare i termini e le condizioni per procedere',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -217,12 +276,17 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'newsletter' => [
             'label' => 'Iscriviti alla newsletter',
             'tooltip' => 'Ricevi aggiornamenti e novità via email',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -233,6 +297,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
     ],
     'buttons' => [
@@ -266,9 +334,12 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -281,9 +352,12 @@ return [
     'actions' => [
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

@@ -9,6 +9,7 @@ use Spatie\Permission\Traits\HasRoles;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /**
  * Spatie Permission — standard rigido: {@see HasRoles::teams()} resta pubblico come da package.
  */
@@ -21,10 +22,16 @@ use Spatie\Permission\Traits\HasRoles;
  */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+/**
+ * Spatie Permission — standard rigido: {@see HasRoles::teams()} resta pubblico come da package.
+ */
+>>>>>>> laraxot/dev
 trait HasSpatiePermission
 {
     use HasPermissions;
     use HasRoles;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -47,4 +54,6 @@ trait HasSpatiePermission
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

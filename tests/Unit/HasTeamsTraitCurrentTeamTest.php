@@ -6,6 +6,7 @@ namespace Modules\User\Tests\Unit;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\User\Models\Team;
 use Modules\User\Tests\TestCase;
@@ -98,6 +99,8 @@ describe('HasTeams Trait CurrentTeam', function () {
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\User\Models\Team;
 use Modules\User\Tests\TestCase;
@@ -133,14 +136,20 @@ describe('Has Teams Trait Current Team', function (): void {
     test('has teams current team can access personal team when available', function (): void {
         $user = hasTeamsCurrentCreateUser();
         $personalTeam = hasTeamsCurrentCreateTeam($user, [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'name' => 'Personal Team',
             'personal_team' => true,
         ]);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $user->current_team_id = (int) $personalTeam->id;
         $user->save();
         $user->refresh();
@@ -194,6 +203,7 @@ describe('Has Teams Trait Current Team', function (): void {
         Assert::assertInstanceOf(Team::class, $currentTeam2);
         Assert::assertSame($team->id, $currentTeam1->id);
         Assert::assertSame($team->id, $currentTeam2->id);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -356,5 +366,7 @@ describe('Has Teams Trait Current Team', function (): void {
         Assert::assertSame($team->id, $currentTeam2->id);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     });
 });

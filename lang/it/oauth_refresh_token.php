@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => ['label' => 'Refresh Token OAuth', 'plural_label' => 'Refresh Token OAuth', 'group' => 'OAuth', 'icon' => 'heroicon-o-arrow-path', 'sort' => 27],
     'label' => 'Refresh Token OAuth',
     'plural_label' => 'Refresh Token OAuth',
@@ -91,6 +92,8 @@ return [
 >>>>>>> 60a2c9a9 (.)
     ],
 =======
+=======
+>>>>>>> laraxot/dev
     'navigation' => ['label' => 'Refresh Token OAuth', 'plural_label' => 'Refresh Token OAuth', 'group' => 'OAuth', 'icon' => 'heroicon-o-arrow-path', 'sort' => 27],
     'label' => 'Refresh Token OAuth',
     'plural_label' => 'Refresh Token OAuth',
@@ -105,12 +108,19 @@ return [
         ],
     ],
     'actions' => [
+<<<<<<< HEAD
         'revoke' => ['label' => 'Revoca', 'tooltip' => 'Revoca il token', 'helper_text' => 'Revoca questo refresh token', 'description' => 'Azione per revocare', 'success' => 'Refresh token revocato con successo'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
+=======
+        'revoke' => ['label' => 'Revoca', 'tooltip' => 'Revoca il token', 'helper_text' => 'Revoca questo refresh token', 'description' => 'Azione per revocare', 'success' => 'Refresh token revocato con successo', 'icon' => 'revoke'],
+>>>>>>> laraxot/dev
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
     ],
     'messages' => ['revoked' => 'Refresh token revocato con successo'],
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
 ];

@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
@@ -20,11 +21,17 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Carbon;
+>>>>>>> laraxot/dev
 use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
  * Modules\User\Models\PersonalAccessToken.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property int $id
@@ -72,13 +79,24 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property int $tokenable_id
  * @property string $name
  * @property string $token
+=======
+ * @property int         $id
+ * @property string      $tokenable_type
+ * @property int         $tokenable_id
+ * @property string      $name
+ * @property string      $token
+>>>>>>> laraxot/dev
  * @property string|null $abilities
  * @property Carbon|null $last_used_at
  * @property Carbon|null $expires_at
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  *
+<<<<<<< HEAD
  * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory factory($count = null, $state = [])
+=======
+ * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory       factory($count = null, $state = [])
+>>>>>>> laraxot/dev
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken query()
@@ -92,8 +110,11 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken whereTokenableType($value)
  *
  * @mixin \Eloquent
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  */
 class PersonalAccessToken extends Model
 {

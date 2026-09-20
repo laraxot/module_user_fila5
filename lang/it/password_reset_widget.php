@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'navigation' => ['label' => 'Reset Password', 'plural_label' => 'Reset Password', 'group' => 'Autenticazione', 'icon' => 'heroicon-o-lock-closed', 'sort' => 7],
     'label' => 'Reset Password',
     'plural_label' => 'Reset Password',
@@ -16,6 +19,7 @@ return [
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'messages' => ['success' => 'Link di reset inviato con successo', 'error' => 'Si è verificato un errore'],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -44,4 +48,6 @@ return [
     'messages' => ['success' => 'Link di reset inviato con successo', 'error' => 'Si è verificato un errore'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

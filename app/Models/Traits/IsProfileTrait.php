@@ -5,6 +5,7 @@ declare(strict_types=1);
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Modulo User - Trait per il profilo utente.
 =======
  * Modulo User - Trait per il profilo utente
@@ -15,6 +16,9 @@ declare(strict_types=1);
  * Modulo User - Trait per il profilo utente.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ * Modulo User - Trait per il profilo utente.
+>>>>>>> laraxot/dev
  *
  * Questo trait implementa funzionalità comuni per i modelli di profilo utente nell'applicazione,
  * tra cui relazioni con utenti, dispositivi e team, gestione dei ruoli, e accessori per attributi
@@ -31,6 +35,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models\Traits;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Filament\Notifications\Notification;
@@ -52,6 +57,11 @@ use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Filament\Notifications\Notification;
+use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -61,6 +71,7 @@ use Modules\User\Models\DeviceUser;
 use Modules\User\Models\Role;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 =======
 >>>>>>> f548be94 (.)
@@ -69,12 +80,16 @@ use Modules\User\Models\User;
 use Modules\User\Models\User;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\Permission\Exceptions\RoleDoesNotExist;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Webmozart\Assert\Assert;
 =======
 >>>>>>> f548be94 (.)
@@ -83,6 +98,9 @@ use Webmozart\Assert\Assert;
 use Webmozart\Assert\Assert;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Webmozart\Assert\Assert;
+>>>>>>> laraxot/dev
 
 /**
  * Trait per aggiungere funzionalità di profilo ai modelli utente.
@@ -99,6 +117,7 @@ trait IsProfileTrait
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return BelongsTo<Model&UserContract, Model>
 =======
      * @return BelongsTo<Model&UserContract, static>
@@ -109,6 +128,9 @@ trait IsProfileTrait
      * @return BelongsTo<Model&UserContract, Model>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return BelongsTo<Model&UserContract, Model>
+>>>>>>> laraxot/dev
      */
     public function user(): BelongsTo
     {
@@ -117,10 +139,14 @@ trait IsProfileTrait
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         /** @var BelongsTo<Model&UserContract, Model> $relation */
         $relation = $this->belongsTo($userClass);
 
         return $relation;
+<<<<<<< HEAD
 =======
         // @phpstan-ignore return.type
         return $this->belongsTo($userClass);
@@ -135,6 +161,8 @@ trait IsProfileTrait
         return $relation;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -147,6 +175,7 @@ trait IsProfileTrait
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function getFullNameAttribute(?string $value): ?string
     {
         if (null !== $value) {
@@ -165,12 +194,20 @@ trait IsProfileTrait
         if (null !== $value) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function getFullNameAttribute(?string $value): ?string
+    {
+        if (null !== $value) {
+>>>>>>> laraxot/dev
             return $value;
         }
 
         $user = $this->user;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (null === $user) {
             return null;
         }
@@ -184,6 +221,7 @@ trait IsProfileTrait
         $userName = $user->getAttribute('name');
 
         return \is_string($userName) && '' !== $userName ? $userName : null;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -216,6 +254,8 @@ trait IsProfileTrait
         return \is_string($userName) && '' !== $userName ? $userName : null;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -226,6 +266,7 @@ trait IsProfileTrait
      *
      * @return string|null Il nome dell'utente
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getFirstNameAttribute(?string $value): ?string
@@ -246,12 +287,20 @@ trait IsProfileTrait
         if (null !== $value) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function getFirstNameAttribute(?string $value): ?string
+    {
+        if (null !== $value) {
+>>>>>>> laraxot/dev
             return $value;
         }
 
         $user = $this->user;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (null === $user) {
             return null;
         }
@@ -265,6 +314,7 @@ trait IsProfileTrait
         $this->update(['first_name' => $firstName]);
 
         return $firstName;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -298,6 +348,8 @@ trait IsProfileTrait
         return $firstName;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -308,6 +360,7 @@ trait IsProfileTrait
      *
      * @return string|null Il cognome dell'utente
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     public function getLastNameAttribute(?string $value): ?string
@@ -328,12 +381,20 @@ trait IsProfileTrait
         if (null !== $value) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function getLastNameAttribute(?string $value): ?string
+    {
+        if (null !== $value) {
+>>>>>>> laraxot/dev
             return $value;
         }
 
         $user = $this->user;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (null === $user) {
             return null;
         }
@@ -347,6 +408,7 @@ trait IsProfileTrait
         $this->update(['last_name' => $lastName]);
 
         return $lastName;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -380,6 +442,8 @@ trait IsProfileTrait
         return $lastName;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -389,6 +453,7 @@ trait IsProfileTrait
      */
     public function isSuperAdmin(): bool
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (null === $this->user) {
@@ -401,6 +466,9 @@ trait IsProfileTrait
         if (null === $this->user) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null === $this->user) {
+>>>>>>> laraxot/dev
             return false;
         }
 
@@ -416,6 +484,7 @@ trait IsProfileTrait
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null === $this->user) {
 =======
         if ($this->user === null) {
@@ -426,6 +495,9 @@ trait IsProfileTrait
         if (null === $this->user) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null === $this->user) {
+>>>>>>> laraxot/dev
             return false;
         }
 
@@ -439,6 +511,7 @@ trait IsProfileTrait
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @throws \Exception Se l'utente non è disponibile
 =======
      * @throws Exception Se l'utente non è disponibile
@@ -453,16 +526,23 @@ trait IsProfileTrait
      * @throws \Exception Se l'utente non è disponibile
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @throws \Exception Se l'utente non è disponibile
+>>>>>>> laraxot/dev
      */
     public function toggleSuperAdmin(): void
     {
         $user = $this->user;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (null === $user) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
         Assert::isInstanceOf($user, User::class);
+<<<<<<< HEAD
 =======
         if ($user === null) {
             throw new Exception('[' . __LINE__ . '][' . class_basename($this) . ']');
@@ -479,6 +559,8 @@ trait IsProfileTrait
         Assert::isInstanceOf($user, User::class);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $to_assign = 'super-admin';
         $to_remove = 'negate-super-admin';
         if ($this->isSuperAdmin()) {
@@ -496,6 +578,7 @@ trait IsProfileTrait
             $user->roles()->detach($role_remove);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         } catch (\Exception $e) {
 =======
         } catch (Exception $e) {
@@ -506,6 +589,9 @@ trait IsProfileTrait
         } catch (\Exception $e) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        } catch (\Exception $e) {
+>>>>>>> laraxot/dev
             Notification::make()
                 ->title('Exception !')
                 ->danger()
@@ -520,11 +606,15 @@ trait IsProfileTrait
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @return BelongsToMany<Device, $this>
      */
     public function mobileDevices(): BelongsToMany
     {
         return $this->belongsToManyX(Device::class);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -547,11 +637,14 @@ trait IsProfileTrait
         return $this->belongsToManyX(Device::class);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
      * Relazione con tutti i dispositivi associati al profilo.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @return BelongsToMany<Device, $this>
@@ -564,6 +657,9 @@ trait IsProfileTrait
      * @return BelongsToMany<Device, $this>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return BelongsToMany<Device, $this>
+>>>>>>> laraxot/dev
      */
     public function devices(): BelongsToMany
     {
@@ -575,10 +671,14 @@ trait IsProfileTrait
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @return HasMany<DeviceUser, $this>
      */
     public function mobileDeviceUsers(): HasMany
     {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -597,6 +697,8 @@ trait IsProfileTrait
     {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         return $this->hasMany(DeviceUser::class, 'profile_id')->where('type', 'mobile');
     }
 
@@ -605,10 +707,14 @@ trait IsProfileTrait
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @return HasMany<DeviceUser, $this>
      */
     public function deviceUsers(): HasMany
     {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -627,6 +733,8 @@ trait IsProfileTrait
     {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         return $this->hasMany(DeviceUser::class, 'profile_id');
     }
 
@@ -635,6 +743,9 @@ trait IsProfileTrait
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @return Collection<int|string, non-empty-string>
      */
     public function getMobileDeviceTokens(): Collection
@@ -645,6 +756,7 @@ trait IsProfileTrait
             ->map(static fn (mixed $value): string => (string) $value);
 
         /* @var Collection<int|string, non-empty-string> $tokens */
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -674,6 +786,8 @@ trait IsProfileTrait
         /* @var Collection<int|string, non-empty-string> $tokens */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         return $tokens;
     }
 
@@ -682,6 +796,9 @@ trait IsProfileTrait
      * Ottiene il nome utente dal modello utente collegato.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     /** @return Attribute<?string, never> */
     protected function userName(): Attribute
@@ -699,6 +816,7 @@ trait IsProfileTrait
                 return \is_string($name) && '' !== $name ? $name : null;
             }
         );
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -737,6 +855,8 @@ trait IsProfileTrait
         );
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -744,12 +864,16 @@ trait IsProfileTrait
      * Recupera l'URL dell'avatar dell'utente dalla MediaLibrary.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     /** @return Attribute<string, never> */
     protected function avatar(): Attribute
     {
         return Attribute::make(get: function (): string {
             return $this->getFirstMediaUrl('avatar');
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -774,6 +898,8 @@ trait IsProfileTrait
             return $this->getFirstMediaUrl('avatar');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         });
     }
 }

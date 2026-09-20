@@ -24,6 +24,7 @@ class NewPasswordSet
         public UserContract $authObject,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {
     }
 =======
@@ -36,6 +37,10 @@ class NewPasswordSet
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 
     /**
      * Get the channels the event should broadcast on.

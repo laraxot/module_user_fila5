@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Forms\Components;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
 
@@ -28,6 +31,7 @@ class SingleRoleSelect extends XotBaseSelect
             ->placeholder('Select a role');
     }
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -80,10 +84,13 @@ class SingleRoleSelect extends XotBaseSelect
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public function getOptionValueProperty(): string
     {
         return $this->optionValueProperty;
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -106,4 +113,6 @@ class SingleRoleSelect extends XotBaseSelect
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

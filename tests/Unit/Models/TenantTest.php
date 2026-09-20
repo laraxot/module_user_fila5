@@ -6,6 +6,7 @@ namespace Modules\User\Tests\Unit\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Models\Tenant;
 use Modules\User\Tests\TestCase;
@@ -67,6 +68,8 @@ class TenantTest extends TestCase
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Database\Factories\TenantFactory;
 use Modules\User\Models\Tenant;
 use Modules\User\Tests\TestCase;
@@ -98,8 +101,11 @@ describe('Tenant', function (): void {
         TestCase::skipUnlessTenantColumn('settings');
         TestCase::skipUnlessTenantColumn('trial_ends_at');
 
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $tenantData = [
             'name' => 'Full Tenant',
             'slug' => 'full-tenant',
@@ -110,6 +116,7 @@ describe('Tenant', function (): void {
             'trial_ends_at' => now()->addDays(30),
         ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $tenant = TenantFactory::new()->createOne($tenantData);
@@ -130,6 +137,11 @@ describe('Tenant', function (): void {
         $this->assertDatabaseHasRow('tenants', [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $tenant = TenantFactory::new()->createOne($tenantData);
+
+        $this->assertDatabaseHasRow('tenants', [
+>>>>>>> laraxot/dev
             'id' => $tenant->id,
             'name' => 'Full Tenant',
             'slug' => 'full-tenant',
@@ -140,6 +152,9 @@ describe('Tenant', function (): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         Assert::assertSame(['theme' => 'dark', 'features' => ['chat', 'analytics']], $tenant->settings);
     });
 
@@ -250,6 +265,7 @@ describe('Tenant', function (): void {
     test('can handle null values', function (): void {
         $tenant = TenantFactory::new()->createOne([
             'name' => 'Test Tenant',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -498,12 +514,17 @@ describe('Tenant', function (): void {
             'name' => 'Test Tenant',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'domain' => null,
             'database' => null,
         ]);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         Assert::assertNull($tenant->domain);
         Assert::assertNull($tenant->database);
     });
@@ -611,6 +632,7 @@ describe('Tenant', function (): void {
         Assert::assertSame('dark', $settings['theme'] ?? null);
     });
 });
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -817,3 +839,5 @@ describe('Tenant', function (): void {
 });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

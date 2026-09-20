@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Support\Facades\Schema;
@@ -11,6 +14,7 @@ use Illuminate\Support\Facades\View;
 use Illuminate\Support\Str;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
+<<<<<<< HEAD
 =======
 use Illuminate\Support\Facades\View;
 >>>>>>> 60a2c9a9 (.)
@@ -26,6 +30,8 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\Profile;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 
@@ -53,6 +59,7 @@ describe('Auth Components Tests', function (): void {
         $response = get('/it/auth/login');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         /* @phpstan-ignore-next-line method.nonObject */
 >>>>>>> 60a2c9a9 (.)
@@ -61,6 +68,8 @@ describe('Auth Components Tests', function (): void {
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $response->assertStatus(200);
     });
 
@@ -69,6 +78,7 @@ describe('Auth Components Tests', function (): void {
         $response = get('/it/auth/register');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         /* @phpstan-ignore-next-line method.nonObject */
 >>>>>>> 60a2c9a9 (.)
@@ -77,6 +87,8 @@ describe('Auth Components Tests', function (): void {
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $response->assertStatus(200);
     });
 
@@ -84,6 +96,7 @@ describe('Auth Components Tests', function (): void {
         // Test the existing auth-session-status component rendering
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $html = View::make('components.auth-session-status', ['status' => 'Test status'])->render();
 
         expect(strlen($html))->toBeGreaterThanOrEqual(0);
@@ -102,6 +115,13 @@ describe('Auth Components Tests', function (): void {
         expect(strlen($html))->toBeGreaterThanOrEqual(0);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        /** @var view-string $view */
+        $view = 'components.auth-session-status';
+        $html = View::make($view, ['status' => 'Test status'])->render();
+
+        expect(strlen($html))->toBeGreaterThanOrEqual(0);
+>>>>>>> laraxot/dev
         expect($html)->not->toBeEmpty();
     });
 
@@ -111,6 +131,7 @@ describe('Auth Components Tests', function (): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $html = View::make('components.auth-header', [
 =======
         $html = view('components.auth-header', [
@@ -121,6 +142,11 @@ describe('Auth Components Tests', function (): void {
         $html = View::make('components.auth-header', [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        /** @var view-string $view */
+        $view = 'components.auth-header';
+        $html = View::make($view, [
+>>>>>>> laraxot/dev
             'title' => 'Login Test',
             'description' => 'Test description',
         ])->render();
@@ -134,6 +160,7 @@ describe('Authentication Flow with Reorganized Components', function (): void {
     test('login form components work after reorganization', function (): void {
         // Visit login page and ensure all reorganized components render
         $response = get('/it/auth/login');
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $response->assertStatus(200);
@@ -161,6 +188,9 @@ describe('Authentication Flow with Reorganized Components', function (): void {
         $response->assertStatus(200);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $response->assertStatus(200);
+>>>>>>> laraxot/dev
     });
 });
 
@@ -168,6 +198,9 @@ describe('User Profile Components Tests', function (): void {
     test('profile pages use reorganized components correctly', function (): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $user = UserFactory::new()->createOne();
         \assert($user instanceof User);
 
@@ -200,6 +233,7 @@ describe('User Profile Components Tests', function (): void {
         } catch (\Throwable $e) {
             expect($e->getMessage())->not->toBe('');
         }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -261,5 +295,7 @@ describe('User Profile Components Tests', function (): void {
         }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     });
 });

@@ -6,6 +6,9 @@ return [
     'sections' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'Profile Information' => ['label' => 'Profile Information', 'heading' => 'Profile Information'],
         'Update Password' => ['label' => 'Update Password', 'heading' => 'Update Password'],
     ],
@@ -21,6 +24,7 @@ return [
         'updateProfileAction' => ['label' => 'updateProfileAction', 'icon' => 'updateProfileAction', 'tooltip' => 'updateProfileAction'],
         'updatePasswordAction' => ['label' => 'updatePasswordAction', 'icon' => 'updatePasswordAction', 'tooltip' => 'updatePasswordAction'],
         'Update' => ['label' => 'Update', 'icon' => 'Update', 'tooltip' => 'Update'],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -107,10 +111,13 @@ return [
         'Update' => ['label' => 'Update', 'icon' => 'Update', 'tooltip' => 'Update'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     ],
     'navigation' => [
         'name' => 'My Profile',
         'plural' => 'My Profile',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         'group' => ['name' => 'General', 'description' => 'General Settings'],
@@ -128,6 +135,9 @@ return [
         'group' => ['name' => 'General', 'description' => 'General Settings'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'group' => ['name' => 'General', 'description' => 'General Settings'],
+>>>>>>> laraxot/dev
         'label' => 'My Profile',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',

@@ -10,6 +10,9 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -28,6 +31,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
 =======
         'name' => 'Nome',
         'phone' => 'Telefono',
@@ -58,6 +62,8 @@ return [
         ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'register_tenant' => [
@@ -66,6 +72,7 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Tenancy',
     'plural_label' => 'Tenancy (Plurale)',
 =======
@@ -76,4 +83,8 @@ return [
     'plural_label' => 'Tenancy (Plurale)',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    'label' => 'Tenancy',
+    'plural_label' => 'Tenancy (Plurale)',
+>>>>>>> laraxot/dev
 ];

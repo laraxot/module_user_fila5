@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\RoleResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Modules\User\Filament\Resources\RoleResource;
@@ -27,12 +28,17 @@ use Filament\Tables\Filters\SelectFilter;
 use Modules\User\Filament\Resources\RoleResource;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Filament\Tables\Filters\SelectFilter;
+use Modules\User\Filament\Resources\RoleResource;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListRoles extends XotBaseListRecords
 {
     protected static string $resource = RoleResource::class;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     #[\Override]
@@ -74,6 +80,9 @@ class ListRoles extends XotBaseListRecords
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public function getTableFilters(): array
     {
         return [

@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -20,11 +21,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'column.name' => 'Ім\'я',
     'column.guard_name' => 'Ім\'я гварда',
     'column.roles' => 'Ролі',
     'column.permissions' => 'Дозволи',
     'column.updated_at' => 'Оновлено',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -42,11 +46,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'field.name' => 'Ім\'я',
     'field.guard_name' => 'Ім\'я гварда',
     'field.permissions' => 'Дозволи',
     'field.select_all.name' => 'Вибрати все',
     'field.select_all.message' => 'Включити всі дозволи, які <span class="text-primary font-medium">Доступні</span> для цієї ролі',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -64,11 +71,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Ролі',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Роль',
     'resource.label.roles' => 'Ролі',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -86,11 +96,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'section' => 'Сутності',
     'resources' => 'Ресурси',
     'widgets' => 'Віджети',
     'pages' => 'Сторінки',
     'custom' => 'Користувальницькі дозволи',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     'forbidden' => 'У вас немає доступу',
@@ -117,6 +130,9 @@ return [
     'forbidden' => 'У вас немає доступу',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    'forbidden' => 'У вас немає доступу',
+>>>>>>> laraxot/dev
     'resource_permission_prefixes_labels' => [
         'view' => 'Перегляд',
         'view_any' => 'Може дивитися будь-яке',
@@ -133,9 +149,12 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -150,9 +169,12 @@ return [
     'actions' => [
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

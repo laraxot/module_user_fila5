@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 # Auto-generated forbidden paths — do not edit manually
 # Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
 
@@ -36,6 +39,7 @@ cache/*
 docs/cache/
 docs/phpstan/
 # --- Cache & temporary ---
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -114,6 +118,8 @@ docs/phpstan/
 # --- Cache & temporary ---
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 *.cache
 *.lock
 *.phar
@@ -129,6 +135,9 @@ v8-compile-cache-*
 .phpunit.result.cache
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 # --- Logs ---
 *.log
 error_log
@@ -136,6 +145,7 @@ npm-debug.log*
 yarn-error.log*
 lerna-debug.log*
 # --- Laravel runtime ---
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -167,6 +177,8 @@ lerna-debug.log*
 # --- Laravel runtime ---
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 app/storage/
 public/storage
 public/hot
@@ -175,6 +187,9 @@ public_html/hot
 storage/*.key
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 storage/framework/cache/
 storage/framework/sessions/
 storage/framework/views/
@@ -182,6 +197,7 @@ storage/framework/views/
 .env.*
 !.env.example
 # --- Environment & IDE ---
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -205,6 +221,8 @@ storage/framework/views/
 # --- Environment & IDE ---
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 Homestead.yaml
 Homestead.json
 /.vagrant
@@ -212,6 +230,9 @@ Homestead.json
 .phpintel
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 .phpstorm.meta.php
 .windsurf/
 .cursor/
@@ -227,6 +248,7 @@ Homestead.json
 *.orig
 *.rej
 # --- System files ---
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -262,6 +284,8 @@ Homestead.json
 # --- System files ---
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 .DS_Store
 .DS_Store?
 ._*
@@ -269,6 +293,7 @@ Homestead.json
 .Trashes
 ehthumbs.db
 Thumbs.db
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 agentdb.rvf
@@ -288,6 +313,10 @@ agentdb.rvf
 # --- Backup / old files ---
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+agentdb.rvf
+# --- Backup / old files ---
+>>>>>>> laraxot/dev
 *.old
 *.old1
 *.old2
@@ -295,6 +324,9 @@ agentdb.rvf
 *.backup.*
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 *.backup-*
 *.backup_*
 *.bak
@@ -332,15 +364,20 @@ docs/**/bashscripts/
 resources/views/node_modules
 
 # Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
+<<<<<<< HEAD
 .cursor/
 .devcontainer/
 .vscode/
 .windsurf/
+=======
+.devcontainer/
+>>>>>>> laraxot/dev
 
 # Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
 phpinsights.php
 rector.php
 tests/Unit/graphify-out/
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -452,3 +489,22 @@ rector.php
 tests/Unit/graphify-out/
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+docs/_archive
+Application/
+Database/
+tools/
+app/Models/Models
+
+# Laraxot — forbidden at module/theme root (rector.php, phpinsights.php, .cursor, .windsurf, .vscode)
+/rector.php
+/phpinsights.php
+/.cursor
+/.cursor/
+/.windsurf
+/.windsurf/
+/.vscode
+/.vscode/
+.cursor~*
+.windsurf~*
+>>>>>>> laraxot/dev

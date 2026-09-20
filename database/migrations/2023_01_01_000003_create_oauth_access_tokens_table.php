@@ -27,6 +27,7 @@ return new class extends XotBaseMigration {
             $this->updateUser($table);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
 =======
 =======
@@ -42,6 +43,9 @@ return new class extends XotBaseMigration {
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            $this->updateTimestamps(table: $table, hasSoftDeletes: true);
+>>>>>>> laraxot/dev
         });
     }
 };

@@ -6,9 +6,12 @@ namespace Modules\User\Tests\Unit\Adapters\Socialite\Fixtures;
 
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * Socialite user stub con getRaw() per test adapter (no classi anonime).
@@ -16,13 +19,22 @@ use Modules\User\Models\User;
 final class SocialiteUserWithRawFixture implements SocialiteUserContract
 {
     /**
+<<<<<<< HEAD
      * @param  array<string, mixed>  $raw
+=======
+     * @param array<string, mixed> $raw
+>>>>>>> laraxot/dev
      */
     public function __construct(
         private readonly ?string $name,
         private readonly ?string $email,
         private readonly array $raw = [],
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 
     public function getId(): string
     {

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: terms-and-conditions
@@ -15,6 +18,7 @@ related:
   - "./phpstan.md"
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../../Themes/docs/shared-components/terms-and-conditions-2.md
 =======
 =======
@@ -53,3 +57,6 @@ related:
 See canonical documentation: ../../../../Themes/docs/shared-components/terms-and-conditions-2.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/terms-and-conditions-2.md
+>>>>>>> laraxot/dev

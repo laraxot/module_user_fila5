@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f548be94 (.)
@@ -12,6 +13,8 @@ declare(strict_types=1);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 return [
     'title' => 'Password Scaduta, Reimposta Password',
     'heading' => 'Crea una Nuova Password',
@@ -22,6 +25,7 @@ return [
             'validation_attribute' => 'current_password',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -34,12 +38,20 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'password' => [
             'label' => 'Password',
             'validation_attribute' => 'password',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -49,6 +61,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'password_confirmation' => [
@@ -70,6 +83,8 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
     ],
     'form' => [
@@ -104,6 +119,7 @@ return [
             'title' => 'Column Not Found',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'body' => 'Either the column \\":column_name\\" or the password column \\":password_column_name\\" was not found in the :table_name table.',
 =======
             'body' => 'Either the column \":column_name\" or the password column \":password_column_name\" was not found in the :table_name table.',
@@ -114,6 +130,9 @@ return [
             'body' => 'Either the column \\":column_name\\" or the password column \\":password_column_name\\" was not found in the :table_name table.',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'body' => 'Either the column \\":column_name\\" or the password column \\":password_column_name\\" was not found in the :table_name table.',
+>>>>>>> laraxot/dev
         ],
         'password_reset' => [
             'success' => 'Password Reset Successful',
@@ -126,6 +145,9 @@ return [
     'exceptions' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'column_not_found' => 'Either the column \\":column_name\\" or the password column \\":password_column_name\\" was not found in the \\":table_name\\" table. Please publish migrations and run them, if the error still persists, publish the config file and update the table_name, column_name, and password_column_name values.',
     ],
     'navigation' => [
@@ -137,6 +159,7 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 =======
         'column_not_found' => 'Either the column \":column_name\" or the password column \":password_column_name\" was not found in the \":table_name\" table. Please publish migrations and run them, if the error still persists, publish the config file and update the table_name, column_name, and password_column_name values.',
     ],
@@ -158,4 +181,6 @@ return [
     'plural_label' => 'Missing Plural label',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

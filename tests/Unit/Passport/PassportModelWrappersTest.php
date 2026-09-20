@@ -20,7 +20,11 @@ test('every eloquent passport model has a local oauth wrapper', function (): voi
     /** @var list<string> $files */
     $files = glob(base_path('vendor/laravel/passport/src').'/*.php');
 
+<<<<<<< HEAD
     if ($files === []) {
+=======
+    if ([] === $files) {
+>>>>>>> laraxot/dev
         Assert::fail('Unable to read Passport source directory.');
     }
 

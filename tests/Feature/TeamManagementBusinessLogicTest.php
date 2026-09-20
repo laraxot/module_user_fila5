@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Modules\User\Models\Team;
 use Modules\User\Models\TeamInvitation;
@@ -411,6 +414,7 @@ test('can force delete team', function (): void {
 test('team invitations relation is has many', function (): void {
     Assert::assertInstanceOf(HasMany::class, teamMgmtBizCreateTeam()->teamInvitations());
 });
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1471,3 +1475,5 @@ test('team invitations relation is has many', function (): void {
 });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

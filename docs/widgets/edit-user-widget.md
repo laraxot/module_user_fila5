@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "EditUserWidget Documentation"
 type: concept
@@ -20,11 +23,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # EditUserWidget Documentation
 
 ## Overview
@@ -154,6 +160,7 @@ All widget text follows the expanded translation structure:
 ## Related Documentation
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 * [User Module Widget Structure](../widgets-structure-2.md)
 =======
 * [User Module Widget Structure](../widgets_structure.md)
@@ -164,6 +171,9 @@ All widget text follows the expanded translation structure:
 * [User Module Widget Structure](../widgets-structure-2.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+* [User Module Widget Structure](../widgets-structure-2.md)
+>>>>>>> laraxot/dev
 * [Widget Translation Guidelines](./translation-guidelines.md)
 * [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 * [Translation System Overview](../../xot/docs/translations.md)

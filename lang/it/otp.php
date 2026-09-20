@@ -26,6 +26,7 @@ return [
             'validation_attribute' => 'password_attuale',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -38,12 +39,20 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'password' => [
             'label' => 'Nuova Password',
             'validation_attribute' => 'password',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -53,6 +62,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'password_confirmation' => [
@@ -74,6 +84,8 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
     ],
     'reset_password' => 'Reimposta Password',
@@ -128,6 +140,7 @@ return [
         'confirm_otp' => 'Sei sicuro di voler inviare una password temporanea a questo utente? Sarà richiesto di cambiarla al primo accesso.',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // Are you sure you want to send a temporary password to this user? They will be required to change it upon first login.
         // Temporary password sent successfully.
@@ -138,6 +151,8 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'send_otp_success' => 'Password temporanea inviata con successo.',
     ],
     'navigation' => [
@@ -153,6 +168,7 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Otp',
     'plural_label' => 'Otp (Plurale)',
 =======
@@ -163,4 +179,8 @@ return [
     'plural_label' => 'Otp (Plurale)',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    'label' => 'Otp',
+    'plural_label' => 'Otp (Plurale)',
+>>>>>>> laraxot/dev
 ];

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Architectural Rules & Guidelines"
 type: rule
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Architectural Rules & Guidelines
 
 This module adheres to the **Laraxot Architecture** and **Super Cow Methodology**.
@@ -37,6 +43,9 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Super Cow Methodology](../../Xot/docs/super_cow_methodology.md)
 - [PHP Quality Guide](../../Xot/docs/php_quality_guide.md)
 - [Filament Extension Rules](../../Xot/docs/filament_extension_rules.md)
@@ -95,6 +104,7 @@ User/
 ---
 
 *Last updated: June 2026*
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -171,3 +181,5 @@ User/
 *Last updated: June 2026*
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

@@ -6,6 +6,7 @@ namespace Modules\User\Console\Commands;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Support\Htmlable;
@@ -34,10 +35,23 @@ use Modules\Xot\Datas\XotData;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
 use Webmozart\Assert\Assert;
+=======
+use Filament\Support\Contracts\HasLabel;
+use Illuminate\Console\Command;
+use Illuminate\Contracts\Support\Htmlable;
+>>>>>>> laraxot/dev
 
 use function Laravel\Prompts\select;
 use function Laravel\Prompts\text;
 
+<<<<<<< HEAD
+=======
+use Modules\Xot\Actions\Cast\SafeObjectCastAction;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+use Webmozart\Assert\Assert;
+
+>>>>>>> laraxot/dev
 /**
  * Command to change user type based on project configuration.
  *
@@ -50,6 +64,7 @@ class ChangeTypeCommand extends Command
      * The name and signature of the console command.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -60,6 +75,8 @@ class ChangeTypeCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $name = 'user:change-type';
 
@@ -67,6 +84,7 @@ class ChangeTypeCommand extends Command
      * The console command description.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -77,6 +95,8 @@ class ChangeTypeCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $description = 'Change user type based on project configuration';
 
@@ -84,10 +104,14 @@ class ChangeTypeCommand extends Command
      * Create a new command instance.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
 
     /**
      * Execute the console command.
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -110,6 +134,8 @@ class ChangeTypeCommand extends Command
      * Execute the console command.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     public function handle(): void
     {
@@ -121,6 +147,9 @@ class ChangeTypeCommand extends Command
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (! $user) {
             $this->error("User with email '{$email}' not found.");
 
@@ -129,6 +158,7 @@ class ChangeTypeCommand extends Command
         if (! method_exists($user, 'getChildTypes')) {
             $this->error('User model does not have childTypes method.');
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -152,12 +182,17 @@ class ChangeTypeCommand extends Command
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             return;
         }
 
         $childTypes = $xot->getUserChildTypes();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
         // Get type label - BackedEnum needs HasLabel implementation
         $typeLabel = 'None';
@@ -176,6 +211,7 @@ class ChangeTypeCommand extends Command
 
         Assert::string($typeLabel);
         $this->info('Current user type: '.$typeLabel);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -207,6 +243,8 @@ class ChangeTypeCommand extends Command
         $this->info('Current user type: '.$typeLabel);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         $typeClass = $xot->getUserChildTypeClass();
         /** @var array<string, string> */
@@ -215,6 +253,9 @@ class ChangeTypeCommand extends Command
             if (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 \is_object($item)
                     && method_exists($item, 'getLabel')
                     && app(SafeObjectCastAction::class)->hasNonNullProperty($item, 'value')
@@ -223,6 +264,7 @@ class ChangeTypeCommand extends Command
                     ->getStringProperty($item, 'value', '');
                 $label = $item->getLabel();
                 $options[$value] = \is_scalar($label) || $label instanceof \Stringable ? (string) $label : 'Unknown';
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -247,6 +289,8 @@ class ChangeTypeCommand extends Command
                 $options[$value] = \is_scalar($label) || $label instanceof \Stringable ? (string) $label : 'Unknown';
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             } else {
                 $options[(string) $key] = 'Unknown';
             }
@@ -257,7 +301,11 @@ class ChangeTypeCommand extends Command
         $newTypeEnum = $typeClass::tryFrom($newType);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($newTypeEnum === null) {
+=======
+        if (null === $newTypeEnum) {
+>>>>>>> laraxot/dev
             throw new \InvalidArgumentException('Invalid user type selected.');
         }
         Assert::isInstanceOf($newTypeEnum, HasLabel::class);
@@ -277,6 +325,7 @@ class ChangeTypeCommand extends Command
             $labelString = (string) $label;
         }
         $this->info("User type changed to '{$labelString}' for {$email}");
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -312,5 +361,7 @@ class ChangeTypeCommand extends Command
         $this->info("User type changed to '{$labelString}' for {$email}");
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

@@ -11,6 +11,7 @@ use Modules\User\Models\User;
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * OauthClient Factory.
 =======
  * OauthClient Factory
@@ -21,6 +22,9 @@ use Modules\User\Models\User;
  * OauthClient Factory.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ * OauthClient Factory.
+>>>>>>> laraxot/dev
  *
  * Factory for creating OauthClient model instances for testing and seeding.
  *
@@ -42,6 +46,7 @@ class OauthClientFactory extends Factory
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
@@ -54,12 +59,20 @@ class OauthClientFactory extends Factory
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> laraxot/dev
     public function definition(): array
     {
         return [
             'id' => $this->faker->uuid(),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'user_id' => User::factory(),
             'name' => $this->faker->company(),
             'secret' => $this->faker->sha256(),
@@ -74,6 +87,7 @@ class OauthClientFactory extends Factory
             ),
             'scopes' => $this->faker->randomElements(
                 ['read', 'write', 'admin', 'user'],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -121,6 +135,8 @@ class OauthClientFactory extends Factory
                 ['read', 'write', 'admin', 'user'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 $this->faker->numberBetween(1, 3),
             ),
         ];
@@ -130,10 +146,14 @@ class OauthClientFactory extends Factory
      * Create a personal access client.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function personalAccess(): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -153,6 +173,8 @@ class OauthClientFactory extends Factory
         return $this->state(fn (): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'personal_access_client' => true,
             'password_client' => false,
             'name' => 'Personal Access Client',
@@ -163,10 +185,14 @@ class OauthClientFactory extends Factory
      * Create a password client.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function password(): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -186,6 +212,8 @@ class OauthClientFactory extends Factory
         return $this->state(fn (): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'password_client' => true,
             'personal_access_client' => false,
             'name' => 'Password Grant Client',
@@ -196,10 +224,14 @@ class OauthClientFactory extends Factory
      * Create a revoked client.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function revoked(): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -219,6 +251,8 @@ class OauthClientFactory extends Factory
         return $this->state(fn (): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'revoked' => true,
         ]);
     }
@@ -227,10 +261,14 @@ class OauthClientFactory extends Factory
      * Create an active client.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function active(): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -250,6 +288,8 @@ class OauthClientFactory extends Factory
         return $this->state(fn (): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'revoked' => false,
         ]);
     }
@@ -258,10 +298,14 @@ class OauthClientFactory extends Factory
      * Create client for a specific user.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function forUser(User $user): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -282,6 +326,8 @@ class OauthClientFactory extends Factory
         return $this->state(fn (): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'user_id' => $user->id,
         ]);
     }
@@ -290,10 +336,14 @@ class OauthClientFactory extends Factory
      * Create client with specific redirect URI.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function withRedirectUri(string $redirectUri): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -314,6 +364,8 @@ class OauthClientFactory extends Factory
         return $this->state(fn (): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'redirect' => $redirectUri,
         ]);
     }
@@ -321,6 +373,7 @@ class OauthClientFactory extends Factory
     /**
      * Create client with specific scopes.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @param  array<string>  $scopes
@@ -342,12 +395,18 @@ class OauthClientFactory extends Factory
 =======
 =======
      * @param  array<string>  $scopes
+=======
+     * @param array<string> $scopes
+>>>>>>> laraxot/dev
      */
     public function withScopes(array $scopes): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'scopes' => $scopes,
         ]);
     }

@@ -4,9 +4,12 @@ globs:
 alwaysApply: false
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -17,11 +20,14 @@ related:
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 # Best Practice: ActivityLog per la Moderazione Utenti
 

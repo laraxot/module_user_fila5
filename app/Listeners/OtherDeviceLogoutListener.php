@@ -8,10 +8,14 @@ use Illuminate\Auth\Events\Login;
 use Illuminate\Auth\Events\OtherDeviceLogout;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Modules\User\Actions\Authentication\GetAuthenticationLogQueryForAuthenticatableAction;
+<<<<<<< HEAD
 =======
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Http\Request;
@@ -28,6 +32,8 @@ use Illuminate\Http\Request;
 use Modules\User\Actions\Authentication\GetAuthenticationLogQueryForAuthenticatableAction;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Models\AuthenticationLog;
 
@@ -46,6 +52,9 @@ class OtherDeviceLogoutListener
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if ($event->user instanceof Model && $event->user instanceof HasAuthentications) {
             $user = $event->user;
             $ip = $this->request->ip();
@@ -59,6 +68,7 @@ class OtherDeviceLogoutListener
                 ->first();
 
             if (! $authenticationLog instanceof AuthenticationLog) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -89,6 +99,8 @@ class OtherDeviceLogoutListener
             if (! $authenticationLog instanceof AuthenticationLog) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 $authenticationLog = new AuthenticationLog([
                     'ip_address' => $ip,
                     'user_agent' => $userAgent,
@@ -97,6 +109,9 @@ class OtherDeviceLogoutListener
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             $logQuery
                 ->where('login_successful', true)
                 ->whereNull('logout_at')
@@ -105,6 +120,7 @@ class OtherDeviceLogoutListener
                     'cleared_by_user' => true,
                     'logout_at' => now(),
                 ]);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -130,6 +146,8 @@ class OtherDeviceLogoutListener
                 ]);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         }
     }
 
@@ -138,6 +156,7 @@ class OtherDeviceLogoutListener
      */
     public function handleLogin(Login $event): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (! config('authentication-log.notify_other_devices', false)) {
@@ -150,6 +169,9 @@ class OtherDeviceLogoutListener
         if (! config('authentication-log.notify_other_devices', false)) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! config('authentication-log.notify_other_devices', false)) {
+>>>>>>> laraxot/dev
             return;
         }
 
@@ -159,6 +181,9 @@ class OtherDeviceLogoutListener
         $user = $event->user;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (! $user instanceof Model || ! $user instanceof HasAuthentications) {
             return;
         }
@@ -168,6 +193,7 @@ class OtherDeviceLogoutListener
         $loginQuery
             ->orderByDesc('login_at')
             ->where(function (Builder $query) use ($newIP, $newUserAgent): void {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -194,6 +220,8 @@ class OtherDeviceLogoutListener
             ->where(function (Builder $query) use ($newIP, $newUserAgent): void {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 $query->where('ip_address', '!=', $newIP)->orWhere('user_agent', '!=', $newUserAgent);
             })
             ->where('login_successful', true)

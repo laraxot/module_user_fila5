@@ -6,6 +6,9 @@ namespace Modules\User\Tests\Unit\Models\Traits\Fixtures;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -18,11 +21,15 @@ use Modules\Xot\Contracts\UserContract as XotUserContract;
 use Modules\Xot\Models\Traits\RelationX;
 use Spatie\Permission\Contracts\Permission;
 use Spatie\Permission\Contracts\Role;
+<<<<<<< HEAD
 use Modules\User\Models\User;
+=======
+>>>>>>> laraxot/dev
 
 /**
  * Stub model for HasTeams trait unit tests; satisfies PHPStan in-context analysis.
  *
+<<<<<<< HEAD
  * @property string $id
  * @property int|null $current_team_id
  * @property TeamContract|null $currentTeam
@@ -31,6 +38,16 @@ use Modules\User\Models\User;
  * @property EloquentCollection<int, TeamUser> $teamUsers
  * @property XotUserContract|null $owner
  * @property int $total_members
+=======
+ * @property string                            $id
+ * @property int|null                          $current_team_id
+ * @property TeamContract|null                 $currentTeam
+ * @property EloquentCollection<int, Team>     $membershipTeams
+ * @property EloquentCollection<int, Team>     $ownedTeams
+ * @property EloquentCollection<int, TeamUser> $teamUsers
+ * @property XotUserContract|null              $owner
+ * @property int                               $total_members
+>>>>>>> laraxot/dev
  */
 class MockUserWithTeams extends Model
 {
@@ -59,7 +76,11 @@ class MockUserWithTeams extends Model
     }
 
     /**
+<<<<<<< HEAD
      * @param  string|int|array<array-key, string|int>|Role|\BackedEnum  $roles
+=======
+     * @param string|int|array<array-key, string|int>|Role|\BackedEnum $roles
+>>>>>>> laraxot/dev
      */
     public function hasRole(string|int|array|Role|\BackedEnum $roles, ?string $guard = null): bool
     {
@@ -75,6 +96,7 @@ class MockUserWithTeams extends Model
         $relation = $this->belongsToManyX(Team::class);
 
         return $relation;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -166,5 +188,7 @@ class MockUserWithTeams extends Model
         return $relation;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

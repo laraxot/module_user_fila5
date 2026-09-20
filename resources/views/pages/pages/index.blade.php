@@ -18,6 +18,9 @@ render(function (View $view) {
     // Recupero le pagine con paginazione (12 per pagina)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     $searchQuery = request()->query('q');
     $searchTerm = is_string($searchQuery) ? $searchQuery : '';
 
@@ -25,6 +28,7 @@ render(function (View $view) {
         'title',
         'like',
         '%' . $searchTerm . '%',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -45,6 +49,8 @@ render(function (View $view) {
         '%' . $searchTerm . '%',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     ));
 
     // Applichiamo il filtro per categoria solo se la colonna esiste

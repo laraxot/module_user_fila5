@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Refactor Completo Campi "Città" - Modulo User"
 type: concept
@@ -11,11 +14,14 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "translation-city-field-refactor- refactor completo campi "città" - modulo user"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -30,11 +36,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Refactor Completo Campi "Città" - Modulo User
 
 ## Riepilogo Intervento
@@ -196,6 +205,7 @@ Tutti i file corretti mantengono:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Struttura Completa Campi Traduzione](../../../../docs/translation-field-structure-complete.md)
 - [<nome progetto> Translation Audit](../../<nome progetto>/docs/translation_audit_city_fields.md)
 - [Translation Syntax Fixes](../../../../docs/translation_syntax_fixes.md)
@@ -214,6 +224,11 @@ Tutti i file corretti mantengono:
 - [Translation Syntax Fixes](../../../../docs/translation_syntax_fixes.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Struttura Completa Campi Traduzione](../../../../docs/translation-field-structure-complete.md)
+- [<nome progetto> Translation Audit](../../<nome progetto>/docs/translation_audit_city_fields.md)
+- [Translation Syntax Fixes](../../../../docs/translation_syntax_fixes.md)
+>>>>>>> laraxot/dev
 - [User Module Widget Translation Rules](widget-translation-rules.md)
 
 ## Prevenzione Futura
@@ -230,6 +245,7 @@ grep -A 10 -B 2 "label.*City\|label.*Stadt" laravel/Modules/*/lang/
 ### Template di Riferimento
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Utilizzare la documentazione centrale [`translation-field-structure-complete.md`](../../../../docs/translation-field-structure-complete.md) come template per tutti i nuovi campi di traduzione.
 =======
 Utilizzare la documentazione centrale [`translation-field-structure-complete.md`](../../../docs/translation-field-structure-complete.md) come template per tutti i nuovi campi di traduzione.
@@ -240,6 +256,9 @@ Utilizzare la documentazione centrale [`translation-field-structure-complete.md`
 Utilizzare la documentazione centrale [`translation-field-structure-complete.md`](../../../../docs/translation-field-structure-complete.md) come template per tutti i nuovi campi di traduzione.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+Utilizzare la documentazione centrale [`translation-field-structure-complete.md`](../../../../docs/translation-field-structure-complete.md) come template per tutti i nuovi campi di traduzione.
+>>>>>>> laraxot/dev
 
 ## Ultimo Aggiornamento
 2025-08-08 - Refactor completo campi "Città" modulo User ✅ COMPLETATO

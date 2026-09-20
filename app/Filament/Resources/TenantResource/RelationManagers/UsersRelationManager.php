@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Resources\TenantResource\RelationManagers;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
@@ -18,6 +21,7 @@ class UsersRelationManager extends XotBaseRelationManager
     protected static string $relationship = 'users';
 
     protected static ?string $recordTitleAttribute = 'name';
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -57,10 +61,13 @@ class UsersRelationManager extends XotBaseRelationManager
     protected static ?string $recordTitleAttribute = 'name';
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     /**
      * @return array<Component>
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     #[\Override]
@@ -73,6 +80,9 @@ class UsersRelationManager extends XotBaseRelationManager
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
     {
         return [
@@ -87,6 +97,7 @@ class UsersRelationManager extends XotBaseRelationManager
                 ->password()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->required(fn ($context) => 'create' === $context)
 =======
                 ->required(fn($context) => $context === 'create')
@@ -97,6 +108,9 @@ class UsersRelationManager extends XotBaseRelationManager
                 ->required(fn ($context) => 'create' === $context)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                ->required(fn ($context) => 'create' === $context)
+>>>>>>> laraxot/dev
                 ->minLength(8)
                 ->same('password_confirmation')
                 ->dehydrated(filled(...))
@@ -105,6 +119,7 @@ class UsersRelationManager extends XotBaseRelationManager
                 ->password()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ->required(fn ($context) => 'create' === $context)
 =======
                 ->required(fn($context) => $context === 'create')
@@ -115,6 +130,9 @@ class UsersRelationManager extends XotBaseRelationManager
                 ->required(fn ($context) => 'create' === $context)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                ->required(fn ($context) => 'create' === $context)
+>>>>>>> laraxot/dev
                 ->minLength(8),
         ];
     }
@@ -124,6 +142,7 @@ class UsersRelationManager extends XotBaseRelationManager
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[\Override]
 =======
     #[Override]
@@ -134,6 +153,9 @@ class UsersRelationManager extends XotBaseRelationManager
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public function getTableColumns(): array
     {
         return [

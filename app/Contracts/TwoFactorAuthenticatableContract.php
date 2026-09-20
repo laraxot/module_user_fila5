@@ -26,6 +26,7 @@ interface TwoFactorAuthenticatableContract
      * Get the user's two factor authentication recovery codes.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return array<int, string>
 =======
@@ -36,6 +37,10 @@ interface TwoFactorAuthenticatableContract
      * @return array<int, string>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+     * @return array<int, string>
+>>>>>>> laraxot/dev
      */
     public function recoveryCodes(): array;
 

@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Clusters\Appearance\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Forms\Components\ColorPicker;
 use Filament\Schemas\Schema;
@@ -32,6 +35,7 @@ class Colors extends XotBasePage
     protected static ?string $cluster = Appearance::class;
 
     protected static ?int $navigationSort = 3;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -94,6 +98,8 @@ class Colors extends XotBasePage
     protected static ?int $navigationSort = 3;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     public function mount(): void
     {
@@ -109,6 +115,7 @@ class Colors extends XotBasePage
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function schema(Schema $schema): Schema
 =======
     public function form(Schema $schema): Schema
@@ -119,6 +126,9 @@ class Colors extends XotBasePage
     public function schema(Schema $schema): Schema
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function schema(Schema $schema): Schema
+>>>>>>> laraxot/dev
     {
         return $schema
             ->components([
@@ -161,6 +171,7 @@ class Colors extends XotBasePage
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<Action>
      */
@@ -173,6 +184,11 @@ class Colors extends XotBasePage
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return array<Action>
+     */
+>>>>>>> laraxot/dev
     protected function getUpdateFormActions(): array
     {
         return [
@@ -181,7 +197,11 @@ class Colors extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data
+=======
+     * @param array<string, mixed> $data
+>>>>>>> laraxot/dev
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {

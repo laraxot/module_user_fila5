@@ -6,6 +6,9 @@ namespace Modules\User\Database\Factories;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\Extra;
 use Modules\Xot\Database\Factories\BaseExtraFactory;
 
@@ -20,6 +23,7 @@ class ExtraFactory extends BaseExtraFactory
 {
     /** @var class-string<Extra> */
     protected $model = Extra::class;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -67,4 +71,6 @@ class ExtraFactory extends BaseExtraFactory
     protected $model = Extra::class;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

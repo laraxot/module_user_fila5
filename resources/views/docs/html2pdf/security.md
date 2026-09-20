@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: security
@@ -7,6 +10,7 @@ canonical: ../../../../../../Themes/docs/shared-components/security.md
 ---
 
 See canonical documentation: ../../../../../../Themes/docs/shared-components/security.md
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -178,3 +182,5 @@ canonical: ../../../../../../Themes/docs/shared-components/security.md
 See canonical documentation: ../../../../../../Themes/docs/shared-components/security.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

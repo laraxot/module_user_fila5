@@ -8,6 +8,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Route;
 use Modules\User\Http\Controllers\Auth\EmailVerificationController;
 use Modules\User\Http\Controllers\Auth\LogoutController;
@@ -17,6 +20,7 @@ use Modules\User\Http\Livewire\Auth\Passwords\Reset;
 use Modules\User\Http\Livewire\Auth\Register;
 use Modules\User\Http\Livewire\Auth\Verify;
 use Webmozart\Assert\Assert;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -43,6 +47,8 @@ use Modules\User\Http\Livewire\Auth\Verify;
 use Webmozart\Assert\Assert;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /*
  * |--------------------------------------------------------------------------
@@ -58,6 +64,7 @@ use Webmozart\Assert\Assert;
 // Route::view('/', 'welcome')->name('home');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::prefix('{lang}')->group(function (): void {
 =======
 Route::prefix('{lang}')->group(function () {
@@ -68,6 +75,9 @@ Route::prefix('{lang}')->group(function () {
 Route::prefix('{lang}')->group(function (): void {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+Route::prefix('{lang}')->group(function (): void {
+>>>>>>> laraxot/dev
     Route::middleware('guest')
         ->namespace('\Modules\User\Http\Livewire\Auth')
         ->group(static function (): void {
@@ -89,6 +99,9 @@ Route::prefix('{lang}')->group(function (): void {
         ->group(static function (): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             $route = Route::get('email/verify', Verify::class);
             Assert::isInstanceOf($route, Illuminate\Routing\Route::class);
             $route->middleware('throttle:6,1');
@@ -97,6 +110,7 @@ Route::prefix('{lang}')->group(function (): void {
             $route = Route::get('password/confirm', Confirm::class);
             Assert::isInstanceOf($route, Illuminate\Routing\Route::class);
             $route->name('password.confirm');
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -121,6 +135,8 @@ Route::prefix('{lang}')->group(function (): void {
             $route->name('password.confirm');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         });
 
     Route::middleware('auth')
@@ -128,10 +144,14 @@ Route::prefix('{lang}')->group(function (): void {
         ->group(static function (): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             $route = Route::get('email/verify/{id}/{hash}', EmailVerificationController::class);
             Assert::isInstanceOf($route, Illuminate\Routing\Route::class);
             $route->middleware('signed');
             $route->name('verification.verify');
+<<<<<<< HEAD
 =======
             Route::get('email/verify/{id}/{hash}', EmailVerificationController::class)
                 ->middleware('signed')
@@ -148,6 +168,8 @@ Route::prefix('{lang}')->group(function (): void {
             $route->name('verification.verify');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
             Route::match(['get', 'post'], 'logout', LogoutController::class)->name('logout');
         });
@@ -161,6 +183,7 @@ Route::namespace('Socialite')
             'RedirectToProviderController',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // 'LoginController@redirectToProvider',
 =======
         // 'LoginController@redirectToProvider',
@@ -171,6 +194,9 @@ Route::namespace('Socialite')
             // 'LoginController@redirectToProvider',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            // 'LoginController@redirectToProvider',
+>>>>>>> laraxot/dev
         );
         // ->name('oauth.redirect')
 

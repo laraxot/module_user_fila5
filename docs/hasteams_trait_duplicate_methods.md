@@ -73,10 +73,13 @@ Nel trait `HasTeams` sono presenti diversi metodi con lo stesso nome ma implemen
 
 ## Collegamenti correlati
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Indice documentazione User](./index.md)
 
 =======
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> laraxot/dev
 - [Indice documentazione User](./INDEX.md)
 - [Modello User](./Models/User.md)
 - [Best practices trait](./best-practices-traits.md)

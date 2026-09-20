@@ -31,11 +31,14 @@ class ResolveFilamentUserConfigurationAction
 
         return [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'enabled' => $filamentUserConfig->enabled,
             'name' => $filamentUserConfig->name,
         ];
     }
 =======
+=======
+>>>>>>> laraxot/dev
             'enabled' => $this->toBoolean($filamentUserConfig->enabled ?? false),
             'name' => $this->toString($filamentUserConfig->name ?? 'Filament User'),
         ];
@@ -50,5 +53,8 @@ class ResolveFilamentUserConfigurationAction
     {
         return is_string($value) ? $value : '';
     }
+<<<<<<< HEAD
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'navigation' => ['label' => 'Token Accesso OAuth', 'plural_label' => 'Token Accesso OAuth', 'group' => 'OAuth', 'icon' => 'heroicon-o-key', 'sort' => 33],
     'label' => 'Token Accesso OAuth',
     'plural_label' => 'Token Accesso OAuth',
@@ -18,6 +21,7 @@ return [
         'expires_at' => ['label' => 'Scade il', 'tooltip' => 'Data di scadenza', 'placeholder' => 'Seleziona la data', 'helper_text' => 'Data e ora di scadenza del token', 'description' => 'Data di scadenza'],
         'user' => [
             'name' => ['label' => 'Nome Utente', 'tooltip' => 'Nome dell\'utente', 'helper_text' => 'Nome dell\'utente proprietario', 'description' => 'Nome utente'],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -104,12 +108,15 @@ return [
             'name' => ['label' => 'Nome Utente', 'tooltip' => 'Nome dell\'utente', 'helper_text' => 'Nome dell\'utente proprietario', 'description' => 'Nome utente'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'client' => [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'name' => ['label' => 'Nome Client', 'tooltip' => 'Nome del client', 'helper_text' => 'Nome del client OAuth', 'description' => 'Nome client'],
@@ -129,6 +136,9 @@ return [
             'name' => ['label' => 'Nome Client', 'tooltip' => 'Nome del client', 'helper_text' => 'Nome del client OAuth', 'description' => 'Nome client'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'name' => ['label' => 'Nome Client', 'tooltip' => 'Nome del client', 'helper_text' => 'Nome del client OAuth', 'description' => 'Nome client'],
+>>>>>>> laraxot/dev
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -136,6 +146,9 @@ return [
         ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'created_at' => ['label' => 'Creato il', 'tooltip' => 'Data di creazione', 'helper_text' => 'Data e ora di creazione del token', 'description' => 'Data di creazione'],
         'expired' => ['label' => 'Scaduto', 'tooltip' => 'Stato di scadenza', 'helper_text' => 'Indica se il token è scaduto', 'description' => 'Stato di scadenza'],
         'valid' => ['label' => 'Valido', 'tooltip' => 'Validità del token', 'helper_text' => 'Indica se il token è valido', 'description' => 'Stato di validità'],
@@ -149,6 +162,7 @@ return [
         'create' => ['label' => 'Crea', 'tooltip' => 'Crea un nuovo token', 'helper_text' => 'Crea un nuovo token', 'description' => 'Azione per creare', 'icon' => 'heroicon-o-plus'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+<<<<<<< HEAD
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
     ],
@@ -244,4 +258,8 @@ return [
     ],
     'messages' => ['created' => 'Token creato con successo', 'revoked' => 'Token revocato con successo', 'deleted' => 'Token eliminato con successo'],
 >>>>>>> 2024e2e7 (.)
+=======
+    ],
+    'messages' => ['created' => 'Token creato con successo', 'revoked' => 'Token revocato con successo', 'deleted' => 'Token eliminato con successo'],
+>>>>>>> laraxot/dev
 ];

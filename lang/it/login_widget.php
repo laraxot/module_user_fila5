@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 return [
     'fields' => [
         'email' => ['label' => 'Indirizzo email', 'placeholder' => 'esempio@comune.it', 'helper_text' => 'Email usata per registrarti ai servizi online', 'tooltip' => 'Inserisci l’indirizzo email dell’account', 'description' => 'Campo email per l’autenticazione'],
@@ -14,6 +17,7 @@ return [
         'hidePassword' => ['label' => 'Nascondi password', 'tooltip' => 'Nascondi password', 'icon' => 'hidePassword'],
         'showPassword' => ['label' => 'Mostra password', 'tooltip' => 'Mostra password', 'icon' => 'showPassword'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -74,5 +78,7 @@ return [
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     ],
 ];

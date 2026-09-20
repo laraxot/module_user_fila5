@@ -4,11 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Socialite\Resources;
 
+<<<<<<< HEAD
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Component;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Clusters\Socialite;
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource\Pages\CreateSocialProvider;
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource\Pages\EditSocialProvider;
@@ -27,6 +30,7 @@ class SocialProviderResource extends XotBaseResource
 
     protected static ?string $model = SocialProvider::class;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * @return array<string, Component>
@@ -97,6 +101,8 @@ class SocialProviderResource extends XotBaseResource
 
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
     #[\Override]
     public static function getRelations(): array
     {

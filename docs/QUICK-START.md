@@ -18,10 +18,14 @@ php artisan migrate --path=Modules/User/database/migrations
 
 ```php
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 =======
 use Modules\User\Models\User;
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Models\User;
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Hash;
 
 $user = User::create([

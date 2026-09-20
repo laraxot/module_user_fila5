@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature;
 
 use Modules\User\Models\User;
@@ -15,13 +18,21 @@ uses(TestCase::class);
 describe('User Model Simple', function (): void {
     test('user model can be instantiated', function (): void {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $user = new User;
+=======
+        $user = new User();
+>>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(User::class, $user);
     });
 
     test('user model can access connection', function (): void {
+<<<<<<< HEAD
         $user = new User;
+=======
+        $user = new User();
+>>>>>>> laraxot/dev
 
         Assert::assertSame('user', $user->getConnectionName());
     });
@@ -40,6 +51,7 @@ describe('User Model Simple', function (): void {
 
         Assert::assertInstanceOf(User::class, $user);
     });
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -126,4 +138,6 @@ describe('User Model Simple', function (): void {
     });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

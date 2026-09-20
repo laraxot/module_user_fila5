@@ -7,6 +7,7 @@ namespace Modules\User\Filament\Resources\UserResource\Widgets;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 =======
 use Filament\Widgets\Widget;
@@ -17,16 +18,23 @@ use Filament\Widgets\Widget;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+>>>>>>> laraxot/dev
 
 /**
  * Simple widget used to verify page filters behaviour (shows start/end dates).
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 class UserWidget extends XotBaseWidget
 {
     use InteractsWithPageFilters;
 
+<<<<<<< HEAD
 =======
 class UserWidget extends Widget
 {
@@ -43,12 +51,17 @@ class UserWidget extends XotBaseWidget
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected static bool $isLazy = false;
 
     protected string $view = 'user::filament.resources.user.widgets.user-widget';
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
     {
         return [];
@@ -66,6 +79,7 @@ class UserWidget extends XotBaseWidget
         return $data ?? [];
     }
 }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -112,3 +126,5 @@ class UserWidget extends XotBaseWidget
 }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

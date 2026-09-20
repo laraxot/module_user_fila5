@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Compatibilità Filament 4.x - Modulo User"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Compatibilità Filament 4.x - Modulo User
 
 **Data**: 2025-01-27
@@ -164,10 +170,14 @@ $this->info("Current user type: " . $typeLabelString);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Rapporto Aggiornamento Filament 4.x](../../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Documentazione Autenticazione](https://filamentphp.com/docs/panels/authentication)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-27*
 =======
 =======
@@ -188,3 +198,6 @@ $this->info("Current user type: " . $typeLabelString);
 *Ultimo aggiornamento: 2025-01-27*
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+*Ultimo aggiornamento: 2025-01-27*
+>>>>>>> laraxot/dev

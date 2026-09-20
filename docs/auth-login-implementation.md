@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Implementazione Corretta della Pagina di Login"
 type: concept
@@ -28,6 +31,7 @@ related:
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
 - [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -73,17 +77,23 @@ related:
 - [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 La pagina di login è stata migliorata per conformarsi alle regole e alle best practices di <nome progetto>. Ecco i principali miglioramenti apportati:
 
 ### 1. Utilizzo dei Componenti Filament
 
 Secondo le regole di <nome progetto>, si devono utilizzare SEMPRE i componenti Blade nativi di Filament invece di componenti UI personalizzati. Questo garantisce coerenza, manutenibilità e accessibilità.
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -103,6 +113,8 @@ La pagina di login è stata migliorata per conformarsi alle regole e alle best p
 Secondo le regole di <nome progetto>, si devono utilizzare SEMPRE i componenti Blade nativi di Filament invece di componenti UI personalizzati. Questo garantisce coerenza, manutenibilità e accessibilità.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 ```blade
 <!-- ERRATO: Componenti UI personalizzati -->
@@ -122,6 +134,9 @@ Secondo le regole di <nome progetto>, si devono utilizzare SEMPRE i componenti B
 >
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     <x-filament::input
         type="email"
         id="email"
@@ -324,6 +339,7 @@ Secondo le regole di <nome progetto>, si devono utilizzare SEMPRE i componenti B
     required
 >
     <x-filament::input
+<<<<<<< HEAD
 =======
     <x-filament::input 
 >>>>>>> f548be94 (.)
@@ -534,6 +550,8 @@ Secondo le regole di <nome progetto>, si devono utilizzare SEMPRE i componenti B
     <x-filament::input
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         type="email"
         id="email"
         name="email"
@@ -697,6 +715,7 @@ rules([
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Seguendo queste linee guida, è possibile implementare pagine di autenticazione conformi alle regole e alle best practices di <nome progetto>, garantendo coerenza, manutenibilità e accessibilità in tutto il progetto.
 =======
 Seguendo queste linee guida, è possibile implementare pagine di autenticazione conformi alle regole e alle best practices di SaluteOra, garantendo coerenza, manutenibilità e accessibilità in tutto il progetto.
@@ -707,3 +726,6 @@ Seguendo queste linee guida, è possibile implementare pagine di autenticazione 
 Seguendo queste linee guida, è possibile implementare pagine di autenticazione conformi alle regole e alle best practices di <nome progetto>, garantendo coerenza, manutenibilità e accessibilità in tutto il progetto.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+Seguendo queste linee guida, è possibile implementare pagine di autenticazione conformi alle regole e alle best practices di <nome progetto>, garantendo coerenza, manutenibilità e accessibilità in tutto il progetto.
+>>>>>>> laraxot/dev

@@ -18,6 +18,7 @@ class GetProviderButtonsAction
      * Execute the action.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return array<int, never>
 =======
@@ -28,6 +29,10 @@ class GetProviderButtonsAction
      * @return array<int, never>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+     * @return array<int, never>
+>>>>>>> laraxot/dev
      */
     public function execute(): array
     {

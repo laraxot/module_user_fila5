@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f548be94 (.)
@@ -12,12 +13,15 @@ declare(strict_types=1);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 return [
     'error' => 'Ops!',
     'greeting' => 'Ciao!',
     'regards' => 'Cordiali saluti,',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'trouble_clicking_button' => 'Se hai problemi a cliccare sul pulsante \\":actionText\\", copia e incolla l\'URL qui sotto nel tuo browser:',
 =======
     'trouble_clicking_button' => 'Se hai problemi a cliccare sul pulsante \":actionText\", copia e incolla l\'URL qui sotto nel tuo browser:',
@@ -28,6 +32,9 @@ return [
     'trouble_clicking_button' => 'Se hai problemi a cliccare sul pulsante \\":actionText\\", copia e incolla l\'URL qui sotto nel tuo browser:',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    'trouble_clicking_button' => 'Se hai problemi a cliccare sul pulsante \\":actionText\\", copia e incolla l\'URL qui sotto nel tuo browser:',
+>>>>>>> laraxot/dev
     'thank_you_for_using_app' => 'Grazie per aver utilizzato la nostra applicazione!',
     'password_reset_subject' => 'Reimposta la Password',
     'password_cause_of_email' => 'Ricevi questa email perché abbiamo ricevuto una richiesta di reimpostazione della password per il tuo account.',
@@ -36,9 +43,12 @@ return [
     'click_to_confirm' => 'Clicca qui per confermare il tuo account:',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -53,9 +63,12 @@ return [
     'actions' => [
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

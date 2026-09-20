@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Filament Resources Coverage Analysis - Modulo User"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Filament Resources Coverage Analysis - Modulo User
 
 ## Data: 2025-01-02
@@ -240,6 +246,7 @@ Questi modelli sono pivot tables e NON devono avere Resources standalone:
 - [Filament Best Practices](./filament-best-practices.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
 =======
 - [Filosofia Modulo User](./filosofia_modulo_user.md)
@@ -250,3 +257,6 @@ Questi modelli sono pivot tables e NON devono avere Resources standalone:
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Filosofia Modulo User](./filosofia-modulo-user.md)
+>>>>>>> laraxot/dev

@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -37,6 +40,7 @@ class LoginWidget extends XotBaseSchemaWidget
     protected static function schemaMethod(): string
     {
         return 'getLoginFormSchema';
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -115,10 +119,13 @@ class LoginWidget extends XotBaseSchemaWidget
         return 'getLoginFormSchema';
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     public function login(): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         /** @var array<string, mixed> $data */
@@ -129,6 +136,9 @@ class LoginWidget extends XotBaseSchemaWidget
         /** @var array<string, mixed> $data */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        /** @var array<string, mixed> $data */
+>>>>>>> laraxot/dev
         $data = $this->form->getState();
 
         $credentials = [
@@ -138,7 +148,11 @@ class LoginWidget extends XotBaseSchemaWidget
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $remember = isset($data['remember']) && $data['remember'] === true;
+=======
+        $remember = isset($data['remember']) && true === $data['remember'];
+>>>>>>> laraxot/dev
 
         if (Auth::attempt($credentials, $remember)) {
             session()->regenerate();
@@ -157,6 +171,7 @@ class LoginWidget extends XotBaseSchemaWidget
     public function save(): void
     {
         $this->login();
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -191,5 +206,7 @@ class LoginWidget extends XotBaseSchemaWidget
         $this->login();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

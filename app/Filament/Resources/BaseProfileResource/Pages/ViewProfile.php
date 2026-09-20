@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\BaseProfileResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\ImageEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Flex;
@@ -40,10 +41,15 @@ use Modules\User\Filament\Resources\BaseProfileResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Filament\Resources\BaseProfileResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+>>>>>>> laraxot/dev
 
 class ViewProfile extends XotBaseViewRecord
 {
     protected static string $resource = BaseProfileResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -117,4 +123,6 @@ class ViewProfile extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
 }

@@ -154,6 +154,7 @@ render(function (View $view) {
                 <a
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     href="{{ url('/' . $locale . '/' . $page->slug) }}"
 =======
                     href="{{ url('/' . $locale . '/pages/' . $page->slug) }}"
@@ -164,6 +165,9 @@ render(function (View $view) {
                     href="{{ url('/' . $locale . '/' . $page->slug) }}"
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                    href="{{ url('/' . $locale . '/' . $page->slug) }}"
+>>>>>>> laraxot/dev
                     class="group flex flex-col h-full overflow-hidden bg-white rounded-lg shadow hover:shadow-md transition duration-300"
                 >
                     @if(isset($page->featured_image) && $page->featured_image)

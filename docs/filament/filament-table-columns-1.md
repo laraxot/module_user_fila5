@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Convenzione Metodo getTableColumns per Filament Table"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Convenzione Metodo getTableColumns per Filament Table
 
 ## Motivazione della Modifica
@@ -64,6 +70,7 @@ public function getTableColumns(): array
 ## Collegamenti
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regola Generale - Modulo Xot](../../../xot/docs/filament-table-columns-2.md)
 - [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
 =======
@@ -78,6 +85,10 @@ public function getTableColumns(): array
 - [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Regola Generale - Modulo Xot](../../../xot/docs/filament-table-columns-2.md)
+- [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
+>>>>>>> laraxot/dev
 
 ---
 

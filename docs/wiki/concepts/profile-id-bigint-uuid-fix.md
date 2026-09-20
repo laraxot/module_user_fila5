@@ -56,6 +56,7 @@ php artisan migrate
 # SHOW COLUMNS: id bigint unsigned auto_increment
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Fix restaurant_fila5 (2026-09-04)
 
@@ -87,3 +88,5 @@ Correzioni:
 Verifica login funzionante → composer/pint/phpstan green sui file chiave.
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

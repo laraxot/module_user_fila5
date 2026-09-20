@@ -10,6 +10,7 @@ use Modules\User\Models\Role;
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * Factory per il modello Role del modulo User.
  *
@@ -20,6 +21,8 @@ use Modules\User\Models\Role;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @extends Factory<Role>
  */
 class RoleFactory extends Factory
@@ -27,6 +30,7 @@ class RoleFactory extends Factory
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * The name of the factory's corresponding model.
 =======
      * Il nome del modello corrispondente alla factory.
@@ -37,6 +41,9 @@ class RoleFactory extends Factory
      * The name of the factory's corresponding model.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * The name of the factory's corresponding model.
+>>>>>>> laraxot/dev
      *
      * @var class-string<Role>
      */
@@ -45,6 +52,9 @@ class RoleFactory extends Factory
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * Define the model's default state.
      *
      * @return array<string, mixed>
@@ -60,6 +70,7 @@ class RoleFactory extends Factory
             'team_id' => null,
         ];
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -160,4 +171,6 @@ class RoleFactory extends Factory
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

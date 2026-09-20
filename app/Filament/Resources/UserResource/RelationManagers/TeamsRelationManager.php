@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Actions\AttachAction;
 use Filament\Actions\BulkAction;
@@ -82,6 +85,7 @@ class TeamsRelationManager extends XotBaseRelationManager
                         return;
                     }
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -204,12 +208,17 @@ class TeamsRelationManager extends XotBaseRelationManager
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                     $user->update([
                         'current_team_id' => null,
                     ]);
                 }),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         ];
     }
 
@@ -221,6 +230,7 @@ class TeamsRelationManager extends XotBaseRelationManager
     {
         return [
             'detach' => DetachBulkAction::make(),
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -253,6 +263,8 @@ class TeamsRelationManager extends XotBaseRelationManager
             'detach' => DetachBulkAction::make(),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ];
     }
 }

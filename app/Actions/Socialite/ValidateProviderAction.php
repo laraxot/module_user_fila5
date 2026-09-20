@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -15,6 +16,8 @@
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite;
@@ -28,12 +31,16 @@ class ValidateProviderAction
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function execute(string $provider): void
     {
         $hasConfig = config()->has('services.'.$provider);
         if (! $hasConfig) {
             $ex = new ProviderNotConfigured();
             throw $ex->make($provider);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -57,6 +64,8 @@ class ValidateProviderAction
             throw $ex->make($provider);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         }
     }
 }

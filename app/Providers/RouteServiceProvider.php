@@ -10,6 +10,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public string $name = 'User';
 
 =======
@@ -20,6 +21,10 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public string $name = 'User';
+
+>>>>>>> laraxot/dev
     protected string $moduleNamespace = 'Modules\User\Http\Controllers';
 
     protected string $module_dir = __DIR__;
@@ -27,6 +32,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     protected string $module_ns = __NAMESPACE__;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
     public string $name = 'User';
@@ -37,4 +43,6 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

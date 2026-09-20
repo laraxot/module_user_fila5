@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Auth;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
@@ -13,6 +16,7 @@ abstract class BaseAuthWidget extends XotBaseWidget
 {
     /** @var array<string, mixed>|null */
     public ?array $data = [];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -35,6 +39,8 @@ abstract class BaseAuthWidget extends XotBaseWidget
     public ?array $data = [];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     public function mount(): void
     {
@@ -48,6 +54,7 @@ abstract class BaseAuthWidget extends XotBaseWidget
      * In Filament v3/Xot, il form va gestito tramite getFormSchema().
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
 =======
 >>>>>>> f548be94 (.)
@@ -56,6 +63,9 @@ abstract class BaseAuthWidget extends XotBaseWidget
      *
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     protected function getViewData(): array
@@ -64,6 +74,7 @@ abstract class BaseAuthWidget extends XotBaseWidget
             'form' => $this->getFormSchema(),
         ];
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -83,4 +94,6 @@ abstract class BaseAuthWidget extends XotBaseWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

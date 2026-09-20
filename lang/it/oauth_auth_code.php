@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => ['label' => 'Codici Autorizzazione OAuth', 'plural_label' => 'Codici Autorizzazione OAuth', 'group' => 'OAuth', 'icon' => 'heroicon-o-code-bracket', 'sort' => 31],
     'label' => 'Codice Autorizzazione OAuth',
     'plural_label' => 'Codici Autorizzazione OAuth',
@@ -101,6 +102,8 @@ return [
 >>>>>>> 60a2c9a9 (.)
     ],
 =======
+=======
+>>>>>>> laraxot/dev
     'navigation' => ['label' => 'Codici Autorizzazione OAuth', 'plural_label' => 'Codici Autorizzazione OAuth', 'group' => 'OAuth', 'icon' => 'heroicon-o-code-bracket', 'sort' => 31],
     'label' => 'Codice Autorizzazione OAuth',
     'plural_label' => 'Codici Autorizzazione OAuth',
@@ -121,6 +124,7 @@ return [
     ],
     'actions' => [
         'revoke' => ['label' => 'Revoca', 'tooltip' => 'Revoca il codice', 'helper_text' => 'Revoca questo codice', 'description' => 'Azione per revocare il codice', 'success' => 'Codice di autorizzazione revocato con successo'],
+<<<<<<< HEAD
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
@@ -128,4 +132,10 @@ return [
     ],
     'messages' => ['revoked' => 'Codice revocato con successo'],
 >>>>>>> 2024e2e7 (.)
+=======
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+    ],
+    'messages' => ['revoked' => 'Codice revocato con successo'],
+>>>>>>> laraxot/dev
 ];

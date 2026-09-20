@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Models\XotBaseMorphPivot;
 =======
 =======
@@ -22,17 +23,24 @@ use Modules\Xot\Traits\Updater;
 use Modules\Xot\Models\XotBaseMorphPivot;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\Xot\Models\XotBaseMorphPivot;
+>>>>>>> laraxot/dev
 
 /**
  * Class BaseMorphPivot.
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 abstract class BaseMorphPivot extends XotBaseMorphPivot
 {
     protected $connection = 'user';
 
     /** @var list<string> */
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -89,6 +97,8 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
     /** @var list<string> */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected $fillable = [
         'id',
         'post_id',
@@ -98,6 +108,7 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
         'note',
     ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -120,6 +131,8 @@ abstract class BaseMorphPivot extends XotBaseMorphPivot
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     /** @return array<string, string> */
     protected function casts(): array
     {

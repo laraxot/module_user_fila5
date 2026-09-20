@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Struttura dei Tests del Modulo User"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Struttura dei Tests del Modulo User
 
 ## Panoramica
@@ -319,6 +325,7 @@ dump($variable);
 - [README Modulo User](../readme.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Testing](../../../../docs/project/testing-best-practices.md)
 =======
 - [Best Practices Testing](../../../project_docs/testing-best-practices.md)
@@ -329,6 +336,9 @@ dump($variable);
 - [Best Practices Testing](../../../../docs/project/testing-best-practices.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Best Practices Testing](../../../../docs/project/testing-best-practices.md)
+>>>>>>> laraxot/dev
 - [Architettura Modulo User](../architecture/readme.md)
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
@@ -336,6 +346,7 @@ dump($variable);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> 60a2c9a9 (.)
@@ -344,6 +355,8 @@ dump($variable);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 
 

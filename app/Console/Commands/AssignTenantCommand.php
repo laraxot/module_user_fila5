@@ -6,6 +6,7 @@ namespace Modules\User\Console\Commands;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
 =======
@@ -24,12 +25,17 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Console\Command;
+use Illuminate\Support\Collection;
+>>>>>>> laraxot/dev
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 
@@ -42,12 +48,18 @@ use Modules\Xot\Datas\XotData;
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+
+>>>>>>> laraxot/dev
 class AssignTenantCommand extends Command
 {
     /**
      * The name and signature of the console command.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -58,6 +70,8 @@ class AssignTenantCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $name = 'user:assign-tenant';
 
@@ -65,6 +79,7 @@ class AssignTenantCommand extends Command
      * The console command description.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -75,11 +90,14 @@ class AssignTenantCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $description = 'Assign a tenant to user';
 
     /**
      * Create a new command instance.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      */
@@ -97,6 +115,9 @@ class AssignTenantCommand extends Command
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     */
+>>>>>>> laraxot/dev
 
     /**
      * Execute the console command.
@@ -120,11 +141,15 @@ class AssignTenantCommand extends Command
             scroll: 10,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             // validate: function (array $values) {
             //  return ! \in_array(\count($values), [1, 2], false)
             //    ? 'A maximum of two'
             //  : null;
             // }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -144,6 +169,8 @@ class AssignTenantCommand extends Command
             // }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         );
 
         $user->tenants()->sync($rows);
@@ -155,6 +182,9 @@ class AssignTenantCommand extends Command
          */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $this->info(implode(', ', $rows).' assigned to '.$email);
     }
 
@@ -167,6 +197,7 @@ class AssignTenantCommand extends Command
     //     ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
     // }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -200,4 +231,6 @@ class AssignTenantCommand extends Command
     // }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

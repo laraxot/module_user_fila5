@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 <div>
     <form wire:submit="save">
         {{ $this->form }}
@@ -16,6 +19,7 @@
             </button>
         </div>
     </form>
+<<<<<<< HEAD
 </div>
 =======
 =======
@@ -83,3 +87,6 @@ declare(strict_types=1);
 </div>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+</div>
+>>>>>>> laraxot/dev

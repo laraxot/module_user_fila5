@@ -9,10 +9,14 @@ use Filament\Actions\ActionGroup;
 use Filament\Actions\CreateAction;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\PersonalAccessTokenResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseManageRecords;
 
 final class ManagePersonalAccessTokens extends XotBaseManageRecords
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -30,6 +34,8 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseManageRecords;
 final class ManagePersonalAccessTokens extends XotBaseManageRecords
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 {
     protected static string $resource = PersonalAccessTokenResource::class;
 

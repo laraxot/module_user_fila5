@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'navigation' => ['label' => 'Team Invitations', 'group' => 'Teams', 'icon' => 'heroicon-o-envelope', 'sort' => 34],
     'label' => 'Team Invitation',
     'plural_label' => 'Team Invitation (Plurale)',
@@ -67,6 +68,8 @@ return [
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
     'navigation' => ['label' => 'Team Invitations', 'group' => 'Teams', 'icon' => 'heroicon-o-envelope', 'sort' => 34],
     'label' => 'Team Invitation',
     'plural_label' => 'Team Invitation (Plurale)',
@@ -82,8 +85,11 @@ return [
         'create' => ['label' => 'Crea Team Invitation', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Team Invitation', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Team Invitation', 'icon' => 'delete', 'tooltip' => 'delete'],
+<<<<<<< HEAD
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     ],
 ];

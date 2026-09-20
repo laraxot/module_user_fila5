@@ -15,6 +15,7 @@ return [
     'click_to_confirm' => 'Clicca qui per confermare il tuo account:',
     'password_reset_expiration' => 'Questo link per il reset della password scadrà tra :count minuti.',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'navigation' => [
         'label' => 'Missing Navigation Label',
@@ -30,4 +31,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

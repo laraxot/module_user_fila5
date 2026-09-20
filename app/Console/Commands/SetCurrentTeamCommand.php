@@ -6,6 +6,7 @@ namespace Modules\User\Console\Commands;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
 =======
@@ -25,10 +26,15 @@ use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Console\Command;
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> laraxot/dev
 
 use function Laravel\Prompts\select;
 use function Laravel\Prompts\text;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Modules\Xot\Datas\XotData;
@@ -41,6 +47,10 @@ use Modules\Xot\Datas\XotData;
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\Xot\Datas\XotData;
+
+>>>>>>> laraxot/dev
 /**
  * Comando per impostare il team corrente per un utente.
  */
@@ -50,6 +60,7 @@ class SetCurrentTeamCommand extends Command
      * The name and signature of the console command.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -60,6 +71,8 @@ class SetCurrentTeamCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $name = 'user:set-current-team';
 
@@ -67,6 +80,7 @@ class SetCurrentTeamCommand extends Command
      * The console command description.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -77,6 +91,8 @@ class SetCurrentTeamCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $description = 'Assign current team to user';
 
@@ -90,6 +106,7 @@ class SetCurrentTeamCommand extends Command
             $this->error('Email non valida!');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f548be94 (.)
@@ -98,6 +115,9 @@ class SetCurrentTeamCommand extends Command
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
             return;
         }
 
@@ -106,6 +126,7 @@ class SetCurrentTeamCommand extends Command
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $user instanceof Model) {
             $this->error('Utente non trovato o non valido!');
 
@@ -122,12 +143,18 @@ class SetCurrentTeamCommand extends Command
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! $user instanceof Model) {
+            $this->error('Utente non trovato o non valido!');
+
+>>>>>>> laraxot/dev
             return;
         }
 
         $teamClass = $xot->getTeamClass();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! class_exists($teamClass)) {
             $this->error('Classe team non trovata!');
 
@@ -144,6 +171,11 @@ class SetCurrentTeamCommand extends Command
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! class_exists($teamClass)) {
+            $this->error('Classe team non trovata!');
+
+>>>>>>> laraxot/dev
             return;
         }
 
@@ -154,6 +186,7 @@ class SetCurrentTeamCommand extends Command
             $this->error('Nessun team disponibile!');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f548be94 (.)
@@ -162,6 +195,9 @@ class SetCurrentTeamCommand extends Command
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
             return;
         }
 
@@ -174,6 +210,7 @@ class SetCurrentTeamCommand extends Command
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! is_numeric($team_id)) {
             $this->error('ID team non valido!');
 
@@ -190,10 +227,16 @@ class SetCurrentTeamCommand extends Command
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! is_numeric($team_id)) {
+            $this->error('ID team non valido!');
+
+>>>>>>> laraxot/dev
             return;
         }
 
         try {
+<<<<<<< HEAD
 <<<<<<< HEAD
             $user->current_team_id = (int) $team_id;
             $user->save();
@@ -232,6 +275,8 @@ class SetCurrentTeamCommand extends Command
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
             $user->current_team_id = (string) $team_id;
             $user->save();
             $this->info('OK');
@@ -249,6 +294,9 @@ class SetCurrentTeamCommand extends Command
     //        ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
     // }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

@@ -9,10 +9,14 @@ use Illuminate\Http\Resources\Json\JsonResource;
 use Modules\User\Models\OauthClient as Client;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\User;
 
 /**
  * @property User|null $owner
+<<<<<<< HEAD
 =======
 
 /**
@@ -29,6 +33,8 @@ use Modules\User\Models\User;
  * @property User|null $owner
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  *
  * @mixin Client
  */
@@ -44,6 +50,9 @@ final class ClientResource extends JsonResource
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         /** @var Client $client */
         $client = $this->resource;
 
@@ -53,6 +62,7 @@ final class ClientResource extends JsonResource
             'owner' => $this->when(
                 null !== $client->owner,
                 fn (): OwnerResource => new OwnerResource($client->owner)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -77,6 +87,8 @@ final class ClientResource extends JsonResource
                 fn (): OwnerResource => new OwnerResource($client->owner)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             ),
         ];
     }

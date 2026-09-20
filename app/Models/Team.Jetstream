@@ -12,6 +12,7 @@ class Team extends JetstreamTeam
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     use \Modules\Xot\Models\Traits\HasXotFactory;
 =======
     use HasFactory;
@@ -22,6 +23,9 @@ class Team extends JetstreamTeam
     use \Modules\Xot\Models\Traits\HasXotFactory;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    use \Modules\Xot\Models\Traits\HasXotFactory;
+>>>>>>> laraxot/dev
 
     /** @return array<string, string> */
     protected function casts(): array

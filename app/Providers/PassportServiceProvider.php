@@ -7,6 +7,9 @@ namespace Modules\User\Providers;
 use Carbon\CarbonInterval;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\ServiceProvider;
 use Laravel\Passport\AuthCode;
 use Laravel\Passport\Client;
@@ -14,6 +17,7 @@ use Laravel\Passport\DeviceCode;
 use Laravel\Passport\Passport;
 use Laravel\Passport\RefreshToken;
 use Laravel\Passport\Token;
+<<<<<<< HEAD
 =======
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
@@ -33,6 +37,8 @@ use Laravel\Passport\RefreshToken;
 use Laravel\Passport\Token;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\OauthAuthCode;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthDeviceCode;
@@ -99,6 +105,9 @@ class PassportServiceProvider extends ServiceProvider
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $accessToken = $tokens['access_token'] ?? 15;
         Assert::integer($accessToken);
         $refreshToken = $tokens['refresh_token'] ?? 30;
@@ -116,6 +125,7 @@ class PassportServiceProvider extends ServiceProvider
 
         Passport::personalAccessTokensExpireIn(
             CarbonInterval::months($personalAccessToken)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -152,6 +162,8 @@ class PassportServiceProvider extends ServiceProvider
             CarbonInterval::months($personalAccessToken)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         );
     }
 
@@ -170,6 +182,9 @@ class PassportServiceProvider extends ServiceProvider
         Assert::stringNotEmpty($tokenModel);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         Assert::subclassOf($tokenModel, Token::class);
 
         $refreshTokenModel = $models['refresh_token'] ?? OauthRefreshToken::class;
@@ -183,6 +198,7 @@ class PassportServiceProvider extends ServiceProvider
         $clientModel = config('user.passport.client_model', OauthClient::class);
         Assert::stringNotEmpty($clientModel);
         Assert::subclassOf($clientModel, Client::class);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -218,6 +234,8 @@ class PassportServiceProvider extends ServiceProvider
         Assert::subclassOf($clientModel, Client::class);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         Passport::useTokenModel($tokenModel);
         Passport::useRefreshTokenModel($refreshTokenModel);
@@ -226,10 +244,14 @@ class PassportServiceProvider extends ServiceProvider
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $deviceCodeModel = $models['device_code'] ?? OauthDeviceCode::class;
         Assert::stringNotEmpty($deviceCodeModel);
         Assert::subclassOf($deviceCodeModel, DeviceCode::class);
         Passport::useDeviceCodeModel($deviceCodeModel);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -250,6 +272,8 @@ class PassportServiceProvider extends ServiceProvider
         Passport::useDeviceCodeModel($deviceCodeModel);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -278,6 +302,7 @@ class PassportServiceProvider extends ServiceProvider
         if (! empty($scopes)) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             Passport::tokensCan($scopes);
 =======
 =======
@@ -293,6 +318,9 @@ class PassportServiceProvider extends ServiceProvider
             Passport::tokensCan($scopes);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            Passport::tokensCan($scopes);
+>>>>>>> laraxot/dev
         }
     }
 

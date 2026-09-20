@@ -1917,10 +1917,14 @@ class SsoProviderResource extends XotBaseResource
     protected static ?string $navigationGroup = 'Security';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> 87273113 (.)
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'name' => Forms\Components\TextInput::make('name')

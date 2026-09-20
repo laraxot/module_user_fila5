@@ -12,6 +12,7 @@ namespace Modules\User\Actions\Socialite;
 use Filament\Facades\Filament;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Events\Dispatcher;
 =======
@@ -22,6 +23,10 @@ use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Events\Dispatcher;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Contracts\Events\Dispatcher;
+>>>>>>> laraxot/dev
 use Illuminate\Http\RedirectResponse;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
@@ -39,6 +44,9 @@ class LoginUserAction
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         Assert::notNull($user = $socialiteUser->user, '['.__FILE__.']['.__LINE__.']');
 
         if (! $user instanceof Authenticatable) {
@@ -53,6 +61,7 @@ class LoginUserAction
         app(Dispatcher::class)->dispatch(new SocialiteUserConnected($socialiteUser));
 
         return redirect()->intended('/'.app()->getLocale());
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -83,5 +92,7 @@ class LoginUserAction
         return redirect()->intended('/'.app()->getLocale());
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

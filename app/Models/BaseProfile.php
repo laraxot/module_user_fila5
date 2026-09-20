@@ -6,6 +6,9 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 // // use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
@@ -20,6 +23,7 @@ use Modules\Xot\Contracts\UserContract;
 use Parental\HasChildren;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -57,11 +61,14 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Spatie\Permission\Traits\HasRoles;
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
 
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property int|string                                                $id
@@ -147,6 +154,8 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  * @property int                                                       $id
  * @property string                                                    $uuid
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes         $extra
@@ -187,12 +196,16 @@ use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
  * @mixin \Eloquent
  */
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 abstract class BaseProfile extends BaseModel implements ProfileContract
 {
     use HasChildren;
     use HasRoles;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -205,6 +218,10 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     // use HasUuids;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+    // use HasUuids;
+>>>>>>> laraxot/dev
     use InteractsWithMedia;
     use IsProfileTrait;
     use Notifiable;
@@ -220,6 +237,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     protected $fillable = [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         'id',
 >>>>>>> f548be94 (.)
@@ -228,6 +246,8 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'uuid',
         'user_id',
         'type',
@@ -236,11 +256,15 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         'phone',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'address',
         'birth_date',
         'gender',
         'email',
         'bio',
+<<<<<<< HEAD
 =======
         'email',
         'bio',
@@ -251,11 +275,14 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         'email',
         'bio',
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'avatar',
         'timezone',
         'locale',
         'preferences',
         'status',
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         'email',
@@ -264,6 +291,8 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'is_active',
         'extra',
     ];
@@ -280,6 +309,9 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /** @var list<string> */
     protected array $formlessAttributes = [
         'extra',
@@ -301,6 +333,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     // Il trait SchemalessAttributesTrait lo fornisce automaticamente!
     // NOTA: BaseProfile ha attributo 'extra' diretto, non relazione 'extra'
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -341,6 +374,8 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     /**
      * Ottiene l'URL dell'avatar dell'utente.
      *
@@ -349,6 +384,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     public function getAvatarUrl(): string
     {
         $avatar = $this->getFirstMediaUrl('avatar');
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ('' !== $avatar) {
@@ -361,6 +397,9 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         if ('' !== $avatar) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if ('' !== $avatar) {
+>>>>>>> laraxot/dev
             return $avatar;
         }
 
@@ -372,6 +411,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         $hash = hash('sha256', $email);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         return 'https://gravatar.com/avatar/'.$hash.'?s=64';
 =======
@@ -388,6 +428,10 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         return 'https://gravatar.com/avatar/'.$hash.'?s=64';
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+        return 'https://gravatar.com/avatar/'.$hash.'?s=64';
+>>>>>>> laraxot/dev
 
         // https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80
         // in caso eseguire php artisan module:publish
@@ -410,6 +454,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null === $locale || ! is_string($locale)) {
 =======
         if ($locale === null || !is_string($locale)) {
@@ -420,6 +465,9 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         if (null === $locale || ! is_string($locale)) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null === $locale || ! is_string($locale)) {
+>>>>>>> laraxot/dev
             $locale = $defaultLocale;
         }
 
@@ -427,6 +475,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null === $userLang || ! is_string($userLang)) {
 =======
         if ($userLang === null || !is_string($userLang)) {
@@ -437,11 +486,15 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         if (null === $userLang || ! is_string($userLang)) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null === $userLang || ! is_string($userLang)) {
+>>>>>>> laraxot/dev
             return $locale;
         }
 
         return $userLang;
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     // use SoftDeletes;
@@ -484,6 +537,8 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
     // use SoftDeletes;
 
     /**
@@ -504,8 +559,11 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     {
         return [
             'id' => 'integer',
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'uuid' => 'string',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
@@ -516,6 +574,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
             'is_active' => 'boolean',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'preferences' => 'json',
 =======
 >>>>>>> f548be94 (.)
@@ -524,6 +583,9 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
             'preferences' => 'json',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'preferences' => 'json',
+>>>>>>> laraxot/dev
             'extra' => SchemalessAttributes::class,
         ];
     }

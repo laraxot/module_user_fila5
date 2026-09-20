@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Rimozione Proprietà/Metodi Vietati da XotBaseResource - [DATE]"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Rimozione Proprietà/Metodi Vietati da XotBaseResource - [DATE]
 
 **Status**: ✅ Completato  
@@ -69,6 +75,7 @@ related:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Modulo ExternalProject
 =======
 ### Modulo Quaeris
@@ -79,6 +86,9 @@ related:
 ### Modulo ExternalProject
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+### Modulo ExternalProject
+>>>>>>> laraxot/dev
 
 6. **ContactResource**
    - ❌ Rimosso: `protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-user-circle'`

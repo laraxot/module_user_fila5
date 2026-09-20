@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
@@ -26,6 +27,11 @@ use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
+use Modules\Xot\Contracts\ProfileContract;
+>>>>>>> laraxot/dev
 
 /**
  * Modules\User\Models\TenantUser.
@@ -33,6 +39,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|TeamUser newModelQuery()
  * @method static Builder|TeamUser newQuery()
  * @method static Builder|TeamUser query()
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property int         $id
@@ -46,6 +53,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property int         $id
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ *
+ * @property int         $id
+>>>>>>> laraxot/dev
  * @property string|null $tenant_id
  * @property string|null $user_id
  * @property Carbon|null $created_at
@@ -53,9 +64,13 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $created_by
  * @property string|null $updated_by
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 2024e2e7 (.)
+=======
+ *
+>>>>>>> laraxot/dev
  * @method static Builder|TeamUser whereCreatedAt($value)
  * @method static Builder|TeamUser whereCreatedBy($value)
  * @method static Builder|TeamUser whereCustomerId($value)
@@ -66,6 +81,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|TeamUser whereUpdatedBy($value)
  * @method static Builder|TeamUser whereUserId($value)
  * @method static Builder|TeamUser whereUuid($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property string|null $deleted_at
  * @property string|null $deleted_by
@@ -84,6 +100,8 @@ use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  *
  * @property string|null $deleted_at
  * @property string|null $deleted_by
@@ -98,12 +116,16 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static \Modules\User\Database\Factories\TenantUserFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class TenantUser extends BasePivot
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -116,6 +138,8 @@ class TenantUser extends BasePivot
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected $connection = 'user';
 
     // public $incrementing = false;
@@ -133,6 +157,7 @@ class TenantUser extends BasePivot
     /** @return array<string, string> */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[\Override]
 =======
     #[Override]
@@ -143,6 +168,9 @@ class TenantUser extends BasePivot
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     protected function casts(): array
     {
         return [

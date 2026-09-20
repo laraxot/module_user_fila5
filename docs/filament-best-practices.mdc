@@ -54,9 +54,12 @@ class UserResource extends XotBaseResource {
 ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 # Regola: Filament Pages che estendono XotBasePage
 
@@ -86,6 +89,7 @@ class PasswordExpired extends XotBasePage implements HasForms
 class PasswordExpired extends XotBasePage
 {
 }
+<<<<<<< HEAD
 ```
 <<<<<<< HEAD
 =======
@@ -93,3 +97,6 @@ class PasswordExpired extends XotBasePage
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+```
+>>>>>>> laraxot/dev

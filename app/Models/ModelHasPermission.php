@@ -7,6 +7,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Webmozart\Assert\Assert;
@@ -25,10 +26,16 @@ use Modules\Xot\Contracts\ProfileContract;
 use Webmozart\Assert\Assert;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Support\Carbon;
+use Modules\Xot\Contracts\ProfileContract;
+use Webmozart\Assert\Assert;
+>>>>>>> laraxot/dev
 
 /**
  * Modules\User\Models\ModelHasPermission.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property int    $id
@@ -47,13 +54,18 @@ use Webmozart\Assert\Assert;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  * @property int    $id
  * @property int    $permission_id
  * @property string $model_type
  * @property string $model_id
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @method static Builder|ModelHasPermission newModelQuery()
  * @method static Builder|ModelHasPermission newQuery()
  * @method static Builder|ModelHasPermission query()
@@ -62,21 +74,30 @@ use Webmozart\Assert\Assert;
  * @method static Builder|ModelHasPermission whereModelType($value)
  * @method static Builder|ModelHasPermission wherePermissionId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 2024e2e7 (.)
+=======
+ *
+>>>>>>> laraxot/dev
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 2024e2e7 (.)
+=======
+ *
+>>>>>>> laraxot/dev
  * @method static Builder|ModelHasPermission whereCreatedAt($value)
  * @method static Builder|ModelHasPermission whereCreatedBy($value)
  * @method static Builder|ModelHasPermission whereUpdatedAt($value)
  * @method static Builder|ModelHasPermission whereUpdatedBy($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
@@ -93,6 +114,8 @@ use Webmozart\Assert\Assert;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
@@ -104,8 +127,11 @@ use Webmozart\Assert\Assert;
  *
  * @method static \Modules\User\Database\Factories\ModelHasPermissionFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class ModelHasPermission extends BaseMorphPivot
@@ -118,9 +144,12 @@ class ModelHasPermission extends BaseMorphPivot
     protected $fillable = ['permission_id', 'model_type', 'model_id'];
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     /**
      * Read from config on every call — never hardcode, the value can change
@@ -134,9 +163,12 @@ class ModelHasPermission extends BaseMorphPivot
         return $table;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

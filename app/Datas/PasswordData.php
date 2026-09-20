@@ -10,11 +10,15 @@ namespace Modules\User\Datas;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\TextInput as FormsTextInput;
 use Illuminate\Validation\Rules\Password;
 use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
 use Modules\User\Traits\PasswordValidationRules;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -40,6 +44,8 @@ use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
 use Modules\User\Traits\PasswordValidationRules;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Spatie\LaravelData\Data;
 
 /**
@@ -49,19 +55,25 @@ class PasswordData extends Data
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     use PasswordValidationRules;
 
     private static ?self $instance = null;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public function __construct(
         public int $otp_expiration_minutes = 5,
         public int $otp_length = 6,
@@ -75,6 +87,9 @@ class PasswordData extends Data
         public int $compromisedThreshold = 0,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         public ?string $failMessage = null,
         private ?string $field_name = null,
     ) {
@@ -87,6 +102,7 @@ class PasswordData extends Data
     {
         if (! self::$instance) {
             $data = app(GetTenantConfigArrayAction::class)->execute('password');
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -124,6 +140,8 @@ class PasswordData extends Data
             $data = app(GetTenantConfigArrayAction::class)->execute('password');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             self::$instance = self::from($data);
         }
 
@@ -176,6 +194,7 @@ class PasswordData extends Data
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $msg = 'La password deve essere composta da minimo '.$this->min.' caratteri';
 =======
         $msg = 'La password deve essere composta da minimo ' . $this->min . ' caratteri';
@@ -186,6 +205,9 @@ class PasswordData extends Data
         $msg = 'La password deve essere composta da minimo '.$this->min.' caratteri';
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $msg = 'La password deve essere composta da minimo '.$this->min.' caratteri';
+>>>>>>> laraxot/dev
 
         if ($this->mixedCase) {
             $msg .= ', contenere almeno una lettera maiuscola e una minuscola';
@@ -218,6 +240,7 @@ class PasswordData extends Data
         $this->field_name = $field_name;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f548be94 (.)
@@ -226,6 +249,9 @@ class PasswordData extends Data
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
         return $this;
     }
 
@@ -234,11 +260,15 @@ class PasswordData extends Data
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function getPasswordFormComponent(string $field_name): FormsTextInput
     {
         return FormsTextInput::make($field_name)
             ->password()
             ->required()
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -260,6 +290,8 @@ class PasswordData extends Data
             ->required()
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             ->validationMessages($this->getValidationMessages())
             ->helperText($this->getHelperText());
     }
@@ -269,6 +301,9 @@ class PasswordData extends Data
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function getPasswordConfirmationFormComponent(): FormsTextInput
     {
         if (null === $this->field_name) {
@@ -278,6 +313,7 @@ class PasswordData extends Data
         return FormsTextInput::make('password_confirmation')
             ->password()
             ->required()
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -309,6 +345,8 @@ class PasswordData extends Data
             ->required()
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             ->same($this->field_name)
             ->validationMessages($this->getValidationMessages());
     }
@@ -323,6 +361,7 @@ class PasswordData extends Data
         if (empty($field_name)) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             throw new \InvalidArgumentException('Il nome del campo password non può essere vuoto');
 =======
             throw new InvalidArgumentException('Il nome del campo password non può essere vuoto');
@@ -333,6 +372,9 @@ class PasswordData extends Data
             throw new \InvalidArgumentException('Il nome del campo password non può essere vuoto');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            throw new \InvalidArgumentException('Il nome del campo password non può essere vuoto');
+>>>>>>> laraxot/dev
         }
 
         $this->setFieldName($field_name);
@@ -345,6 +387,7 @@ class PasswordData extends Data
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<string, FormsTextInput>
      */
@@ -354,11 +397,16 @@ class PasswordData extends Data
 >>>>>>> 87273113 (.)
     public static function getFormSchema(): array
 =======
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<string, FormsTextInput>
      */
     public function getFormSchema(): array
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
     {
         return [
             'password' => FormsTextInput::make('password')

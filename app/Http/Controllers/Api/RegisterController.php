@@ -14,6 +14,7 @@
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @param  Request  $request  The incoming request
  * @return JsonResponse The JSON response
  */
@@ -34,12 +35,20 @@
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ * @param Request $request The incoming request
+ *
+ * @return JsonResponse The JSON response
+ */
+
+>>>>>>> laraxot/dev
 declare(strict_types=1);
 
 namespace Modules\User\Http\Controllers\Api;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Contracts\UserContract;
@@ -50,12 +59,15 @@ use Modules\Xot\Contracts\UserContract;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rules\Password as PasswordRule;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 =======
@@ -66,6 +78,10 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+>>>>>>> laraxot/dev
 use Modules\Xot\Http\Controllers\XotBaseController;
 
 class RegisterController extends XotBaseController
@@ -91,6 +107,7 @@ class RegisterController extends XotBaseController
         if ($validator->fails()) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             return $this->sendError('Validation Error.', $validator->errors()->toArray());
 =======
             return $this->sendError('Validation Error.', $validator->errors()->all());
@@ -101,17 +118,24 @@ class RegisterController extends XotBaseController
             return $this->sendError('Validation Error.', $validator->errors()->toArray());
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            return $this->sendError('Validation Error.', $validator->errors()->toArray());
+>>>>>>> laraxot/dev
         }
 
         /** @var array<string, mixed> $input */
         $input = $request->all();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $password = $input['password'] ?? null;
         if (! \is_string($password)) {
             return $this->sendError('Validation Error.', ['password' => ['The password must be a string.']]);
         }
         $input['password'] = bcrypt($password);
+<<<<<<< HEAD
 =======
         $input['password'] = bcrypt((string) $input['password']);
 >>>>>>> f548be94 (.)
@@ -125,12 +149,15 @@ class RegisterController extends XotBaseController
         $input['password'] = bcrypt($password);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $user_class = XotData::make()->getUserClass();
         /** @var UserContract */
         $user = $user_class::create($input);
         $success['token'] = $user->createToken('MyApp')->accessToken;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $success['name'] = $user->name ?? '';
 =======
         $success['name'] = $user->name;
@@ -141,6 +168,9 @@ class RegisterController extends XotBaseController
         $success['name'] = $user->name ?? '';
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $success['name'] = $user->name ?? '';
+>>>>>>> laraxot/dev
 
         return $this->sendResponse('User register successfully.', $success);
     }

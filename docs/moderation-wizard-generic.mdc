@@ -1,12 +1,16 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 module: theme
 topic: moderation-wizard-generic
 canonical: ../../../Themes/docs/shared-components/moderation-wizard-generic.mdc
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/moderation-wizard-generic.mdc
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -147,3 +151,5 @@ canonical: ../../../Themes/docs/shared-components/moderation-wizard-generic.mdc
 See canonical documentation: ../../../Themes/docs/shared-components/moderation-wizard-generic.mdc
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

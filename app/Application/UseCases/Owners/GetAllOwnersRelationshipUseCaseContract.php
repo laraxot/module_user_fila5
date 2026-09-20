@@ -12,6 +12,7 @@ interface GetAllOwnersRelationshipUseCaseContract
      * Execute the use case to get all owners for relationship.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return Collection<int, mixed>
 =======
@@ -22,6 +23,10 @@ interface GetAllOwnersRelationshipUseCaseContract
      * @return Collection<int, mixed>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+     * @return Collection<int, mixed>
+>>>>>>> laraxot/dev
      */
     public function execute(): Collection;
 }

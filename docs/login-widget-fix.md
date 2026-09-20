@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "LoginWidget Form Data Binding Fix"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # LoginWidget Form Data Binding Fix
 
 ## Problema
@@ -74,6 +80,7 @@ Per `LoginWidget`, che non ha un modello associato (`getFormModel()` restituisce
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2. Schema con chiavi stringa e NO label/placeholder
 
 Corretto lo schema per usare array associativo con chiavi stringa (conforme alle regole Filament). **MAI usare `->label()`, `->placeholder()` o `->helperText()`**: il LangServiceProvider risolve automaticamente da `user::login_widget.fields.*` (file `lang/it/login_widget.php`).
@@ -92,6 +99,11 @@ Corretto lo schema per usare array associativo con chiavi stringa (conforme alle
 Corretto lo schema per usare array associativo con chiavi stringa (conforme alle regole Filament). **MAI usare `->label()`, `->placeholder()` o `->helperText()`**: il LangServiceProvider risolve automaticamente da `user::login_widget.fields.*` (file `lang/it/login_widget.php`).
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+### 2. Schema con chiavi stringa e NO label/placeholder
+
+Corretto lo schema per usare array associativo con chiavi stringa (conforme alle regole Filament). **MAI usare `->label()`, `->placeholder()` o `->helperText()`**: il LangServiceProvider risolve automaticamente da `user::login_widget.fields.*` (file `lang/it/login_widget.php`).
+>>>>>>> laraxot/dev
 
 ```php
 #[\Override]
@@ -215,6 +227,7 @@ Tutti i widget Filament che estendono `XotBaseWidget` e usano `statePath('data')
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: Dicembre 2024*
 >>>>>>> 60a2c9a9 (.)
@@ -223,3 +236,5 @@ Tutti i widget Filament che estendono `XotBaseWidget` e usano `statePath('data')
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

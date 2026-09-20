@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Enums\SocialProviderEnum;
 use Modules\User\Enums\SystemRole;
 use Modules\User\Enums\UserType;
@@ -68,6 +71,7 @@ test('SocialProviderEnum can be instantiated', function (): void {
     foreach (SocialProviderEnum::cases() as $case) {
         Assert::assertInstanceOf(SocialProviderEnum::class, $case);
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -201,4 +205,6 @@ test('SocialProviderEnum can be instantiated', function (): void {
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

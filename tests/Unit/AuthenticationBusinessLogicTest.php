@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Carbon\Carbon;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -211,16 +214,27 @@ describe('Authentication Business Logic', function (): void {
             Assert::assertNotSame('', $user['email']);
 
             $profileScore = 0;
+<<<<<<< HEAD
             if ($user['name'] !== '') {
                 $profileScore += 25;
             }
             if ($user['email'] !== '') {
+=======
+            if ('' !== $user['name']) {
+                $profileScore += 25;
+            }
+            if ('' !== $user['email']) {
+>>>>>>> laraxot/dev
                 $profileScore += 25;
             }
             if ($user['email_verified_at'] instanceof Carbon) {
                 $profileScore += 25;
             }
+<<<<<<< HEAD
             if ($user['profile_photo_path'] !== '') {
+=======
+            if ('' !== $user['profile_photo_path']) {
+>>>>>>> laraxot/dev
                 $profileScore += 25;
             }
 
@@ -245,6 +259,7 @@ describe('Authentication Business Logic', function (): void {
             Assert::assertStringNotContainsString('Personal', $team['name']);
 
             $personalTeam = [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -668,6 +683,8 @@ describe('Authentication Business Logic', function (): void {
             $personalTeam = [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 'name' => 'Mario Rossi (Personal)',
                 'personal_team' => true,
                 'user_id' => 1001,
@@ -675,6 +692,9 @@ describe('Authentication Business Logic', function (): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             Assert::assertNotSame($team['personal_team'], $personalTeam['personal_team']);
             Assert::assertStringContainsString('Personal', $personalTeam['name']);
         });
@@ -730,6 +750,7 @@ describe('Authentication Business Logic', function (): void {
         });
 
         it('handles permission inheritance and hierarchy', function (): void {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -870,6 +891,8 @@ describe('Authentication Business Logic', function (): void {
         it('handles permission inheritance and hierarchy', function (): void {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             $roles = [
                 (object) ['name' => 'admin', 'level' => 1, 'permissions' => ['*']],
                 (object) ['name' => 'doctor', 'level' => 2, 'permissions' => ['view_patients', 'create_appointments']],
@@ -879,6 +902,9 @@ describe('Authentication Business Logic', function (): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             usort($roles, static fn (object $a, object $b): int => $a->level <=> $b->level);
 
             Assert::assertSame('admin', $roles[0]->name);
@@ -931,6 +957,7 @@ describe('Authentication Business Logic', function (): void {
         });
 
         it('handles OAuth provider fallbacks', function (): void {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1058,12 +1085,17 @@ describe('Authentication Business Logic', function (): void {
         it('handles OAuth provider fallbacks', function (): void {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             $primaryProvider = 'google';
             $fallbackProviders = ['azure', 'facebook'];
             $allProviders = array_merge([$primaryProvider], $fallbackProviders);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             Assert::assertGreaterThan(1, count($allProviders));
             Assert::assertSame($primaryProvider, $allProviders[0]);
         });
@@ -1093,13 +1125,18 @@ describe('Authentication Business Logic', function (): void {
         it('validates push notification setup', function (): void {
             $device = authBizDeviceData();
 
+<<<<<<< HEAD
             if ($device['device_type'] === 'mobile') {
+=======
+            if ('mobile' === $device['device_type']) {
+>>>>>>> laraxot/dev
                 $pushToken = $device['push_token'];
                 Assert::assertGreaterThan(20, strlen($pushToken));
             }
         });
 
         it('handles device limit enforcement', function (): void {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1185,6 +1222,8 @@ describe('Authentication Business Logic', function (): void {
         it('handles device limit enforcement', function (): void {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             $userDevices = [
                 ['type' => 'mobile', 'name' => 'iPhone 14'],
                 ['type' => 'desktop', 'name' => 'MacBook Pro'],
@@ -1194,6 +1233,9 @@ describe('Authentication Business Logic', function (): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             Assert::assertLessThanOrEqual(5, count($userDevices));
         });
     });
@@ -1215,6 +1257,7 @@ describe('Authentication Business Logic', function (): void {
         });
 
         it('handles concurrent session limits', function (): void {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1273,6 +1316,8 @@ describe('Authentication Business Logic', function (): void {
         it('handles concurrent session limits', function (): void {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             $userActiveSessions = [
                 ['id' => 'sess_1', 'device' => 'mobile', 'started' => Carbon::now()->subHour()],
                 ['id' => 'sess_2', 'device' => 'desktop', 'started' => Carbon::now()->subMinutes(30)],
@@ -1280,6 +1325,9 @@ describe('Authentication Business Logic', function (): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             Assert::assertLessThanOrEqual(3, count($userActiveSessions));
         });
 
@@ -1295,6 +1343,7 @@ describe('Authentication Business Logic', function (): void {
             Assert::assertMatchesRegularExpression('/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/', $attempt['ip_address']);
             Assert::assertSame('Italy', $attempt['country']);
             Assert::assertFalse($isSuspicious);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1339,6 +1388,8 @@ describe('Authentication Business Logic', function (): void {
             Assert::assertFalse($isSuspicious);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         });
     });
 });

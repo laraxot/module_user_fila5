@@ -12,6 +12,7 @@ use Modules\User\Models\User;
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * OauthAuthCode Factory.
 =======
  * OauthAuthCode Factory
@@ -22,6 +23,9 @@ use Modules\User\Models\User;
  * OauthAuthCode Factory.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ * OauthAuthCode Factory.
+>>>>>>> laraxot/dev
  *
  * @extends Factory<OauthAuthCode>
  */
@@ -31,6 +35,7 @@ class OauthAuthCodeFactory extends Factory
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
@@ -43,6 +48,11 @@ class OauthAuthCodeFactory extends Factory
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> laraxot/dev
     public function definition(): array
     {
         return [
@@ -59,6 +69,7 @@ class OauthAuthCodeFactory extends Factory
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->state([
             'expires_at' => $this->faker->dateTimeBetween('-1 hour', 'now'),
         ]);
@@ -73,6 +84,11 @@ class OauthAuthCodeFactory extends Factory
         ]);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return $this->state([
+            'expires_at' => $this->faker->dateTimeBetween('-1 hour', 'now'),
+        ]);
+>>>>>>> laraxot/dev
     }
 
     public function revoked(): static

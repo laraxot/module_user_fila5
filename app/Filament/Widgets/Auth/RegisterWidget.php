@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Widgets\Auth;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Notifications\Notification;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -63,6 +66,7 @@ class RegisterWidget extends XotBaseSchemaWidget
     public function save(): void
     {
         $this->submit();
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -237,12 +241,17 @@ class RegisterWidget extends XotBaseSchemaWidget
         $this->submit();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     public function submit(): void
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         /** @var array<string, mixed> $data */
         $data = $this->form->getState();
 
@@ -255,7 +264,11 @@ class RegisterWidget extends XotBaseSchemaWidget
             $email = is_string($data['email'] ?? null) ? trim($data['email']) : '';
 
             $user = $userClass::create(array_merge($data, [
+<<<<<<< HEAD
                 'name' => $name !== '' ? $name : $email,
+=======
+                'name' => '' !== $name ? $name : $email,
+>>>>>>> laraxot/dev
                 'email_verified_at' => null,
             ]));
 
@@ -281,6 +294,7 @@ class RegisterWidget extends XotBaseSchemaWidget
     protected function handleSuccessfulRegistration(Authenticatable $user): void
     {
         if (config('auth.must_verify_email') && $user instanceof MustVerifyEmail) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -403,6 +417,8 @@ class RegisterWidget extends XotBaseSchemaWidget
         if (config('auth.must_verify_email') && $user instanceof MustVerifyEmail) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             $user->sendEmailVerificationNotification();
         }
 
@@ -411,6 +427,9 @@ class RegisterWidget extends XotBaseSchemaWidget
         Notification::make()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             ->title(__('user::auth.register.success.text'))
             ->success()
             ->send();
@@ -420,6 +439,7 @@ class RegisterWidget extends XotBaseSchemaWidget
             : url('/'.app()->getLocale());
 
         $this->redirect($redirectUrl);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -455,5 +475,7 @@ class RegisterWidget extends XotBaseSchemaWidget
         $this->redirect($redirectUrl);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

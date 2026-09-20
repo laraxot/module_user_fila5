@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'navigation' => ['label' => 'Conferma Reset Password', 'plural_label' => 'Conferma Reset Password', 'group' => 'Autenticazione', 'icon' => 'heroicon-o-lock-closed', 'sort' => 8],
     'label' => 'Conferma Reset Password',
     'plural_label' => 'Conferma Reset Password',
@@ -18,6 +21,7 @@ return [
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
     'messages' => ['success' => 'Password reimpostata con successo', 'error' => 'Si è verificato un errore'],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -60,4 +64,6 @@ return [
     'messages' => ['success' => 'Password reimpostata con successo', 'error' => 'Si è verificato un errore'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

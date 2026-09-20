@@ -19,6 +19,7 @@ class PermissionsSeeder extends Seeder
         $permissions = [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // Doctor permissions
 =======
 >>>>>>> f548be94 (.)
@@ -27,6 +28,9 @@ class PermissionsSeeder extends Seeder
             // Doctor permissions
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            // Doctor permissions
+>>>>>>> laraxot/dev
             'moderate_doctors' => 'Può moderare le registrazioni dei medici',
             'view_doctors' => 'Può visualizzare i medici',
             'create_doctors' => 'Può creare medici',
@@ -34,9 +38,12 @@ class PermissionsSeeder extends Seeder
             'delete_doctors' => 'Può eliminare i medici',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
             // Authentication Log permissions
             'authentication-log.view.any' => 'Può visualizzare tutti gli accessi di autenticazione',
@@ -74,11 +81,14 @@ class PermissionsSeeder extends Seeder
             'oauth-auth-code.restore' => 'Può ripristinare codici di autorizzazione OAuth eliminati',
             'oauth-auth-code.force-delete' => 'Può eliminare permanentemente codici di autorizzazione OAuth',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ];
 
         foreach ($permissions as $name => $description) {
@@ -87,6 +97,7 @@ class PermissionsSeeder extends Seeder
                 'guard_name' => 'web',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 'description' => $description,
 >>>>>>> f548be94 (.)
@@ -95,6 +106,8 @@ class PermissionsSeeder extends Seeder
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             ]);
         }
 

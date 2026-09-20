@@ -6,6 +6,7 @@ namespace Modules\User\Models\Policies;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 class OauthClientPolicy extends UserBasePolicy
 {
 =======
@@ -83,4 +84,8 @@ class OauthClientPolicy extends UserBasePolicy
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+class OauthClientPolicy extends UserBasePolicy
+{
+>>>>>>> laraxot/dev
 }

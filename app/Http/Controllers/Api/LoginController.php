@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\BaseUser;
 =======
 use Modules\Xot\Contracts\PassportHasApiTokensContract;
@@ -23,6 +24,9 @@ use Modules\Xot\Contracts\PassportHasApiTokensContract;
 use Modules\User\Models\BaseUser;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Models\BaseUser;
+>>>>>>> laraxot/dev
 use Modules\Xot\Http\Controllers\XotBaseController;
 use Webmozart\Assert\Assert;
 
@@ -34,6 +38,7 @@ class LoginController extends XotBaseController
     public function __invoke(Request $request): JsonResponse
     {
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             Assert::notNull($user = Auth::user(), '['.__LINE__.']['.class_basename($this).']');
@@ -59,6 +64,11 @@ class LoginController extends XotBaseController
             Assert::isInstanceOf($user, BaseUser::class, '['.__LINE__.']['.class_basename($this).']');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            Assert::notNull($user = Auth::user(), '['.__LINE__.']['.class_basename($this).']');
+
+            Assert::isInstanceOf($user, BaseUser::class, '['.__LINE__.']['.class_basename($this).']');
+>>>>>>> laraxot/dev
 
             $success = [];
             $success['token'] = $user->createToken('MyApp')->accessToken;

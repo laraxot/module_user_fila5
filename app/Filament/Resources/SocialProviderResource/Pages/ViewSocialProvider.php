@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\SocialProviderResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
@@ -98,4 +99,12 @@ class ViewSocialProvider extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+use Modules\User\Filament\Resources\SocialProviderResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
+
+class ViewSocialProvider extends XotBaseViewRecord
+{
+    protected static string $resource = SocialProviderResource::class;
+>>>>>>> laraxot/dev
 }
