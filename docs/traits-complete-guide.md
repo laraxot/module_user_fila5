@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Guida Completa ai Trait del Modulo User - AGGIORNATO POST-IMPLEMENTAZIONE
 
 ## Stato Implementazione ✅ COMPLETATO
@@ -421,6 +422,8 @@ SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key
 =======
 - **Compatibilità**: MANTENUTA - sia oggetti Role che stringhe supportati
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: traits-complete-guide
@@ -437,5 +440,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/traits-complete-guide.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

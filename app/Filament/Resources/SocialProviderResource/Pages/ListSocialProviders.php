@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\SocialProviderResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
@@ -25,6 +26,9 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Filament\Tables\Filters\SelectFilter;
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\SocialProviderResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
@@ -35,6 +39,7 @@ class ListSocialProviders extends XotBaseListRecords
 {
     protected static string $resource = SocialProviderResource::class;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     #[\Override]
@@ -82,6 +87,9 @@ class ListSocialProviders extends XotBaseListRecords
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public function getTableFilters(): array
     {
         return [

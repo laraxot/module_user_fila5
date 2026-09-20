@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: third-party-models
@@ -16,6 +19,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/third-party-model-patterns.md
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -276,3 +280,5 @@ related:
 See canonical documentation: ../../../Themes/docs/shared-components/third-party-model-patterns.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

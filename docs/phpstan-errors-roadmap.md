@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: phpstan-errors-roadmap
@@ -16,6 +19,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-roadmap.md
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -261,3 +265,5 @@ related:
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-roadmap.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

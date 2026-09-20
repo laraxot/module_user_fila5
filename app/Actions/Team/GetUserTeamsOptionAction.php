@@ -13,6 +13,7 @@ class GetUserTeamsOptionAction
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<int|string, string>
      */
@@ -25,18 +26,30 @@ class GetUserTeamsOptionAction
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return array<int|string, string>
+     */
+>>>>>>> laraxot/dev
     public function execute(): array
     {
         $teams = TeamUser::where('user_id', authId())->get();
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         /** @var array<int|string, string> $options */
         $options = ['' => '--- Select ---'];
 
         foreach ($teams as $teamUser) {
             $team = $teamUser->team;
+<<<<<<< HEAD
             if ($team === null) {
+=======
+            if (null === $team) {
+>>>>>>> laraxot/dev
                 continue;
             }
 
@@ -49,6 +62,7 @@ class GetUserTeamsOptionAction
         }
 
         return $options;
+<<<<<<< HEAD
 =======
         return ['' => '--- Select ---'] + $teams->pluck('team.name', 'team.id')->toArray();
 >>>>>>> 60a2c9a9 (.)
@@ -75,5 +89,7 @@ class GetUserTeamsOptionAction
         return $options;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

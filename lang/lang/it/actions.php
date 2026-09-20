@@ -19,6 +19,7 @@ return [
     'success_detached' => 'Utente scollegato con successo',
     'success_deleted' => 'Utenti eliminati con successo',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'navigation' => [
         'label' => 'Missing Navigation Label',
@@ -34,4 +35,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

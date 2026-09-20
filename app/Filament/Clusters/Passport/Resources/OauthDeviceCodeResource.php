@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Clusters\Passport\Resources;
 
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
@@ -13,6 +14,10 @@ use Filament\Resources\Pages\PageRegistration;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
+=======
+use Filament\Notifications\Notification;
+use Filament\Resources\Pages\PageRegistration;
+>>>>>>> laraxot/dev
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
@@ -35,6 +40,7 @@ class OauthDeviceCodeResource extends XotBaseResource
 
     protected static ?string $model = OauthDeviceCode::class;
 
+<<<<<<< HEAD
     /**
 <<<<<<< HEAD
      * Get the form schema for the resource.
@@ -74,6 +80,8 @@ class OauthDeviceCodeResource extends XotBaseResource
         ];
     }
 
+=======
+>>>>>>> laraxot/dev
     public static function table(Table $table): Table
     {
         return $table
@@ -146,8 +154,11 @@ class OauthDeviceCodeResource extends XotBaseResource
     }
 
     /**
+<<<<<<< HEAD
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      * @return array<string, PageRegistration>
      */
     #[\Override]

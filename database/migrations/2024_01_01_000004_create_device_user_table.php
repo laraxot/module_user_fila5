@@ -37,6 +37,7 @@ return new class extends XotBaseMigration {
             }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // dddx($getColumnType('device_id');//varchar)
 =======
             // dddx($this->getColumnType('device_id'));//varchar
@@ -47,6 +48,9 @@ return new class extends XotBaseMigration {
             // dddx($getColumnType('device_id');//varchar)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            // dddx($getColumnType('device_id');//varchar)
+>>>>>>> laraxot/dev
             if ('uuid' === $this->getColumnType('user_id')) {
                 $table->string('user_id', 36)->nullable()->change();
             }

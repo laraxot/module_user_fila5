@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: login-widget-livewire-binding-fix
@@ -16,6 +19,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/login-widget-livewire-binding-fix.md
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -140,3 +144,5 @@ related:
 See canonical documentation: ../../../Themes/docs/shared-components/login-widget-livewire-binding-fix.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

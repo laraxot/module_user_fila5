@@ -7,6 +7,7 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\DeviceUser;
 
 /**
@@ -31,6 +32,11 @@ use Modules\User\Models\DeviceUser;
 /**
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Models\DeviceUser;
+
+/**
+>>>>>>> laraxot/dev
  * @extends Factory<DeviceUser>
  */
 class DeviceUserFactory extends Factory
@@ -39,6 +45,7 @@ class DeviceUserFactory extends Factory
      * The name of the factory's corresponding model.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var class-string<DeviceUser>
@@ -49,6 +56,8 @@ class DeviceUserFactory extends Factory
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $model = DeviceUser::class;
 
@@ -56,6 +65,7 @@ class DeviceUserFactory extends Factory
      * Define the model's default state.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      */
     /**
 =======
@@ -68,10 +78,15 @@ class DeviceUserFactory extends Factory
     /**
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     */
+    /**
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     public function definition(): array
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         return [];
@@ -149,5 +164,8 @@ class DeviceUserFactory extends Factory
         return [];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return [];
+>>>>>>> laraxot/dev
     }
 }

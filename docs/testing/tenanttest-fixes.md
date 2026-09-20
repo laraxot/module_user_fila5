@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: tenanttest-fixes
@@ -12,6 +15,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/tenant-test-fixes.md
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -109,3 +113,5 @@ related:
 See canonical documentation: ../../../../Themes/docs/shared-components/tenant-test-fixes.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

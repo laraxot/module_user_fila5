@@ -116,6 +116,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 - [Architecture](./core/architecture.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 =======
 - [DRY/KISS Global](../../docs/dry_kiss_analysis_2025-10-15.md)
@@ -126,6 +127,9 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+>>>>>>> laraxot/dev
 
 ---
 

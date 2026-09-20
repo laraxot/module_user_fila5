@@ -8,6 +8,7 @@ use Illuminate\Auth\Notifications\ResetPassword as BaseNotification;
 use Illuminate\Notifications\Messages\MailMessage;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Illuminate\Notifications\Notification;
 >>>>>>> f548be94 (.)
@@ -16,6 +17,8 @@ use Illuminate\Notifications\Notification;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Lang;
 use Webmozart\Assert\Assert;
 
@@ -32,6 +35,9 @@ class ResetPassword extends BaseNotification
      * Get the reset password notification mail message for the given URL.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     protected function buildMailMessage($url): MailMessage
     {
@@ -46,6 +52,7 @@ class ResetPassword extends BaseNotification
 
         // $mailMessage = $mailMessage->line(Lang::get('user::email.password_reset_expiration', ['count' => config('auth.passwords.'.config('auth.defaults.passwords').'.expire')]));
         return $mailMessage->line(Lang::get('user::email.password_if_not_requested'));
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -84,5 +91,7 @@ class ResetPassword extends BaseNotification
         return $mailMessage->line(Lang::get('user::email.password_if_not_requested'));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

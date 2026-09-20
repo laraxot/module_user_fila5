@@ -10,6 +10,7 @@ namespace Modules\User\Providers\Filament;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Panel;
 use Filament\Support\Facades\FilamentView;
 use Illuminate\Support\Facades\Blade;
@@ -32,6 +33,11 @@ use Filament\Support\Facades\FilamentView;
 use Illuminate\Support\Facades\Blade;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Filament\Panel;
+use Filament\Support\Facades\FilamentView;
+use Illuminate\Support\Facades\Blade;
+>>>>>>> laraxot/dev
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
 
 class AdminPanelProvider extends XotBasePanelProvider
@@ -40,6 +46,7 @@ class AdminPanelProvider extends XotBasePanelProvider
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[\Override]
 =======
     #[Override]
@@ -50,12 +57,16 @@ class AdminPanelProvider extends XotBasePanelProvider
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public function panel(Panel $panel): Panel
     {
         $panel = parent::panel($panel);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         FilamentView::registerRenderHook('panels::auth.login.form.after', static fn (): string => Blade::render(
 =======
         FilamentView::registerRenderHook('panels::auth.login.form.after', static fn(): string => Blade::render(
@@ -66,6 +77,9 @@ class AdminPanelProvider extends XotBasePanelProvider
         FilamentView::registerRenderHook('panels::auth.login.form.after', static fn (): string => Blade::render(
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        FilamentView::registerRenderHook('panels::auth.login.form.after', static fn (): string => Blade::render(
+>>>>>>> laraxot/dev
             "@livewire('socialite.buttons')",
         ));
 
@@ -86,6 +100,7 @@ class AdminPanelProvider extends XotBasePanelProvider
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         FilamentView::registerRenderHook('panels::user-menu.before', static fn (): string => Blade::render(
 =======
         FilamentView::registerRenderHook('panels::user-menu.before', static fn(): string => Blade::render(
@@ -96,6 +111,9 @@ class AdminPanelProvider extends XotBasePanelProvider
         FilamentView::registerRenderHook('panels::user-menu.before', static fn (): string => Blade::render(
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        FilamentView::registerRenderHook('panels::user-menu.before', static fn (): string => Blade::render(
+>>>>>>> laraxot/dev
             "@livewire('team.change')",
         ));
 
@@ -104,6 +122,7 @@ class AdminPanelProvider extends XotBasePanelProvider
             // static fn (): string => View::make('user::badges.super-admin')->render(),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             static fn (): string => Blade::render("@livewire('profile.super-admin')"),
 =======
             static fn(): string => Blade::render("@livewire('profile.super-admin')"),
@@ -114,6 +133,9 @@ class AdminPanelProvider extends XotBasePanelProvider
             static fn (): string => Blade::render("@livewire('profile.super-admin')"),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            static fn (): string => Blade::render("@livewire('profile.super-admin')"),
+>>>>>>> laraxot/dev
         );
 
         /*
@@ -135,6 +157,7 @@ class AdminPanelProvider extends XotBasePanelProvider
         //     MenuItem::make()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
         
@@ -145,6 +168,9 @@ class AdminPanelProvider extends XotBasePanelProvider
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
         //         ->url(fn (): string => '#')
         //         ->icon('heroicon-m-cog-8-tooth'),
         // ]);
@@ -153,6 +179,7 @@ class AdminPanelProvider extends XotBasePanelProvider
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f548be94 (.)
@@ -161,4 +188,6 @@ class AdminPanelProvider extends XotBasePanelProvider
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

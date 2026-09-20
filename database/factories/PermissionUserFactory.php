@@ -6,12 +6,16 @@ namespace Modules\User\Database\Factories;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\PermissionUser;
 
 /**
  * @extends Factory<PermissionUser>
  */
+<<<<<<< HEAD
 =======
 use Modules\User\Models\PermissionUser;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -30,6 +34,8 @@ use Modules\User\Models\PermissionUser;
  */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 class PermissionUserFactory extends Factory
 {
     /**
@@ -42,6 +48,7 @@ class PermissionUserFactory extends Factory
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
@@ -54,6 +61,11 @@ class PermissionUserFactory extends Factory
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> laraxot/dev
     public function definition(): array
     {
         return [];

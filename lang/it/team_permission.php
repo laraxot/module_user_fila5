@@ -9,6 +9,7 @@ return [
         'label' => 'Permessi Team',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione permessi specifici per team'],
 =======
 =======
@@ -24,12 +25,18 @@ return [
         'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione permessi specifici per team'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'group' => ['name' => 'Gestione Utenti', 'description' => 'Gestione permessi specifici per team'],
+>>>>>>> laraxot/dev
         'sort' => 15,
         'icon' => 'heroicon-o-shield-check',
     ],
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'team_id' => ['label' => 'Team', 'placeholder' => 'Seleziona un team', 'help' => 'Il team a cui appartiene questo permesso', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'user_id' => ['label' => 'Utente', 'placeholder' => 'Seleziona un utente', 'help' => 'L\'utente a cui è assegnato questo permesso', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'permission' => ['label' => 'Permesso', 'placeholder' => 'Inserisci il nome del permesso', 'help' => 'Il nome del permesso (es. view-reports, edit-documents]', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -39,6 +46,7 @@ return [
     ],
     'actions' => [
         'create' => ['label' => 'Crea Permesso Team', 'success' => 'Permesso team creato con successo', 'error' => 'Errore durante la creazione del permesso team', 'icon' => 'create', 'tooltip' => 'create'],
+<<<<<<< HEAD
         'edit' => ['label' => 'Modifica Permesso Team', 'success' => 'Permesso team aggiornato con successo', 'error' => 'Errore durante l\'aggiornamento del permesso team', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Permesso Team', 'success' => 'Permesso team eliminato con successo', 'error' => 'Errore durante l\'eliminazione del permesso team', 'confirmation' => 'Sei sicuro di voler eliminare questo permesso team?', 'icon' => 'delete', 'tooltip' => 'delete'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
@@ -136,4 +144,13 @@ return [
     'label' => 'Team Permission',
     'plural_label' => 'Team Permission (Plurale)',
 >>>>>>> 60a2c9a9 (.)
+=======
+        'edit' => ['label' => 'Modifica Permesso Team', 'success' => 'Permesso team aggiornato con successo', 'error' => 'Errore durante l\'aggiornamento del permesso team'],
+        'delete' => ['label' => 'Elimina Permesso Team', 'success' => 'Permesso team eliminato con successo', 'error' => 'Errore durante l\'eliminazione del permesso team', 'confirmation' => 'Sei sicuro di voler eliminare questo permesso team?', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+    ],
+    'label' => 'Team Permission',
+    'plural_label' => 'Team Permission (Plurale)',
+>>>>>>> laraxot/dev
 ];

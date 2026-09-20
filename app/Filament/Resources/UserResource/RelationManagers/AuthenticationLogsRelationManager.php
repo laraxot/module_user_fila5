@@ -45,6 +45,9 @@ class AuthenticationLogsRelationManager extends XotBaseRelationManager
             'location' => TextColumn::make('location')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 ->formatStateUsing(function (mixed $state) {
                     if (is_array($state)) {
                         return collect($state)
@@ -56,6 +59,7 @@ class AuthenticationLogsRelationManager extends XotBaseRelationManager
                             ->join(', ');
                     }
 
+<<<<<<< HEAD
                     if ($state === null) {
 =======
 =======
@@ -86,6 +90,9 @@ class AuthenticationLogsRelationManager extends XotBaseRelationManager
                     if ($state === null) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                    if (null === $state) {
+>>>>>>> laraxot/dev
                         return 'N/A';
                     }
 

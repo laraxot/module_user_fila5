@@ -7,10 +7,14 @@ namespace Modules\User\Filament\Resources;
 use Modules\User\Models\Profile;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 class ProfileResource extends BaseProfileResource
 {
     protected static ?string $model = Profile::class;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -29,4 +33,6 @@ class ProfileResource extends BaseProfileResource
     protected static ?string $model = Profile::class;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

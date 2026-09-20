@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 uses(Modules\User\Tests\TestCase::class);
 
@@ -14,6 +15,8 @@ uses(Modules\User\Tests\TestCase::class);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Datas\DeviceData;
 use Modules\User\Datas\FilamentShieldData;
 use Modules\User\Datas\FilamentUserData;
@@ -28,19 +31,25 @@ use Modules\User\Datas\SocialProviderData;
 use Modules\User\Datas\SuperAdminData;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 test('PermissionData can be instantiated', function () {
     $permissionData = PermissionData::from([
@@ -57,6 +66,7 @@ test('PermissionData can be instantiated', function () {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Assert::assertInstanceOf(PermissionData::class, $permissionData);
 =======
     expect($permissionData)->toBeInstanceOf(PermissionData::class);
@@ -67,6 +77,9 @@ test('PermissionData can be instantiated', function () {
     Assert::assertInstanceOf(PermissionData::class, $permissionData);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    Assert::assertInstanceOf(PermissionData::class, $permissionData);
+>>>>>>> laraxot/dev
 });
 
 test('PermissionModelsData can be instantiated', function () {
@@ -77,6 +90,7 @@ test('PermissionModelsData can be instantiated', function () {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Assert::assertInstanceOf(PermissionModelsData::class, $modelsData);
 =======
     expect($modelsData)->toBeInstanceOf(PermissionModelsData::class);
@@ -87,6 +101,9 @@ test('PermissionModelsData can be instantiated', function () {
     Assert::assertInstanceOf(PermissionModelsData::class, $modelsData);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    Assert::assertInstanceOf(PermissionModelsData::class, $modelsData);
+>>>>>>> laraxot/dev
 });
 
 test('PermissionTableNamesData can be instantiated', function () {
@@ -100,6 +117,7 @@ test('PermissionTableNamesData can be instantiated', function () {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Assert::assertInstanceOf(PermissionTableNamesData::class, $tableNamesData);
 =======
     expect($tableNamesData)->toBeInstanceOf(PermissionTableNamesData::class);
@@ -110,6 +128,9 @@ test('PermissionTableNamesData can be instantiated', function () {
     Assert::assertInstanceOf(PermissionTableNamesData::class, $tableNamesData);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    Assert::assertInstanceOf(PermissionTableNamesData::class, $tableNamesData);
+>>>>>>> laraxot/dev
 });
 
 test('PermissionColumnNamesData can be instantiated', function () {
@@ -119,6 +140,7 @@ test('PermissionColumnNamesData can be instantiated', function () {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Assert::assertInstanceOf(PermissionColumnNamesData::class, $columnNamesData);
 =======
     expect($columnNamesData)->toBeInstanceOf(PermissionColumnNamesData::class);
@@ -129,6 +151,9 @@ test('PermissionColumnNamesData can be instantiated', function () {
     Assert::assertInstanceOf(PermissionColumnNamesData::class, $columnNamesData);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    Assert::assertInstanceOf(PermissionColumnNamesData::class, $columnNamesData);
+>>>>>>> laraxot/dev
 });
 
 test('PermissionCacheData can be instantiated', function () {
@@ -140,6 +165,7 @@ test('PermissionCacheData can be instantiated', function () {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Assert::assertInstanceOf(PermissionCacheData::class, $cacheData);
 =======
     expect($cacheData)->toBeInstanceOf(PermissionCacheData::class);
@@ -150,6 +176,9 @@ test('PermissionCacheData can be instantiated', function () {
     Assert::assertInstanceOf(PermissionCacheData::class, $cacheData);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    Assert::assertInstanceOf(PermissionCacheData::class, $cacheData);
+>>>>>>> laraxot/dev
 });
 
 test('DeviceData can be instantiated', function () {
@@ -161,6 +190,7 @@ test('DeviceData can be instantiated', function () {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Assert::assertInstanceOf(DeviceData::class, $deviceData);
 =======
     expect($deviceData)->toBeInstanceOf(DeviceData::class);
@@ -171,6 +201,9 @@ test('DeviceData can be instantiated', function () {
     Assert::assertInstanceOf(DeviceData::class, $deviceData);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    Assert::assertInstanceOf(DeviceData::class, $deviceData);
+>>>>>>> laraxot/dev
 });
 
 test('SocialProviderData can be instantiated', function () {
@@ -182,6 +215,7 @@ test('SocialProviderData can be instantiated', function () {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Assert::assertInstanceOf(SocialProviderData::class, $socialProviderData);
 =======
     expect($socialProviderData)->toBeInstanceOf(SocialProviderData::class);
@@ -192,6 +226,9 @@ test('SocialProviderData can be instantiated', function () {
     Assert::assertInstanceOf(SocialProviderData::class, $socialProviderData);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    Assert::assertInstanceOf(SocialProviderData::class, $socialProviderData);
+>>>>>>> laraxot/dev
 });
 
 test('FilamentUserData can be instantiated', function () {
@@ -202,6 +239,7 @@ test('FilamentUserData can be instantiated', function () {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Assert::assertInstanceOf(FilamentUserData::class, $filamentUserData);
 =======
     expect($filamentUserData)->toBeInstanceOf(FilamentUserData::class);
@@ -212,6 +250,9 @@ test('FilamentUserData can be instantiated', function () {
     Assert::assertInstanceOf(FilamentUserData::class, $filamentUserData);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    Assert::assertInstanceOf(FilamentUserData::class, $filamentUserData);
+>>>>>>> laraxot/dev
 });
 
 test('SuperAdminData can be instantiated', function () {
@@ -222,6 +263,7 @@ test('SuperAdminData can be instantiated', function () {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Assert::assertInstanceOf(SuperAdminData::class, $superAdminData);
 =======
     expect($superAdminData)->toBeInstanceOf(SuperAdminData::class);
@@ -232,6 +274,9 @@ test('SuperAdminData can be instantiated', function () {
     Assert::assertInstanceOf(SuperAdminData::class, $superAdminData);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    Assert::assertInstanceOf(SuperAdminData::class, $superAdminData);
+>>>>>>> laraxot/dev
 });
 
 test('FilamentShieldData can be instantiated', function () {
@@ -241,6 +286,7 @@ test('FilamentShieldData can be instantiated', function () {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Assert::assertInstanceOf(FilamentShieldData::class, $filamentShieldData);
 =======
     expect($filamentShieldData)->toBeInstanceOf(FilamentShieldData::class);
@@ -251,6 +297,9 @@ test('FilamentShieldData can be instantiated', function () {
     Assert::assertInstanceOf(FilamentShieldData::class, $filamentShieldData);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    Assert::assertInstanceOf(FilamentShieldData::class, $filamentShieldData);
+>>>>>>> laraxot/dev
 });
 
 test('PasswordData can be instantiated', function () {
@@ -261,6 +310,7 @@ test('PasswordData can be instantiated', function () {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Assert::assertInstanceOf(PasswordData::class, $passwordData);
 =======
     expect($passwordData)->toBeInstanceOf(PasswordData::class);
@@ -271,6 +321,9 @@ test('PasswordData can be instantiated', function () {
     Assert::assertInstanceOf(PasswordData::class, $passwordData);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    Assert::assertInstanceOf(PasswordData::class, $passwordData);
+>>>>>>> laraxot/dev
 });
 
 test('ShieldResourceData can be instantiated', function () {
@@ -281,6 +334,7 @@ test('ShieldResourceData can be instantiated', function () {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Assert::assertInstanceOf(ShieldResourceData::class, $shieldResourceData);
 =======
     expect($shieldResourceData)->toBeInstanceOf(ShieldResourceData::class);
@@ -291,4 +345,7 @@ test('ShieldResourceData can be instantiated', function () {
     Assert::assertInstanceOf(ShieldResourceData::class, $shieldResourceData);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    Assert::assertInstanceOf(ShieldResourceData::class, $shieldResourceData);
+>>>>>>> laraxot/dev
 });

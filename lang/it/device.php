@@ -5,10 +5,14 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Dispositivi',
         'plural_label' => 'Dispositivi',
         'group' => ['name' => 'Sicurezza', 'description' => 'Gestione dispositivi e sicurezza'],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -30,12 +34,17 @@ return [
         'group' => ['name' => 'Sicurezza', 'description' => 'Gestione dispositivi e sicurezza'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'sort' => 50,
         'icon' => 'heroicon-o-device-phone-mobile',
         'badge' => 'Gestione dispositivi utente',
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'model' => ['label' => 'Dispositivo', 'plural' => 'Dispositivi', 'description' => 'Gestione e monitoraggio dei dispositivi degli utenti'],
     'fields' => [
         'uuid' => ['label' => 'UUID', 'placeholder' => 'Inserisci l\'UUID del dispositivo', 'tooltip' => 'Identificativo univoco universale', 'helper_text' => 'Codice alfanumerico che identifica in modo univoco il dispositivo nel sistema', 'help' => 'Identificativo univoco del dispositivo', 'description' => ''],
@@ -55,6 +64,7 @@ return [
         'login_at' => ['label' => 'login_at'],
         'logout_at' => ['label' => 'logout_at'],
     ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -184,12 +194,15 @@ return [
     ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'actions' => [
         'create' => [
             'label' => 'Crea Dispositivo',
             'icon' => 'heroicon-o-plus',
             'color' => 'primary',
             'tooltip' => 'Aggiungi un nuovo dispositivo al sistema',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'modal' => ['heading' => 'Crea Nuovo Dispositivo', 'description' => 'Inserisci i dettagli del nuovo dispositivo da aggiungere', 'confirm' => 'Crea', 'cancel' => 'Annulla'],
@@ -215,12 +228,17 @@ return [
             'messages' => ['success' => 'Dispositivo creato con successo', 'error' => 'Si è verificato un errore durante la creazione del dispositivo'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'modal' => ['heading' => 'Crea Nuovo Dispositivo', 'description' => 'Inserisci i dettagli del nuovo dispositivo da aggiungere', 'confirm' => 'Crea', 'cancel' => 'Annulla'],
+            'messages' => ['success' => 'Dispositivo creato con successo', 'error' => 'Si è verificato un errore durante la creazione del dispositivo'],
+>>>>>>> laraxot/dev
         ],
         'edit' => [
             'label' => 'Modifica Dispositivo',
             'icon' => 'heroicon-o-pencil',
             'color' => 'warning',
             'tooltip' => 'Modifica i dettagli del dispositivo selezionato',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'modal' => ['heading' => 'Modifica Dispositivo', 'description' => 'Aggiorna le informazioni del dispositivo', 'confirm' => 'Salva modifiche', 'cancel' => 'Annulla'],
@@ -246,6 +264,10 @@ return [
             'messages' => ['success' => 'Dispositivo modificato con successo', 'error' => 'Si è verificato un errore durante la modifica del dispositivo'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'modal' => ['heading' => 'Modifica Dispositivo', 'description' => 'Aggiorna le informazioni del dispositivo', 'confirm' => 'Salva modifiche', 'cancel' => 'Annulla'],
+            'messages' => ['success' => 'Dispositivo modificato con successo', 'error' => 'Si è verificato un errore durante la modifica del dispositivo'],
+>>>>>>> laraxot/dev
         ],
         'delete' => [
             'label' => 'Elimina Dispositivo',
@@ -254,10 +276,14 @@ return [
             'tooltip' => 'Elimina definitivamente il dispositivo dal sistema',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'modal' => ['heading' => 'Elimina Dispositivo', 'description' => 'Sei sicuro di voler eliminare questo dispositivo? Questa azione è irreversibile.', 'confirm' => 'Elimina', 'cancel' => 'Annulla'],
             'messages' => ['success' => 'Dispositivo eliminato con successo', 'error' => 'Si è verificato un errore durante l\'eliminazione del dispositivo'],
         ],
         'view' => ['label' => 'Visualizza Dispositivo', 'icon' => 'heroicon-o-eye', 'color' => 'secondary', 'tooltip' => 'Visualizza i dettagli del dispositivo'],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -288,11 +314,14 @@ return [
         'view' => ['label' => 'Visualizza Dispositivo', 'icon' => 'heroicon-o-eye', 'color' => 'secondary', 'tooltip' => 'Visualizza i dettagli del dispositivo'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'bulk_delete' => [
             'label' => 'Elimina Selezionati',
             'icon' => 'heroicon-o-trash',
             'color' => 'danger',
             'tooltip' => 'Elimina tutti i dispositivi selezionati',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'modal' => ['heading' => 'Elimina Dispositivi Selezionati', 'description' => 'Sei sicuro di voler eliminare tutti i dispositivi selezionati? Questa azione è irreversibile.', 'confirm' => 'Elimina tutti', 'cancel' => 'Annulla'],
@@ -301,11 +330,21 @@ return [
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'detach' => ['label' => 'detach', 'icon' => 'detach', 'tooltip' => 'detach'],
+=======
+            'modal' => ['heading' => 'Elimina Dispositivi Selezionati', 'description' => 'Sei sicuro di voler eliminare tutti i dispositivi selezionati? Questa azione è irreversibile.', 'confirm' => 'Elimina tutti', 'cancel' => 'Annulla'],
+            'messages' => ['success' => 'Dispositivi eliminati con successo', 'error' => 'Si è verificato un errore durante l\'eliminazione dei dispositivi'],
+        ],
+        'attach' => ['label' => 'attach', 'icon' => 'attach', 'tooltip' => 'attach'],
+        'detach' => ['label' => 'detach', 'icon' => 'detach', 'tooltip' => 'detach'],
+        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+>>>>>>> laraxot/dev
     ],
     'sections' => [
         'device_info' => ['label' => 'Informazioni Dispositivo', 'description' => 'Dettagli tecnici del dispositivo'],
         'device_type' => ['label' => 'Tipo Dispositivo', 'description' => 'Categoria e classificazione del dispositivo'],
         'browser_info' => ['label' => 'Informazioni Browser', 'description' => 'Dettagli del browser utilizzato'],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -353,12 +392,17 @@ return [
         'browser_info' => ['label' => 'Informazioni Browser', 'description' => 'Dettagli del browser utilizzato'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     ],
     'filters' => [
         'platform' => [
             'label' => 'Piattaforma',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'options' => ['ios' => 'iOS', 'android' => 'Android', 'windows' => 'Windows', 'linux' => 'Linux', 'macos' => 'macOS'],
         ],
         'device_type' => [
@@ -370,6 +414,7 @@ return [
             'options' => ['yes' => 'Sì', 'no' => 'No'],
         ],
     ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -416,12 +461,17 @@ return [
     ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'messages' => [
         'empty_state' => 'Nessun dispositivo trovato',
         'search_placeholder' => 'Cerca dispositivi...',
         'loading' => 'Caricamento dispositivi in corso...',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'validation' => ['uuid_required' => 'L\'UUID è obbligatorio', 'uuid_unique' => 'Questo UUID è già in uso', 'platform_required' => 'La piattaforma è obbligatoria', 'device_required' => 'Il nome del dispositivo è obbligatorio', 'languages_array' => 'Le lingue devono essere un array'],
         'options' => [
             'platforms' => ['ios' => 'iOS', 'android' => 'Android', 'windows' => 'Windows', 'linux' => 'Linux', 'macos' => 'macOS'],
@@ -432,6 +482,7 @@ return [
     ],
     'label' => 'Device',
     'plural_label' => 'Device (Plurale)',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -481,4 +532,6 @@ return [
     'plural_label' => 'Device (Plurale)',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

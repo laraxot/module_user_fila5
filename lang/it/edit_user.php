@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 =======
@@ -12,6 +13,10 @@ declare(strict_types=1);
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 return [
     'actions' => [
         'delete' => [
@@ -40,6 +45,9 @@ return [
             'label' => 'password',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -70,6 +78,7 @@ return [
     ],
     'label' => 'Edit User',
     'plural_label' => 'Edit User (Plurale)',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -117,4 +126,6 @@ return [
     'plural_label' => 'Edit User (Plurale)',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

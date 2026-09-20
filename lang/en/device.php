@@ -10,6 +10,7 @@ return [
             'help' => 'Unique device identifier',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -22,6 +23,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'mobile_id' => [
             'label' => 'Mobile ID',
@@ -29,6 +35,7 @@ return [
             'help' => 'Mobile device identifier',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -41,6 +48,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'languages' => [
             'label' => 'Languages',
@@ -48,6 +60,7 @@ return [
             'help' => 'Select or type language codes (e.g. it, en, es)',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -60,6 +73,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'device' => [
             'label' => 'Device Name',
@@ -67,6 +85,7 @@ return [
             'help' => 'Device name',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -79,6 +98,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'platform' => [
             'label' => 'Platform',
@@ -86,6 +110,7 @@ return [
             'help' => 'Device platform',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -98,6 +123,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'browser' => [
             'label' => 'Browser',
@@ -105,6 +135,7 @@ return [
             'help' => 'Browser used',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -117,6 +148,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'version' => [
             'label' => 'Version',
@@ -124,6 +160,7 @@ return [
             'help' => 'Browser or system version',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -136,6 +173,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'is_robot' => [
             'label' => 'Is Robot',
@@ -143,6 +185,7 @@ return [
             'help' => 'Indicates if the device is a robot',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -155,6 +198,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'robot' => [
             'label' => 'Robot',
@@ -162,6 +210,7 @@ return [
             'help' => 'Robot type if applicable',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -174,6 +223,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'is_desktop' => [
             'label' => 'Is Desktop',
@@ -181,6 +235,7 @@ return [
             'help' => 'Indicates if it is a desktop device',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -193,6 +248,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'is_mobile' => [
             'label' => 'Is Mobile',
@@ -200,6 +260,7 @@ return [
             'help' => 'Indicates if it is a mobile device',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -212,6 +273,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'is_tablet' => [
             'label' => 'Is Tablet',
@@ -219,6 +285,7 @@ return [
             'help' => 'Indicates if it is a tablet',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -231,6 +298,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'is_phone' => [
             'label' => 'Is Phone',
@@ -238,11 +310,15 @@ return [
             'help' => 'Indicates if it is a phone',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
     ],
+<<<<<<< HEAD
 =======
         ],
     ],
@@ -253,6 +329,8 @@ return [
         ],
     ],
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -265,6 +343,7 @@ return [
     'actions' => [
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         ],
     ],
@@ -272,4 +351,6 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

@@ -23,6 +23,7 @@ abstract class TwoFactorAuthenticationEvent
         public UserContract $userContract,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {
     }
 =======
@@ -35,4 +36,8 @@ abstract class TwoFactorAuthenticationEvent
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 }

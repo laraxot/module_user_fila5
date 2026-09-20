@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "PHPStan Corrections - OAuth Resources"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # PHPStan Corrections - OAuth Resources
 
 **Data**: 2025-01-22
@@ -141,6 +147,7 @@ TextColumn::make('name')
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-22*
 >>>>>>> 60a2c9a9 (.)
@@ -149,3 +156,5 @@ TextColumn::make('name')
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

@@ -7,9 +7,12 @@ namespace Modules\User\Tests\Unit\Fixtures;
 use Illuminate\Support\Collection;
 use Modules\User\Models\BaseUser;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * BaseUser stub con flag per canAccessPanel senza classi anonime.
@@ -26,7 +29,11 @@ final class AdminPanelAccessUserFixture extends BaseUser
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<int, string>|Collection<int, string>  $roles
+=======
+     * @param array<int, string>|Collection<int, string> $roles
+>>>>>>> laraxot/dev
      */
     public function hasRole($roles, ?string $guard = null): bool
     {

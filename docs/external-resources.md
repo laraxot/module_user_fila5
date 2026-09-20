@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Risorse e Link Utili - Modulo User"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Risorse e Link Utili - Modulo User
 
 Raccolta di link e risorse esterne per lo sviluppo del modulo User.

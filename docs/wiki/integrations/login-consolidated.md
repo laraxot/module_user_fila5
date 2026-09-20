@@ -139,10 +139,14 @@ related:
 
 ## Metodo getFormSchema()
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Inizialmente definito come `public static function getFormSchema(): array`.
 =======
 - Inizialmente definito come `public function getFormSchema(): array`.
 >>>>>>> 87273113 (.)
+=======
+- Inizialmente definito come `public static function getFormSchema(): array`.
+>>>>>>> laraxot/dev
   - **Issue**: firma statica non compatibile con l’astrazione di `XotBaseWidget`, che richiede un metodo d’istanza `public function getFormSchema(): array`.
   - Motivo: PHP non permette di sovrascrivere un metodo di istanza con uno statico.
 - Restituisce array associativo con componenti.
@@ -217,10 +221,14 @@ related:
 
 ## Metodo getFormSchema()
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Inizialmente definito come `public static function getFormSchema(): array`.
 =======
 - Inizialmente definito come `public function getFormSchema(): array`.
 >>>>>>> 87273113 (.)
+=======
+- Inizialmente definito come `public static function getFormSchema(): array`.
+>>>>>>> laraxot/dev
   - **Issue**: firma statica non compatibile con l’astrazione di `XotBaseWidget`, che richiede un metodo d’istanza `public function getFormSchema(): array`.
   - Motivo: PHP non permette di sovrascrivere un metodo di istanza con uno statico.
 - Restituisce array associativo con componenti.
@@ -705,10 +713,14 @@ See canonical documentation: ../../../Themes/docs/shared-components/login-widget
 
 ## Metodo getFormSchema()
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Inizialmente definito come `public static function getFormSchema(): array`.
 =======
 - Inizialmente definito come `public function getFormSchema(): array`.
 >>>>>>> 87273113 (.)
+=======
+- Inizialmente definito come `public static function getFormSchema(): array`.
+>>>>>>> laraxot/dev
   - **Issue**: firma statica non compatibile con l’astrazione di `XotBaseWidget`, che richiede un metodo d’istanza `public function getFormSchema(): array`.
   - Motivo: PHP non permette di sovrascrivere un metodo di istanza con uno statico.
 - Restituisce array associativo con componenti.

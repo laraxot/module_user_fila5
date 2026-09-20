@@ -6,6 +6,9 @@ namespace Modules\User\Http\Livewire\Auth;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
@@ -22,6 +25,7 @@ use Modules\Xot\Actions\File\ViewCopyAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -62,6 +66,8 @@ use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * @property Schema $form
@@ -73,6 +79,7 @@ class Register extends Component implements HasSchemas
     /**
      * Data array for form state.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @var array<string, string>
      */
@@ -89,6 +96,11 @@ class Register extends Component implements HasSchemas
     public $data = [];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @var array<string, mixed>
+     */
+    public $data = [];
+>>>>>>> laraxot/dev
 
     /**
      * Mount the component.
@@ -109,6 +121,7 @@ class Register extends Component implements HasSchemas
                     ->required()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     ->label(__('Name'))
                     ->placeholder(__('Enter your name'))
@@ -119,12 +132,15 @@ class Register extends Component implements HasSchemas
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                     ->autofocus(),
                 TextInput::make('email')
                     ->email()
                     ->required()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     ->label(__('Email'))
                     ->placeholder(__('Enter your email'))
@@ -135,12 +151,15 @@ class Register extends Component implements HasSchemas
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                     ->unique('users', 'email'),
                 TextInput::make('password')
                     ->password()
                     ->required()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     ->label(__('Password'))
                     ->placeholder(__('Enter your password'))
@@ -151,6 +170,8 @@ class Register extends Component implements HasSchemas
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                     ->rules([PasswordRule::defaults()])
                     ->revealable(),
                 TextInput::make('password_confirmation')
@@ -158,6 +179,7 @@ class Register extends Component implements HasSchemas
                     ->required()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                     ->label(__('Confirm Password'))
                     ->placeholder(__('Confirm your password'))
@@ -168,6 +190,8 @@ class Register extends Component implements HasSchemas
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                     ->same('password')
                     ->revealable(),
             ])
@@ -186,6 +210,7 @@ class Register extends Component implements HasSchemas
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         /** @var UserContract $user */
 =======
         /** @var UserContract */
@@ -196,6 +221,9 @@ class Register extends Component implements HasSchemas
         /** @var UserContract $user */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        /** @var UserContract $user */
+>>>>>>> laraxot/dev
         $user = $user_class::create([
             'email' => $data['email'],
             'name' => $data['name'],
@@ -204,6 +232,7 @@ class Register extends Component implements HasSchemas
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::isInstanceOf($user, Authenticatable::class);
         event(new Registered($user));
 =======
@@ -218,6 +247,10 @@ class Register extends Component implements HasSchemas
         event(new Registered($user));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        Assert::isInstanceOf($user, Authenticatable::class);
+        event(new Registered($user));
+>>>>>>> laraxot/dev
         Auth::login($user, true);
 
         return redirect()->intended(route('home'));
@@ -230,10 +263,14 @@ class Register extends Component implements HasSchemas
      * but it's processed through Livewire's component system.
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function render(): \Illuminate\Contracts\View\View
 =======
     public function render(): mixed
 >>>>>>> f548be94 (.)
+=======
+    public function render(): mixed
+>>>>>>> laraxot/dev
     {
         // Copy the view templates to the pub_theme location
         app(ViewCopyAction::class)

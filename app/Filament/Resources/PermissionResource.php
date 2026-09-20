@@ -11,6 +11,7 @@ namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Override;
 >>>>>>> f548be94 (.)
@@ -21,10 +22,13 @@ use Override;
 >>>>>>> 87273113 (.)
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\PermissionResource\Pages\CreatePermission;
 use Modules\User\Filament\Resources\PermissionResource\Pages\EditPermission;
 use Modules\User\Filament\Resources\PermissionResource\Pages\ListPermissions;
 use Modules\User\Models\Permission;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -35,10 +39,13 @@ use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class PermissionResource extends XotBaseResource
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected static ?string $model = Permission::class;
@@ -75,11 +82,17 @@ class PermissionResource extends XotBaseResource
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    protected static ?string $model = Permission::class;
+
+    #[\Override]
+>>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     #[\Override]
@@ -92,6 +105,9 @@ class PermissionResource extends XotBaseResource
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public static function getPages(): array
     {
         return [

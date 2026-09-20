@@ -23,8 +23,19 @@ return [
             'placeholder' => 'Enter client secret',
             'help' => 'Secret for OAuth authentication',
         ],
+<<<<<<< HEAD
     ],
     'actions' => [
+=======
+        'client_name' => [
+            'label' => 'Client name',
+        ],
+    ],
+    'actions' => [
+        'new_credentials' => [
+            'label' => 'New credentials',
+        ],
+>>>>>>> laraxot/dev
         'create' => [
             'label' => 'Create Client',
             'tooltip' => 'Create a new OAuth client',
@@ -62,5 +73,9 @@ return [
         'command_completed' => 'Command completed successfully',
         'command_failed' => 'Command execution failed',
         'command_error' => 'Error during command execution',
+<<<<<<< HEAD
+=======
+        'credentials_created' => 'Credentials created successfully',
+>>>>>>> laraxot/dev
     ],
 ];

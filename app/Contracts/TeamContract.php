@@ -11,12 +11,16 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\User\Models\TeamInvitation;
 use Modules\User\Models\TeamUser;
 use Modules\Xot\Contracts\ModelContract;
+<<<<<<< HEAD
 =======
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
@@ -33,6 +37,8 @@ use Modules\User\Models\TeamUser;
 use Modules\Xot\Contracts\ModelContract;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Contracts\UserContract;
 
 /**
@@ -40,6 +46,9 @@ use Modules\Xot\Contracts\UserContract;
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * @property int               $id
  * @property int               $user_id
  * @property string            $name
@@ -60,6 +69,7 @@ use Modules\Xot\Contracts\UserContract;
  * @method static Builder<Model> wherePersonalTeam($value)
  * @method static Builder<Model> whereUpdatedAt($value)
  * @method static Builder<Model> whereUserId($value)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -109,6 +119,8 @@ use Modules\Xot\Contracts\UserContract;
  * @method static Builder<Model> whereUserId($value)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  *
  * @phpstan-require-extends Model
  *
@@ -120,6 +132,7 @@ interface TeamContract extends ModelContract
      * Get the owner of the team.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return BelongsTo<Model&UserContract, Model>
 =======
@@ -130,6 +143,10 @@ interface TeamContract extends ModelContract
      * @return BelongsTo<Model&UserContract, Model>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+     * @return BelongsTo<Model&UserContract, Model>
+>>>>>>> laraxot/dev
      */
     public function owner(): BelongsTo;
 
@@ -137,6 +154,7 @@ interface TeamContract extends ModelContract
      * Get all of the team's users including its owner.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return Collection<int, Model&UserContract>
 =======
@@ -147,6 +165,10 @@ interface TeamContract extends ModelContract
      * @return Collection<int, Model&UserContract>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+     * @return Collection<int, Model&UserContract>
+>>>>>>> laraxot/dev
      */
     public function allUsers(): Collection;
 
@@ -154,6 +176,7 @@ interface TeamContract extends ModelContract
      * Get all of the users that belong to the team.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'>
 =======
@@ -164,6 +187,10 @@ interface TeamContract extends ModelContract
      * @return BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+     * @return BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'>
+>>>>>>> laraxot/dev
      */
     public function users(): BelongsToMany;
 
@@ -186,6 +213,7 @@ interface TeamContract extends ModelContract
      * Get all of the pending user invitations for the team.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return HasMany<TeamInvitation, Model>
 =======
@@ -196,6 +224,10 @@ interface TeamContract extends ModelContract
      * @return HasMany<TeamInvitation, Model>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+     * @return HasMany<TeamInvitation, Model>
+>>>>>>> laraxot/dev
      */
     public function teamInvitations(): HasMany;
 
@@ -209,6 +241,7 @@ interface TeamContract extends ModelContract
      */
     public function purge(): void;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     /**
@@ -240,5 +273,10 @@ interface TeamContract extends ModelContract
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return BelongsToMany<Model&UserContract, Model, TeamUser, 'pivot'>
+     */
+>>>>>>> laraxot/dev
     public function members(): BelongsToMany;
 }

@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -20,11 +21,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'column.name' => '名前',
     'column.guard_name' => 'ガード名',
     'column.roles' => 'ロール',
     'column.permissions' => 'パーミッション',
     'column.updated_at' => '更新日時',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -42,11 +46,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'field.name' => '名前',
     'field.guard_name' => 'ガード名',
     'field.permissions' => 'パーミッション',
     'field.select_all.name' => 'すべて選択',
     'field.select_all.message' => 'このロールに対して現在<span class="text-primary font-medium">有効</span>となっているすべての権限を有効にします。',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -64,11 +71,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'ロール',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'ロール',
     'resource.label.roles' => 'ロール',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -86,11 +96,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'section' => 'エンティティ',
     'resources' => 'リソース',
     'widgets' => 'ウィジェット',
     'pages' => 'ページ',
     'custom' => 'カスタムパーミッション',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     'forbidden' => 'アクセスするパーミッションがありません。',
@@ -117,6 +130,9 @@ return [
     'forbidden' => 'アクセスするパーミッションがありません。',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    'forbidden' => 'アクセスするパーミッションがありません。',
+>>>>>>> laraxot/dev
     'resource_permission_prefixes_labels' => [
         'view' => '表示',
         'view_any' => 'どれでも表示',
@@ -133,9 +149,12 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -150,9 +169,12 @@ return [
     'actions' => [
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

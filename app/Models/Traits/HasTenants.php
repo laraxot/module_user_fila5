@@ -6,6 +6,9 @@ namespace Modules\User\Models\Traits;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Panel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -16,6 +19,7 @@ use Modules\Xot\Datas\XotData;
 
 /**
  * Trait HasTenants.
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -47,6 +51,8 @@ use Modules\Xot\Datas\XotData;
  * Trait HasTenants.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  *
  * Provides tenant functionality for User models implementing multi-tenancy.
  *
@@ -58,6 +64,7 @@ trait HasTenants
      * Check if the user can access a specific tenant.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @param Model $tenant
@@ -70,6 +77,8 @@ trait HasTenants
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     public function canAccessTenant(Model $tenant): bool
     {
@@ -81,6 +90,7 @@ trait HasTenants
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      * @param Panel $_panel
 >>>>>>> f548be94 (.)
@@ -89,18 +99,24 @@ trait HasTenants
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      * @return array<Model>|Collection<int, Model>
      */
     public function getTenants(Panel $_panel): array|Collection
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         /** @var Collection<int, Model> $result */
         $result = $this->tenants->map(
             static fn (Model $tenant): Model => $tenant,
         );
 
         return $result;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -120,11 +136,14 @@ trait HasTenants
         return $result;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
      * Get all of the tenants the user belongs to.
      *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * @return BelongsToMany<Model, Model&static>
@@ -141,6 +160,11 @@ trait HasTenants
      * @phpstan-return BelongsToMany<Model, Model&static, Pivot, 'pivot'>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return BelongsToMany<Model, Model&static>
+     *
+     * @phpstan-return BelongsToMany<Model, Model&static, Pivot, 'pivot'>
+>>>>>>> laraxot/dev
      */
     public function tenants(): BelongsToMany
     {
@@ -150,10 +174,14 @@ trait HasTenants
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         /** @var BelongsToMany<Model, Model&static, Pivot, 'pivot'> $relation */
         $relation = $this->belongsToManyX($tenant_class);
 
         return $relation;
+<<<<<<< HEAD
 =======
         return $this->belongsToManyX($tenant_class);
 >>>>>>> f548be94 (.)
@@ -166,5 +194,7 @@ trait HasTenants
         return $relation;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

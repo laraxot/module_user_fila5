@@ -4,62 +4,89 @@ declare(strict_types=1);
 
 return [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * |--------------------------------------------------------------------------
      * | Table Columns
      * |--------------------------------------------------------------------------
      */
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     'column.guard_name' => 'Guard-Name',
     'column.name' => 'Name',
     'column.permissions' => 'Berechtigungen',
     'column.roles' => 'Rollen',
     'column.updated_at' => 'Aktualisiert am',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * |--------------------------------------------------------------------------
      * | Form Fields
      * |--------------------------------------------------------------------------
      */
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     'field.guard_name' => 'Guard-Name',
     'field.name' => 'Name',
     'field.permissions' => 'Berechtigungen',
     'field.select_all.message' => 'Aktivierung aller Berechtigungen, die derzeit für diese Rolle <span class="text-primary font-medium">aktiviert</span> sind',
     'field.select_all.name' => 'Alle auswählen',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * |--------------------------------------------------------------------------
      * | Navigation & Resource
      * |--------------------------------------------------------------------------
      */
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     'nav.group' => 'Filament Shield',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'nav.role.label' => 'Rollen',
     'resource.label.role' => 'Rolle',
     'resource.label.roles' => 'Rollen',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * |--------------------------------------------------------------------------
      * | Section & Tabs
      * |--------------------------------------------------------------------------
      */
 
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     'section' => 'Entitäten',
     'resources' => 'Ressourcen',
     'widgets' => 'Widgets',
     'pages' => 'Seiten',
     'custom' => 'benutzerdefinierte Berechtigungen',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /*
      * |--------------------------------------------------------------------------
      * | Messages
@@ -73,9 +100,12 @@ return [
      * |--------------------------------------------------------------------------
      */
 
+<<<<<<< HEAD
 =======
     'forbidden' => 'Sie haben keine Zugangsberechtigung',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
     'resource_permission_prefixes_labels' => [
         'view' => 'Anzeigen',
         'view_any' => 'Alle anzeigen',
@@ -86,11 +116,15 @@ return [
         'force_delete' => 'Endgültig löschen',
         'force_delete_any' => 'Alle endgültig löschen',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         // 'reorder' => 'Reorder',
         // 'replicate' => 'Replicate',
         'restore' => 'Wiederherstellen',
         'restore_any' => 'Alle wiederherstellen',
     ],
+<<<<<<< HEAD
 =======
         'restore' => 'Wiederherstellen',
         'restore_any' => 'Alle wiederherstellen',
@@ -109,4 +143,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

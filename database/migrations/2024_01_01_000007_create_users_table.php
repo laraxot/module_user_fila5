@@ -11,6 +11,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
 =======
@@ -23,6 +24,9 @@ return new class extends XotBaseMigration
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -34,6 +38,7 @@ return new class extends XotBaseMigration
             $table->string('id', 36)->primary();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $table->string('name');
 =======
             $table->string('name')->nullable();
@@ -44,6 +49,9 @@ return new class extends XotBaseMigration
             $table->string('name');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            $table->string('name');
+>>>>>>> laraxot/dev
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('email')->unique();
@@ -86,6 +94,7 @@ return new class extends XotBaseMigration
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -103,6 +112,8 @@ return new class extends XotBaseMigration
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             if (! $this->hasColumn('is_otp')) {
                 $table->boolean('is_otp')->default(false);
             }
@@ -116,6 +127,7 @@ return new class extends XotBaseMigration
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($this->getColumnType('id') === 'uuid') {
 =======
             if ('uuid' === $this->getColumnType('id')) {
@@ -126,6 +138,9 @@ return new class extends XotBaseMigration
             if ($this->getColumnType('id') === 'uuid') {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            if ('uuid' === $this->getColumnType('id')) {
+>>>>>>> laraxot/dev
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);

@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\EditAction;
@@ -63,6 +66,7 @@ class SocialiteUsersRelationManager extends XotBaseRelationManager
             'delete' => DeleteAction::make(),
         ];
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -211,4 +215,6 @@ class SocialiteUsersRelationManager extends XotBaseRelationManager
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f548be94 (.)
@@ -12,12 +13,17 @@ declare(strict_types=1);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 return [
     'fields' => [
         'deactivate' => [
             'label' => 'deactivate',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -75,6 +81,7 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Base List Users',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -156,6 +163,8 @@ return [
             'label' => 'Elimina Base List Users',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
     ],
 ];

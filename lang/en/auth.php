@@ -10,6 +10,7 @@ return [
             'help' => 'Your email address for authentication',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -22,6 +23,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'password' => [
             'label' => 'Password',
@@ -29,6 +35,7 @@ return [
             'help' => 'Your account password',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -41,6 +48,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -58,6 +70,9 @@ return [
     'messages' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'failed' => [
             'key' => 'user::auth.messages.failed',
             'text' => 'Invalid credentials.',
@@ -68,6 +83,7 @@ return [
         'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
         'unauthorized' => 'You are not authorized to access this resource.',
     ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -92,6 +108,8 @@ return [
     ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'password_reset' => [
         'email_placeholder' => 'Enter your email address',
         'send_button' => 'Send reset link',
@@ -140,9 +158,12 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -250,9 +271,12 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

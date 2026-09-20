@@ -12,6 +12,9 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -24,6 +27,7 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -54,12 +58,15 @@ use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Spatie\Permission\Models\Role as SpatieRole;
 use Webmozart\Assert\Assert;
 
 /**
  * Modules\User\Models\Role.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property int $id
@@ -119,6 +126,26 @@ use Webmozart\Assert\Assert;
  *
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ * @property int                                 $id
+ * @property string                              $uuid
+ * @property string|null                         $team_id
+ * @property string                              $name
+ * @property string                              $guard_name
+ * @property string|null                         $display_name
+ * @property string|null                         $description
+ * @property Carbon|null                         $created_at
+ * @property Carbon|null                         $updated_at
+ * @property string|null                         $updated_by
+ * @property string|null                         $created_by
+ * @property Collection<int, Permission>         $permissions
+ * @property int|null                            $permissions_count
+ * @property Team|null                           $team
+ * @property Collection<int, Model&UserContract> $users
+ * @property int|null                            $users_count
+ * @property PermissionRole|null                 $pivot
+ *
+>>>>>>> laraxot/dev
  * @method static Builder|Role newModelQuery()
  * @method static Builder|Role newQuery()
  * @method static Builder|Role permission($permissions)
@@ -130,12 +157,16 @@ use Webmozart\Assert\Assert;
  * @method static Builder|Role whereUpdatedAt($value)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * @method static Builder|Role whereId($value)
  * @method static Builder|Role whereCreatedBy($value)
  * @method static Builder|Role whereUpdatedBy($value)
  * @method static Builder|Role withoutPermission($permissions)
  * @method static Builder|Role whereDescription($value)
  * @method static Builder|Role whereDisplayName($value)
+<<<<<<< HEAD
  * @method static static firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @property ProfileContract|null $creator
@@ -169,22 +200,34 @@ use Webmozart\Assert\Assert;
  * @method static Builder|Role whereDisplayName($value)
  * @method static static firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+=======
+ * @method static static       firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static       updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+>>>>>>> laraxot/dev
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  *
  * @method static \Modules\User\Database\Factories\RoleFactory factory($count = null, $state = [])
+<<<<<<< HEAD
  * @method static Builder<static>|Role whereUuid($value)
  *
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ * @method static Builder<static>|Role                         whereUuid($value)
+ *
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class Role extends SpatieRole
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     use HasXotFactory;
 
     use RelationX;
@@ -212,6 +255,7 @@ class Role extends SpatieRole
         'created_by',
         'updated_by',
     ];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -266,6 +310,8 @@ class Role extends SpatieRole
     ];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     public function getTable(): string
     {
@@ -274,6 +320,7 @@ class Role extends SpatieRole
         return $table;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     /**
@@ -304,6 +351,10 @@ class Role extends SpatieRole
      * @return BelongsTo<Model, $this>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return BelongsTo<Model, $this>
+>>>>>>> laraxot/dev
      */
     public function team(): BelongsTo
     {
@@ -317,6 +368,7 @@ class Role extends SpatieRole
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return BelongsToMany<Permission, $this, Pivot, 'pivot'>
 =======
      * A role may be given various permissions.
@@ -327,6 +379,9 @@ class Role extends SpatieRole
      * @return BelongsToMany<Permission, $this, Pivot, 'pivot'>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return BelongsToMany<Permission, $this, Pivot, 'pivot'>
+>>>>>>> laraxot/dev
      */
     public function permissions(): BelongsToMany
     {
@@ -334,9 +389,12 @@ class Role extends SpatieRole
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     /** @return array<string, string> */
     protected function casts(): array
@@ -350,9 +408,12 @@ class Role extends SpatieRole
         ];
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

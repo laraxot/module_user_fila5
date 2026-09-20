@@ -6,10 +6,14 @@ namespace Modules\User\Http\Controllers\Api;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Modules\User\Actions\Socialite\LogoutUserAction;
 use Modules\Xot\Contracts\UserContract;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -28,6 +32,8 @@ use Modules\User\Actions\Socialite\LogoutUserAction;
 use Modules\Xot\Contracts\UserContract;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Datas\JsonResponseData;
 use Modules\Xot\Http\Controllers\XotBaseController;
 use Webmozart\Assert\Assert;
@@ -47,6 +53,7 @@ class LogoutController extends XotBaseController
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param Request $request the incoming request containing the authenticated user
      *
 =======
@@ -59,17 +66,25 @@ class LogoutController extends XotBaseController
      *
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @param Request $request the incoming request containing the authenticated user
+     *
+>>>>>>> laraxot/dev
      * @return JsonResponse a JSON response indicating the success of the logout operation
      */
     public function __invoke(Request $request): JsonResponse
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         Assert::notNull($user = $request->user(), '['.__LINE__.']['.class_basename($this).']');
 
         // Verificare che l'utente implementi l'interfaccia UserContract
         if (! $user instanceof UserContract) {
             throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia UserContract');
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -89,6 +104,8 @@ class LogoutController extends XotBaseController
             throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia UserContract');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         }
 
         app(LogoutUserAction::class)->execute($user);

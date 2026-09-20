@@ -12,6 +12,7 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'first_name' => 'Nome',
         'last_name' => 'Cognome',
 =======
@@ -28,6 +29,10 @@ return [
             'description' => '',
         ],
 >>>>>>> 60a2c9a9 (.)
+=======
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'import' => [
@@ -47,8 +52,11 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

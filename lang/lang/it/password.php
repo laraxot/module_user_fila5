@@ -12,6 +12,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'first_name' => 'Nome',
         'last_name' => 'Cognome',
         'otp_expiration_minutes' => [
@@ -34,6 +37,7 @@ return [
         ],
         'numbers' => [
             'help' => 'la password richiede almeno un numero',
+<<<<<<< HEAD
 =======
         'first_name' => [
             'label' => 'Nome',
@@ -96,6 +100,8 @@ return [
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'symbols' => [
             'help' => 'la password richiede almeno un simbolo',
@@ -103,11 +109,14 @@ return [
                 'help' => 'la password richiede almeno un simbolo',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'uncompromised' => [
             'help' => 'Se la password non deve essere stata compromessa in data leaks',
@@ -115,11 +124,14 @@ return [
                 'help' => 'Se la password non deve essere stata compromessa in data leaks',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'compromisedThreshold' => [
             'help' => 'Il numero di volte che una password può apparire in data leaks prima di essere considerata compromessa',
@@ -127,11 +139,14 @@ return [
                 'help' => 'Il numero di volte che una password può apparire in data leaks prima di essere considerata compromessa',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'new_password' => [
             'label' => 'new_password',
@@ -139,11 +154,14 @@ return [
                 'label' => 'new_password',
             ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -165,8 +183,11 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

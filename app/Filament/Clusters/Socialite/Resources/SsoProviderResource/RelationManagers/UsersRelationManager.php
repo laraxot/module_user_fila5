@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 =======
 >>>>>>> 60a2c9a9 (.)
@@ -14,6 +15,9 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\Column;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Filament\Tables\Columns\Column;
+>>>>>>> laraxot/dev
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
@@ -29,6 +33,7 @@ class UsersRelationManager extends XotBaseRelationManager
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, Column>
 =======
      * @return array<string, \Filament\Tables\Columns\Column>
@@ -39,6 +44,9 @@ class UsersRelationManager extends XotBaseRelationManager
      * @return array<string, Column>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return array<string, Column>
+>>>>>>> laraxot/dev
      */
     #[\Override]
     public function getTableColumns(): array

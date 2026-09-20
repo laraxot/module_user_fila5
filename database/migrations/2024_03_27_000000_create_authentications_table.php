@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Authentication;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -14,6 +17,7 @@ return new class extends XotBaseMigration {
     public function up(): void
     {
         $this->tableCreate(function (Blueprint $table): void {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -41,6 +45,8 @@ return new class extends XotBaseMigration {
         $this->tableCreate(function (Blueprint $table): void {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             $table->id();
             $table->string('type');
             $table->string('ip_address')->nullable();
@@ -48,12 +54,16 @@ return new class extends XotBaseMigration {
             $table->json('location')->nullable();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         });
 
         $this->tableUpdate(function (Blueprint $table): void {
             $this->updateTimestamps($table, false);
         });
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -77,4 +87,6 @@ return new class extends XotBaseMigration {
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 };

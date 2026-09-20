@@ -6,11 +6,15 @@ namespace Modules\User\Filament\Resources\UserResource\RelationManagers;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
 use Modules\User\Filament\Resources\TenantResource\Pages\ListTenants;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -35,6 +39,8 @@ use Modules\User\Filament\Resources\TenantResource\Pages\ListTenants;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * Manages the relationship between users and tenants.
@@ -48,6 +54,7 @@ class TenantsRelationManager extends XotBaseRelationManager
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static ?string $recordTitleAttribute = 'name';
 =======
     protected static null|string $recordTitleAttribute = 'name';
@@ -58,6 +65,9 @@ class TenantsRelationManager extends XotBaseRelationManager
     protected static ?string $recordTitleAttribute = 'name';
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    protected static ?string $recordTitleAttribute = 'name';
+>>>>>>> laraxot/dev
 
     /**
      * Set up the form schema for tenant relations.
@@ -66,6 +76,7 @@ class TenantsRelationManager extends XotBaseRelationManager
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[\Override]
 =======
     #[Override]
@@ -76,6 +87,9 @@ class TenantsRelationManager extends XotBaseRelationManager
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
     {
         return [
@@ -90,6 +104,9 @@ class TenantsRelationManager extends XotBaseRelationManager
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     #[\Override]
     public function getTableColumns(): array
     {
@@ -112,6 +129,7 @@ class TenantsRelationManager extends XotBaseRelationManager
         }
 
         return $columnMap;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -150,5 +168,7 @@ class TenantsRelationManager extends XotBaseRelationManager
         return $columnMap;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

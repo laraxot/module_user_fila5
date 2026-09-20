@@ -10,10 +10,14 @@ namespace Modules\User\Filament\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Widgets\Widget;
 use Filament\Widgets\WidgetConfiguration;
 use Modules\User\Filament\Widgets\RecentLoginsWidget;
 use Modules\User\Filament\Widgets\UsersChartWidget;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -39,10 +43,13 @@ use Modules\User\Filament\Widgets\RecentLoginsWidget;
 use Modules\User\Filament\Widgets\UsersChartWidget;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Pages\XotBaseDashboard;
 
 class Dashboard extends XotBaseDashboard
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -55,6 +62,8 @@ class Dashboard extends XotBaseDashboard
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     // protected static string $routePath = 'finance';
     // protected static ?string $title = 'Finance dashboard';
     // protected static ?int $navigationSort = 15;
@@ -72,6 +81,7 @@ class Dashboard extends XotBaseDashboard
             RecentLoginsWidget::class,
         ];
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -95,4 +105,6 @@ class Dashboard extends XotBaseDashboard
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

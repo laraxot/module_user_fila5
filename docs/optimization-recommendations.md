@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Raccomandazioni di Ottimizzazione - Modulo User"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -304,10 +310,14 @@ php artisan user:benchmark  # Target: < 100ms
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Analisi Moduli Globale](../../../../docs/project/modules_analysis_and_optimization.md)
 - [Linee Guida Riusabilità](../../../../docs/project/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -326,6 +336,8 @@ php artisan user:benchmark  # Target: < 100ms
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -601,10 +613,14 @@ php artisan user:benchmark  # Target: < 100ms
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [Linee Guida Riusabilità](../../../../docs/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -623,3 +639,5 @@ php artisan user:benchmark  # Target: < 100ms
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

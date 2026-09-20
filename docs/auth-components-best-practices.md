@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Best Practices per i Componenti di Autenticazione"
 type: concept
@@ -26,6 +29,7 @@ related:
 - [README modulo User](./readme.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -67,6 +71,8 @@ related:
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -214,6 +220,7 @@ Prima di utilizzare una chiave di traduzione, assicurarsi che i file di traduzio
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Componenti di Autenticazione
 =======
 ## Componenti di Autenticazione 
@@ -224,6 +231,9 @@ Prima di utilizzare una chiave di traduzione, assicurarsi che i file di traduzio
 ## Componenti di Autenticazione
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+## Componenti di Autenticazione
+>>>>>>> laraxot/dev
 
 ### 1. Pagine di Autenticazione
 
@@ -259,10 +269,13 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 2. Che i componenti funzionino correttamente con la localizzazione delle URL
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 3. Che i componenti rispettino le best practices di SaluteOra per le chiavi di traduzione
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 3. Che i componenti rispettino le best practices di <nome progetto> per le chiavi di traduzione
 
 ## Riferimenti
@@ -458,12 +471,15 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 2. Che i componenti funzionino correttamente con la localizzazione delle URL
 3. Che i componenti rispettino le best practices di <nome progetto> per le chiavi di traduzione
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 3. Che i componenti rispettino le best practices di SaluteOra per le chiavi di traduzione
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 ## Riferimenti
 

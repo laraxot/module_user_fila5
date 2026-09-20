@@ -10,6 +10,9 @@ namespace Modules\User\Filament\Actions\Header;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Auth;
@@ -20,6 +23,7 @@ use Modules\Xot\Filament\Actions\XotBaseAction;
 use Webmozart\Assert\Assert;
 
 final class ChangePasswordHeaderAction extends XotBaseAction
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -48,6 +52,8 @@ use Webmozart\Assert\Assert;
 final class ChangePasswordHeaderAction extends XotBaseAction
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 {
     protected function setUp(): void
     {
@@ -56,6 +62,9 @@ final class ChangePasswordHeaderAction extends XotBaseAction
             ->icon('heroicon-o-key')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             ->action(function (array $data): void {
                 $record = Auth::user();
                 Assert::isInstanceOf($record, UserContract::class);
@@ -64,6 +73,7 @@ final class ChangePasswordHeaderAction extends XotBaseAction
 
                 $record->update([
                     'password' => Hash::make($newPassword),
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -85,11 +95,14 @@ final class ChangePasswordHeaderAction extends XotBaseAction
                     'password' => Hash::make($newPassword),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 ]);
 
                 Notification::make()
                     ->success()
                     ->title(__('user::notifications.password_changed_successfully.title'))
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                     ->body(__('user::notifications.password_changed_successfully.message'))
@@ -151,6 +164,8 @@ final class ChangePasswordHeaderAction extends XotBaseAction
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
                     ->body(__('user::notifications.password_changed_successfully.message'))
                     ->send();
             })
@@ -181,8 +196,11 @@ final class ChangePasswordHeaderAction extends XotBaseAction
     }
 
     public static function getDefaultName(): string
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     {
         return 'changePassword';
     }

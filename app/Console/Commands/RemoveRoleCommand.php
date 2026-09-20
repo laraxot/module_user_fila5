@@ -7,6 +7,7 @@ namespace Modules\User\Console\Commands;
 use Illuminate\Console\Command;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Collection;
 =======
 use Modules\Xot\Contracts\UserContract;
@@ -21,31 +22,41 @@ use Symfony\Component\Console\Input\InputOption;
 use Illuminate\Database\Eloquent\Collection;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Database\Eloquent\Collection;
+>>>>>>> laraxot/dev
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 class RemoveRoleCommand extends Command
 {
     /**
      * The name and signature of the console command.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -56,6 +67,8 @@ class RemoveRoleCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $name = 'user:remove-role';
 
@@ -63,6 +76,7 @@ class RemoveRoleCommand extends Command
      * The console command description.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -73,11 +87,14 @@ class RemoveRoleCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $description = 'remove a role to user';
 
     /**
      * Create a new command instance.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      */
@@ -95,6 +112,9 @@ class RemoveRoleCommand extends Command
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     */
+>>>>>>> laraxot/dev
 
     /**
      * Execute the console command.
@@ -108,10 +128,14 @@ class RemoveRoleCommand extends Command
         $user = XotData::make()->getUserByEmail($email);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         /** @var Collection<int, Role> $roles */
         $roles = $user->roles()->get();
         /** @var array<string, string> $opts */
         $opts = $roles->pluck('name', 'name')->toArray();
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -129,6 +153,8 @@ class RemoveRoleCommand extends Command
         $opts = $roles->pluck('name', 'name')->toArray();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         $rows = multiselect(
             label: 'What roles',
@@ -137,11 +163,15 @@ class RemoveRoleCommand extends Command
             scroll: 10,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             // validate: function (array $values) {
             //  return ! \in_array(\count($values), [1, 2], false)
             //    ? 'A maximum of two'
             //  : null;
             // }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -161,6 +191,8 @@ class RemoveRoleCommand extends Command
             // }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         );
 
         foreach ($rows as $row) {
@@ -171,6 +203,9 @@ class RemoveRoleCommand extends Command
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $this->info(implode(', ', $rows).' dessigned to '.$email);
     }
 
@@ -183,6 +218,7 @@ class RemoveRoleCommand extends Command
     //        ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
     // }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -219,4 +255,6 @@ class RemoveRoleCommand extends Command
     // }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

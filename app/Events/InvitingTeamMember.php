@@ -31,6 +31,7 @@ class InvitingTeamMember
         public string $role,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {
     }
 =======
@@ -43,4 +44,8 @@ class InvitingTeamMember
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 }

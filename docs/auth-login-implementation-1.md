@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Implementazione Corretta della Pagina di Login"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Implementazione Corretta della Pagina di Login
 
 ## Collegamenti correlati
@@ -36,6 +42,7 @@ related:
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
 - [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
 - [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
@@ -54,6 +61,11 @@ related:
 - [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
+- [Implementazione Auth Pages](/laravel/modules/user/docs/auth-pages-implementation.md)
+- [Volt Folio Auth](/laravel/modules/user/docs/volt-folio-auth-implementation-3.md)
+>>>>>>> laraxot/dev
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login

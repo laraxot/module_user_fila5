@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Implementazione Corretta di logout.blade.php"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Implementazione Corretta di logout.blade.php
 
 ## Collegamenti correlati
@@ -37,6 +43,9 @@ related:
 - [README modulo User](./README.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Convenzioni Path](./path-conventions.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout-page-fix.md)
@@ -46,6 +55,7 @@ related:
 - [Convenzioni Path](./path-conventions-2.md)
 - [Struttura moduli](../../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./logout-page-fix-2.md)
+<<<<<<< HEAD
 =======
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
@@ -67,6 +77,8 @@ related:
 - [Logout Page Fix](./logout-page-fix-2.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:
@@ -161,6 +173,7 @@ laravel/Themes/One/resources/views/pages/auth/logout.blade.php
 - Il file `logout.blade.php` è una pagina Folio e non richiede configurazioni aggiuntive in `routes/web.php`.
 - La pagina è accessibile all'URL `/{locale}/auth/logout`.
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Per maggiori informazioni sulla gestione dell'autenticazione, consultare la documentazione Laravel ufficiale.
 =======
 - Per maggiori informazioni sulla gestione dell'autenticazione, consultare la documentazione Laravel ufficiale.
@@ -169,3 +182,6 @@ laravel/Themes/One/resources/views/pages/auth/logout.blade.php
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- Per maggiori informazioni sulla gestione dell'autenticazione, consultare la documentazione Laravel ufficiale.
+>>>>>>> laraxot/dev

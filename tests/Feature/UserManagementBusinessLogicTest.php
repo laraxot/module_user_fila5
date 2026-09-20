@@ -7,6 +7,9 @@ namespace Modules\User\Tests\Feature;
 use Illuminate\Database\QueryException;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Database\Factories\PermissionFactory;
@@ -22,6 +25,7 @@ uses(TestCase::class);
 
 describe('User Management Business Logic', function (): void {
     test('can create user with profile', function (): void {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -63,6 +67,8 @@ describe('User Management Business Logic', function (): void {
     test('can create user with profile', function (): void {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $userData = [
             'name' => 'Mario Rossi',
             'email' => 'mario.rossi@example.com',
@@ -79,6 +85,9 @@ describe('User Management Business Logic', function (): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $user = User::create($userData);
         $createdProfile = $user->profile()->create($profileData);
         Assert::assertInstanceOf(Profile::class, $createdProfile);
@@ -90,6 +99,7 @@ describe('User Management Business Logic', function (): void {
             'email' => 'mario.rossi@example.com',
         ])->exists());
         Assert::assertTrue(DB::table('profiles')->where([
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -122,12 +132,17 @@ describe('User Management Business Logic', function (): void {
         Assert::assertTrue(DB::table('profiles')->where([
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'id' => $profile->id,
             'user_id' => $user->id,
             'phone' => '+39 123 456 7890',
             'address' => 'Via Roma 123, Milano',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         ])->exists());
         Assert::assertInstanceOf(Profile::class, $user->profile);
         Assert::assertSame($user->id, $profile->user_id);
@@ -190,6 +205,7 @@ describe('User Management Business Logic', function (): void {
         $user = UserFactory::new()->createOne();
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
         $permission = PermissionFactory::new()->createOne(['name' => 'patients.read']);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -347,12 +363,17 @@ describe('User Management Business Logic', function (): void {
         $permission = PermissionFactory::new()->createOne(['name' => 'patients.read']);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         $role->givePermissionTo($permission);
         $user->assignRole($role);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         Assert::assertTrue($user->hasPermissionTo('patients.read'));
         Assert::assertTrue($user->hasPermissionTo($permission));
         Assert::assertTrue($user->can('patients.read'));
@@ -409,6 +430,7 @@ describe('User Management Business Logic', function (): void {
         $role = RoleFactory::new()->createOne(['name' => 'doctor']);
         $permission1 = PermissionFactory::new()->createOne(['name' => 'patients.read']);
         $permission2 = PermissionFactory::new()->createOne(['name' => 'patients.write']);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -552,12 +574,17 @@ describe('User Management Business Logic', function (): void {
         $permission2 = PermissionFactory::new()->createOne(['name' => 'patients.write']);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         $role->givePermissionTo([$permission1, $permission2]);
         $user->assignRole($role);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $permissions = $user->getAllPermissions();
 
         Assert::assertCount(2, $permissions);
@@ -598,6 +625,7 @@ describe('User Management Business Logic', function (): void {
         ]);
         Assert::assertInstanceOf(Profile::class, $createdProfile);
         $profile = $createdProfile;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -740,6 +768,8 @@ describe('User Management Business Logic', function (): void {
         $profile = $createdProfile;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         $updatedData = [
             'phone' => '+39 987 654 3210',
@@ -747,6 +777,7 @@ describe('User Management Business Logic', function (): void {
             'birth_date' => '1985-10-20',
         ];
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $profile->update($updatedData);
@@ -769,12 +800,20 @@ describe('User Management Business Logic', function (): void {
         Assert::assertTrue(DB::table('profiles')->where([
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $profile->update($updatedData);
+
+        Assert::assertTrue(DB::table('profiles')->where([
+>>>>>>> laraxot/dev
             'id' => $profile->id,
             'phone' => '+39 987 654 3210',
             'address' => 'Via Milano 456, Roma',
             'birth_date' => '1985-10-20',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         ])->exists());
     });
 
@@ -853,6 +892,7 @@ describe('User Management Business Logic', function (): void {
         $user1 = UserFactory::new()->createOne();
         $user2 = UserFactory::new()->createOne();
         $user3 = UserFactory::new()->createOne();
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1052,6 +1092,8 @@ describe('User Management Business Logic', function (): void {
         $user3 = UserFactory::new()->createOne();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         $user1->assignRole($doctorRole);
         $user2->assignRole($nurseRole);
@@ -1059,6 +1101,9 @@ describe('User Management Business Logic', function (): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $doctors = User::role('doctor')->get();
 
         Assert::assertCount(2, $doctors);
@@ -1155,6 +1200,7 @@ describe('User Management Business Logic', function (): void {
         ])->exists());
     });
 });
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1442,3 +1488,5 @@ describe('User Management Business Logic', function (): void {
 });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

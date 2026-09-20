@@ -28,6 +28,7 @@ class TeamMemberUpdated
         public UserContract $userContract,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     ) {
     }
 =======
@@ -40,4 +41,8 @@ class TeamMemberUpdated
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 }

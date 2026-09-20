@@ -10,12 +10,16 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -38,11 +42,14 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Datas\XotData;
 
 /**
  * Modules\User\Models\SocialiteUser.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property int               $id
@@ -75,6 +82,8 @@ use Modules\Xot\Datas\XotData;
 >>>>>>> f548be94 (.)
  * @property UserContract|null $user
 =======
+=======
+>>>>>>> laraxot/dev
  * @property int               $id
  * @property string            $user_id
  * @property string            $provider
@@ -89,7 +98,10 @@ use Modules\Xot\Datas\XotData;
  * @property string|null       $created_by
  * @property UserContract|null $user
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
  * @method static Builder|SocialiteUser newModelQuery()
  * @method static Builder|SocialiteUser newQuery()
  * @method static Builder|SocialiteUser query()
@@ -106,6 +118,7 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|SocialiteUser whereUpdatedBy($value)
  * @method static Builder|SocialiteUser whereUserId($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
  * @property string $uuid (DC2Type:guid)
  * @method static Builder|SocialiteUser whereUuid($value)
  * @property ProfileContract|null $creator
@@ -120,6 +133,8 @@ use Modules\Xot\Datas\XotData;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  *
  * @property string $uuid (DC2Type:guid)
  *
@@ -131,8 +146,11 @@ use Modules\Xot\Datas\XotData;
  *
  * @method static \Modules\User\Database\Factories\SocialiteUserFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class SocialiteUser extends BaseModel
@@ -151,6 +169,7 @@ class SocialiteUser extends BaseModel
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return BelongsTo<Model, $this>
      */
@@ -163,6 +182,11 @@ class SocialiteUser extends BaseModel
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return BelongsTo<Model, $this>
+     */
+>>>>>>> laraxot/dev
     public function user(): BelongsTo
     {
         /** @var class-string<Model> */

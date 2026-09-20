@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: livewire-to-filament-widget-migration
@@ -16,6 +19,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/livewire-to-filament-widget-migration.md
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -179,3 +183,5 @@ related:
 See canonical documentation: ../../../Themes/docs/shared-components/livewire-to-filament-widget-migration.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

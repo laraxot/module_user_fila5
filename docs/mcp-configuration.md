@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "MCP Server Configuration - User Module"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # MCP Server Configuration - User Module
 
 
@@ -69,6 +75,7 @@ The User module's MCP configuration enables AI assistants to interact with:
       "command": "npx",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_<nome progetto>/laravel"],
 =======
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_laravelpizza/laravel"],
@@ -79,6 +86,9 @@ The User module's MCP configuration enables AI assistants to interact with:
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_<nome progetto>/laravel"],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_<nome progetto>/laravel"],
+>>>>>>> laraxot/dev
       "description": "Access to User module files"
     },
     "database": {
@@ -87,6 +97,7 @@ The User module's MCP configuration enables AI assistants to interact with:
       "env": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "DATABASE_URL": "sqlite:///var/www/_bases/base_<nome progetto>/laravel/database/database.sqlite"
 =======
         "DATABASE_URL": "sqlite:///var/www/_bases/base_laravelpizza/laravel/database/database.sqlite"
@@ -97,6 +108,9 @@ The User module's MCP configuration enables AI assistants to interact with:
         "DATABASE_URL": "sqlite:///var/www/_bases/base_<nome progetto>/laravel/database/database.sqlite"
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        "DATABASE_URL": "sqlite:///var/www/_bases/base_<nome progetto>/laravel/database/database.sqlite"
+>>>>>>> laraxot/dev
       },
       "description": "SQLite database queries"
     }
@@ -113,6 +127,7 @@ The User module's MCP configuration enables AI assistants to interact with:
 # Create task
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 "Create task in '<nome progetto> - User Module' project: 'Implement two-factor authentication'"
 =======
 "Create task in 'LaravelPizza - User Module' project: 'Implement two-factor authentication'"
@@ -123,6 +138,9 @@ The User module's MCP configuration enables AI assistants to interact with:
 "Create task in '<nome progetto> - User Module' project: 'Implement two-factor authentication'"
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+"Create task in '<nome progetto> - User Module' project: 'Implement two-factor authentication'"
+>>>>>>> laraxot/dev
 
 # Track security improvements
 "Create task: 'Add device fingerprinting for security alerts'"
@@ -199,10 +217,14 @@ Map User module roadmap tasks to Asana:
 |--------------|---------------|----------|
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 | Two-factor authentication | <nome progetto> - User Module | High |
 | Security alerts | <nome progetto> - User Module | High |
 | Device management | <nome progetto> - User Module | Medium |
 | Test coverage 90%+ | <nome progetto> - User Module | High |
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -220,6 +242,8 @@ Map User module roadmap tasks to Asana:
 | Test coverage 90%+ | <nome progetto> - User Module | High |
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -232,11 +256,15 @@ Map User module roadmap tasks to Asana:
 ### Cursor
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - **Config File**: `/var/www/_bases/base_<nome progetto>/laravel/.cursor-mcp.json`
 - **Command**: `npx mcp-remote https://mcp.asana.com/sse`
 
 ### Windsurf
 - **Config File**: `/var/www/_bases/base_<nome progetto>/laravel/.windsurf-mcp.json`
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -256,6 +284,8 @@ Map User module roadmap tasks to Asana:
 - **Config File**: `/var/www/_bases/base_<nome progetto>/laravel/.windsurf-mcp.json`
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 - **Command**: `npx mcp-remote https://mcp.asana.com/sse`
 
 ---
@@ -272,6 +302,7 @@ Map User module roadmap tasks to Asana:
 2. **Project Organization**:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Create dedicated Asana project: "<nome progetto> - User Module"
 =======
    - Create dedicated Asana project: "LaravelPizza - User Module"
@@ -282,6 +313,9 @@ Map User module roadmap tasks to Asana:
    - Create dedicated Asana project: "<nome progetto> - User Module"
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+   - Create dedicated Asana project: "<nome progetto> - User Module"
+>>>>>>> laraxot/dev
    - Use sections: "Authentication", "Authorization", "Security", "Testing", "Documentation"
 
 3. **Tagging System**:
@@ -327,6 +361,7 @@ Map User module roadmap tasks to Asana:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Asana MCP Configuration](../../../../docs/mcp-asana-configuration.md)
 - [ClickUp MCP Configuration](../../../../docs/mcp-clickup-configuration.md)
 - [Redmine MCP Configuration](../../../../docs/mcp-redmine-configuration.md)
@@ -345,6 +380,11 @@ Map User module roadmap tasks to Asana:
 - [Redmine MCP Configuration](../../../../docs/mcp-redmine-configuration.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Asana MCP Configuration](../../../../docs/mcp-asana-configuration.md)
+- [ClickUp MCP Configuration](../../../../docs/mcp-clickup-configuration.md)
+- [Redmine MCP Configuration](../../../../docs/mcp-redmine-configuration.md)
+>>>>>>> laraxot/dev
 - [User Module Roadmap](./roadmap-[date].md)
 
 ---

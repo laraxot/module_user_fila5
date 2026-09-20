@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Carbon;
 use Laravel\Passport\Client as PassportClient;
@@ -114,6 +115,8 @@ use Laravel\Passport\Client as PassportClient;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Carbon;
 use Laravel\Passport\Client as PassportClient;
@@ -167,12 +170,16 @@ use Laravel\Passport\Client as PassportClient;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient whereUpdatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthClient whereUserId($value)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class OauthClient extends PassportClient
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected $connection = 'user';
@@ -197,4 +204,7 @@ class OauthClient extends PassportClient
     protected $connection = 'user';
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    protected $connection = 'user';
+>>>>>>> laraxot/dev
 }

@@ -6,12 +6,16 @@ namespace Modules\User\Enums;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Support\Contracts\HasLabel;
 use Modules\Xot\Traits\EnumTrait;
 
 enum SocialProviderEnum: string implements HasLabel
 {
     use EnumTrait;
+<<<<<<< HEAD
 =======
 enum SocialProviderEnum: string
 {
@@ -28,6 +32,8 @@ enum SocialProviderEnum: string implements HasLabel
     use EnumTrait;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     case GOOGLE = 'google';
     case AUTH0 = 'auth0';
 }

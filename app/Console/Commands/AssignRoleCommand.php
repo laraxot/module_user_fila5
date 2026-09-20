@@ -7,6 +7,9 @@ namespace Modules\User\Console\Commands;
 use Illuminate\Console\Command;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
@@ -14,6 +17,7 @@ use function Laravel\Prompts\text;
 use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -35,10 +39,14 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> laraxot/dev
 class AssignRoleCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -51,6 +59,8 @@ class AssignRoleCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $name = 'user:assign-role';
 
@@ -58,6 +68,7 @@ class AssignRoleCommand extends Command
      * The console command description.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -68,11 +79,14 @@ class AssignRoleCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $description = 'Assign a module to user';
 
     /**
      * Create a new command instance.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      */
@@ -90,6 +104,9 @@ class AssignRoleCommand extends Command
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     */
+>>>>>>> laraxot/dev
 
     /**
      * Execute the console command.
@@ -98,9 +115,13 @@ class AssignRoleCommand extends Command
     {
         $email = text('email ?');
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         $user_class = XotData::make()->getUserClass();
 >>>>>>> f548be94 (.)
+=======
+        $user_class = XotData::make()->getUserClass();
+>>>>>>> laraxot/dev
         /** @var UserContract */
         $user = XotData::make()->getUserByEmail($email);
         /**
@@ -115,11 +136,15 @@ class AssignRoleCommand extends Command
             scroll: 10,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             // validate: function (array $values) {
             //  return ! \in_array(\count($values), [1, 2], false)
             //    ? 'A maximum of two'
             //  : null;
             // }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -139,6 +164,8 @@ class AssignRoleCommand extends Command
             // }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         );
 
         foreach ($rows as $row) {
@@ -148,6 +175,9 @@ class AssignRoleCommand extends Command
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $this->info(implode(', ', $rows).' assigned to '.$email);
     }
 
@@ -160,6 +190,7 @@ class AssignRoleCommand extends Command
     //        ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
     // }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -193,4 +224,6 @@ class AssignRoleCommand extends Command
     // }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

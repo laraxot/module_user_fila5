@@ -405,6 +405,7 @@ return [
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 
 ## Contenuto assorbito da `WIDGET_RENDERING_ANALYSIS.md`
@@ -416,3 +417,7 @@ Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, 
 
 
 >>>>>>> 60a2c9a9 (.)
+=======
+
+
+>>>>>>> laraxot/dev

@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Xot\Contracts\ProfileContract;
 =======
@@ -22,10 +23,15 @@ use Illuminate\Database\Eloquent\Builder;
 use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Database\Eloquent\Builder;
+use Modules\Xot\Contracts\ProfileContract;
+>>>>>>> laraxot/dev
 
 /**
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @method static Builder<static>|PermissionUser newModelQuery()
@@ -62,11 +68,23 @@ class PermissionUser extends ModelHasPermission {}
  * @method static Builder<static>|PermissionUser newQuery()
  * @method static Builder<static>|PermissionUser query()
  * @mixin IdeHelperPermissionUser
+=======
+ *
+ * @method static Builder<static>|PermissionUser newModelQuery()
+ * @method static Builder<static>|PermissionUser newQuery()
+ * @method static Builder<static>|PermissionUser query()
+ *
+ * @property ProfileContract|null $deleter
+ *
+ * @method static \Modules\User\Database\Factories\PermissionUserFactory factory($count = null, $state = [])
+ *
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class PermissionUser extends ModelHasPermission
 {
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f548be94 (.)
 =======
@@ -85,3 +103,5 @@ class PermissionUser extends ModelHasPermission
 class PermissionUser extends ModelHasPermission {}
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

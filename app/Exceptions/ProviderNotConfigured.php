@@ -6,6 +6,9 @@ namespace Modules\User\Exceptions;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 final class ProviderNotConfigured extends \LogicException
 {
     public static function make(string $provider): static
@@ -14,6 +17,7 @@ final class ProviderNotConfigured extends \LogicException
             $provider.
             '" is not configured. tips: add '.
             $provider.
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -41,6 +45,8 @@ final class ProviderNotConfigured extends \LogicException
             $provider.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             ' to config/services.php');
     }
 }

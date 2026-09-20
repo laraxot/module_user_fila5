@@ -10,9 +10,12 @@ use PHPUnit\Framework\Assert;
 use function Safe\exec;
 use function Safe\file_get_contents;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 

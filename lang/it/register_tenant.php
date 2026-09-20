@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f548be94 (.)
@@ -12,6 +13,8 @@ declare(strict_types=1);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 return [
     'navigation' => [
         'label' => 'Registrazione Studio',
@@ -37,6 +40,7 @@ return [
             'label' => 'Nome Studio Medico',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi]',
 =======
             'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi)',
@@ -47,6 +51,9 @@ return [
             'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi]',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi]',
+>>>>>>> laraxot/dev
             'help' => 'Nome ufficiale dello studio medico come registrato in camera di commercio',
             'validation' => [
                 'required' => 'Il nome dello studio è obbligatorio',
@@ -55,6 +62,9 @@ return [
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -62,6 +72,7 @@ return [
         'phone' => [
             'label' => 'Numero di Telefono Studio',
             'placeholder' => 'Inserisci numero telefonico principale (es. +39 06 1234567]',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -82,6 +93,8 @@ return [
             'placeholder' => 'Inserisci numero telefonico principale (es. +39 06 1234567]',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'help' => 'Numero di telefono principale dello studio per contatti diretti e urgenze',
             'validation' => [
                 'required' => 'Il numero di telefono è obbligatorio',
@@ -90,6 +103,9 @@ return [
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -97,6 +113,7 @@ return [
         'email' => [
             'label' => 'Email Ufficiale Studio',
             'placeholder' => 'Inserisci email istituzionale (es. info@studiodentistico.it]',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -117,6 +134,8 @@ return [
             'placeholder' => 'Inserisci email istituzionale (es. info@studiodentistico.it]',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'help' => 'Indirizzo email ufficiale dello studio per comunicazioni istituzionali',
             'validation' => [
                 'required' => 'L\'indirizzo email è obbligatorio',
@@ -126,6 +145,9 @@ return [
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -133,6 +155,7 @@ return [
         'address' => [
             'label' => 'Indirizzo Completo Studio',
             'placeholder' => 'Via/Piazza Nome Strada, Numero Civico, CAP Città (Provincia]',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -153,12 +176,15 @@ return [
             'placeholder' => 'Via/Piazza Nome Strada, Numero Civico, CAP Città (Provincia]',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'help' => 'Indirizzo fisico completo dello studio medico comprensivo di CAP e provincia',
             'validation' => [
                 'required' => 'L\'indirizzo dello studio è obbligatorio',
                 'min' => 'L\'indirizzo deve contenere almeno 15 caratteri',
                 'max' => 'L\'indirizzo non può superare i 300 caratteri',
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => '',
@@ -173,6 +199,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'director_name' => [
             'label' => 'Nome Direttore Sanitario',
@@ -185,6 +216,7 @@ return [
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -197,6 +229,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'director_registration' => [
             'label' => 'Numero Iscrizione Albo Medico',
@@ -209,6 +246,9 @@ return [
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -216,6 +256,7 @@ return [
         'vat_number' => [
             'label' => 'Partita IVA Studio',
             'placeholder' => 'Inserisci partita IVA (11 cifre]',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -236,12 +277,15 @@ return [
             'placeholder' => 'Inserisci partita IVA (11 cifre]',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'help' => 'Partita IVA dello studio medico registrata presso l\'Agenzia delle Entrate',
             'validation' => [
                 'required' => 'La partita IVA è obbligatoria',
                 'regex' => 'La partita IVA deve essere composta da esattamente 11 cifre',
                 'unique' => 'Questa partita IVA è già registrata per un altro studio',
             ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => '',
@@ -256,6 +300,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'specialization' => [
             'label' => 'Specializzazioni Mediche',
@@ -279,6 +328,9 @@ return [
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -293,6 +345,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -324,6 +377,8 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'staff_count' => [
             'label' => 'Numero Operatori',
@@ -337,6 +392,7 @@ return [
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -349,6 +405,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'privacy_acceptance' => [
             'label' => 'Consenso Trattamento Dati',
@@ -359,6 +420,7 @@ return [
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -371,6 +433,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'terms_acceptance' => [
             'label' => 'Accettazione Termini di Servizio',
@@ -381,6 +448,7 @@ return [
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -393,6 +461,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -431,9 +504,12 @@ return [
             'label' => 'register',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'tooltip' => 'register',
             'icon' => 'register',
         ],
@@ -447,11 +523,14 @@ return [
             'icon' => 'profile',
             'label' => 'profile',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
     ],
     'steps' => [
@@ -508,6 +587,7 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Register Tenant',
     'plural_label' => 'Register Tenant (Plurale)',
 =======
@@ -518,4 +598,8 @@ return [
     'plural_label' => 'Register Tenant (Plurale)',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    'label' => 'Register Tenant',
+    'plural_label' => 'Register Tenant (Plurale)',
+>>>>>>> laraxot/dev
 ];

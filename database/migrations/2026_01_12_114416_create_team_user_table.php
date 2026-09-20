@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\TeamUser;
 =======
 >>>>>>> 60a2c9a9 (.)
@@ -13,6 +14,9 @@ use Modules\User\Models\TeamUser;
 use Modules\User\Models\TeamUser;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Models\TeamUser;
+>>>>>>> laraxot/dev
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
@@ -21,6 +25,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Questa migrazione gestisce sia la creazione che l'aggiornamento della tabella team_user.
  * Se la tabella esiste già con id UUID, viene convertita a id autoincrement.
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 return new class extends XotBaseMigration
@@ -43,6 +48,10 @@ return new class extends XotBaseMigration
     protected ?string $model_class = TeamUser::class;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+return new class extends XotBaseMigration {
+    protected ?string $model_class = TeamUser::class;
+>>>>>>> laraxot/dev
 
     /**
      * Esegue la migrazione.
@@ -62,6 +71,7 @@ return new class extends XotBaseMigration
             $table->unique(['team_id', 'user_id']);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             $table->softDeletes();
             $table->timestamps();
@@ -72,12 +82,15 @@ return new class extends XotBaseMigration
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         });
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // Converte solo i vecchi schemi con `id` non bigint (es. UUID/string).
             if ($this->hasColumn('id') && ! in_array($this->getColumnType('id'), ['bigint', 'integer'], true)) {
 =======
@@ -92,6 +105,10 @@ return new class extends XotBaseMigration
             if ($this->hasColumn('id') && ! in_array($this->getColumnType('id'), ['bigint', 'integer'], true)) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            // Converte solo i vecchi schemi con `id` non bigint (es. UUID/string).
+            if ($this->hasColumn('id') && ! in_array($this->getColumnType('id'), ['bigint', 'integer'], true)) {
+>>>>>>> laraxot/dev
                 // Rimuoviamo la PRIMARY KEY esistente
                 $this->dropPrimaryKey();
 
@@ -108,6 +125,7 @@ return new class extends XotBaseMigration
                 // Impostiamo la nuova PRIMARY KEY su id
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 // $this->query('ALTER TABLE `'.$this->getTableName().'` ADD PRIMARY KEY (`id`)');
 =======
                 $this->query('ALTER TABLE `'.$this->table_name.'` ADD PRIMARY KEY (`id`)');
@@ -118,6 +136,9 @@ return new class extends XotBaseMigration
                 // $this->query('ALTER TABLE `'.$this->getTableName().'` ADD PRIMARY KEY (`id`)');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                // $this->query('ALTER TABLE `'.$this->getTableName().'` ADD PRIMARY KEY (`id`)');
+>>>>>>> laraxot/dev
             }
 
             if (! $this->hasColumn('role')) {
@@ -135,6 +156,9 @@ return new class extends XotBaseMigration
             // Aggiorniamo i timestamp e soft deletes
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
             /*
             // Aggiungiamo l'indice univoco se non esiste già
@@ -143,6 +167,7 @@ return new class extends XotBaseMigration
             $database = $connection->getDatabaseName();
             //@var array{count: int}|object{count: int}|null $indexExists
             $indexExists = $connection->selectOne()
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -171,11 +196,14 @@ return new class extends XotBaseMigration
             $indexExists = $connection->selectOne()
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 "SELECT COUNT(*) as count
                  FROM information_schema.statistics
                  WHERE table_schema = ?
                  AND table_name = ?
                  AND index_name = 'team_user_team_id_user_id_unique'",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 [$database, $table_name]
@@ -188,6 +216,9 @@ return new class extends XotBaseMigration
                 [$database, $table_name]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                [$database, $table_name]
+>>>>>>> laraxot/dev
             );
 
             $count = 0;

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Correzioni Traduzioni Navigation - Gennaio 2026"
 type: concept
@@ -182,6 +185,7 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 
 ### Gruppo "Tenants"
 - Tenant User
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -421,12 +425,17 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 - Tenant User
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 ## Regole Applicate
 
 ### DRY (Don't Repeat Yourself)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../<nome progetto>/docs/translation-quality-standards.md)
 - [Documentazione Modulo User](README.md)
@@ -452,6 +461,7 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./readme.md)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -515,6 +525,8 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 - [Documentazione Modulo User](./readme.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 ## Note Tecniche
 
@@ -522,6 +534,7 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 - Preservata la sintassi array breve `[]`
 - Rispettato il `declare(strict_types=1);`
 - Icone scelte per semantica appropriata
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 - Sort order allineato con i Resource corrispondenti
@@ -544,3 +557,9 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 *Conforme alle regole DRY + KISS*
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- Sort order allineato con i Resource corrispondenti
+
+*Intervento completato il: 2026-01-22*
+*Conforme alle regole DRY + KISS*
+>>>>>>> laraxot/dev

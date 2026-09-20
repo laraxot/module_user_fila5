@@ -9,12 +9,16 @@ use Illuminate\Support\Str;
 use Livewire\Component;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\Tenant\Actions\Markdown\GetLocalizedMarkdownPathAction;
 
 use function Safe\file_get_contents;
 
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -35,6 +39,8 @@ use Webmozart\Assert\Assert;
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 class PrivacyPolicy extends Component
 {
     /**
@@ -44,11 +50,15 @@ class PrivacyPolicy extends Component
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $policyFile = app(GetLocalizedMarkdownPathAction::class)->execute('policy.md');
         Assert::string($policyFile, 'Policy file path must be a string');
         if ('' === $policyFile || '#' === $policyFile) {
             throw new \RuntimeException('Policy file path is empty or invalid');
         }
+<<<<<<< HEAD
 =======
         Assert::string($policyFile = TenantService::localizedMarkdownPath('policy.md'), 'wip');
 >>>>>>> f548be94 (.)
@@ -62,6 +72,8 @@ class PrivacyPolicy extends Component
         }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         /**
          * @phpstan-var view-string
          */

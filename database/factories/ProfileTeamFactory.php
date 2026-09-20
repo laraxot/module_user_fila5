@@ -7,6 +7,7 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\ProfileTeam;
 
 /**
@@ -29,12 +30,20 @@ use Modules\User\Models\ProfileTeam;
 /**
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Models\ProfileTeam;
+
+/**
+>>>>>>> laraxot/dev
  * @extends Factory<ProfileTeam>
  */
 class ProfileTeamFactory extends Factory
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * The name of the factory's corresponding model.
      */
@@ -49,6 +58,7 @@ class ProfileTeamFactory extends Factory
     public function definition(): array
     {
         return [];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -106,5 +116,7 @@ class ProfileTeamFactory extends Factory
         return [];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

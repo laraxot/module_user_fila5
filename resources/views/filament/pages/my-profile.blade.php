@@ -6,6 +6,9 @@ declare(strict_types=1);
 <x-filament-panels::page>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     <form wire:submit="updateProfile">
         {{ $this->editProfileForm }}
 
@@ -17,6 +20,7 @@ declare(strict_types=1);
 
         <x-filament::actions :actions="$this->getUpdatePasswordFormActions()" />
     </form>
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -48,4 +52,6 @@ declare(strict_types=1);
     </form>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 </x-filament-panels::page>

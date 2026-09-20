@@ -16,6 +16,7 @@ class SocialProviderPolicy extends UserBasePolicy
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         // return $user->hasPermissionTo('social-provider.view.any');
         return false;
 =======
@@ -28,6 +29,10 @@ class SocialProviderPolicy extends UserBasePolicy
         return false;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        // return $user->hasPermissionTo('social-provider.view.any');
+        return false;
+>>>>>>> laraxot/dev
     }
 
     /**

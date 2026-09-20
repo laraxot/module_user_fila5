@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Il Grande Dibattito Furioso: PHPStan Level 10 - La Verità Assoluta"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Il Grande Dibattito Furioso: PHPStan Level 10 - La Verità Assoluta
 
 **Status**: Dibattito Risolto - Il Purista Ha Vinto
@@ -195,6 +201,7 @@ Ogni modulo corretto è un traguardo.
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [DRY/KISS Principles](../../../../docs/architecture/dry-kiss-principles.md)
 =======
 - [DRY/KISS Principles](../../../docs/architecture/dry-kiss-principles.md)
@@ -205,6 +212,9 @@ Ogni modulo corretto è un traguardo.
 - [DRY/KISS Principles](../../../../docs/architecture/dry-kiss-principles.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [DRY/KISS Principles](../../../../docs/architecture/dry-kiss-principles.md)
+>>>>>>> laraxot/dev
 
 ---
 

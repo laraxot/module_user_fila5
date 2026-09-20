@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "PHPStan Compliance - User Module"
 type: concept
@@ -24,17 +27,21 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # PHPStan Compliance - User Module
 
 ## Status: ✅ FULLY COMPLIANT
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 **Analysis Date:** September 22, 2025
 >>>>>>> f548be94 (.)
@@ -43,6 +50,8 @@ related:
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 **PHPStan Level:** 9 (Maximum)
 **Files Analyzed:** 772
 **Errors Found:** 0

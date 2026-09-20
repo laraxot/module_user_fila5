@@ -29,6 +29,7 @@ return new class extends XotBaseMigration {
             /*
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
              * $table->unique([)
 =======
              * $table->unique([
@@ -39,6 +40,9 @@ return new class extends XotBaseMigration {
              * $table->unique([)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+             * $table->unique([)
+>>>>>>> laraxot/dev
              * 'provider',
              * 'provider_id',
              * ]);
@@ -49,10 +53,14 @@ return new class extends XotBaseMigration {
         $this->tableUpdate(function (Blueprint $table): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             // if (! $this->hasColumn('email'))
             //    $table->string('email')->nullable();
             // }
             if ('varchar' === $this->getColumnType('token')) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -70,6 +78,8 @@ return new class extends XotBaseMigration {
             if ('varchar' === $this->getColumnType('token')) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 $table->text('token')->nullable()->change();
             }
             $this->updateTimestamps($table);

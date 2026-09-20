@@ -28,6 +28,9 @@ class ListOauthClients extends XotBaseListRecords
                 ->icon('heroicon-o-key')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 ->schema([
                     TextInput::make('name')
                         ->default(self::configString('app.name').' '.static::trans('actions.create_personal.label'))
@@ -49,6 +52,7 @@ class ListOauthClients extends XotBaseListRecords
                             ->send();
                     }
                 ),
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -97,10 +101,13 @@ class ListOauthClients extends XotBaseListRecords
                 ),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
             'create_password_grant_client' => Action::make('create_password_grant_client')
                 ->label(static::trans('actions.create_password.label'))
                 ->icon('heroicon-o-lock-closed')
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 ->schema([
@@ -121,6 +128,11 @@ class ListOauthClients extends XotBaseListRecords
                         ->default(self::configString('app.name').' '.static::trans('actions.create_password.label'))
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                ->schema([
+                    TextInput::make('name')
+                        ->default(self::configString('app.name').' '.static::trans('actions.create_password.label'))
+>>>>>>> laraxot/dev
                         ->required()
                         ->maxLength(255),
                     TextInput::make('provider')
@@ -130,6 +142,9 @@ class ListOauthClients extends XotBaseListRecords
                 ])
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 ->action(
                     /** @param array<string, mixed> $data */
                     function (array $data): void {
@@ -145,6 +160,7 @@ class ListOauthClients extends XotBaseListRecords
                             ->send();
                     }
                 ),
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -181,12 +197,17 @@ class ListOauthClients extends XotBaseListRecords
                 ),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
             'create_client_credentials_client' => Action::make('create_client_credentials_client')
                 ->label(static::trans('actions.create_client_credentials.label'))
                 ->icon('heroicon-o-server')
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 ->schema([
                     TextInput::make('name')
                         ->default(self::configString('app.name').' '.static::trans('actions.create_client_credentials.label'))
@@ -221,7 +242,11 @@ class ListOauthClients extends XotBaseListRecords
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<array-key, mixed>  $data
+=======
+     * @param array<array-key, mixed> $data
+>>>>>>> laraxot/dev
      */
     private static function dataString(array $data, string $key, string $default = ''): string
     {
@@ -229,6 +254,7 @@ class ListOauthClients extends XotBaseListRecords
 
         return is_string($value) ? $value : $default;
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -302,4 +328,6 @@ class ListOauthClients extends XotBaseListRecords
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Errore VoltDirectiveMissingException in Folio"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Errore VoltDirectiveMissingException in Folio
 
 ## Il Problema
@@ -87,6 +93,7 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 - [Documentazione Folio](https://laravel.com/docs/folio)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Routing](./routing-best-practices-2.md) 
 =======
 - [Best Practices Routing](./routing_best_practices.md) 
@@ -97,3 +104,6 @@ The [@volt] directive is required when using Volt anonymous components in Folio 
 - [Best Practices Routing](./routing-best-practices-2.md) 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Best Practices Routing](./routing-best-practices-2.md) 
+>>>>>>> laraxot/dev

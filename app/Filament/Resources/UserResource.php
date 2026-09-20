@@ -11,6 +11,7 @@ namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Resources\UserResource\Schemas\UserForm;
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
@@ -37,10 +38,16 @@ use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Datas\XotData;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Database\Eloquent\Model;
+use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
+use Modules\Xot\Datas\XotData;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
 class UserResource extends XotBaseResource
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -59,6 +66,8 @@ class UserResource extends XotBaseResource
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public static function getWidgets(): array
     {
         return [
@@ -71,6 +80,7 @@ class UserResource extends XotBaseResource
     //    static::$extendFormCallback = $callback;
     // }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     #[\Override]
@@ -108,6 +118,8 @@ class UserResource extends XotBaseResource
     
 >>>>>>> 2024e2e7 (.)
 
+=======
+>>>>>>> laraxot/dev
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {
     //     static::$enablePasswordUpdates = $condition;
@@ -122,6 +134,7 @@ class UserResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[\Override]
 =======
     #[Override]
@@ -132,15 +145,21 @@ class UserResource extends XotBaseResource
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public function hasCombinedRelationManagerTabsWithContent(): bool
     {
         return true;
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     /**
      * @return class-string<Model>
@@ -151,9 +170,12 @@ class UserResource extends XotBaseResource
         return XotData::make()->getUserClass();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

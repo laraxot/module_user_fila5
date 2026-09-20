@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Datas\PasswordData;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -11,11 +12,22 @@ use Spatie\LaravelData\Data;
 
 use function Safe\file_get_contents;
 
+=======
+use Modules\User\Datas\PasswordData;
+use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+use function Safe\file_get_contents;
+
+use Spatie\LaravelData\Data;
+
+>>>>>>> laraxot/dev
 uses(TestCase::class);
 
 function samplePasswordData(): PasswordData
 {
     return new PasswordData(
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -46,6 +58,8 @@ function samplePasswordData(): PasswordData
     return new PasswordData(
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         otp_expiration_minutes: 10,
         otp_length: 8,
         expires_in: 120,
@@ -60,6 +74,9 @@ function samplePasswordData(): PasswordData
     );
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 }
 
 test('password data can be created with custom parameters', function (): void {
@@ -80,6 +97,7 @@ test('password data can be created with custom parameters', function (): void {
 });
 
 test('password data has default values', function (): void {
+<<<<<<< HEAD
     $defaultPasswordData = new PasswordData;
 
     Assert::assertSame(5, $defaultPasswordData->otp_expiration_minutes);
@@ -161,6 +179,10 @@ test('password data can be created with custom parameters', function (): void {
 test('password data has default values', function (): void {
     $defaultPasswordData = new PasswordData;
 
+=======
+    $defaultPasswordData = new PasswordData();
+
+>>>>>>> laraxot/dev
     Assert::assertSame(5, $defaultPasswordData->otp_expiration_minutes);
     Assert::assertSame(6, $defaultPasswordData->otp_length);
     Assert::assertSame(60, $defaultPasswordData->expires_in);
@@ -176,14 +198,20 @@ test('password data has default values', function (): void {
 
 test('password data extends spatie data class', function (): void {
     Assert::assertInstanceOf(Data::class, samplePasswordData());
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });
 
 test('password data has correct properties', function (): void {
     $reflection = new ReflectionClass(PasswordData::class);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     $propertyNames = array_map(
         static fn (ReflectionProperty $prop): string => $prop->getName(),
         $reflection->getProperties(),
@@ -204,6 +232,7 @@ test('password data has correct properties', function (): void {
     ] as $expected) {
         Assert::assertContains($expected, $propertyNames);
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -248,6 +277,8 @@ test('password data has correct properties', function (): void {
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });
 
 test('password data has correct types', function (): void {
@@ -255,6 +286,9 @@ test('password data has correct types', function (): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     $typeExpectations = [
         'otp_expiration_minutes' => 'int',
         'otp_length' => 'int',
@@ -279,6 +313,7 @@ test('password data has correct types', function (): void {
     $failMessageType = $reflection->getProperty('failMessage')->getType();
     Assert::assertInstanceOf(ReflectionNamedType::class, $failMessageType);
     Assert::assertTrue($failMessageType->allowsNull());
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -336,6 +371,8 @@ test('password data has correct types', function (): void {
     Assert::assertTrue($failMessageType->allowsNull());
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });
 
 test('password data has correct constructor parameters', function (): void {
@@ -344,6 +381,9 @@ test('password data has correct constructor parameters', function (): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     Assert::assertNotNull($constructor);
 
     $parameters = $constructor->getParameters();
@@ -366,6 +406,7 @@ test('password data has correct constructor parameters', function (): void {
 
 test('password data has correct namespace', function (): void {
     Assert::assertStringContainsString('Modules\User\Datas', PasswordData::class);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -416,6 +457,8 @@ test('password data has correct namespace', function (): void {
     Assert::assertStringContainsString('Modules\User\Datas', PasswordData::class);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });
 
 test('password data has correct strict types declaration', function (): void {
@@ -423,10 +466,14 @@ test('password data has correct strict types declaration', function (): void {
     $filename = $reflection->getFileName();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     Assert::assertIsString($filename);
 
     $content = file_get_contents($filename);
     Assert::assertStringContainsString('declare(strict_types=1)', $content);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -445,4 +492,6 @@ test('password data has correct strict types declaration', function (): void {
     Assert::assertStringContainsString('declare(strict_types=1)', $content);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

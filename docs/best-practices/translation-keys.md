@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Regole per le Chiavi di Traduzione"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Regole per le Chiavi di Traduzione
 
 ## Principi Fondamentali
@@ -145,6 +151,7 @@ return [
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices per le Traduzioni](translation-best-practices-2.md)
 - [Struttura del Modulo](module-structure-2.md)
 - [Convenzioni di Codice](code-conventions.md)
@@ -163,3 +170,8 @@ return [
 - [Convenzioni di Codice](code-conventions.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Best Practices per le Traduzioni](translation-best-practices-2.md)
+- [Struttura del Modulo](module-structure-2.md)
+- [Convenzioni di Codice](code-conventions.md)
+>>>>>>> laraxot/dev

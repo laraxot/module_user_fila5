@@ -5,10 +5,14 @@ declare(strict_types=1);
 return [
     'login' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         'username_or_email' => "Ім'я користувача або електронна пошта",
 =======
         'username_or_email' => 'Ім\'я користувача або електронна пошта',
 >>>>>>> 60a2c9a9 (.)
+=======
+        'username_or_email' => "Ім'я користувача або електронна пошта",
+>>>>>>> laraxot/dev
         'forgot_password_link' => 'Забули пароль?',
         'create_an_account' => 'Створити акаунт',
     ],
@@ -112,6 +116,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'avatar' => 'Аватар',
         'email' => 'E-mail',
         'login' => 'Логін',
@@ -130,6 +137,7 @@ return [
     ],
     'or' => 'Або',
     'cancel' => 'Скасувати',
+<<<<<<< HEAD
 =======
         'avatar' => [
             'label' => 'Аватар',
@@ -236,4 +244,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

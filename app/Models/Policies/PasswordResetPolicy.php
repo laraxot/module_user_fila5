@@ -6,6 +6,7 @@ namespace Modules\User\Models\Policies;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 class PasswordResetPolicy extends UserBasePolicy
 {
 =======
@@ -83,4 +84,8 @@ class PasswordResetPolicy extends UserBasePolicy
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+class PasswordResetPolicy extends UserBasePolicy
+{
+>>>>>>> laraxot/dev
 }

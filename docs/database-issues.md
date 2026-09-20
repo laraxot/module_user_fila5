@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Database Issues in User Module"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Database Issues in User Module
 
 ## Missing `doctor_team` Table
@@ -50,6 +56,9 @@ related:
 **Related Documentation**:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [User Module Overview](../index.md)
 - [Team Management](./team_management.md)
 - [BaseUser Model](./baseuser.md)
@@ -59,6 +68,7 @@ related:
 - [BaseUser Model](./baseuser.md)
 - [Database Structure](../DATABASE_STRUCTURE.md)
 - [Migration Guidelines](../../../../docs/collegamenti-documentazione.md)
+<<<<<<< HEAD
 - [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
 =======
 =======
@@ -84,3 +94,6 @@ related:
 - [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)
+>>>>>>> laraxot/dev

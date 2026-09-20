@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Implementazione Corretta del Logout con Widget Filament
 
 ## Collegamenti correlati
@@ -553,6 +554,8 @@ Se non è necessaria una conferma per il logout, è preferibile utilizzare l'app
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: logout-filament-widget-corrected
@@ -569,5 +572,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-filament-widget-corrected.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

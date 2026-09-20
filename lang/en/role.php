@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f548be94 (.)
@@ -12,6 +13,8 @@ declare(strict_types=1);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 return [
     'navigation' => [
         'name' => 'Ruoli',
@@ -29,6 +32,9 @@ return [
             'label' => 'Nome Ruolo',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => 'Il nome identificativo del ruolo, es. \\"Admin\\".',
             'placeholder' => 'Nome del ruolo',
             'helper_text' => '',
@@ -40,6 +46,7 @@ return [
             'placeholder' => 'Nome della guardia',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -67,6 +74,8 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'permissions' => [
             'label' => 'Permessi',
@@ -74,6 +83,7 @@ return [
             'placeholder' => 'Seleziona permessi',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -84,12 +94,17 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'users_count' => [
             'label' => 'Numero Utenti',
             'tooltip' => 'Il numero di utenti assegnati a questo ruolo.',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -100,6 +115,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'created_at' => [
             'label' => 'Data Creazione',
@@ -107,6 +126,7 @@ return [
             'placeholder' => 'Data di creazione',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -117,6 +137,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
@@ -124,6 +148,7 @@ return [
             'placeholder' => 'Ultima modifica',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
 =======
@@ -134,6 +159,10 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'description' => [
             'label' => 'Descrizione',
@@ -141,6 +170,9 @@ return [
             'placeholder' => 'Descrizione del ruolo',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'helper_text' => '',
             'description' => '',
         ],
@@ -161,6 +193,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -199,6 +232,8 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'team_id' => [
             'description' => 'team_id',
@@ -207,6 +242,9 @@ return [
             'label' => 'team_id',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
         ],
         'detach' => [
@@ -238,6 +276,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -293,6 +332,8 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'recordId' => [
             'description' => 'recordId',
@@ -301,6 +342,9 @@ return [
             'label' => 'recordId',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
         ],
         'id' => [
@@ -308,6 +352,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'id' => [
@@ -327,6 +372,8 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
     ],
     'roles' => [
@@ -392,6 +439,7 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
@@ -402,4 +450,8 @@ return [
     'plural_label' => 'Missing Plural label',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> laraxot/dev
 ];

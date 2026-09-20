@@ -6,10 +6,14 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 
 /**
+<<<<<<< HEAD
  * @property string $id
  * @property string $client_id
  * @property OauthClient|null $client
@@ -111,6 +115,17 @@ use Illuminate\Support\Carbon;
  * @property string|null $created_by
  *
  * @method static \Modules\User\Database\Factories\OauthPersonalAccessClientFactory factory($count = null, $state = [])
+=======
+ * @property string           $id
+ * @property string           $client_id
+ * @property OauthClient|null $client
+ * @property Carbon|null      $created_at
+ * @property Carbon|null      $updated_at
+ * @property string|null      $updated_by
+ * @property string|null      $created_by
+ *
+ * @method static \Modules\User\Database\Factories\OauthPersonalAccessClientFactory       factory($count = null, $state = [])
+>>>>>>> laraxot/dev
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient query()
@@ -142,6 +157,9 @@ class OauthPersonalAccessClient extends BaseModel
     {
         return $this->belongsTo(OauthClient::class, 'client_id');
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

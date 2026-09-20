@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -16,6 +19,7 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Tenant\Actions\Config\SaveTenantConfigAction;
 use Modules\User\Datas\PasswordData;
 use Modules\Xot\Filament\Pages\XotBasePage;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -50,12 +54,15 @@ use Modules\User\Datas\PasswordData;
 use Modules\Xot\Filament\Pages\XotBasePage;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * Pagina per la gestione delle impostazioni delle password.
  *
  * @property Schema $form
  */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 class Password extends XotBasePage
@@ -76,6 +83,10 @@ class Password extends XotBasePage
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+class Password extends XotBasePage
+{
+>>>>>>> laraxot/dev
     /**
      * Dati del form per la gestione delle password.
      *
@@ -83,10 +94,14 @@ class Password extends XotBasePage
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public ?array $formData = [];
 
     /**
      * Vista per la pagina.
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -113,10 +128,13 @@ class Password extends XotBasePage
      * Vista per la pagina.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected string $view = 'user::filament.pages.password';
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -135,6 +153,8 @@ class Password extends XotBasePage
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      * Inizializza la pagina.
      */
     public function mount(): void
@@ -143,6 +163,7 @@ class Password extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * Definisce la struttura dello schema.
@@ -172,6 +193,15 @@ class Password extends XotBasePage
     public function schema(Schema $schema): Schema
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * Definisce la struttura dello schema.
+     *
+     * @param Schema $schema Lo schema da configurare
+     *
+     * @return Schema Lo schema configurato
+     */
+    public function schema(Schema $schema): Schema
+>>>>>>> laraxot/dev
     {
         return $schema
             ->components([
@@ -204,6 +234,7 @@ class Password extends XotBasePage
      * Aggiorna i dati delle impostazioni delle password.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @return void
@@ -214,6 +245,8 @@ class Password extends XotBasePage
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     public function updateData(): void
     {
@@ -222,6 +255,7 @@ class Password extends XotBasePage
             $data = $this->form->getState();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             app(SaveTenantConfigAction::class)->execute('password', $data);
 =======
             TenantService::saveConfig('password', $data);
@@ -232,6 +266,9 @@ class Password extends XotBasePage
             app(SaveTenantConfigAction::class)->execute('password', $data);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            app(SaveTenantConfigAction::class)->execute('password', $data);
+>>>>>>> laraxot/dev
 
             // $this->handleRecordUpdate($this->getUser(), $data);
         } catch (Halt $exception) {
@@ -249,10 +286,14 @@ class Password extends XotBasePage
      * Riempie i form con i dati esistenti.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     protected function fillForms(): void
     {
         /** @var array<string, mixed> $data */
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -271,6 +312,8 @@ class Password extends XotBasePage
         /** @var array<string, mixed> $data */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $data = PasswordData::make()->toArray();
 
         $this->form->fill($data);
@@ -293,6 +336,7 @@ class Password extends XotBasePage
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  Model  $record  Il record da aggiornare
      * @param  array<string, mixed>  $data  I dati per l'aggiornamento
 =======
@@ -307,6 +351,11 @@ class Password extends XotBasePage
      * @param  array<string, mixed>  $data  I dati per l'aggiornamento
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @param Model                $record Il record da aggiornare
+     * @param array<string, mixed> $data   I dati per l'aggiornamento
+     *
+>>>>>>> laraxot/dev
      * @return Model Il record aggiornato
      */
     protected function handleRecordUpdate(Model $record, array $data): Model

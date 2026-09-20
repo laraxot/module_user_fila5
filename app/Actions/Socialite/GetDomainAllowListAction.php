@@ -10,6 +10,7 @@ namespace Modules\User\Actions\Socialite;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Exception;
 >>>>>>> f548be94 (.)
@@ -18,6 +19,8 @@ use Exception;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Arr;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -27,9 +30,16 @@ class GetDomainAllowListAction
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function __construct(
         private readonly Arr $arrHelper,
     ) {}
+=======
+    public function __construct(
+        private readonly Arr $arrHelper,
+    ) {
+    }
+>>>>>>> laraxot/dev
 
     /**
      * Execute the action.
@@ -51,6 +61,7 @@ class GetDomainAllowListAction
         }
 
         return [];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -99,5 +110,7 @@ class GetDomainAllowListAction
         return [];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

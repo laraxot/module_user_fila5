@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: phpstan-level10es
@@ -15,6 +18,7 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level10-fixes.md
 =======
 =======
@@ -298,3 +302,6 @@ related:
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level10-fixes.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-level10-fixes.md
+>>>>>>> laraxot/dev

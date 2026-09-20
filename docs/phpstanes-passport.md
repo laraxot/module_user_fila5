@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: phpstanes-passport
@@ -16,6 +19,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-passport.md
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -90,3 +94,5 @@ related:
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-passport.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

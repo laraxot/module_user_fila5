@@ -7,6 +7,7 @@ namespace Modules\User\Filament\Resources\OauthClientResource\Pages;
 use Filament\Actions\Action;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\ActionGroup;
 =======
 >>>>>>> 60a2c9a9 (.)
@@ -15,6 +16,9 @@ use Filament\Actions\ActionGroup;
 use Filament\Actions\ActionGroup;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Filament\Actions\ActionGroup;
+>>>>>>> laraxot/dev
 use Modules\User\Actions\Passport\RevokeClientAction;
 use Modules\User\Filament\Resources\OauthClientResource;
 use Modules\User\Models\OauthClient;
@@ -32,6 +36,7 @@ class EditOauthClient extends XotBaseEditRecord
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, Action|ActionGroup>
 =======
      * @return array<string, Action|\Filament\Actions\ActionGroup>
@@ -42,6 +47,9 @@ class EditOauthClient extends XotBaseEditRecord
      * @return array<string, Action|ActionGroup>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return array<string, Action|ActionGroup>
+>>>>>>> laraxot/dev
      */
     protected function getHeaderActions(): array
     {

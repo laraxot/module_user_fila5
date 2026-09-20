@@ -6,6 +6,7 @@ namespace Modules\User\Models\Traits;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
 =======
 >>>>>>> f548be94 (.)
@@ -14,6 +15,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Support\Carbon;
@@ -28,6 +32,7 @@ use Modules\User\Models\AuthenticationLog;
  *
  * @property MorphMany<AuthenticationLog, $this> $authentications      The authentication logs related to the model.
  * @property MorphOne<AuthenticationLog, $this>  $latestAuthentication The most recent authentication log entry.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property string|null                         $login_at             The timestamp of the last login.
@@ -49,6 +54,10 @@ use Modules\User\Models\AuthenticationLog;
  * @property string|null                         $ip_address           The IP address of the last login.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ * @property string|null                         $login_at             The timestamp of the last login.
+ * @property string|null                         $ip_address           The IP address of the last login.
+>>>>>>> laraxot/dev
  */
 trait HasAuthenticationLogTrait
 {
@@ -61,6 +70,7 @@ trait HasAuthenticationLogTrait
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return $this->morphMany(AuthenticationLog::class, 'authenticatable');
 =======
         return $this->morphMany(AuthenticationLog::class, 'authenticatable')->latest('login_at');
@@ -71,6 +81,9 @@ trait HasAuthenticationLogTrait
         return $this->morphMany(AuthenticationLog::class, 'authenticatable');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return $this->morphMany(AuthenticationLog::class, 'authenticatable');
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -100,12 +113,16 @@ trait HasAuthenticationLogTrait
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function lastLoginAt(): ?Carbon
     {
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->first();
 
         return null !== $auth ? $auth->login_at : null;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -126,6 +143,8 @@ trait HasAuthenticationLogTrait
         return null !== $auth ? $auth->login_at : null;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -135,12 +154,16 @@ trait HasAuthenticationLogTrait
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function lastSuccessfulLoginAt(): ?Carbon
     {
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->where('login_successful', true)->first();
 
         return null !== $auth ? $auth->login_at : null;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -161,6 +184,8 @@ trait HasAuthenticationLogTrait
         return null !== $auth ? $auth->login_at : null;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -170,12 +195,16 @@ trait HasAuthenticationLogTrait
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function lastLoginIp(): ?string
     {
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->first();
 
         return null !== $auth ? $auth->ip_address : null;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -196,6 +225,8 @@ trait HasAuthenticationLogTrait
         return null !== $auth ? $auth->ip_address : null;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -205,12 +236,16 @@ trait HasAuthenticationLogTrait
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function lastSuccessfulLoginIp(): ?string
     {
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->where('login_successful', true)->first();
 
         return null !== $auth ? $auth->ip_address : null;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -231,6 +266,8 @@ trait HasAuthenticationLogTrait
         return null !== $auth ? $auth->ip_address : null;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -240,12 +277,16 @@ trait HasAuthenticationLogTrait
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function previousLoginAt(): ?Carbon
     {
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->skip(1)->first();
 
         return null !== $auth ? $auth->login_at : null;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -266,6 +307,8 @@ trait HasAuthenticationLogTrait
         return null !== $auth ? $auth->login_at : null;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -275,12 +318,16 @@ trait HasAuthenticationLogTrait
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function previousLoginIp(): ?string
     {
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->skip(1)->first();
 
         return null !== $auth ? $auth->ip_address : null;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -301,6 +348,8 @@ trait HasAuthenticationLogTrait
         return null !== $auth ? $auth->ip_address : null;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -322,6 +371,7 @@ trait HasAuthenticationLogTrait
                 $count = $this->authentications()->whereDate('login_at', $date)->count();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 ++$days;
 =======
                 $days++;
@@ -332,6 +382,9 @@ trait HasAuthenticationLogTrait
                 ++$days;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                ++$days;
+>>>>>>> laraxot/dev
             }
 
             return $days;

@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Rules\CheckOtpExpiredRule;
 use Modules\User\Tests\TestCase;
@@ -21,6 +24,7 @@ test('CheckOtpExpiredRule can be instantiated', function () {
 test('CheckOtpExpiredRule has validate and message methods', function () {
     $user = UserFactory::new()->makeOne();
     $rule = new CheckOtpExpiredRule($user);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -65,4 +69,6 @@ test('CheckOtpExpiredRule has validate and message methods', function () {
     $rule = new CheckOtpExpiredRule($user);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

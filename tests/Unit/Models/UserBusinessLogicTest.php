@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\BaseUser;
@@ -15,11 +18,19 @@ uses(TestCase::class);
 
 describe('User Business Logic', function () {
     test('user extends base user', function () {
+<<<<<<< HEAD
         Assert::assertInstanceOf(BaseUser::class, new User);
     });
 
     test('user has authentication capabilities', function () {
         $user = new User;
+=======
+        Assert::assertInstanceOf(BaseUser::class, new User());
+    });
+
+    test('user has authentication capabilities', function () {
+        $user = new User();
+>>>>>>> laraxot/dev
         $user->email = 'test@example.com';
         $user->password = 'hashed-password';
 
@@ -28,6 +39,7 @@ describe('User Business Logic', function () {
     });
 
     test('user can have name components', function () {
+<<<<<<< HEAD
         $user = new User;
 =======
 =======
@@ -82,40 +94,62 @@ describe('User Business Logic', function () {
         $user = new User;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $user = new User();
+>>>>>>> laraxot/dev
         $user->first_name = 'Mario';
         $user->last_name = 'Rossi';
         $user->name = 'Mario Rossi';
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         Assert::assertSame('Mario', $user->first_name);
         Assert::assertSame('Rossi', $user->last_name);
         Assert::assertSame('Mario Rossi', $user->name);
     });
 
     test('user has activation status', function () {
+<<<<<<< HEAD
         $user = new User;
+=======
+        $user = new User();
+>>>>>>> laraxot/dev
         $user->is_active = true;
 
         Assert::assertSame(true, $user->is_active);
     });
 
     test('user has otp capability', function () {
+<<<<<<< HEAD
         $user = new User;
+=======
+        $user = new User();
+>>>>>>> laraxot/dev
         $user->is_otp = true;
 
         Assert::assertSame(true, $user->is_otp);
     });
 
     test('user can have language preference', function () {
+<<<<<<< HEAD
         $user = new User;
+=======
+        $user = new User();
+>>>>>>> laraxot/dev
         $user->lang = 'it';
 
         Assert::assertSame('it', $user->lang);
     });
 
     test('user has email verification tracking', function () {
+<<<<<<< HEAD
         $user = new User;
+=======
+        $user = new User();
+>>>>>>> laraxot/dev
         $verifiedAt = Carbon::parse('2023-01-01 12:00:00');
         $user->email_verified_at = $verifiedAt;
 
@@ -124,7 +158,11 @@ describe('User Business Logic', function () {
     });
 
     test('user has password expiry tracking', function () {
+<<<<<<< HEAD
         $user = new User;
+=======
+        $user = new User();
+>>>>>>> laraxot/dev
         $expiresAt = Carbon::parse('2023-12-31 23:59:59');
         $user->password_expires_at = $expiresAt;
 
@@ -133,20 +171,29 @@ describe('User Business Logic', function () {
     });
 
     test('user can have current team', function () {
+<<<<<<< HEAD
         $user = new User;
+=======
+        $user = new User();
+>>>>>>> laraxot/dev
         $user->current_team_id = 1;
 
         Assert::assertSame(1, $user->current_team_id);
     });
 
     test('user can have profile photo', function () {
+<<<<<<< HEAD
         $user = new User;
+=======
+        $user = new User();
+>>>>>>> laraxot/dev
         $user->profile_photo_path = '/storage/profile-photos/user.jpg';
 
         Assert::assertSame('/storage/profile-photos/user.jpg', $user->profile_photo_path);
     });
 
     test('user can have remember token', function () {
+<<<<<<< HEAD
         $user = new User;
         $user->remember_token = 'abc123def456';
 
@@ -282,5 +329,11 @@ describe('User Business Logic', function () {
         Assert::assertSame('abc123def456', $user->remember_token);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $user = new User();
+        $user->remember_token = 'abc123def456';
+
+        Assert::assertSame('abc123def456', $user->remember_token);
+>>>>>>> laraxot/dev
     });
 });

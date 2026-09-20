@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Fix Binding Team Models nel Modulo User
 
 ## Panoramica
@@ -316,6 +317,8 @@ $this->assertTrue($user->belongsToTeam($team));
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: team-bindings-fix
@@ -332,5 +335,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/team-bindings-fix.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 return [
     'fields' => [
         'text_color' => ['label' => 'text_color', 'placeholder' => 'text_color', 'helper_text' => 'text_color', 'description' => 'text_color', 'tooltip' => ''],
@@ -26,6 +29,7 @@ return [
     ],
     'label' => 'Colors',
     'plural_label' => 'Colors (Plurale)',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -96,4 +100,6 @@ return [
     'plural_label' => 'Colors (Plurale)',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 =======
 use Override;
@@ -20,6 +21,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Builder;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Database\Eloquent\Builder;
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
@@ -31,6 +35,7 @@ use Modules\Xot\Datas\XotData;
  * Modules\User\Models\DeviceUser.
  *
  * @property Device|null $device
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @method static Builder|DeviceUser newModelQuery()
  * @method static Builder|DeviceUser newQuery()
@@ -55,6 +60,8 @@ use Modules\Xot\Datas\XotData;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  *
  * @method static Builder|DeviceUser newModelQuery()
  * @method static Builder|DeviceUser newQuery()
@@ -67,16 +74,23 @@ use Modules\Xot\Datas\XotData;
  * @property Carbon|null $logout_at
  * @property string|null $push_notifications_token
  * @property bool|null   $push_notifications_enabled
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 2024e2e7 (.)
+=======
+ *
+>>>>>>> laraxot/dev
  * @method static Builder|DeviceUser whereCreatedAt($value)
  * @method static Builder|DeviceUser whereCreatedBy($value)
  * @method static Builder|DeviceUser whereDeviceId($value)
@@ -88,6 +102,7 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|DeviceUser whereUpdatedAt($value)
  * @method static Builder|DeviceUser whereUpdatedBy($value)
  * @method static Builder|DeviceUser whereUserId($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property ProfileContract|null $profile
 <<<<<<< HEAD
@@ -105,6 +120,8 @@ use Modules\Xot\Datas\XotData;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  *
  * @property ProfileContract|null $profile
  * @property UserContract|null    $user
@@ -114,12 +131,16 @@ use Modules\Xot\Datas\XotData;
  *
  * @method static \Modules\User\Database\Factories\DeviceUserFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class DeviceUser extends BasePivot
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -132,6 +153,8 @@ class DeviceUser extends BasePivot
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     /** @var list<string> */
     protected $fillable = [
         'id',
@@ -146,6 +169,7 @@ class DeviceUser extends BasePivot
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return BelongsTo<Device, $this>
 =======
      * old_return BelongsTo<Device, DeviceUser>.
@@ -156,6 +180,9 @@ class DeviceUser extends BasePivot
      * @return BelongsTo<Device, $this>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return BelongsTo<Device, $this>
+>>>>>>> laraxot/dev
      */
     public function device(): BelongsTo
     {
@@ -165,6 +192,7 @@ class DeviceUser extends BasePivot
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return BelongsTo<Model, $this>
 =======
      * old_return BelongsTo<Model&UserContract, DeviceUser>.
@@ -175,6 +203,9 @@ class DeviceUser extends BasePivot
      * @return BelongsTo<Model, $this>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return BelongsTo<Model, $this>
+>>>>>>> laraxot/dev
      */
     public function user(): BelongsTo
     {
@@ -187,11 +218,15 @@ class DeviceUser extends BasePivot
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @return BelongsTo<Model, $this>
      */
     public function profile(): BelongsTo
     {
         /** @var class-string<Model> */
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -211,12 +246,15 @@ class DeviceUser extends BasePivot
         /** @var class-string<Model> */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $profileClass = XotData::make()->getProfileClass();
 
         return $this->belongsTo($profileClass, 'user_id', 'user_id');
     }
 
     /** @return array<string, string> */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     #[\Override]
@@ -229,6 +267,9 @@ class DeviceUser extends BasePivot
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     protected function casts(): array
     {
         return [

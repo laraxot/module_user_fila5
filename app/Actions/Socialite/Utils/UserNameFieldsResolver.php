@@ -6,6 +6,7 @@ namespace Modules\User\Actions\Socialite\Utils;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use InvalidArgumentException;
 use ReflectionClass;
@@ -18,6 +19,8 @@ use ReflectionException;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Str;
 use Illuminate\Support\Stringable;
 use Laravel\Socialite\Contracts\User;
@@ -29,6 +32,9 @@ final readonly class UserNameFieldsResolver
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     private const string NAME_SEARCH = 'before';
 
     private const string SURNAME_SEARCH = 'after';
@@ -38,6 +44,7 @@ final readonly class UserNameFieldsResolver
     public ?string $firstName;
 
     public ?string $lastName;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -65,10 +72,13 @@ final readonly class UserNameFieldsResolver
     public ?string $lastName;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     public function __construct(User $user)
     {
         $this->name = $this->resolveName($user);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $this->firstName = $this->resolveName($user);
@@ -85,6 +95,10 @@ final readonly class UserNameFieldsResolver
         $this->lastName = $this->resolveSurname($user);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $this->firstName = $this->resolveName($user);
+        $this->lastName = $this->resolveSurname($user);
+>>>>>>> laraxot/dev
     }
 
     public static function make(User $user): self
@@ -105,7 +119,11 @@ final readonly class UserNameFieldsResolver
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @param  string  $searchMethod  use self constants (NAME_SEARCH, SURNAME_SEARCH)
+=======
+     * @param string $searchMethod use self constants (NAME_SEARCH, SURNAME_SEARCH)
+>>>>>>> laraxot/dev
      */
     private function resolveNameFields(User $idpUser, string $searchMethod): string
     {
@@ -162,7 +180,11 @@ final readonly class UserNameFieldsResolver
             ->before('@');
 
         // Use conditional logic instead of dynamic method call for type safety
+<<<<<<< HEAD
         if ($searchMethod === self::NAME_SEARCH) {
+=======
+        if (self::NAME_SEARCH === $searchMethod) {
+>>>>>>> laraxot/dev
             return $emailPart->before('.')->trim()->title();
         }
 
@@ -179,6 +201,7 @@ final readonly class UserNameFieldsResolver
         $raw = [];
         try {
             $reflection = new \ReflectionClass($idpUser);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -285,11 +308,14 @@ final readonly class UserNameFieldsResolver
             $reflection = new \ReflectionClass($idpUser);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             if ($reflection->hasMethod('getRaw')) {
                 $method = $reflection->getMethod('getRaw');
                 $method->setAccessible(true);
                 $rawValue = $method->invoke($idpUser);
                 if (is_array($rawValue)) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                     foreach ($rawValue as $key => $value) {
@@ -306,6 +332,11 @@ final readonly class UserNameFieldsResolver
                     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                    foreach ($rawValue as $key => $value) {
+                        $raw[(string) $key] = $value;
+                    }
+>>>>>>> laraxot/dev
                 }
             } elseif ($reflection->hasProperty('user')) {
                 $property = $reflection->getProperty('user');
@@ -314,6 +345,9 @@ final readonly class UserNameFieldsResolver
                 if (is_array($userData)) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                     foreach ($userData as $key => $value) {
                         $raw[(string) $key] = $value;
                     }
@@ -324,6 +358,7 @@ final readonly class UserNameFieldsResolver
         }
 
         return $raw;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -396,6 +431,8 @@ final readonly class UserNameFieldsResolver
         return $raw;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     private function resolveNameFieldByNameAttributeAnalysis(string $nameField, string $searchMethod): Stringable
@@ -404,6 +441,7 @@ final readonly class UserNameFieldsResolver
             return Str::of('');
         }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (! in_array($searchMethod, [self::NAME_SEARCH, self::SURNAME_SEARCH], strict: true)) {
@@ -420,6 +458,10 @@ final readonly class UserNameFieldsResolver
             throw new \InvalidArgumentException('Metodo di ricerca non valido');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! in_array($searchMethod, [self::NAME_SEARCH, self::SURNAME_SEARCH], strict: true)) {
+            throw new \InvalidArgumentException('Metodo di ricerca non valido');
+>>>>>>> laraxot/dev
         }
 
         return Str::of($nameField)

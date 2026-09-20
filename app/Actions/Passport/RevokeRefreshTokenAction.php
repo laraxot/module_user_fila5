@@ -38,6 +38,7 @@ class RevokeRefreshTokenAction
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $token->setAttribute('revoked', true);
 =======
         $token->revoked = true;
@@ -48,6 +49,9 @@ class RevokeRefreshTokenAction
         $token->setAttribute('revoked', true);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $token->setAttribute('revoked', true);
+>>>>>>> laraxot/dev
         $token->save();
 
         return true;

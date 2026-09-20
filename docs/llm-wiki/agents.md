@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Agent instructions"
 type: reference
@@ -15,6 +16,8 @@ related:
 
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # User {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** User
@@ -155,6 +158,7 @@ Related:
 - [Project Wiki Integration](../../docs/wiki/README.md)
 - [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
 - [Module Documentation](../README.md)
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -304,3 +308,5 @@ Related:
 - [Module Documentation](../README.md)
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

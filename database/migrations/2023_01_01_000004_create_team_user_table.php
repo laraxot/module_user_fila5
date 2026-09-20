@@ -7,6 +7,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
 =======
@@ -19,6 +20,9 @@ return new class extends XotBaseMigration
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -40,6 +44,7 @@ return new class extends XotBaseMigration
         $this->tableUpdate(function (Blueprint $table): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
 =======
 =======
@@ -55,6 +60,9 @@ return new class extends XotBaseMigration
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            $this->updateTimestamps(table: $table, hasSoftDeletes: true);
+>>>>>>> laraxot/dev
 
             // $this->updateUser($table);
         });

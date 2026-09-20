@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\Permission;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /**
 =======
@@ -26,6 +27,10 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 /**
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+/**
+>>>>>>> laraxot/dev
  * @extends Factory<Permission>
  */
 class PermissionFactory extends Factory
@@ -40,6 +45,9 @@ class PermissionFactory extends Factory
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * Define the model's default state.
      *
      * @return array<string, mixed>
@@ -54,6 +62,7 @@ class PermissionFactory extends Factory
             'guard_name' => 'web',
         ];
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -190,4 +199,6 @@ class PermissionFactory extends Factory
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

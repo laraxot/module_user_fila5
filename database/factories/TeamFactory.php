@@ -7,11 +7,15 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Str;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 
 /**
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -33,11 +37,14 @@ use Modules\User\Models\User;
 /**
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @extends Factory<Team>
  */
 class TeamFactory extends Factory
 {
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * The name of the factory's corresponding model.
@@ -50,6 +57,9 @@ class TeamFactory extends Factory
      * The name of the factory's corresponding model.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * The name of the factory's corresponding model.
+>>>>>>> laraxot/dev
      *
      * @var class-string<Team>
      */
@@ -58,6 +68,7 @@ class TeamFactory extends Factory
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, mixed>
      */
     /**
@@ -74,12 +85,20 @@ class TeamFactory extends Factory
     /**
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return array<string, mixed>
+     */
+    /**
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     public function definition(): array
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         return [
             'name' => fake()->unique()->company(),
             'personal_team' => 0,
@@ -87,6 +106,7 @@ class TeamFactory extends Factory
             'uuid' => (string) Str::uuid(),
         ];
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -161,4 +181,6 @@ class TeamFactory extends Factory
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -29,10 +30,13 @@ use Filament\Forms\Components\Toggle;
 <<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\CreateSocialProvider;
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\EditSocialProvider;
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\ListSocialProviders;
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\ViewSocialProvider;
+<<<<<<< HEAD
 =======
 use Modules\User\Filament\Resources\SocialProviderResource\Pages;
 >>>>>>> f548be94 (.)
@@ -47,6 +51,8 @@ use Modules\User\Filament\Resources\SocialProviderResource\Pages\ListSocialProvi
 use Modules\User\Filament\Resources\SocialProviderResource\Pages\ViewSocialProvider;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\SocialProvider;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -56,6 +62,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
  */
 class SocialProviderResource extends XotBaseResource
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected static ?string $model = SocialProvider::class;
@@ -170,11 +177,17 @@ class SocialProviderResource extends XotBaseResource
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    protected static ?string $model = SocialProvider::class;
+
+    #[\Override]
+>>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [];
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     #[\Override]
@@ -187,6 +200,9 @@ class SocialProviderResource extends XotBaseResource
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public static function getPages(): array
     {
         return [

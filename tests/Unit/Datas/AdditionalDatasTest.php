@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 uses(Modules\User\Tests\TestCase::class);
 
@@ -14,6 +15,8 @@ uses(Modules\User\Tests\TestCase::class);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Datas\DeviceData;
 use Modules\User\Datas\FilamentShieldData;
 use Modules\User\Datas\FilamentUserData;
@@ -27,6 +30,9 @@ use Modules\User\Datas\SocialProviderData;
 use Modules\User\Datas\SuperAdminData;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -38,6 +44,7 @@ test('PermissionTableNamesData can be instantiated', function () {
         Assert::assertInstanceOf(PermissionTableNamesData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -67,17 +74,23 @@ test('PermissionTableNamesData can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
 test('ShieldResourceData can be instantiated', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     try {
         $data = ShieldResourceData::from([]);
         Assert::assertInstanceOf(ShieldResourceData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -99,17 +112,23 @@ test('ShieldResourceData can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
 test('FilamentUserData can be instantiated', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     try {
         $data = FilamentUserData::from([]);
         Assert::assertInstanceOf(FilamentUserData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -131,17 +150,23 @@ test('FilamentUserData can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
 test('SuperAdminData can be instantiated', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     try {
         $data = SuperAdminData::from([]);
         Assert::assertInstanceOf(SuperAdminData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -163,17 +188,23 @@ test('SuperAdminData can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
 test('PermissionData can be instantiated', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     try {
         $data = PermissionData::from([]);
         Assert::assertInstanceOf(PermissionData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -195,17 +226,23 @@ test('PermissionData can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
 test('PermissionColumnNamesData can be instantiated', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     try {
         $data = PermissionColumnNamesData::from([]);
         Assert::assertInstanceOf(PermissionColumnNamesData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -227,17 +264,23 @@ test('PermissionColumnNamesData can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
 test('PermissionCacheData can be instantiated', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     try {
         $data = PermissionCacheData::from([]);
         Assert::assertInstanceOf(PermissionCacheData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -259,17 +302,23 @@ test('PermissionCacheData can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
 test('DeviceData can be instantiated', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     try {
         $data = DeviceData::from([]);
         Assert::assertInstanceOf(DeviceData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -291,17 +340,23 @@ test('DeviceData can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
 test('SocialProviderData can be instantiated', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     try {
         $data = SocialProviderData::from([]);
         Assert::assertInstanceOf(SocialProviderData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -323,17 +378,23 @@ test('SocialProviderData can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
 test('FilamentShieldData can be instantiated', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     try {
         $data = FilamentShieldData::from([]);
         Assert::assertInstanceOf(FilamentShieldData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -355,17 +416,23 @@ test('FilamentShieldData can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
 test('PermissionModelsData can be instantiated', function () {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     try {
         $data = PermissionModelsData::from([]);
         Assert::assertInstanceOf(PermissionModelsData::class, $data);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -387,5 +454,7 @@ test('PermissionModelsData can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });

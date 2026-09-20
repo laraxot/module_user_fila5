@@ -6,6 +6,9 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'name' => ['label' => 'Nome', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'name.placeholder' => ['label' => 'Inserisci il nome del tenant', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'name.helper_text' => ['label' => 'Il nome dell\'organizzazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -34,6 +37,10 @@ return [
         'is_active' => ['label' => 'is_active'],
         'created_at' => ['label' => 'created_at'],
         'updated_at' => ['label' => 'updated_at'],
+<<<<<<< HEAD
+=======
+        'trial_ends_at' => ['label' => 'trial_ends_at'],
+>>>>>>> laraxot/dev
     ],
     'navigation' => [
         'name' => 'Tenants',
@@ -47,6 +54,7 @@ return [
     'plural_label' => 'Tenants (Plurale)',
     'actions' => [
         'create' => ['label' => 'Crea Tenants', 'icon' => 'create', 'tooltip' => 'create'],
+<<<<<<< HEAD
         'edit' => ['label' => 'Modifica Tenants'],
         'delete' => ['label' => 'Elimina Tenants'],
 =======
@@ -125,5 +133,11 @@ return [
         'delete' => ['label' => 'Elimina Tenants'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'edit' => ['label' => 'Modifica Tenants', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'delete' => ['label' => 'Elimina Tenants', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+>>>>>>> laraxot/dev
     ],
 ];

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Task: Fix Documentation Merge Markers (User Module)"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Task: Fix Documentation Merge Markers (User Module)
 
 ## 📋 Obiettivo
@@ -50,6 +56,7 @@ Rimuovere residui di conflitti Git (`<<<<<<<`, `=======`, `>>>>>>>`) da tutti i 
 
 ## 🔗 Riferimenti
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Roadmap User](../roadmap.md)
 =======
 - [Roadmap User](../roadmap.md)
@@ -58,3 +65,6 @@ Rimuovere residui di conflitti Git (`<<<<<<<`, `=======`, `>>>>>>>`) da tutti i 
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Roadmap User](../roadmap.md)
+>>>>>>> laraxot/dev

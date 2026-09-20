@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'failed' => [
         'key' => 'user::messages.failed',
         'text' => 'Invalid credentials.',
@@ -293,6 +296,7 @@ return [
             'label' => 'Delete Message',
         ],
     ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -635,4 +639,6 @@ return [
     ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

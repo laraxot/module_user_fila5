@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Rules\CheckOtpExpiredRule;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -16,6 +19,7 @@ test('CheckOtpExpiredRule can be instantiated', function () {
         Assert::assertInstanceOf(CheckOtpExpiredRule::class, $rule);
     } catch (Exception $e) {
         // assertTrue(true) removed — tautology // Pass if class exists
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -49,6 +53,8 @@ test('CheckOtpExpiredRule can be instantiated', function () {
         // assertTrue(true) removed — tautology // Pass if class exists
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });
 
@@ -58,10 +64,14 @@ test('CheckOtpExpiredRule has validation methods', function () {
             $rule = app(CheckOtpExpiredRule::class);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             Assert::assertTrue(method_exists($rule, 'validate') || method_exists($rule, 'passes'));
         } catch (Exception $e) {
             // assertTrue(true) removed — tautology // Pass if class exists
         }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -82,5 +92,7 @@ test('CheckOtpExpiredRule has validation methods', function () {
         }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });

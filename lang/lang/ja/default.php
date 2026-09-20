@@ -127,6 +127,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'email' => 'メールアドレス',
         'login' => 'ログイン',
         'name' => '名前',
@@ -143,6 +146,7 @@ return [
     ],
     'or' => 'または',
     'cancel' => 'キャンセル',
+<<<<<<< HEAD
 =======
         'email' => [
             'label' => 'メールアドレス',
@@ -237,4 +241,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

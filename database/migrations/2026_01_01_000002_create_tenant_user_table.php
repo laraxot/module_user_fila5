@@ -7,6 +7,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use function Safe\file_put_contents;
 
@@ -17,12 +18,15 @@ use function Safe\file_put_contents;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 return new class extends XotBaseMigration {
     /**
      * Run the migrations.
      */
     public function up(): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -39,6 +43,8 @@ return new class extends XotBaseMigration {
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         // -- CREATE --
         $this->tableCreate(static function (Blueprint $table): void {
             // $table->uuid('id')->primary();
@@ -53,6 +59,7 @@ return new class extends XotBaseMigration {
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
@@ -70,6 +77,9 @@ return new class extends XotBaseMigration {
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            $this->updateTimestamps(table: $table, hasSoftDeletes: true);
+>>>>>>> laraxot/dev
         });
     }
 };

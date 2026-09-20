@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Correzioni Traduzioni Navigation - Modulo User"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Correzioni Traduzioni Navigation - Modulo User
 
 ## Data Intervento
@@ -108,6 +114,7 @@ related:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
 =======
 - [Audit Generale Traduzioni Navigation](../../docs/navigation-translations-audit.md)
@@ -118,6 +125,9 @@ related:
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
+>>>>>>> laraxot/dev
 - [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../<nome progetto>/docs/translation-quality-standards.md)
 - [Documentazione Modulo User](readme.md)

@@ -7,6 +7,7 @@ namespace Modules\User\Filament\Resources\OauthClientResource\Pages;
 use Filament\Actions\Action;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\ActionGroup;
 =======
 >>>>>>> 60a2c9a9 (.)
@@ -18,14 +19,20 @@ use Filament\Schemas\Components\Component;
 =======
 use Filament\Actions\ActionGroup;
 >>>>>>> 2024e2e7 (.)
+=======
+use Filament\Actions\ActionGroup;
+>>>>>>> laraxot/dev
 use Modules\User\Actions\Passport\RevokeClientAction;
 use Modules\User\Filament\Resources\OauthClientResource;
 use Modules\User\Models\OauthClient;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * View OAuth Client page.
@@ -39,6 +46,7 @@ class ViewOauthClient extends XotBaseViewRecord
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<string, Action|ActionGroup>
 =======
      * @return array<string, Action|\Filament\Actions\ActionGroup>
@@ -49,6 +57,9 @@ class ViewOauthClient extends XotBaseViewRecord
      * @return array<string, Action|ActionGroup>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return array<string, Action|ActionGroup>
+>>>>>>> laraxot/dev
      */
     protected function getHeaderActions(): array
     {
@@ -78,6 +89,7 @@ class ViewOauthClient extends XotBaseViewRecord
         return $actions;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     /**
      * Schema dell'infolist per la visualizzazione dei dettagli.
@@ -104,4 +116,6 @@ class ViewOauthClient extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
 }

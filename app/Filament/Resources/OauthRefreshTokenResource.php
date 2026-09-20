@@ -8,6 +8,7 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
@@ -24,13 +25,18 @@ use Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages;
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 // Already there, but explicitly for boolean()
 use Illuminate\Database\Eloquent\Builder;
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages\ListOauthRefreshTokens;
 use Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages\ViewOauthRefreshToken;
 use Modules\User\Models\OauthRefreshToken;
@@ -52,6 +58,7 @@ class OauthRefreshTokenResource extends XotBaseResource
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-arrow-path';
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * Get the form schema for the resource.
      *
@@ -75,14 +82,19 @@ class OauthRefreshTokenResource extends XotBaseResource
     /**
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
      * Extend table callback for the resource.
      *
      * @return array<string, mixed>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     #[\Override]
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
     public static function extendTableCallback(): array
     {
         return [

@@ -7,6 +7,9 @@ return [
         'authenticatable' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'name' => ['label' => 'authenticatable.name'],
             'label' => '',
             'tooltip' => '',
@@ -31,7 +34,13 @@ return [
         'applyFilters' => ['icon' => 'applyFilters', 'tooltip' => 'applyFilters', 'label' => 'applyFilters'],
         'openFilters' => ['tooltip' => 'openFilters', 'icon' => 'openFilters', 'label' => 'openFilters'],
         'resetColumnManager' => ['tooltip' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'label' => 'resetColumnManager'],
+<<<<<<< HEAD
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+=======
+        'delete' => ['tooltip' => 'delete', 'icon' => 'delete', 'label' => 'delete'],
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+>>>>>>> laraxot/dev
     ],
     'navigation' => [
         'name' => 'Recent Logins',
@@ -43,6 +52,7 @@ return [
     ],
     'label' => 'Recent Logins',
     'plural_label' => 'Recent Logins (Plurale)',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -141,4 +151,6 @@ return [
     'plural_label' => 'Recent Logins (Plurale)',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

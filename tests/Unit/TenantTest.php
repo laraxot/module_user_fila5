@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Models\Contracts\HasAvatar;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Facades\DB;
@@ -21,17 +24,26 @@ use Spatie\Sluggable\SlugOptions;
 uses(TestCase::class);
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $overrides
  */
 function createPersistedTenant(array $overrides = []): Tenant
 {
     $tenant = new Tenant;
+=======
+ * @param array<string, mixed> $overrides
+ */
+function createPersistedTenant(array $overrides = []): Tenant
+{
+    $tenant = new Tenant();
+>>>>>>> laraxot/dev
     $tenant->incrementing = false;
     $tenant->setKeyType('string');
 
     $tenant->fill(array_merge([
         'id' => (string) Str::uuid(),
         'name' => 'Test Tenant '.uniqid(),
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -83,6 +95,8 @@ function createPersistedTenant(array $overrides = []): Tenant
         'name' => 'Test Tenant '.uniqid(),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'email_address' => 'test@tenant.com',
         'phone' => '+39 123 456 789',
         'mobile' => '+39 987 654 321',
@@ -91,6 +105,9 @@ function createPersistedTenant(array $overrides = []): Tenant
         'secondary_color' => '#00FF00',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     ], $overrides));
     $tenant->save();
 
@@ -146,6 +163,7 @@ test('tenant has members relationship', function (): void {
     $tenant = createPersistedTenant();
 
     Assert::assertInstanceOf(BelongsToMany::class, $tenant->members());
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -266,6 +284,8 @@ test('tenant has members relationship', function (): void {
     Assert::assertInstanceOf(BelongsToMany::class, $tenant->members());
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });
 
 test('tenant implements required interfaces', function (): void {
@@ -273,6 +293,9 @@ test('tenant implements required interfaces', function (): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     Assert::assertTrue($reflection->implementsInterface(HasAvatar::class));
     Assert::assertTrue($reflection->implementsInterface(HasMedia::class));
     Assert::assertTrue($reflection->implementsInterface(TenantContract::class));
@@ -376,6 +399,7 @@ test('can find tenants by name pattern', function (): void {
     $companyTenants = Tenant::where('name', 'like', '%'.$baseName.'%')->get();
 
     Assert::assertGreaterThanOrEqual(2, $companyTenants->count());
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -546,4 +570,6 @@ test('can find tenants by name pattern', function (): void {
     Assert::assertGreaterThanOrEqual(2, $companyTenants->count());
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

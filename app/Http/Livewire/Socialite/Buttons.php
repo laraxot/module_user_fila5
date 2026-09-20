@@ -23,6 +23,9 @@ class Buttons extends Component
         // If the providers configuration is not an array, initialize it as an empty array.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (! is_array($providers)) {
             $providers = [];
         }
@@ -32,6 +35,7 @@ class Buttons extends Component
 
         // Return the view with the list of providers.
         return view($viewName, [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -56,6 +60,8 @@ class Buttons extends Component
         return view($viewName, [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'providers' => $providers,
         ]);
     }

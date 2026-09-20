@@ -6,10 +6,14 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Webmozart\Assert\Assert;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -28,17 +32,23 @@ use Modules\Xot\Contracts\ProfileContract;
 use Webmozart\Assert\Assert;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * Modules\User\Models\ModelHasRole.
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * @property string      $id
  * @property string      $role_id
  * @property string      $model_type
  * @property string      $model_id
  * @property int|null    $team_id
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -58,10 +68,13 @@ use Webmozart\Assert\Assert;
  * @property int|null    $team_id
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -73,6 +86,9 @@ use Webmozart\Assert\Assert;
  *
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ *
+>>>>>>> laraxot/dev
  * @method static Builder|ModelHasRole newModelQuery()
  * @method static Builder|ModelHasRole newQuery()
  * @method static Builder|ModelHasRole query()
@@ -85,6 +101,7 @@ use Webmozart\Assert\Assert;
  * @method static Builder|ModelHasRole whereTeamId($value)
  * @method static Builder|ModelHasRole whereUpdatedAt($value)
  * @method static Builder|ModelHasRole whereUpdatedBy($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
  * @property string $uuid (DC2Type:guid)
  * @method static Builder|ModelHasRole whereUuid($value)
@@ -99,6 +116,8 @@ use Webmozart\Assert\Assert;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  *
  * @property string $uuid (DC2Type:guid)
  *
@@ -110,12 +129,16 @@ use Webmozart\Assert\Assert;
  *
  * @method static \Modules\User\Database\Factories\ModelHasRoleFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class ModelHasRole extends BaseMorphPivot
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     /** @var list<string> */
@@ -140,6 +163,11 @@ class ModelHasRole extends BaseMorphPivot
         'id',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /** @var list<string> */
+    protected $fillable = [
+        'id',
+>>>>>>> laraxot/dev
         'role_id',
         'model_type',
         'model_id',
@@ -149,6 +177,9 @@ class ModelHasRole extends BaseMorphPivot
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * Nome tabella da config Spatie — mai `$table` hardcoded (può cambiare per tenant/overlay).
      */
     #[\Override]
@@ -161,6 +192,7 @@ class ModelHasRole extends BaseMorphPivot
 
     /** @return array<string, string> */
     #[\Override]
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -197,6 +229,8 @@ class ModelHasRole extends BaseMorphPivot
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected function casts(): array
     {
         return [
@@ -207,6 +241,7 @@ class ModelHasRole extends BaseMorphPivot
             'team_id' => 'string',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             // 'uuid' => 'string',
 >>>>>>> f548be94 (.)
@@ -215,6 +250,8 @@ class ModelHasRole extends BaseMorphPivot
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
             'created_at' => 'datetime',
             'updated_at' => 'datetime',

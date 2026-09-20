@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Analisi Corretta del Trait HasTeams - Filosofia Laraxot
 
 ## Comprensione della Filosofia `belongsToManyX`
@@ -543,6 +544,8 @@ trait HasTeams
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: traits-hasteams-analisi-corretta
@@ -559,5 +562,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/traits-hasteams-analisi-corretta.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

@@ -10,6 +10,7 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Override;
 use Modules\User\Database\Factories\SocialProviderFactory;
@@ -20,11 +21,14 @@ use Modules\User\Database\Factories\SocialProviderFactory;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Tenant\Models\Traits\SushiToPhpArray;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property int|null                  $id
@@ -59,6 +63,8 @@ use Modules\Xot\Contracts\ProfileContract;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  * @property int|null                  $id
  * @property string|null               $name
  * @property array<int, string>|null   $scopes
@@ -72,8 +78,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property ProfileContract|null      $creator
  * @property ProfileContract|null      $updater
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @method static Builder|SocialProvider newModelQuery()
  * @method static Builder|SocialProvider newQuery()
  * @method static Builder|SocialProvider query()
@@ -88,21 +97,30 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|SocialProvider whereStateless($value)
  * @method static Builder|SocialProvider whereSvg($value)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 2024e2e7 (.)
+=======
+ *
+>>>>>>> laraxot/dev
  * @property string|null $created_at
  * @property string|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  *
 >>>>>>> 2024e2e7 (.)
+=======
+ *
+>>>>>>> laraxot/dev
  * @method static Builder|SocialProvider whereCreatedAt($value)
  * @method static Builder|SocialProvider whereCreatedBy($value)
  * @method static Builder|SocialProvider whereUpdatedAt($value)
  * @method static Builder|SocialProvider whereUpdatedBy($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property ProfileContract|null $deleter
@@ -113,13 +131,18 @@ use Modules\Xot\Contracts\ProfileContract;
 =======
  * @mixin IdeHelperSocialProvider
 =======
+=======
+>>>>>>> laraxot/dev
  *
  * @property ProfileContract|null $deleter
  *
  * @method static \Modules\User\Database\Factories\SocialProviderFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class SocialProvider extends BaseModel
@@ -128,6 +151,7 @@ class SocialProvider extends BaseModel
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /** @var bool */
 >>>>>>> f548be94 (.)
@@ -136,6 +160,8 @@ class SocialProvider extends BaseModel
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public $incrementing = false;
 
     /** @var list<string> */
@@ -154,20 +180,26 @@ class SocialProvider extends BaseModel
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     /**
      * Logical form definition for this Sushi-backed model.
      *
      * @var array<string, string>
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected array $form = [
         'id' => 'integer',
         'name' => 'string',
@@ -185,6 +217,9 @@ class SocialProvider extends BaseModel
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /** @var array<string, string> */
     protected array $schema = [
         'id' => 'integer',
@@ -214,6 +249,7 @@ class SocialProvider extends BaseModel
 
     /** @return array<string, string> */
     #[\Override]
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -259,6 +295,8 @@ class SocialProvider extends BaseModel
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected function casts(): array
     {
         return [

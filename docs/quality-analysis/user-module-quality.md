@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: user-module-quality
@@ -9,6 +12,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/user-module-quality-report.md
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -113,3 +117,5 @@ related:
 See canonical documentation: ../../../../Themes/docs/shared-components/user-module-quality-report.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

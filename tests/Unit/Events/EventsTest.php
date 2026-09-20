@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Mockery\MockInterface;
 =======
@@ -18,6 +19,10 @@ use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Mockery\MockInterface;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Laravel\Socialite\Contracts\User as SocialiteUserContract;
+use Mockery\MockInterface;
+>>>>>>> laraxot/dev
 use Modules\User\Events\Login;
 use Modules\User\Events\Registered;
 use Modules\User\Events\TeamCreated;
@@ -26,6 +31,9 @@ use Modules\User\Events\TwoFactorAuthenticationEnabled;
 use Modules\User\Events\UserNotAllowed;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
@@ -89,6 +97,7 @@ test('UserNotAllowed event can be instantiated', function () {
     $event = new UserNotAllowed($oauthUser);
 
     Assert::assertInstanceOf(UserNotAllowed::class, $event);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -233,4 +242,6 @@ test('UserNotAllowed event can be instantiated', function () {
     Assert::assertInstanceOf(UserNotAllowed::class, $event);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

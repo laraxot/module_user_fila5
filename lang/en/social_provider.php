@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 return [
     'navigation' => [
         'label' => 'Social Providers',
@@ -67,6 +70,7 @@ return [
         'created' => 'Provider created successfully',
         'updated' => 'Provider updated successfully',
         'deleted' => 'Provider deleted successfully',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -191,5 +195,7 @@ return [
         'deleted' => 'Provider deleted successfully',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     ],
 ];

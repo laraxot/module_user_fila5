@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 uses(Modules\User\Tests\TestCase::class);
 
@@ -14,12 +15,17 @@ uses(Modules\User\Tests\TestCase::class);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Enums\LanguageEnum;
 use Modules\User\Enums\SocialProviderEnum;
 use Modules\User\Enums\SystemRole;
 use Modules\User\Enums\UserType;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -53,6 +59,7 @@ test('LanguageEnum enum has expected cases', function (): void {
 });
 
 it('UserType has getLabel method')->todo();
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -167,3 +174,5 @@ test('LanguageEnum enum has expected cases', function (): void {
 it('UserType has getLabel method')->todo();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

@@ -12,6 +12,7 @@ return [
             'description' => 'Der Name, der dieses Team identifiziert',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -20,6 +21,9 @@ return [
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+>>>>>>> laraxot/dev
         ],
         'personal_team' => [
             'label' => 'Persönliches Team',
@@ -27,6 +31,7 @@ return [
             'description' => 'Ein persönliches Team ist einem einzelnen Benutzer zugeordnet',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -35,6 +40,9 @@ return [
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+>>>>>>> laraxot/dev
         ],
         'owner' => [
             'label' => 'Besitzer',
@@ -42,6 +50,7 @@ return [
             'description' => 'Der Benutzer, der dieses Team erstellt und verwaltet',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -50,6 +59,9 @@ return [
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+>>>>>>> laraxot/dev
         ],
         'created_at' => [
             'label' => 'Erstellungsdatum',
@@ -57,6 +69,7 @@ return [
             'description' => 'Datum und Uhrzeit der Team-Erstellung',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -65,6 +78,9 @@ return [
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+>>>>>>> laraxot/dev
         ],
         'updated_at' => [
             'label' => 'Zuletzt geändert',
@@ -72,6 +88,7 @@ return [
             'description' => 'Datum und Uhrzeit der letzten Team-Änderung',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -80,6 +97,9 @@ return [
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+>>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -127,9 +147,12 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -140,9 +163,12 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

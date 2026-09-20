@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Filosofia Laraxot: Il Grande Dibattito Interno - PHPStan Level 10"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Filosofia Laraxot: Il Grande Dibattito Interno - PHPStan Level 10
 
 **Data Creazione**: [DATE]
@@ -193,6 +199,7 @@ Ogni modulo corretto è un traguardo.
 - [PHPStan Corrections Summary](./phpstan-corrections-summary.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [DRY/KISS Principles](../../../../docs/architecture/dry-kiss-principles.md)
 =======
 - [DRY/KISS Principles](../../../docs/architecture/dry-kiss-principles.md)
@@ -203,6 +210,9 @@ Ogni modulo corretto è un traguardo.
 - [DRY/KISS Principles](../../../../docs/architecture/dry-kiss-principles.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [DRY/KISS Principles](../../../../docs/architecture/dry-kiss-principles.md)
+>>>>>>> laraxot/dev
 
 ---
 

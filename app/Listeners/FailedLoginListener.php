@@ -12,6 +12,7 @@ use Illuminate\Auth\Events\Failed;
 use Illuminate\Http\Request;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\BaseUser;
 =======
 use Modules\User\Contracts\HasAuthentications;
@@ -22,6 +23,9 @@ use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Models\BaseUser;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Models\BaseUser;
+>>>>>>> laraxot/dev
 
 // use Rappasoft\LaravelAuthenticationLog\Notifications\FailedLogin;
 // use Rappasoft\LaravelAuthenticationLog\Traits\AuthenticationLoggable;
@@ -32,6 +36,7 @@ class FailedLoginListener
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /**
      * @param Request $request
@@ -44,6 +49,8 @@ class FailedLoginListener
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public function __construct(Request $request)
     {
         $this->request = $request;
@@ -56,6 +63,7 @@ class FailedLoginListener
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ($event->user instanceof BaseUser) {
 =======
         if ($event->user && $event->user instanceof HasAuthentications) {
@@ -66,16 +74,23 @@ class FailedLoginListener
         if ($event->user instanceof BaseUser) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if ($event->user instanceof BaseUser) {
+>>>>>>> laraxot/dev
             $ip = $this->request->ip();
             $userAgent = $this->request->userAgent();
             // $location = optional(geoip()->getLocation($ip))->toArray();
             $location = [];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             $event
 =======
             $log = $event
 >>>>>>> f548be94 (.)
+=======
+            $log = $event
+>>>>>>> laraxot/dev
                 ->user
                 ->authentications()
                 ->create([

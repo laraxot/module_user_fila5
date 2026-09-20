@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Clusters\Appearance\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
@@ -14,6 +17,7 @@ use Filament\Support\Exceptions\Halt;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Clusters\Appearance;
 use Modules\Xot\Filament\Pages\XotBasePage;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -42,12 +46,17 @@ use Modules\User\Filament\Clusters\Appearance;
 use Modules\Xot\Filament\Pages\XotBasePage;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * @property Schema $form
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 class Logo extends XotBasePage
 {
     /** @var array<string, mixed>|null */
@@ -58,6 +67,7 @@ class Logo extends XotBasePage
     protected static ?string $cluster = Appearance::class;
 
     protected static ?int $navigationSort = 1;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -90,6 +100,8 @@ class Logo extends XotBasePage
     protected static ?int $navigationSort = 1;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     public function mount(): void
     {
@@ -105,6 +117,7 @@ class Logo extends XotBasePage
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function schema(Schema $schema): Schema
 =======
     public function form(Schema $schema): Schema
@@ -115,6 +128,9 @@ class Logo extends XotBasePage
     public function schema(Schema $schema): Schema
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function schema(Schema $schema): Schema
+>>>>>>> laraxot/dev
     {
         return $schema
             ->components([
@@ -155,6 +171,7 @@ class Logo extends XotBasePage
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @return array<Action>
      */
@@ -167,6 +184,11 @@ class Logo extends XotBasePage
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return array<Action>
+     */
+>>>>>>> laraxot/dev
     protected function getUpdateLogoFormActions(): array
     {
         return [
@@ -175,7 +197,11 @@ class Logo extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<string, mixed>  $data
+=======
+     * @param array<string, mixed> $data
+>>>>>>> laraxot/dev
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {

@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Resources\RoleResource\RelationManagers;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\TextInput;
 use Filament\Tables;
@@ -15,6 +18,7 @@ use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\Filter;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -48,6 +52,8 @@ use Illuminate\Database\Eloquent\Builder;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * UsersRelationManager.
@@ -61,6 +67,7 @@ final class UsersRelationManager extends XotBaseRelationManager
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected static ?string $inverseRelationship = 'roles';
 =======
     protected static null|string $inverseRelationship = 'roles';
@@ -71,6 +78,9 @@ final class UsersRelationManager extends XotBaseRelationManager
     protected static ?string $inverseRelationship = 'roles';
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    protected static ?string $inverseRelationship = 'roles';
+>>>>>>> laraxot/dev
 
     /**
      * Returns the form schema structure, defining the input fields for user data.
@@ -79,6 +89,7 @@ final class UsersRelationManager extends XotBaseRelationManager
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     #[\Override]
 =======
     #[Override]
@@ -89,6 +100,9 @@ final class UsersRelationManager extends XotBaseRelationManager
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    #[\Override]
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
     {
         return [
@@ -104,6 +118,9 @@ final class UsersRelationManager extends XotBaseRelationManager
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     #[\Override]
     public function getTableColumns(): array
     {
@@ -121,6 +138,7 @@ final class UsersRelationManager extends XotBaseRelationManager
                 ->sortable()
                 ->toggleable(),
             'updated_at' => TextColumn::make('updated_at')
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -164,6 +182,8 @@ final class UsersRelationManager extends XotBaseRelationManager
             'updated_at' => TextColumn::make('updated_at')
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
@@ -177,11 +197,15 @@ final class UsersRelationManager extends XotBaseRelationManager
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     #[\Override]
     public function getTableFilters(): array
     {
         return [
             Filter::make('active')->query(fn (Builder $query): Builder => $query->where('is_active', true))->toggle(),
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -201,6 +225,8 @@ final class UsersRelationManager extends XotBaseRelationManager
             Filter::make('active')->query(fn (Builder $query): Builder => $query->where('is_active', true))->toggle(),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             Filter::make('created_at')
                 ->schema([
                     DatePicker::make('created_from'),
@@ -208,6 +234,9 @@ final class UsersRelationManager extends XotBaseRelationManager
                 ])
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 ->query(function (Builder $query, array $data): Builder {
                     if (isset($data['created_from']) && is_string($data['created_from']) && '' !== $data['created_from']) {
                         $query->whereDate('created_at', '>=', $data['created_from']);
@@ -219,6 +248,7 @@ final class UsersRelationManager extends XotBaseRelationManager
 
                     return $query;
                 })
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -246,6 +276,8 @@ final class UsersRelationManager extends XotBaseRelationManager
                 })
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 ->columns(2),
         ];
     }

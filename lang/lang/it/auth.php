@@ -50,6 +50,7 @@ return [
         ],
         'actions' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
             'reset_password' => ['label' => 'Reset Password'],
             'cancel' => ['label' => 'Cancel'],
 =======
@@ -60,6 +61,10 @@ return [
                 'label' => 'Cancel',
             ],
 >>>>>>> 60a2c9a9 (.)
+=======
+            'reset_password' => ['label' => 'Reset Password'],
+            'cancel' => ['label' => 'Cancel'],
+>>>>>>> laraxot/dev
         ],
         'reset_password' => 'Reset Password',
         'password_reset' => 'Password Reset',
@@ -99,6 +104,7 @@ return [
     'Verify Your Email Address' => 'Verifica la tua email',
     'A fresh verification link has been sent to your email address.' => 'Un nuovo link di verifica è stato inviato al tuo indirizzo email.',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'navigation' => [
         'label' => 'Missing Navigation Label',
@@ -114,4 +120,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

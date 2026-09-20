@@ -22,7 +22,11 @@ it('creates all expected roles', function (): void {
         'guest',
     ];
 
+<<<<<<< HEAD
     $seeder = new RolesSeeder;
+=======
+    $seeder = new RolesSeeder();
+>>>>>>> laraxot/dev
     $seeder->setContainer(app());
     $seeder->run();
 
@@ -35,7 +39,11 @@ it('creates all expected roles', function (): void {
 });
 
 it('is idempotent when run multiple times', function (): void {
+<<<<<<< HEAD
     $seeder = new RolesSeeder;
+=======
+    $seeder = new RolesSeeder();
+>>>>>>> laraxot/dev
     $seeder->setContainer(app());
 
     $seeder->run();

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 uses(Modules\User\Tests\TestCase::class);
 
@@ -14,6 +15,8 @@ uses(Modules\User\Tests\TestCase::class);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\Policies\AuthenticationLogPolicy;
 use Modules\User\Models\Policies\AuthenticationPolicy;
 use Modules\User\Models\Policies\DevicePolicy;
@@ -32,12 +35,16 @@ use Modules\User\Models\Policies\TeamInvitationPolicy;
 use Modules\User\Models\Policies\TeamPermissionPolicy;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 test('OauthClientPolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new OauthClientPolicy;
     Assert::assertInstanceOf(OauthClientPolicy::class, $policy);
 });
@@ -122,10 +129,15 @@ test('NotificationPolicy can be instantiated', function () {
 test('OauthClientPolicy can be instantiated', function () {
     $policy = new OauthClientPolicy();
     expect($policy)->toBeInstanceOf(OauthClientPolicy::class);
+=======
+    $policy = new OauthClientPolicy();
+    Assert::assertInstanceOf(OauthClientPolicy::class, $policy);
+>>>>>>> laraxot/dev
 });
 
 test('OauthAccessTokenPolicy can be instantiated', function () {
     $policy = new OauthAccessTokenPolicy();
+<<<<<<< HEAD
     expect($policy)->toBeInstanceOf(OauthAccessTokenPolicy::class);
 });
 
@@ -213,77 +225,136 @@ test('OauthClientPolicy can be instantiated', function () {
 
 test('OauthAccessTokenPolicy can be instantiated', function () {
     $policy = new OauthAccessTokenPolicy;
+=======
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(OauthAccessTokenPolicy::class, $policy);
 });
 
 test('OauthAuthCodePolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new OauthAuthCodePolicy;
+=======
+    $policy = new OauthAuthCodePolicy();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(OauthAuthCodePolicy::class, $policy);
 });
 
 test('OauthRefreshTokenPolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new OauthRefreshTokenPolicy;
+=======
+    $policy = new OauthRefreshTokenPolicy();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(OauthRefreshTokenPolicy::class, $policy);
 });
 
 test('OauthPersonalAccessClientPolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new OauthPersonalAccessClientPolicy;
+=======
+    $policy = new OauthPersonalAccessClientPolicy();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(OauthPersonalAccessClientPolicy::class, $policy);
 });
 
 test('SocialiteUserPolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new SocialiteUserPolicy;
+=======
+    $policy = new SocialiteUserPolicy();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(SocialiteUserPolicy::class, $policy);
 });
 
 test('SocialProviderPolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new SocialProviderPolicy;
+=======
+    $policy = new SocialProviderPolicy();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(SocialProviderPolicy::class, $policy);
 });
 
 test('AuthenticationLogPolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new AuthenticationLogPolicy;
+=======
+    $policy = new AuthenticationLogPolicy();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(AuthenticationLogPolicy::class, $policy);
 });
 
 test('AuthenticationPolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new AuthenticationPolicy;
+=======
+    $policy = new AuthenticationPolicy();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(AuthenticationPolicy::class, $policy);
 });
 
 test('DevicePolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new DevicePolicy;
+=======
+    $policy = new DevicePolicy();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(DevicePolicy::class, $policy);
 });
 
 test('DeviceProfilePolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new DeviceProfilePolicy;
+=======
+    $policy = new DeviceProfilePolicy();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(DeviceProfilePolicy::class, $policy);
 });
 
 test('TeamInvitationPolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new TeamInvitationPolicy;
+=======
+    $policy = new TeamInvitationPolicy();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(TeamInvitationPolicy::class, $policy);
 });
 
 test('TeamPermissionPolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new TeamPermissionPolicy;
+=======
+    $policy = new TeamPermissionPolicy();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(TeamPermissionPolicy::class, $policy);
 });
 
 test('FeaturePolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new FeaturePolicy;
+=======
+    $policy = new FeaturePolicy();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(FeaturePolicy::class, $policy);
 });
 
 test('ExtraPolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new ExtraPolicy;
+=======
+    $policy = new ExtraPolicy();
+>>>>>>> laraxot/dev
     Assert::assertInstanceOf(ExtraPolicy::class, $policy);
 });
 
 test('NotificationPolicy can be instantiated', function () {
+<<<<<<< HEAD
     $policy = new NotificationPolicy;
     Assert::assertInstanceOf(NotificationPolicy::class, $policy);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    $policy = new NotificationPolicy();
+    Assert::assertInstanceOf(NotificationPolicy::class, $policy);
+>>>>>>> laraxot/dev
 });

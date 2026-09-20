@@ -12,6 +12,7 @@ return [
             'helper_text' => '',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -20,6 +21,9 @@ return [
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+>>>>>>> laraxot/dev
         ],
         'password' => [
             'label' => 'Password',
@@ -29,6 +33,7 @@ return [
             'helper_text' => '',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -37,6 +42,9 @@ return [
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+>>>>>>> laraxot/dev
         ],
         'remember' => [
             'label' => 'Remember me',
@@ -46,6 +54,7 @@ return [
             'helper_text' => '',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -54,6 +63,9 @@ return [
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+>>>>>>> laraxot/dev
         ],
         'name' => [
             'label' => 'Full name',
@@ -61,6 +73,7 @@ return [
             'help' => 'Your complete name for registration',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -73,6 +86,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'password_confirmation' => [
             'label' => 'Confirm password',
@@ -80,6 +98,7 @@ return [
             'help' => 'Repeat the password for confirmation',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -92,12 +111,18 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
         'login' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'label' => 'Login',
 =======
             'label' => 'Sign in',
@@ -108,12 +133,16 @@ return [
             'label' => 'Login',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'label' => 'Login',
+>>>>>>> laraxot/dev
             'success' => 'Successfully logged in',
             'error' => 'Invalid credentials',
         ],
         'register' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'label' => 'Register',
 =======
             'label' => 'Sign up',
@@ -124,6 +153,9 @@ return [
             'label' => 'Register',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'label' => 'Register',
+>>>>>>> laraxot/dev
             'success' => 'Registration completed successfully',
             'error' => 'Unable to complete registration',
         ],
@@ -139,9 +171,12 @@ return [
         ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'showPassword' => [
             'label' => 'showPassword',
             'icon' => 'showPassword',
@@ -153,11 +188,14 @@ return [
             'tooltip' => 'hidePassword',
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     ],
     'messages' => [
         'logout_success' => 'Successfully logged out',
@@ -170,9 +208,12 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'title' => 'Sign in to your account',
     'subtitle_start' => 'Or',
     'subtitle_link' => 'create a new account',
@@ -205,9 +246,12 @@ return [
         'github' => 'Sign in with GitHub',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

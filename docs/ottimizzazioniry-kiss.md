@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Ottimizzazioni DRY + KISS - Modulo User"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Ottimizzazioni DRY + KISS - Modulo User
 
 ## Panoramica del Modulo
@@ -50,6 +56,9 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 ❌ DUPLICAZIONI CRITICHE:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ├── logout-blade-analysis-3.md (14KB)
 ├── logout-blade-conclusions-2.md (4.1KB)
 ├── logout-blade-corrected-analysis-3.md (7.4KB)
@@ -66,6 +75,7 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 ├── logout-page-fix-2.md (1.3KB)
 ├── logout-page-implementation-3.md (3.2KB)
 └── logout-security-2.md (4.1KB)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -107,6 +117,8 @@ Il modulo User è il cuore dell'autenticazione e gestione utenti del sistema PTV
 └── logout-security-2.md (4.1KB)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 PROBLEMA: 16 file per una singola funzionalità!
 CONTENUTO: Stesse informazioni ripetute con variazioni minime
@@ -118,10 +130,14 @@ IMPATTO: -80% efficienza ricerca, +90% confusione sviluppatori
 ❌ DUPLICAZIONI CRITICHE:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ├── userfactory-advanced-implementation-complete-2.md (11KB)
 ├── user-factory-advanced-integration-3.md (9.1KB)
 ├── user-factory-complete-ecosystem-integration-2.md (14KB)
 └── user-factory-integration-2.md (9.8KB)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -139,6 +155,8 @@ IMPATTO: -80% efficienza ricerca, +90% confusione sviluppatori
 └── user-factory-integration-2.md (9.8KB)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 PROBLEMA: Stessa funzionalità documentata 4 volte
 CONTENUTO: Implementazioni simili con variazioni minime
@@ -150,6 +168,7 @@ IMPATTO: -70% manutenibilità, +60% confusione
 ❌ DUPLICAZIONI CRITICHE:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ├── phpstan-fixes-2025-1.md (4.4KB)
 =======
 ├── phpstan_fixes_2025.md (4.4KB)
@@ -160,12 +179,16 @@ IMPATTO: -70% manutenibilità, +60% confusione
 ├── phpstan-fixes-2025-1.md (4.4KB)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+├── phpstan-fixes-2025-1.md (4.4KB)
+>>>>>>> laraxot/dev
 ├── phpstan_generic_types.md (3.1KB)
 ├── phpstan_level10_fixes.md (7.8KB)
 ├── phpstan_level9_fixes.md (1.1KB)
 ├── phpstan.md (1.3KB)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 └── phpstan-fixes-8.md (2.5KB)
 =======
 └── phpstan_fixes.md (2.5KB)
@@ -176,6 +199,9 @@ IMPATTO: -70% manutenibilità, +60% confusione
 └── phpstan-fixes-8.md (2.5KB)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+└── phpstan-fixes-8.md (2.5KB)
+>>>>>>> laraxot/dev
 
 PROBLEMA: Fix PHPStan sparsi in 6 file diversi
 CONTENUTO: Correzioni simili ripetute
@@ -187,6 +213,9 @@ IMPATTO: -60% efficienza correzione, +50% duplicazioni
 ❌ DUPLICAZIONI CRITICHE:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ├── volt-blade-implementation-3.md (9.2KB)
 ├── volt-blade-implementation-error-3.md (3.8KB)
 ├── volt-errors-2.md (5.6KB)
@@ -196,6 +225,7 @@ IMPATTO: -60% efficienza correzione, +50% duplicazioni
 ├── volt-folio-logout-debug-2.md (3.0KB)
 ├── volt-folio-logout-error-3.md (3.7KB)
 └── volt-logout-2.md (5.2KB)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -223,6 +253,8 @@ IMPATTO: -60% efficienza correzione, +50% duplicazioni
 └── volt-logout-2.md (5.2KB)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 PROBLEMA: Implementazioni Volt frammentate e duplicate
 CONTENUTO: Errori e implementazioni simili ripetute
@@ -552,10 +584,14 @@ public function getUsersWithTeams(): Collection
 class UserResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> 2024e2e7 (.)
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             TextInput::make('name')
@@ -599,10 +635,14 @@ class UserFormComponents
 class UserResource extends XotBaseResource
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getFormSchema(): array
 =======
     public function getFormSchema(): array
 >>>>>>> 2024e2e7 (.)
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             UserFormComponents::name(),
@@ -685,10 +725,14 @@ class UserResource extends XotBaseResource
 ## Collegamenti
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Template Standardizzato](../../../docs/template-modulo-standardizzato.md)
 - [Ottimizzazioni Master](../../../docs/ottimizzazioni-modulari-master.md)
 - [Modulo Xot](../xot/docs/ottimizzazioni-dry-kiss.md)
 
+<<<<<<< HEAD
 ---
 =======
 =======
@@ -711,3 +755,6 @@ class UserResource extends XotBaseResource
 ---
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+---
+>>>>>>> laraxot/dev

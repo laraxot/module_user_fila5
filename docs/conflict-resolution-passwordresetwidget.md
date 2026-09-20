@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Risoluzione Conflitti PasswordResetWidget.php"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto
@@ -93,6 +99,7 @@ Verificare che:
 - [Filament Form Components](filament_form_components.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 =======
@@ -109,6 +116,10 @@ Verificare che:
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
+- [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
+>>>>>>> laraxot/dev
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto
@@ -205,6 +216,7 @@ Verificare che:
 - [Filament Form Components](filament_form_components.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
 
 =======
@@ -221,3 +233,7 @@ Verificare che:
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
+
+>>>>>>> laraxot/dev

@@ -19,6 +19,7 @@ class GetLoggedUserController extends XotBaseController
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::notNull($user = $request->user(), PHP_EOL.'['.__LINE__.']'.PHP_EOL.'['.__FILE__.']');
 =======
         Assert::notNull($user = $request->user(), PHP_EOL . '[' . __LINE__ . ']' . PHP_EOL . '[' . __FILE__ . ']');
@@ -29,6 +30,9 @@ class GetLoggedUserController extends XotBaseController
         Assert::notNull($user = $request->user(), PHP_EOL.'['.__LINE__.']'.PHP_EOL.'['.__FILE__.']');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        Assert::notNull($user = $request->user(), PHP_EOL.'['.__LINE__.']'.PHP_EOL.'['.__FILE__.']');
+>>>>>>> laraxot/dev
 
         return JsonResponseData::from([
             'message' => 'logged user',

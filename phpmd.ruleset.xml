@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <ruleset name="Laraxot PHPMD ruleset"
 =======
 <ruleset name="Laravel and similar phpmd ruleset"
@@ -11,6 +12,9 @@
 <ruleset name="Laraxot PHPMD ruleset"
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+<ruleset name="Laraxot PHPMD ruleset"
+>>>>>>> laraxot/dev
     xmlns="http://pmd.sf.net/ruleset/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd"
@@ -18,6 +22,9 @@
   <description>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     Laraxot standard PHPMD ruleset (SSoT).
     Canon: docs/wiki/concepts/phpmd-laraxot-conventions.md
     Copy: Modules/&lt;Module&gt;/phpmd.ruleset.xml (keep in sync).
@@ -41,6 +48,7 @@
           <property name="minimum" value="150"/>
       </properties>
   </rule>
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -83,6 +91,8 @@
   </rule>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
   <rule ref="rulesets/codesize.xml/ExcessiveClassLength"/>
   <rule ref="rulesets/codesize.xml/ExcessiveParameterList"/>
   <rule ref="rulesets/codesize.xml/ExcessivePublicCount"/>
@@ -99,6 +109,7 @@
   </rule>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   <!-- beware the façades yo. -->
 >>>>>>> f548be94 (.)
@@ -107,6 +118,8 @@
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
   <rule ref="rulesets/design.xml/CouplingBetweenObjects">
       <properties>
           <property name="minimum" value="20"/>
@@ -114,6 +127,7 @@
   </rule>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <rule ref="rulesets/naming.xml">
       <exclude name="ShortVariable"/>
       <exclude name="CamelCasePropertyName"/>
@@ -132,6 +146,11 @@
       <exclude name="CamelCasePropertyName"/>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+  <rule ref="rulesets/naming.xml">
+      <exclude name="ShortVariable"/>
+      <exclude name="CamelCasePropertyName"/>
+>>>>>>> laraxot/dev
   </rule>
   <rule ref="rulesets/naming.xml/ShortVariable"
         since="0.2"
@@ -143,11 +162,15 @@
           <property name="minimum" description="Minimum length for a variable, property or parameter name" value="3"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
           <property name="exceptions" value="id,q,w,i,j,v,e,f,fp"/>
       </properties>
   </rule>
   <rule ref="rulesets/unusedcode.xml"/>
 </ruleset>
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -167,3 +190,5 @@
 </ruleset>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

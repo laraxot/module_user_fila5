@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: advanced
@@ -13,6 +16,7 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/advanced.md
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -151,3 +155,5 @@ related:
 See canonical documentation: ../../../../Themes/docs/shared-components/advanced.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

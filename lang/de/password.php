@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f548be94 (.)
@@ -12,6 +13,8 @@ declare(strict_types=1);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 return [
     'navigation' => [
         'name' => 'Password',
@@ -23,6 +26,9 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -83,6 +89,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -174,6 +181,8 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'symbols' => [
             'help' => 'la password richiede almeno un simbolo',
@@ -182,6 +191,7 @@ return [
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -194,6 +204,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'uncompromised' => [
             'help' => 'Se la password non deve essere stata compromessa in data leaks',
@@ -202,6 +217,7 @@ return [
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -214,6 +230,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'compromisedThreshold' => [
             'help' => 'Il numero di volte che una password può apparire in data leaks prima di essere considerata compromessa',
@@ -222,6 +243,7 @@ return [
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -234,6 +256,11 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+>>>>>>> laraxot/dev
         ],
         'new_password' => [
             'label' => 'new_password',
@@ -245,6 +272,7 @@ return [
             'placeholder' => 'new_password',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -253,6 +281,9 @@ return [
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+>>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -275,6 +306,7 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 =======
@@ -285,4 +317,8 @@ return [
     'plural_label' => 'Missing Plural label',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+>>>>>>> laraxot/dev
 ];

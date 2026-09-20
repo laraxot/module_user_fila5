@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Support\Carbon;
@@ -12,6 +15,7 @@ use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 
 use function Safe\json_decode;
+<<<<<<< HEAD
 use Modules\User\Models\User;
 =======
 =======
@@ -22,11 +26,16 @@ use Modules\User\Services\TwoFactorService;
 use Modules\User\Tests\TestCase;
 use PragmaRX\Google2FA\Google2FA;
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /* @var \Modules\User\Tests\TestCase $this */
     /* @var TestCase $this */
     TestCase::skipUnlessUserColumn('users', 'two_factor_secret');
@@ -34,7 +43,11 @@ beforeEach(function (): void {
     TestCase::skipUnlessUserColumn('users', 'two_factor_confirmed_at');
 
     TestCase::$user = TestCase::createTestUser();
+<<<<<<< HEAD
     TestCase::$google2fa = new Google2FA;
+=======
+    TestCase::$google2fa = new Google2FA();
+>>>>>>> laraxot/dev
 });
 
 describe('Two Factor Service', function (): void {
@@ -303,6 +316,7 @@ describe('Two Factor Service', function (): void {
         Assert::assertNotNull($confirmedAt);
         Assert::assertInstanceOf(Carbon::class, Carbon::parse((string) $confirmedAt));
     });
+<<<<<<< HEAD
 =======
     $this->service = new TwoFactorService();
     $this->user = User::factory()->create();
@@ -783,4 +797,6 @@ describe('Two Factor Service', function (): void {
     });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

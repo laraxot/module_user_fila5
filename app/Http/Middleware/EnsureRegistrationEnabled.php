@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\User\Http\Middleware;
 
 =======
@@ -21,6 +22,10 @@ namespace Modules\User\Http\Middleware;
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+namespace Modules\User\Http\Middleware;
+
+>>>>>>> laraxot/dev
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Symfony\Component\HttpFoundation\Response;
@@ -32,6 +37,9 @@ class EnsureRegistrationEnabled
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @param \Closure(Request):Response $next
      */
     public function handle(Request $request, \Closure $next): Response
@@ -39,6 +47,7 @@ class EnsureRegistrationEnabled
         $enabled = Config::boolean('auth.registration_enabled', true);
         // Controlla se la registrazione è disabilitata
         if (! $enabled) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -62,6 +71,8 @@ class EnsureRegistrationEnabled
         if (! $enabled) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             return redirect()->route('pages.view', ['slug' => 'register_disabled']);
         }
 

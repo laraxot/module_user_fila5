@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Schema;
 =======
 >>>>>>> f548be94 (.)
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Schema;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Support\Facades\Schema;
+>>>>>>> laraxot/dev
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 /*
@@ -20,6 +24,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
 =======
@@ -32,6 +37,9 @@ return new class extends XotBaseMigration
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -56,6 +64,7 @@ return new class extends XotBaseMigration
         $this->tableUpdate(function (Blueprint $table): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (! $this->hasColumn('first_name')) {
 =======
             if (!$this->hasColumn('first_name')) {
@@ -66,6 +75,9 @@ return new class extends XotBaseMigration
             if (! $this->hasColumn('first_name')) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            if (! $this->hasColumn('first_name')) {
+>>>>>>> laraxot/dev
                 $table->string('first_name')->after('name')->nullable();
             } else {
                 $table->string('first_name')->nullable()->change();
@@ -73,6 +85,7 @@ return new class extends XotBaseMigration
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (! $this->hasColumn('last_name')) {
 =======
             if (!$this->hasColumn('last_name')) {
@@ -83,6 +96,9 @@ return new class extends XotBaseMigration
             if (! $this->hasColumn('last_name')) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            if (! $this->hasColumn('last_name')) {
+>>>>>>> laraxot/dev
                 $table->string('last_name')->after('name')->nullable();
             } else {
                 $table->string('last_name')->nullable()->change();
@@ -90,6 +106,9 @@ return new class extends XotBaseMigration
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             if (! $this->hasColumn('current_team_id')) {
                 $table->foreignId('current_team_id')->nullable();
             }
@@ -111,6 +130,7 @@ return new class extends XotBaseMigration
             }
 
             if (! $this->hasColumn('password_expires_at')) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -162,13 +182,19 @@ return new class extends XotBaseMigration
             if (! $this->hasColumn('password_expires_at')) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 $table->timestamp('password_expires_at')->nullable();
             }
             if ($this->hasColumn('password')) {
                 $table->string('password')->nullable()->change();
             }
 
+<<<<<<< HEAD
             if ($this->getColumnType('id') === 'uuid') {
+=======
+            if ('uuid' === $this->getColumnType('id')) {
+>>>>>>> laraxot/dev
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);

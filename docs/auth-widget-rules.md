@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Regole per Widget di Autenticazione"
 type: rule
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Regole per Widget di Autenticazione
 
 ## ERRORE CRITICO DA NON RIPETERE MAI
@@ -175,6 +181,7 @@ tests/Feature/Filament/Widgets/
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Widget Structure](widgets-structure-2.md)
 =======
 - [Widget Structure](widgets_structure.md)
@@ -185,6 +192,9 @@ tests/Feature/Filament/Widgets/
 - [Widget Structure](widgets-structure-2.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Widget Structure](widgets-structure-2.md)
+>>>>>>> laraxot/dev
 - [Filament Best Practices](filament_best_practices.md)
 - [Authentication Architecture](authentication.md)
 - [Security Guidelines](security_guidelines.md)

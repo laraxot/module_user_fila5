@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Collection;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Contracts\TeamContract;
@@ -22,7 +25,11 @@ use function Safe\json_encode;
 uses(TestCase::class);
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function pestHasTeamsCreateTestUser(array $attributes = []): User
 {
@@ -52,7 +59,11 @@ function pestHasTeamsBootstrapFixture(): array
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $pivot
+=======
+ * @param array<string, mixed> $pivot
+>>>>>>> laraxot/dev
  */
 function pestHasTeamsAttachMember(Team $team, User $user, array $pivot = []): void
 {
@@ -235,6 +246,7 @@ test('it correctly manages team permissions', function (): void {
 
 test('it handles edge cases', function (): void {
     ['user' => $user] = pestHasTeamsBootstrapFixture();
+<<<<<<< HEAD
     $newUser = new User;
 
     Assert::assertFalse($newUser->belongsToTeams());
@@ -679,6 +691,9 @@ test('it correctly manages team permissions', function (): void {
 test('it handles edge cases', function (): void {
     ['user' => $user] = pestHasTeamsBootstrapFixture();
     $newUser = new User;
+=======
+    $newUser = new User();
+>>>>>>> laraxot/dev
 
     Assert::assertFalse($newUser->belongsToTeams());
 
@@ -687,6 +702,9 @@ test('it handles edge cases', function (): void {
 
     $nonExistentTeam = new Team(['id' => 9999]);
     Assert::assertFalse($user->belongsToTeam($nonExistentTeam));
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

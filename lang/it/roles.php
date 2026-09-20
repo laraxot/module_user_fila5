@@ -6,6 +6,9 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'id' => ['label' => 'id', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'name' => ['label' => 'name', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'team_id' => ['label' => 'team_id', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -27,6 +30,7 @@ return [
     'plural_label' => 'Roles (Plurale)',
     'actions' => [
         'create' => ['label' => 'Crea Roles', 'icon' => 'create', 'tooltip' => 'create'],
+<<<<<<< HEAD
         'edit' => ['label' => 'Modifica Roles'],
         'delete' => ['label' => 'Elimina Roles'],
 =======
@@ -70,5 +74,11 @@ return [
         'delete' => ['label' => 'Elimina Roles'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'edit' => ['label' => 'Modifica Roles', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'delete' => ['label' => 'Elimina Roles', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+>>>>>>> laraxot/dev
     ],
 ];

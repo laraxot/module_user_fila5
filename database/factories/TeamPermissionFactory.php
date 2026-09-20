@@ -7,6 +7,7 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\TeamPermission;
 
 /**
@@ -28,12 +29,20 @@ use Modules\User\Models\TeamPermission;
 /**
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Models\TeamPermission;
+
+/**
+>>>>>>> laraxot/dev
  * @extends Factory<TeamPermission>
  */
 class TeamPermissionFactory extends Factory
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * The name of the factory's corresponding model.
      */
@@ -48,6 +57,7 @@ class TeamPermissionFactory extends Factory
     public function definition(): array
     {
         return [];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -100,5 +110,7 @@ class TeamPermissionFactory extends Factory
         return [];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

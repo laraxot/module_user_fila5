@@ -13,10 +13,14 @@ class PermissionColumnNamesData extends Data
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public ?string $role_pivot_key = null;
 
     // => null, // default 'role_id',
     public ?string $permission_pivot_key = null;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -34,6 +38,8 @@ class PermissionColumnNamesData extends Data
     public ?string $permission_pivot_key = null;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     // => null, // default 'permission_id',
     public string $model_morph_key;

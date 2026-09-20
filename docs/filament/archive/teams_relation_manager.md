@@ -185,6 +185,9 @@ public function getTableActions(): array
 - [Regole di Traduzione per Filament](/laravel/modules/xot/docs/translation_rules.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 3 Giugno 2025*
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev

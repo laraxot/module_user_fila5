@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Gestione delle Sessioni"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Gestione delle Sessioni
 
 ## Panoramica
@@ -100,6 +106,9 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 ## Collegamenti a Documentazione Correlata
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Indice del Modulo Utente](./index.md)
 - [Modello BaseUser](./baseuser.md)
 - [Implementazione delle Pagine di Autenticazione](./auth-pages-implementation.md)
@@ -115,6 +124,7 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Best Practices per il Routing](./routing-best-practices.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Documentazione Volt](./volt-blade-implementation.md)
+<<<<<<< HEAD
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 =======
 =======
@@ -149,3 +159,6 @@ Questo documento fornisce linee guida per la gestione delle sessioni utente all'
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Tema One Documentation](../../Themes/One/docs/README.md) 
+>>>>>>> laraxot/dev

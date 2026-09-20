@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\DB;
 use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\RoleFactory;
@@ -15,7 +18,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function createTestPermission(array $attributes = []): Permission
 {
@@ -26,7 +33,11 @@ function createTestPermission(array $attributes = []): Permission
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function createTestRoleForPermission(array $attributes = []): Role
 {
@@ -260,6 +271,7 @@ test('permission handles null metadata values', function (): void {
 
     Assert::assertNull($permission->created_by);
     Assert::assertNull($permission->updated_by);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -717,4 +729,6 @@ test('permission handles null metadata values', function (): void {
     Assert::assertNull($permission->updated_by);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

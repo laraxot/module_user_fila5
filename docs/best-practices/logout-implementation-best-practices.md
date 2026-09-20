@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Best Practices per l'Implementazione del Logout"
 type: concept
@@ -28,6 +31,7 @@ related:
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 - [README modulo User](./readme.md)
 - [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -70,6 +74,8 @@ related:
 - [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
@@ -306,6 +312,7 @@ $this->redirect(LaravelLocalization::getLocalizedURL($locale, route('home')));
 - [Documentazione Livewire Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
 =======
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
@@ -314,3 +321,6 @@ $this->redirect(LaravelLocalization::getLocalizedURL($locale, route('home')));
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
+>>>>>>> laraxot/dev

@@ -6,6 +6,9 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Notifications\DatabaseNotificationCollection;
@@ -13,6 +16,7 @@ use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -38,10 +42,13 @@ use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * Class Modules\User\Models\User.
  *
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property string                                            $id
@@ -229,6 +236,8 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  * @property string                                            $id
  * @property string|null                                       $name
  * @property string|null                                       $first_name
@@ -321,8 +330,11 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property string|null                    $certifications
  * @property string|null                    $type
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @method static Builder<static>|User whereAddress($value)
  * @method static Builder<static>|User whereCertifications($value)
  * @method static Builder<static>|User whereCity($value)
@@ -334,6 +346,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|User whereState($value)
  * @method static Builder<static>|User whereStatus($value)
  * @method static Builder<static>|User whereType($value)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property string|null $facebook_id
@@ -366,6 +379,8 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 =======
  * @mixin IdeHelperUser
 =======
+=======
+>>>>>>> laraxot/dev
  *
  * @property string|null $facebook_id
  *
@@ -399,12 +414,16 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|User team($teams, bool $without = false)
  * @method static Builder<static>|User withoutTeam($teams)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class User extends BaseUser
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     /** @var array<string, class-string> */
@@ -444,6 +463,13 @@ class User extends BaseUser
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /** @var array<string, class-string> */
+    protected $childTypes = [
+    ];
+
+    #[\Override]
+>>>>>>> laraxot/dev
     public function canAccessSocialite(): bool
     {
         // return $this->role_id === Role::ROLE_ADMINISTRATOR;

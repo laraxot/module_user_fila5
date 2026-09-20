@@ -6,6 +6,7 @@ namespace Modules\User\Contracts;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Override;
 use Modules\User\Contracts\TeamContract;
@@ -16,6 +17,8 @@ use Modules\User\Contracts\TeamContract;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
@@ -23,6 +26,7 @@ use Modules\Xot\Contracts\UserContract;
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Interfaccia che combina le funzionalità di HasTeamsContract e UserContract.
 =======
  * Interfaccia che combina le funzionalità di HasTeamsContract e UserContract
@@ -33,12 +37,18 @@ use Modules\Xot\Contracts\UserContract;
  * Interfaccia che combina le funzionalità di HasTeamsContract e UserContract.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ * Interfaccia che combina le funzionalità di HasTeamsContract e UserContract.
+>>>>>>> laraxot/dev
  */
 interface HasTeamsAndUserContract extends HasTeamsContract, UserContract
 {
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * Ottiene il ruolo dell'utente nel team.
      */
     #[\Override]
@@ -46,6 +56,7 @@ interface HasTeamsAndUserContract extends HasTeamsContract, UserContract
 
     /**
      * Verifica se l'utente può rimuovere un membro dal team.
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -69,10 +80,13 @@ interface HasTeamsAndUserContract extends HasTeamsContract, UserContract
      * Verifica se l'utente può rimuovere un membro dal team.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     public function canRemoveTeamMember(Team $team, HasTeamsContract $user): bool;
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      * Verifica se l'utente può aggiornare un membro del team.
@@ -85,6 +99,9 @@ interface HasTeamsAndUserContract extends HasTeamsContract, UserContract
      * Verifica se l'utente può aggiornare un membro del team.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * Verifica se l'utente può aggiornare un membro del team.
+>>>>>>> laraxot/dev
      */
     public function canUpdateTeamMember(Team $team, HasTeamsContract $user): bool;
 }

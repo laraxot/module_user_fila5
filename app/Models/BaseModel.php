@@ -6,6 +6,7 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Models\XotBaseModel;
 =======
 =======
@@ -23,17 +24,24 @@ use Modules\Xot\Traits\Updater;
 use Modules\Xot\Models\XotBaseModel;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\Xot\Models\XotBaseModel;
+>>>>>>> laraxot/dev
 
 /**
  * Class BaseModel.
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 abstract class BaseModel extends XotBaseModel
 {
     /** @var string */
     protected $connection = 'user';
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -100,10 +108,13 @@ abstract class BaseModel extends XotBaseModel
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     /** @return array<string, string> */
     protected function casts(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             // 'id' => 'string',
@@ -116,6 +127,9 @@ abstract class BaseModel extends XotBaseModel
             // 'id' => 'string',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            // 'id' => 'string',
+>>>>>>> laraxot/dev
             'uuid' => 'string',
             'published_at' => 'datetime',
             'verified_at' => 'datetime',

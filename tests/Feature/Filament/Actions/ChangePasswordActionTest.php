@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature\Filament\Actions;
 
 use Filament\Actions\Action;
@@ -12,6 +15,7 @@ use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -34,12 +38,17 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\file_get_contents;
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /* @var TestCase $this */
     $this->setupFilamentAdminPanel();
 
@@ -121,6 +130,7 @@ describe('Change Password Action', function (): void {
         Assert::assertTrue($reflection->hasMethod('setUp'));
         Assert::assertTrue($reflection->getMethod('setUp')->isProtected());
     });
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -290,4 +300,6 @@ describe('Change Password Action', function (): void {
     });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

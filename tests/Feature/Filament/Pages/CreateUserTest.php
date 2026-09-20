@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature\Filament\Pages;
 
 use Filament\Facades\Filament;
@@ -16,6 +19,7 @@ use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -40,12 +44,17 @@ use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 use PHPUnit\Framework\Assert;
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /* @var TestCase $this */
     try {
         $panel = Filament::getPanel('user::admin');
@@ -56,7 +65,11 @@ beforeEach(function (): void {
     }
     Filament::setCurrentPanel($panel);
 
+<<<<<<< HEAD
     TestCase::$createUserPage = new CreateUser;
+=======
+    TestCase::$createUserPage = new CreateUser();
+>>>>>>> laraxot/dev
 });
 
 describe('Create User', function (): void {
@@ -148,6 +161,7 @@ describe('Create User', function (): void {
         Assert::assertSame(UserResource::class, $createUserPage->getResource());
         Assert::assertSame(XotData::make()->getUserClass(), $createUserPage->getModel());
     });
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -356,4 +370,6 @@ describe('Create User', function (): void {
     });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

@@ -10,6 +10,7 @@ use Illuminate\Auth\Events\Logout;
 use Illuminate\Auth\Events\OtherDeviceLogout;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 >>>>>>> f548be94 (.)
@@ -18,6 +19,8 @@ use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvi
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Listeners\FailedLoginListener;
 use Modules\User\Listeners\LoginListener;
 use Modules\User\Listeners\LogoutListener;
@@ -31,11 +34,15 @@ class EventServiceProvider extends XotBaseEventServiceProvider
     public string $name = 'User';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     public string $nameLower = 'user';
 
     protected string $module_dir = __DIR__;
 
+<<<<<<< HEAD
 =======
     public string $nameLower = 'user';
     protected string $module_dir = __DIR__;
@@ -51,6 +58,8 @@ class EventServiceProvider extends XotBaseEventServiceProvider
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected string $module_ns = __NAMESPACE__;
 
     /**
@@ -78,6 +87,7 @@ class EventServiceProvider extends XotBaseEventServiceProvider
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @var array<int, class-string>
      */
@@ -90,6 +100,11 @@ class EventServiceProvider extends XotBaseEventServiceProvider
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @var array<int, class-string>
+     */
+>>>>>>> laraxot/dev
     protected $subscribe = [
         // Aggiungi qui i subscriber specifici del modulo
     ];

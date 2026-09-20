@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Widget Translation Guidelines"
 type: concept
@@ -20,11 +23,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Widget Translation Guidelines
 
 ## Overview
@@ -174,6 +180,7 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 ## Related Documentation
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Widget Structure](../widgets-structure-2.md)
 =======
 - [User Module Widget Structure](../widgets_structure.md)
@@ -184,6 +191,9 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 - [User Module Widget Structure](../widgets-structure-2.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [User Module Widget Structure](../widgets-structure-2.md)
+>>>>>>> laraxot/dev
 - [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 - [Translation System Overview](../../xot/docs/translations.md)
 - [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)

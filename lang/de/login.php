@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f548be94 (.)
@@ -12,6 +13,8 @@ declare(strict_types=1);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 return [
     'fields' => [
         'email' => [
@@ -21,6 +24,7 @@ return [
             'placeholder' => 'email',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -29,6 +33,9 @@ return [
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+>>>>>>> laraxot/dev
         ],
         'password' => [
             'label' => 'password',
@@ -37,6 +44,7 @@ return [
             'placeholder' => 'password',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -45,12 +53,16 @@ return [
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+>>>>>>> laraxot/dev
         ],
         'remember' => [
             'label' => 'remember',
             'description' => 'remember',
             'helper_text' => '',
             'placeholder' => 'remember',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => '',
@@ -64,6 +76,11 @@ return [
         ],
     ],
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+        ],
+    ],
+>>>>>>> laraxot/dev
     'actions' => [
         'login' => [
             'label' => 'Anmelden',
@@ -104,6 +121,7 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         ],
     ],
@@ -111,4 +129,6 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

@@ -7,6 +7,7 @@ namespace Modules\User\Filament\Pages\Auth;
 use Filament\Pages\Concerns\HasRoutes;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Pages\Auth\XotBaseLogin;
 
 class Login extends XotBaseLogin
@@ -23,6 +24,11 @@ use Modules\Xot\Filament\Pages\Auth\XotBaseLogin;
 class Login extends XotBaseLogin
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\Xot\Filament\Pages\Auth\XotBaseLogin;
+
+class Login extends XotBaseLogin
+>>>>>>> laraxot/dev
 {
     use HasRoutes;
 

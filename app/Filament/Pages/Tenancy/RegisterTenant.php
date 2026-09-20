@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Pages\Tenancy;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Illuminate\Database\Eloquent\Model;
@@ -25,6 +28,7 @@ class RegisterTenant extends XotBaseRegisterTenant
      * @var class-string|null
      */
     private ?string $resourceClass = null;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -69,6 +73,8 @@ class RegisterTenant extends XotBaseRegisterTenant
     private ?string $resourceClass = null;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     public static function getLabel(): string
     {
@@ -79,6 +85,9 @@ class RegisterTenant extends XotBaseRegisterTenant
         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $key = Str::of(class_basename(self::class))
             ->snake()
             ->prepend('actions.')
@@ -115,6 +124,7 @@ class RegisterTenant extends XotBaseRegisterTenant
     }
 
     /**
+<<<<<<< HEAD
      * @param  array<string, string|int|bool|null>  $data
 =======
 =======
@@ -190,6 +200,9 @@ class RegisterTenant extends XotBaseRegisterTenant
      * @param  array<string, string|int|bool|null>  $data
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @param array<string, string|int|bool|null> $data
+>>>>>>> laraxot/dev
      */
     protected function handleRegistration(array $data): Model
     {
@@ -199,6 +212,9 @@ class RegisterTenant extends XotBaseRegisterTenant
         Assert::implementsInterface($tenant, TenantContract::class);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         Assert::isInstanceOf($tenant, BaseTenant::class);
 
         return $tenant;
@@ -209,7 +225,11 @@ class RegisterTenant extends XotBaseRegisterTenant
      */
     private function resolveResourceClass(): string
     {
+<<<<<<< HEAD
         if ($this->resourceClass !== null) {
+=======
+        if (null !== $this->resourceClass) {
+>>>>>>> laraxot/dev
             return $this->resourceClass;
         }
 
@@ -227,6 +247,7 @@ class RegisterTenant extends XotBaseRegisterTenant
 
         return $resolved;
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -269,4 +290,6 @@ class RegisterTenant extends XotBaseRegisterTenant
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

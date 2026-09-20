@@ -10,6 +10,9 @@ namespace Modules\User\Listeners;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -17,6 +20,7 @@ use Modules\User\Actions\Authentication\GetAuthenticationLogQueryForAuthenticata
 use Modules\User\Actions\GetCurrentDeviceAction;
 use Modules\User\Models\BaseUser;
 use Modules\User\Models\DeviceUser;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -42,6 +46,8 @@ use Modules\User\Models\BaseUser;
 use Modules\User\Models\DeviceUser;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 class LogoutListener
 {
@@ -66,6 +72,7 @@ class LogoutListener
             // Verifica se l'utente esiste prima di procedere
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (! $event->user) {
                 Log::warning('Tentativo di logout per un utente non autenticato');
 
@@ -82,6 +89,11 @@ class LogoutListener
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            if (! $event->user) {
+                Log::warning('Tentativo di logout per un utente non autenticato');
+
+>>>>>>> laraxot/dev
                 return;
             }
 
@@ -97,6 +109,7 @@ class LogoutListener
                     $pivot->update(['logout_at' => now()]);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 } catch (\Exception $e) {
 =======
                 } catch (Exception $e) {
@@ -107,6 +120,9 @@ class LogoutListener
                 } catch (\Exception $e) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                } catch (\Exception $e) {
+>>>>>>> laraxot/dev
                     Log::error('Errore durante l\'aggiornamento del pivot device-user', [
                         'error' => $e->getMessage(),
                         'user_id' => $event->user->getAuthIdentifier(),
@@ -118,6 +134,7 @@ class LogoutListener
             // Gestione delle autenticazioni
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ($event->user instanceof BaseUser) {
 =======
             if ($event->user instanceof HasAuthentications) {
@@ -128,6 +145,9 @@ class LogoutListener
             if ($event->user instanceof BaseUser) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            if ($event->user instanceof BaseUser) {
+>>>>>>> laraxot/dev
                 try {
                     $event
                         ->user
@@ -139,6 +159,7 @@ class LogoutListener
                         ]);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 } catch (\Exception $e) {
 =======
                 } catch (Exception $e) {
@@ -149,6 +170,9 @@ class LogoutListener
                 } catch (\Exception $e) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                } catch (\Exception $e) {
+>>>>>>> laraxot/dev
                     Log::error('Errore durante la creazione del log di autenticazione', [
                         'error' => $e->getMessage(),
                         'user_id' => $event->user->getAuthIdentifier(),
@@ -159,6 +183,7 @@ class LogoutListener
             // Log dell'evento
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             Log::debug('Logout effettuato', [
 =======
             Log::info('Logout effettuato', [
@@ -169,12 +194,16 @@ class LogoutListener
             Log::debug('Logout effettuato', [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            Log::debug('Logout effettuato', [
+>>>>>>> laraxot/dev
                 'user_id' => $event->user->getAuthIdentifier(),
                 'device_id' => $device->id,
                 'timestamp' => now(),
             ]);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         } catch (\Exception $e) {
 =======
         } catch (Exception $e) {
@@ -185,6 +214,9 @@ class LogoutListener
         } catch (\Exception $e) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        } catch (\Exception $e) {
+>>>>>>> laraxot/dev
             Log::error('Errore durante il logout', [
                 'error' => $e->getMessage(),
                 'trace' => $e->getTraceAsString(),
@@ -198,6 +230,7 @@ class LogoutListener
      */
     public function forgetRememberTokens(Logout $event): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if ($event->user instanceof BaseUser) {
@@ -220,10 +253,16 @@ class LogoutListener
                 app(GetAuthenticationLogQueryForAuthenticatableAction::class)->execute($event->user)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if ($event->user instanceof BaseUser) {
+            try {
+                app(GetAuthenticationLogQueryForAuthenticatableAction::class)->execute($event->user)
+>>>>>>> laraxot/dev
                     ->whereNotNull('remember_token')
                     ->update([
                         'remember_token' => null,
                     ]);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             } catch (\Exception $e) {
@@ -236,6 +275,9 @@ class LogoutListener
             } catch (\Exception $e) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            } catch (\Exception $e) {
+>>>>>>> laraxot/dev
                 Log::error('Errore durante la rimozione dei remember tokens', [
                     'error' => $e->getMessage(),
                     'user_id' => $event->user->getAuthIdentifier(),

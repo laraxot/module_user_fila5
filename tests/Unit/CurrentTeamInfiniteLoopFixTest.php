@@ -5,6 +5,9 @@ declare(strict_types=1);
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
@@ -14,7 +17,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function currentTeamFixCreateUser(array $attributes = []): User
 {
@@ -25,7 +32,11 @@ function currentTeamFixCreateUser(array $attributes = []): User
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> laraxot/dev
  */
 function currentTeamFixCreateTeam(User $user, array $attributes = []): Team
 {
@@ -74,6 +85,7 @@ test('current team getter does not trigger save operations', function () {
 test('initialize current team sets personal team correctly', function () {
     $user = currentTeamFixCreateUser(['current_team_id' => null]);
     $personalTeam = currentTeamFixCreateTeam($user, [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -232,12 +244,17 @@ test('initialize current team sets personal team correctly', function () {
     $personalTeam = currentTeamFixCreateTeam($user, [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'name' => 'Personal Team',
         'personal_team' => true,
     ]);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     $user->initializeCurrentTeam();
     $user->refresh();
 
@@ -261,6 +278,7 @@ test('initialize current team does not override existing current team id', funct
 test('initialize current team sets first available team if no personal team', function () {
     $user = currentTeamFixCreateUser(['current_team_id' => null]);
     $team = currentTeamFixCreateTeam($user, [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -341,12 +359,17 @@ test('initialize current team sets first available team if no personal team', fu
     $team = currentTeamFixCreateTeam($user, [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'name' => 'Regular Team',
         'personal_team' => false,
     ]);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     $user->initializeCurrentTeam();
     $user->refresh();
 
@@ -402,6 +425,7 @@ test('user creation does not trigger infinite loop', function () {
 test('multiple users can be created without issues', function () {
     $users = [];
 
+<<<<<<< HEAD
     for ($i = 1; $i <= 5; $i++) {
         $users[] = currentTeamFixCreateUser([
             'name' => "User {$i}",
@@ -595,6 +619,9 @@ test('multiple users can be created without issues', function () {
     $users = [];
 
     for ($i = 1; $i <= 5; $i++) {
+=======
+    for ($i = 1; $i <= 5; ++$i) {
+>>>>>>> laraxot/dev
         $users[] = currentTeamFixCreateUser([
             'name' => "User {$i}",
             'email' => "user-{$i}-".uniqid('', true).'@example.com',
@@ -608,7 +635,10 @@ test('multiple users can be created without issues', function () {
         Assert::assertNotNull($user->id);
         Assert::assertNull($user->currentTeam);
         Assert::assertInstanceOf(BelongsTo::class, $user->currentTeam());
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 });

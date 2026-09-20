@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Final Summary - User Module Passport Integration & Architecture Refactoring"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Final Summary - User Module Passport Integration & Architecture Refactoring
 
 > **Date**: [DATE]
@@ -310,6 +316,7 @@ public function getHeaderActions(): array
 ### Internal Documentation
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Passport Integration](./passport-integration.md)
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
@@ -328,6 +335,11 @@ public function getHeaderActions(): array
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Passport Integration](./passport-integration.md)
+- [Service Provider Architecture](./service-provider-architecture.md)
+- [Filosofia Modulo User](./filosofia-modulo-user.md)
+>>>>>>> laraxot/dev
 - [README](./readme.md)
 
 ### External Documentation

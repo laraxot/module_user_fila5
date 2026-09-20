@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature;
 
 use Filament\Facades\Filament;
@@ -14,10 +17,17 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Pages\MyProfilePage;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Tests\TestCase;
+<<<<<<< HEAD
 use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\actingAs;
 use Modules\User\Models\User;
+=======
+
+use function Pest\Laravel\actingAs;
+
+use PHPUnit\Framework\Assert;
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 
@@ -66,7 +76,11 @@ describe('Change Profile Password', function (): void {
             ])
             ->call('updatePassword');
 
+<<<<<<< HEAD
         $testable->assertHasErrors();
+=======
+        $testable->assertHasErrors(['passwordData.current_password']);
+>>>>>>> laraxot/dev
 
         $errors = $testable->errors();
         Assert::assertIsArray($errors);
@@ -80,6 +94,7 @@ describe('Change Profile Password', function (): void {
         Assert::assertTrue($hasCurrentPasswordError);
         Assert::assertTrue(Hash::check('old_password', (string) $user->fresh()?->password));
     });
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -248,4 +263,6 @@ describe('Change Profile Password', function (): void {
     });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

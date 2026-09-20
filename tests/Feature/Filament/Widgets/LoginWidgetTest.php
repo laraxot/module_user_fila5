@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature\Filament\Widgets;
 
 use Illuminate\Support\Facades\Hash;
@@ -12,6 +15,7 @@ use Modules\User\Filament\Widgets\LoginWidget;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -38,10 +42,13 @@ use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     /* @var TestCase $this */
@@ -200,6 +207,15 @@ test('it requires email and password', function (): void {
 describe('Login Widget', function (): void {
     test('it can render widget', function (): void {
         $widget = new LoginWidget;
+=======
+    /* @var TestCase $this */
+    $this->widget = new LoginWidget();
+});
+
+describe('Login Widget', function (): void {
+    test('it can render widget', function (): void {
+        $widget = new LoginWidget();
+>>>>>>> laraxot/dev
 
         $reflection = new \ReflectionClass($widget);
         $property = $reflection->getProperty('view');
@@ -253,6 +269,9 @@ describe('Login Widget', function (): void {
 
         $this->assertAuthenticatedAs($user);
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

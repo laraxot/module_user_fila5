@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Laravel\Passport\Token;
 =======
 >>>>>>> f548be94 (.)
@@ -24,6 +25,9 @@ use Laravel\Passport\Token;
 use Laravel\Passport\Token;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Laravel\Passport\Token;
+>>>>>>> laraxot/dev
 use Modules\User\Models\Role;
 
 /**
@@ -31,6 +35,9 @@ use Modules\User\Models\Role;
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * @property int                    $id
  * @property string                 $name
  * @property string                 $two_factor_secret
@@ -38,6 +45,7 @@ use Modules\User\Models\Role;
  * @property Collection<int, Token> $tokens
  * @property Carbon|null            $two_factor_confirmed_at
  * @property int                    $current_team_id
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -61,6 +69,8 @@ use Modules\User\Models\Role;
  * @property int                    $current_team_id
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  *
  * @phpstan-require-extends Model
  *
@@ -68,6 +78,7 @@ use Modules\User\Models\Role;
  */
 interface HasTeamsContract
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -87,6 +98,8 @@ interface HasTeamsContract
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     /**
      * Determine if the given team is the current team.
      */
@@ -94,6 +107,7 @@ interface HasTeamsContract
 
     /**
      * Get the current team of the user's context.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      *
@@ -106,6 +120,10 @@ interface HasTeamsContract
      * @return BelongsTo<Model, Model>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+     * @return BelongsTo<Model, Model>
+>>>>>>> laraxot/dev
      */
     public function currentTeam(): BelongsTo;
 
@@ -118,6 +136,7 @@ interface HasTeamsContract
      * Get all of the teams the user owns or belongs to.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return \Illuminate\Support\Collection<int, Model>
 =======
@@ -128,6 +147,10 @@ interface HasTeamsContract
      * @return \Illuminate\Support\Collection<int, Model>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+     * @return \Illuminate\Support\Collection<int, Model>
+>>>>>>> laraxot/dev
      */
     public function allTeams(): \Illuminate\Support\Collection;
 
@@ -135,6 +158,7 @@ interface HasTeamsContract
      * Get all of the teams the user owns.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return HasMany<Model, Model>
 =======
@@ -145,6 +169,10 @@ interface HasTeamsContract
      * @return HasMany<Model, Model>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+     * @return HasMany<Model, Model>
+>>>>>>> laraxot/dev
      */
     public function ownedTeams(): HasMany;
 
@@ -152,6 +180,7 @@ interface HasTeamsContract
      * Get all of the teams the user belongs to.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return BelongsToMany<Model, Model>
 =======
@@ -162,6 +191,10 @@ interface HasTeamsContract
      * @return BelongsToMany<Model, Model>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+     * @return BelongsToMany<Model, Model>
+>>>>>>> laraxot/dev
      */
     public function teams(): BelongsToMany;
 
@@ -170,6 +203,7 @@ interface HasTeamsContract
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function personalTeam(): ?TeamContract;
 =======
     public function personalTeam(): null|TeamContract;
@@ -180,6 +214,9 @@ interface HasTeamsContract
     public function personalTeam(): ?TeamContract;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function personalTeam(): ?TeamContract;
+>>>>>>> laraxot/dev
 
     /**
      * Determine if the user owns the given team.
@@ -196,6 +233,7 @@ interface HasTeamsContract
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public function teamRole(TeamContract $teamContract): ?Role;
 =======
     public function teamRole(TeamContract $teamContract): null|Role;
@@ -206,6 +244,9 @@ interface HasTeamsContract
     public function teamRole(TeamContract $teamContract): ?Role;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public function teamRole(TeamContract $teamContract): ?Role;
+>>>>>>> laraxot/dev
 
     /**
      * Determine if the user has the given role on the given team.
@@ -216,6 +257,7 @@ interface HasTeamsContract
      * Get the user's permissions for the given team.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      *
      * @return array<string>
 =======
@@ -226,6 +268,10 @@ interface HasTeamsContract
      * @return array<string>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     *
+     * @return array<string>
+>>>>>>> laraxot/dev
      */
     public function teamPermissions(TeamContract $teamContract): array;
 

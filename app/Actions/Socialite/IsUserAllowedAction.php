@@ -10,6 +10,7 @@ namespace Modules\User\Actions\Socialite;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 // use DutchCodingCompany\FilamentSocialite\FilamentSocialite;
 >>>>>>> f548be94 (.)
@@ -18,6 +19,8 @@ namespace Modules\User\Actions\Socialite;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Str;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Spatie\QueueableAction\QueueableAction;
@@ -41,6 +44,7 @@ class IsUserAllowedAction
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::notNull($user->getEmail(), '['.__FILE__.']['.__LINE__.']');
 =======
         Assert::notNull($user->getEmail(), '[' . __FILE__ . '][' . __LINE__ . ']');
@@ -51,6 +55,9 @@ class IsUserAllowedAction
         Assert::notNull($user->getEmail(), '['.__FILE__.']['.__LINE__.']');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        Assert::notNull($user->getEmail(), '['.__FILE__.']['.__LINE__.']');
+>>>>>>> laraxot/dev
         // Get the domain of the email for the specified user
         $emailDomain = Str::of($user->getEmail())
             ->afterLast('@')

@@ -6,6 +6,9 @@ namespace Modules\User\Models;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -14,6 +17,7 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -44,10 +48,13 @@ use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Spatie\Permission\Models\Permission as SpatiePermission;
 use Webmozart\Assert\Assert;
 
 /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
  * @property int                         $id
@@ -128,6 +135,8 @@ use Webmozart\Assert\Assert;
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
  * @property int                         $id
  * @property string                      $name
  * @property string                      $guard_name
@@ -171,14 +180,20 @@ use Webmozart\Assert\Assert;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission team($teams, bool $without = false)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission withoutTeam($teams)
  *
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class Permission extends SpatiePermission
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     use HasXotFactory;
 
     use RelationX;
@@ -186,6 +201,7 @@ class Permission extends SpatiePermission
 
     protected $connection = 'user';
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -235,6 +251,8 @@ class Permission extends SpatiePermission
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public function getTable(): string
     {
         Assert::string($table = config('permission.table_names.permissions'));
@@ -244,6 +262,9 @@ class Permission extends SpatiePermission
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /** @var list<string> */
     protected $fillable = [
         'name',
@@ -253,6 +274,7 @@ class Permission extends SpatiePermission
         'created_by',
         'updated_by',
     ];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -299,4 +321,6 @@ class Permission extends SpatiePermission
     ];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

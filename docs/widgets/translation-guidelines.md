@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Widget Translation Guidelines"
 type: guide
@@ -20,11 +23,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Widget Translation Guidelines
 
 ## Overview
@@ -121,6 +127,9 @@ return [
 ## Widget Implementation Rules
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ### Never Use ->label(), ->placeholder(), ->helperText()
 
 **Regola critica**: Mai usare `->label()`, `->placeholder()` o `->helperText()` nei componenti Filament. Il LangServiceProvider risolve automaticamente da `modulo::risorsa.fields.campo.*` (es. `user::login_widget.fields.email.label`).
@@ -131,6 +140,7 @@ TextInput::make('name')->label('Name')->placeholder('Enter name')
 // ✅ CORRECT - Let LangServiceProvider handle translations
 TextInput::make('name')
 ```
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -155,6 +165,8 @@ TextInput::make('name')
 ```
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ### Translation Key Usage
 // ✅ CORRECT - Use translation keys for options
 Select::make('lang')
@@ -205,6 +217,7 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 ## Related Documentation
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Widget Structure](../widgets-structure-2.md)
 =======
 - [User Module Widget Structure](../widgets_structure.md)
@@ -215,6 +228,9 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 - [User Module Widget Structure](../widgets-structure-2.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [User Module Widget Structure](../widgets-structure-2.md)
+>>>>>>> laraxot/dev
 - [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 - [Translation System Overview](../../xot/docs/translations.md)
 - [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)

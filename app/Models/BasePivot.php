@@ -21,6 +21,9 @@ abstract class BasePivot extends Pivot
      * @see https://laravel-news.com/6-eloquent-secrets
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public static $snakeAttributes = true;
 
@@ -28,6 +31,7 @@ abstract class BasePivot extends Pivot
 
     protected $perPage = 30;
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -56,6 +60,8 @@ abstract class BasePivot extends Pivot
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected $connection = 'user';
 
     /** @var list<string> */
@@ -64,6 +70,7 @@ abstract class BasePivot extends Pivot
     /**
      * Undocumented variable.
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     protected $primaryKey = 'id';
@@ -83,6 +90,10 @@ abstract class BasePivot extends Pivot
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    protected $primaryKey = 'id';
+
+>>>>>>> laraxot/dev
     protected $keyType = 'string';
 
     /** @return array<string, string> */

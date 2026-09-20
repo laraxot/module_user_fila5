@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "User Module Architecture"
 type: architecture
@@ -124,6 +125,8 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: architecture
@@ -140,5 +143,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/architecture-rules-Modules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

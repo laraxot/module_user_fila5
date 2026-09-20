@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'failed' => [
         'key' => 'user::auth.messages.failed',
         'text' => 'Credenziali non valide.',
@@ -132,6 +135,7 @@ return [
         'context' => 'login_form',
         'placeholder' => '',
     ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -289,6 +293,8 @@ return [
     ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'sign-up' => 'Registrati',
     'password_expired' => [
         'title' => 'Password Scaduta, Reimposta Password',
@@ -337,6 +343,9 @@ return [
     'confirm_password' => 'Conferma Password',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'logout_success' => [
         'key' => 'user::auth.logout-success',
         'text' => 'Logout effettuato con successo.',
@@ -479,6 +488,7 @@ return [
             'placeholder' => '',
         ],
         'email' => 'Email',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -646,10 +656,13 @@ return [
         'email' => 'Email',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'email_placeholder' => 'esempio@email.com',
         'password' => 'Password',
         'password_placeholder' => '••••••••',
         'remember' => 'Ricordami',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         'remember_me' => 'Ricordami',
@@ -660,6 +673,9 @@ return [
         'remember_me' => 'Ricordami',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'remember_me' => 'Ricordami',
+>>>>>>> laraxot/dev
         'email_structured' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci la tua email',
@@ -673,6 +689,9 @@ return [
         ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'submit' => [
             'key' => 'user::auth.login.submit',
             'text' => 'Accedi',
@@ -756,6 +775,7 @@ return [
             'context' => 'login_form',
             'placeholder' => '',
         ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -859,6 +879,8 @@ return [
         ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'login-in' => 'Accedi',
         'Sign in' => 'Accedi',
         'Sign in to your account' => 'Accedi al tuo account',
@@ -871,6 +893,9 @@ return [
         'Forgot your password?' => 'Password dimenticata?',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'page' => [
             'meta_title' => [
                 'label' => 'Accedi ai servizi',
@@ -1074,6 +1099,7 @@ return [
             'context' => 'registration_form',
             'placeholder' => '',
         ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1305,6 +1331,8 @@ return [
         ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'name_structured' => [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il tuo nome completo',
@@ -1324,6 +1352,9 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'forgot_password' => [
         'title' => [
             'key' => 'user::auth.forgot-password-title',
@@ -1374,6 +1405,7 @@ return [
             'context' => 'forgot_password',
             'placeholder' => '',
         ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1444,6 +1476,8 @@ return [
         ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'email_structured' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci la tua email',
@@ -1451,6 +1485,9 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'reset_password' => [
         'title' => [
             'key' => 'user::auth.reset-password-title',
@@ -1561,6 +1598,7 @@ return [
                 'placeholder' => '',
             ],
         ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1705,6 +1743,8 @@ return [
         ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'email_structured' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci la tua email',
@@ -1720,6 +1760,9 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'verification' => [
         'title' => [
             'key' => 'user::auth.verification-title',
@@ -1845,6 +1888,7 @@ return [
             'placeholder' => '',
         ],
     ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -2005,6 +2049,8 @@ return [
     ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'password_reset' => [
         'email_placeholder' => 'Inserisci il tuo indirizzo email',
         'send_button' => 'Invia link di reset',
@@ -2046,6 +2092,7 @@ return [
             'causes' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'expired_token' => 'Il link di reset è scaduto (valido per 60 minuti]',
 =======
                 'expired_token' => 'Il link di reset è scaduto (valido per 60 minuti)',
@@ -2056,6 +2103,9 @@ return [
                 'expired_token' => 'Il link di reset è scaduto (valido per 60 minuti]',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                'expired_token' => 'Il link di reset è scaduto (valido per 60 minuti]',
+>>>>>>> laraxot/dev
                 'invalid_email' => 'L\'indirizzo email non corrisponde a nessun account',
                 'already_used' => 'Il link di reset è già stato utilizzato',
             ],
@@ -2064,6 +2114,9 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'passwords' => [
         'reset' => [
             'key' => 'user::auth.passwords.reset',
@@ -2205,6 +2258,7 @@ return [
         'profile' => 'Il mio profilo',
         'dashboard' => 'Dashboard',
         'personal_area' => 'Accedi all\'area personale',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -2362,5 +2416,7 @@ return [
         'personal_area' => 'Accedi all\'area personale',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     ],
 ];

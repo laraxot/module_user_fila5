@@ -20,6 +20,7 @@ return new class extends XotBaseMigration {
         $this->tableUpdate(function (Blueprint $table): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // if (! $this->hasColumn('uuid'))
 =======
             // if (! $this->hasColumn('uuid')) {
@@ -30,6 +31,9 @@ return new class extends XotBaseMigration {
             // if (! $this->hasColumn('uuid'))
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            // if (! $this->hasColumn('uuid'))
+>>>>>>> laraxot/dev
             //    $table->uuid('uuid')->nullable();
             // }
 

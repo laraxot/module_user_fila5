@@ -6,6 +6,7 @@ namespace Modules\User\Http\Controllers\Auth;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use InvalidArgumentException;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -16,12 +17,15 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use App\Http\Controllers\Controller;
 use Filament\Facades\Filament;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\Events\Verified;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 =======
 >>>>>>> f548be94 (.)
@@ -30,6 +34,9 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+>>>>>>> laraxot/dev
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
@@ -44,6 +51,7 @@ class VerifyEmailController extends Controller
         $user = Auth::user();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null === $user) {
 =======
         if ($user === null) {
@@ -54,6 +62,9 @@ class VerifyEmailController extends Controller
         if (null === $user) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null === $user) {
+>>>>>>> laraxot/dev
             return redirect()->route('filament.user.auth.login');
         }
 
@@ -61,6 +72,7 @@ class VerifyEmailController extends Controller
         $routeHash = $request->route('hash');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (null === $routeHash) {
             throw new \InvalidArgumentException('Hash di verifica mancante');
 =======
@@ -75,6 +87,10 @@ class VerifyEmailController extends Controller
             throw new \InvalidArgumentException('Hash di verifica mancante');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (null === $routeHash) {
+            throw new \InvalidArgumentException('Hash di verifica mancante');
+>>>>>>> laraxot/dev
         }
 
         $stringRouteHash = is_string($routeHash) ? $routeHash : '';
@@ -86,6 +102,7 @@ class VerifyEmailController extends Controller
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! hash_equals(sha1($userEmail), $stringRouteHash)) {
 =======
         if (!hash_equals(sha1($userEmail), $stringRouteHash)) {
@@ -96,6 +113,9 @@ class VerifyEmailController extends Controller
         if (! hash_equals(sha1($userEmail), $stringRouteHash)) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! hash_equals(sha1($userEmail), $stringRouteHash)) {
+>>>>>>> laraxot/dev
             throw new AuthorizationException();
         }
 
@@ -112,6 +132,7 @@ class VerifyEmailController extends Controller
         // Verificare che l'utente implementi l'interfaccia MustVerifyEmail
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (! $user instanceof MustVerifyEmail) {
             throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia MustVerifyEmail');
 =======
@@ -126,12 +147,17 @@ class VerifyEmailController extends Controller
             throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia MustVerifyEmail');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! $user instanceof MustVerifyEmail) {
+            throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia MustVerifyEmail');
+>>>>>>> laraxot/dev
         }
 
         event(new Verified($user));
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return redirect()->intended(route('dashboard', absolute: false).'?verified=1');
 =======
         return redirect()->intended(route('dashboard', absolute: false) . '?verified=1');
@@ -142,5 +168,8 @@ class VerifyEmailController extends Controller
         return redirect()->intended(route('dashboard', absolute: false).'?verified=1');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return redirect()->intended(route('dashboard', absolute: false).'?verified=1');
+>>>>>>> laraxot/dev
     }
 }

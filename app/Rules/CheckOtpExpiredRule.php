@@ -6,10 +6,14 @@ namespace Modules\User\Rules;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Contracts\Validation\ValidationRule;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Models\User;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -27,6 +31,8 @@ use Modules\User\Models\User;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * Regola di validazione per verificare se un codice OTP è scaduto.
@@ -37,6 +43,7 @@ class CheckOtpExpiredRule implements ValidationRule
 
     public function __construct(
         private User $user,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     ) {
@@ -51,17 +58,25 @@ class CheckOtpExpiredRule implements ValidationRule
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    ) {
+    }
+>>>>>>> laraxot/dev
 
     /**
      * Run the validation rule.
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function validate(string $_attribute, mixed $_value, \Closure $fail): void
     {
         if (null === $this->user->updated_at) {
             $fail($this->message);
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -80,6 +95,8 @@ class CheckOtpExpiredRule implements ValidationRule
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             return;
         }
 
@@ -101,6 +118,7 @@ class CheckOtpExpiredRule implements ValidationRule
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return SafeStringCastAction::cast(__('user::otp.notifications.otp_expired.body'));
 =======
         return __('user::otp.notifications.otp_expired.body');
@@ -111,5 +129,8 @@ class CheckOtpExpiredRule implements ValidationRule
         return SafeStringCastAction::cast(__('user::otp.notifications.otp_expired.body'));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return SafeStringCastAction::cast(__('user::otp.notifications.otp_expired.body'));
+>>>>>>> laraxot/dev
     }
 }

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "GDPR Compliance - User Registration Module"
 type: concept
@@ -24,17 +27,21 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # GDPR Compliance - User Registration Module
 
 ## Overview
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento definisce i requisiti GDPR (General Data Protection Regulation - Regolamento UE 2016/679) per il sistema di registrazione utenti nel modulo User di <nome progetto>.com, implementato secondo D.Lgs. 101/2018 (adeguamento italiano al GDPR) e le best practices AGID.
 =======
 Questo documento definisce i requisiti GDPR (General Data Protection Regulation - Regolamento UE 2016/679) per il sistema di registrazione utenti nel modulo User di LaravelPizza.com, implementato secondo D.Lgs. 101/2018 (adeguamento italiano al GDPR) e le best practices AGID.
@@ -45,6 +52,9 @@ Questo documento definisce i requisiti GDPR (General Data Protection Regulation 
 Questo documento definisce i requisiti GDPR (General Data Protection Regulation - Regolamento UE 2016/679) per il sistema di registrazione utenti nel modulo User di <nome progetto>.com, implementato secondo D.Lgs. 101/2018 (adeguamento italiano al GDPR) e le best practices AGID.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+Questo documento definisce i requisiti GDPR (General Data Protection Regulation - Regolamento UE 2016/679) per il sistema di registrazione utenti nel modulo User di <nome progetto>.com, implementato secondo D.Lgs. 101/2018 (adeguamento italiano al GDPR) e le best practices AGID.
+>>>>>>> laraxot/dev
 
 ## Legal Framework
 
@@ -206,6 +216,7 @@ L'AGID fornisce linee guida per l'implementazione della privacy nei servizi digi
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il modulo User di <nome progetto>.com raccoglie i seguenti dati personali durante la registrazione:
 =======
 Il modulo User di LaravelPizza.com raccoglie i seguenti dati personali durante la registrazione:
@@ -216,6 +227,9 @@ Il modulo User di LaravelPizza.com raccoglie i seguenti dati personali durante l
 Il modulo User di <nome progetto>.com raccoglie i seguenti dati personali durante la registrazione:
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+Il modulo User di <nome progetto>.com raccoglie i seguenti dati personali durante la registrazione:
+>>>>>>> laraxot/dev
 
 | Campo | Tipo | Base Giuridica | Obbligatorio | Conservazione |
 |-------|------|----------------|--------------|---------------|
@@ -234,6 +248,7 @@ Per la registrazione utenti, la base giuridica principale è:
 **Articolo 6(1)(b) GDPR - Esecuzione di un contratto**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Il trattamento dei dati è necessario per l'esecuzione del contratto di servizio tra l'utente e <nome progetto>.com
 =======
 - Il trattamento dei dati è necessario per l'esecuzione del contratto di servizio tra l'utente e LaravelPizza.com
@@ -244,6 +259,9 @@ Per la registrazione utenti, la base giuridica principale è:
 - Il trattamento dei dati è necessario per l'esecuzione del contratto di servizio tra l'utente e <nome progetto>.com
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- Il trattamento dei dati è necessario per l'esecuzione del contratto di servizio tra l'utente e <nome progetto>.com
+>>>>>>> laraxot/dev
 - Senza questi dati, non è possibile creare un account e fornire i servizi
 
 **Articolo 6(1)(f) GDPR - Legittimo interesse**
@@ -266,6 +284,7 @@ Il modulo User richiede i seguenti consensi durante la registrazione:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Descrizione**: Accettazione della privacy policy di <nome progetto>.com
 =======
 **Descrizione**: Accettazione della privacy policy di LaravelPizza.com
@@ -276,6 +295,9 @@ Il modulo User richiede i seguenti consensi durante la registrazione:
 **Descrizione**: Accettazione della privacy policy di <nome progetto>.com
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+**Descrizione**: Accettazione della privacy policy di <nome progetto>.com
+>>>>>>> laraxot/dev
 
 **Base Giuridica**: Articolo 13 GDPR - Obbligo di informazione
 
@@ -283,6 +305,7 @@ Il modulo User richiede i seguenti consensi durante la registrazione:
 ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Ho letto e compreso l'Informativa Privacy di <nome progetto>.com e accetto il 
 =======
 Ho letto e compreso l'Informativa Privacy di LaravelPizza.com e accetto il 
@@ -293,6 +316,9 @@ Ho letto e compreso l'Informativa Privacy di LaravelPizza.com e accetto il
 Ho letto e compreso l'Informativa Privacy di <nome progetto>.com e accetto il 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+Ho letto e compreso l'Informativa Privacy di <nome progetto>.com e accetto il 
+>>>>>>> laraxot/dev
 trattamento dei miei dati personali come descritto nella policy.
 ```
 
@@ -312,6 +338,7 @@ trattamento dei miei dati personali come descritto nella policy.
 ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Ho letto e accetto i Termini e Condizioni d'uso di <nome progetto>.com.
 =======
 Ho letto e accetto i Termini e Condizioni d'uso di LaravelPizza.com.
@@ -322,6 +349,9 @@ Ho letto e accetto i Termini e Condizioni d'uso di LaravelPizza.com.
 Ho letto e accetto i Termini e Condizioni d'uso di <nome progetto>.com.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+Ho letto e accetto i Termini e Condizioni d'uso di <nome progetto>.com.
+>>>>>>> laraxot/dev
 ```
 
 **Dettagli**:
@@ -341,6 +371,7 @@ Ho letto e accetto i Termini e Condizioni d'uso di <nome progetto>.com.
 Acconsento al trattamento dei miei dati personali (nome, cognome, email) 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 per le finalità di creazione e gestione del mio account utente su <nome progetto>.com, 
 =======
 per le finalità di creazione e gestione del mio account utente su LaravelPizza.com, 
@@ -351,6 +382,9 @@ per le finalità di creazione e gestione del mio account utente su LaravelPizza.
 per le finalità di creazione e gestione del mio account utente su <nome progetto>.com, 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+per le finalità di creazione e gestione del mio account utente su <nome progetto>.com, 
+>>>>>>> laraxot/dev
 necessarie per l'erogazione dei servizi richiesti.
 ```
 
@@ -372,6 +406,7 @@ necessarie per l'erogazione dei servizi richiesti.
 Acconsento a ricevere comunicazioni marketing e promozionali da parte di 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <nome progetto>.com via email, relative a eventi meetup, nuove funzionalità 
 =======
 LaravelPizza.com via email, relative a eventi meetup, nuove funzionalità 
@@ -382,6 +417,9 @@ LaravelPizza.com via email, relative a eventi meetup, nuove funzionalità
 <nome progetto>.com via email, relative a eventi meetup, nuove funzionalità 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+<nome progetto>.com via email, relative a eventi meetup, nuove funzionalità 
+>>>>>>> laraxot/dev
 e offerte speciali. Il consenso è facoltativo e posso revocarlo in qualsiasi momento.
 ```
 
@@ -726,6 +764,7 @@ Il form di registrazione deve seguire questi principi UX/GDPR:
 ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <nome progetto>.com utilizza cookie tecnici per garantire il funzionamento del sito 
 =======
 LaravelPizza.com utilizza cookie tecnici per garantire il funzionamento del sito 
@@ -736,6 +775,9 @@ LaravelPizza.com utilizza cookie tecnici per garantire il funzionamento del sito
 <nome progetto>.com utilizza cookie tecnici per garantire il funzionamento del sito 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+<nome progetto>.com utilizza cookie tecnici per garantire il funzionamento del sito 
+>>>>>>> laraxot/dev
 e cookie analitici e marketing per migliorare l'esperienza utente. 
 
 [Accetta tutto] [Rifiuta tutto] [Gestisci preferenze]
@@ -755,6 +797,7 @@ Secondo l'Articolo 13 GDPR, la privacy policy deve contenere:
 TITOLARE DEL TRATTAMENTO
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <nome progetto>.com
 Email: privacy@<nome progetto>.com
 PEC: privacy@<nome progetto>.pec.it
@@ -773,6 +816,11 @@ Email: privacy@<nome progetto>.com
 PEC: privacy@<nome progetto>.pec.it
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+<nome progetto>.com
+Email: privacy@<nome progetto>.com
+PEC: privacy@<nome progetto>.pec.it
+>>>>>>> laraxot/dev
 Indirizzo: [Indirizzo completo]
 Telefono: [Numero di telefono]
 ```
@@ -822,6 +870,7 @@ DESTINATARI DEI DATI
 I dati personali possono essere comunicati a:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Personale autorizzato di <nome progetto>.com
 =======
 - Personale autorizzato di LaravelPizza.com
@@ -832,6 +881,9 @@ I dati personali possono essere comunicati a:
 - Personale autorizzato di <nome progetto>.com
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- Personale autorizzato di <nome progetto>.com
+>>>>>>> laraxot/dev
 - Fornitori di servizi tecnici (hosting, email, backup)
 - Autorità competenti su richiesta
 ```
@@ -890,6 +942,7 @@ previste dal GDPR (Standard Contractual Clauses, Decisioni di adeguatezza).
 MODIFICHE ALLA PRIVACY POLICY
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <nome progetto>.com si riserva il diritto di modificare la presente privacy 
 =======
 LaravelPizza.com si riserva il diritto di modificare la presente privacy 
@@ -900,6 +953,9 @@ LaravelPizza.com si riserva il diritto di modificare la presente privacy
 <nome progetto>.com si riserva il diritto di modificare la presente privacy 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+<nome progetto>.com si riserva il diritto di modificare la presente privacy 
+>>>>>>> laraxot/dev
 policy per adeguarla alla normativa vigente. Le modifiche saranno comunicate 
 tramite notifica sul sito e, quando necessario, via email.
 ```

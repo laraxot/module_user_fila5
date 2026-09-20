@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Filosofia dei Comandi Console - Modulo User"
 type: concept
@@ -20,11 +23,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -484,6 +490,7 @@ private function getPasswordLegacy(): string
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: 2025-01-27*
 >>>>>>> 60a2c9a9 (.)
@@ -492,4 +499,6 @@ private function getPasswordLegacy(): string
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 

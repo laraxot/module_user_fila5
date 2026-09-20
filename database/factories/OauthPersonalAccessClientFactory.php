@@ -11,6 +11,7 @@ use Modules\User\Models\OauthPersonalAccessClient;
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * OauthPersonalAccessClient Factory.
 =======
  * OauthPersonalAccessClient Factory
@@ -21,6 +22,9 @@ use Modules\User\Models\OauthPersonalAccessClient;
  * OauthPersonalAccessClient Factory.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ * OauthPersonalAccessClient Factory.
+>>>>>>> laraxot/dev
  *
  * @extends Factory<OauthPersonalAccessClient>
  */
@@ -30,6 +34,9 @@ class OauthPersonalAccessClientFactory extends Factory
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     /**
      * @return array<string, mixed>
      */
@@ -37,6 +44,7 @@ class OauthPersonalAccessClientFactory extends Factory
     {
         return [
             'client_id' => OauthClient::factory()->asPersonalAccessTokenClient()->create()->id,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -57,6 +65,8 @@ class OauthPersonalAccessClientFactory extends Factory
             'client_id' => OauthClient::factory()->asPersonalAccessTokenClient()->create()->id,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ];
     }
 }

@@ -7,6 +7,9 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'name' => ['label' => 'Nome', 'placeholder' => 'Inserisci il nome del team', 'helper_text' => 'Nome identificativo del team', 'description' => 'Il nome che identifica questo team', 'tooltip' => ''],
         'personal_team' => ['label' => 'Team Personale', 'helper_text' => 'Indica se questo è un team personale', 'description' => 'Un team personale è associato a un singolo utente', 'tooltip' => ''],
         'owner' => ['label' => 'Proprietario', 'helper_text' => 'Utente proprietario del team', 'description' => 'L\'utente che ha creato e gestisce questo team', 'tooltip' => ''],
@@ -20,9 +23,16 @@ return [
     ],
     'actions' => [
         'create' => ['label' => 'Nuovo Team', 'tooltip' => 'Crea un nuovo team', 'icon' => 'create'],
+<<<<<<< HEAD
         'edit' => ['label' => 'Modifica', 'tooltip' => 'Modifica i dati del team'],
         'delete' => ['label' => 'Elimina', 'tooltip' => 'Elimina il team'],
         'view' => ['label' => 'Visualizza', 'tooltip' => 'Visualizza i dettagli del team'],
+=======
+        'edit' => ['label' => 'Modifica', 'tooltip' => 'Modifica i dati del team', 'icon' => 'edit'],
+        'delete' => ['label' => 'Elimina', 'tooltip' => 'Elimina il team', 'icon' => 'delete'],
+        'view' => ['label' => 'Visualizza', 'tooltip' => 'Visualizza i dettagli del team', 'icon' => 'view'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+>>>>>>> laraxot/dev
     ],
     'messages' => [
         'success' => ['created' => 'Team creato con successo', 'updated' => 'Team aggiornato con successo', 'deleted' => 'Team eliminato con successo'],
@@ -43,6 +53,7 @@ return [
     ],
     'label' => 'Teams',
     'plural_label' => 'Teams (Plurale)',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -158,4 +169,6 @@ return [
     'plural_label' => 'Teams (Plurale)',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

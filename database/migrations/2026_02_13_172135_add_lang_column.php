@@ -4,12 +4,19 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\User;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
     protected ?string $model_class = User::class;
 
     public function up(): void
@@ -21,6 +28,7 @@ return new class extends XotBaseMigration
             }
         });
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -75,4 +83,6 @@ return new class extends XotBaseMigration
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 };

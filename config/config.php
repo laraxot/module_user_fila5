@@ -7,6 +7,7 @@ return [
     'description' => 'Modulo per la gestione degli utenti e autorizzazioni',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     'icon' => 'user-icon',
 =======
     'icon' => 'heroicon-o-users',
@@ -17,10 +18,14 @@ return [
     'icon' => 'user-icon',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    'icon' => 'user-icon',
+>>>>>>> laraxot/dev
     'navigation' => [
         'enabled' => true,
         'sort' => 100,
     ],
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -39,4 +44,6 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

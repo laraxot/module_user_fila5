@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Best Practices per il Routing in Architettura Volt + Folio + Filament"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Best Practices per il Routing in Architettura Volt + Folio + Filament
 
 ## Il Principio Fondamentale
@@ -158,26 +164,33 @@ Ogni volta che pensi di aggiungere una rotta in `web.php`, chiediti:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 - [Filosofia dei Getter](../xot/docs/philosophy/getter_zen.md)
 - [Filosofia Zen Avanzata](../xot/docs/philosophy/getter_zen_advanced.md)
 - [La Via del Brand](../xot/docs/brand/brand_way.md)
 - [Il Tao del Codice](../xot/docs/tao/code_tao.md)
 - [Best Practices Filament](./filament-best-practices.md) 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 - [Filosofia dei Getter](../Xot/docs/philosophy/getter_zen.md)
 - [Filosofia Zen Avanzata](../Xot/docs/philosophy/getter_zen_advanced.md)
 - [La Via del Brand](../Xot/docs/brand/brand_way.md)
 - [Il Tao del Codice](../Xot/docs/tao/code_tao.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices Filament](./filament-best-practices.md) 
 =======
 - [Best Practices Filament](./FILAMENT_BEST_PRACTICES.md) 
@@ -188,6 +201,9 @@ Ogni volta che pensi di aggiungere una rotta in `web.php`, chiediti:
 - [Best Practices Filament](./filament-best-practices.md) 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Best Practices Filament](./filament-best-practices.md) 
+>>>>>>> laraxot/dev
 
 ## Principi Fondamentali
 
@@ -407,6 +423,7 @@ class UserResource extends Resource
 ## Collegamenti
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Filament Best Practices](./filament-best-practices.md)
 =======
 - [Filament Best Practices](./filament_best_practices.md)
@@ -417,6 +434,9 @@ class UserResource extends Resource
 - [Filament Best Practices](./filament-best-practices.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Filament Best Practices](./filament-best-practices.md)
+>>>>>>> laraxot/dev
 - [Volt Documentation](https://livewire.laravel.com/docs/volt)
 - [Folio Documentation](https://laravel.com/docs/folio)
 - [Filament Documentation](https://filamentphp.com/docs) 
@@ -535,11 +555,15 @@ public function logout()
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Documentazione Volt](./volt-logout.md)
 - [Struttura Directory](./directory-structure-checklist.md)
 - [Gestione Errori](./error-handling.md) 
 - [Documentazione Volt](./volt-logout-2.md)
 - [Struttura Directory](./directory-structure-checklist.md)
+<<<<<<< HEAD
 - [Gestione Errori](./error-handling.md) 
 =======
 - [Documentazione Volt](./VOLT_LOGOUT.md)
@@ -559,3 +583,6 @@ public function logout()
 - [Gestione Errori](./error-handling.md) 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Gestione Errori](./error-handling.md) 
+>>>>>>> laraxot/dev

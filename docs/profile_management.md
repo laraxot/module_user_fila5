@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Profile Management in Laravel Modules"
 module: user
@@ -10,6 +11,8 @@ updated: 2026-08-24
 
 =======
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> laraxot/dev
 # Profile Management in Laravel Modules
 
 ## Overview
@@ -77,10 +80,13 @@ This document outlines the best practices for managing user profiles within a La
 
 ## Links to Related Documentation
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [User Module Index](./index.md)
 
 =======
 >>>>>>> f548be94 (.)
+=======
+>>>>>>> laraxot/dev
 - [User Module Index](./INDEX.md)
 - [BaseUser Model](./BaseUser.md)
 - [Authentication Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)

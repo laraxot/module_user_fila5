@@ -6,6 +6,7 @@ namespace Modules\User\Http\Livewire\Auth;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Schemas\Schema;
 use Exception;
@@ -16,6 +17,8 @@ use Exception;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
 use Filament\Forms\Components\Checkbox;
@@ -24,6 +27,9 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Schemas\Schema;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -34,6 +40,7 @@ use Livewire\Component;
 use Modules\Xot\Contracts\UserContract;
 use Spatie\Permission\Models\Role;
 use Webmozart\Assert\Assert;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -59,6 +66,8 @@ use Spatie\Permission\Models\Role;
 use Webmozart\Assert\Assert;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * Componente Livewire per la gestione del login.
@@ -77,6 +86,7 @@ class Login extends Component implements HasActions, HasForms
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public $data = [];
 =======
     public array $data = [];
@@ -87,6 +97,9 @@ class Login extends Component implements HasActions, HasForms
     public $data = [];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    public $data = [];
+>>>>>>> laraxot/dev
 
     /**
      * Inizializza il componente.
@@ -97,6 +110,7 @@ class Login extends Component implements HasActions, HasForms
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -143,6 +157,8 @@ class Login extends Component implements HasActions, HasForms
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      * Crea il form schema.
      */
     public function form(Schema $schema): Schema
@@ -179,6 +195,7 @@ class Login extends Component implements HasActions, HasForms
             $this->addError('data.email', __('Le credenziali fornite non sono corrette..'));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         } catch (\Exception $e) {
 =======
         } catch (Exception $e) {
@@ -189,6 +206,9 @@ class Login extends Component implements HasActions, HasForms
         } catch (\Exception $e) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        } catch (\Exception $e) {
+>>>>>>> laraxot/dev
             $this->addError('data.email', __('Si è verificato un errore durante il login. Riprova più tardi.'));
             report($e);
         }
@@ -197,6 +217,9 @@ class Login extends Component implements HasActions, HasForms
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * Renderizza il componente.
      */
     public function render(): View|Factory
@@ -240,6 +263,7 @@ class Login extends Component implements HasActions, HasForms
     }
 
     /**
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
@@ -351,6 +375,8 @@ class Login extends Component implements HasActions, HasForms
     }
 
     /**
+=======
+>>>>>>> laraxot/dev
      * Determina l'URL di redirect appropriato per l'utente autenticato.
      */
     protected function getRedirectUrl(): RedirectResponse
@@ -382,7 +408,11 @@ class Login extends Component implements HasActions, HasForms
 
         // Utente senza ruoli admin - redirect alla homepage
         return redirect()->to('/'.app()->getLocale());
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
     }
 >>>>>>> f548be94 (.)
+=======
+    }
+>>>>>>> laraxot/dev
 }

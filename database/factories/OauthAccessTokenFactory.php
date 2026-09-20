@@ -12,6 +12,7 @@ use Modules\User\Models\User;
 /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  * OauthAccessToken Factory.
 =======
  * OauthAccessToken Factory
@@ -22,6 +23,9 @@ use Modules\User\Models\User;
  * OauthAccessToken Factory.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ * OauthAccessToken Factory.
+>>>>>>> laraxot/dev
  *
  * Factory for creating OauthAccessToken model instances for testing and seeding.
  *
@@ -29,6 +33,7 @@ use Modules\User\Models\User;
  */
 class OauthAccessTokenFactory extends Factory
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -45,6 +50,8 @@ class OauthAccessTokenFactory extends Factory
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected $model = OauthAccessToken::class;
 
     /**
@@ -52,6 +59,7 @@ class OauthAccessTokenFactory extends Factory
      *
      * @return array<string, mixed>
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     /**
@@ -66,6 +74,11 @@ class OauthAccessTokenFactory extends Factory
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @return array<string, mixed>
+     */
+>>>>>>> laraxot/dev
     public function definition(): array
     {
         return [
@@ -75,11 +88,15 @@ class OauthAccessTokenFactory extends Factory
             'name' => $this->faker->optional()->words(2, true),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'scopes' => $this->faker->randomElements(
                 ['read', 'write', 'admin', 'user'],
                 $this->faker->numberBetween(1, 3),
             ),
             'revoked' => $this->faker->boolean(10),
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -104,6 +121,8 @@ class OauthAccessTokenFactory extends Factory
             'revoked' => $this->faker->boolean(10),
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'expires_at' => $this->faker->dateTimeBetween('now', '+1 year'),
         ];
     }
@@ -112,10 +131,14 @@ class OauthAccessTokenFactory extends Factory
      * Create a revoked token.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function revoked(): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -135,6 +158,8 @@ class OauthAccessTokenFactory extends Factory
         return $this->state(fn (): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'revoked' => true,
         ]);
     }
@@ -143,10 +168,14 @@ class OauthAccessTokenFactory extends Factory
      * Create an active token.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function active(): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -166,6 +195,8 @@ class OauthAccessTokenFactory extends Factory
         return $this->state(fn (): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'revoked' => false,
             'expires_at' => $this->faker->dateTimeBetween('+1 day', '+1 year'),
         ]);
@@ -175,10 +206,14 @@ class OauthAccessTokenFactory extends Factory
      * Create token for a specific user.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function forUser(User $user): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -199,6 +234,8 @@ class OauthAccessTokenFactory extends Factory
         return $this->state(fn (): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'user_id' => $user->id,
         ]);
     }
@@ -207,10 +244,14 @@ class OauthAccessTokenFactory extends Factory
      * Create token for a specific client.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     public function forClient(OauthClient $client): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -231,6 +272,8 @@ class OauthAccessTokenFactory extends Factory
         return $this->state(fn (): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'client_id' => $client->id,
         ]);
     }
@@ -240,11 +283,15 @@ class OauthAccessTokenFactory extends Factory
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @param list<string> $scopes
      */
     public function withScopes(array $scopes): static
     {
         return $this->state(fn (): array => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -265,6 +312,8 @@ class OauthAccessTokenFactory extends Factory
         return $this->state(fn (): array => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'scopes' => $scopes,
         ]);
     }

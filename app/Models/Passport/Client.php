@@ -6,6 +6,7 @@ namespace Modules\User\Models\Passport;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Foundation\Auth\User;
 use Laravel\Passport\Client as PassportClient;
@@ -63,6 +64,8 @@ use Laravel\Passport\Client as PassportClient;
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Foundation\Auth\User;
 use Laravel\Passport\Client as PassportClient;
@@ -90,8 +93,11 @@ use Modules\User\Models\OauthToken;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Client query()
  *
  * @mixin \Eloquent
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  */
 class Client extends PassportClient
 {
@@ -101,6 +107,7 @@ class Client extends PassportClient
      */
     public function initializeHasUniqueStringIds(): void
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         parent::initializeHasUniqueStringIds();
@@ -118,5 +125,8 @@ class Client extends PassportClient
         parent::initializeHasUniqueStringIds();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        parent::initializeHasUniqueStringIds();
+>>>>>>> laraxot/dev
     }
 }

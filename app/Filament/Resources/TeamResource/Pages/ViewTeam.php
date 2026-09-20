@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\TeamResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
@@ -22,6 +23,8 @@ use Filament\Infolists\Components\TextEntry;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\TeamResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -29,6 +32,7 @@ class ViewTeam extends XotBaseViewRecord
 {
     // //
     protected static string $resource = TeamResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -66,4 +70,6 @@ class ViewTeam extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
 }

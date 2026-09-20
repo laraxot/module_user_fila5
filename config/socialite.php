@@ -12,6 +12,7 @@ return [
     'domain_allowlist' => [],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f548be94 (.)
@@ -20,6 +21,9 @@ return [
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
     // Allow registration through socials
     'registration' => true,
     // Specify the providers that should be visible on the login.
@@ -43,12 +47,16 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
     'user_model' => User::class,
 
     // Specify the default redirect route for successful logins
     'login_redirect_route' => 'filament.pages.dashboard',
 
+<<<<<<< HEAD
 =======
     'user_model' => User::class,
     // Specify the default redirect route for successful logins
@@ -67,6 +75,8 @@ return [
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     // Specify the route name for the socialite login page
     'login_page_route' => 'filament.auth.login',
     // Should the user stay logged in?

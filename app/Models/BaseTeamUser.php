@@ -7,6 +7,9 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
@@ -14,6 +17,7 @@ use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 =======
 use Modules\Xot\Contracts\ProfileContract;
 use Illuminate\Support\Carbon;
@@ -31,6 +35,8 @@ use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Parental\HasChildren;
 
 /**
@@ -41,6 +47,7 @@ use Parental\HasChildren;
  * @method static Builder|TeamUser query()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
  * @property int         $id
  * @property string      $uuid
@@ -57,6 +64,11 @@ use Parental\HasChildren;
  * @property string      $uuid
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ *
+ * @property int         $id
+ * @property string      $uuid
+>>>>>>> laraxot/dev
  * @property string|null $team_id
  * @property string|null $user_id
  * @property string|null $role
@@ -67,6 +79,7 @@ use Parental\HasChildren;
  * @property string|null $customer_id
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  *
 =======
 >>>>>>> f548be94 (.)
@@ -75,6 +88,9 @@ use Parental\HasChildren;
  *
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+ *
+>>>>>>> laraxot/dev
  * @method static Builder|TeamUser whereCreatedAt($value)
  * @method static Builder|TeamUser whereCreatedBy($value)
  * @method static Builder|TeamUser whereCustomerId($value)
@@ -87,6 +103,9 @@ use Parental\HasChildren;
  * @method static Builder|TeamUser whereUuid($value)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  *
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
@@ -97,6 +116,7 @@ use Parental\HasChildren;
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -122,6 +142,8 @@ use Parental\HasChildren;
  *
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 abstract class BaseTeamUser extends BasePivot
@@ -129,6 +151,7 @@ abstract class BaseTeamUser extends BasePivot
     use HasChildren;
 
     protected $connection = 'user';
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -139,6 +162,10 @@ abstract class BaseTeamUser extends BasePivot
 
     protected $table = 'team_user';
 >>>>>>> 87273113 (.)
+=======
+
+    protected $table = 'team_user';
+>>>>>>> laraxot/dev
 
     /**
      * Relazione con User.
@@ -166,10 +193,13 @@ abstract class BaseTeamUser extends BasePivot
         return $this->belongsTo($teamClass);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     protected $table = 'team_user';
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

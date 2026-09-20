@@ -6,13 +6,17 @@ namespace Modules\User\Filament\Clusters\Passport\Resources;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
@@ -51,6 +55,13 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Filament\Notifications\Notification;
+use Filament\Resources\Pages\PageRegistration;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Actions\Passport\RevokeRefreshTokenAction;
 use Modules\User\Filament\Clusters\Passport;
@@ -65,6 +76,7 @@ class OauthRefreshTokenResource extends XotBaseResource
 
     protected static ?string $model = OauthRefreshToken::class;
 
+<<<<<<< HEAD
     /**
 <<<<<<< HEAD
      * Get the form schema for the resource.
@@ -93,11 +105,14 @@ class OauthRefreshTokenResource extends XotBaseResource
     }
 
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
                 TextColumn::make('id')
+<<<<<<< HEAD
 =======
     public static function table(\Filament\Tables\Table $table): \Filament\Tables\Table
     {
@@ -105,11 +120,16 @@ class OauthRefreshTokenResource extends XotBaseResource
             ->columns([
                 \Filament\Tables\Columns\TextColumn::make('id')
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
                     ->searchable()
                     ->sortable()
                     ->copyable(),
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 TextColumn::make('access_token_id')
                     ->searchable()
                     ->sortable(),
@@ -119,6 +139,7 @@ class OauthRefreshTokenResource extends XotBaseResource
                     ->color(fn (bool $state): string => $state ? 'danger' : 'success'),
 
                 TextColumn::make('expires_at')
+<<<<<<< HEAD
 =======
                 \Filament\Tables\Columns\TextColumn::make('access_token_id')
                     ->searchable()
@@ -130,6 +151,8 @@ class OauthRefreshTokenResource extends XotBaseResource
 
                 \Filament\Tables\Columns\TextColumn::make('expires_at')
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
                     ->dateTime()
                     ->sortable(),
             ])
@@ -138,11 +161,15 @@ class OauthRefreshTokenResource extends XotBaseResource
             ])
             ->recordActions([
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 Action::make('revoke')
                     ->icon('heroicon-o-x-circle')
                     ->color('danger')
                     ->requiresConfirmation()
                     ->action(function (mixed $record): void {
+<<<<<<< HEAD
 =======
                 \Filament\Actions\Action::make('revoke')
                     ->label(static::trans('actions.revoke.label'))
@@ -152,6 +179,8 @@ class OauthRefreshTokenResource extends XotBaseResource
                     ->modalHeading(static::trans('actions.revoke.label'))
                     ->action(function (mixed $record) {
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
                         if ($record instanceof OauthRefreshToken && app(RevokeRefreshTokenAction::class)->execute($record)) {
                             Notification::make()
                                 ->title(static::trans('actions.revoke.success'))
@@ -160,12 +189,16 @@ class OauthRefreshTokenResource extends XotBaseResource
                         }
                     })
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                     ->visible(fn (mixed $record) => $record instanceof OauthRefreshToken && ! (bool) $record->getAttribute('revoked')),
                 DeleteAction::make(),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([
                     DeleteBulkAction::make(),
+<<<<<<< HEAD
 =======
                     ->visible(fn (mixed $record) => $record instanceof OauthRefreshToken && ! $record->revoked),
                 \Filament\Actions\DeleteAction::make(),
@@ -174,12 +207,15 @@ class OauthRefreshTokenResource extends XotBaseResource
                 \Filament\Actions\BulkActionGroup::make([
                     \Filament\Actions\DeleteBulkAction::make(),
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
                 ]),
             ])
             ->defaultSort('expires_at', 'desc');
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
      * @return array<string, PageRegistration>
 =======
@@ -191,6 +227,9 @@ class OauthRefreshTokenResource extends XotBaseResource
      * @return array<string, PageRegistration>
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     * @return array<string, PageRegistration>
+>>>>>>> laraxot/dev
      */
     #[\Override]
     public static function getPages(): array

@@ -7,6 +7,7 @@ namespace Modules\User\Filament\Widgets;
 use Illuminate\Support\Facades\Auth;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 class UserDropdown extends XotBaseSchemaWidget
@@ -25,6 +26,11 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 class UserDropdown extends XotBaseSchemaWidget
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+
+class UserDropdown extends XotBaseSchemaWidget
+>>>>>>> laraxot/dev
 {
     /**
      * The view for this widget.
@@ -67,6 +73,9 @@ class UserDropdown extends XotBaseSchemaWidget
             'user' => $user,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'avatarUrl' => $this->resolveAvatarUrl($profile),
             'name' => $user->name ?? 'User',
         ];
@@ -82,13 +91,18 @@ class UserDropdown extends XotBaseSchemaWidget
 
         if (method_exists($profile, 'getAvatarUrl')) {
             $url = $profile->getAvatarUrl();
+<<<<<<< HEAD
             if (\is_string($url) && $url !== '') {
+=======
+            if (\is_string($url) && '' !== $url) {
+>>>>>>> laraxot/dev
                 return $url;
             }
         }
 
         $avatarUrl = $profile->avatar_url ?? null;
 
+<<<<<<< HEAD
         return \is_string($avatarUrl) && $avatarUrl !== '' ? $avatarUrl : $fallback;
     }
 =======
@@ -128,4 +142,8 @@ class UserDropdown extends XotBaseSchemaWidget
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return \is_string($avatarUrl) && '' !== $avatarUrl ? $avatarUrl : $fallback;
+    }
+>>>>>>> laraxot/dev
 }

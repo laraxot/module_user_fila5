@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Struttura delle Blade di Autenticazione con Volt"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Struttura delle Blade di Autenticazione con Volt
 
 ## Introduzione
@@ -211,6 +217,9 @@ Ogni azione di autenticazione deve:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Documentazione Volt](./volt-logout-2.md)
 - [Best Practices Routing](./routing-best-practices-2.md)
 - [Struttura Directory](./directory-structure-checklist.md)
@@ -218,6 +227,7 @@ Ogni azione di autenticazione deve:
 - [Documentazione Volt](./volt-logout.md)
 - [Best Practices Routing](./routing-best-practices.md)
 - [Struttura Directory](./directory-structure-checklist.md)
+<<<<<<< HEAD
 - [Gestione Errori](./error-handling.md) 
 =======
 =======
@@ -240,3 +250,6 @@ Ogni azione di autenticazione deve:
 - [Gestione Errori](./error-handling.md) 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Gestione Errori](./error-handling.md) 
+>>>>>>> laraxot/dev

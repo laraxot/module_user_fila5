@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 return [
     'fields' => [
         'name' => ['label' => 'Nome', 'placeholder' => 'Inserisci il nome del permesso', 'help' => 'Nome univoco del permesso', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
@@ -25,6 +28,7 @@ return [
         'Attach Role' => ['label' => 'Attach Role', 'icon' => 'Attach Role', 'tooltip' => 'Attach Role'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -91,5 +95,7 @@ return [
         'Attach Role' => ['label' => 'Attach Role', 'icon' => 'Attach Role', 'tooltip' => 'Attach Role'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     ],
 ];

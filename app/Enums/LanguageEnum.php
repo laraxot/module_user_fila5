@@ -7,12 +7,16 @@ namespace Modules\User\Enums;
 use Filament\Support\Contracts\HasLabel;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Traits\EnumTrait;
 
 enum LanguageEnum: string implements HasLabel
 {
     use EnumTrait;
 
+<<<<<<< HEAD
 =======
 
 enum LanguageEnum: string implements HasLabel
@@ -31,11 +35,14 @@ enum LanguageEnum: string implements HasLabel
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     case ITALIAN = 'it';
     case ENGLISH = 'en';
     case FRENCH = 'fr';
     case GERMAN = 'de';
     case SPANISH = 'es';
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -58,4 +65,6 @@ enum LanguageEnum: string implements HasLabel
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

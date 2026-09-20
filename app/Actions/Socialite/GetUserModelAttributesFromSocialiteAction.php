@@ -6,6 +6,7 @@ namespace Modules\User\Actions\Socialite;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Modules\User\Actions\Socialite\Utils\UserNameFieldsResolver;
 use Modules\User\Datas\SocialiteUserAttributesData;
@@ -25,6 +26,11 @@ use Modules\User\Actions\Socialite\Utils\UserNameFieldsResolver;
 use Modules\User\Datas\SocialiteUserAttributesData;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Laravel\Socialite\Contracts\User as SocialiteUserContract;
+use Modules\User\Actions\Socialite\Utils\UserNameFieldsResolver;
+use Modules\User\Datas\SocialiteUserAttributesData;
+>>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 
 class GetUserModelAttributesFromSocialiteAction
@@ -33,6 +39,9 @@ class GetUserModelAttributesFromSocialiteAction
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function execute(string $provider, SocialiteUserContract $oauthUser): SocialiteUserAttributesData
     {
         if (empty($provider)) {
@@ -63,6 +72,7 @@ class GetUserModelAttributesFromSocialiteAction
             email: $email,
             provider: $provider,
         );
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -144,5 +154,7 @@ class GetUserModelAttributesFromSocialiteAction
         );
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

@@ -6,11 +6,15 @@ namespace Modules\User\Traits;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Validation\Rules\Password;
 
 /**
  * Shared password validation rules for forms and Livewire components.
  */
+<<<<<<< HEAD
 =======
 use Illuminate\Contracts\Validation\Rule;
 use Modules\User\Rules\Password;
@@ -28,6 +32,8 @@ use Illuminate\Validation\Rules\Password;
  */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 trait PasswordValidationRules
 {
     /**
@@ -35,11 +41,15 @@ trait PasswordValidationRules
      *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @return array<int, Password|string>
      */
     protected function passwordRules(): array
     {
         return ['required', 'string', Password::default(), 'confirmed'];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -59,5 +69,7 @@ trait PasswordValidationRules
         return ['required', 'string', Password::default(), 'confirmed'];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

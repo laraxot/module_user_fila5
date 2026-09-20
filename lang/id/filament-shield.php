@@ -5,6 +5,7 @@ declare(strict_types=1);
 return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -20,11 +21,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'column.name' => 'Nama',
     'column.guard_name' => 'Nama Penjaga',
     'column.roles' => 'Peran',
     'column.permissions' => 'Izin',
     'column.updated_at' => 'Dirubah',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -42,11 +46,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'field.name' => 'Nama',
     'field.guard_name' => 'Nama Penjaga',
     'field.permissions' => 'Izin',
     'field.select_all.name' => 'Pilih Semua',
     'field.select_all.message' => 'Aktifkan semua izin yang <span class="text-primary font-medium">Tersedia</span> untuk Peran ini.',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -64,11 +71,14 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'nav.group' => 'Pelindung',
     'nav.role.label' => 'Peran',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Peran',
     'resource.label.roles' => 'Peran',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -86,6 +96,8 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'section' => 'Entitas',
     'resources' => 'Sumber Daya',
     'widgets' => 'Widget',
@@ -93,6 +105,9 @@ return [
     'custom' => 'Izin Kustom',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'forbidden' => 'Kamu tidak punya izin akses',
     'navigation' => [
         'label' => 'Missing Navigation Label',
@@ -107,6 +122,7 @@ return [
     ],
     'actions' => [
     ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -156,4 +172,6 @@ return [
     ],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

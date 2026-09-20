@@ -7,6 +7,7 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
 =======
@@ -19,6 +20,9 @@ return new class extends XotBaseMigration
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+return new class extends XotBaseMigration {
+>>>>>>> laraxot/dev
     /**
      * Run the migrations.
      */
@@ -30,6 +34,7 @@ return new class extends XotBaseMigration
             // $table->morphs('authenticatable');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $table->uuidMorphs('authenticatable', 'k_auth_log_morph');
 =======
             $table->uuidMorphs('authenticatable', 'k_authenticatable');
@@ -40,6 +45,9 @@ return new class extends XotBaseMigration
             $table->uuidMorphs('authenticatable', 'k_auth_log_morph');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            $table->uuidMorphs('authenticatable', 'k_auth_log_morph');
+>>>>>>> laraxot/dev
             $table->string('ip_address', 45)->nullable();
             $table->text('user_agent')->nullable();
             $table->timestamp('login_at')->nullable();
@@ -53,6 +61,7 @@ return new class extends XotBaseMigration
         $this->tableUpdate(function (Blueprint $table): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // if (! $this->hasColumn('email'))
 =======
             // if (! $this->hasColumn('email')) {
@@ -63,6 +72,9 @@ return new class extends XotBaseMigration
             // if (! $this->hasColumn('email'))
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            // if (! $this->hasColumn('email'))
+>>>>>>> laraxot/dev
             //    $table->string('email')->nullable();
             // }
             $this->updateTimestamps($table);

@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 namespace Modules\User\Tests\Feature;
 
 use Illuminate\Database\Eloquent\Collection;
@@ -31,6 +34,7 @@ beforeEach(function (): void {
 
 describe('User Model', function (): void {
     test('can be created with valid data', function (): void {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -85,10 +89,13 @@ describe('User Model', function (): void {
     test('can be created with valid data', function (): void {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $userData = [
             'name' => 'Test User',
             'first_name' => 'Test',
             'last_name' => 'User',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'email' => 'test-'.uniqid().'@example.com',
@@ -101,6 +108,9 @@ describe('User Model', function (): void {
             'email' => 'test-'.uniqid().'@example.com',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'email' => 'test-'.uniqid().'@example.com',
+>>>>>>> laraxot/dev
             'password' => bcrypt('password'),
             'lang' => 'it',
             'is_active' => true,
@@ -108,6 +118,9 @@ describe('User Model', function (): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $user = UserFactory::new()->createOne($userData);
 
         Assert::assertInstanceOf(User::class, $user);
@@ -137,6 +150,7 @@ describe('User Model', function (): void {
 
     test('has full name accessor', function (): void {
         $user = UserFactory::new()->createOne([
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -208,12 +222,17 @@ describe('User Model Attributes', function () {
         $user = UserFactory::new()->createOne([
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             'first_name' => 'John',
             'last_name' => 'Doe',
         ]);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         Assert::assertSame('John Doe', $user->full_name);
     });
 
@@ -470,6 +489,7 @@ describe('User Model Attributes', function () {
     test('can filter by active users', function (): void {
         UserFactory::new()->createOne(['is_active' => true]);
         UserFactory::new()->createOne(['is_active' => false]);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -938,12 +958,17 @@ describe('User Scopes and Queries', function () {
         UserFactory::new()->createOne(['is_active' => false]);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         $activeUsers = User::where('is_active', true)->get();
         $inactiveUsers = User::where('is_active', false)->get();
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         Assert::assertSame(true, $activeUsers->every(fn (User $user) => $user->is_active));
         Assert::assertSame(true, $inactiveUsers->every(fn (User $user) => ! $user->is_active));
     });
@@ -951,6 +976,7 @@ describe('User Scopes and Queries', function () {
     test('can filter by email verified', function (): void {
         UserFactory::new()->createOne(['email_verified_at' => now()]);
         UserFactory::new()->createOne(['email_verified_at' => null]);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -974,19 +1000,27 @@ describe('User Scopes and Queries', function () {
         UserFactory::new()->createOne(['email_verified_at' => null]);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         $verifiedUsers = User::whereNotNull('email_verified_at')->get();
         $unverifiedUsers = User::whereNull('email_verified_at')->get();
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::assertSame(true, $verifiedUsers->every(fn (User $user) => $user->email_verified_at !== null));
         Assert::assertSame(true, $unverifiedUsers->every(fn (User $user) => $user->email_verified_at === null));
+=======
+        Assert::assertSame(true, $verifiedUsers->every(fn (User $user) => null !== $user->email_verified_at));
+        Assert::assertSame(true, $unverifiedUsers->every(fn (User $user) => null === $user->email_verified_at));
+>>>>>>> laraxot/dev
     });
 
     test('can filter by language', function (): void {
         UserFactory::new()->createOne(['lang' => 'it']);
         UserFactory::new()->createOne(['lang' => 'en']);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -1010,10 +1044,13 @@ describe('User Scopes and Queries', function () {
         UserFactory::new()->createOne(['lang' => 'en']);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         $italianUsers = User::where('lang', 'it')->get();
         $englishUsers = User::where('lang', 'en')->get();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         Assert::assertSame(true, $italianUsers->every(fn (User $user) => $user->lang === 'it'));
@@ -1057,5 +1094,9 @@ describe('User Soft Deletes', function () {
         Assert::assertSame(true, $englishUsers->every(fn (User $user) => $user->lang === 'en'));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        Assert::assertSame(true, $italianUsers->every(fn (User $user) => 'it' === $user->lang));
+        Assert::assertSame(true, $englishUsers->every(fn (User $user) => 'en' === $user->lang));
+>>>>>>> laraxot/dev
     });
 });

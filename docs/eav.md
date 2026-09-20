@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: eav
@@ -16,6 +19,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/eav.txt
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -66,3 +70,5 @@ related:
 See canonical documentation: ../../../Themes/docs/shared-components/eav.txt
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

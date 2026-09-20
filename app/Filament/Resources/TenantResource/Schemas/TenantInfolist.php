@@ -17,10 +17,14 @@ class TenantInfolist extends XotBaseResourceInfolist
      * Campi basati su Model Tenant.php -> id, name, slug, email_address, phone, mobile, address, primary_color, secondary_color, domain, database, is_active, trial_ends_at, settings
      */
 <<<<<<< HEAD
+<<<<<<< HEAD
     public static function getInfolistSchema(): array
 =======
     public function getInfolistSchema(): array
 >>>>>>> 87273113 (.)
+=======
+    public function getInfolistSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'id' => TextEntry::make('id'),

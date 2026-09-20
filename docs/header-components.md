@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Componenti Header"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Componenti Header
 
 ## Struttura e Convenzioni
@@ -119,6 +125,7 @@ related:
 - [Documentazione Filament](https://filamentphp.com/docs)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management-2.md) 
 =======
@@ -133,3 +140,7 @@ related:
 - [Gestione Sessione](./session-management-2.md) 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Best Practices di Sicurezza](./security_best_practices.md)
+- [Gestione Sessione](./session-management-2.md) 
+>>>>>>> laraxot/dev

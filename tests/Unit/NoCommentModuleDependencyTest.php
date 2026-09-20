@@ -6,9 +6,12 @@ namespace Modules\User\Tests\Unit;
 
 use function Safe\file_get_contents;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 test('it does not reference the comment module anywhere under user app', function (): void {
     $appPath = dirname(__DIR__, 2).'/app';
@@ -18,7 +21,11 @@ test('it does not reference the comment module anywhere under user app', functio
 
     /** @var \SplFileInfo $file */
     foreach ($iterator as $file) {
+<<<<<<< HEAD
         if (! $file->isFile() || $file->getExtension() !== 'php') {
+=======
+        if (! $file->isFile() || 'php' !== $file->getExtension()) {
+>>>>>>> laraxot/dev
             continue;
         }
 

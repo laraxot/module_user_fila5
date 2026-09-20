@@ -8,12 +8,16 @@ use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 use function Laravel\Prompts\text;
 
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -34,12 +38,15 @@ use Webmozart\Assert\Assert;
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 class CreateTeamCommand extends Command
 {
     /**
      * The name and signature of the console command.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -50,6 +57,8 @@ class CreateTeamCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $signature = 'user:team-create';
 
@@ -57,6 +66,7 @@ class CreateTeamCommand extends Command
      * The console command description.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      *
      * @var string
@@ -67,6 +77,8 @@ class CreateTeamCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $description = 'Create a team';
 
@@ -82,6 +94,7 @@ class CreateTeamCommand extends Command
             placeholder: 'E.g. Moderator, ',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // default: $user->name,
             // hint: 'This will be displayed on your profile.'
 =======
@@ -96,6 +109,10 @@ class CreateTeamCommand extends Command
             // hint: 'This will be displayed on your profile.'
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            // default: $user->name,
+            // hint: 'This will be displayed on your profile.'
+>>>>>>> laraxot/dev
         );
 
         $modelClass::create([
@@ -104,6 +121,7 @@ class CreateTeamCommand extends Command
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $map = static fn (Model $row) => $row->toArray();
 =======
         $map = static fn(Model $row) => $row->toArray();
@@ -114,6 +132,9 @@ class CreateTeamCommand extends Command
         $map = static fn (Model $row) => $row->toArray();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $map = static fn (Model $row) => $row->toArray();
+>>>>>>> laraxot/dev
 
         $rows = $modelClass::get()->map($map);
 
@@ -129,6 +150,7 @@ class CreateTeamCommand extends Command
             $this->newLine();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $this->warn('⚡ No Teams ['.$modelClass.']');
 =======
             $this->warn('⚡ No Teams [' . $modelClass . ']');
@@ -139,6 +161,9 @@ class CreateTeamCommand extends Command
             $this->warn('⚡ No Teams ['.$modelClass.']');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            $this->warn('⚡ No Teams ['.$modelClass.']');
+>>>>>>> laraxot/dev
             $this->newLine();
         }
     }

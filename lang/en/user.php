@@ -38,6 +38,7 @@ return [
             'helper_text' => '',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -46,6 +47,9 @@ return [
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+>>>>>>> laraxot/dev
         ],
         'email' => [
             'label' => 'Email',
@@ -54,6 +58,9 @@ return [
             'helper_text' => '',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
         ],
         'created_at' => [
@@ -85,6 +92,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -138,6 +146,8 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'password' => [
             'label' => 'Password',
@@ -146,6 +156,7 @@ return [
             'helper_text' => '',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -154,12 +165,18 @@ return [
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+>>>>>>> laraxot/dev
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
             'placeholder' => 'Conferma la password',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -169,6 +186,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
         ],
         'email_verified_at' => [
@@ -190,12 +208,17 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'current_password' => [
             'label' => 'Password Attuale',
             'placeholder' => 'Inserisci la password attuale',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -211,6 +234,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -241,6 +265,8 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
         'status' => [
             'label' => 'Stato',
@@ -251,6 +277,9 @@ return [
             ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -380,6 +409,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -581,6 +611,8 @@ return [
             'description' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         ],
     ],
     'filters' => [
@@ -606,6 +638,7 @@ return [
         'impersonating' => 'Stai impersonando l\'utente :name',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         // Added for LoginWidget
 >>>>>>> f548be94 (.)
@@ -614,6 +647,8 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         'login_success' => 'Login successful',
         'validation_error' => 'Validation error',
         'login_error' => 'An error occurred during login. Please try again later.',
@@ -703,6 +738,9 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     'auth' => [
         'register' => [
             'title' => [
@@ -747,6 +785,7 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< HEAD
 =======
     'model' => [
         'label' => 'Utente',
@@ -803,4 +842,6 @@ return [
     'plural_label' => 'Missing Plural label',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

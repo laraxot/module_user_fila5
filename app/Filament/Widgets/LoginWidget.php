@@ -6,6 +6,9 @@ namespace Modules\User\Filament\Widgets;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Notifications\Notification;
@@ -15,6 +18,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -47,6 +51,8 @@ use Illuminate\Validation\ValidationException;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 /**
  * LoginWidget: Widget di login conforme alle regole Windsurf/Xot.
@@ -55,6 +61,9 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  * - Validazione e sicurezza integrate
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * - Facilmente estendibile (2FA, captcha, login social).
  *
  * @property array<string, mixed>|null $data
@@ -77,6 +86,7 @@ class LoginWidget extends XotBaseSchemaWidget
 
     /**
      * Inizializza il widget quando viene montato.
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -129,6 +139,8 @@ class LoginWidget extends XotBaseSchemaWidget
      * Inizializza il widget quando viene montato.
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     public function mount(): void
     {
@@ -142,6 +154,7 @@ class LoginWidget extends XotBaseSchemaWidget
      */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     #[Override]
 >>>>>>> f548be94 (.)
@@ -150,6 +163,8 @@ class LoginWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public function getFormSchema(): array
     {
         return [
@@ -166,6 +181,7 @@ class LoginWidget extends XotBaseSchemaWidget
     }
 
     /**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -188,10 +204,13 @@ class LoginWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      * Get the form fill data.
      *
      * @return array<string, mixed>
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -202,6 +221,8 @@ class LoginWidget extends XotBaseSchemaWidget
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public function getFormFill(): array
     {
         return [
@@ -212,6 +233,7 @@ class LoginWidget extends XotBaseSchemaWidget
 
     /**
      * Handle login form submission.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
      */
@@ -229,6 +251,9 @@ class LoginWidget extends XotBaseSchemaWidget
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+     */
+>>>>>>> laraxot/dev
     public function save(): void
     {
         try {
@@ -238,6 +263,7 @@ class LoginWidget extends XotBaseSchemaWidget
             $remember = (bool) ($data['remember'] ?? false);
             $attempt_data = Arr::only($data, ['email', 'password']);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             if (! Auth::attempt($attempt_data, $remember)) {
@@ -257,6 +283,10 @@ class LoginWidget extends XotBaseSchemaWidget
                 throw ValidationException::withMessages(['email' => [__('user::messages.failed')]]);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            if (! Auth::attempt($attempt_data, $remember)) {
+                throw ValidationException::withMessages(['email' => [__('user::messages.failed')]]);
+>>>>>>> laraxot/dev
             }
 
             session()->regenerate();
@@ -278,6 +308,9 @@ class LoginWidget extends XotBaseSchemaWidget
             $this->form->saveRelationships();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             // $this->form->callAfter();
 
             foreach ($e->errors() as $field => $messages) {
@@ -292,6 +325,7 @@ class LoginWidget extends XotBaseSchemaWidget
                 )));
             }
         } catch (\Exception $e) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -322,6 +356,8 @@ class LoginWidget extends XotBaseSchemaWidget
         } catch (\Exception $e) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             report($e);
 
             Notification::make()
@@ -334,6 +370,7 @@ class LoginWidget extends XotBaseSchemaWidget
             $this->form->saveRelationships();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // $this->form->callAfter();
 =======
             //$this->form->callAfter();
@@ -344,15 +381,21 @@ class LoginWidget extends XotBaseSchemaWidget
             // $this->form->callAfter();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            // $this->form->callAfter();
+>>>>>>> laraxot/dev
 
             $this->addError('email', __('user::messages.login_error'));
         }
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     /**
      * Get the form model.
@@ -362,9 +405,12 @@ class LoginWidget extends XotBaseSchemaWidget
         return null;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 }

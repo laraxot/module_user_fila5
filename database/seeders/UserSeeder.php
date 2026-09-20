@@ -9,6 +9,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Database\Factories\TeamFactory;
 =======
 >>>>>>> f548be94 (.)
@@ -17,6 +18,9 @@ use Modules\User\Database\Factories\TeamFactory;
 use Modules\User\Database\Factories\TeamFactory;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Modules\User\Database\Factories\TeamFactory;
+>>>>>>> laraxot/dev
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
@@ -42,6 +46,7 @@ class UserSeeder extends Seeder
         // Disabilita i controlli di foreign key (solo per MySQL)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if ('sqlite' !== DB::getDriverName()) {
 =======
         if (DB::getDriverName() !== 'sqlite') {
@@ -52,6 +57,9 @@ class UserSeeder extends Seeder
         if ('sqlite' !== DB::getDriverName()) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if ('sqlite' !== DB::getDriverName()) {
+>>>>>>> laraxot/dev
             DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         }
 
@@ -64,6 +72,7 @@ class UserSeeder extends Seeder
             // Riabilita i controlli di foreign key (solo per MySQL)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ('sqlite' !== DB::getDriverName()) {
 =======
             if (DB::getDriverName() !== 'sqlite') {
@@ -74,6 +83,9 @@ class UserSeeder extends Seeder
             if ('sqlite' !== DB::getDriverName()) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            if ('sqlite' !== DB::getDriverName()) {
+>>>>>>> laraxot/dev
                 DB::statement('SET FOREIGN_KEY_CHECKS=1;');
             }
         }
@@ -191,6 +203,7 @@ class UserSeeder extends Seeder
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->command->info('   ✓ Creati '.count($systemPermissions));
 =======
         $this->command->info('   ✓ Creati ' . count($systemPermissions) . ' permessi di sistema');
@@ -201,6 +214,9 @@ class UserSeeder extends Seeder
         $this->command->info('   ✓ Creati '.count($systemPermissions));
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        $this->command->info('   ✓ Creati '.count($systemPermissions));
+>>>>>>> laraxot/dev
         $this->command->info('   ✓ Creati 4 ruoli di sistema (super-admin, system-admin, moderator, user)');
     }
 
@@ -211,6 +227,7 @@ class UserSeeder extends Seeder
     {
         $this->command->info('👥 Creazione team di sistema...');
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         $adminTeam = $this->createTeam('Amministratori');
@@ -269,6 +286,8 @@ class UserSeeder extends Seeder
 >>>>>>> f548be94 (.)
     }
 =======
+=======
+>>>>>>> laraxot/dev
         $adminTeam = $this->createTeam('Amministratori');
         $devTeam = $this->createTeam('Sviluppatori');
         $supportTeam = $this->createTeam('Supporto Clienti');
@@ -289,5 +308,8 @@ class UserSeeder extends Seeder
 
         return $team;
     }
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
 }

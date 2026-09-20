@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "User Module - PHPStan Fixes Session [DATE]"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # User Module - PHPStan Fixes Session [DATE]
 
 ## ⚠️ Stato: IN PROGRESS - 95 errori rimanenti
@@ -237,6 +243,7 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 - [← User Module README](./readme.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
 - [← Final Report](../../../../docs/phpstan/final-report-session-[date].md)
 - [← Root Documentation](../../../../docs/index.md)
@@ -255,6 +262,11 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 - [← Root Documentation](../../../../docs/index.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
+- [← Final Report](../../../../docs/phpstan/final-report-session-[date].md)
+- [← Root Documentation](../../../../docs/index.md)
+>>>>>>> laraxot/dev
 
 ---
 

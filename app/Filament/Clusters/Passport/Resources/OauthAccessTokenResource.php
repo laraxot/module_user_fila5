@@ -6,14 +6,18 @@ namespace Modules\User\Filament\Clusters\Passport\Resources;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
@@ -28,6 +32,9 @@ use Filament\Schemas\Components\Grid;
 use Filament\Schemas\Components\Section;
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+use Filament\Notifications\Notification;
+>>>>>>> laraxot/dev
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
@@ -36,6 +43,7 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 =======
 use Illuminate\Database\Eloquent\Builder;
 >>>>>>> 60a2c9a9 (.)
@@ -52,6 +60,8 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\User\Actions\Passport\RevokeAllUserTokensAction;
@@ -59,6 +69,7 @@ use Modules\User\Actions\Passport\RevokeTokenAction;
 use Modules\User\Filament\Clusters\Passport;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource\Pages\EditOauthAccessTokens;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource\Pages\ListOauthAccessTokens;
@@ -71,6 +82,8 @@ use Modules\User\Filament\Clusters\Passport\Resources\OauthAccessTokenResource\P
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Models\OauthAccessToken;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -85,11 +98,15 @@ class OauthAccessTokenResource extends XotBaseResource
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
                 TextColumn::make('id')
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -99,15 +116,21 @@ class OauthAccessTokenResource extends XotBaseResource
             ->columns([
                 \Filament\Tables\Columns\TextColumn::make('id')
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
                     ->searchable()
                     ->sortable()
                     ->copyable(),
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 TextColumn::make('user.name')
 =======
                 \Filament\Tables\Columns\TextColumn::make('user.name')
 >>>>>>> 60a2c9a9 (.)
+=======
+                TextColumn::make('user.name')
+>>>>>>> laraxot/dev
                     ->searchable()
                     ->sortable()
                     ->url(function (mixed $record): ?string {
@@ -116,10 +139,14 @@ class OauthAccessTokenResource extends XotBaseResource
                         }
                         $user = $record->user;
 <<<<<<< HEAD
+<<<<<<< HEAD
                         if ($user !== null && method_exists($user, 'exists') && $user->exists) {
 =======
                         if (null !== $user && method_exists($user, 'exists') && $user->exists) {
 >>>>>>> 60a2c9a9 (.)
+=======
+                        if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+>>>>>>> laraxot/dev
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -128,6 +155,9 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->openUrlInNewTab(),
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 TextColumn::make('client.name')
                     ->searchable()
                     ->sortable(),
@@ -139,6 +169,7 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('scopes')
                     ->limit(30)
                     ->tooltip(function (mixed $state): ?string {
+<<<<<<< HEAD
                         if ($state === null) {
 =======
                 \Filament\Tables\Columns\TextColumn::make('client.name')
@@ -154,6 +185,9 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->tooltip(function (mixed $state): ?string {
                         if (null === $state) {
 >>>>>>> 60a2c9a9 (.)
+=======
+                        if (null === $state) {
+>>>>>>> laraxot/dev
                             return null;
                         }
                         if (is_array($state)) {
@@ -165,6 +199,9 @@ class OauthAccessTokenResource extends XotBaseResource
                     }),
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 IconColumn::make('revoked')
                     ->boolean()
                     ->color(fn (bool $state): string => $state ? 'danger' : 'success'),
@@ -174,6 +211,7 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->sortable(),
 
                 TextColumn::make('expires_at')
+<<<<<<< HEAD
 =======
                 \Filament\Tables\Columns\IconColumn::make('revoked')
                     ->boolean()
@@ -185,6 +223,8 @@ class OauthAccessTokenResource extends XotBaseResource
 
                 \Filament\Tables\Columns\TextColumn::make('expires_at')
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
                     ->dateTime()
                     ->sortable()
                     ->formatStateUsing(function (mixed $state): string {
@@ -202,6 +242,9 @@ class OauthAccessTokenResource extends XotBaseResource
             ])
             ->filters([
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 Filter::make('revoked')
                     ->query(fn (Builder $query) => $query->where('revoked', true)),
 
@@ -220,6 +263,7 @@ class OauthAccessTokenResource extends XotBaseResource
                         if ($record instanceof Model) {
                             $key = $record->getKey();
                             if ((is_int($key) || is_string($key)) && app(RevokeTokenAction::class)->execute((string) $key)) {
+<<<<<<< HEAD
 =======
                 \Filament\Tables\Filters\Filter::make('revoked')
                     ->query(fn (Builder $query) => $query->where('revoked', true)),
@@ -241,6 +285,8 @@ class OauthAccessTokenResource extends XotBaseResource
                         if ($record instanceof \Illuminate\Database\Eloquent\Model) {
                             if (app(RevokeTokenAction::class)->execute((string) $record->getKey())) {
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
                                 Notification::make()
                                     ->title(static::trans('actions.revoke.success'))
                                     ->success()
@@ -250,6 +296,9 @@ class OauthAccessTokenResource extends XotBaseResource
                     })
                     ->visible(fn (mixed $record) => $record instanceof OauthAccessToken && ! $record->revoked),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 DeleteAction::make(),
             ])
             ->toolbarActions([
@@ -258,6 +307,7 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->color('danger')
                     ->requiresConfirmation()
                     ->action(function (Collection $records): void {
+<<<<<<< HEAD
 =======
                 \Filament\Actions\DeleteAction::make(),
             ])
@@ -269,6 +319,8 @@ class OauthAccessTokenResource extends XotBaseResource
                     ->requiresConfirmation()
                     ->action(function (Collection $records) {
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
                         $users = $records->pluck('user_id')->unique();
                         $count = 0;
                         foreach ($users as $userId) {
@@ -282,16 +334,23 @@ class OauthAccessTokenResource extends XotBaseResource
                             ->send();
                     }),
 <<<<<<< HEAD
+<<<<<<< HEAD
                 DeleteBulkAction::make(),
 =======
                 \Filament\Actions\DeleteBulkAction::make(),
 >>>>>>> 60a2c9a9 (.)
+=======
+                DeleteBulkAction::make(),
+>>>>>>> laraxot/dev
             ])
             ->defaultSort('created_at', 'desc');
     }
 
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @return array<string, Column>
      */
     public function getTableColumns(): array
@@ -310,7 +369,11 @@ class OauthAccessTokenResource extends XotBaseResource
                         return null;
                     }
                     $user = $record->user;
+<<<<<<< HEAD
                     if ($user !== null && method_exists($user, 'exists') && $user->exists) {
+=======
+                    if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+>>>>>>> laraxot/dev
                         return UserResource::getUrl('view', ['record' => $user]);
                     }
 
@@ -329,7 +392,11 @@ class OauthAccessTokenResource extends XotBaseResource
             'scopes' => TextColumn::make('scopes')
                 ->limit(30)
                 ->tooltip(function (mixed $state): ?string {
+<<<<<<< HEAD
                     if ($state === null) {
+=======
+                    if (null === $state) {
+>>>>>>> laraxot/dev
                         return null;
                     }
                     if (is_array($state)) {
@@ -433,6 +500,7 @@ class OauthAccessTokenResource extends XotBaseResource
                         ->send();
                 }),
             'delete' => DeleteBulkAction::make(),
+<<<<<<< HEAD
 =======
      * @return array<string, \Filament\Resources\Pages\PageRegistration>
      */
@@ -620,6 +688,8 @@ class OauthAccessTokenResource extends XotBaseResource
                 }),
             'delete' => DeleteBulkAction::make(),
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
         ];
     }
 

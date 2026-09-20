@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "DRY & KISS Analysis - Modulo User"
 type: concept
@@ -151,6 +152,8 @@ abstract class BaseModel extends XotBaseModel
     
     protected $connection = 'user';
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "DRY & KISS Analysis - Modulo User"
 type: concept
@@ -187,11 +190,15 @@ related:
 abstract class BaseModel extends XotBaseModel
 {
     protected $connection = 'user';  // SOLO questa proprietà!
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
     
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
+<<<<<<< HEAD
 <<<<<<< HEAD
             'id' => 'string',
             'uuid' => 'string',
@@ -203,11 +210,15 @@ abstract class BaseModel extends XotBaseModel
             'verified_at' => 'datetime',  // Domain-specific
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'verified_at' => 'datetime',  // Domain-specific
+>>>>>>> laraxot/dev
         ]);
     }
 }
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 **Righe:** 12
@@ -558,6 +569,8 @@ find docs/ -name "*old*" -o -name "*backup*" -o -name "*deprecated*"
 
 🐄 **MU-UU-UU!** 🐄
 =======
+=======
+>>>>>>> laraxot/dev
 **Righe:** 12  
 **DRY Level:** ✅ 98%
 
@@ -653,6 +666,10 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 ---
 
 **Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 
 >>>>>>> 60a2c9a9 (.)
+=======
+
+>>>>>>> laraxot/dev

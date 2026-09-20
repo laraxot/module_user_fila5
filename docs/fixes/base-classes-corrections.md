@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Correzione Estensioni Classi Base - Modulo User"
 type: concept
@@ -23,11 +26,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Correzione Estensioni Classi Base - Modulo User
 
 **Data:** 15 Ottobre 2025  
@@ -256,6 +262,7 @@ php artisan test --filter=ModelTest
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **`docs/fixes/base-classes-corrections-.md.md`** (QUESTO FILE)
 =======
 2. **`docs/fixes/base-classes-corrections-2025-10-15.md`** (QUESTO FILE)
@@ -266,6 +273,9 @@ php artisan test --filter=ModelTest
 2. **`docs/fixes/base-classes-corrections-.md.md`** (QUESTO FILE)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+2. **`docs/fixes/base-classes-corrections-.md.md`** (QUESTO FILE)
+>>>>>>> laraxot/dev
    - Riepilogo correzioni
    - Motivazioni tecniche
    - Before/After comparisons
@@ -336,6 +346,7 @@ e
 Questo pattern di correzione può essere applicato a:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Modulo ExternalProject**: Verificare QuestionChart, SurveyPdf, Contact
 =======
 - **Modulo Quaeris**: Verificare QuestionChart, SurveyPdf, Contact
@@ -346,6 +357,9 @@ Questo pattern di correzione può essere applicato a:
 - **Modulo ExternalProject**: Verificare QuestionChart, SurveyPdf, Contact
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- **Modulo ExternalProject**: Verificare QuestionChart, SurveyPdf, Contact
+>>>>>>> laraxot/dev
 - **Modulo Blog**: Verificare Post, Category, Tag
 - **Modulo Dental**: Verificare Visit, Treatment, Patient
 - **Tutti gli altri moduli**: Audit sistematico
@@ -373,6 +387,7 @@ grep -r "extends Model" laravel/Modules/*/app/Models/*.php | grep -v "BaseModel\
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -386,3 +401,5 @@ grep -r "extends Model" laravel/Modules/*/app/Models/*.php | grep -v "BaseModel\
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

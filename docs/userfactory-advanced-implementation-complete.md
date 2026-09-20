@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # UserFactory Advanced Implementation - COMPLETE ✅
 
 ## 🎉 Mission Accomplished
@@ -663,6 +664,8 @@ $gdprTests = [
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: userfactory-advanced-implementation-complete
@@ -679,5 +682,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/userfactory-advanced-implementation-complete.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

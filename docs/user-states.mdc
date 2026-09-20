@@ -1,12 +1,16 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 module: theme
 topic: user-states
 canonical: ../../../Themes/docs/shared-components/user-states.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-states.md
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -71,3 +75,5 @@ canonical: ../../../Themes/docs/shared-components/user-states.md
 See canonical documentation: ../../../Themes/docs/shared-components/user-states.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

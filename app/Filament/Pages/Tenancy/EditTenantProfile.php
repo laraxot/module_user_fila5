@@ -6,12 +6,16 @@ namespace Modules\User\Filament\Pages\Tenancy;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Filament\Schemas\Schema;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Pages\Tenancy\XotBaseEditTenantProfile;
 use Webmozart\Assert\Assert;
 
 class EditTenantProfile extends XotBaseEditTenantProfile
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -33,6 +37,8 @@ use Webmozart\Assert\Assert;
 class EditTenantProfile extends XotBaseEditTenantProfile
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 {
     public static function getLabel(): string
     {
@@ -41,11 +47,15 @@ class EditTenantProfile extends XotBaseEditTenantProfile
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     public function schema(Schema $schema): Schema
     {
         $resource = XotData::make()->getTenantResourceClass();
 
         Assert::isInstanceOf($res = $resource::schema($schema), Schema::class);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -65,6 +75,8 @@ class EditTenantProfile extends XotBaseEditTenantProfile
         Assert::isInstanceOf($res = $resource::schema($schema), Schema::class);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
         return $res;
 

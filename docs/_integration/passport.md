@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: passport
@@ -15,6 +18,7 @@ related:
   - "./profile.md"
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../../Themes/docs/shared-components/passport.md
 =======
 =======
@@ -46,3 +50,6 @@ related:
 See canonical documentation: ../../../../Themes/docs/shared-components/passport.md
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/passport.md
+>>>>>>> laraxot/dev

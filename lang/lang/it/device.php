@@ -12,6 +12,9 @@ return [
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'first_name' => 'Nome',
         'last_name' => 'Cognome',
         'id' => [
@@ -49,6 +52,7 @@ return [
         ],
         'is_phone' => [
             'label' => 'is_phone',
+<<<<<<< HEAD
 =======
         'first_name' => [
             'label' => 'Nome',
@@ -134,6 +138,8 @@ return [
             'helper_text' => '',
             'description' => '',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -154,8 +160,11 @@ return [
         ],
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

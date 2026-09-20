@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> f548be94 (.)
@@ -12,12 +13,17 @@ declare(strict_types=1);
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 return [
     'navigation' => [
         'name' => 'Password',
         'plural' => 'Passwords',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'group' => ['name' => 'Admin'],
     ],
     'fields' => [
@@ -74,6 +80,7 @@ return [
             'columns' => ['name' => 'Nome area', 'parent_name' => 'Nome area livello superiore'],
         ],
         'change_password' => 'Cambio password',
+<<<<<<< HEAD
         'updateDataAction' => ['label' => 'updateDataAction'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
@@ -223,4 +230,13 @@ return [
     'plural_label' => 'Password (Plurale)',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'updateDataAction' => ['label' => 'updateDataAction', 'icon' => 'updateDataAction', 'tooltip' => 'updateDataAction'],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'profile' => ['label' => 'profile', 'icon' => 'profile', 'tooltip' => 'profile'],
+        'logout' => ['label' => 'logout', 'icon' => 'logout', 'tooltip' => 'logout'],
+    ],
+    'label' => 'Password',
+    'plural_label' => 'Password (Plurale)',
+>>>>>>> laraxot/dev
 ];

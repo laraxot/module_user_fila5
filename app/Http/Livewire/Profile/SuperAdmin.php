@@ -34,6 +34,9 @@ class SuperAdmin extends Component
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         /** @var view-string $viewName */
         $viewName = 'user::livewire.profile.super-admin';
         $view_params = [
@@ -41,6 +44,7 @@ class SuperAdmin extends Component
         ];
 
         return view($viewName, $view_params);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -63,5 +67,7 @@ class SuperAdmin extends Component
         return view($viewName, $view_params);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

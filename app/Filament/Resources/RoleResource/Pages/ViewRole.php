@@ -6,6 +6,7 @@ namespace Modules\User\Filament\Resources\RoleResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
@@ -23,12 +24,15 @@ use Filament\Pages\Actions\EditAction;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\RoleResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
 class ViewRole extends XotBaseViewRecord
 {
     protected static string $resource = RoleResource::class;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     /**
@@ -68,4 +72,6 @@ class ViewRole extends XotBaseViewRecord
     }
 =======
 >>>>>>> 2024e2e7 (.)
+=======
+>>>>>>> laraxot/dev
 }

@@ -11,6 +11,7 @@ namespace Modules\User\Actions\Socialite;
 use Spatie\QueueableAction\QueueableAction;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Webmozart\Assert\Assert;
 >>>>>>> f548be94 (.)
@@ -19,6 +20,8 @@ use Webmozart\Assert\Assert;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 class IsRegistrationEnabledAction
 {
@@ -31,6 +34,7 @@ class IsRegistrationEnabledAction
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return (bool) config('socialite.registration', true);
 =======
         Assert::boolean($res = config('filament-socialite.registration'));
@@ -45,5 +49,8 @@ class IsRegistrationEnabledAction
         return (bool) config('socialite.registration', true);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        return (bool) config('socialite.registration', true);
+>>>>>>> laraxot/dev
     }
 }

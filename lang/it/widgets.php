@@ -75,6 +75,7 @@ return [
             'is_otp' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 'label' => 'Autenticazione a Due Fattori (OTP]',
 =======
                 'label' => 'Autenticazione a Due Fattori (OTP)',
@@ -85,6 +86,9 @@ return [
                 'label' => 'Autenticazione a Due Fattori (OTP]',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+                'label' => 'Autenticazione a Due Fattori (OTP]',
+>>>>>>> laraxot/dev
                 'help' => 'Abilita l\'autenticazione a due fattori per maggiore sicurezza',
             ],
             'password_expires_at' => [
@@ -184,9 +188,12 @@ return [
     ],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     'navigation' => [
         'name' => 'Widgets',
         'plural' => 'Widgets',
@@ -236,9 +243,12 @@ return [
         'label' => 'Numero di accessi eseguiti',
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> f548be94 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

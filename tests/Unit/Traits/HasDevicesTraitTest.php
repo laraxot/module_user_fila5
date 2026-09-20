@@ -8,9 +8,12 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Modules\User\Models\Device;
 use Modules\User\Tests\TestCase;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 

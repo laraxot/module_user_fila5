@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 return [
     'fields' => [
         'name' => [
@@ -161,6 +164,7 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -354,5 +358,7 @@ return [
     'actions' => [
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     ],
 ];

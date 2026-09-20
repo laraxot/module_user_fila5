@@ -21,6 +21,7 @@ return new class extends XotBaseMigration {
             $table->string('role')->nullable();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             $table->timestamp('accepted_at')->nullable();
             $table->timestamp('declined_at')->nullable();
 =======
@@ -31,6 +32,10 @@ return new class extends XotBaseMigration {
             $table->timestamp('declined_at')->nullable();
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            $table->timestamp('accepted_at')->nullable();
+            $table->timestamp('declined_at')->nullable();
+>>>>>>> laraxot/dev
 
             // $table->unique(['team_id', 'email']);
         });
@@ -39,6 +44,9 @@ return new class extends XotBaseMigration {
         $this->tableUpdate(function (Blueprint $table): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             if (! $this->hasColumn('accepted_at')) {
                 $table->timestamp('accepted_at')->nullable();
             }
@@ -50,6 +58,7 @@ return new class extends XotBaseMigration {
             }
 
             // if ($hasIndexName('team_invitations_team_id_foreign'))
+<<<<<<< HEAD
 =======
             // if ($this->hasIndexName('team_invitations_team_id_foreign')) {
 >>>>>>> f548be94 (.)
@@ -69,6 +78,8 @@ return new class extends XotBaseMigration {
             // if ($hasIndexName('team_invitations_team_id_foreign'))
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             //    $table->dropForeign('team_invitations_team_id_foreign');
             // }
 

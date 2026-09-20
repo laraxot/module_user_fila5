@@ -8,9 +8,12 @@ use Illuminate\Support\Facades\Log;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 /**
@@ -53,6 +56,7 @@ class UserObserver
             // Imposta come current team
             $teamId = $personalTeam->id;
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (is_int($teamId)) {
                 $user->current_team_id = $teamId;
             } elseif (is_string($teamId) && is_numeric($teamId)) {
@@ -63,6 +67,9 @@ class UserObserver
 =======
             $user->current_team_id = is_numeric($teamId) ? (int) $teamId : null;
 >>>>>>> 60a2c9a9 (.)
+=======
+            $user->current_team_id = is_numeric($teamId) ? (int) $teamId : null;
+>>>>>>> laraxot/dev
             $user->saveQuietly(); // Evita di triggerare eventi ricorsivi
         } catch (\Throwable $e) {
             // Log dell'errore ma non bloccare la creazione dell'utente

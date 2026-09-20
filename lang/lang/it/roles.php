@@ -7,6 +7,9 @@ return [
         'id' => [
             'label' => 'id',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         ],
         'name' => [
             'label' => 'name',
@@ -15,6 +18,7 @@ return [
             'label' => 'team_id',
         ],
     ],
+<<<<<<< HEAD
 =======
             'tooltip' => '',
             'helper_text' => '',
@@ -45,4 +49,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

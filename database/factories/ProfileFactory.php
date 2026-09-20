@@ -6,6 +6,9 @@ namespace Modules\User\Database\Factories;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\Profile;
 
@@ -14,6 +17,7 @@ use Modules\User\Models\Profile;
  */
 class ProfileFactory extends Factory
 {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -39,12 +43,17 @@ class ProfileFactory extends Factory
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     protected $model = Profile::class;
 
     /**
      * Define the model's default state.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      *
      * @return array<string, mixed>
      */
@@ -64,6 +73,7 @@ class ProfileFactory extends Factory
             'birth_date' => $this->faker->date(),
             'status' => 'active',
         ];
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -96,5 +106,7 @@ class ProfileFactory extends Factory
         ];
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

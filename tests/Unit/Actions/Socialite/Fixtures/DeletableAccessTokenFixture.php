@@ -5,9 +5,12 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit\Actions\Socialite\Fixtures;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Models\User;
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 /**
  * Minimal access-token stub for logout action tests.
  */

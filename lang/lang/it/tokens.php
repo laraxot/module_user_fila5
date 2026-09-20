@@ -7,6 +7,7 @@ return [
         'name' => [
             'label' => 'name',
 <<<<<<< HEAD
+<<<<<<< HEAD
         ],
     ],
 =======
@@ -27,4 +28,8 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+        ],
+    ],
+>>>>>>> laraxot/dev
 ];

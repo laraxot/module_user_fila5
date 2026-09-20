@@ -5,6 +5,7 @@
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> f548be94 (.)
@@ -13,12 +14,16 @@
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+
+>>>>>>> laraxot/dev
 declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Throwable;
 >>>>>>> f548be94 (.)
@@ -27,6 +32,8 @@ use Throwable;
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Resources\TenantResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
@@ -38,6 +45,9 @@ class CreateTenant extends XotBaseCreateRecord
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      * @throws \Throwable
      */
     protected function handleRecordCreation(array $data): Model
@@ -46,6 +56,7 @@ class CreateTenant extends XotBaseCreateRecord
         $filteredData = collect($data)->except('domain')->toArray();
 
         return parent::handleRecordCreation($filteredData);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -68,6 +79,8 @@ class CreateTenant extends XotBaseCreateRecord
         return parent::handleRecordCreation($filteredData);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 
     // :30    Method Modules\User\Filament\Resources\TenantResource\Pages\CreateTenant::createTenantRecord() is unused.
@@ -79,10 +92,14 @@ class CreateTenant extends XotBaseCreateRecord
     // {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     //     \Log::debug('Saving Tenant');
     //     $record = new Tenant(collect($data)->except('domain')->toArray());
     //     $record->saveOrFail();
     //     \Log::debug('Saving Domains');
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -100,6 +117,8 @@ class CreateTenant extends XotBaseCreateRecord
     //     \Log::debug('Saving Domains');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     //     $record = $record::find($record->);
     //     $record->domains()->create(['domain' => collect($data)->get('domain')]);
     //     return $record;

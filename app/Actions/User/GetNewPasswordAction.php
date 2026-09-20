@@ -6,6 +6,7 @@ namespace Modules\User\Actions\User;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Contracts\Hashing\Hasher;
 use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
 use Modules\Xot\Contracts\UserContract;
@@ -28,6 +29,11 @@ use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
 use Modules\Xot\Contracts\UserContract;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Contracts\Hashing\Hasher;
+use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
+use Modules\Xot\Contracts\UserContract;
+>>>>>>> laraxot/dev
 use Spatie\QueueableAction\QueueableAction;
 
 class GetNewPasswordAction
@@ -38,6 +44,9 @@ class GetNewPasswordAction
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $user = $record;
 
         return once(function () use ($user) {
@@ -52,6 +61,7 @@ class GetNewPasswordAction
 
             return $plainPassword;
         });
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -99,5 +109,7 @@ class GetNewPasswordAction
         });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

@@ -6,11 +6,15 @@ namespace Modules\User\Http\Livewire\Auth;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 use Modules\Xot\Actions\File\ViewCopyAction;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -30,6 +34,8 @@ use Livewire\Component;
 use Modules\Xot\Actions\File\ViewCopyAction;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 class Verify extends Component
@@ -38,6 +44,7 @@ class Verify extends Component
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert::notNull($user = Auth::user(), '['.__LINE__.']['.class_basename($this).']');
 =======
         Assert::notNull($user = Auth::user(), '[' . __LINE__ . '][' . class_basename($this) . ']');
@@ -48,6 +55,9 @@ class Verify extends Component
         Assert::notNull($user = Auth::user(), '['.__LINE__.']['.class_basename($this).']');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        Assert::notNull($user = Auth::user(), '['.__LINE__.']['.class_basename($this).']');
+>>>>>>> laraxot/dev
         if ($user->hasVerifiedEmail()) {
             redirect(route('home'));
         }
@@ -72,11 +82,15 @@ class Verify extends Component
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $result = view($view)->extends('pub_theme::layouts.auth');
         Assert::isInstanceOf($result, View::class);
 
         /* @var View $result */
         return $result;
+<<<<<<< HEAD
 =======
         return view($view)->extends('pub_theme::layouts.auth');
 >>>>>>> f548be94 (.)
@@ -90,5 +104,7 @@ class Verify extends Component
         return $result;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

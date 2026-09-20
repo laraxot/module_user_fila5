@@ -11,6 +11,9 @@
  *
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
  * @param string $id   the ID of the user to be verified
  * @param string $hash the hash of the user's email address
  *
@@ -19,6 +22,7 @@
  * @return RedirectResponse a redirect response to the home page
  */
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -42,10 +46,13 @@
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 declare(strict_types=1);
 
 namespace Modules\User\Http\Controllers\Auth;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Illuminate\Auth\Access\AuthorizationException;
@@ -67,6 +74,11 @@ use Illuminate\Auth\Events\Verified;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Auth\Events\Verified;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+>>>>>>> laraxot/dev
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 use Modules\User\Http\Controllers\Controller;
@@ -78,6 +90,9 @@ class EmailVerificationController extends Controller
         $user = Auth::user();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         if (null === $user) {
             throw new AuthorizationException();
         }
@@ -87,6 +102,7 @@ class EmailVerificationController extends Controller
         }
 
         if (! hash_equals($hash, sha1($user->getEmailForVerification()))) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -114,6 +130,8 @@ class EmailVerificationController extends Controller
         if (! hash_equals($hash, sha1($user->getEmailForVerification()))) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             throw new AuthorizationException();
         }
 
@@ -124,6 +142,7 @@ class EmailVerificationController extends Controller
         $user->markEmailAsVerified();
 
         // Verificare che l'utente implementi l'interfaccia MustVerifyEmail
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (! $user instanceof MustVerifyEmail) {
@@ -140,6 +159,10 @@ class EmailVerificationController extends Controller
             throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia MustVerifyEmail');
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! $user instanceof MustVerifyEmail) {
+            throw new \InvalidArgumentException('L\'utente deve implementare l\'interfaccia MustVerifyEmail');
+>>>>>>> laraxot/dev
         }
 
         event(new Verified($user));

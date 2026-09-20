@@ -11,6 +11,7 @@ return [
             'description' => 'email',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -19,6 +20,9 @@ return [
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+>>>>>>> laraxot/dev
         ],
         'password' => [
             'label' => 'password',
@@ -27,6 +31,7 @@ return [
             'description' => 'password',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             'tooltip' => '',
 =======
 >>>>>>> f548be94 (.)
@@ -35,12 +40,16 @@ return [
             'tooltip' => '',
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+>>>>>>> laraxot/dev
         ],
         'password_confirmation' => [
             'label' => 'password_confirmation',
             'placeholder' => 'password_confirmation',
             'helper_text' => '',
             'description' => 'password_confirmation',
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             'tooltip' => '',
@@ -54,6 +63,11 @@ return [
         ],
     ],
 >>>>>>> 87273113 (.)
+=======
+            'tooltip' => '',
+        ],
+    ],
+>>>>>>> laraxot/dev
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -66,6 +80,7 @@ return [
     'actions' => [
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         ],
     ],
@@ -73,4 +88,6 @@ return [
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ];

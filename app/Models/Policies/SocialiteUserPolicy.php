@@ -6,6 +6,7 @@ namespace Modules\User\Models\Policies;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 class SocialiteUserPolicy extends UserBasePolicy
 {
 =======
@@ -91,4 +92,8 @@ class SocialiteUserPolicy extends UserBasePolicy
 {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+class SocialiteUserPolicy extends UserBasePolicy
+{
+>>>>>>> laraxot/dev
 }

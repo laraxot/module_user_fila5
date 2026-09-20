@@ -7,6 +7,9 @@ namespace Modules\User\Console\Commands;
 use Illuminate\Console\Command;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
@@ -15,6 +18,7 @@ use Modules\User\Models\Role;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Contracts\RepositoryInterface;
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -39,10 +43,14 @@ use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Contracts\RepositoryInterface;
 
 >>>>>>> 2024e2e7 (.)
+=======
+
+>>>>>>> laraxot/dev
 class AssignModuleCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -55,6 +63,8 @@ class AssignModuleCommand extends Command
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
      */
     protected $name = 'user:assign-module';
 
@@ -62,6 +72,9 @@ class AssignModuleCommand extends Command
      * The console command description.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
      */
     protected $description = 'Assign or revoke modules to/from user';
 
@@ -71,6 +84,7 @@ class AssignModuleCommand extends Command
     ) {
         parent::__construct();
     }
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -100,6 +114,8 @@ class AssignModuleCommand extends Command
     }
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
     /**
      * Execute the console command.
@@ -113,6 +129,7 @@ class AssignModuleCommand extends Command
          */
         $user = XotData::make()->getUserByEmail($email);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         if (! $user) {
@@ -131,12 +148,20 @@ class AssignModuleCommand extends Command
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        if (! $user) {
+            $this->error("User with email '{$email}' not found.");
+
+>>>>>>> laraxot/dev
             return;
         }
 
         // Get all available modules
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         /** @var array<string, mixed> $allModules */
         $allModules = $this->moduleRepository->all();
 
@@ -162,6 +187,7 @@ class AssignModuleCommand extends Command
         $selectedModules = multiselect(
             label: 'Select modules (checked = assigned, unchecked = will be revoked)',
             options: $moduleOptions,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -209,6 +235,8 @@ class AssignModuleCommand extends Command
             options: $moduleOptions,
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
             default: $currentModules, // Show current modules as checked
             required: false, // Allow empty selection
             scroll: 10,
@@ -222,11 +250,15 @@ class AssignModuleCommand extends Command
         foreach ($modulesToAssign as $module) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             $moduleLower = strtolower(is_string($module) ? $module : ((string) $module));
             $roleName = $moduleLower.'::admin';
 
             // Create or get the role with the web guard
             $role = $this->roleModel->firstOrCreate(['name' => $roleName], []);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -246,6 +278,8 @@ class AssignModuleCommand extends Command
             $role = $this->roleModel->firstOrCreate(['name' => $roleName], []);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
             // Assign the role to the user
             $user->assignRole($role);
@@ -257,11 +291,15 @@ class AssignModuleCommand extends Command
         foreach ($modulesToRevoke as $module) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             $moduleLower = strtolower(is_string($module) ? $module : ((string) $module));
             $roleName = $moduleLower.'::admin';
 
             // Revoke the role from the user
             $user->removeRole($roleName);
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -281,6 +319,8 @@ class AssignModuleCommand extends Command
             $user->removeRole($roleName);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 
             $this->warn("✗ Revoked module: {$module}");
         }
@@ -290,10 +330,14 @@ class AssignModuleCommand extends Command
             $this->info('No changes made to user modules.');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 
             return;
         }
         $this->info("Module assignment updated for {$email}");
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -340,5 +384,7 @@ class AssignModuleCommand extends Command
         $this->info("Module assignment updated for {$email}");
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     }
 }

@@ -12,6 +12,9 @@ return new class extends XotBaseMigration {
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $tableNames = config('permission.table_names');
         $columnNames = config('permission.column_names');
         $teams = config('permission.teams');
@@ -29,6 +32,7 @@ return new class extends XotBaseMigration {
         $cache_store = config('permission.cache.store');
         $store = is_string($cache_store) && 'default' !== $cache_store ? $cache_store : null;
 
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -88,10 +92,13 @@ return new class extends XotBaseMigration {
 
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
         $cache_key = config('permission.cache.key');
 
         try {
             // Verifica se l'applicazione è completamente inizializzata
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             if (app()->bound('cache') && is_string($cache_key)) {
@@ -108,6 +115,10 @@ return new class extends XotBaseMigration {
                 app('cache')->store($store)->forget($cache_key);
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            if (app()->bound('cache') && is_string($cache_key)) {
+                app('cache')->store($store)->forget($cache_key);
+>>>>>>> laraxot/dev
             }
         } catch (Exception $e) {
             // Silently ignore cache errors during package discovery

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Guida Rendering Widget Filament 4 - Modulo User"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Guida Rendering Widget Filament 4 - Modulo User
 
 **Modulo**: User  
@@ -411,6 +417,7 @@ class LoginWidget extends XotBaseWidget
 - [Livewire 3](https://livewire.laravel.com/docs/3.x)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Laraxot Widget Rules](./auth-widget-rules.md)
 =======
 - [Laraxot Widget Rules](./auth_widget_rules.md)
@@ -421,6 +428,9 @@ class LoginWidget extends XotBaseWidget
 - [Laraxot Widget Rules](./auth-widget-rules.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [Laraxot Widget Rules](./auth-widget-rules.md)
+>>>>>>> laraxot/dev
 
 ## 🎯 Conclusione
 

@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: placeholder
@@ -16,6 +19,7 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/placeholder.txt
+<<<<<<< HEAD
 =======
 https://jsonplaceholder.typicode.com/users
 >>>>>>> 60a2c9a9 (.)
@@ -40,3 +44,5 @@ related:
 See canonical documentation: ../../../Themes/docs/shared-components/placeholder.txt
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

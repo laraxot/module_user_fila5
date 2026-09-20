@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Fix: Duplicate Entry Error in team_user Table - Conversione UUID a Autoincrement"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Fix: Duplicate Entry Error in team_user Table - Conversione UUID a Autoincrement
 
 ## Data Intervento
@@ -248,6 +254,7 @@ Quando si crea un modello pivot che usa autoincrement come PRIMARY KEY:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> 60a2c9a9 (.)
@@ -256,3 +263,5 @@ Quando si crea un modello pivot che usa autoincrement come PRIMARY KEY:
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

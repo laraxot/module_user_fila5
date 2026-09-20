@@ -775,6 +775,7 @@ class UserMetadata implements CastsAttributes
 3. Security audits
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il modulo User rappresenta la spina dorsale dell'applicazione e richiede particular attenzione per refactoring e ottimizzazione seguendo principi SOLID e DRY.
 
 
@@ -788,3 +789,6 @@ Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, 
 =======
 Il modulo User rappresenta la spina dorsale dell'applicazione e richiede particular attenzione per refactoring e ottimizzazione seguendo principi SOLID e DRY.
 >>>>>>> 60a2c9a9 (.)
+=======
+Il modulo User rappresenta la spina dorsale dell'applicazione e richiede particular attenzione per refactoring e ottimizzazione seguendo principi SOLID e DRY.
+>>>>>>> laraxot/dev

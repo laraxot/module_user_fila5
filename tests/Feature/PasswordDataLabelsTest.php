@@ -6,6 +6,7 @@ namespace Modules\User\Tests\Feature;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\User\Datas\PasswordData;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -89,6 +90,8 @@ test('login form labels are translated', function (): void {
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 use Modules\User\Datas\PasswordData;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -113,6 +116,9 @@ describe('Password Data Labels', function (): void {
         /* @var TestCase $this */
         $this->skipTest('Login Livewire form labels — coperto da widget Filament LoginWidgetTest');
     });
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

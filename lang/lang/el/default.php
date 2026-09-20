@@ -90,11 +90,15 @@ return [
             'not_enabled' => [
                 'title' => 'You have not enabled two factor authentication.',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                 'description' => "When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application.",
             ],
             'finish_enabling' => [
                 'title' => 'Finish enabling two factor authentication.',
                 'description' => "To finish enabling two factor authentication, scan the following QR code using your phone's authenticator application or enter the setup key and provide the generated OTP code.",
+<<<<<<< HEAD
 =======
                 'description' => 'When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone\'s Google Authenticator application.',
             ],
@@ -102,6 +106,8 @@ return [
                 'title' => 'Finish enabling two factor authentication.',
                 'description' => 'To finish enabling two factor authentication, scan the following QR code using your phone\'s authenticator application or enter the setup key and provide the generated OTP code.',
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
             ],
             'enabled' => [
                 'title' => 'You have enabled two factor authentication!',
@@ -131,14 +137,21 @@ return [
     ],
     'clipboard' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
         // 'link' => 'In die Zwischenablage kopieren',
 =======
 >>>>>>> 60a2c9a9 (.)
+=======
+        // 'link' => 'In die Zwischenablage kopieren',
+>>>>>>> laraxot/dev
         'link' => 'Αντιγραφή στο πρόχειρο',
         'tooltip' => 'Αντιγράφηκε!',
     ],
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         'email' => 'Email',
         'login' => 'Συνδεθείτε',
         'name' => 'Όνομα',
@@ -155,6 +168,7 @@ return [
     ],
     'or' => 'ή',
     'cancel' => 'Ακύρωση',
+<<<<<<< HEAD
 =======
         'email' => [
             'label' => 'Email',
@@ -249,4 +263,6 @@ return [
     'actions' => [
     ],
 >>>>>>> 60a2c9a9 (.)
+=======
+>>>>>>> laraxot/dev
 ];

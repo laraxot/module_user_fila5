@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
@@ -246,6 +247,8 @@ return [
 >>>>>>> f548be94 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 declare(strict_types=1);
 
 return [
@@ -296,10 +299,29 @@ return [
         'view' => ['label' => 'Visualizza', 'tooltip' => 'Visualizza dettagli', 'helper_text' => 'Visualizza i dettagli del tenant', 'description' => 'Azione per visualizzare', 'icon' => 'heroicon-o-eye'],
         'save' => ['label' => 'Salva', 'tooltip' => 'Salva modifiche', 'helper_text' => 'Salva le modifiche', 'description' => 'Azione per salvare', 'icon' => 'heroicon-o-check'],
         'cancel' => ['label' => 'Annulla', 'tooltip' => 'Annulla operazione', 'helper_text' => 'Annulla e torna indietro', 'description' => 'Azione per annullare', 'icon' => 'heroicon-o-x-mark'],
+<<<<<<< HEAD
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'detach' => ['label' => 'detach', 'icon' => 'detach', 'tooltip' => 'detach'],
     ],
     'messages' => ['created' => 'Tenant creato con successo', 'updated' => 'Tenant aggiornato con successo', 'deleted' => 'Tenant eliminato con successo'],
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+        'logout' => ['tooltip' => 'logout', 'icon' => 'logout', 'label' => 'logout'],
+        'profile' => ['tooltip' => 'profile', 'icon' => 'profile'],
+        'reorderRecords' => ['tooltip' => 'reorderRecords', 'label' => 'reorderRecords', 'icon' => 'reorderRecords'],
+        'attachAnother' => ['tooltip' => 'attachAnother', 'icon' => 'attachAnother', 'label' => 'attachAnother'],
+        'detach' => ['tooltip' => 'detach', 'label' => 'detach', 'icon' => 'detach'],
+        'attach' => ['label' => 'attach', 'icon' => 'attach', 'tooltip' => 'attach'],
+        'submit' => ['label' => 'submit', 'icon' => 'submit', 'tooltip' => 'submit'],
+        'applyFilters' => ['label' => 'applyFilters', 'icon' => 'applyFilters', 'tooltip' => 'applyFilters'],
+        'openFilters' => ['label' => 'openFilters', 'icon' => 'openFilters', 'tooltip' => 'openFilters'],
+        'resetFilters' => ['label' => 'resetFilters', 'icon' => 'resetFilters', 'tooltip' => 'resetFilters'],
+        'applyTableColumnManager' => ['label' => 'applyTableColumnManager', 'icon' => 'applyTableColumnManager', 'tooltip' => 'applyTableColumnManager'],
+        'openColumnManager' => ['label' => 'openColumnManager', 'icon' => 'openColumnManager', 'tooltip' => 'openColumnManager'],
+        'resetColumnManager' => ['label' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'tooltip' => 'resetColumnManager'],
+        'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
+    ],
+    'messages' => ['created' => 'Tenant creato con successo', 'updated' => 'Tenant aggiornato con successo', 'deleted' => 'Tenant eliminato con successo'],
+>>>>>>> laraxot/dev
 ];

@@ -4,10 +4,16 @@ declare(strict_types=1);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Modules\User\Tests\Feature;
 
 use Modules\User\Tests\TestCase;
 use Modules\User\Models\User;
+=======
+namespace Modules\User\Tests\Feature;
+
+use Modules\User\Tests\TestCase;
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 
@@ -16,6 +22,7 @@ describe('Migrate Db', function (): void {
         /* @var TestCase $this */
         $this->skipTest('Destructive migrate:fresh is not run in module tests — use forward-only migrate externally.');
     });
+<<<<<<< HEAD
 =======
 =======
 =======
@@ -49,4 +56,6 @@ describe('Migrate Db', function (): void {
     });
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 });

@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Code Quality Analysis - User Module"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Code Quality Analysis - User Module
 
 ## 🚨 Critical Issues Identified
@@ -337,6 +343,7 @@ public function getTableColumns(): array
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-3.md)
 =======
 - [AUTHENTICATION_PERFORMANCE_OPTIMIZATION.md](./performance/authentication_performance_optimization.md)
@@ -347,6 +354,9 @@ public function getTableColumns(): array
 - [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-3.md)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [authentication-performance-optimization-2.md](./performance/authentication-performance-optimization-3.md)
+>>>>>>> laraxot/dev
 - [optimization-analysis.md](./optimization-analysis.md)
 - [phpstan-compliance.md](./phpstan-compliance.md)
 

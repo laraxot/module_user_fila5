@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Checklist per la Struttura delle Directory nei Moduli Windsurf/Xot"
 type: concept
@@ -24,11 +27,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # Checklist per la Struttura delle Directory nei Moduli Windsurf/Xot
 
 ## Panoramica
@@ -79,19 +85,25 @@ Questo documento fornisce una checklist per verificare la corretta struttura del
 - ❌ `Modules/User/Actions/DeleteUserAction.php` (manca app/)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 - ❌ `Modules/User/Application/UseCases/...` (manca app/)
 - ❌ `Modules/User/Database/Migrations/...` (PascalCase — usare `database/migrations/`)
 - ❌ `Modules/User/Events/UserRegistered.php` (manca app/)
 - ❌ `Modules/User/Listeners/AssignFreeCreditsListener.php` (manca app/)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 - ❌ `Modules/User/Http/Controllers/UserController.php` (manca app/)
 - ❌ `Modules/User/App/Http/Controllers/UserController.php` (App maiuscolo errato!)
 - ❌ Migration custom fuori dalla cartella del modulo (es: in laravel/database/migrations)
@@ -117,6 +129,7 @@ find Modules/User -type d -name "Resources" -o -name "Lang" -o -name "Config" -o
 ## Per saperne di più
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [module-root-folder-violations.md](./wiki/concepts/module-root-folder-violations.md) — violazioni attuali nel modulo User
 - [module-root-php-folders-forbidden.md](../../../../docs/wiki/rules/module-root-php-folders-forbidden.md) — regola wiki canonica
 - Consultare: `laravel/Modules/Xot/docs/module-directory-structure-rule.md`
@@ -131,3 +144,8 @@ Consultare il documento completo: `/Modules/Xot/docs/DIRECTORY-STRUCTURE-GUIDE.m
 - Consultare: `laravel/Modules/Xot/docs/module-directory-structure-rule.md`
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+- [module-root-folder-violations.md](./wiki/concepts/module-root-folder-violations.md) — violazioni attuali nel modulo User
+- [module-root-php-folders-forbidden.md](../../../../docs/wiki/rules/module-root-php-folders-forbidden.md) — regola wiki canonica
+- Consultare: `laravel/Modules/Xot/docs/module-directory-structure-rule.md`
+>>>>>>> laraxot/dev

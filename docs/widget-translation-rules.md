@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Widget Translation Rules - SaluteOra Project
 =======
 =======
@@ -378,6 +379,8 @@ All widget development should follow these rules to maintain consistency and qua
 >>>>>>> 60a2c9a9 (.)
 =======
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 module: theme
 topic: widget-translation-rules
@@ -394,5 +397,8 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/widget-translation-rules-Modules.md
+<<<<<<< HEAD
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev

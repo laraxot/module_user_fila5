@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 ---
 title: "DRY & KISS Analysis - Modulo User"
 type: concept
@@ -11,11 +14,14 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "dry-kiss-analysis- dry & kiss analysis - modulo user"
 <<<<<<< HEAD
+<<<<<<< HEAD
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 
 =======
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -30,11 +36,14 @@ related:
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 60a2c9a9 (.)
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
 # DRY & KISS Analysis - Modulo User
 
 **Data:** 15 Ottobre 2025
@@ -151,6 +160,7 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 - [Base Classes Hierarchy](./models/base-classes-hierarchy.md)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
@@ -167,6 +177,8 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 **Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
 =======
+=======
+>>>>>>> laraxot/dev
 - [Base Classes Corrections](./fixes/base-classes-corrections-.md.md)
 - [Architecture](./core/architecture.md)
 - [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
@@ -174,5 +186,9 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
 ---
 
+<<<<<<< HEAD
 **Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
 >>>>>>> 2024e2e7 (.)
+=======
+**Conclusione:** Modulo User ha architettura solida, DRY eccellente, e complessità giustificata.
+>>>>>>> laraxot/dev

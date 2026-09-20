@@ -19,6 +19,7 @@ return new class extends XotBaseMigration {
             $table->string('token');
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // ponytail: timestamps solo in tableUpdate via updateTimestamps() (regola XotBaseMigration)
 =======
             // $table->timestamp('created_at')->nullable();
@@ -31,12 +32,18 @@ return new class extends XotBaseMigration {
             // ponytail: timestamps solo in tableUpdate via updateTimestamps() (regola XotBaseMigration)
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+            // ponytail: timestamps solo in tableUpdate via updateTimestamps() (regola XotBaseMigration)
+>>>>>>> laraxot/dev
         });
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             $this->updateTimestamps($table);
             // if (! $this->hasColumn('email'))
             //    $table->string('email')->nullable();
@@ -46,6 +53,7 @@ return new class extends XotBaseMigration {
                 $table->dropColumn('id');
             }
             if (! $this->hasColumn('id')) {
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 87273113 (.)
@@ -72,6 +80,8 @@ return new class extends XotBaseMigration {
             if (! $this->hasColumn('id')) {
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
                 $table->id();
             }
         });

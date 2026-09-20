@@ -11,6 +11,7 @@ namespace Modules\User\Filament\Resources;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Carbon\CarbonInterface;
 use Filament\Forms\Components\TextInput;
 use Filament\Infolists\Components\TextEntry;
@@ -44,6 +45,9 @@ use Illuminate\Support\HtmlString;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+use Illuminate\Database\Eloquent\Model;
+>>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -51,6 +55,7 @@ abstract class BaseUserResource extends XotBaseResource
 {
     // protected static ?string $model = \Modules\Xot\Datas\XotData::make()->getUserClass();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -63,6 +68,8 @@ abstract class BaseUserResource extends XotBaseResource
 =======
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     // Static property Modules\User\Filament\Resources\UserResource::$enablePasswordUpdates is never read, only written.
     // private static bool|\Closure $enablePasswordUpdates = true;
 
@@ -77,6 +84,7 @@ abstract class BaseUserResource extends XotBaseResource
     // {
     //    static::$extendFormCallback = $callback;
     // }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -137,6 +145,8 @@ abstract class BaseUserResource extends XotBaseResource
     
 >>>>>>> 2024e2e7 (.)
 
+=======
+>>>>>>> laraxot/dev
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {
     //     static::$enablePasswordUpdates = $condition;
@@ -148,6 +158,7 @@ abstract class BaseUserResource extends XotBaseResource
      * return config('filament-user-resource.model');
      * }
      */
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -161,6 +172,8 @@ abstract class BaseUserResource extends XotBaseResource
     #[\Override]
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+>>>>>>> laraxot/dev
     public function hasCombinedRelationManagerTabsWithContent(): bool
     {
         return true;

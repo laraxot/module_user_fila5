@@ -13,6 +13,7 @@ interface UpdatesUserProfileInformation
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     /**
      * @param array<string, mixed> $input
      */
@@ -25,5 +26,10 @@ interface UpdatesUserProfileInformation
      */
 >>>>>>> 2024e2e7 (.)
 >>>>>>> 87273113 (.)
+=======
+    /**
+     * @param array<string, mixed> $input
+     */
+>>>>>>> laraxot/dev
     public function update(UserContract $userContract, array $input): void;
 }
