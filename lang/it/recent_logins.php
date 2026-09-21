@@ -117,6 +117,7 @@ return [
         'create' => [
             'tooltip' => 'create',
             'icon' => 'create',
+            'label' => 'create',
         ],
     ],
     'navigation' => [

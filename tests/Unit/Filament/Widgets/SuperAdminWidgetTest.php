@@ -49,8 +49,8 @@ describe('SuperAdminWidget', function (): void {
         $contents = file_get_contents($path);
 
         Assert::assertStringContainsString('x-filament::icon-button', $contents);
-        Assert::assertStringContainsString('icon="user-superadmin"', $contents);
-        Assert::assertStringContainsString('icon="user-negate-superadmin"', $contents);
+        Assert::assertStringContainsString('icon="user-superman"', $contents);
+        Assert::assertStringContainsString('icon="user-clark-kent"', $contents);
         Assert::assertStringNotContainsString('icon="super-admin"', $contents);
         Assert::assertStringNotContainsString('icon="heroicon', $contents);
     });

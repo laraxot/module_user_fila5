@@ -22,13 +22,15 @@ Hook `USER_MENU_BEFORE`. A sinistra del menu utente, distinto dal team switcher.
 
 ## Stati visivi
 
-| Stato profilo | Icona Blade Icons | Colore Filament | Tooltip (lang) |
-|---------------|-------------------|-----------------|----------------|
-| `super-admin` | `user-superadmin` | `warning` | attivo |
-| `negate-super-admin` | `user-negate-superadmin` | `danger` | negato |
-| nessuno dei due | nessun bottone | — | — |
+| Stato profilo | Metafora | File SVG | Icona Blade Icons | Colore Filament | Tooltip (lang) |
+|---------------|----------|----------|-------------------|-----------------|----------------|
+| `super-admin` | identità svelata | `superman.svg` | `user-superman` | `warning` | attivo |
+| `negate-super-admin` | identità nascosta | `clark-kent.svg` | `user-clark-kent` | `danger` | negato |
+| nessuno dei due | — | — | nessun bottone | — | — |
 
-Le SVG stanno in `resources/svg/` e `XotBaseServiceProvider::registerBladeIcons()` le registra con prefisso `user`. File `superadmin.svg` → `user-superadmin`. Filament 5 le consuma con `x-filament::icon-button` (`icon="user-superadmin"`), non con `@svg('user::…')` e non senza prefisso. Lo stroke vive sul root SVG (`currentColor`), come gli Heroicon: il colore arriva da `fi-color-warning` / `fi-color-danger` del CSS prebuilt.
+Ruolo elevato visibile = eroe (cappa + ciuffo). Ruolo negato = travestimento da reporter (occhiali + cravatta). Non è lo scudo registrato: outline originale, `stroke="currentColor"` sul root.
+
+`XotBaseServiceProvider::registerBladeIcons()` registra `resources/svg/` con prefisso `user`. Filament 5: `x-filament::icon-button icon="user-superman"`. I file `superadmin.svg`, `negate-superadmin.svg`, `user-super-admin.svg` restano in cartella come archivio: non si cancellano, non si usano nel bottone.
 
 Vista widget: `user::filament.widgets.profile.super-admin` (convenzione `GetViewByClassAction`, nessun pin `$view`).
 

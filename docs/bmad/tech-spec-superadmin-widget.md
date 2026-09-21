@@ -54,14 +54,16 @@ Oggi `SuperAdmin` è `Livewire\Component` in `Http/Livewire/Profile`. Il panel l
 
 ## Icone (set Blade Icons del modulo)
 
-Filament 5 legge entrambi i percorsi: `public/icons/` (autoregi automatico) e `resources/svg/` (via `registerBladeIcons()` con prefisso `user`). Per le icone Marvel si usano i file in `public/icons/` (`superman.svg`, `clark-kent.svg`) che vengono autoregistrati senza prefisso; i vecchi `super-admin.svg` / `negate-superadmin.svg` restano in `resources/svg/` come backup.
+Solo `Modules/User/resources/svg/`. Prefisso auto-registrato: `user`. Non `public/icons/`.
 
-| Stato | File | Nome Filament (`icon=`) | Colore | Note |
-|-------|------|-------------------------|--------|------|
-| attivo | `public/icons/superman.svg` | `superman` | `warning` | Marvel: S stilizzato, corona, glow rosso, animazione `marvel-pulse`; anche `resources/svg/super-admin.svg` preservato |
-| negato | `public/icons/clark-kent.svg` | `clark-kent` | `danger` | Marvel: occhiali, camelhair, glow blu, animazione `marvel-shake-soft`; anche `resources/svg/negate-superadmin.svg` preservato |
+| Stato | File | Nome Filament (`icon=`) | Colore |
+|-------|------|-------------------------|--------|
+| attivo | `resources/svg/superman.svg` | `user-superman` | `warning` |
+| negato | `resources/svg/clark-kent.svg` | `user-clark-kent` | `danger` |
 
-Markup: `x-filament::icon-button` (classi `fi-icon-btn` / `fi-color-*` del CSS prebuilt). SVG outline con `stroke="currentColor"` sul root, come Heroicon. `icon="super-admin"` (senza prefisso) cade nel set default e diventa vuoto (`fallback` = `''`).
+Archivio (non cancellare, non usare nel bottone): `superadmin.svg`, `negate-superadmin.svg`, `user-super-admin.svg`, `user-negate-super-admin.svg`. Un file `user-superman.svg` si registra come `user-user-superman`.
+
+Markup: `x-filament::icon-button`. Stroke `currentColor` sul root. Outline originale (cappa/ciuffo vs occhiali/cravatta), non emblemi registrati.
 
 ## Componenti
 

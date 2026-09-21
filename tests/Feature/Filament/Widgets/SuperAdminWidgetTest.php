@@ -118,8 +118,8 @@ describe('SuperAdminWidget visibility', function (): void {
             ->assertSeeHtml('data-super-admin-state="active"')
             ->assertDontSeeHtml('data-super-admin-state="negated"')
             ->assertSeeHtml('fi-icon-btn')
-            ->assertSeeHtml('M12 3l7 3v5c0 4.5-3 8-7 10')
-            ->assertSeeHtml('u-sa-spark');
+            ->assertSeeHtml('u-sm-cape')
+            ->assertSeeHtml('u-sm-curl');
     });
 
     test('negate-super-admin user sees the barred hero emblem toggle', function (): void {
@@ -134,8 +134,8 @@ describe('SuperAdminWidget visibility', function (): void {
             ->assertSeeHtml('data-super-admin-state="negated"')
             ->assertDontSeeHtml('data-super-admin-state="active"')
             ->assertSeeHtml('fi-icon-btn')
-            ->assertSeeHtml('M12 3l7 3v5c0 4.5-3 8-7 10')
-            ->assertSeeHtml('u-sa-strike');
+            ->assertSeeHtml('u-ck-lens')
+            ->assertSeeHtml('u-ck-tie');
 
         // Nota: non si puo' usare assertDontSee(tooltip.active) qui — in locale it
         // "Super Admin" e' una sottostringa letterale di "Nega Super Admin", quindi
