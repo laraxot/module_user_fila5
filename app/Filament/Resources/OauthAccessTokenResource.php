@@ -60,7 +60,11 @@ class OauthAccessTokenResource extends XotBaseResource
                             return null;
                         }
                         $user = $record->user;
+<<<<<<< HEAD
                         if (null !== $user && method_exists($user, 'exists') && $user->exists) {
+=======
+                        if ($user !== null && method_exists($user, 'exists') && $user->exists) {
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -79,7 +83,11 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('scopes')
                     ->limit(30)
                     ->tooltip(function (mixed $state): ?string {
+<<<<<<< HEAD
                         if (null === $state) {
+=======
+                        if ($state === null) {
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
                             return null;
                         }
                         if (is_array($state)) {
