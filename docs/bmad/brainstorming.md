@@ -7,6 +7,7 @@ related:
   - ./decision-log.md
   - ./architecture.md
   - ./prd.md
+  - ./livewire-widget-brainstorming.md
 ---
 
 # Brainstorming: dove vive il toggle SuperAdmin

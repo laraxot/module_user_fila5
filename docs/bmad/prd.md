@@ -11,6 +11,8 @@ related:
   - ./architecture.md
   - ./ux-design.md
   - ./epics.md
+  - ./livewire-widget-prd.md
+  - ./livewire-inventory.md
 ---
 
 # PRD: SuperAdmin nel user menu Filament
@@ -108,7 +110,7 @@ Il controllo resta un `icon-button` Filament con tooltip (sostituisce il title n
 
 ## Out of scope
 
-- Convertire `team.change`, Socialite, logout.
+- Convertire `team.change`, Socialite, logout: Epic 10, [livewire-inventory.md](./livewire-inventory.md).
 - Cambiare regole Spatie o nomi ruolo.
 - Impersonation.
 - Resource/pagina “diventa super-admin”.

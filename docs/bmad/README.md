@@ -10,27 +10,49 @@ bmad_track: "core-identity"
 
 # User — BMAD Method Integration
 
-## Slice vigente (Quick Flow) — SuperAdmin widget
+## Campagna vigente — solo Filament widget
 
-**Solo documentazione, codice non convertito.** Epic 9 è `ready-for-dev`.
+**Solo documentazione, codice non convertito.** GitHub: [issue #100](https://github.com/laraxot/module_user_fila5/issues/100) · [discussion #101](https://github.com/laraxot/module_user_fila5/discussions/101).
+
+Inventario + perché/urgenza (canone dopo riconciliazione agenti): [livewire-inventory.md](./livewire-inventory.md).
+
+Stub (non SSoT): `livewire-widget-conversion-inventory.md`, `advantages-filament-widgets-over-livewire.md`, `livewire-widget-consolidation-*.md`, story `10.1.socialite-buttons-widget`, `11.1.team-change-widget`.
+
+### Pacchetto campagna (14 Livewire)
 
 | Artefatto | Path |
 |-----------|------|
-| Costituzione | [project-context.md](./project-context.md) |
+| Costituzione campagna | [livewire-widget-project-context.md](./livewire-widget-project-context.md) |
+| Brief campagna | [livewire-widget-product-brief.md](./livewire-widget-product-brief.md) |
+| PRD campagna | [livewire-widget-prd.md](./livewire-widget-prd.md) |
+| Architecture campagna | [livewire-widget-architecture.md](./livewire-widget-architecture.md) |
+| Tech spec campagna | [livewire-widget-tech-spec.md](./livewire-widget-tech-spec.md) |
+| UX campagna | [livewire-widget-ux.md](./livewire-widget-ux.md) |
+| Brainstorm campagna | [livewire-widget-brainstorming.md](./livewire-widget-brainstorming.md) |
+| Inventario | [livewire-inventory.md](./livewire-inventory.md) |
 | Decisioni | [decision-log.md](./decision-log.md) |
-| Brief | [product-brief.md](./product-brief.md) |
-| PRD | [prd.md](./prd.md) |
-| Tech spec (hook provider) | [tech-spec.md](./tech-spec.md) |
-| Architecture | [architecture.md](./architecture.md) |
-| UX | [ux-design.md](./ux-design.md) |
-| Brainstorm | [brainstorming.md](./brainstorming.md) |
 | Mappa epic | [epics.md](./epics.md) |
-| 9.1 widget | [../stories/9.1.super-admin-widget.story.md](../stories/9.1.super-admin-widget.story.md) |
-| 9.2 AdminPanelProvider | [../stories/9.2.admin-panel-provider-hook.story.md](../stories/9.2.admin-panel-provider-hook.story.md) |
-| 9.3 ritiro Livewire | [../stories/9.3.remove-livewire-superadmin.story.md](../stories/9.3.remove-livewire-superadmin.story.md) |
-| 9.4 test | [../stories/9.4.super-admin-widget-tests.story.md](../stories/9.4.super-admin-widget-tests.story.md) |
 
-Handoff: implementare in ordine 9.1 → 9.2 → 9.3; 9.4 dopo 9.2.
+### Epic 9 — SuperAdmin (sottoinsieme, Quick Flow)
+
+| Artefatto | Path |
+|-----------|------|
+| Costituzione slice | [project-context.md](./project-context.md) |
+| Brief / PRD / arch / UX / spec | [product-brief.md](./product-brief.md) · [prd.md](./prd.md) · [architecture.md](./architecture.md) · [ux-design.md](./ux-design.md) · [tech-spec.md](./tech-spec.md) |
+| 9.1–9.4 | [9.1](../stories/9.1.super-admin-widget.story.md) · [9.2](../stories/9.2.admin-panel-provider-hook.story.md) · [9.3](../stories/9.3.remove-livewire-superadmin.story.md) · [9.4](../stories/9.4.super-admin-widget-tests.story.md) |
+
+Handoff SuperAdmin: 9.1 → 9.2 → 9.3; 9.4 dopo 9.2.
+
+### Epic 10 — resto inventario
+
+| Story | Path |
+|-------|------|
+| 10.1 team | [10.1.team-change-widget.story.md](../stories/10.1.team-change-widget.story.md) |
+| 10.2 social | [10.2.socialite-buttons-widget.story.md](../stories/10.2.socialite-buttons-widget.story.md) |
+| 10.3 auth HTTP | [10.3.retire-auth-livewire-twins.story.md](../stories/10.3.retire-auth-livewire-twins.story.md) |
+| 10.4 profilo/Gdpr | [10.4.retire-gdpr-profile-livewire.story.md](../stories/10.4.retire-gdpr-profile-livewire.story.md) |
+
+Handoff provider: 9.2 → 10.1 → 10.2. 10.3 può parallellizzare sui file auth.
 
 ## Scopo BMAD per User
 
@@ -130,6 +152,8 @@ _bmad-output/
 - [quick-reference](quick-reference.md)
 - [setup-guide](setup-guide.md)
 - [BMAD Workflow Catalog](../bmad-workflow-catalog.md)
+- [livewire-to-filament-widget-migration.md](../livewire-to-filament-widget-migration.md)
+- [filament_errors.md](../filament_errors.md)
 
 ---
 

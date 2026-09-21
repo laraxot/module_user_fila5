@@ -5,8 +5,11 @@ module: User
 status: active
 related:
   - ./project-context.md
+  - ./livewire-widget-project-context.md
   - ./brainstorming.md
+  - ./livewire-widget-brainstorming.md
   - ./architecture.md
+  - ./livewire-inventory.md
   - ./epics.md
 ---
 
@@ -44,6 +47,32 @@ related:
 
 ## [2026-09-21] GitHub issue/discussion
 
-**Decision:** `gh` non autenticato su questa macchina. Nelle story: `DA CREARE` + comandi `--repo laraxot/module_user_fila5`. Nessun numero inventato.
+**Decision:** tracciamento reale su `laraxot/module_user_fila5`: issue [#100](https://github.com/laraxot/module_user_fila5/issues/100), discussion [#101](https://github.com/laraxot/module_user_fila5/discussions/101). Ogni story 9.x e 10.x punta a questi due URL.
 
-**Rationale:** [016-github-issue-discussion-in-every-story.md](../../../../../docs/wiki/rules/016-github-issue-discussion-in-every-story.md).
+**Rationale:** [016-github-issue-discussion-in-every-story.md](../../../../../docs/wiki/rules/016-github-issue-discussion-in-every-story.md). `gh` autenticato il 2026-09-21.
+
+## [2026-09-21] Campagna widget-only (14 Livewire)
+
+**Decision:** inventario completo in [livewire-inventory.md](./livewire-inventory.md). Epic 9 resta SuperAdmin; Epic 10 chiude team, social (widget esistente), gemelli auth, DeleteAccount, Privacy/Terms. Nessun PHP in questa sessione.
+
+**Rationale:** il 500 `filament-jet` è un fallimento di **contenitore**, non di un solo componente. Due stack UI sullo stesso chrome sono un rischio di identità.
+
+## [2026-09-21] Gemello esistente batte classe nuova
+
+**Decision:** `SocialLoginWidget` e i widget Auth coprono Cluster B. 10.2/10.3 ritirano HTTP, non riscrivono login.
+
+**Rationale:** ADR-C002. Un terzo login è un bug di sicurezza.
+
+## [2026-09-21] ViewCopyAction vietata in render
+
+**Decision:** nessun `ViewCopyAction` nei componenti UI User dopo Epic 10.
+
+**Rationale:** mutazione disco a request. Theming = deploy, non `render()`.
+
+## [2026-09-21] Riconciliazione analisi parallele
+
+**Decision:** un canone [livewire-inventory.md](./livewire-inventory.md). Epic 9+10. Niente Epic 11. Niente `ButtonsWidget`. I file `conversion-inventory`, `advantages-*`, `consolidation-*` e le story `10.1.socialite` / `11.1` sono stub.
+
+**Tenuto:** categoria chrome vs pagina; grep Notify vendor; 403 post-click vs `canView`; Buttons/Change non 500 oggi; security delete; ritiro HTTP dopo smoke; gap route FO vs panel su SocialLoginWidget.
+
+**Scartato:** widget senza round-trip Livewire; `/admin` ancora rotto; UI/Lang in questa campagna; Socialite P3; nuova classe social 1:1; 303 team come epic proprio.

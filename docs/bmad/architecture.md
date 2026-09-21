@@ -101,4 +101,4 @@ Nessuna migrazione. `view:clear` dopo lo switch. Nessun env nuovo.
 
 ## 11. Future
 
-Stesso pattern per `team.change` (altro epic). Non accoppiarlo a questo.
+Stesso pattern per `team.change` e social: Epic 10, [livewire-widget-architecture.md](./livewire-widget-architecture.md). Non accoppiarli allo slice SuperAdmin (ADR-004).

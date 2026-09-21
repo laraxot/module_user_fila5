@@ -2,17 +2,23 @@
 
 declare(strict_types=1);
 
-namespace Modules\User\Http\Livewire\Profile;
+namespace Modules\User\Filament\Widgets\Profile;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
-use Livewire\Component;
 use Livewire\Features\SupportRedirects\Redirector;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Datas\XotData;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
-class SuperAdmin extends Component
+/**
+ * Chrome user-menu: toggle super-admin / negate-super-admin.
+ * Business logic stays on the profile model.
+ */
+class SuperAdminWidget extends XotBaseWidget
 {
+    protected static bool $isDiscovered = false;
+
     public string $url = '#';
 
     public ProfileContract $profile;
@@ -33,8 +39,10 @@ class SuperAdmin extends Component
     public function render(): View
     {
         /** @var view-string $viewName */
-        $viewName = 'user::livewire.profile.super-admin';
+        $viewName = 'user::filament.widgets.profile.super-admin';
 
-        return view($viewName);
+        return view($viewName, [
+            'profile' => $this->profile,
+        ]);
     }
 }
