@@ -11,6 +11,10 @@ use Spatie\LaravelData\Data;
  */
 class PermissionColumnNamesData extends Data
 {
+<<<<<<< HEAD
+=======
+
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
     // => null, // default 'permission_id',
     public string $model_morph_key;
 

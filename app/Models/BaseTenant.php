@@ -27,9 +27,15 @@ use Spatie\Sluggable\SlugOptions;
  * @method static Builder|Tenant query()
  *
  * @property EloquentCollection<int, Model&UserContract> $members
+<<<<<<< HEAD
  * @property int|null                                    $members_count
  * @property ProfileContract|null                        $creator
  * @property ProfileContract|null                        $updater
+=======
+ * @property int|null $members_count
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
  *
  * @mixin \Eloquent
  */
