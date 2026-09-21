@@ -100,3 +100,17 @@ related:
 **Tenuto:** categoria chrome vs pagina; grep Notify vendor; 403 post-click vs `canView`; Buttons/Change non 500 oggi; security delete; ritiro HTTP dopo smoke; gap route FO vs panel su SocialLoginWidget.
 
 **Scartato:** widget senza round-trip Livewire; `/admin` ancora rotto; UI/Lang in questa campagna; Socialite P3; nuova classe social 1:1; 303 team come epic proprio.
+
+## [2026-09-21] Icone SuperAdminWidget invisibili — root cause morph map
+
+**Sintomo:** `SuperAdminWidget` renderizzava `<div>` vuota per utenti super-admin — le icone `@svg('user-super-admin')`/`user-negate-super-admin` non apparivano mai nel chrome `USER_MENU_BEFORE`.
+
+**Root cause (verificata, non ipotizzata):** `IsProfileTrait::isSuperAdmin()` chiama `$this->user->hasRole('super-admin')`, dove `Profile::user` risolve `Modules\Quaeris\Models\User` (la user class canonica, `XotData::getUserClass()`). La morph map registrata da `TenantServiceProvider::buildMorphMap()` leggeva `config('morph_map')` con `'user' => Modules\User\Models\User` (classe padre) — Quaeris\ServiceProvider la mappava correttamente a `Quaeris\Models\User` in `boot()`, ma il provider Tenant sovrascriveva dopo. Risultato: `Quaeris\User::getMorphClass()` = FQCN, mentre `model_has_role.model_type` contiene `'user'` → query `roles()` filtrava il morph sbagliato → ruoli invisibili → widget vuoto.
+
+**Decision:** in `buildMorphMap()` forzare `$typedMap['user'] = XotData::make()->getUserClass()` dopo il loop config — la chiave 'user' è sempre la classe canonica dell'install, mai la voce stantia. Allineato `config/localhost/morph_map.php`.
+
+**Data debt:** `model_has_role` contiene ancora 40 righe con `model_type='Modules\Quaeris\Models\User'` (scritte prima del fix) — richiedono `UPDATE model_has_role SET model_type='user' WHERE model_type='Modules\Quaeris\Models\User'`. Non eseguita: scrittura DB da approvare.
+
+**Verifica:** tinker — `getMorphClass()='user'`, `isSuperAdmin()=true`, widget renderizza `data-super-admin-state` (LEN 2293).
+
+**Rationale:** regola contract-pattern — i morph alias devono puntare alla classe canonica, non a superclassi. Il fix è nel punto singolo di costruzione della mappa, non per-callsite.
