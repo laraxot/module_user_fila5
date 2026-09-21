@@ -19,11 +19,7 @@ class GetUserTeamsOptionAction
         $teams = TeamUser::with('team')->where('user_id', authId())->get();
         $result = [];
         foreach ($teams as $teamUser) {
-<<<<<<< HEAD
             if (null !== $teamUser->team) {
-=======
-            if ($teamUser->team !== null) {
->>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
                 $result[(string) $teamUser->team->name] = (string) $teamUser->team->id;
             }
         }

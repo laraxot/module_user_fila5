@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Risoluzione Conflitti PasswordResetWidget.php"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto
@@ -83,14 +80,8 @@ Verificare che:
 - [User Module Documentation](readme.md)
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
-<<<<<<< HEAD
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
-=======
-- [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
-- [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
-*Ultimo aggiornamento: giugno 2025*
->>>>>>> 60a2c9a9 (.)
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto
@@ -185,11 +176,5 @@ Verificare che:
 - [User Module Documentation](readme.md)
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
-<<<<<<< HEAD
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
 
-=======
-- [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
-
-*Ultimo aggiornamento: giugno 2025*
->>>>>>> 60a2c9a9 (.)

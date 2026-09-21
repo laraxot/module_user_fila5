@@ -12,20 +12,14 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-<<<<<<< HEAD
-=======
 use Illuminate\Support\Carbon;
 use Laravel\Passport\Token;
->>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
 use Modules\User\Models\Role;
 
 /**
  * Modules\User\Contracts\HasTeamsContract.
  *
-<<<<<<< HEAD
-=======
  *
->>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
  * @phpstan-require-extends Model
  *
  * @mixin \Eloquent

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi del File Logout.blade.php"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # Analisi del File Logout.blade.php
 
 ## Analisi Attuale
@@ -241,7 +238,6 @@ $logout = function () {
    - Test di UI per l'interfaccia
 
 ## Collegamenti Correlati
-<<<<<<< HEAD
 - [Documentazione Volt](./volt-blade-implementation.md)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
 - [Gestione Sessione](./session-management.md)
@@ -249,9 +245,4 @@ $logout = function () {
 - [Documentazione Volt](./volt-blade-implementation-3.md)
 - [Best Practices di Sicurezza](./security_best_practices.md)
 - [Gestione Sessione](./session-management-2.md)
-=======
-- [Documentazione Volt](./volt_blade_implementation.md)
-- [Best Practices di Sicurezza](./security_best_practices.md)
-- [Gestione Sessione](./session_management.md)
->>>>>>> 60a2c9a9 (.)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 

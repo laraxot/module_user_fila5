@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi Metodi Duplicati - Modulo User"
 type: concept
@@ -19,17 +18,11 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # Analisi Metodi Duplicati - Modulo User
 
 ## Riferimento Principale
 
-<<<<<<< HEAD
 📚 **Documento Completo:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
-=======
-📚 **Documento Completo:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
->>>>>>> 60a2c9a9 (.)
 
 ## Stato del Modulo User
 
@@ -167,11 +160,7 @@ protected function registerObservers(): void
 
 ## Link Correlati
 
-<<<<<<< HEAD
 - 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
-=======
-- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
->>>>>>> 60a2c9a9 (.)
 - 📖 [Modulo Xot - Classi Base](../../xot/docs/analisi-metodi-duplicati.md)
 - 📖 [Architettura User](./core/architecture.md)
 - 📖 [Regole Business Logic](./business-logic-deep-dive.md)

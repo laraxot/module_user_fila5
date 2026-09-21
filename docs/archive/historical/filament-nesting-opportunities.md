@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Filament 5.x Nested Resources - Opportunità di Applicazione"
 type: concept
@@ -22,11 +21,6 @@ related:
 # Filament 5.x Nested Resources - Opportunità di Applicazione
 
 **Data Analisi**: [DATE]  
-=======
-# Filament 5.x Nested Resources - Opportunità di Applicazione
-
-**Data Analisi**: 2026-01-22  
->>>>>>> 60a2c9a9 (.)
 **Versione Filament**: 5.x  
 **Documentazione Upstream**: https://filamentphp.com/docs/5.x/resources/nesting
 
@@ -282,9 +276,4 @@ Nessuna funzionalità critica - il modulo User funziona bene con relation manage
 
 ---
 
-<<<<<<< HEAD
 **Prossima Revisione**: [DATE]
-=======
-**Ultimo Aggiornamento**: 2026-01-22  
-**Prossima Revisione**: 2026-02-22
->>>>>>> 60a2c9a9 (.)

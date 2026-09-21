@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Widget di Registrazione del Dottore"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # Widget di Registrazione del Dottore
 
 ## Panoramica

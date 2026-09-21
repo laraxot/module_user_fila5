@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Passport Cluster - Verifica Risorse"
 type: concept
@@ -22,10 +21,6 @@ related:
 # Passport Cluster - Verifica Risorse
 
 **Data**: 2025-01-22
-=======
-# Passport Cluster - Verifica Risorse
-
->>>>>>> 60a2c9a9 (.)
 **Status**: ✅ VERIFICATO
 **Metodologia**: Super Mucca
 
@@ -100,10 +95,6 @@ find Modules/User/app/Filament/Clusters/Passport/Resources -name "*Resource.php"
 
 ---
 
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-01-22
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> 60a2c9a9 (.)
 **Versione**: 1.0.0
 **Status**: ✅ Verificato - Tutte le risorse sono attinenti a Passport/OAuth

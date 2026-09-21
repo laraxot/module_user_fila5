@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Module - Spatie Permission Methods Reference"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # User Module - Spatie Permission Methods Reference
 
 ## Overview
@@ -34,11 +31,7 @@ Il modulo User utilizza i package **Spatie Permission** che forniscono automatic
 
 **BaseUser NON deve sovrascrivere i metodi forniti dai trait Spatie** a meno che non sia necessario un comportamento personalizzato.
 
-<<<<<<< HEAD
 ### Metodi Rimossi da BaseUser (2025-10-15)
-=======
-### Metodi Rimossi da BaseUser ([DATE])
->>>>>>> 60a2c9a9 (.)
 
 I seguenti metodi sono stati rimossi perché **già forniti dai trait**:
 
@@ -512,8 +505,5 @@ $user->assignRole(Role::findByName('admin', 'web'));
 ---
 
 **Autore**: Claude Code
-<<<<<<< HEAD
 **Data**: 2025-10-15
-=======
->>>>>>> 60a2c9a9 (.)
 **Versione**: 1.0.0

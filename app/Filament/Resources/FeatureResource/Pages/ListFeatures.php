@@ -12,10 +12,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListFeatures extends XotBaseListRecords
 {
     protected static string $resource = FeatureResource::class;
-<<<<<<< HEAD
 
-=======
->>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
     public function getTableColumns(): array
     {
         return [

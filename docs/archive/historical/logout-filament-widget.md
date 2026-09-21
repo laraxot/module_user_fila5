@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Implementazione del Logout con Widget Filament"
 type: concept
@@ -19,24 +18,15 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # Implementazione del Logout con Widget Filament
 
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-<<<<<<< HEAD
 - [Implementazione Auth Pages](auth-pages-implementation.md)
 - [Implementazione Logout](logout-blade-implementation-2.md)
 - [Analisi Errore Logout](logout-implementation-error-3.md)
 - [Struttura Widget](widgets-structure-2.md)
-=======
-- [Implementazione Auth Pages](auth_pages_implementation.md)
-- [Implementazione Logout](logout_blade_implementation.md)
-- [Analisi Errore Logout](logout_implementation_error.md)
-- [Struttura Widget](widgets_structure.md)
->>>>>>> 60a2c9a9 (.)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Introduzione
@@ -168,11 +158,7 @@ class LogoutWidget extends XotBaseWidget
                 {{ $this->form }}
 
                 <div class="mt-6 flex flex-col gap-3">
-<<<<<<< HEAD
                     <x-filament::button
-=======
-                    <x-filament::button 
->>>>>>> 60a2c9a9 (.)
                         type="submit"
                         color="danger"
                         size="lg"
@@ -181,13 +167,8 @@ class LogoutWidget extends XotBaseWidget
                         {{ __('Conferma Logout') }}
                     </x-filament::button>
 
-<<<<<<< HEAD
                     <x-filament::button
                         tag="a"
-=======
-                    <x-filament::button 
-                        tag="a" 
->>>>>>> 60a2c9a9 (.)
                         :href="'/' . app()->getLocale()"
                         color="gray"
                         size="lg"
@@ -262,7 +243,6 @@ FilamentView::registerRenderHook(
 2. **Coerenza UI**: Utilizza i componenti UI nativi di Filament, garantendo coerenza visiva.
 3. **Manutenibilità**: Separa chiaramente la logica dalla presentazione.
 4. **Estensibilità**: Facilmente estensibile per aggiungere funzionalità aggiuntive.
-<<<<<<< HEAD
 5. **Conformità alle convenzioni**: Segue le convenzioni di <nome progetto> per i widget Filament.
 
 ## Alternativa: Logout Immediato
@@ -502,13 +482,6 @@ FilamentView::registerRenderHook(
 ## Alternativa: Logout Immediato
 
 Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout-blade-implementation-2.md), che esegue il logout immediatamente senza richiedere conferma.
-=======
-5. **Conformità alle convenzioni**: Segue le convenzioni di SaluteOra per i widget Filament.
-
-## Alternativa: Logout Immediato
-
-Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout_blade_implementation.md), che esegue il logout immediatamente senza richiedere conferma.
->>>>>>> 60a2c9a9 (.)
 
 ## Conclusione
 

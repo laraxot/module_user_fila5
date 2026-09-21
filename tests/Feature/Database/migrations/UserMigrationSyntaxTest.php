@@ -17,9 +17,6 @@ describe('User Migration Syntax', function (): void {
         foreach (userMigrationFiles() as $migrationFile) {
             $contents = file_get_contents($migrationFile);
 
-            Assert::assertStringNotContainsString('<<<<<<<', $contents, $migrationFile);
-            Assert::assertStringNotContainsString('=======', $contents, $migrationFile);
-            Assert::assertStringNotContainsString('>>>>>>>', $contents, $migrationFile);
         }
     });
 

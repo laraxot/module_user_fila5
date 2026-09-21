@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Generic User Moderation Strategy in User Module"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # Generic User Moderation Strategy in User Module
 
 ## Overview

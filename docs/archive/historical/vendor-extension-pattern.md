@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "🏛️ PATTERN ESTENSIONE CLASSI VENDOR IN LARAXOT"
 type: pattern
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # 🏛️ PATTERN ESTENSIONE CLASSI VENDOR IN LARAXOT
 
 ## 📋 PRINCIPIO FONDAMENTALE
@@ -232,21 +229,13 @@ class CustomModel extends VendorModelAlias
 ## 📚 RIFERIMENTI
 
 - [Spatie Permission Philosophy](spatie-permission-philosophy.md)
-<<<<<<< HEAD
 - [BaseModel Philosophy](../Xot/docs/basemodel-philosophy.md)
 - [External Package Integration](../Xot/docs/external-packages.md)
 - [Class Responsibility Separation](../Xot/docs/class-responsibility.md)
-=======
->>>>>>> 60a2c9a9 (.)
 - [BaseModel Philosophy](../xot/docs/basemodel-philosophy.md)
 - [External Package Integration](../xot/docs/external-packages.md)
 - [Class Responsibility Separation](../xot/docs/class-responsibility.md)
 
 ---
 
-<<<<<<< HEAD
 *Questa è la Via Laraxot: Rispettare la natura di ogni cosa, non forzarla in forme innaturali.*
-=======
-*Questa è la Via Laraxot: Rispettare la natura di ogni cosa, non forzarla in forme innaturali.*
-
->>>>>>> 60a2c9a9 (.)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Struttura dei Tests del Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # Struttura dei Tests del Modulo User
 
 ## Panoramica
@@ -309,20 +306,13 @@ dump($variable);
 ## Collegamenti
 
 - [README Modulo User](../readme.md)
-<<<<<<< HEAD
 - [Best Practices Testing](../../../../docs/project/testing-best-practices.md)
-=======
-- [Best Practices Testing](../../../project_docs/testing-best-practices.md)
->>>>>>> 60a2c9a9 (.)
 - [Architettura Modulo User](../architecture/readme.md)
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
 ---
 
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: [DATE]*
->>>>>>> 60a2c9a9 (.)
 
 
 

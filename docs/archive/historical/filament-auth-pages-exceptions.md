@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Eccezioni Regola XotBase - Pagine Autenticazione"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # Eccezioni Regola XotBase - Pagine Autenticazione
 
 ## Scopo
@@ -153,8 +150,4 @@ Estendere `Filament\Pages\Page` direttamente solo per:
 
 ---
 
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-12-17
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> 60a2c9a9 (.)

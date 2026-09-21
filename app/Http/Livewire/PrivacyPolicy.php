@@ -7,10 +7,7 @@ namespace Modules\User\Http\Livewire;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Str;
 use Livewire\Component;
-<<<<<<< HEAD
 
-=======
->>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
 use function Safe\file_get_contents;
 
 class PrivacyPolicy extends Component

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "XotBaseResource getPages() Automatic: Filosofia DRY"
 type: concept
@@ -22,11 +21,6 @@ related:
 # XotBaseResource getPages() Automatic: Filosofia DRY
 
 ## Data: 2025-01-22
-=======
-# XotBaseResource getPages() Automatic: Filosofia DRY
-
-## Data: [DATE]
->>>>>>> 60a2c9a9 (.)
 
 ## Il Dibattito Feroce
 

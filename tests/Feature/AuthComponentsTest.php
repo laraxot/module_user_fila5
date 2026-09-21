@@ -2,10 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
 use Modules\User\Models\User;
->>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
 use Modules\User\Tests\TestCase;
 
 use function Pest\Laravel\get;

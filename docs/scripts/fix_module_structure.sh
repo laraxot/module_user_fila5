@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: fix_module_structure
@@ -9,8 +5,6 @@ canonical: ../../../../Themes/docs/shared-components/fix-module-structure.sh
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/fix-module-structure.sh
-<<<<<<< HEAD
-=======
 #!/bin/bash
 
 # Configurazione
@@ -152,6 +146,3 @@ main() {
 
 # Esegui lo script
 main 
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev

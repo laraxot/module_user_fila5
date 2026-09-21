@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 ---
 module: theme
 topic: fix-paths.sh
@@ -9,8 +5,6 @@ canonical: ../../../../Themes/docs/shared-components/fix-paths.sh
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/fix-paths.sh
-<<<<<<< HEAD
-=======
 #!/bin/bash
 
 # Configurazione
@@ -157,6 +151,3 @@ main() {
 
 # Esegui main
 main "$@" 
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> laraxot/dev
