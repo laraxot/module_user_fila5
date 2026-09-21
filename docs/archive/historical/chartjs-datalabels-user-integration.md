@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Chart.js Datalabels Plugin for User Module Charts"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # Chart.js Datalabels Plugin for User Module Charts
 
 ## Overview

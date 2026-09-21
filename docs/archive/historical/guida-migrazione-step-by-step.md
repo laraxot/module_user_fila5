@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Guida Migrazione Step-by-Step: Modulo User - Filament 4"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # Guida Migrazione Step-by-Step: Modulo User - Filament 4
 
 ## Panoramica Migrazione

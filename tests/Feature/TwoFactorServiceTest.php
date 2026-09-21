@@ -21,11 +21,7 @@ beforeEach(function (): void {
     TestCase::skipUnlessUserColumn('users', 'two_factor_confirmed_at');
 
     TestCase::$user = TestCase::createTestUser();
-<<<<<<< HEAD
     TestCase::$google2fa = new Google2FA();
-=======
-    TestCase::$google2fa = new Google2FA;
->>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
 });
 
 describe('Two Factor Service', function (): void {

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Regola Critica: Cluster Passport - Solo Risorse OAuth/Passport"
 type: rule
@@ -22,10 +21,6 @@ related:
 # Regola Critica: Cluster Passport - Solo Risorse OAuth/Passport
 
 **Data**: 2025-01-22
-=======
-# Regola Critica: Cluster Passport - Solo Risorse OAuth/Passport
-
->>>>>>> 60a2c9a9 (.)
 **Status**: ✅ Regola Critica OBBLIGATORIA
 **Integrazione**: Architettura Filament Clusters
 
@@ -130,10 +125,6 @@ find Modules/User/app/Filament/Clusters/Passport/Resources -name "*Resource.php"
 
 ---
 
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-01-22
-=======
-**Ultimo aggiornamento**: [DATE]
->>>>>>> 60a2c9a9 (.)
 **Versione**: 1.0.0
 **Status**: ✅ Regola Critica OBBLIGATORIA

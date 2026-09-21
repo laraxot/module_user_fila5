@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "PHPStan Level 10 - Progresso Finale"
 type: concept
@@ -22,10 +21,6 @@ related:
 # PHPStan Level 10 - Progresso Finale
 
 **Data**: 2025-01-22
-=======
-# PHPStan Level 10 - Progresso Finale
-
->>>>>>> 60a2c9a9 (.)
 **Status**: In Progress
 **Versione**: 1.0.0
 
@@ -78,7 +73,4 @@ Da identificare e correggere sistematicamente.
 
 ---
 
-<<<<<<< HEAD
-=======
 *Ultimo aggiornamento: [DATE]*
->>>>>>> 60a2c9a9 (.)

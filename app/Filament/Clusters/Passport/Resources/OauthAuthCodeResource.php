@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources;
 
-<<<<<<< HEAD
-=======
 use Filament\Tables\Table;
->>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
 use Filament\Resources\Pages\PageRegistration;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Clusters\Passport;

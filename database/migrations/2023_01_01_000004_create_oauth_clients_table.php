@@ -6,12 +6,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
-<<<<<<< HEAD
 return new class extends XotBaseMigration {
-=======
-return new class extends XotBaseMigration
-{
->>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
     public function up(): void
     {
         $this->tableCreate(static function (Blueprint $table): void {
@@ -30,11 +25,7 @@ return new class extends XotBaseMigration
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-<<<<<<< HEAD
             if ('string' !== $this->getColumnType('id')) {
-=======
-            if ($this->getColumnType('id') !== 'string') {
->>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
                 $table->uuid('id')->change(); // is  just primary
             }
             $this->updateTimestamps($table, false);

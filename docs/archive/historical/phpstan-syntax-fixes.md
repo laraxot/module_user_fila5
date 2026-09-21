@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "PHPStan Syntax Fixes - Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # PHPStan Syntax Fixes - Modulo User
 
 **Data**: 2025-01-11  
@@ -165,11 +162,7 @@ use App\Models\User;
 
 ## 🔗 Collegamenti
 
-<<<<<<< HEAD
 - [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
-=======
-- [Analisi Generale PHPStan](../../../project_docs/quality/phpstan-analysis.md)
->>>>>>> 60a2c9a9 (.)
 - [PSR-12 Extended Coding Style](https://www.php-fig.org/psr/psr-12/)
 - [CLAUDE.md - Quality Guidelines](../../../claude.md)
 

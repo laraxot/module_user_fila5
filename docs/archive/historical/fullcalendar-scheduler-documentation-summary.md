@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "FullCalendar Scheduler - Documentazione Completa"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # FullCalendar Scheduler - Documentazione Completa
 
 ## Panoramica
@@ -50,11 +47,7 @@ Documentazione base esistente per:
 - Configurazione di base in
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
-<<<<<<< HEAD
 #### 4. [Scheduler License Key](./scheduler-license-key-2.md)
-=======
-#### 4. [Scheduler License Key](./scheduler_license_key.md)
->>>>>>> 60a2c9a9 (.)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -198,11 +191,7 @@ Documentazione base esistente per:
 - Configurazione di base in <nome progetto>
 - Problemi comuni basilari
 
-<<<<<<< HEAD
 #### 4. [Scheduler License Key](./scheduler-license-key-2.md)
-=======
-#### 4. [Scheduler License Key](./scheduler_license_key.md)
->>>>>>> 60a2c9a9 (.)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi
@@ -339,8 +328,5 @@ Questa documentazione fornisce una copertura completa per tutti gli aspetti dell
 4. **Configurazione produzione**: Best practices nel troubleshooting
 
 La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di <nome progetto>.
-<<<<<<< HEAD
 
 ```
-=======
->>>>>>> 60a2c9a9 (.)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "UserFactory Integration - Modulo User e <nome progetto>"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # UserFactory Integration - Modulo User e <nome progetto>
 
 ## Overview
@@ -369,19 +366,12 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
-<<<<<<< HEAD
 - [Traits Complete Guide](../user/docs/traits-complete-guide-2.md)
-=======
-- [Traits Complete Guide](../user/docs/traits_complete_guide.md)
->>>>>>> 60a2c9a9 (.)
 - [Authentication Framework](../user/docs/authentication.md)
 
 ---
 
-<<<<<<< HEAD
 **Created**: January 2025
-=======
->>>>>>> 60a2c9a9 (.)
 **Purpose**: Document cross-module factory integration
 **Maintainer**: Development Team
 **Review Status**: Ready for implementation
@@ -733,19 +723,12 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
-<<<<<<< HEAD
 - [Traits Complete Guide](../user/docs/traits-complete-guide-2.md)
-=======
-- [Traits Complete Guide](../user/docs/traits_complete_guide.md)
->>>>>>> 60a2c9a9 (.)
 - [Authentication Framework](../user/docs/authentication.md)
 
 ---
 
-<<<<<<< HEAD
 **Created**: January 2025
-=======
->>>>>>> 60a2c9a9 (.)
 **Purpose**: Document cross-module factory integration
 **Maintainer**: Development Team
 **Review Status**: Ready for implementation

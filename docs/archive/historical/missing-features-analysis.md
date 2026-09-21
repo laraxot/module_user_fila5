@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi Funzionalità Mancanti - Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # Analisi Funzionalità Mancanti - Modulo User
 
 **Data Analisi**: 2026-01-22  
@@ -178,15 +175,9 @@ Nessuna funzionalità critica mancante - il modulo User è ben implementato
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Modulo Quaeris](../Quaeris/docs/README.md)
 - [Modulo Limesurvey](../Limesurvey/docs/README.md)
 - [User README](./README.md)
-=======
-- [Modulo Quaeris](../quaeris/docs/readme.md)
-- [Modulo Limesurvey](../limesurvey/docs/readme.md)
-- [User README](./readme.md)
->>>>>>> 60a2c9a9 (.)
 
 ---
 

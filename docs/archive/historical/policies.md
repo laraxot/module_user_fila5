@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Module Policies Documentation"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # User Module Policies Documentation
 
 ## Overview
@@ -305,11 +302,7 @@ Test policy integration with Filament resources and controllers.
 
 ## Related Documentation
 
-<<<<<<< HEAD
 - [Main Policies Documentation](../../../../docs/policies_implementation.md)
-=======
-- [Main Policies Documentation](../../../docs/policies_implementation.md)
->>>>>>> 60a2c9a9 (.)
 - [User Authentication](./authentication.md)
 - [Permissions and Roles](./permissions.md)
 - [Team Management](./teams.md)
@@ -329,8 +322,4 @@ Test policy integration with Filament resources and controllers.
 3. Validate model ownership logic
 4. Test super admin override
 
-<<<<<<< HEAD
 *Last updated: January 2025*
-=======
-*
->>>>>>> 60a2c9a9 (.)

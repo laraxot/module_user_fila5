@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Implementazione del Logout"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # Implementazione del Logout
 
 ## Indice

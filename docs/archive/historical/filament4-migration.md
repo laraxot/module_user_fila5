@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "🔄 Migrazione da Filament 3 a Filament 4"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # 🔄 Migrazione da Filament 3 a Filament 4
 
 ## Panoramica

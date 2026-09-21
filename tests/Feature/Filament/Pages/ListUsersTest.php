@@ -33,11 +33,7 @@ beforeEach(function (): void {
     }
     Filament::setCurrentPanel($panel);
 
-<<<<<<< HEAD
     TestCase::$listUsersPage = new ListUsers();
-=======
-    TestCase::$listUsersPage = new ListUsers;
->>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
 
     $users = UserFactory::new()
         ->count(3)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "🐄✨ DRY & KISS Analysis - Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # 🐄✨ DRY & KISS Analysis - Modulo User
 
 **Data Analisi:** 2025-12-02

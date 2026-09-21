@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Module Documentation"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # User Module Documentation
 
 ## Overview
@@ -70,17 +67,10 @@ This document serves as the central index for the User module, providing guidanc
 
 ## Links to Related Documentation
 - [BaseUser Model](./baseuser.md)
-<<<<<<< HEAD
 - [Authentication Pages Implementation](./auth-pages-implementation.md)
 - [Profile Management](./profile-management-2.md)
 - [Routing Best Practices](./routing-best-practices-2.md)
 - [Session Management](./session-management-2.md)
-=======
-- [Authentication Pages Implementation](./auth_pages_implementation.md)
-- [Profile Management](./profile_management.md)
-- [Routing Best Practices](./routing_best_practices.md)
-- [Session Management](./session_management.md)
->>>>>>> 60a2c9a9 (.)
 
 ## Sottocartelle
 
@@ -98,10 +88,7 @@ This document serves as the central index for the User module, providing guidanc
 ## Note sulla Manutenzione
 Questa documentazione viene aggiornata regolarmente. Prima di apportare modifiche al codice, consultare la documentazione pertinente e aggiornare i documenti correlati.
 
-<<<<<<< HEAD
-=======
 Ultimo aggiornamento: 14 Maggio 2025
->>>>>>> 60a2c9a9 (.)
 
 # Indice Documentazione User
 

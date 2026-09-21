@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Registration Widget Documentation"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 60a2c9a9 (.)
 # Registration Widget Documentation
 
 ## Overview
@@ -64,15 +61,9 @@ protected function getConfirmationRoute(): string
     return $mapping[$this->type] ?? 'user.registration.confirmation';
 ```
 ## References
-<<<<<<< HEAD
 - [Namespace Issues](../../../../docs/project/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../modules/xot/project_docs/rules/filament-resource-guidelines.md)
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
-=======
-- [Namespace Issues](../../../project_docs/references/namespace-issues.md)
-- [Filament Resource Guidelines](../../../modules/xot/project_docs/rules/filament-resource-guidelines.md)
-- [Namespace Issues](../../../docs/references/namespace-issues.md)
->>>>>>> 60a2c9a9 (.)
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)
 # Registration Widget Documentation
 
@@ -137,9 +128,5 @@ protected function getConfirmationRoute(): string
 
 ## References
 
-<<<<<<< HEAD
 - [Namespace Issues](../../../../docs/references/namespace-issues.md)
-=======
-- [Namespace Issues](../../../docs/references/namespace-issues.md)
->>>>>>> 60a2c9a9 (.)
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)

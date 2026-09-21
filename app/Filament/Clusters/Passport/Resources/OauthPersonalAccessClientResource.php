@@ -10,11 +10,8 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-<<<<<<< HEAD
-=======
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
->>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables;
 use Filament\Tables\Table;
