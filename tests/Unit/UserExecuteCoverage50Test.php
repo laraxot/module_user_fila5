@@ -68,7 +68,7 @@ use function Safe\glob;
 uses(TestCase::class)->group('no-user-db');
 
 afterEach(function (): void {
-    Mockery::close();
+    \Mockery::close();
 });
 
 /**
@@ -247,7 +247,7 @@ function userFindNamedComponent(array $schema, string $name): ?SchemaComponent
 function userProfileMock(string $password = 'Secret123!'): User
 {
     /** @var Mockery\MockInterface&User $user */
-    $user = Mockery::mock(User::class)->makePartial();
+    $user = \Mockery::mock(User::class)->makePartial();
     $user->forceFill([
         'id' => 'profile-user-1',
         'first_name' => 'Mario',
@@ -530,7 +530,7 @@ describe('User execute coverage — HasTeams trait mock', function (): void {
         $team = userTeamFixture('owner-4', 401);
         $memberUser = userMockWithTeams('member-4');
 
-        $members = Mockery::mock(BelongsToMany::class);
+        $members = \Mockery::mock(BelongsToMany::class);
         mockeryExpect($members->shouldReceive('attach'))->once()->andReturn(true);
         mockeryExpect($members->shouldReceive('detach'))->once()->andReturn(true);
         mockeryExpect($members->shouldReceive('updateExistingPivot'))->twice()->andReturn(true);
@@ -538,7 +538,7 @@ describe('User execute coverage — HasTeams trait mock', function (): void {
         mockeryExpect($members->shouldReceive('wherePivot'))->with('role', 'member')->andReturnSelf();
         mockeryExpect($members->shouldReceive('get'))->andReturn(collect([$memberUser]));
 
-        $teamMock = Mockery::mock($team)->makePartial();
+        $teamMock = \Mockery::mock($team)->makePartial();
         mockeryExpect($teamMock->shouldReceive('members'))->andReturn($members);
         // Il partial mock di un Team resta un TeamContract: la guardia lo dichiara
         // a PHPStan e verifica davvero che Mockery non abbia perso il contratto.

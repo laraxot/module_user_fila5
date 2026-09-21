@@ -28,7 +28,6 @@ use Webmozart\Assert\Assert;
 /**
  * Modules\User\Models\Role.
  *
- *
  * @property int                                 $id
  * @property string                              $uuid
  * @property string|null                         $team_id

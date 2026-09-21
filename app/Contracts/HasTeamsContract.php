@@ -12,13 +12,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Illuminate\Support\Carbon;
-use Laravel\Passport\Token;
 use Modules\User\Models\Role;
 
 /**
  * Modules\User\Contracts\HasTeamsContract.
- *
  *
  * @phpstan-require-extends Model
  *

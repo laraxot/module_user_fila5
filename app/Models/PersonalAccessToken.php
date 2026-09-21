@@ -12,7 +12,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 /**
  * Modules\User\Models\PersonalAccessToken.
  *
- *
  * @property int         $id
  * @property string      $tokenable_type
  * @property int         $tokenable_id
@@ -23,7 +22,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property Carbon|null $expires_at
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- *
  *
  * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory       factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newModelQuery()
