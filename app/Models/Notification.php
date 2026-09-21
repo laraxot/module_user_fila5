@@ -14,6 +14,8 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 /**
  * @property Model|\Eloquent $notifiable
  *
+ * <<<<<<< HEAD
+ *
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  * @method static Builder|Notification                                 newModelQuery()
@@ -25,6 +27,19 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
  * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
+ *                                                                                                         =======
+ * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
+ * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
+ * @method static Builder|Notification                                 newModelQuery()
+ * @method static Builder|Notification                                 newQuery()
+ * @method static Builder|Notification                                 query()
+ * @method static Builder|Notification                                 read()
+ * @method static Builder|Notification                                 unread()
+ * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
+ * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
+ * @method static DatabaseNotificationCollection<int, static>          all($columns = ['*'])
+ * @method static DatabaseNotificationCollection<int, static>          get($columns = ['*'])
+ *                                                                                                         >>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
  * @method static \Modules\User\Database\Factories\NotificationFactory factory($count = null, $state = [])
  *
  * @mixin \Eloquent

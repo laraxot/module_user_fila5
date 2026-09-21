@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\User\Contracts;
 
+<<<<<<< HEAD
+=======
+use Modules\User\Models\Role;
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
 use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 
@@ -12,6 +16,11 @@ use Modules\Xot\Contracts\UserContract;
  */
 interface HasTeamsAndUserContract extends HasTeamsContract, UserContract
 {
+<<<<<<< HEAD
+=======
+    /**
+     */
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
     public function canRemoveTeamMember(Team $team, HasTeamsContract $user): bool;
 
     /**
