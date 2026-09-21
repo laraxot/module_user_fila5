@@ -7,6 +7,8 @@ version: "1.0"
 related:
   - ./prd.md
   - ./project-context.md
+  - ./livewire-widget-product-brief.md
+  - ./livewire-inventory.md
 ---
 
 # Product brief: SuperAdmin nel menu Filament

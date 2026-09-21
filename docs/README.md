@@ -47,6 +47,7 @@ Modules\User\Models\Tenant
 
 ## Collegamenti
 
+- [Inventario Livewire → widget](./bmad/livewire-inventory.md) — SSoT campagna HTTP vs Filament (docs only; GitHub [issue #100](https://github.com/laraxot/module_user_fila5/issues/100))
 - [Documentazione Root](../../../docs/USER_MODULE.md)
 - [Regole Trait](./traits.md)
 - [Filament Resources](./filament/)

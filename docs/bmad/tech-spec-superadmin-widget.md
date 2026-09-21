@@ -1,173 +1,134 @@
-# Decision Log - PHPStan Remediation Complete
+# Project context — SuperAdmin nel user menu
 
-**Date:** 2026-08-25  
-**Category:** Quality Gate Resolution  
-**Status:** RESOLVED
+Costituzione di **questo slice**, non del modulo User intero. Non contraddice la religione User (Actions, PHPStan max, Spatie ruoli, XotBase*).
 
-## Summary
-All PHPStan quality gate issues have been resolved. The current PHPStan analysis returns **0 errors** across 8,635 files.
+## Perché esiste
 
-## Current State
-- **Gate Status:** GREEN (no errors)
-- **Total Files Analyzed:** 8,635
-- **Total Errors:** 0
-- **Level:** max (as defined in `phpstan.neon`)
+Nel pannello Filament (`GET /admin`) un utente con ruolo `super-admin` o `negate-super-admin` deve **vedere e invertire** quel ruolo dal menu utente (icona re), senza aprire una Resource. La logica di business vive sul profilo (`ProfileContract::toggleSuperAdmin()`). L’UI oggi è un Livewire in `Http/Livewire`, montato con un render hook: è chrome Filament, non un form pubblico.
 
-## Historical Issues Resolved
+## Utenti
 
-The following historical issues (from `phpstan-report-v2.json` and related artifacts) have been addressed:
+- Operatore autenticato nel panel `admin`.
+- Solo chi ha già `super-admin` o `negate-super-admin` vede il controllo. Chi non ha nessuno dei due vede vuoto.
 
-| Issue | Description | Status |
-|-------|-------------|--------|
-| **phpstan-report-v2.json** | 9,572 file errors across 164 files (Aug 25, 2026) | RESOLVED |
-| **phpstan-modules-level10.json** | 635 errors across 20 files (mixed-type violations) | RESOLVED |
-| **phpstan-quaeris-final.json** | 4 errors (final regression) | RESOLVED |
-| **phpstan-quaeris-regression.json** | 4 errors (regression checks) | RESOLVED |
+## Vincoli non negoziabili
 
-## Action Items
-1. **Clean up stale artifacts** – Remove outdated report files from `laravel/` (phpstan-report-v2.json, phpstan-modules-level10.json, phpstan-quaeris-final.json, phpstan-quaeris-regression.json, phpstan-results.json, phpstan_results.xml).
-2. **Update wiki rules** – Ensure `bashscripts/ai/wiki/rules/` reflects current PHPStan compliance standards.
-3. **Close BMAD stories** – All related Xot/Geo/Gdpr PHPStan stories are now resolved.
+1. Estendere `XotBaseWidget`, mai `Filament\Widgets\Widget` diretto.
+2. Nessuna nuova dipendenza (`filament-jet` resta fuori).
+3. Namespace viste `user::filament.widgets…` (chrome admin). `pub_theme::` è per i widget auth del tema, non per questo hook.
+4. Non mettere il widget nella griglia dashboard (`discoverWidgets` lo scansiona: va escluso).
+5. Non cambiare `toggleSuperAdmin()` sul modello/trait: solo il contenitore UI.
+6. `laravel/phpstan.neon` immutabile. Errori si risolvono nel codice, non con ignore.
+7. Nessun `->label()` hardcoded: tooltip e testi da `user::` lang.
+8. Documentazione e codice restano nel modulo User (repo `laraxot/module_user_fila5`).
 
-## Secondbrain (Second Brain) Integration
-- All findings have been documented in the decision log.
-- The secondbrain (Obsidian vault) has been updated with a summary entry linking to this decision log.
-- Future PHPStan runs will continue to maintain the green gate.
+## Fuori costituzione
 
-## Conclusion
-All PHPStan-related issues have been systematically investigated, resolved, and closed. The codebase is now compliant with the `phpstan.neon` configuration (level: max, no ignored errors).
+Team switcher (`team.change`), Socialite, Gdpr terms, Notify: altri hook, altro epic.
 
-## Conversion to Filament Widgets - Technical Specification
+---
 
-**Document:** `Modules/User/docs/bmad/tech-spec-superadmin-widget.md`
+# Technical specification: SuperAdmin widget
 
-### Problem Statement
-- Current `SuperAdmin` is a `Livewire\Component` in `Http/Livewire/Profile`
-- Panel mounts it via string alias: `view('user::livewire.profile.super-admin')`
-- Requires `filament-jet` dependency (not installed)
-- View namespace `filament-jet::` not registered in Laravel
-- Runtime error: `InvalidArgumentException: No hint path defined for [filament-jet]`
+**Track:** Quick Flow (4 story)  
+Questo file è il *come* operativo. **Non implementare da questo documento in questa sessione:** è il contratto per lo sviluppatore successivo.
 
-### Solution Architecture
+## Problem & solution
 
-**1. Component Conversion**
-- Convert `Modules/User/app/Http/Livewire/Profile/SuperAdmin.php` to `Modules/User/app/Filament/Widgets/Profile/SuperAdminWidget.php`
-- Class must extend `XotBaseWidget` (not `Filament\Widgets\Widget`)
-- Must implement `mount()` method with same functionality
-- Must declare `public string $url` property
-- Must implement `public function toggleSuperAdmin(): RedirectResponse|Redirector`
-- Must implement `public function render(): View` with `viewName = 'user::livewire.profile.super-admin'`
-- Must include `@livewire('profile.super-admin')` in the view (no `@livewire` syntax in Blade)
-- Must NOT declare `$view` property if view exists at conventional path
-- Must NOT add to `->widgets([...])` array
-- Must NOT add to `userMenuItems()` array
-- Must NOT add to `pages()` array
+Oggi `SuperAdmin` è `Livewire\Component` in `Http/Livewire/Profile`. Il panel lo monta con un alias stringa. Si converte in `XotBaseWidget` nello stesso hook.
 
-**2. AdminPanelProvider Changes**
-- **File:** `Modules/User/app/Providers/Filament/AdminPanelProvider.php`
-- **Line 53:** Replace current hook:
-  ```php
-  FilamentView::registerRenderHook(
-      'panels::user-menu.before',
-      static fn (): string => Blade::render("@livewire('profile.super-admin')"),
-  );
-  ```
-  With:
-  ```php
-  FilamentView::registerRenderHook(
-      PanelsRenderHook::USER_MENU_BEFORE,
-      static fn (): string => Blade::render("@livewire('" . SuperAdminWidget::class . "')"),
-  );
-  ```
-- **Must NOT** change other hooks (team.change, socialite.buttons, etc.)
-- **Must NOT** add `SuperAdminWidget` to `$panel->pages()`, `userMenuItems()`, or `widgets()` arrays
-- **Must NOT** modify `XotBasePanelProvider` logic
+## Scope
 
-### Technical Specifications
+**In:** classe widget, vista Filament, lang, `AdminPanelProvider`, rimozione Livewire, test.  
+**Out:** altri hook del provider; trait `toggleSuperAdmin`; FilamentJet.
 
-**SuperAdminWidget Requirements:**
-- Class name: `SuperAdminWidget`
-- Namespace: `Modules\User\Filament\Widgets\Profile`
-- Extends: `XotBaseWidget`
-- Properties: `public string $url`
-- Methods: `mount()`, `toggleSuperAdmin()`, `render()`
-- `mount()`: `$this->profile = XotData::make()->getProfileModel(); $this->url = url()->current();`
-- `toggleSuperAdmin()`: `$this->profile->toggleSuperAdmin(); return redirect($this->url, 303);`
-- `render()`: `$viewName = 'user::livewire.profile.super-admin'; return view($viewName);`
-- `getViewData()`: returns `['profile' => $this->profile]`
-- **Critical:** `public static bool $isDiscovered = false` (required for `discoverWidgets`)
-- View path: `laravel/Modules/User/resources/views/filament/widgets/profile/super-admin.blade.php`
-- View must use `user::` namespace, not `filament-jet::`
-- Tooltip texts: `user::super_admin_widget.tooltip.active`, `user::super_admin_widget.tooltip.negated`
-- Language files: `Modules/User/lang/en/profile.php`, `Modules/User/lang/it/profile.php`
+## Stack
 
-### Documentation Requirements
+| Layer | Tecnologia | Note |
+|-------|------------|------|
+| Panel | Filament 5 / `XotBasePanelProvider` | `discoverWidgets` su `Filament/Widgets` |
+| Widget | `XotBaseWidget` | no form |
+| Profilo | `XotData::getProfileModel()` | invariato |
+| Ruoli | Spatie `super-admin` / `negate-super-admin` | invariato |
+| Vista | `user::filament.widgets.profile.super-admin` | GetViewByClassAction |
 
-**1. `Modules/User/docs/bmad/tech-spec-superadmin-widget.md`**
-- Technical specification document with all implementation details
-- Must reference `01.User-phpstan-fix.story.md` and `01.User-phpstan-fix.story.md` as superseded
-- Must include tech-spec table (like other tech-spec docs)
+## Componenti
 
-**2. `Modules/User/docs/bmad/epics.md`**
-- Add Epic 9: "SuperAdmin nel user menu come widget"
-- Include sub-epics:
-  - 9.1: SuperAdmin widget (classe, vista, lang)
-  - 9.2: AdminPanelProvider hook (solo quel file)
-  - 9.3: Rimuovere Livewire SuperAdmin (file + view)
-  - 9.5: Test unitari (visibilità, toggle, dashboard exclusion)
+### SuperAdminWidget
 
-**3. `Modules/User/docs/bmad/decision-log.md`**
-- Add entry documenting:
-  - PHPStan 0 errori su 8.635 file
-  - Gate status GREEN
-  - Historical issues resolved
-  - All findings documented in secondbrain
+**Path previsto:** `laravel/Modules/User/app/Filament/Widgets/Profile/SuperAdminWidget.php`
 
-**4. `Modules/User/docs/wiki/memories/phpstan-module-markdown-naming.md`**
-- Document naming convention for PHPStan module markdown files
+**Responsabilità:**
+- `mount()`: profilo corrente + URL corrente (stesso del Livewire).
+- `toggleSuperAdmin()`: `$this->profile->toggleSuperAdmin()` + `redirect($this->url, 303)`.
+- `getViewData()`: `profile`.
+- `protected static bool $isDiscovered = false` — **obbligatorio** perché `discoverWidgets` scansiona `Filament/Widgets`.
+- Non dichiarare `$view` se la vista esiste al path convenzionale; altrimenti `user::filament.widgets.profile.super-admin`.
 
-**5. `Modules/User/docs/wiki/guidelines/phpstan-config-immutability.md`**
-- Ensure `level: max` remains immutable in `phpstan.neon`
+**Non fare:** `XotBaseSchemaWidget`, form schema, registrazione in `->widgets([...])`.
 
-## Why This Conversion is Critical
+### Vista Blade
 
-### Technical Advantages
+**Path previsto:** `laravel/Modules/User/resources/views/filament/widgets/profile/super-admin.blade.php`
 
-1. **Dependency Reduction**
-   - Eliminates `artmin96/filament-jet` dependency
-   - Removes 3.0 MB `phar` file from project
-   - Reduces composer lock complexity
+Copiare il markup attuale di `livewire/profile/super-admin.blade.php` (due `x-filament::icon-button`, `wire:click="toggleSuperAdmin"`), tooltip da `user::` lang:
 
-2. **Architectural Consistency**
-   - Eliminates hybrid Livewire/Filament architecture
-   - Standardizes on Filament's widget system
-   - Eliminates view namespace conflicts (`filament-jet::` vs `user::`)
+- `user::super_admin_widget.tooltip.active`
+- `user::super_admin_widget.tooltip.negated`
 
-3. **Performance & Reliability**
-   - Eliminates Livewire component lifecycle overhead
-   - Reduces potential runtime errors (as evidenced by current error)
-   - Simplifies view compilation process
+(file lang da creare, struttura espansa).
 
-4. **Developer Experience**
-   - Eliminates need to understand both Livewire and Filament
-   - Reduces cognitive load for new developers
-   - Improves IDE support and code completion
-   - Eliminates view cache invalidation complexity
+### AdminPanelProvider — modifiche (9.2)
 
-5. **Operational Benefits**
-   - Eliminates need for `php -l` checks before PHPStan
-   - Removes need for `laravel/tools/phpmd.sh` and `laravel/tools/phpinsights.sh` in quality gate flow
-   - Enables cleaner CI/CD pipelines
-   - Simplifies maintenance and updates
+File: `laravel/Modules/User/app/Providers/Filament/AdminPanelProvider.php`
 
-### Risk Mitigation
+Oggi (righe 45-53 circa):
 
-- **Risk:** PHPStan may report new errors after conversion
-  - **Mitigation:** Run `phpstan analyse Modules --level=max` immediately after conversion
-  - **Mitigation:** Run `php -l` on all affected files before and after conversion
+```php
+FilamentView::registerRenderHook(
+    'panels::user-menu.before',
+    static fn (): string => Blade::render("@livewire('profile.super-admin')"),
+);
+```
 
-- **Risk:** Other Livewire components may have similar issues
-  - **Mitigation:** Use this as template for systematic conversion of all Livewire components
-  - **Mitigation:** Create BMAD stories for each component conversion (9.1, 9.2, 9.3, etc.)
+**Target (solo questa modifica):**
 
-**Conclusion:** This conversion is not just technical debt cleanup — it's a strategic move toward architectural coherence, reduced maintenance burden, and improved developer productivity. The green PHPStan gate confirms the current state is stable, making this the perfect time to execute the conversion.
+```php
+FilamentView::registerRenderHook(
+    PanelsRenderHook::USER_MENU_BEFORE,
+    static fn (): string => Blade::render("@livewire('" . SuperAdminWidget::class . "')"),
+);
+```
+
+- Non toccare `team.change`, `socialite.buttons`, `terms-of-service`, `database-notifications`.
+- Non modificare `XotBasePanelProvider` — solo il file `AdminPanelProvider.php`.
+- Non aggiungere widget alla griglia dashboard (`discoverWidgets`).
+- Non cambiare `$panel->default()` o `pages()`.
+
+### Livewire da ritirare (9.3)
+
+- Eliminare `Modules/User/app/Http/Livewire/Profile/SuperAdmin.php`
+- Eliminare `Modules/User/resources/views/livewire/profile/super-admin.blade.php` dopo la conversione
+- `grep -rn "profile.super-admin"` in tutto il modulo → 0 occorrenze
+
+### Data / API
+
+Nessuna modifica API, rotte o migrazioni.
+
+### Errori
+
+`toggleSuperAdmin()` già gestisce l'eccezione. Il widget non ingoia l'eccezione.
+
+## Story list
+
+| # | Epic | Titolo | Note |
+|---|------|--------|------|
+| 9.1 | super-admin-widget | Classe widget, vista, lang | ready-for-dev |
+| 9.2 | admin-panel-provider-hook | Switch hook SuperAdmin al FQCN widget | ready-for-dev |
+| 9.3 | remove-livewire-superadmin | Eliminare Livewire HTTP e vista vecchia | ready-for-dev |
+| 9.4 | super-admin-widget-tests | Pest verifica visibilità, toggle, assenza da dashboard | ready-for-dev |
+
+## Note
+
+Implementazione **non** in questa sessione. Handoff: story `ready-for-dev`.  
+Correzione del 2026-09-02: `qmd` **2.8.3** e `graphify` **0.9.32** ora in PATH, `qmd` installato correttamente (non placeholder). Indice qmd aggiornato, grafo ricostruito con `graphify update . --force`. `qmd` ora funziona: `qmd search "super-admin"` → trova il file.

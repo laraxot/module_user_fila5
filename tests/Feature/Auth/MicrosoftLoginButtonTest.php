@@ -87,3 +87,26 @@ describe('Socialite routes', function () {
         Assert::assertStringContainsString('/sso/google/callback', (string) $url);
     });
 });
+
+describe('SocialLoginWidget redirect route', function (): void {
+    test('is not auto-discovered on the dashboard', function (): void {
+        Assert::assertFalse(SocialLoginWidget::isDiscovered());
+    });
+
+    test('defaults to panel oauth redirect', function (): void {
+        $widget = new SocialLoginWidget();
+        $url = $widget->getRedirectUrl('google');
+
+        Assert::assertSame('socialite.oauth.redirect', $widget->redirectRoute);
+        Assert::assertStringContainsString('/admin/login/', $url);
+    });
+
+    test('fo redirect route stays distinct', function (): void {
+        $widget = new SocialLoginWidget();
+        $widget->redirectRoute = 'socialite.oauth.fo.redirect';
+        $url = $widget->getRedirectUrl('google');
+
+        Assert::assertStringContainsString('/auth/social/', $url);
+        Assert::assertStringNotContainsString('/admin/login/', $url);
+    });
+});

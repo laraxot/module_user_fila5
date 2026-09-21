@@ -35,6 +35,8 @@ Nel pannello Filament (`GET /admin`) un utente con ruolo `super-admin` o `negate
 7. Nessun `->label()` hardcoded: tooltip e testi da `user::` lang.
 8. Documentazione e codice restano nel modulo User (repo `laraxot/module_user_fila5`).
 
-## Fuori costituzione
+## Fuori costituzione (slice SuperAdmin)
 
-Team switcher (`team.change`), Socialite, Gdpr terms, Notify: altri hook, altro epic.
+Team switcher, Socialite, Gdpr terms, Notify: [livewire-widget-project-context.md](./livewire-widget-project-context.md) + Epic 10.
+
+Campagna: [livewire-inventory.md](./livewire-inventory.md).

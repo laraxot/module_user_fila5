@@ -16,6 +16,8 @@ related:
   - "./structure.md"
   - "./testing-structure.md"
   - "./user-gdpr-oupling.md"
+  - "../bmad/livewire-inventory.md"
+  - "../stories/10.4.retire-gdpr-profile-livewire.story.md"
 ---
 
 # Decoupling User-GDPR via Event/Listener Pattern
