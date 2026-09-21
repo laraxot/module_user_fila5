@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Illuminate\Support\Facades\View;
 use Modules\User\Tests\TestCase;
 
 use function Pest\Laravel\get;

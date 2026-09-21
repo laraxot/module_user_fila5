@@ -221,3 +221,51 @@ Modules/User/app/View/Pages/ProfileEditVoltComponent.php --no-progress
 
 File toccati in questo aggiornamento: solo
 `laravel/Modules/User/app/View/Pages/ProfileEditVoltComponent.php`.
+
+## Aggiornamento 2026-09-21 (quarta occorrenza indipendente, modulo Cms)
+
+Task: `sistema tutte le segnalazioni di phpstan con bmad + secondbrain` (audit
+repo-wide, non un task su questo file). Trovato su
+`Modules/Cms/tests/Feature/Auth/LoginTest.php:162`:
+
+```php
+use Modules\User\Models\User;   // sorella, non genitore di BaseUser
+
+assert($authenticatedUser instanceof User);   // sempre falso, stesso bug
+```
+
+Errore PHPStan: `argument.templateType` — `Unable to resolve the template
+type TValue in call to function expect` sulla riga successiva
+(`expect($authenticatedUser->email)`), perche' `assert()` non narrowava a
+nulla di utile (classe sorella, mai vera per l'utente reale
+`Modules\Quaeris\Models\User`).
+
+Stesso fix, stesso principio (AC1/AC2 di questa story):
+
+```php
+use Modules\User\Models\BaseUser;   // was: use Modules\User\Models\User;
+
+assert($authenticatedUser instanceof BaseUser);   // was: instanceof User
+```
+
+Verifica: `./vendor/bin/phpstan analyse
+Modules/Cms/tests/Feature/Auth/LoginTest.php --no-progress` → `[OK] No
+errors` (da 1 errore). Nessun altro uso di `User` nel file (grep confermato).
+
+Quarta occorrenza indipendente dello stesso bug (config/auth.php →
+`Modules\Quaeris\Models\User` sorella di `Modules\User\Models\User`,
+entrambe figlie di `BaseUser`) in quattro file/moduli diversi
+(`ProfileEditVoltComponent.php` x3 sessioni, ora `LoginTest.php`). Pattern
+strutturale, non un errore isolato: chi scrive `instanceof User` o
+`@var User` per l'utente autenticato in questo progetto lo sbaglia quasi per
+default, perche' l'IDE/autocomplete suggerisce naturalmente
+`Modules\User\Models\User` (il nome "giusto" per convenzione) invece del
+model reale configurato in `auth.php`. Nessuna guardia meccanica esiste
+ancora per questo (vedi nota "getFormSchema static-call recidiva" in
+second-brain per un pattern analogo su questo stesso codebase: 8+ occorrenze,
+nessuna guardia). Da valutare in futuro: un test PHPStan custom rule o un
+Pint/grep pre-commit che vieti `instanceof \Modules\User\Models\User` fuori
+da `Modules/User` stesso.
+
+File toccati in questo aggiornamento: solo
+`laravel/Modules/Cms/tests/Feature/Auth/LoginTest.php`.
