@@ -13,6 +13,7 @@ use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Widgets\Profile\SuperAdminWidget;
 use Modules\User\Models\Role;
 use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
@@ -116,7 +117,9 @@ describe('SuperAdminWidget visibility', function (): void {
             ->assertDontSee(__('user::super_admin_widget.tooltip.negated'))
             ->assertSeeHtml('data-super-admin-state="active"')
             ->assertDontSeeHtml('data-super-admin-state="negated"')
-            ->assertSeeHtml('<svg');
+            ->assertSeeHtml('fi-icon-btn')
+            ->assertSeeHtml('M12 3l7 3v5c0 4.5-3 8-7 10')
+            ->assertSeeHtml('u-sa-spark');
     });
 
     test('negate-super-admin user sees the barred hero emblem toggle', function (): void {
@@ -130,7 +133,9 @@ describe('SuperAdminWidget visibility', function (): void {
             ->assertSee(__('user::super_admin_widget.tooltip.negated'))
             ->assertSeeHtml('data-super-admin-state="negated"')
             ->assertDontSeeHtml('data-super-admin-state="active"')
-            ->assertSeeHtml('<svg');
+            ->assertSeeHtml('fi-icon-btn')
+            ->assertSeeHtml('M12 3l7 3v5c0 4.5-3 8-7 10')
+            ->assertSeeHtml('u-sa-strike');
 
         // Nota: non si puo' usare assertDontSee(tooltip.active) qui — in locale it
         // "Super Admin" e' una sottostringa letterale di "Nega Super Admin", quindi
@@ -164,7 +169,7 @@ describe('SuperAdminWidget toggle', function (): void {
             ->assertRedirect();
 
         $fresh = $user->fresh();
-        Assert::assertInstanceOf(User::class, $fresh);
+        Assert::assertInstanceOf(UserContract::class, $fresh);
         Assert::assertFalse($fresh->hasRole('super-admin'));
         Assert::assertTrue($fresh->hasRole('negate-super-admin'));
     });
@@ -180,7 +185,7 @@ describe('SuperAdminWidget toggle', function (): void {
             ->assertRedirect();
 
         $fresh = $user->fresh();
-        Assert::assertInstanceOf(User::class, $fresh);
+        Assert::assertInstanceOf(UserContract::class, $fresh);
         Assert::assertTrue($fresh->hasRole('super-admin'));
         Assert::assertFalse($fresh->hasRole('negate-super-admin'));
     });

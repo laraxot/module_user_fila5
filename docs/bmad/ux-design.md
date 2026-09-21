@@ -28,9 +28,9 @@ Hook `USER_MENU_BEFORE`. A sinistra del menu utente, distinto dal team switcher.
 | `negate-super-admin` | `user-negate-superadmin` | `danger` | negato |
 | nessuno dei due | nessun bottone | — | — |
 
-Le SVG stanno in `resources/svg/` e `XotBaseServiceProvider::registerBladeIcons()` le registra con prefisso `user`. File `superadmin.svg` → `user-superadmin`. Filament 5 le consuma con `x-filament::icon-button` (`icon="user-superadmin"`), non con `@svg('user::…')` e non senza prefisso.
+Le SVG stanno in `resources/svg/` e `XotBaseServiceProvider::registerBladeIcons()` le registra con prefisso `user`. File `superadmin.svg` → `user-superadmin`. Filament 5 le consuma con `x-filament::icon-button` (`icon="user-superadmin"`), non con `@svg('user::…')` e non senza prefisso. Lo stroke vive sul root SVG (`currentColor`), come gli Heroicon: il colore arriva da `fi-color-warning` / `fi-color-danger` del CSS prebuilt.
 
-Vista widget: `user::filament.widgets.profile.super-admin-toggle`.
+Vista widget: `user::filament.widgets.profile.super-admin` (convenzione `GetViewByClassAction`, nessun pin `$view`).
 
 Marcatore di test: `data-super-admin-state="active"|"negated"`. `label` e `tooltip` dalla lang.
 

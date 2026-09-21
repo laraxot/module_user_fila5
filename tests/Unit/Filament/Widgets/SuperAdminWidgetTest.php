@@ -33,22 +33,25 @@ describe('SuperAdminWidget', function (): void {
         Assert::assertSame(0, $reflection->getNumberOfParameters());
     });
 
-    test('resolves to the super-admin-toggle view actually used by render()', function (): void {
+    test('resolves to the convention super-admin view used by render()', function (): void {
         $reflection = new ReflectionProperty(SuperAdminWidget::class, 'view');
         $reflection->setAccessible(true);
-        $instance = (new ReflectionClass(SuperAdminWidget::class))->newInstanceWithoutConstructor();
+        $widget = new SuperAdminWidget;
 
-        $view = $reflection->getValue($instance);
-
-        Assert::assertSame('user::filament.widgets.profile.super-admin-toggle', $view);
+        Assert::assertSame(
+            'user::filament.widgets.profile.super-admin',
+            $reflection->getValue($widget),
+        );
     });
 
-    test('super-admin-toggle view uses filament icon-button with auto-registered blade icons', function (): void {
-        $path = module_path('User', 'resources/views/filament/widgets/profile/super-admin-toggle.blade.php');
+    test('super-admin view uses filament icon-button with auto-registered blade icons', function (): void {
+        $path = module_path('User', 'resources/views/filament/widgets/profile/super-admin.blade.php');
         $contents = file_get_contents($path);
 
         Assert::assertStringContainsString('x-filament::icon-button', $contents);
         Assert::assertStringContainsString('icon="user-superadmin"', $contents);
         Assert::assertStringContainsString('icon="user-negate-superadmin"', $contents);
+        Assert::assertStringNotContainsString('icon="super-admin"', $contents);
+        Assert::assertStringNotContainsString('icon="heroicon', $contents);
     });
 });
