@@ -112,6 +112,11 @@ return [
         'layout' => [
             'tooltip' => 'layout',
             'icon' => 'layout',
+            'label' => 'layout',
+        ],
+        'create' => [
+            'tooltip' => 'create',
+            'icon' => 'create',
         ],
     ],
     'navigation' => [

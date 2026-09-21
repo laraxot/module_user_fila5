@@ -5,7 +5,7 @@ declare(strict_types=1);
 <span>
 @if ($profile->isSuperAdmin())
     <x-filament::icon-button
-        icon="superman"
+        icon="user-superman"
         color="warning"
         size="sm"
         data-super-admin-state="active"
@@ -15,7 +15,7 @@ declare(strict_types=1);
     />
 @elseif ($profile->isNegateSuperAdmin())
     <x-filament::icon-button
-        icon="clark-kent"
+        icon="user-clark-kent"
         color="danger"
         size="sm"
         data-super-admin-state="negated"
