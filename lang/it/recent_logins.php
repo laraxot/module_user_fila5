@@ -109,6 +109,10 @@ return [
             'icon' => 'delete',
             'label' => 'delete',
         ],
+        'layout' => [
+            'tooltip' => 'layout',
+            'icon' => 'layout',
+        ],
     ],
     'navigation' => [
         'name' => 'Recent Logins',

@@ -13,24 +13,16 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 /**
  * Chrome user-menu: toggle super-admin / negate-super-admin.
  *
- * Icone: SVG del modulo auto-registrati da XotBaseServiceProvider
- * (prefisso blade-icons `user-` + filename). Filament 5 le usa con
- * x-filament::icon-button icon="user-superadmin".
+ * Icone: SVG in resources/svg auto-registrati da
+ * XotBaseServiceProvider::registerBladeIcons() (prefisso = alias modulo).
+ * File superadmin.svg → Blade Icons / Filament: user-superadmin.
  *
- * Filament\Widgets\Widget::render() passa getViewData() alla vista.
+ * Vista: convenzione GetViewByClassAction
+ * user::filament.widgets.profile.super-admin.
  */
 class SuperAdminWidget extends XotBaseWidget
 {
     protected static bool $isDiscovered = false;
-
-    /**
-     * Vista con i nomi Blade Icons auto-registrati. La vista convenzionale
-     * `super-admin` in questo momento usa icone senza prefisso `user-`, che
-     * il set default non risolve.
-     *
-     * @var view-string
-     */
-    protected string $view = 'user::filament.widgets.profile.super-admin-toggle';
 
     public string $url = '#';
 
@@ -47,6 +39,8 @@ class SuperAdminWidget extends XotBaseWidget
     }
 
     /**
+     * Filament\Widgets\Widget::render() passa questi dati alla vista.
+     *
      * @return array{profile: ProfileContract}
      */
     protected function getViewData(): array

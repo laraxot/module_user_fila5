@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 ?>
-<div>
-@if (isset($profile) && $profile->isSuperAdmin())
+<span>
+@if ($profile->isSuperAdmin())
     <x-filament::icon-button
-        icon="user-superadmin"
+        icon="superman"
         color="warning"
         size="sm"
         data-super-admin-state="active"
@@ -13,10 +13,9 @@ declare(strict_types=1);
         :tooltip="__('user::super_admin_widget.tooltip.active')"
         wire:click="toggleSuperAdmin"
     />
-@endif
-@if (isset($profile) && $profile->isNegateSuperAdmin())
+@elseif ($profile->isNegateSuperAdmin())
     <x-filament::icon-button
-        icon="user-negate-superadmin"
+        icon="clark-kent"
         color="danger"
         size="sm"
         data-super-admin-state="negated"
@@ -25,4 +24,4 @@ declare(strict_types=1);
         wire:click="toggleSuperAdmin"
     />
 @endif
-</div>
+</span>

@@ -52,17 +52,16 @@ Oggi `SuperAdmin` è `Livewire\Component` in `Http/Livewire/Profile`. Il panel l
 | Ruoli | Spatie `super-admin` / `negate-super-admin` | invariato |
 | Vista | `user::filament.widgets.profile.super-admin` | GetViewByClassAction |
 
-## Icone (Marvel outline animate)
+## Icone (set Blade Icons del modulo)
 
-Il widget usa 2 SVG custom (`resources/svg/super-admin.svg` e `negate-superadmin.svg`) con stile outline elegante e animazione CSS integrata:
-- **Super-admin attivo** (`isSuperAdmin()`): SVG `super-admin.svg` con corona stilizzata, fulmine sottile, stella decorativa; animazione `marvel-pulse` (2s ease-in-out, scale + glow ambra). Rappresenta autorità confermata.
-- **Super-admin negato** (`isNegateSuperAdmin()`): SVG `negate-superadmin.svg` con corona barrata (linea diagonale), fulmine rotto, stella spenta; animazione `marvel-shake` (tremolio leggero, fade). Rappresenta revoca del ruolo.
+Filament 5 non legge `public/icons/`. `XotBaseServiceProvider::registerBladeIcons()` registra `resources/svg/` con prefisso `user`.
 
-Il widget usa due stati visivi:
-- **Super-admin attivo** (`isSuperAdmin()`): `heroicon-o-shield-check` (outline shield check → autorizzato/verificato, colore `warning` / ambra) — rappresenta il ruolo elevato confermato.
-- **Super-admin negato/disattivato** (`isNegateSuperAdmin()`): `heroicon-o-user-minus` (outline user minus → rimozione/negazione, colore `danger` / rosso) — indica che il ruolo è stato revocato.
+| Stato | File | Nome Filament (`icon=`) | Colore `icon-button` |
+|-------|------|-------------------------|----------------------|
+| attivo | `resources/svg/superadmin.svg` | `user-superadmin` | `warning` |
+| negato | `resources/svg/negate-superadmin.svg` | `user-negate-superadmin` | `danger` |
 
-Queste icone sono SVG outline personalizzati (`public/icons/super-admin.svg` e `negate-superadmin.svg`) con stile Marvel: corona stilizzata, stella, fulmine sottile, glow colorato (`amber` attivo, `rose` negato) e animazione CSS integrata (`marvel-pulse` / `marvel-shake`). Non usano `node_modules` ma asset locali autoregistrati da Filament.
+Markup: `x-filament::icon-button` (classi `fi-icon-btn` / `fi-color-*` del CSS prebuilt). SVG outline con `stroke="currentColor"` sul root, come Heroicon. `icon="super-admin"` (senza prefisso) cade nel set default e diventa vuoto (`fallback` = `''`).
 
 ## Componenti
 

@@ -15,11 +15,17 @@ related:
 
 # Decision log — SuperAdmin Livewire → Filament widget
 
+## [2026-09-21] Vista convenzionale, niente pin `$view`
+
+**Decision:** una sola blade `super-admin.blade.php`. `XotBaseWidget::resolveView()` + `GetViewByClassAction` la trovano da sole. Rimossa `super-admin-toggle`.
+
+**Rationale:** DRY. Il pin esisteva solo perché la vista convenzionale aveva perso il prefisso `user-`. Sistemata quella, il secondo file era rumore. Test: asserire il path dello scudo (`M12 3l7 3v5c0…`), non un generico `<svg>` (il loading indicator di `icon-button` è già un SVG).
+
 ## [2026-09-21] Icone Filament = set auto-registrato `user-`
 
-**Decision:** `x-filament::icon-button` con `user-superadmin` / `user-negate-superadmin`. I nomi senza prefisso (`super-admin`) cercano il set default e non esistono. Vista `super-admin-toggle`.
+**Decision:** `x-filament::icon-button` con `user-superadmin` / `user-negate-superadmin`. I nomi senza prefisso (`super-admin`) cercano il set default: `blade-icons.fallback` è `''`, quindi bottone vuoto senza errore.
 
-**Rationale:** [Filament 5 icons](https://filamentphp.com/docs/5.x/styling/icons) + [icon-button](https://filamentphp.com/docs/5.x/components/icon-button). Il modulo già registra `resources/svg` con prefisso `user`.
+**Rationale:** [Filament 5 icons](https://filamentphp.com/docs/5.x/styling/icons) + [icon-button](https://filamentphp.com/docs/5.x/components/icon-button). Custom SVG = `{prefix}-{filename}`. Qui prefix = `user`. Stroke `currentColor` sul root, come Heroicon: il panel non ha `viteTheme()`, solo classi `fi-*`.
 
 ## [2026-09-21] Emblema hero outline, non corona ruotata
 
