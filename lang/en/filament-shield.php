@@ -2,19 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> f548be94 (.)
-=======
-
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 return [
     'column.name' => 'Name',
     'column.guard_name' => 'Guard Name',
@@ -25,22 +12,7 @@ return [
     'field.guard_name' => 'Guard Name',
     'field.permissions' => 'Permissions',
     'field.select_all.name' => 'Select All',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     'field.select_all.message' => 'Enable all Permissions currently <span class=\\"text-primary font-medium\\">Enabled</span> for this role',
-=======
-    'field.select_all.message' => 'Enable all Permissions currently <span class=\"text-primary font-medium\">Enabled</span> for this role',
->>>>>>> f548be94 (.)
-=======
-    'field.select_all.message' => 'Enable all Permissions currently <span class=\"text-primary font-medium\">Enabled</span> for this role',
-=======
-    'field.select_all.message' => 'Enable all Permissions currently <span class=\\"text-primary font-medium\\">Enabled</span> for this role',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-    'field.select_all.message' => 'Enable all Permissions currently <span class=\\"text-primary font-medium\\">Enabled</span> for this role',
->>>>>>> laraxot/dev
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Roles',
     'nav.role.icon' => 'heroicon-o-shield-check',
@@ -66,34 +38,4 @@ return [
         'restore_any' => 'Restore Any',
         'replicate' => 'Replicate',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f548be94 (.)
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 ];

@@ -14,11 +14,6 @@ return [
         'updated_at' => ['label' => 'updated_at'],
         'updated_by' => ['label' => 'updated_by'],
         'created_by' => ['label' => 'created_by'],
-<<<<<<< HEAD
-    ],
-    'actions' => [
-        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
-=======
         'display_name' => ['label' => 'display_name'],
         'type' => ['label' => 'type'],
         'entity_id' => ['label' => 'entity_id'],
@@ -30,6 +25,5 @@ return [
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
->>>>>>> laraxot/dev
     ],
 ];

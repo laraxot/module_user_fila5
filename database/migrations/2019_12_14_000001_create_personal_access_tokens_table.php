@@ -8,30 +8,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 return new class extends XotBaseMigration {
     /**
      * Run the migrations.
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
      */
     public function up(): void
-=======
-=======
->>>>>>> 87273113 (.)
-     *
-     * @return void
-     */
-    public function up()
-<<<<<<< HEAD
->>>>>>> 60a2c9a9 (.)
-=======
-=======
-     */
-    public function up(): void
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-     */
-    public function up(): void
->>>>>>> laraxot/dev
     {
         // -- CREATE --
         $this->tableCreate(
@@ -48,22 +26,7 @@ return new class extends XotBaseMigration {
         // -- UPDATE --
         $this->tableUpdate(
             function (Blueprint $table) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                 // if (! $this->hasColumn('email'
-=======
-                // if (! $this->hasColumn('email')) {
->>>>>>> 60a2c9a9 (.)
-=======
-                // if (! $this->hasColumn('email')) {
-=======
-                // if (! $this->hasColumn('email'
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-                // if (! $this->hasColumn('email'
->>>>>>> laraxot/dev
                 //    $table->string('email')->nullable();
                 // }
             }

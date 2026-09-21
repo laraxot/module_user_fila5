@@ -11,13 +11,6 @@ use Modules\User\Enums\Enums\LanguageEnum as NestedLanguageEnum;
 use Modules\User\Enums\LanguageEnum;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Modules\User\Models\User;
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 
 uses(TestCase::class);
 

@@ -4,33 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\BaseProfileResource\Schemas;
 
-<<<<<<< HEAD
-use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
-use Filament\Schemas\Components\Section;
-=======
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\TextInput;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class BaseProfileForm extends XotBaseResourceForm
 {
-<<<<<<< HEAD
-    /**
-     * @return array<int|string, Component>
-     */
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> 87273113 (.)
-    {
-        return [
-            Section::make([
-                'name' => TextInput::make('name'),
-            ]),
-=======
     #[\Override]
     public function getFormSchema(): array
     {
@@ -54,7 +33,6 @@ class BaseProfileForm extends XotBaseResourceForm
                 ->disk('uploads')
                 ->directory('photos')
                 ->collection('photo_profile'),
->>>>>>> laraxot/dev
         ];
     }
 }

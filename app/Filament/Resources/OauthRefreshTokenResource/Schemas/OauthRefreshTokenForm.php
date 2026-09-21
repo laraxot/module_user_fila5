@@ -14,15 +14,7 @@ class OauthRefreshTokenForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> 87273113 (.)
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'access_token_id' => Select::make('access_token_id')

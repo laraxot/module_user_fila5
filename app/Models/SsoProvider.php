@@ -9,28 +9,10 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Modules\Xot\Models\Traits\HasXotFactory;
->>>>>>> 60a2c9a9 (.)
-=======
-use Modules\Xot\Models\Traits\HasXotFactory;
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 
 /**
  * Modules\User\Models\SsoProvider.
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
  * @property int                        $id
  * @property string                     $name
  * @property string                     $display_name
@@ -51,60 +33,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property string|null                $updated_by
  * @property Collection<int, User>      $users
  * @property int|null                   $users_count
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
- * @property int         $id
- * @property string      $name
- * @property string      $display_name
- * @property string      $type
- * @property string|null $entity_id
- * @property string|null $client_id
- * @property string|null $client_secret
- * @property string|null $redirect_url
- * @property string|null $metadata_url
- * @property string|null $scopes
- * @property array|null  $settings
- * @property array|null  $domain_whitelist
- * @property array|null  $role_mapping
- * @property bool        $is_active
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $created_by
- * @property string|null $updated_by
  *
- * @mixin IdeHelperSsoProvider
- *
- * @property Collection<int, User> $users
- * @property int|null              $users_count
-=======
- * @property int                        $id
- * @property string                     $name
- * @property string                     $display_name
- * @property string                     $type
- * @property string|null                $entity_id
- * @property string|null                $client_id
- * @property string|null                $client_secret
- * @property string|null                $redirect_url
- * @property string|null                $metadata_url
- * @property string|null                $scopes
- * @property array<string, mixed>|null  $settings
- * @property array<int, string>|null    $domain_whitelist
- * @property array<string, string>|null $role_mapping
- * @property bool                       $is_active
- * @property Carbon|null                $created_at
- * @property Carbon|null                $updated_at
- * @property string|null                $created_by
- * @property string|null                $updated_by
- * @property Collection<int, User>      $users
- * @property int|null                   $users_count
->>>>>>> 2024e2e7 (.)
- *
->>>>>>> 60a2c9a9 (.)
-=======
- *
->>>>>>> laraxot/dev
  * @method static Builder<static>|SsoProvider newModelQuery()
  * @method static Builder<static>|SsoProvider newQuery()
  * @method static Builder<static>|SsoProvider query()
@@ -126,53 +55,17 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static Builder<static>|SsoProvider whereType($value)
  * @method static Builder<static>|SsoProvider whereUpdatedAt($value)
  * @method static Builder<static>|SsoProvider whereUpdatedBy($value)
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $deleter
- * @property ProfileContract|null $updater
- * @method static \Modules\User\Database\Factories\SsoProviderFactory factory($count = null, $state = [])
-=======
-=======
->>>>>>> laraxot/dev
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 60a2c9a9 (.)
-=======
-<<<<<<< HEAD
-=======
  * @method static \Modules\User\Database\Factories\SsoProviderFactory factory($count = null, $state = [])
  *
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
- * @method static \Modules\User\Database\Factories\SsoProviderFactory factory($count = null, $state = [])
- *
->>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class SsoProvider extends BaseModel
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    use HasXotFactory;
-
->>>>>>> 60a2c9a9 (.)
-=======
-    use HasXotFactory;
-
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
     /**
      * The attributes that are mass assignable.
      *
@@ -195,22 +88,7 @@ class SsoProvider extends BaseModel
     ];
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @return HasMany<User, $this>
-=======
-     * Get all users associated with this SSO provider.
->>>>>>> 60a2c9a9 (.)
-=======
-     * Get all users associated with this SSO provider.
-=======
-     * @return HasMany<User, $this>
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-     * @return HasMany<User, $this>
->>>>>>> laraxot/dev
      */
     public function users(): HasMany
     {

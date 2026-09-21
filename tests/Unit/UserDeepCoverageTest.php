@@ -6,13 +6,6 @@ namespace Modules\User\Tests\Unit;
 
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Tests\ModuleDeepCoverage;
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Modules\User\Models\User;
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 
 uses(TestCase::class)->group('no-user-db');
 

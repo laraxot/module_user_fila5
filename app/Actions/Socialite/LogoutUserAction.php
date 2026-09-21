@@ -24,22 +24,7 @@ class LogoutUserAction
      */
     public function execute(UserContract $user): void
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         Assert::notNull($accessToken = $user->token(), '['.__FILE__.']['.__LINE__.']');
-=======
-        Assert::notNull($accessToken = $user->token(), '[' . __FILE__ . '][' . __LINE__ . ']');
->>>>>>> f548be94 (.)
-=======
-        Assert::notNull($accessToken = $user->token(), '[' . __FILE__ . '][' . __LINE__ . ']');
-=======
-        Assert::notNull($accessToken = $user->token(), '['.__FILE__.']['.__LINE__.']');
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-        Assert::notNull($accessToken = $user->token(), '['.__FILE__.']['.__LINE__.']');
->>>>>>> laraxot/dev
         /*
          * DB::table('oauth_refresh_tokens')
          * ->where('access_token_id', $accessToken->)

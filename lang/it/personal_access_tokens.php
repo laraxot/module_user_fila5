@@ -19,13 +19,10 @@ return [
         'updated_by' => ['label' => 'updated_by'],
         'created_by' => ['label' => 'created_by'],
         'deleted_by' => ['label' => 'deleted_by'],
-<<<<<<< HEAD
-=======
         'user_id' => ['label' => 'user_id'],
         'client_id' => ['label' => 'client_id'],
         'revoked' => ['label' => 'revoked'],
         'scopes' => ['label' => 'scopes'],
->>>>>>> laraxot/dev
     ],
     'actions' => [
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],

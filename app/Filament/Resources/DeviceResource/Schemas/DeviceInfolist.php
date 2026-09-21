@@ -16,15 +16,7 @@ class DeviceInfolist extends XotBaseResourceInfolist
      *
      * Campi basati sul Model Device.php -> id, uuid, mobile_id, name, type, device, platform, browser, version, is_robot, robot, is_desktop, is_mobile, is_tablet, is_phone, languages
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public static function getInfolistSchema(): array
-=======
     public function getInfolistSchema(): array
->>>>>>> 87273113 (.)
-=======
-    public function getInfolistSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'id' => TextEntry::make('id'),

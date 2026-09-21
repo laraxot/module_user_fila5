@@ -4,20 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TeamResource\Pages;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Override;
->>>>>>> f548be94 (.)
-=======
-use Override;
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
 use Filament\Tables\Columns\TextColumn;
-=======
->>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\TeamResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
@@ -25,26 +12,6 @@ class ListTeams extends XotBaseListRecords
 {
     // //
     protected static string $resource = TeamResource::class;
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-    #[\Override]
-    /**
-     * @return array<string, mixed>
-     */
-=======
-    #[Override]
->>>>>>> f548be94 (.)
-=======
-    #[Override]
-=======
-    #[\Override]
-    /**
-     * @return array<string, mixed>
-     */
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
     public function getTableColumns(): array
     {
         return [
@@ -60,6 +27,4 @@ class ListTeams extends XotBaseListRecords
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable(),
         ];
     }
-=======
->>>>>>> laraxot/dev
 }

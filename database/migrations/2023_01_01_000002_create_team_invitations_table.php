@@ -19,67 +19,14 @@ return new class extends XotBaseMigration {
             $table->string('team_id', 36)->nullable()->index();
             $table->string('email');
             $table->string('role')->nullable();
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             $table->timestamp('accepted_at')->nullable();
             $table->timestamp('declined_at')->nullable();
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            $table->timestamp('accepted_at')->nullable();
-            $table->timestamp('declined_at')->nullable();
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            $table->timestamp('accepted_at')->nullable();
-            $table->timestamp('declined_at')->nullable();
->>>>>>> laraxot/dev
 
             // $table->unique(['team_id', 'email']);
         });
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-            if (! $this->hasColumn('accepted_at')) {
-                $table->timestamp('accepted_at')->nullable();
-            }
-            if (! $this->hasColumn('declined_at')) {
-                $table->timestamp('declined_at')->nullable();
-            }
-            if (! $this->hasColumn('user_id')) {
-                $table->string('user_id')->nullable()->index();
-            }
-
-            // if ($hasIndexName('team_invitations_team_id_foreign'))
-<<<<<<< HEAD
-=======
-            // if ($this->hasIndexName('team_invitations_team_id_foreign')) {
->>>>>>> f548be94 (.)
-=======
-            // if ($this->hasIndexName('team_invitations_team_id_foreign')) {
-=======
-            if (! $this->hasColumn('accepted_at')) {
-                $table->timestamp('accepted_at')->nullable();
-            }
-            if (! $this->hasColumn('declined_at')) {
-                $table->timestamp('declined_at')->nullable();
-            }
-            if (! $this->hasColumn('user_id')) {
-                $table->string('user_id')->nullable()->index();
-            }
-
-            // if ($hasIndexName('team_invitations_team_id_foreign'))
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
             //    $table->dropForeign('team_invitations_team_id_foreign');
             // }
 

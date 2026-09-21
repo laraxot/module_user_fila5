@@ -2,19 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> f548be94 (.)
-=======
-
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 return [
     'otp_code' => 'Codice OTP',
     'title' => 'Password Scaduta, Reimposta Password',
@@ -37,68 +24,13 @@ return [
         'current_password' => [
             'label' => 'Password Attuale',
             'validation_attribute' => 'password_attuale',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'password' => [
             'label' => 'Nuova Password',
             'validation_attribute' => 'password',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'password_confirmation' => [
-            'label' => 'Conferma Password',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'password_confirmation' => [
-            'label' => 'Conferma Password',
->>>>>>> f548be94 (.)
-=======
-        ],
-        'password_confirmation' => [
-            'label' => 'Conferma Password',
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'password_confirmation' => [
-            'label' => 'Conferma Password',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
         ],
     ],
     'reset_password' => 'Reimposta Password',
@@ -126,22 +58,7 @@ return [
         ],
         'column_not_found' => [
             'title' => 'Colonna Non Trovata',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'body' => 'La colonna \\":column_name\\" o la colonna della password \\":password_column_name\\" non è stata trovata nella tabella :table_name.',
-=======
-            'body' => 'La colonna \":column_name\" o la colonna della password \":password_column_name\" non è stata trovata nella tabella :table_name.',
->>>>>>> f548be94 (.)
-=======
-            'body' => 'La colonna \":column_name\" o la colonna della password \":password_column_name\" non è stata trovata nella tabella :table_name.',
-=======
-            'body' => 'La colonna \\":column_name\\" o la colonna della password \\":password_column_name\\" non è stata trovata nella tabella :table_name.',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'body' => 'La colonna \\":column_name\\" o la colonna della password \\":password_column_name\\" non è stata trovata nella tabella :table_name.',
->>>>>>> laraxot/dev
         ],
         'password_reset' => [
             'success' => 'Password Reimpostata con Successo',
@@ -156,22 +73,7 @@ return [
         ],
     ],
     'exceptions' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         'column_not_found' => 'La colonna \\":column_name\\" o la colonna della password \\":password_column_name\\" non è stata trovata nella tabella \\":table_name\\". Pubblica le migrazioni e eseguile, se l\'errore persiste, pubblica il file di configurazione e aggiorna i valori di table_name, column_name, e password_column_name.',
-=======
-        'column_not_found' => 'La colonna \":column_name\" o la colonna della password \":password_column_name\" non è stata trovata nella tabella \":table_name\". Pubblica le migrazioni e eseguile, se l\'errore persiste, pubblica il file di configurazione e aggiorna i valori di table_name, column_name, e password_column_name.',
->>>>>>> f548be94 (.)
-=======
-        'column_not_found' => 'La colonna \":column_name\" o la colonna della password \":password_column_name\" non è stata trovata nella tabella \":table_name\". Pubblica le migrazioni e eseguile, se l\'errore persiste, pubblica il file di configurazione e aggiorna i valori di table_name, column_name, e password_column_name.',
-=======
-        'column_not_found' => 'La colonna \\":column_name\\" o la colonna della password \\":password_column_name\\" non è stata trovata nella tabella \\":table_name\\". Pubblica le migrazioni e eseguile, se l\'errore persiste, pubblica il file di configurazione e aggiorna i valori di table_name, column_name, e password_column_name.',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-        'column_not_found' => 'La colonna \\":column_name\\" o la colonna della password \\":password_column_name\\" non è stata trovata nella tabella \\":table_name\\". Pubblica le migrazioni e eseguile, se l\'errore persiste, pubblica il file di configurazione e aggiorna i valori di table_name, column_name, e password_column_name.',
->>>>>>> laraxot/dev
     ],
     'validation' => [
         'invalid_code' => 'Il codice inserito non è valido.',
@@ -194,21 +96,6 @@ return [
         'sort' => '31',
         'icon' => 'user-user-otp',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> laraxot/dev
 ];

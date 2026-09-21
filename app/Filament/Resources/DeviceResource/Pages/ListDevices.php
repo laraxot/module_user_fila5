@@ -4,52 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\DeviceResource\Pages;
 
-<<<<<<< HEAD
-use Filament\Tables\Columns\Column;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-use Override;
-use Filament\Actions\CreateAction;
-use Filament\Tables\Actions\DeleteAction;
-use Filament\Tables\Actions\DeleteBulkAction;
-use Filament\Tables\Actions\EditAction;
-use Filament\Tables\Actions\ViewAction;
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
-=======
->>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\DeviceResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListDevices extends XotBaseListRecords
 {
     protected static string $resource = DeviceResource::class;
-<<<<<<< HEAD
-
-    /**
-     * @return array<string, Column>
-     */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    #[\Override]
-=======
-    #[Override]
->>>>>>> f548be94 (.)
-=======
-    #[Override]
-=======
-    #[\Override]
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
     public function getTableColumns(): array
     {
         return [
@@ -67,6 +29,4 @@ class ListDevices extends XotBaseListRecords
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
         ];
     }
-=======
->>>>>>> laraxot/dev
 }

@@ -7,14 +7,6 @@ namespace Modules\User\Filament\Resources;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
-<<<<<<< HEAD
-use Filament\Forms\Components\Select;
-use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
-use Filament\Schemas\Components\Grid;
-use Filament\Schemas\Components\Section;
-=======
->>>>>>> laraxot/dev
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
@@ -51,10 +43,6 @@ class OauthAccessTokenResource extends XotBaseResource
         return __('OAuth Access Token');
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
     public static function table(Table $table): Table
     {
         return $table
@@ -72,15 +60,7 @@ class OauthAccessTokenResource extends XotBaseResource
                             return null;
                         }
                         $user = $record->user;
-<<<<<<< HEAD
-<<<<<<< HEAD
                         if ($user !== null && method_exists($user, 'exists') && $user->exists) {
-=======
-                        if (null !== $user && method_exists($user, 'exists') && $user->exists) {
->>>>>>> 60a2c9a9 (.)
-=======
-                        if (null !== $user && method_exists($user, 'exists') && $user->exists) {
->>>>>>> laraxot/dev
                             return UserResource::getUrl('view', ['record' => $user]);
                         }
 
@@ -99,15 +79,7 @@ class OauthAccessTokenResource extends XotBaseResource
                 TextColumn::make('scopes')
                     ->limit(30)
                     ->tooltip(function (mixed $state): ?string {
-<<<<<<< HEAD
-<<<<<<< HEAD
                         if ($state === null) {
-=======
-                        if (null === $state) {
->>>>>>> 60a2c9a9 (.)
-=======
-                        if (null === $state) {
->>>>>>> laraxot/dev
                             return null;
                         }
                         if (is_array($state)) {
@@ -163,11 +135,6 @@ class OauthAccessTokenResource extends XotBaseResource
             ->defaultSort('created_at', 'desc');
     }
 
-<<<<<<< HEAD
-=======
->>>>>>> 2024e2e7 (.)
-=======
->>>>>>> laraxot/dev
     public static function getPages(): array
     {
         return [
@@ -176,41 +143,6 @@ class OauthAccessTokenResource extends XotBaseResource
         ];
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    /**
-     * @return array<string, Component>
-     */
-    public static function getFormSchema(): array
-    {
-        return [
-            'oauth_access_token_info' => Section::make('OAuth Access Token Information')
-                ->schema([
-                    'grid_1' => Grid::make(2)
-                        ->schema([
-                            'user_id' => Select::make('user_id')
-                                ->relationship('user', 'name')
-                                ->searchable(),
-                            'client_id' => Select::make('client_id')
-                                ->relationship('client', 'name')
-                                ->searchable()
-                                ->required(),
-                        ]),
-
-                    'grid_2' => Grid::make(2)
-                        ->schema([
-                            'name' => TextInput::make('name')
-                                ->maxLength(255),
-                            'scopes' => TextInput::make('scopes'),
-                        ]),
-                ]),
-        ];
-    }
-
-=======
->>>>>>> 2024e2e7 (.)
-=======
->>>>>>> laraxot/dev
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery()->with(['user', 'client']);

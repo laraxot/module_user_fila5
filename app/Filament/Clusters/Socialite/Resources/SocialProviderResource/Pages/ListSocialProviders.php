@@ -4,11 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource\Pages;
 
-<<<<<<< HEAD
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
-=======
->>>>>>> laraxot/dev
 use Filament\Tables\Filters\SelectFilter;
 use Modules\User\Filament\Clusters\Socialite\Resources\SocialProviderResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -21,21 +18,9 @@ class ListSocialProviders extends XotBaseListRecords
     protected static string $resource = SocialProviderResource::class;
 
     #[\Override]
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
-=======
->>>>>>> 60a2c9a9 (.)
-=======
-=======
-    /**
-     * @return array<string, mixed>
-     */
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
     public function getTableColumns(): array
     {
         return [
@@ -54,8 +39,6 @@ class ListSocialProviders extends XotBaseListRecords
     }
 
     #[\Override]
-=======
->>>>>>> laraxot/dev
     public function getTableFilters(): array
     {
         return [

@@ -6,24 +6,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Role;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-return new class extends XotBaseMigration
-{
-=======
 return new class extends XotBaseMigration {
->>>>>>> 60a2c9a9 (.)
-=======
-return new class extends XotBaseMigration {
-=======
-return new class extends XotBaseMigration
-{
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-return new class extends XotBaseMigration {
->>>>>>> laraxot/dev
     protected ?string $model_class = Role::class;
 
     public function up(): void
