@@ -22,9 +22,10 @@ class AdminPanelProvider extends XotBasePanelProvider
     {
         $panel = parent::panel($panel);
 
-        FilamentView::registerRenderHook('panels::auth.login.form.after', static fn (): string => Blade::render(
-            "@livewire('socialite.buttons')",
-        ));
+        FilamentView::registerRenderHook(
+            'panels::auth.login.form.after',
+            static fn (): string => Blade::render("@livewire('socialite.buttons')",)
+        );
 
         /*-- moved into Gdpr
          * FilamentView::registerRenderHook(
@@ -41,9 +42,10 @@ class AdminPanelProvider extends XotBasePanelProvider
          * );
          * //*/
 
-        FilamentView::registerRenderHook('panels::user-menu.before', static fn (): string => Blade::render(
-            "@livewire('team.change')",
-        ));
+        FilamentView::registerRenderHook(
+            'panels::user-menu.before',
+            static fn (): string => Blade::render("@livewire('team.change')",)
+        );
 
         FilamentView::registerRenderHook(
             'panels::user-menu.before',

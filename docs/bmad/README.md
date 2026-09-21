@@ -10,6 +10,28 @@ bmad_track: "core-identity"
 
 # User — BMAD Method Integration
 
+## Slice vigente (Quick Flow) — SuperAdmin widget
+
+**Solo documentazione, codice non convertito.** Epic 9 è `ready-for-dev`.
+
+| Artefatto | Path |
+|-----------|------|
+| Costituzione | [project-context.md](./project-context.md) |
+| Decisioni | [decision-log.md](./decision-log.md) |
+| Brief | [product-brief.md](./product-brief.md) |
+| PRD | [prd.md](./prd.md) |
+| Tech spec (hook provider) | [tech-spec.md](./tech-spec.md) |
+| Architecture | [architecture.md](./architecture.md) |
+| UX | [ux-design.md](./ux-design.md) |
+| Brainstorm | [brainstorming.md](./brainstorming.md) |
+| Mappa epic | [epics.md](./epics.md) |
+| 9.1 widget | [../stories/9.1.super-admin-widget.story.md](../stories/9.1.super-admin-widget.story.md) |
+| 9.2 AdminPanelProvider | [../stories/9.2.admin-panel-provider-hook.story.md](../stories/9.2.admin-panel-provider-hook.story.md) |
+| 9.3 ritiro Livewire | [../stories/9.3.remove-livewire-superadmin.story.md](../stories/9.3.remove-livewire-superadmin.story.md) |
+| 9.4 test | [../stories/9.4.super-admin-widget-tests.story.md](../stories/9.4.super-admin-widget-tests.story.md) |
+
+Handoff: implementare in ordine 9.1 → 9.2 → 9.3; 9.4 dopo 9.2.
+
 ## Scopo BMAD per User
 
 User è il **modulo identità** che garantisce autenticazione, autorizzazione e multi-tenancy. In BMAD, questo modulo rappresenta il **core della sicurezza** su cui tutti gli altri moduli fanno affidamento.
