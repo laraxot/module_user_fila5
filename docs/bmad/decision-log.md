@@ -15,6 +15,12 @@ related:
 
 # Decision log — SuperAdmin Livewire → Filament widget
 
+## [2026-09-21] Superman / Clark Kent, gli altri SVG restano
+
+**Decision:** il toggle usa `user-superman` (`superman.svg`) e `user-clark-kent` (`clark-kent.svg`). Non si cancellano `superadmin.svg`, `negate-superadmin.svg`, `user-super-admin.svg`, `user-negate-super-admin.svg`, `user-superman.svg`, `user-clark-kent.svg`.
+
+**Rationale:** super-admin è l’identità svelata; negate-super-admin è lo stesso privilegio sotto mentite spoglie. Occhiali vs cappa si leggono a 16px. Filename con `user-` nel modulo `user` diventano `user-user-*` e non si usano nel `icon=`. Nessuno scudo/logo registrato: outline originale.
+
 ## [2026-09-21] Vista convenzionale, niente pin `$view`
 
 **Decision:** una sola blade `super-admin.blade.php`. `XotBaseWidget::resolveView()` + `GetViewByClassAction` la trovano da sole. Rimossa `super-admin-toggle`.
