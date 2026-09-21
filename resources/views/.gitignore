@@ -6,17 +6,9 @@
 
 # Backup files
 *.bak
--e 
+-e
 # PHPStan documentation
 docs/phpstan/
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 _docs/
 
 # Backup files
@@ -25,12 +17,12 @@ _docs/
 *.backup-*
 *.backup_*
 agentdb.rvf
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f548be94 (.)
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
+
+
+
+
+
+
+
+
+

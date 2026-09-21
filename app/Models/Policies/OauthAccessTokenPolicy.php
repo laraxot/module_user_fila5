@@ -22,34 +22,9 @@ class OauthAccessTokenPolicy extends UserBasePolicy
      */
     public function view(UserContract $user, OauthAccessToken $oauthAccessToken): bool
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         return $user->hasPermissionTo('oauth-access-token.view')
             || $user->id === $oauthAccessToken->user_id
             || $user->hasRole('super-admin');
-=======
-=======
->>>>>>> 87273113 (.)
-        return (
-            $user->hasPermissionTo('oauth-access-token.view') ||
-            $user->id === $oauthAccessToken->user_id ||
-            $user->hasRole('super-admin')
-        );
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-        return $user->hasPermissionTo('oauth-access-token.view')
-            || $user->id === $oauthAccessToken->user_id
-            || $user->hasRole('super-admin');
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-        return $user->hasPermissionTo('oauth-access-token.view')
-            || $user->id === $oauthAccessToken->user_id
-            || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**
@@ -73,34 +48,9 @@ class OauthAccessTokenPolicy extends UserBasePolicy
      */
     public function delete(UserContract $user, OauthAccessToken $oauthAccessToken): bool
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         return $user->hasPermissionTo('oauth-access-token.delete')
             || $user->id === $oauthAccessToken->user_id
             || $user->hasRole('super-admin');
-=======
-=======
->>>>>>> 87273113 (.)
-        return (
-            $user->hasPermissionTo('oauth-access-token.delete') ||
-            $user->id === $oauthAccessToken->user_id ||
-            $user->hasRole('super-admin')
-        );
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-        return $user->hasPermissionTo('oauth-access-token.delete')
-            || $user->id === $oauthAccessToken->user_id
-            || $user->hasRole('super-admin');
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-        return $user->hasPermissionTo('oauth-access-token.delete')
-            || $user->id === $oauthAccessToken->user_id
-            || $user->hasRole('super-admin');
->>>>>>> laraxot/dev
     }
 
     /**

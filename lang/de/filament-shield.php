@@ -2,19 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> f548be94 (.)
-=======
-
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 return [
     'column.guard_name' => 'Guard-Name',
     'column.name' => 'Name',
@@ -24,22 +11,7 @@ return [
     'field.guard_name' => 'Guard-Name',
     'field.name' => 'Name',
     'field.permissions' => 'Berechtigungen',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     'field.select_all.message' => 'Aktivierung aller Berechtigungen, die derzeit für diese Rolle <span class=\\"text-primary font-medium\\">aktiviert</span> sind',
-=======
-    'field.select_all.message' => 'Aktivierung aller Berechtigungen, die derzeit für diese Rolle <span class=\"text-primary font-medium\">aktiviert</span> sind',
->>>>>>> f548be94 (.)
-=======
-    'field.select_all.message' => 'Aktivierung aller Berechtigungen, die derzeit für diese Rolle <span class=\"text-primary font-medium\">aktiviert</span> sind',
-=======
-    'field.select_all.message' => 'Aktivierung aller Berechtigungen, die derzeit für diese Rolle <span class=\\"text-primary font-medium\\">aktiviert</span> sind',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-    'field.select_all.message' => 'Aktivierung aller Berechtigungen, die derzeit für diese Rolle <span class=\\"text-primary font-medium\\">aktiviert</span> sind',
->>>>>>> laraxot/dev
     'field.select_all.name' => 'Alle auswählen',
     'nav.group' => 'Filament Shield',
     'nav.role.icon' => 'heroicon-o-shield-check',
@@ -64,34 +36,4 @@ return [
         'restore' => 'Wiederherstellen',
         'restore_any' => 'Alle wiederherstellen',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f548be94 (.)
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 ];

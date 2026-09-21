@@ -3,136 +3,27 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-    /*
-     * |--------------------------------------------------------------------------
-     * | Table Columns
-     * |--------------------------------------------------------------------------
-     */
-
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
     'column.name' => 'Nombre',
     'column.guard_name' => 'Guard',
     'column.roles' => 'Roles',
     'column.permissions' => 'Permisos',
     'column.updated_at' => 'Actualizado el',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-    /*
-     * |--------------------------------------------------------------------------
-     * | Form Fields
-     * |--------------------------------------------------------------------------
-     */
-
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
     'field.name' => 'Nombre',
     'field.guard_name' => 'Guard',
     'field.permissions' => 'Permisos',
     'field.select_all.name' => 'Seleccionar todos',
     'field.select_all.message' => 'Habilitar todos los permisos actualmente <span class="text-primary font-medium">habilitados</span> para este rol',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-    /*
-     * |--------------------------------------------------------------------------
-     * | Navigation & Resource
-     * |--------------------------------------------------------------------------
-     */
-
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Roles',
     'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Rol',
     'resource.label.roles' => 'Roles',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-    /*
-     * |--------------------------------------------------------------------------
-     * | Section & Tabs
-     * |--------------------------------------------------------------------------
-     */
-
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
     'section' => 'Entidades',
     'resources' => 'Recursos',
     'widgets' => 'Widgets',
     'pages' => 'Páginas',
     'custom' => 'Permisos personalizados',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     'forbidden' => 'Usted no tiene permiso de acceso',
-=======
-=======
->>>>>>> 87273113 (.)
-    /*
-     * |--------------------------------------------------------------------------
-     * | Messages
-     * |--------------------------------------------------------------------------
-     */
-
-    'forbidden' => 'Usted no tiene permiso de acceso',
-    /*
-     * |--------------------------------------------------------------------------
-     * | Resource Permissions' Labels
-     * |--------------------------------------------------------------------------
-     */
-
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-    'forbidden' => 'Usted no tiene permiso de acceso',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-    'forbidden' => 'Usted no tiene permiso de acceso',
->>>>>>> laraxot/dev
     'resource_permission_prefixes_labels' => [
         'view' => 'Ver un registro en particular',
         'view_any' => 'Ver el listado de registros',
@@ -147,34 +38,4 @@ return [
         'restore_any' => 'Restaurar varios registros',
         'replicate' => 'Replicar',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f548be94 (.)
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 ];

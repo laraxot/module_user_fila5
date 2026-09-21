@@ -68,16 +68,10 @@ test('retrieves oauth user from socialite driver', function (): void {
         $mock->allows(['getEmail' => 'user@example.com']);
     });
 
-<<<<<<< HEAD
-    $driver = new class($oauthUser)
-    {
-        public function __construct(private SocialiteUserContract $oauthUser) {}
-=======
     $driver = new class($oauthUser) {
         public function __construct(private SocialiteUserContract $oauthUser)
         {
         }
->>>>>>> laraxot/dev
 
         public function user(): SocialiteUserContract
         {
@@ -97,20 +91,12 @@ test('retrieves oauth user from socialite driver', function (): void {
 });
 
 test('returns null and dispatches invalid state event when socialite state is invalid', function (): void {
-<<<<<<< HEAD
-    $exception = new InvalidStateException;
-
-    $driver = new class($exception)
-    {
-        public function __construct(private InvalidStateException $exception) {}
-=======
     $exception = new InvalidStateException();
 
     $driver = new class($exception) {
         public function __construct(private InvalidStateException $exception)
         {
         }
->>>>>>> laraxot/dev
 
         public function user(): never
         {

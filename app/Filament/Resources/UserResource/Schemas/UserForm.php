@@ -28,15 +28,7 @@ class UserForm extends XotBaseResourceForm
      *
      * @return array<int|string, SchemaComponent>
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> 87273113 (.)
-=======
-    public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'worker' => UserSection::make('worker'),
@@ -69,11 +61,7 @@ class UserForm extends XotBaseResourceForm
                         /** @var Carbon|null $createdAt */
                         $createdAt = $record->getAttribute('created_at');
 
-<<<<<<< HEAD
-                        if ($createdAt === null) {
-=======
                         if (null === $createdAt) {
->>>>>>> laraxot/dev
                             return new HtmlString('&mdash;');
                         }
                         if ($createdAt instanceof CarbonInterface) {

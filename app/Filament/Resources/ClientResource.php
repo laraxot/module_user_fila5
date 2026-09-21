@@ -4,120 +4,28 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
-<<<<<<< HEAD
-use Filament\Forms\Components\Field;
-use Filament\Forms\Components\TextInput;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
-=======
->>>>>>> 60a2c9a9 (.)
-=======
-=======
-use Illuminate\Database\Eloquent\Model;
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-use Illuminate\Database\Eloquent\Model;
->>>>>>> laraxot/dev
 use Laravel\Passport\Client;
 use Laravel\Passport\Passport;
 use Modules\User\Filament\Resources\ClientResource\Pages\CreateClient;
 use Modules\User\Filament\Resources\ClientResource\Pages\EditClient;
 use Modules\User\Filament\Resources\ClientResource\Pages\ListClients;
 use Modules\User\Filament\Resources\ClientResource\Pages\ViewClient;
-<<<<<<< HEAD
-use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Webmozart\Assert\Assert;
 
 class ClientResource extends XotBaseResource
 {
     protected static string $resource = ClientResource::class;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    // use HasResourceFormComponents;
-
-    /**
-     * ⚠️ IMPORTANTE: NavigationIcon è gestito automaticamente da NavigationLabelTrait
-     * tramite il file di traduzione (navigation.icon).
-     * NON definire $navigationIcon qui!
-     *
-     * Get the form schema for the resource (XotBaseResource pattern).
-     *
-     * @return array<string, Field>
-     */
-    public static function getFormSchema(): array
-    {
-        $components = [
-            'name' => TextInput::make('name')
-                ->unique('clients', 'name')
-                ->required()
-                ->maxLength(255),
-            'user_id' => XotBaseSelect::make('user_id')
-                ->relationship('user', 'name')
-                ->searchable()
-                ->required(),
-        ];
-
-        /*
-         * merge getResourceFormComponents if enabled
-         */
-        if (static::isResourceFormComponentsEnabled()) {
-            $additionalComponents = static::getResourceFormComponents();
-            /** @var array<string, Field> $additionalComponents */
-            /** @var array<string, Field> $components */
-            $components = array_merge($components, $additionalComponents);
-        }
-
-<<<<<<< HEAD
-        /* @var array<string, Field> $components */
-=======
-        /* @var array<string, \Filament\Forms\Components\Field> $components */
->>>>>>> 60a2c9a9 (.)
-        return $components;
-    }
-=======
->>>>>>> 2024e2e7 (.)
-
-    /**
-     * Get the model class for the resource from Passport.
-     *
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     // use HasResourceFormComponents;
 
     /**
      * Get the model class for the resource from Passport.
      *
->>>>>>> laraxot/dev
      * @return class-string<Model>
      */
     /**
      * @return class-string<Model>
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-     * @return class-string<\Illuminate\Database\Eloquent\Model>
-     */
-    /**
-     * @return class-string<\Illuminate\Database\Eloquent\Model>
-<<<<<<< HEAD
->>>>>>> 60a2c9a9 (.)
-=======
-=======
-     * @return class-string<Model>
-     */
-    /**
-     * @return class-string<Model>
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
      */
     public static function getModel(): string
     {
@@ -126,32 +34,9 @@ class ClientResource extends XotBaseResource
             return Client::class;
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         Assert::subclassOf($model, Model::class);
 
         /* @var class-string<Model> $model */
-=======
-        Assert::subclassOf($model, \Illuminate\Database\Eloquent\Model::class);
-
-        /* @var class-string<\Illuminate\Database\Eloquent\Model> $model */
->>>>>>> 60a2c9a9 (.)
-=======
-        Assert::subclassOf($model, \Illuminate\Database\Eloquent\Model::class);
-
-        /* @var class-string<\Illuminate\Database\Eloquent\Model> $model */
-=======
-        Assert::subclassOf($model, Model::class);
-
-        /* @var class-string<Model> $model */
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-        Assert::subclassOf($model, Model::class);
-
-        /* @var class-string<Model> $model */
->>>>>>> laraxot/dev
         return $model;
     }
 
@@ -175,23 +60,8 @@ class ClientResource extends XotBaseResource
 
     /**
      * Get resource form components.
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
      *
      * @return array<int, never>
-=======
->>>>>>> 60a2c9a9 (.)
-=======
-=======
-     *
-     * @return array<int, never>
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-     *
-     * @return array<int, never>
->>>>>>> laraxot/dev
      */
     protected static function getResourceFormComponents(): array
     {

@@ -2,19 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> f548be94 (.)
-=======
-
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 return [
     'navigation' => [
         'name' => 'Ruoli',
@@ -30,350 +17,50 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome Ruolo',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-            'tooltip' => 'Il nome identificativo del ruolo, es. \\"Admin\\".',
-            'placeholder' => 'Nome del ruolo',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'guard_name' => [
-            'label' => 'Guard',
-            'tooltip' => 'Il nome della guardia per questo ruolo, es. \\"web\\".',
-            'placeholder' => 'Nome della guardia',
-            'helper_text' => '',
-            'description' => '',
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-            'tooltip' => 'Il nome identificativo del ruolo, es. \"Admin\".',
-            'placeholder' => 'Nome del ruolo',
-        ],
-        'guard_name' => [
-            'label' => 'Guard',
-            'tooltip' => 'Il nome della guardia per questo ruolo, es. \"web\".',
-            'placeholder' => 'Nome della guardia',
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => 'Il nome identificativo del ruolo, es. \\"Admin\\".',
-            'placeholder' => 'Nome del ruolo',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'guard_name' => [
-            'label' => 'Guard',
-            'tooltip' => 'Il nome della guardia per questo ruolo, es. \\"web\\".',
-            'placeholder' => 'Nome della guardia',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
         ],
         'permissions' => [
             'label' => 'Permessi',
             'tooltip' => 'Seleziona i permessi associati a questo ruolo.',
             'placeholder' => 'Seleziona permessi',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'users_count' => [
             'label' => 'Numero Utenti',
             'tooltip' => 'Il numero di utenti assegnati a questo ruolo.',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'tooltip' => 'La data in cui il ruolo è stato creato.',
             'placeholder' => 'Data di creazione',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'tooltip' => 'La data dell\'ultima modifica del ruolo.',
             'placeholder' => 'Ultima modifica',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Una descrizione del ruolo e delle sue funzioni.',
             'placeholder' => 'Descrizione del ruolo',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
         ],
         'team_id' => [
             'description' => 'team_id',
             'helper_text' => 'team_id',
             'placeholder' => 'team_id',
             'label' => 'team_id',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-            'tooltip' => '',
-        ],
-        'detach' => [
-            'label' => 'detach',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'edit' => [
-            'label' => 'edit',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'attach' => [
-            'label' => 'attach',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-        ],
-        'detach' => [
-            'label' => 'detach',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'attach' => [
-            'label' => 'attach',
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
-        ],
-        'detach' => [
-            'label' => 'detach',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'edit' => [
-            'label' => 'edit',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'attach' => [
-            'label' => 'attach',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
         ],
         'recordId' => [
             'description' => 'recordId',
             'helper_text' => 'recordId',
             'placeholder' => 'recordId',
             'label' => 'recordId',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-            'tooltip' => '',
-        ],
-        'id' => [
-            'label' => 'id',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'id' => [
-            'label' => 'id',
->>>>>>> f548be94 (.)
-=======
-        ],
-        'id' => [
-            'label' => 'id',
-=======
-            'tooltip' => '',
-        ],
-        'id' => [
-            'label' => 'id',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
         ],
     ],
     'roles' => [
@@ -437,21 +124,6 @@ return [
         'settings' => 'Impostazioni',
         'reports' => 'Report',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> laraxot/dev
 ];

@@ -7,19 +7,6 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Modules\Xot\Datas\XotData;
->>>>>>> f548be94 (.)
-=======
-use Modules\Xot\Datas\XotData;
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 
 Route::namespace('Socialite')
     ->name('socialite.')
@@ -29,27 +16,5 @@ Route::namespace('Socialite')
             // 'LoginController@redirectToProvider',
             'RedirectToProviderController',
         )->name('oauth.redirect');
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
-        // Route pubblica FO cittadini (senza prefisso /admin)
-        Route::get(
-            '/auth/social/{provider}',
-            'RedirectToProviderController',
-        )->name('oauth.fo.redirect');
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f548be94 (.)
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
         Route::get('/sso/{provider}/callback', 'ProcessCallbackController')->name('oauth.callback');
     });

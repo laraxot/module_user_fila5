@@ -2,19 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> f548be94 (.)
-=======
-
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 return [
     'navigation' => [
         'name' => 'Permessi',
@@ -30,187 +17,46 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome Permesso',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-            'tooltip' => 'Inserisci il nome del permesso, ad esempio \\"Accesso Admin\\".',
-            'placeholder' => 'Nome del permesso',
-            'helper_text' => '',
-            'description' => '',
-<<<<<<< HEAD
-=======
-            'tooltip' => 'Inserisci il nome del permesso, ad esempio \"Accesso Admin\".',
-            'placeholder' => 'Nome del permesso',
->>>>>>> f548be94 (.)
-=======
-            'tooltip' => 'Inserisci il nome del permesso, ad esempio \"Accesso Admin\".',
-            'placeholder' => 'Nome del permesso',
-=======
-            'tooltip' => 'Inserisci il nome del permesso, ad esempio \\"Accesso Admin\\".',
-            'placeholder' => 'Nome del permesso',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Specifica la guardia associata al permesso.',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'placeholder' => 'Nome della guardia, es. \\"web\\"',
             'helper_text' => '',
             'description' => '',
-=======
-            'placeholder' => 'Nome della guardia, es. \"web\"',
->>>>>>> f548be94 (.)
-=======
-            'placeholder' => 'Nome della guardia, es. \"web\"',
-=======
-            'placeholder' => 'Nome della guardia, es. \\"web\\"',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'placeholder' => 'Nome della guardia, es. \\"web\\"',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'roles' => [
             'label' => 'Ruoli',
             'tooltip' => 'Seleziona i ruoli a cui assegnare il permesso.',
             'placeholder' => 'Seleziona uno o più ruoli',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'users' => [
             'label' => 'Utenti',
             'tooltip' => 'Seleziona gli utenti a cui assegnare il permesso.',
             'placeholder' => 'Seleziona uno o più utenti',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'tooltip' => 'La data in cui il permesso è stato creato.',
             'placeholder' => 'Data di creazione',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'tooltip' => 'La data dell\'ultima modifica al permesso.',
             'placeholder' => 'Ultima modifica',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Fornisci una breve descrizione del permesso.',
             'placeholder' => 'Descrizione del permesso',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-<<<<<<< HEAD
-=======
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
->>>>>>> f548be94 (.)
-=======
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-=======
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -293,21 +139,6 @@ return [
         'manage' => 'Gestisci',
         'full' => 'Accesso Completo',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> laraxot/dev
 ];

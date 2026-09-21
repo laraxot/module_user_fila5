@@ -8,13 +8,6 @@ use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Foundation\Application;
 
 use function Safe\realpath;
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Modules\User\Models\User;
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 
 /**
  * PHPStan-visible CreatesApplication trait for User test support.

@@ -18,28 +18,11 @@ class CreateSocialiteUserAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
     public function __construct(
         private readonly SocialiteUser $socialiteUserModel,
     ) {
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f548be94 (.)
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
     /**
      * Execute the action.
      */
@@ -55,21 +38,6 @@ class CreateSocialiteUserAction
             'avatar' => $oauthUser->getAvatar(),
         ];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         return $this->socialiteUserModel->create(attributes: $attributes);
-=======
-        return SocialiteUser::create(attributes: $attributes);
->>>>>>> f548be94 (.)
-=======
-        return SocialiteUser::create(attributes: $attributes);
-=======
-        return $this->socialiteUserModel->create(attributes: $attributes);
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-        return $this->socialiteUserModel->create(attributes: $attributes);
->>>>>>> laraxot/dev
     }
 }

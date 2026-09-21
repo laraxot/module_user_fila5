@@ -27,19 +27,6 @@ declare(strict_types=1);
     @isset($actionText)
         <?php
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        // @phpstan-ignore variable.undefined
->>>>>>> f548be94 (.)
-=======
-        // @phpstan-ignore variable.undefined
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
         $color = match ($level) {
             'success', 'error' => $level,
             default => 'primary',

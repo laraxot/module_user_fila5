@@ -2,19 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> f548be94 (.)
-=======
-
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 return [
     'navigation' => [
         'label' => 'Registrazione Studio',
@@ -45,26 +32,9 @@ return [
                 'min' => 'Der Name muss mindestens 3 Zeichen enthalten',
                 'max' => 'Der Name darf 100 Zeichen nicht überschreiten',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'phone' => [
             'label' => 'Numero di Telefono Studio',
@@ -75,26 +45,9 @@ return [
                 'regex' => 'Bitte geben Sie eine gültige italienische Telefonnummer ein',
                 'min' => 'Die Nummer muss mindestens 10 Ziffern enthalten',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'email' => [
             'label' => 'Email Ufficiale Studio',
@@ -106,26 +59,9 @@ return [
                 'unique' => 'Diese E-Mail-Adresse ist bereits für eine andere Praxis registriert',
                 'max' => 'Die E-Mail-Adresse darf 255 Zeichen nicht überschreiten',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'address' => [
             'label' => 'Vollständige Praxisadresse',
@@ -150,26 +86,9 @@ return [
                 'min' => 'Der Name muss mindestens 5 Zeichen enthalten',
                 'max' => 'Der Name darf 100 Zeichen nicht überschreiten',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'director_registration' => [
             'label' => 'Numero Iscrizione Albo Medico',
@@ -180,26 +99,9 @@ return [
                 'numeric' => 'Die Registrierungsnummer darf nur Ziffern enthalten',
                 'min' => 'Die Registrierungsnummer muss mindestens 3 Ziffern enthalten',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'vat_number' => [
             'label' => 'Partita IVA Studio',
@@ -210,26 +112,9 @@ return [
                 'regex' => 'Die Umsatzsteuer-Identifikationsnummer muss genau aus 11 Ziffern bestehen',
                 'unique' => 'Diese Umsatzsteuer-Identifikationsnummer ist bereits für eine andere Praxis registriert',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'specialization' => [
             'label' => 'Specializzazioni Mediche',
@@ -251,26 +136,9 @@ return [
                 'ortopedia' => 'Ortopedia',
                 'altro' => 'Altra Specializzazione',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'website' => [
             'label' => 'Sito Web Studio',
@@ -279,26 +147,9 @@ return [
             'validation' => [
                 'url' => 'Inserisci un URL valido che inizi con http:// o https://',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'staff_count' => [
             'label' => 'Numero Operatori',
@@ -310,26 +161,9 @@ return [
                 'min' => 'Die Praxis muss mindestens 1 Mitarbeiter haben',
                 'max' => 'Die maximale Anzahl beträgt 100 Mitarbeiter',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'privacy_acceptance' => [
             'label' => 'Consenso Trattamento Dati',
@@ -338,26 +172,9 @@ return [
             'validation' => [
                 'accepted' => 'Sie müssen die Datenschutzerklärung akzeptieren, um fortzufahren',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
         'terms_acceptance' => [
             'label' => 'Accettazione Termini di Servizio',
@@ -366,26 +183,9 @@ return [
             'validation' => [
                 'accepted' => 'Sie müssen die Nutzungsbedingungen akzeptieren, um fortzufahren',
             ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -473,21 +273,6 @@ return [
         'contact_info' => 'I dati di contatto inseriti verranno utilizzati per tutte le comunicazioni ufficiali',
         'data_protection' => 'Tutti i dati sono protetti secondo le normative europee GDPR',
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> laraxot/dev
 ];

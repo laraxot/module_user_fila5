@@ -73,22 +73,7 @@ return [
                 'help' => 'Ripeti la nuova password per conferma',
             ],
             'is_otp' => [
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                 'label' => 'Autenticazione a Due Fattori (OTP]',
-=======
-                'label' => 'Autenticazione a Due Fattori (OTP)',
->>>>>>> f548be94 (.)
-=======
-                'label' => 'Autenticazione a Due Fattori (OTP)',
-=======
-                'label' => 'Autenticazione a Due Fattori (OTP]',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-                'label' => 'Autenticazione a Due Fattori (OTP]',
->>>>>>> laraxot/dev
                 'help' => 'Abilita l\'autenticazione a due fattori per maggiore sicurezza',
             ],
             'password_expires_at' => [
@@ -186,69 +171,4 @@ return [
             'confirm' => 'Sei sicuro di voler uscire?',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
-    'navigation' => [
-        'name' => 'Widgets',
-        'plural' => 'Widgets',
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Widgets',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
-    ],
-    'label' => 'Widgets',
-    'plural_label' => 'Widgets (Plurale)',
-    'fields' => [
-        'id' => [
-            'label' => 'Identificativo',
-            'tooltip' => 'Identificativo univoco del record',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'created_at' => [
-            'label' => 'Data Creazione',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-    ],
-    'actions' => [
-        'create' => [
-            'label' => 'Crea Widgets',
-        ],
-        'edit' => [
-            'label' => 'Modifica Widgets',
-        ],
-        'delete' => [
-            'label' => 'Elimina Widgets',
-        ],
-    ],
-    'users_chart' => [
-        'heading' => 'Log Accessi',
-        'label' => 'Numero di accessi eseguiti',
-    ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f548be94 (.)
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 ];

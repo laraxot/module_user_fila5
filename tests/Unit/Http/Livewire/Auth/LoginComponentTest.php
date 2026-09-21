@@ -18,13 +18,6 @@ use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
 use PHPUnit\Framework\Assert;
 use Spatie\Permission\Models\Role;
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Modules\User\Models\User;
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 
 uses(TestCase::class)->group('no-user-db');
 
@@ -47,22 +40,14 @@ function loginFormSchema(Login $component): array
 }
 
 /**
-<<<<<<< HEAD
- * @param  list<string>  $roleNames
-=======
  * @param list<string> $roleNames
->>>>>>> laraxot/dev
  */
 function loginRedirectForRoles(array $roleNames): string
 {
     app()->setLocale('it');
     /** @var class-string<Model> $userClass */
     $userClass = XotData::make()->getUserClass();
-<<<<<<< HEAD
-    $user = new $userClass;
-=======
     $user = new $userClass();
->>>>>>> laraxot/dev
     $user->forceFill(['id' => 'redirect-user']);
 
     /** @var Collection<int, Role> $roles */
@@ -83,11 +68,7 @@ function loginRedirectForRoles(array $roleNames): string
 
     Auth::shouldReceive('user')->andReturn($userMock);
 
-<<<<<<< HEAD
-    $component = new Login;
-=======
     $component = new Login();
->>>>>>> laraxot/dev
     $method = new \ReflectionMethod($component, 'getRedirectUrl');
     $method->setAccessible(true);
 
@@ -99,22 +80,14 @@ function loginRedirectForRoles(array $roleNames): string
 
 describe('Login Livewire component', function (): void {
     test('mount initializes component without throwing', function (): void {
-<<<<<<< HEAD
-        $component = new Login;
-=======
         $component = new Login();
->>>>>>> laraxot/dev
         $component->mount();
 
         Assert::assertIsArray($component->data);
     });
 
     test('form schema exposes email password remember fields', function (): void {
-<<<<<<< HEAD
-        $schema = loginFormSchema(new Login);
-=======
         $schema = loginFormSchema(new Login());
->>>>>>> laraxot/dev
 
         Assert::assertCount(3, $schema);
         Assert::assertInstanceOf(TextInput::class, $schema[0]);
@@ -124,11 +97,7 @@ describe('Login Livewire component', function (): void {
     });
 
     test('render returns login view', function (): void {
-<<<<<<< HEAD
-        $view = (new Login)->render();
-=======
         $view = (new Login())->render();
->>>>>>> laraxot/dev
 
         Assert::assertInstanceOf(View::class, $view);
         Assert::assertSame('user::livewire.auth.login', $view->name());

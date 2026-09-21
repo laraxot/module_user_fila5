@@ -3,20 +3,7 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-    'navigation' => ['group' => 'socialite provider settings.navigation'],
-<<<<<<< HEAD
-=======
-    'actions' => [
-        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
-        'showPassword' => ['label' => 'showPassword', 'icon' => 'showPassword', 'tooltip' => 'showPassword'],
-        'hidePassword' => ['label' => 'hidePassword', 'icon' => 'hidePassword', 'tooltip' => 'hidePassword'],
-        'copy' => ['label' => 'copy', 'icon' => 'copy', 'tooltip' => 'copy'],
-    ],
->>>>>>> 87273113 (.)
-=======
     'navigation' => ['group' => 'Impostazioni provider socialite'],
->>>>>>> laraxot/dev
     'sections' => [
         'Google OAuth' => ['label' => 'Google OAuth', 'heading' => 'Google OAuth'],
         'GitHub OAuth' => ['label' => 'GitHub OAuth', 'heading' => 'GitHub OAuth'],
@@ -45,19 +32,4 @@ return [
             'redirect' => ['label' => 'microsoft.redirect', 'placeholder' => 'microsoft.redirect', 'helper_text' => 'microsoft.redirect', 'description' => 'microsoft.redirect'],
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-    'actions' => [
-        'showPassword' => ['label' => 'showPassword', 'icon' => 'showPassword', 'tooltip' => 'showPassword'],
-        'hidePassword' => ['label' => 'hidePassword', 'icon' => 'hidePassword', 'tooltip' => 'hidePassword'],
-        'copy' => ['label' => 'copy', 'icon' => 'copy', 'tooltip' => 'copy'],
-        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
-    ],
-<<<<<<< HEAD
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 ];

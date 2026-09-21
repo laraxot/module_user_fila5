@@ -8,82 +8,17 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-use Illuminate\Support\Carbon;
-use Modules\Xot\Contracts\UserContract;
-use Illuminate\Database\Eloquent\Builder;
-use Modules\Xot\Contracts\ProfileContract;
-use Modules\User\Database\Factories\SocialiteUserFactory;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Support\Carbon;
-use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Contracts\UserContract;
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Datas\XotData;
 
 /**
  * Modules\User\Models\SocialiteUser.
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @property int               $id
- * @property string            $user_id
- * @property string            $provider
- * @property string            $provider_id
- * @property string|null       $token
- * @property string|null       $name
- * @property string|null       $email
- * @property string|null       $avatar
- * @property Carbon|null       $created_at
- * @property Carbon|null       $updated_at
- * @property string|null       $updated_by
- * @property string|null       $created_by
-=======
-=======
->>>>>>> 87273113 (.)
- * @property int $id
- * @property string $user_id
- * @property string $provider
- * @property string $provider_id
- * @property string|null $token
- * @property string|null $name
- * @property string|null $email
- * @property string|null $avatar
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
->>>>>>> f548be94 (.)
- * @property UserContract|null $user
-=======
-=======
->>>>>>> laraxot/dev
  * @property int               $id
  * @property string            $user_id
  * @property string            $provider
@@ -98,10 +33,6 @@ use Modules\Xot\Datas\XotData;
  * @property string|null       $created_by
  * @property UserContract|null $user
  *
-<<<<<<< HEAD
->>>>>>> 2024e2e7 (.)
-=======
->>>>>>> laraxot/dev
  * @method static Builder|SocialiteUser newModelQuery()
  * @method static Builder|SocialiteUser newQuery()
  * @method static Builder|SocialiteUser query()
@@ -117,24 +48,6 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|SocialiteUser whereUpdatedAt($value)
  * @method static Builder|SocialiteUser whereUpdatedBy($value)
  * @method static Builder|SocialiteUser whereUserId($value)
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @property string $uuid (DC2Type:guid)
- * @method static Builder|SocialiteUser whereUuid($value)
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
-<<<<<<< HEAD
- * @property ProfileContract|null $deleter
- * @method static \Modules\User\Database\Factories\SocialiteUserFactory factory($count = null, $state = [])
-=======
- * @mixin IdeHelperSocialiteUser
- * @method static SocialiteUserFactory factory($count = null, $state = [])
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-=======
->>>>>>> laraxot/dev
  *
  * @property string $uuid (DC2Type:guid)
  *
@@ -146,11 +59,6 @@ use Modules\Xot\Datas\XotData;
  *
  * @method static \Modules\User\Database\Factories\SocialiteUserFactory factory($count = null, $state = [])
  *
-<<<<<<< HEAD
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class SocialiteUser extends BaseModel
@@ -167,26 +75,9 @@ class SocialiteUser extends BaseModel
         'avatar',
     ];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     /**
      * @return BelongsTo<Model, $this>
      */
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-    /**
-     * @return BelongsTo<Model, $this>
-     */
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-    /**
-     * @return BelongsTo<Model, $this>
-     */
->>>>>>> laraxot/dev
     public function user(): BelongsTo
     {
         /** @var class-string<Model> */

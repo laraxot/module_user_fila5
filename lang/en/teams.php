@@ -2,19 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> f548be94 (.)
-=======
-
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 return [
     'name' => 'Teams',
     'fields' => [
@@ -23,96 +10,31 @@ return [
             'placeholder' => 'Enter team name',
             'helper_text' => 'Team identifying name',
             'description' => 'The name that identifies this team',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
->>>>>>> laraxot/dev
         ],
         'personal_team' => [
             'label' => 'Personal Team',
             'helper_text' => 'Indicates if this is a personal team',
             'description' => 'A personal team is associated with a single user',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
->>>>>>> laraxot/dev
         ],
         'owner' => [
             'label' => 'Owner',
             'helper_text' => 'Team owner user',
             'description' => 'The user who created and manages this team',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
->>>>>>> laraxot/dev
         ],
         'created_at' => [
             'label' => 'Created At',
             'helper_text' => 'Team creation date',
             'description' => 'Date and time when the team was created',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
->>>>>>> laraxot/dev
         ],
         'updated_at' => [
             'label' => 'Last Modified',
             'helper_text' => 'Last modification date',
             'description' => 'Date and time of the last team modification',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> f548be94 (.)
-=======
-=======
-            'tooltip' => '',
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            'tooltip' => '',
->>>>>>> laraxot/dev
         ],
     ],
     'actions' => [
@@ -158,30 +80,4 @@ return [
             'description' => 'User who created this team',
         ],
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> f548be94 (.)
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 ];

@@ -6,19 +6,6 @@ namespace Modules\User\Http\Volt;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Volt\Routing\Attribute\Post;
->>>>>>> f548be94 (.)
-=======
-use Volt\Routing\Attribute\Post;
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 
 /*
  * Attribute class Volt\Routing\Attribute\Post does not exist.
