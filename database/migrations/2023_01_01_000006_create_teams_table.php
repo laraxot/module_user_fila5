@@ -37,6 +37,10 @@ return new class extends XotBaseMigration {
             if ($this->hasColumn('personal_team')) {
                 $table->boolean('personal_team')->default(false)->change();
             }
+<<<<<<< HEAD
+=======
+
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
         });
     }
 };

@@ -15,12 +15,20 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var TestCase $this */
+<<<<<<< HEAD
     $this->widget = new LoginWidget();
+=======
+    $this->widget = new LoginWidget;
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
 });
 
 describe('Login Widget', function (): void {
     test('it can render widget', function (): void {
+<<<<<<< HEAD
         $widget = new LoginWidget();
+=======
+        $widget = new LoginWidget;
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
 
         $reflection = new \ReflectionClass($widget);
         $property = $reflection->getProperty('view');

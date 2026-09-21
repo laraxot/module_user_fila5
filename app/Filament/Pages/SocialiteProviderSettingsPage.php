@@ -82,7 +82,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
                         TextInput::make('google.client_id')
                             ->placeholder('xxx.apps.googleusercontent.com')
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('google.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('google.enabled') === true),
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
 
                         TextInput::make('google.client_secret')
                             ->password()
@@ -91,17 +95,29 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
                                  ? $this->configString('services.google.client_secret')
                                  : $this->stringValue($state))
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('google.enabled')),
 
                         TagsInput::make('google.scopes')
                             ->placeholder('openid, email, profile')
                             ->visible(fn (Get $get): bool => true === $get('google.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('google.enabled') === true),
+
+                        TagsInput::make('google.scopes')
+                            ->placeholder('openid, email, profile')
+                            ->visible(fn (Get $get): bool => $get('google.enabled') === true),
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
 
                         TextInput::make('google.redirect')
                             ->default(fn () => route('socialite.oauth.callback', 'google'))
                             ->disabled()
                             ->copyable()
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('google.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('google.enabled') === true),
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
                     ]),
 
                 Section::make('GitHub OAuth')
@@ -113,7 +129,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
                         TextInput::make('github.client_id')
                             ->placeholder('Iv23lixxx')
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('github.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('github.enabled') === true),
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
 
                         TextInput::make('github.client_secret')
                             ->password()
@@ -121,17 +141,29 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
                                  ? $this->configString('services.github.client_secret')
                                  : $this->stringValue($state))
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('github.enabled')),
 
                         TagsInput::make('github.scopes')
                             ->placeholder('read:user, user:email')
                             ->visible(fn (Get $get): bool => true === $get('github.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('github.enabled') === true),
+
+                        TagsInput::make('github.scopes')
+                            ->placeholder('read:user, user:email')
+                            ->visible(fn (Get $get): bool => $get('github.enabled') === true),
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
 
                         TextInput::make('github.redirect')
                             ->default(fn () => route('socialite.oauth.callback', 'github'))
                             ->disabled()
                             ->copyable()
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('github.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('github.enabled') === true),
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
                     ]),
 
                 Section::make('Microsoft OAuth')
@@ -143,7 +175,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
                         TextInput::make('microsoft.client_id')
                             ->placeholder('xxx-xxx-xxx-xxx')
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
 
                         TextInput::make('microsoft.client_secret')
                             ->password()
@@ -151,17 +187,29 @@ class SocialiteProviderSettingsPage extends XotBasePage
                             ->dehydrateStateUsing(fn (mixed $state): string => $this->isMasked($state)
                                  ? $this->configString('services.microsoft.client_secret')
                                  : $this->stringValue($state))
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
 
                         TagsInput::make('microsoft.scopes')
                             ->placeholder('User.Read, openid, email')
                             ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
+
+                        TagsInput::make('microsoft.scopes')
+                            ->placeholder('User.Read, openid, email')
+                            ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
 
                         TextInput::make('microsoft.redirect')
                             ->default(fn () => route('socialite.oauth.callback', 'microsoft'))
                             ->disabled()
                             ->copyable()
+<<<<<<< HEAD
                             ->visible(fn (Get $get): bool => true === $get('microsoft.enabled')),
+=======
+                            ->visible(fn (Get $get): bool => $get('microsoft.enabled') === true),
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
                     ]),
             ])
             ->statePath('data');
@@ -265,7 +313,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Write configuration to secure PHP file.
      *
+<<<<<<< HEAD
      * @param array<string, mixed> $config
+=======
+     * @param  array<string, mixed>  $config
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
      */
     private function writeSocialiteConfig(array $config): void
     {
@@ -290,7 +342,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
     /**
      * Update SocialProvider model active states.
      *
+<<<<<<< HEAD
      * @param array<string, array<string, mixed>> $config
+=======
+     * @param  array<string, array<string, mixed>>  $config
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
      */
     private function updateSocialProviderActiveStates(array $config): void
     {
@@ -347,7 +403,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
         $newSecret = $this->stringValue($newValue);
         $existingSecret = $this->stringValue($existingValue);
 
+<<<<<<< HEAD
         if ($this->isMasked($newSecret) && '' !== $existingSecret) {
+=======
+        if ($this->isMasked($newSecret) && $existingSecret !== '') {
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
             return $existingSecret;
         }
 
@@ -356,7 +416,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
     private function configBool(string $key): bool
     {
+<<<<<<< HEAD
         return true === config($key, false);
+=======
+        return config($key, false) === true;
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
     }
 
     private function configString(string $key): string
@@ -365,15 +429,23 @@ class SocialiteProviderSettingsPage extends XotBasePage
     }
 
     /**
+<<<<<<< HEAD
      * @param array<int, string> $default
      *
+=======
+     * @param  array<int, string>  $default
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
      * @return array<int, string>
      */
     private function configStringList(string $key, array $default): array
     {
         $value = config($key, $default);
 
+<<<<<<< HEAD
         return $this->stringList([] === $value ? $default : $value);
+=======
+        return $this->stringList($value === [] ? $default : $value);
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
     }
 
     private function stringValue(mixed $value): string
@@ -419,7 +491,11 @@ class SocialiteProviderSettingsPage extends XotBasePage
 
         return array_values(array_filter(
             $value,
+<<<<<<< HEAD
             static fn (mixed $item): bool => is_string($item) && '' !== $item,
+=======
+            static fn (mixed $item): bool => is_string($item) && $item !== '',
+>>>>>>> bc04202a (fix(user): risolti 746 file con marker di conflitto merge mai puliti in HEAD)
         ));
     }
 }
