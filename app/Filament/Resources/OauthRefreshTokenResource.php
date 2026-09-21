@@ -7,36 +7,13 @@ namespace Modules\User\Filament\Resources;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
-<<<<<<< HEAD
 // Already there, but explicitly for boolean()
 use Illuminate\Database\Eloquent\Builder;
-=======
-use Filament\Tables\Table; // Already there, but explicitly for boolean()
-use Illuminate\Database\Eloquent\Builder;
-use Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages;
-<<<<<<< HEAD
->>>>>>> 60a2c9a9 (.)
-=======
-=======
-=======
->>>>>>> laraxot/dev
-use Filament\Resources\Pages\PageRegistration;
-use Filament\Tables\Columns\IconColumn;
-use Filament\Tables\Columns\TextColumn;
-// Already there, but explicitly for boolean()
-use Illuminate\Database\Eloquent\Builder;
-<<<<<<< HEAD
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 use Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages\ListOauthRefreshTokens;
 use Modules\User\Filament\Resources\OauthRefreshTokenResource\Pages\ViewOauthRefreshToken;
 use Modules\User\Models\OauthRefreshToken;
@@ -58,43 +35,10 @@ class OauthRefreshTokenResource extends XotBaseResource
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-arrow-path';
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-     * Get the form schema for the resource.
-     *
-     * @return array<string, Select|TextInput>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
-    {
-        return [
-            'access_token_id' => Select::make('access_token_id')
-                ->relationship('accessToken', 'id')
-                ->searchable()
-                ->required(),
-            'revoked' => TextInput::make('revoked')
-                ->numeric()
-                ->required(),
-            'expires_at' => TextInput::make('expires_at'),
-        ];
-    }
-
-    /**
-=======
->>>>>>> 2024e2e7 (.)
-=======
->>>>>>> laraxot/dev
      * Extend table callback for the resource.
      *
      * @return array<string, mixed>
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    #[\Override]
->>>>>>> 2024e2e7 (.)
-=======
->>>>>>> laraxot/dev
     public static function extendTableCallback(): array
     {
         return [

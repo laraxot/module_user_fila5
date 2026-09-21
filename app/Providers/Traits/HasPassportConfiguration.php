@@ -13,20 +13,7 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthRefreshToken;
 use Webmozart\Assert\Assert;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 /** @phpstan-ignore trait.unused */
-=======
->>>>>>> 60a2c9a9 (.)
-=======
-=======
-/** @phpstan-ignore trait.unused */
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-/** @phpstan-ignore trait.unused */
->>>>>>> laraxot/dev
 trait HasPassportConfiguration
 {
     /**
@@ -66,83 +53,10 @@ trait HasPassportConfiguration
         Assert::isArray($config);
 
         Passport::tokensExpireIn(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-            CarbonInterval::days(self::toIntOrDefault($config['access_token'] ?? null, 15))
-        );
-        Passport::refreshTokensExpireIn(
-            CarbonInterval::days(self::toIntOrDefault($config['refresh_token'] ?? null, 30))
-        );
-        Passport::personalAccessTokensExpireIn(
-            CarbonInterval::months(self::toIntOrDefault($config['personal_access_token'] ?? null, 6))
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-            CarbonInterval::days((int) ($config['access_token'] ?? 15))
-        );
-        Passport::refreshTokensExpireIn(
-            CarbonInterval::days((int) ($config['refresh_token'] ?? 30))
-        );
-        Passport::personalAccessTokensExpireIn(
-            CarbonInterval::months((int) ($config['personal_access_token'] ?? 6))
-<<<<<<< HEAD
->>>>>>> 60a2c9a9 (.)
-=======
-=======
-            CarbonInterval::days(self::toIntOrDefault($config['access_token'] ?? null, 15))
-        );
-        Passport::refreshTokensExpireIn(
-            CarbonInterval::days(self::toIntOrDefault($config['refresh_token'] ?? null, 30))
-        );
-        Passport::personalAccessTokensExpireIn(
-            CarbonInterval::months(self::toIntOrDefault($config['personal_access_token'] ?? null, 6))
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
         );
     }
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
-     * Narrows an untyped config value (mixed, from an `array<mixed>` config
-     * entry) to a real int, without a blind cast. Falls back to $default when
-     * the value is neither an int nor a numeric string/float.
-     */
-    private static function toIntOrDefault(mixed $value, int $default): int
-    {
-        if (\is_int($value)) {
-            return $value;
-        }
-
-        if (\is_numeric($value)) {
-            return (int) $value;
-        }
-
-        return $default;
-    }
-
-    /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 60a2c9a9 (.)
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
      * Configurazione degli scope OAuth.
      */
     protected function configureScopes(): void

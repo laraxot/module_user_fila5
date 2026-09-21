@@ -11,30 +11,9 @@ namespace Modules\User\Filament\Actions\Header;
 use Filament\Actions\AttachAction;
 use Filament\Forms\Components\Select;
 use Modules\Xot\Datas\XotData;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Modules\Xot\Filament\Actions\XotBaseAttachAction;
 
 final class AttachRoleAction extends XotBaseAttachAction
-=======
-
-class AttachRoleAction extends AttachAction
->>>>>>> f548be94 (.)
-=======
-
-class AttachRoleAction extends AttachAction
-=======
-use Modules\Xot\Filament\Actions\XotBaseAttachAction;
-
-final class AttachRoleAction extends XotBaseAttachAction
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-use Modules\Xot\Filament\Actions\XotBaseAttachAction;
-
-final class AttachRoleAction extends XotBaseAttachAction
->>>>>>> laraxot/dev
 {
     protected function setUp(): void
     {
@@ -50,22 +29,7 @@ final class AttachRoleAction extends XotBaseAttachAction
             });
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     public static function getDefaultName(): string
-=======
-    public static function getDefaultName(): ?string
->>>>>>> f548be94 (.)
-=======
-    public static function getDefaultName(): ?string
-=======
-    public static function getDefaultName(): string
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-    public static function getDefaultName(): string
->>>>>>> laraxot/dev
     {
         return 'attachRole';
     }

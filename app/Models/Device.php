@@ -4,11 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
@@ -17,34 +12,6 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Support\Carbon;
 use Modules\User\Database\Factories\DeviceFactory;
 use Modules\Xot\Contracts\ProfileContract;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 87273113 (.)
-use Override;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Builder;
-use Modules\Xot\Contracts\ProfileContract;
-use Illuminate\Support\Carbon;
-use Illuminate\Database\Eloquent\Collection as EloquentCollection;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Modules\User\Database\Factories\DeviceFactory;
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Collection as EloquentCollection;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\Pivot;
-use Illuminate\Support\Carbon;
-use Modules\User\Database\Factories\DeviceFactory;
-use Modules\Xot\Contracts\ProfileContract;
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 
@@ -52,26 +19,8 @@ use Modules\Xot\Datas\XotData;
  * Device model representing a user's device in the system.
  *
  * @property EloquentCollection<int, Model&UserContract> $users
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @property int|null                                    $users_count
-=======
- * @property int|null $users_count
- * @method static DeviceFactory factory($count = null, $state = [])
->>>>>>> f548be94 (.)
-=======
- * @property int|null $users_count
- * @method static DeviceFactory factory($count = null, $state = [])
-=======
  * @property int|null                                    $users_count
  *
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
- * @property int|null                                    $users_count
- *
->>>>>>> laraxot/dev
  * @method static Builder|Device newModelQuery()
  * @method static Builder|Device newQuery()
  * @method static Builder|Device query()
@@ -92,69 +41,6 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|Device whereUpdatedAt($value)
  * @method static Builder|Device whereUpdatedBy($value)
  * @method static Builder|Device whereVersion($value)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
- * @property DeviceUser              $pivot
- * @property ProfileContract|null    $creator
- * @property ProfileContract|null    $updater
- * @property string                  $id
- * @property string|null             $mobile_id
- * @property array<int, string>|null $languages
- * @property string|null             $device
- * @property string|null             $platform
- * @property string|null             $browser
- * @property string|null             $version
- * @property bool|null               $is_robot
- * @property string|null             $robot
- * @property bool|null               $is_desktop
- * @property bool|null               $is_mobile
- * @property bool|null               $is_tablet
- * @property bool|null               $is_phone
- * @property Carbon|null             $created_at
- * @property Carbon|null             $updated_at
- * @property string|null             $updated_by
- * @property string|null             $created_by
- * @property string|null             $uuid
- * @method static Builder<static>|Device whereUuid($value)
- * @property ProfileContract|null $deleter
- * @method static \Modules\User\Database\Factories\DeviceFactory factory($count = null, $state = [])
- * @property string|null $name
- * @property string|null $type
- * @method static Builder<static>|Device whereName($value)
- * @method static Builder<static>|Device whereType($value)
-=======
-=======
->>>>>>> 87273113 (.)
- * @property DeviceUser $pivot
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
- * @property string $id
- * @property string|null $mobile_id
- * @property array|null $languages
- * @property string|null $device
- * @property string|null $platform
- * @property string|null $browser
- * @property string|null $version
- * @property bool|null $is_robot
- * @property string|null $robot
- * @property bool|null $is_desktop
- * @property bool|null $is_mobile
- * @property bool|null $is_tablet
- * @property bool|null $is_phone
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property string|null $uuid
- * @method static Builder<static>|Device whereUuid($value)
- * @mixin IdeHelperDevice
-<<<<<<< HEAD
->>>>>>> f548be94 (.)
-=======
-=======
-=======
->>>>>>> laraxot/dev
  *
  * @property DeviceUser              $pivot
  * @property ProfileContract|null    $creator
@@ -190,11 +76,6 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder<static>|Device whereName($value)
  * @method static Builder<static>|Device whereType($value)
  *
-<<<<<<< HEAD
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class Device extends BaseModel
@@ -218,11 +99,6 @@ class Device extends BaseModel
     ];
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
      * Create a new factory instance for the model, typed for static analysis.
      */
     protected static function newFactory(): DeviceFactory
@@ -232,59 +108,15 @@ class Device extends BaseModel
 
     /**
      * @return BelongsToMany<Model&UserContract, $this, Pivot, 'pivot'>
-<<<<<<< HEAD
-=======
-     * Define the many-to-many relationship between devices and users.
-     *
-     * return BelongsToMany<UserContract, Device>
->>>>>>> f548be94 (.)
-=======
-     * Define the many-to-many relationship between devices and users.
-     *
-     * return BelongsToMany<UserContract, Device>
-=======
-     * Create a new factory instance for the model, typed for static analysis.
-     */
-    protected static function newFactory(): DeviceFactory
-    {
-        return DeviceFactory::new();
-    }
-
-    /**
-     * @return BelongsToMany<Model&UserContract, $this, Pivot, 'pivot'>
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
      */
     public function users(): BelongsToMany
     {
         $userClass = XotData::make()->getUserClass();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
         /** @var BelongsToMany<Model&UserContract, $this, Pivot, 'pivot'> $relation */
         $relation = $this->belongsToManyX($userClass);
 
         return $relation;
-<<<<<<< HEAD
-=======
-        return $this->belongsToManyX($userClass);
->>>>>>> f548be94 (.)
-=======
-        return $this->belongsToManyX($userClass);
-=======
-        /** @var BelongsToMany<Model&UserContract, $this, Pivot, 'pivot'> $relation */
-        $relation = $this->belongsToManyX($userClass);
-
-        return $relation;
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
     }
 
     /**
@@ -292,22 +124,7 @@ class Device extends BaseModel
      *
      * @return array<string, string>
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     #[\Override]
-=======
-    #[Override]
->>>>>>> f548be94 (.)
-=======
-    #[Override]
-=======
-    #[\Override]
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-    #[\Override]
->>>>>>> laraxot/dev
     protected function casts(): array
     {
         return [

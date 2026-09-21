@@ -9,13 +9,6 @@ use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\Utils\UserNameFieldsResolver;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Modules\User\Models\User;
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 
 uses(TestCase::class);
 

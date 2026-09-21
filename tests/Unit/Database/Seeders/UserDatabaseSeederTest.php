@@ -14,11 +14,7 @@ uses(TestCase::class);
  * @covers \Modules\User\Database\Seeders\UserDatabaseSeeder
  */
 it('runs UserDatabaseSeeder successfully', function (): void {
-<<<<<<< HEAD
-    $seeder = new UserDatabaseSeeder;
-=======
     $seeder = new UserDatabaseSeeder();
->>>>>>> laraxot/dev
     $seeder->setContainer(app());
 
     $seeder->run();
@@ -30,11 +26,7 @@ it('runs UserDatabaseSeeder successfully', function (): void {
 });
 
 it('gives super-admin role all permissions after seeding', function (): void {
-<<<<<<< HEAD
-    $seeder = new UserDatabaseSeeder;
-=======
     $seeder = new UserDatabaseSeeder();
->>>>>>> laraxot/dev
     $seeder->setContainer(app());
 
     $seeder->run();

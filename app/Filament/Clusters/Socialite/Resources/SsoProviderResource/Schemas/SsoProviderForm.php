@@ -4,37 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource\Schemas;
 
-<<<<<<< HEAD
-use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
-use Filament\Schemas\Components\Section;
-=======
 use Filament\Forms\Components\Field;
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class SsoProviderForm extends XotBaseResourceForm
 {
     /**
-<<<<<<< HEAD
-     * @return array<int|string, Component>
-     */
-<<<<<<< HEAD
-    public static function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> 87273113 (.)
-    {
-        return [
-            Section::make([
-                'name' => TextInput::make('name'),
-            ]),
-=======
      * @return array<string, Field>
      */
     #[\Override]
@@ -70,7 +50,6 @@ class SsoProviderForm extends XotBaseResourceForm
             'domain_whitelist' => KeyValue::make('domain_whitelist'),
             'role_mapping' => KeyValue::make('role_mapping'),
             'is_active' => Toggle::make('is_active'),
->>>>>>> laraxot/dev
         ];
     }
 }

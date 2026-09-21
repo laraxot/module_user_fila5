@@ -11,22 +11,11 @@ use Modules\User\Adapters\Socialite\UserNameFieldsResolver;
 use Modules\User\Tests\TestCase;
 use Modules\User\Tests\Unit\Adapters\Socialite\Fixtures\SocialiteUserWithRawFixture;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
-<<<<<<< HEAD
-use Modules\User\Models\User;
-=======
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 
 uses(TestCase::class)->group('no-user-db');
 
 /**
-<<<<<<< HEAD
- * @param  array<string, mixed>  $raw
-=======
  * @param array<string, mixed> $raw
->>>>>>> laraxot/dev
  */
 function adapterSocialiteUserMock(?string $name, ?string $email, array $raw = []): SocialiteUser
 {
@@ -35,11 +24,7 @@ function adapterSocialiteUserMock(?string $name, ?string $email, array $raw = []
             'getName' => $name,
             'getEmail' => $email,
         ]);
-<<<<<<< HEAD
-        if ($raw !== []) {
-=======
         if ([] !== $raw) {
->>>>>>> laraxot/dev
             $expectation = $mock->allows('getRaw');
             \assert($expectation instanceof Expectation);
             $expectation->andReturn($raw);

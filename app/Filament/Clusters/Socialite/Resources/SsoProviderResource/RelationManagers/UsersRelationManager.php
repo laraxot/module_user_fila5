@@ -4,20 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Socialite\Resources\SsoProviderResource\RelationManagers;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
-=======
->>>>>>> 60a2c9a9 (.)
-=======
-=======
-use Filament\Tables\Columns\Column;
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-use Filament\Tables\Columns\Column;
->>>>>>> laraxot/dev
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\RelationManagers\XotBaseRelationManager;
 
@@ -31,22 +18,7 @@ class UsersRelationManager extends XotBaseRelationManager
     protected static ?string $recordTitleAttribute = 'name';
 
     /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
      * @return array<string, Column>
-=======
-     * @return array<string, \Filament\Tables\Columns\Column>
->>>>>>> 60a2c9a9 (.)
-=======
-     * @return array<string, \Filament\Tables\Columns\Column>
-=======
-     * @return array<string, Column>
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-     * @return array<string, Column>
->>>>>>> laraxot/dev
      */
     #[\Override]
     public function getTableColumns(): array

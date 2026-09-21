@@ -9,15 +9,9 @@ use Livewire\Livewire;
 use Modules\User\Filament\Clusters\Passport\Pages\PassportDashboard;
 use Modules\User\Models\BaseUser;
 use Modules\User\Models\OauthClient;
-<<<<<<< HEAD
-use Modules\User\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-use Modules\User\Models\User;
-=======
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
->>>>>>> laraxot/dev
 
 uses(TestCase::class);
 
@@ -32,18 +26,6 @@ uses(TestCase::class);
  */
 function makeMockUser(bool $isSuper): BaseUser
 {
-<<<<<<< HEAD
-    return new class($isSuper) extends BaseUser
-    {
-        public function __construct(private readonly bool $isSuper) {}
-
-        /**
-         * @param  array<int, string>|\Illuminate\Support\Collection<int, string>|string  $roles
-         */
-        public function hasRole($roles, ?string $guard = null): bool
-        {
-            if ($roles === 'super-admin') {
-=======
     return new class($isSuper) extends BaseUser {
         public function __construct(private readonly bool $isSuper)
         {
@@ -55,7 +37,6 @@ function makeMockUser(bool $isSuper): BaseUser
         public function hasRole($roles, ?string $guard = null): bool
         {
             if ('super-admin' === $roles) {
->>>>>>> laraxot/dev
                 return $this->isSuper;
             }
 
@@ -70,11 +51,7 @@ function makeMockUser(bool $isSuper): BaseUser
 it('creates a real client_credentials grant client with a hashed secret via ClientRepository', function (): void {
     $client = app(ClientRepository::class)->createClientCredentialsGrantClient('Test Client AC7a');
 
-<<<<<<< HEAD
-    /** @var OauthClient $client */
-=======
     /* @var OauthClient $client */
->>>>>>> laraxot/dev
     Assert::assertInstanceOf(OauthClient::class, $client);
     Assert::assertTrue(in_array('client_credentials', $client->grant_types, true));
     Assert::assertNotNull($client->secret);
@@ -86,15 +63,9 @@ it('creates a real client_credentials grant client with a hashed secret via Clie
 it('hides the new credentials action for a non-super-admin user', function (): void {
     // Bloccato da un problema preesistente del DB di test (non causato da
     // questa story): la tabella `profiles` nel DB di test
-<<<<<<< HEAD
-    // (geek_quaeris_backup_server_23_10_2025_test, uno snapshot di ottobre
-    // 2025) non ha la colonna `uuid`, aggiunta da migration successive
-    // (2026-04-28 modulo User, 2026-08-06 modulo Quaeris) mai applicate a
-=======
     // (<client-name>_backup_server_23_10_2025_test, uno snapshot di ottobre
     // 2025) non ha la colonna `uuid`, aggiunta da migration successive
     // (due occorrenze storiche in moduli diversi) mai applicate a
->>>>>>> laraxot/dev
     // quel DB. Il mount della pagina Filament crea un Profile per l'utente
     // autenticato e fallisce con "Unknown column 'uuid' in field list".
     // Verificato: le migration dichiarano davvero la colonna, il DB di test

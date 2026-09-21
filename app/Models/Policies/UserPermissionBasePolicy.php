@@ -9,19 +9,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Models\Policies;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-use Exception;
->>>>>>> f548be94 (.)
-=======
-use Exception;
-=======
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Support\Str;
 use Modules\User\Models\Permission;
@@ -33,22 +20,7 @@ abstract class UserPermissionBasePolicy
 {
     use HandlesAuthorization;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     public function before(UserContract $user, string $ability): ?bool
-=======
-    public function before(UserContract $user, string $ability): null|bool
->>>>>>> f548be94 (.)
-=======
-    public function before(UserContract $user, string $ability): null|bool
-=======
-    public function before(UserContract $user, string $ability): ?bool
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-    public function before(UserContract $user, string $ability): ?bool
->>>>>>> laraxot/dev
     {
         if ($user->hasRole('super-admin')) {
             return true;
@@ -58,42 +30,12 @@ abstract class UserPermissionBasePolicy
         $permission_name = Str::of($class_name)
             ->before('Policy')
             ->lower()
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             ->append('.'.$ability)
-=======
-            ->append('.' . $ability)
->>>>>>> f548be94 (.)
-=======
-            ->append('.' . $ability)
-=======
-            ->append('.'.$ability)
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-            ->append('.'.$ability)
->>>>>>> laraxot/dev
             ->toString();
 
         try {
             Permission::firstOrCreate(['name' => $permission_name]);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         } catch (\Exception $e) {
-=======
-        } catch (Exception $e) {
->>>>>>> f548be94 (.)
-=======
-        } catch (Exception $e) {
-=======
-        } catch (\Exception $e) {
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-        } catch (\Exception $e) {
->>>>>>> laraxot/dev
             // dddx($e);
         }
         if ($user->hasPermissionTo($permission_name)) {

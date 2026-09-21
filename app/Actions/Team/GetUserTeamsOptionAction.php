@@ -11,85 +11,19 @@ class GetUserTeamsOptionAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     /**
      * @return array<int|string, string>
      */
-=======
->>>>>>> 60a2c9a9 (.)
-=======
-=======
-    /**
-     * @return array<int|string, string>
-     */
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
-    /**
-     * @return array<int|string, string>
-     */
->>>>>>> laraxot/dev
     public function execute(): array
     {
-        $teams = TeamUser::where('user_id', authId())->get();
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        /** @var array<int|string, string> $options */
-        $options = ['' => '--- Select ---'];
-
+        $teams = TeamUser::with('team')->where('user_id', authId())->get();
+        $result = [];
         foreach ($teams as $teamUser) {
-            $team = $teamUser->team;
-<<<<<<< HEAD
-            if ($team === null) {
-=======
-            if (null === $team) {
->>>>>>> laraxot/dev
-                continue;
+            if ($teamUser->team !== null) {
+                $result[(string) $teamUser->team->name] = (string) $teamUser->team->id;
             }
-
-            $key = $team->getKey();
-            if (! \is_int($key) && ! \is_string($key)) {
-                continue;
-            }
-
-            $options[(string) $key] = $team->name;
         }
 
-        return $options;
-<<<<<<< HEAD
-=======
-        return ['' => '--- Select ---'] + $teams->pluck('team.name', 'team.id')->toArray();
->>>>>>> 60a2c9a9 (.)
-=======
-        return ['' => '--- Select ---'] + $teams->pluck('team.name', 'team.id')->toArray();
-=======
-        /** @var array<int|string, string> $options */
-        $options = ['' => '--- Select ---'];
-
-        foreach ($teams as $teamUser) {
-            $team = $teamUser->team;
-            if ($team === null) {
-                continue;
-            }
-
-            $key = $team->getKey();
-            if (! \is_int($key) && ! \is_string($key)) {
-                continue;
-            }
-
-            $options[(string) $key] = $team->name;
-        }
-
-        return $options;
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)
-=======
->>>>>>> laraxot/dev
+        return $result;
     }
 }

@@ -12,12 +12,6 @@ return [
         'expires_at' => ['label' => 'expires_at'],
         'created_at' => ['label' => 'created_at'],
         'updated_at' => ['label' => 'updated_at'],
-<<<<<<< HEAD
-        'name' => ['label' => 'name'],
-    ],
-    'actions' => [
-        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
-=======
     ],
     'actions' => [
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
@@ -25,6 +19,5 @@ return [
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
->>>>>>> laraxot/dev
     ],
 ];

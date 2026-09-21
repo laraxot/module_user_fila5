@@ -13,15 +13,7 @@ class OauthAccessTokenInfolist extends XotBaseResourceInfolist
     /**
      * @return array<string, Component>
      */
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public static function getInfolistSchema(): array
-=======
     public function getInfolistSchema(): array
->>>>>>> 87273113 (.)
-=======
-    public function getInfolistSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'name' => TextEntry::make('name')
