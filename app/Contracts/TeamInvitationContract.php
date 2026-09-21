@@ -9,8 +9,6 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Modules\User\Contracts\TeamInvitationContract.
  *
- *
- *
  * @phpstan-require-extends Model
  *
  * @mixin \Eloquent
