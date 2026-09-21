@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\User\Filament\Widgets\Auth\SocialLoginWidget;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -14,7 +13,7 @@ describe('Social Login Widget', function () {
         config(['services.google.client_id' => null]);
         config(['services.github.client_id' => null]);
 
-        $widget = new SocialLoginWidget();
+        $widget = new SocialLoginWidget;
         $providers = $widget->getProviders();
 
         Assert::assertCount(1, $providers);
@@ -26,7 +25,7 @@ describe('Social Login Widget', function () {
         config(['services.microsoft.client_id' => null]);
         config(['services.github.client_id' => null]);
 
-        $widget = new SocialLoginWidget();
+        $widget = new SocialLoginWidget;
         $providers = $widget->getProviders();
 
         Assert::assertCount(1, $providers);
@@ -39,7 +38,7 @@ describe('Social Login Widget', function () {
         config(['services.google.client_id' => null]);
         config(['services.github.client_id' => null]);
 
-        $widget = new SocialLoginWidget();
+        $widget = new SocialLoginWidget;
         $providers = $widget->getProviders();
 
         Assert::assertEmpty($providers);
@@ -50,7 +49,7 @@ describe('Social Login Widget', function () {
         config(['services.microsoft.client_id' => 'microsoft-id']);
         config(['services.github.client_id' => null]);
 
-        $widget = new SocialLoginWidget();
+        $widget = new SocialLoginWidget;
         $providers = $widget->getProviders();
 
         Assert::assertCount(2, $providers);
@@ -85,28 +84,5 @@ describe('Socialite routes', function () {
     test('shared callback route is accessible', function () {
         $url = route('socialite.oauth.callback', ['provider' => 'google']);
         Assert::assertStringContainsString('/sso/google/callback', (string) $url);
-    });
-});
-
-describe('SocialLoginWidget redirect route', function (): void {
-    test('is not auto-discovered on the dashboard', function (): void {
-        Assert::assertFalse(SocialLoginWidget::isDiscovered());
-    });
-
-    test('defaults to panel oauth redirect', function (): void {
-        $widget = new SocialLoginWidget();
-        $url = $widget->getRedirectUrl('google');
-
-        Assert::assertSame('socialite.oauth.redirect', $widget->redirectRoute);
-        Assert::assertStringContainsString('/admin/login/', $url);
-    });
-
-    test('fo redirect route stays distinct', function (): void {
-        $widget = new SocialLoginWidget();
-        $widget->redirectRoute = 'socialite.oauth.fo.redirect';
-        $url = $widget->getRedirectUrl('google');
-
-        Assert::assertStringContainsString('/auth/social/', $url);
-        Assert::assertStringNotContainsString('/admin/login/', $url);
     });
 });

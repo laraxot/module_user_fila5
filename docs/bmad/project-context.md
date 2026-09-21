@@ -17,7 +17,7 @@ Costituzione di **questo slice**, non del modulo User intero. Non contraddice la
 
 ## Perché esiste
 
-Nel pannello Filament (`GET /admin`) un utente con ruolo `super-admin` o `negate-super-admin` deve **vedere e invertire** quel ruolo dal menu utente (icona re), senza aprire una Resource. La logica di business vive sul profilo (`ProfileContract::toggleSuperAdmin()`). L’UI oggi è un Livewire in `Http/Livewire`, montato con un render hook: è chrome Filament, non un form pubblico.
+Nel pannello Filament (`GET /admin`) un utente con ruolo `super-admin` o `negate-super-admin` deve **vedere e invertire** quel ruolo dal menu utente (icona corona), senza aprire una Resource. La logica di business vive sul profilo (`ProfileContract::toggleSuperAdmin()`). L’UI oggi è un Livewire in `Http/Livewire`, montato con un render hook: è chrome Filament, non un form pubblico.
 
 ## Utenti
 

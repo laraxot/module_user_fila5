@@ -53,9 +53,9 @@ Oggi `SuperAdmin` è `Livewire\Component` in `Http/Livewire/Profile`. Il panel l
 
 ### Vista Blade
 
-**Path previsto:** `laravel/Modules/User/resources/views/filament/widgets/profile/super-admin.blade.php`
+**Path previsto:** `laravel/Modules/User/resources/views/filament/widgets/profile/super-admin-hero.blade.php`
 
-Copiare il markup attuale di `livewire/profile/super-admin.blade.php` (due `x-filament::icon-button`, `wire:click="toggleSuperAdmin"`), tooltip da lang:
+Due bottoni distinti (`user-super-admin` / `user-negate-super-admin`), `wire:click="toggleSuperAdmin"`, tooltip e label da lang:
 
 - `user::super_admin_widget.tooltip.active`
 - `user::super_admin_widget.tooltip.negated`

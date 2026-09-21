@@ -104,6 +104,11 @@ return [
             'icon' => 'resetColumnManager',
             'label' => 'resetColumnManager',
         ],
+        'delete' => [
+            'tooltip' => 'delete',
+            'icon' => 'delete',
+            'label' => 'delete',
+        ],
     ],
     'navigation' => [
         'name' => 'Recent Logins',

@@ -6,39 +6,48 @@ status: approved
 track: campaign
 related:
   - ./livewire-inventory.md
+  - ./livewire-widget-admin-panel-provider.md
   - ./livewire-widget-prd.md
   - ./livewire-widget-architecture.md
   - ./livewire-widget-tech-spec.md
+  - ../../Xot/docs/bmad/livewire-widget-advantages.md
 ---
 
 # Vantaggi di avere SOLO Filament widget nel chrome del panel
 
+> **Nota di canone:** il documento di piattaforma sui vantaggi widget-only è
+> [Xot/docs/bmad/livewire-widget-advantages.md](../../Xot/docs/bmad/livewire-widget-advantages.md).
+> Questo file resta la vista **specifica del modulo User** (chrome `/admin`, auth, legal).
+> **Stato al 2026-09-21:** i tre hook di `AdminPanelProvider` montano già FQCN widget
+> (`AdminPanelProvider.php:25-38`); questo documento descrive il razionale della scelta, ormai
+> verificato in codice, e i residui ancora aperti (Cluster C, `app/Livewire/Logout`, cache alias).
+
 ## Executive Summary
 
-L'architettura attuale mantiene due stack UI paralleli per il chrome del panel Filament:
+L'architettura pre-campagna manteneva due stack UI paralleli per il chrome del panel Filament:
 1. **Livewire HTTP** (`Http/Livewire/*`) - alias stringa nel provider
 2. **Filament Widget** (`Filament/Widgets/*`) - classi specializzate
 
-Questa duplicazione crea rischi di identità, performance e manutenzione che vengono eliminati adottando **esclusivamente** Filament widget.
+Questa duplicazione creava rischi di identità, performance e manutenzione, eliminati adottando **esclusivamente** Filament widget. La conversione del chrome è verificata su disco; restano i gemelli legal/profilo (story 10.4) e la cache alias stale.
 
 ---
 
 ## Vantaggi Tecnici Misurabili
 
 ### 1. Eliminazione del Single Point of Failure (SPOF)
-**Problema attuale:** Tre hook attivi in `AdminPanelProvider` montano alias Livewire HTTP:
+**Problema pre-campagna:** Tre hook in `AdminPanelProvider` montavano alias Livewire HTTP:
 - `@livewire('profile.super-admin')` (SuperAdmin toggle)
-- `@livewire('team.change')` (Team switcher)  
+- `@livewire('team.change')` (Team switcher)
 - `@livewire('socialite.buttons')` (Social login)
 
 Se uno di questi alias punta a un namespace vista morto o a una classe mancante, **tutto il panel admin ritorna 500**, bloccando l'accesso a **tutti i moduli**.
 
-**Vantaggio Filament-only:** Hook FQCN puntano a classi PHP reali. Un typo genera errore di classe durante il boot (visibile in logs), non un 500 a runtime che blocca l'interfaccia admin.
+**Vantaggio Filament-only (verificato):** gli hook FQCN (`SocialLoginWidget::class`, `TeamChangeWidget::class`, `SuperAdminWidget::class`) puntano a classi PHP reali. Un typo genera errore di classe durante il boot (visibile in logs), non un 500 a runtime che blocca l'interfaccia admin.
 
 ### 2. Eliminazione dei ViewCopyAction (Side-effect filesystem)
-**Problema attuale:** Componenti auth HTTP (Login, Register, Verify, Passwords/*) usano `ViewCopyAction` nel `render()` per copiare viste nel tema a **ogni request**.
+**Problema pre-campagna:** i componenti auth HTTP (Login, Register, Verify, Passwords/*) usavano `ViewCopyAction` nel `render()` per copiare viste nel tema a **ogni request**. Classi eliminate il 2026-09-21; `Login.php` lo aveva già commentato, `Register`/`Verify`/`Confirm`/`Email`/`Reset` lo eseguivano a ogni hit.
 
-Questo causa:
+Questo causava:
 - **I/O inutile** su ogni hit auth
 - **Race condition** in ambienti concurrent (multiple richieste che sovrascrivono lo stesso file)
 - **Inquinamento PHPStan** con file generati a runtime non presenti nel repo
@@ -47,8 +56,8 @@ Questo causa:
 **Vantaggio Filament-only:** Widget auth esistenti (`LoginWidget`, `RegisterWidget`, etc.) non copiano file. Il theming avviene a **deploy time** tramite service provider, non a runtime.
 
 ### 3. Unico percorso di testing e manutenzione
-**Problema attuale:** Ogni funzionalità ha due implementazioni:
-- Implementazione HTTP (spesso orfana, senza route)
+**Problema pre-campagna:** ogni funzionalità aveva due implementazioni:
+- Implementazione HTTP (spesso orfana, senza route — `routes/web_tall.php` non è mai stato caricato da `XotBaseRouteServiceProvider`)
 - Implementazione widget (SSoT, utilizzata realmente)
 
 Questo richiede:
@@ -59,7 +68,7 @@ Questo richiede:
 **Vantaggio Filament-only:** Una sola implementazione per funzionalità. I widget esistenti sono già lo SSoT per auth. Gli HTTP sono gemelli morti o orfani.
 
 ### 4. Controllo granulare di visibilità e performance
-**Problema attuale:** Componenti Livewire HTTP montati tramite alias:
+**Problema pre-campagna:** i componenti Livewire HTTP montati tramite alias:
 - Non hanno `canView()` per visibilità condizionale
 - Non supportano lazy loading
 - Non hanno controlli di pagina (`page: [ ... ]`)
@@ -74,26 +83,26 @@ Questo richiede:
 - Partecipano al sistema di discovery e caching
 
 ### 5. Linguistica e tipizzazione centralizzata
-**Problema attuale:** 
-- Componenti HTTP usano `__()` diretto con testi hardcoded
+**Problema pre-campagna:**
+- Componenti HTTP usavano `__()` diretto con testi hardcoded
 - Difficile centralizzare i lang
 - PHPStan non può verificare l'esistenza delle chiavi lang
 - Duplicazione di testi tra HTTP e widget
 
-**Vantaggio Filament-only:** 
+**Vantaggio Filament-only:**
 - Widget usano `trans()` o helper XotBase
 - Lang centralizzato in `resources/lang/*/module.php`
 - PHPStan può verificare l'esistenza delle chiavi
 - Unico source of truth per testi UI
 
 ### 6. Eliminazione del technical debt esploso
-**Evidenza corrente:** 
-- `InvalidArgumentException: No hint path defined for [filament-jet]` (runtime error)
-- Classi HTTP con `dddx('wip')` ancora eseguibili
-- ViewCopyAction che scrive disco a ogni request
+**Evidenza raccolta:**
+- `InvalidArgumentException: No hint path defined for [filament-jet]` (runtime error, già osservato)
+- Classi HTTP con `dddx('wip')` ancora eseguibili — residuo: `TermsOfService.php:32` (story 10.4)
+- ViewCopyAction che scriveva disco a ogni request — eliminato con le classi auth (2026-09-21)
 - Nomi hardcoded in tedesco/italiano nei toast
 
-**Vantaggio Filament-only:** 
+**Vantaggio Filament-only:**
 - Nessun hint path a runtime (tutto risolto a boot)
 - Classi PHP esistenti o assenti (nessun runtime surprise)
 - Zero I/O disco nel render()
@@ -126,11 +135,16 @@ Con un solo stack UI:
 
 ## Perché è Urgente (Non "Nice to Have")
 
-### 1. Il debito è già esploso in produzione
-L'errore `No hint path defined for [filament-jet]` dimostra che:
-- Il sistema è già in uno stato fragile
-- Ogni bump di Filament/Livewire rischia di rompere qualcosa
+### 1. Il debito era già esploso in produzione
+L'errore `No hint path defined for [filament-jet]` ha dimostrato che:
+- Il sistema era in uno stato fragile
+- Ogni bump di Filament/Livewire rischiava di rompere qualcosa
 - La manutenzione reattiva è più costosa della preventiva
+
+**Residuo di urgenza (2026-09-21):** il chrome è convertito, ma finché `Http/Livewire` non è vuota
+(Privacy/Terms/DeleteAccount → 10.4; `app/Livewire/Logout` orfano; `_components.json` stale con 14
+alias morti) la superficie doppia esiste ancora. L'urgenza residua è chiudere il Cluster C e la
+decisione SSoT logout/reset.
 
 ### 2. Ogni upgrade moltiplica il lavoro
 Con due stack:
@@ -144,13 +158,16 @@ Con due stack:
 - **Costo di mitigazione:** Basso (documentazione + semplice refactoring)
 - **ROI:** Estremamente alto (previene outage identità)
 
-### 4. Auth è già duplicata - rischio di sicurezza confermato
-Il modulo User ha già:
+### 4. Auth era duplicata - rischio di sicurezza confermato, ora chiuso sulle classi
+Il modulo User aveva:
 - `LoginWidget` + `Login` HTTP (quest'ultimo senza route, ma eseguibile via test)
-- `LogoutWidget` x2 + `Logout` HTTP + `AuthLogout` HTTP
-- Questo crea confusione su quale sia lo SSoT reale
+- `LogoutWidget` x2 + `Logout` HTTP + `AuthLogout` HTTP + `Livewire\Logout` (orphan in `app/Livewire`)
 
-Rimuovere i gemelli HTTP elimina questa ambiguità di sicurezza.
+Le classi HTTP auth sono eliminate (2026-09-21). **Residuo aperto:** la decisione SSoT non è ancora
+chiusa — convivono `Filament/Widgets/LogoutWidget.php` e `Filament/Widgets/Auth/LogoutWidget.php`,
+e tre widget reset password (`PasswordResetWidget`, `ResetPasswordWidget`,
+`PasswordResetConfirmWidget`). Finché non si sceglie un SSoT per famiglia (AC 10.3 #4-#5), il
+vantaggio "una sola implementazione" è dimezzato.
 
 ---
 
@@ -169,13 +186,13 @@ Rimuovere i gemelli HTTP elimina questa ambiguità di sicurezza.
 
 ## Metriche di Successo Oggettive
 
-La campagna è completata quando:
-1. [ ] `grep -r "ViewCopyAction" app/` → 0 risultati
-2. [ ] `grep -r "@livewire('" app/Providers/Filament/AdminPanelProvider.php` → 0 risultati  
-3. [ ] `find app/Http/Livewire -type f -name "*.php"` → cartella vuota o solo README
+La campagna è completata quando (stato verificato 2026-09-21):
+1. [x] `grep -r "ViewCopyAction" app/` → 0 risultati (classi auth HTTP eliminate)
+2. [x] `grep -r "@livewire('" app/Providers/Filament/AdminPanelProvider.php` → solo FQCN `::class`, zero alias
+3. [ ] `find app/Http/Livewire -type f -name "*.php"` → restano `PrivacyPolicy.php`, `TermsOfService.php`, `Profile/DeleteAccount.php` (story 10.4 blocked) + `app/Livewire/Logout.php` orfano + cache/file `.no|.wip|.test|.to_widget`
 4. [ ] `phpstan analyse --memory-limit=-1` → 0 errori (livello max)
 5. [ ] `/admin` restituisce 200 per utente autenticato senza hint path error
-6. [ ] Zero `dddx` in qualsiasi componente UI User
+6. [ ] Zero `dddx` in qualsiasi componente UI User — `dddx('wip')` ancora in `TermsOfService.php:32`
 7. [ ] Tutti i lang UI usano chiavi `user::*` o `module::*` mai testi hardcoded
 
 ---
@@ -208,12 +225,12 @@ La sequenza di implementazione è già definita negli Epic:
 
 Passare da **Livewire HTTP + Filament widget** a **solo Filament widget** nel chrome del panel non è un refactoring estetico:
 - **Rimuove un single point of failure critico** per l'accesso admin
-- **Elimina side-effect filesystem pericolosi** e poco performanti  
+- **Elimina side-effect filesystem pericolosi** e poco performanti
 - **Centralizza sicurezza e manutenzione** su un'unica implementazione
 - **Rispetta i confini di modulo** spostando Gdpr/Notify dove appartengono
 - **Prepara il terreno per upgrade futuri** senza lavoro moltiplicato
 - **Elimina technical debt già esploso in produzione**
 
-L'urgenza deriva dal fatto che il rischio è già materiale (errori hint path osservati) e l'impatto potenziale è un outage totale dell'identità aziendale. Il costo di mitigazione è basso rispetto al beneficio di eliminare una categoria intera di incidenti.
+L'urgenza deriva dal fatto che il rischio era già materiale (errori hint path osservati) e l'impatto potenziale è un outage totale dell'identità aziendale. Il costo di mitigazione è basso rispetto al beneficio di eliminare una categoria intera di incidenti.
 
-Esta campaña no es sobre seguir tendencias, es sobre eliminar una fuente conocida de fallos críticos antes de que cause un incidente de producción.
+Questa campagna non è seguire una moda: è eliminare una fonte nota di failure critici prima che causi un incidente di produzione.

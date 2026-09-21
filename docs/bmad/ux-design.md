@@ -7,9 +7,10 @@ related:
   - ./prd.md
   - ./architecture.md
   - ./tech-spec.md
+  - ./decision-log.md
 ---
 
-# UX design: icona re nel user menu
+# UX design: emblema hero nel user menu
 
 ## Scopo
 
@@ -17,29 +18,33 @@ Un controllo **silenzioso** accanto al menu account Filament. Non un form, non u
 
 ## Posizione
 
-Hook `USER_MENU_BEFORE` (Filament `user-menu.blade.php`). Stesso posto di oggi, a sinistra del menu utente, insieme (ma distinto) al team switcher.
+Hook `USER_MENU_BEFORE`. A sinistra del menu utente, distinto dal team switcher.
 
 ## Stati visivi
 
-| Stato profilo | Icona | Rotazione | Tooltip (lang) |
-|---------------|-------|-----------|----------------|
-| `super-admin` | `fas-chess-king` | 0° | attivo |
-| `negate-super-admin` | `fas-chess-king` | 180° | negato |
-| nessuno dei due | non renderizzare i bottoni | — | — |
+| Stato profilo | Icona Blade Icons | Colore Filament | Tooltip (lang) |
+|---------------|-------------------|-----------------|----------------|
+| `super-admin` | `user-superadmin` | `warning` | attivo |
+| `negate-super-admin` | `user-negate-superadmin` | `danger` | negato |
+| nessuno dei due | nessun bottone | — | — |
 
-Colori: restano `text-gray-500 dark:text-gray-400`, `h-5 w-5` — chrome Filament, non un CTA primario.
+Le SVG stanno in `resources/svg/` e `XotBaseServiceProvider::registerBladeIcons()` le registra con prefisso `user`. File `superadmin.svg` → `user-superadmin`. Filament 5 le consuma con `x-filament::icon-button` (`icon="user-superadmin"`), non con `@svg('user::…')` e non senza prefisso.
+
+Vista widget: `user::filament.widgets.profile.super-admin-toggle`.
+
+Marcatore di test: `data-super-admin-state="active"|"negated"`. `label` e `tooltip` dalla lang.
 
 ## Interazione
 
 1. Click sull’icona.
 2. Ruolo invertito lato server.
-3. Redirect 303 sulla stessa URL: l’operatore resta dove era (dashboard, resource, …).
-4. Nessun modal di conferma (oggi non c’è; non introdurlo: è un toggle per chi è già privilegiato).
+3. Redirect 303 sulla stessa URL.
+4. Nessun modal.
 
 ## Accessibilità
 
-`x-filament::icon-button` + tooltip Filament (non attributo `title` HTML nudo se il componente già espone tooltip). Testo del tooltip localizzato, mai "Super Admin" hardcoded.
+`x-filament::icon-button` con `label` + `tooltip` dalla lang. Due glifi distinti + colore.
 
 ## Fuori UX di questo slice
 
-Layout login, team switcher, avatar dropdown (`UserDropdown`).
+Layout login, team switcher, avatar dropdown.

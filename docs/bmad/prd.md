@@ -50,10 +50,10 @@ related:
 
 ### FR-001: Toggle visibile — [MUST]
 
-**Description:** Chi ha `super-admin` o `negate-super-admin` vede l’icona re nel user menu (prima del menu account).  
+**Description:** Chi ha `super-admin` o `negate-super-admin` vede l’emblema hero nel user menu (prima del menu account).  
 **AC:**
-- Super-admin: icona non ruotata, tooltip dalla lang.
-- Negate-super-admin: icona ruotata 180°, tooltip dalla lang.
+- Super-admin: icona `user-super-admin` (scudo outline + fulmine animato), tooltip dalla lang.
+- Negate-super-admin: icona `user-negate-super-admin` (scudo + barra, fulmine spento), tooltip dalla lang. Glifo distinto.
 - Nessuno dei due ruoli: nessun controllo (menu invariato).  
 **Epic:** 9
 

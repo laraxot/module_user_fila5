@@ -4,7 +4,7 @@ Costituzione di **questo slice**, non del modulo User intero. Non contraddice la
 
 ## Perché esiste
 
-Nel pannello Filament (`GET /admin`) un utente con ruolo `super-admin` o `negate-super-admin` deve **vedere e invertire** quel ruolo dal menu utente (icona re), senza aprire una Resource. La logica di business vive sul profilo (`ProfileContract::toggleSuperAdmin()`). L’UI oggi è un Livewire in `Http/Livewire`, montato con un render hook: è chrome Filament, non un form pubblico.
+Nel pannello Filament (`GET /admin`) un utente con ruolo `super-admin` o `negate-super-admin` deve **vedere e invertire** quel ruolo dal menu utente (icona corona), senza aprire una Resource. La logica di business vive sul profilo (`ProfileContract::toggleSuperAdmin()`). L’UI oggi è un Livewire in `Http/Livewire`, montato con un render hook: è chrome Filament, non un form pubblico.
 
 ## Utenti
 
@@ -51,6 +51,18 @@ Oggi `SuperAdmin` è `Livewire\Component` in `Http/Livewire/Profile`. Il panel l
 | Profilo | `XotData::getProfileModel()` | invariato |
 | Ruoli | Spatie `super-admin` / `negate-super-admin` | invariato |
 | Vista | `user::filament.widgets.profile.super-admin` | GetViewByClassAction |
+
+## Icone (Marvel outline animate)
+
+Il widget usa 2 SVG custom (`resources/svg/super-admin.svg` e `negate-superadmin.svg`) con stile outline elegante e animazione CSS integrata:
+- **Super-admin attivo** (`isSuperAdmin()`): SVG `super-admin.svg` con corona stilizzata, fulmine sottile, stella decorativa; animazione `marvel-pulse` (2s ease-in-out, scale + glow ambra). Rappresenta autorità confermata.
+- **Super-admin negato** (`isNegateSuperAdmin()`): SVG `negate-superadmin.svg` con corona barrata (linea diagonale), fulmine rotto, stella spenta; animazione `marvel-shake` (tremolio leggero, fade). Rappresenta revoca del ruolo.
+
+Il widget usa due stati visivi:
+- **Super-admin attivo** (`isSuperAdmin()`): `heroicon-o-shield-check` (outline shield check → autorizzato/verificato, colore `warning` / ambra) — rappresenta il ruolo elevato confermato.
+- **Super-admin negato/disattivato** (`isNegateSuperAdmin()`): `heroicon-o-user-minus` (outline user minus → rimozione/negazione, colore `danger` / rosso) — indica che il ruolo è stato revocato.
+
+Queste icone sono SVG outline personalizzati (`public/icons/super-admin.svg` e `negate-superadmin.svg`) con stile Marvel: corona stilizzata, stella, fulmine sottile, glow colorato (`amber` attivo, `rose` negato) e animazione CSS integrata (`marvel-pulse` / `marvel-shake`). Non usano `node_modules` ma asset locali autoregistrati da Filament.
 
 ## Componenti
 

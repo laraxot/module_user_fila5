@@ -18,7 +18,7 @@
 
 `Team\Change` era già su `user::livewire.team.change`.
 
-Conversione a Filament widget **documentata, non implementata**. Inventario 14 classi + urgenza: [bmad/livewire-inventory.md](./bmad/livewire-inventory.md). SuperAdmin: [bmad/tech-spec.md](./bmad/tech-spec.md), story [9.2](./stories/9.2.admin-panel-provider-hook.story.md). Campagna: [bmad/README.md](./bmad/README.md). Oggi il provider monta ancora tre alias HTTP (`socialite.buttons`, `team.change`, `profile.super-admin`).
+Conversione a Filament widget **implementata**: [bmad/tech-spec.md](./bmad/tech-spec.md), story [9.2](./stories/9.2.admin-panel-provider-hook.story.md) (hook) e [9.3](./stories/9.3.remove-livewire-superadmin.story.md) (rimozione Livewire). Il provider monta `SuperAdminWidget` via `@livewire(SuperAdminWidget::class)`; il vecchio `@livewire('profile.super-admin')` non esiste più.
 
 ## Errori di Metodi Statici
 

@@ -8,10 +8,10 @@ use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
- * SocialLoginWidget: pulsanti login OAuth (Google, Microsoft, GitHub).
+ * Pulsanti OAuth (Google, Microsoft, GitHub).
  *
  * Panel: route `socialite.oauth.redirect`.
- * FO: impostare `$redirectRoute = 'socialite.oauth.fo.redirect'`.
+ * FO: `$redirectRoute = 'socialite.oauth.fo.redirect'`.
  */
 class SocialLoginWidget extends XotBaseSchemaWidget
 {
@@ -22,8 +22,6 @@ class SocialLoginWidget extends XotBaseSchemaWidget
     public string $redirectRoute = 'socialite.oauth.redirect';
 
     /**
-     * Widget senza form: schema vuoto.
-     *
      * @return array<string, Component>
      */
     public function getFormSchema(): array

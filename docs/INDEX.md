@@ -1,18 +1,5 @@
 # Documentation Index
 
-## BMAD — Livewire verso Filament
-
-- [Product brief](./bmad/livewire-widget-consolidation-brief.md)
-- [PRD](./bmad/livewire-widget-consolidation-prd.md)
-- [Inventory](./bmad/livewire-widget-consolidation-inventory.md)
-- [Architecture](./bmad/livewire-widget-consolidation-architecture.md)
-- [Epics and stories](./bmad/livewire-widget-consolidation-epics.md)
-- [SuperAdmin story](./bmad/livewire-widget-consolidation-story-superadmin.md)
-- [Implementation readiness](./bmad/livewire-widget-consolidation-readiness.md)
-- [Sprint plan](./bmad/livewire-widget-consolidation-sprint-plan.md)
-- [Decision log](./bmad/livewire-widget-consolidation-decision-log.md)
-- [Benefits and urgency](./bmad/livewire-widget-consolidation-benefits.md)
-
 ## -integration
 
 - [eav.md](./-integration/eav.md)
@@ -6925,3 +6912,4 @@ Ultimo aggiornamento: 14 Maggio 2025
 - [phpstan-widget-property-types.deprecated.md](./wiki/troubleshooting/phpstan-widget-property-types.deprecated.md)
 - [phpstan-widget-property-types.md](./wiki/troubleshooting/phpstan-widget-property-types.md)
 - [spatie-permission-team-model-not-configured.md](./wiki/troubleshooting/spatie-permission-team-model-not-configured.md)
+

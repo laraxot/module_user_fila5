@@ -21,7 +21,7 @@ L’operatore che *è già* super-admin (o in stato “negato”) deve poter inv
 - Problema: UI admin in un contenitore sbagliato (Livewire HTTP), fragile rispetto al panel.
 - Soluzione: stesso comportamento, widget Filament montato nello stesso hook.
 - Utenti: operatori del panel `admin` con quei due ruoli.
-- Metrica: `/admin` mostra l’icona re; un click inverte il ruolo e ricarica la pagina.
+- Metrica: `/admin` mostra l’icona corona; un click inverte il ruolo e ricarica la pagina.
 
 ## 2. Problem statement
 
@@ -49,7 +49,7 @@ Il 500 `filament-jet` ha dimostrato che questo pezzo vive ancora nel mondo Jet/F
 
 | Ruolo | Bisogno |
 |-------|---------|
-| Super-admin | Vedere l’icona re; un click passa a `negate-super-admin` |
+| Super-admin | Vedere l’icona corona; un click passa a `negate-super-admin` |
 | Negate-super-admin | Vedere l’icona ruotata; un click torna `super-admin` |
 | Altri utenti panel | Nessun controllo, menu invariato |
 

@@ -2,10 +2,11 @@
 title: "Inventario piattaforma — Livewire HTTP → Filament widget"
 type: inventory
 module: User
-status: approved
+status: implemented
 track: livewire-to-filament-widget
 related:
   - ./advantages-filament-only.md
+  - ./livewire-widget-admin-panel-provider.md
   - ./livewire-widget-project-context.md
   - ./livewire-widget-architecture.md
   - ./livewire-widget-prd.md
@@ -27,25 +28,29 @@ related:
 Ogni modulo mantiene il proprio inventario locale in `docs/bmad/livewire-inventory.md`; questo file
 coordina le decisioni di piattaforma e il verdetto per ogni componente.
 
-**Docs only. Nessun PHP convertito, nessuna cancellazione eseguita in questa sessione.**
-
 ## Metodo
 
-Per ogni classe in `Modules/*/app/Http/Livewire` sono stati verificati, sull’intero repository:
+Per ogni classe in `Modules/<Mod>/app/Http/Livewire` (e `Modules/<Mod>/app/Livewire`) sono stati
+verificati, sull’intero repository:
 
 ```bash
-find Modules/<Mod>/app/Http/Livewire -name '*.php'
+find Modules/<Mod> -path '*/vendor/*' -prune -o -name '*.php' -path '*Livewire*' -print
 grep -rn "@livewire(" Modules/<Mod> --include="*.blade.php"
 grep -rn "<livewire:" Modules/<Mod> --include="*.blade.php"
 grep -rn "Livewire::component" Modules/<Mod>
 grep -rn "Http\\Livewire\\" Modules/<Mod>
+grep -rnE "profile\.super-admin|team\.change|socialite\.buttons" --include="*.php" --include="*.blade.php" .
 find Modules/<Mod>/routes -type f
-find Modules/<Mod>/app/Filament -type f
+find Modules/<Mod>/app/Filament/Widgets -type f
+find Modules/<Mod>/resources/views/pages -type f   # rotte Folio/Volt
+cat Modules/<Mod>/app/Http/Livewire/_components.json  # cache alias Livewire
 ```
 
-Verifica di montaggio: hook Filament (`renderHook`), direttiva `@livewire`, tag `<livewire>`,
-registrazione esplicita, routing, viste Blade, test. Verifica gemelli: widget Filament esistenti nello
-stesso modulo.
+Verifica di montaggio: hook Filament (`FilamentView::registerRenderHook` nei PanelProvider), direttiva
+`@livewire`, tag `<livewire>`, registrazione esplicita, routing (incluso quali file `routes/*.php` sono
+davvero caricati da `XotBaseRouteServiceProvider`), pagine Folio, viste Blade, test. Verifica gemelli:
+widget Filament esistenti in `Modules/<Mod>/app/Filament/Widgets` (auto-discovery in
+`XotBasePanelProvider::discoverWidgets`, `Modules/Xot/app/Providers/Filament/XotBasePanelProvider.php:134`).
 
 ## Religione piattaforma
 
@@ -66,7 +71,7 @@ Constitution: [Xot livewire-widget-project-context](../../Xot/docs/bmad/livewire
 
 | Modulo | Http/Livewire | Verdetto | Canone |
 |--------|---------------|----------|--------|
-| **User** | 14 classi, 3 hook panel | chrome 9.x/10.1–10.2; ritiro gemelli auth; legal → Gdpr | [User](./livewire-inventory.md) |
+| **User** | 15 classi (14 `Http/Livewire` + `Livewire/Logout`), 3 hook panel | ✅ chrome convertito (9.x, 10.1–10.2) + auth HTTP ritirata (10.3); restano 4 classi su disco (Cluster C → 10.4 + `Livewire/Logout` orfano) | [User](./livewire-inventory.md) |
 | **UI** | DarkModeSwitcher, Toast | ritiro HTTP; widget già SSoT | [UI](../../UI/docs/bmad/livewire-inventory.md) |
 | **Lang** | Change, Switcher | ritiro HTTP; `LanguageSwitcherWidget` | [Lang](../../Lang/docs/bmad/livewire-inventory.md) |
 | **Xot** | `XotBaseComponent` + alias orfani | **non** convertire la base; 12.1 alias | [Xot](../../Xot/docs/bmad/livewire-inventory.md) |
@@ -79,25 +84,33 @@ Constitution: [Xot livewire-widget-project-context](../../Xot/docs/bmad/livewire
 | **Gdpr** | zero HTTP; accoglie legal User | no `PrivacyPolicyWidget` | [Gdpr](../../Gdpr/docs/bmad/livewire-inventory.md) |
 | Chart, Setting, Tenant, Activity, AI, CloudStorage, DbForge, Limesurvey | zero classi HTTP | inventory = gate, nessun epic | `Modules/<Mod>/docs/bmad/livewire-inventory.md` |
 
-## Cluster A — chrome. Convertire.
+## Cluster A — chrome. Convertito.
 
-| Modulo | Classe | Alias / hook | Gemello | Story |
-|--------|--------|--------------|---------|-------|
-| User | `Profile\SuperAdmin` | `profile.super-admin` / `user-menu.before` | nessuno → `SuperAdminWidget` | **9.x** |
-| User | `Team\Change` | `team.change` / `user-menu.before` | nessuno → `TeamChangeWidget` | **10.1** |
-| User | `Socialite\Buttons` | `socialite.buttons` / `auth.login.form.after` | `SocialLoginWidget` (estendere, non clonare) | **10.2** |
+| Modulo | Classe HTTP | Hook | Widget | Story | Stato |
+|--------|-------------|------|--------|-------|-------|
+| User | `Profile\SuperAdmin` | `user-menu.before` | `SuperAdminWidget` | **9.x** | ✅ hook FQCN + file HTTP eliminato (verificato 2026-09-21) |
+| User | `Team\Change` | `user-menu.before` | `TeamChangeWidget` | **10.1** | ✅ hook FQCN + file HTTP eliminato (verificato 2026-09-21) |
+| User | `Socialite\Buttons` | `auth.login.form.after` | `SocialLoginWidget` (nessun terzo widget) | **10.2** | ✅ hook FQCN + file HTTP eliminato (verificato 2026-09-21) |
 
-Provider conteso: 9.2 → 10.1 → 10.2 (un blocco per story). Hook su righe diverse: merge facile.
+`AdminPanelProvider` monta **solo FQCN** (`AdminPanelProvider.php:25-38`, tre hook su
+`SocialLoginWidget::class`, `TeamChangeWidget::class`, `SuperAdminWidget::class` — mappa completa in
+[livewire-widget-admin-panel-provider.md](./livewire-widget-admin-panel-provider.md)).
+
+⚠️ **Residuo verificato 2026-09-21:** la cache `app/Http/Livewire/_components.json` (1 riga) elenca
+ancora **14 alias**, compresi quelli delle classi già eliminate (`auth.*`, `profile.super-admin`,
+`socialite.buttons`, `team.change`). Non è una fonte di verità ma va rigenerata o eliminata con la
+cartella: finché esiste, un `Livewire::component` discovery basato su cache può resuscitare alias
+morti. Coperta dal residuo della story 10.4.
 
 ## Cluster B — ritirare HTTP.
 
 | Modulo | Classe | Gemello | Nota |
 |--------|--------|---------|------|
-| User | `Auth\Login` | `LoginWidget` | solo unit test, nessuna route |
-| User | `Auth\Register` | `RegisterWidget` | `ViewCopyAction` |
-| User | `Auth\Logout` / `AuthLogout` | scegliere **un** `LogoutWidget` | `AuthLogout`: bug `htmlspecialchars(): array given` |
-| User | `Auth\Verify` | nessun widget | ritiro; FO/Volt è altro epic |
-| User | `Passwords\Email/Reset/Confirm` | Forgot / Reset / Confirm widgets | scegliere SSoT tra i doppi reset |
+| User | `Auth\Login` | `LoginWidget` | ✅ eliminata 2026-09-21 (era senza route: `web_tall.php` mai caricato) |
+| User | `Auth\Register` | `RegisterWidget` | ✅ eliminata (aveva `ViewCopyAction` in `render()`) |
+| User | `Auth\Logout` / `AuthLogout` | scegliere **un** `LogoutWidget` | ✅ classi eliminate; ⚠️ SSoT logout ancora aperto: esistono sia `Filament/Widgets/LogoutWidget.php` sia `Filament/Widgets/Auth/LogoutWidget.php` (AC 10.3 #4) |
+| User | `Auth\Verify` | nessun widget | ✅ eliminata; FO/Volt è altro epic |
+| User | `Passwords\Email/Reset/Confirm` | Forgot / Reset / Confirm widgets | ✅ eliminate; ⚠️ SSoT reset ancora aperto: `PasswordResetWidget`, `ResetPasswordWidget`, `PasswordResetConfirmWidget` convivono (AC 10.3 #5) |
 | UI | `DarkModeSwitcher` | `DarkModeSwitcherWidget` | gemello morto; Filament 5 ha dark mode nativo |
 | UI | `Toast` | nessuno | ritiro se grep resta solo la classe |
 | Lang | `Change`, `Switcher` | `LanguageSwitcherWidget` | due HTTP identici + un widget = tre switcher |
@@ -110,12 +123,13 @@ Provider conteso: 9.2 → 10.1 → 10.2 (un blocco per story). Hook su righe div
 | Cms | `Page/Show` | nessuno | pagina FO (slug, cache, theme) |
 | Media | `Card/Video/Clip` | nessuno | FO video + modal; nessun punto di montaggio vivo |
 
-## Cluster C — profilo / Gdpr.
+## Cluster C — profilo / Gdpr / orfani.
 
 | Modulo | Classe | Destinazione | Story |
 |--------|--------|--------------|-------|
-| User | `DeleteAccount` | widget/pagina profilo; password confirm; `DeleteUserAction` locked | **10.4** |
-| User | `PrivacyPolicy` / `TermsOfService` | delete User; Gdpr | **10.4** |
+| User | `Profile\DeleteAccount` | widget/pagina profilo; password confirm; `DeleteUserAction` locked | **10.4** (blocked) |
+| User | `PrivacyPolicy` / `TermsOfService` | delete User; Gdpr | **10.4** (blocked) |
+| User | `Livewire\Logout` (`app/Livewire`, non `Http/Livewire`) | ritiro: orfano verificato, gemelli `LogoutWidget`/`Auth\LogoutWidget` | residuo 10.3 |
 
 ## Gap verificato: Buttons vs SocialLoginWidget (10.2)
 
@@ -125,16 +139,66 @@ Provider conteso: 9.2 → 10.1 → 10.2 (un blocco per story). Hook su righe div
 | Route click | `socialite.oauth.redirect` | `socialite.oauth.fo.redirect` (**FO**, non panel) |
 | Markup | `x-filament::button` + `user::auth.login-via` | card custom + `user::auth.login.or_continue_with` |
 
-Montare il widget com’è oggi sul login **admin** manderebbe OAuth sul redirect FO. 10.2 deve:
-(1) una SSoT config; (2) parametro `redirectRoute` (o equivalente) sul widget esistente;
-(3) **zero** terza classe.
+Chiuso: `SocialLoginWidget::$redirectRoute` default `socialite.oauth.redirect` (panel). FO: `socialite.oauth.fo.redirect`. Vista usa `getRedirectUrl()`. Zero `SocialiteButtonsWidget`.
 
 ## Team/Change: rischio redirect (10.1)
 
 `switchTeam()` fa `redirect($path, 303)` da un metodo pubblico Livewire puro. Un `XotBaseWidget` è
 comunque un componente Livewire sotto il cofano, quindi il meccanismo dovrebbe restare identico — ma
-nessun widget già esistente nel modulo (`RegisterWidget`, `LoginWidget`, `SocialLoginWidget`) fa un
-redirect da un metodo custom. Verificare per primo, prima di scrivere il resto del widget.
+`TeamChangeWidget::switchTeam()` replica i quattro effetti HTTP (contratto, `TeamSwitched`, lang, 303). Il widget è Livewire: il redirect da metodo pubblico resta valido.
+
+## Audit per classe — modulo User (verificato su disco 2026-09-21)
+
+`find Modules/User -name '*.php' -path '*Livewire*'` (esclusi vendor/build/graphify-out) restituisce
+oggi **4 classi applicative + 1 test**. Le altre 11 classi HTTP (tutto `Auth\*`, `Profile\SuperAdmin`,
+`Team\Change`, `Socialite\Buttons`) risultano **eliminate dal working tree** (`git status`: `D`), con
+`tests/Unit/Http/Livewire/RetiredChromeLivewireTest.php` che fissa l’assenza dei tre chrome.
+
+### Classi ancora su disco (4)
+
+| Classe | File | Estende | Vista | Montaggio verificato |
+|--------|------|---------|-------|----------------------|
+| `Http\Livewire\PrivacyPolicy` | `app/Http/Livewire/PrivacyPolicy.php` (34 righe) | `Livewire\Component` (r. 13) | `user::livewire.privacy-policy` (r. 21), layout `filament::components.layouts.base` (r. 28) | **zero hit**: nessun `@livewire('privacy-policy')`, `<livewire:privacy-policy>`, rotta o Folio page la monta. Gemello `Filament\Widgets\PrivacyPolicyWidget` (r. 18: `extends XotBaseWidget`) già esistente → Cluster C/B, ritiro in 10.4 |
+| `Http\Livewire\TermsOfService` | `app/Http/Livewire/TermsOfService.php` (34 righe) | `Livewire\Component` (r. 10) | `user::livewire.terms-of-service` (r. 25) | **zero hit** su alias `terms-of-service` fuori dalla cache; contiene ancora `testfunction()` → `dddx('wip')` (rr. 30-33). Gemello `TermsOfServiceWidget` → ritiro in 10.4 |
+| `Http\Livewire\Profile\DeleteAccount` | `app/Http/Livewire/Profile/DeleteAccount.php` (63 righe) | `Livewire\Component` (r. 14) | `user::livewire.profile.delete-account` (r. 21) | **zero hit** su alias `profile.delete-account`. `destroy()` (rr. 26-62) chiama `DeleteUserAction::execute()` (r. 49) — il gemello `DeleteAccountWidget` esiste ma chiama `->run()` inesistente (`DeleteAccountWidget.php:53`): bug aperto, vedi story 10.4 |
+| `Livewire\Logout` | `app/Livewire/Logout.php` (50 righe, **non** `Http/Livewire`) | `Livewire\Component` (r. 15) | `user::livewire.logout` (r. 48) | **zero hit**: nessun FQCN `Modules\User\Livewire\Logout`, nessuna vista, nessuna rotta lo monta. La rotta reale è `Route::post('/logout', LogoutController::class)` in `routes/web.php:14`. Orfano da ritirare; gemelli widget `LogoutWidget` (×2, SSoT da scegliere in 10.3) |
+
+### File non-classe rimasti nella cartella
+
+| File | Tipo | Azione |
+|------|------|--------|
+| `app/Http/Livewire/_components.json` | cache alias (14 alias, incluse classi già eliminate) | rigenerare/eliminare con la cartella |
+| `app/Http/Livewire/LogoutOtherBrowserSessions.test` | sorgente disattivato | eliminare con la cartella |
+| `app/Http/Livewire/Modals/UsersOverview.wip` | WIP | eliminare o promuovere fuori da `Http/Livewire` |
+| `app/Http/Livewire/Profile/DeleteAccount.php.no` | backup disattivato | eliminare |
+| `app/Livewire/RegistrationForm.to_widget` | nota di conversione (116 righe) | eliminare a conversione conclusa |
+| `resources/views/livewire/socialite/buttons.blade.php` | vista orfana (classe eliminata) | eliminare (residuo 10.2) |
+| `resources/views/livewire/team/change.blade.php` | vista orfana (classe eliminata) | eliminare (residuo 10.1) |
+| `resources/views/livewire/{logout,privacy-policy,terms-of-service,registration-form,toast}.blade.php`, `livewire/profile/delete-account.blade.php`, `livewire/modals/users-overview.blade.php` | viste delle classi residue/orfane | eliminare insieme alle classi (10.4 / residuo 10.3) |
+
+### Verifica di montaggio (dove si è cercato)
+
+| Meccanismo | Dove | Esito 2026-09-21 |
+|------------|------|------------------|
+| Render hook chrome | `app/Providers/Filament/AdminPanelProvider.php` (42 righe) | Solo FQCN: `SocialLoginWidget` (rr. 25-28), `TeamChangeWidget` (rr. 30-33), `SuperAdminWidget` (rr. 35-38). Zero alias. Mappa: [livewire-widget-admin-panel-provider.md](./livewire-widget-admin-panel-provider.md) |
+| `@livewire('alias')` in Blade | grep repo-wide su `profile.super-admin`, `team.change`, `socialite.buttons`, `privacy-policy`, `terms-of-service`, `profile.delete-account`, `logout` | Unici hit residui: la cache `_components.json` e i nomi vista `user::livewire.*` interni alle classi stesse |
+| `<livewire:*>` tag | `resources/views` + `Themes` | Nessun tag verso le classi User residue |
+| Rotte | `routes/web.php` (carica `socialite.php`, r. 11; `LogoutController`, r. 14); `routes/auth.php` interamente commentato; `routes/web_tall.php` **mai caricato** da `XotBaseRouteServiceProvider` (carica solo `web.php` e `api.php`, `XotBaseRouteServiceProvider.php:59,73`) | Nessuna rotta viva verso classi Livewire HTTP |
+| Pagine Folio/Volt | `resources/views/pages/` esiste (auth/, profile/, dashboard/, notifications/, pages/, learn/, genesis/) | Montano solo FQCN widget (`NotificationsCenterWidget`, `PasswordExpiredWidget`, `Gdpr\...\UserForm`) — nessun componente HTTP |
+| Test | `tests/Unit/Http/Livewire/RetiredChromeLivewireTest.php` | Fissa assenza di `SuperAdmin`, `Change`, `Buttons` HTTP e dello stub `SocialiteButtonsWidget` |
+
+### Residui aperti (non bloccanti il Cluster A)
+
+- `_components.json` obsoleto (vedi sopra).
+- `tests/Unit/UserGapAttackCoverageTest.php` referenzia ancora `Http\Livewire\Auth\Passwords\Reset` e `Auth\Register` (classi eliminate): da aggiornare o rimuovere nel residuo di 10.3.
+- SSoT logout/reset: decisione documentata in 10.3, **cancellazione fisica del widget perdente
+  ancora aperta** — convivono `Widgets/LogoutWidget.php` e `Widgets/Auth/LogoutWidget.php`,
+  e tre widget reset (`PasswordResetWidget`, `ResetPasswordWidget`, `PasswordResetConfirmWidget`).
+- `DeleteAccountWidget::destroy()` usa `->run()` inesistente su `DeleteUserAction` (bug, story 10.4).
+- **Fuori scope ma critico** (documentato in 10.3 Dev Agent Record): `Auth\LoginWidget` oggi non
+  renderizzabile — `lang/it/login.php` troncato (ritorna `int`) e
+  `resources/views/filament/widgets/auth/login.blade.php` troncato a una riga; danno da commit
+  `0701a777a`. Richiede fix dedicato.
 
 ## Vantaggi di avere solo widget (non anche HTTP)
 
@@ -167,9 +231,9 @@ stesso file provider.
 
 ## Successo piattaforma
 
-- [ ] Zero alias `@livewire('…')` / `<livewire:…>` nel chrome Filament
-- [ ] `app/Http/Livewire` vuoto dove il gemello widget esiste
-- [ ] Zero `ViewCopyAction` / `dddx` UI User
-- [ ] Un SocialLoginWidget, due route (FO vs panel) via parametro
-- [ ] `/admin` 200 senza hint path
-- [ ] Ogni modulo ha `docs/bmad/livewire-inventory.md` come SSoT locale
+- [x] Zero alias `@livewire('…')` nel chrome User (`AdminPanelProvider` = FQCN, verificato 2026-09-21: rr. 25-38)
+- [ ] `app/Http/Livewire` vuoto dove il gemello widget esiste (restano `PrivacyPolicy`, `TermsOfService`, `Profile\DeleteAccount` → 10.4; `app/Livewire/Logout` orfano → residuo 10.3; cache `_components.json` e file `.no`/`.wip`/`.test`/`.to_widget` da eliminare)
+- [ ] Zero `ViewCopyAction` / `dddx` UI User (`dddx('wip')` ancora in `TermsOfService.php:32`)
+- [x] Un SocialLoginWidget, due route (FO vs panel) via `$redirectRoute`
+- [ ] `/admin` 200 senza hint path (vhost locale non verificato in questa sessione)
+- [x] Ogni modulo ha `docs/bmad/livewire-inventory.md` come SSoT locale

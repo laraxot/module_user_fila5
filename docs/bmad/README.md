@@ -12,11 +12,12 @@ bmad_track: "core-identity"
 
 ## Campagna vigente — solo Filament widget
 
-**Solo documentazione, codice non convertito.** GitHub: [issue #100](https://github.com/laraxot/module_user_fila5/issues/100) · [discussion #101](https://github.com/laraxot/module_user_fila5/discussions/101).
+**Chrome convertito (2026-09-21): i 3 hook del provider sono FQCN; restano Cluster C (10.4) e residui.** GitHub: [issue #100](https://github.com/laraxot/module_user_fila5/issues/100) · [discussion #101](https://github.com/laraxot/module_user_fila5/discussions/101).
 
 Inventario + perché/urgenza (canone dopo riconciliazione agenti): [livewire-inventory.md](./livewire-inventory.md).
+Mappa hook provider: [livewire-widget-admin-panel-provider.md](./livewire-widget-admin-panel-provider.md).
 
-Stub (non SSoT): `livewire-widget-conversion-inventory.md`, `advantages-filament-widgets-over-livewire.md`, `livewire-widget-consolidation-*.md`, story `10.1.socialite-buttons-widget`, `11.1.team-change-widget`.
+Stub/puntatori (non SSoT): `livewire-widget-{conversion,decision-log,epics}.md`, `advantages-filament-widgets-over-livewire.md`, `livewire-widget-consolidation-*.md`, story `10.1.socialite-buttons-widget`, `11.1.team-change-widget`.
 
 ### Pacchetto campagna (14 Livewire)
 
@@ -30,6 +31,8 @@ Stub (non SSoT): `livewire-widget-conversion-inventory.md`, `advantages-filament
 | UX campagna | [livewire-widget-ux.md](./livewire-widget-ux.md) |
 | Brainstorm campagna | [livewire-widget-brainstorming.md](./livewire-widget-brainstorming.md) |
 | Inventario | [livewire-inventory.md](./livewire-inventory.md) |
+| Mappa hook provider | [livewire-widget-admin-panel-provider.md](./livewire-widget-admin-panel-provider.md) |
+| Vantaggi widget-only (modulo) | [advantages-filament-only.md](./advantages-filament-only.md) |
 | Decisioni | [decision-log.md](./decision-log.md) |
 | Mappa epic | [epics.md](./epics.md) |
 
