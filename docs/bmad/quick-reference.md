@@ -48,6 +48,10 @@ bmad-code-review          # Review
 | Amelia (dev) | `skill: "bmad-agent-dev"` | implementazione login |
 | Quinn (qa) | `skill: "bmad-agent-qa"` | test sicurezza |
 
+## Slice SuperAdmin widget (2026-09-21)
+
+Canon: [bmad/README.md](README.md) sezione «Slice vigente». Tech spec hook: [tech-spec.md](tech-spec.md).
+
 ## Quick Flow
 
 ```bash
