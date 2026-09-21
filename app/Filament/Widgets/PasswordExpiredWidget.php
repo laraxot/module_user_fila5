@@ -15,26 +15,22 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Http\Response\PasswordResetResponse;
-use Modules\User\Models\User;
 use Modules\User\Rules\CheckOtpExpiredRule;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Filament\Traits\TransTrait;
+use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
  * Widget for handling expired password reset.
  *
- * @property Schema                    $form
- * @property string|null               $current_password
- * @property string|null               $password
- * @property string|null               $passwordConfirmation
+ * @property Schema $form
+ * @property string|null $current_password
+ * @property string|null $password
+ * @property string|null $passwordConfirmation
  * @property array<string, mixed>|null $data
  */
 class PasswordExpiredWidget extends XotBaseSchemaWidget
 {
-    // XotBaseWidget already implements HasForms and uses InteractsWithForms
-    use TransTrait;
-
     public ?string $current_password = '';
 
     public ?string $password = '';
@@ -122,7 +118,7 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
         $user->setAttribute('password', Hash::make($newPassword));
         $user->save();
 
-        return new PasswordResetResponse();
+        return new PasswordResetResponse;
     }
 
     /**
@@ -132,7 +128,7 @@ class PasswordExpiredWidget extends XotBaseSchemaWidget
     {
         $authUser = Filament::auth()->user();
 
-        if ($authUser instanceof User) {
+        if ($authUser instanceof UserContract) {
             return TextInput::make('current_password')
                 ->password()
                 ->revealable()

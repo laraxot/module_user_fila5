@@ -1,12 +1,11 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\User\Filament\Widgets\Profile\SuperAdminWidget;
 use Modules\User\Tests\TestCase;
-use Modules\Xot\Actions\View\GetViewByClassAction;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use PHPUnit\Framework\Assert;
+use function Safe\file_get_contents;
 
 uses(TestCase::class);
 
@@ -34,9 +33,22 @@ describe('SuperAdminWidget', function (): void {
         Assert::assertSame(0, $reflection->getNumberOfParameters());
     });
 
-    test('resolves to the user module filament view, not pub_theme', function (): void {
-        $view = app(GetViewByClassAction::class)->execute(SuperAdminWidget::class);
+    test('resolves to the super-admin-toggle view actually used by render()', function (): void {
+        $reflection = new ReflectionProperty(SuperAdminWidget::class, 'view');
+        $reflection->setAccessible(true);
+        $instance = (new ReflectionClass(SuperAdminWidget::class))->newInstanceWithoutConstructor();
 
-        Assert::assertSame('user::filament.widgets.profile.super-admin', $view);
+        $view = $reflection->getValue($instance);
+
+        Assert::assertSame('user::filament.widgets.profile.super-admin-toggle', $view);
+    });
+
+    test('super-admin-toggle view uses filament icon-button with auto-registered blade icons', function (): void {
+        $path = module_path('User', 'resources/views/filament/widgets/profile/super-admin-toggle.blade.php');
+        $contents = file_get_contents($path);
+
+        Assert::assertStringContainsString('x-filament::icon-button', $contents);
+        Assert::assertStringContainsString('icon="user-superadmin"', $contents);
+        Assert::assertStringContainsString('icon="user-negate-superadmin"', $contents);
     });
 });

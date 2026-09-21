@@ -15,6 +15,24 @@ related:
 
 # Decision log — SuperAdmin Livewire → Filament widget
 
+## [2026-09-21] Icone Filament = set auto-registrato `user-`
+
+**Decision:** `x-filament::icon-button` con `user-superadmin` / `user-negate-superadmin`. I nomi senza prefisso (`super-admin`) cercano il set default e non esistono. Vista `super-admin-toggle`.
+
+**Rationale:** [Filament 5 icons](https://filamentphp.com/docs/5.x/styling/icons) + [icon-button](https://filamentphp.com/docs/5.x/components/icon-button). Il modulo già registra `resources/svg` con prefisso `user`.
+
+## [2026-09-21] Emblema hero outline, non corona ruotata
+
+**Decision:** il toggle SuperAdmin usa due SVG originali outline (`user-super-admin` / `user-negate-super-admin`): scudo a goccia, anello-nucleo, fulmine. Attivo = nucleo acceso + flare; negato = stesso scudo spento + barra. Animazione CSS dentro la SVG, spenta con `prefers-reduced-motion`. Vista `super-admin-hero` perché i nomi `@svg('user::svg…')` non esistono nel set Blade Icons (`prefix-filename`).
+
+**Rationale:** privilegio elevato = emblema da supereroe, non un pezzo degli scacchi né un logo registrato. Outline + `currentColor` resta chrome Filament. Il moto è ambientale (respiro), non un loader.
+
+## [2026-09-21] Due icone distinte, non re ruotato
+
+**Decision:** il toggle SuperAdmin nel user menu usa due SVG di dominio già nel modulo (`user-superadmin` corona / `user-negate-superadmin` corona barrata), colori Filament `warning` / `danger`. Si abbandona `fas-chess-king` + `rotate-180`.
+
+**Rationale:** lo stesso glifo ruotato è un rebus, non uno stato. Il re degli scacchi è un pezzo di gioco; il ruolo è privilegio elevato vs privilegio revocato. La corona è il metaforo giusto; la barra è il “no” universale. Le SVG esistevano già inutilizzate: DRY. Il marcatore di test passa da `rotate-180` a `data-super-admin-state`. FR-001 e [ux-design.md](./ux-design.md) aggiornati; trait e hook invariati.
+
 ## [2026-09-21] Track Quick Flow
 
 **Decision:** questo slice è Quick Flow (4 story, un epic). Si producono comunque brief, PRD, architecture, UX, tech-spec perché l’utente ha chiesto il pacchetto BMAD completo, restando su scope piccolo.

@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 namespace Modules\User\Models\Models;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;

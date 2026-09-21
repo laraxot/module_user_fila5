@@ -21,7 +21,6 @@ related:
 
 ---
 
-- 2026-09-21: riconciliazione analisi parallele (docs) — tre pacchetti BMAD + due `10.1` + Epic 11. Canone [bmad/livewire-inventory.md](../bmad/livewire-inventory.md). Gap: `SocialLoginWidget` usa route FO. Nessun PHP.
 - 2026-09-21: BMAD Epic 9 (docs only, **nessun PHP**) — conversione SuperAdmin Livewire → `XotBaseWidget` + hook `AdminPanelProvider`. Canon: [bmad/README.md](../bmad/README.md), spec provider: [bmad/tech-spec.md](../bmad/tech-spec.md), story [9.2](../stories/9.2.admin-panel-provider-hook.story.md).
 - 2026-09-21: runtime `/admin` — `No hint path defined for [filament-jet]`: SuperAdmin e gemelli Livewire usano `user::` (viste nel modulo). FilamentJet non è una dipendenza. Doc: [filament_errors.md](../filament_errors.md).
 - 2026-07-27: runtime config — `permission.php` `table_names` immutabili (`model_has_role` singolare); eliminata migrazione errata `create_model_has_roles_table`; canon `create_model_has_role_table` + `ModelHasRole::getTable()`; profiles unica migrazione con `convertIdFromUuidToBigintIfNeeded()`. Doc: [bugfix-permission-table-names-singular](../bugfix-permission-table-names-singular.md), [profile-id-bigint-uuid-fix](./concepts/profile-id-bigint-uuid-fix.md), hub temi [runtime-config-religion-hub](../../../../Themes/docs/shared-components/runtime-config-religion-hub.md).

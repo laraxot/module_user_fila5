@@ -11,7 +11,7 @@ related:
 
 # UX: stesso chrome, contenitore giusto
 
-Lo slice SuperAdmin (icona re) resta in [ux-design.md](./ux-design.md). Qui gli altri pezzi visibili.
+Lo slice SuperAdmin (icona corona) resta in [ux-design.md](./ux-design.md). Qui gli altri pezzi visibili.
 
 ## Principio
 

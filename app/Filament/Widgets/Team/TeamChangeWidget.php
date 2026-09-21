@@ -6,11 +6,10 @@ namespace Modules\User\Filament\Widgets\Team;
 
 use Filament\Facades\Filament;
 use Filament\Notifications\Notification;
-use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Routing\Redirector;
 use Illuminate\View\View;
 use InvalidArgumentException;
+use Livewire\Features\SupportRedirects\Redirector;
 use Modules\User\Contracts\HasTeamsContract;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Events\TeamSwitched;
@@ -30,6 +29,7 @@ class TeamChangeWidget extends XotBaseWidget
 
     protected string $view = 'user::filament.widgets.team.change';
 
+    /** @var list<array{id: int|string, name: string}> */
     public array $teams = [];
 
     public UserContract $user;
@@ -47,15 +47,33 @@ class TeamChangeWidget extends XotBaseWidget
         $teams = [];
         foreach ($authUser->allTeams() as $team) {
             Assert::isInstanceOf($team, TeamContract::class);
-            $teams[] = $team->toArray();
+            $id = $team->getKey();
+            if (! is_int($id) && ! is_string($id)) {
+                continue;
+            }
+            Assert::stringNotEmpty($team->name);
+            $teams[] = [
+                'id' => $id,
+                'name' => $team->name,
+            ];
         }
         $this->teams = $teams;
     }
 
     /**
      * Aggiorna il team corrente dell'utente autenticato.
+     *
+     * Il parametro e' `int|string`, non solo `int`: il docblock di
+     * `Modules\User\Models\Team` dichiara `@property string $id` (UUID), ma sulla
+     * connessione `user` di questo ambiente la colonna reale e' un intero
+     * auto-increment (verificato a runtime, non a memoria — drift schema/docblock
+     * pre-esistente, fuori scope da correggere qui). Stesso tipo di
+     * `Model::getKey(): int|string` e coerente con l'array `$teams` popolato in
+     * `mount()`. Il binding Livewire da `wire:click="switchTeam('...')"` (vista,
+     * valore quotato) arriva sempre come stringa: essendo l'unione compatibile,
+     * nessuna coercizione silenziosa e' necessaria in nessuno dei due scenari di PK.
      */
-    public function switchTeam(int $teamId): Application|RedirectResponse|Redirector
+    public function switchTeam(int|string $teamId): RedirectResponse|Redirector
     {
         $teamClass = XotData::make()->getTeamClass();
         $team = $teamClass::firstWhere(['id' => $teamId]);
@@ -82,7 +100,7 @@ class TeamChangeWidget extends XotBaseWidget
         /** @var view-string $viewName */
         $viewName = 'user::filament.widgets.team.change';
 
-        if ([] === $this->teams) {
+        if ($this->teams === []) {
             $viewName = 'ui::livewire.empty';
         }
 

@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -46,7 +45,7 @@ it('has valid php syntax in user migrations', function (): void {
 
         exec('php -l '.escapeshellarg($migrationFile), $output, $exitCode);
         /** @var list<string> $output */
-        $outputLines = array_map(static fn (mixed $line): string => (string) $line, $output);
+        $outputLines = array_map(static fn (string $line): string => $line, $output);
         Assert::assertSame(0, $exitCode, implode(PHP_EOL, $outputLines));
     }
 });

@@ -1,9 +1,5 @@
 <?php
 
-/**
- * ---.
- */
-
 declare(strict_types=1);
 
 namespace Modules\User\Providers\Filament;
@@ -28,33 +24,17 @@ class AdminPanelProvider extends XotBasePanelProvider
 
         FilamentView::registerRenderHook(
             PanelsRenderHook::AUTH_LOGIN_FORM_AFTER,
-            static fn (): string => Blade::render("@livewire('" . SocialLoginWidget::class . "')"),
-        );
-
-        /*-- moved into Gdpr
-         * FilamentView::registerRenderHook(
-         * PanelsRenderHook::AUTH_LOGIN_FORM_AFTER,
-         * fn (): string => Blade::render('@livewire(\'terms-of-service\')'),
-         * );
-         */
-
-        /* -- moved into Notify
-         * DatabaseNotifications::trigger('notifications.database-notifications-trigger');
-         * FilamentView::registerRenderHook(
-         * PanelsRenderHook::USER_MENU_BEFORE,
-         * fn (): string => Blade::render('@livewire(\'database-notifications\')'),
-         * );
-         * //*/
-
-        FilamentView::registerRenderHook(
-            PanelsRenderHook::USER_MENU_BEFORE,
-            static fn (): string => Blade::render("@livewire('" . TeamChangeWidget::class . "')"),
+            static fn (): string => Blade::render("@livewire('".SocialLoginWidget::class."')"),
         );
 
         FilamentView::registerRenderHook(
             PanelsRenderHook::USER_MENU_BEFORE,
-            // static fn (): string => View::make('user::badges.super-admin')->render(),
-            static fn (): string => Blade::render("@livewire('" . SuperAdminWidget::class . "')"),
+            static fn (): string => Blade::render("@livewire('".TeamChangeWidget::class."')"),
+        );
+
+        FilamentView::registerRenderHook(
+            PanelsRenderHook::USER_MENU_BEFORE,
+            static fn (): string => Blade::render("@livewire('".SuperAdminWidget::class."')"),
         );
 
         return $panel;

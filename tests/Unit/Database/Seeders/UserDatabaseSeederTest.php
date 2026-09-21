@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\User\Database\Seeders\UserDatabaseSeeder;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
@@ -14,7 +13,7 @@ uses(TestCase::class);
  * @covers \Modules\User\Database\Seeders\UserDatabaseSeeder
  */
 it('runs UserDatabaseSeeder successfully', function (): void {
-    $seeder = new UserDatabaseSeeder();
+    $seeder = new UserDatabaseSeeder;
     $seeder->setContainer(app());
 
     $seeder->run();
@@ -26,7 +25,7 @@ it('runs UserDatabaseSeeder successfully', function (): void {
 });
 
 it('gives super-admin role all permissions after seeding', function (): void {
-    $seeder = new UserDatabaseSeeder();
+    $seeder = new UserDatabaseSeeder;
     $seeder->setContainer(app());
 
     $seeder->run();
