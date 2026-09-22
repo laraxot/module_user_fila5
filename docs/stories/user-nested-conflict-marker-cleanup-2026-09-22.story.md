@@ -171,5 +171,4 @@ era gia' nel log da minuti. Vedi `docs/coverage.md`.
 (fuori scope, vedi sezione dedicata sopra) — push semplice tentato comunque per i
 commit di questa sessione, vedi risultato sotto.
 
-**Commit e push**: vedi `git log` del modulo per l'hash effettivo (creato subito
-dopo questa nota, stesso commit).
+**Commit e push**: commit `6635376b` (locale, dev). Push a `laraxot` **rifiutato** (non-fast-forward): `laraxot/dev` behind 80 / ahead 59 rispetto a `dev` locale dopo il fetch. Nessun force-push, nessun pull/rebase tentato (fuori scope sicurezza, vedi sezione divergenza sopra) — commit resta locale, in attesa di reconciliation dedicata.
