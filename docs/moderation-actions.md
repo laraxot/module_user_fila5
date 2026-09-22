@@ -11,7 +11,6 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
->>>>>>> 87273113 (.)
 ---
 # Azioni di Moderazione (Action class)
 

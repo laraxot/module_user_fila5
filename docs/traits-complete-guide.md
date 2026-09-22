@@ -122,5 +122,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/traits-complete-guide.md
->>>>>>> 2024e2e7 (.)
->>>>>>> 87273113 (.)

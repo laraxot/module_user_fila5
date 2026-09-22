@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/troubleshooting.md
->>>>>>> 87273113 (.)

@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Factory Creation Status - User Module
 
 ## ERRORE GRAVISSIMO IDENTIFICATO E RISOLUZIONE IN CORSO
@@ -118,7 +117,6 @@ Questo errore è **GRAVISSIMO** perché:
 ## COLLEGAMENTI
 
 - [Factory Audit Complete Analysis](../../../../docs/project/factory-audit-complete-analysis.md)
->>>>>>> 87273113 (.)
 - [User Module README](./readme.md)
 - [Factory PHPStan Fixes](./phpstan/factory-fixes.md)
 - [Database Documentation](./database/readme.md)
@@ -132,4 +130,3 @@ Questo errore è **GRAVISSIMO** perché:
 5. ⏳ Documentare pattern e best practice
 
 *Creato: [DATE]*
->>>>>>> 87273113 (.)

@@ -14,7 +14,6 @@ related:
   - "./readme.md"
 ---
 
->>>>>>> 87273113 (.)
 # ChangePasswordCommand
 
 ## Panoramica
@@ -380,6 +379,3 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - ✅ **Interfaccia Console**: Input interattivo
 - ✅ **Gestione Password**: Hash e scadenza
 - ✅ **Eventi**: Dispatched NewPasswordSet
-
->>>>>>> 87273113 (.)
-

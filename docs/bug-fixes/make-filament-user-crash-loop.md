@@ -17,7 +17,6 @@ related:
   - "./parse-orphan-methods.md"
 ---
 
->>>>>>> 87273113 (.)
 # Bug Fix: Crash durante creazione utenti con make:filament-user
 
 ## 🐛 Problema Identificato
@@ -295,7 +294,6 @@ class CreateTenantUserCommand extends Command
 
 - [../../../../docs/modules/user/README.md](../../../../docs/modules/user/readme.md) - Panoramica modulo User
 - [../../../../docs/architecture/multi-tenancy.md](../../../../docs/architecture/multi-tenancy.md) - Architettura globale
->>>>>>> 87273113 (.)
 
 ## 🎓 Lezioni Apprese
 

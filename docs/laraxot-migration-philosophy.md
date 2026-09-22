@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Filosofia, Religione e Politica di Laraxot: Regole di Migrazione
 
 ## Regola Fondamentale: Una Tabella = Una Migration per Modulo
@@ -57,7 +56,6 @@ La migration è stata modificata per **estendere** la tabella `roles` esistente 
 4. **Controllo indici**: Verificare l'esistenza degli indici prima di crearli
 5. **Rollback sicuro**: Rimuovere solo le colonne aggiunte, non quelle originali
 6. **Modifiche schema**: Modificare la **stessa** migrazione esistente e aggiornare il **timestamp** nel nome file (NON creare `add_column_to_table.php` separate)
->>>>>>> 87273113 (.)
 
 ## Principi Laraxot Rispettati
 

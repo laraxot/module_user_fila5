@@ -22,7 +22,6 @@ related:
 
 ## Panoramica
 Il sistema di autenticazione in <nome progetto> è basato su Laravel Volt e supporta sia l'autenticazione tradizionale che quella sociale.
->>>>>>> 87273113 (.)
 
 ## Configurazione
 
@@ -150,4 +149,3 @@ Route::middleware('guest')->group(function () {
 
 ### Logout con Volt e Folio
 Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/modules/user/project_docs/volt-folio-logout-error-3.md). 
->>>>>>> 87273113 (.)

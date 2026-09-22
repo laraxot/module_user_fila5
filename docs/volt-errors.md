@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Errori Comuni in Volt e Soluzioni
 
 ## VoltDirectiveMissingException
@@ -207,4 +206,3 @@ class LogoutPage
 - [Best Practices Filament](../filament_best_practices.md)
 - [Routing Best Practices](../ROUTING_BEST_PRACTICES.md) 
 - [Routing Best Practices](../routing-best-practices-2.md) 
->>>>>>> 87273113 (.)

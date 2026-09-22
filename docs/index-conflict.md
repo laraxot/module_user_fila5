@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # User Module Documentation
 
 ## Overview
@@ -72,7 +71,6 @@ This document serves as the central index for the User module, providing guidanc
 - [Profile Management](./profile-management-2.md)
 - [Routing Best Practices](./routing-best-practices-2.md)
 - [Session Management](./session-management-2.md)
->>>>>>> 87273113 (.)
 
 ## Sottocartelle
 
@@ -89,8 +87,6 @@ This document serves as the central index for the User module, providing guidanc
 
 ## Note sulla Manutenzione
 Questa documentazione viene aggiornata regolarmente. Prima di apportare modifiche al codice, consultare la documentazione pertinente e aggiornare i documenti correlati.
-
->>>>>>> 87273113 (.)
 
 # Indice Documentazione User
 

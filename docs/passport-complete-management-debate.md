@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-complete-management-debate.md
->>>>>>> 87273113 (.)

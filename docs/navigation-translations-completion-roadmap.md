@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/navigation-translations-completion-roadmap.md
->>>>>>> 87273113 (.)

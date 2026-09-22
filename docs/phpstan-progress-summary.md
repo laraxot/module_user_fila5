@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-progress-summary.md
->>>>>>> 87273113 (.)

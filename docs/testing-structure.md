@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Struttura dei Tests del Modulo User
 
 ## Panoramica
@@ -308,14 +307,7 @@ dump($variable);
 
 - [README Modulo User](../readme.md)
 - [Best Practices Testing](../../../../docs/project/testing-best-practices.md)
->>>>>>> 87273113 (.)
 - [Architettura Modulo User](../architecture/readme.md)
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
 ---
-
->>>>>>> 87273113 (.)
-
-
-
-
