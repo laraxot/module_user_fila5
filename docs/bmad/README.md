@@ -57,6 +57,7 @@ Handoff SuperAdmin: 9.1 → 9.2 → 9.3; 9.4 dopo 9.2.
 
 Handoff provider: 9.2 → 10.1 → 10.2. 10.3 può parallellizzare sui file auth.
 
+<<<<<<< HEAD
 ## Campagna aggiuntiva — module-excellence (Epic 12-14)
 
 **Scope whole-module (non solo widget)**: documentazione, qualità codice/test,
@@ -98,6 +99,8 @@ codice/architettura, performance, test, schema/migrazioni, bonifica docs).
 | Story Epic 11 (complete) | [docs/stories/](../stories/) prefisso `11.` (dash-separated) |
 
 
+=======
+>>>>>>> laraxot/dev
 ## Scopo BMAD per User
 
 User è il **modulo identità** che garantisce autenticazione, autorizzazione e multi-tenancy. In BMAD, questo modulo rappresenta il **core della sicurezza** su cui tutti gli altri moduli fanno affidamento.
