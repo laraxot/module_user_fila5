@@ -172,3 +172,52 @@ era gia' nel log da minuti. Vedi `docs/coverage.md`.
 commit di questa sessione, vedi risultato sotto.
 
 **Commit e push**: commit `6635376b` (locale, dev). Push a `laraxot` **rifiutato** (non-fast-forward): `laraxot/dev` behind 80 / ahead 59 rispetto a `dev` locale dopo il fetch. Nessun force-push, nessun pull/rebase tentato (fuori scope sicurezza, vedi sezione divergenza sopra) — commit resta locale, in attesa di reconciliation dedicata.
+
+## Addendum — riconciliazione divergenza completata (2026-09-22, stessa giornata)
+
+Dopo il push rifiutato riportato sopra (`ahead 59, behind 80`), la divergenza e'
+stata riconciliata in un secondo intervento nella stessa sessione:
+
+- `git fetch laraxot` → `ahead 60, behind 80`.
+- Primo tentativo `git rebase laraxot/dev`: **abortito** (`git rebase --abort`).
+  Conflitti massicci su decine di file in `tests/Unit/**` a partire dal primo commit
+  rigiocato (`33b23e02`) — il rebase replica ogni commit locale singolarmente contro
+  la nuova base, producendo conflitti molto piu' estesi del necessario dato che
+  locale e remoto hanno toccato in gran parte file disgiunti su commit diversi.
+  Nessun dato perso (branch di backup `backup-user-2026-09-22` gia' presente come
+  rete di sicurezza aggiuntiva).
+- Secondo tentativo `git merge --no-commit --no-ff laraxot/dev`: **trattabile**,
+  36 file in conflitto (un solo merge three-way tip-to-tip contro il merge-base
+  `0f61236`, non commit-per-commit).
+- Risoluzione dei 36 conflitti:
+  - `docs/coverage.md` (`UD` anomalo): diagnosticato come **falso conflitto da
+    rename-detection** — lo stage 1 (blob `04b5c440...`) non esiste ne' nel
+    merge-base ne' in `laraxot/dev` tip (verificato con `git cat-file -e` e
+    `git ls-tree -r` su entrambi), quindi e' un fantasma prodotto dall'euristica
+    di rename-pairing di `git merge`, non un vero conflitto di contenuto.
+    Risolto con `git add` (ours, gia' coincidente col working tree).
+  - `Application/UseCases/Owners/GetAllOwnersRelationshipUseCaseContract.php` e
+    `app/Filament/Widgets/LogoutWidget.php.corrected` (`DU`): cancellazione
+    confermata (vedi sopra + `docs/bmad/stories/uppercase-application-dir.story.md`),
+    risolti con `git rm`.
+  - `app/Http/Livewire/_components.json` (`UU` ma 0 marker): ours e theirs
+    identici a livello di contenuto (differiva solo il newline finale) — tenuto ours.
+  - `.gitignore` (`UU` ma 0 marker): verificato con `comm -23` che ours e' superset
+    esatto di theirs (nessuna riga persa) — tenuto ours.
+  - Restanti 29 file `UU`: tutti confermati con marker di conflitto reali lato
+    `laraxot/dev` (residuo daemon non ancora ripulito sul remoto) e 0 marker lato
+    `dev` (gia' pulito dal cleanup sopra) — risolti sistematicamente con
+    `git checkout --ours` dopo verifica puntuale del pattern su un campione
+    rappresentativo (`.github/contributing.md`, `docs/bmad/README.md`,
+    `docs/purpose.md`, `tests/Unit/Datas/UserDatasAndEnumsCoverageTest.php`,
+    `ModulesRelationManager.wip`).
+  - `git grep` post-merge: 0 marker reali residui in tutto l'albero (15 falsi
+    positivi in `resources/views/node_modules/**`, changelog di terze parti
+    preesistenti, non toccati).
+- Merge commit: `db4ea2a9` ("merge(user): riconcilia divergenza dev/laraxot-dev
+  (ahead 60/behind 80)"). Risultato: `ahead 61, behind 0`.
+- `git fetch laraxot` (ricontrollo pre-push, nessuna modifica remota nel frattempo)
+  → `git push laraxot dev`: **riuscito** (`ff41cfea..db4ea2a9 dev -> dev`).
+
+**Stato finale modulo User**: `dev` allineato a `laraxot/dev`, nessuna divergenza,
+nessun marker di conflitto residuo, working tree pulito.
