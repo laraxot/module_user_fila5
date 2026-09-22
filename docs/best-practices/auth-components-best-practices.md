@@ -18,7 +18,6 @@ related:
   - "./dependency.md"
 ---
 
->>>>>>> 87273113 (.)
 # Best Practices per i Componenti di Autenticazione 
 
 ## Collegamenti correlati

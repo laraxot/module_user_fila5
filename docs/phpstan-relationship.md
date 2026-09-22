@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-relationship-fix.md
->>>>>>> 87273113 (.)

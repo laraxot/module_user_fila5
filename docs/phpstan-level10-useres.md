@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # PHPStan Level 10 Fixes - User Module
 
 ## 📋 Riepilogo Intervento

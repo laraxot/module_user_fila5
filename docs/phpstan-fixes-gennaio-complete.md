@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # PHPStan Fixes Complete - Gennaio 2025
 
 ## Riepilogo

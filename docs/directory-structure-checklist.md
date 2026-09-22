@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Checklist per la Struttura delle Directory nei Moduli Windsurf/Xot
 
 ## Panoramica
@@ -71,7 +70,6 @@ Questo documento fornisce una checklist per verificare la corretta struttura del
 - ❌ `Modules/User/Database/Migrations/...` (PascalCase — usare `database/migrations/`)
 - ❌ `Modules/User/Events/UserRegistered.php` (manca app/)
 - ❌ `Modules/User/Listeners/AssignFreeCreditsListener.php` (manca app/)
->>>>>>> 87273113 (.)
 - ❌ `Modules/User/Http/Controllers/UserController.php` (manca app/)
 - ❌ `Modules/User/App/Http/Controllers/UserController.php` (App maiuscolo errato!)
 - ❌ Migration custom fuori dalla cartella del modulo (es: in laravel/database/migrations)
@@ -98,4 +96,3 @@ find Modules/User -type d -name "Resources" -o -name "Lang" -o -name "Config" -o
 - [module-root-folder-violations.md](./wiki/concepts/module-root-folder-violations.md) — violazioni attuali nel modulo User
 - [module-root-php-folders-forbidden.md](../../../../docs/wiki/rules/module-root-php-folders-forbidden.md) — regola wiki canonica
 - Consultare: `laravel/Modules/Xot/docs/module-directory-structure-rule.md`
->>>>>>> 87273113 (.)

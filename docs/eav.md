@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/eav.txt
->>>>>>> 87273113 (.)

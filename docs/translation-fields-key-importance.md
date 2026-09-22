@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Understanding Translation Structure in Laraxot Framework
 
 ## 2026-01-09 - Translation Key Analysis

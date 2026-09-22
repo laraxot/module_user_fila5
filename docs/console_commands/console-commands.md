@@ -13,4 +13,3 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/console-commands-philosophy.md
->>>>>>> 87273113 (.)

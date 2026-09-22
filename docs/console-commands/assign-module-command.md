@@ -14,7 +14,6 @@ related:
   - "./readme.md"
 ---
 
->>>>>>> 87273113 (.)
 # AssignModuleCommand - Gestione Moduli Utente
 
 ## Descrizione
@@ -172,7 +171,6 @@ Result: No changes made to user modules.
 
 ## Collegamenti
 - [Console Commands Philosophy](console-commands-philosophy.md)
->>>>>>> 87273113 (.)
 - [User Models](models/readme.md)
 - [Role Management](models/role-management.md)
 - [README.md](../readme.md)
@@ -185,5 +183,3 @@ Result: No changes made to user modules.
 - ✅ **Feedback Migliorato**: Messaggi chiari per assegnazioni e revoche
 - ✅ **Gestione Errori**: Controlli preventivi per utenti non trovati
 - ✅ **Documentazione**: Documentazione completa con esempi
-
->>>>>>> 87273113 (.)

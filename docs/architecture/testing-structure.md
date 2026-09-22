@@ -18,7 +18,6 @@ related:
   - "./user-gdpr-oupling.md"
 ---
 
->>>>>>> 87273113 (.)
 # Struttura dei Tests del Modulo User
 
 ## Panoramica
@@ -312,11 +311,3 @@ dump($variable);
 - [Factory e Seeder](../models/factory-seeder-status.md)
 
 ---
-
->>>>>>> 87273113 (.)
-
-
-
-
-
-

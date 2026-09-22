@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
@@ -26,7 +25,6 @@ related:
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)
->>>>>>> 87273113 (.)
 
 ## Panoramica
 
@@ -405,7 +403,6 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)
->>>>>>> 87273113 (.)
 
 ## Panoramica
 

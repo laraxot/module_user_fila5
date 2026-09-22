@@ -241,9 +241,6 @@ Claude Sonnet 5
      discussione con l'utente: il database sulla connessione `user`
      (dove vive `oauth_clients`, separata dal DB applicativo principale)
      potrebbe non essere stato ripristinato da un backup reale durante il
-<<<<<<< HEAD
-     trasloco server, a differenza del DB principale.
-=======
      trasloco server" — **falsa**. Verificato con una query diretta
      sull'ambiente di produzione: `Admin`, `ATS`, `Vivaservizi`, `smat`
      esistono tutti in `oauth_clients`, con date di creazione reali
@@ -349,7 +346,6 @@ Claude Sonnet 5
        esercitare il bottone/comando reale (stesso pattern di
        `ClientsRelationManagerAssociateTest.php`), o rimosso/rivisto se il
        suo scenario non ha più senso con la decisione presa.
->>>>>>> laraxot/dev
 
 ### File List
 

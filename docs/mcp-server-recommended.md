@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # MCP Server Consigliati per il Modulo User
 
 ## Scopo del Modulo
