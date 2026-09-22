@@ -120,6 +120,7 @@ related:
 **Verifica:** tinker — `getMorphClass()='user'`, `isSuperAdmin()=true`, widget renderizza `data-super-admin-state` (LEN 2293).
 
 **Rationale:** regola contract-pattern — i morph alias devono puntare alla classe canonica, non a superclassi. Il fix è nel punto singolo di costruzione della mappa, non per-callsite.
+<<<<<<< HEAD
 
 ## [2026-09-22] Campagna "module-excellence" additiva, non sovrascrittura
 
@@ -225,3 +226,5 @@ contro il gia'-superseded `11.1.team-change-widget.story.md` — entrambe
 generate e di competenza della sessione "perfection-", non di questa.
 Fonte: `bmad/perfection-decision-log.md` (letto integralmente prima di
 scrivere questa entry, per [[le-story-del-modulo-si-leggono-prima]]).
+=======
+>>>>>>> laraxot/dev
