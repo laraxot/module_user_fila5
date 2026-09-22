@@ -18,7 +18,6 @@ related:
   - "./user-gdpr-oupling.md"
 ---
 
->>>>>>> 87273113 (.)
 # Registrazione dei Componenti Blade nel Modulo User
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo User.

@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Correzioni PHPStan - Modulo User
 
 Questo documento traccia gli errori PHPStan identificati nel modulo User e le relative soluzioni implementate.

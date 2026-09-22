@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo

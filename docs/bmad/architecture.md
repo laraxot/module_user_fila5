@@ -1,104 +1,268 @@
----
-title: "Architecture — SuperAdmin user-menu widget"
-type: architecture
-module: User
-status: approved
-track: quick-flow
-source_prd: ./prd.md
-related:
-  - ./tech-spec.md
-  - ./decision-log.md
-  - ./ux-design.md
----
+# User Module Architecture (BMAD)
 
-# Architecture: SuperAdmin widget
+**Status**: ✅ Finalized
+**Last Update**: 2026-09-21
+**Scope**: Module User architecture documentation for perfection
 
-**Track:** Quick Flow  
-**PRD:** [prd.md](./prd.md)
+## 🏗️ System Overview
 
-## 1. Overview
+The User module is the **identity foundation** for the entire PTVX ecosystem. It provides authentication, authorization, user management, teams, and multi-tenancy through a well-layered architecture.
 
-Slice UI: spostare il toggle SuperAdmin dal namespace `Http\Livewire` al namespace `Filament\Widgets`, senza cambiare persistenza ruoli.
+## 📐 Architectural Layers
 
-**In:** widget, vista, hook provider, ritiro Livewire.  
-**Out:** RBAC seed, team switcher, auth FO.
+### Layer 1: Models (Data Foundation)
+**Location**: `app/Models/`
 
-**Driver:** NFR-SEC-001 (solo profilo corrente), FR-003 (un montaggio).
+**Core Models**:
+- `BaseUser` → `User`: STI-based user with authentication and authorization
+- `Profile`: Extended user profile with schemaless attributes
+- `Team`: Team collaboration with hierarchical permissions
+- `Tenant`: Multi-tenancy isolation
+- `Role`/`Permission`: RBAC via Spatie Permission
+- `AuthenticationLog`: Security audit trail
+- `Device`: User device tracking
+- `SocialProvider`: OAuth/Social login integration
+- `SsoProvider`: SSO integration
 
-## 2. Pattern
+**Pattern**: Eloquent models with global scopes for tenant/team isolation, UUID primary keys, timestamp auditing.
 
-Modular monolith Laraxot. UI admin = Filament. Widget = Livewire specializzato.
+### Layer 2: Actions (Business Logic)
+**Location**: `app/Actions/`
 
-**Scartato:** MenuItem Filament (no toggle); badge statico (no FR-002).
-
-## 3. ADR
-
-### ADR-001 — Hook, non dashboard
-
-`discoverWidgets` include ogni classe sotto `Filament/Widgets`. Il SuperAdmin non è un widget di pagina: `$isDiscovered = false` + montaggio esplicito su `USER_MENU_BEFORE`.
-
-### ADR-002 — Nessuna Action nuova
-
-`IsProfileTrait::toggleSuperAdmin()` resta SSoT. Il widget è adattatore UI.
-
-### ADR-003 — Vista modulo, non pub_theme
-
-Chrome panel ≠ login tema. Path: `user::filament.widgets.profile.super-admin`.
-
-### ADR-004 — Provider tocca un blocco
-
-`AdminPanelProvider` ha più hook. Solo il blocco SuperAdmin cambia FQCN. `team.change` invariato.
-
-## 4. Componenti
-
+**Action Categories**:
 ```
-AdminPanelProvider.panel()
-    └─ FilamentView::registerRenderHook(USER_MENU_BEFORE)
-           └─ @livewire(SuperAdminWidget::class)
-                  ├─ XotData::getProfileModel()
-                  ├─ ProfileContract::isSuperAdmin / isNegateSuperAdmin
-                  └─ ProfileContract::toggleSuperAdmin()  → Spatie roles
+app/Actions/
+├── Authentication/     # Login, logout, two-factor
+├── Authorization/      # Role/permission assignment
+├── UserManagement/     # Create, update, delete, activate
+├── TeamManagement/     # Team membership, invitations
+├── Socialite/          # OAuth flows
+├── Passport/           # OAuth2 client management
+├── Otp/               # One-time password logic
+└── Shield/            # Filament Shield configuration
 ```
 
-| Pezzo | Path | Ruolo |
-|-------|------|--------|
-| Provider | `app/Providers/Filament/AdminPanelProvider.php` | montaggio |
-| Widget | `app/Filament/Widgets/Profile/SuperAdminWidget.php` | UI + click |
-| Vista | `resources/views/filament/widgets/profile/super-admin.blade.php` | icon-button |
-| Trait | `app/Models/Traits/IsProfileTrait.php` | **non modificare** |
-| Livewire old | `app/Http/Livewire/Profile/SuperAdmin.php` | da eliminare in 9.3 |
+**Pattern**: All business logic implemented as Queueable Actions with `->execute()` method, following Xot conventions.
 
-## 5. Data model
+### Layer 3: Traits (Reusable Behaviors)
+**Location**: `app/Models/Traits/`
 
-Nessuna tabella nuova. Ruoli esistenti `roles` / `model_has_role` (nome singolare del progetto).
+**Trait Hierarchy**:
+```
+HasAuthenticationLogTrait → Authentication event tracking
+HasDevices → Device management
+HasSocialite → OAuth integration
+HasSpatiePermission → Role/permission handling
+HasTeams → Team management
+HasTenants → Multi-tenancy
+HasPasswordExpiry → Password lifecycle
+HasModules → Module access control
+```
 
-## 6. API
+**Pattern**: Traits compose complex behaviors without inheritance coupling.
 
-Nessuna. Solo Livewire method `toggleSuperAdmin` sul widget.
+### Layer 4: Filament Resources (Admin UI)
+**Location**: `app/Filament/Resources/`
 
-## 7. FR coverage
+**Resource Structure**:
+```
+app/Filament/Resources/
+├── UserResource         # Main user CRUD
+├── TeamResource         # Team management
+├── RoleResource         # Role configuration
+├── PermissionResource   # Permission setup
+├── TenantResource       # Tenant management
+├── AuthenticationLogResource  # Security audit
+├── DeviceResource       # Device management
+└── ...                  # Supporting resources
+```
 
-| FR | Dove |
-|----|------|
-| FR-001 | vista + getViewData |
-| FR-002 | metodo widget → trait |
-| FR-003 | AdminPanelProvider |
-| FR-004 | delete Livewire |
-| FR-005 | lang |
-| FR-006 | `$isDiscovered = false` |
+**Pattern**: Each resource extends `XotBaseResource` with consistent patterns for listing, creating, editing, and viewing records.
 
-## 8. Stack
+### Layer 5: Widgets & Pages (UI Components)
+**Location**: `app/Filament/Widgets/` and `app/Filament/Pages/`
 
-Laravel 12/13 panel, Filament 5, Livewire 4, Spatie permission, XotBaseWidget.
+**Widget Types**:
+- **Auth Widgets**: Login, Register, ForgotPassword, PasswordReset
+- **Profile Widgets**: EditUser, Profile, SuperAdmin
+- **Dashboard Widgets**: UsersChart, SecurityAlerts, LoginWidget
+- **Team Widgets**: TeamChange
 
-## 9. Trade-off
+**Page Types**:
+- **Auth Pages**: Login, Register, PasswordExpired, EditProfile
+- **Admin Pages**: Dashboard, SocialiteProviderSettings
+- **Tenancy Pages**: RegisterTeam, RegisterTenant, EditTeamProfile, EditTenantProfile
 
-Widget scoperto vs hook: discovery è comoda per i KPI, dannosa qui. Costo: una proprietà statica. Beneficio: dashboard pulita.
+**Pattern**: Widgets extend `XotBaseWidget` with consistent form handling and event listening.
 
-## 10. Deploy
+## 🔗 Dependency Graph
 
-Nessuna migrazione. `view:clear` dopo lo switch. Nessun env nuovo.
+```
+User Module
+├── Depends On:
+│   ├── Xot (BaseModel, BaseResource, traits)
+│   ├── Spatie Permission (RBAC)
+│   ├── Laravel Passport (OAuth2)
+│   ├── Filament v5 (Admin UI)
+│   └── Socialiteproviders (OAuth providers)
+│
+├── Consumed By:
+│   ├── Activity (User activity tracking)
+│   ├── Notify (Notifications)
+│   ├── Tenant (Enhanced tenancy)
+│   ├── Lang (Translations)
+│   ├── Performance (User metrics)
+│   └── UI (Interface components)
+│
+└── Used By: 16+ modules (Activity, Notify, Tenant, Lang, etc.)
+```
 
-## 11. Future
+## 📊 Data Flow Architecture
 
-Stesso pattern per `team.change` e social: Epic 10, [livewire-widget-architecture.md](./livewire-widget-architecture.md). Non accoppiarli allo slice SuperAdmin (ADR-004).
+### User Lifecycle
+```
+Registration → Validation → User Creation → Profile Creation
+                                              → Default Role Assignment
+                                              → Welcome Email
+                                              → Activity Log
+```
+
+### Authentication Flow
+```
+Login Request → Validation → Credential Check → 2FA Challenge (if enabled)
+                                              → Session Creation
+                                              → Authentication Log
+                                              → Token Generation
+```
+
+### Team/Hierarchy Flow
+```
+Team Creation → Owner Assignment → Member Invitation
+                                    → Role Assignment
+                                    → Permission Inheritance
+                                    → Activity Tracking
+```
+
+## 🔒 Security Architecture
+
+### Authentication Layers
+1. **Primary**: Username/password with bcrypt
+2. **Secondary**: OAuth/Social login (Google, Facebook, GitHub, Microsoft)
+3. **Tertiary**: SSO integration via SAML/OAuth
+4. **Quaternary**: 2FA (TOTP) for enhanced security
+
+### Authorization Matrix
+```
+Role-Based Access Control (RBAC)
+├── Super Admin → Full system access
+├── Admin → Module administration
+├── HR Manager → User management within scope
+└── User → Basic profile access
+
+Team-Based Permissions
+├── Team Owner → Full team control
+├── Team Admin → Team member management
+└── Team Member → Limited team access
+
+Tenant Isolation
+├── Tenant Admin → Full tenant management
+├── Tenant User → Limited tenant access
+└── Cross-Tenant → Controlled by super-admin policies
+```
+
+### Security Features
+- **Rate Limiting**: Login attempt throttling
+- **Account Lockout**: After repeated failed attempts
+- **Session Management**: Secure session handling with device tracking
+- **Token Expiration**: Automatic token revocation
+- **Audit Logging**: Complete authentication trail
+- **Password Policies**: Configurable expiration and complexity
+
+## ⚙️ Configuration Architecture
+
+### Core Configuration Files
+- `config/user.php`: Module-level settings
+- `config/passport.php`: OAuth2 configuration
+- `config/socialite.php`: OAuth provider settings
+- `config/social-providers.php`: Provider-specific settings
+- `config/password.php`: Password reset settings
+
+### Environment Variables
+- `USER_AUTH_TIMEOUT`: Authentication timeout
+- `USER_2FA_ENABLED`: Two-factor authentication toggle
+- `USER_TEAM_LIMIT`: Maximum teams per user
+- `USER_TENANT_MODE`: Isolation level (none/soft/hard)
+
+## 🎨 UI/UX Architecture
+
+### Filament Panel Integration
+- **Main Panel**: `Modules\User\Providers\Filament\AdminPanelProvider`
+- **Navigation**: Automatic discovery of resources, pages, widgets
+- **Theming**: Consistent branding and layout
+- **Responsive**: Mobile-first design patterns
+
+### Widget Architecture
+```php
+class FirmaValutatoreWidget extends XotBaseWidget
+{
+    public ?string $valutatore_id = '';
+    public ?string $anno = '';
+    public ?array $filters = null;
+
+    // Visibility controlled by filters
+    public function visible(): bool
+    {
+        return $this->filters['valutatore_id'] !== null;
+    }
+}
+```
+
+## 🔄 Integration Patterns
+
+### API Integration
+- **Sanctum Tokens**: For external API authentication
+- **Passport Clients**: For OAuth2 server-side integration
+- **Socialite**: For social login flows
+- **SSO Providers**: For enterprise SSO
+
+### Event-Driven Architecture
+```php
+// Domain Events
+UserCreated, UserLoggedIn, UserLoggedOut,
+RoleAssigned, PermissionRevoked, TeamCreated,
+TenantAssigned, DeviceRegistered, PasswordChanged
+
+// Event Listeners
+ActivityLogger, NotificationSender, AuditLogger,
+TokenRevoker, SessionCleaner
+```
+
+## 📈 Scalability Patterns
+
+### Database Scaling
+- **Connection Isolation**: Separate 'user' connection
+- **Read Replicas**: Distributed read queries
+- **Sharding**: Future multi-database support
+- **Caching**: Redis-based caching layers
+
+### Performance Optimization
+- **Lazy Loading**: Deferred relationship loading
+- **Eager Loading**: Strategic preloading for lists
+- **Query Optimization**: Composite indexes and selective columns
+- **Pagination**: Efficient large dataset handling
+
+## 🎯 Architectural Principles
+
+1. **Separation of Concerns**: Clear boundaries between layers
+2. **Composition over Inheritance**: Trait-based behavior composition
+3. **Convention over Configuration**: Consistent patterns across module
+4. **Security by Default**: Secure defaults and explicit overrides
+5. **Performance by Design**: Optimized from the start
+6. **Extensibility First**: Designed for growth and modification
+7. **Testability**: Architecture supports comprehensive testing
+8. **Documentation-driven**: Self-documenting code and clear patterns
+
+---
+
+*Architecture documentation based on BMAD methodology*  
+*Last verified: 2026-09-21*

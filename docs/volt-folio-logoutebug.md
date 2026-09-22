@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Debug: Perché logout.blade.php non funziona (Volt + Folio)
 
 ## Analisi del problema

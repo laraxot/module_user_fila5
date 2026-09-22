@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/file-naming-rules.md
->>>>>>> 87273113 (.)

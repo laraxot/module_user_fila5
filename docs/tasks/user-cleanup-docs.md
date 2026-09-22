@@ -18,7 +18,6 @@ related:
   - "./spostamento-widget-violante.md"
 ---
 
->>>>>>> 87273113 (.)
 # Task: User Docs Cleanup
 
 ## 📋 Obiettivo

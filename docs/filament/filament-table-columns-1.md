@@ -18,7 +18,6 @@ related:
   - "./widgets-responsive-layout.md"
 ---
 
->>>>>>> 87273113 (.)
 # Convenzione Metodo getTableColumns per Filament Table
 
 ## Motivazione della Modifica
@@ -54,7 +53,6 @@ public function getTableColumns(): array
 ## Collegamenti
 - [Regola Generale - Modulo Xot](../../../xot/docs/filament-table-columns-2.md)
 - [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
->>>>>>> 87273113 (.)
 
 ---
 

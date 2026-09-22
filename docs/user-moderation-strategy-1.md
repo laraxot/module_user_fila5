@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/user-moderation-strategy-1.md
->>>>>>> 87273113 (.)

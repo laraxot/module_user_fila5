@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-city-field-refactor-conflict.md
->>>>>>> 87273113 (.)

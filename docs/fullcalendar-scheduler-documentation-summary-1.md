@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # FullCalendar Scheduler - Documentazione Completa
 
 ## Panoramica
@@ -54,7 +53,6 @@ Documentazione base esistente per:
 - Problemi comuni basilari
 
 #### 4. [Scheduler License Key](./scheduler-license-key-2.md)
->>>>>>> 87273113 (.)
 Guida rapida esistente per:
 - Uso base delle chiavi licenza
 - Problemi di formato chiavi

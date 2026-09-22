@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Analisi Approfondita dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati
@@ -28,7 +27,6 @@ related:
 - [Implementazione Logout](logout-blade-implementation-2.md)
 - [Analisi Logout](logout-blade-analysis-3.md)
 - [Conclusioni Logout](logout-blade-conclusions-2.md)
->>>>>>> 87273113 (.)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Errore Fondamentale Identificato
@@ -141,7 +139,6 @@ Questi errori evidenziano l'importanza di:
 - [Implementazione Logout](logout-blade-implementation-2.md)
 - [Analisi Logout](logout-blade-analysis-3.md)
 - [Conclusioni Logout](logout-blade-conclusions-2.md)
->>>>>>> 87273113 (.)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Errore Fondamentale Identificato

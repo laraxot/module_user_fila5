@@ -18,10 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
-
-
-
 [[DATE] 21:05:06] `Modules/User/app`
 
                                                                                                     

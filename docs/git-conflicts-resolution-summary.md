@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Risoluzione Conflitti Git - Modulo User
 
 ## Data Risoluzione
@@ -57,7 +56,6 @@ related:
 - `docs/baseuser.md` - Documentazione BaseUser
 - `docs/registration-widget.md` - Widget registrazione
 - `docs/phpstan-fixes-8.md` - Fix PHPStan
->>>>>>> 87273113 (.)
 - `docs/filament/widgets/registration-widget.md` - Widget Filament
 
 ## Modifiche Applicate
@@ -127,7 +125,6 @@ Funzionalità team includono:
 - [BaseUser Documentation](./baseuser.md)
 - [Registration Widget](./registration-widget.md)
 - [PHPStan Fixes](./phpstan-fixes-8.md)
->>>>>>> 87273113 (.)
 
 ---
 *Aggiornato automaticamente dopo risoluzione conflitti Git*

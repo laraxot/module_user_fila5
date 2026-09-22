@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/nestedset-migration-best-practices-Modules.md
->>>>>>> 87273113 (.)

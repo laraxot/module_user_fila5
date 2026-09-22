@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/widgets-structure.md
->>>>>>> 87273113 (.)

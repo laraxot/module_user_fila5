@@ -14,4 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/philosophy-complete.md
->>>>>>> 87273113 (.)

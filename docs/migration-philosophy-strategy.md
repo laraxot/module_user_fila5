@@ -18,7 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
->>>>>>> 87273113 (.)
 # Laraxot Migration Philosophy & Strategy
 
 ## Core Principles

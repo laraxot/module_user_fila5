@@ -18,7 +18,6 @@ related:
   - "./phpstan.md"
 ---
 
->>>>>>> 87273113 (.)
 # sso
 
 <!-- Contenuto migrato da _docs/sso.txt -->
