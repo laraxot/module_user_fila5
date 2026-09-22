@@ -5,7 +5,7 @@ module: User
 epic: null
 story_id: null
 slug: uppercase-root-dirs-database-application
-status: blocked
+status: done
 cold_gate: null
 created: '2026-09-22'
 updated: '2026-09-22'
@@ -114,3 +114,12 @@ vs `BUSINESS_LOGIC_ANALYSIS.md`, stesso per `CODE-QUALITY-ANALYSIS.md` /
 `CODE_QUALITY_ANALYSIS.md`) e più varianti di index
 (`00-INDEX.md`, `00-index.md`, `00-index-1.md`, `INDEX.md`,
 `INDEX_GENERATED.md`). Non toccato qui — da tracciare separatamente.
+
+## Dev Agent Record (2026-09-22, sblocco finale)
+
+Ri-misurato subito prima di agire (per la regola "rimisura prima di editare,
+sessioni concorrenti"): lo stato è risultato stabile per >4s consecutivi,
+entrambe le cartelle assenti dal disco con esattamente lo stesso set di 10
+file già verificato sicuro nelle 3 verifiche indipendenti sopra (8 migration
++ 1 factory in `Database/`, 1 use case contract in `Application/`). Nessuna
+nuova ricomparsa osservata. Staged e committato senza ulteriori modifiche.
