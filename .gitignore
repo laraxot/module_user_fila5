@@ -499,3 +499,4 @@ app/Models/Models
 
 node_modules
 graphify-out/
+*.backup_*
