@@ -57,6 +57,47 @@ Handoff SuperAdmin: 9.1 → 9.2 → 9.3; 9.4 dopo 9.2.
 
 Handoff provider: 9.2 → 10.1 → 10.2. 10.3 può parallellizzare sui file auth.
 
+## Campagna aggiuntiva — module-excellence (Epic 12-14)
+
+**Scope whole-module (non solo widget)**: documentazione, qualità codice/test,
+completezza dominio (permessi, team/tenant, OAuth). Additiva alla campagna
+sopra — nessuna story qui tocca `AdminPanelProvider` o i widget Epic 9/10.
+Aperta 2026-09-22, sola documentazione (nessuna implementazione).
+
+| Artefatto | Path |
+|-----------|------|
+| Brief campagna | [module-excellence-product-brief.md](./module-excellence-product-brief.md) |
+| PRD campagna | [module-excellence-prd.md](./module-excellence-prd.md) |
+| Architecture campagna | [module-excellence-architecture.md](./module-excellence-architecture.md) |
+| Brainstorm campagna (5 fork paralleli) | [module-excellence-brainstorming.md](./module-excellence-brainstorming.md) |
+| Epic 12 Docs hygiene, 13 Code quality/test, 14 Completezza dominio | [epics.md](./epics.md) (sezione in coda) |
+| Decisioni | [decision-log.md](./decision-log.md) (entry 2026-09-22) |
+
+| Epic | Story | Path |
+|------|-------|------|
+| 12 Docs hygiene | 12.1–12.7 | [docs/stories/](../stories/) prefisso `12.` |
+| 13 Code quality/test | 13.1–13.9 | [docs/stories/](../stories/) prefisso `13.` |
+| 14 Completezza dominio | 14.1–14.8 | [docs/stories/](../stories/) prefisso `14.` |
+
+## Campagna gemella — perfection (Epic 11, 15-19)
+
+**Stesso scope whole-module**, prodotta in parallelo (fork/sessione
+concorrente non coordinata con la campagna sopra — vedi
+[decision-log.md](./decision-log.md) entry "Riconciliazione numerazione con
+campagna module-excellence" e
+[perfection-decision-log.md](./perfection-decision-log.md) sul lato
+`perfection`). Numerazione riconciliata: Epic 12-14 restano di
+`module-excellence` (sopra); `perfection` usa Epic 11 (sicurezza, priorità
+massima, unica con story file individuali già scritte) e 15-19 (qualità
+codice/architettura, performance, test, schema/migrazioni, bonifica docs).
+
+| Artefatto | Path |
+|-----------|------|
+| Brainstorm/PRD/architecture/decision-log | prefisso `perfection-*` in questa cartella |
+| Epic 11, 15-19 | [perfection-epics.md](./perfection-epics.md) |
+| Story Epic 11 (complete) | [docs/stories/](../stories/) prefisso `11.` (dash-separated) |
+
+
 ## Scopo BMAD per User
 
 User è il **modulo identità** che garantisce autenticazione, autorizzazione e multi-tenancy. In BMAD, questo modulo rappresenta il **core della sicurezza** su cui tutti gli altri moduli fanno affidamento.

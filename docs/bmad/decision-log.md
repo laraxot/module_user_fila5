@@ -120,3 +120,108 @@ related:
 **Verifica:** tinker — `getMorphClass()='user'`, `isSuperAdmin()=true`, widget renderizza `data-super-admin-state` (LEN 2293).
 
 **Rationale:** regola contract-pattern — i morph alias devono puntare alla classe canonica, non a superclassi. Il fix è nel punto singolo di costruzione della mappa, non per-callsite.
+
+## [2026-09-22] Campagna "module-excellence" additiva, non sovrascrittura
+
+**Decision:** aperta una nuova campagna BMAD in `docs/bmad/` con prefisso
+`module-excellence-*` (product-brief, prd, architecture, brainstorming) e
+Epic 12/13/14 aggiunti in coda a [epics.md](./epics.md), invece di
+riscrivere `prd.md`/`architecture.md`/`product-brief.md`/`brainstorming.md`
+esistenti (che restano scoped a Epic 9 SuperAdmin, come da
+[README.md](./README.md)).
+
+**Rationale:** i file senza prefisso sono gia' la SSoT di una campagna in
+corso (9.8 in-progress, 10.4 blocked) con lock attivi di altre sessioni.
+Sovrascriverli avrebbe cancellato requisiti in uso. La richiesta utente
+("studia a fondo il modulo User... perfezione assoluta") ha uno scope
+whole-module, non Epic-9-scoped: merita artefatti propri, collegati ma
+distinti, sullo stesso pattern gia' visto in questo file per la campagna
+Livewire (`livewire-widget-*` prefix accanto ai file scoped Epic 9).
+
+**Perche' Epic 12 e non 11:** l'epic 11 esiste gia' come story singola
+(`11.1.team-change-widget.story.md`, correttamente `superseded_by:
+10.1`) — numero occupato anche se la story e' superseded. 9 e 10 sono
+attivi. Il primo numero libero verificato e' 12.
+
+**Quali doc sono canone vs candidati a pulizia futura (non eseguita in
+questa sessione):**
+- Canone: tutto cio' che e' citato da `module-excellence-prd.md` con
+  fonte esplicita (grep, comando eseguito, lettura diretta).
+- Candidati a una futura story di pulizia (Epic 12, non eseguita qui):
+  i 270 file `*phpstan*.md` corrotti (originali vanno tenuti, i
+  duplicati rigenerati da script rotto vanno elencati per cancellazione
+  manuale futura), `docs/permissions.md` attuale (contenuto di un altro
+  modulo, va sostituito non semplicemente cancellato), `docs/scopo.md`
+  (duplicato di `purpose.md`).
+
+**Scope esplicito:** solo documentazione. Nessun file di codice toccato,
+nessuna story esistente (9.x/10.x/11.1) rinumerata o cancellata, nessuna
+azione DB. Le 24 nuove story sono tutte `status: backlog`.
+
+**Fonte:** 5 ricerche parallele in sola lettura (`Agent
+subagent_type: fork`), 2026-09-22 — dettaglio completo in
+[module-excellence-brainstorming.md](./module-excellence-brainstorming.md).
+
+## [2026-09-22] Riconciliazione numerazione con campagna gemella perfection
+
+**Decision:** scoperta a posteriori una seconda campagna whole-module
+(`perfection-*`, stesso scope di `module-excellence`, prodotta in parallelo
+senza coordinamento — verosimilmente un fork Agent della stessa richiesta
+utente). Nessun file di `module-excellence` toccato: Epic 12-14 restano suoi.
+La campagna `perfection` ha rinumerato il proprio draft (Epic 12-16 →
+15-19, mai promosso a file story individuali) per evitare collisione,
+mantenendo Epic 11 (sicurezza) invariata. Dettaglio completo in
+[perfection-decision-log.md](./perfection-decision-log.md).
+
+**Rationale:** stesso principio gia' applicato sopra per Epic 12 vs 11 —
+primo numero libero verificato sul filesystem, non assunto dall'indice
+`epics.md`. Le due campagne restano additive fra loro come lo sono verso
+Epic 9/10.
+
+## [2026-09-22] Riconciliazione con la campagna concorrente "perfection-" (sessione parallela)
+
+**Sintomo:** verifica finale (Fase C del piano) ha trovato, oltre ai 24 file
+`12.x`-`14.x` di questa campagna, un secondo set di file non tracciato in git
+scritto da un'altra sessione concorrente sullo stesso working tree: doc
+`bmad/perfection-{plan,brainstorming,architecture,prd,epics,decision-log}.md`
+e `bmad/filament-ux-{brainstorming,architecture}.md`, piu' story file
+`docs/stories/11.[1-5]-*.story.md` (formato id con trattino, sicurezza) e un
+secondo gruppo di file **`12.1`-`12.6`** con prefisso `filament-ux-*`
+(`12.1.filament-xotbase-inheritance.story.md` ... `12.6.policies-resources-
+linking.story.md`) che collidono numericamente con i nostri `12.1`-`12.6`.
+
+**Origine:** quella sessione ha rilevato per prima questo lavoro (i suoi
+timestamp per `perfection-epics.md`/`decision-log.md` sono successivi ai
+nostri di alcuni minuti) e ha gia' documentato la riconciliazione nella sua
+`perfection-decision-log.md` (entry "Riconciliazione numerazione con
+campagna module-excellence"): ha lasciato **intatti** tutti i file di questa
+campagna, e ha rinumerato la propria prosa `perfection-epics.md` da Epic
+12-16 a **Epic 15-19**, mantenendo solo Epic 11 (sicurezza) con file story
+individuali gia' scritti prima della scoperta.
+
+**Gap residuo non causato da noi:** i 6 file `12.1`-`12.6` prefissati
+`filament-ux-*` sono un artefatto orfano della fase *precedente* alla
+rinumerazione di quella sessione (scritti insieme ai file
+`bmad/filament-ux-*.md`, prima che la campagna adottasse il prefisso
+`perfection-` ed Epic 15) — la sua stessa nota di verifica li dichiara
+implicitamente superati ("le altre story Epic 12-16 non hanno file
+dedicato"), ma non li ha rinominati/rimossi fisicamente.
+
+**Decision:** nessuna azione su quei 6 file da questa sessione — non sono di
+nostra proprieta', potrebbero essere ancora in scrittura, e la regola
+progetto vieta di cancellare/rinominare documentazione di un'altra sessione
+senza conferma. I nostri 24 file (`12.1.phpstan-docs-corruption-cleanup.md`
+... `14.8.provtv-remote-issue-tracker-divergence.story.md`) restano invariati
+e sono gia' l'unico set con tracciamento GitHub reale (issue #103, #105-116,
+discussion #104) per l'epic 12-14 — nessuna rinumerazione necessaria da parte
+nostra, confermato anche dalla verifica indipendente dell'altra sessione.
+Segnalato qui solo come nota di igiene per una futura story di pulizia
+(candidato naturale: story 12.3 "archive-folders-consolidation" o una nuova
+story dedicata, non aperta ora).
+
+**Verifica:** `ls ../stories/ | grep -oE '^1[1-4]\.[0-9]+'` mostra le uniche
+collisioni residue essere quei 6 file orfani `12.x` + il file dash `11.1-*`
+contro il gia'-superseded `11.1.team-change-widget.story.md` — entrambe
+generate e di competenza della sessione "perfection-", non di questa.
+Fonte: `bmad/perfection-decision-log.md` (letto integralmente prima di
+scrivere questa entry, per [[le-story-del-modulo-si-leggono-prima]]).
