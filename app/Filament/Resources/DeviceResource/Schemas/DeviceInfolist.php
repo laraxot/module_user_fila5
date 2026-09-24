@@ -6,13 +6,12 @@ namespace Modules\User\Filament\Resources\DeviceResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
-use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class DeviceInfolist extends XotBaseResourceInfolist
 {
     /**
-     * @return array<string, Component|Htmlable|string>
+     * @return array<string, Component>
      *
      * Campi basati sul Model Device.php -> id, uuid, mobile_id, name, type, device, platform, browser, version, is_robot, robot, is_desktop, is_mobile, is_tablet, is_phone, languages
      */

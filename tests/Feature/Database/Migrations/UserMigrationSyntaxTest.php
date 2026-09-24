@@ -14,11 +14,13 @@ uses(Modules\User\Tests\TestCase::class);
 function getUserMigrationFiles(): array
 {
     $basePath = dirname(__DIR__, 4).'/database/migrations';
-    $files = glob($basePath.'/*.php');
-
+    $files = glob($basePath.'/*.php') ?: [];
+    $files = array_values(array_filter(
+        $files,
+        static fn (mixed $file): bool => is_string($file) && $file !== '',
+    ));
     sort($files);
 
-    /* @var list<string> $files */
     return $files;
 }
 

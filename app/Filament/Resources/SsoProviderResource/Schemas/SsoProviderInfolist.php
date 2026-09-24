@@ -6,13 +6,12 @@ namespace Modules\User\Filament\Resources\SsoProviderResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
-use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class SsoProviderInfolist extends XotBaseResourceInfolist
 {
     /**
-     * @return array<string, Component|Htmlable|string>
+     * @return array<string, Component>
      *
      * Campi basati sul Model SsoProvider.php -> id, name, display_name, type, entity_id, client_id, redirect_url, metadata_url, scopes, is_active, settings
      */

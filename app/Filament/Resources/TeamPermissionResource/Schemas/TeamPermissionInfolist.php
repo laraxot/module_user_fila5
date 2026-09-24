@@ -6,13 +6,12 @@ namespace Modules\User\Filament\Resources\TeamPermissionResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
-use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class TeamPermissionInfolist extends XotBaseResourceInfolist
 {
     /**
-     * @return array<string, Component|Htmlable|string>
+     * @return array<string, Component>
      *
      * Campi basati sul Model TeamPermission.php -> id, team_id, user_id, permission, name
      */

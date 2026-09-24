@@ -6,13 +6,12 @@ namespace Modules\User\Filament\Resources\TeamResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
-use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class TeamInfolist extends XotBaseResourceInfolist
 {
     /**
-     * @return array<string, Component|Htmlable|string>
+     * @return array<string, Component>
      *
      * Campi basati su Model Team.php -> id, uuid, user_id, owner_id, name, personal_team, code, slug, description, avatar_path, settings
      */

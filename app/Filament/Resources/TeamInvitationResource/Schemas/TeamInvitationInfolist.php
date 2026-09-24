@@ -6,13 +6,12 @@ namespace Modules\User\Filament\Resources\TeamInvitationResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
-use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class TeamInvitationInfolist extends XotBaseResourceInfolist
 {
     /**
-     * @return array<string, Component|Htmlable|string>
+     * @return array<string, Component>
      *
      * Campi basati sul Model TeamInvitation.php -> id, uuid, team_id, email, role, user_id, accepted_at, declined_at
      */

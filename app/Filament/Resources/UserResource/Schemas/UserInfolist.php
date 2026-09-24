@@ -6,13 +6,12 @@ namespace Modules\User\Filament\Resources\UserResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
-use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class UserInfolist extends XotBaseResourceInfolist
 {
     /**
-     * @return array<string, Component|Htmlable|string>
+     * @return array<string, Component>
      *
      * Campi basati sul Model User.php -> id, name, first_name, last_name, email, email_verified_at, current_team_id, profile_photo_path, lang, is_active, is_otp, password_expires_at, type, state
      */

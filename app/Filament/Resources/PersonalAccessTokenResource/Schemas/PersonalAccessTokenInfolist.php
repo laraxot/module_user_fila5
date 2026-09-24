@@ -6,13 +6,12 @@ namespace Modules\User\Filament\Resources\PersonalAccessTokenResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
-use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class PersonalAccessTokenInfolist extends XotBaseResourceInfolist
 {
     /**
-     * @return array<string, Component|Htmlable|string>
+     * @return array<string, Component>
      *
      * Campi basati sul Model PersonalAccessToken.php -> id, tokenable_type, tokenable_id, name, token, abilities, last_used_at, expires_at
      */

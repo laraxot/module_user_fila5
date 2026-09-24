@@ -6,13 +6,12 @@ namespace Modules\User\Filament\Resources\TenantResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
-use Illuminate\Contracts\Support\Htmlable;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
 class CustomerInfolist extends XotBaseResourceInfolist
 {
     /**
-     * @return array<string, Component|Htmlable|string>
+     * @return array<string, Component>
      *
      * Campi basati su Model Tenant.php -> id, name, slug, email_address, phone, mobile, address, primary_color, secondary_color, domain, database, is_active, trial_ends_at, settings
      */
