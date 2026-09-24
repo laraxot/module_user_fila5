@@ -1,0 +1,43 @@
+<?php
+
+<<<<<<< HEAD
+declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
+/**
+ * @see https://coderflex.com/blog/create-advanced-filters-with-filament
+ */
+
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
+namespace Modules\User\Filament\Actions\Header;
+
+use Filament\Actions\AttachAction;
+use Filament\Forms\Components\Select;
+use Modules\Xot\Datas\XotData;
+use Modules\Xot\Filament\Actions\XotBaseAttachAction;
+
+final class AttachRoleAction extends XotBaseAttachAction
+{
+    protected function setUp(): void
+    {
+        $xotData = XotData::make();
+        parent::setUp();
+        $this->icon('heroicon-o-link')
+            ->iconButton()
+            ->schema(static function (AttachAction $action) use ($xotData): array {
+                return [
+                    $action->getRecordSelect(),
+                    Select::make('team_id')->options($xotData->getTeamClass()::get()->pluck('name', 'id')),
+                ];
+            });
+    }
+
+    public static function getDefaultName(): string
+    {
+        return 'attachRole';
+    }
+}
