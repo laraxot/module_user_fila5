@@ -1,3 +1,22 @@
+---
+title: "PHPStan widget property types"
+type: concept
+tags: [phpstan, widget, property, types]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-widget-property-types phpstan widget property types"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./filament-user-creation-pty-error.md"
+  - "./git-merge-conflict-inventory-1.md"
+  - "./git-merge-conflict-inventory.md"
+  - "./git-push-lfs-missing-objects.md"
+  - "./phpstan-module-analysis-memory.md"
+  - "./phpstan-widget-property-types-1.md"
+  - "./spatie-permission-team-model-not-configured.md"
+---
+
 # PHPStan widget property types
 
 ## Contesto
@@ -30,13 +49,7 @@ protected string $view = 'pub_theme::filament.widgets.registration';
 
 Il primo caso viola `property.defaultValue`, il secondo puo' violare `view-string` quando PHPStan non puo' provare che la stringa sia una vista registrata.
 
-## Verifiche (2026-07-13)
-
-- `php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules` → **0 errori** (6740 file, cache cleared)
-- Batch widget: `EnvWidget` — aggiungere `/** @var array<string, mixed> */ public array $data = []` per `statePath('data')` (non estende `XotBaseWidget`)
-- Batch widget: `RegistrationWidget` — proprietà `string $type`, `$resource`, `$model`, `$action`; niente `@var` incompatibile con tipo nativo; `array_merge($this->data, $data)` senza `??` su `$data` non nullable
-
-## Verifiche (storico)
+## Verifiche
 
 - `php -l` sui tre file modificati.
 - `./vendor/bin/phpstan analyse` sui tre file modificati: nessun errore.

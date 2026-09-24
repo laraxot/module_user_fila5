@@ -3,15 +3,18 @@ title: "Pagina Folio notifiche — centro in-app"
 type: concept
 tags: [folio, notifications, user, front-office]
 created: 2026-06-10
-updated: 2026-07-12
+updated: 2026-06-10
 qmd: "notifications folio page route name english header dropdown area-personale forbidden"
 issues:
-  - https://github.com/laraxot/base_fixcity_fila5/issues/289
 related:
-  - notifications-folio-route.md
-  - notifications-runtime-model.md
-  - ../../../../Themes/Sixteen/docs/wiki/concepts/fo-folio-named-routes-header.md
-  - ../../../Cms/docs/wiki/concepts/folio-filesystem-routing-no-web-php.md
+  - "./ai-harness-user-discipline.md"
+  - "./baseuser-hierarchy.md"
+  - "./code-redundancy-user.md"
+  - "./context-mode-user-discipline.md"
+  - "./context-overflow-prevention.md"
+  - "./filament-langserviceprovider-governance.md"
+  - "./filament-widget-linear-crud-model-create.md"
+  - "./filament-widget-resource-form-delegation.md"
 ---
 
 # Pagina Folio notifiche — centro in-app
@@ -62,7 +65,7 @@ Label IT                   pub_theme::header.user.dropdown.notifications.label
 
 Schema DB notifiche: owner Notify — vedi `Modules/Notify/docs/wiki/concepts/notifications-database-contract.md`.
 
-Runtime unread count: `IsNotificationSchemaReadableAction` in header prima del link.
+Runtime unread count: `NotificationSchema::isReadable()` in header prima del link.
 
 
 ## Anti-pattern (caso `area-personale.notifiche`)

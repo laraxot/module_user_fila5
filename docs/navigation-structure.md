@@ -139,6 +139,22 @@ Event::dispatch('user.action', [
    - Input validation
 
 ## Collegamenti Correlati
-- [Header Components](./header_components.md)
-- [Security Best Practices](./security_best_practices.md)
-- [Session Management](./session_management.md) 
+- [Header Components](./HEADER_COMPONENTS.md)
+- [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
+- [Session Management](./SESSION_MANAGEMENT.md) 
+---
+module: theme
+topic: navigation-structure
+canonical: ../../../Themes/docs/shared-components/navigation-structure.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/navigation-structure.md

@@ -5,7 +5,14 @@ created: 2026-07-12
 updated: 2026-07-12
 tags: [contract, naming, architecture, laraxot, user]
 related:
-  - ../../../../docs/wiki/rules/module-contracts-naming-placement.md
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
 ---
 
 # Contracts Naming & Placement in User

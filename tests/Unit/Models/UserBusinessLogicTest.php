@@ -1,13 +1,14 @@
 <?php
 
 declare(strict_types=1);
-
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Models\BaseUser;
 use Modules\User\Models\User;
+use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(Modules\User\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('User Business Logic', function () {
     test('user extends base user', function () {
@@ -15,13 +16,12 @@ describe('User Business Logic', function () {
     });
 
     test('user has authentication capabilities', function () {
-        $plain = plainTestPassword();
         $user = new User();
         $user->email = 'test@example.com';
-        $user->password = Hash::make($plain);
+        $user->password = 'hashed-password';
 
         Assert::assertSame('test@example.com', $user->email);
-        Assert::assertTrue(Hash::check($plain, $user->password));
+        Assert::assertTrue(Hash::check('hashed-password', $user->password));
     });
 
     test('user can have name components', function () {
@@ -58,7 +58,7 @@ describe('User Business Logic', function () {
 
     test('user has email verification tracking', function () {
         $user = new User();
-        $verifiedAt = Illuminate\Support\Carbon::parse('2023-01-01 12:00:00');
+        $verifiedAt = Carbon::parse('2023-01-01 12:00:00');
         $user->email_verified_at = $verifiedAt;
 
         Assert::assertNotNull($user->email_verified_at);
@@ -67,7 +67,7 @@ describe('User Business Logic', function () {
 
     test('user has password expiry tracking', function () {
         $user = new User();
-        $expiresAt = Illuminate\Support\Carbon::parse('2023-12-31 23:59:59');
+        $expiresAt = Carbon::parse('2023-12-31 23:59:59');
         $user->password_expires_at = $expiresAt;
 
         Assert::assertNotNull($user->password_expires_at);

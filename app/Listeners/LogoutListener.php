@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://github.com/rappasoft/laravel-authentication-log/blob/main/src/Listeners/LogoutListener.php
  */
@@ -11,6 +10,7 @@ namespace Modules\User\Listeners;
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Modules\User\Actions\Authentication\GetAuthenticationLogQueryForAuthenticatableAction;
 use Modules\User\Actions\GetCurrentDeviceAction;
 use Modules\User\Models\BaseUser;
 use Modules\User\Models\DeviceUser;
@@ -102,9 +102,7 @@ class LogoutListener
     {
         if ($event->user instanceof BaseUser) {
             try {
-                $event
-                    ->user
-                    ->authentications()
+                app(GetAuthenticationLogQueryForAuthenticatableAction::class)->execute($event->user)
                     ->whereNotNull('remember_token')
                     ->update([
                         'remember_token' => null,

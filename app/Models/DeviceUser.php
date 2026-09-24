@@ -11,7 +11,6 @@ use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
-use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
  * Modules\User\Models\DeviceUser.
@@ -58,9 +57,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class DeviceUser extends BasePivot
 {
-    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
-    use HasXotFactory;
-
     /** @var list<string> */
     protected $fillable = [
         'id',
@@ -81,22 +77,22 @@ class DeviceUser extends BasePivot
     }
 
     /**
-     * @return BelongsTo<Model&UserContract, $this>
+     * @return BelongsTo<Model, $this>
      */
     public function user(): BelongsTo
     {
-        /** @var class-string<Model&UserContract> $userClass */
+        /** @var class-string<Model> */
         $userClass = XotData::make()->getUserClass();
 
         return $this->belongsTo($userClass);
     }
 
     /**
-     * @return BelongsTo<Model&ProfileContract, $this>
+     * @return BelongsTo<Model, $this>
      */
     public function profile(): BelongsTo
     {
-        /** @var class-string<Model&ProfileContract> $profileClass */
+        /** @var class-string<Model> */
         $profileClass = XotData::make()->getProfileClass();
 
         return $this->belongsTo($profileClass, 'user_id', 'user_id');

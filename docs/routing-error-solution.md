@@ -1,3 +1,23 @@
+---
+title: "Soluzione Errori di Routing nel Frontoffice"
+type: concept
+tags: [routing, error, solution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "routing-error-solution soluzione errori di routing nel frontoffice"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Soluzione Errori di Routing nel Frontoffice
 
 In un modulo User che usa Volt + Folio + Filament, **non** definire mai rotte in `routes/web.php`. Se incappi in un errore di tipo “Route not found” o conflitti di middleware dovuti a rotte imperative, ecco come risolvere:

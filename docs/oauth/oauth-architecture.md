@@ -1,3 +1,16 @@
+---
+title: "OAuth Architecture - User Module"
+type: concept
+tags: [oauth, architecture]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "oauth-architecture oauth architecture - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./github.md"
+---
+
 # OAuth Architecture - User Module
 
 > **Last Updated**: 2026-03-18  

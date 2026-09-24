@@ -1,3 +1,23 @@
+---
+title: "User Module - PHPStan Fixes Session 2025-10-01"
+type: concept
+tags: [phpstan, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-fixes- user module - phpstan fixes session 2025-10-01"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # User Module - PHPStan Fixes Session 2025-10-01
 
 ## ⚠️ Stato: IN PROGRESS - 95 errori rimanenti
@@ -205,9 +225,9 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 ## 🔗 Collegamenti
 
 - [← User Module README](./readme.md)
-- [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
-- [← Final Report](../../../../docs/phpstan/final-report-session-2025-10-01.md)
-- [← Root Documentation](../../../../docs/index.md)
+- [← PHPStan Session Report](../../../docs/phpstan/filament-v4-fixes-session.md)
+- [← Final Report](../../../docs/phpstan/final-report-session-2025-10-01.md)
+- [← Root Documentation](../../../docs/index.md)
 
 ---
 
@@ -617,6 +637,7 @@ public string $currentState = 'default';
 - [PHPStan Usage](../../xot/docs/phpstan-usage.md)
 - [XotBaseResource Documentation](../../xot/docs/filament/xot-base-resource.md)
 
+*Ultimo aggiornamento: 2025-01-22*
 # PHPStan Fixes - Modulo User
 
 ## OauthClientResource.php

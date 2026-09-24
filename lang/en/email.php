@@ -2,10 +2,6 @@
 
 declare(strict_types=1);
 
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/en/email.php
 return [
     'error' => 'Ops!',
     'greeting' => 'Ciao!',
@@ -18,17 +14,4 @@ return [
     'reset_password' => 'Clicca qui per reimpostare la tua password',
     'click_to_confirm' => 'Clicca qui per confermare il tuo account:',
     'password_reset_expiration' => 'Questo link per il reset della password scadrà tra :count minuti.',
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
 ];

@@ -2,31 +2,7 @@
 
 declare(strict_types=1);
 
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: resources/lang/en/registration.php
 return [
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    'title' => 'Create your account',
-    'subtitle' => 'Join the community',
-    'description' => 'Sign up in seconds to access all services.',
-    'sidebar' => [
-        'support_title' => 'Need help?',
-        'help_email' => 'Use a valid email address you check regularly.',
-        'help_password' => 'Password must be at least 12 characters with uppercase, lowercase, number and symbol.',
-        'help_support' => 'Contact support for assistance.',
-    ],
-    'failed' => 'Registration failed. Please correct the errors and try again.',
-    'submit' => 'Create account',
-    'already_have_account' => 'Already have an account?',
-    'login' => 'Log in',
-    'already_registered' => 'Already registered?',
-    'success' => 'Registration completed successfully!',
     'fields' => [
         'first_name' => [
             'label' => 'First Name',
@@ -95,7 +71,7 @@ return [
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Enter your password',
-            'tooltip' => 'Password must be at least 12 characters with uppercase, lowercase, number and symbol.',
+            'tooltip' => 'Password must be at least 8 characters long',
             'helper_text' => '',
             'description' => '',
         ],
@@ -147,16 +123,5 @@ return [
             'title' => 'Confirm Data',
             'description' => 'Verify your information before completing registration',
         ],
-    ],
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'actions' => [
     ],
 ];

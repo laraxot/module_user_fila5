@@ -1,11 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * ---.
  */
-
-declare(strict_types=1);
-
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
@@ -28,7 +26,7 @@ return new class extends XotBaseMigration {
         $this->tableUpdate(function (Blueprint $table): void {
             // MySqlConnection::getDoctrineSchemaManager does not exist.
             // MySqlConnection::getSchemaGrammar() ?
-            // if ($hasIndexName('team_invitations_team_id_foreign'))
+            // if ($this->hasIndexName('team_invitations_team_id_foreign')) {
             //    $table->dropForeign('team_invitations_team_id_foreign');
             // }
             if ($this->hasColumn('uuid')) {

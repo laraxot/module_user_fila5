@@ -1,3 +1,26 @@
+---
+title: "Completamento Traduzioni Password - 2025"
+type: concept
+tags: [password, translation, completion]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "password-translation-completion- completamento traduzioni password - 2025"
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Completamento Traduzioni Password - 2025
 
 ## Problema Identificato
@@ -103,6 +126,8 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 
 ## Collegamenti
 
+- [Documentazione Modulo User](../README.md)
+- [Best Practices Traduzioni](../../Lang/docs/translation_standards.md)
 - [Documentazione Modulo User](../readme.md)
 - [Best Practices Traduzioni](../../lang/docs/translation_standards.md)
 - [Sicurezza Password](../security/password_policies.md)
@@ -115,6 +140,7 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 4. **Usare icone e colori appropriati** per l'UX
 
 ---
+*Ultimo aggiornamento: 2025-01-06*
 *Autore: Sistema di Audit Traduzioni*
 # Completamento Traduzioni Password - 2025
 
@@ -221,6 +247,8 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 
 ## Collegamenti
 
+- [Documentazione Modulo User](../README.md)
+- [Best Practices Traduzioni](../../Lang/docs/translation_standards.md)
 - [Documentazione Modulo User](../readme.md)
 - [Best Practices Traduzioni](../../lang/docs/translation_standards.md)
 - [Sicurezza Password](../security/password_policies.md)
@@ -233,4 +261,5 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 4. **Usare icone e colori appropriati** per l'UX
 
 ---
+*Ultimo aggiornamento: 2025-01-06*
 *Autore: Sistema di Audit Traduzioni*

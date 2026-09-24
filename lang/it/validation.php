@@ -2,18 +2,7 @@
 
 declare(strict_types=1);
 
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/it/validation.php
 return [
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
     'accepted' => 'Il campo :attribute deve essere accettato.',
     'active_url' => 'Il campo :attribute non è un URL valido.',
     'after' => 'Il campo :attribute deve essere una data successiva a :date.',
@@ -142,48 +131,4 @@ return [
     'email_format' => 'L\'email deve avere un formato valido.',
     'phone_format' => 'Il numero di telefono deve avere un formato valido.',
     'birth_date_before' => 'La data di nascita deve essere precedente ad oggi.',
-    'navigation' => [
-        'name' => 'Validation',
-        'plural' => 'Validation',
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Validation',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
-    ],
-    'label' => 'Validation',
-    'plural_label' => 'Validation (Plurale)',
-    'fields' => [
-        'id' => [
-            'label' => 'Identificativo',
-            'tooltip' => 'Identificativo univoco del record',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'created_at' => [
-            'label' => 'Data Creazione',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-    ],
-    'actions' => [
-        'create' => [
-            'label' => 'Crea Validation',
-        ],
-        'edit' => [
-            'label' => 'Modifica Validation',
-        ],
-        'delete' => [
-            'label' => 'Elimina Validation',
-        ],
-    ],
 ];

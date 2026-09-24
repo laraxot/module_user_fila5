@@ -2,6 +2,15 @@
 description:
 globs:
 alwaysApply: false
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
 ---
 # Linee guida per l'uso di Spatie Queueable Action
 
@@ -47,26 +56,6 @@ Queue::fake();
 app(ApproveUserAction::class)->onQueue()->execute($user);
 QueueableActionFake::assertPushed(ApproveUserAction::class);
 ```
-
-## `app/Support/` eliminata (2026-07-12)
-
-Il modulo User **non ha più** una cartella `app/Support/`. Tutto quello che vi abitava
-(`AuthenticationLogQuery`, `Utils` (filament-shield), `NotificationSchema`,
-`Otp/Hasher`, `Socialite/Utils/{EmailDomainAnalyzer,UserNameFieldsResolver}`) è stato
-convertito in QueueableAction dentro `app/Actions/`:
-
-| Vecchio (`Support/`) | Nuovo (`Actions/`) |
-|---|---|
-| `AuthenticationLogQuery::forAuthenticatable()` | `Actions/Authentication/GetAuthenticationLogQueryForAuthenticatableAction` |
-| `Utils::getPermissionModel()` (e resto, dead) | `Actions/GetPermissionModelAction` |
-| `NotificationSchema::isReadable()` | `Actions/Notification/IsNotificationSchemaReadableAction` |
-| `Otp/Hasher` (make/check/needsRehash) | `Actions/Otp/{HashOtpValueAction,VerifyOtpHashAction,OtpHashNeedsRehashAction}` |
-| `Socialite/Utils/EmailDomainAnalyzer` | `Actions/Socialite/AnalyzeSocialiteEmailDomainAction` |
-| `Socialite/Utils/UserNameFieldsResolver` | `Actions/Socialite/ResolveUserNameFieldsFromSocialiteAction` |
-
-Regola per questo modulo: **nessuna eccezione** — anche gli adapter/wrapper multi-metodo
-vanno in `Actions/` con `use QueueableAction` ed `execute()` come entry point primario,
-non in `Support/`. Vedi [action-pattern.md](../../../docs/wiki/guidelines/action-pattern.md).
 
 ## Collegamenti correlati
 - [README User](mdc:readme.md)

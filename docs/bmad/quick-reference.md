@@ -48,6 +48,19 @@ bmad-code-review          # Review
 | Amelia (dev) | `skill: "bmad-agent-dev"` | implementazione login |
 | Quinn (qa) | `skill: "bmad-agent-qa"` | test sicurezza |
 
+<<<<<<< .merge_file_BA8D66
+=======
+<<<<<<< .merge_file_5dPiY8
+=======
+<<<<<<< .merge_file_2JXUra
+=======
+## Campagna widget-only (2026-09-21)
+
+Canon: [README.md](README.md). Inventario: [livewire-inventory.md](livewire-inventory.md). SuperAdmin hook: [tech-spec.md](tech-spec.md). GitHub #100 / #101.
+
+>>>>>>> .merge_file_yqnvnX
+>>>>>>> .merge_file_mIxVlH
+>>>>>>> .merge_file_EjZXDh
 ## Quick Flow
 
 ```bash

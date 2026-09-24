@@ -2,14 +2,7 @@
 
 declare(strict_types=1);
 
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/de/profile.php
 return [
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
     'navigation' => [
         'label' => 'Profilo',
         'plural' => 'Profili',
@@ -73,27 +66,6 @@ return [
         'is_active' => [
             'label' => 'Attivo',
             'help' => 'Stato attivo del profilo',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'id' => [
-            'label' => 'ID',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'ente' => [
-            'label' => 'Ente',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'matr' => [
-            'label' => 'Matricola',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
         ],
     ],
     'actions' => [

@@ -1,3 +1,17 @@
+---
+title: "Trait HasAuthenticationLogTrait"
+type: concept
+tags: [has, authentication, log]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "has-authentication-log trait hasauthenticationlogtrait"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./has-teams.md"
+  - "./has-tenants.md"
+---
+
 # Trait HasAuthenticationLogTrait
 
 ## Descrizione

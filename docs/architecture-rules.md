@@ -1,3 +1,23 @@
+---
+title: "Architectural Rules & Guidelines"
+type: rule
+tags: [architecture, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "architecture-rules architectural rules & guidelines"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Architectural Rules & Guidelines
 
 This module adheres to the **Laraxot Architecture** and **Super Cow Methodology**.
@@ -13,8 +33,7 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 1. **DRY & KISS**: Don't repeat yourself, keep it simple.
 2. **Zero Errors**: PHPStan Level 10 compliance is mandatory.
 3. **XotBase**: Always extend `XotBase` classes, never Filament classes directly.
-4. **Translations**: Use `LangServiceProvider` for automatic label resolution.
-5. **Directory Structure**: All domain logic must reside within `app/` and database migrations within `database/`. See the structure section below.
+4. **Directory Structure**: All domain logic must reside within `app/` and database migrations within `database/`. See the structure section below.
 
 ## Directory Structure
 

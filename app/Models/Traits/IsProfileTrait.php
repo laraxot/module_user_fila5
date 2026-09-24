@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * Modulo User - Trait per il profilo utente.
  *
@@ -30,7 +29,6 @@ use Illuminate\Support\Collection;
 use Modules\User\Models\Device;
 use Modules\User\Models\DeviceUser;
 use Modules\User\Models\Role;
-use Modules\User\Models\User;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -57,8 +55,10 @@ trait IsProfileTrait
         /** @var class-string<Model&UserContract> $userClass */
         $userClass = XotData::make()->getUserClass();
 
-        // @phpstan-ignore return.type
-        return $this->belongsTo($userClass);
+        /** @var BelongsTo<Model&UserContract, Model> $relation */
+        $relation = $this->belongsTo($userClass);
+
+        return $relation;
     }
 
     /**
@@ -79,7 +79,7 @@ trait IsProfileTrait
         if (null === $user) {
             return null;
         }
-        Assert::isInstanceOf($user, User::class);
+        Assert::isInstanceOf($user, UserContract::class);
 
         $res = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
         if ('' !== $res) {
@@ -109,7 +109,7 @@ trait IsProfileTrait
         if (null === $user) {
             return null;
         }
-        Assert::isInstanceOf($user, User::class);
+        Assert::isInstanceOf($user, UserContract::class);
 
         $firstName = $user->getAttribute('first_name');
         if (! \is_string($firstName) || '' === $firstName) {
@@ -139,7 +139,7 @@ trait IsProfileTrait
         if (null === $user) {
             return null;
         }
-        Assert::isInstanceOf($user, User::class);
+        Assert::isInstanceOf($user, UserContract::class);
 
         $lastName = $user->getAttribute('last_name');
         if (! \is_string($lastName) || '' === $lastName) {
@@ -192,7 +192,7 @@ trait IsProfileTrait
         if (null === $user) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
-        Assert::isInstanceOf($user, User::class);
+        Assert::isInstanceOf($user, UserContract::class);
         $to_assign = 'super-admin';
         $to_remove = 'negate-super-admin';
         if ($this->isSuperAdmin()) {
@@ -221,18 +221,17 @@ trait IsProfileTrait
     /**
      * Relazione con i dispositivi mobili associati al profilo.
      *
-     * @return BelongsToMany<Device, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
+     * @return BelongsToMany<Device, $this>
      */
     public function mobileDevices(): BelongsToMany
     {
-        // @phpstan-ignore return.type
         return $this->belongsToManyX(Device::class);
     }
 
     /**
      * Relazione con tutti i dispositivi associati al profilo.
      *
-     * @return BelongsToMany<Device, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
+     * @return BelongsToMany<Device, $this>
      */
     public function devices(): BelongsToMany
     {
@@ -246,7 +245,6 @@ trait IsProfileTrait
      */
     public function mobileDeviceUsers(): HasMany
     {
-        // @phpstan-ignore return.type
         return $this->hasMany(DeviceUser::class, 'profile_id')->where('type', 'mobile');
     }
 
@@ -257,7 +255,6 @@ trait IsProfileTrait
      */
     public function deviceUsers(): HasMany
     {
-        // @phpstan-ignore return.type
         return $this->hasMany(DeviceUser::class, 'profile_id');
     }
 
@@ -280,9 +277,8 @@ trait IsProfileTrait
     /**
      * Get the user's user_name.
      * Ottiene il nome utente dal modello utente collegato.
-     *
-     * @return Attribute<string|null, never>
      */
+    /** @return Attribute<?string, never> */
     protected function userName(): Attribute
     {
         return Attribute::make(
@@ -291,7 +287,7 @@ trait IsProfileTrait
                 if (null === $user) {
                     return null;
                 }
-                Assert::isInstanceOf($user, User::class);
+                Assert::isInstanceOf($user, UserContract::class);
 
                 $name = $user->getAttribute('name');
 
@@ -303,9 +299,8 @@ trait IsProfileTrait
     /**
      * Get the user's avatar URL.
      * Recupera l'URL dell'avatar dell'utente dalla MediaLibrary.
-     *
-     * @return Attribute<string, never>
      */
+    /** @return Attribute<string, never> */
     protected function avatar(): Attribute
     {
         return Attribute::make(get: function (): string {

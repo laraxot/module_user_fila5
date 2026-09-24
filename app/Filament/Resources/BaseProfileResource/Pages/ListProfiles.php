@@ -32,7 +32,50 @@ class ListProfiles extends XotBaseListRecords
             'user.name' => TextColumn::make('user.name')
                 ->sortable()
                 ->searchable()
-                ->default(fn (mixed $record): string => $this->resolveProfileUserName($record)),
+                ->default(function ($record) {
+                    if (! is_object($record)) {
+                        return '--';
+                    }
+
+                    // PHPStan Level 10: isset() invece di property_exists() per Eloquent relations/attributes
+                    $userValue = $record->user ?? null;
+
+                    if (null === $userValue) {
+                        $emailValue = $record->email ?? null;
+
+                        if (null === $emailValue) {
+                            if (method_exists($record, 'update')) {
+                                $record->update(['email' => fake()->email()]);
+                            }
+                            $emailValue = $record->email ?? '';
+                        }
+
+                        if (! is_string($emailValue)) {
+                            return '--';
+                        }
+
+                        try {
+                            $userValue = XotData::make()->getUserByEmail($emailValue);
+                        } catch (\Exception $e) {
+                            return '--';
+                        }
+                    }
+
+                    if (! is_object($userValue)) {
+                        return '--';
+                    }
+
+                    // PHPStan Level 10: isset() per magic properties di User model
+                    $userId = $userValue->id ?? null;
+
+                    if (null !== $userId && method_exists($record, 'update')) {
+                        $record->update(['user_id' => $userId]);
+                    }
+
+                    $userName = $userValue->name ?? '--';
+
+                    return is_string($userName) ? $userName : '--';
+                }),
             'first_name' => TextColumn::make('first_name')->sortable()->searchable(),
             'last_name' => TextColumn::make('last_name')->sortable()->searchable(),
             'email' => TextColumn::make('email')->sortable()->searchable(),
@@ -57,47 +100,5 @@ class ListProfiles extends XotBaseListRecords
                     false: static fn (Builder $query) => $query->where('is_active', '=', false),
                 ),
         ];
-    }
-
-    protected function resolveProfileUserName(mixed $record): string
-    {
-        if (! is_object($record)) {
-            return '--';
-        }
-
-        $userValue = $record->user ?? null;
-
-        if (null === $userValue) {
-            $emailValue = $record->email ?? null;
-
-            if (null === $emailValue && method_exists($record, 'update')) {
-                $record->update(['email' => fake()->email()]);
-                $emailValue = $record->email ?? '';
-            }
-
-            if (! is_string($emailValue) || '' === $emailValue) {
-                return '--';
-            }
-
-            try {
-                $userValue = XotData::make()->getUserByEmail($emailValue);
-            } catch (\Exception) {
-                return '--';
-            }
-        }
-
-        if (! is_object($userValue)) {
-            return '--';
-        }
-
-        $userId = $userValue->id ?? null;
-
-        if (null !== $userId && method_exists($record, 'update')) {
-            $record->update(['user_id' => $userId]);
-        }
-
-        $userName = $userValue->name ?? '--';
-
-        return is_string($userName) ? $userName : '--';
     }
 }

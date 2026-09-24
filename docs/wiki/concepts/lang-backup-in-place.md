@@ -7,8 +7,14 @@ created: 2026-06-30
 updated: 2026-06-30
 qmd: "User lang backup in-place bak no archive folder ponytail"
 related:
-  - ../../ponytail-audit-over-engineering.md
-  - ../../../../../../docs/wiki/concepts/no-legacy-folders-code.md
+  - "./ai-harness-user-discipline.md"
+  - "./baseuser-hierarchy.md"
+  - "./code-redundancy-user.md"
+  - "./context-mode-user-discipline.md"
+  - "./context-overflow-prevention.md"
+  - "./filament-langserviceprovider-governance.md"
+  - "./filament-widget-linear-crud-model-create.md"
+  - "./filament-widget-resource-form-delegation.md"
 ---
 
 # Backup traduzioni User — in-place

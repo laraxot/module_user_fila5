@@ -1,3 +1,23 @@
+---
+title: "PHPStan Level 10 Errors Resolution Roadmap - User Module"
+type: concept
+tags: [phpstans, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstans-resolution phpstan level 10 errors resolution roadmap - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # PHPStan Level 10 Errors Resolution Roadmap - User Module
 
 **Modulo**: User  
@@ -187,4 +207,3 @@ Tutti gli errori sono stati corretti:
 2. ✅ **OauthClient.php linea 180**: Aggiunto cast esplicito `@var MorphTo<User, $this>` per allineare con tipo parent
 3. ✅ **HasTeams.php linee 473 e 476**: Corretto PHPDoc return type da `Pivot` a `TeamUser` per riflettere `->using(TeamUser::class)`
 4. ✅ **PassportServiceProvider.php linea 158**: Aggiunto cast esplicito `@var array<string, string>` per `Passport::tokensCan()`
-

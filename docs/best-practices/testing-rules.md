@@ -1,3 +1,23 @@
+---
+title: "Testing Rules Summary"
+type: rule
+tags: [testing, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing-rules testing rules summary"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./auth-components-best-practices.md"
+  - "./auth-widget-rules.md"
+  - "./auth-widget.md"
+  - "./case-sensitivity-rules.md"
+  - "./case-sensitivity.md"
+  - "./component-verification-rules.md"
+  - "./component-verification.md"
+  - "./dependency-rules.md"
+---
+
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test

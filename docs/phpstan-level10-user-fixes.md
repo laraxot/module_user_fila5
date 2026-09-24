@@ -1,3 +1,23 @@
+---
+title: "PHPStan Level 10 Fixes - User Module"
+type: concept
+tags: [phpstan, level10, user, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-level10-user-fixes phpstan level 10 fixes - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # PHPStan Level 10 Fixes - User Module
 
 ## 📋 Riepilogo Intervento
@@ -314,6 +334,6 @@ Il modulo User è ora **completamente compliant** con PHPStan Level 10. I patter
 ## 📋 Riferimento Incrociato
 
 - **Xot Module**: Vedi `Modules/Xot/docs/phpstan-level10-xot-fixes.md` per pattern di base
-- **Quaeris Module**: Vedi `Modules/Quaeris/docs/phpstan-level10-Quaeris-fixes.md` per pattern simili
+- **ExternalProject Module**: Vedi `Modules/ExternalProject/docs/phpstan-level10-app-fixes.md` per pattern simili
 
 **Status**: ✅ **COMPLETATO** - Pronto per production con type safety massima.

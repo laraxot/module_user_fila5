@@ -19,12 +19,12 @@ use Spatie\QueueableAction\QueueableAction;
  * @see AGENTS.md#🏗️-ARCHITETTURA-LARAXOT---Queueable-Actions-Rules
  * @see AGENTS.md#🚨-COMANDO-CRITICO-GIT-git-remote--v - RICORDATI SEMPRE git remote -v prima di ogni push/pull!
  */
-final class CreateUserAction
+class CreateUserAction
 {
     use QueueableAction;
 
     /**
-     * @param array<string, bool|int|string|null>|null $data
+     * @param array<string, mixed>|null $data
      */
     public function __construct(
         protected string $name,
@@ -33,7 +33,7 @@ final class CreateUserAction
         protected ?array $data = null,
     ) {
         // Validazione input nel costruttore
-        if ('' === $this->name || '' === $this->email) {
+        if (empty($this->name) || empty($this->email)) {
             throw new \InvalidArgumentException('Nome e email sono obbligatori');
         }
 
@@ -42,9 +42,9 @@ final class CreateUserAction
         }
     }
 
-    public function execute(): User
+    public function handle(): User
     {
-        /** @var array<string, bool|int|string|null> $attributes */
+        /** @var array<string, mixed> $attributes */
         $attributes = [
             'name' => $this->name,
             'email' => $this->email,
@@ -63,15 +63,10 @@ final class CreateUserAction
         return $user;
     }
 
-    public function handle(): User
-    {
-        return $this->execute();
-    }
-
     private function sendWelcomeEmail(User $user): void
     {
         // Logica per inviare email di benvenuto
-        Log::info("Invio email di benvenuto a {$user->email}");
+        Log::info('Invio email di benvenuto a '.$user->email);
     }
 
     private function createAuditLog(User $user): void
