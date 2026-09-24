@@ -6,6 +6,7 @@ confidence: medium
 created: {{date}}
 updated: {{date}}
 tags: [tag1, tag2]
+<<<<<<< .merge_file_7LH3SF
 <<<<<<< HEAD
 <<<<<<< .merge_file_6vwj8a
 related: []
@@ -17,6 +18,11 @@ related:
 =======
 related: []
 >>>>>>> df2ba808 (.)
+=======
+related:
+  - "./entity.md"
+  - "./source.md"
+>>>>>>> .merge_file_zgUYDD
 ---
 
 # {{title}}

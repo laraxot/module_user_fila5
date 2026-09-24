@@ -140,6 +140,7 @@ CREATE INDEX idx_users_password_expires ON users(password_expires_at);
 #### 1. Enhanced User Management
 ```php
 // Advanced user form with Filament 4
+<<<<<<< .merge_file_W0wz7N
 <<<<<<< HEAD
 <<<<<<< .merge_file_xcCfPI
 public static function getFormSchema(): array
@@ -157,6 +158,9 @@ public function getFormSchema(): array
 >>>>>>> .merge_file_Iez32B
 >>>>>>> .merge_file_XWYIT7
 >>>>>>> df2ba808 (.)
+=======
+public function getFormSchema(): array
+>>>>>>> .merge_file_HWKZHW
 {
     return [
         Forms\Components\Tabs::make('User Information')

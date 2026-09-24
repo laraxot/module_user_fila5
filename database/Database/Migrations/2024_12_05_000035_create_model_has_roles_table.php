@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_Bze3x1
 <<<<<<< HEAD
 <<<<<<< .merge_file_FUkbHd
 
@@ -13,6 +14,8 @@ declare(strict_types=1);
 =======
 
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_hy2Yzp
 use Illuminate\Database\Schema\Blueprint;
 // ---- models ---
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -21,6 +24,7 @@ use Modules\Xot\Datas\XotData;
 /*
  * Class CreateModelHasRolesTable.
  */
+<<<<<<< .merge_file_Bze3x1
 <<<<<<< HEAD
 <<<<<<< .merge_file_FUkbHd
 return new class extends XotBaseMigration {
@@ -35,6 +39,10 @@ return new class extends XotBaseMigration {
 =======
 return new class extends XotBaseMigration {
 >>>>>>> df2ba808 (.)
+=======
+return new class extends XotBaseMigration
+{
+>>>>>>> .merge_file_hy2Yzp
     /**
      * Run the migrations.
      */
@@ -54,14 +62,18 @@ return new class extends XotBaseMigration {
             if (! $this->hasColumn('team_id')) {
                 $table->foreignIdFor($team_class, 'team_id')->nullable();
             }
+<<<<<<< .merge_file_Bze3x1
 <<<<<<< HEAD
 <<<<<<< .merge_file_FUkbHd
 =======
 <<<<<<< .merge_file_i9zNTW
+=======
+>>>>>>> .merge_file_hy2Yzp
             if ($this->getColumnType('model_id') === 'uuid') {
                 $table->string('model_id', 36)->index()->change();
             }
             if ($this->getColumnType('role_id') === 'uuid') {
+<<<<<<< .merge_file_Bze3x1
 =======
 >>>>>>> .merge_file_DfJbVA
 =======
@@ -77,6 +89,8 @@ return new class extends XotBaseMigration {
 >>>>>>> .merge_file_DfJbVA
 =======
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_hy2Yzp
                 $table->integer('role_id')->index()->change();
             }
             $this->updateTimestamps($table);

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_IY31YQ
 <<<<<<< HEAD
 <<<<<<< .merge_file_f6H5sK
 
@@ -15,6 +16,8 @@ use PHPUnit\Framework\Assert;
 uses(Modules\User\Tests\TestCase::class);
 =======
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_KfNAsx
 use Modules\User\Actions\Otp\Hasher;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;

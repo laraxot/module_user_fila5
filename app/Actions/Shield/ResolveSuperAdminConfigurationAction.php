@@ -40,6 +40,7 @@ class ResolveSuperAdminConfigurationAction
         ];
     }
 
+<<<<<<< .merge_file_ZQdcKs
 <<<<<<< HEAD
 <<<<<<< .merge_file_Nj6mmK
 =======
@@ -62,6 +63,8 @@ class ResolveSuperAdminConfigurationAction
 =======
 >>>>>>> df2ba808 (.)
 =======
+=======
+>>>>>>> .merge_file_5eEEEe
     private function toBoolean(bool $value): bool
     {
         return $value;
@@ -70,11 +73,14 @@ class ResolveSuperAdminConfigurationAction
     private function toString(string $value): string
     {
         return $value;
+<<<<<<< .merge_file_ZQdcKs
 <<<<<<< HEAD
 >>>>>>> .merge_file_rwgIoa
 =======
 >>>>>>> .merge_file_KFtagk
 >>>>>>> .merge_file_p7o6qL
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_5eEEEe
     }
 }

@@ -118,7 +118,7 @@ describe('User Password Management', function () {
         ]);
         \assert($user instanceof UserContract);
         $passwordExpiresAt = $user->password_expires_at;
-        \assert(null !== $passwordExpiresAt);
+        \assert($passwordExpiresAt !== null);
 
         expect($passwordExpiresAt->isPast())->toBe(true);
     });
@@ -130,7 +130,7 @@ describe('User Password Management', function () {
         ]);
 
         $passwordExpiresAt = TestCase::requireFreshUser(TestCase::requireUser())->password_expires_at;
-        \assert(null !== $passwordExpiresAt);
+        \assert($passwordExpiresAt !== null);
 
         expect($passwordExpiresAt->toDateString())
             ->toBe($expirationDate->toDateString());
@@ -170,7 +170,7 @@ describe('User Email Verification', function () {
         $user->markEmailAsVerified();
 
         $fresh = $user->fresh();
-        \assert(null !== $fresh);
+        \assert($fresh !== null);
 
         expect($fresh->email_verified_at)->not->toBeNull();
     });

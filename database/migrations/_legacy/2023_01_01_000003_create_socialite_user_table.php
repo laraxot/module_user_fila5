@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_EceARd
 <<<<<<< HEAD
 <<<<<<< .merge_file_CEMIKG
 
@@ -16,11 +17,14 @@ declare(strict_types=1);
 >>>>>>> .merge_file_irQSH5
 >>>>>>> .merge_file_7j65fb
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_kg2m9m
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     /**
      * Run the migrations.
      */
@@ -53,7 +57,7 @@ return new class extends XotBaseMigration {
             // if (! $this->hasColumn('email')) {
             //    $table->string('email')->nullable();
             // }
-            if ('varchar' === $this->getColumnType('token')) {
+            if ($this->getColumnType('token') === 'varchar') {
                 $table->text('token')->nullable()->change();
             }
             $this->updateTimestamps($table);

@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_GF9N1m
 <<<<<<< HEAD
 <<<<<<< .merge_file_ifptes
 
@@ -16,6 +17,8 @@ declare(strict_types=1);
 >>>>>>> .merge_file_3ycxn1
 >>>>>>> .merge_file_VGNj70
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_P0WXUZ
 /*
  * Chiavi lette da Modules\Xot\Traits\EnumTrait tramite TransTrait::transClass():
  * la chiave e' `<modulo>::<snake(NomeClasse)>.values.<valore>.<attributo>`.

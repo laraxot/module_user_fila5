@@ -55,6 +55,7 @@ Vedi [WorkOrder profile-schema-ownership](../../../WorkOrder/docs/profile-schema
 php artisan migrate
 # SHOW COLUMNS: id bigint unsigned auto_increment
 ```
+<<<<<<< .merge_file_tGHz0Z
 <<<<<<< HEAD
 <<<<<<< .merge_file_Ey76iS
 =======
@@ -63,6 +64,8 @@ php artisan migrate
 <<<<<<< .merge_file_1Jxchl
 >>>>>>> df2ba808 (.)
 =======
+=======
+>>>>>>> .merge_file_jUUnAL
 
 ## Fix restaurant_fila5 (2026-09-04)
 
@@ -92,9 +95,12 @@ Correzioni:
 6. Config `Modules/Cms/app/Config/xra.php` + lowercase duplicato: aggiunto `use Modules\User\Models\User; use Modules\User\Models\Profile;` per `::class` literals
 
 Verifica login funzionante → composer/pint/phpstan green sui file chiave.
+<<<<<<< .merge_file_tGHz0Z
 <<<<<<< HEAD
 >>>>>>> .merge_file_tOdVH0
 =======
 >>>>>>> .merge_file_tBiYlA
 >>>>>>> .merge_file_RhKiUw
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_jUUnAL

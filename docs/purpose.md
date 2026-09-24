@@ -5,6 +5,7 @@ status: active
 created: 2026-09-02
 tags: [user, purpose, identita, autorizzazione, profilo, oauth, team]
 qmd: "user scopo modulo identita autorizzazione profilo oauth passport team ruoli permessi contract"
+<<<<<<< .merge_file_TIPf1F
 <<<<<<< HEAD
 <<<<<<< .merge_file_VEJT2I
 =======
@@ -27,6 +28,8 @@ discussions:
 =======
 >>>>>>> df2ba808 (.)
 =======
+=======
+>>>>>>> .merge_file_Pn1voA
 updated: 2026-09-22
 issues:
   # gh ora autenticato (2026-09-22). Nota: governance provtv vs laraxot
@@ -35,12 +38,15 @@ issues:
   - "https://github.com/laraxot/module_user_fila5/issues/110"
 discussions:
   - "https://github.com/laraxot/module_user_fila5/discussions/104"
+<<<<<<< .merge_file_TIPf1F
 <<<<<<< HEAD
 >>>>>>> .merge_file_MBQcl3
 =======
 >>>>>>> .merge_file_Slxqiy
 >>>>>>> .merge_file_r4i4AS
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_Pn1voA
 ---
 
 # User — perche' esiste
@@ -52,6 +58,7 @@ chi. Tutto il resto che si sa di una persona appartiene al dominio, non a User.*
 
 ## L'evidenza
 
+<<<<<<< .merge_file_TIPf1F
 <<<<<<< HEAD
 <<<<<<< .merge_file_VEJT2I
 =======
@@ -73,6 +80,11 @@ chi. Tutto il resto che si sa di una persona appartiene al dominio, non a User.*
 >>>>>>> .merge_file_Slxqiy
 >>>>>>> .merge_file_r4i4AS
 >>>>>>> df2ba808 (.)
+=======
+- 666 file PHP, 57 Action, **26 Widget** (corretto il 2026-09-22, era stimato 20):
+  il numero di widget dice che qui l'interfaccia conta — login, profilo, gestione
+  team sono superfici che l'utente tocca davvero.
+>>>>>>> .merge_file_Pn1voA
 - OAuth completo (`OauthClient`, `OauthAccessToken`, `OauthRefreshToken`,
   `OauthAuthCode`, `OauthPersonalAccessClient`): non solo login web, anche accesso
   programmatico.
@@ -101,6 +113,7 @@ la dipendenza.
 
 ## Come raggiungerlo **meglio**
 
+<<<<<<< .merge_file_TIPf1F
 <<<<<<< HEAD
 <<<<<<< .merge_file_VEJT2I
 =======
@@ -123,6 +136,8 @@ Un badge che mente e' peggio di un badge assente: fa saltare la verifica a chi l
 =======
 >>>>>>> df2ba808 (.)
 =======
+=======
+>>>>>>> .merge_file_Pn1voA
 ### 1. ~~Il README dichiara cose false~~ — RISOLTO il 2026-09-02
 
 **Aggiornamento 2026-09-22:** questa azione era gia' stata completata lo stesso
@@ -131,12 +146,15 @@ corretti (Laravel `^13.0`, PHP `^8.3`, Filament `^5.0`, PHPStan `max`/0 errori)
 con nota esplicita "misurati il 2026-09-02". Era questo documento a essere
 rimasto stale, non il README — verificato con lettura diretta del file, non
 per deduzione. Nessuna azione residua qui.
+<<<<<<< .merge_file_TIPf1F
 <<<<<<< HEAD
 >>>>>>> .merge_file_MBQcl3
 =======
 >>>>>>> .merge_file_Slxqiy
 >>>>>>> .merge_file_r4i4AS
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_Pn1voA
 
 ### 2. 666 file PHP e un README di 56 righe
 
@@ -151,6 +169,7 @@ guardare per: login, ruoli e permessi, team, profilo, OAuth, feature flag. Sei v
 Con Spatie Permission il rischio e' che il vero elenco dei permessi viva solo nel
 seeder. Chi deve capire "chi puo' approvare una scheda" finisce a leggere codice.
 
+<<<<<<< .merge_file_TIPf1F
 <<<<<<< HEAD
 <<<<<<< .merge_file_VEJT2I
 =======
@@ -169,6 +188,8 @@ sicurezza, e' un bug.
 =======
 >>>>>>> df2ba808 (.)
 =======
+=======
+>>>>>>> .merge_file_Pn1voA
 **Aggiornamento 2026-09-22 — gap confermato, piu' grave del previsto:**
 `docs/permissions.md` esiste ma contiene il contenuto di un altro modulo
 (dominio Patient/Gdpr "moderazione medici", frontmatter che punta a
@@ -183,12 +204,15 @@ risorse nega sempre, in silenzio: e' un bug di sicurezza, non teorico.
 Dettaglio e piano: [module-excellence-prd.md#fr-141](./bmad/module-excellence-prd.md),
 story [14.1](./stories/14.1.permissions-matrix-silent-deny-gap.story.md)
 e [12.5](./stories/12.5.permissions-doc-wrong-module-content.story.md).
+<<<<<<< .merge_file_TIPf1F
 <<<<<<< HEAD
 >>>>>>> .merge_file_MBQcl3
 =======
 >>>>>>> .merge_file_Slxqiy
 >>>>>>> .merge_file_r4i4AS
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_Pn1voA
 
 ### 4. Team e multi-tenancy non devono sovrapporsi
 
@@ -199,6 +223,7 @@ nessuno dei due documenti la descrive.
 **Azione:** dichiarare qui quale dei due e' il confine dei dati e quale
 l'organizzazione interna. Una frase, ma va scritta.
 
+<<<<<<< .merge_file_TIPf1F
 <<<<<<< HEAD
 <<<<<<< .merge_file_VEJT2I
 =======
@@ -220,6 +245,8 @@ c'e' gia': manca la domanda.
 =======
 >>>>>>> df2ba808 (.)
 =======
+=======
+>>>>>>> .merge_file_Pn1voA
 ### 5. ~~Il log di accesso va usato, non solo scritto~~ — PARZIALE, corretto il 2026-09-22
 
 **Aggiornamento 2026-09-22:** il claim "nessuna schermata interroga" era
@@ -229,12 +256,15 @@ mostrano questi dati in UI. Il gap reale e' piu' stretto di quanto
 scritto qui in origine: manca solo l'**euristica di anomalia** (nuovo
 dispositivo mai visto, orario inusuale) sopra la UI gia' esistente —
 vedi story [14.3](./stories/14.3.auth-log-device-anomaly-view.story.md).
+<<<<<<< .merge_file_TIPf1F
 <<<<<<< HEAD
 >>>>>>> .merge_file_MBQcl3
 =======
 >>>>>>> .merge_file_Slxqiy
 >>>>>>> .merge_file_r4i4AS
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_Pn1voA
 
 ## Confini — cosa **non** appartiene a User
 
@@ -247,6 +277,7 @@ vedi story [14.3](./stories/14.3.auth-log-device-anomaly-view.story.md).
 
 - `laravel/Modules/Tenant/docs/purpose.md` — l'altro asse di separazione
 - `laravel/Modules/Xot/docs/purpose.md` — `ProfileContract` e le classi base
+<<<<<<< .merge_file_TIPf1F
 <<<<<<< HEAD
 <<<<<<< .merge_file_VEJT2I
 =======
@@ -255,15 +286,20 @@ vedi story [14.3](./stories/14.3.auth-log-device-anomaly-view.story.md).
 <<<<<<< .merge_file_np4mb0
 >>>>>>> df2ba808 (.)
 =======
+=======
+>>>>>>> .merge_file_Pn1voA
 - [docs/bmad/module-excellence-prd.md](./bmad/module-excellence-prd.md) — catalogo
   completo dei gap verso la "perfezione assoluta" (Epic 12/13/14), 2026-09-22
 - [docs/bmad/decision-log.md](./bmad/decision-log.md) — entry 2026-09-22 con il
   dettaglio delle correzioni fatte a questo documento
 - `docs/scopo.md` — duplicato bilingue di questo file, da unificare
   (story [12.6](./stories/12.6.purpose-scopo-duplicate-and-stale.story.md))
+<<<<<<< .merge_file_TIPf1F
 <<<<<<< HEAD
 >>>>>>> .merge_file_MBQcl3
 =======
 >>>>>>> .merge_file_Slxqiy
 >>>>>>> .merge_file_r4i4AS
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_Pn1voA

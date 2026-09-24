@@ -17,7 +17,7 @@ class AssignFreeCreditsListener
     /**
      * Crediti iniziali gratuiti per nuovi utenti.
      */
-    private const FREE_STARTING_CREDITS = 500;
+    private const int FREE_STARTING_CREDITS = 500;
 
     /**
      * Handle the event.

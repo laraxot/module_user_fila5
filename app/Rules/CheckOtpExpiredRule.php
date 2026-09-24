@@ -19,14 +19,13 @@ class CheckOtpExpiredRule implements ValidationRule
 
     public function __construct(
         private UserContract $user,
-    ) {
-    }
+    ) {}
 
     /**
      * Run the validation rule.
      *
-     * @param mixed $_value value under validation; `mixed` is required by the
-     *                      ValidationRule vendor contract and stays unused here
+     * @param  mixed  $_value  Value under validation; `mixed` is required by the
+     *                         ValidationRule vendor contract and stays unused here.
      */
     public function validate(string $_attribute, mixed $_value, \Closure $fail): void
     {

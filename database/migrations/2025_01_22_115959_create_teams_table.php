@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_ON6otn
 <<<<<<< HEAD
 <<<<<<< .merge_file_EiaMyt
 
@@ -16,11 +17,14 @@ declare(strict_types=1);
 >>>>>>> .merge_file_9eyD2z
 >>>>>>> .merge_file_5135dd
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_rDeXtl
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Team;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     protected ?string $model_class = Team::class;
 
     public function up(): void

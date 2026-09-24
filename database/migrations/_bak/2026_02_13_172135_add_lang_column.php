@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_0EZElo
 <<<<<<< HEAD
 <<<<<<< .merge_file_XBTWvN
 
@@ -16,11 +17,14 @@ declare(strict_types=1);
 >>>>>>> .merge_file_xg1CZp
 >>>>>>> .merge_file_ADwD8m
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_nnRqYq
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\User;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     protected ?string $model_class = User::class;
 
     public function up(): void

@@ -1,6 +1,9 @@
+<<<<<<< .merge_file_uBB7FZ
 <<<<<<< HEAD
 <<<<<<< .merge_file_GuuuYx
 =======
+=======
+>>>>>>> .merge_file_rjQQA2
 ---
 title: "User Module - Quality Status (November 2025)"
 type: concept
@@ -21,9 +24,13 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< .merge_file_uBB7FZ
 >>>>>>> .merge_file_x5PhcL
 =======
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> 87273113 (.)
+>>>>>>> .merge_file_rjQQA2
 # User Module - Quality Status (November 2025)
 
 ## 🎯 Overview

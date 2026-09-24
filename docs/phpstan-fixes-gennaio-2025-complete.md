@@ -2,8 +2,6 @@
 module: theme
 topic: phpstan-fixes-gennaio-2025-complete
 canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-2025-complete.md
-<<<<<<< .merge_file_1eYQM4
-=======
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -13,7 +11,7 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
->>>>>>> .merge_file_Ppv4H5
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-2025-complete.md
+>>>>>>> 87273113 (.)

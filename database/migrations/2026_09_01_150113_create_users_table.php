@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_lkIL7p
 <<<<<<< HEAD
 <<<<<<< .merge_file_ytBBVa
 
@@ -16,6 +17,8 @@ declare(strict_types=1);
 >>>>>>> .merge_file_OGrFSG
 >>>>>>> .merge_file_ZbXgJY
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_NrsL5G
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Modules\User\Models\User;
@@ -28,7 +31,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Owner migration `User::users` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: ['uuid'].
  */
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     protected ?string $model_class = User::class;
 
     /**
@@ -120,7 +124,7 @@ return new class extends XotBaseMigration {
                 $table->string('password')->nullable()->change();
             }
 
-            if ('uuid' === $this->getColumnType('id')) {
+            if ($this->getColumnType('id') === 'uuid') {
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);

@@ -35,6 +35,7 @@ class ResolveFilamentUserConfigurationAction
         ];
     }
 
+<<<<<<< .merge_file_SCLMk9
 <<<<<<< HEAD
 <<<<<<< .merge_file_P0Zufg
 =======
@@ -57,6 +58,8 @@ class ResolveFilamentUserConfigurationAction
 =======
 >>>>>>> df2ba808 (.)
 =======
+=======
+>>>>>>> .merge_file_so6cI6
     private function toBoolean(bool $value): bool
     {
         return $value;
@@ -65,11 +68,14 @@ class ResolveFilamentUserConfigurationAction
     private function toString(string $value): string
     {
         return $value;
+<<<<<<< .merge_file_SCLMk9
 <<<<<<< HEAD
 >>>>>>> .merge_file_VMpT86
 =======
 >>>>>>> .merge_file_meANDf
 >>>>>>> .merge_file_mGcD9o
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_so6cI6
     }
 }

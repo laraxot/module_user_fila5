@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< .merge_file_rBbAYb
 <<<<<<< HEAD
 <<<<<<< .merge_file_ozcIZg
 =======
@@ -20,16 +21,21 @@ declare(strict_types=1);
 =======
 >>>>>>> df2ba808 (.)
 =======
+=======
+>>>>>>> .merge_file_pljwXC
 declare(strict_types=1);
 /**
  * ---.
  */
+<<<<<<< .merge_file_rBbAYb
 <<<<<<< HEAD
 >>>>>>> .merge_file_B7scwV
 =======
 >>>>>>> .merge_file_CZ71RJ
 >>>>>>> .merge_file_acRCi5
 >>>>>>> df2ba808 (.)
+=======
+>>>>>>> .merge_file_pljwXC
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
@@ -37,7 +43,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Owner migration `User::teams` (consolidamento 2026-09-01).
  * Colonne unione viste nei duplicati non presenti qui: nessuna.
  */
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     /**
      * Esegue la migrazione.
      */
