@@ -1,7 +1,6 @@
 ---
 module: theme
 topic: service-provider-warning-1
-<<<<<<< HEAD
 canonical: ../../../Themes/docs/shared-components/service-provider-warning-2.md
 related:
   - "./00-index-1.md"
@@ -15,9 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/service-provider-warning-2.md
-=======
-canonical: ../../../Themes/docs/shared-components/service_provider_warning.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/service_provider_warning.md
->>>>>>> 350420cb (Check & fix styling)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Risoluzione dei Conflitti Git nel Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Risoluzione dei Conflitti Git nel Modulo User
 
 ## Panoramica
@@ -90,10 +87,5 @@ Le modifiche apportate garantiscono:
 - [Best Practices Filament](/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/modules/user/docs/filament_best_practices.md)
 - [Regole di Traduzione](/var/www/html/_bases/base_<nome progetto>_fila5_mono/docs/translations_rules.md)
 - [PHPStan Livello 9](/var/www/html/_bases/base_<nome progetto>_fila5_mono/docs/phpstan/phpstan_livello9_linee_guida.md)
-<<<<<<< HEAD
 - [Implementazione Login](/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/modules/user/docs/auth-login-implementation.md)
 - [Implementazione Logout](/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/modules/user/docs/auth-logout-implementation.md)
-=======
-- [Implementazione Login](/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/modules/user/docs/auth_login_implementation.md)
-- [Implementazione Logout](/var/www/html/_bases/base_<nome progetto>_fila5_mono/laravel/modules/user/docs/auth_logout_implementation.md)
->>>>>>> 350420cb (Check & fix styling)

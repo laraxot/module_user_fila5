@@ -1,17 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_koYtKe
-<<<<<<< HEAD
-<<<<<<< .merge_file_f6H5sK
-
-=======
->>>>>>> .merge_file_WfmX6F
-=======
-
->>>>>>> 350420cb (Check & fix styling)
-=======
->>>>>>> .merge_file_yTq6xp
 use Modules\User\Actions\Otp\Hasher;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;

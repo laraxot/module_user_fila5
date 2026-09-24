@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Lezioni Apprese dall'Errore Gravissimo delle Factory"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Lezioni Apprese dall'Errore Gravissimo delle Factory
 
 ## L'Errore Gravissimo
@@ -178,7 +175,3 @@ done
 **🚨 ERRORE GRAVISSIMO DA NON RIPETERE MAI PIÙ**
 
 Ogni model DEVE avere la sua factory. È obbligatorio per il corretto funzionamento del sistema.
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)

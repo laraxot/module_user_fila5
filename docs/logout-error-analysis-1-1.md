@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi Errore Logout"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Analisi Errore Logout
 
 ## Problema Identificato
@@ -144,9 +141,5 @@ class LogoutWidget extends XotBaseWidget
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
-<<<<<<< HEAD
 - [Gestione Sessione](./session-management.md)
-=======
-- [Gestione Sessione](./SESSION_MANAGEMENT.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Documentazione Blade](https://laravel.com/docs/10.x/blade) 

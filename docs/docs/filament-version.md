@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Filament Version Declaration — {ModuleOrThemeName}"
 type: concept
@@ -12,8 +11,6 @@ related:
   - "./confidence-guidelines.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Filament Version Declaration — {ModuleOrThemeName}
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)

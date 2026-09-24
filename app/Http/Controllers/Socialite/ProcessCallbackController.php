@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)
 /**
  * @see DutchCodingCompany\FilamentSocialite.
  */
@@ -23,10 +19,6 @@ use Modules\User\Actions\Socialite\RegisterOauthUserAction;
 use Modules\User\Actions\Socialite\RegisterSocialiteUserAction;
 use Modules\User\Actions\Socialite\RetrieveOauthUserAction;
 use Modules\User\Actions\Socialite\RetrieveSocialiteUserAction;
-<<<<<<< HEAD
-=======
-use Modules\User\Actions\Socialite\SetDefaultRolesBySocialiteUserAction;
->>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Actions\Socialite\ValidateProviderAction;
 use Modules\User\Events\RegistrationNotEnabled;
 use Modules\User\Events\UserNotAllowed;
@@ -63,14 +55,6 @@ class ProcessCallbackController extends Controller
         $socialiteUser = app(RetrieveSocialiteUserAction::class)->execute($provider, $oauthUser);
         if ($socialiteUser) {
             $socialiteUserObj = $socialiteUser->user;
-<<<<<<< HEAD
-=======
-            if (null === $socialiteUserObj || ! $socialiteUserObj->canAccessSocialite()) {
-                return app(RedirectToLoginAction::class)->execute('auth.user-not-allowed');
-            }
-            // Associate default roles to the existing "real" user, if needed
-            app(SetDefaultRolesBySocialiteUserAction::class)->execute($provider, $socialiteUserObj, $oauthUser);
->>>>>>> 350420cb (Check & fix styling)
 
             return app(LoginUserAction::class)->execute($socialiteUser);
         }

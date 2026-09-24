@@ -1,17 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_z9g2Se
-<<<<<<< HEAD
-<<<<<<< .merge_file_eiRun1
-
-=======
->>>>>>> .merge_file_FMlYxv
-=======
-
->>>>>>> 350420cb (Check & fix styling)
-=======
->>>>>>> .merge_file_V1moSa
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Il Grande Dibattito Furioso: PHPStan Level 10 - La Verità Assoluta"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Il Grande Dibattito Furioso: PHPStan Level 10 - La Verità Assoluta
 
 **Data**: 2025-01-22
@@ -186,11 +183,7 @@ Ogni modulo corretto è un traguardo.
 
 - [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
-<<<<<<< HEAD
 - [DRY/KISS Principles](../../../docs/architecture/dry-kiss-principles.md)
-=======
-- [DRY/KISS Principles](../../../../docs/architecture/dry-kiss-principles.md)
->>>>>>> 350420cb (Check & fix styling)
 
 ---
 

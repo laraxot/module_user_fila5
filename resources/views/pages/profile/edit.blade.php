@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 /**
  * ---.
  */
@@ -24,19 +23,10 @@ use Webmozart\Assert\Assert;
 use function Livewire\Volt\layout;
 use function Laravel\Folio\middleware;
 use function Laravel\Folio\name;
-=======
-
-use Modules\User\View\Pages\ProfileEditVoltComponent;
-
-use function Laravel\Folio\middleware;
-use function Laravel\Folio\name;
-use function Livewire\Volt\layout;
->>>>>>> 350420cb (Check & fix styling)
 
 name('profile.edit');
 layout('x-layouts.app');
 middleware(['auth', 'verified']);
-<<<<<<< HEAD
 // middleware(['web']); // redundant if auth is used, but safe to add if needed.
 // Actually, FolioVoltServiceProvider adds web to everything now.
 
@@ -534,10 +524,6 @@ $component = new class extends Component {
         ];
     }
 };
-=======
-
-new ProfileEditVoltComponent();
->>>>>>> 350420cb (Check & fix styling)
 
 ?>
 

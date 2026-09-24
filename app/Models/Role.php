@@ -1,23 +1,14 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 350420cb (Check & fix styling)
 /**
  * ---.
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 350420cb (Check & fix styling)
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -26,12 +17,6 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
-=======
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Support\Carbon;
->>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
@@ -42,45 +27,6 @@ use Webmozart\Assert\Assert;
 /**
  * Modules\User\Models\Role.
  *
-<<<<<<< .merge_file_PGHQ2g
-<<<<<<< HEAD
- * @property int                                 $id
- * @property string                              $uuid
- * @property string|null                         $team_id
- * @property string                              $name
- * @property string                              $guard_name
- * @property string|null                         $display_name
- * @property string|null                         $description
- * @property Carbon|null                         $created_at
- * @property Carbon|null                         $updated_at
- * @property string|null                         $updated_by
- * @property string|null                         $created_by
- * @property Collection<int, Permission>         $permissions
- * @property int|null                            $permissions_count
- * @property Team|null                           $team
- * @property Collection<int, Model&UserContract> $users
- * @property int|null                            $users_count
- * @property PermissionRole|null                 $pivot
-=======
- * @property int                                                        $id
- * @property string                                                     $uuid
- * @property string|null                                                $team_id
- * @property string                                                     $name
- * @property string                                                     $guard_name
- * @property string|null                                                $display_name
- * @property string|null                                                $description
- * @property Carbon|null                                                $created_at
- * @property Carbon|null                                                $updated_at
- * @property string|null                                                $updated_by
- * @property string|null                                                $created_by
- * @property Collection<int, Permission>                                $permissions
- * @property int|null                                                   $permissions_count
- * @property Team|null                                                  $team
- * @property Collection<int, Model&\Modules\Xot\Contracts\UserContract> $users
- * @property int|null                                                   $users_count
- * @property PermissionRole|null                                        $pivot
->>>>>>> 350420cb (Check & fix styling)
-=======
  * @property int $id
  * @property string $uuid
  * @property string|null $team_id
@@ -98,7 +44,6 @@ use Webmozart\Assert\Assert;
  * @property Collection<int, Model&UserContract> $users
  * @property int|null $users_count
  * @property PermissionRole|null $pivot
->>>>>>> .merge_file_J4C0qy
  *
  * @method static Builder|Role newModelQuery()
  * @method static Builder|Role newQuery()
@@ -118,15 +63,9 @@ use Webmozart\Assert\Assert;
  * @method static static firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  *
-<<<<<<< HEAD
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
-=======
- * @property \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property \Modules\Xot\Contracts\ProfileContract|null $deleter
- * @property \Modules\Xot\Contracts\ProfileContract|null $updater
->>>>>>> 350420cb (Check & fix styling)
  *
  * @method static \Modules\User\Database\Factories\RoleFactory factory($count = null, $state = [])
  * @method static Builder<static>|Role whereUuid($value)
@@ -135,17 +74,12 @@ use Webmozart\Assert\Assert;
  */
 class Role extends SpatieRole
 {
-<<<<<<< HEAD
-=======
-    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
->>>>>>> 350420cb (Check & fix styling)
     use HasXotFactory;
     use RelationX;
     use Updater;
 
     // use HasUuids;
 
-<<<<<<< HEAD
     final public const int ROLE_ADMINISTRATOR = 1;
 
     final public const int ROLE_OWNER = 2;
@@ -154,18 +88,6 @@ class Role extends SpatieRole
 
     protected $connection = 'user';
 
-=======
-    final public const ROLE_ADMINISTRATOR = 1;
-
-    final public const ROLE_OWNER = 2;
-
-    final public const ROLE_USER = 3;
-
-    /** @var string */
-    protected $connection = 'user';
-
-    /** @var string */
->>>>>>> 350420cb (Check & fix styling)
     protected $keyType = 'int';
 
     /** @var list<string> */
@@ -187,11 +109,6 @@ class Role extends SpatieRole
     }
 
     /**
-<<<<<<< HEAD
-=======
-     * Get all of the teams the user belongs to.
-     *
->>>>>>> 350420cb (Check & fix styling)
      * @return BelongsTo<Model, $this>
      */
     public function team(): BelongsTo
@@ -204,13 +121,7 @@ class Role extends SpatieRole
     }
 
     /**
-<<<<<<< HEAD
      * @return BelongsToMany<Permission, $this, Pivot, 'pivot'>
-=======
-     * A role may be given various permissions.
-     *
-     * @return BelongsToMany<Permission, $this>
->>>>>>> 350420cb (Check & fix styling)
      */
     public function permissions(): BelongsToMany
     {

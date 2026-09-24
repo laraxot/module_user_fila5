@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Correzioni Ereditarietà Modelli - Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Correzioni Ereditarietà Modelli - Modulo User
 
 ## Data Implementazione
@@ -210,11 +207,7 @@ cd /var/www/_bases/base_Quaeris_fila5_mono/laravel/Modules/User
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Analisi Completa](./model-inheritance-analysis-5.md)
-=======
-- [Analisi Completa](./model_inheritance_analysis.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)
 - [BasePivot](../app/Models/BasePivot.php)

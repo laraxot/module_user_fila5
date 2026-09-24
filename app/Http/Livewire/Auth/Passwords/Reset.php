@@ -70,16 +70,9 @@ class Reset extends Component
                 $this->guard()->login($user);
             },
         );
-<<<<<<< HEAD
 
-<<<<<<< .merge_file_gcSQsI
-=======
->>>>>>> 350420cb (Check & fix styling)
-        Assert::string($response_lang = trans((string) $response));
-=======
         Assert::string($response);
         $response_lang = SafeStringCastAction::cast(trans($response));
->>>>>>> .merge_file_ZjHID2
 
         if ($response === Password::PASSWORD_RESET) {
             session()->flash($response_lang);

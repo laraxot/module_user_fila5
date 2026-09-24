@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "📋 RISOLUZIONE COMPLETA DUPLICATI MIGRATION ROLES"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # 📋 RISOLUZIONE COMPLETA DUPLICATI MIGRATION ROLES
 
 ## 🚨 PROBLEMA IDENTIFICATO

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "👥 USER MODULE - ROADMAP 2025"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # 👥 USER MODULE - ROADMAP 2025
 
 **Modulo**: User (Authentication & Authorization)  

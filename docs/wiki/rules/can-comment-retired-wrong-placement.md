@@ -7,7 +7,6 @@ created: 2026-06-10
 updated: 2026-06-18
 qmd: "User CanComment Comment module dependency retired BaseUser no comment"
 issues:
-<<<<<<< HEAD
 discussions:
 related:
   - "./agent-confidence-protocol.md"
@@ -18,13 +17,6 @@ related:
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
-=======
-  - "https://github.com/provtv/base_ptv_fila5_mono/issues/102"
-discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
-related:
-  - ../concepts/no-comment-module-dependency.md
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # CanComment — non più in User

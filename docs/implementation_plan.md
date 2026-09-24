@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Piano di Implementazione Componenti Header"
 module: user
@@ -8,8 +7,6 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Piano di Implementazione Componenti Header
 
 ## Fase 1: Setup Struttura
@@ -175,15 +172,9 @@ class NavigationTest extends TestCase
 ## Fase 7: Documentazione
 
 ### 7.1 Aggiornare
-<<<<<<< HEAD
 - [Header Components](./HEADER_COMPONENTS.md)
 - [Navigation Structure](./NAVIGATION_STRUCTURE.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md)
-=======
-- [Header Components](./header_components.md)
-- [Navigation Structure](./navigation_structure.md)
-- [Security Best Practices](./security_best_practices.md)
->>>>>>> 350420cb (Check & fix styling)
 
 ## Timeline
 
@@ -210,12 +201,6 @@ class NavigationTest extends TestCase
    - Cache settings
 
 ## Collegamenti Correlati
-<<<<<<< HEAD
 - [Header Components](./HEADER_COMPONENTS.md)
 - [Navigation Structure](./NAVIGATION_STRUCTURE.md)
 - [Security Best Practices](./SECURITY_BEST_PRACTICES.md) 
-=======
-- [Header Components](./header_components.md)
-- [Navigation Structure](./navigation_structure.md)
-- [Security Best Practices](./security_best_practices.md) 
->>>>>>> 350420cb (Check & fix styling)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Internal Analysis: Migration Philosophy Approaches"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Internal Analysis: Migration Philosophy Approaches
 
 ## 🥊 Philosophical Battle: Two Approaches Clash

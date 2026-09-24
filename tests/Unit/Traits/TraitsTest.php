@@ -1,19 +1,11 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Modules\User\Tests\TestCase;
 use Modules\User\Traits\PasswordValidationRules;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-=======
-
-use Modules\User\Traits\PasswordValidationRules;
-use PHPUnit\Framework\Assert;
-
-uses(Modules\User\Tests\TestCase::class);
->>>>>>> 350420cb (Check & fix styling)
 
 test('PasswordValidationRules trait can be used', function (): void {
     Assert::assertTrue(trait_exists(PasswordValidationRules::class));

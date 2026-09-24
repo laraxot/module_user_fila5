@@ -2,7 +2,6 @@
 module: theme
 topic: two-factor-1
 canonical: ../../../../Themes/docs/shared-components/two-factor.md
-<<<<<<< HEAD
 related:
   - "./eav.md"
   - "./filament.md"
@@ -12,8 +11,6 @@ related:
   - "./passport.md"
   - "./payment.md"
   - "./phpstan.md"
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/two-factor.md

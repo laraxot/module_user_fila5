@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)
 /**
  * @see Jeffgreco13\FilamentBreezy\Pages
  * @see https://www.filamentcomponents.com/blog/how-to-create-a-custom-profile-page-with-filamentphp
@@ -139,11 +135,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
 
     public function getSubheading(): ?string
     {
-<<<<<<< HEAD
         return __('user::profile.subheading');
-=======
-        return __('user::profile.subheading') ?? null;
->>>>>>> 350420cb (Check & fix styling)
     }
 
     // public static function shouldRegisterNavigation(): bool
@@ -160,10 +152,6 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     // {
     //     return filament('filament-breezy')->getRegisteredMyProfileComponents();
     // }
-<<<<<<< HEAD
-=======
-    /** @return array<int, TextInput> */
->>>>>>> 350420cb (Check & fix styling)
     public function getFormSchema(): array
     {
         return [
@@ -221,10 +209,6 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         $this->sendSuccessNotification();
     }
 
-<<<<<<< HEAD
-=======
-    /** @return array<int, string> */
->>>>>>> 350420cb (Check & fix styling)
     protected function getForms(): array
     {
         return [
@@ -242,10 +226,6 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         $this->editPasswordForm->fill();
     }
 
-<<<<<<< HEAD
-=======
-    /** @return array<int, Action> */
->>>>>>> 350420cb (Check & fix styling)
     protected function getFormActions(): array
     {
         return [
@@ -267,13 +247,9 @@ class MyProfilePage extends XotBasePage implements HasSchemas
      * }
      */
 
-<<<<<<< HEAD
     /**
      * @return array<Action>
      */
-=======
-    /** @return array<int, Action> */
->>>>>>> 350420cb (Check & fix styling)
     protected function getUpdateProfileFormActions(): array
     {
         return [
@@ -281,13 +257,9 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         ];
     }
 
-<<<<<<< HEAD
     /**
      * @return array<Action>
      */
-=======
-    /** @return array<int, Action> */
->>>>>>> 350420cb (Check & fix styling)
     protected function getUpdatePasswordFormActions(): array
     {
         return [

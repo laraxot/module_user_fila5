@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Goals - User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./03-workstreams.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Goals - User
 
 ## Short Term

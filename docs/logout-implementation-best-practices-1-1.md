@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Best Practices per l'Implementazione del Logout"
 type: concept
@@ -19,17 +18,11 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Best Practices per l'Implementazione del Logout 
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-<<<<<<< HEAD
 - [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
-=======
-- [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 

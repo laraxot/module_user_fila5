@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "PHPStan Level 10 Errors Resolution Roadmap - User Module"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # PHPStan Level 10 Errors Resolution Roadmap - User Module
 
 **Data**: 2025-01-27  
@@ -219,7 +216,3 @@ Tutti gli errori sono stati corretti:
     - Aggiornato modello per estendere `Laravel\Passport\DeviceCode` invece di `BaseModel` per conformità rigorosa ai tipi.
 3. **PHPMD**:
     - Aggiunto `@SuppressWarnings` per `StaticAccess` e `CouplingBetweenObjects` in `PassportServiceProvider`.
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)

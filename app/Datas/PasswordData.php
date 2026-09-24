@@ -1,27 +1,16 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 350420cb (Check & fix styling)
 /**
  * Classe per la gestione delle configurazioni delle password.
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 350420cb (Check & fix styling)
 namespace Modules\User\Datas;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\TextInput as FormsTextInput;
 use Illuminate\Validation\Rules\Password;
-<<<<<<< HEAD
 use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
-=======
->>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Traits\PasswordValidationRules;
 use Spatie\LaravelData\Data;
 
@@ -31,10 +20,7 @@ use Spatie\LaravelData\Data;
 class PasswordData extends Data
 {
     use PasswordValidationRules;
-<<<<<<< HEAD
 
-=======
->>>>>>> 350420cb (Check & fix styling)
     private static ?self $instance = null;
 
     public function __construct(
@@ -58,12 +44,7 @@ class PasswordData extends Data
     public static function make(): self
     {
         if (! self::$instance) {
-<<<<<<< HEAD
             $data = app(GetTenantConfigArrayAction::class)->execute('password');
-=======
-            /** @var array<string, mixed> $data */
-            $data = app(\Modules\Tenant\Actions\Config\GetTenantConfigArrayAction::class)->execute('password');
->>>>>>> 350420cb (Check & fix styling)
             self::$instance = self::from($data);
         }
 
@@ -180,11 +161,7 @@ class PasswordData extends Data
     /**
      * Get both password form components.
      *
-<<<<<<< HEAD
      * @return array<TextInput>
-=======
-     * @return array<int, TextInput>
->>>>>>> 350420cb (Check & fix styling)
      */
     public function getPasswordFormComponents(string $field_name): array
     {
@@ -203,11 +180,7 @@ class PasswordData extends Data
     /**
      * @return array<string, FormsTextInput>
      */
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public static function getFormSchema(): array
->>>>>>> 350420cb (Check & fix styling)
     {
         return [
             'password' => FormsTextInput::make('password')

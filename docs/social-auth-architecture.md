@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Social Authentication Architecture"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Social Authentication Architecture
 
 ## Overview

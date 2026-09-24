@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Piano di Implementazione Componenti Header"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Piano di Implementazione Componenti Header
 
 ## Fase 1: Setup Struttura
@@ -186,13 +183,8 @@ class NavigationTest extends TestCase
 ## Fase 7: Documentazione
 
 ### 7.1 Aggiornare
-<<<<<<< HEAD
 - [Header Components](./header-components.md)
 - [Navigation Structure](./navigation-structure-2.md)
-=======
-- [Header Components](./header_components.md)
-- [Navigation Structure](./navigation_structure.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Security Best Practices](./security_best_practices.md)
 
 ## Timeline
@@ -220,11 +212,6 @@ class NavigationTest extends TestCase
    - Cache settings
 
 ## Collegamenti Correlati
-<<<<<<< HEAD
 - [Header Components](./header-components.md)
 - [Navigation Structure](./navigation-structure-2.md)
-=======
-- [Header Components](./header_components.md)
-- [Navigation Structure](./navigation_structure.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Security Best Practices](./security_best_practices.md) 

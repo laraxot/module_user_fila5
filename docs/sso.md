@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "🔑 SINGLE SIGN-ON (SSO) - GUIDA IMPLEMENTAZIONE"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # 🔑 SINGLE SIGN-ON (SSO) - GUIDA IMPLEMENTAZIONE
 
 **Versione**: 1.0  

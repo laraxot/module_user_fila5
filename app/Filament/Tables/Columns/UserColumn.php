@@ -7,28 +7,10 @@ namespace Modules\User\Filament\Tables\Columns;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Filament\Tables\Columns\GroupColumn;
-<<<<<<< .merge_file_4dYYj7
-<<<<<<< HEAD
-<<<<<<< .merge_file_XjRbO8
-
-/**
- * Controparte in lista di {@see \Modules\User\Filament\Forms\Components\UserSection}.
-=======
-=======
->>>>>>> .merge_file_syOk42
 use Modules\User\Filament\Forms\Components\UserSection;
 
 /**
  * Controparte in lista di {@see UserSection}.
-<<<<<<< .merge_file_4dYYj7
->>>>>>> .merge_file_Tdv2rM
-=======
-
-/**
- * Controparte in lista di {@see \Modules\User\Filament\Forms\Components\UserSection}.
->>>>>>> 350420cb (Check & fix styling)
-=======
->>>>>>> .merge_file_syOk42
  *
  * Stessi campi anagrafici (`first_name`, `last_name`, `email`), due superfici: il form li edita,
  * la tabella li mostra raggruppati.

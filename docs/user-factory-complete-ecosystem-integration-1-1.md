@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Factory Complete Ecosystem Integration - FINAL DOCUMENTATION"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # User Factory Complete Ecosystem Integration - FINAL DOCUMENTATION
 
 ## 🎯 Integration Achievement

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Remaining TenantTest Failures - Analysis"
 type: concept
@@ -15,8 +14,6 @@ related:
   - "./tenanttest-fixes.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Remaining TenantTest Failures - Analysis
 
 ## Current Status

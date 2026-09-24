@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "OAuth Passport Model Wrappers"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # OAuth Passport Model Wrappers
 
 ## Pattern
@@ -35,11 +32,7 @@ Every Laravel Passport model that extends `Model` must have a corresponding wrap
 | `Laravel\Passport\Client` | `Modules\User\Models\OauthClient` |
 | `Laravel\Passport\DeviceCode` | `Modules\User\Models\OauthDeviceCode` |
 | `Laravel\Passport\RefreshToken` | `Modules\User\Models\OauthRefreshToken` |
-<<<<<<< HEAD
 | `Laravel\Passport\Token` | `Modules\User\Models\OauthToken` (+ `OauthAccessToken`) |
-=======
-| `Laravel\Passport\Token` | `Modules\User\Models\OauthToken` |
->>>>>>> 350420cb (Check & fix styling)
 
 Additionally, `OauthPersonalAccessClient` extends `BaseModel` because no Passport vendor class exists for `oauth_personal_access_clients`.
 
@@ -48,11 +41,7 @@ Additionally, `OauthPersonalAccessClient` extends `BaseModel` because no Passpor
 - Centralize `$connection = 'user'` in one place per model
 - Allow adding project-specific scopes, relations, casts without touching vendor code
 - Enable PHPStan docblock annotations for all properties
-<<<<<<< HEAD
 - Register custom models in `PassportServiceProvider` via `Passport::useTokenModel(OauthAccessToken::class)` etc.
-=======
-- Register custom models in `PassportServiceProvider` via `Passport::useTokenModel(OauthToken::class)` etc.
->>>>>>> 350420cb (Check & fix styling)
 - Allow custom policies: each `Oauth*` model has a corresponding `Oauth*Policy`
 
 ## Wrapper template
@@ -91,11 +80,7 @@ class OauthToken extends PassportToken
 
 ## Files
 
-<<<<<<< HEAD
 - `Modules/User/app/Models/OauthAccessToken.php`
-=======
-- `Modules/User/app/Models/OauthToken.php`
->>>>>>> 350420cb (Check & fix styling)
 - `Modules/User/app/Models/OauthAuthCode.php`
 - `Modules/User/app/Models/OauthClient.php`
 - `Modules/User/app/Models/OauthDeviceCode.php`

@@ -1,11 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Volt\Component;

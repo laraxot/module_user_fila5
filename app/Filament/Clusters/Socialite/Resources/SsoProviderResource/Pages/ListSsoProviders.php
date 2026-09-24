@@ -14,17 +14,10 @@ class ListSsoProviders extends XotBaseListRecords
 {
     protected static string $resource = SsoProviderResource::class;
 
-<<<<<<< HEAD
     #[\Override]
     /**
      * @return array<string, mixed>
      */
-=======
-    /**
-     * @return array<string, \Filament\Tables\Columns\Column>
-     */
-    #[\Override]
->>>>>>> 350420cb (Check & fix styling)
     public function getTableColumns(): array
     {
         return [
@@ -37,12 +30,6 @@ class ListSsoProviders extends XotBaseListRecords
         ];
     }
 
-<<<<<<< HEAD
-=======
-    /**
-     * @return array<string, \Filament\Tables\Filters\BaseFilter>
-     */
->>>>>>> 350420cb (Check & fix styling)
     #[\Override]
     public function getTableFilters(): array
     {

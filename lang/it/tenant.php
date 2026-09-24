@@ -2,23 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return [
-=======
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/it/tenant.php
-return [
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
->>>>>>> 350420cb (Check & fix styling)
     'navigation' => [
         'label' => 'Tenant',
         'plural_label' => 'Tenant',
@@ -206,12 +190,9 @@ return [
             'description' => 'Azione per annullare',
             'icon' => 'heroicon-o-x-mark',
         ],
-<<<<<<< HEAD
         'reorderRecords' => [
             'tooltip' => 'reorderRecords',
         ],
-=======
->>>>>>> 350420cb (Check & fix styling)
     ],
     'messages' => [
         'created' => 'Tenant creato con successo',

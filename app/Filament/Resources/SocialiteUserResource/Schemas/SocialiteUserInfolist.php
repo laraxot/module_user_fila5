@@ -16,11 +16,7 @@ class SocialiteUserInfolist extends XotBaseResourceInfolist
      *
      * Campi basati sul Model SocialiteUser.php -> id, uuid, user_id, provider, provider_id, token, name, email, avatar
      */
-<<<<<<< HEAD
     public function getInfolistSchema(): array
-=======
-    public static function getInfolistSchema(): array
->>>>>>> 350420cb (Check & fix styling)
     {
         return [
             'id' => TextEntry::make('id'),

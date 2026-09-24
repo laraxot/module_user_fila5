@@ -55,11 +55,6 @@ class PasswordReset extends BaseModel
 
     /**
      * The table associated with the model.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 350420cb (Check & fix styling)
      */
     protected $table = 'password_resets';
 }

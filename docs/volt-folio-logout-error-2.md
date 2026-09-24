@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Errore nel Logout con Volt e Folio"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Errore nel Logout con Volt e Folio
 
 ## Il Problema
@@ -137,12 +134,6 @@ final class LogoutAction
    - Evitare JavaScript per operazioni critiche
 
 ## Collegamenti
-<<<<<<< HEAD
 - [Best Practices Folio](./routing-best-practices-2.md)
 - [Best Practices Volt](./volt_best_practices.md)
 - [Gestione Sessione](./session-management-2.md) 
-=======
-- [Best Practices Folio](./routing_best_practices.md)
-- [Best Practices Volt](./volt_best_practices.md)
-- [Gestione Sessione](./session_management.md) 
->>>>>>> 350420cb (Check & fix styling)

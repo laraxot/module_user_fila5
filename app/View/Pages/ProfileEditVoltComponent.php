@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\View\Pages;
 
 use Illuminate\Auth\Events\PasswordReset;
-<<<<<<< HEAD
 use Illuminate\Http\RedirectResponse;
-=======
->>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
@@ -16,7 +13,6 @@ use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rule;
-<<<<<<< HEAD
 use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Locked;
 use Livewire\Attributes\Validate;
@@ -24,13 +20,6 @@ use Livewire\Volt\Component;
 use Modules\Xot\Contracts\UserContract;
 use Webmozart\Assert\Assert;
 use Webmozart\Assert\InvalidArgumentException;
-=======
-use Livewire\Attributes\Locked;
-use Livewire\Attributes\Validate;
-use Livewire\Volt\Component;
-use Modules\User\Models\User;
-use Webmozart\Assert\Assert;
->>>>>>> 350420cb (Check & fix styling)
 
 final class ProfileEditVoltComponent extends Component
 {
@@ -87,18 +76,11 @@ final class ProfileEditVoltComponent extends Component
     public function mount(): void
     {
         try {
-<<<<<<< HEAD
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated');
             if (! $user instanceof UserContract) {
                 throw new InvalidArgumentException('User must implement UserContract');
             }
-=======
-            /** @var User|null $user */
-            $user = Auth::user();
-            Assert::notNull($user, 'User must be authenticated');
-            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
->>>>>>> 350420cb (Check & fix styling)
 
             // Type-safe property initialization
             $this->first_name = (string) ($user->first_name ?? '');
@@ -112,16 +94,8 @@ final class ProfileEditVoltComponent extends Component
             Assert::stringNotEmpty($this->user_id, 'User ID cannot be empty');
 
             // Validate email format
-<<<<<<< .merge_file_vvdSej
-            Assert::true(false !== filter_var($this->email, FILTER_VALIDATE_EMAIL), 'User email must be valid');
-<<<<<<< HEAD
-=======
             Assert::true(filter_var($this->email, FILTER_VALIDATE_EMAIL) !== false, 'User email must be valid');
->>>>>>> .merge_file_GvIOrt
         } catch (InvalidArgumentException $e) {
-=======
-        } catch (\Webmozart\Assert\InvalidArgumentException $e) {
->>>>>>> 350420cb (Check & fix styling)
             Log::error('Profile mount validation failed', [
                 'error' => $e->getMessage(),
                 'user_id' => Auth::id(),
@@ -146,11 +120,7 @@ final class ProfileEditVoltComponent extends Component
     /**
      * Update user profile information with comprehensive validation and error handling.
      *
-<<<<<<< HEAD
      * @throws ValidationException
-=======
-     * @throws \Illuminate\Validation\ValidationException
->>>>>>> 350420cb (Check & fix styling)
      */
     public function updateProfile(): void
     {
@@ -169,13 +139,9 @@ final class ProfileEditVoltComponent extends Component
 
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for profile update');
-<<<<<<< HEAD
             if (! $user instanceof UserContract) {
                 throw new InvalidArgumentException('User must implement UserContract');
             }
-=======
-            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
->>>>>>> 350420cb (Check & fix styling)
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
             // Check if email has changed for additional validation
@@ -184,20 +150,12 @@ final class ProfileEditVoltComponent extends Component
             if ($emailChanged) {
                 // Additional email validation for changes
                 Assert::false(
-<<<<<<< HEAD
                     $user::where('email', $validated['email'])->where('id', '!=', $this->user_id)->exists(),
-=======
-                    User::where('email', $validated['email'])->where('id', '!=', $this->user_id)->exists(),
->>>>>>> 350420cb (Check & fix styling)
                     'Email is already in use by another user',
                 );
             }
 
             // Update user data with type casting
-<<<<<<< HEAD
-=======
-            /* @var User $user */
->>>>>>> 350420cb (Check & fix styling)
             $user->fill([
                 'first_name' => trim($validated['first_name']),
                 'last_name' => trim($validated['last_name']),
@@ -205,10 +163,6 @@ final class ProfileEditVoltComponent extends Component
             ]);
 
             // Reset email verification
-<<<<<<< HEAD
-=======
-            /** @var User $user */
->>>>>>> 350420cb (Check & fix styling)
             if ($emailChanged && $user->hasVerifiedEmail()) {
                 $user->email_verified_at = null;
             }
@@ -227,10 +181,6 @@ final class ProfileEditVoltComponent extends Component
                 'user_agent' => request()->userAgent(),
             ]);
 
-<<<<<<< HEAD
-=======
-            /** @var User $user */
->>>>>>> 350420cb (Check & fix styling)
             $success = $user->save();
             Assert::true($success, 'Failed to save user profile');
 
@@ -259,11 +209,7 @@ final class ProfileEditVoltComponent extends Component
             if ($emailChanged && $user->email_verified_at === null) {
                 $user->sendEmailVerificationNotification();
             }
-<<<<<<< HEAD
         } catch (ValidationException $e) {
-=======
-        } catch (\Illuminate\Validation\ValidationException $e) {
->>>>>>> 350420cb (Check & fix styling)
             // Re-throw validation exceptions to display form errors
             Log::warning('Profile update validation failed', [
                 'errors' => $e->errors(),
@@ -271,11 +217,7 @@ final class ProfileEditVoltComponent extends Component
                 'email' => $this->email,
             ]);
             throw $e;
-<<<<<<< HEAD
         } catch (InvalidArgumentException $e) {
-=======
-        } catch (\Webmozart\Assert\InvalidArgumentException $e) {
->>>>>>> 350420cb (Check & fix styling)
             Log::error('Profile update assertion failed', [
                 'error' => $e->getMessage(),
                 'user_id' => $this->user_id,
@@ -311,18 +253,11 @@ final class ProfileEditVoltComponent extends Component
                 'password_confirmation' => ['required'],
             ]);
 
-<<<<<<< HEAD
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for password update');
             if (! $user instanceof UserContract) {
                 throw new InvalidArgumentException('User must implement UserContract');
             }
-=======
-            /** @var User $user */
-            $user = Auth::user();
-            Assert::notNull($user, 'User must be authenticated for password update');
-            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
->>>>>>> 350420cb (Check & fix styling)
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
             // Validate password strength and format
@@ -332,7 +267,6 @@ final class ProfileEditVoltComponent extends Component
             Assert::same($this->password, $this->password_confirmation, 'Password confirmation does not match');
             Assert::greaterThanEq(strlen($this->password), 8, 'Password must be at least 8 characters long');
 
-<<<<<<< HEAD
             // Not every user has a password hash (e.g. social login accounts): treat a
             // missing hash as "current password incorrect" instead of casting mixed/null.
             $currentPasswordHash = $user->password;
@@ -346,14 +280,6 @@ final class ProfileEditVoltComponent extends Component
             // Ensure new password is different from current
             Assert::false(
                 Hash::check($this->password, $currentPasswordHash),
-=======
-            // Verify current password
-            Assert::true(Hash::check($this->current_password, $user->password), 'Current password is incorrect');
-
-            // Ensure new password is different from current
-            Assert::false(
-                Hash::check($this->password, $user->password),
->>>>>>> 350420cb (Check & fix styling)
                 'New password must be different from current password',
             );
 
@@ -382,22 +308,14 @@ final class ProfileEditVoltComponent extends Component
                 'status',
                 'Password updated successfully. You have been logged out of other devices for security.',
             );
-<<<<<<< HEAD
         } catch (ValidationException $e) {
-=======
-        } catch (\Illuminate\Validation\ValidationException $e) {
->>>>>>> 350420cb (Check & fix styling)
             // Re-throw validation exceptions to display form errors
             Log::warning('Password update validation failed', [
                 'errors' => $e->errors(),
                 'user_id' => $this->user_id,
             ]);
             throw $e;
-<<<<<<< HEAD
         } catch (InvalidArgumentException $e) {
-=======
-        } catch (\Webmozart\Assert\InvalidArgumentException $e) {
->>>>>>> 350420cb (Check & fix styling)
             Log::error('Password update assertion failed', [
                 'error' => $e->getMessage(),
                 'user_id' => $this->user_id,
@@ -425,11 +343,7 @@ final class ProfileEditVoltComponent extends Component
     /**
      * Delete user account with comprehensive security validation and cleanup.
      */
-<<<<<<< HEAD
     public function deleteAccount(): RedirectResponse
-=======
-    public function deleteAccount(): \Illuminate\Http\RedirectResponse
->>>>>>> 350420cb (Check & fix styling)
     {
         try {
             $this->validate([
@@ -438,18 +352,13 @@ final class ProfileEditVoltComponent extends Component
 
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for account deletion');
-<<<<<<< HEAD
             if (! $user instanceof UserContract) {
                 throw new InvalidArgumentException('User must implement UserContract');
             }
-=======
-            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
->>>>>>> 350420cb (Check & fix styling)
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
 
             // Validate deletion password
             Assert::stringNotEmpty($this->delete_password, 'Password cannot be empty for account deletion');
-<<<<<<< HEAD
 
             // Not every user has a password hash (e.g. social login accounts): treat a
             // missing hash as "password incorrect" instead of casting mixed/null.
@@ -459,10 +368,6 @@ final class ProfileEditVoltComponent extends Component
             }
             Assert::true(
                 Hash::check($this->delete_password, $currentPasswordHash),
-=======
-            Assert::true(
-                Hash::check($this->delete_password, $user->password),
->>>>>>> 350420cb (Check & fix styling)
                 'Password is incorrect for account deletion',
             );
 
@@ -488,10 +393,6 @@ final class ProfileEditVoltComponent extends Component
             request()->session()->regenerateToken();
 
             // Delete the user account
-<<<<<<< HEAD
-=======
-            /** @var User $user */
->>>>>>> 350420cb (Check & fix styling)
             $deleted = $user->delete();
             Assert::true($deleted, 'Failed to delete user account');
 
@@ -500,22 +401,14 @@ final class ProfileEditVoltComponent extends Component
 
             // Redirect to home with success message
             return Redirect::to('/')->with('status', 'Your account has been deleted successfully.');
-<<<<<<< HEAD
         } catch (ValidationException $e) {
-=======
-        } catch (\Illuminate\Validation\ValidationException $e) {
->>>>>>> 350420cb (Check & fix styling)
             // Re-throw validation exceptions to display form errors
             Log::warning('Account deletion validation failed', [
                 'errors' => $e->errors(),
                 'user_id' => $this->user_id,
             ]);
             throw $e;
-<<<<<<< HEAD
         } catch (InvalidArgumentException $e) {
-=======
-        } catch (\Webmozart\Assert\InvalidArgumentException $e) {
->>>>>>> 350420cb (Check & fix styling)
             Log::error('Account deletion assertion failed', [
                 'error' => $e->getMessage(),
                 'user_id' => $this->user_id,

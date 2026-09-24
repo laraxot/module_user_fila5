@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "profile"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./phpstan.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # profile
 
 <!-- Contenuto migrato da _docs/profile.txt -->

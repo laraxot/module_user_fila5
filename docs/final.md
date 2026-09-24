@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Final Summary - User Module Passport Integration & Architecture Refactoring"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Final Summary - User Module Passport Integration & Architecture Refactoring
 
 > **Date**: [DATE]
@@ -300,15 +297,9 @@ public function getHeaderActions(): array
 ## 📚 Documentation References
 
 ### Internal Documentation
-<<<<<<< HEAD
 - [Passport Integration](./passport-integration.md)
 - [Service Provider Architecture](./service-provider-architecture.md)
 - [Filosofia Modulo User](./filosofia-modulo-user.md)
-=======
-- [Passport Integration](./passport_integration.md)
-- [Service Provider Architecture](./service_provider_architecture.md)
-- [Filosofia Modulo User](./filosofia_modulo_user.md)
->>>>>>> 350420cb (Check & fix styling)
 - [README](./readme.md)
 
 ### External Documentation

@@ -1,7 +1,6 @@
 ---
 module: theme
 topic: metrics-dashboard-1
-<<<<<<< HEAD
 canonical: ../../../Themes/docs/shared-components/metrics-dashboard-2.md
 related:
   - "./00-index-1.md"
@@ -15,9 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/metrics-dashboard-2.md
-=======
-canonical: ../../../Themes/docs/shared-components/metrics_dashboard.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/metrics_dashboard.md
->>>>>>> 350420cb (Check & fix styling)

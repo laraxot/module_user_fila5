@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Audit Passport OAuth - Modelli e Corredo Filament"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Audit Passport OAuth - Modelli e Corredo Filament
 
 **Scopo**: Verificare che ogni modello Passport abbia wrapper Oauth* completo con policy, Filament resource, traduzioni e test.

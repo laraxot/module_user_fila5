@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Autenticazione"
 type: concept
@@ -18,8 +17,6 @@ related:
   - "./user-traits.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Autenticazione
 
 ## Overview

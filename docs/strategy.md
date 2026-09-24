@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Product Strategy: User Module"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Product Strategy: User Module
 
 ## 🌍 Market Context

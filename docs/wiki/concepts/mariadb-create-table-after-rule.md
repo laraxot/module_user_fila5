@@ -4,7 +4,6 @@ module: User
 confidence: high
 updated: 2026-04-28
 tags: [migration, mariadb, mysql, schema-builder, dry, kiss, clean-code]
-<<<<<<< HEAD
 related:
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
@@ -14,8 +13,6 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # MariaDB create table `after()` rule

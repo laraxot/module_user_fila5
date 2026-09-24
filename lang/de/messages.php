@@ -2,32 +2,11 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/de/messages.php
->>>>>>> 350420cb (Check & fix styling)
 return [
     'credentials_incorrect' => 'Die angegebenen Anmeldedaten sind falsch.',
     'login_success' => 'Anmeldung erfolgreich.',
     'login_error' => 'Ein Fehler ist beim Anmelden aufgetreten. Bitte versuchen Sie es später erneut.',
     'validation_error' => 'Validierungsfehler.',
-<<<<<<< HEAD
-=======
-    'session_expired' => 'Die Sitzung ist abgelaufen. Bitte melden Sie sich erneut an.',
-    'session_invalid' => 'Ungültige Sitzung.',
-    'too_many_attempts' => 'Zu viele Anmeldeversuche. Bitte versuchen Sie es in wenigen Minuten erneut.',
-    'account_locked' => 'Konto vorübergehend aus Sicherheitsgründen gesperrt.',
-    'unauthorized_access' => 'Unbefugter Zugriff.',
-    'system_error' => 'Systemfehler. Kontaktieren Sie den Support, wenn das Problem weiterhin besteht.',
-    'maintenance_mode' => 'Das System befindet sich derzeit in der Wartung. Bitte versuchen Sie es später erneut.',
-    'logout_success' => 'Erfolgreich abgemeldet.',
-    'logout_error' => 'Ein Fehler ist beim Abmelden aufgetreten.',
-    'registration_success' => 'Registrierung erfolgreich abgeschlossen.',
-    'registration_error' => 'Ein Fehler ist bei der Registrierung aufgetreten.',
->>>>>>> 350420cb (Check & fix styling)
     'password_changed' => 'Passwort erfolgreich geändert.',
     'password_error' => 'Ein Fehler ist beim Ändern des Passworts aufgetreten.',
     'password_mismatch' => 'Passwörter stimmen nicht überein.',
@@ -47,20 +26,4 @@ return [
     'invalid_format' => 'Ungültiges Format.',
     'value_too_long' => 'Wert ist zu lang.',
     'value_too_short' => 'Wert ist zu kurz.',
-<<<<<<< HEAD
-=======
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
->>>>>>> 350420cb (Check & fix styling)
 ];

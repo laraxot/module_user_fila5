@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "UserFactory Integration - Modulo User e SaluteOra"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # UserFactory Integration - Modulo User e SaluteOra
 
 ## Overview
@@ -369,11 +366,7 @@ public function test_bulk_sti_creation()
 
 ### User Module
 - [BaseUser Documentation](../User/docs/baseuser_conflicts.md)
-<<<<<<< HEAD
 - [Traits Complete Guide](../User/docs/traits-complete-guide-2.md)
-=======
-- [Traits Complete Guide](../User/docs/traits_complete_guide.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Authentication Framework](../User/docs/authentication.md)
 
 ---

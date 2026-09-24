@@ -6,7 +6,6 @@ status: deprecated
 tags: [module-structure, psr-4, cleanup, resolved]
 created: "2026-06-18"
 updated: "2026-06-18"
-<<<<<<< HEAD
 qmd: "user module root folder violations resolved Actions Application Database Events Listeners"
 related:
   - "./ai-harness-user-discipline.md"
@@ -17,13 +16,6 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-=======
-related:
-  - ../../../../../../docs/wiki/bmad/architecture-module-directory-structure.md
-  - ../../../../../../docs/wiki/rules/module-root-php-folders-forbidden.md
-  - ../../directory-structure-checklist.md
-qmd: "user module root folder violations resolved Actions Application Database Events Listeners"
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Violazioni struttura root — modulo User (risolto)

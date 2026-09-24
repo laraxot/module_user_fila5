@@ -6,7 +6,6 @@ created: 2026-04-20
 updated: 2026-04-20
 tags: [translation, i18n, localization, user-module, laravel, filament]
 sources:
-<<<<<<< HEAD
 related:
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
@@ -16,14 +15,6 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-=======
-  - laravel/Modules/User/lang/it/auth.php
-  - laravel/Modules/User/lang/en/auth.php
-  - laravel/Themes/Sixteen/resources/views/pages/auth/login.blade.php
-related:
-  - ../../../../docs/wiki/concepts/translation-management.md
-  - ./filament-no-label-rule.md
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Translation 5-Level Structure Rule
@@ -258,7 +249,6 @@ return [
 
 **Last Updated**: 2026-04-20  
 **Rule Owner**: User Module Translation System
-<<<<<<< HEAD
 
 ---
 
@@ -293,5 +283,3 @@ yet backfilled — tracked as follow-up, out of scope for the 500 fix.
 **Two divergent docs describing the same convention is exactly the entropy
 this repo keeps flagging** — reconcile `translation-5-elements.md` and this
 file into one before writing a third.
-=======
->>>>>>> 350420cb (Check & fix styling)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "BaseUser Refactoring - Completato"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # BaseUser Refactoring - Completato
 
 **File**: `Modules/User/app/Models/BaseUser.php`  

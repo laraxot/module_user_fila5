@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Risoluzione Problema Login - Report Finale (Aggiornato)"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Risoluzione Problema Login - Report Finale (Aggiornato)
 
 ## Prologo: La Sfida degli Agenti

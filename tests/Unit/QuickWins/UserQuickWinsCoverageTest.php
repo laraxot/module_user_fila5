@@ -1,12 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Mockery\MockInterface;
-=======
-
-use Mockery;
->>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Actions\Team\GetUserTeamsOptionAction;
 use Modules\User\Actions\User\CreateUserAction;
 use Modules\User\Database\Factories\TeamFactory;
@@ -64,11 +59,7 @@ describe('User quick wins coverage', function (): void {
         $createdUser->email = $payload['email'];
         $createdUser->name = $payload['name'];
 
-<<<<<<< HEAD
         $userModel = configureMock(User::class, function (MockInterface $mock) use ($createdUser): void {
-=======
-        $userModel = configureMock(User::class, function (Mockery\MockInterface $mock) use ($createdUser): void {
->>>>>>> 350420cb (Check & fix styling)
             $mock->allows(['create' => $createdUser]);
         });
 

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Module Metrics Dashboard"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # User Module Metrics Dashboard
 
 ## Overview

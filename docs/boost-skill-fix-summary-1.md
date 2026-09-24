@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Boost Skill Fix Summary - User Module"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Boost Skill Fix Summary - User Module
 
 **Date**: 2026-03-02  

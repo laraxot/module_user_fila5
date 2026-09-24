@@ -1,7 +1,6 @@
 ---
 module: theme
 topic: phpstan-relationship-fix-1
-<<<<<<< HEAD
 canonical: ../../../Themes/docs/shared-components/phpstan-relationship-fix-2.md
 related:
   - "./00-index-1.md"
@@ -15,9 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-relationship-fix-2.md
-=======
-canonical: ../../../Themes/docs/shared-components/phpstan_relationship_fix.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan_relationship_fix.md
->>>>>>> 350420cb (Check & fix styling)

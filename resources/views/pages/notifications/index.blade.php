@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)
 use function Laravel\Folio\middleware;
 use function Laravel\Folio\name;
 

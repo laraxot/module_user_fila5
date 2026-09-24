@@ -7,10 +7,7 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
-<<<<<<< HEAD
 use Webmozart\Assert\Assert;
-=======
->>>>>>> 350420cb (Check & fix styling)
 
 /**
  * Modules\User\Models\ModelHasRole.
@@ -52,19 +49,9 @@ use Webmozart\Assert\Assert;
  */
 class ModelHasRole extends BaseMorphPivot
 {
-<<<<<<< HEAD
     /** @var list<string> */
     protected $fillable = [
         'id',
-=======
-    /** @var string */
-    protected $table = 'model_has_role';
-
-    /** @var list<string> */
-    protected $fillable = [
-        'id',
-        // 'uuid',
->>>>>>> 350420cb (Check & fix styling)
         'role_id',
         'model_type',
         'model_id',
@@ -72,7 +59,6 @@ class ModelHasRole extends BaseMorphPivot
     ];
 
     /**
-<<<<<<< HEAD
      * Nome tabella da config Spatie — mai `$table` hardcoded (può cambiare per tenant/overlay).
      */
     #[\Override]
@@ -81,19 +67,6 @@ class ModelHasRole extends BaseMorphPivot
         Assert::string($table = config('permission.table_names.model_has_roles'));
 
         return $table;
-=======
-     * Create a new instance and dynamically assign table name from config.
-     *
-     * @return void
-     */
-    public function __construct(array $attributes = [])
-    {
-        parent::__construct($attributes);
-        $table = config('permission.table_names.model_has_roles', 'model_has_role');
-        if (\is_string($table)) {
-            $this->setTable($table);
-        }
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /** @return array<string, string> */
@@ -106,10 +79,6 @@ class ModelHasRole extends BaseMorphPivot
             'model_type' => 'string',
             'model_id' => 'string',
             'team_id' => 'string',
-<<<<<<< HEAD
-=======
-            // 'uuid' => 'string',
->>>>>>> 350420cb (Check & fix styling)
 
             'created_at' => 'datetime',
             'updated_at' => 'datetime',

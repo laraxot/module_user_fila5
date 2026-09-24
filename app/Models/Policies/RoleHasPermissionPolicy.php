@@ -14,11 +14,7 @@ class RoleHasPermissionPolicy extends UserBasePolicy
      */
     public function viewAny(UserContract $user): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('role-has-permission.view.any');
-=======
-        return $user->hasPermissionTo('role-has-permission.view.any');
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -26,11 +22,7 @@ class RoleHasPermissionPolicy extends UserBasePolicy
      */
     public function view(UserContract $user, RoleHasPermission $_roleHasPermission): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('role-has-permission.view') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('role-has-permission.view') || $user->hasRole('super-admin');
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -38,11 +30,7 @@ class RoleHasPermissionPolicy extends UserBasePolicy
      */
     public function create(UserContract $user): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('role-has-permission.create');
-=======
-        return $user->hasPermissionTo('role-has-permission.create');
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -50,11 +38,7 @@ class RoleHasPermissionPolicy extends UserBasePolicy
      */
     public function update(UserContract $user, RoleHasPermission $_roleHasPermission): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('role-has-permission.update') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('role-has-permission.update') || $user->hasRole('super-admin');
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -62,11 +46,7 @@ class RoleHasPermissionPolicy extends UserBasePolicy
      */
     public function delete(UserContract $user, RoleHasPermission $_roleHasPermission): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('role-has-permission.delete') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('role-has-permission.delete') || $user->hasRole('super-admin');
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -74,11 +54,7 @@ class RoleHasPermissionPolicy extends UserBasePolicy
      */
     public function restore(UserContract $user, RoleHasPermission $_roleHasPermission): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('role-has-permission.restore') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('role-has-permission.restore') || $user->hasRole('super-admin');
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -86,10 +62,6 @@ class RoleHasPermissionPolicy extends UserBasePolicy
      */
     public function forceDelete(UserContract $user, RoleHasPermission $roleHasPermission): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('role-has-permission.force-delete') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('role-has-permission.force-delete') || $user->hasRole('super-admin');
->>>>>>> 350420cb (Check & fix styling)
     }
 }

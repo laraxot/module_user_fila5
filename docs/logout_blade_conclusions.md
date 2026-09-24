@@ -1,7 +1,6 @@
 # Conclusioni e Raccomandazioni per logout.blade.php
 
 ## Collegamenti correlati
-<<<<<<< HEAD
 - [README modulo User](./README.md)
 - [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
 - [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
@@ -12,18 +11,6 @@
 ## Sintesi dell'Analisi
 
 Dopo un'attenta analisi del file `logout.blade.php` attuale in `Themes/One/resources/views/pages/auth/`, sono stati identificati diversi problemi che non sono in linea con le convenzioni del progetto SaluteOra:
-=======
-- [README modulo User](./readme.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Auth Pages Implementation](./auth_pages_implementation.md)
-- [Logout Blade Implementation](./logout_blade_implementation.md)
-- [Logout Blade Analysis](./logout_blade_analysis.md)
-- [Convenzioni Path](./path_conventions.md)
-
-## Sintesi dell'Analisi
-
-Dopo un'attenta analisi del file `logout.blade.php` attuale in `Themes/One/resources/views/pages/auth/`, sono stati identificati diversi problemi che non sono in linea con le convenzioni del progetto Quaeris:
->>>>>>> 350420cb (Check & fix styling)
 
 1. **Struttura non ottimale**: La logica PHP è definita dopo il template Blade, creando confusione nella lettura e manutenzione del codice.
 
@@ -37,21 +24,13 @@ Dopo un'attenta analisi del file `logout.blade.php` attuale in `Themes/One/resou
 
 ## Raccomandazione Finale
 
-<<<<<<< HEAD
 In base alle convenzioni del progetto SaluteOra e all'analisi effettuata, si raccomanda di adottare l'**Approccio Folio con PHP puro** per l'implementazione del logout. Questo approccio è preferibile per le seguenti ragioni:
-=======
-In base alle convenzioni del progetto Quaeris e all'analisi effettuata, si raccomanda di adottare l'**Approccio Folio con PHP puro** per l'implementazione del logout. Questo approccio è preferibile per le seguenti ragioni:
->>>>>>> 350420cb (Check & fix styling)
 
 1. **Semplicità**: Il logout è un'operazione semplice che non richiede gestione dello stato o interazione con l'utente.
 
 2. **Efficienza**: Il reindirizzamento immediato offre una migliore esperienza utente rispetto a una pagina di conferma.
 
-<<<<<<< HEAD
 3. **Coerenza**: Questo approccio è coerente con le convenzioni di SaluteOra per le operazioni semplici.
-=======
-3. **Coerenza**: Questo approccio è coerente con le convenzioni di Quaeris per le operazioni semplici.
->>>>>>> 350420cb (Check & fix styling)
 
 4. **Sicurezza**: Implementa correttamente tutte le misure di sicurezza necessarie (invalidazione sessione, rigenerazione token).
 
@@ -108,8 +87,4 @@ Se si desidera mantenere un'interazione utente durante il processo di logout, si
 
 ## Conclusione
 
-<<<<<<< HEAD
 L'implementazione raccomandata rappresenta la soluzione più semplice, efficiente e coerente con le convenzioni del progetto SaluteOra per il logout degli utenti. Questa implementazione garantisce una buona esperienza utente e mantiene tutte le necessarie misure di sicurezza.
-=======
-L'implementazione raccomandata rappresenta la soluzione più semplice, efficiente e coerente con le convenzioni del progetto Quaeris per il logout degli utenti. Questa implementazione garantisce una buona esperienza utente e mantiene tutte le necessarie misure di sicurezza.
->>>>>>> 350420cb (Check & fix styling)

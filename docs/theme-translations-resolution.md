@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Risoluzione Conflitti Traduzioni Tema Two - Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Risoluzione Conflitti Traduzioni Tema Two - Modulo User
 
 ## Data: [DATE]
@@ -417,11 +414,7 @@ php artisan lang:missing --locale=it,en,de
 
 ### Collegamenti Interni
 - [User States](user_states.mdc)
-<<<<<<< HEAD
 - [Moderation Strategy](user-moderation-strategy-3.md)
-=======
-- [Moderation Strategy](user_moderation_strategy.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Filament Best Practices](filament_best_practices.md)
 
 ### Collegamenti Esterni

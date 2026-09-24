@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Cyclomatic Complexity Report - Module: User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Cyclomatic Complexity Report - Module: User
 
 **Analyzer:** Super Mucca 🐮

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Testing Rules & Strategy"
 type: rule
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Testing Rules & Strategy
 
 ## Strict Guidelines (Super Mucca / Laraxot)

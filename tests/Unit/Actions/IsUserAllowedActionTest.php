@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Mockery\MockInterface;
 use Modules\User\Actions\Socialite\IsUserAllowedAction;
@@ -9,15 +8,6 @@ use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-=======
-
-use Laravel\Socialite\Contracts\User as SocialiteUserContract;
-use Mockery\MockInterface;
-use Modules\User\Actions\Socialite\IsUserAllowedAction;
-use PHPUnit\Framework\Assert;
-
-uses(Modules\User\Tests\TestCase::class);
->>>>>>> 350420cb (Check & fix styling)
 
 describe('IsUserAllowedAction', function (): void {
     beforeEach(function (): void {

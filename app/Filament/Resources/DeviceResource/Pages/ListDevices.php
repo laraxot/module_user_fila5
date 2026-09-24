@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\DeviceResource\Pages;
 
-<<<<<<< HEAD
-=======
-use Filament\Tables\Columns\Column;
->>>>>>> 350420cb (Check & fix styling)
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Modules\User\Filament\Resources\DeviceResource;
@@ -17,13 +13,6 @@ class ListDevices extends XotBaseListRecords
 {
     protected static string $resource = DeviceResource::class;
 
-<<<<<<< HEAD
-=======
-    /**
-     * @return array<string, Column>
-     */
-    #[\Override]
->>>>>>> 350420cb (Check & fix styling)
     public function getTableColumns(): array
     {
         return [

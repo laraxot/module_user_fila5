@@ -2,7 +2,6 @@
 title: "Module Schema"
 module: "User"
 created: "2026-04-15T08:28:51Z"
-<<<<<<< HEAD
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -12,8 +11,6 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # User Module Schema

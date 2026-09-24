@@ -65,8 +65,3 @@ Route::get('/settings', [SettingsComponent::class, 'render']);
 
 ---
 Questa procedura mantiene fede ai principi di **modularità**, **dichiaratività** e **manutenibilità** della nostra architettura.
-<<<<<<< HEAD
-=======
-
-See canonical documentation: ../../../Themes/docs/shared-components/routing-error-solution.md
->>>>>>> 350420cb (Check & fix styling)

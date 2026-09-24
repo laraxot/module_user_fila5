@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "PHPMD e PHP Insights Corrections - 2025-01-22"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # PHPMD e PHP Insights Corrections - 2025-01-22
 
 ## Obiettivo
@@ -121,10 +118,6 @@ I seguenti warning sono accettabili e non richiedono correzione immediata:
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Resources Corrections Summary](./resources-corrections-summary.md)
-=======
-- [Resources Corrections Summary](./resources-corrections-summary-2025-01-22.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Quality Tools Report](./quality-tools-report.md)
 - [PHPStan Complete Success](./phpstan-complete-success.md)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "terms_and_conditions"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./phpstan.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # terms_and_conditions
 
 <!-- Contenuto migrato da _docs/terms_and_conditions.txt -->

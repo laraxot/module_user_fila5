@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "GDPR Compliance - User Registration Module"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # GDPR Compliance - User Registration Module
 
 ## Overview

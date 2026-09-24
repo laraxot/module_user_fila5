@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: troubleshooting
@@ -15,10 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/troubleshooting.md
-=======
-# Troubleshooting
-
-## Common Issues
-
-For general troubleshooting, please refer to the [Xot Troubleshooting Guide](../../xot/docs/troubleshooting.md).
->>>>>>> 350420cb (Check & fix styling)

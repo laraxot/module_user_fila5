@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Critical Filament Rule: getInfolistSchema String Keys"
 type: rule
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Critical Filament Rule: getInfolistSchema String Keys
 
 ## The Rule

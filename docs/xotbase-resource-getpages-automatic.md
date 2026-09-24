@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "XotBaseResource getPages() Automatic: Filosofia DRY"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # XotBaseResource getPages() Automatic: Filosofia DRY
 
 ## Data: 2025-01-22

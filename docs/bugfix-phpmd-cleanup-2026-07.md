@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Bug fix + cleanup phpmd (Modules/User, 2026-07-12)"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Bug fix + cleanup phpmd (Modules/User, 2026-07-12)
 
 ## Bug reali corretti

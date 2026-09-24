@@ -4,19 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Datas;
 
-<<<<<<< HEAD
 use Modules\User\Datas\FilamentShieldData;
 use Modules\User\Datas\PermissionData;
 use Modules\User\Datas\SocialiteUserAttributesData;
-=======
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-
-use Modules\User\Datas\FilamentShieldData;
-use Modules\User\Datas\PermissionData;
-use Modules\User\Datas\SocialiteUserAttributesData;
-use Modules\User\Enums\Enums\LanguageEnum as NestedLanguageEnum;
->>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Enums\LanguageEnum;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -124,10 +114,5 @@ describe('User Datas And Enums Coverage', function (): void {
 
         Assert::assertSame('Italiano', $italianLabel);
         Assert::assertSame('English', LanguageEnum::ENGLISH->getLabel());
-<<<<<<< HEAD
-=======
-        Assert::assertSame('Deutsch', NestedLanguageEnum::GERMAN->getLabel());
-        Assert::assertSame('es', NestedLanguageEnum::SPANISH->value);
->>>>>>> 350420cb (Check & fix styling)
     });
 });

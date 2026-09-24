@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "UserFactory Advanced Implementation - COMPLETE ✅"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # UserFactory Advanced Implementation - COMPLETE ✅
 
 ## 🎉 Mission Accomplished
@@ -311,11 +308,7 @@ $gdprTests = [
 
 ### Primary Documentation
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/project_docs/factories/userfactory-implementation-final.md)
-<<<<<<< HEAD
 - [User Module Integration](../laravel/modules/user/project_docs/user-factory-advanced-integration-3.md)
-=======
-- [User Module Integration](../laravel/modules/user/project_docs/user_factory_advanced_integration.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Advanced Analysis](../laravel/modules/<nome progetto>/project_docs/factories/userfactory-advanced-improvements-analysis.md)
 
 ### Technical References
@@ -614,11 +607,7 @@ $gdprTests = [
 
 ### Primary Documentation
 - [<nome progetto> Factory Implementation](../laravel/modules/<nome progetto>/docs/factories/userfactory-implementation-final.md)
-<<<<<<< HEAD
 - [User Module Integration](../laravel/modules/user/docs/user-factory-advanced-integration-3.md)
-=======
-- [User Module Integration](../laravel/modules/user/docs/user_factory_advanced_integration.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Advanced Analysis](../laravel/modules/<nome progetto>/docs/factories/userfactory-advanced-improvements-analysis.md)
 
 ### Technical References

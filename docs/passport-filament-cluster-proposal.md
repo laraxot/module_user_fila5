@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Passport Filament Cluster Proposal - User Module"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Passport Filament Cluster Proposal - User Module
 
 **Data**: 2025-01-22

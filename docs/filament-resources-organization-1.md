@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Organization of Filament Resources"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Organization of Filament Resources
 
 ## Namespace Structure

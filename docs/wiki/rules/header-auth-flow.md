@@ -2,7 +2,6 @@
 name: header-auth-flow-rule
 description: Header authentication flow rule for User module
 type: project
-<<<<<<< HEAD
 related:
   - "./agent-confidence-protocol.md"
   - "./can-comment-retired-wrong-placement.md"
@@ -12,8 +11,6 @@ related:
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 ## Rule Overview

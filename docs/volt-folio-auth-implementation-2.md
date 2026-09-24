@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio"
 type: concept
@@ -19,21 +18,13 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Implementazione Corretta delle Pagine di Autenticazione con Volt e Folio
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-<<<<<<< HEAD
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Errors](./volt-errors-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
-=======
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Errors](./volt_errors.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
->>>>>>> 350420cb (Check & fix styling)
 
 ## Introduzione
 

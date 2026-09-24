@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Inventario migration User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./filament-widget-resource-form-delegation.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Inventario migration User
 
 Percorso attivo: `database/migrations/`. ~~Copia legacy `Database/Migrations/`~~ rimossa 2026-06-18.

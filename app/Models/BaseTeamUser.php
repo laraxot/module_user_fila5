@@ -12,10 +12,6 @@ use Modules\User\Contracts\TeamContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
-<<<<<<< HEAD
-=======
-use Modules\Xot\Models\Traits\HasXotFactory;
->>>>>>> 350420cb (Check & fix styling)
 use Parental\HasChildren;
 
 /**
@@ -61,11 +57,6 @@ use Parental\HasChildren;
 abstract class BaseTeamUser extends BasePivot
 {
     use HasChildren;
-<<<<<<< HEAD
-=======
-    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
-    use HasXotFactory;
->>>>>>> 350420cb (Check & fix styling)
 
     protected $connection = 'user';
 
@@ -80,11 +71,7 @@ abstract class BaseTeamUser extends BasePivot
     {
         $userClass = XotData::make()->getUserClass();
 
-<<<<<<< HEAD
         /* @var BelongsTo<Model&UserContract, $this> */
-=======
-        /* @var BelongsTo<\Illuminate\Database\Eloquent\Model&UserContract, $this> */
->>>>>>> 350420cb (Check & fix styling)
         return $this->belongsTo($userClass);
     }
 
@@ -97,11 +84,7 @@ abstract class BaseTeamUser extends BasePivot
     {
         $teamClass = XotData::make()->getTeamClass();
 
-<<<<<<< HEAD
         /* @var BelongsTo<Model&TeamContract, $this> */
-=======
-        /* @var BelongsTo<\Illuminate\Database\Eloquent\Model&TeamContract, $this> */
->>>>>>> 350420cb (Check & fix styling)
         return $this->belongsTo($teamClass);
     }
 }

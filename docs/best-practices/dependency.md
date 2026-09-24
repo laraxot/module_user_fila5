@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "dependency-rules"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./dependency-rules.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # dependency-rules
 
 ## Principle (MANDATORY)

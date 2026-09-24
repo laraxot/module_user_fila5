@@ -1,11 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -20,24 +15,6 @@ name('password.reset');
 
 new class extends Component {
     #[Validate('required')]
-<<<<<<< HEAD
-=======
-    public $token;
-
-    #[Validate('required|email')]
-    public $email;
-
-    #[Validate('required|min:8|same:passwordConfirmation')]
-    public $password;
-    public $passwordConfirmation;
-
-    public function mount($token)
-    {
-        $this->email = request()->query('email', '');
-        $this->token = $token;
-    }
-
->>>>>>> 350420cb (Check & fix styling)
     public function resetPassword()
     {
         $this->validate();
@@ -48,12 +25,8 @@ new class extends Component {
                 'email' => $this->email,
                 'password' => $this->password,
             ],
-<<<<<<< HEAD
             function ($user, string $password) {
                 /** @var \Modules\User\Models\User $user */
-=======
-            function ($user, $password) {
->>>>>>> 350420cb (Check & fix styling)
                 $user->password = Hash::make($password);
 
                 $user->setRememberToken(Str::random(60));
@@ -66,20 +39,12 @@ new class extends Component {
             },
         );
 
-<<<<<<< HEAD
         if (\is_string($response) && $response === Password::PASSWORD_RESET) {
-=======
-        if ($response === Password::PASSWORD_RESET) {
->>>>>>> 350420cb (Check & fix styling)
             session()->flash(trans($response));
 
             return redirect('/');
         }
 
-<<<<<<< HEAD
-=======
-        $this->addError('email', trans($response));
->>>>>>> 350420cb (Check & fix styling)
     }
 };
 

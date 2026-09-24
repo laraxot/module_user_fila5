@@ -6,7 +6,6 @@ created: 2026-07-08
 updated: 2026-07-08
 qmd: "User git commit push dopo modifiche regola"
 related:
-<<<<<<< HEAD
   - "./agent-confidence-protocol.md"
   - "./can-comment-retired-wrong-placement.md"
   - "./frontend-stack-canonical.md"
@@ -15,10 +14,6 @@ related:
   - "./navigation-properties.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
-=======
-  - index.md
-  - ../troubleshooting/git-push-lfs-missing-objects.md
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Commit & push dopo modifiche al modulo

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Filosofia dei Comandi Console - Modulo User"
 type: concept
@@ -18,8 +17,6 @@ related:
   - "./readme.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -933,7 +930,3 @@ private function getPasswordLegacy(): string
 - ✅ **Security Framework**: Validazione, audit trail e controlli accesso
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)

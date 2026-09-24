@@ -1,7 +1,6 @@
 ---
 module: theme
 topic: path-conventions-1
-<<<<<<< HEAD
 canonical: ../../../Themes/docs/shared-components/path-conventions-2.md
 related:
   - "./00-index-1.md"
@@ -15,9 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/path-conventions-2.md
-=======
-canonical: ../../../Themes/docs/shared-components/path_conventions.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/path_conventions.md
->>>>>>> 350420cb (Check & fix styling)

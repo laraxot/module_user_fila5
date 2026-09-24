@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Fix della Migration Roles - Allineamento con la Filosofia Laraxot"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Fix della Migration Roles - Allineamento con la Filosofia Laraxot
 
 ## Problema Identificato

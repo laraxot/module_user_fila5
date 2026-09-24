@@ -16,25 +16,13 @@ uses(TestCase::class);
 beforeEach(function (): void {
     /* @var \Modules\User\Tests\TestCase $this */
     /* @var TestCase $this */
-<<<<<<< .merge_file_BeBn9m
-<<<<<<< HEAD
-    TestCase::$command = new ChangeTypeCommand();
-=======
-    $this->command = new ChangeTypeCommand();
->>>>>>> 350420cb (Check & fix styling)
-=======
     TestCase::$command = new ChangeTypeCommand;
->>>>>>> .merge_file_MyOxMc
 });
 
 describe('User Command Integration', function (): void {
     test('can be registered with laravel artisan', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $command = TestCase::requireCommand();
-=======
-        $command = $this->requireCommand();
->>>>>>> 350420cb (Check & fix styling)
         Assert::assertSame('user:change-type', $command->getName());
         Assert::assertInstanceOf(Command::class, $command);
     });
@@ -47,11 +35,7 @@ describe('User Command Integration', function (): void {
 
     test('validates command registration in service provider', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $command = TestCase::requireCommand();
-=======
-        $command = $this->requireCommand();
->>>>>>> 350420cb (Check & fix styling)
         Assert::assertSame('user:change-type', $command->getName());
         Assert::assertSame('Change user type based on project configuration', $command->getDescription());
     });
@@ -61,21 +45,12 @@ describe('User Command Integration', function (): void {
         Assert::assertTrue(function_exists('Laravel\Prompts\select'));
     });
 
-<<<<<<< HEAD
     it('validates webmozart assert integration')->todo();
-=======
-    test('validates webmozart assert integration', function (): void {
-    });
->>>>>>> 350420cb (Check & fix styling)
 
     test('integrates with illuminate support arr', function (): void {
         $testArray = ['a' => 1, 'b' => 2, 'c' => 3];
 
-<<<<<<< HEAD
         $result = Arr::mapWithKeys($testArray, fn (int $value, string $key) => [
-=======
-        $result = Arr::mapWithKeys($testArray, fn ($value, $key) => [
->>>>>>> 350420cb (Check & fix styling)
             $key.'_mapped' => $value * 2,
         ]);
         Assert::assertSame(2, $result['a_mapped']);
@@ -87,20 +62,12 @@ describe('User Command Integration', function (): void {
 
     test('can handle command input output operations', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $command = TestCase::requireCommand();
-=======
-        $command = $this->requireCommand();
->>>>>>> 350420cb (Check & fix styling)
     });
 
     test('validates command signature and options', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $command = TestCase::requireCommand();
-=======
-        $command = $this->requireCommand();
->>>>>>> 350420cb (Check & fix styling)
         $reflection = new \ReflectionClass($command);
 
         Assert::assertTrue($reflection->hasProperty('name'));
@@ -122,21 +89,13 @@ describe('User Command Integration', function (): void {
 
     test('handles command execution context', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $command = TestCase::requireCommand();
-=======
-        $command = $this->requireCommand();
->>>>>>> 350420cb (Check & fix styling)
         Assert::assertInstanceOf(Command::class, $command);
     });
 
     test('validates error handling patterns', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $command = TestCase::requireCommand();
-=======
-        $command = $this->requireCommand();
->>>>>>> 350420cb (Check & fix styling)
         $reflection = new \ReflectionClass($command);
         $handleMethod = $reflection->getMethod('handle');
 
@@ -159,11 +118,7 @@ describe('User Command Integration', function (): void {
 
     test('integrates with laravel configuration system', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $command = TestCase::requireCommand();
-=======
-        $command = $this->requireCommand();
->>>>>>> 350420cb (Check & fix styling)
         Assert::assertTrue(function_exists('config'));
         Assert::assertInstanceOf(ChangeTypeCommand::class, $command);
     });
@@ -186,60 +141,35 @@ describe('User Command Integration', function (): void {
 
     test('can handle command lifecycle', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $command = TestCase::requireCommand();
-=======
-        $command = $this->requireCommand();
->>>>>>> 350420cb (Check & fix styling)
     });
 
     test('validates dependency injection compatibility', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $command = TestCase::requireCommand();
-=======
-        $command = $this->requireCommand();
->>>>>>> 350420cb (Check & fix styling)
         Assert::assertInstanceOf(ChangeTypeCommand::class, $command);
         Assert::assertSame('user:change-type', $command->getName());
     });
 
     test('handles console application integration', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $command = TestCase::requireCommand();
-=======
-        $command = $this->requireCommand();
->>>>>>> 350420cb (Check & fix styling)
         Assert::assertInstanceOf(Command::class, $command);
         Assert::assertInstanceOf(\Symfony\Component\Console\Command\Command::class, $command);
     });
 
     test('validates command help and description', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $command = TestCase::requireCommand();
-=======
-        $command = $this->requireCommand();
->>>>>>> 350420cb (Check & fix styling)
         Assert::assertSame('Change user type based on project configuration', $command->getDescription());
         Assert::assertSame('user:change-type', $command->getName());
     });
 
-<<<<<<< HEAD
     it('can access laravel facades')->todo();
 
     test('handles reflection operations correctly', function (): void {
         /** @var TestCase $this */
         $command = TestCase::requireCommand();
-=======
-    test('can access laravel facades', function (): void {
-    });
-
-    test('handles reflection operations correctly', function (): void {
-        /** @var TestCase $this */
-        $command = $this->requireCommand();
->>>>>>> 350420cb (Check & fix styling)
         $reflection = new \ReflectionClass($command);
 
         Assert::assertInstanceOf(\ReflectionClass::class, $reflection);
@@ -249,11 +179,7 @@ describe('User Command Integration', function (): void {
 
     test('validates method existence checks', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $command = TestCase::requireCommand();
-=======
-        $command = $this->requireCommand();
->>>>>>> 350420cb (Check & fix styling)
         Assert::assertFalse(method_exists($command, 'nonExistentMethod'));
     });
 

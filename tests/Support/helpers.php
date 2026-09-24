@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Forms\Components\Field;
@@ -529,8 +528,3 @@ function regenerateTwoFactorRecoveryCodes(User $user): array
 
     return $codes;
 }
-=======
-
-require_once __DIR__.'/helpers-core.php';
-require_once __DIR__.'/helpers-extended.php';
->>>>>>> 350420cb (Check & fix styling)

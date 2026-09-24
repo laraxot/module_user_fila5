@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Migration Safety Rules - NEVER Destroy Data
 
 ## Regola ASSOLUTA
@@ -299,12 +298,3 @@ related:
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/migration-safety-rules-1.md
-=======
----
-module: theme
-topic: migration-safety-rules
-canonical: ../../../../Themes/docs/shared-components/MIGRATION_SAFETY_RULES.md
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/MIGRATION_SAFETY_RULES.md
->>>>>>> 350420cb (Check & fix styling)

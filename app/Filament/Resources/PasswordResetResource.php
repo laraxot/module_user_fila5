@@ -4,12 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
-<<<<<<< HEAD
-=======
-use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
-use Filament\Schemas\Components\Section;
->>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Filament\Resources\PasswordResetResource\Pages\ListPasswordResets;
 use Modules\User\Filament\Resources\PasswordResetResource\Pages\ViewPasswordReset;
@@ -28,29 +22,6 @@ class PasswordResetResource extends XotBaseResource
         ];
     }
 
-<<<<<<< HEAD
-=======
-    /**
-     * @return array<string, Component>
-     */
-    public static function getFormSchema(): array
-    {
-        return [
-            'password_reset_info' => Section::make('Password Reset Information')
-                ->schema([
-                    'email' => TextInput::make('email')
-                        ->email()
-                        ->required()
-                        ->maxLength(255),
-
-                    'token' => TextInput::make('token')
-                        ->required()
-                        ->maxLength(255),
-                ]),
-        ];
-    }
-
->>>>>>> 350420cb (Check & fix styling)
     public static function getEloquentQuery(): Builder
     {
         return parent::getEloquentQuery();

@@ -1,30 +1,18 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 350420cb (Check & fix styling)
 /**
  * @see https://github.com/ryangjchandler/filament-user-resource/blob/main/src/resources/UserResource/Pages/EditUser.php
  * Pagina di modifica utente per Filament.
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 350420cb (Check & fix styling)
 namespace Modules\User\Filament\Resources\UserResource\Pages;
 
 use Filament\Actions\DeleteAction;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Filament\Resources\UserResource;
-<<<<<<< HEAD
 use Modules\User\Filament\Resources\UserResource\Actions\VerifyEmailAction;
 use Modules\Xot\Contracts\UserContract;
-=======
-use Modules\User\Models\User;
->>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 use Webmozart\Assert\Assert;
 
@@ -44,11 +32,7 @@ class EditUser extends XotBaseEditRecord
 
         // Verifichiamo che record sia un'istanza valida di User
         Assert::notNull($this->record);
-<<<<<<< HEAD
         Assert::isInstanceOf($this->record, UserContract::class);
-=======
-        Assert::isInstanceOf($this->record, User::class);
->>>>>>> 350420cb (Check & fix styling)
 
         // Gestione sicura del tipo di password per evitare errori di cast
         $newPassword = $data['new_password'];
@@ -69,10 +53,7 @@ class EditUser extends XotBaseEditRecord
     protected function getHeaderActions(): array
     {
         return [
-<<<<<<< HEAD
             'verify_email' => VerifyEmailAction::make(),
-=======
->>>>>>> 350420cb (Check & fix styling)
             'delete' => DeleteAction::make(),
         ];
     }

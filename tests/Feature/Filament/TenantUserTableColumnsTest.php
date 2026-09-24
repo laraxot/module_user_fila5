@@ -1,17 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_WQNyOu
-<<<<<<< HEAD
-<<<<<<< .merge_file_phTbaR
-
-=======
->>>>>>> .merge_file_pp4aoj
-=======
-
->>>>>>> 350420cb (Check & fix styling)
-=======
->>>>>>> .merge_file_qjFEb2
 use Modules\User\Filament\Resources\TenantUserResource\Pages\ListTenantUsers;
 use Modules\User\Filament\Resources\TenantUserResource\Tables\TenantUsersTable;
 use Modules\User\Tests\TestCase;

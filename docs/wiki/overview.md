@@ -4,7 +4,6 @@ module: "User"
 type: overview
 created: "2026-04-15T08:28:51Z"
 updated: "2026-04-15T08:28:51Z"
-<<<<<<< HEAD
 related:
   - "./agents.md"
   - "./architecture.md"
@@ -14,8 +13,6 @@ related:
   - "./index.md"
   - "./log.md"
   - "./socialite-architecture.md"
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # User Wiki Overview

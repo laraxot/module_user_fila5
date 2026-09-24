@@ -1,17 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_QspjFE
-<<<<<<< HEAD
-<<<<<<< .merge_file_OHQVjq
-
-=======
->>>>>>> .merge_file_jGwNxW
-=======
-
->>>>>>> 350420cb (Check & fix styling)
-=======
->>>>>>> .merge_file_Itxxfu
 use Illuminate\Support\Facades\Config;
 use Laravel\Socialite\Contracts\User as SocialiteUser;
 use Mockery\MockInterface;

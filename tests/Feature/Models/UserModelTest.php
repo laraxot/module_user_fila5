@@ -4,25 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Models;
 
-<<<<<<< HEAD
 use Filament\Panel;
 use Mockery\MockInterface;
-=======
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-
->>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Database\Factories\PermissionFactory;
 use Modules\User\Database\Factories\RoleFactory;
 use Modules\User\Database\Factories\SocialiteUserFactory;
@@ -36,11 +19,7 @@ uses(TestCase::class);
 
 beforeEach(function (): void {
     /* @var TestCase $this */
-<<<<<<< HEAD
     TestCase::skipUnlessUsersTableReady();
-=======
-    $this->skipUnlessUsersTableReady();
->>>>>>> 350420cb (Check & fix styling)
 });
 
 describe('User Model', function (): void {
@@ -108,11 +87,7 @@ describe('User Model', function (): void {
 
     test('user can have permissions', function (): void {
         /* @var TestCase $this */
-<<<<<<< HEAD
         TestCase::skipUnlessDirectPermissionSupported();
-=======
-        $this->skipUnlessDirectPermissionSupported();
->>>>>>> 350420cb (Check & fix styling)
 
         $user = UserFactory::new()->createOne();
         $permission = PermissionFactory::new()->createOne(['guard_name' => 'web', 'name' => 'permission-'.uniqid()]);
@@ -134,11 +109,7 @@ describe('User Model', function (): void {
 
     test('user can check if has permission', function (): void {
         /* @var TestCase $this */
-<<<<<<< HEAD
         TestCase::skipUnlessDirectPermissionSupported();
-=======
-        $this->skipUnlessDirectPermissionSupported();
->>>>>>> 350420cb (Check & fix styling)
 
         $user = UserFactory::new()->createOne();
         $permission = PermissionFactory::new()->createOne(['name' => 'perm-'.uniqid(), 'guard_name' => 'web']);
@@ -202,7 +173,6 @@ describe('User Model', function (): void {
         Assert::assertNull($user->email_verified_at);
     });
 
-<<<<<<< HEAD
     test('user can access the default admin filament panel by default', function (): void {
         $user = UserFactory::new()->createOne();
 
@@ -211,12 +181,6 @@ describe('User Model', function (): void {
         });
 
         Assert::assertTrue($user->canAccessPanel($panel));
-=======
-    test('user can access filament by default', function (): void {
-        $user = UserFactory::new()->createOne();
-
-        Assert::assertTrue($user->canAccessFilament());
->>>>>>> 350420cb (Check & fix styling)
     });
 
     test('user can access socialite by default', function (): void {
@@ -279,11 +243,7 @@ describe('User Model', function (): void {
 
     test('user can be deleted', function (): void {
         /* @var TestCase $this */
-<<<<<<< HEAD
         TestCase::skipUnlessDirectPermissionSupported();
-=======
-        $this->skipUnlessDirectPermissionSupported();
->>>>>>> 350420cb (Check & fix styling)
 
         $user = UserFactory::new()->createOne();
         $userId = $user->id;

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Correzioni Errori di Sintassi nei File di Traduzione - 2025"
 type: concept
@@ -147,19 +146,3 @@ find Modules/User/lang -name "*.php" -exec php -l {} \;
 **Data**: 2025-01-15
 **Versione**: 1.0
 **Stato**: Completato
-=======
-# translation-syntax-fixes-2025 - User
-
-## Overview
-
-Documentazione per translation-syntax-fixes-2025 nel modulo User.
-
-## Dettagli
-
-[Da completare]
-
-## Collegamenti
-
-- [Modulo Principale](../README.md)
-
->>>>>>> 350420cb (Check & fix styling)

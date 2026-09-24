@@ -2,49 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return [
-=======
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/de/registration.php
-return [
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // FO auth/register (Sixteen + RegisterWidget) — Top-Level-Keys für Blade-Templates.
-    'title' => 'Neues Konto erstellen',
-    'subtitle' => 'Bürgerbereich',
-    'description' => 'Geben Sie Ihre Daten ein, um ein Konto zu erstellen und Online-Dienste zu nutzen.',
-    'submit' => 'Registrieren',
-    'already_have_account' => 'Haben Sie bereits ein Konto?',
-    'login' => 'Anmelden',
-    'failed' => 'Registrierung konnte nicht abgeschlossen werden.',
-    'success' => 'Registrierung erfolgreich abgeschlossen.',
-    'sidebar' => [
-        'support_title' => 'Bevor Sie beginnen',
-        'help_email' => 'Verwenden Sie eine gültige E-Mail-Adresse für Mitteilungen und Passwort-Wiederherstellung.',
-        'help_password' => 'Wählen Sie ein Passwort mit mindestens 12 Zeichen, Groß- und Kleinbuchstaben, Zahlen und Symbolen.',
-        'help_support' => 'Nach der Registrierung können Sie auf Ihren persönlichen Bereich zugreifen.',
-    ],
->>>>>>> 350420cb (Check & fix styling)
     'navigation' => [
         'label' => 'Registrazione',
         'group' => 'Gestione Utenti',

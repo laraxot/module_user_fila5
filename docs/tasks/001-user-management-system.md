@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Task 001: Implement User Management and Authentication System"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./tasks-index.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Task 001: Implement User Management and Authentication System
 
 ## Description

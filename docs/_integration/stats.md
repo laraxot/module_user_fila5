@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "stats"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./phpstan.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # stats
 
 <!-- Contenuto migrato da _docs/stats.txt -->

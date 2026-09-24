@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Translation Guidelines"
 type: guide
 tags: [translation, guidelines]
@@ -20,8 +19,6 @@ related:
 ---
 
 ---
-=======
->>>>>>> 350420cb (Check & fix styling)
 name: translation-guidelines-user-module
 description: **Guide**: Structure translations in User module with 5-element standard
 **Applies to**: All language files in laravel/Modules/User/lang/

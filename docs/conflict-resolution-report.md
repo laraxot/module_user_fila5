@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Risoluzione dei Conflitti Git nel Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Risoluzione dei Conflitti Git nel Modulo User
 
 ## Panoramica
@@ -90,13 +87,8 @@ Le modifiche apportate garantiscono:
 - [Best Practices Filament](modules/user/docs/filament_best_practices.md)
 - [Regole di Traduzione](docs/translations_rules.md)
 - [PHPStan Livello 9](docs/phpstan/phpstan_livello9_linee_guida.md)
-<<<<<<< HEAD
 - [Implementazione Login](modules/user/docs/auth-login-implementation.md)
 - [Implementazione Logout](modules/user/docs/auth-logout-implementation.md)
-=======
-- [Implementazione Login](modules/user/docs/auth_login_implementation.md)
-- [Implementazione Logout](modules/user/docs/auth_logout_implementation.md)
->>>>>>> 350420cb (Check & fix styling)
 # Risoluzione dei Conflitti Git nel Modulo User
 
 ## Panoramica
@@ -166,10 +158,5 @@ Le modifiche apportate garantiscono:
 - [Best Practices Filament](modules/user/docs/filament_best_practices.md)
 - [Regole di Traduzione](docs/translations_rules.md)
 - [PHPStan Livello 9](docs/phpstan/phpstan_livello9_linee_guida.md)
-<<<<<<< HEAD
 - [Implementazione Login](modules/user/docs/auth-login-implementation.md)
 - [Implementazione Logout](modules/user/docs/auth-logout-implementation.md)
-=======
-- [Implementazione Login](modules/user/docs/auth_login_implementation.md)
-- [Implementazione Logout](modules/user/docs/auth_logout_implementation.md)
->>>>>>> 350420cb (Check & fix styling)

@@ -7,7 +7,6 @@ created: 2026-06-06
 updated: 2026-06-06
 qmd: "user module must not depend comment CanComment InteractsWithComments BaseUser boundary"
 issues:
-<<<<<<< HEAD
 discussions:
 related:
   - "./ai-harness-user-discipline.md"
@@ -18,15 +17,6 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-=======
-  - "https://github.com/laraxot/base_techplanner_fila5/issues/13"
-discussions:
-  - "https://github.com/laraxot/base_techplanner_fila5/discussions/14"
-related:
-  - ./profiles-ownership-boundary-rule.md
-  - ./policy-inheritance-boundary.md
-  - ../concepts/ai-harness-user-discipline.md
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # User non dipende da Comment

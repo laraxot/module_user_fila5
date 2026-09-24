@@ -1,17 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_1ea6yA
-<<<<<<< HEAD
-<<<<<<< .merge_file_DKpzc3
-
-=======
->>>>>>> .merge_file_xMa7H1
-=======
-
->>>>>>> 350420cb (Check & fix styling)
-=======
->>>>>>> .merge_file_bOrHQ4
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Forms\Components\Field;
@@ -126,19 +115,7 @@ function pestSkip(string $message): never
  * Narrows the wide return type of Mockery's shouldReceive()/allows() to the
  * concrete Expectation class so chained calls like andReturn()/with() resolve.
  */
-<<<<<<< .merge_file_1ea6yA
-<<<<<<< HEAD
-<<<<<<< .merge_file_DKpzc3
-function mockeryExpect(mixed $expectation): Expectation
-=======
 function mockeryExpect(object $expectation): Expectation
->>>>>>> .merge_file_xMa7H1
-=======
-function mockeryExpect(mixed $expectation): Expectation
->>>>>>> 350420cb (Check & fix styling)
-=======
-function mockeryExpect(object $expectation): Expectation
->>>>>>> .merge_file_bOrHQ4
 {
     \assert($expectation instanceof Expectation);
 

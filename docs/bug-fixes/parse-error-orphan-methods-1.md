@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Parse Error Orphan Methods 1"
 type: concept
@@ -17,6 +16,3 @@ related:
   - "./parse-error-orphan-methods.md"
   - "./parse-orphan-methods.md"
 ---
-=======
-
->>>>>>> 350420cb (Check & fix styling)

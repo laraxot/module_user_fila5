@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Header Navigation - Sistema di Autenticazione"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Header Navigation - Sistema di Autenticazione
 
 ## Panoramica

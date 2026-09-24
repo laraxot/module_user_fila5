@@ -30,7 +30,6 @@ Dopo la modifica, rigenerare la cache delle viste:
 ```bash
 php artisan view:clear && php artisan route:clear
 ```
-<<<<<<< HEAD
 ---
 module: theme
 topic: volt-missing-directive
@@ -47,5 +46,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/volt-missing-directive.md
-=======
->>>>>>> 350420cb (Check & fix styling)

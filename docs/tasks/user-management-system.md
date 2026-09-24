@@ -2,7 +2,6 @@
 module: theme
 topic: user-management-system
 canonical: ../../../../Themes/docs/shared-components/001-user-management-system.md
-<<<<<<< HEAD
 related:
   - "./001-user-management-system.md"
   - "./audit-dipendenze-user.md"
@@ -12,8 +11,6 @@ related:
   - "./fixoc-merge-kers.md"
   - "./query-optimization-user.md"
   - "./spostamento-widget-violante.md"
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/001-user-management-system.md

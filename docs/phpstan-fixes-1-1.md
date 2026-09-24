@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Correzioni PHPStan Livello 7 - Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Correzioni PHPStan Livello 7 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo User e le relative soluzioni implementate.
@@ -59,21 +56,12 @@ Il problema è che i tag PHPDoc facevano riferimento a una classe `Builder` nel 
 ### Versione HEAD
 
 Questo garantisce che PHPStan possa risolvere correttamente il tipo `Builder` utilizzando il namespace completo `\Illuminate\Database\Eloquent\Builder`. 
-<<<<<<< HEAD
 ## Collegamenti tra versioni di phpstan-fixes-8.md
 * [phpstan-fixes-8.md](../../../Xot/docs/phpstan/phpstan-fixes-8.md)
 * [phpstan-fixes-8.md](../../../Xot/docs/phpstan-fixes-8.md)
 * [phpstan-fixes-8.md](../../../User/docs/phpstan-fixes-8.md)
 * [phpstan-fixes-8.md](../../../UI/docs/phpstan-fixes-8.md)
 * [phpstan-fixes-8.md](../../../Media/docs/phpstan-fixes-8.md)
-=======
-## Collegamenti tra versioni di phpstan_fixes.md
-* [phpstan_fixes.md](../../../Xot/docs/phpstan/phpstan_fixes.md)
-* [phpstan_fixes.md](../../../Xot/docs/phpstan_fixes.md)
-* [phpstan_fixes.md](../../../User/docs/phpstan_fixes.md)
-* [phpstan_fixes.md](../../../UI/docs/phpstan_fixes.md)
-* [phpstan_fixes.md](../../../Media/docs/phpstan_fixes.md)
->>>>>>> 350420cb (Check & fix styling)
 
 
 ### Versione Incoming

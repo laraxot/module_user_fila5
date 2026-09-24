@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨  

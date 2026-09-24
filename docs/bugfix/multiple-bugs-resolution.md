@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Multiple Bugs Resolution - 16 Dicembre 2025"
 type: concept
@@ -15,8 +14,6 @@ related:
   - "./gits-resolution.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Multiple Bugs Resolution - 16 Dicembre 2025
 
 **Data Fix**: 16 Dicembre 2025
@@ -223,11 +220,7 @@ public function render(): View
 
 - [Priority Decision Rules](../../xot/docs/priority-decision-rules.md)
 - [Super Mucca Workflow](../../xot/docs/super-mucca-workflow.md)
-<<<<<<< HEAD
 - [Git Conflict Resolution](./git-conflicts-resolution.md)
-=======
-- [Git Conflict Resolution](./git-conflicts-resolution-2025-12-16.md)
->>>>>>> 350420cb (Check & fix styling)
 - [TenantService Actions](../../tenant/docs/configuration.md)
 
 ---

@@ -37,7 +37,6 @@ Convertire `logout.blade.php` in una **pagina Folio statica**:
     </script>
 </x-layouts.app>
 ```
-<<<<<<< HEAD
 ---
 module: theme
 topic: logout-page-fix
@@ -54,5 +53,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-page-fix.md
-=======
->>>>>>> 350420cb (Check & fix styling)

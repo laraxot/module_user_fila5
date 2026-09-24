@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Widget Translation Guidelines"
 type: concept
@@ -15,8 +14,6 @@ related:
   - "./translation-guidelines.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Widget Translation Guidelines
 
 ## Overview
@@ -164,11 +161,7 @@ The User module's LangServiceProvider automatically loads and manages widget tra
 3. Test changes across all supported locales
 4. Document any breaking changes
 ## Related Documentation
-<<<<<<< HEAD
 - [User Module Widget Structure](../widgets-structure-2.md)
-=======
-- [User Module Widget Structure](../widgets_structure.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Filament Widget Conventions](../../xot/docs/filament-widgets.md)
 - [Translation System Overview](../../xot/docs/translations.md)
 - [Filament Widget Conventions](../../xot/project_docs/filament-widgets.md)

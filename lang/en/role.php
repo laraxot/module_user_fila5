@@ -2,23 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return [
-=======
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/en/role.php
-return [
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
->>>>>>> 350420cb (Check & fix styling)
     'navigation' => [
         'name' => 'Ruoli',
         'plural' => 'Ruoli',
@@ -33,20 +17,6 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome Ruolo',
-<<<<<<< HEAD
-=======
-            'tooltip' => 'Il nome identificativo del ruolo, es. \\"Admin\\".',
-            'placeholder' => 'Nome del ruolo',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'guard_name' => [
-            'label' => 'Guard',
-            'tooltip' => 'Il nome della guardia per questo ruolo, es. \\"web\\".',
-            'placeholder' => 'Nome della guardia',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 350420cb (Check & fix styling)
         ],
         'permissions' => [
             'label' => 'Permessi',
@@ -79,85 +49,18 @@ return [
             'label' => 'Descrizione',
             'tooltip' => 'Una descrizione del ruolo e delle sue funzioni.',
             'placeholder' => 'Descrizione del ruolo',
-<<<<<<< HEAD
-=======
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 350420cb (Check & fix styling)
         ],
         'team_id' => [
             'description' => 'team_id',
             'helper_text' => 'team_id',
             'placeholder' => 'team_id',
             'label' => 'team_id',
-<<<<<<< HEAD
-=======
-            'tooltip' => '',
-        ],
-        'detach' => [
-            'label' => 'detach',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'edit' => [
-            'label' => 'edit',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'attach' => [
-            'label' => 'attach',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 350420cb (Check & fix styling)
         ],
         'recordId' => [
             'description' => 'recordId',
             'helper_text' => 'recordId',
             'placeholder' => 'recordId',
             'label' => 'recordId',
-<<<<<<< HEAD
-=======
-            'tooltip' => '',
-        ],
-        'id' => [
-            'label' => 'id',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 350420cb (Check & fix styling)
         ],
     ],
     'roles' => [

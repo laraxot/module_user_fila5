@@ -1,22 +1,3 @@
-<<<<<<< .merge_file_DBqFa5
-<<<<<<< HEAD
----
-title: "Git Reset"
-type: concept
-tags: [git, reset]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "git-reset git reset"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
-related:
-  - "./pest-test-report.md"
----
-
-=======
->>>>>>> 350420cb (Check & fix styling)
-=======
->>>>>>> .merge_file_Ok3Ja0
 #!/bin/sh
 set -e
 git config -f .gitmodules --get-regexp '^submodule\..*\.path$' |

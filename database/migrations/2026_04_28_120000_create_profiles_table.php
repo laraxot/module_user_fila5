@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Profile;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -74,7 +70,6 @@ return new class extends XotBaseMigration
             if (! $this->hasColumn('type')) {
                 $table->string('type')->index()->nullable();
             }
-<<<<<<< HEAD
             // Era dichiarata solo nel blocco CREATE, che su questa tabella non gira mai:
             // `profiles` viene creata da `Modules/Ptv/.../2024_01_01_000004_create_profiles_table.php`,
             // che parte prima e non conosce questa colonna. Il model `Profile` invece la
@@ -102,8 +97,6 @@ return new class extends XotBaseMigration
             if (! $this->hasColumn('gender')) {
                 $table->string('gender', 1)->nullable();
             }
-=======
->>>>>>> 350420cb (Check & fix styling)
             if (! $this->hasColumn('email')) {
                 $table->string('email')->nullable();
             }

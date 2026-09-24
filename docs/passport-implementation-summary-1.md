@@ -2,7 +2,6 @@
 module: theme
 topic: passport-implementation-summary-1
 canonical: ../../../Themes/docs/shared-components/passport-implementation-summary.md
-<<<<<<< HEAD
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -12,8 +11,6 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-implementation-summary.md

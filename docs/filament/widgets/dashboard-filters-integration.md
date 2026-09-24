@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Dashboard Filters Integration per Widget Filament"
 type: concept
@@ -15,8 +14,6 @@ related:
   - "./registration-widget.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Dashboard Filters Integration per Widget Filament
 
 ## Problema Risolto

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Trait HasTeams"
 type: concept
@@ -13,8 +12,6 @@ related:
   - "./has-tenants.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Trait HasTeams
 
 ## Descrizione

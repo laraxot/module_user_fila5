@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)
 /**
  * @see https://github.com/rappasoft/laravel-authentication-log/blob/main/src/Models/AuthenticationLog.php
  */
@@ -90,13 +86,9 @@ class AuthenticationLog extends BaseModel
     //    return config('authentication-log.table_name', parent::getTable());
     // }
 
-<<<<<<< HEAD
     /**
      * @return MorphTo<Model, $this>
      */
-=======
-    /** @return MorphTo<Model, $this> */
->>>>>>> 350420cb (Check & fix styling)
     public function authenticatable(): MorphTo
     {
         return $this->morphTo();

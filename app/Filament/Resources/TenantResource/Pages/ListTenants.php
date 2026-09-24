@@ -1,16 +1,9 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 /**
  * Tenant List Management.
  */
-=======
-/**
- * Tenant List Management.
- */
-declare(strict_types=1);
->>>>>>> 350420cb (Check & fix styling)
 
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
 
@@ -27,17 +20,10 @@ class ListTenants extends XotBaseListRecords
     /**
      * Definisce le colonne della tabella per la lista tenant.
      */
-<<<<<<< HEAD
     #[\Override]
     /**
      * @return array<string, mixed>
      */
-=======
-    /**
-     * @return array<string, \Filament\Tables\Columns\Column>
-     */
-    #[\Override]
->>>>>>> 350420cb (Check & fix styling)
     public function getTableColumns(): array
     {
         return [

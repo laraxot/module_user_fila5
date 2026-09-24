@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Actions Structure"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Actions Structure 
 
 ## Directory Structure
@@ -94,13 +91,7 @@ class DeleteUserAction
 
 ## Documentazione Correlata
 
-<<<<<<< HEAD
 - [Path Conventions](./path-conventions-2.md)
 - [Directory Structure Checklist](./directory-structure-checklist.md)
 - [Module Structure](./module-structure-2.md)
-=======
-- [Path Conventions](./path_conventions.md)
-- [Directory Structure Checklist](./directory_structure_checklist.md)
-- [Module Structure](./module_structure.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)

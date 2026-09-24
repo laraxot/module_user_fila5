@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Filament 5.x compatibility - modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Filament 5.x compatibility - modulo User
 
 **Versione Filament:** v5.2.1

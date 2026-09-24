@@ -4,26 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Events;
 
-<<<<<<< HEAD
-=======
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-
->>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use Laravel\Socialite\Two\InvalidStateException;
 use Modules\User\Contracts\TeamContract;
-<<<<<<< HEAD
 use Modules\User\Database\Factories\UserFactory;
-=======
->>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Events\AddingTeam;
 use Modules\User\Events\AddingTeamMember;
 use Modules\User\Events\InvalidState;
@@ -51,7 +37,6 @@ use Modules\User\Events\UserNotAllowed;
 use Modules\User\Events\UserRegistered;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\User;
-<<<<<<< HEAD
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
@@ -110,96 +95,24 @@ describe('User Events Coverage', function (): void {
 
     test('exposes broadcast channel for new password set event', function (): void {
         $user = UserFactory::new()->makeOne();
-=======
-use Modules\Xot\Contracts\UserContract;
-
-describe('User events coverage', function (): void {
-    it('instantiates team and membership events', function (): void {
-        $team = Mockery::mock(TeamContract::class);
-        $user = Mockery::mock(UserContract::class);
-
-        expect(new AddingTeam($user))->toBeInstanceOf(AddingTeam::class)
-            ->and(new AddingTeamMember($team, $user))->toBeInstanceOf(AddingTeamMember::class)
-            ->and(new InvitingTeamMember($team, 'member@example.com', 'editor'))->toBeInstanceOf(InvitingTeamMember::class)
-            ->and(new RemovingTeamMember($team, $user))->toBeInstanceOf(RemovingTeamMember::class)
-            ->and(new TeamMemberAdded($team, $user))->toBeInstanceOf(TeamMemberAdded::class)
-            ->and(new TeamMemberRemoved($team, $user))->toBeInstanceOf(TeamMemberRemoved::class)
-            ->and(new TeamMemberUpdated($team, $user))->toBeInstanceOf(TeamMemberUpdated::class)
-            ->and(new TeamSwitched($team, $user))->toBeInstanceOf(TeamSwitched::class)
-            ->and(new TeamCreated($team))->toBeInstanceOf(TeamCreated::class)
-            ->and(new TeamUpdated($team))->toBeInstanceOf(TeamUpdated::class)
-            ->and(new TeamDeleted($team))->toBeInstanceOf(TeamDeleted::class);
-    });
-
-    it('instantiates socialite and auth events', function (): void {
-        $socialiteUser = $this->createMock(SocialiteUser::class);
-        $oauthUser = Mockery::mock(SocialiteUserContract::class);
-
-        expect(new Login($socialiteUser))->toBeInstanceOf(Login::class)
-            ->and(new Registered($socialiteUser))->toBeInstanceOf(Registered::class)
-            ->and(new SocialiteUserConnected($socialiteUser))->toBeInstanceOf(SocialiteUserConnected::class)
-            ->and(new RegistrationNotEnabled('github', $oauthUser))->toBeInstanceOf(RegistrationNotEnabled::class)
-            ->and(new UserNotAllowed($oauthUser))->toBeInstanceOf(UserNotAllowed::class);
-    });
-
-    it('instantiates recovery and invalid-state events', function (): void {
-        $auth = Mockery::mock(Authenticatable::class);
-        $exception = new InvalidStateException('state invalid');
-
-        expect(new RecoveryCodeReplaced($auth, '123456'))->toBeInstanceOf(RecoveryCodeReplaced::class)
-            ->and(new InvalidState($exception))->toBeInstanceOf(InvalidState::class);
-    });
-
-    it('instantiates two-factor events', function (): void {
-        $user = Mockery::mock(UserContract::class);
-
-        expect(new TwoFactorAuthenticationEnabled($user))->toBeInstanceOf(TwoFactorAuthenticationEnabled::class)
-            ->and(new TwoFactorAuthenticationDisabled($user))->toBeInstanceOf(TwoFactorAuthenticationDisabled::class)
-            ->and(new TwoFactorAuthenticationConfirmed($user))->toBeInstanceOf(TwoFactorAuthenticationConfirmed::class)
-            ->and(new TwoFactorAuthenticationChallenged($user))->toBeInstanceOf(TwoFactorAuthenticationChallenged::class);
-    });
-
-    it('exposes broadcast channel for new password set event', function (): void {
-        $user = Mockery::mock(UserContract::class);
->>>>>>> 350420cb (Check & fix styling)
         $event = new NewPasswordSet($user);
 
         $channels = $event->broadcastOn();
 
-<<<<<<< HEAD
         Assert::assertCount(1, $channels);
         Assert::assertInstanceOf(PrivateChannel::class, $channels[0]);
     });
 
     test('instantiates recovery generated and user registered events', function (): void {
         $userContract = UserFactory::new()->makeOne();
-<<<<<<< .merge_file_EDKL9A
-=======
-        expect($channels)->toHaveCount(1)
-            ->and($channels[0])->toBeInstanceOf(PrivateChannel::class);
-    });
-
-    it('instantiates recovery-generated and user-registered events', function (): void {
-        $userContract = Mockery::mock(UserContract::class);
->>>>>>> 350420cb (Check & fix styling)
-        $user = new User();
-=======
         $user = new User;
->>>>>>> .merge_file_av3ijB
 
         $generated = new RecoveryCodesGenerated($userContract);
         $registered = new UserRegistered($user, ['source' => 'test'], '127.0.0.1', 'Pest');
 
-<<<<<<< HEAD
         Assert::assertInstanceOf(RecoveryCodesGenerated::class, $generated);
         Assert::assertInstanceOf(UserRegistered::class, $registered);
         Assert::assertSame(['source' => 'test'], $registered->formData);
         Assert::assertSame('127.0.0.1', $registered->ipAddress);
-=======
-        expect($generated)->toBeInstanceOf(RecoveryCodesGenerated::class)
-            ->and($registered)->toBeInstanceOf(UserRegistered::class)
-            ->and($registered->formData)->toBe(['source' => 'test'])
-            ->and($registered->ipAddress)->toBe('127.0.0.1');
->>>>>>> 350420cb (Check & fix styling)
     });
 });

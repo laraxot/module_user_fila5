@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Filosofia Laraxot: Il Grande Dibattito Interno - PHPStan Level 10"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Filosofia Laraxot: Il Grande Dibattito Interno - PHPStan Level 10
 
 **Data Creazione**: [DATE]

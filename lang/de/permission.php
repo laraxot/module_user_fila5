@@ -2,21 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return [
-=======
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/de/permission.php
-return [
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
->>>>>>> 350420cb (Check & fix styling)
     'navigation' => [
         'name' => 'Permessi',
         'plural' => 'Permessi',
@@ -31,13 +17,6 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome Permesso',
-<<<<<<< HEAD
-=======
-            'tooltip' => 'Inserisci il nome del permesso, ad esempio \\"Accesso Admin\\".',
-            'placeholder' => 'Nome del permesso',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 350420cb (Check & fix styling)
         ],
         'guard_name' => [
             'label' => 'Guard',
@@ -78,17 +57,6 @@ return [
             'label' => 'Descrizione',
             'tooltip' => 'Fornisci una breve descrizione del permesso.',
             'placeholder' => 'Descrizione del permesso',
-<<<<<<< HEAD
-=======
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 350420cb (Check & fix styling)
         ],
     ],
     'actions' => [

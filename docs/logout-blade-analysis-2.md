@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi del File logout.blade.php"
 type: concept
@@ -19,25 +18,15 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Analisi del File logout.blade.php
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-<<<<<<< HEAD
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Auth Pages Implementation](./auth-pages-implementation.md)
 - [Logout Blade Implementation](./logout-blade-implementation-2.md)
 - [Convenzioni Path](./path-conventions-2.md)
 - [Analisi dell'Errore di Implementazione](./volt-blade-implementation-error-3.md)
-=======
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Auth Pages Implementation](./auth_pages_implementation.md)
-- [Logout Blade Implementation](./logout_blade_implementation.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
->>>>>>> 350420cb (Check & fix styling)
 
 ## Panoramica
 

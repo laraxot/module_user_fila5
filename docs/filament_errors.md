@@ -1,6 +1,5 @@
 # Errori Comuni Filament nel Modulo User
 
-<<<<<<< HEAD
 ## No hint path defined for [filament-jet]
 
 **Errore:** `InvalidArgumentException: No hint path defined for [filament-jet].` su `GET /admin` (user menu Filament).
@@ -21,8 +20,6 @@
 
 Conversione a Filament widget **implementata**: [bmad/tech-spec.md](./bmad/tech-spec.md), story [9.2](./stories/9.2.admin-panel-provider-hook.story.md) (hook) e [9.3](./stories/9.3.remove-livewire-superadmin.story.md) (rimozione Livewire). Il provider monta `SuperAdminWidget` via `@livewire(SuperAdminWidget::class)`; il vecchio `@livewire('profile.super-admin')` non esiste più.
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 ## Errori di Metodi Statici
 
 ### 1. getTableColumns() non può essere statico in RelationManager

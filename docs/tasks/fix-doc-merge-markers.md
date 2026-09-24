@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Task: Fix Documentation Merge Markers (User Module)"
 type: concept
@@ -22,12 +21,6 @@ related:
 # Task: Fix Documentation Merge Markers (User Module)
 
 ## 📋 Obiettivo
-=======
-# Task: Fix Documentation Merge Markers (User Module)
-
-## 📋 Obiettivo
-Rimuovere residui di conflitti Git (`<<<<<<<`, `=======`, `>>>>>>>`) da tutti i file di documentazione del modulo User, garantendo una lettura pulita e professionale.
->>>>>>> 350420cb (Check & fix styling)
 
 ## 🚨 File Identificati (Esempi)
 - `Modules/User/docs/README.md`
@@ -35,16 +28,4 @@ Rimuovere residui di conflitti Git (`<<<<<<<`, `=======`, `>>>>>>>`) da tutti i 
 - Molti altri file nella directory `docs/`.
 
 ## ✅ Checklist
-<<<<<<< HEAD
-=======
-- [ ] Cercare ricorsivamente i marker `<<<<<<<`, `=======`, `>>>>>>>` in `Modules/User/docs/`.
-- [ ] Per ogni file trovato:
-    - [ ] Analizzare le due versioni in conflitto.
-    - [ ] Scegliere la versione più recente/corretta (spesso quella post-upgrade).
-    - [ ] Rimuovere i marker e unificare il testo.
-- [ ] Verificare la formattazione Markdown dopo la pulizia.
-- [ ] Verificare che i link interni continuino a funzionare.
-
-## 🔗 Riferimenti
->>>>>>> 350420cb (Check & fix styling)
 - [Roadmap User](../roadmap.md)

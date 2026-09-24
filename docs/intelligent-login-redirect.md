@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Redirect Intelligente dopo Login - Soluzione Implementata"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Redirect Intelligente dopo Login - Soluzione Implementata
 
 ## 🚨 Problema Risolto

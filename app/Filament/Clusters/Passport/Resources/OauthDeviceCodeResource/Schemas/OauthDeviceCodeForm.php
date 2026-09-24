@@ -4,22 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Clusters\Passport\Resources\OauthDeviceCodeResource\Schemas;
 
-<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Grid;
-=======
-use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
->>>>>>> 350420cb (Check & fix styling)
 use Filament\Schemas\Components\Section;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class OauthDeviceCodeForm extends XotBaseResourceForm
 {
     /**
-<<<<<<< HEAD
      * Get the form schema for the resource.
      *
      * @return array<string, Component>
@@ -54,16 +48,6 @@ class OauthDeviceCodeForm extends XotBaseResourceForm
                             'expires_at' => TextInput::make('expires_at'),
                         ]),
                 ]),
-=======
-     * @return array<int|string, Component>
-     */
-    public static function getFormSchema(): array
-    {
-        return [
-            Section::make([
-                'name' => TextInput::make('name'),
-            ]),
->>>>>>> 350420cb (Check & fix styling)
         ];
     }
 }

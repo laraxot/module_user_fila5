@@ -5,17 +5,10 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Resources\ClientResource\Schemas;
 
 use Filament\Forms\Components\Field;
-<<<<<<< HEAD
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Component as SchemaComponent;
-=======
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Toggle;
-use Filament\Schemas\Components\Component as SchemaComponent;
-use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
->>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class ClientForm extends XotBaseResourceForm
@@ -23,22 +16,14 @@ class ClientForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public static function getFormSchema(): array
->>>>>>> 350420cb (Check & fix styling)
     {
         $components = [
             'name' => TextInput::make('name')
                 ->unique('clients', 'name')
                 ->required()
                 ->maxLength(255),
-<<<<<<< HEAD
             'user_id' => Select::make('user_id')
-=======
-            'user_id' => XotBaseSelect::make('user_id')
->>>>>>> 350420cb (Check & fix styling)
                 ->relationship('user', 'name')
                 ->searchable()
                 ->required(),

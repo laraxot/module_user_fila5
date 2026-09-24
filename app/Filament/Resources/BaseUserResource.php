@@ -1,32 +1,14 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 350420cb (Check & fix styling)
 /**
  * @see https://github.com/ryangjchandler/filament-user-resource/blob/main/src/resources/UserResource.php
  * @see https://github.com/3x1io/filament-user/blob/main/src/resources/UserResource.php
  */
 
-<<<<<<< HEAD
 namespace Modules\User\Filament\Resources;
 
 use Illuminate\Database\Eloquent\Model;
-=======
-declare(strict_types=1);
-
-namespace Modules\User\Filament\Resources;
-
-use Carbon\CarbonInterface;
-use Filament\Forms\Components\Placeholder;
-use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Section;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\HtmlString;
-use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
->>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -49,45 +31,6 @@ abstract class BaseUserResource extends XotBaseResource
     //    static::$extendFormCallback = $callback;
     // }
 
-<<<<<<< HEAD
-=======
-    #[\Override]
-    public static function getFormSchema(): array
-    {
-        return [
-            'section01' => Section::make([
-                'name' => TextInput::make('name')->required(),
-                'email' => TextInput::make('email')->required()->unique(ignoreRecord: true),
-                'password' => TextInput::make('password')
-                    ->password()
-                    ->dehydrateStateUsing(function ($state) {
-                        if (empty($state)) {
-                            return;
-                        }
-
-                        return is_string($state) ? Hash::make($state) : null;
-                    })
-                    ->required(fn ($livewire) => $livewire instanceof CreateUser),
-            ])->columnSpan(8),
-            'section02' => Section::make([
-                'created_at' => Placeholder::make('created_at')->content(static function ($record) {
-                    if (null === $record || ! $record instanceof Model) {
-                        return new HtmlString('&mdash;');
-                    }
-
-                    if (! isset($record->created_at) || ! ($record->created_at instanceof \DateTimeInterface)) {
-                        return new HtmlString('&mdash;');
-                    }
-
-                    $createdAt = $record->created_at;
-
-                    return $createdAt instanceof CarbonInterface ? $createdAt->diffForHumans() : $createdAt->format('Y-m-d H:i:s');
-                }),
-            ])->columnSpan(4),
-        ];
-    }
-
->>>>>>> 350420cb (Check & fix styling)
     // public static function enablePasswordUpdates(bool|Closure $condition = true): void
     // {
     //     static::$enablePasswordUpdates = $condition;

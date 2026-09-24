@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "🔐 TWO-FACTOR AUTHENTICATION (2FA) - GUIDA IMPLEMENTAZIONE"
 type: guide
@@ -19,8 +18,6 @@ related:
   - "./actions-structure-1.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # 🔐 TWO-FACTOR AUTHENTICATION (2FA) - GUIDA IMPLEMENTAZIONE
 
 **Versione**: 1.0  

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Legacy Code Cleanup"
 type: concept
@@ -18,8 +17,6 @@ related:
   - "./user-traits.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Legacy Code Cleanup
 
 ## Overview

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Changelog"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Changelog
 
 Tutte le modifiche notevoli a questo modulo saranno documentate in questo file.
@@ -63,11 +60,8 @@ e questo progetto aderisce al [Semantic Versioning](https://semver.org/spec/v2.0
 - Widget per il login e la registrazione
 - Gestione delle autenticazioni
 - Documentazione base del modulo
-<<<<<<< HEAD
 # Changelog
 
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
-=======
->>>>>>> 350420cb (Check & fix styling)

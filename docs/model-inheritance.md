@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi Ereditarietà Modelli - Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Analisi Ereditarietà Modelli - Modulo User
 
 ## Regola Fondamentale

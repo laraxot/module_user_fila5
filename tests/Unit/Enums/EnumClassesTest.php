@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Modules\User\Enums\SocialProviderEnum;
 use Modules\User\Enums\SystemRole;
 use Modules\User\Enums\UserType;
@@ -9,15 +8,6 @@ use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-=======
-
-use Modules\User\Enums\SocialProviderEnum;
-use Modules\User\Enums\SystemRole;
-use Modules\User\Enums\UserType;
-use PHPUnit\Framework\Assert;
-
-uses(Modules\User\Tests\TestCase::class);
->>>>>>> 350420cb (Check & fix styling)
 
 test('UserType enum has all cases', function (): void {
     $cases = UserType::cases();

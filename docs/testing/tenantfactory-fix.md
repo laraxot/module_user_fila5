@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "TenantFactory Fix - Reasoning"
 type: concept
@@ -15,8 +14,6 @@ related:
   - "./tenanttest-fixes.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # TenantFactory Fix - Reasoning
 
 ## Problem

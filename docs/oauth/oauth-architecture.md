@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "OAuth Architecture - User Module"
 type: concept
@@ -12,8 +11,6 @@ related:
   - "./github.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # OAuth Architecture - User Module
 
 > **Last Updated**: 2026-03-18  

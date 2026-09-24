@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "payment"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./profile.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # payment
 
 <!-- Contenuto migrato da _docs/payment.txt -->

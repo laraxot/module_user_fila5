@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Current State - User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./03-workstreams.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Current State - User
 
 ## Baseline

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Il Grande Dibattito Furioso: PHPStan Level 10 - La Verità Assoluta"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Il Grande Dibattito Furioso: PHPStan Level 10 - La Verità Assoluta
 
 **Status**: Dibattito Risolto - Il Purista Ha Vinto

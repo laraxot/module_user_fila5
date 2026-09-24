@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Guida Rendering Widget Filament 4 - Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Guida Rendering Widget Filament 4 - Modulo User
 
 **Modulo**: User  
@@ -401,11 +398,7 @@ class LoginWidget extends XotBaseWidget
 - [Filament 4 Widgets](https://filamentphp.com/docs/4.x/widgets)
 - [Filament 4 Forms](https://filamentphp.com/docs/4.x/forms)
 - [Livewire 3](https://livewire.laravel.com/docs/3.x)
-<<<<<<< HEAD
 - [Laraxot Widget Rules](./auth-widget-rules.md)
-=======
-- [Laraxot Widget Rules](./auth_widget_rules.md)
->>>>>>> 350420cb (Check & fix styling)
 
 ## 🎯 Conclusione
 

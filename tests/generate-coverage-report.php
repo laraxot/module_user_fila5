@@ -1,16 +1,9 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_m5Bgx1
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)
-=======
 
 require dirname(__DIR__, 3).'/vendor/autoload.php';
 
->>>>>>> .merge_file_P3Pc8S
 use function Safe\filesize;
 use function Safe\simplexml_load_file;
 
@@ -132,11 +125,7 @@ echo "Top 30 Covered Files (by element coverage, min 5 elements):\n";
 echo "─────────────────────────────────────────────────────────────────\n";
 
 $sortedFiles = $allFiles;
-<<<<<<< HEAD
 uksort($sortedFiles, function (string $a, string $b) use ($allFiles): int {
-=======
-uksort($sortedFiles, function ($a, $b) use ($allFiles) {
->>>>>>> 350420cb (Check & fix styling)
     $aStats = $allFiles[$a];
     $bStats = $allFiles[$b];
     $aPercent = $aStats['elements']['total'] > 0
@@ -195,18 +184,10 @@ foreach ($sortedFiles as $fileName => $stats) {
 echo "\n";
 
 // Files with no coverage
-<<<<<<< .merge_file_m5Bgx1
-<<<<<<< HEAD
-$uncoveredFiles = array_filter($allFiles, fn (array $stats) => 0 === $stats['elements']['covered'] && $stats['elements']['total'] > 0);
-=======
-$uncoveredFiles = array_filter($allFiles, fn ($stats) => 0 === $stats['elements']['covered'] && $stats['elements']['total'] > 0);
->>>>>>> 350420cb (Check & fix styling)
-=======
 $uncoveredFiles = array_filter(
     $allFiles,
     fn (array $stats): bool => $stats['elements']['covered'] === 0 && $stats['elements']['total'] > 0,
 );
->>>>>>> .merge_file_P3Pc8S
 
 if (count($uncoveredFiles) > 0) {
     echo 'Files with NO coverage ('.count($uncoveredFiles)." files):\n";

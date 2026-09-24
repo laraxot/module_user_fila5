@@ -4,7 +4,6 @@ type: analysis
 module: User
 updated: 2026-06-15
 related:
-<<<<<<< HEAD
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
   - "./code-redundancy-user.md"
@@ -13,10 +12,6 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-=======
-  - ../../../../../../docs/wiki/method-name-homonym-census.md
-  - ../../../../../../bashscripts/docs/method-homonym-census.json
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Censimento omonimi metodi — User

@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets;
 
-<<<<<<< HEAD
 use Filament\Schemas\Components\Component;
-=======
-use Filament\Support\Components\Component;
->>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
@@ -16,11 +12,7 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Livewire\Features\SupportRedirects\Redirector;
 use Modules\Xot\Datas\XotData;
-<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
-=======
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
->>>>>>> 350420cb (Check & fix styling)
 use Webmozart\Assert\Assert;
 
 /**
@@ -31,7 +23,6 @@ use Webmozart\Assert\Assert;
  * - Determina dinamicamente la risorsa, il modello e l'action da eseguire
  * - Delega la logica di salvataggio a una UpdateAction specifica del modulo
  *
-<<<<<<< HEAD
  * @property string $type
  * @property string $resource
  * @property string $model
@@ -49,29 +40,10 @@ class EditUserWidget extends XotBaseSchemaWidget
     public string $model = Model::class;
 
     public string $action = '';
-=======
- * @property string                    $type
- * @property string                    $resource
- * @property string                    $model
- * @property string                    $action
- * @property Model                     $record
- * @property array<string, mixed>|null $data
- */
-class EditUserWidget extends XotBaseWidget
-{
-    public string $type;
-
-    public string $resource;
-
-    public string $model;
-
-    public string $action;
->>>>>>> 350420cb (Check & fix styling)
 
     public Model $record;
 
     /**
-<<<<<<< HEAD
      * Initialize the widget with user type and optional user ID.
      */
     public function mount(string $type = '', ?string $userId = null): void
@@ -85,21 +57,6 @@ class EditUserWidget extends XotBaseWidget
         /** @var class-string<Model> $modelClass */
         $modelClass = $resourceClass::getModel();
         Assert::subclassOf($modelClass, Model::class);
-=======
-     * @phpstan-ignore-next-line
-     */
-    protected string $view = 'pub_theme::filament.widgets.edit-user';
-
-    /**
-     * Initialize the widget with user type and optional user ID.
-     */
-    public function mount(string $type, ?string $userId = null): void
-    {
-        $this->type = $type;
-        $this->resource = XotData::make()->getUserResourceClassByType($type);
-        $modelClass = $this->resource::getModel();
-        Assert::string($modelClass, 'Resource getModel() must return string');
->>>>>>> 350420cb (Check & fix styling)
         $this->model = $modelClass;
 
         $this->action = Str::of($this->model)
@@ -108,19 +65,12 @@ class EditUserWidget extends XotBaseWidget
             ->toString();
 
         $record = $this->getFormModel($userId);
-<<<<<<< HEAD
         $this->record = $record;
-=======
->>>>>>> 350420cb (Check & fix styling)
         $data = $this->getFormFill();
 
         $this->form->fill($data);
         $this->form->model($record);
         $this->data = $data;
-<<<<<<< HEAD
-=======
-        $this->record = $record;
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -155,13 +105,8 @@ class EditUserWidget extends XotBaseWidget
         // Se è un nuovo modello, restituisci solo i campi fillable con valori null
         $fillable = $model->getFillable();
         $appends = $model->getAppends();
-<<<<<<< HEAD
         /** @var array<int, string> $fields */
         $fields = array_merge($fillable, $appends);
-=======
-        $fields = array_values(array_merge($fillable, $appends));
-        Assert::allString($fields);
->>>>>>> 350420cb (Check & fix styling)
 
         /** @var array<string, mixed> $result */
         $result = array_fill_keys($fields, null);
@@ -179,15 +124,8 @@ class EditUserWidget extends XotBaseWidget
         $schema = $this->resource::getFormSchemaWidget();
         Assert::isArray($schema, 'Schema must be array');
 
-<<<<<<< HEAD
         /* @var array<int|string, Component> $result */
         return self::normalizeFormSchema($schema);
-=======
-        /** @var array<int|string, Component> $result */
-        $result = $schema;
-
-        return $result;
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -199,21 +137,12 @@ class EditUserWidget extends XotBaseWidget
     {
         $data = $this->form->getState();
         $record = $this->record;
-<<<<<<< HEAD
         $actionInstance = app($this->action);
         if (! is_object($actionInstance) || ! method_exists($actionInstance, 'execute')) {
             throw new \RuntimeException(sprintf('Update action [%s] must expose execute().', $this->action));
         }
 
         \call_user_func([$actionInstance, 'execute'], $record, $data);
-=======
-
-        /** @var object{execute: callable} $actionInstance */
-        $actionInstance = app($this->action);
-
-        /* @phpstan-ignore method.notFound */
-        $actionInstance->execute($record, $data);
->>>>>>> 350420cb (Check & fix styling)
 
         return redirect()->back();
     }
@@ -272,7 +201,6 @@ class EditUserWidget extends XotBaseWidget
 
         return $user;
     }
-<<<<<<< HEAD
 
     /**
      * @param  array<int|string, mixed>  $schema
@@ -291,6 +219,4 @@ class EditUserWidget extends XotBaseWidget
 
         return $normalized;
     }
-=======
->>>>>>> 350420cb (Check & fix styling)
 }

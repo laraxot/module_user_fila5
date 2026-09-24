@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Terms Conditions"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 https://julienboyer.re/en/posts/how-to-add-terms-and-conditions-checkbox-on-filament-registration-page
 
 ### Versione HEAD

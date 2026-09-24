@@ -2,28 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return [
-=======
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/it/register_tenant.php
-return [
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
->>>>>>> 350420cb (Check & fix styling)
     'navigation' => [
         'label' => 'Registrazione Studio',
         'group' => 'Gestione Tenant',
@@ -46,49 +25,25 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome Studio Medico',
-<<<<<<< HEAD
             'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi)',
-=======
-            'placeholder' => 'Inserisci il nome completo dello studio (es. Studio Dentistico Rossi]',
->>>>>>> 350420cb (Check & fix styling)
             'help' => 'Nome ufficiale dello studio medico come registrato in camera di commercio',
             'validation' => [
                 'required' => 'Il nome dello studio è obbligatorio',
                 'min' => 'Il nome deve contenere almeno 3 caratteri',
                 'max' => 'Il nome non può superare i 100 caratteri',
             ],
-<<<<<<< HEAD
         ],
         'phone' => [
             'label' => 'Telefono Studio',
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'phone' => [
-            'label' => 'Numero di Telefono Studio',
-            'placeholder' => 'Inserisci numero telefonico principale (es. +39 06 1234567]',
->>>>>>> 350420cb (Check & fix styling)
             'help' => 'Numero di telefono principale dello studio per contatti diretti e urgenze',
             'validation' => [
                 'required' => 'Il numero di telefono è obbligatorio',
                 'regex' => 'Inserisci un numero di telefono italiano valido',
                 'min' => 'Il numero deve contenere almeno 10 cifre',
             ],
-<<<<<<< HEAD
         ],
         'email' => [
             'label' => 'Email Studio',
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'email' => [
-            'label' => 'Email Ufficiale Studio',
-            'placeholder' => 'Inserisci email istituzionale (es. info@studiodentistico.it]',
->>>>>>> 350420cb (Check & fix styling)
             'help' => 'Indirizzo email ufficiale dello studio per comunicazioni istituzionali',
             'validation' => [
                 'required' => 'L\'indirizzo email è obbligatorio',
@@ -96,19 +51,9 @@ return [
                 'unique' => 'Questo indirizzo email è già registrato per un altro studio',
                 'max' => 'L\'indirizzo email non può superare i 255 caratteri',
             ],
-<<<<<<< HEAD
         ],
         'address' => [
             'label' => 'Indirizzo Studio',
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'address' => [
-            'label' => 'Indirizzo Completo Studio',
-            'placeholder' => 'Via/Piazza Nome Strada, Numero Civico, CAP Città (Provincia]',
->>>>>>> 350420cb (Check & fix styling)
             'help' => 'Indirizzo fisico completo dello studio medico comprensivo di CAP e provincia',
             'validation' => [
                 'required' => 'L\'indirizzo dello studio è obbligatorio',
@@ -141,20 +86,8 @@ return [
                 'numeric' => 'Il numero di iscrizione deve contenere solo cifre',
                 'min' => 'Il numero di iscrizione deve contenere almeno 3 cifre',
             ],
-<<<<<<< HEAD
             'help_vat' => 'Partita IVA dello studio medico registrata presso l\'Agenzia delle Entrate',
             'validation_vat' => [
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'vat_number' => [
-            'label' => 'Partita IVA Studio',
-            'placeholder' => 'Inserisci partita IVA (11 cifre]',
-            'help' => 'Partita IVA dello studio medico registrata presso l\'Agenzia delle Entrate',
-            'validation' => [
->>>>>>> 350420cb (Check & fix styling)
                 'required' => 'La partita IVA è obbligatoria',
                 'regex' => 'La partita IVA deve essere composta da esattamente 11 cifre',
                 'unique' => 'Questa partita IVA è già registrata per un altro studio',
@@ -183,23 +116,6 @@ return [
                 'ortopedia' => 'Ortopedia',
                 'altro' => 'Altra Specializzazione',
             ],
-<<<<<<< HEAD
-=======
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'website' => [
-            'label' => 'Sito Web Studio',
-            'placeholder' => 'https://www.tuostudio.it (opzionale]',
-            'help' => 'Sito web ufficiale dello studio medico (campo facoltativo]',
-            'validation' => [
-                'url' => 'Inserisci un URL valido che inizi con http:// o https://',
-            ],
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> 350420cb (Check & fix styling)
         ],
         'staff_count' => [
             'label' => 'Numero Operatori',
@@ -261,10 +177,6 @@ return [
             'modal_description' => 'Sei sicuro di voler cancellare tutti i dati inseriti nel modulo?',
             'success' => 'Modulo cancellato',
             'error' => 'Errore durante la cancellazione del modulo',
-<<<<<<< HEAD
-=======
-            'confirmation' => 'Tutti i dati inseriti verranno persi definitivamente',
->>>>>>> 350420cb (Check & fix styling)
         ],
         'upload_documents' => [
             'label' => 'Carica Documenti',
@@ -275,21 +187,6 @@ return [
         ],
         'register' => [
             'label' => 'register',
-<<<<<<< HEAD
-=======
-            'tooltip' => 'register',
-            'icon' => 'register',
-        ],
-        'logout' => [
-            'tooltip' => 'logout',
-            'icon' => 'logout',
-            'label' => 'logout',
-        ],
-        'profile' => [
-            'tooltip' => 'profile',
-            'icon' => 'profile',
-            'label' => 'profile',
->>>>>>> 350420cb (Check & fix styling)
         ],
     ],
     'steps' => [

@@ -392,7 +392,6 @@ php artisan vendor:publish --tag=user-assets
 ---
 
 **Ultimo Aggiornamento**: 2025-11-11
-<<<<<<< HEAD
 **Versione Architettura**: 1.0
 
 ---
@@ -813,6 +812,3 @@ php artisan vendor:publish --tag=user-assets
 ---
 
 **Versione Architettura**: 1.0
-=======
-**Versione Architettura**: 1.0
->>>>>>> 350420cb (Check & fix styling)

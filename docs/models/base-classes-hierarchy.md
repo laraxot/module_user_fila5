@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Gerarchia delle Classi Base - Modulo User"
 type: concept
@@ -17,8 +16,6 @@ related:
   - "./xotbasepivot-migration.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Gerarchia delle Classi Base - Modulo User
 
 **Data:** 15 Ottobre 2025  

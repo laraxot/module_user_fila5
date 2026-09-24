@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Risoluzione Conflitti Git - Modulo User (2025-01-27)"
 type: concept
 tags: [git, conflicts, resolution]
@@ -329,11 +328,3 @@ La risoluzione dei conflitti Git ha migliorato significativamente la stabilità 
 - [ ] Creare test di regressione per prevenire conflitti futuri
 
 --- 
-=======
-module: theme
-topic: git-conflicts-resolution-1
-canonical: ../../../Themes/docs/shared-components/git-conflicts-resolution-.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/git-conflicts-resolution-.md
->>>>>>> 350420cb (Check & fix styling)

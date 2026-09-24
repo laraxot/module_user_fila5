@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Modules\User\Actions\User\CreateUserAction;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -19,27 +18,6 @@ describe('CreateUserAction', function (): void {
 
     test('execute method accepts array parameter', function (): void {
         $action = app(CreateUserAction::class);
-=======
-
-use Modules\User\Actions\User\CreateUserAction;
-use PHPUnit\Framework\Assert;
-
-uses(PHPUnit\Framework\TestCase::class);
-
-describe('CreateUserAction', function (): void {
-    test('action can be instantiated', function (): void {
-        Assert::assertInstanceOf(CreateUserAction::class, new CreateUserAction());
-    });
-
-    test('action has execute method', function (): void {
-        $action = new CreateUserAction();
-
-        Assert::assertTrue(method_exists($action, 'execute'));
-    });
-
-    test('execute method accepts array parameter', function (): void {
-        $action = new CreateUserAction();
->>>>>>> 350420cb (Check & fix styling)
 
         $reflection = new ReflectionMethod($action, 'execute');
         $params = $reflection->getParameters();

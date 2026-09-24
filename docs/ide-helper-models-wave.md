@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "IDE Helper Models Wave"
 type: concept
@@ -24,13 +23,6 @@ related:
 ## Wave 2026-03-10
 
 ### Contesto
-=======
-# IDE Helper Models Wave - 2026-03-10
-
-## Contesto
-
-L'utente ha richiesto l'esecuzione di:
->>>>>>> 350420cb (Check & fix styling)
 
 ```bash
 cd laravel && php artisan ide-helper:models -W
@@ -38,26 +30,17 @@ cd laravel && php artisan ide-helper:models -W
 
 Il primo run nel sandbox mostrava errori di connessione per model multi-connessione come `Modules\Activity\Models\Activity` e `Modules\Xot\Models\Session`.
 
-<<<<<<< HEAD
 ### Diagnosi corretta
-=======
-## Diagnosi corretta
->>>>>>> 350420cb (Check & fix styling)
 
 Il problema iniziale non era nel codice dei model ma nell'accesso al database locale dal sandbox.
 
 Dopo il rerun con accesso DB reale, la wave `ide-helper` ha completato la rigenerazione dei PHPDoc senza classi `Could not analyze`.
 
-<<<<<<< HEAD
 ### Impatto
-=======
-## Impatto
->>>>>>> 350420cb (Check & fix styling)
 
 - i wrapper Passport e i model Sushi del modulo `User` restano compatibili con `ide-helper`;
 - i PHPDoc dei model `User` sono stati riallineati al database corrente;
 - la procedura corretta da ricordare e': prima distinguere errore ambientale da errore del model, poi correggere solo i casi reali.
-<<<<<<< HEAD
 
 ---
 
@@ -97,5 +80,3 @@ ide-helper, per inferire il tipo di ritorno della relazione, invoca la risoluzio
 - [oauth-token-relations-ide-helper](./oauth-token-relations-ide-helper.md)
 - [ide-helper-philosophy](../Xot/docs/ide-helper-philosophy.md)
 - [passport-model-wrappers](./passport-model-wrappers.md)
-=======
->>>>>>> 350420cb (Check & fix styling)

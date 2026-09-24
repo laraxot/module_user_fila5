@@ -2,35 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return [
-=======
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: resources/lang/it/registration.php
-return [
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    'title' => 'Crea il tuo account',
-    'subtitle' => 'Unisciti alla community',
-    'description' => 'Registrati in pochi secondi per accedere a tutti i servizi.',
-    'sidebar' => [
-        'support_title' => 'Hai bisogno di aiuto?',
-        'help_email' => 'Usa un indirizzo email valido che controlli regolarmente.',
-        'help_password' => 'La password deve contenere almeno 12 caratteri, una maiuscola, una minuscola, un numero e un simbolo.',
-        'help_support' => 'Per assistenza contatta il supporto.',
-    ],
-    'failed' => 'Registrazione non riuscita. Correggi gli errori e riprova.',
-    'submit' => 'Crea account',
-    'already_have_account' => 'Hai già un account?',
-    'login' => 'Accedi',
-    'already_registered' => 'Sei già registrato?',
-    'success' => 'Registrazione completata con successo!',
->>>>>>> 350420cb (Check & fix styling)
     'fields' => [
         'first_name' => [
             'label' => 'Nome',
@@ -99,11 +71,7 @@ return [
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Inserisci la tua password',
-<<<<<<< HEAD
             'tooltip' => 'La password deve essere di almeno 8 caratteri',
-=======
-            'tooltip' => 'La password deve contenere almeno 12 caratteri, una maiuscola, una minuscola, un numero e un simbolo.',
->>>>>>> 350420cb (Check & fix styling)
             'helper_text' => '',
             'description' => '',
         ],
@@ -156,18 +124,4 @@ return [
             'description' => 'Verifica i dati inseriti prima di completare la registrazione',
         ],
     ],
-<<<<<<< HEAD
-=======
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'actions' => [
-    ],
->>>>>>> 350420cb (Check & fix styling)
 ];

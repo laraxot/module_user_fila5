@@ -2,7 +2,6 @@
 module: theme
 topic: phpstan-fixes-gennaio-2025-complete
 canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-2025-complete.md
-<<<<<<< HEAD
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -12,8 +11,6 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-2025-complete.md

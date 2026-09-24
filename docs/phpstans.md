@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Filosofia Laraxot: Risoluzione Errori PHPStan"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Filosofia Laraxot: Risoluzione Errori PHPStan
 
 **Data Creazione**: [DATE]

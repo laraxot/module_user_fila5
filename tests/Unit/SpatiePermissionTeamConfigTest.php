@@ -1,26 +1,15 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
 use Modules\User\Models\Team;
 use Modules\User\Tests\TestCase;
-=======
-
-use Modules\User\Models\Permission;
-use Modules\User\Models\Role;
-use Modules\User\Models\Team;
->>>>>>> 350420cb (Check & fix styling)
 use PHPUnit\Framework\Assert;
 use Spatie\Permission\PermissionRegistrar;
 use Spatie\Permission\Support\Config as PermissionConfig;
 
-<<<<<<< HEAD
 uses(TestCase::class);
-=======
-uses(Modules\User\Tests\TestCase::class);
->>>>>>> 350420cb (Check & fix styling)
 
 test('spatie permission registrar uses user module models for teams', function (): void {
     $registrar = app(PermissionRegistrar::class);

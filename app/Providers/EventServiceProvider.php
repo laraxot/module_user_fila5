@@ -20,13 +20,6 @@ class EventServiceProvider extends XotBaseEventServiceProvider
 {
     public string $name = 'User';
 
-<<<<<<< HEAD
-=======
-    public string $nameLower = 'user';
-
-    protected string $module_dir = __DIR__;
-
->>>>>>> 350420cb (Check & fix styling)
     protected string $module_ns = __NAMESPACE__;
 
     /**
@@ -52,13 +45,9 @@ class EventServiceProvider extends XotBaseEventServiceProvider
         ],
     ];
 
-<<<<<<< HEAD
     /**
      * @var array<int, class-string>
      */
-=======
-    /** @var array<int, class-string> */
->>>>>>> 350420cb (Check & fix styling)
     protected $subscribe = [
         // Aggiungi qui i subscriber specifici del modulo
     ];

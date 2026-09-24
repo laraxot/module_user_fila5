@@ -14,11 +14,7 @@ class DeviceProfilePolicy extends UserBasePolicy
      */
     public function viewAny(UserContract $user): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('device-profile.view.any');
-=======
-        return $user->hasPermissionTo('device-profile.view.any');
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -26,11 +22,7 @@ class DeviceProfilePolicy extends UserBasePolicy
      */
     public function view(UserContract $user, DeviceProfile $deviceProfile): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('device-profile.view')
-=======
-        return $user->hasPermissionTo('device-profile.view')
->>>>>>> 350420cb (Check & fix styling)
             || $user->id === $deviceProfile->user_id
             || $user->hasRole('super-admin');
     }
@@ -40,11 +32,7 @@ class DeviceProfilePolicy extends UserBasePolicy
      */
     public function create(UserContract $user): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('device-profile.create');
-=======
-        return $user->hasPermissionTo('device-profile.create');
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -52,11 +40,7 @@ class DeviceProfilePolicy extends UserBasePolicy
      */
     public function update(UserContract $user, DeviceProfile $_deviceProfile): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('device-profile.update') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('device-profile.update') || $user->hasRole('super-admin');
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -64,11 +48,7 @@ class DeviceProfilePolicy extends UserBasePolicy
      */
     public function delete(UserContract $user, DeviceProfile $_deviceProfile): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('device-profile.delete') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('device-profile.delete') || $user->hasRole('super-admin');
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -76,11 +56,7 @@ class DeviceProfilePolicy extends UserBasePolicy
      */
     public function restore(UserContract $user, DeviceProfile $_deviceProfile): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('device-profile.restore') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('device-profile.restore') || $user->hasRole('super-admin');
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -88,10 +64,6 @@ class DeviceProfilePolicy extends UserBasePolicy
      */
     public function forceDelete(UserContract $user, DeviceProfile $deviceProfile): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('device-profile.force-delete') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('device-profile.force-delete') || $user->hasRole('super-admin');
->>>>>>> 350420cb (Check & fix styling)
     }
 }

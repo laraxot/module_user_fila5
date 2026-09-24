@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Completamento Traduzioni Password - 2025"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Completamento Traduzioni Password - 2025
 
 ## Problema Identificato
@@ -138,7 +135,6 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 4. **Usare icone e colori appropriati** per l'UX
 
 ---
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
 *Autore: Sistema di Audit Traduzioni*
 # Completamento Traduzioni Password - 2025
@@ -261,6 +257,4 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 
 ---
 *Ultimo aggiornamento: 2025-01-06*
-=======
->>>>>>> 350420cb (Check & fix styling)
 *Autore: Sistema di Audit Traduzioni*

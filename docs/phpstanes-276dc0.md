@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Module - PHPStan Fixes Session [DATE]"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # User Module - PHPStan Fixes Session [DATE]
 
 ## ⚠️ Stato: IN PROGRESS - 95 errori rimanenti

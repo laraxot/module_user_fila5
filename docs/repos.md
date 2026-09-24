@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "repos"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # repos
 
 <!-- Contenuto migrato da _docs/repos.txt -->

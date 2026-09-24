@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Risks and dependencies (Module User)"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./03-later.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Risks and dependencies (Module User)
 
 ## Risks

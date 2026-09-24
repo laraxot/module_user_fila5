@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Correzioni PHPStan - Modulo User
 
 Questo documento traccia gli errori PHPStan identificati nel modulo User e le relative soluzioni implementate.
@@ -142,20 +141,3 @@ public string $currentState = 'default';
 1. **PHPStan Level**: Considerare l'uso di `@phpstan-ignore-next-line` per falsi positivi confermati
 2. **Type Declarations**: Continuare a migliorare le dichiarazioni di tipo
 3. **Widget Testing**: Testare tutti i widget di autenticazione dopo modifiche di tipo
-=======
-# PHPStan - User
-
-## Configurazione
-
-Questo modulo usa la configurazione centralizzata:
-`laravel/phpstan.neon`
-
-## Livello
-
-Level 10
-
-## Collegamenti
-
-- [Configurazione Root](../../Xot/docs/phpstan/)
-
->>>>>>> 350420cb (Check & fix styling)

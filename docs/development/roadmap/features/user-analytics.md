@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Analytics"
 type: concept
@@ -18,8 +17,6 @@ related:
   - "./user-traits.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # User Analytics
 
 ## Overview

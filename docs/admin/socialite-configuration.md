@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Socialite Configuration"
 type: concept
 tags: [socialite, configuration]
@@ -12,8 +11,6 @@ related:
 ---
 
 ---
-=======
->>>>>>> 350420cb (Check & fix styling)
 name: socialite-configuration-guide
 description: **Guide**: Configure social authentication credentials via Filament BackOffice
 **Applies to**: laravel/Modules/User

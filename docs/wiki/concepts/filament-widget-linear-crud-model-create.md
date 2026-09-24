@@ -6,7 +6,6 @@ created: 2026-06-04
 updated: 2026-06-04
 tags: [user, filament, register, kiss]
 related:
-<<<<<<< HEAD
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
   - "./code-redundancy-user.md"
@@ -15,12 +14,6 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-resource-form-delegation.md"
   - "./folio-pages-owner-pattern.md"
-=======
-  - ../../../../../../docs/wiki/decisions/filament-widget-linear-crud-model-create.md
-  - filament-widget-no-validate-form.md
-  - ../../../app/Filament/Widgets/Auth/RegisterWidget.php
-  - ../../../app/Filament/Resources/UserResource/Schemas/UserForm.php
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Persistenza register — `::create($data)`

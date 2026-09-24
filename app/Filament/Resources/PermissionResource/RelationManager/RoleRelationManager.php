@@ -1,18 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 350420cb (Check & fix styling)
 /**
  * @see https://github.com/Althinect/filament-spatie-roles-permissions/blob/2.x/src/resources/PermissionResource/RelationManager/RoleRelationManager.php
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 350420cb (Check & fix styling)
 namespace Modules\User\Filament\Resources\PermissionResource\RelationManager;
 
 use Filament\Forms\Components\TextInput;

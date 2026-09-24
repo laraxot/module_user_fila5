@@ -4,49 +4,24 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
-=======
-use Illuminate\Database\Eloquent\Model;
->>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
  * Modules\User\Models\PersonalAccessToken.
  *
-<<<<<<< .merge_file_BD4w5t
-<<<<<<< HEAD
- * @property int         $id
- * @property string      $tokenable_type
- * @property int         $tokenable_id
- * @property string      $name
- * @property string      $token
-=======
  * @property int $id
  * @property string $tokenable_type
  * @property int $tokenable_id
  * @property string $name
  * @property string $token
->>>>>>> .merge_file_vPyOhx
  * @property string|null $abilities
  * @property Carbon|null $last_used_at
  * @property Carbon|null $expires_at
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
-=======
- * @property int                             $id
- * @property string                          $tokenable_type
- * @property int                             $tokenable_id
- * @property string                          $name
- * @property string                          $token
- * @property string|null                     $abilities
- * @property \Illuminate\Support\Carbon|null $last_used_at
- * @property \Illuminate\Support\Carbon|null $expires_at
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
->>>>>>> 350420cb (Check & fix styling)
  *
  * @method static \Modules\User\Database\Factories\PersonalAccessTokenFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|PersonalAccessToken newModelQuery()
@@ -65,10 +40,6 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  */
 class PersonalAccessToken extends Model
 {
-<<<<<<< HEAD
-=======
-    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
->>>>>>> 350420cb (Check & fix styling)
     use HasXotFactory;
 
     protected $connection = 'user';

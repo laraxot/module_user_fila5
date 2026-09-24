@@ -7,17 +7,10 @@ namespace Modules\User\Filament\Resources\PersonalAccessTokenResource\Pages;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\CreateAction;
-<<<<<<< HEAD
 use Modules\User\Filament\Resources\PersonalAccessTokenResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseManageRecords;
 
 final class ManagePersonalAccessTokens extends XotBaseManageRecords
-=======
-use Filament\Resources\Pages\ManageRecords;
-use Modules\User\Filament\Resources\PersonalAccessTokenResource;
-
-final class ManagePersonalAccessTokens extends ManageRecords
->>>>>>> 350420cb (Check & fix styling)
 {
     protected static string $resource = PersonalAccessTokenResource::class;
 

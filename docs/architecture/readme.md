@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Module - Architecture Documentation"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./user-gdpr-oupling.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # User Module - Architecture Documentation
 
 Architettura tecnica del modulo User, inclusi pattern, componenti e integrazioni.

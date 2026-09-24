@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Bugfix: DeviceUser e HasXotFactory"
 type: concept
@@ -15,8 +14,6 @@ related:
   - "./multiple-bugs-resolution.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Bugfix: DeviceUser e HasXotFactory
 
 ## Contesto

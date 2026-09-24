@@ -4,19 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\BaseProfileResource\Schemas;
 
-<<<<<<< HEAD
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\TextInput;
-=======
-use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
-use Filament\Schemas\Components\Section;
->>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class BaseProfileForm extends XotBaseResourceForm
 {
-<<<<<<< HEAD
     #[\Override]
     public function getFormSchema(): array
     {
@@ -40,17 +33,6 @@ class BaseProfileForm extends XotBaseResourceForm
                 ->disk('uploads')
                 ->directory('photos')
                 ->collection('photo_profile'),
-=======
-    /**
-     * @return array<int|string, Component>
-     */
-    public static function getFormSchema(): array
-    {
-        return [
-            Section::make([
-                'name' => TextInput::make('name'),
-            ]),
->>>>>>> 350420cb (Check & fix styling)
         ];
     }
 }

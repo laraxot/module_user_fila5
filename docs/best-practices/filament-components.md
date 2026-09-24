@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Best Practices per Componenti Filament"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./dependency-rules.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Best Practices per Componenti Filament
 
 ## Verifica delle Dipendenze

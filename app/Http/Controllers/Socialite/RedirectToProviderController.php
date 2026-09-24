@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)
 /**
  * @see DutchCodingCompany\FilamentSocialite.
  */
@@ -15,10 +11,6 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Request;
 use Laravel\Socialite\Facades\Socialite;
-<<<<<<< HEAD
-=======
-use Modules\User\Actions\Socialite\GetProviderScopesAction;
->>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Actions\Socialite\ValidateProviderAction;
 
 class RedirectToProviderController extends Controller
@@ -33,7 +25,6 @@ class RedirectToProviderController extends Controller
         // }
         app(ValidateProviderAction::class)->execute($provider);
 
-<<<<<<< HEAD
         $redirect = Socialite::driver($provider)->redirect();
 
         if (! $redirect instanceof RedirectResponse) {
@@ -41,30 +32,5 @@ class RedirectToProviderController extends Controller
         }
 
         return $redirect;
-=======
-        $scopes = app(GetProviderScopesAction::class)->execute($provider);
-        $socialiteProvider = Socialite::with($provider);
-        if (! is_object($socialiteProvider)) {
-            throw new \Exception('wip');
-        }
-        if (! method_exists($socialiteProvider, 'scopes') || ! method_exists($socialiteProvider, 'redirect')) {
-            throw new \Exception('scopes/redirect methods not available');
-        }
-
-        // PHPStan Level 10: Type guard for socialite provider chaining
-        $scopedProvider = $socialiteProvider->scopes($scopes);
-
-        if (! is_object($scopedProvider) || ! method_exists($scopedProvider, 'redirect')) {
-            throw new \Exception('scopes() must return object with redirect method');
-        }
-
-        $redirectResult = $scopedProvider->redirect();
-
-        if (! $redirectResult instanceof RedirectResponse) {
-            throw new \Exception('Expected RedirectResponse from socialite provider');
-        }
-
-        return $redirectResult;
->>>>>>> 350420cb (Check & fix styling)
     }
 }

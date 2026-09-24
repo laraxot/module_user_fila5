@@ -32,8 +32,3 @@ class Project extends Model
     }
 
 }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 350420cb (Check & fix styling)

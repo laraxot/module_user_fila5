@@ -10,11 +10,6 @@ use Modules\User\Models\SocialiteUser;
 trait HasSocialite
 {
     /**
-<<<<<<< HEAD
-=======
-     * Get the socialite users associated with the user.
-     *
->>>>>>> 350420cb (Check & fix styling)
      * @return HasMany<SocialiteUser, $this>
      */
     public function socialiteUsers(): HasMany
@@ -31,11 +26,7 @@ trait HasSocialite
 
         $res = $socialiteUser->{$field};
 
-<<<<<<< HEAD
         return is_string($res) ? $res : '';
-=======
-        return (string) $res;
->>>>>>> 350420cb (Check & fix styling)
     }
 
     public function canAccessSocialite(): bool

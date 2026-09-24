@@ -16,11 +16,7 @@ class TeamPermissionInfolist extends XotBaseResourceInfolist
      *
      * Campi basati sul Model TeamPermission.php -> id, team_id, user_id, permission, name
      */
-<<<<<<< HEAD
     public function getInfolistSchema(): array
-=======
-    public static function getInfolistSchema(): array
->>>>>>> 350420cb (Check & fix styling)
     {
         return [
             'id' => TextEntry::make('id'),

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Passport Cluster - Implementazione Completata"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Passport Cluster - Implementazione Completata
 
 **Status**: ✅ COMPLETATO

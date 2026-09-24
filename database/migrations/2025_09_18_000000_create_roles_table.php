@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Role;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -20,10 +16,7 @@ return new class extends XotBaseMigration
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-<<<<<<< HEAD
             // Laraxot extensions with hasColumn checks - DRY + KISS
-=======
->>>>>>> 350420cb (Check & fix styling)
             if (! $this->hasColumn('display_name')) {
                 $table->string('display_name')->nullable();
             }

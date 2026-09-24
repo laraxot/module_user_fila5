@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Microsoft OAuth/Socialite - Analisi e Implementazione"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Microsoft OAuth/Socialite - Analisi e Implementazione
 
 ## Riferimenti Studiati
@@ -303,11 +300,7 @@ $roles = Socialite::driver('microsoft')->user()->getRoles();
 ],
 ```
 
-<<<<<<< HEAD
 ## Regole per ExternalProject Fila5
-=======
-## Regole per Quaeris Fila5
->>>>>>> 350420cb (Check & fix styling)
 
 ### 1. Usare Filament Socialite Plugin
 - Installare `dutchcodingcompany/filament-socialite`

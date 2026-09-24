@@ -9,7 +9,6 @@ use Filament\Actions\Concerns\InteractsWithActions;
 use Filament\Actions\Contracts\HasActions;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
-<<<<<<< HEAD
 use Flowframe\Trend\Trend;
 // use Filament\Widgets\Concerns\InteractsWithPageFilters; // Temporaneamente commentato per evitare conflitti trait in Filament 4.x
 use Illuminate\Support\Carbon;
@@ -18,17 +17,6 @@ use Modules\Xot\Filament\Widgets\XotBaseChartWidget;
 use Webmozart\Assert\Assert;
 
 class UsersChartWidget extends XotBaseChartWidget implements HasActions, HasForms
-=======
-use Filament\Widgets\ChartWidget;
-use Flowframe\Trend\Trend;
-// use Filament\Widgets\Concerns\InteractsWithPageFilters; // Temporaneamente commentato per evitare conflitti trait in Filament 4.x
-use Illuminate\Contracts\Support\Htmlable;
-use Illuminate\Support\Carbon;
-use Modules\User\Models\AuthenticationLog;
-use Webmozart\Assert\Assert;
-
-class UsersChartWidget extends ChartWidget implements HasActions, HasForms
->>>>>>> 350420cb (Check & fix styling)
 {
     use InteractsWithActions;
     use InteractsWithForms;
@@ -45,11 +33,7 @@ class UsersChartWidget extends ChartWidget implements HasActions, HasForms
 
     protected static ?int $sort = 2;
 
-<<<<<<< HEAD
     public function getHeading(): ?string
-=======
-    public function getHeading(): Htmlable|string|null
->>>>>>> 350420cb (Check & fix styling)
     {
         return __('user::widgets.users_chart.heading');
     }

@@ -1,11 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 350420cb (Check & fix styling)
 use Livewire\Volt\Component;
 
 use function Laravel\Folio\name;

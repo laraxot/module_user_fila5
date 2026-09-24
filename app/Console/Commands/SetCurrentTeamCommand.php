@@ -11,15 +11,6 @@ use Modules\Xot\Datas\XotData;
 use function Laravel\Prompts\select;
 use function Laravel\Prompts\text;
 
-<<<<<<< .merge_file_Y0ZBVF
-use Modules\Xot\Datas\XotData;
-<<<<<<< HEAD
-=======
-use Symfony\Component\Console\Input\InputOption;
->>>>>>> 350420cb (Check & fix styling)
-
-=======
->>>>>>> .merge_file_nXegkZ
 /**
  * Comando per impostare il team corrente per un utente.
  */
@@ -27,21 +18,11 @@ class SetCurrentTeamCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 350420cb (Check & fix styling)
      */
     protected $name = 'user:set-current-team';
 
     /**
      * The console command description.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 350420cb (Check & fix styling)
      */
     protected $description = 'Assign current team to user';
 

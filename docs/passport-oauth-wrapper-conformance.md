@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Passport OAuth Wrapper Conformance"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Passport OAuth Wrapper Conformance
 
 ## Scope

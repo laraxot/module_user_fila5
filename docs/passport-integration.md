@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Laravel Passport Integration - Architettura Completa"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Laravel Passport Integration - Architettura Completa
 
 > **Generato**: [DATE]
@@ -60,7 +57,6 @@ Durante l'analisi dell'integrazione Passport, sono emerse tre posizioni:
 ```
 laravel/Modules/User/app/Models/
 ├── BaseUser.php              # Implements OAuthenticatable + HasApiTokens
-<<<<<<< HEAD
 ├── OauthClient.php          # Extends Laravel\Passport\Client
 ├── OauthToken.php           # Extends Laravel\Passport\Token
 ├── OauthAccessToken.php     # Local alias/model used by app consumers when needed
@@ -69,70 +65,6 @@ laravel/Modules/User/app/Models/
 └── OauthPersonalAccessClient.php  # Local application model for oauth_personal_access_clients
 ```
 
-=======
-├── OauthClient.php           # Extends Laravel\Passport\Client + Spatie HasRoles
-├── OauthToken.php            # Extends Laravel\Passport\Token (canonical token model)
-├── OauthAccessToken.php     # Local alias/model used by app consumers when needed
-├── OauthRefreshToken.php    # Extends Laravel\Passport\RefreshToken
-├── OauthAuthCode.php        # Extends Laravel\Passport\AuthCode
-├── OauthPersonalAccessClient.php  # Local application model for oauth_personal_access_clients
-└── OauthDeviceCode.php      # Extends Laravel\Passport\DeviceCode
-```
-
-### OauthClient con Spatie Permission
-
-Il modello `OauthClient` estende il pattern del progetto sample_passport e supporta i permessi Spatie:
-
-```php
-use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
-use Illuminate\Foundation\Auth\Access\Authorizable;
-use Spatie\Permission\Traits\HasRoles;
-
-final class OauthClient extends PassportClient implements AuthorizableContract
-{
-    use Authorizable;
-    use HasRoles;
-
-    public $guard_name = 'api';
-
-    // Implementazione dei metodi can/cant/cannot per autorizzazione
-    public function can($abilities, $arguments = []): bool { ... }
-    public function cant($ability, $arguments = []): bool { ... }
-    public function cannot($ability, $arguments = []): bool { ... }
-    public function canAny($abilities, $arguments = []): bool { ... }
-}
-```
-
-Questo permette di assegnare ruoli e permessi direttamente ai client OAuth per un controllo accessi granulare.
-
-### Type Hints con UserContract
-
-I modelli OAuth usano `UserContract` invece di `Model|null` per le relazioni con l'utente:
-
-```php
-// OauthClient.php
-use Modules\User\Contracts\UserContract;
-
-/**
- * @property UserContract|null $user
- */
-class OauthClient extends PassportClient { }
-
-// OauthAccessToken.php
-use Modules\User\Contracts\UserContract;
-
-/**
- * @property UserContract|null $user
- */
-class OauthAccessToken extends PassportToken { }
-```
-
-Questo segue la filosofia Laraxot: usare contract invece di model concreti per:
-- **Inversion of Control**: dipende da astrazioni, non implementazioni
-- **Testabilità**: facilita il mocking
-- **Manutenibilità**: disaccoppia i modelli
-
->>>>>>> 350420cb (Check & fix styling)
 ### Distinzione critica
 
 - I wrapper 1:1 obbligatori esistono solo per i model vendor Passport che estendono `Illuminate\Database\Eloquent\Model`
@@ -200,30 +132,19 @@ public function withAccessToken(mixed $accessToken): static
 
 ---
 
-<<<<<<< HEAD
 ## 🛡️ OauthClient: Estensione Minimalista
 
 ### Filosofia DRY
-=======
-## 🛡️ OauthClient: Authorizable + HasRoles
-
-### Implementazione (riferimento: [aurmich/sample_passport](https://github.com/aurmich/sample_passport/blob/develop/app/Models/Client.php))
->>>>>>> 350420cb (Check & fix styling)
 
 ```php
 class OauthClient extends PassportClient implements AuthorizableContract
 {
     use Authorizable;
-<<<<<<< HEAD
     use HasRoles; // Spatie Permission integration
-=======
-    use HasRoles; // Spatie Permission - guard api
->>>>>>> 350420cb (Check & fix styling)
 
     protected $connection = 'user';
     public $guard_name = 'api';
 
-<<<<<<< HEAD
     // Custom authorization logic for Spatie Permission
     public function can($ability, mixed $arguments = []): bool
     {
@@ -235,26 +156,6 @@ class OauthClient extends PassportClient implements AuthorizableContract
 }
 ```
 
-=======
-    // Override user(): usa XotData::getUserClass() invece di config()
-    public function user(): BelongsTo
-    {
-        $userClass = XotData::make()->getUserClass();
-        return $this->belongsTo($userClass, 'user_id');
-    }
-
-    // can() override: usa hasPermissionTo con catch PermissionDoesNotExist
-    public function can($ability, mixed $arguments = []): bool
-    {
-        // checkPermission + hasAnyPermission
-    }
-}
-```
-
-### Test
-- `Modules/User/tests/Unit/Models/OauthClientTest.php`
-
->>>>>>> 350420cb (Check & fix styling)
 ### Decisione: Rimuovere Metodi Ridondanti
 
 **Prima (Anti-pattern)**:
@@ -468,21 +369,13 @@ public function owner(): MorphTo
 }
 ```
 
-<<<<<<< HEAD
 ### User ↔ OauthAccessToken
-=======
-### User ↔ OauthToken
->>>>>>> 350420cb (Check & fix styling)
 
 ```php
 // BaseUser.php
 public function tokens(): HasMany
 {
-<<<<<<< HEAD
     return $this->hasMany(OauthAccessToken::class, 'user_id');
-=======
-    return $this->hasMany(OauthToken::class, 'user_id');
->>>>>>> 350420cb (Check & fix styling)
 }
 ```
 
@@ -626,15 +519,9 @@ $ ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 ## 📚 Collegamenti
 
 ### Documentazione Correlata
-<<<<<<< HEAD
 - [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale
 - [README.md](./readme.md) - Overview modulo
 - [business-logic-deep-dive-4.md](./business-logic-deep-dive.md) - Business logic completa
-=======
-- [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia generale
-- [README.md](./readme.md) - Overview modulo
-- [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md) - Business logic completa
->>>>>>> 350420cb (Check & fix styling)
 
 ### Documentazione Esterna
 - [Laravel Passport Official](https://laravel.com/docs/passport)

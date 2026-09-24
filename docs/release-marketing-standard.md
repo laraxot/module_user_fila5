@@ -6,7 +6,6 @@ tags: [release, semantic-versioning, changelog, readme, marketing]
 created: "2026-05-26"
 updated: "2026-05-26"
 issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/153"
-<<<<<<< HEAD
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -16,8 +15,6 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Release e README marketing — User

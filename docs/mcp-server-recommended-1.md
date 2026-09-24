@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "MCP Server Consigliati per il Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # MCP Server Consigliati per il Modulo User
 
 ## Scopo del Modulo

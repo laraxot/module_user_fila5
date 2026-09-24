@@ -12,35 +12,15 @@ use Modules\Xot\Datas\XotData;
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
 
-<<<<<<< .merge_file_NJojZ3
-use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
-<<<<<<< HEAD
-=======
-use Symfony\Component\Console\Input\InputOption;
->>>>>>> 350420cb (Check & fix styling)
-
-=======
->>>>>>> .merge_file_mP0LXR
 class AssignTenantCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 350420cb (Check & fix styling)
      */
     protected $name = 'user:assign-tenant';
 
     /**
      * The console command description.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 350420cb (Check & fix styling)
      */
     protected $description = 'Assign a tenant to user';
 
@@ -54,10 +34,7 @@ class AssignTenantCommand extends Command
     public function handle(): void
     {
         $email = text('email ?');
-<<<<<<< HEAD
         $user_class = XotData::make()->getUserClass();
-=======
->>>>>>> 350420cb (Check & fix styling)
         /** @var UserContract */
         $user = XotData::make()->getUserByEmail($email);
         $xot = XotData::make();

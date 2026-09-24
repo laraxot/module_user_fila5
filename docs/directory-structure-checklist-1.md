@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "directory_structure_checklist - User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # directory_structure_checklist - User
 
 ## Overview

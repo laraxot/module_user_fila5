@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi dell'Errore di Implementazione Volt/Blade"
 type: concept
@@ -19,17 +18,11 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Analisi dell'Errore di Implementazione Volt/Blade
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-<<<<<<< HEAD
 - [Convenzioni Path](./path-conventions-2.md)
-=======
-- [Convenzioni Path](./path_conventions.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
 ## Identificazione dell'Errore

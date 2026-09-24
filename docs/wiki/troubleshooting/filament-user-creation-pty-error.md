@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Filament User Creation PTY Error"
 type: concept
@@ -18,8 +17,6 @@ related:
   - "./spatie-permission-team-model-not-configured.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Filament User Creation PTY Error
 
 ## Context

@@ -5,11 +5,8 @@ declare(strict_types=1);
 namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-<<<<<<< HEAD
 use Modules\User\Models\OauthAccessToken;
 use Modules\User\Models\OauthClient;
-=======
->>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Models\OauthRefreshToken;
 
 /**
@@ -36,7 +33,6 @@ class OauthRefreshTokenFactory extends Factory
 
     protected function newAccessTokenId(): string
     {
-<<<<<<< HEAD
         /** @var OauthAccessToken $token */
         $token = (new OauthAccessTokenFactory)->create([
             'id' => $this->faker->uuid(),
@@ -49,9 +45,6 @@ class OauthRefreshTokenFactory extends Factory
         ]);
 
         return (string) $token->id;
-=======
-        return $this->faker->uuid();
->>>>>>> 350420cb (Check & fix styling)
     }
 
     public function revoked(): static

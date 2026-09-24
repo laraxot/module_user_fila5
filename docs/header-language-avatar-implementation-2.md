@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Implementazione del Selettore di Lingua e Avatar Utente nell'Header"
 type: concept
@@ -19,21 +18,13 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-<<<<<<< HEAD
 - [Convenzioni Path](./path-conventions-2.md)
 - [Volt Folio Logout](./volt-folio-logout-2.md)
 - [Implementazione Logout](./logout-blade-implementation-2.md)
-=======
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Implementazione Logout](./logout_blade_implementation.md)
->>>>>>> 350420cb (Check & fix styling)
 
 ## Panoramica
 

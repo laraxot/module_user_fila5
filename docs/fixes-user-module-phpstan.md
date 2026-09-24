@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Correzioni PHPStan per il Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Correzioni PHPStan per il Modulo User
 
 ## Panoramica
@@ -194,11 +191,6 @@ Ri-verificato con `phpstan analyse Modules/User --memory-limit=-1` (cache pulita
 - `tests/Feature/Database/Migrations/UserMigrationSyntaxTest.php`: `dataset(...)->with(...)` sostituito con una funzione helper `getUserMigrationFiles()` chiamata dentro un `foreach`, eliminando sia `method.internalClass` su `expect()` sia su `Pest\PendingCalls\TestCall::with()` (anch'esso `@internal`). Nessun `@phpstan-ignore` usato, nonostante un tentativo di un altro agente in tal senso durante la sessione.
 - `app/Console/Commands/AssignTeamCommand.php` (aggiunto durante la sessione da un altro agente): un `/** @var UserContract */` senza `$user` e senza il relativo `use` import lasciava `$user` non tipizzato. Sostituito con `Assert::isInstanceOf($user, BaseUser::class)` (Webmozart), narrowing verificato anche a runtime.
 
-<<<<<<< HEAD
 Dettagli completi: `docs/chat/phpstan-modules-progress-2026-07-06-pm.md` (root del repo) e `docs/wiki/second-brain/phpstan-journey.md`.
 
 *Ultimo aggiornamento: dicembre 2024*
-=======
-Dettagli completi: `docs/chat/phpstan-modules-progress-pm.md` (root del repo) e `docs/wiki/second-brain/phpstan-journey.md`.
-
->>>>>>> 350420cb (Check & fix styling)

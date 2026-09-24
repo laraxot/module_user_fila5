@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Logging Performance Optimization"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Logging Performance Optimization
 
 ## Rule: NEVER USE Log::info()

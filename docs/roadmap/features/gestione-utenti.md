@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Gestione Utenti"
 type: concept
@@ -18,8 +17,6 @@ related:
   - "./user-traits.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Gestione Utenti
 
 ## Overview

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "AssignModuleCommand - Gestione Moduli Utente"
 type: concept
@@ -15,8 +14,6 @@ related:
   - "./readme.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # AssignModuleCommand - Gestione Moduli Utente
 
 ## Descrizione
@@ -173,11 +170,7 @@ Result: No changes made to user modules.
 ```
 
 ## Collegamenti
-<<<<<<< HEAD
 - [Console Commands Philosophy](console-commands-philosophy.md)
-=======
-- [Console Commands Philosophy](console_commands_philosophy.md)
->>>>>>> 350420cb (Check & fix styling)
 - [User Models](models/readme.md)
 - [Role Management](models/role-management.md)
 - [README.md](../readme.md)
@@ -190,7 +183,3 @@ Result: No changes made to user modules.
 - ✅ **Feedback Migliorato**: Messaggi chiari per assegnazioni e revoche
 - ✅ **Gestione Errori**: Controlli preventivi per utenti non trovati
 - ✅ **Documentazione**: Documentazione completa con esempi
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)

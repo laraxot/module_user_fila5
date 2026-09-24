@@ -2,7 +2,6 @@
 name: navigation-properties-rule-user-module
 description: User module navigation static properties usage rule
 type: project
-<<<<<<< HEAD
 related:
   - "./agent-confidence-protocol.md"
   - "./can-comment-retired-wrong-placement.md"
@@ -12,8 +11,6 @@ related:
   - "./module-commit-push-after-change.md"
   - "./no-filament-labels.md"
   - "./no-notifications-migration-in-user-module.md"
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 ## Rule Overview

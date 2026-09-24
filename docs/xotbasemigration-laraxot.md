@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "XotBaseMigration - La Filosofia Laraxot nel Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # XotBaseMigration - La Filosofia Laraxot nel Modulo User
 
 ## Panoramica

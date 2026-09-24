@@ -1,9 +1,6 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 350420cb (Check & fix styling)
 /**
  * Handles the registration of a new user.
  *
@@ -19,10 +16,6 @@ declare(strict_types=1);
  * @param  Request  $request  The incoming request
  * @return JsonResponse The JSON response
  */
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> 350420cb (Check & fix styling)
 
 namespace Modules\User\Http\Controllers\Api;
 
@@ -55,19 +48,11 @@ class RegisterController extends XotBaseController
             $messages,
         );
         if ($validator->fails()) {
-<<<<<<< HEAD
             return $this->sendError('Validation Error.', $validator->errors()->toArray());
-=======
-            return $this->sendError('Validation Error.', ['errors' => $validator->errors()->all()]);
->>>>>>> 350420cb (Check & fix styling)
         }
 
         /** @var array<string, mixed> $input */
         $input = $request->all();
-<<<<<<< HEAD
-=======
-        $input['password'] = bcrypt((string) $input['password']);
->>>>>>> 350420cb (Check & fix styling)
         $user_class = XotData::make()->getUserClass();
         /** @var UserContract */
         $user = $user_class::create($input);

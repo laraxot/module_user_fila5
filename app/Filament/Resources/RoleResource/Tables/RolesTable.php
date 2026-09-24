@@ -6,29 +6,22 @@ namespace Modules\User\Filament\Resources\RoleResource\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
-<<<<<<< HEAD
 use Modules\User\Models\Role;
-=======
->>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class RolesTable extends XotBaseResourceTable
 {
     /**
-<<<<<<< HEAD
      * @var class-string<Role>
      */
     protected static string $model = Role::class;
 
     /**
-=======
->>>>>>> 350420cb (Check & fix styling)
      * @return array<string, Column>
      */
     public function getTableColumns(): array
     {
         return [
-<<<<<<< HEAD
             'name' => TextColumn::make('name')->searchable()->sortable(),
             'display_name' => TextColumn::make('display_name')->searchable()->sortable(),
             'guard_name' => TextColumn::make('guard_name')->badge()->sortable(),
@@ -37,16 +30,6 @@ class RolesTable extends XotBaseResourceTable
             'id' => TextColumn::make('id')->sortable()->copyable()->toggleable(isToggledHiddenByDefault: true),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable()->placeholder('—'),
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->placeholder('—')->toggleable(isToggledHiddenByDefault: true),
-=======
-            'id' => TextColumn::make('id')->sortable(),
-            'name' => TextColumn::make('name')->searchable(),
-            'guard_name' => TextColumn::make('guard_name'),
-            'display_name' => TextColumn::make('display_name'),
-            'description' => TextColumn::make('description'),
-            'team_id' => TextColumn::make('team_id'),
-            'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
-            'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->toggleable(),
->>>>>>> 350420cb (Check & fix styling)
         ];
     }
 }

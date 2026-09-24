@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Roadmap User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./03-later.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Roadmap User
 
 Roadmap operativo del module **User**, suddiviso in file tematici.

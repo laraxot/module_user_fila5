@@ -1,17 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_i2ckpw
-<<<<<<< HEAD
-<<<<<<< .merge_file_G3envc
-
-=======
->>>>>>> .merge_file_Y1XQfU
-=======
-
->>>>>>> 350420cb (Check & fix styling)
-=======
->>>>>>> .merge_file_ZVCTdW
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Tenant;
 use Modules\Xot\Database\Migrations\XotBaseMigration;

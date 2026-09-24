@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Testing e TDD - User Module"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./03-later.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Testing e TDD - User Module
 
 ## Principi TDD

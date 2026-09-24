@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-<<<<<<< HEAD
 use Modules\User\Models\OauthAccessToken;
 use Modules\User\Models\OauthClient;
 use Modules\User\Models\User;
@@ -20,23 +19,6 @@ use Modules\User\Models\User;
 class OauthAccessTokenFactory extends Factory
 {
     protected $model = OauthAccessToken::class;
-=======
-use Modules\User\Models\OauthClient;
-use Modules\User\Models\OauthToken;
-use Modules\User\Models\User;
-
-/**
- * OauthToken Factory.
- *
- * Factory for creating OauthToken model instances for testing and seeding.
- */
-/**
- * @extends Factory<OauthToken>
- */
-class OauthAccessTokenFactory extends Factory
-{
-    protected $model = OauthToken::class;
->>>>>>> 350420cb (Check & fix styling)
 
     /**
      * Define the model's default state.
@@ -106,15 +88,7 @@ class OauthAccessTokenFactory extends Factory
     /**
      * Create token with specific scopes.
      *
-<<<<<<< .merge_file_ww0kYi
-<<<<<<< HEAD
-     * @param list<string> $scopes
-=======
-     * @param array<string> $scopes
->>>>>>> 350420cb (Check & fix styling)
-=======
      * @param  list<string>  $scopes
->>>>>>> .merge_file_V3sj1f
      */
     public function withScopes(array $scopes): static
     {

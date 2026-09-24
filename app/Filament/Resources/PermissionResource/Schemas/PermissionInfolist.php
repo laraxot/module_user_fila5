@@ -16,11 +16,7 @@ class PermissionInfolist extends XotBaseResourceInfolist
      *
      * Campi basati sul Model Permission.php -> id, name, guard_name, display_name, description
      */
-<<<<<<< HEAD
     public function getInfolistSchema(): array
-=======
-    public static function getInfolistSchema(): array
->>>>>>> 350420cb (Check & fix styling)
     {
         return [
             'id' => TextEntry::make('id'),

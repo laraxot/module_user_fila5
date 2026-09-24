@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Decoupling User-GDPR via Event/Listener Pattern"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./user-gdpr-oupling.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Decoupling User-GDPR via Event/Listener Pattern
 
 ## Overview

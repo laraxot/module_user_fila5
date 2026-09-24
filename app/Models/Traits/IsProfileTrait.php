@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)
 /**
  * Modulo User - Trait per il profilo utente.
  *
@@ -33,10 +29,6 @@ use Illuminate\Support\Collection;
 use Modules\User\Models\Device;
 use Modules\User\Models\DeviceUser;
 use Modules\User\Models\Role;
-<<<<<<< HEAD
-=======
-use Modules\User\Models\User;
->>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Spatie\MediaLibrary\InteractsWithMedia;
@@ -63,15 +55,10 @@ trait IsProfileTrait
         /** @var class-string<Model&UserContract> $userClass */
         $userClass = XotData::make()->getUserClass();
 
-<<<<<<< HEAD
         /** @var BelongsTo<Model&UserContract, Model> $relation */
         $relation = $this->belongsTo($userClass);
 
         return $relation;
-=======
-        // @phpstan-ignore return.type
-        return $this->belongsTo($userClass);
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -91,11 +78,7 @@ trait IsProfileTrait
         if ($user === null) {
             return null;
         }
-<<<<<<< HEAD
         Assert::isInstanceOf($user, UserContract::class);
-=======
-        Assert::isInstanceOf($user, User::class);
->>>>>>> 350420cb (Check & fix styling)
 
         $res = trim(($this->first_name ?? '').' '.($this->last_name ?? ''));
         if ($res !== '') {
@@ -124,11 +107,7 @@ trait IsProfileTrait
         if ($user === null) {
             return null;
         }
-<<<<<<< HEAD
         Assert::isInstanceOf($user, UserContract::class);
-=======
-        Assert::isInstanceOf($user, User::class);
->>>>>>> 350420cb (Check & fix styling)
 
         $firstName = $user->getAttribute('first_name');
         if (! \is_string($firstName) || $firstName === '') {
@@ -157,11 +136,7 @@ trait IsProfileTrait
         if ($user === null) {
             return null;
         }
-<<<<<<< HEAD
         Assert::isInstanceOf($user, UserContract::class);
-=======
-        Assert::isInstanceOf($user, User::class);
->>>>>>> 350420cb (Check & fix styling)
 
         $lastName = $user->getAttribute('last_name');
         if (! \is_string($lastName) || $lastName === '') {
@@ -214,11 +189,7 @@ trait IsProfileTrait
         if ($user === null) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
-<<<<<<< HEAD
         Assert::isInstanceOf($user, UserContract::class);
-=======
-        Assert::isInstanceOf($user, User::class);
->>>>>>> 350420cb (Check & fix styling)
         $to_assign = 'super-admin';
         $to_remove = 'negate-super-admin';
         if ($this->isSuperAdmin()) {
@@ -247,29 +218,17 @@ trait IsProfileTrait
     /**
      * Relazione con i dispositivi mobili associati al profilo.
      *
-<<<<<<< HEAD
      * @return BelongsToMany<Device, $this>
      */
     public function mobileDevices(): BelongsToMany
     {
-=======
-     * @return BelongsToMany<Device, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
-     */
-    public function mobileDevices(): BelongsToMany
-    {
-        // @phpstan-ignore return.type
->>>>>>> 350420cb (Check & fix styling)
         return $this->belongsToManyX(Device::class);
     }
 
     /**
      * Relazione con tutti i dispositivi associati al profilo.
      *
-<<<<<<< HEAD
      * @return BelongsToMany<Device, $this>
-=======
-     * @return BelongsToMany<Device, $this, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'>
->>>>>>> 350420cb (Check & fix styling)
      */
     public function devices(): BelongsToMany
     {
@@ -283,10 +242,6 @@ trait IsProfileTrait
      */
     public function mobileDeviceUsers(): HasMany
     {
-<<<<<<< HEAD
-=======
-        // @phpstan-ignore return.type
->>>>>>> 350420cb (Check & fix styling)
         return $this->hasMany(DeviceUser::class, 'profile_id')->where('type', 'mobile');
     }
 
@@ -297,10 +252,6 @@ trait IsProfileTrait
      */
     public function deviceUsers(): HasMany
     {
-<<<<<<< HEAD
-=======
-        // @phpstan-ignore return.type
->>>>>>> 350420cb (Check & fix styling)
         return $this->hasMany(DeviceUser::class, 'profile_id');
     }
 
@@ -323,14 +274,8 @@ trait IsProfileTrait
     /**
      * Get the user's user_name.
      * Ottiene il nome utente dal modello utente collegato.
-<<<<<<< HEAD
      */
     /** @return Attribute<?string, never> */
-=======
-     *
-     * @return Attribute<string|null, never>
-     */
->>>>>>> 350420cb (Check & fix styling)
     protected function userName(): Attribute
     {
         return Attribute::make(
@@ -339,11 +284,7 @@ trait IsProfileTrait
                 if ($user === null) {
                     return null;
                 }
-<<<<<<< HEAD
                 Assert::isInstanceOf($user, UserContract::class);
-=======
-                Assert::isInstanceOf($user, User::class);
->>>>>>> 350420cb (Check & fix styling)
 
                 $name = $user->getAttribute('name');
 
@@ -355,14 +296,8 @@ trait IsProfileTrait
     /**
      * Get the user's avatar URL.
      * Recupera l'URL dell'avatar dell'utente dalla MediaLibrary.
-<<<<<<< HEAD
      */
     /** @return Attribute<string, never> */
-=======
-     *
-     * @return Attribute<string, never>
-     */
->>>>>>> 350420cb (Check & fix styling)
     protected function avatar(): Attribute
     {
         return Attribute::make(get: function (): string {

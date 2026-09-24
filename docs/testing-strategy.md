@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Testing Strategy for the User Module and Laraxot Applications"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Testing Strategy for the User Module and Laraxot Applications
 
 This document outlines the core testing strategy adopted across the User module and by extension, other modules within the Laraxot application framework. It emphasizes a robust, isolated, and efficient testing methodology designed to ensure high code quality and maintainability.

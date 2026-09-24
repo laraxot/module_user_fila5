@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Profile: id autoincrement + colonna uuid"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Profile: id autoincrement + colonna uuid
 
 ## Regola architetturale

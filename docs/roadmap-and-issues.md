@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Module - Roadmap, Issues & Optimization"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # User Module - Roadmap, Issues & Optimization
 
 **Modulo**: User (Authentication, Authorization, Profiles)  
@@ -393,11 +390,7 @@ php artisan queue:prune-failed --hours=48
 ## 🔗 Collegamenti
 
 - [← User Module README](./readme.md)
-<<<<<<< HEAD
 - [← PHPStan Fixes 2025-10-01](./phpstan-fixes.md)
-=======
-- [← PHPStan Fixes 2025-10-01](./phpstan-fixes-2025-10-01.md)
->>>>>>> 350420cb (Check & fix styling)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
 - [← Root Documentation](../../../docs/index.md)
 

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Separazione dei Modelli User e Profile: Analisi e Raccomandazioni"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Separazione dei Modelli User e Profile: Analisi e Raccomandazioni
 
 ## Introduzione

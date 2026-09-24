@@ -46,18 +46,8 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $profile_id
  * @property array<array-key, mixed>|null $permissions
  *
-<<<<<<< .merge_file_qubTSy
-<<<<<<< HEAD
- * @method static Builder<static>|ProfileTeam                         childrenWith(array<int|string, mixed> $relations)
- * @method static Builder<static>|ProfileTeam                         childrenWithCount(array<int|string, mixed> $relations)
-=======
- * @method static Builder<static>|ProfileTeam                         childrenWith(array<int|string, string> $relations)
- * @method static Builder<static>|ProfileTeam                         childrenWithCount(array<int|string, string> $relations)
->>>>>>> 350420cb (Check & fix styling)
-=======
  * @method static Builder<static>|ProfileTeam childrenWith(array<int|string, mixed> $relations)
  * @method static Builder<static>|ProfileTeam childrenWithCount(array<int|string, mixed> $relations)
->>>>>>> .merge_file_GrDmJ6
  * @method static \Modules\User\Database\Factories\ProfileTeamFactory factory($count = null, $state = [])
  * @method static Builder<static>|ProfileTeam wherePermissions($value)
  * @method static Builder<static>|ProfileTeam whereProfileId($value)
@@ -68,11 +58,6 @@ class ProfileTeam extends TeamUser
 {
     /**
      * The table associated with the model.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 350420cb (Check & fix styling)
      */
     protected $table = 'profile_team';
 }

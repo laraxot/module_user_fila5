@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Ponytail audit — User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./filament-widget-resource-form-delegation.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Ponytail audit — User
 
 **Delta modulo only here.** Ranked list, gate e remediation globale negli hub progetto.

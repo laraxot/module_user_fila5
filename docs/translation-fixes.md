@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: translation-fixes
@@ -15,16 +14,6 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-fixes.md
-=======
-# Correzioni File di Traduzione User Module
-
-## Problemi Identificati e Risolti
-
-### 1. Conflitti di Merge Git
-**Problema**: Il file `Modules/User/lang/it/user.php` conteneva marcatori di conflitto Git non risolti:
-- `=======`
-- `>>>>>>> 42fc572 (.)`
->>>>>>> 350420cb (Check & fix styling)
 - `>>>>>>> 199538c (.)`
 
 **Soluzione**: Rimossi tutti i marcatori di conflitto e mantenuto solo il contenuto corretto.
@@ -116,7 +105,4 @@ Il file ora segue la struttura espansa obbligatoria per le regole Laraxot:
 
 ---
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
-=======
->>>>>>> 350420cb (Check & fix styling)

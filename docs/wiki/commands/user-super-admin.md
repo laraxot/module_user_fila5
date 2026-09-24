@@ -7,10 +7,7 @@ updated: 2026-06-10
 qmd: user super-admin artisan email WSL prompts
 issues: []
 discussions: []
-<<<<<<< HEAD
 related:
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # user:super-admin

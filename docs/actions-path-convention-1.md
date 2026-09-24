@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Convenzione dei Percorsi per le Actions"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-structure-1.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Convenzione dei Percorsi per le Actions
 
 ## Regola Fondamentale
@@ -84,11 +81,6 @@ fi
 ```
 
 ## Collegamenti
-<<<<<<< HEAD
 - [Convenzioni Path nei Moduli Laravel](./path-conventions-2.md)
 - [Checklist per la Struttura delle Directory](./directory-structure-checklist.md)
-=======
-- [Convenzioni Path nei Moduli Laravel](./path_conventions.md)
-- [Checklist per la Struttura delle Directory](./directory_structure_checklist.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Analisi Errore: Gestione Percorsi](../../../../docs/error_analysis/path_management.md)

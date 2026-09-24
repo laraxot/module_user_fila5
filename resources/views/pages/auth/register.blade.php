@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)
 use function Laravel\Folio\{middleware, name};
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -70,11 +66,7 @@ name('register');
                         <h2 class="text-2xl font-bold text-white">{{ __('gdpr::register.form.cta_title') }}</h2>
                         <p class="text-sm text-slate-400">{{ __('gdpr::register.form.cta_subtitle') }}</p>
                     </div>
-<<<<<<< HEAD
                     @livewire(\Modules\Gdpr\Filament\Widgets\Auth\UserForm::class)
-=======
-                    @livewire(\Modules\Gdpr\Filament\Widgets\Auth\RegisterWidget::class)
->>>>>>> 350420cb (Check & fix styling)
                     <p class="mt-4 text-center text-xs text-slate-500">{{ __('gdpr::register.form.terms_notice') }}</p>
                 </div>
 

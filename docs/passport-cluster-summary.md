@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Passport Cluster - Riepilogo Completo"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Passport Cluster - Riepilogo Completo
 
 **Data**: 2025-01-22
@@ -168,10 +165,7 @@ Alcune risorse non hanno tutte le pages standard:
 **Ultimo aggiornamento**: 2025-01-22
 **Versione**: 1.0.0
 **Status**: ✅ Completato e verificato
-<<<<<<< HEAD
 
 ## 2026-07-08 PHPStan
 
 `OauthPersonalAccessClientResource::getTableColumns()` resta statico perché viene usato da `table()`. Non chiamare metodi istanza con `self::`.
-=======
->>>>>>> 350420cb (Check & fix styling)

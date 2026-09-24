@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi Errore LoginWidget: Problema Logico e Soluzione"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Analisi Errore LoginWidget: Problema Logico e Soluzione
 
 ## Problema Identificato
@@ -199,9 +196,5 @@ class LoginWidget extends XotBaseWidget
 ## Riferimenti
 
 - [XotBaseWidget](Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
-<<<<<<< HEAD
 - [Documentazione Widget Structure](modules/user/widgets-structure-2.md)
-=======
-- [Documentazione Widget Structure](modules/user/widgets_structure.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Best Practices Widget Filament](modules/user/best-practices/filament-widgets.md) 

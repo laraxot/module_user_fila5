@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Incompatibilità tra metodi statici e di istanza in Filament"
 type: concept
@@ -11,8 +10,6 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Incompatibilità tra metodi statici e di istanza in Filament
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo User.

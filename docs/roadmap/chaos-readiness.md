@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Chaos Readiness - 2026-03-02"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./03-later.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # User Chaos Readiness - 2026-03-02
 
 ## Scope

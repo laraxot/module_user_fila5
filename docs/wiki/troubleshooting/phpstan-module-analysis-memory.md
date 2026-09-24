@@ -7,7 +7,6 @@ created: "2026-06-18"
 updated: "2026-09-24"
 qmd: "User phpstan analyse Modules/User OOM 512M cache gate"
 issues:
-<<<<<<< HEAD
 discussions:
 related:
   - "./filament-user-creation-pty-error.md"
@@ -17,16 +16,6 @@ related:
   - "./phpstan-widget-property-types-1.md"
   - "./phpstan-widget-property-types.md"
   - "./spatie-permission-team-model-not-configured.md"
-=======
-  - "https://github.com/provtv/base_ptv_fila5_mono/issues/102"
-  - "https://github.com/provtv/base_ptv_fila5_mono/issues/136"
-discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
-related:
-  - "../../../../../../docs/wiki/troubleshooting/phpstan-parallel-worker-oom.md"
-  - "../../../../Xot/docs/phpstan-config-immutability.md"
-  - "../index.md"
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # PHPStan User module analysis memory

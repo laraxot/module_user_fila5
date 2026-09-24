@@ -7,7 +7,6 @@ created: 2026-06-05
 updated: 2026-06-05
 qmd: "user module ai harness auth widget xotbase schemawidget register login"
 issues:
-<<<<<<< HEAD
 discussions:
 related:
   - "./baseuser-hierarchy.md"
@@ -18,18 +17,6 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
   - "./folio-pages-owner-pattern.md"
-=======
-  - "https://github.com/laraxot/module_user_fila5/issues/25"
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/264"
-discussions:
-  - "https://github.com/laraxot/module_user_fila5/discussions/26"
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/265"
-related:
-  - ../../../r1-form-fields-self-validate.md
-  - ../../../../Xot/docs/xotbase-schemawidget-pattern.md
-  - ../../../../docs/wiki/concepts/ai-harness-module-discipline.md
-  - ../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # AI harness — User

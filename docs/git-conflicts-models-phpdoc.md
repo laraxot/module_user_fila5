@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Risoluzione conflitti Git: PHPDoc modelli User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Risoluzione conflitti Git: PHPDoc modelli User
 
 ## Contesto
@@ -46,9 +43,5 @@ Conflitti Git nei blocchi PHPDoc di 25+ modelli del modulo User, causati da merg
 
 ## Riferimenti
 
-<<<<<<< HEAD
 - [conflict_resolution_report](conflict-resolution-report.md)
-=======
-- [conflict_resolution_report](conflict_resolution_report.md)
->>>>>>> 350420cb (Check & fix styling)
 - [rules-index](rules-index.md)

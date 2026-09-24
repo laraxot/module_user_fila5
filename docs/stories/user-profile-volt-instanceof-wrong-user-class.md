@@ -221,12 +221,6 @@ Modules/User/app/View/Pages/ProfileEditVoltComponent.php --no-progress
 
 File toccati in questo aggiornamento: solo
 `laravel/Modules/User/app/View/Pages/ProfileEditVoltComponent.php`.
-<<<<<<< .merge_file_KZ0xvB
-<<<<<<< HEAD
-<<<<<<< .merge_file_Xcu1hA
-=======
-=======
->>>>>>> .merge_file_jy6HBq
 
 ## Aggiornamento 2026-09-21 (quarta occorrenza indipendente, modulo Cms)
 
@@ -351,9 +345,3 @@ implementata — con due convenzioni diverse in giro, una guardia meccanica dovr
 vietare `instanceof \Modules\User\Models\User` / `Assert::isInstanceOf(..., \Modules\User\Models\User::class)`
 punto, senza prescrivere quale delle due alternative usare (dipende dal caso d'uso a
 valle).
-<<<<<<< .merge_file_KZ0xvB
->>>>>>> .merge_file_8kHiVW
-=======
->>>>>>> 350420cb (Check & fix styling)
-=======
->>>>>>> .merge_file_jy6HBq

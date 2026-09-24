@@ -341,11 +341,7 @@ use function Laravel\Folio\{middleware, name};
 use function Livewire\Volt\{state};
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
-<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
-=======
-use Modules\User\Models\User;
->>>>>>> 350420cb (Check & fix styling)
 
 middleware(['guest']);
 name('register');
@@ -539,13 +535,3 @@ Seguendo queste linee guida per l'implementazione delle pagine di autenticazione
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Livewire](https://livewire.laravel.com/docs)
-<<<<<<< HEAD
-=======
----
-module: theme
-topic: volt_folio_auth_implementation
-canonical: ../../../Themes/docs/shared-components/volt_folio_auth_implementation.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/volt_folio_auth_implementation.md
->>>>>>> 350420cb (Check & fix styling)

@@ -6,7 +6,6 @@ tags: [agents, confidence, verification]
 created: "2026-05-26"
 updated: "2026-05-26"
 related:
-<<<<<<< HEAD
   - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
@@ -15,9 +14,6 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
-  - "../../../../docs/wiki/rules/agent-confidence-protocol.md"
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Massima confidenza agente

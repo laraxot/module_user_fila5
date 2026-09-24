@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Fix: path does not have our version (rebase/merge)"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Fix: path does not have our version (rebase/merge)
 
 ## Stato: ✅ RISOLTO
@@ -74,17 +71,10 @@ git add app/Filament/Clusters/Passport/Resources/OauthAccessTokenResource/Pages/
 
 ### 3. Risolvere altri conflitti
 
-<<<<<<< HEAD
 Se c'è `both added` (es. docs/code-quality-analysis-3.md):
 
 ```bash
 git add docs/code-quality-analysis-3.md
-=======
-Se c'è `both added` (es. docs/CODE-QUALITY-ANALYSIS.md):
-
-```bash
-git add docs/CODE-QUALITY-ANALYSIS.md
->>>>>>> 350420cb (Check & fix styling)
 ```
 
 ### 4. Continuare rebase

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Policy Hierarchy in Laraxot"
 type: concept
@@ -20,8 +19,6 @@ related:
   - ../integrations/spatie-permissions-methods.md
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Policy Hierarchy in Laraxot
 
 > Documentation of the policy inheritance architecture and usage guidelines
@@ -68,11 +65,7 @@ ActivityPolicy, CmsPolicy, etc.       ← Domain Specific
 - Extends XotBasePolicy
 - Integrates with `spatie/laravel-permission`
 - Uses `UserContract` for type-safe user resolution
-<<<<<<< HEAD
 - Provides permission-based authorization via `hasPermissionToOrCreate()`
-=======
-- Provides permission-based authorization via `hasPermissionTo()`
->>>>>>> 350420cb (Check & fix styling)
 
 **When to Extend**:
 - Most domain policies (default choice)
@@ -204,7 +197,6 @@ class JobSchedulePolicy extends XotBasePolicy
 
 1. **Always type-hint UserContract**
    ```php
-<<<<<<< HEAD
    public function viewAny(UserContract $user): bool
    {
        return $user->hasPermissionToOrCreate(
@@ -216,26 +208,13 @@ class JobSchedulePolicy extends XotBasePolicy
 2. **Use permission dot notation (kebab-case)**
    ```php
    'oauth-access-token.view.any'  // resource.action
-=======
-   public function view(UserContract $user): bool
-   ```
-
-2. **Use permission dot notation**
-   ```php
-   'activity.view'      // resource.action
-   'activity.viewAny'   // resource.actionAny
->>>>>>> 350420cb (Check & fix styling)
    ```
 
 3. **Comment out unused methods**
    ```php
    // public function viewAny(UserContract $user): bool
    // {
-<<<<<<< HEAD
    //     return $user->hasPermissionToOrCreate('activity.view.any');
-=======
-   //     return $user->hasPermissionTo('activity.viewAny');
->>>>>>> 350420cb (Check & fix styling)
    // }
    ```
 

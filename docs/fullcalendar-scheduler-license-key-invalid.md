@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Fullcalendar Scheduler License Key Invalid"
 type: concept
@@ -19,6 +18,4 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
  

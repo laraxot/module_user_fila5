@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "🔧 PHPStan Fixes - Modulo User - Gennaio 2025"
 type: concept
@@ -23,12 +22,6 @@ related:
 
 **Data**: 27 Gennaio 2025
 **Status**: ✅ COMPLETATO CON SUCCESSO
-=======
-# 🔧 PHPStan Fixes - Modulo User - Gennaio 2025
-
-**Data**: 27 Gennaio 2025  
-**Status**: ✅ COMPLETATO CON SUCCESSO  
->>>>>>> 350420cb (Check & fix styling)
 **Errori Corretti**: 3 errori di sintassi method chaining e object instantiation
 
 ## 📋 Panoramica Correzioni
@@ -238,10 +231,7 @@ $subject = Lang::get('user::email.password_reset_subject');
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
-<<<<<<< HEAD
 - [README.md Modulo User](./README.md)
-=======
->>>>>>> 350420cb (Check & fix styling)
 - [README.md Modulo User](./readme.md)
 - [Authentication Guide](./authentication.md)
 - [Best Practices](./best-practices.md)
@@ -253,7 +243,6 @@ $subject = Lang::get('user::email.password_reset_subject');
 
 ---
 
-<<<<<<< HEAD
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025
 **📦 Versione**: 1.0
 **🐛 PHPStan Level**: 9 ✅
@@ -276,14 +265,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio.md
-=======
-**🔄 Ultimo aggiornamento**: 27 Gennaio 2025  
-**📦 Versione**: 1.0  
-**🐛 PHPStan Level**: 9 ✅  
-**🌐 Translation Standards**: IT/EN complete ✅  
-**🚀 Performance**: 95/100 score  
-**✨ Test Coverage**: 85% ✅
-
-
-
->>>>>>> 350420cb (Check & fix styling)

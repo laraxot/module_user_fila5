@@ -13,15 +13,9 @@ use Laravel\Socialite\Contracts\User;
  */
 final readonly class UserNameFieldsResolver
 {
-<<<<<<< HEAD
     private const string NAME_SEARCH = 'before';
 
     private const string SURNAME_SEARCH = 'after';
-=======
-    private const NAME_SEARCH = 'before';
-
-    private const SURNAME_SEARCH = 'after';
->>>>>>> 350420cb (Check & fix styling)
 
     public ?string $name;
 
@@ -73,18 +67,13 @@ final readonly class UserNameFieldsResolver
     private function determineNameField(User $idpUser, string $searchMethod): Stringable
     {
         $name = $idpUser->getName();
-<<<<<<< HEAD
         if (is_string($name) && ! empty($name)) {
-=======
-        if (is_string($name) && '' !== $name) {
->>>>>>> 350420cb (Check & fix styling)
             $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($name, $searchMethod);
             if ($nameSection->isNotEmpty()) {
                 return $nameSection;
             }
         }
 
-<<<<<<< HEAD
         $raw = $this->getRawUserData($idpUser);
         $nameField = '';
         if (isset($raw['name']) && is_string($raw['name']) && ! empty($raw['name'])) {
@@ -93,34 +82,15 @@ final readonly class UserNameFieldsResolver
 
         if (! empty($nameField)) {
             $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($nameField, $searchMethod);
-=======
-        $rawName = $this->extractRawNameField($idpUser);
-        if ('' !== $rawName) {
-            $nameSection = $this->resolveNameFieldByNameAttributeAnalysis($rawName, $searchMethod);
->>>>>>> 350420cb (Check & fix styling)
             if ($nameSection->isNotEmpty() && ! filter_var($nameSection->toString(), FILTER_VALIDATE_EMAIL)) {
                 return $nameSection;
             }
         }
 
-<<<<<<< HEAD
         // Fallback to email analysis if name is empty or looks like an email
         return $this->analyzeEmailForNameSection($idpUser, $searchMethod);
     }
 
-=======
-        return $this->analyzeEmailForNameSection($idpUser, $searchMethod);
-    }
-
-    private function extractRawNameField(User $idpUser): string
-    {
-        $raw = $this->getRawUserData($idpUser);
-        $nameField = $raw['name'] ?? null;
-
-        return is_string($nameField) && '' !== $nameField ? $nameField : '';
-    }
-
->>>>>>> 350420cb (Check & fix styling)
     private function analyzeEmailForNameSection(User $idpUser, string $searchMethod): Stringable
     {
         $email = $idpUser->getEmail();
@@ -146,7 +116,6 @@ final readonly class UserNameFieldsResolver
      */
     private function getRawUserData(User $idpUser): array
     {
-<<<<<<< HEAD
         /** @var array<string, mixed> $raw */
         $raw = [];
         try {
@@ -172,60 +141,6 @@ final readonly class UserNameFieldsResolver
             }
         } catch (\ReflectionException $e) {
             // Fallback silenzioso
-=======
-        /** @var \ReflectionClass<User> $reflection */
-        $reflection = new \ReflectionClass($idpUser);
-
-        if ($reflection->hasMethod('getRaw')) {
-            return $this->rawDataFromReflectionMethod($reflection, $idpUser, 'getRaw');
-        }
-
-        if ($reflection->hasProperty('user')) {
-            return $this->rawDataFromReflectionProperty($reflection, $idpUser, 'user');
-        }
-
-        return [];
-    }
-
-    /**
-     * @param \ReflectionClass<User> $reflection
-     *
-     * @return array<string, mixed>
-     */
-    private function rawDataFromReflectionMethod(\ReflectionClass $reflection, User $idpUser, string $method): array
-    {
-        $callable = $reflection->getMethod($method);
-        $callable->setAccessible(true);
-        $rawValue = $callable->invoke($idpUser);
-
-        return is_array($rawValue) ? $this->normalizeRawUserArray($rawValue) : [];
-    }
-
-    /**
-     * @param \ReflectionClass<User> $reflection
-     *
-     * @return array<string, mixed>
-     */
-    private function rawDataFromReflectionProperty(\ReflectionClass $reflection, User $idpUser, string $property): array
-    {
-        $propertyReflection = $reflection->getProperty($property);
-        $propertyReflection->setAccessible(true);
-        $userData = $propertyReflection->getValue($idpUser);
-
-        return is_array($userData) ? $this->normalizeRawUserArray($userData) : [];
-    }
-
-    /**
-     * @param array<int|string, mixed> $data
-     *
-     * @return array<string, mixed>
-     */
-    private function normalizeRawUserArray(array $data): array
-    {
-        $raw = [];
-        foreach ($data as $key => $value) {
-            $raw[(string) $key] = $value;
->>>>>>> 350420cb (Check & fix styling)
         }
 
         return $raw;

@@ -1,29 +1,10 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_ifTs5P
-<<<<<<< HEAD
-<<<<<<< .merge_file_62quLo
-=======
->>>>>>> .merge_file_xFFU3f
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
 {
-<<<<<<< .merge_file_ifTs5P
-=======
-
-use Modules\Xot\Database\Migrations\XotBaseMigration;
-
-return new class extends XotBaseMigration {
->>>>>>> .merge_file_boVfNv
-=======
-use Modules\Xot\Database\Migrations\XotBaseMigration;
-
-return new class extends XotBaseMigration {
->>>>>>> 350420cb (Check & fix styling)
-=======
->>>>>>> .merge_file_xFFU3f
     /**
      * Run the migrations.
      */
@@ -63,19 +44,7 @@ return new class extends XotBaseMigration {
         try {
             // Verifica se l'applicazione è completamente inizializzata
             if (app()->bound('cache')) {
-<<<<<<< .merge_file_ifTs5P
-<<<<<<< HEAD
-<<<<<<< .merge_file_62quLo
                 app('cache')->store($cache_store !== 'default' ? $cache_store : null)->forget($cache_key);
-=======
-                app('cache')->store('default' !== $cache_store ? $cache_store : null)->forget($cache_key);
->>>>>>> .merge_file_boVfNv
-=======
-                app('cache')->store('default' !== $cache_store ? $cache_store : null)->forget($cache_key);
->>>>>>> 350420cb (Check & fix styling)
-=======
-                app('cache')->store($cache_store !== 'default' ? $cache_store : null)->forget($cache_key);
->>>>>>> .merge_file_xFFU3f
             }
         } catch (Exception $e) {
             // Silently ignore cache errors during package discovery

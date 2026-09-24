@@ -7,10 +7,7 @@ namespace Modules\User\Filament\Clusters\Passport\Resources\OauthClientResource\
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Filament\Notifications\Notification;
-<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
-=======
->>>>>>> 350420cb (Check & fix styling)
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
@@ -35,11 +32,7 @@ class TokensRelationManager extends XotBaseRelationManager
     protected static ?string $title = 'Token OAuth';
 
     /**
-<<<<<<< HEAD
      * @return array<string, Column>
-=======
-     * @return array<string, \Filament\Tables\Columns\Column>
->>>>>>> 350420cb (Check & fix styling)
      */
     #[\Override]
     public function getTableColumns(): array
@@ -50,7 +43,6 @@ class TokensRelationManager extends XotBaseRelationManager
                 ->sortable(),
             'scopes' => TextColumn::make('scopes')
                 ->limit(30)
-<<<<<<< HEAD
                 ->tooltip(
                     /** @param array<array-key, mixed>|scalar|null $state Raw 'scopes' column state. */
                     function (mixed $state): ?string {
@@ -74,25 +66,6 @@ class TokensRelationManager extends XotBaseRelationManager
                         return is_scalar($state) ? (string) $state : '';
                     }
                 ),
-=======
-                ->tooltip(function (mixed $state): ?string {
-                    if (null === $state) {
-                        return null;
-                    }
-                    if (is_array($state)) {
-                        return json_encode($state);
-                    }
-
-                    return is_string($state) ? $state : null;
-                })
-                ->formatStateUsing(function (mixed $state): string {
-                    if (is_array($state)) {
-                        return implode(', ', array_map(fn (mixed $s): string => (string) $s, $state));
-                    }
-
-                    return (string) ($state ?? '');
-                }),
->>>>>>> 350420cb (Check & fix styling)
             'revoked' => IconColumn::make('revoked')
                 ->boolean()
                 ->color(fn (bool $state): string => $state ? 'danger' : 'success'),
@@ -102,11 +75,7 @@ class TokensRelationManager extends XotBaseRelationManager
             'expires_at' => TextColumn::make('expires_at')
                 ->dateTime()
                 ->sortable()
-<<<<<<< HEAD
                 ->formatStateUsing(function (Carbon|string|null $state): string {
-=======
-                ->formatStateUsing(function (mixed $state): string {
->>>>>>> 350420cb (Check & fix styling)
                     if ($state instanceof Carbon) {
                         $now = Carbon::now();
                         if ($state->lt($now)) {
@@ -156,11 +125,7 @@ class TokensRelationManager extends XotBaseRelationManager
                 ->icon('heroicon-o-x-circle')
                 ->color('danger')
                 ->requiresConfirmation()
-<<<<<<< HEAD
                 ->action(function (OauthToken $record): void {
-=======
-                ->action(function (OauthToken $record) {
->>>>>>> 350420cb (Check & fix styling)
                     if (app(RevokeTokenAction::class)->execute($record)) {
                         Notification::make()
                             ->title('Token revocato')

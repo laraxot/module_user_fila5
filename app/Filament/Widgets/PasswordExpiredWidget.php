@@ -15,18 +15,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Http\Response\PasswordResetResponse;
-<<<<<<< HEAD
 use Modules\User\Rules\CheckOtpExpiredRule;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
-=======
-use Modules\User\Models\User;
-use Modules\User\Rules\CheckOtpExpiredRule;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Filament\Traits\TransTrait;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
->>>>>>> 350420cb (Check & fix styling)
 
 /**
  * Widget for handling expired password reset.
@@ -37,28 +29,17 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  * @property string|null $passwordConfirmation
  * @property array<string, mixed>|null $data
  */
-<<<<<<< HEAD
 class PasswordExpiredWidget extends XotBaseSchemaWidget
 {
-=======
-class PasswordExpiredWidget extends XotBaseWidget
-{
-    // XotBaseWidget already implements HasForms and uses InteractsWithForms
-    use TransTrait;
-
->>>>>>> 350420cb (Check & fix styling)
     public ?string $current_password = '';
 
     public ?string $password = '';
 
     public ?string $passwordConfirmation = '';
 
-<<<<<<< HEAD
     /** @var array<string, mixed>|null */
     public ?array $data = [];
 
-=======
->>>>>>> 350420cb (Check & fix styling)
     /**
      * The view for this widget.
      */
@@ -72,10 +53,6 @@ class PasswordExpiredWidget extends XotBaseWidget
      *
      * @return array<int, Component>
      */
-<<<<<<< HEAD
-=======
-    #[\Override]
->>>>>>> 350420cb (Check & fix styling)
     public function getFormSchema(): array
     {
         $schema = [
@@ -84,11 +61,7 @@ class PasswordExpiredWidget extends XotBaseWidget
         ];
 
         // Ensure list type for PHPStan Level 10
-<<<<<<< HEAD
         /* @var array<int, Component> $schema */
-=======
-        /* @var array<int, Component> $result */
->>>>>>> 350420cb (Check & fix styling)
         return array_values($schema);
     }
 
@@ -156,11 +129,7 @@ class PasswordExpiredWidget extends XotBaseWidget
     {
         $authUser = Filament::auth()->user();
 
-<<<<<<< HEAD
         if ($authUser instanceof UserContract) {
-=======
-        if ($authUser instanceof User) {
->>>>>>> 350420cb (Check & fix styling)
             return TextInput::make('current_password')
                 ->password()
                 ->revealable()
@@ -209,10 +178,6 @@ class PasswordExpiredWidget extends XotBaseWidget
      *
      * @return array<int, Action|ActionGroup>
      */
-<<<<<<< HEAD
-=======
-    #[\Override]
->>>>>>> 350420cb (Check & fix styling)
     protected function getFormActions(): array
     {
         return [

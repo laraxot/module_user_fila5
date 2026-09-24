@@ -5,10 +5,7 @@ tags: [skill, user, filament, translations, langserviceprovider]
 module: "User"
 created: 2026-05-12
 updated: 2026-05-12
-<<<<<<< HEAD
 related:
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Skill — Audit traduzioni Filament User

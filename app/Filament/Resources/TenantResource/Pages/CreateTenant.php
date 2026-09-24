@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 /**
  * --.
@@ -8,16 +7,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources\TenantResource\Pages;
 
-=======
-/**
- * --.
- */
-declare(strict_types=1);
-
-namespace Modules\User\Filament\Resources\TenantResource\Pages;
-
-use Illuminate\Database\Eloquent\Model;
->>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Filament\Resources\TenantResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
@@ -25,7 +14,6 @@ class CreateTenant extends XotBaseCreateRecord
 {
     protected static string $resource = TenantResource::class;
 
-<<<<<<< HEAD
     /*
      * }
      *
@@ -36,30 +24,6 @@ class CreateTenant extends XotBaseCreateRecord
      * //  */
     // private function createTenantRecord(array $data)
     // {
-=======
-    /**
-     * @throws \Throwable
-     */
-    protected function handleRecordCreation(array $data): Model
-    {
-        /** @var array<string, mixed> $filteredData */
-        $filteredData = collect($data)->except('domain')->toArray();
-
-        return parent::handleRecordCreation($filteredData);
-    }
-
-    // :30    Method Modules\User\Filament\Resources\TenantResource\Pages\CreateTenant::createTenantRecord() is unused.
-    //      ✏️  User\Filament\Resources\TenantResource\Pages\CreateTenant.php
-    // /**
-    //  * @throws \Throwable
-    //  */
-    // private function createTenantRecord(array $data)
-    // {
-    //     \Log::debug('Saving Tenant');
-    //     $record = new Tenant(collect($data)->except('domain')->toArray());
-    //     $record->saveOrFail();
-    //     \Log::debug('Saving Domains');
->>>>>>> 350420cb (Check & fix styling)
     //     $record = $record::find($record->);
     //     $record->domains()->create(['domain' => collect($data)->get('domain')]);
     //     return $record;

@@ -38,11 +38,7 @@ trait InteractsWithTenant
 
         $tenantClass = config('tenant.tenant_model', Tenant::class);
 
-<<<<<<< HEAD
         // @phpstan-ignore-next-line
-=======
-        // @phpstan-ignore argument.type, argument.templateType
->>>>>>> 350420cb (Check & fix styling)
         return $this->belongsTo($tenantClass, 'tenant_id');
     }
 
@@ -74,17 +70,10 @@ trait InteractsWithTenant
     {
         static::addGlobalScope(new TenantScope);
 
-<<<<<<< HEAD
         static::creating(static function (Model $model): void {
             // PHPStan Level 10: Verifica se il modello ha tenant_id
             // Uso isFillable() invece di property_exists() per Eloquent magic properties
             if ($model->isFillable('tenant_id')) {
-=======
-        static::creating(static function ($model): void {
-            // PHPStan Level 10: Verifica se il modello ha tenant_id
-            // Uso isFillable() invece di property_exists() per Eloquent magic properties
-            if (null !== $model && $model instanceof Model && $model->isFillable('tenant_id')) {
->>>>>>> 350420cb (Check & fix styling)
                 $tenant = Filament::getTenant();
                 if ($tenant !== null) {
                     // Usa setAttribute() invece di assegnazione diretta per PHPStan

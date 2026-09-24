@@ -4,16 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Feature\Filament\Clusters;
 
-<<<<<<< HEAD
-=======
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-// User Pest/PHPUnit — claude-audit documentation ratio.
-
->>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Filament\Clusters\Appearance;
 use Modules\User\Filament\Clusters\Appearance\Pages\Alignment;
@@ -81,14 +71,10 @@ describe('Appearance Cluster', function (): void {
         }
 
         foreach ($files as $file) {
-<<<<<<< HEAD
             if (! is_string($file)) {
                 continue;
             }
             $filePath = $file;
-=======
-            $filePath = (string) $file;
->>>>>>> 350420cb (Check & fix styling)
             $content = (string) file_get_contents($filePath);
             Assert::assertStringContainsString('extends XotBasePage', $content, basename($filePath));
             Assert::assertStringNotContainsString('extends Page', $content, basename($filePath));

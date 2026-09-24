@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Convenzione Metodo getTableColumns per Filament Table"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./widgets-responsive-layout.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Convenzione Metodo getTableColumns per Filament Table
 
 ## Motivazione della Modifica
@@ -54,11 +51,7 @@ public function getTableColumns(): array
 - Aggiornare anche override, chiamate e test.
 
 ## Collegamenti
-<<<<<<< HEAD
 - [Regola Generale - Modulo Xot](../../../xot/docs/filament-table-columns-2.md)
-=======
-- [Regola Generale - Modulo Xot](../../../xot/docs/filament_table_columns.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
 
 ---

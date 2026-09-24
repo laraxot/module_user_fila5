@@ -14,11 +14,7 @@ class DeviceUserPolicy extends UserBasePolicy
      */
     public function viewAny(UserContract $user): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('device-user.view.any');
-=======
-        return $user->hasPermissionTo('device-user.view.any');
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -26,11 +22,7 @@ class DeviceUserPolicy extends UserBasePolicy
      */
     public function view(UserContract $user, DeviceUser $deviceUser): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('device-user.view')
-=======
-        return $user->hasPermissionTo('device-user.view')
->>>>>>> 350420cb (Check & fix styling)
             || $user->id === $deviceUser->user_id
             || $user->hasRole('super-admin');
     }
@@ -40,11 +32,7 @@ class DeviceUserPolicy extends UserBasePolicy
      */
     public function create(UserContract $user): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('device-user.create');
-=======
-        return $user->hasPermissionTo('device-user.create');
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -52,11 +40,7 @@ class DeviceUserPolicy extends UserBasePolicy
      */
     public function update(UserContract $user, DeviceUser $_deviceUser): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('device-user.update') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('device-user.update') || $user->hasRole('super-admin');
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -64,11 +48,7 @@ class DeviceUserPolicy extends UserBasePolicy
      */
     public function delete(UserContract $user, DeviceUser $_deviceUser): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('device-user.delete') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('device-user.delete') || $user->hasRole('super-admin');
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -76,11 +56,7 @@ class DeviceUserPolicy extends UserBasePolicy
      */
     public function restore(UserContract $user, DeviceUser $_deviceUser): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('device-user.restore') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('device-user.restore') || $user->hasRole('super-admin');
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -88,10 +64,6 @@ class DeviceUserPolicy extends UserBasePolicy
      */
     public function forceDelete(UserContract $user, DeviceUser $deviceUser): bool
     {
-<<<<<<< HEAD
         return $user->hasPermissionToOrCreate('device-user.force-delete') || $user->hasRole('super-admin');
-=======
-        return $user->hasPermissionTo('device-user.force-delete') || $user->hasRole('super-admin');
->>>>>>> 350420cb (Check & fix styling)
     }
 }

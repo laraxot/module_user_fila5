@@ -5,7 +5,6 @@ tags: [documentation, redundancy, user-module]
 created: "2026-05-21"
 updated: "2026-05-21"
 related:
-<<<<<<< HEAD
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
   - "./code-redundancy-user.md"
@@ -14,10 +13,6 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-=======
-  - ../../../../Xot/docs/wiki/concepts/ridondanze-cross-cutting-codebase.md
-  - ../../../legacy/historical/redundancy-fixes-january.md
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Ridondanza documentazione `Modules/User/docs`
@@ -50,11 +45,7 @@ Rinominare il bug in `bugs/make-filament-user-testing.md` ed eliminare stub `tes
 
 ## Performance auth (4 naming stesso topic)
 
-<<<<<<< HEAD
 `docs/performance/legacy/authentication-performance-optimization.md` e varianti `-1`, `AUTHENTICATION_*`, `authentication-performance-optimization-3.md` → un solo file canonico in `docs/performance/`.
-=======
-`docs/performance/legacy/authentication-performance-optimization.md` e varianti `-1`, `AUTHENTICATION_*`, `authentication_performance_optimization.md` → un solo file canonico in `docs/performance/`.
->>>>>>> 350420cb (Check & fix styling)
 
 ## File “redundancy / dry-kiss phpstan” noti ridondanti
 

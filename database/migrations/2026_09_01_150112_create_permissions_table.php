@@ -1,17 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_a6d8n6
-<<<<<<< HEAD
-<<<<<<< .merge_file_Ss3nOh
-
-=======
->>>>>>> .merge_file_NnygGr
-=======
-
->>>>>>> 350420cb (Check & fix styling)
-=======
->>>>>>> .merge_file_Sfjmzq
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Permission;

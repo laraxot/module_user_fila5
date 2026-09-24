@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Bug: Infinite Loop in make:filament-user Command"
 type: concept
@@ -12,8 +11,6 @@ related:
   - "./testing.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Bug: Infinite Loop in make:filament-user Command
 
 ## Problema Identificato

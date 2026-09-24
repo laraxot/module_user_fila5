@@ -7,26 +7,17 @@ namespace Modules\User\Filament\Widgets;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Tables\Columns\TextColumn;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Builder;
 use Modules\User\Models\AuthenticationLog;
 use Modules\Xot\Filament\Widgets\XotBaseTableWidget;
 
 final class RecentLoginsWidget extends XotBaseTableWidget
-=======
-use Filament\Widgets\TableWidget as BaseWidget;
-use Illuminate\Database\Eloquent\Builder;
-use Modules\User\Models\AuthenticationLog;
-
-final class RecentLoginsWidget extends BaseWidget
->>>>>>> 350420cb (Check & fix styling)
 {
     protected static ?string $heading = 'Recent Logins'; // Rendi static la proprietà
 
     protected int|string|array $columnSpan = 'full';
 
     /**
-<<<<<<< HEAD
      * Convenzione documentata in
      * Modules/Xot/docs/wiki/concepts/has-relationship-model-class.md:
      * per i widget, HasXotTable::getModelClass() risolve il model tramite
@@ -39,8 +30,6 @@ final class RecentLoginsWidget extends BaseWidget
     }
 
     /**
-=======
->>>>>>> 350420cb (Check & fix styling)
      * Define the columns to display in the table.
      */
     public function getTableColumns(): array
@@ -65,14 +54,9 @@ final class RecentLoginsWidget extends BaseWidget
 
     /**
      * Define the query to fetch recent logins.
-<<<<<<< HEAD
      *
      * @return Builder<AuthenticationLog>
      */
-=======
-     */
-    /** @return Builder<AuthenticationLog> */
->>>>>>> 350420cb (Check & fix styling)
     protected function getTableQuery(): Builder
     {
         return AuthenticationLog::query()

@@ -32,12 +32,7 @@ class ListProfiles extends XotBaseListRecords
             'user.name' => TextColumn::make('user.name')
                 ->sortable()
                 ->searchable()
-<<<<<<< .merge_file_67XUdJ
-<<<<<<< HEAD
-                ->default(function ($record) {
-=======
                 ->default(function (mixed $record): string {
->>>>>>> .merge_file_oVQXOs
                     if (! is_object($record)) {
                         return '--';
                     }
@@ -81,9 +76,6 @@ class ListProfiles extends XotBaseListRecords
 
                     return is_string($userName) ? $userName : '--';
                 }),
-=======
-                ->default(fn (mixed $record): string => $this->resolveProfileUserName($record)),
->>>>>>> 350420cb (Check & fix styling)
             'first_name' => TextColumn::make('first_name')->sortable()->searchable(),
             'last_name' => TextColumn::make('last_name')->sortable()->searchable(),
             'email' => TextColumn::make('email')->sortable()->searchable(),
@@ -109,49 +101,4 @@ class ListProfiles extends XotBaseListRecords
                 ),
         ];
     }
-<<<<<<< HEAD
-=======
-
-    protected function resolveProfileUserName(mixed $record): string
-    {
-        if (! is_object($record)) {
-            return '--';
-        }
-
-        $userValue = $record->user ?? null;
-
-        if (null === $userValue) {
-            $emailValue = $record->email ?? null;
-
-            if (null === $emailValue && method_exists($record, 'update')) {
-                $record->update(['email' => fake()->email()]);
-                $emailValue = $record->email ?? '';
-            }
-
-            if (! is_string($emailValue) || '' === $emailValue) {
-                return '--';
-            }
-
-            try {
-                $userValue = XotData::make()->getUserByEmail($emailValue);
-            } catch (\Exception) {
-                return '--';
-            }
-        }
-
-        if (! is_object($userValue)) {
-            return '--';
-        }
-
-        $userId = $userValue->id ?? null;
-
-        if (null !== $userId && method_exists($record, 'update')) {
-            $record->update(['user_id' => $userId]);
-        }
-
-        $userName = $userValue->name ?? '--';
-
-        return is_string($userName) ? $userName : '--';
-    }
->>>>>>> 350420cb (Check & fix styling)
 }

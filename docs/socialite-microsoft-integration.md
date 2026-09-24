@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "🔐 **Laravel Socialite + Microsoft OAuth Integration Guide**"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # 🔐 **Laravel Socialite + Microsoft OAuth Integration Guide**
 
 **Last Update**: 23 Febbraio 2026

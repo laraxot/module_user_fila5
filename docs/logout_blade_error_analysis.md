@@ -1,7 +1,6 @@
 # Analisi Approfondita dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati
-<<<<<<< HEAD
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
@@ -13,19 +12,6 @@
 ## Errore Fondamentale Identificato
 
 L'implementazione attuale del file `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` è corretta nella sua struttura di base, ma presenta alcune limitazioni:
-=======
-- [Documentazione centrale](/docs/readme.md)
-- [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth_pages_implementation.md)
-- [Implementazione Logout](logout_blade_implementation.md)
-- [Analisi Logout](logout_blade_analysis.md)
-- [Conclusioni Logout](logout_blade_conclusions.md)
-- [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
-
-## Errore Fondamentale Identificato
-
-L'implementazione attuale del file `/var/www/html/Quaeris/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` è corretta nella sua struttura di base, ma presenta alcune limitazioni:
->>>>>>> 350420cb (Check & fix styling)
 
 ```php
 <?php
@@ -56,11 +42,7 @@ return redirect()->route('home');
 
 2. **Mancanza di direttive Folio**: Non utilizza le direttive di Laravel Folio come `middleware()` e `name()` per definire correttamente la rotta.
 
-<<<<<<< HEAD
 3. **Mancanza di localizzazione URL**: Non utilizza `app()->getLocale()` per la localizzazione degli URL nel reindirizzamento, come richiesto dalle convenzioni di SaluteOra.
-=======
-3. **Mancanza di localizzazione URL**: Non utilizza `app()->getLocale()` per la localizzazione degli URL nel reindirizzamento, come richiesto dalle convenzioni di Quaeris.
->>>>>>> 350420cb (Check & fix styling)
 
 4. **Mancanza di gestione errori e logging**: Non include gestione degli errori o logging delle operazioni di logout.
 
@@ -127,8 +109,4 @@ L'errore fondamentale nell'analisi precedente è stato non riconoscere che:
 Questi errori evidenziano l'importanza di:
 - Analizzare attentamente il codice esistente prima di proporre modifiche
 - Comprendere a fondo le classi base e le loro restrizioni
-<<<<<<< HEAD
 - Rispettare le convenzioni e le strutture del progetto SaluteOra
-=======
-- Rispettare le convenzioni e le strutture del progetto Quaeris
->>>>>>> 350420cb (Check & fix styling)

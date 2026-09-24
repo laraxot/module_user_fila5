@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Case Sensitivity Rules - User Module"
 type: rule
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Case Sensitivity Rules - User Module
 
 ## Problema / Problem

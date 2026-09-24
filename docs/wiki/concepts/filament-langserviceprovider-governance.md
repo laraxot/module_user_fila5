@@ -4,7 +4,6 @@ module: User
 confidence: high
 updated: 2026-04-20
 sources:
-<<<<<<< HEAD
 related:
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
@@ -14,11 +13,6 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
   - "./folio-pages-owner-pattern.md"
-=======
-  - ../../../app/Filament/Pages/SocialiteProviderSettingsPage.php
-  - ../../../app/Filament/Resources/SocialProviderResource.php
-  - ../../../lang/it/auth.php
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # filament langserviceprovider governance

@@ -1,11 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 350420cb (Check & fix styling)
 use Filament\Notifications\Actions\Action;
 use Filament\Notifications\Livewire\Notifications;
 use Filament\Notifications\Notification;
@@ -17,11 +12,7 @@ use function Laravel\Folio\middleware;
 use function Laravel\Folio\name;
 
 /** @var array */
-<<<<<<< HEAD
 //$middleware=TenantService::config('middleware');
-=======
-//$middleware=app(\Modules\Tenant\Actions\Config\ResolveTenantConfigValueAction::class)->execute('middleware');
->>>>>>> 350420cb (Check & fix styling)
 //$base_middleware=Arr::get($middleware,'base',[]);
 $base_middleware = [];
 

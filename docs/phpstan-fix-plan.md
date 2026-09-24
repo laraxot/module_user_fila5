@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # User Module - PHPStan Level 10 Fix Plan
 
 ## Analysis Date
@@ -598,8 +597,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # PHPStan Analysis - User Module (Jan 2026)
 
 ## Current Status

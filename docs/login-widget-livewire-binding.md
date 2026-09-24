@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "LoginWidget Livewire wire:model Binding Fix"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # LoginWidget Livewire wire:model Binding Fix
 
 **Errore**: `[wire:model="email"] property does not exist on component`

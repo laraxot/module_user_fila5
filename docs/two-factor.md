@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: two-factor
@@ -15,10 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/two-factor-2.md
-=======
-# two_factor
-
-<!-- Contenuto migrato da _docs/two_factor.txt -->
-
-https://engineering.teknasyon.com/two-factor-authentication-in-laravel-applications-dbee2c8eab98
->>>>>>> 350420cb (Check & fix styling)

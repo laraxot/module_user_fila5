@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Architettura Utente Avanzata basata sui Principi Filament"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Architettura Utente Avanzata basata sui Principi Filament
 
 ## Introduzione

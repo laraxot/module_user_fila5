@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Struttura del Logout Blade nel Theme One"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Struttura del Logout Blade nel Theme One
 
 ## Posizione Corretta
@@ -136,12 +133,6 @@ class LogoutPage
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Documentazione Volt](./volt-logout-2.md)
 - [Best Practices Routing](./routing-best-practices-2.md)
 - [Struttura Directory](./directory-structure-checklist.md) 
-=======
-- [Documentazione Volt](./volt_logout.md)
-- [Best Practices Routing](./routing_best_practices.md)
-- [Struttura Directory](./directory_structure_checklist.md) 
->>>>>>> 350420cb (Check & fix styling)

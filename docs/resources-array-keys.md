@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Resources Array Keys Philosophy: String Keys Always"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Resources Array Keys Philosophy: String Keys Always
 
 ## Data: [DATE]

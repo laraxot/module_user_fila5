@@ -181,11 +181,7 @@ if (app()->environment('local') && empty($licenseKey)) {
 - [ ] Banner rosso rimosso
 - [ ] Funzionalità premium attive
 
-<<<<<<< HEAD
 ## 🚀 SaluteOra Specifico
-=======
-## 🚀 Quaeris Specifico
->>>>>>> 350420cb (Check & fix styling)
 
 ### Business Hours Sanitarie
 ```javascript
@@ -214,8 +210,4 @@ $plugin->config([
 selectConstraint: 'businessHours',
 eventConstraint: 'businessHours',
 slotDuration: '00:30:00', // 30 min slots
-<<<<<<< HEAD
 ``` 
-=======
-``` 
->>>>>>> 350420cb (Check & fix styling)

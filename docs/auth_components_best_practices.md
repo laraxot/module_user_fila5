@@ -4,12 +4,6 @@
 - [README modulo User](./README.md)
 - [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
-<<<<<<< HEAD
-=======
-- [README modulo User](./readme.md)
-- [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
-- [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -189,19 +183,11 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 
 1. Che tutte le chiavi di traduzione siano definite in tutti i file di lingua supportati
 2. Che i componenti funzionino correttamente con la localizzazione delle URL
-<<<<<<< HEAD
 3. Che i componenti rispettino le best practices di SaluteOra per le chiavi di traduzione
-=======
-3. Che i componenti rispettino le best practices di Quaeris per le chiavi di traduzione
->>>>>>> 350420cb (Check & fix styling)
 
 ## Riferimenti
 
 - [Documentazione Laravel Authentication](https://laravel.com/docs/10.x/authentication)
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
 - [Documentazione Livewire](https://livewire.laravel.com/)
-<<<<<<< HEAD
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
-=======
-- [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
->>>>>>> 350420cb (Check & fix styling)

@@ -31,11 +31,8 @@ class UpdateUserAction
         $logger = \app(LoggerInterface::class);
         $hasher = \app(Hasher::class);
         $safeStringCast = \app(SafeStringCastAction::class);
-<<<<<<< HEAD
         $validationException = \app(ValidationException::class);
 
-=======
->>>>>>> 350420cb (Check & fix styling)
         try {
             $dbManager->beginTransaction();
 
@@ -43,11 +40,7 @@ class UpdateUserAction
             $updateData = $this->prepareUpdateData($data, $hasher, $safeStringCast);
 
             // Valida i dati specifici per l'aggiornamento
-<<<<<<< HEAD
             $this->validateUpdateData($user, $updateData, $validationException);
-=======
-            $this->validateUpdateData($user, $updateData);
->>>>>>> 350420cb (Check & fix styling)
 
             // Aggiorna l'utente
             $user->fill($updateData);
@@ -129,11 +122,7 @@ class UpdateUserAction
      *
      * @throws ValidationException
      */
-<<<<<<< HEAD
     protected function validateUpdateData(Model $user, array $data, ValidationException $validationException): void
-=======
-    protected function validateUpdateData(Model $user, array $data): void
->>>>>>> 350420cb (Check & fix styling)
     {
         // Validazione email univoca
         if (isset($data['email'])) {
@@ -144,11 +133,7 @@ class UpdateUserAction
                 ->first();
 
             if ($existingUser) {
-<<<<<<< HEAD
                 throw $validationException->withMessages(['email' => __('user::validation.email_already_taken')]);
-=======
-                throw ValidationException::withMessages(['email' => __('user::validation.email_already_taken')]);
->>>>>>> 350420cb (Check & fix styling)
             }
         }
 

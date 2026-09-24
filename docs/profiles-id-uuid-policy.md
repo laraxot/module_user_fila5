@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Profiles Id/Uuid Policy"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Profiles Id/Uuid Policy
 
 ## Contract

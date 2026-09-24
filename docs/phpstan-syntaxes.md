@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "PHPStan Syntax Fixes - Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # PHPStan Syntax Fixes - Modulo User
 
 **Versione PHPStan**: 1.12.x  

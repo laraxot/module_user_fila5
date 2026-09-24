@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Struttura Navigazione"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Struttura Navigazione
 
 ## Overview
@@ -162,12 +159,6 @@ Event::dispatch('user.action', [
    - Input validation
 
 ## Collegamenti Correlati
-<<<<<<< HEAD
 - [Header Components](./header-components.md)
 - [Security Best Practices](./security_best_practices.md)
 - [Session Management](./session-management-2.md) 
-=======
-- [Header Components](./header_components.md)
-- [Security Best Practices](./security_best_practices.md)
-- [Session Management](./session_management.md) 
->>>>>>> 350420cb (Check & fix styling)

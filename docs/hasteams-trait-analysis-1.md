@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "HasTeams Trait Analysis"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # HasTeams Trait Analysis
 
 ## Overview

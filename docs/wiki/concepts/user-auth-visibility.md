@@ -1,7 +1,6 @@
 ---
 name: user-auth-visibility
 description: User list visibility rules for admin sections
-<<<<<<< HEAD
 related:
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
@@ -11,8 +10,6 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Admin – User List Visibility

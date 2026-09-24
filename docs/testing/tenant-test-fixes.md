@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "TenantTest Fixes - Reasoning"
 type: concept
@@ -15,8 +14,6 @@ related:
   - "./tenanttest-fixes.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # TenantTest Fixes - Reasoning
 
 ## Problem Analysis

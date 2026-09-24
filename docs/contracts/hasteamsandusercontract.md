@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "HasTeamsAndUserContract"
 type: concept
@@ -12,8 +11,6 @@ related:
   - "./teamcontract.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # HasTeamsAndUserContract
 
 L'interfaccia `HasTeamsAndUserContract` estende sia `HasTeamsContract` che `UserContract`, fornendo un'unica interfaccia che combina le funzionalità di entrambe.

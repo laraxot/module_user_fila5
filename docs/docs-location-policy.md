@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Documentazione: Policy Posizione Docs (Modulo User)"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Documentazione: Policy Posizione Docs (Modulo User)
 
 ## Regola

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "PHPStan widget property types"
 type: concept
@@ -18,8 +17,6 @@ related:
   - "./spatie-permission-team-model-not-configured.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # PHPStan widget property types
 
 ## Contesto
@@ -52,17 +49,7 @@ protected string $view = 'pub_theme::filament.widgets.registration';
 
 Il primo caso viola `property.defaultValue`, il secondo puo' violare `view-string` quando PHPStan non puo' provare che la stringa sia una vista registrata.
 
-<<<<<<< HEAD
 ## Verifiche
-=======
-## Verifiche (2026-07-13)
-
-- `php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules` → **0 errori** (6740 file, cache cleared)
-- Batch widget: `EnvWidget` — aggiungere `/** @var array<string, mixed> */ public array $data = []` per `statePath('data')` (non estende `XotBaseWidget`)
-- Batch widget: `RegistrationWidget` — proprietà `string $type`, `$resource`, `$model`, `$action`; niente `@var` incompatibile con tipo nativo; `array_merge($this->data, $data)` senza `??` su `$data` non nullable
-
-## Verifiche (storico)
->>>>>>> 350420cb (Check & fix styling)
 
 - `php -l` sui tre file modificati.
 - `./vendor/bin/phpstan analyse` sui tre file modificati: nessun errore.

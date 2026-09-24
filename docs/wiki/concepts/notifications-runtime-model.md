@@ -3,7 +3,6 @@ title: "notifications — modello runtime User"
 type: concept
 tags: [user, notifications, database-notification, notification-schema]
 created: 2026-06-10
-<<<<<<< HEAD
 updated: 2026-06-10
 qmd: notifications runtime user databasenotification NotificationSchema unread
 issues: []
@@ -17,14 +16,6 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-=======
-updated: 2026-07-12
-qmd: notifications runtime user databasenotification IsNotificationSchemaReadableAction unread
-issues:
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/372"
-discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # notifications — modello runtime User
@@ -45,13 +36,7 @@ discussions:
 
 ## Guard schema FO
 
-<<<<<<< HEAD
 `Modules\User\Support\NotificationSchema::isReadable()` verifica `Schema::connection(...)->hasTable('notifications')` prima di query nel header.
-=======
-`IsNotificationSchemaReadableAction` (`Modules\User\Actions\Notification`) verifica `Schema::connection(...)->hasTable('notifications')` prima di query nel header.
-
-Uso FO: `app(IsNotificationSchemaReadableAction::class)->execute()`.
->>>>>>> 350420cb (Check & fix styling)
 
 Usare quando il DB legacy potrebbe non aver ancora migrato — evita 500 su `unreadNotifications()->count()`.
 

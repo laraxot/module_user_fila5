@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Studio: Laravel Socialite + Filament Integration"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Studio: Laravel Socialite + Filament Integration
 
 ## Riferimenti Documentazione

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi Qualità - Modulo User"
 type: concept
@@ -12,8 +11,6 @@ related:
   - "./user-module-quality.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Analisi Qualità - Modulo User
 
 **Data Analisi**: 2025-01-22
@@ -53,11 +50,7 @@ related:
 #### OtherDeviceLogoutListener - N+1 Updates
 **File**: `Listeners/OtherDeviceLogoutListener.php:42`
 **Problema**: Loop con update individuali (50+ query)
-<<<<<<< HEAD
 **Soluzione**: Bulk update (già documentata in `code-quality-analysis.md`)
-=======
-**Soluzione**: Bulk update (già documentata in `code_quality_analysis.md`)
->>>>>>> 350420cb (Check & fix styling)
 
 ### 2. Code Duplication (MEDIUM Priority)
 
@@ -93,15 +86,9 @@ related:
 
 ## 🔗 Collegamenti
 
-<<<<<<< HEAD
 - [Code Quality Analysis](./code-quality-analysis.md)
 - [Optimization Analysis](./optimization-analysis.md)
 - [Business Logic Deep Dive](./business-logic-deep-dive.md)
-=======
-- [Code Quality Analysis](./code_quality_analysis.md)
-- [Optimization Analysis](./optimization-analysis.md)
-- [Business Logic Deep Dive](./business_logic_deep_dive.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Xot Quality Analysis](../xot/docs/quality-analysis/current-status.md)
 
 ## 📝 Note

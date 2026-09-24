@@ -6,21 +6,14 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
-=======
-use Illuminate\Support\Carbon;
->>>>>>> 350420cb (Check & fix styling)
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
 use Spatie\Permission\Models\Permission as SpatiePermission;
-<<<<<<< HEAD
 use Webmozart\Assert\Assert;
-=======
->>>>>>> 350420cb (Check & fix styling)
 
 /**
  * @property int $id
@@ -54,7 +47,6 @@ use Webmozart\Assert\Assert;
  * @method static static firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  * @method static static updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  *
-<<<<<<< HEAD
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
@@ -67,27 +59,14 @@ use Webmozart\Assert\Assert;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission team($teams, bool $without = false)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Permission withoutTeam($teams)
  *
-=======
- * @property \Modules\Xot\Contracts\ProfileContract|null $creator
- * @property \Modules\Xot\Contracts\ProfileContract|null $deleter
- * @property \Modules\Xot\Contracts\ProfileContract|null $updater
- *
- * @method static \Modules\User\Database\Factories\PermissionFactory factory($count = null, $state = [])
- *
->>>>>>> 350420cb (Check & fix styling)
  * @mixin \Eloquent
  */
 class Permission extends SpatiePermission
 {
-<<<<<<< HEAD
-=======
-    /** @use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
->>>>>>> 350420cb (Check & fix styling)
     use HasXotFactory;
     use RelationX;
     use Updater;
 
-<<<<<<< HEAD
     protected $connection = 'user';
 
     public function getTable(): string
@@ -96,13 +75,6 @@ class Permission extends SpatiePermission
 
         return $table;
     }
-=======
-    /** @var string */
-    protected $connection = 'user';
-
-    /** @var string */
-    protected $table = 'permissions';
->>>>>>> 350420cb (Check & fix styling)
 
     /** @var list<string> */
     protected $fillable = [

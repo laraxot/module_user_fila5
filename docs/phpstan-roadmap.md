@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PHPStan Roadmap: User Module
 
 **Date**: 2026-01-12
@@ -34,8 +33,6 @@
 1. Fix PHPDoc Namespace issues (Role, HasTeams).
 2. Fix API Resource properties.
 3. Fix Filament Resource typing.
-=======
->>>>>>> 350420cb (Check & fix styling)
 # PHPStan Roadmap - User Module
 
 > **Date**: 2026-01-14
@@ -59,7 +56,6 @@ The **User** module is fully compliant with PHPStan Level 10. No errors were rep
 ## Future Goals
 - Clean up legacy documentation files to reduce clutter.
 - Maintain 0 errors.
-<<<<<<< HEAD
 ---
 module: theme
 topic: phpstan-roadmap
@@ -76,5 +72,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-roadmap-Modules.md
-=======
->>>>>>> 350420cb (Check & fix styling)

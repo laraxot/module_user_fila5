@@ -1,18 +1,9 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 /**
  * ---.
  */
-=======
-/**
- * ---.
- */
-
-declare(strict_types=1);
-
->>>>>>> 350420cb (Check & fix styling)
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
@@ -36,11 +27,7 @@ return new class extends XotBaseMigration
         $this->tableUpdate(function (Blueprint $table): void {
             // MySqlConnection::getDoctrineSchemaManager does not exist.
             // MySqlConnection::getSchemaGrammar() ?
-<<<<<<< HEAD
             // if ($this->hasIndexName('team_invitations_team_id_foreign')) {
-=======
-            // if ($hasIndexName('team_invitations_team_id_foreign'))
->>>>>>> 350420cb (Check & fix styling)
             //    $table->dropForeign('team_invitations_team_id_foreign');
             // }
             if ($this->hasColumn('uuid')) {

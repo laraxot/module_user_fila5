@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)
 /**
  * inspired by  DutchCodingCompany\FilamentSocialite.
  */
@@ -16,19 +12,9 @@ use Modules\Tenant\Models\Traits\SushiToPhpArray;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
-<<<<<<< .merge_file_qBr3F6
- * @property int|null                  $id
- * @property string|null               $name
-<<<<<<< HEAD
- * @property array<int, string>|null   $scopes
-=======
- * @property array<string, mixed>|null $scopes
->>>>>>> 350420cb (Check & fix styling)
-=======
  * @property int|null $id
  * @property string|null $name
  * @property array<int, string>|null $scopes
->>>>>>> .merge_file_OXRyR9
  * @property array<string, mixed>|null $parameters
  * @property bool|null $stateless
  * @property bool|null $active
@@ -73,10 +59,6 @@ class SocialProvider extends BaseModel
 {
     use SushiToPhpArray;
 
-<<<<<<< HEAD
-=======
-    /** @var bool */
->>>>>>> 350420cb (Check & fix styling)
     public $incrementing = false;
 
     /** @var list<string> */
@@ -129,7 +111,6 @@ class SocialProvider extends BaseModel
         'updated_by' => 'string',
     ];
 
-<<<<<<< HEAD
     /**
      * @return array<int, array<string, mixed>>
      */
@@ -139,12 +120,6 @@ class SocialProvider extends BaseModel
         $rows = $this->getSushiRows();
 
         return $rows;
-=======
-    /** @return array<int, array<string, mixed>> */
-    public function getRows(): array
-    {
-        return $this->getSushiRows();
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /** @return array<string, string> */

@@ -2,22 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return [
-=======
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/it/user-resource.php
-return [
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
-    // User — translation section (claude-audit doc ratio).
->>>>>>> 350420cb (Check & fix styling)
     'fields' => [
         'name' => [
             'label' => 'Nome',
@@ -174,20 +159,4 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-=======
-    'navigation' => [
-        'name' => 'User Resource',
-        'plural' => 'User Resource',
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'User Resource',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
-    ],
-    'label' => 'User Resource',
-    'plural_label' => 'User Resource (Plurale)',
->>>>>>> 350420cb (Check & fix styling)
 ];

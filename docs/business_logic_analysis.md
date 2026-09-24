@@ -472,7 +472,6 @@ class ApiRateLimitingMiddleware
 - Permission errors (minimize)
 - User satisfaction scores
 - Security incident reduction
-<<<<<<< HEAD
 - Team collaboration effectiveness
 
 ---
@@ -954,6 +953,3 @@ class ApiRateLimitingMiddleware
 - User satisfaction scores
 - Security incident reduction
 - Team collaboration effectiveness
-=======
-- Team collaboration effectiveness
->>>>>>> 350420cb (Check & fix styling)

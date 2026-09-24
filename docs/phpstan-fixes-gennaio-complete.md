@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "PHPStan Fixes Complete - Gennaio 2025"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # PHPStan Fixes Complete - Gennaio 2025
 
 ## Riepilogo

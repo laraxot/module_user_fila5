@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # UserFactory Advanced Integration - Modulo User & SaluteOra
-=======
-# UserFactory Advanced Integration - Modulo User & Quaeris
->>>>>>> 350420cb (Check & fix styling)
 
 ## Post Deep-Study Analysis 
 
@@ -13,11 +9,7 @@ Dopo uno studio approfondito dei modelli User, Patient, Doctor e Admin, l'integr
 ### Hierarchy Mapping
 ```
 BaseUser (User Module)
-<<<<<<< HEAD
 ├── User (SaluteOra) - STI Base + Business Logic  
-=======
-├── User (Quaeris) - STI Base + Business Logic
->>>>>>> 350420cb (Check & fix styling)
     ├── Patient (HasParent) - Healthcare Consumer
     ├── Doctor (HasParent) - Healthcare Provider  
     └── Admin (HasParent) - System Administrator
@@ -25,11 +17,7 @@ BaseUser (User Module)
 
 ### Cross-Module Compatibility Matrix
 
-<<<<<<< HEAD
 | BaseUser Field | SaluteOra User | Business Logic | Factory Support |
-=======
-| BaseUser Field | Quaeris User | Business Logic | Factory Support |
->>>>>>> 350420cb (Check & fix styling)
 |----------------|----------------|----------------|-----------------|
 | `name` | `name` | Full name concat | ✅ Complete |
 | `email` | `email` | Authentication | ✅ Complete |
@@ -96,11 +84,7 @@ User::factory()->gdprCompliant()->create();
 // BaseUser (User Module) 
 protected $connection = 'user';
 
-<<<<<<< HEAD
 // SaluteOra User (Healthcare Domain)
-=======
-// Quaeris User (Healthcare Domain)
->>>>>>> 350420cb (Check & fix styling)
 protected $connection = 'salute_ora';
 
 // Factory automatically handles connection switching
@@ -131,11 +115,7 @@ public function test_cross_module_compatibility()
     expect($user)->toHaveProperty('password'); 
     expect($user->email_verified_at)->toBeInstanceOf(Carbon::class);
     
-<<<<<<< HEAD
     // SaluteOra domain contracts
-=======
-// Quaeris domain contracts
->>>>>>> 350420cb (Check & fix styling)
     expect($user->type)->toBeInstanceOf(UserTypeEnum::class);
     expect($user->state)->toBeInstanceOf(UserState::class);
 }
@@ -281,11 +261,7 @@ public function run(): void
 - **Reusability**: Base authentication contracts preserved
 - **Testability**: Comprehensive user scenario testing
 
-<<<<<<< HEAD
 ### For SaluteOra Module  
-=======
-### For Quaeris Module
->>>>>>> 350420cb (Check & fix styling)
 - **Domain Focus**: Healthcare-specific data generation
 - **Business Logic**: Real-world scenario testing
 - **Compliance**: GDPR and healthcare regulation support
@@ -304,17 +280,10 @@ public function run(): void
 
 ## Link Documentazione
 
-<<<<<<< HEAD
 ### SaluteOra Module
 - [Advanced Improvements Analysis](../../SaluteOra/docs/factories/UserFactory-advanced-improvements-analysis.md)
 - [Implementation Completed](../../SaluteOra/docs/factories/userfactory_implementation_completed.md)
 - [Model States](../../SaluteOra/docs/models/states.md)
-=======
-### Quaeris Module
-- [Advanced Improvements Analysis](../../Quaeris/docs/factories/userfactory-advanced-improvements-analysis.md)
-- [Implementation Completed](../../Quaeris/docs/factories/userfactory_implementation_completed.md)
-- [Model States](../../Quaeris/docs/models/states.md)
->>>>>>> 350420cb (Check & fix styling)
 
 ### User Module
 - [User Factory Integration](./user_factory_integration.md)
@@ -322,16 +291,5 @@ public function run(): void
 - [BaseUser Architecture](./parental_inheritance.md)
 
 ### Root Documentation  
-<<<<<<< HEAD
 - [UserFactory SaluteOra Integration](../../../../docs/userfactory_saluteora_integration.md)
 - [Testing Standards](../../../../docs/testing_standards.md) 
-=======
-- [UserFactory Quaeris Integration](../../../../../docs/userfactory_Quaeris_integration.md)
-- [UserFactory SaluteOra Integration](../../../../docs/userfactory_saluteora_integration.md)
-- [Testing Standards](../../../../../docs/testing_standards.md)
-
-### SaluteOra Module (alternate links)
-- [Advanced Improvements Analysis](../../SaluteOra/docs/factories/UserFactory-advanced-improvements-analysis.md)
-- [Implementation Completed](../../SaluteOra/docs/factories/userfactory_implementation_completed.md)
-- [Model States](../../SaluteOra/docs/models/states.md)
->>>>>>> 350420cb (Check & fix styling)

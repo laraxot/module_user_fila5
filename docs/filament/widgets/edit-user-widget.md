@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "EditUserWidget: Widget generico per la modifica dati utente"
 type: concept
@@ -15,8 +14,6 @@ related:
   - "./registration-widget.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # EditUserWidget: Widget generico per la modifica dati utente
 
 ## Scopo e filosofia

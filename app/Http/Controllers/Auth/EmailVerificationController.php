@@ -1,9 +1,6 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 350420cb (Check & fix styling)
 /**
  * Handles the email verification process for authenticated users.
  *
@@ -19,10 +16,6 @@ declare(strict_types=1);
  *
  * @throws AuthorizationException if the verification fails
  */
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
->>>>>>> 350420cb (Check & fix styling)
 
 namespace Modules\User\Http\Controllers\Auth;
 

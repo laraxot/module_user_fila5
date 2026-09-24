@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "PHPStan Compliance - User Module"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # PHPStan Compliance - User Module
 
 ## Status: ✅ FULLY COMPLIANT

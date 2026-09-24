@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)
 ?>
 <x-filament-widgets::widget>
     <div class="text-center mb-4">
@@ -18,19 +14,11 @@ declare(strict_types=1);
         <p class="mt-2 text-gray-600">{{ __('user::password_expired.sub_heading') }}</p>
     </div>
     
-<<<<<<< HEAD
     <form wire:submit="resetPassword">
-=======
-    <x-filament-schemas::form wire:submit="resetPassword">
->>>>>>> 350420cb (Check & fix styling)
         {{ $this->form }}
         
         <x-filament::button type="submit" class="mt-4">
             @lang('user::password_expired.actions.reset_password.label') <x-filament::loading-indicator class="h-5 w-5" wire:loading wire:target="submit"/>
         </x-filament::button>
-<<<<<<< HEAD
     </form>
-=======
-    </x-filament-schemas::form>
->>>>>>> 350420cb (Check & fix styling)
 </x-filament-widgets::widget>

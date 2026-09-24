@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Gestione dei Permessi"
 type: concept
@@ -14,8 +13,6 @@ related:
   - "../../../Themes/TwentyOne/docs/wiki/concepts/authorization-boundary.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Gestione dei Permessi
 
 ## Scopo e ownership

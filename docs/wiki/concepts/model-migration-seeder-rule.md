@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Regola: 1 Modello = 1 Migrazione + 1 Seeder"
 type: rule
@@ -19,8 +18,6 @@ related:
   - "./filament-widget-resource-form-delegation.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Regola: 1 Modello = 1 Migrazione + 1 Seeder
 
 ## Principio Base

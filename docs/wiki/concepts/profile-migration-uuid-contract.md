@@ -3,7 +3,6 @@ type: concept
 module: User
 confidence: high
 updated: 2026-06-05
-<<<<<<< HEAD
 related:
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
@@ -13,8 +12,6 @@ related:
   - "./filament-langserviceprovider-governance.md"
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Profile Migration UUID Contract
@@ -23,7 +20,6 @@ related:
 
 `BaseProfile` genera `uuid` in `creating`. Il contratto richiede colonna `uuid` nella tabella `profiles` del DB usato dal modello concreto.
 
-<<<<<<< HEAD
 ## Owner schema (workorder — connessione `user`)
 
 **Owner migrazione = modulo WorkOrder** (`main_module`):
@@ -43,22 +39,6 @@ Vedi [profile-id-bigint-uuid-fix](./profile-id-bigint-uuid-fix.md) per errore 13
 | `uuid` | char(36) unique | API, `byUuid()` |
 
 `tableUpdate()` chiama `convertIdFromUuidToBigintIfNeeded()` per DB legacy con `id` char(36).
-=======
-## Owner schema in Fixcity (questo progetto)
-
-Per connessione `fixcity`, **owner migrazione = modulo Fixcity** (non User):
-
-- `laravel/Modules/Fixcity/database/migrations/2026_06_10_123000_create_profiles_table.php`
-
-Le migrazioni `create_profiles_table` in User/Blog sono state archiviate in `_bak/*.merged` per rispettare 1 modello = 1 migrazione owner.
-
-Vedi [profiles-ownership-boundary-rule](./profiles-ownership-boundary-rule.md) e [Fixcity profiles-uuid-contract](../../../Fixcity/docs/wiki/concepts/profiles-uuid-contract.md).
-
-## One table = one migration
-
-- niente `add_*` / `repair_*` su `profiles`
-- evoluzione: edit file owner Fixcity + **bump timestamp** nel nome file
->>>>>>> 350420cb (Check & fix styling)
 
 ## Fix 2026-04-20
 
@@ -91,11 +71,7 @@ La prima domanda corretta e':
 ## Riferimenti
 
 - `laravel/Modules/User/app/Models/BaseProfile.php`
-<<<<<<< HEAD
 - `laravel/Modules/WorkOrder/database/migrations/2026_07_27_111500_create_profiles_table.php`
 - [profile-id-bigint-uuid-fix](./profile-id-bigint-uuid-fix.md)
-=======
-- `laravel/Modules/Fixcity/database/migrations/2026_06_10_123000_create_profiles_table.php`
->>>>>>> 350420cb (Check & fix styling)
 - [architecture-one-migration-per-model](../../../../../docs/wiki/bmad/architecture-one-migration-per-model.md)
 - `laravel/Modules/Xot/docs/database/migration-base-rules.md`

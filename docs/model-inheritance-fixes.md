@@ -165,11 +165,7 @@ Illuminate\Database\Eloquent\Relations\MorphPivot
 Per verificare che non ci siano più modelli che estendono direttamente `Model`:
 
 ```bash
-<<<<<<< HEAD
 cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
-=======
-cd Modules/User
->>>>>>> 350420cb (Check & fix styling)
 grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|BasePivot\|BaseMorphPivot"
 ```
 
@@ -178,11 +174,7 @@ grep -r "extends Model" app/Models/ --include="*.php" | grep -v "BaseModel\|Base
 Dopo le modifiche, eseguire:
 
 ```bash
-<<<<<<< HEAD
 cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
-=======
-cd Modules/User
->>>>>>> 350420cb (Check & fix styling)
 ./vendor/bin/phpstan analyse --memory-limit=2G
 ```
 
@@ -195,10 +187,7 @@ cd Modules/User
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
-=======
->>>>>>> 350420cb (Check & fix styling)
 - [Analisi Completa](./model_inheritance_analysis.md)
 - [Regole Qualità Codice](../../../.windsurf/rules/code-quality.md)
 - [BaseModel](../app/Models/BaseModel.php)

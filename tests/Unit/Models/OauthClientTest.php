@@ -43,13 +43,9 @@ describe('Oauth Client', function (): void {
     test('oauth client user relation uses xot data', function (): void {
         /** @var TestCase $this */
         $user = UserFactory::new()->createOne();
-<<<<<<< HEAD
         $userKey = $user->getKey();
         $userKeyString = (is_int($userKey) || is_string($userKey)) ? (string) $userKey : '';
         $client = TestCase::oauthClientTestPersistedClient(['user_id' => $userKeyString]);
-=======
-        $client = $this->oauthClientTestPersistedClient(['user_id' => (string) $user->getKey()]);
->>>>>>> 350420cb (Check & fix styling)
 
         Assert::assertNotNull($client->user);
         Assert::assertSame($user->getKey(), $client->user->getKey());
@@ -57,33 +53,21 @@ describe('Oauth Client', function (): void {
 
     test('oauth client is confidential when secret is present', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $client = TestCase::oauthClientTestPersistedClient(['secret' => 'hashed-secret']);
-=======
-        $client = $this->oauthClientTestPersistedClient(['secret' => 'hashed-secret']);
->>>>>>> 350420cb (Check & fix styling)
 
         Assert::assertTrue($client->confidential());
     });
 
     test('oauth client is not confidential when secret is empty', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $client = TestCase::oauthClientTestPersistedClient(['secret' => null]);
-=======
-        $client = $this->oauthClientTestPersistedClient(['secret' => null]);
->>>>>>> 350420cb (Check & fix styling)
 
         Assert::assertFalse($client->confidential());
     });
 
     test('oauth client has grant type check', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $client = TestCase::oauthClientTestPersistedClient([
-=======
-        $client = $this->oauthClientTestPersistedClient([
->>>>>>> 350420cb (Check & fix styling)
             'grant_types' => json_encode(['authorization_code', 'refresh_token']),
         ]);
 
@@ -93,11 +77,7 @@ describe('Oauth Client', function (): void {
 
     test('oauth client has scope check', function (): void {
         /** @var TestCase $this */
-<<<<<<< HEAD
         $client = TestCase::oauthClientTestPersistedClient();
-=======
-        $client = $this->oauthClientTestPersistedClient();
->>>>>>> 350420cb (Check & fix styling)
 
         Assert::assertTrue($client->hasScope('read'));
     });

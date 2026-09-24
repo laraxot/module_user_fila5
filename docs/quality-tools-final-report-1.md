@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Quality Tools Final Report - 2025-01-22"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Quality Tools Final Report - 2025-01-22
 
 ## Obiettivo
@@ -176,13 +173,8 @@ $user_class = XotData::make()->getUserClass();
 
 - [XotBaseResource getPages() Automatic](./xotbase-resource-getpages-automatic.md)
 - [Resources Array Keys Philosophy](./resources-array-keys-philosophy.md)
-<<<<<<< HEAD
 - [Resources Corrections Summary](./resources-corrections-summary.md)
 - [PHPMD PHP Insights Corrections](./phpmd-phpinsights-corrections.md)
-=======
-- [Resources Corrections Summary](./resources-corrections-summary-2025-01-22.md)
-- [PHPMD PHP Insights Corrections](./phpmd-phpinsights-corrections-2025-01-22.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Quality Tools Report](./quality-tools-report.md)
 - [PHPStan Complete Success](./phpstan-complete-success.md)
 

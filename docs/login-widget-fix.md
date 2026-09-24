@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "LoginWidget Form Data Binding Fix"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # LoginWidget Form Data Binding Fix
 
 ## Problema
@@ -187,7 +184,3 @@ Tutti i widget Filament che estendono `XotBaseWidget` e usano `statePath('data')
 - [x] Documentazione aggiornata
 
 ---
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)

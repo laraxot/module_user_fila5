@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Correzione Violazione DRY: safeStringCast"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Correzione Violazione DRY: safeStringCast
 
 ## Problema Identificato

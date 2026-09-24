@@ -22,10 +22,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Modules\User\Filament\Resources\PermissionResource;
-<<<<<<< HEAD
 use Modules\User\Models\Permission;
-=======
->>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Models\Role;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Webmozart\Assert\Assert;
@@ -89,7 +86,6 @@ class ListPermissions extends XotBaseListRecords
         return [
             'delete' => DeleteBulkAction::make(),
             'attach_role' => BulkAction::make('Attach Role')
-<<<<<<< HEAD
                 ->action(static function (Collection $collection, array $data): void {
                     foreach ($collection as $record) {
                         // Verifichiamo che $record sia un'istanza di Model prima di procedere
@@ -108,29 +104,15 @@ class ListPermissions extends XotBaseListRecords
                             }
                         }
                     }
-=======
-                ->action(function (Collection $collection, array $data): void {
-                    /** @var array<string, mixed> $safeData */
-                    $safeData = $data;
-                    $this->syncRolesOnPermissions($collection, $safeData);
->>>>>>> 350420cb (Check & fix styling)
                 })
                 ->schema([
                     Select::make('role')->options(function () use ($roleModel): array {
                         /** @var Builder<Role> $query */
                         $query = $roleModel::query();
-<<<<<<< HEAD
 
                         return $query->pluck('name', 'id')
                             ->mapWithKeys(static fn (mixed $name, int|string $id): array => is_string($name) || is_int($name) ? [(string) $id => (string) $name] : [])
                             ->all();
-=======
-                        /** @var \Illuminate\Support\Collection<string|int, string> $collection */
-                        $collection = $query->pluck('name', 'id');
-
-                        /* @var array<string|int, string> $options */
-                        return $collection->toArray();
->>>>>>> 350420cb (Check & fix styling)
                     })->required(),
                 ])
                 ->deselectRecordsAfterCompletion(),
@@ -138,34 +120,6 @@ class ListPermissions extends XotBaseListRecords
     }
 
     /**
-<<<<<<< HEAD
-=======
-     * @param Collection<int, \Illuminate\Database\Eloquent\Model> $collection
-     * @param array<string, mixed>                                 $data
-     */
-    protected function syncRolesOnPermissions(Collection $collection, array $data): void
-    {
-        foreach ($collection as $record) {
-            if (! method_exists($record, 'roles')) {
-                continue;
-            }
-
-            /** @var BelongsToMany<Role, \Modules\User\Models\Permission, \Illuminate\Database\Eloquent\Relations\Pivot, 'pivot'> $rolesRelation */
-            $rolesRelation = $record->roles();
-            $roleData = $data['role'] ?? null;
-
-            if (! is_array($roleData) && ! is_int($roleData) && ! is_string($roleData)) {
-                continue;
-            }
-
-            $syncData = is_array($roleData) ? $roleData : [$roleData];
-            $rolesRelation->sync($syncData);
-            $record->save();
-        }
-    }
-
-    /**
->>>>>>> 350420cb (Check & fix styling)
      * @return array<string, Action>
      */
     #[\Override]

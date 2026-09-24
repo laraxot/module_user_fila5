@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "👤 User — English presentation"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # 👤 User — English presentation
 
 [![Domain-Auth](https://img.shields.io/badge/Domain-Auth%20%26%20Teams-1565C0.svg)](#)

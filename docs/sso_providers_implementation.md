@@ -86,11 +86,8 @@ ALTER TABLE users ADD CONSTRAINT fk_sso_provider
   "client_id": "your-client-id",
   "client_secret": "your-client-secret",
   "scopes": "openid email profile",
-<<<<<<< HEAD
   "redirect_url": "https://app.<nome progetto>.it/auth/callback/google"
 
-=======
->>>>>>> 350420cb (Check & fix styling)
   "redirect_url": "https://app.fixcity.it/auth/callback/google"
 }
 ```
@@ -102,13 +99,10 @@ ALTER TABLE users ADD CONSTRAINT fk_sso_provider
 ```json
 {
   "type": "saml",
-<<<<<<< HEAD
   "entity_id": "https://app.<nome progetto>.it",
   "metadata_url": "https://idp.provider.it/metadata.xml",
   "redirect_url": "https://app.<nome progetto>.it/auth/callback/spid"
 
-=======
->>>>>>> 350420cb (Check & fix styling)
   "entity_id": "https://app.fixcity.it",
   "metadata_url": "https://idp.provider.it/metadata.xml",
   "redirect_url": "https://app.fixcity.it/auth/callback/spid"
@@ -122,11 +116,8 @@ ALTER TABLE users ADD CONSTRAINT fk_sso_provider
 ```json
 {
   "type": "oidc",
-<<<<<<< HEAD
   "client_id": "<nome progetto>-app",
 
-=======
->>>>>>> 350420cb (Check & fix styling)
   "client_id": "fixcity-app",
   "discovery_url": "https://auth.provider.it/.well-known/openid-configuration",
   "scopes": "openid email profile roles"
@@ -144,11 +135,8 @@ $spidProvider = SsoProvider::create([
     'name' => 'spid',
     'display_name' => 'SPID',
     'type' => 'saml',
-<<<<<<< HEAD
     'entity_id' => 'https://app.<nome progetto>.it',
 
-=======
->>>>>>> 350420cb (Check & fix styling)
     'entity_id' => 'https://app.fixcity.it',
     'metadata_url' => 'https://registry.spid.gov.it/metadata/idp/spid-idp-metadata.xml',
     'redirect_url' => route('auth.spid.callback'),
@@ -194,11 +182,7 @@ $activeProviders = SsoProvider::where('is_active', true)->get();
 ### Autenticare Utente via SSO
 
 ```php
-<<<<<<< HEAD
 use Modules\Xot\Contracts\UserContract;
-=======
-use Modules\User\Models\User;
->>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Models\SsoProvider;
 
 $provider = SsoProvider::where('name', 'spid')->firstOrFail();
@@ -329,7 +313,6 @@ test('can login user via SSO', function () {
 **Data**: 2025-10-15
 **Versione**: 1.0.0
 **Laravel**: 12.34.0
-<<<<<<< HEAD
 
 
 ---
@@ -339,5 +322,3 @@ test('can login user via SSO', function () {
 # Documento unificato
 
 Questo file era un duplicato esatto che differiva solo per maiuscole/minuscole, in violazione della regola no-case-only-variations. Il contenuto canonico si trova in [sso_providers_implementation.md](./sso_providers_implementation.md).
-=======
->>>>>>> 350420cb (Check & fix styling)

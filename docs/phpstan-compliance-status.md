@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "PHPStan Level 10 Compliance Status"
 type: concept
@@ -19,20 +18,12 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # PHPStan Level 10 Compliance Status
 
 **Last Updated**: 2026-07-06
 **Status**: ✅ `Modules/User` fully compliant including `tests/` (0 errors, level max).
 
-<<<<<<< HEAD
 Baseline STORY-288: 234 → 0. Pattern: social-providers env in ServiceProvider, Contracts Model generics, AuthenticationLogQuery typed.
-=======
-Baseline STORY-288: 234 → 0. Pattern: social-providers env in ServiceProvider, Contracts Model generics, `GetAuthenticationLogQueryForAuthenticatableAction` typed.
-
-Previous status (2026-03-10): ✅ FULLY COMPLIANT (0 errors), after a Passport/OAuth recovery batch (see below).
->>>>>>> 350420cb (Check & fix styling)
 
 Baseline sessione 2026-07-06: 48 → 0 (chiude il debito Pest residuo). Fix principali: `Role`/`Permission::factory()->create()` sostituiti con `RoleFactory::new()->createOne()`/`PermissionFactory::new()->createOne()` (tipizzati, `::factory()` restituiva `mixed`); nullable narrowing con `\assert($user instanceof User)` dopo `expect(...)->not->toBeNull()`; `UserMigrationSyntaxTest.php` e `RegisterWidgetTest.php` mancavano `uses(TestCase::class)`/chiamavano `$this->assertDatabaseHas()` (protetto) invece del wrapper pubblico `assertDatabaseHasRow()` di `XotBaseTestCase`; `UserContract::membershipTeams()` disallineato (generics non covarianti, `$this` al posto di `Model` nel secondo parametro di `BelongsToMany`) rispetto a `HasTeams::teams()`.
 

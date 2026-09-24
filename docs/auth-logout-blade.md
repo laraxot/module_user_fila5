@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Implementazione Corretta di logout.blade.php"
 type: concept
@@ -37,17 +36,6 @@ related:
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Struttura moduli](../../../docs/architecture/modules-structure.md)
 - [Logout Page Fix](./LOGOUT_PAGE_FIX.md)
-=======
-# Implementazione Corretta di logout.blade.php
-
-## Collegamenti correlati
-- [Documentazione centrale](../../../../docs/readme.md)
-- [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Struttura moduli](../../../../docs/architecture/modules-structure.md)
-- [Logout Page Fix](./logout_page_fix.md)
->>>>>>> 350420cb (Check & fix styling)
 
 ## Posizione Corretta
 Il file `logout.blade.php` deve essere posizionato in:

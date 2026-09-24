@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Refactor Completo Campi "Città" - Modulo User"
 type: concept
@@ -22,8 +21,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Refactor Completo Campi "Città" - Modulo User
 
 ## Riepilogo Intervento

@@ -9,10 +9,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\Pivot;
-=======
->>>>>>> 350420cb (Check & fix styling)
 use Modules\User\Contracts\TenantContract;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
@@ -41,15 +38,8 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
     use HasSlug;
     use InteractsWithMedia;
 
-<<<<<<< HEAD
     public $incrementing = false;
 
-=======
-    /** @var bool */
-    public $incrementing = false;
-
-    /** @var string */
->>>>>>> 350420cb (Check & fix styling)
     protected $keyType = 'string';
 
     /** @var list<string> */
@@ -76,11 +66,7 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
     /**
      * Ottiene tutti i membri associati al tenant.
      *
-<<<<<<< HEAD
      * @return BelongsToMany<Model, $this, Pivot, 'pivot'>
-=======
-     * @return BelongsToMany<Model, $this>
->>>>>>> 350420cb (Check & fix styling)
      */
     public function members(): BelongsToMany
     {
@@ -93,11 +79,7 @@ abstract class BaseTenant extends BaseModel implements HasAvatar, HasMedia, Tena
     /**
      * Ottiene tutti gli utenti associati al tenant.
      *
-<<<<<<< HEAD
      * @return BelongsToMany<Model, $this, Pivot, 'pivot'>
-=======
-     * @return BelongsToMany<Model, $this>
->>>>>>> 350420cb (Check & fix styling)
      */
     public function users(): BelongsToMany
     {

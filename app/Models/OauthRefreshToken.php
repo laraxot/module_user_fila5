@@ -11,12 +11,7 @@ use Laravel\Passport\RefreshToken as PassportRefreshToken;
  * @property string $access_token_id
  * @property bool $revoked
  * @property \DateTimeInterface|null $expires_at
-<<<<<<< .merge_file_I22XVm
-<<<<<<< HEAD
- * @property OauthToken|null         $accessToken
-=======
  * @property OauthToken|null $accessToken
->>>>>>> .merge_file_bTlbPJ
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthRefreshToken newQuery()
@@ -30,11 +25,5 @@ use Laravel\Passport\RefreshToken as PassportRefreshToken;
  */
 class OauthRefreshToken extends PassportRefreshToken
 {
-=======
- */
-class OauthRefreshToken extends PassportRefreshToken
-{
-    /** @var string */
->>>>>>> 350420cb (Check & fix styling)
     protected $connection = 'user';
 }

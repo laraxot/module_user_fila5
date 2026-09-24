@@ -113,7 +113,6 @@ class LogoutPage
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Documentazione Volt](./VOLT_LOGOUT.md)
 - [Best Practices Routing](./ROUTING_BEST_PRACTICES.md)
 - [Struttura Directory](./DIRECTORY_STRUCTURE_CHECKLIST.md) 
@@ -133,8 +132,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/logout-blade-structure.md
-=======
-- [Documentazione Volt](./volt_logout.md)
-- [Best Practices Routing](./routing_best_practices.md)
-- [Struttura Directory](./directory_structure_checklist.md) 
->>>>>>> 350420cb (Check & fix styling)

@@ -1,18 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 350420cb (Check & fix styling)
 /**
  * ----.
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 350420cb (Check & fix styling)
 namespace Modules\User\Providers;
 
 use Illuminate\Auth\Notifications\ResetPassword;
@@ -49,47 +41,16 @@ class UserServiceProvider extends XotBaseServiceProvider
     {
         parent::boot();
         $this->registerLivewireAuthWidgets();
-<<<<<<< HEAD
-=======
-        // $this->registerEventListener();
->>>>>>> 350420cb (Check & fix styling)
         $this->registerPasswordRules();
         $this->registerPulse();
         $this->registerMailsNotification();
         $this->registerPolicies();
     }
 
-<<<<<<< HEAD
-=======
-    /**
-     * Registra i widget Livewire auth per le viste Blade/Folio.
-     * In Livewire v4, resolveClassComponentClassName con namespace '::' cerca SOLO in classNamespaces
-     * (non in classComponents), quindi Livewire::component('user::...', class) non funziona.
-     * Usare addComponent($class) che usa hash-based naming, compatibile con @livewire(Class::class).
-     */
-    protected function registerLivewireAuthWidgets(): void
-    {
-        $widgets = [
-            LoginWidget::class,
-            SocialLoginWidget::class,
-            RegisterWidget::class,
-            ResetPasswordWidget::class,
-            PasswordResetWidget::class,
-            ForgotPasswordWidget::class,
-            PasswordResetConfirmWidget::class,
-        ];
-
-        foreach ($widgets as $class) {
-            Livewire::addComponent($class);
-        }
-    }
-
->>>>>>> 350420cb (Check & fix styling)
     #[\Override]
     public function register(): void
     {
         parent::register();
-<<<<<<< HEAD
         $this->mergeSocialProviderCredentialsFromEnv();
         // $this->registerTeamModelBindings();
     }
@@ -134,11 +95,6 @@ class UserServiceProvider extends XotBaseServiceProvider
         }
     }
 
-=======
-        // $this->registerTeamModelBindings();
-    }
-
->>>>>>> 350420cb (Check & fix styling)
     public function registerMailsNotification(): void
     {
         $app_name = config('app.name');
@@ -146,12 +102,8 @@ class UserServiceProvider extends XotBaseServiceProvider
             $app_name = '';
         }
 
-<<<<<<< HEAD
         // Vendor contract: toMailUsing callback receives mixed $notifiable.
         ResetPassword::toMailUsing(function (mixed $notifiable, string $token): SpatieEmail {
-=======
-        ResetPassword::toMailUsing(function ($notifiable, string $token): SpatieEmail {
->>>>>>> 350420cb (Check & fix styling)
             /*
              * return (new MailMessage)
              * ->template('user::notifications.email')
@@ -208,12 +160,8 @@ class UserServiceProvider extends XotBaseServiceProvider
          * ->salutation($salutation);
          * });
          */
-<<<<<<< HEAD
         // Vendor contract: toMailUsing callback receives mixed $notifiable.
         VerifyEmail::toMailUsing(function (mixed $notifiable, string $url): SpatieEmail {
-=======
-        VerifyEmail::toMailUsing(function ($notifiable, string $url): SpatieEmail {
->>>>>>> 350420cb (Check & fix styling)
             Assert::isInstanceOf($notifiable, Model::class);
             $email = new SpatieEmail($notifiable, 'verify-email');
             $email->mergeData([
@@ -255,7 +203,6 @@ class UserServiceProvider extends XotBaseServiceProvider
     }
 
     /**
-<<<<<<< HEAD
      * Registra i widget Livewire auth per le viste Blade/Folio.
      * In Livewire v4, resolveClassComponentClassName con namespace '::' cerca SOLO in classNamespaces
      * (non in classComponents), quindi Livewire::component('user::...', class) non funziona.
@@ -279,8 +226,6 @@ class UserServiceProvider extends XotBaseServiceProvider
     }
 
     /**
-=======
->>>>>>> 350420cb (Check & fix styling)
      * Register policies (excluding OAuth ones which are handled by PassportServiceProvider).
      */
     protected function registerPolicies(): void

@@ -2,13 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/it/oauth_personal_access_client.php
->>>>>>> 350420cb (Check & fix styling)
 return [
     'navigation' => [
         'label' => 'Personal Access Client',
@@ -79,13 +72,6 @@ return [
             'description' => 'Azione di logout',
             'icon' => 'heroicon-o-arrow-right-on-rectangle',
         ],
-<<<<<<< HEAD
-=======
-        'profile' => [
-            'tooltip' => 'profile',
-            'icon' => 'profile',
-        ],
->>>>>>> 350420cb (Check & fix styling)
     ],
     'messages' => [
         'created' => 'Personal Access Client creato con successo',

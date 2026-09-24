@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Task: Ottimizzare BaseUser Model - User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Task: Ottimizzare BaseUser Model - User
 
 **Modulo**: User

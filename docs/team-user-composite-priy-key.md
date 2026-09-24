@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Fix: team_user Composite Primary Key Implementation"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Fix: team_user Composite Primary Key Implementation
 
 ## Data Intervento

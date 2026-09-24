@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Datas;
 
-<<<<<<< HEAD
 use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
-=======
->>>>>>> 350420cb (Check & fix styling)
 use Spatie\LaravelData\Data;
 
 /**
@@ -41,13 +38,7 @@ class SocialProviderData extends Data
     public static function make(): self
     {
         if (! self::$instance) {
-<<<<<<< HEAD
             $data = app(GetTenantConfigArrayAction::class)->execute('social-providers');
-=======
-            /** @var array<string, mixed> $data */
-            $data = app(\Modules\Tenant\Actions\Config\GetTenantConfigArrayAction::class)->execute('social-providers');
-            dddx($data);
->>>>>>> 350420cb (Check & fix styling)
             self::$instance = self::from($data);
         }
 

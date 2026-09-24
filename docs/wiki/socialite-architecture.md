@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Socialite Authentication Architecture"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./overview.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Socialite Authentication Architecture
 
 ## Core Rule

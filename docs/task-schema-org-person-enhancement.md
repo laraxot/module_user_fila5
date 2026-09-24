@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Task: Schema.org Person Enhancement - [DATE]"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Task: Schema.org Person Enhancement - [DATE]
 
 **Module**: User  

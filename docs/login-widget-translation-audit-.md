@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "LoginWidget Translation Audit - Gennaio 2025"
 type: concept
@@ -22,8 +21,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo

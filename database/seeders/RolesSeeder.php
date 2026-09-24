@@ -8,11 +8,7 @@ use Illuminate\Console\Command;
 use Illuminate\Database\Seeder;
 use Modules\User\Models\Role;
 
-<<<<<<< HEAD
 final class RolesSeeder extends Seeder
-=======
-class RolesSeeder extends Seeder
->>>>>>> 350420cb (Check & fix styling)
 {
     /**
      * Table headers for output display.
@@ -30,7 +26,6 @@ class RolesSeeder extends Seeder
      */
     public function run(): void
     {
-<<<<<<< HEAD
         $roles = [
             ['name' => 'super-admin', 'guard_name' => 'web'],
             ['name' => 'admin', 'guard_name' => 'web'],
@@ -47,12 +42,6 @@ class RolesSeeder extends Seeder
 
         // Display results in a table format
         $this->displayResults($createdRoles);
-=======
-        $roles = [];
-
-        // Display results in a table format
-        $this->displayResults($roles);
->>>>>>> 350420cb (Check & fix styling)
     }
 
     /**
@@ -67,11 +56,7 @@ class RolesSeeder extends Seeder
         $command->table(
             self::$OUTPUT_TABLE_HEADERS,
             collect($roles)
-<<<<<<< HEAD
                 ->map(static fn (Role $role, int $index) => [
-=======
-                ->map(fn (Role $role, int $index) => [
->>>>>>> 350420cb (Check & fix styling)
                     $index + 1,
                     $role->name,
                     $role->guard_name,

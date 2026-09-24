@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "BaseUser"
 type: concept
@@ -17,8 +16,6 @@ related:
   - "./xotbasepivot-migration.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # BaseUser
 
 ## Descrizione

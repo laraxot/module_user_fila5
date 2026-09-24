@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Fasi di sviluppo - User Module"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./03-later.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Fasi di sviluppo - User Module
 
 ## Fase 1: Stability & Security (In Progress)

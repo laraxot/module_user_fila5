@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Popolamento Database - Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Popolamento Database - Modulo User
 
 ## Panoramica

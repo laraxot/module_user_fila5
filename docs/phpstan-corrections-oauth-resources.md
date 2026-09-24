@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "PHPStan Corrections - OAuth Resources"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # PHPStan Corrections - OAuth Resources
 
 **Data**: 2025-01-22
@@ -130,7 +127,3 @@ TextColumn::make('name')
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
 
 ---
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)

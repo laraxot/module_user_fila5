@@ -4,14 +4,11 @@ type: redundancy
 owner: Modules/User
 severity: medium
 created: 2026-05-21
-<<<<<<< HEAD
 related:
   - "./duplicated-auth-widgets.md"
   - "./duplicated-profile-form.md"
   - "./duplicated-users-relation-manager.md"
   - "./oauth-dual-resource-trees.md"
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Duplicated RatingsRelationManager

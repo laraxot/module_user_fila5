@@ -1,7 +1,6 @@
 ---
 module: theme
 topic: namespace-conventions-2
-<<<<<<< HEAD
 canonical: ../../../Themes/docs/shared-components/namespace-conventions-3.md
 related:
   - "./00-index-1.md"
@@ -15,9 +14,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/namespace-conventions-3.md
-=======
-canonical: ../../../Themes/docs/shared-components/namespace_conventions.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/namespace_conventions.md
->>>>>>> 350420cb (Check & fix styling)

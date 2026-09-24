@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Migration Execution Safety Rule"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Migration Execution Safety Rule
 
 For this repository, migration execution must be non-destructive.

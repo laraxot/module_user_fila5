@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "ChangePasswordCommand"
 type: concept
@@ -15,8 +14,6 @@ related:
   - "./readme.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # ChangePasswordCommand
 
 ## Panoramica
@@ -382,8 +379,3 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - ✅ **Interfaccia Console**: Input interattivo
 - ✅ **Gestione Password**: Hash e scadenza
 - ✅ **Eventi**: Dispatched NewPasswordSet
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 350420cb (Check & fix styling)

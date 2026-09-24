@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Registrazione dei Componenti Blade nel Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./user-gdpr-oupling.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Registrazione dei Componenti Blade nel Modulo User
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo User.

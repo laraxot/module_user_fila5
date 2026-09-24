@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Moderation Strategy"
 type: concept
@@ -23,12 +22,6 @@ related:
 
 ## Overview
 In the healthcare_app system, and across various projects utilizing the `User` module, users can have different roles or types, each potentially requiring specific verification or moderation processes before full access to platform functionalities is granted. This document analyzes the integration of a unified moderation strategy within the `User` module, ensuring it remains generic and applicable to all user types, mirroring the approach of a unified registration wizard.
-=======
-# User Moderation Strategy
-
-## Overview
-In the Quaeris system, and across various projects utilizing the `User` module, users can have different roles or types, each potentially requiring specific verification or moderation processes before full access to platform functionalities is granted. This document analyzes the integration of a unified moderation strategy within the `User` module, ensuring it remains generic and applicable to all user types, mirroring the approach of a unified registration wizard.
->>>>>>> 350420cb (Check & fix styling)
 
 ## Rationale for Moderation within User Module
 Given that the `User` module serves as the central hub for user management across multiple projects, it is logical to embed moderation functionalities within this module. This approach ensures:

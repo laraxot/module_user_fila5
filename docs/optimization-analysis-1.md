@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "user module documentation optimization analysis"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # user module documentation optimization analysis
 
 ## current state analysis
@@ -33,11 +30,7 @@ related:
 ## major problems identified
 
 ### 1. massive duplication
-<<<<<<< HEAD
 - authentication: `auth-login-implementation.md` + `auth-login-implementation.md`
-=======
-- authentication: `auth-login-implementation.md` + `auth_login_implementation.md`
->>>>>>> 350420cb (Check & fix styling)
 - logout: 18+ files covering same logout functionality
 - filament: multiple duplicate filament documentation files
 
@@ -88,17 +81,10 @@ docs/
 │   └── livewire_components.md
 ├── troubleshooting/
 │   ├── common_errors.md
-<<<<<<< HEAD
 │   ├── filament-errors.md
 │   └── phpstan_errors.md
 └── integrations/
     ├── spatie-permissions-2.md
-=======
-│   ├── filament_errors.md
-│   └── phpstan_errors.md
-└── integrations/
-    ├── spatie_permissions.md
->>>>>>> 350420cb (Check & fix styling)
     ├── socialite_integration.md
     └── passport_integration.md
 ```

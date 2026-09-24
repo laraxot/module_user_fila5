@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Filament Relation Managers nel Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Filament Relation Managers nel Modulo User
 
 ## Struttura dei Relation Managers

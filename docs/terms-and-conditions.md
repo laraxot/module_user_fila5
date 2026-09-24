@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Terms And Conditions"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 https://github.com/nowendwell/laravel-terms
 https://github.com/nowendwell/laravel-terms
 

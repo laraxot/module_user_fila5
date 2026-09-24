@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Correzioni Errori di Sintassi nei File di Traduzione - 2025"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Correzioni Errori di Sintassi nei File di Traduzione - 2025
 
 ## Data

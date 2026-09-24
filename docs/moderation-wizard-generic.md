@@ -81,7 +81,6 @@ class ApproveUserAction {
 **Nota:**
 - Tutte le label, i messaggi e le notifiche devono essere localizzati e privi di riferimenti hard-coded a domini specifici.
 - La documentazione e gli esempi devono essere neutrali e riutilizzabili in qualsiasi progetto che utilizza il modulo User. 
-<<<<<<< HEAD
 ---
 module: theme
 topic: moderation-wizard-generic
@@ -98,5 +97,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/moderation-wizard-generic.md
-=======
->>>>>>> 350420cb (Check & fix styling)

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Completamento Traduzioni Password - 2025
 
 ## Problema Identificato
@@ -118,13 +117,10 @@ Durante l'audit delle traduzioni del modulo User, sono state identificate traduz
 ---
 *Ultimo aggiornamento: 2025-01-06*
 *Autore: Sistema di Audit Traduzioni*
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 module: theme
 topic: password-translation-completion-2025
 canonical: ../../../Themes/docs/shared-components/password-translation-completion-2025.md
-<<<<<<< HEAD
 related:
   - "./00-index-1.md"
   - "./00-index.md"
@@ -134,8 +130,6 @@ related:
   - "./actions-path-convention-1.md"
   - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-=======
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/password-translation-completion-2025.md

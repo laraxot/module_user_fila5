@@ -140,12 +140,7 @@ Per ogni nuovo widget di autenticazione:
 - [ ] Logica centralizzata nel widget PHP
 
 ## Collegamenti
-<<<<<<< HEAD
 - [Documentazione Root: Widget View Namespaces](../../../docs/frontend/widget-view-namespaces.md)
 - [Struttura Temi](../../../docs/tecnico/themes/theme-structure.md)
-=======
-- [Documentazione Root: Widget View Namespaces](../../../../docs/frontend/widget-view-namespaces.md)
-- [Struttura Temi](../../../../docs/tecnico/themes/theme-structure.md)
->>>>>>> 350420cb (Check & fix styling)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
 

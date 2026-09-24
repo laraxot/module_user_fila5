@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User vs Profile Models: Guida Completa"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # User vs Profile Models: Guida Completa
 
 ## Panoramica

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Sicurezza nel Processo di Logout"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Sicurezza nel Processo di Logout
 
 ## Analisi della Sicurezza
@@ -194,7 +191,6 @@ Log::channel('auth')->info('Logout effettuato', [
 
 ## Collegamenti Correlati
 - [Best Practices di Sicurezza](./security_best_practices.md)
-<<<<<<< HEAD
 - [Gestione Sessione](./session-management-2.md)
 - [Documentazione Volt](./volt-blade-implementation-3.md)
 - [Tema One Documentation](../../themes/one/docs/readme.md) 
@@ -206,8 +202,3 @@ Log::channel('auth')->info('Logout effettuato', [
 - [Gestione Sessione](./SESSION_MANAGEMENT.md)
 - [Documentazione Volt](./VOLT_BLADE_IMPLEMENTATION.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
-=======
-- [Gestione Sessione](./session_management.md)
-- [Documentazione Volt](./volt_blade_implementation.md)
-- [Tema One Documentation](../../themes/one/docs/readme.md) 
->>>>>>> 350420cb (Check & fix styling)

@@ -26,7 +26,6 @@ class ListOauthClients extends XotBaseListRecords
             'create_personal_access_client' => Action::make('create_personal_access_client')
                 ->label(static::trans('actions.create_personal.label'))
                 ->icon('heroicon-o-key')
-<<<<<<< HEAD
                 ->schema([
                     TextInput::make('name')
                         ->default(self::configString('app.name').' '.static::trans('actions.create_personal.label'))
@@ -48,39 +47,13 @@ class ListOauthClients extends XotBaseListRecords
                             ->send();
                     }
                 ),
-=======
-                ->form([
-                    TextInput::make('name')
-                        ->default((string) config('app.name').' '.static::trans('actions.create_personal.label'))
-                        ->required()
-                        ->maxLength(255),
-                ])
-                ->action(function (array $data) {
-                    app(CreatePersonalAccessClientAction::class)->execute(
-                        name: (string) $data['name'],
-                        redirect: (string) config('app.url'),
-                        user: null,
-                        provider: null,
-                    );
-                    Notification::make()
-                        ->title(static::trans('actions.create_personal.success'))
-                        ->success()
-                        ->send();
-                }),
->>>>>>> 350420cb (Check & fix styling)
 
             'create_password_grant_client' => Action::make('create_password_grant_client')
                 ->label(static::trans('actions.create_password.label'))
                 ->icon('heroicon-o-lock-closed')
-<<<<<<< HEAD
                 ->schema([
                     TextInput::make('name')
                         ->default(self::configString('app.name').' '.static::trans('actions.create_password.label'))
-=======
-                ->form([
-                    TextInput::make('name')
-                        ->default((string) config('app.name').' '.static::trans('actions.create_password.label'))
->>>>>>> 350420cb (Check & fix styling)
                         ->required()
                         ->maxLength(255),
                     TextInput::make('provider')
@@ -88,7 +61,6 @@ class ListOauthClients extends XotBaseListRecords
                         ->required()
                         ->maxLength(255),
                 ])
-<<<<<<< HEAD
                 ->action(
                     /** @param array<string, mixed> $data */
                     function (array $data): void {
@@ -104,25 +76,10 @@ class ListOauthClients extends XotBaseListRecords
                             ->send();
                     }
                 ),
-=======
-                ->action(function (array $data) {
-                    app(CreatePasswordClientAction::class)->execute(
-                        name: (string) $data['name'],
-                        redirect: (string) config('app.url'),
-                        user: null,
-                        provider: (string) $data['provider'],
-                    );
-                    Notification::make()
-                        ->title(static::trans('actions.create_password.success'))
-                        ->success()
-                        ->send();
-                }),
->>>>>>> 350420cb (Check & fix styling)
 
             'create_client_credentials_client' => Action::make('create_client_credentials_client')
                 ->label(static::trans('actions.create_client_credentials.label'))
                 ->icon('heroicon-o-server')
-<<<<<<< HEAD
                 ->schema([
                     TextInput::make('name')
                         ->default(self::configString('app.name').' '.static::trans('actions.create_client_credentials.label'))
@@ -165,28 +122,4 @@ class ListOauthClients extends XotBaseListRecords
 
         return is_string($value) ? $value : $default;
     }
-=======
-                ->form([
-                    TextInput::make('name')
-                        ->default((string) config('app.name').' '.static::trans('actions.create_client_credentials.label'))
-                        ->required()
-                        ->maxLength(255),
-                ])
-                ->action(function (array $data) {
-                    app(CreateGenericClientAction::class)->execute(
-                        name: (string) $data['name'],
-                        redirect: (string) config('app.url'),
-                        personalAccess: false,
-                        password: false,
-                        user: null,
-                        provider: 'users',
-                    );
-                    Notification::make()
-                        ->title(static::trans('actions.create_client_credentials.success'))
-                        ->success()
-                        ->send();
-                }),
-        ];
-    }
->>>>>>> 350420cb (Check & fix styling)
 }

@@ -101,7 +101,6 @@ I seguenti warning sono accettabili e non richiedono correzione immediata:
 - [Resources Corrections Summary](./resources-corrections-summary-2025-01-22.md)
 - [Quality Tools Report](./quality-tools-report.md)
 - [PHPStan Complete Success](./phpstan-complete-success.md)
-<<<<<<< HEAD
 ---
 module: theme
 topic: phpmd-phpinsights-corrections-
@@ -118,5 +117,3 @@ related:
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpmd-phpinsights-corrections-.md
-=======
->>>>>>> 350420cb (Check & fix styling)

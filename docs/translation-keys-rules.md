@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Regole per le Chiavi di Traduzione"
 type: rule
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Regole per le Chiavi di Traduzione
 
 ## Principi Fondamentali
@@ -135,15 +132,9 @@ return [
 
 ## Collegamenti Correlati
 
-<<<<<<< HEAD
 - [Best Practices per le Traduzioni](TRANSLATION_BEST_PRACTICES.md)
 - [Struttura del Modulo](MODULE_STRUCTURE.md)
 - [Convenzioni di Codice](CODE_CONVENTIONS.md)
 - [Best Practices per le Traduzioni](translation-best-practices-2.md)
 - [Struttura del Modulo](module-structure-2.md)
 - [Convenzioni di Codice](code-conventions.md)
-=======
-- [Best Practices per le Traduzioni](translation_best_practices.md)
-- [Struttura del Modulo](module_structure.md)
-- [Convenzioni di Codice](code_conventions.md)
->>>>>>> 350420cb (Check & fix styling)

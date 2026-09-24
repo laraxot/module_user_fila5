@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Correzioni File di Traduzione User Module"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Correzioni File di Traduzione User Module
 
 ## Problemi Identificati e Risolti
@@ -118,7 +115,3 @@ Il file ora segue la struttura espansa obbligatoria per le regole Laraxot:
 **Status**: Completato
 
 ---
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)

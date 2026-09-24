@@ -1,18 +1,10 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-=======
->>>>>>> 350420cb (Check & fix styling)
 /**
  * ---.
  */
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> 350420cb (Check & fix styling)
 namespace Modules\User\Datas;
 
 use Illuminate\Database\Eloquent\Model;
@@ -53,7 +45,6 @@ class DeviceData extends Data
 
     public static function make(): self
     {
-<<<<<<< HEAD
         $headers = collect(request()->header())->mapWithKeys(
             /**
              * @param  array<int, string|null>  $item
@@ -69,18 +60,6 @@ class DeviceData extends Data
                 return [$key => $item];
             }
         )->all();
-=======
-        $headers = collect(request()->header())->mapWithKeys(static function ($item, $key): array {
-            if (Str::startsWith($key, 'X-')) {
-                // $key = Str::afterFirst($key, 'X-');
-                $key = Str::after($key, 'X-');
-            }
-
-            $key = Str::camel($key);
-
-            return [$key => $item];
-        })->all();
->>>>>>> 350420cb (Check & fix styling)
 
         return self::from($headers);
     }

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Regole per i Namespace Filament"
 type: rule
@@ -19,8 +18,6 @@ related:
   - "./dependency-rules.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Regole per i Namespace Filament
 
 ## Regola 1: Namespace Modulare

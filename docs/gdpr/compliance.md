@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "GDPR Compliance"
 type: concept
@@ -11,8 +10,6 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # GDPR Compliance
 
 ## Cookie Consent Plugins

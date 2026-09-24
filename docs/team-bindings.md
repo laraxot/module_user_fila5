@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Fix Binding Team Models nel Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Fix Binding Team Models nel Modulo User
 
 ## Panoramica

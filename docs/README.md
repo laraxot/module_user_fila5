@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User Module Documentation"
 type: documentation
@@ -7,17 +6,11 @@ created: 2026-06-05
 updated: 2026-07-27
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Modulo User - Documentazione Completa
 
 ## Overview
 
-<<<<<<< HEAD
 Il modulo **User** gestisce l'autenticazione, l'autorizzazione e la gestione utenti completa nel sistema [PROJECT_NAME] platform.
-=======
-Il modulo **User** gestisce l'autenticazione, l'autorizzazione e la gestione utenti completa nel sistema Laraxot Quaeris.
->>>>>>> 350420cb (Check & fix styling)
 
 ## Funzionalità Principali
 
@@ -40,11 +33,7 @@ Modules\User\Models\User extends BaseModel
 // Team management
 Modules\User\Models\Team
 
-<<<<<<< HEAD
 // Tenant isolation
-=======
-// Tenant isolation  
->>>>>>> 350420cb (Check & fix styling)
 Modules\User\Models\Tenant
 ```
 
@@ -71,11 +60,7 @@ Modules\User\Models\Tenant
 ## Architectural Rules — Violations Fixed
 
 ### Module Directory Structure Standard
-<<<<<<< HEAD
 In compliance with the [Global Rule](../../../docs/wiki/rules/module-root-php-folders-forbidden.md), all root-level capitalized directories (`Actions/`, `Application/`, `Database/`, `Events/`, `Listeners/`) have been moved into `app/` or renamed to lowercase `database/`.
-=======
-In compliance with the [Global Rule](../../../docs/wiki/rules/module-root-php-folders-forbidden.md), all root-level capitalized directories (`Actions/`, `Application/`, `Database/`, `Events/`, `Listeners/`) have been moved into `app/` or renamed to lowercase `database/`. 
->>>>>>> 350420cb (Check & fix styling)
 - **app/**: Home for all PHP functional code (mapped via PSR-4).
 - **database/**: Strictly lowercase for migrations/factories/seeders.
 
@@ -83,7 +68,6 @@ In compliance with the [Global Rule](../../../docs/wiki/rules/module-root-php-fo
 Per evitare crash dei parallel workers su analisi massive, usare sempre:
 `php -d memory_limit=-1 ./vendor/bin/phpstan analyse [target] --memory-limit=-1`
 
-<<<<<<< HEAD
 ### Profiles migration governance (workorder)
 
 **Owner schema = WorkOrder** (`main_module`), non User:
@@ -99,13 +83,6 @@ Per evitare crash dei parallel workers su analisi massive, usare sempre:
 - Vietato modificare `table_names` o hardcodare nomi tabella in migrazioni/modelli
 - [wiki/concepts/spatie-permission-table-names.md](./wiki/concepts/spatie-permission-table-names.md)
 - [wiki/concepts/spatie-permission-migration-no-table-name.md](./wiki/concepts/spatie-permission-migration-no-table-name.md)
-=======
-### Profiles migration governance
-- La tabella `profiles` deve avere sia `id` sia `uuid`.
-- Il modulo User usa **una sola migrazione autorevole** per `profiles`: `*_create_profiles_table.php`.
-- Se manca una colonna come `uuid`, si corregge quella migrazione e si aggiorna il timestamp del file; non si crea una migrazione `add_uuid_to_profiles`.
-- Riferimento canonico: [wiki/concepts/profile-migration-uuid-contract.md](./wiki/concepts/profile-migration-uuid-contract.md)
->>>>>>> 350420cb (Check & fix styling)
 
 ### No Log calls in production code
 `Log::info()`, `Log::debug()`, `Log::error()` are forbidden in Actions, Models, Services, and Widgets.
@@ -113,11 +90,7 @@ Found and removed from `RegisterWidget`. Laravel logs unhandled exceptions autom
 See: [no-log-in-production.md](./no-log-in-production.md)
 
 ### Git merge conflicts in migrations
-<<<<<<< HEAD
 46 migration files in `database/migrations/` had unresolved conflict markers .
-=======
-46 migration files in `database/migrations/` had unresolved conflict markers (`<<<<<<< HEAD`, `=======`, `>>>>>>>`).
->>>>>>> 350420cb (Check & fix styling)
 These break PHP syntax and halt PHPStan entirely. All were resolved.
 Rule: never commit files with conflict markers. Fix immediately when found.
 
@@ -127,7 +100,6 @@ Rule: never commit files with conflict markers. Fix immediately when found.
 - Laravel 11/12
 - Spatie Laravel Permission
 - Filament v5
-<<<<<<< HEAD
 
 
 ## Standard Rules & Workflow
@@ -2349,5 +2321,3 @@ See [ROADMAP.md](./roadmap.md) for details.
 **PHPStan**: Level 10 ✅
 **Test Coverage**: 88%+ ✅
 **Security**: OWASP Compliant ✅
-=======
->>>>>>> 350420cb (Check & fix styling)

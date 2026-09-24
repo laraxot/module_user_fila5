@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return [
     'navigation' => ['group' => 'Impostazioni provider socialite'],
     'sections' => [
@@ -32,14 +31,5 @@ return [
             'scopes' => ['label' => 'microsoft.scopes', 'placeholder' => 'microsoft.scopes', 'helper_text' => 'microsoft.scopes', 'description' => 'microsoft.scopes'],
             'redirect' => ['label' => 'microsoft.redirect', 'placeholder' => 'microsoft.redirect', 'helper_text' => 'microsoft.redirect', 'description' => 'microsoft.redirect'],
         ],
-=======
-// User translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/User/docs/wiki — domain i18n only.
-// File: lang/it/socialite_provider_settings.php
-return [
-    'navigation' => [
-        'group' => 'socialite provider settings.navigation',
->>>>>>> 350420cb (Check & fix styling)
     ],
 ];

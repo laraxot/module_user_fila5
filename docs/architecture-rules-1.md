@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Laraxot Architecture Rules"
 type: rule
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Laraxot Architecture Rules
 
 ## Core Principles

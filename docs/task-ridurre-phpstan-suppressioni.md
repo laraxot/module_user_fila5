@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Task: Ridurre Suppressioni PHPStan Inline - User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Task: Ridurre Suppressioni PHPStan Inline - User
 
 **Modulo**: User

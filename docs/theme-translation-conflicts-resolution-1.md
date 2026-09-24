@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "theme_translation_conflicts_resolution - User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # theme_translation_conflicts_resolution - User
 
 ## Overview

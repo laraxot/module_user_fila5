@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "User - Sprint Planning Meeting"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # User - Sprint Planning Meeting
 
 > Documento operativo per sprint planning. Modulo.

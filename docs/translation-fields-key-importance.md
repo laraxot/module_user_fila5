@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Understanding Translation Structure in Laraxot Framework"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Understanding Translation Structure in Laraxot Framework
 
 ## 2026-01-09 - Translation Key Analysis

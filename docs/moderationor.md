@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Moderazione Dentista dal Modulo User"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Moderazione Dentista dal Modulo User
 
 ## Premessa

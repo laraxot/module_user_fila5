@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Widget Responsivi per Form di Registrazione"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./teams-relation-manager.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Widget Responsivi per Form di Registrazione
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo User.

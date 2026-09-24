@@ -1,10 +1,6 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
-
->>>>>>> 350420cb (Check & fix styling)
 /**
  * inspired by  DutchCodingCompany\FilamentSocialite.
  */
@@ -78,13 +74,9 @@ class SocialiteUser extends BaseModel
         'avatar',
     ];
 
-<<<<<<< HEAD
     /**
      * @return BelongsTo<Model, $this>
      */
-=======
-    /** @return BelongsTo<Model, $this> */
->>>>>>> 350420cb (Check & fix styling)
     public function user(): BelongsTo
     {
         /** @var class-string<Model> */

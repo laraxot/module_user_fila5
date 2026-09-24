@@ -7,10 +7,6 @@ created: 2026-06-10
 updated: 2026-06-10
 qmd: "User Models Contracts placement CanComment app Contracts deprecated"
 related:
-<<<<<<< HEAD
-=======
-  - ../../../../docs/wiki/bmad/architecture-models-contracts-placement.md
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Models/Contracts (User)

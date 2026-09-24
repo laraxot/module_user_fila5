@@ -6,7 +6,6 @@ tags: [redundancy, user, auth, passport, filament]
 created: "2026-05-26"
 updated: "2026-05-26"
 related:
-<<<<<<< HEAD
   - "./ai-harness-user-discipline.md"
   - "./baseuser-hierarchy.md"
   - "./context-mode-user-discipline.md"
@@ -15,11 +14,6 @@ related:
   - "./filament-widget-linear-crud-model-create.md"
   - "./filament-widget-resource-form-delegation.md"
   - "./folio-pages-owner-pattern.md"
-=======
-  - ../../../../Xot/docs/wiki/concepts/code-redundancy-philosophy.md
-  - ../../../../Xot/docs/wiki/redundancy-audit-2026-05-26.md
-  - ../../../redundancy-fixes.md
->>>>>>> 350420cb (Check & fix styling)
 ---
 
 # Ridondanza — User

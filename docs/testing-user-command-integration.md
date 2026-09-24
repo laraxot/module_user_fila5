@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Fix: UserCommandIntegrationTest - Application and Config Issues"
 type: concept
@@ -19,8 +18,6 @@ related:
   - "./actions-path-convention.md"
 ---
 
-=======
->>>>>>> 350420cb (Check & fix styling)
 # Fix: UserCommandIntegrationTest - Application and Config Issues
 
 **Problema**: Test fallisce con "Too few arguments" e "Target class [config] does not exist"
